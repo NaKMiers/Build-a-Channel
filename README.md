@@ -47,12 +47,13 @@ For an active video, prefer updating `video-projects/<slug>/` before creating sc
 - Channel name: `Why It Works`
 - Primary language: `English`
 - Format: `no-face explainer channel`
+- Main audience lens: `English learners who want interesting, useful English through clear explainers`
 - Core subject area: `money, internet, society, business, and modern life`
 - Tone: `smart, simple, funny, dry, curiosity-driven`
 
 ## One-Sentence Positioning
 
-`Why It Works` explains money, the internet, and modern life in a way that's actually fun.
+`Why It Works` explains money, the internet, and modern life in simple, funny English that English learners can enjoy without feeling like they are studying.
 
 ## Safety Rule
 

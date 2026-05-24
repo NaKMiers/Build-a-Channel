@@ -25,6 +25,7 @@ Codex should treat this workspace as persistent memory for:
 - Primary language: `English`
 - On-camera presence: `No face`
 - Main format: `Explainer videos`
+- Main audience lens: `English learners`
 - Main domain: `money, internet, society, business, and modern life`
 - Tone: `smart, simple, funny, dry`
 
@@ -39,6 +40,7 @@ When working in this project, Codex should:
 - Keep notes practical and reusable
 - Prefer structured documentation over scattered scratch notes
 - Use [docs/codex-video-workflow.md](C:\ME\THINGS\Build a Channel\docs\codex-video-workflow.md) when turning a chosen topic into production-ready deliverables
+- Keep scripts learner-friendly by default: simple English, clear structure, visible keywords, and humor that works from context
 - Use `video-projects/<slug>/` as the source of truth for active video work
 - Use `common/` for reusable tools, templates, local skills, shared assets, and production notes
 
@@ -121,4 +123,4 @@ The next useful steps for this project are:
 
 This project is not just about making random videos.
 
-It is about building a durable English-first no-face explainer brand that can later support products, including Deewas, without depending on direct self-promotion too early.
+It is about building a durable English-first no-face explainer brand for English learners that can later support products, including Deewas, without depending on direct self-promotion too early.

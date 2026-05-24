@@ -4,22 +4,26 @@
 
 `3-4 minutes`
 
-Recommended target: about `3:30`.
+Recommended target: about `3:45`.
+
+## Script Status
+
+`Trimmed recordable script`
+
+This version is trimmed for George's tested pacing.
 
 ## Recordable Script
 
-Here’s the fun part about modern life:
+Here's the fun part about modern life:
 
 Some of the most powerful companies on Earth keep giving you useful things for free.
 
 Free video.
-Free music.
 Free maps.
 Free messaging.
-Free games.
-Free apps that organize your life, track your habits, teach you languages, and then remind you that your streak is in danger like it’s a family emergency.
+Free apps that organize your life, teach you languages, and then warn you that your streak is in danger like it's a family emergency.
 
-Which is either a beautiful example of human progress...
+Either this is a beautiful example of human progress...
 
 Or a very suspicious business plan.
 
@@ -33,17 +37,15 @@ And on the internet, it is usually the second one.
 
 This video is not really about software.
 
-It is about pricing.
+It is about pricing: how the internet got extremely good at charging you without asking for money first.
 
-More specifically, it is about how the internet got extremely good at charging you without asking for money first.
+Most people hear "free" and think:
 
-Most people hear the word “free” and think:
+"No cost."
 
-“No cost.”
+Businesses hear "free" and think:
 
-Businesses hear the word “free” and think:
-
-“Easy entry.”
+"Easy entry."
 
 That is a very different sentence.
 
@@ -53,9 +55,9 @@ Sometimes it is just the removal of friction.
 
 It is the digital version of saying:
 
-“Come in, look around, get comfortable. We’ll discuss your financial future later.”
+"Come in, look around, get comfortable. We'll discuss your financial future later."
 
-So if free apps are not really free, how do they charge you?
+So how do free apps charge you?
 
 The first way is obvious: ads.
 
@@ -63,9 +65,7 @@ If you are watching videos, scrolling feeds, or using a free platform, there is 
 
 The product is your attention.
 
-The app gets people in.
-Keeps them there.
-Then sells pieces of that attention to advertisers.
+The app gets people in, keeps them there, then sells pieces of that attention.
 
 That is why free apps care so much about retention.
 
@@ -85,9 +85,7 @@ Some apps do not just want your attention.
 
 They want your behavior.
 
-They let you in for free because free is easy.
-
-Then they teach you a routine.
+They let you in for free because free is easy, then teach you a routine:
 
 Open the app.
 Check the feed.
@@ -96,11 +94,9 @@ Continue the streak.
 Order again.
 Upgrade for convenience.
 
-At that point, the app is not just a tool.
+At that point, the app is not just a tool. It is part of your day.
 
-It is becoming part of your day.
-
-And once something becomes part of your day, charging you gets much easier.
+And once something becomes part of your day, charging gets much easier.
 
 That is why freemium works so well.
 
@@ -118,8 +114,6 @@ Want to remove the artificial limit the app created five seconds ago?
 
 Congratulations. That feeling has a monthly price now.
 
-This is common in mobile games, productivity apps, cloud storage, language apps, and basically any app that starts friendly and slowly becomes a tiny landlord.
-
 Then there is the long game: lock-in.
 
 Some apps do not need to charge you immediately because what they really want is dependency.
@@ -128,39 +122,22 @@ Once your photos, files, playlists, friends, and habits are there, leaving stops
 
 It starts feeling like moving house.
 
-Technically possible.
+And once leaving becomes harder than paying, the business model gets very smooth.
 
-Emotionally annoying.
-
-And businesses love emotionally annoying.
-
-Because once leaving becomes harder than paying, the business model gets very smooth.
-
-So when people say, “If the product is free, you are the product,” that is sometimes true.
+So when people say, "If the product is free, you are the product," that is sometimes true.
 
 But it is not the whole story.
 
 Sometimes you are the product.
-
 Sometimes you are the future customer.
-
 Sometimes you are the behavior being trained.
-
-Sometimes you are the person being slowly upgraded from:
-
-“I’ll just try the free version,”
-
-to:
-
-“Why am I paying for six tiny subscriptions every month?”
+Sometimes you are the person being slowly upgraded into six tiny subscriptions.
 
 Which, to be fair, is one of the most modern feelings available.
 
 The point is not that free apps are fake.
 
 A lot of them are genuinely useful.
-
-Some are amazing.
 
 The point is that free is often not a gift.
 
@@ -169,7 +146,7 @@ It is a strategy.
 It lowers resistance.
 It builds scale.
 It creates habits.
-And then it collects payment in whatever form works best.
+Then it collects payment in whatever form works best.
 
 Money if possible.
 Attention if necessary.
@@ -184,4 +161,18 @@ They are designed to move payment somewhere less visible.
 
 And modern life is full of hidden checkouts.
 
-If the internet keeps inventing new ways to charge people without looking like it, we’ll keep explaining them.
+If the internet keeps inventing hidden checkouts, we'll keep explaining them.
+
+## Trim Notes
+
+Target:
+
+- Keep George voiceover under control for a `3-4 minute` first video.
+- Preserve the best hook, reframe, jokes, and final thesis.
+
+Removed or compressed:
+
+- repeated setup around useful free apps
+- some lock-in setup
+- extra phrasing around the final product/customer section
+- small supporting lines that did not move the argument forward

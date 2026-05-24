@@ -69,6 +69,7 @@ Does this fit `Why It Works` as:
 - English-first
 - no-face
 - funny explainer
+- learner-friendly for English learners
 - focused on money, internet, society, business, and modern life
 
 If not, it should not enter core strategy.
@@ -76,6 +77,8 @@ If not, it should not enter core strategy.
 ### 2. Audience Fit
 
 Will this help the target audience, or confuse them?
+
+The primary audience lens is now English learners who want interesting real-world English, not boring lessons.
 
 If it makes the audience ask:
 
@@ -178,4 +181,3 @@ Before writing a new strategic idea into project files, Codex should silently as
 - Does this still fit `Why It Works`?
 
 If the answer is weak or unclear, do not store it as core strategy.
-

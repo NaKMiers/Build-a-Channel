@@ -87,6 +87,8 @@ Do not copy them line for line.
   Strong study piece for social commentary with humor.
 - `Casually Explained: Wallstreetbets`
   Strong study piece for funny explanation around money and internet culture.
+- `Casually Explained: The English Language`
+  Strong study piece for making language itself funny without becoming a formal lesson. Useful for `Why It Works` because the video proves that simple English, dry jokes, pronunciation jokes, and cultural comparison can attract both native viewers and English learners.
 
 ## 6. OverSimplified
 
@@ -108,6 +110,7 @@ Do not copy them line for line.
 - Focus on one idea per video
 - Use humor to support clarity
 - Keep language simple
+- Make the English easy enough for learners without sounding like a lesson
 - Make the topic feel relevant to daily life
 - End with a satisfying insight, not just more facts
 
@@ -118,4 +121,3 @@ Do not copy them line for line.
 - `Mèo Giải Thích` for explanation structure
 - `Vui Vẻ` for packaging and energy
 - `OverSimplified` for storytelling payoff
-

@@ -6,9 +6,9 @@ This is the first active `Why It Works` video project.
 
 - Topic: `Why Free Apps Are Never Really Free`
 - Slug: `why-free-apps-never-really-free`
-- Stage: `packaging approved; visual plan next`
+- Stage: `First 45s visual prototype rendered`
 - Runtime target: `3-4 minutes`
-- Current workflow step: `Step 8 - Visual Plan`
+- Current workflow step: `Prototype review`
 
 ## Current Decisions
 
@@ -16,7 +16,16 @@ This is the first active `Why It Works` video project.
 - Thumbnail text: `FREE?`
 - Thumbnail direction: hidden checkout inside a free app
 - Core thesis: free apps move payment somewhere less visible
-- Script status: recordable script drafted
+- Script status: trimmed recordable script ready, about `659` words
+- Visual plan status: detailed storyboard drafted
+- Production board status: drafted
+- Voice test status: generated; estimated full runtime is about `4:30`
+- Current voice decision: use `George` for this stage
+- Full voiceover status: generated, `3:59.91`
+- Scene data status: created with `8` macro-scenes and `64` first-pass micro-beats
+- Prototype decision: first `45s` prototype rendered before full rough cut
+- Prototype render: [renders/prototype-first-45s.mp4](C:\ME\THINGS\Build a Channel\video-projects\why-free-apps-never-really-free\renders\prototype-first-45s.mp4)
+- Reference voice status: keep Anh Khoa's recording for future cloning after the flow is stable
 
 ## Existing References
 

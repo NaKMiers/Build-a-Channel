@@ -1,15 +1,45 @@
-[2026-05-19T16:13:31.767Z] [info] LegacyDataMixin will be applied to all legacy elements.
+[2026-05-24T08:39:10.297Z] [info] LegacyDataMixin will be applied to all legacy elements.
 Set `_legacyUndefinedCheck: true` on element class to enable.
-[2026-05-19T16:13:32.131Z] [error] Failed to load resource: the server responded with a status of 403 ()
-[2026-05-19T16:13:47.701Z] [info] LegacyDataMixin will be applied to all legacy elements.
+[2026-05-24T08:39:10.527Z] [error] Failed to load resource: the server responded with a status of 403 ()
+[2026-05-24T08:39:11.521Z] [error] Failed to load resource: net::ERR_FILE_NOT_FOUND
+[2026-05-24T08:39:13.365Z] [error] Access to fetch at 'https://googleads.g.doubleclick.net/pagead/viewthroughconversion/962985656/?backend=innertube&cname=1&cver=2_20260521&data=backend%3Dinnertube%3Bcname%3D1%3Bcver%3D2_20260521%3Bptype%3Df_view%3Btype%3Dview%3Butuid%3Dr3cBLTYmIK9kY0F_OdFWFQ%3Butvid%3D9_RxaeN0FGw&foc_id=r3cBLTYmIK9kY0F_OdFWFQ&label=followon_view&ptype=f_view&random=566980529&utuid=r3cBLTYmIK9kY0F_OdFWFQ&cv_attributed=0' (redirected from 'https://www.youtube.com/pagead/viewthroughconversion/962985656/?backend=innertube&cname=1&cver=2_20260521&data=backend%3Dinnertube%3Bcname%3D1%3Bcver%3D2_20260521%3Bptype%3Df_view%3Btype%3Dview%3Butuid%3Dr3cBLTYmIK9kY0F_OdFWFQ%3Butvid%3D9_RxaeN0FGw&foc_id=r3cBLTYmIK9kY0F_OdFWFQ&label=followon_view&ptype=f_view&random=566980529&utuid=r3cBLTYmIK9kY0F_OdFWFQ') from origin 'https://www.youtube.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+[2026-05-24T08:39:13.366Z] [error] Failed to load resource: net::ERR_FAILED
+[2026-05-24T08:39:25.955Z] [info] LegacyDataMixin will be applied to all legacy elements.
 Set `_legacyUndefinedCheck: true` on element class to enable.
-[2026-05-19T16:13:50.444Z] [info] LegacyDataMixin will be applied to all legacy elements.
+[2026-05-24T08:39:26.949Z] [error] Failed to load resource: net::ERR_FILE_NOT_FOUND
+[2026-05-24T08:41:26.721Z] [info] LegacyDataMixin will be applied to all legacy elements.
 Set `_legacyUndefinedCheck: true` on element class to enable.
-[2026-05-19T16:13:52.676Z] [info] LegacyDataMixin will be applied to all legacy elements.
+[2026-05-24T08:41:29.548Z] [error] Access to fetch at 'https://googleads.g.doubleclick.net/pagead/viewthroughconversion/962985656/?backend=innertube&cname=1&cver=2_20260521&data=backend%3Dinnertube%3Bcname%3D1%3Bcver%3D2_20260521%3Bptype%3Df_view%3Btype%3Dview%3Butuid%3Dr3cBLTYmIK9kY0F_OdFWFQ%3Butvid%3D9_RxaeN0FGw&foc_id=r3cBLTYmIK9kY0F_OdFWFQ&label=followon_view&ptype=f_view&random=1051111848&utuid=r3cBLTYmIK9kY0F_OdFWFQ&cv_attributed=0' (redirected from 'https://www.youtube.com/pagead/viewthroughconversion/962985656/?backend=innertube&cname=1&cver=2_20260521&data=backend%3Dinnertube%3Bcname%3D1%3Bcver%3D2_20260521%3Bptype%3Df_view%3Btype%3Dview%3Butuid%3Dr3cBLTYmIK9kY0F_OdFWFQ%3Butvid%3D9_RxaeN0FGw&foc_id=r3cBLTYmIK9kY0F_OdFWFQ&label=followon_view&ptype=f_view&random=1051111848&utuid=r3cBLTYmIK9kY0F_OdFWFQ') from origin 'https://www.youtube.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+[2026-05-24T08:41:29.549Z] [error] Failed to load resource: net::ERR_FAILED
+[2026-05-24T08:45:03.120Z] [info] LegacyDataMixin will be applied to all legacy elements.
 Set `_legacyUndefinedCheck: true` on element class to enable.
-[2026-05-19T16:13:54.823Z] [info] LegacyDataMixin will be applied to all legacy elements.
+[2026-05-24T08:46:01.303Z] [error] Access to fetch at 'https://googleads.g.doubleclick.net/pagead/viewthroughconversion/962985656/?backend=innertube&cname=1&cver=2_20260521&data=backend%3Dinnertube%3Bcname%3D1%3Bcver%3D2_20260521%3Bptype%3Df_view%3Btype%3Dview%3Butuid%3Dr3cBLTYmIK9kY0F_OdFWFQ%3Butvid%3D9_RxaeN0FGw&foc_id=r3cBLTYmIK9kY0F_OdFWFQ&label=followon_view&ptype=f_view&random=1049204090&utuid=r3cBLTYmIK9kY0F_OdFWFQ&cv_attributed=0' (redirected from 'https://www.youtube.com/pagead/viewthroughconversion/962985656/?backend=innertube&cname=1&cver=2_20260521&data=backend%3Dinnertube%3Bcname%3D1%3Bcver%3D2_20260521%3Bptype%3Df_view%3Btype%3Dview%3Butuid%3Dr3cBLTYmIK9kY0F_OdFWFQ%3Butvid%3D9_RxaeN0FGw&foc_id=r3cBLTYmIK9kY0F_OdFWFQ&label=followon_view&ptype=f_view&random=1049204090&utuid=r3cBLTYmIK9kY0F_OdFWFQ') from origin 'https://www.youtube.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+[2026-05-24T08:46:01.303Z] [error] Failed to load resource: net::ERR_FAILED
+[2026-05-24T08:48:41.276Z] [info] LegacyDataMixin will be applied to all legacy elements.
 Set `_legacyUndefinedCheck: true` on element class to enable.
-[2026-05-19T16:13:56.983Z] [info] LegacyDataMixin will be applied to all legacy elements.
+[2026-05-24T08:48:44.015Z] [error] Access to fetch at 'https://googleads.g.doubleclick.net/pagead/viewthroughconversion/962985656/?backend=innertube&cname=1&cver=2_20260521&data=backend%3Dinnertube%3Bcname%3D1%3Bcver%3D2_20260521%3Bptype%3Df_view%3Btype%3Dview%3Butuid%3Dr3cBLTYmIK9kY0F_OdFWFQ%3Butvid%3D9_RxaeN0FGw&foc_id=r3cBLTYmIK9kY0F_OdFWFQ&label=followon_view&ptype=f_view&random=685354539&utuid=r3cBLTYmIK9kY0F_OdFWFQ&cv_attributed=0' (redirected from 'https://www.youtube.com/pagead/viewthroughconversion/962985656/?backend=innertube&cname=1&cver=2_20260521&data=backend%3Dinnertube%3Bcname%3D1%3Bcver%3D2_20260521%3Bptype%3Df_view%3Btype%3Dview%3Butuid%3Dr3cBLTYmIK9kY0F_OdFWFQ%3Butvid%3D9_RxaeN0FGw&foc_id=r3cBLTYmIK9kY0F_OdFWFQ&label=followon_view&ptype=f_view&random=685354539&utuid=r3cBLTYmIK9kY0F_OdFWFQ') from origin 'https://www.youtube.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+[2026-05-24T08:48:44.015Z] [error] Failed to load resource: net::ERR_FAILED
+[2026-05-24T08:50:00.249Z] [error] Failed to load resource: the server responded with a status of 403 ()
+[2026-05-24T08:50:18.347Z] [error] Failed to load resource: the server responded with a status of 403 ()
+[2026-05-24T08:50:20.389Z] [error] Failed to load resource: the server responded with a status of 403 ()
+[2026-05-24T08:50:21.968Z] [error] Failed to load resource: the server responded with a status of 403 ()
+[2026-05-24T08:50:23.671Z] [error] Failed to load resource: the server responded with a status of 403 ()
+[2026-05-24T08:50:25.386Z] [error] Failed to load resource: the server responded with a status of 403 ()
+[2026-05-24T08:50:27.145Z] [error] Failed to load resource: the server responded with a status of 403 ()
+[2026-05-24T08:50:28.777Z] [error] Failed to load resource: the server responded with a status of 403 ()
+[2026-05-24T08:50:30.368Z] [error] Failed to load resource: the server responded with a status of 403 ()
+[2026-05-24T08:50:52.198Z] [info] LegacyDataMixin will be applied to all legacy elements.
 Set `_legacyUndefinedCheck: true` on element class to enable.
-[2026-05-19T16:13:59.100Z] [info] LegacyDataMixin will be applied to all legacy elements.
+[2026-05-24T08:51:26.715Z] [error] requestStorageAccessFor: Permission denied.
+[2026-05-24T08:51:26.715Z] [error] requestStorageAccessFor: Permission denied.
+[2026-05-24T08:51:26.715Z] [error] requestStorageAccessFor: Permission denied.
+[2026-05-24T08:52:40.456Z] [info] LegacyDataMixin will be applied to all legacy elements.
 Set `_legacyUndefinedCheck: true` on element class to enable.
+[2026-05-24T08:53:12.405Z] [info] LegacyDataMixin will be applied to all legacy elements.
+Set `_legacyUndefinedCheck: true` on element class to enable.
+[2026-05-24T08:54:08.532Z] [error] Access to fetch at 'https://googleads.g.doubleclick.net/pagead/viewthroughconversion/962985656/?backend=innertube&cname=1&cver=2_20260521&data=backend%3Dinnertube%3Bcname%3D1%3Bcver%3D2_20260521%3Bptype%3Df_view%3Btype%3Dview%3Butuid%3Dr3cBLTYmIK9kY0F_OdFWFQ%3Butvid%3D9_RxaeN0FGw&foc_id=r3cBLTYmIK9kY0F_OdFWFQ&label=followon_view&ptype=f_view&random=2827489&utuid=r3cBLTYmIK9kY0F_OdFWFQ&cv_attributed=0' (redirected from 'https://www.youtube.com/pagead/viewthroughconversion/962985656/?backend=innertube&cname=1&cver=2_20260521&data=backend%3Dinnertube%3Bcname%3D1%3Bcver%3D2_20260521%3Bptype%3Df_view%3Btype%3Dview%3Butuid%3Dr3cBLTYmIK9kY0F_OdFWFQ%3Butvid%3D9_RxaeN0FGw&foc_id=r3cBLTYmIK9kY0F_OdFWFQ&label=followon_view&ptype=f_view&random=2827489&utuid=r3cBLTYmIK9kY0F_OdFWFQ') from origin 'https://www.youtube.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+[2026-05-24T08:54:08.532Z] [error] Failed to load resource: net::ERR_FAILED
+[2026-05-24T08:54:20.974Z] [error] requestStorageAccessFor: Permission denied.
+[2026-05-24T08:54:20.976Z] [error] requestStorageAccessFor: Permission denied.
+[2026-05-24T08:54:20.976Z] [error] requestStorageAccessFor: Permission denied.
+[2026-05-24T09:03:38.922Z] [error] Failed to load resource: net::ERR_NETWORK_IO_SUSPENDED

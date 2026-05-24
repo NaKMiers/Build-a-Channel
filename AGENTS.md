@@ -68,9 +68,11 @@ Only `Core` belongs in the channel foundation.
 - Channel name: `Why It Works`
 - Primary language: `English`
 - Format: `no-face explainer channel`
+- Main audience lens: `English learners`
 - Main lane: `money, internet, society, business, and modern life`
 - Tone: `smart, simple, funny, dry`
+- Default video text style: `handwritten labels and captions rendered through Remotion`
 
 ## Main Goal
 
-Build a durable English-first no-face explainer brand that can later support products, including Deewas, without turning the channel into direct app promotion too early.
+Build a durable English-first no-face explainer brand for English learners that can later support products, including Deewas, without turning the channel into direct app promotion too early.

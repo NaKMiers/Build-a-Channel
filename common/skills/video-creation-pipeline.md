@@ -31,6 +31,37 @@ Production starts only after:
 - visual plan is approved
 - production board is ready
 
+## Visual Density Rule
+
+A short video still needs many visual beats.
+
+For `3-4 minute` explainers, do not treat each section as one static scene.
+Plan:
+
+- macro-scenes: the main explanation sections
+- micro-scenes: the smaller screen changes, reactions, labels, transitions, and visual jokes inside each section
+
+Working rule:
+
+`Simple style, many beats.`
+
+## Handwritten Text Rule
+
+Every long-form video should default to handwritten-looking text for:
+
+- labels
+- arrows
+- cross-outs
+- corrections
+- joke punchlines
+- useful English phrases
+
+Use Remotion to render the handwritten style through fonts, SVG text, rough underline/cross-out shapes, or exported hand-drawn text images.
+
+Working rule:
+
+`Handwritten text is the main visual language.`
+
 ## Per-Video Storage
 
 All work for a video belongs in:

@@ -19,9 +19,10 @@ The current default production path for `Why It Works` is:
 
 - per-video planning in `video-projects/<slug>/`
 - reusable tools, templates, and local project skills in `common/`
-- scene data and animation assembly in [remotion-studio](C:\ME\THINGS\Build a Channel\remotion-studio\README.md)
+- simple static scene assembly in [remotion-studio](C:\ME\THINGS\Build a Channel\remotion-studio\README.md)
 - AI voiceover generation through ElevenLabs into `remotion-studio/public/voiceover/`
 - Remotion timing driven by the generated voiceover files
+- handwritten-looking text rendered in Remotion for labels, captions, arrows, corrections, and punchlines
 
 Default local commands:
 
@@ -57,10 +58,17 @@ Before using this workflow, Codex should reload the core project docs and keep t
 - Channel: `Why It Works`
 - Language: `English`
 - Format: `no-face explainer`
+- Main audience lens: `English learners`
 - Main lane: `money, internet, society, business, and modern life`
 - Tone: `smart, simple, funny, dry`
 
 If a workflow output starts pushing the channel outside those boundaries, stop and correct it before moving on.
+
+Learner-friendly rule:
+
+`Teach the topic first. Make the English easy to follow by design.`
+
+Each script should use simple sentence structure, clear section signposts, visible keywords, and jokes that work from context. Do not turn the video into a grammar lesson unless the topic itself is language.
 
 Create or update the active video folder before moving through the workflow:
 
@@ -184,6 +192,8 @@ Codex does:
 - writes the reframe
 - builds the explanation in 3 to 5 chunks
 - inserts humor beats
+- keeps the English clear enough for intermediate learners
+- marks 3 to 5 useful phrases that can become on-screen keywords
 - lands on a clear payoff
 
 Creator does:
@@ -225,6 +235,8 @@ Codex does:
 - removes robotic phrasing
 - shortens over-explained lines
 - sharpens jokes
+- removes unnecessary idioms or explains them through context
+- checks that important terms are repeated and visually label-friendly
 - checks tone against the channel rules
 - tightens the payoff
 
@@ -305,8 +317,8 @@ Turn the script into a no-face execution plan and a render-ready Remotion build.
 Codex does:
 
 - breaks the script into scenes
-- maps each section to visuals
-- suggests humor beats in animation or illustration
+- maps each section to mostly static visuals
+- suggests humor beats through handwritten labels, WIT poses, arrows, cross-outs, simple props, and hard cuts
 - creates an asset checklist
 - creates or updates the Remotion scene data
 - generates or refreshes AI voiceover
@@ -338,12 +350,17 @@ Why this helps:
 Once the scene plan is approved:
 
 1. turn the script into scene-level narration blocks
-2. write or update the scene data in `remotion-studio/src/data/`
-3. run `npm run voiceover`
-4. preview timing in Remotion Studio with `npm run dev`
-5. render the sample or final export from Remotion
+2. convert each narration block into static visual beats
+3. add handwritten-looking labels, captions, arrows, and punchline text
+4. write or update the scene data in `remotion-studio/src/data/`
+5. run `npm run voiceover`
+6. preview timing in Remotion Studio with `npm run dev`
+7. render the sample or final export from Remotion
 
 This keeps voice timing, scene duration, and export logic in one place instead of splitting the workflow across multiple editing tools too early.
+
+Remotion should act as a simple video compiler, not a heavy animation system.
+Use hard cuts, static images, WIT poses, simple zooms only when useful, and handwritten text as the main visual language.
 
 Example:
 
@@ -490,6 +507,8 @@ When starting a new topic, use this exact production frame:
 - short-form cutdowns
 
 `Keep it aligned with Why It Works: English-first, no-face, smart, simple, funny, dry.`
+
+`Main audience lens: English learners who want interesting real-world English, not boring lessons.`
 
 ## First Suggested Use
 

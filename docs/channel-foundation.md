@@ -5,8 +5,9 @@
 - Channel name: `Why It Works`
 - Primary language: `English`
 - Format: `no-face explainer channel`
-- Core promise: `Explain money, the internet, and modern life in a way that's actually fun.`
-- Core feel: `smart topics, simple English, dry humor, high curiosity`
+- Main audience lens: `English learners`
+- Core promise: `Explain money, the internet, and modern life in simple, funny English that English learners can enjoy without feeling like they are studying.`
+- Core feel: `smart topics, simple English, dry humor, high curiosity, learner-friendly clarity`
 
 ## Positioning
 
@@ -14,7 +15,7 @@ This should not be a generic finance channel, a generic coding channel, or a gen
 
 The strongest positioning is:
 
-`A funny English explainer channel about money, internet behavior, society, business, and weird modern life.`
+`A funny English explainer channel for English learners who want to understand money, internet behavior, society, business, and weird modern life.`
 
 The channel should help viewers feel:
 
@@ -22,9 +23,13 @@ The channel should help viewers feel:
 - `This is smarter than normal internet content`
 - `This is funny without being stupid`
 - `This creator sounds like a real person, not a textbook`
+- `I am improving my English while watching something I actually care about`
 
 ## Target Audience
 
+- English learners who are tired of boring lessons
+- Intermediate learners who want clear real-world English
+- Learners who like internet culture, money, business, apps, and modern life topics
 - Young adults
 - Students
 - Early-career workers
@@ -32,9 +37,16 @@ The channel should help viewers feel:
 - People curious about money, business, social behavior, and hidden systems
 - Viewers who like clever explainers but do not want lecture-style content
 
+The channel should not become a grammar class, vocabulary lecture, or exam-prep channel.
+It should feel like interesting English-native YouTube that happens to be easier to follow.
+
 ## Channel Promise
 
 `Why It Works` will turn confusing or annoying parts of modern life into clear, entertaining explanations.
+
+For English learners, the hidden second promise is:
+
+`You can practice English by watching explanations that are actually worth watching.`
 
 The channel should answer questions like:
 
@@ -134,6 +146,7 @@ The voice should be:
 
 - Clear
 - Conversational
+- Easy to follow for intermediate English learners
 - Slightly dry
 - Slightly skeptical
 - Funny without trying too hard
@@ -142,20 +155,60 @@ The voice should be:
 The voice should not be:
 
 - Academic
+- Too slang-heavy
+- Too fast
+- Too idiom-dense without context
 - Overly motivational
 - Hyper-shouty
 - Fake-deep
 - Overly corporate
 
+## English Learner Fit
+
+Every script should be written for real English learners without making them feel treated like children.
+
+Use:
+
+- short sentences
+- clean structure
+- common words before fancy words
+- repeated key phrases
+- visible keywords on screen
+- clear examples from daily life
+- jokes that work from context, not only from obscure slang
+
+Avoid:
+
+- long abstract explanations
+- unexplained idioms every few lines
+- jokes that require deep native cultural knowledge
+- fast topic jumps with no signposting
+- vocabulary-teaching interruptions that break the entertainment flow
+
+Optional learner-friendly layer:
+
+- show 3 to 5 useful phrases per video as natural on-screen labels
+- use subtitles and clean captions as part of the product quality
+- turn confusing English words into jokes when it fits the topic
+
+Rule:
+
+`The viewer should come for the topic and leave with better English.`
+
 ## Visual Direction
 
 - No face on screen
 - Simple 2D illustrations
+- Handwritten-looking text for labels, captions, arrows, corrections, and joke punchlines
 - Bold flat colors
 - Strong silhouettes
 - Expressive stick-figure or mascot-like characters
 - Simple backgrounds
 - Clean motion that supports the joke or explanation
+
+Handwritten text is part of the default video identity.
+In Remotion, this can be created with handwritten fonts, SVG text, rough underline/cross-out shapes, or exported hand-drawn text images.
+The goal is not perfect handwriting. The goal is a casual, human, funny explainer feel.
 
 Thumbnail direction:
 
@@ -172,7 +225,7 @@ Thumbnail direction:
 
 Primary recommended tagline:
 
-`Money, internet, and modern life. Explained without the boring part.`
+`Money, internet, and modern life. Explained in English without the boring part.`
 
 ## Recommended Channel Formula
 
@@ -182,7 +235,8 @@ Each video should follow this structure:
 2. Reframe
 3. Explain in 3 to 5 chunks
 4. Add humor throughout
-5. End with the real payoff
+5. Reinforce a few useful English phrases naturally
+6. End with the real payoff
 
 ## Script Formula
 
@@ -338,4 +392,3 @@ Later, that trust can support:
 - Newsletters
 - Sponsorships
 - Community
-
