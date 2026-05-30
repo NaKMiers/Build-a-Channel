@@ -24,8 +24,10 @@ The goal is to keep channel strategy, creative decisions, reference research, an
   Working rules for future Codex sessions inside this project.
 - [docs/codex-video-workflow.md](C:\ME\THINGS\Build a Channel\docs\codex-video-workflow.md)
   Reusable Codex-first workflow for turning a topic into research, script, packaging, production, shorts, and review outputs.
+- [common/hyperframes/README.md](C:\ME\THINGS\Build a Channel\common\hyperframes\README.md)
+  HyperFrames production conventions for `Why It Works`.
 - [remotion-studio/README.md](C:\ME\THINGS\Build a Channel\remotion-studio\README.md)
-  Remotion production app for `Why It Works` with ElevenLabs voiceover generation, scene timing, and sample renders.
+  Legacy Remotion app kept temporarily for reference until deletion is requested.
 - [docs/videos/why-free-apps-never-really-free.md](C:\ME\THINGS\Build a Channel\docs\videos\why-free-apps-never-really-free.md)
   Legacy first full launch-candidate video pack created with the Codex workflow.
 - [docs/learning-log.md](C:\ME\THINGS\Build a Channel\docs\learning-log.md)
@@ -38,7 +40,8 @@ Use these boundaries:
 - `video-projects/` for one video's working memory and production decisions
 - `common/` for reusable systems that should improve many videos
 - `docs/` for channel-level memory, strategy, guardrails, and compact summaries
-- `remotion-studio/` for the current working Remotion app
+- `video-projects/<slug>/hyperframes/` for the current working HyperFrames source per video
+- `remotion-studio/` is legacy and should stay untouched until deletion is requested
 
 For an active video, prefer updating `video-projects/<slug>/` before creating scattered notes elsewhere.
 

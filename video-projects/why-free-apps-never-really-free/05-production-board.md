@@ -1,8 +1,8 @@
 # 05 Production Board
 
-Status: `full board rough cut v1 ready for review`
+Status: `HyperFrames migration rough cut ready for review`
 
-This board converts the detailed visual storyboard into a practical Remotion production plan.
+This board converts the detailed visual storyboard into a practical HyperFrames production plan.
 
 Do not render a full new cut until:
 
@@ -12,7 +12,7 @@ Do not render a full new cut until:
 
 ## Production Decision
 
-Use one reusable Remotion system with:
+Use one reusable HyperFrames system with:
 
 - `8` macro-scenes
 - `64` first-pass micro-beats
@@ -48,8 +48,8 @@ Do not stretch scenes just to fit a long voiceover.
 2. Confirm narrator voice and pacing.
 3. Estimate full runtime from the voice test.
 4. Trim script if needed.
-5. Create Remotion scene data from this production board.
-6. Generate full voiceover.
+5. Create HyperFrames source from this production board.
+6. Copy or generate full voiceover assets into the HyperFrames project.
 7. Build a `45-60s` visual prototype from the first section. `Done: 45s prototype rendered`
 8. Review the prototype for style, density, and pacing. `Current`
 9. Build reusable components for the full rough cut.
@@ -171,9 +171,40 @@ Board opening 30s Core 24 remake note:
 the current Core 24 pass keeps the board grammar but remaps early WIT usage so `phone-bill-panic` is not used before the hidden-cost idea arrives. The app-list beat now uses the pointing-right WIT pose, and detached bottom artifacts were cleaned from affected Core 24 pose PNGs before rendering.
 
 Full board rough cut v1 note:
-the full script now has a dedicated Remotion composition, `WhyFreeAppsFullBoardRoughCut`. It uses the existing eight George scene voiceovers, simple handwritten board scenes, WIT pose anchors, short crossfade/paper-sweep transitions, and a total runtime of `3:59.98`.
+the full script had a dedicated Remotion composition, `WhyFreeAppsFullBoardRoughCut`. It is now a legacy reference because current production has migrated to HyperFrames.
 
-## Remotion Data Model
+HyperFrames migration draft:
+
+```text
+video-projects/why-free-apps-never-really-free/renders/why-free-apps-hyperframes-migration-draft.mp4
+```
+
+Details:
+
+- source: `video-projects/why-free-apps-never-really-free/hyperframes/index.html`
+- design source: `video-projects/why-free-apps-never-really-free/hyperframes/DESIGN.md`
+- voiceover: copied George MP3 files in `hyperframes/assets/voiceover/`
+- WIT assets: copied Core 24 PNGs in `hyperframes/assets/wit/poses/core-24/`
+- check status: `npm run check` passes with no errors and no layout issues
+- render note: draft render needed local `ffmpeg-static` on PATH because global FFmpeg was not installed
+
+Remotion-matched HyperFrames rough cut:
+
+```text
+video-projects/why-free-apps-never-really-free/renders/why-free-apps-hyperframes-remotion-match-draft.mp4
+```
+
+Details:
+
+- generated from the legacy Remotion full-board timeline in `remotion-studio/src/FreeAppsFullBoardVideo.tsx`
+- source generator: `video-projects/why-free-apps-never-really-free/hyperframes/scripts/sync-remotion-board.mjs`
+- HyperFrames project exposes `FullVideo` plus `Part01Hook` through `Part12PayoffEnding`
+- full cut keeps the Remotion part boundaries, 58 board beats, 8 George audio clips, and 3:59.91 voice timing
+- part visual compositions live in `hyperframes/compositions/`; audio preview wrappers live in `hyperframes/part-previews/`
+- check status: `npm run check` passes with no errors and no layout issues
+- render output probes as `00:03:59.95`, `1920x1080`, `30fps`, AAC stereo audio
+
+## HyperFrames Data Model
 
 Use data instead of hardcoding every beat.
 
@@ -210,9 +241,9 @@ type MicroBeat = {
 ```
 
 Reason:
-macro-scene duration can follow voiceover length, while micro-beats are placed as percentages inside the scene.
+macro-scene duration follows `data-start` and `data-duration`, while micro-beats are placed in the GSAP timeline.
 
-This keeps timing adjustable after the real audio exists.
+This keeps timing adjustable after the real audio exists and makes HyperFrames render the final video directly.
 
 ## Scene Data Plan
 
@@ -230,9 +261,9 @@ This keeps timing adjustable after the real audio exists.
 Target share is a starting estimate only.
 Actual scene lengths should follow voiceover duration.
 
-## Scene Data Result
+## Legacy Scene Data Result
 
-Created:
+Legacy Remotion data:
 
 ```text
 remotion-studio/src/data/why-free-apps-never-really-free.json
@@ -243,7 +274,43 @@ Result:
 - macro-scenes: `8`
 - first-pass micro-beats: `64`
 - voiceover IDs match generated MP3 filenames
-- Remotion still render check passed
+- legacy Remotion still render check passed
+
+## HyperFrames Migration Result
+
+Created:
+
+```text
+video-projects/why-free-apps-never-really-free/hyperframes/index.html
+video-projects/why-free-apps-never-really-free/hyperframes/DESIGN.md
+```
+
+Result:
+
+- HyperFrames composition uses `12` timed board scenes
+- George voiceover files are local `<audio>` clips
+- Core 24 WIT pose PNGs are copied into local HyperFrames assets
+- `npm run check` passes with no errors and no layout issues
+- draft render exists at `renders/why-free-apps-hyperframes-migration-draft.mp4`
+
+## Remotion-Matched HyperFrames Result
+
+Created:
+
+```text
+video-projects/why-free-apps-never-really-free/hyperframes/index.html
+video-projects/why-free-apps-never-really-free/hyperframes/compositions/part-01-hook.html
+...
+video-projects/why-free-apps-never-really-free/hyperframes/compositions/part-12-payoff-ending.html
+video-projects/why-free-apps-never-really-free/hyperframes/part-previews/
+```
+
+Result:
+
+- `FullVideo` composes all 12 parts without duplicating audio
+- 12 part compositions match the Remotion part split and can be inspected independently
+- generated board timings come from the Remotion rough cut source instead of a separate approximation
+- draft render exists at `renders/why-free-apps-hyperframes-remotion-match-draft.mp4`
 
 Reason for `64` instead of around `100`:
 the first production pass should prioritize strong visual beats that are realistic to implement.
@@ -502,10 +569,10 @@ Planning source:
 video-projects/why-free-apps-never-really-free/
 ```
 
-Future Remotion scene data:
+Current HyperFrames source:
 
 ```text
-remotion-studio/src/data/why-free-apps-never-really-free.json
+video-projects/why-free-apps-never-really-free/hyperframes/index.html
 ```
 
 Future voiceover:
@@ -514,10 +581,10 @@ Future voiceover:
 video-projects/why-free-apps-never-really-free/voiceover/
 ```
 
-Current Remotion voiceover compatibility path:
+Current HyperFrames voiceover path:
 
 ```text
-remotion-studio/public/voiceover/why-free-apps-never-really-free/
+video-projects/why-free-apps-never-really-free/hyperframes/assets/voiceover/
 ```
 
 Future renders:
@@ -526,7 +593,7 @@ Future renders:
 video-projects/why-free-apps-never-really-free/renders/
 ```
 
-Current Remotion output compatibility path:
+Legacy Remotion output compatibility path:
 
 ```text
 remotion-studio/out/

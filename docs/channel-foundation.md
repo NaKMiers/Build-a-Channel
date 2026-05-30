@@ -207,7 +207,7 @@ Rule:
 - Clean motion that supports the joke or explanation
 
 Handwritten text is part of the default video identity.
-In Remotion, this can be created with handwritten fonts, SVG text, rough underline/cross-out shapes, or exported hand-drawn text images.
+In HyperFrames, this can be created with handwritten-style fonts, CSS text, SVG text, rough underline/cross-out shapes, or exported hand-drawn text images.
 The goal is not perfect handwriting. The goal is a casual, human, funny explainer feel.
 
 Thumbnail direction:

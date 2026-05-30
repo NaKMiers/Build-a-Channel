@@ -21,6 +21,9 @@ Through:
 remotion-studio/src/data/why-free-apps-voice-test.json
 ```
 
+Note:
+this was generated through the legacy Remotion/ElevenLabs helper before the renderer migrated to HyperFrames.
+
 ## Expected Output
 
 ```text
@@ -57,4 +60,4 @@ To hit:
 
 Recommended next action:
 
-generate full George voiceover from the trimmed script.
+generate full George voiceover from the trimmed script, then copy final MP3 files into the active HyperFrames project's `assets/voiceover/` folder.

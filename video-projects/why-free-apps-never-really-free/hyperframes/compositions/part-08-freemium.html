@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <title>Part08Freemium</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      :root {
+        --paper: #FFFDF7;
+        --ink: #101827;
+        --red: #E5162E;
+        --blue: #2057D6;
+        --yellow: #F2C14E;
+        --teal: #8DD6DF;
+        --green: #95D5B2;
+        --soft: #F7F1E8;
+      }
+      * { box-sizing: border-box; }
+      html, body {
+        margin: 0;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: "Ink Free", "Lucida Handwriting", "Segoe Print", "Comic Sans MS", cursive;
+      }
+      [data-composition-id] {
+        position: relative;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background-color: var(--paper);
+        background-image:
+          linear-gradient(90deg, rgba(16, 24, 39, 0.03) 1px, rgba(255, 253, 247, 0) 1px),
+          linear-gradient(0deg, rgba(16, 24, 39, 0.03) 1px, rgba(255, 253, 247, 0) 1px);
+        background-size: 72px 72px;
+      }
+      .board-clip {
+        position: absolute;
+        inset: 0;
+        overflow: hidden;
+      }
+      .text-block {
+        position: absolute;
+        font-family: "Ink Free", "Lucida Handwriting", "Segoe Print", "Comic Sans MS", cursive;
+        font-weight: 800;
+        white-space: pre-line;
+        transform-origin: center;
+      }
+      .delayed-text {
+        opacity: 0;
+      }
+      .label-card {
+        position: absolute;
+        border: 6px solid var(--ink);
+        border-radius: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: "Ink Free", "Lucida Handwriting", "Segoe Print", "Comic Sans MS", cursive;
+        line-height: 1;
+        font-weight: 800;
+        white-space: pre-line;
+        box-shadow: 0 13px 0 rgba(16, 24, 39, 0.13);
+        transform-origin: center;
+      }
+      .wit-wrap {
+        position: absolute;
+      }
+      .wit-img {
+        position: absolute;
+        left: 0;
+        height: auto;
+        filter: drop-shadow(0 18px 22px rgba(16, 24, 39, 0.14));
+      }
+      .phone {
+        position: absolute;
+        border: 8px solid var(--ink);
+        background: #ffffff;
+        box-shadow: 0 22px 0 rgba(16, 24, 39, 0.14);
+      }
+      .phone-speaker {
+        height: 18px;
+        border-radius: 999px;
+        background: var(--ink);
+        margin: 24px auto 0;
+      }
+      .phone-badge {
+        position: absolute;
+        border: 5px solid var(--ink);
+        border-radius: 24px;
+        background: var(--yellow);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Ink Free", "Lucida Handwriting", "Segoe Print", "Comic Sans MS", cursive;
+        font-weight: 800;
+      }
+      .phone-item {
+        position: absolute;
+        height: 48px;
+        border-bottom: 4px solid var(--ink);
+        font-family: "Ink Free", "Lucida Handwriting", "Segoe Print", "Comic Sans MS", cursive;
+        font-weight: 800;
+      }
+      .phone-invoice {
+        position: absolute;
+        border: 5px solid var(--ink);
+        border-radius: 12px;
+        background: #ffffff;
+        transform: rotate(4deg);
+        padding: 18px;
+        font-family: "Ink Free", "Lucida Handwriting", "Segoe Print", "Comic Sans MS", cursive;
+        font-weight: 800;
+        box-shadow: 0 14px 0 rgba(16, 24, 39, 0.12);
+      }
+      .phone-invoice div {
+        margin-top: 18px;
+        padding-top: 12px;
+        border-top: 4px dashed var(--ink);
+        color: var(--red);
+      }
+      .red-cross {
+        position: absolute;
+      }
+      .cross-a, .cross-b {
+        position: absolute;
+        left: 0;
+        top: calc(50% - 8px);
+        width: 100%;
+        height: 14px;
+        border-radius: 999px;
+        background: var(--red);
+        transform-origin: center;
+      }
+      .cross-a { transform: rotate(-9deg); }
+      .cross-b { transform: rotate(8deg); }
+      .underline {
+        position: absolute;
+        height: 9px;
+        border-radius: 999px;
+        transform-origin: left center;
+      }
+      .arrow {
+        position: absolute;
+        height: 12px;
+        border-radius: 999px;
+        background: var(--ink);
+        transform-origin: left center;
+      }
+      .arrow-head {
+        position: absolute;
+        right: -3px;
+        top: -14px;
+        width: 0;
+        height: 0;
+        border-top: 20px solid rgba(255, 253, 247, 0);
+        border-bottom: 20px solid rgba(255, 253, 247, 0);
+        border-left: 34px solid var(--ink);
+      }
+      .smash-text {
+        position: absolute;
+        font-family: "Ink Free", "Lucida Handwriting", "Segoe Print", "Comic Sans MS", cursive;
+        line-height: 1;
+        font-weight: 800;
+        transform-origin: center;
+        filter: drop-shadow(0 10px 0 rgba(16, 24, 39, 0.12));
+      }
+      .end-card-frame {
+        position: absolute;
+        inset: 74px;
+        border: 8px solid var(--ink);
+        border-radius: 24px;
+        opacity: 0.08;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="Part08Freemium" data-start="0" data-duration="21.209" data-width="1920" data-height="1080">
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <section id="freemium" class="board-clip clip" data-start="0" data-duration="2.369" data-track-index="1"><div class="wit-wrap" data-layout-allow-overflow style="left:1130px;top:382px;width:370px;height:481px"><img class="wit-img" src="../assets/wit/poses/core-24/wit-pose-talking.png" alt="WIT" style="top:0px;width:370px" /></div><div class="text-block title" style="left:300px;top:190px;width:720px;color:#101827;font-size:78px;line-height:1.05;text-align:left">freemium works</div><div class="text-block subtitle" data-wiggle-start="0" style="left:300px;top:330px;width:660px;color:#101827;font-size:78px;line-height:1.05;text-align:left">so well</div><div id="card-0" class="label-card" data-rotate="-2" style="left:705px;top:305px;width:245px;height:112px;background-color:#F2C14E;font-size:48px;transform:rotate(-2deg) scale(1);opacity:1">FREE</div><div id="card-1" class="label-card delayed-card" data-appear="1.29" data-rotate="2" data-pop="true" style="left:805px;top:570px;width:330px;height:112px;background-color:#8DD6DF;font-size:48px;opacity:0">PREMIUM</div><div id="underline-0" class="underline delayed-underline" data-appear="0.7" data-draw-duration="0.18" style="left:300px;top:285px;width:545px;background-color:#E5162E;transform:rotate(-1.5deg) scaleX(0)"></div><div class="arrow" style="left:800px;top:470px;width:145px;transform:rotate(20deg)"><div class="arrow-head"></div></div></section>
+        <section id="free-until-useful" class="board-clip clip" data-start="2.37" data-duration="5.749" data-track-index="1"><div class="wit-wrap" data-layout-allow-overflow style="left:1130px;top:380px;width:360px;height:468px"><img class="wit-img" src="../assets/wit/poses/core-24/wit-pose-thinking.png" alt="WIT" style="top:0px;width:360px" /></div><div class="text-block title" style="left:285px;top:180px;width:720px;color:#101827;font-size:66px;line-height:1.05;text-align:left">the app is FREE
+right up until...</div><div id="card-0" class="label-card delayed-card" data-appear="5.72" data-rotate="-4" data-pop="true" style="left:300px;top:500px;width:245px;height:105px;background-color:#F2C14E;font-size:48px;opacity:0">useful</div><div id="card-1" class="label-card delayed-card" data-appear="6.35" data-rotate="3" data-pop="true" style="left:575px;top:475px;width:245px;height:105px;background-color:#8DD6DF;font-size:48px;opacity:0">faster</div><div id="card-2" class="label-card delayed-card" data-appear="7.02" data-rotate="2" data-pop="true" style="left:420px;top:650px;width:260px;height:105px;background-color:#95D5B2;font-size:48px;opacity:0">cleaner</div><div id="card-3" class="label-card delayed-card" data-appear="7.62" data-rotate="-3" data-pop="true" style="left:720px;top:620px;width:300px;height:125px;background-color:#E5162E;font-size:46px;opacity:0">less
+annoying</div><div id="underline-0" class="underline delayed-underline" data-appear="3.1" data-draw-duration="0.14" style="left:595px;top:245px;width:160px;background-color:#E5162E;transform:rotate(-1.5deg) scaleX(0)"></div></section>
+        <section id="pay-options" class="board-clip clip" data-start="8.12" data-duration="5.409" data-track-index="1"><div class="wit-wrap" data-layout-allow-overflow style="left:735px;top:452px;width:355px;height:461.5px"><img class="wit-img" src="../assets/wit/poses/core-24/wit-pose-smug-side-eye.png" alt="WIT" style="top:0px;width:355px" /></div><div class="text-block title" style="left:325px;top:195px;width:720px;color:#101827;font-size:72px;line-height:1.05;text-align:left">want no ads?</div><div class="text-block subtitle delayed-text" data-appear="10.87" data-wiggle-start="8.12" style="left:995px;top:190px;width:660px;color:#101827;font-size:64px;line-height:1.05;text-align:left;opacity:0">want better
+features?</div><div id="card-0" class="label-card" data-rotate="-2" style="left:720px;top:335px;width:260px;height:110px;background-color:#F2C14E;font-size:66px;transform:rotate(-2deg) scale(1);opacity:1">ADS</div><div id="card-1" class="label-card delayed-card" data-appear="10.87" data-rotate="3" data-pop="true" style="left:1070px;top:405px;width:275px;height:110px;background-color:#8DD6DF;font-size:58px;opacity:0">better</div><div id="card-2" class="label-card delayed-card" data-appear="10.37" data-rotate="-4" data-pop="true" style="left:365px;top:510px;width:245px;height:125px;background-color:#F2C14E;font-size:82px;opacity:0">PAY</div><div id="card-3" class="label-card delayed-card" data-appear="12.37" data-rotate="2" data-pop="true" style="left:1260px;top:555px;width:245px;height:125px;background-color:#F2C14E;font-size:82px;opacity:0">PAY</div><div id="underline-1" class="underline delayed-underline" data-appear="8.7" data-draw-duration="0.16" style="left:580px;top:280px;width:170px;background-color:#E5162E;transform:rotate(-1.5deg) scaleX(0)"></div><div id="underline-2" class="underline delayed-underline" data-appear="11.05" data-draw-duration="0.18" style="left:1000px;top:340px;width:360px;background-color:#E5162E;transform:rotate(-1.5deg) scaleX(0)"></div></section>
+        <section id="artificial-limit" class="board-clip clip" data-start="13.53" data-duration="3.839" data-track-index="1"><div class="wit-wrap" data-layout-allow-overflow style="left:1040px;top:382px;width:365px;height:474.5px"><img class="wit-img" src="../assets/wit/poses/core-24/wit-pose-money-panic.png" alt="WIT" style="top:0px;width:365px" /></div><div class="text-block title" style="left:245px;top:175px;width:720px;color:#101827;font-size:68px;line-height:1.05;text-align:left">remove the
+artificial limit</div><div id="card-0" class="label-card" data-rotate="-2" style="left:400px;top:505px;width:300px;height:130px;background-color:#E5162E;font-size:82px;transform:rotate(-2deg) scale(1);opacity:1">99%</div><div id="card-1" class="label-card" data-rotate="3" style="left:730px;top:510px;width:280px;height:125px;background-color:#F2C14E;font-size:68px;transform:rotate(3deg) scale(1);opacity:1">LIMIT</div><div id="card-2" class="label-card delayed-card" data-appear="14.32" data-rotate="2" data-pop="true" style="left:960px;top:245px;width:330px;height:125px;background-color:#8DD6DF;font-size:48px;opacity:0">the app
+created it</div><div id="card-3" class="label-card delayed-card" data-appear="15.52" data-rotate="-3" data-pop="true" style="left:760px;top:655px;width:260px;height:160px;background-color:#F2C14E;font-size:58px;opacity:0">5 sec
+ago</div><div id="underline-0" class="underline delayed-underline" data-appear="13.71" data-draw-duration="0.16" style="left:245px;top:345px;width:400px;background-color:#E5162E;transform:rotate(-1.5deg) scaleX(0)"></div><div class="smash-text" data-appear="15.82" data-rotate="-7" style="left:1115px;top:570px;color:#E5162E;font-size:96px;opacity:0">NEW!</div></section>
+        <section id="monthly-price" class="board-clip clip" data-start="17.37" data-duration="3.839" data-track-index="1"><div class="wit-wrap" data-layout-allow-overflow style="left:1110px;top:380px;width:360px;height:468px"><img class="wit-img" src="../assets/wit/poses/core-24/wit-pose-tiny-defeated.png" alt="WIT" style="top:0px;width:360px" /></div><div class="text-block title" style="left:300px;top:205px;width:720px;color:#101827;font-size:78px;line-height:1.05;text-align:left">congratulations.</div><div class="text-block subtitle" data-wiggle-start="17.37" style="left:350px;top:365px;width:760px;color:#101827;font-size:62px;line-height:1.05;text-align:left">that feeling has
+a monthly price now</div><div id="card-0" class="label-card delayed-card wiggle" data-appear="19.32" data-rotate="2" data-pop="true" style="left:555px;top:625px;width:330px;height:135px;background-color:#F2C14E;font-size:76px;opacity:0">$9/mo</div><div id="card-1" class="label-card delayed-card" data-appear="19.82" data-rotate="-3" data-pop="true" style="left:890px;top:575px;width:235px;height:120px;background-color:#E5162E;font-size:76px;opacity:0">NOW</div><div id="underline-1" class="underline delayed-underline" data-appear="17.8" data-draw-duration="0.16" style="left:303px;top:312px;width:545px;background-color:#E5162E;transform:rotate(-1.5deg) scaleX(0)"></div><div id="underline-2" class="underline delayed-underline" data-appear="20" data-draw-duration="0.18" style="left:347px;top:510px;width:550px;background-color:#2057D6;transform:rotate(-1.5deg) scaleX(0)"></div></section>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </div>
+    <script>
+
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+
+      document.querySelectorAll(".delayed-card").forEach((el) => {
+        const appear = Number(el.dataset.appear || 0);
+        const rotate = Number(el.dataset.rotate || 0);
+        const instant = el.dataset.instant === "true";
+        const pop = el.dataset.pop === "true";
+        const startScale = instant ? 0.86 : 0.2;
+        tl.set(el, { opacity: instant ? 1 : 0, scale: startScale, rotation: rotate }, appear);
+        if (pop) {
+          tl.to(el, { opacity: 1, scale: 1.08, duration: 0.13, ease: "power4.out", overwrite: "auto" }, appear);
+          tl.to(el, { scale: 1, duration: 0.2, ease: "power2.out", overwrite: "auto" }, appear + 0.13);
+        } else {
+          tl.to(el, { opacity: 1, scale: 1, duration: 0.1, ease: "power2.out", overwrite: "auto" }, appear);
+        }
+      });
+
+      document.querySelectorAll(".delayed-text").forEach((el) => {
+        const appear = Number(el.dataset.appear || 0);
+        tl.set(el, { opacity: 0, y: 8 }, 0);
+        tl.to(el, { opacity: 1, y: 0, duration: 0.18, ease: "power2.out", overwrite: "auto" }, appear);
+      });
+
+      document.querySelectorAll(".delayed-underline").forEach((el) => {
+        const appear = Number(el.dataset.appear || 0);
+        const draw = Number(el.dataset.drawDuration || 0.16);
+        const snap = el.dataset.snap === "true" ? 0.18 : 0;
+        tl.set(el, { scaleX: snap }, appear);
+        tl.to(el, { scaleX: 1, duration: draw, ease: "power2.out" }, appear);
+      });
+
+      document.querySelectorAll(".smash-text").forEach((el) => {
+        const appear = Number(el.dataset.appear || 0);
+        const rotate = Number(el.dataset.rotate || 0);
+        tl.set(el, { opacity: 0, scale: 0.2, rotation: rotate }, 0);
+        tl.to(el, { opacity: 1, scale: 2.35, duration: 0.07, ease: "power4.out", overwrite: "auto" }, appear);
+        tl.to(el, { scale: 0.9, duration: 0.17, ease: "power2.inOut", overwrite: "auto" }, appear + 0.07);
+        tl.to(el, { scale: 1, duration: 0.13, ease: "power2.out", overwrite: "auto" }, appear + 0.24);
+      });
+
+      document.querySelectorAll(".wiggle").forEach((el) => {
+        const start = Number(el.dataset.wiggleStart || el.dataset.appear || 0);
+        const cycles = Math.max(0, Math.ceil((21.209 - start) / 0.8) - 1);
+        if (cycles > 0) {
+          const baseRotation = Number(el.dataset.rotate || 0);
+          tl.to(el, {
+            rotation: baseRotation + 0.8,
+            scale: 1.006,
+            duration: 0.4,
+            repeat: cycles,
+            yoyo: true,
+            ease: "sine.inOut",
+            overwrite: "auto",
+          }, start);
+        }
+      });
+
+      window.__timelines["Part08Freemium"] = tl;
+    
+    </script>
+  </body>
+</html>

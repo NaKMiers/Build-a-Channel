@@ -7,7 +7,7 @@ Reusable reference assets for `Wit`, the experimental audience-surrogate charact
 - [poses/core-24](C:\ME\THINGS\Build a Channel\common\assets\wit\poses\core-24)
 - Status: `Experiment`
 - Created: `2026-05-24`
-- Purpose: current video-facing WIT pose set for Remotion production, using the funnier creator-inspired character direction.
+- Purpose: current video-facing WIT pose set for HyperFrames production, using the funnier creator-inspired character direction.
 
 ## Previous Character Reference
 
@@ -21,7 +21,7 @@ Reusable reference assets for `Wit`, the experimental audience-surrogate charact
 - [wit-character-reference-v3-cutout.png](C:\ME\THINGS\Build a Channel\common\assets\wit\wit-character-reference-v3-cutout.png)
 - Status: `Experiment`
 - Created: `2026-05-22`
-- Purpose: cropped WIT v3 cutout used for the first `15s` Remotion prototype test.
+- Purpose: cropped WIT v3 cutout used for the first `15s` legacy Remotion prototype test.
 - Note: this is a temporary production test asset, not the final vector/pose-set version.
 
 ## Pose System
@@ -29,7 +29,7 @@ Reusable reference assets for `Wit`, the experimental audience-surrogate charact
 - [pose-system.md](C:\ME\THINGS\Build a Channel\common\assets\wit\pose-system.md)
 - Status: `Experiment`
 - Created: `2026-05-23`
-- Purpose: reusable WIT pose inventory for Remotion production, starting with a `Core 12` pose set and expanding only after rough-cut testing.
+- Purpose: reusable WIT pose inventory for HyperFrames production, starting with a `Core 12` pose set and expanding only after rough-cut testing.
 
 ## Core 24 Pose Set
 
@@ -37,7 +37,7 @@ Reusable reference assets for `Wit`, the experimental audience-surrogate charact
 - [wit-core-24-separated-contact-sheet.png](C:\ME\THINGS\Build a Channel\common\assets\wit\poses\core-24\wit-core-24-separated-contact-sheet.png)
 - Status: `Experiment`
 - Created: `2026-05-24`
-- Purpose: expanded generated PNG pose set for current Remotion video use.
+- Purpose: expanded generated PNG pose set for current HyperFrames video use.
 
 ## Core 12 Pose Set
 
@@ -45,7 +45,7 @@ Reusable reference assets for `Wit`, the experimental audience-surrogate charact
 - [core-12-contact-sheet.png](C:\ME\THINGS\Build a Channel\common\assets\wit\poses\core-12\core-12-contact-sheet.png)
 - Status: `Experiment`
 - Created: `2026-05-23`
-- Purpose: older generated transparent PNG pose set for Remotion prototype and rough-cut testing.
+- Purpose: older generated transparent PNG pose set for legacy prototype and rough-cut testing.
 
 ## Previous References
 
@@ -62,7 +62,7 @@ This pass makes Wit:
 - shorter, cuter, and more compact than v1
 - creator-inspired through black glasses, soft dark parted hair, calm expression, and a striped shirt
 - slightly glittery simple eyes with clean highlights
-- simple enough to simplify later for Remotion animation
+- simple enough to simplify later for HyperFrames animation
 - tied to the channel through the receipt-like tie
 
 ## Prompt
@@ -86,4 +86,4 @@ Constraints: Do not make him look like a different person. Do not turn it into g
 
 ## Next Use
 
-The next practical step is to simplify v3 into a production-ready 2D/vector-like version with fewer hair strokes and a pose set for Remotion.
+The next practical step is to simplify v3 into a production-ready 2D/vector-like version with fewer hair strokes and a pose set for HyperFrames.

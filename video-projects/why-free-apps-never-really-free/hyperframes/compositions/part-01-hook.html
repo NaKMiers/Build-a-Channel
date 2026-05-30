@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <title>Part01Hook</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      :root {
+        --paper: #FFFDF7;
+        --ink: #101827;
+        --red: #E5162E;
+        --blue: #2057D6;
+        --yellow: #F2C14E;
+        --teal: #8DD6DF;
+        --green: #95D5B2;
+        --soft: #F7F1E8;
+      }
+      * { box-sizing: border-box; }
+      html, body {
+        margin: 0;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: "Ink Free", "Lucida Handwriting", "Segoe Print", "Comic Sans MS", cursive;
+      }
+      [data-composition-id] {
+        position: relative;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background-color: var(--paper);
+        background-image:
+          linear-gradient(90deg, rgba(16, 24, 39, 0.03) 1px, rgba(255, 253, 247, 0) 1px),
+          linear-gradient(0deg, rgba(16, 24, 39, 0.03) 1px, rgba(255, 253, 247, 0) 1px);
+        background-size: 72px 72px;
+      }
+      .board-clip {
+        position: absolute;
+        inset: 0;
+        overflow: hidden;
+      }
+      .text-block {
+        position: absolute;
+        font-family: "Ink Free", "Lucida Handwriting", "Segoe Print", "Comic Sans MS", cursive;
+        font-weight: 800;
+        white-space: pre-line;
+        transform-origin: center;
+      }
+      .delayed-text {
+        opacity: 0;
+      }
+      .label-card {
+        position: absolute;
+        border: 6px solid var(--ink);
+        border-radius: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: "Ink Free", "Lucida Handwriting", "Segoe Print", "Comic Sans MS", cursive;
+        line-height: 1;
+        font-weight: 800;
+        white-space: pre-line;
+        box-shadow: 0 13px 0 rgba(16, 24, 39, 0.13);
+        transform-origin: center;
+      }
+      .wit-wrap {
+        position: absolute;
+      }
+      .wit-img {
+        position: absolute;
+        left: 0;
+        height: auto;
+        filter: drop-shadow(0 18px 22px rgba(16, 24, 39, 0.14));
+      }
+      .phone {
+        position: absolute;
+        border: 8px solid var(--ink);
+        background: #ffffff;
+        box-shadow: 0 22px 0 rgba(16, 24, 39, 0.14);
+      }
+      .phone-speaker {
+        height: 18px;
+        border-radius: 999px;
+        background: var(--ink);
+        margin: 24px auto 0;
+      }
+      .phone-badge {
+        position: absolute;
+        border: 5px solid var(--ink);
+        border-radius: 24px;
+        background: var(--yellow);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Ink Free", "Lucida Handwriting", "Segoe Print", "Comic Sans MS", cursive;
+        font-weight: 800;
+      }
+      .phone-item {
+        position: absolute;
+        height: 48px;
+        border-bottom: 4px solid var(--ink);
+        font-family: "Ink Free", "Lucida Handwriting", "Segoe Print", "Comic Sans MS", cursive;
+        font-weight: 800;
+      }
+      .phone-invoice {
+        position: absolute;
+        border: 5px solid var(--ink);
+        border-radius: 12px;
+        background: #ffffff;
+        transform: rotate(4deg);
+        padding: 18px;
+        font-family: "Ink Free", "Lucida Handwriting", "Segoe Print", "Comic Sans MS", cursive;
+        font-weight: 800;
+        box-shadow: 0 14px 0 rgba(16, 24, 39, 0.12);
+      }
+      .phone-invoice div {
+        margin-top: 18px;
+        padding-top: 12px;
+        border-top: 4px dashed var(--ink);
+        color: var(--red);
+      }
+      .red-cross {
+        position: absolute;
+      }
+      .cross-a, .cross-b {
+        position: absolute;
+        left: 0;
+        top: calc(50% - 8px);
+        width: 100%;
+        height: 14px;
+        border-radius: 999px;
+        background: var(--red);
+        transform-origin: center;
+      }
+      .cross-a { transform: rotate(-9deg); }
+      .cross-b { transform: rotate(8deg); }
+      .underline {
+        position: absolute;
+        height: 9px;
+        border-radius: 999px;
+        transform-origin: left center;
+      }
+      .arrow {
+        position: absolute;
+        height: 12px;
+        border-radius: 999px;
+        background: var(--ink);
+        transform-origin: left center;
+      }
+      .arrow-head {
+        position: absolute;
+        right: -3px;
+        top: -14px;
+        width: 0;
+        height: 0;
+        border-top: 20px solid rgba(255, 253, 247, 0);
+        border-bottom: 20px solid rgba(255, 253, 247, 0);
+        border-left: 34px solid var(--ink);
+      }
+      .smash-text {
+        position: absolute;
+        font-family: "Ink Free", "Lucida Handwriting", "Segoe Print", "Comic Sans MS", cursive;
+        line-height: 1;
+        font-weight: 800;
+        transform-origin: center;
+        filter: drop-shadow(0 10px 0 rgba(16, 24, 39, 0.12));
+      }
+      .end-card-frame {
+        position: absolute;
+        inset: 74px;
+        border: 8px solid var(--ink);
+        border-radius: 24px;
+        opacity: 0.08;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="Part01Hook" data-start="0" data-duration="23.169" data-width="1920" data-height="1080">
+      <section id="hook-title" class="board-clip clip" data-start="0" data-duration="2.799" data-track-index="1"><div class="wit-wrap" data-layout-allow-overflow style="left:160px;top:255px;width:500px;height:650px"><img class="wit-img" src="../assets/wit/poses/core-24/wit-pose-talking.png" alt="WIT" style="top:0px;width:500px;transform:scaleX(-1)" /></div><div class="text-block title" style="left:760px;top:306px;width:720px;color:#101827;font-size:68px;line-height:1.05;text-align:left">here's the fun part
+about modern life</div><div id="underline-0" class="underline delayed-underline" data-appear="1.43" data-draw-duration="0.65" style="left:765px;top:466px;width:580px;background-color:#2057D6;transform:rotate(-1.5deg) scaleX(0)"></div></section>
+        <section id="powerful-companies" class="board-clip clip" data-start="2.8" data-duration="4.399" data-track-index="1"><div class="wit-wrap" data-layout-allow-overflow style="left:145px;top:265px;width:455px;height:591.5px"><img class="wit-img" src="../assets/wit/poses/core-24/wit-pose-pointing-right.png" alt="WIT" style="top:0px;width:455px" /></div><div class="text-block title" style="left:720px;top:165px;width:720px;color:#101827;font-size:62px;line-height:1.05;text-align:left">powerful companies
+give useful things</div><div id="card-0" class="label-card delayed-card wiggle" data-appear="5.95" data-rotate="-3" data-pop="true" style="left:890px;top:475px;width:300px;height:125px;background-color:#F2C14E;font-size:76px;opacity:0">FREE</div></section>
+        <section id="free-list" class="board-clip clip" data-start="7.2" data-duration="3.449" data-track-index="1"><div class="phone" style="left:720px;top:175px;width:390px;height:585px;border-radius:50.7px"><div class="phone-speaker" style="width:93.6px"></div><div class="phone-badge" style="left:62.4px;top:93.6px;width:265.20000000000005px;height:117px;font-size:70.2px">FREE</div><div class="phone-item" style="left:74.1px;top:257.40000000000003px;width:249.6px;font-size:37.05px">video</div><div class="phone-item" style="left:74.1px;top:327.6px;width:249.6px;font-size:37.05px">maps</div><div class="phone-item" style="left:74.1px;top:397.80000000000007px;width:249.6px;font-size:37.05px">messaging</div><div class="phone-item" style="left:74.1px;top:468px;width:249.6px;font-size:37.05px">apps</div></div><div class="wit-wrap" data-layout-allow-overflow style="left:135px;top:270px;width:455px;height:591.5px"><img class="wit-img" src="../assets/wit/poses/core-24/wit-pose-pointing-right.png" alt="WIT" style="top:0px;width:455px" /></div><div class="text-block title" style="left:1190px;top:245px;width:720px;color:#101827;font-size:52px;line-height:1.05;text-align:left">Free video.
+Free maps.
+Free messaging.
+Free apps.</div></section>
+        <section id="streak-emergency" class="board-clip clip" data-start="10.65" data-duration="7.449" data-track-index="1"><div class="wit-wrap" data-layout-allow-overflow style="left:660px;top:450px;width:500px;height:650px"><img class="wit-img" src="../assets/wit/poses/core-24/wit-pose-shocked.png" alt="WIT" style="top:0px;width:500px" /></div><div class="text-block subtitle" data-wiggle-start="10.65" style="left:1145px;top:380px;width:660px;color:#101827;font-size:48px;line-height:1.05;text-align:left">in danger like
+a family emergency</div><div id="card-0" class="label-card" data-rotate="-3" style="left:265px;top:180px;width:390px;height:170px;background-color:#FFFFFF;font-size:48px;transform:rotate(-3deg) scale(1);opacity:1">organize
+your life</div><div id="card-1" class="label-card" data-rotate="3" style="left:760px;top:170px;width:370px;height:150px;background-color:#8DD6DF;font-size:48px;transform:rotate(3deg) scale(1);opacity:1">teach languages</div><div id="card-2" class="label-card" data-rotate="-2" style="left:1205px;top:190px;width:330px;height:140px;background-color:#E5162E;font-size:48px;transform:rotate(-2deg) scale(1);opacity:1">STREAK!</div></section>
+        <section id="suspicious-plan" class="board-clip clip" data-start="18.1" data-duration="5.069" data-track-index="1"><div class="wit-wrap" data-layout-allow-overflow style="left:660px;top:450px;width:500px;height:650px"><img class="wit-img" src="../assets/wit/poses/core-24/wit-pose-confused.png" alt="WIT" style="top:0px;width:500px" /></div><div class="text-block title" style="left:230px;top:195px;width:720px;color:#101827;font-size:62px;line-height:1.05;text-align:left">beautiful example
+of human progress?</div><div class="text-block subtitle" data-wiggle-start="18.1" style="left:1020px;top:192px;width:660px;color:#101827;font-size:62px;line-height:1.05;text-align:left">suspicious
+business plan?</div><div class="red-cross" style="left:210px;top:165px;width:545px;height:150px"><div class="cross-a"></div><div class="cross-b"></div></div><div id="underline-0" class="underline" style="left:975px;top:366px;width:450px;background-color:#E5162E;transform:rotate(-1.5deg) scaleX(1)"></div></section>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </div>
+    <script>
+
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+
+      document.querySelectorAll(".delayed-card").forEach((el) => {
+        const appear = Number(el.dataset.appear || 0);
+        const rotate = Number(el.dataset.rotate || 0);
+        const instant = el.dataset.instant === "true";
+        const pop = el.dataset.pop === "true";
+        const startScale = instant ? 0.86 : 0.2;
+        tl.set(el, { opacity: instant ? 1 : 0, scale: startScale, rotation: rotate }, appear);
+        if (pop) {
+          tl.to(el, { opacity: 1, scale: 1.08, duration: 0.13, ease: "power4.out", overwrite: "auto" }, appear);
+          tl.to(el, { scale: 1, duration: 0.2, ease: "power2.out", overwrite: "auto" }, appear + 0.13);
+        } else {
+          tl.to(el, { opacity: 1, scale: 1, duration: 0.1, ease: "power2.out", overwrite: "auto" }, appear);
+        }
+      });
+
+      document.querySelectorAll(".delayed-text").forEach((el) => {
+        const appear = Number(el.dataset.appear || 0);
+        tl.set(el, { opacity: 0, y: 8 }, 0);
+        tl.to(el, { opacity: 1, y: 0, duration: 0.18, ease: "power2.out", overwrite: "auto" }, appear);
+      });
+
+      document.querySelectorAll(".delayed-underline").forEach((el) => {
+        const appear = Number(el.dataset.appear || 0);
+        const draw = Number(el.dataset.drawDuration || 0.16);
+        const snap = el.dataset.snap === "true" ? 0.18 : 0;
+        tl.set(el, { scaleX: snap }, appear);
+        tl.to(el, { scaleX: 1, duration: draw, ease: "power2.out" }, appear);
+      });
+
+      document.querySelectorAll(".smash-text").forEach((el) => {
+        const appear = Number(el.dataset.appear || 0);
+        const rotate = Number(el.dataset.rotate || 0);
+        tl.set(el, { opacity: 0, scale: 0.2, rotation: rotate }, 0);
+        tl.to(el, { opacity: 1, scale: 2.35, duration: 0.07, ease: "power4.out", overwrite: "auto" }, appear);
+        tl.to(el, { scale: 0.9, duration: 0.17, ease: "power2.inOut", overwrite: "auto" }, appear + 0.07);
+        tl.to(el, { scale: 1, duration: 0.13, ease: "power2.out", overwrite: "auto" }, appear + 0.24);
+      });
+
+      document.querySelectorAll(".wiggle").forEach((el) => {
+        const start = Number(el.dataset.wiggleStart || el.dataset.appear || 0);
+        const cycles = Math.max(0, Math.ceil((23.169 - start) / 0.8) - 1);
+        if (cycles > 0) {
+          const baseRotation = Number(el.dataset.rotate || 0);
+          tl.to(el, {
+            rotation: baseRotation + 0.8,
+            scale: 1.006,
+            duration: 0.4,
+            repeat: cycles,
+            yoyo: true,
+            ease: "sine.inOut",
+            overwrite: "auto",
+          }, start);
+        }
+      });
+
+      window.__timelines["Part01Hook"] = tl;
+    
+    </script>
+  </body>
+</html>

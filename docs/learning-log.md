@@ -13,6 +13,37 @@ Use it to record:
 
 ---
 
+## 2026-05-30
+
+### Renderer Migration: HyperFrames First
+
+Classification: `Operational decision`
+
+Decision:
+migrate active video production from Remotion to HyperFrames.
+
+What changed:
+
+- HyperFrames is now the default renderer for new and active `Why It Works` video work
+- active video source belongs in `video-projects/<slug>/hyperframes/`
+- each HyperFrames project should keep `DESIGN.md`, `index.html`, and local assets under `hyperframes/assets/`
+- review and final MP4 files still belong in `video-projects/<slug>/renders/`
+- `remotion-studio/` is kept temporarily as legacy reference and should not be edited or deleted unless the user asks
+
+Applied to current video:
+
+- created `video-projects/why-free-apps-never-really-free/hyperframes/`
+- migrated the rough cut into a HyperFrames board composition using existing George voiceover and Core 24 WIT assets
+- rendered a draft MP4 at `video-projects/why-free-apps-never-really-free/renders/why-free-apps-hyperframes-migration-draft.mp4`
+
+Verification:
+
+- `npm run check` passes in the HyperFrames project with no errors and no layout issues
+- draft render required adding the local `ffmpeg-static` path because global FFmpeg was not installed
+
+Scope note:
+this is an operational production migration, not a change to channel strategy.
+
 ## 2026-05-19
 
 ### Session Summary

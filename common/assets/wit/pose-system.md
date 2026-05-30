@@ -121,9 +121,9 @@ High-priority expression variant targets:
 - `holding-phone`
 - `holding-receipt`
 
-## Remotion Use
+## HyperFrames Use
 
-Each pose should be importable as a static asset and animated with lightweight Remotion motion:
+Each pose should be importable as a static asset and animated with lightweight HyperFrames/GSAP motion:
 
 - scale bounce
 - position slide

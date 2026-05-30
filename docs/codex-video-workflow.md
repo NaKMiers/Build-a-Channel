@@ -19,17 +19,16 @@ The current default production path for `Why It Works` is:
 
 - per-video planning in `video-projects/<slug>/`
 - reusable tools, templates, and local project skills in `common/`
-- simple static scene assembly in [remotion-studio](C:\ME\THINGS\Build a Channel\remotion-studio\README.md)
-- AI voiceover generation through ElevenLabs into `remotion-studio/public/voiceover/`
-- Remotion timing driven by the generated voiceover files
-- handwritten-looking text rendered in Remotion for labels, captions, arrows, corrections, and punchlines
+- HyperFrames scene assembly in `video-projects/<slug>/hyperframes/`
+- per-video `DESIGN.md`, `index.html`, local audio, and local assets under the HyperFrames project
+- HyperFrames timing driven by audio clips, `data-start`, `data-duration`, and GSAP timelines
+- handwritten-looking text rendered in HyperFrames for labels, captions, arrows, corrections, and punchlines
 
 Default local commands:
 
-- `npm run voices`
-- `npm run voiceover`
 - `npm run dev`
-- `npm run render:sample`
+- `npm run check`
+- `npm run render`
 
 ## Purpose
 
@@ -312,7 +311,7 @@ Use the clearest hidden-cost angle, not the most abstract one.
 ## 6. Production Checklist
 
 Goal:
-Turn the script into a no-face execution plan and a render-ready Remotion build.
+Turn the script into a no-face execution plan and a render-ready HyperFrames build.
 
 Codex does:
 
@@ -320,8 +319,8 @@ Codex does:
 - maps each section to mostly static visuals
 - suggests humor beats through handwritten labels, WIT poses, arrows, cross-outs, simple props, and hard cuts
 - creates an asset checklist
-- creates or updates the Remotion scene data
-- generates or refreshes AI voiceover
+- creates or updates the HyperFrames composition
+- copies or generates voiceover assets into the HyperFrames project
 - creates a render checklist
 
 Creator does:
@@ -333,7 +332,7 @@ Creator does:
 Output:
 
 - scene-by-scene plan
-- Remotion scene data
+- HyperFrames source files
 - voiceover files
 - render-ready composition
 - asset list
@@ -345,22 +344,24 @@ Why this helps:
 - reduces time wasted figuring out visuals during editing
 - improves repeatability
 
-### Default Remotion Flow
+### Default HyperFrames Flow
 
 Once the scene plan is approved:
 
 1. turn the script into scene-level narration blocks
 2. convert each narration block into static visual beats
 3. add handwritten-looking labels, captions, arrows, and punchline text
-4. write or update the scene data in `remotion-studio/src/data/`
-5. run `npm run voiceover`
-6. preview timing in Remotion Studio with `npm run dev`
-7. render the sample or final export from Remotion
+4. create or update `video-projects/<slug>/hyperframes/DESIGN.md`
+5. create or update `video-projects/<slug>/hyperframes/index.html`
+6. copy voiceover and WIT/media assets into `video-projects/<slug>/hyperframes/assets/`
+7. run `npm run check`
+8. preview timing with `npm run dev`
+9. render the review or final export with `npm run render`
 
-This keeps voice timing, scene duration, and export logic in one place instead of splitting the workflow across multiple editing tools too early.
+This keeps visual source, voice timing, scene duration, and export logic inside the active video project.
 
-Remotion should act as a simple video compiler, not a heavy animation system.
-Use hard cuts, static images, WIT poses, simple zooms only when useful, and handwritten text as the main visual language.
+HyperFrames should act as a video compiler and motion layer, not an excuse for heavy animation.
+Use board scenes, WIT poses, transitions, simple GSAP entrances, cue-timed emphasis, and handwritten text as the main visual language.
 
 Example:
 
@@ -470,7 +471,7 @@ For one chosen topic, Codex should aim to produce:
 4. `03-packaging.md`: title and thumbnail decision
 5. `04-visual-plan.md`: scene-level visual plan
 6. `05-production-board.md`: render-ready production plan
-7. Remotion scene data and voiceover files
+7. HyperFrames source, local assets, and voiceover files
 8. 3 or more short-form cutdowns
 9. `06-review.md`: render and post-upload review
 

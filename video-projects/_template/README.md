@@ -24,5 +24,6 @@ Copy this folder when starting a new long-form `Why It Works` video.
 - Packaging:
 - Visual plan:
 - Production board:
+- HyperFrames:
 - Render:
 - Review:

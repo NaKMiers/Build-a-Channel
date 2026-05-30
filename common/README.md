@@ -9,7 +9,8 @@ Use this folder for things that should improve multiple videos, not just one vid
 ```text
 common/
   assets/       shared brand assets, sound beds, reusable graphics
-  remotion/     Remotion conventions and shared production notes
+  hyperframes/  HyperFrames conventions and shared production notes
+  remotion/     legacy Remotion notes kept temporarily for reference
   skills/       local project skills and repeatable Codex workflows
   templates/    reusable templates for video projects and production docs
   tools/        reusable tool notes and scripts
@@ -31,13 +32,21 @@ common/
 
 ## Current Production App
 
-The current Remotion app still lives at:
+The current production renderer is HyperFrames.
+
+Per-video HyperFrames projects live at:
+
+```text
+video-projects/<slug>/hyperframes/
+```
+
+The old Remotion app still lives at:
 
 ```text
 remotion-studio/
 ```
 
-Keep it there for now to avoid breaking commands.
-Use `common/remotion/` to document shared Remotion conventions and future extraction plans.
+Keep it there for now because the user asked to delete it later, not during the migration.
+Use `common/hyperframes/` for the active production conventions.
 
-Move code only when the production system is stable enough to reorganize without losing momentum.
+Do not move or delete legacy Remotion code unless the user explicitly requests it.

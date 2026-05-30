@@ -13,9 +13,10 @@ Tool rules:
 
 | Tool | Current Location | Purpose |
 |---|---|---|
-| ElevenLabs voiceover generator | `remotion-studio/scripts/generate-voiceover.mjs` | Generate MP3 narration per scene |
-| ElevenLabs voice list | `remotion-studio/scripts/list-elevenlabs-voices.mjs` | Inspect available narrator voices |
-| Remotion render commands | `remotion-studio/package.json` | Preview and render video compositions |
+| HyperFrames CLI | `video-projects/<slug>/hyperframes/package.json` | Preview, check, and render video compositions |
+| HyperFrames source | `video-projects/<slug>/hyperframes/index.html` | HTML/CSS/GSAP video source |
+| HyperFrames design brief | `video-projects/<slug>/hyperframes/DESIGN.md` | Visual identity source for the composition |
+| Legacy ElevenLabs voiceover generator | `remotion-studio/scripts/generate-voiceover.mjs` | Generate MP3 narration per scene until a new voice pipeline replaces it |
 
 ## Tool Notes
 
@@ -28,5 +29,5 @@ Tool rules:
 - image generation workflow
 - thumbnail generation workflow
 - local asset optimization
-- script-to-scene conversion
+- script-to-HyperFrames conversion
 - video QA checklist runner

@@ -1,6 +1,8 @@
-# Remotion System
+# Legacy Remotion System
 
-This folder stores shared Remotion conventions for `Why It Works`.
+This folder stores old Remotion conventions for `Why It Works`.
+
+Remotion is no longer the default production path. HyperFrames is now the active renderer.
 
 The active app currently remains in:
 
@@ -23,17 +25,20 @@ PowerShell may block direct `npm` calls on this machine, so prefer `cmd /c npm .
 
 ## Production Rule
 
-Do not create a new Remotion app per video unless there is a strong reason.
+Do not create new Remotion work unless the user explicitly asks.
 
-Preferred model:
+Legacy model:
 
 - one reusable Remotion system
 - per-video scene data
 - per-video assets and renders stored under `video-projects/<slug>/` when practical
 
-## Future Extraction Plan
+## Migration Note
 
-When stable, extract reusable pieces from `remotion-studio/src/` into shared modules:
+Keep `remotion-studio/` unchanged until the user asks to delete it.
+Use `common/hyperframes/` and `video-projects/<slug>/hyperframes/` for current production.
+
+If useful later, manually port reusable ideas from `remotion-studio/src/` into HyperFrames patterns:
 
 - theme system
 - Wit character component

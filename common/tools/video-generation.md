@@ -1,21 +1,22 @@
 # Video Generation Tool
 
 Purpose:
-track reusable video-generation or video-assembly tools beyond Remotion.
+track reusable video-generation or video-assembly tools for the channel.
 
 ## Current Status
 
-The default video assembly system is Remotion:
+The default video assembly and render system is HyperFrames:
 
 ```text
-remotion-studio/
+video-projects/<slug>/hyperframes/
 ```
 
-No separate AI video-generation tool is locked yet.
+The old Remotion app is kept temporarily for reference and should not be edited or deleted unless the user asks.
 
 ## Rules
 
-- Do not introduce a new video-generation tool unless it clearly improves the production pipeline.
+- Do not introduce another video-generation tool unless it clearly improves the HyperFrames pipeline.
 - Keep generated video clips inside `video-projects/<slug>/assets/` or `video-projects/<slug>/renders/`.
 - Record reusable workflows in `common/`.
 - Keep the final edit path simple enough to repeat weekly.
+- Run `npm run check` before treating a HyperFrames composition as ready.

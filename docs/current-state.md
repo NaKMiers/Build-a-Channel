@@ -8,7 +8,7 @@ It should stay short and reflect the latest stable state of the project.
 
 - Project: `Why It Works`
 - Type: `English-first no-face explainer YouTube channel`
-- Status: `foundation stage with standardized video-project workspace and first working production pipeline`
+- Status: `foundation stage with standardized video-project workspace and HyperFrames-first production pipeline`
 
 ## Locked Decisions
 
@@ -51,21 +51,25 @@ Practical rule:
 
 - `video-projects/` stores per-video work and is the source of truth for active videos
 - `common/` stores reusable tools, templates, local skills, shared assets, and production notes
-- `remotion-studio` is the working Remotion app for long-form video assembly
-- Remotion should prioritize simple static scenes, WIT poses, voiceover, hard cuts, captions, and handwritten-looking text instead of full animation
-- ElevenLabs voiceover generation is configured through local env vars
-- Sample scene timing now follows generated voiceover files automatically
+- HyperFrames is the default renderer for new and active video production
+- Active HyperFrames source lives inside each video folder at `video-projects/<slug>/hyperframes/`
+- HyperFrames should prioritize simple board scenes, WIT poses, voiceover, transitions, captions, and handwritten-looking text instead of heavy animation
+- Existing George voiceover files are reused as local HyperFrames audio assets when available
 - First rendered voiceover-only cut exists for `Why Free Apps Are Never Really Free`
 - Current WIT visual experiment: [Core 24 funny WIT pose set](C:\ME\THINGS\Build a Channel\common\assets\wit\poses\core-24)
-- Current Remotion WIT source: `remotion-studio/public/assets/wit/poses/core-24`
+- Current HyperFrames WIT source for the active video: `video-projects/why-free-apps-never-really-free/hyperframes/assets/wit/poses/core-24`
+- `remotion-studio/` is legacy and should remain untouched until the user asks to delete it
 
 ## Current Active Video
 
 - Active folder: [why-free-apps-never-really-free](C:\ME\THINGS\Build a Channel\video-projects\why-free-apps-never-really-free)
-- Current step: `Review full board rough cut v1`
-- Current decision: restart the Remotion opening around simple board-based scenes, hard cuts, handwritten labels, red markup, and minimal WIT movement
+- Current step: `Review Remotion-matched HyperFrames rough cut`
+- Current decision: migrate active production from Remotion to HyperFrames while keeping simple board-based scenes, handwritten labels, red markup, WIT pose anchors, minimal movement, and the legacy Remotion timing
 - Current voice decision: use `George`; keep Anh Khoa's voice sample for future cloning after workflow stabilizes
-- Latest render: [full-board-rough-cut-v1.mp4](C:\ME\THINGS\Build a Channel\video-projects\why-free-apps-never-really-free\renders\full-board-rough-cut-v1.mp4)
+- Latest HyperFrames source: [index.html](C:\ME\THINGS\Build a Channel\video-projects\why-free-apps-never-really-free\hyperframes\index.html)
+- Latest HyperFrames draft render: [why-free-apps-hyperframes-remotion-match-draft.mp4](C:\ME\THINGS\Build a Channel\video-projects\why-free-apps-never-really-free\renders\why-free-apps-hyperframes-remotion-match-draft.mp4)
+- Latest HyperFrames composition set: `FullVideo` plus `Part01Hook` through `Part12PayoffEnding`
+- Previous Remotion rough cut kept for reference: [full-board-rough-cut-v1.mp4](C:\ME\THINGS\Build a Channel\video-projects\why-free-apps-never-really-free\renders\full-board-rough-cut-v1.mp4)
 
 ## Deewas Rule
 
@@ -87,6 +91,6 @@ Use [channel-guardrails.md](C:\ME\THINGS\Build a Channel\docs\channel-guardrails
 
 ## Best Next Steps
 
-1. Review `full-board-rough-cut-v1.mp4`
-2. Mark scene-level fixes for pacing, layout, and joke clarity
-3. Polish only after the full rough cut direction is approved
+1. Review `why-free-apps-hyperframes-remotion-match-draft.mp4`
+2. Mark scene-level fixes for pacing, layout, and joke clarity against the Remotion-matched HyperFrames cut
+3. Polish individual part compositions only after the rough cut direction is approved

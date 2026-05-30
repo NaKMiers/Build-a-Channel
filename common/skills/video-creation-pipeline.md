@@ -56,11 +56,27 @@ Every long-form video should default to handwritten-looking text for:
 - joke punchlines
 - useful English phrases
 
-Use Remotion to render the handwritten style through fonts, SVG text, rough underline/cross-out shapes, or exported hand-drawn text images.
+Use HyperFrames to render the handwritten style through CSS text, SVG text, rough underline/cross-out shapes, or exported hand-drawn text images.
 
 Working rule:
 
 `Handwritten text is the main visual language.`
+
+## HyperFrames Production Rule
+
+New production should happen in:
+
+```text
+video-projects/<slug>/hyperframes/
+```
+
+Each HyperFrames video needs:
+
+- `DESIGN.md`
+- `index.html`
+- local audio/assets in `assets/`
+- `npm run check` before review
+- rendered MP4s in `video-projects/<slug>/renders/`
 
 ## Per-Video Storage
 

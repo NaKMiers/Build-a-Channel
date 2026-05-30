@@ -76,9 +76,10 @@ When working in this project, Codex should:
 Use these boundaries consistently:
 
 - `video-projects/`: one folder per video, including idea, research, script, packaging, visual plan, production board, and review
-- `common/`: reusable systems for many videos, including tools, templates, local project skills, shared assets, and Remotion conventions
+- `common/`: reusable systems for many videos, including tools, templates, local project skills, shared assets, and HyperFrames conventions
 - `docs/`: channel-level memory, strategy, learning log, guardrails, and compact state
-- `remotion-studio/`: current working Remotion app
+- `video-projects/<slug>/hyperframes/`: current working HyperFrames source for each active video
+- `remotion-studio/`: legacy Remotion app kept temporarily for reference; do not edit or delete unless asked
 
 For active production work, do not leave important decisions only in chat.
 Write them into the relevant `video-projects/<slug>/` file before moving to the next workflow step.

@@ -13,7 +13,7 @@ remotion-studio/src/data/why-free-apps-full-voiceover.json
 
 ## Output
 
-Remotion compatibility path:
+Legacy Remotion compatibility path:
 
 ```text
 remotion-studio/public/voiceover/why-free-apps-never-really-free/
@@ -23,6 +23,12 @@ Project copy path:
 
 ```text
 video-projects/why-free-apps-never-really-free/voiceover/full/
+```
+
+HyperFrames render path:
+
+```text
+video-projects/why-free-apps-never-really-free/hyperframes/assets/voiceover/
 ```
 
 ## Scenes
@@ -69,4 +75,4 @@ video-projects/why-free-apps-never-really-free/voiceover/full/
 
 ## Next Step
 
-Build Remotion scene data around these 8 audio files.
+Use these 8 audio files as HyperFrames `<audio>` clips with explicit `data-start` and `data-duration`.

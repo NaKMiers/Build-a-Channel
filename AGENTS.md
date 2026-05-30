@@ -44,14 +44,15 @@ Use the project docs intentionally:
 
 ## Project-Local Skills
 
-- Use [WIW Take Note](C:\ME\THINGS\Build a Channel\.agents\skills\wiw-take-note\SKILL.md) when the user asks to take note of reviews, remember useful production feedback, or persist lessons that should improve future Remotion/video review passes.
+- Use [WIW Take Note](C:\ME\THINGS\Build a Channel\.agents\skills\wiw-take-note\SKILL.md) when the user asks to take note of reviews, remember useful production feedback, or persist lessons that should improve future HyperFrames/video review passes.
 
 ## Workspace Boundaries
 
 - One video project belongs in one folder under `video-projects/`
 - Reusable systems belong in `common/`
 - Channel-level strategy and memory belong in `docs/`
-- The current Remotion app remains in `remotion-studio/` until there is a deliberate migration
+- HyperFrames is now the default video production and rendering path
+- The old Remotion app remains in `remotion-studio/` temporarily for reference; do not delete or edit it unless explicitly asked
 
 For active videos, write decisions into the relevant `video-projects/<slug>/` file before moving to the next workflow step.
 
@@ -75,7 +76,7 @@ Only `Core` belongs in the channel foundation.
 - Main audience lens: `English learners`
 - Main lane: `money, internet, society, business, and modern life`
 - Tone: `smart, simple, funny, dry`
-- Default video text style: `handwritten labels and captions rendered through Remotion`
+- Default video text style: `handwritten labels and captions rendered through HyperFrames`
 
 ## Main Goal
 

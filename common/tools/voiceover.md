@@ -5,19 +5,27 @@ generate narration audio for approved video scripts.
 
 ## Current Implementation
 
-Current script:
+Current active use:
+
+```text
+video-projects/<slug>/hyperframes/assets/voiceover/
+```
+
+Existing George MP3 files can be copied into the HyperFrames project and referenced directly by `<audio>` clips.
+
+Legacy generation script:
 
 ```text
 remotion-studio/scripts/generate-voiceover.mjs
 ```
 
-Current voice-list script:
+Legacy voice-list script:
 
 ```text
 remotion-studio/scripts/list-elevenlabs-voices.mjs
 ```
 
-Reference voice test script:
+Legacy reference voice test script:
 
 ```text
 remotion-studio/scripts/generate-reference-voice-test.mjs
@@ -25,7 +33,7 @@ remotion-studio/scripts/generate-reference-voice-test.mjs
 
 ## Current Commands
 
-Run from `remotion-studio/`:
+Run from `remotion-studio/` only if new ElevenLabs audio is needed:
 
 ```powershell
 cmd /c npm run voices
@@ -38,6 +46,7 @@ cmd /c npm run voiceover:reference-test
 - Do not generate full voiceover until the script and visual plan are approved.
 - Keep API keys only in local env files.
 - Store final per-video voiceover notes in `video-projects/<slug>/voiceover/`.
+- Copy render-ready audio files into `video-projects/<slug>/hyperframes/assets/voiceover/`.
 - Record reusable voice lessons in this file or `common/skills/continuous-improvement-loop.md`.
 - Only use a reference voice when the recording is owned by the creator or explicit permission exists.
 - For early tests, create temporary reference voices and delete them after generation unless the voice is intentionally approved.

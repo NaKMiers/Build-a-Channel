@@ -52,7 +52,7 @@ renders/
 For an active video, the `video-projects/<slug>/` folder is the source of truth.
 
 Use `docs/` for channel-level memory, strategy, reusable workflow notes, and compact summaries.
-Use `common/` for reusable tools, templates, skills, Remotion systems, and shared assets.
+Use `common/` for reusable tools, templates, skills, HyperFrames systems, and shared assets.
 
 ## Continuous Improvement
 

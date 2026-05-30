@@ -14,5 +14,5 @@ Use this folder for other reusable templates later:
 
 - thumbnail brief template
 - voiceover test template
-- Remotion scene data template
+- HyperFrames composition template
 - post-upload report template

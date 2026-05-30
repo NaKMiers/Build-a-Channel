@@ -5,7 +5,7 @@ Status: `Detailed storyboard draft for approval`
 This replaces the earlier high-level visual plan.
 
 Purpose:
-turn the approved script into a Remotion-ready visual storyboard.
+turn the approved script into a HyperFrames-ready visual storyboard.
 
 Do not generate new voiceover, scene JSON, or renders until this storyboard is approved.
 
@@ -239,17 +239,17 @@ The actual timing should follow voiceover after the test.
 | H14 | `modern life is full of hidden checkouts` | Multiple tiny checkout counters appear behind normal objects. | `hidden checkouts` | Wit stands in middle. | Must |
 | H15 | `we'll keep explaining them` | Clean end card with channel name. Receipt tie becomes underline. | `WHY IT WORKS` | Small Wit silhouette beside title. | Must |
 
-## Remotion Planning Notes
+## HyperFrames Planning Notes
 
 This storyboard should become scene data in Step 9.
 
 Suggested implementation:
 
-- macro-scenes become top-level scene groups
-- micro-beats become timed events inside each macro-scene
-- reusable components handle common visuals
-- voiceover duration controls macro-scene duration
-- micro-beat timing is adjusted after audio exists
+- macro-scenes become timed HyperFrames scene clips
+- micro-beats become GSAP-timed elements inside each scene
+- reusable CSS classes handle common visuals
+- voiceover clips control the global timeline
+- micro-beat timing is adjusted against exact audio cues
 
 Possible reusable components:
 
