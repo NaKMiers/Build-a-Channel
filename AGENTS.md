@@ -42,6 +42,10 @@ Use the project docs intentionally:
 - `docs/learning-log.md` for experiments, lessons, and dated changes
 - `docs/channel-guardrails.md` for safety checks
 
+## Project-Local Skills
+
+- Use [WIW Take Note](C:\ME\THINGS\Build a Channel\.agents\skills\wiw-take-note\SKILL.md) when the user asks to take note of reviews, remember useful production feedback, or persist lessons that should improve future Remotion/video review passes.
+
 ## Workspace Boundaries
 
 - One video project belongs in one folder under `video-projects/`

@@ -243,10 +243,137 @@ Review focus:
 - Version: `full-board-rough-cut-v1`
 - Date: `2026-05-24`
 - Runtime: `3:59.98`
+
+### Part01Hook Trim Fix
+
+- Date: `2026-05-28`
+- Fix: trimmed the `Part01Hook` Remotion composition to end at `23.17s`, matching the end of `free-gifts.mp3`.
+- Reason: the previous `23.95s` cut included a small extra section after the hook voiceover ended.
+
+### Part02TheSuspicion Timing Pass
+
+- Date: `2026-05-28`
+- Fix: added a new `for FREE?` bridge board between `two-things` and `generous`.
+- Fix: changed `generous?` into an emphasized `generous` underline beat, then a delayed `?` smash.
+- Fix: updated the `two-things` WIT layout so the receipt pose no longer looks clipped at the top in the composition preview.
+- Fix: removed the early yellow `FREE` card from `two-things`, enlarged and centered the sentence, extended the `for FREE?` underline, enlarged the invoice card, and highlighted `second one`.
 - File: [full-board-rough-cut-v1.mp4](C:\ME\THINGS\Build a Channel\video-projects\why-free-apps-never-really-free\renders\full-board-rough-cut-v1.mp4)
 - Composition: `WhyFreeAppsFullBoardRoughCut`
 - Source component: `FreeAppsFullBoardVideo`
 - Status: `Ready for review`
+
+### Part05Method1Ads Remake
+
+- Date: `2026-05-28`
+- Fix: remade `Part05Method1Ads` from `3` boards into `5` cue-matched boards inside the shared `FreeAppsFullBoardVideo` timeline.
+- Fix: added a dedicated `watching videos / scrolling feeds / free platform` board so the voice no longer jumps from `ads` straight to `product`.
+- Fix: separated `not exactly the app` from `your attention` so the spoken emphasis lands on `ATTENTION` instead of sharing one crowded board.
+- Fix: rebuilt the final ads board around `get people in`, `keep them there`, and `attention -> SOLD` so the monetization logic reads faster.
+- Fix: moved WIT farther inside frame edges across the remade Part 05 boards to avoid hair or prop crop in composition review.
+- Verification: `npm run lint`, `npx remotion compositions`, and still checks from `Part05Method1Ads` frames `45`, `150`, `285`, and `420`.
+- Follow-up: retimed the `ADS` reveal to local `00:03.16`, moved the next scene cut to local `00:05.24`, pinned `not exactly the app` to local `00:09.17`, and fully remade the tail from local `00:11.26` onward into a fresh `your attention -> people in -> keep them there -> sell attention` sequence.
+- Follow-up: extended `Part05Method1Ads` to `20.30s` so `then sells pieces of that attention` is not cut off, moved the next `retention` board to `87.10s`, lowered the sell-board arrow below the labels, and delayed the `your attention` underline so it draws at the spoken cue.
+- Verification: `npm run lint`, `remotion compositions`, and still checks for `underline-before`, `underline-after`, `sell-layout`, and `sell-final-hold`.
+- Timing correction: set `Part05Method1Ads` to finish at local `00:19.15`, with the next `retention` board starting at global `85.97s`.
+
+### Part06Retention Remake
+
+- Date: `2026-05-28`
+- Fix: fully remade `Part06Retention` from `3` broad boards into `6` cue-matched boards from global `85.97s` to `105.59s`.
+- Fix: separated `retention`, `not because they love you`, `every extra minute is inventory`, `boredom / curiosity`, `one notification / 20 minutes`, and `tragic but scalable business model` into distinct local beats.
+- Fix: kept the exact Part 06 boundary unchanged so the final board holds through local frame `588` and `Part07Method2Behavior` still starts at global `105.59s`.
+- Layout check: moved arrows below text/card clusters and kept WIT clear of labels, card text, and frame edges across the remade boards.
+- Verification: `npm run lint`, `npx remotion compositions`, and still checks from `Part06Retention` frames `0`, `101`, `169`, `271`, `379`, `502`, and `588`.
+- Follow-up: retimed the `retention` underline to local `00:02.15`, moved the `Your boredom is inventory` board to local `00:07.29`, moved the `check one notification / 20 minutes gone` board to local `00:11.29`, and added a small wiggle to `20 minutes gone`.
+- Verification: `npm run lint`, `npx remotion compositions`, and still checks from `Part06Retention` frames `64`, `72`, `219`, `339`, and `350`.
+
+### Part07Method2Behavior Review Fix
+
+- Date: `2026-05-29`
+- Working cue sheet for this pass:
+  - local `00:00.00`: `But ads are only the beginner level.`
+  - local `00:03.00`: `Some apps do not just want your attention.`
+  - local `00:05.00`: `They want your behavior.`
+  - local `00:07.07`: `They let you in for free...` / `FREE` smash cue.
+  - local `00:09.11`: `then teach you a routine`
+  - local `00:11.18`: `Open the app.`
+- Fix: removed the unsaid `method 2: behavior` text from the opening board and rebalanced that scene around `ads are only the beginner level`, `LEVEL 1 ADS`, and `LEVEL 2 HABITS`.
+- Fix: moved the `not just attention` board to local `00:03.00`.
+- Fix: moved the `they want your behavior` board to local `00:05.00` and removed the unsaid `your routine` card.
+- Fix: rebuilt the free-entry board so `FREE` smashes into the scene on the spoken cue instead of sitting as a static early phone badge.
+- Fix: moved the routine board earlier and made `open app` visible at local `00:11.18` instead of arriving after the line.
+- Verification: `npm run lint` and still checks from `Part07Method2Behavior` frames `77`, `90`, `150`, `217`, and `348`.
+- Tail follow-up: remade only local `00:22.12` onward into one final board for the remaining Part07 line instead of cutting again inside the tail.
+- Tail verification: `npm run lint` and still checks from `Part07Method2Behavior` frames `675` and `760`.
+- Tail remake follow-up: refactored local `00:22.11` onward again, scoped only to `Part07Method2Behavior`, into one final board combining `not just a tool`, `part of your day`, and `charging gets easier`.
+- Tail remake verification: `npm run lint` and still checks from `Part07Method2Behavior` frames `663`, `675`, `705`, `765`, and `810`.
+
+### Part08Freemium Review Fix
+
+- Date: `2026-05-29`
+- User review focus: timing is the highest priority; scenes and elements should appear at the moment that fits the voice.
+- Working cue sheet for this pass:
+  - local `00:00.00`: `That is why freemium works so well.`
+  - local `00:02.37`: `The app is free right up until...`
+  - local `00:05.22`: `useful, faster, cleaner, or less annoying`
+  - local `00:08.12`: `Want no ads? Pay.`
+  - local `00:10.22`: `Want the better features? Pay.`
+  - local `00:12.27`: `remove the artificial limit`
+  - local `00:15.22`: `created five seconds ago`
+  - local `00:17.37`: `Congratulations. That feeling...`
+  - local `00:19.32`: `monthly price now`
+- Fix: remade `Part08Freemium` from `5` broad boards into `9` cue-matched boards from global `133.83s` to `155.04s`.
+- Fix: separated the two `Pay` beats so each `PAY` card pops in on its own spoken cue instead of sharing one late board.
+- Fix: added spoken-word emphasis for `freemium`, `FREE`, `useful/faster/cleaner/less annoying`, `better features`, `artificial limit`, `five seconds ago`, and `monthly price now`.
+- Layout check: moved WIT inward and reduced WIT size on the denser boards so hair, props, and body stay inside the video frame with breathing room.
+- Verification: `npm run lint`, `npx remotion compositions`, and still checks from `Part08Freemium` frames `0`, `71`, `157`, `205`, `244`, `285`, `350`, `368`, `461`, `580`, and `630`.
+- Follow-up: compressed `Part08Freemium` back down to `5` boards because the `21.21s` voiceover felt over-split.
+- Follow-up: kept the timing emphasis by using delayed popup cards and underlines inside each board instead of cutting to a new board for every phrase.
+- Follow-up layout check: removed phone props from the `FREE until...` and `Pay` boards after still checks showed they competed with popup text and WIT.
+- Follow-up verification: `npm run lint`, `npx remotion compositions`, and still checks from `Part08Freemium` frames `0`, `71`, `205`, `244`, `285`, `350`, `410`, `461`, `470`, `580`, and `630`.
+- Timestamp review fix: widened the `freemium works` underline, split `so well` into a separate line with more vertical spacing, and shortened/repositioned the `FREE -> PREMIUM` arrow so it no longer covers `PREMIUM`.
+- Timestamp review fix: moved the `FREE` underline under the spoken word, delayed the first `PAY` popup to local `00:10.14`, delayed the second `PAY` popup to local `00:12.14`, and moved the `artificial limit` board to local `00:13.16`.
+- Timestamp verification: `npm run lint`, `npx remotion compositions`, and still checks from `Part08Freemium` frames `54`, `101`, `276`, `314`, `355`, `368`, `374`, and `406`.
+
+## Part09Method3LockIn Review Fix
+
+- Date: `2026-05-29`
+- User review focus: timing first; Part09 elements should appear when the voice reaches the matching cue, with no WIT crop, no element collisions, and stronger emphasis on important words.
+- Working cue sheet from the `lock-in.mp3` pause map:
+  - local `00:00.00`: `Then there is the long game: lock-in.`
+  - local `00:02.48`: `Some apps do not need to charge you immediately...`
+  - local `00:06.28`: `dependency`
+  - local `00:07.53`: `Once your photos...`
+  - local `00:11.54`: `leaving stops feeling like uninstalling`
+  - local `00:14.70`: `moving house`
+  - local `00:16.95`: `And once leaving becomes harder than paying...`
+  - local `00:20.41`: `smooth`
+- Fix: kept the section to `5` boards, avoiding the Part08 over-splitting problem, but moved board starts to sentence boundaries and delayed popup cards to spoken cues.
+- Fix: delayed `DEPENDENCY`, `photos/files/playlists/friends/habits`, `MOVING HOUSE`, `PAYING`, and `SMOOTH` so they pop on the matching words instead of appearing at sentence start.
+- Layout check: reduced and moved WIT on every Part09 board so hair, props, and body stay inside the `1920x1080` frame with visible breathing room.
+- Verification: `npm run lint`, `npx remotion compositions`, and still checks from `Part09Method3LockIn` frames `0`, `37`, `74`, `147`, `190`, `226`, `238`, `259`, `276`, `299`, `319`, `346`, `440`, `509`, `556`, `568`, and `615`.
+
+## Part10YouAreTheProduct Review Fix
+
+- Date: `2026-05-29`
+- User review focus: timing first; elements should appear on the spoken cue, with no overlapping cards, no WIT crop, and stronger emphasis on important words.
+- Working cue sheet from the `label-stack.mp3` pause map:
+  - local `00:01.35`: `if the product is free`
+  - local `00:02.83`: `you are the product`
+  - local `00:04.10`: `that is sometimes true`
+  - local `00:05.97`: `not the whole story`
+  - local `00:07.76`: `Sometimes you are the product`
+  - local `00:09.34`: `future customer`
+  - local `00:11.50`: `behavior being trained`
+  - local `00:14.22`: `slowly upgraded into...`
+  - local `00:16.85`: `six tiny subscriptions`
+  - local `00:19.09`: `modern feelings available`
+- Fix: kept Part10 to `4` boards to avoid the Part08 over-splitting problem, but moved the role board earlier and used timed popups instead of showing all labels at once.
+- Fix: delayed `PRODUCT`, `FUTURE CUSTOMER`, `TRAINED BEHAVIOR`, `SIX TINY SUBSCRIPTIONS`, and `MODERN FEELING` to the matching spoken cues.
+- Fix: added cue-timed underlines for the quote phrase and converted `not the whole story` into a popup card instead of a static early subtitle.
+- Fix: cue-critical Part10 cards now snap to readable opacity/scale on the spoken cue frame, and cue underlines start with a visible stroke instead of zero width.
+- Layout check: moved WIT inward/up on the quote, role, and subscription boards so hair and feet stay inside the frame; spacing now avoids card/text collisions.
+- Verification: `npm run lint`, `npx remotion compositions`, and still checks from `Part10YouAreTheProduct` frames `40`, `41`, `84`, `85`, `123`, `179`, `232`, `233`, `279`, `280`, `344`, `345`, `505`, `506`, `572`, `573`, `614`, and `615`.
 
 What changed:
 
@@ -262,6 +389,24 @@ Review focus:
 - Mark any scene where the board does not match the line closely enough.
 - Watch for boards that hold too long or change too quickly.
 - Decide whether the full video needs more visual jokes, fewer labels, or more WIT restraint before polishing.
+
+## WIT Core 24 Opening 30s Remake
+
+- Version: `prototype-first-30s-board-opening-core-24-v4`
+- Date: `2026-05-25`
+- Runtime: `30s`
+- File: [prototype-first-30s-board-opening-core-24-v4.mp4](C:\ME\THINGS\Build a Channel\video-projects\why-free-apps-never-really-free\renders\prototype-first-30s-board-opening-core-24-v4.mp4)
+- Composition: `WhyFreeAppsBoardOpening30`
+- Source component: `FreeAppsBoardOpeningTenSeconds`
+- WIT asset set: [core-24](C:\ME\THINGS\Build a Channel\common\assets\wit\poses\core-24)
+- Status: `Ready for review`
+
+What changed:
+
+- Remade the first `30s` opening with the newer Core 24 WIT assets.
+- Replaced the old early `holding-phone` usage with calmer `confused` and `pointing-right` WIT poses so bill panic does not arrive too early.
+- Cleaned detached bottom artifacts from affected Core 24 pose PNGs in both shared assets and Remotion public assets.
+- Rendered still checks for the title, app-list, and reframe boards after the final render.
 
 ## Upload Details
 
@@ -280,3 +425,9 @@ Review focus:
 ## Lessons
 
 What should improve the next video?
+
+- For reviewed board scenes, check WIT crop margins explicitly. Head, hair, and held props need visible breathing room inside the composition bounds.
+- Do not stack repeated emphasis across adjacent boards unless the repetition is intentional. If `FREE` is the next board's punch word, remove redundant `FREE` cards from the current board.
+- Underlines should run through the emphasized phrase, not stop short of the readable text width.
+- Small invoice or UI cards must be checked for internal text overflow at review timestamps.
+- Highlight the exact spoken payoff phrase, such as `second one`, with size or color contrast when that phrase carries the joke or conclusion.

@@ -4,10 +4,17 @@ Reusable reference assets for `Wit`, the experimental audience-surrogate charact
 
 ## Current Reference
 
+- [poses/core-24](C:\ME\THINGS\Build a Channel\common\assets\wit\poses\core-24)
+- Status: `Experiment`
+- Created: `2026-05-24`
+- Purpose: current video-facing WIT pose set for Remotion production, using the funnier creator-inspired character direction.
+
+## Previous Character Reference
+
 - [wit-character-reference-v3-cute-short.png](C:\ME\THINGS\Build a Channel\common\assets\wit\wit-character-reference-v3-cute-short.png)
 - Status: `Experiment`
 - Created: `2026-05-22`
-- Purpose: preferred cute WIT reference for channel-wide use, especially the intro/end-card character direction.
+- Purpose: previous cute WIT reference used before the funnier `Core 24` pose set.
 
 ## Production Test Derivative
 
@@ -24,13 +31,21 @@ Reusable reference assets for `Wit`, the experimental audience-surrogate charact
 - Created: `2026-05-23`
 - Purpose: reusable WIT pose inventory for Remotion production, starting with a `Core 12` pose set and expanding only after rough-cut testing.
 
+## Core 24 Pose Set
+
+- [poses/core-24](C:\ME\THINGS\Build a Channel\common\assets\wit\poses\core-24)
+- [wit-core-24-separated-contact-sheet.png](C:\ME\THINGS\Build a Channel\common\assets\wit\poses\core-24\wit-core-24-separated-contact-sheet.png)
+- Status: `Experiment`
+- Created: `2026-05-24`
+- Purpose: expanded generated PNG pose set for current Remotion video use.
+
 ## Core 12 Pose Set
 
 - [poses/core-12](C:\ME\THINGS\Build a Channel\common\assets\wit\poses\core-12)
 - [core-12-contact-sheet.png](C:\ME\THINGS\Build a Channel\common\assets\wit\poses\core-12\core-12-contact-sheet.png)
 - Status: `Experiment`
 - Created: `2026-05-23`
-- Purpose: first generated transparent PNG pose set for Remotion prototype and rough-cut testing.
+- Purpose: older generated transparent PNG pose set for Remotion prototype and rough-cut testing.
 
 ## Previous References
 

@@ -56,7 +56,8 @@ Practical rule:
 - ElevenLabs voiceover generation is configured through local env vars
 - Sample scene timing now follows generated voiceover files automatically
 - First rendered voiceover-only cut exists for `Why Free Apps Are Never Really Free`
-- Current WIT visual reference experiment: [wit-character-reference-v3-cute-short.png](C:\ME\THINGS\Build a Channel\common\assets\wit\wit-character-reference-v3-cute-short.png)
+- Current WIT visual experiment: [Core 24 funny WIT pose set](C:\ME\THINGS\Build a Channel\common\assets\wit\poses\core-24)
+- Current Remotion WIT source: `remotion-studio/public/assets/wit/poses/core-24`
 
 ## Current Active Video
 

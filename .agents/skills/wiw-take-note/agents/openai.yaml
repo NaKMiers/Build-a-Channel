@@ -1,0 +1,4 @@
+interface:
+  display_name: "WIW Take Note"
+  short_description: "Capture review lessons into project memory"
+  default_prompt: "Use $WIW Take Note to record this review feedback and update the project memory."

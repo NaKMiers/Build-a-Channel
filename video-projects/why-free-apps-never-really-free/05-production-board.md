@@ -125,6 +125,12 @@ Board opening 30s v1:
 video-projects/why-free-apps-never-really-free/renders/prototype-first-30s-board-opening-v1.mp4
 ```
 
+Board opening 30s Core 24 remake:
+
+```text
+video-projects/why-free-apps-never-really-free/renders/prototype-first-30s-board-opening-core-24-v4.mp4
+```
+
 Full board rough cut v1:
 
 ```text
@@ -160,6 +166,9 @@ after reviewing `analysis.md`, the active `10s` composition was restarted from s
 
 Board opening 30s v1 note:
 the next pass expands the same board grammar to the first `30s` of the script. It uses the full `free-gifts` voiceover plus the beginning of `pricing-reframe`, enlarges WIT so he reads as a real screen anchor, and removes the early invoice-late board because that joke does not arrive in the audio before the 30s cut ends.
+
+Board opening 30s Core 24 remake note:
+the current Core 24 pass keeps the board grammar but remaps early WIT usage so `phone-bill-panic` is not used before the hidden-cost idea arrives. The app-list beat now uses the pointing-right WIT pose, and detached bottom artifacts were cleaned from affected Core 24 pose PNGs before rendering.
 
 Full board rough cut v1 note:
 the full script now has a dedicated Remotion composition, `WhyFreeAppsFullBoardRoughCut`. It uses the existing eight George scene voiceovers, simple handwritten board scenes, WIT pose anchors, short crossfade/paper-sweep transitions, and a total runtime of `3:59.98`.

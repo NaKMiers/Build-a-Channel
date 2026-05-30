@@ -16,3 +16,4 @@ They are local instructions future sessions can read and follow.
 
 - [video-creation-pipeline.md](C:\ME\THINGS\Build a Channel\common\skills\video-creation-pipeline.md)
 - [continuous-improvement-loop.md](C:\ME\THINGS\Build a Channel\common\skills\continuous-improvement-loop.md)
+- [WIW Take Note](C:\ME\THINGS\Build a Channel\.agents\skills\wiw-take-note\SKILL.md)

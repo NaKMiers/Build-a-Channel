@@ -555,3 +555,188 @@ Implementation:
 Working rule:
 
 `Handwritten text is the main visual language.`
+
+---
+
+## 2026-05-24
+
+### WIT Core 24 Replacement
+
+Classification: `Experiment`
+
+Operational update:
+created and separated a funnier, cuter `Core 24` WIT pose set for channel video production.
+
+Output:
+
+- [core-24 pose folder](C:\ME\THINGS\Build a Channel\common\assets\wit\poses\core-24)
+- [core-24 contact sheet](C:\ME\THINGS\Build a Channel\common\assets\wit\poses\core-24\wit-core-24-separated-contact-sheet.png)
+
+Direction:
+
+- keep the creator-inspired dark parted hair, black glasses, white shirt, and receipt motif
+- make WIT less serious, more cute, sarcastic, and mockery-friendly
+- use pose filenames based on the emotion/action so future videos can reference them easily
+
+Remotion update:
+the active Remotion WIT components now load from:
+
+- `remotion-studio/public/assets/wit/poses/core-24`
+
+Scope note:
+this replaces the active video-facing WIT assets as an experiment, but does not lock final channel character identity yet.
+
+---
+
+## 2026-05-28
+
+### First-Minute Review Lesson: Voice Sync Comes First
+
+Classification: `Operational lesson`
+
+Context:
+while reviewing the first `1:00` Remotion preview for `Why Free Apps Are Never Really Free`, several fixes were needed because board changes were visually acceptable but not tightly synced to the narration.
+
+Lesson:
+for board-based Remotion videos, exact voice-to-scene sync is the highest priority.
+Do not rely on approximate scene timing when the user reviews by timestamp.
+
+Working rules:
+
+- when a board contains a spoken phrase, set the board start close to the actual voice cue, not merely near the right sentence block
+- if the user says a section is approved or says to keep a range unchanged, do not alter that range while fixing later scenes
+- prefer hard cuts for board-style review so timeline scrubbing shows one clean board at a time
+- avoid crossfade overlap between boards unless the transition itself is being reviewed
+- match WIT pose emotion to the exact beat: do not use panic poses before the script introduces danger, cost, or pressure
+- make WIT face or gesture toward the relevant text/object whenever WIT is used as a reaction anchor
+- on-screen text must include the actual keyword being spoken when the beat depends on that word, such as `FREE`
+- check text/card bounds at the reviewed timestamp; labels and invoice cards must not overflow their intended object or frame
+- for short reviewed ranges, verify with still frames at exact cue timestamps before saying the fix is done
+
+Applied to current video:
+
+- `00:00-00:36` should now be treated as the currently preserved opening range unless the user asks to change it
+- `00:36-01:00` was remade as smaller cue-matched boards after the user identified drift around `this video is not about software`
+- continue reviewing the first minute by exact timestamp and keep MP4 export blocked until the user explicitly asks
+
+### Board Review Lesson: Layout Margin And Text Emphasis Need Explicit Checks
+
+Classification: `Operational lesson`
+
+Context:
+while reviewing `Part02TheSuspicion`, several issues repeated across WIT placement, text emphasis, and card sizing even after the broad timing was fixed.
+
+Lesson:
+for board-based Remotion scenes, passing the rough composition is not enough.
+Each reviewed board needs an explicit margin, emphasis, and readability check at the exact user timestamp.
+
+Working rules:
+
+- do not let WIT hair or props sit flush against the selected composition bounds; leave visible headroom and side breathing room
+- if a keyword will be emphasized in the next board, remove duplicate emphasis from the current board unless the repetition is clearly intentional
+- when underlining a word or phrase, make the underline span the readable width of that phrase, not a shorter decorative segment
+- invoice cards, labels, and mini UI elements must be checked for inner text overflow, not only outer frame overflow
+- when the narration lands on a payoff phrase such as `second one`, promote that exact phrase with larger size, contrast color, or timing emphasis
+- center and enlarge sentence-level boards when a supporting prop is removed, so the board still feels balanced
+- verify reviewed boards with still frames before closing the fix, especially for crop issues that may not be obvious from code alone
+
+### Part Boundary Review Lesson: Local Time Must Be Preserved
+
+Classification: `Operational lesson`
+
+Context:
+while reviewing `Part05Method1Ads`, the scene originally cut off while the voice was still saying `then sells pieces of that attention`.
+The first fix extended the part too far; the user then specified that Part 5 should finish at local `00:19.15`.
+
+Lesson:
+when the user gives a part-local end time, preserve that local timestamp exactly as the source of truth, then convert it to the full-video global timeline.
+
+Working rules:
+
+- for part compositions, calculate `global end = part start + requested local end`
+- update both the part composition boundary and the next board's global `at` timestamp
+- expect Remotion composition output to round to whole frames, so `19.15s` at `30fps` may display as `19.17s`
+- if extending a board to finish a voice line, trim it back to the user's requested end time once they provide one
+- still check layout fixes separately from timing fixes; in this pass, the sell-board arrow was moved below the labels and the `your attention` underline was delayed to the spoken cue
+
+---
+
+## 2026-05-29
+
+### Retention Scene Review Lesson: Text Motion Belongs On The Spoken Beat
+
+Classification: `Operational lesson`
+
+Context:
+while reviewing `Part06Retention`, the board content existed but several moments landed late or animated early:
+`retention` underline timing, `Your boredom is inventory`, and the `check one notification / 20 minutes gone` scene.
+
+Lesson:
+when a reviewed cue names both a spoken phrase and a visual action, align the animation itself to the spoken phrase, not only the board's visibility.
+
+Working rules:
+
+- if a word is already visible before the voice says it, delay its underline, wiggle, pop, or emphasis to the exact spoken cue
+- when the user gives part-local timestamps, convert them from the part start before editing global board times
+- punchline boards should appear when the punchline phrase is spoken, even if the surrounding sentence begins earlier
+- small motion such as a wiggle is useful for phrases like `20 minutes gone`, but it should stay subtle and readable
+- verify both the frame before and after a cue when checking delayed emphasis, especially for underlines
+
+### Part Tail Review Lesson: Do Not Over-Split Short End Sections
+
+Classification: `Operational lesson`
+
+Context:
+while reviewing `Part07Method2Behavior`, the section from local `00:22.11` to the part end was first remade as multiple boards.
+The user clarified that this created too many scenes for a short final idea and asked for one scene instead.
+
+Lesson:
+for a short timestamp-to-part-end tail, use one combined board when the remaining narration is one connected idea.
+Do not split every phrase into a separate board if that makes the scene feel over-described.
+
+Working rules:
+
+- when the user asks to remake from a late timestamp to the end, check whether the remaining line is one visual idea before adding multiple boards
+- prefer one strong summary board for short tail sections unless the voice has distinct cue changes that need separate visuals
+- keep still-frame verification, but judge whether the board count itself feels natural for the remaining narration length
+
+### Part08 Review Lesson: Fewer Boards, More Cue-Accurate Emphasis
+
+Classification: `Operational lesson`
+
+Context:
+the Part08 review exposed a timing/layout pattern that should be reused for later Remotion board passes.
+A short `~21s` part felt too busy when every phrase became its own scene, and several emphasis elements landed before or after the spoken word.
+
+Lesson:
+for short parts, keep fewer boards and put timed popup text, underlines, and card emphasis inside the same scene.
+Exact spoken cues matter more than rough sentence starts.
+
+Working rules:
+
+- do not split every short phrase into a separate board; use one strong board when the narration is one connected idea
+- in Remotion Studio, timestamps like `00:10.14` mean `10 seconds + 14 frames`, not decimal `10.14s`
+- popup elements should appear on the spoken word, especially payoff words like `PAY`
+- scene transitions should not arrive before the phrase they represent
+- underlines need correct width and position; they should cover the emphasized phrase without interfering with the next line
+- leave enough vertical spacing between split sentence lines so underlines do not collide
+- arrows should stop near a card edge or empty area, not cover label text
+- when multiple popup cards share one board, check collision after each new cue appears
+- remove props if they compete with key emphasis text
+- verify exact cue frames and one frame before/after important popups before calling a timing/layout fix done
+
+### Part10 Review Lesson: Cue Frame Must Be Readable, Not Merely Started
+
+Classification: `Operational lesson`
+
+Context:
+while reviewing `Part10YouAreTheProduct`, pop-in cards and drawn underlines were technically scheduled at the right timestamps, but their animation began at zero opacity, tiny scale, or zero width on the exact cue frame.
+
+Lesson:
+when the user cares about timing, the element must be visibly readable on the spoken cue frame, not only beginning its animation there.
+
+Working rules:
+
+- for cue-critical popups, do not start the cue frame at zero opacity or unreadably tiny scale
+- for cue-critical underlines, give the underline a small visible stroke on the cue frame, then finish the draw animation after it
+- still check one frame before the cue to confirm the element does not arrive early
