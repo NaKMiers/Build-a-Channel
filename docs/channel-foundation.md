@@ -163,6 +163,15 @@ The voice should not be:
 - Fake-deep
 - Overly corporate
 
+Default narrator voice:
+
+- Name: `David23`
+- Direction: young male narrator around age `23`, clear, bright, lightly dry, learner-friendly, and not too deep or raspy
+- Current balanced long-form generation settings: `am_eric`, speed `0.84`, `en-us`
+- Slower learner-paced fallback settings: `am_eric`, speed `0.76`, `en-us`
+- Avoid using the faster audition speed for full videos because the channel is for English learners
+- Keep older George/reference voices as fallback or comparison voices, not the default channel voice
+
 ## English Learner Fit
 
 Every script should be written for real English learners without making them feel treated like children.

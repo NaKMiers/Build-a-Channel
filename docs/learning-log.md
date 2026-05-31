@@ -44,6 +44,120 @@ Verification:
 Scope note:
 this is an operational production migration, not a change to channel strategy.
 
+---
+
+## 2026-05-31
+
+### Permanent Voice Candidate: WIW Dry Clear
+
+Classification: `Experiment`
+
+Created a new reusable voice candidate for `Why It Works` based on the channel voice brief.
+
+Output:
+
+- [voice candidate folder](C:\ME\THINGS\Build a Channel\common\voice\why-it-works-permanent-candidate)
+- sample MP3: `why-it-works-michael-dry-clear-sample.mp3`
+
+Direction:
+
+- calm, clear, dry, lightly skeptical, learner-friendly narration
+- TTS voice: `am_michael`
+- speed: `0.92`
+
+Scope note:
+this does not replace or delete existing George/reference voices.
+Promote only after listening review and explicit approval.
+
+Follow-up review:
+the first sample sounded too raspy and deep.
+Created a second variant using `am_adam` at speed `1.08` for a younger, slightly higher-feeling, faster narrator direction.
+
+Second follow-up review:
+the `am_adam` variant still sounded too old.
+Created a third variant using `am_puck` at speed `1.12` for a brighter young male narrator direction, closer to age `23`.
+
+Third follow-up review:
+the `am_puck` variant was acceptable but still slightly raspy.
+Created a fourth variant using `am_eric` at speed `1.10` to keep the age `23` direction while making the voice clearer and less raspy.
+
+Final decision:
+promote the `am_eric` variant to the permanent channel voice named `David23`.
+
+Classification: `Core`
+
+Approved default voice:
+
+- Name: `David23`
+- Location: [David23 voice folder](C:\ME\THINGS\Build a Channel\common\voice\david23)
+- Sample: `common/voice/david23/david23-sample.mp3`
+- Settings: `am_eric`, speed `1.10`, `en-us`
+- Direction: young male narrator around age `23`, clear, bright, fast enough, less raspy, not too deep
+
+George and prior candidate voices remain available as fallback/reference voices.
+
+### Active Video Voice Replacement: Why Free Apps
+
+Classification: `Operational update`
+
+Replaced the active `Why Free Apps Are Never Really Free` HyperFrames narration with `David23`.
+
+What changed:
+
+- generated 8 David23 scene MP3 files under `voiceover/david23/`
+- copied active audio into `hyperframes/assets/voiceover/david23/`
+- updated HyperFrames audio paths away from `george-restored/`
+- proportionally adjusted part starts, part durations, board starts, board durations, and timed reveal cues to match the faster David23 voiceover
+- rendered a draft MP4 at `video-projects/why-free-apps-never-really-free/renders/why-free-apps-david23-timed-draft.mp4`
+
+Verification:
+
+- `npm run check` passes with `0` errors and `0` layout issues
+- remaining warnings are pre-existing style/structure warnings: handwritten font fallback, dense timelines, duplicate media discovery, and contrast warnings
+- draft render completed with runtime `2:44.01`
+
+Follow-up pacing fix:
+the first David23 full-video pass was too fast for English learners and produced a `2:44.01` video.
+Regenerated David23 at speed `0.76`, retimed the HyperFrames boards to the slower audio, and rendered:
+
+```text
+video-projects/why-free-apps-never-really-free/renders/why-free-apps-david23-learner-paced-draft.mp4
+```
+
+New runtime:
+`3:50.99`
+
+Working rule:
+speed `0.76` is useful when the user wants a clearly slower learner-paced cut.
+
+Second pacing fix:
+the `0.76` learner-paced cut was slower than the requested range.
+Regenerated David23 at speed `0.84`, retimed the HyperFrames boards again, and rendered:
+
+```text
+video-projects/why-free-apps-never-really-free/renders/why-free-apps-david23-balanced-paced-draft.mp4
+```
+
+New runtime:
+`3:12.39`
+
+Working rule:
+for this script length, use David23 balanced long-form speed `0.84` when targeting about `3:10-3:30`; keep `0.76` available as the slower learner-paced fallback.
+
+Third pacing fix:
+the `0.84` balanced-paced cut was still fast in some sections and the user requested a slower version around `3:45`.
+Generated a new David23 pass at speed `0.78`, retimed the active HyperFrames boards from the balanced-paced timeline using exact new segment durations, and rendered:
+
+```text
+video-projects/why-free-apps-never-really-free/renders/why-free-apps-david23-slow-careful-draft.mp4
+```
+
+New runtime:
+`3:44.62`
+
+Working rule:
+for this script length, use David23 speed `0.78` when targeting about `3:45` and when only some sections feel rushed; it is slower than balanced-paced without becoming as slow as the `0.76` learner-paced fallback.
+
 ## 2026-05-19
 
 ### Session Summary

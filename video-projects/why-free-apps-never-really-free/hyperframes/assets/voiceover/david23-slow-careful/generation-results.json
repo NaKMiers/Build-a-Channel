@@ -1,0 +1,50 @@
+[
+    {
+        "id": "free-gifts",
+        "duration": 22.997,
+        "output": "D:\\Code\\Build-a-Channel\\video-projects\\why-free-apps-never-really-free\\voiceover\\david23-slow-careful\\free-gifts.mp3",
+        "hyperframes_output": "D:\\Code\\Build-a-Channel\\video-projects\\why-free-apps-never-really-free\\hyperframes\\assets\\voiceover\\david23-slow-careful\\free-gifts.mp3"
+    },
+    {
+        "id": "pricing-reframe",
+        "duration": 40.32,
+        "output": "D:\\Code\\Build-a-Channel\\video-projects\\why-free-apps-never-really-free\\voiceover\\david23-slow-careful\\pricing-reframe.mp3",
+        "hyperframes_output": "D:\\Code\\Build-a-Channel\\video-projects\\why-free-apps-never-really-free\\hyperframes\\assets\\voiceover\\david23-slow-careful\\pricing-reframe.mp3"
+    },
+    {
+        "id": "attention-ads",
+        "duration": 37.269,
+        "output": "D:\\Code\\Build-a-Channel\\video-projects\\why-free-apps-never-really-free\\voiceover\\david23-slow-careful\\attention-ads.mp3",
+        "hyperframes_output": "D:\\Code\\Build-a-Channel\\video-projects\\why-free-apps-never-really-free\\hyperframes\\assets\\voiceover\\david23-slow-careful\\attention-ads.mp3"
+    },
+    {
+        "id": "behavior-habit",
+        "duration": 22.272,
+        "output": "D:\\Code\\Build-a-Channel\\video-projects\\why-free-apps-never-really-free\\voiceover\\david23-slow-careful\\behavior-habit.mp3",
+        "hyperframes_output": "D:\\Code\\Build-a-Channel\\video-projects\\why-free-apps-never-really-free\\hyperframes\\assets\\voiceover\\david23-slow-careful\\behavior-habit.mp3"
+    },
+    {
+        "id": "freemium-pain",
+        "duration": 19.605,
+        "output": "D:\\Code\\Build-a-Channel\\video-projects\\why-free-apps-never-really-free\\voiceover\\david23-slow-careful\\freemium-pain.mp3",
+        "hyperframes_output": "D:\\Code\\Build-a-Channel\\video-projects\\why-free-apps-never-really-free\\hyperframes\\assets\\voiceover\\david23-slow-careful\\freemium-pain.mp3"
+    },
+    {
+        "id": "lock-in",
+        "duration": 22.336,
+        "output": "D:\\Code\\Build-a-Channel\\video-projects\\why-free-apps-never-really-free\\voiceover\\david23-slow-careful\\lock-in.mp3",
+        "hyperframes_output": "D:\\Code\\Build-a-Channel\\video-projects\\why-free-apps-never-really-free\\hyperframes\\assets\\voiceover\\david23-slow-careful\\lock-in.mp3"
+    },
+    {
+        "id": "label-stack",
+        "duration": 22.293,
+        "output": "D:\\Code\\Build-a-Channel\\video-projects\\why-free-apps-never-really-free\\voiceover\\david23-slow-careful\\label-stack.mp3",
+        "hyperframes_output": "D:\\Code\\Build-a-Channel\\video-projects\\why-free-apps-never-really-free\\hyperframes\\assets\\voiceover\\david23-slow-careful\\label-stack.mp3"
+    },
+    {
+        "id": "hidden-checkout",
+        "duration": 37.483,
+        "output": "D:\\Code\\Build-a-Channel\\video-projects\\why-free-apps-never-really-free\\voiceover\\david23-slow-careful\\hidden-checkout.mp3",
+        "hyperframes_output": "D:\\Code\\Build-a-Channel\\video-projects\\why-free-apps-never-really-free\\hyperframes\\assets\\voiceover\\david23-slow-careful\\hidden-checkout.mp3"
+    }
+]

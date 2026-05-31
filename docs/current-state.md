@@ -63,13 +63,14 @@ Practical rule:
 ## Current Active Video
 
 - Active folder: [why-free-apps-never-really-free](C:\ME\THINGS\Build a Channel\video-projects\why-free-apps-never-really-free)
-- Current step: `Review Remotion-matched HyperFrames rough cut`
-- Current decision: migrate active production from Remotion to HyperFrames while keeping simple board-based scenes, handwritten labels, red markup, WIT pose anchors, minimal movement, and the legacy Remotion timing
-- Current voice decision: use `George`; keep Anh Khoa's voice sample for future cloning after workflow stabilizes
+- Current step: `Review slower David23 HyperFrames rough cut`
+- Current decision: active production is now the slower David23 HyperFrames draft; older local MP4 drafts were removed to reduce project weight
+- Current voice decision: use `David23` as the default narrator; keep George and Anh Khoa's voice sample as fallback/reference voices
 - Latest HyperFrames source: [index.html](C:\ME\THINGS\Build a Channel\video-projects\why-free-apps-never-really-free\hyperframes\index.html)
-- Latest HyperFrames draft render: [why-free-apps-hyperframes-remotion-match-draft.mp4](C:\ME\THINGS\Build a Channel\video-projects\why-free-apps-never-really-free\renders\why-free-apps-hyperframes-remotion-match-draft.mp4)
+- Latest HyperFrames draft render: [why-free-apps-david23-slow-careful-draft.mp4](C:\ME\THINGS\Build a Channel\video-projects\why-free-apps-never-really-free\renders\why-free-apps-david23-slow-careful-draft.mp4)
+- Latest draft runtime: `3:44.62`
 - Latest HyperFrames composition set: `FullVideo` plus `Part01Hook` through `Part12PayoffEnding`
-- Previous Remotion rough cut kept for reference: [full-board-rough-cut-v1.mp4](C:\ME\THINGS\Build a Channel\video-projects\why-free-apps-never-really-free\renders\full-board-rough-cut-v1.mp4)
+- Older prototype and draft MP4 renders were removed from the project folder; production notes keep the historical decisions.
 
 ## Deewas Rule
 
@@ -91,6 +92,6 @@ Use [channel-guardrails.md](C:\ME\THINGS\Build a Channel\docs\channel-guardrails
 
 ## Best Next Steps
 
-1. Review `why-free-apps-hyperframes-remotion-match-draft.mp4`
+1. Review `why-free-apps-david23-slow-careful-draft.mp4`
 2. Mark scene-level fixes for pacing, layout, and joke clarity against the Remotion-matched HyperFrames cut
 3. Polish individual part compositions only after the rough cut direction is approved

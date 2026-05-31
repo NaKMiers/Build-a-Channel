@@ -1,0 +1,37 @@
+[
+  {
+    "id": "behavior-habit",
+    "target_seconds": 28.24,
+    "raw_seconds": 31.6,
+    "output": "D:\\Code\\Build-a-Channel\\video-projects\\why-free-apps-never-really-free\\voiceover\\reference-generated\\behavior-habit.mp3",
+    "hyperframes_output": "D:\\Code\\Build-a-Channel\\video-projects\\why-free-apps-never-really-free\\hyperframes\\assets\\voiceover\\behavior-habit.mp3"
+  },
+  {
+    "id": "freemium-pain",
+    "target_seconds": 21.21,
+    "raw_seconds": 21.04,
+    "output": "D:\\Code\\Build-a-Channel\\video-projects\\why-free-apps-never-really-free\\voiceover\\reference-generated\\freemium-pain.mp3",
+    "hyperframes_output": "D:\\Code\\Build-a-Channel\\video-projects\\why-free-apps-never-really-free\\hyperframes\\assets\\voiceover\\freemium-pain.mp3"
+  },
+  {
+    "id": "lock-in",
+    "target_seconds": 21.26,
+    "raw_seconds": 22.2,
+    "output": "D:\\Code\\Build-a-Channel\\video-projects\\why-free-apps-never-really-free\\voiceover\\reference-generated\\lock-in.mp3",
+    "hyperframes_output": "D:\\Code\\Build-a-Channel\\video-projects\\why-free-apps-never-really-free\\hyperframes\\assets\\voiceover\\lock-in.mp3"
+  },
+  {
+    "id": "label-stack",
+    "target_seconds": 22.39,
+    "raw_seconds": 25.6,
+    "output": "D:\\Code\\Build-a-Channel\\video-projects\\why-free-apps-never-really-free\\voiceover\\reference-generated\\label-stack.mp3",
+    "hyperframes_output": "D:\\Code\\Build-a-Channel\\video-projects\\why-free-apps-never-really-free\\hyperframes\\assets\\voiceover\\label-stack.mp3"
+  },
+  {
+    "id": "hidden-checkout",
+    "target_seconds": 41.22,
+    "raw_seconds": 40.0,
+    "output": "D:\\Code\\Build-a-Channel\\video-projects\\why-free-apps-never-really-free\\voiceover\\reference-generated\\hidden-checkout.mp3",
+    "hyperframes_output": "D:\\Code\\Build-a-Channel\\video-projects\\why-free-apps-never-really-free\\hyperframes\\assets\\voiceover\\hidden-checkout.mp3"
+  }
+]

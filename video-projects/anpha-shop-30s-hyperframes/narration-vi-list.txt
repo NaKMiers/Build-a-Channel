@@ -1,5 +1,0 @@
-file 'C:\ME\THINGS\Build a Channel\video-projects\anpha-shop-30s-hyperframes\narration-vi-0.mp3'
-file 'C:\ME\THINGS\Build a Channel\video-projects\anpha-shop-30s-hyperframes\narration-vi-1.mp3'
-file 'C:\ME\THINGS\Build a Channel\video-projects\anpha-shop-30s-hyperframes\narration-vi-2.mp3'
-file 'C:\ME\THINGS\Build a Channel\video-projects\anpha-shop-30s-hyperframes\narration-vi-3.mp3'
-file 'C:\ME\THINGS\Build a Channel\video-projects\anpha-shop-30s-hyperframes\narration-vi-4.mp3'

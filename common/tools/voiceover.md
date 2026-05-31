@@ -54,6 +54,30 @@ cmd /c npm run voiceover:reference-test
 
 ## Current Channel Voice Decision
 
-Use `George` as the working narrator while the production flow is still being shaped.
+Use `David23` as the default narrator for future `Why It Works` videos.
 
-Keep creator reference recordings for future voice cloning after the workflow is stable enough to justify upgrading ElevenLabs.
+Approved voice location:
+
+```text
+common/voice/david23/
+```
+
+Sample:
+
+```text
+common/voice/david23/david23-sample.mp3
+```
+
+Generation settings:
+
+- TTS voice: `am_eric`
+- balanced long-form speed: `0.84`
+- slower learner-paced fallback speed: `0.76`
+- audition/sample speed: `1.10`
+- language: `en-us`
+
+For full videos, default to `0.84` when targeting a normal YouTube explainer pace around `3:10-3:30` for this script length.
+Use `0.76` only when the user asks for a noticeably slower learner-paced cut.
+
+Keep George and all previous candidate/reference voices available as fallback/reference voices.
+Do not delete or overwrite existing George/reference voices.

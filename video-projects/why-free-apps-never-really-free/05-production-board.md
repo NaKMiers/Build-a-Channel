@@ -515,11 +515,33 @@ these components cover most scenes and can become reusable for future videos.
 
 Current default voice:
 
-`George`
+`David23`
 
 Status:
 
-`experiment, not locked`
+`approved channel narrator`
+
+David23 replacement pass:
+
+- base voice: `am_eric`
+- balanced-paced speed: `0.84`
+- generated source audio: `video-projects/why-free-apps-never-really-free/voiceover/david23-balanced-paced/`
+- active HyperFrames audio: `video-projects/why-free-apps-never-really-free/hyperframes/assets/voiceover/david23-balanced-paced/`
+- George and prior reference voices remain available as fallback/reference voices
+- HyperFrames part starts, part durations, board starts, board durations, and timed reveal cues were proportionally adjusted to the balanced-paced David23 voiceover
+- draft render: `video-projects/why-free-apps-never-really-free/renders/why-free-apps-david23-balanced-paced-draft.mp4`
+- draft runtime: `3:12.39`
+
+David23 slow-careful pass:
+
+- base voice: `am_eric`
+- speed: `0.78`
+- generated source audio: `video-projects/why-free-apps-never-really-free/voiceover/david23-slow-careful/`
+- active HyperFrames audio: `video-projects/why-free-apps-never-really-free/hyperframes/assets/voiceover/david23-slow-careful/`
+- retimed from the active balanced-paced HyperFrames timeline using exact slow-careful audio segment durations
+- HyperFrames part starts, part durations, board starts, board durations, and delayed reveal cues were scaled to the new segment map
+- draft render: `video-projects/why-free-apps-never-really-free/renders/why-free-apps-david23-slow-careful-draft.mp4`
+- draft runtime: `3:44.62`
 
 Voice test:
 
@@ -575,16 +597,16 @@ Current HyperFrames source:
 video-projects/why-free-apps-never-really-free/hyperframes/index.html
 ```
 
-Future voiceover:
+Current voiceover:
 
 ```text
-video-projects/why-free-apps-never-really-free/voiceover/
+video-projects/why-free-apps-never-really-free/voiceover/david23-slow-careful/
 ```
 
 Current HyperFrames voiceover path:
 
 ```text
-video-projects/why-free-apps-never-really-free/hyperframes/assets/voiceover/
+video-projects/why-free-apps-never-really-free/hyperframes/assets/voiceover/david23-slow-careful/
 ```
 
 Future renders:
