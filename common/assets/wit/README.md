@@ -2,12 +2,29 @@
 
 Reusable reference assets for `Wit`, the experimental audience-surrogate character for `Why It Works`.
 
+## Current Channel System
+
+- [docs/branding/wit-channel-system.md](C:\ME\THINGS\Build a Channel\docs\branding\wit-channel-system.md)
+- [usage-rules.md](C:\ME\THINGS\Build a Channel\common\assets\wit\usage-rules.md)
+- [poses/comedy-core](C:\ME\THINGS\Build a Channel\common\assets\wit\poses\comedy-core)
+- [comedy-core contact sheet](C:\ME\THINGS\Build a Channel\common\assets\wit\poses\comedy-core\contact-sheet.png)
+- Status: `Core channel-wide WIT comedy layer`
+- Created: `2026-06-01`
+- Purpose: make WIT usable as a funny reaction device and modern-life victim in future videos, while preserving older pose sets as reusable sources.
+
+Working rule:
+
+`WIT is funniest when the system is happening to him.`
+
 ## Current Reference
 
 - [poses/core-24](C:\ME\THINGS\Build a Channel\common\assets\wit\poses\core-24)
-- Status: `Experiment`
+- Status: `Experiment source set`
 - Created: `2026-05-24`
-- Purpose: current video-facing WIT pose set for HyperFrames production, using the funnier creator-inspired character direction.
+- Purpose: current general WIT pose source for HyperFrames production, using the funnier creator-inspired character direction.
+
+The `comedy-core` layer reuses compatible `core-24` poses and marks missing comedy poses as future draw targets.
+Do not delete `core-24`.
 
 ## Previous Character Reference
 

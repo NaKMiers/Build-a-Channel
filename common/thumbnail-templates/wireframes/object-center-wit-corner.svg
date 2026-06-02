@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="Why It Works thumbnail wireframe: object center, WIT corner">
+  <rect width="1280" height="720" fill="#e8f3f0"/>
+  <rect x="52" y="50" width="1176" height="620" rx="20" fill="none" stroke="#222222" stroke-width="6" stroke-dasharray="18 14"/>
+  <text x="70" y="96" font-family="Arial, sans-serif" font-size="28" fill="#222222">SAFE AREA</text>
+  <rect x="342" y="120" width="596" height="430" rx="38" fill="#ffffff" stroke="#222222" stroke-width="12"/>
+  <text x="480" y="340" font-family="Arial, sans-serif" font-size="64" font-weight="700" fill="#222222">[OBJECT]</text>
+  <circle cx="842" cy="174" r="76" fill="#ff5a47" stroke="#222222" stroke-width="8"/>
+  <text x="804" y="190" font-family="Arial, sans-serif" font-size="44" font-weight="700" fill="#ffffff">!</text>
+  <rect x="92" y="504" width="402" height="104" rx="22" fill="#ffe45c" stroke="#222222" stroke-width="8"/>
+  <text x="130" y="574" font-family="Arial, sans-serif" font-size="58" font-weight="700" fill="#222222">[LABEL]</text>
+  <circle cx="1054" cy="448" r="74" fill="#ffffff" stroke="#222222" stroke-width="9"/>
+  <rect x="982" y="522" width="144" height="116" rx="34" fill="#ffffff" stroke="#222222" stroke-width="9"/>
+  <text x="878" y="684" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#222222">WIT: [EMOTION]</text>
+</svg>

@@ -13,6 +13,400 @@ Use it to record:
 
 ---
 
+## 2026-06-02
+
+### Channel-Wide Publishing Feedback Loop
+
+Classification: `Core`
+
+Implemented Plan 14 as a channel-wide publishing feedback loop.
+
+What changed:
+
+- added [Publishing Feedback Loop](C:\ME\THINGS\Build a Channel\common\publishing-feedback-loop.md)
+- added [Post-Upload Review Template](C:\ME\THINGS\Build a Channel\common\post-upload-review-template.md)
+- added [Channel Learning Rules](C:\ME\THINGS\Build a Channel\common\channel-learning-rules.md)
+- updated channel foundation, current state, README, common index, Codex collaboration notes, Codex video workflow, pre-production checklist, production quality gate, and final review checklist to route future uploads through the reusable feedback system
+
+Core rule:
+
+`Measure the upload. Learn one useful thing. Change the next video.`
+
+System decision:
+
+- every future upload should produce one short post-upload review when analytics or qualitative feedback are available
+- track impressions, CTR, views after `24h` and `7d`, average view duration, average percentage viewed, first `30s` retention, retention dips, traffic source, comments, repeated reactions, questions, confusion, subs gained, and production effort when available
+- when analytics are too small, use qualitative signals such as thumbnail comparison, first `10` seconds strength, viewer feedback, learner clarity, and production difficulty
+- diagnose weak CTR through packaging first, weak first `30s` retention through hooks first, mid-video dips through abstraction and visual clarity, viewer confusion through learner clarity, and slow production through reusable assets and simpler boards
+- label lessons as `High`, `Medium`, or `Low` confidence before turning them into next-video rules
+- write only reusable lessons into `docs/learning-log.md` as `Operational lesson`, `Experiment result`, `Packaging lesson`, or `Audience insight`
+- do not rewrite `docs/channel-foundation.md` from one upload without explicit confirmation
+
+Scope note:
+this was applied only to reusable channel-wide docs and common files.
+No `video-projects/` files were edited and no post-upload review was created for any existing video.
+
+---
+
+### Channel-Wide Topic Angle Selection System
+
+Classification: `Core`
+
+Implemented Plan 13 as a channel-wide topic angle selection upgrade.
+
+What changed:
+
+- added [Topic Angle Selection System](C:\ME\THINGS\Build a Channel\common\topic-angle-selection-system.md)
+- added [Topic Angle Scorecard](C:\ME\THINGS\Build a Channel\common\topic-angle-scorecard.md)
+- added [Topic Angle Scorecards](C:\ME\THINGS\Build a Channel\docs\topic-angle-scorecards)
+- updated channel foundation, current state, README, common index, Codex collaboration notes, Codex video workflow, pre-production checklist, and production quality gate to route future topics through angle scoring before scripting
+
+Core rule:
+
+`Do not choose a topic. Choose an angle.`
+
+System decision:
+
+- shape future topic candidates as `topic + contradiction + visual metaphor + viewer pain`
+- require a reusable angle package before future topics move into research, packaging, hooks, scripts, or production
+- score each angle across curiosity, relatability, visual motif, humor potential, English learner fit, explanation depth, packaging strength, and production feasibility
+- require `30/40` or higher for normal long-form production
+- require `Curiosity`, `Visual motif`, `Explanation depth`, and `Packaging strength` to each score at least `3/5`
+- reject or revise angles that are generic education, mostly text thumbnails, missing WIT roles, missing real-life objects, missing repeated visual motifs, obvious in final insight, or weak for English learners
+
+Scope note:
+this was applied only to reusable channel-wide docs and common files.
+No `video-projects/` files were edited and no angle package was created for any existing video.
+
+---
+
+### Channel-Wide English Learner Clarity System
+
+Classification: `Core`
+
+Implemented Plan 12 as a channel-wide English learner clarity upgrade.
+
+What changed:
+
+- added [English Learner Clarity System](C:\ME\THINGS\Build a Channel\common\english-learner-clarity-system.md)
+- added [English Learner Script Checklist](C:\ME\THINGS\Build a Channel\common\english-learner-script-checklist.md)
+- added [English Learner Visual Checklist](C:\ME\THINGS\Build a Channel\common\english-learner-visual-checklist.md)
+- added [English Learner Useful Phrase Rules](C:\ME\THINGS\Build a Channel\common\english-learner-useful-phrase-rules.md)
+- added [English Learner Humor Clarity Rules](C:\ME\THINGS\Build a Channel\common\english-learner-humor-clarity-rules.md)
+- updated the channel foundation, current state, common index, README, Codex collaboration notes, Codex video workflow, script tone system, pre-production checklist, and final review checklist to route future work through the reusable learner clarity system
+
+Core rule:
+
+`Teach the topic first. Make the English learner-friendly by design.`
+
+System decision:
+
+- keep `Why It Works` as an explainer channel, not an English lesson channel
+- treat English learner clarity as a product feature
+- require future scripts to pass structure, sentence clarity, useful phrase, idiom/reference, humor clarity, and voice-readiness checks before full voiceover or board planning
+- require future boards and rough cuts to pass one-thought, label readability, WIT emotion, learner timing, cultural-reference clarity, mobile-size, subtitle, and paused-frame checks
+- allow `3-5` useful phrases per video only when they help the topic, joke, structure, or payoff
+- keep humor dry and rough, but make jokes visible from context before making them clever
+
+Scope note:
+this was applied only to reusable channel-wide docs and common files.
+No `video-projects/` files were edited and no existing video script was audited or rewritten.
+
+---
+
+### Channel-Wide Comedy Asset Library
+
+Classification: `Core`
+
+Implemented Plan 11 as a channel-wide comedy asset library upgrade.
+
+What changed:
+
+- added [Comedy Asset Library](C:\ME\THINGS\Build a Channel\common\assets\comedy)
+- added [Comedy Asset Inventory](C:\ME\THINGS\Build a Channel\common\assets\comedy\asset-inventory.md)
+- added [Comedy Source Note Template](C:\ME\THINGS\Build a Channel\common\assets\comedy\source-note-template.md)
+- added category rules and seed folders for `hidden-payment`, `internet-traps`, `modern-life-pain`, `red-markup`, and `wit-props`
+- added [Comedy Asset Contact Sheets](C:\ME\THINGS\Build a Channel\common\assets\comedy\contact-sheets)
+- updated channel foundation, current state, common indexes, Codex collaboration notes, and Codex video workflow to route future videos through the reusable comedy asset system
+
+Core rule:
+
+`Comedy assets should make the explanation clearer, not just busier.`
+
+System decision:
+
+- start the reusable comedy library with `25` seed asset targets, `5` per category
+- require every promoted comedy asset to have a source note, safe-use decision, contact-sheet/readability check, and clear comedy job
+- for future videos, choose `1` main recurring motif, `2-4` supporting comedy objects, `1` red markup style, and `1-2` WIT props
+- avoid real logos, private data, unclear copyrighted images, overly polished stock assets, and one-video-only jokes in the reusable library
+- treat this first pass as a reusable inventory and structure, not as a video-specific asset selection
+
+Scope note:
+this was applied only to reusable channel-wide docs and common files.
+No `video-projects/` files were edited and no comedy assets were selected for any existing video.
+
+---
+
+### Channel-Wide Reference Board And Research System
+
+Classification: `Core`
+
+Implemented Plan 10 as a channel-wide reference-board and research upgrade.
+
+What changed:
+
+- added [reference-board-system.md](C:\ME\THINGS\Build a Channel\common\reference-board-system.md)
+- added [reference-boards/README.md](C:\ME\THINGS\Build a Channel\common\reference-boards\README.md)
+- added reusable reference-board template folders under [reference-boards/_template](C:\ME\THINGS\Build a Channel\common\reference-boards\_template)
+- updated the channel foundation, current state, common index, README, Codex collaboration notes, and Codex video workflow to route future videos through the reusable reference-board system
+
+Core rule:
+
+`What does this topic look like in real life, and what would make it funny if paused?`
+
+System decision:
+
+- collect `20-30` useful references before future videos lock script, packaging, hook, or production choices
+- include real-life objects, UI or screenshot patterns, visual metaphors, thumbnail tension, WIT emotion, and color/contrast references
+- separate references into `safe asset`, `mockup target`, `inspiration only`, and `reject`
+- require source notes before any saved, generated, or external reference influences production
+- avoid copying another creator's exact frame, thumbnail, screenshot, or joke layout
+
+Scope note:
+this was applied only to reusable channel-wide docs and common files.
+No `video-projects/` files were edited and no reference board was created for any existing video.
+
+---
+
+## 2026-06-01
+
+### Channel-Wide Music And Sound System
+
+Classification: `Core`
+
+Implemented Plan 08 as a channel-wide music and sound upgrade.
+
+What changed:
+
+- added [music-and-sound-system.md](C:\ME\THINGS\Build a Channel\common\music-and-sound-system.md)
+- added [sound-effects-library/README.md](C:\ME\THINGS\Build a Channel\common\sound-effects-library\README.md)
+- added [audio-mixing-checklist.md](C:\ME\THINGS\Build a Channel\common\audio-mixing-checklist.md)
+- updated the channel foundation, current state, common index, HyperFrames notes, README, Codex collaboration notes, and Codex video workflow to point future videos through the reusable music and sound system
+
+Core rule:
+
+`Narration is the product. Music and sound effects are support.`
+
+System decision:
+
+- use light, simple, low-drama, loopable music that leaves room for David23 and English learner clarity
+- choose `3` candidate tracks for each future video and test them under the first `30` seconds plus one dense explanation section
+- reject corporate explainer music, cinematic trailer music, motivational tracks, heavy bass, sudden drops, and emotional scoring
+- treat silence and near-silence as valid punchline tools
+- use short, quiet sound effects only for useful joke, reveal, red marker, receipt, phone, lock, timer, paper, tiny payment, or fake-system moments
+- run the reusable audio mixing checklist before review or final renders
+
+Scope note:
+this was applied only to reusable channel-wide docs and common files.
+No `video-projects/` files were edited and no music direction was created for any existing video.
+
+---
+
+### Channel-Wide Voice And Narration System
+
+Classification: `Core`
+
+Implemented Plan 07 as a channel-wide voice and narration upgrade.
+
+What changed:
+
+- added [narration-system.md](C:\ME\THINGS\Build a Channel\common\voice\narration-system.md)
+- added [script-markup-guide.md](C:\ME\THINGS\Build a Channel\common\voice\script-markup-guide.md)
+- added [voice-test-protocol.md](C:\ME\THINGS\Build a Channel\common\voice\voice-test-protocol.md)
+- updated the channel foundation, current state, common index, HyperFrames notes, voiceover tool notes, README, Codex collaboration notes, and Codex video workflow to point future videos through the reusable narration system
+
+Core direction:
+
+`a calm person explaining something ridiculous while refusing to act surprised`
+
+System decision:
+
+- keep `David23` as the default narrator
+- use `am_eric` speed `0.84` as the first long-form candidate
+- use speed `0.78` as the careful learner-friendly test variant when jokes, labels, or dense explanations need more room
+- keep speed `0.76` as the slower learner-paced fallback
+- mark future narration with `[pause]`, `[beat]`, `[deadpan]`, `[slower]`, and `[emphasis]` before generation
+- run a `45-60` second voice test and first `10` seconds visual hook check before full voiceover generation
+- treat voiceover as the HyperFrames timing source, with punchline labels appearing on or just before the spoken cue
+
+Scope note:
+this was applied only to reusable channel-wide docs and common files.
+No `video-projects/` files were edited and no existing voiceover was generated or changed.
+
+---
+
+### Channel-Wide Scene Grammar And Visual Humor System
+
+Classification: `Core`
+
+Implemented Plan 06 as a channel-wide scene grammar upgrade.
+
+What changed:
+
+- added [scene-grammar-system.md](C:\ME\THINGS\Build a Channel\common\scene-grammar-system.md)
+- added [visual-humor-patterns.md](C:\ME\THINGS\Build a Channel\common\visual-humor-patterns.md)
+- added [board-grammar.md](C:\ME\THINGS\Build a Channel\common\hyperframes\board-grammar.md)
+- updated the channel foundation, current state, common index, HyperFrames notes, README, Codex collaboration notes, and Codex video workflow to point future videos through the reusable scene grammar system
+
+Core rule:
+
+`Static drawing -> narration twist -> red markup or hard cut -> next static drawing.`
+
+System decision:
+
+- every future board should carry one thought, one joke or evidence object, one WIT reaction or real-life anchor, one readable label, and one clean timing beat
+- use repeated visual humor patterns such as red cross-outs, bad arrows, fake diagrams, real objects with stupid labels, WIT suffering, hidden reveals, suspicious asterisks, impossible receipts, and before/after contradictions
+- HyperFrames should prioritize mostly static boards, hard cuts, cue-timed labels, red markup, and paused-frame readability over decorative motion
+- rough cuts should pass paused-frame review: every sampled frame should have joke value or clear evidence, WIT should be doing a job, and cue-critical text should be readable on the spoken beat
+
+Scope note:
+this was applied only to reusable channel-wide docs and common files.
+No `video-projects/` files were edited and no existing script was turned into boards.
+
+---
+
+### Channel-Wide Real-Life Visual Asset System
+
+Classification: `Core`
+
+Implemented Plan 05 as a channel-wide real-life visual asset upgrade.
+
+What changed:
+
+- added [real-life-visual-asset-system.md](C:\ME\THINGS\Build a Channel\common\real-life-visual-asset-system.md)
+- added [real-life asset library](C:\ME\THINGS\Build a Channel\common\assets\real-life)
+- added [UI mockup asset library](C:\ME\THINGS\Build a Channel\common\assets\ui-mockups)
+- added [source-note-template.md](C:\ME\THINGS\Build a Channel\common\assets\source-note-template.md)
+- updated the channel foundation, current state, common index, README, Codex collaboration notes, and Codex video workflow to point future videos through the reusable asset system
+
+Core rule:
+
+`Use real-life assets as evidence, not decoration.`
+
+System decision:
+
+- mix WIT, handwritten text, and real or real-looking assets so videos feel like rough drawings commenting on real life
+- use self-shot, generated, public-domain, licensed, self-made mockup, scanned texture, or recreated mockup assets with source notes
+- prefer fake UI and fictional data over real screenshots, real private information, or real app logos
+- test meaningful assets at `1920x1080` and mobile scale before use
+- keep one-off video assets out of `common/` unless they are genuinely reusable
+
+Scope note:
+this was applied only to reusable channel-wide docs and common files.
+No `video-projects/` files were edited and no asset board was created for any existing video.
+
+---
+
+### Channel-Wide First 10 Seconds Hook System
+
+Classification: `Core`
+
+Implemented Plan 04 as a channel-wide hook upgrade.
+
+What changed:
+
+- added [hook-system.md](C:\ME\THINGS\Build a Channel\common\hook-system.md)
+- added [first-10-seconds-board-template.md](C:\ME\THINGS\Build a Channel\common\hook-templates\first-10-seconds-board-template.md)
+- added [hook-scorecard.md](C:\ME\THINGS\Build a Channel\common\hook-templates\hook-scorecard.md)
+- updated the channel foundation, current state, common index, README, and Codex video workflow to point future videos through the reusable hook system
+
+Core rule:
+
+`Open with a situation, not an introduction.`
+
+System decision:
+
+- use `normal thing -> suspicious detail -> WIT reaction -> bigger question`
+- show the topic by second `3`
+- show the contradiction by second `5`
+- show WIT's emotional position by second `8`
+- pay off the title-thumbnail promise by second `10`
+- score future hooks before full production using the reusable hook scorecard
+
+Scope note:
+this was applied only to reusable channel-wide docs and common files.
+No `video-projects/` files were edited and no opening was designed for any existing video.
+
+---
+
+### Channel-Wide Thumbnail Packaging System
+
+Classification: `Core`
+
+Implemented Plan 03 as a channel-wide packaging upgrade.
+
+What changed:
+
+- added [thumbnail-packaging-system.md](C:\ME\THINGS\Build a Channel\common\thumbnail-packaging-system.md)
+- added [packaging-scorecard.md](C:\ME\THINGS\Build a Channel\common\packaging-scorecard.md)
+- added [thumbnail-visual-rules.md](C:\ME\THINGS\Build a Channel\docs\branding\thumbnail-visual-rules.md)
+- added [thumbnail template folder](C:\ME\THINGS\Build a Channel\common\thumbnail-templates)
+- updated channel foundation and current state to point to the reusable packaging system
+
+Core rule:
+
+`The thumbnail shows the weird situation. The title names the hidden logic.`
+
+System decision:
+
+- use `one real object + one contradiction + one WIT emotion + one short label`
+- keep thumbnail labels to `1-3` words
+- use strong WIT emotion in thumbnails, never neutral presenter WIT
+- score future title-thumbnail pairs before scripting or production
+- make the first `10` seconds pay off the thumbnail promise
+
+Scope note:
+this was applied only to reusable channel-wide docs and common files.
+No `video-projects/` files were edited and no packaging was created for any existing video.
+
+---
+
+### Channel-Wide WIT Comedy System
+
+Classification: `Core`
+
+Implemented Plan 01 as a channel-wide WIT upgrade.
+
+What changed:
+
+- added [wit-channel-system.md](C:\ME\THINGS\Build a Channel\docs\branding\wit-channel-system.md)
+- added [usage-rules.md](C:\ME\THINGS\Build a Channel\common\assets\wit\usage-rules.md)
+- added [comedy-core pose folder](C:\ME\THINGS\Build a Channel\common\assets\wit\poses\comedy-core)
+- added [comedy-core contact sheet](C:\ME\THINGS\Build a Channel\common\assets\wit\poses\comedy-core\contact-sheet.png)
+- updated the main WIT asset README to point future sessions to the channel-wide WIT system
+- updated the channel foundation and current state with the reusable WIT comedy rule
+
+Core rule:
+
+`WIT is funniest when the system is happening to him.`
+
+System decision:
+
+- keep `Clean WIT` for title cards, calm explanations, and channel identity
+- use `Suffering WIT` for hooks, punchlines, thumbnails, and retention beats
+- use WIT as a funny reaction device and modern-life victim, not only as a cute presenter
+
+Asset status:
+
+- `12` comedy-core poses were seeded from compatible `core-24` assets
+- `4` Plan 01 poses remain draw-required targets: `holding-red-marker`, `dragging-data-box`, `trapped-in-app`, and `receipt-printer-victim`
+
+Scope note:
+this was applied only to reusable channel-wide docs and common assets.
+No `video-projects/` files were edited and no existing video was changed.
+
+---
+
 ## 2026-05-30
 
 ### Renderer Migration: HyperFrames First

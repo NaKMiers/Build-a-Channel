@@ -44,6 +44,9 @@ cmd /c npm run voiceover:reference-test
 ## Rules
 
 - Do not generate full voiceover until the script and visual plan are approved.
+- Before full voiceover, mark the script with `common/voice/script-markup-guide.md`.
+- Run the first `45-60` seconds through `common/voice/voice-test-protocol.md`.
+- Follow `common/voice/narration-system.md` for David23 delivery, pacing, and timing rules.
 - Keep API keys only in local env files.
 - Store final per-video voiceover notes in `video-projects/<slug>/voiceover/`.
 - Copy render-ready audio files into `video-projects/<slug>/hyperframes/assets/voiceover/`.
@@ -72,12 +75,14 @@ Generation settings:
 
 - TTS voice: `am_eric`
 - balanced long-form speed: `0.84`
+- careful learner test speed: `0.78`
 - slower learner-paced fallback speed: `0.76`
 - audition/sample speed: `1.10`
 - language: `en-us`
 
-For full videos, default to `0.84` when targeting a normal YouTube explainer pace around `3:10-3:30` for this script length.
-Use `0.76` only when the user asks for a noticeably slower learner-paced cut.
+For full videos, default to `0.84` unless the short voice test shows that jokes, labels, or dense explanations need more room.
+Use `0.78` as the careful learner-friendly test variant.
+Use `0.76` only when the user asks for a noticeably slower learner-paced cut or the voice test fails at faster settings.
 
 Keep George and all previous candidate/reference voices available as fallback/reference voices.
 Do not delete or overwrite existing George/reference voices.

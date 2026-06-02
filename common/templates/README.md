@@ -15,4 +15,4 @@ Use this folder for other reusable templates later:
 - thumbnail brief template
 - voiceover test template
 - HyperFrames composition template
-- post-upload report template
+- post-upload reviews now use [post-upload-review-template.md](../post-upload-review-template.md)
