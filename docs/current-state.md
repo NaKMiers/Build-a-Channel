@@ -63,7 +63,9 @@ Practical rule:
 - Current topic angle quality gate: [Topic Angle Scorecard](C:\ME\THINGS\Build a Channel\common\topic-angle-scorecard.md)
 - Current reusable topic angle template folder: [Topic Angle Scorecards](C:\ME\THINGS\Build a Channel\docs\topic-angle-scorecards)
 - Current channel-wide WIT system: [WIT Channel System](C:\ME\THINGS\Build a Channel\docs\branding\wit-channel-system.md)
-- Current WIT comedy layer: [Comedy Core WIT pose set](C:\ME\THINGS\Build a Channel\common\assets\wit\poses\comedy-core)
+- Current WIT pose set: [Original WIT 24](C:\ME\THINGS\Build a Channel\common\assets\wit\poses\original-wit-24)
+- Current WIT contact sheet: [Original WIT 24 Contact Sheet](C:\ME\THINGS\Build a Channel\common\assets\wit\poses\original-wit-24\original-wit-24-contact-sheet.png)
+- Superseded WIT comedy layer: [Comedy Core WIT pose set](C:\ME\THINGS\Build a Channel\common\assets\wit\poses\comedy-core)
 - Current channel-wide packaging system: [Thumbnail Packaging System](C:\ME\THINGS\Build a Channel\common\thumbnail-packaging-system.md)
 - Current packaging quality gate: [Packaging Scorecard](C:\ME\THINGS\Build a Channel\common\packaging-scorecard.md)
 - Current thumbnail visual rules: [Thumbnail Visual Rules](C:\ME\THINGS\Build a Channel\docs\branding\thumbnail-visual-rules.md)
@@ -92,21 +94,42 @@ Practical rule:
 - Current channel-wide publishing feedback loop: [Publishing Feedback Loop](C:\ME\THINGS\Build a Channel\common\publishing-feedback-loop.md)
 - Current reusable post-upload review template: [Post-Upload Review Template](C:\ME\THINGS\Build a Channel\common\post-upload-review-template.md)
 - Current channel learning rules: [Channel Learning Rules](C:\ME\THINGS\Build a Channel\common\channel-learning-rules.md)
-- Current WIT source experiment: [Core 24 funny WIT pose set](C:\ME\THINGS\Build a Channel\common\assets\wit\poses\core-24)
-- Current HyperFrames WIT source for the active video: `video-projects/why-free-apps-never-really-free/hyperframes/assets/wit/poses/core-24`
+- Superseded WIT source experiment: [Core 24 funny WIT pose set](C:\ME\THINGS\Build a Channel\common\assets\wit\poses\core-24)
+- Current HyperFrames WIT source for the active video remains unchanged: `video-projects/why-free-apps-never-really-free/hyperframes/assets/wit/poses/core-24`
 - `remotion-studio/` is legacy and should remain untouched until the user asks to delete it
 
 ## Current Active Video
 
-- Active folder: [why-free-apps-never-really-free](C:\ME\THINGS\Build a Channel\video-projects\why-free-apps-never-really-free)
-- Current step: `Review slower David23 HyperFrames rough cut`
-- Current decision: active production is now the slower David23 HyperFrames draft; older local MP4 drafts were removed to reduce project weight
-- Current voice decision: use `David23` as the default narrator; keep George and Anh Khoa's voice sample as fallback/reference voices
-- Latest HyperFrames source: [index.html](C:\ME\THINGS\Build a Channel\video-projects\why-free-apps-never-really-free\hyperframes\index.html)
-- Latest HyperFrames draft render: [why-free-apps-david23-slow-careful-draft.mp4](C:\ME\THINGS\Build a Channel\video-projects\why-free-apps-never-really-free\renders\why-free-apps-david23-slow-careful-draft.mp4)
-- Latest draft runtime: `3:44.62`
-- Latest HyperFrames composition set: `FullVideo` plus `Part01Hook` through `Part12PayoffEnding`
-- Older prototype and draft MP4 renders were removed from the project folder; production notes keep the historical decisions.
+- Active folder: [why-everyone-pretends-to-be-busy](C:\ME\THINGS\Build a Channel\video-projects\why-everyone-pretends-to-be-busy)
+- Current step: `Section 3 Busy Became Status implemented; awaiting user review`
+- Current decision: Section 1 should use a simple Casually Explained-style static-board rhythm, not dense cue-by-cue animation
+- Accepted Section 1 composition: `Section01Hook`
+- Accepted Section 1 runtime: `24.085s`
+- Accepted Section 1 voice test: `section-01-hook-young-fast-am_adam-1.05.mp3`
+- Current active preview composition: separate per-section HyperFrames previews
+- Current active preview runtimes: Section 1 `24.085s`; Section 2 `23.9s`; Section 3 `46.763s`
+- Section separation rule: preview and approve one section at a time; assemble sections only after the user asks
+- Section preview operation rule: during section-by-section production, run each section as a separate HyperFrames preview project on its own port
+- Section asset operation rule: use one video-level shared asset library at `video-projects/why-everyone-pretends-to-be-busy/assets`; local `assets` folders inside `hyperframes/` and `section-previews/<section>/` should be junctions, not copied media folders
+- Separate section Studio previews: Section 1 `http://localhost:3021/#project/section-01-hook`; Section 2 `http://localhost:3022/#project/section-02-reframe`; Section 3 `http://localhost:3023/#project/section-03-busy-status`
+- Separate section direct composition URLs: Section 1 `http://localhost:3021/api/projects/section-01-hook/preview/comp/index.html`; Section 2 `http://localhost:3022/api/projects/section-02-reframe/preview/comp/index.html`; Section 3 `http://localhost:3023/api/projects/section-03-busy-status/preview/comp/index.html`
+- Section 2 draft voice test: `section-02-reframe-young-fast-am_adam-1.05.mp3`
+- Section 3 draft voice test: `section-03-busy-status-young-fast-am_adam-1.05.mp3`
+- Standalone Section 1 source: [section-01.html](C:\ME\THINGS\Build a Channel\video-projects\why-everyone-pretends-to-be-busy\hyperframes\review\section-01.html)
+- Standalone Section 2 source: [section-02.html](C:\ME\THINGS\Build a Channel\video-projects\why-everyone-pretends-to-be-busy\hyperframes\review\section-02.html)
+- Standalone Section 3 source: [section-03.html](C:\ME\THINGS\Build a Channel\video-projects\why-everyone-pretends-to-be-busy\hyperframes\review\section-03.html)
+- Latest Section 3 implementation note: [13-section-03-implementation.md](C:\ME\THINGS\Build a Channel\video-projects\why-everyone-pretends-to-be-busy\13-section-03-implementation.md)
+- Latest Section 3 visual plan: [12-section-03-visual-plan.md](C:\ME\THINGS\Build a Channel\video-projects\why-everyone-pretends-to-be-busy\12-section-03-visual-plan.md)
+- Latest Section 2 asset refresh note: [11-asset-refactor-section-02-refresh.md](C:\ME\THINGS\Build a Channel\video-projects\why-everyone-pretends-to-be-busy\11-asset-refactor-section-02-refresh.md)
+- Previous Section 2 implementation note: [10-section-02-implementation.md](C:\ME\THINGS\Build a Channel\video-projects\why-everyone-pretends-to-be-busy\10-section-02-implementation.md)
+- Latest HyperFrames source: [index.html](C:\ME\THINGS\Build a Channel\video-projects\why-everyone-pretends-to-be-busy\hyperframes\index.html)
+- Latest Section 1 review notes: [06-review.md](C:\ME\THINGS\Build a Channel\video-projects\why-everyone-pretends-to-be-busy\06-review.md)
+- Latest Section 1 accepted plan: [08-section-01-simple-remake.md](C:\ME\THINGS\Build a Channel\video-projects\why-everyone-pretends-to-be-busy\08-section-01-simple-remake.md)
+- Latest Section 1 contact sheet: [section01-contact-sheet.jpg](C:\ME\THINGS\Build a Channel\video-projects\why-everyone-pretends-to-be-busy\hyperframes\qa\section01-contact-sheet.jpg)
+
+Section 1 production lesson:
+for short hooks, start with `6-8` static boards: one real-life image, one WIT reaction, one main label, and hard cuts.
+Do not add transition overlays, rapid label pop-ins, object pile-ons, or WIT shake unless the static version is approved and the motion has a clear joke or clarity job.
 
 ## Deewas Rule
 

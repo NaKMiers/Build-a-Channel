@@ -32,8 +32,8 @@ When choosing a WIT pose:
 2. Identify the emotion: neutral, suspicious, betrayed, panicked, confused, trapped, defeated, or deadpan.
 3. Use `Clean WIT` for setup and clarity.
 4. Use `Suffering WIT` for hooks, jokes, reveal beats, thumbnails, and retention moments.
-5. Prefer `common/assets/wit/poses/comedy-core/` for emotional beats.
-6. Use `common/assets/wit/poses/core-24/` for general presenter, pointing, thinking, or simple reaction coverage.
+5. Prefer `common/assets/wit/poses/original-wit-24/` for all future videos.
+6. Use older `common/assets/wit/poses/comedy-core/` or `common/assets/wit/poses/core-24/` only as superseded source/reference material when explicitly needed.
 
 ## Clean WIT
 

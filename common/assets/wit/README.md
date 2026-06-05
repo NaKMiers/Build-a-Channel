@@ -1,27 +1,58 @@
-# Wit Character Assets
+# WIT Character Assets
 
-Reusable reference assets for `Wit`, the experimental audience-surrogate character for `Why It Works`.
+Reusable reference assets for `WIT`, the audience-surrogate character for `Why It Works`.
+
+## Current WIT
+
+- [poses/original-wit-24](C:\ME\THINGS\Build a Channel\common\assets\wit\poses\original-wit-24)
+- [original-wit-24-contact-sheet.png](C:\ME\THINGS\Build a Channel\common\assets\wit\poses\original-wit-24\original-wit-24-contact-sheet.png)
+- Status: `Core current WIT pose set`
+- Created: `2026-06-02`
+- Purpose: replace the old polished/cute WIT direction with a rougher, funnier, more stupid-unserious character that matches the channel's dry explainer comedy.
+
+Direction:
+
+- based on the user-approved `original-wit` reference image
+- rough hand-drawn 2D explainer character, not a polished mascot
+- funny-stupid, awkward, unserious, and readable when paused
+- messy black hair, huge round black glasses, tiny dot eyes, white shirt, black pants, oversized black shoes
+- long receipt-like tie as the channel signature
+- designed for modern-life systems to happen to him
+
+Production status:
+
+- `24` transparent PNG poses are available in [poses/original-wit-24](C:\ME\THINGS\Build a Channel\common\assets\wit\poses\original-wit-24)
+- source chroma images are kept in [source-chroma](C:\ME\THINGS\Build a Channel\common\assets\wit\poses\original-wit-24\source-chroma)
+- old `core-24` and `comedy-core` assets are superseded source/history
+- do not copy these poses into an active `video-projects/` folder unless explicitly asked
 
 ## Current Channel System
 
 - [docs/branding/wit-channel-system.md](C:\ME\THINGS\Build a Channel\docs\branding\wit-channel-system.md)
 - [usage-rules.md](C:\ME\THINGS\Build a Channel\common\assets\wit\usage-rules.md)
-- [poses/comedy-core](C:\ME\THINGS\Build a Channel\common\assets\wit\poses\comedy-core)
-- [comedy-core contact sheet](C:\ME\THINGS\Build a Channel\common\assets\wit\poses\comedy-core\contact-sheet.png)
-- Status: `Core channel-wide WIT comedy layer`
+- [poses/original-wit-24](C:\ME\THINGS\Build a Channel\common\assets\wit\poses\original-wit-24)
+- Status: `Core channel-wide WIT pose set`
 - Created: `2026-06-01`
-- Purpose: make WIT usable as a funny reaction device and modern-life victim in future videos, while preserving older pose sets as reusable sources.
+- Purpose: make WIT usable as a funny reaction device and modern-life victim in future videos.
 
 Working rule:
 
 `WIT is funniest when the system is happening to him.`
 
-## Current Reference
+## Superseded Comedy Layer
+
+- [poses/comedy-core](C:\ME\THINGS\Build a Channel\common\assets\wit\poses\comedy-core)
+- [comedy-core contact sheet](C:\ME\THINGS\Build a Channel\common\assets\wit\poses\comedy-core\contact-sheet.png)
+- Status: `Superseded production source`
+- Created: `2026-06-01`
+- Purpose: older comedy layer created before `original-wit`.
+
+## Superseded Production Source
 
 - [poses/core-24](C:\ME\THINGS\Build a Channel\common\assets\wit\poses\core-24)
-- Status: `Experiment source set`
+- Status: `Experiment source set; previous production direction`
 - Created: `2026-05-24`
-- Purpose: current general WIT pose source for HyperFrames production, using the funnier creator-inspired character direction.
+- Purpose: previous general WIT pose source for HyperFrames production, using the funnier creator-inspired character direction.
 
 The `comedy-core` layer reuses compatible `core-24` poses and marks missing comedy poses as future draw targets.
 Do not delete `core-24`.
@@ -72,9 +103,9 @@ Do not delete `core-24`.
 - [wit-character-reference-v2.png](C:\ME\THINGS\Build a Channel\common\assets\wit\wit-character-reference-v2.png)
 - Note: closer to Anh Khoa's real-life look, but less cute than the preferred v3 direction.
 
-## Direction
+## Previous V3 Direction
 
-This pass makes Wit:
+This previous pass made WIT:
 
 - shorter, cuter, and more compact than v1
 - creator-inspired through black glasses, soft dark parted hair, calm expression, and a striped shirt
@@ -103,4 +134,6 @@ Constraints: Do not make him look like a different person. Do not turn it into g
 
 ## Next Use
 
-The next practical step is to simplify v3 into a production-ready 2D/vector-like version with fewer hair strokes and a pose set for HyperFrames.
+Use [poses/original-wit-24](C:\ME\THINGS\Build a Channel\common\assets\wit\poses\original-wit-24) as the default WIT source for future HyperFrames production.
+
+Generate additional `original-wit` poses only when a future script needs an emotion or prop not covered by the current `24` poses.

@@ -144,6 +144,18 @@ Avoid:
 - long slide transitions
 - complex camera moves
 - animation that keeps changing while the narration is explaining something dense
+- cue-by-cue prop pile-ons in short hooks
+- making labels appear and disappear rapidly just because related words are spoken
+- adding transition overlays before the static board rhythm has been approved
+
+For short Casually Explained-inspired sections, build the static-board version first:
+
+```text
+one real-life image + one WIT reaction + one main label + hard cut
+```
+
+Then add only the smallest motion needed for a joke or clarity fix.
+If the static contact sheet feels good, do not add motion just to make the section feel more produced.
 
 ## Text Grammar
 
@@ -184,6 +196,9 @@ Split into a new board only when:
 - the viewer needs a clean pause between thoughts
 
 Do not make every phrase a new board.
+
+For a `20-30s` hook, a good first pass is often `6-8` static boards.
+More cue-level visual events can make the section feel busy even when each event is individually timed correctly.
 
 ## Mobile Readability
 
@@ -256,4 +271,3 @@ Before rendering a future review cut:
 - at least one meaningful real-life texture pass was considered
 - paused-frame review has no empty frames
 - `npm run check` passes or all remaining warnings are documented
-

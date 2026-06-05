@@ -7,6 +7,24 @@ Scope: `CHANNEL_WIDE`
 This file defines WIT as a reusable channel character system for future `Why It Works` videos.
 It does not apply the system to any existing video project.
 
+## Current Design Reference
+
+Current replacement set:
+
+`common/assets/wit/poses/original-wit-24/`
+
+Contact sheet:
+
+`common/assets/wit/poses/original-wit-24/original-wit-24-contact-sheet.png`
+
+Status: `Core current WIT pose set`
+
+`original-wit` is the new WIT design: a rough, funny-stupid, unserious explainer character based on the user-approved reference image.
+
+He should feel closer in comedy function to a simple visual punching bag than to a polished mascot: awkward, deadpan, suspicious, and frequently defeated by modern systems.
+
+Older `core-24` and `comedy-core` pose folders remain available only as superseded history/source material.
+
 ## Role
 
 WIT is the audience-surrogate character for `Why It Works`.
@@ -73,7 +91,7 @@ Future WIT poses should be:
 - emotionally readable at `25%` screen size
 - simple enough for HyperFrames use
 - full-body or strong upper-body silhouettes
-- consistent with WIT's hair, glasses, shirt, shorts, shoes, and receipt motif
+- consistent with WIT's rough hair, huge glasses, white shirt, black pants, oversized shoes, and receipt-tie motif
 - rough enough to be funny, but still recognizable
 - exported with transparent background and animation-safe margins
 
@@ -102,34 +120,41 @@ Thumbnail WIT should answer:
 
 `How does this topic feel to a normal person?`
 
-## Comedy-Core Pose Set
+## Current Pose Set
 
-The channel-wide comedy-core pose layer lives at:
+The current channel-wide WIT pose set lives at:
 
-`common/assets/wit/poses/comedy-core/`
+`common/assets/wit/poses/original-wit-24/`
 
-It is a reusable layer on top of the older `core-24` experiment.
-Do not delete `core-24`.
-Use `core-24` for general WIT coverage and `comedy-core` when the video needs stronger reaction acting.
+It replaces the older `core-24` and `comedy-core` pose sets as the default WIT source for future videos.
+Do not delete older sets unless explicitly asked; keep them as history/source.
 
-Minimum comedy-core poses:
+Current `original-wit-24` poses:
 
-- `deadpan-front`
-- `deadpan-side-eye`
-- `suspicious-phone`
-- `betrayed-by-phone`
-- `financially-attacked`
-- `buried-in-receipts`
-- `subscription-panic`
+- `neutral-default`
+- `talking`
+- `smug-side-eye`
+- `receipt-evidence`
+- `laughing-trying-not-to-laugh`
+- `confused`
+- `disappointed-teacher`
+- `shocked`
 - `tiny-defeated`
-- `fake-confident`
-- `confused-math`
-- `staring-at-viewer`
-- `pointing-at-evidence`
-- `holding-red-marker`
-- `dragging-data-box`
-- `trapped-in-app`
-- `receipt-printer-victim`
+- `phone-bill-panic`
+- `money-panic`
+- `thinking`
+- `pointing-left`
+- `pointing-right`
+- `facepalm`
+- `holding-blank-sign`
+- `running-away`
+- `awkward-celebration`
+- `angry-cute-complaint`
+- `suspicious-detective`
+- `typing-on-laptop`
+- `holding-magnifying-glass`
+- `explaining-with-whiteboard`
+- `sleeping-burned-out`
 
 ## Frequency Rule
 
@@ -145,9 +170,9 @@ For future videos:
 1. Choose the main emotional arc for WIT before production.
 2. Use Clean WIT for setup and explanation.
 3. Use Suffering WIT for hooks, jokes, and reveal beats.
-4. Select poses from `comedy-core` first when the beat is emotional.
-5. Draw or generate missing comedy poses only when the script truly needs them.
-6. Keep all generated reusable poses in `common/assets/wit/poses/comedy-core/` until a specific video explicitly copies approved assets into its own project folder.
+4. Select poses from `original-wit-24` first.
+5. Generate additional `original-wit` poses only when the script truly needs them.
+6. Keep all generated reusable poses in `common/assets/wit/poses/` until a specific video explicitly copies approved assets into its own project folder.
 
 Do not apply this system to a video project unless the user explicitly asks:
 

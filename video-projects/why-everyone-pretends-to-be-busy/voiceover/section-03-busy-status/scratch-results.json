@@ -1,0 +1,19 @@
+{
+  "video": "Why Everyone Pretends To Be Busy",
+  "section": "Section 3: Busy Became Status",
+  "status": "one young-fast scratch voice test generated",
+  "generatedWith": {
+    "tool": "npx hyperframes@0.6.69 tts",
+    "voice": "am_adam",
+    "speed": 1.05,
+    "language": "en-us"
+  },
+  "result": {
+    "variant": "young-fast",
+    "file": "scratch-audio/section-03-busy-status-young-fast-am_adam-1.05.mp3",
+    "hyperframesCopy": "assets/voiceover/section-03-busy-status-young-fast-am_adam-1.05.mp3",
+    "durationSeconds": 46.763,
+    "use": "Section 3 timing reference"
+  },
+  "audioOutputRule": "Keep only one useful MP3 preview file for the section. Do not preserve duplicate WAV output."
+}

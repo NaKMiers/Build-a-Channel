@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, height=1080">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: #f4efe4;
+      }
+
+      body {
+        font-family: monospace;
+        color: #1f1b16;
+      }
+
+      #root {
+        position: relative;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: #f4efe4;
+      }
+
+      .board {
+        position: absolute;
+        inset: 0;
+        overflow: hidden;
+        background: #f4efe4;
+      }
+
+      .board::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        background-image:
+          linear-gradient(rgba(31, 27, 22, 0.04) 1px, rgba(244, 239, 228, 0) 1px),
+          linear-gradient(90deg, rgba(31, 27, 22, 0.035) 1px, rgba(244, 239, 228, 0) 1px);
+        background-size: 64px 64px;
+        pointer-events: none;
+      }
+
+      .real-photo {
+        position: absolute;
+        inset: 52px;
+        z-index: 2;
+        width: calc(100% - 104px);
+        height: calc(100% - 104px);
+        object-fit: cover;
+        border: 10px solid #fff9ea;
+        box-shadow: 0 26px 70px rgba(31, 27, 22, 0.25);
+        filter: saturate(0.86) contrast(0.96) brightness(1.02);
+      }
+
+      .photo-dim {
+        position: absolute;
+        inset: 52px;
+        z-index: 3;
+        background: rgba(244, 239, 228, 0.28);
+        pointer-events: none;
+      }
+
+      .photo-dim.strong {
+        background: rgba(244, 239, 228, 0.46);
+      }
+
+      .wit {
+        position: absolute;
+        z-index: 18;
+        object-fit: contain;
+        filter: drop-shadow(0 12px 9px rgba(31, 27, 22, 0.24));
+      }
+
+      .wit-large {
+        width: 420px;
+      }
+
+      .wit-mid {
+        width: 330px;
+      }
+
+      .wit-small {
+        width: 245px;
+      }
+
+      .label,
+      .speech,
+      .card,
+      .stamp,
+      .tiny-note,
+      .meeting-chip,
+      .status-tag {
+        position: absolute;
+        z-index: 28;
+        border: 5px solid #1f1b16;
+        background: #fff9ea;
+        color: #1f1b16;
+        box-shadow: 10px 12px 0 rgba(31, 27, 22, 0.16);
+      }
+
+      .label {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 30px 16px;
+        font-family: cursive;
+        font-size: 78px;
+        line-height: 0.92;
+        transform: rotate(-2deg);
+        white-space: nowrap;
+      }
+
+      .label.red {
+        color: #c92a2a;
+        border-color: #c92a2a;
+        background: #fff3ed;
+      }
+
+      .label.yellow {
+        background: #f2d26b;
+      }
+
+      .label.blue {
+        background: #d8e7f7;
+      }
+
+      .label.green {
+        background: #dfe9da;
+      }
+
+      .label.small {
+        padding: 14px 20px 10px;
+        border-width: 4px;
+        font-size: 48px;
+      }
+
+      .speech {
+        max-width: 720px;
+        padding: 28px 34px 24px;
+        border-radius: 28px;
+        font-family: cursive;
+        font-size: 62px;
+        line-height: 0.98;
+        transform: rotate(1.5deg);
+      }
+
+      .speech::after {
+        content: "";
+        position: absolute;
+        left: 80px;
+        bottom: -42px;
+        width: 0;
+        height: 0;
+        border-top: 42px solid #1f1b16;
+        border-right: 46px solid rgba(0, 0, 0, 0);
+      }
+
+      .speech::before {
+        content: "";
+        position: absolute;
+        left: 88px;
+        bottom: -29px;
+        z-index: 1;
+        width: 0;
+        height: 0;
+        border-top: 29px solid #fff9ea;
+        border-right: 32px solid rgba(0, 0, 0, 0);
+      }
+
+      .card {
+        min-width: 260px;
+        padding: 24px 28px 20px;
+        font-size: 34px;
+        font-weight: 800;
+        line-height: 1.05;
+        transform: rotate(2deg);
+      }
+
+      .card .lines {
+        display: grid;
+        gap: 12px;
+        margin-top: 20px;
+      }
+
+      .card .lines span {
+        display: block;
+        width: 100%;
+        height: 11px;
+        border-radius: 999px;
+        background: rgba(31, 27, 22, 0.18);
+      }
+
+      .stamp {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 14px 20px 10px;
+        color: #c92a2a;
+        border-color: #c92a2a;
+        background: #fff3ed;
+        font-family: cursive;
+        font-size: 44px;
+        transform: rotate(-8deg);
+      }
+
+      .tiny-note {
+        padding: 14px 18px 10px;
+        background: #f2d26b;
+        font-family: cursive;
+        font-size: 38px;
+        transform: rotate(5deg);
+      }
+
+      .meeting-chip,
+      .status-tag {
+        padding: 12px 18px 9px;
+        border-width: 4px;
+        font-family: monospace;
+        font-size: 28px;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+
+      .meeting-chip {
+        background: #d8e7f7;
+      }
+
+      .status-tag {
+        background: #fff9ea;
+      }
+
+      .red-arrow {
+        position: absolute;
+        z-index: 27;
+        width: 230px;
+        height: 36px;
+        transform-origin: right center;
+      }
+
+      .red-arrow::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 14px;
+        width: 188px;
+        height: 8px;
+        border-radius: 999px;
+        background: #c92a2a;
+      }
+
+      .red-arrow::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 0;
+        height: 0;
+        border-top: 18px solid rgba(0, 0, 0, 0);
+        border-bottom: 18px solid rgba(0, 0, 0, 0);
+        border-left: 36px solid #c92a2a;
+      }
+
+      .medal {
+        position: absolute;
+        z-index: 24;
+        width: 160px;
+        height: 160px;
+        border: 6px solid #1f1b16;
+        border-radius: 50%;
+        background: #f2d26b;
+        box-shadow: 10px 12px 0 rgba(31, 27, 22, 0.16);
+      }
+
+      .medal::before,
+      .medal::after {
+        content: "";
+        position: absolute;
+        top: 134px;
+        width: 54px;
+        height: 104px;
+        border: 5px solid #1f1b16;
+        background: #c92a2a;
+      }
+
+      .medal::before {
+        left: 20px;
+        transform: rotate(14deg);
+      }
+
+      .medal::after {
+        right: 20px;
+        transform: rotate(-14deg);
+      }
+
+      .medal span {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: cursive;
+        font-size: 68px;
+      }
+
+      .emotion-list {
+        position: absolute;
+        z-index: 22;
+        left: 290px;
+        top: 215px;
+        width: 520px;
+        padding: 28px;
+        border: 5px solid #1f1b16;
+        background: #fff9ea;
+        box-shadow: 12px 14px 0 rgba(31, 27, 22, 0.16);
+        transform: rotate(-2deg);
+      }
+
+      .emotion-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 78px;
+        border-bottom: 3px dashed rgba(31, 27, 22, 0.2);
+        font-size: 48px;
+        font-family: cursive;
+      }
+
+      .emotion-row:last-child {
+        border-bottom: 0;
+      }
+
+      .emotion-row.busy {
+        color: #c92a2a;
+      }
+
+      .x-mark {
+        font-size: 66px;
+        font-weight: 900;
+      }
+
+      .value-ladder {
+        position: absolute;
+        z-index: 22;
+        right: 220px;
+        top: 190px;
+        display: grid;
+        gap: 20px;
+      }
+
+      .ladder-step {
+        width: 440px;
+        padding: 18px 24px 14px;
+        border: 5px solid #1f1b16;
+        background: #fff9ea;
+        box-shadow: 9px 10px 0 rgba(31, 27, 22, 0.14);
+        font-family: cursive;
+        font-size: 46px;
+        transform: rotate(-1deg);
+      }
+
+      .ladder-step:nth-child(2) {
+        margin-left: 42px;
+        background: #d8e7f7;
+        transform: rotate(2deg);
+      }
+
+      .ladder-step:nth-child(3) {
+        margin-left: 84px;
+        background: #f2d26b;
+        transform: rotate(-2deg);
+      }
+
+      .network-warning {
+        position: absolute;
+        z-index: 30;
+        left: 160px;
+        bottom: 130px;
+        width: 510px;
+        padding: 18px 24px 14px;
+        border: 5px solid #1f1b16;
+        background: #fff9ea;
+        box-shadow: 10px 12px 0 rgba(31, 27, 22, 0.16);
+        font-family: cursive;
+        font-size: 44px;
+        transform: rotate(2deg);
+      }
+
+      .near-work-card {
+        position: absolute;
+        z-index: 23;
+        right: 210px;
+        top: 230px;
+        width: 520px;
+        padding: 28px 30px 24px;
+        border: 5px solid #1f1b16;
+        background: #fff9ea;
+        box-shadow: 12px 14px 0 rgba(31, 27, 22, 0.16);
+        transform: rotate(-2deg);
+      }
+
+      .near-work-card .big {
+        font-family: cursive;
+        font-size: 62px;
+        line-height: 0.94;
+      }
+
+      .near-work-card .small {
+        margin-top: 18px;
+        font-size: 26px;
+        font-weight: 900;
+      }
+
+      .actual-work {
+        position: absolute;
+        z-index: 24;
+        right: 350px;
+        bottom: 150px;
+        width: 260px;
+        height: 160px;
+        padding: 20px;
+        border: 5px solid #1f1b16;
+        background: #dfe9da;
+        box-shadow: 9px 10px 0 rgba(31, 27, 22, 0.15);
+        transform: rotate(4deg);
+        font-family: cursive;
+        font-size: 40px;
+        line-height: 0.95;
+      }
+
+      #status-became-status .label {
+        left: 170px;
+        top: 118px;
+      }
+
+      #status-became-status .wit {
+        right: 330px;
+        bottom: 112px;
+      }
+
+      #status-became-status .medal {
+        right: 520px;
+        bottom: 420px;
+      }
+
+      #status-became-status .tiny-note {
+        left: 910px;
+        top: 660px;
+      }
+
+      #status-important .speech {
+        left: 180px;
+        top: 125px;
+      }
+
+      #status-important .label {
+        right: 145px;
+        top: 150px;
+        font-size: 58px;
+      }
+
+      #status-important .wit {
+        left: 720px;
+        bottom: 92px;
+      }
+
+      #status-important .stamp {
+        right: 250px;
+        top: 340px;
+      }
+
+      #status-nobody-asked .speech.question {
+        left: 170px;
+        top: 130px;
+        max-width: 520px;
+        font-size: 58px;
+      }
+
+      #status-nobody-asked .speech.answer {
+        right: 180px;
+        top: 240px;
+        max-width: 450px;
+        font-size: 76px;
+        background: #f2d26b;
+      }
+
+      #status-nobody-asked .label {
+        left: 620px;
+        bottom: 140px;
+        color: #c92a2a;
+      }
+
+      #status-nobody-asked .wit {
+        left: 830px;
+        bottom: 112px;
+      }
+
+      #status-busy-emotion .label {
+        right: 170px;
+        top: 155px;
+      }
+
+      #status-busy-emotion .wit {
+        right: 310px;
+        bottom: 105px;
+      }
+
+      #status-demand-value .label {
+        left: 150px;
+        top: 112px;
+      }
+
+      #status-demand-value .wit {
+        left: 170px;
+        bottom: 100px;
+      }
+
+      #status-demand-value .red-arrow {
+        left: 1040px;
+        top: 555px;
+        transform: rotate(-20deg);
+      }
+
+      #status-professional-network .label {
+        right: 130px;
+        top: 110px;
+        font-size: 58px;
+      }
+
+      #status-professional-network .wit {
+        right: 220px;
+        bottom: 82px;
+      }
+
+      #status-professional-network .stamp {
+        left: 690px;
+        top: 660px;
+        color: #1f1b16;
+        border-color: #1f1b16;
+        background: #d8e7f7;
+      }
+
+      #status-meeting-tower .label {
+        left: 130px;
+        top: 110px;
+      }
+
+      #status-meeting-tower .wit {
+        right: 240px;
+        bottom: 88px;
+      }
+
+      #status-meeting-tower .chip-1 {
+        left: 1120px;
+        top: 215px;
+      }
+
+      #status-meeting-tower .chip-2 {
+        left: 1090px;
+        top: 305px;
+      }
+
+      #status-meeting-tower .chip-3 {
+        left: 1125px;
+        top: 395px;
+      }
+
+      #status-meeting-tower .chip-4 {
+        left: 1080px;
+        top: 485px;
+      }
+
+      #status-meeting-tower .chip-5 {
+        left: 1135px;
+        top: 575px;
+      }
+
+      #status-near-work .label {
+        left: 150px;
+        top: 130px;
+      }
+
+      #status-near-work .wit {
+        left: 230px;
+        bottom: 95px;
+      }
+
+      #status-near-work .red-arrow {
+        right: 590px;
+        bottom: 280px;
+        transform: rotate(16deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="Section03BusyStatus" data-start="0" data-duration="46.763" data-width="1920" data-height="1080">
+      <audio id="voiceover-section-03" data-start="0" data-duration="46.763" data-track-index="10" data-volume="1" src="./assets/voiceover/section-03-busy-status-young-fast-am_adam-1.05.mp3"></audio>
+
+      <section id="status-became-status" class="clip board board--status" data-board-id="status-became-status" data-board-type="status" data-start="0.000" data-duration="4.700" data-track-index="1">
+        <img class="real-photo" src="./assets/section-03-busy-status/generated/status-badge-desk-generated.png" alt="">
+        <div class="photo-dim"></div>
+        <div class="label yellow">BUSY = STATUS</div>
+        <div class="medal"><span>!</span></div>
+        <div class="tiny-note">very professional, apparently</div>
+        <img class="wit wit-large" src="./assets/wit/wit-pose-confused.png" alt="">
+      </section>
+
+      <section id="status-important" class="clip board board--translation" data-board-id="status-important" data-board-type="translation" data-start="4.700" data-duration="8.500" data-track-index="1">
+        <img class="real-photo" src="./assets/section-03-busy-status/generated/status-badge-desk-generated.png" alt="">
+        <div class="photo-dim strong"></div>
+        <div class="speech">"I'm so busy."</div>
+        <div class="label blue">PLEASE UNDERSTAND:<br>IMPORTANT</div>
+        <div class="stamp">translation</div>
+        <img class="wit wit-large" src="./assets/wit/wit-pose-suspicious-detective.png" alt="">
+      </section>
+
+      <section id="status-nobody-asked" class="clip board board--smalltalk" data-board-id="status-nobody-asked" data-board-type="smalltalk" data-start="13.200" data-duration="3.800" data-track-index="1">
+        <img class="real-photo" src="./assets/section-03-busy-status/generated/busy-small-talk-generated.png" alt="">
+        <div class="photo-dim"></div>
+        <div class="speech question">"How are you?"</div>
+        <div class="speech answer">"Busy."</div>
+        <div class="label red">NOBODY ASKED</div>
+        <img class="wit wit-mid" src="./assets/wit/wit-pose-neutral-default.png" alt="">
+      </section>
+
+      <section id="status-busy-emotion" class="clip board board--deadpan" data-board-id="status-busy-emotion" data-board-type="deadpan" data-start="17.000" data-duration="4.000" data-track-index="1">
+        <img class="real-photo" src="./assets/section-03-busy-status/generated/busy-small-talk-generated.png" alt="">
+        <div class="photo-dim strong"></div>
+        <div class="emotion-list">
+          <div class="emotion-row"><span>happy</span><span></span></div>
+          <div class="emotion-row"><span>sad</span><span></span></div>
+          <div class="emotion-row busy"><span>busy</span><span class="x-mark">X</span></div>
+        </div>
+        <div class="label red">NOT AN EMOTION</div>
+        <img class="wit wit-large" src="./assets/wit/wit-pose-tiny-defeated.png" alt="">
+      </section>
+
+      <section id="status-demand-value" class="clip board board--value" data-board-id="status-demand-value" data-board-type="value" data-start="21.000" data-duration="9.200" data-track-index="1">
+        <img class="real-photo" src="./assets/section-03-busy-status/generated/demand-value-board-generated.png" alt="">
+        <div class="photo-dim"></div>
+        <div class="label green">DEMAND = VALUE</div>
+        <div class="value-ladder">
+          <div class="ladder-step">responsible</div>
+          <div class="ladder-step">needed</div>
+          <div class="ladder-step">valuable?</div>
+        </div>
+        <div class="red-arrow"></div>
+        <img class="wit wit-mid" src="./assets/wit/wit-pose-shocked.png" alt="">
+      </section>
+
+      <section id="status-professional-network" class="clip board board--network" data-board-id="status-professional-network" data-board-type="network" data-start="30.200" data-duration="6.100" data-track-index="1">
+        <img class="real-photo" src="./assets/section-03-busy-status/generated/generic-professional-network-generated.png" alt="">
+        <div class="photo-dim"></div>
+        <div class="label blue">PUT IT ON<br>PRO NETWORK</div>
+        <div class="network-warning">not the real logo, please relax</div>
+        <div class="stamp">status achieved</div>
+        <img class="wit wit-large" src="./assets/wit/wit-pose-typing-on-laptop.png" alt="">
+      </section>
+
+      <section id="status-meeting-tower" class="clip board board--tower" data-board-id="status-meeting-tower" data-board-type="tower" data-start="36.300" data-duration="6.700" data-track-index="1">
+        <img class="real-photo" src="./assets/section-03-busy-status/generated/meeting-tower-generated.png" alt="">
+        <div class="photo-dim"></div>
+        <div class="label yellow">FILL THE TIME</div>
+        <div class="meeting-chip chip-1">meetings</div>
+        <div class="meeting-chip chip-2">calls</div>
+        <div class="meeting-chip chip-3">updates</div>
+        <div class="meeting-chip chip-4">planning docs</div>
+        <div class="meeting-chip chip-5">planning meetings</div>
+        <img class="wit wit-large" src="./assets/wit/wit-pose-phone-bill-panic.png" alt="">
+      </section>
+
+      <section id="status-near-work" class="clip board board--payoff" data-board-id="status-near-work" data-board-type="payoff" data-start="43.000" data-duration="3.763" data-track-index="1">
+        <img class="real-photo" src="./assets/section-03-busy-status/generated/near-the-work-generated.png" alt="">
+        <div class="photo-dim strong"></div>
+        <div class="label red">NEAR THE WORK</div>
+        <div class="near-work-card">
+          <div class="big">proving proximity</div>
+          <div class="small">actual progress still pending</div>
+        </div>
+        <div class="actual-work">actual work</div>
+        <div class="red-arrow"></div>
+        <img class="wit wit-large" src="./assets/wit/wit-pose-suspicious-detective.png" alt="">
+      </section>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["Section03BusyStatus"] = gsap.timeline({ paused: true });
+    </script>
+  </body>
+</html>

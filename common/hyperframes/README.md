@@ -11,8 +11,10 @@ HyperFrames is now the default production and render path for channel videos.
 - Future HyperFrames boards should follow [board-grammar.md](board-grammar.md) for naming, timing, cue-critical emphasis, and paused-frame review.
 - Future voiceover timing should follow [../voice/narration-system.md](../voice/narration-system.md), [../voice/script-markup-guide.md](../voice/script-markup-guide.md), and [../voice/voice-test-protocol.md](../voice/voice-test-protocol.md).
 - Future music, sound effects, and mix checks should follow [../music-and-sound-system.md](../music-and-sound-system.md), [../sound-effects-library/README.md](../sound-effects-library/README.md), and [../audio-mixing-checklist.md](../audio-mixing-checklist.md).
-- Voiceover, WIT poses, and one-off media should be copied into the video project's `hyperframes/assets/` folder so renders are self-contained.
+- For section-by-section review, keep voiceover, WIT poses, and one-off section media in the video project's shared `assets/` folder, then expose that folder to each HyperFrames project through a local `assets` junction. Use a copied `hyperframes/assets/` package only when the final assembly/export workflow explicitly needs a self-contained copy.
 - Final and review MP4s still belong in `video-projects/<slug>/renders/`.
+- During section-by-section review, keep each section in its own preview project folder and run each section on its own HyperFrames port.
+- Do not rely on one Studio project to switch between sections while a video is still being reviewed section by section; assemble sections only after the user explicitly asks.
 
 ## Current Commands
 
@@ -47,6 +49,7 @@ If rendering cannot find FFmpeg, add the local `ffmpeg-static` folder to `PATH` 
 - Use transitions only when they clarify the idea or land a joke.
 - Use entrance animations only for scene elements that need a readable cue.
 - Check paused frames before review renders: every sampled frame should have a joke, contradiction, or clear evidence.
+- For section review, separate sections by port so Studio URLs are unambiguous: one section equals one `index.html`, one project folder, one port.
 - Do not use Remotion for new production unless the user explicitly asks.
 - Keep `remotion-studio/` unchanged until the user asks to delete it.
 

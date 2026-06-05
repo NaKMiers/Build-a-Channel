@@ -13,7 +13,95 @@ Use it to record:
 
 ---
 
+## 2026-06-04
+
+### HyperFrames Section Review Lesson: One Section, One Port
+
+Classification: `Operational lesson`
+
+Context:
+while reviewing `Why Everyone Pretends To Be Busy`, the user saw both Section 1 and Section 2 as Section 2 when using one shared HyperFrames Studio project.
+The issue came from the default Studio route pointing at the active `index.html`, which made section switching ambiguous.
+
+Lesson:
+during section-by-section production, run each section as a separate HyperFrames preview project on its own port.
+Do not combine sections or rely on one Studio project to switch between sections until all sections are approved and the user explicitly asks for assembly.
+
+Working rules:
+
+- one section equals one preview project folder, one `index.html`, and one port
+- use separate Studio URLs for review, not query params on a shared Studio URL
+- keep canonical section sources saved separately so accepted sections do not get overwritten by the next draft
+- assemble sections into one long composition only after the user asks
+- write the active ports and section URLs into the current video review notes
+
+Applied to current video:
+
+- Section 1 runs on `http://localhost:3021/#project/section-01-hook`
+- Section 2 runs on `http://localhost:3022/#project/section-02-reframe`
+- active preview folders live under [section-previews](C:\ME\THINGS\Build a Channel\video-projects\why-everyone-pretends-to-be-busy\section-previews)
+
+---
+
+### Section 1 Review Lesson: Simpler Static Boards Beat Dense Micro-Animation
+
+Classification: `Operational lesson`
+
+Context:
+while reviewing Section 1 of `Why Everyone Pretends To Be Busy`, the user approved the simpler remake after rejecting a busier pass that had too many transitions, cue-level pop-ins, disappearing elements, and moving objects inside a `24.085s` hook.
+
+Lesson:
+for short Casually Explained-inspired hook sections, do not try to make every spoken phrase trigger a new visual event.
+The section should feel like rough annotated real-life boards, not a small animated dashboard.
+
+Working rules:
+
+- for a `20-30s` hook, start with `6-8` static boards before adding any in-board animation
+- use hard cuts by default; add transition overlays only after timing and paused-frame clarity are approved
+- one board should usually have one real-life image, one WIT reaction, one main label, and at most one support prop
+- do not animate calendar, inbox, phone, labels, stamps, and WIT all within the same few seconds
+- do not make labels appear and disappear rapidly just because the voice says related words
+- when referencing `Casually Explained`, prefer simple still-frame joke clarity over production polish
+- generated or real-world images should describe the idea, but they should not become a busy collage
+- verify short sections with a board-level contact sheet first; use cue-frame checks only for specific timing bugs
+
+Applied to current video:
+
+- `video-projects/why-everyone-pretends-to-be-busy/hyperframes/index.html` was remade as `8` static boards with no transition overlays
+- [Section 01 Simple Remake](C:\ME\THINGS\Build a Channel\video-projects\why-everyone-pretends-to-be-busy\08-section-01-simple-remake.md) records the accepted approach
+- [Section 01 Review](C:\ME\THINGS\Build a Channel\video-projects\why-everyone-pretends-to-be-busy\06-review.md) records the current approved direction
+
+---
+
 ## 2026-06-02
+
+### Original WIT 24 Pose Replacement
+
+Classification: `Core`
+
+Replaced the previous WIT direction with the user-approved `original-wit` character.
+
+Output:
+
+- [Original WIT 24 pose set](C:\ME\THINGS\Build a Channel\common\assets\wit\poses\original-wit-24)
+- [Original WIT 24 contact sheet](C:\ME\THINGS\Build a Channel\common\assets\wit\poses\original-wit-24\original-wit-24-contact-sheet.png)
+
+Direction:
+
+- completely new WIT, not based on the older cute/polished WIT
+- rougher, funny-stupid, awkward, and unserious
+- closer in comedy function to a simple explainer visual punching bag, without copying any stickman style
+- keeps the channel signature through the long receipt-like tie
+
+Production status:
+
+- generated `24` source chroma PNGs
+- converted all `24` to transparent production PNGs
+- copied transparent PNGs into the pose-set root for direct HyperFrames use
+- older `core-24` and `comedy-core` assets are now superseded source/history
+- no `video-projects/` files were edited or updated
+
+---
 
 ### Channel-Wide Publishing Feedback Loop
 
@@ -1199,6 +1287,26 @@ Working rules:
 - still check layout fixes separately from timing fixes; in this pass, the sell-board arrow was moved below the labels and the `your attention` underline was delayed to the spoken cue
 
 ---
+
+## 2026-06-03
+
+### Voice Test Lesson: Keep One Useful Audio Preview
+
+Classification: `Operational lesson`
+
+Context:
+while remaking the Section 1 hook voice test for `Why Everyone Pretends To Be Busy`, the user clarified that future voice-test passes should not keep both MP3 and WAV outputs.
+
+Lesson:
+for voice previews, create and keep only the one audio file that is most useful for review.
+Use temporary intermediate files only when needed for conversion, then remove them.
+
+Working rules:
+
+- prefer MP3 for lightweight voice-test review unless a renderer specifically needs WAV
+- do not leave duplicate MP3/WAV versions of the same scratch voice in the project folder
+- choose the single best-fitting voice variant instead of preserving multiple variants by default when the user asks for one that works
+- document the selected voice, speed, duration, and file path
 
 ## 2026-05-29
 

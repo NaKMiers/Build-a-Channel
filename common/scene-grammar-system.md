@@ -193,6 +193,26 @@ Default section shape:
 
 Short connected ideas can stay inside one board with timed labels. Do not split every spoken phrase into a separate board.
 
+### Short Hook Simplicity Rule
+
+For Casually Explained-inspired hooks, especially `20-30s` sections, start simple:
+
+```text
+static real-life board -> WIT reaction -> short label -> hard cut
+```
+
+Do not begin with a cue-by-cue animation plan.
+First make the paused frames funny and clear.
+Only add in-board motion after the static version works.
+
+Avoid this failure mode:
+
+```text
+calendar pops in -> inbox pops in -> phone pops in -> label pops in -> WIT shakes -> transition overlay -> new stamp
+```
+
+That can make a short section feel like an animated dashboard instead of a dry explainer.
+
 ## Board Count Guidance
 
 For a `3-5` minute video:
@@ -281,6 +301,8 @@ Avoid:
 - complex transitions
 - constant WIT movement
 - object motion that does not land a joke or clarify the explanation
+- making many props appear and disappear inside a few seconds
+- treating every spoken keyword as a separate animation cue
 
 ## Paused-Frame Gate
 
@@ -317,4 +339,3 @@ When turning a future script into visuals:
 5. Write one short label.
 6. Place the cut, popup, underline, or red markup on the spoken beat.
 7. Check the paused frame.
-
