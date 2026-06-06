@@ -40,6 +40,7 @@ When working in this project, Codex should:
 - Keep notes practical and reusable
 - Prefer structured documentation over scattered scratch notes
 - Use [.agents/_shared/channel/codex-video-workflow.md](C:\ME\THINGS\Build a Channel\.agents\_shared\channel\codex-video-workflow.md) when turning a chosen topic into production-ready deliverables
+- Use the project-local [Browse](C:\ME\THINGS\Build a Channel\.agents\skills\browse\SKILL.md) skill for web or YouTube browsing when available; fall back to global gstack `/browse` only if needed
 - Use [.agents/_shared/channel/channel-improvement-plans](C:\ME\THINGS\Build a Channel\.agents\_shared\channel\channel-improvement-plans) when improving WIT, tone, packaging, hooks, reference boards, real-life visuals, scene grammar, voice, music, or production quality gates
 - Use [.agents/_shared/topic-angle-selection-system.md](C:\ME\THINGS\Build a Channel\.agents\_shared\topic-angle-selection-system.md), [.agents/_shared/topic-angle-scorecard.md](C:\ME\THINGS\Build a Channel\.agents\_shared\topic-angle-scorecard.md), and [.agents/_shared/channel/topic-angle-scorecards](C:\ME\THINGS\Build a Channel\.agents\_shared\channel\topic-angle-scorecards) before future raw topics move into research, packaging, hooks, scripts, or production
 - Use [.agents/_shared/voice/narration-system.md](C:\ME\THINGS\Build a Channel\.agents\_shared\voice\narration-system.md), [.agents/_shared/voice/script-markup-guide.md](C:\ME\THINGS\Build a Channel\.agents\_shared\voice\script-markup-guide.md), and [.agents/_shared/voice/voice-test-protocol.md](C:\ME\THINGS\Build a Channel\.agents\_shared\voice\voice-test-protocol.md) before future full voiceover generation
@@ -118,7 +119,7 @@ If a proposed change affects foundational identity, Codex must pause and get exp
 - Which humor style feels authentic
 - Which niches are worth leaning into
 - Which audience signals are strongest
-- How and when Deewas should be connected later
+- How to grow influence without turning the channel into direct product promotion
 
 ## Near-Term Recommended Workflow
 
@@ -134,4 +135,4 @@ The next useful steps for this project are:
 
 This project is not just about making random videos.
 
-It is about building a durable English-first no-face explainer brand for English learners that can later support products, including Deewas, without depending on direct self-promotion too early.
+It is about building a durable English-first no-face explainer brand for English learners that grows creator influence through clarity, humor, and useful public perspective.

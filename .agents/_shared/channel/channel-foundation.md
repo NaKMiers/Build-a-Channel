@@ -508,15 +508,15 @@ Use upload data to improve packaging, hooks, retention, WIT use, learner clarity
 - `Why Free Apps Are Never Really Free`
 - `Why Productivity Content Never Fixes Your Life`
 
-## Relationship To Deewas
+## Influence-First Boundary
 
-Deewas should not be pushed too early.
+This channel is not an app-promotion funnel.
 
 The better path is:
 
-`fun explainer content -> trust -> audience interest in money and behavior -> soft connection to Deewas later`
+`fun explainer content -> trust -> audience understanding -> creator influence`
 
-The channel should sell your perspective first, not the app first.
+The channel should build the creator's perspective, taste, and public credibility through strong explainers.
 
 ## Long-Term Strategic Note
 
@@ -529,11 +529,4 @@ The audience should come for:
 - Insight
 - Curiosity
 
-Later, that trust can support:
-
-- Deewas
-- Products
-- Templates
-- Newsletters
-- Sponsorships
-- Community
+Later, that trust can support broader creator opportunities such as products, templates, newsletters, sponsorships, community, collaborations, or education.

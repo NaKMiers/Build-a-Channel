@@ -265,4 +265,3 @@ What should the viewer expect next?
 ```text
 _____
 ```
-

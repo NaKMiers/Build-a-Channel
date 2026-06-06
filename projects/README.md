@@ -36,7 +36,7 @@ projects/<video-slug>/
   voiceover/
 ```
 
-Use [projects/_template](C:\ME\THINGS\Build a Channel\projects\_template) when starting a new video.
+Use [projects/_template](C:\ME\THINGS\Build a Channel\projects_template) when starting a new video.
 
 ## Source Of Truth
 

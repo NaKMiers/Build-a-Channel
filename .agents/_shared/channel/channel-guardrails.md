@@ -128,7 +128,7 @@ Codex must pause and ask for explicit confirmation before changing any of these 
 - core promise
 - main content pillars
 - voice and tone
-- relationship to Deewas
+- relationship to product promotion
 - monetization direction
 - visual identity direction
 

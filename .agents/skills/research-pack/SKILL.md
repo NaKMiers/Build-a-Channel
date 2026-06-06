@@ -1,0 +1,345 @@
+---
+name: research-pack
+description: Create or update the step 2 research pack for a Why It Works video project. Use when the user asks for research pack, research step, evidence pack, source gathering, reference research, factual grounding, visual references, or step 2 of the Why It Works video workflow; selects the correct unfinished project first, reads the chosen project's topic intake and shared channel brain, browses web or YouTube for credible sources and visual/reference evidence, then writes only the project's 01-research-pack.md file.
+---
+
+# Research Pack
+
+## Purpose
+
+Run step 2 of the `Why It Works` video workflow.
+
+Turn a selected `00-topic-intake.md` into a clean evidence pack that makes the next script obvious without writing the script yet.
+
+## Required Context
+
+Read these before creating or updating a research pack:
+
+1. `README.md`
+2. `.agents/rules/README.md`
+3. `.agents/_shared/channel/current-state.md`
+4. `.agents/_shared/channel/channel-foundation.md`
+5. `.agents/_shared/channel/channel-guardrails.md`
+6. `.agents/_shared/channel/reference-channels.md`
+7. `.agents/_shared/channel/learning-log.md`
+8. `.agents/_shared/channel/codex-collaboration.md`
+9. `.agents/_shared/topic-angle-selection-system.md`
+10. `.agents/_shared/reference-board-system.md`
+11. `.agents/_shared/real-life-visual-asset-system.md`
+12. `.agents/_shared/english-learner-clarity-system.md`
+13. `references/memory.md`
+14. the chosen project file: `projects/<slug>/00-topic-intake.md`
+
+Load additional shared systems only when needed:
+
+- `.agents/_shared/thumbnail-packaging-system.md` when shaping thumbnail tension
+- `.agents/_shared/hook-system.md` when checking first `10` seconds evidence
+- `.agents/_shared/scene-grammar-system.md` and `.agents/_shared/visual-humor-patterns.md` when research needs boardable visual jokes
+
+## Project Selection Gate
+
+Always resolve the target project before researching.
+
+Use this order:
+
+1. If the user names a project slug or path, use that project.
+2. If the current chat clearly selected a project and the folder exists, use that project.
+3. If there is exactly one project with `00-topic-intake.md` and no `01-research-pack.md`, smart-select it and say so.
+4. Otherwise scan `projects/`, excluding `_template`, and find unfinished research-pack candidates.
+
+An unfinished research-pack candidate is usually:
+
+- a folder with `00-topic-intake.md`
+- and no `01-research-pack.md`, or an empty/stub `01-research-pack.md`
+- and not obviously already beyond research unless the user asks to update it
+
+When multiple candidates exist or context is unclear, ask the user to choose before doing any research.
+
+Preferred selection UI:
+
+- If Codex option UI is available, use `request_user_input` / AskUserOptions style.
+- Show `2-3` best unfinished candidates when the UI limits choices.
+- Put the recommended/current-context candidate first.
+- Each option should include the project slug and current status.
+
+Fallback selection UI:
+
+- If option UI is unavailable or there are more than `3` candidates, list numbered project slugs and stop.
+- Do not research until the user chooses.
+
+Do not create a new project folder in this skill. New projects come from `topic-intake`.
+
+## Browsing Requirement
+
+Research requires current web or YouTube browsing.
+
+Use the project-local Browse skill first:
+
+```text
+.agents/skills/browse/SKILL.md
+.agents/skills/browse/dist/browse.exe
+```
+
+If the project-local browse skill is missing or cannot run, fall back to global gstack `/browse`.
+
+Do not use other browser tools in this workspace unless the user explicitly approves a fallback.
+
+For every research pack, collect enough sources to support script writing:
+
+- `5-8` factual or explanatory sources from credible outlets, official pages, research papers, consumer organizations, company docs, industry reports, or reputable explainers
+- `2-4` YouTube/video references with visible demand, packaging, structure, or risk signals
+- `10-20` visual/reference-board leads as descriptions and source links, not copied assets
+
+If browsing fails, write `Reference confidence: low`, record what failed, and do not invent source details.
+
+## Source Rules
+
+Use sources as evidence, not script material.
+
+For each useful source, record:
+
+- title
+- creator/publisher
+- URL
+- date or age if visible
+- source type
+- what it supports
+- confidence
+- what not to copy
+
+Separate:
+
+- `Fact`: directly supported by a source
+- `Inference`: a reasonable conclusion from multiple sources
+- `Example`: a useful concrete illustration
+- `Open question`: needs more verification before scripting
+
+Avoid:
+
+- unsupported statistics
+- rage-bait framing
+- copying another creator's premise, thumbnail, joke, or script structure
+- brand accusations without solid sourcing
+- real private data
+- real logos/screenshots as planned production assets unless there is a specific approved reason
+
+Prefer:
+
+- simple facts
+- concrete objects
+- credible explanations
+- safe generic examples
+- self-made or mockup-ready visual ideas
+
+## Request Modes
+
+### Create Mode
+
+Use when the chosen project has no `01-research-pack.md`.
+
+Write:
+
+```text
+projects/<slug>/01-research-pack.md
+```
+
+### Update Mode
+
+Use when the user asks to improve, refresh, expand, or fix an existing research pack.
+
+Read the existing `01-research-pack.md`, preserve useful decisions, and update only the necessary sections.
+
+### Improve Memory Mode
+
+Use when the user reviews the research pack and gives reusable lessons.
+
+Update in this order:
+
+1. the project `01-research-pack.md`
+2. this skill's `references/memory.md`
+3. shared memory only if the lesson improves the whole channel
+
+## Workflow
+
+1. Run the Project Selection Gate.
+2. Read the required context and the chosen `00-topic-intake.md`.
+3. Extract the chosen angle:
+   - working title
+   - sharp angle
+   - contradiction
+   - recurring motif
+   - WIT role
+   - real-life objects
+   - final insight
+   - score and risks
+4. Turn the angle into research questions:
+   - What do people think?
+   - What is actually happening?
+   - Why does it keep happening?
+   - Who benefits?
+   - What does the viewer feel in daily life?
+   - What can be shown on screen?
+5. Browse for credible factual/explanatory sources.
+6. Browse YouTube for adjacent high-view or high-signal references.
+7. Gather visual/reference-board leads:
+   - real-life objects
+   - UI or paper evidence
+   - visual metaphors
+   - thumbnail tension
+   - WIT emotions
+   - color and contrast
+8. Convert research into a simple explanation spine:
+   - hook evidence
+   - reframe
+   - `3-5` explanation chunks
+   - final payoff
+9. Add English learner support:
+   - useful vocabulary
+   - simple phrase candidates
+   - words to define simply
+   - cultural or jargon risks
+10. Add fact safety:
+   - safe claims
+   - avoid claims
+   - open questions
+11. Write or update `projects/<slug>/01-research-pack.md`.
+12. Stop. Do not write script, packaging, voice, visual plan, HyperFrames, renders, or upload notes.
+
+## Output File Format
+
+Use this structure for `projects/<slug>/01-research-pack.md`:
+
+```markdown
+# 01 Research Pack
+
+Video: `<title>`
+
+Status: `draft research pack`
+
+Date: `YYYY-MM-DD`
+
+Source skill: `research-pack`
+
+## Topic Intake Snapshot
+
+- Working title:
+- Sharp angle:
+- Main contradiction:
+- Recurring motif:
+- WIT role:
+- Final insight:
+- Main risk:
+
+## Working Thesis
+
+One clear paragraph.
+
+## Research Questions
+
+1.
+2.
+3.
+
+## Source Map
+
+| Source | Type | Publisher / Creator | URL | What it supports | Confidence | Use / Do not copy |
+|---|---|---|---|---|---|---|
+
+## What People Think
+
+## What Is Actually Happening
+
+## Why It Keeps Happening
+
+## Explanation Spine
+
+| Section | Job | Evidence | Visual anchor | WIT state |
+|---|---|---|---|---|
+
+## Useful Examples
+
+| Example | What it shows | Source support | Visual use |
+|---|---|---|---|
+
+## Visual Reference Leads
+
+### Real-Life Objects
+
+### UI Or Paper Mockup Targets
+
+### Visual Metaphors
+
+### Thumbnail Tension
+
+### WIT Emotions
+
+### Color And Contrast
+
+## Jokes And Analogies
+
+## English Learner Support
+
+- Useful words:
+- Useful phrases:
+- Jargon to explain simply:
+- Phrases to avoid:
+
+## Safe Claims
+
+## Claims To Avoid
+
+## Open Questions
+
+## Research Decision
+
+What is strong enough to move into script?
+
+## Next Step Boundary
+
+Next workflow step: `Script draft`
+
+Do not continue into script until the user asks for the script skill or explicitly requests script drafting.
+```
+
+## Quality Bar
+
+A research pack is ready when:
+
+- the thesis is clear in one paragraph
+- every major claim has a source or is labeled as an inference
+- the script structure is obvious but not written yet
+- the recurring motif became more concrete
+- there are at least `5` boardable visual ideas
+- WIT has a clear emotional path
+- English learner vocabulary is practical and not school-like
+- risky claims are marked before scripting
+- sources are linked and not copied
+
+## Hard Fails
+
+Reject or revise the research pack before finishing if:
+
+- it is just a link dump
+- it has no clear hidden system
+- it cannot support the chosen angle
+- it contradicts the `00-topic-intake.md` without saying why
+- it depends on one weak source
+- it includes unsupported accusations
+- it turns the channel into direct product promotion
+- it plans to copy another creator's visual or script
+- it has no real-life objects or visual evidence
+- it moves into full script writing
+
+## Self-Improvement
+
+Read `references/memory.md` every run.
+
+Update skill memory when:
+
+- the user says the research was too broad, too shallow, too academic, too unsafe, or not visual enough
+- a source type repeatedly proves useful or weak
+- a later script step exposes missing evidence
+- a visual plan fails because the research did not collect enough objects
+- a factual claim needs correction
+
+Promote lessons into `.agents/_shared/channel/learning-log.md` only when they improve the whole channel. Classify promoted lessons as `Core`, `Experiment`, `Operational lesson`, or `Reject`.

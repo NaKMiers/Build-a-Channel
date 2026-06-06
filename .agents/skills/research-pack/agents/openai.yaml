@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Pack"
+  short_description: "Build evidence packs for video topics"
+  default_prompt: "Use $research-pack to create a research pack for the selected Why It Works video project."

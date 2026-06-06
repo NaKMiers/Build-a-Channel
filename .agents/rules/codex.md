@@ -6,7 +6,9 @@ Read the startup files listed in `AGENTS.md` before strategy, production plannin
 
 ## Browsing
 
-Use the gstack `/browse` skill for web browsing in this workspace.
+Use the project-local `/browse` skill in `.agents/skills/browse/` for web browsing in this workspace when available.
+
+If the project-local browse skill is missing or cannot run, fall back to the global gstack `/browse` skill.
 
 Do not use `mcp__claude-in-chrome__*` tools.
 
@@ -22,4 +24,6 @@ Do not use `mcp__claude-in-chrome__*` tools.
 
 `.agents/skills/` stores executable skills only.
 
-Do not create the sequential production skills until the user asks for the skill-creation phase.
+`topic-intake` and `research-pack` now exist as the first two sequential video-production skills.
+
+Do not create additional sequential production skills until the user asks for the next skill-creation phase.

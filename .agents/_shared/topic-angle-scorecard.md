@@ -199,7 +199,7 @@ An angle fails even with a high score if:
 - it has no real-life object, UI, receipt, phone, product, paper, or physical evidence option
 - it has no clear WIT role
 - it would push the channel away from money, internet, society, business, or modern life
-- it turns the channel into direct Deewas promotion too early
+- it turns the channel into direct product promotion
 
 ## Reusable Record Format
 

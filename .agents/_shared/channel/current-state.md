@@ -53,6 +53,7 @@ Practical rule:
 - `.agents/_shared/` stores reusable tools, templates, workflows, shared assets, and production notes
 - `.agents/rules/` stores Codex and future skill operating rules
 - `.agents/skills/` stores executable project-local Codex skills
+- Current project-local skills: `browse` for portable web and YouTube browsing, `topic-intake` for step 1 topic intake, `research-pack` for step 2 evidence packs, and `wiw-take-note` for memory capture
 - HyperFrames is the default renderer for new and active video production
 - Active HyperFrames source lives inside each video folder at `projects/<slug>/hyperframes/`
 - HyperFrames should prioritize simple board scenes, WIT poses, voiceover, hard cuts, cue-timed labels, red markup, and handwritten-looking text instead of heavy animation
@@ -133,11 +134,11 @@ Section 1 production lesson:
 for short hooks, start with `6-8` static boards: one real-life image, one WIT reaction, one main label, and hard cuts.
 Do not add transition overlays, rapid label pop-ins, object pile-ons, or WIT shake unless the static version is approved and the motion has a clear joke or clarity job.
 
-## Deewas Rule
+## Influence Rule
 
-Do not lead with Deewas.
+Do not frame the channel as app promotion.
 
-Build trust first through broad explainer content, then connect to money behavior and only later connect softly to Deewas.
+Build influence first through broad, useful, funny explainer content about money, internet behavior, business, society, and modern life.
 
 ## Safety Rule
 

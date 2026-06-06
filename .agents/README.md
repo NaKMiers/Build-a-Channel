@@ -11,4 +11,4 @@ This folder contains the agent-facing operating system for `Why It Works`.
 
 The future goal is to create sequential production skills for the full video lifecycle.
 
-This refactor does not create those production skills yet.
+`topic-intake` is the first created sequential production skill. The remaining lifecycle skills should be created only when the user asks for the next skill-creation phase.

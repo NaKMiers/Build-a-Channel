@@ -150,7 +150,7 @@ Do not promote these into channel-wide memory:
 - comments that conflict with the channel promise
 - low-trust advice from random viewers
 - demands to abandon English learner clarity
-- demands to turn the channel into direct Deewas promotion
+- demands to turn the channel into direct product promotion
 - upload performance affected by obvious external timing but no creative diagnosis
 - analytics too small to interpret and no useful qualitative signal
 

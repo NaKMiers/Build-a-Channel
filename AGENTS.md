@@ -25,6 +25,14 @@ Do this before:
 - creating scripts or brand assets that depend on channel identity
 - creating or updating production skills
 
+## Browsing Rule
+
+Use the project-local [Browse](C:\ME\THINGS\Build a Channel\.agents\skills\browse\SKILL.md) skill for web or YouTube browsing when available. It is vendored from gstack so the project can travel across machines.
+
+If the project-local browse skill is missing or cannot run, fall back to the global gstack `/browse` skill.
+
+Never use `mcp__claude-in-chrome__*` tools.
+
 ## Memory Rules
 
 - Treat `.agents/_shared/` as the channel brain.
@@ -45,8 +53,11 @@ Use the project folders intentionally:
 
 ## Project-Local Skills
 
+- Use [Browse](C:\ME\THINGS\Build a Channel\.agents\skills\browse\SKILL.md) for web or YouTube browsing, especially reference video research for topic intake.
+- Use [Topic Intake](C:\ME\THINGS\Build a Channel\.agents\skills\topic-intake\SKILL.md) when the user asks for topic intake, next video ideas, raw topic candidates, scored video angles, or step 1 of the video workflow.
+- Use [Research Pack](C:\ME\THINGS\Build a Channel\.agents\skills\research-pack\SKILL.md) when the user asks for research pack, evidence pack, source gathering, visual reference research, or step 2 of the video workflow.
 - Use [WIW Take Note](C:\ME\THINGS\Build a Channel\.agents\skills\wiw-take-note\SKILL.md) when the user asks to take note of reviews, remember useful production feedback, or persist lessons that should improve future HyperFrames/video review passes.
-- Do not create the sequential video-production skills until the user explicitly asks for the skill-creation phase.
+- Do not create additional sequential video-production skills until the user explicitly asks for the next skill-creation phase.
 
 ## Workspace Boundaries
 
@@ -83,4 +94,4 @@ Only `Core` belongs in the channel foundation.
 
 ## Main Goal
 
-Build a durable English-first no-face explainer brand for English learners that can later support products, including Deewas, without turning the channel into direct app promotion too early.
+Build a durable English-first no-face explainer brand for English learners that grows influence on the internet through useful, funny explanations of money, internet behavior, business, society, and modern life.

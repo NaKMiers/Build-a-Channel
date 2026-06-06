@@ -89,12 +89,14 @@ projects/<video-slug>/
 
 Use [projects/_template](C:\ME\THINGS\Build a Channel\projects\_template) for the standard files.
 
-## The 9-Stage Workflow
+## The Topic-To-Upload Workflow
 
 ### 1. Topic Intake
 
 Goal:
 Turn a messy list of possible ideas into sharp, scored angle candidates.
+
+Use the project-local [Topic Intake skill](C:\ME\THINGS\Build a Channel\.agents\skills\topic-intake\SKILL.md) when the user asks for topic intake, next-video ideas, scored video angles, or step 1 of the workflow.
 
 Codex does:
 

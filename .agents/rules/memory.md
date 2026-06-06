@@ -11,7 +11,7 @@ The project should improve after every serious review, production pass, and uplo
 - `.agents/_shared/`
   Reusable systems, templates, tools, assets, and workflow docs.
 - `.agents/skills/<skill>/`
-  Future skill-specific memory once sequential production skills exist.
+  Skill-specific memory for executable skills, such as `.agents/skills/topic-intake/references/memory.md`.
 
 ## Promotion Rule
 

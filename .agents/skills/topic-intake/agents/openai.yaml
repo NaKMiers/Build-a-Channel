@@ -1,0 +1,4 @@
+interface:
+  display_name: "Topic Intake"
+  short_description: "Generate scored Why It Works video angles"
+  default_prompt: "Use $topic-intake to suggest sharp next-video angle candidates for Why It Works."

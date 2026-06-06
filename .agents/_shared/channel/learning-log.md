@@ -13,6 +13,88 @@ Use it to record:
 
 ---
 
+## 2026-06-06
+
+### Project-Local Browse Vendored
+
+Classification: `Core operational capability`
+
+Vendored the gstack `browse` skill into the project at:
+
+- [Browse](C:\ME\THINGS\Build a Channel\.agents\skills\browse\SKILL.md)
+
+Reason:
+project-local skills should not depend only on global skills installed on one machine.
+
+Operating rule:
+
+- use `.agents/skills/browse/` first for web and YouTube browsing
+- fall back to global gstack `/browse` only if the project-local skill or binary is missing or cannot run
+- keep `topic-intake` reference research portable by preferring the project-local browse skill
+
+### Influence-First Channel Boundary
+
+Classification: `Core`
+
+Decision:
+remove product-specific funnel framing from the channel memory.
+
+Working rule:
+
+`Why It Works` should build internet influence through useful, funny, learner-friendly explainers, not through direct app or product promotion.
+
+Implication:
+future topics, scripts, packaging, and skills should optimize for audience trust, public perspective, topic clarity, and creator influence first.
+
+### Topic Intake Skill Created
+
+Classification: `Core operational capability`
+
+Created the first sequential project-local video-production skill:
+
+- [Topic Intake](C:\ME\THINGS\Build a Channel\.agents\skills\topic-intake\SKILL.md)
+
+Purpose:
+generate next-video topic candidates as scored angle packages, not generic idea lists.
+
+Operating rules:
+
+- read `.agents/_shared/` and the topic-angle systems before suggesting topics
+- read the skill-specific memory at `.agents/skills/topic-intake/references/memory.md`
+- shape candidates as `topic + contradiction + visual metaphor + viewer pain`
+- score candidates with the channel-wide topic angle scorecard
+- create `projects/<slug>/00-topic-intake.md` only after the user chooses a candidate or explicitly asks to start a project
+- update skill memory after user review so the next topic pass improves
+- promote reusable lessons back into shared memory only when they improve the whole channel
+
+Scope note:
+no other sequential production skills were created in this pass.
+
+### Research Pack Skill Created
+
+Classification: `Core operational capability`
+
+Created the second sequential project-local video-production skill:
+
+- [Research Pack](C:\ME\THINGS\Build a Channel\.agents\skills\research-pack\SKILL.md)
+
+Purpose:
+turn a selected project topic intake into a sourced evidence pack before script drafting.
+
+Operating rules:
+
+- select or ask for the target project before researching
+- read the chosen `projects/<slug>/00-topic-intake.md` and the shared channel brain
+- browse current web or YouTube sources before writing the pack
+- prefer the project-local `browse` skill, then fall back to global gstack browse only if needed
+- write only `projects/<slug>/01-research-pack.md`
+- include source map, explanation spine, visual reference leads, English learner support, safe claims, claims to avoid, and open questions
+- do not write script, packaging, visual plan, HyperFrames, or upload files in this skill
+- keep research-pack-specific learning in `.agents/skills/research-pack/references/memory.md`
+
+Scope note:
+no other sequential production skills were created in this pass.
+
 ## 2026-06-05
 
 ### Source Structure Refactor: Agents, Shared Brain, Projects
@@ -716,11 +798,11 @@ The strongest identity is:
 - `Why Free Apps Are Never Really Free`
 - `Why Productivity Content Never Fixes Your Life`
 
-### Deewas Positioning Note
+### Influence-First Positioning Note
 
-Do not lead with Deewas.
+Do not lead with app or product promotion.
 
-Build trust first through broad explainer content, then connect the channel to money behavior and eventually to Deewas later.
+Build trust first through broad explainer content, audience understanding, and a strong creator point of view.
 
 ### Operational Note
 
@@ -1152,7 +1234,7 @@ What stays the same:
 - no-face explainer format
 - core lane: money, internet, society, business, and modern life
 - tone: smart, simple, funny, dry
-- Deewas should not be pushed early
+- direct product promotion should not lead the channel
 
 What changes:
 
