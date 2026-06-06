@@ -7,7 +7,7 @@
 1. Topic intake
 2. Research pack
 3. Script draft
-4. Voice revision and voiceover
+4. Voiceover
 5. Title and thumbnail packaging
 6. Visual plan
 7. HyperFrames build
@@ -15,12 +15,68 @@
 9. Upload
 10. Self-learning
 
+## Pipeline Dependency Rule
+
+Skills must run in order: `1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10`.
+
+Before running step `N`, verify every previous required output exists and is non-empty inside the same `projects/<slug>/` folder.
+
+If a required previous output is missing, stop and tell the user exactly which skill must run first. Do not create placeholder upstream files from a later skill.
+
+Current dependency chain:
+
+| Step | Skill | Output | Required Before Running |
+| ---: | --- | --- | --- |
+| 1 | `topic-intake` | `00-topic-intake.md` | none |
+| 2 | `research-pack` | `01-research-pack.md` | `00-topic-intake.md` |
+| 3 | `script-draft` | `02-script.md` | `00-topic-intake.md`, `01-research-pack.md` |
+| 4 | `voiceover` | `03-voiceover.md` and `voiceover/` | `02-script.md` |
+| 5 | future packaging skill | `04-packaging.md` | `03-voiceover.md` or approved script boundary |
+| 6 | future visual plan skill | `05-visual-plan.md` | `04-packaging.md` |
+| 7 | future HyperFrames skill | `06-production-board.md`, `hyperframes/`, `renders/` | `05-visual-plan.md` |
+| 8 | future review skill | `07-review.md` | rendered or previewable video sections |
+| 9 | future upload skill | `08-upload.md` | approved review |
+| 10 | future self-learning skill | `09-self-learning.md` | upload or review results |
+
+## Stale Downstream Rule
+
+When a step is created, updated, or rerun, every later step output in the same project becomes stale.
+
+Apply this every time:
+
+- list any downstream files that now need removal or rerun
+- do not trust stale downstream files as current source of truth
+- do not silently delete downstream files
+- remove stale downstream files only when the user explicitly asks for removal
+- otherwise rerun downstream skills in order so each step rebuilds from the latest previous output
+
+If an upstream file has a newer modified time than a downstream file, treat the downstream file as stale.
+
 ## Current Skill Coverage
 
 - Step 1 `Topic intake` is implemented by `.agents/skills/topic-intake/`.
 - Step 2 `Research pack` is implemented by `.agents/skills/research-pack/`.
 - Step 3 `Script draft` is implemented by `.agents/skills/script-draft/`.
+- Step 4 `Voiceover` is implemented by `.agents/skills/voiceover/`.
 - The remaining lifecycle steps do not have executable project-local skills yet.
+
+## Section Voiceover Branch
+
+After `02-script.md`, production can branch by section.
+
+The `voiceover` skill should ask which script section to generate. It should offer `All` first, then each script section. `All` means generate separate voiceover outputs for every section, not one stitched full-video audio file.
+
+Per-section voiceover outputs belong in:
+
+```text
+projects/<slug>/voiceover/section-XX-kebab-section-name/
+```
+
+The project-level voiceover index belongs in:
+
+```text
+projects/<slug>/03-voiceover.md
+```
 
 ## Project Outputs
 

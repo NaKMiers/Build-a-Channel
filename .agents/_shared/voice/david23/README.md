@@ -35,3 +35,15 @@ Use speed `0.76` only when the cut needs to be slower and more lesson-like.
 Do not use the faster audition speed for full videos unless the user explicitly asks for a fast cut.
 
 Keep George and all previous candidate voices available as fallback/reference voices.
+
+## Local HyperFrames Note
+
+`hyperframes@0.6.76` can generate `David23` by passing the Kokoro voice ID directly:
+
+```text
+npx hyperframes@0.6.76 tts <input.txt> --output <output.mp3> --voice am_eric --speed 0.84 --lang en-us --json
+```
+
+The short HyperFrames voice list may not display `am_eric`, but the command can still accept it.
+
+Do not fall back to another voice just because `am_eric` is missing from the short list; test the direct voice ID first.

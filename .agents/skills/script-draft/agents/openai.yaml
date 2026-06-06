@@ -1,4 +1,4 @@
 interface:
   display_name: "Script Draft"
-  short_description: "Draft sectioned video scripts"
-  default_prompt: "Use $script-draft to write the sectioned script draft for the selected Why It Works video project."
+  short_description: "Draft scripts after research packs"
+  default_prompt: "Use $script-draft after Research Pack to write the sectioned script draft for the selected Why It Works video project."

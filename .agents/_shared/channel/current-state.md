@@ -53,7 +53,9 @@ Practical rule:
 - `.agents/_shared/` stores reusable tools, templates, workflows, shared assets, and production notes
 - `.agents/rules/` stores Codex and future skill operating rules
 - `.agents/skills/` stores executable project-local Codex skills
-- Current project-local skills: `browse` for portable web and YouTube browsing, `topic-intake` for step 1 topic intake, `research-pack` for step 2 evidence packs, `script-draft` for step 3 sectioned scripts, and `wiw-take-note` for memory capture
+- Current project-local skills: `browse` for portable web and YouTube browsing, `topic-intake` for step 1 topic intake, `research-pack` for step 2 evidence packs, `script-draft` for step 3 sectioned scripts, `voiceover` for step 4 section voiceover, and `wiw-take-note` for memory capture
+- Voiceover is section-first: after `02-script.md`, generate voiceover for one selected section at a time, or choose `All` to generate separate voiceover outputs for every section. Do not default to one full-video voiceover file.
+- Sequential production skills enforce pipeline prerequisites: later steps require previous output files, and rerunning an earlier step makes downstream outputs stale until removed or rerun
 - HyperFrames is the default renderer for new and active video production
 - Active HyperFrames source lives inside each video folder at `projects/<slug>/hyperframes/`
 - HyperFrames should prioritize simple board scenes, WIT poses, voiceover, hard cuts, cue-timed labels, red markup, and handwritten-looking text instead of heavy animation

@@ -11,6 +11,26 @@ Run the first step of the `Why It Works` video workflow: turn raw topic possibil
 
 The output is not a generic idea list. It should be a small set of usable angle packages that connect topic, contradiction, visual metaphor, WIT role, thumbnail tension, first `10` seconds, English learner value, and final insight.
 
+## Pipeline Position
+
+This is step `1` of the video workflow.
+
+It has no previous required output.
+
+When Persist Mode creates, updates, or reruns `projects/<slug>/00-topic-intake.md`, every later output in the same project becomes stale:
+
+- `01-research-pack.md`
+- `02-script.md`
+- `03-voiceover.md`
+- `04-packaging.md`
+- `05-visual-plan.md`
+- `06-production-board.md`
+- `07-review.md`
+- `08-upload.md`
+- `09-self-learning.md`
+
+List stale downstream files in chat. Do not silently delete them. Remove stale downstream files only when the user explicitly asks; otherwise downstream skills must be rerun in order.
+
 ## Required Context
 
 Read these before generating or persisting topic ideas:
@@ -75,6 +95,8 @@ Use when the user selects a topic or asks to start the next video project.
 
 Create or update only `projects/<slug>/00-topic-intake.md` from the chosen angle. Do not create research, script, packaging, voice, visual plan, HyperFrames, or upload files beyond the project template unless explicitly asked.
 
+If updating an existing `00-topic-intake.md` and downstream outputs already exist, treat those downstream outputs as stale after the update. Tell the user to remove them or rerun downstream skills in order, starting with `research-pack`.
+
 ### Improve Memory Mode
 
 Use when the user reviews topic suggestions, rejects candidates, chooses a direction, or gives a lesson that should improve future topic intake.
@@ -118,6 +140,8 @@ This video is about how _____ looks like _____, but is actually _____.
 8. Score the strongest angles with `.agents/_shared/topic-angle-scorecard.md`.
 9. Keep the best `5-7` candidates and recommend the top `1-3`.
 10. For the best candidate, include concrete next-step readiness: what would become research, packaging, and first `10` seconds.
+11. In Persist Mode, create or update only `projects/<slug>/00-topic-intake.md`.
+12. After updating `00-topic-intake.md`, run the stale downstream check and list later outputs that must be removed or rerun.
 
 ## Output Format
 

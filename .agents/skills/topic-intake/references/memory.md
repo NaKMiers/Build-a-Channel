@@ -16,6 +16,8 @@ Use this file for lessons about how this skill should suggest, score, reject, an
 - Show the full score breakdown for every candidate in the main table.
 - Treat the first output as candidate selection, not research, script, or production.
 - Do not create a project folder unless the user chooses a candidate or explicitly asks to start the project.
+- When Persist Mode creates or updates `00-topic-intake.md`, treat all downstream outputs in that project as stale.
+- Do not delete stale downstream outputs unless the user explicitly asks; otherwise tell the user to rerun downstream skills in order.
 - Keep the channel influence-first; do not suggest topics that exist mainly to promote a product.
 
 ## Calibration From Current Best Project
@@ -106,6 +108,26 @@ Apply next time:
 
 Promote to shared memory:
 yes, this is a portability rule for project-local skills.
+
+### 2026-06-06 - Pipeline Stale Cascade
+
+Classification: `Operational lesson`
+
+Context:
+The user clarified that every skill should behave as part of a sequential production pipeline.
+
+Lesson:
+`topic-intake` is the first step. It does not require previous outputs, but changing its output makes research, script, and later production files stale.
+
+Apply next time:
+
+- when creating or updating `00-topic-intake.md`, check for `01-09` downstream files
+- list downstream files that are now stale
+- tell the user to remove stale files or rerun downstream skills in order, starting with `research-pack`
+- do not remove downstream files unless the user explicitly asks
+
+Promote to shared memory:
+yes, this is a channel-wide pipeline rule.
 
 ## Feedback Entry Template
 

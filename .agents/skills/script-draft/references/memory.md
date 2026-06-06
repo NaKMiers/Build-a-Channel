@@ -9,8 +9,14 @@ Use this file for lessons about selecting projects, shaping sectioned scripts, p
 
 - Select the project before drafting.
 - Smart-select a project only when context is clear or exactly one unfinished script candidate exists.
-- Require both `00-topic-intake.md` and `01-research-pack.md`.
+- Require real, non-empty `00-topic-intake.md` and `01-research-pack.md`.
+- If both are missing, stop and ask for `topic-intake`, then `research-pack`, then rerun `script-draft`.
+- If `00-topic-intake.md` is missing, stop and ask the user to run `topic-intake`.
+- If `01-research-pack.md` is missing, stop and ask the user to run `research-pack` after topic intake exists.
+- If the research pack is older than the topic intake, treat it as stale and require `research-pack` before drafting.
 - Write only `projects/<slug>/02-script.md`.
+- When `02-script.md` is created, updated, or rerun, treat `03-09` downstream outputs as stale.
+- Do not delete stale downstream outputs unless the user explicitly asks; otherwise tell the user to rerun downstream skills in order.
 - Use `projects/why-everyone-pretends-to-be-busy/02-script.md` as the structural reference when available.
 - Copy the reference script's discipline, not its topic, jokes, or wording.
 - Draft in sections with estimates, word counts, purpose, visual goal, narration, approval checks, and voice revision notes.
@@ -103,6 +109,27 @@ Include status, estimated duration, `3-5` line brief, and section summary in cha
 
 Promote to shared memory:
 No. This is specific to the `script-draft` skill response contract.
+
+### 2026-06-06 - Require Previous Outputs And Stale Downstream
+
+Classification: `Operational lesson`
+
+Context:
+The user clarified that `script-draft` should run only after Topic Intake and Research Pack outputs exist, and that rerunning previous steps should stale later outputs.
+
+Lesson:
+`script-draft` is step 3, not a standalone writer. It must build from `00-topic-intake.md` and `01-research-pack.md`, and its own rerun makes voice, packaging, visual plan, HyperFrames, review, upload, and learning files stale.
+
+Apply next time:
+
+- require non-empty `00-topic-intake.md` and `01-research-pack.md`
+- if one or both are missing, stop and name the missing skill(s)
+- if the research pack is older than the topic intake, require `research-pack` rerun before drafting
+- after writing `02-script.md`, list stale downstream outputs from `03-voiceover.md` through `09-self-learning.md`
+- do not remove stale files unless the user explicitly asks
+
+Promote to shared memory:
+yes, this is a channel-wide pipeline rule.
 
 ## Feedback Entry Template
 

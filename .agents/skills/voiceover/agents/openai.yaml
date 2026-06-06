@@ -1,0 +1,4 @@
+interface:
+  display_name: "Voiceover"
+  short_description: "Generate section voiceover for Why It Works scripts."
+  default_prompt: "Create voiceover for a selected script section."

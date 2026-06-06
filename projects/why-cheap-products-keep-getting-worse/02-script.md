@@ -2,11 +2,11 @@
 
 Video: `Why Cheap Products Keep Getting Worse`
 
-Status: `draft script`
+Status: `remade draft script`
 
-Estimated runtime: `5:25`
+Estimated runtime: `5:45`
 
-Estimated words: `872`
+Estimated words: `862`
 
 Source skill: `script-draft`
 
@@ -17,10 +17,11 @@ Source files:
 
 ## Draft Strategy
 
-- Core thesis: A cheap product is not always bad, but many cheap products hide the real cost by removing durability, repairability, support, or long-term usefulness.
+- Core thesis: Cheap products are not automatically bad, but some products feel worse because the visible price stays low while the invisible future gets cut: durability, repair access, spare parts, support, testing, or long-term usefulness.
 - Recurring motif: `future not included`
-- WIT arc: excited bargain hunter -> suspicious inspector -> betrayed owner -> locked-out repair victim -> tired replacer -> deadpan buyer who finally sees the real price.
-- Script risk: Avoid saying all cheap products are bad, avoid brand accusations, and avoid turning the video into a broad lecture about capitalism, inflation, or sustainability.
+- WIT arc: excited bargain hunter -> confused owner -> betrayed product inspector -> locked-out repairer -> tired repeat buyer -> deadpan person checking how much future is included.
+- Remake direction: Make the script more object-driven, more visual, and less essay-like than the first draft. Keep the explanation centered on `today` versus `tomorrow`.
+- Script risk: Avoid saying all cheap products are bad, avoid brand accusations, avoid nostalgia claims that old products were always better, and avoid turning the video into a sustainability documentary.
 
 ## Section Implementation Order
 
@@ -34,238 +35,273 @@ Work one section at a time:
 6. approve section
 7. move to the next section
 
-Do not polish later workflow steps before the script is approved.
+Do not continue into voiceover, packaging, visual plan, HyperFrames, renders, upload, or self-learning until the script is approved.
 
 ## Section Summary
 
-| # | Section | Estimate | Words | Purpose |
-|---:|---|---:|---:|---|
-| 1 | Hook | `0:00-0:30` | `89` | Show a cheap product betraying WIT and reveal `future not included`. |
-| 2 | Reframe | `0:30-1:02` | `85` | Separate `cheap` from `bad` and define the real angle. |
-| 3 | The Visible Price Wins | `1:02-1:51` | `129` | Explain why the price tag gets attention while future cost stays hidden. |
-| 4 | The Future Gets Removed | `1:51-2:43` | `138` | Show durability, material, testing, and support being quietly cut. |
-| 5 | Features Replace Durability | `2:43-3:26` | `115` | Explain how extra features can make products more fragile or harder to fix. |
-| 6 | Repair Becomes A Door With Locks | `3:26-4:30` | `171` | Show repair barriers and why replacement becomes easier than fixing. |
-| 7 | Payoff | `4:30-5:25` | `145` | Land the final insight: cheapest now is not always lowest cost. |
+| #   | Section                         | Estimate    | Words | Purpose                                                                       |
+| --- | ------------------------------- | ----------- | ----- | ----------------------------------------------------------------------------- |
+| 1   | Hook                            | `0:00-0:32` | `80`  | Show a cheap product looking normal, then reveal `future not included`.       |
+| 2   | Cheap Is Not The Villain        | `0:32-1:03` | `78`  | Separate affordable products from bad products and define the real suspicion. |
+| 3   | The Price Tag Speaks First      | `1:03-1:49` | `116` | Explain why the visible price beats the hidden future cost.                   |
+| 4   | The Boring Parts Disappear      | `1:49-2:39` | `126` | Show durability, material, testing, and support as physical missing pieces.   |
+| 5   | More Features, More Tiny Deaths | `2:39-3:23` | `111` | Explain how extra complexity can create more failure points.                  |
+| 6   | Repair Gets A Security System   | `3:23-4:19` | `141` | Show repair barriers and define repairability simply.                         |
+| 7   | Replacement Becomes Normal      | `4:19-4:57` | `96`  | Explain why buying again can feel easier than fixing.                         |
+| 8   | Payoff                          | `4:57-5:45` | `114` | Land the final insight: the real price includes how much future is included.  |
 
 ## Section 1: Hook
 
-Estimated time: `0:00-0:30`
+Estimated time: `0:00-0:32`
 
-Words: `89`
+Words: `80`
 
 Purpose:
-Show the title promise immediately through one cheap object that looks normal, then fails too soon.
+Show the title promise immediately through one cheap product that looks normal, then loses its future.
 
 Visual goal:
-WIT buys a cheap charger with a happy price tag. A hidden label appears: `FUTURE NOT INCLUDED`. The charger starts failing while the price tag keeps smiling.
+WIT finds a cheap chair with a bright price tag. It looks normal. A hidden label falls out: `FUTURE NOT INCLUDED`. One leg starts wobbling while the price tag keeps smiling.
 
 Narration:
 
 ```text
-Here is a strange thing about buying cheap stuff.
+I find a chair for nine dollars.
 
-Sometimes the product does not look bad.
+It has four legs, a seat, and the confidence of a much better chair.
 
-It looks normal.
+So he buys it.
 
-The shirt looks like a shirt. The charger charges. The chair has the correct number of legs, which is always encouraging.
+For the first week, everything is fine.
 
-Then two weeks later, the shirt becomes tired, the charger bends like it has back pain, and the chair starts making sounds that feel legally important.
+Then the chair starts making a noise that sounds like legal advice.
 
-And suddenly the cheap product was not really cheap.
+The screw gets loose. The seat feels nervous. One leg begins exploring other career options.
 
-It was a normal product with a tiny label hidden inside:
+And suddenly, the cheap chair was not really cheap.
+
+It was a normal chair with one small problem:
 
 future not included.
 ```
 
 Approval check:
 
-- The first object is readable by second `3`.
+- The chair is readable by second `3`.
 - `FUTURE NOT INCLUDED` appears by second `5-6`.
-- WIT starts excited, then becomes suspicious before the first failure.
-- The hook does not blame the buyer for choosing a cheap product.
+- WIT starts happy, then becomes suspicious before the chair fails.
+- The hook does not blame WIT for buying something affordable.
 
 Voice revision notes:
 
-- Keep the opening calm and concrete.
-- Give `future not included` a short pause before and after.
-- The chair line can be flatter and more deadpan.
+- Give `future not included` a clean hold.
+- Keep the chair jokes deadpan, not silly-loud.
+- If the hook feels too narrow, swap the chair for a charger, but keep one dominant object.
 
-## Section 2: Reframe
+## Section 2: Cheap Is Not The Villain
 
-Estimated time: `0:30-1:02`
+Estimated time: `0:32-1:03`
 
-Words: `85`
+Words: `78`
 
 Purpose:
-Make the video safe and fair: this is not "cheap equals bad."
+Make the argument fair: cheap does not mean bad, and expensive does not mean good.
 
 Visual goal:
-Split board: `CHEAP` on one side, `BAD` on the other. Red correction: `not always the same thing`. WIT inspects a product with a small magnifying glass.
+Split board: `CHEAP` is crossed out as the villain. Red correction: `not always bad`. A second label appears: `missing tomorrow`.
 
 Narration:
 
 ```text
-This video is not about saying cheap things are always bad.
+This video is not about saying cheap things are bad.
 
-That would be unfair, and also very expensive as a personality.
+That would be unfair.
 
-Some affordable products are great. Some expensive products are just regular products wearing a nicer outfit.
+Also, it would make shopping very emotionally expensive.
 
-The real question is different.
+Some affordable products are great.
 
-Why do so many normal products feel like they have less future inside them?
+And some expensive products are just regular products wearing a nicer jacket.
 
-Less durability. Less repair. Less support. Less time before you need to buy again.
+The real question is smaller, and more annoying.
 
-The product still gives you today.
+Why do so many normal products feel like they have less tomorrow inside them?
 
-The suspicious part is what happened to tomorrow.
+Less strength.
+
+Less repair.
+
+Less support.
+
+Less time before you have to buy the same thing again.
 ```
 
 Approval check:
 
-- The visual clearly separates `cheap` from `bad`.
-- `today` versus `tomorrow` is visible as the reframe.
-- WIT should look curious, not angry.
-- Avoid any real brand logos.
+- The board clearly separates `cheap` from `bad`.
+- `missing tomorrow` becomes the reframe, not a side label.
+- WIT should look curious, not angry at poor buyers.
+- Avoid any real brand logos or real store labels.
 
 Voice revision notes:
 
-- Slow slightly on `less durability`, `less repair`, `less support`.
-- The "expensive as a personality" joke should be dry, not performed.
+- Slow slightly on `less strength`, `less repair`, `less support`.
+- The jacket joke should be small and quick.
 
-## Section 3: The Visible Price Wins
+## Section 3: The Price Tag Speaks First
 
-Estimated time: `1:02-1:51`
+Estimated time: `1:03-1:49`
 
-Words: `129`
+Words: `116`
 
 Purpose:
-Explain why the price tag is powerful: people see the cost now, but not the replacement cost later.
+Explain why low price is powerful: people see the cost now, but not the replacement cost later.
 
 Visual goal:
-A big bright price tag covers smaller hidden tags: `weaker material`, `shorter life`, `harder repair`, `buy again later`.
+A bright price tag covers smaller hidden tags: `weak part`, `short life`, `hard repair`, `buy again later`. WIT reaches for the big tag before noticing the small ones.
 
 Narration:
 
 ```text
-The first reason cheap products can get worse is simple.
+The first reason is that the price tag speaks first.
 
-The visible price wins.
+When you buy something, the price is easy to understand.
 
-When you are buying something, the price tag is the loudest part of the product.
+Nine dollars is nine dollars.
 
-It is right there, shouting at your wallet.
+Your wallet can read that very quickly.
 
 But the future cost is quiet.
 
 It does not stand next to the product and say, "Hello, I am the replacement you will buy in three months."
 
-That would be useful. Also terrible marketing.
+That would be helpful.
 
-So companies compete on the part you can see immediately.
+Also, very bad marketing.
 
-The price. The discount. The new style. The extra feature. The promise that this thing is somehow cheaper and better and faster and emotionally supportive.
+So products compete on the things you can see immediately.
 
-But a low price has to come from somewhere.
+Low price.
 
-Sometimes it comes from efficiency.
+Fast delivery.
 
-Sometimes it comes from removing pieces of the future.
+New color.
+
+Extra feature.
+
+A sale sticker that looks like it has personally saved your life.
+
+But if the visible price has to stay low, something else may become negotiable.
+
+Sometimes that something is tomorrow.
 ```
 
 Approval check:
 
-- Price tag is visually dominant.
-- Hidden future tags are readable but secondary.
-- WIT should be tempted by the price before he notices the small tags.
-- The section ends with a clear return to the recurring motif.
+- The visible price should dominate the frame first.
+- Hidden future tags should appear only after WIT is tempted.
+- `future cost` and `tomorrow` need visual repetition.
+- Keep the company incentive language careful, not accusatory.
 
 Voice revision notes:
 
-- Give `The visible price wins` a section-signpost delivery.
-- `Hello, I am the replacement...` should sound like a fake polite object.
-- Avoid making `companies compete` sound accusatory.
+- `The price tag speaks first` should feel like a clean section signpost.
+- The fake replacement quote should sound politely disturbing.
+- Pause before `Sometimes that something is tomorrow`.
 
-## Section 4: The Future Gets Removed
+## Section 4: The Boring Parts Disappear
 
-Estimated time: `1:51-2:43`
+Estimated time: `1:49-2:39`
 
-Words: `138`
+Words: `126`
 
 Purpose:
-Turn the abstract idea into physical missing pieces: material, testing, stronger parts, and support.
+Turn the abstract idea of quality decline into physical missing parts.
 
 Visual goal:
-A product cutaway shows removable pieces labeled `thicker fabric`, `metal part`, `testing time`, `spare parts`, `long support`. A red hand removes them one by one while the outside still looks normal.
+A product cutaway shows small removable pieces: `thicker fabric`, `strong hinge`, `testing time`, `spare part`, `long support`. A red hand removes them while the outside still looks normal.
 
 Narration:
 
 ```text
-The future of a product is not magic.
+The future of a product is usually not exciting.
 
-It is usually very boring things.
+It is boring things.
 
-Better material. Stronger stitching. A metal part instead of a plastic one. A battery that can be replaced. A manual that exists. A screw that is not from a secret civilization.
+Thicker fabric.
 
-These things do not always make the product look more exciting on the shelf.
+Stronger stitching.
 
-Nobody walks into a store and says, "Wow, look at the long-term availability of spare parts."
+A hinge that does not act surprised by movement.
 
-That person exists, but they are probably already fixing a printer.
+A battery you can replace.
 
-Most people see the color, the shape, the price, and whether it can arrive tomorrow.
+A screw that uses a normal screwdriver instead of a secret handshake.
 
-So when the market wants products to be cheaper, faster, and newer all the time, the boring future pieces become easy to cut.
+A spare part that still exists after the product leaves the factory.
+
+These things are not very glamorous.
+
+Nobody walks into a store and whispers, "Wow. Look at the long-term availability of replacement parts."
+
+That person exists, but they are probably already repairing a printer.
+
+Most people see the shape, the color, the price, and whether the product can arrive tomorrow.
+
+So the boring future pieces are easy to hide.
 
 The product still looks complete.
 
-It just has less tomorrow built into it.
+It just has less future built into it.
 ```
 
 Approval check:
 
-- Missing pieces should feel physical, not abstract.
-- Keep the list readable with one or two labels per board.
-- The "secret civilization" screw joke should connect to repairability.
-- End board should land `LESS TOMORROW`.
+- Missing future pieces should look physical, not abstract.
+- Use one or two labels per board so the list stays readable.
+- The screw joke should connect directly to repairability.
+- End with `LESS FUTURE BUILT IN` or a similar short label.
 
 Voice revision notes:
 
-- Slow down on the list of future pieces.
-- The printer joke should be a quick aside, not a tangent.
+- Slow the list of future pieces so each object can appear cleanly.
+- The printer joke should stay as one dry aside.
 
-## Section 5: Features Replace Durability
+## Section 5: More Features, More Tiny Deaths
 
-Estimated time: `2:43-3:26`
+Estimated time: `2:39-3:23`
 
-Words: `115`
+Words: `111`
 
 Purpose:
-Explain how modern products can get more features while becoming more fragile or harder to maintain.
+Explain how products can gain features while becoming more fragile or harder to maintain.
 
 Visual goal:
-Simple old appliance labeled `boring but alive` beside modern appliance covered in buttons, app icons, tiny boards, and one nervous ice cube.
+Simple appliance labeled `boring but alive` beside a modern appliance covered in screens, sensors, water lines, app icons, and one crying ice cube.
 
 Narration:
 
 ```text
-The second reason is that products are getting more complicated.
+The second reason is that products can get more complicated.
 
-This is not always bad.
+This is not automatically bad.
 
-Some features are useful. A better battery is useful. A safer appliance is useful. A phone that survives normal life is useful, especially if your normal life includes gravity.
+Useful features are useful.
+
+A safer appliance is good.
+
+A better battery is good.
+
+A phone that survives gravity is basically a public service.
 
 But every extra feature is also one more thing that can break.
 
-A simple fridge has a cold box job.
+A simple fridge has one main job:
+
+be cold.
 
 A modern fridge may have screens, sensors, water lines, ice dispensers, software, and opinions.
 
-At some point, the product is not only a product.
+At some point, the product is not just a product.
 
 It is a small technology committee living in your kitchen.
 
@@ -274,36 +310,42 @@ And when one tiny part fails, the whole thing can become harder and more expensi
 
 Approval check:
 
-- Make the old/simple versus new/complex contrast clear without nostalgia.
-- Do not say old products were always better.
-- The "technology committee" joke should be visible through too many feature labels.
+- Make `more features` different from `better product`.
+- Do not imply old products were always better.
+- The technology committee joke should be visible through too many labels.
 - WIT should look overwhelmed, not anti-technology.
 
 Voice revision notes:
 
-- Keep `This is not always bad` sincere and clear.
+- Keep `This is not automatically bad` sincere.
 - Put a small pause before `and opinions`.
 
-## Section 6: Repair Becomes A Door With Locks
+## Section 6: Repair Gets A Security System
 
-Estimated time: `3:26-4:30`
+Estimated time: `3:23-4:19`
 
-Words: `171`
+Words: `141`
 
 Purpose:
-Show why products feel disposable when repair is slow, costly, blocked, or not worth it.
+Show repair barriers and explain `repairability` in simple English.
 
 Visual goal:
-WIT tries to open a repair door. Locks appear: `parts`, `tools`, `manual`, `software`, `repair cost`. Behind the door is a tiny receipt almost as big as a new product box.
+WIT tries to open a door labeled `REPAIR`. Locks appear: `parts`, `tools`, `manual`, `software`, `repair cost`. Behind the door is a repair bill almost as big as a new product box.
 
 Narration:
 
 ```text
 The third reason is repair.
 
-A product feels more disposable when fixing it becomes harder than replacing it.
+A product feels disposable when fixing it becomes harder than replacing it.
 
-Sometimes the part is not available. Sometimes the tool is special. Sometimes the manual is hidden. Sometimes the repair costs almost as much as buying a new one.
+Sometimes the part is not available.
+
+Sometimes the tool is special.
+
+Sometimes the manual is missing.
+
+Sometimes the repair costs almost as much as buying a new one.
 
 And sometimes the product looks at you and says, "You own me, but not enough to open me."
 
@@ -313,101 +355,149 @@ This is why repairability matters.
 
 Repairability just means how easy something is to fix.
 
-Can you replace the battery? Can you buy the part? Can a local repair shop understand the product without needing a mysterious machine from a locked room?
+Can you replace the battery?
 
-Some governments now even require repair information, battery durability, spare parts, or repairability labels for certain products.
+Can you buy the part?
 
-That is basically society looking at a phone and saying, "Please have a future."
+Can a local repair shop understand the product without needing a mysterious machine in a locked room?
 
-Because if repair is slow, confusing, or too expensive, the buyer gets pushed toward replacement.
+Some governments now treat repair information, spare parts, battery life, and repairability labels as things worth requiring for certain products.
 
-Not because they love waste.
+That is basically society looking at a phone and saying:
 
-Because the product made repair feel like a side quest with paperwork.
+"Please have a future."
 ```
 
 Approval check:
 
-- Define `repairability` simply on screen.
-- Use generic locks and fake UI, no real brand UI.
-- The government/policy mention should be brief and not become the main story.
+- Define `repairability` on screen in plain English.
+- Use generic locks, generic products, and fake UI only.
+- The policy mention should be one quick proof beat, not the main story.
 - WIT should feel locked out of his own object.
 
 Voice revision notes:
 
-- Slow down for the repairability definition.
-- `Please have a future` should be dry but slightly warmer.
-- Keep the final "side quest" line simple enough for learners.
+- Slow down for the definition of `repairability`.
+- `Please have a future` should land warmer and slightly deadpan.
 
-## Section 7: Payoff
+## Section 7: Replacement Becomes Normal
 
-Estimated time: `4:30-5:25`
+Estimated time: `4:19-4:57`
 
-Words: `145`
+Words: `96`
 
 Purpose:
-Land the final insight and return to the hidden future cost.
+Explain why replacement can become the default even when the buyer dislikes waste.
 
 Visual goal:
-The original price tag transforms into a real-cost receipt: `price now + replacement + repair pain + time + frustration`. WIT holds the product, now labeled `not always a bargain`.
+Old product only needs one tiny part. New product box stands beside it with a bright `buy again` sticker. WIT compares a repair receipt and a new-product receipt.
+
+Narration:
+
+```text
+When repair gets slow, confusing, or expensive, replacement starts looking normal.
+
+Not because people love throwing things away.
+
+Most people do not wake up and say, "Today I would like to create a small landfill with my headphones."
+
+They replace things because the system makes replacement feel easier.
+
+The repair quote is high.
+
+The spare part is missing.
+
+The product is already out of support.
+
+The new one arrives tomorrow.
+
+So WIT buys the product again.
+
+The price tag smiles again.
+
+The receipt prints again.
+
+And the cheap product quietly becomes a subscription with extra steps.
+```
+
+Approval check:
+
+- Do not blame the buyer for replacing the product.
+- `not because people love waste` should be visually clear.
+- The receipt-printing loop should bring back the recurring motif.
+- `subscription with extra steps` should be a dry section-ending joke, not the main claim.
+
+Voice revision notes:
+
+- Keep the landfill joke simple and visual.
+- Give the receipt loop enough space to read.
+
+## Section 8: Payoff
+
+Estimated time: `4:57-5:45`
+
+Words: `114`
+
+Purpose:
+Land the final insight and return to the title.
+
+Visual goal:
+The original price tag becomes a real-cost receipt: `price now + replacement + repair pain + time + frustration`. WIT writes one final question on the product: `HOW MUCH FUTURE?`
 
 Narration:
 
 ```text
 So why do cheap products keep getting worse?
 
-Not because cheap automatically means bad.
+Not because cheap always means bad.
 
-And not because every product is secretly designed to betray you in your kitchen.
+And not because every product is secretly planning to betray you.
 
-The better answer is that modern products are under pressure to win the visible price.
+The better answer is that modern products are under pressure to win the price you see today.
 
-So the invisible future becomes negotiable.
+So the future you do not see becomes easier to cut.
 
-The material gets thinner. The design gets more complicated. The repair gets harder. The replacement becomes normal.
+The real price is not only what you pay at checkout.
 
-And the buyer only discovers the real price after the product has already joined the household.
+It is also how long the thing works, how easy it is to fix, and how soon you have to buy it again.
 
-This is the uncomfortable part:
+So the next time something looks like a bargain, the better question is not only:
 
-the cheapest product is not always the one with the lowest price.
+"How much does this cost?"
 
-Sometimes the cheapest product is the one you do not have to buy again immediately.
-
-So maybe the next time a product looks like a bargain, the question is not only, "How much does this cost today?"
-
-The better question is:
+It is:
 
 "How much future is included?"
 ```
 
 Approval check:
 
-- Final claim must stay careful: `not always`, `can`, `sometimes`.
-- Bring back `future included` as the clean final idea.
-- The ending should feel calmer than the hook.
+- Final claim must keep careful words: `not always`, `can`, `some`, `sometimes`.
+- Bring back the original product and `future not included`.
+- The ending should be calmer than the hook.
 - WIT should look wiser and mildly annoyed, not triumphant.
 
 Voice revision notes:
 
-- Slow down from `This is the uncomfortable part`.
-- Final question should get a clean hold.
+- Slow down after `The real price is not only what you pay at checkout`.
+- Hold the final question long enough for the label to read.
 
 ## Claim Safety Notes
 
 ### Safe Claims
 
 - Cheap does not always mean bad, and expensive does not always mean durable.
-- Product quality can be affected by material choices, production speed, design complexity, repair access, and price competition.
-- Repairability is a real consumer and policy issue, especially for electronics and appliances.
-- Some modern products are harder or less economical to repair because parts, tools, diagnostics, software, or repair information may be limited.
+- Product quality can be affected by material choices, production speed, design complexity, repair access, spare parts, support, testing, and price competition.
+- Repairability is a real consumer and policy issue, especially for electronics, appliances, phones, and tablets.
+- Some products can be harder or less economical to repair because parts, tools, diagnostics, software, manuals, or repair information may be limited.
 - Fast replacement cycles can encourage products that are used for shorter periods.
 
 ### Inferences Used Carefully
 
-- `Pieces of the future get removed` is a metaphor for durability, repairability, spare parts, software support, testing, and long-term usefulness.
-- `The visible price wins` is a synthesis from the research pack, not a single quoted source.
-- `Replacement becomes normal` is used as a broad behavioral pattern, not a claim about every product category.
+- `Future not included` is a metaphor for durability, repairability, spare parts, software support, testing, and long-term usefulness.
+- `The price tag speaks first` is a synthesis from the research pack, not a quoted source.
+- `Replacement becomes normal` is used as a broad behavior pattern, not a claim about every product category.
+- `Subscription with extra steps` is a joke about repeated replacement, not a literal business-model claim.
 
 ### Claims Avoided
 
@@ -416,18 +506,20 @@ Voice revision notes:
 - Avoid accusing specific brands.
 - Avoid saying old products were always better.
 - Avoid saying repair is always the correct choice.
-- Avoid using exact statistics from blocked sources.
+- Avoid using exact statistics from blocked or uninspected sources.
+- Avoid making the script a pure sustainability documentary instead of a consumer-life explainer.
 
 ## English Learner Notes
 
 - Useful words: `cheap`, `affordable`, `durable`, `repair`, `replace`, `warranty`, `quality`, `materials`, `parts`, `support`, `disposable`
-- Useful phrases: `looks like a bargain`, `costs more later`, `built to last`, `easy to repair`, `not worth fixing`, `hidden cost`, `future not included`
-- Terms to explain simply: `repairability` means how easy something is to fix; `planned obsolescence` can be avoided or explained later as products becoming old, broken, unsupported, or unwanted sooner than expected.
+- Useful phrases: `future not included`, `hidden cost`, `built to last`, `easy to repair`, `not worth fixing`, `looks like a bargain`
+- Terms to explain simply: `repairability` means how easy something is to fix; `planned obsolescence` should be avoided in this draft unless the next revision needs it.
+- Repeated learner-friendly contrast: `today` versus `tomorrow`; `price you see` versus `future you do not see`
 - Lines that may need slower delivery:
-  - `Why do so many normal products feel like they have less future inside them?`
-  - `The future of a product is not magic.`
+  - `Why do so many normal products feel like they have less tomorrow inside them?`
   - `Repairability just means how easy something is to fix.`
-  - `The cheapest product is not always the one with the lowest price.`
+  - `The real price is not only what you pay at checkout.`
+  - `"How much future is included?"`
 
 ## Next Step Boundary
 

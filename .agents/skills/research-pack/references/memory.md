@@ -8,12 +8,16 @@ Use this file for lessons about how this skill should select projects, research 
 ## Current Skill Standard
 
 - Select the project before researching.
+- Require a real, non-empty `projects/<slug>/00-topic-intake.md` before researching.
+- If `00-topic-intake.md` is missing or empty, stop and ask the user to run `topic-intake` first.
 - Smart-select a project only when context is clear or exactly one unfinished research-pack candidate exists.
 - Ask the user to choose from unfinished projects when context is unclear.
 - Prefer Codex option UI (`request_user_input` / AskUserOptions style) when available.
 - Browse the web or YouTube every run because research facts and reference signals can change.
 - Prefer the project-local vendored Browse skill at `.agents/skills/browse/`; fall back to global gstack browse only if needed.
 - Write only `projects/<slug>/01-research-pack.md`.
+- When `01-research-pack.md` is created, updated, or rerun, treat `02-09` downstream outputs as stale.
+- Do not delete stale downstream outputs unless the user explicitly asks; otherwise tell the user to rerun downstream skills in order.
 - Do not write script, packaging, visual plan, HyperFrames, voiceover, render, upload, or self-learning files.
 - Treat research as evidence and specificity, not a link dump.
 - Label facts, inferences, examples, and open questions clearly.
@@ -65,6 +69,27 @@ Initial rules:
 - write only `01-research-pack.md`
 - include factual evidence, visual reference leads, English learner support, and safety notes
 - keep skill-specific learning here and promote only reusable channel-wide lessons upward
+
+### 2026-06-06 - Require Topic Intake And Stale Downstream
+
+Classification: `Operational lesson`
+
+Context:
+The user clarified that each skill should require previous pipeline outputs before running, and rerunning an earlier step makes later steps stale.
+
+Lesson:
+`research-pack` must never run from a blank or implied topic. It requires `00-topic-intake.md`. Any research update makes script and later outputs stale.
+
+Apply next time:
+
+- require non-empty `projects/<slug>/00-topic-intake.md`
+- if missing, stop and ask the user to run `topic-intake`
+- after writing `01-research-pack.md`, list stale downstream outputs from `02-script.md` through `09-self-learning.md`
+- do not delete stale files unless the user explicitly asks
+- otherwise tell the user to rerun downstream skills in order, starting with `script-draft`
+
+Promote to shared memory:
+yes, this is a channel-wide pipeline rule.
 
 ## Feedback Entry Template
 
