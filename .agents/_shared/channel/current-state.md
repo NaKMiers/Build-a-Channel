@@ -53,51 +53,51 @@ Practical rule:
 - `.agents/_shared/` stores reusable tools, templates, workflows, shared assets, and production notes
 - `.agents/rules/` stores Codex and future skill operating rules
 - `.agents/skills/` stores executable project-local Codex skills
-- Current project-local skills: `browse` for portable web and YouTube browsing, `topic-intake` for step 1 topic intake, `research-pack` for step 2 evidence packs, and `wiw-take-note` for memory capture
+- Current project-local skills: `browse` for portable web and YouTube browsing, `topic-intake` for step 1 topic intake, `research-pack` for step 2 evidence packs, `script-draft` for step 3 sectioned scripts, and `wiw-take-note` for memory capture
 - HyperFrames is the default renderer for new and active video production
 - Active HyperFrames source lives inside each video folder at `projects/<slug>/hyperframes/`
 - HyperFrames should prioritize simple board scenes, WIT poses, voiceover, hard cuts, cue-timed labels, red markup, and handwritten-looking text instead of heavy animation
 - Existing George voiceover files are reused as local HyperFrames audio assets when available
 - First rendered voiceover-only cut exists for `Why Free Apps Are Never Really Free`
-- Current channel-wide narration system: [Narration System](C:\ME\THINGS\Build a Channel\.agents\_shared\voice\narration-system.md)
-- Current script narration markup rules: [Script Markup Guide](C:\ME\THINGS\Build a Channel\.agents\_shared\voice\script-markup-guide.md)
-- Current voice test protocol: [Voice Test Protocol](C:\ME\THINGS\Build a Channel\.agents\_shared\voice\voice-test-protocol.md)
-- Current channel-wide topic angle selection system: [Topic Angle Selection System](C:\ME\THINGS\Build a Channel\.agents\_shared\topic-angle-selection-system.md)
-- Current topic angle quality gate: [Topic Angle Scorecard](C:\ME\THINGS\Build a Channel\.agents\_shared\topic-angle-scorecard.md)
-- Current reusable topic angle template folder: [Topic Angle Scorecards](C:\ME\THINGS\Build a Channel\.agents\_shared\channel\topic-angle-scorecards)
-- Current channel-wide WIT system: [WIT Channel System](C:\ME\THINGS\Build a Channel\.agents\_shared\channel\branding\wit-channel-system.md)
-- Current WIT pose set: [Original WIT 24](C:\ME\THINGS\Build a Channel\.agents\_shared\assets\wit\poses\original-wit-24)
-- Current WIT contact sheet: [Original WIT 24 Contact Sheet](C:\ME\THINGS\Build a Channel\.agents\_shared\assets\wit\poses\original-wit-24\original-wit-24-contact-sheet.png)
-- Superseded WIT comedy layer: [Comedy Core WIT pose set](C:\ME\THINGS\Build a Channel\.agents\_shared\assets\wit\poses\comedy-core)
-- Current channel-wide packaging system: [Thumbnail Packaging System](C:\ME\THINGS\Build a Channel\.agents\_shared\thumbnail-packaging-system.md)
-- Current packaging quality gate: [Packaging Scorecard](C:\ME\THINGS\Build a Channel\.agents\_shared\packaging-scorecard.md)
-- Current thumbnail visual rules: [Thumbnail Visual Rules](C:\ME\THINGS\Build a Channel\.agents\_shared\channel\branding\thumbnail-visual-rules.md)
-- Current reusable thumbnail templates: [Thumbnail Templates](C:\ME\THINGS\Build a Channel\.agents\_shared\thumbnail-templates)
-- Current channel-wide first `10` seconds hook system: [Hook System](C:\ME\THINGS\Build a Channel\.agents\_shared\hook-system.md)
-- Current reusable hook templates and gate: [Hook Templates](C:\ME\THINGS\Build a Channel\.agents\_shared\hook-templates)
-- Current channel-wide reference-board research system: [Reference Board System](C:\ME\THINGS\Build a Channel\.agents\_shared\reference-board-system.md)
-- Current reusable reference-board template: [Reference Boards](C:\ME\THINGS\Build a Channel\.agents\_shared\reference-boards)
-- Current channel-wide real-life visual asset system: [Real-Life Visual Asset System](C:\ME\THINGS\Build a Channel\.agents\_shared\real-life-visual-asset-system.md)
-- Current reusable real-life asset folders: [Real-Life Assets](C:\ME\THINGS\Build a Channel\.agents\_shared\assets\real-life) and [UI Mockups](C:\ME\THINGS\Build a Channel\.agents\_shared\assets\ui-mockups)
-- Current reusable asset source-note template: [Source Note Template](C:\ME\THINGS\Build a Channel\.agents\_shared\assets\source-note-template.md)
-- Current channel-wide comedy asset library: [Comedy Asset Library](C:\ME\THINGS\Build a Channel\.agents\_shared\assets\comedy)
-- Current reusable comedy asset inventory: [Comedy Asset Inventory](C:\ME\THINGS\Build a Channel\.agents\_shared\assets\comedy\asset-inventory.md)
-- Current reusable comedy source-note template: [Comedy Source Note Template](C:\ME\THINGS\Build a Channel\.agents\_shared\assets\comedy\source-note-template.md)
-- Current channel-wide scene grammar system: [Scene Grammar System](C:\ME\THINGS\Build a Channel\.agents\_shared\scene-grammar-system.md)
-- Current channel-wide visual humor patterns: [Visual Humor Patterns](C:\ME\THINGS\Build a Channel\.agents\_shared\visual-humor-patterns.md)
-- Current HyperFrames board grammar and paused-frame review gate: [Board Grammar](C:\ME\THINGS\Build a Channel\.agents\_shared\hyperframes\board-grammar.md)
-- Current channel-wide music and sound system: [Music And Sound System](C:\ME\THINGS\Build a Channel\.agents\_shared\music-and-sound-system.md)
-- Current reusable sound effect rules: [Sound Effects Library](C:\ME\THINGS\Build a Channel\.agents\_shared\sound-effects-library\README.md)
-- Current audio mix quality gate: [Audio Mixing Checklist](C:\ME\THINGS\Build a Channel\.agents\_shared\audio-mixing-checklist.md)
-- Current channel-wide English learner clarity system: [English Learner Clarity System](C:\ME\THINGS\Build a Channel\.agents\_shared\english-learner-clarity-system.md)
-- Current script clarity quality gate: [English Learner Script Checklist](C:\ME\THINGS\Build a Channel\.agents\_shared\english-learner-script-checklist.md)
-- Current visual clarity quality gate: [English Learner Visual Checklist](C:\ME\THINGS\Build a Channel\.agents\_shared\english-learner-visual-checklist.md)
-- Current useful phrase rules: [English Learner Useful Phrase Rules](C:\ME\THINGS\Build a Channel\.agents\_shared\english-learner-useful-phrase-rules.md)
-- Current humor clarity rules: [English Learner Humor Clarity Rules](C:\ME\THINGS\Build a Channel\.agents\_shared\english-learner-humor-clarity-rules.md)
-- Current channel-wide publishing feedback loop: [Publishing Feedback Loop](C:\ME\THINGS\Build a Channel\.agents\_shared\publishing-feedback-loop.md)
-- Current reusable post-upload review template: [Post-Upload Review Template](C:\ME\THINGS\Build a Channel\.agents\_shared\post-upload-review-template.md)
-- Current channel learning rules: [Channel Learning Rules](C:\ME\THINGS\Build a Channel\.agents\_shared\channel-learning-rules.md)
-- Superseded WIT source experiment: [Core 24 funny WIT pose set](C:\ME\THINGS\Build a Channel\.agents\_shared\assets\wit\poses\core-24)
+- Current channel-wide narration system: [Narration System](C:\ME\THINGS\Build a Channel\.agents_shared\voice\narration-system.md)
+- Current script narration markup rules: [Script Markup Guide](C:\ME\THINGS\Build a Channel\.agents_shared\voice\script-markup-guide.md)
+- Current voice test protocol: [Voice Test Protocol](C:\ME\THINGS\Build a Channel\.agents_shared\voice\voice-test-protocol.md)
+- Current channel-wide topic angle selection system: [Topic Angle Selection System](C:\ME\THINGS\Build a Channel\.agents_shared\topic-angle-selection-system.md)
+- Current topic angle quality gate: [Topic Angle Scorecard](C:\ME\THINGS\Build a Channel\.agents_shared\topic-angle-scorecard.md)
+- Current reusable topic angle template folder: [Topic Angle Scorecards](C:\ME\THINGS\Build a Channel\.agents_shared\channel\topic-angle-scorecards)
+- Current channel-wide WIT system: [WIT Channel System](C:\ME\THINGS\Build a Channel\.agents_shared\channel\branding\wit-channel-system.md)
+- Current WIT pose set: [Original WIT 24](C:\ME\THINGS\Build a Channel\.agents_shared\assets\wit\poses\original-wit-24)
+- Current WIT contact sheet: [Original WIT 24 Contact Sheet](C:\ME\THINGS\Build a Channel\.agents_shared\assets\wit\poses\original-wit-24\original-wit-24-contact-sheet.png)
+- Superseded WIT comedy layer: [Comedy Core WIT pose set](C:\ME\THINGS\Build a Channel\.agents_shared\assets\wit\poses\comedy-core)
+- Current channel-wide packaging system: [Thumbnail Packaging System](C:\ME\THINGS\Build a Channel\.agents_shared\thumbnail-packaging-system.md)
+- Current packaging quality gate: [Packaging Scorecard](C:\ME\THINGS\Build a Channel\.agents_shared\packaging-scorecard.md)
+- Current thumbnail visual rules: [Thumbnail Visual Rules](C:\ME\THINGS\Build a Channel\.agents_shared\channel\branding\thumbnail-visual-rules.md)
+- Current reusable thumbnail templates: [Thumbnail Templates](C:\ME\THINGS\Build a Channel\.agents_shared\thumbnail-templates)
+- Current channel-wide first `10` seconds hook system: [Hook System](C:\ME\THINGS\Build a Channel\.agents_shared\hook-system.md)
+- Current reusable hook templates and gate: [Hook Templates](C:\ME\THINGS\Build a Channel\.agents_shared\hook-templates)
+- Current channel-wide reference-board research system: [Reference Board System](C:\ME\THINGS\Build a Channel\.agents_shared\reference-board-system.md)
+- Current reusable reference-board template: [Reference Boards](C:\ME\THINGS\Build a Channel\.agents_shared\reference-boards)
+- Current channel-wide real-life visual asset system: [Real-Life Visual Asset System](C:\ME\THINGS\Build a Channel\.agents_shared\real-life-visual-asset-system.md)
+- Current reusable real-life asset folders: [Real-Life Assets](C:\ME\THINGS\Build a Channel\.agents_shared\assets\real-life) and [UI Mockups](C:\ME\THINGS\Build a Channel\.agents_shared\assets\ui-mockups)
+- Current reusable asset source-note template: [Source Note Template](C:\ME\THINGS\Build a Channel\.agents_shared\assets\source-note-template.md)
+- Current channel-wide comedy asset library: [Comedy Asset Library](C:\ME\THINGS\Build a Channel\.agents_shared\assets\comedy)
+- Current reusable comedy asset inventory: [Comedy Asset Inventory](C:\ME\THINGS\Build a Channel\.agents_shared\assets\comedy\asset-inventory.md)
+- Current reusable comedy source-note template: [Comedy Source Note Template](C:\ME\THINGS\Build a Channel\.agents_shared\assets\comedy\source-note-template.md)
+- Current channel-wide scene grammar system: [Scene Grammar System](C:\ME\THINGS\Build a Channel\.agents_shared\scene-grammar-system.md)
+- Current channel-wide visual humor patterns: [Visual Humor Patterns](C:\ME\THINGS\Build a Channel\.agents_shared\visual-humor-patterns.md)
+- Current HyperFrames board grammar and paused-frame review gate: [Board Grammar](C:\ME\THINGS\Build a Channel\.agents_shared\hyperframes\board-grammar.md)
+- Current channel-wide music and sound system: [Music And Sound System](C:\ME\THINGS\Build a Channel\.agents_shared\music-and-sound-system.md)
+- Current reusable sound effect rules: [Sound Effects Library](C:\ME\THINGS\Build a Channel\.agents_shared\sound-effects-library\README.md)
+- Current audio mix quality gate: [Audio Mixing Checklist](C:\ME\THINGS\Build a Channel\.agents_shared\audio-mixing-checklist.md)
+- Current channel-wide English learner clarity system: [English Learner Clarity System](C:\ME\THINGS\Build a Channel\.agents_shared\english-learner-clarity-system.md)
+- Current script clarity quality gate: [English Learner Script Checklist](C:\ME\THINGS\Build a Channel\.agents_shared\english-learner-script-checklist.md)
+- Current visual clarity quality gate: [English Learner Visual Checklist](C:\ME\THINGS\Build a Channel\.agents_shared\english-learner-visual-checklist.md)
+- Current useful phrase rules: [English Learner Useful Phrase Rules](C:\ME\THINGS\Build a Channel\.agents_shared\english-learner-useful-phrase-rules.md)
+- Current humor clarity rules: [English Learner Humor Clarity Rules](C:\ME\THINGS\Build a Channel\.agents_shared\english-learner-humor-clarity-rules.md)
+- Current channel-wide publishing feedback loop: [Publishing Feedback Loop](C:\ME\THINGS\Build a Channel\.agents_shared\publishing-feedback-loop.md)
+- Current reusable post-upload review template: [Post-Upload Review Template](C:\ME\THINGS\Build a Channel\.agents_shared\post-upload-review-template.md)
+- Current channel learning rules: [Channel Learning Rules](C:\ME\THINGS\Build a Channel\.agents_shared\channel-learning-rules.md)
+- Superseded WIT source experiment: [Core 24 funny WIT pose set](C:\ME\THINGS\Build a Channel\.agents_shared\assets\wit\poses\core-24)
 - Current active video WIT source: `projects/why-everyone-pretends-to-be-busy/assets/wit`
 - Legacy Remotion notes live in `.agents/_shared/remotion/`; HyperFrames remains the active production path.
 
@@ -150,7 +150,7 @@ All new ideas must be treated as:
 - `Experiment`
 - `Reject`
 
-Use [channel-guardrails.md](C:\ME\THINGS\Build a Channel\.agents\_shared\channel\channel-guardrails.md) before persisting new strategy.
+Use [channel-guardrails.md](C:\ME\THINGS\Build a Channel\.agents_shared\channel\channel-guardrails.md) before persisting new strategy.
 
 ## Best Next Steps
 

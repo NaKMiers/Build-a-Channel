@@ -19,6 +19,7 @@
 
 - Step 1 `Topic intake` is implemented by `.agents/skills/topic-intake/`.
 - Step 2 `Research pack` is implemented by `.agents/skills/research-pack/`.
+- Step 3 `Script draft` is implemented by `.agents/skills/script-draft/`.
 - The remaining lifecycle steps do not have executable project-local skills yet.
 
 ## Project Outputs

@@ -95,6 +95,32 @@ Operating rules:
 Scope note:
 no other sequential production skills were created in this pass.
 
+### Script Draft Skill Created
+
+Classification: `Core operational capability`
+
+Created the third sequential project-local video-production skill:
+
+- [Script Draft](C:\ME\THINGS\Build a Channel\.agents\skills\script-draft\SKILL.md)
+
+Purpose:
+turn a selected project's topic intake and research pack into a sectioned working script before voice revision.
+
+Operating rules:
+
+- select or ask for the target project before drafting
+- require both `projects/<slug>/00-topic-intake.md` and `projects/<slug>/01-research-pack.md`
+- read the shared channel brain, hook system, narration system, English learner clarity system, scene grammar, and the skill's own memory
+- use `projects/why-everyone-pretends-to-be-busy/02-script.md` as the current structural reference when available
+- copy the reference script's discipline, not its topic, jokes, or wording
+- write only `projects/<slug>/02-script.md`
+- include section summary, section narration, visual goals, approval checks, claim safety notes, English learner notes, and next-step boundary
+- do not write voiceover, packaging, visual plan, HyperFrames, render, upload, or self-learning files in this skill
+- keep script-draft-specific learning in `.agents/skills/script-draft/references/memory.md`
+
+Scope note:
+no other sequential production skills were created in this pass.
+
 ## 2026-06-05
 
 ### Source Structure Refactor: Agents, Shared Brain, Projects
@@ -195,8 +221,8 @@ Replaced the previous WIT direction with the user-approved `original-wit` charac
 
 Output:
 
-- [Original WIT 24 pose set](C:\ME\THINGS\Build a Channel\.agents\_shared\assets\wit\poses\original-wit-24)
-- [Original WIT 24 contact sheet](C:\ME\THINGS\Build a Channel\.agents\_shared\assets\wit\poses\original-wit-24\original-wit-24-contact-sheet.png)
+- [Original WIT 24 pose set](C:\ME\THINGS\Build a Channel\.agents_shared\assets\wit\poses\original-wit-24)
+- [Original WIT 24 contact sheet](C:\ME\THINGS\Build a Channel\.agents_shared\assets\wit\poses\original-wit-24\original-wit-24-contact-sheet.png)
 
 Direction:
 
@@ -223,9 +249,9 @@ Implemented Plan 14 as a channel-wide publishing feedback loop.
 
 What changed:
 
-- added [Publishing Feedback Loop](C:\ME\THINGS\Build a Channel\.agents\_shared\publishing-feedback-loop.md)
-- added [Post-Upload Review Template](C:\ME\THINGS\Build a Channel\.agents\_shared\post-upload-review-template.md)
-- added [Channel Learning Rules](C:\ME\THINGS\Build a Channel\.agents\_shared\channel-learning-rules.md)
+- added [Publishing Feedback Loop](C:\ME\THINGS\Build a Channel\.agents_shared\publishing-feedback-loop.md)
+- added [Post-Upload Review Template](C:\ME\THINGS\Build a Channel\.agents_shared\post-upload-review-template.md)
+- added [Channel Learning Rules](C:\ME\THINGS\Build a Channel\.agents_shared\channel-learning-rules.md)
 - updated channel foundation, current state, README, common index, Codex collaboration notes, Codex video workflow, pre-production checklist, production quality gate, and final review checklist to route future uploads through the reusable feedback system
 
 Core rule:
@@ -256,9 +282,9 @@ Implemented Plan 13 as a channel-wide topic angle selection upgrade.
 
 What changed:
 
-- added [Topic Angle Selection System](C:\ME\THINGS\Build a Channel\.agents\_shared\topic-angle-selection-system.md)
-- added [Topic Angle Scorecard](C:\ME\THINGS\Build a Channel\.agents\_shared\topic-angle-scorecard.md)
-- added [Topic Angle Scorecards](C:\ME\THINGS\Build a Channel\.agents\_shared\channel\topic-angle-scorecards)
+- added [Topic Angle Selection System](C:\ME\THINGS\Build a Channel\.agents_shared\topic-angle-selection-system.md)
+- added [Topic Angle Scorecard](C:\ME\THINGS\Build a Channel\.agents_shared\topic-angle-scorecard.md)
+- added [Topic Angle Scorecards](C:\ME\THINGS\Build a Channel\.agents_shared\channel\topic-angle-scorecards)
 - updated channel foundation, current state, README, common index, Codex collaboration notes, Codex video workflow, pre-production checklist, and production quality gate to route future topics through angle scoring before scripting
 
 Core rule:
@@ -288,11 +314,11 @@ Implemented Plan 12 as a channel-wide English learner clarity upgrade.
 
 What changed:
 
-- added [English Learner Clarity System](C:\ME\THINGS\Build a Channel\.agents\_shared\english-learner-clarity-system.md)
-- added [English Learner Script Checklist](C:\ME\THINGS\Build a Channel\.agents\_shared\english-learner-script-checklist.md)
-- added [English Learner Visual Checklist](C:\ME\THINGS\Build a Channel\.agents\_shared\english-learner-visual-checklist.md)
-- added [English Learner Useful Phrase Rules](C:\ME\THINGS\Build a Channel\.agents\_shared\english-learner-useful-phrase-rules.md)
-- added [English Learner Humor Clarity Rules](C:\ME\THINGS\Build a Channel\.agents\_shared\english-learner-humor-clarity-rules.md)
+- added [English Learner Clarity System](C:\ME\THINGS\Build a Channel\.agents_shared\english-learner-clarity-system.md)
+- added [English Learner Script Checklist](C:\ME\THINGS\Build a Channel\.agents_shared\english-learner-script-checklist.md)
+- added [English Learner Visual Checklist](C:\ME\THINGS\Build a Channel\.agents_shared\english-learner-visual-checklist.md)
+- added [English Learner Useful Phrase Rules](C:\ME\THINGS\Build a Channel\.agents_shared\english-learner-useful-phrase-rules.md)
+- added [English Learner Humor Clarity Rules](C:\ME\THINGS\Build a Channel\.agents_shared\english-learner-humor-clarity-rules.md)
 - updated the channel foundation, current state, common index, README, Codex collaboration notes, Codex video workflow, script tone system, pre-production checklist, and final review checklist to route future work through the reusable learner clarity system
 
 Core rule:
@@ -322,11 +348,11 @@ Implemented Plan 11 as a channel-wide comedy asset library upgrade.
 
 What changed:
 
-- added [Comedy Asset Library](C:\ME\THINGS\Build a Channel\.agents\_shared\assets\comedy)
-- added [Comedy Asset Inventory](C:\ME\THINGS\Build a Channel\.agents\_shared\assets\comedy\asset-inventory.md)
-- added [Comedy Source Note Template](C:\ME\THINGS\Build a Channel\.agents\_shared\assets\comedy\source-note-template.md)
+- added [Comedy Asset Library](C:\ME\THINGS\Build a Channel\.agents_shared\assets\comedy)
+- added [Comedy Asset Inventory](C:\ME\THINGS\Build a Channel\.agents_shared\assets\comedy\asset-inventory.md)
+- added [Comedy Source Note Template](C:\ME\THINGS\Build a Channel\.agents_shared\assets\comedy\source-note-template.md)
 - added category rules and seed folders for `hidden-payment`, `internet-traps`, `modern-life-pain`, `red-markup`, and `wit-props`
-- added [Comedy Asset Contact Sheets](C:\ME\THINGS\Build a Channel\.agents\_shared\assets\comedy\contact-sheets)
+- added [Comedy Asset Contact Sheets](C:\ME\THINGS\Build a Channel\.agents_shared\assets\comedy\contact-sheets)
 - updated channel foundation, current state, common indexes, Codex collaboration notes, and Codex video workflow to route future videos through the reusable comedy asset system
 
 Core rule:
@@ -355,9 +381,9 @@ Implemented Plan 10 as a channel-wide reference-board and research upgrade.
 
 What changed:
 
-- added [reference-board-system.md](C:\ME\THINGS\Build a Channel\.agents\_shared\reference-board-system.md)
-- added [reference-boards/README.md](C:\ME\THINGS\Build a Channel\.agents\_shared\reference-boards\README.md)
-- added reusable reference-board template folders under [reference-boards/_template](C:\ME\THINGS\Build a Channel\.agents\_shared\reference-boards\_template)
+- added [reference-board-system.md](C:\ME\THINGS\Build a Channel\.agents_shared\reference-board-system.md)
+- added [reference-boards/README.md](C:\ME\THINGS\Build a Channel\.agents_shared\reference-boards\README.md)
+- added reusable reference-board template folders under [reference-boards/_template](C:\ME\THINGS\Build a Channel\.agents_shared\reference-boards_template)
 - updated the channel foundation, current state, common index, README, Codex collaboration notes, and Codex video workflow to route future videos through the reusable reference-board system
 
 Core rule:
@@ -388,9 +414,9 @@ Implemented Plan 08 as a channel-wide music and sound upgrade.
 
 What changed:
 
-- added [music-and-sound-system.md](C:\ME\THINGS\Build a Channel\.agents\_shared\music-and-sound-system.md)
-- added [sound-effects-library/README.md](C:\ME\THINGS\Build a Channel\.agents\_shared\sound-effects-library\README.md)
-- added [audio-mixing-checklist.md](C:\ME\THINGS\Build a Channel\.agents\_shared\audio-mixing-checklist.md)
+- added [music-and-sound-system.md](C:\ME\THINGS\Build a Channel\.agents_shared\music-and-sound-system.md)
+- added [sound-effects-library/README.md](C:\ME\THINGS\Build a Channel\.agents_shared\sound-effects-library\README.md)
+- added [audio-mixing-checklist.md](C:\ME\THINGS\Build a Channel\.agents_shared\audio-mixing-checklist.md)
 - updated the channel foundation, current state, common index, HyperFrames notes, README, Codex collaboration notes, and Codex video workflow to point future videos through the reusable music and sound system
 
 Core rule:
@@ -420,9 +446,9 @@ Implemented Plan 07 as a channel-wide voice and narration upgrade.
 
 What changed:
 
-- added [narration-system.md](C:\ME\THINGS\Build a Channel\.agents\_shared\voice\narration-system.md)
-- added [script-markup-guide.md](C:\ME\THINGS\Build a Channel\.agents\_shared\voice\script-markup-guide.md)
-- added [voice-test-protocol.md](C:\ME\THINGS\Build a Channel\.agents\_shared\voice\voice-test-protocol.md)
+- added [narration-system.md](C:\ME\THINGS\Build a Channel\.agents_shared\voice\narration-system.md)
+- added [script-markup-guide.md](C:\ME\THINGS\Build a Channel\.agents_shared\voice\script-markup-guide.md)
+- added [voice-test-protocol.md](C:\ME\THINGS\Build a Channel\.agents_shared\voice\voice-test-protocol.md)
 - updated the channel foundation, current state, common index, HyperFrames notes, voiceover tool notes, README, Codex collaboration notes, and Codex video workflow to point future videos through the reusable narration system
 
 Core direction:
@@ -453,9 +479,9 @@ Implemented Plan 06 as a channel-wide scene grammar upgrade.
 
 What changed:
 
-- added [scene-grammar-system.md](C:\ME\THINGS\Build a Channel\.agents\_shared\scene-grammar-system.md)
-- added [visual-humor-patterns.md](C:\ME\THINGS\Build a Channel\.agents\_shared\visual-humor-patterns.md)
-- added [board-grammar.md](C:\ME\THINGS\Build a Channel\.agents\_shared\hyperframes\board-grammar.md)
+- added [scene-grammar-system.md](C:\ME\THINGS\Build a Channel\.agents_shared\scene-grammar-system.md)
+- added [visual-humor-patterns.md](C:\ME\THINGS\Build a Channel\.agents_shared\visual-humor-patterns.md)
+- added [board-grammar.md](C:\ME\THINGS\Build a Channel\.agents_shared\hyperframes\board-grammar.md)
 - updated the channel foundation, current state, common index, HyperFrames notes, README, Codex collaboration notes, and Codex video workflow to point future videos through the reusable scene grammar system
 
 Core rule:
@@ -483,10 +509,10 @@ Implemented Plan 05 as a channel-wide real-life visual asset upgrade.
 
 What changed:
 
-- added [real-life-visual-asset-system.md](C:\ME\THINGS\Build a Channel\.agents\_shared\real-life-visual-asset-system.md)
-- added [real-life asset library](C:\ME\THINGS\Build a Channel\.agents\_shared\assets\real-life)
-- added [UI mockup asset library](C:\ME\THINGS\Build a Channel\.agents\_shared\assets\ui-mockups)
-- added [source-note-template.md](C:\ME\THINGS\Build a Channel\.agents\_shared\assets\source-note-template.md)
+- added [real-life-visual-asset-system.md](C:\ME\THINGS\Build a Channel\.agents_shared\real-life-visual-asset-system.md)
+- added [real-life asset library](C:\ME\THINGS\Build a Channel\.agents_shared\assets\real-life)
+- added [UI mockup asset library](C:\ME\THINGS\Build a Channel\.agents_shared\assets\ui-mockups)
+- added [source-note-template.md](C:\ME\THINGS\Build a Channel\.agents_shared\assets\source-note-template.md)
 - updated the channel foundation, current state, common index, README, Codex collaboration notes, and Codex video workflow to point future videos through the reusable asset system
 
 Core rule:
@@ -515,9 +541,9 @@ Implemented Plan 04 as a channel-wide hook upgrade.
 
 What changed:
 
-- added [hook-system.md](C:\ME\THINGS\Build a Channel\.agents\_shared\hook-system.md)
-- added [first-10-seconds-board-template.md](C:\ME\THINGS\Build a Channel\.agents\_shared\hook-templates\first-10-seconds-board-template.md)
-- added [hook-scorecard.md](C:\ME\THINGS\Build a Channel\.agents\_shared\hook-templates\hook-scorecard.md)
+- added [hook-system.md](C:\ME\THINGS\Build a Channel\.agents_shared\hook-system.md)
+- added [first-10-seconds-board-template.md](C:\ME\THINGS\Build a Channel\.agents_shared\hook-templates\first-10-seconds-board-template.md)
+- added [hook-scorecard.md](C:\ME\THINGS\Build a Channel\.agents_shared\hook-templates\hook-scorecard.md)
 - updated the channel foundation, current state, common index, README, and Codex video workflow to point future videos through the reusable hook system
 
 Core rule:
@@ -547,10 +573,10 @@ Implemented Plan 03 as a channel-wide packaging upgrade.
 
 What changed:
 
-- added [thumbnail-packaging-system.md](C:\ME\THINGS\Build a Channel\.agents\_shared\thumbnail-packaging-system.md)
-- added [packaging-scorecard.md](C:\ME\THINGS\Build a Channel\.agents\_shared\packaging-scorecard.md)
-- added [thumbnail-visual-rules.md](C:\ME\THINGS\Build a Channel\.agents\_shared\channel\branding\thumbnail-visual-rules.md)
-- added [thumbnail template folder](C:\ME\THINGS\Build a Channel\.agents\_shared\thumbnail-templates)
+- added [thumbnail-packaging-system.md](C:\ME\THINGS\Build a Channel\.agents_shared\thumbnail-packaging-system.md)
+- added [packaging-scorecard.md](C:\ME\THINGS\Build a Channel\.agents_shared\packaging-scorecard.md)
+- added [thumbnail-visual-rules.md](C:\ME\THINGS\Build a Channel\.agents_shared\channel\branding\thumbnail-visual-rules.md)
+- added [thumbnail template folder](C:\ME\THINGS\Build a Channel\.agents_shared\thumbnail-templates)
 - updated channel foundation and current state to point to the reusable packaging system
 
 Core rule:
@@ -579,10 +605,10 @@ Implemented Plan 01 as a channel-wide WIT upgrade.
 
 What changed:
 
-- added [wit-channel-system.md](C:\ME\THINGS\Build a Channel\.agents\_shared\channel\branding\wit-channel-system.md)
-- added [usage-rules.md](C:\ME\THINGS\Build a Channel\.agents\_shared\assets\wit\usage-rules.md)
-- added [comedy-core pose folder](C:\ME\THINGS\Build a Channel\.agents\_shared\assets\wit\poses\comedy-core)
-- added [comedy-core contact sheet](C:\ME\THINGS\Build a Channel\.agents\_shared\assets\wit\poses\comedy-core\contact-sheet.png)
+- added [wit-channel-system.md](C:\ME\THINGS\Build a Channel\.agents_shared\channel\branding\wit-channel-system.md)
+- added [usage-rules.md](C:\ME\THINGS\Build a Channel\.agents_shared\assets\wit\usage-rules.md)
+- added [comedy-core pose folder](C:\ME\THINGS\Build a Channel\.agents_shared\assets\wit\poses\comedy-core)
+- added [comedy-core contact sheet](C:\ME\THINGS\Build a Channel\.agents_shared\assets\wit\poses\comedy-core\contact-sheet.png)
 - updated the main WIT asset README to point future sessions to the channel-wide WIT system
 - updated the channel foundation and current state with the reusable WIT comedy rule
 
@@ -650,7 +676,7 @@ Created a new reusable voice candidate for `Why It Works` based on the channel v
 
 Output:
 
-- [voice candidate folder](C:\ME\THINGS\Build a Channel\.agents\_shared\voice\why-it-works-permanent-candidate)
+- [voice candidate folder](C:\ME\THINGS\Build a Channel\.agents_shared\voice\why-it-works-permanent-candidate)
 - sample MP3: `why-it-works-michael-dry-clear-sample.mp3`
 
 Direction:
@@ -683,7 +709,7 @@ Classification: `Core`
 Approved default voice:
 
 - Name: `David23`
-- Location: [David23 voice folder](C:\ME\THINGS\Build a Channel\.agents\_shared\voice\david23)
+- Location: [David23 voice folder](C:\ME\THINGS\Build a Channel\.agents_shared\voice\david23)
 - Sample: `.agents/_shared/voice/david23/david23-sample.mp3`
 - Settings: `am_eric`, speed `1.10`, `en-us`
 - Direction: young male narrator around age `23`, clear, bright, fast enough, less raspy, not too deep
@@ -828,7 +854,7 @@ Created a reusable Codex-first video workflow document for the workspace based o
 
 ### Operational Decision
 
-Added [codex-video-workflow.md](C:\ME\THINGS\Build a Channel\.agents\_shared\channel\codex-video-workflow.md) as the main execution reference for turning a topic into:
+Added [codex-video-workflow.md](C:\ME\THINGS\Build a Channel\.agents_shared\channel\codex-video-workflow.md) as the main execution reference for turning a topic into:
 
 - research
 - script drafts
@@ -884,7 +910,7 @@ This remains an `experiment`, not a locked core visual identity decision yet.
 
 Wrote a first concrete character brief for the current leading mascot direction:
 
-- [why-it-works-character.md](C:\ME\THINGS\Build a Channel\.agents\_shared\channel\branding\why-it-works-character.md)
+- [why-it-works-character.md](C:\ME\THINGS\Build a Channel\.agents_shared\channel\branding\why-it-works-character.md)
 
 Working name:
 
@@ -963,9 +989,9 @@ standardized the workspace around per-video project folders and reusable shared 
 Added:
 
 - [projects](C:\ME\THINGS\Build a Channel\projects)
-- [projects/_template](C:\ME\THINGS\Build a Channel\projects\_template)
+- [projects/_template](C:\ME\THINGS\Build a Channel\projects_template)
 - [projects/why-free-apps-never-really-free](C:\ME\THINGS\Build a Channel\projects\why-free-apps-never-really-free)
-- [.agents/_shared](C:\ME\THINGS\Build a Channel\.agents\_shared)
+- [.agents/_shared](C:\ME\THINGS\Build a Channel\.agents_shared)
 
 Why:
 
@@ -1129,8 +1155,8 @@ created a first creator-inspired visual reference for `Wit` / `WIT`.
 
 Output:
 
-- [wit-character-reference-v1.png](C:\ME\THINGS\Build a Channel\.agents\_shared\assets\wit\wit-character-reference-v1.png)
-- [asset notes](C:\ME\THINGS\Build a Channel\.agents\_shared\assets\wit\README.md)
+- [wit-character-reference-v1.png](C:\ME\THINGS\Build a Channel\.agents_shared\assets\wit\wit-character-reference-v1.png)
+- [asset notes](C:\ME\THINGS\Build a Channel\.agents_shared\assets\wit\README.md)
 
 Direction:
 
@@ -1149,8 +1175,8 @@ created a second `Wit` / `WIT` reference using Anh Khoa's real-life photo as the
 
 Output:
 
-- [wit-character-reference-v2.png](C:\ME\THINGS\Build a Channel\.agents\_shared\assets\wit\wit-character-reference-v2.png)
-- [asset notes](C:\ME\THINGS\Build a Channel\.agents\_shared\assets\wit\README.md)
+- [wit-character-reference-v2.png](C:\ME\THINGS\Build a Channel\.agents_shared\assets\wit\wit-character-reference-v2.png)
+- [asset notes](C:\ME\THINGS\Build a Channel\.agents_shared\assets\wit\README.md)
 
 Direction:
 
@@ -1169,8 +1195,8 @@ created a third `Wit` / `WIT` reference by improving the original cute v1 direct
 
 Output:
 
-- [wit-character-reference-v3-cute-short.png](C:\ME\THINGS\Build a Channel\.agents\_shared\assets\wit\wit-character-reference-v3-cute-short.png)
-- [asset notes](C:\ME\THINGS\Build a Channel\.agents\_shared\assets\wit\README.md)
+- [wit-character-reference-v3-cute-short.png](C:\ME\THINGS\Build a Channel\.agents_shared\assets\wit\wit-character-reference-v3-cute-short.png)
+- [asset notes](C:\ME\THINGS\Build a Channel\.agents_shared\assets\wit\README.md)
 
 Direction:
 
@@ -1192,9 +1218,9 @@ created the first reusable `Core 12` WIT pose set for Remotion production.
 
 Output:
 
-- [pose system](C:\ME\THINGS\Build a Channel\.agents\_shared\assets\wit\pose-system.md)
-- [core-12 pose folder](C:\ME\THINGS\Build a Channel\.agents\_shared\assets\wit\poses\core-12)
-- [core-12 contact sheet](C:\ME\THINGS\Build a Channel\.agents\_shared\assets\wit\poses\core-12\core-12-contact-sheet.png)
+- [pose system](C:\ME\THINGS\Build a Channel\.agents_shared\assets\wit\pose-system.md)
+- [core-12 pose folder](C:\ME\THINGS\Build a Channel\.agents_shared\assets\wit\poses\core-12)
+- [core-12 contact sheet](C:\ME\THINGS\Build a Channel\.agents_shared\assets\wit\poses\core-12\core-12-contact-sheet.png)
 
 What it includes:
 
@@ -1308,8 +1334,8 @@ created and separated a funnier, cuter `Core 24` WIT pose set for channel video 
 
 Output:
 
-- [core-24 pose folder](C:\ME\THINGS\Build a Channel\.agents\_shared\assets\wit\poses\core-24)
-- [core-24 contact sheet](C:\ME\THINGS\Build a Channel\.agents\_shared\assets\wit\poses\core-24\wit-core-24-separated-contact-sheet.png)
+- [core-24 pose folder](C:\ME\THINGS\Build a Channel\.agents_shared\assets\wit\poses\core-24)
+- [core-24 contact sheet](C:\ME\THINGS\Build a Channel\.agents_shared\assets\wit\poses\core-24\wit-core-24-separated-contact-sheet.png)
 
 Direction:
 
