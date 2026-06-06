@@ -2,19 +2,20 @@
 
 This workspace is the long-term memory for the `Why It Works` YouTube channel.
 
-New Codex sessions do **not** have the full prior chat history, so they must rebuild context from the project files before making strategic decisions.
+New Codex sessions do not have the full prior chat history, so they must rebuild context from the project files before making strategic or production decisions.
 
 ## Required Startup Routine
 
 At the start of any new session in this workspace, read these files in order:
 
 1. [README.md](C:\ME\THINGS\Build a Channel\README.md)
-2. [docs/current-state.md](C:\ME\THINGS\Build a Channel\docs\current-state.md)
-3. [docs/channel-foundation.md](C:\ME\THINGS\Build a Channel\docs\channel-foundation.md)
-4. [docs/channel-guardrails.md](C:\ME\THINGS\Build a Channel\docs\channel-guardrails.md)
-5. [docs/reference-channels.md](C:\ME\THINGS\Build a Channel\docs\reference-channels.md)
-6. [docs/learning-log.md](C:\ME\THINGS\Build a Channel\docs\learning-log.md)
-7. [docs/codex-collaboration.md](C:\ME\THINGS\Build a Channel\docs\codex-collaboration.md)
+2. [.agents/rules/README.md](C:\ME\THINGS\Build a Channel\.agents\rules\README.md)
+3. [.agents/_shared/channel/current-state.md](C:\ME\THINGS\Build a Channel\.agents\_shared\channel\current-state.md)
+4. [.agents/_shared/channel/channel-foundation.md](C:\ME\THINGS\Build a Channel\.agents\_shared\channel\channel-foundation.md)
+5. [.agents/_shared/channel/channel-guardrails.md](C:\ME\THINGS\Build a Channel\.agents\_shared\channel\channel-guardrails.md)
+6. [.agents/_shared/channel/reference-channels.md](C:\ME\THINGS\Build a Channel\.agents\_shared\channel\reference-channels.md)
+7. [.agents/_shared/channel/learning-log.md](C:\ME\THINGS\Build a Channel\.agents\_shared\channel\learning-log.md)
+8. [.agents/_shared/channel/codex-collaboration.md](C:\ME\THINGS\Build a Channel\.agents\_shared\channel\codex-collaboration.md)
 
 Do this before:
 
@@ -22,39 +23,41 @@ Do this before:
 - suggesting a pivot
 - writing new persistent notes
 - creating scripts or brand assets that depend on channel identity
+- creating or updating production skills
 
 ## Memory Rules
 
-- Treat the docs as the source of truth, not the current chat alone
-- Preserve prior strategic decisions unless the user explicitly changes them
-- If the current chat conflicts with the docs, pause and clarify before overwriting core decisions
-- Keep new persistent notes short, structured, and reusable
+- Treat `.agents/_shared/` as the channel brain.
+- Treat `projects/<slug>/` as the source of truth for one video's active work.
+- Preserve prior strategic decisions unless the user explicitly changes them.
+- If the current chat conflicts with the shared memory, pause and clarify before overwriting core decisions.
+- Keep new persistent notes short, structured, and reusable.
 
 ## Persistence Rules
 
-Use the project docs intentionally:
+Use the project folders intentionally:
 
-- `video-projects/<slug>/` for active per-video work and production decisions
-- `common/` for reusable tools, templates, local skills, shared assets, and production conventions
-- `docs/channel-foundation.md` for stable strategy
-- `docs/current-state.md` for the latest compact summary
-- `docs/reference-channels.md` for inspiration and benchmarks
-- `docs/learning-log.md` for experiments, lessons, and dated changes
-- `docs/channel-guardrails.md` for safety checks
+- `projects/<slug>/` for active per-video work and production decisions
+- `.agents/_shared/channel/` for stable channel strategy, guardrails, references, current state, and learning log
+- `.agents/_shared/` for reusable production systems, templates, shared assets, tools, voice notes, and workflows
+- `.agents/rules/` for operating rules that Codex and future skills must follow
+- `.agents/skills/` for executable project-local Codex skills only
 
 ## Project-Local Skills
 
 - Use [WIW Take Note](C:\ME\THINGS\Build a Channel\.agents\skills\wiw-take-note\SKILL.md) when the user asks to take note of reviews, remember useful production feedback, or persist lessons that should improve future HyperFrames/video review passes.
+- Do not create the sequential video-production skills until the user explicitly asks for the skill-creation phase.
 
 ## Workspace Boundaries
 
-- One video project belongs in one folder under `video-projects/`
-- Reusable systems belong in `common/`
-- Channel-level strategy and memory belong in `docs/`
-- HyperFrames is now the default video production and rendering path
-- The old Remotion app remains in `remotion-studio/` temporarily for reference; do not delete or edit it unless explicitly asked
+- One video project belongs in one folder under `projects/`.
+- Reusable channel memory belongs in `.agents/_shared/`.
+- Codex and skill rules belong in `.agents/rules/`.
+- Executable skills belong in `.agents/skills/`.
+- HyperFrames is the default video production and rendering path.
+- Legacy Remotion notes live in `.agents/_shared/remotion/`; do not revive, delete, or edit legacy Remotion production unless explicitly asked.
 
-For active videos, write decisions into the relevant `video-projects/<slug>/` file before moving to the next workflow step.
+For active videos, write decisions into the relevant `projects/<slug>/` file before moving to the next workflow step.
 
 ## Safety Gate
 

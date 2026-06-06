@@ -1,6 +1,6 @@
 ---
 name: WIW Take Note
-description: Project-local memory capture for the Why It Works channel. Use when the user invokes $WIW Take Note, asks to take note of reviews, says to remember feedback, or gives useful production/review lessons that should improve future Remotion board videos in this workspace.
+description: Project-local memory capture for the Why It Works channel. Use when the user invokes $WIW Take Note, asks to take note of reviews, says to remember feedback, or gives useful production/review lessons that should improve future HyperFrames board videos in this workspace.
 ---
 
 # WIW Take Note
@@ -15,22 +15,22 @@ This skill is project-local. Use it only inside `C:\ME\THINGS\Build a Channel`.
 
 1. Read the project memory first if it is not already loaded:
    - `README.md`
-   - `docs/current-state.md`
-   - `docs/channel-guardrails.md`
-   - `docs/learning-log.md`
-   - `docs/codex-collaboration.md`
+   - `.agents/_shared/channel/current-state.md`
+   - `.agents/_shared/channel/channel-guardrails.md`
+   - `.agents/_shared/channel/learning-log.md`
+   - `.agents/_shared/channel/codex-collaboration.md`
 
 2. Identify the active scope:
-   - Active video folder comes from `docs/current-state.md`.
-   - Current review notes usually belong in `video-projects/<slug>/06-review.md`.
-   - Reusable lessons belong in `docs/learning-log.md`.
-   - Stable production conventions can also belong in `common/` when they affect future videos, but do not create extra docs unless needed.
+   - Active video folder comes from `.agents/_shared/channel/current-state.md`.
+   - Current review notes usually belong in `projects/<slug>/06-review.md`.
+   - Reusable lessons belong in `.agents/_shared/channel/learning-log.md`.
+   - Stable production conventions can also belong in `.agents/_shared/` when they affect future videos, but do not create extra docs unless needed.
 
 3. Classify the note before writing:
-   - `Operational lesson`: reusable workflow, timing, layout, QA, Remotion, voice-sync, or review-process lesson.
+   - `Operational lesson`: reusable workflow, timing, layout, QA, HyperFrames, voice-sync, or review-process lesson.
    - `Current-video review note`: specific scene, timestamp, composition, or fix for the active video.
    - `Experiment`: uncertain style or production idea that should be tested.
-   - `Core`: only for stable channel identity decisions, and only after checking `docs/channel-guardrails.md`.
+   - `Core`: only for stable channel identity decisions, and only after checking `.agents/_shared/channel/channel-guardrails.md`.
    - `Reject`: do not persist.
 
 4. Write concise notes:
@@ -40,13 +40,13 @@ This skill is project-local. Use it only inside `C:\ME\THINGS\Build a Channel`.
    - Prefer short bullets with the pattern: problem -> rule or fix -> verification expectation.
 
 5. Update both levels when useful:
-   - Add reusable lessons to `docs/learning-log.md` under the current date.
-   - Add active-video checklist items or review decisions to `video-projects/<slug>/06-review.md`.
-   - Update `docs/current-state.md` only when the latest project status actually changes.
+   - Add reusable lessons to `.agents/_shared/channel/learning-log.md` under the current date.
+   - Add active-video checklist items or review decisions to `projects/<slug>/06-review.md`.
+   - Update `.agents/_shared/channel/current-state.md` only when the latest project status actually changes.
 
 ## Review Lessons To Preserve
 
-When recording Remotion board-video reviews, include these checks if relevant:
+When recording HyperFrames board-video reviews, include these checks if relevant:
 
 - Voice sync beats must align to the spoken cue, not only the rough sentence block.
 - If a voice line ends, trim the composition or add a useful visual beat; do not leave dead visual time.
