@@ -1,0 +1,35 @@
+{
+  "video": "Why Cheap Products Keep Getting Worse",
+  "section": {
+    "number": 3,
+    "name": "The Price Tag Speaks First",
+    "folder": "voiceover/section-03-the-price-tag-speaks-first"
+  },
+  "status": "final section voice generated",
+  "voice": {
+    "name": "David23",
+    "id": "am_eric",
+    "speed": 0.84,
+    "language": "en-us",
+    "status": "approved channel voice"
+  },
+  "tool": {
+    "name": "hyperframes tts",
+    "version": "0.6.76",
+    "command": "npx hyperframes@0.6.76 tts voiceover/section-03-the-price-tag-speaks-first/tts-inputs/section-03-the-price-tag-speaks-first-david23-am_eric-0.84.txt --output voiceover/section-03-the-price-tag-speaks-first/scratch-audio/section-03-the-price-tag-speaks-first-david23-am_eric-0.84.mp3 --voice am_eric --speed 0.84 --lang en-us --json"
+  },
+  "outputs": {
+    "cleanScript": "voiceover/section-03-the-price-tag-speaks-first/section-03-the-price-tag-speaks-first-script.txt",
+    "markedScript": "voiceover/section-03-the-price-tag-speaks-first/section-03-the-price-tag-speaks-first-marked-script.md",
+    "ttsInput": "voiceover/section-03-the-price-tag-speaks-first/tts-inputs/section-03-the-price-tag-speaks-first-david23-am_eric-0.84.txt",
+    "audioFile": "voiceover/section-03-the-price-tag-speaks-first/scratch-audio/section-03-the-price-tag-speaks-first-david23-am_eric-0.84.mp3",
+    "durationSeconds": 33.429
+  },
+  "copies": [],
+  "notes": [
+    "Generated with the approved David23 voice direction.",
+    "No scratch fallback voice was used.",
+    "Project has no active HyperFrames asset folder yet, so no preview asset copy was made.",
+    "Future cost and tomorrow should repeat visually during the later section pass."
+  ]
+}

@@ -47,7 +47,7 @@ Current dependency chain:
 |    3 | `packaging`           | `03-packaging.md` and optional `assets/thumbnails/`                       | `00-topic-intake.md`, `01-research-pack.md`          |
 |    4 | `voiceover`           | `04-voiceover.md` and `voiceover/`                                        | `02-script.md`                                       |
 |    5 | `visual-plan`         | `05-visual-plan.md`, `visual-plan/`, optional `assets/visual-references/` | `04-voiceover.md` and selected section voiceover     |
-|    6 | future render skill   | `06-production-board.md`, `hyperframes/`, `renders/`                      | `05-visual-plan.md` and selected section visual plan |
+|    6 | `render`              | `06-production-board.md`, `section-previews/`, `hyperframes/`, `renders/` | `05-visual-plan.md` and selected section visual plan |
 |    7 | future review skill   | `07-review.md`                                                            | rendered or previewable video sections               |
 |    8 | future upload skill   | `08-upload.md`                                                            | approved review                                      |
 |    9 | future learning skill | `09-self-learning.md`                                                     | upload or review results                             |
@@ -80,6 +80,7 @@ Rerunning packaging does not make main pipeline outputs stale.
 - Step 3 `Packaging` side branch is implemented by `.agents/skills/packaging/`.
 - Step 4 `Voiceover` is implemented by `.agents/skills/voiceover/`.
 - Step 5 `Visual plan` is implemented by `.agents/skills/visual-plan/`.
+- Step 6 `Render` is implemented by `.agents/skills/render/`.
 - The remaining lifecycle steps do not have executable project-local skills yet.
 
 ## Section Production Branch
@@ -89,6 +90,8 @@ After `04-voiceover.md`, production can branch by section.
 The `voiceover` skill should ask which script section to generate. It should offer `All` first, then each script section. `All` means generate separate voiceover outputs for every section, not one stitched full-video audio file.
 
 The `visual-plan` skill should follow the same section-first behavior after `04-voiceover.md`. It should ask which section to plan, offer `All` first, and create separate visual-plan outputs for every selected section.
+
+The `render` skill should follow the same section-first behavior after `05-visual-plan.md`. It should ask which section to build, offer `All` first, and create separate HyperFrames preview projects for every selected section.
 
 Per-section voiceover outputs belong in:
 
@@ -114,6 +117,19 @@ The project-level visual-plan index belongs in:
 projects/<slug>/05-visual-plan.md
 ```
 
+Per-section render preview projects belong in:
+
+```text
+projects/<slug>/section-previews/section-XX-kebab-section-name/
+```
+
+Render ports are fixed:
+
+```text
+Unified/final preview -> localhost:1000
+Section N preview -> localhost:1000 + N
+```
+
 ## Project Outputs
 
 Each new video should start from `projects/_template/` and produce:
@@ -131,6 +147,7 @@ Each new video should start from `projects/_template/` and produce:
 - `assets/`
 - `hyperframes/`
 - `renders/`
+- `section-previews/`
 - `visual-plan/`
 - `voiceover/`
 

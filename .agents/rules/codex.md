@@ -24,7 +24,7 @@ Do not use `mcp__claude-in-chrome__*` tools.
 
 `.agents/skills/` stores executable skills only.
 
-`topic-intake`, `research-pack`, `script-draft`, `packaging`, `voiceover`, and `visual-plan` now exist as the first six sequential video-production skills.
+`topic-intake`, `research-pack`, `script-draft`, `packaging`, `voiceover`, `visual-plan`, and `render` now exist as implemented video-production skills.
 
 Before running or updating a sequential skill, enforce `.agents/rules/video-workflow.md`:
 

@@ -1,0 +1,35 @@
+{
+  "video": "Why Cheap Products Keep Getting Worse",
+  "section": {
+    "number": 5,
+    "name": "More Features, More Tiny Deaths",
+    "folder": "voiceover/section-05-more-features-more-tiny-deaths"
+  },
+  "status": "final section voice generated",
+  "voice": {
+    "name": "David23",
+    "id": "am_eric",
+    "speed": 0.84,
+    "language": "en-us",
+    "status": "approved channel voice"
+  },
+  "tool": {
+    "name": "hyperframes tts",
+    "version": "0.6.76",
+    "command": "npx hyperframes@0.6.76 tts voiceover/section-05-more-features-more-tiny-deaths/tts-inputs/section-05-more-features-more-tiny-deaths-david23-am_eric-0.84.txt --output voiceover/section-05-more-features-more-tiny-deaths/scratch-audio/section-05-more-features-more-tiny-deaths-david23-am_eric-0.84.mp3 --voice am_eric --speed 0.84 --lang en-us --json"
+  },
+  "outputs": {
+    "cleanScript": "voiceover/section-05-more-features-more-tiny-deaths/section-05-more-features-more-tiny-deaths-script.txt",
+    "markedScript": "voiceover/section-05-more-features-more-tiny-deaths/section-05-more-features-more-tiny-deaths-marked-script.md",
+    "ttsInput": "voiceover/section-05-more-features-more-tiny-deaths/tts-inputs/section-05-more-features-more-tiny-deaths-david23-am_eric-0.84.txt",
+    "audioFile": "voiceover/section-05-more-features-more-tiny-deaths/scratch-audio/section-05-more-features-more-tiny-deaths-david23-am_eric-0.84.mp3",
+    "durationSeconds": 34.645
+  },
+  "copies": [],
+  "notes": [
+    "Generated with the approved David23 voice direction.",
+    "No scratch fallback voice was used.",
+    "Project has no active HyperFrames asset folder yet, so no preview asset copy was made.",
+    "The later visual pass should make WIT overwhelmed by too many features, not anti-technology."
+  ]
+}

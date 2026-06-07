@@ -119,7 +119,7 @@ For every research pack, collect enough sources to support script writing:
 
 - `5-8` factual or explanatory sources from credible outlets, official pages, research papers, consumer organizations, company docs, industry reports, or reputable explainers
 - `2-4` YouTube/video references with visible demand, packaging, structure, or risk signals
-- `10-20` visual/reference-board leads as descriptions and source links, not copied assets
+- `10-20` visual/reference-board leads as descriptions and source links, with real internet image leads prioritized when the topic has real-world objects
 
 If browsing fails, write `Reference confidence: low`, record what failed, and do not invent source details.
 
@@ -158,6 +158,7 @@ Prefer:
 
 - simple facts
 - concrete objects
+- real object/material/image leads with source pages and visible license/source status
 - credible explanations
 - safe generic examples
 - self-made or mockup-ready visual ideas
@@ -232,11 +233,13 @@ Do not delete downstream files unless the user explicitly asks for removal.
 7. Browse YouTube for adjacent high-view or high-signal references.
 8. Gather visual/reference-board leads:
    - real-life objects
+   - real internet image leads that make the topic feel close to the viewer
    - UI or paper evidence
    - visual metaphors
    - thumbnail tension
    - WIT emotions
    - color and contrast
+   - source/license notes when visible
 9. Convert research into a simple explanation spine:
    - hook evidence
    - reframe

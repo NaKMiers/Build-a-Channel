@@ -33,6 +33,8 @@ Source files:
 - Main motif:
 - WIT role:
 - Real-life texture:
+- Editor intent:
+- Reference standard:
 - Red markup style:
 - Motion rule:
 
@@ -93,19 +95,33 @@ Status:
 - Main visual metaphor:
 - WIT emotional path:
 - Real-life texture:
+- Real image references:
 - Generated/support assets:
+- Viewer attention strategy:
+- Retention risk:
+- Visual fix:
 - Red markup:
 - Motion rule:
 
+## Scene What-When-How Plan
+
+| Scene | Local Time | What Appears | When / Voice Cue | How It Shows Or Changes | Why It Holds Attention | Reference Basis |
+|---|---:|---|---|---|---|---|
+
 ## Board Plan
 
-| Board | Approx Local Time | Script Beat | Visual Job | Visual | WIT Action | On-Screen Text | Asset Need | Motion / Timing Notes |
-|---|---:|---|---|---|---|---|---|---|
+| Board | Approx Local Time | Script Beat | Visual Job | Visual | WIT Action | On-Screen Text | Asset Need | Motion / Timing Notes | Attention / Joke Beat |
+|---|---:|---|---|---|---|---|---|---|---|
 
 ## Reference And Asset Plan
 
-| Asset | Type | Source / Status | Use | Safety |
-|---|---|---|---|---|
+| Asset | Type | Source / Status | Use | Safety | Saved Path / Prompt |
+|---|---|---|---|---|---|
+
+## Visual Resource Usage Map
+
+| Resource | Used In Boards | What It Supplies | When It Appears | Where On Screen / Crop | How It Is Used | Production Decision |
+|---|---|---|---|---|---|---|
 
 ## HyperFrames Guidance
 
@@ -116,10 +132,15 @@ Status:
 - Text style:
 - Asset paths:
 - Audio sync notes:
+- Build risks:
+- Must not invent:
 
 ## Approval Checks
 
+- visual reference pass completed:
+- what/when/how clear:
 - one thought per board:
+- attention reason per board:
 - label readable:
 - WIT has a clear job:
 - real-life asset explains, not decorates:
@@ -133,12 +154,22 @@ Status:
 ````markdown
 # Section X Reference Board
 
+## Reference Pass Status
+
+- Status:
+- Browsed references:
+- Real images saved:
+- Generated images:
+- Inspected local assets:
+- Prompt-only fallbacks:
+- Fallback reason:
+
 ## Search / Browse Notes
 
 ## References
 
-| Ref | Type | Source | Classification | Why useful | Use in production |
-|---|---|---|---|---|---|
+| Ref | Type | Source | Classification | Why useful | Attention / editor use | Use in production | Saved path |
+|---|---|---|---|---|---|---|---|
 
 ## Image Generation Prompts
 
@@ -182,6 +213,8 @@ Status:
 - Main motif:
 - WIT emotion:
 - Key labels:
+- Reference pass:
+- Key assets:
 - HyperFrames readiness:
 ````
 
@@ -206,6 +239,10 @@ Notes:
 - <line 1>
 - <line 2>
 - <line 3>
+
+Visual reference pass:
+
+- <browsed/generated/local/prompt-only status>
 
 Stale downstream:
 

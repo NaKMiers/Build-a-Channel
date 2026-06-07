@@ -1,0 +1,35 @@
+{
+  "video": "Why Cheap Products Keep Getting Worse",
+  "section": {
+    "number": 6,
+    "name": "Repair Gets A Security System",
+    "folder": "voiceover/section-06-repair-gets-a-security-system"
+  },
+  "status": "final section voice generated",
+  "voice": {
+    "name": "David23",
+    "id": "am_eric",
+    "speed": 0.84,
+    "language": "en-us",
+    "status": "approved channel voice"
+  },
+  "tool": {
+    "name": "hyperframes tts",
+    "version": "0.6.76",
+    "command": "npx hyperframes@0.6.76 tts voiceover/section-06-repair-gets-a-security-system/tts-inputs/section-06-repair-gets-a-security-system-david23-am_eric-0.84.txt --output voiceover/section-06-repair-gets-a-security-system/scratch-audio/section-06-repair-gets-a-security-system-david23-am_eric-0.84.mp3 --voice am_eric --speed 0.84 --lang en-us --json"
+  },
+  "outputs": {
+    "cleanScript": "voiceover/section-06-repair-gets-a-security-system/section-06-repair-gets-a-security-system-script.txt",
+    "markedScript": "voiceover/section-06-repair-gets-a-security-system/section-06-repair-gets-a-security-system-marked-script.md",
+    "ttsInput": "voiceover/section-06-repair-gets-a-security-system/tts-inputs/section-06-repair-gets-a-security-system-david23-am_eric-0.84.txt",
+    "audioFile": "voiceover/section-06-repair-gets-a-security-system/scratch-audio/section-06-repair-gets-a-security-system-david23-am_eric-0.84.mp3",
+    "durationSeconds": 42.816
+  },
+  "copies": [],
+  "notes": [
+    "Generated with the approved David23 voice direction.",
+    "No scratch fallback voice was used.",
+    "Project has no active HyperFrames asset folder yet, so no preview asset copy was made.",
+    "The later visual pass should define repairability in plain English and keep the policy mention as a quick proof beat."
+  ]
+}

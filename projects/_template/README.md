@@ -38,6 +38,7 @@ Production order keeps script before packaging. Packaging can still run from top
 assets/
 hyperframes/
 renders/
+section-previews/
 voiceover/
 visual-plan/
 ```

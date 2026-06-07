@@ -158,7 +158,11 @@ Each thumbnail must have:
 - risk
 - decision
 
-Use image generation when an image generation tool is available. Save generated thumbnails or returned image references under `assets/thumbnails/` when the environment supports saving them.
+Before generating thumbnail images, use the research pack's real visual/reference leads when available. Real objects and real internet-image references should define the thumbnail's material, lighting, prop choice, and viewer closeness.
+
+Use image generation when an image generation tool is available to create controlled, brand-safe thumbnail outputs. Save generated thumbnails or returned image references under `assets/thumbnails/` when the environment supports saving them.
+
+Generated thumbnail images should be treated as controlled outputs informed by real references, not replacements for doing the real-reference thinking.
 
 If image generation is unavailable, still create the `5` production-ready prompts and mark each image status as `prompt only / image not generated`. Do not pretend images were created.
 
@@ -203,6 +207,7 @@ Thumbnail concepts should use:
 
 - `1280 x 720`
 - one dominant object
+- real object/material texture from research references when available
 - one visual contradiction
 - WIT as viewer emotion, not presenter
 - the current approved or pending channel WIT direction, not an accidental unrelated character

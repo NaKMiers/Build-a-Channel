@@ -1,39 +1,40 @@
 # 06 Production Board
 
-## Build Scope
+Video: `<title>`
 
-- Composition:
-- Target runtime:
-- Section strategy:
-- Preview strategy:
+Status: `not started`
 
-## Board Plan
+Source skill: `render`
 
-| Board ID | Start | Duration | Narration Cue | On-Screen Text | Visual | Assets |
-|---|---:|---:|---|---|---|---|
-|  |  |  |  |  |  |  |
+Source files:
 
-## Asset Plan
+- `02-script.md`
+- `04-voiceover.md`
+- `05-visual-plan.md`
 
-- WIT poses:
-- Real-life images:
-- Generated images:
-- UI mockups:
-- Music:
-- Sound effects:
+## Port Map
 
-## HyperFrames Notes
+| Target | Port | Studio URL | Direct Composition URL | Status |
+|---|---:|---|---|---|
+| Unified preview | 1000 |  |  | reserved |
 
-- Source:
-- Preview URL:
-- Direct composition URL:
-- Check command:
-- Render command:
+## Section Render Index
 
-## Build Gate
+| # | Section | Status | Port | Preview project | Source | Checks | Render file | Notes |
+|---:|---|---|---:|---|---|---|---|---|
 
-- Script approved:
-- Voice test approved:
-- Packaging approved:
-- Visual plan approved:
-- Assets available:
+## Shared Asset Rules
+
+- Video-level assets:
+- Section asset junction rule:
+- Attribution file:
+
+## Active Section Notes
+
+## Stale / Regeneration Notes
+
+## Next Step Boundary
+
+Next workflow step: `Review`
+
+Do not continue into review, upload, or learning until the user asks for the next skill or explicitly requests that step.

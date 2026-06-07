@@ -19,6 +19,7 @@ Keep this short. Current rules belong in `current-state.md`, `production-workflo
 - Packaging is a side branch from `research-pack`: it requires only `00-topic-intake.md` and `01-research-pack.md`.
 - Packaging does not block script, voiceover, visual plan, render, review, upload, or learning.
 - After voiceover, production branches by section. `visual-plan` requires the selected section voiceover and creates section-level plans before render.
+- `render` uses one HyperFrames preview project and one localhost per section. Unified/final preview is reserved for `localhost:1000`; section `N` uses `localhost:1000 + N`.
 - Current WIT source is the draft simple white round-headed pose set in `.agents/_shared/assets/wit/poses/`.
 - Do not use the removed older WIT directions as current channel WIT.
 - Default final narrator is `David23 / am_eric / 0.84 / en-us`; test `am_eric` directly before declaring it unavailable.
@@ -31,5 +32,6 @@ Keep this short. Current rules belong in `current-state.md`, `production-workflo
 - During section-by-section HyperFrames production, preview one section per project/port and assemble only after approval.
 - Voice sync comes first: board changes, labels, underlines, and emphasis should land on the spoken cue.
 - Cue-critical visuals must be readable on the cue frame, not merely beginning animation there.
+- Visual references should start from real internet, self-shot, or local images when the topic has real-world objects. Generated images are support, cleanup, or controlled mockups after real texture is understood.
 - Keep only one useful audio preview per voice test unless the user asks for variants.
 - Prototype `45-60s` before building a full rough cut when testing a new visual language.

@@ -25,17 +25,21 @@ This folder stores executable project-local Codex skills.
 - [Visual Plan](visual-plan/SKILL.md)
   Creates step 5 section visual plans, reference boards, and HyperFrames guidance from selected section voiceover output.
 
+- [Render](render/SKILL.md)
+  Creates step 6 section HyperFrames preview projects, fixed localhost previews, production-board status, and optional section renders.
+
 - [WIW Take Note](wiw-take-note/SKILL.md)
   Captures useful review and production feedback into the right project memory files.
 
 ## Remaining Future Skills
 
-`Topic Intake`, `Research Pack`, `Script Draft`, `Voiceover`, and `Visual Plan` are the current main-pipeline video-production skills. `Packaging` is a side-branch skill.
+`Topic Intake`, `Research Pack`, `Script Draft`, `Voiceover`, `Visual Plan`, and `Render` are the current main-pipeline video-production skills. `Packaging` is a side-branch skill.
 
 Pipeline rule:
 
 - each skill requires the previous step output before it runs
-- main pipeline order is `topic-intake -> research-pack -> script-draft -> voiceover -> visual-plan`
+- main pipeline order is `topic-intake -> research-pack -> script-draft -> voiceover -> visual-plan -> render`
+- render uses `localhost:1000` for unified preview and `localhost:1000 + section number` for section previews
 - packaging is a side branch from `research-pack`
 - packaging requires only topic intake and research pack; it does not require script or voiceover
 - packaging does not block main-pipeline steps
@@ -44,9 +48,8 @@ Pipeline rule:
 
 When the user asks for the next skill-creation phase, create the remaining skills for the 10-step lifecycle:
 
-1. Render
-2. review
-3. upload
-4. learning
+1. review
+2. upload
+3. learning
 
 Each future skill should read from `.agents/_shared/`, write to `projects/<slug>/`, and keep skill-specific memory inside its own skill folder when useful.

@@ -44,9 +44,10 @@ Use these compact files instead of the old many-file system:
 - `packaging`: side branch step 3, requires only `00-topic-intake.md` and `01-research-pack.md`, writes `03-packaging.md`
 - `voiceover`: main step 4, writes `04-voiceover.md` and section audio
 - `visual-plan`: main step 5, writes `05-visual-plan.md`, section plans, reference boards, and visual reference assets
+- `render`: main step 6, writes `06-production-board.md`, section HyperFrames previews, review copies, and optional renders
 - `wiw-take-note`: reusable memory capture
 
-Sequential production skills enforce prerequisites. Main pipeline order is `topic-intake -> research-pack -> script-draft -> voiceover -> visual-plan -> render -> review -> upload -> learning`. Packaging is a side branch from `research-pack`; it requires only topic intake and research pack and does not block script, voiceover, visual plan, render, review, upload, or learning. Rerunning an earlier main-pipeline dependency makes downstream main outputs stale until removed by explicit user request or regenerated in order. After voiceover, production branches by section: each section can move through visual plan, render, and review separately.
+Sequential production skills enforce prerequisites. Main pipeline order is `topic-intake -> research-pack -> script-draft -> voiceover -> visual-plan -> render -> review -> upload -> learning`. Packaging is a side branch from `research-pack`; it requires only topic intake and research pack and does not block script, voiceover, visual plan, render, review, upload, or learning. Rerunning an earlier main-pipeline dependency makes downstream main outputs stale until removed by explicit user request or regenerated in order. After voiceover, production branches by section: each section can move through visual plan, render, and review separately. Render uses fixed ports: unified preview on `localhost:1000`, section `N` on `localhost:1000 + N`.
 
 ## Current WIT
 
@@ -76,7 +77,9 @@ Do not use removed `original-wit-24`, older `core-24`, or `comedy-core` WIT as c
 - Section preview rule: review and approve one section at a time; assemble sections only after the user asks
 - Section asset rule: use one video-level shared asset library at `projects/why-everyone-pretends-to-be-busy/assets`; local section `assets` folders should be junctions, not copied media folders
 
-Restart preview URLs when needed:
+Legacy active-project preview URLs when needed:
+
+These belong to the existing `why-everyone-pretends-to-be-busy` work that predates the new `render` skill port rule. Future `render` skill runs should use `localhost:1000` for unified preview and `localhost:1000 + section number` for section previews.
 
 - Section 1 Studio: `http://localhost:3021/#project/section-01-hook`
 - Section 2 Studio: `http://localhost:3022/#project/section-02-reframe`

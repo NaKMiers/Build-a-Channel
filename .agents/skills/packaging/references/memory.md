@@ -18,6 +18,7 @@ Use this file for title taste, thumbnail concept behavior, description format, t
 - In chat responses, include every thumbnail variant with its image/path and full prompt in a copyable fenced block.
 - Include tags, keywords, hashtags, links or placeholders, chapters when useful, and pinned comment ideas.
 - Use the channel rule: thumbnail shows the weird situation; title names the hidden logic.
+- Use real visual/reference leads from the research pack to ground thumbnail material, lighting, props, and viewer closeness before generating controlled thumbnail outputs.
 - Score packages with `.agents/_shared/systems/topic-packaging-hooks.md`.
 - Score all `5` thumbnail variants in a comparison table before recommending one.
 - Prefer simple English and mobile-readable thumbnail labels.
@@ -147,6 +148,26 @@ Apply next time:
 
 Promote to shared memory:
 Yes. This changes the channel-wide character direction.
+
+### 2026-06-07 - Thumbnail Generation Should Be Real-Reference-Informed
+
+Classification: `Packaging lesson`
+
+Context:
+The user clarified that real internet images make video visuals feel closer to viewers than generated images alone.
+
+Lesson:
+Packaging can still generate controlled thumbnail outputs, but concepts should first use real reference leads from the research pack for material, object choice, and lived-in texture. Generated thumbnails should be brand-safe outputs informed by real references, not blind synthetic scenes.
+
+Apply next time:
+
+- read visual/reference leads in `01-research-pack.md`
+- use real object/material references to shape the thumbnail prompt
+- avoid copying real photos directly when source/copyright/logo risk is unclear
+- keep generated outputs clean, branded, and mobile-readable
+
+Promote to shared memory:
+no; shared visual-production rules already contain the channel-wide standard.
 
 ## Feedback Entry Template
 

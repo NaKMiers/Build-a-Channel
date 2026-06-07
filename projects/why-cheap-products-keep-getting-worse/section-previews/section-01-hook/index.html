@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, height=1080">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html,
+      body {
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: #efe7d9;
+      }
+
+      body {
+        color: #181310;
+        font-family: "IBM Plex Mono", monospace;
+      }
+
+      #root {
+        position: relative;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background:
+          radial-gradient(circle at 20% 15%, rgba(255, 247, 234, 0.8), rgba(255, 247, 234, 0) 28%),
+          linear-gradient(180deg, #f3ecdf 0%, #ebe2d2 100%);
+      }
+
+      #root::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image:
+          linear-gradient(rgba(24, 19, 16, 0.032) 1px, rgba(255, 255, 255, 0) 1px),
+          linear-gradient(90deg, rgba(24, 19, 16, 0.025) 1px, rgba(255, 255, 255, 0) 1px);
+        background-size: 70px 70px;
+        pointer-events: none;
+        z-index: 1;
+      }
+
+      .scene {
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        z-index: 2;
+      }
+
+      .scene-base {
+        position: absolute;
+        inset: 58px;
+        overflow: hidden;
+        border: 10px solid rgba(255, 251, 243, 0.95);
+        border-radius: 34px;
+        box-shadow:
+          0 28px 70px rgba(56, 39, 25, 0.24),
+          0 0 0 2px rgba(24, 19, 16, 0.08);
+        background: #f8f1e6;
+      }
+
+      .scene-photo {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: saturate(0.94) contrast(0.98) brightness(1.01);
+      }
+
+      .scene-tint {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, rgba(239, 231, 217, 0.1), rgba(239, 231, 217, 0.22));
+      }
+
+      .scene-tint.strong {
+        background: linear-gradient(180deg, rgba(239, 231, 217, 0.15), rgba(239, 231, 217, 0.34));
+      }
+
+      .grain {
+        position: absolute;
+        inset: 0;
+        opacity: 0.12;
+        mix-blend-mode: multiply;
+        background-image:
+          radial-gradient(circle at 18% 25%, rgba(24, 19, 16, 0.18) 0, rgba(24, 19, 16, 0) 28%),
+          radial-gradient(circle at 86% 30%, rgba(24, 19, 16, 0.08) 0, rgba(24, 19, 16, 0) 25%);
+      }
+
+      .ghost-word {
+        position: absolute;
+        color: rgba(24, 19, 16, 0.32);
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 140px;
+        font-weight: 700;
+        letter-spacing: -0.05em;
+        text-transform: uppercase;
+        pointer-events: none;
+      }
+
+      .label,
+      .sticky,
+      .stamp {
+        position: absolute;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: cursive;
+        line-height: 0.92;
+        z-index: 9;
+      }
+
+      .label {
+        padding: 16px 28px 12px;
+        border: 5px solid #181310;
+        border-radius: 20px;
+        background: rgba(255, 251, 243, 0.97);
+        box-shadow: 10px 12px 0 rgba(24, 19, 16, 0.14);
+        font-size: 68px;
+      }
+
+      .label.yellow {
+        background: #efc63d;
+      }
+
+      .label.blue {
+        background: #d7e4ef;
+      }
+
+      .label.red {
+        color: #ba2d2d;
+        border-color: #ba2d2d;
+        background: #fff2ee;
+      }
+
+      .label.small {
+        padding: 12px 22px 8px;
+        font-size: 44px;
+        border-width: 4px;
+      }
+
+      .sticky {
+        padding: 22px 26px 18px;
+        max-width: 360px;
+        min-height: 140px;
+        border: 4px solid #181310;
+        border-radius: 18px;
+        background: rgba(255, 251, 243, 0.96);
+        box-shadow: 8px 10px 0 rgba(24, 19, 16, 0.13);
+        font-size: 46px;
+      }
+
+      .sticky.yellow {
+        background: rgba(239, 198, 61, 0.96);
+      }
+
+      .sticky.blue {
+        background: rgba(215, 228, 239, 0.98);
+      }
+
+      .stamp {
+        padding: 18px 22px 12px;
+        border: 6px solid #ba2d2d;
+        border-radius: 18px;
+        color: #ba2d2d;
+        background: rgba(255, 247, 242, 0.92);
+        box-shadow: 8px 10px 0 rgba(186, 45, 45, 0.15);
+        font-size: 60px;
+        transform: rotate(-6deg);
+      }
+
+      .mono-tag,
+      .week-card,
+      .evidence-card,
+      .receipt-chip,
+      .confidence-badge {
+        position: absolute;
+        z-index: 8;
+        background: rgba(255, 251, 243, 0.97);
+        border: 4px solid #181310;
+        border-radius: 18px;
+        box-shadow: 8px 10px 0 rgba(24, 19, 16, 0.13);
+      }
+
+      .mono-tag,
+      .receipt-chip {
+        padding: 14px 18px 12px;
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 1;
+        text-transform: uppercase;
+        font-variant-numeric: tabular-nums;
+      }
+
+      .mono-tag.red,
+      .receipt-chip.red {
+        background: rgba(255, 241, 238, 0.98);
+        color: #ba2d2d;
+        border-color: #ba2d2d;
+      }
+
+      .week-card {
+        width: 250px;
+        padding: 18px 20px 16px;
+        background: rgba(215, 228, 239, 0.98);
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 1.1;
+        text-transform: uppercase;
+      }
+
+      .week-card span {
+        display: block;
+      }
+
+      .confidence-badge {
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        background: rgba(239, 198, 61, 0.98);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 24px;
+        font-family: cursive;
+        font-size: 42px;
+        line-height: 0.92;
+      }
+
+      .evidence-card {
+        padding: 16px;
+        width: 420px;
+        background: rgba(255, 251, 243, 0.98);
+      }
+
+      .evidence-card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 14px;
+        display: block;
+        filter: contrast(0.92) saturate(0.88);
+      }
+
+      .evidence-card::after {
+        content: "";
+        position: absolute;
+        inset: 16px;
+        border-radius: 14px;
+        background: linear-gradient(180deg, rgba(255, 248, 238, 0.14), rgba(255, 248, 238, 0.32));
+        pointer-events: none;
+      }
+
+      .wit {
+        position: absolute;
+        z-index: 10;
+        object-fit: contain;
+        filter: drop-shadow(0 18px 22px rgba(24, 19, 16, 0.16));
+      }
+
+      .wit-xl {
+        width: 470px;
+      }
+
+      .wit-lg {
+        width: 380px;
+      }
+
+      .wit-md {
+        width: 320px;
+      }
+
+      .wit-sm {
+        width: 240px;
+      }
+
+      .ring,
+      .question-mark,
+      .scribble,
+      .circle-mark,
+      .arrow-mark,
+      .wobble-mark {
+        position: absolute;
+        z-index: 11;
+        pointer-events: none;
+      }
+
+      .ring {
+        inset: 0;
+        border-radius: 40px;
+        border: 7px solid rgba(239, 198, 61, 0.54);
+        box-shadow: inset 0 0 0 8px rgba(255, 248, 225, 0.42);
+      }
+
+      .question-mark {
+        color: #ba2d2d;
+        font-family: cursive;
+        font-size: 110px;
+        line-height: 1;
+        text-shadow: 6px 7px 0 rgba(24, 19, 16, 0.12);
+      }
+
+      .scribble {
+        width: 240px;
+        height: 40px;
+      }
+
+      .scribble::before,
+      .scribble::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 6px;
+        background: #ba2d2d;
+        border-radius: 999px;
+        transform-origin: left center;
+      }
+
+      .scribble::before {
+        top: 10px;
+        transform: rotate(-7deg);
+      }
+
+      .scribble::after {
+        top: 24px;
+        transform: rotate(9deg);
+      }
+
+      .circle-mark {
+        width: 180px;
+        height: 128px;
+        border: 7px solid #ba2d2d;
+        border-radius: 50%;
+        transform: rotate(-11deg);
+      }
+
+      .arrow-mark {
+        width: 240px;
+        height: 34px;
+      }
+
+      .arrow-mark::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 12px;
+        width: 190px;
+        height: 10px;
+        border-radius: 999px;
+        background: #ba2d2d;
+      }
+
+      .arrow-mark::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 0;
+        height: 0;
+        border-top: 17px solid rgba(0, 0, 0, 0);
+        border-bottom: 17px solid rgba(0, 0, 0, 0);
+        border-left: 44px solid #ba2d2d;
+      }
+
+      .wobble-mark {
+        width: 96px;
+        height: 60px;
+      }
+
+      .wobble-mark::before,
+      .wobble-mark::after {
+        content: "";
+        position: absolute;
+        width: 84px;
+        height: 20px;
+        border: 5px solid #ba2d2d;
+        border-color: #ba2d2d transparent transparent transparent;
+        border-radius: 50%;
+      }
+
+      .wobble-mark::before {
+        top: 4px;
+        left: 0;
+      }
+
+      .wobble-mark::after {
+        top: 24px;
+        left: 10px;
+      }
+
+      .legal-slip {
+        position: absolute;
+        z-index: 8;
+        width: 340px;
+        padding: 18px 22px 16px;
+        border: 4px solid #181310;
+        border-radius: 18px;
+        background: rgba(255, 251, 243, 0.98);
+        box-shadow: 8px 10px 0 rgba(24, 19, 16, 0.12);
+        font-family: "IBM Plex Mono", monospace;
+      }
+
+      .legal-slip h3 {
+        font-size: 28px;
+        line-height: 1;
+        margin-bottom: 12px;
+        text-transform: uppercase;
+      }
+
+      .legal-slip p {
+        font-size: 20px;
+        line-height: 1.25;
+      }
+
+      .cost-stack {
+        position: absolute;
+        z-index: 10;
+        display: grid;
+        gap: 14px;
+      }
+
+      .scene-deal .ghost-word {
+        right: 86px;
+        bottom: 86px;
+      }
+
+      .scene-deal .label-price {
+        left: 116px;
+        top: 132px;
+        transform: rotate(-4deg);
+      }
+
+      .scene-deal .mono-tag {
+        left: 158px;
+        bottom: 178px;
+        background: rgba(239, 198, 61, 0.98);
+      }
+
+      .scene-deal .wit {
+        right: 120px;
+        bottom: 56px;
+      }
+
+      .scene-confidence .label {
+        left: 122px;
+        top: 128px;
+        transform: rotate(2deg);
+      }
+
+      .scene-confidence .confidence-badge {
+        right: 164px;
+        top: 126px;
+        transform: rotate(8deg);
+      }
+
+      .scene-confidence .sticky {
+        left: 132px;
+        bottom: 124px;
+        transform: rotate(-3deg);
+      }
+
+      .scene-confidence .wit {
+        right: 118px;
+        bottom: 54px;
+      }
+
+      .scene-hidden-tag .label {
+        left: 670px;
+        top: 586px;
+        max-width: 460px;
+        transform: rotate(-6deg);
+      }
+
+      .scene-hidden-tag .sticky {
+        left: 114px;
+        top: 136px;
+        transform: rotate(-4deg);
+      }
+
+      .scene-hidden-tag .wit {
+        right: 86px;
+        bottom: 40px;
+      }
+
+      .scene-week .week-card {
+        left: 126px;
+        top: 130px;
+        transform: rotate(-3deg);
+      }
+
+      .scene-week .label {
+        left: 132px;
+        bottom: 146px;
+        transform: rotate(3deg);
+      }
+
+      .scene-week .question-mark {
+        right: 292px;
+        bottom: 120px;
+        transform: rotate(10deg);
+      }
+
+      .scene-week .wit {
+        right: 112px;
+        bottom: 58px;
+      }
+
+      .scene-legal .label {
+        left: 132px;
+        top: 126px;
+        transform: rotate(-4deg);
+      }
+
+      .scene-legal .legal-slip {
+        right: 148px;
+        bottom: 142px;
+        transform: rotate(6deg);
+      }
+
+      .scene-legal .scribble {
+        left: 856px;
+        top: 190px;
+        transform: rotate(10deg);
+      }
+
+      .scene-legal .wit {
+        left: 144px;
+        bottom: 36px;
+      }
+
+      .scene-failure .label {
+        left: 104px;
+        top: 122px;
+        transform: rotate(-5deg);
+      }
+
+      .scene-failure .mono-tag {
+        right: 114px;
+        top: 126px;
+        transform: rotate(4deg);
+      }
+
+      .scene-failure .circle-mark {
+        left: 498px;
+        top: 524px;
+      }
+
+      .scene-failure .arrow-mark {
+        right: 164px;
+        bottom: 264px;
+        transform: rotate(-18deg);
+      }
+
+      .scene-failure .wobble-one {
+        left: 710px;
+        top: 286px;
+        transform: rotate(-16deg);
+      }
+
+      .scene-failure .wobble-two {
+        right: 286px;
+        top: 524px;
+        transform: rotate(26deg);
+      }
+
+      .scene-failure .wit {
+        left: 118px;
+        bottom: 52px;
+      }
+
+      .scene-cost .label {
+        left: 110px;
+        top: 116px;
+        transform: rotate(-5deg);
+      }
+
+      .scene-cost .evidence-card {
+        left: 118px;
+        bottom: 126px;
+        transform: rotate(-4deg);
+      }
+
+      .scene-cost .cost-stack {
+        right: 262px;
+        top: 174px;
+      }
+
+      .scene-cost .receipt-chip.now {
+        transform: rotate(4deg);
+      }
+
+      .scene-cost .receipt-chip.later {
+        transform: rotate(-3deg);
+      }
+
+      .scene-cost .wit {
+        right: 92px;
+        bottom: 42px;
+      }
+
+      .scene-final .sticky {
+        left: 128px;
+        top: 124px;
+        transform: rotate(-3deg);
+      }
+
+      .scene-final .stamp {
+        left: 744px;
+        top: 504px;
+      }
+
+      .scene-final .wit {
+        right: 124px;
+        bottom: 58px;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="Section01Hook"
+      data-start="0"
+      data-duration="21.605"
+      data-width="1920"
+      data-height="1080"
+    >
+      <audio
+        id="voiceover-section-01"
+        data-start="0"
+        data-duration="21.205"
+        data-track-index="10"
+        data-volume="1"
+        src="./assets/voiceover/section-01-hook/scratch-audio/section-01-hook-david23-am_eric-0.84.mp3"
+      ></audio>
+
+      <section id="scene-deal" class="scene scene-deal">
+        <div class="scene-base">
+          <img class="scene-photo" src="./assets/visual-references/section-01-hook/generated/chair-price-tag-deal.png" alt="">
+          <div class="scene-tint"></div>
+          <div class="grain"></div>
+        </div>
+        <div class="label label-price yellow">$9 CHAIR</div>
+        <div class="mono-tag">looks fine now</div>
+        <img class="wit wit-xl" src="./assets/wit/wit-pose-pointing-right.png" alt="">
+      </section>
+
+      <section id="scene-confidence" class="scene scene-confidence">
+        <div class="scene-base">
+          <img class="scene-photo" src="./assets/visual-references/section-01-hook/generated/chair-price-tag-confidence.png" alt="">
+          <div class="scene-tint strong"></div>
+          <div class="grain"></div>
+        </div>
+        <div class="label yellow">LOOKS NORMAL</div>
+        <div class="confidence-badge">premium confidence</div>
+        <div class="sticky blue">four legs. a seat. too much self-belief.</div>
+        <img class="wit wit-lg" src="./assets/wit/wit-pose-awkward-celebration-confidence.png" alt="">
+      </section>
+
+      <section id="scene-hidden-tag" class="scene scene-hidden-tag">
+        <div class="scene-base">
+          <img class="scene-photo" src="./assets/visual-references/section-01-hook/generated/hidden-future-tag-hidden.png" alt="">
+          <div class="scene-tint"></div>
+          <div class="grain"></div>
+        </div>
+        <div class="sticky yellow">So he buys it.</div>
+        <div class="label red">FUTURE NOT INCLUDED</div>
+        <img class="wit wit-sm" src="./assets/wit/wit-pose-awkward-celebration-hidden.png" alt="">
+      </section>
+
+      <section id="scene-week" class="scene scene-week">
+        <div class="scene-base">
+          <img class="scene-photo" src="./assets/visual-references/section-01-hook/generated/chair-price-tag-week.png" alt="">
+          <div class="scene-tint strong"></div>
+          <div class="grain"></div>
+        </div>
+        <div class="week-card">
+          <span>week 1</span>
+          <span>fine</span>
+        </div>
+        <div class="label small blue">everything is fine</div>
+        <div class="question-mark">?</div>
+        <img class="wit wit-lg" src="./assets/wit/wit-pose-neutral-front.png" alt="">
+      </section>
+
+      <section id="scene-legal" class="scene scene-legal">
+        <div class="scene-base">
+          <img class="scene-photo" src="./assets/visual-references/section-01-hook/generated/hidden-future-tag-legal.png" alt="">
+          <div class="scene-tint strong"></div>
+          <div class="grain"></div>
+        </div>
+        <div class="label red">LEGAL ADVICE NOISE</div>
+        <div class="legal-slip">
+          <h3>creak notice</h3>
+          <p>this chair would like to discuss your expectations.</p>
+        </div>
+        <div class="scribble"></div>
+        <img class="wit wit-md" src="./assets/wit/wit-pose-deadpan-side-eye.png" alt="">
+      </section>
+
+      <section id="scene-failure" class="scene scene-failure">
+        <div class="scene-base">
+          <img class="scene-photo" src="./assets/visual-references/section-01-hook/generated/wobbly-leg-loose-screw-generated.png" alt="">
+          <div class="scene-tint"></div>
+          <div class="grain"></div>
+        </div>
+        <div class="label red">ONE LEG: RESIGNING</div>
+        <div class="mono-tag red">seat feels nervous</div>
+        <div class="circle-mark"></div>
+        <div class="arrow-mark"></div>
+        <div class="wobble-mark wobble-one"></div>
+        <div class="wobble-mark wobble-two"></div>
+        <img class="wit wit-md" src="./assets/wit/wit-pose-betrayed.png" alt="">
+      </section>
+
+      <section id="scene-cost" class="scene scene-cost">
+        <div class="scene-base">
+          <img class="scene-photo" src="./assets/visual-references/section-01-hook/generated/price-tag-receipt-generated.png" alt="">
+          <div class="scene-tint strong"></div>
+          <div class="grain"></div>
+        </div>
+        <div class="label yellow">NOT REALLY CHEAP</div>
+        <div class="evidence-card">
+          <img src="./assets/visual-references/section-01-hook/real-world/real-receipt-pexels-towfiqu-barbhuiya.jpg" alt="">
+        </div>
+        <div class="cost-stack">
+          <div class="receipt-chip now">$9 NOW</div>
+          <div class="receipt-chip later red">BUY AGAIN LATER</div>
+        </div>
+        <img class="wit wit-md" src="./assets/wit/wit-pose-holding-receipt-evidence.png" alt="">
+      </section>
+
+      <section id="scene-final" class="scene scene-final">
+        <div class="scene-base">
+          <img class="scene-photo" src="./assets/visual-references/section-01-hook/real-world/real-blank-tag-pexels-padrinan.jpg" alt="">
+          <div class="scene-tint"></div>
+          <div class="grain"></div>
+        </div>
+        <div class="sticky">one small problem</div>
+        <div class="stamp">FUTURE NOT INCLUDED</div>
+        <img class="wit wit-sm" src="./assets/wit/wit-pose-tiny-defeated.png" alt="">
+      </section>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines["Section01Hook"] = tl;
+
+      const sceneStarts = {
+        deal: 0.0,
+        confidence: 2.35,
+        hidden: 4.75,
+        week: 6.7,
+        legal: 9.2,
+        failure: 11.9,
+        cost: 15.9,
+        final: 18.4
+      };
+
+      const sceneIds = [
+        "scene-deal",
+        "scene-confidence",
+        "scene-hidden-tag",
+        "scene-week",
+        "scene-legal",
+        "scene-failure",
+        "scene-cost",
+        "scene-final"
+      ];
+
+      gsap.set(".scene", { opacity: 0 });
+      gsap.set("#scene-deal", { opacity: 1 });
+
+      function openScene(id, at, options) {
+        const {
+          label,
+          note,
+          accent,
+          wit,
+          photo,
+          extra,
+          photoScale = 1.03
+        } = options;
+
+        tl.set(`#${id}`, { opacity: 1, zIndex: 3 }, at - 0.06);
+
+        if (photo) {
+          tl.from(
+            photo,
+            {
+              scale: photoScale,
+              opacity: 0.72,
+              duration: 0.48,
+              ease: "power3.out",
+              overwrite: "auto"
+            },
+            at + 0.12
+          );
+        }
+
+        if (label) {
+          tl.from(
+            label,
+            {
+              x: -58,
+              y: 20,
+              rotation: -12,
+              opacity: 0,
+              duration: 0.34,
+              ease: "expo.out",
+              overwrite: "auto"
+            },
+            at + 0.18
+          );
+        }
+
+        if (note) {
+          tl.from(
+            note,
+            {
+              y: 42,
+              scale: 0.84,
+              opacity: 0,
+              duration: 0.38,
+              ease: "back.out(1.1)",
+              overwrite: "auto"
+            },
+            at + 0.28
+          );
+        }
+
+        if (accent) {
+          tl.from(
+            accent,
+            {
+              scale: 0.45,
+              rotation: -18,
+              opacity: 0,
+              duration: 0.3,
+              ease: "power4.out",
+              overwrite: "auto"
+            },
+            at + 0.32
+          );
+        }
+
+        if (wit) {
+          tl.from(
+            wit,
+            {
+              x: 70,
+              y: 28,
+              opacity: 0,
+              duration: 0.42,
+              ease: "power2.out",
+              overwrite: "auto"
+            },
+            at + 0.24
+          );
+        }
+
+        if (extra) {
+          tl.from(
+            extra,
+            {
+              y: 26,
+              opacity: 0,
+              duration: 0.24,
+              ease: "sine.out",
+              overwrite: "auto"
+            },
+            at + 0.34
+          );
+        }
+      }
+
+      function shiftScene(previousId, nextId, at, mode) {
+        const previous = `#${previousId}`;
+        const next = `#${nextId}`;
+        const base = `${next} .scene-base`;
+        const config = {
+          continuation: {
+            nextFrom: { x: 44, opacity: 0, scale: 0.985 },
+            prevTo: { opacity: 0, x: -22, filter: "blur(6px)" },
+            duration: 0.2,
+            ease: "power3.inOut"
+          },
+          reveal: {
+            nextFrom: { y: 32, opacity: 0, scale: 1.01 },
+            prevTo: { opacity: 0, scale: 1.02, filter: "blur(7px)" },
+            duration: 0.18,
+            ease: "power4.inOut"
+          },
+          reset: {
+            nextFrom: { opacity: 0, scale: 0.975 },
+            prevTo: { opacity: 0, y: -18, filter: "blur(5px)" },
+            duration: 0.18,
+            ease: "sine.inOut"
+          },
+          suspicion: {
+            nextFrom: { x: -34, opacity: 0, scale: 1.015 },
+            prevTo: { opacity: 0, scale: 0.99, filter: "blur(7px)" },
+            duration: 0.2,
+            ease: "power2.inOut"
+          },
+          consequence: {
+            nextFrom: { x: 56, opacity: 0, scale: 1.025 },
+            prevTo: { opacity: 0, x: -26, filter: "blur(8px)" },
+            duration: 0.2,
+            ease: "expo.inOut"
+          },
+          evidence: {
+            nextFrom: { y: 42, opacity: 0, scale: 0.985 },
+            prevTo: { opacity: 0, scale: 1.01, filter: "blur(6px)" },
+            duration: 0.2,
+            ease: "power3.inOut"
+          },
+          payoff: {
+            nextFrom: { opacity: 0, scale: 0.968 },
+            prevTo: { opacity: 0, scale: 1.02, filter: "blur(9px)" },
+            duration: 0.22,
+            ease: "sine.inOut"
+          }
+        }[mode];
+
+        tl.set(next, { opacity: 1, zIndex: 4 }, at - config.duration);
+        tl.fromTo(base, config.nextFrom, { x: 0, y: 0, opacity: 1, scale: 1, duration: config.duration, ease: config.ease, overwrite: "auto" }, at - config.duration);
+        tl.to(`${previous} .scene-base`, { ...config.prevTo, duration: config.duration, ease: config.ease, overwrite: "auto" }, at - config.duration);
+        tl.set(previous, { opacity: 0, zIndex: 2 }, at);
+        tl.set(`${previous} .scene-base`, { clearProps: "filter,transform,opacity" }, at + 0.01);
+      }
+
+      openScene("scene-deal", 0, {
+        label: "#scene-deal .label",
+        note: "#scene-deal .mono-tag",
+        wit: "#scene-deal .wit",
+        photo: "#scene-deal .scene-photo",
+        photoScale: 1.05
+      });
+      tl.to("#scene-deal .scene-photo", { scale: 1.025, duration: 2.0, ease: "none" }, 0.52);
+
+      shiftScene("scene-deal", "scene-confidence", sceneStarts.confidence, "continuation");
+      openScene("scene-confidence", sceneStarts.confidence, {
+        label: "#scene-confidence .label",
+        note: "#scene-confidence .sticky",
+        accent: "#scene-confidence .confidence-badge",
+        wit: "#scene-confidence .wit",
+        photo: "#scene-confidence .scene-photo",
+        photoScale: 1.02
+      });
+      tl.to("#scene-confidence .scene-photo", { scale: 1.02, duration: 1.7, ease: "none" }, 2.9);
+
+      shiftScene("scene-confidence", "scene-hidden-tag", sceneStarts.hidden, "reveal");
+      openScene("scene-hidden-tag", sceneStarts.hidden, {
+        label: "#scene-hidden-tag .label",
+        note: "#scene-hidden-tag .sticky",
+        wit: "#scene-hidden-tag .wit",
+        photo: "#scene-hidden-tag .scene-photo",
+        photoScale: 1.04
+      });
+      tl.from(
+        "#scene-hidden-tag .label",
+        {
+          clipPath: "inset(0 100% 0 0)",
+          duration: 0.42,
+          ease: "power2.out",
+          overwrite: "auto"
+        },
+        5.08
+      );
+
+      shiftScene("scene-hidden-tag", "scene-week", sceneStarts.week, "reset");
+      openScene("scene-week", sceneStarts.week, {
+        label: "#scene-week .label",
+        note: "#scene-week .week-card",
+        accent: "#scene-week .question-mark",
+        wit: "#scene-week .wit",
+        photo: "#scene-week .scene-photo",
+        photoScale: 1.03
+      });
+      tl.to("#scene-week .scene-photo", { scale: 1.014, duration: 1.6, ease: "none" }, 7.15);
+      tl.from(
+        "#scene-week .question-mark",
+        {
+          scale: 0.6,
+          opacity: 0,
+          rotation: -30,
+          duration: 0.24,
+          ease: "back.out(1.4)",
+          overwrite: "auto"
+        },
+        8.42
+      );
+
+      shiftScene("scene-week", "scene-legal", sceneStarts.legal, "suspicion");
+      openScene("scene-legal", sceneStarts.legal, {
+        label: "#scene-legal .label",
+        note: "#scene-legal .legal-slip",
+        accent: "#scene-legal .scribble",
+        wit: "#scene-legal .wit",
+        photo: "#scene-legal .scene-photo",
+        photoScale: 1.04
+      });
+      tl.from(
+        "#scene-legal .legal-slip",
+        {
+          x: 44,
+          y: 38,
+          rotation: 12,
+          opacity: 0,
+          duration: 0.34,
+          ease: "power3.out",
+          overwrite: "auto"
+        },
+        9.82
+      );
+
+      shiftScene("scene-legal", "scene-failure", sceneStarts.failure, "consequence");
+      openScene("scene-failure", sceneStarts.failure, {
+        label: "#scene-failure .label",
+        note: "#scene-failure .mono-tag",
+        wit: "#scene-failure .wit",
+        photo: "#scene-failure .scene-photo",
+        photoScale: 1.03
+      });
+      tl.from(
+        "#scene-failure .circle-mark",
+        {
+          scale: 0.42,
+          opacity: 0,
+          duration: 0.24,
+          ease: "power4.out",
+          overwrite: "auto"
+        },
+        12.08
+      );
+      tl.from(
+        "#scene-failure .wobble-one",
+        {
+          scale: 0.3,
+          opacity: 0,
+          duration: 0.18,
+          ease: "sine.out",
+          overwrite: "auto"
+        },
+        12.82
+      );
+      tl.from(
+        "#scene-failure .wobble-two",
+        {
+          scale: 0.3,
+          opacity: 0,
+          duration: 0.18,
+          ease: "sine.out",
+          overwrite: "auto"
+        },
+        13.48
+      );
+      tl.from(
+        "#scene-failure .arrow-mark",
+        {
+          scaleX: 0,
+          opacity: 0,
+          duration: 0.22,
+          ease: "power2.out",
+          overwrite: "auto",
+          transformOrigin: "left center"
+        },
+        14.18
+      );
+      tl.to(
+        "#scene-failure .scene-photo",
+        {
+          x: 8,
+          y: -5,
+          duration: 0.12,
+          repeat: 3,
+          yoyo: true,
+          ease: "sine.inOut"
+        },
+        13.02
+      );
+
+      shiftScene("scene-failure", "scene-cost", sceneStarts.cost, "evidence");
+      openScene("scene-cost", sceneStarts.cost, {
+        label: "#scene-cost .label",
+        note: "#scene-cost .evidence-card",
+        wit: "#scene-cost .wit",
+        photo: "#scene-cost .scene-photo",
+        photoScale: 1.02
+      });
+      tl.from(
+        "#scene-cost .receipt-chip.now",
+        {
+          x: 44,
+          opacity: 0,
+          duration: 0.22,
+          ease: "power3.out",
+          overwrite: "auto"
+        },
+        16.34
+      );
+      tl.from(
+        "#scene-cost .receipt-chip.later",
+        {
+          x: 58,
+          opacity: 0,
+          duration: 0.26,
+          ease: "expo.out",
+          overwrite: "auto"
+        },
+        16.76
+      );
+
+      shiftScene("scene-cost", "scene-final", sceneStarts.final, "payoff");
+      openScene("scene-final", sceneStarts.final, {
+        note: "#scene-final .sticky",
+        wit: "#scene-final .wit",
+        photo: "#scene-final .scene-photo",
+        photoScale: 1.02
+      });
+      tl.from(
+        "#scene-final .stamp",
+        {
+          scale: 0.52,
+          rotation: -18,
+          opacity: 0,
+          duration: 0.24,
+          ease: "back.out(1.3)",
+          overwrite: "auto"
+        },
+        20.34
+      );
+      tl.to("#scene-final .scene-photo", { scale: 1.012, duration: 1.8, ease: "none" }, 18.82);
+      tl.to("#scene-final", { opacity: 0, duration: 0.14, ease: "sine.in" }, 21.46);
+    </script>
+  </body>
+</html>

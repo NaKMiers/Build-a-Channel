@@ -43,6 +43,7 @@ Current executable steps:
 - `packaging` is a side branch from `research-pack`; it requires `00-topic-intake.md` and `01-research-pack.md`, then writes `03-packaging.md`.
 - `voiceover` requires `02-script.md`, then writes `04-voiceover.md` and section voiceover files.
 - `visual-plan` requires `04-voiceover.md` and selected section voiceover, then writes `05-visual-plan.md` and section visual-plan files.
+- `render` requires `05-visual-plan.md` and selected section visual plan, then writes `06-production-board.md` and section HyperFrames preview files.
 
 Packaging side-branch rule:
 
@@ -56,6 +57,12 @@ Pipeline rules:
 - Remove stale downstream outputs only by explicit user request, or regenerate them by rerunning later skills in order.
 
 After `04-voiceover.md`, production branches by section. A selected section should move through visual plan, render, and review as its own branch. `All` means every section gets separate outputs, not one stitched planning artifact.
+
+Render port rule:
+
+- unified/final preview uses `localhost:1000`
+- section `N` preview uses `localhost:1000 + N`
+- do not put all sections in one localhost during section review
 
 ## Startup Read Set
 
@@ -95,6 +102,8 @@ Use lightweight gates instead of many separate checklists:
 HyperFrames is the active render path.
 
 Use simple board scenes, WIT poses, voiceover, hard cuts, cue-timed labels, red markup, and handwritten-looking text. Prefer clear static boards before adding motion.
+
+Each rendered section should live in its own HyperFrames preview project under `projects/<slug>/section-previews/section-XX-kebab-section-name/`.
 
 Legacy Remotion notes are historical only. Do not revive Remotion production unless the user explicitly asks.
 

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Render"
+  short_description: "Build section HyperFrames previews and renders"
+  default_prompt: "Use $render to build the selected Why It Works section in HyperFrames."

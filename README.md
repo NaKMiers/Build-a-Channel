@@ -23,7 +23,7 @@ README.md       source map for humans and future agents
 - [.agents/rules](C:\ME\THINGS\Build a Channel\.agents\rules)
   Rules for Codex, memory, and the video production workflow.
 - [.agents/skills](C:\ME\THINGS\Build a Channel\.agents\skills)
-  Executable project-local skills. Current skills include `browse`, `topic-intake`, `research-pack`, `script-draft`, `packaging`, `voiceover`, `visual-plan`, and `wiw-take-note`; the remaining sequential video production skills will be created later.
+  Executable project-local skills. Current skills include `browse`, `topic-intake`, `research-pack`, `script-draft`, `packaging`, `voiceover`, `visual-plan`, `render`, and `wiw-take-note`; the remaining sequential video production skills will be created later.
 - [projects](C:\ME\THINGS\Build a Channel\projects)
   Per-video work. Each video keeps its own script, packaging, voiceover, HyperFrames source, renders, review notes, upload notes, and lessons.
 
@@ -67,7 +67,13 @@ ResearchPack -> Packaging
 
 Future skills should follow this graph and write their outputs into the relevant `projects/<slug>/` folder.
 
-After voiceover, production may branch by section: each selected section gets its own visual plan before HyperFrames build and review.
+After voiceover, production may branch by section: each selected section gets its own visual plan, render preview, and review path.
+
+Render port rule:
+
+- unified/final preview uses `localhost:1000`
+- section `N` preview uses `localhost:1000 + N`
+- Section 1 uses `localhost:1001`, Section 2 uses `localhost:1002`, and so on
 
 Pipeline rule:
 

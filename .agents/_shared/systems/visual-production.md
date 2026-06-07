@@ -12,6 +12,20 @@ Static drawing -> narration twist -> red markup or hard cut -> next static drawi
 
 Start simple. Make paused frames clear before adding motion.
 
+## Visual Plan Handoff Rule
+
+Visual planning is the critical handoff into HyperFrames.
+
+For each section, the visual plan must answer:
+
+- what appears on screen
+- when it appears against the voiceover
+- how it moves, cuts, reveals, or changes
+- why it holds attention
+- what assets or references HyperFrames needs
+
+The renderer should not need to invent the main scene, timing, joke, object, asset list, or reference logic.
+
 ## One-Board Contract
 
 Each board should carry:
@@ -56,9 +70,12 @@ Before full visual production, ask:
 
 `What does this topic look like in real life, and what would make it funny if paused?`
 
+Every normal section visual plan should include a real visual reference pass. Start with real internet images, self-shot images, or inspected local assets whenever the topic has real-world objects. Use generated images after that to fill gaps, create safer controllable mockups, remove logos/private data, or test composition. Prompt-only references are a fallback only when browsing, generation, or local inspection is unavailable, fails, or would create unsafe assets.
+
 Good reference boards collect:
 
 - real-life objects
+- real internet/self-shot/local images that make the video feel close to the viewer
 - UI patterns or self-made mockups
 - visual metaphors
 - thumbnail tension
@@ -82,8 +99,9 @@ Use real-life assets as evidence, not decoration.
 Prefer:
 
 - self-shot images
-- generated images
 - licensed or public-domain images
+- real internet images with clear source and license notes
+- generated images for support, cleanup, or missing-safe-asset cases
 - self-made UI mockups
 - simple object cutouts
 - paper, receipts, bills, phones, desks, product boxes
@@ -158,4 +176,3 @@ For a `20-30s` hook, start with `6-8` static boards:
 - hard cuts
 
 Do not add transition overlays, rapid pop-ins, object pile-ons, or WIT shake unless the static version is approved and the motion has a clear joke or clarity job.
-

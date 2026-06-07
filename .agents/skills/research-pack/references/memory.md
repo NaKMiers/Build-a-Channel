@@ -22,6 +22,8 @@ Use this file for lessons about how this skill should select projects, research 
 - Treat research as evidence and specificity, not a link dump.
 - Label facts, inferences, examples, and open questions clearly.
 - Collect visual evidence and real-life objects, not only factual sources.
+- Prioritize real internet image leads for visual references when the topic has real-world objects.
+- Record source pages and visible license/source status for useful visual leads so `visual-plan` can decide direct asset, mockup target, inspiration only, or reject.
 - Keep the channel influence-first and learner-friendly.
 
 ## Research Pack Output Standard
@@ -90,6 +92,26 @@ Apply next time:
 
 Promote to shared memory:
 yes, this is a channel-wide pipeline rule.
+
+### 2026-06-07 - Research Should Feed Real Visual References
+
+Classification: `Research pack lesson`
+
+Context:
+The user clarified that real internet images make videos feel closer to viewers, while generated-only references can feel artificial.
+
+Lesson:
+Research packs should collect real visual leads, not just factual sources. For real-world topics, gather source-page links for ordinary objects, receipts, desks, products, screens, or environments that can later anchor the visual plan.
+
+Apply next time:
+
+- prioritize real image leads before generated-image ideas
+- record source page, creator/publisher, and visible license/source status when available
+- flag logo/private-data/copyright risks early
+- describe why each real image lead could become a board, mockup, or texture reference
+
+Promote to shared memory:
+no; shared visual-production rules already contain the channel-wide standard.
 
 ## Feedback Entry Template
 

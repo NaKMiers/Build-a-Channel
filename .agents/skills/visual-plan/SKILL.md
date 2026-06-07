@@ -1,15 +1,26 @@
 ---
 name: visual-plan
-description: Create or update step 5 section visual plans for a Why It Works video project. Use when the user asks for Visual Plan, visual planning, section scene plan, reference board, real-life visual references, generated visual assets, HyperFrames build guidance, run step 5, or plan visuals for one section or all sections; requires completed 00-topic-intake.md, 01-research-pack.md, 02-script.md, 04-voiceover.md, explicit project selection, and explicit section selection with All as the first option, then writes only the project's 05-visual-plan.md, visual-plan/ section folders, and visual reference assets.
+description: Create or update step 5 section visual plans for a Why It Works video project. Use when the user asks for Visual Plan, visual planning, scene-by-scene what-when-how screen direction, reference board, real-life internet visual references, generated support assets, HyperFrames build guidance, run step 5, or plan visuals for one section or all sections; requires completed 00-topic-intake.md, 01-research-pack.md, 02-script.md, 04-voiceover.md, explicit project selection, and explicit section selection with All as the first option, then writes only the project's 05-visual-plan.md, visual-plan/ section folders, and visual reference assets.
 ---
 
 # Visual Plan
 
 ## Purpose
 
-Run step `6` of the `Why It Works` video workflow.
+Run step `5` of the `Why It Works` video workflow.
 
 Turn approved script and section voiceover into a section-level visual blueprint for HyperFrames.
+
+This is the most important handoff before render. Treat the work as a professional video editor and professional content creator would:
+
+- decide exactly what appears on screen
+- decide when it appears against the voiceover
+- decide how it attracts attention, supports the joke, and explains the idea
+- decide what assets HyperFrames needs before building
+- use sourced real-world references first, then generated images only as support, fallback, or controlled production mockups
+- make every board useful enough that a renderer can build from it without guessing
+
+Do not treat this as a loose mood board. It is a scene plan, asset plan, humor plan, and render brief.
 
 This skill is section-first. After voiceover, production branches by section:
 
@@ -37,7 +48,7 @@ Write or update:
 
 - `projects/<slug>/05-visual-plan.md`
 - `projects/<slug>/visual-plan/section-XX-kebab-section-name/`
-- `projects/<slug>/assets/visual-references/section-XX-kebab-section-name/` when useful
+- `projects/<slug>/assets/visual-references/section-XX-kebab-section-name/`
 
 If a required upstream file is missing or empty, stop and tell the user which previous skill to run.
 
@@ -230,14 +241,47 @@ Promote shared lessons with a clear classification such as `Operational lesson` 
 
 Use the project-local `browse` skill for web or YouTube browsing when available.
 
-Browse or search only when the section needs real-life evidence, real object references, UI/reference patterns, or a visual benchmark.
+Every selected section must run a visual reference pass before writing the final section visual plan.
+
+The default order for the visual reference pass is:
+
+1. real, sourced images from web search, image search, YouTube/reference-channel review, self-shot photos, or existing local assets
+2. generated images only to fill gaps, create clean production-safe mockups, remove logos/text/private data, or test a composition
+3. prompt-only references only as a degraded fallback
+
+The visual reference pass must include at least one of:
+
+- browsed web or image references for real objects, UI patterns, materials, composition, or visual benchmarks
+- generated section-specific reference images
+- self-shot or existing local visual assets that are inspected and documented
+
+For normal runs, actively look for real-life internet or local images first. Do not make generated images the main visual reference layer when useful real images can reasonably be found.
+
+If a selected section uses zero real images, the `reference-board.md` must explain why real images were unavailable, unsafe, irrelevant, or lower quality than the generated/self-made alternative.
+
+For normal runs, use at least `3` useful references per selected section:
+
+- one real-life/object/material reference
+- one composition, editing, or attention reference
+- one asset or mockup reference that HyperFrames can build from
+
+For hooks and high-retention moments, prefer `4-6` references unless the section is extremely simple.
+
+Prompt-only references are allowed only as a degraded fallback when browsing and image generation are unavailable, fail, or would create unsafe assets. If using prompt-only fallback, state the reason in `reference-board.md` and in the chat response.
+
+Do not skip the visual reference pass just because an object seems easy to draw. Even simple objects need visual certainty: silhouette, material, pose, camera angle, label placement, and readable contrast.
+
+Use `.agents/_shared/channel/reference-channels.md` as the source-base for channel inspiration. When a section needs pacing, hook, humor, retention, or framing guidance, browse or review `1-3` relevant reference-channel examples and mark them as `inspiration only`. Learn from timing, board simplicity, and joke rhythm. Do not copy their exact frame, thumbnail, joke layout, or visual composition.
 
 For each selected section, create a small reference board:
 
 - real-life objects that explain the section
+- real internet/self-shot/local images that make the video feel close to the viewer
 - possible safe assets
-- generated-image ideas
+- generated-image ideas only after real reference needs are understood
 - self-made UI/mockup targets
+- visual benchmark or editor-reference notes
+- attention / retention reason for using each reference
 - inspiration-only references
 - rejected references
 - source notes
@@ -254,8 +298,9 @@ Do not copy another creator's exact frame, thumbnail, joke layout, screenshot, o
 Prefer:
 
 - self-shot images
-- generated images
 - licensed/public-domain images
+- real internet images with clear source and license notes
+- generated images for support, cleanup, or missing-safe-asset cases
 - self-made UI mockups
 - simple object cutouts
 - paper, receipts, phones, desks, product boxes, calendars, bills, or other lived-in objects
@@ -268,7 +313,7 @@ Avoid:
 - real screenshots copied into production
 - generic stock images that do not explain the section
 
-When image generation is available, generate or request section-specific reference images only when they materially improve the plan. Save generated references or returned image paths under:
+When image generation is available, generate or request section-specific reference images only when they materially improve the plan after the real-reference pass. Save generated references or returned image paths under:
 
 ```text
 projects/<slug>/assets/visual-references/section-XX-kebab-section-name/
@@ -276,7 +321,27 @@ projects/<slug>/assets/visual-references/section-XX-kebab-section-name/
 
 If generation is unavailable, write reusable generation prompts and mark status as `prompt only / image not generated`.
 
+Generated or browsed images are not automatically production assets. Classify them first. Use them to clarify shape, mood, composition, or material. Only use them directly in production if their source and license are safe.
+
+For real internet images, record:
+
+- source page URL
+- creator/credit when visible
+- source/license status when visible
+- direct saved path if downloaded
+- production decision: direct asset, crop/blur/trace target, inspiration only, or reject
+
+If a real image has unclear copyright, visible private data, real logos, or accidental brand accusation risk, classify it as `inspiration only` or `reject`, not `safe asset`.
+
 ## Visual Planning Rules
+
+Work from the role of an editor, not a document writer.
+
+For every selected section, plan the visual experience as:
+
+```text
+what appears on screen -> when it appears -> how it moves / cuts / reveals -> why the viewer keeps watching
+```
 
 Use the channel grammar:
 
@@ -297,9 +362,14 @@ Visual plans should guide HyperFrames implementation, not replace it.
 For each selected section, plan:
 
 - section goal
+- viewer attention strategy
+- section retention risk and visual fix
 - narration beats
-- board list with approximate local timing
+- board list with approximate local timing from the section voiceover
+- exact on-screen what / when / how for every board
+- exact where each visual resource appears: board number, time range, screen region, crop/placement, and whether it is direct asset, mockup target, support base, or inspiration only
 - visual job per board
+- joke or curiosity beat per board
 - real-life or generated asset needs
 - WIT pose/emotion per board
 - labels and handwritten captions
@@ -307,12 +377,14 @@ For each selected section, plan:
 - motion notes
 - voice-sync cues
 - asset/source safety notes
-    - render / HyperFrames implementation guidance
+- render / HyperFrames implementation guidance
 - approval checks
 
 Keep boards simple. When a section gets abstract, return to a concrete object.
 
 Use WIT as the audience surrogate. WIT should usually be affected by the system, not lecturing from outside it.
+
+The plan fails if HyperFrames would need to invent the main scene, object, timing, joke, or asset logic from scratch.
 
 ## Workflow
 
@@ -327,8 +399,17 @@ Use WIT as the audience surrogate. WIT should usually be affected by the system,
    - read the matching section voiceover files
    - inspect voiceover duration or timing notes when available
    - identify the section goal, contradiction, visual metaphor, and WIT emotion
-   - browse for real-life reference images or reference patterns when useful
-   - generate image prompts or generated references when useful and available
+   - run the Visual Editor Pass:
+     - split narration into screen beats
+     - decide attention hook, retention risk, joke rhythm, and visual payoff
+     - decide what must be shown, when it appears, and how it changes on screen
+   - run the Visual Reference Pass:
+     - browse for real-life internet images, object/material references, UI patterns, or visual benchmarks first
+     - inspect/download useful real images only when source safety is acceptable
+     - generate section-specific images only when they improve clarity, humor, source safety, or asset certainty after the real-reference pass
+     - save generated references when available under the section visual reference folder
+     - classify browsed/generated/self-made references before using them
+     - document any prompt-only fallback as a degraded fallback
    - write `reference-board.md`
    - write `section-XX-kebab-section-name-visual-plan.md`
    - write or update the section `README.md`
@@ -432,12 +513,15 @@ A section visual plan is ready when:
 - selected section was explicitly chosen
 - selected section has matching voiceover output
 - section goal is clear
-- board list maps to narration beats
+- board list maps to narration beats and voiceover timing
+- each board states what appears, when it appears, how it changes, and why it holds attention
 - each board has one thought and one visual job
+- each board has a joke, curiosity, evidence, or emotional reason to exist
 - WIT emotion supports the viewer's feeling
 - labels are short and readable
-- real-life references are classified with source notes
-- generated images or prompts are marked honestly
+- the visual reference pass produced browsed, generated, inspected local, or clearly degraded prompt-only references
+- real-life, benchmark, and generated references are classified with source notes
+- generated images, browsed images, or prompts are marked honestly
 - HyperFrames guidance is concrete enough to build from
 - script promise is paid off in the section when relevant
 - stale downstream files are listed
@@ -453,6 +537,12 @@ Reject or stop before finishing if:
 - the section target is inferred instead of selected
 - the skill plans a section from stale script or voiceover
 - the visual plan copies another creator's frame or thumbnail structure
+- the skill skips the visual reference pass without documenting a failed/unavailable fallback
+- the skill defaults to generated images without first trying useful real-world references
+- the reference board is prompt-only while browsing or image generation was available and safe
+- the board plan does not specify what / when / how for each scene
+- the plan does not map every important visual resource to what / when / how / where usage
+- HyperFrames would need to invent the main visual idea, asset list, or timing
 - real private data or unclear copyrighted screenshots are treated as production assets
 - generated images are described as existing when they were only prompted
 - WIT is decorative and has no emotional job
