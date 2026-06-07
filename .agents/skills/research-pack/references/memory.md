@@ -16,7 +16,7 @@ Use this file for lessons about how this skill should select projects, research 
 - Browse the web or YouTube every run because research facts and reference signals can change.
 - Prefer the project-local vendored Browse skill at `.agents/skills/browse/`; fall back to global gstack browse only if needed.
 - Write only `projects/<slug>/01-research-pack.md`.
-- When `01-research-pack.md` is created, updated, or rerun, treat `02-09` downstream outputs as stale.
+- When `01-research-pack.md` is created, updated, or rerun, treat `02-script.md`, `03-packaging.md`, and later outputs as stale.
 - Do not delete stale downstream outputs unless the user explicitly asks; otherwise tell the user to rerun downstream skills in order.
 - Do not write script, packaging, visual plan, HyperFrames, voiceover, render, upload, or self-learning files.
 - Treat research as evidence and specificity, not a link dump.

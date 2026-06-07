@@ -15,7 +15,7 @@ Use this file for lessons about selecting projects, shaping sectioned scripts, p
 - If `01-research-pack.md` is missing, stop and ask the user to run `research-pack` after topic intake exists.
 - If the research pack is older than the topic intake, treat it as stale and require `research-pack` before drafting.
 - Write only `projects/<slug>/02-script.md`.
-- When `02-script.md` is created, updated, or rerun, treat `03-09` downstream outputs as stale, starting with `03-packaging.md`.
+- When `02-script.md` is created, updated, or rerun, treat `04-09` main-pipeline outputs as stale, starting with `04-voiceover.md`. Do not mark packaging stale.
 - Do not delete stale downstream outputs unless the user explicitly asks; otherwise tell the user to rerun downstream skills in order.
 - Use `projects/why-everyone-pretends-to-be-busy/02-script.md` as the structural reference when available.
 - Copy the reference script's discipline, not its topic, jokes, or wording.
@@ -23,7 +23,7 @@ Use this file for lessons about selecting projects, shaping sectioned scripts, p
 - Treat `01-research-pack.md` as the claim source of truth.
 - Label risky ideas as inferences or avoid them.
 - Keep the script learner-friendly, dry, concrete, and boardable.
-- Stop before packaging, voiceover, visual plan, HyperFrames, renders, upload, or self-learning.
+- Stop before voiceover, visual plan, render, review, upload, or learning.
 - After creating or updating a script, respond in chat with status, estimated duration, a `3-5` line brief, and the section summary table.
 - Do not paste the full script into chat unless the user asks.
 
@@ -118,15 +118,34 @@ Context:
 The user clarified that `script-draft` should run only after Topic Intake and Research Pack outputs exist, and that rerunning previous steps should stale later outputs.
 
 Lesson:
-`script-draft` is step 3, not a standalone writer. It must build from `00-topic-intake.md` and `01-research-pack.md`, and its own rerun makes packaging, voiceover, visual plan, HyperFrames, review, upload, and learning files stale.
+`script-draft` is a main-pipeline step, not a standalone writer. It must build from `00-topic-intake.md` and `01-research-pack.md`, and its own rerun makes voiceover, visual plan, render, review, upload, and learning files stale. Packaging is a side branch and should not be marked stale by script changes.
 
 Apply next time:
 
 - require non-empty `00-topic-intake.md` and `01-research-pack.md`
 - if one or both are missing, stop and name the missing skill(s)
 - if the research pack is older than the topic intake, require `research-pack` rerun before drafting
-- after writing `02-script.md`, list stale downstream outputs from `03-packaging.md` through `09-self-learning.md`
+- after writing `02-script.md`, list stale downstream outputs from `04-voiceover.md` through `09-self-learning.md`
 - do not remove stale files unless the user explicitly asks
+
+Promote to shared memory:
+yes, this is a channel-wide pipeline rule.
+
+### 2026-06-07 - Packaging Hard Prerequisite Exception
+
+Classification: `Core operational update`
+
+Context:
+The user clarified that packaging requires only topic intake and research pack, but script remains before packaging in the production order.
+
+Lesson:
+`script-draft` remains in the main pipeline and does not require packaging. Packaging is outside the main pipeline.
+
+Apply next time:
+
+- require non-empty `00-topic-intake.md` and `01-research-pack.md`
+- after writing `02-script.md`, list stale downstream main-pipeline outputs from `04-voiceover.md` onward
+- do not require `03-packaging.md` before drafting
 
 Promote to shared memory:
 yes, this is a channel-wide pipeline rule.

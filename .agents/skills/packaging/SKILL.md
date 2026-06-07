@@ -1,15 +1,15 @@
 ---
 name: packaging
-description: Create or update step 4 YouTube packaging for a Why It Works video project. Use when the user asks for Packaging, title and thumbnail, YouTube description, upload metadata, tags, hashtags, thumbnail concepts, thumbnail images, A/B thumbnail testing, or step 4 of the Why It Works workflow; requires completed 00-topic-intake.md, 01-research-pack.md, and 02-script.md first, creates thumbnail drafts using the current approved or pending WIT direction with reusable generation prompts, scores them, then writes only the project's 03-packaging.md and thumbnail assets under assets/thumbnails/.
+description: Create or update side-branch step 3 YouTube packaging for a Why It Works video project. Use when the user asks for Packaging, title and thumbnail, YouTube description, upload metadata, tags, hashtags, thumbnail concepts, thumbnail images, A/B thumbnail testing, packaging, or step 3 of the side-branch workflow; requires completed 00-topic-intake.md and 01-research-pack.md only, does not require script or voiceover, creates thumbnail drafts using the current approved or pending WIT direction with reusable generation prompts, scores them, then writes only the project's 03-packaging.md and thumbnail assets under assets/thumbnails/.
 ---
 
 # Packaging
 
 ## Purpose
 
-Run step `4` of the `Why It Works` video workflow.
+Run side-branch step `3` of the `Why It Works` video workflow.
 
-Turn a selected project's topic, research, and script into a strong YouTube package:
+Turn a selected project's topic and research into a strong YouTube package:
 
 - titles
 - `5` thumbnail drafts in different styles for A/B testing
@@ -18,34 +18,35 @@ Turn a selected project's topic, research, and script into a strong YouTube pack
 - YouTube description
 - tags, hashtags, links, chapters, and pinned comment ideas
 
-Packaging should make the click promise clear before voiceover or visual production continues.
+Packaging should make the click promise clear for publishing and testing, but it does not block the main production pipeline.
 
 ## Pipeline Position
 
-This skill runs after `script-draft` and before `voiceover`.
+This skill branches from `research-pack`.
+
+Pipeline rule:
+
+Packaging is outside the main production pipeline. It only requires `00-topic-intake.md` and `01-research-pack.md`. It does not require `02-script.md` or voiceover.
 
 Required previous outputs:
 
 - `projects/<slug>/00-topic-intake.md`
 - `projects/<slug>/01-research-pack.md`
-- `projects/<slug>/02-script.md`
 
 Write or update:
 
 - `projects/<slug>/03-packaging.md`
 - `projects/<slug>/assets/thumbnails/`
 
-If `02-script.md` is missing or empty, stop and tell the user to run `script-draft` first.
+If `00-topic-intake.md` or `01-research-pack.md` is missing, stop and tell the user to run the missing previous skill in order before `packaging`.
 
-If `00-topic-intake.md` or `01-research-pack.md` is missing, stop and tell the user to run the missing previous skill in order before `script-draft`.
+If `01-research-pack.md` is older than `00-topic-intake.md`, treat the research pack as stale and stop. Tell the user to rerun `research-pack`.
 
-If `00-topic-intake.md` or `01-research-pack.md` has a newer modified time than `02-script.md`, treat the script as stale and stop. Tell the user to rerun `script-draft`.
+If `03-packaging.md` exists but `00-topic-intake.md` or `01-research-pack.md` has a newer modified time, treat packaging as stale and use Update Mode when the user asks for packaging.
 
-If `02-script.md` has a newer modified time than `03-packaging.md`, treat packaging as stale and use Update Mode when the user asks for packaging.
+When this skill creates, updates, or reruns `03-packaging.md` or thumbnail assets, do not mark main-pipeline outputs stale.
 
-When this skill creates, updates, or reruns `03-packaging.md` or thumbnail assets, every later output in the same project becomes stale.
-
-List stale downstream files in chat. Do not silently delete them. Remove stale downstream files only when the user explicitly asks; otherwise downstream skills must be rerun in order.
+List only packaging-side notes in chat. Do not delete or regenerate main-pipeline files unless the user explicitly asks.
 
 ## Required Context
 
@@ -68,12 +69,12 @@ Read these before creating or updating packaging:
 15. the chosen project files:
     - `projects/<slug>/00-topic-intake.md`
     - `projects/<slug>/01-research-pack.md`
-    - `projects/<slug>/02-script.md`
 
 Load additional shared systems only when needed:
 
 - `.agents/_shared/systems/visual-production.md` when planning real or real-looking thumbnail assets or reference-board support
 - `.agents/_shared/assets/wit/poses/` when current WIT pose assets are needed
+- `projects/<slug>/02-script.md` when available, as optional context only; never require it for packaging.
 
 ## Project Selection Gate
 
@@ -83,14 +84,13 @@ Use this order:
 
 1. If the user names a project slug or path, use that project.
 2. If the current chat clearly selected a project and the folder exists, use that project.
-3. If there is exactly one project with completed `00-topic-intake.md`, `01-research-pack.md`, and `02-script.md` but no completed `03-packaging.md`, smart-select it and say so.
+3. If there is exactly one project with completed `00-topic-intake.md` and `01-research-pack.md` but no completed `03-packaging.md`, smart-select it and say so.
 4. Otherwise scan `projects/`, excluding `_template`, and find unfinished packaging candidates.
 
 A packaging candidate is usually:
 
 - a folder with non-empty `00-topic-intake.md`
 - and non-empty `01-research-pack.md`
-- and non-empty `02-script.md`
 - and no `03-packaging.md`, or an empty/stub `03-packaging.md`
 - and not obviously blocked by stale upstream files
 
@@ -104,13 +104,11 @@ Before writing packaging, verify the chosen project has:
 
 - non-empty `00-topic-intake.md`
 - non-empty `01-research-pack.md`
-- non-empty `02-script.md`
 
 If any are missing, stop and name the missing skill:
 
 - missing `00-topic-intake.md` -> run `topic-intake`
 - missing `01-research-pack.md` -> run `research-pack`
-- missing `02-script.md` -> run `script-draft`
 
 Do not create placeholder upstream files.
 
@@ -270,7 +268,7 @@ Do not include product promotion unless the project explicitly requires it and t
    - recurring motif
    - WIT arc
    - first `10` seconds promise
-   - strongest script sections
+   - likely section spine or hook beats from the research pack or optional script
    - risky claims to avoid in packaging
 5. Generate `10-15` title options.
 6. Generate `5` thumbnail A/B directions using the required variant styles.
@@ -283,12 +281,12 @@ Do not include product promotion unless the project explicitly requires it and t
 13. Write YouTube description options:
    - final recommended description
    - alternate first two lines when useful
-   - chapters from script sections when available
+   - rough chapters from the package/research promise when useful, or mark chapters as `draft until script`
    - tags, keywords, hashtags, links, and pinned comment idea
 14. Write or update `projects/<slug>/03-packaging.md`.
-15. Run the Downstream Stale Gate.
+15. Run the Side-Branch Notes Gate.
 16. Respond with the Chat Response Format, including every thumbnail and its copyable prompt block.
-17. Stop before voiceover, visual plan, HyperFrames, renders, upload, or self-learning.
+17. Stop before script, voiceover, visual plan, render, review, upload, or learning.
 
 ## Output File Format
 
@@ -307,7 +305,6 @@ Source files:
 
 - `00-topic-intake.md`
 - `01-research-pack.md`
-- `02-script.md`
 
 ## Packaging Brief
 
@@ -393,7 +390,7 @@ Repeat this prompt block for `Variant B`, `Variant C`, `Variant D`, and `Variant
 ### Chapters
 
 ```text
-00:00 ...
+draft until script
 ```
 
 ### Tags / Keywords
@@ -418,25 +415,18 @@ Repeat this prompt block for `Variant B`, `Variant C`, `Variant D`, and `Variant
 
 ## Next Step Boundary
 
-Next workflow step: `Voiceover`
+Next workflow step: `independent side branch`
 
-Do not continue into voiceover, visual plan, HyperFrames, renders, upload, or self-learning until the user asks for the next skill or explicitly requests that step.
+Do not continue into script, voiceover, visual plan, render, review, upload, or learning until the user asks for that step.
 ````
 
-## Downstream Stale Gate
+## Side-Branch Notes Gate
 
-After creating, updating, or rerunning `03-packaging.md` or thumbnail assets, check the same project for downstream files:
+After creating, updating, or rerunning `03-packaging.md` or thumbnail assets:
 
-- `04-voiceover.md`
-- `05-visual-plan.md`
-- `06-production-board.md`
-- `07-review.md`
-- `08-upload.md`
-- `09-self-learning.md`
-
-If any exist, list them as stale in chat and tell the user they should be removed or regenerated by rerunning downstream skills in order, starting with `voiceover`.
-
-Do not delete downstream files unless the user explicitly asks.
+- do not mark `02-script.md`, `04-voiceover.md`, `05-visual-plan.md`, render, review, upload, or learning outputs as stale
+- list `none` for stale main-pipeline outputs
+- if upload metadata already exists and the packaging change affects upload text, mention that upload metadata may need manual review, but do not delete or regenerate it
 
 ## Chat Response Format
 
@@ -495,7 +485,7 @@ Negative prompt:
 
 Repeat for Variant B, Variant C, Variant D, and Variant E.
 
-Stale downstream:
+Stale main pipeline:
 - <file or none>
 ````
 
@@ -519,14 +509,14 @@ A packaging pass is ready when:
 - the YouTube description feels useful and on-brand
 - tags and hashtags are relevant, not spammy
 - the first `10` seconds can pay off the promise
-- stale downstream files are listed
+- stale main-pipeline status is listed as `none`
 
 ## Hard Fails
 
 Reject or revise packaging before finishing if:
 
-- the project lacks `02-script.md`
-- upstream files are missing or newer than the script
+- the project lacks `00-topic-intake.md` or `01-research-pack.md`
+- `01-research-pack.md` is older than `00-topic-intake.md`
 - the title and thumbnail repeat the same phrase
 - the thumbnail is just a presentation slide
 - fewer than `5` thumbnail variants are produced or prompt-recorded
@@ -539,7 +529,7 @@ Reject or revise packaging before finishing if:
 - the description makes unsupported claims
 - tags are stuffed with irrelevant keywords
 - the package relies on rage bait, fake urgency, or copied thumbnail structure
-- the skill creates voiceover, visual plan, HyperFrames, renders, upload, or self-learning files
+- the skill creates script, voiceover, visual plan, render, review, upload, or learning files
 
 ## Self-Improvement
 

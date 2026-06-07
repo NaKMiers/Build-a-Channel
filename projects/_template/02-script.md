@@ -1,5 +1,12 @@
 # 02 Script
 
+Source skill: `script-draft`
+
+Source files:
+
+- `00-topic-intake.md`
+- `01-research-pack.md`
+
 ## Draft
 
 
@@ -29,5 +36,3 @@
 3. 
 
 ## Open Issues
-
-

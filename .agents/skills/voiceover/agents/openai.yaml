@@ -1,4 +1,4 @@
 interface:
   display_name: "Voiceover"
-  short_description: "Generate section voiceover after packaging."
-  default_prompt: "Use $voiceover after Packaging to create voiceover for a selected script section."
+  short_description: "Generate section voiceover after script draft."
+  default_prompt: "Use $voiceover after Script Draft to create voiceover for a selected script section."

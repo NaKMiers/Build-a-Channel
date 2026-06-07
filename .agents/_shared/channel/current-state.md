@@ -38,14 +38,15 @@ Use these compact files instead of the old many-file system:
 ## Current Skills
 
 - `browse`: project-local web and YouTube browsing
-- `topic-intake`: step 1, writes `00-topic-intake.md`
-- `research-pack`: step 2, writes `01-research-pack.md`
-- `script-draft`: step 3, writes `02-script.md`
-- `packaging`: step 4, writes `03-packaging.md`
-- `voiceover`: step 5, writes `04-voiceover.md` and section audio
+- `topic-intake`: step 0, writes `00-topic-intake.md`
+- `research-pack`: step 1, writes `01-research-pack.md`
+- `script-draft`: main step 2, writes `02-script.md`
+- `packaging`: side branch step 3, requires only `00-topic-intake.md` and `01-research-pack.md`, writes `03-packaging.md`
+- `voiceover`: main step 4, writes `04-voiceover.md` and section audio
+- `visual-plan`: main step 5, writes `05-visual-plan.md`, section plans, reference boards, and visual reference assets
 - `wiw-take-note`: reusable memory capture
 
-Sequential production skills enforce prerequisites. Later steps require previous output files. Rerunning an earlier step makes downstream outputs stale until removed by explicit user request or regenerated in order.
+Sequential production skills enforce prerequisites. Main pipeline order is `topic-intake -> research-pack -> script-draft -> voiceover -> visual-plan -> render -> review -> upload -> learning`. Packaging is a side branch from `research-pack`; it requires only topic intake and research pack and does not block script, voiceover, visual plan, render, review, upload, or learning. Rerunning an earlier main-pipeline dependency makes downstream main outputs stale until removed by explicit user request or regenerated in order. After voiceover, production branches by section: each section can move through visual plan, render, and review separately.
 
 ## Current WIT
 

@@ -1,4 +1,4 @@
 interface:
   display_name: "Packaging"
   short_description: "Create titles, 5 thumbnails, and YouTube descriptions"
-  default_prompt: "Use $packaging after Script Draft to create the title, thumbnail, and YouTube description package for the selected Why It Works video project."
+  default_prompt: "Use $packaging after Script Draft to create the title, thumbnail, and YouTube description package for the selected Why It Works video project. Packaging can also run from Topic Intake and Research Pack alone."

@@ -1,19 +1,19 @@
 ---
 name: topic-intake
-description: Generate and evaluate next-video topic ideas for the Why It Works YouTube channel. Use when the user asks for topic intake, next video ideas, raw topic candidates, scored video angles, or step 1 of the Why It Works video workflow; reads the shared channel brain and this skill's memory, browses YouTube or the web for high-view reference videos, shapes ideas into angle packages, scores each criterion, and optionally writes a project topic-intake file when a candidate is chosen.
+description: Generate and evaluate next-video topic ideas for the Why It Works YouTube channel. Use when the user asks for topic intake, next video ideas, raw topic candidates, scored video angles, or step 0 of the Why It Works video workflow; reads the shared channel brain and this skill's memory, browses YouTube or the web for high-view reference videos, shapes ideas into angle packages, scores each criterion, and optionally writes a project topic-intake file when a candidate is chosen.
 ---
 
 # Topic Intake
 
 ## Purpose
 
-Run the first step of the `Why It Works` video workflow: turn raw topic possibilities into sharp, scored video angle candidates.
+Run step `0` of the `Why It Works` video workflow: turn raw topic possibilities into sharp, scored video angle candidates.
 
 The output is not a generic idea list. It should be a small set of usable angle packages that connect topic, contradiction, visual metaphor, WIT role, thumbnail tension, first `10` seconds, English learner value, and final insight.
 
 ## Pipeline Position
 
-This is step `1` of the video workflow.
+This is step `0` of the video workflow.
 
 It has no previous required output.
 

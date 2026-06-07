@@ -10,7 +10,6 @@ Source files:
 
 - `00-topic-intake.md`
 - `01-research-pack.md`
-- `02-script.md`
 
 ## Packaging Brief
 
@@ -96,7 +95,7 @@ Repeat this prompt block for `Variant B`, `Variant C`, `Variant D`, and `Variant
 ### Chapters
 
 ```text
-00:00
+draft until script
 ```
 
 ### Tags / Keywords
@@ -121,6 +120,6 @@ Repeat this prompt block for `Variant B`, `Variant C`, `Variant D`, and `Variant
 
 ## Next Step Boundary
 
-Next workflow step: `Voiceover`
+Next workflow step: `independent side branch`
 
-Do not continue into voiceover, visual plan, HyperFrames, renders, upload, or self-learning until the user asks for the next skill or explicitly requests that step.
+Do not continue into script, voiceover, visual plan, render, review, upload, or learning until the user asks for that step.

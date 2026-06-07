@@ -1,6 +1,6 @@
 ---
 name: voiceover
-description: Create or update step 5 section voiceover for a Why It Works video project. Use when the user asks for Voiceover, section voiceover, generate audio for a script section, create narration audio, run step 5, or create all section voiceovers; requires completed project 00-topic-intake.md, 01-research-pack.md, 02-script.md, and 03-packaging.md first, asks which script section to generate with All as the first option, then writes only the project's 04-voiceover.md plus section-local files under voiceover/.
+description: Create or update step 4 section voiceover for a Why It Works video project. Use when the user asks for Voiceover, section voiceover, generate audio for a script section, create narration audio, run step 4, or create all section voiceovers; requires completed project 00-topic-intake.md, 01-research-pack.md, and 02-script.md first, asks which script section to generate with All as the first option, then writes only the project's 04-voiceover.md plus section-local files under voiceover/.
 ---
 
 # Voiceover
@@ -15,14 +15,13 @@ This skill is section-first. It does not default to one full-video voiceover fil
 
 ## Pipeline Position
 
-This is step `5` of the video workflow.
+This is step `4` of the main video workflow.
 
 Required previous outputs:
 
 - `projects/<slug>/00-topic-intake.md`
 - `projects/<slug>/01-research-pack.md`
 - `projects/<slug>/02-script.md`
-- `projects/<slug>/03-packaging.md`
 
 Do not create voiceover without a real, non-empty script file.
 
@@ -30,13 +29,11 @@ If `02-script.md` is missing or empty, stop and tell the user to run `script-dra
 
 If `00-topic-intake.md` or `01-research-pack.md` is missing, stop and tell the user to run the missing previous skill in order before `script-draft`.
 
-If `03-packaging.md` is missing or empty, stop and tell the user to run `packaging` before `voiceover`.
+If `01-research-pack.md` is older than `00-topic-intake.md`, treat the research pack as stale and stop. Tell the user to rerun `research-pack`.
 
-If `00-topic-intake.md` or `01-research-pack.md` has a newer modified time than `02-script.md`, treat the script as stale and stop. Tell the user to rerun `script-draft`.
+If `02-script.md` is older than `00-topic-intake.md` or `01-research-pack.md`, treat the script as stale and stop. Tell the user to rerun `script-draft`.
 
-If `02-script.md` has a newer modified time than `03-packaging.md`, treat packaging as stale and stop. Tell the user to rerun `packaging`.
-
-If `03-packaging.md` has a newer modified time than `04-voiceover.md` or any section voiceover output, treat all existing voiceover outputs as stale. Do not trust them as current. Ask whether to regenerate the affected section or all sections.
+If `02-script.md` has a newer modified time than `04-voiceover.md` or any section voiceover output, treat the existing voiceover output as stale. Do not trust it as current. Ask whether to regenerate the affected section or all sections.
 
 When this skill creates, updates, or reruns `projects/<slug>/04-voiceover.md` or any file under `projects/<slug>/voiceover/`, every later output in the same project becomes stale.
 
@@ -59,7 +56,6 @@ Read these before creating or updating voiceover:
 11. `.agents/_shared/systems/audio-feedback-quality.md`
 12. `references/memory.md`
 13. the chosen project file: `projects/<slug>/02-script.md`
-14. the chosen project file: `projects/<slug>/03-packaging.md`
 
 Load additional shared systems only when needed:
 
@@ -75,7 +71,7 @@ Use this order:
 
 1. If the user names a project slug or path, use that project.
 2. If the current chat clearly selected a project and the folder exists, use that project.
-3. If there is exactly one project with completed `02-script.md` and `03-packaging.md`, smart-select it and say so.
+3. If there is exactly one project with completed `00-topic-intake.md`, `01-research-pack.md`, and `02-script.md`, smart-select it and say so.
 4. Otherwise scan `projects/`, excluding `_template`, and find voiceover candidates.
 
 A voiceover candidate is usually:
@@ -83,7 +79,6 @@ A voiceover candidate is usually:
 - a folder with `00-topic-intake.md`
 - and `01-research-pack.md`
 - and `02-script.md`
-- and `03-packaging.md`
 - and not obviously blocked by stale upstream files
 
 When multiple candidates exist or context is unclear, ask the user to choose before generating audio.
@@ -97,7 +92,6 @@ Before section selection or audio generation, verify the chosen project has:
 - non-empty `00-topic-intake.md`
 - non-empty `01-research-pack.md`
 - non-empty `02-script.md`
-- non-empty `03-packaging.md`
 
 If `02-script.md` does not contain parsable sections in the form:
 
@@ -165,7 +159,7 @@ Choose voiceover target:
 0. All sections
 1. Section 1: <name>
 2. Section 2: <name>
-...
+   ...
 ```
 
 ## Request Modes
@@ -299,7 +293,7 @@ Do not create tag soup. If a line needs many tags to work, rewrite the line only
 7. Write or update `projects/<slug>/04-voiceover.md` as the section voiceover index.
 8. Run the Downstream Stale Gate.
 9. Respond with the Chat Response Format.
-10. Stop before visual plan, HyperFrames build, renders, upload, or self-learning unless explicitly asked.
+10. Stop before visual plan, render, review, upload, or learning unless explicitly asked.
 
 ## TTS Tooling Rules
 
@@ -388,7 +382,6 @@ Source skill: `voiceover`
 Source file:
 
 - `02-script.md`
-- `03-packaging.md`
 
 ## Voice Direction
 
@@ -401,8 +394,8 @@ Source file:
 
 ## Section Voiceover Index
 
-| # | Section | Status | Voice | Speed | Duration | Audio file | Notes |
-|---:|---|---|---|---:|---:|---|---|
+|   # | Section | Status | Voice | Speed | Duration | Audio file | Notes |
+| --: | ------- | ------ | ----- | ----: | -------: | ---------- | ----- |
 
 ## Section Details
 
@@ -428,7 +421,7 @@ Source file:
 
 Next workflow step: `Visual plan`
 
-Do not continue into visual plan, HyperFrames, renders, upload, or self-learning until the user asks for the next skill or explicitly requests that step.
+Do not continue into visual plan, render, review, upload, or learning until the user asks for the next skill or explicitly requests that step.
 ```
 
 If only one section has been generated, include the remaining sections in the index as `not generated`.
@@ -504,14 +497,16 @@ Status: `<status>`
 Generated:
 
 | Section | Status | Voice | Speed | Duration | File |
-|---|---|---|---:|---:|---|
+| ------- | ------ | ----- | ----: | -------: | ---- |
 
 Notes:
+
 - <line 1>
 - <line 2>
 - <line 3>
 
 Stale downstream:
+
 - <file or none>
 ```
 
@@ -527,16 +522,15 @@ A section voiceover pass is ready when:
 - learner clarity issues are noted before production
 - any TTS failure is recorded honestly
 - stale downstream files are listed
-- no visual plan, HyperFrames build, render, upload, or self-learning files are created
+- no visual plan, render, review, upload, or learning files are created
 
 ## Hard Fails
 
 Reject or stop before finishing if:
 
 - the project lacks `02-script.md`
-- the project lacks `03-packaging.md`
 - the script lacks parsable sections
-- upstream files are missing or newer than the script
+- upstream files are missing, or script is older than topic/research
 - the user has not explicitly selected `All` or a specific section
 - the section target is inferred instead of selected by the user
 - `All` is interpreted as one stitched full-video file without explicit user approval
@@ -544,7 +538,7 @@ Reject or stop before finishing if:
 - scratch audio is generated after the user asked for `David23` and did not approve a fallback
 - duplicate MP3/WAV scratch files are left without a reason
 - the skill rewrites major script content without user approval
-- the skill creates visual plan, HyperFrames, renders, upload, or self-learning files
+- the skill creates visual plan, render, review, upload, or learning files
 
 ## Self-Improvement
 

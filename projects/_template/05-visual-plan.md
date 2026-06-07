@@ -1,33 +1,45 @@
 # 05 Visual Plan
 
+Video: `<title>`
+
+Status: `not started`
+
+Source skill: `visual-plan`
+
+Source files:
+
+- `02-script.md`
+- `04-voiceover.md`
+
 ## Visual Direction
 
+- Renderer: `HyperFrames`
+- Format:
+- Main grammar:
+- Script promise:
 - Main motif:
 - WIT role:
 - Real-life texture:
-- UI/mockup needs:
 - Red markup style:
-- Color notes:
+- Motion rule:
 
-## Scene List
+## Section Visual Plan Index
 
-| Section | Narration Purpose | Visual Board Idea | Assets Needed |
-|---|---|---|---|
-| Hook |  |  |  |
-| Reframe |  |  |  |
-| Point 1 |  |  |  |
-| Point 2 |  |  |  |
-| Point 3 |  |  |  |
-| Payoff |  |  |  |
+|   # | Section | Status | Duration | Boards | Section plan | Reference board | Notes |
+| --: | ------- | ------ | -------: | -----: | ------------ | --------------- | ----- |
 
-## Paused-Frame Check
+## Cross-Section Continuity
 
-- One thought per board:
-- Readable label:
-- WIT has a job:
-- Joke or evidence is visible:
-- Works at mobile size:
+- Recurring object:
+- Recurring label:
+- WIT emotion arc:
+- Color/texture notes:
+- Asset reuse notes:
 
-## Decision
+## Stale / Regeneration Notes
 
-`Approved / Revise`
+## Next Step Boundary
+
+Next workflow step: `Render`
+
+Do not continue into render, review, upload, or learning until the user asks for the next skill or explicitly requests that step.

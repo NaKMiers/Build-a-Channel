@@ -9,7 +9,6 @@ Source skill: `voiceover`
 Source files:
 
 - `02-script.md`
-- `03-packaging.md`
 
 ## Voice Direction
 
@@ -49,4 +48,4 @@ Source files:
 
 Next workflow step: `Visual plan`
 
-Do not continue into visual plan, HyperFrames, renders, upload, or self-learning until the user asks for the next skill or explicitly requests that step.
+Do not continue into visual plan, render, review, upload, or learning until the user asks for the next skill or explicitly requests that step.

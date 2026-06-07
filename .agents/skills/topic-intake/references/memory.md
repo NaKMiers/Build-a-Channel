@@ -117,11 +117,11 @@ Context:
 The user clarified that every skill should behave as part of a sequential production pipeline.
 
 Lesson:
-`topic-intake` is the first step. It does not require previous outputs, but changing its output makes research, script, and later production files stale.
+`topic-intake` is the first step. It does not require previous outputs, but changing its output makes research, script, packaging, and later production files stale.
 
 Apply next time:
 
-- when creating or updating `00-topic-intake.md`, check for `01-09` downstream files
+- when creating or updating `00-topic-intake.md`, check for `01-research-pack.md`, `02-script.md`, `03-packaging.md`, and later downstream files
 - list downstream files that are now stale
 - tell the user to remove stale files or rerun downstream skills in order, starting with `research-pack`
 - do not remove downstream files unless the user explicitly asks

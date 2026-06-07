@@ -15,18 +15,24 @@ This is the compact workflow source of truth for `Why It Works`.
 
 ## Sequential Pipeline
 
-The video pipeline is:
+The main video pipeline is:
 
 ```text
 00-topic-intake.md
 01-research-pack.md
 02-script.md
-03-packaging.md
 04-voiceover.md
 05-visual-plan.md
-06-review.md
-07-upload.md
-08-self-learning.md
+06-production-board.md
+07-review.md
+08-upload.md
+09-self-learning.md
+```
+
+Packaging side branch:
+
+```text
+01-research-pack.md -> 03-packaging.md
 ```
 
 Current executable steps:
@@ -34,8 +40,13 @@ Current executable steps:
 - `topic-intake` creates or updates `00-topic-intake.md`.
 - `research-pack` requires `00-topic-intake.md` and writes `01-research-pack.md`.
 - `script-draft` requires `00-topic-intake.md` and `01-research-pack.md`, then writes `02-script.md`.
-- `packaging` requires `00-topic-intake.md`, `01-research-pack.md`, and `02-script.md`, then writes `03-packaging.md`.
-- `voiceover` requires `03-packaging.md`, then writes `04-voiceover.md` and section voiceover files.
+- `packaging` is a side branch from `research-pack`; it requires `00-topic-intake.md` and `01-research-pack.md`, then writes `03-packaging.md`.
+- `voiceover` requires `02-script.md`, then writes `04-voiceover.md` and section voiceover files.
+- `visual-plan` requires `04-voiceover.md` and selected section voiceover, then writes `05-visual-plan.md` and section visual-plan files.
+
+Packaging side-branch rule:
+
+Packaging does not block script, voiceover, visual plan, render, review, upload, or learning. Rerunning packaging does not make main pipeline outputs stale.
 
 Pipeline rules:
 
@@ -43,6 +54,8 @@ Pipeline rules:
 - If a required output is missing, stop and tell the user which skill to run first.
 - Rerunning an earlier step makes later outputs stale.
 - Remove stale downstream outputs only by explicit user request, or regenerate them by rerunning later skills in order.
+
+After `04-voiceover.md`, production branches by section. A selected section should move through visual plan, render, and review as its own branch. `All` means every section gets separate outputs, not one stitched planning artifact.
 
 ## Startup Read Set
 
@@ -77,9 +90,9 @@ Use lightweight gates instead of many separate checklists:
 - Review: paused frames should be understandable, readable, and worth looking at.
 - Learning: after publishing, record only reusable lessons.
 
-## HyperFrames Rule
+## Render Rule
 
-HyperFrames is the active rendering path.
+HyperFrames is the active render path.
 
 Use simple board scenes, WIT poses, voiceover, hard cuts, cue-timed labels, red markup, and handwritten-looking text. Prefer clear static boards before adding motion.
 
@@ -88,4 +101,3 @@ Legacy Remotion notes are historical only. Do not revive Remotion production unl
 ## Browsing Rule
 
 Use the project-local `browse` skill for web or YouTube browsing when available. Fall back to global gstack `/browse` only if the project-local skill cannot run. Do not use other browser tools unless the user explicitly approves a fallback.
-

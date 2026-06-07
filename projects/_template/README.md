@@ -22,6 +22,8 @@ Copy this folder when starting a new long-form `Why It Works` video.
 
 ## Standard Files
 
+Production order keeps script before packaging. Packaging can still run from topic intake and research pack alone.
+
 ```text
 00-topic-intake.md
 01-research-pack.md
@@ -37,6 +39,7 @@ assets/
 hyperframes/
 renders/
 voiceover/
+visual-plan/
 ```
 
 ## Key Links

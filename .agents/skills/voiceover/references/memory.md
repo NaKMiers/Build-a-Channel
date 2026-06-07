@@ -7,11 +7,10 @@ Use this file for section-selection behavior, section voiceover output shape, TT
 
 ## Current Skill Standard
 
-- Run after `packaging`.
-- Require non-empty `00-topic-intake.md`, `01-research-pack.md`, `02-script.md`, and `03-packaging.md`.
+- Run after `script-draft`.
+- Require non-empty `00-topic-intake.md`, `01-research-pack.md`, and `02-script.md`.
 - Treat `02-script.md` as the voiceover source of truth.
 - If upstream files are newer than `02-script.md`, stop and ask the user to rerun `script-draft`.
-- If `02-script.md` is newer than `03-packaging.md`, stop and ask the user to rerun `packaging`.
 - Require the user to explicitly select `All` or a specific section before creating or editing voiceover files.
 - Ask which section to generate whenever the user does not explicitly name a section target.
 - Do not infer the section from the active video state, the next unfinished section, existing previews, missing outputs, or prior chat context.
@@ -60,23 +59,41 @@ Yes, as an operational production lesson if not already recorded elsewhere.
 
 ### 2026-06-07 - Packaging Before Voiceover
 
-Classification: `Operational lesson`
+Classification: `Superseded operational lesson`
 
 Context:
 The user moved Packaging before Voiceover so title, thumbnail, and YouTube description are decided before audio generation.
 
 Lesson:
-Voiceover is now step 5 and requires `03-packaging.md`. It writes `04-voiceover.md`.
+Superseded. Packaging is now outside the main pipeline. Voiceover no longer requires `03-packaging.md`.
 
 Apply next time:
 
-- require non-empty `03-packaging.md`
-- if packaging is missing, stop and ask the user to run `packaging`
-- if the script is newer than packaging, stop and ask the user to rerun `packaging`
+- require non-empty `02-script.md`
+- do not require `03-packaging.md`
 - write or update `04-voiceover.md`, not `03-voiceover.md`
 
 Promote to shared memory:
 yes, this is a pipeline-level rule.
+
+### 2026-06-07 - Packaging Outside Main Pipeline
+
+Classification: `Operational lesson`
+
+Context:
+The user clarified that packaging is outside the main pipeline. It branches from Research Pack and requires only topic intake and research pack.
+
+Lesson:
+Voiceover must not require packaging. For voiceover freshness, only topic intake, research pack, and script matter.
+
+Apply next time:
+
+- require non-empty `02-script.md`
+- treat script older than topic/research as stale
+- treat voiceover older than script as stale
+
+Promote to shared memory:
+yes, this is a channel-wide pipeline rule.
 
 ### 2026-06-06 - Explicit Section Selection Required
 

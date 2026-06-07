@@ -15,8 +15,10 @@ Keep this short. Current rules belong in `current-state.md`, `production-workflo
 ## Current Operational Decisions
 
 - `.agents/_shared/` is now intentionally compact: use `channel/production-workflow.md`, `channel/brand-system.md`, and the four docs in `systems/` as the shared production brain.
-- Sequential skills run in order: `topic-intake -> research-pack -> script-draft -> packaging -> voiceover`.
-- Packaging comes before voiceover so narration and visuals pay off the title-thumbnail promise.
+- Main pipeline order is `topic-intake -> research-pack -> script-draft -> voiceover -> visual-plan -> render -> review -> upload -> learning`.
+- Packaging is a side branch from `research-pack`: it requires only `00-topic-intake.md` and `01-research-pack.md`.
+- Packaging does not block script, voiceover, visual plan, render, review, upload, or learning.
+- After voiceover, production branches by section. `visual-plan` requires the selected section voiceover and creates section-level plans before render.
 - Current WIT source is the draft simple white round-headed pose set in `.agents/_shared/assets/wit/poses/`.
 - Do not use the removed older WIT directions as current channel WIT.
 - Default final narrator is `David23 / am_eric / 0.84 / en-us`; test `am_eric` directly before declaring it unavailable.

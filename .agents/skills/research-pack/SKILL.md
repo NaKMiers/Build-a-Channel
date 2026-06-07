@@ -1,19 +1,19 @@
 ---
 name: research-pack
-description: Create or update the step 2 research pack for a Why It Works video project. Use when the user asks for research pack, research step, evidence pack, source gathering, reference research, factual grounding, visual references, or step 2 of the Why It Works video workflow; requires a completed project 00-topic-intake.md first, stops and asks for Topic Intake if it is missing, reads the shared channel brain, browses web or YouTube for credible sources and visual/reference evidence, then writes only the project's 01-research-pack.md file.
+description: Create or update the step 1 research pack for a Why It Works video project. Use when the user asks for research pack, research step, evidence pack, source gathering, reference research, factual grounding, visual references, or step 1 of the Why It Works video workflow; requires a completed project 00-topic-intake.md first, stops and asks for Topic Intake if it is missing, reads the shared channel brain, browses web or YouTube for credible sources and visual/reference evidence, then writes only the project's 01-research-pack.md file.
 ---
 
 # Research Pack
 
 ## Purpose
 
-Run step 2 of the `Why It Works` video workflow.
+Run step `1` of the `Why It Works` video workflow.
 
 Turn a selected `00-topic-intake.md` into a clean evidence pack that makes the next script obvious without writing the script yet.
 
 ## Pipeline Position
 
-This is step `2` of the video workflow.
+This is step `1` of the video workflow.
 
 Required previous output:
 

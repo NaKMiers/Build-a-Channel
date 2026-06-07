@@ -36,5 +36,3 @@ Use source notes for saved assets, references, generated images, music, and soun
 ## Research Decision
 
 What is strong enough to move into script?
-
-

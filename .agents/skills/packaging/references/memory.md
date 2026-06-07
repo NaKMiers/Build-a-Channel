@@ -7,8 +7,9 @@ Use this file for title taste, thumbnail concept behavior, description format, t
 
 ## Current Skill Standard
 
-- Run after `script-draft` and before `voiceover`.
-- Require non-empty `00-topic-intake.md`, `01-research-pack.md`, and `02-script.md`.
+- Run as a side branch from `research-pack`, outside the main production pipeline.
+- Require non-empty `00-topic-intake.md` and `01-research-pack.md` only.
+- Do not require `02-script.md` or `04-voiceover.md`.
 - Write only `03-packaging.md` and thumbnail assets under `assets/thumbnails/`.
 - Create title options, exactly `5` thumbnail drafts for A/B testing, reusable prompt for each thumbnail, thumbnail comparison scoring, and a full YouTube description package.
 - The previous current channel WIT design from `original-wit-24` was removed on `2026-06-07`.
@@ -21,9 +22,8 @@ Use this file for title taste, thumbnail concept behavior, description format, t
 - Score all `5` thumbnail variants in a comparison table before recommending one.
 - Prefer simple English and mobile-readable thumbnail labels.
 - Keep the channel influence-first; do not turn descriptions into direct product promotion.
-- When `03-packaging.md` is created, updated, or rerun, treat `04-09` downstream outputs as stale.
-- Do not delete stale downstream outputs unless the user explicitly asks.
-- Stop before voiceover, visual plan, HyperFrames, renders, upload, or self-learning.
+- When `03-packaging.md` is created, updated, or rerun, do not mark main-pipeline outputs stale.
+- Stop before script, voiceover, visual plan, render, review, upload, or learning.
 
 ## Output Standard
 
@@ -51,20 +51,39 @@ A useful packaging file should include:
 Classification: `Core operational capability`
 
 Context:
-The user wanted a `Packaging` skill that creates title, thumbnails, and YouTube description metadata, and wanted it placed after Research Pack and before Voiceover.
+The user wanted a `Packaging` skill that creates title, thumbnails, and YouTube description metadata.
 
 Lesson:
-Packaging should run after the script exists but before voiceover, so title, thumbnail, and description can reflect the actual video promise before audio and visual production continue.
+Packaging creates `03-packaging.md` and is a side-branch artifact, not a main-pipeline gate.
 
 Apply next time:
 
-- require `02-script.md`
 - create `03-packaging.md`
 - include title, thumbnails, YouTube description, tags, links, hashtags, chapters, and pinned comment
-- treat `04-voiceover.md` and later outputs as stale after packaging changes
+- do not mark `02-script.md`, `04-voiceover.md`, visual plan, render, review, upload, or learning stale after packaging changes
 
 Promote to shared memory:
 yes, this is a pipeline-level capability.
+
+### 2026-06-07 - Packaging Requires Only Topic And Research
+
+Classification: `Core operational update`
+
+Context:
+The user clarified that packaging should not require a script or voiceover. It should be based on topic intake and research pack only.
+
+Lesson:
+Packaging is outside the main pipeline. It branches from Research Pack and can be created from topic intake and research pack alone.
+
+Apply next time:
+
+- require only non-empty `00-topic-intake.md` and `01-research-pack.md`
+- do not block packaging when `02-script.md` or `04-voiceover.md` is missing
+- do not mark main-pipeline outputs stale after packaging changes
+- use research and the angle package to create the first `10` seconds promise
+
+Promote to shared memory:
+yes, this is a channel-wide pipeline rule.
 
 ### 2026-06-07 - Five Thumbnail A/B Drafts Required
 
