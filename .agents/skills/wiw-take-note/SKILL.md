@@ -19,12 +19,13 @@ This skill is project-local. Use it only inside `C:\ME\THINGS\Build a Channel`.
    - `.agents/_shared/channel/channel-guardrails.md`
    - `.agents/_shared/channel/learning-log.md`
    - `.agents/_shared/channel/codex-collaboration.md`
+   - `.agents/_shared/channel/production-workflow.md`
 
 2. Identify the active scope:
    - Active video folder comes from `.agents/_shared/channel/current-state.md`.
    - Current review notes usually belong in `projects/<slug>/06-review.md`.
    - Reusable lessons belong in `.agents/_shared/channel/learning-log.md`.
-   - Stable production conventions can also belong in `.agents/_shared/` when they affect future videos, but do not create extra docs unless needed.
+   - Stable production conventions belong in the compact `.agents/_shared/systems/` docs when they affect future videos, but do not create extra docs unless needed.
 
 3. Classify the note before writing:
    - `Operational lesson`: reusable workflow, timing, layout, QA, HyperFrames, voice-sync, or review-process lesson.

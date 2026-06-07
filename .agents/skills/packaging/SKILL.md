@@ -60,23 +60,20 @@ Read these before creating or updating packaging:
 7. `.agents/_shared/channel/reference-channels.md`
 8. `.agents/_shared/channel/learning-log.md`
 9. `.agents/_shared/channel/codex-collaboration.md`
-10. `.agents/_shared/thumbnail-packaging-system.md`
-11. `.agents/_shared/packaging-scorecard.md`
-12. `.agents/_shared/channel/branding/thumbnail-visual-rules.md`
-13. `.agents/_shared/hook-system.md`
-14. `.agents/_shared/english-learner-clarity-system.md`
-15. `.agents/_shared/channel/branding/wit-channel-system.md`
-16. `references/memory.md`
-17. the chosen project files:
+10. `.agents/_shared/channel/production-workflow.md`
+11. `.agents/_shared/channel/brand-system.md`
+12. `.agents/_shared/systems/topic-packaging-hooks.md`
+13. `.agents/_shared/systems/script-learner-voice.md`
+14. `references/memory.md`
+15. the chosen project files:
     - `projects/<slug>/00-topic-intake.md`
     - `projects/<slug>/01-research-pack.md`
     - `projects/<slug>/02-script.md`
 
 Load additional shared systems only when needed:
 
-- `.agents/_shared/real-life-visual-asset-system.md` when planning real or real-looking thumbnail assets
-- `.agents/_shared/reference-board-system.md` when thumbnail concepts need reference-board support
-- the approved WIT pose folder or reference thumbnails when a current WIT set exists
+- `.agents/_shared/systems/visual-production.md` when planning real or real-looking thumbnail assets or reference-board support
+- `.agents/_shared/assets/wit/poses/` when current WIT pose assets are needed
 
 ## Project Selection Gate
 
@@ -216,10 +213,10 @@ Thumbnail concepts should use:
 
 ## WIT Prompt Requirements
 
-Use the current channel WIT direction from `.agents/_shared/channel/branding/wit-channel-system.md`.
+Use the current channel WIT direction from `.agents/_shared/channel/brand-system.md`.
 
-As of `2026-06-07`, the old `original-wit-24` pose set has been removed and WIT replacement is pending.
-Until a new reusable pose set is generated, thumbnail prompts for `Why Cheap Products Keep Getting Worse` should follow the approved thumbnail-WIT style from the restored five thumbnail drafts.
+As of `2026-06-07`, the old `original-wit-24` pose set has been removed and the current draft WIT pose set lives in `.agents/_shared/assets/wit/poses/`.
+Until the user approves it as final, thumbnail prompts should follow the draft thumbnail-WIT style from the restored `Why Cheap Products Keep Getting Worse` thumbnail direction.
 
 Every thumbnail image prompt must include a WIT block like this, adapted only for pose and emotion:
 
@@ -282,7 +279,7 @@ Do not include product promotion unless the project explicitly requires it and t
 9. Generate `5` thumbnail drafts when image generation is available; otherwise record prompt-only status.
 10. Compare and score all `5` thumbnails in a table using the thumbnail rules, packaging scorecard, and WIT consistency.
 11. Pair the strongest titles and thumbnail drafts into `3-5` complete packages.
-12. Score the strongest packages with `.agents/_shared/packaging-scorecard.md`.
+12. Score the strongest packages with `.agents/_shared/systems/topic-packaging-hooks.md`.
 13. Write YouTube description options:
    - final recommended description
    - alternate first two lines when useful

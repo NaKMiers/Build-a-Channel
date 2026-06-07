@@ -10,12 +10,12 @@ At the start of any new session in this workspace, read these files in order:
 
 1. [README.md](C:\ME\THINGS\Build a Channel\README.md)
 2. [.agents/rules/README.md](C:\ME\THINGS\Build a Channel\.agents\rules\README.md)
-3. [.agents/_shared/channel/current-state.md](C:\ME\THINGS\Build a Channel\.agents_shared\channel\current-state.md)
-4. [.agents/_shared/channel/channel-foundation.md](C:\ME\THINGS\Build a Channel\.agents_shared\channel\channel-foundation.md)
-5. [.agents/_shared/channel/channel-guardrails.md](C:\ME\THINGS\Build a Channel\.agents_shared\channel\channel-guardrails.md)
-6. [.agents/_shared/channel/reference-channels.md](C:\ME\THINGS\Build a Channel\.agents_shared\channel\reference-channels.md)
-7. [.agents/_shared/channel/learning-log.md](C:\ME\THINGS\Build a Channel\.agents_shared\channel\learning-log.md)
-8. [.agents/_shared/channel/codex-collaboration.md](C:\ME\THINGS\Build a Channel\.agents_shared\channel\codex-collaboration.md)
+3. [.agents/_shared/channel/current-state.md](C:\ME\THINGS\Build a Channel\.agents\_shared\channel\current-state.md)
+4. [.agents/_shared/channel/channel-foundation.md](C:\ME\THINGS\Build a Channel\.agents\_shared\channel\channel-foundation.md)
+5. [.agents/_shared/channel/channel-guardrails.md](C:\ME\THINGS\Build a Channel\.agents\_shared\channel\channel-guardrails.md)
+6. [.agents/_shared/channel/reference-channels.md](C:\ME\THINGS\Build a Channel\.agents\_shared\channel\reference-channels.md)
+7. [.agents/_shared/channel/learning-log.md](C:\ME\THINGS\Build a Channel\.agents\_shared\channel\learning-log.md)
+8. [.agents/_shared/channel/codex-collaboration.md](C:\ME\THINGS\Build a Channel\.agents\_shared\channel\codex-collaboration.md)
 
 Do this before:
 

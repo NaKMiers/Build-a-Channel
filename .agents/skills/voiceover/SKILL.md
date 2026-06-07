@@ -54,19 +54,18 @@ Read these before creating or updating voiceover:
 6. `.agents/_shared/channel/channel-guardrails.md`
 7. `.agents/_shared/channel/learning-log.md`
 8. `.agents/_shared/channel/codex-collaboration.md`
-9. `.agents/_shared/voice/narration-system.md`
-10. `.agents/_shared/voice/script-markup-guide.md`
-11. `.agents/_shared/voice/voice-test-protocol.md`
-12. `.agents/_shared/english-learner-clarity-system.md`
-13. `references/memory.md`
-14. the chosen project file: `projects/<slug>/02-script.md`
-15. the chosen project file: `projects/<slug>/03-packaging.md`
+9. `.agents/_shared/channel/production-workflow.md`
+10. `.agents/_shared/systems/script-learner-voice.md`
+11. `.agents/_shared/systems/audio-feedback-quality.md`
+12. `references/memory.md`
+13. the chosen project file: `projects/<slug>/02-script.md`
+14. the chosen project file: `projects/<slug>/03-packaging.md`
 
 Load additional shared systems only when needed:
 
-- `.agents/_shared/hook-system.md` when generating Section 1 or checking the first `10` seconds
-- `.agents/_shared/scene-grammar-system.md` when the section audio needs visual cue timing notes
-- `.agents/_shared/music-and-sound-system.md` only when the user asks about mix, silence, or sound under narration
+- `.agents/_shared/systems/topic-packaging-hooks.md` when generating Section 1 or checking the first `10` seconds
+- `.agents/_shared/systems/visual-production.md` when the section audio needs visual cue timing notes
+- `.agents/_shared/systems/audio-feedback-quality.md` when the user asks about mix, silence, or sound under narration
 
 ## Project Selection Gate
 
@@ -228,7 +227,7 @@ Promote shared lessons with a clear classification such as `Operational lesson` 
 
 ## Voice Direction Defaults
 
-Use `.agents/_shared/voice/narration-system.md` as the source of truth.
+Use `.agents/_shared/systems/script-learner-voice.md` as the source of truth.
 
 Default final channel voice:
 
@@ -260,7 +259,7 @@ Do not generate scratch audio as a substitute for `David23` without explicit use
 
 ## Markup Rules
 
-Use `.agents/_shared/voice/script-markup-guide.md`.
+Use `.agents/_shared/systems/script-learner-voice.md`.
 
 For each section:
 

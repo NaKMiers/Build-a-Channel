@@ -35,18 +35,17 @@ Read these before creating or updating a research pack:
 6. `.agents/_shared/channel/reference-channels.md`
 7. `.agents/_shared/channel/learning-log.md`
 8. `.agents/_shared/channel/codex-collaboration.md`
-9. `.agents/_shared/topic-angle-selection-system.md`
-10. `.agents/_shared/reference-board-system.md`
-11. `.agents/_shared/real-life-visual-asset-system.md`
-12. `.agents/_shared/english-learner-clarity-system.md`
+9. `.agents/_shared/channel/production-workflow.md`
+10. `.agents/_shared/systems/topic-packaging-hooks.md`
+11. `.agents/_shared/systems/visual-production.md`
+12. `.agents/_shared/systems/script-learner-voice.md`
 13. `references/memory.md`
 14. the chosen project file: `projects/<slug>/00-topic-intake.md`
 
 Load additional shared systems only when needed:
 
-- `.agents/_shared/thumbnail-packaging-system.md` when shaping thumbnail tension
-- `.agents/_shared/hook-system.md` when checking first `10` seconds evidence
-- `.agents/_shared/scene-grammar-system.md` and `.agents/_shared/visual-humor-patterns.md` when research needs boardable visual jokes
+- `.agents/_shared/systems/topic-packaging-hooks.md` when shaping thumbnail tension or checking first `10` seconds evidence
+- `.agents/_shared/systems/visual-production.md` when research needs boardable visual jokes, real-life assets, or reference-board support
 
 ## Project Selection Gate
 

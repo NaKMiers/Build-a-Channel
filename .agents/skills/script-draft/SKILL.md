@@ -42,24 +42,21 @@ Read these before creating or updating a script:
 6. `.agents/_shared/channel/reference-channels.md`
 7. `.agents/_shared/channel/learning-log.md`
 8. `.agents/_shared/channel/codex-collaboration.md`
-9. `.agents/_shared/hook-system.md`
-10. `.agents/_shared/english-learner-clarity-system.md`
-11. `.agents/_shared/voice/narration-system.md`
-12. `.agents/_shared/voice/script-markup-guide.md`
-13. `.agents/_shared/scene-grammar-system.md`
-14. `.agents/_shared/visual-humor-patterns.md`
-15. `.agents/_shared/real-life-visual-asset-system.md`
-16. `references/memory.md`
-17. `projects/why-everyone-pretends-to-be-busy/02-script.md` when available, as the current sectioned script reference
-18. the chosen project files:
+9. `.agents/_shared/channel/production-workflow.md`
+10. `.agents/_shared/systems/topic-packaging-hooks.md`
+11. `.agents/_shared/systems/script-learner-voice.md`
+12. `.agents/_shared/systems/visual-production.md`
+13. `references/memory.md`
+14. `projects/why-everyone-pretends-to-be-busy/02-script.md` when available, as the current sectioned script reference
+15. the chosen project files:
     - `projects/<slug>/00-topic-intake.md`
     - `projects/<slug>/01-research-pack.md`
 
 Load additional shared systems only when needed:
 
-- `.agents/_shared/thumbnail-packaging-system.md` when a section needs to preserve title-thumbnail tension
-- `.agents/_shared/channel/branding/wit-channel-system.md` when WIT behavior needs stronger guidance
-- `.agents/_shared/english-learner-useful-phrase-rules.md` when choosing phrase highlights
+- `.agents/_shared/systems/topic-packaging-hooks.md` when a section needs to preserve title-thumbnail tension
+- `.agents/_shared/channel/brand-system.md` when WIT behavior needs stronger guidance
+- `.agents/_shared/systems/script-learner-voice.md` when choosing phrase highlights
 
 ## Project Selection Gate
 

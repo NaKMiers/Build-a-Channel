@@ -12,12 +12,12 @@ Use this file for title taste, thumbnail concept behavior, description format, t
 - Write only `03-packaging.md` and thumbnail assets under `assets/thumbnails/`.
 - Create title options, exactly `5` thumbnail drafts for A/B testing, reusable prompt for each thumbnail, thumbnail comparison scoring, and a full YouTube description package.
 - The previous current channel WIT design from `original-wit-24` was removed on `2026-06-07`.
-- A draft replacement pose set now exists at `.agents/_shared/assets/wit/poses/thumbnail-wit-24/` and is awaiting user review. Thumbnail prompts for the cheap-products project should use this thumbnail-WIT style: simple white round-headed figure, thick black outline, oversized black glasses, expressive eyebrows, simple white body, and strong suspicious / betrayed / panicked expressions.
+- A draft replacement pose set now exists at `.agents/_shared/assets/wit/poses/` and is awaiting user review. Thumbnail prompts should use this WIT style: simple white round-headed figure, thick black outline, oversized black glasses, expressive eyebrows, simple white body, and strong suspicious / betrayed / panicked expressions.
 - Never prompt the removed old WIT details as current channel WIT: messy black hair, white shirt, receipt-like tie, dark pants, oversized dark shoes.
 - In chat responses, include every thumbnail variant with its image/path and full prompt in a copyable fenced block.
 - Include tags, keywords, hashtags, links or placeholders, chapters when useful, and pinned comment ideas.
 - Use the channel rule: thumbnail shows the weird situation; title names the hidden logic.
-- Score packages with `.agents/_shared/packaging-scorecard.md`.
+- Score packages with `.agents/_shared/systems/topic-packaging-hooks.md`.
 - Score all `5` thumbnail variants in a comparison table before recommending one.
 - Prefer simple English and mobile-readable thumbnail labels.
 - Keep the channel influence-first; do not turn descriptions into direct product promotion.
@@ -100,7 +100,7 @@ The useful part remains: packaging prompts must explicitly preserve whatever WIT
 
 Apply next time:
 
-- read `.agents/_shared/channel/branding/wit-channel-system.md` before thumbnail generation
+- read `.agents/_shared/channel/brand-system.md` before thumbnail generation
 - include the current WIT identity block in every thumbnail prompt
 - score WIT consistency in the thumbnail comparison table
 - mark off-model generated WIT as failed or concept-only
@@ -124,7 +124,7 @@ Apply next time:
 - do not reference `original-wit-24` as current WIT
 - do not generate the old messy-hair shirt-and-tie WIT unless explicitly asked as historical reference
 - keep restored thumbnail PNGs as the current visual direction for this video's WIT
-- use `thumbnail-wit-24` as draft WIT reference only after user review; do not mark it final without approval
+- use `.agents/_shared/assets/wit/poses/` as draft WIT reference only after user review; do not mark it final without approval
 
 Promote to shared memory:
 Yes. This changes the channel-wide character direction.

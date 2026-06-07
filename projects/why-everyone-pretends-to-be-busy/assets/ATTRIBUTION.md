@@ -29,8 +29,11 @@ Scope:
 
 ## WIT
 
-WIT transparent pose PNGs copied from:
-`C:\ME\THINGS\Build a Channel\.agents\_shared\assets\wit\poses\original-wit-24\transparent`
+WIT transparent pose PNGs were copied from the older shared WIT set before the shared asset cleanup.
+That old `original-wit-24` shared folder has been removed and should not be used as the current channel WIT source.
+
+Current reusable WIT draft source:
+`C:\ME\THINGS\Build a Channel\.agents\_shared\assets\wit\poses`
 
 ## Generated Support Images
 

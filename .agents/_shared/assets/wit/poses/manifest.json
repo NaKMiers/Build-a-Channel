@@ -1,122 +1,98 @@
 [
   {
-    "file": "wit-pose-neutral-front.png",
-    "source_index": 5,
-    "source": "ig_02da8ae344e8f64e016a24f76e18648191bf72957db36c8e1c.png"
+    "pose": "neutral-front",
+    "file": "wit-pose-neutral-front.png"
   },
   {
-    "file": "wit-pose-talking-front.png",
-    "source_index": 6,
-    "source": "ig_02da8ae344e8f64e016a24f9019df081919eda45134673a8e5.png"
+    "pose": "talking-front",
+    "file": "wit-pose-talking-front.png"
   },
   {
-    "file": "wit-pose-pointing-left.png",
-    "source_index": 7,
-    "source": "ig_02da8ae344e8f64e016a24f96429d88191890239d78d199918.png"
+    "pose": "pointing-left",
+    "file": "wit-pose-pointing-left.png"
   },
   {
-    "file": "wit-pose-pointing-right.png",
-    "source_index": 8,
-    "source": "ig_02da8ae344e8f64e016a24fa3d73888191921dfb00c63cf1bf.png"
+    "pose": "pointing-right",
+    "file": "wit-pose-pointing-right.png"
   },
   {
-    "file": "wit-pose-thinking.png",
-    "source_index": 9,
-    "source": "ig_02da8ae344e8f64e016a24fa9c2e808191a518bb63fb4aa19c.png"
+    "pose": "thinking",
+    "file": "wit-pose-thinking.png"
   },
   {
-    "file": "wit-pose-deadpan-side-eye.png",
-    "source_index": 10,
-    "source": "ig_02da8ae344e8f64e016a24fb038bb0819195589f23b207ecc5.png"
+    "pose": "deadpan-side-eye",
+    "file": "wit-pose-deadpan-side-eye.png"
   },
   {
-    "file": "wit-pose-confused.png",
-    "source_index": 11,
-    "source": "ig_02da8ae344e8f64e016a24fb67cdb88191838b85249b625a6f.png"
+    "pose": "confused",
+    "file": "wit-pose-confused.png"
   },
   {
-    "file": "wit-pose-shocked.png",
-    "source_index": 12,
-    "source": "ig_02da8ae344e8f64e016a24fbe12ca48191a6f982621ec85d0b.png"
+    "pose": "shocked",
+    "file": "wit-pose-shocked.png"
   },
   {
-    "file": "wit-pose-suspicious.png",
-    "source_index": 13,
-    "source": "ig_02da8ae344e8f64e016a24fc4f603c819194a5f9c88dd0eb0f.png"
+    "pose": "suspicious",
+    "file": "wit-pose-suspicious.png"
   },
   {
-    "file": "wit-pose-betrayed.png",
-    "source_index": 14,
-    "source": "ig_02da8ae344e8f64e016a24fcaa4104819181d807681d71a27c.png"
+    "pose": "betrayed",
+    "file": "wit-pose-betrayed.png"
   },
   {
-    "file": "wit-pose-facepalm.png",
-    "source_index": 28,
-    "source": "ig_02da8ae344e8f64e016a2504dd7d6081919245a03fd14f1c4a.png"
+    "pose": "facepalm",
+    "file": "wit-pose-facepalm.png"
   },
   {
-    "file": "wit-pose-tiny-defeated.png",
-    "source_index": 15,
-    "source": "ig_02da8ae344e8f64e016a24fdc30ba8819191cdc5f9f4a06d8a.png"
+    "pose": "tiny-defeated",
+    "file": "wit-pose-tiny-defeated.png"
   },
   {
-    "file": "wit-pose-money-panic.png",
-    "source_index": 16,
-    "source": "ig_02da8ae344e8f64e016a24fe4afce8819189273ff6a72c83cf.png"
+    "pose": "money-panic",
+    "file": "wit-pose-money-panic.png"
   },
   {
-    "file": "wit-pose-receipt-attacked.png",
-    "source_index": 29,
-    "source": "ig_02da8ae344e8f64e016a25055f4a808191961d439a53a793b1.png"
+    "pose": "receipt-attacked",
+    "file": "wit-pose-receipt-attacked.png"
   },
   {
-    "file": "wit-pose-holding-receipt-evidence.png",
-    "source_index": 18,
-    "source": "ig_02da8ae344e8f64e016a24ff37fc1c81919724f1c7e3590439.png"
+    "pose": "holding-receipt-evidence",
+    "file": "wit-pose-holding-receipt-evidence.png"
   },
   {
-    "file": "wit-pose-empty-wallet.png",
-    "source_index": 19,
-    "source": "ig_02da8ae344e8f64e016a24ff9114a88191a4983656a11a1cf0.png"
+    "pose": "empty-wallet",
+    "file": "wit-pose-empty-wallet.png"
   },
   {
-    "file": "wit-pose-price-tag-suspicion.png",
-    "source_index": 20,
-    "source": "ig_02da8ae344e8f64e016a24fff03298819184197e9b4973802d.png"
+    "pose": "price-tag-suspicion",
+    "file": "wit-pose-price-tag-suspicion.png"
   },
   {
-    "file": "wit-pose-hidden-fee-panic.png",
-    "source_index": 21,
-    "source": "ig_02da8ae344e8f64e016a25004ae5988191a605cfa8331fed05.png"
+    "pose": "hidden-fee-panic",
+    "file": "wit-pose-hidden-fee-panic.png"
   },
   {
-    "file": "wit-pose-holding-phone-panic.png",
-    "source_index": 22,
-    "source": "ig_02da8ae344e8f64e016a2500b05c408191984b2ce50e306e0e.png"
+    "pose": "holding-phone-panic",
+    "file": "wit-pose-holding-phone-panic.png"
   },
   {
-    "file": "wit-pose-typing-on-laptop.png",
-    "source_index": 23,
-    "source": "ig_02da8ae344e8f64e016a25015211a08191b41bee254a432b1c.png"
+    "pose": "typing-on-laptop",
+    "file": "wit-pose-typing-on-laptop.png"
   },
   {
-    "file": "wit-pose-running-away.png",
-    "source_index": 24,
-    "source": "ig_02da8ae344e8f64e016a2501e692ac8191b767664d4a1c2d13.png"
+    "pose": "running-away",
+    "file": "wit-pose-running-away.png"
   },
   {
-    "file": "wit-pose-trapped-by-app-screen.png",
-    "source_index": 25,
-    "source": "ig_02da8ae344e8f64e016a25026326d08191b57b58b84463df17.png"
+    "pose": "trapped-by-app-screen",
+    "file": "wit-pose-trapped-by-app-screen.png"
   },
   {
-    "file": "wit-pose-awkward-celebration.png",
-    "source_index": 26,
-    "source": "ig_02da8ae344e8f64e016a2503038c9481918d1236f84882ed4c.png"
+    "pose": "awkward-celebration",
+    "file": "wit-pose-awkward-celebration.png"
   },
   {
-    "file": "wit-pose-sleeping-burned-out.png",
-    "source_index": 27,
-    "source": "ig_02da8ae344e8f64e016a250383ab30819189e716ec7cb6223f.png"
+    "pose": "sleeping-burned-out",
+    "file": "wit-pose-sleeping-burned-out.png"
   }
 ]

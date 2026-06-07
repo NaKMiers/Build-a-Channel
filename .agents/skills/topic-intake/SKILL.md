@@ -43,12 +43,10 @@ Read these before generating or persisting topic ideas:
 6. `.agents/_shared/channel/reference-channels.md`
 7. `.agents/_shared/channel/learning-log.md`
 8. `.agents/_shared/channel/codex-collaboration.md`
-9. `.agents/_shared/topic-angle-selection-system.md`
-10. `.agents/_shared/topic-angle-scorecard.md`
-11. `.agents/_shared/thumbnail-packaging-system.md`
-12. `.agents/_shared/hook-system.md`
-13. `.agents/_shared/english-learner-clarity-system.md`
-14. `references/memory.md`
+9. `.agents/_shared/channel/production-workflow.md`
+10. `.agents/_shared/systems/topic-packaging-hooks.md`
+11. `.agents/_shared/systems/script-learner-voice.md`
+12. `references/memory.md`
 
 For quality calibration, inspect recent project examples when available, especially:
 
@@ -137,7 +135,7 @@ This video is about how _____ looks like _____, but is actually _____.
    - too close to direct product promotion
 6. Browse YouTube or the web for high-view reference videos for each serious candidate.
 7. Use the reference signal to revise, reject, or strengthen candidate angles.
-8. Score the strongest angles with `.agents/_shared/topic-angle-scorecard.md`.
+8. Score the strongest angles with `.agents/_shared/systems/topic-packaging-hooks.md`.
 9. Keep the best `5-7` candidates and recommend the top `1-3`.
 10. For the best candidate, include concrete next-step readiness: what would become research, packaging, and first `10` seconds.
 11. In Persist Mode, create or update only `projects/<slug>/00-topic-intake.md`.

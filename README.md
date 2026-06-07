@@ -18,7 +18,7 @@ README.md       source map for humans and future agents
 
 ## Main Folders
 
-- [.agents/_shared](C:\ME\THINGS\Build a Channel\.agents_shared)
+- [.agents/_shared](C:\ME\THINGS\Build a Channel\.agents\_shared)
   The shared brain of the channel: strategy, learning, reusable production systems, WIT assets, voice notes, templates, and workflow docs.
 - [.agents/rules](C:\ME\THINGS\Build a Channel\.agents\rules)
   Rules for Codex, memory, and the video production workflow.
@@ -31,12 +31,12 @@ README.md       source map for humans and future agents
 
 Read these first when making strategy or production decisions:
 
-1. [current-state.md](C:\ME\THINGS\Build a Channel\.agents_shared\channel\current-state.md)
-2. [channel-foundation.md](C:\ME\THINGS\Build a Channel\.agents_shared\channel\channel-foundation.md)
-3. [channel-guardrails.md](C:\ME\THINGS\Build a Channel\.agents_shared\channel\channel-guardrails.md)
-4. [reference-channels.md](C:\ME\THINGS\Build a Channel\.agents_shared\channel\reference-channels.md)
-5. [learning-log.md](C:\ME\THINGS\Build a Channel\.agents_shared\channel\learning-log.md)
-6. [codex-collaboration.md](C:\ME\THINGS\Build a Channel\.agents_shared\channel\codex-collaboration.md)
+1. [current-state.md](C:\ME\THINGS\Build a Channel\.agents\_shared\channel\current-state.md)
+2. [channel-foundation.md](C:\ME\THINGS\Build a Channel\.agents\_shared\channel\channel-foundation.md)
+3. [channel-guardrails.md](C:\ME\THINGS\Build a Channel\.agents\_shared\channel\channel-guardrails.md)
+4. [reference-channels.md](C:\ME\THINGS\Build a Channel\.agents\_shared\channel\reference-channels.md)
+5. [learning-log.md](C:\ME\THINGS\Build a Channel\.agents\_shared\channel\learning-log.md)
+6. [codex-collaboration.md](C:\ME\THINGS\Build a Channel\.agents\_shared\channel\codex-collaboration.md)
 
 ## Video Lifecycle
 
@@ -81,4 +81,4 @@ If it is an executable Codex skill, put it in `.agents/skills/`.
 
 If it is a rule for how Codex or future skills should behave, put it in `.agents/rules/`.
 
-Before writing any core strategy change, use [channel-guardrails.md](C:\ME\THINGS\Build a Channel\.agents_shared\channel\channel-guardrails.md) and classify the change as `Core`, `Experiment`, or `Reject`.
+Before writing any core strategy change, use [channel-guardrails.md](C:\ME\THINGS\Build a Channel\.agents\_shared\channel\channel-guardrails.md) and classify the change as `Core`, `Experiment`, or `Reject`.

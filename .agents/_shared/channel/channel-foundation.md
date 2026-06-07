@@ -141,7 +141,7 @@ Preferred video frames:
 - `The strange logic behind X`
 
 Topic angle selection is now a required channel-wide gate.
-Use [topic-angle-selection-system.md](C:\ME\THINGS\Build a Channel\.agents\_shared\topic-angle-selection-system.md), [topic-angle-scorecard.md](C:\ME\THINGS\Build a Channel\.agents\_shared\topic-angle-scorecard.md), and [topic-angle-scorecards](C:\ME\THINGS\Build a Channel\.agents\_shared\channel\topic-angle-scorecards) before future topics move into research, packaging, hooks, scripts, or production.
+Use [topic-packaging-hooks.md](C:\ME\THINGS\Build a Channel\.agents\_shared\systems\topic-packaging-hooks.md) before future topics move into research, packaging, hooks, scripts, or production.
 
 Working rule:
 
@@ -203,7 +203,7 @@ Narration direction:
 
 `a calm person explaining something ridiculous while refusing to act surprised`
 
-Use the channel-wide voice system in [narration-system.md](C:\ME\THINGS\Build a Channel\.agents\_shared\voice\narration-system.md), [script-markup-guide.md](C:\ME\THINGS\Build a Channel\.agents\_shared\voice\script-markup-guide.md), and [voice-test-protocol.md](C:\ME\THINGS\Build a Channel\.agents\_shared\voice\voice-test-protocol.md) before generating full voiceover for future videos.
+Use the channel-wide voice system in [script-learner-voice.md](C:\ME\THINGS\Build a Channel\.agents\_shared\systems\script-learner-voice.md) before generating full voiceover for future videos.
 
 Future scripts should be marked with `[pause]`, `[beat]`, `[deadpan]`, `[slower]`, and `[emphasis]` where needed so punchlines have breathing room, dense points stay learner-friendly, and visual labels can land on the spoken cue.
 
@@ -243,7 +243,7 @@ Rule:
 
 `The viewer should come for the topic and leave with better English.`
 
-Use the channel-wide clarity system in [english-learner-clarity-system.md](C:\ME\THINGS\Build a Channel\.agents\_shared\english-learner-clarity-system.md), [english-learner-script-checklist.md](C:\ME\THINGS\Build a Channel\.agents\_shared\english-learner-script-checklist.md), [english-learner-visual-checklist.md](C:\ME\THINGS\Build a Channel\.agents\_shared\english-learner-visual-checklist.md), [english-learner-useful-phrase-rules.md](C:\ME\THINGS\Build a Channel\.agents\_shared\english-learner-useful-phrase-rules.md), and [english-learner-humor-clarity-rules.md](C:\ME\THINGS\Build a Channel\.agents\_shared\english-learner-humor-clarity-rules.md) before future scripts, boards, rough cuts, or final reviews are approved.
+Use the channel-wide system in [script-learner-voice.md](C:\ME\THINGS\Build a Channel\.agents\_shared\systems\script-learner-voice.md) before future scripts, boards, rough cuts, or final reviews are approved.
 
 Working rule:
 
@@ -272,14 +272,14 @@ Use two WIT modes:
 - `Suffering WIT` for hooks, punchlines, thumbnails, and retention beats
 
 WIT should often feel like the viewer's unlucky friend: suspicious of `free`, financially attacked by receipts and subscriptions, trapped by apps, and dryly confused by modern systems.
-Use the channel-wide system in [wit-channel-system.md](C:\ME\THINGS\Build a Channel\.agents\_shared\channel\branding\wit-channel-system.md) and the reusable asset rules in [usage-rules.md](C:\ME\THINGS\Build a Channel\.agents\_shared\assets\wit\usage-rules.md) for future videos.
+Use the channel-wide system in [brand-system.md](C:\ME\THINGS\Build a Channel\.agents\_shared\channel\brand-system.md) for future WIT and thumbnail decisions.
 
 Handwritten text is part of the default video identity.
 In HyperFrames, this can be created with handwritten-style fonts, CSS text, SVG text, rough underline/cross-out shapes, or exported hand-drawn text images.
 The goal is not perfect handwriting. The goal is a casual, human, funny explainer feel.
 
 Reference-board research is part of the default video identity.
-Use the channel-wide system in [reference-board-system.md](C:\ME\THINGS\Build a Channel\.agents\_shared\reference-board-system.md) and the reusable template in [reference-boards](C:\ME\THINGS\Build a Channel\.agents\_shared\reference-boards) before future videos move from topic idea into full script, packaging, hook, or production planning.
+Use [visual-production.md](C:\ME\THINGS\Build a Channel\.agents\_shared\systems\visual-production.md) before future videos move from topic idea into full script, packaging, hook, or production planning.
 The working rule is:
 
 `What does this topic look like in real life, and what would make it funny if paused?`
@@ -289,7 +289,7 @@ Boards should separate `safe asset`, `mockup target`, `inspiration only`, and `r
 Do not copy another creator's exact frame, thumbnail, screenshot, or joke layout.
 
 Real-life visual texture is part of the default video identity.
-Use the channel-wide system in [real-life-visual-asset-system.md](C:\ME\THINGS\Build a Channel\.agents\_shared\real-life-visual-asset-system.md) so future videos mix WIT, handwritten labels, and safe real-life or real-looking evidence.
+Use [visual-production.md](C:\ME\THINGS\Build a Channel\.agents\_shared\systems\visual-production.md) so future videos mix WIT, handwritten labels, and safe real-life or real-looking evidence.
 The working rule is:
 
 `Use real-life assets as evidence, not decoration.`
@@ -299,7 +299,7 @@ Prefer self-shot, generated, licensed, public-domain, or self-made mockup assets
 Avoid real private data, unclear copyrighted images, pixel-copied app screens, and real logos unless there is a specific approved reason.
 
 Reusable comedy assets are part of the default channel production system.
-Use the channel-wide [Comedy Asset Library](C:\ME\THINGS\Build a Channel\.agents\_shared\assets\comedy) and [Comedy Asset Inventory](C:\ME\THINGS\Build a Channel\.agents\_shared\assets\comedy\asset-inventory.md) when future videos need recurring funny objects, red markup, hidden payment props, internet traps, modern-life pain objects, or WIT interaction props.
+Use [visual-production.md](C:\ME\THINGS\Build a Channel\.agents\_shared\systems\visual-production.md) when future videos need recurring funny objects, red markup, hidden payment props, internet traps, modern-life pain objects, or WIT interaction props.
 The working rule is:
 
 `Comedy assets should make the explanation clearer, not just busier.`
@@ -309,7 +309,7 @@ Do not throw the whole library into one video.
 Every promoted reusable comedy asset needs a source note, a readability check, and a clear comedy job.
 
 Scene grammar is part of the default video identity.
-Use the channel-wide system in [scene-grammar-system.md](C:\ME\THINGS\Build a Channel\.agents\_shared\scene-grammar-system.md), [visual-humor-patterns.md](C:\ME\THINGS\Build a Channel\.agents\_shared\visual-humor-patterns.md), and [board-grammar.md](C:\ME\THINGS\Build a Channel\.agents\_shared\hyperframes\board-grammar.md) so future videos stay simple, funny, and fast to produce.
+Use [visual-production.md](C:\ME\THINGS\Build a Channel\.agents\_shared\systems\visual-production.md) so future videos stay simple, funny, and fast to produce.
 The working rule is:
 
 `Static drawing -> narration twist -> red markup or hard cut -> next static drawing.`
@@ -318,7 +318,7 @@ Each board should carry one thought, one joke or evidence object, one WIT reacti
 During review, paused frames should be understandable and should contain either joke value or clear evidence.
 
 Music and sound are part of the default channel identity, but they should stay under the narration.
-Use the channel-wide system in [music-and-sound-system.md](C:\ME\THINGS\Build a Channel\.agents\_shared\music-and-sound-system.md), [sound-effects-library/README.md](C:\ME\THINGS\Build a Channel\.agents\_shared\sound-effects-library\README.md), and [audio-mixing-checklist.md](C:\ME\THINGS\Build a Channel\.agents\_shared\audio-mixing-checklist.md) so future videos sound light, dry, and learner-friendly.
+Use [audio-feedback-quality.md](C:\ME\THINGS\Build a Channel\.agents\_shared\systems\audio-feedback-quality.md) so future videos sound light, dry, and learner-friendly.
 The working rule is:
 
 `Narration is the product. Music and sound effects are support.`
@@ -329,8 +329,8 @@ Avoid corporate explainer music, cinematic trailer music, motivational tracks, d
 
 Thumbnail direction:
 
-- Use the channel-wide system in [thumbnail-packaging-system.md](C:\ME\THINGS\Build a Channel\.agents\_shared\thumbnail-packaging-system.md)
-- Use the visual rules in [thumbnail-visual-rules.md](C:\ME\THINGS\Build a Channel\.agents\_shared\channel\branding\thumbnail-visual-rules.md)
+- Use the channel-wide system in [topic-packaging-hooks.md](C:\ME\THINGS\Build a Channel\.agents\_shared\systems\topic-packaging-hooks.md)
+- Use the visual rules in [brand-system.md](C:\ME\THINGS\Build a Channel\.agents\_shared\channel\brand-system.md)
 - 1 to 3 words max
 - One dominant real or real-looking object
 - One visible contradiction
@@ -340,7 +340,7 @@ Thumbnail direction:
 
 First `10` seconds direction:
 
-- Use the channel-wide system in [hook-system.md](C:\ME\THINGS\Build a Channel\.agents\_shared\hook-system.md)
+- Use the channel-wide system in [topic-packaging-hooks.md](C:\ME\THINGS\Build a Channel\.agents\_shared\systems\topic-packaging-hooks.md)
 - Open with a situation, not an introduction
 - Use the default sequence: `normal thing -> suspicious detail -> WIT reaction -> bigger question`
 - Show the topic by second `3`
@@ -468,9 +468,9 @@ If you want more videos about money, the internet, and modern life, stick around
 - `3 shorts per week` cut from the long video
 - Batch script ideas in groups of 4 or more
 - Reuse one consistent voice and thumbnail logic
-- After each future upload, use the channel-wide publishing feedback loop in [publishing-feedback-loop.md](C:\ME\THINGS\Build a Channel\.agents\_shared\publishing-feedback-loop.md)
-- Fill one short post-upload review from [post-upload-review-template.md](C:\ME\THINGS\Build a Channel\.agents\_shared\post-upload-review-template.md) when a future video is published
-- Promote only reusable lessons through [channel-learning-rules.md](C:\ME\THINGS\Build a Channel\.agents\_shared\channel-learning-rules.md)
+- After each future upload, use [audio-feedback-quality.md](C:\ME\THINGS\Build a Channel\.agents\_shared\systems\audio-feedback-quality.md)
+- Fill one short post-upload review when a future video is published
+- Promote only reusable lessons through the learning rules in `audio-feedback-quality.md`
 
 Publishing feedback rule:
 
