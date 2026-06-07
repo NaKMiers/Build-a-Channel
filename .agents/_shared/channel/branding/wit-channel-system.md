@@ -9,21 +9,31 @@ It does not apply the system to any existing video project.
 
 ## Current Design Reference
 
-Current replacement set:
+Status: `draft replacement generated - awaiting user review`
+
+Previous current set removed:
 
 `.agents/_shared/assets/wit/poses/original-wit-24/`
 
-Contact sheet:
+Removal date: `2026-06-07`
 
-`.agents/_shared/assets/wit/poses/original-wit-24/original-wit-24-contact-sheet.png`
+Reason:
+the previous channel WIT did not match the stronger thumbnail WIT direction selected by the user.
 
-Status: `Core current WIT pose set`
+New direction:
+future WIT poses should be generated from the WIT style used in the `Why Cheap Products Keep Getting Worse` packaging thumbnails, especially the simple white round-headed character with thick black outline, oversized black glasses, expressive eyebrows, simple white body, and strong suspicious / betrayed / panicked reactions.
 
-`original-wit` is the new WIT design: a rough, funny-stupid, unserious explainer character based on the user-approved reference image.
+Draft replacement set:
 
-He should feel closer in comedy function to a simple visual punching bag than to a polished mascot: awkward, deadpan, suspicious, and frequently defeated by modern systems.
+`.agents/_shared/assets/wit/poses/thumbnail-wit-24/`
 
-Older `core-24` and `comedy-core` pose folders remain available only as superseded history/source material.
+Draft contact sheet:
+
+`.agents/_shared/assets/wit/poses/thumbnail-wit-24/thumbnail-wit-24-contact-sheet.png`
+
+Until the user approves the draft replacement set, treat it as review-ready but not final.
+
+Older `core-24`, `comedy-core`, and removed `original-wit-24` material should not be used as current channel WIT.
 
 ## Role
 
@@ -122,39 +132,22 @@ Thumbnail WIT should answer:
 
 ## Current Pose Set
 
-The current channel-wide WIT pose set lives at:
+There is currently a draft reusable WIT pose set awaiting user review.
 
-`.agents/_shared/assets/wit/poses/original-wit-24/`
+Draft set:
 
-It replaces the older `core-24` and `comedy-core` pose sets as the default WIT source for future videos.
-Do not delete older sets unless explicitly asked; keep them as history/source.
+`.agents/_shared/assets/wit/poses/thumbnail-wit-24/`
 
-Current `original-wit-24` poses:
+Contact sheet:
 
-- `neutral-default`
-- `talking`
-- `smug-side-eye`
-- `receipt-evidence`
-- `laughing-trying-not-to-laugh`
-- `confused`
-- `disappointed-teacher`
-- `shocked`
-- `tiny-defeated`
-- `phone-bill-panic`
-- `money-panic`
-- `thinking`
-- `pointing-left`
-- `pointing-right`
-- `facepalm`
-- `holding-blank-sign`
-- `running-away`
-- `awkward-celebration`
-- `angry-cute-complaint`
-- `suspicious-detective`
-- `typing-on-laptop`
-- `holding-magnifying-glass`
-- `explaining-with-whiteboard`
-- `sleeping-burned-out`
+`.agents/_shared/assets/wit/poses/thumbnail-wit-24/thumbnail-wit-24-contact-sheet.png`
+
+Until then:
+
+- do not use `original-wit-24` as current WIT
+- do not regenerate old hair / shirt / receipt-tie WIT
+- do not treat `thumbnail-wit-24` as final until the user approves it
+- keep thumbnail work aligned with this draft thumbnail-WIT style when packaging this video
 
 ## Frequency Rule
 
@@ -170,8 +163,8 @@ For future videos:
 1. Choose the main emotional arc for WIT before production.
 2. Use Clean WIT for setup and explanation.
 3. Use Suffering WIT for hooks, jokes, and reveal beats.
-4. Select poses from `original-wit-24` first.
-5. Generate additional `original-wit` poses only when the script truly needs them.
+4. Use the approved replacement WIT pose set once it exists.
+5. Do not use removed `original-wit-24` assets as the default character.
 6. Keep all generated reusable poses in `.agents/_shared/assets/wit/poses/` until a specific video explicitly copies approved assets into its own project folder.
 
 Do not apply this system to a video project unless the user explicitly asks:

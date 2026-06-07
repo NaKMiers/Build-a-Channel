@@ -23,7 +23,7 @@ README.md       source map for humans and future agents
 - [.agents/rules](C:\ME\THINGS\Build a Channel\.agents\rules)
   Rules for Codex, memory, and the video production workflow.
 - [.agents/skills](C:\ME\THINGS\Build a Channel\.agents\skills)
-  Executable project-local skills. Current skills include `browse`, `topic-intake`, `research-pack`, `script-draft`, `voiceover`, and `wiw-take-note`; the remaining sequential video production skills will be created later.
+  Executable project-local skills. Current skills include `browse`, `topic-intake`, `research-pack`, `script-draft`, `packaging`, `voiceover`, and `wiw-take-note`; the remaining sequential video production skills will be created later.
 - [projects](C:\ME\THINGS\Build a Channel\projects)
   Per-video work. Each video keeps its own script, packaging, voiceover, HyperFrames source, renders, review notes, upload notes, and lessons.
 
@@ -45,8 +45,8 @@ The channel uses a 10-step production flow:
 1. Topic intake
 2. Research pack
 3. Script draft
-4. Voiceover
-5. Title and thumbnail packaging
+4. Packaging: title, thumbnail, and YouTube description
+5. Voiceover
 6. Visual plan
 7. HyperFrames build
 8. Review

@@ -196,8 +196,8 @@ Update in this order:
 After creating, updating, or rerunning `01-research-pack.md`, check the same project for downstream files:
 
 - `02-script.md`
-- `03-voiceover.md`
-- `04-packaging.md`
+- `03-packaging.md`
+- `04-voiceover.md`
 - `05-visual-plan.md`
 - `06-production-board.md`
 - `07-review.md`

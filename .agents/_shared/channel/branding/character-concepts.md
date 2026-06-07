@@ -1,6 +1,11 @@
 # Character Concepts
 
-Status: `Experiment`
+Status: `Superseded experiment`
+
+Superseded note:
+the old receipt-tie / previous WIT concepts are no longer the active channel WIT direction.
+On `2026-06-07`, the user chose the WIT style from the five restored `Why Cheap Products Keep Getting Worse` thumbnail drafts as the replacement direction.
+Keep this document as historical context only; do not use it as current WIT guidance.
 
 Purpose:
 explore possible signature characters for `Why It Works` without locking visual identity too early

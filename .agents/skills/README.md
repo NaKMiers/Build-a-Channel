@@ -16,15 +16,18 @@ This folder stores executable project-local Codex skills.
 - [Script Draft](script-draft/SKILL.md)
   Creates step 3 sectioned working scripts from a selected project's topic intake and research pack.
 
+- [Packaging](packaging/SKILL.md)
+  Creates step 4 titles, `5` thumbnail A/B drafts with reusable prompts and scores, plus YouTube description metadata from a selected project's script.
+
 - [Voiceover](voiceover/SKILL.md)
-  Creates step 4 section voiceover outputs from a selected project's sectioned script.
+  Creates step 5 section voiceover outputs from a selected project's sectioned script and packaging.
 
 - [WIW Take Note](wiw-take-note/SKILL.md)
   Captures useful review and production feedback into the right project memory files.
 
 ## Remaining Future Skills
 
-`Topic Intake`, `Research Pack`, `Script Draft`, and `Voiceover` are the first sequential video-production skills.
+`Topic Intake`, `Research Pack`, `Script Draft`, `Packaging`, and `Voiceover` are the first sequential video-production skills.
 
 Pipeline rule:
 
@@ -34,11 +37,10 @@ Pipeline rule:
 
 When the user asks for the next skill-creation phase, create the remaining skills for the 10-step lifecycle:
 
-1. title and thumbnail
-2. visual plan
-3. HyperFrames build
-4. review
-5. upload
-6. self-learning
+1. visual plan
+2. HyperFrames build
+3. review
+4. upload
+5. self-learning
 
 Each future skill should read from `.agents/_shared/`, write to `projects/<slug>/`, and keep skill-specific memory inside its own skill folder when useful.

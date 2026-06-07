@@ -1,13 +1,13 @@
 ---
 name: voiceover
-description: Create or update step 4 section voiceover for a Why It Works video project. Use when the user asks for Voiceover, section voiceover, generate audio for a script section, create narration audio, run step 4, or create all section voiceovers; requires completed project 00-topic-intake.md, 01-research-pack.md, and 02-script.md first, asks which script section to generate with All as the first option, then writes only the project's 03-voiceover.md plus section-local files under voiceover/.
+description: Create or update step 5 section voiceover for a Why It Works video project. Use when the user asks for Voiceover, section voiceover, generate audio for a script section, create narration audio, run step 5, or create all section voiceovers; requires completed project 00-topic-intake.md, 01-research-pack.md, 02-script.md, and 03-packaging.md first, asks which script section to generate with All as the first option, then writes only the project's 04-voiceover.md plus section-local files under voiceover/.
 ---
 
 # Voiceover
 
 ## Purpose
 
-Run step `4` of the `Why It Works` video workflow.
+Run step `5` of the `Why It Works` video workflow.
 
 Create voiceover for one selected script section at a time, or for `All` sections only when the user explicitly selects `All`.
 
@@ -15,13 +15,14 @@ This skill is section-first. It does not default to one full-video voiceover fil
 
 ## Pipeline Position
 
-This is step `4` of the video workflow.
+This is step `5` of the video workflow.
 
 Required previous outputs:
 
 - `projects/<slug>/00-topic-intake.md`
 - `projects/<slug>/01-research-pack.md`
 - `projects/<slug>/02-script.md`
+- `projects/<slug>/03-packaging.md`
 
 Do not create voiceover without a real, non-empty script file.
 
@@ -29,11 +30,15 @@ If `02-script.md` is missing or empty, stop and tell the user to run `script-dra
 
 If `00-topic-intake.md` or `01-research-pack.md` is missing, stop and tell the user to run the missing previous skill in order before `script-draft`.
 
+If `03-packaging.md` is missing or empty, stop and tell the user to run `packaging` before `voiceover`.
+
 If `00-topic-intake.md` or `01-research-pack.md` has a newer modified time than `02-script.md`, treat the script as stale and stop. Tell the user to rerun `script-draft`.
 
-If `02-script.md` has a newer modified time than `03-voiceover.md` or any section voiceover output, treat all existing voiceover outputs as stale. Do not trust them as current. Ask whether to regenerate the affected section or all sections.
+If `02-script.md` has a newer modified time than `03-packaging.md`, treat packaging as stale and stop. Tell the user to rerun `packaging`.
 
-When this skill creates, updates, or reruns `projects/<slug>/03-voiceover.md` or any file under `projects/<slug>/voiceover/`, every later output in the same project becomes stale.
+If `03-packaging.md` has a newer modified time than `04-voiceover.md` or any section voiceover output, treat all existing voiceover outputs as stale. Do not trust them as current. Ask whether to regenerate the affected section or all sections.
+
+When this skill creates, updates, or reruns `projects/<slug>/04-voiceover.md` or any file under `projects/<slug>/voiceover/`, every later output in the same project becomes stale.
 
 List stale downstream files in chat. Do not silently delete them. Remove stale downstream files only when the user explicitly asks; otherwise downstream skills must be rerun in order.
 
@@ -55,6 +60,7 @@ Read these before creating or updating voiceover:
 12. `.agents/_shared/english-learner-clarity-system.md`
 13. `references/memory.md`
 14. the chosen project file: `projects/<slug>/02-script.md`
+15. the chosen project file: `projects/<slug>/03-packaging.md`
 
 Load additional shared systems only when needed:
 
@@ -70,7 +76,7 @@ Use this order:
 
 1. If the user names a project slug or path, use that project.
 2. If the current chat clearly selected a project and the folder exists, use that project.
-3. If there is exactly one project with a completed `02-script.md`, smart-select it and say so.
+3. If there is exactly one project with completed `02-script.md` and `03-packaging.md`, smart-select it and say so.
 4. Otherwise scan `projects/`, excluding `_template`, and find voiceover candidates.
 
 A voiceover candidate is usually:
@@ -78,6 +84,7 @@ A voiceover candidate is usually:
 - a folder with `00-topic-intake.md`
 - and `01-research-pack.md`
 - and `02-script.md`
+- and `03-packaging.md`
 - and not obviously blocked by stale upstream files
 
 When multiple candidates exist or context is unclear, ask the user to choose before generating audio.
@@ -91,6 +98,7 @@ Before section selection or audio generation, verify the chosen project has:
 - non-empty `00-topic-intake.md`
 - non-empty `01-research-pack.md`
 - non-empty `02-script.md`
+- non-empty `03-packaging.md`
 
 If `02-script.md` does not contain parsable sections in the form:
 
@@ -177,7 +185,7 @@ projects/<slug>/voiceover/section-XX-kebab-section-name/section-XX-marked-script
 projects/<slug>/voiceover/section-XX-kebab-section-name/tts-inputs/
 projects/<slug>/voiceover/section-XX-kebab-section-name/scratch-audio/
 projects/<slug>/voiceover/section-XX-kebab-section-name/scratch-results.json
-projects/<slug>/03-voiceover.md
+projects/<slug>/04-voiceover.md
 ```
 
 If audio generation succeeds, place the selected audio file in:
@@ -204,7 +212,7 @@ Generate each script section as a separate section output using the same Section
 
 Do not stitch sections together. Assembly belongs to a later production or final-combine step.
 
-If one section fails, continue only when the failure does not invalidate the remaining sections. Record the failure in `03-voiceover.md` and chat.
+If one section fails, continue only when the failure does not invalidate the remaining sections. Record the failure in `04-voiceover.md` and chat.
 
 ### Improve Memory Mode
 
@@ -212,7 +220,7 @@ Use when the user reviews voiceover and gives reusable lessons.
 
 Update in this order:
 
-1. the project `03-voiceover.md` or section README if the review affects this video
+1. the project `04-voiceover.md` or section README if the review affects this video
 2. this skill's `references/memory.md`
 3. shared memory only if the lesson improves the whole channel
 
@@ -289,10 +297,10 @@ Do not create tag soup. If a line needs many tags to work, rewrite the line only
    - record exact voice, speed, language, tool, output path, duration, and status
    - write or update the section `README.md`
    - write or update `scratch-results.json`
-7. Write or update `projects/<slug>/03-voiceover.md` as the section voiceover index.
+7. Write or update `projects/<slug>/04-voiceover.md` as the section voiceover index.
 8. Run the Downstream Stale Gate.
 9. Respond with the Chat Response Format.
-10. Stop before packaging, visual plan, HyperFrames build, renders, upload, or self-learning unless explicitly asked.
+10. Stop before visual plan, HyperFrames build, renders, upload, or self-learning unless explicitly asked.
 
 ## TTS Tooling Rules
 
@@ -359,18 +367,18 @@ section-XX-kebab-section-name-scratch-am_adam-1.05.mp3
 
 Use lowercase kebab-case.
 
-## 03 Voiceover Format
+## 04 Voiceover Format
 
 Write or update:
 
 ```text
-projects/<slug>/03-voiceover.md
+projects/<slug>/04-voiceover.md
 ```
 
 Use this structure:
 
 ```markdown
-# 03 Voiceover
+# 04 Voiceover
 
 Video: `<title>`
 
@@ -381,6 +389,7 @@ Source skill: `voiceover`
 Source file:
 
 - `02-script.md`
+- `03-packaging.md`
 
 ## Voice Direction
 
@@ -418,9 +427,9 @@ Source file:
 
 ## Next Step Boundary
 
-Next workflow step: `Title and thumbnail packaging`
+Next workflow step: `Visual plan`
 
-Do not continue into packaging, visual plan, HyperFrames, renders, upload, or self-learning until the user asks for the next skill or explicitly requests that step.
+Do not continue into visual plan, HyperFrames, renders, upload, or self-learning until the user asks for the next skill or explicitly requests that step.
 ```
 
 If only one section has been generated, include the remaining sections in the index as `not generated`.
@@ -464,9 +473,8 @@ Keep one useful MP3 preview file only unless a renderer requires another format.
 
 ## Downstream Stale Gate
 
-After creating, updating, or rerunning `03-voiceover.md` or section audio, check the same project for downstream files:
+After creating, updating, or rerunning `04-voiceover.md` or section audio, check the same project for downstream files:
 
-- `04-packaging.md`
 - `05-visual-plan.md`
 - `06-production-board.md`
 - `07-review.md`
@@ -488,7 +496,7 @@ Use this structure:
 ```markdown
 Done. I created/updated:
 
-[03-voiceover.md](<absolute path>)
+[04-voiceover.md](<absolute path>)
 
 Section target: `<All or Section X: name>`
 
@@ -520,13 +528,14 @@ A section voiceover pass is ready when:
 - learner clarity issues are noted before production
 - any TTS failure is recorded honestly
 - stale downstream files are listed
-- no packaging, visual plan, HyperFrames build, render, upload, or self-learning files are created
+- no visual plan, HyperFrames build, render, upload, or self-learning files are created
 
 ## Hard Fails
 
 Reject or stop before finishing if:
 
 - the project lacks `02-script.md`
+- the project lacks `03-packaging.md`
 - the script lacks parsable sections
 - upstream files are missing or newer than the script
 - the user has not explicitly selected `All` or a specific section
@@ -536,7 +545,7 @@ Reject or stop before finishing if:
 - scratch audio is generated after the user asked for `David23` and did not approve a fallback
 - duplicate MP3/WAV scratch files are left without a reason
 - the skill rewrites major script content without user approval
-- the skill creates packaging, visual plan, HyperFrames, renders, upload, or self-learning files
+- the skill creates visual plan, HyperFrames, renders, upload, or self-learning files
 
 ## Self-Improvement
 

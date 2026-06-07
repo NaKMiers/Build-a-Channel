@@ -57,7 +57,8 @@ Use the project folders intentionally:
 - Use [Topic Intake](C:\ME\THINGS\Build a Channel\.agents\skills\topic-intake\SKILL.md) when the user asks for topic intake, next video ideas, raw topic candidates, scored video angles, or step 1 of the video workflow.
 - Use [Research Pack](C:\ME\THINGS\Build a Channel\.agents\skills\research-pack\SKILL.md) when the user asks for research pack, evidence pack, source gathering, visual reference research, or step 2 of the video workflow.
 - Use [Script Draft](C:\ME\THINGS\Build a Channel\.agents\skills\script-draft\SKILL.md) when the user asks for script draft, a sectioned script, writing the video script, or step 3 of the video workflow.
-- Use [Voiceover](C:\ME\THINGS\Build a Channel\.agents\skills\voiceover\SKILL.md) when the user asks for section voiceover, generate audio for a script section, create narration audio, all section voiceovers, or step 4 of the video workflow.
+- Use [Packaging](C:\ME\THINGS\Build a Channel\.agents\skills\packaging\SKILL.md) when the user asks for title, thumbnail, packaging, YouTube description, tags, hashtags, upload metadata, or step 4 of the video workflow.
+- Use [Voiceover](C:\ME\THINGS\Build a Channel\.agents\skills\voiceover\SKILL.md) when the user asks for section voiceover, generate audio for a script section, create narration audio, all section voiceovers, or step 5 of the video workflow.
 - Use [WIW Take Note](C:\ME\THINGS\Build a Channel\.agents\skills\wiw-take-note\SKILL.md) when the user asks to take note of reviews, remember useful production feedback, or persist lessons that should improve future HyperFrames/video review passes.
 - Do not create additional sequential video-production skills until the user explicitly asks for the next skill-creation phase.
 

@@ -13,6 +13,41 @@ Use it to record:
 
 ---
 
+## 2026-06-07
+
+### Packaging Skill Created And Moved Before Voiceover
+
+Classification: `Core operational capability`
+
+Created the fifth project-local skill and placed it before voiceover in the production pipeline:
+
+- [Packaging](C:\ME\THINGS\Build a Channel\.agents\skills\packaging\SKILL.md)
+
+Purpose:
+turn a selected project's topic, research, and script into a YouTube-ready packaging decision before voiceover generation.
+
+Operating rules:
+
+- require `00-topic-intake.md`, `01-research-pack.md`, and `02-script.md`
+- write `projects/<slug>/03-packaging.md`
+- create title options, thumbnail concepts or drafts, title-thumbnail package scores, final YouTube description, tags, hashtags, links, chapters when useful, and pinned comment ideas
+- use the channel-wide thumbnail packaging system, packaging scorecard, and thumbnail visual rules
+- keep thumbnail text mobile-readable and learner-friendly
+- avoid fake claims, rage bait, copied creator thumbnails, irrelevant tags, and direct product promotion
+- treat `04-voiceover.md` and later outputs as stale after packaging changes
+- keep packaging-specific learning in `.agents/skills/packaging/references/memory.md`
+
+Pipeline change:
+
+`Packaging` now runs after `Script Draft` and before `Voiceover`:
+
+```text
+00-topic-intake.md -> 01-research-pack.md -> 02-script.md -> 03-packaging.md -> 04-voiceover.md
+```
+
+Reason:
+title, thumbnail, and description should be decided before voiceover and visual production continue, so the later work pays off the click promise.
+
 ## 2026-06-06
 
 ### David23 HyperFrames Direct Voice ID
@@ -58,14 +93,17 @@ Operating rules:
 - never infer the section from active project state, prior chat context, missing outputs, or the next likely section
 - offer `All` as the first option, followed by each script section
 - interpret `All` as separate section voiceover outputs, not one stitched full-video file
-- write only `projects/<slug>/03-voiceover.md` and section-local files under `projects/<slug>/voiceover/`
+- originally wrote `projects/<slug>/03-voiceover.md`; superseded by the `2026-06-07` pipeline change, so current voiceover writes `projects/<slug>/04-voiceover.md` and section-local files under `projects/<slug>/voiceover/`
 - keep one useful MP3 preview per section by default
 - label alternate local voices as scratch timing audio when the approved `David23 / am_eric` voice is unavailable
 - list stale downstream files after creating or updating voiceover outputs
 - keep voiceover-specific learning in `.agents/skills/voiceover/references/memory.md`
 
+Superseded note:
+as of `2026-06-07`, `Packaging` runs before `Voiceover`, so voiceover now writes `projects/<slug>/04-voiceover.md` after `projects/<slug>/03-packaging.md` exists.
+
 Workflow decision:
-after script drafting, production may branch by section. Each section can get voiceover, visual implementation, preview, review, and approval before final assembly.
+after packaging, production may branch by section. Each section can get voiceover, visual implementation, preview, review, and approval before final assembly.
 
 Scope note:
 no packaging, visual plan, HyperFrames build, render, upload, or self-learning skill was created in this pass.
@@ -1599,3 +1637,39 @@ Working rules:
 - for cue-critical popups, do not start the cue frame at zero opacity or unreadably tiny scale
 - for cue-critical underlines, give the underline a small visible stroke on the cue frame, then finish the draw animation after it
 - still check one frame before the cue to confirm the element does not arrive early
+
+### WIT Direction Change: Use Thumbnail WIT As Replacement Source
+
+Classification: `Core`
+
+Context:
+the five generated `Why Cheap Products Keep Getting Worse` packaging thumbnails created a WIT style that felt stronger than the current `original-wit-24` channel character.
+The user decided to remove the old current WIT and later regenerate a new WIT pose set from the thumbnail character.
+
+Lesson:
+the old messy-hair, shirt-and-receipt-tie WIT is no longer the active channel WIT.
+The replacement direction is the simple white round-headed thumbnail WIT with thick black outline, oversized black glasses, expressive eyebrows, simple white body, and clear suspicious / betrayed / panicked reactions.
+
+Working rules:
+
+- do not use `original-wit-24` as the current WIT
+- preserve the five restored cheap-products thumbnails as the visual reference for the new WIT direction
+- do not generate the new reusable pose set until the user explicitly asks for that step
+
+### Thumbnail WIT 24 Draft Generated
+
+Classification: `Operational lesson`
+
+Context:
+after approving one neutral-front draft of the new thumbnail-style WIT, the user asked to generate the remaining `23` poses.
+
+Lesson:
+the first draft reusable pose set now exists at `.agents/_shared/assets/wit/poses/thumbnail-wit-24/`.
+It is based on the simple white round-headed WIT from the cheap-products thumbnails, not the removed `original-wit-24` character.
+
+Working rules:
+
+- treat `thumbnail-wit-24` as a draft awaiting user review
+- use the contact sheet for review before marking it final
+- keep generated source files in `source-generated/`
+- keep final pose exports as transparent `2048x2048` PNGs

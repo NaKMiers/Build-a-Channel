@@ -30,18 +30,18 @@ Only create this folder when assets are actually generated or drawn.
 
 ## Generate First
 
-| Pose | Emotion | Use Case |
-|---|---|---|
-| `wit-pose-betrayed-by-phone.png` | betrayed | phone reveals `FREE*`, paywall, monthly price |
-| `wit-pose-receipt-printer-victim.png` | attacked/surprised | invoice is late, receipt printer gag |
-| `wit-pose-notification-hostage.png` | stressed/pulled | streak emergency, habit loop, notification trap |
-| `wit-pose-paywall-bump.png` | annoyed impact | WIT hits locked useful feature |
-| `wit-pose-tangled-in-cables.png` | trapped | lock-in, dependency, uninstall difficulty |
-| `wit-pose-dragging-data-box.png` | exhausted | leaving feels like moving house |
-| `wit-pose-buried-in-subscriptions.png` | overwhelmed | six tiny subscriptions |
-| `wit-pose-hidden-checkout-discovery.png` | suspicious discovery | final hidden checkout reveal |
-| `wit-pose-fake-confident-free-user.png` | naive confidence | WIT enters the free app trap |
-| `wit-pose-attention-drained.png` | blank/drained | attention inventory, scrolling time loss |
+| Pose                                     | Emotion              | Use Case                                        |
+| ---------------------------------------- | -------------------- | ----------------------------------------------- |
+| `wit-pose-betrayed-by-phone.png`         | betrayed             | phone reveals `FREE*`, paywall, monthly price   |
+| `wit-pose-receipt-printer-victim.png`    | attacked/surprised   | invoice is late, receipt printer gag            |
+| `wit-pose-notification-hostage.png`      | stressed/pulled      | streak emergency, habit loop, notification trap |
+| `wit-pose-paywall-bump.png`              | annoyed impact       | WIT hits locked useful feature                  |
+| `wit-pose-tangled-in-cables.png`         | trapped              | lock-in, dependency, uninstall difficulty       |
+| `wit-pose-dragging-data-box.png`         | exhausted            | leaving feels like moving house                 |
+| `wit-pose-buried-in-subscriptions.png`   | overwhelmed          | six tiny subscriptions                          |
+| `wit-pose-hidden-checkout-discovery.png` | suspicious discovery | final hidden checkout reveal                    |
+| `wit-pose-fake-confident-free-user.png`  | naive confidence     | WIT enters the free app trap                    |
+| `wit-pose-attention-drained.png`         | blank/drained        | attention inventory, scrolling time loss        |
 
 ## Asset Requirements
 

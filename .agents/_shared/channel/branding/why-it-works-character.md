@@ -1,6 +1,11 @@
 # Why It Works Character
 
-Status: `Experiment`
+Status: `Superseded experiment`
+
+Superseded note:
+the receipt-tie WIT direction is no longer the active channel WIT.
+On `2026-06-07`, the user chose the WIT style from the five restored `Why Cheap Products Keep Getting Worse` thumbnail drafts as the replacement direction.
+Keep this document as historical context only; do not use it as current WIT guidance.
 
 This document turns the recommended mascot direction into a concrete character that can be used in scripts, thumbnails, and visual planning.
 

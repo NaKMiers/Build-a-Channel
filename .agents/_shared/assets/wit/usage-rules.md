@@ -4,163 +4,48 @@ Classification: `Core`
 
 Scope: `CHANNEL_WIDE`
 
-These rules define how future `Why It Works` videos should use WIT.
-They do not update any existing video project.
+## Current Status
 
-## Default Job
+Status: `draft replacement generated - awaiting user review`
 
-WIT's job is to make abstract systems feel human.
+The previous current WIT pose set `original-wit-24` was removed on `2026-06-07`.
 
-Use WIT when the viewer needs to feel:
+Draft pose set:
 
-- suspicion
-- confusion
-- betrayal
-- financial pressure
-- trapped choice
-- fake confidence
-- tiny defeat
+```text
+.agents/_shared/assets/wit/poses/thumbnail-wit-24/
+```
 
-Do not use WIT as decoration.
-If WIT is on screen, he should either clarify the idea, react to the idea, or become the person suffering from the idea.
+Until the user approves this set, use it for review and iteration, not as final locked channel identity.
 
-## Selection Order
+## Current Direction
 
-When choosing a WIT pose:
+The replacement WIT direction is the character style used in the five restored `Why Cheap Products Keep Getting Worse` thumbnail drafts:
 
-1. Identify the beat: setup, explanation, evidence, punchline, or payoff.
-2. Identify the emotion: neutral, suspicious, betrayed, panicked, confused, trapped, defeated, or deadpan.
-3. Use `Clean WIT` for setup and clarity.
-4. Use `Suffering WIT` for hooks, jokes, reveal beats, thumbnails, and retention moments.
-5. Prefer `.agents/_shared/assets/wit/poses/original-wit-24/` for all future videos.
-6. Use older `.agents/_shared/assets/wit/poses/comedy-core/` or `.agents/_shared/assets/wit/poses/core-24/` only as superseded source/reference material when explicitly needed.
+- simple white round-headed cartoon figure
+- thick black outline
+- oversized black glasses
+- expressive eyebrows
+- simple white body
+- strong suspicious / betrayed / panicked / trapped reactions
 
-## Clean WIT
+## Rules Until Replacement
 
-Use Clean WIT when the video needs calm structure:
+- Do not use removed `original-wit-24` assets as current WIT.
+- Do not use older WIT concepts as the default character.
+- Do not mark the draft `thumbnail-wit-24` pose library as final until the user approves it.
+- For the cheap-products project, preserve the restored thumbnail drafts as the visual source of truth.
+- Future WIT generation should derive from those restored thumbnails, not from the old hair / shirt / receipt-tie character.
 
-- WIT standing beside a label
-- WIT pointing to a diagram
-- WIT thinking through a reframe
-- WIT holding evidence
-- WIT quietly judging a bad system
+## Future Quality Gate
 
-Clean WIT should not overact.
+When the new WIT pose set is generated, each pose should still pass:
 
-## Suffering WIT
-
-Use Suffering WIT when the video needs the joke to land visually:
-
-- a phone betrays him
-- a receipt attacks him
-- a subscription traps him
-- an app turns him into a product
-- math becomes suspicious
-- a promise of `free` becomes expensive
-- a normal behavior becomes absurd
-
-Suffering WIT should make the topic feel physical.
-
-## Comedy Beat Rules
-
-- Put WIT in the scene before or exactly on the joke beat, not after the joke is already over.
-- Let WIT's body carry the reaction when the narration is dry.
-- Use direct-to-viewer staring for moments where the viewer already knows the truth.
-- Use side-eye when the claim sounds suspicious.
-- Use tiny defeated WIT after the system wins.
-- Use fake-confident WIT before the trap is revealed.
-- Use phone or receipt poses when the prop is central to the joke.
-
-## Layout Rules
-
-- WIT must never block the main joke text.
-- WIT should face or gesture toward the important evidence when evidence is the joke.
-- Leave enough headroom and side margin for hair, receipts, phones, and motion bounce.
-- At mobile size, WIT's expression must still read before details matter.
-- If the pose is not readable at `25%` screen size, simplify or choose a stronger pose.
-
-## Thumbnail Rules
-
-Thumbnail WIT should use one clear emotion:
-
-- betrayed
-- suspicious
-- trapped
-- panicked
-- confused
-- defeated
-
-Avoid:
-
-- neutral WIT
-- smiling WIT on negative topics
-- tiny WIT with unreadable emotion
-- WIT looking away from the main contradiction
-
-## Frequency Rules
-
-For comedy-heavy videos:
-
-- include at least one Suffering WIT moment every `20-30` seconds
-- include at least one strong WIT reaction in the first `15` seconds
-- avoid long stretches where WIT only points like a presenter
-
-For slower, more explanatory sections:
-
-- WIT can disappear if text, props, or diagrams are doing the work
-- bring WIT back for the next emotional turn or retention beat
-
-## Prop Rules
-
-Reusable WIT props should stay generic:
-
-- receipts
-- phone screens
-- red marker
-- blank signs
-- data boxes
-- app frames
-- fake invoices
-- subscription loops
-
-Avoid:
-
-- real app logos
-- readable brand names
-- specific company UI unless a future video has a separate rights and accuracy reason
-- tiny text that will not read in video
-
-## HyperFrames Rules
-
-Use still WIT poses with small motion:
-
-- pop-in
-- slight bounce
-- tiny shake
-- side slide
-- small rotation
-- eye blink overlay
-- mouth flap overlay only if needed
-
-Do not over-animate every pose.
-The main production advantage is strong still poses plus cue-accurate timing.
-
-## Quality Gate
-
-Before a future WIT pose enters the reusable library, check:
-
-- transparent PNG
+- transparent PNG or production-ready export
 - no watermark
 - no baked-in background scene
 - no third-party logo
-- readable emotion at `25%`
-- consistent WIT identity
+- readable emotion at small size
+- consistent WIT identity across poses
 - enough transparent margin for simple motion
-- filename uses lowercase kebab-case
-
-Before a future video uses WIT, check:
-
-- WIT has a clear reason to be on screen
-- WIT's pose matches the exact spoken beat
-- WIT does not cover main text
-- WIT makes the topic clearer or funnier
+- lowercase kebab-case filenames

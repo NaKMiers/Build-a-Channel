@@ -53,8 +53,9 @@ Practical rule:
 - `.agents/_shared/` stores reusable tools, templates, workflows, shared assets, and production notes
 - `.agents/rules/` stores Codex and future skill operating rules
 - `.agents/skills/` stores executable project-local Codex skills
-- Current project-local skills: `browse` for portable web and YouTube browsing, `topic-intake` for step 1 topic intake, `research-pack` for step 2 evidence packs, `script-draft` for step 3 sectioned scripts, `voiceover` for step 4 section voiceover, and `wiw-take-note` for memory capture
-- Voiceover is section-first: after `02-script.md`, generate voiceover for one selected section at a time, or choose `All` to generate separate voiceover outputs for every section. Do not default to one full-video voiceover file.
+- Current project-local skills: `browse` for portable web and YouTube browsing, `topic-intake` for step 1 topic intake, `research-pack` for step 2 evidence packs, `script-draft` for step 3 sectioned scripts, `packaging` for step 4 title-thumbnail-description packages, `voiceover` for step 5 section voiceover, and `wiw-take-note` for memory capture
+- Packaging runs after `02-script.md` and before voiceover. It creates `03-packaging.md` with title options, `5` thumbnail A/B drafts, reusable thumbnail generation prompts, thumbnail comparison scores, YouTube description, tags, hashtags, links, and pinned comment ideas.
+- Voiceover is section-first: after `03-packaging.md`, generate voiceover for one selected section at a time, or choose `All` to generate separate voiceover outputs for every section. Do not default to one full-video voiceover file.
 - Sequential production skills enforce pipeline prerequisites: later steps require previous output files, and rerunning an earlier step makes downstream outputs stale until removed or rerun
 - HyperFrames is the default renderer for new and active video production
 - Active HyperFrames source lives inside each video folder at `projects/<slug>/hyperframes/`
@@ -68,8 +69,11 @@ Practical rule:
 - Current topic angle quality gate: [Topic Angle Scorecard](C:\ME\THINGS\Build a Channel\.agents_shared\topic-angle-scorecard.md)
 - Current reusable topic angle template folder: [Topic Angle Scorecards](C:\ME\THINGS\Build a Channel\.agents_shared\channel\topic-angle-scorecards)
 - Current channel-wide WIT system: [WIT Channel System](C:\ME\THINGS\Build a Channel\.agents_shared\channel\branding\wit-channel-system.md)
-- Current WIT pose set: [Original WIT 24](C:\ME\THINGS\Build a Channel\.agents_shared\assets\wit\poses\original-wit-24)
-- Current WIT contact sheet: [Original WIT 24 Contact Sheet](C:\ME\THINGS\Build a Channel\.agents_shared\assets\wit\poses\original-wit-24\original-wit-24-contact-sheet.png)
+- Current WIT pose set: `draft thumbnail-wit-24 - awaiting user review`
+- Draft WIT pose set: [Thumbnail WIT 24](C:\ME\THINGS\Build a Channel\.agents_shared\assets\wit\poses\thumbnail-wit-24)
+- Draft WIT contact sheet: [Thumbnail WIT 24 Contact Sheet](C:\ME\THINGS\Build a Channel\.agents_shared\assets\wit\poses\thumbnail-wit-24\thumbnail-wit-24-contact-sheet.png)
+- Previous current WIT pose set `original-wit-24` removed on `2026-06-07`
+- Current WIT direction: simple white round-headed thumbnail WIT from the five restored `Why Cheap Products Keep Getting Worse` thumbnail drafts
 - Superseded WIT comedy layer: [Comedy Core WIT pose set](C:\ME\THINGS\Build a Channel\.agents_shared\assets\wit\poses\comedy-core)
 - Current channel-wide packaging system: [Thumbnail Packaging System](C:\ME\THINGS\Build a Channel\.agents_shared\thumbnail-packaging-system.md)
 - Current packaging quality gate: [Packaging Scorecard](C:\ME\THINGS\Build a Channel\.agents_shared\packaging-scorecard.md)

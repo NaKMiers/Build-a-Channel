@@ -7,23 +7,24 @@ Use this file for section-selection behavior, section voiceover output shape, TT
 
 ## Current Skill Standard
 
-- Run after `script-draft`.
-- Require non-empty `00-topic-intake.md`, `01-research-pack.md`, and `02-script.md`.
+- Run after `packaging`.
+- Require non-empty `00-topic-intake.md`, `01-research-pack.md`, `02-script.md`, and `03-packaging.md`.
 - Treat `02-script.md` as the voiceover source of truth.
 - If upstream files are newer than `02-script.md`, stop and ask the user to rerun `script-draft`.
+- If `02-script.md` is newer than `03-packaging.md`, stop and ask the user to rerun `packaging`.
 - Require the user to explicitly select `All` or a specific section before creating or editing voiceover files.
 - Ask which section to generate whenever the user does not explicitly name a section target.
 - Do not infer the section from the active video state, the next unfinished section, existing previews, missing outputs, or prior chat context.
 - Put `All` at the top of section choices.
 - Interpret `All` as separate voiceover outputs for every script section, not one stitched full-video file.
-- Write only `03-voiceover.md` and files under `voiceover/`.
+- Write only `04-voiceover.md` and files under `voiceover/`.
 - Keep one useful MP3 preview per section by default.
 - Avoid preserving duplicate MP3/WAV scratch files unless a renderer requires them or the user asks.
 - Use `David23 / am_eric / 0.84 / en-us` as the default final voice direction from shared memory.
 - When generating `David23`, test `am_eric` directly with HyperFrames before declaring it unavailable; `hyperframes@0.6.76` accepts `am_eric` even when the short voice list does not display it.
 - If local TTS tooling cannot generate `David23`, stop and ask before using any alternate scratch voice.
 - Never generate scratch audio as a substitute when the user asked for `David23` unless the user explicitly approves scratch timing audio.
-- Stop before packaging, visual plan, HyperFrames build, renders, upload, or self-learning.
+- Stop before visual plan, HyperFrames build, renders, upload, or self-learning.
 
 ## Output Standard
 
@@ -35,9 +36,9 @@ For each selected section, create or update:
 - `voiceover/section-XX-kebab-section-name/tts-inputs/`
 - `voiceover/section-XX-kebab-section-name/scratch-audio/`
 - `voiceover/section-XX-kebab-section-name/scratch-results.json`
-- `03-voiceover.md`
+- `04-voiceover.md`
 
-`03-voiceover.md` should act as the project-level index for generated and not-yet-generated section voiceovers.
+`04-voiceover.md` should act as the project-level index for generated and not-yet-generated section voiceovers.
 
 ## Feedback Log
 
@@ -56,6 +57,26 @@ Use the section list from `02-script.md`. Do not create a stitched full-video vo
 
 Promote to shared memory:
 Yes, as an operational production lesson if not already recorded elsewhere.
+
+### 2026-06-07 - Packaging Before Voiceover
+
+Classification: `Operational lesson`
+
+Context:
+The user moved Packaging before Voiceover so title, thumbnail, and YouTube description are decided before audio generation.
+
+Lesson:
+Voiceover is now step 5 and requires `03-packaging.md`. It writes `04-voiceover.md`.
+
+Apply next time:
+
+- require non-empty `03-packaging.md`
+- if packaging is missing, stop and ask the user to run `packaging`
+- if the script is newer than packaging, stop and ask the user to rerun `packaging`
+- write or update `04-voiceover.md`, not `03-voiceover.md`
+
+Promote to shared memory:
+yes, this is a pipeline-level rule.
 
 ### 2026-06-06 - Explicit Section Selection Required
 

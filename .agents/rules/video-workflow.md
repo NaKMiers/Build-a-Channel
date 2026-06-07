@@ -7,8 +7,8 @@
 1. Topic intake
 2. Research pack
 3. Script draft
-4. Voiceover
-5. Title and thumbnail packaging
+4. Packaging: title, thumbnail, and YouTube description
+5. Voiceover
 6. Visual plan
 7. HyperFrames build
 8. Review
@@ -30,9 +30,9 @@ Current dependency chain:
 | 1 | `topic-intake` | `00-topic-intake.md` | none |
 | 2 | `research-pack` | `01-research-pack.md` | `00-topic-intake.md` |
 | 3 | `script-draft` | `02-script.md` | `00-topic-intake.md`, `01-research-pack.md` |
-| 4 | `voiceover` | `03-voiceover.md` and `voiceover/` | `02-script.md` |
-| 5 | future packaging skill | `04-packaging.md` | `03-voiceover.md` or approved script boundary |
-| 6 | future visual plan skill | `05-visual-plan.md` | `04-packaging.md` |
+| 4 | `packaging` | `03-packaging.md` and optional `assets/thumbnails/` | `02-script.md` |
+| 5 | `voiceover` | `04-voiceover.md` and `voiceover/` | `03-packaging.md` |
+| 6 | future visual plan skill | `05-visual-plan.md` | `04-voiceover.md` |
 | 7 | future HyperFrames skill | `06-production-board.md`, `hyperframes/`, `renders/` | `05-visual-plan.md` |
 | 8 | future review skill | `07-review.md` | rendered or previewable video sections |
 | 9 | future upload skill | `08-upload.md` | approved review |
@@ -57,12 +57,13 @@ If an upstream file has a newer modified time than a downstream file, treat the 
 - Step 1 `Topic intake` is implemented by `.agents/skills/topic-intake/`.
 - Step 2 `Research pack` is implemented by `.agents/skills/research-pack/`.
 - Step 3 `Script draft` is implemented by `.agents/skills/script-draft/`.
-- Step 4 `Voiceover` is implemented by `.agents/skills/voiceover/`.
+- Step 4 `Packaging` is implemented by `.agents/skills/packaging/`.
+- Step 5 `Voiceover` is implemented by `.agents/skills/voiceover/`.
 - The remaining lifecycle steps do not have executable project-local skills yet.
 
 ## Section Voiceover Branch
 
-After `02-script.md`, production can branch by section.
+After `03-packaging.md`, production can branch by section.
 
 The `voiceover` skill should ask which script section to generate. It should offer `All` first, then each script section. `All` means generate separate voiceover outputs for every section, not one stitched full-video audio file.
 
@@ -75,7 +76,7 @@ projects/<slug>/voiceover/section-XX-kebab-section-name/
 The project-level voiceover index belongs in:
 
 ```text
-projects/<slug>/03-voiceover.md
+projects/<slug>/04-voiceover.md
 ```
 
 ## Project Outputs
@@ -85,8 +86,8 @@ Each new video should start from `projects/_template/` and produce:
 - `00-topic-intake.md`
 - `01-research-pack.md`
 - `02-script.md`
-- `03-voiceover.md`
-- `04-packaging.md`
+- `03-packaging.md`
+- `04-voiceover.md`
 - `05-visual-plan.md`
 - `06-production-board.md`
 - `07-review.md`

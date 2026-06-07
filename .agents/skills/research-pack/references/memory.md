@@ -84,7 +84,7 @@ Apply next time:
 
 - require non-empty `projects/<slug>/00-topic-intake.md`
 - if missing, stop and ask the user to run `topic-intake`
-- after writing `01-research-pack.md`, list stale downstream outputs from `02-script.md` through `09-self-learning.md`
+- after writing `01-research-pack.md`, list stale downstream outputs from `02-script.md`, `03-packaging.md`, `04-voiceover.md`, and later files through `09-self-learning.md`
 - do not delete stale files unless the user explicitly asks
 - otherwise tell the user to rerun downstream skills in order, starting with `script-draft`
 

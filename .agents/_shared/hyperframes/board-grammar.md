@@ -74,15 +74,15 @@ Script-order names make review harder after timing changes.
 
 Use these board types consistently:
 
-| Type | Job |
-| --- | --- |
-| `situation` | show the recognizable normal thing |
-| `suspicion` | reveal the weird detail |
+| Type         | Job                                          |
+| ------------ | -------------------------------------------- |
+| `situation`  | show the recognizable normal thing           |
+| `suspicion`  | reveal the weird detail                      |
 | `correction` | cross out the obvious meaning and replace it |
-| `mechanism` | show how the system works |
-| `evidence` | show a real or real-looking object |
-| `reaction` | let WIT carry the emotional beat |
-| `payoff` | land the simple insight |
+| `mechanism`  | show how the system works                    |
+| `evidence`   | show a real or real-looking object           |
+| `reaction`   | let WIT carry the emotional beat             |
+| `payoff`     | land the simple insight                      |
 
 ## Layer Order
 

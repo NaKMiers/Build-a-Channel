@@ -21,8 +21,8 @@ When Persist Mode creates, updates, or reruns `projects/<slug>/00-topic-intake.m
 
 - `01-research-pack.md`
 - `02-script.md`
-- `03-voiceover.md`
-- `04-packaging.md`
+- `03-packaging.md`
+- `04-voiceover.md`
 - `05-visual-plan.md`
 - `06-production-board.md`
 - `07-review.md`

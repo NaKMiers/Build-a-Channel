@@ -15,6 +15,7 @@ Copy this folder when starting a new long-form `Why It Works` video.
 - Title:
 - Thumbnail direction:
 - Script status:
+- Packaging status:
 - Voice status:
 - Production status:
 - Upload status:
@@ -25,8 +26,8 @@ Copy this folder when starting a new long-form `Why It Works` video.
 00-topic-intake.md
 01-research-pack.md
 02-script.md
-03-voiceover.md
-04-packaging.md
+03-packaging.md
+04-voiceover.md
 05-visual-plan.md
 06-production-board.md
 07-review.md
@@ -43,8 +44,8 @@ voiceover/
 - Topic intake:
 - Research pack:
 - Script:
-- Voiceover:
 - Packaging:
+- Voiceover:
 - Visual plan:
 - Production board:
 - HyperFrames:
