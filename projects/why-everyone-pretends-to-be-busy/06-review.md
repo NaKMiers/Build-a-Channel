@@ -6,16 +6,16 @@ Video:
 ## Section 1 Hook
 
 Status:
-`Section 1 static-board remake accepted by user`
+`rebuilt again for review after WIT/style rejection`
 
 Composition:
 `Section01Hook`
 
 Preview:
-`http://localhost:3021/#project/section-01-hook`
+`http://localhost:1001/#project/section-01-hook`
 
 Direct composition:
-`http://localhost:3021/api/projects/section-01-hook/preview/comp/index.html`
+`http://localhost:1001/api/projects/section-01-hook/preview/comp/index.html`
 
 Timing:
 `24.085s`
@@ -25,37 +25,48 @@ Accepted voice:
 
 ## Review Artifacts
 
-- Contact sheet: [section01-contact-sheet.jpg](hyperframes/qa/section01-contact-sheet.jpg)
-- HyperFrames source: [index.html](hyperframes/index.html)
-- Design rules: [DESIGN.md](hyperframes/DESIGN.md)
-- Attribution notes: [ATTRIBUTION.md](hyperframes/assets/ATTRIBUTION.md)
+- Studio cue frame, `1s`: [frame-01s.png](renders/section01-remake-studio-frames/frame-01s.png)
+- Studio cue frame, `9s`: [frame-09s.png](renders/section01-remake-studio-frames/frame-09s.png)
+- Studio cue frame, `18s`: [frame-18s.png](renders/section01-remake-studio-frames/frame-18s.png)
+- Studio cue frame, `23s`: [frame-23s.png](renders/section01-remake-studio-frames/frame-23s.png)
+- MP4 check frame, `23s`: [frame-23s.png](renders/section-01-hook/mp4-check-frames/frame-23s.png)
+- HyperFrames source: [index.html](section-previews/section-01-hook/index.html)
+- Draft render: [section-01-hook-remake.mp4](renders/section-01-hook/section-01-hook-remake.mp4)
+- Design rules: [DESIGN.md](section-previews/section-01-hook/DESIGN.md)
+- Implementation notes: [IMPLEMENTATION.md](section-previews/section-01-hook/IMPLEMENTATION.md)
+- Attribution notes: [ATTRIBUTION.md](assets/ATTRIBUTION.md)
 
 ## Current Pass Notes
 
-- Section 1 was simplified in [08-section-01-simple-remake.md](08-section-01-simple-remake.md).
-- The animated cue-by-cue pass from [07-section-01-replan.md](07-section-01-replan.md) was replaced because it felt too busy for a `24s` hook.
-- The section now uses `8` static boards with hard cuts only.
-- All transition overlays were removed.
-- In-board animation was removed; labels and props are visible as static paused-frame jokes.
-- Real-world photos remain the base layer, with only one generated notification-photo cutout retained for the busy proof board.
-- `REAL WORK` remains visible and untouched by the final board.
+- The previous Section 1 replacement is now stale because the user rejected the WIT and messy visual direction on `2026-06-08`.
+- The old Section 1 HyperFrames preview folder, standalone review copy, render file, and cue screenshots were removed before rebuilding.
+- The replacement skips the old Section 1 visual plan by explicit user request.
+- Reference pass used `Casually Explained: The Global Military Superpowers`: sparse whiteboard drawings, hard cuts, crude labels/arrows, and occasional real-photo evidence.
+- Reference pass also used the TED-Ed grammar video linked by the user for simple illustrative sentence-matched frames.
+- The replacement uses `10` static boards with hard cuts only.
+- Visual style is simple illustration plus channel WIT PNGs on emotional beats.
+- The channel WIT pose set was copied from `projects/why-cheap-products-keep-getting-worse/assets/wit`.
+- The final MP4 uses local `Patrick Hand` Latin font to avoid browser fallback typography.
 - No real app logos are used.
 - Only one audio preview file is kept: MP3.
 
-## Accepted Section 1 Lesson
+## Previous Section 1 Lesson
 
 User review:
 `Ok now it's good`
 
+Status:
+`stale after 2026-06-08 rejection`
+
 What worked:
 
-- `8` static boards over `24.085s`
+- `10` static boards over `24.085s`
 - hard cuts only
 - no transition overlays
 - no in-board animation
 - one main joke or evidence object per board
-- real-world photo texture plus WIT plus short handwritten labels
-- generated image use kept to one clear support job instead of a moving collage
+- channel WIT PNGs plus short handwritten labels
+- simple CSS illustrations instead of a moving collage
 
 What not to repeat:
 
@@ -71,34 +82,33 @@ start from simple Casually Explained-style static boards, then add motion only i
 ## Static Board Snapshot Review
 
 Latest cue-frame contact sheet:
-[section01-contact-sheet.jpg](hyperframes/qa/section01-contact-sheet.jpg)
+`replaced by individual Studio cue-frame screenshots in renders/`
 
 Snapshot frames checked:
 
-- `0.9s`: weird desk
-- `3.3s`: less time
-- `5.2s`: professional
-- `8.0s`: busy proof
-- `11.4s`: important
-- `14.4s`: quiet thinking
-- `18.0s`: wrong labels
-- `22.0s`: looking busy
+- `1s`: whiteboard setup
+- `4s`: less time
+- `8s`: busy proof
+- `12s`: important
+- `14s`: quiet thinking
+- `18s`: wrong labels
+- `22s`: looking busy
 
 ## Verification
 
-`npm run check` result:
+`npm.cmd run check` result:
 
-- lint: passes with warnings
-- validate: passes, no console errors, all text passes WCAG AA
-- inspect: passes, `0` layout issues
+- lint: passes with one dense-track warning
+- validate: passes with non-blocking contrast warnings from hidden/future board text sampling
+- inspect: passes, `0` layout issues across `9` samples
 
 Known warnings:
 
-- duplicate media discovery warning from reused real-world photos
-- dense track warning because the `8` static Section 1 boards are inline for easier timing review
+- dense track warning because the `10` static Section 1 boards are inline for easier timing review
+- non-blocking AudioContext and contrast warnings; Studio cue-frame screenshots and MP4 frames are readable
 
 Render status:
-draft MP4 render is blocked by missing FFmpeg on PATH.
+draft MP4 render completed at [section-01-hook-remake.mp4](renders/section-01-hook/section-01-hook-remake.mp4), `24.12s`, `1920x1080`, `30fps`, H.264 video with AAC audio.
 
 ## Section 2 Reframe
 
@@ -120,7 +130,7 @@ Implementation note:
 Current pass notes:
 
 - Active Section 2 HyperFrames preview runs separately from Section 1.
-- Section 1 remains accepted and is stored separately for later assembly.
+- Section 1 was rebuilt on `2026-06-08`; the earlier acceptance is stale until the user reviews the replacement.
 - Section 2 uses `7` static boards with hard cuts only.
 - No transition overlays or in-board animation were added.
 - Real-world photos are reused as visual evidence.
@@ -143,10 +153,10 @@ Section storage:
 
 Preview URLs:
 
-- Section 1 Studio: `http://localhost:3021/#project/section-01-hook`
+- Section 1 Studio: `http://localhost:1001/#project/section-01-hook`
 - Section 2 Studio: `http://localhost:3022/#project/section-02-reframe`
 - Section 3 Studio: `http://localhost:3023/#project/section-03-busy-status`
-- Section 1 direct composition: `http://localhost:3021/api/projects/section-01-hook/preview/comp/index.html`
+- Section 1 direct composition: `http://localhost:1001/api/projects/section-01-hook/preview/comp/index.html`
 - Section 2 direct composition: `http://localhost:3022/api/projects/section-02-reframe/preview/comp/index.html`
 - Section 3 direct composition: `http://localhost:3023/api/projects/section-03-busy-status/preview/comp/index.html`
 
@@ -191,7 +201,7 @@ Section 1 source:
 [index.html](section-previews/section-01-hook/index.html)
 
 Section 1 preview:
-`http://localhost:3021/#project/section-01-hook`
+`http://localhost:1001/#project/section-01-hook`
 
 Section 2 source:
 [index.html](section-previews/section-02-reframe/index.html)
@@ -207,7 +217,7 @@ Section 3 preview:
 
 Direct composition checks:
 
-- Section 1: `http://localhost:3021/api/projects/section-01-hook/preview/comp/index.html`
+- Section 1: `http://localhost:1001/api/projects/section-01-hook/preview/comp/index.html`
 - Section 2: `http://localhost:3022/api/projects/section-02-reframe/preview/comp/index.html`
 - Section 3: `http://localhost:3023/api/projects/section-03-busy-status/preview/comp/index.html`
 

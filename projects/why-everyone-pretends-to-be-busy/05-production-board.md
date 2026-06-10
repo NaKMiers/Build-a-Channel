@@ -2,12 +2,53 @@
 
 Video: `Why Everyone Pretends To Be Busy`
 
-Status: `Step 11.1 - Section 1 Hook HyperFrames build ready for review`
+Status: `Section 1 Hook rebuilt again for review on 2026-06-08`
 
 Scope:
-only Section 1 is planned here. Do not implement Section 2 until Section 1 is built, reviewed, and approved.
+Section 1 was rebuilt again after the prior replacement was rejected for using the wrong WIT and still feeling messy. The current replacement deliberately skips the old Section 1 visual plan and uses script, voice timing, the complete channel WIT pose library, and simple illustrated reference analysis.
+
+## 2026-06-08 Section 1 Replacement Render, Second Pass
+
+Decision:
+`Use the user-requested style override. Do not follow the old Section 1 visual plan for this rebuild. Use the channel WIT pose PNGs, not drawn placeholder WIT.`
+
+Reference analysis:
+
+- `Casually Explained: The Global Military Superpowers` uses sparse whiteboard drawings, crude handwritten labels, hard cuts, simple real-photo/map evidence, and one joke label per frame.
+- `When should you use "fewer" vs "less"? And other petty grammar rules - Arika Okrent` from TED-Ed uses one simple illustrative object or list per sentence beat, muted backgrounds, sparse labels, and literal visual support for narration.
+- The replacement applies the simple-board grammar without copying exact frames, jokes, or channel identity.
+
+Replacement preview:
+
+- Preview project: [section-previews/section-01-hook](section-previews/section-01-hook)
+- Standalone review copy: [hyperframes/review/section-01.html](hyperframes/review/section-01.html)
+- Studio URL: `http://localhost:1001/#project/section-01-hook`
+- Direct composition URL: `http://localhost:1001/api/projects/section-01-hook/preview/comp/index.html`
+- Duration: `24.085s`
+- Voiceover: `assets/voiceover/section-01-hook-young-fast-am_adam-1.05.mp3`
+- Draft render: [section-01-hook-remake.mp4](renders/section-01-hook/section-01-hook-remake.mp4)
+- Style: `10` static illustrated boards, hard cuts only, channel WIT on emotional beats only
+- WIT source: `projects/why-cheap-products-keep-getting-worse/assets/wit`
+- Font: local `assets/fonts/patrick-hand-latin.woff2`
+
+Checks:
+
+- `npm.cmd run check`: passes
+- lint warning: dense track, accepted because this is an inline 24s hook for easier timing review
+- validate warning: non-blocking AudioContext and contrast warnings
+- inspect: `0` layout issues across `9` samples
+- draft MP4: completed, `24.12s`, `1920x1080`, `30fps`, H.264 video with AAC audio
+
+Stale:
+
+- The earlier Section 1 replacement that used placeholder drawn WIT is now stale.
+- The old Section 1 preview folder, standalone review HTML, Section 1 render output, and cue screenshots were removed before rebuilding.
+- The historical Scene Data Plan below is stale for Section 1 and should not drive the current review.
 
 ## Section 1 Summary
+
+Status:
+`historical visual-plan-derived notes below are stale after the 2026-06-08 second-pass remake`
 
 Section:
 `Hook`

@@ -11,6 +11,14 @@
         box-sizing: border-box;
       }
 
+      @font-face {
+        font-family: "Patrick Hand Local";
+        src: url("./assets/fonts/patrick-hand-latin.woff2") format("woff2");
+        font-weight: 400;
+        font-style: normal;
+        font-display: block;
+      }
+
       html,
       body {
         width: 1920px;
@@ -20,8 +28,8 @@
       }
 
       body {
-        font-family: monospace;
         color: #1f1b16;
+        font-family: "Patrick Hand Local", cursive;
       }
 
       #root {
@@ -43,80 +51,48 @@
         content: "";
         position: absolute;
         inset: 0;
-        z-index: 1;
+        z-index: 0;
         background-image:
-          linear-gradient(rgba(31, 27, 22, 0.04) 1px, rgba(244, 239, 228, 0) 1px),
-          linear-gradient(90deg, rgba(31, 27, 22, 0.035) 1px, rgba(244, 239, 228, 0) 1px);
-        background-size: 64px 64px;
+          linear-gradient(rgba(31, 27, 22, 0.035) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(31, 27, 22, 0.03) 1px, transparent 1px);
+        background-size: 68px 68px;
         pointer-events: none;
       }
 
-      .real-photo {
+      .board > * {
         position: absolute;
-        inset: 52px;
-        width: calc(100% - 104px);
-        height: calc(100% - 104px);
-        object-fit: cover;
-        border: 10px solid #fff9ea;
-        box-shadow: 0 26px 70px rgba(31, 27, 22, 0.25);
-        filter: saturate(0.86) contrast(0.96) brightness(1.02);
         z-index: 2;
       }
 
-      .photo-dim {
-        position: absolute;
-        inset: 52px;
-        z-index: 3;
-        background: rgba(244, 239, 228, 0.26);
-        pointer-events: none;
-      }
-
-      .photo-dim.strong {
-        background: rgba(244, 239, 228, 0.42);
-      }
-
-      .wit {
-        position: absolute;
-        z-index: 18;
-        object-fit: contain;
-        filter: drop-shadow(0 12px 9px rgba(31, 27, 22, 0.24));
-      }
-
-      .wit-large {
-        width: 410px;
-      }
-
-      .wit-mid {
-        width: 330px;
-      }
-
-      .wit-small {
-        width: 245px;
-      }
-
       .label {
-        position: absolute;
-        z-index: 28;
         display: inline-flex;
         align-items: center;
         justify-content: center;
+        max-width: 1120px;
         padding: 20px 30px 16px;
-        border: 5px solid #1f1b16;
+        border: 6px solid #1f1b16;
         background: #fff9ea;
         color: #1f1b16;
-        font-family: cursive;
-        font-size: 78px;
+        box-shadow: 12px 14px 0 rgba(31, 27, 22, 0.15);
+        font-size: 76px;
         line-height: 0.92;
         letter-spacing: 0;
-        transform: rotate(-2deg);
-        box-shadow: 10px 12px 0 rgba(31, 27, 22, 0.16);
-        white-space: nowrap;
+        text-align: center;
       }
 
-      .label.red {
-        color: #c92a2a;
-        border-color: #c92a2a;
-        background: #fff3ed;
+      .label.big {
+        font-size: 118px;
+        padding: 26px 38px 22px;
+      }
+
+      .label.mid {
+        font-size: 62px;
+      }
+
+      .label.small {
+        font-size: 42px;
+        padding: 14px 20px 11px;
+        border-width: 4px;
       }
 
       .label.yellow {
@@ -124,779 +100,835 @@
       }
 
       .label.blue {
-        background: #d8e7f7;
+        background: #d9e9f7;
       }
 
-      .label.small {
-        font-size: 48px;
-        padding: 14px 20px 10px;
-        border-width: 4px;
+      .label.green {
+        background: #cfe8cf;
       }
 
-      .task-card,
-      .ui-card,
-      .photo-proof,
-      .empty-doc,
-      .medal {
+      .label.red {
+        color: #c92a2a;
+        border-color: #c92a2a;
+        background: #fff2ec;
+      }
+
+      .label.dark {
+        color: #fff9ea;
+        background: #1f1b16;
+      }
+
+      .tilt-left {
+        transform: rotate(-3deg);
+      }
+
+      .tilt-right {
+        transform: rotate(3deg);
+      }
+
+      .wit {
+        object-fit: contain;
+        filter: drop-shadow(0 12px 9px rgba(31, 27, 22, 0.22));
+      }
+
+      .wit.xl {
+        width: 520px;
+      }
+
+      .wit.large {
+        width: 430px;
+      }
+
+      .wit.mid {
+        width: 340px;
+      }
+
+      .sun {
+        left: 112px;
+        top: 104px;
+        width: 214px;
+        height: 214px;
+        border: 7px solid #1f1b16;
+        border-radius: 50%;
+        background: #f2d26b;
+        box-shadow: 12px 14px 0 rgba(31, 27, 22, 0.12);
+      }
+
+      .sun::before,
+      .sun::after {
+        content: "";
         position: absolute;
-        z-index: 14;
+        left: 54px;
+        top: 58px;
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        background: #1f1b16;
+        box-shadow: 76px 0 0 #1f1b16;
+      }
+
+      .sun::after {
+        left: 62px;
+        top: 128px;
+        width: 90px;
+        height: 14px;
+        border-radius: 999px;
+        background: #1f1b16;
+        box-shadow: none;
+      }
+
+      .paper,
+      .card,
+      .phone,
+      .calendar,
+      .inbox,
+      .badge,
+      .desk,
+      .problem-box,
+      .app-window {
+        border: 6px solid #1f1b16;
         background: #fff9ea;
-        border: 5px solid #1f1b16;
         box-shadow: 12px 14px 0 rgba(31, 27, 22, 0.16);
       }
 
-      .task-card {
-        width: 390px;
-        min-height: 205px;
-        padding: 28px;
-        transform: rotate(2deg);
+      .paper {
+        width: 500px;
+        min-height: 270px;
+        padding: 34px;
       }
 
-      .task-card .title {
-        font-family: cursive;
-        font-size: 52px;
-        line-height: 0.94;
-        letter-spacing: 0;
+      .paper-title {
+        position: static;
+        font-size: 58px;
+        line-height: 0.92;
       }
 
-      .task-card .lines,
-      .ui-card .lines {
+      .paper-lines {
+        position: static;
         display: grid;
-        gap: 14px;
-        margin-top: 24px;
+        gap: 16px;
+        margin-top: 28px;
       }
 
-      .task-card .lines span,
-      .ui-card .lines span {
+      .paper-lines span {
         display: block;
-        width: 100%;
-        height: 12px;
-        background: rgba(31, 27, 22, 0.18);
+        height: 18px;
         border-radius: 999px;
+        background: rgba(31, 27, 22, 0.18);
       }
 
-      .ui-card {
-        width: 300px;
-        min-height: 135px;
-        padding: 20px 22px 16px;
-        font-family: monospace;
+      .paper-lines span:nth-child(1) {
+        width: 370px;
       }
 
-      .ui-card .title {
-        font-size: 28px;
-        font-weight: 800;
+      .paper-lines span:nth-child(2) {
+        width: 330px;
       }
 
-      .red-dot {
-        position: absolute;
-        right: -18px;
-        top: -18px;
-        width: 58px;
-        height: 58px;
+      .paper-lines span:nth-child(3) {
+        width: 390px;
+      }
+
+      .time-chip {
+        width: 210px;
+        height: 210px;
+        display: grid;
+        place-items: center;
+        border: 7px solid #1f1b16;
         border-radius: 50%;
-        background: #c92a2a;
-        border: 5px solid #1f1b16;
-        color: #1f1b16;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: cursive;
-        font-size: 38px;
-      }
-
-      .calendar-card {
-        position: absolute;
-        z-index: 15;
-        width: 168px;
-        height: 112px;
-        padding: 14px;
-        background: #d8e7f7;
-        border: 4px solid #1f1b16;
-        box-shadow: 7px 9px 0 rgba(31, 27, 22, 0.18);
+        background: #d9e9f7;
+        box-shadow: 10px 12px 0 rgba(31, 27, 22, 0.14);
         font-family: monospace;
-        font-weight: 800;
-        font-size: 22px;
+        font-size: 82px;
+        font-weight: 900;
       }
 
-      .red-arrow {
-        position: absolute;
-        z-index: 27;
-        width: 220px;
-        height: 36px;
-        transform-origin: right center;
+      .squash-bar {
+        width: 138px;
+        height: 650px;
+        border: 7px solid #1f1b16;
+        background: #c92a2a;
+        transform: rotate(6deg);
+        box-shadow: 12px 14px 0 rgba(31, 27, 22, 0.14);
       }
 
-      .red-arrow::before {
+      .arrow {
+        width: 320px;
+        height: 54px;
+      }
+
+      .arrow::before {
         content: "";
         position: absolute;
         left: 0;
-        top: 14px;
-        width: 180px;
-        height: 8px;
-        background: #c92a2a;
+        top: 22px;
+        width: 268px;
+        height: 10px;
         border-radius: 999px;
+        background: #c92a2a;
       }
 
-      .red-arrow::after {
+      .arrow::after {
         content: "";
         position: absolute;
         right: 0;
         top: 0;
-        width: 0;
-        height: 0;
-        border-top: 18px solid rgba(0, 0, 0, 0);
-        border-bottom: 18px solid rgba(0, 0, 0, 0);
-        border-left: 36px solid #c92a2a;
-      }
-
-      .tie-strip {
-        position: absolute;
-        z-index: 25;
-        width: 74px;
-        height: 230px;
-        background: #fff9ea;
-        border: 5px solid #1f1b16;
-        transform: rotate(-8deg);
-      }
-
-      .tie-strip::before {
-        content: "";
-        position: absolute;
-        left: 16px;
-        right: 16px;
-        top: 22px;
-        height: 160px;
-        border-top: 8px solid rgba(31, 27, 22, 0.22);
-        border-bottom: 8px solid rgba(31, 27, 22, 0.18);
+        border-top: 27px solid transparent;
+        border-bottom: 27px solid transparent;
+        border-left: 54px solid #c92a2a;
       }
 
       .badge {
-        position: absolute;
-        z-index: 26;
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        background: #f2d26b;
-        border: 7px solid #1f1b16;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: cursive;
-        font-size: 96px;
-        box-shadow: 12px 14px 0 rgba(31, 27, 22, 0.18);
-        transform: rotate(9deg);
-      }
-
-      .photo-proof {
-        width: 420px;
-        height: 280px;
-        object-fit: cover;
-        border: 8px solid #fff9ea;
-      }
-
-      .medal {
-        width: 280px;
-        height: 230px;
-        border-radius: 50%;
-        background: #f2d26b;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        font-family: cursive;
-        font-size: 54px;
-        text-align: center;
-        line-height: 0.9;
-        transform: rotate(5deg);
-      }
-
-      .empty-doc {
-        width: 390px;
-        height: 250px;
-      }
-
-      .empty-doc::before {
-        content: "";
-        position: absolute;
-        left: 28px;
-        top: 34px;
-        width: 260px;
-        height: 13px;
-        border-radius: 999px;
-        background: rgba(31, 27, 22, 0.18);
-        box-shadow:
-          0 46px 0 rgba(31, 27, 22, 0.13),
-          0 92px 0 rgba(31, 27, 22, 0.1);
-      }
-
-      .stamp {
-        position: absolute;
-        z-index: 30;
-        padding: 15px 22px 10px;
-        border: 6px solid #c92a2a;
-        color: #c92a2a;
-        font-family: cursive;
-        font-size: 58px;
-        line-height: 0.9;
-        background: rgba(255, 249, 234, 0.9);
-        box-shadow: 8px 9px 0 rgba(201, 42, 42, 0.14);
-      }
-
-      .stamp span {
-        display: block;
-      }
-
-      .medal span {
-        display: block;
-      }
-
-      #hook-weird .real-work-label {
-        left: 170px;
-        top: 125px;
-      }
-
-      #hook-weird .weird-label {
-        left: 575px;
-        top: 118px;
-        transform: rotate(4deg);
-      }
-
-      #hook-weird .task-card {
-        left: 210px;
-        bottom: 150px;
-      }
-
-      #hook-weird .wit {
-        right: 210px;
-        bottom: 105px;
-      }
-
-      #hook-less-time .less-label {
-        left: 150px;
-        top: 128px;
-      }
-
-      #hook-less-time .task-card {
-        left: 245px;
-        bottom: 185px;
-        transform: rotate(-3deg);
-      }
-
-      #hook-less-time .card-a {
-        left: 640px;
-        top: 195px;
-        transform: rotate(-7deg);
-      }
-
-      #hook-less-time .card-b {
-        right: 550px;
-        bottom: 248px;
-        transform: rotate(5deg);
-      }
-
-      #hook-less-time .card-c {
-        right: 365px;
-        top: 245px;
-        transform: rotate(-4deg);
-      }
-
-      #hook-less-time .wit {
-        left: 780px;
-        bottom: 98px;
-      }
-
-      #hook-professional .professional-label {
-        right: 210px;
-        top: 132px;
-        transform: rotate(2deg);
-      }
-
-      #hook-professional .wit {
-        left: 760px;
-        bottom: 98px;
-      }
-
-      #hook-professional .tie-strip {
-        left: 895px;
-        top: 596px;
-      }
-
-      #hook-professional .badge {
-        left: 965px;
-        top: 252px;
-      }
-
-      #hook-busy-proof .busy-label {
-        left: 135px;
-        top: 118px;
-        transform: rotate(-3deg);
-      }
-
-      #hook-busy-proof .phone-proof {
-        right: 145px;
-        top: 145px;
-        transform: rotate(4deg);
-      }
-
-      #hook-busy-proof .calendar-ui {
-        left: 300px;
-        top: 275px;
-        transform: rotate(-4deg);
-      }
-
-      #hook-busy-proof .inbox-ui {
-        right: 420px;
-        bottom: 205px;
+        width: 540px;
+        height: 350px;
+        display: grid;
+        place-items: center;
+        padding: 38px;
+        background: #d9e9f7;
+        border-radius: 28px;
         transform: rotate(3deg);
       }
 
-      #hook-busy-proof .phone-note {
-        left: 620px;
-        bottom: 165px;
+      .badge-text {
+        position: static;
+        display: grid;
+        gap: 18px;
+        text-align: center;
+      }
+
+      .badge-text strong {
+        font-family: monospace;
+        font-size: 82px;
+        line-height: 0.88;
+      }
+
+      .badge-text span {
+        font-size: 42px;
+      }
+
+      .medal {
+        width: 350px;
+        height: 350px;
+        display: grid;
+        place-items: center;
+        border: 8px solid #1f1b16;
+        border-radius: 50%;
+        background: #f2d26b;
+        box-shadow: 12px 14px 0 rgba(31, 27, 22, 0.15);
+        text-align: center;
+        font-size: 46px;
+        line-height: 0.9;
+        transform: rotate(-7deg);
+      }
+
+      .calendar {
+        width: 560px;
+        height: 430px;
+        padding: 28px;
+        background: #d9e9f7;
         transform: rotate(-3deg);
       }
 
-      #hook-busy-proof .wit {
-        left: 815px;
-        bottom: 82px;
+      .calendar-top {
+        position: static;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 22px;
+        font-family: monospace;
+        font-size: 50px;
+        font-weight: 900;
       }
 
-      #hook-important .important-label {
+      .calendar-grid {
+        position: static;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 12px;
+      }
+
+      .calendar-grid span {
+        height: 52px;
+        border: 4px solid #1f1b16;
+        background: #fff9ea;
+      }
+
+      .calendar-grid span.busy {
+        background: #c92a2a;
+      }
+
+      .inbox {
+        width: 520px;
+        height: 360px;
+        padding: 28px;
+        background: #fff9ea;
+        transform: rotate(4deg);
+      }
+
+      .inbox-title {
+        position: static;
+        font-family: monospace;
+        font-size: 52px;
+        font-weight: 900;
+      }
+
+      .mail-stack {
+        position: static;
+        display: grid;
+        gap: 15px;
+        margin-top: 24px;
+      }
+
+      .mail-stack span {
+        height: 44px;
+        border: 4px solid #1f1b16;
+        background: #f2d26b;
+      }
+
+      .burst {
+        width: 210px;
+        height: 210px;
+        border: 7px solid #1f1b16;
+        background: #c92a2a;
+        clip-path: polygon(50% 0%, 61% 31%, 95% 16%, 73% 45%, 100% 62%, 65% 63%, 70% 100%, 50% 72%, 29% 100%, 35% 63%, 0 62%, 27% 45%, 5% 16%, 39% 31%);
+        box-shadow: 10px 12px 0 rgba(31, 27, 22, 0.12);
+      }
+
+      .phone {
+        width: 380px;
+        height: 650px;
+        padding: 46px 34px;
+        border-radius: 48px;
+        background: #1f1b16;
+        box-shadow: 14px 16px 0 rgba(31, 27, 22, 0.16);
+      }
+
+      .phone-screen {
+        position: static;
+        width: 100%;
+        height: 100%;
+        padding: 32px;
+        border: 5px solid #1f1b16;
+        border-radius: 28px;
+        background: #fff9ea;
+      }
+
+      .notification {
+        position: static;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 18px;
+        padding: 18px;
+        border: 4px solid #1f1b16;
+        background: #d9e9f7;
+        font-family: monospace;
+        font-size: 28px;
+        font-weight: 900;
+      }
+
+      .notification.red {
+        background: #fff2ec;
+        color: #1f1b16;
+      }
+
+      .ping {
+        display: grid;
+        place-items: center;
+        width: 66px;
+        height: 66px;
+        border: 5px solid #1f1b16;
+        border-radius: 50%;
+        background: #f2d26b;
+        color: #1f1b16;
+        font-family: monospace;
+        font-size: 34px;
+        font-weight: 900;
+      }
+
+      .desk {
+        width: 960px;
+        height: 410px;
+        padding: 44px;
+        background: #fff9ea;
+        transform: rotate(-1deg);
+      }
+
+      .desk-surface {
+        position: static;
+        width: 100%;
+        height: 115px;
+        margin-top: 205px;
+        border-top: 9px solid #1f1b16;
+        background: #c9a77e;
+      }
+
+      .problem-box {
+        width: 250px;
+        height: 190px;
+        display: grid;
+        place-items: center;
+        background: #d9e9f7;
+        transform: rotate(5deg);
+        font-family: monospace;
+        font-size: 72px;
+        font-weight: 900;
+      }
+
+      .thought {
+        width: 300px;
+        height: 160px;
+        display: grid;
+        place-items: center;
+        border: 6px solid #1f1b16;
+        border-radius: 45% 55% 50% 45%;
+        background: #fff9ea;
+        box-shadow: 10px 12px 0 rgba(31, 27, 22, 0.12);
+        font-size: 42px;
+        line-height: 0.92;
+        text-align: center;
+      }
+
+      .stamp {
+        min-width: 340px;
+        padding: 22px 30px 16px;
+        border: 8px solid #c92a2a;
+        background: rgba(255, 249, 234, 0.96);
+        color: #c92a2a;
+        box-shadow: 10px 12px 0 rgba(31, 27, 22, 0.12);
+        font-size: 62px;
+        line-height: 0.88;
+        text-align: center;
+      }
+
+      .app-window {
+        width: 470px;
+        min-height: 260px;
+        padding: 24px;
+        background: #fff9ea;
+      }
+
+      .window-bar {
+        position: static;
+        display: flex;
+        gap: 10px;
+        margin-bottom: 22px;
+      }
+
+      .window-bar span {
+        width: 28px;
+        height: 28px;
+        border: 4px solid #1f1b16;
+        border-radius: 50%;
+        background: #c92a2a;
+      }
+
+      .window-bar span:nth-child(2) {
+        background: #f2d26b;
+      }
+
+      .window-bar span:nth-child(3) {
+        background: #cfe8cf;
+      }
+
+      .fake-lines {
+        position: static;
+        display: grid;
+        gap: 15px;
+      }
+
+      .fake-lines span {
+        display: block;
+        height: 22px;
+        border-radius: 999px;
+        background: rgba(31, 27, 22, 0.18);
+      }
+
+      .fake-lines span:nth-child(1) {
+        width: 340px;
+      }
+
+      .fake-lines span:nth-child(2) {
+        width: 280px;
+      }
+
+      .fake-lines span:nth-child(3) {
+        width: 370px;
+      }
+
+      .curtain {
+        width: 520px;
+        height: 620px;
+        border: 7px solid #1f1b16;
+        background:
+          repeating-linear-gradient(
+            90deg,
+            #c92a2a 0,
+            #c92a2a 38px,
+            #a51f1f 38px,
+            #a51f1f 76px
+          );
+        box-shadow: 14px 16px 0 rgba(31, 27, 22, 0.14);
+        transform: rotate(2deg);
+      }
+
+      .caption {
+        font-family: monospace;
+        font-size: 34px;
+        line-height: 1;
+        color: #5d5144;
+      }
+
+      .b1-title {
+        left: 520px;
+        top: 230px;
+      }
+
+      .b1-weird {
+        left: 690px;
+        top: 480px;
+      }
+
+      .b1-wit {
+        right: 210px;
+        bottom: 110px;
+      }
+
+      .b2-time {
+        left: 170px;
+        top: 160px;
+      }
+
+      .b2-paper {
+        left: 540px;
+        top: 360px;
+        transform: rotate(-3deg);
+      }
+
+      .b2-squash {
+        left: 1015px;
+        top: 235px;
+      }
+
+      .b2-label {
+        right: 145px;
+        top: 180px;
+      }
+
+      .b2-real {
+        left: 575px;
+        top: 285px;
+      }
+
+      .b3-paper {
         left: 180px;
-        top: 132px;
+        top: 370px;
+        transform: rotate(-4deg) scale(0.9);
       }
 
-      #hook-important .medal {
-        right: 345px;
+      .b3-arrow {
+        left: 740px;
+        top: 505px;
+      }
+
+      .b3-badge {
+        right: 210px;
+        top: 275px;
+      }
+
+      .b3-caption {
+        right: 260px;
+        bottom: 214px;
+      }
+
+      .b4-calendar {
+        left: 170px;
+        top: 185px;
+      }
+
+      .b4-inbox {
+        right: 250px;
+        top: 230px;
+      }
+
+      .b4-burst {
+        left: 1015px;
+        top: 382px;
+      }
+
+      .b4-label {
+        left: 640px;
+        bottom: 145px;
+      }
+
+      .b5-phone {
+        left: 285px;
+        top: 175px;
+      }
+
+      .b5-wit {
+        right: 320px;
+        top: 135px;
+      }
+
+      .b5-label {
+        right: 315px;
+        bottom: 145px;
+      }
+
+      .b6-medal {
+        left: 330px;
+        top: 215px;
+      }
+
+      .b6-badge {
+        left: 685px;
+        top: 300px;
+      }
+
+      .b6-wit {
+        right: 265px;
+        bottom: 105px;
+      }
+
+      .b6-caption {
+        left: 745px;
+        top: 690px;
+      }
+
+      .b7-desk {
+        left: 455px;
+        top: 385px;
+      }
+
+      .b7-wit {
+        left: 205px;
+        top: 155px;
+      }
+
+      .b7-problem {
+        right: 380px;
         top: 250px;
       }
 
-      #hook-important .wit {
-        left: 815px;
-        bottom: 88px;
+      .b7-thought {
+        right: 690px;
+        top: 160px;
       }
 
-      #hook-thinking .thinking-label {
+      .b7-label {
+        left: 595px;
+        top: 160px;
+      }
+
+      .b8-wit {
         left: 170px;
-        top: 140px;
+        bottom: 105px;
       }
 
-      #hook-thinking .task-card {
-        right: 280px;
+      .b8-stamp-a {
+        left: 670px;
+        top: 210px;
+        transform: rotate(-6deg);
+      }
+
+      .b8-stamp-b {
+        left: 925px;
+        top: 430px;
+        transform: rotate(4deg);
+      }
+
+      .b8-stamp-c {
+        left: 650px;
+        top: 670px;
+        transform: rotate(-2deg);
+      }
+
+      .b8-label {
+        right: 185px;
+        top: 145px;
+      }
+
+      .b9-window-a {
+        left: 170px;
         top: 180px;
         transform: rotate(-3deg);
       }
 
-      #hook-thinking .wit {
-        left: 700px;
-        bottom: 92px;
+      .b9-window-b {
+        left: 590px;
+        top: 430px;
+        transform: rotate(4deg);
       }
 
-      #hook-wrong-labels .wit {
-        left: 825px;
-        bottom: 108px;
-      }
-
-      #hook-wrong-labels .stamp-a {
-        left: 170px;
-        top: 142px;
+      .b9-window-c {
+        right: 210px;
+        top: 205px;
         transform: rotate(-2deg);
       }
 
-      #hook-wrong-labels .stamp-b {
-        right: 270px;
-        top: 252px;
-        transform: rotate(8deg);
+      .b9-wit {
+        right: 565px;
+        bottom: 70px;
       }
 
-      #hook-wrong-labels .stamp-c {
-        right: 275px;
-        bottom: 178px;
-        transform: rotate(-4deg);
-      }
-
-      #hook-wrong-labels .arrow-a {
-        left: 395px;
-        top: 250px;
-        transform: rotate(8deg);
-      }
-
-      #hook-looking-busy .looking-label {
-        left: 130px;
+      .b9-label {
+        left: 630px;
         top: 120px;
       }
 
-      #hook-looking-busy .task-card {
-        left: 170px;
-        bottom: 145px;
-        transform: rotate(-3deg);
+      .b10-curtain {
+        left: 150px;
+        top: 165px;
       }
 
-      #hook-looking-busy .empty-doc {
-        right: 620px;
-        bottom: 250px;
-        transform: rotate(2deg);
+      .b10-wit {
+        left: 295px;
+        bottom: 75px;
       }
 
-      #hook-looking-busy .update-ui {
-        right: 275px;
-        top: 305px;
-        transform: rotate(6deg);
-      }
-
-      #hook-looking-busy .wit {
-        right: 250px;
-        bottom: 82px;
-      }
-
-      .mini-note,
-      .paper-note,
-      .tag {
-        position: absolute;
-        z-index: 16;
-        background: #fff9ea;
-        border: 4px solid #1f1b16;
-        box-shadow: 8px 10px 0 rgba(31, 27, 22, 0.15);
-        font-family: cursive;
-        color: #1f1b16;
-      }
-
-      .paper-note {
-        width: 335px;
-        min-height: 165px;
-        padding: 26px 24px 20px;
-        font-size: 44px;
-        line-height: 0.95;
-      }
-
-      .mini-note {
-        padding: 16px 20px 12px;
-        font-size: 42px;
-        line-height: 0.95;
-      }
-
-      .tag {
-        padding: 12px 18px 9px;
-        font-size: 36px;
-        line-height: 0.9;
-        background: #d8e7f7;
-      }
-
-      .crossout {
-        position: absolute;
-        z-index: 31;
-        height: 8px;
-        background: #c92a2a;
-        border-radius: 999px;
-        transform: rotate(-7deg);
-        box-shadow: 0 4px 0 rgba(201, 42, 42, 0.18);
-      }
-
-      .split-panel {
-        position: absolute;
-        top: 168px;
-        bottom: 132px;
-        z-index: 12;
-        width: 610px;
-        padding: 38px;
-        background: rgba(255, 249, 234, 0.88);
-        border: 6px solid #1f1b16;
-        box-shadow: 12px 14px 0 rgba(31, 27, 22, 0.16);
-      }
-
-      .split-panel .panel-title {
-        font-family: cursive;
-        font-size: 58px;
-        line-height: 0.92;
-        margin-bottom: 30px;
-      }
-
-      .fake-list {
-        display: grid;
-        gap: 22px;
-      }
-
-      .fake-list span {
-        display: block;
-        height: 28px;
-        border-radius: 999px;
-        background: rgba(31, 27, 22, 0.17);
-      }
-
-      .fake-list .red-line {
-        background: rgba(201, 42, 42, 0.56);
-      }
-
-      .greater-sign {
-        position: absolute;
-        z-index: 25;
-        left: 890px;
-        top: 435px;
-        font-family: cursive;
-        font-size: 160px;
-        line-height: 0.8;
-        transform: rotate(-3deg);
-        color: #c92a2a;
-        text-shadow: 8px 8px 0 rgba(31, 27, 22, 0.13);
-      }
-
-      #reframe-not-lazy .not-lazy-label {
-        left: 135px;
-        top: 125px;
-      }
-
-      #reframe-not-lazy .lazy-note {
-        left: 220px;
-        bottom: 185px;
-        transform: rotate(-4deg);
-      }
-
-      #reframe-not-lazy .crossout {
-        left: 242px;
-        bottom: 257px;
-        width: 262px;
-      }
-
-      #reframe-not-lazy .wit {
-        right: 250px;
-        bottom: 90px;
-      }
-
-      #reframe-different-problem .problem-label {
-        right: 180px;
-        top: 150px;
-        transform: rotate(3deg);
-      }
-
-      #reframe-different-problem .folder-note {
-        left: 270px;
-        bottom: 170px;
-        width: 420px;
-        min-height: 185px;
-        transform: rotate(-3deg);
-      }
-
-      #reframe-different-problem .wit {
-        right: 330px;
-        bottom: 90px;
-      }
-
-      #reframe-appearance-vs-work .main-label {
-        left: 575px;
-        top: 95px;
-        transform: rotate(-1deg);
-      }
-
-      #reframe-appearance-vs-work .panel-left {
-        left: 155px;
-      }
-
-      #reframe-appearance-vs-work .panel-right {
-        right: 155px;
-      }
-
-      #reframe-appearance-vs-work .wit {
-        left: 785px;
-        bottom: 72px;
-      }
-
-      #reframe-progress-hidden .progress-label {
-        left: 148px;
-        top: 132px;
-      }
-
-      #reframe-progress-hidden .hidden-note {
-        right: 280px;
-        top: 245px;
-        transform: rotate(-5deg);
-      }
-
-      #reframe-progress-hidden .cover-note {
-        right: 215px;
-        top: 305px;
-        width: 285px;
-        min-height: 130px;
-        background: #f2d26b;
-        transform: rotate(7deg);
-      }
-
-      #reframe-progress-hidden .wit {
-        left: 690px;
-        bottom: 90px;
-      }
-
-      #reframe-busy-visible .visible-label {
-        left: 165px;
-        top: 128px;
-      }
-
-      #reframe-busy-visible .tag-a {
-        right: 360px;
-        top: 205px;
-        transform: rotate(5deg);
-      }
-
-      #reframe-busy-visible .tag-b {
-        right: 220px;
-        top: 365px;
-        transform: rotate(-4deg);
-      }
-
-      #reframe-busy-visible .wit {
-        left: 745px;
-        bottom: 82px;
-      }
-
-      #reframe-visible-examples .serious-label {
-        left: 125px;
-        top: 120px;
-      }
-
-      #reframe-visible-examples .tag-a {
-        left: 260px;
-        bottom: 190px;
-        transform: rotate(-4deg);
-      }
-
-      #reframe-visible-examples .tag-b {
-        left: 560px;
-        bottom: 260px;
-        transform: rotate(3deg);
-      }
-
-      #reframe-visible-examples .tag-c {
-        right: 285px;
-        top: 250px;
-        transform: rotate(-3deg);
-      }
-
-      #reframe-visible-examples .wit {
+      .b10-window {
         right: 255px;
-        bottom: 80px;
+        top: 260px;
+        transform: rotate(3deg);
       }
 
-      #reframe-thinking-work .thinking-work-label {
-        left: 190px;
-        top: 132px;
-      }
-
-      #reframe-thinking-work .actual-work-note {
-        right: 260px;
-        top: 190px;
-        transform: rotate(-4deg);
-      }
-
-      #reframe-thinking-work .footnote {
+      .b10-title {
         right: 230px;
-        bottom: 185px;
-        transform: rotate(5deg);
+        bottom: 215px;
       }
 
-      #reframe-thinking-work .wit {
-        left: 690px;
-        bottom: 82px;
+      .b10-caption {
+        right: 340px;
+        bottom: 145px;
       }
     </style>
   </head>
   <body>
     <div id="root" data-composition-id="Section01Hook" data-start="0" data-duration="24.085" data-width="1920" data-height="1080">
-<!--
-  Accepted Section 1 standalone source.
-  Keep separate from Section 2.
-  Use during final assembly only after all sections are approved.
--->
-<audio id="voiceover-section-01" data-start="0" data-duration="24.085" data-track-index="10" data-volume="1" src="./assets/voiceover/section-01-hook-young-fast-am_adam-1.05.mp3"></audio>
+      <audio id="voiceover-section-01" data-start="0" data-duration="24.085" data-track-index="10" data-volume="1" src="./assets/voiceover/section-01-hook-young-fast-am_adam-1.05.mp3"></audio>
 
-<section id="hook-weird" class="clip board board--situation" data-board-id="hook-weird" data-board-type="situation" data-start="0.00" data-duration="2.229" data-track-index="1">
-  <img class="real-photo" src="./assets/section-01-hook/real-world/home-office-laptop-desk-crop-real-cc0.jpg" alt="">
-  <div class="photo-dim"></div>
-  <div class="label yellow real-work-label">REAL WORK</div>
-  <div data-hf-studio-original-inline-translate="" data-hf-studio-original-translate="" data-hf-studio-path-offset="true" style="--hf-studio-offset-x:258px;--hf-studio-offset-y:23px;translate:var(--hf-studio-offset-x, 0px) var(--hf-studio-offset-y, 0px)" class="label red weird-label">WEIRD?</div>
-  <div class="task-card">
-    <div class="title">one actual task</div>
-    <div class="lines"><span></span><span></span><span></span></div>
-  </div>
-  <img class="wit wit-large" src="./assets/wit/wit-pose-neutral-default.png" alt="">
-</section>
+      <section id="hook-weird-modern-life" class="clip board" data-board-id="hook-weird-modern-life" data-board-type="suspicion" data-start="0.000" data-duration="2.263" data-track-index="1">
+        <div class="sun"></div>
+        <div class="label big b1-title tilt-left">MODERN LIFE</div>
+        <div class="label red b1-weird tilt-right">something weird</div>
+        <img class="wit large b1-wit" src="./assets/wit/wit-pose-suspicious.png" alt="">
+      </section>
 
-<section id="hook-less-time" class="clip board board--suspicion" data-board-id="hook-less-time" data-board-type="suspicion" data-start="2.23" data-duration="2.279" data-track-index="1">
-  <img class="real-photo" src="./assets/section-01-hook/real-world/wall-calendar-board-crop-real-cc-by-sa.jpg" alt="">
-  <div class="photo-dim strong"></div>
-  <div class="label blue less-label">LESS TIME</div>
-  <div class="task-card">
-    <div class="title">REAL WORK</div>
-    <div class="lines"><span></span><span></span><span></span></div>
-  </div>
-  <div data-hf-studio-original-inline-translate="" data-hf-studio-original-translate="" data-hf-studio-path-offset="true" style="--hf-studio-offset-x:34px;--hf-studio-offset-y:78px;translate:var(--hf-studio-offset-x, 0px) var(--hf-studio-offset-y, 0px)" class="calendar-card card-a">MEET</div>
-  <div class="calendar-card card-b">MEET</div>
-  <div class="calendar-card card-c">MEET</div>
-  <img class="wit wit-mid" src="./assets/wit/wit-pose-suspicious-detective.png" alt="">
-</section>
+      <section id="hook-less-time-real-work" class="clip board" data-board-id="hook-less-time-real-work" data-board-type="mechanism" data-start="2.263" data-duration="2.247" data-track-index="1">
+        <div class="time-chip b2-time">0:07</div>
+        <div class="label red mid b2-label tilt-right">LESS TIME</div>
+        <div class="label small b2-real tilt-left">real work</div>
+        <div class="paper b2-paper">
+          <div class="paper-title">one hard task</div>
+          <div class="paper-lines"><span></span><span></span><span></span></div>
+        </div>
+        <div class="squash-bar b2-squash"></div>
+      </section>
 
-<section id="hook-professional" class="clip board board--correction" data-board-id="hook-professional" data-board-type="correction" data-start="4.51" data-duration="1.469" data-track-index="1">
-  <img class="real-photo" src="./assets/section-01-hook/real-world/wall-calendar-board-crop-real-cc-by-sa.jpg" alt="">
-  <div class="photo-dim strong"></div>
-  <div class="label yellow professional-label">PROFESSIONAL?</div>
-  <div class="tie-strip"></div>
-  <div class="badge">?</div>
-  <img data-hf-studio-original-inline-translate="" data-hf-studio-original-translate="" data-hf-studio-path-offset="true" style="--hf-studio-offset-x:184px;--hf-studio-offset-y:4px;translate:var(--hf-studio-offset-x, 0px) var(--hf-studio-offset-y, 0px)" class="wit wit-mid" src="./assets/wit/wit-pose-confused.png" alt="">
-</section>
+      <section id="hook-more-professional" class="clip board" data-board-id="hook-more-professional" data-board-type="payoff" data-start="4.510" data-duration="1.548" data-track-index="1">
+        <div class="paper b3-paper">
+          <div class="paper-title">actual output</div>
+          <div class="paper-lines"><span></span><span></span><span></span></div>
+        </div>
+        <div class="arrow b3-arrow"></div>
+        <div class="badge b3-badge">
+          <div class="badge-text">
+            <strong>PRO</strong>
+            <span>looks professional</span>
+          </div>
+        </div>
+        <div class="caption b3-caption">work: maybe later</div>
+      </section>
 
-<section id="hook-busy-proof" class="clip board board--evidence" data-board-id="hook-busy-proof" data-board-type="evidence" data-start="5.98" data-duration="4.659" data-track-index="1">
-  <img class="real-photo" src="./assets/section-01-hook/real-world/phone-laptop-desk-crop-real-cc0.jpg" alt="">
-  <div class="photo-dim"></div>
-  <div class="label red busy-label">BUSY?</div>
-  <img class="photo-proof phone-proof" src="./assets/section-01-hook/generated/phone-notifications-generated.png" alt="">
-  <img class="wit wit-mid" src="./assets/wit/wit-pose-phone-bill-panic.png" alt="">
-</section>
+      <section id="hook-calendar-inbox" class="clip board" data-board-id="hook-calendar-inbox" data-board-type="evidence" data-start="6.058" data-duration="2.440" data-track-index="1">
+        <div class="calendar b4-calendar">
+          <div class="calendar-top"><span>CALENDAR</span><span>FULL</span></div>
+          <div class="calendar-grid">
+            <span class="busy"></span><span class="busy"></span><span></span><span class="busy"></span><span class="busy"></span>
+            <span></span><span class="busy"></span><span class="busy"></span><span class="busy"></span><span></span>
+            <span class="busy"></span><span class="busy"></span><span class="busy"></span><span></span><span class="busy"></span>
+            <span class="busy"></span><span></span><span class="busy"></span><span class="busy"></span><span class="busy"></span>
+          </div>
+        </div>
+        <div class="burst b4-burst"></div>
+        <div class="inbox b4-inbox">
+          <div class="inbox-title">INBOX: 4,892</div>
+          <div class="mail-stack"><span></span><span></span><span></span><span></span></div>
+        </div>
+        <div class="label small b4-label tilt-left">exploding, apparently</div>
+      </section>
 
-<section id="hook-important" class="clip board board--reaction" data-board-id="hook-important" data-board-type="reaction" data-start="10.64" data-duration="1.549" data-track-index="1">
-  <img class="real-photo" src="./assets/section-01-hook/real-world/phone-laptop-desk-crop-real-cc0.jpg" alt="">
-  <div class="photo-dim strong"></div>
-  <div class="label yellow important-label">IMPORTANT</div>
-  <div class="medal"><span>very</span><span>needed</span></div>
-  <img class="wit wit-mid" src="./assets/wit/wit-pose-shocked.png" alt="">
-</section>
+      <section id="hook-phone-panic-noises" class="clip board" data-board-id="hook-phone-panic-noises" data-board-type="reaction" data-start="8.498" data-duration="2.140" data-track-index="1">
+        <div class="phone b5-phone">
+          <div class="phone-screen">
+            <div class="notification red"><span>URGENT</span><span class="ping">7</span></div>
+            <div class="notification"><span>meeting</span><span class="ping">!</span></div>
+            <div class="notification red"><span>panic</span><span class="ping">3</span></div>
+            <div class="notification"><span>ping</span><span class="ping">!</span></div>
+          </div>
+        </div>
+        <img class="wit xl b5-wit" src="./assets/wit/wit-pose-holding-phone-panic.png" alt="">
+        <div class="label red mid b5-label tilt-left">tiny panic noises</div>
+      </section>
 
-<section id="hook-thinking" class="clip board board--before-after" data-board-id="hook-thinking" data-board-type="before_after" data-start="12.19" data-duration="4.539" data-track-index="1">
-  <img class="real-photo" src="./assets/section-01-hook/real-world/desk-laptop-calculator-real-cc0.jpg" alt="">
-  <div class="photo-dim"></div>
-  <div class="label yellow small thinking-label">quiet thinking</div>
-  <div class="task-card">
-    <div class="title">hard problem</div>
-    <div class="lines"><span></span><span></span><span></span></div>
-  </div>
-  <img class="wit wit-large" src="./assets/wit/wit-pose-thinking.png" alt="">
-</section>
+      <section id="hook-important-person" class="clip board" data-board-id="hook-important-person" data-board-type="payoff" data-start="10.638" data-duration="1.713" data-track-index="1">
+        <div class="medal b6-medal">VERY IMPORTANT</div>
+        <div class="badge b6-badge">
+          <div class="badge-text">
+            <strong>VIP</strong>
+            <span>assumed important</span>
+          </div>
+        </div>
+        <img class="wit large b6-wit" src="./assets/wit/wit-pose-awkward-celebration.png" alt="">
+        <div class="caption b6-caption">source: notifications</div>
+      </section>
 
-<section id="hook-wrong-labels" class="clip board board--reaction" data-board-id="hook-wrong-labels" data-board-type="reaction" data-start="16.73" data-duration="2.869" data-track-index="1">
-  <img class="real-photo" src="./assets/section-01-hook/real-world/desk-laptop-calculator-real-cc0.jpg" alt="">
-  <div class="photo-dim strong"></div>
-  <div class="stamp stamp-a">LAZY?</div>
-  <div class="red-arrow arrow-a"></div>
-  <div class="stamp stamp-b">UNEMPLOYED?</div>
-  <div class="stamp stamp-c"><span>SPIRITUAL</span><span>CRISIS?</span></div>
-  <img class="wit wit-small" src="./assets/wit/wit-pose-tiny-defeated.png" alt="">
-</section>
+      <section id="hook-quiet-hard-problem" class="clip board" data-board-id="hook-quiet-hard-problem" data-board-type="situation" data-start="12.351" data-duration="2.735" data-track-index="1">
+        <img class="wit large b7-wit" src="./assets/wit/wit-pose-thinking.png" alt="">
+        <div class="label green mid b7-label tilt-left">quiet thinking</div>
+        <div class="thought b7-thought">one hard problem</div>
+        <div class="problem-box b7-problem">?</div>
+        <div class="desk b7-desk">
+          <div class="desk-surface"></div>
+        </div>
+      </section>
 
-<section id="hook-looking-busy" class="clip board board--payoff" data-board-id="hook-looking-busy" data-board-type="payoff" data-start="19.60" data-duration="4.485" data-track-index="1">
-  <img class="real-photo" src="./assets/section-01-hook/real-world/home-office-laptop-desk-crop-real-cc0.jpg" alt="">
-  <div class="photo-dim"></div>
-  <div class="label yellow looking-label">LOOKING BUSY</div>
-  <div class="task-card">
-    <div class="title">REAL WORK</div>
-    <div class="lines"><span></span><span></span><span></span></div>
-  </div>
-  <div class="empty-doc"></div>
-  <div class="ui-card update-ui">
-    <div class="title">UPDATE</div>
-    <div class="lines"><span></span><span></span></div>
-    <div class="red-dot">3</div>
-  </div>
-  <img class="wit wit-large" src="./assets/wit/wit-pose-typing-on-laptop.png" alt="">
-</section>
+      <section id="hook-public-diagnosis" class="clip board" data-board-id="hook-public-diagnosis" data-board-type="correction" data-start="15.086" data-duration="4.769" data-track-index="1">
+        <img class="wit xl b8-wit" src="./assets/wit/wit-pose-tiny-defeated.png" alt="">
+        <div class="label small b8-label tilt-right">quiet person detected</div>
+        <div class="stamp b8-stamp-a">LAZY?</div>
+        <div class="stamp b8-stamp-b">UNEMPLOYED?</div>
+        <div class="stamp b8-stamp-c">SMALL SPIRITUAL CRISIS?</div>
+      </section>
 
+      <section id="hook-everyone-becomes-busy" class="clip board" data-board-id="hook-everyone-becomes-busy" data-board-type="mechanism" data-start="19.855" data-duration="1.420" data-track-index="1">
+        <div class="label big b9-label tilt-left">BUSY</div>
+        <div class="app-window b9-window-a">
+          <div class="window-bar"><span></span><span></span><span></span></div>
+          <div class="fake-lines"><span></span><span></span><span></span></div>
+        </div>
+        <div class="app-window b9-window-b">
+          <div class="window-bar"><span></span><span></span><span></span></div>
+          <div class="fake-lines"><span></span><span></span><span></span></div>
+        </div>
+        <div class="app-window b9-window-c">
+          <div class="window-bar"><span></span><span></span><span></span></div>
+          <div class="fake-lines"><span></span><span></span><span></span></div>
+        </div>
+        <img class="wit mid b9-wit" src="./assets/wit/wit-pose-typing-on-laptop.png" alt="">
+      </section>
 
+      <section id="hook-looking-busy" class="clip board" data-board-id="hook-looking-busy" data-board-type="payoff" data-start="21.275" data-duration="2.810" data-track-index="1">
+        <div class="curtain b10-curtain"></div>
+        <img class="wit xl b10-wit" src="./assets/wit/wit-pose-trapped-by-app-screen.png" alt="">
+        <div class="app-window b10-window">
+          <div class="window-bar"><span></span><span></span><span></span></div>
+          <div class="fake-lines"><span></span><span></span><span></span></div>
+        </div>
+        <div class="label big b10-title tilt-left">LOOKING BUSY</div>
+        <div class="caption b10-caption">actual work still loading</div>
+      </section>
     </div>
 
     <script>

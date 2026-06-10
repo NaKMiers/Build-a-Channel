@@ -1,6 +1,6 @@
 ---
 name: visual-plan
-description: Create or update step 5 section visual plans for a Why It Works video project. Use when the user asks for Visual Plan, visual planning, scene-by-scene what-when-how screen direction, reference board, real-life internet visual references, generated support assets, HyperFrames build guidance, run step 5, or plan visuals for one section or all sections; requires completed 00-topic-intake.md, 01-research-pack.md, 02-script.md, 04-voiceover.md, explicit project selection, and explicit section selection with All as the first option, then writes only the project's 05-visual-plan.md, visual-plan/ section folders, and visual reference assets.
+description: Create or update step 5 render-trustworthy section visual plans for a Why It Works video project. Use when the user asks for Visual Plan, visual planning, scene-by-scene or second-by-second what-when-how screen direction, big-scene and cue-state timeline, reference board, real-life internet visual references, generated support assets, WIT pose planning, HyperFrames build guidance, run step 5, or plan visuals for one section or all sections; requires completed 00-topic-intake.md, 01-research-pack.md, 02-script.md, 04-voiceover.md, explicit project selection, and explicit section selection with All as the first option, then writes only the project's 05-visual-plan.md, visual-plan/ section folders, and visual reference assets.
 ---
 
 # Visual Plan
@@ -9,7 +9,7 @@ description: Create or update step 5 section visual plans for a Why It Works vid
 
 Run step `5` of the `Why It Works` video workflow.
 
-Turn approved script and section voiceover into a section-level visual blueprint for HyperFrames.
+Turn approved script and section voiceover into a section-level visual blueprint that is trustworthy enough for HyperFrames render to follow.
 
 This is the most important handoff before render. Treat the work as a professional video editor and professional content creator would:
 
@@ -18,9 +18,17 @@ This is the most important handoff before render. Treat the work as a profession
 - decide how it attracts attention, supports the joke, and explains the idea
 - decide what assets HyperFrames needs before building
 - use sourced real-world references first, then generated images only as support, fallback, or controlled production mockups
-- make every board useful enough that a renderer can build from it without guessing
+- make every big scene, cue state, visual asset, WIT pose, label, and markup decision useful enough that render can build from it without guessing
 
-Do not treat this as a loose mood board. It is a scene plan, asset plan, humor plan, and render brief.
+Do not treat this as a loose mood board. It is a timed scene plan, asset plan, humor plan, reference board, and render handoff.
+
+The current standard is based on the approved Section 1 rebuild for `why-cheap-products-keep-getting-worse`:
+
+```text
+few persistent big scenes -> small voice-timed cue changes -> real/local assets -> readable WIT -> exact MP4-frame QA handoff
+```
+
+If a visual plan would still force `render` to invent the main scene, timing, joke, asset choice, WIT pose, or markup placement, the plan is not finished.
 
 This skill is section-first. After voiceover, production branches by section:
 
@@ -223,7 +231,7 @@ Use when the user chooses `All`.
 
 Create each section as its own output using Section Create or Section Update rules.
 
-Do not collapse the whole video into one board table unless the user explicitly asks for a macro visual plan.
+Do not collapse the whole video into one giant scene/cue table unless the user explicitly asks for a macro visual plan.
 
 ### Improve Memory Mode
 
@@ -237,6 +245,131 @@ Update in this order:
 
 Promote shared lessons with a clear classification such as `Operational lesson` or `Core production system`.
 
+## Render-Trustworthy Planning Contract
+
+The output must be something `render` can follow directly.
+
+Every selected section must include these four layers:
+
+1. `Big Scene Plan`
+   - persistent base scenes that hold for multiple narration beats
+   - one main visual object/place/mechanism per big scene
+   - reason for cutting to the next big scene
+2. `Cue State Timeline`
+   - voice-timed cue states inside each big scene
+   - exact local start/end times or approximate times derived from section duration
+   - what changes on screen at each cue
+   - what stays on screen from the big scene
+3. `Reference And Asset Plan`
+   - real/local/generated references for each big scene
+   - production decision for each asset: direct asset, mockup target, support base, inspiration only, or reject
+   - saved paths/prompts/source notes
+4. `Render Handoff`
+   - composition target
+   - expected cue-state count
+   - WIT pose files and scale/placement guidance
+   - exact labels and markup jobs
+   - asset paths
+   - inspect timestamps and MP4 QA frame timestamps
+   - list of things HyperFrames must not invent
+
+### Big Scene And Cue State Rules
+
+Use big scenes first, not disconnected boards.
+
+Definitions:
+
+- `Big scene`: the persistent base image/illustration/layout that stays while the narration describes the same object, situation, place, or mechanism.
+- `Cue state`: a small timed change inside the big scene, such as a short label, WIT reaction, arrow, hidden tag, one prop, or red correction.
+
+For a `20-25s` hook, default to:
+
+```text
+3 big scenes
+6-8 cue states
+```
+
+For longer sections, scale by idea density, not sentence count. Several sentences can share one cue state when they describe the same object or situation.
+
+Cut to a new big scene only when:
+
+- the narration moves to a new object, place, mechanism, evidence type, or payoff
+- the existing scene can no longer explain the current line clearly
+- the viewer needs a visual reset for clarity or joke timing
+
+Do not create a new full-screen scene just because a new sentence begins.
+
+When a section has multiple big scenes, run a visual differentiation check before handoff. Non-callback scenes should not reuse the same background, object arrangement, camera language, or material mood just because a collected reference exists. Reuse a base only for purposeful continuity or payoff memory; otherwise plan a distinct scene base.
+
+### Voice Timing Rules
+
+The plan must map visuals to the selected section voiceover.
+
+Use this priority:
+
+1. exact transcript/word timestamps if available
+2. marked script pauses and beats plus section audio duration
+3. proportional timing from sentence length and known voiceover duration
+
+If exact word timing is unavailable, estimate honestly and label timing as `estimated`.
+
+Every cue state must include:
+
+- local start/end time
+- voice cue phrase
+- on-screen change
+- hold duration
+- reason the cue exists
+
+The first `3s` of a hook must show the topic object/situation.
+The first `5-6s` of a hook should show the contradiction or hidden detail when the section depends on one.
+
+### WIT Planning Rules
+
+Use only real channel WIT PNG pose files from:
+
+```text
+projects/<slug>/assets/wit/manifest.json
+```
+
+or the approved shared WIT manifest if the project does not have its own WIT folder.
+
+For each WIT appearance, specify:
+
+- exact pose file
+- emotion
+- local time range
+- screen region
+- relative size target
+- why WIT is needed
+
+WIT is useful on emotional beats: suspicion, betrayal, panic, confusion, judgment, evidence, trapped, payoff.
+
+Do not use WIT as filler in every cue state.
+Do not draw WIT in HTML/SVG/CSS.
+Do not invent random WIT.
+If WIT is planned, it must be large enough that facial emotion reads in a 1080p Studio preview and exported MP4 contact sheet.
+
+### Markup And Label Rules
+
+Labels and red markup must explain the narration.
+
+Use:
+
+- short handwritten labels
+- one key label per cue state when possible
+- red markup only for exact evidence, correction, reveal, or punchline
+- arrows/circles only when they point to a specific real object or detail
+
+Avoid:
+
+- meaningless red boxes/circles/leg marks
+- marking an obvious detail just because the voice names it
+- labels that repeat the narration without adding clarity or joke value
+- white wash overlays over real/object photos unless required for readability
+
+If the image already proves the point, use a label instead of decorative annotation.
+
 ## Browsing And Asset Rules
 
 Use the project-local `browse` skill for web or YouTube browsing when available.
@@ -248,6 +381,16 @@ The default order for the visual reference pass is:
 1. real, sourced images from web search, image search, YouTube/reference-channel review, self-shot photos, or existing local assets
 2. generated images only to fill gaps, create clean production-safe mockups, remove logos/text/private data, or test a composition
 3. prompt-only references only as a degraded fallback
+
+The reference pass must support the `Big Scene Plan`, not a random mood board.
+
+For every planned big scene, collect or create enough visual evidence to answer:
+
+- what the base image/illustration should look like
+- what object/material/texture makes it feel real
+- where labels and WIT can sit without blocking the main object
+- which detail needs markup, if any
+- whether the asset is safe for direct production or only a mockup/inspiration target
 
 The visual reference pass must include at least one of:
 
@@ -266,6 +409,12 @@ For normal runs, use at least `3` useful references per selected section:
 - one asset or mockup reference that HyperFrames can build from
 
 For hooks and high-retention moments, prefer `4-6` references unless the section is extremely simple.
+
+For render-ready plans, references should map to big scenes:
+
+- at least one usable visual basis for each big scene
+- one clear candidate base asset or generated-support prompt for each big scene
+- at least one WIT/label placement note for each WIT-heavy big scene
 
 Prompt-only references are allowed only as a degraded fallback when browsing and image generation are unavailable, fail, or would create unsafe assets. If using prompt-only fallback, state the reason in `reference-board.md` and in the chat response.
 
@@ -323,6 +472,19 @@ If generation is unavailable, write reusable generation prompts and mark status 
 
 Generated or browsed images are not automatically production assets. Classify them first. Use them to clarify shape, mood, composition, or material. Only use them directly in production if their source and license are safe.
 
+Collected references are allowed to be inspected and skipped. Do not plan direct use of an image merely because it was downloaded or generated. If it does not improve the end viewer result, mark it as reference-only, fallback, inspiration, or reject.
+
+Generated images should normally be text-free and logo-free. Add labels, prices, UI text, red markup, and jokes in HyperFrames so timing and readability can be controlled.
+
+When generating support images for render, write prompts that specify:
+
+- object and camera angle
+- simple uncluttered composition
+- empty label-safe areas
+- no text, logos, watermarks, brand marks, or private data
+- realistic texture if the section is object-driven
+- 16:9-friendly framing unless the render needs a cutout or transparent object
+
 For real internet images, record:
 
 - source page URL
@@ -349,13 +511,21 @@ Use the channel grammar:
 static drawing -> narration twist -> red markup or hard cut -> next static drawing
 ```
 
-Each board should carry:
+Each big scene should carry:
 
-- one thought
-- one joke or evidence object
-- one WIT reaction or real-life object
-- one readable label
-- one clean timing beat
+- one persistent object, situation, place, mechanism, or payoff
+- one clear visual job
+- one attention reason
+- one reference basis
+- one safe asset/build path
+
+Each cue state should carry:
+
+- one timed voice cue
+- one small visual change
+- one readable label or markup job when needed
+- optional WIT emotion only when useful
+- one reason it exists
 
 Visual plans should guide HyperFrames implementation, not replace it.
 
@@ -365,26 +535,30 @@ For each selected section, plan:
 - viewer attention strategy
 - section retention risk and visual fix
 - narration beats
-- board list with approximate local timing from the section voiceover
-- exact on-screen what / when / how for every board
-- exact where each visual resource appears: board number, time range, screen region, crop/placement, and whether it is direct asset, mockup target, support base, or inspiration only
-- visual job per board
-- joke or curiosity beat per board
+- big scene list with local timing from the section voiceover
+- cue state list with exact/estimated local timing inside each big scene
+- exact on-screen what / when / how / why for every big scene and cue state
+- exact where each visual resource appears: big scene/cue number, time range, screen region, crop/placement, and whether it is direct asset, mockup target, support base, or inspiration only
+- visual job per big scene and cue state
+- joke or curiosity beat per cue state
 - real-life or generated asset needs
-- WIT pose/emotion per board
+- WIT pose/emotion per cue state, including exact PNG file when possible
 - labels and handwritten captions
 - red markup or joke beat
 - motion notes
 - voice-sync cues
 - asset/source safety notes
 - render / HyperFrames implementation guidance
+- MP4 QA frame timestamps for render to extract
 - approval checks
 
-Keep boards simple. When a section gets abstract, return to a concrete object.
+Keep scenes simple. When a section gets abstract, return to a concrete object.
 
 Use WIT as the audience surrogate. WIT should usually be affected by the system, not lecturing from outside it.
 
 The plan fails if HyperFrames would need to invent the main scene, object, timing, joke, or asset logic from scratch.
+
+The plan also fails if it creates too many full-scene cuts for a short section. Good visual pacing comes from a base scene evolving through small cue changes, not from sprinting through unrelated images.
 
 ## Workflow
 
@@ -400,16 +574,32 @@ The plan fails if HyperFrames would need to invent the main scene, object, timin
    - inspect voiceover duration or timing notes when available
    - identify the section goal, contradiction, visual metaphor, and WIT emotion
    - run the Visual Editor Pass:
-     - split narration into screen beats
+     - split narration into voice cue phrases
+     - group related cue phrases into persistent big scenes
+     - decide the target big-scene count and cue-state count before writing scene details
      - decide attention hook, retention risk, joke rhythm, and visual payoff
      - decide what must be shown, when it appears, and how it changes on screen
+     - remove cue states that only repeat the narration without adding clarity, evidence, emotion, or joke value
    - run the Visual Reference Pass:
-     - browse for real-life internet images, object/material references, UI patterns, or visual benchmarks first
+     - browse for real-life internet images, object/material references, UI patterns, or visual benchmarks for each big scene first
      - inspect/download useful real images only when source safety is acceptable
      - generate section-specific images only when they improve clarity, humor, source safety, or asset certainty after the real-reference pass
      - save generated references when available under the section visual reference folder
      - classify browsed/generated/self-made references before using them
      - document any prompt-only fallback as a degraded fallback
+   - run the WIT Pass:
+     - inspect the project `assets/wit/manifest.json` when present, otherwise inspect approved shared WIT manifest
+     - choose exact WIT pose filenames only for cue states that need emotional clarity
+     - specify placement and scale large enough for facial emotion to read
+   - run the Markup Pass:
+     - specify only meaningful labels, arrows, circles, stamps, or red corrections
+     - delete decorative or obvious marks
+     - define exact target object for every callout
+   - run the Render Handoff Pass:
+     - list big scenes and cue states with local timestamps
+     - list asset paths/prompts and what render must not invent
+     - list suggested `inspect --at` timestamps
+     - list suggested MP4 QA frame timestamps, including any likely problem frames
    - write `reference-board.md`
    - write `section-XX-kebab-section-name-visual-plan.md`
    - write or update the section `README.md`
@@ -492,8 +682,8 @@ Status: `<status>`
 
 Generated:
 
-| Section | Status | Boards | Reference assets | Section plan |
-| ------- | ------ | -----: | ---------------- | ------------ |
+| Section | Status | Big Scenes | Cue States | Reference assets | Section plan |
+| ------- | ------ | ---------: | ---------: | ---------------- | ------------ |
 
 Notes:
 
@@ -513,16 +703,21 @@ A section visual plan is ready when:
 - selected section was explicitly chosen
 - selected section has matching voiceover output
 - section goal is clear
-- board list maps to narration beats and voiceover timing
-- each board states what appears, when it appears, how it changes, and why it holds attention
-- each board has one thought and one visual job
-- each board has a joke, curiosity, evidence, or emotional reason to exist
+- big scene plan maps to narration structure and voiceover duration
+- cue state timeline maps to narration beats and voiceover timing
+- each big scene states what persists, when it starts/ends, why it exists, and when to cut away
+- each cue state states what changes, what stays, when it appears, and why it exists
+- cue count is intentionally low enough for the section duration
 - WIT emotion supports the viewer's feeling
+- WIT pose filenames, placement, and scale guidance are included when WIT appears
 - labels are short and readable
+- red markup and callouts have exact target objects and are not decorative
 - the visual reference pass produced browsed, generated, inspected local, or clearly degraded prompt-only references
 - real-life, benchmark, and generated references are classified with source notes
+- references map to big scenes and buildable asset decisions
 - generated images, browsed images, or prompts are marked honestly
-- HyperFrames guidance is concrete enough to build from
+- HyperFrames guidance is concrete enough to build from without inventing scene timing, asset choices, WIT, or markup
+- suggested `inspect --at` and MP4 QA frame timestamps are included
 - script promise is paid off in the section when relevant
 - stale downstream files are listed
 - no render, review, upload, or learning files are created
@@ -540,14 +735,23 @@ Reject or stop before finishing if:
 - the skill skips the visual reference pass without documenting a failed/unavailable fallback
 - the skill defaults to generated images without first trying useful real-world references
 - the reference board is prompt-only while browsing or image generation was available and safe
-- the board plan does not specify what / when / how for each scene
+- the plan does not include a big scene plan and cue state timeline
+- the cue timeline creates too many unrelated full-scene cuts for a short section
+- cue states are based on sentence count instead of visual idea changes
+- a cue state has no clarity, evidence, emotion, or joke reason to exist
+- red markup is decorative, meaningless, or does not target a specific object
 - the plan does not map every important visual resource to what / when / how / where usage
 - HyperFrames would need to invent the main visual idea, asset list, or timing
+- HyperFrames would need to choose WIT pose files, WIT scale, label text, or markup placement from scratch
 - real private data or unclear copyrighted screenshots are treated as production assets
 - generated images are described as existing when they were only prompted
 - WIT is decorative and has no emotional job
-- labels are too long for a paused board
-- boards are too crowded to understand
+- WIT appears without a real approved pose filename when WIT assets exist
+- WIT is planned too small to read facial emotion
+- labels are too long for a paused cue state
+- big scenes or cue states are too crowded to understand
+- real/object photos are globally washed out with white overlays without a documented readability reason
+- generated-image prompts include text, logos, watermarks, or brand marks without an explicit safe reason
 - the skill creates render, review, upload, or learning files
 
 ## Self-Improvement

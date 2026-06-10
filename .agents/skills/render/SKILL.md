@@ -210,6 +210,53 @@ If assets are missing and cannot be created safely, stop and report the exact mi
 
 ## Request Modes
 
+### Section Remake / Quality Recovery Mode
+
+Use when the user rejects an existing section render as low quality, messy, slide-like, mismatched to voiceover, or using fake/non-channel WIT.
+
+In this mode:
+
+- remove only the failed section preview/render artifacts the user explicitly asks to remove
+- keep upstream script, voiceover, project assets, and attribution files
+- treat the selected section visual plan as stale when the user says it caused the bad result
+- rebuild from `02-script.md`, the selected section voiceover timing, the channel WIT manifest, real/local assets, and approved reference style notes
+- start with static hard-cut boards only
+- do not add transitions, element entrance animation, or decorative motion unless the user asks after approving the static version
+- use one main visual idea per big scene, then add small voice-timed cue changes inside that big scene
+- avoid replacing the entire frame for every sentence when the spoken idea is still part of the same object, place, or mechanism
+- use WIT only for emotional beats, not every scene
+- write the override reason into `IMPLEMENTATION.md` and `06-production-board.md`
+
+Good remake pattern:
+
+```text
+script line -> voice timing -> persistent big scene -> small cue overlay/change -> optional real WIT emotional reaction
+```
+
+For short hooks, a good structure is usually:
+
+```text
+big scene A for setup -> small cue changes for details
+big scene B for problem/escalation -> small cue changes for consequences
+big scene C for payoff -> small cue changes for final label
+```
+
+The viewer should feel the scene evolving, not sprinting through unrelated slides.
+
+Approved short-hook quality pattern from `why-cheap-products-keep-getting-worse` Section 1:
+
+- For a `20-25s` hook, target about `3` big scenes and `6-8` cue states unless the script clearly needs more.
+- Start by choosing the big scenes, then decide which words need cue overlays inside each big scene.
+- Combine related sentence beats into one cue state when they describe the same object or situation.
+- Use labels first when the image already proves the point; do not draw extra marks just to repeat something obvious.
+- Red circles/arrows are for exact evidence or correction only. If the mark does not explain the voiceover, remove it.
+- Check callout placement on exported MP4 frames. Studio placement is not enough.
+- WIT should be visibly readable as the emotional audience surrogate. If the face/expression is small in Studio or contact sheet, enlarge WIT.
+- Avoid translucent white wash overlays on real/object photos unless they are required for readability and documented. Real texture should stay visible.
+- Keep static hard cuts; no transitions or animation until the static version is approved.
+
+Do not keep polishing a visual plan after the user identifies that plan as the failure source.
+
 ### Section Preview Build Mode
 
 Default mode.
@@ -248,6 +295,15 @@ projects/<slug>/renders/section-XX-kebab-section-name/
 ```
 
 Use draft quality for iteration unless the user asks for final quality.
+
+After rendering:
+
+- run `ffprobe` on the exported MP4 and record duration, video size, fps, video codec, and audio codec
+- delete stale `frame-*.png` files before extracting new QA frames
+- extract key frames from the exported MP4 at current cue timestamps, not old timestamps
+- create a contact sheet from the extracted frames
+- inspect any user-reviewed/problem frame individually at full resolution
+- if a contact sheet contains stale frames from an earlier cue count, regenerate it before handoff
 
 ### All Sections Mode
 
@@ -289,7 +345,7 @@ Update in this order:
 
 ## HyperFrames Build Rules
 
-Use the active HyperFrames skill guidance.
+Use the active `hyperframes` skill guidance as the source of truth for composition HTML.
 
 Core rules:
 
@@ -308,14 +364,27 @@ Core rules:
 Channel-specific rules:
 
 - Use WIT as the audience surrogate, not a presenter.
+- Use only real channel WIT PNG poses from the current project `assets/wit/manifest.json` or approved shared WIT manifest.
+- Do not draw, approximate, SVG-build, CSS-build, or generate random WIT when real WIT pose PNGs exist.
+- Reserve WIT for emotional beats: suspicion, betrayal, panic, confusion, judgment, evidence, trapped, or payoff.
+- Do not put WIT in every board if the object or evidence carries the narration better.
+- When WIT appears in a 1080p section, scale it large enough that facial emotion reads in normal Studio and MP4 review. A full-body WIT reaction is usually too small if it is below roughly one-third of the frame height.
 - Use real-life assets as evidence, not decoration.
 - When the visual plan includes real-world references, inspect those images and source notes before using generated support assets.
 - Treat generated images as support or clean production bases unless the visual plan explicitly approves them as the primary asset.
+- Before using any planned image as a direct scene base, compare it against adjacent big scenes. If a non-callback scene repeats the same background, object setup, camera language, or material mood as another scene, rebuild it as a more distinct CSS/self-made/generated scene and document the change.
+- Do not force every collected reference image into the render. Inspect each planned asset, use it only if it improves the end viewer result, and mark skipped images as reference-only in attribution/implementation notes.
 - Use hard cuts by default.
 - Use red markup for corrections and punchlines.
+- Red markup must point to or change a specific meaningful object; do not add decorative circles, rectangles, or marks that do not explain the narration.
+- Do not mark obvious details with meaningless graphics. Example: do not draw four random red leg marks over a chair just because the voice says `four legs`; a clear label is enough unless a specific leg matters.
 - Labels must be readable when paused.
 - Cue-critical visuals must be readable on the cue frame.
+- Callout circles, arrows, stamps, and labels must align to the exact object they reference in exported MP4 frames.
+- Do not wash out real object/failure photos with a white overlay by default. Preserve the photo texture unless text readability requires a local label background.
 - Voice sync comes first.
+- For rejected/remade sections, prefer sparse illustrative boards over slide layouts: one object, one joke/evidence point, one short label.
+- Use a local font file for handwritten labels when possible so MP4 render does not fall back to an ugly default font.
 
 If HyperFrames global guidance conflicts with the current channel rules, preserve the channel's approved simple-board style unless the user explicitly asks for a different render style.
 
@@ -389,8 +458,11 @@ If a real source has attribution, share-alike, logo, private-data, or unclear-co
    - compute the fixed port: `1000 + section number`
    - create or update the section preview project
    - create or verify the local `assets` junction
-   - create a voice cue map from the section voiceover and visual plan
-   - implement `index.html` from the section visual plan
+   - inspect the active WIT manifest before using WIT
+   - create a voice cue map from the section voiceover and either the section visual plan or, in remake mode, the script plus approved reference style
+   - decide the big-scene count and cue-state count before writing HTML
+   - create a big-scene/cue plan where each big scene holds one main visual idea and cue overlays add only meaningful labels, props, or WIT reactions
+   - implement `index.html` from the section visual plan, or from the script/voice timing when remake mode explicitly skips the visual plan
    - wire selected voiceover audio
    - implement a hard-cut timing pass first
    - add per-boundary transitions only after voice sync is working
@@ -400,6 +472,7 @@ If a real source has attribution, share-alike, logo, private-data, or unclear-co
    - copy or mirror the canonical standalone section into `hyperframes/review/section-XX.html`
    - run `lint`, `validate`, and `inspect`
    - fix blocking issues
+   - when rendering MP4, run `ffprobe`; clear stale extracted frames; extract key frames from the exported MP4; inspect a contact sheet; inspect any problem frames individually
    - start or reuse the preview server on the fixed section port
    - record Studio and direct composition URLs
 8. Write or update `projects/<slug>/06-production-board.md`.
@@ -460,11 +533,22 @@ A section render is ready for review when:
 - `index.html` implements the visual plan without requiring review to infer missing boards
 - audio is wired and synchronized to visual cues
 - every visible scene and element matches the current voiceover beat
+- short hooks use connected big scenes with small cue changes when several lines describe the same object or situation
+- short hooks have an intentional cue count; for `20-25s`, prefer `6-8` cue states over many rapid micro-scenes
 - transitions are chosen per boundary and do not damage voice sync
 - key labels enter/emphasize on the spoken word they support
 - `lint`, `validate`, and `inspect` pass, or remaining warnings are documented and non-blocking
+- if an MP4 is rendered, exported MP4 frames have been checked, not only Studio preview frames
+- extracted MP4 frame folders were cleaned before regeneration, so the contact sheet cannot contain stale frames from an older version
+- if WIT appears, it is a real pose PNG from the approved WIT manifest
+- the first `3` seconds show the topic object or situation
+- the first `5-6` seconds show the contradiction or hidden detail when the hook depends on one
 - labels are readable
 - WIT emotion is visible and useful
+- WIT is large enough to read facial emotion in Studio, MP4, and contact-sheet frames
+- red circles, arrows, and marks point to the intended object, not nearby empty space
+- decorative marks that do not clarify the voiceover have been removed
+- real/object photos keep their natural texture unless a local label background is needed for readability
 - assets are referenced through the shared project asset library
 - source notes and attribution are updated
 - `06-production-board.md` records paths, commands, checks, and URLs
@@ -480,6 +564,15 @@ Reject or stop before finishing if:
 - the user has not explicitly selected `All` or a specific section
 - the target section is inferred instead of selected
 - scene content does not match the current voiceover beat
+- the render uses fake, random, drawn, SVG, or CSS WIT when approved WIT PNGs exist
+- WIT is used as filler in every scene instead of only where it clarifies emotion
+- a user-rejected visual plan keeps controlling the remake after the user explicitly said to skip it
+- a short remake resets to a completely unrelated full-frame scene on every voice cue when the narration is still describing the same object or situation
+- a remade hook fails to show the topic object or contradiction in the first few seconds
+- red markup is decorative, meaningless, or misaligned with the object it claims to identify
+- WIT is too small to read the emotion at normal preview size
+- a real/object photo is globally washed out with a white overlay without a documented readability reason
+- MP4 QA uses a contact sheet that still contains stale frames from an older cue count or render
 - transitions are added before hard-cut timing works
 - the same transition effect is applied everywhere without per-boundary reasoning
 - emphasized spoken words have no visual emphasis when the section depends on that cue

@@ -5,7 +5,7 @@ Active video project for `Why It Works`.
 ## Current Status
 
 - Current step: Section-by-section HyperFrames build and review.
-- Section 1: accepted static-board hook.
+- Section 1: rebuilt again for review after the WIT/style rejection; now uses the channel WIT pose PNGs, hard-cut static boards, and simple illustrated objects matched to the voiceover.
 - Section 2: draft implemented for review.
 - Section 3: draft implemented for review.
 

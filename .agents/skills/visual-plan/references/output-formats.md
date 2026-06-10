@@ -40,8 +40,8 @@ Source files:
 
 ## Section Visual Plan Index
 
-| # | Section | Status | Duration | Boards | Section plan | Reference board | Notes |
-|---:|---|---|---:|---:|---|---|---|
+| # | Section | Status | Duration | Big Scenes | Cue States | Section plan | Reference board | Notes |
+|---:|---|---|---:|---:|---:|---|---|---|
 
 ## Cross-Section Continuity
 
@@ -91,7 +91,9 @@ Status:
 
 ## Visual Direction
 
-- Board rhythm:
+- Big-scene/cue rhythm:
+- Big scene rhythm:
+- Cue-state count:
 - Main visual metaphor:
 - WIT emotional path:
 - Real-life texture:
@@ -103,15 +105,25 @@ Status:
 - Red markup:
 - Motion rule:
 
-## Scene What-When-How Plan
+## Big Scene Plan
 
-| Scene | Local Time | What Appears | When / Voice Cue | How It Shows Or Changes | Why It Holds Attention | Reference Basis |
-|---|---:|---|---|---|---|---|
+| Big Scene | Local Time | Voice Range | Persistent Base Visual | Why This Scene Exists | When To Cut Away | Reference Basis | Asset Path / Prompt |
+|---|---:|---|---|---|---|---|---|
 
-## Board Plan
+## Cue State Timeline
 
-| Board | Approx Local Time | Script Beat | Visual Job | Visual | WIT Action | On-Screen Text | Asset Need | Motion / Timing Notes | Attention / Joke Beat |
+| Cue | Local Time | Voice Cue | Big Scene | What Changes On Screen | What Stays | WIT Pose / Size | Label / Markup | Asset Need | Why This Cue Exists |
 |---|---:|---|---|---|---|---|---|---|---|
+
+## WIT Pose Plan
+
+| Cue | Time | Emotion | Pose File | Placement / Scale | Why WIT Is Needed |
+|---|---:|---|---|---|---|
+
+## Markup And Label Plan
+
+| Cue | Time | Text / Markup | Target Object | Why It Helps | Avoid / Do Not Use |
+|---|---:|---|---|---|---|
 
 ## Reference And Asset Plan
 
@@ -120,18 +132,22 @@ Status:
 
 ## Visual Resource Usage Map
 
-| Resource | Used In Boards | What It Supplies | When It Appears | Where On Screen / Crop | How It Is Used | Production Decision |
+| Resource | Used In Big Scenes / Cues | What It Supplies | When It Appears | Where On Screen / Crop | How It Is Used | Production Decision |
 |---|---|---|---|---|---|---|
 
 ## HyperFrames Guidance
 
 - Composition target:
-- Board count:
+- Big scene count:
+- Cue state count:
 - Scene components:
 - Timing notes:
 - Text style:
 - Asset paths:
 - Audio sync notes:
+- WIT pose files:
+- Suggested inspect timestamps:
+- Suggested MP4 QA frame timestamps:
 - Build risks:
 - Must not invent:
 
@@ -139,10 +155,13 @@ Status:
 
 - visual reference pass completed:
 - what/when/how clear:
-- one thought per board:
-- attention reason per board:
+- big scenes grouped, not one full scene per sentence:
+- cue states low enough for section duration:
+- attention reason per big scene / cue state:
 - label readable:
 - WIT has a clear job:
+- WIT pose files named:
+- red markup points to exact object:
 - real-life asset explains, not decorates:
 - title-thumbnail promise still being paid off:
 - safe for English learners:
@@ -170,6 +189,11 @@ Status:
 
 | Ref | Type | Source | Classification | Why useful | Attention / editor use | Use in production | Saved path |
 |---|---|---|---|---|---|---|---|
+
+## Big Scene Reference Coverage
+
+| Big Scene | Needed Visual Basis | Real / Local Reference | Generated Support | Production Decision | Remaining Gap |
+|---|---|---|---|---|---|
 
 ## Image Generation Prompts
 
@@ -209,7 +233,8 @@ Status:
 
 ## Build Notes
 
-- Board count:
+- Big scene count:
+- Cue state count:
 - Main motif:
 - WIT emotion:
 - Key labels:
@@ -231,8 +256,8 @@ Status: `<status>`
 
 Generated:
 
-| Section | Status | Boards | Reference assets | Section plan |
-|---|---|---:|---|---|
+| Section | Status | Big Scenes | Cue States | Reference assets | Section plan |
+|---|---|---:|---:|---|---|
 
 Notes:
 

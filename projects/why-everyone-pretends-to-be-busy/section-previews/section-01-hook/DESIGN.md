@@ -1,59 +1,66 @@
-# DESIGN
+# Section 1 Hook Design
 
-Project:
+Video:
 `Why Everyone Pretends To Be Busy`
 
-Composition:
-`Section02Reframe`
+Section:
+`Section 1: Hook`
 
-## Visual Identity
+Status:
+`replacement render, visual plan intentionally skipped`
 
-Rough no-face explainer collage:
-real-world desk/calendar/phone photos act as evidence, WIT acts as the visual victim, and handwritten labels carry the joke.
+## Style Source
 
-Each section should feel closer to messy creator sketches over real objects than to clean SaaS animation.
+This pass follows the user's requested override:
 
-Current active preview:
+- do not follow the broken Section 1 visual plan
+- use the channel WIT pose PNGs, not drawn placeholder WIT
+- match boards to the voiceover
+- keep scenes static with hard cuts only
 
-- Section 2 Reframe: draft static-board cut, `23.9s`
-- Section 1 Hook is accepted and stored separately for later assembly.
+Reference behavior from the TED-Ed grammar video and simple illustrated explainer style:
 
-## Colors
+- one main object or character per frame
+- plain background with a muted color field
+- very little text
+- illustrations change when the sentence changes
+- visual jokes are literal and easy to read while paused
 
-- Paper background: `#f4efe4`
-- Ink: `#1f1b16`
-- Red markup: `#c92a2a`
-- Sticky note yellow: `#f2d26b`
-- Calendar blue: `#86a5c8`
-- Muted green support: `#8aa38d`
-- Photo shadow: `rgba(31, 27, 22, 0.25)`
+## Visual Rules
 
-## Typography
+- Canvas: `1920x1080`
+- Background: warm paper `#f4efe4`
+- Ink: dark brown-black `#1f1b16`
+- Accent red: `#c92a2a`
+- Accent yellow: `#f2d26b`
+- Accent blue: `#d9e9f7`
+- Accent green: `#cfe8cf`
+- Text style: handwritten-looking labels, monospace only for fake UI or clock labels
+- Motion: none for this pass
+- Scene changes: hard cuts only
 
-- Handwritten labels: generic `cursive`
-- Utility text and tiny UI: generic `monospace`
+## WIT Rules
 
-Labels should be large, blunt, and readable on mobile. They are not subtitles.
+Use the current channel WIT PNGs copied into:
 
-## Motion
+`assets/wit/`
 
-- Mostly static boards.
-- Fast entrances only: paper pop, slight slide, marker stamp, small WIT shake.
-- Cue-critical labels must be readable on or just before the spoken cue.
-- Section 2 uses hard cuts only while timing and paused-frame clarity are being reviewed.
-- Do not add transitions until a static section is approved and the transition has a clear joke or clarity job.
+WIT appears only where the scene needs emotion:
 
-## Real-World Asset Rule
+- suspicious setup
+- phone panic
+- awkward importance
+- quiet thinking
+- public judgment
+- looking busy payoff
 
-Every board must have a real-world photo layer or a direct real-world texture reference.
-
-Generated or vector elements may only add labels, jokes, notifications, cages, arrows, and WIT reactions.
+WIT is not used on every board.
 
 ## What Not To Do
 
-- Do not make the hook vector-only.
-- Do not use real app logos.
-- Do not make WIT look lazy before the system attacks him.
-- Do not make WIT look lazy in Section 2; the reframe should correct that misunderstanding.
-- Do not let labels cover important photo evidence.
-- Do not store both MP3 and WAV voice previews for the same test.
+- no fake stick-figure WIT
+- no slide-deck transitions
+- no decorative animation
+- no crowded dashboards
+- no visual plan scene reuse from the rejected render
+- no copied TED-Ed or Casually Explained frames

@@ -71,9 +71,12 @@ Do not use removed `original-wit-24`, older `core-24`, or `comedy-core` WIT as c
 ## Current Active Video
 
 - Active folder: `projects/why-everyone-pretends-to-be-busy`
-- Current step: Section 3 Busy Became Status implemented; awaiting user review
-- Accepted Section 1 composition: `Section01Hook`
-- Accepted Section 1 runtime: `24.085s`
+- Current step: Section 1 Hook second replacement implemented; awaiting user review
+- Section 1 replacement composition: `Section01Hook`
+- Section 1 replacement runtime: `24.085s`
+- Section 1 replacement preview: `http://localhost:1001/#project/section-01-hook`
+- Section 1 replacement render: `projects/why-everyone-pretends-to-be-busy/renders/section-01-hook/section-01-hook-remake.mp4`
+- Section 1 current style: real channel WIT pose PNGs, simple illustrative static boards, hard cuts only, old visual plan skipped
 - Section preview rule: review and approve one section at a time; assemble sections only after the user asks
 - Section asset rule: use one video-level shared asset library at `projects/why-everyone-pretends-to-be-busy/assets`; local section `assets` folders should be junctions, not copied media folders
 
@@ -91,6 +94,7 @@ Key current project files:
 - `projects/why-everyone-pretends-to-be-busy/12-section-03-visual-plan.md`
 - `projects/why-everyone-pretends-to-be-busy/13-section-03-implementation.md`
 - `projects/why-everyone-pretends-to-be-busy/hyperframes/review/section-01.html`
+- `projects/why-everyone-pretends-to-be-busy/section-previews/section-01-hook/index.html`
 - `projects/why-everyone-pretends-to-be-busy/hyperframes/review/section-02.html`
 - `projects/why-everyone-pretends-to-be-busy/hyperframes/review/section-03.html`
 
@@ -102,6 +106,6 @@ Do not add transition overlays, rapid label pop-ins, object pile-ons, or WIT sha
 
 ## Best Next Steps
 
-1. Review Section 3 Busy Became Status.
+1. Review the rebuilt Section 1 Hook replacement at `http://localhost:1001/#project/section-01-hook`.
 2. Write feedback into `projects/why-everyone-pretends-to-be-busy/06-review.md`.
 3. Continue to the next section only after the current section is approved.
