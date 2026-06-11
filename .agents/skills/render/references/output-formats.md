@@ -33,7 +33,7 @@ Source files:
 
 ## Section Render Index
 
-| # | Section | Status | Port | Preview project | Source | Checks | Render file | Notes |
+| # | Section | Status | Port | Preview project | Source | Checks | Export file | Notes |
 |---:|---|---|---:|---|---|---|---|---|
 
 ## Shared Asset Rules
@@ -140,7 +140,7 @@ Preview servers:
 
 Generated:
 
-| Section | Preview Project | Source | Render File | Notes |
+| Section | Preview Project | Source | Export File | Notes |
 |---|---|---|---|---|
 
 Stale downstream:

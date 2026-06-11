@@ -2,7 +2,7 @@
 
 Video: `Why Cheap Products Keep Getting Worse`
 
-Status: `section 3 scene 3 revised preview running for review`
+Status: `section 1 minimal animation pass rendered for review`
 
 Source skill: `render`
 
@@ -17,15 +17,15 @@ Source files:
 | Target | Port | Studio URL | Direct Composition URL | Status |
 |---|---:|---|---|---|
 | Unified preview | 1000 |  |  | reserved |
-| Section 1 Hook | 1001 | `http://localhost:1001/#project/section-01-hook` | `http://localhost:1001/api/projects/section-01-hook/preview/comp/index.html` | running from previous render |
+| Section 1 Hook | 1001 | `http://localhost:1001/#project/section-01-hook` | `http://localhost:1001/api/projects/section-01-hook/preview/comp/index.html` | running; preview HTTP 200 verified |
 | Section 2 Cheap Is Not The Villain | 1002 | `http://localhost:1002/#project/section-02-cheap-is-not-the-villain` | `http://localhost:1002/api/projects/section-02-cheap-is-not-the-villain/preview/comp/index.html` | running; HTTP 200 verified |
 | Section 3 The Price Tag Speaks First | 1003 | `http://localhost:1003/#project/section-03-the-price-tag-speaks-first` | `http://localhost:1003/api/projects/section-03-the-price-tag-speaks-first/preview/comp/index.html` | running; HTTP 200 verified |
 
 ## Section Render Index
 
-| # | Section | Status | Port | Preview project | Source | Checks | Render file | Notes |
+| # | Section | Status | Port | Preview project | Source | Checks | Export file | Notes |
 |---:|---|---|---:|---|---|---|---|---|
-| 1 | Hook | `review-adjusted connected-scene remake preview and MP4 ready for review` | 1001 | `section-previews/section-01-hook/` | `02-script.md` + `04-voiceover.md`; old `05-visual-plan.md` skipped by explicit user request; user reviews applied: big scenes, fewer cues, meaningful markup, larger WIT | `lint: pass with 2 non-blocking warnings`; `validate: pass`; `inspect: pass`; `ffprobe: pass` | `renders/section-01-hook/section-01-hook-remake.mp4` | `3 persistent big scenes with 7 voice-timed cue overlays. Uses only real project WIT PNG poses from assets/wit. No transitions or element animations. Local MP3 path is used directly; audio helper is no longer required.` |
+| 1 | Hook | `minimal animation pass preview ready for review` | 1001 | `section-previews/section-01-hook/` | `02-script.md` + `04-voiceover.md`; old `05-visual-plan.md` skipped by explicit user request; approved static render kept as layout source; user requested simple TED-Ed-inspired motion at about `1/10` intensity | `lint: pass with 2 non-blocking warnings`; `validate: pass`; `inspect: pass`; `server: HTTP 200` | `not requested` | `3 persistent big scenes with 7 voice-timed cue overlays. Added only two incoming scene fade/blur transitions and short element fade/fly-ins. Cue-start hiding prevents delayed animation labels from appearing early. MP4 files were deleted by user request; future render work should not export video unless explicitly asked.` |
 | 2 | Cheap Is Not The Villain | `revised generated-base preview running for review` | 1002 | `section-previews/section-02-cheap-is-not-the-villain/` | `02-script.md` + `04-voiceover.md` + revised `05-visual-plan.md` + Section 2 visual plan | `lint: pass with 2 non-blocking warnings`; `validate: pass, no console errors, 225 text elements pass WCAG AA`; `inspect: pass at 12 timestamps`; `server: HTTP 200` | `not requested` | `3 persistent big scenes with 9 cue states. Uses real tag texture, generated two-box comparison base, generated missing-tomorrow cutaway base, rebuilt jacket overlay, and real project WIT PNG poses only.` |
 | 3 | The Price Tag Speaks First | `scene 3 revised preview running for review` | 1003 | `section-previews/section-03-the-price-tag-speaks-first/` | `02-script.md` + `04-voiceover.md` + revised `05-visual-plan.md` + revised Section 3 visual plan | `lint: pass with 4 non-blocking warnings`; `validate: pass, no console errors, 30 contrast sampler warnings`; `inspect: pass at 12 timestamps`; `snapshot: pass at 18.3, 22.6, 25.5`; `server: HTTP 200` | `not requested` | `4 persistent big scenes with 10 cue states. Scenes 1, 2, and 4 use the generated hidden-future-tag base. Scene 3 is now a CSS-built checkout promise arena, not the generated visible-promises photo. Uses real project WIT PNG poses and hard cuts only.` |
 
@@ -76,24 +76,31 @@ Source files:
 ### Section 1
 
 - Section 1 composition id: `Section01Hook`
-- Runtime: `21.205s` composition; MP4 container duration `21.248s`
+- Runtime: `21.205s` composition
 - Voiceover runtime: `21.205s`
-- Screen changes: instant hard cuts only; no push, slide, fade, wipe, photo zoom, board entrance, or cross-screen transition remains
+- Screen changes: approved connected static boards plus minimal animation pass
 - Preview audio: local `section-01-hook-david23-am_eric-0.84.mp3` served through the HyperFrames preview project
 - Scene grammar: `chair setup evolves through product details, purchase, and first week -> broken-leg close-up evolves through legal creak and screw/career-options failure -> cost board evolves through true-cost receipt and final future-not-included payoff`
+- Motion grammar: `incoming scene fade/blur settle at 8.400s and 16.400s -> short cue element fade/fly-ins -> no decorative fly-outs before spoken ideas finish`
+- Sync guard: animated elements are explicitly hidden at cue start before their entrance tween, so delayed entries cannot appear over the wrong scene or voice beat
+- Boundary fix: the failure overlay now ends at `16.300s`, leaving a small visual breath before the `not really cheap` cost cue begins at `16.400s`
 - Real direct-use assets: `real-blank-tag-pexels-padrinan.jpg`, `real-receipt-pexels-towfiqu-barbhuiya.jpg`
 - Generated support assets: `chair-price-tag`, `hidden-future-tag`, `wobbly-leg-loose-screw`, `price-tag-receipt`
 - WIT poses used: `wit-pose-thinking.png`, `wit-pose-price-tag-suspicion.png`, `wit-pose-suspicious.png`, `wit-pose-betrayed.png`, `wit-pose-holding-receipt-evidence.png`
-- MP4 frame verification: `renders/section-01-hook/mp4-check-frames/contact-sheet.png`
-- Temporary render dependency: FFmpeg/FFprobe were installed in `%TEMP%/wiw-ffmpeg-static` because no system FFmpeg was available
+- Export file: `not requested`
+- MP4 files removed: `renders/section-01-hook/section-01-hook-animated.mp4` and `renders/section-01-hook/section-01-hook-remake.mp4` were deleted by user request
+- Preview QA rule: use Studio/direct preview screenshots for normal render fixes; do not export MP4 unless the user explicitly asks
 - User review applied: avoid many unrelated full-scene cuts in a short section; build connected big scenes, then change one or two cue elements inside the big scene while the narration advances
-- Latest review applied: removed meaningless red leg marks, removed the white wash overlay from the failure photo, enlarged WIT, reduced cue states from `12` to `7`, and corrected the screw callout to circle the actual screw in exported MP4 frame `frame-05.png`
+- Latest review applied: removed meaningless red leg marks, removed the white wash overlay from the failure photo, enlarged WIT, reduced cue states from `12` to `7`, and corrected the screw callout to circle the actual screw.
+- Animation review applied: first motion attempt showed a label/scene mismatch at the `8.400s` transition; fixed by cue-start hiding.
+- Frame-specific fix: moved the `EVERYTHING IS FINE` label right so WIT no longer covers it around frame `182f` / the settled first-week cue.
 
 ## Stale / Regeneration Notes
 
 - Section 3 preview was revised after user feedback; Scene 3 is rebuilt as a CSS checkout promise arena and the previous generated visible-promises photo is now reference-only.
 - No Section 3 `07-review.md`, `08-upload.md`, `09-self-learning.md`, unified preview, or final render outputs were found during this run.
-- Section 1 and Section 2 outputs were not regenerated in this run.
+- Section 1 preview was regenerated for the minimal animation pass. MP4 outputs were removed by user request and should not be recreated unless the user explicitly asks for video export.
+- No Section 1 `07-review.md`, `08-upload.md`, `09-self-learning.md`, unified preview, or final assembly output was found during this run.
 
 ## Next Step Boundary
 

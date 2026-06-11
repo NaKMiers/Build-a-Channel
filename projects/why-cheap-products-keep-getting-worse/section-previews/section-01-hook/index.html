@@ -59,6 +59,7 @@
     .scene {
       z-index: 1;
       background: var(--paper);
+      will-change: opacity, transform, filter;
     }
 
     .cue {
@@ -433,20 +434,35 @@
       text-align: center;
       letter-spacing: 0;
     }
+
+    .label,
+    .wit,
+    .price-tag,
+    .stamp,
+    .tiny-note,
+    .future-dangle,
+    .mini-calendar,
+    .sound-lines,
+    .red-circle,
+    .arrow,
+    .receipt,
+    .final-tag {
+      will-change: opacity, transform;
+    }
   </style>
 </head>
 <body>
   <div id="Section01Hook" data-composition-id="Section01Hook" data-start="0" data-duration="21.205" data-width="1920" data-height="1080">
-    <div id="scene-chair-base" class="clip scene" data-start="0" data-duration="8.4" data-track-index="1">
+    <div id="scene-chair-base" class="clip scene" data-start="0" data-duration="8.62" data-track-index="1">
       <img class="photo full" src="./assets/visual-references/section-01-hook/generated/chair-price-tag-generated.png" alt="">
       <div class="shade"></div>
     </div>
 
-    <div id="scene-failure-base" class="clip scene" data-start="8.4" data-duration="8.0" data-track-index="1">
+    <div id="scene-failure-base" class="clip scene" data-start="8.4" data-duration="8.18" data-track-index="3">
       <img class="photo failure" data-layout-allow-overflow="" src="./assets/visual-references/section-01-hook/generated/wobbly-leg-loose-screw-generated.png" alt="">
     </div>
 
-    <div id="scene-cost-base" class="clip scene" data-start="16.4" data-duration="4.805" data-track-index="1">
+    <div id="scene-cost-base" class="clip scene" data-start="16.4" data-duration="4.805" data-track-index="4">
       <img class="photo desk" src="./assets/visual-references/section-01-hook/generated/price-tag-receipt-generated.png" alt="">
     </div>
 
@@ -486,7 +502,7 @@
         <div class="day">OK</div>
         <div class="day">OK</div>
       </div>
-      <div class="label blue" style="left: 118px; bottom: 110px; width: 530px;">EVERYTHING IS FINE</div>
+      <div class="label blue" style="left: 430px; bottom: 110px; width: 530px; background: #eef8ff; color: #120d0a;">EVERYTHING IS FINE</div>
       <img data-hf-studio-original-inline-translate="" data-hf-studio-original-translate="" data-hf-studio-path-offset="true" class="wit" style="left:72px;bottom:14px;width:455px;--hf-studio-offset-x:551px;--hf-studio-offset-y:-17px;translate:var(--hf-studio-offset-x, 0px) var(--hf-studio-offset-y, 0px)" src="./assets/wit/wit-pose-thinking.png" alt="">
     </div>
 
@@ -501,7 +517,7 @@
       <img class="wit" style="right: 58px; bottom: 14px; width: 500px;" src="./assets/wit/wit-pose-suspicious.png" alt="">
     </div>
 
-    <div data-hf-studio-original-inline-translate="" data-hf-studio-original-translate="" data-hf-studio-path-offset="true" style="--hf-studio-offset-x:-66px;--hf-studio-offset-y:0px;translate:var(--hf-studio-offset-x, 0px) var(--hf-studio-offset-y, 0px)" id="cue-chair-failure" class="clip cue" data-start="11.25" data-duration="5.15" data-track-index="2">
+    <div data-hf-studio-original-inline-translate="" data-hf-studio-original-translate="" data-hf-studio-path-offset="true" style="--hf-studio-offset-x:-66px;--hf-studio-offset-y:0px;translate:var(--hf-studio-offset-x, 0px) var(--hf-studio-offset-y, 0px)" id="cue-chair-failure" class="clip cue" data-start="11.25" data-duration="5.05" data-track-index="2">
       <div class="red-circle" style="left: 1142px; top: 848px; width: 248px; height: 130px;"></div>
       <div data-hf-studio-original-inline-translate="" data-hf-studio-original-translate="" data-hf-studio-path-offset="true" class="arrow" style="left:1030px;top:824px;--hf-studio-offset-x:-83px;--hf-studio-offset-y:12px;translate:var(--hf-studio-offset-x, 0px) var(--hf-studio-offset-y, 0px)">-&gt;</div>
       <div class="label red" style="right: 104px; top: 92px; width: 530px;">SCREW:<br>LOOSE</div>
@@ -536,7 +552,68 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
     <script>
       window.__timelines = window.__timelines || {};
-      const tl = gsap.timeline({ paused: true });
+      const tl = gsap.timeline({
+        paused: true,
+        defaults: { overwrite: "auto" },
+      });
+
+      const reveal = (target, hideAt, at, fromVars, toVars = {}) => {
+        const resetVars = {};
+        if (Object.prototype.hasOwnProperty.call(fromVars, "x")) resetVars.x = 0;
+        if (Object.prototype.hasOwnProperty.call(fromVars, "y")) resetVars.y = 0;
+        if (Object.prototype.hasOwnProperty.call(fromVars, "scale")) resetVars.scale = 1;
+        if (Object.prototype.hasOwnProperty.call(fromVars, "scaleX")) resetVars.scaleX = 1;
+        if (Object.prototype.hasOwnProperty.call(fromVars, "opacity")) resetVars.opacity = 1;
+
+        tl.set(target, fromVars, hideAt);
+        tl.to(target, { ...resetVars, ...toVars }, at);
+      };
+
+      tl.fromTo(
+        "#scene-failure-base",
+        { opacity: 0, scale: 1.012, filter: "blur(7px)" },
+        { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.22, ease: "sine.out", immediateRender: false },
+        8.4
+      );
+      tl.fromTo(
+        "#scene-cost-base",
+        { opacity: 0, scale: 1.01, filter: "blur(6px)" },
+        { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.22, ease: "sine.out", immediateRender: false },
+        16.4
+      );
+
+      reveal("#cue-chair-price .label", 0, 0.12, { y: -18, opacity: 0 }, { duration: 0.26, ease: "power2.out" });
+      reveal("#cue-chair-price .price-tag", 0, 0.2, { y: 24, scale: 0.94, opacity: 0 }, { duration: 0.3, ease: "back.out(1.35)" });
+      reveal("#cue-chair-price .wit", 0, 0.24, { x: -18, y: 18, opacity: 0 }, { duration: 0.34, ease: "power2.out" });
+
+      reveal("#cue-product-details .label", 2.2, 2.2, { y: 18, opacity: 0 }, { duration: 0.28, stagger: 0.08, ease: "power2.out" });
+      reveal("#cue-product-details .tiny-note", 2.2, 2.55, { x: -16, opacity: 0 }, { duration: 0.22, ease: "sine.out" });
+      reveal("#cue-product-details .wit", 2.2, 2.3, { x: -24, opacity: 0 }, { duration: 0.34, ease: "power1.out" });
+
+      reveal("#cue-sold-week .stamp", 5.35, 5.35, { scale: 1.15, opacity: 0 }, { duration: 0.2, ease: "back.out(1.6)" });
+      reveal("#cue-sold-week .label.yellow", 5.35, 5.43, { y: -18, opacity: 0 }, { duration: 0.24, ease: "power2.out" });
+      reveal("#cue-sold-week .future-dangle", 5.35, 5.55, { y: -34, opacity: 0 }, { duration: 0.3, ease: "back.out(1.25)" });
+      reveal("#cue-sold-week .mini-calendar", 5.35, 5.78, { y: 22, opacity: 0 }, { duration: 0.32, ease: "power1.out" });
+      reveal("#cue-sold-week .label.blue", 5.35, 6.08, { y: 18, opacity: 0 }, { duration: 0.26, ease: "sine.out" });
+      reveal("#cue-sold-week .wit", 5.35, 5.82, { y: 18, opacity: 0 }, { duration: 0.34, ease: "power2.out" });
+
+      reveal("#cue-legal-creak .label", 8.4, 8.56, { x: 28, opacity: 0 }, { duration: 0.24, ease: "power2.out" });
+      reveal("#cue-legal-creak .sound-lines span", 8.4, 8.72, { scaleX: 0, opacity: 0, transformOrigin: "left center" }, { duration: 0.2, stagger: 0.05, ease: "power1.out" });
+      reveal("#cue-legal-creak .tiny-note", 8.4, 8.84, { y: 16, opacity: 0 }, { duration: 0.22, ease: "sine.out" });
+      reveal("#cue-legal-creak .wit", 8.4, 8.62, { x: 24, opacity: 0 }, { duration: 0.3, ease: "power2.out" });
+
+      reveal("#cue-chair-failure .red-circle", 11.25, 11.28, { scale: 0.9, opacity: 0 }, { duration: 0.2, ease: "back.out(1.5)" });
+      reveal("#cue-chair-failure .arrow", 11.25, 11.36, { x: -24, opacity: 0 }, { duration: 0.2, ease: "power2.out" });
+      reveal("#cue-chair-failure .label", 11.25, 11.42, { y: 18, opacity: 0 }, { duration: 0.28, stagger: 0.07, ease: "power2.out" });
+      reveal("#cue-chair-failure .wit", 11.25, 11.62, { x: 24, opacity: 0 }, { duration: 0.34, ease: "power1.out" });
+
+      reveal("#cue-true-cost .label", 16.4, 16.56, { x: -26, opacity: 0 }, { duration: 0.24, ease: "power2.out" });
+      reveal("#cue-true-cost .receipt", 16.4, 16.62, { x: 34, opacity: 0 }, { duration: 0.3, ease: "power2.out" });
+      reveal("#cue-true-cost .wit", 16.4, 16.68, { y: 18, opacity: 0 }, { duration: 0.3, ease: "sine.out" });
+
+      reveal("#cue-final-tag .final-tag", 18.85, 18.85, { scale: 0.965, opacity: 0 }, { duration: 0.18, ease: "power2.out" });
+      reveal("#cue-final-tag .stamp", 18.85, 19.02, { y: 18, scale: 0.96, opacity: 0 }, { duration: 0.22, ease: "back.out(1.4)" });
+      reveal("#cue-final-tag .wit", 18.85, 19.06, { y: 18, opacity: 0 }, { duration: 0.3, ease: "sine.out" });
       window.__timelines["Section01Hook"] = tl;
     </script>
   </div>

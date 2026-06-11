@@ -75,7 +75,7 @@ Do not use removed `original-wit-24`, older `core-24`, or `comedy-core` WIT as c
 - Section 1 replacement composition: `Section01Hook`
 - Section 1 replacement runtime: `24.085s`
 - Section 1 replacement preview: `http://localhost:1001/#project/section-01-hook`
-- Section 1 replacement render: `projects/why-everyone-pretends-to-be-busy/renders/section-01-hook/section-01-hook-remake.mp4`
+- Section 1 replacement render: `MP4 removed by user request; use preview only unless user explicitly asks to export video`
 - Section 1 current style: real channel WIT pose PNGs, simple illustrative static boards, hard cuts only, old visual plan skipped
 - Section preview rule: review and approve one section at a time; assemble sections only after the user asks
 - Section asset rule: use one video-level shared asset library at `projects/why-everyone-pretends-to-be-busy/assets`; local section `assets` folders should be junctions, not copied media folders

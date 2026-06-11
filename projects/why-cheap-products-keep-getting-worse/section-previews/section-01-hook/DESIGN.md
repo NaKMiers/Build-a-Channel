@@ -26,16 +26,18 @@ Simple funny explainer hook in the spirit of sparse illustrated narration: a few
 
 ## Motion
 
-- No scene transitions.
-- No element entrance animation.
-- Static base scenes with hard-cut cue overlays only.
+- Minimal motion pass added after static timing approval.
+- Scene transitions use only short incoming fade/blur/scale settles at `8.400s` and `16.400s`.
+- Element entrances are short fade/fly-ins, usually `0.18-0.34s`, and never change the semantic cue start.
+- Cue layers explicitly hide animated elements at cue start before animating them in, so delayed entrances do not appear early.
+- Do not add decorative fly-outs before spoken ideas finish; cue removal stays timing-driven.
 - The chair scene holds across the setup, parts, purchase, and first week.
 - The broken-leg scene holds across legal creak, loose screw, and career-options leg.
 - The cost scene holds across the true-cost receipt and final `FUTURE NOT INCLUDED` payoff.
 - Keep cue count low for a short hook; current approved direction uses `7` cue states over `21.205s`.
 - Red markup must point to the actual object it explains; no decorative rectangles or marks.
 - WIT must be large enough for the facial emotion to read in Studio and exported MP4 frames.
-- Any future animation should be added after this static timing pass is approved.
+- If an animation creates a voice/visual mismatch, revert that animation before adding more motion.
 
 ## What Not To Do
 

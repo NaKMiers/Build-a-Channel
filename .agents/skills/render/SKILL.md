@@ -1,6 +1,6 @@
 ---
 name: render
-description: Build or update step 6 section HyperFrames previews and optional renders for a Why It Works video project. Use when the user asks for Render, HyperFrames build, create video from visual-plan, build a section preview, run section localhost, start preview servers, render section MP4, or run step 6; requires completed 00-topic-intake.md, 01-research-pack.md, 02-script.md, 04-voiceover.md, 05-visual-plan.md, selected section voiceover, selected section visual plan, explicit project selection, and explicit section selection with All as the first option; creates 06-production-board.md, section-previews/ section HyperFrames projects, hyperframes/ review copies, and optional renders while using port 1000 for unified preview and port 1000 plus section number for section previews.
+description: Build or update step 6 section HyperFrames previews for a Why It Works video project. Use when the user asks for Render, HyperFrames build, create video from visual-plan, build a section preview, run section localhost, start preview servers, or run step 6; export MP4/WebM only when the user explicitly asks to export video; requires completed 00-topic-intake.md, 01-research-pack.md, 02-script.md, 04-voiceover.md, 05-visual-plan.md, selected section voiceover, selected section visual plan, explicit project selection, and explicit section selection with All as the first option; creates 06-production-board.md, section-previews/ section HyperFrames projects, and hyperframes/ review copies while using port 1000 for unified preview and port 1000 plus section number for section previews.
 ---
 
 # Render
@@ -67,7 +67,7 @@ Write or update:
 - `projects/<slug>/section-previews/section-XX-kebab-section-name/`
 - `projects/<slug>/hyperframes/review/section-XX.html`
 - `projects/<slug>/hyperframes/index.html` only as the current active mirror when useful
-- `projects/<slug>/renders/section-XX-kebab-section-name/` only when rendering an MP4/WebM
+- `projects/<slug>/renders/section-XX-kebab-section-name/` only when the user explicitly asks to export an MP4/WebM
 
 When this skill creates, updates, or reruns section preview files, every later output for the affected section becomes stale.
 
@@ -250,7 +250,7 @@ Approved short-hook quality pattern from `why-cheap-products-keep-getting-worse`
 - Combine related sentence beats into one cue state when they describe the same object or situation.
 - Use labels first when the image already proves the point; do not draw extra marks just to repeat something obvious.
 - Red circles/arrows are for exact evidence or correction only. If the mark does not explain the voiceover, remove it.
-- Check callout placement on exported MP4 frames. Studio placement is not enough.
+- Check callout placement using Studio/direct preview screenshots during normal render work. Use exported MP4 frames only when the user explicitly asked for video export.
 - WIT should be visibly readable as the emotional audience surrogate. If the face/expression is small in Studio or contact sheet, enlarge WIT.
 - Avoid translucent white wash overlays on real/object photos unless they are required for readability and documented. Real texture should stay visible.
 - Keep static hard cuts; no transitions or animation until the static version is approved.
@@ -278,7 +278,9 @@ Start or reuse the section preview server on port `1000 + section number`.
 
 ### Section MP4 Render Mode
 
-Use only when the user asks to render/export video, or when review needs an MP4.
+Use only when the user explicitly asks to export video, render an MP4, render a WebM, create a video file, or produce a final/draft export file.
+
+Do not create MP4/WebM files during normal render, preview, animation, timing, QA, or review-fix work. Use HyperFrames Studio, direct composition URLs, screenshots, snapshots, contact sheets from screenshots, and `lint` / `validate` / `inspect` checks instead.
 
 Run HyperFrames checks first:
 
@@ -368,7 +370,7 @@ Channel-specific rules:
 - Do not draw, approximate, SVG-build, CSS-build, or generate random WIT when real WIT pose PNGs exist.
 - Reserve WIT for emotional beats: suspicion, betrayal, panic, confusion, judgment, evidence, trapped, or payoff.
 - Do not put WIT in every board if the object or evidence carries the narration better.
-- When WIT appears in a 1080p section, scale it large enough that facial emotion reads in normal Studio and MP4 review. A full-body WIT reaction is usually too small if it is below roughly one-third of the frame height.
+- When WIT appears in a 1080p section, scale it large enough that facial emotion reads in normal Studio and screenshot review. A full-body WIT reaction is usually too small if it is below roughly one-third of the frame height.
 - Use real-life assets as evidence, not decoration.
 - When the visual plan includes real-world references, inspect those images and source notes before using generated support assets.
 - Treat generated images as support or clean production bases unless the visual plan explicitly approves them as the primary asset.
@@ -380,11 +382,11 @@ Channel-specific rules:
 - Do not mark obvious details with meaningless graphics. Example: do not draw four random red leg marks over a chair just because the voice says `four legs`; a clear label is enough unless a specific leg matters.
 - Labels must be readable when paused.
 - Cue-critical visuals must be readable on the cue frame.
-- Callout circles, arrows, stamps, and labels must align to the exact object they reference in exported MP4 frames.
+- Callout circles, arrows, stamps, and labels must align to the exact object they reference in direct preview screenshots. Check exported frames only for explicit video export requests.
 - Do not wash out real object/failure photos with a white overlay by default. Preserve the photo texture unless text readability requires a local label background.
 - Voice sync comes first.
 - For rejected/remade sections, prefer sparse illustrative boards over slide layouts: one object, one joke/evidence point, one short label.
-- Use a local font file for handwritten labels when possible so MP4 render does not fall back to an ugly default font.
+- Use a local font file for handwritten labels when possible so preview/export output does not fall back to an ugly default font.
 
 If HyperFrames global guidance conflicts with the current channel rules, preserve the channel's approved simple-board style unless the user explicitly asks for a different render style.
 
@@ -472,7 +474,8 @@ If a real source has attribution, share-alike, logo, private-data, or unclear-co
    - copy or mirror the canonical standalone section into `hyperframes/review/section-XX.html`
    - run `lint`, `validate`, and `inspect`
    - fix blocking issues
-   - when rendering MP4, run `ffprobe`; clear stale extracted frames; extract key frames from the exported MP4; inspect a contact sheet; inspect any problem frames individually
+   - do not render MP4/WebM or create video export files unless the user explicitly asks to export video
+   - when the user explicitly asks for video export, run `ffprobe`; clear stale extracted frames; extract key frames from the exported MP4; inspect a contact sheet; inspect any problem frames individually
    - start or reuse the preview server on the fixed section port
    - record Studio and direct composition URLs
 8. Write or update `projects/<slug>/06-production-board.md`.
@@ -538,14 +541,14 @@ A section render is ready for review when:
 - transitions are chosen per boundary and do not damage voice sync
 - key labels enter/emphasize on the spoken word they support
 - `lint`, `validate`, and `inspect` pass, or remaining warnings are documented and non-blocking
-- if an MP4 is rendered, exported MP4 frames have been checked, not only Studio preview frames
-- extracted MP4 frame folders were cleaned before regeneration, so the contact sheet cannot contain stale frames from an older version
+- exported MP4/WebM frames are checked only for explicit video export requests; normal render/preview work should not create video files
+- extracted MP4 frame folders are cleaned before regeneration only when an explicit export request required an MP4/WebM
 - if WIT appears, it is a real pose PNG from the approved WIT manifest
 - the first `3` seconds show the topic object or situation
 - the first `5-6` seconds show the contradiction or hidden detail when the hook depends on one
 - labels are readable
 - WIT emotion is visible and useful
-- WIT is large enough to read facial emotion in Studio, MP4, and contact-sheet frames
+- WIT is large enough to read facial emotion in Studio, direct preview screenshots, and screenshot contact sheets
 - red circles, arrows, and marks point to the intended object, not nearby empty space
 - decorative marks that do not clarify the voiceover have been removed
 - real/object photos keep their natural texture unless a local label background is needed for readability
@@ -572,7 +575,7 @@ Reject or stop before finishing if:
 - red markup is decorative, meaningless, or misaligned with the object it claims to identify
 - WIT is too small to read the emotion at normal preview size
 - a real/object photo is globally washed out with a white overlay without a documented readability reason
-- MP4 QA uses a contact sheet that still contains stale frames from an older cue count or render
+- explicit-export MP4 QA uses a contact sheet that still contains stale frames from an older cue count or render
 - transitions are added before hard-cut timing works
 - the same transition effect is applied everywhere without per-boundary reasoning
 - emphasized spoken words have no visual emphasis when the section depends on that cue
@@ -580,6 +583,7 @@ Reject or stop before finishing if:
 - a section uses port `1000`
 - a section uses a random fallback port without explicit user approval
 - unified preview is built when the user only asked for a section
+- an MP4/WebM is created without the user explicitly asking to export video or render a video file
 - assets are copied into each section instead of linked/junctioned without a reason
 - HyperFrames checks fail with blocking errors
 - the preview server is claimed running without verification

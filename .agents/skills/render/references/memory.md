@@ -34,6 +34,7 @@ Use this file for section preview structure, port behavior, HyperFrames CLI habi
 - If a transition damages voice sync, simplify it or use a hard cut.
 - Design element entrance, hold, emphasis, and exit against spoken cues.
 - Emphasized spoken words such as `FREE`, `URGENT`, or `BUSY` should get matching visual emphasis when they are important to the beat.
+- Do not create MP4/WebM files during normal render, preview, animation, timing, QA, or review-fix work. Only export video files when the user explicitly asks to export video, render an MP4/WebM, or create a video file.
 - Stop before review, upload, or learning unless explicitly asked.
 
 ## Output Standard
@@ -48,7 +49,7 @@ For each selected section, create or update:
 - `hyperframes/review/section-XX.html`
 - `06-production-board.md`
 
-Optional MP4/WebM section renders belong under:
+Explicitly requested MP4/WebM section exports belong under:
 
 - `renders/section-XX-kebab-section-name/`
 
@@ -190,7 +191,7 @@ Apply next time:
 - inspect the active WIT manifest before building section HTML
 - use actual WIT PNGs for reactions, pointing, panic, thinking, and payoff beats
 - keep simple illustrated objects in CSS or generated images around WIT
-- verify exported MP4 frames, not just Studio frames, because fonts and assets can differ during render
+- verify direct preview screenshots, not just Studio playback; use exported MP4 frames only when the user explicitly asked for video export
 - if using a web font, store the correct Latin subset locally and confirm the iframe reports the font as loaded
 
 Promote to shared memory:
@@ -221,10 +222,10 @@ no; this is environment-specific render setup.
 Classification: `Render lesson`
 
 Context:
-The user approved the remade Section 1 for `why-cheap-products-keep-getting-worse` after the failed low-quality render was removed and rebuilt from script, voice timing, real WIT poses, simple object boards, local handwritten font, MP4 render, and extracted MP4 frame checks.
+The user approved the remade Section 1 for `why-cheap-products-keep-getting-worse` after the failed low-quality render was removed and rebuilt from script, voice timing, real WIT poses, simple object boards, local handwritten font, and frame checks.
 
 Lesson:
-For future rejected or low-quality section renders, the best recovery pattern is a complete static remake: one voice cue per board, one main visual idea, hard cuts only, short handwritten labels, real channel WIT PNGs only on emotional beats, and MP4 frame verification before handoff.
+For future rejected or low-quality section renders, the best recovery pattern is a complete static remake: one voice cue per board, one main visual idea, hard cuts only, short handwritten labels, real channel WIT PNGs only on emotional beats, and preview screenshot verification before handoff.
 
 Apply next time:
 
@@ -235,7 +236,8 @@ Apply next time:
 - use WIT sparingly for suspicion, betrayal, panic, judgment, evidence, or payoff
 - keep scene boards static until the user approves the visual direction
 - use local font files for handwritten labels
-- render MP4, run `ffprobe`, extract key frames, and inspect a contact sheet
+- use Studio/direct preview screenshots or screenshot contact sheets for QA
+- export MP4, run `ffprobe`, extract key frames, and inspect a contact sheet only when the user explicitly asks for video export
 - record the override, checks, render path, and stale downstream notes in `06-production-board.md`
 
 Promote to shared memory:
@@ -257,7 +259,7 @@ Apply next time:
 - keep the same base image/illustration while the voice describes parts of the same object or situation
 - add or remove only one or two cue elements per spoken beat, such as labels, arrows, marks, small props, WIT reaction, or a hidden tag
 - cut to a new big scene only when the narration moves to a different place, mechanism, or payoff
-- verify the MP4 contact sheet for continuity, not just cue readability
+- verify a screenshot contact sheet for continuity, not just cue readability
 
 Promote to shared memory:
 no; keep in render memory until repeated across more approved sections.
@@ -270,14 +272,14 @@ Context:
 In the Section 1 remake for `why-cheap-products-keep-getting-worse`, the user rejected meaningless red leg marks, a screw circle that missed the screw, a washed-out white overlay over the failure image, too many cue clips for a `21s` hook, and WIT that was too small. The user also explicitly pointed back to the `hyperframes` skill as the expected render/composition workflow.
 
 Lesson:
-Red markup is not decoration. Every circle, arrow, underline, or box must point to the exact object it explains and must still be correct in exported MP4 frames. If a mark does not add meaning, remove it. WIT must be large enough for facial emotion to read at normal Studio/MP4 review size.
+Red markup is not decoration. Every circle, arrow, underline, or box must point to the exact object it explains and must still be correct in direct preview screenshots. If a mark does not add meaning, remove it. WIT must be large enough for facial emotion to read at normal Studio/screenshot review size.
 
 Apply next time:
 
 - use the bundled `hyperframes` skill as the HTML composition source of truth before rendering
 - reduce short hooks to the fewest cue states that still match the voiceover
 - remove visual marks that only prove something obvious or do not explain the line
-- check callout alignment against extracted MP4 frames, not just the editor canvas
+- check callout alignment against direct preview screenshots, not just the editor canvas
 - avoid white wash overlays on real/object photos unless the user approves that treatment
 - scale WIT large enough for the expression to be readable without covering the main object or label
 
@@ -289,10 +291,10 @@ no; keep in render memory until repeated across more approved sections.
 Classification: `Render lesson`
 
 Context:
-The user approved the final adjusted Section 1 render for `why-cheap-products-keep-getting-worse` after the section was simplified to `3` big scenes and `7` cue states, WIT was enlarged, meaningless red leg marks were removed, the failure-photo white wash overlay was removed, and the screw callout was verified against the actual exported MP4 frame.
+The user approved the final adjusted Section 1 render for `why-cheap-products-keep-getting-worse` after the section was simplified to `3` big scenes and `7` cue states, WIT was enlarged, meaningless red leg marks were removed, the failure-photo white wash overlay was removed, and the screw callout was verified against the actual preview frame.
 
 Lesson:
-High-quality short section renders should feel calm and connected: few big scenes, low cue count, meaningful labels, exact markup alignment, readable WIT emotion, and MP4-frame QA. Studio preview alone is not enough because stale contact sheets and misaligned callouts can hide mistakes.
+High-quality short section renders should feel calm and connected: few big scenes, low cue count, meaningful labels, exact markup alignment, readable WIT emotion, and screenshot-frame QA. Studio playback alone is not enough because stale contact sheets and misaligned callouts can hide mistakes.
 
 Apply next time:
 
@@ -300,9 +302,9 @@ Apply next time:
 - for `20-25s` hooks, start with about `3` big scenes and `6-8` cue states
 - remove decorative or meaningless red marks instead of trying to make them look better
 - preserve real/object photo texture; avoid full-frame white wash overlays unless needed for readability
-- scale WIT so the face and emotion are readable in Studio and MP4 frames
-- align circles/arrows to the exact object in the exported MP4 frame
-- delete old extracted `frame-*.png` files before creating a new contact sheet
+- scale WIT so the face and emotion are readable in Studio and direct preview screenshots
+- align circles/arrows to the exact object in the direct preview frame
+- delete old extracted `frame-*.png` files before creating a new contact sheet, when working from screenshots or explicit exports
 - inspect problem frames individually, not only the full contact sheet
 
 Promote to shared memory:
@@ -328,6 +330,48 @@ Apply next time:
 
 Promote to shared memory:
 no; keep in render memory until repeated across more renders.
+
+### 2026-06-10 - Cue Animation Needs Explicit Hidden State
+
+Classification: `Render lesson`
+
+Context:
+While adding a minimal animation pass to `why-cheap-products-keep-getting-worse` Section 1, delayed `gsap.from()` entrances with `immediateRender:false` allowed labels to appear in their final state between the cue clip start and the delayed tween start. This briefly put `LEGAL-ISH CREAK` over the old chair scene during the transition.
+
+Lesson:
+For cue-timed HyperFrames overlays, do not rely on delayed `from()` tweens to hide elements before they enter. At the cue's `data-start`, explicitly set animated elements to their hidden/offset state with `tl.set(...)`, then animate them to their final layout with `tl.to(...)` at the intended entrance moment.
+
+Apply next time:
+
+- keep the approved cue `data-start` as the timing anchor
+- use a helper that sets `opacity: 0` and small `x` / `y` / `scale` offsets at cue start
+- animate to `opacity: 1`, `x: 0`, `y: 0`, and `scale: 1` shortly after the cue start
+- check transition boundary screenshots from direct preview, not just Studio playback
+- if an old cue label appears over a new voice beat, shorten the old overlay or add a tiny visual breath before the next cue
+
+Promote to shared memory:
+no; keep in render memory unless the same sync issue appears across more sections.
+
+### 2026-06-10 - MP4 Export Requires Explicit User Request
+
+Classification: `Operational lesson`
+
+Context:
+During Section 1 animation work for `why-cheap-products-keep-getting-worse`, MP4 review renders were created while the user only asked for render/preview fixes. The user clarified that MP4 export wastes time and tokens and should happen only when they explicitly ask to export video.
+
+Lesson:
+Normal render work means HyperFrames HTML/Studio preview, checks, screenshots, and notes. Do not create MP4/WebM files for QA, timing fixes, animation passes, or review fixes unless the user explicitly asks for an export.
+
+Apply next time:
+
+- run `npm.cmd run check`, Studio/direct preview verification, and screenshot/frame checks instead of video export
+- use browser or HyperFrames screenshots for frame-specific QA
+- treat `export video`, `render MP4`, `render WebM`, `create video file`, or equivalent wording as the only trigger for video export
+- if the user asks to "render" a section without saying export/video/MP4, build or update the preview only
+- remove accidental MP4 outputs if created without explicit export permission
+
+Promote to shared memory:
+no; this is a render skill operating rule already captured in the skill source.
 
 ## Feedback Entry Template
 
