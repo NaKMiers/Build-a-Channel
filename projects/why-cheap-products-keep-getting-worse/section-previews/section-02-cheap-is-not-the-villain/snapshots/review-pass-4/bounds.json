@@ -1,0 +1,228 @@
+[
+  {
+    "file": "C:\\ME\\THINGS\\Build a Channel\\projects\\why-cheap-products-keep-getting-worse\\section-previews\\section-02-cheap-is-not-the-villain\\snapshots\\review-pass-4\\frame-00-at-0_4s.png",
+    "time": 0.4,
+    "visible": {
+      "wit-fair-suspicion": {
+        "x": 1300,
+        "y": 490,
+        "w": 740,
+        "h": 740
+      },
+      "not-villain": {
+        "x": 418.25677490234375,
+        "y": 852.8424682617188,
+        "w": 613.4863891601562,
+        "h": 131.7681884765625
+      }
+    }
+  },
+  {
+    "file": "C:\\ME\\THINGS\\Build a Channel\\projects\\why-cheap-products-keep-getting-worse\\section-previews\\section-02-cheap-is-not-the-villain\\snapshots\\review-pass-4\\frame-01-at-2_9s.png",
+    "time": 2.9,
+    "visible": {
+      "wit-fair-suspicion": {
+        "x": 1300,
+        "y": 490,
+        "w": 740,
+        "h": 740
+      },
+      "not-villain": {
+        "x": 418.25677490234375,
+        "y": 852.8424682617188,
+        "w": 613.4863891601562,
+        "h": 131.7681884765625
+      },
+      "unfair-stamp": {
+        "x": 488.4759521484375,
+        "y": 308.8695068359375,
+        "w": 294.501220703125,
+        "h": 160.448486328125
+      },
+      "emotion-label": {
+        "x": 757.1318359375,
+        "y": 87.32785034179688,
+        "w": 505.736328125,
+        "h": 190.43804931640625
+      },
+      "emotion-receipt": {
+        "x": 808.3593139648438,
+        "y": 293.1649169921875,
+        "w": 449.28143310546875,
+        "h": 477.670166015625
+      }
+    }
+  },
+  {
+    "file": "C:\\ME\\THINGS\\Build a Channel\\projects\\why-cheap-products-keep-getting-worse\\section-previews\\section-02-cheap-is-not-the-villain\\snapshots\\review-pass-4\\frame-02-at-6_6s.png",
+    "time": 6.6,
+    "visible": {}
+  },
+  {
+    "file": "C:\\ME\\THINGS\\Build a Channel\\projects\\why-cheap-products-keep-getting-worse\\section-previews\\section-02-cheap-is-not-the-villain\\snapshots\\review-pass-4\\frame-03-at-8_8s.png",
+    "time": 8.8,
+    "visible": {
+      "wit-jacket": {
+        "x": 1350,
+        "y": 565,
+        "w": 700,
+        "h": 700
+      },
+      "regular-product": {
+        "x": 1027.136474609375,
+        "y": 115.06610107421875,
+        "w": 520.72705078125,
+        "h": 190.9615478515625
+      },
+      "nice-jacket": {
+        "x": 927.0892333984375,
+        "y": 822.6770629882812,
+        "w": 365.821533203125,
+        "h": 185.5521240234375
+      },
+      "not-magic": {
+        "x": 802.9010620117188,
+        "y": 522.1055297851562,
+        "w": 344.19781494140625,
+        "h": 138.0076904296875
+      }
+    }
+  },
+  {
+    "file": "C:\\ME\\THINGS\\Build a Channel\\projects\\why-cheap-products-keep-getting-worse\\section-previews\\section-02-cheap-is-not-the-villain\\snapshots\\review-pass-4\\frame-04-at-11_4s.png",
+    "time": 11.4,
+    "visible": {}
+  },
+  {
+    "file": "C:\\ME\\THINGS\\Build a Channel\\projects\\why-cheap-products-keep-getting-worse\\section-previews\\section-02-cheap-is-not-the-villain\\snapshots\\review-pass-4\\frame-05-at-14_4s.png",
+    "time": 14.4,
+    "visible": {
+      "wit-suspicious": {
+        "x": 1310,
+        "y": 490,
+        "w": 760,
+        "h": 760
+      },
+      "missing-tomorrow-label": {
+        "x": 338.3116149902344,
+        "y": 48.24837112426758,
+        "w": 793.376708984375,
+        "h": 138.05014038085938
+      }
+    }
+  },
+  {
+    "file": "C:\\ME\\THINGS\\Build a Channel\\projects\\why-cheap-products-keep-getting-worse\\section-previews\\section-02-cheap-is-not-the-villain\\snapshots\\review-pass-4\\frame-06-at-16_7s.png",
+    "time": 16.7,
+    "visible": {
+      "wit-suspicious": {
+        "x": 1310,
+        "y": 490,
+        "w": 760,
+        "h": 760
+      },
+      "missing-tomorrow-label": {
+        "x": 338.3116149902344,
+        "y": 48.24837112426758,
+        "w": 793.376708984375,
+        "h": 138.05014038085938
+      }
+    }
+  },
+  {
+    "file": "C:\\ME\\THINGS\\Build a Channel\\projects\\why-cheap-products-keep-getting-worse\\section-previews\\section-02-cheap-is-not-the-villain\\snapshots\\review-pass-4\\frame-07-at-17_8s.png",
+    "time": 17.8,
+    "visible": {
+      "wit-suspicious": {
+        "x": 1310,
+        "y": 490,
+        "w": 760,
+        "h": 760
+      },
+      "missing-tomorrow-label": {
+        "x": 338.3116149902344,
+        "y": 48.24837112426758,
+        "w": 793.376708984375,
+        "h": 138.05014038085938
+      }
+    }
+  },
+  {
+    "file": "C:\\ME\\THINGS\\Build a Channel\\projects\\why-cheap-products-keep-getting-worse\\section-previews\\section-02-cheap-is-not-the-villain\\snapshots\\review-pass-4\\frame-08-at-18_9s.png",
+    "time": 18.9,
+    "visible": {
+      "wit-suspicious": {
+        "x": 1310,
+        "y": 490,
+        "w": 760,
+        "h": 760
+      },
+      "missing-tomorrow-label": {
+        "x": 338.3116149902344,
+        "y": 48.24837112426758,
+        "w": 793.376708984375,
+        "h": 138.05014038085938
+      }
+    }
+  },
+  {
+    "file": "C:\\ME\\THINGS\\Build a Channel\\projects\\why-cheap-products-keep-getting-worse\\section-previews\\section-02-cheap-is-not-the-villain\\snapshots\\review-pass-4\\frame-09-at-20_8s.png",
+    "time": 20.8,
+    "visible": {
+      "missing-tomorrow-label": {
+        "x": 338.3116149902344,
+        "y": 48.24837112426758,
+        "w": 793.376708984375,
+        "h": 138.05014038085938
+      },
+      "buy-again-stamp": {
+        "x": 1405.912841796875,
+        "y": 59.52619552612305,
+        "w": 454.17431640625,
+        "h": 253.32261657714844
+      },
+      "again-receipt": {
+        "x": 911.8948364257812,
+        "y": 753.47802734375,
+        "w": 344.21026611328125,
+        "h": 259.0439453125
+      },
+      "wit-repeat-buyer": {
+        "x": 1270,
+        "y": 460,
+        "w": 760,
+        "h": 760
+      }
+    }
+  },
+  {
+    "file": "C:\\ME\\THINGS\\Build a Channel\\projects\\why-cheap-products-keep-getting-worse\\section-previews\\section-02-cheap-is-not-the-villain\\snapshots\\review-pass-4\\frame-10-at-22s.png",
+    "time": 22,
+    "visible": {
+      "missing-tomorrow-label": {
+        "x": 338.3116149902344,
+        "y": 48.24837112426758,
+        "w": 793.376708984375,
+        "h": 138.05014038085938
+      },
+      "buy-again-stamp": {
+        "x": 1405.912841796875,
+        "y": 59.52619552612305,
+        "w": 454.17431640625,
+        "h": 253.32261657714844
+      },
+      "again-receipt": {
+        "x": 911.8948364257812,
+        "y": 753.47802734375,
+        "w": 344.21026611328125,
+        "h": 259.0439453125
+      },
+      "wit-repeat-buyer": {
+        "x": 1270,
+        "y": 460,
+        "w": 760,
+        "h": 760
+      }
+    }
+  }
+]

@@ -34,6 +34,7 @@ Use this file for section preview structure, port behavior, HyperFrames CLI habi
 - If a transition damages voice sync, simplify it or use a hard cut.
 - Design element entrance, hold, emphasis, and exit against spoken cues.
 - Emphasized spoken words such as `FREE`, `URGENT`, or `BUSY` should get matching visual emphasis when they are important to the beat.
+- If the user manually edits a localhost/HyperFrames Studio preview, preserve the current section `index.html` as canonical. Diff before editing, do not overwrite from review mirrors or older plans, and remove only targeted accidental artifacts such as unreferenced VFX blocks or duration extensions.
 - Do not create MP4/WebM files during normal render, preview, animation, timing, QA, or review-fix work. Only export video files when the user explicitly asks to export video, render an MP4/WebM, or create a video file.
 - Stop before review, upload, or learning unless explicitly asked.
 
@@ -217,6 +218,28 @@ Apply next time:
 Promote to shared memory:
 no; this is environment-specific render setup.
 
+### 2026-06-11 - Preserve Manual Studio Edits Before Cleanup
+
+Classification: `Operational lesson`
+
+Context:
+During Section 1 of `why-cheap-products-keep-getting-worse`, the user manually adjusted the localhost/HyperFrames Studio preview and then accidentally added a `vfx-liquid-glass` registry composition that extended the section by about `20s`.
+
+Lesson:
+When the user reports manual Studio edits, the live preview `index.html` is the source of truth. Do not regenerate or mirror from older files before reading and diffing it. For accidental Studio/VFX changes, remove only the identified artifact and restore root duration to the voiceover duration unless the user approved silent extra time.
+
+Apply next time:
+
+- read `section-previews/section-XX-*/index.html` before editing
+- preserve `data-hf-studio-*` layout attributes unless they belong to the accidental artifact
+- do not copy `hyperframes/review/section-XX.html` or visual-plan output over the preview
+- check for unreferenced registry blocks under `compositions/`
+- verify root `data-duration` matches the voiceover duration after cleanup
+- record the preservation note in project docs
+
+Promote to shared memory:
+yes, as a workflow safety rule for all future render updates.
+
 ### 2026-06-08 - Approved Static Remake Quality Pattern
 
 Classification: `Render lesson`
@@ -372,6 +395,116 @@ Apply next time:
 
 Promote to shared memory:
 no; this is a render skill operating rule already captured in the skill source.
+
+### 2026-06-11 - Phrase-Timed Reveals And Exaggerated WIT Placement
+
+Classification: `Render lesson`
+
+Context:
+The user reviewed Section 1 of `why-cheap-products-keep-getting-worse` and said the transition/animation pass still made many blocks appear almost together. They wanted elements to appear when the voice reaches the matching words, such as `$9` appearing on `nine dollars` and `4 LEGS + 1 SEAT` appearing when that phrase is spoken. The user also said WIT should not default to the lower-left or lower-right corner; WIT is the emotional soul of each beat and should use exaggerated, funny placements.
+
+Lesson:
+Inside a cue, do not batch-reveal all labels, props, and WIT at cue start. Give each meaningful text block, tag, callout, and WIT entrance its own phrase-timed reveal. Treat WIT placement as part of the joke and emotion: large edge peeks, upside-down top peeks, half-body entrances from the side, hiding behind objects, behind-tag framing, and oversized faces are valid when they do not cover text or evidence.
+
+Apply next time:
+
+- map the spoken phrase before placing each reveal, especially price tags, evidence labels, and punchline text
+- use cue-start hiding plus boundary cleanup sets when delayed elements leak into the next cue
+- make WIT large enough to read emotion and vary placement across beats
+- avoid using WIT only as a lower-corner sticker
+- if an existing WIT pose cannot express the beat, generate or add a new approved pose into the shared/project WIT asset library and document it
+- verify major WIT/layout changes with direct preview screenshots or contact sheets from runtime seek, not only `inspect`
+
+Promote to shared memory:
+partial yes; phrase-timed cue readability and WIT-as-emotion are summarized in `.agents/_shared/systems/visual-production.md`, while the detailed Section 1 timing case stays here.
+
+### 2026-06-11 - Reduce Animation Density And Guard WIT Crops
+
+Classification: `Render lesson`
+
+Context:
+After the phrase-timed Section 1 pass for `why-cheap-products-keep-getting-worse`, the user said the animation still felt dense and visually noisy. They wanted the same scene/cue structure but fewer text-block animations: only emphasized spoken beats such as `$9` should smash in, while ordinary sequential text should simply appear at the correct voice cue. They also said WIT poses were too small/not funny enough and called out broken WIT crops where the head, shoulder, or face was cut by the frame.
+
+Lesson:
+Sequential timing does not require every block to animate. For review fixes, prefer hard-showing ordinary labels exactly on the spoken beat, and reserve smash/pop/stamp motion for true emphasis beats. WIT must be treated as the emotional subject: use bigger, goofier approved poses when available, but verify direct preview frames so WIT does not look accidentally broken through cropped faces, heads, or shoulders.
+
+Apply next time:
+
+- preserve approved scene-transition count unless the user asks for a structural rebuild
+- use `show at beat` for supporting labels and notes
+- use impact motion only for highlighted spoken words, proof marks, or payoff labels
+- scale WIT for readable emotion, often `1/3` to `1/2` of the frame
+- prefer approved WIT library poses before generating new ones
+- verify WIT-heavy changes with runtime seek screenshots/contact sheets, not just lint/inspect
+- if a WIT crop looks accidental rather than intentionally peeking, reposition or scale it before handoff
+
+Promote to shared memory:
+yes; summarized in `.agents/_shared/systems/visual-production.md` because the rule affects future sections and projects.
+
+### 2026-06-11 - WIT Density Must Follow Voice Rhythm
+
+Classification: `Render lesson`
+
+Context:
+After the low-motion WIT-emphasis pass for Section 1 of `why-cheap-products-keep-getting-worse`, the user said the section still felt too dense because WIT appeared on too many cues across only `21.205s`. The fix reduced WIT from `7` appearances to `4`: big scene 1 kept `2` WIT beats, big scene 2 kept `1`, and big scene 3 kept `1`.
+
+Lesson:
+Making WIT large and expressive does not mean using WIT on every cue. WIT should act as emotional punctuation timed to voice rhythm. Text, props, marks, and the base scene should carry explanatory beats between WIT moments. For short sections with persistent big scenes, default to about `1-2` WIT appearances per big scene unless the narration clearly needs more.
+
+Apply next time:
+
+- count WIT appearances before handoff, especially in sections under `30s`
+- decide WIT rhythm from the voiceover: setup reaction, escalation reaction, payoff reaction
+- let explanatory cues breathe without WIT when labels/objects already explain the line
+- keep WIT large when it appears, but reduce frequency if the section starts feeling crowded
+- verify the reduced WIT rhythm with a contact sheet, not only a single hero frame
+
+Promote to shared memory:
+yes; summarized in `.agents/_shared/systems/visual-production.md` and skill rules because it affects future renders and visual plans.
+
+### 2026-06-11 - Render Must Run Its Own Review-Prevention Pass
+
+Classification: `Render lesson`
+
+Context:
+The user clarified that `render` should not blindly depend on `visual-plan`. Render also relies on HyperFrames skill mechanics and its own judgment. The Section 1 fixes required render-side decisions about hard-show timing, WIT density, WIT crop, asset use, markup alignment, and contact-sheet verification.
+
+Lesson:
+Render must run a review-prevention pass after reading the visual plan and before writing HTML. If the visual plan leaves gaps, render should make explicit decisions and document them instead of building a weak plan. HyperFrames core rules handle mechanics, but Why It Works channel rules control readability, voice sync, WIT rhythm, and motion density.
+
+Apply next time:
+
+- build static/end-state layouts before GSAP
+- classify cue elements as `static`, `hard-show`, `impact`, or `transition`
+- count WIT per big scene and reduce overuse before implementation
+- use hard-show for ordinary delayed labels
+- reserve impact motion for emphasized beats
+- verify WIT/callout-heavy changes with runtime screenshots/contact sheets
+- document render decisions that override or complete a weak visual plan
+
+Promote to shared memory:
+no; this is render-skill execution behavior, while the reusable production principles already live in shared visual-production rules.
+
+### 2026-06-11 - Check Text Covering WIT, Not Only WIT Covering Text
+
+Classification: `Render lesson`
+
+Context:
+After the manual Section 1 cleanup for `why-cheap-products-keep-getting-worse`, the user reviewed the final frame and noted that the payoff text covered WIT. The fix moved the `FUTURE NOT INCLUDED` tag and `SMALL PROBLEM` stamp left while shifting money-panic WIT right, preserving the payoff text without hiding WIT's face/expression.
+
+Lesson:
+Render must check visual collision in both directions. WIT should not cover labels, proof, or payoff, but payoff labels/cards/stamps also must not cover WIT's face, eyes, mouth, or key prop when WIT is carrying the emotion. Solve this by separating layout zones, not by relying on z-index or accepting partial face coverage.
+
+Apply next time:
+
+- inspect final/payoff frames specifically for text-over-WIT overlap
+- create separate text and WIT emotion zones before adding motion
+- keep WIT face/expression readable even when WIT sits behind a tag/card
+- if a final tag must be large, shift or resize the tag before sacrificing WIT emotion
+- sync the review mirror from the corrected preview after layout fixes
+
+Promote to shared memory:
+yes; summarized in shared visual-production and learning log.
 
 ## Feedback Entry Template
 

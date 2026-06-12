@@ -103,6 +103,10 @@ Also read active HyperFrames implementation guidance when available:
 - the bundled `hyperframes-cli` skill for CLI commands
 - existing project `section-previews/` and `hyperframes/` files when updating an existing section
 
+Use the HyperFrames skill for core composition mechanics: HTML as source of truth, layout before animation, deterministic GSAP timelines, correct `data-start` / `data-duration` / `data-track-index`, audio as an `<audio>` clip, synchronous timeline registration, and CLI validation.
+
+For `Why It Works` board-video style, channel review rules override generic decorative motion defaults: a cue can intentionally hard-show on the spoken beat when that improves readability and voice sync. Do not add animation merely to satisfy a generic "everything enters" instinct.
+
 ## Project Selection Gate
 
 Always resolve the target project before rendering.
@@ -210,6 +214,19 @@ If assets are missing and cannot be created safely, stop and report the exact mi
 
 ## Request Modes
 
+### Manual Studio Edit Preservation Mode
+
+Use when the user says they edited the localhost/HyperFrames Studio preview manually, asks to save those edits, or asks for a future update without overwriting their changes.
+
+Rules:
+
+- Treat the live section preview `section-previews/section-XX-*/index.html` as canonical before any automated rewrite.
+- Read and diff the current preview file before editing. Do not copy from `hyperframes/review/section-XX.html`, an older visual plan, or a previous generated draft over the live preview.
+- Remove only the specific accidental artifact the user named or the evidence clearly identifies, such as an unreferenced VFX registry composition, a duration extension, or a duplicate effect layer.
+- If Studio added `data-hf-studio-*` positioning attributes, preserve them unless they are part of the accidental artifact.
+- After cleanup, verify root `data-duration` matches the section voiceover duration unless the user explicitly approved extra silent visual time.
+- Record the preservation note in the section `IMPLEMENTATION.md` and `06-production-board.md`.
+
 ### Section Remake / Quality Recovery Mode
 
 Use when the user rejects an existing section render as low quality, messy, slide-like, mismatched to voiceover, or using fake/non-channel WIT.
@@ -252,6 +269,10 @@ Approved short-hook quality pattern from `why-cheap-products-keep-getting-worse`
 - Red circles/arrows are for exact evidence or correction only. If the mark does not explain the voiceover, remove it.
 - Check callout placement using Studio/direct preview screenshots during normal render work. Use exported MP4 frames only when the user explicitly asked for video export.
 - WIT should be visibly readable as the emotional audience surrogate. If the face/expression is small in Studio or contact sheet, enlarge WIT.
+- WIT-heavy beats should use the funniest approved pose that fits the emotion. Do not settle for a neutral corner pose when a panic, facepalm, suspicious, betrayed, or payoff pose exists.
+- Do not overuse WIT. In short sections, WIT is emotional punctuation; default to about `1-2` WIT beats per persistent big scene unless the voice rhythm clearly needs more.
+- Guard WIT crops: face, head, shoulders, and important props must not look accidentally cut off. Intentional edge-peek crops are allowed only when the expression still reads clearly.
+- Ordinary sequential labels should hard-show on the spoken beat. Reserve smash/pop/stamp/slide motion for emphasized words, proof marks, or payoff labels.
 - Avoid translucent white wash overlays on real/object photos unless they are required for readability and documented. Real texture should stay visible.
 - Keep static hard cuts; no transitions or animation until the static version is approved.
 
@@ -371,12 +392,18 @@ Channel-specific rules:
 - Reserve WIT for emotional beats: suspicion, betrayal, panic, confusion, judgment, evidence, trapped, or payoff.
 - Do not put WIT in every board if the object or evidence carries the narration better.
 - When WIT appears in a 1080p section, scale it large enough that facial emotion reads in normal Studio and screenshot review. A full-body WIT reaction is usually too small if it is below roughly one-third of the frame height.
+- For strong emotional beats, WIT can occupy roughly `1/3` to `1/2` of the frame, or more when it improves the joke and does not block text/evidence.
+- Verify WIT safe crop in direct preview screenshots. Avoid accidental cuts through the face, head, shoulders, or important props; if it looks broken rather than intentionally peeking, reposition or scale before handoff.
+- Protect WIT's emotion from text too. In payoff/reaction beats, final tags, stamps, labels, and cards must not cover WIT's face, eyes, mouth, or key prop. Create separate text and WIT zones instead of relying on z-index or partial overlap.
+- If the current approved WIT library lacks a pose that expresses the beat, create or request a new approved WIT pose asset and save it in the shared/project WIT asset library before using it.
 - Use real-life assets as evidence, not decoration.
 - When the visual plan includes real-world references, inspect those images and source notes before using generated support assets.
 - Treat generated images as support or clean production bases unless the visual plan explicitly approves them as the primary asset.
 - Before using any planned image as a direct scene base, compare it against adjacent big scenes. If a non-callback scene repeats the same background, object setup, camera language, or material mood as another scene, rebuild it as a more distinct CSS/self-made/generated scene and document the change.
 - Do not force every collected reference image into the render. Inspect each planned asset, use it only if it improves the end viewer result, and mark skipped images as reference-only in attribution/implementation notes.
 - Use hard cuts by default.
+- Do not animate every cue element. For normal labels, notes, and supporting props, use hard-show timing exactly on the spoken beat.
+- Use impact motion such as smash, stamp, shake, snap, or pop only for emphasized spoken words, evidence marks, or payoff labels.
 - Use red markup for corrections and punchlines.
 - Red markup must point to or change a specific meaningful object; do not add decorative circles, rectangles, or marks that do not explain the narration.
 - Do not mark obvious details with meaningless graphics. Example: do not draw four random red leg marks over a chair just because the voice says `four legs`; a clear label is enough unless a specific leg matters.
@@ -385,10 +412,56 @@ Channel-specific rules:
 - Callout circles, arrows, stamps, and labels must align to the exact object they reference in direct preview screenshots. Check exported frames only for explicit video export requests.
 - Do not wash out real object/failure photos with a white overlay by default. Preserve the photo texture unless text readability requires a local label background.
 - Voice sync comes first.
+- Cue-critical visuals must be fully readable on the cue frame, not still traveling into place.
 - For rejected/remade sections, prefer sparse illustrative boards over slide layouts: one object, one joke/evidence point, one short label.
 - Use a local font file for handwritten labels when possible so preview/export output does not fall back to an ugly default font.
 
 If HyperFrames global guidance conflicts with the current channel rules, preserve the channel's approved simple-board style unless the user explicitly asks for a different render style.
+
+### HyperFrames Implementation Pattern For WIW
+
+Before writing GSAP:
+
+- build the most readable static/end-state layout for every big scene and cue
+- place WIT, labels, price tags, receipts, callouts, and props where they should land at full readability
+- verify that WIT does not cover text/evidence and that payoff text/stamps/cards do not cover WIT's face/expression in the static layout
+- decide whether each cue element is `static`, `hard-show`, `impact`, or `transition`
+
+For ordinary delayed cue elements, prefer this pattern:
+
+```js
+const show = (target, hideAt, at) => {
+  tl.set(target, { opacity: 0 }, hideAt);
+  tl.set(target, { opacity: 1 }, at);
+};
+```
+
+For emphasized beats only, use a small helper such as:
+
+```js
+const smash = (target, hideAt, at) => {
+  reveal(target, hideAt, at, { y: 24, scale: 1.2, opacity: 0 }, { duration: 0.18, ease: "back.out(1.9)" });
+};
+```
+
+Do not rely on delayed `gsap.from()` to hide cue elements before they enter. Set the hidden state at the cue start, then show or animate at the intended spoken beat.
+
+### Render Review-Prevention Pass
+
+Run this pass after reading the visual plan and before writing or editing HTML:
+
+- Voice cue map: list the exact phrase that triggers each label, prop, WIT, and markup.
+- Big-scene sanity: keep persistent scenes while the voice describes the same object or mechanism.
+- Cue density: each cue should add only one or two meaningful changes.
+- Motion density: ordinary labels and notes should hard-show; only emphasized beats get impact motion.
+- WIT density: count WIT appearances per big scene; reduce if WIT reacts to every cue.
+- WIT scale/crop: check face/head/shoulders and important props before handoff.
+- WIT/text collision: check both directions. WIT must not cover text/proof/payoff, and text/proof/payoff must not cover WIT's face/expression.
+- Markup meaning: every circle/arrow/underline must point to the exact object it explains.
+- Scene differentiation: direct scene bases should not repeat adjacent visual language unless intentional.
+- HyperFrames mechanics: data attributes, audio, deterministic GSAP, and timeline registration must follow the HyperFrames skill.
+
+If the visual plan is missing one of these decisions, render must make the decision explicitly and document it in `IMPLEMENTATION.md` / `06-production-board.md`; do not blindly build a weak plan.
 
 ## Voice Sync And Motion Rules
 
@@ -462,18 +535,23 @@ If a real source has attribution, share-alike, logo, private-data, or unclear-co
    - create or verify the local `assets` junction
    - inspect the active WIT manifest before using WIT
    - create a voice cue map from the section voiceover and either the section visual plan or, in remake mode, the script plus approved reference style
+   - run the Render Review-Prevention Pass
    - decide the big-scene count and cue-state count before writing HTML
    - create a big-scene/cue plan where each big scene holds one main visual idea and cue overlays add only meaningful labels, props, or WIT reactions
+   - count WIT appearances per big scene and reduce them before implementation if the rhythm is dense
+   - classify each cue element as `static`, `hard-show`, `impact`, or `transition` before implementing motion
    - implement `index.html` from the section visual plan, or from the script/voice timing when remake mode explicitly skips the visual plan
    - wire selected voiceover audio
    - implement a hard-cut timing pass first
    - add per-boundary transitions only after voice sync is working
    - design element entrances, holds, emphasis, and exits against spoken cues
+   - verify WIT-heavy and emphasis-heavy beats with direct preview screenshots or a contact sheet from runtime seek
    - create or update `DESIGN.md`
    - create or update `package.json` and `hyperframes.json`
    - copy or mirror the canonical standalone section into `hyperframes/review/section-XX.html`
    - run `lint`, `validate`, and `inspect`
    - fix blocking issues
+   - if WIT, labels, or callouts were materially changed, create direct preview screenshots or a contact sheet from runtime seek
    - do not render MP4/WebM or create video export files unless the user explicitly asks to export video
    - when the user explicitly asks for video export, run `ffprobe`; clear stale extracted frames; extract key frames from the exported MP4; inspect a contact sheet; inspect any problem frames individually
    - start or reuse the preview server on the fixed section port
@@ -548,7 +626,13 @@ A section render is ready for review when:
 - the first `5-6` seconds show the contradiction or hidden detail when the hook depends on one
 - labels are readable
 - WIT emotion is visible and useful
+- WIT density follows the voice rhythm; short sections should normally stay around `1-2` WIT beats per big scene
 - WIT is large enough to read facial emotion in Studio, direct preview screenshots, and screenshot contact sheets
+- WIT face/head/shoulders and important props do not look accidentally cropped
+- WIT does not cover labels, proof objects, or payoff text
+- payoff text, stamps, and final cards do not cover WIT's face/expression when WIT is carrying the emotional beat
+- ordinary labels hard-show on beat unless they are true emphasis moments
+- impact animation is reserved for emphasized words, proof marks, contradiction labels, or payoff text
 - red circles, arrows, and marks point to the intended object, not nearby empty space
 - decorative marks that do not clarify the voiceover have been removed
 - real/object photos keep their natural texture unless a local label background is needed for readability
@@ -569,11 +653,15 @@ Reject or stop before finishing if:
 - scene content does not match the current voiceover beat
 - the render uses fake, random, drawn, SVG, or CSS WIT when approved WIT PNGs exist
 - WIT is used as filler in every scene instead of only where it clarifies emotion
+- WIT appears on every cue or more than `2` times in a short-section big scene without a clear voice-rhythm reason
 - a user-rejected visual plan keeps controlling the remake after the user explicitly said to skip it
 - a short remake resets to a completely unrelated full-frame scene on every voice cue when the narration is still describing the same object or situation
 - a remade hook fails to show the topic object or contradiction in the first few seconds
 - red markup is decorative, meaningless, or misaligned with the object it claims to identify
 - WIT is too small to read the emotion at normal preview size
+- WIT face/head/shoulders are accidentally cropped, WIT covers the main label/proof/payoff, or payoff text covers WIT's face/expression
+- ordinary labels repeatedly fly/smash in and make the section visually dense
+- cue-critical elements appear early because delayed animation did not hide them at cue start
 - a real/object photo is globally washed out with a white overlay without a documented readability reason
 - explicit-export MP4 QA uses a contact sheet that still contains stale frames from an older cue count or render
 - transitions are added before hard-cut timing works

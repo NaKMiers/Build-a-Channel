@@ -62,7 +62,7 @@ Each section visual plan must include:
 - WIT pose plan with exact pose files and placement/scale guidance
 - markup and label plan with exact target objects
 - reference and asset plan with source status
-- HyperFrames guidance that names what the renderer must not invent and suggests inspect/MP4 QA timestamps
+- HyperFrames guidance that names what the renderer must not invent and suggests inspect plus screenshot/contact-sheet QA timestamps
 
 ## Feedback Log
 
@@ -193,7 +193,7 @@ Context:
 The user clarified that `render` is currently trusted more than `visual-plan` because weak visual plans produced foolish, unreliable renders. The approved Section 1 rebuild for `why-cheap-products-keep-getting-worse` proved the better pattern: use HyperFrames through render, but make visual-plan responsible for deciding what to show each second, sourcing/browsing references, generating support assets when needed, and handing render a trustworthy big-scene/cue-state plan.
 
 Lesson:
-Visual-plan must stop producing loose boards or mood boards. It must create render-ready plans: few persistent big scenes, low cue-state count, exact voice timing, real WIT pose filenames, meaningful labels/markup, real/generated asset decisions, and MP4 QA timestamps. Render should be able to follow the plan without inventing the main scene, timing, WIT, markup, or asset logic.
+Visual-plan must stop producing loose boards or mood boards. It must create render-ready plans: few persistent big scenes, low cue-state count, exact voice timing, real WIT pose filenames, meaningful labels/markup, real/generated asset decisions, and screenshot/contact-sheet QA timestamps. Render should be able to follow the plan without inventing the main scene, timing, WIT, markup, or asset logic.
 
 Apply next time:
 
@@ -205,7 +205,7 @@ Apply next time:
 - generate text-free/logo-free support images only after real references define the scene
 - choose exact WIT PNG pose filenames and size/placement guidance
 - remove decorative or meaningless red markup from the plan
-- include suggested `inspect --at` timestamps and MP4 QA frame timestamps for render
+- include suggested `inspect --at` timestamps and screenshot/contact-sheet QA timestamps for render; include MP4 QA frame timestamps only when export is explicitly requested
 
 Promote to shared memory:
 no; keep as visual-plan execution memory unless multiple future sections confirm it as a channel-wide production rule.
@@ -251,6 +251,93 @@ Apply next time:
 
 Promote to shared memory:
 no for now; keep as visual-plan memory until repeated across more sections.
+
+### 2026-06-11 - Plan WIT As Emotional Subject And Motion As Intent
+
+Classification: `Visual plan lesson`
+
+Context:
+During Section 1 review for `why-cheap-products-keep-getting-worse`, the render improved only after WIT stopped being a small corner sticker and became the emotional subject of the frame. The user also rejected dense animation where many text blocks flew in sequentially; they wanted ordinary labels to appear exactly on the spoken beat and only emphasized words such as `$9` to smash in. Some WIT layouts looked broken because the head, face, or shoulder was cropped by the frame.
+
+Lesson:
+Visual-plan must decide WIT emotion, scale, placement, safe crop, and cue motion before render starts. It is not enough to name a WIT pose. For each cue, plan whether the element is static, hard-shows on the spoken beat, or uses impact motion. WIT should be planned as an oversized emotional read when the joke depends on feeling, often `1/3` to `1/2` of the frame, while preserving text/evidence readability and avoiding accidental face/head/shoulder crops.
+
+Apply next time:
+
+- add a `Motion Type` for every cue state: `static`, `hard-show`, `impact`, or `transition`
+- reserve smash/stamp/pop motion for emphasized spoken words, proof marks, and payoff labels
+- plan ordinary supporting labels to hard-show on the voice cue instead of animating every label
+- specify WIT pose file, emotion, screen region, scale target, and safe crop/margin
+- treat WIT as the emotional subject when the beat needs suspicion, panic, confusion, betrayal, or payoff
+- if the approved WIT library lacks the right funny/emotional pose, plan a new WIT asset in shared/project assets instead of forcing a weak pose
+- include screenshot/contact-sheet QA timestamps for WIT-heavy beats; use MP4 QA timestamps only when export is explicitly requested
+
+Promote to shared memory:
+yes; summarized in `.agents/_shared/systems/visual-production.md` because it applies across future sections and projects.
+
+### 2026-06-11 - Plan WIT Rhythm, Not WIT Per Cue
+
+Classification: `Visual plan lesson`
+
+Context:
+After WIT was enlarged and made more expressive in Section 1 of `why-cheap-products-keep-getting-worse`, the user said `7` WIT poses in a `21.205s` section felt dense. The render was fixed by reducing WIT to `4` appearances: `2` in the opening chair big scene, `1` in the failure big scene, and `1` in the final cost/payoff big scene.
+
+Lesson:
+Visual-plan must plan WIT rhythm, not just WIT pose choice. WIT should appear when the voice needs an emotional punctuation beat. Explanatory labels, props, and red markup should carry many cue states without WIT. For short sections, start with about `1-2` WIT beats per persistent big scene and only exceed that with a clear voice-rhythm reason.
+
+Apply next time:
+
+- count WIT beats per big scene in the WIT Pose Plan
+- avoid assigning WIT to every cue state
+- let WIT appear for setup reaction, escalation/reversal, or payoff rather than all three if the section is very short
+- keep WIT large and expressive when it appears, but reduce frequency before reducing emotion
+- include a `WIT density note` in section visual plans
+
+Promote to shared memory:
+yes; summarized in `.agents/_shared/systems/visual-production.md` and `.agents/_shared/channel/learning-log.md`.
+
+### 2026-06-11 - Visual Plan Must Prevent Render Review Failures
+
+Classification: `Visual plan lesson`
+
+Context:
+The user asked to update `visual-plan` so future plans avoid the Section 1 review problems before render starts: dense cue animation, WIT overuse, weak/small WIT placement, broken WIT crop, text overlap, meaningless markup, and render needing to guess the correct motion or placement.
+
+Lesson:
+Visual-plan must include a review-prevention pass, not only a scene table. A render-trustworthy plan must specify motion type, WIT density, WIT crop guard, no-WIT breathing beats, exact markup targets, and screenshot/contact-sheet QA timestamps. If render still has to decide these fundamentals, the visual plan is incomplete.
+
+Apply next time:
+
+- require `Motion Type` for every cue
+- require a `WIT density note`
+- require safe crop/margin guidance for WIT
+- require no-WIT breathing beats where explanation should be carried by text/props/markup
+- require exact target object for every red mark
+- require review-prevention checklist before handoff
+
+Promote to shared memory:
+no; the channel-wide summary already lives in shared visual-production rules.
+
+### 2026-06-11 - Payoff Text Must Not Cover WIT Emotion
+
+Classification: `Visual plan lesson`
+
+Context:
+In Section 1 of `why-cheap-products-keep-getting-worse`, the final payoff card `FUTURE NOT INCLUDED` and `SMALL PROBLEM` stamp initially covered the oversized money-panic WIT. The user flagged that the text was hiding WIT's expression in the final emotional beat.
+
+Lesson:
+Visual-plan collision checks must work both ways. It is not enough to ensure WIT does not cover labels or proof. When WIT is the emotional subject, payoff text, stamps, tags, and cards must not cover WIT's face, eyes, mouth, or key prop. Plan separate text and WIT zones for final/payoff beats.
+
+Apply next time:
+
+- reserve a clean WIT emotion zone for payoff/reaction boards
+- keep final cards/stamps readable but away from WIT face/expression
+- specify where WIT sits and where text can safely land
+- add final/payoff beat timestamps to screenshot/contact-sheet QA suggestions
+- reject visual plans where the final memory frame hides WIT's emotion under text
+
+Promote to shared memory:
+yes; summarized in shared visual-production and learning log.
 
 ## Feedback Entry Template
 

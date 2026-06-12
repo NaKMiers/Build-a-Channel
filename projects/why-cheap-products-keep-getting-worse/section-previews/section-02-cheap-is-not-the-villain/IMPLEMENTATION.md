@@ -7,12 +7,12 @@ Section:
 `Section 2: Cheap Is Not The Villain`
 
 Status:
-`revised generated-base preview running on fixed section port`
+`review-adjusted collision-safe preview running on fixed section port`
 
 ## Result
 
 - Preview project: `projects/why-cheap-products-keep-getting-worse/section-previews/section-02-cheap-is-not-the-villain/`
-- Source: `02-script.md` + `04-voiceover.md` + revised `05-visual-plan.md` + Section 2 visual plan and reference board
+- Source: `02-script.md` + `04-voiceover.md` + `05-visual-plan.md` + render-side review-prevention pass
 - Port: `1002`
 - Studio URL: `http://localhost:1002/#project/section-02-cheap-is-not-the-villain`
 - Direct composition URL: `http://localhost:1002/api/projects/section-02-cheap-is-not-the-villain/preview/comp/index.html`
@@ -20,71 +20,86 @@ Status:
 - Voiceover: `section-02-cheap-is-not-the-villain-david23-am_eric-0.84.mp3`
 - Visual plan: `visual-plan/section-02-cheap-is-not-the-villain/section-02-cheap-is-not-the-villain-visual-plan.md`
 
-## Board Plan Implemented
+## Big Scene / Cue Plan Implemented
 
-| Board | Local Time | Voice Cue | Visual | Key Animation | Source Plan |
-|---:|---:|---|---|---|---|
-| 1 | `0.000-2.700` | `not about saying cheap things are bad` | Real tag photo base, `CHEAP`, `BAD?`, red cross-out, suspicion WIT. | static hard cut | visual plan cue 1 |
-| 2 | `2.700-5.900` | `unfair... emotionally expensive` | Same tag correction board plus fake receipt, `EMOTIONAL TAX`, `UNFAIR`, empty-wallet WIT. | static hard cut | visual plan cue 2 |
-| 3 | `5.900-7.790` | `Some affordable products are great.` | Generated two-box base, left box labeled `AFFORDABLE + WORKS`, check badge, pointing WIT. | static hard cut | visual plan cue 3 |
-| 4 | `7.800-10.700` | `regular products wearing a nicer jacket` | Same generated two-box base, right box gets rebuilt jacket overlay, `EXPENSIVE != MAGIC`, deadpan WIT. | static hard cut | visual plan cue 4 |
-| 5 | `10.700-13.100` | `real question is smaller` | Generated cutaway base, `THE REAL QUESTION`, `LOOK INSIDE`, thinking WIT. | static hard cut | visual plan cue 5 |
-| 6 | `13.100-16.400` | `less tomorrow inside them` | Same generated cutaway base, `MISSING TOMORROW`, four future slots. | static hard cut | visual plan cue 6 |
-| 7 | `16.400-18.700` | `Less strength. Less repair.` | Strength slot cracks first; repair slot appears inside the same cue at `17.45s`. | one deterministic `tl.set` reveal for repair | visual plan cue 7 |
-| 8 | `18.700-19.800` | `Less support.` | Support slot becomes the focused missing piece. | static hard cut | visual plan cue 8 |
-| 9 | `19.800-22.315` | `Less time before... buy the same thing again.` | Time slot focuses; receipt loop points to a new box; `BUY AGAIN SOON`; defeated WIT. | static hard cut | visual plan cue 9 |
+| Cue | Local Time | Voice Cue | Big Scene | What Changes | Motion Type | WIT Placement / Crop Guard | Label / Markup | Sync Status |
+|---:|---:|---|---|---|---|---|---|---|
+| 1 | `0.000-2.700` | `cheap things are bad` | Wrong-villain correction | Real blank tag crop shows `CHEAP`, `BAD?`, red X, and learner-friendly anchor `CHEAP IS NOT BAD`. | static | Large price-tag-suspicion WIT on right; face clear. | Red X targets `BAD?`, not `CHEAP`. | matched |
+| 2 | `2.700-5.900` | `unfair... emotionally expensive` | Wrong-villain correction | `BAD?` and red X clear; `UNFAIR`, fake shopping receipt, and `EMOTIONALLY EXPENSIVE` appear in separate zones. | phrase-timed hard-show | Same WIT holds; no extra WIT reaction added. | Receipt uses fake text only; `UNFAIR` no longer overlaps the emotion label. | matched |
+| 3 | `5.900-7.800` | `Some affordable products are great.` | Fair comparison | Generated two-box base shows `AFFORDABLE + WORKS` and `OK`. | static | No WIT; box and check carry the beat. | No red markup. | matched |
+| 4 | `7.800-10.700` | `nicer jacket` | Fair comparison | Right box gets rebuilt generic jacket, `REGULAR PRODUCT`, `NICE JACKET`, and `EXPENSIVE IS NOT MAGIC`. | hard-show | Deadpan WIT enters lower-right; face not covered. | `EXPENSIVE IS NOT MAGIC` moved left of the jacket so it remains readable. | matched |
+| 5 | `10.700-13.100` | `real question is smaller` | Missing-tomorrow autopsy | Generated cutaway base opens with `THE REAL QUESTION`, small annoyance note, `LOOK INSIDE`, and arrow. | static | No WIT yet; object inspection leads. | Arrow points to compartments. | matched |
+| 6 | `13.100-16.400` | `less tomorrow inside them` | Missing-tomorrow autopsy | Question labels clear; `MISSING TOMORROW`, four compartments, and suspicious WIT appear. | phrase-timed hard-show | Suspicious WIT right side, about one-third frame height, safe crop. | Main reframe label dominates. | matched |
+| 7 | `16.400-18.700` | `Less strength. Less repair.` | Missing-tomorrow autopsy | Strength slot changes to `LESS STRENGTH`; repair slot changes later at `17.45s` to `LESS REPAIR` with a small red screw circle. | phrase-timed hard-show | Same suspicious WIT holds; no WIT spam. | Decorative crack removed after frame QA because it covered text. | matched |
+| 8 | `18.700-19.800` | `Less support.` | Missing-tomorrow autopsy | Support slot changes to `LESS SUPPORT` with dark support-light mark. | hard-show | Same WIT holds. | No extra arrows. | matched |
+| 9 | `19.800-22.315` | `Less time before... buy the same thing again.` | Missing-tomorrow autopsy | Time slot changes to `LESS TIME`; buy-again box, receipt loop, and `BUY AGAIN SOON` appear. | hard-show | Suspicious WIT clears; defeated WIT appears bottom-right without text covering face. | Loop arrow connects product to new box. | matched |
+
+## Render Review-Prevention Pass
+
+- voice cue map completed: `yes`
+- big-scene sanity checked: `yes - kept 3 persistent big scenes`
+- cue density checked: `yes - reduced timed clip density by grouping overlays per big scene`
+- motion density checked: `yes - no decorative transitions; phrase-timed hard-shows only`
+- WIT density: `4 WIT beats total across 22.315s; no WIT on every cue`
+- WIT crop/collision checked: `yes - final review-pass-4 contact sheet checked text-over-WIT and WIT-over-text directions`
+- markup target checked: `yes - removed crack that hurt readability; red X and repair circle target exact objects`
+- scene differentiation checked: `yes - real tag, generated comparison, and generated cutaway remain distinct`
+- HyperFrames mechanics checked: `yes - root duration, audio clip, deterministic GSAP timeline, data-start/data-duration/data-track-index`
+- render decisions made beyond visual plan: `reduced WIT appearances, grouped overlays into 3 timed scene overlays, changed opening anchor to CHEAP IS NOT BAD, removed decorative crack after snapshot QA, moved UNFAIR and EXPENSIVE IS NOT MAGIC to prevent label collisions`
 
 ## Voice Sync Map
 
 | Time | Spoken Cue | On-Screen Element | Action | Sync Status |
 |---:|---|---|---|---|
-| `0.000` | `cheap things are bad` | `CHEAP != BAD` and red cross-out | visible immediately | matched |
-| `2.700` | `unfair... emotionally expensive` | fake receipt and `EMOTIONAL TAX` | cue visible | matched |
-| `5.900` | `affordable products are great` | generated two-box comparison, left good product | new big scene | matched |
-| `7.800` | `nicer jacket` | right product jacket overlay and deadpan WIT | cue visible | matched |
-| `10.700` | `smaller... annoying` | generated cutaway base with `LOOK INSIDE` | new big scene | matched |
-| `13.100` | `less tomorrow inside them` | `MISSING TOMORROW` cutaway slots | cue visible | matched |
-| `16.400` | `Less strength` | cracked strength slot | cue visible | matched |
-| `17.450` | `Less repair` | repair slot and screw circle | cue-level reveal | matched |
-| `18.700` | `Less support` | support slot focus | cue visible | matched |
-| `19.800` | `buy the same thing again` | receipt loop and new box | cue visible | matched |
+| `0.000` | `cheap things are bad` | `CHEAP`, `BAD?`, red X, `CHEAP IS NOT BAD` | visible immediately | matched |
+| `2.700` | `unfair... emotionally expensive` | `UNFAIR`, fake receipt, `EMOTIONALLY EXPENSIVE` | hard-show | matched |
+| `5.900` | `affordable products are great` | two boxes, `AFFORDABLE + WORKS`, `OK` | hard cut | matched |
+| `7.800` | `nicer jacket` | jacket overlay, `NICE JACKET`, `EXPENSIVE IS NOT MAGIC`, deadpan WIT | hard-show | matched |
+| `10.700` | `real question is smaller` | cutaway base, `THE REAL QUESTION`, `LOOK INSIDE` | hard cut | matched |
+| `13.100` | `less tomorrow inside them` | `MISSING TOMORROW`, compartment labels, suspicious WIT | hard-show | matched |
+| `16.400` | `Less strength` | `LESS STRENGTH` slot | hard-show | matched |
+| `17.450` | `Less repair` | `LESS REPAIR` slot and screw circle | hard-show | matched |
+| `18.700` | `Less support` | `LESS SUPPORT` slot | hard-show | matched |
+| `19.800` | `Less time... buy the same thing again` | `LESS TIME`, receipt loop, new box, defeated WIT | hard-show | matched |
 
 ## Transition Plan
 
 | From | To | Transition | Reason | Sync Risk | Decision |
 |---|---|---|---|---|---|
-| cue | next cue in same big scene | hard cut or static overlay replacement | approved section style; visual continuity comes from the persistent base image | low | keep |
-| big scene | next big scene | hard cut | narration moves to a new object or mechanism | low | keep |
+| Big scene 1 | Big scene 2 | hard cut | narration moves from fairness correction to product comparison | low | keep |
+| Big scene 2 | Big scene 3 | hard cut | narration moves from comparison joke to real reframe | low | keep |
+| Cues inside big scenes | next cue | phrase-timed hard-show | supports voice sync without noisy animation | low | keep |
 
 ## Element Motion Notes
 
-- Entrances: `none`
-- Holds: `each cue is readable as a static paused frame`
-- Emphasis: `red cross-out, unfair stamp, check badge, rebuilt jacket, slot focus cards, receipt loop`
-- Exits: `none before cue replacement`
-- Repeated effects avoided: `no repeated pop-ins or default transitions`
-- One internal timing action: `repair slot opacity switches on at 17.45s so Less repair does not appear too early while keeping the cue-state count at 9`
+- Entrances: `hard-show only`
+- Holds: `base scene and WIT hold while small cue elements change`
+- Emphasis: `red X, UNFAIR stamp, OK badge, jacket gag, missing-tomorrow slot changes, buy-again loop`
+- Exits: `bad accusation clears before UNFAIR appears; suspicious WIT clears before final defeated WIT`
+- Repeated effects avoided: `no repeated pop/fly-ins; no default transitions`
+- Hard-show vs impact decisions: `all ordinary labels hard-show; no impact animation was needed for this conceptual reframe`
+- WIT scale/crop checks: `runtime-seek contact sheet reviewed at 0.4, 2.9, 8.8, 14.4, 20.8, and 22.0`
 
 ## Assets
 
 - Shared asset folder: `projects/why-cheap-products-keep-getting-worse/assets/`
 - Section assets: minimal hardlinked working set under `section-previews/section-02-cheap-is-not-the-villain/assets/`
 - WIT source: `assets/wit/manifest.json`
-- WIT poses used: `price-tag-suspicion`, `empty-wallet`, `pointing-right`, `deadpan-side-eye`, `thinking`, `suspicious`, `tiny-defeated`
+- WIT poses used: `price-tag-suspicion`, `deadpan-side-eye`, `suspicious`, `tiny-defeated`
 - Direct real assets used: `real-blank-tag-pexels-padrinan.jpg`
 - Direct generated support assets used: `fair-comparison-two-boxes-generated.png`, `missing-tomorrow-cutaway-generated.png`
-- Mockup/reference-only assets not used directly: `real-receipt-pexels-towfiqu-barbhuiya.jpg`, `real-black-jacket-hanger-pexels-mishchenko.jpg`, `real-plain-white-boxes-pexels-dalprat.jpg`
+- Reference-only assets not used directly: `real-receipt-pexels-towfiqu-barbhuiya.jpg`, `real-black-jacket-hanger-pexels-mishchenko.jpg`, `real-plain-white-boxes-pexels-dalprat.jpg`
 - Attribution: `projects/why-cheap-products-keep-getting-worse/assets/ATTRIBUTION.md`
 
 ## Verification
 
-- lint: `pass with 2 non-blocking warnings: duplicate media discovery risk from repeated static WIT/image references, and dense cue track from 9 timed cue clips`
-- validate: `pass; no console errors; 225 text elements pass WCAG AA`
+- lint: `pass; 0 errors, 0 warnings`
+- validate: `pass; no blocking errors; 10 non-blocking contrast sampler warnings from the small final receipt text`
 - inspect: `pass; 0 layout issues at 0.4, 2.8, 5.0, 6.6, 8.8, 11.4, 14.4, 16.7, 17.8, 18.9, 20.8, 22.0`
-- render: `not requested`
-- preview server: `running on port 1002; direct composition URL returned HTTP 200`
-- visual thumbnail check: `latest generated-base thumbnails inspected at comparison, cutaway, and support beats`
+- direct preview screenshots/contact sheet: `snapshots/review-pass-4/contact-sheet.jpg` reviewed after collision fixes
+- export/render, only if explicitly requested: `not requested; no MP4/WebM generated`
+- preview server: `port 1002 reused; endpoints returned HTTP 200 after update`
 
 ## Notes
 
-This rerender fixes the earlier visual-plan/render mismatch. The prior Section 2 preview used CSS-built boxes and a CSS-built cutaway; this version uses the revised visual plan's generated two-box comparison base and generated missing-tomorrow cutaway base directly, then adds all labels, WIT, red marks, and jokes in HyperFrames.
+This update is a render-side quality recovery pass, not a script or voiceover change. It keeps the Section 2 visual plan's real/generated asset choices but improves execution by reducing timed clip density, reducing WIT frequency, removing decorative clutter, and making the opening correction more learner-friendly.

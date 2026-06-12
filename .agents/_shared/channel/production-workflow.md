@@ -63,6 +63,7 @@ Render port rule:
 - unified/final preview uses `localhost:1000`
 - section `N` preview uses `localhost:1000 + N`
 - do not put all sections in one localhost during section review
+- render uses visual-plan as the main handoff, but must still run its own HyperFrames/review-prevention pass before building HTML
 
 ## Startup Read Set
 
@@ -93,6 +94,8 @@ Use lightweight gates instead of many separate checklists:
 - Hook: the first `10` seconds must show the situation, contradiction, WIT emotion, and bigger question.
 - Script: the script must teach the topic first and stay learner-friendly by design.
 - Visuals: each board must carry one thought, one readable label, and one clear joke or evidence job.
+- Visual motion: ordinary cue labels should hard-show on the spoken beat; impact animation belongs only on emphasized words, evidence, or payoff.
+- WIT QA: when WIT appears, its emotion must read clearly, the face/head/shoulders must not look accidentally cropped, WIT should not appear so often that it fights the voice rhythm, and text/payoff/stamps must not cover WIT's face/expression.
 - Audio: narration is the product; music and sound effects are support.
 - Review: paused frames should be understandable, readable, and worth looking at.
 - Learning: after publishing, record only reusable lessons.
@@ -103,7 +106,11 @@ HyperFrames is the active render path.
 
 Use simple board scenes, WIT poses, voiceover, hard cuts, cue-timed labels, red markup, and handwritten-looking text. Prefer clear static boards before adding motion.
 
+During normal preview/review fixes, use HyperFrames checks plus direct preview screenshots/contact sheets. Do not export MP4/WebM unless the user explicitly asks for a video file.
+
 Each rendered section should live in its own HyperFrames preview project under `projects/<slug>/section-previews/section-XX-kebab-section-name/`.
+
+Manual Studio edit rule: if Anh Khoa edits a localhost/HyperFrames Studio section manually, the live `section-previews/.../index.html` becomes canonical for the next update. Future agents must read and diff it before editing, must not restore from `hyperframes/review/` or older visual plans, and should remove only the specific accidental effect/duration artifact that was identified.
 
 Legacy Remotion notes are historical only. Do not revive Remotion production unless the user explicitly asks.
 

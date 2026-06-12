@@ -70,42 +70,38 @@ Do not use removed `original-wit-24`, older `core-24`, or `comedy-core` WIT as c
 
 ## Current Active Video
 
-- Active folder: `projects/why-everyone-pretends-to-be-busy`
-- Current step: Section 1 Hook second replacement implemented; awaiting user review
-- Section 1 replacement composition: `Section01Hook`
-- Section 1 replacement runtime: `24.085s`
-- Section 1 replacement preview: `http://localhost:1001/#project/section-01-hook`
-- Section 1 replacement render: `MP4 removed by user request; use preview only unless user explicitly asks to export video`
-- Section 1 current style: real channel WIT pose PNGs, simple illustrative static boards, hard cuts only, old visual plan skipped
+- Active folder: `projects/why-cheap-products-keep-getting-worse`
+- Current step: Section 2 render review/update on localhost; Section 1 Hook and Section 3 previews also exist
+- Section 1 composition: `Section01Hook`
+- Section 1 runtime: `21.205s`
+- Section 1 preview: `http://localhost:1001/#project/section-01-hook`
+- Section 1 source of truth: `projects/why-cheap-products-keep-getting-worse/section-previews/section-01-hook/index.html`
+- Manual Studio preservation: Anh Khoa made direct localhost/Studio edits after the reduced-WIT pass. Future Section 1 updates must preserve this `index.html`, diff before editing, and never overwrite it from an older review mirror or visual plan.
+- VFX cleanup state: accidental `vfx-liquid-glass` artifact was removed and root duration restored to the voiceover runtime.
+- Section 1 render: `MP4 not requested; use preview only unless user explicitly asks to export video`
+- Section 1 current style: connected big scenes, reduced cue count, low animation density, large but sparse WIT emotional beats
+- Section 2 preview: `http://localhost:1002/#project/section-02-cheap-is-not-the-villain`
+- Section 2 current style: `3` connected big scenes, grouped cue overlays, reduced WIT density, phrase-timed hard-shows, no MP4 export
 - Section preview rule: review and approve one section at a time; assemble sections only after the user asks
-- Section asset rule: use one video-level shared asset library at `projects/why-everyone-pretends-to-be-busy/assets`; local section `assets` folders should be junctions, not copied media folders
-
-Legacy active-project preview URLs when needed:
-
-These belong to the existing `why-everyone-pretends-to-be-busy` work that predates the new `render` skill port rule. Future `render` skill runs should use `localhost:1000` for unified preview and `localhost:1000 + section number` for section previews.
-
-- Section 1 Studio: `http://localhost:3021/#project/section-01-hook`
-- Section 2 Studio: `http://localhost:3022/#project/section-02-reframe`
-- Section 3 Studio: `http://localhost:3023/#project/section-03-busy-status`
+- Section asset rule: use one video-level shared asset library at `projects/why-cheap-products-keep-getting-worse/assets`; local section previews use minimal hardlinked working sets on this Windows HyperFrames setup
 
 Key current project files:
 
-- `projects/why-everyone-pretends-to-be-busy/06-review.md`
-- `projects/why-everyone-pretends-to-be-busy/12-section-03-visual-plan.md`
-- `projects/why-everyone-pretends-to-be-busy/13-section-03-implementation.md`
-- `projects/why-everyone-pretends-to-be-busy/hyperframes/review/section-01.html`
-- `projects/why-everyone-pretends-to-be-busy/section-previews/section-01-hook/index.html`
-- `projects/why-everyone-pretends-to-be-busy/hyperframes/review/section-02.html`
-- `projects/why-everyone-pretends-to-be-busy/hyperframes/review/section-03.html`
+- `projects/why-cheap-products-keep-getting-worse/06-production-board.md`
+- `projects/why-cheap-products-keep-getting-worse/section-previews/section-01-hook/index.html`
+- `projects/why-cheap-products-keep-getting-worse/section-previews/section-01-hook/IMPLEMENTATION.md`
+- `projects/why-cheap-products-keep-getting-worse/hyperframes/review/section-01.html`
+- `projects/why-cheap-products-keep-getting-worse/section-previews/section-02-cheap-is-not-the-villain/index.html`
+- `projects/why-cheap-products-keep-getting-worse/section-previews/section-03-the-price-tag-speaks-first/index.html`
 
 ## Current Production Lesson
 
-For short hooks, start with `6-8` static boards: one real-life image or object, one WIT reaction, one main label, and hard cuts.
+For short hooks, start with a few persistent big scenes and `6-8` cue states/static boards: one real-life image or object, one WIT reaction when emotion matters, one main label, and hard cuts.
 
-Do not add transition overlays, rapid label pop-ins, object pile-ons, or WIT shake unless the static version is approved and the motion has a clear joke or clarity job.
+Do not add transition overlays, rapid label pop-ins, object pile-ons, or WIT shake unless the static version is approved and the motion has a clear joke or clarity job. Ordinary labels can hard-show on the spoken beat; reserve smash/pop/stamp motion for emphasized words, proof marks, and payoff phrases. WIT should be large enough for emotion to read, must not look accidentally cropped, and should usually appear only `1-2` times per persistent big scene in short sections. Check text/WIT collision both ways: WIT must not cover labels/proof, and payoff text or stamps must not cover WIT's face/expression.
 
 ## Best Next Steps
 
-1. Review the rebuilt Section 1 Hook replacement at `http://localhost:1001/#project/section-01-hook`.
-2. Write feedback into `projects/why-everyone-pretends-to-be-busy/06-review.md`.
+1. Review the manually adjusted Section 1 Hook at `http://localhost:1001/#project/section-01-hook`.
+2. If Section 1 needs another update, preserve `section-previews/section-01-hook/index.html` as canonical before editing.
 3. Continue to the next section only after the current section is approved.

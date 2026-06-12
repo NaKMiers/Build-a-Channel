@@ -71,6 +71,10 @@ Working rule:
 
 `WIT is funniest when the system is happening to him.`
 
+Production rule:
+
+`When WIT appears, the emotion must read immediately.`
+
 Use WIT for:
 
 - hooks
@@ -86,6 +90,7 @@ Do not let WIT:
 - become the whole topic
 - smile during suspicious or negative beats
 - copy another creator's exact character style
+- look accidentally broken through cropped face, head, shoulders, or important props
 
 ## WIT Modes
 
@@ -100,6 +105,10 @@ Suffering WIT:
 - good for hooks, punchlines, thumbnails, and retention beats
 
 For comedy-heavy videos, plan a visible Suffering WIT moment every `20-30` seconds when it helps clarity.
+
+For render frames, WIT can be large: `1/3` to `1/2` of the frame is acceptable on emotional beats when it does not cover the label, evidence, or payoff. Prefer exaggerated, goofy, readable expressions over small neutral corner placement.
+
+Use WIT with rhythm. In short sections, WIT should usually appear as `1-2` emotional beats per persistent big scene, not as a reaction on every cue.
 
 ## Thumbnail Rules
 
@@ -122,4 +131,3 @@ Rules:
 Thumbnail WIT should answer:
 
 `How does this topic feel to a normal person?`
-

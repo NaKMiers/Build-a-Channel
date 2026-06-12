@@ -25,10 +25,23 @@ Do not treat this as a loose mood board. It is a timed scene plan, asset plan, h
 The current standard is based on the approved Section 1 rebuild for `why-cheap-products-keep-getting-worse`:
 
 ```text
-few persistent big scenes -> small voice-timed cue changes -> real/local assets -> readable WIT -> exact MP4-frame QA handoff
+few persistent big scenes -> small voice-timed cue changes -> real/local assets -> readable emotional WIT -> screenshot/contact-sheet QA handoff
 ```
 
 If a visual plan would still force `render` to invent the main scene, timing, joke, asset choice, WIT pose, or markup placement, the plan is not finished.
+
+The plan must also prevent the most common render-review failures before they happen:
+
+- too many full-scene cuts for a short section
+- too many cue overlays appearing at once
+- every text block animating instead of appearing calmly on beat
+- WIT appearing on every cue or as a tiny corner sticker
+- WIT face/head/shoulders accidentally cropped
+- WIT covering labels, proof, or main objects
+- payoff text, stamps, or labels covering WIT's face/expression when WIT is the emotional subject
+- red markup that points nowhere or marks obvious details
+- generated/real references reused even when adjacent scenes look too similar
+- HyperFrames needing to guess timing, placement, asset choice, or motion type
 
 This skill is section-first. After voiceover, production branches by section:
 
@@ -260,6 +273,7 @@ Every selected section must include these four layers:
    - exact local start/end times or approximate times derived from section duration
    - what changes on screen at each cue
    - what stays on screen from the big scene
+   - whether each cue should hard-show, smash/stamp/pop for emphasis, or stay static
 3. `Reference And Asset Plan`
    - real/local/generated references for each big scene
    - production decision for each asset: direct asset, mockup target, support base, inspiration only, or reject
@@ -268,9 +282,11 @@ Every selected section must include these four layers:
    - composition target
    - expected cue-state count
    - WIT pose files and scale/placement guidance
+   - WIT safe-crop guidance: face/head/shoulders and important props must not look accidentally cut
    - exact labels and markup jobs
+   - motion density rule: ordinary labels hard-show on beat; impact motion only for emphasized beats
    - asset paths
-   - inspect timestamps and MP4 QA frame timestamps
+   - inspect timestamps and screenshot/contact-sheet QA timestamps; MP4 QA timestamps only when export is explicitly requested
    - list of things HyperFrames must not invent
 
 ### Big Scene And Cue State Rules
@@ -319,10 +335,24 @@ Every cue state must include:
 - voice cue phrase
 - on-screen change
 - hold duration
+- planned motion type: `static`, `hard-show`, `impact`, or `transition`
 - reason the cue exists
 
 The first `3s` of a hook must show the topic object/situation.
 The first `5-6s` of a hook should show the contradiction or hidden detail when the section depends on one.
+
+### Motion Intent Rules
+
+Visual-plan must decide motion intent before render writes HTML.
+
+Use these categories:
+
+- `static`: element is present for the whole cue or scene.
+- `hard-show`: element appears instantly on the spoken beat.
+- `impact`: element uses a short smash, stamp, shake, pop, snap, or marker action.
+- `transition`: scene-level movement between persistent big scenes.
+
+Default to `hard-show` for ordinary labels, notes, props, and WIT appearances. Use `impact` only for emphasized spoken words, proof marks, contradiction labels, and payoff phrases. Do not ask render to animate every sequential label.
 
 ### WIT Planning Rules
 
@@ -341,14 +371,25 @@ For each WIT appearance, specify:
 - local time range
 - screen region
 - relative size target
+- safe crop rule: face/head/shoulders and important props fully readable unless intentionally peeking
 - why WIT is needed
 
 WIT is useful on emotional beats: suspicion, betrayal, panic, confusion, judgment, evidence, trapped, payoff.
 
 Do not use WIT as filler in every cue state.
+Do not plan WIT for every cue just because the pose library has enough poses. For short sections, default to about `1-2` WIT beats per persistent big scene, then adjust only if the voice rhythm needs more emotional reactions.
 Do not draw WIT in HTML/SVG/CSS.
 Do not invent random WIT.
-If WIT is planned, it must be large enough that facial emotion reads in a 1080p Studio preview and exported MP4 contact sheet.
+If WIT is planned, it must be large enough that facial emotion reads in a 1080p Studio preview and screenshot/contact-sheet review. For emotional beats, plan WIT around `1/3` to `1/2` of the frame when layout allows, and larger only when it strengthens the joke without blocking labels or evidence.
+When WIT is the emotional subject of a payoff or reaction beat, plan a clean WIT emotion zone. Payoff text, stamps, tags, and labels must not cover WIT's face, eyes, mouth, or key prop; solve this with separate screen regions, not by hoping render can layer around it later.
+If the current approved pose library cannot express the beat, plan a new WIT pose asset and save it into the shared/project WIT asset library instead of settling for a weak pose.
+
+Every WIT plan must include a density note:
+
+- total WIT beats in the section
+- WIT beats per big scene
+- why any big scene exceeds `2` WIT beats
+- which cue states intentionally have no WIT so the section can breathe
 
 ### Markup And Label Rules
 
@@ -360,15 +401,35 @@ Use:
 - one key label per cue state when possible
 - red markup only for exact evidence, correction, reveal, or punchline
 - arrows/circles only when they point to a specific real object or detail
+- hard-show timing for ordinary sequential labels
+- smash, stamp, shake, or pop only for words the voice truly emphasizes or for payoff/evidence beats
 
 Avoid:
 
 - meaningless red boxes/circles/leg marks
 - marking an obvious detail just because the voice names it
 - labels that repeat the narration without adding clarity or joke value
+- animating every label merely because it appears sequentially
 - white wash overlays over real/object photos unless required for readability
 
 If the image already proves the point, use a label instead of decorative annotation.
+
+### Review-Prevention Checklist
+
+Before writing the final section visual plan, run this self-check and fix the plan if any answer is weak:
+
+- Voice sync: does every cue map to the phrase that triggers it?
+- Big-scene rhythm: does a short hook avoid sprinting through unrelated full-screen boards?
+- Cue density: does each cue add only one or two meaningful changes?
+- Motion density: are ordinary labels planned as `hard-show`, not animated decoration?
+- Emphasis: are smash/stamp/pop actions reserved for words or proof the voice stresses?
+- WIT rhythm: does WIT appear only where the emotion changes or peaks?
+- WIT size: will the expression read at screenshot/contact-sheet size?
+- WIT crop: are face/head/shoulders and important props safely inside frame or intentionally peeking?
+- Text/WIT collision: does WIT avoid covering labels, main evidence, and payoff text, and do payoff text/stamps avoid covering WIT's face/expression?
+- Markup meaning: does every arrow/circle/underline point to a real target and explain the line?
+- Visual differentiation: do non-callback big scenes avoid repeating the same visual language?
+- HyperFrames readiness: can render build without inventing main scenes, timing, WIT choices, label text, markup placement, or motion type?
 
 ## Browsing And Asset Rules
 
@@ -549,7 +610,8 @@ For each selected section, plan:
 - voice-sync cues
 - asset/source safety notes
 - render / HyperFrames implementation guidance
-- MP4 QA frame timestamps for render to extract
+- screenshot/contact-sheet QA timestamps for render to verify
+- MP4 QA frame timestamps only when the user explicitly requests an export
 - approval checks
 
 Keep scenes simple. When a section gets abstract, return to a concrete object.
@@ -580,6 +642,7 @@ The plan also fails if it creates too many full-scene cuts for a short section. 
      - decide attention hook, retention risk, joke rhythm, and visual payoff
      - decide what must be shown, when it appears, and how it changes on screen
      - remove cue states that only repeat the narration without adding clarity, evidence, emotion, or joke value
+     - mark each cue state with a motion type: `static`, `hard-show`, `impact`, or `transition`
    - run the Visual Reference Pass:
      - browse for real-life internet images, object/material references, UI patterns, or visual benchmarks for each big scene first
      - inspect/download useful real images only when source safety is acceptable
@@ -590,16 +653,21 @@ The plan also fails if it creates too many full-scene cuts for a short section. 
    - run the WIT Pass:
      - inspect the project `assets/wit/manifest.json` when present, otherwise inspect approved shared WIT manifest
      - choose exact WIT pose filenames only for cue states that need emotional clarity
+     - count WIT appearances per big scene and reduce them if WIT starts reacting to every cue
      - specify placement and scale large enough for facial emotion to read
+     - specify crop guard and label/evidence collision risk for every WIT beat
    - run the Markup Pass:
      - specify only meaningful labels, arrows, circles, stamps, or red corrections
      - delete decorative or obvious marks
      - define exact target object for every callout
    - run the Render Handoff Pass:
      - list big scenes and cue states with local timestamps
+     - list WIT density, motion density, and known no-WIT breathing beats
      - list asset paths/prompts and what render must not invent
      - list suggested `inspect --at` timestamps
-     - list suggested MP4 QA frame timestamps, including any likely problem frames
+     - list suggested screenshot/contact-sheet QA timestamps, including any likely problem frames
+     - list MP4 QA frame timestamps only when export is explicitly requested
+   - run the Review-Prevention Checklist and revise before handoff
    - write `reference-board.md`
    - write `section-XX-kebab-section-name-visual-plan.md`
    - write or update the section `README.md`
@@ -707,9 +775,13 @@ A section visual plan is ready when:
 - cue state timeline maps to narration beats and voiceover timing
 - each big scene states what persists, when it starts/ends, why it exists, and when to cut away
 - each cue state states what changes, what stays, when it appears, and why it exists
+- each cue state has a motion type: `static`, `hard-show`, `impact`, or `transition`
 - cue count is intentionally low enough for the section duration
 - WIT emotion supports the viewer's feeling
 - WIT pose filenames, placement, and scale guidance are included when WIT appears
+- WIT density is counted and justified per big scene
+- WIT crop and text/evidence collision risks are handled
+- ordinary labels use hard-show unless emphasis needs impact motion
 - labels are short and readable
 - red markup and callouts have exact target objects and are not decorative
 - the visual reference pass produced browsed, generated, inspected local, or clearly degraded prompt-only references
@@ -717,7 +789,7 @@ A section visual plan is ready when:
 - references map to big scenes and buildable asset decisions
 - generated images, browsed images, or prompts are marked honestly
 - HyperFrames guidance is concrete enough to build from without inventing scene timing, asset choices, WIT, or markup
-- suggested `inspect --at` and MP4 QA frame timestamps are included
+- suggested `inspect --at` and screenshot/contact-sheet QA timestamps are included
 - script promise is paid off in the section when relevant
 - stale downstream files are listed
 - no render, review, upload, or learning files are created
@@ -746,8 +818,14 @@ Reject or stop before finishing if:
 - real private data or unclear copyrighted screenshots are treated as production assets
 - generated images are described as existing when they were only prompted
 - WIT is decorative and has no emotional job
+- WIT is planned for every cue without a voice-rhythm reason
+- a short section exceeds `2` WIT beats in a big scene without a clear reason
 - WIT appears without a real approved pose filename when WIT assets exist
 - WIT is planned too small to read facial emotion
+- WIT crop would make the character look broken
+- WIT would cover the main label, proof object, or payoff text
+- payoff text, stamps, tags, or labels would cover WIT's face/expression in the emotional beat
+- ordinary labels are planned with repeated fly-ins/smashes that create visual noise
 - labels are too long for a paused cue state
 - big scenes or cue states are too crowded to understand
 - real/object photos are globally washed out with white overlays without a documented readability reason

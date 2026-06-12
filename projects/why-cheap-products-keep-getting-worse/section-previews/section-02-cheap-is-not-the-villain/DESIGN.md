@@ -8,7 +8,7 @@ Composition:
 
 ## Style Prompt
 
-Simple funny explainer reframe using three connected big scenes: a real tag correction board, a generated two-box comparison with a generic jacket gag, and a generated missing-tomorrow cutaway. Static boards and hard cuts only. Large handwritten labels. Real channel WIT PNGs only on emotional beats.
+Simple funny explainer reframe using three connected big scenes: a real tag correction board, a generated two-box comparison with a generic jacket gag, and a generated missing-tomorrow cutaway. Static boards and hard cuts only. Group cue overlays inside the persistent scenes so the section feels like one clean investigation, not nine separate slides. Large handwritten labels. Real channel WIT PNGs only on emotional beats.
 
 ## Colors
 
@@ -29,11 +29,13 @@ Simple funny explainer reframe using three connected big scenes: a real tag corr
 ## Motion
 
 - No scene transitions.
-- No entrance animation.
+- No decorative entrance animation.
 - Static base scenes with hard-cut cue overlays only.
 - The wrong-villain scene holds through the `cheap is not bad` correction and emotional shopping joke.
 - The comparison scene holds through affordable-products-good and the expensive-product jacket joke.
 - The missing-tomorrow scene holds through the smaller question, cutaway, less-list, and buy-again consequence.
+- Ordinary labels hard-show on the spoken cue. Do not animate support labels just because they appear sequentially.
+- WIT appears only as emotional punctuation: fairness suspicion, deadpan jacket judgment, missing-tomorrow suspicion, and repeat-buyer defeat.
 - The generated bases carry object realism; HyperFrames owns every label, WIT pose, red mark, jacket, slot card, receipt, and loop arrow.
 - Red markup must correct or target a specific object.
 - WIT must be large enough for the facial emotion to read in Studio and review frames.
@@ -46,3 +48,5 @@ Simple funny explainer reframe using three connected big scenes: a real tag corr
 - Do not use the jacket source photo directly.
 - Do not draw, approximate, or CSS-build WIT.
 - Do not add decorative red circles or random marks.
+- Do not let red marks cover the readable words inside slot cards.
+- Do not add WIT to every cue inside the cutaway list.

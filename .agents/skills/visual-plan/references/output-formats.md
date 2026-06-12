@@ -96,6 +96,8 @@ Status:
 - Cue-state count:
 - Main visual metaphor:
 - WIT emotional path:
+- WIT density:
+- Motion density:
 - Real-life texture:
 - Real image references:
 - Generated/support assets:
@@ -112,18 +114,25 @@ Status:
 
 ## Cue State Timeline
 
-| Cue | Local Time | Voice Cue | Big Scene | What Changes On Screen | What Stays | WIT Pose / Size | Label / Markup | Asset Need | Why This Cue Exists |
-|---|---:|---|---|---|---|---|---|---|---|
+| Cue | Local Time | Voice Cue | Big Scene | What Changes On Screen | What Stays | Motion Type | WIT Pose / Size / Safe Crop | Label / Markup | Asset Need | Why This Cue Exists |
+|---|---:|---|---|---|---|---|---|---|---|---|
 
 ## WIT Pose Plan
 
-| Cue | Time | Emotion | Pose File | Placement / Scale | Why WIT Is Needed |
-|---|---:|---|---|---|---|
+| Cue | Time | Emotion | Pose File | Placement / Scale | Safe Crop / Margin | Why WIT Is Needed |
+|---|---:|---|---|---|---|---|
+
+WIT density note:
+
+- Total WIT beats:
+- WIT beats per big scene:
+- Any big scene above `2` WIT beats, and why:
+- Cue states intentionally without WIT:
 
 ## Markup And Label Plan
 
-| Cue | Time | Text / Markup | Target Object | Why It Helps | Avoid / Do Not Use |
-|---|---:|---|---|---|---|
+| Cue | Time | Text / Markup | Motion Type | Target Object | Why It Helps | Avoid / Do Not Use |
+|---|---:|---|---|---|---|---|
 
 ## Reference And Asset Plan
 
@@ -142,14 +151,34 @@ Status:
 - Cue state count:
 - Scene components:
 - Timing notes:
+- Motion density rule:
 - Text style:
 - Asset paths:
 - Audio sync notes:
 - WIT pose files:
+- WIT density:
+- WIT scale and crop guards:
+- No-WIT breathing beats:
 - Suggested inspect timestamps:
-- Suggested MP4 QA frame timestamps:
+- Suggested screenshot/contact-sheet QA timestamps:
+- Suggested MP4 QA frame timestamps, only if export is explicitly requested:
 - Build risks:
 - Must not invent:
+
+## Review-Prevention Checklist
+
+- voice sync mapped to phrase cues:
+- big-scene rhythm avoids unrelated rapid boards:
+- cue density stays readable:
+- motion density uses hard-show by default:
+- impact motion reserved for emphasis:
+- WIT rhythm not overused:
+- WIT size readable:
+- WIT crop safe:
+- WIT does not cover text/evidence:
+- red markup targets exact objects:
+- scene bases visually differentiated:
+- render does not need to invent timing/layout/assets:
 
 ## Approval Checks
 
@@ -161,7 +190,13 @@ Status:
 - label readable:
 - WIT has a clear job:
 - WIT pose files named:
+- WIT facial emotion large enough:
+- WIT face/head/shoulder crop safe:
+- WIT density counted and justified:
+- no-WIT breathing beats planned:
 - red markup points to exact object:
+- ordinary labels hard-show unless emphasis needs impact motion:
+- impact animation reserved for emphasized spoken beats:
 - real-life asset explains, not decorates:
 - title-thumbnail promise still being paid off:
 - safe for English learners:

@@ -164,6 +164,15 @@
       object-fit: contain;
       z-index: 9;
       filter: drop-shadow(13px 17px 0 rgba(23, 18, 15, 0.18));
+      transform-origin: center center;
+    }
+
+    .wit.behind {
+      z-index: 7;
+    }
+
+    .wit.giant {
+      filter: drop-shadow(18px 21px 0 rgba(23, 18, 15, 0.20));
     }
 
     .price-tag {
@@ -398,14 +407,14 @@
 
     .final-tag {
       position: absolute;
-      left: 344px;
-      top: 136px;
-      width: 1015px;
-      min-height: 635px;
+      left: 105px;
+      top: 154px;
+      width: 720px;
+      min-height: 535px;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 68px;
+      padding: 54px;
       background: #fff6dc;
       border: 10px solid var(--ink);
       box-shadow: 24px 28px 0 rgba(23, 18, 15, 0.18);
@@ -416,20 +425,20 @@
     .final-tag::before {
       content: "";
       position: absolute;
-      left: 72px;
-      top: 68px;
-      width: 46px;
-      height: 46px;
+      left: 58px;
+      top: 58px;
+      width: 40px;
+      height: 40px;
       border: 10px solid var(--ink);
       border-radius: 50%;
       background: var(--paper);
     }
 
     .final-tag h1 {
-      max-width: 820px;
+      max-width: 585px;
       margin: 0;
       color: var(--ink);
-      font-size: 150px;
+      font-size: 116px;
       line-height: 0.78;
       text-align: center;
       letter-spacing: 0;
@@ -453,6 +462,7 @@
 </head>
 <body>
   <div id="Section01Hook" data-composition-id="Section01Hook" data-start="0" data-duration="21.205" data-width="1920" data-height="1080">
+    
     <div id="scene-chair-base" class="clip scene" data-start="0" data-duration="8.62" data-track-index="1">
       <img class="photo full" src="./assets/visual-references/section-01-hook/generated/chair-price-tag-generated.png" alt="">
       <div class="shade"></div>
@@ -467,24 +477,23 @@
     </div>
 
     <div id="cue-chair-price" class="clip cue" data-start="0" data-duration="2.2" data-track-index="2">
-      <div class="label yellow" style="left: 86px; top: 92px; width: 560px;">I FIND A CHAIR</div>
-      <div class="price-tag" style="right: 255px; bottom: 118px;">
+      <div class="label yellow chair-find-label" style="left: 86px; top: 92px; width: 560px;">I FIND A CHAIR</div>
+      <div class="price-tag dollar-tag" style="right: 255px; bottom: 118px;">
         <div class="tag-text">$9</div>
       </div>
-      <img class="wit" style="left: 74px; bottom: 18px; width: 455px;" src="./assets/wit/wit-pose-thinking.png" alt="">
+      <img class="wit giant" data-layout-allow-overflow="" style="left: -480px; bottom: -1050px; width: 1900px;" src="./assets/wit/wit-pose-thinking.png" alt="">
     </div>
 
     <div id="cue-product-details" class="clip cue" data-start="2.2" data-duration="3.15" data-track-index="2">
-      <div class="label yellow" style="left: 86px; top: 86px; width: 540px;">4 LEGS<br>+ 1 SEAT</div>
-      <div class="label red" style="left: 96px; top: 276px; width: 700px;">CONFIDENCE:<br>EXPENSIVE</div>
-      <div class="tiny-note" style="left: 132px; top: 488px;">looks like a much better chair</div>
-      <img class="wit" style="left: 72px; bottom: 18px; width: 465px;" src="./assets/wit/wit-pose-price-tag-suspicion.png" alt="">
+      <div class="label yellow legs-label" style="left: 86px; top: 86px; width: 540px;">4 LEGS<br>+ 1 SEAT</div>
+      <div class="label red confidence-label" style="left: 96px; top: 276px; width: 700px;">CONFIDENCE:<br>EXPENSIVE</div>
+      
     </div>
 
     <div id="cue-sold-week" class="clip cue" data-start="5.35" data-duration="3.05" data-track-index="2">
-      <div class="stamp" style="left: 114px; top: 104px;">SOLD</div>
-      <div class="label yellow" style="right: 144px; top: 104px; width: 410px;">HE BUYS IT</div>
-      <div class="future-dangle">FUTURE<br>NOT<br>INCLUDED</div>
+      
+      <div class="label yellow buy-label" style="right: 144px; top: 104px; width: 410px;">HE BUYS IT</div>
+      
       <div class="mini-calendar" style="left: 94px; top: 292px; transform: rotate(1deg) scale(0.84); transform-origin: top left;">
         <div class="head">FIRST WEEK</div>
         <div class="day">M</div>
@@ -502,8 +511,8 @@
         <div class="day">OK</div>
         <div class="day">OK</div>
       </div>
-      <div class="label blue" style="left: 430px; bottom: 110px; width: 530px; background: #eef8ff; color: #120d0a;">EVERYTHING IS FINE</div>
-      <img data-hf-studio-original-inline-translate="" data-hf-studio-original-translate="" data-hf-studio-path-offset="true" class="wit" style="left:72px;bottom:14px;width:455px;--hf-studio-offset-x:551px;--hf-studio-offset-y:-17px;translate:var(--hf-studio-offset-x, 0px) var(--hf-studio-offset-y, 0px)" src="./assets/wit/wit-pose-thinking.png" alt="">
+      <div class="label blue fine-label" style="left: 430px; bottom: 110px; width: 530px; background: #fffdf5; color: #050403;"><span>EVERYTHING IS FINE</span></div>
+      <img class="wit giant behind" data-layout-allow-overflow="" style="right: -320px; bottom: -660px; width: 1400px;" src="./assets/wit/wit-pose-awkward-celebration.png" alt="">
     </div>
 
     <div id="cue-legal-creak" class="clip cue" data-start="8.4" data-duration="2.85" data-track-index="2">
@@ -513,38 +522,29 @@
         <span></span>
         <span></span>
       </div>
-      <div data-hf-studio-original-display="" data-hf-studio-original-box-sizing="" data-hf-studio-original-flex-shrink="" data-hf-studio-original-flex-grow="" data-hf-studio-original-flex-basis="" data-hf-studio-original-max-height="" data-hf-studio-original-max-width="" data-hf-studio-original-min-height="" data-hf-studio-original-min-width="" data-hf-studio-original-height="" data-hf-studio-original-width="660px" data-hf-studio-box-size="true" class="tiny-note" style="left:114px;bottom:80px;width:537px;--hf-studio-width:537px;--hf-studio-height:65px;height:65px;min-width:0px;min-height:0px;max-width:none;max-height:none;box-sizing:border-box">sounds like a chair reading terms and conditions</div>
-      <img class="wit" style="right: 58px; bottom: 14px; width: 500px;" src="./assets/wit/wit-pose-suspicious.png" alt="">
+      
     </div>
 
     <div data-hf-studio-original-inline-translate="" data-hf-studio-original-translate="" data-hf-studio-path-offset="true" style="--hf-studio-offset-x:-66px;--hf-studio-offset-y:0px;translate:var(--hf-studio-offset-x, 0px) var(--hf-studio-offset-y, 0px)" id="cue-chair-failure" class="clip cue" data-start="11.25" data-duration="5.05" data-track-index="2">
       <div class="red-circle" style="left: 1142px; top: 848px; width: 248px; height: 130px;"></div>
       <div data-hf-studio-original-inline-translate="" data-hf-studio-original-translate="" data-hf-studio-path-offset="true" class="arrow" style="left:1030px;top:824px;--hf-studio-offset-x:-83px;--hf-studio-offset-y:12px;translate:var(--hf-studio-offset-x, 0px) var(--hf-studio-offset-y, 0px)">-&gt;</div>
       <div class="label red" style="right: 104px; top: 92px; width: 530px;">SCREW:<br>LOOSE</div>
-      <div data-hf-studio-original-inline-translate="" data-hf-studio-original-translate="" data-hf-studio-path-offset="true" class="label yellow" style="left:88px;top:78px;width:410px;--hf-studio-offset-x:108px;--hf-studio-offset-y:-18px;translate:var(--hf-studio-offset-x, 0px) var(--hf-studio-offset-y, 0px)">ONE LEG</div>
+      
       <div data-hf-studio-original-inline-translate="" data-hf-studio-original-translate="" data-hf-studio-path-offset="true" class="label red" style="left:86px;top:224px;width:760px;--hf-studio-offset-x:111px;--hf-studio-offset-y:2px;translate:var(--hf-studio-offset-x, 0px) var(--hf-studio-offset-y, 0px)">EXPLORING<br>CAREER OPTIONS</div>
-      <img data-hf-studio-original-inline-translate="" data-hf-studio-original-translate="" data-hf-studio-path-offset="true" class="wit" style="right:42px;bottom:14px;width:505px;--hf-studio-offset-x:108px;--hf-studio-offset-y:0px;translate:var(--hf-studio-offset-x, 0px) var(--hf-studio-offset-y, 0px)" src="./assets/wit/wit-pose-betrayed.png" alt="">
+      <img class="wit giant behind" data-layout-allow-overflow="" style="left: -140px; bottom: -720px; width: 1500px;" src="./assets/wit/wit-pose-hidden-fee-panic.png" alt="">
     </div>
 
     <div id="cue-true-cost" class="clip cue" data-start="16.4" data-duration="2.45" data-track-index="2">
-      <div class="label red" style="left: 470px; top: 95px; width: 570px;">NOT REALLY<br>CHEAP</div>
-      <img class="wit" style="left: 70px; bottom: 16px; width: 490px;" src="./assets/wit/wit-pose-holding-receipt-evidence.png" alt="">
-      <div class="receipt">
-        <h2>TRUE COST</h2>
-        <p><span>chair</span><span>$9</span></p>
-        <p><span>new screw</span><span class="bad">soon</span></p>
-        <p><span>replacement</span><span class="bad">also soon</span></p>
-        <p><span>confidence</span><span class="bad">gone</span></p>
-        <p class="total"><span>cheap?</span><span>NOPE</span></p>
-      </div>
+      <div class="label red cheap-label" style="left: 560px; top: 95px; width: 570px;">NOT REALLY<br>CHEAP</div>
+      
     </div>
 
     <div id="cue-final-tag" class="clip cue" data-start="18.85" data-duration="2.355" data-track-index="2">
       <div class="final-tag">
         <h1>FUTURE<br>NOT<br>INCLUDED</h1>
       </div>
-      <div class="stamp" style="right: 210px; bottom: 132px;">SMALL<br>PROBLEM</div>
-      <img class="wit" style="left: 68px; bottom: 18px; width: 465px;" src="./assets/wit/wit-pose-betrayed.png" alt="">
+      <div class="stamp" style="left: 150px; bottom: 104px;">SMALL<br>PROBLEM</div>
+      <img class="wit giant behind" data-layout-allow-overflow="" style="right: -500px; bottom: -560px; width: 1480px;" src="./assets/wit/wit-pose-money-panic.png" alt="">
     </div>
 
     <audio id="voiceover-section-01" data-start="0" data-duration="21.205" data-track-index="10" data-volume="1" crossorigin="anonymous" src="./section-01-hook-david23-am_eric-0.84.mp3"></audio>
@@ -569,6 +569,15 @@
         tl.to(target, { ...resetVars, ...toVars }, at);
       };
 
+      const show = (target, hideAt, at) => {
+        tl.set(target, { opacity: 0 }, hideAt);
+        tl.set(target, { opacity: 1 }, at);
+      };
+
+      const smash = (target, hideAt, at, fromVars = { y: 24, scale: 1.34, opacity: 0 }) => {
+        reveal(target, hideAt, at, fromVars, { duration: 0.18, ease: "back.out(1.9)" });
+      };
+
       tl.fromTo(
         "#scene-failure-base",
         { opacity: 0, scale: 1.012, filter: "blur(7px)" },
@@ -582,38 +591,32 @@
         16.4
       );
 
-      reveal("#cue-chair-price .label", 0, 0.12, { y: -18, opacity: 0 }, { duration: 0.26, ease: "power2.out" });
-      reveal("#cue-chair-price .price-tag", 0, 0.2, { y: 24, scale: 0.94, opacity: 0 }, { duration: 0.3, ease: "back.out(1.35)" });
-      reveal("#cue-chair-price .wit", 0, 0.24, { x: -18, y: 18, opacity: 0 }, { duration: 0.34, ease: "power2.out" });
+      show("#cue-chair-price .chair-find-label", 0, 0.12);
+      show("#cue-chair-price .wit", 0, 0.42);
+      smash("#cue-chair-price .dollar-tag", 0, 1.08);
 
-      reveal("#cue-product-details .label", 2.2, 2.2, { y: 18, opacity: 0 }, { duration: 0.28, stagger: 0.08, ease: "power2.out" });
-      reveal("#cue-product-details .tiny-note", 2.2, 2.55, { x: -16, opacity: 0 }, { duration: 0.22, ease: "sine.out" });
-      reveal("#cue-product-details .wit", 2.2, 2.3, { x: -24, opacity: 0 }, { duration: 0.34, ease: "power1.out" });
+      show("#cue-product-details .legs-label", 2.2, 2.36);
+      show("#cue-product-details .confidence-label", 2.2, 3.42);
 
-      reveal("#cue-sold-week .stamp", 5.35, 5.35, { scale: 1.15, opacity: 0 }, { duration: 0.2, ease: "back.out(1.6)" });
-      reveal("#cue-sold-week .label.yellow", 5.35, 5.43, { y: -18, opacity: 0 }, { duration: 0.24, ease: "power2.out" });
-      reveal("#cue-sold-week .future-dangle", 5.35, 5.55, { y: -34, opacity: 0 }, { duration: 0.3, ease: "back.out(1.25)" });
-      reveal("#cue-sold-week .mini-calendar", 5.35, 5.78, { y: 22, opacity: 0 }, { duration: 0.32, ease: "power1.out" });
-      reveal("#cue-sold-week .label.blue", 5.35, 6.08, { y: 18, opacity: 0 }, { duration: 0.26, ease: "sine.out" });
-      reveal("#cue-sold-week .wit", 5.35, 5.82, { y: 18, opacity: 0 }, { duration: 0.34, ease: "power2.out" });
+      show("#cue-sold-week .buy-label", 5.35, 5.70);
+      show("#cue-sold-week .mini-calendar", 5.35, 6.72);
+      show("#cue-sold-week .wit", 5.35, 6.98);
+      show("#cue-sold-week .fine-label", 5.35, 7.22);
 
-      reveal("#cue-legal-creak .label", 8.4, 8.56, { x: 28, opacity: 0 }, { duration: 0.24, ease: "power2.out" });
-      reveal("#cue-legal-creak .sound-lines span", 8.4, 8.72, { scaleX: 0, opacity: 0, transformOrigin: "left center" }, { duration: 0.2, stagger: 0.05, ease: "power1.out" });
-      reveal("#cue-legal-creak .tiny-note", 8.4, 8.84, { y: 16, opacity: 0 }, { duration: 0.22, ease: "sine.out" });
-      reveal("#cue-legal-creak .wit", 8.4, 8.62, { x: 24, opacity: 0 }, { duration: 0.3, ease: "power2.out" });
+      show("#cue-legal-creak .sound-lines span", 8.4, 8.92);
+      show("#cue-legal-creak .label", 8.4, 9.72);
 
-      reveal("#cue-chair-failure .red-circle", 11.25, 11.28, { scale: 0.9, opacity: 0 }, { duration: 0.2, ease: "back.out(1.5)" });
-      reveal("#cue-chair-failure .arrow", 11.25, 11.36, { x: -24, opacity: 0 }, { duration: 0.2, ease: "power2.out" });
-      reveal("#cue-chair-failure .label", 11.25, 11.42, { y: 18, opacity: 0 }, { duration: 0.28, stagger: 0.07, ease: "power2.out" });
-      reveal("#cue-chair-failure .wit", 11.25, 11.62, { x: 24, opacity: 0 }, { duration: 0.34, ease: "power1.out" });
+      reveal("#cue-chair-failure .red-circle", 11.25, 11.42, { scale: 0.9, opacity: 0 }, { duration: 0.18, ease: "back.out(1.5)" });
+      reveal("#cue-chair-failure .arrow", 11.25, 11.52, { x: -24, opacity: 0 }, { duration: 0.18, ease: "power2.out" });
+      show("#cue-chair-failure .label.red[style*='right']", 11.25, 11.58);
+      show("#cue-chair-failure .wit", 11.25, 13.18);
+      show("#cue-chair-failure .label.red[style*='left']", 11.25, 13.62);
 
-      reveal("#cue-true-cost .label", 16.4, 16.56, { x: -26, opacity: 0 }, { duration: 0.24, ease: "power2.out" });
-      reveal("#cue-true-cost .receipt", 16.4, 16.62, { x: 34, opacity: 0 }, { duration: 0.3, ease: "power2.out" });
-      reveal("#cue-true-cost .wit", 16.4, 16.68, { y: 18, opacity: 0 }, { duration: 0.3, ease: "sine.out" });
+      show("#cue-true-cost .cheap-label", 16.4, 17.34);
 
-      reveal("#cue-final-tag .final-tag", 18.85, 18.85, { scale: 0.965, opacity: 0 }, { duration: 0.18, ease: "power2.out" });
-      reveal("#cue-final-tag .stamp", 18.85, 19.02, { y: 18, scale: 0.96, opacity: 0 }, { duration: 0.22, ease: "back.out(1.4)" });
-      reveal("#cue-final-tag .wit", 18.85, 19.06, { y: 18, opacity: 0 }, { duration: 0.3, ease: "sine.out" });
+      show("#cue-final-tag .stamp", 18.85, 19.10);
+      show("#cue-final-tag .wit", 18.85, 19.28);
+      smash("#cue-final-tag .final-tag", 18.85, 19.86, { scale: 1.12, opacity: 0 });
       window.__timelines["Section01Hook"] = tl;
     </script>
   </div>

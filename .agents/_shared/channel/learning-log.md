@@ -29,7 +29,12 @@ Keep this short. Current rules belong in `current-state.md`, `production-workflo
 - For `20-30s` hooks, start with `6-8` simple static boards before adding motion.
 - One board should usually carry one thought, one readable label, and one clear joke or evidence job.
 - Use hard cuts by default; add motion only when it improves clarity, timing, or the joke.
+- Sequential cue timing does not require animating every block. Ordinary labels should hard-show on the spoken beat; reserve smash/pop/stamp motion for emphasized words, proof marks, and payoff phrases.
+- WIT is the emotional subject when it appears. Use large, goofy, readable poses for emotional beats and verify face/head/shoulder crop with runtime screenshots or contact sheets.
+- Text/WIT collision must be checked both ways. WIT should not cover labels or proof, and payoff text/stamps/cards should not cover WIT's face or expression when WIT is carrying the emotion.
+- Do not overuse WIT. For short sections, start with about `1-2` WIT beats per persistent big scene and let labels, props, and markup carry explanatory cues between WIT moments.
 - During section-by-section HyperFrames production, preview one section per project/port and assemble only after approval.
+- If the user manually edits a HyperFrames Studio/localhost preview, preserve the current section `index.html` as canonical. Future updates must read and diff that file first, never overwrite it from an older review mirror or visual plan, and remove only targeted accidental artifacts.
 - Voice sync comes first: board changes, labels, underlines, and emphasis should land on the spoken cue.
 - Cue-critical visuals must be readable on the cue frame, not merely beginning animation there.
 - Visual references should start from real internet, self-shot, or local images when the topic has real-world objects. Generated images are support, cleanup, or controlled mockups after real texture is understood.

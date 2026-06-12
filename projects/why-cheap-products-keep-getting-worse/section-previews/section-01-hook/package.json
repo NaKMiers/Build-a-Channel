@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "npx --yes hyperframes@0.6.76 preview",
-    "check": "npx --yes hyperframes@0.6.76 lint && npx --yes hyperframes@0.6.76 validate && npx --yes hyperframes@0.6.76 inspect --at 1.1,3.8,6.9,9.8,13.4,17.5,20.2",
+    "check": "npx --yes hyperframes@0.6.76 lint && npx --yes hyperframes@0.6.76 validate && npx --yes hyperframes@0.6.76 inspect --at 0.7,1.35,2.65,3.85,6.15,7.45,9.95,11.9,13.9,17.55,20.05",
     "render": "npx --yes hyperframes@0.6.76 render"
   }
 }

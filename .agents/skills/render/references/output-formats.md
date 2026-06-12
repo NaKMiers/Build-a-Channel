@@ -88,6 +88,24 @@ Status:
 | Board | Local Time | Voice Cue | Visual | Key Animation | Source Plan |
 |---|---:|---|---|---|---|
 
+## Big Scene / Cue Plan Implemented
+
+| Cue | Local Time | Voice Cue | Big Scene | What Changes | Motion Type | WIT Placement / Crop Guard | Label / Markup | Sync Status |
+|---:|---:|---|---|---|---|---|---|---|
+
+## Render Review-Prevention Pass
+
+- voice cue map completed:
+- big-scene sanity checked:
+- cue density checked:
+- motion density checked:
+- WIT density:
+- WIT crop/collision checked:
+- markup target checked:
+- scene differentiation checked:
+- HyperFrames mechanics checked:
+- render decisions made beyond visual plan:
+
 ## Voice Sync Map
 
 | Time | Spoken Cue | On-Screen Element | Action | Sync Status |
@@ -105,6 +123,8 @@ Status:
 - Emphasis:
 - Exits:
 - Repeated effects avoided:
+- Hard-show vs impact decisions:
+- WIT scale/crop checks:
 
 ## Assets
 
@@ -117,7 +137,8 @@ Status:
 - lint:
 - validate:
 - inspect:
-- render:
+- direct preview screenshots/contact sheet:
+- export/render, only if explicitly requested:
 
 ## Notes
 ````

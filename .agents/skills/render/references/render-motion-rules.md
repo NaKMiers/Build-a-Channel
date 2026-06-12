@@ -34,7 +34,22 @@ Build timing in this order:
 
 - Design entrance, hold, emphasis, and exit for every meaningful element.
 - Tie element emphasis to spoken emphasis.
+- `Hard-show on beat` is a valid entrance. Do not animate a label merely because it appears after another label.
+- For ordinary supporting labels, notes, and props, prefer a simple show at the exact spoken cue over fly-ins.
 - If the voice stresses a word like `FREE`, `URGENT`, or `BUSY`, make the label land with a fitting action such as smash, stamp, snap, marker strike, shake, or pop-on-impact.
+- Reserve impact motion for true emphasis: price tags, proof marks, contradiction labels, and payoff phrases.
 - Do not make every label use the same pop-in.
+- Do not make every sequential label animate. Dense motion makes the frame feel noisy even when timing is correct.
 - Do not animate decorative elements while the viewer needs to read or understand the main point.
+- Cue-critical text should be fully readable on the cue frame, not still traveling into place.
 - Exits should clear space for the next spoken idea; they should not remove context before the viewer understands it.
+
+## WIT Layout And Motion Rules
+
+- WIT is the emotional audience surrogate, not a tiny corner sticker.
+- WIT is emotional punctuation, not a reaction requirement for every cue.
+- For a short section, prefer about `1-2` WIT appearances per persistent big scene unless the voice rhythm clearly needs more.
+- For emotional beats, scale WIT so the expression reads clearly in direct preview screenshots; `1/3` to `1/2` of the frame is acceptable when it does not cover text or evidence.
+- Use the funniest approved pose that matches the beat: panic, facepalm, suspicion, betrayal, confusion, shock, or payoff.
+- Avoid accidental WIT crops through the face, head, shoulders, or important props. Intentional edge peeks are fine only when the expression still reads.
+- Verify major WIT placement changes with runtime-seek screenshots or a contact sheet, not only `lint`, `validate`, or `inspect`.

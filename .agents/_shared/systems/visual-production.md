@@ -64,6 +64,8 @@ Add motion only when it has a job:
 
 Do not animate labels, props, WIT, and transitions all at once unless the user has approved the static frame.
 
+Sequential timing does not mean every block should animate. Ordinary labels, notes, and supporting props can simply hard-show on the spoken beat. Reserve smash, stamp, snap, shake, or pop motion for true emphasis beats: prices, contradiction labels, proof marks, and payoff phrases.
+
 ## Reference Board Rule
 
 Before full visual production, ask:
@@ -145,7 +147,18 @@ WIT is useful when:
 - the joke needs a dry reaction
 - a thumbnail needs instant feeling
 
-WIT should not block labels or replace the explanation.
+WIT should not block labels or replace the explanation. The reverse also matters: if WIT is the emotional subject, labels, payoff tags, stamps, and cards must not cover WIT's face, eyes, mouth, or key prop.
+
+When WIT appears, treat it as the emotional subject of the beat, not a small corner sticker. For strong emotional beats, WIT can occupy roughly `1/3` to `1/2` of the frame when it does not cover labels or evidence. Prefer goofy, readable poses such as panic, facepalm, suspicion, betrayal, confusion, shock, or defeated reactions over neutral filler poses.
+
+Do not overuse WIT. WIT is emotional punctuation, not a reaction requirement for every cue. For short sections, start with about `1-2` WIT beats per persistent big scene, then adjust based on voice rhythm. Let labels, props, and markup carry explanatory beats between WIT moments.
+
+WIT crop guard:
+
+- face, head, shoulders, and important props should not look accidentally cut off
+- intentional edge peeks are fine only when the expression still reads clearly
+- payoff text/stamps/cards should not sit on top of WIT's face or expression; create separate text and WIT zones
+- if no approved pose fits the beat, create or request a new approved WIT pose in shared/project assets instead of forcing a weak pose
 
 ## HyperFrames Board Guidance
 
@@ -157,6 +170,7 @@ Use:
 - handwritten-looking fonts or rough labels
 - hard cuts
 - cue-timed popups only when needed
+- cue-timed hard-shows for ordinary labels
 
 Check:
 
@@ -165,10 +179,12 @@ Check:
 - WIT emotion is visible at small size
 - real-life assets are not muddy or decorative
 - cue-critical elements are readable on the cue frame, not only starting animation there
+- WIT-heavy frames have safe crop and readable emotion in runtime screenshots/contact sheets
+- final/payoff frames preserve WIT emotion: text can support the rhythm, but it must not cover WIT's face/expression
 
 ## Short Hook Simplicity Rule
 
-For a `20-30s` hook, start with `6-8` static boards:
+For a `20-30s` hook, start with about `3` persistent big scenes and `6-8` cue states/static boards:
 
 - one real-life image or object
 - one WIT reaction
@@ -176,3 +192,5 @@ For a `20-30s` hook, start with `6-8` static boards:
 - hard cuts
 
 Do not add transition overlays, rapid pop-ins, object pile-ons, or WIT shake unless the static version is approved and the motion has a clear joke or clarity job.
+
+For connected object hooks, keep the same base scene while the voice describes the same object or situation. Add one or two voice-timed cue elements inside that scene instead of cutting to a new full-screen board for every sentence.
