@@ -1,0 +1,24 @@
+{
+  "times": [
+    0.8,
+    4.8,
+    9.8,
+    12.6,
+    16.2,
+    22.6,
+    27.4,
+    31.8,
+    34.1
+  ],
+  "files": [
+    "section-05-0-8.png",
+    "section-05-4-8.png",
+    "section-05-9-8.png",
+    "section-05-12-6.png",
+    "section-05-16-2.png",
+    "section-05-22-6.png",
+    "section-05-27-4.png",
+    "section-05-31-8.png",
+    "section-05-34-1.png"
+  ]
+}

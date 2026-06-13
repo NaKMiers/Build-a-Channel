@@ -594,6 +594,28 @@ Apply next time:
 Promote to shared memory:
 no for now; keep as render execution memory unless repeated across more sections.
 
+### 2026-06-13 - Failed Synthetic Sections Need Real Texture, Not Polish
+
+Classification: `Render lesson`
+
+Context:
+Section 5 of `why-cheap-products-keep-getting-worse` was rejected because it had no real image, normal/boring WIT poses, and too many small synthetic objects competing in the frame. The recovery did not polish the CSS appliance mockup. It rebuilt the section from the script, voice timing, Section 1/8 visual grammar, two real image bases, and stronger WIT poses.
+
+Lesson:
+When the user rejects a section as synthetic or useless, treat the existing visual plan/render as stale. Rebuild around one real/object texture per big scene, fewer cue labels, and WIT poses that are emotionally specific to the joke.
+
+Apply next time:
+
+- do not keep iterating on a CSS-only mockup after the user complains that it lacks real image texture
+- reuse approved reference sections to copy the successful frame grammar
+- choose real/generated bases first, then add only sparse handwritten cue labels
+- replace neutral WIT poses with expressive approved poses tied to the spoken joke
+- keep listed details compressed into one or two readable labels instead of many separate props
+- make a contact sheet before handoff and check whether the frame still reads like a pile of boring things
+
+Promote to shared memory:
+no for now; keep as render execution memory unless this failure pattern repeats again.
+
 ## Feedback Entry Template
 
 ```markdown

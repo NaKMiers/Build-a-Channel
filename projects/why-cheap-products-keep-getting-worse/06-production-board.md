@@ -2,7 +2,7 @@
 
 Video: `Why Cheap Products Keep Getting Worse`
 
-Status: `section 8 payoff preview ready for review`
+Status: `section 5 real-photo remake preview ready for review`
 
 Source skill: `render`
 
@@ -21,6 +21,7 @@ Source files:
 | Section 2 Cheap Is Not The Villain | 1002 | `http://localhost:1002/#project/section-02-cheap-is-not-the-villain` | `http://localhost:1002/api/projects/section-02-cheap-is-not-the-villain/preview/comp/index.html` | running; HTTP 200 verified |
 | Section 3 The Price Tag Speaks First | 1003 | `http://localhost:1003/#project/section-03-the-price-tag-speaks-first` | `http://localhost:1003/api/projects/section-03-the-price-tag-speaks-first/preview/comp/index.html` | running; HTTP 200 verified |
 | Section 4 The Boring Parts Disappear | 1004 | `http://localhost:1004/#project/section-04-the-boring-parts-disappear` | `http://localhost:1004/api/projects/section-04-the-boring-parts-disappear/preview/comp/index.html` | running; HTTP 200 verified |
+| Section 5 More Features, More Tiny Deaths | 1005 | `http://localhost:1005/#project/section-05-more-features-more-tiny-deaths` | `http://localhost:1005/api/projects/section-05-more-features-more-tiny-deaths/preview/comp/index.html` | running; HTTP 200 verified |
 | Section 8 Payoff | 1008 | `http://localhost:1008/#project/section-08-payoff` | `http://localhost:1008/api/projects/section-08-payoff/preview/comp/index.html` | running; HTTP 200 verified |
 
 ## Section Render Index
@@ -31,6 +32,7 @@ Source files:
 | 2 | Cheap Is Not The Villain | `review-adjusted giant-WIT preview ready for review` | 1002 | `section-previews/section-02-cheap-is-not-the-villain/` | `02-script.md` + `04-voiceover.md` + revised `05-visual-plan.md` + Section 2 visual plan + render-side quality pass | `lint: pass, 0 warnings`; `validate: pass with 15 non-blocking final-receipt contrast sampler warnings`; `inspect: pass at 12 timestamps`; `snapshot: pass via review-pass-8 contact sheet`; `server: HTTP 200` | `not requested` | `3 persistent big scenes with grouped cue overlays instead of 9 separate cue clips. WIT kept to 4 emotional beats but upgraded to giant Section-1-style facepalm/confused/shocked/money-panic placements. UNFAIR, EXPENSIVE IS NOT MAGIC, and final buy-again elements were repositioned to avoid text/WIT collisions. Subtitle-prone lower elements were also nudged upward for YouTube caption safety.` |
 | 3 | The Price Tag Speaks First | `auto-adjusted WIT-dominance preview ready for review` | 1003 | `section-previews/section-03-the-price-tag-speaks-first/` | `02-script.md` + `04-voiceover.md` + revised `05-visual-plan.md` + revised Section 3 visual plan + Auto Adjust pass | `lint: pass with 4 non-blocking warnings`; `validate: pass, no console errors, 30 contrast sampler warnings`; `inspect: pass, 0 layout issues at 12 timestamps`; `snapshot: pass via latest seeked auto-adjust contact sheet`; `server: HTTP 200` | `not requested` | `4 persistent big scenes with 10 cue states. Scene 3 remains a CSS-built checkout promise arena. Auto Adjust reduced WIT to selected emotional beats, removed the duplicate easy-price WIT, scaled remaining WIT by visible alpha/viewport size to roughly 32-36% frame width, moved nearby text away from WIT, and marked intentional lower-body crop as allowed overflow.` |
 | 4 | The Boring Parts Disappear | `simple Section-1-style remake preview ready for review` | 1004 | `section-previews/section-04-the-boring-parts-disappear/` | `02-script.md` + `04-voiceover.md` + remade `05-visual-plan.md` + remade Section 4 visual plan after rejecting crowded object-card direction | `lint: pass with 2 non-blocking warnings`; `validate: pass, no console errors, 5 contrast sampler warnings`; `inspect: pass, 0 layout issues at 12 timestamps`; `snapshot: pass via simple-remake contact sheet`; `server: HTTP 200` | `not requested` | `3 persistent real-photo backgrounds with 6 cue states: fabric/stitching, screwdriver repair table, and cardboard/product box. WIT appears only on 3 emotional beats and is sized as a main character: suspicious inspector, printer-repair nerd, betrayed buyer. Phone/printer photos are not used directly; generic CSS overlays replace them.` |
+| 5 | More Features, More Tiny Deaths | `real-photo remake preview ready for review` | 1005 | `section-previews/section-05-more-features-more-tiny-deaths/` | `02-script.md` + `04-voiceover.md` + Section 1/8 visual grammar + Section 5 real reference assets; earlier CSS-only visual-plan mockup superseded by user rejection | `lint: pass with 2 non-blocking warnings`; `validate: pass, no console errors, 80 text elements pass WCAG AA`; `inspect: pass, 0 layout issues at 9 timestamps`; `snapshot: pass via real-photo remake contact sheet`; `server: HTTP 200` | `not requested` | `3 persistent real-photo scenes with 8 cue states: lived-in fridge setup, closer fridge feature-overload critique, and real appliance circuit-board payoff. WIT uses stronger emotional poses: price-tag suspicion, phone panic, trapped-by-app-screen, and money panic. Direct real assets are fridge photo and appliance power-module photo with attribution; logo-heavy dispenser/control-panel references remain unused.` |
 | 8 | Payoff | `preview ready for review` | 1008 | `section-previews/section-08-payoff/` | `02-script.md` + `04-voiceover.md` + `05-visual-plan.md` + Section 8 visual plan | `lint: pass with 2 non-blocking warnings`; `validate: pass, no console errors, 95 text elements pass WCAG AA`; `inspect: pass, 0 layout issues at 9 timestamps`; `thumbnail spot check: pass`; `load check: direct composition HTTP 200 and 5 image assets loaded`; `server: HTTP 200` | `not requested` | `3 persistent payoff scenes with 8 cue states: hidden-future price tag, real-price receipt, and final cardboard/product question. WIT appears only on 3 emotional beats: suspicious evaluator, receipt evidence holder, and deadpan final checker. All receipt/tag wording is rendered in HyperFrames/CSS; no MP4/WebM export was requested or created.` |
 
 ## Shared Asset Rules
@@ -41,6 +43,27 @@ Source files:
 - Attribution file: `projects/why-cheap-products-keep-getting-worse/assets/ATTRIBUTION.md`
 
 ## Active Section Notes
+
+### Section 5
+
+- Section 5 composition id: `Section05MoreFeaturesMoreTinyDeaths`
+- Runtime: `34.645s`
+- Voiceover runtime: `34.645s`
+- Preview audio: local `section-05-more-features-more-tiny-deaths-david23-am_eric-0.84.mp3`
+- Screen changes: static hard cuts only; timed cue clips hard-show on voice beats; no decorative transitions or repeated fly-ins
+- Scene grammar: `fair real-fridge setup -> closer fridge feature overload -> real circuit-board tiny-failure payoff`
+- User revision applied: the first Section 5 render was rejected as failed because it used no real image, normal/boring WIT poses, and too many synthetic objects. The CSS-only visual-plan-driven version is superseded.
+- Direct real section image assets: `assets/section-05/fridge.jpg` and `assets/section-05/circuit-board.jpg`
+- Production visual assets: real fridge/kitchen photo base, real appliance power-module photo base, sparse handwritten labels, red break/failure marks, generic screen box, and approved WIT PNG poses
+- Reference-only assets not used directly: Wikimedia water-dispenser refrigerator and appliance control panel saved under `assets/visual-references/section-05-more-features-more-tiny-deaths/real-world/`
+- WIT poses used: `wit-pose-price-tag-suspicion.png`, `wit-pose-holding-phone-panic.png`, `wit-pose-trapped-by-app-screen.png`, `wit-pose-money-panic.png`
+- WIT layout decision: WIT is large and emotionally specific. Early skeptical WIT anchors the fair setup, phone panic handles the gravity joke, trapped-by-app-screen handles software/opinions, and money panic carries the repair-cost payoff. Faces, heads, shoulders, and key props remain readable.
+- HyperFrames checks: `npm.cmd run check` passed. Lint reported 2 non-blocking warnings: duplicate media discovery risk from repeated real-photo sources and one dense timed cue track. Validate reported no console errors and 80 text elements passing WCAG AA. Inspect reported 0 layout issues across 9 explicit timestamps.
+- Inspect timestamps: `0.8`, `4.8`, `9.8`, `12.6`, `16.2`, `22.6`, `27.4`, `31.8`, `34.1`
+- Visual snapshot check: `section-previews/section-05-more-features-more-tiny-deaths/snapshots/remake-real-photo-20260613/contact-sheet-section-05-remake.png` inspected at `0.8`, `4.8`, `9.8`, `12.6`, `16.2`, `22.6`, `27.4`, `31.8`, and `34.1`; real fridge/circuit-board textures are visible, labels are readable, and WIT no longer reads as a normal corner pose.
+- Review mirror: `hyperframes/review/section-05.html` synced from the current preview source; review audio and section photo/WIT/font assets are present under `hyperframes/review/`.
+- Preview server: port `1005`, Studio and direct composition URLs returned HTTP `200`.
+- Export file: `not requested`
 
 ### Section 8
 
@@ -167,6 +190,9 @@ Source files:
 - No Section 1 `07-review.md`, `08-upload.md`, `09-self-learning.md`, unified preview, or final assembly output was found during this run.
 - No Section 8 MP4/WebM export was requested or created.
 - No Section 8 `07-review.md`, `08-upload.md`, `09-self-learning.md`, unified preview, or final assembly output was found during this run.
+- Section 5 CSS-only render and `snapshots/render-pass-20260613/contact-sheet-section-05.png` are superseded by the real-photo remake.
+- No Section 5 MP4/WebM export was requested or created.
+- No Section 5 `07-review.md`, `08-upload.md`, `09-self-learning.md`, unified preview, or final assembly output was found during this run.
 
 ## Next Step Boundary
 

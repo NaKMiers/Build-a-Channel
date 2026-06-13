@@ -1,0 +1,10 @@
+{
+  "name": "why-cheap-products-section-05-more-features-more-tiny-deaths",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx --yes hyperframes@0.6.76 preview",
+    "check": "npx --yes hyperframes@0.6.76 lint && npx --yes hyperframes@0.6.76 validate && npx --yes hyperframes@0.6.76 inspect --at 0.8,4.8,9.8,12.6,16.2,22.6,27.4,31.8,34.1",
+    "render": "npx --yes hyperframes@0.6.76 render"
+  }
+}

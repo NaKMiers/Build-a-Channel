@@ -4,7 +4,7 @@ Video:
 `Why Cheap Products Keep Getting Worse`
 
 Scope:
-`Current direct-production assets used by Render step for Sections 1-4`
+`Current direct-production assets used by Render step for Sections 1-5`
 
 ## Direct Production Assets
 
@@ -31,6 +31,13 @@ Scope:
 - `visual-references/section-03-the-price-tag-speaks-first/generated/price-tag-hiding-future-tags-generated.png`
   Use: Section `3`, Big Scenes `1`, `2`, and `4`, visible price tag hiding future-cost tags
   Status: `safe generated support asset`
+
+### Self-made HyperFrames / CSS assets
+
+- Section `5` handwritten labels, red break/failure marks, generic screen box, cold-breath cue, and feature/speech panels
+  Use: Section `5`, cue overlays on real photo bases
+  Source: built directly in `section-previews/section-05-more-features-more-tiny-deaths/index.html` from the script, Section 1/8 render grammar, and Section 5 reference board
+  Status: `self-made safe production overlays; no real app UI or real product claim is added`
 
 ### Real direct-use assets
 
@@ -70,18 +77,30 @@ Scope:
   Creator: `Harper Sunday`
   Terms checked: `Pexels License`
   Safe-use note: direct background with final product box, WIT, and labels added in HyperFrames
+- `visual-references/section-05-more-features-more-tiny-deaths/real-world/real-domestic-refrigerator-commons-infrogmation.jpg`
+  Use: Section `5`, Big Scenes `1` and `2`, real lived-in kitchen/fridge background
+  Source: [Wikimedia Commons - US Domestic Refrigerator - Frigidaire.jpg](https://commons.wikimedia.org/wiki/File:US_Domestic_Refrigerator_-_Frigidaire.jpg)
+  Creator: `Infrogmation of New Orleans`
+  Terms checked: `CC BY-SA 4.0`
+  Safe-use note: direct background use only as generic fridge/kitchen texture; no claim that this real model failed or represents the criticized product
+- `visual-references/section-05-more-features-more-tiny-deaths/real-world/real-appliance-power-module-commons-phiarc.jpg`
+  Use: Section `5`, Big Scene `3`, real appliance circuit-board / tiny-failure background
+  Source: [Wikimedia Commons - Washing machine power module.jpg](https://commons.wikimedia.org/wiki/File:Washing_machine_power_module.jpg)
+  Creator: `Phiarc`
+  Terms checked: `CC BY-SA 4.0`
+  Safe-use note: direct background use with generic red target and repair-cost labels; no brand/product failure claim
 
 ### Reusable channel assets
 
 - `wit/`
-  Use: Sections `1-4` WIT poses
+  Use: Sections `1-5` WIT poses
   Source: channel-approved shared WIT pose set via project junction to `.agents/_shared/assets/wit/poses/`
   Status: `safe channel asset`
 - `voiceover/`
-  Use: Sections `1-4` approved narration audio via project junction to `voiceover/`
+  Use: Sections `1-5` approved narration audio via project junction to `voiceover/`
   Status: `project-local approved audio source`
 - `fonts/patrick-hand-latin.woff2`
-  Use: Sections `1-4` handwritten labels
+  Use: Sections `1-5` handwritten labels
   Source: copied from existing project-local channel font asset in `projects/why-everyone-pretends-to-be-busy/assets/fonts/`
   Status: `project-local reusable font asset`
 
@@ -115,6 +134,12 @@ Scope:
   Status: `inspiration only`; printer/workbench reference only, not used directly because it contains a real person, visible workshop text, and too much clutter
 - `visual-references/section-04-the-boring-parts-disappear/section-04-reference-contact-sheet.png`
   Status: `internal reference board`; not used directly in final video
+- `visual-references/section-05-more-features-more-tiny-deaths/real-world/real-water-dispenser-refrigerator-commons-dave-matos.jpg`
+  Source: Wikimedia Commons, Dave Matos, `A cold glass of water - GE Refrigerator - August 7, 2007.jpg`
+  Status: `inspiration only / mockup target`; not used directly because of visible logos, stickers, hand, and photo clutter
+- `visual-references/section-05-more-features-more-tiny-deaths/real-world/real-control-panel-commons-solomon203.jpg`
+  Source: Wikimedia Commons, Solomon203, `Sampo VM-C2066 control panel 20201031.jpg`
+  Status: `inspiration only`; not used directly because of visible brand and labels
 
 ## Notes
 

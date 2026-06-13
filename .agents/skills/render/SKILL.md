@@ -285,6 +285,18 @@ Approved explanatory-list recovery pattern from `why-cheap-products-keep-getting
 - Make WIT a giant emotional read on only the major beats, roughly one beat per big scene. Keep no-WIT beats for explanatory labels and object evidence.
 - Reject scattered product-part trays, piles of mini cards, many floating images, and paragraphs of labels. If a paused frame cannot be read in about one second, simplify before adding motion.
 
+Approved synthetic-failure recovery pattern from `why-cheap-products-keep-getting-worse` Section 5:
+
+- If the user rejects a section because it has no real image, looks too normal, uses boring WIT, or feels like many small boring things combined, do not polish the same CSS-only mockup.
+- Treat the existing visual plan/render as stale for that section unless the user explicitly says to preserve it.
+- Rebuild from the script, voice timing, approved reference sections, real/local image assets, and the WIT manifest.
+- Choose one real/object texture or generated-real support base per big scene before adding labels.
+- Keep the big scene count small and persistent; for `30-45s` explanatory sections, default near `3` big scene bases and `5-8` cue states.
+- Replace neutral WIT poses with emotionally specific approved poses tied to the joke, such as suspicion, panic, trapped, betrayed, evidence, or money panic.
+- Compress feature lists into one or two readable labels. Do not make a separate prop, mini card, or floating image for every noun in the sentence.
+- Verify the recovery with a direct preview screenshot/contact sheet and ask: does each frame have a real texture anchor, a clear main idea, and a WIT pose that feels intentionally funny?
+- Record the rejected pattern and the new recovery source in `IMPLEMENTATION.md`, `06-production-board.md`, and `references/memory.md`.
+
 Do not keep polishing a visual plan after the user identifies that plan as the failure source.
 
 ### Section Preview Build Mode
@@ -476,6 +488,7 @@ Run this pass after reading the visual plan and before writing or editing HTML:
 - Subtitle-safe lower area: check lower-third labels, receipts, arrows, boxes, and payoff props; move cue-critical elements slightly upward when YouTube subtitles would likely cover them.
 - Markup meaning: every circle/arrow/underline must point to the exact object it explains.
 - Scene differentiation: direct scene bases should not repeat adjacent visual language unless intentional.
+- Real texture anchor: if a rejected/remade section felt synthetic, boring, or "too normal", each big scene needs a real/object texture or generated-real base unless there is a documented reason not to.
 - HyperFrames mechanics: data attributes, audio, deterministic GSAP, and timeline registration must follow the HyperFrames skill.
 
 If the visual plan is missing one of these decisions, render must make the decision explicitly and document it in `IMPLEMENTATION.md` / `06-production-board.md`; do not blindly build a weak plan.
@@ -674,6 +687,7 @@ Reject or stop before finishing if:
 - WIT is used as filler in every scene instead of only where it clarifies emotion
 - WIT appears on every cue or more than `2` times in a short-section big scene without a clear voice-rhythm reason
 - a user-rejected visual plan keeps controlling the remake after the user explicitly said to skip it
+- a user-rejected synthetic/CSS-only section is merely polished instead of rebuilt around real/object texture, stronger WIT, and fewer cue ideas
 - a short remake resets to a completely unrelated full-frame scene on every voice cue when the narration is still describing the same object or situation
 - a list-style section turns into scattered mini cards, many floating images, or too many independent labels instead of a few persistent backgrounds and cue changes
 - a remade hook fails to show the topic object or contradiction in the first few seconds
