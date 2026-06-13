@@ -20,7 +20,7 @@ Packaging is outside the main production pipeline.
 Main production chain:
 
 ```text
-TopicIntake -> ResearchPack -> ScriptDraft -> Voiceover -> VisualPlan -> Render -> Review -> Upload -> Learning
+TopicIntake -> ResearchPack -> ScriptDraft -> Voiceover -> VisualPlan -> Render -> AutoAdjust -> Review -> Upload -> Learning
 ```
 
 Packaging side branch:
@@ -48,6 +48,7 @@ Current dependency chain:
 |    4 | `voiceover`           | `04-voiceover.md` and `voiceover/`                                        | `02-script.md`                                       |
 |    5 | `visual-plan`         | `05-visual-plan.md`, `visual-plan/`, optional `assets/visual-references/` | `04-voiceover.md` and selected section voiceover     |
 |    6 | `render`              | `06-production-board.md`, `section-previews/`, `hyperframes/`, `renders/` | `05-visual-plan.md` and selected section visual plan |
+|  6.5 | `auto-adjust`         | targeted section preview fixes, review mirror sync, production-board notes | selected rendered section preview                    |
 |    7 | future review skill   | `07-review.md`                                                            | rendered or previewable video sections               |
 |    8 | future upload skill   | `08-upload.md`                                                            | approved review                                      |
 |    9 | future learning skill | `09-self-learning.md`                                                     | upload or review results                             |
@@ -81,6 +82,7 @@ Rerunning packaging does not make main pipeline outputs stale.
 - Step 4 `Voiceover` is implemented by `.agents/skills/voiceover/`.
 - Step 5 `Visual plan` is implemented by `.agents/skills/visual-plan/`.
 - Step 6 `Render` is implemented by `.agents/skills/render/`.
+- Post-render `Auto Adjust` is implemented by `.agents/skills/auto-adjust/`.
 - The remaining lifecycle steps do not have executable project-local skills yet.
 
 ## Section Production Branch
@@ -92,6 +94,8 @@ The `voiceover` skill should ask which script section to generate. It should off
 The `visual-plan` skill should follow the same section-first behavior after `04-voiceover.md`. It should ask which section to plan, offer `All` first, and create separate visual-plan outputs for every selected section.
 
 The `render` skill should follow the same section-first behavior after `05-visual-plan.md`. It should ask which section to build, offer `All` first, and create separate HyperFrames preview projects for every selected section.
+
+The `auto-adjust` skill runs after `render` and before `review`. It should require one selected project and one selected section, preserve the current section preview as canonical, apply review-prevention fixes, and never offer or accept `All`.
 
 Per-section voiceover outputs belong in:
 

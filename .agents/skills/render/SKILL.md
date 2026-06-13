@@ -276,6 +276,15 @@ Approved short-hook quality pattern from `why-cheap-products-keep-getting-worse`
 - Avoid translucent white wash overlays on real/object photos unless they are required for readability and documented. Real texture should stay visible.
 - Keep static hard cuts; no transitions or animation until the static version is approved.
 
+Approved explanatory-list recovery pattern from `why-cheap-products-keep-getting-worse` Section 4:
+
+- For a `30-45s` section that lists many small parts/features/support details, target about `3` big background scenes and `5-8` cue states unless the script has separate mechanisms.
+- Use a few strong real/object backgrounds as the base. Let the photo texture do work instead of adding many small images.
+- Compress lists into memory labels. Example: `FABRIC + STITCHING + HINGE`, `REPAIRABLE`, `SPARE PART STILL EXISTS`, `LESS FUTURE BUILT IN`.
+- Use generic CSS overlays for risky mockup targets such as phones, printers, branded devices, UI screens, or people; do not use cluttered/risky references directly.
+- Make WIT a giant emotional read on only the major beats, roughly one beat per big scene. Keep no-WIT beats for explanatory labels and object evidence.
+- Reject scattered product-part trays, piles of mini cards, many floating images, and paragraphs of labels. If a paused frame cannot be read in about one second, simplify before adding motion.
+
 Do not keep polishing a visual plan after the user identifies that plan as the failure source.
 
 ### Section Preview Build Mode
@@ -392,9 +401,13 @@ Channel-specific rules:
 - Reserve WIT for emotional beats: suspicion, betrayal, panic, confusion, judgment, evidence, trapped, or payoff.
 - Do not put WIT in every board if the object or evidence carries the narration better.
 - When WIT appears in a 1080p section, scale it large enough that facial emotion reads in normal Studio and screenshot review. A full-body WIT reaction is usually too small if it is below roughly one-third of the frame height.
-- For strong emotional beats, WIT can occupy roughly `1/3` to `1/2` of the frame, or more when it improves the joke and does not block text/evidence.
+- For every emotional WIT beat, the visible WIT character footprint must occupy at least `1/3` of the frame in the actual preview screenshot/contact sheet. Measure the visible character, face, body, and props, not the transparent PNG bounds or CSS box.
+- For strong emotional beats, target `1/3` to `1/2` visible frame presence by default, or more when it improves the joke and does not block text/evidence.
+- Do not default WIT to a full-body lower-corner sticker. For strong reaction/payoff beats, actively consider Section-1-style giant placements: oversized behind-layer WIT, half-body rising from the bottom edge, side peeks, corner peeks, upside-down top entrances, looming faces, WIT tucked behind/around the main object, or WIT hiding behind a wardrobe/product/tag/box/screen. Lower-body or side body crop is acceptable when it makes the emotion bigger.
 - Verify WIT safe crop in direct preview screenshots. Avoid accidental cuts through the face, head, shoulders, or important props; if it looks broken rather than intentionally peeking, reposition or scale before handoff.
+- Intentional WIT crop must never cut the face, glasses, head, shoulders, mouth, key prop, or readable emotion. If a contact sheet shows face/head/shoulder crop, treat it as a blocking layout bug and adjust before handoff.
 - Protect WIT's emotion from text too. In payoff/reaction beats, final tags, stamps, labels, and cards must not cover WIT's face, eyes, mouth, or key prop. Create separate text and WIT zones instead of relying on z-index or partial overlap.
+- Protect lower-third readability from subtitles too. Important labels, receipts, stamps, arrows, boxes, and payoff props near the bottom edge should be nudged upward into a subtitle-safe zone unless they are intentionally background-only.
 - If the current approved WIT library lacks a pose that expresses the beat, create or request a new approved WIT pose asset and save it in the shared/project WIT asset library before using it.
 - Use real-life assets as evidence, not decoration.
 - When the visual plan includes real-world references, inspect those images and source notes before using generated support assets.
@@ -414,6 +427,7 @@ Channel-specific rules:
 - Voice sync comes first.
 - Cue-critical visuals must be fully readable on the cue frame, not still traveling into place.
 - For rejected/remade sections, prefer sparse illustrative boards over slide layouts: one object, one joke/evidence point, one short label.
+- For rejected/remade explanatory-list sections, prefer a few real/object photo backgrounds with compressed category labels over separate cards for each listed item.
 - Use a local font file for handwritten labels when possible so preview/export output does not fall back to an ugly default font.
 
 If HyperFrames global guidance conflicts with the current channel rules, preserve the channel's approved simple-board style unless the user explicitly asks for a different render style.
@@ -453,10 +467,13 @@ Run this pass after reading the visual plan and before writing or editing HTML:
 - Voice cue map: list the exact phrase that triggers each label, prop, WIT, and markup.
 - Big-scene sanity: keep persistent scenes while the voice describes the same object or mechanism.
 - Cue density: each cue should add only one or two meaningful changes.
+- List compression: when a section names many related parts/features, group them into a small number of memory labels and background scenes before writing HTML.
 - Motion density: ordinary labels and notes should hard-show; only emphasized beats get impact motion.
 - WIT density: count WIT appearances per big scene; reduce if WIT reacts to every cue.
-- WIT scale/crop: check face/head/shoulders and important props before handoff.
+- WIT scale/placement/crop: if WIT is an emotion beat, verify visible WIT footprint reaches at least `1/3` of the frame; avoid tiny corner placement; test giant/behind-layer, corner-peek, upside-down top, object-hiding, side-peek, or lower-edge half-body placement while keeping labels/evidence readable.
+- WIT safe-crop: check face/head/shoulders, glasses, mouth, and important props before handoff; only lower body/edge crop is acceptable.
 - WIT/text collision: check both directions. WIT must not cover text/proof/payoff, and text/proof/payoff must not cover WIT's face/expression.
+- Subtitle-safe lower area: check lower-third labels, receipts, arrows, boxes, and payoff props; move cue-critical elements slightly upward when YouTube subtitles would likely cover them.
 - Markup meaning: every circle/arrow/underline must point to the exact object it explains.
 - Scene differentiation: direct scene bases should not repeat adjacent visual language unless intentional.
 - HyperFrames mechanics: data attributes, audio, deterministic GSAP, and timeline registration must follow the HyperFrames skill.
@@ -627,10 +644,12 @@ A section render is ready for review when:
 - labels are readable
 - WIT emotion is visible and useful
 - WIT density follows the voice rhythm; short sections should normally stay around `1-2` WIT beats per big scene
-- WIT is large enough to read facial emotion in Studio, direct preview screenshots, and screenshot contact sheets
+- emotional WIT visibly occupies at least `1/3` of the frame in Studio, direct preview screenshots, and screenshot contact sheets; transparent PNG padding or CSS box size does not count
+- strong WIT emotion beats do not look like small full-body corner stickers; if needed, WIT uses a giant behind-layer, side-peek, lower-edge half-body, or oversized-face placement
 - WIT face/head/shoulders and important props do not look accidentally cropped
 - WIT does not cover labels, proof objects, or payoff text
 - payoff text, stamps, and final cards do not cover WIT's face/expression when WIT is carrying the emotional beat
+- lower-third cue-critical elements are not parked in the likely YouTube subtitle zone
 - ordinary labels hard-show on beat unless they are true emphasis moments
 - impact animation is reserved for emphasized words, proof marks, contradiction labels, or payoff text
 - red circles, arrows, and marks point to the intended object, not nearby empty space
@@ -656,9 +675,12 @@ Reject or stop before finishing if:
 - WIT appears on every cue or more than `2` times in a short-section big scene without a clear voice-rhythm reason
 - a user-rejected visual plan keeps controlling the remake after the user explicitly said to skip it
 - a short remake resets to a completely unrelated full-frame scene on every voice cue when the narration is still describing the same object or situation
+- a list-style section turns into scattered mini cards, many floating images, or too many independent labels instead of a few persistent backgrounds and cue changes
 - a remade hook fails to show the topic object or contradiction in the first few seconds
 - red markup is decorative, meaningless, or misaligned with the object it claims to identify
 - WIT is too small to read the emotion at normal preview size
+- emotional WIT occupies less than `1/3` visible frame presence without an explicit user-approved tiny/background reason
+- WIT is a small lower-corner sticker on a beat where WIT is supposed to carry the main emotion
 - WIT face/head/shoulders are accidentally cropped, WIT covers the main label/proof/payoff, or payoff text covers WIT's face/expression
 - ordinary labels repeatedly fly/smash in and make the section visually dense
 - cue-critical elements appear early because delayed animation did not hide them at cue start

@@ -1,0 +1,731 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Section 08 Payoff</title>
+    <style>
+      @font-face {
+        font-family: "PatrickHandLocal";
+        src: url("./assets/fonts/patrick-hand-latin.woff2") format("woff2");
+        font-weight: 400;
+        font-style: normal;
+        font-display: block;
+      }
+
+      :root {
+        --paper: #f2eadb;
+        --cream: #fff8df;
+        --ink: #17120f;
+        --red: #7d1714;
+        --red-soft: #fff1ea;
+        --yellow: #efc63d;
+        --blue: #d8e7ee;
+        --mint: #dcebcf;
+        --shadow: rgba(42, 25, 12, 0.22);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        overflow: hidden;
+        background: var(--paper);
+        color: var(--ink);
+      }
+
+      #Section08Payoff {
+        position: relative;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: var(--paper);
+        font-family: "PatrickHandLocal";
+      }
+
+      .scene,
+      .cue {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      .scene {
+        z-index: 1;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .scene::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        z-index: 1;
+      }
+
+      .scene-tags {
+        background-image: url("./assets/section-08/hidden-tags.png");
+        background-position: center 48%;
+      }
+
+      .scene-tags::before {
+        background:
+          linear-gradient(
+            90deg,
+            rgba(242, 234, 219, 0.15) 0%,
+            rgba(242, 234, 219, 0.06) 54%,
+            rgba(23, 18, 15, 0.25) 100%
+          ),
+          radial-gradient(
+            circle at 22% 18%,
+            rgba(255, 248, 223, 0.45),
+            transparent 25%
+          );
+      }
+
+      .scene-receipt {
+        background-image: url("./assets/section-08/receipt-table.png");
+        background-position: center 50%;
+      }
+
+      .scene-receipt::before {
+        background:
+          linear-gradient(
+            90deg,
+            rgba(255, 248, 223, 0.45) 0%,
+            rgba(255, 248, 223, 0.1) 50%,
+            rgba(23, 18, 15, 0.18) 100%
+          ),
+          radial-gradient(
+            circle at 54% 20%,
+            rgba(255, 248, 223, 0.42),
+            transparent 28%
+          );
+      }
+
+      .scene-cardboard {
+        background-image: url("./assets/section-08/cardboard.jpg");
+        background-position: center 45%;
+      }
+
+      .scene-cardboard::before {
+        background:
+          linear-gradient(
+            90deg,
+            rgba(242, 234, 219, 0.88) 0%,
+            rgba(242, 234, 219, 0.7) 36%,
+            rgba(242, 234, 219, 0.22) 67%,
+            rgba(23, 18, 15, 0.18) 100%
+          ),
+          radial-gradient(
+            circle at 69% 18%,
+            rgba(255, 248, 223, 0.42),
+            transparent 31%
+          );
+      }
+
+      .cue {
+        z-index: 8;
+        pointer-events: none;
+      }
+
+      .label {
+        position: absolute;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 16px 30px 22px;
+        min-height: 74px;
+        background: var(--cream);
+        border: 7px solid var(--ink);
+        border-radius: 8px;
+        color: var(--ink);
+        box-shadow: 12px 14px 0 var(--shadow);
+        font-size: 68px;
+        line-height: 0.88;
+        text-align: center;
+        letter-spacing: 0;
+        transform: rotate(-2deg);
+        z-index: 12;
+      }
+
+      .label.small {
+        padding: 10px 22px 15px;
+        min-height: 54px;
+        border-width: 5px;
+        font-size: 43px;
+        line-height: 0.92;
+        box-shadow: 8px 10px 0 rgba(42, 25, 12, 0.16);
+      }
+
+      .label.tiny {
+        padding: 7px 17px 12px;
+        min-height: 42px;
+        border-width: 4px;
+        font-size: 34px;
+        line-height: 0.9;
+        box-shadow: 6px 7px 0 rgba(42, 25, 12, 0.14);
+      }
+
+      .label.yellow {
+        background: var(--yellow);
+      }
+
+      .label.blue {
+        background: var(--blue);
+      }
+
+      .label.mint {
+        background: var(--mint);
+      }
+
+      .label.red {
+        background: var(--red-soft);
+        border-color: var(--red);
+        color: var(--red);
+      }
+
+      .label.dark {
+        background: var(--ink);
+        border-color: #ffffff;
+        color: #ffffff;
+      }
+
+      .label > span,
+      .stamp > span,
+      .receipt-line > span,
+      .question-card > span {
+        display: inline-block;
+      }
+
+      .wit {
+        position: absolute;
+        z-index: 16;
+        object-fit: contain;
+        max-width: none;
+        filter: drop-shadow(22px 20px 0 rgba(23, 18, 15, 0.18));
+      }
+
+      .false-card {
+        position: absolute;
+        left: 155px;
+        top: 405px;
+        width: 560px;
+        height: 255px;
+        border: 8px solid var(--ink);
+        border-radius: 10px;
+        background: rgba(255, 248, 223, 0.94);
+        box-shadow: 15px 18px 0 var(--shadow);
+        transform: rotate(2.5deg);
+        z-index: 12;
+      }
+
+      .false-card .main {
+        position: absolute;
+        left: 45px;
+        top: 45px;
+        width: 470px;
+        font-size: 76px;
+        line-height: 0.86;
+        letter-spacing: 0;
+        text-align: center;
+      }
+
+      .false-card .bad {
+        color: var(--red);
+      }
+
+      .false-card .strike {
+        position: absolute;
+        left: 348px;
+        top: 106px;
+        width: 142px;
+        height: 16px;
+        border-radius: 999px;
+        background: var(--red);
+        transform: rotate(-10deg);
+        z-index: 13;
+      }
+
+      .tag-label {
+        position: absolute;
+        left: 210px;
+        top: 234px;
+        width: 650px;
+        min-height: 205px;
+        padding: 28px 36px 34px;
+        border: 9px solid var(--ink);
+        border-radius: 18px;
+        background: var(--yellow);
+        box-shadow: 18px 22px 0 rgba(42, 25, 12, 0.18);
+        color: var(--ink);
+        font-size: 78px;
+        line-height: 0.86;
+        text-align: center;
+        letter-spacing: 0;
+        transform: rotate(-4deg);
+        z-index: 12;
+      }
+
+      .hidden-future-note {
+        position: absolute;
+        left: 795px;
+        top: 440px;
+        width: 330px;
+        height: 130px;
+        padding: 18px 24px;
+        border: 6px dashed var(--red);
+        border-radius: 12px;
+        background: rgba(255, 241, 234, 0.92);
+        color: var(--red);
+        font-size: 49px;
+        line-height: 0.82;
+        text-align: center;
+        transform: rotate(7deg);
+        z-index: 13;
+      }
+
+      .future-strip {
+        position: absolute;
+        left: 325px;
+        top: 355px;
+        width: 420px;
+        min-height: 142px;
+        padding: 24px 28px 28px;
+        border: 7px dashed var(--red);
+        border-radius: 12px;
+        background: rgba(255, 241, 234, 0.93);
+        color: var(--red);
+        box-shadow: 10px 12px 0 rgba(42, 25, 12, 0.13);
+        font-size: 55px;
+        line-height: 0.82;
+        text-align: center;
+        transform: rotate(-3deg);
+        z-index: 12;
+      }
+
+      .cut-mark {
+        position: absolute;
+        left: 450px;
+        top: 383px;
+        width: 190px;
+        height: 105px;
+        z-index: 14;
+        transform: rotate(8deg);
+      }
+
+      .cut-mark::before,
+      .cut-mark::after {
+        content: "";
+        position: absolute;
+        left: 18px;
+        top: 48px;
+        width: 160px;
+        height: 12px;
+        border-radius: 999px;
+        background: var(--red);
+      }
+
+      .cut-mark::before {
+        transform: rotate(28deg);
+      }
+
+      .cut-mark::after {
+        transform: rotate(-28deg);
+      }
+
+      .receipt {
+        position: absolute;
+        left: 735px;
+        top: 118px;
+        width: 505px;
+        min-height: 720px;
+        padding: 34px 38px 45px;
+        border: 7px solid var(--ink);
+        border-radius: 6px;
+        background:
+          repeating-linear-gradient(
+            0deg,
+            rgba(23, 18, 15, 0.045) 0 3px,
+            transparent 3px 23px
+          ),
+          #fffdf2;
+        box-shadow: 18px 22px 0 rgba(42, 25, 12, 0.2);
+        transform: rotate(2deg);
+        z-index: 12;
+      }
+
+      .receipt-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 34px;
+        min-height: 126px;
+        padding-bottom: 22px;
+        border-bottom: 6px solid var(--ink);
+        font-size: 70px;
+        line-height: 0.9;
+        text-align: center;
+        letter-spacing: 0;
+      }
+
+      .checkout {
+        margin: 0 0 27px;
+        padding: 10px 16px 15px;
+        border: 5px solid var(--red);
+        border-radius: 6px;
+        color: var(--red);
+        font-size: 42px;
+        line-height: 0.9;
+        text-align: center;
+        transform: rotate(-1.5deg);
+      }
+
+      .receipt-line {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        margin: 17px 0;
+        padding: 16px 0 18px;
+        border-bottom: 4px dashed rgba(23, 18, 15, 0.55);
+        font-size: 47px;
+        line-height: 0.9;
+        letter-spacing: 0;
+      }
+
+      .receipt-line .box {
+        width: 54px;
+        height: 45px;
+        border: 5px solid var(--ink);
+        border-radius: 5px;
+        background: var(--mint);
+        flex: 0 0 auto;
+      }
+
+      .cardboard-tag {
+        position: absolute;
+        left: 132px;
+        top: 138px;
+        width: 640px;
+        min-height: 265px;
+        padding: 34px 42px 40px;
+        border: 9px solid var(--ink);
+        border-radius: 18px;
+        background: var(--yellow);
+        box-shadow: 18px 23px 0 rgba(42, 25, 12, 0.21);
+        color: var(--ink);
+        font-size: 90px;
+        line-height: 0.84;
+        text-align: center;
+        letter-spacing: 0;
+        transform: rotate(-4deg);
+        z-index: 12;
+      }
+
+      .question-card {
+        position: absolute;
+        left: 188px;
+        top: 455px;
+        width: 820px;
+        min-height: 218px;
+        padding: 30px 46px 38px;
+        border: 8px solid var(--ink);
+        border-radius: 10px;
+        background: rgba(255, 248, 223, 0.96);
+        box-shadow: 16px 19px 0 var(--shadow);
+        font-size: 74px;
+        line-height: 0.86;
+        text-align: center;
+        letter-spacing: 0;
+        transform: rotate(1.5deg);
+        z-index: 12;
+      }
+
+      .final-tag {
+        position: absolute;
+        left: 115px;
+        top: 160px;
+        width: 1000px;
+        min-height: 445px;
+        padding: 50px 62px 62px;
+        border: 10px solid var(--ink);
+        border-radius: 20px;
+        background: var(--yellow);
+        box-shadow: 23px 29px 0 rgba(42, 25, 12, 0.22);
+        color: var(--ink);
+        font-size: 93px;
+        line-height: 0.84;
+        text-align: center;
+        letter-spacing: 0;
+        transform: rotate(-2.5deg);
+        z-index: 12;
+      }
+
+      .final-question {
+        display: block;
+        position: relative;
+        z-index: 13;
+      }
+
+      .future-word {
+        position: relative;
+        display: inline-block;
+        color: var(--red);
+      }
+
+      .future-word::after {
+        content: "";
+        position: absolute;
+        left: -8px;
+        right: -8px;
+        bottom: -10px;
+        height: 13px;
+        border-radius: 999px;
+        background: var(--red);
+        transform: rotate(-2deg);
+      }
+
+      .stamp {
+        position: absolute;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 22px 17px;
+        border: 6px solid var(--red);
+        border-radius: 8px;
+        background: var(--red-soft);
+        color: var(--red);
+        box-shadow: 8px 10px 0 rgba(42, 25, 12, 0.14);
+        font-size: 45px;
+        line-height: 0.86;
+        text-align: center;
+        letter-spacing: 0;
+        transform: rotate(6deg);
+        z-index: 13;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="Section08Payoff"
+      data-composition-id="Section08Payoff"
+      data-start="0"
+      data-duration="29.141"
+      data-width="1920"
+      data-height="1080"
+    >
+      <div
+        id="scene-tags"
+        class="clip scene scene-tags"
+        data-start="0"
+        data-duration="9.2"
+        data-track-index="1"
+      ></div>
+      <div
+        id="scene-receipt"
+        class="clip scene scene-receipt"
+        data-start="9.2"
+        data-duration="11.4"
+        data-track-index="1"
+      ></div>
+      <div
+        id="scene-cardboard"
+        class="clip scene scene-cardboard"
+        data-start="20.6"
+        data-duration="8.541"
+        data-track-index="1"
+      ></div>
+
+      <div
+        id="cue-why-worse"
+        class="clip cue"
+        data-start="0"
+        data-duration="2.8"
+        data-track-index="2"
+      >
+        <img
+          class="wit"
+          style="right: -95px; bottom: -145px; width: 1130px"
+          src="./assets/wit/wit-pose-price-tag-suspicion.png"
+          alt=""
+          data-layout-allow-overflow=""
+        />
+        <div
+          class="label yellow"
+          style="left: 170px; top: 150px; width: 515px; font-size: 80px"
+        >
+          <span>WHY WORSE?</span>
+        </div>
+      </div>
+
+      <div
+        id="cue-not-bad"
+        class="clip cue"
+        data-start="2.8"
+        data-duration="3.0"
+        data-track-index="2"
+      >
+        <img
+          class="wit"
+          style="right: -95px; bottom: -145px; width: 1130px"
+          src="./assets/wit/wit-pose-price-tag-suspicion.png"
+          alt=""
+          data-layout-allow-overflow=""
+        />
+        <div class="false-card">
+          <div class="main">
+            <span>CHEAP != <span class="bad">BAD?</span></span>
+          </div>
+          <div class="strike"></div>
+        </div>
+        <div
+          class="label small mint"
+          style="
+            left: 450px;
+            top: 675px;
+            width: 330px;
+            transform: rotate(-5deg);
+          "
+        >
+          <span>NOT ALWAYS</span>
+        </div>
+      </div>
+
+      <div
+        id="cue-visible-price"
+        class="clip cue"
+        data-start="5.8"
+        data-duration="3.4"
+        data-track-index="2"
+      >
+        <img
+          class="wit"
+          style="right: -95px; bottom: -145px; width: 1130px"
+          src="./assets/wit/wit-pose-price-tag-suspicion.png"
+          alt=""
+          data-layout-allow-overflow=""
+        />
+        <div class="tag-label"><span>PRICE YOU SEE TODAY</span></div>
+        <div class="hidden-future-note"><span>FUTURE BEHIND IT</span></div>
+      </div>
+
+      <div
+        id="cue-future-cut"
+        class="clip cue"
+        data-start="9.2"
+        data-duration="4.64"
+        data-track-index="2"
+      >
+        <div class="future-strip"><span>FUTURE YOU DO NOT SEE</span></div>
+        <div class="cut-mark" data-layout-ignore=""></div>
+      </div>
+
+      <div
+        id="cue-real-price"
+        class="clip cue"
+        data-start="13.8"
+        data-duration="3.2"
+        data-track-index="2"
+      >
+        <div class="receipt">
+          <div class="receipt-header">REAL PRICE</div>
+          <div class="checkout">not only checkout</div>
+        </div>
+      </div>
+
+      <div
+        id="cue-receipt-lines"
+        class="clip cue"
+        data-start="17"
+        data-duration="5"
+        data-track-index="2"
+      >
+        <div class="receipt">
+          <div class="receipt-header">REAL PRICE</div>
+          <div class="checkout">not only checkout</div>
+          <div class="receipt-line" data-start="17.0" data-duration="5">
+            <span>LASTS LONG?</span><span class="box"></span>
+          </div>
+          <div class="receipt-line" data-start="18.0" data-duration="4">
+            <span>EASY TO FIX?</span><span class="box"></span>
+          </div>
+          <div class="receipt-line" data-start="19.5" data-duration="2.5">
+            <span>BUY AGAIN SOON?</span><span class="box"></span>
+          </div>
+        </div>
+        <img
+          class="wit"
+          style="right: -235px; bottom: -210px; width: 1210px"
+          src="./assets/wit/wit-pose-holding-receipt-evidence.png"
+          alt=""
+          data-layout-allow-overflow=""
+        />
+      </div>
+
+      <div
+        id="cue-old-question"
+        class="clip cue"
+        data-start="22"
+        data-duration="5"
+        data-track-index="2"
+      >
+        <div class="cardboard-tag"><span>BARGAIN?</span></div>
+        <div class="question-card" data-start="25.2 " data-duration="1.8">
+          <span>HOW MUCH DOES THIS COST?</span>
+        </div>
+        <div
+          class="stamp"
+          data-start="24"
+          data-duration="3"
+          style="left: 805px; top: 685px; width: 265px"
+        >
+          <span>not only</span>
+        </div>
+      </div>
+
+      <div
+        id="cue-final-question"
+        class="clip cue"
+        data-start="27"
+        data-duration="4.841"
+        data-track-index="2"
+      >
+        <div class="final-tag">
+          <span class="final-question"
+            >HOW MUCH <span class="future-word">FUTURE</span> IS INCLUDED?</span
+          >
+        </div>
+        <img
+          class="wit"
+          style="right: -175px; bottom: -225px; width: 1190px"
+          src="./assets/wit/wit-pose-deadpan-side-eye.png"
+          alt=""
+          data-layout-allow-overflow=""
+        />
+      </div>
+
+      <audio
+        id="voiceover-section-08"
+        data-start="0"
+        data-duration="29.141"
+        data-track-index="10"
+        data-volume="1"
+        crossorigin="anonymous"
+        src="./section-08-payoff-david23-am_eric-0.84.mp3"
+      ></audio>
+
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+        window.__timelines["Section08Payoff"] = tl;
+      </script>
+    </div>
+  </body>
+</html>

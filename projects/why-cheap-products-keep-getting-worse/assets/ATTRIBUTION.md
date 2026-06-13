@@ -4,7 +4,7 @@ Video:
 `Why Cheap Products Keep Getting Worse`
 
 Scope:
-`Current direct-production assets used by Render step for Sections 1-3`
+`Current direct-production assets used by Render step for Sections 1-4`
 
 ## Direct Production Assets
 
@@ -52,18 +52,36 @@ Scope:
   Creator: `Miguel A. Padrinan`
   Terms checked: `Pexels License`
   Safe-use note: all labels and correction marks added in HyperFrames
+- `visual-references/section-04-the-boring-parts-disappear/real-world/real-sewing-machine-stitching-fabric-pexels-shoreline-vehicles.jpg`
+  Use: Section `4`, Big Scene `1`, fabric/stitching background for `BORING FUTURE`
+  Source: [Pexels - Close-up of Sewing Machine Stitching Fabric](https://www.pexels.com/photo/close-up-of-sewing-machine-stitching-fabric-30902519/)
+  Creator: `shoreline vehicles`
+  Terms checked: `Pexels License`
+  Safe-use note: direct background with all labels and jokes added in HyperFrames
+- `visual-references/section-04-the-boring-parts-disappear/real-world/real-screwdriver-bits-pexels-roseson-studios.jpg`
+  Use: Section `4`, Big Scene `2`, repair-table / screwdriver background for `REPAIRABLE`
+  Source: [Pexels - Close-up of a Screwdriver](https://www.pexels.com/photo/close-up-of-a-screwdriver-20874131/)
+  Creator: `Roseson Studios`
+  Terms checked: `Pexels License`
+  Safe-use note: direct background with generic device/printer overlays and labels added in HyperFrames
+- `visual-references/section-04-the-boring-parts-disappear/real-world/real-cardboard-boxes-pexels-harper-sunday.jpg`
+  Use: Section `4`, Big Scene `3`, cardboard/product-box background for final `LESS FUTURE BUILT IN` payoff
+  Source: [Pexels - Close-up of Cardboard Boxes and Lids](https://www.pexels.com/photo/close-up-of-cardboard-boxes-and-lids-17260157/)
+  Creator: `Harper Sunday`
+  Terms checked: `Pexels License`
+  Safe-use note: direct background with final product box, WIT, and labels added in HyperFrames
 
 ### Reusable channel assets
 
 - `wit/`
-  Use: Section `1` WIT poses
+  Use: Sections `1-4` WIT poses
   Source: channel-approved shared WIT pose set via project junction to `.agents/_shared/assets/wit/poses/`
   Status: `safe channel asset`
 - `voiceover/`
-  Use: Section `1` approved narration audio via project junction to `voiceover/`
+  Use: Sections `1-4` approved narration audio via project junction to `voiceover/`
   Status: `project-local approved audio source`
 - `fonts/patrick-hand-latin.woff2`
-  Use: Section `1` handwritten labels
+  Use: Sections `1-4` handwritten labels
   Source: copied from existing project-local channel font asset in `projects/why-everyone-pretends-to-be-busy/assets/fonts/`
   Status: `project-local reusable font asset`
 
@@ -89,6 +107,14 @@ Scope:
   Status: `safe texture reference`; Section 3 Scene 3 used this only as material guidance for a CSS-built checkout promise arena
 - `visual-references/section-03-the-price-tag-speaks-first/generated/visible-shopping-promises-generated.png`
   Status: `safe generated support reference`; inspected and intentionally skipped for direct use in revised Section 3 because it repeated the same tabletop/tag visual language as Scene 1
+- `visual-references/section-04-the-boring-parts-disappear/real-world/real-rustic-hinge-pexels-brett-sayles.jpg`
+  Status: `mockup target`; hinge shape reference only, not used directly in the simplified remake
+- `visual-references/section-04-the-boring-parts-disappear/real-world/real-phone-battery-repair-pexels-harry-tucker.jpg`
+  Status: `mockup target`; phone/device repair layout reference only, not used directly because of visible device marks and UI/text
+- `visual-references/section-04-the-boring-parts-disappear/real-world/real-printer-repair-pexels-bulat843.jpg`
+  Status: `inspiration only`; printer/workbench reference only, not used directly because it contains a real person, visible workshop text, and too much clutter
+- `visual-references/section-04-the-boring-parts-disappear/section-04-reference-contact-sheet.png`
+  Status: `internal reference board`; not used directly in final video
 
 ## Notes
 

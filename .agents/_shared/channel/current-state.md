@@ -45,9 +45,10 @@ Use these compact files instead of the old many-file system:
 - `voiceover`: main step 4, writes `04-voiceover.md` and section audio
 - `visual-plan`: main step 5, writes `05-visual-plan.md`, section plans, reference boards, and visual reference assets
 - `render`: main step 6, writes `06-production-board.md`, section HyperFrames previews, review copies, and optional renders
+- `auto-adjust`: post-render section QA/fix pass before review; requires one project and one section, reads render/visual-plan memory plus shared visual rules, preserves manual Studio edits, and reports issues fixed
 - `wiw-take-note`: reusable memory capture
 
-Sequential production skills enforce prerequisites. Main pipeline order is `topic-intake -> research-pack -> script-draft -> voiceover -> visual-plan -> render -> review -> upload -> learning`. Packaging is a side branch from `research-pack`; it requires only topic intake and research pack and does not block script, voiceover, visual plan, render, review, upload, or learning. Rerunning an earlier main-pipeline dependency makes downstream main outputs stale until removed by explicit user request or regenerated in order. After voiceover, production branches by section: each section can move through visual plan, render, and review separately. Render uses fixed ports: unified preview on `localhost:1000`, section `N` on `localhost:1000 + N`.
+Sequential production skills enforce prerequisites. Main pipeline order is `topic-intake -> research-pack -> script-draft -> voiceover -> visual-plan -> render -> auto-adjust -> review -> upload -> learning`. Packaging is a side branch from `research-pack`; it requires only topic intake and research pack and does not block script, voiceover, visual plan, render, review, upload, or learning. Rerunning an earlier main-pipeline dependency makes downstream main outputs stale until removed by explicit user request or regenerated in order. After voiceover, production branches by section: each section can move through visual plan, render, auto-adjust, and review separately. Render uses fixed ports: unified preview on `localhost:1000`, section `N` on `localhost:1000 + N`.
 
 ## Current WIT
 
@@ -81,7 +82,8 @@ Do not use removed `original-wit-24`, older `core-24`, or `comedy-core` WIT as c
 - Section 1 render: `MP4 not requested; use preview only unless user explicitly asks to export video`
 - Section 1 current style: connected big scenes, reduced cue count, low animation density, large but sparse WIT emotional beats
 - Section 2 preview: `http://localhost:1002/#project/section-02-cheap-is-not-the-villain`
-- Section 2 current style: `3` connected big scenes, grouped cue overlays, reduced WIT density, phrase-timed hard-shows, no MP4 export
+- Section 2 current style: `3` connected big scenes, grouped cue overlays, reduced WIT density, phrase-timed hard-shows, giant Section-1-style WIT emotional placements, no MP4 export
+- Section 2 manual Studio preservation: Anh Khoa manually adjusted the localhost/Studio preview after the giant-WIT pass. Future Section 2 updates must preserve `section-previews/section-02-cheap-is-not-the-villain/index.html` as canonical, diff before editing, and never overwrite it from the visual plan, old generated drafts, or an older review mirror. The latest backup is `section-previews/section-02-cheap-is-not-the-villain/manual-saves/save-110159.html`.
 - Section preview rule: review and approve one section at a time; assemble sections only after the user asks
 - Section asset rule: use one video-level shared asset library at `projects/why-cheap-products-keep-getting-worse/assets`; local section previews use minimal hardlinked working sets on this Windows HyperFrames setup
 

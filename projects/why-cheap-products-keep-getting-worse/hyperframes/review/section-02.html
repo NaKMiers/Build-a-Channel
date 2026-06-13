@@ -189,6 +189,14 @@
       pointer-events: none;
     }
 
+    .wit.behind {
+      z-index: 7;
+    }
+
+    .wit.giant {
+      filter: drop-shadow(18px 22px 0 rgba(23, 18, 15, 0.20));
+    }
+
     .red-x {
       position: absolute;
       width: 330px;
@@ -609,8 +617,8 @@
       <div id="cheap-tag" class="label yellow" style="left: 116px; top: 132px; width: 430px;">CHEAP</div>
       <div id="bad-tag" class="label red" style="left: 710px; top: 126px; width: 350px;">BAD?</div>
       <div id="bad-x" class="red-x" style="left: 735px; top: 138px;"></div>
-      <div id="not-villain" class="label blue" style="left: 420px; bottom: 106px; width: 610px;">CHEAP IS NOT BAD</div>
-      <img id="wit-fair-suspicion" class="wit" data-layout-allow-overflow="" style="right: -120px; bottom: -150px; width: 740px;" src="./assets/wit/wit-pose-price-tag-suspicion.png" alt="">
+      <div id="not-villain" class="label blue" style="left: 420px; bottom: 182px; width: 610px;">CHEAP IS NOT BAD</div>
+      <img data-hf-studio-original-inline-translate="" data-hf-studio-original-translate="" data-hf-studio-path-offset="true" id="wit-fair-suspicion" class="wit giant behind" data-layout-allow-overflow="" style="right:-520px;bottom:-560px;width:1450px;--hf-studio-offset-x:-152px;--hf-studio-offset-y:4px;translate:var(--hf-studio-offset-x, 0px) var(--hf-studio-offset-y, 0px)" src="./assets/wit/wit-pose-facepalm.png" alt="">
 
       <div id="unfair-stamp" class="stamp timed" style="left: 496px; top: 330px;">UNFAIR</div>
       <div id="emotion-receipt" class="receipt timed" style="left: 820px; top: 304px;">
@@ -627,14 +635,10 @@
       <div id="works-check" class="check-badge" style="left: 754px; top: 340px;">OK</div>
 
       <div id="regular-product" class="label red timed" style="left: 1030px; top: 124px; width: 515px;">REGULAR PRODUCT</div>
-      <div id="nice-jacket" class="label yellow timed" style="left: 930px; bottom: 78px; width: 360px;">NICE JACKET</div>
-      <div id="not-magic" class="label small blue timed" style="left: 805px; top: 528px; width: 340px;">EXPENSIVE IS NOT MAGIC</div>
-      <div id="jacket-overlay" class="jacket timed" style="left: 1160px; top: 336px;" data-layout-ignore="">
-        <div class="sleeve left"></div>
-        <div class="sleeve right"></div>
-        <div class="body"></div>
-      </div>
-      <img id="wit-jacket" class="wit timed" data-layout-allow-overflow="" style="right: -130px; bottom: -185px; width: 700px;" src="./assets/wit/wit-pose-deadpan-side-eye.png" alt="">
+      <div id="nice-jacket" class="label yellow timed" style="left: 790px; bottom: 166px; width: 360px;">NICE JACKET</div>
+      <div id="not-magic" class="label small blue timed" style="left: 752px; top: 528px; width: 340px;">EXPENSIVE IS NOT MAGIC</div>
+      
+      <img id="wit-jacket" class="wit giant behind timed" data-layout-allow-overflow="" style="right: -350px; bottom: -560px; width: 1420px;" src="./assets/wit/wit-pose-confused.png" alt="">
     </div>
 
     <div id="overlay-missing-tomorrow" class="clip overlay" data-start="10.7" data-duration="11.615" data-track-index="2">
@@ -666,16 +670,16 @@
         </div>
       </div>
 
-      <img id="wit-suspicious" class="wit timed" data-layout-allow-overflow="" style="right: -150px; bottom: -170px; width: 760px;" src="./assets/wit/wit-pose-suspicious.png" alt="">
+      <img id="wit-suspicious" class="wit giant behind timed" data-layout-allow-overflow="" style="right: -430px; bottom: -650px; width: 1500px;" src="./assets/wit/wit-pose-shocked.png" alt="">
 
-      <div id="again-box" class="new-box timed"></div>
-      <div id="again-arrow" class="loop-arrow timed" data-layout-ignore=""></div>
-      <div id="again-receipt" class="receipt compact timed" style="right: 670px; bottom: 76px;">
+      <div id="again-box" class="new-box timed" style="right: 610px; top: 592px;"></div>
+      <div id="again-arrow" class="loop-arrow timed" style="left: 936px; top: 558px;" data-layout-ignore=""></div>
+      <div id="again-receipt" class="receipt compact timed" style="right: 820px; bottom: 164px;">
         <div class="receipt-title">AGAIN</div>
         <p><span>same thing</span><span class="bad">soon</span></p>
       </div>
       <div id="buy-again-stamp" class="stamp timed" style="right: 72px; top: 92px; width: 430px;">BUY AGAIN SOON</div>
-      <img id="wit-repeat-buyer" class="wit timed" data-layout-allow-overflow="" style="right: -110px; bottom: -140px; width: 760px;" src="./assets/wit/wit-pose-tiny-defeated.png" alt="">
+      <img id="wit-repeat-buyer" class="wit giant behind timed" data-layout-allow-overflow="" style="right: -520px; bottom: -610px; width: 1480px;" src="./assets/wit/wit-pose-money-panic.png" alt="">
     </div>
 
     <audio id="voiceover-section-02" data-start="0" data-duration="22.315" data-track-index="10" data-volume="1" crossorigin="anonymous" src="./section-02-cheap-is-not-the-villain-david23-am_eric-0.84.mp3"></audio>
@@ -698,8 +702,7 @@
       show("#regular-product", 7.8);
       show("#nice-jacket", 7.8);
       show("#not-magic", 7.8);
-      show("#jacket-overlay", 7.8);
-      show("#wit-jacket", 7.8);
+    show("#wit-jacket", 7.8);
 
       hide("#real-question", 13.1);
       hide("#annoying-question", 13.1);

@@ -26,6 +26,7 @@ Use this file for section-selection behavior, section visual-plan output shape, 
 - Every cue state needs a reason: clarity, evidence, emotion, joke, reveal, or payoff.
 - Red markup must mean something and target a specific object. Decorative or obvious marks should be removed.
 - WIT appearances must name exact approved PNG pose files and be large enough for facial emotion to read.
+- Plan a subtitle-safe lower area. Important lower-third labels, receipts, stamps, arrows, boxes, and payoff props should usually sit a bit above the bottom subtitle zone so YouTube captions do not cover them.
 - Every selected section must run a visual reference pass before finalizing the plan.
 - Real internet, self-shot, or existing local images are the default first layer for the reference pass because they make the video feel closer to the viewer.
 - Generated images are support assets, controlled mockups, cleanup/fallback images, or composition tests after real references are understood.
@@ -338,6 +339,92 @@ Apply next time:
 
 Promote to shared memory:
 yes; summarized in shared visual-production and learning log.
+
+### 2026-06-12 - Plan Giant WIT Placement For Strong Emotion Beats
+
+Classification: `Visual plan lesson`
+
+Context:
+After Section 2 of `why-cheap-products-keep-getting-worse` was updated with larger WIT poses, the user still said WIT was not dominant enough and pointed back to Section 1, where WIT became much more interesting by occupying roughly half the screen as a giant behind-layer or edge-peek emotional subject. The user said lower-body crop from the bottom is acceptable, but broken face/head/shoulder crop is not.
+
+Lesson:
+For strong emotional beats, visual-plan should not merely specify a pose and a corner placement. It should plan WIT as the emotional subject: giant behind-layer faces, side peeks, lower-edge half-body entrances, WIT looming beside or hiding around the main object, and other exaggerated compositions. WIT can occupy about `1/2` of the frame when the emotion carries the joke, as long as labels/evidence stay readable and face/head/shoulders/key props are safe.
+
+Apply next time:
+
+- avoid default full-body lower-corner WIT on strong reaction/payoff beats
+- plan giant WIT placements when WIT carries the emotion
+- allow intentional crop only through lower body, legs, or non-emotional edge areas
+- never plan crop through WIT's face, glasses, head, shoulders, mouth, or key prop
+- include separate text/evidence and WIT emotion zones in the cue plan
+- if existing poses do not fit a giant emotional composition, plan a new approved WIT pose asset
+
+Promote to shared memory:
+no; core shared rules already say WIT can be large, but this keeps the more concrete Section 1/2 placement pattern in visual-plan memory and SKILL.md.
+
+### 2026-06-12 - Plan Subtitle-Safe Lower Layouts
+
+Classification: `Visual plan lesson`
+
+Context:
+While adjusting Section 2 of `why-cheap-products-keep-getting-worse`, the user pointed out that some lower-third elements were too close to the bottom edge and would likely be covered by YouTube subtitles after upload.
+
+Lesson:
+Visual-plan should reserve a small subtitle-safe margin near the bottom of the frame. Important lower-third labels, receipts, arrows, loop boxes, and payoff props should be planned slightly higher unless they are intentionally background-only.
+
+Apply next time:
+
+- check every lower-third cue for subtitle overlap risk
+- place important text and props slightly above the bottom edge by default
+- treat the subtitle zone as unsafe for cue-critical information
+- if WIT rises from the bottom edge, move nearby text and props up instead of stacking them into the subtitle area
+- include subtitle-safe placement in the render handoff when a cue uses the lower third
+
+Promote to shared memory:
+yes; this affects future sections and future video projects on YouTube.
+
+### 2026-06-12 - Compress Explanatory Lists Into Memory Frames
+
+Classification: `Visual plan lesson`
+
+Context:
+In Section 4 of `why-cheap-products-keep-getting-worse`, the first visual direction became chaotic because the plan/render treated many boring product parts as separate objects, labels, and cards. The user rejected it as too text-heavy and image-heavy, and asked for the simpler Section 1 style. The successful remake used three large backgrounds, six cue states, and three giant WIT beats.
+
+Lesson:
+When a section lists many small product details, visual-plan must not itemize every noun on screen. Build a few memory frames instead: one persistent background per idea cluster, one or two short labels per cue, and WIT only where the emotion changes. Real/object backgrounds can carry texture while labels compress the concept.
+
+Apply next time:
+
+- start list-style sections by choosing `2-4` viewer memory frames
+- compress related terms into category labels instead of separate cards
+- prefer strong real/object backgrounds plus sparse labels over many small images
+- keep WIT large but limited to the main emotional beats
+- reject plans that feel like a vocabulary worksheet, product-parts inventory, or scattered object tray
+- if the user asks for Section-1-style simplicity, treat the existing plan as stale and remake it from script, voiceover, and approved references
+
+Promote to shared memory:
+no for now; this is captured in visual-plan and render skill behavior. Promote after the same pattern improves another project.
+
+### 2026-06-13 - Giant Creative WIT Is The Default Emotional Read
+
+Classification: `Visual plan lesson`
+
+Context:
+The user clarified that they love giant WIT with creative placements: appearing from a corner, upside down from the top, hiding behind an object such as a wardrobe, and other playful compositions. They want future renders to ensure WIT occupies at least one third of the screen on emotional beats.
+
+Lesson:
+Visual-plan must treat giant WIT as the default emotional design language. For any WIT emotional beat, plan the visible WIT character footprint to occupy at least `1/3` of the frame, measured by visible character area in the final screenshot/contact sheet, not by CSS box or transparent PNG bounds. The plan should include a creative placement concept rather than defaulting to a small full-body lower-corner sticker.
+
+Apply next time:
+
+- specify visible WIT footprint target for every WIT appearance
+- require at least `1/3` visible frame presence for emotional WIT beats
+- plan creative placements such as corner peeks, upside-down top entrances, hiding behind wardrobes/products/tags/boxes/screens, looming faces, or lower-edge half-body entrances
+- reserve a clean text/evidence zone so giant WIT can be large without covering the point
+- include WIT-heavy timestamps in screenshot/contact-sheet QA suggestions
+
+Promote to shared memory:
+no for now; keep in visual-plan/render skill memory until the same rule is proven across more future videos.
 
 ## Feedback Entry Template
 

@@ -28,17 +28,20 @@ This folder stores executable project-local Codex skills.
 - [Render](render/SKILL.md)
   Creates step 6 section HyperFrames preview projects, fixed localhost previews, production-board status, and optional section renders.
 
+- [Auto Adjust](auto-adjust/SKILL.md)
+  Runs after render to audit and automatically fix one selected section preview using review lessons, skill memory, shared knowledge, and previous sections.
+
 - [WIW Take Note](wiw-take-note/SKILL.md)
   Captures useful review and production feedback into the right project memory files.
 
 ## Remaining Future Skills
 
-`Topic Intake`, `Research Pack`, `Script Draft`, `Voiceover`, `Visual Plan`, and `Render` are the current main-pipeline video-production skills. `Packaging` is a side-branch skill.
+`Topic Intake`, `Research Pack`, `Script Draft`, `Voiceover`, `Visual Plan`, `Render`, and `Auto Adjust` are the current main-pipeline video-production skills. `Packaging` is a side-branch skill.
 
 Pipeline rule:
 
 - each skill requires the previous step output before it runs
-- main pipeline order is `topic-intake -> research-pack -> script-draft -> voiceover -> visual-plan -> render`
+- main pipeline order is `topic-intake -> research-pack -> script-draft -> voiceover -> visual-plan -> render -> auto-adjust`
 - render uses `localhost:1000` for unified preview and `localhost:1000 + section number` for section previews
 - packaging is a side branch from `research-pack`
 - packaging requires only topic intake and research pack; it does not require script or voiceover

@@ -28,6 +28,14 @@ The current standard is based on the approved Section 1 rebuild for `why-cheap-p
 few persistent big scenes -> small voice-timed cue changes -> real/local assets -> readable emotional WIT -> screenshot/contact-sheet QA handoff
 ```
 
+The Section 4 recovery for `why-cheap-products-keep-getting-worse` adds the default pattern for explanatory list sections:
+
+```text
+few strong real/object backgrounds -> compressed memory labels -> 3-4 giant WIT emotional beats -> no scattered object-card tray
+```
+
+When a script lists many small product details, do not give every noun its own card, image, arrow, or label. Collapse related items into one visual idea per big scene and one short label per cue unless the voiceover needs a specific proof object.
+
 If a visual plan would still force `render` to invent the main scene, timing, joke, asset choice, WIT pose, or markup placement, the plan is not finished.
 
 The plan must also prevent the most common render-review failures before they happen:
@@ -238,6 +246,8 @@ Use when the user asks to revise, simplify, add real-life images, change WIT act
 
 Read the existing section visual-plan folder first. Preserve approved decisions unless the user explicitly asks to replace them.
 
+If the user says a section is chaotic, too text-heavy, too image-heavy, too slide-like, or asks to remake it "like Section 1", treat both the current visual plan and downstream render for that section as stale. Rebuild the plan from script, voiceover, approved references, and current skill memory. Prefer sparse Section-1-style structure: `2-4` persistent backgrounds, `5-8` cue states for a `30-45s` explanatory section, one or two short labels per cue, and WIT only on the emotional beats.
+
 ### All Sections Mode
 
 Use when the user chooses `All`.
@@ -307,6 +317,8 @@ For a `20-25s` hook, default to:
 
 For longer sections, scale by idea density, not sentence count. Several sentences can share one cue state when they describe the same object or situation.
 
+For explanatory list sections, first ask which `2-4` visual memory frames the viewer should remember. Lists of parts, features, costs, promises, or hidden support systems should usually be compressed into category labels rather than itemized on screen. Example: `fabric + stitching + hinge` can be one support label on a fabric background; `battery + screw + spare part` can become one repairability scene. If the section starts looking like a vocabulary worksheet or product-parts inventory, reduce cue count before adding more references.
+
 Cut to a new big scene only when:
 
 - the narration moves to a new object, place, mechanism, evidence type, or payoff
@@ -370,7 +382,8 @@ For each WIT appearance, specify:
 - emotion
 - local time range
 - screen region
-- relative size target
+- visible footprint target, measured by the visible WIT character in the final frame, not by the PNG/CSS box
+- creative placement concept, such as corner peek, upside-down top entrance, hiding behind a product/wardrobe/tag/box/screen, looming from behind an object, or half-body rise from an edge
 - safe crop rule: face/head/shoulders and important props fully readable unless intentionally peeking
 - why WIT is needed
 
@@ -380,7 +393,9 @@ Do not use WIT as filler in every cue state.
 Do not plan WIT for every cue just because the pose library has enough poses. For short sections, default to about `1-2` WIT beats per persistent big scene, then adjust only if the voice rhythm needs more emotional reactions.
 Do not draw WIT in HTML/SVG/CSS.
 Do not invent random WIT.
-If WIT is planned, it must be large enough that facial emotion reads in a 1080p Studio preview and screenshot/contact-sheet review. For emotional beats, plan WIT around `1/3` to `1/2` of the frame when layout allows, and larger only when it strengthens the joke without blocking labels or evidence.
+If WIT is planned for an emotional beat, its visible character footprint must occupy at least `1/3` of the frame in the planned screenshot/contact-sheet frame. This means the visible WIT body/face area, not the transparent PNG bounds or CSS box. Default to `1/3` to `1/2` of the frame, and go larger when it strengthens the joke without blocking labels or evidence.
+Do not default to full-body WIT standing in a lower corner. For strong reaction/payoff beats, plan Section-1-style giant WIT placements: behind-layer oversized faces, half-body entrances from the lower edge, side peeks, WIT appearing from a corner, upside-down WIT dropping from the top, WIT hiding behind a wardrobe/product/tag/box/screen, WIT looming beside the main object, or cropped lower-body compositions that make the emotion dominate the frame.
+Intentional WIT crop is allowed only for body/legs/edge peeking. Never plan a crop that cuts through WIT's face, glasses, head, shoulders, mouth, key prop, or readable emotion. If a contact-sheet frame would make WIT look accidentally broken, the plan must choose a different placement, scale, or pose.
 When WIT is the emotional subject of a payoff or reaction beat, plan a clean WIT emotion zone. Payoff text, stamps, tags, and labels must not cover WIT's face, eyes, mouth, or key prop; solve this with separate screen regions, not by hoping render can layer around it later.
 If the current approved pose library cannot express the beat, plan a new WIT pose asset and save it into the shared/project WIT asset library instead of settling for a weak pose.
 
@@ -390,6 +405,7 @@ Every WIT plan must include a density note:
 - WIT beats per big scene
 - why any big scene exceeds `2` WIT beats
 - which cue states intentionally have no WIT so the section can breathe
+- which screenshot/contact-sheet timestamps must prove each emotional WIT beat reaches at least `1/3` visible frame presence
 
 ### Markup And Label Rules
 
@@ -424,9 +440,11 @@ Before writing the final section visual plan, run this self-check and fix the pl
 - Motion density: are ordinary labels planned as `hard-show`, not animated decoration?
 - Emphasis: are smash/stamp/pop actions reserved for words or proof the voice stresses?
 - WIT rhythm: does WIT appear only where the emotion changes or peaks?
-- WIT size: will the expression read at screenshot/contact-sheet size?
-- WIT crop: are face/head/shoulders and important props safely inside frame or intentionally peeking?
+- WIT size: does each emotional WIT beat visibly occupy at least `1/3` of the frame in the planned screenshot/contact-sheet frame?
+- WIT placement: if this is a strong emotion beat, is WIT treated as the emotional subject with a creative giant placement instead of a small lower-corner sticker?
+- WIT crop: are face/head/shoulders and important props safely inside frame, with only body/legs/edge peeks intentionally cropped?
 - Text/WIT collision: does WIT avoid covering labels, main evidence, and payoff text, and do payoff text/stamps avoid covering WIT's face/expression?
+- Subtitle-safe layout: do important lower-third labels, receipts, stamps, arrows, boxes, and payoff props sit high enough that typical YouTube subtitles will not cover them?
 - Markup meaning: does every arrow/circle/underline point to a real target and explain the line?
 - Visual differentiation: do non-callback big scenes avoid repeating the same visual language?
 - HyperFrames readiness: can render build without inventing main scenes, timing, WIT choices, label text, markup placement, or motion type?
@@ -779,6 +797,8 @@ A section visual plan is ready when:
 - cue count is intentionally low enough for the section duration
 - WIT emotion supports the viewer's feeling
 - WIT pose filenames, placement, and scale guidance are included when WIT appears
+- emotional WIT beats specify a visible WIT footprint of at least `1/3` of the frame, measured by visible character area rather than CSS/PNG bounds
+- strong WIT emotion beats are planned as emotional subjects, not small full-body lower-corner stickers
 - WIT density is counted and justified per big scene
 - WIT crop and text/evidence collision risks are handled
 - ordinary labels use hard-show unless emphasis needs impact motion
@@ -811,6 +831,7 @@ Reject or stop before finishing if:
 - the cue timeline creates too many unrelated full-scene cuts for a short section
 - cue states are based on sentence count instead of visual idea changes
 - a cue state has no clarity, evidence, emotion, or joke reason to exist
+- a list-style narration becomes a scattered tray of mini cards, images, arrows, or labels instead of a few memory frames
 - red markup is decorative, meaningless, or does not target a specific object
 - the plan does not map every important visual resource to what / when / how / where usage
 - HyperFrames would need to invent the main visual idea, asset list, or timing
@@ -822,6 +843,8 @@ Reject or stop before finishing if:
 - a short section exceeds `2` WIT beats in a big scene without a clear reason
 - WIT appears without a real approved pose filename when WIT assets exist
 - WIT is planned too small to read facial emotion
+- emotional WIT is planned below `1/3` visible frame presence without an explicit user-approved tiny/background reason
+- WIT is planned as a small lower-corner sticker on a beat where WIT should carry the main emotion
 - WIT crop would make the character look broken
 - WIT would cover the main label, proof object, or payoff text
 - payoff text, stamps, tags, or labels would cover WIT's face/expression in the emotional beat

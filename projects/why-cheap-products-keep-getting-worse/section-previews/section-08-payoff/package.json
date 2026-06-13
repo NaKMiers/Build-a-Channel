@@ -1,0 +1,10 @@
+{
+  "name": "why-cheap-products-section-08-payoff",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx --yes hyperframes@0.6.76 preview",
+    "check": "npx --yes hyperframes@0.6.76 lint && npx --yes hyperframes@0.6.76 validate && npx --yes hyperframes@0.6.76 inspect --at 0.8,3.6,7.2,10.8,13.6,18.2,22.2,26.8,28.7",
+    "render": "npx --yes hyperframes@0.6.76 render"
+  }
+}

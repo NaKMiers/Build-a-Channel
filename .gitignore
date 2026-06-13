@@ -1,2 +1,5 @@
 .agents/skills/browse
 .gstack/
+
+# HyperFrames section-preview cache (local only; paths can exceed Windows MAX_PATH)
+**/.thumbnails/

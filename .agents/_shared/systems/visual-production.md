@@ -160,6 +160,17 @@ WIT crop guard:
 - payoff text/stamps/cards should not sit on top of WIT's face or expression; create separate text and WIT zones
 - if no approved pose fits the beat, create or request a new approved WIT pose in shared/project assets instead of forcing a weak pose
 
+## Subtitle-Safe Lower Area
+
+YouTube subtitles can cover elements placed too close to the bottom edge.
+
+Plan and render with a small subtitle-safe margin:
+
+- important labels, receipts, stamps, arrows, boxes, and payoff props should usually sit a bit above the bottom edge
+- do not put cue-critical text in the lower subtitle zone just because the frame has empty space there
+- only background or nonessential decorative elements should live very close to the bottom edge
+- when WIT rises from the bottom edge, keep the emotional read clear while moving nearby text and props upward into the safe zone
+
 ## HyperFrames Board Guidance
 
 Use:

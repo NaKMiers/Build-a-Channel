@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Section 04 The Boring Parts Disappear - Simple Remake</title>
+  <style>
+    @font-face {
+      font-family: "PatrickHandLocal";
+      src: url("./assets/fonts/patrick-hand-latin.woff2") format("woff2");
+      font-weight: 400;
+      font-style: normal;
+      font-display: block;
+    }
+
+    :root {
+      --paper: #f2eadb;
+      --cream: #fff8df;
+      --ink: #17120f;
+      --red: #7d1714;
+      --red-soft: #fff1ea;
+      --yellow: #efc63d;
+      --blue: #d8e7ee;
+      --shadow: rgba(42, 25, 12, 0.22);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: var(--paper);
+      color: var(--ink);
+    }
+
+    #Section04TheBoringPartsDisappear {
+      position: relative;
+      width: 1920px;
+      height: 1080px;
+      overflow: hidden;
+      background: var(--paper);
+      font-family: "PatrickHandLocal";
+    }
+
+    .scene,
+    .cue {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .scene {
+      z-index: 1;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .scene::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .scene-material {
+      background-image: url("./assets/section-04/fabric.jpg");
+      background-position: center 40%;
+    }
+
+    .scene-material::before {
+      background:
+        linear-gradient(90deg, rgba(242, 234, 219, 0.92) 0%, rgba(242, 234, 219, 0.70) 28%, rgba(242, 234, 219, 0.12) 72%, rgba(23, 18, 15, 0.20) 100%),
+        radial-gradient(circle at 84% 16%, rgba(255, 248, 223, 0.46), transparent 28%);
+    }
+
+    .scene-repair {
+      background-image: url("./assets/section-04/screwdriver.jpg");
+      background-position: center 52%;
+    }
+
+    .scene-repair::before {
+      background:
+        linear-gradient(90deg, rgba(216, 231, 238, 0.90) 0%, rgba(216, 231, 238, 0.70) 38%, rgba(216, 231, 238, 0.20) 78%, rgba(23, 18, 15, 0.24) 100%),
+        radial-gradient(circle at 72% 14%, rgba(255, 248, 223, 0.52), transparent 26%);
+    }
+
+    .scene-box {
+      background-image: url("./assets/section-04/cardboard.jpg");
+      background-position: center;
+    }
+
+    .scene-box::before {
+      background:
+        linear-gradient(90deg, rgba(242, 234, 219, 0.88) 0%, rgba(242, 234, 219, 0.62) 46%, rgba(242, 234, 219, 0.16) 72%, rgba(23, 18, 15, 0.18) 100%),
+        radial-gradient(circle at 70% 18%, rgba(255, 248, 223, 0.48), transparent 30%);
+    }
+
+    .cue {
+      z-index: 8;
+      pointer-events: none;
+    }
+
+    .label {
+      position: absolute;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px 30px 22px;
+      min-height: 74px;
+      background: var(--cream);
+      border: 7px solid var(--ink);
+      border-radius: 8px;
+      color: var(--ink);
+      box-shadow: 12px 14px 0 var(--shadow);
+      font-size: 68px;
+      line-height: 0.88;
+      text-align: center;
+      letter-spacing: 0;
+      transform: rotate(-2deg);
+      z-index: 12;
+    }
+
+    .label.small {
+      padding: 10px 22px 15px;
+      min-height: 54px;
+      border-width: 5px;
+      font-size: 42px;
+      line-height: 0.92;
+      box-shadow: 8px 10px 0 rgba(42, 25, 12, 0.16);
+    }
+
+    .label.dark {
+      background: var(--ink);
+      border-color: #ffffff;
+      color: #ffffff;
+    }
+
+    .label.yellow {
+      background: var(--yellow);
+    }
+
+    .label.blue {
+      background: var(--blue);
+    }
+
+    .label.red {
+      background: var(--red-soft);
+      border-color: var(--red);
+      color: #230403;
+    }
+
+    .stamp {
+      position: absolute;
+      padding: 18px 34px 24px;
+      background: var(--red-soft);
+      border: 10px solid var(--red);
+      color: #230403;
+      box-shadow: 10px 12px 0 rgba(125, 23, 20, 0.14);
+      font-size: 88px;
+      line-height: 0.84;
+      text-align: center;
+      transform: rotate(-7deg);
+      z-index: 14;
+    }
+
+    .wit {
+      position: absolute;
+      object-fit: contain;
+      z-index: 14;
+      filter: drop-shadow(14px 18px 0 rgba(23, 18, 15, 0.20));
+    }
+
+    .device {
+      position: absolute;
+      left: 160px;
+      top: 330px;
+      width: 480px;
+      height: 310px;
+      border: 10px solid var(--ink);
+      border-radius: 34px;
+      background: rgba(255, 248, 223, 0.86);
+      box-shadow: 18px 22px 0 rgba(23, 18, 15, 0.17);
+      transform: rotate(-2deg);
+      z-index: 10;
+    }
+
+    .device::before {
+      content: "";
+      position: absolute;
+      left: 58px;
+      top: 56px;
+      width: 190px;
+      height: 190px;
+      border: 7px dashed var(--ink);
+      border-radius: 22px;
+      opacity: 0.58;
+    }
+
+    .device::after {
+      content: "";
+      position: absolute;
+      right: 52px;
+      top: 86px;
+      width: 126px;
+      height: 130px;
+      border: 7px solid var(--ink);
+      border-radius: 20px;
+      background: var(--blue);
+    }
+
+    .small-drawer {
+      position: absolute;
+      left: 205px;
+      top: 660px;
+      width: 370px;
+      height: 120px;
+      border: 8px solid var(--ink);
+      border-radius: 20px;
+      background: #d9a66f;
+      box-shadow: 12px 14px 0 rgba(23, 18, 15, 0.16);
+      transform: rotate(2deg);
+      z-index: 10;
+    }
+
+    .small-drawer::before {
+      content: "";
+      position: absolute;
+      left: 42px;
+      top: 34px;
+      width: 70px;
+      height: 44px;
+      border: 6px solid var(--ink);
+      border-radius: 12px;
+      background: var(--blue);
+    }
+
+    .printer {
+      position: absolute;
+      left: 700px;
+      top: 520px;
+      width: 560px;
+      height: 250px;
+      border: 10px solid var(--ink);
+      border-radius: 30px 30px 18px 18px;
+      background: rgba(255, 248, 223, 0.90);
+      box-shadow: 18px 22px 0 rgba(23, 18, 15, 0.16);
+      z-index: 12;
+    }
+
+    .printer::before {
+      content: "";
+      position: absolute;
+      left: 82px;
+      top: -86px;
+      width: 390px;
+      height: 98px;
+      border: 8px solid var(--ink);
+      border-bottom: 0;
+      border-radius: 22px 22px 0 0;
+      background: var(--blue);
+      transform: rotate(-3deg);
+    }
+
+    .printer::after {
+      content: "";
+      position: absolute;
+      left: 92px;
+      top: 78px;
+      width: 360px;
+      height: 54px;
+      border: 7px solid var(--ink);
+      border-radius: 12px;
+      background: #2a3136;
+    }
+
+    .quote {
+      position: absolute;
+      left: 905px;
+      top: 145px;
+      width: 575px;
+      min-height: 170px;
+      padding: 28px 34px 34px;
+      border: 7px solid var(--ink);
+      border-radius: 28px;
+      background: #fffdf5;
+      box-shadow: 13px 15px 0 rgba(23, 18, 15, 0.16);
+      font-size: 58px;
+      line-height: 0.88;
+      text-align: center;
+      transform: rotate(2deg);
+      z-index: 15;
+    }
+
+    .box {
+      position: absolute;
+      left: 185px;
+      top: 300px;
+      width: 600px;
+      height: 410px;
+      border: 10px solid var(--ink);
+      border-radius: 34px;
+      background: rgba(255, 248, 223, 0.74);
+      box-shadow: 20px 24px 0 rgba(23, 18, 15, 0.18);
+      transform: rotate(-1.5deg);
+      z-index: 10;
+    }
+
+    .box::before {
+      content: "";
+      position: absolute;
+      left: 56px;
+      top: 58px;
+      right: 56px;
+      height: 82px;
+      border: 7px solid var(--ink);
+      border-radius: 16px;
+      background: rgba(239, 198, 61, 0.65);
+    }
+
+    .box::after {
+      content: "";
+      position: absolute;
+      left: 94px;
+      top: 200px;
+      width: 410px;
+      height: 108px;
+      border: 7px dashed var(--red);
+      border-radius: 20px;
+      background: rgba(255, 241, 234, 0.58);
+    }
+
+    .slash {
+      position: absolute;
+      width: 260px;
+      height: 150px;
+      z-index: 15;
+      transform: rotate(8deg);
+    }
+
+    .slash::before,
+    .slash::after {
+      content: "";
+      position: absolute;
+      left: 18px;
+      top: 68px;
+      width: 224px;
+      height: 13px;
+      border-radius: 999px;
+      background: var(--red);
+    }
+
+    .slash::before {
+      transform: rotate(24deg);
+    }
+
+    .slash::after {
+      transform: rotate(-24deg);
+    }
+
+    .label > span,
+    .stamp > span,
+    .quote > span {
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <div id="Section04TheBoringPartsDisappear" data-composition-id="Section04TheBoringPartsDisappear" data-start="0" data-duration="37.867" data-width="1920" data-height="1080">
+    <div id="scene-material" class="clip scene scene-material" data-start="0" data-duration="9.8" data-track-index="1"></div>
+    <div id="scene-repair" class="clip scene scene-repair" data-start="9.8" data-duration="18.99" data-track-index="1"></div>
+    <div id="scene-box" class="clip scene scene-box" data-start="28.8" data-duration="9.067" data-track-index="1"></div>
+
+    <div id="cue-boring-future" class="clip cue" data-start="0" data-duration="4.79" data-track-index="2">
+      <img class="wit" style="left: -235px; bottom: -335px; width: 1290px;" src="./assets/wit/wit-pose-suspicious.png" alt="" data-layout-allow-overflow="">
+      <div class="label yellow" style="left: 720px; top: 152px; width: 560px;"><span>BORING FUTURE</span></div>
+    </div>
+
+    <div id="cue-material-list" class="clip cue" data-start="4.8" data-duration="5.0" data-track-index="2">
+      <img class="wit" style="left: -235px; bottom: -335px; width: 1290px;" src="./assets/wit/wit-pose-suspicious.png" alt="" data-layout-allow-overflow="">
+      <div class="label yellow" style="left: 720px; top: 152px; width: 560px;"><span>BORING FUTURE</span></div>
+      <div class="label blue" style="left: 740px; top: 610px; width: 640px; transform: rotate(2deg);"><span>FABRIC + STITCHING + HINGE</span></div>
+    </div>
+
+    <div id="cue-repairable" class="clip cue" data-start="9.8" data-duration="6.39" data-track-index="2">
+      <div class="device"></div>
+      <div class="label blue" style="left: 725px; top: 150px; width: 430px;"><span>REPAIRABLE</span></div>
+      <div class="label small red" style="left: 830px; top: 288px; width: 385px; transform: rotate(4deg);"><span>SECRET HANDSHAKE</span></div>
+      <div class="slash" style="left: 895px; top: 248px;" data-layout-ignore=""></div>
+    </div>
+
+    <div id="cue-spare-part" class="clip cue" data-start="16.2" data-duration="4.29" data-track-index="2">
+      <div class="device" style="opacity: 0.88;"></div>
+      <div class="small-drawer"></div>
+      <div class="label yellow" style="left: 720px; top: 168px; width: 650px;"><span>SPARE PART STILL EXISTS</span></div>
+    </div>
+
+    <div id="cue-printer-person" class="clip cue" data-start="20.5" data-duration="8.29" data-track-index="2">
+      <img class="wit" style="left: -160px; bottom: -330px; width: 1270px;" src="./assets/wit/wit-pose-thinking.png" alt="" data-layout-allow-overflow="">
+      <div class="printer"></div>
+      <div class="quote"><span>WOW. LONG-TERM PARTS.</span></div>
+    </div>
+
+    <div id="cue-final" class="clip cue" data-start="28.8" data-duration="9.067" data-track-index="2">
+      <div class="box"></div>
+      <div class="label yellow" style="left: 142px; top: 122px; width: 500px;"><span>LOOKS COMPLETE</span></div>
+      <div class="stamp" style="left: 425px; top: 720px; width: 675px;"><span>LESS FUTURE BUILT IN</span></div>
+      <img class="wit" style="right: -140px; bottom: -245px; width: 1240px;" src="./assets/wit/wit-pose-betrayed.png" alt="" data-layout-allow-overflow="">
+    </div>
+
+    <audio id="voiceover-section-04" data-start="0" data-duration="37.867" data-track-index="10" data-volume="1" crossorigin="anonymous" src="./section-04-the-boring-parts-disappear-david23-am_eric-0.84.mp3"></audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines["Section04TheBoringPartsDisappear"] = tl;
+    </script>
+  </div>
+</body>
+</html>

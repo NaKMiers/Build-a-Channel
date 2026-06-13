@@ -34,6 +34,7 @@ Use this file for section preview structure, port behavior, HyperFrames CLI habi
 - If a transition damages voice sync, simplify it or use a hard cut.
 - Design element entrance, hold, emphasis, and exit against spoken cues.
 - Emphasized spoken words such as `FREE`, `URGENT`, or `BUSY` should get matching visual emphasis when they are important to the beat.
+- Keep a subtitle-safe lower area. Important lower-third labels, receipts, stamps, arrows, boxes, and payoff props should usually sit a bit above the bottom edge so YouTube subtitles do not cover them.
 - If the user manually edits a localhost/HyperFrames Studio preview, preserve the current section `index.html` as canonical. Diff before editing, do not overwrite from review mirrors or older plans, and remove only targeted accidental artifacts such as unreferenced VFX blocks or duration extensions.
 - Do not create MP4/WebM files during normal render, preview, animation, timing, QA, or review-fix work. Only export video files when the user explicitly asks to export video, render an MP4/WebM, or create a video file.
 - Stop before review, upload, or learning unless explicitly asked.
@@ -505,6 +506,93 @@ Apply next time:
 
 Promote to shared memory:
 yes; summarized in shared visual-production and learning log.
+
+### 2026-06-12 - Render Giant WIT When Emotion Carries The Beat
+
+Classification: `Render lesson`
+
+Context:
+After Section 2 of `why-cheap-products-keep-getting-worse` was updated with larger WIT poses, the user still said WIT looked too small compared with Section 1. The accepted direction was to make WIT a giant emotional layer occupying roughly half the screen, sometimes rising from the bottom or peeking from an edge. Cropping lower body is acceptable; cropping face/head/shoulders is not.
+
+Lesson:
+Render must not settle for a small full-body corner WIT when WIT is carrying the main emotion. For strong reaction/payoff beats, test giant behind-layer or edge-peek compositions before handoff. The right crop style is intentionally oversized and funny: lower body can disappear off the bottom or side, but the face, glasses, head, shoulders, mouth, key prop, and expression must remain readable.
+
+Apply next time:
+
+- inspect the visual plan but still run render-side WIT placement judgment
+- scale strong WIT beats toward `1/2` frame when labels/evidence can stay readable
+- use behind-layer giant WIT, lower-edge half-body, side-peek, looming face, or object-hiding placements instead of default lower-corner full body
+- treat face/head/shoulder crop as a blocking bug even if `inspect` passes
+- verify all giant WIT changes with runtime-seek screenshots/contact sheets
+- if no current pose reads well at giant scale, add or request a new approved WIT pose in shared/project assets
+
+Promote to shared memory:
+no; shared visual-production already contains the general WIT rule. Keep this concrete render execution pattern here and in `render/SKILL.md`.
+
+### 2026-06-12 - Render Must Reserve Subtitle-Safe Lower Margin
+
+Classification: `Render lesson`
+
+Context:
+While updating Section 2 of `why-cheap-products-keep-getting-worse`, the user said some elements were too close to the bottom edge and would likely be covered by YouTube subtitles after upload. The accepted fix moved `CHEAP IS NOT BAD`, `NICE JACKET`, and the final `AGAIN` receipt/loop cluster upward slightly without changing the approved scene structure.
+
+Lesson:
+Render should treat the lower subtitle zone as unsafe for cue-critical information. Important lower-third labels, receipts, stamps, arrows, boxes, and payoff props should be nudged upward by default unless they are intentionally background-only.
+
+Apply next time:
+
+- inspect lower-third elements for likely subtitle overlap before handoff
+- move cue-critical bottom-edge elements slightly upward instead of leaving them flush with the frame edge
+- preserve approved scene structure while adjusting only the risky lower-third placements
+- if WIT rises from the bottom edge, move nearby text and props upward rather than stacking them into the subtitle zone
+- document subtitle-safe adjustments in implementation notes when they materially affect layout
+
+Promote to shared memory:
+yes; this is a reusable YouTube layout rule for future sections and projects.
+
+### 2026-06-12 - Remake Crowded List Sections With Sparse Backgrounds
+
+Classification: `Render lesson`
+
+Context:
+In Section 4 of `why-cheap-products-keep-getting-worse`, the first render direction used too many text blocks, object cards, and scattered images. The user rejected it and asked for Section-1-style simplicity. The accepted recovery used three full-frame real/object backgrounds, six cue states, three giant WIT emotional beats, and only a few labels.
+
+Lesson:
+For explanatory-list sections, render should not build a separate visual object for every listed detail. Use a few persistent backgrounds and compressed labels, then let giant WIT carry emotion on selected beats. If the frame starts reading like a product-parts tray or slide full of cards, simplify structure before adding motion.
+
+Apply next time:
+
+- for `30-45s` list sections, start around `3` big scenes and `5-8` cue states
+- use real/object backgrounds as the base and keep labels sparse
+- group related details into memory labels such as material quality, repairability, spare parts, or missing future
+- use generic CSS overlays for risky references like real phones, printers, UI, people, or brands
+- use WIT on only the main emotional beats and make it large enough to dominate the reaction
+- create a contact sheet from runtime seeks before handoff to confirm the section reads simply
+
+Promote to shared memory:
+no for now; keep as concrete render execution memory unless repeated across more sections.
+
+### 2026-06-13 - Verify Giant WIT By Visible Footprint
+
+Classification: `Render lesson`
+
+Context:
+The user asked to check `visual-plan` and `render` again and make sure the next render makes WIT occupy at least one third of the screen. They specifically like giant creative WIT poses: corner appearances, upside-down top entrances, hiding behind a wardrobe/object, and similar playful framing.
+
+Lesson:
+Render must verify WIT size by the visible character footprint in the preview frame, not the image element size. Transparent padding around WIT PNGs can make a large CSS box still read small. Emotional WIT beats should be rejected or resized if the visible character does not occupy at least `1/3` of the frame in the screenshot/contact sheet.
+
+Apply next time:
+
+- measure WIT by visible body/face/prop presence, not CSS width
+- target at least `1/3` visible frame presence for every emotional WIT beat
+- actively try creative placements before accepting a conventional corner WIT
+- use corner peeks, upside-down top peeks, object/wardrobe hiding, lower-edge half-body entrances, behind-object looming, or oversized faces when they fit the joke
+- create or inspect runtime screenshots/contact sheets for WIT-heavy frames before handoff
+- treat under-1/3 emotional WIT as a layout bug unless the user explicitly requested a tiny/background WIT
+
+Promote to shared memory:
+no for now; keep as render execution memory unless repeated across more sections.
 
 ## Feedback Entry Template
 
