@@ -616,6 +616,27 @@ Apply next time:
 Promote to shared memory:
 no for now; keep as render execution memory unless this failure pattern repeats again.
 
+### 2026-06-14 - Too Many Graphic Elements Means Switch To Image Bases
+
+Classification: `Render lesson`
+
+Context:
+Section 6 of `why-cheap-products-keep-getting-worse` was rejected because it used too many self-made graphic/CSS elements instead of illustrative images. The user specifically pointed to Sections `3`, `1`, and `8` as references for how the visual render should demonstrate the idea.
+
+Lesson:
+When the user says a render uses too many graphic elements, do not keep refining the drawn-object scene. Rebuild the section around dominant illustrative photo/object bases, then add only sparse handwritten cue labels and large WIT beats.
+
+Apply next time:
+
+- compare the rejected section against approved nearby sections before editing
+- replace drawn product props with one strong image or texture base per big scene
+- keep listed details compressed into sticky labels, stamps, or a compact checklist
+- preserve the voice timing but let the image base carry most of the explanation
+- re-run direct-preview contact sheets after WIT scale changes
+
+Promote to shared memory:
+no; this confirms the existing Section 4/5 render recovery pattern, but the detailed action belongs in render execution memory.
+
 ## Feedback Entry Template
 
 ```markdown

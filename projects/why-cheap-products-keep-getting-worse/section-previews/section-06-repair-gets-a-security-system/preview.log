@@ -1,0 +1,25 @@
+
+> dev
+> npx --yes hyperframes@0.6.76 preview
+
+
+  ⚠ duplicate_media_discovery_risk: Detected 2 matching img entries with the same source/start/duration.
+    Fix: Avoid duplicated media nodes that can be discovered twice during compilation.
+  ⚠ timeline_track_too_dense: Track 1 has 4 timed elements in this HTML file. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.
+    Fix: Move coherent scene groups into separate .html files under compositions/ and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate.
+  ⚠ timeline_track_too_dense: Track 2 has 8 timed elements in this HTML file. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.
+    Fix: Move coherent scene groups into separate .html files under compositions/ and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate.
+
+T  hyperframes preview
+[?25l|
+o  Studio running
+[?25h
+  Project   section-06-repair-gets-a-security-system
+  Studio    http://localhost:3002
+
+  Edit with your AI agent — it has HyperFrames skills installed.
+  Changes reload automatically in the studio.
+
+  Press Ctrl+C to stop
+
+[BrowserManager] Browser launched (HeadlessChrome/131.0.6778.85, screenshot, headlessShell=true, platform=win32)

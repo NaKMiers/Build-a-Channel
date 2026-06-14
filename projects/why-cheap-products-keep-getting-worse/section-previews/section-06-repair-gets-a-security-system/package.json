@@ -1,0 +1,10 @@
+{
+  "name": "why-cheap-products-section-06-repair-gets-a-security-system",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx --yes hyperframes@0.6.76 preview --port 1006",
+    "check": "npx --yes hyperframes@0.6.76 lint && npx --yes hyperframes@0.6.76 validate && npx --yes hyperframes@0.6.76 inspect --at 0.8,4.8,9.8,15.8,21.0,25.6,31.4,36.8,41.6,42.5",
+    "render": "npx --yes hyperframes@0.6.76 render"
+  }
+}

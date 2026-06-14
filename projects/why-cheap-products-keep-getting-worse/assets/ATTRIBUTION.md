@@ -4,7 +4,7 @@ Video:
 `Why Cheap Products Keep Getting Worse`
 
 Scope:
-`Current direct-production assets used by Render step for Sections 1-5`
+`Current direct-production assets used by Render step for Sections 1-6`
 
 ## Direct Production Assets
 
@@ -38,6 +38,10 @@ Scope:
   Use: Section `5`, cue overlays on real photo bases
   Source: built directly in `section-previews/section-05-more-features-more-tiny-deaths/index.html` from the script, Section 1/8 render grammar, and Section 5 reference board
   Status: `self-made safe production overlays; no real app UI or real product claim is added`
+- Section `6` handwritten repair labels, sticky blockers, repair bill, checklist, speech bubble, and simplified phone future label
+  Use: Section `6`, cue overlays on real/photo texture bases
+  Source: built directly in `section-previews/section-06-repair-gets-a-security-system/index.html` from the script, Section 6 visual plan, Section 6 reference board, and render-side quality pass
+  Status: `self-made safe production overlays; no real invoice, official EU label, QR code, or government logo is exposed`
 
 ### Real direct-use assets
 
@@ -89,18 +93,39 @@ Scope:
   Creator: `Phiarc`
   Terms checked: `CC BY-SA 4.0`
   Safe-use note: direct background use with generic red target and repair-cost labels; no brand/product failure claim
+- `assets/section-06/phone-repair-table.jpg`
+  Copied from: `visual-references/section-06-repair-gets-a-security-system/real-world/phone-repair-shift6mq-cc-by-sa-4.jpg`
+  Use: Section `6`, Big Scenes `1` and `2`, opened phone repair-table background
+  Source: [Wikimedia Commons - SHIFT6mq Repair.jpg](https://commons.wikimedia.org/wiki/File:SHIFT6mq_Repair.jpg)
+  Creator: `Triskal`
+  Terms checked: `CC BY-SA 4.0`
+  Safe-use note: direct background use only as generic repair-table texture; visible source-product markings are not claims that the pictured product is defective, cheap, blocked, or criticized
+- `assets/section-06/precision-screwdrivers.jpg`
+  Copied from: `visual-references/section-06-repair-gets-a-security-system/real-world/precision-screwdriver-set-cc-by-sa-2.jpg`
+  Use: Section `6`, Big Scene `3`, repairability/tool background
+  Source: [Wikimedia Commons - Precision Screwdriver Set 2.jpg](https://commons.wikimedia.org/wiki/File:Precision_Screwdriver_Set_2.jpg)
+  Creator: `oomlout`
+  Terms checked: `CC BY-SA 2.0`
+  Safe-use note: direct tool-background use with generic repairability labels added in HyperFrames
+- `assets/section-06/cardboard-boxes.jpg`
+  Copied from: `visual-references/section-08-payoff/real-world/real-cardboard-boxes-pexels-harper-sunday.jpg`
+  Use: Section `6`, Big Scene `4`, cardboard/future-label payoff background
+  Source: [Pexels - Close-up of Cardboard Boxes and Lids](https://www.pexels.com/photo/close-up-of-cardboard-boxes-and-lids-17260157/)
+  Creator: `Harper Sunday`
+  Terms checked: `Pexels License`
+  Safe-use note: direct texture background with all labels and jokes added in HyperFrames
 
 ### Reusable channel assets
 
 - `wit/`
-  Use: Sections `1-5` WIT poses
+  Use: Sections `1-6` WIT poses
   Source: channel-approved shared WIT pose set via project junction to `.agents/_shared/assets/wit/poses/`
   Status: `safe channel asset`
 - `voiceover/`
-  Use: Sections `1-5` approved narration audio via project junction to `voiceover/`
+  Use: Sections `1-6` approved narration audio via project junction to `voiceover/`
   Status: `project-local approved audio source`
 - `fonts/patrick-hand-latin.woff2`
-  Use: Sections `1-5` handwritten labels
+  Use: Sections `1-6` handwritten labels
   Source: copied from existing project-local channel font asset in `projects/why-everyone-pretends-to-be-busy/assets/fonts/`
   Status: `project-local reusable font asset`
 
@@ -140,6 +165,12 @@ Scope:
 - `visual-references/section-05-more-features-more-tiny-deaths/real-world/real-control-panel-commons-solomon203.jpg`
   Source: Wikimedia Commons, Solomon203, `Sampo VM-C2066 control panel 20201031.jpg`
   Status: `inspiration only`; not used directly because of visible brand and labels
+- `visual-references/section-06-repair-gets-a-security-system/real-world/repair-lab-workbench-cc-by-2.jpg`
+  Source: Wikimedia Commons, Redaktion NdW / Alena Zielinski, `Repair Lab (48115819418).jpg`
+  Status: `inspiration only`; not used directly because it includes visible people, event/workbench clutter, cups, and clothing marks
+- `visual-references/section-06-repair-gets-a-security-system/policy/smartphones-tablets-energy-label-eu-reference.png`
+  Source: European Commission Energy Efficient Products, `Smartphones and Tablets`
+  Status: `mockup target / inspiration only`; not used directly because Section 6 uses a simplified no-logo fake phone future label
 
 ## Notes
 

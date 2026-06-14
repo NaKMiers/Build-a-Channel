@@ -2,7 +2,7 @@
 
 Video: `Why Cheap Products Keep Getting Worse`
 
-Status: `section 5 real-photo remake preview ready for review`
+Status: `section 6 auto-adjusted image-base preview ready for review`
 
 Source skill: `render`
 
@@ -22,6 +22,7 @@ Source files:
 | Section 3 The Price Tag Speaks First | 1003 | `http://localhost:1003/#project/section-03-the-price-tag-speaks-first` | `http://localhost:1003/api/projects/section-03-the-price-tag-speaks-first/preview/comp/index.html` | running; HTTP 200 verified |
 | Section 4 The Boring Parts Disappear | 1004 | `http://localhost:1004/#project/section-04-the-boring-parts-disappear` | `http://localhost:1004/api/projects/section-04-the-boring-parts-disappear/preview/comp/index.html` | running; HTTP 200 verified |
 | Section 5 More Features, More Tiny Deaths | 1005 | `http://localhost:1005/#project/section-05-more-features-more-tiny-deaths` | `http://localhost:1005/api/projects/section-05-more-features-more-tiny-deaths/preview/comp/index.html` | running; HTTP 200 verified |
+| Section 6 Repair Gets A Security System | 1006 | `http://localhost:1006/#project/section-06-repair-gets-a-security-system` | `http://localhost:1006/api/projects/section-06-repair-gets-a-security-system/preview/comp/index.html` | running; HTTP 200 verified |
 | Section 8 Payoff | 1008 | `http://localhost:1008/#project/section-08-payoff` | `http://localhost:1008/api/projects/section-08-payoff/preview/comp/index.html` | running; HTTP 200 verified |
 
 ## Section Render Index
@@ -33,6 +34,7 @@ Source files:
 | 3 | The Price Tag Speaks First | `auto-adjusted WIT-dominance preview ready for review` | 1003 | `section-previews/section-03-the-price-tag-speaks-first/` | `02-script.md` + `04-voiceover.md` + revised `05-visual-plan.md` + revised Section 3 visual plan + Auto Adjust pass | `lint: pass with 4 non-blocking warnings`; `validate: pass, no console errors, 30 contrast sampler warnings`; `inspect: pass, 0 layout issues at 12 timestamps`; `snapshot: pass via latest seeked auto-adjust contact sheet`; `server: HTTP 200` | `not requested` | `4 persistent big scenes with 10 cue states. Scene 3 remains a CSS-built checkout promise arena. Auto Adjust reduced WIT to selected emotional beats, removed the duplicate easy-price WIT, scaled remaining WIT by visible alpha/viewport size to roughly 32-36% frame width, moved nearby text away from WIT, and marked intentional lower-body crop as allowed overflow.` |
 | 4 | The Boring Parts Disappear | `simple Section-1-style remake preview ready for review` | 1004 | `section-previews/section-04-the-boring-parts-disappear/` | `02-script.md` + `04-voiceover.md` + remade `05-visual-plan.md` + remade Section 4 visual plan after rejecting crowded object-card direction | `lint: pass with 2 non-blocking warnings`; `validate: pass, no console errors, 5 contrast sampler warnings`; `inspect: pass, 0 layout issues at 12 timestamps`; `snapshot: pass via simple-remake contact sheet`; `server: HTTP 200` | `not requested` | `3 persistent real-photo backgrounds with 6 cue states: fabric/stitching, screwdriver repair table, and cardboard/product box. WIT appears only on 3 emotional beats and is sized as a main character: suspicious inspector, printer-repair nerd, betrayed buyer. Phone/printer photos are not used directly; generic CSS overlays replace them.` |
 | 5 | More Features, More Tiny Deaths | `real-photo remake preview ready for review` | 1005 | `section-previews/section-05-more-features-more-tiny-deaths/` | `02-script.md` + `04-voiceover.md` + Section 1/8 visual grammar + Section 5 real reference assets; earlier CSS-only visual-plan mockup superseded by user rejection | `lint: pass with 2 non-blocking warnings`; `validate: pass, no console errors, 80 text elements pass WCAG AA`; `inspect: pass, 0 layout issues at 9 timestamps`; `snapshot: pass via real-photo remake contact sheet`; `server: HTTP 200` | `not requested` | `3 persistent real-photo scenes with 8 cue states: lived-in fridge setup, closer fridge feature-overload critique, and real appliance circuit-board payoff. WIT uses stronger emotional poses: price-tag suspicion, phone panic, trapped-by-app-screen, and money panic. Direct real assets are fridge photo and appliance power-module photo with attribution; logo-heavy dispenser/control-panel references remain unused.` |
+| 6 | Repair Gets A Security System | `auto-adjusted image-base preview ready for review` | 1006 | `section-previews/section-06-repair-gets-a-security-system/` | `02-script.md` + `04-voiceover.md` + `05-visual-plan.md` + Section 6 visual plan + user feedback referencing Sections 1, 3, and 8 + Auto Adjust pass | `lint: pass with 3 non-blocking warnings`; `validate: pass, no console errors, 165 text elements pass WCAG AA`; `inspect: pass, 0 layout issues at 10 timestamps`; `snapshot: pass via auto-adjust contact sheet`; `server: HTTP 200` | `not requested` | `4 persistent image-led scenes with 8 cue states: opened phone repair table, dark locked ownership close-up, precision screwdriver repairability base, and cardboard/future-label payoff. Auto Adjust scaled opening and final WIT to pass the visible-alpha WIT gate and updated the dev script to fixed port 1006. No MP4/WebM export requested.` |
 | 8 | Payoff | `preview ready for review` | 1008 | `section-previews/section-08-payoff/` | `02-script.md` + `04-voiceover.md` + `05-visual-plan.md` + Section 8 visual plan | `lint: pass with 2 non-blocking warnings`; `validate: pass, no console errors, 95 text elements pass WCAG AA`; `inspect: pass, 0 layout issues at 9 timestamps`; `thumbnail spot check: pass`; `load check: direct composition HTTP 200 and 5 image assets loaded`; `server: HTTP 200` | `not requested` | `3 persistent payoff scenes with 8 cue states: hidden-future price tag, real-price receipt, and final cardboard/product question. WIT appears only on 3 emotional beats: suspicious evaluator, receipt evidence holder, and deadpan final checker. All receipt/tag wording is rendered in HyperFrames/CSS; no MP4/WebM export was requested or created.` |
 
 ## Shared Asset Rules
@@ -43,6 +45,26 @@ Source files:
 - Attribution file: `projects/why-cheap-products-keep-getting-worse/assets/ATTRIBUTION.md`
 
 ## Active Section Notes
+
+### Section 6
+
+- Section 6 composition id: `Section06RepairGetsASecuritySystem`
+- Runtime: `42.816s`
+- Voiceover runtime: `42.816s`
+- Preview audio: local `section-06-repair-gets-a-security-system-david23-am_eric-0.84.mp3`
+- Screen changes: static hard cuts between four persistent scenes plus timed hard-show cue layers; no decorative transitions, fly-ins, camera moves, or MP4/WebM export
+- Scene grammar: `opened repair-table photo -> dark locked ownership joke -> screwdriver repairability base -> cardboard future-label payoff`
+- User revision applied: the first Section 6 render was rejected for using too many graphic/CSS elements instead of illustrative images. This image-base refinement follows the visual grammar of Sections `1`, `3`, and `8`: dominant photo/object bases, sparse handwritten labels, and WIT only on emotional beats.
+- Direct production assets: approved WIT pose PNGs, local Patrick Hand font, section audio, `assets/section-06/phone-repair-table.jpg`, `assets/section-06/precision-screwdrivers.jpg`, `assets/section-06/cardboard-boxes.jpg`, and self-made HyperFrames label/checklist overlays
+- Reference-only assets not used directly: repair lab photo and European Commission smartphone/tablet label reference
+- WIT poses used: `wit-pose-suspicious.png`, `wit-pose-trapped-by-app-screen.png`, `wit-pose-deadpan-side-eye.png`
+- WIT layout decision: WIT appears only on three emotional beats. Auto Adjust measured visible alpha size rather than CSS box size and scaled the opening suspicious WIT plus final deadpan WIT to pass the strict gate. Post-fix visible sizes: suspicious `500x732` (`26.0%` frame width), trapped `484x675` (`25.2%`), deadpan `520x1003` (`27.1%`). Full-resolution checks show WIT faces, glasses, heads, and shoulders clear of labels.
+- HyperFrames checks: `npm.cmd run check` passed. Lint reported 3 non-blocking warnings: duplicate media discovery risk from using the same phone photo in two timed scenes, plus dense timeline warnings for tracks 1 and 2. Validate reported no console errors and 165 text elements passing WCAG AA. Inspect reported 0 layout issues across 10 explicit timestamps.
+- Inspect timestamps: `0.8`, `4.8`, `9.8`, `15.8`, `21.0`, `25.6`, `31.4`, `36.8`, `41.6`, `42.5`
+- Visual snapshot check: `section-previews/section-06-repair-gets-a-security-system/snapshots/auto-adjust-20260615/contact-sheet-section-06-auto-adjust.png` inspected at `0.8`, `5.0`, `10.0`, `16.0`, `21.2`, `25.8`, `31.6`, `37.0`, `41.8`, and `42.6`; the section reads as image-led scenes, labels are sparse/readable, WIT passes the visible-size gate, and the final `FUTURE` tag does not cover WIT's face.
+- Review mirror: `hyperframes/review/section-06.html` synced from the current preview source; review audio, WIT, font, and section image-base assets are present under `hyperframes/review/`.
+- Preview server: port `1006`, Studio and direct composition URLs returned HTTP `200`. Section `package.json` dev script now includes `--port 1006` to preserve the fixed section-port rule on restart.
+- Export file: `not requested`
 
 ### Section 5
 
@@ -180,6 +202,9 @@ Source files:
 
 ## Stale / Regeneration Notes
 
+- No Section 6 MP4/WebM export was requested or created.
+- No Section 6 `07-review.md`, `08-upload.md`, `09-self-learning.md`, unified preview, or final assembly output was found during this run.
+- Section 6's original CSS-heavy repair-door/product/checklist render was superseded after user feedback that it used too many graphic elements instead of illustrative images. The current canonical Section 6 source is `section-previews/section-06-repair-gets-a-security-system/index.html`; the latest review artifact is `snapshots/auto-adjust-20260615/contact-sheet-section-06-auto-adjust.png`.
 - Section 4 visual plan and preview were remade after user feedback that the previous direction was chaotic, text-heavy, and image-heavy. The current canonical Section 4 source is `section-previews/section-04-the-boring-parts-disappear/index.html`; do not regenerate from the rejected crowded object-card / parts-tray direction.
 - No Section 4 MP4/WebM export was requested or created.
 - No Section 4 `07-review.md`, `08-upload.md`, `09-self-learning.md`, unified preview, or final assembly output was found during this run.

@@ -100,3 +100,23 @@ Apply next time:
 
 Promote to shared memory:
 No; keep as Auto Adjust verification procedure unless repeated in other skills.
+
+### 2026-06-15 - Verify Fixed-Port Preview Scripts Before Browser QA
+
+Classification: `Operational lesson`
+
+Context:
+During Auto Adjust for Section 6 of `why-cheap-products-keep-getting-worse`, the preview server was down. Restarting with the section `package.json` script launched HyperFrames on its default Studio port instead of the required fixed section port `1006`, so direct-preview browser QA failed until the server was restarted with `hyperframes preview --port 1006`.
+
+Lesson:
+Auto Adjust should verify the selected section preview is actually running on `1000 + section number`. If restarting is needed, use an explicit `--port` flag and patch the section `dev` script when it would otherwise drift to a random/default HyperFrames port.
+
+Apply next time:
+- check the fixed direct composition URL before screenshot QA
+- inspect `preview.log` when the URL is down or reports an unexpected port
+- start HyperFrames with `npx.cmd --yes hyperframes@<version> preview --port <section-port>` on Windows
+- update the section-local `package.json` dev script if it lacks the fixed port
+- document the port fix in `IMPLEMENTATION.md` and `06-production-board.md`
+
+Promote to shared memory:
+No; this is an Auto Adjust/browser QA operational fix, not channel strategy.
