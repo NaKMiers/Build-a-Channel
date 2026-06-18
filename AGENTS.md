@@ -2,6 +2,12 @@
 
 This workspace is the long-term memory for the `Why It Works` YouTube channel.
 
+This workspace is configured for **both Codex and Claude**. The shared brain, rules, and
+skill logic live once under `.agents/` and are read by both tools. This file is Codex's
+auto-loaded entry point; `CLAUDE.md` is the Claude equivalent and mirrors it. The Claude
+discovery wrappers live in `.claude/skills/` (see `.claude/README.md`). Keep `AGENTS.md`
+and `CLAUDE.md` in sync when you change the startup routine, workflow, or skill list.
+
 New Codex sessions do not have the full prior chat history, so they must rebuild context from the project files before making strategic or production decisions.
 
 ## Required Startup Routine
@@ -63,6 +69,7 @@ Use the project folders intentionally:
 - Use [Render](C:\ME\THINGS\Build a Channel\.agents\skills\render\SKILL.md) when the user asks for render, HyperFrames build, create video from visual plan, section preview, localhost preview, section MP4 render, or step 6 of the main video workflow.
 - Use [Auto Adjust](C:\ME\THINGS\Build a Channel\.agents\skills\auto-adjust\SKILL.md) after render when the user asks to auto-adjust, audit, QA, automatically fix a rendered section, apply Section 1/2 review lessons, preserve manual Studio edits, or prepare one selected section for review. Auto Adjust requires one project and one section; it has no `All` option.
 - Use [WIW Take Note](C:\ME\THINGS\Build a Channel\.agents\skills\wiw-take-note\SKILL.md) when the user asks to take note of reviews, remember useful production feedback, or persist lessons that should improve future HyperFrames/video review passes.
+- Use [Skill Sync](C:\ME\THINGS\Build a Channel\.agents\skills\skill-sync\SKILL.md) (utility, outside the pipeline gate) when the user asks to sync skills between Codex and Claude, reconcile the `.claude/skills/` wrappers, or sync `AGENTS.md` and `CLAUDE.md`. Manual only; run only when asked.
 - Do not create additional sequential video-production skills until the user explicitly asks for the next skill-creation phase.
 
 Pipeline gate:

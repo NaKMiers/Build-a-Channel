@@ -34,6 +34,13 @@ This folder stores executable project-local Codex skills.
 - [WIW Take Note](wiw-take-note/SKILL.md)
   Captures useful review and production feedback into the right project memory files.
 
+## Utility Skills
+
+- [Skill Sync](skill-sync/SKILL.md)
+  Manually reconciles the Codex (`.agents/`) and Claude (`.claude/`) entry-point layer:
+  skill wrappers, `openai.yaml`, frontmatter, and the shared sections of `AGENTS.md` and
+  `CLAUDE.md`. Outside the production pipeline; run only when asked.
+
 ## Remaining Future Skills
 
 `Topic Intake`, `Research Pack`, `Script Draft`, `Voiceover`, `Visual Plan`, `Render`, and `Auto Adjust` are the current main-pipeline video-production skills. `Packaging` is a side-branch skill.

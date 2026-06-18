@@ -1,0 +1,1578 @@
+{
+  "video": "Why Cheap Products Keep Getting Worse",
+  "section": {
+    "number": 6,
+    "name": "Repair Gets A Security System",
+    "durationSeconds": 42.816,
+    "audioFile": "voiceover/section-06-repair-gets-a-security-system/scratch-audio/section-06-repair-gets-a-security-system-david23-am_eric-0.84.mp3"
+  },
+  "source": {
+    "extractor": "faster-whisper",
+    "model": "small.en",
+    "language": "en",
+    "createdFor": "voice-sync render timing",
+    "note": "Use words[] for repeated words. wordStartMap uses normalized_word_### keys because plain JSON object keys cannot represent duplicate words safely."
+  },
+  "transcript": "● concurrently repair. ● A product feels disposable when fixing it becomes harder than replacing it. Sometimes the part is not available. Sometimes the tool is special. Sometimes the manual is missing. Sometimes the repair costs almost as much as buying a new one. And sometimes the product looks at you and says, \"'You own me, but not enough to open me.'\" Very healthy relationship. This is why repairability matters. Repairability just means how easy something is to fix. ●Can you replace the battery? Can you buy the part? ●Can a local repair shop understand the product without needing a mysterious machine in a locked room? ●Some governments now treat repair information, spare parts, battery life, and repairability labels as things worth requiring for certain products. ●That is basically society looking at a phone and saying, \"$Please have a future.\"",
+  "segments": [
+    {
+      "index": 1,
+      "start": 0.0,
+      "end": 3.56,
+      "text": "● concurrently repair. ● A product feels disposable when fixing it"
+    },
+    {
+      "index": 2,
+      "start": 3.56,
+      "end": 7.6,
+      "text": "becomes harder than replacing it. Sometimes the part is not available. Sometimes the tool"
+    },
+    {
+      "index": 3,
+      "start": 7.6,
+      "end": 11.62,
+      "text": "is special. Sometimes the manual is missing. Sometimes the repair costs almost as much"
+    },
+    {
+      "index": 4,
+      "start": 11.62,
+      "end": 14.82,
+      "text": "as buying a new one. And sometimes the product looks at you and says, \"'You own me,"
+    },
+    {
+      "index": 5,
+      "start": 14.82,
+      "end": 19.08,
+      "text": "but not enough to open me.'\" Very healthy relationship. This is why repairability"
+    },
+    {
+      "index": 6,
+      "start": 19.08,
+      "end": 23.7,
+      "text": "matters. Repairability just means how easy something is to fix. ●Can you replace the"
+    },
+    {
+      "index": 7,
+      "start": 23.7,
+      "end": 27.88,
+      "text": "battery? Can you buy the part? ●Can a local repair shop understand the product"
+    },
+    {
+      "index": 8,
+      "start": 27.88,
+      "end": 31.94,
+      "text": "without needing a mysterious machine in a locked room? ●Some governments now treat"
+    },
+    {
+      "index": 9,
+      "start": 31.94,
+      "end": 36.28,
+      "text": "repair information, spare parts, battery life, and repairability labels as things worth"
+    },
+    {
+      "index": 10,
+      "start": 36.28,
+      "end": 40.96,
+      "text": "requiring for certain products. ●That is basically society looking at a phone"
+    },
+    {
+      "index": 11,
+      "start": 40.96,
+      "end": 42.78,
+      "text": "and saying, \"$Please have a future.\""
+    }
+  ],
+  "words": [
+    {
+      "index": 1,
+      "word": "concurrently",
+      "normalized": "concurrently",
+      "start": 0.34,
+      "end": 1.16,
+      "duration": 0.82,
+      "probability": 0.0
+    },
+    {
+      "index": 2,
+      "word": "repair.",
+      "normalized": "repair",
+      "start": 1.16,
+      "end": 1.16,
+      "duration": 0.0,
+      "probability": 0.1793
+    },
+    {
+      "index": 3,
+      "word": "A",
+      "normalized": "a",
+      "start": 1.6,
+      "end": 1.62,
+      "duration": 0.02,
+      "probability": 0.0147
+    },
+    {
+      "index": 4,
+      "word": "product",
+      "normalized": "product",
+      "start": 1.62,
+      "end": 1.9,
+      "duration": 0.28,
+      "probability": 0.1313
+    },
+    {
+      "index": 5,
+      "word": "feels",
+      "normalized": "feels",
+      "start": 1.9,
+      "end": 2.16,
+      "duration": 0.26,
+      "probability": 0.9365
+    },
+    {
+      "index": 6,
+      "word": "disposable",
+      "normalized": "disposable",
+      "start": 2.16,
+      "end": 2.8,
+      "duration": 0.64,
+      "probability": 0.9
+    },
+    {
+      "index": 7,
+      "word": "when",
+      "normalized": "when",
+      "start": 2.8,
+      "end": 3.12,
+      "duration": 0.32,
+      "probability": 0.933
+    },
+    {
+      "index": 8,
+      "word": "fixing",
+      "normalized": "fixing",
+      "start": 3.12,
+      "end": 3.38,
+      "duration": 0.26,
+      "probability": 0.9938
+    },
+    {
+      "index": 9,
+      "word": "it",
+      "normalized": "it",
+      "start": 3.38,
+      "end": 3.56,
+      "duration": 0.18,
+      "probability": 0.952
+    },
+    {
+      "index": 10,
+      "word": "becomes",
+      "normalized": "becomes",
+      "start": 3.56,
+      "end": 3.82,
+      "duration": 0.26,
+      "probability": 0.9791
+    },
+    {
+      "index": 11,
+      "word": "harder",
+      "normalized": "harder",
+      "start": 3.82,
+      "end": 4.06,
+      "duration": 0.24,
+      "probability": 0.9891
+    },
+    {
+      "index": 12,
+      "word": "than",
+      "normalized": "than",
+      "start": 4.06,
+      "end": 4.28,
+      "duration": 0.22,
+      "probability": 0.9719
+    },
+    {
+      "index": 13,
+      "word": "replacing",
+      "normalized": "replacing",
+      "start": 4.28,
+      "end": 4.64,
+      "duration": 0.36,
+      "probability": 0.9949
+    },
+    {
+      "index": 14,
+      "word": "it.",
+      "normalized": "it",
+      "start": 4.64,
+      "end": 4.98,
+      "duration": 0.34,
+      "probability": 0.9703
+    },
+    {
+      "index": 15,
+      "word": "Sometimes",
+      "normalized": "sometimes",
+      "start": 5.28,
+      "end": 5.64,
+      "duration": 0.36,
+      "probability": 0.8263
+    },
+    {
+      "index": 16,
+      "word": "the",
+      "normalized": "the",
+      "start": 5.64,
+      "end": 5.82,
+      "duration": 0.18,
+      "probability": 0.943
+    },
+    {
+      "index": 17,
+      "word": "part",
+      "normalized": "part",
+      "start": 5.82,
+      "end": 6.02,
+      "duration": 0.2,
+      "probability": 0.9946
+    },
+    {
+      "index": 18,
+      "word": "is",
+      "normalized": "is",
+      "start": 6.02,
+      "end": 6.14,
+      "duration": 0.12,
+      "probability": 0.9775
+    },
+    {
+      "index": 19,
+      "word": "not",
+      "normalized": "not",
+      "start": 6.14,
+      "end": 6.34,
+      "duration": 0.2,
+      "probability": 0.9937
+    },
+    {
+      "index": 20,
+      "word": "available.",
+      "normalized": "available",
+      "start": 6.34,
+      "end": 6.7,
+      "duration": 0.36,
+      "probability": 0.9947
+    },
+    {
+      "index": 21,
+      "word": "Sometimes",
+      "normalized": "sometimes",
+      "start": 6.94,
+      "end": 7.24,
+      "duration": 0.3,
+      "probability": 0.9899
+    },
+    {
+      "index": 22,
+      "word": "the",
+      "normalized": "the",
+      "start": 7.24,
+      "end": 7.42,
+      "duration": 0.18,
+      "probability": 0.9909
+    },
+    {
+      "index": 23,
+      "word": "tool",
+      "normalized": "tool",
+      "start": 7.42,
+      "end": 7.6,
+      "duration": 0.18,
+      "probability": 0.9913
+    },
+    {
+      "index": 24,
+      "word": "is",
+      "normalized": "is",
+      "start": 7.6,
+      "end": 7.74,
+      "duration": 0.14,
+      "probability": 0.9969
+    },
+    {
+      "index": 25,
+      "word": "special.",
+      "normalized": "special",
+      "start": 7.74,
+      "end": 8.02,
+      "duration": 0.28,
+      "probability": 0.9836
+    },
+    {
+      "index": 26,
+      "word": "Sometimes",
+      "normalized": "sometimes",
+      "start": 8.3,
+      "end": 8.66,
+      "duration": 0.36,
+      "probability": 0.9476
+    },
+    {
+      "index": 27,
+      "word": "the",
+      "normalized": "the",
+      "start": 8.66,
+      "end": 8.84,
+      "duration": 0.18,
+      "probability": 0.9934
+    },
+    {
+      "index": 28,
+      "word": "manual",
+      "normalized": "manual",
+      "start": 8.84,
+      "end": 9.14,
+      "duration": 0.3,
+      "probability": 0.989
+    },
+    {
+      "index": 29,
+      "word": "is",
+      "normalized": "is",
+      "start": 9.14,
+      "end": 9.36,
+      "duration": 0.22,
+      "probability": 0.9936
+    },
+    {
+      "index": 30,
+      "word": "missing.",
+      "normalized": "missing",
+      "start": 9.36,
+      "end": 9.6,
+      "duration": 0.24,
+      "probability": 0.9971
+    },
+    {
+      "index": 31,
+      "word": "Sometimes",
+      "normalized": "sometimes",
+      "start": 9.86,
+      "end": 10.22,
+      "duration": 0.36,
+      "probability": 0.9917
+    },
+    {
+      "index": 32,
+      "word": "the",
+      "normalized": "the",
+      "start": 10.22,
+      "end": 10.38,
+      "duration": 0.16,
+      "probability": 0.9845
+    },
+    {
+      "index": 33,
+      "word": "repair",
+      "normalized": "repair",
+      "start": 10.38,
+      "end": 10.64,
+      "duration": 0.26,
+      "probability": 0.9986
+    },
+    {
+      "index": 34,
+      "word": "costs",
+      "normalized": "costs",
+      "start": 10.64,
+      "end": 10.94,
+      "duration": 0.3,
+      "probability": 0.9416
+    },
+    {
+      "index": 35,
+      "word": "almost",
+      "normalized": "almost",
+      "start": 10.94,
+      "end": 11.28,
+      "duration": 0.34,
+      "probability": 0.99
+    },
+    {
+      "index": 36,
+      "word": "as",
+      "normalized": "as",
+      "start": 11.28,
+      "end": 11.52,
+      "duration": 0.24,
+      "probability": 0.9987
+    },
+    {
+      "index": 37,
+      "word": "much",
+      "normalized": "much",
+      "start": 11.52,
+      "end": 11.62,
+      "duration": 0.1,
+      "probability": 0.998
+    },
+    {
+      "index": 38,
+      "word": "as",
+      "normalized": "as",
+      "start": 11.62,
+      "end": 11.8,
+      "duration": 0.18,
+      "probability": 0.991
+    },
+    {
+      "index": 39,
+      "word": "buying",
+      "normalized": "buying",
+      "start": 11.8,
+      "end": 12.06,
+      "duration": 0.26,
+      "probability": 0.9946
+    },
+    {
+      "index": 40,
+      "word": "a",
+      "normalized": "a",
+      "start": 12.06,
+      "end": 12.24,
+      "duration": 0.18,
+      "probability": 0.9961
+    },
+    {
+      "index": 41,
+      "word": "new",
+      "normalized": "new",
+      "start": 12.24,
+      "end": 12.36,
+      "duration": 0.12,
+      "probability": 0.9986
+    },
+    {
+      "index": 42,
+      "word": "one.",
+      "normalized": "one",
+      "start": 12.36,
+      "end": 12.5,
+      "duration": 0.14,
+      "probability": 0.9949
+    },
+    {
+      "index": 43,
+      "word": "And",
+      "normalized": "and",
+      "start": 12.64,
+      "end": 12.68,
+      "duration": 0.04,
+      "probability": 0.8453
+    },
+    {
+      "index": 44,
+      "word": "sometimes",
+      "normalized": "sometimes",
+      "start": 12.68,
+      "end": 13.02,
+      "duration": 0.34,
+      "probability": 0.9809
+    },
+    {
+      "index": 45,
+      "word": "the",
+      "normalized": "the",
+      "start": 13.02,
+      "end": 13.26,
+      "duration": 0.24,
+      "probability": 0.9845
+    },
+    {
+      "index": 46,
+      "word": "product",
+      "normalized": "product",
+      "start": 13.26,
+      "end": 13.5,
+      "duration": 0.24,
+      "probability": 0.9966
+    },
+    {
+      "index": 47,
+      "word": "looks",
+      "normalized": "looks",
+      "start": 13.5,
+      "end": 13.72,
+      "duration": 0.22,
+      "probability": 0.9947
+    },
+    {
+      "index": 48,
+      "word": "at",
+      "normalized": "at",
+      "start": 13.72,
+      "end": 13.88,
+      "duration": 0.16,
+      "probability": 0.9959
+    },
+    {
+      "index": 49,
+      "word": "you",
+      "normalized": "you",
+      "start": 13.88,
+      "end": 14.02,
+      "duration": 0.14,
+      "probability": 0.9979
+    },
+    {
+      "index": 50,
+      "word": "and",
+      "normalized": "and",
+      "start": 14.02,
+      "end": 14.1,
+      "duration": 0.08,
+      "probability": 0.993
+    },
+    {
+      "index": 51,
+      "word": "says,",
+      "normalized": "says",
+      "start": 14.1,
+      "end": 14.3,
+      "duration": 0.2,
+      "probability": 0.9967
+    },
+    {
+      "index": 52,
+      "word": "\"'You",
+      "normalized": "'you",
+      "start": 14.46,
+      "end": 14.54,
+      "duration": 0.08,
+      "probability": 0.4429
+    },
+    {
+      "index": 53,
+      "word": "own",
+      "normalized": "own",
+      "start": 14.54,
+      "end": 14.64,
+      "duration": 0.1,
+      "probability": 0.4668
+    },
+    {
+      "index": 54,
+      "word": "me,",
+      "normalized": "me",
+      "start": 14.64,
+      "end": 14.82,
+      "duration": 0.18,
+      "probability": 0.9948
+    },
+    {
+      "index": 55,
+      "word": "but",
+      "normalized": "but",
+      "start": 14.82,
+      "end": 14.94,
+      "duration": 0.12,
+      "probability": 0.9946
+    },
+    {
+      "index": 56,
+      "word": "not",
+      "normalized": "not",
+      "start": 14.94,
+      "end": 15.1,
+      "duration": 0.16,
+      "probability": 0.9952
+    },
+    {
+      "index": 57,
+      "word": "enough",
+      "normalized": "enough",
+      "start": 15.1,
+      "end": 15.32,
+      "duration": 0.22,
+      "probability": 0.9978
+    },
+    {
+      "index": 58,
+      "word": "to",
+      "normalized": "to",
+      "start": 15.32,
+      "end": 15.46,
+      "duration": 0.14,
+      "probability": 0.9931
+    },
+    {
+      "index": 59,
+      "word": "open",
+      "normalized": "open",
+      "start": 15.46,
+      "end": 15.72,
+      "duration": 0.26,
+      "probability": 0.9844
+    },
+    {
+      "index": 60,
+      "word": "me.'\"",
+      "normalized": "me.'",
+      "start": 15.72,
+      "end": 16.22,
+      "duration": 0.5,
+      "probability": 0.8787
+    },
+    {
+      "index": 61,
+      "word": "Very",
+      "normalized": "very",
+      "start": 16.22,
+      "end": 16.74,
+      "duration": 0.52,
+      "probability": 0.9077
+    },
+    {
+      "index": 62,
+      "word": "healthy",
+      "normalized": "healthy",
+      "start": 16.74,
+      "end": 17.04,
+      "duration": 0.3,
+      "probability": 0.9371
+    },
+    {
+      "index": 63,
+      "word": "relationship.",
+      "normalized": "relationship",
+      "start": 17.04,
+      "end": 17.62,
+      "duration": 0.58,
+      "probability": 0.9908
+    },
+    {
+      "index": 64,
+      "word": "This",
+      "normalized": "this",
+      "start": 17.98,
+      "end": 18.04,
+      "duration": 0.06,
+      "probability": 0.9765
+    },
+    {
+      "index": 65,
+      "word": "is",
+      "normalized": "is",
+      "start": 18.04,
+      "end": 18.18,
+      "duration": 0.14,
+      "probability": 0.9973
+    },
+    {
+      "index": 66,
+      "word": "why",
+      "normalized": "why",
+      "start": 18.18,
+      "end": 18.38,
+      "duration": 0.2,
+      "probability": 0.9975
+    },
+    {
+      "index": 67,
+      "word": "repairability",
+      "normalized": "repairability",
+      "start": 18.38,
+      "end": 19.08,
+      "duration": 0.7,
+      "probability": 0.9434
+    },
+    {
+      "index": 68,
+      "word": "matters.",
+      "normalized": "matters",
+      "start": 19.08,
+      "end": 19.5,
+      "duration": 0.42,
+      "probability": 0.9963
+    },
+    {
+      "index": 69,
+      "word": "Repairability",
+      "normalized": "repairability",
+      "start": 20.04,
+      "end": 20.52,
+      "duration": 0.48,
+      "probability": 0.9812
+    },
+    {
+      "index": 70,
+      "word": "just",
+      "normalized": "just",
+      "start": 20.52,
+      "end": 20.72,
+      "duration": 0.2,
+      "probability": 0.9879
+    },
+    {
+      "index": 71,
+      "word": "means",
+      "normalized": "means",
+      "start": 20.72,
+      "end": 20.98,
+      "duration": 0.26,
+      "probability": 0.9964
+    },
+    {
+      "index": 72,
+      "word": "how",
+      "normalized": "how",
+      "start": 20.98,
+      "end": 21.22,
+      "duration": 0.24,
+      "probability": 0.9645
+    },
+    {
+      "index": 73,
+      "word": "easy",
+      "normalized": "easy",
+      "start": 21.22,
+      "end": 21.52,
+      "duration": 0.3,
+      "probability": 0.9879
+    },
+    {
+      "index": 74,
+      "word": "something",
+      "normalized": "something",
+      "start": 21.52,
+      "end": 21.86,
+      "duration": 0.34,
+      "probability": 0.9947
+    },
+    {
+      "index": 75,
+      "word": "is",
+      "normalized": "is",
+      "start": 21.86,
+      "end": 22.16,
+      "duration": 0.3,
+      "probability": 0.9957
+    },
+    {
+      "index": 76,
+      "word": "to",
+      "normalized": "to",
+      "start": 22.16,
+      "end": 22.32,
+      "duration": 0.16,
+      "probability": 0.998
+    },
+    {
+      "index": 77,
+      "word": "fix.",
+      "normalized": "fix",
+      "start": 22.32,
+      "end": 22.58,
+      "duration": 0.26,
+      "probability": 0.9985
+    },
+    {
+      "index": 78,
+      "word": "●Can",
+      "normalized": "can",
+      "start": 22.86,
+      "end": 22.98,
+      "duration": 0.12,
+      "probability": 0.0757
+    },
+    {
+      "index": 79,
+      "word": "you",
+      "normalized": "you",
+      "start": 22.98,
+      "end": 23.1,
+      "duration": 0.12,
+      "probability": 0.9902
+    },
+    {
+      "index": 80,
+      "word": "replace",
+      "normalized": "replace",
+      "start": 23.1,
+      "end": 23.46,
+      "duration": 0.36,
+      "probability": 0.9939
+    },
+    {
+      "index": 81,
+      "word": "the",
+      "normalized": "the",
+      "start": 23.46,
+      "end": 23.7,
+      "duration": 0.24,
+      "probability": 0.981
+    },
+    {
+      "index": 82,
+      "word": "battery?",
+      "normalized": "battery",
+      "start": 23.7,
+      "end": 23.94,
+      "duration": 0.24,
+      "probability": 0.9971
+    },
+    {
+      "index": 83,
+      "word": "Can",
+      "normalized": "can",
+      "start": 24.36,
+      "end": 24.46,
+      "duration": 0.1,
+      "probability": 0.6876
+    },
+    {
+      "index": 84,
+      "word": "you",
+      "normalized": "you",
+      "start": 24.46,
+      "end": 24.6,
+      "duration": 0.14,
+      "probability": 0.996
+    },
+    {
+      "index": 85,
+      "word": "buy",
+      "normalized": "buy",
+      "start": 24.6,
+      "end": 24.74,
+      "duration": 0.14,
+      "probability": 0.9966
+    },
+    {
+      "index": 86,
+      "word": "the",
+      "normalized": "the",
+      "start": 24.74,
+      "end": 24.9,
+      "duration": 0.16,
+      "probability": 0.9921
+    },
+    {
+      "index": 87,
+      "word": "part?",
+      "normalized": "part",
+      "start": 24.9,
+      "end": 25.16,
+      "duration": 0.26,
+      "probability": 0.9977
+    },
+    {
+      "index": 88,
+      "word": "●Can",
+      "normalized": "can",
+      "start": 25.62,
+      "end": 25.86,
+      "duration": 0.24,
+      "probability": 0.5999
+    },
+    {
+      "index": 89,
+      "word": "a",
+      "normalized": "a",
+      "start": 25.86,
+      "end": 25.98,
+      "duration": 0.12,
+      "probability": 0.9922
+    },
+    {
+      "index": 90,
+      "word": "local",
+      "normalized": "local",
+      "start": 25.98,
+      "end": 26.16,
+      "duration": 0.18,
+      "probability": 0.9969
+    },
+    {
+      "index": 91,
+      "word": "repair",
+      "normalized": "repair",
+      "start": 26.16,
+      "end": 26.56,
+      "duration": 0.4,
+      "probability": 0.9991
+    },
+    {
+      "index": 92,
+      "word": "shop",
+      "normalized": "shop",
+      "start": 26.56,
+      "end": 26.9,
+      "duration": 0.34,
+      "probability": 0.9977
+    },
+    {
+      "index": 93,
+      "word": "understand",
+      "normalized": "understand",
+      "start": 26.9,
+      "end": 27.34,
+      "duration": 0.44,
+      "probability": 0.9957
+    },
+    {
+      "index": 94,
+      "word": "the",
+      "normalized": "the",
+      "start": 27.34,
+      "end": 27.54,
+      "duration": 0.2,
+      "probability": 0.9961
+    },
+    {
+      "index": 95,
+      "word": "product",
+      "normalized": "product",
+      "start": 27.54,
+      "end": 27.88,
+      "duration": 0.34,
+      "probability": 0.998
+    },
+    {
+      "index": 96,
+      "word": "without",
+      "normalized": "without",
+      "start": 27.88,
+      "end": 28.16,
+      "duration": 0.28,
+      "probability": 0.969
+    },
+    {
+      "index": 97,
+      "word": "needing",
+      "normalized": "needing",
+      "start": 28.16,
+      "end": 28.38,
+      "duration": 0.22,
+      "probability": 0.9992
+    },
+    {
+      "index": 98,
+      "word": "a",
+      "normalized": "a",
+      "start": 28.38,
+      "end": 28.56,
+      "duration": 0.18,
+      "probability": 0.9977
+    },
+    {
+      "index": 99,
+      "word": "mysterious",
+      "normalized": "mysterious",
+      "start": 28.56,
+      "end": 28.94,
+      "duration": 0.38,
+      "probability": 0.9861
+    },
+    {
+      "index": 100,
+      "word": "machine",
+      "normalized": "machine",
+      "start": 28.94,
+      "end": 29.48,
+      "duration": 0.54,
+      "probability": 0.9962
+    },
+    {
+      "index": 101,
+      "word": "in",
+      "normalized": "in",
+      "start": 29.48,
+      "end": 29.66,
+      "duration": 0.18,
+      "probability": 0.9911
+    },
+    {
+      "index": 102,
+      "word": "a",
+      "normalized": "a",
+      "start": 29.66,
+      "end": 29.78,
+      "duration": 0.12,
+      "probability": 0.9923
+    },
+    {
+      "index": 103,
+      "word": "locked",
+      "normalized": "locked",
+      "start": 29.78,
+      "end": 30.02,
+      "duration": 0.24,
+      "probability": 0.998
+    },
+    {
+      "index": 104,
+      "word": "room?",
+      "normalized": "room",
+      "start": 30.02,
+      "end": 30.4,
+      "duration": 0.38,
+      "probability": 0.9937
+    },
+    {
+      "index": 105,
+      "word": "●Some",
+      "normalized": "some",
+      "start": 30.9,
+      "end": 31.08,
+      "duration": 0.18,
+      "probability": 0.0041
+    },
+    {
+      "index": 106,
+      "word": "governments",
+      "normalized": "governments",
+      "start": 31.08,
+      "end": 31.38,
+      "duration": 0.3,
+      "probability": 0.9784
+    },
+    {
+      "index": 107,
+      "word": "now",
+      "normalized": "now",
+      "start": 31.38,
+      "end": 31.72,
+      "duration": 0.34,
+      "probability": 0.9983
+    },
+    {
+      "index": 108,
+      "word": "treat",
+      "normalized": "treat",
+      "start": 31.72,
+      "end": 31.94,
+      "duration": 0.22,
+      "probability": 0.9897
+    },
+    {
+      "index": 109,
+      "word": "repair",
+      "normalized": "repair",
+      "start": 31.94,
+      "end": 32.28,
+      "duration": 0.34,
+      "probability": 0.9927
+    },
+    {
+      "index": 110,
+      "word": "information,",
+      "normalized": "information",
+      "start": 32.28,
+      "end": 32.74,
+      "duration": 0.46,
+      "probability": 0.9968
+    },
+    {
+      "index": 111,
+      "word": "spare",
+      "normalized": "spare",
+      "start": 33.02,
+      "end": 33.22,
+      "duration": 0.2,
+      "probability": 0.9994
+    },
+    {
+      "index": 112,
+      "word": "parts,",
+      "normalized": "parts",
+      "start": 33.22,
+      "end": 33.56,
+      "duration": 0.34,
+      "probability": 0.998
+    },
+    {
+      "index": 113,
+      "word": "battery",
+      "normalized": "battery",
+      "start": 33.72,
+      "end": 33.94,
+      "duration": 0.22,
+      "probability": 0.9961
+    },
+    {
+      "index": 114,
+      "word": "life,",
+      "normalized": "life",
+      "start": 33.94,
+      "end": 34.32,
+      "duration": 0.38,
+      "probability": 0.9972
+    },
+    {
+      "index": 115,
+      "word": "and",
+      "normalized": "and",
+      "start": 34.48,
+      "end": 34.52,
+      "duration": 0.04,
+      "probability": 0.9965
+    },
+    {
+      "index": 116,
+      "word": "repairability",
+      "normalized": "repairability",
+      "start": 34.52,
+      "end": 35.18,
+      "duration": 0.66,
+      "probability": 0.9195
+    },
+    {
+      "index": 117,
+      "word": "labels",
+      "normalized": "labels",
+      "start": 35.18,
+      "end": 35.48,
+      "duration": 0.3,
+      "probability": 0.9938
+    },
+    {
+      "index": 118,
+      "word": "as",
+      "normalized": "as",
+      "start": 35.48,
+      "end": 35.78,
+      "duration": 0.3,
+      "probability": 0.9799
+    },
+    {
+      "index": 119,
+      "word": "things",
+      "normalized": "things",
+      "start": 35.78,
+      "end": 36.04,
+      "duration": 0.26,
+      "probability": 0.994
+    },
+    {
+      "index": 120,
+      "word": "worth",
+      "normalized": "worth",
+      "start": 36.04,
+      "end": 36.28,
+      "duration": 0.24,
+      "probability": 0.9959
+    },
+    {
+      "index": 121,
+      "word": "requiring",
+      "normalized": "requiring",
+      "start": 36.28,
+      "end": 36.88,
+      "duration": 0.6,
+      "probability": 0.9929
+    },
+    {
+      "index": 122,
+      "word": "for",
+      "normalized": "for",
+      "start": 36.88,
+      "end": 37.14,
+      "duration": 0.26,
+      "probability": 0.9948
+    },
+    {
+      "index": 123,
+      "word": "certain",
+      "normalized": "certain",
+      "start": 37.14,
+      "end": 37.42,
+      "duration": 0.28,
+      "probability": 0.999
+    },
+    {
+      "index": 124,
+      "word": "products.",
+      "normalized": "products",
+      "start": 37.42,
+      "end": 37.96,
+      "duration": 0.54,
+      "probability": 0.9957
+    },
+    {
+      "index": 125,
+      "word": "●That",
+      "normalized": "that",
+      "start": 38.54,
+      "end": 38.78,
+      "duration": 0.24,
+      "probability": 0.5034
+    },
+    {
+      "index": 126,
+      "word": "is",
+      "normalized": "is",
+      "start": 38.78,
+      "end": 38.92,
+      "duration": 0.14,
+      "probability": 0.9914
+    },
+    {
+      "index": 127,
+      "word": "basically",
+      "normalized": "basically",
+      "start": 38.92,
+      "end": 39.38,
+      "duration": 0.46,
+      "probability": 0.9186
+    },
+    {
+      "index": 128,
+      "word": "society",
+      "normalized": "society",
+      "start": 39.38,
+      "end": 39.92,
+      "duration": 0.54,
+      "probability": 0.983
+    },
+    {
+      "index": 129,
+      "word": "looking",
+      "normalized": "looking",
+      "start": 39.92,
+      "end": 40.3,
+      "duration": 0.38,
+      "probability": 0.9914
+    },
+    {
+      "index": 130,
+      "word": "at",
+      "normalized": "at",
+      "start": 40.3,
+      "end": 40.54,
+      "duration": 0.24,
+      "probability": 0.9961
+    },
+    {
+      "index": 131,
+      "word": "a",
+      "normalized": "a",
+      "start": 40.54,
+      "end": 40.68,
+      "duration": 0.14,
+      "probability": 0.9924
+    },
+    {
+      "index": 132,
+      "word": "phone",
+      "normalized": "phone",
+      "start": 40.68,
+      "end": 40.96,
+      "duration": 0.28,
+      "probability": 0.9902
+    },
+    {
+      "index": 133,
+      "word": "and",
+      "normalized": "and",
+      "start": 40.96,
+      "end": 41.18,
+      "duration": 0.22,
+      "probability": 0.2544
+    },
+    {
+      "index": 134,
+      "word": "saying,",
+      "normalized": "saying",
+      "start": 41.18,
+      "end": 41.5,
+      "duration": 0.32,
+      "probability": 0.9875
+    },
+    {
+      "index": 135,
+      "word": "\"$Please",
+      "normalized": "please",
+      "start": 41.76,
+      "end": 41.96,
+      "duration": 0.2,
+      "probability": 0.2487
+    },
+    {
+      "index": 136,
+      "word": "have",
+      "normalized": "have",
+      "start": 41.96,
+      "end": 42.18,
+      "duration": 0.22,
+      "probability": 0.8687
+    },
+    {
+      "index": 137,
+      "word": "a",
+      "normalized": "a",
+      "start": 42.18,
+      "end": 42.3,
+      "duration": 0.12,
+      "probability": 0.9959
+    },
+    {
+      "index": 138,
+      "word": "future.\"",
+      "normalized": "future",
+      "start": 42.3,
+      "end": 42.78,
+      "duration": 0.48,
+      "probability": 0.8884
+    }
+  ],
+  "wordStartMap": {
+    "concurrently_001": 0.34,
+    "repair_001": 1.16,
+    "a_001": 1.6,
+    "product_001": 1.62,
+    "feels_001": 1.9,
+    "disposable_001": 2.16,
+    "when_001": 2.8,
+    "fixing_001": 3.12,
+    "it_001": 3.38,
+    "becomes_001": 3.56,
+    "harder_001": 3.82,
+    "than_001": 4.06,
+    "replacing_001": 4.28,
+    "it_002": 4.64,
+    "sometimes_001": 5.28,
+    "the_001": 5.64,
+    "part_001": 5.82,
+    "is_001": 6.02,
+    "not_001": 6.14,
+    "available_001": 6.34,
+    "sometimes_002": 6.94,
+    "the_002": 7.24,
+    "tool_001": 7.42,
+    "is_002": 7.6,
+    "special_001": 7.74,
+    "sometimes_003": 8.3,
+    "the_003": 8.66,
+    "manual_001": 8.84,
+    "is_003": 9.14,
+    "missing_001": 9.36,
+    "sometimes_004": 9.86,
+    "the_004": 10.22,
+    "repair_002": 10.38,
+    "costs_001": 10.64,
+    "almost_001": 10.94,
+    "as_001": 11.28,
+    "much_001": 11.52,
+    "as_002": 11.62,
+    "buying_001": 11.8,
+    "a_002": 12.06,
+    "new_001": 12.24,
+    "one_001": 12.36,
+    "and_001": 12.64,
+    "sometimes_005": 12.68,
+    "the_005": 13.02,
+    "product_002": 13.26,
+    "looks_001": 13.5,
+    "at_001": 13.72,
+    "you_001": 13.88,
+    "and_002": 14.02,
+    "says_001": 14.1,
+    "'you_001": 14.46,
+    "own_001": 14.54,
+    "me_001": 14.64,
+    "but_001": 14.82,
+    "not_002": 14.94,
+    "enough_001": 15.1,
+    "to_001": 15.32,
+    "open_001": 15.46,
+    "me.'_001": 15.72,
+    "very_001": 16.22,
+    "healthy_001": 16.74,
+    "relationship_001": 17.04,
+    "this_001": 17.98,
+    "is_004": 18.04,
+    "why_001": 18.18,
+    "repairability_001": 18.38,
+    "matters_001": 19.08,
+    "repairability_002": 20.04,
+    "just_001": 20.52,
+    "means_001": 20.72,
+    "how_001": 20.98,
+    "easy_001": 21.22,
+    "something_001": 21.52,
+    "is_005": 21.86,
+    "to_002": 22.16,
+    "fix_001": 22.32,
+    "can_001": 22.86,
+    "you_002": 22.98,
+    "replace_001": 23.1,
+    "the_006": 23.46,
+    "battery_001": 23.7,
+    "can_002": 24.36,
+    "you_003": 24.46,
+    "buy_001": 24.6,
+    "the_007": 24.74,
+    "part_002": 24.9,
+    "can_003": 25.62,
+    "a_003": 25.86,
+    "local_001": 25.98,
+    "repair_003": 26.16,
+    "shop_001": 26.56,
+    "understand_001": 26.9,
+    "the_008": 27.34,
+    "product_003": 27.54,
+    "without_001": 27.88,
+    "needing_001": 28.16,
+    "a_004": 28.38,
+    "mysterious_001": 28.56,
+    "machine_001": 28.94,
+    "in_001": 29.48,
+    "a_005": 29.66,
+    "locked_001": 29.78,
+    "room_001": 30.02,
+    "some_001": 30.9,
+    "governments_001": 31.08,
+    "now_001": 31.38,
+    "treat_001": 31.72,
+    "repair_004": 31.94,
+    "information_001": 32.28,
+    "spare_001": 33.02,
+    "parts_001": 33.22,
+    "battery_002": 33.72,
+    "life_001": 33.94,
+    "and_003": 34.48,
+    "repairability_003": 34.52,
+    "labels_001": 35.18,
+    "as_003": 35.48,
+    "things_001": 35.78,
+    "worth_001": 36.04,
+    "requiring_001": 36.28,
+    "for_001": 36.88,
+    "certain_001": 37.14,
+    "products_001": 37.42,
+    "that_001": 38.54,
+    "is_006": 38.78,
+    "basically_001": 38.92,
+    "society_001": 39.38,
+    "looking_001": 39.92,
+    "at_002": 40.3,
+    "a_006": 40.54,
+    "phone_001": 40.68,
+    "and_004": 40.96,
+    "saying_001": 41.18,
+    "please_001": 41.76,
+    "have_001": 41.96,
+    "a_007": 42.18,
+    "future_001": 42.3
+  },
+  "quality": {
+    "language": "en",
+    "languageProbability": 1.0,
+    "durationSecondsDetected": 42.816,
+    "wordCount": 138,
+    "lowProbabilityWords": [
+      {
+        "index": 2,
+        "word": "repair.",
+        "normalized": "repair",
+        "start": 1.16,
+        "end": 1.16,
+        "duration": 0.0,
+        "probability": 0.1793
+      },
+      {
+        "index": 3,
+        "word": "A",
+        "normalized": "a",
+        "start": 1.6,
+        "end": 1.62,
+        "duration": 0.02,
+        "probability": 0.0147
+      },
+      {
+        "index": 4,
+        "word": "product",
+        "normalized": "product",
+        "start": 1.62,
+        "end": 1.9,
+        "duration": 0.28,
+        "probability": 0.1313
+      },
+      {
+        "index": 78,
+        "word": "●Can",
+        "normalized": "can",
+        "start": 22.86,
+        "end": 22.98,
+        "duration": 0.12,
+        "probability": 0.0757
+      },
+      {
+        "index": 105,
+        "word": "●Some",
+        "normalized": "some",
+        "start": 30.9,
+        "end": 31.08,
+        "duration": 0.18,
+        "probability": 0.0041
+      },
+      {
+        "index": 133,
+        "word": "and",
+        "normalized": "and",
+        "start": 40.96,
+        "end": 41.18,
+        "duration": 0.22,
+        "probability": 0.2544
+      },
+      {
+        "index": 135,
+        "word": "\"$Please",
+        "normalized": "please",
+        "start": 41.76,
+        "end": 41.96,
+        "duration": 0.2,
+        "probability": 0.2487
+      }
+    ],
+    "shortWordSpans": [
+      {
+        "index": 2,
+        "word": "repair.",
+        "normalized": "repair",
+        "start": 1.16,
+        "end": 1.16,
+        "duration": 0.0,
+        "probability": 0.1793
+      },
+      {
+        "index": 3,
+        "word": "A",
+        "normalized": "a",
+        "start": 1.6,
+        "end": 1.62,
+        "duration": 0.02,
+        "probability": 0.0147
+      },
+      {
+        "index": 43,
+        "word": "And",
+        "normalized": "and",
+        "start": 12.64,
+        "end": 12.68,
+        "duration": 0.04,
+        "probability": 0.8453
+      },
+      {
+        "index": 115,
+        "word": "and",
+        "normalized": "and",
+        "start": 34.48,
+        "end": 34.52,
+        "duration": 0.04,
+        "probability": 0.9965
+      }
+    ]
+  }
+}
