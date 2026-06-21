@@ -7,7 +7,17 @@ Section:
 `Section 4: The Boring Parts Disappear`
 
 Status:
-`simple Section-1-style remake preview running on fixed section port`
+`remade from scratch 2026-06-21 — preview running on port 1004, ready for review`
+
+## Remake From Scratch (2026-06-21)
+
+Rebuilt the entire composition fresh on the user's request, and fixed that the section-preview `assets/` folder was missing (a broken junction) so the standalone preview had been rendering without images.
+
+- New build: 3 big scenes on real photo bases (`fabric.jpg` materials / `screwdriver.jpg` repairable mechanics / `cardboard.jpg` sealed box), 6 cues, 3 WIT beats (`thinking` held cues 1-2 / `deadpan-side-eye` cue 4 / `betrayed` cue 6). The 6 "boring parts" are a staggered stacked list that builds one row per spoken item (GSAP opacity sets); payoff `LESS FUTURE BUILT IN` (one line, span `border-bottom` underline). WIT cues carry `data-layout-allow-overflow` + `overflow:visible`.
+- Assets restored into `assets/section-04/` (fabric/screwdriver/cardboard from the review mirror) + `assets/wit/` (thinking/deadpan/betrayed) + font; `dev` script patched to `preview --port 1004`.
+- Timing is `whisper-derived`: after a first estimated pass mismatched the voice (~4s late on the parts list), the audio was transcribed with `transformers.js` (`@xenova/whisper-tiny.en`, WASM — no native deps) and word timings saved to `voiceover/section-04-.../section-04-word-timings.json`. Every scene cut + reveal is now pinned to real word times (hinge 5.66 / battery 7.62 / screw 9.46 / spare 12.72 / printer 25.46 / easy-to-hide 33.3 / payoff 36.2). Snapshot QA confirms each part appears as it is spoken.
+- Retained the 3 attributed real bases (already in `assets/ATTRIBUTION.md`); the Scene-2 screwdriver-on-pink is the weakest and can be swapped for a warmer in-context tools photo on request.
+- Verified: lint 0 err / validate 0 err / inspect 0 layout issues (7 samples); snapshot QA at `2.5/8/13/18/24/30/36`. Synced to `hyperframes/review/section-04.html` and refreshed the unified full video (`hyperframes/full-video/compositions/section-04.html`, audio stripped — the unified cut keeps its single combined voiceover; S4's duration is unchanged so offsets are unaffected).
 
 ## Result
 

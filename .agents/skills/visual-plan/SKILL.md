@@ -481,6 +481,41 @@ For normal runs, actively look for real-life internet or local images first. Do 
 
 If a selected section uses zero real images, the `reference-board.md` must explain why real images were unavailable, unsafe, irrelevant, or lower quality than the generated/self-made alternative.
 
+### Real Scene Base Rule
+
+Every persistent big scene must specify a real, descriptive image base (or a clearly justified self-made base) — never a bare flat gradient or empty colored background. A CSS-only/gradient beat reads to reviewers as "no background / no image to describe the voice" and gets sent back. Self-made CSS is for objects, props, labels, cards, and overlays on top of a base, not for the scene background itself unless the plan documents a specific reason (e.g. a deliberately blank paper beat).
+
+For each big scene, the plan must name the chosen base image, the search terms used to find it, and a fallback, so render can source/grade it without guessing. The image must *describe the voice beat*, e.g. a padlock for "you own me but cannot open me", money for "costs almost as much as a new one", a phone on a table for "society looking at a phone", an opened device + battery + tools for "repairability / replace the battery".
+
+### Image Sourcing Recipe And Selection Rubric
+
+When sourcing a real base (no image-generation tool needed), use the Wikimedia Commons API and capture attribution:
+
+```bash
+curl -s -G "https://commons.wikimedia.org/w/api.php" \
+  --data-urlencode "action=query" --data-urlencode "format=json" \
+  --data-urlencode "generator=search" \
+  --data-urlencode "gsrsearch=filetype:bitmap <descriptive terms>" \
+  --data-urlencode "gsrnamespace=6" --data-urlencode "gsrlimit=8" \
+  --data-urlencode "prop=imageinfo" \
+  --data-urlencode "iiprop=url|size|extmetadata" --data-urlencode "iiurlwidth=1920" \
+  -H "User-Agent: WhyItWorks-Channel/1.0 (research)"
+```
+
+Parse the JSON with `node -e` (this Windows box has no `python` and no `jq`). Read each candidate's `Artist`, `LicenseShortName`, `LicenseUrl`, and `descriptionurl`; capture them for `ATTRIBUTION.md`. CC0 / CC BY / CC BY-SA are all in policy. Download the `iiurlwidth` thumb (1920px) and View it before committing — never select on filename alone.
+
+Selection rubric — a base passes only if all are true:
+
+- describes the voice beat (literal or clear metaphor), not generic decoration
+- brand-free: no recognizable logos or recognizable branded devices (a MacBook, a battery stamped with a maker name). Verify on the actual pixels, not the filename; reject even high-res images that show a brand.
+- people-free for direct-use backgrounds: the channel is no-face, so reject images containing real people/faces even when they are sharper than the alternative (keep them `inspiration only` at most).
+- not sterile/floating stock: objects fanned on pure white read as cheap and get flagged; prefer in-context, textured, lived-in scenes.
+- distinct from adjacent big scenes (different surface, palette, composition) unless an intentional callback.
+- reads behind the planned overlays: if the definition card / labels cover most of the frame, moderate resolution is fine; if the base is the star, require a crisp source.
+- palette-friendly and clean: do not plan a gray wash or heavy desaturating filter over a real photo; keep the texture. Plan only a light, local label backing if readability needs it.
+
+Note for render handoff: `object-fit: cover` from a source whose width already equals the 1920 frame only crops vertically — a subject on the left/right edge cannot be hidden with `object-position`. If a candidate has an unwanted element pinned to a side edge, choose a different image rather than expecting a crop to remove it.
+
 For normal runs, use at least `3` useful references per selected section:
 
 - one real-life/object/material reference
@@ -804,6 +839,8 @@ A section visual plan is ready when:
 - ordinary labels use hard-show unless emphasis needs impact motion
 - labels are short and readable
 - red markup and callouts have exact target objects and are not decorative
+- every persistent big scene names a real (or justified self-made) descriptive base image with search terms and a fallback; no scene relies on a bare flat gradient
+- chosen base images are brand-free, people-free, non-sterile, palette-clean, distinct from adjacent scenes, and were viewed (not picked by filename) with creator/license recorded
 - the visual reference pass produced browsed, generated, inspected local, or clearly degraded prompt-only references
 - real-life, benchmark, and generated references are classified with source notes
 - references map to big scenes and buildable asset decisions
@@ -827,6 +864,9 @@ Reject or stop before finishing if:
 - the skill skips the visual reference pass without documenting a failed/unavailable fallback
 - the skill defaults to generated images without first trying useful real-world references
 - the reference board is prompt-only while browsing or image generation was available and safe
+- a persistent big scene ships with only a flat gradient / empty colored background instead of a named real (or justified self-made) descriptive base
+- a chosen base image shows a recognizable brand/logo/branded device, contains real people in a direct-use background, or is sterile objects-on-white when a descriptive in-context image was reasonably findable
+- a base image was selected on filename alone without viewing the pixels and recording its creator/license
 - the plan does not include a big scene plan and cue state timeline
 - the cue timeline creates too many unrelated full-scene cuts for a short section
 - cue states are based on sentence count instead of visual idea changes

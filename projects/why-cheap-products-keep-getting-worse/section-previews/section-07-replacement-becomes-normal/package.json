@@ -1,0 +1,10 @@
+{
+  "name": "why-cheap-products-section-07-replacement-becomes-normal",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx --yes hyperframes@0.6.76 preview --port 1007",
+    "check": "npx --yes hyperframes@0.6.76 lint && npx --yes hyperframes@0.6.76 validate && npx --yes hyperframes@0.6.76 inspect --at 2,8,13,16,18,20,22.5,25,28",
+    "render": "npx --yes hyperframes@0.6.76 render"
+  }
+}

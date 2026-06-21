@@ -96,6 +96,7 @@ Read these before rendering:
     - `02-script.md`
     - `04-voiceover.md`
     - `05-visual-plan.md`
+    - the selected section's `voiceover/section-XX-*/section-XX-word-timings.json` when present (word-level voice timing; the source of truth for cue `data-start` values)
 
 Also read active HyperFrames implementation guidance when available:
 
@@ -430,6 +431,8 @@ Channel-specific rules:
 - Do not animate every cue element. For normal labels, notes, and supporting props, use hard-show timing exactly on the spoken beat.
 - Use impact motion such as smash, stamp, shake, snap, or pop only for emphasized spoken words, evidence marks, or payoff labels.
 - Use red markup for corrections and punchlines.
+- Tie an underline/emphasis bar to its text, not to fixed coordinates. Use a `border-bottom` (or `::after`) on the inline-block text span so the underline always equals the text width, stays centered, and rotates with the label. Do not place a separate absolutely-positioned fixed-width underline `div` under text — it drifts and mismatches the text width when the text or font changes.
+- Keep short payoff phrases on one line: size the card to fit and add `white-space: nowrap` to the text span so a payoff tag never wraps awkwardly mid-phrase.
 - Red markup must point to or change a specific meaningful object; do not add decorative circles, rectangles, or marks that do not explain the narration.
 - Do not mark obvious details with meaningless graphics. Example: do not draw four random red leg marks over a chair just because the voice says `four legs`; a clear label is enough unless a specific leg matters.
 - Labels must be readable when paused.
@@ -476,7 +479,7 @@ Do not rely on delayed `gsap.from()` to hide cue elements before they enter. Set
 
 Run this pass after reading the visual plan and before writing or editing HTML:
 
-- Voice cue map: list the exact phrase that triggers each label, prop, WIT, and markup.
+- Voice cue map: build it from the section `section-XX-word-timings.json` when present; list the exact word/phrase (with its timestamp) that triggers each label, prop, WIT, and markup, and pin cue `data-start` + every staggered reveal to those timestamps. Re-pin all downstream cues/scenes/reveals whenever one cue moves.
 - Big-scene sanity: keep persistent scenes while the voice describes the same object or mechanism.
 - Cue density: each cue should add only one or two meaningful changes.
 - List compression: when a section names many related parts/features, group them into a small number of memory labels and background scenes before writing HTML.
@@ -504,6 +507,31 @@ Non-negotiable summary:
 - choose transitions per scene boundary, not one default effect everywhere
 - remove or simplify transitions that damage voice sync
 - design every meaningful element's entrance, hold, emphasis, and exit against spoken cues
+
+### Voice-Sync Timing Contract (word-timings-first)
+
+Timing mistakes are the most common review failure. Pin every time value to the actual narration, never to estimates or copied prior values.
+
+- Before assigning any `data-start`, look for the section's word-level timing file:
+  `projects/<slug>/voiceover/section-XX-*/section-XX-word-timings.json` (faster-whisper `words[]` + `segments[]` with `start`/`end` seconds). If it exists, it is the source of truth — build the voice cue map from it.
+- If the word-timings JSON is missing, GENERATE it from the section audio before timing cues — do not default to estimating. Estimating is a last resort and reliably drifts (a Section 4 estimated pass landed the parts list ~4s late). Estimate only if generation truly fails, and then label every cue time `estimated`.
+- Working generation recipe on this Windows box (no whisper-cpp, no Python — so `hyperframes transcribe` fails): use Whisper via `transformers.js` (WASM, no native deps).
+  1. `npm.cmd install --prefix %TEMP%/wiw-whisper --no-save @xenova/transformers@2.17.2`
+  2. decode the mp3 to 16 kHz mono f32 with the static ffmpeg: `ffmpeg -i <mp3> -ar 16000 -ac 1 -f f32le out.raw`
+  3. Node ESM: read `out.raw` into a `Float32Array`; `const t = await pipeline('automatic-speech-recognition','Xenova/whisper-tiny.en'); const o = await t(audio,{return_timestamps:'word',chunk_length_s:30,stride_length_s:5});` → `o.chunks` is `[{text, timestamp:[start,end]}]`.
+  4. write `voiceover/section-XX-*/section-XX-word-timings.json` with `{transcript, words:[{word,start,end}]}` and pin every cue/reveal to it. `whisper-tiny.en` aligns clean TTS narration well and runs in ~1 min.
+- Pin each cue's `data-start` to the word that triggers it. The bill shows on "the repair costs"; the stamp on "almost as much"; "NEW ONE" on "buying a new one". Do not start a cue several seconds before or after its words.
+- Stagger within-cue reveals to each spoken phrase. A cue that contains several labels, a quote, or a list (policy rows, checklist questions) must reveal each item on its word via GSAP `tl.set(target,{opacity:0},cueStart); tl.set(target,{opacity:1},wordStart)`, not all at cue start. "Show each item when the voice says it" is the default for any on-screen list.
+- Cascade on every move: when one cue's start changes, re-pin every downstream cue `data-start`, every scene-clip cut, and every GSAP reveal so the whole chain stays aligned. A late cue silently pushes all later cues late.
+- Final/payoff reveals: bring an emotional WIT in slightly before the punchline line if it helps comedic timing, but land the spoken tag/quote on its actual words.
+- After timing, set the section `package.json` `inspect --at` (and your snapshot `--at`) to the new cue mid-points, then regenerate snapshots — stale QA timestamps hide drift.
+
+### Timing Mechanics That Block Validation
+
+- Accumulating elements that must stay visible together (e.g. three barrier trays that build up) cannot overlap on one track — `overlapping_clips_same_track` is a hard error. Put each on its own `data-track-index` and give it `class="... clip"` plus a stable `id`. (A bare timed `<div>` with no `clip` class shows for the whole composition.)
+- Guard floating-point cue boundaries: `5.3 + 4.56 = 9.860000000000001` overlaps a clip starting at `9.86`. Trim the duration (e.g. `4.55`) so each clip ends at or before the next start.
+- Intentional off-canvas elements (e.g. a giant WIT at `right:-420px`) trip `clipped_text` / `text_box_overflow` / `canvas_overflow`. Marking the image with `data-layout-allow-overflow` is not enough — add `data-layout-allow-overflow=""` AND `style="overflow: visible;"` to the wrapping cue `div`; the composition root still clips at the canvas edge so the visual is unchanged.
+- Verify timing with `hyperframes snapshot --at <one timestamp per cue, including each staggered reveal just after it fires>`; read the contact sheet, confirm each element is present exactly when its words are spoken, and that nothing is still flying in on its cue frame.
 
 ## Asset Rules
 
@@ -698,6 +726,10 @@ Reject or stop before finishing if:
 - WIT face/head/shoulders are accidentally cropped, WIT covers the main label/proof/payoff, or payoff text covers WIT's face/expression
 - ordinary labels repeatedly fly/smash in and make the section visually dense
 - cue-critical elements appear early because delayed animation did not hide them at cue start
+- a `section-XX-word-timings.json` exists but cue `data-start` values were estimated or copied from a prior build instead of pinned to the word timings
+- a multi-element beat or an on-screen list dumps all items at cue start instead of revealing each on its spoken word
+- one cue's timing was changed without cascading the downstream cue/scene/reveal times
+- accumulating same-track clips overlap, a floating-point boundary overlaps the next clip, or intentional off-canvas cues are not marked allow-overflow + `overflow:visible` on the cue div
 - a real/object photo is globally washed out with a white overlay without a documented readability reason
 - explicit-export MP4 QA uses a contact sheet that still contains stale frames from an older cue count or render
 - transitions are added before hard-cut timing works

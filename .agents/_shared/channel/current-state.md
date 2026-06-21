@@ -46,7 +46,6 @@ Use these compact files instead of the old many-file system:
 - `visual-plan`: main step 5, writes `05-visual-plan.md`, section plans, reference boards, and visual reference assets
 - `render`: main step 6, writes `06-production-board.md`, section HyperFrames previews, review copies, and optional renders
 - `auto-adjust`: post-render section QA/fix pass before review; requires one project and one section, reads render/visual-plan memory plus shared visual rules, preserves manual Studio edits, and reports issues fixed
-- `wiw-take-note`: reusable memory capture
 
 Sequential production skills enforce prerequisites. Main pipeline order is `topic-intake -> research-pack -> script-draft -> voiceover -> visual-plan -> render -> auto-adjust -> review -> upload -> learning`. Packaging is a side branch from `research-pack`; it requires only topic intake and research pack and does not block script, voiceover, visual plan, render, review, upload, or learning. Rerunning an earlier main-pipeline dependency makes downstream main outputs stale until removed by explicit user request or regenerated in order. After voiceover, production branches by section: each section can move through visual plan, render, auto-adjust, and review separately. Render uses fixed ports: unified preview on `localhost:1000`, section `N` on `localhost:1000 + N`.
 

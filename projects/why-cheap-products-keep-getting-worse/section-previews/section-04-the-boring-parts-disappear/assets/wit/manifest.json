@@ -1,0 +1,5 @@
+[
+  { "pose": "thinking", "file": "wit-pose-thinking.png" },
+  { "pose": "deadpan-side-eye", "file": "wit-pose-deadpan-side-eye.png" },
+  { "pose": "betrayed", "file": "wit-pose-betrayed.png" }
+]

@@ -6,6 +6,12 @@ Project:
 Composition:
 `Section05MoreFeaturesMoreTinyDeaths`
 
+## Remake From Scratch (2026-06-21)
+
+Rebuilt the composition fresh and voice-synced. 2 big scenes: one real fridge (`fridge.jpg`) persisting 0-29.52 that gains a staggered feature pile (`SCREENS / SENSORS / WATER LINES / ICE DISPENSER / SOFTWARE / + OPINIONS`) into "A SMALL TECHNOLOGY COMMITTEE", then a real control board (`circuit-board.jpg`) 29.52-34.704 for the failure payoff `HARDER + MORE EXPENSIVE TO FIX`. 3 WIT beats: `awkward-celebration` (features good) / `confused` (committee) / `money-panic` (expensive fix). Removed an unneeded stray brand-mask.
+
+Timing is `whisper-derived`: audio transcribed with `transformers.js` (`@xenova/whisper-tiny.en`, WASM); word timings in `voiceover/section-05-.../section-05-word-timings.json`; every scene cut + reveal pinned to real word times. Verified lint 0 / validate 0 / inspect 0 (8 samples); snapshot QA confirms the feature pile builds in sync with the spoken list. Synced to `hyperframes/review/section-05.html` and the unified full video (`hyperframes/full-video/compositions/section-05.html`, audio stripped; S5 duration unchanged so offsets are unaffected).
+
 ## Style Prompt
 
 Real-photo recovery remake for the "more complicated products" section. Match the stronger Section 1 / Section 8 grammar: one large real texture per scene, sparse handwritten labels, red evidence marks only where they point to a real object, and WIT as a large emotional character rather than a small neutral sticker.

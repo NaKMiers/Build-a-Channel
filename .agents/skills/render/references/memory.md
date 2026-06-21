@@ -637,6 +637,85 @@ Apply next time:
 Promote to shared memory:
 no; this confirms the existing Section 4/5 render recovery pattern, but the detailed action belongs in render execution memory.
 
+### 2026-06-18 - Restore A Lost Section Preview From The Surviving Review Mirror
+
+Classification: `Operational lesson`
+
+Context:
+For `why-cheap-products-keep-getting-worse` Section 6, the `section-previews/section-06-.../` working folder and `06-production-board.md` were missing, but the approved build survived at `hyperframes/review/section-06.html` with its photo bases, and the saved references survived. The user asked to render Section 6.
+
+Lesson:
+When a section preview working folder is lost but the review mirror (`hyperframes/review/section-XX.html`) survives and represents the approved build, restore the preview 1:1 from the mirror instead of re-rendering from scratch. Copy the mirror HTML to `section-previews/section-XX-*/index.html`, rebuild a minimal `assets/` working set by copying only the files that section uses (from the mirror's `assets/`), copy the section voiceover mp3 as a sibling so the HTML's relative `src` resolves, and add `package.json` + `hyperframes.json` matching the sibling sections. Then run `lint` / `validate` / `inspect` and start the port `1000 + N` server.
+
+Apply next time:
+- glob `section-previews/`, `hyperframes/review/`, and the project root before assuming a section is unrendered
+- restore from the review mirror to avoid drift from the approved build
+- copy assets from the mirror's `assets/` (junctions fail on this Windows setup); keep the working set minimal
+- expect the preview server to resolve project id/title as the workspace/git root name (`Build a Channel`) while `dir` points to the section folder; verify via `GET /api/projects/Build%20a%20Channel/preview/comp/index.html`
+- recreate `06-production-board.md` if it is also missing
+- hand any WIT face/glass/tag collision QA points to Review/Auto-Adjust rather than redesigning during a restore
+
+Promote to shared memory:
+no; this is render-skill execution behavior for recovering lost preview folders.
+
+### 2026-06-21 - Word-Timings JSON Is The Source Of Truth; Cascade + Stagger (Section 6 review synthesis)
+
+Classification: `Render lesson`
+
+Context:
+Section 6 of `why-cheap-products-keep-getting-worse` went through four review passes that were almost all preventable at render time. The biggest was timing: the ownership-lock cue was placed at `16.8s` but the voice says it at `12.64s`, which pushed every downstream cue late. The section voiceover folder had `section-06-word-timings.json` (faster-whisper word timings) the whole time; the render had been timed from estimates/prior values instead. Reviewers also asked for within-cue text and list items to appear as each is spoken, not all at once.
+
+Lesson:
+Render must build the voice cue map from `voiceover/section-XX-*/section-XX-word-timings.json` and pin every `data-start`, scene cut, and GSAP reveal to actual word starts. When one cue moves, cascade the whole downstream chain. Within a cue, stagger every label/quote/list item to its spoken word (GSAP opacity sets), never batch them at cue start. Re-point `package.json` `inspect --at` + snapshot `--at` to the new cue mid-points and regenerate.
+
+Apply next time:
+- read the section word-timings JSON first; if absent, generate it before timing, else label all cue times `estimated`
+- pin each cue + reveal to its word; "show each item when the voice says it" is the default for any on-screen list
+- cascade downstream cues/scenes/reveals on every timing change
+- mechanics that block validation: accumulating same-track clips must move to separate tracks with `clip` class + ids; trim float-overlap boundaries (`5.3+4.56` overlaps `9.86`); intentional off-canvas WIT needs `data-layout-allow-overflow` + `overflow:visible` on the cue div, not just the img
+- verify with `hyperframes snapshot --at` at one timestamp per cue/reveal
+
+Promote to shared memory:
+no; render execution behavior. The word-timings-first rule now lives in `render/SKILL.md` (Voice-Sync Timing Contract).
+
+### 2026-06-21 - Every Scene Needs A Real Photo Base, Not A Gradient (Section 6 review synthesis)
+
+Classification: `Render lesson`
+
+Context:
+Section 6's CSS-only beats (cost gradient, ownership-lock gradient, future grid + empty `fake-phone`, and a sterile screwdrivers-on-white scene) were each rejected across passes as "no background / doesn't have an image to describe the voice / looks bad". Each was fixed by sourcing a real CC photo from Wikimedia (padlock, euro money, phone-on-table, opened-phone repair bench) and grading it clean. Brand/people pitfalls appeared: a CC0 desk photo had a recognizable MacBook (swapped), a Motorola battery showed a brand (rejected), and high-res repair photos contained real people (rejected per no-face rule).
+
+Lesson:
+If a scene base is a flat gradient or empty color, render should treat it as a defect and source a real descriptive photo (Wikimedia Commons API; brand-free, people-free, non-sterile, distinct, palette-clean) rather than ship the gradient. This should normally be fixed in `visual-plan`, but render must not build a gradient-only beat just because the plan left one.
+
+Apply next time:
+- replace any gradient/empty scene base with a real descriptive image that matches the voice beat
+- verify brand-free/people-free on the actual pixels; keep photos clean (no gray wash); record creator/license in `ATTRIBUTION.md`
+- `object-fit: cover` from a frame-width source only crops vertically — pick a different image if a side-edge element must go
+
+Promote to shared memory:
+no; the upstream prevention lives in `visual-plan/SKILL.md` (Real Scene Base Rule + sourcing recipe). Keep render-side enforcement here.
+
+### 2026-06-21 - Generate Word Timings With transformers.js (Don't Estimate)
+
+Classification: `Render lesson`
+
+Context:
+Sections 4 and 7 of `why-cheap-products-keep-getting-worse` were first built with estimated cue timing because no `word-timings.json` existed and `hyperframes transcribe` needs whisper-cpp (not installed; no Python/faster-whisper either). The estimates drifted badly — for Section 4 the voice rattled the parts list out ~4s earlier than estimated (e.g. "a hinge" spoken at 5.66s but shown at 9.5s), so Anh Khoa reported "the text doesn't match the voice again." Generating real word timings and re-pinning every cut/reveal fixed it.
+
+Lesson:
+Estimating cue timing is unreliable and keeps producing "text doesn't match the voice" review hits. When a section lacks `word-timings.json`, generate it. Whisper via `transformers.js` (`@xenova/transformers@2.17.2`, `Xenova/whisper-tiny.en`) runs in WASM with NO native deps — it works on this Windows box where whisper-cpp/Python do not.
+
+Apply next time:
+- `npm.cmd install --prefix %TEMP%/wiw-whisper --no-save @xenova/transformers@2.17.2`
+- decode mp3 → 16 kHz mono f32 with the static ffmpeg (`-ar 16000 -ac 1 -f f32le`), read into a `Float32Array`
+- `pipeline('automatic-speech-recognition','Xenova/whisper-tiny.en')` with `{return_timestamps:'word', chunk_length_s:30, stride_length_s:5}`; `result.chunks` = `[{text, timestamp:[start,end]}]`
+- save `voiceover/section-XX-*/section-XX-word-timings.json` ({transcript, words[]}) and pin every `data-start`, scene cut, and GSAP reveal to it; re-derive any unified/combined-audio offsets from the actual durations
+- only fall back to proportional estimation if generation genuinely fails, and label cues `estimated`
+
+Promote to shared memory:
+No; render execution practice. The concrete recipe now lives in `render/SKILL.md` (Voice-Sync Timing Contract).
+
 ## Feedback Entry Template
 
 ```markdown

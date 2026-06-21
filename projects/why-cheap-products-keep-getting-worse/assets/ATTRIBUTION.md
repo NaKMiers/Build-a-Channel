@@ -38,7 +38,7 @@ Scope:
   Use: Section `5`, cue overlays on real photo bases
   Source: built directly in `section-previews/section-05-more-features-more-tiny-deaths/index.html` from the script, Section 1/8 render grammar, and Section 5 reference board
   Status: `self-made safe production overlays; no real app UI or real product claim is added`
-- Section `6` no-logo repair checkpoint, scanner, tray labels, repair phone mockup, repair bill, product box, locked product, glass panel, repairability definition, checklist, future-label card, source-marking masks, and handwritten labels
+- Section `6` no-logo tray labels, repair bill, product box, glass panel (trapped-WIT overlay), repairability definition, checklist, future-label card, and handwritten labels (the locked-product is now the real padlock photo below; the CSS lock-icon and decorative mystery-machine were removed 2026-06-21)
   Use: Section `6`, cue overlays and self-made objects on real repair/screwdriver texture bases
   Source: built directly in `section-previews/section-06-repair-gets-a-security-system/index.html` from the remade Section 6 visual plan, Section 6 reference board, and Section 3 render grammar
   Status: `self-made safe production overlays; no real invoice, official EU label, QR code, government logo, or real product claim is exposed`
@@ -100,13 +100,58 @@ Scope:
   Creator: `Triskal`
   Terms checked: `CC BY-SA 4.0`
   Safe-use note: direct texture use only; visible source-product markings are masked in HyperFrames and the frame does not claim the photographed product is defective, cheap, blocked, or criticized
+- `assets/section-06/repairability-photo-base.jpg`
+  Use: Section `6`, Big Scene `3` (repairability test, `17.98-30.9`), real opened-phone / battery / repair-tools bench behind the REPAIRABILITY definition and checklist boards — illustrates "easy to fix / replace the battery / buy the part" (added 2026-06-21 to replace the sterile screwdrivers-on-white image the reviewer flagged)
+  Source: [Wikimedia Commons - Cell Phone Repair.jpg](https://commons.wikimedia.org/wiki/File:Cell_Phone_Repair.jpg)
+  Creator: `Peretz Partensky`
+  Terms checked: `CC BY-SA 2.0` (https://creativecommons.org/licenses/by-sa/2.0)
+  Safe-use note: no people, no visible brand logo (battery shows only a generic Li-ion warning); all labels added in HyperFrames
 - `assets/section-06/precision-screwdriver-photo-base.jpg`
   Copied from: `visual-references/section-06-repair-gets-a-security-system/real-world/precision-screwdriver-set-commons-oomlout-cc-by-sa-2.jpg`
-  Use: Section `6`, Big Scene `3`, repairability/tool texture behind the definition and checklist boards
+  Use: `SUPERSEDED 2026-06-21` — was the Big Scene `3` background; replaced by `repairability-photo-base.jpg` because the screwdrivers-on-white read as sterile/floating. File kept on disk, no longer referenced.
   Source: [Wikimedia Commons - Precision Screwdriver Set 2.jpg](https://commons.wikimedia.org/wiki/File:Precision_Screwdriver_Set_2.jpg)
   Creator: `oomlout`
   Terms checked: `CC BY-SA 2.0`
-  Safe-use note: direct texture use with generic repairability labels added in HyperFrames
+  Safe-use note: no longer in the render; retain attribution while the file remains in the working set
+- `assets/section-06/ownership-lock-photo-base.jpg`
+  Use: Section `6`, Big Scene `2` (ownership-lock beat, `12.64-17.98`), real padlock background depicting the locked product behind the trapped WIT and quote (added 2026-06-21 to replace the CSS lock-icon and give the lock beat a real background)
+  Source: [Wikimedia Commons - "- Padlock -.jpg"](https://commons.wikimedia.org/wiki/File:-_Padlock_-.jpg)
+  Creator: `Nino Barbieri`
+  Terms checked: `CC BY-SA 2.5` (https://creativecommons.org/licenses/by-sa/2.5)
+  Safe-use note: generic padlock-on-wood texture; no brand or real product claim; all labels/quote added in HyperFrames
+- `assets/section-06/cost-money-photo-base.jpg`
+  Use: Section `6`, Big Scene `2` (cost beat, `9.86-12.64`), real euro-banknotes background grounding "the repair costs almost as much as buying a new one" behind the bill-vs-new-box comparison (added 2026-06-21 to replace the flat gradient background)
+  Source: [Wikimedia Commons - Pile of Euro Notes (5856649637).jpg](https://commons.wikimedia.org/wiki/File:Pile_of_Euro_Notes_(5856649637).jpg)
+  Creator: `Images Money`
+  Terms checked: `CC BY 2.0` (https://creativecommons.org/licenses/by/2.0)
+  Safe-use note: generic money texture; no brand or real product claim; all labels/stamp added in HyperFrames
+- `assets/section-06/future-phone-photo-base.jpg`
+  Use: Section `6`, Big Scene `4` (future-label beat, `30.9-42.816`), real "phone on a table" background for "society looking at a phone" behind the FUTURE LABEL card and deadpan WIT (added 2026-06-21 to replace the empty CSS fake-phone + grid background)
+  Source: [Wikimedia Commons - Smartphone with case cover on table.jpg](https://commons.wikimedia.org/wiki/File:Smartphone_with_case_cover_on_table.jpg)
+  Creator: `Santeri Viinamäki`
+  Terms checked: `CC BY-SA 4.0` (https://creativecommons.org/licenses/by-sa/4.0)
+  Safe-use note: generic phone-on-wood texture, no visible brand logo or readable UI; chosen over an alternative desk photo that contained a recognizable laptop; all labels added in HyperFrames
+- `assets/section-07/ewaste-pile-photo-base.jpg`
+  Copied from: `visual-references/section-07-replacement-becomes-normal/real-world/ewaste-pile-commons-reconrabbit-cc0.jpg`
+  Use: Section `7`, Big Scene `1` (replacement feels normal / "throwing things away"), real e-waste pile behind the resigned WIT and labels
+  Source: [Wikimedia Commons - Keyboards and mice in pile of ewaste.jpg](https://commons.wikimedia.org/wiki/File:Keyboards_and_mice_in_pile_of_ewaste.jpg)
+  Creator: `Reconrabbit`
+  Terms checked: `CC0` (http://creativecommons.org/publicdomain/zero/1.0/)
+  Safe-use note: no people, no brand logo (a baked-in generic "ALL TRASH" arrow is on-theme); all labels added in HyperFrames
+- `assets/section-07/fulfillment-boxes-photo-base.jpg`
+  Copied from: `visual-references/section-07-replacement-becomes-normal/real-world/fulfillment-boxes-commons-willnemoy-cc-by-sa-4.jpg`
+  Use: Section `7`, Big Scene `2` (the system makes replacement easier), real fulfillment-warehouse boxes behind the friction-reason list
+  Source: [Wikimedia Commons - Flaps held open ... boxes ... for transport while open.jpg](https://commons.wikimedia.org/wiki/File:Flaps_held_open_with_clips_that_allow_boxes_to_be_stacked_for_transport_while_open.jpg)
+  Creator: `WillNemoy`
+  Terms checked: `CC BY-SA 4.0` (https://creativecommons.org/licenses/by-sa/4.0)
+  Safe-use note: no people, no brand (bin codes only); all labels added in HyperFrames
+- `assets/section-07/checkout-wood-photo-base.jpg`
+  Copied from: `visual-references/section-07-replacement-becomes-normal/real-world/cherry-wood-board-commons-cc-by-sa-4.jpg`
+  Use: Section `7`, Big Scene `3` (the re-buy loop), real warm cherry-wood surface behind the CSS re-buy receipt, smiling price tag, box, and deadpan WIT (added 2026-06-21 to replace the flat self-made CSS counter background the reviewer flagged as bad)
+  Source: [Wikimedia Commons - Kirschholzbrett -- 2021 -- 7656.jpg](https://commons.wikimedia.org/wiki/File:Kirschholzbrett_--_2021_--_7656.jpg)
+  Creator: `Dietmar Rabich`
+  Terms checked: `CC BY-SA 4.0` (https://creativecommons.org/licenses/by-sa/4.0)
+  Safe-use note: generic warm wood-grain texture, no people, no brand; all receipt/price/labels added in HyperFrames
 
 ### Reusable channel assets
 

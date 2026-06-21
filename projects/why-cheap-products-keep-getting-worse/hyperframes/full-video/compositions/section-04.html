@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Section 04 The Boring Parts Disappear - Why Cheap Products Keep Getting Worse</title>
+  <style>
+    @font-face {
+      font-family: "PatrickHandLocal";
+      src: url("./assets/fonts/patrick-hand-latin.woff2") format("woff2");
+      font-weight: 400; font-style: normal; font-display: block;
+    }
+    :root {
+      --paper: #f2eadb; --cream: #fff8df; --ink: #17120f; --red: #7d1714;
+      --red-soft: #fff1ea; --yellow: #efc63d; --green: #81b989;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); overflow: hidden; }
+    #Section04TheBoringPartsDisappear {
+      position: relative; width: 1920px; height: 1080px; overflow: hidden;
+      background: var(--paper); font-family: "PatrickHandLocal";
+    }
+    .scene, .cue { position: absolute; inset: 0; width: 100%; height: 100%; overflow: hidden; }
+    .scene { z-index: 1; background: var(--paper); }
+    .cue { z-index: 5; pointer-events: none; }
+    .photo-base { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; user-select: none; pointer-events: none; }
+    .fabric-photo { object-position: center 38%; }
+    .tools-photo { object-position: center center; }
+    .box-photo { object-position: center 42%; }
+
+    .label {
+      position: absolute; display: inline-flex; align-items: center; justify-content: center;
+      min-width: 150px; min-height: 70px; padding: 15px 28px 19px;
+      background: var(--cream); border: 7px solid var(--ink); border-radius: 8px;
+      box-shadow: 12px 14px 0 rgba(23,18,15,0.20); color: var(--ink);
+      font-size: 60px; line-height: 0.9; text-align: center; letter-spacing: -0.01em;
+      transform: rotate(-2deg); z-index: 8;
+    }
+    .label.small { min-height: 56px; padding: 11px 22px 15px; border-width: 5px; font-size: 44px; line-height: 0.94; box-shadow: 8px 10px 0 rgba(23,18,15,0.17); }
+    .label.dark { background: #000; border-color: #fff; color: #fff; }
+    .label.yellow { background: var(--yellow); color: #17120f; }
+    .label.red { background: var(--red-soft); border-color: var(--red); color: #230403; }
+
+    .part {
+      position: absolute; left: 130px; display: inline-flex; align-items: center;
+      min-width: 560px; padding: 13px 26px 17px; background: rgba(255,253,245,0.96);
+      border: 6px solid var(--ink); border-radius: 12px; box-shadow: 9px 11px 0 rgba(23,18,15,0.18);
+      color: var(--ink); font-size: 46px; line-height: 0.92; transform: rotate(-1.5deg); z-index: 8;
+    }
+    .part .tick { flex: 0 0 auto; width: 44px; height: 44px; margin-right: 22px; border: 6px solid #21502c; border-radius: 8px; background: var(--green); }
+    .part.p1 { top: 214px; } .part.p2 { top: 348px; } .part.p3 { top: 482px; } .part.p4 { top: 616px; }
+
+    .payoff {
+      position: absolute; left: 150px; top: 812px; width: 980px; padding: 20px 32px 28px;
+      border: 10px solid var(--red); background: var(--red-soft); box-shadow: 14px 16px 0 rgba(125,23,20,0.14);
+      color: #230403; font-size: 66px; line-height: 0.86; text-align: center; transform: rotate(-2deg); z-index: 12;
+    }
+    .payoff > span { display: inline-block; white-space: nowrap; border-bottom: 9px solid var(--red); padding-bottom: 10px; }
+
+    .wit { position: absolute; object-fit: contain; z-index: 9; filter: drop-shadow(13px 17px 0 rgba(23,18,15,0.18)); }
+    .label > span, .part > span, .payoff > span { display: inline-block; }
+  </style>
+</head>
+<body>
+  <div id="Section04TheBoringPartsDisappear" data-composition-id="Section04TheBoringPartsDisappear" data-start="0" data-duration="37.92" data-width="1920" data-height="1080">
+
+    <!-- scenes (track 1) — cuts pinned to word timings: hinge @5.66, "most people see" @26.92 -->
+    <div id="scene-materials" class="clip scene" data-start="0" data-duration="5.66" data-track-index="1">
+      <img class="photo-base fabric-photo" src="./assets/section-04/fabric.jpg" alt="">
+    </div>
+    <div id="scene-repairable" class="clip scene" data-start="5.66" data-duration="21.26" data-track-index="1">
+      <img class="photo-base tools-photo" src="./assets/section-04/screwdriver.jpg" alt="">
+    </div>
+    <div id="scene-box" class="clip scene" data-start="26.92" data-duration="11" data-track-index="1">
+      <img class="photo-base box-photo" src="./assets/section-04/cardboard.jpg" alt="">
+    </div>
+
+    <!-- cues (track 2) -->
+    <div id="cue-boring-intro" class="clip cue" data-layout-allow-overflow="" style="overflow: visible;" data-start="0" data-duration="3.9" data-track-index="2">
+      <div class="label yellow" style="left: 130px; top: 92px; width: 760px;"><span>THE FUTURE IS USUALLY BORING</span></div>
+      <img class="wit" data-layout-allow-overflow="" style="right: -150px; bottom: -300px; width: 1060px;" src="./assets/wit/wit-pose-thinking.png" alt="">
+    </div>
+
+    <div id="cue-materials" class="clip cue" data-layout-allow-overflow="" style="overflow: visible;" data-start="3.9" data-duration="1.76" data-track-index="2">
+      <div class="label small dark" style="left: 130px; top: 96px; width: 360px;"><span>boring things:</span></div>
+      <div class="part p1"><span class="tick"></span><span>THICKER FABRIC</span></div>
+      <div class="part p2 reveal-stitching"><span class="tick"></span><span>STRONGER STITCHING</span></div>
+      <img class="wit" data-layout-allow-overflow="" style="right: -150px; bottom: -300px; width: 1060px;" src="./assets/wit/wit-pose-thinking.png" alt="">
+    </div>
+
+    <div id="cue-repairable-parts" class="clip cue" data-start="5.66" data-duration="10.44" data-track-index="2">
+      <div class="part p1"><span class="tick"></span><span>A HINGE THAT JUST WORKS</span></div>
+      <div class="part p2 reveal-battery"><span class="tick"></span><span>A BATTERY YOU CAN REPLACE</span></div>
+      <div class="part p3 reveal-screw"><span class="tick"></span><span>A NORMAL SCREW, NOT A SECRET HANDSHAKE</span></div>
+      <div class="part p4 reveal-spare"><span class="tick"></span><span>A SPARE PART THAT STILL EXISTS</span></div>
+    </div>
+
+    <div id="cue-nobody-brags" class="clip cue" data-layout-allow-overflow="" style="overflow: visible;" data-start="16.1" data-duration="10.82" data-track-index="2">
+      <div class="label yellow" style="left: 130px; top: 96px; width: 700px;"><span>NOBODY BRAGS ABOUT THIS</span></div>
+      <div class="label small red reveal-printer" style="left: 130px; top: 250px; width: 780px;"><span>...they're already repairing a printer</span></div>
+      <img class="wit" data-layout-allow-overflow="" style="right: -360px; bottom: -360px; width: 1320px;" src="./assets/wit/wit-pose-deadpan-side-eye.png" alt="">
+    </div>
+
+    <div id="cue-easy-to-hide" class="clip cue" data-start="26.92" data-duration="7.37" data-track-index="2">
+      <div class="label small dark" style="left: 130px; top: 110px; width: 900px;"><span>people see: SHAPE · COLOR · PRICE · TOMORROW</span></div>
+      <div class="label red reveal-hide" style="left: 130px; top: 270px; width: 560px;"><span>EASY TO HIDE</span></div>
+    </div>
+
+    <div id="cue-less-future" class="clip cue" data-layout-allow-overflow="" style="overflow: visible;" data-start="34.3" data-duration="3.62" data-track-index="2">
+      <div class="label small dark" style="left: 130px; top: 110px; width: 620px;"><span>still looks complete</span></div>
+      <div class="payoff reveal-payoff"><span>LESS FUTURE BUILT IN</span></div>
+      <img class="wit reveal-payoff" data-layout-allow-overflow="" style="right: -360px; bottom: -420px; width: 1380px;" src="./assets/wit/wit-pose-betrayed.png" alt="">
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      // All reveals pinned to whisper word timings (section-04-word-timings.json)
+      tl.set(".reveal-stitching", { opacity: 0 }, 3.9);   tl.set(".reveal-stitching", { opacity: 1 }, 4.5);   // "stronger stitching"
+      tl.set(".reveal-battery",   { opacity: 0 }, 5.66);  tl.set(".reveal-battery",   { opacity: 1 }, 7.62);  // "a battery you can replace"
+      tl.set(".reveal-screw",     { opacity: 0 }, 5.66);  tl.set(".reveal-screw",     { opacity: 1 }, 9.46);  // "a screw..."
+      tl.set(".reveal-spare",     { opacity: 0 }, 5.66);  tl.set(".reveal-spare",     { opacity: 1 }, 12.72); // "a spare part..."
+      tl.set(".reveal-printer",   { opacity: 0 }, 16.1);  tl.set(".reveal-printer",   { opacity: 1 }, 25.46); // "...repairing a printer"
+      tl.set(".reveal-hide",      { opacity: 0 }, 26.92); tl.set(".reveal-hide",      { opacity: 1 }, 33.3);  // "easy to hide"
+      tl.set(".reveal-payoff",    { opacity: 0 }, 34.3);  tl.set(".reveal-payoff",    { opacity: 1 }, 36.2);  // "less future built into it"
+      window.__timelines["Section04TheBoringPartsDisappear"] = tl;
+    </script>
+  </div>
+</body>
+</html>

@@ -7,7 +7,7 @@ Section:
 `Section 5: More Features, More Tiny Deaths`
 
 Status:
-`draft visual plan for approval`
+`remade from scratch 2026-06-21 - planned and rendered, ready for review`
 
 ## Files
 
@@ -17,11 +17,11 @@ Status:
 
 ## Build Notes
 
-- Big scene count: `3`
-- Cue state count: `8`
-- Main motif: `useful features can create more tiny failure points`
-- WIT emotion: `fair thinking -> confused by opinions -> facepalm at tiny failed part`
-- Key labels: `COMPLICATED != BAD`, `ONE JOB: BE COLD`, `SCREEN + SENSOR + WATER + ICE + SOFTWARE`, `TECHNOLOGY COMMITTEE`, `TINY PART FAILS`
-- Reference pass: `global gstack browse fallback, 4 Wikimedia Commons references saved and classified`
-- Key assets: `generic self-made HyperFrames appliance/fridge/committee graphics; WIT poses from project manifest`
-- HyperFrames readiness: `render can build without inventing main scenes, cue timing, WIT poses, labels, or markup targets`
+- Big scene count: `2` (one evolving fridge + one failed control board)
+- Cue state count: `5`
+- Main motif: `the same fridge gains features until it is a "small technology committee"; then one tiny part fails`
+- WIT emotion: `awkward-celebration (features good) -> confused (committee) -> money-panic (expensive fix)`; turn + pile are WIT-free
+- Key labels: `2ND REASON: MORE FEATURES`, green `SAFER / BETTER BATTERY / TOUGHER PHONE`, red `EVERY FEATURE = ONE MORE THING TO BREAK`, `ONE JOB: BE COLD`, feature pile (`SCREENS / SENSORS / WATER LINES / ICE DISPENSER / SOFTWARE / + OPINIONS`), `A SMALL TECHNOLOGY COMMITTEE IN YOUR KITCHEN`, payoff `HARDER + MORE EXPENSIVE TO FIX`
+- Timing: `whisper-derived` (transformers.js whisper-tiny.en → `section-05-word-timings.json`); every cut/reveal pinned to real word timings
+- Remade 2026-06-21: rebuilt the composition from scratch and voice-synced; retained the 2 attributed real bases (fridge / control board), removed an unneeded stray brand-mask
+- Real bases: `fridge.jpg` (Infrogmation, CC BY-SA 4.0), `circuit-board.jpg` (Phiarc, CC BY-SA 4.0)

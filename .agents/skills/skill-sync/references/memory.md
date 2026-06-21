@@ -24,4 +24,11 @@ This memory is about the sync tooling only; it never holds channel strategy.
 
 ## Resolution rules learned
 
-- (none yet — add when the user corrects a conflict resolution)
+- Phantom skill in docs (a skill named in `AGENTS.md`/`README.md`/`current-state.md`/
+  `.agents/skills/README.md` but with no `.agents/skills/<name>/` directory and no wrapper):
+  ask the user before acting. On 2026-06-18 the user chose "remove stale references" for
+  `wiw-take-note` — strip the bullet/mention from every doc so all docs match the real
+  canonical inventory, rather than scaffolding the skill. Confirm scope before building.
+- When removing such references, sweep ALL docs (`AGENTS.md`, `README.md`,
+  `.agents/skills/README.md`, `.agents/_shared/channel/current-state.md`) — the phantom
+  tends to appear in several at once. `CLAUDE.md` may already be clean.

@@ -35,6 +35,10 @@ Simple funny explainer section about boring product future pieces disappearing. 
 - Impact is reserved for the small `SECRET HANDSHAKE` cross-out and final `LESS FUTURE BUILT IN` stamp.
 - No decorative transitions, no repeated fly-ins, and no MP4/WebM export unless explicitly requested.
 
+## Timing
+
+`whisper-derived` (remade 2026-06-21). Audio transcribed with `transformers.js` whisper-tiny.en (WASM); word timings saved to `voiceover/section-04-.../section-04-word-timings.json`. Scene cuts pinned to "a hinge" (`5.66`) and "most people see" (`26.92`); parts list reveals at fabric `3.9` / stitching `4.5` / hinge `5.66` / battery `7.62` / screw `9.46` / spare `12.72`; printer line `25.46`; easy-to-hide `33.3`; payoff `36.2`.
+
 ## What Not To Do
 
 - Do not use the phone repair or printer repair photos directly.

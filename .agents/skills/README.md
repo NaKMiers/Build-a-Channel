@@ -31,9 +31,6 @@ This folder stores executable project-local Codex skills.
 - [Auto Adjust](auto-adjust/SKILL.md)
   Runs after render to audit and automatically fix one selected section preview using review lessons, skill memory, shared knowledge, and previous sections.
 
-- [WIW Take Note](wiw-take-note/SKILL.md)
-  Captures useful review and production feedback into the right project memory files.
-
 ## Utility Skills
 
 - [Skill Sync](skill-sync/SKILL.md)

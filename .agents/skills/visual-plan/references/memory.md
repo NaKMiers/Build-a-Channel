@@ -426,6 +426,64 @@ Apply next time:
 Promote to shared memory:
 no for now; keep in visual-plan/render skill memory until the same rule is proven across more future videos.
 
+### 2026-06-18 - Reconstruct A Missing Plan From The Surviving Approved Render
+
+Classification: `Operational lesson`
+
+Context:
+For `why-cheap-products-keep-getting-worse` Section 6, the `05-visual-plan.md` index claimed Section 6 was planned and rendered, but the `visual-plan/section-06-.../` markdown folder and the `section-previews/section-06-.../` working preview were missing on disk. The approved render survived at `hyperframes/review/section-06.html` with its photo bases, and the 4 browsed references survived under `assets/visual-references/section-06-.../`. The user asked to run visual-plan for Section 6, then render.
+
+Lesson:
+The project index can drift from the filesystem. Always verify actual files with a glob before deciding Create vs Update mode. When the plan markdown is missing but an approved (or ready-for-review) render survives, reconstruct the plan to match the render 1:1 - read the render HTML for exact scene/cue starts, durations, labels, WIT poses, placements, and timed reveals - instead of inventing a new, contradictory plan. This preserves prior approved decisions and gives render a clean rebuild spec. Reuse the already-saved references rather than re-browsing.
+
+Apply next time:
+- glob the `visual-plan/`, `section-previews/`, and `hyperframes/review/` folders before trusting the index
+- if a render survives, treat it as the source of truth and document it (exact timings/coordinates/reveals) in the reconstructed plan
+- reconcile the index row and stale notes to the real filesystem (missing preview, missing `06-production-board.md`, surviving review mirror)
+- reuse surviving saved references; document them in `reference-board.md` with their licenses
+
+Promote to shared memory:
+no; this is visual-plan execution behavior, not a channel-wide creative rule.
+
+### 2026-06-21 - Plan A Real Photo Base Per Scene + Sourcing Recipe (Section 6 review synthesis)
+
+Classification: `Visual plan lesson`
+
+Context:
+Section 6 of `why-cheap-products-keep-getting-worse` shipped several CSS-only / flat-gradient scene bases (cost, ownership-lock, future-label) plus a sterile screwdrivers-on-white base. Reviewers rejected each as "no background / doesn't have an image to describe the voice / looks bad." Auto-adjust had to source real Wikimedia photos (padlock, euro money, phone-on-table, opened-phone repair bench) pass by pass — work that should have been decided in the visual plan. Brand/people traps surfaced: a CC0 desk photo had a recognizable MacBook, a battery showed a Motorola brand, and the sharpest repair photos contained real people.
+
+Lesson:
+Every persistent big scene must name a real, descriptive image base (or a justified self-made base) — never a bare gradient/empty color. The plan must give the base's search terms, a fallback, and a one-line "why it describes this voice beat" so render can source/grade it without guessing. Apply a hard selection rubric: describes the beat, brand-free, people-free (no-face channel), non-sterile/in-context, distinct from adjacent scenes, palette-clean (no gray wash), reads behind overlays. Verify on the pixels, not the filename, and record creator/license.
+
+Apply next time:
+- for each big scene, plan a real base + search terms + fallback; reserve self-made CSS for objects/labels/overlays, not the background
+- use the Wikimedia Commons API recipe (curl + `node -e`; no python/jq on this box) and capture `Artist`/`License`/`descriptionurl`
+- reject brand/logo/branded-device images and real-people images for direct-use backgrounds even when sharper; keep them `inspiration only`
+- avoid objects-on-white sterile stock; prefer textured lived-in scenes
+- note for render: `object-fit: cover` from a frame-width source only crops vertically, so a side-edge element can't be cropped away — pick a different image
+- this is now codified in `visual-plan/SKILL.md` (Real Scene Base Rule + Image Sourcing Recipe And Selection Rubric)
+
+Promote to shared memory:
+no; keep as visual-plan execution behavior. The sourcing recipe could move to `_shared/systems/visual-production.md` if render starts sourcing the same way.
+
+### 2026-06-21 - Plan Exact Word-Timed Cue + List Reveals (Section 6 review synthesis)
+
+Classification: `Visual plan lesson`
+
+Context:
+Section 6's timing reviews (ownership-lock spoken at 12.64s but planned at 16.8s; list items dumped at once) were partly a planning gap — the cue timeline used round/estimated times and did not call out per-item reveals, so render had nothing precise to build to even though `section-06-word-timings.json` existed.
+
+Lesson:
+When the section has a `voiceover/section-XX-*/section-XX-word-timings.json`, the cue-state timeline should cite real word timestamps, not estimates, and should explicitly mark which multi-element beats and on-screen lists (policy rows, checklist questions, quotes) reveal item-by-item on each spoken word. That removes the timing guesswork that caused the render rework.
+
+Apply next time:
+- read the section word-timings JSON and quote real timestamps in the cue timeline
+- for any list or multi-label beat, plan a per-item staggered reveal keyed to each word, and say so in the Render Handoff
+- label timing `estimated` only when no word-timings file exists
+
+Promote to shared memory:
+no; visual-plan execution behavior that pairs with the render Voice-Sync Timing Contract.
+
 ## Feedback Entry Template
 
 ```markdown

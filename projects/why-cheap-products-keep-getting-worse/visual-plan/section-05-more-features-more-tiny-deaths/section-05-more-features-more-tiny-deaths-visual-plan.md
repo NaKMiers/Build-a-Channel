@@ -7,195 +7,96 @@ Section:
 `Section 5: More Features, More Tiny Deaths`
 
 Status:
-`draft visual plan for approval`
+`remade from scratch 2026-06-21 - planned and rendered, ready for review`
 
 ## Section Goal
 
-Explain that extra features can be useful and still create more failure points. The viewer should not hear "old products were always better" or "technology is bad." They should see a fair tradeoff: more useful parts can also mean more tiny ways for the product to fail and become expensive to fix.
+Explain fairly that more features are not automatically bad, then show how every extra feature is one more thing that can break — using one fridge that visibly grows from "be cold" into a "small technology committee," and pay off with a tiny failed part that is hard and expensive to fix.
 
 ## Source Inputs
 
 - Script: `02-script.md`, `Section 5: More Features, More Tiny Deaths`
-- Voiceover: `voiceover/section-05-more-features-more-tiny-deaths/scratch-audio/section-05-more-features-more-tiny-deaths-david23-am_eric-0.84.mp3`
-- Script promise: `extra complexity can add useful value while quietly adding future repair risk`
-- Section duration: `34.645s`
+- Voiceover: `voiceover/section-05-more-features-more-tiny-deaths/scratch-audio/...david23-am_eric-0.84.mp3` (actual duration `34.704s`)
+- Marked script: `voiceover/section-05-more-features-more-tiny-deaths/section-05-more-features-more-tiny-deaths-marked-script.md`
 
-## Narration
+## Timing Source
 
-```text
-The second reason is that products can get more complicated.
-
-This is not automatically bad.
-
-Useful features are useful.
-
-A safer appliance is good.
-
-A better battery is good.
-
-A phone that survives gravity is basically a public service.
-
-But every extra feature is also one more thing that can break.
-
-A simple fridge has one main job:
-
-be cold.
-
-A modern fridge may have screens, sensors, water lines, ice dispensers, software, and opinions.
-
-At some point, the product is not just a product.
-
-It is a small technology committee living in your kitchen.
-
-And when one tiny part fails, the whole thing can become harder and more expensive to fix.
-```
+`whisper-derived` — audio transcribed with Whisper (`transformers.js` / `@xenova/whisper-tiny.en`, WASM, no native deps) and saved to `voiceover/section-05-.../section-05-word-timings.json`. Every scene cut and reveal below is pinned to real word timings. Key anchors: "not automatically bad" `3.04` / safer `6.22` / better battery `7.46` / phone-survives-gravity `8.86` / "but every extra feature... break" `11.86` / "simple fridge... be cold" `15.04` / screens `18.44` / sensors `19.26` / water lines `19.68` / ice dispenser `20.24` / software `21.44` / "and opinions" `21.66` / "not just a product" `22.78` / "technology committee" `26.82` / "one tiny part fails" `30.32` / "more expensive to fix" `33.22`.
 
 ## Visual Direction
 
-- Big-scene/cue rhythm: `3 persistent scenes, 8 cue states`
-- Big scene rhythm: `fair useful-feature setup -> fridge feature pile-up -> technology committee failure`
-- Cue-state count: `8`
-- Main visual metaphor: `a simple appliance gains useful helpers until it becomes a committee with many tiny failure points`
-- WIT emotional path: `suspicious but fair -> overwhelmed by opinions -> facepalm at one tiny part failing`
-- WIT density: `3 total WIT beats, one per big scene`
-- Motion density: `hard cuts between scenes; ordinary labels hard-show; only "ONE MORE BREAK POINT" and "TINY PART FAILS" can use impact`
-- Real-life texture: `generic fridge silhouette, water-dispenser feature detail, worn control-panel buttons, appliance circuit-board density`
-- Real image references: `4 Wikimedia Commons references saved locally and classified; mostly mockup targets, not direct production images`
-- Generated/support assets: `none needed; final frames should be generic HyperFrames-built mockups for clean labels and no brand risk`
-- Viewer attention strategy: `start fair, then make the feature pile visually funny, then make the final failure point painfully small`
-- Retention risk: `the feature list can become a busy product spec sheet`
-- Visual fix: `group features into one modern-fridge panel and one committee board instead of giving every noun a separate card`
-- Red markup: `one failure-point mark in Scene 2, one precise red circle/cross on the tiny failed part in Scene 3`
-- Motion rule: `labels hard-show on voice cues; no fly-in parade; WIT enters large only on emotional beats`
+- Big-scene/cue rhythm: `2 persistent big scenes, 5 cue states over 34.704s`
+- Big scene rhythm: `one fridge that evolves simple -> overloaded -> "committee" (0-29.52), then a failed control board (29.52-34.704)`
+- Main metaphor: `the same fridge gains feature labels until it is a "small technology committee in your kitchen"; then one tiny part fails`
+- WIT path: `mild approval that features can be good -> overwhelmed/confused at the committee -> money-panic at the expensive repair`
+- WIT density: `3 beats; awkward-celebration (cues 1-2), confused (committee reveal), money-panic (circuit payoff); the turn and the feature pile-up are WIT-free so the labels read`
+- Motion density: `hard cut only at 29.52; labels hard-show; the only timed reveals are the good-feature checks, the staggered feature pile, the committee label, and the payoff`
+- Real-life texture: `2 real photo bases used clean — a real kitchen fridge and a real appliance control board`
+- Intentional clutter: `the 6 feature tags accumulate around the fridge — the "too many labels" IS the technology-committee joke (per the channel's Section-5 note)`
+- Fairness: `do not imply features are bad or that old products were always better; "features can be good" is shown with green checks before the turn`
 
 ## Big Scene Plan
 
-| Big Scene | Local Time | Voice Range | Persistent Base Visual | Why This Scene Exists | When To Cut Away | Reference Basis | Asset Path / Prompt |
-|---|---:|---|---|---|---|---|---|
-| 1. Useful features are not the villain | `0:00-0:10.6 estimated` | `The second reason... public service.` | Clean neutral board with a generic appliance/phone feature shelf: `safer appliance`, `better battery`, `survives gravity`. Large thinking/suspicious WIT watches from left but does not look angry. | Makes the claim fair before the section turns into a joke about complexity. | Cut when the narration pivots to `every extra feature`. | Water-dispenser reference for useful feature reality, control-panel reference for appliance detail, WIT manifest. | Build in HyperFrames; references R2/R4 from `reference-board.md` are mockup/inspiration only. |
-| 2. Simple fridge versus feature pile | `0:10.6-0:25.8 estimated` | `But every extra feature... and opinions.` | Split scene: left simple fridge labeled `ONE JOB: BE COLD`; right modern no-logo fridge gains one grouped feature stack: `screens + sensors + water + ice + software`. The right fridge gets a tiny opinion bubble. | Turns feature complexity into one readable comparison and one joke. | Cut after `and opinions` lands. | Domestic fridge silhouette, water-dispenser shape, appliance control-panel texture. | Build in HyperFrames; use `assets/visual-references/section-05-more-features-more-tiny-deaths/real-world/` only as reference. |
-| 3. Tiny part, whole committee problem | `0:25.8-0:34.645 estimated` | `At some point... expensive to fix.` | Generic appliance circuit board becomes a "technology committee" table inside a kitchen-fridge outline. One tiny chip/valve gets circled red; a small repair tag appears. Giant facepalm WIT owns the emotional zone on the right. | Pays off the section: the problem is not features themselves, it is dependency and repair complexity. | End hold. | Appliance power-module reference for small-part density, control-panel texture, WIT manifest. | Build generic board in HyperFrames; optional R3 crop only if attribution is recorded by render. |
+| Big Scene | Local Time | Voice Range | Persistent Base | Why | Base Asset |
+|---|---:|---|---|---|---|
+| 1. The Fridge (simple → committee) | `0:00-29.52` | `The second reason... products can get more complicated.` -> `...living in your kitchen.` | Real kitchen fridge photo | The fridge gains feature labels until it is an overloaded "committee" | `assets/section-05/fridge.jpg` |
+| 2. The Failed Part | `29.52-34.704` | `And when one tiny part fails...` -> `...harder and more expensive to fix.` | Real appliance control board photo | One tiny component = a hard, expensive repair | `assets/section-05/circuit-board.jpg` |
 
 ## Cue State Timeline
 
-| Cue | Local Time | Voice Cue | Big Scene | What Changes On Screen | What Stays | Motion Type | WIT Pose / Size / Safe Crop | Label / Markup | Asset Need | Why This Cue Exists |
-|---|---:|---|---|---|---|---|---|---|---|---|
-| 1 | `0:00-0:03.8 estimated` | `products can get more complicated / not automatically bad` | 1 | Clean board appears with a generic appliance icon and correction label `COMPLICATED != BAD`. Large WIT appears as a fair inspector on left. | Neutral background and feature shelf. | `static` | `wit-pose-thinking.png`, left third, visible WIT footprint at least `1/3` frame; face/head/shoulders safe. | `COMPLICATED != BAD` | CSS appliance/phone icons. | Prevents the section from sounding anti-technology. |
-| 2 | `0:03.8-0:08.9 estimated` | `Useful features... safer appliance... better battery` | 1 | Two green check labels hard-show: `SAFER` and `BETTER BATTERY`. Optional small battery icon. | WIT and neutral feature shelf hold. | `hard-show` | Same WIT, no new pose. | `SAFER`; `BETTER BATTERY` | Generic CSS icons; R2/R4 for reference only. | Shows the positive side without adding a new scene. |
-| 3 | `0:08.9-0:10.6 estimated` | `phone that survives gravity... public service` | 1 | A generic phone icon lands safely on a tiny pillow/airbag. Label `SURVIVES GRAVITY` appears. | Fair setup board. | `hard-show` | Same WIT, no new pose. Keep phone label away from WIT face. | `SURVIVES GRAVITY` | CSS phone and pillow. | Makes the deadpan public-service joke visual. |
-| 4 | `0:10.6-0:14.2 estimated` | `every extra feature... one more thing that can break` | 2 | Hard cut to split fridge scene. A red tag hits the modern side: `ONE MORE BREAK POINT`. | Simple fridge left, modern fridge right. | `impact` for red tag, otherwise `hard-show` | No new WIT; let the comparison breathe. | `ONE MORE BREAK POINT` | CSS fridges. | Names the section thesis in one clean visual beat. |
-| 5 | `0:14.2-0:17.6 estimated` | `A simple fridge has one main job: be cold.` | 2 | Left fridge gets a large calm label `ONE JOB: BE COLD`; modern side stays present but muted. | Split scene. | `hard-show` | No WIT. | `ONE JOB: BE COLD` | CSS simple fridge. | Gives the viewer a simple memory anchor. |
-| 6 | `0:17.6-0:25.8 estimated` | `modern fridge may have screens... software... and opinions` | 2 | Modern fridge feature stack hard-shows as one grouped label: `SCREEN + SENSOR + WATER + ICE + SOFTWARE`. On `and opinions`, giant confused WIT drops from the top-right edge or peeks from behind the modern fridge; fridge bubble says `I HAVE THOUGHTS`. | Split fridge scene and simple-fridge label. | `hard-show`; optional tiny `impact` on `OPINIONS` only | `wit-pose-confused.png`, top-right or behind-fridge peek, visible WIT at least `1/3` frame; do not crop face/glasses/head/shoulders. | `SCREEN + SENSOR + WATER + ICE + SOFTWARE`; `I HAVE THOUGHTS` | CSS modern fridge/panel; R1/R2/R4 as references. | Compresses the list and lands the opinions joke without making a spec sheet. |
-| 7 | `0:25.8-0:30.0 estimated` | `not just a product... small technology committee` | 3 | Hard cut to generic circuit-board committee scene inside a fridge outline. Tiny icons sit around a boardroom table. Label `TECHNOLOGY COMMITTEE` appears. | Circuit-board/committee base. | `hard-show` | No WIT for the first committee reveal; keep the board readable. | `TECHNOLOGY COMMITTEE` | CSS circuit board/committee table based on R3. | Turns the joke into one paused-frame metaphor. |
-| 8 | `0:30.0-0:34.645 estimated` | `one tiny part fails... harder and more expensive to fix` | 3 | Red circle targets one tiny chip/valve. Labels hard-show: `TINY PART FAILS` then `WHOLE THING HARD TO FIX`. Giant facepalm WIT appears on right; small repair-cost tag stays left/center. | Committee/circuit base holds. | `impact` on red circle; labels `hard-show` | `wit-pose-facepalm.png`, right side, visible WIT `1/3-1/2` frame; repair tag and labels must not cover face, glasses, head, shoulders, or hand. | `TINY PART FAILS`; `WHOLE THING HARD TO FIX`; optional `repair cost: rude` | CSS tiny chip/valve, generic repair tag. | Final memory frame: a small failure can make the whole product painful to fix. |
+| Cue | Local Time | Voice Cue | Scene | What Changes | Motion | WIT | Label / Markup |
+|---|---:|---|---|---|---|---|---|
+| 1 | `0:00-3.04` | `The second reason... more complicated.` | 1 | Fridge in; `2ND REASON: MORE FEATURES`; approving WIT | hard-show + scene in | `awkward-celebration` giant lower-right `width 1040px` | `2ND REASON: MORE FEATURES` |
+| 2 | `3.04-11.86` | `This is not automatically bad... a phone that survives gravity is basically a public service.` | 1 | green `FEATURES CAN BE GOOD` + checks `SAFER` / `BETTER BATTERY` (7.46) / `TOUGHER PHONE` (8.86) | hard-show staggered | `awkward-celebration` held | green checks |
+| 3 | `11.86-15.04` | `But every extra feature is also one more thing that can break.` | 1 | red `EVERY FEATURE = ONE MORE THING TO BREAK` | hard-show | none (the turn reads) | red turn label |
+| 4 | `15.04-29.52` | `A simple fridge has one main job: be cold. A modern fridge may have screens, sensors, water lines, ice dispensers, software, and opinions... a small technology committee living in your kitchen.` | 1 | `ONE JOB: BE COLD :)`, then 6 feature tags pile on (screens 18.44 / sensors 19.26 / water lines 19.68 / ice 20.24 / software 21.44 / + opinions 21.66), then `A SMALL TECHNOLOGY COMMITTEE IN YOUR KITCHEN` (26.82) + confused WIT | hard-show staggered pile | `confused` (reveal 26.82) | feature tags; yellow committee label |
+| 5 | `29.52-34.704` | `And when one tiny part fails... harder and more expensive to fix.` | 2 | Hard cut to control board; `ONE TINY PART FAILS`; payoff `HARDER + MORE EXPENSIVE TO FIX` (33.22) + money-panic WIT | hard-show payoff reveal | `money-panic` giant lower-right `width 1320px` | red `ONE TINY PART FAILS`; payoff (underlined) |
 
 ## WIT Pose Plan
 
-| Cue | Time | Emotion | Pose File | Placement / Scale | Safe Crop / Margin | Why WIT Is Needed |
-|---|---:|---|---|---|---|---|
-| 1-3 | `0:00-0:10.6` | fair inspector, not anti-tech | `wit-pose-thinking.png` | Left third, large but calm, visible WIT at least `1/3` frame. | Face, glasses, head, shoulders fully visible. Labels sit center/right. | Keeps the section fair before the critique begins. |
-| 6 | `0:17.6-0:25.8` | overwhelmed by feature pile and fridge opinions | `wit-pose-confused.png` | Top-right upside-down entrance or side peek from behind modern fridge, visible WIT at least `1/3` frame. | Intentional edge peek is okay, but no crop through face, glasses, head, shoulders, or mouth. Opinion bubble must not cover WIT face. | Lands the absurd `and opinions` beat. |
-| 8 | `0:30.0-0:34.645` | facepalm at tiny failure becoming expensive | `wit-pose-facepalm.png` | Right side, `1/3-1/2` frame visible footprint; WIT is the emotional subject. | Keep final labels and repair tag left/center; no text over face, glasses, or hand. | Gives the final repair-cost pain a human reaction. |
+| Cue | Time | Emotion | Pose File | Placement / Scale | Why |
+|---|---:|---|---|---|---|
+| 1-2 | `0:00-11.86` | mild approval (features can be good) | `wit-pose-awkward-celebration.png` | lower-right giant `width 1040px` (`right:-160 / bottom:-300`) | keeps the section fair, not anti-technology |
+| 4 | `~26.82-29.52` | overwhelmed/confused | `wit-pose-confused.png` | lower-right giant `width 1280px` (`right:-340 / bottom:-360`) | reacts to the "technology committee" pile-up |
+| 5 | `29.52-34.704` | money-panic | `wit-pose-money-panic.png` | lower-right giant `width 1320px` (`right:-340 / bottom:-400`) | "more expensive to fix" |
 
-WIT density note:
-
-- Total WIT beats: `3`
-- WIT beats per big scene: `Scene 1: 1`, `Scene 2: 1`, `Scene 3: 1`
-- Any big scene above `2` WIT beats, and why: `none`
-- Cue states intentionally without WIT: `4`, `5`, `7`; these are comparison and committee mechanics that need visual breathing room.
-
-## Markup And Label Plan
-
-| Cue | Time | Text / Markup | Motion Type | Target Object | Why It Helps | Avoid / Do Not Use |
-|---|---:|---|---|---|---|---|
-| 1 | `0:00-0:03.8` | `COMPLICATED != BAD` | `static` | Generic feature shelf. | Makes the safe claim visible. | Do not cross out technology or modern products. |
-| 2 | `0:03.8-0:08.9` | `SAFER`; `BETTER BATTERY` | `hard-show` | Useful feature icons. | Shows that features can be good. | No long explanation text. |
-| 3 | `0:08.9-0:10.6` | `SURVIVES GRAVITY` | `hard-show` | Generic phone landing safely. | Makes the public-service joke concrete. | No real phone brand or app UI. |
-| 4 | `0:10.6-0:14.2` | `ONE MORE BREAK POINT` | `impact` | Modern fridge feature side. | Names the tradeoff. | Do not label every feature separately. |
-| 5 | `0:14.2-0:17.6` | `ONE JOB: BE COLD` | `hard-show` | Simple fridge. | Clean memory frame. | Do not imply old products are always better. |
-| 6 | `0:17.6-0:25.8` | `SCREEN + SENSOR + WATER + ICE + SOFTWARE`; `I HAVE THOUGHTS` | `hard-show`; optional small `impact` on `OPINIONS` | Modern fridge feature panel and speech bubble. | Compresses the list and lands the joke. | No scattered mini-card tray, no real logos, no real UI screenshots. |
-| 7 | `0:25.8-0:30.0` | `TECHNOLOGY COMMITTEE` | `hard-show` | Boardroom/circuit scene. | Makes the metaphor visible. | Do not create many unreadable committee labels. |
-| 8 | `0:30.0-0:34.645` | `TINY PART FAILS`; `WHOLE THING HARD TO FIX`; optional `repair cost: rude` | red circle `impact`; labels `hard-show` | One tiny chip/valve and generic repair tag. | Final payoff and repair-cost setup for next section. | Do not put the repair tag in the subtitle zone or over WIT face. |
+WIT density: 3 beats; the turn (cue 3) and the feature pile (cue 4 before 26.82) are WIT-free so the clutter joke reads.
 
 ## Reference And Asset Plan
 
-| Asset | Type | Source / Status | Use | Safety | Saved Path / Prompt |
-|---|---|---|---|---|---|
-| Domestic refrigerator photo | `real image` | Wikimedia Commons, Infrogmation of New Orleans, CC BY-SA 4.0 | Fridge silhouette and home context reference for Scene 2. | Mockup target only due visible brand and page-level failure claim. | `assets/visual-references/section-05-more-features-more-tiny-deaths/real-world/real-domestic-refrigerator-commons-infrogmation.jpg` |
-| Water-dispenser refrigerator photo | `real image` | Wikimedia Commons, Dave Matos, CC BY-SA 2.0 | Useful dispenser feature reference for Scene 1/2. | Inspiration/mockup only due visible logos, stickers, and real hand/photo clutter. | `assets/visual-references/section-05-more-features-more-tiny-deaths/real-world/real-water-dispenser-refrigerator-commons-dave-matos.jpg` |
-| Appliance power module photo | `real image` | Wikimedia Commons, Phiarc, CC BY-SA 4.0 | Circuit-board/failure-point reference for Scene 3. | Mockup target; optional direct crop only with attribution and no brand/product claim. | `assets/visual-references/section-05-more-features-more-tiny-deaths/real-world/real-appliance-power-module-commons-phiarc.jpg` |
-| Appliance control panel photo | `real image` | Wikimedia Commons, Solomon203, CC BY-SA 4.0 | Button/panel texture and feature density reference. | Inspiration only due visible brand and text. | `assets/visual-references/section-05-more-features-more-tiny-deaths/real-world/real-control-panel-commons-solomon203.jpg` |
-| WIT poses | `local channel asset` | Project WIT manifest | Direct WIT overlays. | Safe channel asset. | `assets/wit/wit-pose-thinking.png`, `assets/wit/wit-pose-confused.png`, `assets/wit/wit-pose-facepalm.png` |
-| Generic fridge/feature/committee elements | `self-made HyperFrames mockup` | Built from script and references | Direct production objects for all scenes. | Safest route because no logos, no private data, exact label control. | Build in HTML/CSS; no generated image required. |
+| Asset | Type | Source / Status | Use | Safety |
+|---|---|---|---|---|
+| Kitchen fridge | `real image` | Wikimedia Commons, Infrogmation of New Orleans, `CC BY-SA 4.0` | Scene 1 base | `safe asset`; generic fridge texture, no people; no claim this model failed |
+| Appliance control board | `real image` | Wikimedia Commons, Phiarc, `CC BY-SA 4.0` | Scene 2 base | `safe asset`; no people, no brand |
+| WIT poses | `local channel asset` | project `assets/wit/manifest.json` | cues 1-2, 4, 5 | `safe channel asset` |
 
-## Visual Resource Usage Map
+Note: the 2 real bases are retained from the prior approved Section 5 sourcing (already in `assets/ATTRIBUTION.md`); the composition was rebuilt from scratch and voice-synced.
 
-| Resource | Used In Big Scenes / Cues | What It Supplies | When It Appears | Where On Screen / Crop | How It Is Used | Production Decision |
-|---|---|---|---|---|---|---|
-| Domestic fridge reference | Scene 2 planning | Fridge proportions, handle placement, kitchen scale. | Not visible directly. | None. | Translate into generic CSS fridge silhouette. | `mockup target` |
-| Water-dispenser reference | Scenes 1-2 planning | Useful feature shape: dispenser cavity, water/ice module. | Not visible directly. | None. | Translate into generic no-logo dispenser icon on modern fridge. | `inspiration only / mockup target` |
-| Control panel reference | Scenes 1-3 planning | Button spacing, worn appliance texture, feature-panel feel. | Not visible directly. | None. | Translate into generic buttons/icons and committee board. | `inspiration only` |
-| Power-module reference | Scene 3, cues 7-8 | Circuit-board density, many tiny parts, one targetable failure point. | Not visible directly by default. | If direct crop is later chosen, crop tightly to remove labels and record attribution. | Prefer generic CSS board; direct crop optional only after render attribution check. | `mockup target / optional direct texture` |
-| Generic feature shelf | Scene 1, cues 1-3 | Fair positive-feature setup. | `0:00-0:10.6` | Center/right label zone, WIT left. | CSS icons/cards. | `self-made safe asset` |
-| Generic split fridges | Scene 2, cues 4-6 | Main comparison: one job versus feature pile. | `0:10.6-0:25.8` | Left simple fridge, right modern fridge, labels above subtitle zone. | CSS/HTML illustration. | `self-made safe asset` |
-| Generic technology committee board | Scene 3, cues 7-8 | Product as committee and tiny failure point. | `0:25.8-0:34.645` | Board/committee left/center; WIT right. | CSS/HTML illustration using circuit-board texture logic. | `self-made safe asset` |
-| WIT poses | Cues 1-3, 6, 8 | Emotional clarity and dry humor. | Three WIT beats. | Large creative placements, at least `1/3` visible frame footprint. | Direct PNG overlay. | `safe channel asset` |
+## Render Handoff
 
-## HyperFrames Guidance
-
-- Composition target: `Section-1-style sparse 16:9 explainer section with 3 persistent scenes, generic self-made appliance graphics, and giant WIT emotional beats`
-- Big scene count: `3`
-- Cue state count: `8`
-- Scene components: `FeatureShelf`, `GenericSimpleFridge`, `GenericModernFridge`, `FeatureStack`, `OpinionBubble`, `TechnologyCommitteeBoard`, `TinyFailureMark`, `LargeWIT`, `ShortHandwrittenLabel`
-- Timing notes: `Use 34.645s audio. Timings are estimated from marked script pauses. Give "and opinions" a distinct small beat and hold final failure frame through the end.`
-- Motion density rule: `hard cuts between big scenes; ordinary labels hard-show; impact only for ONE MORE BREAK POINT and TINY PART FAILS`
-- Text style: `short handwritten labels; no product-spec paragraphs; keep all cue-critical text above subtitle-safe lower area`
-- Asset paths: `assets/visual-references/section-05-more-features-more-tiny-deaths/real-world/`, `assets/wit/`
-- Audio sync notes: `COMPLICATED != BAD on opening correction; green feature labels on useful features; ONE MORE BREAK POINT on the pivot; ONE JOB: BE COLD on simple fridge line; I HAVE THOUGHTS on and opinions; TECHNOLOGY COMMITTEE on committee joke; TINY PART FAILS on final failure line`
-- WIT pose files: `wit-pose-thinking.png`, `wit-pose-confused.png`, `wit-pose-facepalm.png`
-- WIT density: `3 total beats, one per big scene`
-- WIT scale and crop guards: `each emotional WIT beat must occupy at least 1/3 visible frame area; never crop face, glasses, head, shoulders, mouth, or facepalm hand; keep labels and repair tag away from WIT face`
-- No-WIT breathing beats: `4`, `5`, `7`
-- Suggested inspect timestamps: `0.8s`, `4.8s`, `9.8s`, `12.6s`, `16.2s`, `22.6s`, `27.4s`, `31.8s`, `34.1s`
-- Suggested screenshot/contact-sheet QA timestamps: `0.8s`, `5.0s`, `10.0s`, `12.8s`, `16.4s`, `22.8s`, `27.6s`, `32.0s`, `34.2s`
-- Suggested MP4 QA frame timestamps, only if export is explicitly requested: `none; export not requested`
-- Build risks: `making a feature spec sheet, implying old/simple always means better, using real brand images directly, shrinking WIT below 1/3 frame, opinion bubble covering WIT face, final repair tag entering subtitle zone`
-- Must not invent: `real brand appliance screenshots, extra feature cards beyond the grouped stack, anti-technology framing, new WIT drawings, additional product categories, MP4 export`
+- Composition: `Section05MoreFeaturesMoreTinyDeaths`, `1920x1080`, `data-duration 34.704`, font `PatrickHandLocal`
+- Scene clips: `scene-appliance` 0/29.52, `scene-circuit` 29.52/5.184
+- Cue clips: 5 cues with the starts/durations above; good-feature checks + the feature pile + committee + payoff stagger via GSAP opacity sets pinned to word timings
+- WIT-bearing cues carry `data-layout-allow-overflow` + `overflow:visible`
+- Motion: hard-show default; payoff underline = `border-bottom` on the text span (one line)
+- Suggested inspect / snapshot timestamps: `1.5, 8, 13, 19, 22.5, 27.5, 31, 34`
+- Must not invent: the 2 scene bases, the 5 cue beats, the feature pile-up, the WIT poses/placements, the payoff text
 
 ## Review-Prevention Checklist
 
-- voice sync mapped to phrase cues: `yes`
-- big-scene rhythm avoids unrelated rapid boards: `yes, 3 persistent scenes`
-- cue density stays readable: `yes, 8 cue states for 34.645s`
-- motion density uses hard-show by default: `yes`
-- impact motion reserved for emphasis: `yes, pivot/failure marks only`
-- WIT rhythm not overused: `yes, 3 total WIT beats`
-- WIT size readable: `yes, every WIT beat requires at least 1/3 visible frame footprint`
-- WIT crop safe: `yes`
-- WIT does not cover text/evidence: `yes, separate label zones and WIT zones`
-- red markup targets exact objects: `yes, modern feature side and one tiny failed part`
-- scene bases visually differentiated: `yes, fair feature board, split fridge scene, circuit-board committee`
-- subtitle-safe lower layout: `yes, important labels and repair tag stay above lower subtitle zone`
-- render does not need to invent timing/layout/assets: `yes`
+- voice sync mapped to phrases: `yes - pinned to whisper word timings (section-05-word-timings.json)`
+- big-scene rhythm: `yes - one evolving fridge + one failed-part scene, hard cut at 29.52`
+- cue density: `yes - 5 cues; the 6-item feature list is one staggered pile, not six cuts`
+- intentional clutter justified: `yes - the pile-up IS the technology-committee joke`
+- WIT rhythm: `yes - 3 beats; turn + pile are WIT-free`
+- fairness: `yes - features shown as good first (green checks) before the turn`
+- real scene base per scene: `yes - 2 real photos, no flat-gradient beat`
+- subtitle-safe lower third: `payoff at top:812; confirm at QA`
 
 ## Approval Checks
 
-- visual reference pass completed: `yes, project-local browse failed, global gstack browse succeeded, 4 Wikimedia references saved and classified`
-- what/when/how clear: `yes`
-- big scenes grouped, not one full scene per sentence: `yes`
-- cue states low enough for section duration: `yes`
-- attention reason per big scene / cue state: `yes`
-- label readable: `yes`
-- WIT has a clear job: `yes`
-- WIT pose files named: `yes`
-- WIT facial emotion large enough: `yes`
-- WIT face/head/shoulder crop safe: `yes`
-- WIT density counted and justified: `yes`
-- no-WIT breathing beats planned: `yes`
-- red markup points to exact object: `yes`
-- ordinary labels hard-show unless emphasis needs impact motion: `yes`
-- impact animation reserved for emphasized spoken beats: `yes`
-- real-life asset explains, not decorates: `yes, references guide generic objects`
-- title-thumbnail promise still being paid off: `yes, future risk appears as tiny failures and repair difficulty`
-- safe for English learners: `yes, repeated simple labels and concrete appliance example`
-- ready for HyperFrames: `yes`
+- more features != better product: `yes - features good first, then "one more thing to break"`
+- does not imply old products were better: `yes`
+- technology-committee joke visible through too many labels: `yes`
+- WIT overwhelmed, not anti-technology: `yes`
+- ready for render: `yes - rendered to section-previews/section-05-more-features-more-tiny-deaths/ on port 1005`
