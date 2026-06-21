@@ -74,6 +74,8 @@ Section 6 — `Repair Gets A Security System` (rebuilt `2026-06-18`):
 
 ## Unified Full Video (port 1000)
 
+Produced by the `combine` skill (final workflow step; assembly-only, no MP4 export). Last run `2026-06-21`: precondition passed (all 8 sections built + audio), self-check passed (lint 0, 1 audio clip, parent = combined mp3 = 251.184s, server HTTP 200 on 1000).
+
 Assembled `2026-06-21` at `hyperframes/full-video/`. Plays all 8 sections back-to-back as one timeline with **one continuous voiceover** (`UnifiedWhyCheapProducts`, `251.184s` ≈ `4:11`). Rebuilt `2026-06-21` after all sections were approved — all 8 section comps re-copied from the review mirror (audio-stripped), consolidated assets + all 26 WIT poses refreshed, including the remade Sections 4 & 5. Self-check: 1 audio clip (index), 0 in sub-comps, parent = combined mp3 = 251.184s, lint 0 errors, snapshot per section verified.
 
 Build mechanics (for re-sync):

@@ -68,12 +68,14 @@ Use the project folders intentionally:
 - Use [Visual Plan](C:\ME\THINGS\Build a Channel\.agents\skills\visual-plan\SKILL.md) when the user asks for visual plan, section scene plan, real-life visual references, generated visual references, HyperFrames build guidance, or step 5 of the main video workflow.
 - Use [Render](C:\ME\THINGS\Build a Channel\.agents\skills\render\SKILL.md) when the user asks for render, HyperFrames build, create video from visual plan, section preview, localhost preview, section MP4 render, or step 6 of the main video workflow.
 - Use [Auto Adjust](C:\ME\THINGS\Build a Channel\.agents\skills\auto-adjust\SKILL.md) after render when the user asks to auto-adjust, audit, QA, automatically fix a rendered section, apply Section 1/2 review lessons, preserve manual Studio edits, or prepare one selected section for review. Auto Adjust requires one project and one section; it has no `All` option.
+- Use [Combine](C:\ME\THINGS\Build a Channel\.agents\skills\combine\SKILL.md) (final workflow step) when the user asks to combine, combine sections, unify, assemble the full video, build the full render, merge sections into one video, or run on `localhost:1000`. Combine requires one project and that ALL sections are already rendered; it reuses the existing section renders + assets and only assembles them into one unified preview on port `1000` with a single combined voiceover. It never re-renders, edits, or creates section content, and never exports MP4/WebM.
 - Use [Skill Sync](C:\ME\THINGS\Build a Channel\.agents\skills\skill-sync\SKILL.md) (utility, outside the pipeline gate) when the user asks to sync skills between Codex and Claude, reconcile the `.claude/skills/` wrappers, or sync `AGENTS.md` and `CLAUDE.md`. Manual only; run only when asked.
 - Do not create additional sequential video-production skills until the user explicitly asks for the next skill-creation phase.
 
 Pipeline gate:
 
-- main production skills run in order: `topic-intake -> research-pack -> script-draft -> voiceover -> visual-plan -> render -> auto-adjust -> review -> upload -> learning`
+- main production skills run in order: `topic-intake -> research-pack -> script-draft -> voiceover -> visual-plan -> render -> auto-adjust -> review -> combine -> upload -> learning`
+- `combine` is the final, project-level assembly step: it runs once after EVERY section is rendered, requires one project (named or smart-selected), reuses the existing section renders/assets without changing them, produces only the unified preview on `localhost:1000`, and never exports MP4/WebM
 - packaging is a side branch from `research-pack`
 - packaging requires only `00-topic-intake.md` and `01-research-pack.md`
 - packaging does not block script, voiceover, visual plan, render, review, upload, or learning
