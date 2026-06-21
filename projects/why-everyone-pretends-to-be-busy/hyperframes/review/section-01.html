@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Section 01 Hook The Busy Trap - Why Everyone Pretends To Be Busy</title>
+  <style>
+    @font-face {
+      font-family: "PatrickHandLocal";
+      src: url("./assets/fonts/patrick-hand-latin.woff2") format("woff2");
+      font-weight: 400; font-style: normal; font-display: block;
+    }
+
+    :root {
+      --ink: #1b1510; --red: #b9362c; --red-deep: #7d1714;
+      --cream: #fff7d8; --blue: #cfe2ec; --sale: #f0c63d;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #14110d; color: var(--ink); overflow: hidden; }
+
+    #Section01Hook {
+      position: relative; width: 1920px; height: 1080px; overflow: hidden;
+      background: #14110d; font-family: "PatrickHandLocal";
+    }
+    .scene, .cue { position: absolute; inset: 0; width: 100%; height: 100%; overflow: hidden; }
+    .scene { z-index: 1; will-change: opacity, transform, filter; }
+    .cue { z-index: 5; pointer-events: none; }
+
+    /* real-photo scene bases */
+    .photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; user-select: none; pointer-events: none; }
+    .photo.work { filter: saturate(1.03) contrast(1.04) brightness(1.02); }
+    .photo.calm { filter: saturate(0.98) contrast(1.02) brightness(1.05); }
+    .photo.cool { filter: saturate(0.6) contrast(1.08) brightness(0.66) hue-rotate(10deg); }
+    .shade { position: absolute; inset: 0; z-index: 2;
+      background: linear-gradient(0deg, rgba(20,16,12,0.34), transparent 48%),
+                  linear-gradient(90deg, rgba(20,16,12,0.20), transparent 38%); }
+    .cool-veil { position: absolute; inset: 0; z-index: 5;
+      background: linear-gradient(180deg, rgba(18,22,34,0.55), rgba(10,12,20,0.66)); }
+    .cage-bars { position: absolute; inset: 0; z-index: 6;
+      background: repeating-linear-gradient(90deg, rgba(8,8,12,0.94) 0 32px, rgba(8,8,12,0) 32px 172px);
+      box-shadow: inset 0 0 240px rgba(0,0,0,0.78); }
+
+    .label {
+      position: absolute; display: inline-flex; align-items: center; justify-content: center;
+      min-height: 70px; padding: 14px 28px 18px; background: var(--cream);
+      border: 7px solid var(--ink); border-radius: 7px; box-shadow: 12px 14px 0 rgba(27,21,16,0.22);
+      color: var(--ink); font-size: 66px; line-height: 0.92; text-align: center;
+      transform: rotate(-2deg); z-index: 8;
+    }
+    .label.small { font-size: 46px; padding: 12px 22px 16px; }
+    .label.blue { background: var(--blue); }
+    .label.yellow { background: var(--sale); }
+    .label.red { background: #fff5f1; color: var(--red-deep); border-color: var(--red-deep); }
+
+    .folder {
+      position: absolute; z-index: 8; width: 300px; min-height: 150px; padding: 40px 20px 22px;
+      background: #e9dcae; border: 6px solid var(--ink); border-radius: 6px 18px 6px 6px;
+      color: var(--ink); font-size: 50px; line-height: 0.92; text-align: center;
+      box-shadow: 10px 12px 0 rgba(27,21,16,0.28); transform: rotate(-3deg);
+    }
+    .folder::before { content: ""; position: absolute; left: -2px; top: -22px; width: 130px; height: 30px;
+      background: #e9dcae; border: 6px solid var(--ink); border-bottom: none; border-radius: 12px 12px 0 0; }
+
+    .dot { position: absolute; z-index: 8; width: 92px; height: 92px; border-radius: 50%;
+      background: #d2342a; border: 6px solid #fff; color: #fff; font-size: 52px; line-height: 92px;
+      text-align: center; box-shadow: 0 6px 0 rgba(0,0,0,0.35); }
+    .badge { position: absolute; z-index: 8; padding: 8px 22px; border-radius: 999px;
+      background: #d2342a; border: 5px solid #fff; color: #fff; font-size: 56px; line-height: 1;
+      box-shadow: 0 6px 0 rgba(0,0,0,0.35); }
+
+    .stamp { position: absolute; z-index: 9; padding: 12px 26px 17px; color: var(--red-deep);
+      border: 9px solid var(--red-deep); background: #fff5f1; font-size: 92px; line-height: 0.86; transform: rotate(-11deg); }
+
+    .wit { position: absolute; object-fit: contain; z-index: 9;
+      filter: drop-shadow(15px 18px 0 rgba(0,0,0,0.30)); transform-origin: center center; }
+
+    .label, .stamp, .folder, .dot, .badge, .wit, .cage-bars { will-change: opacity, transform; }
+  </style>
+</head>
+<body>
+  <div id="Section01Hook" data-composition-id="Section01Hook" data-start="0" data-duration="21.056" data-width="1920" data-height="1080">
+
+    <!-- BIG SCENE A: the overload (real work desk) 0 - 11.0 -->
+    <div id="scene-a-calendar" class="clip scene" data-start="0" data-duration="11.0" data-track-index="1">
+      <img class="photo work" src="./assets/visual-references/section-01-hook-the-busy-trap/base-deskwork.jpg" alt="">
+      <div class="shade"></div>
+    </div>
+
+    <!-- BIG SCENE B: quiet minimal desk 10.95 - 16.06 -->
+    <div id="scene-b-desk" class="clip scene" data-start="10.95" data-duration="5.11" data-track-index="3">
+      <img class="photo calm" src="./assets/visual-references/section-01-hook-the-busy-trap/base-deskcalm.jpg" alt="">
+    </div>
+
+    <!-- BIG SCENE C: trapped at the desk (cooled work desk + cage bars) 16.02 - 21.056 -->
+    <div id="scene-c-cage" class="clip scene" data-start="16.02" data-duration="5.036" data-track-index="4">
+      <img class="photo cool" src="./assets/visual-references/section-01-hook-the-busy-trap/base-deskwork-cage.jpg" alt="">
+      <div class="cool-veil"></div>
+      <div class="cage-bars"></div>
+    </div>
+
+    <!-- CUE 1: 0.0 "Here's a strange rule about modern life." -->
+    <div id="cue-1" class="clip cue" data-start="0" data-duration="2.30" data-track-index="2">
+      <div class="folder real-work" style="left: 96px; bottom: 130px;">REAL<br>WORK</div>
+    </div>
+
+    <!-- CUE 2: 2.34 "The less time you have... the more important you look." -->
+    <div id="cue-2" class="clip cue" data-start="2.34" data-duration="2.86" data-track-index="2">
+      <div class="label red contra" style="left: 110px; top: 96px; width: 820px;">LESS TIME =<br>MORE IMPORTANT?</div>
+    </div>
+
+    <!-- CUE 3: 5.24 "A full calendar, a loud inbox, a phone making tiny panic sounds." -->
+    <div id="cue-3" class="clip cue" data-start="5.24" data-duration="3.82" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="badge inbox" style="right: 150px; top: 96px;">99+</div>
+      <div class="dot d1" style="right: 360px; top: 230px;">!</div>
+      <div class="dot d2" style="right: 250px; top: 360px;">!</div>
+      <div class="dot d3" style="left: 700px; top: 150px;">!</div>
+      <div class="label red urgent" style="left: 130px; top: 90px; width: 420px;">URGENT</div>
+      <img class="wit panic" data-layout-allow-overflow="" style="right: -280px; bottom: -700px; width: 1520px;" src="./assets/wit/wit-pose-holding-phone-panic.png" alt="">
+    </div>
+
+    <!-- CUE 4: 9.1 "People see that and think, this person matters," -->
+    <div id="cue-4" class="clip cue" data-start="9.1" data-duration="1.86" data-track-index="2">
+      <div class="label yellow matters" style="left: 50%; top: 120px; width: 760px; transform: translateX(-50%) rotate(-2deg);">"THIS PERSON<br>MATTERS"</div>
+    </div>
+
+    <!-- CUE 5: 11.0 "but sit quietly and think about one hard problem" -->
+    <div id="cue-5" class="clip cue" data-start="11.0" data-duration="2.18" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="label blue thinking" style="right: 120px; top: 120px; width: 470px;">THINKING...</div>
+      <img class="wit think" data-layout-allow-overflow="" style="left: -150px; bottom: -460px; width: 1040px;" src="./assets/wit/wit-pose-thinking.png" alt="">
+    </div>
+
+    <!-- CUE 6: 13.22 "and people assume you are lazy. Or asleep with your eyes open." -->
+    <div id="cue-6" class="clip cue" data-start="13.22" data-duration="2.80" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="stamp lazy" style="left: 140px; top: 130px;">LAZY?</div>
+      <div class="label small asleep" style="left: 165px; top: 340px; width: 460px;">(OR ASLEEP)</div>
+      <img class="wit side" data-layout-allow-overflow="" style="right: -300px; bottom: -520px; width: 1180px;" src="./assets/wit/wit-pose-deadpan-side-eye.png" alt="">
+    </div>
+
+    <!-- CUE 7: 16.06 "So everyone gets busy... very good at looking busy." -->
+    <div id="cue-7" class="clip cue" data-start="16.06" data-duration="3.86" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="label cream looking" style="left: 50%; top: 110px; width: 720px; transform: translateX(-50%) rotate(-2deg);">LOOKING BUSY</div>
+      <img class="wit trapped" data-layout-allow-overflow="" style="left: 50%; bottom: -470px; width: 1120px; transform: translateX(-50%);" src="./assets/wit/wit-pose-trapped-by-app-screen.png" alt="">
+    </div>
+
+    <!-- CUE 8: 19.96 "There is a difference." -->
+    <div id="cue-8" class="clip cue" data-start="19.96" data-duration="1.09" data-track-index="2">
+      <div class="label diff" style="left: 50%; top: 140px; width: 900px; transform: translateX(-50%) rotate(-1deg);">THERE IS A DIFFERENCE.</div>
+    </div>
+
+    <audio id="voiceover-section-01" data-start="0" data-duration="21.056" data-track-index="10" data-volume="1" crossorigin="anonymous" src="./section-01-hook-the-busy-trap-david23-am_eric-0.84.mp3"></audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true, defaults: { overwrite: "auto" } });
+
+      const reveal = (target, hideAt, at, fromVars, toVars = {}) => {
+        const resetVars = {};
+        if (Object.prototype.hasOwnProperty.call(fromVars, "x")) resetVars.x = 0;
+        if (Object.prototype.hasOwnProperty.call(fromVars, "y")) resetVars.y = 0;
+        if (Object.prototype.hasOwnProperty.call(fromVars, "scale")) resetVars.scale = 1;
+        if (Object.prototype.hasOwnProperty.call(fromVars, "opacity")) resetVars.opacity = 1;
+        tl.set(target, fromVars, hideAt);
+        tl.to(target, { ...resetVars, ...toVars }, at);
+      };
+      const show = (target, hideAt, at) => {
+        tl.set(target, { opacity: 0 }, hideAt);
+        tl.set(target, { opacity: 1 }, at);
+      };
+      const smash = (target, hideAt, at, fromVars = { y: 22, scale: 1.3, opacity: 0 }) => {
+        reveal(target, hideAt, at, fromVars, { duration: 0.18, ease: "back.out(1.9)" });
+      };
+
+      tl.fromTo("#scene-b-desk", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 10.95);
+      tl.fromTo("#scene-c-cage", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 16.02);
+
+      show("#cue-1 .real-work", 0, 0.30);
+
+      show("#cue-2 .contra", 2.34, 2.50);
+      tl.to("#cue-2 .contra", { scale: 1.06, duration: 0.14, ease: "back.out(2)", yoyo: true, repeat: 1 }, 4.32);
+
+      smash("#cue-3 .urgent", 5.24, 5.48);
+      show("#cue-3 .d3", 5.24, 5.62);
+      show("#cue-3 .inbox", 5.24, 6.64);
+      show("#cue-3 .d1", 5.24, 7.36);
+      show("#cue-3 .wit.panic", 5.24, 7.30);
+      show("#cue-3 .d2", 5.24, 8.14);
+
+      show("#cue-4 .matters", 9.1, 9.18);
+
+      show("#cue-5 .wit.think", 11.0, 11.10);
+      show("#cue-5 .thinking", 11.0, 11.48);
+
+      show("#cue-6 .wit.side", 13.22, 13.34);
+      smash("#cue-6 .lazy", 13.22, 14.32);
+      show("#cue-6 .asleep", 13.22, 14.90);
+
+      show("#cue-7 .wit.trapped", 16.06, 16.40);
+      show("#cue-7 .looking", 16.06, 19.12);
+
+      smash("#cue-8 .diff", 19.96, 20.02, { y: 14, scale: 1.08, opacity: 0 });
+
+      window.__timelines["Section01Hook"] = tl;
+    </script>
+  </div>
+</body>
+</html>

@@ -129,6 +129,33 @@ Apply next time:
 Promote to shared memory:
 yes, this is a channel-wide pipeline rule.
 
+### 2026-06-21 - Pre-Chosen Topic + External Script Is Persist Mode
+
+Classification: `Topic intake lesson`
+
+Context:
+The user brought the `Why Everyone Pretends To Be Busy` topic with a complete external
+script (`why-people-pretend-to-be-busy.md`) and asked to "run the full workflow, starting
+with topic-intake." This topic was the channel's quality benchmark in skill memory but had
+never been made into a real project folder.
+
+Lesson:
+When the user arrives with an already-chosen topic (and possibly a finished script) and asks
+to start the pipeline at step 0, this is Persist Mode, not Suggest Mode. Still browse for
+reference demand evidence and run the full scorecard, then persist `00-topic-intake.md`.
+
+Apply next time:
+
+- Treat a named topic + "run the workflow" as Persist Mode; create only `00-topic-intake.md`.
+- Reconcile the slug to the established canonical name from the channel brain when one exists
+  (used `why-everyone-pretends-to-be-busy`, not the download filename `why-people-pretend-to-be-busy`).
+- Do NOT copy an externally-provided script into `02-script.md` at step 0. The script enters via
+  `script-draft` after `research-pack`, so research can ground it; note its existence in the intake file.
+- Still satisfy the browsing + full scorecard requirements even when the topic is pre-chosen.
+
+Promote to shared memory:
+no, this is topic-intake intake-mode behavior, not a channel-wide strategy change.
+
 ## Feedback Entry Template
 
 Use this shape when updating the skill after user review:

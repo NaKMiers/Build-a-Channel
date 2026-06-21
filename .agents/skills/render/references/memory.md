@@ -716,6 +716,63 @@ Apply next time:
 Promote to shared memory:
 No; render execution practice. The concrete recipe now lives in `render/SKILL.md` (Voice-Sync Timing Contract).
 
+### 2026-06-21 - Word-Timings Gen Worked For Busy S1; Retry Corrupt Model Download
+
+Classification: `Operational lesson`
+
+Context:
+First render for `why-everyone-pretends-to-be-busy` Section 1. Generated
+`section-01-word-timings.json` with the documented transformers.js recipe (whisper-tiny.en, WASM).
+The first two runs threw `Error: Unsupported model type: whisper` — caused by an earlier
+`ECONNRESET` that left a partial/corrupt model in the transformers.js cache. A third run (after
+the model finished downloading/caching) succeeded and produced clean monotonic word timings.
+The final two words ("a", "difference.") had a chunk-boundary timestamp glitch (jumped back to
+~11.5s) and were hand-corrected to 20.46 / 20.58–21.0.
+
+Lesson:
+The transformers.js word-timing recipe is reliable on this box, but a flaky first download can
+poison the cache and surface as "Unsupported model type" rather than a network error. Just retry
+the node run until the model fully caches. Always sanity-check the last 1-2 words for a
+chunk-boundary timestamp reset and clamp them to the section duration.
+
+Apply next time:
+- if `Unsupported model type` appears, retry the same node command (model finishes caching), don't change code
+- after generating, eyeball the JSON tail for non-monotonic/garbage timestamps and clamp to the audio duration
+- ESM ignores NODE_PATH — run the gen script from inside the `--prefix` dir where node_modules resolves
+
+Promote to shared memory:
+no; environment/tooling note for the render word-timings step.
+
+### 2026-06-21 - Dingy Real Photos Rejected → Clean Flat-Illustrated Bases (no generator)
+
+Classification: `Render lesson`
+
+Context:
+`why-everyone-pretends-to-be-busy` Section 1 first rendered with real PD photo bases (a dated 2007
+wall calendar + an overhead minimalist desk). The user rejected them: "the images look really
+filthy and bad... use better image, you can generate new images if needed." No image-generation
+tool was available this session, and clean brand-free/people-free real photos of busy-calendar /
+quiet-desk were not findable on Commons.
+
+Lesson:
+When real photo bases are rejected as ugly/dingy and no generator is available, do not keep
+swapping in more stock photos. Rebuild the scene bases as clean, bold **flat-illustrated CSS
+scenes** that match the channel's actual identity (bold flat 2D illustration, not photoreal). A
+fully-drawn illustration (e.g. a calendar wall with header/weekday row/numbered cells packed with
+colored event chips; a desk room with notebook/pen/mug/plant) is a justified self-made descriptive
+base — it is NOT the "bare gradient" the hard-fail rule forbids. This is usually cleaner AND more
+on-brand than dingy stock. Keep cue timing/WIT unchanged; only swap the base layer.
+
+Apply next time:
+- confirm no image generator, then build flat-illustrated bases instead of re-searching stock
+- a packed calendar reads "overbooked" via many small colored event chips in the cells
+- reuse the same illustrated base for an intentional bookend (Scene A bright, Scene C cool+cage bars)
+- keep the photo refs on disk as `inspiration only`; document the base swap in IMPLEMENTATION.md + visual plan
+- expect many non-blocking contrast warnings from a grid of small cells; 0 errors is the gate
+
+Promote to shared memory:
+no; render execution behavior. (If image generation becomes available, prefer generated clean bases.)
+
 ## Feedback Entry Template
 
 ```markdown

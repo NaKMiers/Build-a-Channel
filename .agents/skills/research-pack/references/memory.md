@@ -113,6 +113,34 @@ Apply next time:
 Promote to shared memory:
 no; shared visual-production rules already contain the channel-wide standard.
 
+### 2026-06-21 - Search Engines Bot-Blocked; Fetch Known Sources Directly
+
+Classification: `Operational lesson`
+
+Context:
+While researching `why-everyone-pretends-to-be-busy`, Google, DuckDuckGo, and Bing all served
+CAPTCHA / bot challenges from this IP, so no result lists could be scraped. YouTube reference
+search (used in topic-intake) still worked.
+
+Lesson:
+When general search engines are blocked, do not stall or invent sources. Navigate the browse
+tool **directly** to known credible URLs for the topic and confirm each by reading its title/text.
+Academic publishers (JCR/OUP, etc.) are often Cloudflare-gated (403) — cite the study through a
+reachable secondary source (e.g. HBR summarizing the JCR paper) and mark the primary as medium
+confidence / verify-before-quoting.
+
+Apply next time:
+
+- If search engines challenge, switch to direct-URL fetches of authoritative pages (HBR, official
+  company research/WorkLab pages, gov/edu, reputable explainers) and confirm by title/text read.
+- Mark each source `direct-fetch confirmed` vs `cited via secondary` and set confidence accordingly.
+- Keep YouTube demand/reference search separate — it may still work when web search is blocked.
+- Record the blocking in the pack's browsing note and set an honest overall Reference confidence.
+- Never invent stats; route any number that could not be confirmed live into `Open Questions`.
+
+Promote to shared memory:
+no; this is a research-pack browsing-resilience tactic, not a channel-wide strategy change.
+
 ## Feedback Entry Template
 
 Use this shape when updating the skill after user review:

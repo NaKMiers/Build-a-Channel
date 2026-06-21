@@ -1,0 +1,50 @@
+{
+  "video": "Why Everyone Pretends To Be Busy",
+  "section": {
+    "number": 5,
+    "name": "Visible Work Beats Quiet Thinking",
+    "folder": "voiceover/section-05-visible-work-beats-quiet-thinking"
+  },
+  "status": "final section voice generated",
+  "voice": {
+    "name": "David23",
+    "id": "am_eric",
+    "speed": 0.86,
+    "language": "en-us",
+    "status": "approved voice, 0.86 per user preference"
+  },
+  "delivery": {
+    "userDirection": "match Section 4: pause-tuned + speed 0.86",
+    "howApplied": "Pause-tuned TTS input (one beat per line, commas around key words, ellipsis on 'possibly blinking'). Speed 0.86. [slower] direction honored on the manager-survey line via phrasing.",
+    "limitation": "True per-word emphasis is not possible in Kokoro; commas around a word give only a slight lift."
+  },
+  "tool": {
+    "name": "hyperframes tts",
+    "version": "0.6.76",
+    "command": "npx hyperframes@0.6.76 tts voiceover/section-05-visible-work-beats-quiet-thinking/tts-inputs/section-05-visible-work-beats-quiet-thinking-david23-am_eric-0.86.txt --output voiceover/section-05-visible-work-beats-quiet-thinking/scratch-audio/section-05-visible-work-beats-quiet-thinking-david23-am_eric-0.86.mp3 --voice am_eric --speed 0.86 --lang en-us --json",
+    "result": "{\"ok\":true,\"voice\":\"am_eric\",\"speed\":0.86,\"lang\":\"en-us\",\"langApplied\":true,\"durationSeconds\":42.859}"
+  },
+  "environment": {
+    "python": "C:\\Users\\Anpha Right Choice\\AppData\\Local\\Programs\\Python\\Python312\\python.exe (3.12.10)",
+    "deps": "kokoro-onnx 0.5.0, soundfile 0.14.0",
+    "note": "Prepend the real Python dir to PATH so HyperFrames bypasses the Microsoft Store python stub."
+  },
+  "outputs": {
+    "cleanScript": "voiceover/section-05-visible-work-beats-quiet-thinking/section-05-visible-work-beats-quiet-thinking-script.txt",
+    "markedScript": "voiceover/section-05-visible-work-beats-quiet-thinking/section-05-visible-work-beats-quiet-thinking-marked-script.md",
+    "ttsInput": "voiceover/section-05-visible-work-beats-quiet-thinking/tts-inputs/section-05-visible-work-beats-quiet-thinking-david23-am_eric-0.86.txt",
+    "audioFile": "voiceover/section-05-visible-work-beats-quiet-thinking/scratch-audio/section-05-visible-work-beats-quiet-thinking-david23-am_eric-0.86.mp3",
+    "durationSeconds": 42.859
+  },
+  "copies": [],
+  "scratchFallback": {
+    "used": false,
+    "reason": "Approved David23 / am_eric was used. No scratch fallback needed."
+  },
+  "notes": [
+    "Generated with the approved David23 voice; no scratch fallback used.",
+    "Pause-tuned phrasing + 0.86 to match the user-approved Section 4 delivery.",
+    "Duration 42.859s vs script estimate 2:27-3:09 (~42s) — on target.",
+    "Sections 1-3 still use plain phrasing at 0.84; re-run them at 0.86 pause-tuned for a uniform video."
+  ]
+}

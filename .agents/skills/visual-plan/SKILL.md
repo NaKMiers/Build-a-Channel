@@ -489,7 +489,30 @@ For each big scene, the plan must name the chosen base image, the search terms u
 
 ### Image Sourcing Recipe And Selection Rubric
 
-When sourcing a real base (no image-generation tool needed), use the Wikimedia Commons API and capture attribution:
+PRIMARY source for clean, modern, real-world photo bases: the **Openverse API** (aggregates
+CC-licensed photos; no key; scriptable even when Google/Bing/DuckDuckGo/Pexels are bot-blocked,
+which they are on this network). Prefer `CC0` results whose `source` is `stocksnap` or `rawpixel`
+— they are clean, modern, and brand/people-free far more often than Wikimedia Commons, which skews
+dingy / antique / branded for everyday objects (on this project, raw Commons photos were rejected
+twice as "filthy and bad"). There is currently NO image-generation tool connected — do not promise
+generated images; source clean real photos, and if they are rejected, ask the user to drop files in.
+
+```bash
+curl -s -G "https://api.openverse.org/v1/images/" \
+  --data-urlencode "q=<descriptive terms>" \
+  --data-urlencode "page_size=8" \
+  --data-urlencode "license_type=commercial,modification" \
+  --data-urlencode "size=large" \
+  -H "User-Agent: WhyItWorks-Channel/1.0 (research)"
+```
+
+Parse the JSON with `node -e` (no python/jq on this box). For each result read `url`, `license`,
+`license_version`, `width`/`height`, `source`, `title`. Prefer `width >= 900` and CC0
+StockSnap/rawpixel; CC0 needs no attribution but record source for traceability. Download the `url`
+and VIEW it before committing — reject brand-bearing shots (e.g. Apple Magic Mouse / iMac, Logitech,
+Casio) and any image with real people (no-face channel), even when sharper.
+
+As a SECONDARY source (Openverse thin or unhelpful), use the Wikimedia Commons API and capture attribution:
 
 ```bash
 curl -s -G "https://commons.wikimedia.org/w/api.php" \

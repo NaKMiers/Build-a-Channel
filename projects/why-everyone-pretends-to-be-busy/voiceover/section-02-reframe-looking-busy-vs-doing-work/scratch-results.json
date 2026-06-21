@@ -1,0 +1,44 @@
+{
+  "video": "Why Everyone Pretends To Be Busy",
+  "section": {
+    "number": 2,
+    "name": "Reframe: Looking Busy vs Doing Work",
+    "folder": "voiceover/section-02-reframe-looking-busy-vs-doing-work"
+  },
+  "status": "final section voice generated",
+  "voice": {
+    "name": "David23",
+    "id": "am_eric",
+    "speed": 0.84,
+    "language": "en-us",
+    "status": "approved channel voice"
+  },
+  "tool": {
+    "name": "hyperframes tts",
+    "version": "0.6.76",
+    "command": "npx hyperframes@0.6.76 tts voiceover/section-02-reframe-looking-busy-vs-doing-work/tts-inputs/section-02-reframe-looking-busy-vs-doing-work-david23-am_eric-0.84.txt --output voiceover/section-02-reframe-looking-busy-vs-doing-work/scratch-audio/section-02-reframe-looking-busy-vs-doing-work-david23-am_eric-0.84.mp3 --voice am_eric --speed 0.84 --lang en-us --json",
+    "result": "{\"ok\":true,\"voice\":\"am_eric\",\"speed\":0.84,\"lang\":\"en-us\",\"langApplied\":true,\"durationSeconds\":28.949}"
+  },
+  "environment": {
+    "python": "C:\\Users\\Anpha Right Choice\\AppData\\Local\\Programs\\Python\\Python312\\python.exe (3.12.10)",
+    "deps": "kokoro-onnx 0.5.0, soundfile 0.14.0",
+    "note": "Prepend the real Python dir to PATH so HyperFrames bypasses the Microsoft Store python stub."
+  },
+  "outputs": {
+    "cleanScript": "voiceover/section-02-reframe-looking-busy-vs-doing-work/section-02-reframe-looking-busy-vs-doing-work-script.txt",
+    "markedScript": "voiceover/section-02-reframe-looking-busy-vs-doing-work/section-02-reframe-looking-busy-vs-doing-work-marked-script.md",
+    "ttsInput": "voiceover/section-02-reframe-looking-busy-vs-doing-work/tts-inputs/section-02-reframe-looking-busy-vs-doing-work-david23-am_eric-0.84.txt",
+    "audioFile": "voiceover/section-02-reframe-looking-busy-vs-doing-work/scratch-audio/section-02-reframe-looking-busy-vs-doing-work-david23-am_eric-0.84.mp3",
+    "durationSeconds": 28.949
+  },
+  "copies": [],
+  "scratchFallback": {
+    "used": false,
+    "reason": "Approved David23 / am_eric was used. No scratch fallback needed."
+  },
+  "notes": [
+    "Generated with the approved David23 voice direction; no scratch fallback used.",
+    "Duration 28.949s vs script estimate 0:27-0:58 (~31s); close, visual production may add a short hold.",
+    "Project has no active HyperFrames asset folder yet, so no preview asset copy was made."
+  ]
+}

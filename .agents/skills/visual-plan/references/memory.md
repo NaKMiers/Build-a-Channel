@@ -484,6 +484,37 @@ Apply next time:
 Promote to shared memory:
 no; visual-plan execution behavior that pairs with the render Voice-Sync Timing Contract.
 
+### 2026-06-22 - Source Clean Real Photos Via Openverse (Commons skews dingy)
+
+Classification: `Visual plan lesson`
+
+Context:
+For `why-everyone-pretends-to-be-busy` Section 1, the first bases were raw Wikimedia Commons photos
+(a dated 2007 wall calendar + an overhead desk). The user rejected them as "filthy and bad." A
+flat-illustrated CSS rebuild was ALSO rejected ("use real images or generated images instead of
+this... find real-world images"). No image-generation tool is connected this session, and
+Google/Bing/DuckDuckGo/Pexels are all bot-blocked from this network. The fix that was accepted:
+clean CC0 real-world stock photos sourced via the **Openverse API** (warm work desk + bright
+minimal desk), composited with WIT + handwritten overlays.
+
+Lesson:
+For real-world photo bases, query the **Openverse API first** — it is scriptable without a key,
+works when search engines are blocked, and surfaces clean modern CC0 stock (StockSnap, rawpixel)
+that reads far better than raw Wikimedia Commons (which skews dingy, antique, or branded for
+everyday objects). Wikimedia Commons is the secondary source. Always VIEW candidates and reject
+brand-bearing (Apple Magic Mouse/iMac, Logitech, Casio) and people images (no-face channel).
+
+Apply next time:
+- `curl https://api.openverse.org/v1/images/?q=...&license_type=commercial,modification&size=large`, parse with `node -e`
+- prefer CC0 + `source` stocksnap/rawpixel + width >= 900; record source in ATTRIBUTION.md
+- view every pick; reject brands/people even when sharper
+- no image generator is connected — don't promise generated art; if clean photos are rejected, offer the "user drops in files" path
+- channel taste signal: dingy stock AND code-drawn CSS bases both get rejected; clean modern CC0 photos are accepted
+- the SKILL.md "Image Sourcing Recipe And Selection Rubric" now documents the Openverse-first recipe
+
+Promote to shared memory:
+no; the channel-wide visual reference standard already lives in `_shared/systems/visual-production.md`. This is the concrete sourcing recipe for visual-plan/render.
+
 ## Feedback Entry Template
 
 ```markdown
