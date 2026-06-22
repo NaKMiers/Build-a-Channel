@@ -31,6 +31,12 @@ This folder stores executable project-local Codex skills.
 - [Auto Adjust](auto-adjust/SKILL.md)
   Runs after render to audit and automatically fix one selected section preview using review lessons, skill memory, shared knowledge, and previous sections.
 
+- [Combine](combine/SKILL.md)
+  Project-level assembly + export step. Combines all completed section renders into one unified preview on `localhost:1000` with a single combined voiceover, then exports the final MP4 to `projects/<slug>/output/` (rendered via `renders/` staging, then moved; `renders/` removed if left empty). Reuses existing renders/assets; never changes section content.
+
+- [Caption](caption/SKILL.md)
+  Runs after combine. Creates accurate `.srt` subtitles for one project by transcribing the full combined audio (or full render) for real word-level timing and aligning the exact `02-script.md` text; exports to `projects/<slug>/output/`.
+
 ## Utility Skills
 
 - [Skill Sync](skill-sync/SKILL.md)
@@ -45,7 +51,8 @@ This folder stores executable project-local Codex skills.
 Pipeline rule:
 
 - each skill requires the previous step output before it runs
-- main pipeline order is `topic-intake -> research-pack -> script-draft -> voiceover -> visual-plan -> render -> auto-adjust`
+- main pipeline order is `topic-intake -> research-pack -> script-draft -> voiceover -> visual-plan -> render -> auto-adjust -> review -> combine -> caption`
+- `combine` runs once after all sections are rendered; `caption` runs once after `combine` and needs the full combined audio (or a full render)
 - render uses `localhost:1000` for unified preview and `localhost:1000 + section number` for section previews
 - packaging is a side branch from `research-pack`
 - packaging requires only topic intake and research pack; it does not require script or voiceover

@@ -6,13 +6,13 @@ Use this file for assembly mechanics, HyperFrames mounting/asset-resolution beha
 
 ## Current Skill Standard
 
-- Final workflow step; runs once per project after ALL sections are rendered.
+- Project-level assembly + export step; runs once per project after ALL sections are rendered, before `caption`.
 - Require one project (named, smart-selected, or asked). No per-section selection.
 - Refuse to run if any script section lacks a rendered build or audio.
-- Assembly-only: reuse approved section builds + assets; never re-render, re-time, restyle, or create section content; never touch `section-previews/` or `hyperframes/review/` section files.
-- No MP4/WebM export. Preview only.
+- Reuse approved section builds + assets; never re-render, re-time, restyle, or create section CONTENT; never touch `section-previews/` or `hyperframes/review/` section files.
 - Always port 1000.
-- Output only `hyperframes/full-video/` + a `06-production-board.md` note.
+- Outputs: `hyperframes/full-video/`, the final exported video at `projects/<slug>/output/<slug>.mp4`, and a `06-production-board.md` note.
+- EXPORT THE FINAL VIDEO (changed 2026-06-22): render the unified comp to MP4 into `renders/` as staging, then MOVE it to `output/`. Remove `renders/` only if left empty; never delete files in `renders/` this run did not create. On render failure, leave `renders/` untouched. `output/` is the single home for all final deliverables.
 
 ## Proven Mechanics (from `why-cheap-products-keep-getting-worse`, 2026-06-21)
 
@@ -70,6 +70,25 @@ Promote to shared memory:
 No; combine-skill execution practice.
 
 ## Feedback Log
+
+### 2026-06-22 - Combine now exports the final MP4 to output/ (reversed the no-export rule)
+
+Classification: `Core workflow change`
+
+Context:
+Anh Khoa changed the contract: combine should now export the final video and consolidate ALL deliverables under `projects/<slug>/output/`. The video must render via `renders/` as a staging area (keep `renders/` as-is during the render), then MOVE the result to `output/`; if `renders/` is empty after the move, remove it. This reverses the long-standing "combine is preview-only, never exports MP4/WebM" rule (confirmed by the owner before editing).
+
+Lesson:
+Combine = assemble preview (localhost:1000) + export final MP4 to `output/`. Render to `renders/<slug>.mp4` staging, then move (not copy) to `output/<slug>.mp4`, then `rmdir renders/` only if empty. Never delete/move files in `renders/` this run didn't create. On render failure leave `renders/` untouched and report. `output/` is the single deliverables home (shares it with `caption`'s `captions.srt`, future thumbnails, etc.).
+
+Apply next time:
+- after preview verify, render the unified comp to MP4 (needs Chrome + ffmpeg; reuse `%TEMP%/wiw-ffmpeg-static`)
+- move the result to `output/`; clean up empty `renders/`
+- verify exported mp4 exists, non-empty, ffprobe duration ≈ combined mp3 duration
+- note the `output/` path in `06-production-board.md`; then stop (caption is the next step)
+
+Promote to shared memory:
+No; combine-skill execution practice.
 
 ### 2026-06-21 - Skill Created From The Unified Full-Video Build
 

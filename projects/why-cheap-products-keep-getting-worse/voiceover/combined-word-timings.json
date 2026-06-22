@@ -1,0 +1,4305 @@
+{
+  "text": " I find a chair for $9. It has four legs a seat and the confidence of a much better chair, so he buys it. For the first week, everything is fine. Then the chair starts making a noise that sounds like legal advice. The screw gets loose. The seat feels nervous. One leg begins exploring other career options. And suddenly, the cheap chair was not really cheap. It was a normal chair with one small problem future not included. This video is not about saying cheap things are bad. That would be unfair. Also, it would make shopping very emotionally expensive. Some affordable products are great, and some expensive products are just regular products wearing a nicer jacket. The real question is smaller and more annoying. Why do so many normal products feel like they have less tomorrow inside them, less strength, less repair, less support, less time before you have to buy the same thing again. The first reason is that the price tag speaks first. When you buy something, the price is easy to understand. $9 is $9. Your wallet can read that very quickly, but the future cost is quiet. It does not stand next to the product and say, \"Hello, I am the replacement you will buy in three months.\" That would be helpful, also very bad marketing. So products compete on the things you can see immediately. Low price, fast delivery, new color, extra feature, a sales sticker that looks like it has personally saved your life. But if the visible price has to stay low, something else may become negotiable. Sometimes that something is tomorrow. The future of a product is usually not exciting. It is boring things, thicker fabric, stronger stitching, a hinge that does not act surprised by movement, a battery you can replace, a screw that uses a normal screwdriver instead of a secret handshake, a spare part that still exists after the product leaves the factory. These things are not very glamorous, nobody walks into a store and whispers, wow, look at the long-term availability of replacement parts. That person exists, but they are probably already repairing a printer. Most people see the shape, the color, the price, and whether the product can arrive tomorrow. So the boring future pieces are easy to hide. The product still looks complete. It just has less future built into it. The second reason is that products can get more complicated. This is not automatically bad. Useful features are useful. A safe replying is good. A better battery is good. A phone that survives gravity is basically a public service, but every extra feature is also one more thing that can break. A simple fridge has one main job to be cold. A modern fridge may have screens, sensors, water lines, ice dispensers, software and opinions. At some point, the product is not just a product. It is a small technology committee living in your kitchen. And when one tiny part fails, the whole thing can become harder and more expensive to fix. Third reason is repair. A product feels disposable when fixing it becomes harder than replacing it. Sometimes the part is not available. Sometimes the tool is special. Sometimes the manual is missing. Sometimes the repair costs almost as much as buying a new one. And sometimes the product looks at you and says, \"You owe me, but not enough to open me. Very healthy relationship. This is why repairability matters. Repairability just means how easy something is to fix. Can you replace the battery? Can you buy the part? Can a local repair shop understand the product without needing a mysterious machine in a locked room? Some governments now treat repair information, spare parts, battery life, and repairability labels as things worth requiring for certain products. That is basically society looking at a phone and saying, \"Please have a future.\" When repair gets slow, confusing, or expensive, replacement starts looking normal, not because people love throwing things away. Most people do not wake up and say, \"Today I would like to create a small landfill with my headphones.\" They replace things because the system makes replacement feel easier. The repair quote is high, the spare part is missing, the product is already out of support. The new one arrives tomorrow, so WIT buys the product again. The price tag smiles again. The receipt prints again, and the cheap product quietly becomes a subscription with extra steps. So why do cheap products keep getting worse? Not because cheap always means bad, and not because every product is secretly planning to betray you. The better answer is that modern products are under pressure to win the price you see today. So the future you do not see becomes easier to cut. The real price is not only what you pay a checkout. It is also how long the thing works, how easy it is to fix and how soon you have to buy it again. So the next time something looks like a bargain, the better question is not only, how much does this cost. It is, how much future is included.",
+  "words": [
+    {
+      "word": "I",
+      "start": 0,
+      "end": 0.24
+    },
+    {
+      "word": "find",
+      "start": 0.24,
+      "end": 0.4
+    },
+    {
+      "word": "a",
+      "start": 0.4,
+      "end": 0.56
+    },
+    {
+      "word": "chair",
+      "start": 0.56,
+      "end": 0.72
+    },
+    {
+      "word": "for",
+      "start": 0.72,
+      "end": 0.92
+    },
+    {
+      "word": "$9.",
+      "start": 0.92,
+      "end": 1.92
+    },
+    {
+      "word": "It",
+      "start": 1.92,
+      "end": 2.02
+    },
+    {
+      "word": "has",
+      "start": 2.02,
+      "end": 2.28
+    },
+    {
+      "word": "four",
+      "start": 2.28,
+      "end": 2.5
+    },
+    {
+      "word": "legs",
+      "start": 2.5,
+      "end": 2.76
+    },
+    {
+      "word": "a",
+      "start": 2.76,
+      "end": 3.02
+    },
+    {
+      "word": "seat",
+      "start": 3.02,
+      "end": 3.22
+    },
+    {
+      "word": "and",
+      "start": 3.22,
+      "end": 3.36
+    },
+    {
+      "word": "the",
+      "start": 3.36,
+      "end": 3.7
+    },
+    {
+      "word": "confidence",
+      "start": 3.7,
+      "end": 3.86
+    },
+    {
+      "word": "of",
+      "start": 3.86,
+      "end": 4.06
+    },
+    {
+      "word": "a",
+      "start": 4.06,
+      "end": 4.14
+    },
+    {
+      "word": "much",
+      "start": 4.14,
+      "end": 4.32
+    },
+    {
+      "word": "better",
+      "start": 4.32,
+      "end": 4.6
+    },
+    {
+      "word": "chair,",
+      "start": 4.6,
+      "end": 5.02
+    },
+    {
+      "word": "so",
+      "start": 5.02,
+      "end": 5.1
+    },
+    {
+      "word": "he",
+      "start": 5.1,
+      "end": 5.28
+    },
+    {
+      "word": "buys",
+      "start": 5.28,
+      "end": 5.58
+    },
+    {
+      "word": "it.",
+      "start": 5.58,
+      "end": 5.94
+    },
+    {
+      "word": "For",
+      "start": 5.94,
+      "end": 6.08
+    },
+    {
+      "word": "the",
+      "start": 6.08,
+      "end": 6.18
+    },
+    {
+      "word": "first",
+      "start": 6.18,
+      "end": 6.44
+    },
+    {
+      "word": "week,",
+      "start": 6.44,
+      "end": 6.86
+    },
+    {
+      "word": "everything",
+      "start": 6.86,
+      "end": 6.92
+    },
+    {
+      "word": "is",
+      "start": 6.92,
+      "end": 7.18
+    },
+    {
+      "word": "fine.",
+      "start": 7.18,
+      "end": 7.52
+    },
+    {
+      "word": "Then",
+      "start": 7.52,
+      "end": 7.7
+    },
+    {
+      "word": "the",
+      "start": 7.7,
+      "end": 7.86
+    },
+    {
+      "word": "chair",
+      "start": 7.86,
+      "end": 8.02
+    },
+    {
+      "word": "starts",
+      "start": 8.02,
+      "end": 8.28
+    },
+    {
+      "word": "making",
+      "start": 8.28,
+      "end": 8.58
+    },
+    {
+      "word": "a",
+      "start": 8.58,
+      "end": 8.74
+    },
+    {
+      "word": "noise",
+      "start": 8.74,
+      "end": 8.96
+    },
+    {
+      "word": "that",
+      "start": 8.96,
+      "end": 9.2
+    },
+    {
+      "word": "sounds",
+      "start": 9.2,
+      "end": 9.5
+    },
+    {
+      "word": "like",
+      "start": 9.5,
+      "end": 9.72
+    },
+    {
+      "word": "legal",
+      "start": 9.72,
+      "end": 9.96
+    },
+    {
+      "word": "advice.",
+      "start": 9.96,
+      "end": 10.52
+    },
+    {
+      "word": "The",
+      "start": 10.52,
+      "end": 10.7
+    },
+    {
+      "word": "screw",
+      "start": 10.7,
+      "end": 10.86
+    },
+    {
+      "word": "gets",
+      "start": 10.86,
+      "end": 11.12
+    },
+    {
+      "word": "loose.",
+      "start": 11.12,
+      "end": 11.76
+    },
+    {
+      "word": "The",
+      "start": 11.76,
+      "end": 11.96
+    },
+    {
+      "word": "seat",
+      "start": 11.96,
+      "end": 12.14
+    },
+    {
+      "word": "feels",
+      "start": 12.14,
+      "end": 12.4
+    },
+    {
+      "word": "nervous.",
+      "start": 12.4,
+      "end": 12.84
+    },
+    {
+      "word": "One",
+      "start": 12.84,
+      "end": 13.04
+    },
+    {
+      "word": "leg",
+      "start": 13.04,
+      "end": 13.24
+    },
+    {
+      "word": "begins",
+      "start": 13.24,
+      "end": 13.5
+    },
+    {
+      "word": "exploring",
+      "start": 13.5,
+      "end": 13.9
+    },
+    {
+      "word": "other",
+      "start": 13.9,
+      "end": 14.28
+    },
+    {
+      "word": "career",
+      "start": 14.28,
+      "end": 14.6
+    },
+    {
+      "word": "options.",
+      "start": 14.6,
+      "end": 15.04
+    },
+    {
+      "word": "And",
+      "start": 15.04,
+      "end": 15.3
+    },
+    {
+      "word": "suddenly,",
+      "start": 15.3,
+      "end": 15.76
+    },
+    {
+      "word": "the",
+      "start": 15.76,
+      "end": 15.78
+    },
+    {
+      "word": "cheap",
+      "start": 15.78,
+      "end": 16.04
+    },
+    {
+      "word": "chair",
+      "start": 16.04,
+      "end": 16.26
+    },
+    {
+      "word": "was",
+      "start": 16.26,
+      "end": 16.48
+    },
+    {
+      "word": "not",
+      "start": 16.48,
+      "end": 16.7
+    },
+    {
+      "word": "really",
+      "start": 16.7,
+      "end": 17
+    },
+    {
+      "word": "cheap.",
+      "start": 17,
+      "end": 17.6
+    },
+    {
+      "word": "It",
+      "start": 17.6,
+      "end": 17.88
+    },
+    {
+      "word": "was",
+      "start": 17.88,
+      "end": 18.08
+    },
+    {
+      "word": "a",
+      "start": 18.08,
+      "end": 18.2
+    },
+    {
+      "word": "normal",
+      "start": 18.2,
+      "end": 18.52
+    },
+    {
+      "word": "chair",
+      "start": 18.52,
+      "end": 18.84
+    },
+    {
+      "word": "with",
+      "start": 18.84,
+      "end": 18.98
+    },
+    {
+      "word": "one",
+      "start": 18.98,
+      "end": 19.28
+    },
+    {
+      "word": "small",
+      "start": 19.28,
+      "end": 19.56
+    },
+    {
+      "word": "problem",
+      "start": 19.56,
+      "end": 20.06
+    },
+    {
+      "word": "future",
+      "start": 20.06,
+      "end": 20.34
+    },
+    {
+      "word": "not",
+      "start": 20.34,
+      "end": 20.64
+    },
+    {
+      "word": "included.",
+      "start": 20.64,
+      "end": 21.28
+    },
+    {
+      "word": "This",
+      "start": 21.28,
+      "end": 21.56
+    },
+    {
+      "word": "video",
+      "start": 21.56,
+      "end": 21.84
+    },
+    {
+      "word": "is",
+      "start": 21.84,
+      "end": 22.06
+    },
+    {
+      "word": "not",
+      "start": 22.06,
+      "end": 22.22
+    },
+    {
+      "word": "about",
+      "start": 22.22,
+      "end": 22.5
+    },
+    {
+      "word": "saying",
+      "start": 22.5,
+      "end": 22.8
+    },
+    {
+      "word": "cheap",
+      "start": 22.8,
+      "end": 23.04
+    },
+    {
+      "word": "things",
+      "start": 23.04,
+      "end": 23.32
+    },
+    {
+      "word": "are",
+      "start": 23.32,
+      "end": 23.44
+    },
+    {
+      "word": "bad.",
+      "start": 23.44,
+      "end": 23.76
+    },
+    {
+      "word": "That",
+      "start": 23.76,
+      "end": 23.98
+    },
+    {
+      "word": "would",
+      "start": 23.98,
+      "end": 24.12
+    },
+    {
+      "word": "be",
+      "start": 24.12,
+      "end": 24.34
+    },
+    {
+      "word": "unfair.",
+      "start": 24.34,
+      "end": 25.06
+    },
+    {
+      "word": "Also,",
+      "start": 25.06,
+      "end": 25.44
+    },
+    {
+      "word": "it",
+      "start": 25.44,
+      "end": 25.48
+    },
+    {
+      "word": "would",
+      "start": 25.48,
+      "end": 25.62
+    },
+    {
+      "word": "make",
+      "start": 25.62,
+      "end": 25.86
+    },
+    {
+      "word": "shopping",
+      "start": 25.86,
+      "end": 26.2
+    },
+    {
+      "word": "very",
+      "start": 26.2,
+      "end": 26.54
+    },
+    {
+      "word": "emotionally",
+      "start": 26.54,
+      "end": 27.04
+    },
+    {
+      "word": "expensive.",
+      "start": 27.04,
+      "end": 27.98
+    },
+    {
+      "word": "Some",
+      "start": 27.98,
+      "end": 28.18
+    },
+    {
+      "word": "affordable",
+      "start": 28.18,
+      "end": 28.48
+    },
+    {
+      "word": "products",
+      "start": 28.48,
+      "end": 28.92
+    },
+    {
+      "word": "are",
+      "start": 28.92,
+      "end": 29.14
+    },
+    {
+      "word": "great,",
+      "start": 29.14,
+      "end": 29.44
+    },
+    {
+      "word": "and",
+      "start": 29.44,
+      "end": 29.6
+    },
+    {
+      "word": "some",
+      "start": 29.6,
+      "end": 29.78
+    },
+    {
+      "word": "expensive",
+      "start": 29.78,
+      "end": 30.14
+    },
+    {
+      "word": "products",
+      "start": 30.14,
+      "end": 30.6
+    },
+    {
+      "word": "are",
+      "start": 30.6,
+      "end": 30.8
+    },
+    {
+      "word": "just",
+      "start": 30.8,
+      "end": 30.98
+    },
+    {
+      "word": "regular",
+      "start": 30.98,
+      "end": 31.26
+    },
+    {
+      "word": "products",
+      "start": 31.26,
+      "end": 31.78
+    },
+    {
+      "word": "wearing",
+      "start": 31.78,
+      "end": 32.02
+    },
+    {
+      "word": "a",
+      "start": 32.02,
+      "end": 32.26
+    },
+    {
+      "word": "nicer",
+      "start": 32.26,
+      "end": 32.44
+    },
+    {
+      "word": "jacket.",
+      "start": 32.44,
+      "end": 33.18
+    },
+    {
+      "word": "The",
+      "start": 33.18,
+      "end": 33.34
+    },
+    {
+      "word": "real",
+      "start": 33.34,
+      "end": 33.58
+    },
+    {
+      "word": "question",
+      "start": 33.58,
+      "end": 33.92
+    },
+    {
+      "word": "is",
+      "start": 33.92,
+      "end": 34.22
+    },
+    {
+      "word": "smaller",
+      "start": 34.22,
+      "end": 34.5
+    },
+    {
+      "word": "and",
+      "start": 34.5,
+      "end": 34.7
+    },
+    {
+      "word": "more",
+      "start": 34.7,
+      "end": 34.94
+    },
+    {
+      "word": "annoying.",
+      "start": 34.94,
+      "end": 35.52
+    },
+    {
+      "word": "Why",
+      "start": 35.52,
+      "end": 35.64
+    },
+    {
+      "word": "do",
+      "start": 35.64,
+      "end": 35.82
+    },
+    {
+      "word": "so",
+      "start": 35.82,
+      "end": 36
+    },
+    {
+      "word": "many",
+      "start": 36,
+      "end": 36.14
+    },
+    {
+      "word": "normal",
+      "start": 36.14,
+      "end": 36.5
+    },
+    {
+      "word": "products",
+      "start": 36.5,
+      "end": 36.86
+    },
+    {
+      "word": "feel",
+      "start": 36.86,
+      "end": 37.1
+    },
+    {
+      "word": "like",
+      "start": 37.1,
+      "end": 37.26
+    },
+    {
+      "word": "they",
+      "start": 37.26,
+      "end": 37.36
+    },
+    {
+      "word": "have",
+      "start": 37.36,
+      "end": 37.52
+    },
+    {
+      "word": "less",
+      "start": 37.52,
+      "end": 37.76
+    },
+    {
+      "word": "tomorrow",
+      "start": 37.86,
+      "end": 38.12
+    },
+    {
+      "word": "inside",
+      "start": 38.12,
+      "end": 38.54
+    },
+    {
+      "word": "them,",
+      "start": 38.54,
+      "end": 39.06
+    },
+    {
+      "word": "less",
+      "start": 39.06,
+      "end": 39.1
+    },
+    {
+      "word": "strength,",
+      "start": 39.1,
+      "end": 39.52
+    },
+    {
+      "word": "less",
+      "start": 39.52,
+      "end": 39.76
+    },
+    {
+      "word": "repair,",
+      "start": 39.76,
+      "end": 40.18
+    },
+    {
+      "word": "less",
+      "start": 40.18,
+      "end": 40.4
+    },
+    {
+      "word": "support,",
+      "start": 40.4,
+      "end": 41.2
+    },
+    {
+      "word": "less",
+      "start": 41.2,
+      "end": 41.46
+    },
+    {
+      "word": "time",
+      "start": 41.46,
+      "end": 41.72
+    },
+    {
+      "word": "before",
+      "start": 41.72,
+      "end": 41.98
+    },
+    {
+      "word": "you",
+      "start": 41.98,
+      "end": 42.12
+    },
+    {
+      "word": "have",
+      "start": 42.12,
+      "end": 42.3
+    },
+    {
+      "word": "to",
+      "start": 42.3,
+      "end": 42.4
+    },
+    {
+      "word": "buy",
+      "start": 42.4,
+      "end": 42.56
+    },
+    {
+      "word": "the",
+      "start": 42.56,
+      "end": 42.76
+    },
+    {
+      "word": "same",
+      "start": 42.76,
+      "end": 42.96
+    },
+    {
+      "word": "thing",
+      "start": 42.96,
+      "end": 43.18
+    },
+    {
+      "word": "again.",
+      "start": 43.18,
+      "end": 43.66
+    },
+    {
+      "word": "The",
+      "start": 43.66,
+      "end": 43.8
+    },
+    {
+      "word": "first",
+      "start": 43.8,
+      "end": 44.14
+    },
+    {
+      "word": "reason",
+      "start": 44.14,
+      "end": 44.44
+    },
+    {
+      "word": "is",
+      "start": 44.42,
+      "end": 44.64
+    },
+    {
+      "word": "that",
+      "start": 44.64,
+      "end": 44.84
+    },
+    {
+      "word": "the",
+      "start": 44.84,
+      "end": 44.96
+    },
+    {
+      "word": "price",
+      "start": 44.96,
+      "end": 45.22
+    },
+    {
+      "word": "tag",
+      "start": 45.22,
+      "end": 45.48
+    },
+    {
+      "word": "speaks",
+      "start": 45.48,
+      "end": 45.8
+    },
+    {
+      "word": "first.",
+      "start": 45.8,
+      "end": 46.78
+    },
+    {
+      "word": "When",
+      "start": 46.78,
+      "end": 46.94
+    },
+    {
+      "word": "you",
+      "start": 46.94,
+      "end": 47.06
+    },
+    {
+      "word": "buy",
+      "start": 47.06,
+      "end": 47.3
+    },
+    {
+      "word": "something,",
+      "start": 47.3,
+      "end": 47.74
+    },
+    {
+      "word": "the",
+      "start": 47.74,
+      "end": 47.78
+    },
+    {
+      "word": "price",
+      "start": 47.78,
+      "end": 48
+    },
+    {
+      "word": "is",
+      "start": 48,
+      "end": 48.28
+    },
+    {
+      "word": "easy",
+      "start": 48.28,
+      "end": 48.44
+    },
+    {
+      "word": "to",
+      "start": 48.44,
+      "end": 48.74
+    },
+    {
+      "word": "understand.",
+      "start": 48.74,
+      "end": 49.36
+    },
+    {
+      "word": "$9",
+      "start": 49.36,
+      "end": 49.68
+    },
+    {
+      "word": "is",
+      "start": 49.68,
+      "end": 50.06
+    },
+    {
+      "word": "$9.",
+      "start": 50.06,
+      "end": 50.8
+    },
+    {
+      "word": "Your",
+      "start": 50.8,
+      "end": 51
+    },
+    {
+      "word": "wallet",
+      "start": 51,
+      "end": 51.18
+    },
+    {
+      "word": "can",
+      "start": 51.18,
+      "end": 51.4
+    },
+    {
+      "word": "read",
+      "start": 51.4,
+      "end": 51.54
+    },
+    {
+      "word": "that",
+      "start": 51.54,
+      "end": 51.76
+    },
+    {
+      "word": "very",
+      "start": 51.76,
+      "end": 52.02
+    },
+    {
+      "word": "quickly,",
+      "start": 52.02,
+      "end": 52.54
+    },
+    {
+      "word": "but",
+      "start": 52.54,
+      "end": 52.8
+    },
+    {
+      "word": "the",
+      "start": 52.8,
+      "end": 53
+    },
+    {
+      "word": "future",
+      "start": 53,
+      "end": 53.2
+    },
+    {
+      "word": "cost",
+      "start": 53.2,
+      "end": 53.48
+    },
+    {
+      "word": "is",
+      "start": 53.48,
+      "end": 53.7
+    },
+    {
+      "word": "quiet.",
+      "start": 53.7,
+      "end": 54.1
+    },
+    {
+      "word": "It",
+      "start": 54.1,
+      "end": 54.24
+    },
+    {
+      "word": "does",
+      "start": 54.24,
+      "end": 54.36
+    },
+    {
+      "word": "not",
+      "start": 54.36,
+      "end": 54.56
+    },
+    {
+      "word": "stand",
+      "start": 54.56,
+      "end": 54.76
+    },
+    {
+      "word": "next",
+      "start": 54.76,
+      "end": 54.96
+    },
+    {
+      "word": "to",
+      "start": 54.96,
+      "end": 55.06
+    },
+    {
+      "word": "the",
+      "start": 55.06,
+      "end": 55.28
+    },
+    {
+      "word": "product",
+      "start": 55.28,
+      "end": 55.44
+    },
+    {
+      "word": "and",
+      "start": 55.44,
+      "end": 55.66
+    },
+    {
+      "word": "say,",
+      "start": 55.66,
+      "end": 56
+    },
+    {
+      "word": "\"Hello,",
+      "start": 56,
+      "end": 56.16
+    },
+    {
+      "word": "I",
+      "start": 56.16,
+      "end": 56.28
+    },
+    {
+      "word": "am",
+      "start": 56.28,
+      "end": 56.4
+    },
+    {
+      "word": "the",
+      "start": 56.4,
+      "end": 56.58
+    },
+    {
+      "word": "replacement",
+      "start": 56.58,
+      "end": 56.84
+    },
+    {
+      "word": "you",
+      "start": 56.84,
+      "end": 57.1
+    },
+    {
+      "word": "will",
+      "start": 57.1,
+      "end": 57.22
+    },
+    {
+      "word": "buy",
+      "start": 57.22,
+      "end": 57.42
+    },
+    {
+      "word": "in",
+      "start": 57.42,
+      "end": 57.58
+    },
+    {
+      "word": "three",
+      "start": 57.58,
+      "end": 57.74
+    },
+    {
+      "word": "months.\"",
+      "start": 57.74,
+      "end": 58.44
+    },
+    {
+      "word": "That",
+      "start": 58.44,
+      "end": 58.58
+    },
+    {
+      "word": "would",
+      "start": 58.58,
+      "end": 58.74
+    },
+    {
+      "word": "be",
+      "start": 58.74,
+      "end": 58.9
+    },
+    {
+      "word": "helpful,",
+      "start": 58.9,
+      "end": 59.22
+    },
+    {
+      "word": "also",
+      "start": 59.22,
+      "end": 59.64
+    },
+    {
+      "word": "very",
+      "start": 59.64,
+      "end": 59.92
+    },
+    {
+      "word": "bad",
+      "start": 59.92,
+      "end": 60.24
+    },
+    {
+      "word": "marketing.",
+      "start": 60.24,
+      "end": 60.66
+    },
+    {
+      "word": "So",
+      "start": 60.66,
+      "end": 60.86
+    },
+    {
+      "word": "products",
+      "start": 60.86,
+      "end": 61.18
+    },
+    {
+      "word": "compete",
+      "start": 61.18,
+      "end": 61.48
+    },
+    {
+      "word": "on",
+      "start": 61.48,
+      "end": 61.66
+    },
+    {
+      "word": "the",
+      "start": 61.66,
+      "end": 61.8
+    },
+    {
+      "word": "things",
+      "start": 61.8,
+      "end": 61.94
+    },
+    {
+      "word": "you",
+      "start": 61.94,
+      "end": 62.12
+    },
+    {
+      "word": "can",
+      "start": 62.12,
+      "end": 62.32
+    },
+    {
+      "word": "see",
+      "start": 62.32,
+      "end": 62.58
+    },
+    {
+      "word": "immediately.",
+      "start": 62.58,
+      "end": 63.56
+    },
+    {
+      "word": "Low",
+      "start": 63.56,
+      "end": 63.62
+    },
+    {
+      "word": "price,",
+      "start": 63.62,
+      "end": 64.3
+    },
+    {
+      "word": "fast",
+      "start": 64.3,
+      "end": 64.4
+    },
+    {
+      "word": "delivery,",
+      "start": 64.4,
+      "end": 65
+    },
+    {
+      "word": "new",
+      "start": 64.8,
+      "end": 65.08
+    },
+    {
+      "word": "color,",
+      "start": 65.08,
+      "end": 65.82
+    },
+    {
+      "word": "extra",
+      "start": 65.82,
+      "end": 65.84
+    },
+    {
+      "word": "feature,",
+      "start": 65.84,
+      "end": 66.66
+    },
+    {
+      "word": "a",
+      "start": 66.66,
+      "end": 66.68
+    },
+    {
+      "word": "sales",
+      "start": 66.68,
+      "end": 66.96
+    },
+    {
+      "word": "sticker",
+      "start": 66.96,
+      "end": 67.2
+    },
+    {
+      "word": "that",
+      "start": 67.2,
+      "end": 67.44
+    },
+    {
+      "word": "looks",
+      "start": 67.44,
+      "end": 67.7
+    },
+    {
+      "word": "like",
+      "start": 67.7,
+      "end": 67.92
+    },
+    {
+      "word": "it",
+      "start": 67.92,
+      "end": 68.06
+    },
+    {
+      "word": "has",
+      "start": 68.06,
+      "end": 68.34
+    },
+    {
+      "word": "personally",
+      "start": 68.34,
+      "end": 68.7
+    },
+    {
+      "word": "saved",
+      "start": 68.7,
+      "end": 69.14
+    },
+    {
+      "word": "your",
+      "start": 69.14,
+      "end": 69.34
+    },
+    {
+      "word": "life.",
+      "start": 69.34,
+      "end": 70.02
+    },
+    {
+      "word": "But",
+      "start": 70.22,
+      "end": 70.36
+    },
+    {
+      "word": "if",
+      "start": 70.36,
+      "end": 70.46
+    },
+    {
+      "word": "the",
+      "start": 70.46,
+      "end": 70.74
+    },
+    {
+      "word": "visible",
+      "start": 70.74,
+      "end": 70.92
+    },
+    {
+      "word": "price",
+      "start": 70.92,
+      "end": 71.34
+    },
+    {
+      "word": "has",
+      "start": 71.34,
+      "end": 71.62
+    },
+    {
+      "word": "to",
+      "start": 71.62,
+      "end": 71.76
+    },
+    {
+      "word": "stay",
+      "start": 71.76,
+      "end": 72.02
+    },
+    {
+      "word": "low,",
+      "start": 72.02,
+      "end": 72.6
+    },
+    {
+      "word": "something",
+      "start": 72.6,
+      "end": 72.74
+    },
+    {
+      "word": "else",
+      "start": 72.74,
+      "end": 73.08
+    },
+    {
+      "word": "may",
+      "start": 73.08,
+      "end": 73.28
+    },
+    {
+      "word": "become",
+      "start": 73.28,
+      "end": 73.58
+    },
+    {
+      "word": "negotiable.",
+      "start": 73.58,
+      "end": 74.9
+    },
+    {
+      "word": "Sometimes",
+      "start": 74.9,
+      "end": 75.28
+    },
+    {
+      "word": "that",
+      "start": 75.28,
+      "end": 75.74
+    },
+    {
+      "word": "something",
+      "start": 75.76,
+      "end": 76.14
+    },
+    {
+      "word": "is",
+      "start": 76.14,
+      "end": 76.42
+    },
+    {
+      "word": "tomorrow.",
+      "start": 76.42,
+      "end": 77.14
+    },
+    {
+      "word": "The",
+      "start": 77.14,
+      "end": 77.34
+    },
+    {
+      "word": "future",
+      "start": 77.34,
+      "end": 77.56
+    },
+    {
+      "word": "of",
+      "start": 77.56,
+      "end": 77.76
+    },
+    {
+      "word": "a",
+      "start": 77.76,
+      "end": 77.94
+    },
+    {
+      "word": "product",
+      "start": 77.94,
+      "end": 78.2
+    },
+    {
+      "word": "is",
+      "start": 78.2,
+      "end": 78.48
+    },
+    {
+      "word": "usually",
+      "start": 78.48,
+      "end": 78.78
+    },
+    {
+      "word": "not",
+      "start": 78.78,
+      "end": 79.02
+    },
+    {
+      "word": "exciting.",
+      "start": 79.02,
+      "end": 79.52
+    },
+    {
+      "word": "It",
+      "start": 79.52,
+      "end": 79.92
+    },
+    {
+      "word": "is",
+      "start": 79.92,
+      "end": 80.12
+    },
+    {
+      "word": "boring",
+      "start": 80.12,
+      "end": 80.36
+    },
+    {
+      "word": "things,",
+      "start": 80.36,
+      "end": 80.88
+    },
+    {
+      "word": "thicker",
+      "start": 80.88,
+      "end": 81.02
+    },
+    {
+      "word": "fabric,",
+      "start": 81.02,
+      "end": 81.88
+    },
+    {
+      "word": "stronger",
+      "start": 81.88,
+      "end": 81.88
+    },
+    {
+      "word": "stitching,",
+      "start": 81.88,
+      "end": 82.76
+    },
+    {
+      "word": "a",
+      "start": 82.76,
+      "end": 82.78
+    },
+    {
+      "word": "hinge",
+      "start": 82.78,
+      "end": 82.94
+    },
+    {
+      "word": "that",
+      "start": 82.94,
+      "end": 83.12
+    },
+    {
+      "word": "does",
+      "start": 83.1,
+      "end": 83.26
+    },
+    {
+      "word": "not",
+      "start": 83.26,
+      "end": 83.46
+    },
+    {
+      "word": "act",
+      "start": 83.46,
+      "end": 83.72
+    },
+    {
+      "word": "surprised",
+      "start": 84.06,
+      "end": 84.06
+    },
+    {
+      "word": "by",
+      "start": 84.06,
+      "end": 84.36
+    },
+    {
+      "word": "movement,",
+      "start": 84.36,
+      "end": 84.94
+    },
+    {
+      "word": "a",
+      "start": 84.94,
+      "end": 84.94
+    },
+    {
+      "word": "battery",
+      "start": 84.94,
+      "end": 85.12
+    },
+    {
+      "word": "you",
+      "start": 85.12,
+      "end": 85.32
+    },
+    {
+      "word": "can",
+      "start": 85.32,
+      "end": 85.5
+    },
+    {
+      "word": "replace,",
+      "start": 85.5,
+      "end": 86.5
+    },
+    {
+      "word": "a",
+      "start": 86.5,
+      "end": 86.58
+    },
+    {
+      "word": "screw",
+      "start": 86.58,
+      "end": 86.72
+    },
+    {
+      "word": "that",
+      "start": 86.72,
+      "end": 86.88
+    },
+    {
+      "word": "uses",
+      "start": 86.88,
+      "end": 87.08
+    },
+    {
+      "word": "a",
+      "start": 87.08,
+      "end": 87.34
+    },
+    {
+      "word": "normal",
+      "start": 87.34,
+      "end": 87.62
+    },
+    {
+      "word": "screwdriver",
+      "start": 87.76,
+      "end": 88.16
+    },
+    {
+      "word": "instead",
+      "start": 88.16,
+      "end": 88.46
+    },
+    {
+      "word": "of",
+      "start": 88.46,
+      "end": 88.64
+    },
+    {
+      "word": "a",
+      "start": 88.64,
+      "end": 88.8
+    },
+    {
+      "word": "secret",
+      "start": 88.8,
+      "end": 89.1
+    },
+    {
+      "word": "handshake,",
+      "start": 89.1,
+      "end": 89.98
+    },
+    {
+      "word": "a",
+      "start": 89.98,
+      "end": 90.1
+    },
+    {
+      "word": "spare",
+      "start": 90.1,
+      "end": 90.3
+    },
+    {
+      "word": "part",
+      "start": 90.3,
+      "end": 90.5
+    },
+    {
+      "word": "that",
+      "start": 90.5,
+      "end": 90.7
+    },
+    {
+      "word": "still",
+      "start": 90.7,
+      "end": 90.92
+    },
+    {
+      "word": "exists",
+      "start": 90.92,
+      "end": 91.28
+    },
+    {
+      "word": "after",
+      "start": 91.28,
+      "end": 91.56
+    },
+    {
+      "word": "the",
+      "start": 91.56,
+      "end": 91.74
+    },
+    {
+      "word": "product",
+      "start": 91.74,
+      "end": 91.96
+    },
+    {
+      "word": "leaves",
+      "start": 91.96,
+      "end": 92.24
+    },
+    {
+      "word": "the",
+      "start": 92.24,
+      "end": 92.48
+    },
+    {
+      "word": "factory.",
+      "start": 92.48,
+      "end": 93.44
+    },
+    {
+      "word": "These",
+      "start": 93.44,
+      "end": 93.5
+    },
+    {
+      "word": "things",
+      "start": 93.5,
+      "end": 93.74
+    },
+    {
+      "word": "are",
+      "start": 93.74,
+      "end": 93.84
+    },
+    {
+      "word": "not",
+      "start": 93.84,
+      "end": 94.06
+    },
+    {
+      "word": "very",
+      "start": 94.06,
+      "end": 94.36
+    },
+    {
+      "word": "glamorous,",
+      "start": 94.36,
+      "end": 95.02
+    },
+    {
+      "word": "nobody",
+      "start": 95.02,
+      "end": 95.28
+    },
+    {
+      "word": "walks",
+      "start": 95.28,
+      "end": 95.66
+    },
+    {
+      "word": "into",
+      "start": 95.66,
+      "end": 95.9
+    },
+    {
+      "word": "a",
+      "start": 95.9,
+      "end": 96.02
+    },
+    {
+      "word": "store",
+      "start": 96.02,
+      "end": 96.24
+    },
+    {
+      "word": "and",
+      "start": 96.24,
+      "end": 96.4
+    },
+    {
+      "word": "whispers,",
+      "start": 96.4,
+      "end": 97.26
+    },
+    {
+      "word": "wow,",
+      "start": 97.26,
+      "end": 97.36
+    },
+    {
+      "word": "look",
+      "start": 97.36,
+      "end": 97.44
+    },
+    {
+      "word": "at",
+      "start": 97.44,
+      "end": 97.58
+    },
+    {
+      "word": "the",
+      "start": 97.58,
+      "end": 97.68
+    },
+    {
+      "word": "long",
+      "start": 97.68,
+      "end": 98.02
+    },
+    {
+      "word": "-term",
+      "start": 98.02,
+      "end": 98.2
+    },
+    {
+      "word": "availability",
+      "start": 98.2,
+      "end": 98.7
+    },
+    {
+      "word": "of",
+      "start": 98.7,
+      "end": 99.02
+    },
+    {
+      "word": "replacement",
+      "start": 99.02,
+      "end": 99.36
+    },
+    {
+      "word": "parts.",
+      "start": 99.64,
+      "end": 100.24
+    },
+    {
+      "word": "That",
+      "start": 100.24,
+      "end": 100.24
+    },
+    {
+      "word": "person",
+      "start": 100.24,
+      "end": 100.52
+    },
+    {
+      "word": "exists,",
+      "start": 100.52,
+      "end": 101.32
+    },
+    {
+      "word": "but",
+      "start": 101.32,
+      "end": 101.32
+    },
+    {
+      "word": "they",
+      "start": 101.32,
+      "end": 101.5
+    },
+    {
+      "word": "are",
+      "start": 101.5,
+      "end": 101.68
+    },
+    {
+      "word": "probably",
+      "start": 101.68,
+      "end": 102.18
+    },
+    {
+      "word": "already",
+      "start": 102.18,
+      "end": 102.56
+    },
+    {
+      "word": "repairing",
+      "start": 102.56,
+      "end": 102.92
+    },
+    {
+      "word": "a",
+      "start": 102.92,
+      "end": 103.16
+    },
+    {
+      "word": "printer.",
+      "start": 103.16,
+      "end": 104.04
+    },
+    {
+      "word": "Most",
+      "start": 104.26,
+      "end": 104.32
+    },
+    {
+      "word": "people",
+      "start": 104.32,
+      "end": 104.64
+    },
+    {
+      "word": "see",
+      "start": 104.64,
+      "end": 104.86
+    },
+    {
+      "word": "the",
+      "start": 104.86,
+      "end": 105.1
+    },
+    {
+      "word": "shape,",
+      "start": 105.1,
+      "end": 105.48
+    },
+    {
+      "word": "the",
+      "start": 105.48,
+      "end": 105.58
+    },
+    {
+      "word": "color,",
+      "start": 105.58,
+      "end": 105.86
+    },
+    {
+      "word": "the",
+      "start": 105.86,
+      "end": 105.98
+    },
+    {
+      "word": "price,",
+      "start": 105.98,
+      "end": 106.42
+    },
+    {
+      "word": "and",
+      "start": 106.42,
+      "end": 106.6
+    },
+    {
+      "word": "whether",
+      "start": 106.6,
+      "end": 106.76
+    },
+    {
+      "word": "the",
+      "start": 106.76,
+      "end": 106.98
+    },
+    {
+      "word": "product",
+      "start": 106.98,
+      "end": 107.26
+    },
+    {
+      "word": "can",
+      "start": 107.26,
+      "end": 107.46
+    },
+    {
+      "word": "arrive",
+      "start": 107.46,
+      "end": 107.8
+    },
+    {
+      "word": "tomorrow.",
+      "start": 107.8,
+      "end": 108.66
+    },
+    {
+      "word": "So",
+      "start": 108.66,
+      "end": 108.82
+    },
+    {
+      "word": "the",
+      "start": 108.82,
+      "end": 109.04
+    },
+    {
+      "word": "boring",
+      "start": 109.04,
+      "end": 109.32
+    },
+    {
+      "word": "future",
+      "start": 109.32,
+      "end": 109.68
+    },
+    {
+      "word": "pieces",
+      "start": 109.68,
+      "end": 110.1
+    },
+    {
+      "word": "are",
+      "start": 110.1,
+      "end": 110.4
+    },
+    {
+      "word": "easy",
+      "start": 110.4,
+      "end": 110.56
+    },
+    {
+      "word": "to",
+      "start": 110.56,
+      "end": 110.82
+    },
+    {
+      "word": "hide.",
+      "start": 110.82,
+      "end": 111.54
+    },
+    {
+      "word": "The",
+      "start": 111.54,
+      "end": 111.68
+    },
+    {
+      "word": "product",
+      "start": 111.68,
+      "end": 111.96
+    },
+    {
+      "word": "still",
+      "start": 111.96,
+      "end": 112.3
+    },
+    {
+      "word": "looks",
+      "start": 112.3,
+      "end": 112.54
+    },
+    {
+      "word": "complete.",
+      "start": 112.54,
+      "end": 113.08
+    },
+    {
+      "word": "It",
+      "start": 113.12,
+      "end": 113.32
+    },
+    {
+      "word": "just",
+      "start": 113.32,
+      "end": 113.5
+    },
+    {
+      "word": "has",
+      "start": 113.5,
+      "end": 113.66
+    },
+    {
+      "word": "less",
+      "start": 113.66,
+      "end": 113.92
+    },
+    {
+      "word": "future",
+      "start": 113.92,
+      "end": 114.3
+    },
+    {
+      "word": "built",
+      "start": 114.3,
+      "end": 114.56
+    },
+    {
+      "word": "into",
+      "start": 114.56,
+      "end": 114.8
+    },
+    {
+      "word": "it.",
+      "start": 114.8,
+      "end": 115.08
+    },
+    {
+      "word": "The",
+      "start": 115.08,
+      "end": 115.26
+    },
+    {
+      "word": "second",
+      "start": 115.26,
+      "end": 115.58
+    },
+    {
+      "word": "reason",
+      "start": 115.58,
+      "end": 115.86
+    },
+    {
+      "word": "is",
+      "start": 115.86,
+      "end": 116.08
+    },
+    {
+      "word": "that",
+      "start": 116.08,
+      "end": 116.28
+    },
+    {
+      "word": "products",
+      "start": 116.28,
+      "end": 116.54
+    },
+    {
+      "word": "can",
+      "start": 116.54,
+      "end": 116.76
+    },
+    {
+      "word": "get",
+      "start": 116.76,
+      "end": 116.88
+    },
+    {
+      "word": "more",
+      "start": 116.88,
+      "end": 117.24
+    },
+    {
+      "word": "complicated.",
+      "start": 117.24,
+      "end": 118.1
+    },
+    {
+      "word": "This",
+      "start": 118.1,
+      "end": 118.46
+    },
+    {
+      "word": "is",
+      "start": 118.46,
+      "end": 118.62
+    },
+    {
+      "word": "not",
+      "start": 118.62,
+      "end": 118.86
+    },
+    {
+      "word": "automatically",
+      "start": 118.86,
+      "end": 119.32
+    },
+    {
+      "word": "bad.",
+      "start": 119.32,
+      "end": 119.88
+    },
+    {
+      "word": "Useful",
+      "start": 119.88,
+      "end": 120.1
+    },
+    {
+      "word": "features",
+      "start": 120.1,
+      "end": 120.5
+    },
+    {
+      "word": "are",
+      "start": 120.5,
+      "end": 120.76
+    },
+    {
+      "word": "useful.",
+      "start": 120.76,
+      "end": 121.26
+    },
+    {
+      "word": "A",
+      "start": 121.26,
+      "end": 121.46
+    },
+    {
+      "word": "safe",
+      "start": 121.46,
+      "end": 121.56
+    },
+    {
+      "word": "replying",
+      "start": 121.56,
+      "end": 121.96
+    },
+    {
+      "word": "is",
+      "start": 121.96,
+      "end": 122.18
+    },
+    {
+      "word": "good.",
+      "start": 122.18,
+      "end": 122.56
+    },
+    {
+      "word": "A",
+      "start": 122.56,
+      "end": 122.66
+    },
+    {
+      "word": "better",
+      "start": 122.66,
+      "end": 122.84
+    },
+    {
+      "word": "battery",
+      "start": 122.84,
+      "end": 123.2
+    },
+    {
+      "word": "is",
+      "start": 123.2,
+      "end": 123.42
+    },
+    {
+      "word": "good.",
+      "start": 123.42,
+      "end": 123.96
+    },
+    {
+      "word": "A",
+      "start": 123.96,
+      "end": 124.04
+    },
+    {
+      "word": "phone",
+      "start": 124.04,
+      "end": 124.18
+    },
+    {
+      "word": "that",
+      "start": 124.18,
+      "end": 124.42
+    },
+    {
+      "word": "survives",
+      "start": 124.42,
+      "end": 124.8
+    },
+    {
+      "word": "gravity",
+      "start": 124.8,
+      "end": 125.22
+    },
+    {
+      "word": "is",
+      "start": 125.22,
+      "end": 125.6
+    },
+    {
+      "word": "basically",
+      "start": 125.6,
+      "end": 125.9
+    },
+    {
+      "word": "a",
+      "start": 125.9,
+      "end": 126.16
+    },
+    {
+      "word": "public",
+      "start": 126.16,
+      "end": 126.4
+    },
+    {
+      "word": "service,",
+      "start": 126.4,
+      "end": 127.1
+    },
+    {
+      "word": "but",
+      "start": 127.1,
+      "end": 127.24
+    },
+    {
+      "word": "every",
+      "start": 127.24,
+      "end": 127.5
+    },
+    {
+      "word": "extra",
+      "start": 127.5,
+      "end": 127.84
+    },
+    {
+      "word": "feature",
+      "start": 127.84,
+      "end": 128.14
+    },
+    {
+      "word": "is",
+      "start": 128.14,
+      "end": 128.38
+    },
+    {
+      "word": "also",
+      "start": 128.38,
+      "end": 128.62
+    },
+    {
+      "word": "one",
+      "start": 128.62,
+      "end": 128.76
+    },
+    {
+      "word": "more",
+      "start": 128.76,
+      "end": 128.98
+    },
+    {
+      "word": "thing",
+      "start": 128.98,
+      "end": 129.2
+    },
+    {
+      "word": "that",
+      "start": 129.2,
+      "end": 129.32
+    },
+    {
+      "word": "can",
+      "start": 129.32,
+      "end": 129.52
+    },
+    {
+      "word": "break.",
+      "start": 129.52,
+      "end": 130.2
+    },
+    {
+      "word": "A",
+      "start": 130.2,
+      "end": 130.32
+    },
+    {
+      "word": "simple",
+      "start": 130.32,
+      "end": 130.58
+    },
+    {
+      "word": "fridge",
+      "start": 130.58,
+      "end": 130.84
+    },
+    {
+      "word": "has",
+      "start": 130.84,
+      "end": 131.08
+    },
+    {
+      "word": "one",
+      "start": 131.08,
+      "end": 131.3
+    },
+    {
+      "word": "main",
+      "start": 131.3,
+      "end": 131.56
+    },
+    {
+      "word": "job",
+      "start": 131.56,
+      "end": 131.8
+    },
+    {
+      "word": "to",
+      "start": 131.8,
+      "end": 132.06
+    },
+    {
+      "word": "be",
+      "start": 132.06,
+      "end": 132.06
+    },
+    {
+      "word": "cold.",
+      "start": 132.06,
+      "end": 132.44
+    },
+    {
+      "word": "A",
+      "start": 132.44,
+      "end": 132.52
+    },
+    {
+      "word": "modern",
+      "start": 132.52,
+      "end": 132.74
+    },
+    {
+      "word": "fridge",
+      "start": 132.74,
+      "end": 133.04
+    },
+    {
+      "word": "may",
+      "start": 133.04,
+      "end": 133.2
+    },
+    {
+      "word": "have",
+      "start": 133.2,
+      "end": 133.46
+    },
+    {
+      "word": "screens,",
+      "start": 133.46,
+      "end": 133.96
+    },
+    {
+      "word": "sensors,",
+      "start": 133.96,
+      "end": 134.52
+    },
+    {
+      "word": "water",
+      "start": 134.6,
+      "end": 134.7
+    },
+    {
+      "word": "lines,",
+      "start": 134.7,
+      "end": 135.34
+    },
+    {
+      "word": "ice",
+      "start": 135.34,
+      "end": 135.4
+    },
+    {
+      "word": "dispensers,",
+      "start": 135.4,
+      "end": 136.46
+    },
+    {
+      "word": "software",
+      "start": 136.46,
+      "end": 136.46
+    },
+    {
+      "word": "and",
+      "start": 136.46,
+      "end": 136.7
+    },
+    {
+      "word": "opinions.",
+      "start": 136.7,
+      "end": 137.8
+    },
+    {
+      "word": "At",
+      "start": 137.8,
+      "end": 138.04
+    },
+    {
+      "word": "some",
+      "start": 138.04,
+      "end": 138.28
+    },
+    {
+      "word": "point,",
+      "start": 138.28,
+      "end": 138.92
+    },
+    {
+      "word": "the",
+      "start": 138.92,
+      "end": 138.92
+    },
+    {
+      "word": "product",
+      "start": 138.92,
+      "end": 139.26
+    },
+    {
+      "word": "is",
+      "start": 139.26,
+      "end": 139.5
+    },
+    {
+      "word": "not",
+      "start": 139.5,
+      "end": 139.76
+    },
+    {
+      "word": "just",
+      "start": 139.76,
+      "end": 140
+    },
+    {
+      "word": "a",
+      "start": 140,
+      "end": 140.12
+    },
+    {
+      "word": "product.",
+      "start": 140.12,
+      "end": 140.86
+    },
+    {
+      "word": "It",
+      "start": 140.86,
+      "end": 141.14
+    },
+    {
+      "word": "is",
+      "start": 141.14,
+      "end": 141.38
+    },
+    {
+      "word": "a",
+      "start": 141.38,
+      "end": 141.58
+    },
+    {
+      "word": "small",
+      "start": 141.58,
+      "end": 141.86
+    },
+    {
+      "word": "technology",
+      "start": 141.86,
+      "end": 142.5
+    },
+    {
+      "word": "committee",
+      "start": 142.5,
+      "end": 142.92
+    },
+    {
+      "word": "living",
+      "start": 142.92,
+      "end": 143.3
+    },
+    {
+      "word": "in",
+      "start": 143.32,
+      "end": 143.48
+    },
+    {
+      "word": "your",
+      "start": 143.48,
+      "end": 143.6
+    },
+    {
+      "word": "kitchen.",
+      "start": 143.6,
+      "end": 144.58
+    },
+    {
+      "word": "And",
+      "start": 144.58,
+      "end": 144.82
+    },
+    {
+      "word": "when",
+      "start": 144.82,
+      "end": 145
+    },
+    {
+      "word": "one",
+      "start": 145,
+      "end": 145.34
+    },
+    {
+      "word": "tiny",
+      "start": 145.34,
+      "end": 145.54
+    },
+    {
+      "word": "part",
+      "start": 145.74,
+      "end": 145.94
+    },
+    {
+      "word": "fails,",
+      "start": 145.94,
+      "end": 146.44
+    },
+    {
+      "word": "the",
+      "start": 146.44,
+      "end": 146.6
+    },
+    {
+      "word": "whole",
+      "start": 146.6,
+      "end": 146.86
+    },
+    {
+      "word": "thing",
+      "start": 146.86,
+      "end": 147.06
+    },
+    {
+      "word": "can",
+      "start": 147.06,
+      "end": 147.24
+    },
+    {
+      "word": "become",
+      "start": 147.24,
+      "end": 147.58
+    },
+    {
+      "word": "harder",
+      "start": 147.58,
+      "end": 148.02
+    },
+    {
+      "word": "and",
+      "start": 148.02,
+      "end": 148.22
+    },
+    {
+      "word": "more",
+      "start": 148.22,
+      "end": 148.56
+    },
+    {
+      "word": "expensive",
+      "start": 148.56,
+      "end": 148.9
+    },
+    {
+      "word": "to",
+      "start": 148.9,
+      "end": 149.26
+    },
+    {
+      "word": "fix.",
+      "start": 149.26,
+      "end": 150.08
+    },
+    {
+      "word": "Third",
+      "start": 150.08,
+      "end": 150.08
+    },
+    {
+      "word": "reason",
+      "start": 150.08,
+      "end": 150.34
+    },
+    {
+      "word": "is",
+      "start": 150.34,
+      "end": 150.66
+    },
+    {
+      "word": "repair.",
+      "start": 150.66,
+      "end": 151.38
+    },
+    {
+      "word": "A",
+      "start": 151.38,
+      "end": 151.5
+    },
+    {
+      "word": "product",
+      "start": 151.5,
+      "end": 151.76
+    },
+    {
+      "word": "feels",
+      "start": 151.76,
+      "end": 152.08
+    },
+    {
+      "word": "disposable",
+      "start": 152.08,
+      "end": 152.64
+    },
+    {
+      "word": "when",
+      "start": 152.64,
+      "end": 152.96
+    },
+    {
+      "word": "fixing",
+      "start": 152.96,
+      "end": 153.2
+    },
+    {
+      "word": "it",
+      "start": 153.2,
+      "end": 153.38
+    },
+    {
+      "word": "becomes",
+      "start": 153.38,
+      "end": 153.68
+    },
+    {
+      "word": "harder",
+      "start": 153.68,
+      "end": 153.92
+    },
+    {
+      "word": "than",
+      "start": 153.92,
+      "end": 154.14
+    },
+    {
+      "word": "replacing",
+      "start": 154.14,
+      "end": 154.46
+    },
+    {
+      "word": "it.",
+      "start": 154.46,
+      "end": 155.16
+    },
+    {
+      "word": "Sometimes",
+      "start": 155.2,
+      "end": 155.48
+    },
+    {
+      "word": "the",
+      "start": 155.48,
+      "end": 155.66
+    },
+    {
+      "word": "part",
+      "start": 155.66,
+      "end": 155.8
+    },
+    {
+      "word": "is",
+      "start": 155.8,
+      "end": 155.98
+    },
+    {
+      "word": "not",
+      "start": 155.98,
+      "end": 156.18
+    },
+    {
+      "word": "available.",
+      "start": 156.18,
+      "end": 156.74
+    },
+    {
+      "word": "Sometimes",
+      "start": 156.74,
+      "end": 156.94
+    },
+    {
+      "word": "the",
+      "start": 156.94,
+      "end": 157.24
+    },
+    {
+      "word": "tool",
+      "start": 157.24,
+      "end": 157.4
+    },
+    {
+      "word": "is",
+      "start": 157.4,
+      "end": 157.58
+    },
+    {
+      "word": "special.",
+      "start": 157.58,
+      "end": 158.1
+    },
+    {
+      "word": "Sometimes",
+      "start": 158.1,
+      "end": 158.38
+    },
+    {
+      "word": "the",
+      "start": 158.38,
+      "end": 158.66
+    },
+    {
+      "word": "manual",
+      "start": 158.66,
+      "end": 158.92
+    },
+    {
+      "word": "is",
+      "start": 158.92,
+      "end": 159.26
+    },
+    {
+      "word": "missing.",
+      "start": 159.26,
+      "end": 159.64
+    },
+    {
+      "word": "Sometimes",
+      "start": 159.64,
+      "end": 159.94
+    },
+    {
+      "word": "the",
+      "start": 159.94,
+      "end": 160.26
+    },
+    {
+      "word": "repair",
+      "start": 160.26,
+      "end": 160.5
+    },
+    {
+      "word": "costs",
+      "start": 160.5,
+      "end": 160.8
+    },
+    {
+      "word": "almost",
+      "start": 160.8,
+      "end": 161.16
+    },
+    {
+      "word": "as",
+      "start": 161.16,
+      "end": 161.5
+    },
+    {
+      "word": "much",
+      "start": 161.5,
+      "end": 161.5
+    },
+    {
+      "word": "as",
+      "start": 161.5,
+      "end": 161.64
+    },
+    {
+      "word": "buying",
+      "start": 161.64,
+      "end": 161.88
+    },
+    {
+      "word": "a",
+      "start": 161.88,
+      "end": 162.02
+    },
+    {
+      "word": "new",
+      "start": 162.02,
+      "end": 162.2
+    },
+    {
+      "word": "one.",
+      "start": 162.2,
+      "end": 162.48
+    },
+    {
+      "word": "And",
+      "start": 162.48,
+      "end": 162.62
+    },
+    {
+      "word": "sometimes",
+      "start": 162.62,
+      "end": 162.84
+    },
+    {
+      "word": "the",
+      "start": 162.84,
+      "end": 163.1
+    },
+    {
+      "word": "product",
+      "start": 163.1,
+      "end": 163.3
+    },
+    {
+      "word": "looks",
+      "start": 163.3,
+      "end": 163.58
+    },
+    {
+      "word": "at",
+      "start": 163.58,
+      "end": 163.7
+    },
+    {
+      "word": "you",
+      "start": 163.7,
+      "end": 163.9
+    },
+    {
+      "word": "and",
+      "start": 163.9,
+      "end": 163.98
+    },
+    {
+      "word": "says,",
+      "start": 163.98,
+      "end": 164.34
+    },
+    {
+      "word": "\"You",
+      "start": 164.34,
+      "end": 164.34
+    },
+    {
+      "word": "owe",
+      "start": 164.34,
+      "end": 164.46
+    },
+    {
+      "word": "me,",
+      "start": 164.46,
+      "end": 164.62
+    },
+    {
+      "word": "but",
+      "start": 164.62,
+      "end": 164.74
+    },
+    {
+      "word": "not",
+      "start": 164.74,
+      "end": 164.92
+    },
+    {
+      "word": "enough",
+      "start": 164.92,
+      "end": 165.16
+    },
+    {
+      "word": "to",
+      "start": 165.16,
+      "end": 165.34
+    },
+    {
+      "word": "open",
+      "start": 165.34,
+      "end": 165.54
+    },
+    {
+      "word": "me.",
+      "start": 165.54,
+      "end": 166.58
+    },
+    {
+      "word": "Very",
+      "start": 166.58,
+      "end": 166.58
+    },
+    {
+      "word": "healthy",
+      "start": 166.58,
+      "end": 166.86
+    },
+    {
+      "word": "relationship.",
+      "start": 166.86,
+      "end": 167.86
+    },
+    {
+      "word": "This",
+      "start": 167.86,
+      "end": 167.86
+    },
+    {
+      "word": "is",
+      "start": 167.86,
+      "end": 168.04
+    },
+    {
+      "word": "why",
+      "start": 168.04,
+      "end": 168.28
+    },
+    {
+      "word": "repairability",
+      "start": 168.28,
+      "end": 168.9
+    },
+    {
+      "word": "matters.",
+      "start": 168.9,
+      "end": 169.74
+    },
+    {
+      "word": "Repairability",
+      "start": 169.74,
+      "end": 170.32
+    },
+    {
+      "word": "just",
+      "start": 170.32,
+      "end": 170.62
+    },
+    {
+      "word": "means",
+      "start": 170.62,
+      "end": 170.84
+    },
+    {
+      "word": "how",
+      "start": 170.84,
+      "end": 171.16
+    },
+    {
+      "word": "easy",
+      "start": 171.16,
+      "end": 171.38
+    },
+    {
+      "word": "something",
+      "start": 171.38,
+      "end": 171.74
+    },
+    {
+      "word": "is",
+      "start": 171.74,
+      "end": 172
+    },
+    {
+      "word": "to",
+      "start": 172,
+      "end": 172.2
+    },
+    {
+      "word": "fix.",
+      "start": 172.2,
+      "end": 172.74
+    },
+    {
+      "word": "Can",
+      "start": 172.74,
+      "end": 172.8
+    },
+    {
+      "word": "you",
+      "start": 172.8,
+      "end": 172.96
+    },
+    {
+      "word": "replace",
+      "start": 172.96,
+      "end": 173.24
+    },
+    {
+      "word": "the",
+      "start": 173.24,
+      "end": 173.56
+    },
+    {
+      "word": "battery?",
+      "start": 173.56,
+      "end": 174.26
+    },
+    {
+      "word": "Can",
+      "start": 174.26,
+      "end": 174.26
+    },
+    {
+      "word": "you",
+      "start": 174.26,
+      "end": 174.4
+    },
+    {
+      "word": "buy",
+      "start": 174.4,
+      "end": 174.56
+    },
+    {
+      "word": "the",
+      "start": 174.56,
+      "end": 174.8
+    },
+    {
+      "word": "part?",
+      "start": 174.8,
+      "end": 175.58
+    },
+    {
+      "word": "Can",
+      "start": 175.58,
+      "end": 175.66
+    },
+    {
+      "word": "a",
+      "start": 175.66,
+      "end": 175.84
+    },
+    {
+      "word": "local",
+      "start": 175.84,
+      "end": 176.06
+    },
+    {
+      "word": "repair",
+      "start": 176.06,
+      "end": 176.44
+    },
+    {
+      "word": "shop",
+      "start": 176.44,
+      "end": 176.72
+    },
+    {
+      "word": "understand",
+      "start": 176.72,
+      "end": 177.18
+    },
+    {
+      "word": "the",
+      "start": 177.18,
+      "end": 177.34
+    },
+    {
+      "word": "product",
+      "start": 177.34,
+      "end": 177.72
+    },
+    {
+      "word": "without",
+      "start": 177.72,
+      "end": 178
+    },
+    {
+      "word": "needing",
+      "start": 178,
+      "end": 178.24
+    },
+    {
+      "word": "a",
+      "start": 178.24,
+      "end": 178.46
+    },
+    {
+      "word": "mysterious",
+      "start": 178.46,
+      "end": 178.82
+    },
+    {
+      "word": "machine",
+      "start": 178.82,
+      "end": 179.32
+    },
+    {
+      "word": "in",
+      "start": 179.32,
+      "end": 179.54
+    },
+    {
+      "word": "a",
+      "start": 179.54,
+      "end": 179.68
+    },
+    {
+      "word": "locked",
+      "start": 179.68,
+      "end": 179.9
+    },
+    {
+      "word": "room?",
+      "start": 179.9,
+      "end": 180.56
+    },
+    {
+      "word": "Some",
+      "start": 180.56,
+      "end": 180.9
+    },
+    {
+      "word": "governments",
+      "start": 180.9,
+      "end": 181.22
+    },
+    {
+      "word": "now",
+      "start": 181.22,
+      "end": 181.58
+    },
+    {
+      "word": "treat",
+      "start": 181.58,
+      "end": 181.78
+    },
+    {
+      "word": "repair",
+      "start": 181.92,
+      "end": 182.14
+    },
+    {
+      "word": "information,",
+      "start": 182.14,
+      "end": 183.02
+    },
+    {
+      "word": "spare",
+      "start": 183.02,
+      "end": 183.06
+    },
+    {
+      "word": "parts,",
+      "start": 183.06,
+      "end": 183.76
+    },
+    {
+      "word": "battery",
+      "start": 183.76,
+      "end": 183.76
+    },
+    {
+      "word": "life,",
+      "start": 183.76,
+      "end": 184.26
+    },
+    {
+      "word": "and",
+      "start": 184.26,
+      "end": 184.38
+    },
+    {
+      "word": "repairability",
+      "start": 184.44,
+      "end": 184.98
+    },
+    {
+      "word": "labels",
+      "start": 184.98,
+      "end": 185.36
+    },
+    {
+      "word": "as",
+      "start": 185.36,
+      "end": 185.64
+    },
+    {
+      "word": "things",
+      "start": 185.64,
+      "end": 185.92
+    },
+    {
+      "word": "worth",
+      "start": 185.92,
+      "end": 186.18
+    },
+    {
+      "word": "requiring",
+      "start": 186.18,
+      "end": 186.68
+    },
+    {
+      "word": "for",
+      "start": 186.68,
+      "end": 187.02
+    },
+    {
+      "word": "certain",
+      "start": 187.02,
+      "end": 187.26
+    },
+    {
+      "word": "products.",
+      "start": 187.26,
+      "end": 188.26
+    },
+    {
+      "word": "That",
+      "start": 188.26,
+      "end": 188.58
+    },
+    {
+      "word": "is",
+      "start": 188.58,
+      "end": 188.82
+    },
+    {
+      "word": "basically",
+      "start": 188.82,
+      "end": 189.3
+    },
+    {
+      "word": "society",
+      "start": 189.44,
+      "end": 189.78
+    },
+    {
+      "word": "looking",
+      "start": 189.78,
+      "end": 190.16
+    },
+    {
+      "word": "at",
+      "start": 190.16,
+      "end": 190.38
+    },
+    {
+      "word": "a",
+      "start": 190.38,
+      "end": 190.6
+    },
+    {
+      "word": "phone",
+      "start": 190.6,
+      "end": 190.82
+    },
+    {
+      "word": "and",
+      "start": 190.82,
+      "end": 191.12
+    },
+    {
+      "word": "saying,",
+      "start": 191.12,
+      "end": 191.56
+    },
+    {
+      "word": "\"Please",
+      "start": 191.56,
+      "end": 191.78
+    },
+    {
+      "word": "have",
+      "start": 191.78,
+      "end": 192.04
+    },
+    {
+      "word": "a",
+      "start": 192.04,
+      "end": 192.22
+    },
+    {
+      "word": "future.\"",
+      "start": 192.22,
+      "end": 192.58
+    },
+    {
+      "word": "When",
+      "start": 192.66,
+      "end": 192.88
+    },
+    {
+      "word": "repair",
+      "start": 192.88,
+      "end": 193.14
+    },
+    {
+      "word": "gets",
+      "start": 193.14,
+      "end": 193.5
+    },
+    {
+      "word": "slow,",
+      "start": 193.5,
+      "end": 194.34
+    },
+    {
+      "word": "confusing,",
+      "start": 194.34,
+      "end": 194.48
+    },
+    {
+      "word": "or",
+      "start": 194.48,
+      "end": 194.74
+    },
+    {
+      "word": "expensive,",
+      "start": 194.74,
+      "end": 195.5
+    },
+    {
+      "word": "replacement",
+      "start": 195.5,
+      "end": 195.7
+    },
+    {
+      "word": "starts",
+      "start": 195.7,
+      "end": 196.12
+    },
+    {
+      "word": "looking",
+      "start": 196.12,
+      "end": 196.42
+    },
+    {
+      "word": "normal,",
+      "start": 196.42,
+      "end": 197
+    },
+    {
+      "word": "not",
+      "start": 197,
+      "end": 197.3
+    },
+    {
+      "word": "because",
+      "start": 197.3,
+      "end": 197.54
+    },
+    {
+      "word": "people",
+      "start": 197.54,
+      "end": 197.86
+    },
+    {
+      "word": "love",
+      "start": 197.86,
+      "end": 198.14
+    },
+    {
+      "word": "throwing",
+      "start": 198.14,
+      "end": 198.44
+    },
+    {
+      "word": "things",
+      "start": 198.44,
+      "end": 198.76
+    },
+    {
+      "word": "away.",
+      "start": 198.76,
+      "end": 199.2
+    },
+    {
+      "word": "Most",
+      "start": 199.2,
+      "end": 199.4
+    },
+    {
+      "word": "people",
+      "start": 199.4,
+      "end": 199.66
+    },
+    {
+      "word": "do",
+      "start": 199.66,
+      "end": 199.8
+    },
+    {
+      "word": "not",
+      "start": 199.8,
+      "end": 199.98
+    },
+    {
+      "word": "wake",
+      "start": 199.98,
+      "end": 200.12
+    },
+    {
+      "word": "up",
+      "start": 200.12,
+      "end": 200.34
+    },
+    {
+      "word": "and",
+      "start": 200.34,
+      "end": 200.48
+    },
+    {
+      "word": "say,",
+      "start": 200.48,
+      "end": 200.78
+    },
+    {
+      "word": "\"Today",
+      "start": 200.78,
+      "end": 200.82
+    },
+    {
+      "word": "I",
+      "start": 200.82,
+      "end": 201.04
+    },
+    {
+      "word": "would",
+      "start": 201.04,
+      "end": 201.18
+    },
+    {
+      "word": "like",
+      "start": 201.18,
+      "end": 201.36
+    },
+    {
+      "word": "to",
+      "start": 201.36,
+      "end": 201.42
+    },
+    {
+      "word": "create",
+      "start": 201.42,
+      "end": 201.64
+    },
+    {
+      "word": "a",
+      "start": 201.64,
+      "end": 201.88
+    },
+    {
+      "word": "small",
+      "start": 201.88,
+      "end": 202.14
+    },
+    {
+      "word": "landfill",
+      "start": 202.14,
+      "end": 202.46
+    },
+    {
+      "word": "with",
+      "start": 202.46,
+      "end": 202.66
+    },
+    {
+      "word": "my",
+      "start": 202.66,
+      "end": 202.86
+    },
+    {
+      "word": "headphones.\"",
+      "start": 202.86,
+      "end": 203.94
+    },
+    {
+      "word": "They",
+      "start": 204.04,
+      "end": 204.24
+    },
+    {
+      "word": "replace",
+      "start": 204.24,
+      "end": 204.52
+    },
+    {
+      "word": "things",
+      "start": 204.52,
+      "end": 204.82
+    },
+    {
+      "word": "because",
+      "start": 204.82,
+      "end": 205.1
+    },
+    {
+      "word": "the",
+      "start": 205.1,
+      "end": 205.24
+    },
+    {
+      "word": "system",
+      "start": 205.26,
+      "end": 205.48
+    },
+    {
+      "word": "makes",
+      "start": 205.48,
+      "end": 205.76
+    },
+    {
+      "word": "replacement",
+      "start": 205.76,
+      "end": 206.06
+    },
+    {
+      "word": "feel",
+      "start": 206.06,
+      "end": 206.46
+    },
+    {
+      "word": "easier.",
+      "start": 206.46,
+      "end": 207
+    },
+    {
+      "word": "The",
+      "start": 207,
+      "end": 207.18
+    },
+    {
+      "word": "repair",
+      "start": 207.18,
+      "end": 207.4
+    },
+    {
+      "word": "quote",
+      "start": 207.4,
+      "end": 207.64
+    },
+    {
+      "word": "is",
+      "start": 207.64,
+      "end": 207.88
+    },
+    {
+      "word": "high,",
+      "start": 207.88,
+      "end": 208.16
+    },
+    {
+      "word": "the",
+      "start": 208.16,
+      "end": 208.3
+    },
+    {
+      "word": "spare",
+      "start": 208.3,
+      "end": 208.5
+    },
+    {
+      "word": "part",
+      "start": 208.5,
+      "end": 208.7
+    },
+    {
+      "word": "is",
+      "start": 208.7,
+      "end": 209
+    },
+    {
+      "word": "missing,",
+      "start": 209,
+      "end": 209.28
+    },
+    {
+      "word": "the",
+      "start": 209.28,
+      "end": 209.42
+    },
+    {
+      "word": "product",
+      "start": 209.42,
+      "end": 209.72
+    },
+    {
+      "word": "is",
+      "start": 209.72,
+      "end": 209.98
+    },
+    {
+      "word": "already",
+      "start": 209.98,
+      "end": 210.24
+    },
+    {
+      "word": "out",
+      "start": 210.24,
+      "end": 210.44
+    },
+    {
+      "word": "of",
+      "start": 210.44,
+      "end": 210.54
+    },
+    {
+      "word": "support.",
+      "start": 210.54,
+      "end": 210.94
+    },
+    {
+      "word": "The",
+      "start": 210.94,
+      "end": 211.12
+    },
+    {
+      "word": "new",
+      "start": 211.12,
+      "end": 211.26
+    },
+    {
+      "word": "one",
+      "start": 211.26,
+      "end": 211.42
+    },
+    {
+      "word": "arrives",
+      "start": 211.42,
+      "end": 211.72
+    },
+    {
+      "word": "tomorrow,",
+      "start": 211.72,
+      "end": 212.4
+    },
+    {
+      "word": "so",
+      "start": 212.4,
+      "end": 212.72
+    },
+    {
+      "word": "WIT",
+      "start": 212.72,
+      "end": 213.32
+    },
+    {
+      "word": "buys",
+      "start": 213.32,
+      "end": 213.62
+    },
+    {
+      "word": "the",
+      "start": 213.62,
+      "end": 213.9
+    },
+    {
+      "word": "product",
+      "start": 213.9,
+      "end": 214.12
+    },
+    {
+      "word": "again.",
+      "start": 214.12,
+      "end": 214.66
+    },
+    {
+      "word": "The",
+      "start": 214.66,
+      "end": 214.78
+    },
+    {
+      "word": "price",
+      "start": 214.78,
+      "end": 215.1
+    },
+    {
+      "word": "tag",
+      "start": 215.1,
+      "end": 215.48
+    },
+    {
+      "word": "smiles",
+      "start": 215.48,
+      "end": 215.9
+    },
+    {
+      "word": "again.",
+      "start": 215.9,
+      "end": 216.68
+    },
+    {
+      "word": "The",
+      "start": 216.68,
+      "end": 216.88
+    },
+    {
+      "word": "receipt",
+      "start": 216.88,
+      "end": 217.14
+    },
+    {
+      "word": "prints",
+      "start": 217.14,
+      "end": 217.5
+    },
+    {
+      "word": "again,",
+      "start": 217.5,
+      "end": 218.08
+    },
+    {
+      "word": "and",
+      "start": 218.08,
+      "end": 218.26
+    },
+    {
+      "word": "the",
+      "start": 218.26,
+      "end": 218.4
+    },
+    {
+      "word": "cheap",
+      "start": 218.4,
+      "end": 218.7
+    },
+    {
+      "word": "product",
+      "start": 218.7,
+      "end": 219.06
+    },
+    {
+      "word": "quietly",
+      "start": 219.06,
+      "end": 219.5
+    },
+    {
+      "word": "becomes",
+      "start": 219.5,
+      "end": 219.92
+    },
+    {
+      "word": "a",
+      "start": 219.92,
+      "end": 220.26
+    },
+    {
+      "word": "subscription",
+      "start": 220.26,
+      "end": 220.62
+    },
+    {
+      "word": "with",
+      "start": 220.62,
+      "end": 221.02
+    },
+    {
+      "word": "extra",
+      "start": 221.02,
+      "end": 221.42
+    },
+    {
+      "word": "steps.",
+      "start": 221.8,
+      "end": 222.12
+    },
+    {
+      "word": "So",
+      "start": 222.12,
+      "end": 222.38
+    },
+    {
+      "word": "why",
+      "start": 222.38,
+      "end": 222.38
+    },
+    {
+      "word": "do",
+      "start": 222.38,
+      "end": 222.58
+    },
+    {
+      "word": "cheap",
+      "start": 222.58,
+      "end": 222.86
+    },
+    {
+      "word": "products",
+      "start": 222.86,
+      "end": 223.14
+    },
+    {
+      "word": "keep",
+      "start": 223.14,
+      "end": 223.38
+    },
+    {
+      "word": "getting",
+      "start": 223.38,
+      "end": 223.64
+    },
+    {
+      "word": "worse?",
+      "start": 223.64,
+      "end": 224.4
+    },
+    {
+      "word": "Not",
+      "start": 224.4,
+      "end": 224.58
+    },
+    {
+      "word": "because",
+      "start": 224.58,
+      "end": 224.88
+    },
+    {
+      "word": "cheap",
+      "start": 224.88,
+      "end": 225.1
+    },
+    {
+      "word": "always",
+      "start": 225.1,
+      "end": 225.42
+    },
+    {
+      "word": "means",
+      "start": 225.42,
+      "end": 225.74
+    },
+    {
+      "word": "bad,",
+      "start": 225.74,
+      "end": 226.1
+    },
+    {
+      "word": "and",
+      "start": 226.1,
+      "end": 226.3
+    },
+    {
+      "word": "not",
+      "start": 226.3,
+      "end": 226.46
+    },
+    {
+      "word": "because",
+      "start": 226.46,
+      "end": 226.7
+    },
+    {
+      "word": "every",
+      "start": 226.7,
+      "end": 227.02
+    },
+    {
+      "word": "product",
+      "start": 227.02,
+      "end": 227.32
+    },
+    {
+      "word": "is",
+      "start": 227.32,
+      "end": 227.54
+    },
+    {
+      "word": "secretly",
+      "start": 227.54,
+      "end": 227.86
+    },
+    {
+      "word": "planning",
+      "start": 227.86,
+      "end": 228.22
+    },
+    {
+      "word": "to",
+      "start": 228.22,
+      "end": 228.4
+    },
+    {
+      "word": "betray",
+      "start": 228.4,
+      "end": 228.68
+    },
+    {
+      "word": "you.",
+      "start": 228.68,
+      "end": 229.48
+    },
+    {
+      "word": "The",
+      "start": 229.48,
+      "end": 229.6
+    },
+    {
+      "word": "better",
+      "start": 229.6,
+      "end": 229.84
+    },
+    {
+      "word": "answer",
+      "start": 229.84,
+      "end": 230.08
+    },
+    {
+      "word": "is",
+      "start": 230.08,
+      "end": 230.3
+    },
+    {
+      "word": "that",
+      "start": 230.3,
+      "end": 230.5
+    },
+    {
+      "word": "modern",
+      "start": 230.5,
+      "end": 230.68
+    },
+    {
+      "word": "products",
+      "start": 230.68,
+      "end": 231.08
+    },
+    {
+      "word": "are",
+      "start": 231.08,
+      "end": 231.28
+    },
+    {
+      "word": "under",
+      "start": 231.28,
+      "end": 231.46
+    },
+    {
+      "word": "pressure",
+      "start": 231.46,
+      "end": 231.72
+    },
+    {
+      "word": "to",
+      "start": 231.72,
+      "end": 231.94
+    },
+    {
+      "word": "win",
+      "start": 231.94,
+      "end": 232.04
+    },
+    {
+      "word": "the",
+      "start": 232.04,
+      "end": 232.22
+    },
+    {
+      "word": "price",
+      "start": 232.22,
+      "end": 232.42
+    },
+    {
+      "word": "you",
+      "start": 232.42,
+      "end": 232.62
+    },
+    {
+      "word": "see",
+      "start": 232.62,
+      "end": 232.8
+    },
+    {
+      "word": "today.",
+      "start": 232.88,
+      "end": 233.34
+    },
+    {
+      "word": "So",
+      "start": 233.34,
+      "end": 233.34
+    },
+    {
+      "word": "the",
+      "start": 233.34,
+      "end": 233.52
+    },
+    {
+      "word": "future",
+      "start": 233.52,
+      "end": 233.72
+    },
+    {
+      "word": "you",
+      "start": 233.72,
+      "end": 233.94
+    },
+    {
+      "word": "do",
+      "start": 233.94,
+      "end": 234.04
+    },
+    {
+      "word": "not",
+      "start": 234.04,
+      "end": 234.26
+    },
+    {
+      "word": "see",
+      "start": 234.26,
+      "end": 234.42
+    },
+    {
+      "word": "becomes",
+      "start": 234.42,
+      "end": 234.76
+    },
+    {
+      "word": "easier",
+      "start": 234.76,
+      "end": 235.04
+    },
+    {
+      "word": "to",
+      "start": 235.04,
+      "end": 235.28
+    },
+    {
+      "word": "cut.",
+      "start": 235.28,
+      "end": 236.04
+    },
+    {
+      "word": "The",
+      "start": 236.04,
+      "end": 236.04
+    },
+    {
+      "word": "real",
+      "start": 236.04,
+      "end": 236.3
+    },
+    {
+      "word": "price",
+      "start": 236.3,
+      "end": 236.58
+    },
+    {
+      "word": "is",
+      "start": 236.58,
+      "end": 236.76
+    },
+    {
+      "word": "not",
+      "start": 236.76,
+      "end": 236.96
+    },
+    {
+      "word": "only",
+      "start": 236.96,
+      "end": 237.12
+    },
+    {
+      "word": "what",
+      "start": 237.12,
+      "end": 237.32
+    },
+    {
+      "word": "you",
+      "start": 237.32,
+      "end": 237.44
+    },
+    {
+      "word": "pay",
+      "start": 237.44,
+      "end": 237.6
+    },
+    {
+      "word": "a",
+      "start": 237.6,
+      "end": 237.8
+    },
+    {
+      "word": "checkout.",
+      "start": 237.8,
+      "end": 238.46
+    },
+    {
+      "word": "It",
+      "start": 238.46,
+      "end": 238.46
+    },
+    {
+      "word": "is",
+      "start": 238.46,
+      "end": 238.64
+    },
+    {
+      "word": "also",
+      "start": 238.64,
+      "end": 238.92
+    },
+    {
+      "word": "how",
+      "start": 238.92,
+      "end": 239.16
+    },
+    {
+      "word": "long",
+      "start": 239.16,
+      "end": 239.32
+    },
+    {
+      "word": "the",
+      "start": 239.32,
+      "end": 239.46
+    },
+    {
+      "word": "thing",
+      "start": 239.46,
+      "end": 239.64
+    },
+    {
+      "word": "works,",
+      "start": 239.64,
+      "end": 240
+    },
+    {
+      "word": "how",
+      "start": 240,
+      "end": 240.26
+    },
+    {
+      "word": "easy",
+      "start": 240.26,
+      "end": 240.5
+    },
+    {
+      "word": "it",
+      "start": 240.5,
+      "end": 240.64
+    },
+    {
+      "word": "is",
+      "start": 240.64,
+      "end": 240.84
+    },
+    {
+      "word": "to",
+      "start": 240.84,
+      "end": 241
+    },
+    {
+      "word": "fix",
+      "start": 241,
+      "end": 241.26
+    },
+    {
+      "word": "and",
+      "start": 241.26,
+      "end": 241.44
+    },
+    {
+      "word": "how",
+      "start": 241.48,
+      "end": 241.72
+    },
+    {
+      "word": "soon",
+      "start": 241.72,
+      "end": 241.92
+    },
+    {
+      "word": "you",
+      "start": 241.92,
+      "end": 242.02
+    },
+    {
+      "word": "have",
+      "start": 242.02,
+      "end": 242.24
+    },
+    {
+      "word": "to",
+      "start": 242.24,
+      "end": 242.36
+    },
+    {
+      "word": "buy",
+      "start": 242.36,
+      "end": 242.6
+    },
+    {
+      "word": "it",
+      "start": 242.6,
+      "end": 242.74
+    },
+    {
+      "word": "again.",
+      "start": 242.74,
+      "end": 243.3
+    },
+    {
+      "word": "So",
+      "start": 243.3,
+      "end": 243.36
+    },
+    {
+      "word": "the",
+      "start": 243.38,
+      "end": 243.52
+    },
+    {
+      "word": "next",
+      "start": 243.52,
+      "end": 243.72
+    },
+    {
+      "word": "time",
+      "start": 243.72,
+      "end": 243.98
+    },
+    {
+      "word": "something",
+      "start": 243.98,
+      "end": 244.26
+    },
+    {
+      "word": "looks",
+      "start": 244.26,
+      "end": 244.54
+    },
+    {
+      "word": "like",
+      "start": 244.54,
+      "end": 244.8
+    },
+    {
+      "word": "a",
+      "start": 244.8,
+      "end": 244.88
+    },
+    {
+      "word": "bargain,",
+      "start": 244.88,
+      "end": 245.48
+    },
+    {
+      "word": "the",
+      "start": 245.48,
+      "end": 245.5
+    },
+    {
+      "word": "better",
+      "start": 245.5,
+      "end": 245.78
+    },
+    {
+      "word": "question",
+      "start": 245.78,
+      "end": 246.18
+    },
+    {
+      "word": "is",
+      "start": 246.18,
+      "end": 246.42
+    },
+    {
+      "word": "not",
+      "start": 246.42,
+      "end": 246.64
+    },
+    {
+      "word": "only,",
+      "start": 246.64,
+      "end": 247.16
+    },
+    {
+      "word": "how",
+      "start": 247.16,
+      "end": 247.36
+    },
+    {
+      "word": "much",
+      "start": 247.36,
+      "end": 247.64
+    },
+    {
+      "word": "does",
+      "start": 247.64,
+      "end": 247.88
+    },
+    {
+      "word": "this",
+      "start": 247.88,
+      "end": 248.14
+    },
+    {
+      "word": "cost.",
+      "start": 248.14,
+      "end": 248.78
+    },
+    {
+      "word": "It",
+      "start": 248.78,
+      "end": 248.94
+    },
+    {
+      "word": "is,",
+      "start": 248.94,
+      "end": 249.5
+    },
+    {
+      "word": "how",
+      "start": 249.5,
+      "end": 249.7
+    },
+    {
+      "word": "much",
+      "start": 249.7,
+      "end": 249.94
+    },
+    {
+      "word": "future",
+      "start": 249.94,
+      "end": 250.22
+    },
+    {
+      "word": "is",
+      "start": 250.22,
+      "end": 250.52
+    },
+    {
+      "word": "included.",
+      "start": 250.52,
+      "end": 254.3
+    }
+  ]
+}

@@ -13,6 +13,18 @@ This is the compact workflow source of truth for `Why It Works`.
 - One video project lives in one folder under `projects/<slug>/`.
 - Active production decisions belong in the relevant `projects/<slug>/` file before moving to the next step.
 
+## Naming & Path Rule (keep paths short)
+
+This is a Windows repo (`MAX_PATH` ≈ 260 chars). Long nested paths break `git add` with `Filename too long`. Keep paths short and never commit generated caches.
+
+- Keep filenames short and kebab-case. For asset files, prefer `<subject>-<n>.jpg` (e.g. `cardboard-boxes-1.jpg`), not long descriptive + attribution strings in the filename. Put photographer/source/license in the section `ATTRIBUTION.md`, not the filename.
+- Do not repeat the long `section-XX-kebab-section-name` more than once in a single path. Asset trees that nest the section slug inside another section slug folder (and then again inside a cache) are what overflow the limit.
+- Never commit generated/derived files. These are regenerable and must stay out of git (already in `.gitignore`):
+  - `.thumbnails/` — HyperFrames thumbnail caches (they mirror the whole asset tree under the preview folder, creating the deepest paths in the repo)
+  - `node_modules/`, `.cache/`, `*.raw`/`*.tmp` decode artifacts
+- Commit only source + deliverables: scripts/markdown, section `index.html` + `DESIGN.md`/`IMPLEMENTATION.md`, the shared `assets/` library, voiceover audio + timings, and the `output/` deliverables. Preview/cache byproducts stay ignored.
+- `git config core.longpaths true` is set on this repo as a safety net, but the real fix is short paths + ignoring caches.
+
 ## Sequential Pipeline
 
 The main video pipeline is:

@@ -1,30 +1,33 @@
 ---
 name: combine
-description: Final workflow step. Combine all completed section renders of one Why It Works video project into a single unified HyperFrames preview on localhost:1000, with one continuous combined voiceover. Use when the user asks to combine, combine sections, unify, assemble the full video, build the full render, merge sections into one video, make the whole video, or run on localhost:1000. Requires every section already rendered (one preview per script section); refuses to run if any section is missing. Reuses the existing per-section renders and assets and only assembles them — it never re-renders, edits, or creates section content, and never exports MP4/WebM. Requires one project; use the project the user names, or smart-select the unambiguous active project, otherwise ask.
+description: Project-level assembly + export step. Combine all completed section renders of one Why It Works video project into a single unified HyperFrames preview on localhost:1000 with one continuous combined voiceover, then export the final full video (MP4) to the project's output/ folder. Use when the user asks to combine, combine sections, unify, assemble the full video, build the full render, merge sections into one video, make the whole video, export the final video, or run on localhost:1000. Requires every section already rendered (one preview per script section); refuses to run if any section is missing. Reuses the existing per-section renders and assets and only assembles them — it never re-renders, edits, or creates section content. The final video is rendered through renders/ as a staging area, then moved to output/, and renders/ is removed if it is left empty. Requires one project; use the project the user names, or smart-select the unambiguous active project, otherwise ask.
 ---
 
 # Combine
 
 ## Purpose
 
-Run the final assembly step of the `Why It Works` video workflow: stitch every completed section render of ONE project into a single continuous video on `localhost:1000`, played with ONE combined voiceover instead of each section's separate audio.
+Run the project-level assembly + export step of the `Why It Works` video workflow: stitch every completed section render of ONE project into a single continuous video on `localhost:1000`, played with ONE combined voiceover instead of each section's separate audio, then export that unified video to a final MP4 in the project's `output/` folder.
 
-This skill is assembly-only. It reuses the approved per-section renders and their assets and combines them. It must not re-render, re-time, restyle, or otherwise change any section. It must not export MP4/WebM.
+This skill reuses the approved per-section renders and their assets and combines them. It must not re-render, re-time, restyle, or otherwise change any section content. The only new artifact it produces beyond the unified preview is the final exported video, which is rendered via a `renders/` staging area and then moved into `output/` (see Final Video Export).
 
 ## Pipeline Position
 
-This is the LAST skill in the main workflow and runs once per project (not per section):
+This runs once per project (not per section), after every section is reviewed and before `caption`:
 
 ```text
 ... -> render -> auto-adjust -> review   (repeat per section)
--> combine   (once, after ALL sections are done)
--> upload -> learning
+-> combine   (once, after ALL sections are done: assemble preview + export final MP4 to output/)
+-> caption -> upload -> learning
 ```
 
-Combine writes only the unified preview project:
+Combine writes:
 
 - `projects/<slug>/hyperframes/full-video/` (the unified project: `index.html`, `compositions/section-XX.html`, consolidated `assets/`, `combined-voiceover.mp3`, `package.json`, `hyperframes.json`)
+- `projects/<slug>/output/<slug>.mp4` (the final exported video — the deliverable)
 - a status note in `projects/<slug>/06-production-board.md`
+
+`renders/` is used only as a temporary staging area for the export and is removed if it ends up empty (see Final Video Export). `output/` is the single home for all final deliverables (final video, and later `caption`'s `captions.srt`, etc.).
 
 Combine does NOT create or modify: `section-previews/`, `hyperframes/review/`, `02-script.md`, `04-voiceover.md`, `05-visual-plan.md`, any section `index.html`, or any voiceover audio. It only reads them.
 
@@ -123,6 +126,25 @@ Mounted sub-compositions resolve their relative `./assets/...` and `./*.mp3` pat
 - `full-video/hyperframes.json` (standard paths block)
 - `index.html` must be the only root-level composition (sub-comps live under `compositions/`), or the linter flags `multiple_root_compositions` / duplicate audio.
 
+## Final Video Export
+
+After the unified preview is built and verified, export the full video to MP4 and place the deliverable in `output/`.
+
+Destination rule: the FINAL video lives in `projects/<slug>/output/`. `renders/` is only a temporary staging area for the render tool's raw output. Never leave the final deliverable in `renders/`.
+
+Procedure:
+
+1. Render the unified composition (`hyperframes/full-video/index.html`) to MP4 with the HyperFrames renderer, writing into the project's `renders/` folder as staging (keep `renders/` exactly as-is during the render — do not pre-clean or move anything mid-render):
+   ```bash
+   npx --yes hyperframes@<ver> render <full-video composition> --output projects/<slug>/renders/<slug>.mp4
+   ```
+   HyperFrames render needs Chrome + ffmpeg. ffmpeg/ffprobe are not on PATH here — reuse the static binaries (`%TEMP%/wiw-ffmpeg-static/...`) or `hyperframes browser` / `doctor` to provision Chrome.
+2. Only AFTER the render finishes successfully, MOVE the resulting video file from `renders/` to `projects/<slug>/output/<slug>.mp4` (create `output/` if missing). Do not copy-and-leave; move it.
+3. After the move, if `renders/` is now empty, remove the `renders/` directory. If `renders/` still contains other files (e.g. earlier section renders the user kept), leave it in place and only report what was moved.
+4. Never delete or move anything from `renders/` other than the video this run produced. If the render fails, leave `renders/` untouched and report the failure — do not move a partial file and do not delete the folder.
+
+WebM: only if the user explicitly asks; same staging → move → cleanup flow, with the `.webm` landing in `output/`.
+
 ## Workflow
 
 1. Resolve exactly one project (Input Contract).
@@ -134,10 +156,11 @@ Mounted sub-compositions resolve their relative `./assets/...` and `./*.mp3` pat
    - concatenate the section mp3s (stream copy) to `combined-voiceover.mp3`
    - write `index.html` (mounts + single combined audio + timeline registry), `package.json`, `hyperframes.json`
    - consolidate `assets/` (section image folders + fonts + all WIT poses) and the combined mp3 at the project root
-5. Verify (Self-Check below).
+5. Verify the preview (Self-Check below).
 6. Start/restart the preview server on port 1000; confirm `HTTP 200`.
-7. Write the status note in `06-production-board.md`.
-8. Respond with the Combine report. Do not continue into upload or learning.
+7. Export the final video (Final Video Export): render to `renders/` staging, move the result to `output/<slug>.mp4`, then remove `renders/` if it is left empty.
+8. Write the status note in `06-production-board.md` (note the `output/` deliverable path).
+9. Respond with the Combine report, including the exported `output/` path. Do not continue into caption, upload, or learning.
 
 ## Self-Check (must pass before handoff)
 
@@ -147,6 +170,8 @@ Mounted sub-compositions resolve their relative `./assets/...` and `./*.mp3` pat
 - parent `data-duration` == combined mp3 duration (ffprobe).
 - `hyperframes snapshot --at <one timestamp inside each section>`: every section renders at its offset with its real bases, WIT, and labels (assets resolve).
 - server answers on `localhost:1000`.
+- final video exported: `projects/<slug>/output/<slug>.mp4` exists, is non-empty, and ffprobe duration ≈ combined mp3 duration.
+- `renders/` no longer holds this run's video (it was moved, not copied); if `renders/` is empty it was removed, otherwise it was left intact.
 
 If a section renders blank in the snapshot, its assets did not resolve — confirm the consolidated `assets/` and the section's image folder are at the project root.
 
@@ -156,8 +181,9 @@ Stop and report if:
 
 - no project is named and none can be unambiguously smart-selected
 - any section is missing a rendered build or audio (assemble nothing partial without explicit approval)
-- the skill would modify a section preview, review mirror, script, voiceover, or any section content (Combine is assembly-only)
-- the user asks for an MP4/WebM export (out of scope — this skill produces a preview only; export is a separate explicit request)
+- the skill would modify a section preview, review mirror, script, voiceover, or any section content (Combine only assembles + exports; it never changes section content)
+- the final render fails (leave `renders/` untouched, do not move a partial file, do not delete the folder, report the failure)
+- moving the export would overwrite an unrelated existing file in `output/` without the user's intent, or `renders/` cleanup would remove files this run did not create
 - port 1000 is held by an unrelated process
 - lint shows blocking errors, more than one audio clip survives, or a section renders blank and the cause cannot be fixed by re-consolidating assets at the root
 

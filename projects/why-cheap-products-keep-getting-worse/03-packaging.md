@@ -24,43 +24,49 @@ Source files:
 
 ## Title Options
 
-| # | Title | Promise | Curiosity | Risk | Score |
-|---:|---|---|---|---|---:|
-| 1 | Why Cheap Products Don't Stay Cheap | Shows the hidden later cost behind low prices. | Why does a cheap thing become expensive after purchase? | Slightly less direct than the project title. | 9.5 |
-| 2 | Why Cheap Products Keep Getting Worse | Names the familiar viewer pain directly. | Why do normal products feel worse now? | Broad claim; keep `some` and `not always` in description and script. | 9.2 |
-| 3 | The Hidden Cost Of Cheap Products | Promises a system-level explanation. | What cost is hidden from the price tag? | More generic title shape. | 8.9 |
-| 4 | Why Cheap Products Have Less Future | Uses the video's central metaphor. | How can a product have less future? | Unusual phrasing may need thumbnail support. | 8.7 |
-| 5 | Why Low Prices Can Get Expensive | Clear today-versus-tomorrow contrast. | Where does the later expense come from? | Less concrete to physical products. | 8.6 |
-| 6 | Why Cheap Stuff Feels Temporary | Simple everyday English. | Why do cheap things feel short-lived? | `Stuff` is broad and casual. | 8.4 |
-| 7 | The Strange Logic Behind Cheap Products | Signals hidden incentives. | What logic makes cheaper products feel disposable? | Softer emotional hook. | 8.4 |
-| 8 | Why Good Deals Keep Breaking | Makes bargains suspicious. | Why does the good deal betray you? | Can overstate the failure claim. | 8.2 |
-| 9 | Why Cheap Things Break So Fast | Very clear durability promise. | Why does failure arrive early? | Too absolute unless qualified. | 8.1 |
-| 10 | Why Products Are Cheap Now And Expensive Later | Direct hidden-cost contrast. | What happens later? | Long and plain. | 8.0 |
-| 11 | Why Cheap Products Come With Missing Tomorrow | Strongly on-motif. | What does `missing tomorrow` mean? | Awkward but memorable. | 7.9 |
-| 12 | Why Your Cheap Chair Wasn't Really Cheap | Pays off the hook object. | What made the chair secretly expensive? | Too narrow for the full video. | 7.9 |
-| 13 | Why Products Feel Disposable Now | Captures modern-life feeling. | Why do things feel temporary? | Does not clearly name cheap prices. | 7.8 |
-| 14 | Why The Cheapest Thing Costs Twice | Strong replacement-cost idea. | Why would it cost twice? | Can sound like a fake exact claim. | 7.5 |
-| 15 | Why The Price Tag Lies Later | Funny title-personification. | How can a price tag lie? | `Lies` may sound too accusatory. | 7.4 |
+
+| #   | Title                                          | Promise                                        | Curiosity                                               | Risk                                                                 | Score |
+| --- | ---------------------------------------------- | ---------------------------------------------- | ------------------------------------------------------- | -------------------------------------------------------------------- | ----- |
+| 1   | Why Cheap Products Don't Stay Cheap            | Shows the hidden later cost behind low prices. | Why does a cheap thing become expensive after purchase? | Slightly less direct than the project title.                         | 9.5   |
+| 2   | Why Cheap Products Keep Getting Worse          | Names the familiar viewer pain directly.       | Why do normal products feel worse now?                  | Broad claim; keep `some` and `not always` in description and script. | 9.2   |
+| 3   | The Hidden Cost Of Cheap Products              | Promises a system-level explanation.           | What cost is hidden from the price tag?                 | More generic title shape.                                            | 8.9   |
+| 4   | Why Cheap Products Have Less Future            | Uses the video's central metaphor.             | How can a product have less future?                     | Unusual phrasing may need thumbnail support.                         | 8.7   |
+| 5   | Why Low Prices Can Get Expensive               | Clear today-versus-tomorrow contrast.          | Where does the later expense come from?                 | Less concrete to physical products.                                  | 8.6   |
+| 6   | Why Cheap Stuff Feels Temporary                | Simple everyday English.                       | Why do cheap things feel short-lived?                   | `Stuff` is broad and casual.                                         | 8.4   |
+| 7   | The Strange Logic Behind Cheap Products        | Signals hidden incentives.                     | What logic makes cheaper products feel disposable?      | Softer emotional hook.                                               | 8.4   |
+| 8   | Why Good Deals Keep Breaking                   | Makes bargains suspicious.                     | Why does the good deal betray you?                      | Can overstate the failure claim.                                     | 8.2   |
+| 9   | Why Cheap Things Break So Fast                 | Very clear durability promise.                 | Why does failure arrive early?                          | Too absolute unless qualified.                                       | 8.1   |
+| 10  | Why Products Are Cheap Now And Expensive Later | Direct hidden-cost contrast.                   | What happens later?                                     | Long and plain.                                                      | 8.0   |
+| 11  | Why Cheap Products Come With Missing Tomorrow  | Strongly on-motif.                             | What does `missing tomorrow` mean?                      | Awkward but memorable.                                               | 7.9   |
+| 12  | Why Your Cheap Chair Wasn't Really Cheap       | Pays off the hook object.                      | What made the chair secretly expensive?                 | Too narrow for the full video.                                       | 7.9   |
+| 13  | Why Products Feel Disposable Now               | Captures modern-life feeling.                  | Why do things feel temporary?                           | Does not clearly name cheap prices.                                  | 7.8   |
+| 14  | Why The Cheapest Thing Costs Twice             | Strong replacement-cost idea.                  | Why would it cost twice?                                | Can sound like a fake exact claim.                                   | 7.5   |
+| 15  | Why The Price Tag Lies Later                   | Funny title-personification.                   | How can a price tag lie?                                | `Lies` may sound too accusatory.                                     | 7.4   |
+
 
 ## Thumbnail Concepts
 
-| # | Concept | Dominant object | Label | WIT emotion | Visual contradiction | Prompt / Production notes |
-|---:|---|---|---|---|---|---|
-| 1 | Cheap chair, missing future | Cheap chair with a sale tag | `FUTURE?` | suspicious-betrayed | The chair looks normal, but a screw falls out and a hidden `not included` tag appears. | Best match for the script hook and title. Use bright sale colors, one object, WIT large on the right. |
-| 2 | Broken cheap charger | Cheap charger and huge price tag | `CHEAP?` | betrayed | The low price looks friendly while repair and support pieces fall away. | Strong WIT emotion and mobile read, but narrower than the full script. |
-| 3 | Two weeks later | Before/after chair | `2 WEEKS?` | shocked | One side is new and clean; the other is broken after a short time. | Very clear, but risks overclaiming speed unless framed as metaphor. |
-| 4 | Later charges receipt | Fake checkout screen and long receipt | `LATER?` | trapped | `$9 today` hides replacement, repair, and time costs later. | Strong hidden-cost angle. Generated render needs cleanup because it added unwanted variant and brand text. |
-| 5 | Missing future box | Cheap product box with broken part | `MISSING?` | suspicious-deadpan | The product box is cheap, but a key part is missing or broken. | Clean mobile read, but the label is less specific than `FUTURE?`. |
+
+| #   | Concept                     | Dominant object                       | Label      | WIT emotion         | Visual contradiction                                                                   | Prompt / Production notes                                                                                  |
+| --- | --------------------------- | ------------------------------------- | ---------- | ------------------- | -------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| 1   | Cheap chair, missing future | Cheap chair with a sale tag           | `FUTURE?`  | suspicious-betrayed | The chair looks normal, but a screw falls out and a hidden `not included` tag appears. | Best match for the script hook and title. Use bright sale colors, one object, WIT large on the right.      |
+| 2   | Broken cheap charger        | Cheap charger and huge price tag      | `CHEAP?`   | betrayed            | The low price looks friendly while repair and support pieces fall away.                | Strong WIT emotion and mobile read, but narrower than the full script.                                     |
+| 3   | Two weeks later             | Before/after chair                    | `2 WEEKS?` | shocked             | One side is new and clean; the other is broken after a short time.                     | Very clear, but risks overclaiming speed unless framed as metaphor.                                        |
+| 4   | Later charges receipt       | Fake checkout screen and long receipt | `LATER?`   | trapped             | `$9 today` hides replacement, repair, and time costs later.                            | Strong hidden-cost angle. Generated render needs cleanup because it added unwanted variant and brand text. |
+| 5   | Missing future box          | Cheap product box with broken part    | `MISSING?` | suspicious-deadpan  | The product box is cheap, but a key part is missing or broken.                         | Clean mobile read, but the label is less specific than `FUTURE?`.                                          |
+
 
 ## Thumbnail A/B Test
 
-| Variant | Style | Image / Path | Prompt ref | Label | WIT emotion | Score | Strength | Risk | Decision |
-|---|---|---|---|---|---|---:|---|---|---|
-| A | Real Object Close-Up | `assets/thumbnails/variant-a-generated.png` | Variant A | `FUTURE?` | suspicious-betrayed | 92 | Best match to hook; strong object, emotion, and visual question. | Generated price changed to `$19.99`; use layout but revise price if finalizing. | Winner |
-| B | WIT Reaction | `assets/thumbnails/variant-b-generated.png` | Variant B | `CHEAP?` | betrayed | 84 | WIT emotion reads fast and charger is relatable. | Too charger-specific; happy price tag may distract from product-quality idea. | A/B backup |
-| C | Before / After Lie | `assets/thumbnails/variant-c-generated.png` | Variant C | `2 WEEKS?` | shocked | 86 | Extremely clear before/after contrast. | `2 weeks` can feel like an unsupported exact claim. | Strong alternate if title stays broad |
-| D | Trap Interface | `assets/thumbnails/variant-d-generated.png` | Variant D | `LATER?` | trapped | 76 | Hidden receipt logic is useful for the video promise. | Generated render added unwanted `Variant D` and channel text; too cluttered for final. | Concept only, needs clean remake |
-| E | Minimal Bold Label | `assets/thumbnails/variant-e-generated.png` | Variant E | `MISSING?` | suspicious-deadpan | 80 | Very readable and simple at mobile size. | Label is vague; box does not show enough of the cheap-product system. | Backup simplification |
+
+| Variant | Style                | Image / Path                                | Prompt ref | Label      | WIT emotion         | Score | Strength                                                         | Risk                                                                                   | Decision                              |
+| ------- | -------------------- | ------------------------------------------- | ---------- | ---------- | ------------------- | ----- | ---------------------------------------------------------------- | -------------------------------------------------------------------------------------- | ------------------------------------- |
+| A       | Real Object Close-Up | `assets/thumbnails/variant-a-generated.png` | Variant A  | `FUTURE?`  | suspicious-betrayed | 92    | Best match to hook; strong object, emotion, and visual question. | Generated price changed to `$19.99`; use layout but revise price if finalizing.        | Winner                                |
+| B       | WIT Reaction         | `assets/thumbnails/variant-b-generated.png` | Variant B  | `CHEAP?`   | betrayed            | 84    | WIT emotion reads fast and charger is relatable.                 | Too charger-specific; happy price tag may distract from product-quality idea.          | A/B backup                            |
+| C       | Before / After Lie   | `assets/thumbnails/variant-c-generated.png` | Variant C  | `2 WEEKS?` | shocked             | 86    | Extremely clear before/after contrast.                           | `2 weeks` can feel like an unsupported exact claim.                                    | Strong alternate if title stays broad |
+| D       | Trap Interface       | `assets/thumbnails/variant-d-generated.png` | Variant D  | `LATER?`   | trapped             | 76    | Hidden receipt logic is useful for the video promise.            | Generated render added unwanted `Variant D` and channel text; too cluttered for final. | Concept only, needs clean remake      |
+| E       | Minimal Bold Label   | `assets/thumbnails/variant-e-generated.png` | Variant E  | `MISSING?` | suspicious-deadpan  | 80    | Very readable and simple at mobile size.                         | Label is vague; box does not show enough of the cheap-product system.                  | Backup simplification                 |
+
 
 ## Thumbnail Generation Prompts
 
@@ -162,13 +168,15 @@ Use notes:
 
 ## Title-Thumbnail Packages
 
-| Rank | Title | Thumbnail concept | Why it works | Score | Decision |
-|---:|---|---|---|---:|---|
-| 1 | Why Cheap Products Don't Stay Cheap | Variant A: Cheap chair, missing future | The title names the hidden later cost while the thumbnail shows the weird situation: a bargain chair losing its future before WIT understands the deal. | 92 | Recommended |
-| 2 | Why Cheap Products Keep Getting Worse | Variant A: Cheap chair, missing future | Clear and close to the project title. The thumbnail adds the specific `future` question so the pair is not just `cheap + worse`. | 89 | Strong alternate |
-| 3 | The Hidden Cost Of Cheap Products | Variant D: Later charges receipt | Clean hidden-cost logic, but the generated thumbnail is too cluttered and needs a remake before final use. | 85 | Usable after visual cleanup |
-| 4 | Why Cheap Products Have Less Future | Variant E: Missing future box | Most distinctive title-metaphor pair, but the idea may be slightly harder for English learners before the video explains it. | 83 | Test only |
-| 5 | Why Cheap Things Break So Fast | Variant C: Two weeks later | Very clear at a glance, but it risks promising only breakage and making the timeline too exact. | 82 | Backup |
+
+| Rank | Title                                 | Thumbnail concept                      | Why it works                                                                                                                                            | Score | Decision                    |
+| ---- | ------------------------------------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- | --------------------------- |
+| 1    | Why Cheap Products Don't Stay Cheap   | Variant A: Cheap chair, missing future | The title names the hidden later cost while the thumbnail shows the weird situation: a bargain chair losing its future before WIT understands the deal. | 92    | Recommended                 |
+| 2    | Why Cheap Products Keep Getting Worse | Variant A: Cheap chair, missing future | Clear and close to the project title. The thumbnail adds the specific `future` question so the pair is not just `cheap + worse`.                        | 89    | Strong alternate            |
+| 3    | The Hidden Cost Of Cheap Products     | Variant D: Later charges receipt       | Clean hidden-cost logic, but the generated thumbnail is too cluttered and needs a remake before final use.                                              | 85    | Usable after visual cleanup |
+| 4    | Why Cheap Products Have Less Future   | Variant E: Missing future box          | Most distinctive title-metaphor pair, but the idea may be slightly harder for English learners before the video explains it.                            | 83    | Test only                   |
+| 5    | Why Cheap Things Break So Fast        | Variant C: Two weeks later             | Very clear at a glance, but it risks promising only breakage and making the timeline too exact.                                                         | 82    | Backup                      |
+
 
 ## Recommended Package
 

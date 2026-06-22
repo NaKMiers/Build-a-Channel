@@ -55,6 +55,15 @@ Note: the preview server resolves the project id/title from the launch context. 
 - Output: **30.5 MB · H.264 1920×1080 @30fps · AAC 48kHz stereo · 265.22s** (~4:25). 7,956 frames, 6 capture workers, hardware-GPU.
 - QA: extracted frames at 8/60/110/186/240s — all render full content (incl. S4 giant-WIT app grid). 
 - NOTE: combined track mixes 0.84 (S1–S3) + 0.86 (S4–S7) delivery; re-export after unifying audio if desired. Re-render at `--quality high` for a final master if wanted.
+- MOVED (2026-06-22, `/combine` move-only): the exported video was moved from `renders/full-video.mp4` to `output/full-video.mp4`; empty `renders/` was removed. `output/` is the deliverables home.
+
+## Caption (SRT)
+
+- Status: `exported` (2026-06-22, `/caption`) → `output/captions.srt`.
+- Source audio: `hyperframes/full-video/combined-voiceover.mp3` (transcribed 265.14s → 966 Whisper words via `Xenova/whisper-tiny.en`). Word timings saved at `voiceover/combined-word-timings.json`.
+- Method: cue TEXT from `02-script.md` narration (stage directions like `[deadpan]`/`[beat]` stripped); timing from real word-level transcription; Needleman-Wunsch alignment (967 cue tokens ↔ 966 hyp tokens). 94 cues, 0 overlaps, monotonic.
+- Tail fix: whisper-tiny glitched the final words (timestamps jumped backwards near 257–261s), clamping the last cue short at 262.1s. Extended cue 94 end to 265.0s (≈ audio end) so the final line "...a calendar with Wi-Fi." holds through the end.
+- Upload: YouTube Studio → Subtitles → Add → Upload file (with timing). Tied to this combined audio; re-sync if the uploaded video's pacing changes.
 
 ## Shared Asset Rules
 

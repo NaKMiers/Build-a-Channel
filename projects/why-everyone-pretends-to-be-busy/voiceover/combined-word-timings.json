@@ -1,0 +1,4835 @@
+{
+  "text": " Here's a strange rule about modern life. The less time you have for real work, the more important you look. A full calendar allowed inbox, a phone making tiny panic sounds. People see that and think this person matters, but sit quietly and think about one hard problem and people assume you are lazy or asleep with your eyes open. So everyone gets busy, or at least everyone gets very good at looking busy. There is a difference. Now this is not a video about lazy people hiding from work. That is a different smaller problem. This is about something stranger. Modern life often rewards the look of work more than the work itself. Because real progress is hard to see, thinking looks like nothing. Solving a problem in your head looks like nothing, but busy is easy to see. You can see meetings. You can see fast typing. You can see a serious face staring at a screen, so we trust the things we can see. And we quietly ignore the things we cannot, which is a problem because the real work usually hides in the part you cannot see. The first reason is simple. Busy became a status symbol. When someone says, \"I'm so busy,\" it does not only mean they have a lot to do, it can also mean, please notice that I am important. This is why people say it even when nobody asked. You say, \"How are you?\" they say, \"busy,\" which is not actually an emotion, but we let it go because everyone is tired, and it is not the same everywhere. In some places, the proud thing is long holidays and free afternoons. In others, the proud thing is having no free time at all. Same planet opposite brag, busy sounds responsible, busy sounds needed, busy sounds like people are lined up waiting for you and being needed feels like being valuable. So people fill fill the day sometimes with real work sometimes with calls updates and meetings about why the last meeting did not finish anything. At some point the job stops being the work. The job becomes proving you are near the work. The second reason is that our tools invented emergencies. Email was supposed to make talking easier. Then chat apps made email faster than task apps organized the chat about the email. Then calendar apps booked meetings about why the task app is confusing, so now the workday is basically five apps interrupting each other. Everything has a red dot, everything has a number, everything says urgent because apparently please ignore this until next week is bad design. So your brain starts treating every little notification like a real emergency. A message lands you reply, another lands you reply again. Someone sends a thumbs up and somehow your brain files this under progress. Meanwhile, the one task that actually matters is still sitting there untouched, quietly going bad, like a sad vegetable at the back of the fridge. The third reason is that visible work is just easier to reward. Reply quickly and people see it, join every meeting and people see it. Send an update that says just circling back and people definitely see it. But spend two hours thinking hard and the result can look like nothing happened. You might have solved the real problem. From the outside, you were a person staring at a wall, possibly blinking. There is even a survey where most managers admitted they could not really tell who on their team was being productive. So they reward what they can see and what they can see is motion. So people start performing motion. They reply fast, they join the call, they move a task from one column to another column and they write updates about future updates. This has a name, productivity theater. Same as normal theater, except the tickets are paid in stress. And the star of the show is a spreadsheet. The fourth reason is that I'm busy is genuinely useful. It is a shield. Sometimes it means I cannot take on more. Sometimes it means I do not want to make this decision. Sometimes it means please stop asking me questions. And sometimes it means I have no idea what I am doing, but I need to look calm until the answer shows up. This is not always dishonest. A lot of people really are overloaded. The shield is real. The problem is that busy slowly becomes the only acceptable way to say no. You cannot always say I need quiet time to think.\" That sounds suspiciously relaxed. You cannot always say this meeting could have been a message. That sounds dangerous. So people just say \"I'm busy\" and everyone nods. Because everyone else is also busy or pretending or both. So why does everyone pretend to be busy? Because modern life keeps confusing activity with value. It rewards the person who looks available fast and overloaded, even when the real work needs the opposite. Focus, quiet time, the problem was never that people are lazy. The problem is that looking busy became safer than looking thoughtful. And once a whole culture rewards busy, everyone joins in. Students highlight notes instead of learning them. Workers answer messages instead of solving the problem. Creators organize their ideas instead of making the thing. And we all say we are busy because saying I am protecting my attention from pointless noise sounds far too honest for Tuesday. So maybe the goal is not to be less busy. The goal is to be more honest about what actually matters because if everything is urgent nothing is, and if your whole day is fake emergencies, congratulations, you are not lazy. You are just trapped in a calendar with Wi-Fi.",
+  "words": [
+    {
+      "word": "Here's",
+      "start": 0,
+      "end": 0.38
+    },
+    {
+      "word": "a",
+      "start": 0.38,
+      "end": 0.58
+    },
+    {
+      "word": "strange",
+      "start": 0.58,
+      "end": 0.86
+    },
+    {
+      "word": "rule",
+      "start": 0.86,
+      "end": 1.12
+    },
+    {
+      "word": "about",
+      "start": 1.12,
+      "end": 1.34
+    },
+    {
+      "word": "modern",
+      "start": 1.34,
+      "end": 1.64
+    },
+    {
+      "word": "life.",
+      "start": 1.64,
+      "end": 2.32
+    },
+    {
+      "word": "The",
+      "start": 2.32,
+      "end": 2.5
+    },
+    {
+      "word": "less",
+      "start": 2.5,
+      "end": 2.72
+    },
+    {
+      "word": "time",
+      "start": 2.72,
+      "end": 2.96
+    },
+    {
+      "word": "you",
+      "start": 2.96,
+      "end": 3.08
+    },
+    {
+      "word": "have",
+      "start": 3.08,
+      "end": 3.3
+    },
+    {
+      "word": "for",
+      "start": 3.3,
+      "end": 3.48
+    },
+    {
+      "word": "real",
+      "start": 3.48,
+      "end": 3.72
+    },
+    {
+      "word": "work,",
+      "start": 3.72,
+      "end": 3.96
+    },
+    {
+      "word": "the",
+      "start": 3.96,
+      "end": 4.1
+    },
+    {
+      "word": "more",
+      "start": 4.1,
+      "end": 4.3
+    },
+    {
+      "word": "important",
+      "start": 4.3,
+      "end": 4.6
+    },
+    {
+      "word": "you",
+      "start": 4.6,
+      "end": 4.76
+    },
+    {
+      "word": "look.",
+      "start": 4.76,
+      "end": 5.28
+    },
+    {
+      "word": "A",
+      "start": 5.28,
+      "end": 5.48
+    },
+    {
+      "word": "full",
+      "start": 5.48,
+      "end": 5.76
+    },
+    {
+      "word": "calendar",
+      "start": 5.76,
+      "end": 6.08
+    },
+    {
+      "word": "allowed",
+      "start": 6.08,
+      "end": 6.64
+    },
+    {
+      "word": "inbox,",
+      "start": 6.64,
+      "end": 7.18
+    },
+    {
+      "word": "a",
+      "start": 7.18,
+      "end": 7.32
+    },
+    {
+      "word": "phone",
+      "start": 7.32,
+      "end": 7.46
+    },
+    {
+      "word": "making",
+      "start": 7.46,
+      "end": 7.78
+    },
+    {
+      "word": "tiny",
+      "start": 7.78,
+      "end": 8.14
+    },
+    {
+      "word": "panic",
+      "start": 8.14,
+      "end": 8.46
+    },
+    {
+      "word": "sounds.",
+      "start": 8.46,
+      "end": 9.06
+    },
+    {
+      "word": "People",
+      "start": 9.06,
+      "end": 9.36
+    },
+    {
+      "word": "see",
+      "start": 9.36,
+      "end": 9.66
+    },
+    {
+      "word": "that",
+      "start": 9.66,
+      "end": 9.84
+    },
+    {
+      "word": "and",
+      "start": 9.84,
+      "end": 9.94
+    },
+    {
+      "word": "think",
+      "start": 9.94,
+      "end": 10.1
+    },
+    {
+      "word": "this",
+      "start": 10.1,
+      "end": 10.38
+    },
+    {
+      "word": "person",
+      "start": 10.38,
+      "end": 10.64
+    },
+    {
+      "word": "matters,",
+      "start": 10.64,
+      "end": 11
+    },
+    {
+      "word": "but",
+      "start": 11,
+      "end": 11.3
+    },
+    {
+      "word": "sit",
+      "start": 11.3,
+      "end": 11.48
+    },
+    {
+      "word": "quietly",
+      "start": 11.48,
+      "end": 11.78
+    },
+    {
+      "word": "and",
+      "start": 11.78,
+      "end": 11.98
+    },
+    {
+      "word": "think",
+      "start": 11.98,
+      "end": 12.16
+    },
+    {
+      "word": "about",
+      "start": 12.16,
+      "end": 12.4
+    },
+    {
+      "word": "one",
+      "start": 12.4,
+      "end": 12.6
+    },
+    {
+      "word": "hard",
+      "start": 12.6,
+      "end": 12.9
+    },
+    {
+      "word": "problem",
+      "start": 12.9,
+      "end": 13.22
+    },
+    {
+      "word": "and",
+      "start": 13.22,
+      "end": 13.46
+    },
+    {
+      "word": "people",
+      "start": 13.46,
+      "end": 13.72
+    },
+    {
+      "word": "assume",
+      "start": 13.72,
+      "end": 14
+    },
+    {
+      "word": "you",
+      "start": 14,
+      "end": 14.14
+    },
+    {
+      "word": "are",
+      "start": 14.14,
+      "end": 14.42
+    },
+    {
+      "word": "lazy",
+      "start": 14.42,
+      "end": 14.6
+    },
+    {
+      "word": "or",
+      "start": 14.6,
+      "end": 14.92
+    },
+    {
+      "word": "asleep",
+      "start": 14.92,
+      "end": 15.16
+    },
+    {
+      "word": "with",
+      "start": 15.16,
+      "end": 15.34
+    },
+    {
+      "word": "your",
+      "start": 15.34,
+      "end": 15.46
+    },
+    {
+      "word": "eyes",
+      "start": 15.46,
+      "end": 15.72
+    },
+    {
+      "word": "open.",
+      "start": 15.72,
+      "end": 16.04
+    },
+    {
+      "word": "So",
+      "start": 16.04,
+      "end": 16.34
+    },
+    {
+      "word": "everyone",
+      "start": 16.34,
+      "end": 16.6
+    },
+    {
+      "word": "gets",
+      "start": 16.6,
+      "end": 16.98
+    },
+    {
+      "word": "busy,",
+      "start": 16.98,
+      "end": 17.26
+    },
+    {
+      "word": "or",
+      "start": 17.26,
+      "end": 17.52
+    },
+    {
+      "word": "at",
+      "start": 17.52,
+      "end": 17.64
+    },
+    {
+      "word": "least",
+      "start": 17.64,
+      "end": 17.88
+    },
+    {
+      "word": "everyone",
+      "start": 17.88,
+      "end": 18.2
+    },
+    {
+      "word": "gets",
+      "start": 18.2,
+      "end": 18.56
+    },
+    {
+      "word": "very",
+      "start": 18.56,
+      "end": 18.84
+    },
+    {
+      "word": "good",
+      "start": 18.84,
+      "end": 19
+    },
+    {
+      "word": "at",
+      "start": 19,
+      "end": 19.14
+    },
+    {
+      "word": "looking",
+      "start": 19.14,
+      "end": 19.42
+    },
+    {
+      "word": "busy.",
+      "start": 19.42,
+      "end": 19.88
+    },
+    {
+      "word": "There",
+      "start": 19.98,
+      "end": 20.28
+    },
+    {
+      "word": "is",
+      "start": 20.28,
+      "end": 20.46
+    },
+    {
+      "word": "a",
+      "start": 20.46,
+      "end": 20.66
+    },
+    {
+      "word": "difference.",
+      "start": 20.66,
+      "end": 21.12
+    },
+    {
+      "word": "Now",
+      "start": 21.12,
+      "end": 21.4
+    },
+    {
+      "word": "this",
+      "start": 21.4,
+      "end": 21.64
+    },
+    {
+      "word": "is",
+      "start": 21.64,
+      "end": 21.78
+    },
+    {
+      "word": "not",
+      "start": 21.78,
+      "end": 21.96
+    },
+    {
+      "word": "a",
+      "start": 21.96,
+      "end": 22.1
+    },
+    {
+      "word": "video",
+      "start": 22.1,
+      "end": 22.32
+    },
+    {
+      "word": "about",
+      "start": 22.32,
+      "end": 22.62
+    },
+    {
+      "word": "lazy",
+      "start": 22.62,
+      "end": 22.86
+    },
+    {
+      "word": "people",
+      "start": 22.86,
+      "end": 23.32
+    },
+    {
+      "word": "hiding",
+      "start": 23.32,
+      "end": 23.58
+    },
+    {
+      "word": "from",
+      "start": 23.58,
+      "end": 23.92
+    },
+    {
+      "word": "work.",
+      "start": 23.92,
+      "end": 24.3
+    },
+    {
+      "word": "That",
+      "start": 24.3,
+      "end": 24.66
+    },
+    {
+      "word": "is",
+      "start": 24.66,
+      "end": 24.84
+    },
+    {
+      "word": "a",
+      "start": 24.84,
+      "end": 24.98
+    },
+    {
+      "word": "different",
+      "start": 24.98,
+      "end": 25.2
+    },
+    {
+      "word": "smaller",
+      "start": 25.2,
+      "end": 25.58
+    },
+    {
+      "word": "problem.",
+      "start": 25.58,
+      "end": 26.06
+    },
+    {
+      "word": "This",
+      "start": 26.06,
+      "end": 26.32
+    },
+    {
+      "word": "is",
+      "start": 26.3,
+      "end": 26.46
+    },
+    {
+      "word": "about",
+      "start": 26.46,
+      "end": 26.66
+    },
+    {
+      "word": "something",
+      "start": 26.66,
+      "end": 27
+    },
+    {
+      "word": "stranger.",
+      "start": 27,
+      "end": 27.76
+    },
+    {
+      "word": "Modern",
+      "start": 27.76,
+      "end": 27.76
+    },
+    {
+      "word": "life",
+      "start": 27.76,
+      "end": 28.12
+    },
+    {
+      "word": "often",
+      "start": 28.12,
+      "end": 28.4
+    },
+    {
+      "word": "rewards",
+      "start": 28.4,
+      "end": 28.66
+    },
+    {
+      "word": "the",
+      "start": 28.66,
+      "end": 28.86
+    },
+    {
+      "word": "look",
+      "start": 28.86,
+      "end": 28.98
+    },
+    {
+      "word": "of",
+      "start": 28.98,
+      "end": 29.14
+    },
+    {
+      "word": "work",
+      "start": 29.14,
+      "end": 29.36
+    },
+    {
+      "word": "more",
+      "start": 29.36,
+      "end": 29.54
+    },
+    {
+      "word": "than",
+      "start": 29.54,
+      "end": 29.64
+    },
+    {
+      "word": "the",
+      "start": 29.64,
+      "end": 29.78
+    },
+    {
+      "word": "work",
+      "start": 29.78,
+      "end": 29.9
+    },
+    {
+      "word": "itself.",
+      "start": 29.9,
+      "end": 30.82
+    },
+    {
+      "word": "Because",
+      "start": 30.82,
+      "end": 31.1
+    },
+    {
+      "word": "real",
+      "start": 31.1,
+      "end": 31.36
+    },
+    {
+      "word": "progress",
+      "start": 31.36,
+      "end": 31.68
+    },
+    {
+      "word": "is",
+      "start": 31.68,
+      "end": 31.92
+    },
+    {
+      "word": "hard",
+      "start": 31.92,
+      "end": 32.08
+    },
+    {
+      "word": "to",
+      "start": 32.08,
+      "end": 32.26
+    },
+    {
+      "word": "see,",
+      "start": 32.26,
+      "end": 32.62
+    },
+    {
+      "word": "thinking",
+      "start": 32.62,
+      "end": 32.64
+    },
+    {
+      "word": "looks",
+      "start": 32.64,
+      "end": 32.92
+    },
+    {
+      "word": "like",
+      "start": 32.92,
+      "end": 33.16
+    },
+    {
+      "word": "nothing.",
+      "start": 33.16,
+      "end": 33.56
+    },
+    {
+      "word": "Solving",
+      "start": 33.56,
+      "end": 33.84
+    },
+    {
+      "word": "a",
+      "start": 33.84,
+      "end": 34.04
+    },
+    {
+      "word": "problem",
+      "start": 34.04,
+      "end": 34.26
+    },
+    {
+      "word": "in",
+      "start": 34.26,
+      "end": 34.46
+    },
+    {
+      "word": "your",
+      "start": 34.46,
+      "end": 34.6
+    },
+    {
+      "word": "head",
+      "start": 34.6,
+      "end": 34.74
+    },
+    {
+      "word": "looks",
+      "start": 34.74,
+      "end": 34.92
+    },
+    {
+      "word": "like",
+      "start": 34.92,
+      "end": 35.14
+    },
+    {
+      "word": "nothing,",
+      "start": 35.14,
+      "end": 35.4
+    },
+    {
+      "word": "but",
+      "start": 35.4,
+      "end": 35.66
+    },
+    {
+      "word": "busy",
+      "start": 35.66,
+      "end": 35.86
+    },
+    {
+      "word": "is",
+      "start": 35.86,
+      "end": 36.12
+    },
+    {
+      "word": "easy",
+      "start": 36.12,
+      "end": 36.3
+    },
+    {
+      "word": "to",
+      "start": 36.3,
+      "end": 36.5
+    },
+    {
+      "word": "see.",
+      "start": 36.5,
+      "end": 36.82
+    },
+    {
+      "word": "You",
+      "start": 36.82,
+      "end": 36.82
+    },
+    {
+      "word": "can",
+      "start": 36.82,
+      "end": 37
+    },
+    {
+      "word": "see",
+      "start": 37,
+      "end": 37.14
+    },
+    {
+      "word": "meetings.",
+      "start": 37.14,
+      "end": 37.68
+    },
+    {
+      "word": "You",
+      "start": 37.68,
+      "end": 37.74
+    },
+    {
+      "word": "can",
+      "start": 37.74,
+      "end": 37.88
+    },
+    {
+      "word": "see",
+      "start": 37.88,
+      "end": 38.02
+    },
+    {
+      "word": "fast",
+      "start": 38.02,
+      "end": 38.3
+    },
+    {
+      "word": "typing.",
+      "start": 38.3,
+      "end": 38.92
+    },
+    {
+      "word": "You",
+      "start": 38.92,
+      "end": 38.94
+    },
+    {
+      "word": "can",
+      "start": 38.94,
+      "end": 39.16
+    },
+    {
+      "word": "see",
+      "start": 39.16,
+      "end": 39.3
+    },
+    {
+      "word": "a",
+      "start": 39.3,
+      "end": 39.44
+    },
+    {
+      "word": "serious",
+      "start": 39.44,
+      "end": 39.72
+    },
+    {
+      "word": "face",
+      "start": 39.72,
+      "end": 40.1
+    },
+    {
+      "word": "staring",
+      "start": 40.1,
+      "end": 40.32
+    },
+    {
+      "word": "at",
+      "start": 40.32,
+      "end": 40.58
+    },
+    {
+      "word": "a",
+      "start": 40.58,
+      "end": 40.66
+    },
+    {
+      "word": "screen,",
+      "start": 40.66,
+      "end": 41.1
+    },
+    {
+      "word": "so",
+      "start": 41.1,
+      "end": 41.1
+    },
+    {
+      "word": "we",
+      "start": 41.1,
+      "end": 41.26
+    },
+    {
+      "word": "trust",
+      "start": 41.26,
+      "end": 41.5
+    },
+    {
+      "word": "the",
+      "start": 41.5,
+      "end": 41.66
+    },
+    {
+      "word": "things",
+      "start": 41.66,
+      "end": 41.84
+    },
+    {
+      "word": "we",
+      "start": 41.84,
+      "end": 42.04
+    },
+    {
+      "word": "can",
+      "start": 42.04,
+      "end": 42.26
+    },
+    {
+      "word": "see.",
+      "start": 42.26,
+      "end": 42.54
+    },
+    {
+      "word": "And",
+      "start": 42.54,
+      "end": 42.76
+    },
+    {
+      "word": "we",
+      "start": 42.76,
+      "end": 43
+    },
+    {
+      "word": "quietly",
+      "start": 43,
+      "end": 43.32
+    },
+    {
+      "word": "ignore",
+      "start": 43.32,
+      "end": 43.8
+    },
+    {
+      "word": "the",
+      "start": 43.8,
+      "end": 44.06
+    },
+    {
+      "word": "things",
+      "start": 44.06,
+      "end": 44.32
+    },
+    {
+      "word": "we",
+      "start": 44.32,
+      "end": 44.54
+    },
+    {
+      "word": "cannot,",
+      "start": 44.54,
+      "end": 45.46
+    },
+    {
+      "word": "which",
+      "start": 45.46,
+      "end": 45.78
+    },
+    {
+      "word": "is",
+      "start": 45.78,
+      "end": 45.98
+    },
+    {
+      "word": "a",
+      "start": 45.98,
+      "end": 46.12
+    },
+    {
+      "word": "problem",
+      "start": 46.12,
+      "end": 46.48
+    },
+    {
+      "word": "because",
+      "start": 46.48,
+      "end": 46.9
+    },
+    {
+      "word": "the",
+      "start": 46.9,
+      "end": 47.12
+    },
+    {
+      "word": "real",
+      "start": 47.12,
+      "end": 47.44
+    },
+    {
+      "word": "work",
+      "start": 47.44,
+      "end": 47.74
+    },
+    {
+      "word": "usually",
+      "start": 47.74,
+      "end": 48.2
+    },
+    {
+      "word": "hides",
+      "start": 48.2,
+      "end": 48.52
+    },
+    {
+      "word": "in",
+      "start": 48.52,
+      "end": 48.7
+    },
+    {
+      "word": "the",
+      "start": 48.7,
+      "end": 48.84
+    },
+    {
+      "word": "part",
+      "start": 48.84,
+      "end": 49.06
+    },
+    {
+      "word": "you",
+      "start": 49.06,
+      "end": 49.24
+    },
+    {
+      "word": "cannot",
+      "start": 49.24,
+      "end": 49.58
+    },
+    {
+      "word": "see.",
+      "start": 49.58,
+      "end": 50.18
+    },
+    {
+      "word": "The",
+      "start": 50.18,
+      "end": 50.3
+    },
+    {
+      "word": "first",
+      "start": 50.3,
+      "end": 50.62
+    },
+    {
+      "word": "reason",
+      "start": 50.62,
+      "end": 50.88
+    },
+    {
+      "word": "is",
+      "start": 50.88,
+      "end": 51.14
+    },
+    {
+      "word": "simple.",
+      "start": 51.14,
+      "end": 51.56
+    },
+    {
+      "word": "Busy",
+      "start": 51.56,
+      "end": 51.84
+    },
+    {
+      "word": "became",
+      "start": 51.84,
+      "end": 52.06
+    },
+    {
+      "word": "a",
+      "start": 52.06,
+      "end": 52.28
+    },
+    {
+      "word": "status",
+      "start": 52.28,
+      "end": 52.64
+    },
+    {
+      "word": "symbol.",
+      "start": 52.64,
+      "end": 53
+    },
+    {
+      "word": "When",
+      "start": 53,
+      "end": 53.28
+    },
+    {
+      "word": "someone",
+      "start": 53.28,
+      "end": 53.5
+    },
+    {
+      "word": "says,",
+      "start": 53.5,
+      "end": 53.9
+    },
+    {
+      "word": "\"I'm",
+      "start": 53.9,
+      "end": 53.94
+    },
+    {
+      "word": "so",
+      "start": 53.94,
+      "end": 54.18
+    },
+    {
+      "word": "busy,\"",
+      "start": 54.18,
+      "end": 54.4
+    },
+    {
+      "word": "it",
+      "start": 54.4,
+      "end": 54.62
+    },
+    {
+      "word": "does",
+      "start": 54.62,
+      "end": 54.76
+    },
+    {
+      "word": "not",
+      "start": 54.76,
+      "end": 54.92
+    },
+    {
+      "word": "only",
+      "start": 54.92,
+      "end": 55.12
+    },
+    {
+      "word": "mean",
+      "start": 55.12,
+      "end": 55.3
+    },
+    {
+      "word": "they",
+      "start": 55.3,
+      "end": 55.42
+    },
+    {
+      "word": "have",
+      "start": 55.42,
+      "end": 55.6
+    },
+    {
+      "word": "a",
+      "start": 55.6,
+      "end": 55.7
+    },
+    {
+      "word": "lot",
+      "start": 55.7,
+      "end": 55.88
+    },
+    {
+      "word": "to",
+      "start": 55.88,
+      "end": 55.98
+    },
+    {
+      "word": "do,",
+      "start": 55.98,
+      "end": 56.2
+    },
+    {
+      "word": "it",
+      "start": 56.2,
+      "end": 56.34
+    },
+    {
+      "word": "can",
+      "start": 56.34,
+      "end": 56.46
+    },
+    {
+      "word": "also",
+      "start": 56.46,
+      "end": 56.68
+    },
+    {
+      "word": "mean,",
+      "start": 56.68,
+      "end": 57.18
+    },
+    {
+      "word": "please",
+      "start": 57.18,
+      "end": 57.18
+    },
+    {
+      "word": "notice",
+      "start": 57.18,
+      "end": 57.48
+    },
+    {
+      "word": "that",
+      "start": 57.48,
+      "end": 57.68
+    },
+    {
+      "word": "I",
+      "start": 57.68,
+      "end": 57.78
+    },
+    {
+      "word": "am",
+      "start": 57.78,
+      "end": 57.96
+    },
+    {
+      "word": "important.",
+      "start": 57.96,
+      "end": 58.5
+    },
+    {
+      "word": "This",
+      "start": 58.5,
+      "end": 58.82
+    },
+    {
+      "word": "is",
+      "start": 58.82,
+      "end": 59
+    },
+    {
+      "word": "why",
+      "start": 59,
+      "end": 59.16
+    },
+    {
+      "word": "people",
+      "start": 59.16,
+      "end": 59.44
+    },
+    {
+      "word": "say",
+      "start": 59.44,
+      "end": 59.62
+    },
+    {
+      "word": "it",
+      "start": 59.62,
+      "end": 59.8
+    },
+    {
+      "word": "even",
+      "start": 59.8,
+      "end": 59.9
+    },
+    {
+      "word": "when",
+      "start": 59.9,
+      "end": 60.02
+    },
+    {
+      "word": "nobody",
+      "start": 60.02,
+      "end": 60.3
+    },
+    {
+      "word": "asked.",
+      "start": 60.3,
+      "end": 60.82
+    },
+    {
+      "word": "You",
+      "start": 60.82,
+      "end": 61.08
+    },
+    {
+      "word": "say,",
+      "start": 61.08,
+      "end": 61.46
+    },
+    {
+      "word": "\"How",
+      "start": 61.46,
+      "end": 61.46
+    },
+    {
+      "word": "are",
+      "start": 61.46,
+      "end": 61.6
+    },
+    {
+      "word": "you?\"",
+      "start": 61.6,
+      "end": 61.9
+    },
+    {
+      "word": "they",
+      "start": 61.9,
+      "end": 61.9
+    },
+    {
+      "word": "say,",
+      "start": 61.9,
+      "end": 62.2
+    },
+    {
+      "word": "\"busy,\"",
+      "start": 62.2,
+      "end": 62.42
+    },
+    {
+      "word": "which",
+      "start": 62.42,
+      "end": 62.64
+    },
+    {
+      "word": "is",
+      "start": 62.64,
+      "end": 62.78
+    },
+    {
+      "word": "not",
+      "start": 62.78,
+      "end": 63.02
+    },
+    {
+      "word": "actually",
+      "start": 63.02,
+      "end": 63.32
+    },
+    {
+      "word": "an",
+      "start": 63.32,
+      "end": 63.44
+    },
+    {
+      "word": "emotion,",
+      "start": 63.44,
+      "end": 63.82
+    },
+    {
+      "word": "but",
+      "start": 63.82,
+      "end": 64.02
+    },
+    {
+      "word": "we",
+      "start": 64.02,
+      "end": 64.14
+    },
+    {
+      "word": "let",
+      "start": 64.14,
+      "end": 64.22
+    },
+    {
+      "word": "it",
+      "start": 64.22,
+      "end": 64.36
+    },
+    {
+      "word": "go",
+      "start": 64.36,
+      "end": 64.56
+    },
+    {
+      "word": "because",
+      "start": 64.56,
+      "end": 64.86
+    },
+    {
+      "word": "everyone",
+      "start": 64.86,
+      "end": 65.12
+    },
+    {
+      "word": "is",
+      "start": 65.12,
+      "end": 65.42
+    },
+    {
+      "word": "tired,",
+      "start": 65.42,
+      "end": 65.88
+    },
+    {
+      "word": "and",
+      "start": 65.88,
+      "end": 66.12
+    },
+    {
+      "word": "it",
+      "start": 66.12,
+      "end": 66.2
+    },
+    {
+      "word": "is",
+      "start": 66.2,
+      "end": 66.34
+    },
+    {
+      "word": "not",
+      "start": 66.34,
+      "end": 66.56
+    },
+    {
+      "word": "the",
+      "start": 66.56,
+      "end": 66.66
+    },
+    {
+      "word": "same",
+      "start": 66.66,
+      "end": 66.86
+    },
+    {
+      "word": "everywhere.",
+      "start": 66.86,
+      "end": 67.66
+    },
+    {
+      "word": "In",
+      "start": 67.66,
+      "end": 67.66
+    },
+    {
+      "word": "some",
+      "start": 67.66,
+      "end": 67.94
+    },
+    {
+      "word": "places,",
+      "start": 68.04,
+      "end": 68.38
+    },
+    {
+      "word": "the",
+      "start": 68.38,
+      "end": 68.48
+    },
+    {
+      "word": "proud",
+      "start": 68.48,
+      "end": 68.7
+    },
+    {
+      "word": "thing",
+      "start": 68.7,
+      "end": 68.9
+    },
+    {
+      "word": "is",
+      "start": 68.9,
+      "end": 69.14
+    },
+    {
+      "word": "long",
+      "start": 69.14,
+      "end": 69.48
+    },
+    {
+      "word": "holidays",
+      "start": 69.48,
+      "end": 69.86
+    },
+    {
+      "word": "and",
+      "start": 69.86,
+      "end": 70.24
+    },
+    {
+      "word": "free",
+      "start": 70.24,
+      "end": 70.44
+    },
+    {
+      "word": "afternoons.",
+      "start": 70.44,
+      "end": 71.38
+    },
+    {
+      "word": "In",
+      "start": 71.38,
+      "end": 71.38
+    },
+    {
+      "word": "others,",
+      "start": 71.38,
+      "end": 71.76
+    },
+    {
+      "word": "the",
+      "start": 71.76,
+      "end": 71.88
+    },
+    {
+      "word": "proud",
+      "start": 71.88,
+      "end": 72.14
+    },
+    {
+      "word": "thing",
+      "start": 72.16,
+      "end": 72.32
+    },
+    {
+      "word": "is",
+      "start": 72.32,
+      "end": 72.48
+    },
+    {
+      "word": "having",
+      "start": 72.48,
+      "end": 72.72
+    },
+    {
+      "word": "no",
+      "start": 72.72,
+      "end": 73
+    },
+    {
+      "word": "free",
+      "start": 73,
+      "end": 73.2
+    },
+    {
+      "word": "time",
+      "start": 73.2,
+      "end": 73.44
+    },
+    {
+      "word": "at",
+      "start": 73.44,
+      "end": 73.62
+    },
+    {
+      "word": "all.",
+      "start": 73.62,
+      "end": 74.46
+    },
+    {
+      "word": "Same",
+      "start": 74.46,
+      "end": 74.76
+    },
+    {
+      "word": "planet",
+      "start": 74.76,
+      "end": 75.1
+    },
+    {
+      "word": "opposite",
+      "start": 75.1,
+      "end": 75.54
+    },
+    {
+      "word": "brag,",
+      "start": 75.54,
+      "end": 76.22
+    },
+    {
+      "word": "busy",
+      "start": 76.22,
+      "end": 76.22
+    },
+    {
+      "word": "sounds",
+      "start": 76.22,
+      "end": 76.5
+    },
+    {
+      "word": "responsible,",
+      "start": 76.5,
+      "end": 77.28
+    },
+    {
+      "word": "busy",
+      "start": 77.48,
+      "end": 77.48
+    },
+    {
+      "word": "sounds",
+      "start": 77.48,
+      "end": 77.82
+    },
+    {
+      "word": "needed,",
+      "start": 77.82,
+      "end": 78.52
+    },
+    {
+      "word": "busy",
+      "start": 78.52,
+      "end": 78.52
+    },
+    {
+      "word": "sounds",
+      "start": 78.52,
+      "end": 78.78
+    },
+    {
+      "word": "like",
+      "start": 78.78,
+      "end": 79.02
+    },
+    {
+      "word": "people",
+      "start": 79.02,
+      "end": 79.28
+    },
+    {
+      "word": "are",
+      "start": 79.28,
+      "end": 79.54
+    },
+    {
+      "word": "lined",
+      "start": 79.54,
+      "end": 79.72
+    },
+    {
+      "word": "up",
+      "start": 79.72,
+      "end": 79.92
+    },
+    {
+      "word": "waiting",
+      "start": 79.92,
+      "end": 80.14
+    },
+    {
+      "word": "for",
+      "start": 80.14,
+      "end": 80.42
+    },
+    {
+      "word": "you",
+      "start": 80.42,
+      "end": 80.68
+    },
+    {
+      "word": "and",
+      "start": 80.68,
+      "end": 80.78
+    },
+    {
+      "word": "being",
+      "start": 80.78,
+      "end": 81
+    },
+    {
+      "word": "needed",
+      "start": 81,
+      "end": 81.26
+    },
+    {
+      "word": "feels",
+      "start": 81.3,
+      "end": 81.58
+    },
+    {
+      "word": "like",
+      "start": 81.58,
+      "end": 81.74
+    },
+    {
+      "word": "being",
+      "start": 81.74,
+      "end": 82
+    },
+    {
+      "word": "valuable.",
+      "start": 82,
+      "end": 82.6
+    },
+    {
+      "word": "So",
+      "start": 82.6,
+      "end": 82.74
+    },
+    {
+      "word": "people",
+      "start": 82.74,
+      "end": 82.98
+    },
+    {
+      "word": "fill",
+      "start": 82.98,
+      "end": 83.26
+    },
+    {
+      "word": "fill",
+      "start": 82.98,
+      "end": 83.26
+    },
+    {
+      "word": "the",
+      "start": 83.26,
+      "end": 83.44
+    },
+    {
+      "word": "day",
+      "start": 83.44,
+      "end": 83.66
+    },
+    {
+      "word": "sometimes",
+      "start": 83.86,
+      "end": 84.02
+    },
+    {
+      "word": "with",
+      "start": 84.02,
+      "end": 84.34
+    },
+    {
+      "word": "real",
+      "start": 84.34,
+      "end": 84.58
+    },
+    {
+      "word": "work",
+      "start": 84.58,
+      "end": 85.14
+    },
+    {
+      "word": "sometimes",
+      "start": 85.14,
+      "end": 85.74
+    },
+    {
+      "word": "with",
+      "start": 85.74,
+      "end": 86.08
+    },
+    {
+      "word": "calls",
+      "start": 86.08,
+      "end": 86.48
+    },
+    {
+      "word": "updates",
+      "start": 86.48,
+      "end": 86.86
+    },
+    {
+      "word": "and",
+      "start": 86.86,
+      "end": 87.12
+    },
+    {
+      "word": "meetings",
+      "start": 87.12,
+      "end": 87.38
+    },
+    {
+      "word": "about",
+      "start": 87.38,
+      "end": 87.7
+    },
+    {
+      "word": "why",
+      "start": 87.7,
+      "end": 87.86
+    },
+    {
+      "word": "the",
+      "start": 87.86,
+      "end": 88.02
+    },
+    {
+      "word": "last",
+      "start": 88.02,
+      "end": 88.3
+    },
+    {
+      "word": "meeting",
+      "start": 88.3,
+      "end": 88.54
+    },
+    {
+      "word": "did",
+      "start": 88.54,
+      "end": 88.74
+    },
+    {
+      "word": "not",
+      "start": 88.74,
+      "end": 88.92
+    },
+    {
+      "word": "finish",
+      "start": 88.92,
+      "end": 89.12
+    },
+    {
+      "word": "anything.",
+      "start": 89.12,
+      "end": 90.1
+    },
+    {
+      "word": "At",
+      "start": 90.1,
+      "end": 90.34
+    },
+    {
+      "word": "some",
+      "start": 90.34,
+      "end": 90.56
+    },
+    {
+      "word": "point",
+      "start": 90.56,
+      "end": 90.74
+    },
+    {
+      "word": "the",
+      "start": 90.74,
+      "end": 90.92
+    },
+    {
+      "word": "job",
+      "start": 90.92,
+      "end": 91.2
+    },
+    {
+      "word": "stops",
+      "start": 91.2,
+      "end": 91.6
+    },
+    {
+      "word": "being",
+      "start": 91.6,
+      "end": 91.82
+    },
+    {
+      "word": "the",
+      "start": 91.82,
+      "end": 91.96
+    },
+    {
+      "word": "work.",
+      "start": 92.22,
+      "end": 92.58
+    },
+    {
+      "word": "The",
+      "start": 92.58,
+      "end": 92.58
+    },
+    {
+      "word": "job",
+      "start": 92.58,
+      "end": 92.96
+    },
+    {
+      "word": "becomes",
+      "start": 92.96,
+      "end": 93.42
+    },
+    {
+      "word": "proving",
+      "start": 93.42,
+      "end": 93.76
+    },
+    {
+      "word": "you",
+      "start": 93.76,
+      "end": 94.02
+    },
+    {
+      "word": "are",
+      "start": 94.02,
+      "end": 94.2
+    },
+    {
+      "word": "near",
+      "start": 94.2,
+      "end": 94.38
+    },
+    {
+      "word": "the",
+      "start": 94.38,
+      "end": 94.64
+    },
+    {
+      "word": "work.",
+      "start": 94.64,
+      "end": 95.3
+    },
+    {
+      "word": "The",
+      "start": 95.3,
+      "end": 95.44
+    },
+    {
+      "word": "second",
+      "start": 95.44,
+      "end": 95.78
+    },
+    {
+      "word": "reason",
+      "start": 95.78,
+      "end": 96.08
+    },
+    {
+      "word": "is",
+      "start": 96.08,
+      "end": 96.28
+    },
+    {
+      "word": "that",
+      "start": 96.28,
+      "end": 96.38
+    },
+    {
+      "word": "our",
+      "start": 96.38,
+      "end": 96.6
+    },
+    {
+      "word": "tools",
+      "start": 96.6,
+      "end": 96.88
+    },
+    {
+      "word": "invented",
+      "start": 96.88,
+      "end": 97.32
+    },
+    {
+      "word": "emergencies.",
+      "start": 97.32,
+      "end": 98.8
+    },
+    {
+      "word": "Email",
+      "start": 98.8,
+      "end": 98.96
+    },
+    {
+      "word": "was",
+      "start": 98.96,
+      "end": 99.22
+    },
+    {
+      "word": "supposed",
+      "start": 99.22,
+      "end": 99.5
+    },
+    {
+      "word": "to",
+      "start": 99.5,
+      "end": 99.64
+    },
+    {
+      "word": "make",
+      "start": 99.64,
+      "end": 99.82
+    },
+    {
+      "word": "talking",
+      "start": 99.82,
+      "end": 100.18
+    },
+    {
+      "word": "easier.",
+      "start": 100.18,
+      "end": 100.86
+    },
+    {
+      "word": "Then",
+      "start": 100.94,
+      "end": 101.08
+    },
+    {
+      "word": "chat",
+      "start": 101.08,
+      "end": 101.32
+    },
+    {
+      "word": "apps",
+      "start": 101.32,
+      "end": 101.58
+    },
+    {
+      "word": "made",
+      "start": 101.58,
+      "end": 101.78
+    },
+    {
+      "word": "email",
+      "start": 101.78,
+      "end": 102.08
+    },
+    {
+      "word": "faster",
+      "start": 102.08,
+      "end": 102.48
+    },
+    {
+      "word": "than",
+      "start": 102.48,
+      "end": 102.76
+    },
+    {
+      "word": "task",
+      "start": 102.76,
+      "end": 103.04
+    },
+    {
+      "word": "apps",
+      "start": 103.04,
+      "end": 103.28
+    },
+    {
+      "word": "organized",
+      "start": 103.28,
+      "end": 103.76
+    },
+    {
+      "word": "the",
+      "start": 103.76,
+      "end": 104
+    },
+    {
+      "word": "chat",
+      "start": 104,
+      "end": 104.16
+    },
+    {
+      "word": "about",
+      "start": 104.16,
+      "end": 104.34
+    },
+    {
+      "word": "the",
+      "start": 104.34,
+      "end": 104.54
+    },
+    {
+      "word": "email.",
+      "start": 104.6,
+      "end": 105.22
+    },
+    {
+      "word": "Then",
+      "start": 105.22,
+      "end": 105.44
+    },
+    {
+      "word": "calendar",
+      "start": 105.44,
+      "end": 105.7
+    },
+    {
+      "word": "apps",
+      "start": 105.7,
+      "end": 106.08
+    },
+    {
+      "word": "booked",
+      "start": 106.08,
+      "end": 106.32
+    },
+    {
+      "word": "meetings",
+      "start": 106.34,
+      "end": 106.62
+    },
+    {
+      "word": "about",
+      "start": 106.62,
+      "end": 106.94
+    },
+    {
+      "word": "why",
+      "start": 106.94,
+      "end": 107.1
+    },
+    {
+      "word": "the",
+      "start": 107.1,
+      "end": 107.22
+    },
+    {
+      "word": "task",
+      "start": 107.22,
+      "end": 107.46
+    },
+    {
+      "word": "app",
+      "start": 107.46,
+      "end": 107.62
+    },
+    {
+      "word": "is",
+      "start": 107.62,
+      "end": 107.88
+    },
+    {
+      "word": "confusing,",
+      "start": 107.88,
+      "end": 108.44
+    },
+    {
+      "word": "so",
+      "start": 108.44,
+      "end": 108.5
+    },
+    {
+      "word": "now",
+      "start": 108.5,
+      "end": 108.7
+    },
+    {
+      "word": "the",
+      "start": 108.7,
+      "end": 108.8
+    },
+    {
+      "word": "workday",
+      "start": 108.8,
+      "end": 109.14
+    },
+    {
+      "word": "is",
+      "start": 109.18,
+      "end": 109.46
+    },
+    {
+      "word": "basically",
+      "start": 109.46,
+      "end": 109.74
+    },
+    {
+      "word": "five",
+      "start": 109.74,
+      "end": 110.06
+    },
+    {
+      "word": "apps",
+      "start": 110.06,
+      "end": 110.3
+    },
+    {
+      "word": "interrupting",
+      "start": 110.3,
+      "end": 110.82
+    },
+    {
+      "word": "each",
+      "start": 110.82,
+      "end": 111
+    },
+    {
+      "word": "other.",
+      "start": 111,
+      "end": 111.62
+    },
+    {
+      "word": "Everything",
+      "start": 111.62,
+      "end": 111.9
+    },
+    {
+      "word": "has",
+      "start": 111.9,
+      "end": 112.1
+    },
+    {
+      "word": "a",
+      "start": 112.1,
+      "end": 112.22
+    },
+    {
+      "word": "red",
+      "start": 112.22,
+      "end": 112.42
+    },
+    {
+      "word": "dot,",
+      "start": 112.42,
+      "end": 112.84
+    },
+    {
+      "word": "everything",
+      "start": 112.84,
+      "end": 113.06
+    },
+    {
+      "word": "has",
+      "start": 113.06,
+      "end": 113.24
+    },
+    {
+      "word": "a",
+      "start": 113.24,
+      "end": 113.34
+    },
+    {
+      "word": "number,",
+      "start": 113.34,
+      "end": 113.6
+    },
+    {
+      "word": "everything",
+      "start": 113.6,
+      "end": 113.98
+    },
+    {
+      "word": "says",
+      "start": 113.98,
+      "end": 114.4
+    },
+    {
+      "word": "urgent",
+      "start": 114.4,
+      "end": 114.7
+    },
+    {
+      "word": "because",
+      "start": 114.7,
+      "end": 115.16
+    },
+    {
+      "word": "apparently",
+      "start": 115.16,
+      "end": 115.62
+    },
+    {
+      "word": "please",
+      "start": 115.62,
+      "end": 116.04
+    },
+    {
+      "word": "ignore",
+      "start": 116.04,
+      "end": 116.34
+    },
+    {
+      "word": "this",
+      "start": 116.34,
+      "end": 116.6
+    },
+    {
+      "word": "until",
+      "start": 116.6,
+      "end": 116.78
+    },
+    {
+      "word": "next",
+      "start": 116.78,
+      "end": 117.06
+    },
+    {
+      "word": "week",
+      "start": 117.06,
+      "end": 117.28
+    },
+    {
+      "word": "is",
+      "start": 117.28,
+      "end": 117.58
+    },
+    {
+      "word": "bad",
+      "start": 117.58,
+      "end": 117.84
+    },
+    {
+      "word": "design.",
+      "start": 117.84,
+      "end": 118.46
+    },
+    {
+      "word": "So",
+      "start": 118.46,
+      "end": 118.62
+    },
+    {
+      "word": "your",
+      "start": 118.62,
+      "end": 118.8
+    },
+    {
+      "word": "brain",
+      "start": 118.8,
+      "end": 119.06
+    },
+    {
+      "word": "starts",
+      "start": 119.06,
+      "end": 119.38
+    },
+    {
+      "word": "treating",
+      "start": 119.38,
+      "end": 119.68
+    },
+    {
+      "word": "every",
+      "start": 119.68,
+      "end": 120.06
+    },
+    {
+      "word": "little",
+      "start": 120.06,
+      "end": 120.26
+    },
+    {
+      "word": "notification",
+      "start": 120.26,
+      "end": 120.78
+    },
+    {
+      "word": "like",
+      "start": 120.78,
+      "end": 121.16
+    },
+    {
+      "word": "a",
+      "start": 121.16,
+      "end": 121.34
+    },
+    {
+      "word": "real",
+      "start": 121.34,
+      "end": 121.58
+    },
+    {
+      "word": "emergency.",
+      "start": 121.58,
+      "end": 122.98
+    },
+    {
+      "word": "A",
+      "start": 122.98,
+      "end": 123.02
+    },
+    {
+      "word": "message",
+      "start": 123.02,
+      "end": 123.32
+    },
+    {
+      "word": "lands",
+      "start": 123.32,
+      "end": 123.7
+    },
+    {
+      "word": "you",
+      "start": 123.7,
+      "end": 123.88
+    },
+    {
+      "word": "reply,",
+      "start": 124.02,
+      "end": 124.46
+    },
+    {
+      "word": "another",
+      "start": 124.46,
+      "end": 124.7
+    },
+    {
+      "word": "lands",
+      "start": 124.7,
+      "end": 125.1
+    },
+    {
+      "word": "you",
+      "start": 125.1,
+      "end": 125.3
+    },
+    {
+      "word": "reply",
+      "start": 125.3,
+      "end": 125.48
+    },
+    {
+      "word": "again.",
+      "start": 125.48,
+      "end": 126.22
+    },
+    {
+      "word": "Someone",
+      "start": 126.22,
+      "end": 126.22
+    },
+    {
+      "word": "sends",
+      "start": 126.22,
+      "end": 126.44
+    },
+    {
+      "word": "a",
+      "start": 126.44,
+      "end": 126.6
+    },
+    {
+      "word": "thumbs",
+      "start": 126.6,
+      "end": 126.76
+    },
+    {
+      "word": "up",
+      "start": 126.76,
+      "end": 126.94
+    },
+    {
+      "word": "and",
+      "start": 126.94,
+      "end": 127.14
+    },
+    {
+      "word": "somehow",
+      "start": 127.14,
+      "end": 127.36
+    },
+    {
+      "word": "your",
+      "start": 127.36,
+      "end": 127.64
+    },
+    {
+      "word": "brain",
+      "start": 127.64,
+      "end": 127.92
+    },
+    {
+      "word": "files",
+      "start": 128.02,
+      "end": 128.24
+    },
+    {
+      "word": "this",
+      "start": 128.24,
+      "end": 128.52
+    },
+    {
+      "word": "under",
+      "start": 128.52,
+      "end": 128.68
+    },
+    {
+      "word": "progress.",
+      "start": 128.68,
+      "end": 129.8
+    },
+    {
+      "word": "Meanwhile,",
+      "start": 129.8,
+      "end": 130.22
+    },
+    {
+      "word": "the",
+      "start": 130.22,
+      "end": 130.38
+    },
+    {
+      "word": "one",
+      "start": 130.38,
+      "end": 130.64
+    },
+    {
+      "word": "task",
+      "start": 130.64,
+      "end": 130.88
+    },
+    {
+      "word": "that",
+      "start": 130.88,
+      "end": 131.06
+    },
+    {
+      "word": "actually",
+      "start": 131.06,
+      "end": 131.48
+    },
+    {
+      "word": "matters",
+      "start": 131.48,
+      "end": 131.74
+    },
+    {
+      "word": "is",
+      "start": 131.74,
+      "end": 132.06
+    },
+    {
+      "word": "still",
+      "start": 132.18,
+      "end": 132.34
+    },
+    {
+      "word": "sitting",
+      "start": 132.34,
+      "end": 132.58
+    },
+    {
+      "word": "there",
+      "start": 132.58,
+      "end": 132.96
+    },
+    {
+      "word": "untouched,",
+      "start": 132.96,
+      "end": 134.06
+    },
+    {
+      "word": "quietly",
+      "start": 134.06,
+      "end": 134.06
+    },
+    {
+      "word": "going",
+      "start": 134.06,
+      "end": 134.44
+    },
+    {
+      "word": "bad,",
+      "start": 134.44,
+      "end": 135.26
+    },
+    {
+      "word": "like",
+      "start": 135.26,
+      "end": 135.28
+    },
+    {
+      "word": "a",
+      "start": 135.28,
+      "end": 135.54
+    },
+    {
+      "word": "sad",
+      "start": 135.54,
+      "end": 135.8
+    },
+    {
+      "word": "vegetable",
+      "start": 135.8,
+      "end": 136.22
+    },
+    {
+      "word": "at",
+      "start": 136.22,
+      "end": 136.48
+    },
+    {
+      "word": "the",
+      "start": 136.48,
+      "end": 136.52
+    },
+    {
+      "word": "back",
+      "start": 136.52,
+      "end": 136.76
+    },
+    {
+      "word": "of",
+      "start": 136.76,
+      "end": 136.84
+    },
+    {
+      "word": "the",
+      "start": 136.84,
+      "end": 137.02
+    },
+    {
+      "word": "fridge.",
+      "start": 137.02,
+      "end": 137.64
+    },
+    {
+      "word": "The",
+      "start": 137.64,
+      "end": 137.64
+    },
+    {
+      "word": "third",
+      "start": 137.64,
+      "end": 137.96
+    },
+    {
+      "word": "reason",
+      "start": 137.96,
+      "end": 138.22
+    },
+    {
+      "word": "is",
+      "start": 138.22,
+      "end": 138.42
+    },
+    {
+      "word": "that",
+      "start": 138.42,
+      "end": 138.58
+    },
+    {
+      "word": "visible",
+      "start": 138.58,
+      "end": 138.9
+    },
+    {
+      "word": "work",
+      "start": 138.9,
+      "end": 139.2
+    },
+    {
+      "word": "is",
+      "start": 139.2,
+      "end": 139.36
+    },
+    {
+      "word": "just",
+      "start": 139.36,
+      "end": 139.6
+    },
+    {
+      "word": "easier",
+      "start": 139.6,
+      "end": 139.88
+    },
+    {
+      "word": "to",
+      "start": 139.88,
+      "end": 140.12
+    },
+    {
+      "word": "reward.",
+      "start": 140.26,
+      "end": 140.92
+    },
+    {
+      "word": "Reply",
+      "start": 140.92,
+      "end": 141.12
+    },
+    {
+      "word": "quickly",
+      "start": 141.12,
+      "end": 141.6
+    },
+    {
+      "word": "and",
+      "start": 141.6,
+      "end": 141.82
+    },
+    {
+      "word": "people",
+      "start": 141.82,
+      "end": 142.12
+    },
+    {
+      "word": "see",
+      "start": 142.12,
+      "end": 142.38
+    },
+    {
+      "word": "it,",
+      "start": 142.38,
+      "end": 142.62
+    },
+    {
+      "word": "join",
+      "start": 142.62,
+      "end": 142.86
+    },
+    {
+      "word": "every",
+      "start": 142.86,
+      "end": 143.18
+    },
+    {
+      "word": "meeting",
+      "start": 143.18,
+      "end": 143.44
+    },
+    {
+      "word": "and",
+      "start": 143.44,
+      "end": 143.66
+    },
+    {
+      "word": "people",
+      "start": 143.66,
+      "end": 143.96
+    },
+    {
+      "word": "see",
+      "start": 143.96,
+      "end": 144.22
+    },
+    {
+      "word": "it.",
+      "start": 144.22,
+      "end": 144.52
+    },
+    {
+      "word": "Send",
+      "start": 144.52,
+      "end": 144.68
+    },
+    {
+      "word": "an",
+      "start": 144.68,
+      "end": 144.82
+    },
+    {
+      "word": "update",
+      "start": 144.82,
+      "end": 145
+    },
+    {
+      "word": "that",
+      "start": 145,
+      "end": 145.34
+    },
+    {
+      "word": "says",
+      "start": 145.34,
+      "end": 145.64
+    },
+    {
+      "word": "just",
+      "start": 145.64,
+      "end": 145.9
+    },
+    {
+      "word": "circling",
+      "start": 145.9,
+      "end": 146.14
+    },
+    {
+      "word": "back",
+      "start": 146.18,
+      "end": 146.56
+    },
+    {
+      "word": "and",
+      "start": 146.56,
+      "end": 146.74
+    },
+    {
+      "word": "people",
+      "start": 146.74,
+      "end": 147.04
+    },
+    {
+      "word": "definitely",
+      "start": 147.04,
+      "end": 147.42
+    },
+    {
+      "word": "see",
+      "start": 147.42,
+      "end": 147.8
+    },
+    {
+      "word": "it.",
+      "start": 147.8,
+      "end": 148
+    },
+    {
+      "word": "But",
+      "start": 148,
+      "end": 148.18
+    },
+    {
+      "word": "spend",
+      "start": 148.18,
+      "end": 148.32
+    },
+    {
+      "word": "two",
+      "start": 148.32,
+      "end": 148.58
+    },
+    {
+      "word": "hours",
+      "start": 148.58,
+      "end": 148.8
+    },
+    {
+      "word": "thinking",
+      "start": 148.8,
+      "end": 149.16
+    },
+    {
+      "word": "hard",
+      "start": 149.16,
+      "end": 149.44
+    },
+    {
+      "word": "and",
+      "start": 149.44,
+      "end": 149.6
+    },
+    {
+      "word": "the",
+      "start": 149.6,
+      "end": 149.76
+    },
+    {
+      "word": "result",
+      "start": 149.76,
+      "end": 150.02
+    },
+    {
+      "word": "can",
+      "start": 150.02,
+      "end": 150.2
+    },
+    {
+      "word": "look",
+      "start": 150.2,
+      "end": 150.36
+    },
+    {
+      "word": "like",
+      "start": 150.36,
+      "end": 150.52
+    },
+    {
+      "word": "nothing",
+      "start": 150.52,
+      "end": 150.76
+    },
+    {
+      "word": "happened.",
+      "start": 150.76,
+      "end": 151.24
+    },
+    {
+      "word": "You",
+      "start": 151.24,
+      "end": 151.44
+    },
+    {
+      "word": "might",
+      "start": 151.44,
+      "end": 151.6
+    },
+    {
+      "word": "have",
+      "start": 151.6,
+      "end": 151.84
+    },
+    {
+      "word": "solved",
+      "start": 151.84,
+      "end": 152.04
+    },
+    {
+      "word": "the",
+      "start": 152.04,
+      "end": 152.22
+    },
+    {
+      "word": "real",
+      "start": 152.22,
+      "end": 152.46
+    },
+    {
+      "word": "problem.",
+      "start": 152.46,
+      "end": 152.9
+    },
+    {
+      "word": "From",
+      "start": 152.9,
+      "end": 153.12
+    },
+    {
+      "word": "the",
+      "start": 153.12,
+      "end": 153.26
+    },
+    {
+      "word": "outside,",
+      "start": 153.26,
+      "end": 153.84
+    },
+    {
+      "word": "you",
+      "start": 153.84,
+      "end": 153.94
+    },
+    {
+      "word": "were",
+      "start": 153.94,
+      "end": 154.08
+    },
+    {
+      "word": "a",
+      "start": 154.08,
+      "end": 154.2
+    },
+    {
+      "word": "person",
+      "start": 154.2,
+      "end": 154.54
+    },
+    {
+      "word": "staring",
+      "start": 154.54,
+      "end": 154.82
+    },
+    {
+      "word": "at",
+      "start": 154.82,
+      "end": 155.02
+    },
+    {
+      "word": "a",
+      "start": 155.02,
+      "end": 155.16
+    },
+    {
+      "word": "wall,",
+      "start": 155.16,
+      "end": 155.56
+    },
+    {
+      "word": "possibly",
+      "start": 155.56,
+      "end": 155.92
+    },
+    {
+      "word": "blinking.",
+      "start": 155.92,
+      "end": 156.62
+    },
+    {
+      "word": "There",
+      "start": 156.62,
+      "end": 156.74
+    },
+    {
+      "word": "is",
+      "start": 156.74,
+      "end": 156.84
+    },
+    {
+      "word": "even",
+      "start": 156.84,
+      "end": 157
+    },
+    {
+      "word": "a",
+      "start": 157,
+      "end": 157.2
+    },
+    {
+      "word": "survey",
+      "start": 157.2,
+      "end": 157.42
+    },
+    {
+      "word": "where",
+      "start": 157.42,
+      "end": 157.62
+    },
+    {
+      "word": "most",
+      "start": 157.62,
+      "end": 157.9
+    },
+    {
+      "word": "managers",
+      "start": 157.9,
+      "end": 158.34
+    },
+    {
+      "word": "admitted",
+      "start": 158.34,
+      "end": 158.78
+    },
+    {
+      "word": "they",
+      "start": 158.78,
+      "end": 158.94
+    },
+    {
+      "word": "could",
+      "start": 158.94,
+      "end": 159.08
+    },
+    {
+      "word": "not",
+      "start": 159.08,
+      "end": 159.26
+    },
+    {
+      "word": "really",
+      "start": 159.26,
+      "end": 159.52
+    },
+    {
+      "word": "tell",
+      "start": 159.52,
+      "end": 159.76
+    },
+    {
+      "word": "who",
+      "start": 159.76,
+      "end": 159.88
+    },
+    {
+      "word": "on",
+      "start": 159.88,
+      "end": 160.04
+    },
+    {
+      "word": "their",
+      "start": 160.04,
+      "end": 160.2
+    },
+    {
+      "word": "team",
+      "start": 160.2,
+      "end": 160.4
+    },
+    {
+      "word": "was",
+      "start": 160.4,
+      "end": 160.56
+    },
+    {
+      "word": "being",
+      "start": 160.56,
+      "end": 160.84
+    },
+    {
+      "word": "productive.",
+      "start": 160.84,
+      "end": 161.46
+    },
+    {
+      "word": "So",
+      "start": 161.46,
+      "end": 161.76
+    },
+    {
+      "word": "they",
+      "start": 161.76,
+      "end": 161.88
+    },
+    {
+      "word": "reward",
+      "start": 161.88,
+      "end": 162.16
+    },
+    {
+      "word": "what",
+      "start": 162.16,
+      "end": 162.38
+    },
+    {
+      "word": "they",
+      "start": 162.38,
+      "end": 162.48
+    },
+    {
+      "word": "can",
+      "start": 162.48,
+      "end": 162.72
+    },
+    {
+      "word": "see",
+      "start": 162.72,
+      "end": 163.02
+    },
+    {
+      "word": "and",
+      "start": 163.02,
+      "end": 163.34
+    },
+    {
+      "word": "what",
+      "start": 163.34,
+      "end": 163.5
+    },
+    {
+      "word": "they",
+      "start": 163.5,
+      "end": 163.64
+    },
+    {
+      "word": "can",
+      "start": 163.64,
+      "end": 163.8
+    },
+    {
+      "word": "see",
+      "start": 163.8,
+      "end": 163.94
+    },
+    {
+      "word": "is",
+      "start": 163.94,
+      "end": 164.14
+    },
+    {
+      "word": "motion.",
+      "start": 164.14,
+      "end": 164.48
+    },
+    {
+      "word": "So",
+      "start": 164.48,
+      "end": 164.74
+    },
+    {
+      "word": "people",
+      "start": 164.74,
+      "end": 165.04
+    },
+    {
+      "word": "start",
+      "start": 165.04,
+      "end": 165.34
+    },
+    {
+      "word": "performing",
+      "start": 165.34,
+      "end": 165.7
+    },
+    {
+      "word": "motion.",
+      "start": 165.7,
+      "end": 166.5
+    },
+    {
+      "word": "They",
+      "start": 166.5,
+      "end": 166.5
+    },
+    {
+      "word": "reply",
+      "start": 166.5,
+      "end": 166.74
+    },
+    {
+      "word": "fast,",
+      "start": 166.74,
+      "end": 167.26
+    },
+    {
+      "word": "they",
+      "start": 167.26,
+      "end": 167.34
+    },
+    {
+      "word": "join",
+      "start": 167.34,
+      "end": 167.52
+    },
+    {
+      "word": "the",
+      "start": 167.52,
+      "end": 167.68
+    },
+    {
+      "word": "call,",
+      "start": 167.68,
+      "end": 168.02
+    },
+    {
+      "word": "they",
+      "start": 168.02,
+      "end": 168.02
+    },
+    {
+      "word": "move",
+      "start": 168.02,
+      "end": 168.2
+    },
+    {
+      "word": "a",
+      "start": 168.2,
+      "end": 168.38
+    },
+    {
+      "word": "task",
+      "start": 168.38,
+      "end": 168.58
+    },
+    {
+      "word": "from",
+      "start": 168.58,
+      "end": 168.8
+    },
+    {
+      "word": "one",
+      "start": 168.8,
+      "end": 169.06
+    },
+    {
+      "word": "column",
+      "start": 169.06,
+      "end": 169.28
+    },
+    {
+      "word": "to",
+      "start": 169.28,
+      "end": 169.46
+    },
+    {
+      "word": "another",
+      "start": 169.46,
+      "end": 169.78
+    },
+    {
+      "word": "column",
+      "start": 169.78,
+      "end": 170.14
+    },
+    {
+      "word": "and",
+      "start": 170.14,
+      "end": 170.26
+    },
+    {
+      "word": "they",
+      "start": 170.26,
+      "end": 170.4
+    },
+    {
+      "word": "write",
+      "start": 170.4,
+      "end": 170.62
+    },
+    {
+      "word": "updates",
+      "start": 170.62,
+      "end": 170.9
+    },
+    {
+      "word": "about",
+      "start": 170.9,
+      "end": 171.22
+    },
+    {
+      "word": "future",
+      "start": 171.22,
+      "end": 171.54
+    },
+    {
+      "word": "updates.",
+      "start": 171.54,
+      "end": 172.12
+    },
+    {
+      "word": "This",
+      "start": 172.44,
+      "end": 172.62
+    },
+    {
+      "word": "has",
+      "start": 172.62,
+      "end": 172.84
+    },
+    {
+      "word": "a",
+      "start": 172.84,
+      "end": 172.96
+    },
+    {
+      "word": "name,",
+      "start": 172.96,
+      "end": 173.68
+    },
+    {
+      "word": "productivity",
+      "start": 173.68,
+      "end": 173.68
+    },
+    {
+      "word": "theater.",
+      "start": 173.68,
+      "end": 174.74
+    },
+    {
+      "word": "Same",
+      "start": 174.74,
+      "end": 174.98
+    },
+    {
+      "word": "as",
+      "start": 174.98,
+      "end": 175.18
+    },
+    {
+      "word": "normal",
+      "start": 175.18,
+      "end": 175.54
+    },
+    {
+      "word": "theater,",
+      "start": 175.54,
+      "end": 176.08
+    },
+    {
+      "word": "except",
+      "start": 176.08,
+      "end": 176.22
+    },
+    {
+      "word": "the",
+      "start": 176.22,
+      "end": 176.46
+    },
+    {
+      "word": "tickets",
+      "start": 176.46,
+      "end": 176.64
+    },
+    {
+      "word": "are",
+      "start": 176.64,
+      "end": 176.88
+    },
+    {
+      "word": "paid",
+      "start": 176.88,
+      "end": 177.08
+    },
+    {
+      "word": "in",
+      "start": 177.08,
+      "end": 177.32
+    },
+    {
+      "word": "stress.",
+      "start": 177.52,
+      "end": 177.86
+    },
+    {
+      "word": "And",
+      "start": 177.86,
+      "end": 178
+    },
+    {
+      "word": "the",
+      "start": 178,
+      "end": 178.22
+    },
+    {
+      "word": "star",
+      "start": 178.22,
+      "end": 178.44
+    },
+    {
+      "word": "of",
+      "start": 178.44,
+      "end": 178.62
+    },
+    {
+      "word": "the",
+      "start": 178.62,
+      "end": 178.8
+    },
+    {
+      "word": "show",
+      "start": 178.8,
+      "end": 179.08
+    },
+    {
+      "word": "is",
+      "start": 179.08,
+      "end": 179.3
+    },
+    {
+      "word": "a",
+      "start": 179.3,
+      "end": 179.5
+    },
+    {
+      "word": "spreadsheet.",
+      "start": 179.5,
+      "end": 180.46
+    },
+    {
+      "word": "The",
+      "start": 180.46,
+      "end": 180.58
+    },
+    {
+      "word": "fourth",
+      "start": 180.58,
+      "end": 180.86
+    },
+    {
+      "word": "reason",
+      "start": 180.86,
+      "end": 181.1
+    },
+    {
+      "word": "is",
+      "start": 181.1,
+      "end": 181.34
+    },
+    {
+      "word": "that",
+      "start": 181.34,
+      "end": 181.5
+    },
+    {
+      "word": "I'm",
+      "start": 181.5,
+      "end": 181.78
+    },
+    {
+      "word": "busy",
+      "start": 181.78,
+      "end": 181.96
+    },
+    {
+      "word": "is",
+      "start": 181.96,
+      "end": 182.24
+    },
+    {
+      "word": "genuinely",
+      "start": 182.24,
+      "end": 182.62
+    },
+    {
+      "word": "useful.",
+      "start": 182.62,
+      "end": 183.5
+    },
+    {
+      "word": "It",
+      "start": 183.5,
+      "end": 183.56
+    },
+    {
+      "word": "is",
+      "start": 183.56,
+      "end": 183.74
+    },
+    {
+      "word": "a",
+      "start": 183.74,
+      "end": 183.9
+    },
+    {
+      "word": "shield.",
+      "start": 183.9,
+      "end": 184.34
+    },
+    {
+      "word": "Sometimes",
+      "start": 184.34,
+      "end": 184.52
+    },
+    {
+      "word": "it",
+      "start": 184.56,
+      "end": 184.76
+    },
+    {
+      "word": "means",
+      "start": 184.76,
+      "end": 185
+    },
+    {
+      "word": "I",
+      "start": 185,
+      "end": 185.14
+    },
+    {
+      "word": "cannot",
+      "start": 185.14,
+      "end": 185.4
+    },
+    {
+      "word": "take",
+      "start": 185.4,
+      "end": 185.66
+    },
+    {
+      "word": "on",
+      "start": 185.66,
+      "end": 185.88
+    },
+    {
+      "word": "more.",
+      "start": 185.88,
+      "end": 186.14
+    },
+    {
+      "word": "Sometimes",
+      "start": 186.14,
+      "end": 186.38
+    },
+    {
+      "word": "it",
+      "start": 186.38,
+      "end": 186.62
+    },
+    {
+      "word": "means",
+      "start": 186.62,
+      "end": 186.84
+    },
+    {
+      "word": "I",
+      "start": 186.84,
+      "end": 186.94
+    },
+    {
+      "word": "do",
+      "start": 186.94,
+      "end": 187.08
+    },
+    {
+      "word": "not",
+      "start": 187.08,
+      "end": 187.24
+    },
+    {
+      "word": "want",
+      "start": 187.24,
+      "end": 187.4
+    },
+    {
+      "word": "to",
+      "start": 187.4,
+      "end": 187.42
+    },
+    {
+      "word": "make",
+      "start": 187.42,
+      "end": 187.6
+    },
+    {
+      "word": "this",
+      "start": 187.6,
+      "end": 187.9
+    },
+    {
+      "word": "decision.",
+      "start": 187.9,
+      "end": 188.68
+    },
+    {
+      "word": "Sometimes",
+      "start": 188.68,
+      "end": 189
+    },
+    {
+      "word": "it",
+      "start": 189,
+      "end": 189.22
+    },
+    {
+      "word": "means",
+      "start": 189.22,
+      "end": 189.46
+    },
+    {
+      "word": "please",
+      "start": 189.46,
+      "end": 189.8
+    },
+    {
+      "word": "stop",
+      "start": 189.8,
+      "end": 190.06
+    },
+    {
+      "word": "asking",
+      "start": 190.06,
+      "end": 190.3
+    },
+    {
+      "word": "me",
+      "start": 190.3,
+      "end": 190.54
+    },
+    {
+      "word": "questions.",
+      "start": 190.54,
+      "end": 191.2
+    },
+    {
+      "word": "And",
+      "start": 191.2,
+      "end": 191.36
+    },
+    {
+      "word": "sometimes",
+      "start": 191.36,
+      "end": 191.62
+    },
+    {
+      "word": "it",
+      "start": 191.62,
+      "end": 191.84
+    },
+    {
+      "word": "means",
+      "start": 191.84,
+      "end": 192.06
+    },
+    {
+      "word": "I",
+      "start": 192.06,
+      "end": 192.18
+    },
+    {
+      "word": "have",
+      "start": 192.18,
+      "end": 192.34
+    },
+    {
+      "word": "no",
+      "start": 192.34,
+      "end": 192.56
+    },
+    {
+      "word": "idea",
+      "start": 192.56,
+      "end": 192.84
+    },
+    {
+      "word": "what",
+      "start": 192.84,
+      "end": 193.02
+    },
+    {
+      "word": "I",
+      "start": 193.02,
+      "end": 193.1
+    },
+    {
+      "word": "am",
+      "start": 193.1,
+      "end": 193.24
+    },
+    {
+      "word": "doing,",
+      "start": 193.24,
+      "end": 193.56
+    },
+    {
+      "word": "but",
+      "start": 193.56,
+      "end": 193.68
+    },
+    {
+      "word": "I",
+      "start": 193.68,
+      "end": 193.78
+    },
+    {
+      "word": "need",
+      "start": 193.78,
+      "end": 193.96
+    },
+    {
+      "word": "to",
+      "start": 193.96,
+      "end": 194.04
+    },
+    {
+      "word": "look",
+      "start": 194.04,
+      "end": 194.28
+    },
+    {
+      "word": "calm",
+      "start": 194.28,
+      "end": 194.5
+    },
+    {
+      "word": "until",
+      "start": 194.5,
+      "end": 194.72
+    },
+    {
+      "word": "the",
+      "start": 194.72,
+      "end": 194.94
+    },
+    {
+      "word": "answer",
+      "start": 194.94,
+      "end": 195.1
+    },
+    {
+      "word": "shows",
+      "start": 195.1,
+      "end": 195.44
+    },
+    {
+      "word": "up.",
+      "start": 195.44,
+      "end": 195.76
+    },
+    {
+      "word": "This",
+      "start": 195.76,
+      "end": 195.98
+    },
+    {
+      "word": "is",
+      "start": 195.98,
+      "end": 196.14
+    },
+    {
+      "word": "not",
+      "start": 196.14,
+      "end": 196.38
+    },
+    {
+      "word": "always",
+      "start": 196.38,
+      "end": 196.72
+    },
+    {
+      "word": "dishonest.",
+      "start": 196.72,
+      "end": 197.76
+    },
+    {
+      "word": "A",
+      "start": 197.76,
+      "end": 197.84
+    },
+    {
+      "word": "lot",
+      "start": 197.84,
+      "end": 197.94
+    },
+    {
+      "word": "of",
+      "start": 197.94,
+      "end": 198.1
+    },
+    {
+      "word": "people",
+      "start": 198.1,
+      "end": 198.44
+    },
+    {
+      "word": "really",
+      "start": 198.44,
+      "end": 198.74
+    },
+    {
+      "word": "are",
+      "start": 198.74,
+      "end": 198.94
+    },
+    {
+      "word": "overloaded.",
+      "start": 198.94,
+      "end": 199.62
+    },
+    {
+      "word": "The",
+      "start": 199.62,
+      "end": 199.64
+    },
+    {
+      "word": "shield",
+      "start": 199.64,
+      "end": 199.84
+    },
+    {
+      "word": "is",
+      "start": 199.84,
+      "end": 200.1
+    },
+    {
+      "word": "real.",
+      "start": 200.1,
+      "end": 200.5
+    },
+    {
+      "word": "The",
+      "start": 200.5,
+      "end": 200.68
+    },
+    {
+      "word": "problem",
+      "start": 200.68,
+      "end": 200.96
+    },
+    {
+      "word": "is",
+      "start": 200.96,
+      "end": 201.2
+    },
+    {
+      "word": "that",
+      "start": 201.2,
+      "end": 201.44
+    },
+    {
+      "word": "busy",
+      "start": 201.44,
+      "end": 201.68
+    },
+    {
+      "word": "slowly",
+      "start": 201.68,
+      "end": 202.18
+    },
+    {
+      "word": "becomes",
+      "start": 202.18,
+      "end": 202.52
+    },
+    {
+      "word": "the",
+      "start": 202.52,
+      "end": 202.8
+    },
+    {
+      "word": "only",
+      "start": 202.8,
+      "end": 203.02
+    },
+    {
+      "word": "acceptable",
+      "start": 203.02,
+      "end": 203.54
+    },
+    {
+      "word": "way",
+      "start": 203.54,
+      "end": 203.82
+    },
+    {
+      "word": "to",
+      "start": 203.82,
+      "end": 204.04
+    },
+    {
+      "word": "say",
+      "start": 204.04,
+      "end": 204.28
+    },
+    {
+      "word": "no.",
+      "start": 204.28,
+      "end": 204.82
+    },
+    {
+      "word": "You",
+      "start": 204.82,
+      "end": 205.16
+    },
+    {
+      "word": "cannot",
+      "start": 205.16,
+      "end": 205.42
+    },
+    {
+      "word": "always",
+      "start": 205.42,
+      "end": 205.8
+    },
+    {
+      "word": "say",
+      "start": 205.8,
+      "end": 206
+    },
+    {
+      "word": "I",
+      "start": 206,
+      "end": 206.08
+    },
+    {
+      "word": "need",
+      "start": 206.1,
+      "end": 206.36
+    },
+    {
+      "word": "quiet",
+      "start": 206.36,
+      "end": 206.58
+    },
+    {
+      "word": "time",
+      "start": 206.58,
+      "end": 206.88
+    },
+    {
+      "word": "to",
+      "start": 206.88,
+      "end": 207.02
+    },
+    {
+      "word": "think.\"",
+      "start": 207.02,
+      "end": 207.24
+    },
+    {
+      "word": "That",
+      "start": 207.24,
+      "end": 207.54
+    },
+    {
+      "word": "sounds",
+      "start": 207.54,
+      "end": 207.88
+    },
+    {
+      "word": "suspiciously",
+      "start": 207.88,
+      "end": 208.5
+    },
+    {
+      "word": "relaxed.",
+      "start": 208.5,
+      "end": 209.14
+    },
+    {
+      "word": "You",
+      "start": 209.14,
+      "end": 209.38
+    },
+    {
+      "word": "cannot",
+      "start": 209.38,
+      "end": 209.68
+    },
+    {
+      "word": "always",
+      "start": 209.68,
+      "end": 210.04
+    },
+    {
+      "word": "say",
+      "start": 210.04,
+      "end": 210.22
+    },
+    {
+      "word": "this",
+      "start": 210.22,
+      "end": 210.44
+    },
+    {
+      "word": "meeting",
+      "start": 210.44,
+      "end": 210.7
+    },
+    {
+      "word": "could",
+      "start": 210.7,
+      "end": 210.86
+    },
+    {
+      "word": "have",
+      "start": 210.86,
+      "end": 210.98
+    },
+    {
+      "word": "been",
+      "start": 210.98,
+      "end": 211.06
+    },
+    {
+      "word": "a",
+      "start": 211.06,
+      "end": 211.26
+    },
+    {
+      "word": "message.",
+      "start": 211.26,
+      "end": 211.54
+    },
+    {
+      "word": "That",
+      "start": 211.54,
+      "end": 211.76
+    },
+    {
+      "word": "sounds",
+      "start": 211.76,
+      "end": 212.08
+    },
+    {
+      "word": "dangerous.",
+      "start": 212.08,
+      "end": 212.54
+    },
+    {
+      "word": "So",
+      "start": 212.54,
+      "end": 212.82
+    },
+    {
+      "word": "people",
+      "start": 212.82,
+      "end": 213.06
+    },
+    {
+      "word": "just",
+      "start": 213.06,
+      "end": 213.36
+    },
+    {
+      "word": "say",
+      "start": 213.36,
+      "end": 213.52
+    },
+    {
+      "word": "\"I'm",
+      "start": 213.52,
+      "end": 213.82
+    },
+    {
+      "word": "busy\"",
+      "start": 213.82,
+      "end": 214
+    },
+    {
+      "word": "and",
+      "start": 214,
+      "end": 214.16
+    },
+    {
+      "word": "everyone",
+      "start": 214.16,
+      "end": 214.5
+    },
+    {
+      "word": "nods.",
+      "start": 214.5,
+      "end": 214.98
+    },
+    {
+      "word": "Because",
+      "start": 214.98,
+      "end": 215.24
+    },
+    {
+      "word": "everyone",
+      "start": 215.24,
+      "end": 215.52
+    },
+    {
+      "word": "else",
+      "start": 215.52,
+      "end": 215.8
+    },
+    {
+      "word": "is",
+      "start": 215.8,
+      "end": 216.08
+    },
+    {
+      "word": "also",
+      "start": 216.08,
+      "end": 216.32
+    },
+    {
+      "word": "busy",
+      "start": 216.32,
+      "end": 216.56
+    },
+    {
+      "word": "or",
+      "start": 216.56,
+      "end": 216.98
+    },
+    {
+      "word": "pretending",
+      "start": 216.98,
+      "end": 217.44
+    },
+    {
+      "word": "or",
+      "start": 217.44,
+      "end": 217.92
+    },
+    {
+      "word": "both.",
+      "start": 217.92,
+      "end": 218.48
+    },
+    {
+      "word": "So",
+      "start": 218.48,
+      "end": 218.74
+    },
+    {
+      "word": "why",
+      "start": 218.74,
+      "end": 218.88
+    },
+    {
+      "word": "does",
+      "start": 218.88,
+      "end": 219.06
+    },
+    {
+      "word": "everyone",
+      "start": 219.06,
+      "end": 219.38
+    },
+    {
+      "word": "pretend",
+      "start": 219.38,
+      "end": 219.7
+    },
+    {
+      "word": "to",
+      "start": 219.7,
+      "end": 219.82
+    },
+    {
+      "word": "be",
+      "start": 219.82,
+      "end": 220.14
+    },
+    {
+      "word": "busy?",
+      "start": 220.14,
+      "end": 220.4
+    },
+    {
+      "word": "Because",
+      "start": 220.4,
+      "end": 220.68
+    },
+    {
+      "word": "modern",
+      "start": 220.68,
+      "end": 220.92
+    },
+    {
+      "word": "life",
+      "start": 220.92,
+      "end": 221.26
+    },
+    {
+      "word": "keeps",
+      "start": 221.26,
+      "end": 221.58
+    },
+    {
+      "word": "confusing",
+      "start": 221.58,
+      "end": 222
+    },
+    {
+      "word": "activity",
+      "start": 222,
+      "end": 222.5
+    },
+    {
+      "word": "with",
+      "start": 222.5,
+      "end": 222.8
+    },
+    {
+      "word": "value.",
+      "start": 222.8,
+      "end": 223.6
+    },
+    {
+      "word": "It",
+      "start": 223.6,
+      "end": 223.88
+    },
+    {
+      "word": "rewards",
+      "start": 223.88,
+      "end": 224.1
+    },
+    {
+      "word": "the",
+      "start": 224.1,
+      "end": 224.36
+    },
+    {
+      "word": "person",
+      "start": 224.36,
+      "end": 224.58
+    },
+    {
+      "word": "who",
+      "start": 224.58,
+      "end": 224.72
+    },
+    {
+      "word": "looks",
+      "start": 224.74,
+      "end": 224.92
+    },
+    {
+      "word": "available",
+      "start": 224.92,
+      "end": 225.32
+    },
+    {
+      "word": "fast",
+      "start": 225.32,
+      "end": 225.84
+    },
+    {
+      "word": "and",
+      "start": 225.84,
+      "end": 226.02
+    },
+    {
+      "word": "overloaded,",
+      "start": 226.02,
+      "end": 226.56
+    },
+    {
+      "word": "even",
+      "start": 226.56,
+      "end": 226.84
+    },
+    {
+      "word": "when",
+      "start": 226.84,
+      "end": 227.02
+    },
+    {
+      "word": "the",
+      "start": 227.02,
+      "end": 227.16
+    },
+    {
+      "word": "real",
+      "start": 227.16,
+      "end": 227.34
+    },
+    {
+      "word": "work",
+      "start": 227.34,
+      "end": 227.54
+    },
+    {
+      "word": "needs",
+      "start": 227.54,
+      "end": 227.8
+    },
+    {
+      "word": "the",
+      "start": 227.8,
+      "end": 228.34
+    },
+    {
+      "word": "opposite.",
+      "start": 228.34,
+      "end": 228.5
+    },
+    {
+      "word": "Focus,",
+      "start": 228.78,
+      "end": 228.9
+    },
+    {
+      "word": "quiet",
+      "start": 228.9,
+      "end": 229.1
+    },
+    {
+      "word": "time,",
+      "start": 229.1,
+      "end": 229.62
+    },
+    {
+      "word": "the",
+      "start": 229.62,
+      "end": 229.7
+    },
+    {
+      "word": "problem",
+      "start": 229.7,
+      "end": 229.98
+    },
+    {
+      "word": "was",
+      "start": 229.98,
+      "end": 230.2
+    },
+    {
+      "word": "never",
+      "start": 230.2,
+      "end": 230.4
+    },
+    {
+      "word": "that",
+      "start": 230.4,
+      "end": 230.6
+    },
+    {
+      "word": "people",
+      "start": 230.6,
+      "end": 230.82
+    },
+    {
+      "word": "are",
+      "start": 230.82,
+      "end": 231.06
+    },
+    {
+      "word": "lazy.",
+      "start": 231.06,
+      "end": 231.4
+    },
+    {
+      "word": "The",
+      "start": 231.4,
+      "end": 231.64
+    },
+    {
+      "word": "problem",
+      "start": 231.64,
+      "end": 231.92
+    },
+    {
+      "word": "is",
+      "start": 231.92,
+      "end": 232.14
+    },
+    {
+      "word": "that",
+      "start": 232.14,
+      "end": 232.3
+    },
+    {
+      "word": "looking",
+      "start": 232.3,
+      "end": 232.54
+    },
+    {
+      "word": "busy",
+      "start": 232.54,
+      "end": 232.74
+    },
+    {
+      "word": "became",
+      "start": 232.74,
+      "end": 233.18
+    },
+    {
+      "word": "safer",
+      "start": 233.18,
+      "end": 233.52
+    },
+    {
+      "word": "than",
+      "start": 233.52,
+      "end": 233.68
+    },
+    {
+      "word": "looking",
+      "start": 233.68,
+      "end": 234.02
+    },
+    {
+      "word": "thoughtful.",
+      "start": 234.02,
+      "end": 234.46
+    },
+    {
+      "word": "And",
+      "start": 234.58,
+      "end": 234.9
+    },
+    {
+      "word": "once",
+      "start": 234.9,
+      "end": 235.06
+    },
+    {
+      "word": "a",
+      "start": 235.06,
+      "end": 235.18
+    },
+    {
+      "word": "whole",
+      "start": 235.18,
+      "end": 235.36
+    },
+    {
+      "word": "culture",
+      "start": 235.36,
+      "end": 235.68
+    },
+    {
+      "word": "rewards",
+      "start": 235.68,
+      "end": 236.06
+    },
+    {
+      "word": "busy,",
+      "start": 236.06,
+      "end": 236.6
+    },
+    {
+      "word": "everyone",
+      "start": 236.6,
+      "end": 236.78
+    },
+    {
+      "word": "joins",
+      "start": 236.78,
+      "end": 237.22
+    },
+    {
+      "word": "in.",
+      "start": 237.22,
+      "end": 237.98
+    },
+    {
+      "word": "Students",
+      "start": 237.98,
+      "end": 237.98
+    },
+    {
+      "word": "highlight",
+      "start": 237.98,
+      "end": 238.3
+    },
+    {
+      "word": "notes",
+      "start": 238.3,
+      "end": 238.68
+    },
+    {
+      "word": "instead",
+      "start": 238.68,
+      "end": 238.96
+    },
+    {
+      "word": "of",
+      "start": 238.96,
+      "end": 239.1
+    },
+    {
+      "word": "learning",
+      "start": 239.1,
+      "end": 239.28
+    },
+    {
+      "word": "them.",
+      "start": 239.28,
+      "end": 239.7
+    },
+    {
+      "word": "Workers",
+      "start": 239.78,
+      "end": 240
+    },
+    {
+      "word": "answer",
+      "start": 240,
+      "end": 240.44
+    },
+    {
+      "word": "messages",
+      "start": 240.44,
+      "end": 240.98
+    },
+    {
+      "word": "instead",
+      "start": 240.98,
+      "end": 241.34
+    },
+    {
+      "word": "of",
+      "start": 241.34,
+      "end": 241.5
+    },
+    {
+      "word": "solving",
+      "start": 241.5,
+      "end": 241.76
+    },
+    {
+      "word": "the",
+      "start": 241.76,
+      "end": 242.06
+    },
+    {
+      "word": "problem.",
+      "start": 242.06,
+      "end": 242.9
+    },
+    {
+      "word": "Creators",
+      "start": 242.9,
+      "end": 243.36
+    },
+    {
+      "word": "organize",
+      "start": 243.36,
+      "end": 243.76
+    },
+    {
+      "word": "their",
+      "start": 243.76,
+      "end": 244.2
+    },
+    {
+      "word": "ideas",
+      "start": 244.2,
+      "end": 244.48
+    },
+    {
+      "word": "instead",
+      "start": 244.48,
+      "end": 244.8
+    },
+    {
+      "word": "of",
+      "start": 244.8,
+      "end": 244.9
+    },
+    {
+      "word": "making",
+      "start": 244.9,
+      "end": 245.1
+    },
+    {
+      "word": "the",
+      "start": 245.1,
+      "end": 245.32
+    },
+    {
+      "word": "thing.",
+      "start": 245.32,
+      "end": 245.98
+    },
+    {
+      "word": "And",
+      "start": 245.98,
+      "end": 246.1
+    },
+    {
+      "word": "we",
+      "start": 246.1,
+      "end": 246.22
+    },
+    {
+      "word": "all",
+      "start": 246.22,
+      "end": 246.48
+    },
+    {
+      "word": "say",
+      "start": 246.48,
+      "end": 246.62
+    },
+    {
+      "word": "we",
+      "start": 246.62,
+      "end": 246.7
+    },
+    {
+      "word": "are",
+      "start": 246.7,
+      "end": 246.9
+    },
+    {
+      "word": "busy",
+      "start": 246.9,
+      "end": 247.04
+    },
+    {
+      "word": "because",
+      "start": 247.04,
+      "end": 247.4
+    },
+    {
+      "word": "saying",
+      "start": 247.4,
+      "end": 247.7
+    },
+    {
+      "word": "I",
+      "start": 247.7,
+      "end": 247.84
+    },
+    {
+      "word": "am",
+      "start": 247.84,
+      "end": 248
+    },
+    {
+      "word": "protecting",
+      "start": 248,
+      "end": 248.26
+    },
+    {
+      "word": "my",
+      "start": 248.26,
+      "end": 248.58
+    },
+    {
+      "word": "attention",
+      "start": 248.58,
+      "end": 248.84
+    },
+    {
+      "word": "from",
+      "start": 248.84,
+      "end": 249.16
+    },
+    {
+      "word": "pointless",
+      "start": 249.16,
+      "end": 249.48
+    },
+    {
+      "word": "noise",
+      "start": 249.48,
+      "end": 249.9
+    },
+    {
+      "word": "sounds",
+      "start": 249.9,
+      "end": 250.28
+    },
+    {
+      "word": "far",
+      "start": 250.28,
+      "end": 250.54
+    },
+    {
+      "word": "too",
+      "start": 250.54,
+      "end": 250.76
+    },
+    {
+      "word": "honest",
+      "start": 250.76,
+      "end": 251
+    },
+    {
+      "word": "for",
+      "start": 251,
+      "end": 251.2
+    },
+    {
+      "word": "Tuesday.",
+      "start": 251.2,
+      "end": 251.92
+    },
+    {
+      "word": "So",
+      "start": 251.92,
+      "end": 252.08
+    },
+    {
+      "word": "maybe",
+      "start": 252.08,
+      "end": 252.28
+    },
+    {
+      "word": "the",
+      "start": 252.28,
+      "end": 252.46
+    },
+    {
+      "word": "goal",
+      "start": 252.46,
+      "end": 252.64
+    },
+    {
+      "word": "is",
+      "start": 252.64,
+      "end": 252.8
+    },
+    {
+      "word": "not",
+      "start": 252.8,
+      "end": 252.96
+    },
+    {
+      "word": "to",
+      "start": 252.96,
+      "end": 253.06
+    },
+    {
+      "word": "be",
+      "start": 253.06,
+      "end": 253.18
+    },
+    {
+      "word": "less",
+      "start": 253.18,
+      "end": 253.42
+    },
+    {
+      "word": "busy.",
+      "start": 253.42,
+      "end": 254.04
+    },
+    {
+      "word": "The",
+      "start": 254.04,
+      "end": 254.12
+    },
+    {
+      "word": "goal",
+      "start": 254.12,
+      "end": 254.36
+    },
+    {
+      "word": "is",
+      "start": 254.36,
+      "end": 254.42
+    },
+    {
+      "word": "to",
+      "start": 254.42,
+      "end": 254.62
+    },
+    {
+      "word": "be",
+      "start": 254.62,
+      "end": 254.7
+    },
+    {
+      "word": "more",
+      "start": 254.7,
+      "end": 255
+    },
+    {
+      "word": "honest",
+      "start": 255,
+      "end": 255.26
+    },
+    {
+      "word": "about",
+      "start": 255.26,
+      "end": 255.52
+    },
+    {
+      "word": "what",
+      "start": 255.52,
+      "end": 255.7
+    },
+    {
+      "word": "actually",
+      "start": 255.7,
+      "end": 256.06
+    },
+    {
+      "word": "matters",
+      "start": 256.06,
+      "end": 256.34
+    },
+    {
+      "word": "because",
+      "start": 256.34,
+      "end": 256.68
+    },
+    {
+      "word": "if",
+      "start": 256.68,
+      "end": 256.92
+    },
+    {
+      "word": "everything",
+      "start": 256.92,
+      "end": 257.12
+    },
+    {
+      "word": "is",
+      "start": 257.12,
+      "end": 257.4
+    },
+    {
+      "word": "urgent",
+      "start": 257.4,
+      "end": 257.68
+    },
+    {
+      "word": "nothing",
+      "start": 257.68,
+      "end": 257.98
+    },
+    {
+      "word": "is,",
+      "start": 257.98,
+      "end": 258.46
+    },
+    {
+      "word": "and",
+      "start": 258.46,
+      "end": 258.64
+    },
+    {
+      "word": "if",
+      "start": 258.64,
+      "end": 258.76
+    },
+    {
+      "word": "your",
+      "start": 258.76,
+      "end": 258.94
+    },
+    {
+      "word": "whole",
+      "start": 258.94,
+      "end": 259.12
+    },
+    {
+      "word": "day",
+      "start": 259.12,
+      "end": 259.28
+    },
+    {
+      "word": "is",
+      "start": 259.28,
+      "end": 259.46
+    },
+    {
+      "word": "fake",
+      "start": 259.46,
+      "end": 259.66
+    },
+    {
+      "word": "emergencies,",
+      "start": 259.66,
+      "end": 260.56
+    },
+    {
+      "word": "congratulations,",
+      "start": 260.56,
+      "end": 261.4
+    },
+    {
+      "word": "you",
+      "start": 261.4,
+      "end": 261.6
+    },
+    {
+      "word": "are",
+      "start": 261.6,
+      "end": 261.76
+    },
+    {
+      "word": "not",
+      "start": 261.76,
+      "end": 261.96
+    },
+    {
+      "word": "lazy.",
+      "start": 257.14,
+      "end": 257.54
+    },
+    {
+      "word": "You",
+      "start": 257.54,
+      "end": 257.8
+    },
+    {
+      "word": "are",
+      "start": 257.8,
+      "end": 257.98
+    },
+    {
+      "word": "just",
+      "start": 257.98,
+      "end": 258.22
+    },
+    {
+      "word": "trapped",
+      "start": 258.22,
+      "end": 258.48
+    },
+    {
+      "word": "in",
+      "start": 258.48,
+      "end": 258.68
+    },
+    {
+      "word": "a",
+      "start": 258.68,
+      "end": 258.9
+    },
+    {
+      "word": "calendar",
+      "start": 258.9,
+      "end": 259.12
+    },
+    {
+      "word": "with",
+      "start": 259.12,
+      "end": 259.44
+    },
+    {
+      "word": "Wi",
+      "start": 259.44,
+      "end": 259.78
+    },
+    {
+      "word": "-Fi.",
+      "start": 259.78,
+      "end": 260.4
+    }
+  ]
+}

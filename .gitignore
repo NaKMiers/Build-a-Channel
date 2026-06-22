@@ -1,5 +1,20 @@
-.agents/skills/browse
-.gstack/
+# Why It Works — ignore generated caches and junk
+# Keep the repo to source + deliverables. Generated/derived files are regenerable.
 
-# HyperFrames section-preview cache (local only; paths can exceed Windows MAX_PATH)
-**/.thumbnails/
+# HyperFrames thumbnail caches (auto-generated; mirror the asset tree and create
+# very long nested paths that break Windows' path limit — never commit these).
+.thumbnails/
+
+# Node / tooling
+node_modules/
+.cache/
+*.log
+
+# Temp / scratch decode artifacts
+*.raw
+*.tmp
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini

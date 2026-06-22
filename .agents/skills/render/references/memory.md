@@ -23,6 +23,8 @@ Use this file for section preview structure, port behavior, HyperFrames CLI habi
 - If the required port is occupied by an unrelated process, stop and report the conflict.
 - Use one video-level shared asset library at `projects/<slug>/assets/`.
 - Use local section `assets` junctions instead of copied asset folders.
+- Keep asset filenames SHORT (kebab `<subject>-<n>.jpg`); put photographer/source/license in `ATTRIBUTION.md`, not the filename. Long descriptive+attribution filenames nested under `section-previews/section-XX-.../assets/visual-references/section-XX-.../...` overflow Windows `MAX_PATH` and break `git add` (`Filename too long`). Do not repeat the long section slug twice in one path.
+- HyperFrames preview/Studio and `snapshot` generate a `.thumbnails/` cache that MIRRORS the asset tree under the preview folder — these are the deepest, longest paths in the repo. They are regenerable and `.gitignore`d; never commit them. If a `git add` fails on a long path, it is almost always a `.thumbnails/` file — delete the `.thumbnails/` dirs (`find . -type d -name .thumbnails | xargs rm -rf`) and re-add.
 - Inspect real-world visual references and source notes from the selected visual plan before using generated support assets.
 - Treat generated images as controlled support bases unless the visual plan explicitly approves them as primary.
 - Before using a planned image as a direct scene base, compare it against adjacent big scenes. If a non-callback scene repeats the same background, object setup, camera language, or material mood, rebuild it as a more distinct CSS/self-made/generated scene and document the reason.
