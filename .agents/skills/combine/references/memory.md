@@ -38,6 +38,37 @@ Use this file for assembly mechanics, HyperFrames mounting/asset-resolution beha
 
 Watch `data-start + data-duration` overflowing the next offset by ~1e-15 → `overlapping_clips_same_track`. Trim a hundredth of a second when it triggers (e.g. section host or a cue duration `7.38 -> 7.37`).
 
+### 2026-06-22 - The review mirror can lag the live section file — source/refresh from live
+
+Classification: `Operational lesson`
+
+Context:
+On `why-everyone-pretends-to-be-busy`, the first combine sourced `hyperframes/review/section-XX.html`
+(the mirror). But several sections had later edits (user/linter CSS tweaks; a giant-WIT change that
+landed AFTER the first combine) that were not re-synced to the mirror, so the combined video shipped
+stale section code. The owner caught it ("use the latest code … previously outdated").
+
+Lesson:
+The mirror is only as current as the last sync. Before combining, DIFF each
+`section-previews/<section>/index.html` (the live, server-served file = source of truth) against its
+`hyperframes/review/section-XX.html`; if any differ, refresh the mirror from live first (or source the
+compositions directly from `section-previews`). Then build `compositions/section-XX.html` from the
+current file (audio stripped). Cheap one-liner: `diff -q live mirror` per section.
+
+Audio note: if only visuals/WIT/layout changed (no voiceover regenerated), the section mp3 durations
+are unchanged — keep the existing `combined-voiceover.mp3` and offsets; only re-copy the compositions
+and re-consolidate assets. Regenerate the combined audio only when a section's AUDIO actually changed.
+
+Apply next time:
+- diff live vs mirror for all sections at the start of combine; refresh stale mirrors from live
+- prefer the live `section-previews` file as the composition source when in doubt
+- keep combined audio/offsets if no audio changed; just refresh comps + assets
+- watch for zombie `chrome-headless-shell` processes after many snapshots — they exhaust memory and
+  make `snapshot` hit "Navigation timeout"; kill them (`Stop-Process`) and retry
+
+Promote to shared memory:
+No; combine-skill execution practice.
+
 ## Feedback Log
 
 ### 2026-06-21 - Skill Created From The Unified Full-Video Build

@@ -41,11 +41,20 @@ Note: the preview server resolves the project id/title from the launch context. 
 
 ## Combine (full video)
 
-- Status: `assembled — unified preview on localhost:1000` (2026-06-22, `/combine`).
+- Status: `re-assembled from LATEST section code — unified preview on localhost:1000` (2026-06-22, `/combine` rerun).
+- Rerun reason: the first combine sourced the review mirrors, which were stale for S3/S5/S6/S7 (later user/linter tweaks) and S4 (giant-WIT change landed after). Rebuilt sourcing each section's LIVE `section-previews/.../index.html`; re-synced all 7 mirrors to match; refreshed consolidated assets. Audio unchanged (no voiceover edits) so `combined-voiceover.mp3` (265.20s) + offsets were kept. Re-lint 0 err; per-section snapshots confirm latest code (S4 now giant-WIT + shifted app grid).
 - Output: `hyperframes/full-video/` (parent `index.html` mounts `compositions/section-01..07.html` audio-stripped; consolidated `assets/` + `combined-voiceover.mp3` at root). Assembly-only — no section content changed, no MP4/WebM exported.
 - Combined voiceover: 7 section mp3s concatenated (ffmpeg stream-copy) = **265.20s** (~4:25). Section offsets (actual mp3 durations): S1 0 / S2 21.120 / S3 50.136 / S4 95.280 / S5 137.472 / S6 180.384 / S7 218.424.
 - Each section mounted on its own track (1–7); one combined `<audio>` on track 10. Lint 0 errors; per-section snapshots confirm all bases/real-UI/WIT resolve at root.
 - NOTE: S1–S3 audio is 0.84, S4–S7 is 0.86 — the combined track therefore mixes the two deliveries. If S1–S3 voiceover is regenerated at 0.86, re-concatenate `combined-voiceover.mp3` and re-pin section offsets.
+
+## Export (MP4)
+
+- Status: `exported` (2026-06-22, explicit user request) → `renders/full-video.mp4`.
+- Source: the unified `hyperframes/full-video/` composition (latest section code). Command: `hyperframes render . --quality standard --fps 30` with the static ffmpeg/ffprobe on PATH (`$TEMP/wiw-ffbin/`; HyperFrames needs FFmpeg to encode — it is NOT on the system PATH by default, so prepend the static-binary dir before `render`).
+- Output: **30.5 MB · H.264 1920×1080 @30fps · AAC 48kHz stereo · 265.22s** (~4:25). 7,956 frames, 6 capture workers, hardware-GPU.
+- QA: extracted frames at 8/60/110/186/240s — all render full content (incl. S4 giant-WIT app grid). 
+- NOTE: combined track mixes 0.84 (S1–S3) + 0.86 (S4–S7) delivery; re-export after unifying audio if desired. Re-render at `--quality high` for a final master if wanted.
 
 ## Shared Asset Rules
 
