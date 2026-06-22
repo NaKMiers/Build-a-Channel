@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Section 02 Reframe - Why Everyone Pretends To Be Busy</title>
+  <style>
+    @font-face {
+      font-family: "PatrickHandLocal";
+      src: url("./assets/fonts/patrick-hand-latin.woff2") format("woff2");
+      font-weight: 400; font-style: normal; font-display: block;
+    }
+    :root { --ink: #1b1510; --red: #b9362c; --red-deep: #7d1714; --cream: #fff7d8; --blue: #cfe2ec; --sale: #f0c63d; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #14110d; color: var(--ink); overflow: hidden; }
+    #Section02Reframe { position: relative; width: 1920px; height: 1080px; overflow: hidden; background: #14110d; font-family: "PatrickHandLocal"; }
+    .scene, .cue { position: absolute; inset: 0; width: 100%; height: 100%; overflow: hidden; }
+    .scene { z-index: 1; will-change: opacity, transform, filter; }
+    .cue { z-index: 5; pointer-events: none; }
+    .photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; user-select: none; pointer-events: none; }
+    .photo.work { filter: saturate(1.03) contrast(1.04) brightness(1.0); }
+    .photo.think { filter: saturate(1.02) contrast(1.05) brightness(1.02); }
+    .photo.meet { filter: saturate(1.02) contrast(1.04) brightness(1.0); }
+    .photo.idea { filter: saturate(1.06) contrast(1.06) brightness(1.0); }
+    .shade { position: absolute; inset: 0; z-index: 2; background: linear-gradient(0deg, rgba(20,16,12,0.30), transparent 50%); }
+    .label {
+      position: absolute; display: inline-flex; align-items: center; justify-content: center;
+      min-height: 70px; padding: 14px 28px 18px; background: var(--cream);
+      border: 7px solid var(--ink); border-radius: 7px; box-shadow: 12px 14px 0 rgba(27,21,16,0.22);
+      color: var(--ink); font-size: 64px; line-height: 0.92; text-align: center; transform: rotate(-2deg); z-index: 8;
+    }
+    .label.small { font-size: 46px; padding: 12px 22px 16px; }
+    .label.blue { background: var(--blue); }
+    .label.yellow { background: var(--sale); }
+    .label.red { background: #fff5f1; color: var(--red-deep); border-color: var(--red-deep); }
+    .stamp { position: absolute; z-index: 9; padding: 12px 26px 17px; color: var(--red-deep); border: 9px solid var(--red-deep); background: #fff5f1; font-size: 80px; line-height: 0.86; transform: rotate(-10deg); }
+    .wit { position: absolute; object-fit: contain; z-index: 9; filter: drop-shadow(15px 18px 0 rgba(0,0,0,0.30)); transform-origin: center center; }
+    .label, .stamp, .wit { will-change: opacity, transform; }
+  </style>
+</head>
+<body>
+  <div id="Section02Reframe" data-composition-id="Section02Reframe" data-start="0" data-duration="28.949" data-width="1920" data-height="1080">
+
+    <!-- SCENE A: the look of work (typing) 0-9.64 -->
+    <div id="scene-a" class="clip scene" data-start="0" data-duration="9.64" data-track-index="1">
+      <img class="photo work" src="./assets/visual-references/section-02-reframe-looking-busy-vs-doing-work/base-typing.jpg" alt="">
+      <div class="shade"></div>
+    </div>
+    <!-- SCENE B: thinking is invisible (blank notebook, dark wood) 9.6-14.38 -->
+    <div id="scene-b" class="clip scene" data-start="9.6" data-duration="4.78" data-track-index="3">
+      <img class="photo think" src="./assets/visual-references/section-02-reframe-looking-busy-vs-doing-work/base-think.jpg" alt="">
+    </div>
+    <!-- SCENE C: you can see busy (meeting room) 14.3-19.88 -->
+    <div id="scene-c" class="clip scene" data-start="14.3" data-duration="5.58" data-track-index="4">
+      <img class="photo meet" src="./assets/visual-references/section-02-reframe-looking-busy-vs-doing-work/base-meeting.jpg" alt="">
+      <div class="shade"></div>
+    </div>
+    <!-- SCENE D: real work hides (glowing bulb on black) 19.84-28.949 -->
+    <div id="scene-d" class="clip scene" data-start="19.84" data-duration="9.109" data-track-index="5">
+      <img class="photo idea" src="./assets/visual-references/section-02-reframe-looking-busy-vs-doing-work/base-idea.jpg" alt="">
+    </div>
+
+    <!-- CUE 1: 0.0 "Now, this is not a video about lazy people..." -->
+    <div id="cue-1" class="clip cue" data-start="0" data-duration="3.2" data-track-index="2">
+      <div class="label notlazy" style="left: 50%; top: 120px; width: 760px; transform: translateX(-50%) rotate(-2deg);">NOT LAZY PEOPLE</div>
+    </div>
+    <!-- CUE 2: 3.2 "...rewards the look of work more than the work itself." -->
+    <div id="cue-2" class="clip cue" data-start="3.2" data-duration="6.40" data-track-index="2">
+      <div class="label yellow lookwork" style="left: 110px; top: 120px; width: 760px;">THE LOOK OF WORK</div>
+      <div class="label red morethan" style="left: 150px; top: 320px; width: 800px;">&gt; THE WORK ITSELF</div>
+    </div>
+    <!-- CUE 3: 9.64 "real progress is hard to see. thinking looks like nothing." -->
+    <div id="cue-3" class="clip cue" data-start="9.64" data-duration="4.62" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="label blue hardsee" style="right: 110px; top: 120px; width: 640px;">REAL PROGRESS:<br>HARD TO SEE</div>
+      <div class="label small nothing" style="right: 150px; top: 360px; width: 540px;">LOOKS LIKE NOTHING</div>
+      <img class="wit thinkw" data-layout-allow-overflow="" style="left: -150px; bottom: -460px; width: 1040px;" src="./assets/wit/wit-pose-thinking.png" alt="">
+    </div>
+    <!-- CUE 4: 14.30 "But busy is easy to see. You can see meetings... fast typing... a serious face..." -->
+    <div id="cue-4" class="clip cue" data-start="14.30" data-duration="5.50" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="label yellow l-meet" style="left: 90px; top: 110px; width: 560px;">MEETINGS</div>
+      <div class="label yellow l-type" style="left: 90px; top: 300px; width: 560px;">FAST TYPING</div>
+      <div class="label yellow l-face" style="left: 90px; top: 490px; width: 620px;">SERIOUS FACE</div>
+      <img class="wit typew" data-layout-allow-overflow="" style="right: -220px; bottom: -560px; width: 1240px;" src="./assets/wit/wit-pose-typing-on-laptop.png" alt="">
+    </div>
+    <!-- CUE 5: 19.84 "So we trust the things we can see, and we quietly ignore the things we cannot." -->
+    <div id="cue-5" class="clip cue" data-start="19.84" data-duration="4.42" data-track-index="2">
+      <div class="label trust" style="left: 110px; top: 120px; width: 800px;">WE TRUST WHAT WE SEE</div>
+      <div class="label red ignore" style="left: 150px; top: 320px; width: 820px;">IGNORE WHAT WE CAN'T</div>
+    </div>
+    <!-- CUE 6: 24.30 "...the real work usually hides in the part you cannot see." -->
+    <div id="cue-6" class="clip cue" data-start="24.30" data-duration="4.60" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="label red hides" style="left: 100px; top: 130px; width: 820px;">REAL WORK<br>HIDES HERE</div>
+      <img class="wit deadw" data-layout-allow-overflow="" style="right: -300px; bottom: -520px; width: 1180px;" src="./assets/wit/wit-pose-deadpan-side-eye.png" alt="">
+    </div>
+
+    <audio id="voiceover-section-02" data-start="0" data-duration="28.949" data-track-index="10" data-volume="1" crossorigin="anonymous" src="./section-02-reframe-looking-busy-vs-doing-work-david23-am_eric-0.84.mp3"></audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true, defaults: { overwrite: "auto" } });
+      const reveal = (target, hideAt, at, fromVars, toVars = {}) => {
+        const r = {};
+        if ("x" in fromVars) r.x = 0; if ("y" in fromVars) r.y = 0;
+        if ("scale" in fromVars) r.scale = 1; if ("opacity" in fromVars) r.opacity = 1;
+        tl.set(target, fromVars, hideAt); tl.to(target, { ...r, ...toVars }, at);
+      };
+      const show = (t, hideAt, at) => { tl.set(t, { opacity: 0 }, hideAt); tl.set(t, { opacity: 1 }, at); };
+      const smash = (t, hideAt, at, fv = { y: 22, scale: 1.3, opacity: 0 }) => reveal(t, hideAt, at, fv, { duration: 0.18, ease: "back.out(1.9)" });
+
+      tl.fromTo("#scene-b", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 9.6);
+      tl.fromTo("#scene-c", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 14.3);
+      tl.fromTo("#scene-d", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 19.84);
+
+      // C1
+      show("#cue-1 .notlazy", 0, 1.50);
+      // C2 — thesis: look of work (7.72), > the work itself smash (8.42)
+      show("#cue-2 .lookwork", 3.2, 7.72);
+      smash("#cue-2 .morethan", 3.2, 8.42);
+      // C3 — quiet desk; WIT thinking; hard-to-see (10.8); looks-like-nothing (12.02)
+      show("#cue-3 .thinkw", 9.64, 9.86);
+      show("#cue-3 .hardsee", 9.64, 10.80);
+      show("#cue-3 .nothing", 9.64, 12.02);
+      // C4 — meeting room; WIT typing; staggered list: meetings(16.06), fast typing(16.9), serious face(18.32)
+      show("#cue-4 .typew", 14.30, 14.60);
+      show("#cue-4 .l-meet", 14.30, 16.06);
+      show("#cue-4 .l-type", 14.30, 16.90);
+      show("#cue-4 .l-face", 14.30, 18.32);
+      // C5 — trust(20.18), ignore(22.22)
+      show("#cue-5 .trust", 19.84, 20.18);
+      smash("#cue-5 .ignore", 19.84, 22.22, { y: 16, scale: 1.1, opacity: 0 });
+      // C6 — WIT deadpan; real work hides (26.02)
+      show("#cue-6 .deadw", 24.30, 25.60);
+      show("#cue-6 .hides", 24.30, 26.02);
+
+      window.__timelines["Section02Reframe"] = tl;
+    </script>
+  </div>
+</body>
+</html>

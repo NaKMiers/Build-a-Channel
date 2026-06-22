@@ -113,7 +113,13 @@ Avoid:
 - private data
 - unclear copyrighted images
 - pixel-copied app screens
-- real logos unless there is a specific approved reason
+- real logos used to imply endorsement or a fake claim, or pixel-copied private screenshots
+
+Standing technique (owner-approved 2026-06-22): real recognizable UI is a PREFERRED illustration
+device — phone/iPhone mockups, real app icons (Gmail, Messenger, To Do, Google Calendar, etc.), and
+app/notification/chat screens — whenever the script depicts those actual apps/products/screens. Build
+them in CSS with real icon PNGs (from Wikimedia Commons), used editorially. See `brand-system.md` →
+"Real-UI Illustration."
 - generic stock images that do not explain the point
 
 Channel-wide reusable assets should be rare and high-value. Most video-specific assets belong inside `projects/<slug>/assets/`.

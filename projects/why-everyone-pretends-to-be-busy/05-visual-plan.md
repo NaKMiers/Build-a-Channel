@@ -30,9 +30,9 @@ Source files:
 | # | Section | Status | Duration | Big Scenes | Cue States | Section plan | Reference board | Notes |
 |---:|---|---|---:|---:|---:|---|---|---|
 | 1 | Hook: The Busy Trap | draft visual plan for approval | 21.056s | 3 | 7 | `visual-plan/section-01-hook-the-busy-trap/section-01-hook-the-busy-trap-visual-plan.md` | `visual-plan/section-01-hook-the-busy-trap/reference-board.md` | 2 PD bases + 4 WIT poses; calendar bookend motif |
-| 2 | Reframe: Looking Busy vs Doing Work | not planned | 28.949s | — | — | — | — | voiceover ready (0.84) |
-| 3 | Busy Became A Status Symbol | not planned | 45.077s | — | — | — | — | voiceover ready (0.84) |
-| 4 | Your Apps Invented Emergencies | not planned | 42.133s | — | — | — | — | voiceover ready (0.86) |
+| 2 | Reframe: Looking Busy vs Doing Work | draft visual plan for approval | 28.949s | 4 | 6 | `visual-plan/section-02-reframe-looking-busy-vs-doing-work/section-02-reframe-looking-busy-vs-doing-work-visual-plan.md` | `visual-plan/section-02-reframe-looking-busy-vs-doing-work/reference-board.md` | CC0 real photos (Openverse); word-timed; visible-vs-invisible contrast |
+| 3 | Busy Became A Status Symbol | revised — 5 scenes, varied WIT | 45.077s | 5 | 9 | `visual-plan/section-03-busy-became-a-status-symbol/section-03-busy-became-a-status-symbol-visual-plan.md` | `visual-plan/section-03-busy-became-a-status-symbol/reference-board.md` | CC0 (trophy/coffee/beach/meeting/clock); word-timed; 6 WIT poses |
+| 4 | Your Apps Invented Emergencies | revised — 5 scenes, full-HD | 42.133s | 5 | 9 | `visual-plan/section-04-your-apps-invented-emergencies/section-04-your-apps-invented-emergencies-visual-plan.md` | `visual-plan/section-04-your-apps-invented-emergencies/reference-board.md` | full-HD CC (phone/button/alarm/fridge) + CSS notifications; word-timed; 5 WIT poses |
 | 5 | Visible Work Beats Quiet Thinking | not planned | 42.859s | — | — | — | — | voiceover ready (0.86) |
 | 6 | "I'm Busy" Is A Shield | not planned | 37.973s | — | — | — | — | voiceover ready (0.86) |
 | 7 | Payoff: Activity Is Not Value | not planned | 46.72s | — | — | — | — | voiceover ready (0.86) |

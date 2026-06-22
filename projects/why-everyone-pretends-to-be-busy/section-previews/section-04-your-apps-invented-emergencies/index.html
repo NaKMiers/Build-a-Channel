@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Section 04 Your Apps Invented Emergencies - Why Everyone Pretends To Be Busy</title>
+  <style>
+    @font-face { font-family: "PatrickHandLocal"; src: url("./assets/fonts/patrick-hand-latin.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
+    :root { --ink:#1b1510; --red:#b9362c; --red-deep:#7d1714; --cream:#fff7d8; --blue:#cfe2ec; --sale:#f0c63d; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #14110d; color: var(--ink); overflow: hidden; }
+    #Section04Apps { position: relative; width: 1920px; height: 1080px; overflow: hidden; background: #14110d; font-family: "PatrickHandLocal"; }
+    .scene, .cue { position: absolute; inset: 0; width: 100%; height: 100%; overflow: hidden; }
+    .scene { z-index: 1; will-change: opacity, transform, filter; }
+    .cue { z-index: 5; pointer-events: none; }
+    .photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; user-select: none; pointer-events: none; }
+    .photo.alarm { filter: saturate(1.06) contrast(1.06) brightness(1.04); }
+    .photo.fridge { filter: saturate(1.06) contrast(1.04) brightness(1.04); }
+    .shade { position: absolute; inset: 0; z-index: 2; background: linear-gradient(0deg, rgba(20,16,12,0.32), transparent 52%); }
+
+    /* ---- iPhone (scene 1) ---- */
+    .deskbg { position:absolute; inset:0; background: radial-gradient(ellipse 60% 60% at 50% 40%, #2a2f3a, #14161c 75%); }
+    .iphone { position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:540px; height:1060px; background:#0a0c10; border:14px solid #202226; border-radius:62px; box-shadow:24px 30px 0 rgba(0,0,0,0.35); overflow:hidden; z-index:3; }
+    .iphone .wall { position:absolute; inset:0; background: linear-gradient(160deg, #1d2b4d, #3a1d4d 60%, #10131c); }
+    .notch { position:absolute; top:18px; left:50%; transform:translateX(-50%); width:172px; height:34px; background:#000; border-radius:18px; z-index:4; }
+    .iclock { position:absolute; top:110px; left:0; right:0; text-align:center; color:#fff; z-index:4; }
+    .iclock .t { font-family:"Segoe UI",system-ui,sans-serif; font-weight:300; font-size:120px; line-height:1; }
+    .iclock .d { font-family:"Segoe UI",system-ui,sans-serif; font-size:33px; opacity:0.92; margin-top:6px; }
+    .notif { position:absolute; left:22px; right:22px; height:104px; display:flex; align-items:center; gap:16px; padding:0 18px; background:rgba(245,245,247,0.95); border-radius:24px; z-index:5; box-shadow:0 6px 16px rgba(0,0,0,0.28); }
+    .notif img { width:60px; height:60px; border-radius:14px; flex:0 0 auto; }
+    .notif .tx { font-family:"Segoe UI",system-ui,sans-serif; color:#111; line-height:1.05; }
+    .notif .tx b { display:block; font-size:30px; }
+    .notif .tx span { font-size:26px; color:#555; }
+    .notif .badge-r { margin-left:auto; min-width:36px; height:36px; border-radius:50%; background:#ff3b30; color:#fff; font-family:"Segoe UI",system-ui,sans-serif; font-size:22px; display:flex; align-items:center; justify-content:center; padding:0 8px; }
+
+    /* ---- app-icon overload grid (scene 2) ---- */
+    .gridbg { position:absolute; inset:0; background: radial-gradient(ellipse 70% 70% at 50% 42%, #232a36, #0e1016 80%); }
+    .appgrid { position:absolute; left:50%; top:46%; transform:translate(-50%,-50%); display:grid; grid-template-columns:repeat(3, 240px); grid-template-rows:repeat(2, 240px); gap:70px 120px; z-index:3; }
+    .apptile { position:relative; }
+    .apptile img { width:230px; height:230px; border-radius:50px; box-shadow:0 12px 0 rgba(0,0,0,0.3); }
+    .abadge { position:absolute; top:-22px; right:-22px; min-width:78px; height:78px; padding:0 16px; border-radius:39px; background:#ff3b30; border:6px solid #fff; color:#fff; font-family:"Segoe UI",system-ui,sans-serif; font-size:42px; display:flex; align-items:center; justify-content:center; z-index:4; box-shadow:0 6px 0 rgba(0,0,0,0.3); }
+
+    /* ---- chat conversation (scene 4) ---- */
+    .chatbg { position:absolute; inset:0; background:#ece5dd; }
+    .chathead { position:absolute; top:0; left:0; right:0; height:130px; background:#2a2f3a; display:flex; align-items:center; gap:24px; padding:0 60px; z-index:4; }
+    .chathead img { width:78px; height:78px; border-radius:50%; }
+    .chathead .nm { font-family:"Segoe UI",system-ui,sans-serif; color:#fff; font-size:46px; }
+    .msg { position:absolute; max-width:780px; padding:22px 34px; font-family:"Segoe UI",system-ui,sans-serif; font-size:46px; line-height:1.1; z-index:5; box-shadow:0 4px 10px rgba(0,0,0,0.12); }
+    .msg.in { left:90px; background:#fff; color:#111; border-radius:8px 34px 34px 34px; }
+    .msg.out { right:90px; background:#1f8aff; color:#fff; border-radius:34px 8px 34px 34px; }
+    .reaction { position:absolute; width:150px; height:150px; border-radius:50%; background:var(--sale); border:8px solid var(--ink); display:flex; align-items:center; justify-content:center; z-index:6; box-shadow:0 8px 0 rgba(0,0,0,0.3); }
+    .reaction img { width:108px; height:108px; }
+
+    /* ---- shared overlays ---- */
+    .label { position:absolute; display:inline-flex; align-items:center; justify-content:center; min-height:62px; padding:12px 26px 16px; background:var(--cream); border:7px solid var(--ink); border-radius:7px; box-shadow:12px 14px 0 rgba(27,21,16,0.24); color:var(--ink); font-size:56px; line-height:0.95; text-align:center; transform:rotate(-2deg); z-index:8; }
+    .label.small { font-size:40px; padding:10px 20px 14px; }
+    .label.red { background:#fff5f1; color:var(--red-deep); border-color:var(--red-deep); }
+    .label.yellow { background:var(--sale); }
+    .stamp { position:absolute; z-index:9; padding:12px 24px 16px; color:var(--red-deep); border:9px solid var(--red-deep); background:#fff5f1; font-size:70px; line-height:0.86; transform:rotate(-11deg); }
+    .red-circle { position:absolute; border:12px solid var(--red); border-radius:50%; z-index:8; transform:rotate(-8deg); }
+    .wit { position:absolute; object-fit:contain; z-index:9; filter:drop-shadow(15px 18px 0 rgba(0,0,0,0.30)); transform-origin:center center; }
+    .label, .stamp, .red-circle, .wit, .notif, .abadge, .msg, .reaction { will-change: opacity, transform; }
+  </style>
+</head>
+<body>
+  <div id="Section04Apps" data-composition-id="Section04Apps" data-start="0" data-duration="42.133" data-width="1920" data-height="1080">
+
+    <!-- SCENE 1: iPhone notification screen (notifications inside the phone) 0-12.96 -->
+    <div id="scene-1" class="clip scene" data-start="0" data-duration="12.96" data-track-index="1">
+      <div class="deskbg"></div>
+      <div class="iphone">
+        <div class="wall"></div>
+        <div class="notch"></div>
+        <div class="iclock"><div class="t">9:41</div><div class="d">Tuesday, October 24</div></div>
+        <div class="notif n-mail" style="top: 300px;"><img src="./assets/visual-references/section-04-your-apps-invented-emergencies/icons/gmail.png" alt=""><div class="tx"><b>Gmail</b><span>1 new email</span></div><div class="badge-r">1</div></div>
+        <div class="notif n-chat" style="top: 420px;"><img src="./assets/visual-references/section-04-your-apps-invented-emergencies/icons/messenger.png" alt=""><div class="tx"><b>Messenger</b><span>3 new messages</span></div><div class="badge-r">3</div></div>
+        <div class="notif n-task" style="top: 540px;"><img src="./assets/visual-references/section-04-your-apps-invented-emergencies/icons/todo.png" alt=""><div class="tx"><b>To Do</b><span>Task due today</span></div><div class="badge-r">!</div></div>
+        <div class="notif n-cal" style="top: 660px;"><img src="./assets/visual-references/section-04-your-apps-invented-emergencies/icons/gcal.png" alt=""><div class="tx"><b>Calendar</b><span>Meeting in 5 min</span></div><div class="badge-r">!</div></div>
+      </div>
+    </div>
+    <!-- SCENE 2: app-icon overload grid (badges inside tiles) 12.92-23.14 -->
+    <div id="scene-2" class="clip scene" data-start="12.92" data-duration="10.22" data-track-index="3">
+      <div class="gridbg"></div>
+      <div class="appgrid">
+        <div class="apptile"><img src="./assets/visual-references/section-04-your-apps-invented-emergencies/icons/gmail.png" alt=""><div class="abadge ab1">12</div></div>
+        <div class="apptile"><img src="./assets/visual-references/section-04-your-apps-invented-emergencies/icons/messenger.png" alt=""><div class="abadge ab2">99+</div></div>
+        <div class="apptile"><img src="./assets/visual-references/section-04-your-apps-invented-emergencies/icons/todo.png" alt=""><div class="abadge ab3">5</div></div>
+        <div class="apptile"><img src="./assets/visual-references/section-04-your-apps-invented-emergencies/icons/gcal.png" alt=""><div class="abadge ab4">8</div></div>
+        <div class="apptile"><img src="./assets/visual-references/section-04-your-apps-invented-emergencies/icons/whatsapp.png" alt=""><div class="abadge ab5">47</div></div>
+        <div class="apptile"><img src="./assets/visual-references/section-04-your-apps-invented-emergencies/icons/slack.png" alt=""><div class="abadge ab6">3</div></div>
+      </div>
+    </div>
+    <!-- SCENE 3: every ping = emergency (fire alarm) 23.1-27.66 -->
+    <div id="scene-3" class="clip scene" data-start="23.1" data-duration="4.56" data-track-index="4">
+      <img class="photo alarm" src="./assets/visual-references/section-04-your-apps-invented-emergencies/base-alarm.jpg" alt="">
+      <div class="shade"></div>
+    </div>
+    <!-- SCENE 4: chat conversation (bubbles inside scene) 27.62-34.54 -->
+    <div id="scene-4" class="clip scene" data-start="27.62" data-duration="6.92" data-track-index="5">
+      <div class="chatbg"></div>
+      <div class="chathead"><img src="./assets/visual-references/section-04-your-apps-invented-emergencies/icons/messenger.png" alt=""><div class="nm">Team chat</div></div>
+      <div class="msg in m1" style="top: 220px;">Quick question?</div>
+      <div class="msg out m2" style="top: 370px;">REPLY</div>
+      <div class="msg in m3" style="top: 510px;">and this one?</div>
+      <div class="msg out m4" style="top: 650px;">REPLY AGAIN</div>
+      <div class="reaction react" style="right: 150px; top: 800px;"><img src="./assets/visual-references/section-04-your-apps-invented-emergencies/icons/thumbup.png" alt=""></div>
+    </div>
+    <!-- SCENE 5: sad vegetable in fridge 34.5-42.133 -->
+    <div id="scene-5" class="clip scene" data-start="34.5" data-duration="7.633" data-track-index="6">
+      <img class="photo fridge" src="./assets/visual-references/section-04-your-apps-invented-emergencies/base-fridge.jpg" alt="">
+      <div class="shade"></div>
+    </div>
+
+    <!-- C1 0.0 "our tools invented emergencies." -->
+    <div id="cue-1" class="clip cue" data-start="0" data-duration="3.50" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="label red toolslabel" style="left: 60px; top: 80px; width: 620px;">TOOLS INVENTED<br>EMERGENCIES</div>
+      <img class="wit suspw" data-layout-allow-overflow="" style="right: -300px; bottom: -540px; width: 1020px;" src="./assets/wit/wit-pose-suspicious.png" alt="">
+    </div>
+    <!-- C3 12.96 "five apps interrupting each other." -->
+    <div id="cue-3" class="clip cue" data-start="12.96" data-duration="3.30" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="label fiveapps" style="left: 60px; top: 70px; width: 700px;">FIVE APPS,<br>INTERRUPTING</div>
+      <img class="wit panicw" data-layout-allow-overflow="" style="right: -240px; bottom: -650px; width: 1240px;" src="./assets/wit/wit-pose-holding-phone-panic.png" alt="">
+    </div>
+    <!-- C4 16.32 "everything has a red dot, a number, urgent" (URGENT label; badges live in scene 2) -->
+    <div id="cue-4" class="clip cue" data-start="16.32" data-duration="3.22" data-track-index="2">
+      <div class="label red urgent" style="right: 90px; top: 80px; width: 420px;">URGENT</div>
+    </div>
+    <!-- C5 19.58 "please ignore this until next week is bad design" -->
+    <div id="cue-5" class="clip cue" data-start="19.58" data-duration="3.52" data-track-index="2">
+      <div class="label small ignorenote" style="left: 70px; top: 90px; width: 700px;">"PLEASE IGNORE TIL NEXT WEEK"</div>
+      <div class="stamp baddesign" style="left: 110px; bottom: 150px;">BAD DESIGN</div>
+    </div>
+    <!-- C6 23.14 "your brain treats every notification like a real emergency" -->
+    <div id="cue-6" class="clip cue" data-start="23.14" data-duration="4.48" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="label red pinglabel" style="right: 80px; top: 90px; width: 760px;">EVERY PING =<br>EMERGENCY?</div>
+      <img class="wit trapw" data-layout-allow-overflow="" style="left: -160px; bottom: -520px; width: 1100px;" src="./assets/wit/wit-pose-trapped-by-app-screen.png" alt="">
+    </div>
+    <!-- C7 27.66 (WIT only; chat bubbles live in scene 4) -->
+    <div id="cue-7" class="clip cue" data-start="27.66" data-duration="3.08" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <img class="wit confw" data-layout-allow-overflow="" style="right: -320px; bottom: -560px; width: 1020px;" src="./assets/wit/wit-pose-confused.png" alt="">
+    </div>
+    <!-- C8 30.78 "thumbs up ... files this under progress." (PROGRESS label; reaction lives in scene 4) -->
+    <div id="cue-8" class="clip cue" data-start="30.78" data-duration="3.72" data-track-index="2">
+      <div class="label red progress" style="left: 120px; top: 820px; width: 480px;">PROGRESS?</div>
+    </div>
+    <!-- C9 34.54 fridge -->
+    <div id="cue-9" class="clip cue" data-start="34.54" data-duration="7.55" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="red-circle rc" style="left: 1070px; top: 430px; width: 330px; height: 250px;"></div>
+      <div class="label red realwork" style="left: 80px; top: 90px; width: 600px;">REAL WORK</div>
+      <div class="label small goingbad" style="left: 110px; top: 280px; width: 520px;">STILL HERE · GOING BAD</div>
+      <div class="label yellow sadveg" style="right: 90px; top: 90px; width: 600px;">A SAD VEGETABLE</div>
+      <img class="wit defeatw" data-layout-allow-overflow="" style="left: -200px; bottom: -540px; width: 1060px;" src="./assets/wit/wit-pose-tiny-defeated.png" alt="">
+    </div>
+
+    <audio id="voiceover-section-04" data-start="0" data-duration="42.133" data-track-index="10" data-volume="1" crossorigin="anonymous" src="./section-04-your-apps-invented-emergencies-david23-am_eric-0.86.mp3"></audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true, defaults: { overwrite: "auto" } });
+      const reveal = (t, hideAt, at, fv, tv = {}) => { const r = {}; if ("x" in fv) r.x = 0; if ("y" in fv) r.y = 0; if ("scale" in fv) r.scale = 1; if ("opacity" in fv) r.opacity = 1; tl.set(t, fv, hideAt); tl.to(t, { ...r, ...tv }, at); };
+      const show = (t, hideAt, at) => { tl.set(t, { opacity: 0 }, hideAt); tl.set(t, { opacity: 1 }, at); };
+      const smash = (t, hideAt, at, fv = { y: 20, scale: 1.3, opacity: 0 }) => reveal(t, hideAt, at, fv, { duration: 0.18, ease: "back.out(1.9)" });
+
+      tl.fromTo("#scene-2", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 12.92);
+      tl.fromTo("#scene-3", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 23.1);
+      tl.fromTo("#scene-4", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 27.62);
+      tl.fromTo("#scene-5", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 34.5);
+
+      show("#cue-1 .suspw", 0, 0.40);
+      show("#cue-1 .toolslabel", 0, 1.32);
+      // Scene 1 notifications drop in on each app word
+      smash("#scene-1 .n-mail", 0, 3.54, { y: -20, opacity: 0 });
+      smash("#scene-1 .n-chat", 0, 5.80, { y: -20, opacity: 0 });
+      smash("#scene-1 .n-task", 0, 7.50, { y: -20, opacity: 0 });
+      smash("#scene-1 .n-cal", 0, 10.16, { y: -20, opacity: 0 });
+      // C3 five apps (grid icons are in scene 2 base)
+      show("#cue-3 .panicw", 12.96, 13.10);
+      show("#cue-3 .fiveapps", 12.96, 14.46);
+      // Scene 2 red badges pop on each icon, then persist through the scene
+      smash("#scene-2 .ab1", 12.92, 16.94, { scale: 0, opacity: 0 });
+      smash("#scene-2 .ab2", 12.92, 17.10, { scale: 0, opacity: 0 });
+      smash("#scene-2 .ab3", 12.92, 17.30, { scale: 0, opacity: 0 });
+      smash("#scene-2 .ab4", 12.92, 17.60, { scale: 0, opacity: 0 });
+      smash("#scene-2 .ab5", 12.92, 17.90, { scale: 0, opacity: 0 });
+      smash("#scene-2 .ab6", 12.92, 18.10, { scale: 0, opacity: 0 });
+      show("#cue-4 .urgent", 16.32, 19.12);
+      // C5 ignore note + bad design
+      show("#cue-5 .ignorenote", 19.58, 19.90);
+      smash("#cue-5 .baddesign", 19.58, 22.30);
+      // C6 every ping = emergency
+      show("#cue-6 .trapw", 23.14, 23.40);
+      show("#cue-6 .pinglabel", 23.14, 26.06);
+      // Scene 4 chat bubbles reveal on words, persist; WIT in cue 7
+      show("#cue-7 .confw", 27.62, 27.80);
+      show("#scene-4 .m1", 27.62, 27.90);
+      smash("#scene-4 .m2", 27.62, 28.06, { x: 40, opacity: 0 });
+      show("#scene-4 .m3", 27.62, 29.44);
+      smash("#scene-4 .m4", 27.62, 30.02, { x: 40, opacity: 0 });
+      // C8 thumbs up reaction + progress
+      smash("#scene-4 .react", 27.62, 31.32, { scale: 0, opacity: 0 });
+      smash("#cue-8 .progress", 30.78, 33.42);
+      // C9 fridge tag + going bad + sad vegetable
+      show("#cue-9 .defeatw", 34.54, 34.80);
+      show("#cue-9 .realwork", 34.54, 35.12);
+      show("#cue-9 .rc", 34.54, 35.12);
+      show("#cue-9 .goingbad", 34.54, 39.14);
+      smash("#cue-9 .sadveg", 34.54, 40.26);
+
+      window.__timelines["Section04Apps"] = tl;
+    </script>
+  </div>
+</body>
+</html>

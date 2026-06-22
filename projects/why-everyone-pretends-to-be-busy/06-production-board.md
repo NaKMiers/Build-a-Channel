@@ -18,6 +18,9 @@ Source files:
 |---|---:|---|---|---|
 | Unified preview | 1000 | | | reserved |
 | Section 1 | 1001 | http://localhost:1001/#project/Build%20a%20Channel | http://localhost:1001/api/projects/Build%20a%20Channel/preview/comp/index.html | running |
+| Section 2 | 1002 | http://localhost:1002/#project/Build%20a%20Channel | http://localhost:1002/api/projects/Build%20a%20Channel/preview/comp/index.html | running |
+| Section 3 | 1003 | http://localhost:1003/#project/Build%20a%20Channel | http://localhost:1003/api/projects/Build%20a%20Channel/preview/comp/index.html | running |
+| Section 4 | 1004 | http://localhost:1004/#project/Build%20a%20Channel | http://localhost:1004/api/projects/Build%20a%20Channel/preview/comp/index.html | running |
 
 Note: the preview server resolves the project id/title to the workspace root name (`Build a Channel`) while `dir` points to the section folder — documented HyperFrames behavior on this setup.
 
@@ -26,9 +29,9 @@ Note: the preview server resolves the project id/title to the workspace root nam
 | # | Section | Status | Port | Preview project | Source | Checks | Export file | Notes |
 |--:|---|---|--:|---|---|---|---|---|
 | 1 | Hook: The Busy Trap | built — ready for review | 1001 | `section-previews/section-01-hook-the-busy-trap/` | visual plan + generated word timings | lint 0 err / validate 0 err / snapshots ok | none (no export requested) | 3 scenes, 8 cues, 4 WIT beats |
-| 2 | Reframe | not rendered | 1002 | — | — | — | — | voiceover 0.84 |
-| 3 | Busy Became A Status Symbol | not rendered | 1003 | — | — | — | — | voiceover 0.84 |
-| 4 | Your Apps Invented Emergencies | not rendered | 1004 | — | — | — | — | voiceover 0.86 |
+| 2 | Reframe: Looking Busy vs Doing Work | built — ready for review | 1002 | `section-previews/section-02-reframe-looking-busy-vs-doing-work/` | visual plan + generated word timings | lint 0 err / validate 0 err / snapshots ok | none | 4 scenes, 6 cues, 3 WIT beats; CC0 real photos (Openverse) |
+| 3 | Busy Became A Status Symbol | built — ready for review | 1003 | `section-previews/section-03-busy-became-a-status-symbol/` | visual plan + generated word timings | lint 0 err / validate 0 err / snapshots ok | none | 5 scenes (trophy/coffee/beach/meeting/clock), 9 cues, 6 WIT poses; CC0 |
+| 4 | Your Apps Invented Emergencies | built — ready for review | 1004 | `section-previews/section-04-your-apps-invented-emergencies/` | visual plan + generated word timings | lint 0 err / validate 0 err / snapshots ok | none | 5 scenes (iPhone notifs/app grid/alarm/chat/fridge); REAL app icons (user-approved); 5 WIT poses |
 | 5 | Visible Work Beats Quiet Thinking | not rendered | 1005 | — | — | — | — | voiceover 0.86 |
 | 6 | "I'm Busy" Is A Shield | not rendered | 1006 | — | — | — | — | voiceover 0.86 |
 | 7 | Payoff: Activity Is Not Value | not rendered | 1007 | — | — | — | — | voiceover 0.86 |

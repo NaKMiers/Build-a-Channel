@@ -30,15 +30,17 @@ them with aligned audio timestamps.
 
 ## Section Summary
 
-|   # | Section | Estimate | Words | Purpose |
-| --: | ------- | -------: | ----: | ------- |
-| 1 | Hook: The Busy Trap | `0:00-0:27` | `88` | Show fake urgency ambushing one piece of real work. |
-| 2 | Reframe: Looking Busy vs Doing Work | `0:27-0:58` | `108` | Separate visible busyness from invisible real progress. |
-| 3 | Busy Became A Status Symbol | `0:58-1:52` | `175` | Show busyness as a way to signal importance. |
-| 4 | Your Apps Invented Emergencies | `1:52-2:42` | `165` | Show modern tools manufacturing fake urgency. |
-| 5 | Visible Work Beats Quiet Thinking | `2:42-3:33` | `165` | Show visible activity getting rewarded over focus. |
-| 6 | "I'm Busy" Is A Shield | `3:33-4:20` | `150` | Show busy as a socially safe defense, not a lie. |
-| 7 | Payoff: Activity Is Not Value | `4:20-5:20` | `159` | Land the insight: honesty about what matters beats looking busy. |
+
+| #   | Section                             | Estimate    | Words | Purpose                                                          |
+| --- | ----------------------------------- | ----------- | ----- | ---------------------------------------------------------------- |
+| 1   | Hook: The Busy Trap                 | `0:00-0:27` | `88`  | Show fake urgency ambushing one piece of real work.              |
+| 2   | Reframe: Looking Busy vs Doing Work | `0:27-0:58` | `108` | Separate visible busyness from invisible real progress.          |
+| 3   | Busy Became A Status Symbol         | `0:58-1:52` | `175` | Show busyness as a way to signal importance.                     |
+| 4   | Your Apps Invented Emergencies      | `1:52-2:42` | `165` | Show modern tools manufacturing fake urgency.                    |
+| 5   | Visible Work Beats Quiet Thinking   | `2:42-3:33` | `165` | Show visible activity getting rewarded over focus.               |
+| 6   | "I'm Busy" Is A Shield              | `3:33-4:20` | `150` | Show busy as a socially safe defense, not a lie.                 |
+| 7   | Payoff: Activity Is Not Value       | `4:20-5:20` | `159` | Land the insight: honesty about what matters beats looking busy. |
+
 
 ## Section 1: Hook: The Busy Trap
 
@@ -331,7 +333,7 @@ Voice revision notes:
   - "if everything is urgent, nothing is"
 - Terms to explain simply: `status symbol` (something that shows you are important), `fake urgency` (feels like an emergency but is not), `productivity` (real results, not just doing things)
 - Lines that may need slower delivery:
-  - "the real work usually hides in the part you cannot see" (S2)
+  - "the real work usually hides in the part you cannot see" (S2)ng
   - the manager-survey line (S5)
   - "be more honest about what actually matters" (S7)
 

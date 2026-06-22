@@ -508,7 +508,24 @@ curl -s -G "https://api.openverse.org/v1/images/" \
 
 Parse the JSON with `node -e` (no python/jq on this box). For each result read `url`, `license`,
 `license_version`, `width`/`height`, `source`, `title`. Prefer `width >= 900` and CC0
-StockSnap/rawpixel; CC0 needs no attribution but record source for traceability. Download the `url`
+StockSnap/rawpixel; CC0 needs no attribution but record source for traceability.
+
+FULL-HD NOTE: Openverse's StockSnap/rawpixel `url`s are thumbnails (StockSnap ~960px, rawpixel
+~1024–1300px) — BELOW 1920. If the user requires full-HD (≥1920px) bases, source from **Wikimedia
+Commons with `iiurlwidth=1920`** (or the original), which reliably serves ≥1920, or from Flickr at
+its large sizes (`_k`=2048, `_h`=1600, `_o`=original). Brand-free trick for screen/phone scenes:
+search a "blank white screen" phone (e.g. "Hand holding smartphone with blank white screen") and add
+the UI in CSS. Prefer clear object metaphors (a red emergency button, a fire alarm, an open fridge)
+over vague abstract bases (a wireframe sketch reads as "poor/vague" and gets rejected).
+
+PREFERRED — Real-UI illustration (standing owner preference): when the script names or depicts real
+apps/products/screens, use REAL recognizable UI to illustrate it — phone/iPhone mockups, real app
+icons (Gmail, Messenger, Microsoft To Do, Google Calendar, WhatsApp, Slack…), and notification/chat
+screens. Build the screens in CSS with real icon PNGs sourced from Wikimedia Commons (rasterize SVG→PNG
+via `iiurlwidth`; thumbs-up etc. from Android/Noto emoji). Keep accumulating UI (notification cards,
+badges, chat bubbles) INSIDE the scene div so it persists and clips to the phone/tiles; never rely on
+emoji glyphs in HyperFrames (they fail to render — use an emoji PNG). Use editorially (depict, don't
+endorse); no private data / pixel-copied screenshots. See `_shared/channel/brand-system.md` → "Real-UI Illustration." Download the `url`
 and VIEW it before committing — reject brand-bearing shots (e.g. Apple Magic Mouse / iMac, Logitech,
 Casio) and any image with real people (no-face channel), even when sharper.
 

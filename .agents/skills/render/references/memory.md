@@ -773,6 +773,28 @@ Apply next time:
 Promote to shared memory:
 no; render execution behavior. (If image generation becomes available, prefer generated clean bases.)
 
+### 2026-06-22 - STANDING PREFERENCE: Build Real-UI Mockups (owner confirmed)
+
+Classification: `Core` (confirmed channel creative direction)
+
+Context:
+Section 4 was rebuilt with real app icons + an iPhone notification screen, an app-icon overload grid
+with red badges, and a Messenger-style chat — all built in CSS with real icon PNGs. The owner
+confirmed: "I love to use real illustrative like phone, app icons to describe the script like this."
+
+Lesson (render side):
+When a section depicts real apps/products/screens, build clean **real-UI mockups in CSS** with real
+icon PNGs (Wikimedia Commons): iPhone/phone frames, notification cards, home-screen/app grids with
+red badges, chat conversations. Key mechanics learned:
+- Put accumulating UI (notification cards, badges, chat bubbles) INSIDE the scene `<div>` so it
+  persists and clips to the phone/tiles; cue-clip elements vanish when the cue ends (broke continuity).
+- Position notification cards relative to the phone frame (not the 1920 frame) or they render full-width.
+- Put app-icon badges INSIDE each `.apptile` (corner), not at fixed composition coords (they misalign/stretch).
+- The 👍 emoji glyph does NOT render in the snapshot Chromium — use a thumbs-up PNG via `<img>`.
+- Real logos are used editorially (depict, not endorse); no private data / pixel-copied screenshots.
+
+Promote to shared memory: covered in `_shared/channel/brand-system.md` ("Real-UI Illustration"); keep the render build mechanics here.
+
 ## Feedback Entry Template
 
 ```markdown

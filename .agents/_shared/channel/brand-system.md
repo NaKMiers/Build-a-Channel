@@ -36,7 +36,19 @@ Avoid:
 - over-polished mascot acting
 - crowded dashboards
 - copied frames from reference channels
-- logos, private data, or unclear copyrighted assets unless specifically approved
+- private data, unclear copyrighted assets, pixel-copied private screenshots, or any logo used to imply endorsement / a fake claim
+
+## Real-UI Illustration (standing owner preference, 2026-06-22)
+
+The channel owner explicitly loves and approves using **real recognizable UI to illustrate the
+script** — phone / iPhone mockups, real app icons (Gmail, Messenger, Microsoft To Do, Google
+Calendar, WhatsApp, Slack, etc.), and app/notification/chat screens — whenever the narration names
+or depicts those actual apps, products, or screens. This is a PREFERRED technique, not just an
+allowed exception; it overrides the older default "avoid real logos."
+
+Use it editorially (to explain/depict, never to endorse or imply a fake claim), keep private data
+out, and build the screens in CSS with real icon PNGs (icons sourced from Wikimedia Commons). Do not
+pixel-copy someone's real private screenshot; mock the UI up cleanly with the real icons.
 
 ## WIT Direction
 

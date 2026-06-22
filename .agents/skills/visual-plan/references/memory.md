@@ -515,6 +515,140 @@ Apply next time:
 Promote to shared memory:
 no; the channel-wide visual reference standard already lives in `_shared/systems/visual-production.md`. This is the concrete sourcing recipe for visual-plan/render.
 
+### 2026-06-22 - Don't Reuse One Base For Two Scenes In The Same Section
+
+Classification: `Visual plan lesson`
+
+Context:
+Section 2 used the SAME image (S1's minimal desk, copied) for both Scene B (0:09) and Scene D
+(0:19) as an intended "quiet/real-work bookend." On review the user said "they both the same, I
+need this more vary." Fixed by sourcing two distinct CC0 photos: a blank notebook on dark wood
+(B = "thinking looks like nothing") and a glowing bulb on black (D = "real work hides in the part
+you cannot see").
+
+Lesson:
+A reused/identical base across two scenes in the same short section reads as a repeated image, even
+when intended as a callback — and reusing a prior section's base compounds it. Default to a DISTINCT
+base per scene. Only reuse a base for a true payoff callback the viewer will consciously recognize
+(e.g. S1's hook motif returning at the S1 payoff), and even then vary the grade/overlay. Across
+sections, prefer fresh imagery over re-running an earlier section's base.
+
+Apply next time:
+- give every scene in a section its own distinct base unless a deliberate, recognizable callback
+- if a "quiet/real-work" beat recurs, pick different concrete objects (notebook, bulb, window, books) rather than the same desk twice
+- a glowing bulb on black is a strong, distinct metaphor for "the hidden idea / invisible real work"
+
+Promote to shared memory:
+no; visual-plan execution refinement of the existing differentiation rule.
+
+### 2026-06-22 - Split Long Scenes + Vary WIT Poses (don't repeat one base ~15-20s)
+
+Classification: `Visual plan lesson`
+
+Context:
+Section 3 (45s) first shipped with 3 big scenes: the trophy held ~15.7s and the meeting room held
+~19s. The user said the section is "pretty" but wanted more scenes — specifically a new scene after
+"...important" (splitting the trophy beat) and a second scene for the long meeting-room stretch —
+and noted the WIT poses were "not vary" (deadpan-side-eye repeated). Fixed by expanding to 5 scenes
+(trophy → coffee chat → beach → meeting → wall clock) and using 6 distinct poses.
+
+Lesson:
+For longer sections, scale big-scene count to runtime, not just idea count — a single base holding
+~15-20s reads as static even with cue changes. Target a fresh base roughly every ~6-10s of talky
+content. And rotate WIT poses: don't reuse the same pose (esp. deadpan-side-eye) twice in a section;
+pull from the wider library (talking-front, confused, suspicious, facepalm, tiny-defeated,
+awkward-celebration, thinking, shocked, etc.) so each emotional beat looks different.
+
+Apply next time:
+- a ~45s section wants ~4-6 big scenes; a ~30s section ~3-4; don't let one base run past ~10s without a cut or a strong reason
+- give each WIT beat a distinct pose; avoid repeating one pose within a section
+- splitting a beat just needs a new distinct base for the second half + a 0.2s fade; cue timing stays word-pinned
+
+Promote to shared memory:
+no; visual-plan/render pacing refinement (pairs with the existing differentiation + WIT-rhythm lessons).
+
+### 2026-06-22 - Full-HD Bases + Clear Object Metaphors (Section 4 rebuild)
+
+Classification: `Visual plan lesson`
+
+Context:
+Section 4 first used a hand-drawn app-sketch wireframe (StockSnap 960px) as the base, reused across
+scenes, with only 3 distinct scenes for 42s. The user rejected it: "the illustrative images are
+completely poor and vague... not suitable for the script... find other illustrative images (at least
+fullhd)... you're repeating many scenes... I need more scenes." Rebuilt with 5 distinct full-HD
+object photos.
+
+Lesson:
+Three compounding mistakes to avoid: (1) low-res bases — StockSnap (~960px) and rawpixel
+(~1024–1300px) are BELOW full-HD; when full-HD is needed, use Wikimedia `iiurlwidth=1920` or Flickr
+`_k`(2048)/`_o`. (2) vague/abstract bases — a wireframe sketch reads as "poor/vague"; use CLEAR object
+metaphors (red emergency button = urgency, fire alarm = "every ping is an emergency", open fridge =
+"sad vegetable", blank-screen phone + CSS UI = the apps). (3) too few scenes / repeated images — give
+a ~42s section ~5 scenes, each a DISTINCT image; a reused base is only OK as a non-consecutive callback.
+
+Apply next time:
+- check the resolution requirement; if full-HD, source Wikimedia@1920 / Flickr large, not StockSnap/rawpixel thumbs
+- pick a concrete, instantly-readable object per beat over abstract/wireframe imagery
+- brand-free screens: use a "blank white screen" phone photo and add the UI/notifications in CSS
+- ~5 scenes for ~40s; every scene a distinct image; reuse only as a deliberate non-consecutive callback
+
+Promote to shared memory:
+no; the SKILL.md sourcing recipe now carries the full-HD/Flickr/Wikimedia + blank-phone note.
+
+### 2026-06-22 - User Can Approve Real App Branding (Section 4 v3)
+
+Classification: `Visual plan lesson`
+
+Context:
+After Section 4's object-metaphor pass, the user asked to use REAL app branding: an iPhone screen
+full of notifications, and real app icons (Gmail, Messenger, Microsoft To Do, Google Calendar) on
+the email/chat/task/calendar beats, plus a chat conversation instead of a blank phone. The channel
+default is "no real app logos."
+
+Lesson:
+The no-logos rule is a DEFAULT, not absolute — the channel owner can explicitly approve real brand
+logos for a section (the "unless specifically approved" clause). When they do, use the real icons.
+Source app logos from Wikimedia Commons (rasterize SVG→PNG via `iiurlwidth`); they exist for Gmail,
+Messenger, To Do, Google Calendar, WhatsApp, Slack, and a thumbs-up emoji (Android/Noto). Record
+them in ATTRIBUTION as trademarks used editorially with owner approval.
+
+Build technique that worked: app UI is best built in CSS (iPhone frame + notification cards; an
+app-icon grid with red badges; a Messenger-style chat with bubbles + a thumbs-up icon), with the
+real icon PNGs dropped in. CRITICAL: put accumulating UI (notification cards, badges, chat bubbles)
+INSIDE the scene div (so it persists and is clipped to the phone/tiles), not in short cue clips —
+cue-clip elements vanish when the cue ends and broke continuity. The 👍 emoji glyph does NOT render
+in the snapshot Chromium (font fallback to a coin glyph); use a thumbs-up PNG via `<img>` instead.
+
+Apply next time:
+- treat no-logos as a default the owner can waive per-section; if waived, use real icons from Commons
+- build app/notification/chat UI in CSS with real icon PNGs; keep accumulating UI in the scene div
+- never rely on emoji glyphs in HyperFrames snapshots — use an emoji/icon PNG
+- record trademark logos in ATTRIBUTION with the editorial/owner-approved note
+
+Promote to shared memory:
+no; section-specific brand-approval + technique. Keep in visual-plan/render execution memory.
+
+### 2026-06-22 - STANDING PREFERENCE: Real-UI Illustration (owner confirmed)
+
+Classification: `Core` (confirmed channel creative direction)
+
+Context:
+After the Section 4 rebuild with real app icons + iPhone/chat mockups, the owner said: "Yes good,
+I love to use real illustrative like phone, app icons to describe the script like this. Please note
+to the skills." This is now a STANDING preference, not a one-off.
+
+Lesson:
+For every section going forward, when the script names or depicts real apps/products/screens, prefer
+REAL recognizable UI to illustrate it — phone/iPhone mockups, real app icons (Gmail, Messenger,
+Microsoft To Do, Google Calendar, WhatsApp, Slack, etc.), notification lists, app grids with badges,
+chat conversations. This overrides the old "avoid real logos" default. Use editorially (depict, not
+endorse); keep private data out; build the screens in CSS with real icon PNGs from Wikimedia Commons;
+keep accumulating UI inside the scene div; use emoji/icon PNGs (not emoji glyphs).
+
+Promoted to shared memory: YES — recorded in `_shared/channel/brand-system.md` ("Real-UI Illustration"),
+`_shared/systems/visual-production.md`, and `_shared/channel/channel-foundation.md`. The SKILL.md
+Image Sourcing section also carries the technique.
+
 ## Feedback Entry Template
 
 ```markdown

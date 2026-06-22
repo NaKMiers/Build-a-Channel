@@ -1,0 +1,690 @@
+{
+  "transcript": "The second reason is that our tools invented emergencies. Email was supposed to make talking easier. Then chat apps made email faster, then task apps organized the chat about the email. Then calendar apps booked meetings about why the task app is confusing. So now the workday is basically five apps interrupting each other. Everything has a red dot, everything has a number, everything says urgent, because apparently please ignore this until next week is bad design. So your brain starts treating every little notification like a real emergency. A message lands you reply, another lands you reply again. Someone sends a thumbs up and somehow your brain files this under progress. Meanwhile the one task that actually matters is still sitting there, untouched, quietly going bad, like a sad vegetable at the back of the fridge.",
+  "words": [
+    {
+      "word": "The",
+      "start": 0,
+      "end": 0.2
+    },
+    {
+      "word": "second",
+      "start": 0.2,
+      "end": 0.5
+    },
+    {
+      "word": "reason",
+      "start": 0.5,
+      "end": 0.78
+    },
+    {
+      "word": "is",
+      "start": 0.78,
+      "end": 1
+    },
+    {
+      "word": "that",
+      "start": 1,
+      "end": 1.12
+    },
+    {
+      "word": "our",
+      "start": 1.12,
+      "end": 1.32
+    },
+    {
+      "word": "tools",
+      "start": 1.32,
+      "end": 1.6
+    },
+    {
+      "word": "invented",
+      "start": 1.6,
+      "end": 2.04
+    },
+    {
+      "word": "emergencies.",
+      "start": 2.04,
+      "end": 3.46
+    },
+    {
+      "word": "Email",
+      "start": 3.54,
+      "end": 3.68
+    },
+    {
+      "word": "was",
+      "start": 3.68,
+      "end": 3.96
+    },
+    {
+      "word": "supposed",
+      "start": 3.96,
+      "end": 4.22
+    },
+    {
+      "word": "to",
+      "start": 4.22,
+      "end": 4.38
+    },
+    {
+      "word": "make",
+      "start": 4.38,
+      "end": 4.54
+    },
+    {
+      "word": "talking",
+      "start": 4.54,
+      "end": 4.9
+    },
+    {
+      "word": "easier.",
+      "start": 4.9,
+      "end": 5.5
+    },
+    {
+      "word": "Then",
+      "start": 5.5,
+      "end": 5.8
+    },
+    {
+      "word": "chat",
+      "start": 5.8,
+      "end": 6.04
+    },
+    {
+      "word": "apps",
+      "start": 6.04,
+      "end": 6.28
+    },
+    {
+      "word": "made",
+      "start": 6.28,
+      "end": 6.5
+    },
+    {
+      "word": "email",
+      "start": 6.5,
+      "end": 6.8
+    },
+    {
+      "word": "faster,",
+      "start": 6.8,
+      "end": 7.24
+    },
+    {
+      "word": "then",
+      "start": 7.24,
+      "end": 7.5
+    },
+    {
+      "word": "task",
+      "start": 7.5,
+      "end": 7.76
+    },
+    {
+      "word": "apps",
+      "start": 7.76,
+      "end": 8
+    },
+    {
+      "word": "organized",
+      "start": 8,
+      "end": 8.5
+    },
+    {
+      "word": "the",
+      "start": 8.5,
+      "end": 8.72
+    },
+    {
+      "word": "chat",
+      "start": 8.72,
+      "end": 8.88
+    },
+    {
+      "word": "about",
+      "start": 8.88,
+      "end": 9.08
+    },
+    {
+      "word": "the",
+      "start": 9.08,
+      "end": 9.3
+    },
+    {
+      "word": "email.",
+      "start": 9.3,
+      "end": 9.82
+    },
+    {
+      "word": "Then",
+      "start": 9.82,
+      "end": 10.16
+    },
+    {
+      "word": "calendar",
+      "start": 10.16,
+      "end": 10.42
+    },
+    {
+      "word": "apps",
+      "start": 10.42,
+      "end": 10.82
+    },
+    {
+      "word": "booked",
+      "start": 10.82,
+      "end": 11.04
+    },
+    {
+      "word": "meetings",
+      "start": 11.04,
+      "end": 11.34
+    },
+    {
+      "word": "about",
+      "start": 11.34,
+      "end": 11.66
+    },
+    {
+      "word": "why",
+      "start": 11.66,
+      "end": 11.8
+    },
+    {
+      "word": "the",
+      "start": 11.8,
+      "end": 11.94
+    },
+    {
+      "word": "task",
+      "start": 11.94,
+      "end": 12.2
+    },
+    {
+      "word": "app",
+      "start": 12.2,
+      "end": 12.34
+    },
+    {
+      "word": "is",
+      "start": 12.34,
+      "end": 12.6
+    },
+    {
+      "word": "confusing.",
+      "start": 12.6,
+      "end": 12.96
+    },
+    {
+      "word": "So",
+      "start": 12.96,
+      "end": 13.24
+    },
+    {
+      "word": "now",
+      "start": 13.24,
+      "end": 13.38
+    },
+    {
+      "word": "the",
+      "start": 13.38,
+      "end": 13.56
+    },
+    {
+      "word": "workday",
+      "start": 13.56,
+      "end": 13.84
+    },
+    {
+      "word": "is",
+      "start": 13.84,
+      "end": 14.06
+    },
+    {
+      "word": "basically",
+      "start": 14.06,
+      "end": 14.46
+    },
+    {
+      "word": "five",
+      "start": 14.46,
+      "end": 14.8
+    },
+    {
+      "word": "apps",
+      "start": 14.8,
+      "end": 15.02
+    },
+    {
+      "word": "interrupting",
+      "start": 15.08,
+      "end": 15.54
+    },
+    {
+      "word": "each",
+      "start": 15.54,
+      "end": 15.74
+    },
+    {
+      "word": "other.",
+      "start": 15.74,
+      "end": 16.32
+    },
+    {
+      "word": "Everything",
+      "start": 16.32,
+      "end": 16.62
+    },
+    {
+      "word": "has",
+      "start": 16.62,
+      "end": 16.86
+    },
+    {
+      "word": "a",
+      "start": 16.86,
+      "end": 16.94
+    },
+    {
+      "word": "red",
+      "start": 16.94,
+      "end": 17.14
+    },
+    {
+      "word": "dot,",
+      "start": 17.14,
+      "end": 17.54
+    },
+    {
+      "word": "everything",
+      "start": 17.54,
+      "end": 17.78
+    },
+    {
+      "word": "has",
+      "start": 17.78,
+      "end": 17.98
+    },
+    {
+      "word": "a",
+      "start": 17.98,
+      "end": 18.08
+    },
+    {
+      "word": "number,",
+      "start": 18.08,
+      "end": 18.32
+    },
+    {
+      "word": "everything",
+      "start": 18.32,
+      "end": 18.72
+    },
+    {
+      "word": "says",
+      "start": 18.72,
+      "end": 19.12
+    },
+    {
+      "word": "urgent,",
+      "start": 19.12,
+      "end": 19.58
+    },
+    {
+      "word": "because",
+      "start": 19.58,
+      "end": 19.9
+    },
+    {
+      "word": "apparently",
+      "start": 19.9,
+      "end": 20.32
+    },
+    {
+      "word": "please",
+      "start": 20.32,
+      "end": 20.74
+    },
+    {
+      "word": "ignore",
+      "start": 20.74,
+      "end": 21.1
+    },
+    {
+      "word": "this",
+      "start": 21.1,
+      "end": 21.28
+    },
+    {
+      "word": "until",
+      "start": 21.28,
+      "end": 21.5
+    },
+    {
+      "word": "next",
+      "start": 21.5,
+      "end": 21.78
+    },
+    {
+      "word": "week",
+      "start": 21.78,
+      "end": 22.02
+    },
+    {
+      "word": "is",
+      "start": 22.02,
+      "end": 22.3
+    },
+    {
+      "word": "bad",
+      "start": 22.3,
+      "end": 22.56
+    },
+    {
+      "word": "design.",
+      "start": 22.56,
+      "end": 23.14
+    },
+    {
+      "word": "So",
+      "start": 23.14,
+      "end": 23.34
+    },
+    {
+      "word": "your",
+      "start": 23.34,
+      "end": 23.52
+    },
+    {
+      "word": "brain",
+      "start": 23.52,
+      "end": 23.78
+    },
+    {
+      "word": "starts",
+      "start": 23.78,
+      "end": 24.1
+    },
+    {
+      "word": "treating",
+      "start": 24.1,
+      "end": 24.44
+    },
+    {
+      "word": "every",
+      "start": 24.44,
+      "end": 24.76
+    },
+    {
+      "word": "little",
+      "start": 24.78,
+      "end": 24.98
+    },
+    {
+      "word": "notification",
+      "start": 24.98,
+      "end": 25.52
+    },
+    {
+      "word": "like",
+      "start": 25.52,
+      "end": 25.9
+    },
+    {
+      "word": "a",
+      "start": 25.9,
+      "end": 26.06
+    },
+    {
+      "word": "real",
+      "start": 26.06,
+      "end": 26.32
+    },
+    {
+      "word": "emergency.",
+      "start": 26.32,
+      "end": 27.66
+    },
+    {
+      "word": "A",
+      "start": 27.66,
+      "end": 27.82
+    },
+    {
+      "word": "message",
+      "start": 27.82,
+      "end": 28.06
+    },
+    {
+      "word": "lands",
+      "start": 28.06,
+      "end": 28.44
+    },
+    {
+      "word": "you",
+      "start": 28.44,
+      "end": 28.62
+    },
+    {
+      "word": "reply,",
+      "start": 28.62,
+      "end": 29.1
+    },
+    {
+      "word": "another",
+      "start": 29.1,
+      "end": 29.44
+    },
+    {
+      "word": "lands",
+      "start": 29.44,
+      "end": 29.84
+    },
+    {
+      "word": "you",
+      "start": 29.84,
+      "end": 30.02
+    },
+    {
+      "word": "reply",
+      "start": 30.02,
+      "end": 30.2
+    },
+    {
+      "word": "again.",
+      "start": 30.2,
+      "end": 30.78
+    },
+    {
+      "word": "Someone",
+      "start": 30.78,
+      "end": 30.96
+    },
+    {
+      "word": "sends",
+      "start": 30.96,
+      "end": 31.14
+    },
+    {
+      "word": "a",
+      "start": 31.14,
+      "end": 31.32
+    },
+    {
+      "word": "thumbs",
+      "start": 31.32,
+      "end": 31.48
+    },
+    {
+      "word": "up",
+      "start": 31.48,
+      "end": 31.68
+    },
+    {
+      "word": "and",
+      "start": 31.68,
+      "end": 31.86
+    },
+    {
+      "word": "somehow",
+      "start": 31.86,
+      "end": 32.1
+    },
+    {
+      "word": "your",
+      "start": 32.1,
+      "end": 32.38
+    },
+    {
+      "word": "brain",
+      "start": 32.38,
+      "end": 32.64
+    },
+    {
+      "word": "files",
+      "start": 32.64,
+      "end": 32.98
+    },
+    {
+      "word": "this",
+      "start": 32.98,
+      "end": 33.24
+    },
+    {
+      "word": "under",
+      "start": 33.24,
+      "end": 33.42
+    },
+    {
+      "word": "progress.",
+      "start": 33.42,
+      "end": 34.5
+    },
+    {
+      "word": "Meanwhile",
+      "start": 34.54,
+      "end": 34.82
+    },
+    {
+      "word": "the",
+      "start": 34.82,
+      "end": 35.12
+    },
+    {
+      "word": "one",
+      "start": 35.12,
+      "end": 35.38
+    },
+    {
+      "word": "task",
+      "start": 35.38,
+      "end": 35.6
+    },
+    {
+      "word": "that",
+      "start": 35.6,
+      "end": 35.82
+    },
+    {
+      "word": "actually",
+      "start": 35.82,
+      "end": 36.2
+    },
+    {
+      "word": "matters",
+      "start": 36.2,
+      "end": 36.46
+    },
+    {
+      "word": "is",
+      "start": 36.46,
+      "end": 36.78
+    },
+    {
+      "word": "still",
+      "start": 36.78,
+      "end": 37.06
+    },
+    {
+      "word": "sitting",
+      "start": 37.06,
+      "end": 37.3
+    },
+    {
+      "word": "there,",
+      "start": 37.3,
+      "end": 37.9
+    },
+    {
+      "word": "untouched,",
+      "start": 37.9,
+      "end": 38.76
+    },
+    {
+      "word": "quietly",
+      "start": 38.76,
+      "end": 38.76
+    },
+    {
+      "word": "going",
+      "start": 38.82,
+      "end": 39.14
+    },
+    {
+      "word": "bad,",
+      "start": 39.14,
+      "end": 39.94
+    },
+    {
+      "word": "like",
+      "start": 39.94,
+      "end": 40.02
+    },
+    {
+      "word": "a",
+      "start": 40.02,
+      "end": 40.26
+    },
+    {
+      "word": "sad",
+      "start": 40.26,
+      "end": 40.54
+    },
+    {
+      "word": "vegetable",
+      "start": 40.54,
+      "end": 40.94
+    },
+    {
+      "word": "at",
+      "start": 40.94,
+      "end": 41.2
+    },
+    {
+      "word": "the",
+      "start": 41,
+      "end": 41.2
+    },
+    {
+      "word": "back",
+      "start": 41.2,
+      "end": 41.5
+    },
+    {
+      "word": "of",
+      "start": 41.5,
+      "end": 41.65
+    },
+    {
+      "word": "the",
+      "start": 41.65,
+      "end": 41.85
+    },
+    {
+      "word": "fridge.",
+      "start": 41.85,
+      "end": 42.13
+    }
+  ]
+}
