@@ -1,0 +1,73 @@
+# Shorts Skill Memory
+
+Memory for the `shorts` skill — turning one finished Why It Works long video into 2-4 COMPLETE vertical shorts (1080x1920) and exporting each to MP4. Use this file for the toolchain, layout rules, and recurring fixes. Use `.agents/_shared/` only for channel-wide lessons.
+
+## Current Skill Standard
+
+- Side sub-workflow from `combine`; does not block caption/upload/learning.
+- One project (named / smart-selected / asked); explicit short selection with `All` first.
+- Modes: `plan` (menu -> `shorts/shorts-plan.md`), `build` (portrait comp on port `1100+N`), `export` (`output/shorts/*.mp4`).
+- 2-4 shorts, ideally 3. One-at-a-time review like the section discipline.
+
+## Locked layout rules (owner-confirmed 2026-06-22, first run = `why-cheap-products-keep-getting-worse`)
+
+- Native portrait REBUILD (1080x1920), never crop/letterbox the 16:9 master.
+- COMPLETE short, NOT a hook/teaser — **NO CTA / "watch the full video" / subscribe card**. End on the short's own payoff.
+- Platform-safe zone `x[60..880] · y[220..1490]`. UI covers the edges: top title, right action rail, bottom caption + subscribe + progress bar. WIT body may bleed off edges; FACE stays inside. Verify with a temporary dashed `.safe-guide` overlay (+ a `.center-line` at `top:960`), then DELETE the guides before handoff.
+- WIT big (≈1/3-1/2 frame), face ABOVE the centered caption; approved pose PNGs only; `transform-origin: center bottom`.
+- Captions = distinct SUBTITLE style, NOT the cream label look: white text + dark text-stroke shadow on a translucent dark pill `rgba(16,12,9,0.5)`, `border-radius:22px`, centered vertically (`left:50%; top:50%; translate(-50%,-50%)`), font ~60px, max-width ~780-800, 2-4 words. Punchline/definition/payoff lines are carried by the cards/bubbles (the hero text), NOT duplicated in a caption; time captions to CLEAR before a card pops (e.g. cap end == card pop time) so nothing overlaps.
+- Every scene = a real photo base (object-fit:cover) + top/bottom scrim. 16:9 -> 9:16 cover fills height fully and crops the sides to the center ~32%; center-framed subjects survive (tune `object-position` X only — vertical is a no-op under cover for a 16:9 source in a 9:16 box).
+- Reuse the source section's real photos + WIT poses + font. Copy a MINIMAL working set into `assets/photos`, `assets/wit`, `assets/fonts` (Windows junctions fail on this HyperFrames setup).
+
+## HyperFrames structure that passed lint (reuse this skeleton)
+
+- root `#ShortNN` 1080x1920, `data-duration` = audio + ~1.0-1.5s payoff hold.
+- 4 scene bases, each `class="clip scene"` on its OWN `data-track-index` (1/3/4/5) with a blur/opacity cross-fade `fromTo(..., immediateRender:false)` at its start.
+- 4 cue overlays `class="clip cue"` sequential on `data-track-index="2"`; TRIM each cue duration by 0.01 so it ends before the next starts (float overlap = `overlapping_clips_same_track` hard error, e.g. `7.74+6.38=14.120000001`).
+- captions in a static `.caption-layer` (inset:0, not a clip), children toggled by `tl.set(sel,{opacity},t)`.
+- CAPTION GOTCHA (found `why-everyone-pretends` 2026-06-23): for the FIRST caption whose show time is `0.0`, setting `opacity:0` AND `opacity:1` at the SAME time `0` cancels out and that caption NEVER appears. Fix: clamp the show time, `const st = Math.max(s, 0.05)`, so show != hide-init. The opening caption is the hook line — verify it renders with a snapshot at ~1s, not just mid-clip frames. (Video-2 shorts shipped with this bug; re-export if you touch them.)
+- one `<audio data-track-index="10">`; GSAP from jsdelivr; register `window.__timelines["ShortNN"]` synchronously.
+- helpers: `show(sel,hideAt,at)` (hard-show) and `pop(sel,hideAt,at)` (scale-in for emphasis). Hide at cue start, show on the spoken word.
+- Non-blocking warnings seen and accepted: `timeline_track_too_dense` (track 2), `overlapping_gsap_tweens` 0-0.2s, WCAG contrast on red labels over photos (false positives).
+
+## Toolchain (this Windows box)
+
+### Voiceover (regenerate per short)
+- `hyperframes tts` needs **Python 3 + kokoro-onnx** — NOT preinstalled here. One-time setup (done 2026-06-22):
+  - `scoop install python` (installed 3.14.6). `python` is shadowed by the Microsoft Store alias, so prepend the real dir to PATH: `export PATH="$HOME/scoop/apps/python/current:$HOME/scoop/apps/python/current/Scripts:$PATH"` (then `python` resolves correctly).
+  - `python -m pip install kokoro-onnx soundfile` (kokoro-onnx 0.4.7 works on py3.14).
+- Generate: `npx --yes hyperframes@0.6.76 tts <input.txt> --output <out.mp3> --voice am_eric --speed 0.84 --lang en-us --json` (run with the python-first PATH so HyperFrames finds real Python).
+
+### Word timings
+- whisper-tiny.en via `@xenova/transformers` over the short's own audio. Decode first: `<ffmpeg> -y -i short.mp3 -ar 16000 -ac 1 -f f32le out.raw`, then run `references/gen-word-timings.mjs <raw> <out.json>` from a folder that HAS `@xenova/transformers` installed (Node ESM resolves it from the SCRIPT folder, not cwd). The cached setup `%TEMP%/wiw-whisper/` already has the package + cached model; reuse it.
+- TAIL GLITCH: whisper-tiny.en stamps the last few words non-monotonically / backwards at end-of-audio. Re-time the final caption line monotonically across the remaining window up to the audio duration. Always sanity-check the last 1-2 caption chunks.
+
+### ffmpeg / Chrome (export)
+- Static binaries: `%TEMP%/wiw-ffmpeg-static/node_modules/ffmpeg-static/ffmpeg.exe` and `.../ffprobe-static/bin/win32/x64/ffprobe.exe`. Install if missing: `npm.cmd install --prefix %TEMP%/wiw-ffmpeg-static --no-save ffmpeg-static ffprobe-static`. Put both dirs on PATH for the render.
+- Export: from the short folder, `npx --yes hyperframes@0.6.76 render --output <abs .mp4>`. Chrome was already provisioned (HyperFrames manages it; use `hyperframes doctor`/`browser` if not). Renders ~30fps; frames = duration*30.
+- Verify: `ffprobe -select_streams v:0 -show_entries stream=width,height,codec_name,r_frame_rate,duration` -> expect 1080x1920, h264, 30/1; audio aac.
+
+## Server start (Windows, persistent)
+`Start-Process -WindowStyle Hidden powershell -ArgumentList "-NoProfile -ExecutionPolicy Bypass -Command \"Set-Location '<short dir>'; npx --yes hyperframes@0.6.76 preview --port 110N *> preview.log\""`, then verify HTTP 200 on `localhost:110N`.
+
+## Verified Result (first run)
+
+`why-cheap-products-keep-getting-worse` -> 3 shorts, all 1080x1920 / h264 / aac / 30fps, exported to `output/shorts/`:
+- S01 The $9 chair (Section 1 + condensed Section 8) — 28.42s, 4.2 MB.
+- S02 You own me, but not enough to open me (Section 6 trimmed) — 26.62s, 5.5 MB.
+- S03 A subscription with extra steps (Section 7 re-ordered) — 21.42s, 7.0 MB.
+
+## Feedback Log
+
+### 2026-06-22 — Skill created from the first verified shorts run
+
+Classification: `Operational lesson`
+
+Context:
+Anh Khoa asked to split the main video into 3 vertical shorts as a sub-workflow, build natively in HyperFrames, review per short, then export. During the run he corrected four things that are now LOCKED rules: (1) WIT must be much bigger; (2) keep content out of the platform-UI edge zones (added the safe zone); (3) captions must sit at the vertical center AND look distinct from the in-video labels (white-on-dark subtitle), never covering WIT/labels/cards; (4) each short must be a COMPLETE short, not a hook — remove the "full video" CTA. He chose native portrait rebuild + regenerated VO + one-off-then-skillify.
+
+Lesson:
+Shorts are first-class. Rebuild vertically (don't crop), reuse the section's real assets + voice, regenerate clean per-short VO, caption from real timings, keep everything in the safe zone with a big WIT and centered distinct subtitles, and end on the payoff with NO CTA.
+
+Promote to shared memory:
+The safe-zone + "no CTA / complete short" + "WIT big & high" + "real photo base every scene" rules are already channel-wide visual rules; this skill's memory holds the shorts-specific execution recipe.

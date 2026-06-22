@@ -207,8 +207,9 @@
       ];
       caps.forEach(([i, s, e]) => {
         const sel = `.caption[data-cap="${i}"]`;
+        const st = Math.max(s, 0.05); // never set show==hide at t=0 (cancels out, first caption never appears)
         tl.set(sel, { opacity: 0 }, 0);
-        tl.set(sel, { opacity: 1 }, s);
+        tl.set(sel, { opacity: 1 }, st);
         tl.set(sel, { opacity: 0 }, e);
       });
 

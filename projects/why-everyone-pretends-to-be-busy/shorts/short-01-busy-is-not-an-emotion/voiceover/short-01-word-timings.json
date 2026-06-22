@@ -1,0 +1,440 @@
+{
+  "transcript": "When someone says I'm so busy, it doesn't only mean they have a lot to do. It can also mean please notice that I'm important. That's why people say it even when nobody asked. How are you busy, which is not actually an emotion, busy sounds responsible, busy sounds needed, so people fill the day, sometimes with real work, sometimes with meetings about why the last meeting didn't finish anything. At some point, the job stops being the work. The job becomes proving you're near the work.",
+  "words": [
+    {
+      "word": "When",
+      "start": 0,
+      "end": 0.28
+    },
+    {
+      "word": "someone",
+      "start": 0.28,
+      "end": 0.52
+    },
+    {
+      "word": "says",
+      "start": 0.52,
+      "end": 0.78
+    },
+    {
+      "word": "I'm",
+      "start": 0.78,
+      "end": 0.96
+    },
+    {
+      "word": "so",
+      "start": 0.96,
+      "end": 1.2
+    },
+    {
+      "word": "busy,",
+      "start": 1.2,
+      "end": 1.62
+    },
+    {
+      "word": "it",
+      "start": 1.62,
+      "end": 1.62
+    },
+    {
+      "word": "doesn't",
+      "start": 1.62,
+      "end": 1.92
+    },
+    {
+      "word": "only",
+      "start": 1.92,
+      "end": 2.14
+    },
+    {
+      "word": "mean",
+      "start": 2.14,
+      "end": 2.36
+    },
+    {
+      "word": "they",
+      "start": 2.36,
+      "end": 2.42
+    },
+    {
+      "word": "have",
+      "start": 2.42,
+      "end": 2.6
+    },
+    {
+      "word": "a",
+      "start": 2.6,
+      "end": 2.72
+    },
+    {
+      "word": "lot",
+      "start": 2.72,
+      "end": 2.88
+    },
+    {
+      "word": "to",
+      "start": 2.88,
+      "end": 3.06
+    },
+    {
+      "word": "do.",
+      "start": 3.06,
+      "end": 3.6
+    },
+    {
+      "word": "It",
+      "start": 3.6,
+      "end": 3.68
+    },
+    {
+      "word": "can",
+      "start": 3.68,
+      "end": 3.88
+    },
+    {
+      "word": "also",
+      "start": 3.88,
+      "end": 4.12
+    },
+    {
+      "word": "mean",
+      "start": 4.12,
+      "end": 4.38
+    },
+    {
+      "word": "please",
+      "start": 4.38,
+      "end": 4.66
+    },
+    {
+      "word": "notice",
+      "start": 4.66,
+      "end": 5
+    },
+    {
+      "word": "that",
+      "start": 5,
+      "end": 5.26
+    },
+    {
+      "word": "I'm",
+      "start": 5.26,
+      "end": 5.4
+    },
+    {
+      "word": "important.",
+      "start": 5.4,
+      "end": 5.88
+    },
+    {
+      "word": "That's",
+      "start": 5.88,
+      "end": 6.2
+    },
+    {
+      "word": "why",
+      "start": 6.2,
+      "end": 6.38
+    },
+    {
+      "word": "people",
+      "start": 6.38,
+      "end": 6.68
+    },
+    {
+      "word": "say",
+      "start": 6.68,
+      "end": 6.92
+    },
+    {
+      "word": "it",
+      "start": 6.92,
+      "end": 7.12
+    },
+    {
+      "word": "even",
+      "start": 7.12,
+      "end": 7.2
+    },
+    {
+      "word": "when",
+      "start": 7.2,
+      "end": 7.36
+    },
+    {
+      "word": "nobody",
+      "start": 7.36,
+      "end": 7.6
+    },
+    {
+      "word": "asked.",
+      "start": 7.6,
+      "end": 8.22
+    },
+    {
+      "word": "How",
+      "start": 8.22,
+      "end": 8.46
+    },
+    {
+      "word": "are",
+      "start": 8.46,
+      "end": 8.6
+    },
+    {
+      "word": "you",
+      "start": 8.6,
+      "end": 8.78
+    },
+    {
+      "word": "busy,",
+      "start": 8.78,
+      "end": 9.12
+    },
+    {
+      "word": "which",
+      "start": 9.12,
+      "end": 9.2
+    },
+    {
+      "word": "is",
+      "start": 9.2,
+      "end": 9.36
+    },
+    {
+      "word": "not",
+      "start": 9.36,
+      "end": 9.56
+    },
+    {
+      "word": "actually",
+      "start": 9.56,
+      "end": 9.86
+    },
+    {
+      "word": "an",
+      "start": 9.86,
+      "end": 10.02
+    },
+    {
+      "word": "emotion,",
+      "start": 10.02,
+      "end": 10.6
+    },
+    {
+      "word": "busy",
+      "start": 10.6,
+      "end": 10.72
+    },
+    {
+      "word": "sounds",
+      "start": 10.72,
+      "end": 11.04
+    },
+    {
+      "word": "responsible,",
+      "start": 11.04,
+      "end": 11.88
+    },
+    {
+      "word": "busy",
+      "start": 11.94,
+      "end": 12.06
+    },
+    {
+      "word": "sounds",
+      "start": 12.06,
+      "end": 12.44
+    },
+    {
+      "word": "needed,",
+      "start": 12.44,
+      "end": 12.88
+    },
+    {
+      "word": "so",
+      "start": 12.88,
+      "end": 12.96
+    },
+    {
+      "word": "people",
+      "start": 12.96,
+      "end": 13.24
+    },
+    {
+      "word": "fill",
+      "start": 13.24,
+      "end": 13.46
+    },
+    {
+      "word": "the",
+      "start": 13.46,
+      "end": 13.68
+    },
+    {
+      "word": "day,",
+      "start": 13.68,
+      "end": 14.08
+    },
+    {
+      "word": "sometimes",
+      "start": 14.08,
+      "end": 14.32
+    },
+    {
+      "word": "with",
+      "start": 14.32,
+      "end": 14.56
+    },
+    {
+      "word": "real",
+      "start": 14.56,
+      "end": 14.78
+    },
+    {
+      "word": "work,",
+      "start": 14.78,
+      "end": 15.12
+    },
+    {
+      "word": "sometimes",
+      "start": 15.5,
+      "end": 15.5
+    },
+    {
+      "word": "with",
+      "start": 15.5,
+      "end": 15.76
+    },
+    {
+      "word": "meetings",
+      "start": 15.76,
+      "end": 16.06
+    },
+    {
+      "word": "about",
+      "start": 16.06,
+      "end": 16.38
+    },
+    {
+      "word": "why",
+      "start": 16.38,
+      "end": 16.54
+    },
+    {
+      "word": "the",
+      "start": 16.54,
+      "end": 16.66
+    },
+    {
+      "word": "last",
+      "start": 16.66,
+      "end": 16.96
+    },
+    {
+      "word": "meeting",
+      "start": 16.96,
+      "end": 17.2
+    },
+    {
+      "word": "didn't",
+      "start": 17.2,
+      "end": 17.48
+    },
+    {
+      "word": "finish",
+      "start": 17.48,
+      "end": 17.68
+    },
+    {
+      "word": "anything.",
+      "start": 17.68,
+      "end": 18.64
+    },
+    {
+      "word": "At",
+      "start": 18.64,
+      "end": 18.9
+    },
+    {
+      "word": "some",
+      "start": 18.9,
+      "end": 19.12
+    },
+    {
+      "word": "point,",
+      "start": 19.12,
+      "end": 19.52
+    },
+    {
+      "word": "the",
+      "start": 19.52,
+      "end": 19.52
+    },
+    {
+      "word": "job",
+      "start": 19.52,
+      "end": 19.82
+    },
+    {
+      "word": "stops",
+      "start": 19.82,
+      "end": 20.18
+    },
+    {
+      "word": "being",
+      "start": 20.18,
+      "end": 20.4
+    },
+    {
+      "word": "the",
+      "start": 20.4,
+      "end": 20.58
+    },
+    {
+      "word": "work.",
+      "start": 20.58,
+      "end": 20.82
+    },
+    {
+      "word": "The",
+      "start": 20.82,
+      "end": 21.16
+    },
+    {
+      "word": "job",
+      "start": 21.16,
+      "end": 21.58
+    },
+    {
+      "word": "becomes",
+      "start": 21.58,
+      "end": 22.06
+    },
+    {
+      "word": "proving",
+      "start": 15.76,
+      "end": 16.1
+    },
+    {
+      "word": "you're",
+      "start": 16.1,
+      "end": 16.36
+    },
+    {
+      "word": "near",
+      "start": 16.36,
+      "end": 16.52
+    },
+    {
+      "word": "the",
+      "start": 16.52,
+      "end": 16.8
+    },
+    {
+      "word": "work.",
+      "start": 16.8,
+      "end": 17.52
+    }
+  ]
+}

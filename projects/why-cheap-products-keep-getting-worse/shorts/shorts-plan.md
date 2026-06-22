@@ -8,6 +8,8 @@ Exported deliverables (verified with ffprobe):
 - `output/shorts/short-03-subscription-with-extra-steps.mp4` — 21.42s, 1080x1920, 7.0 MB
 Render: `npx hyperframes render` per short (Chrome + ffmpeg-static). Suggested posting order: S01 → S02 → S03.
 
+RE-EXPORTED 2026-06-23: applied the opening-caption fix (first caption with show-time 0.0 was cancelling out) and re-rendered all 3 to `output/shorts/`. ffprobe-verified 1080x1920 h264+aac.
+
 Vertical safe-zone rule (apply to ALL shorts): keep readable content (labels, captions, CTA, WIT face) inside `x[60..880] · y[220..1490]`. Outside it the platform UI covers content — top title, right action rail (like/comment/share/menu), bottom caption + subscribe + progress bar. WIT body may bleed off the bottom/side edges; its face must stay inside. Captions + CTA live at `bottom:470px`.
 
 Environment note: HyperFrames TTS requires Python 3 + kokoro-onnx. This machine had none — installed Python 3.14.6 (scoop) + kokoro-onnx 0.4.7 + soundfile. Word timings via cached transformers.js whisper-tiny.en. ffmpeg/ffprobe static binaries reused from `%TEMP%/wiw-ffmpeg-static`.

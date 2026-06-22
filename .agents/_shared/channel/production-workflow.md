@@ -59,6 +59,9 @@ Current executable steps:
 - `visual-plan` requires `04-voiceover.md` and selected section voiceover, then writes `05-visual-plan.md` and section visual-plan files.
 - `render` requires `05-visual-plan.md` and selected section visual plan, then writes `06-production-board.md` and section HyperFrames preview files.
 - `auto-adjust` requires a rendered selected section, then audits and fixes that one section preview before review. It reads `visual-plan` memory, `render` memory, shared production rules, and previous sections in the same project. It has no `All` option.
+- `combine` (after all sections) unifies the project on `localhost:1000` with one combined voiceover and exports the full MP4 to `output/`.
+- `caption` (after combine) transcribes the full combined audio for real word timings and exports `output/captions.srt`.
+- `shorts` (side sub-workflow from `combine`) turns the finished long video into 2-4 COMPLETE vertical shorts (`1080x1920`) on ports `1100 + short number` via native portrait HyperFrames rebuilds — reusing each source section's real assets, regenerating a per-short voiceover, and burning centered subtitles — then exports to `output/shorts/`. Each short carries NO CTA, never edits the long-form sections, and does not block caption, upload, or learning.
 
 Packaging side-branch rule:
 
