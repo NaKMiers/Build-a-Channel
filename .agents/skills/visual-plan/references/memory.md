@@ -677,6 +677,33 @@ Apply next time:
 Promote to shared memory:
 no; execution refinement of the Real Scene Base Rule + the standing real-UI preference.
 
+### 2026-06-22 - Session synthesis (S5–S7): real bg behind EVERY scene + WIT big-and-high
+
+Classification: `Core` (confirmed channel creative direction)
+
+Context:
+Across `why-everyone-pretends-to-be-busy` Sections 5, 6, 7 the owner gave three consistent reviews:
+(1) S5 "missing some real-world images that make the section not lively" → grounded the CSS-UI scenes
+on real desk photos; (2) S5 "the last scene still not have background" → even the stylized CSS theater
+got a real red-curtain photo; (3) S7 "WIT too low / covered by the frame" then "make the WIT bigger,
+re-arrange other items if it covers content."
+
+Lesson (now the default, codified in SKILL.md + shared):
+- EVERY scene needs a real, people-free photo base — including real-UI scenes (chat/Meet/Trello/
+  spreadsheet/calendar) and stylized/CSS constructs (shield, stage). Float the UI as a `.screen` on a
+  real desk; back a CSS construct with a real photo. All-CSS-on-gradient = "not lively," gets rejected.
+  Pick a base that literally echoes the line. Hands-at-keyboard photos are OK (no-face allows hands).
+- Plan WIT BIG (`1/3`–`1/2` frame) AND HIGH (head+torso inside frame, only legs cropped). If a big WIT
+  would cover content, the PLAN relocates the other items (opposite side/top/bottom) — never shrink or
+  lower WIT to fit. State both WIT's region and the cleared zone for labels in the cue plan.
+- Real-UI illustration remains the standing preference (see the 2026-06-22 STANDING PREFERENCE entry).
+
+Apply next time: assume real photo base per scene by default; assume WIT big+high by default; design
+label/UI positions AROUND a big high WIT from the start so render doesn't have to rescue collisions.
+
+Promote to shared memory: yes — added to `_shared/systems/visual-production.md` (real-bg-behind-every-scene
++ WIT size/anchor) and the SKILL.md files; brand-system already carries the real-UI preference.
+
 ## Feedback Entry Template
 
 ```markdown

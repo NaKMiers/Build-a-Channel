@@ -1,47 +1,32 @@
-# Section 1 Render — Design
+# Section 1 Render — Design (v2 remake)
 
-Video: `Why Everyone Pretends To Be Busy`
-Section: `Section 1: Hook: The Busy Trap`
-Composition id: `Section01Hook`
-Duration: `21.056s` (matches voiceover MP3)
-Port: `1001`
+Composition id: `Section01Hook` · 1920x1080 · 21.12s · audio 0.84 (David23 / am_eric)
 
-## Big Scenes (3)
+## Idea
+The hook: the less time you have for real work, the more important you *look*. Busy signals
+(calendar/inbox/phone) read as "this person matters"; quiet thinking reads as "lazy." Dry button:
+there is a difference between being busy and looking busy.
 
-1. `scene-a-calendar` (0–11.0s, track 1): bright wall-calendar photo = "the overload"
-2. `scene-b-desk` (10.95–16.06s, track 3): calm minimal desk = "sit quietly and think"
-3. `scene-c-cage` (16.02–21.056s, track 4): cooler calendar + CSS vertical cage bars = "looking busy = trapped" (intentional A/C bookend)
+## New standard applied (remade from scratch)
+- Real photo base behind EVERY scene; REAL-UI (packed calendar / unread inbox / phone panic) for the
+  "busy signals" beat, built in CSS with real Google Calendar + Gmail icons (editorial).
+- WIT BIG (≈1/3–1/2 frame) and HIGH (head+torso inside frame, legs cropped); labels arranged around it.
 
-## Cues (8, track 2, pinned to word timings)
-
-| Cue | Start | Voice cue (word) | Content | Motion |
+## Scene Map
+| Scene | Track | Time | Real base | Build |
 |---|--:|---|---|---|
-| 1 | 0.30 | "Here's a" | REAL WORK folder | hard-show |
-| 2 | 2.50 / 4.32 | "less time" / "important" | contradiction label + emphasis pulse | hard-show + pulse |
-| 3 | 5.48–8.14 | "full calendar"/"inbox"/"phone"/"panic" | URGENT, 99+, red dots, GIANT panic WIT | smash + staggered show |
-| 4 | 9.18 | "this person matters" | "THIS PERSON MATTERS" label | hard-show |
-| 5 | 11.10 / 11.48 | "sit quietly" | cut to desk; thinking WIT; THINKING... | hard-show |
-| 6 | 13.34 / 14.32 / 14.90 | "lazy" / "asleep" | deadpan WIT; LAZY? stamp; (OR ASLEEP) | hard-show + stamp smash |
-| 7 | 16.40 / 19.12 | "everyone gets busy" / "looking" | cut to cage; trapped WIT; LOOKING BUSY | hard-show |
-| 8 | 20.02 | "There is a difference" | dry button label | small smash |
+| A | 1 | 0–5.30 | base-deskwork.jpg (warm desk) | A STRANGE RULE + LESS REAL WORK = LOOK MORE IMPORTANT; WIT typing |
+| B | 3 | 5.24–11.04 | base-busy-signals.jpg (bright flat-lay + phone) | real-UI calendar + inbox cards + phone panic notifs; THIS PERSON MATTERS; WIT phone-panic (centered) |
+| C | 4 | 11.0–16.10 | base-deskcalm.jpg (minimal desk) | THINK QUIETLY → LAZY? / ASLEEP — EYES OPEN; WIT deadpan |
+| D | 5 | 16.06–21.12 | base-deskwork-cage.jpg (warm desk cooled + CSS cage bars) | EVERYONE GETS BUSY → GOOD AT LOOKING BUSY → THERE IS A DIFFERENCE; WIT suspicious |
 
-## WIT (4 beats, shared poses)
+## Cue Map (track 2 — pinned to word timings)
+A: A STRANGE RULE@0.58 · claim@3.48 (WIT typing@0.4).
+B: calendar card@5.76 · inbox card@6.64 · panic notifs@7.30/8.14 · THIS PERSON MATTERS@10.64 (WIT phone-panic@5.5, centered-bottom; "matters" label moved to top so WIT clears it).
+C: THINK QUIETLY@11.30 · LAZY?@14.32 · ASLEEP — EYES OPEN@14.90 (WIT deadpan@11.2).
+D: EVERYONE GETS BUSY@16.34 + cage bars slam (16.40–17.0) · GOOD AT LOOKING BUSY@19.12 · THERE IS A DIFFERENCE@20.58 (WIT suspicious@16.3).
 
-- C3 `wit-pose-holding-phone-panic.png` — giant ~1/2 frame, lower-right half-body rise
-- C5 `wit-pose-thinking.png` — ~1/3 frame, lower-left
-- C6 `wit-pose-deadpan-side-eye.png` — ~1/2 frame, lower-right side peek
-- C7 `wit-pose-trapped-by-app-screen.png` — ~1/2 frame, centered behind cage bars (pose is WIT inside a phone outline → reinforces theme)
-
-All faces/glasses fully in frame; only lower body exits the bottom edge. WIT in front of cage bars so bars never cross the face.
-
-## Style
-
-- Handwritten labels (PatrickHandLocal local woff2), cream/blue/yellow cards, red markup for URGENT/LAZY?/contradiction.
-- Hard-show is default; impact (smash/pulse) only on "important", URGENT, LAZY?, and the final button.
-- Scene grades: A bright, B calm, C cool/dark — differentiates the A/C calendar bookend.
-
-## Checks
-
-- lint: 0 errors, 1 non-blocking warning (track 2 density = 8 cues; intentional for this hook)
-- validate: 0 errors (contrast warnings are timeline-sampled on hidden cues; labels have solid light backgrounds and read clearly in snapshots)
-- snapshots verified: 0.8/4.4/7.6/9.6/11.7/14.6/17.0/19.4/20.4s
+## Motion / channel rules
+- Hard-show ordinary labels; smash for the UI cards, panic notifs, LAZY?, ASLEEP, and THERE IS A DIFFERENCE; cage bars bounce-slam down.
+- No-face: WIT only; all photo bases people-free. Real-UI icons editorial. Subtitle-safe lower margin kept.
+- D returns to A's warm desk (cooled + cage bars) as a deliberate callback / the channel's calendar-cage motif.

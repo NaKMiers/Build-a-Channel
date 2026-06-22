@@ -124,6 +124,15 @@ them in CSS with real icon PNGs (from Wikimedia Commons), used editorially. See 
 
 Channel-wide reusable assets should be rare and high-value. Most video-specific assets belong inside `projects/<slug>/assets/`.
 
+Real background behind EVERY scene, including UI scenes (owner-confirmed 2026-06-22). A section
+made of full-frame CSS UI / labels on flat gradients reads as "no background / not lively" and gets
+sent back. Every scene — even a real-UI scene (Meet grid, chat, Trello, spreadsheet, calendar) or a
+stylized one — must sit on a REAL, people-free photo. Float the crisp UI as a drop-shadowed `.screen`
+over a real desk/office photo (with a light scrim), and prefer a photo that literally echoes the line
+(empty meeting room for "this meeting could've been a message", sticky-note wall for "overloaded",
+real theater curtain for "the star of the show", a packed calendar app for "a calendar with Wi-Fi").
+"Hands at a keyboard" photos are fine (no-face rule allows hands). Keep adjacent scene bases distinct.
+
 ## Visual Humor Patterns
 
 Use a small set per video:
@@ -156,6 +165,10 @@ WIT is useful when:
 WIT should not block labels or replace the explanation. The reverse also matters: if WIT is the emotional subject, labels, payoff tags, stamps, and cards must not cover WIT's face, eyes, mouth, or key prop.
 
 When WIT appears, treat it as the emotional subject of the beat, not a small corner sticker. For strong emotional beats, WIT can occupy roughly `1/3` to `1/2` of the frame when it does not cover labels or evidence. Prefer goofy, readable poses such as panic, facepalm, suspicion, betrayal, confusion, shock, or defeated reactions over neutral filler poses.
+
+WIT size + vertical anchor (owner-confirmed 2026-06-22). Two complementary defaults the owner asked for:
+- **Big (default to GIANT)**: the owner has repeatedly said "I love giant WIT", so default to the LARGE end — about `1/2` of the frame (giant), not a cautious `1/3`. A small WIT reads as a sticker. If a bigger WIT would cover a label, board, chat bubble, or other content, RE-ARRANGE the other items (move them to the opposite side / up / down) rather than shrinking or lowering WIT. WIT is the emotional subject; the supporting content makes room for it. (Concrete sizing that worked at 1920x1080: side-anchored WIT `width ~1340–1380`, centered WIT `width ~1140`.)
+- **High**: do NOT anchor a bottom-edge WIT so low that only the head peeks (e.g. CSS `bottom:-540…-600px` bled most of the body off-canvas and the owner said it looked "too low / covered by the frame"). Anchor higher (`bottom ≈ -250…-340px`, even for a giant figure) so head + glasses + torso + arms sit inside the frame and only the legs crop. Verify in a snapshot that the head is comfortably inside the top edge too.
 
 Do not overuse WIT. WIT is emotional punctuation, not a reaction requirement for every cue. For short sections, start with about `1-2` WIT beats per persistent big scene, then adjust based on voice rhythm. Let labels, props, and markup carry explanatory beats between WIT moments.
 

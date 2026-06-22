@@ -35,7 +35,7 @@ Source files:
 | 4 | Your Apps Invented Emergencies | revised — 5 scenes, full-HD | 42.133s | 5 | 9 | `visual-plan/section-04-your-apps-invented-emergencies/section-04-your-apps-invented-emergencies-visual-plan.md` | `visual-plan/section-04-your-apps-invented-emergencies/reference-board.md` | full-HD CC (phone/button/alarm/fridge) + CSS notifications; word-timed; 5 WIT poses |
 | 5 | Visible Work Beats Quiet Thinking | planned — 5 scenes, real-UI on real desks | 42.859s | 5 | 9 | `visual-plan/section-05-visible-work-beats-quiet-thinking/section-05-visible-work-beats-quiet-thinking-visual-plan.md` | `visual-plan/section-05-visible-work-beats-quiet-thinking/reference-board.md` | real-UI (Meet/poll/Trello floated on REAL CC desk photos; Sheets-on-stage) + CC wall photo; word-timed; 5 WIT poses |
 | 6 | "I'm Busy" Is A Shield | planned — 5 scenes, real bg + real-UI | 38.04s | 5 | 13 | `visual-plan/section-06-im-busy-is-a-shield/section-06-im-busy-is-a-shield-visual-plan.md` | `visual-plan/section-06-im-busy-is-a-shield/reference-board.md` | 5 real photo backgrounds (office/wood desk/sticky-notes/meeting room/grey desk) + CSS shield + real-UI chat; word-timed; 5 WIT poses |
-| 7 | Payoff: Activity Is Not Value | not planned | 46.72s | — | — | — | — | voiceover ready (0.86) |
+| 7 | Payoff: Activity Is Not Value | planned — 5 scenes, real bg + real-UI | 46.78s | 5 | 11 | `visual-plan/section-07-payoff-activity-is-not-value/section-07-payoff-activity-is-not-value-visual-plan.md` | `visual-plan/section-07-payoff-activity-is-not-value/reference-board.md` | 3 real photo bases (?-note / hands typing / warm office) + CSS boards + real-UI chat + Google Calendar close; word-timed; 5 WIT poses |
 
 ## Cross-Section Continuity
 

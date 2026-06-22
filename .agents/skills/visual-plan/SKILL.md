@@ -395,6 +395,13 @@ Do not draw WIT in HTML/SVG/CSS.
 Do not invent random WIT.
 If WIT is planned for an emotional beat, its visible character footprint must occupy at least `1/3` of the frame in the planned screenshot/contact-sheet frame. This means the visible WIT body/face area, not the transparent PNG bounds or CSS box. Default to `1/3` to `1/2` of the frame, and go larger when it strengthens the joke without blocking labels or evidence.
 Do not default to full-body WIT standing in a lower corner. For strong reaction/payoff beats, plan Section-1-style giant WIT placements: behind-layer oversized faces, half-body entrances from the lower edge, side peeks, WIT appearing from a corner, upside-down WIT dropping from the top, WIT hiding behind a wardrobe/product/tag/box/screen, WIT looming beside the main object, or cropped lower-body compositions that make the emotion dominate the frame.
+
+WIT default = BIG and HIGH (owner-confirmed 2026-06-22). Plan WIT large (`1/3`–`1/2` frame) AND
+anchored high enough that head+glasses+torso+arms are inside the frame with only the legs cropped — a
+bottom-edge peek anchored too low (only the head showing) gets rejected as "too low / covered by the
+frame." When a big WIT would cover a label/board/UI, the PLAN must place the other items elsewhere
+(opposite side / top / bottom) so WIT stays big and high — do not solve the collision by shrinking or
+lowering WIT. State WIT's screen region AND the cleared zone for the other items in the cue plan.
 Intentional WIT crop is allowed only for body/legs/edge peeking. Never plan a crop that cuts through WIT's face, glasses, head, shoulders, mouth, key prop, or readable emotion. If a contact-sheet frame would make WIT look accidentally broken, the plan must choose a different placement, scale, or pose.
 When WIT is the emotional subject of a payoff or reaction beat, plan a clean WIT emotion zone. Payoff text, stamps, tags, and labels must not cover WIT's face, eyes, mouth, or key prop; solve this with separate screen regions, not by hoping render can layer around it later.
 If the current approved pose library cannot express the beat, plan a new WIT pose asset and save it into the shared/project WIT asset library instead of settling for a weak pose.
@@ -484,6 +491,14 @@ If a selected section uses zero real images, the `reference-board.md` must expla
 ### Real Scene Base Rule
 
 Every persistent big scene must specify a real, descriptive image base (or a clearly justified self-made base) — never a bare flat gradient or empty colored background. A CSS-only/gradient beat reads to reviewers as "no background / no image to describe the voice" and gets sent back. Self-made CSS is for objects, props, labels, cards, and overlays on top of a base, not for the scene background itself unless the plan documents a specific reason (e.g. a deliberately blank paper beat).
+
+This INCLUDES real-UI scenes and stylized scenes (owner-confirmed 2026-06-22). A scene whose hero is
+a real-UI screen (chat, Meet grid, Trello, spreadsheet, calendar) or a CSS construct (a shield, a
+theater stage) still needs a real photo base behind it — float the UI as a `.screen` on a real desk
+photo, and back a stylized construct with a real photo (e.g. a real red-curtain stage, not CSS
+curtains). The owner rejected an all-CSS-UI section as "not lively" and a CSS stage as "still not have
+background." Prefer a base that literally echoes the line (empty meeting room = "this meeting could've
+been a message"; sticky-note wall = "overloaded"; packed calendar app = "a calendar with Wi-Fi").
 
 For each big scene, the plan must name the chosen base image, the search terms used to find it, and a fallback, so render can source/grade it without guessing. The image must *describe the voice beat*, e.g. a padlock for "you own me but cannot open me", money for "costs almost as much as a new one", a phone on a table for "society looking at a phone", an opened device + battery + tools for "repairability / replace the battery".
 

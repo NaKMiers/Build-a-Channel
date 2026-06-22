@@ -850,6 +850,78 @@ people-free desk/space photos for liveliness; vary the surface; verify no faces.
 Promote to shared memory: candidate — consider a short "ground real-UI on real photos" note in
 `_shared/channel/brand-system.md` if this recurs across sections.
 
+### 2026-06-22 - Whisper tail glitch: last sentence jumps BACKWARD (re-time monotonically)
+
+Classification: `Operational lesson`
+
+Context:
+Section 7's generated `section-07-word-timings.json` had a clean body but the FINAL sentence
+("…you are not lazy. You are just trapped in a calendar with Wi-Fi") had word timestamps that jumped
+BACKWARD to ~40s after a correct run to 43.56s — a whisper-tiny chunk-boundary artifact (the 30s
+chunk + 5s stride re-decoded the tail). Earlier sections showed the related tail-DUPLICATION variant.
+
+Lesson:
+After generating word timings, always inspect the LAST ~15 words for monotonicity, not just for
+duplication. If a trailing run of words jumps backward (out of order vs the transcript), re-time that
+run monotonically from the last good timestamp to the audio duration, keeping each word's spoken
+order. Pin the final payoff label to the corrected time (here "A CALENDAR WITH WI-FI" @45.40).
+
+Apply next time:
+- print the tail with indices and verify start times strictly increase
+- fix backward-jump runs by hand (even spacing from last-good → audio end) before pinning cues
+- this is in addition to the known tail-duplication slice fix
+
+Promote to shared memory: no; word-timing QA mechanic for render/voiceover.
+
+### 2026-06-22 - WIT bottom-peek anchored too low reads as "covered by the frame"
+
+Classification: `Render lesson`
+
+Context:
+Section 7 used the established bottom-edge WIT peek at `bottom:-560/-600px` (width ~860–1000). Owner:
+"The WIT in all scenes is too low and it's covered by the frame, move the WIT to higher position."
+Only the head was peeking; most of the body bled below the canvas, reading as cut/hidden.
+
+Lesson:
+For the bottom-edge WIT placement, `bottom:-540…-600px` pushes too much of the figure off-canvas —
+head+shoulders only, looks broken. Anchor higher: `bottom ≈ -250…-320px` (trim width to ~640–880)
+so head + glasses + torso + arms sit inside the frame and only the legs crop. Keep WIT horizontally
+off to a side/corner so it clears labels; verify in a snapshot. This is the safer default going forward.
+
+Apply next time:
+- default bottom-peek WIT to ~`-260px`, not ~`-560px`; show head→hips, crop legs only
+- re-check face/head/shoulders are well inside frame and not covering labels/evidence
+- the prior low anchor (S4–S6) may get the same complaint — raise on request
+
+Promote to shared memory: no; render WIT-placement mechanic (pairs with the WIT safe-crop rule).
+
+### 2026-06-22 - WIT default: BIG and HIGH; re-arrange content around it (Section 7)
+
+Classification: `Render lesson`
+
+Context:
+Right after the "WIT too low" fix, the owner said: "Make the WIT bigger, if the bigger wit cover
+content behind, you can re-arrange positions of other items." So the raised-but-medium WIT (width
+~640–880) was still not what they wanted — they want it BIG too.
+
+Lesson:
+The two WIT defaults combine into one rule: WIT is BIG (≈`1/3`–`1/2` frame) AND HIGH (head+torso inside
+the frame, `bottom≈-260…-340`, legs cropped). When a big WIT collides with a label/board/chat/UI, MOVE
+the other items, don't shrink/lower WIT. Section 7 moves that worked: A → board to top-left; B → WIT
+centered-bottom with NOT LAZY/SAFER on top and the two label columns at the far sides; C → ≠ rows on
+the left, WIT big on the right; D → WIT to the LEFT (chat bubbles are right-aligned), stamp to the
+right; E → calendar shrunk + shifted right, labels to the right, big trapped WIT center-left.
+Check both the early AND late cue frames (a label that appears later, e.g. "SAFER"/"Busy.", must also
+clear the now-bigger WIT).
+
+Apply next time:
+- start WIT big + high; rearrange the supporting items to clear it (opposite side / top / bottom)
+- centered-bottom WIT works when labels can live at top + far sides; side WIT works when content is on the opposite side
+- snapshot a mid/late timestamp too, not just the WIT's entrance, to catch later labels colliding
+- now codified in `render/SKILL.md`, `visual-plan/SKILL.md`, and `_shared/systems/visual-production.md`
+
+Promote to shared memory: yes — done (WIT size+anchor rule added to `_shared/systems/visual-production.md`).
+
 ## Feedback Entry Template
 
 ```markdown
