@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Section 05 Visible Work Beats Quiet Thinking - Why Everyone Pretends To Be Busy</title>
+  <style>
+    @font-face { font-family: "PatrickHandLocal"; src: url("./assets/fonts/patrick-hand-latin.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
+    :root { --ink:#1b1510; --red:#b9362c; --red-deep:#7d1714; --cream:#fff7d8; --green:#188038; --sale:#f0c63d; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #14110d; color: var(--ink); overflow: hidden; }
+    #Section05Visible { position: relative; width: 1920px; height: 1080px; overflow: hidden; background: #14110d; font-family: "PatrickHandLocal"; }
+    .scene, .cue { position: absolute; inset: 0; width: 100%; height: 100%; overflow: hidden; }
+    .scene { z-index: 1; will-change: opacity, transform, filter; }
+    .cue { z-index: 5; pointer-events: none; }
+    .photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; user-select: none; pointer-events: none; }
+    .photo.wall { filter: saturate(0.96) contrast(1.04) brightness(0.98); }
+    .shade { position: absolute; inset: 0; z-index: 2; background: linear-gradient(0deg, rgba(20,16,12,0.42), transparent 55%); }
+
+    /* ---- real-desk environment + floating UI screen (scenes A/C/D) ---- */
+    .deskphoto { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; user-select:none; pointer-events:none; }
+    .deskphoto.call { filter:saturate(1.02) contrast(1.02) brightness(0.92); }
+    .deskphoto.survey { filter:saturate(1.02) contrast(1.02) brightness(0.9); }
+    .deskphoto.board { filter:saturate(1.04) contrast(1.04) brightness(0.86); }
+    .deskscrim { position:absolute; inset:0; z-index:1; background:radial-gradient(ellipse 80% 80% at 50% 46%, rgba(8,10,16,0.30), rgba(8,10,16,0.66) 92%); }
+    .screen { position:absolute; left:50%; top:46%; transform:translate(-50%,-50%); width:1500px; height:846px; border-radius:26px; overflow:hidden; z-index:2; box-shadow:0 44px 90px rgba(0,0,0,0.55), 0 0 0 2px rgba(255,255,255,0.07); }
+
+    /* ---- Scene A: Google Meet call grid (inside .screen) ---- */
+    .meetbg { position:absolute; inset:0; background:#202124; }
+    .meet-top { position:absolute; top:0; left:0; right:0; height:78px; display:flex; align-items:center; gap:18px; padding:0 40px; background:#2d2e31; z-index:3; }
+    .meet-top img { width:46px; height:46px; }
+    .meet-top .mt { font-family:"Segoe UI",system-ui,sans-serif; color:#e8eaed; font-size:32px; }
+    .meet-top .mt span { color:#9aa0a6; font-size:26px; }
+    .meet-grid { position:absolute; left:24px; right:24px; top:96px; bottom:88px; display:grid; grid-template-columns:repeat(3,1fr); grid-template-rows:repeat(2,1fr); gap:16px; z-index:3; }
+    .mtile { position:relative; background:#3c4043; border-radius:16px; display:flex; align-items:center; justify-content:center; overflow:hidden; }
+    .mtile.spk { box-shadow:inset 0 0 0 5px #8ab4f8; }
+    .mtile .av { width:118px; height:118px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; font-family:"Segoe UI",system-ui,sans-serif; font-size:56px; font-weight:600; }
+    .mtile .nm { position:absolute; left:18px; bottom:14px; color:#fff; font-family:"Segoe UI",system-ui,sans-serif; font-size:28px; text-shadow:0 2px 4px rgba(0,0,0,0.6); }
+    .meet-bar { position:absolute; bottom:0; left:0; right:0; height:78px; background:#202124; display:flex; align-items:center; justify-content:center; gap:26px; z-index:4; }
+    .meet-bar .mb { width:56px; height:56px; border-radius:50%; background:#3c4043; }
+    .meet-bar .mb.end { width:88px; border-radius:28px; background:#ea4335; }
+
+    /* ---- Scene C: survey poll card (inside .screen) ---- */
+    .pollbg { position:absolute; inset:0; background:#fffdf5; }
+    .pollcard { position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:1240px; padding:20px 40px; z-index:3; }
+    .pollcard h3 { margin:0 0 44px; font-family:"PatrickHandLocal"; color:var(--ink); font-size:60px; line-height:1.0; }
+    .pollrow { margin:0 0 34px; }
+    .pollrow .lab { font-family:"Segoe UI",system-ui,sans-serif; font-size:38px; color:#333; margin-bottom:12px; }
+    .pollbar { height:60px; border-radius:12px; background:#e6e2d6; overflow:hidden; }
+    .pollbar i { display:block; height:100%; width:0; border-radius:12px; }
+    .pollrow.yes .pollbar i { background:#9aa0a6; }
+    .pollrow.no .pollbar i { background:var(--red); }
+    .pollrow .pct { float:right; font-family:"Segoe UI",system-ui,sans-serif; font-size:38px; font-weight:700; }
+    .pollcard .foot { margin-top:14px; font-family:"PatrickHandLocal"; font-size:36px; color:#777; text-align:right; }
+
+    /* ---- Scene D: Trello kanban board (inside .screen) ---- */
+    .kanbg { position:absolute; inset:0; background:linear-gradient(160deg,#0079bf,#055a8c); }
+    .kan-top { position:absolute; top:0; left:0; right:0; height:76px; display:flex; align-items:center; gap:16px; padding:0 40px; background:rgba(0,0,0,0.20); z-index:3; }
+    .kan-top img { width:46px; height:46px; border-radius:9px; }
+    .kan-top .kt { font-family:"Segoe UI",system-ui,sans-serif; color:#fff; font-size:34px; }
+    .kancols { position:absolute; left:80px; top:128px; display:flex; gap:40px; z-index:3; }
+    .kancol { width:420px; background:#ebecf0; border-radius:16px; padding:18px 18px; max-height:640px; }
+    .kancol > .h { font-family:"Segoe UI",system-ui,sans-serif; font-weight:700; font-size:34px; color:#172b4d; margin:4px 6px 18px; }
+    .kcard { background:#fff; border-radius:10px; padding:18px 20px; margin-bottom:16px; box-shadow:0 3px 0 rgba(9,30,66,0.18); font-family:"Segoe UI",system-ui,sans-serif; font-size:32px; color:#172b4d; }
+    .kcard .chip { display:inline-block; height:16px; width:104px; border-radius:8px; margin-bottom:12px; }
+    .chip.g { background:#61bd4f; } .chip.y { background:#f2d600; } .chip.b { background:#0079bf; } .chip.r { background:#eb5a46; }
+    .movecard { position:absolute; top:212px; left:1000px; width:380px; background:#fff; border:5px solid var(--sale); border-radius:10px; padding:18px 20px; box-shadow:0 14px 0 rgba(9,30,66,0.28); font-family:"Segoe UI",system-ui,sans-serif; font-size:32px; color:#172b4d; z-index:6; }
+    .movecard .chip { display:inline-block; height:16px; width:104px; border-radius:8px; margin-bottom:12px; background:#eb5a46; }
+
+    /* ---- Scene E: spreadsheet on a REAL theater stage (red curtain photo) ---- */
+    .stagephoto { filter:saturate(1.05) contrast(1.04) brightness(0.78); }
+    .stagescrim { position:absolute; inset:0; z-index:1; background:radial-gradient(ellipse 55% 60% at 50% 44%, rgba(0,0,0,0) 30%, rgba(0,0,0,0.55) 100%); }
+    .spotlight { position:absolute; left:50%; top:50%; transform:translate(-50%,-52%); width:1100px; height:840px; background:radial-gradient(ellipse 50% 50% at 50% 42%, rgba(255,247,200,0.34), rgba(255,247,200,0) 70%); z-index:2; pointer-events:none; }
+    .sheet { position:absolute; left:50%; top:50%; transform:translate(-50%,-52%) rotate(-1deg); width:1040px; background:#fff; border-radius:14px; box-shadow:0 30px 0 rgba(0,0,0,0.45); overflow:hidden; z-index:4; }
+    .sheet .sh-top { height:88px; background:var(--green); display:flex; align-items:center; gap:18px; padding:0 30px; }
+    .sheet .sh-top img { width:54px; height:54px; }
+    .sheet .sh-top .nm { font-family:"Segoe UI",system-ui,sans-serif; color:#fff; font-size:40px; }
+    .sheet .sh-top .nm span { opacity:0.8; font-size:30px; }
+    .grid-tbl { width:100%; border-collapse:collapse; font-family:"Segoe UI",system-ui,sans-serif; }
+    .grid-tbl td { border:2px solid #d7dbe0; height:74px; font-size:34px; color:#222; text-align:center; }
+    .grid-tbl td.rh { width:70px; background:#f1f3f4; color:#777; font-size:28px; }
+    .grid-tbl tr.hd td { background:#f1f3f4; color:#777; font-weight:700; font-size:30px; }
+    .grid-tbl td.num { color:#188038; }
+    .starbadge { position:absolute; left:50%; top:50%; transform:translate(-50%,-52%); margin-left:430px; margin-top:-300px; width:170px; height:170px; border-radius:50%; background:var(--sale); border:9px solid var(--ink); display:flex; align-items:center; justify-content:center; font-size:120px; color:var(--ink); z-index:7; box-shadow:0 10px 0 rgba(0,0,0,0.35); }
+
+    /* ---- shared overlays ---- */
+    .label { position:absolute; display:inline-flex; align-items:center; justify-content:center; min-height:62px; padding:12px 26px 16px; background:var(--cream); border:7px solid var(--ink); border-radius:7px; box-shadow:12px 14px 0 rgba(27,21,16,0.24); color:var(--ink); font-size:56px; line-height:0.95; text-align:center; transform:rotate(-2deg); z-index:8; }
+    .label.small { font-size:40px; padding:10px 20px 14px; }
+    .label.red { background:#fff5f1; color:var(--red-deep); border-color:var(--red-deep); }
+    .label.yellow { background:var(--sale); }
+    .label.green { background:#eafbe7; color:var(--green); border-color:var(--green); }
+    .stamp { position:absolute; z-index:9; padding:12px 24px 16px; color:var(--red-deep); border:9px solid var(--red-deep); background:#fff5f1; font-size:70px; line-height:0.86; transform:rotate(-9deg); }
+    .wit { position:absolute; object-fit:contain; z-index:9; filter:drop-shadow(15px 18px 0 rgba(0,0,0,0.30)); transform-origin:center center; }
+    .label, .stamp, .wit, .movecard, .starbadge, .pollbar i { will-change: opacity, transform; }
+  </style>
+</head>
+<body>
+  <div id="Section05Visible" data-composition-id="Section05Visible" data-start="0" data-duration="42.859" data-width="1920" data-height="1080">
+
+    <!-- SCENE A: Google Meet call grid on a real desk 0-10.54 -->
+    <div id="scene-a" class="clip scene" data-start="0" data-duration="10.54" data-track-index="1">
+      <img class="deskphoto call" src="./assets/visual-references/section-05-visible-work-beats-quiet-thinking/base-desk-call.jpg" alt="">
+      <div class="deskscrim"></div>
+      <div class="screen">
+        <div class="meetbg"></div>
+        <div class="meet-top"><img src="./assets/visual-references/section-05-visible-work-beats-quiet-thinking/icons/meet.png" alt=""><div class="mt">Team standup <span>· 9 people · 24:13</span></div></div>
+        <div class="meet-grid">
+          <div class="mtile spk"><div class="av" style="background:#1a73e8;">AK</div><div class="nm">Alex</div></div>
+          <div class="mtile"><div class="av" style="background:#9334e6;">PR</div><div class="nm">Priya</div></div>
+          <div class="mtile"><div class="av" style="background:#e8710a;">SM</div><div class="nm">Sam</div></div>
+          <div class="mtile"><div class="av" style="background:#188038;">MI</div><div class="nm">Mia</div></div>
+          <div class="mtile"><div class="av" style="background:#d93025;">JO</div><div class="nm">Jon</div></div>
+          <div class="mtile"><div class="av" style="background:#3c4043;">YOU</div><div class="nm">You</div></div>
+        </div>
+        <div class="meet-bar"><div class="mb"></div><div class="mb"></div><div class="mb end"></div></div>
+      </div>
+    </div>
+
+    <!-- SCENE B: empty-room wall (staring at a wall) 10.5-19.14 -->
+    <div id="scene-b" class="clip scene" data-start="10.5" data-duration="8.64" data-track-index="3">
+      <img class="photo wall" src="./assets/visual-references/section-05-visible-work-beats-quiet-thinking/base-wall.jpg" alt="">
+      <div class="shade"></div>
+    </div>
+
+    <!-- SCENE C: survey poll card on a real desk 19.1-25.8 -->
+    <div id="scene-c" class="clip scene" data-start="19.1" data-duration="6.70" data-track-index="4">
+      <img class="deskphoto survey" src="./assets/visual-references/section-05-visible-work-beats-quiet-thinking/base-desk-survey.jpg" alt="">
+      <div class="deskscrim"></div>
+      <div class="screen">
+        <div class="pollbg"></div>
+        <div class="pollcard">
+          <h3>Can you tell who's actually being productive?</h3>
+          <div class="pollrow yes"><div class="lab">Yes, easily <span class="pct" style="color:#9aa0a6;">15%</span></div><div class="pollbar"><i class="bar-yes"></i></div></div>
+          <div class="pollrow no"><div class="lab">Not really… <span class="pct" style="color:#b9362c;">85%</span></div><div class="pollbar"><i class="bar-no"></i></div></div>
+          <div class="foot">— survey of managers</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCENE D: Trello kanban board on a real desk 25.76-35.08 -->
+    <div id="scene-d" class="clip scene" data-start="25.76" data-duration="9.32" data-track-index="5">
+      <img class="deskphoto board" src="./assets/visual-references/section-05-visible-work-beats-quiet-thinking/base-desk-board.jpg" alt="">
+      <div class="deskscrim"></div>
+      <div class="screen">
+        <div class="kanbg"></div>
+        <div class="kan-top"><img src="./assets/visual-references/section-05-visible-work-beats-quiet-thinking/icons/trello.png" alt=""><div class="kt">Work board</div></div>
+        <div class="kancols">
+          <div class="kancol"><div class="h">TO DO</div>
+            <div class="kcard"><span class="chip b"></span>Write the actual doc</div>
+            <div class="kcard"><span class="chip y"></span>Fix the real bug</div>
+          </div>
+          <div class="kancol"><div class="h">DOING</div>
+            <div class="kcard"><span class="chip g"></span>Reply to threads</div>
+          </div>
+          <div class="kancol"><div class="h">DONE</div>
+            <div class="kcard"><span class="chip g"></span>Joined the call</div>
+          </div>
+        </div>
+        <div class="movecard"><span class="chip"></span>Moved a card</div>
+      </div>
+    </div>
+
+    <!-- SCENE E: spreadsheet on a REAL theater stage (red curtain photo) 35.04-42.859 -->
+    <div id="scene-e" class="clip scene" data-start="35.04" data-duration="7.819" data-track-index="6">
+      <img class="photo stagephoto" src="./assets/visual-references/section-05-visible-work-beats-quiet-thinking/base-stage.jpg" alt="">
+      <div class="stagescrim"></div>
+      <div class="spotlight spot"></div>
+      <div class="sheet">
+        <div class="sh-top"><img src="./assets/visual-references/section-05-visible-work-beats-quiet-thinking/icons/sheets.png" alt=""><div class="nm">Q4_updates <span>· Sheet1</span></div></div>
+        <table class="grid-tbl">
+          <tr class="hd"><td class="rh"></td><td>A</td><td>B</td><td>C</td><td>D</td></tr>
+          <tr><td class="rh">1</td><td>Task</td><td>Status</td><td>Updates</td><td>Owner</td></tr>
+          <tr><td class="rh">2</td><td>Standup</td><td>Done</td><td class="num">14</td><td>Alex</td></tr>
+          <tr><td class="rh">3</td><td>Thread</td><td>Done</td><td class="num">31</td><td>Priya</td></tr>
+          <tr><td class="rh">4</td><td>Card move</td><td>Done</td><td class="num">22</td><td>Sam</td></tr>
+        </table>
+      </div>
+      <div class="starbadge star">★</div>
+    </div>
+
+    <!-- C1 0.0 "visible work is easier to reward" -->
+    <div id="cue-1" class="clip cue" data-start="0" data-duration="3.48" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="label green vislabel" style="left: 60px; top: 70px; width: 720px;">VISIBLE WORK =<br>EASY TO REWARD</div>
+      <img class="wit typew" data-layout-allow-overflow="" style="right: -300px; bottom: -560px; width: 1020px;" src="./assets/wit/wit-pose-typing-on-laptop.png" alt="">
+    </div>
+    <!-- C2 3.48 reply / meetings / just circling back (people see it) -->
+    <div id="cue-2" class="clip cue" data-start="3.48" data-duration="7.02" data-track-index="2">
+      <div class="label reply" style="left: 80px; top: 120px; width: 440px;">REPLY FAST</div>
+      <div class="label meet" style="right: 90px; top: 120px; width: 440px;">MEETINGS</div>
+      <div class="label small circ" style="left: 50%; top: 820px; width: 700px; transform: translateX(-50%) rotate(-2deg);">"JUST CIRCLING BACK"</div>
+      <div class="label small green seen" style="right: 110px; top: 300px; width: 520px;">↑ PEOPLE SEE IT</div>
+    </div>
+    <!-- C3 10.5 "thinking hard ... look like nothing happened" -->
+    <div id="cue-3" class="clip cue" data-start="10.5" data-duration="3.30" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="label think" style="left: 80px; top: 90px; width: 520px;">THINKING…</div>
+      <div class="label small nothing" style="left: 110px; top: 300px; width: 600px;">(LOOKS LIKE NOTHING)</div>
+      <img class="wit thinkw" data-layout-allow-overflow="" style="right: -260px; bottom: -560px; width: 1040px;" src="./assets/wit/wit-pose-thinking.png" alt="">
+    </div>
+    <!-- C4 13.8 "staring at a wall, possibly blinking" -->
+    <div id="cue-4" class="clip cue" data-start="13.8" data-duration="5.30" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="label red wallw" style="left: 70px; top: 90px; width: 700px;">STARING AT A WALL</div>
+      <div class="label small blink" style="left: 110px; top: 300px; width: 560px;">POSSIBLY BLINKING</div>
+      <img class="wit deadw" data-layout-allow-overflow="" style="right: -300px; bottom: -540px; width: 1020px;" src="./assets/wit/wit-pose-deadpan-side-eye.png" alt="">
+    </div>
+    <!-- C5 19.1 "most managers can't tell ... reward what they can see" (poll labels) -->
+    <div id="cue-5" class="clip cue" data-start="19.1" data-duration="6.66" data-track-index="2">
+      <div class="label red cant" style="left: 70px; top: 70px; width: 640px;">MANAGERS:<br>CAN'T TELL</div>
+      <div class="stamp reward" style="right: 90px; bottom: 120px;">REWARD WHAT<br>THEY SEE</div>
+    </div>
+    <!-- C6 25.76 "what they can see is motion ... performing motion" -->
+    <div id="cue-6" class="clip cue" data-start="25.76" data-duration="3.12" data-track-index="2">
+      <div class="label perform" style="left: 50%; top: 760px; width: 640px; transform: translateX(-50%) rotate(-2deg);">PERFORM MOTION</div>
+    </div>
+    <!-- C7 28.9 move a card column to column + updates about future updates -->
+    <div id="cue-7" class="clip cue" data-start="28.9" data-duration="6.14" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="label small updates" style="left: 50%; top: 90px; width: 820px; transform: translateX(-50%) rotate(-2deg);">"UPDATES ABOUT FUTURE UPDATES"</div>
+      <img class="wit facew" data-layout-allow-overflow="" style="left: -200px; bottom: -560px; width: 1020px;" src="./assets/wit/wit-pose-facepalm.png" alt="">
+    </div>
+    <!-- C8 35.04 "this has a name: productivity theater" -->
+    <div id="cue-8" class="clip cue" data-start="35.04" data-duration="2.24" data-track-index="2">
+      <div class="label red theater" style="left: 50%; top: 90px; width: 760px; transform: translateX(-50%) rotate(-2deg);">PRODUCTIVITY THEATER</div>
+    </div>
+    <!-- C9 37.28 "tickets paid in stress ... the star is a spreadsheet" -->
+    <div data-hf-studio-original-inline-translate="" data-hf-studio-original-translate="" data-hf-studio-path-offset="true" id="cue-9" class="clip cue" data-start="37.28" data-duration="5.579" data-track-index="2" data-layout-allow-overflow="" style="overflow:visible;--hf-studio-offset-x:-3px;--hf-studio-offset-y:-9px;translate:var(--hf-studio-offset-x, 0px) var(--hf-studio-offset-y, 0px)">
+      <div class="label small tickets" style="left: 80px; top: 100px; width: 600px;">TICKETS: PAID IN STRESS</div>
+      <div class="label yellow starlbl" style="right: 90px; top: 100px; width: 460px;">THE STAR ★</div>
+      <img class="wit defeatw" data-layout-allow-overflow="" style="left: -210px; bottom: -560px; width: 1000px;" src="./assets/wit/wit-pose-tiny-defeated.png" alt="">
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true, defaults: { overwrite: "auto" } });
+      const reveal = (t, hideAt, at, fv, tv = {}) => { const r = {}; if ("x" in fv) r.x = 0; if ("y" in fv) r.y = 0; if ("scale" in fv) r.scale = 1; if ("opacity" in fv) r.opacity = 1; tl.set(t, fv, hideAt); tl.to(t, { ...r, ...tv }, at); };
+      const show = (t, hideAt, at) => { tl.set(t, { opacity: 0 }, hideAt); tl.set(t, { opacity: 1 }, at); };
+      const smash = (t, hideAt, at, fv = { y: 20, scale: 1.3, opacity: 0 }) => reveal(t, hideAt, at, fv, { duration: 0.18, ease: "back.out(1.9)" });
+
+      // Scene cross-fades
+      tl.fromTo("#scene-b", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 10.5);
+      tl.fromTo("#scene-c", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 19.1);
+      tl.fromTo("#scene-d", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 25.76);
+      tl.fromTo("#scene-e", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 35.04);
+
+      // C1 visible = rewarded
+      show("#cue-1 .typew", 0, 0.40);
+      show("#cue-1 .vislabel", 0, 1.40);
+      // Scene A speaking-tile highlight cycles with the "people see it" beats
+      // C2 staggered reply / meetings / circling back / people see it
+      smash("#cue-2 .reply", 3.48, 3.54, { y: -20, opacity: 0 });
+      smash("#cue-2 .meet", 3.48, 5.80, { y: -20, opacity: 0 });
+      smash("#cue-2 .circ", 3.48, 8.46, { scale: 0.6, opacity: 0 });
+      show("#cue-2 .seen", 3.48, 9.70);
+      // C3 thinking looks like nothing
+      show("#cue-3 .thinkw", 10.5, 10.70);
+      show("#cue-3 .think", 10.5, 11.40);
+      smash("#cue-3 .nothing", 10.5, 13.10, { scale: 0.6, opacity: 0 });
+      // C4 staring at a wall / possibly blinking
+      show("#cue-4 .deadw", 13.8, 16.90);
+      show("#cue-4 .wallw", 13.8, 17.10);
+      smash("#cue-4 .blink", 13.8, 18.40, { scale: 0.6, opacity: 0 });
+      // C5 poll: bars grow, then labels
+      tl.set("#scene-c .bar-yes", { width: "0%" }, 19.1);
+      tl.set("#scene-c .bar-no", { width: "0%" }, 19.1);
+      tl.to("#scene-c .bar-yes", { width: "15%", duration: 0.6, ease: "power2.out" }, 19.9);
+      tl.to("#scene-c .bar-no", { width: "85%", duration: 1.1, ease: "power2.out" }, 20.2);
+      show("#cue-5 .cant", 19.1, 20.16);
+      smash("#cue-5 .reward", 19.1, 24.40);
+      // C6 perform motion
+      smash("#cue-6 .perform", 25.76, 27.88, { y: 20, scale: 1.2, opacity: 0 });
+      // C7 card moves DOING -> DONE, then updates label + facepalm
+      tl.set("#scene-d .movecard", { x: -460, opacity: 0 }, 25.76);
+      tl.set("#scene-d .movecard", { opacity: 1 }, 28.90);
+      tl.to("#scene-d .movecard", { x: 0, duration: 1.5, ease: "power2.inOut" }, 30.56);
+      show("#cue-7 .facew", 28.9, 33.00);
+      smash("#cue-7 .updates", 28.9, 33.20, { y: -20, opacity: 0 });
+      // C8 productivity theater
+      smash("#cue-8 .theater", 35.04, 36.22, { scale: 0.6, opacity: 0 });
+      // C9 tickets + the star spreadsheet
+      tl.set("#scene-e .star", { scale: 0, opacity: 0 }, 35.04);
+      show("#cue-9 .defeatw", 37.28, 37.50);
+      smash("#cue-9 .tickets", 37.28, 39.20, { y: -20, opacity: 0 });
+      smash("#scene-e .star", 35.04, 40.76, { scale: 0, opacity: 0 });
+      smash("#cue-9 .starlbl", 37.28, 40.90, { scale: 0.6, opacity: 0 });
+
+      window.__timelines["Section05Visible"] = tl;
+    </script>
+  </div>
+</body>
+</html>

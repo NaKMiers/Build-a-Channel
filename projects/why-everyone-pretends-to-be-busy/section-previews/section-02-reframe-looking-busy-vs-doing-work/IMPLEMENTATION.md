@@ -1,48 +1,30 @@
-# Section 2 Render Implementation
+# Section 2 Render Implementation (v2 remake from scratch)
 
-Video: `Why Everyone Pretends To Be Busy`
-Section: `Section 2: Reframe: Looking Busy vs Doing Work`
-Status: `section preview built — ready for review`
+Composition: `Section02Reframe` · 1920x1080 · 29.02s · port 1002
 
-## Result
-- Preview project: `section-previews/section-02-reframe-looking-busy-vs-doing-work/`
-- Port: `1002`
-- Studio URL: `http://localhost:1002/#project/Build%20a%20Channel`
-- Direct comp URL: `http://localhost:1002/api/projects/Build%20a%20Channel/preview/comp/index.html`
-- Runtime: `28.949s`
-- Voiceover: `voiceover/section-02-.../...david23-am_eric-0.84.mp3` (0.84 plain)
-- Visual plan: `visual-plan/section-02-reframe-looking-busy-vs-doing-work/`
+## Build summary
+Remade from scratch to the new standard (real photo base every scene + real-UI + GIANT high WIT),
+replacing the v1 build. 4 scenes on tracks 1/3/4/5, 4 cue groups on track 2, audio on track 10.
+Cues pinned to existing `section-02-word-timings.json` (0.84, 29.02s; words array clean — the
+duplicated tail was only in the transcript string).
 
-## Timing Source
-Generated `voiceover/section-02-.../section-02-word-timings.json` via Whisper (transformers.js,
-whisper-tiny.en). Tail had a chunk-boundary duplication (section ~29s, near the 30s chunk); cleaned
-to 113 monotonic words ending "see." @ 28.85. Every cue/reveal pinned to real word starts.
+## Scenes
+1. **A — not lazy** (0–5.94): base-workplace (office interior); NOT LAZY PEOPLE@1.50 + (different, smaller problem)@4.46; giant WIT talking-front.
+2. **B — the look of work** (5.88–14.62): base-idea (bulb); SOMETHING STRANGER@5.98 → REWARDS THE LOOK ＞ THE WORK@7.72 → THINKING = LOOKS LIKE NOTHING@12.02; giant WIT thinking.
+3. **C — busy is easy to see** (14.58–20.24): base-typing + CSS Google Meet grid (meet icon + initials tiles)@16.06; EASY TO SEE@14.80 + MEETINGS@16.06 / TYPING@17.20 / A SERIOUS FACE@18.32 (staggered); giant WIT typing-on-laptop.
+4. **D — real work hides** (20.18–29.02): base-idea-d (bulb returns); WE TRUST WHAT WE SEE@20.40 → IGNORE WHAT WE CAN'T@22.22 → red circle on bulb + REAL WORK HIDES HERE@26.98; giant WIT deadpan-side-eye.
 
-## Bases (real CC0 photos via Openverse — per updated visual-plan sourcing)
-- Scene A: `base-typing.jpg` (CC0 StockSnap) — hands on laptop, no face, no logo
-- Scene B: `base-think.jpg` (CC0 rawpixel) — blank open notebook + coffee on dark wood, top-down
-- Scene C: `base-meeting.jpg` (CC0 rawpixel) — empty meeting room, no people
-- Scene D: `base-idea.jpg` (CC0 StockSnap) — single glowing filament bulb on black
-- assets are a COPIED local working set (junctions fail under HyperFrames CLI on this Windows setup)
-- REVISION 2026-06-22: Scenes B and D originally reused S1's minimal white desk (identical to each other); replaced with distinct base-think (notebook) and base-idea (bulb) per user review for variety. All 4 bases now distinct.
+## WIT (giant + high)
+All four ≈1/2 frame: side width ~1300–1340, `bottom:-350`; heads inside the top edge, legs cropped;
+labels placed left/top so the giant WIT covers nothing.
 
-## Render Review-Prevention Pass
-- voice cue map from word-timings: yes
-- big-scene rhythm: 4 distinct ideas (typing/quiet/meeting/quiet); B+D quiet bookend (intentional)
-- cue density: 6 cues / 29s
-- motion: hard-show default; smash only on "> THE WORK ITSELF" and "IGNORE WHAT WE CAN'T"
-- WIT density: 3 beats (A:0, B:1, C:1, D:1); ~1/2 frame; faces safe; labels in separate zones
-- markup: labels explain the beat; no decorative marks
-- scene differentiation: typing / quiet / meeting / quiet(callback)
-- mechanics: scenes on tracks 1/3/4/5, cues on track 2 (sequential, no overlap), deterministic GSAP
-
-## Verification
-- lint: 0 errors, 1 non-blocking warning (track-2 density = 6 cues)
-- validate: 0 errors
-- snapshots: contact sheet + 7 frames; clean bases, readable labels, safe WIT crops
-- export: none (not requested)
+## QA
+- `hyperframes lint`: 0 errors (1 advisory `timeline_track_too_dense`).
+- `hyperframes validate`: 0 errors (contrast advisories are fixed-sample off-screen measurements, as in other sections).
+- `hyperframes snapshot --at 1.6,4.6,7.8,12.5,15.5,18.5,21,23,27.5`: all 4 scenes verified; Meet grid reads clean; bulb bookend + red circle land; giant WIT clear in every frame.
 
 ## Notes
-- Motif note: like S1, the literal "calendar" isn't shown (no clean people-free calendar photo); the reframe is carried by typing/meeting/quiet-desk photos + labels.
-- WIT typing pose at C4 is cropped to torso/head (laptop below frame edge) — reads as "WIT at the visible-work scene"; acceptable.
-- Delivery: S2 audio is 0.84 plain (matches S1); S4-7 are 0.86 pause-tuned. Whole-video delivery unification still pending per 04-voiceover.md.
+- Reused base-typing + base-idea (960px, good); base-idea copied to base-idea-d.jpg for D (avoids duplicate-media). Added base-workplace.jpg (CC0 StockSnap). meet.png reused from S5 (editorial).
+- DROPPED v1 low-res assets base-meeting.jpg + base-think.jpg (~250px); rejected marble flat-lays (too like S5/S7).
+- Audio 0.84 (plain) vs Sections 4–7 at 0.86 — FLAGGED; if regenerated, regenerate word-timings + re-pin.
+- No MP4/WebM exported (not requested).

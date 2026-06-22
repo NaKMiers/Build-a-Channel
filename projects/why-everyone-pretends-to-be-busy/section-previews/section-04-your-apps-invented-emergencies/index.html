@@ -20,7 +20,7 @@
 
     /* ---- iPhone (scene 1) ---- */
     .deskbg { position:absolute; inset:0; background: radial-gradient(ellipse 60% 60% at 50% 40%, #2a2f3a, #14161c 75%); }
-    .iphone { position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:540px; height:1060px; background:#0a0c10; border:14px solid #202226; border-radius:62px; box-shadow:24px 30px 0 rgba(0,0,0,0.35); overflow:hidden; z-index:3; }
+    .iphone { position:absolute; left:31%; top:50%; transform:translate(-50%,-50%); width:540px; height:1060px; background:#0a0c10; border:14px solid #202226; border-radius:62px; box-shadow:24px 30px 0 rgba(0,0,0,0.35); overflow:hidden; z-index:3; }
     .iphone .wall { position:absolute; inset:0; background: linear-gradient(160deg, #1d2b4d, #3a1d4d 60%, #10131c); }
     .notch { position:absolute; top:18px; left:50%; transform:translateX(-50%); width:172px; height:34px; background:#000; border-radius:18px; z-index:4; }
     .iclock { position:absolute; top:110px; left:0; right:0; text-align:center; color:#fff; z-index:4; }
@@ -35,9 +35,9 @@
 
     /* ---- app-icon overload grid (scene 2) ---- */
     .gridbg { position:absolute; inset:0; background: radial-gradient(ellipse 70% 70% at 50% 42%, #232a36, #0e1016 80%); }
-    .appgrid { position:absolute; left:50%; top:46%; transform:translate(-50%,-50%); display:grid; grid-template-columns:repeat(3, 240px); grid-template-rows:repeat(2, 240px); gap:70px 120px; z-index:3; }
+    .appgrid { position:absolute; left:29%; top:46%; transform:translate(-50%,-50%); display:grid; grid-template-columns:repeat(3, 190px); grid-template-rows:repeat(2, 190px); gap:50px 70px; z-index:3; }
     .apptile { position:relative; }
-    .apptile img { width:230px; height:230px; border-radius:50px; box-shadow:0 12px 0 rgba(0,0,0,0.3); }
+    .apptile img { width:188px; height:188px; border-radius:42px; box-shadow:0 12px 0 rgba(0,0,0,0.3); }
     .abadge { position:absolute; top:-22px; right:-22px; min-width:78px; height:78px; padding:0 16px; border-radius:39px; background:#ff3b30; border:6px solid #fff; color:#fff; font-family:"Segoe UI",system-ui,sans-serif; font-size:42px; display:flex; align-items:center; justify-content:center; z-index:4; box-shadow:0 6px 0 rgba(0,0,0,0.3); }
 
     /* ---- chat conversation (scene 4) ---- */
@@ -47,7 +47,7 @@
     .chathead .nm { font-family:"Segoe UI",system-ui,sans-serif; color:#fff; font-size:46px; }
     .msg { position:absolute; max-width:780px; padding:22px 34px; font-family:"Segoe UI",system-ui,sans-serif; font-size:46px; line-height:1.1; z-index:5; box-shadow:0 4px 10px rgba(0,0,0,0.12); }
     .msg.in { left:90px; background:#fff; color:#111; border-radius:8px 34px 34px 34px; }
-    .msg.out { right:90px; background:#1f8aff; color:#fff; border-radius:34px 8px 34px 34px; }
+    .msg.out { left:90px; background:#1f8aff; color:#fff; border-radius:8px 34px 34px 34px; }
     .reaction { position:absolute; width:150px; height:150px; border-radius:50%; background:var(--sale); border:8px solid var(--ink); display:flex; align-items:center; justify-content:center; z-index:6; box-shadow:0 8px 0 rgba(0,0,0,0.3); }
     .reaction img { width:108px; height:108px; }
 
@@ -103,7 +103,7 @@
       <div class="msg out m2" style="top: 370px;">REPLY</div>
       <div class="msg in m3" style="top: 510px;">and this one?</div>
       <div class="msg out m4" style="top: 650px;">REPLY AGAIN</div>
-      <div class="reaction react" style="right: 150px; top: 800px;"><img src="./assets/visual-references/section-04-your-apps-invented-emergencies/icons/thumbup.png" alt=""></div>
+      <div class="reaction react" style="left: 200px; top: 800px;"><img src="./assets/visual-references/section-04-your-apps-invented-emergencies/icons/thumbup.png" alt=""></div>
     </div>
     <!-- SCENE 5: sad vegetable in fridge 34.5-42.133 -->
     <div id="scene-5" class="clip scene" data-start="34.5" data-duration="7.633" data-track-index="6">
@@ -114,12 +114,12 @@
     <!-- C1 0.0 "our tools invented emergencies." -->
     <div id="cue-1" class="clip cue" data-start="0" data-duration="3.50" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
       <div class="label red toolslabel" style="left: 60px; top: 80px; width: 620px;">TOOLS INVENTED<br>EMERGENCIES</div>
-      <img class="wit suspw" data-layout-allow-overflow="" style="right: -300px; bottom: -540px; width: 1020px;" src="./assets/wit/wit-pose-suspicious.png" alt="">
+      <img class="wit suspw" data-layout-allow-overflow="" style="right: -190px; bottom: -360px; width: 1340px;" src="./assets/wit/wit-pose-suspicious.png" alt="">
     </div>
     <!-- C3 12.96 "five apps interrupting each other." -->
     <div id="cue-3" class="clip cue" data-start="12.96" data-duration="3.30" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
       <div class="label fiveapps" style="left: 60px; top: 70px; width: 700px;">FIVE APPS,<br>INTERRUPTING</div>
-      <img class="wit panicw" data-layout-allow-overflow="" style="right: -240px; bottom: -650px; width: 1240px;" src="./assets/wit/wit-pose-holding-phone-panic.png" alt="">
+      <img class="wit panicw" data-layout-allow-overflow="" style="right: -240px; bottom: -380px; width: 1380px;" src="./assets/wit/wit-pose-holding-phone-panic.png" alt="">
     </div>
     <!-- C4 16.32 "everything has a red dot, a number, urgent" (URGENT label; badges live in scene 2) -->
     <div id="cue-4" class="clip cue" data-start="16.32" data-duration="3.22" data-track-index="2">
@@ -133,23 +133,23 @@
     <!-- C6 23.14 "your brain treats every notification like a real emergency" -->
     <div id="cue-6" class="clip cue" data-start="23.14" data-duration="4.48" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
       <div class="label red pinglabel" style="right: 80px; top: 90px; width: 760px;">EVERY PING =<br>EMERGENCY?</div>
-      <img class="wit trapw" data-layout-allow-overflow="" style="left: -160px; bottom: -520px; width: 1100px;" src="./assets/wit/wit-pose-trapped-by-app-screen.png" alt="">
+      <img class="wit trapw" data-layout-allow-overflow="" style="left: -170px; bottom: -360px; width: 1360px;" src="./assets/wit/wit-pose-trapped-by-app-screen.png" alt="">
     </div>
     <!-- C7 27.66 (WIT only; chat bubbles live in scene 4) -->
     <div id="cue-7" class="clip cue" data-start="27.66" data-duration="3.08" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
-      <img class="wit confw" data-layout-allow-overflow="" style="right: -320px; bottom: -560px; width: 1020px;" src="./assets/wit/wit-pose-confused.png" alt="">
+      <img class="wit confw" data-layout-allow-overflow="" style="right: -220px; bottom: -360px; width: 1340px;" src="./assets/wit/wit-pose-confused.png" alt="">
     </div>
     <!-- C8 30.78 "thumbs up ... files this under progress." (PROGRESS label; reaction lives in scene 4) -->
     <div id="cue-8" class="clip cue" data-start="30.78" data-duration="3.72" data-track-index="2">
-      <div class="label red progress" style="left: 120px; top: 820px; width: 480px;">PROGRESS?</div>
+      <div class="label red progress" style="left: 470px; top: 800px; width: 420px;">PROGRESS?</div>
     </div>
     <!-- C9 34.54 fridge -->
     <div id="cue-9" class="clip cue" data-start="34.54" data-duration="7.55" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
-      <div class="red-circle rc" style="left: 1070px; top: 430px; width: 330px; height: 250px;"></div>
-      <div class="label red realwork" style="left: 80px; top: 90px; width: 600px;">REAL WORK</div>
-      <div class="label small goingbad" style="left: 110px; top: 280px; width: 520px;">STILL HERE · GOING BAD</div>
-      <div class="label yellow sadveg" style="right: 90px; top: 90px; width: 600px;">A SAD VEGETABLE</div>
-      <img class="wit defeatw" data-layout-allow-overflow="" style="left: -200px; bottom: -540px; width: 1060px;" src="./assets/wit/wit-pose-tiny-defeated.png" alt="">
+      <div class="red-circle rc" style="left: 1330px; top: 520px; width: 430px; height: 320px;"></div>
+      <div class="label yellow sadveg" style="right: 80px; top: 80px; width: 560px;">A SAD VEGETABLE</div>
+      <div class="label red realwork" style="right: 80px; top: 260px; width: 460px;">REAL WORK</div>
+      <div class="label small goingbad" style="right: 100px; top: 430px; width: 520px;">STILL HERE · GOING BAD</div>
+      <img class="wit defeatw" data-layout-allow-overflow="" style="left: -180px; bottom: -360px; width: 1360px;" src="./assets/wit/wit-pose-tiny-defeated.png" alt="">
     </div>
 
     <audio id="voiceover-section-04" data-start="0" data-duration="42.133" data-track-index="10" data-volume="1" crossorigin="anonymous" src="./section-04-your-apps-invented-emergencies-david23-am_eric-0.86.mp3"></audio>

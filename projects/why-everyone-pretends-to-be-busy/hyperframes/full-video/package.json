@@ -1,0 +1,9 @@
+{
+  "name": "why-everyone-pretends-to-be-busy-full-video",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx --yes hyperframes@0.6.76 preview --port 1000",
+    "check": "npx --yes hyperframes@0.6.76 lint && npx --yes hyperframes@0.6.76 validate"
+  }
+}

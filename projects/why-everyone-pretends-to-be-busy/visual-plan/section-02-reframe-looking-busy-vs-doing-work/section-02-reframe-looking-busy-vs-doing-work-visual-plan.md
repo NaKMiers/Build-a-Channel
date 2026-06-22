@@ -1,114 +1,62 @@
-# Section 2 Visual Plan
+# Section 2 Visual Plan (remade from scratch)
 
-Video:
-`Why Everyone Pretends To Be Busy`
-
-Section:
-`Section 2: Reframe: Looking Busy vs Doing Work`
-
-Status:
-`draft visual plan for approval`
+Video: `Why Everyone Pretends To Be Busy`
+Section: `Section 2: Reframe: Looking Busy vs Doing Work`
+Status: `draft visual plan for approval (v2 — new standard: real bg every scene + real-UI + GIANT WIT)`
 
 ## Section Goal
-
-Reframe the topic: this is not about lazy people — modern life rewards the *look* of work over the work itself. Make the contrast visible: busy work is easy to see (typing, meetings, serious screens); real work (thinking) is invisible and hides.
+Correct the "lazy people" assumption and set up the real question: modern life rewards the *look* of work more than the work. Real progress (thinking) is invisible; busy (meetings/typing/serious face) is visible — so we trust the visible and ignore the real work that hides where we can't see.
 
 ## Source Inputs
+- Voiceover: `voiceover/section-02-.../...david23-am_eric-0.84.mp3` (29.02s, 0.84)
+- Word timings: `voiceover/section-02-.../section-02-word-timings.json` (existing; words array clean — the duplicated tail is only in the transcript string, cue times reliable)
+- NOTE: audio is 0.84 (plain) vs Sections 4–7 at 0.86 (pause-tuned). Mismatch flagged; re-pin if regenerated.
 
-- Script: `02-script.md` Section 2
-- Voiceover: `voiceover/section-02-reframe-looking-busy-vs-doing-work/scratch-audio/...david23-am_eric-0.84.mp3` (28.949s, 0.84 plain)
-- Word timings: `voiceover/section-02-reframe-looking-busy-vs-doing-work/section-02-word-timings.json` (generated; cue times are REAL, not estimated)
-
-## Narration
-
-```text
-Now, this is not a video about lazy people hiding from work. That is a different, smaller problem.
-This is about something stranger. Modern life often rewards the look of work more than the work itself.
-Because real progress is hard to see. Thinking looks like nothing. Solving a problem in your head looks like nothing.
-But busy is easy to see. You can see meetings. You can see fast typing. You can see a serious face staring at a screen.
-So we trust the things we can see, and we quietly ignore the things we cannot. Which is a problem, because the real work usually hides in the part you cannot see.
-```
-
-## Visual Direction
-
-- Big-scene/cue rhythm: 4 big scenes, 6 cue states
-- Main visual metaphor: VISIBLE busy work (typing / meeting room) vs INVISIBLE real work (quiet desk)
-- WIT emotional path: thinking (real work) → performing visible busy → dry/deadpan conclusion
-- WIT density: 3 beats (B:1, C:1, D:1); Scene A is label-only (breathing)
-- Motion density: hard-show default; impact only on the thesis "> THE WORK ITSELF" and the staggered visible-list reveals
-- Real bases: 4 distinct CC0 photos via Openverse — typing hands (A), blank notebook on dark wood (B), empty meeting room (C), glowing bulb on black (D). No people in any base.
-- All four scenes are visually distinct (no reuse). B and D were originally a reused S1 desk; replaced with notebook + bulb per user review for variety.
+## Visual Direction (new standard)
+- 4 scenes, each on a REAL people-free photo base; the "busy is easy to see" beat uses REAL-UI (a Google Meet grid) over the real hands-typing photo.
+- WIT GIANT (~1/2 frame, owner-preferred) and HIGH (head+torso inside frame, legs cropped); labels arranged around it.
+- WIT path (4 distinct): talking-front → thinking → typing-on-laptop → deadpan-side-eye.
 
 ## Big Scene Plan
+| Scene | Time | Voice | Real base | Build |
+|---|---:|---|---|---|
+| A — not lazy | 0:00–5.88 | "not a video about lazy people hiding from work. a different, smaller problem" | base-workplace.jpg (modern office interior) | NOT LAZY PEOPLE + (DIFFERENT, SMALLER PROBLEM); WIT talking |
+| B — the look of work | 5.88–14.58 | "rewards the look of work more than the work… real progress is hard to see. thinking looks like nothing" | base-idea.jpg (glowing bulb on black) | SOMETHING STRANGER → REWARDS THE LOOK ＞ THE WORK → THINKING = LOOKS LIKE NOTHING; WIT thinking |
+| C — busy is easy to see | 14.58–20.18 | "busy is easy to see. meetings. fast typing. a serious face staring at a screen" | base-typing.jpg (hands typing) + CSS Meet grid | EASY TO SEE: MEETINGS · TYPING · A SERIOUS FACE; WIT typing |
+| D — real work hides | 20.18–29.02 | "we trust what we can see, ignore what we cannot… real work hides in the part you cannot see" | base-idea-d.jpg (bulb returns — bookend) | WE TRUST WHAT WE SEE → IGNORE WHAT WE CAN'T → REAL WORK HIDES HERE; WIT deadpan |
 
-| Big Scene | Local Time | Voice Range | Persistent Base Visual | Why This Scene Exists | When To Cut Away | Reference Basis | Asset Path |
-|---|---:|---|---|---|---|---|---|
-| A — The look of work | 0:00-9.64 | "Now, this is not… the work itself." | Hands typing on a laptop (base-typing), warm | Establish: not laziness; modern life rewards the *look* of work | When narration turns to "real progress is hard to see" | CC0 StockSnap (Openverse) | `assets/visual-references/section-02-reframe-looking-busy-vs-doing-work/base-typing.jpg` |
-| B — Thinking is invisible | 9.64-14.30 | "Because real progress is hard to see… looks like nothing." | Blank open notebook + coffee on dark wood (base-think), top-down | Real work / thinking looks like nothing (blank page) | When narration lists visible things | CC0 rawpixel (Openverse) | `.../base-think.jpg` |
-| C — You can see busy | 14.30-19.84 | "But busy is easy to see… staring at a screen." | Empty modern meeting room (base-meeting) | The visible world: meetings, typing, serious screens | When narration concludes about trust | CC0 rawpixel (Openverse) | `.../base-meeting.jpg` |
-| D — Real work hides | 19.84-28.949 | "So we trust the things we can see… part you cannot see." | Single glowing filament bulb on black (base-idea) | Conclusion: real work hides "in the part you cannot see" (the idea) | End of section | CC0 StockSnap (Openverse) | `.../base-idea.jpg` |
-
-## Cue State Timeline
-
-Timing from `section-02-word-timings.json` (real word starts).
-
-| Cue | Local Time | Voice Cue (word @ s) | Big Scene | What Changes | What Stays | Motion | WIT | Label / Markup | Why |
-|---|---:|---|---|---|---|---|---|---|---|
-| C1 | 0.0-3.2 | "lazy" @1.5 | A | `NOT LAZY PEOPLE` label hard-shows | typing base | hard-show | none | NOT LAZY PEOPLE | correct the misconception |
-| C2 | 3.2-9.64 | "look" @7.72 / "more than" @8.42 | A | `THE LOOK OF WORK` then `> THE WORK ITSELF` (impact) | typing base | hard-show + impact | none | THE LOOK OF WORK / > THE WORK ITSELF | the thesis |
-| C3 | 9.64-14.30 | "hard to see" @10.8 / "nothing" @12.02 | B | cut to quiet desk; WIT thinking; `REAL PROGRESS: HARD TO SEE` then `LOOKS LIKE NOTHING` | quiet base | transition + hard-show | `thinking` giant | REAL PROGRESS: HARD TO SEE / LOOKS LIKE NOTHING | thinking is invisible |
-| C4 | 14.30-19.84 | "meetings"@16.06 / "fast typing"@16.9 / "serious face"@18.32 | C | cut to meeting room; staggered `MEETINGS` → `FAST TYPING` → `SERIOUS FACE` + WIT typing | meeting base | transition + staggered hard-show | `typing-on-laptop` | MEETINGS / FAST TYPING / SERIOUS FACE | the visible world is easy to see |
-| C5 | 19.84-24.30 | "trust"@20.18 / "ignore"@22.22 | D | cut to quiet desk; `WE TRUST WHAT WE SEE` then `IGNORE WHAT WE CAN'T` | quiet base | transition + hard-show | none | WE TRUST WHAT WE SEE / IGNORE WHAT WE CAN'T | the bias |
-| C6 | 24.30-28.949 | "real work usually hides"@26.02 / "cannot see"@27.92 | D | `REAL WORK HIDES HERE` + WIT deadpan; hold to end | quiet base | hard-show | `deadpan-side-eye` giant | REAL WORK HIDES HERE | dry conclusion / payoff |
-
-## WIT Pose Plan
-
-Shared manifest `.agents/_shared/assets/wit/poses/`.
-
-| Cue | Time | Emotion | Pose File | Placement / Scale | Safe Crop | Why |
+## Cue State Timeline (word-timed)
+| Cue | Time | Voice cue (word@s) | Scene | Change | Motion | WIT |
 |---|---:|---|---|---|---|---|
-| C3 | 9.8-14.3 | focused / quiet | `wit-pose-thinking.png` | lower-left, ~1/2 frame | head/shoulders safe | real thinking = invisible work |
-| C4 | 14.5-19.84 | performing busy | `wit-pose-typing-on-laptop.png` | lower-right, ~1/2 frame | face/hands safe | embody visible busy |
-| C6 | 26.0-28.949 | dry / deadpan | `wit-pose-deadpan-side-eye.png` | lower-right side peek, ~1/2 frame | face/glasses safe | dry "real work hides" button |
-
-WIT density note: 3 beats (A:0, B:1, C:1, D:1). Scene A is label-only breathing. None over 1 per scene.
+| C1 | 0–1.5 | "lazy people"@1.50 | A | NOT LAZY PEOPLE; WIT | hard-show | talking-front @0.4 |
+| C2 | 4.46 | "different…problem"@4.46 | A | (DIFFERENT, SMALLER PROBLEM) | hard-show | — |
+| C3 | 5.88 | "stranger"@5.88 | B | cut to bulb; SOMETHING STRANGER; WIT | hard-show | thinking @6.0 |
+| C4 | 7.72 | "the look…itself"@7.72 | B | REWARDS THE LOOK ＞ THE WORK | impact | — |
+| C5 | 12.02 | "thinking looks like nothing"@12.02 | B | THINKING = LOOKS LIKE NOTHING | hard-show | — |
+| C6 | 14.58 | "busy is easy to see"@14.58 | C | cut to typing + Meet grid; EASY TO SEE; WIT | hard-show | typing-on-laptop @14.8 |
+| C7 | 16.06 | meetings@16.06 / typing@17.20 / serious face@18.32 | C | Meet grid pops → MEETINGS · TYPING · A SERIOUS FACE (staggered) | impact | — |
+| C8 | 20.18 | "we trust…we can see"@20.18 | D | cut to bulb; WE TRUST WHAT WE SEE; WIT | hard-show | deadpan-side-eye @20.4 |
+| C9 | 22.22 | "ignore the things we cannot"@22.22 | D | IGNORE WHAT WE CAN'T | hard-show | — |
+| C10 | 26.98 | "real work hides…you cannot see"@26.98 | D | REAL WORK HIDES HERE (circle on bulb) | impact | — |
 
 ## Reference And Asset Plan
-
-| Asset | Type | Source / Status | Use | Safety |
-|---|---|---|---|---|
-| base-typing.jpg | CC0 photo | StockSnap via Openverse | Scene A base | safe (no face; generic laptop, no visible logo) |
-| base-think.jpg | CC0 photo | rawpixel via Openverse | Scene B base | safe (no people, no brand) — blank notebook on dark wood |
-| base-meeting.jpg | CC0 photo | rawpixel via Openverse | Scene C base | safe (no people, no brand) |
-| base-idea.jpg | CC0 photo | StockSnap via Openverse | Scene D base | safe (no people, no brand) — glowing bulb on black |
-| 3 WIT poses | PNG | shared WIT manifest | C3/C4/C6 | safe channel asset |
+| Asset | Source | Class | Use |
+|---|---|---|---|
+| base-workplace.jpg | CC0 StockSnap (modern office interior) | safe base | A |
+| base-idea.jpg / base-idea-d.jpg | CC0 StockSnap (glowing bulb on black) | safe base | B + D (bookend; -d copy avoids duplicate-media) |
+| base-typing.jpg | CC0 StockSnap (hands typing) | safe base | C |
+| icons/meet.png | Wikimedia (Google Meet logo) | real-UI icon | C Meet grid (editorial) |
+| 4 WIT poses | shared manifest | safe asset | A/B/C/D |
+Rejected: base-meeting.jpg + base-think.jpg (v1, low-res ~250px); marble flat-lays (too like S5/S7).
 
 ## HyperFrames Guidance
-
-- Composition 1920x1080; 4 scenes (tracks 1/3/4/5), 6 cues (track 2); audio 28.949s.
-- All cue `data-start` pinned to word-timings; quick 0.2s opacity fades on scene-base cuts; impact only on `> THE WORK ITSELF` and the visible-list reveals (each staggered to its word).
-- WIT ~1/2 frame on its beats; faces safe; labels in their own zones (top), WIT lower — no collision.
-- Subtitle-safe: keep labels in the upper/mid area.
-- Must not invent: bases (provided), WIT poses (named), label text (provided), cue timing (word-timed), scene order. Render decides only pixel coords/easing/grading.
-- Suggested QA snapshots: 1.6 / 8.0 / 11.5 / 16.5 / 20.5 / 26.5s.
-
-## Review-Prevention Checklist
-
-- voice sync: yes (word-timed)
-- big-scene rhythm: 4 distinct ideas, base held per idea
-- cue density: 6 cues / 29s — low
-- motion: hard-show default; impact reserved
-- WIT rhythm: 3 beats, ≤1/scene
-- WIT size/crop: ~1/2 frame, faces safe
-- WIT/text collision: separate zones
-- scene differentiation: typing / quiet / meeting / quiet(callback)
-- render needs no invention: correct
+- 1920x1080; 4 scenes (tracks 1/3/4/5), 4 cue groups (track 2); audio 29.02s.
+- Cues pinned to word-timings; the Meet grid + the three "easy to see" labels stagger on meetings/typing/face.
+- Real-UI Meet grid = CSS over the real typing photo (light scrim); bulb scenes keep their dark texture.
+- WIT GIANT + HIGH (side width ~1340, centered ~1140; bottom≈-350); labels to the opposite side/top so WIT covers nothing.
+- Must not invent: bases, label text, word-timed order, WIT poses.
+- QA snapshots: 1.5 / 4.5 / 7.5 / 12.5 / 15.5 / 18.5 / 21 / 23 / 27.5s.
 
 ## Approval Checks
-
-- visual reference pass: done (Openverse CC0, viewed)
-- bases brand-free/people-free: yes
-- contrast visible-vs-invisible is clear: yes
-- WIT has a job each beat: yes
-- learner-friendly, short labels: yes
-- ready for HyperFrames: yes
+- "Lazy people" corrected (not repeated); visible-vs-invisible contrast clear; real-UI on the busy beat.
+- WIT giant + high in every scene; labels arranged around it. Bulb bookend (B↔D). Real bg every scene.

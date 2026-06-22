@@ -1,17 +1,14 @@
-# Section 3 Visual Plan
+# Section 3 Visual Plan — Busy Became A Status Symbol (v2 remake)
 
-Video: `Why Everyone Pretends To Be Busy`
-Section: `Section 3: Busy Became A Status Symbol`
-Status: `draft visual plan for approval`
+Files:
+- `section-03-busy-became-a-status-symbol-visual-plan.md` — scene/cue plan (6 scenes, 6 cue groups)
+- `reference-board.md` — reference pass (6 real bases + real-UI chat/calendar + CSS emotions board)
 
-## Files
-- Visual plan: `section-03-busy-became-a-status-symbol-visual-plan.md`
-- Reference board: `reference-board.md`
-- Asset folder: `../../assets/visual-references/section-03-busy-became-a-status-symbol/`
+Render lives at:
+`section-previews/section-03-busy-became-a-status-symbol/` (port 1003)
 
-## Build Notes
-- 3 big scenes (trophy stage → beach → meeting room), 9 cues
-- WIT: awkward-celebration → deadpan → suspicious → facepalm → deadpan (5 beats)
-- Bases: base-trophy.png (hero on CSS stage), base-beach.jpg, base-meeting.jpg (all CC0 Openverse)
-- Timing: pinned to `section-03-word-timings.json`
-- HyperFrames readiness: ready
+Key decisions (remade from scratch to the new standard):
+- Real photo base behind every scene; real-UI for "I'm so busy" (chat) and "no free time / meetings about meetings" (calendar); CSS deadpan EMOTIONS board.
+- GIANT high WIT (~1/2 frame); 6 distinct poses: awkward-celebration → talking → deadpan → suspicious → thinking → tiny-defeated.
+- Trophy = status symbol; beach = the opposite brag; meeting room = near the work.
+- Cues pinned to existing `section-03-word-timings.json` (0.84 audio, 45.14s). Audio 0.84 vs rest 0.86 — flagged; re-pin if regenerated.

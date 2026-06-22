@@ -6,7 +6,7 @@
   <title>Section 03 Busy Became A Status Symbol - Why Everyone Pretends To Be Busy</title>
   <style>
     @font-face { font-family: "PatrickHandLocal"; src: url("./assets/fonts/patrick-hand-latin.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
-    :root { --ink:#1b1510; --red:#b9362c; --red-deep:#7d1714; --cream:#fff7d8; --blue:#cfe2ec; --sale:#f0c63d; }
+    :root { --ink:#1b1510; --red:#b9362c; --red-deep:#7d1714; --cream:#fff7d8; --green:#188038; --sale:#f0c63d; --blue:#1f8aff; }
     * { box-sizing: border-box; }
     body { margin: 0; background: #14110d; color: var(--ink); overflow: hidden; }
     #Section03Status { position: relative; width: 1920px; height: 1080px; overflow: hidden; background: #14110d; font-family: "PatrickHandLocal"; }
@@ -14,106 +14,153 @@
     .scene { z-index: 1; will-change: opacity, transform, filter; }
     .cue { z-index: 5; pointer-events: none; }
     .photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; user-select: none; pointer-events: none; }
-    .photo.trophyphoto { filter: saturate(1.08) contrast(1.06) brightness(1.08); }
-    .photo.coffee { filter: saturate(1.04) contrast(1.04) brightness(1.05); }
-    .photo.beach { filter: saturate(1.05) contrast(1.03) brightness(1.02); }
-    .photo.meet { filter: saturate(1.0) contrast(1.04) brightness(1.0); }
-    .photo.clockw { filter: saturate(1.0) contrast(1.05) brightness(1.05); }
-    .shade { position: absolute; inset: 0; z-index: 2; background: linear-gradient(0deg, rgba(20,16,12,0.32), transparent 50%); }
-    .label {
-      position: absolute; display: inline-flex; align-items: center; justify-content: center;
-      min-height: 70px; padding: 14px 28px 18px; background: var(--cream); border: 7px solid var(--ink);
-      border-radius: 7px; box-shadow: 12px 14px 0 rgba(27,21,16,0.22); color: var(--ink);
-      font-size: 62px; line-height: 0.94; text-align: center; transform: rotate(-2deg); z-index: 8;
-    }
-    .label.small { font-size: 44px; padding: 12px 22px 16px; }
-    .label.blue { background: var(--blue); } .label.yellow { background: var(--sale); }
-    .label.red { background: #fff5f1; color: var(--red-deep); border-color: var(--red-deep); }
-    .bubble { position: absolute; padding: 18px 32px; background: #fffdf5; border: 6px solid var(--ink); border-radius: 26px; font-size: 58px; color: var(--ink); z-index: 8; box-shadow: 10px 12px 0 rgba(27,21,16,0.20); }
-    .bubble::after { content: ""; position: absolute; left: 60px; bottom: -28px; width: 36px; height: 36px; background: #fffdf5; border-right: 6px solid var(--ink); border-bottom: 6px solid var(--ink); transform: rotate(35deg); }
-    .stamp { position: absolute; z-index: 9; padding: 12px 26px 17px; color: var(--red-deep); border: 9px solid var(--red-deep); background: #fff5f1; font-size: 76px; line-height: 0.86; transform: rotate(-10deg); }
-    .wit { position: absolute; object-fit: contain; z-index: 9; filter: drop-shadow(15px 18px 0 rgba(0,0,0,0.30)); transform-origin: center center; }
-    .label, .bubble, .stamp, .wit { will-change: opacity, transform; }
+    .photo.trophy { filter:saturate(1.06) contrast(1.05) brightness(1.0); }
+    .photo.chat { filter:saturate(1.02) contrast(1.02) brightness(0.82); }
+    .photo.emotions { filter:saturate(1.0) contrast(1.04) brightness(0.82); }
+    .photo.holiday { filter:saturate(1.06) contrast(1.03) brightness(0.96); }
+    .photo.sounds { filter:saturate(1.04) contrast(1.04) brightness(0.8); }
+    .photo.nearwork { filter:saturate(1.02) contrast(1.03) brightness(0.84); }
+    .scrim { position:absolute; inset:0; z-index:1; background:radial-gradient(ellipse 82% 82% at 50% 46%, rgba(8,10,16,0.20), rgba(8,10,16,0.58) 96%); }
+
+    /* real-UI chat (B) */
+    .chatcard { position:absolute; left:70px; top:150px; width:780px; z-index:3; }
+    .cmsg { position:relative; max-width:760px; padding:24px 34px; font-family:"Segoe UI",system-ui,sans-serif; font-size:46px; line-height:1.12; box-shadow:0 8px 18px rgba(0,0,0,0.28); margin-bottom:26px; }
+    .cmsg.out { background:var(--blue); color:#fff; border-radius:36px 10px 36px 36px; }
+
+    /* emotions board (C) */
+    .emoboard { position:absolute; left:70px; top:120px; width:620px; background:#fffdf5; border:8px solid var(--ink); border-radius:16px; box-shadow:14px 16px 0 rgba(27,21,16,0.3); padding:30px 40px; z-index:3; }
+    .emoboard h3 { margin:0 0 20px; font-family:"PatrickHandLocal"; font-size:52px; color:var(--ink); }
+    .emoboard .er { font-family:"PatrickHandLocal"; font-size:46px; color:#444; padding:8px 0; border-bottom:2px dashed #ccc; }
+    .emoboard .er.busy { color:var(--red-deep); font-size:54px; }
+
+    /* mini packed calendar (D, F) */
+    .calmini { position:absolute; background:#fff; border-radius:14px; overflow:hidden; z-index:3; box-shadow:0 18px 40px rgba(0,0,0,0.45); }
+    .calmini .ct { height:62px; display:flex; align-items:center; gap:14px; padding:0 20px; border-bottom:2px solid #eee; font-family:"Segoe UI",system-ui,sans-serif; font-weight:600; font-size:28px; color:#222; }
+    .calmini .ct img { width:40px; height:40px; }
+    .crow { display:flex; align-items:center; height:58px; padding:0 14px; }
+    .crow .tm { width:84px; font-family:"Segoe UI",system-ui,sans-serif; font-size:22px; color:#999; }
+    .crow .blk { flex:1; height:42px; border-radius:7px; background:#ea4335; color:#fff; display:flex; align-items:center; padding:0 14px; font-family:"Segoe UI",system-ui,sans-serif; font-size:24px; }
+
+    /* shared overlays */
+    .label { position:absolute; display:inline-flex; align-items:center; justify-content:center; min-height:62px; padding:12px 26px 16px; background:var(--cream); border:7px solid var(--ink); border-radius:7px; box-shadow:12px 14px 0 rgba(27,21,16,0.24); color:var(--ink); font-size:54px; line-height:0.95; text-align:center; transform:rotate(-2deg); z-index:8; }
+    .label.small { font-size:38px; padding:10px 20px 14px; }
+    .label.red { background:#fff5f1; color:var(--red-deep); border-color:var(--red-deep); }
+    .label.green { background:#eafbe7; color:var(--green); border-color:var(--green); }
+    .label.dark { background:rgba(20,18,24,0.86); color:#fff; border-color:#fff; }
+    .stamp { position:absolute; z-index:9; padding:14px 30px 18px; color:var(--red-deep); border:9px solid var(--red-deep); background:#fff5f1; font-size:56px; line-height:0.88; transform:rotate(-9deg); text-align:center; }
+    .wit { position:absolute; object-fit:contain; z-index:9; filter:drop-shadow(15px 18px 0 rgba(0,0,0,0.30)); transform-origin:center center; }
+    .label, .stamp, .wit, .chatcard, .emoboard, .calmini { will-change: opacity, transform; }
   </style>
 </head>
 <body>
-  <div id="Section03Status" data-composition-id="Section03Status" data-start="0" data-duration="45.077" data-width="1920" data-height="1080">
+  <div id="Section03Status" data-composition-id="Section03Status" data-start="0" data-duration="45.14" data-width="1920" data-height="1080">
 
-    <!-- SCENE A: trophy (status) 0-8.4 -->
-    <div id="scene-a" class="clip scene" data-start="0" data-duration="8.4" data-track-index="1">
-      <img class="photo trophyphoto" src="./assets/visual-references/section-03-busy-became-a-status-symbol/base-trophy.jpg" alt="">
-    </div>
-    <!-- SCENE B: the reflexive busy (coffee chat) 8.36-15.72 -->
-    <div id="scene-b" class="clip scene" data-start="8.36" data-duration="7.36" data-track-index="3">
-      <img class="photo coffee" src="./assets/visual-references/section-03-busy-became-a-status-symbol/base-coffee.jpg" alt="">
-      <div class="shade"></div>
-    </div>
-    <!-- SCENE C: opposite brag (beach) 15.68-26.06 -->
-    <div id="scene-c" class="clip scene" data-start="15.68" data-duration="10.42" data-track-index="4">
-      <img class="photo beach" src="./assets/visual-references/section-03-busy-became-a-status-symbol/base-beach.jpg" alt="">
-      <div class="shade"></div>
-    </div>
-    <!-- SCENE D: busy sounds valuable (meeting room) 26.0-32.42 -->
-    <div id="scene-d" class="clip scene" data-start="26.0" data-duration="6.46" data-track-index="5">
-      <img class="photo meet" src="./assets/visual-references/section-03-busy-became-a-status-symbol/base-meeting.jpg" alt="">
-      <div class="shade"></div>
-    </div>
-    <!-- SCENE E: meetings / near the work (clock) 32.38-45.077 -->
-    <div id="scene-e" class="clip scene" data-start="32.38" data-duration="12.697" data-track-index="6">
-      <img class="photo clockw" src="./assets/visual-references/section-03-busy-became-a-status-symbol/base-clock.jpg" alt="">
-      <div class="shade"></div>
+    <!-- SCENE A: status symbol (trophy) 0-4.12 -->
+    <div id="scene-a" class="clip scene" data-start="0" data-duration="4.12" data-track-index="1">
+      <img class="photo trophy" src="./assets/visual-references/section-03-busy-became-a-status-symbol/base-trophy.jpg" alt="">
+      <div class="scrim"></div>
     </div>
 
-    <!-- C1 0.0 "Busy became a status symbol." -->
-    <div id="cue-1" class="clip cue" data-start="0" data-duration="2.76" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
-      <div class="label red statuslabel" style="left: 60px; top: 90px; width: 820px;">BUSY =<br>STATUS SYMBOL</div>
-      <img class="wit celebw" data-layout-allow-overflow="" style="right: -300px; bottom: -540px; width: 1120px;" src="./assets/wit/wit-pose-awkward-celebration.png" alt="">
-    </div>
-    <!-- C2 2.8 "I'm so busy ... please notice that I am important." -->
-    <div id="cue-2" class="clip cue" data-start="2.8" data-duration="5.56" data-track-index="2">
-      <div class="label yellow imsobusy" style="left: 60px; top: 90px; width: 700px;">I'M SO BUSY</div>
-      <div class="label red noticeme" style="left: 90px; top: 300px; width: 880px;">= NOTICE I'M IMPORTANT</div>
-    </div>
-    <!-- C3 8.4 "how are you? They say busy." -->
-    <div id="cue-3" class="clip cue" data-start="8.4" data-duration="4.04" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
-      <div class="bubble askbubble" style="left: 110px; top: 120px; width: 620px;">HOW ARE YOU?</div>
-      <div class="bubble busybubble" style="left: 300px; top: 360px; width: 360px; background:#fff3d6;">BUSY.</div>
-      <img class="wit talkw" data-layout-allow-overflow="" style="right: -300px; bottom: -540px; width: 1120px;" src="./assets/wit/wit-pose-talking-front.png" alt="">
-    </div>
-    <!-- C4 12.48 "not actually an emotion ... everyone is tired." -->
-    <div id="cue-4" class="clip cue" data-start="12.48" data-duration="3.20" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
-      <div class="label small notemotion" style="left: 60px; top: 110px; width: 560px;">(NOT AN EMOTION)</div>
-      <div class="label notes-tired" style="left: 90px; top: 300px; width: 640px;">WE'RE ALL TIRED</div>
-      <img class="wit confw" data-layout-allow-overflow="" style="right: -300px; bottom: -520px; width: 1120px;" src="./assets/wit/wit-pose-confused.png" alt="">
-    </div>
-    <!-- C5 15.72 "long holidays and free afternoons (proud)" -->
-    <div id="cue-5" class="clip cue" data-start="15.72" data-duration="5.34" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
-      <div class="label yellow brag1" style="right: 90px; top: 110px; width: 720px;">SOME BRAG:<br>LONG HOLIDAYS</div>
-      <img class="wit suspw" data-layout-allow-overflow="" style="left: -170px; bottom: -520px; width: 1120px;" src="./assets/wit/wit-pose-suspicious.png" alt="">
-    </div>
-    <!-- C6 21.1 "no free time at all. Same planet, opposite brag." -->
-    <div id="cue-6" class="clip cue" data-start="21.1" data-duration="4.92" data-track-index="2">
-      <div class="label brag2" style="left: 60px; top: 110px; width: 720px;">OTHERS BRAG:<br>NO FREE TIME</div>
-      <div class="label red oppbrag" style="left: 50%; top: 360px; width: 900px; transform: translateX(-50%) rotate(-2deg);">SAME PLANET, OPPOSITE BRAG</div>
-    </div>
-    <!-- C7 26.06 "busy sounds responsible / needed / valuable" -->
-    <div id="cue-7" class="clip cue" data-start="26.06" data-duration="6.32" data-track-index="2">
-      <div class="label yellow r1" style="left: 80px; top: 100px; width: 560px;">RESPONSIBLE</div>
-      <div class="label yellow r2" style="left: 80px; top: 290px; width: 480px;">NEEDED</div>
-      <div class="label red r3" style="left: 80px; top: 480px; width: 540px;">= VALUABLE</div>
-    </div>
-    <!-- C8 32.42 "meetings about why the last meeting did not finish anything" -->
-    <div id="cue-8" class="clip cue" data-start="32.42" data-duration="6.54" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
-      <div class="label meetmeet" style="left: 60px; top: 110px; width: 860px;">MEETINGS ABOUT<br>MEETINGS</div>
-      <img class="wit facew" data-layout-allow-overflow="" style="right: -280px; bottom: -540px; width: 1180px;" src="./assets/wit/wit-pose-facepalm.png" alt="">
-    </div>
-    <!-- C9 39.0 "the job becomes proving you are near the work" -->
-    <div id="cue-9" class="clip cue" data-start="39.0" data-duration="6.05" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
-      <div class="label red nearwork" style="left: 60px; top: 120px; width: 900px;">PROVING YOU'RE<br>NEAR THE WORK</div>
-      <img class="wit defeatw" data-layout-allow-overflow="" style="right: -260px; bottom: -540px; width: 1100px;" src="./assets/wit/wit-pose-tiny-defeated.png" alt="">
+    <!-- SCENE B: I'm so busy = important (chat) 4.06-11.04 -->
+    <div id="scene-b" class="clip scene" data-start="4.06" data-duration="6.98" data-track-index="3">
+      <img class="photo chat" src="./assets/visual-references/section-03-busy-became-a-status-symbol/base-busychat.jpg" alt="">
+      <div class="scrim"></div>
+      <div class="chatcard">
+        <div class="cmsg out cm1">I'm so busy!! 😩</div>
+      </div>
     </div>
 
-    <audio id="voiceover-section-03" data-start="0" data-duration="45.077" data-track-index="10" data-volume="1" crossorigin="anonymous" src="./section-03-busy-became-a-status-symbol-david23-am_eric-0.84.mp3"></audio>
+    <!-- SCENE C: busy isn't an emotion (emotions board) 11.0-17.04 -->
+    <div id="scene-c" class="clip scene" data-start="11.0" data-duration="6.04" data-track-index="4">
+      <img class="photo emotions" src="./assets/visual-references/section-03-busy-became-a-status-symbol/base-emotions.jpg" alt="">
+      <div class="scrim"></div>
+      <div class="emoboard">
+        <h3>EMOTIONS</h3>
+        <div class="er">Happy</div>
+        <div class="er">Sad</div>
+        <div class="er">Angry</div>
+        <div class="er">Tired</div>
+        <div class="er busy es-busy">Busy?</div>
+      </div>
+    </div>
+
+    <!-- SCENE D: opposite brag (beach + packed calendar) 17.0-25.46 -->
+    <div id="scene-d" class="clip scene" data-start="17.0" data-duration="8.46" data-track-index="5">
+      <img class="photo holiday" src="./assets/visual-references/section-03-busy-became-a-status-symbol/base-holiday.jpg" alt="">
+      <div class="scrim"></div>
+      <div class="calmini dcal" style="right:80px; top:150px; width:460px;">
+        <div class="ct"><img src="./assets/visual-references/section-03-busy-became-a-status-symbol/icons/gcal.png" alt="">No free time</div>
+        <div class="crow"><div class="tm">9:00</div><div class="blk">MEETING</div></div>
+        <div class="crow"><div class="tm">10:00</div><div class="blk">CALL</div></div>
+        <div class="crow"><div class="tm">11:00</div><div class="blk">SYNC</div></div>
+        <div class="crow"><div class="tm">12:00</div><div class="blk">REVIEW</div></div>
+      </div>
+    </div>
+
+    <!-- SCENE E: busy sounds good (dark-wood hands) 25.42-33.36 -->
+    <div id="scene-e" class="clip scene" data-start="25.42" data-duration="7.94" data-track-index="6">
+      <img class="photo sounds" src="./assets/visual-references/section-03-busy-became-a-status-symbol/base-sounds.jpg" alt="">
+      <div class="scrim"></div>
+    </div>
+
+    <!-- SCENE F: near the work (meeting room + calendar) 33.32-45.14 -->
+    <div id="scene-f" class="clip scene" data-start="33.32" data-duration="11.82" data-track-index="7">
+      <img class="photo nearwork" src="./assets/visual-references/section-03-busy-became-a-status-symbol/base-nearwork.jpg" alt="">
+      <div class="scrim"></div>
+      <div class="calmini fcal" style="left:80px; top:140px; width:540px;">
+        <div class="ct"><img src="./assets/visual-references/section-03-busy-became-a-status-symbol/icons/gcal2.png" alt="">Today</div>
+        <div class="crow"><div class="tm">9:00</div><div class="blk">Meeting</div></div>
+        <div class="crow"><div class="tm">9:30</div><div class="blk">Re: the meeting</div></div>
+        <div class="crow"><div class="tm">10:00</div><div class="blk">Meeting about ↑</div></div>
+        <div class="crow"><div class="tm">10:30</div><div class="blk">Updates sync</div></div>
+        <div class="crow"><div class="tm">11:00</div><div class="blk">Recap meeting</div></div>
+      </div>
+    </div>
+
+    <!-- CUE A 0-4.02 : status symbol + WIT -->
+    <div id="cue-a" class="clip cue" data-start="0" data-duration="4.02" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="label ca-status" style="left: 60px; top: 100px; width: 720px;">BUSY = STATUS SYMBOL</div>
+      <img class="wit ca-wit" data-layout-allow-overflow="" style="right: -210px; bottom: -350px; width: 1320px;" src="./assets/wit/wit-pose-awkward-celebration.png" alt="">
+    </div>
+
+    <!-- CUE B 4.06-10.98 : translation + WIT talking -->
+    <div id="cue-b" class="clip cue" data-start="4.06" data-duration="6.92" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="label small red cb-mean" style="left: 70px; top: 470px; width: 760px;">(= please notice I'm important)</div>
+      <img class="wit cb-wit" data-layout-allow-overflow="" style="right: -210px; bottom: -350px; width: 1300px;" src="./assets/wit/wit-pose-talking-front.png" alt="">
+    </div>
+
+    <!-- CUE C 11.0-17.0 : not an emotion + WIT deadpan -->
+    <div id="cue-c" class="clip cue" data-start="11.0" data-duration="6.00" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="label red cc-notemo" style="right: 90px; top: 150px; width: 560px;">NOT AN EMOTION</div>
+      <div class="label small cc-tired" style="right: 110px; top: 380px; width: 480px;">(everyone's tired)</div>
+      <img class="wit cc-wit" data-layout-allow-overflow="" style="right: 280px; bottom: -350px; width: 1240px;" src="./assets/wit/wit-pose-deadpan-side-eye.png" alt="">
+    </div>
+
+    <!-- CUE D 17.0-25.40 : opposite brag + WIT suspicious -->
+    <div id="cue-d" class="clip cue" data-start="17.0" data-duration="8.40" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="label small green cd-holiday" style="left: 60px; top: 90px; width: 540px;">LONG HOLIDAYS · FREE AFTERNOONS</div>
+      <div class="label small red cd-nofree" style="right: 90px; top: 620px; width: 420px;">NO FREE TIME</div>
+      <div class="stamp cd-brag" style="left: 60px; bottom: 150px;">OPPOSITE BRAG</div>
+      <img class="wit cd-wit" data-layout-allow-overflow="" style="left: 50%; bottom: -350px; width: 1120px; transform: translateX(-50%);" src="./assets/wit/wit-pose-suspicious.png" alt="">
+    </div>
+
+    <!-- CUE E 25.42-33.32 : busy sounds good + WIT thinking -->
+    <div id="cue-e" class="clip cue" data-start="25.42" data-duration="7.90" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="label small ce-resp" style="left: 60px; top: 90px; width: 460px;">RESPONSIBLE</div>
+      <div class="label small ce-need" style="left: 60px; top: 240px; width: 460px;">NEEDED</div>
+      <div class="label small ce-wait" style="left: 60px; top: 390px; width: 520px;">LINED UP WAITING</div>
+      <div class="label green ce-val" style="left: 60px; bottom: 150px; width: 620px;">= FEELS VALUABLE</div>
+      <img class="wit ce-wit" data-layout-allow-overflow="" style="right: -220px; bottom: -350px; width: 1280px;" src="./assets/wit/wit-pose-thinking.png" alt="">
+    </div>
+
+    <!-- CUE F 33.32-45.14 : meetings about meetings -> near the work + WIT defeated -->
+    <div id="cue-f" class="clip cue" data-start="33.32" data-duration="11.82" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="label small red cf-meet" style="right: 80px; top: 150px; width: 560px;">MEETINGS ABOUT MEETINGS</div>
+      <div class="stamp cf-near" style="right: 70px; bottom: 150px;">PROVING YOU'RE<br>NEAR THE WORK</div>
+      <img class="wit cf-wit" data-layout-allow-overflow="" style="right: 300px; bottom: -350px; width: 1240px;" src="./assets/wit/wit-pose-tiny-defeated.png" alt="">
+    </div>
+
+    <audio id="voiceover-section-03" data-start="0" data-duration="45.14" data-track-index="10" data-volume="1" crossorigin="anonymous" src="./section-03-busy-became-a-status-symbol-david23-am_eric-0.84.mp3"></audio>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
     <script>
@@ -121,34 +168,50 @@
       const tl = gsap.timeline({ paused: true, defaults: { overwrite: "auto" } });
       const reveal = (t, hideAt, at, fv, tv = {}) => { const r = {}; if ("x" in fv) r.x = 0; if ("y" in fv) r.y = 0; if ("scale" in fv) r.scale = 1; if ("opacity" in fv) r.opacity = 1; tl.set(t, fv, hideAt); tl.to(t, { ...r, ...tv }, at); };
       const show = (t, hideAt, at) => { tl.set(t, { opacity: 0 }, hideAt); tl.set(t, { opacity: 1 }, at); };
-      const smash = (t, hideAt, at, fv = { y: 22, scale: 1.3, opacity: 0 }) => reveal(t, hideAt, at, fv, { duration: 0.18, ease: "back.out(1.9)" });
+      const smash = (t, hideAt, at, fv = { y: 20, scale: 1.3, opacity: 0 }) => reveal(t, hideAt, at, fv, { duration: 0.18, ease: "back.out(1.9)" });
 
-      tl.fromTo("#scene-b", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 8.36);
-      tl.fromTo("#scene-c", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 15.68);
-      tl.fromTo("#scene-d", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 26.0);
-      tl.fromTo("#scene-e", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 32.38);
+      // Scene cross-fades
+      tl.fromTo("#scene-b", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 4.06);
+      tl.fromTo("#scene-c", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 11.0);
+      tl.fromTo("#scene-d", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 17.0);
+      tl.fromTo("#scene-e", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 25.42);
+      tl.fromTo("#scene-f", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 33.32);
 
-      show("#cue-1 .celebw", 0, 0.50);
-      show("#cue-1 .statuslabel", 0, 1.48);
-      show("#cue-2 .imsobusy", 2.8, 3.80);
-      smash("#cue-2 .noticeme", 2.8, 7.06);
-      show("#cue-3 .talkw", 8.4, 8.60);
-      show("#cue-3 .askbubble", 8.4, 11.34);
-      show("#cue-3 .busybubble", 8.4, 11.98);
-      show("#cue-4 .confw", 12.48, 12.60);
-      show("#cue-4 .notemotion", 12.48, 12.66);
-      show("#cue-4 .notes-tired", 12.48, 14.70);
-      show("#cue-5 .suspw", 15.72, 16.40);
-      show("#cue-5 .brag1", 15.72, 19.00);
-      show("#cue-6 .brag2", 21.1, 22.60);
-      smash("#cue-6 .oppbrag", 21.1, 24.30);
-      show("#cue-7 .r1", 26.06, 26.40);
-      show("#cue-7 .r2", 26.06, 27.68);
-      smash("#cue-7 .r3", 26.06, 31.84, { y: 16, scale: 1.12, opacity: 0 });
-      show("#cue-8 .facew", 32.42, 33.00);
-      show("#cue-8 .meetmeet", 32.42, 36.96);
-      show("#cue-9 .defeatw", 39.0, 41.00);
-      smash("#cue-9 .nearwork", 39.0, 42.60);
+      // SCENE A
+      show("#cue-a .ca-wit", 0, 0.40);
+      smash("#cue-a .ca-status", 0, 2.48);
+
+      // SCENE B
+      show("#cue-b .cb-wit", 4.06, 4.30);
+      show("#scene-b .cm1", 4.06, 4.30);
+      smash("#cue-b .cb-mean", 4.06, 7.84);
+
+      // SCENE C — emotions board
+      show("#cue-c .cc-wit", 11.0, 11.20);
+      show("#scene-c .emoboard", 11.0, 11.20);
+      smash("#scene-c .es-busy", 11.0, 11.98, { scale: 0, opacity: 0 });
+      smash("#cue-c .cc-notemo", 11.0, 13.32);
+      show("#cue-c .cc-tired", 11.0, 15.28);
+
+      // SCENE D — opposite brag
+      show("#cue-d .cd-wit", 17.0, 17.20);
+      show("#cue-d .cd-holiday", 17.0, 19.34);
+      smash("#scene-d .dcal", 17.0, 23.06, { y: -20, opacity: 0 });
+      show("#cue-d .cd-nofree", 17.0, 23.06);
+      smash("#cue-d .cd-brag", 17.0, 25.42);
+
+      // SCENE E — busy sounds good (staggered)
+      show("#cue-e .ce-wit", 25.42, 25.60);
+      smash("#cue-e .ce-resp", 25.42, 26.40, { x: -30, opacity: 0 });
+      smash("#cue-e .ce-need", 25.42, 27.68, { x: -30, opacity: 0 });
+      smash("#cue-e .ce-wait", 25.42, 29.80, { x: -30, opacity: 0 });
+      smash("#cue-e .ce-val", 25.42, 31.84);
+
+      // SCENE F — near the work
+      show("#cue-f .cf-wit", 33.32, 33.60);
+      smash("#scene-f .fcal", 33.32, 36.96, { y: -20, opacity: 0 });
+      show("#cue-f .cf-meet", 33.32, 36.96);
+      smash("#cue-f .cf-near", 33.32, 43.75);
 
       window.__timelines["Section03Status"] = tl;
     </script>
