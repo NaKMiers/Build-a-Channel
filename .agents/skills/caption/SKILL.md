@@ -18,7 +18,7 @@ Never estimate caption timing from word counts or documented durations. Always t
 This runs once per project, AFTER `combine`, BEFORE `upload`:
 
 ```text
-... -> render -> auto-adjust -> review   (repeat per section)
+... -> render -> review   (repeat per section)
 -> combine   (once: builds the unified full-video + combined-voiceover.mp3)
 -> caption   (once: subtitles from the full audio, exported to output/)
 -> upload -> learning

@@ -28,14 +28,14 @@ This folder stores executable project-local Codex skills.
 - [Render](render/SKILL.md)
   Creates step 6 section HyperFrames preview projects, fixed localhost previews, production-board status, and optional section renders.
 
-- [Auto Adjust](auto-adjust/SKILL.md)
-  Runs after render to audit and automatically fix one selected section preview using review lessons, skill memory, shared knowledge, and previous sections.
-
 - [Combine](combine/SKILL.md)
   Project-level assembly + export step. Combines all completed section renders into one unified preview on `localhost:1000` with a single combined voiceover, then exports the final MP4 to `projects/<slug>/output/` (rendered via `renders/` staging, then moved; `renders/` removed if left empty). Reuses existing renders/assets; never changes section content.
 
 - [Caption](caption/SKILL.md)
   Runs after combine. Creates accurate `.srt` subtitles for one project by transcribing the full combined audio (or full render) for real word-level timing and aligning the exact `02-script.md` text; exports to `projects/<slug>/output/`.
+
+- [Shorts](shorts/SKILL.md)
+  Side sub-workflow after combine. Turns the finished long video into 2-4 complete vertical shorts (`1080x1920`) on ports `1100 + short number` via native portrait HyperFrames rebuilds (reused section assets + regenerated per-short voice + burned centered subtitles, no CTA), then exports to `projects/<slug>/output/shorts/`.
 
 ## Utility Skills
 
@@ -46,12 +46,12 @@ This folder stores executable project-local Codex skills.
 
 ## Remaining Future Skills
 
-`Topic Intake`, `Research Pack`, `Script Draft`, `Voiceover`, `Visual Plan`, `Render`, and `Auto Adjust` are the current main-pipeline video-production skills. `Packaging` is a side-branch skill.
+`Topic Intake`, `Research Pack`, `Script Draft`, `Voiceover`, `Visual Plan`, `Render`, `Combine`, and `Caption` are the current main-pipeline video-production skills. `Packaging` is a side-branch skill; `Shorts` is a side sub-workflow after `combine`.
 
 Pipeline rule:
 
 - each skill requires the previous step output before it runs
-- main pipeline order is `topic-intake -> research-pack -> script-draft -> voiceover -> visual-plan -> render -> auto-adjust -> review -> combine -> caption`
+- main pipeline order is `topic-intake -> research-pack -> script-draft -> voiceover -> visual-plan -> render -> review -> combine -> caption`
 - `combine` runs once after all sections are rendered; `caption` runs once after `combine` and needs the full combined audio (or a full render)
 - render uses `localhost:1000` for unified preview and `localhost:1000 + section number` for section previews
 - packaging is a side branch from `research-pack`

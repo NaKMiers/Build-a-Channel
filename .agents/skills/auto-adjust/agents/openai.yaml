@@ -1,4 +1,0 @@
-interface:
-  display_name: "Auto Adjust"
-  short_description: "Auto-fix rendered section review issues"
-  default_prompt: "Use $auto-adjust to audit and fix the selected rendered Why It Works section."

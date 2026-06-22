@@ -16,7 +16,7 @@ This skill reuses the approved per-section renders and their assets and combines
 This runs once per project (not per section), after every section is reviewed and before `caption`:
 
 ```text
-... -> render -> auto-adjust -> review   (repeat per section)
+... -> render -> review   (repeat per section)
 -> combine   (once, after ALL sections are done: assemble preview + export final MP4 to output/)
 -> caption -> upload -> learning
 ```
@@ -58,7 +58,7 @@ Combine only runs when every section is finished.
 2. For each section, require a current rendered build: `projects/<slug>/section-previews/section-XX-*/index.html` (or the surviving mirror `projects/<slug>/hyperframes/review/section-XX.html`).
 3. For each section, require its voiceover audio (`voiceover/section-XX-*/scratch-audio/*.mp3`, or the mirror's section mp3).
 
-If any section has no rendered build or no audio, STOP and list the missing sections. Tell the user to finish those sections (render / auto-adjust) first. Do not assemble a partial video unless the user explicitly asks for a rough partial assembly.
+If any section has no rendered build or no audio, STOP and list the missing sections. Tell the user to finish those sections (render) first. Do not assemble a partial video unless the user explicitly asks for a rough partial assembly.
 
 ## Required Context
 

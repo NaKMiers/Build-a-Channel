@@ -18,7 +18,7 @@ This skill REUSES each source section's approved assets (photos, WIT poses, font
 Side sub-workflow, branches from `combine`. It runs after the long video is assembled and does NOT block `caption`, `upload`, or `learning`.
 
 ```text
-... -> render -> auto-adjust -> review (per section) -> combine -> caption -> upload -> learning
+... -> render -> review (per section) -> combine -> caption -> upload -> learning
                                                           \-> shorts (side sub-workflow: plan -> build -> export)
 ```
 

@@ -655,7 +655,7 @@ Apply next time:
 - copy assets from the mirror's `assets/` (junctions fail on this Windows setup); keep the working set minimal
 - expect the preview server to resolve project id/title as the workspace/git root name (`Build a Channel`) while `dir` points to the section folder; verify via `GET /api/projects/Build%20a%20Channel/preview/comp/index.html`
 - recreate `06-production-board.md` if it is also missing
-- hand any WIT face/glass/tag collision QA points to Review/Auto-Adjust rather than redesigning during a restore
+- hand any WIT face/glass/tag collision QA points to Review rather than redesigning during a restore
 
 Promote to shared memory:
 no; this is render-skill execution behavior for recovering lost preview folders.

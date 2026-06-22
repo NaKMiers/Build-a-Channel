@@ -41,8 +41,6 @@ The main video pipeline is:
 09-self-learning.md
 ```
 
-Post-render `auto-adjust` runs between `06-production-board.md` and `07-review.md`. It fixes the selected rendered section in place and does not create a new numbered project output by default.
-
 Packaging side branch:
 
 ```text
@@ -58,7 +56,6 @@ Current executable steps:
 - `voiceover` requires `02-script.md`, then writes `04-voiceover.md` and section voiceover files.
 - `visual-plan` requires `04-voiceover.md` and selected section voiceover, then writes `05-visual-plan.md` and section visual-plan files.
 - `render` requires `05-visual-plan.md` and selected section visual plan, then writes `06-production-board.md` and section HyperFrames preview files.
-- `auto-adjust` requires a rendered selected section, then audits and fixes that one section preview before review. It reads `visual-plan` memory, `render` memory, shared production rules, and previous sections in the same project. It has no `All` option.
 - `combine` (after all sections) unifies the project on `localhost:1000` with one combined voiceover and exports the full MP4 to `output/`.
 - `caption` (after combine) transcribes the full combined audio for real word timings and exports `output/captions.srt`.
 - `shorts` (side sub-workflow from `combine`) turns the finished long video into 2-4 COMPLETE vertical shorts (`1080x1920`) on ports `1100 + short number` via native portrait HyperFrames rebuilds — reusing each source section's real assets, regenerating a per-short voiceover, and burning centered subtitles — then exports to `output/shorts/`. Each short carries NO CTA, never edits the long-form sections, and does not block caption, upload, or learning.
@@ -74,7 +71,7 @@ Pipeline rules:
 - Rerunning an earlier step makes later outputs stale.
 - Remove stale downstream outputs only by explicit user request, or regenerate them by rerunning later skills in order.
 
-After `04-voiceover.md`, production branches by section. A selected section should move through visual plan, render, auto-adjust, and review as its own branch. `All` means every section gets separate outputs, not one stitched planning artifact. Auto Adjust is the exception: it requires one section only and has no `All` option.
+After `04-voiceover.md`, production branches by section. A selected section should move through visual plan, render, and review as its own branch. `All` means every section gets separate outputs, not one stitched planning artifact.
 
 Render port rule:
 
@@ -114,7 +111,7 @@ Use lightweight gates instead of many separate checklists:
 - Visuals: each board must carry one thought, one readable label, and one clear joke or evidence job.
 - Visual motion: ordinary cue labels should hard-show on the spoken beat; impact animation belongs only on emphasized words, evidence, or payoff.
 - WIT QA: when WIT appears, its emotion must read clearly, the face/head/shoulders must not look accidentally cropped, WIT should not appear so often that it fights the voice rhythm, and text/payoff/stamps must not cover WIT's face/expression.
-- Auto Adjust: before review, run a one-section post-render sweep for voice sync, motion density, WIT scale/rhythm/crop, text/WIT collision, subtitle-safe lower layout, meaningful markup, asset differentiation, manual edit preservation, and HyperFrames validation.
+- Pre-review QA: before review, sweep the rendered section for voice sync, motion density, WIT scale/rhythm/crop, text/WIT collision, subtitle-safe lower layout, meaningful markup, asset differentiation, manual edit preservation, and HyperFrames validation.
 - Audio: narration is the product; music and sound effects are support.
 - Review: paused frames should be understandable, readable, and worth looking at.
 - Learning: after publishing, record only reusable lessons.
