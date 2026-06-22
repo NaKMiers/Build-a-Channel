@@ -795,6 +795,61 @@ red badges, chat conversations. Key mechanics learned:
 
 Promote to shared memory: covered in `_shared/channel/brand-system.md` ("Real-UI Illustration"); keep the render build mechanics here.
 
+### 2026-06-22 - Section 5: more CSS real-UI surfaces + preview project-id varies
+
+Classification: `Render lesson` / `Operational lesson`
+
+Context: Section 5 ("Visible Work Beats Quiet Thinking") built four CSS real-UI surfaces — a Google
+Meet call grid, a survey poll card, a Trello Kanban board, and a Google Sheets spreadsheet on a
+theater stage — plus one CC wall photo. Lint/validate/snapshot all clean.
+
+Lesson:
+- Real-UI scope keeps widening per owner preference: Meet grids, Kanban boards, poll/survey cards,
+  and spreadsheets all read clearly as CSS mockups with real icon PNGs. Use initials avatars (not
+  faces) in any "call/people" UI to keep the no-face rule.
+- Two reliable custom GSAP tweens beyond reveal/show/smash: (1) animate a `.pollbar i` width from
+  0%→target for a survey-bar "fill"; (2) translate a Kanban `.movecard` via `x` from one column
+  offset to 0 to show "move a task column→column" on the spoken beat.
+- Float overlap on track 2: `25.76 + 3.14 = 28.900000000000002` tripped `overlapping_clips_same_track`
+  against a 28.9 start. Trim the earlier cue's duration (3.14→3.12) rather than nudging the start.
+- Preview project-id is NOT always `Build a Channel`: Section 5's server resolved the project id to
+  the section FOLDER name. Always read `/api/projects` from the running server and build the Studio /
+  comp URLs from the reported id; don't assume the workspace-root title.
+
+Apply next time: check `/api/projects` for the real id before recording preview URLs; expect to build
+calls/boards/sheets/polls as CSS real-UI; watch track-2 float sums for overlap.
+
+Promote to shared memory: no — render/operational mechanics; real-UI policy already in `brand-system.md`.
+
+### 2026-06-22 - Pure CSS-UI scenes feel flat; ground them on real desk photos
+
+Classification: `Render lesson`
+
+Context: Section 5 v1 was 4 CSS real-UI scenes (Meet/poll/Trello/Sheets) + 1 real photo. Owner: "it
+look like it's missing some real-world images that make the section not lively." The crisp UI was
+liked, but full-frame flat-gradient backgrounds read as synthetic slides.
+
+Lesson:
+- Real UI is loved, but a whole section of full-frame CSS UI on flat gradients feels like slides.
+  Ground each digital scene in a REAL, people-free photo so the app reads as a real screen in a real
+  space — much livelier without losing the recognizable UI.
+- Pattern: `.deskphoto` (real photo, object-fit cover, slight darken filter) + radial `.deskscrim` +
+  a floating `.screen` window (≈1500x846, rounded, big drop shadow) that holds the UI. The real desk
+  shows around the window = environment/texture.
+- Rescale UI internals to the window (not the 1920 frame); recompute any absolute-coord animation
+  offsets (e.g. the Trello card's DOING→DONE x-translate changed when columns shrank).
+- Pick DISTINCT surfaces to avoid the repeat complaint: white desk / marble / dark wood. Bonus when a
+  prop matches the beat (a real "To Do List" notepad under a Kanban board).
+- Sourcing people-free modern desks: most "office desk" hero photos include a person (no-face fail);
+  CC0 StockSnap top-down desk FLAT-LAYS (coffee/notebook/laptop, ~960w) are reliably people-free and
+  fine as darkened backdrops. Keep a clearly stylized scene (CSS theater) as a deliberate contrast.
+
+Apply next time: don't ship an all-CSS-UI section on flat gradients — float the UI on real
+people-free desk/space photos for liveliness; vary the surface; verify no faces.
+
+Promote to shared memory: candidate — consider a short "ground real-UI on real photos" note in
+`_shared/channel/brand-system.md` if this recurs across sections.
+
 ## Feedback Entry Template
 
 ```markdown

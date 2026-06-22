@@ -21,8 +21,9 @@ Source files:
 | Section 2 | 1002 | http://localhost:1002/#project/Build%20a%20Channel | http://localhost:1002/api/projects/Build%20a%20Channel/preview/comp/index.html | running |
 | Section 3 | 1003 | http://localhost:1003/#project/Build%20a%20Channel | http://localhost:1003/api/projects/Build%20a%20Channel/preview/comp/index.html | running |
 | Section 4 | 1004 | http://localhost:1004/#project/Build%20a%20Channel | http://localhost:1004/api/projects/Build%20a%20Channel/preview/comp/index.html | running |
+| Section 5 | 1005 | http://localhost:1005/#project/section-05-visible-work-beats-quiet-thinking | http://localhost:1005/api/projects/section-05-visible-work-beats-quiet-thinking/preview/comp/index.html | running |
 
-Note: the preview server resolves the project id/title to the workspace root name (`Build a Channel`) while `dir` points to the section folder — documented HyperFrames behavior on this setup.
+Note: the preview server resolves the project id/title from the launch context. Sections 1-4 resolved to the workspace root name (`Build a Channel`); Section 5's server resolved to the section folder id (`section-05-visible-work-beats-quiet-thinking`) — use whichever the server's `/api/projects` reports. Both forms point `dir` at the section folder.
 
 ## Section Render Index
 
@@ -32,7 +33,7 @@ Note: the preview server resolves the project id/title to the workspace root nam
 | 2 | Reframe: Looking Busy vs Doing Work | built — ready for review | 1002 | `section-previews/section-02-reframe-looking-busy-vs-doing-work/` | visual plan + generated word timings | lint 0 err / validate 0 err / snapshots ok | none | 4 scenes, 6 cues, 3 WIT beats; CC0 real photos (Openverse) |
 | 3 | Busy Became A Status Symbol | built — ready for review | 1003 | `section-previews/section-03-busy-became-a-status-symbol/` | visual plan + generated word timings | lint 0 err / validate 0 err / snapshots ok | none | 5 scenes (trophy/coffee/beach/meeting/clock), 9 cues, 6 WIT poses; CC0 |
 | 4 | Your Apps Invented Emergencies | built — ready for review | 1004 | `section-previews/section-04-your-apps-invented-emergencies/` | visual plan + generated word timings | lint 0 err / validate 0 err / snapshots ok | none | 5 scenes (iPhone notifs/app grid/alarm/chat/fridge); REAL app icons (user-approved); 5 WIT poses |
-| 5 | Visible Work Beats Quiet Thinking | not rendered | 1005 | — | — | — | — | voiceover 0.86 |
+| 5 | Visible Work Beats Quiet Thinking | built — ready for review | 1005 | `section-previews/section-05-visible-work-beats-quiet-thinking/` | visual plan + generated word timings | lint 0 err / validate 0 err / snapshots ok | none | 5 scenes (Meet grid/wall/poll/Trello/Sheets-on-stage); REAL-UI (Meet/Trello/Sheets icons, user-preferred); 5 WIT poses |
 | 6 | "I'm Busy" Is A Shield | not rendered | 1006 | — | — | — | — | voiceover 0.86 |
 | 7 | Payoff: Activity Is Not Value | not rendered | 1007 | — | — | — | — | voiceover 0.86 |
 
@@ -48,6 +49,13 @@ Note: the preview server resolves the project id/title to the workspace root nam
 - Scene bases (final, 2026-06-22): clean real-world CC0 stock photos sourced via Openverse — `base-deskwork.jpg` (Scene A warm work desk), `base-deskcalm.jpg` (Scene B bright minimal desk), `base-deskwork-cage.jpg` (Scene C cooled + cage bars). Motif shifted from literal calendar to work-desk (no clean people-free calendar photo findable). Iteration history: dingy PD photos (rejected) → flat-illustrated CSS (rejected) → CC0 real photos (current). No image generator available. Cue timing/WIT unchanged. See section IMPLEMENTATION.md + ATTRIBUTION.md.
 - All cue times pinned to generated `section-01-word-timings.json`. The dry button "There is a difference." lands at ~19.96–21.0 (later than the visual plan's estimate).
 - WIT: 4 beats, each ≥1/3 frame, faces safe, no label/face collisions, verified in snapshots.
+- No MP4/WebM exported (not requested).
+
+- Section 5 motif (real-UI, owner-preferred): visible work = rewarded. Scene A Google Meet call grid (reply / meetings / "just circling back") → Scene B empty-room wall photo ("staring at a wall, possibly blinking", WIT thinking→deadpan) → Scene C survey poll card (Yes 15% / Not really 85%, "managers can't tell") → Scene D Trello Kanban where a card visibly moves DOING→DONE ("move a task column to column" @30.56, "updates about future updates", WIT facepalm) → Scene E Google Sheets spreadsheet spotlit on a theater stage with red curtains ("productivity theater", "the star ★" pops @40.76, WIT tiny-defeated).
+- Meet/Trello/Sheets built in CSS with real icon PNGs (Wikimedia); editorial depiction, no faces (initials avatars), no pixel-copied screenshots, no private data — per standing owner real-UI preference (2026-06-22).
+- v2 liveliness pass (owner: "missing some real-world images, not lively"): scenes A/C/D now float the UI as a screen over REAL people-free CC desk photos — A white desk + MacBook (`base-desk-call.jpg`), C marble + iPad (`base-desk-survey.jpg`), D dark wood + "To Do List" notepad (`base-desk-board.jpg`); distinct surfaces, CC0 StockSnap.
+- v3 (owner: "last scene still not have background"): Scene E swapped CSS curtains for a REAL lit red theater-curtain photo (`base-stage.jpg`, CC0 Wikimedia, no people) + spotlight on the spreadsheet. ALL five scenes now have a real-world background (A/C/D/E real photos + B wall). Re-lint 0 err, re-snapshot ok, review mirror (`hyperframes/review/section-05.html` + `base-stage.jpg`) synced.
+- 5 distinct WIT poses: typing → thinking → deadpan-side-eye → facepalm → tiny-defeated. All cues pinned to `section-05-word-timings.json` (0.86 audio, 42.859s). Two custom tweens: poll bars grow (15/85), Trello card translates DOING→DONE over 1.5s.
 - No MP4/WebM exported (not requested).
 
 ## Stale / Regeneration Notes
