@@ -61,11 +61,11 @@
     .kancols { position:absolute; left:80px; top:128px; display:flex; gap:40px; z-index:3; }
     .kancol { width:420px; background:#ebecf0; border-radius:16px; padding:18px 18px; max-height:640px; }
     .kancol > .h { font-family:"Segoe UI",system-ui,sans-serif; font-weight:700; font-size:34px; color:#172b4d; margin:4px 6px 18px; }
-    .kcard { background:#fff; border-radius:10px; padding:18px 20px; margin-bottom:16px; box-shadow:0 3px 0 rgba(9,30,66,0.18); font-family:"Segoe UI",system-ui,sans-serif; font-size:32px; color:#172b4d; }
-    .kcard .chip { display:inline-block; height:16px; width:104px; border-radius:8px; margin-bottom:12px; }
+    .kcard { display: flex; flex-direction: column; background:#fff; border-radius:10px; padding:18px 20px; margin-bottom:16px; box-shadow:0 3px 0 rgba(9,30,66,0.18); font-family:"Segoe UI",system-ui,sans-serif; font-size:32px; color:#172b4d; }
+    .kcard .chip { display:inline-block; height:16px; width: 200px; border-radius:8px; margin-bottom:12px; }
     .chip.g { background:#61bd4f; } .chip.y { background:#f2d600; } .chip.b { background:#0079bf; } .chip.r { background:#eb5a46; }
-    .movecard { position:absolute; top:212px; left:1000px; width:380px; background:#fff; border:5px solid var(--sale); border-radius:10px; padding:18px 20px; box-shadow:0 14px 0 rgba(9,30,66,0.28); font-family:"Segoe UI",system-ui,sans-serif; font-size:32px; color:#172b4d; z-index:6; }
-    .movecard .chip { display:inline-block; height:16px; width:104px; border-radius:8px; margin-bottom:12px; background:#eb5a46; }
+    .movecard { display: flex; flex-direction: column; position:absolute; top:212px; left:1010px; width:400px; background:#fff; border:5px solid var(--sale); border-radius:10px; padding:18px 20px; box-shadow:0 14px 0 rgba(9,30,66,0.28); font-family:"Segoe UI",system-ui,sans-serif; font-size:32px; color:#172b4d; z-index:6; }
+    .movecard .chip { display:inline-block; height:16px; width: 80%; border-radius:8px; margin-bottom:12px; background:#eb5a46; }
 
     /* ---- Scene E: spreadsheet on a REAL theater stage (red curtain photo) ---- */
     .stagephoto { filter:saturate(1.05) contrast(1.04) brightness(0.78); }
@@ -223,7 +223,7 @@
     <!-- C9 37.28 "tickets paid in stress ... the star is a spreadsheet" -->
     <div data-hf-studio-original-inline-translate="" data-hf-studio-original-translate="" data-hf-studio-path-offset="true" id="cue-9" class="clip cue" data-start="37.28" data-duration="5.579" data-track-index="2" data-layout-allow-overflow="" style="overflow:visible;--hf-studio-offset-x:-3px;--hf-studio-offset-y:-9px;translate:var(--hf-studio-offset-x, 0px) var(--hf-studio-offset-y, 0px)">
       <div class="label small tickets" style="left: 80px; top: 100px; width: 600px;">TICKETS: PAID IN STRESS</div>
-      <div class="label yellow starlbl" style="right: 90px; top: 100px; width: 460px;">THE STAR ★</div>
+      <div class="label yellow starlbl" style="right: 700px; top: 150px; width: 460px;">THE STAR ★</div>
       <img class="wit defeatw" data-layout-allow-overflow="" style="left: -210px; bottom: -560px; width: 1000px;" src="./assets/wit/wit-pose-tiny-defeated.png" alt="">
     </div>
 

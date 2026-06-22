@@ -649,6 +649,34 @@ Promoted to shared memory: YES — recorded in `_shared/channel/brand-system.md`
 `_shared/systems/visual-production.md`, and `_shared/channel/channel-foundation.md`. The SKILL.md
 Image Sourcing section also carries the technique.
 
+### 2026-06-22 - Abstract-concept sections: CSS metaphor + real-UI chat OVER real photos
+
+Classification: `Visual plan lesson`
+
+Context:
+Section 6 ("I'm Busy Is A Shield") has an abstract thesis (busy = a social defense) with no single
+literal object. Owner had just established two strong preferences: real photo backgrounds make scenes
+lively, and real-UI (chat/app screens) is preferred when the script depicts messages. Plan blended both.
+
+Lesson:
+For abstract/concept sections, satisfy the Real Scene Base Rule by putting a REAL people-free photo
+behind every scene, then build the metaphor and the messages in CSS on top:
+- the metaphor as a CSS construct over the photo (a shield labeled `I'M BUSY` deflecting request
+  bubbles; struck-out speech bubbles over an empty meeting room for "things you can't say")
+- the "requests/messages" beats as real-UI chat (1:1 + group) floated as a `.screen` on a real desk,
+  with a real app icon (Messenger) used editorially
+Pick photo bases that literally echo a line (an empty meeting room for "this meeting could've been a
+message"; a wall of sticky notes for "really are overloaded") — it makes an abstract section concrete.
+
+Apply next time:
+- abstract section → real photo base per scene + CSS metaphor/labels on top (never a bare gradient)
+- use real-UI chat for message/notification beats; keep people as initials avatars (no-face)
+- match a base to a specific spoken line where possible; keep all 5 surfaces visually distinct
+- when the section's word-timings JSON is missing, GENERATE it first (whisper prefix) before timing cues
+
+Promote to shared memory:
+no; execution refinement of the Real Scene Base Rule + the standing real-UI preference.
+
 ## Feedback Entry Template
 
 ```markdown

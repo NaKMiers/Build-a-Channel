@@ -34,7 +34,7 @@ Source files:
 | 3 | Busy Became A Status Symbol | revised — 5 scenes, varied WIT | 45.077s | 5 | 9 | `visual-plan/section-03-busy-became-a-status-symbol/section-03-busy-became-a-status-symbol-visual-plan.md` | `visual-plan/section-03-busy-became-a-status-symbol/reference-board.md` | CC0 (trophy/coffee/beach/meeting/clock); word-timed; 6 WIT poses |
 | 4 | Your Apps Invented Emergencies | revised — 5 scenes, full-HD | 42.133s | 5 | 9 | `visual-plan/section-04-your-apps-invented-emergencies/section-04-your-apps-invented-emergencies-visual-plan.md` | `visual-plan/section-04-your-apps-invented-emergencies/reference-board.md` | full-HD CC (phone/button/alarm/fridge) + CSS notifications; word-timed; 5 WIT poses |
 | 5 | Visible Work Beats Quiet Thinking | planned — 5 scenes, real-UI on real desks | 42.859s | 5 | 9 | `visual-plan/section-05-visible-work-beats-quiet-thinking/section-05-visible-work-beats-quiet-thinking-visual-plan.md` | `visual-plan/section-05-visible-work-beats-quiet-thinking/reference-board.md` | real-UI (Meet/poll/Trello floated on REAL CC desk photos; Sheets-on-stage) + CC wall photo; word-timed; 5 WIT poses |
-| 6 | "I'm Busy" Is A Shield | not planned | 37.973s | — | — | — | — | voiceover ready (0.86) |
+| 6 | "I'm Busy" Is A Shield | planned — 5 scenes, real bg + real-UI | 38.04s | 5 | 13 | `visual-plan/section-06-im-busy-is-a-shield/section-06-im-busy-is-a-shield-visual-plan.md` | `visual-plan/section-06-im-busy-is-a-shield/reference-board.md` | 5 real photo backgrounds (office/wood desk/sticky-notes/meeting room/grey desk) + CSS shield + real-UI chat; word-timed; 5 WIT poses |
 | 7 | Payoff: Activity Is Not Value | not planned | 46.72s | — | — | — | — | voiceover ready (0.86) |
 
 ## Cross-Section Continuity

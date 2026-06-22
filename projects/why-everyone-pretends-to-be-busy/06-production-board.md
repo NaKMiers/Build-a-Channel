@@ -22,6 +22,7 @@ Source files:
 | Section 3 | 1003 | http://localhost:1003/#project/Build%20a%20Channel | http://localhost:1003/api/projects/Build%20a%20Channel/preview/comp/index.html | running |
 | Section 4 | 1004 | http://localhost:1004/#project/Build%20a%20Channel | http://localhost:1004/api/projects/Build%20a%20Channel/preview/comp/index.html | running |
 | Section 5 | 1005 | http://localhost:1005/#project/section-05-visible-work-beats-quiet-thinking | http://localhost:1005/api/projects/section-05-visible-work-beats-quiet-thinking/preview/comp/index.html | running |
+| Section 6 | 1006 | http://localhost:1006/#project/section-06-im-busy-is-a-shield | http://localhost:1006/api/projects/section-06-im-busy-is-a-shield/preview/comp/index.html | running |
 
 Note: the preview server resolves the project id/title from the launch context. Sections 1-4 resolved to the workspace root name (`Build a Channel`); Section 5's server resolved to the section folder id (`section-05-visible-work-beats-quiet-thinking`) — use whichever the server's `/api/projects` reports. Both forms point `dir` at the section folder.
 
@@ -34,7 +35,7 @@ Note: the preview server resolves the project id/title from the launch context. 
 | 3 | Busy Became A Status Symbol | built — ready for review | 1003 | `section-previews/section-03-busy-became-a-status-symbol/` | visual plan + generated word timings | lint 0 err / validate 0 err / snapshots ok | none | 5 scenes (trophy/coffee/beach/meeting/clock), 9 cues, 6 WIT poses; CC0 |
 | 4 | Your Apps Invented Emergencies | built — ready for review | 1004 | `section-previews/section-04-your-apps-invented-emergencies/` | visual plan + generated word timings | lint 0 err / validate 0 err / snapshots ok | none | 5 scenes (iPhone notifs/app grid/alarm/chat/fridge); REAL app icons (user-approved); 5 WIT poses |
 | 5 | Visible Work Beats Quiet Thinking | built — ready for review | 1005 | `section-previews/section-05-visible-work-beats-quiet-thinking/` | visual plan + generated word timings | lint 0 err / validate 0 err / snapshots ok | none | 5 scenes (Meet grid/wall/poll/Trello/Sheets-on-stage); REAL-UI (Meet/Trello/Sheets icons, user-preferred); 5 WIT poses |
-| 6 | "I'm Busy" Is A Shield | not rendered | 1006 | — | — | — | — | voiceover 0.86 |
+| 6 | "I'm Busy" Is A Shield | built — ready for review | 1006 | `section-previews/section-06-im-busy-is-a-shield/` | visual plan + generated word timings | lint 0 err / validate 0 err / snapshots ok | none | 5 scenes (shield/1:1 chat/sticky-notes/meeting room/group chat); REAL photo backgrounds + real-UI chat; 5 WIT poses |
 | 7 | Payoff: Activity Is Not Value | not rendered | 1007 | — | — | — | — | voiceover 0.86 |
 
 ## Shared Asset Rules
@@ -55,6 +56,10 @@ Note: the preview server resolves the project id/title from the launch context. 
 - Meet/Trello/Sheets built in CSS with real icon PNGs (Wikimedia); editorial depiction, no faces (initials avatars), no pixel-copied screenshots, no private data — per standing owner real-UI preference (2026-06-22).
 - v2 liveliness pass (owner: "missing some real-world images, not lively"): scenes A/C/D now float the UI as a screen over REAL people-free CC desk photos — A white desk + MacBook (`base-desk-call.jpg`), C marble + iPad (`base-desk-survey.jpg`), D dark wood + "To Do List" notepad (`base-desk-board.jpg`); distinct surfaces, CC0 StockSnap.
 - v3 (owner: "last scene still not have background"): Scene E swapped CSS curtains for a REAL lit red theater-curtain photo (`base-stage.jpg`, CC0 Wikimedia, no people) + spotlight on the spreadsheet. ALL five scenes now have a real-world background (A/C/D/E real photos + B wall). Re-lint 0 err, re-snapshot ok, review mirror (`hyperframes/review/section-05.html` + `base-stage.jpg`) synced.
+
+- Section 6 motif (real backgrounds + real-UI, owner-preferred): "I'm busy" is a shield. Scene A real office desk + CSS shield `I'M BUSY` deflecting request bubbles (WIT deadpan) → Scene B real wood desk + real-UI 1:1 Messenger chat ("I'm busy" reply, "= NO IDEA, STAY CALM", WIT facepalm) → Scene C real sticky-note wall + OVERLOADED stamp + "THE SHIELD IS REAL" (WIT burned-out) → Scene D real empty meeting room + two struck speech bubbles ("I need quiet time" = TOO RELAXED @27.48, "this meeting could've been a message" = TOO DANGEROUS @31.70, WIT shocked) → Scene E real desk + real-UI group chat full of "busy" + "OR BOTH" (WIT tiny-defeated).
+- 5 distinct real photo backgrounds (office / wood desk / sticky-note wall / meeting room / grey desk), all people-free; chat built in CSS with the real Messenger icon (editorial). 5 distinct WIT poses. All cues pinned to generated `section-06-word-timings.json` (0.86 audio, 38.04s). Word-timings JSON was generated this run (was missing). Re-lint 0 err, snapshots ok, mirror (`hyperframes/review/section-06.html`) synced.
+- No MP4/WebM exported (not requested).
 - 5 distinct WIT poses: typing → thinking → deadpan-side-eye → facepalm → tiny-defeated. All cues pinned to `section-05-word-timings.json` (0.86 audio, 42.859s). Two custom tweens: poll bars grow (15/85), Trello card translates DOING→DONE over 1.5s.
 - No MP4/WebM exported (not requested).
 
