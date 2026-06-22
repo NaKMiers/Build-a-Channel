@@ -1,0 +1,425 @@
+{
+  "transcript": "A product feels disposable when fixing it becomes harder than replacing it. Sometimes the part is not available. Sometimes the tool is special. Sometimes the repair costs almost as much as buying a new one. And sometimes the product looks at you and says, \"You own me, but not enough to open me.\" Very healthy relationship. This is why repairability matters. Repairability just means how easy something is to fix. That is basically society looking at a phone and saying, please have a future.",
+  "words": [
+    {
+      "word": "A",
+      "start": 0,
+      "end": 0.28
+    },
+    {
+      "word": "product",
+      "start": 0.28,
+      "end": 0.52
+    },
+    {
+      "word": "feels",
+      "start": 0.52,
+      "end": 0.86
+    },
+    {
+      "word": "disposable",
+      "start": 0.86,
+      "end": 1.44
+    },
+    {
+      "word": "when",
+      "start": 1.44,
+      "end": 1.78
+    },
+    {
+      "word": "fixing",
+      "start": 1.78,
+      "end": 2.06
+    },
+    {
+      "word": "it",
+      "start": 2.06,
+      "end": 2.26
+    },
+    {
+      "word": "becomes",
+      "start": 2.26,
+      "end": 2.58
+    },
+    {
+      "word": "harder",
+      "start": 2.58,
+      "end": 2.82
+    },
+    {
+      "word": "than",
+      "start": 2.82,
+      "end": 3.06
+    },
+    {
+      "word": "replacing",
+      "start": 3.06,
+      "end": 3.44
+    },
+    {
+      "word": "it.",
+      "start": 3.44,
+      "end": 4.2
+    },
+    {
+      "word": "Sometimes",
+      "start": 4.24,
+      "end": 4.5
+    },
+    {
+      "word": "the",
+      "start": 4.5,
+      "end": 4.74
+    },
+    {
+      "word": "part",
+      "start": 4.74,
+      "end": 4.96
+    },
+    {
+      "word": "is",
+      "start": 4.96,
+      "end": 5.18
+    },
+    {
+      "word": "not",
+      "start": 5.18,
+      "end": 5.4
+    },
+    {
+      "word": "available.",
+      "start": 5.4,
+      "end": 5.96
+    },
+    {
+      "word": "Sometimes",
+      "start": 6.04,
+      "end": 6.24
+    },
+    {
+      "word": "the",
+      "start": 6.24,
+      "end": 6.56
+    },
+    {
+      "word": "tool",
+      "start": 6.56,
+      "end": 6.72
+    },
+    {
+      "word": "is",
+      "start": 6.72,
+      "end": 6.94
+    },
+    {
+      "word": "special.",
+      "start": 6.94,
+      "end": 7.84
+    },
+    {
+      "word": "Sometimes",
+      "start": 7.84,
+      "end": 8.2
+    },
+    {
+      "word": "the",
+      "start": 8.2,
+      "end": 8.5
+    },
+    {
+      "word": "repair",
+      "start": 8.5,
+      "end": 8.78
+    },
+    {
+      "word": "costs",
+      "start": 8.78,
+      "end": 9.08
+    },
+    {
+      "word": "almost",
+      "start": 9.08,
+      "end": 9.46
+    },
+    {
+      "word": "as",
+      "start": 9.46,
+      "end": 9.6
+    },
+    {
+      "word": "much",
+      "start": 9.6,
+      "end": 9.8
+    },
+    {
+      "word": "as",
+      "start": 9.8,
+      "end": 9.98
+    },
+    {
+      "word": "buying",
+      "start": 9.98,
+      "end": 10.22
+    },
+    {
+      "word": "a",
+      "start": 10.22,
+      "end": 10.36
+    },
+    {
+      "word": "new",
+      "start": 10.36,
+      "end": 10.56
+    },
+    {
+      "word": "one.",
+      "start": 10.56,
+      "end": 10.82
+    },
+    {
+      "word": "And",
+      "start": 10.82,
+      "end": 11.02
+    },
+    {
+      "word": "sometimes",
+      "start": 11.02,
+      "end": 11.3
+    },
+    {
+      "word": "the",
+      "start": 11.3,
+      "end": 11.54
+    },
+    {
+      "word": "product",
+      "start": 11.54,
+      "end": 11.78
+    },
+    {
+      "word": "looks",
+      "start": 11.78,
+      "end": 12.02
+    },
+    {
+      "word": "at",
+      "start": 12.02,
+      "end": 12.14
+    },
+    {
+      "word": "you",
+      "start": 12.14,
+      "end": 12.32
+    },
+    {
+      "word": "and",
+      "start": 12.32,
+      "end": 12.46
+    },
+    {
+      "word": "says,",
+      "start": 12.46,
+      "end": 12.78
+    },
+    {
+      "word": "\"You",
+      "start": 12.78,
+      "end": 12.8
+    },
+    {
+      "word": "own",
+      "start": 12.8,
+      "end": 13
+    },
+    {
+      "word": "me,",
+      "start": 13,
+      "end": 13.16
+    },
+    {
+      "word": "but",
+      "start": 13.16,
+      "end": 13.26
+    },
+    {
+      "word": "not",
+      "start": 13.26,
+      "end": 13.46
+    },
+    {
+      "word": "enough",
+      "start": 13.46,
+      "end": 13.7
+    },
+    {
+      "word": "to",
+      "start": 13.7,
+      "end": 13.86
+    },
+    {
+      "word": "open",
+      "start": 13.86,
+      "end": 14.06
+    },
+    {
+      "word": "me.\"",
+      "start": 14.06,
+      "end": 14.3
+    },
+    {
+      "word": "Very",
+      "start": 14.3,
+      "end": 14.64
+    },
+    {
+      "word": "healthy",
+      "start": 14.64,
+      "end": 14.92
+    },
+    {
+      "word": "relationship.",
+      "start": 14.92,
+      "end": 15.94
+    },
+    {
+      "word": "This",
+      "start": 15.94,
+      "end": 16.18
+    },
+    {
+      "word": "is",
+      "start": 16.18,
+      "end": 16.32
+    },
+    {
+      "word": "why",
+      "start": 16.32,
+      "end": 16.56
+    },
+    {
+      "word": "repairability",
+      "start": 16.56,
+      "end": 17.16
+    },
+    {
+      "word": "matters.",
+      "start": 17.16,
+      "end": 17.74
+    },
+    {
+      "word": "Repairability",
+      "start": 17.78,
+      "end": 18.32
+    },
+    {
+      "word": "just",
+      "start": 18.32,
+      "end": 18.64
+    },
+    {
+      "word": "means",
+      "start": 18.64,
+      "end": 18.84
+    },
+    {
+      "word": "how",
+      "start": 18.84,
+      "end": 19.12
+    },
+    {
+      "word": "easy",
+      "start": 19.12,
+      "end": 19.34
+    },
+    {
+      "word": "something",
+      "start": 19.34,
+      "end": 19.68
+    },
+    {
+      "word": "is",
+      "start": 19.68,
+      "end": 19.92
+    },
+    {
+      "word": "to",
+      "start": 19.92,
+      "end": 20.1
+    },
+    {
+      "word": "fix.",
+      "start": 20.1,
+      "end": 20.82
+    },
+    {
+      "word": "That",
+      "start": 20.82,
+      "end": 21.02
+    },
+    {
+      "word": "is",
+      "start": 21.02,
+      "end": 21.28
+    },
+    {
+      "word": "basically",
+      "start": 21.28,
+      "end": 21.72
+    },
+    {
+      "word": "society",
+      "start": 21.72,
+      "end": 22.24
+    },
+    {
+      "word": "looking",
+      "start": 22.24,
+      "end": 22.56
+    },
+    {
+      "word": "at",
+      "start": 22.56,
+      "end": 22.8
+    },
+    {
+      "word": "a",
+      "start": 22.8,
+      "end": 22.94
+    },
+    {
+      "word": "phone",
+      "start": 22.94,
+      "end": 23.16
+    },
+    {
+      "word": "and",
+      "start": 18.67,
+      "end": 18.97
+    },
+    {
+      "word": "saying,",
+      "start": 18.97,
+      "end": 19.51
+    },
+    {
+      "word": "please",
+      "start": 19.51,
+      "end": 19.85
+    },
+    {
+      "word": "have",
+      "start": 19.85,
+      "end": 20.13
+    },
+    {
+      "word": "a",
+      "start": 20.13,
+      "end": 20.27
+    },
+    {
+      "word": "future.",
+      "start": 20.27,
+      "end": 26.51
+    }
+  ]
+}

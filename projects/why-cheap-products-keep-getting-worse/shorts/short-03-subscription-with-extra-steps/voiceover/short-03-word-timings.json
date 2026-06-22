@@ -1,0 +1,365 @@
+{
+  "transcript": "Most people don't wake up and say, \"Today, I would like to create a small landfill with my headphones.\" They replace things because the system makes replacement feel easier. The repair quote is high, the spare part is missing. The new one arrives tomorrow, so you buy the product again. The price tag smiles again, the receipt prints again, and the cheap product quietly becomes a subscription with extra steps. [BLANK_AUDIO]",
+  "words": [
+    {
+      "word": "Most",
+      "start": 0,
+      "end": 0.34
+    },
+    {
+      "word": "people",
+      "start": 0.34,
+      "end": 0.64
+    },
+    {
+      "word": "don't",
+      "start": 0.64,
+      "end": 0.9
+    },
+    {
+      "word": "wake",
+      "start": 0.9,
+      "end": 1.1
+    },
+    {
+      "word": "up",
+      "start": 1.1,
+      "end": 1.3
+    },
+    {
+      "word": "and",
+      "start": 1.3,
+      "end": 1.4
+    },
+    {
+      "word": "say,",
+      "start": 1.4,
+      "end": 1.76
+    },
+    {
+      "word": "\"Today,",
+      "start": 1.76,
+      "end": 1.98
+    },
+    {
+      "word": "I",
+      "start": 1.98,
+      "end": 1.98
+    },
+    {
+      "word": "would",
+      "start": 1.98,
+      "end": 2.16
+    },
+    {
+      "word": "like",
+      "start": 2.16,
+      "end": 2.36
+    },
+    {
+      "word": "to",
+      "start": 2.36,
+      "end": 2.36
+    },
+    {
+      "word": "create",
+      "start": 2.36,
+      "end": 2.64
+    },
+    {
+      "word": "a",
+      "start": 2.64,
+      "end": 2.86
+    },
+    {
+      "word": "small",
+      "start": 2.86,
+      "end": 3.18
+    },
+    {
+      "word": "landfill",
+      "start": 3.18,
+      "end": 3.5
+    },
+    {
+      "word": "with",
+      "start": 3.5,
+      "end": 3.74
+    },
+    {
+      "word": "my",
+      "start": 3.74,
+      "end": 3.94
+    },
+    {
+      "word": "headphones.\"",
+      "start": 3.94,
+      "end": 4.82
+    },
+    {
+      "word": "They",
+      "start": 4.82,
+      "end": 5.18
+    },
+    {
+      "word": "replace",
+      "start": 5.18,
+      "end": 5.54
+    },
+    {
+      "word": "things",
+      "start": 5.54,
+      "end": 5.88
+    },
+    {
+      "word": "because",
+      "start": 5.88,
+      "end": 6.24
+    },
+    {
+      "word": "the",
+      "start": 6.24,
+      "end": 6.42
+    },
+    {
+      "word": "system",
+      "start": 6.42,
+      "end": 6.66
+    },
+    {
+      "word": "makes",
+      "start": 6.66,
+      "end": 6.98
+    },
+    {
+      "word": "replacement",
+      "start": 6.98,
+      "end": 7.36
+    },
+    {
+      "word": "feel",
+      "start": 7.36,
+      "end": 7.74
+    },
+    {
+      "word": "easier.",
+      "start": 7.74,
+      "end": 8.48
+    },
+    {
+      "word": "The",
+      "start": 8.48,
+      "end": 8.7
+    },
+    {
+      "word": "repair",
+      "start": 8.7,
+      "end": 8.94
+    },
+    {
+      "word": "quote",
+      "start": 8.94,
+      "end": 9.18
+    },
+    {
+      "word": "is",
+      "start": 9.18,
+      "end": 9.4
+    },
+    {
+      "word": "high,",
+      "start": 9.4,
+      "end": 9.74
+    },
+    {
+      "word": "the",
+      "start": 9.74,
+      "end": 9.92
+    },
+    {
+      "word": "spare",
+      "start": 9.92,
+      "end": 10.14
+    },
+    {
+      "word": "part",
+      "start": 10.14,
+      "end": 10.32
+    },
+    {
+      "word": "is",
+      "start": 10.32,
+      "end": 10.6
+    },
+    {
+      "word": "missing.",
+      "start": 10.6,
+      "end": 10.92
+    },
+    {
+      "word": "The",
+      "start": 10.92,
+      "end": 11.14
+    },
+    {
+      "word": "new",
+      "start": 11.14,
+      "end": 11.28
+    },
+    {
+      "word": "one",
+      "start": 11.28,
+      "end": 11.44
+    },
+    {
+      "word": "arrives",
+      "start": 11.44,
+      "end": 11.74
+    },
+    {
+      "word": "tomorrow,",
+      "start": 11.74,
+      "end": 12.3
+    },
+    {
+      "word": "so",
+      "start": 12.3,
+      "end": 12.48
+    },
+    {
+      "word": "you",
+      "start": 12.48,
+      "end": 12.6
+    },
+    {
+      "word": "buy",
+      "start": 12.6,
+      "end": 12.74
+    },
+    {
+      "word": "the",
+      "start": 12.74,
+      "end": 12.94
+    },
+    {
+      "word": "product",
+      "start": 12.94,
+      "end": 13.16
+    },
+    {
+      "word": "again.",
+      "start": 13.16,
+      "end": 13.72
+    },
+    {
+      "word": "The",
+      "start": 13.72,
+      "end": 13.82
+    },
+    {
+      "word": "price",
+      "start": 13.82,
+      "end": 14.08
+    },
+    {
+      "word": "tag",
+      "start": 14.08,
+      "end": 14.36
+    },
+    {
+      "word": "smiles",
+      "start": 14.36,
+      "end": 14.8
+    },
+    {
+      "word": "again,",
+      "start": 14.8,
+      "end": 15.3
+    },
+    {
+      "word": "the",
+      "start": 15.3,
+      "end": 15.5
+    },
+    {
+      "word": "receipt",
+      "start": 15.5,
+      "end": 15.72
+    },
+    {
+      "word": "prints",
+      "start": 15.72,
+      "end": 16.02
+    },
+    {
+      "word": "again,",
+      "start": 16.02,
+      "end": 16.54
+    },
+    {
+      "word": "and",
+      "start": 16.54,
+      "end": 16.64
+    },
+    {
+      "word": "the",
+      "start": 16.64,
+      "end": 16.82
+    },
+    {
+      "word": "cheap",
+      "start": 16.82,
+      "end": 17.1
+    },
+    {
+      "word": "product",
+      "start": 17.1,
+      "end": 17.46
+    },
+    {
+      "word": "quietly",
+      "start": 17.46,
+      "end": 17.9
+    },
+    {
+      "word": "becomes",
+      "start": 17.9,
+      "end": 18.28
+    },
+    {
+      "word": "a",
+      "start": 18.28,
+      "end": 18.52
+    },
+    {
+      "word": "subscription",
+      "start": 18.52,
+      "end": 18.94
+    },
+    {
+      "word": "with",
+      "start": 18.94,
+      "end": 19.38
+    },
+    {
+      "word": "extra",
+      "start": 19.38,
+      "end": 19.7
+    },
+    {
+      "word": "steps.",
+      "start": 19.7,
+      "end": 22.5
+    },
+    {
+      "word": "[BLANK",
+      "start": 10.2,
+      "end": 10.58
+    },
+    {
+      "word": "_AUDIO]",
+      "start": 10.58,
+      "end": 10.58
+    }
+  ]
+}

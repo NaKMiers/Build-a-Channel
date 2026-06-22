@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Short 03 - A Subscription With Extra Steps (vertical) - Why Cheap Products Keep Getting Worse</title>
+  <style>
+    @font-face {
+      font-family: "PatrickHandLocal";
+      src: url("./assets/fonts/patrick-hand-latin.woff2") format("woff2");
+      font-weight: 400; font-style: normal; font-display: block;
+    }
+    :root {
+      --paper: #f2eadb; --ink: #17120f; --sale: #efc63d;
+      --red: #7d1714; --red-text: #210403; --blue: #d8e7ee; --cream: #fff7d8;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #17120f; overflow: hidden; }
+
+    #Short03Sub {
+      position: relative; width: 1080px; height: 1920px; overflow: hidden;
+      background: #17120f; font-family: "PatrickHandLocal"; color: var(--ink);
+    }
+    /* SAFE ZONE x[60..880] y[220..1490] — keep readable content inside. */
+
+    .scene, .cue { position: absolute; inset: 0; width: 100%; height: 100%; overflow: hidden; }
+    .scene { z-index: 1; }
+    .cue { z-index: 5; pointer-events: none; }
+
+    .photo {
+      position: absolute; inset: 0; width: 100%; height: 100%;
+      object-fit: cover; object-position: center center;
+      user-select: none; pointer-events: none;
+    }
+    .scrim {
+      position: absolute; inset: 0; z-index: 2; pointer-events: none;
+      background:
+        linear-gradient(180deg, rgba(23,18,15,0.58) 0%, rgba(23,18,15,0.0) 20%),
+        linear-gradient(0deg, rgba(23,18,15,0.66) 0%, rgba(23,18,15,0.0) 34%);
+    }
+
+    .label {
+      position: absolute; display: inline-flex; align-items: center; justify-content: center;
+      text-align: center; padding: 16px 30px 22px; background: var(--cream);
+      border: 7px solid var(--ink); border-radius: 8px; box-shadow: 12px 14px 0 rgba(23,18,15,0.24);
+      color: var(--ink); font-size: 66px; line-height: 0.92; transform: rotate(-2.5deg); z-index: 8;
+    }
+    .label.yellow { background: var(--sale); }
+    .label.red { background: #fff7f2; color: var(--red-text); border-color: var(--red); transform: rotate(2deg); }
+
+    .reveal-card {
+      position: absolute; width: 880px; padding: 40px 44px 48px; background: #fff6dc;
+      border: 10px solid var(--ink); border-radius: 10px; box-shadow: 20px 24px 0 rgba(23,18,15,0.26);
+      text-align: center; transform: rotate(-2deg); z-index: 9;
+    }
+    .reveal-card h1 { margin: 0; font-size: 90px; line-height: 0.86; letter-spacing: 0; }
+
+    .wit {
+      position: absolute; object-fit: contain; z-index: 7;
+      filter: drop-shadow(14px 16px 0 rgba(23,18,15,0.22)); transform-origin: center bottom;
+    }
+
+    /* captions: distinct SUBTITLE style, centered vertically */
+    .caption-layer { position: absolute; inset: 0; z-index: 10; pointer-events: none; }
+    .caption {
+      position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); opacity: 0;
+      width: max-content; max-width: 800px; padding: 14px 32px 18px;
+      background: rgba(16, 12, 9, 0.5); border-radius: 22px; color: #ffffff;
+      font-size: 60px; line-height: 1.04; text-align: center;
+      text-shadow: -2px -2px 0 #17120f, 2px -2px 0 #17120f, -2px 2px 0 #17120f, 2px 2px 0 #17120f, 0 0 7px rgba(0,0,0,0.7), 0 6px 16px rgba(0,0,0,0.55);
+      backdrop-filter: blur(2px);
+    }
+
+    .label, .wit, .reveal-card { will-change: opacity, transform; }
+  </style>
+</head>
+<body>
+  <div id="Short03Sub" data-composition-id="Short03Sub" data-start="0" data-duration="21.4" data-width="1080" data-height="1920">
+
+    <!-- ===================== SCENE BASES ===================== -->
+    <div id="scene-1" class="clip scene" data-start="0" data-duration="4.82" data-track-index="1">
+      <img class="photo" style="object-position: center center;" src="./assets/photos/ewaste-pile-photo-base.jpg" alt="">
+      <div class="scrim"></div>
+    </div>
+    <div id="scene-2" class="clip scene" data-start="4.82" data-duration="7.48" data-track-index="3">
+      <img class="photo" style="object-position: center center;" src="./assets/photos/fulfillment-boxes-photo-base.jpg" alt="">
+      <div class="scrim"></div>
+    </div>
+    <div id="scene-3" class="clip scene" data-start="12.3" data-duration="4.24" data-track-index="4">
+      <img class="photo" style="object-position: center center;" src="./assets/photos/checkout-wood-photo-base.jpg" alt="">
+      <div class="scrim"></div>
+    </div>
+    <div id="scene-4" class="clip scene" data-start="16.54" data-duration="4.86" data-track-index="5">
+      <img class="photo" style="object-position: center center; filter: brightness(0.82);" src="./assets/photos/ewaste-pile-photo-base.jpg" alt="">
+      <div class="scrim"></div>
+    </div>
+
+    <!-- ===================== CUE OVERLAYS ===================== -->
+    <!-- Scene 1: landfill hook -->
+    <div id="cue-1" class="clip cue" data-start="0" data-duration="4.81" data-track-index="2">
+      <img class="wit s1-wit" style="right: -160px; bottom: -110px; width: 1020px;" src="./assets/wit/wit-pose-facepalm.png" alt="">
+    </div>
+
+    <!-- Scene 2: the system -->
+    <div id="cue-2" class="clip cue" data-start="4.82" data-duration="7.47" data-track-index="2">
+      <div class="label red s2-repair" style="left: 75px; top: 250px;">REPAIR QUOTE: HIGH</div>
+      <div class="label yellow s2-part" style="left: 330px; top: 420px;">SPARE PART: MISSING</div>
+      <div class="label red s2-new" style="left: 75px; top: 590px;">NEW ONE: TOMORROW</div>
+    </div>
+
+    <!-- Scene 3: receipt loop -->
+    <div id="cue-3" class="clip cue" data-start="12.3" data-duration="4.23" data-track-index="2">
+      <div class="label yellow s3-smile" style="left: 75px; top: 280px;">PRICE TAG:<br>SMILES AGAIN</div>
+      <div class="label red s3-print" style="left: 330px; top: 470px;">RECEIPT:<br>PRINTS AGAIN</div>
+      <img class="wit s3-wit" style="right: -160px; bottom: -110px; width: 1020px;" src="./assets/wit/wit-pose-holding-receipt-evidence.png" alt="">
+    </div>
+
+    <!-- Scene 4: payoff (complete ending, no CTA) -->
+    <div id="cue-4" class="clip cue" data-start="16.54" data-duration="4.86" data-track-index="2">
+      <div class="reveal-card s4-q" style="left: 100px; top: 420px;">
+        <h1>A SUBSCRIPTION<br>WITH EXTRA STEPS</h1>
+      </div>
+      <img class="wit s4-wit" style="right: -160px; bottom: -110px; width: 1020px;" src="./assets/wit/wit-pose-deadpan-side-eye.png" alt="">
+    </div>
+
+    <!-- ===================== CAPTIONS ===================== -->
+    <div class="caption-layer">
+      <div class="caption" data-cap="0">Most people don't<br>wake up and say...</div>
+      <div class="caption" data-cap="1">"...create a small landfill<br>with my headphones."</div>
+      <div class="caption" data-cap="2">We replace things because<br>the system makes it easier.</div>
+      <div class="caption" data-cap="3">So you buy<br>the product again.</div>
+      <div class="caption" data-cap="4">And the cheap product<br>quietly becomes...</div>
+    </div>
+
+    <audio id="vo" data-start="0" data-duration="20.203" data-track-index="10" data-volume="1" crossorigin="anonymous" src="./voiceover/short-03.mp3"></audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true, defaults: { overwrite: "auto" } });
+
+      const show = (sel, hideAt, at) => { tl.set(sel, { opacity: 0 }, hideAt); tl.set(sel, { opacity: 1 }, at); };
+      const pop = (sel, hideAt, at) => {
+        tl.set(sel, { opacity: 0, scale: 0.8, transformOrigin: "center center" }, hideAt);
+        tl.to(sel, { opacity: 1, scale: 1, duration: 0.2, ease: "back.out(1.9)" }, at);
+      };
+
+      [["#scene-2",4.82],["#scene-3",12.3],["#scene-4",16.54]].forEach(([s,at]) => {
+        tl.fromTo(s, { opacity: 0 }, { opacity: 1, duration: 0.25, ease: "sine.out", immediateRender: false }, at);
+      });
+
+      // Scene 1
+      show("#cue-1 .s1-wit", 0, 1.2);
+
+      // Scene 2 (staggered barriers)
+      pop("#cue-2 .s2-repair", 4.82, 8.7);
+      pop("#cue-2 .s2-part", 4.82, 9.92);
+      pop("#cue-2 .s2-new", 4.82, 11.14);
+
+      // Scene 3 (receipt loop)
+      show("#cue-3 .s3-wit", 12.3, 12.8);
+      pop("#cue-3 .s3-smile", 12.3, 13.82);
+      pop("#cue-3 .s3-print", 12.3, 15.5);
+
+      // Scene 4 (payoff)
+      show("#cue-4 .s4-wit", 16.54, 17.3);
+      pop("#cue-4 .s4-q", 16.54, 18.52);
+
+      // Captions (payoff line carried by the card)
+      const caps = [
+        [0, 0.00, 1.76],
+        [1, 1.76, 4.82],
+        [2, 4.82, 8.48],
+        [3, 12.30, 13.72],
+        [4, 16.54, 18.28]
+      ];
+      caps.forEach(([i, s, e]) => {
+        const sel = `.caption[data-cap="${i}"]`;
+        tl.set(sel, { opacity: 0 }, 0);
+        tl.set(sel, { opacity: 1 }, s);
+        tl.set(sel, { opacity: 0 }, e);
+      });
+
+      window.__timelines["Short03Sub"] = tl;
+    </script>
+  </div>
+</body>
+</html>
