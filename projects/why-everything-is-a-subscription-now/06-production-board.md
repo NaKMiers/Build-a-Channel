@@ -2,7 +2,7 @@
 
 Video: `Why Everything Is a Subscription Now`
 
-Status: `section render in progress (Sections 1-6 built + previewing)`
+Status: `ALL 7 sections built + previewing (1001-1007), awaiting review`
 
 Source skill: `render`
 
@@ -18,6 +18,7 @@ Renderer: `HyperFrames 0.6.76`
 | 4 Why Companies Love It | 1004 | `http://localhost:1004/#project/Build%20a%20Channel` | `http://localhost:1004/api/projects/Build%20a%20Channel/preview/comp/index.html` |
 | 5 The Free Trial | 1005 | `http://localhost:1005/#project/Build%20a%20Channel` | `http://localhost:1005/api/projects/Build%20a%20Channel/preview/comp/index.html` |
 | 6 Easy In, No Way Out | 1006 | `http://localhost:1006/#project/Build%20a%20Channel` | `http://localhost:1006/api/projects/Build%20a%20Channel/preview/comp/index.html` |
+| 7 Payoff | 1007 | `http://localhost:1007/#project/Build%20a%20Channel` | `http://localhost:1007/api/projects/Build%20a%20Channel/preview/comp/index.html` |
 
 (Project id resolves to `Build a Channel` on this setup; build URLs from `/api/projects`, not the folder name.)
 
@@ -31,7 +32,7 @@ Renderer: `HyperFrames 0.6.76`
 | 4 | Why Companies Love It: One Sale Becomes Forever | built · previewing · awaiting review | 51.093s | 1004 | 6 | 15 | `section-previews/section-04-why-companies-love-it/index.html` |
 | 5 | The Free Trial Is A Countdown | built · previewing · awaiting review | 53.867s | 1005 | 6 | 13 | `section-previews/section-05-free-trial-countdown/index.html` |
 | 6 | Easy In, No Way Out | built · previewing · awaiting review | 53.013s | 1006 | 5 | 16 | `section-previews/section-06-easy-in-no-way-out/index.html` |
-| 7 | Payoff | not rendered | 54.101s | 1007 | — | — | — |
+| 7 | Payoff: The Product Is You Not Cancelling | built · previewing · awaiting review | 54.101s | 1007 | 5 | 16 | `section-previews/section-07-payoff/index.html` |
 
 ## Section 1 Build Record (REMADE 2026-06-23)
 
@@ -119,14 +120,27 @@ idea-devices → giant WIT that varies per scene`.
 - Checks: `lint` 0 errors (1 non-blocking density note); `validate` 0 errors / 0 warnings / 25 contrast; `inspect` 0 layout issues; `snapshot` QA at 4/8/13/19/23/28/32/38/46/51.5.
 - Review mirror: `hyperframes/review/section-06.html`. No MP4 exported.
 
+## Section 7 Build Record (2026-06-23, Section 1 template) — FINAL SECTION
+
+- Preview project: `section-previews/section-07-payoff/`
+- Composition: `Section07Payoff` (1920x1080, 54.101s), port 1007
+- Audio: `section-07-payoff-david23-am_eric-0.8.mp3`
+- Word timings: GENERATED this run via transformers.js whisper-tiny.en (none existed); pinned to word starts; capped at 54.101
+- 4 distinct vivid bases: `base-cash` (reveal) → `base-phone` (the product is you) → `base-coins` (some worth it) → `base-cash2` $1 close-up (cancel the ghosts) → `base-phone-2` bank-app (your salary — the script's literal final image; phone reused once, non-adjacent). See section ATTRIBUTION.
+- Idea-devices: crossed chips → `YOUR FORGETTING` → barcode `PRODUCT: YOU` tag → green/red worth-vs-design → bank statement (keep green / ghost rows struck) + `CANCEL THE GHOSTS` → bank-app `Salary +$3,200` + `your salary. (for now.)` payoff.
+- WIT (4 giant beats, varied side/pose): thinking R → shocked L → holding-receipt-evidence R → deadpan-side-eye R. S3 breathes. AVOIDED `typing-on-laptop`/`money-panic` (baked black bg).
+- Build fixes: float overlap (cue-c 8.8→8.78); the final payoff centered + WIT pushed right (verified @53.2s).
+- Checks: `lint` 0 errors (1 non-blocking density note); `validate` 0 errors / 0 warnings / 40 contrast; `inspect` 0 layout issues; `snapshot` QA at 5/11.5/17/22/25.5/33.5/38/43/48/53.2.
+- Review mirror: `hyperframes/review/section-07.html`. No MP4 exported.
+
 ## Stale / Regeneration Notes
 
-- Sections 1-6 are rendered. Section 7 is `not rendered`.
+- ALL 7 sections are rendered (previewing on 1001-1007), awaiting review.
 - No `07-review.md` / `08-upload.md` / `09-self-learning.md` exist yet — nothing downstream is stale.
 - If `02-script.md`, the Section 1 voiceover, or the Section 1 visual plan changes, this render becomes stale and must be rebuilt.
 
 ## Next Step Boundary
 
-Next workflow step: `Review` (Sections 1-6) or render Section 7 (final section).
+Next workflow step: `Review` (all 7 sections), then `combine` (assemble into one video on localhost:1000).
 
-Do not continue into review, upload, or learning until the user asks. Section 7 still needs visual-plan + render.
+All 7 sections are built. Do not continue into combine, review, upload, or learning until the user asks.

@@ -2,7 +2,7 @@
 
 Video: `Why Everything Is a Subscription Now`
 
-Status: `section visual plan in progress (Sections 1-6 planned)`
+Status: `ALL 7 sections planned`
 
 Source skill: `visual-plan`
 
@@ -35,7 +35,7 @@ Source files:
 | 4 | Why Companies Love It: One Sale Becomes Forever | planned | 51.093s | 6 | 15 | `visual-plan/section-04-why-companies-love-it/section-04-why-companies-love-it-visual-plan.md` | `visual-plan/section-04-why-companies-love-it/reference-board.md` | S1 template: cash/coffee/coffee/cash/calendar/mousetrap bases; FOLLOW-THE-MONEY→coin geyser→little-vs-A-LOT→RECURRING→BEAUTIFUL TRAP; giant WIT sleeping/empty-wallet/confused/suspicious (4 beats) |
 | 5 | The Free Trial Is A Countdown | planned | 53.867s | 6 | 13 | `visual-plan/section-05-free-trial-countdown/section-05-free-trial-countdown-visual-plan.md` | `visual-plan/section-05-free-trial-countdown/reference-board.md` | S1 template: phone/desk/hourglass/phone/wallet/piggy bases; FREE splash→card→countdown flip→forget→ghost charges→statement w/ ringed mystery charge+EXPIRED; giant WIT deadpan/panic/thinking/receipt (4 beats) |
 | 6 | Easy In, No Way Out | planned | 53.013s | 5 | 16 | `visual-plan/section-06-easy-in-no-way-out/section-06-easy-in-no-way-out-visual-plan.md` | `visual-plan/section-06-easy-in-no-way-out/reference-board.md` | S1 template: stopwatch/maze/contract bases (maze+stopwatch return as deliberate dark callbacks); SIGN-UP-vs-CANCEL→7-step menu maze→NEGATIVE OPTION stamp→−1000 AURA HUD→part-time-job payoff; giant WIT running/suspicious/confused/tiny-defeated (4 beats) |
-| 7 | Payoff: The Product Is You Not Cancelling | not planned | 54.101s | — | — | — | — | — |
+| 7 | Payoff: The Product Is You Not Cancelling | planned | 54.101s | 5 | 16 | `visual-plan/section-07-payoff/section-07-payoff-visual-plan.md` | `visual-plan/section-07-payoff/reference-board.md` | S1 template: cash/phone/coins/cash/phone bank-app bases; YOUR FORGETTING→PRODUCT:YOU barcode→worth-vs-design→bank statement CANCEL THE GHOSTS→salary bank-app "for now"; giant WIT thinking/shocked/receipt/deadpan (4 beats) |
 
 ## Cross-Section Continuity
 
@@ -47,8 +47,8 @@ Source files:
 
 ## Stale / Regeneration Notes
 
-- Sections 1-6 are planned. Section 7 is `not planned`.
-- Sections 1-6 are rendered (previewing on 1001-1006), awaiting review.
+- All 7 sections are planned and rendered (previewing on 1001-1007), awaiting review.
+- Next step after review: `combine` (assemble into one video on localhost:1000).
 
 ## Next Step Boundary
 

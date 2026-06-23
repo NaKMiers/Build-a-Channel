@@ -1218,6 +1218,31 @@ Reusable lessons:
 Promote to shared memory:
 no; render execution mechanics (maze-as-process-hero, menu-breadcrumb device, callback-when-sourcing-fails).
 
+### 2026-06-23 - S7 payoff built; ALL 7 sections done; closer recaps the motif + resolves on the script's final image
+
+Classification: `Render lesson`
+
+Context:
+`why-everything-is-a-subscription-now` Section 7 ("Payoff: The Product Is You Not Cancelling", 54s) — the
+closer. Built with 4 distinct bases (2 different money shots, a phone, a coin jar) + the phone reused ONCE
+non-adjacently for the script's literal final image (the bank-app salary screen). This completes all 7
+sections of the video (previewing on 1001–1007).
+
+Reusable lessons:
+- A payoff/closer can legitimately RECAP the video's core motif imagery (here money + the phone/device) —
+  that's a feature of a closer, not lazy reuse — but still use DISTINCT shots per scene (two different money
+  photos, not the same one) and only reuse the device non-adjacently for a motivated beat. Resolve on the
+  script's literal final image: the bank-app salary card ("the one screen not asking for money") + the dry
+  "your salary. for now." was the satisfying, on-script close.
+- New CSS idea-devices that worked: a barcode `.ptag` ("THE PRODUCT: YOU") via `repeating-linear-gradient`;
+  a bank statement where the "keep" row is green and the "ghost" rows are struck (`text-decoration:line-through`,
+  red) for "keep what you love / cancel the ghosts"; a green "money coming IN" bank-app card for the salary.
+- Emotional arc for a closer: realize → reframe (it's OK, just notice) → take control (cancel the ghosts) →
+  wry win (the salary, for now). Map one giant WIT pose per beat: thinking → shocked → holding-receipt → deadpan.
+
+Promote to shared memory:
+no; render execution mechanics for closers (motif-recap, script-literal-final-image, barcode/statement devices).
+
 ## Feedback Entry Template
 
 ```markdown
