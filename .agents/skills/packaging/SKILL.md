@@ -166,7 +166,16 @@ Generated thumbnail images should be treated as controlled outputs informed by r
 
 If image generation is unavailable, still create the `5` production-ready prompts and mark each image status as `prompt only / image not generated`. Do not pretend images were created.
 
-The prompts should be reusable in another AI image platform if the user dislikes the generated thumbnails.
+Always write the prompts into a ready-to-paste `projects/<slug>/assets/thumbnails/PROMPTS.md` (in addition to recording them in `03-packaging.md`), optimized for the user generating images in ChatGPT / DALL·E:
+
+- each variant is a SELF-CONTAINED block the user can paste alone (no cross-references needed to generate)
+- ChatGPT/DALL·E has no separate negative-prompt field, so fold the avoid-list INTO the prompt as `Do NOT include: ...`
+- assume the user attaches the WIT neutral pose (`.agents/_shared/assets/wit/poses/wit-pose-neutral-front.png`) as the reference image; open each prompt with "use the cartoon character in the attached reference image as WIT — keep his art style, only change his pose/expression"
+- for the two comparison variants, tell the user to ALSO attach the approved comparison thumbnail (`projects/why-cheap-products-keep-getting-worse/assets/thumbnails/variant-c-generated.png`) as a layout reference
+- include a short how-to (attach images, ask for 16:9 1280x720, re-roll line if WIT drifts) and the A/B generate-first order
+- name each output file (`variant-a-generated.png` … `variant-e-generated.png`) and the reject rule (no hair / shirt-tie / shoes = off-model WIT)
+
+The prompts should also be reusable in another AI image platform if the user dislikes the generated thumbnails.
 
 Every thumbnail prompt must include the channel WIT identity block from `WIT Prompt Requirements`.
 If image generation produces an off-model WIT, mark that thumbnail as failed or concept-only and write a corrected prompt.
@@ -237,13 +246,17 @@ Do not use removed `original-wit-24` details such as messy black hair, white shi
 
 Generated thumbnails should be scored down or rejected if WIT does not match the approved thumbnail-WIT style for the current video.
 
-The `5` generated thumbnail variants should explore different styles while staying inside the channel identity:
+The `5` generated thumbnail variants use a FIXED structure — two comparison thumbnails plus three full-drama single scenes — while staying inside the channel identity:
 
-1. `Real Object Close-Up`: one physical object behaving suspiciously.
-2. `WIT Reaction`: WIT emotion is the main read, reacting to the object.
-3. `Before / After Lie`: the promise and reality appear in one simple contrast.
-4. `Trap Interface`: a screen, price tag, receipt, or product UI becomes a trap.
-5. `Minimal Bold Label`: simplest mobile-first version with one object, one label, one emotion.
+1. `Comparison A` (split-screen): the core before/after of the video's thesis (e.g. `OWN` vs `RENT`, `REAL` vs `FAKE`, `THEN` vs `NOW`). Same object two ways.
+2. `Comparison B` (split-screen): a second contrast on a different beat (e.g. time-based `DAY 1` vs `DAY 8`, promise vs reality, cheap vs true cost).
+3. `Trap / Dramatic Scene`: a single dramatic scene where the system traps or overwhelms WIT (maze, bars, flood, snapping trap).
+4. `Shock Face-Zoom`: WIT's face big in frame with a maximum reaction, next to ONE shocking element (a giant number, a draining card, an impossible total).
+5. `Dramatic Metaphor`: the payoff/insight as one bold dramatic image (puppet on strings, chained, the one clean thing out of reach).
+
+Comparison style (variants 1-2): a vertical divider down the middle; cool-blue "good/before" half vs warm-orange "bad/after" half; a small black angled tag in each top corner naming each side; one big red-and-white handwritten center hook with a rough red underline; a small shocked WIT standing on the divider with little shock strokes. This mirrors the approved `why-cheap-products-keep-getting-worse` `TODAY vs LATER` comparison thumbnail.
+
+Drama bar (ALL variants): push for high CTR — extreme exaggerated WIT expression (eyes blown wide, jaw dropped, sweat), a tight crop so WIT/emotion reads at mobile size, ONE shocking element, and danger cues (red glow, motion lines). Keep the underlying CLAIM honest (illustrative numbers, no fake promises) so it is dramatic, not deceptive bait.
 
 Do not make the five variants random. They should test different click hypotheses for the same video promise.
 
@@ -501,6 +514,8 @@ A packaging pass is ready when:
 - title and thumbnail do different jobs
 - exactly `5` thumbnail variants are generated or recorded as prompt-only if generation is unavailable
 - each thumbnail has a reusable prompt
+- the five variants follow the fixed structure: variants 1-2 are split-screen comparisons, variants 3-5 are full-drama single scenes
+- a ready-to-paste `assets/thumbnails/PROMPTS.md` is written (self-contained ChatGPT prompts, negatives folded in, reference-image WIT)
 - thumbnail variants are meaningfully different for A/B testing
 - thumbnails are compared and scored in a table
 - every thumbnail prompt uses the current approved or pending WIT direction

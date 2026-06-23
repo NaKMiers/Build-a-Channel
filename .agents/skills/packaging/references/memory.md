@@ -169,6 +169,46 @@ Apply next time:
 Promote to shared memory:
 no; shared visual-production rules already contain the channel-wide standard.
 
+### 2026-06-23 - Fixed 5-variant structure: A+B comparison, C-D-E drama; always write PROMPTS.md
+
+Classification: `Packaging lesson`
+
+Context:
+On `why-everything-is-a-subscription-now` the first calm prompts produced tidy, "normal, not interesting" thumbnails. The owner wanted shock / clickbait / curiosity, liked the `why-cheap-products` `TODAY vs LATER` split-screen comparison (`variant-c-generated.png`), and asked to bake this into the skill: variants A and B should be comparison prompts, C/D/E stay full-drama single scenes.
+
+Lesson:
+The 5 thumbnail variants now use a FIXED structure, not the old five free-form styles:
+1-2 = split-screen COMPARISONS (vertical divider; cool-blue good/before half vs warm-orange bad/after half; black angled corner tags; one big red+white handwritten center hook with red underline; small shocked WIT on the divider — mirrors the approved cheap-products comparison).
+3 = trap/dramatic scene; 4 = shock face-zoom with one giant shocking element (big red number); 5 = dramatic metaphor (puppet/chained/clean-thing-out-of-reach).
+Push the DRAMA bar on all five (extreme WIT expression, tight crop, one shocking element, red/motion danger cues) but keep the CLAIM honest (illustrative numbers, no fake promises) so it reads dramatic, not deceptive.
+
+Apply next time:
+- generate variants by this fixed structure (A/B comparison, C/D/E drama), not random styles
+- comparison subjects come from the thesis: OWN vs RENT, REAL vs FAKE, THEN vs NOW, DAY 1 vs DAY 8, promise vs reality
+- always write a ready-to-paste `assets/thumbnails/PROMPTS.md` (self-contained ChatGPT prompts, negatives folded inline, reference-image WIT; for A/B also attach the cheap-products comparison as the layout reference)
+- crank emotion + curiosity hard; never cross into fake claims or hateful rage bait (channel guardrail)
+
+Promote to shared memory:
+No; packaging-skill execution practice (the WIT/brand direction itself is unchanged).
+
+### 2026-06-23 - When the user attaches a WIT reference image, prompts should point AT the image
+
+Classification: `Packaging lesson`
+
+Context:
+On `why-everything-is-a-subscription-now`, the user generates thumbnails in ChatGPT (Claude can't make images) and said they will attach the WIT neutral pose (`.agents/_shared/assets/wit/poses/wit-pose-neutral-front.png`) as the reference image. They asked the prompts to reference the attached WIT rather than describe him from scratch.
+
+Lesson:
+For ChatGPT/DALL·E thumbnail prompts: (1) there is no separate negative-prompt field, so fold the avoid-list into the prompt as "Do NOT include: ..."; (2) make each prompt self-contained (one paste = one thumbnail); (3) when the user attaches a WIT reference image, open every prompt with "Use the cartoon character in the attached reference image as WIT — keep his exact art style and proportions; only change his pose and expression," and keep a short style reminder as a drift fallback. Write these copy-paste prompts into `assets/thumbnails/PROMPTS.md` (self-contained), with `03-packaging.md` remaining the scored source of record. Name the exact reference file to attach in the how-to.
+
+Apply next time:
+- if no image tool, write `PROMPTS.md` as ready-to-paste ChatGPT prompts, not just a pointer to `03-packaging.md`
+- fold negatives inline; one self-contained block per variant; vary only pose + emotion per variant
+- when a WIT reference image is attached, reference the attached image as the character and name the exact pose file
+
+Promote to shared memory:
+No; packaging-skill execution practice.
+
 ## Feedback Entry Template
 
 ```markdown

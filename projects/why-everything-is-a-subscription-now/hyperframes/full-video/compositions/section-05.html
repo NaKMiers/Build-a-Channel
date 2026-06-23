@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Section 05 The Free Trial Is A Countdown - Why Everything Is a Subscription Now</title>
+  <style>
+    @font-face { font-family: "PatrickHandLocal"; src: url("./assets/fonts/patrick-hand-latin.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
+    :root { --ink:#14110d; --red:#e0392b; --red-deep:#7d1714; --cream:#fff7d8; --green:#188038; --blue:#2aa3ff; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #07070a; color:#fff; overflow: hidden; }
+    #Section05Trial { position: relative; width: 1920px; height: 1080px; overflow: hidden; background: #07070a; font-family: "PatrickHandLocal"; }
+    .scene, .cue { position: absolute; inset: 0; width: 100%; height: 100%; overflow: hidden; }
+    .scene { z-index: 1; will-change: opacity, transform, filter; }
+    .cue { z-index: 5; pointer-events: none; }
+    .photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+    .photo.gift { filter:saturate(1.1) contrast(1.05) brightness(0.74); }
+    .photo.busy { filter:saturate(1.05) contrast(1.05) brightness(0.66); }
+    .photo.desk  { filter:saturate(1.05) contrast(1.05) brightness(0.6); }
+    .photo.hour  { filter:saturate(1.12) contrast(1.08) brightness(0.7); }
+    .photo.wallet{ filter:saturate(1.08) contrast(1.05) brightness(0.62); }
+    .photo.piggy { filter:saturate(1.06) contrast(1.05) brightness(0.66); }
+    .scrim { position:absolute; inset:0; z-index:1; background:radial-gradient(ellipse 84% 84% at 50% 46%, rgba(4,5,10,0.16), rgba(4,5,10,0.74) 99%); }
+    .ui { font-family:"Segoe UI",system-ui,sans-serif; }
+
+    .aside { position:absolute; z-index:8; background:var(--cream); border:6px solid var(--ink); border-radius:7px; padding:10px 22px 14px; color:var(--ink); font-size:42px; line-height:1.05; transform:rotate(-2deg); box-shadow:10px 12px 0 rgba(20,17,13,0.24); }
+    .headline { position:absolute; z-index:7; font-family:"Segoe UI",system-ui,sans-serif; font-weight:900; font-size:74px; line-height:0.96; color:#fff; text-shadow:0 0 40px rgba(0,0,0,0.85), 6px 7px 0 rgba(0,0,0,0.5); letter-spacing:-1px; }
+    .headline .hl { color:#ffd23f; }
+    .label { position:absolute; z-index:8; background:#fff; color:#16181d; border-radius:12px; padding:11px 22px 15px; font-family:"Segoe UI",system-ui,sans-serif; font-weight:800; font-size:44px; box-shadow:0 12px 26px rgba(0,0,0,0.5); }
+    .label.red { background:#fff5f1; color:var(--red-deep); border:5px solid var(--red-deep); }
+    .label.green { background:#eafbe7; color:var(--green); border:5px solid var(--green); }
+
+    /* phone-screen card (floats over the real phone) */
+    .pscreen { position:absolute; z-index:7; background:#0b0b0d; border:3px solid #2a2c33; border-radius:30px; width:430px; padding:30px 26px; font-family:"Segoe UI",system-ui,sans-serif; box-shadow:0 22px 50px rgba(0,0,0,0.65); text-align:center; }
+    .pscreen .free { color:var(--green); font-size:120px; font-weight:900; line-height:0.9; }
+    .pscreen .sub { color:#cfd3dc; font-size:34px; font-weight:700; margin-top:8px; }
+    .pscreen .btn { margin-top:18px; background:var(--green); color:#fff; font-size:34px; font-weight:800; border-radius:14px; padding:14px 0; }
+    .pscreen .btn.blue { background:var(--blue); }
+
+    /* notification (Day 7 reminder) */
+    .notif { position:absolute; z-index:8; background:#f4f5f7; color:#16181d; border-radius:18px; padding:16px 20px; width:560px; display:flex; align-items:center; gap:16px; font-family:"Segoe UI",system-ui,sans-serif; box-shadow:0 16px 34px rgba(0,0,0,0.5); }
+    .notif .ic { width:56px; height:56px; border-radius:14px; background:var(--blue); flex:0 0 auto; }
+    .notif .tx { font-size:30px; font-weight:800; } .notif .tx small { display:block; font-weight:600; font-size:24px; color:#6b7280; }
+    .notif.gone { filter:grayscale(1); opacity:0.5; }
+
+    /* credit card */
+    .ccard { position:absolute; z-index:8; width:440px; height:270px; border-radius:22px; background:linear-gradient(135deg,#3a3f6b,#7b61ff); box-shadow:0 20px 44px rgba(0,0,0,0.6); padding:26px; font-family:"Segoe UI",system-ui,sans-serif; color:#fff; }
+    .ccard .chip { width:64px; height:48px; border-radius:9px; background:linear-gradient(135deg,#ffd23f,#e0a400); }
+    .ccard .no { position:absolute; bottom:84px; left:26px; font-size:40px; letter-spacing:4px; font-weight:700; }
+    .ccard .nm { position:absolute; bottom:30px; left:26px; font-size:30px; font-weight:600; opacity:0.9; }
+
+    /* free->price flip */
+    .flip { position:absolute; z-index:8; border-radius:18px; padding:18px 30px 22px; text-align:center; font-family:"Segoe UI",system-ui,sans-serif; box-shadow:0 18px 38px rgba(0,0,0,0.55); }
+    .flip.free { background:#0c2a16; border:4px solid var(--green); }
+    .flip.free .t { color:#7CFCA8; font-size:40px; font-weight:900; } .flip.free .s { color:#fff; font-size:64px; font-weight:900; }
+    .flip.pay { background:#2a0c0c; border:4px solid var(--red); }
+    .flip.pay .t { color:#ff8a80; font-size:40px; font-weight:900; } .flip.pay .s { color:#fff; font-size:64px; font-weight:900; }
+
+    /* ghost recurring charge */
+    .ghost { position:absolute; z-index:8; background:rgba(255,255,255,0.13); border:2px solid rgba(255,255,255,0.4); border-radius:14px; padding:14px 22px; color:#fff; font-family:"Segoe UI",system-ui,sans-serif; font-weight:800; font-size:40px; display:flex; gap:24px; align-items:center; backdrop-filter:blur(2px); }
+    .ghost .amt { color:#ff8a80; font-weight:900; }
+
+    /* bank statement */
+    .stmt { position:absolute; z-index:8; background:#fffdf7; color:#16181d; border-radius:14px; padding:18px 22px 20px; width:760px; font-family:"Segoe UI",system-ui,sans-serif; box-shadow:0 18px 40px rgba(0,0,0,0.55); }
+    .stmt .sh { font-weight:900; font-size:32px; color:#6b7280; letter-spacing:1px; text-transform:uppercase; margin-bottom:8px; }
+    .stmt .row { display:flex; align-items:center; gap:16px; padding:11px 2px; border-top:1px solid #e6e3d8; font-size:34px; }
+    .stmt .row .nm { flex:1; font-weight:700; } .stmt .row .amt { font-weight:900; }
+    .stmt .row.known .nm { color:#16181d; } .stmt .row.known .amt { color:#16181d; }
+    .stmt .row.myst .nm { color:var(--red-deep); } .stmt .row.myst .amt { color:var(--red); }
+    .stmtring { position:absolute; z-index:10; border:8px solid var(--red); border-radius:40px/50%; box-shadow:0 0 16px rgba(224,57,43,0.6); }
+
+    .sysbanner { position:absolute; z-index:12; left:60px; top:34px; width:1800px; background:#0c0c12; border:5px solid var(--red); border-radius:18px; padding:18px 36px; display:flex; align-items:center; gap:26px; box-shadow:0 20px 50px rgba(0,0,0,0.7), 0 0 50px rgba(224,57,43,0.45); }
+    .sysbanner .warn { width:60px; height:60px; border-radius:50%; background:var(--red); color:#fff; font-weight:900; font-size:40px; line-height:60px; text-align:center; flex:0 0 auto; font-family:"Segoe UI",system-ui,sans-serif; }
+    .sysbanner .t { color:#fff; font-family:"Segoe UI",system-ui,sans-serif; font-size:42px; } .sysbanner .t b { color:#ffd23f; font-weight:900; }
+
+    .wit { position:absolute; object-fit:contain; z-index:9; filter:drop-shadow(15px 18px 0 rgba(0,0,0,0.32)); transform-origin:center center; }
+    .aside,.headline,.label,.pscreen,.notif,.ccard,.flip,.ghost,.stmt,.stmtring,.sysbanner,.wit { will-change: opacity, transform; }
+  </style>
+</head>
+<body>
+  <div id="Section05Trial" data-composition-id="Section05Trial" data-start="0" data-duration="53.867" data-width="1920" data-height="1080">
+
+    <!-- SCENE A feel free (phone) 0-6.0 -->
+    <div id="scene-a" class="clip scene" data-start="0" data-duration="6.15" data-track-index="1">
+      <img class="photo gift" src="./assets/visual-references/section-05-free-trial-countdown/base-gift.jpg" alt=""><div class="scrim"></div>
+    </div>
+    <!-- SCENE B pop card + strangers (desk) 6.0-11.9 -->
+    <div id="scene-b" class="clip scene" data-start="6.0" data-duration="6.05" data-track-index="3">
+      <img class="photo desk" src="./assets/visual-references/section-05-free-trial-countdown/base-desk.jpg" alt=""><div class="scrim"></div>
+    </div>
+    <!-- SCENE C countdown -> payment (hourglass) 11.9-21.0 -->
+    <div id="scene-c" class="clip scene" data-start="11.9" data-duration="9.25" data-track-index="4">
+      <img class="photo hour" src="./assets/visual-references/section-05-free-trial-countdown/base-hourglass.jpg" alt=""><div class="scrim"></div>
+    </div>
+    <!-- SCENE D forget (phone) 21.0-30.7 -->
+    <div id="scene-d" class="clip scene" data-start="21.0" data-duration="9.85" data-track-index="5">
+      <img class="photo busy" src="./assets/visual-references/section-05-free-trial-countdown/base-busydesk.jpg" alt=""><div class="scrim"></div>
+    </div>
+    <!-- SCENE E ghost charge (wallet) 30.7-39.5 -->
+    <div id="scene-e" class="clip scene" data-start="30.7" data-duration="8.95" data-track-index="6">
+      <img class="photo wallet" src="./assets/visual-references/section-05-free-trial-countdown/base-wallet.jpg" alt=""><div class="scrim"></div>
+    </div>
+    <!-- SCENE F statement / mystery charge (piggy) 39.5-53.867 -->
+    <div id="scene-f" class="clip scene" data-start="39.5" data-duration="14.36" data-track-index="7">
+      <img class="photo piggy" src="./assets/visual-references/section-05-free-trial-countdown/base-piggy.jpg" alt=""><div class="scrim"></div>
+    </div>
+
+    <!-- CUE A feel free -->
+    <div id="cue-a" class="clip cue" data-start="0" data-duration="6.0" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="headline ca-head" style="left:60px; top:70px; width:760px;">THE GENIUS PART:<br>make it feel <span class="hl">FREE</span></div>
+      <div class="pscreen ca-scr ui" style="left:1180px; top:250px; opacity:0;">
+        <div class="free">FREE</div>
+        <div class="sub">7-day free trial · $0.00 today</div>
+        <div class="btn">Start free trial</div>
+      </div>
+    </div>
+
+    <!-- CUE B pop card + strangers -->
+    <div id="cue-b" class="clip cue" data-start="6.0" data-duration="5.9" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="headline cb-head" style="left:60px; top:64px; width:720px;">just <span class="hl">pop in your card</span></div>
+      <div class="ccard cb-card ui" style="left:120px; top:300px; opacity:0;">
+        <div class="chip"></div>
+        <div class="no">5512 •••• •••• 4242</div>
+        <div class="nm">YOUR NAME</div>
+      </div>
+      <div class="aside cb-strange" style="left:120px; bottom:130px; width:640px; opacity:0;">strangers love holding your card.</div>
+      <img class="wit cb-wit" data-layout-allow-overflow="" style="right:-170px; bottom:-330px; width:1240px; opacity:0;" src="./assets/wit/wit-pose-deadpan-side-eye.png" alt="">
+    </div>
+
+    <!-- CUE C countdown -> payment -->
+    <div id="cue-c" class="clip cue" data-start="11.9" data-duration="9.1" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="headline cc-head" style="right:70px; top:60px; width:680px; text-align:right;">free for <span class="hl">7 days</span>…</div>
+      <div class="flip free cc-free ui" style="right:90px; top:300px; opacity:0;"><div class="t">FREE TRIAL</div><div class="s">00:00</div></div>
+      <div class="flip pay cc-pay ui" style="right:90px; top:300px; opacity:0;"><div class="t">NOW CHARGING</div><div class="s">$2.99 /mo</div></div>
+      <div class="label red cc-becomes" style="right:90px; bottom:150px; width:560px; opacity:0;">"free" quietly becomes a payment</div>
+      <img class="wit cc-wit" data-layout-allow-overflow="" style="left:-220px; bottom:-330px; width:1220px; opacity:0;" src="./assets/wit/wit-pose-hidden-fee-panic.png" alt="">
+    </div>
+
+    <!-- CUE D forget -->
+    <div id="cue-d" class="clip cue" data-start="21.0" data-duration="9.7" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="notif cd-notif ui" style="left:90px; top:250px; opacity:0;"><div class="ic"></div><div class="tx">Day 7 — cancel your trial?<small>tap to manage subscription</small></div></div>
+      <div class="headline cd-design" style="left:90px; top:430px; width:760px; opacity:0;">forgetting is the <span class="hl">DESIGN</span></div>
+      <div class="label cd-flld" style="left:90px; bottom:140px; opacity:0;">small · fuzzy · life is loud</div>
+      <img class="wit cd-wit" data-layout-allow-overflow="" style="right:-180px; bottom:-330px; width:1200px; opacity:0;" src="./assets/wit/wit-pose-thinking.png" alt="">
+    </div>
+
+    <!-- CUE E ghost charge -->
+    <div id="cue-e" class="clip cue" data-start="30.7" data-duration="8.8" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="headline ce-head" style="left:60px; top:64px; width:700px;">it just continues. <span class="hl">forever.</span></div>
+      <div class="ghost ce-g1 ui" style="left:1120px; top:300px; opacity:0;"><span class="amt">−$2.99</span> /mo</div>
+      <div class="ghost ce-g2 ui" style="left:1180px; top:400px; opacity:0;">−$2.99 /mo</div>
+      <div class="ghost ce-g3 ui" style="left:1240px; top:500px; opacity:0;">−$2.99 /mo</div>
+      <div class="aside ce-rent" style="left:60px; bottom:150px; width:600px; opacity:0;">"rent free." …no. that's the problem.</div>
+    </div>
+
+    <!-- CUE F statement / mystery charge -->
+    <div id="cue-f" class="clip cue" data-start="39.5" data-duration="14.36" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="headline cf-head" style="right:60px; top:60px; width:680px; text-align:right; opacity:0;">open your <span class="hl">statement</span></div>
+      <div class="stmt cf-stmt ui" style="right:70px; top:230px; opacity:0;">
+        <div class="sh">bank statement · this month</div>
+        <div class="row known"><span class="nm">Groceries</span><span class="amt">−$54.20</span></div>
+        <div class="row known"><span class="nm">Electric bill</span><span class="amt">−$61.00</span></div>
+        <div class="row myst cf-myst"><span class="nm">?? UNKNOWN — opened once</span><span class="amt">−$3.00</span></div>
+        <div class="row known"><span class="nm">Coffee</span><span class="amt">−$4.50</span></div>
+      </div>
+      <div class="stmtring cf-ring" style="right:28px; top:422px; width:844px; height:66px; opacity:0;"></div>
+      <div class="label red cf-every" style="right:70px; top:590px; width:600px; opacity:0;">$3. every month.<br>a thing you can't name.</div>
+      <div class="sysbanner cf-exp ui" style="opacity:0;"><div class="warn">!</div><div class="t">your free trial of <b>FINANCIAL AWARENESS</b> has expired</div></div>
+      <img class="wit cf-wit" data-layout-allow-overflow="" style="left:-200px; bottom:-330px; width:1200px; opacity:0;" src="./assets/wit/wit-pose-holding-receipt-evidence.png" alt="">
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true, defaults: { overwrite: "auto" } });
+      const reveal = (t, hideAt, at, fv, tv = {}) => { const r = {}; if ("x" in fv) r.x = 0; if ("y" in fv) r.y = 0; if ("scale" in fv) r.scale = 1; if ("opacity" in fv) r.opacity = 1; tl.set(t, fv, hideAt); tl.to(t, { ...r, ...tv }, at); };
+      const show = (t, hideAt, at) => { tl.set(t, { opacity: 0 }, hideAt); tl.set(t, { opacity: 1 }, at); };
+      const hide = (t, at) => { tl.set(t, { opacity: 0 }, at); };
+      const smash = (t, hideAt, at, fv = { y: 20, scale: 1.3, opacity: 0 }) => reveal(t, hideAt, at, fv, { duration: 0.18, ease: "back.out(1.9)" });
+      const pop = (t, hideAt, at) => reveal(t, hideAt, at, { scale: 0.4, opacity: 0 }, { duration: 0.2, ease: "back.out(2)" });
+
+      // scene cross-fades
+      tl.fromTo("#scene-b", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 6.0);
+      tl.fromTo("#scene-c", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 11.9);
+      tl.fromTo("#scene-d", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 21.0);
+      tl.fromTo("#scene-e", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 30.7);
+      tl.fromTo("#scene-f", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 39.5);
+
+      // SCENE A feel free
+      show("#cue-a .ca-head", 0, 0.40);
+      smash("#cue-a .ca-scr", 0, 2.90, { scale: 0.6, opacity: 0 });   // "make it feel free"
+
+      // SCENE B pop card + strangers
+      show("#cue-b .cb-head", 6.0, 6.30);                              // "pop in your card"
+      smash("#cue-b .cb-card", 6.0, 6.30, { y: -40, scale: 0.8, opacity: 0 });
+      show("#cue-b .cb-wit", 6.0, 10.50);                              // "strangers love holding your card"
+      show("#cue-b .cb-strange", 6.0, 10.50);
+
+      // SCENE C countdown -> payment
+      show("#cue-c .cc-head", 11.9, 11.9);                             // "free for seven days"
+      show("#cue-c .cc-free", 11.9, 16.40);                            // "a tiny countdown you can't see hits zero"
+      hide("#cue-c .cc-free", 19.10);
+      smash("#cue-c .cc-pay", 11.9, 19.10, { scale: 1.4, opacity: 0 });// "free quietly becomes a payment"
+      show("#cue-c .cc-becomes", 11.9, 19.80);
+      show("#cue-c .cc-wit", 11.9, 18.70);
+
+      // SCENE D forget
+      show("#cue-d .cd-notif", 21.0, 21.5);                            // "most people don't cancel on day seven"
+      tl.to("#cue-d .cd-notif", { opacity: 0.32, duration: 0.3 }, 23.5);            // "they forget" — reminder fades, ignored
+      smash("#cue-d .cd-design", 21.0, 26.0, { scale: 1.2, opacity: 0 });          // "forgetting is the design"
+      show("#cue-d .cd-flld", 21.0, 27.6);                             // "small / fuzzy / loud"
+      show("#cue-d .cd-wit", 21.0, 23.2);
+
+      // SCENE E ghost charge
+      show("#cue-e .ce-head", 30.7, 30.8);                             // "it just continues forever"
+      pop("#cue-e .ce-g1", 30.7, 34.0);                                // "a ghost living in your bank account"
+      pop("#cue-e .ce-g2", 30.7, 34.6);
+      pop("#cue-e .ce-g3", 30.7, 35.2);
+      show("#cue-e .ce-rent", 30.7, 37.0);                             // "rent free. well, not rent free."
+
+      // SCENE F statement / mystery charge
+      show("#cue-f .cf-head", 39.5, 39.7);                             // "open your bank statement"
+      show("#cue-f .cf-stmt", 39.5, 40.2);
+      smash("#cue-f .cf-ring", 39.5, 43.3, { scale: 1.4, opacity: 0 });// "a mystery charge" — ring the exact row
+      show("#cue-f .cf-wit", 39.5, 43.3);
+      smash("#cue-f .cf-every", 39.5, 44.5, { scale: 1.2, opacity: 0 });// "three dollars every month"
+      // EXPIRED banner takes over; hide the headline so it doesn't sit under the banner
+      hide("#cue-f .cf-head", 50.2);
+      smash("#cue-f .cf-exp", 39.5, 50.2, { scale: 0.7, opacity: 0 }); // "free trial of financial awareness has expired"
+
+      window.__timelines["Section05Trial"] = tl;
+    </script>
+  </div>
+</body>
+</html>

@@ -1,0 +1,528 @@
+1
+00:00:00,000 --> 00:00:01,160
+Quick question.
+
+2
+00:00:01,160 --> 00:00:03,980
+How many subscriptions are you paying for right now?
+
+3
+00:00:03,980 --> 00:00:06,180
+Whatever number you guessed... it's higher.
+
+4
+00:00:06,180 --> 00:00:07,220
+It's always higher.
+
+5
+00:00:07,220 --> 00:00:10,040
+Right now, money is quietly leaving your account every month —
+
+6
+00:00:10,040 --> 00:00:11,740
+for stuff you forgot you own.
+
+7
+00:00:11,740 --> 00:00:14,440
+An app. A "free" trial that stopped being free.
+
+8
+00:00:14,440 --> 00:00:15,920
+A show you watched once.
+
+9
+00:00:15,920 --> 00:00:18,620
+Your free trial of owning things just expired.
+
+10
+00:00:18,620 --> 00:00:20,240
+You don't buy things anymore.
+
+11
+00:00:20,240 --> 00:00:23,620
+You rent your whole life. One payment at a time.
+
+12
+00:00:23,620 --> 00:00:26,660
+Now — this is not a video about how subscriptions are evil
+
+13
+00:00:26,660 --> 00:00:28,920
+and you should throw your phone in a lake.
+
+14
+00:00:28,920 --> 00:00:31,340
+Some are genuinely useful. Calm down.
+
+15
+00:00:31,340 --> 00:00:33,060
+This is about something weirder.
+
+16
+00:00:33,060 --> 00:00:34,340
+We used to own things.
+
+17
+00:00:34,340 --> 00:00:36,440
+You paid once, the thing was yours, the end.
+
+18
+00:00:36,440 --> 00:00:38,380
+A beautiful, boring transaction.
+
+19
+00:00:38,380 --> 00:00:39,800
+A subscription is different.
+
+20
+00:00:39,800 --> 00:00:42,200
+You don't buy the thing. You rent access to it.
+
+21
+00:00:42,200 --> 00:00:44,140
+Pay every month, the screen turns on.
+
+22
+00:00:44,140 --> 00:00:46,920
+Miss a payment, and your own device does this —
+
+23
+00:00:46,920 --> 00:00:48,060
+a little padlock appears,
+
+24
+00:00:48,060 --> 00:00:51,340
+and it looks at you like a disappointed parent.
+
+25
+00:00:51,340 --> 00:00:53,220
+So here's the real question.
+
+26
+00:00:53,220 --> 00:00:56,420
+How did almost everything — your apps, your shows, your software,
+
+27
+00:00:56,420 --> 00:00:58,280
+even buttons inside your car —
+
+28
+00:00:58,280 --> 00:01:01,820
+quietly turn into stuff you rent instead of stuff you own?
+
+29
+00:01:01,820 --> 00:01:04,340
+It started quietly, with software.
+
+30
+00:01:04,340 --> 00:01:07,920
+The program you used to buy once, in a box, became a monthly plan.
+
+31
+00:01:07,920 --> 00:01:08,660
+Same program.
+
+32
+00:01:08,660 --> 00:01:10,760
+Now it just... holds itself hostage.
+
+33
+00:01:10,760 --> 00:01:12,820
+Stop paying, and it greys out, like,
+
+34
+00:01:12,820 --> 00:01:14,540
+"pay me, or the document gets it."
+
+35
+00:01:14,540 --> 00:01:16,360
+Then your screens joined the party.
+
+36
+00:01:16,360 --> 00:01:17,780
+Music, movies, shows —
+
+37
+00:01:17,780 --> 00:01:19,800
+you don't own a single song or film.
+
+38
+00:01:19,800 --> 00:01:21,220
+You rent a giant library,
+
+39
+00:01:21,220 --> 00:01:24,760
+and the second you stop paying, the whole thing vanishes.
+
+40
+00:01:24,760 --> 00:01:26,180
+Poof. POV: you own nothing.
+
+41
+00:01:26,180 --> 00:01:28,980
+And it's never one subscription. It's five.
+
+42
+00:01:28,980 --> 00:01:31,960
+One for shows, one for movies, one for the other shows,
+
+43
+00:01:31,960 --> 00:01:35,280
+one for music, and one for the app that organizes your other apps.
+
+44
+00:01:35,280 --> 00:01:36,780
+Each one is small.
+
+45
+00:01:36,780 --> 00:01:39,820
+Together? Bigger than the old cable bill everyone was running from.
+
+46
+00:01:39,820 --> 00:01:42,880
+We escaped one dungeon and built five smaller ones.
+
+47
+00:01:42,880 --> 00:01:44,740
+And it didn't stop at screens.
+
+48
+00:01:44,740 --> 00:01:48,260
+Some carmakers have tried putting heated seats —
+
+49
+00:01:48,260 --> 00:01:50,840
+seats already sitting in the car you bought —
+
+50
+00:01:50,840 --> 00:01:52,280
+behind a monthly fee.
+
+51
+00:01:52,280 --> 00:01:55,880
+Your free trial of a warm bottom has expired.
+
+52
+00:01:55,880 --> 00:01:58,820
+So why did everyone switch to this? Simple.
+
+53
+00:01:58,820 --> 00:02:00,860
+Follow the money. It's always the money.
+
+54
+00:02:00,860 --> 00:02:02,440
+Imagine you sell a coffee machine.
+
+55
+00:02:02,440 --> 00:02:05,380
+You make one sale, you say thank you, and then you wait —
+
+56
+00:02:05,380 --> 00:02:07,820
+maybe years — hoping that person ever comes back.
+
+57
+00:02:07,820 --> 00:02:10,820
+Now imagine instead they pay you a little every month.
+
+58
+00:02:10,820 --> 00:02:13,060
+Automatically. Possibly forever.
+
+59
+00:02:13,060 --> 00:02:14,720
+Even on the months they don't touch the thing.
+
+60
+00:02:14,720 --> 00:02:16,680
+Which business would you rather own?
+
+61
+00:02:16,680 --> 00:02:17,980
+Yeah. Me too.
+
+62
+00:02:17,980 --> 00:02:20,380
+A customer who buys once is worth a little.
+
+63
+00:02:20,380 --> 00:02:22,800
+A customer who pays every month is worth a lot —
+
+64
+00:02:22,800 --> 00:02:24,820
+because that payment just keeps coming.
+
+65
+00:02:24,820 --> 00:02:26,320
+Like rain. Or relatives.
+
+66
+00:02:26,320 --> 00:02:29,540
+This is the magic word behind everything now: recurring.
+
+67
+00:02:29,540 --> 00:02:31,360
+Recurring money is predictable.
+
+68
+00:02:31,360 --> 00:02:34,740
+A company can plan its entire future around your forgetfulness.
+
+69
+00:02:34,740 --> 00:02:36,720
+So the goal quietly changed.
+
+70
+00:02:36,720 --> 00:02:39,300
+It used to be: make something good enough that you buy it.
+
+71
+00:02:39,300 --> 00:02:43,780
+Now it can also be: make something sticky enough that you never quite leave.
+
+72
+00:02:43,780 --> 00:02:47,000
+Less "great product." More "beautiful trap."
+
+73
+00:02:47,000 --> 00:02:48,660
+Here's the genius part.
+
+74
+00:02:48,660 --> 00:02:50,600
+To get you in, they make it feel free.
+
+75
+00:02:50,600 --> 00:02:53,140
+"Start your free trial!" No charge today!
+
+76
+00:02:53,140 --> 00:02:56,240
+Just pop in your card — you know, for no reason at all.
+
+77
+00:02:56,240 --> 00:02:58,840
+Totally normal. Strangers love holding your card.
+
+78
+00:02:58,840 --> 00:03:02,260
+And the trial is real. It really is free. For seven days.
+
+79
+00:03:02,260 --> 00:03:05,640
+After that, a tiny countdown you can't see hits zero,
+
+80
+00:03:05,640 --> 00:03:07,860
+and "free" quietly becomes a payment.
+
+81
+00:03:07,860 --> 00:03:11,020
+And most people don't cancel on day seven. They forget.
+
+82
+00:03:11,020 --> 00:03:14,360
+Not because they're careless — because forgetting is the design.
+
+83
+00:03:14,360 --> 00:03:17,320
+The charge is small, the date is fuzzy, life is loud.
+
+84
+00:03:17,320 --> 00:03:20,740
+So the little payment just... continues. Forever.
+
+85
+00:03:20,740 --> 00:03:23,240
+A ghost, living in your bank account.
+
+86
+00:03:23,240 --> 00:03:26,360
+Rent free. Well — not rent free. That's the whole problem.
+
+87
+00:03:26,360 --> 00:03:29,940
+Open your bank statement right now and you'll probably find one.
+
+88
+00:03:29,940 --> 00:03:33,200
+A mystery charge. Three dollars. Every month.
+
+89
+00:03:33,200 --> 00:03:36,600
+For a thing you opened once, in a year you cannot name.
+
+90
+00:03:36,600 --> 00:03:40,840
+Your free trial of financial awareness has expired.
+
+91
+00:03:40,840 --> 00:03:43,300
+Okay, you say. I'll just cancel.
+
+92
+00:03:43,300 --> 00:03:44,460
+Oh, sweet child.
+
+93
+00:03:44,460 --> 00:03:46,520
+Here's the strange law of subscriptions:
+
+94
+00:03:46,520 --> 00:03:48,330
+signing up takes ten seconds.
+
+95
+00:03:48,330 --> 00:03:50,020
+Cancelling takes a vision quest.
+
+96
+00:03:50,020 --> 00:03:52,200
+Getting in is a big, happy, glowing button.
+
+97
+00:03:52,200 --> 00:03:55,560
+Getting out is hidden somewhere in your phone like a final boss.
+
+98
+00:03:55,560 --> 00:03:58,360
+You tap "account." Then "settings." Then "manage."
+
+99
+00:03:58,360 --> 00:04:00,720
+Then "are you sure?" Then "here, have a discount."
+
+100
+00:04:00,720 --> 00:04:01,920
+Then "we'll miss you."
+
+101
+00:04:01,920 --> 00:04:06,560
+Then a phone number that only answers between two and two-fifteen on a Tuesday.
+
+102
+00:04:06,560 --> 00:04:07,980
+This even has a name.
+
+103
+00:04:07,980 --> 00:04:10,220
+It's been called negative option billing —
+
+104
+00:04:10,220 --> 00:04:12,220
+a fancy term for one simple trick:
+
+105
+00:04:12,220 --> 00:04:14,740
+you keep paying unless you actively say stop.
+
+106
+00:04:14,740 --> 00:04:18,260
+So all the remembering, deciding, and escaping? Pushed onto you.
+
+107
+00:04:18,260 --> 00:04:21,660
+Minus a thousand aura points, and you didn't even do anything wrong.
+
+108
+00:04:21,660 --> 00:04:25,300
+So a lot of people just... give up. They keep paying.
+
+109
+00:04:25,300 --> 00:04:29,500
+Not because they want it — because cancelling feels like a part-time job.
+
+110
+00:04:29,500 --> 00:04:31,320
+With no salary.
+
+111
+00:04:31,320 --> 00:04:33,960
+Which, fittingly, is also not a subscription.
+
+112
+00:04:33,960 --> 00:04:36,600
+So why is everything a subscription now?
+
+113
+00:04:36,600 --> 00:04:39,500
+Because companies found something quietly genius.
+
+114
+00:04:39,500 --> 00:04:43,620
+The most valuable thing they can sell isn't the app, or the show, or the heated seat.
+
+115
+00:04:43,620 --> 00:04:45,000
+It's your forgetting.
+
+116
+00:04:45,000 --> 00:04:46,860
+The month you meant to cancel, and didn't.
+
+117
+00:04:46,860 --> 00:04:48,640
+Once you see it, you can't unsee it.
+
+118
+00:04:48,640 --> 00:04:50,400
+The product was never the thing.
+
+119
+00:04:50,400 --> 00:04:52,040
+The product is you — staying.
+
+120
+00:04:52,040 --> 00:04:56,020
+Now, again: subscriptions aren't evil. Some are worth every cent.
+
+121
+00:04:56,020 --> 00:04:57,760
+The point is just to notice.
+
+122
+00:04:57,760 --> 00:05:01,260
+To know that "small and monthly" is a design, not an accident.
+
+123
+00:05:01,260 --> 00:05:04,260
+So every so often, pick up the phone that's been billing you —
+
+124
+00:05:04,260 --> 00:05:05,500
+and turn it against them.
+
+125
+00:05:05,500 --> 00:05:08,640
+Open the bank statement. Read the little charges out loud.
+
+126
+00:05:08,640 --> 00:05:10,840
+Ask which ones you'd actually choose again today.
+
+127
+00:05:10,840 --> 00:05:13,380
+Keep the ones you love. Cancel the ghosts.
+
+128
+00:05:13,380 --> 00:05:16,000
+Because in a world where almost everything is rented,
+
+129
+00:05:16,000 --> 00:05:20,260
+the most powerful move you've got is remembering what you're paying for.
+
+130
+00:05:20,260 --> 00:05:23,280
+And then quietly enjoying the one thing in your life
+
+131
+00:05:23,280 --> 00:05:24,210
+that is still not a monthly subscription.
+
+132
+00:05:24,210 --> 00:05:28,056
+Your salary. For now.
+

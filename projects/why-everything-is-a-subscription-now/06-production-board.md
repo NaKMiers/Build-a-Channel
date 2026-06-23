@@ -2,9 +2,9 @@
 
 Video: `Why Everything Is a Subscription Now`
 
-Status: `ALL 7 sections built + previewing (1001-1007), awaiting review`
+Status: `COMBINED — unified preview on localhost:1000 + final MP4 exported to output/ (ready for caption)`
 
-Source skill: `render`
+Source skill: `render` → `combine`
 
 Renderer: `HyperFrames 0.6.76`
 
@@ -144,3 +144,30 @@ idea-devices → giant WIT that varies per scene`.
 Next workflow step: `Review` (all 7 sections), then `combine` (assemble into one video on localhost:1000).
 
 All 7 sections are built. Do not continue into combine, review, upload, or learning until the user asks.
+
+## Combine (2026-06-23)
+
+Assembled all 7 rendered sections into one unified video on `localhost:1000` with a single combined voiceover, then exported the final MP4.
+
+- Unified composition: `hyperframes/full-video/index.html` (`UnifiedSubscription`, 1920x1080, 328.056s)
+- Mounts: 7 section hosts, each on its own track at cumulative ACTUAL-mp3 offsets; per-section `<audio>` stripped (one combined track instead)
+- Combined voiceover: `hyperframes/full-video/combined-voiceover.mp3` (ffmpeg stream-copy concat of the 7 section mp3s, ffprobe 328.056s)
+- Per-section offsets (start / dur): s1 0/23.568 · s2 23.568/37.968 · s3 61.536/54.216 · s4 115.752/51.144 · s5 166.896/53.928 · s6 220.824/53.064 · s7 273.888/54.168
+- Assets consolidated at `full-video/` root: `assets/visual-references/section-01..07`, `assets/wit/` (16 poses), `assets/fonts/patrick-hand-latin.woff2`
+- Self-check: lint 0 errors (6 pre-existing per-section `timeline_track_too_dense` warnings only); compositions = 8 elements (7 mounts + 1 audio); 1 `<audio>` in index, 0 in sub-comps; 7-frame snapshot — every section renders with real bases + WIT + labels; preview HTTP 200 on 1000
+- **Final video: `output/why-everything-is-a-subscription-now.mp4`** (44.8 MB, 30fps standard, ffprobe 328.089s ≈ combined 328.056s). Rendered via `renders/` staging, then moved to `output/`; empty `renders/` removed.
+
+Next step: `caption`.
+
+## Caption (2026-06-23)
+
+Generated YouTube captions from the FULL combined audio (real word-level timing), with display text taken verbatim from `02-script.md`.
+
+- Audio source: `hyperframes/full-video/combined-voiceover.mp3` (decoded 327.989s; combine cap 328.056s)
+- Transcription: `Xenova/whisper-tiny.en` via `@xenova/transformers`, word timestamps over the whole timeline in one pass → **1021 words**. Saved to `voiceover/combined-word-timings.json` (reusable).
+- Alignment: Needleman-Wunsch of 1016 script tokens (cues from `02-script.md`, delivery cues `[...]` and `**` joke markers stripped — bold text IS spoken) against the 1021 Whisper words; cue times from the matched audio words.
+- Output: **`output/captions.srt`** — **132 cues**. Validation: 0 overlaps, 0 zero/negative-duration, monotonic, gapless; first cue `00:00:00,000`, last cue ends `00:05:28,056` (== audio duration).
+- Sync spot-check vs combine section offsets: S2 cue 00:00:23.62 vs 23.568s · S5 00:02:47.00 vs 166.896s · S7 00:04:33.96 vs 273.888s — all exact. No tail glitch this run (last words monotonic).
+- No `.vtt` requested.
+
+Next step: `upload`.

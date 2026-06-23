@@ -33,9 +33,14 @@ Use this file for transcription toolchain details, alignment gotchas, and recurr
 - Enforce: monotonic, non-overlapping, gapless (cue ends at next cue's start), min ~0.7s, last cue end == audio duration (ffprobe / last word end).
 - Helpers in this folder: `transcribe-combined.mjs` (audio → word timings JSON) and `build-srt.mjs` (timings + cues JSON → SRT). `build-srt.mjs` takes cues as an external JSON array so it is not hardcoded per video.
 
-## Verified Result (first run)
+## Verified Results
 
-- `why-cheap-products-keep-getting-worse`: combined audio 4:11.18 (251.18s) → 860 Whisper words → 94 cues. Validation: 0 overlaps, 0 zero-length cues, first cue `00:00:00,000`, last cue ends `00:04:11,180` (== audio). Exported to `projects/why-cheap-products-keep-getting-worse/output/captions.srt`.
+- `why-cheap-products-keep-getting-worse` (first run): combined audio 4:11.18 (251.18s) → 860 Whisper words → 94 cues. 0 overlaps, 0 zero-length, first `00:00:00,000`, last ends `00:04:11,180` (== audio).
+- `why-everything-is-a-subscription-now` (2026-06-23): combined audio 327.989s (combine cap 328.056s) → 1021 Whisper words → 132 cues. 0 overlaps / 0 zero-neg / monotonic / gapless; first `00:00:00,000`, last ends `00:05:28,056` (== cap). Tail clean (no whisper backward-jump this run). 1016 script tokens aligned vs 1021 hyp.
+
+## Cross-Check Cue Times Against The Combine Section Offsets (cheap, high-signal)
+
+When the project was combined, `06-production-board.md` records each section's cumulative ACTUAL-mp3 offset (start of section N on the full timeline). After building the SRT, grep the first cue of each section's narration and confirm its timestamp ≈ that section offset. On subscription: S2 cue `00:00:23.62` vs offset 23.568s; S5 `00:02:47.00` vs 166.896s; S7 `00:04:33.96` vs 273.888s — all near-exact. If a section's first cue is off by more than ~0.3s, alignment drifted there (or the cue text doesn't match what's spoken). Faster and more reliable than listening to spot-checks.
 
 ## Watch Out
 
