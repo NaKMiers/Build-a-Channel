@@ -1084,6 +1084,59 @@ Lesson / reusables:
 Promote to shared memory:
 no; template is already Core. The typing-on-laptop black-bg fact is a concrete asset gotcha for render/visual-plan.
 
+### 2026-06-23 - S4 built; CSS coins as an idea-device; reused-base 2nd-filename; whisper backward-jump
+
+Classification: `Render lesson`
+
+Context:
+`why-everything-is-a-subscription-now` Section 4 ("Why Companies Love It", 51.093s) built to the template:
+6 vivid object bases (cash → espresso machine → same machine as a "money machine" → cash → calendar →
+mousetrap), varied idea-devices, 4 giant WIT beats (sleeping-burned-out R → empty-wallet L → confused L →
+suspicious R; two scenes breathe).
+
+Reusable lessons:
+- CSS GOLD COINS are a strong new idea-device for money/recurring beats: a single coin (one sale), a
+  staggered rising GEYSER (recurring revenue), a vertical STACK (worth a lot), and a few RAIN coins ("keeps
+  coming like rain"). `.coin` = a radial-gradient circle + `$`. Pop each on its spoken word.
+- A real object can carry a before/after on ONE base: the espresso machine = "you sell it once" (BS2) then
+  the same machine warm-graded + coin geyser = "now they pay monthly" (BS3). When you reuse a base file in two
+  scenes you MUST give the 2nd scene its own filename copy (`base-coffee-machine.jpg`, `base-cash-lot.jpg`) or
+  `duplicate_media_discovery_risk` fires. (Both before/after-adjacent and non-consecutive reuse need this.)
+- A centered kinetic word (`RECURRING`) and a centered WIT collide — put the WIT on one half and ALL the
+  text/marks on the other half (here WIT left, word+calendar-rings+label right). Cleaner than nudging z-index.
+- Verified-transparent poses (safe on photos): sleeping-burned-out, empty-wallet, confused (+ the earlier list).
+  Still AVOID `typing-on-laptop` and `money-panic` (baked black bg) — both now flagged in the SKILL files.
+- Whisper word-timings can jump BACKWARD mid-line at a chunk boundary (S4's "worth a little / pays every
+  month" re-emitted ~24–26s). Don't trust the glitched run — pin cues to the CLEAN word starts around it.
+
+Promote to shared memory:
+no; template is Core. These are concrete render idea-device + asset + timing mechanics.
+
+### 2026-06-23 - Red rings over a photo circle nothing — use a meaningful device instead
+
+Classification: `Render lesson`
+
+Context:
+S4 (`why-everything-is-a-subscription-now`) BS5 used 4 red CSS rings on the calendar photo to suggest
+"recurring charges." Reviewer: "the circles don't circle anything — I don't know what they're on." The
+rings sat over blurry "Novembre" grid text, aligned to no actual date.
+
+Lesson:
+A red ring/circle/arrow on a PHOTO base only works if it lands exactly on a real, legible target in that
+photo (a specific date number, a button, an object). Over a soft/typographic/blurred photo it reads as
+decoration pointing at nothing — the classic meaningless-markup failure. When you can't guarantee a precise
+target, drop the markup and SHOW the idea with a built device instead. Here the fix was an `AUTO-PAY · the
+same charge, every month` statement card with identical `−$9.99` rows (Jan/Feb/Mar/Apr) popping one-per-beat
+— it demonstrates "recurring" far more clearly than circles ever could, and it's real-UI (owner-preferred).
+
+Apply next time:
+- only place a circle/arrow when it aligns to a specific readable target verified in the snapshot
+- otherwise use a label, stamp, or a real-UI card/list that depicts the concept
+- "recurring/repeating" reads best as the SAME item repeating in a small statement/list, not as circles
+
+Promote to shared memory:
+no; reinforces the existing "markup must target a real object" rule with a concrete photo-base case.
+
 ## Feedback Entry Template
 
 ```markdown
