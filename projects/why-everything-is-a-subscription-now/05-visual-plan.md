@@ -2,7 +2,7 @@
 
 Video: `Why Everything Is a Subscription Now`
 
-Status: `section visual plan in progress (Sections 1-5 planned)`
+Status: `section visual plan in progress (Sections 1-6 planned)`
 
 Source skill: `visual-plan`
 
@@ -34,7 +34,7 @@ Source files:
 | 3 | The Spread: From Apps To Your Car | planned | 54.165s | 5 | 19 | `visual-plan/section-03-the-spread/section-03-the-spread-visual-plan.md` | `visual-plan/section-03-the-spread/reference-board.md` | S1 template: desk/TV-room/cash/jail/car bases; software-window→streaming-wall→5 tiles→dungeon→heated-seat+EXPIRED; giant WIT panic/shocked/trapped/deadpan (4 beats) |
 | 4 | Why Companies Love It: One Sale Becomes Forever | planned | 51.093s | 6 | 15 | `visual-plan/section-04-why-companies-love-it/section-04-why-companies-love-it-visual-plan.md` | `visual-plan/section-04-why-companies-love-it/reference-board.md` | S1 template: cash/coffee/coffee/cash/calendar/mousetrap bases; FOLLOW-THE-MONEY→coin geyser→little-vs-A-LOT→RECURRING→BEAUTIFUL TRAP; giant WIT sleeping/empty-wallet/confused/suspicious (4 beats) |
 | 5 | The Free Trial Is A Countdown | planned | 53.867s | 6 | 13 | `visual-plan/section-05-free-trial-countdown/section-05-free-trial-countdown-visual-plan.md` | `visual-plan/section-05-free-trial-countdown/reference-board.md` | S1 template: phone/desk/hourglass/phone/wallet/piggy bases; FREE splash→card→countdown flip→forget→ghost charges→statement w/ ringed mystery charge+EXPIRED; giant WIT deadpan/panic/thinking/receipt (4 beats) |
-| 6 | Easy In, No Way Out | not planned | 53.013s | — | — | — | — | — |
+| 6 | Easy In, No Way Out | planned | 53.013s | 5 | 16 | `visual-plan/section-06-easy-in-no-way-out/section-06-easy-in-no-way-out-visual-plan.md` | `visual-plan/section-06-easy-in-no-way-out/reference-board.md` | S1 template: stopwatch/maze/contract bases (maze+stopwatch return as deliberate dark callbacks); SIGN-UP-vs-CANCEL→7-step menu maze→NEGATIVE OPTION stamp→−1000 AURA HUD→part-time-job payoff; giant WIT running/suspicious/confused/tiny-defeated (4 beats) |
 | 7 | Payoff: The Product Is You Not Cancelling | not planned | 54.101s | — | — | — | — | — |
 
 ## Cross-Section Continuity
@@ -47,8 +47,8 @@ Source files:
 
 ## Stale / Regeneration Notes
 
-- Sections 1-5 are planned. Sections 6-7 are `not planned`.
-- Sections 1-5 are rendered (previewing on 1001/1002/1003/1004/1005), awaiting review.
+- Sections 1-6 are planned. Section 7 is `not planned`.
+- Sections 1-6 are rendered (previewing on 1001-1006), awaiting review.
 
 ## Next Step Boundary
 

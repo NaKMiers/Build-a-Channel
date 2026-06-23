@@ -2,7 +2,7 @@
 
 Video: `Why Everything Is a Subscription Now`
 
-Status: `section render in progress (Sections 1-5 built + previewing)`
+Status: `section render in progress (Sections 1-6 built + previewing)`
 
 Source skill: `render`
 
@@ -17,6 +17,7 @@ Renderer: `HyperFrames 0.6.76`
 | 3 The Spread | 1003 | `http://localhost:1003/#project/Build%20a%20Channel` | `http://localhost:1003/api/projects/Build%20a%20Channel/preview/comp/index.html` |
 | 4 Why Companies Love It | 1004 | `http://localhost:1004/#project/Build%20a%20Channel` | `http://localhost:1004/api/projects/Build%20a%20Channel/preview/comp/index.html` |
 | 5 The Free Trial | 1005 | `http://localhost:1005/#project/Build%20a%20Channel` | `http://localhost:1005/api/projects/Build%20a%20Channel/preview/comp/index.html` |
+| 6 Easy In, No Way Out | 1006 | `http://localhost:1006/#project/Build%20a%20Channel` | `http://localhost:1006/api/projects/Build%20a%20Channel/preview/comp/index.html` |
 
 (Project id resolves to `Build a Channel` on this setup; build URLs from `/api/projects`, not the folder name.)
 
@@ -29,7 +30,7 @@ Renderer: `HyperFrames 0.6.76`
 | 3 | The Spread: From Apps To Your Car | built · previewing · awaiting review | 54.165s | 1003 | 5 | 19 | `section-previews/section-03-the-spread/index.html` |
 | 4 | Why Companies Love It: One Sale Becomes Forever | built · previewing · awaiting review | 51.093s | 1004 | 6 | 15 | `section-previews/section-04-why-companies-love-it/index.html` |
 | 5 | The Free Trial Is A Countdown | built · previewing · awaiting review | 53.867s | 1005 | 6 | 13 | `section-previews/section-05-free-trial-countdown/index.html` |
-| 6 | Easy In, No Way Out | not rendered | 53.013s | 1006 | — | — | — |
+| 6 | Easy In, No Way Out | built · previewing · awaiting review | 53.013s | 1006 | 5 | 16 | `section-previews/section-06-easy-in-no-way-out/index.html` |
 | 7 | Payoff | not rendered | 54.101s | 1007 | — | — | — |
 
 ## Section 1 Build Record (REMADE 2026-06-23)
@@ -105,14 +106,27 @@ idea-devices → giant WIT that varies per scene`.
 - Review mirror: `hyperframes/review/section-05.html`. No MP4 exported.
 - Review fix (2026-06-23, round 2): BS1/BS4 blank-screen phone (placeholder-looking + reused) → distinct `base-gift` (free = a gift) and `base-busydesk` (forget / loud life). Re-checked clean.
 
+## Section 6 Build Record (2026-06-23, Section 1 template)
+
+- Preview project: `section-previews/section-06-easy-in-no-way-out/`
+- Composition: `Section06Easy` (1920x1080, 53.013s), port 1006
+- Audio: `section-06-easy-in-no-way-out-david23-am_eric-0.8.mp3`
+- Word timings: GENERATED this run via transformers.js whisper-tiny.en (none existed); pinned to word starts; capped at 53.013
+- 3 distinct vivid bases: `base-stopwatch` (easy/hard) → `base-maze` wooden labyrinth (the ordeal / menu maze) → `base-contract` (negative option). The maze + stopwatch each RETURN once as deliberate darker thematic callbacks (`base-maze-2` −1000 aura; `base-stopwatch-2` give-up/no-salary) because clean distinct photos for those abstract tail beats weren't sourceable — documented + swappable. See section ATTRIBUTION.
+- Idea-devices: SIGN-UP vs CANCEL labels → "FINAL BOSS" + a 7-step menu breadcrumb maze (account→…→a phone number) → `NEGATIVE OPTION BILLING` stamp → `−1000 AURA` game HUD → "part-time job / salary $0 / not a subscription" payoff.
+- WIT (4 giant beats, varied side/pose): running-away R → suspicious R → confused L → tiny-defeated R. S1 breathes. AVOIDED `typing-on-laptop`/`money-panic` (baked black bg).
+- Build fixes: float overlap (cue-d 8.6→8.58); menu chips moved to the left 2/3 so the running WIT (right) doesn't cover them.
+- Checks: `lint` 0 errors (1 non-blocking density note); `validate` 0 errors / 0 warnings / 25 contrast; `inspect` 0 layout issues; `snapshot` QA at 4/8/13/19/23/28/32/38/46/51.5.
+- Review mirror: `hyperframes/review/section-06.html`. No MP4 exported.
+
 ## Stale / Regeneration Notes
 
-- Sections 1-5 are rendered. Sections 6-7 are `not rendered`.
+- Sections 1-6 are rendered. Section 7 is `not rendered`.
 - No `07-review.md` / `08-upload.md` / `09-self-learning.md` exist yet — nothing downstream is stale.
 - If `02-script.md`, the Section 1 voiceover, or the Section 1 visual plan changes, this render becomes stale and must be rebuilt.
 
 ## Next Step Boundary
 
-Next workflow step: `Review` (Sections 1-5) or render Section 6.
+Next workflow step: `Review` (Sections 1-6) or render Section 7 (final section).
 
-Do not continue into review, upload, or learning until the user asks. Sections 6-7 still need visual-plan + render.
+Do not continue into review, upload, or learning until the user asks. Section 7 still needs visual-plan + render.

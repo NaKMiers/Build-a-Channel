@@ -1190,6 +1190,34 @@ Lesson:
 Promote to shared memory:
 no; sharpens the existing "vivid object base per scene / no reuse" rule with the blank-phone-placeholder case.
 
+### 2026-06-23 - S6 built; a literal maze for "cancel ordeal"; menu-breadcrumb device; callback-when-sourcing-fails
+
+Classification: `Render lesson`
+
+Context:
+`why-everything-is-a-subscription-now` Section 6 ("Easy In, No Way Out", 53s) — the cancel-maze /
+negative-option-billing section. Strong distinct bases: a STOPWATCH (time asymmetry), a wooden LABYRINTH
+game (the cancel ordeal — perfect for "vision quest / final boss / wandering the menus"), and a CONTRACT
+(fine-print trick). Hero device: a 7-step CSS menu breadcrumb trail (account→settings→…→a phone number)
+winding through the maze, each chip popping on its spoken step.
+
+Reusable lessons:
+- For an abstract PROCESS section (cancelling), a literal MAZE/labyrinth photo is a great hero — the
+  "menu steps" become a breadcrumb path through it, and a running-away WIT sells the ordeal. Keep the
+  breadcrumb chips in the left 2/3 so a side WIT doesn't cover them.
+- Sourcing abstract tail beats ("the unfair burden / −1000 aura", "a part-time job with no salary") failed
+  on the CC sources. When that happens, prefer a DELIBERATE darker-graded CALLBACK of the section's own
+  controlling metaphor (here the maze returns for "−1000 aura, still lost"; the stopwatch returns for "an
+  unpaid part-time job") over a sterile/off-tone stock photo — distinguish it with a dark grade + different
+  CSS device + different WIT + a 2nd filename, and flag it to the owner as swappable. This is the allowed
+  "purposeful callback" exception, not the lazy-reuse the owner rejects.
+- Search-term traps to watch: "free labyrinth maze" surfaced a Holocaust memorial (off-tone); "white flag"
+  surfaced war photos; "alarm/time clock" surfaced only PNG sticker illustrations or cluttered museum displays.
+  Always VIEW before using; reject off-tone/illustration/people-bearing hits.
+
+Promote to shared memory:
+no; render execution mechanics (maze-as-process-hero, menu-breadcrumb device, callback-when-sourcing-fails).
+
 ## Feedback Entry Template
 
 ```markdown
