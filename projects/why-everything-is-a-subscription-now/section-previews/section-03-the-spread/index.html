@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Section 03 The Spread - Why Everything Is a Subscription Now</title>
+  <style>
+    @font-face { font-family: "PatrickHandLocal"; src: url("./assets/fonts/patrick-hand-latin.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
+    :root { --ink:#14110d; --red:#e0392b; --red-deep:#7d1714; --cream:#fff7d8; --green:#188038; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #07070a; color:#fff; overflow: hidden; }
+    #Section03Spread { position: relative; width: 1920px; height: 1080px; overflow: hidden; background: #07070a; font-family: "PatrickHandLocal"; }
+    .scene, .cue { position: absolute; inset: 0; width: 100%; height: 100%; overflow: hidden; }
+    .scene { z-index: 1; will-change: opacity, transform, filter; }
+    .cue { z-index: 5; pointer-events: none; }
+    .photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+    .photo.desk { filter:saturate(1.05) contrast(1.05) brightness(0.7); }
+    .photo.room { filter:saturate(1.08) contrast(1.04) brightness(0.78); }
+    .photo.cash { filter:saturate(1.1) contrast(1.05) brightness(0.66) hue-rotate(-6deg); }
+    .photo.jail { filter:saturate(0.92) contrast(1.1) brightness(0.5); }
+    .photo.car  { filter:saturate(0.95) contrast(1.1) brightness(0.46); }
+    .scrim { position:absolute; inset:0; z-index:1; background:radial-gradient(ellipse 84% 84% at 50% 46%, rgba(4,5,10,0.16), rgba(4,5,10,0.72) 99%); }
+    .ui { font-family:"Segoe UI",system-ui,sans-serif; }
+
+    .aside { position:absolute; z-index:8; background:var(--cream); border:6px solid var(--ink); border-radius:7px; padding:10px 20px 14px; color:var(--ink); font-size:40px; line-height:1.0; transform:rotate(-2deg); box-shadow:10px 12px 0 rgba(20,17,13,0.24); }
+    .headline { position:absolute; z-index:7; font-family:"Segoe UI",system-ui,sans-serif; font-weight:900; font-size:80px; line-height:0.96; color:#fff; text-shadow:0 0 40px rgba(0,0,0,0.85), 6px 7px 0 rgba(0,0,0,0.5); letter-spacing:-1px; }
+    .headline .hl { color:#ffd23f; }
+    .label { position:absolute; z-index:8; background:#fff; color:#16181d; border-radius:12px; padding:12px 24px 16px; font-family:"Segoe UI",system-ui,sans-serif; font-weight:800; font-size:46px; box-shadow:0 12px 26px rgba(0,0,0,0.5); }
+    .label.red { background:#fff5f1; color:var(--red-deep); border:5px solid var(--red-deep); }
+    .label.green { background:#eafbe7; color:var(--green); border:5px solid var(--green); }
+
+    /* software window */
+    .appwin { position:absolute; z-index:7; width:560px; background:#1b1d23; border-radius:14px; box-shadow:0 20px 44px rgba(0,0,0,0.6); overflow:hidden; font-family:"Segoe UI",system-ui,sans-serif; }
+    .appwin .bar { background:#2a2d36; padding:12px 16px; display:flex; align-items:center; gap:10px; color:#cfd3dc; font-size:24px; font-weight:700; }
+    .appwin .dotr,.appwin .doty,.appwin .dotg2 { width:18px; height:18px; border-radius:50%; }
+    .appwin .dotr{background:#ff5f57;} .appwin .doty{background:#febc2e;} .appwin .dotg2{background:#28c840;}
+    .appwin .ttl { margin-left:10px; }
+    .appwin .body { padding:24px; }
+    .appwin .ln { height:18px; border-radius:5px; background:#3a3e49; margin-bottom:16px; }
+    .appwin .ln.s { width:60%; } .appwin .ln.m { width:85%; } .appwin .ln.acc { background:#4a6cff; width:45%; }
+    .greyed { position:absolute; inset:0; z-index:9; background:rgba(20,20,26,0.78); }
+    .ransom { position:absolute; z-index:11; background:#fff5f1; color:var(--red-deep); border:7px solid var(--red-deep); border-radius:10px; padding:14px 26px 18px; font-family:"Segoe UI",system-ui,sans-serif; font-weight:900; font-size:50px; transform:rotate(-2deg); box-shadow:12px 14px 0 rgba(125,23,20,0.25); }
+    .pricetag { position:absolute; z-index:10; font-family:"Segoe UI",system-ui,sans-serif; font-weight:900; border-radius:12px; padding:8px 18px 12px; font-size:42px; }
+    .pricetag.buy { background:#eafbe7; color:var(--green); border:5px solid var(--green); }
+    .pricetag.mo  { background:#fff5f1; color:var(--red); border:5px solid var(--red); }
+
+    /* tiles (streaming wall + sub tiles) */
+    .tile { position:absolute; border-radius:22px; display:flex; flex-direction:column; align-items:center; justify-content:center; color:#fff; font-family:"Segoe UI",system-ui,sans-serif; font-weight:800; font-size:30px; box-shadow:0 12px 26px rgba(0,0,0,0.5); }
+    .tile small { font-weight:700; font-size:24px; opacity:0.92; margin-top:4px; }
+    .g1{background:linear-gradient(135deg,#e50914,#b00610);} .g2{background:linear-gradient(135deg,#1db954,#0a8a3f);}
+    .g3{background:linear-gradient(135deg,#2aa3ff,#0a5ad6);} .g4{background:linear-gradient(135deg,#ff8a00,#d65d00);}
+    .g5{background:linear-gradient(135deg,#a05cff,#6a1fd0);} .g6{background:linear-gradient(135deg,#ff4d8d,#c81e63);}
+    .g7{background:linear-gradient(135deg,#13c4c4,#0a8f8f);} .g8{background:linear-gradient(135deg,#ffd23f,#e0a400);color:#222;}
+    .screenwin { position:absolute; z-index:6; background:#0b0b0d; border:3px solid #2a2c33; border-radius:18px; box-shadow:0 22px 48px rgba(0,0,0,0.65); }
+
+    .povcard { position:absolute; z-index:10; background:#0c0c12; border:6px solid #ffd23f; border-radius:18px; padding:20px 34px 26px; text-align:center; box-shadow:0 0 50px rgba(255,210,63,0.35); font-family:"Segoe UI",system-ui,sans-serif; }
+    .povcard .p { color:#ffd23f; font-size:42px; font-weight:800; letter-spacing:2px; }
+    .povcard .b { color:#fff; font-size:78px; font-weight:900; line-height:0.96; }
+
+    .counter { position:absolute; z-index:9; font-family:"Segoe UI",system-ui,sans-serif; font-weight:900; color:#fff; text-shadow:0 0 30px rgba(224,57,43,0.6), 4px 5px 0 rgba(0,0,0,0.45); }
+    .counter .big { font-size:120px; color:var(--red); }
+
+    /* heated seat button */
+    .seatbtn { position:absolute; z-index:8; background:#16181d; border:4px solid #ff8a00; border-radius:18px; padding:16px 26px 20px; text-align:center; font-family:"Segoe UI",system-ui,sans-serif; box-shadow:0 0 30px rgba(255,138,0,0.45); }
+    .seatbtn .ic { font-size:54px; }
+    .seatbtn .t { color:#ff8a00; font-size:36px; font-weight:800; margin-top:4px; }
+    .wave { display:inline-block; width:44px; height:8px; border-radius:6px; background:#ff8a00; margin:3px; box-shadow:0 16px 0 -2px #ff8a00, 0 -16px 0 -2px #ff8a00; }
+
+    .lockicon { position:absolute; z-index:11; width:120px; }
+    .lockicon .sh { width:68px; height:60px; border:18px solid #e9ecf2; border-bottom:none; border-radius:38px 38px 0 0; margin:0 auto -7px; }
+    .lockicon .bd { width:120px; height:88px; background:#ffd23f; border-radius:16px; }
+
+    .sysbanner { position:absolute; z-index:12; left:60px; top:34px; width:1800px; background:#0c0c12; border:5px solid var(--red); border-radius:18px; padding:18px 36px; display:flex; align-items:center; gap:26px; box-shadow:0 20px 50px rgba(0,0,0,0.7), 0 0 50px rgba(224,57,43,0.45); }
+    .sysbanner .warn { width:60px; height:60px; border-radius:50%; background:var(--red); color:#fff; font-weight:900; font-size:40px; line-height:60px; text-align:center; flex:0 0 auto; font-family:"Segoe UI",system-ui,sans-serif; }
+    .sysbanner .t { color:#fff; font-family:"Segoe UI",system-ui,sans-serif; font-size:42px; }
+    .sysbanner .t b { color:#ffd23f; font-weight:900; }
+
+    .wit { position:absolute; object-fit:contain; z-index:9; filter:drop-shadow(15px 18px 0 rgba(0,0,0,0.32)); transform-origin:center center; }
+    .aside,.headline,.label,.appwin,.greyed,.ransom,.pricetag,.tile,.screenwin,.povcard,.counter,.seatbtn,.lockicon,.sysbanner,.wit { will-change: opacity, transform; }
+  </style>
+</head>
+<body>
+  <div id="Section03Spread" data-composition-id="Section03Spread" data-start="0" data-duration="54.165" data-width="1920" data-height="1080">
+
+    <!-- SCENE A software (desk) 0-13.1 -->
+    <div id="scene-a" class="clip scene" data-start="0" data-duration="13.25" data-track-index="1">
+      <img class="photo desk" src="./assets/visual-references/section-03-the-spread/base-desk.jpg" alt=""><div class="scrim"></div>
+    </div>
+    <!-- SCENE B streaming (tv room) 13.1-24.7 -->
+    <div id="scene-b" class="clip scene" data-start="13.10" data-duration="11.75" data-track-index="3">
+      <img class="photo room" src="./assets/visual-references/section-03-the-spread/base-tv-room.jpg" alt=""><div class="scrim"></div>
+    </div>
+    <!-- SCENE C five subs (cash) 24.7-35.2 -->
+    <div id="scene-c" class="clip scene" data-start="24.70" data-duration="10.65" data-track-index="4">
+      <img class="photo cash" src="./assets/visual-references/section-03-the-spread/base-cash.jpg" alt=""><div class="scrim"></div>
+    </div>
+    <!-- SCENE D dungeon/cost (jail) 35.2-41.4 -->
+    <div id="scene-d" class="clip scene" data-start="35.20" data-duration="6.35" data-track-index="5">
+      <img class="photo jail" src="./assets/visual-references/section-03-the-spread/base-jail.jpg" alt=""><div class="scrim"></div>
+    </div>
+    <!-- SCENE E car heated seats 41.4-54.165 -->
+    <div id="scene-e" class="clip scene" data-start="41.40" data-duration="12.76" data-track-index="6">
+      <img class="photo car" src="./assets/visual-references/section-03-the-spread/base-car.jpg" alt=""><div class="scrim"></div>
+    </div>
+
+    <!-- CUE A software -->
+    <div id="cue-a" class="clip cue" data-start="0" data-duration="13.10" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="headline ca-head" style="left:60px; top:60px; width:760px;">IT STARTED WITH <span class="hl">SOFTWARE</span></div>
+      <div class="appwin ca-win" style="left:150px; top:300px;">
+        <div class="bar"><span class="dotr"></span><span class="doty"></span><span class="dotg2"></span><span class="ttl">DesignPro — invoice.doc</span></div>
+        <div class="body"><div class="ln m"></div><div class="ln s"></div><div class="ln acc"></div><div class="ln m"></div><div class="ln s"></div></div>
+        <div class="greyed ca-grey" style="opacity:0;"></div>
+      </div>
+      <div class="pricetag buy ca-buy" style="left:560px; top:270px;">BUY ONCE</div>
+      <div class="pricetag mo ca-mo" style="left:540px; top:266px; opacity:0;">$9.99 / mo</div>
+      <div class="lockicon ca-lock" style="left:330px; top:430px; opacity:0;"><div class="sh"></div><div class="bd"></div></div>
+      <div class="ransom ca-ransom" style="left:70px; top:720px; width:700px; opacity:0;">"PAY ME, OR THE<br>DOCUMENT GETS IT."</div>
+      <img class="wit ca-wit" data-layout-allow-overflow="" style="right:-190px; bottom:-320px; width:1280px;" src="./assets/wit/wit-pose-hidden-fee-panic.png" alt="">
+    </div>
+
+    <!-- CUE B streaming -->
+    <div id="cue-b" class="clip cue" data-start="13.10" data-duration="11.60" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="screenwin cb-wall" style="left:800px; top:150px; width:1000px; height:570px;">
+        <div class="tile g1" style="left:30px; top:30px; width:210px; height:150px;">Flix</div>
+        <div class="tile g2" style="left:270px; top:30px; width:210px; height:150px;">Tunes</div>
+        <div class="tile g3" style="left:510px; top:30px; width:210px; height:150px;">Cloud</div>
+        <div class="tile g4" style="left:750px; top:30px; width:210px; height:150px;">Movies</div>
+        <div class="tile g5" style="left:30px; top:210px; width:210px; height:150px;">Play</div>
+        <div class="tile g6" style="left:270px; top:210px; width:210px; height:150px;">Beats</div>
+        <div class="tile g7" style="left:510px; top:210px; width:210px; height:150px;">Pods</div>
+        <div class="tile g8" style="left:750px; top:210px; width:210px; height:150px;">Show+</div>
+        <div class="tile g3" style="left:30px; top:390px; width:210px; height:150px;">News</div>
+        <div class="tile g6" style="left:270px; top:390px; width:210px; height:150px;">Kids</div>
+        <div class="tile g4" style="left:510px; top:390px; width:210px; height:150px;">Live</div>
+        <div class="tile g2" style="left:750px; top:390px; width:210px; height:150px;">Fit</div>
+      </div>
+      <div class="label cb-own" style="left:70px; top:150px;">you don't <b>OWN</b> a song</div>
+      <div class="label cb-rent" style="left:70px; top:330px;">you RENT a giant library</div>
+      <div class="povcard cb-pov" style="left:840px; top:300px; opacity:0;"><div class="p">POV:</div><div class="b">YOU OWN<br>NOTHING</div></div>
+      <img class="wit cb-wit" data-layout-allow-overflow="" style="left:-240px; bottom:-320px; width:1280px; opacity:0;" src="./assets/wit/wit-pose-shocked.png" alt="">
+    </div>
+
+    <!-- CUE C five subs -->
+    <div id="cue-c" class="clip cue" data-start="24.70" data-duration="10.50" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="headline cc-head" style="left:60px; top:56px; width:760px;">NEVER JUST ONE.<br>IT'S <span class="hl">FIVE</span>.</div>
+      <div class="tile g1 cc-t1" style="left:430px; top:420px; width:200px; height:150px;">Shows<small>$8/mo</small></div>
+      <div class="tile g4 cc-t2" style="left:660px; top:420px; width:200px; height:150px;">Movies<small>$7/mo</small></div>
+      <div class="tile g6 cc-t3" style="left:890px; top:420px; width:200px; height:150px;">More Shows<small>$9/mo</small></div>
+      <div class="tile g2 cc-t4" style="left:1120px; top:420px; width:200px; height:150px;">Music<small>$6/mo</small></div>
+      <div class="tile g5 cc-t5" style="left:1350px; top:420px; width:200px; height:150px;">App for apps<small>$5/mo</small></div>
+      <div class="label cc-small" style="left:430px; top:630px; opacity:0;">each one feels <b>small</b>…</div>
+    </div>
+
+    <!-- CUE D dungeon/cost -->
+    <div id="cue-d" class="clip cue" data-start="35.20" data-duration="6.18" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="counter cd-cmp" style="left:60px; top:60px; opacity:0;"><span style="font-size:54px;">five subs &gt;</span> <span class="big">OLD CABLE BILL</span></div>
+      <div class="label red cd-escaped" style="left:60px; top:300px; opacity:0;">escaped 1 dungeon →</div>
+      <div class="label red cd-built" style="right:70px; top:300px; opacity:0;">built 5 smaller ones</div>
+      <img class="wit cd-wit" data-layout-allow-overflow="" style="left:430px; bottom:-320px; width:1160px; opacity:0;" src="./assets/wit/wit-pose-trapped-by-app-screen.png" alt="">
+    </div>
+
+    <!-- CUE E car heated seats -->
+    <div id="cue-e" class="clip cue" data-start="41.40" data-duration="12.76" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="headline ce-head" style="left:60px; top:56px; width:780px; opacity:0;">IT DIDN'T STOP<br>AT <span class="hl">SCREENS</span></div>
+      <div class="seatbtn ce-seat" style="left:360px; top:430px; opacity:0;"><div class="ic"><span class="wave"></span></div><div class="t">HEATED SEAT</div></div>
+      <div class="label ce-bought" style="left:70px; top:660px; opacity:0;">seats you <b>already bought</b></div>
+      <div class="lockicon ce-lock" style="left:430px; top:430px; opacity:0;"><div class="sh"></div><div class="bd"></div></div>
+      <div class="pricetag mo ce-price" style="left:360px; top:600px; opacity:0;">$9.99 / mo</div>
+      <div class="sysbanner ce-exp ui" style="opacity:0;"><div class="warn">!</div><div class="t">your free trial of a <b>WARM BOTTOM</b> has expired</div></div>
+      <img class="wit ce-wit" data-layout-allow-overflow="" style="right:-200px; bottom:-320px; width:1250px; opacity:0;" src="./assets/wit/wit-pose-deadpan-side-eye.png" alt="">
+    </div>
+
+    <audio id="voiceover-section-03" data-start="0" data-duration="54.165" data-track-index="10" data-volume="1" crossorigin="anonymous" src="./section-03-the-spread-david23-am_eric-0.8.mp3"></audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true, defaults: { overwrite: "auto" } });
+      const reveal = (t, hideAt, at, fv, tv = {}) => { const r = {}; if ("x" in fv) r.x = 0; if ("y" in fv) r.y = 0; if ("scale" in fv) r.scale = 1; if ("opacity" in fv) r.opacity = 1; tl.set(t, fv, hideAt); tl.to(t, { ...r, ...tv }, at); };
+      const show = (t, hideAt, at) => { tl.set(t, { opacity: 0 }, hideAt); tl.set(t, { opacity: 1 }, at); };
+      const hide = (t, at) => { tl.set(t, { opacity: 0 }, at); };
+      const smash = (t, hideAt, at, fv = { y: 20, scale: 1.3, opacity: 0 }) => reveal(t, hideAt, at, fv, { duration: 0.18, ease: "back.out(1.9)" });
+      const pop = (t, hideAt, at) => reveal(t, hideAt, at, { scale: 0.4, opacity: 0 }, { duration: 0.2, ease: "back.out(2)" });
+
+      // scene cross-fades (word-pinned cuts)
+      tl.fromTo("#scene-b", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 13.10);
+      tl.fromTo("#scene-c", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 24.70);
+      tl.fromTo("#scene-d", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 35.20);
+      tl.fromTo("#scene-e", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 41.40);
+
+      // SCENE A software
+      show("#cue-a .ca-head", 0, 0.30);
+      show("#cue-a .ca-wit", 0, 1.00);
+      show("#cue-a .ca-win", 0, 2.60);                 // "buy once, in a box"
+      show("#cue-a .ca-buy", 0, 2.60);
+      hide("#cue-a .ca-buy", 4.80);
+      smash("#cue-a .ca-mo", 0, 4.80, { scale: 1.5, opacity: 0 }); // "became a monthly plan"
+      tl.set("#cue-a .ca-grey", { opacity: 0 }, 0);
+      tl.to("#cue-a .ca-grey", { opacity: 1, duration: 0.25 }, 8.00);  // "holds itself hostage"
+      smash("#cue-a .ca-lock", 0, 10.30, { y: -220, scale: 1.1, opacity: 0 }); // "it greys out"
+      smash("#cue-a .ca-ransom", 0, 11.30, { scale: 1.25, opacity: 0 }); // "pay me, or the document gets it"
+
+      // SCENE B streaming
+      const wallTiles = gsap.utils.toArray("#cue-b .cb-wall .tile");
+      tl.set(wallTiles, { opacity: 0, scale: 0.5 }, 13.10);
+      wallTiles.forEach((t, i) => { tl.to(t, { opacity: 1, scale: 1, duration: 0.16, ease: "back.out(1.7)" }, 13.50 + i * 0.22); });
+      show("#cue-b .cb-own", 13.10, 16.10);            // "you don't own a single song"
+      show("#cue-b .cb-rent", 13.10, 18.30);           // "you rent a giant library"
+      // VANISH on "the whole thing vanishes"
+      tl.to(wallTiles, { opacity: 0, scale: 0.4, duration: 0.25, ease: "power2.in" }, 21.80);
+      hide("#cue-b .cb-own", 21.80); hide("#cue-b .cb-rent", 21.80);
+      show("#cue-b .cb-wit", 13.10, 21.80);            // shocked enters as it vanishes
+      smash("#cue-b .cb-pov", 13.10, 23.70, { scale: 0.5, opacity: 0 }); // "POV: you own nothing"
+
+      // SCENE C five subs (no WIT)
+      show("#cue-c .cc-head", 24.70, 24.70);           // "it's never one. it's five."
+      pop("#cue-c .cc-t1", 24.70, 27.60);              // shows
+      pop("#cue-c .cc-t2", 24.70, 28.50);              // movies
+      pop("#cue-c .cc-t3", 24.70, 29.60);              // other shows
+      pop("#cue-c .cc-t4", 24.70, 30.50);              // music
+      pop("#cue-c .cc-t5", 24.70, 31.90);              // app for apps
+      show("#cue-c .cc-small", 24.70, 34.00);          // "each one is small"
+
+      // SCENE D dungeon/cost
+      smash("#cue-d .cd-cmp", 35.20, 35.50, { scale: 1.2, opacity: 0 }); // "bigger than the old cable bill"
+      show("#cue-d .cd-wit", 35.20, 36.10);
+      show("#cue-d .cd-escaped", 35.20, 38.30);        // "escaped one dungeon"
+      smash("#cue-d .cd-built", 35.20, 39.70, { scale: 1.2, opacity: 0 }); // "built five smaller ones"
+
+      // SCENE E car heated seats
+      show("#cue-e .ce-head", 41.40, 41.60);
+      smash("#cue-e .ce-seat", 41.40, 45.40, { scale: 0.5, opacity: 0 }); // "heated seats"
+      show("#cue-e .ce-bought", 41.40, 46.70);         // "seats you already bought"
+      smash("#cue-e .ce-lock", 41.40, 49.00, { y: -200, scale: 1.1, opacity: 0 }); // "behind a monthly fee"
+      show("#cue-e .ce-price", 41.40, 49.20);
+      show("#cue-e .ce-wit", 41.40, 50.90);
+      // EXPIRED banner takes over the top; hide the headline so it doesn't sit under the banner
+      hide("#cue-e .ce-head", 50.90);
+      smash("#cue-e .ce-exp", 41.40, 50.90, { scale: 0.7, opacity: 0 }); // "free trial of a warm bottom has expired"
+
+      window.__timelines["Section03Spread"] = tl;
+    </script>
+  </div>
+</body>
+</html>

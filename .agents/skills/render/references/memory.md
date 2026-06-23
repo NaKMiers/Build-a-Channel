@@ -1056,6 +1056,34 @@ Promote to shared memory:
 no; the WIT big+high rule is already Core in `_shared/systems/visual-production.md`. This sharpens the
 default size and the bg-reads-as-topic + no-overlap checks for render execution.
 
+### 2026-06-23 - S3 built to template; typing-on-laptop ALSO has baked black bg; ~10s/scene for 54s
+
+Classification: `Render lesson`
+
+Context:
+`why-everything-is-a-subscription-now` Section 3 ("The Spread", 54.165s) built fresh to the standing
+template: 5 distinct vivid object bases (laptop desk → living-room TV → euro cash → jail corridor →
+car interior), varied CSS idea-devices per beat (software window+padlock+ransom; streaming-tile wall
+that VANISHES + POV card; 5 subscription tiles; "5 subs > CABLE" + dungeon labels; heated-seat button +
+padlock + EXPIRED running-gag banner), and 4 giant WIT beats varied by side/pose (hidden-fee-panic CR →
+shocked L → trapped-by-app-screen C → deadpan-side-eye R), with the cash scene breathing (no WIT).
+
+Lesson / reusables:
+- `wit-pose-typing-on-laptop.png` ALSO has a baked BLACK background (not transparent) — add it to the
+  `money-panic` avoid-list for photo scenes. Always VIEW a pose before first use; if it shows on black,
+  swap it (here → hidden-fee-panic). The known-transparent set so far: facepalm, thinking, betrayed,
+  suspicious, shocked, trapped-by-app-screen, deadpan-side-eye, hidden-fee-panic, holding-phone-panic,
+  price-tag-suspicion.
+- For a ~54s section, ~5 scenes at ~10s each reads well; when one idea-cluster would hold one base >15s
+  (here the "five subs / cable / dungeon" stretch), SPLIT it onto a second on-topic base (a jail corridor
+  for "five smaller dungeons") rather than riding one base — matches the owner's "fresh base every ~6-10s."
+- Brand-cover technique: when the only good modern base carries a small logo (a "Blaupunkt" car head unit),
+  keep it but COVER the logo in the final frame with a CSS panel + the giant side WIT; classify it a mockup target.
+- Generate word timings when missing (whisper-tiny.en) — Section 3 had none; pinned every cue to real word starts.
+
+Promote to shared memory:
+no; template is already Core. The typing-on-laptop black-bg fact is a concrete asset gotcha for render/visual-plan.
+
 ## Feedback Entry Template
 
 ```markdown

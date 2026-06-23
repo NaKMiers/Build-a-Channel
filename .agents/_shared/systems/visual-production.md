@@ -240,4 +240,4 @@ sections (and the bar to match for new sections). Three rules:
 - GIANT, VARIED WIT: WIT is the soul of each scene — keep it giant (~1/2 frame) with an expressive on-topic
   pose, and VARY it across scenes in side (left/center/right), scale, vertical anchor, and pose. Never park
   WIT on the same side every scene with text always opposite; flip the text/UI to the side WIT isn't using
-  and rearrange items around WIT. (`wit-pose-money-panic.png` has a baked black bg — avoid on photo scenes.)
+  and rearrange items around WIT. (`wit-pose-money-panic.png` and `wit-pose-typing-on-laptop.png` have a baked black bg — avoid on photo scenes.)

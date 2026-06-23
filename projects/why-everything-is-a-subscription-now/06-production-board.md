@@ -2,7 +2,7 @@
 
 Video: `Why Everything Is a Subscription Now`
 
-Status: `section render in progress (Sections 1-2 built + previewing)`
+Status: `section render in progress (Sections 1-3 built + previewing)`
 
 Source skill: `render`
 
@@ -14,6 +14,7 @@ Renderer: `HyperFrames 0.6.76`
 | ------- | ---- | ---------- | -------- |
 | 1 Hook | 1001 | `http://localhost:1001/#project/Build%20a%20Channel` | `http://localhost:1001/api/projects/Build%20a%20Channel/preview/comp/index.html` |
 | 2 Reframe | 1002 | `http://localhost:1002/#project/Build%20a%20Channel` | `http://localhost:1002/api/projects/Build%20a%20Channel/preview/comp/index.html` |
+| 3 The Spread | 1003 | `http://localhost:1003/#project/Build%20a%20Channel` | `http://localhost:1003/api/projects/Build%20a%20Channel/preview/comp/index.html` |
 
 (Project id resolves to `Build a Channel` on this setup; build URLs from `/api/projects`, not the folder name.)
 
@@ -23,7 +24,7 @@ Renderer: `HyperFrames 0.6.76`
 | --: | --- | --- | --: | --: | --: | --: | --- |
 | 1 | Hook: It's More Than You Think | REMADE · built · previewing · awaiting review | 23.509s | 1001 | 3 | 12 | `section-previews/section-01-hook/index.html` |
 | 2 | Reframe: You Stopped Buying, You Started Renting | REMADE · built · previewing · awaiting review | 37.909s | 1002 | 5 | 16 | `section-previews/section-02-reframe/index.html` |
-| 3 | The Spread | not rendered | 54.165s | 1003 | — | — | — |
+| 3 | The Spread: From Apps To Your Car | built · previewing · awaiting review | 54.165s | 1003 | 5 | 19 | `section-previews/section-03-the-spread/index.html` |
 | 4 | Why Companies Love It | not rendered | 51.093s | 1004 | — | — | — |
 | 5 | The Free Trial | not rendered | 53.867s | 1005 | — | — | — |
 | 6 | Easy In, No Way Out | not rendered | 53.013s | 1006 | — | — | — |
@@ -61,14 +62,27 @@ idea-devices → giant WIT that varies per scene`.
 - Review mirror: `hyperframes/review/section-02.html`. No MP4 exported.
 - Review fixes (2026-06-23, round 2): BS1 base swapped to `base-apps-phone.jpg` (owner: aurora "not suitable"); BS3 `OWN`/`RENT` un-stacked (text-on-text); BS5 RENT tags hidden when payoff lands; all 4 WIT enlarged to giant (width 1200–1300, high anchor). Re-checked lint/validate/inspect clean; snapshots verified.
 
+## Section 3 Build Record (2026-06-23, Section 1 template)
+
+- Preview project: `section-previews/section-03-the-spread/`
+- Composition: `Section03Spread` (1920x1080, 54.165s), port 1003
+- Audio: `section-03-the-spread-david23-am_eric-0.8.mp3`
+- Word timings: GENERATED this run via transformers.js whisper-tiny.en (none existed); pinned to word starts; duration capped at 54.165 (tail overshoot ignored)
+- 5 distinct vivid bases: `base-desk` (software) → `base-tv-room` (streaming) → `base-cash` (five subs) → `base-jail` (dungeon) → `base-car` (heated seats). All CC0 via Openverse; car is a mockup target (Blaupunkt logo covered). See `assets/visual-references/section-03-the-spread/ATTRIBUTION.md`.
+- Idea-devices: software window+padlock+ransom → streaming wall (vanishes)+POV → 5 sub tiles → "5>CABLE"+dungeon labels → heated-seat+padlock+EXPIRED banner.
+- WIT (4 giant beats, varied side/pose): hidden-fee-panic CR → shocked L → trapped-by-app-screen C → deadpan-side-eye R. BS3 breathes. AVOIDED `typing-on-laptop`/`money-panic` (baked black bg).
+- Build fixes: float overlap on track 2 (cue-d trimmed 6.20→6.18); EXPIRED banner hides the headline.
+- Checks: `lint` 0 errors (1 non-blocking density note); `validate` 0 errors / 0 warnings / 40 contrast; `inspect` 0 layout issues; `snapshot` QA at 6.0/11.5/18.5/23.8/29.5/37.0/40.0/47.0/52.5.
+- Review mirror: `hyperframes/review/section-03.html`. No MP4 exported.
+
 ## Stale / Regeneration Notes
 
-- Sections 1-2 are rendered. Sections 3-7 are `not rendered`.
+- Sections 1-3 are rendered. Sections 4-7 are `not rendered`.
 - No `07-review.md` / `08-upload.md` / `09-self-learning.md` exist yet — nothing downstream is stale.
 - If `02-script.md`, the Section 1 voiceover, or the Section 1 visual plan changes, this render becomes stale and must be rebuilt.
 
 ## Next Step Boundary
 
-Next workflow step: `Review` (Section 1).
+Next workflow step: `Review` (Sections 1-3) or render Section 4.
 
-Do not continue into review, upload, or learning until the user asks. Sections 2-7 still need visual-plan + render.
+Do not continue into review, upload, or learning until the user asks. Sections 4-7 still need visual-plan + render.

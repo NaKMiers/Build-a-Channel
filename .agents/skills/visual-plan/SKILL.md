@@ -44,7 +44,7 @@ vivid on-topic OBJECT photo bases -> VARIED idea-devices per beat -> giant WIT t
 
 - Bases: vivid, on-topic, brand/people-free objects that dramatize the line (money/coins/cash, padlocks, glowing screens), not mundane desks/hands. If clean topical photos are scarce, use a strong concrete object + CSS real-UI.
 - Idea-devices: do NOT show every idea in the same handwritten cream rectangle. VARY the device per beat — app-grid tiles, a kinetic number/counter, notification toasts, a countdown, a full-width system/EXPIRED banner, a padlock wall, bold kinetic headline type, badges, a chat bubble, a stamp. Reserve the cream label for the occasional aside.
-- WIT: GIANT (≈`1/2` frame) and the soul of each scene, with an EXPRESSIVE on-topic pose per beat. VARY WIT across scenes in side (left / center / right), scale, vertical anchor, AND pose; flip the text/UI to the side WIT is not using; rearrange items around WIT instead of shrinking it. Never park WIT on the same side every scene with text always opposite. (`wit-pose-money-panic.png` has a baked black bg — avoid on photo scenes.)
+- WIT: GIANT (≈`1/2` frame) and the soul of each scene, with an EXPRESSIVE on-topic pose per beat. VARY WIT across scenes in side (left / center / right), scale, vertical anchor, AND pose; flip the text/UI to the side WIT is not using; rearrange items around WIT instead of shrinking it. Never park WIT on the same side every scene with text always opposite. (`wit-pose-money-panic.png` AND `wit-pose-typing-on-laptop.png` have a baked black bg — avoid on photo scenes.)
 
 If a visual plan would still force `render` to invent the main scene, timing, joke, asset choice, WIT pose, or markup placement, the plan is not finished.
 
