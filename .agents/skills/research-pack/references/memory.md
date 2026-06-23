@@ -141,6 +141,33 @@ Apply next time:
 Promote to shared memory:
 no; this is a research-pack browsing-resilience tactic, not a channel-wide strategy change.
 
+### 2026-06-23 - Wikipedia Is The Reliable Fallback When Search + Primary Sites Are Blocked
+
+Classification: `Operational lesson`
+
+Context:
+While researching `why-everything-is-a-subscription-now`, Google served a CAPTCHA and `ftc.gov`
+returned an automated-request block, same as the earlier `why-everyone-pretends-to-be-busy` run.
+Wikipedia article pages loaded fine and gave well-sourced, quotable background (subscription
+business model; negative option billing).
+
+Lesson:
+When general search and primary/regulator sites are bot-blocked, Wikipedia article bodies are the
+most dependable direct-fetch source for mechanism/definition/history. Two tactics: (1) `browse text`
+returns nav/sidebar chrome — instead read `document.querySelector('.mw-parser-output').innerText` and
+strip `[N]` footnote markers; (2) use Wikipedia's own search (`/w/index.php?search=...&fulltext=1`)
+to find the right article title when a guessed slug 404s to the "sister projects" stub.
+
+Apply next time:
+- Prefer Wikipedia for definitions/mechanism/history when search + primary sites are blocked.
+- Extract `.mw-parser-output` innerText, not the whole-page `text`; keep regexes simple (complex
+  grep over the full body timed out once — slice around a keyword index with JS instead).
+- Still route time-sensitive facts (a current regulation status, a brand's current price) to Open
+  Questions for a live re-check; Wikipedia is good for background, not for "as of today" status.
+
+Promote to shared memory:
+no; this is a research-pack browsing-resilience tactic, not a channel-wide strategy change.
+
 ## Feedback Entry Template
 
 Use this shape when updating the skill after user review:

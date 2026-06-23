@@ -924,6 +924,36 @@ Apply next time:
 
 Promote to shared memory: yes — done (WIT size+anchor rule added to `_shared/systems/visual-production.md`).
 
+### 2026-06-23 - GSAP smash drops percentage translateX; center animated els via explicit left
+
+Classification: `Render lesson`
+
+Context:
+First render for `why-everything-is-a-subscription-now` Section 1 (subscription hook). Built clean on
+the established busy-S1 pattern (real photo bases + CSS bank-app/subscription cards = real-UI; 3 scenes,
+7 cues, 4 WIT beats; word-timings via transformers.js). Two build-time gotchas fixed before handoff.
+
+Lesson:
+- A `smash`/`reveal` helper that animates `scale`/`x`/`y` OVERWRITES an element's CSS `transform`, so a
+  percentage `transform: translateX(-50%)` used for centering is LOST mid-tween (the element jumps to its
+  `left` with no offset). For any element you smash/scale, position it with an explicit `left` (no
+  percentage translate). Rotation in the inline/CSS transform is preserved by GSAP; only the percentage
+  translate breaks. (`show`-only opacity elements are safe to keep `translateX(-50%)`.)
+- Collision check the LATE frame of a multi-WIT scene: a deadpan WIT swapped in on the right covered the
+  punchline pop-up + item labels. Fix = put the swapped WIT on the same clear side as the earlier pose
+  (left) and keep labels/pop-up on the opposite side; verify with a snapshot just AFTER the smash
+  completes (e.g. 18.3s for a 17.9s stamp), since at the exact smash start opacity is still 0.
+- Duplicate-media lint warning: reusing one photo file in two scenes trips `duplicate_media_discovery_risk`
+  — give the second scene its own copy (`*-dim.jpg`) to keep lint 0/0.
+
+Apply next time:
+- never put `translateX(±%)` on an element you also smash/scale; use explicit `left`
+- snapshot multi-WIT/stamp scenes a beat AFTER the impact, not on its `data-start`
+- copy a reused base to a second filename per scene
+
+Promote to shared memory:
+no; render execution mechanics.
+
 ## Feedback Entry Template
 
 ```markdown

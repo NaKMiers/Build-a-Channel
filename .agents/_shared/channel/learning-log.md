@@ -24,6 +24,18 @@ Keep this short. Current rules belong in `current-state.md`, `production-workflo
 - Do not use the removed older WIT directions as current channel WIT.
 - Default final narrator is `David23 / am_eric / 0.84 / en-us`; test `am_eric` directly before declaring it unavailable.
 
+## Experiments
+
+- `Experiment` (owner-requested 2026-06-23, `why-everything-is-a-subscription-now`): denser, trend-aware
+  humor. Owner said "I love joking in the video" and asked for dad jokes, currently-trending internet
+  joke/meme formats, and harmless dark jokes (self-aimed/absurd, never targeting a person or group).
+  Hypothesis: higher joke density (~every 15-25s) + a recognized meme format adapted as a running gag
+  (e.g. "your free trial of ___ has expired") raises retention/shares without hurting learner clarity.
+  Guardrails: every trending/slang line needs an on-screen visual + a one-line learner gloss (the
+  channel bans native-only-knowledge jokes); jokes must still support clarity. Concrete device/object
+  motifs (phone, laptop, monitor, car screen) preferred over abstract symbols. NOT a voice/tone
+  foundation change — validate against real retention before promoting to `channel-foundation.md`.
+
 ## Production Lessons
 
 - For `20-30s` hooks, start with `6-8` simple static boards before adding motion.

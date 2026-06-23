@@ -23,7 +23,39 @@ Use this file for section-selection behavior, section voiceover output shape, TT
 - When generating `David23`, test `am_eric` directly with HyperFrames before declaring it unavailable; `hyperframes@0.6.76` accepts `am_eric` even when the short voice list does not display it.
 - If local TTS tooling cannot generate `David23`, stop and ask before using any alternate scratch voice.
 - Never generate scratch audio as a substitute when the user asked for `David23` unless the user explicitly approves scratch timing audio.
+- Author every section TTS input in the APPROVED Section 5 pacing style by default (spacious, heavy
+  `...` holds, `. .` staccato on punchy lines). See "Canonical Pacing Template" below.
 - Stop before visual plan, HyperFrames build, renders, upload, or self-learning.
+
+## Canonical Pacing Template (follow by default)
+
+APPROVED GOLD STANDARD: the user loves the pace, tone, and pause of `why-everything-is-a-subscription-now`
+Section 5 (final heavy-pause version, `David23 / am_eric / 0.84`, ~50s for ~195 words). Generate ALL
+future section TTS inputs in this style by default — do not wait to be asked, do not start sparse.
+
+Exemplar file to imitate (read it before authoring a new tts-input):
+`projects/why-everything-is-a-subscription-now/voiceover/section-05-free-trial-countdown/tts-inputs/section-05-free-trial-countdown-tts.txt`
+
+The Section 5 recipe (concrete, copyable):
+- SPACIOUS BY DEFAULT. Put a standalone `...` line between almost every spoken beat. Use 2-3 stacked
+  `...` lines for the bigger holds (before reveals, before/after punchlines, around the thesis).
+- Trailing `...` on every setup phrase so the voice lifts and hangs before the payoff lands on its
+  own line ("Just pop in your card..." -> hold -> "you know, for no reason at all.").
+- `. .` inline on punchy short statement-list lines so each lands separately, not blurred
+  ("Strangers love holding your card. .", "For seven days. .", "A mystery charge. .",
+  "Three dollars. .", "Every month. .").
+- Split comma lists into one line per item, each trailing `...` ("The charge is small... / the date
+  is fuzzy... / life is loud.").
+- Precede the key reveal / deadpan punchline with 3 stacked `...` ("Your free trial of financial
+  awareness... / ... / ... / has expired.").
+- Keep speed at the default `0.84` and shape ALL the pacing with ellipses + `. .` (not speed), unless
+  the user explicitly asks for a slower voice on a specific section (e.g. S3 was 0.82 by request).
+- Levers reminder (measured): only `...` (~0.28s) and `.` (~0.21s) add pause; `. .` resets prosody
+  without adding length; commas, line breaks, and `_` add nothing.
+
+Density check: a finished section should have MANY more `...` lines than spoken lines — if it reads
+sparse/even, it will sound "đều đều, buồn ngủ" (flat, sleepy). When unsure, add more holds, not fewer.
+The user's repeated direction across S3/S4/S5 was always "more pause".
 
 ## Output Standard
 
@@ -212,10 +244,10 @@ has no SSML, so `[emphasis]`/`[pause]` in the marked script do not change the au
 
 Lesson:
 To actually affect Kokoro delivery, shape the TTS INPUT TEXT:
-- Pauses: put each beat/sentence on its own line (hyperframes synthesizes per line and concatenates,
-  giving real pauses), add blank lines for longer pauses, and use an ellipsis "..." before a punchline.
-- Pseudo-emphasis: isolate a key word with commas (e.g., `Everything says, urgent.`) for a slight lift.
-  True per-word stress is not possible in Kokoro.
+- Pauses: WRONG to rely on line breaks or commas — both are ignored for timing on this build. Use
+  PERIODS and ELLIPSES. See the 2026-06-23 measured correction below for the verified table.
+- Pseudo-emphasis: true per-word stress is not possible in Kokoro. Comma-isolation gives at most a
+  slight intonation change, not a timing pause.
 - Global deliberateness: lower speed (0.80, or the learner 0.78/0.76) — but changing speed mid-video
   breaks consistency, so prefer text-shaping at the kept 0.84 unless the user wants the whole video slower.
 Keep the canonical `*-script.txt` as the real script wording (matching 02-script.md); only the
@@ -231,6 +263,115 @@ Apply next time:
 
 Promote to shared memory:
 no; this is a voiceover/Kokoro tooling technique, not a channel-wide strategy change.
+
+### 2026-06-23 - MEASURED: Line Breaks AND Commas Do NOT Pause; Use Periods/Ellipses (Correction)
+
+Classification: `Voiceover lesson`
+
+Context:
+For `why-everything-is-a-subscription-now` Section 2 the user added extra blank lines to the tts-input
+and the regenerated audio was byte-identical (`33.003s` -> `33.003s`). The user then asked why line
+breaks produce no audible pause. Rather than guess, ran a controlled experiment with
+`hyperframes@0.6.76 tts ... --voice am_eric --speed 0.84` on the same 8-word phrase
+("The cat sat / the dog ran / the bird flew"):
+
+| Separator                | Duration | Pause vs no-punct |
+| ------------------------ | -------- | ----------------- |
+| no punctuation           | 2.581s   | baseline          |
+| commas `,`               | 2.581s   | none (identical!) |
+| line breaks / blank lines| 2.795s*  | none (newlines flattened; the .214 here is the periods, not the breaks) |
+| em dash `—`              | 2.645s   | ~0.06s (tiny)     |
+| period `.`               | 2.795s   | ~0.21s            |
+| ellipsis `...`           | 2.859s   | ~0.28s (largest)  |
+
+This DISPROVES the 2026-06-21 claims that "each sentence on its own line gives real pauses" and that
+comma-isolation adds a pause. Both the per-section files used the same `0.6.76` build, so the older
+"pauses" were actually the PERIODS in the text, mis-attributed to line layout.
+
+Lesson:
+This HyperFrames Kokoro build flattens ALL whitespace (newlines + blank lines) into one continuous
+string before synthesis. Timing pauses come ONLY from punctuation and `--speed`. Measured pause
+strength: ellipsis `...` > period `.` > em dash `—` > comma `,` ≈ nothing ≈ line break. Even the
+strongest single mark adds only ~0.2-0.3s, so a long dramatic silence is NOT achievable from text
+punctuation alone.
+
+Apply next time:
+- Do NOT shape pauses with line breaks or commas — they do nothing for timing on this build. The
+  canonical `*-script.txt` and `tts-inputs/*.txt` line layout is for human readability only.
+- For a noticeable beat, use `...`; for a normal sentence stop, a period; chain `. ...` or split into
+  more sentences to stack ~0.2s holds.
+- For a LONG/dramatic pause, add real silence at the HyperFrames render/assembly stage (visual holds
+  while audio is quiet) — TTS text cannot produce it.
+- For a uniformly slower read, use `--speed` (0.80 / learner 0.78 / 0.76), not punctuation.
+- Fast confirmation that an edit changed nothing: the JSON `durationSeconds` is identical to the prior run.
+
+Promote to shared memory:
+no; voiceover/Kokoro tooling behavior, not a channel-wide strategy change.
+
+### 2026-06-23 - User's Punctuation Rhythm Style (Anti-Monotone Delivery)
+
+Classification: `Voiceover lesson`
+
+Context:
+On `why-everything-is-a-subscription-now`, the user repeatedly re-tuned the S1 and S2 tts-input files
+by hand, then told me my own punctuation choices made David23 sound "không ấn tượng, không có nhân
+nhá tone giọng gì hết, nghe cứ đều đều rất buồn ngủ" (flat, no light/shade, monotone, sleepy). They
+asked me to LEARN their `... . , _` style so I produce it myself next time. Decoded from their files
++ measured tests (`am_eric`, speed 0.84):
+
+Root cause of my flat output: I used uniform, sparse punctuation -> even rhythm -> monotone. The fix
+is deliberate RHYTHM VARIATION + rising-suspense holds, exactly what the user's files do.
+
+The user's verified style toolkit:
+- Trailing `...` on an UNFINISHED phrase (e.g. `Whatever number you guessed...` then `it's higher.`)
+  = the voice lifts and hangs, then drops on the payoff. THE key anti-monotone move; use it often on
+  setup->payoff pairs. I under-used this.
+- Stacked `...` on their own lines (2-3 in a row) = long dramatic hold after a question or before a
+  punchline. Measured: stacking ellipses DOES add real time (unlike line breaks/commas).
+- `. .` (a period, space, then a lone period) = hard sentence RESET between short punchy lines so each
+  lands with its own fresh intonation instead of blurring into a monotone run-on. Measured: it does
+  NOT add pause length (`. .` ~= `.` in duration); its value is the prosody reset / staccato landing.
+- Commas = FLOW, not pause (measured ~0 added time). Long comma-runs (e.g. "your apps, your shows,
+  your software, even buttons inside your car") are meant to RUSH together as one breath. The CONTRAST
+  between fast comma-runs and choppy `. .` lines is what creates dynamics.
+- `_word_` underscores: NO measurable effect in this Kokoro build (tested `_really_` == `really`,
+  identical duration). True per-word stress is impossible; "stress" a word by isolating it with stops/
+  ellipses around it. The user listed `_` but their files don't actually use it.
+
+Measured pause strength (same 8-word phrase, speed 0.84), to combine with the rhythm rules:
+ellipsis `...` (~0.28s) > period `.` (~0.21s) > em dash `—` (~0.06s) > comma `,` ~= line break ~= 0.
+
+Apply next time (author tts-inputs in THIS style by default, don't wait to be told):
+- Vary pause lengths within a section: single `.` (short), `. .` (reset/staccato), trailing `...`
+  (suspense lift), stacked `...`/`...` lines (long dramatic hold). Even rhythm = sleepy; varied = alive.
+- On every setup->payoff or question->answer pair, end the setup with a trailing `...` and let the
+  payoff land on its own short line.
+- Use `. .` between short punchy list items and thesis lines so they don't blur (e.g.
+  `An app. .` / `A "free" trial that stopped being free. .` / `A show you watched once.`).
+- Keep deliberate fast comma-runs for "everything everywhere" rushes, then contrast with hard stops.
+- Keep the canonical `*-script.txt` as clean real wording; all this rhythm shaping lives only in
+  `tts-inputs/*.txt`. Document any divergence in the section README.
+- After regen, the JSON `durationSeconds` changing confirms the edit had a real timing effect (e.g.
+  adding ellipses raised S2 from 33.109 -> 33.792s; line-break-only edits leave it identical).
+- Speed taste signal (this project, `why-everything-is-a-subscription-now`): for a dense/heavy section
+  the user wanted it slower, asking for BOTH `--speed 0.82` AND extra `...` holds together (S3 went
+  44.928s@0.84 -> 48.896s@0.82). So "slower" can mean lower speed + more ellipses combined, not just
+  one. When a user asks for a slower section, offer both levers and note any mismatch.
+- FINAL speed for this project: after iterating (0.84 -> S3 at 0.82 -> 0.81 -> whole video at 0.79 ->
+  whole video at `0.8`), the user settled on a unified `0.8` across all 7 sections on top of the S5
+  spacious pacing. Takeaway: this user trends slower than the 0.84 channel default for learner clarity
+  and likes to A/B nearby speeds whole-video. When starting a new video for them, expect the comfortable
+  speed around `0.79-0.82` with heavy `...` pacing; offer `~0.8` early, and ALWAYS keep all sections at
+  one speed (per-section mismatches always get unified later, so don't create them).
+
+Reference exemplars to imitate (this project, user-tuned):
+- `projects/why-everything-is-a-subscription-now/voiceover/section-01-hook/tts-inputs/section-01-hook-tts.txt`
+- `projects/why-everything-is-a-subscription-now/voiceover/section-02-reframe/tts-inputs/section-02-reframe-tts.txt`
+
+Promote to shared memory:
+no for now; it's a Kokoro tts-input authoring technique. But it materially improves delivery on EVERY
+video, so apply it on all future sections by default and revisit promoting a short "voice rhythm"
+note to `script-learner-voice.md` if the user confirms the style across more videos.
 
 ## Feedback Entry Template
 

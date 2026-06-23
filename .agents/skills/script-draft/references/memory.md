@@ -150,6 +150,71 @@ Apply next time:
 Promote to shared memory:
 yes, this is a channel-wide pipeline rule.
 
+### 2026-06-23 - Owner Wants Denser, Trend-Aware Humor (And Devices As Motif)
+
+Classification: `Script draft lesson`
+
+Context:
+On `why-everything-is-a-subscription-now`, the owner reviewed rev 1 and asked for a funnier script:
+dad jokes, jokes "trending now on the internet," and even dark jokes — explicitly "as long as it
+doesn't harm anyone." He also asked to swap the abstract `$/mo tag` motif for concrete devices
+(phone, laptop, monitor, car screen), and reminded the skill to browse YouTube/the internet so the
+video lands with viewers. Quote: "I love joking in the video."
+
+Lesson:
+This creator wants a higher humor density than rev-1 dry-explainer baseline, and he wants the comedy
+to feel current. Default future scripts toward more jokes — but keep them learner-safe and
+guardrail-safe. Concrete object/device motifs beat abstract symbols for him.
+
+Apply next time:
+
+- Aim for a joke roughly every 15-25s (denser than the 20-40s baseline), still "joke supports clarity."
+- Build a short "Humor System" block in the script: list the running gag, pun types, and trending
+  formats used, plus a 1-line reference table for the jokes/demand browsed.
+- Trending/meme/slang lines MUST be paired with an on-screen visual and a one-line gloss in English
+  Learner Notes, because the channel bans jokes that need native-only cultural knowledge.
+- Dark jokes allowed ONLY if self-aimed/absurd and targeting the *system*, never a person, group, or
+  protected category, and never encouraging real harm. Add a "Humor Safety" sub-section to Claim Safety.
+- A recognized meme FORMAT adapted to the topic (e.g. "your free trial of ___ has expired" for a
+  subscription video) is a strong, reusable running gag — adapt the format, don't copy a specific line.
+- Prefer concrete real objects/devices as the recurring motif over abstract tags/symbols.
+- Still browse YouTube for demand + current comedic packaging every script revision he asks to "make funnier."
+
+Promote to shared memory:
+yes — logged as an Experiment in `learning-log.md` (humor density is a tunable channel preference to
+validate against retention, not yet a foundation rewrite). Do not change `channel-foundation.md`
+voice/tone without explicit owner confirmation.
+
+### 2026-06-23 - Hooks Must Open A Curiosity Gap, Not Set A Scene
+
+Classification: `Script draft lesson`
+
+Context:
+On `why-everything-is-a-subscription-now`, the owner rejected a hook that opened with a calm
+scene-setter ("It's a normal morning. You pick up your phone..."). His note: a slow situational
+open does not attract viewers; "you should raise curiosity on viewer first."
+
+Lesson:
+The channel's first-10-seconds rule (situation → suspicious detail → WIT reaction → bigger question)
+is right, but the FIRST SPOKEN LINE must itself be a curiosity gap, not throat-clearing. A calm
+"normal morning / you do X" open buries the hook. Lead with a question the viewer can't answer about
+their own life, a surprising claim, or a contradiction — then reveal.
+
+Apply next time:
+
+- Open S1 with one of: a direct question about the viewer ("How many subscriptions are you paying
+  for right now? It's higher than you think"), a surprising/counterintuitive claim, or a sharp
+  contradiction. Make the viewer feel a gap they want closed within the first 1-2 lines.
+- No "It's a normal [time]. You [do ordinary thing]." openers. No branding, no definitions, no
+  "In this video." (already a hard fail).
+- Still hit the rest of the 10s beats (topic by ~3s, contradiction by ~5s, WIT emotion by ~8s,
+  title promise by ~10s) AFTER the curiosity line.
+- The motif/running gag can stay, but as a beat inside the hook, not as the opening line.
+
+Promote to shared memory:
+no — the channel-foundation first-10s rule already covers this; this is a sharper script-draft
+execution note (lead-line must be the curiosity gap).
+
 ## Feedback Entry Template
 
 Use this shape when updating the skill after user review:
