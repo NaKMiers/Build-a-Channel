@@ -215,6 +215,38 @@ Promote to shared memory:
 no — the channel-foundation first-10s rule already covers this; this is a sharper script-draft
 execution note (lead-line must be the curiosity gap).
 
+### 2026-06-24 - Owner Wants Shorter + Cheeky/"Slightly Rude" Register
+
+Classification: `Script draft lesson`
+
+Context:
+On `why-buy-1-get-1-beats-50-off`, after a clean dry-explainer rev 1 (~5:30, 1026 words), the owner
+said: "the script is pretty long, make it shorter a bit, more joke, you can [be] something rude (but
+slightly), make it less serious and more funny." Rev 2 trimmed to ~4:32 / ~855 words and added a
+cheeky edge ("you are the rabbit", "not the first sucker, just the latest", "your brain goes a little
+stupid", "go be slightly harder to trick").
+
+Lesson:
+This creator's comedy taste extends past dry-deadpan into a light cheeky/roast register, AND he
+prefers tighter runtime. "Slightly rude" = affectionate roasting of the *trick*, the concept, and the
+viewer's own brain/wallet/fridge — never a person, group, brand, or protected category, and no
+profanity (channel stays learner-clean). Pairs with the 2026-06-23 denser-humor experiment.
+
+Apply next time:
+- Default new scripts toward tighter (don't pad) + denser jokes (~every 12-20s), and offer a cheeky
+  register option early for this owner.
+- Cheeky lines must be self-aimed or system-aimed only; keep a "Humor Safety" sub-section listing the
+  vetted edgy lines, and gloss any cheeky phrase ("you're the rabbit", "sucker", "inner accountant")
+  in English Learner Notes so the joke isn't native-only.
+- Keep the math/claim honesty even while funnier (the loss-leader "when the store loses" turn stays).
+- A script tone/length rewrite restales already-generated section voiceover — regenerate the affected
+  section(s) and reset the `04-voiceover.md` index.
+
+Promote to shared memory:
+no — sharpens the existing humor-density experiment for this owner; do not change
+`channel-foundation.md` voice/tone without explicit confirmation. Revisit promoting a "cheeky register"
+note if he confirms the style across more videos.
+
 ## Feedback Entry Template
 
 Use this shape when updating the skill after user review:

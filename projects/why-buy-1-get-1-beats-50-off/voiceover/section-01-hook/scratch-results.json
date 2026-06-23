@@ -1,0 +1,22 @@
+{
+  "section": "Section 1: Hook: You're The Rabbit",
+  "status": "final section voice generated",
+  "voice": "am_eric",
+  "voiceName": "David23",
+  "speed": 0.82,
+  "lang": "en-us",
+  "tool": "npx hyperframes@0.6.76 tts",
+  "ttsInput": "tts-inputs/section-01-hook-tts.txt",
+  "outputPath": "scratch-audio/section-01-hook-david23-am_eric-0.82.mp3",
+  "durationSeconds": 23.019,
+  "scriptEstimateSeconds": 24,
+  "rev": "rev 2 cheeky hook; speed lowered to 0.82 by request (22.613s@0.84 -> 23.019s@0.82); rev 1 was 27.157s",
+  "ok": true,
+  "pacingStyle": "approved spacious template: trailing ... on setups, stacked ... for holds, . . staccato on punchy lines",
+  "env": {
+    "pythonPathPrepended": "C:/Users/Anpha Right Choice/AppData/Local/Programs/Python/Python312",
+    "note": "Prepend real Python dir before npx so HyperFrames Kokoro does not hit the Windows Store python stub."
+  },
+  "assetCopy": "none yet; copy MP3 into the section HyperFrames asset folder at render time if needed",
+  "caveat": "Final approved channel voice. Timestamps in 02-script.md are pre-generation estimates; re-align after audio."
+}

@@ -168,6 +168,36 @@ Apply next time:
 Promote to shared memory:
 no; this is a research-pack browsing-resilience tactic, not a channel-wide strategy change.
 
+### 2026-06-24 - Commons MediaSearch Is Thin For Specific Retail Signage; Treat As Mockup Target
+
+Classification: `Research pack lesson`
+
+Context:
+Researching `why-buy-1-get-1-beats-50-off`. Wikipedia article bodies direct-fetched cleanly
+again (BOGO, Loss leader, Anchoring effect, Predictably Irrational) and gave a strong, citable
+mechanism (Tabarrok: shoppers value the 2nd unit less; Ariely: the FREE effect; Wedgwood
+history; food-waste/overspend criticism). Investopedia returned an automated-access block.
+Wikimedia Commons MediaSearch found a perfect real "50% off" tag (`Two cuts of cheese marked
+down 50 percent.jpg`) and baskets/trolleys, but NO clean "buy one get one free" sign.
+
+Lesson:
+For a pricing/marketing topic, the *mechanism* grounds well from Wikipedia + a named
+behavioral-econ source (Ariely/Kahneman). For specific real-world signage/POS/receipt photos,
+Commons MediaSearch is hit-or-miss — do not stall hunting for a perfect real photo of a specific
+sign. Record the one or two license-clear reals you do find as `safe asset (verify license)`, and
+mark the rest as `mockup target / self-shot`, which suits the channel's self-made CSS-tag +
+handwritten-label style anyway (the hero "two tags" motif is built, not copied).
+
+Apply next time:
+- Ground mechanism from Wikipedia bodies + a named source; ground exact stats only if verifiable
+  live, else route to Open Questions (did this for category gross-margins and Ariely's numbers).
+- Try Commons MediaSearch for hero real objects, but cap the effort; missing signage -> mockup target.
+- Keep a "must stay honest" inheritance: carry the topic-intake math caveat into Safe Claims /
+  Claims To Avoid (BOGO ~2x profit only on high margin + both units; on cheap staples it's a loss leader).
+
+Promote to shared memory:
+no; this is a research-pack browsing/visual-leads tactic, not a channel-wide strategy change.
+
 ## Feedback Entry Template
 
 Use this shape when updating the skill after user review:

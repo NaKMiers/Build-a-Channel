@@ -256,9 +256,17 @@ The `5` generated thumbnail variants use a FIXED structure — two comparison th
 
 Comparison style (variants 1-2): a vertical divider down the middle; cool-blue "good/before" half vs warm-orange "bad/after" half; a small black angled tag in each top corner naming each side; one big red-and-white handwritten center hook with a rough red underline; a small shocked WIT standing on the divider with little shock strokes. This mirrors the approved `why-cheap-products-keep-getting-worse` `TODAY vs LATER` comparison thumbnail.
 
-Drama bar (ALL variants): push for high CTR — extreme exaggerated WIT expression (eyes blown wide, jaw dropped, sweat), a tight crop so WIT/emotion reads at mobile size, ONE shocking element, and danger cues (red glow, motion lines). Keep the underlying CLAIM honest (illustrative numbers, no fake promises) so it is dramatic, not deceptive bait.
+Drama bar (ALL variants) — default to MAX, not medium. Every variant should aim for SHOCK, CLICKBAIT, RAGE-BAIT ENERGY, INSANE, and CURIOSITY:
 
-Do not make the five variants random. They should test different click hypotheses for the same video promise.
+- WIT expression cranked all the way up: bulging eyes, jaw ripped wide open, mid-scream, sweat spraying, trembling, comic shock-burst lines, hot red rage glow. Push past "surprised" into screaming meltdown / furious-betrayed / hypnotized-maniac.
+- ONE huge shocking element, oversized: a giant red number, an exploding/overflowing meter, an avalanche of objects, an erupting wallet, an impossible total.
+- Aggressive red markup: thick red circles, fat red arrows, violent double-underlines, jagged "lightning-crack" dividers, glowing danger edges.
+- Tight crop so WIT/emotion/number reads instantly at tiny mobile size.
+- Hooks phrased as short outrage+curiosity QUESTIONS (`A TRICK?!`, `ROBBED?!`, `$10?!`, `FREE?!`, `SCAM?!`) — `1-3` words, big and rough.
+
+Honesty line that keeps it rage-bait ENERGY without tripping a hard-fail (do NOT cross these — they are hard-fails): keep numbers real (illustrative figures from the research), keep hooks as curiosity QUESTIONS rather than asserted lies, and never add fake urgency (`ONLY TODAY`), fabricated stats, or hateful targeting of a real brand/person. The goal: "feels like rage-bait, isn't a lie."
+
+Do not make the five variants random. They should test different click hypotheses for the same video promise. A loud single-face shock-zoom that does NOT repeat the title text often makes the strongest recommended thumbnail (best title-thumbnail contrast).
 
 YouTube descriptions should be useful, not keyword spam.
 

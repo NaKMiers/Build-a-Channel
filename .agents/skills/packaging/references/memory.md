@@ -18,6 +18,7 @@ Use this file for title taste, thumbnail concept behavior, description format, t
 - In chat responses, include every thumbnail variant with its image/path and full prompt in a copyable fenced block.
 - Include tags, keywords, hashtags, links or placeholders, chapters when useful, and pinned comment ideas.
 - Use the channel rule: thumbnail shows the weird situation; title names the hidden logic.
+- Default thumbnail intensity is MAX: SHOCK / CLICKBAIT / RAGE-BAIT ENERGY / INSANE / CURIOSITY. Crank WIT expression all the way up (bulging eyes, jaw ripped open, mid-scream, sweat, shock-burst lines, red rage glow), use ONE oversized shocking element, aggressive red markup (circles, fat arrows, double-underlines, jagged divider), and short `?!` outrage-curiosity hooks (`A TRICK?!`, `ROBBED?!`, `$10?!`). Hold the honesty line (real numbers, question hooks, NO fake urgency/fabricated stat/hateful brand targeting) so it is rage-bait ENERGY, not a lie. Baked into `SKILL.md` → "Drama bar (ALL variants)".
 - Use real visual/reference leads from the research pack to ground thumbnail material, lighting, props, and viewer closeness before generating controlled thumbnail outputs.
 - Score packages with `.agents/_shared/systems/topic-packaging-hooks.md`.
 - Score all `5` thumbnail variants in a comparison table before recommending one.
@@ -208,6 +209,41 @@ Apply next time:
 
 Promote to shared memory:
 No; packaging-skill execution practice.
+
+### 2026-06-24 - Owner wants thumbnails pushed to MAX shock/clickbait/rage/curiosity (honesty line held)
+
+Classification: `Packaging lesson`
+
+Context:
+On `why-buy-1-get-1-beats-50-off`, the first thumbnail prompts (suspicious-squint WIT, calm `SAME?`
+hook) were too tame. The owner asked to remake them: "it must be SHOCK, CLICK BAIT, RAGE BAIT,
+CURIOSITY." This is the same direction as the 2026-06-23 drama-bar lesson but pushed harder, with
+"rage bait" stated explicitly.
+
+Lesson:
+By default crank the drama bar to MAX, not medium. Turn WIT's expression all the way up (bulging
+eyes, jaw ripped open, mid-scream, sweat spraying, comic shock-burst lines, hot red rage glow), make
+the ONE shocking element huge (giant red number, exploding profit meter, avalanche, erupting wallet),
+add aggressive red marks (circles, fat arrows, double-underlines, jagged lightning divider), and use
+outrage+curiosity hooks phrased as QUESTIONS: `A TRICK?!`, `ROBBED?!`, `$10?!`, `FREE?!`.
+
+Honesty line that keeps it rage-bait ENERGY without a hard-fail: keep numbers real (the research's
+$5/$10/$1/$2), keep hooks as curiosity questions (not asserted lies), and never add fake urgency
+("ONLY TODAY"), fabricated stats, or hateful targeting of a real brand/person. "Feels like rage-bait,
+isn't a lie."
+
+Apply next time:
+- default thumbnail intensity = MAX (extreme WIT expression + one huge shocking element + red danger cues)
+- prefer short `?!` curiosity-rage hooks over calm labels
+- still hold the channel honesty guardrail: real numbers, question hooks, no fake urgency/stat, no hateful brand targeting
+- a loud single-face shock-zoom that does NOT repeat the title text often makes the best recommended thumbnail (best title-thumbnail contrast)
+
+Promote to shared memory:
+No; packaging-skill execution practice. The honesty guardrail itself is unchanged in `channel-guardrails.md`.
+
+Update 2026-06-24 (follow-up): owner asked to make this the SKILL default permanently and added "INSANE"
+to the intensity list. Promoted from a per-video note into `SKILL.md` → "Drama bar (ALL variants)" so
+every future run starts at MAX intensity by default (still holding the honesty line).
 
 ## Feedback Entry Template
 

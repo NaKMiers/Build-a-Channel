@@ -156,6 +156,35 @@ Apply next time:
 Promote to shared memory:
 no, this is topic-intake intake-mode behavior, not a channel-wide strategy change.
 
+### 2026-06-24 - User-Brought Pricing Claim: Verify Math Before Persisting
+
+Classification: `Topic intake lesson`
+
+Context:
+The user floated their own angle ("Buy 1 Get 1 Free makes more profit than 50% off, isn't
+it? but it looks the same"). It scored highest in the batch (`39/40`) and had the strongest
+proven demand found all session (Vox "Why 'Buy one, get one free' isn't a great deal" ~3.7M).
+Persisted as `projects/why-buy-1-get-1-beats-50-off/00-topic-intake.md`.
+
+Lesson:
+When the user brings a topic built on a math/economics/pricing claim, verify the actual
+mechanism with a worked numeric example BEFORE scoring or persisting, and bake an honesty
+guardrail into the intake file. For BOGO vs 50% off: BOGO ~2x the store's gross profit ONLY
+when margin > 50% (item costs under half its price) AND the shopper takes both units; and the
+two deals are not equal for the buyer either (50% off keeps cash if you only need one). The
+channel angle is the contradiction ("same deal, double profit / free cuts your judgment"), not
+a blanket "BOGO is always more profit."
+
+Apply next time:
+- For any "X is more profitable / cheaper / a trick" idea, build the small worked example first.
+- Write a "must stay honest" section into `00-topic-intake.md` stating the conditions under which
+  the claim holds, so research and script inherit the guardrail.
+- A user's own idea is still Suggest Mode until they say "start"/"I choose that"; only then Persist.
+- Confirming the user's instinct (with the precise condition) builds trust; don't just validate blindly.
+
+Promote to shared memory:
+no, this is topic-intake verification behavior, not a channel-wide strategy change.
+
 ## Feedback Entry Template
 
 Use this shape when updating the skill after user review:
