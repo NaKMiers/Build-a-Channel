@@ -1,0 +1,800 @@
+{
+  "transcript": "Here's the genius part. To get you in, they make it feel free. Start your free trial, no charge today, just pop in your card. You know, for no reason at all. Totally normal, strangers love holding your card, and the trial is real. It really is free for seven days after that, a tiny countdown you can't see hits zero. And free quietly becomes a payment. Most people don't cancel on day seven. They forget, not because they're careless, because forgetting is the design. The charge is small. The date is fuzzy. Life is loud. So the little payment just continues forever a ghost living in your bank account. Rent free. Well, not rent free. That's the whole problem. Open your bank statement right now. And you'll probably find one. A mystery charge is three dollars every month for a thing you opened once. In a year, you cannot name your free trial of financial awareness has expired.",
+  "words": [
+    {
+      "word": "Here's",
+      "start": 0,
+      "end": 0.42
+    },
+    {
+      "word": "the",
+      "start": 0.42,
+      "end": 0.62
+    },
+    {
+      "word": "genius",
+      "start": 0.62,
+      "end": 0.96
+    },
+    {
+      "word": "part.",
+      "start": 0.96,
+      "end": 1.76
+    },
+    {
+      "word": "To",
+      "start": 1.76,
+      "end": 1.94
+    },
+    {
+      "word": "get",
+      "start": 1.94,
+      "end": 2.12
+    },
+    {
+      "word": "you",
+      "start": 2.12,
+      "end": 2.26
+    },
+    {
+      "word": "in,",
+      "start": 2.26,
+      "end": 2.52
+    },
+    {
+      "word": "they",
+      "start": 2.52,
+      "end": 2.52
+    },
+    {
+      "word": "make",
+      "start": 2.52,
+      "end": 2.7
+    },
+    {
+      "word": "it",
+      "start": 2.7,
+      "end": 2.86
+    },
+    {
+      "word": "feel",
+      "start": 2.86,
+      "end": 3.14
+    },
+    {
+      "word": "free.",
+      "start": 3.14,
+      "end": 3.66
+    },
+    {
+      "word": "Start",
+      "start": 3.66,
+      "end": 3.9
+    },
+    {
+      "word": "your",
+      "start": 3.9,
+      "end": 4.12
+    },
+    {
+      "word": "free",
+      "start": 4.12,
+      "end": 4.36
+    },
+    {
+      "word": "trial,",
+      "start": 4.36,
+      "end": 4.94
+    },
+    {
+      "word": "no",
+      "start": 4.94,
+      "end": 5.16
+    },
+    {
+      "word": "charge",
+      "start": 5.16,
+      "end": 5.52
+    },
+    {
+      "word": "today,",
+      "start": 5.52,
+      "end": 6
+    },
+    {
+      "word": "just",
+      "start": 6,
+      "end": 6.3
+    },
+    {
+      "word": "pop",
+      "start": 6.3,
+      "end": 6.5
+    },
+    {
+      "word": "in",
+      "start": 6.5,
+      "end": 6.62
+    },
+    {
+      "word": "your",
+      "start": 6.62,
+      "end": 6.8
+    },
+    {
+      "word": "card.",
+      "start": 6.8,
+      "end": 7.34
+    },
+    {
+      "word": "You",
+      "start": 7.34,
+      "end": 7.6
+    },
+    {
+      "word": "know,",
+      "start": 7.6,
+      "end": 7.8
+    },
+    {
+      "word": "for",
+      "start": 7.8,
+      "end": 7.92
+    },
+    {
+      "word": "no",
+      "start": 7.92,
+      "end": 8.2
+    },
+    {
+      "word": "reason",
+      "start": 8.2,
+      "end": 8.42
+    },
+    {
+      "word": "at",
+      "start": 8.42,
+      "end": 8.64
+    },
+    {
+      "word": "all.",
+      "start": 8.64,
+      "end": 9.16
+    },
+    {
+      "word": "Totally",
+      "start": 9.16,
+      "end": 9.48
+    },
+    {
+      "word": "normal,",
+      "start": 9.48,
+      "end": 10.54
+    },
+    {
+      "word": "strangers",
+      "start": 10.54,
+      "end": 10.54
+    },
+    {
+      "word": "love",
+      "start": 10.54,
+      "end": 10.94
+    },
+    {
+      "word": "holding",
+      "start": 10.94,
+      "end": 11.22
+    },
+    {
+      "word": "your",
+      "start": 11.22,
+      "end": 11.46
+    },
+    {
+      "word": "card,",
+      "start": 11.46,
+      "end": 11.86
+    },
+    {
+      "word": "and",
+      "start": 11.86,
+      "end": 12.04
+    },
+    {
+      "word": "the",
+      "start": 12.04,
+      "end": 12.26
+    },
+    {
+      "word": "trial",
+      "start": 12.26,
+      "end": 12.52
+    },
+    {
+      "word": "is",
+      "start": 12.52,
+      "end": 12.8
+    },
+    {
+      "word": "real.",
+      "start": 12.8,
+      "end": 13.1
+    },
+    {
+      "word": "It",
+      "start": 13.1,
+      "end": 13.34
+    },
+    {
+      "word": "really",
+      "start": 13.34,
+      "end": 13.62
+    },
+    {
+      "word": "is",
+      "start": 13.62,
+      "end": 13.9
+    },
+    {
+      "word": "free",
+      "start": 13.9,
+      "end": 14.26
+    },
+    {
+      "word": "for",
+      "start": 14.26,
+      "end": 14.66
+    },
+    {
+      "word": "seven",
+      "start": 14.66,
+      "end": 14.98
+    },
+    {
+      "word": "days",
+      "start": 14.98,
+      "end": 15.36
+    },
+    {
+      "word": "after",
+      "start": 15.36,
+      "end": 15.76
+    },
+    {
+      "word": "that,",
+      "start": 15.76,
+      "end": 16.32
+    },
+    {
+      "word": "a",
+      "start": 16.32,
+      "end": 16.42
+    },
+    {
+      "word": "tiny",
+      "start": 16.42,
+      "end": 16.46
+    },
+    {
+      "word": "countdown",
+      "start": 16.46,
+      "end": 16.9
+    },
+    {
+      "word": "you",
+      "start": 16.9,
+      "end": 17.08
+    },
+    {
+      "word": "can't",
+      "start": 17.08,
+      "end": 17.38
+    },
+    {
+      "word": "see",
+      "start": 17.38,
+      "end": 17.58
+    },
+    {
+      "word": "hits",
+      "start": 17.58,
+      "end": 17.84
+    },
+    {
+      "word": "zero.",
+      "start": 17.84,
+      "end": 18.7
+    },
+    {
+      "word": "And",
+      "start": 18.7,
+      "end": 19.12
+    },
+    {
+      "word": "free",
+      "start": 19.12,
+      "end": 19.4
+    },
+    {
+      "word": "quietly",
+      "start": 19.4,
+      "end": 19.78
+    },
+    {
+      "word": "becomes",
+      "start": 19.78,
+      "end": 20.28
+    },
+    {
+      "word": "a",
+      "start": 20.28,
+      "end": 20.52
+    },
+    {
+      "word": "payment.",
+      "start": 20.52,
+      "end": 20.98
+    },
+    {
+      "word": "Most",
+      "start": 20.98,
+      "end": 21.24
+    },
+    {
+      "word": "people",
+      "start": 21.24,
+      "end": 21.52
+    },
+    {
+      "word": "don't",
+      "start": 21.52,
+      "end": 21.86
+    },
+    {
+      "word": "cancel",
+      "start": 21.86,
+      "end": 22.14
+    },
+    {
+      "word": "on",
+      "start": 22.14,
+      "end": 22.4
+    },
+    {
+      "word": "day",
+      "start": 22.4,
+      "end": 22.62
+    },
+    {
+      "word": "seven.",
+      "start": 22.62,
+      "end": 23.24
+    },
+    {
+      "word": "They",
+      "start": 23.24,
+      "end": 23.48
+    },
+    {
+      "word": "forget,",
+      "start": 23.48,
+      "end": 24.16
+    },
+    {
+      "word": "not",
+      "start": 24.16,
+      "end": 24.46
+    },
+    {
+      "word": "because",
+      "start": 24.46,
+      "end": 24.78
+    },
+    {
+      "word": "they're",
+      "start": 24.78,
+      "end": 25.26
+    },
+    {
+      "word": "careless,",
+      "start": 25.26,
+      "end": 25.56
+    },
+    {
+      "word": "because",
+      "start": 25.56,
+      "end": 26.04
+    },
+    {
+      "word": "forgetting",
+      "start": 26.04,
+      "end": 26.34
+    },
+    {
+      "word": "is",
+      "start": 26.34,
+      "end": 26.66
+    },
+    {
+      "word": "the",
+      "start": 26.66,
+      "end": 26.84
+    },
+    {
+      "word": "design.",
+      "start": 26.84,
+      "end": 27.64
+    },
+    {
+      "word": "The",
+      "start": 27.64,
+      "end": 27.64
+    },
+    {
+      "word": "charge",
+      "start": 27.64,
+      "end": 27.92
+    },
+    {
+      "word": "is",
+      "start": 27.92,
+      "end": 28.22
+    },
+    {
+      "word": "small.",
+      "start": 28.22,
+      "end": 28.72
+    },
+    {
+      "word": "The",
+      "start": 28.72,
+      "end": 28.72
+    },
+    {
+      "word": "date",
+      "start": 28.72,
+      "end": 28.92
+    },
+    {
+      "word": "is",
+      "start": 28.92,
+      "end": 29.14
+    },
+    {
+      "word": "fuzzy.",
+      "start": 29.14,
+      "end": 29.84
+    },
+    {
+      "word": "Life",
+      "start": 29.84,
+      "end": 29.84
+    },
+    {
+      "word": "is",
+      "start": 29.84,
+      "end": 30.08
+    },
+    {
+      "word": "loud.",
+      "start": 30.08,
+      "end": 30.68
+    },
+    {
+      "word": "So",
+      "start": 30.68,
+      "end": 30.7
+    },
+    {
+      "word": "the",
+      "start": 30.7,
+      "end": 30.8
+    },
+    {
+      "word": "little",
+      "start": 30.8,
+      "end": 31
+    },
+    {
+      "word": "payment",
+      "start": 31,
+      "end": 31.3
+    },
+    {
+      "word": "just",
+      "start": 31.3,
+      "end": 32.12
+    },
+    {
+      "word": "continues",
+      "start": 32.12,
+      "end": 32.72
+    },
+    {
+      "word": "forever",
+      "start": 32.72,
+      "end": 33.54
+    },
+    {
+      "word": "a",
+      "start": 33.54,
+      "end": 33.96
+    },
+    {
+      "word": "ghost",
+      "start": 33.96,
+      "end": 34.4
+    },
+    {
+      "word": "living",
+      "start": 34.4,
+      "end": 34.8
+    },
+    {
+      "word": "in",
+      "start": 34.8,
+      "end": 34.96
+    },
+    {
+      "word": "your",
+      "start": 34.96,
+      "end": 35.1
+    },
+    {
+      "word": "bank",
+      "start": 35.1,
+      "end": 35.28
+    },
+    {
+      "word": "account.",
+      "start": 35.28,
+      "end": 36.28
+    },
+    {
+      "word": "Rent",
+      "start": 36.28,
+      "end": 36.4
+    },
+    {
+      "word": "free.",
+      "start": 36.4,
+      "end": 37
+    },
+    {
+      "word": "Well,",
+      "start": 37,
+      "end": 37.38
+    },
+    {
+      "word": "not",
+      "start": 37.38,
+      "end": 37.56
+    },
+    {
+      "word": "rent",
+      "start": 37.56,
+      "end": 37.82
+    },
+    {
+      "word": "free.",
+      "start": 37.82,
+      "end": 38.36
+    },
+    {
+      "word": "That's",
+      "start": 38.36,
+      "end": 38.44
+    },
+    {
+      "word": "the",
+      "start": 38.44,
+      "end": 38.54
+    },
+    {
+      "word": "whole",
+      "start": 38.54,
+      "end": 38.88
+    },
+    {
+      "word": "problem.",
+      "start": 38.88,
+      "end": 39.5
+    },
+    {
+      "word": "Open",
+      "start": 39.5,
+      "end": 39.7
+    },
+    {
+      "word": "your",
+      "start": 39.7,
+      "end": 39.92
+    },
+    {
+      "word": "bank",
+      "start": 39.92,
+      "end": 40.18
+    },
+    {
+      "word": "statement",
+      "start": 40.18,
+      "end": 40.54
+    },
+    {
+      "word": "right",
+      "start": 40.54,
+      "end": 40.84
+    },
+    {
+      "word": "now.",
+      "start": 40.84,
+      "end": 41.5
+    },
+    {
+      "word": "And",
+      "start": 41.5,
+      "end": 41.62
+    },
+    {
+      "word": "you'll",
+      "start": 41.62,
+      "end": 41.84
+    },
+    {
+      "word": "probably",
+      "start": 41.84,
+      "end": 42.22
+    },
+    {
+      "word": "find",
+      "start": 42.22,
+      "end": 42.62
+    },
+    {
+      "word": "one.",
+      "start": 42.62,
+      "end": 43.3
+    },
+    {
+      "word": "A",
+      "start": 43.3,
+      "end": 43.3
+    },
+    {
+      "word": "mystery",
+      "start": 43.3,
+      "end": 43.52
+    },
+    {
+      "word": "charge",
+      "start": 43.52,
+      "end": 44.22
+    },
+    {
+      "word": "is",
+      "start": 44.22,
+      "end": 44.5
+    },
+    {
+      "word": "three",
+      "start": 44.5,
+      "end": 44.84
+    },
+    {
+      "word": "dollars",
+      "start": 44.84,
+      "end": 45.34
+    },
+    {
+      "word": "every",
+      "start": 45.62,
+      "end": 45.82
+    },
+    {
+      "word": "month",
+      "start": 45.82,
+      "end": 46.32
+    },
+    {
+      "word": "for",
+      "start": 46.32,
+      "end": 46.6
+    },
+    {
+      "word": "a",
+      "start": 46.6,
+      "end": 46.68
+    },
+    {
+      "word": "thing",
+      "start": 46.68,
+      "end": 46.8
+    },
+    {
+      "word": "you",
+      "start": 46.8,
+      "end": 47.06
+    },
+    {
+      "word": "opened",
+      "start": 47.06,
+      "end": 47.3
+    },
+    {
+      "word": "once.",
+      "start": 47.3,
+      "end": 48.34
+    },
+    {
+      "word": "In",
+      "start": 48.34,
+      "end": 48.38
+    },
+    {
+      "word": "a",
+      "start": 48.38,
+      "end": 48.46
+    },
+    {
+      "word": "year,",
+      "start": 48.46,
+      "end": 48.82
+    },
+    {
+      "word": "you",
+      "start": 48.82,
+      "end": 48.82
+    },
+    {
+      "word": "cannot",
+      "start": 48.82,
+      "end": 49.08
+    },
+    {
+      "word": "name",
+      "start": 49.08,
+      "end": 49.64
+    },
+    {
+      "word": "your",
+      "start": 49.64,
+      "end": 50.16
+    },
+    {
+      "word": "free",
+      "start": 50.16,
+      "end": 50.5
+    },
+    {
+      "word": "trial",
+      "start": 50.5,
+      "end": 50.8
+    },
+    {
+      "word": "of",
+      "start": 50.8,
+      "end": 50.98
+    },
+    {
+      "word": "financial",
+      "start": 50.98,
+      "end": 51.56
+    },
+    {
+      "word": "awareness",
+      "start": 51.7,
+      "end": 52.22
+    },
+    {
+      "word": "has",
+      "start": 52.22,
+      "end": 53.04
+    },
+    {
+      "word": "expired.",
+      "start": 53.04,
+      "end": 54.62
+    }
+  ]
+}

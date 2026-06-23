@@ -2,7 +2,7 @@
 
 Video: `Why Everything Is a Subscription Now`
 
-Status: `section render in progress (Sections 1-4 built + previewing)`
+Status: `section render in progress (Sections 1-5 built + previewing)`
 
 Source skill: `render`
 
@@ -16,6 +16,7 @@ Renderer: `HyperFrames 0.6.76`
 | 2 Reframe | 1002 | `http://localhost:1002/#project/Build%20a%20Channel` | `http://localhost:1002/api/projects/Build%20a%20Channel/preview/comp/index.html` |
 | 3 The Spread | 1003 | `http://localhost:1003/#project/Build%20a%20Channel` | `http://localhost:1003/api/projects/Build%20a%20Channel/preview/comp/index.html` |
 | 4 Why Companies Love It | 1004 | `http://localhost:1004/#project/Build%20a%20Channel` | `http://localhost:1004/api/projects/Build%20a%20Channel/preview/comp/index.html` |
+| 5 The Free Trial | 1005 | `http://localhost:1005/#project/Build%20a%20Channel` | `http://localhost:1005/api/projects/Build%20a%20Channel/preview/comp/index.html` |
 
 (Project id resolves to `Build a Channel` on this setup; build URLs from `/api/projects`, not the folder name.)
 
@@ -27,7 +28,7 @@ Renderer: `HyperFrames 0.6.76`
 | 2 | Reframe: You Stopped Buying, You Started Renting | REMADE · built · previewing · awaiting review | 37.909s | 1002 | 5 | 16 | `section-previews/section-02-reframe/index.html` |
 | 3 | The Spread: From Apps To Your Car | built · previewing · awaiting review | 54.165s | 1003 | 5 | 19 | `section-previews/section-03-the-spread/index.html` |
 | 4 | Why Companies Love It: One Sale Becomes Forever | built · previewing · awaiting review | 51.093s | 1004 | 6 | 15 | `section-previews/section-04-why-companies-love-it/index.html` |
-| 5 | The Free Trial | not rendered | 53.867s | 1005 | — | — | — |
+| 5 | The Free Trial Is A Countdown | built · previewing · awaiting review | 53.867s | 1005 | 6 | 13 | `section-previews/section-05-free-trial-countdown/index.html` |
 | 6 | Easy In, No Way Out | not rendered | 53.013s | 1006 | — | — | — |
 | 7 | Payoff | not rendered | 54.101s | 1007 | — | — | — |
 
@@ -90,14 +91,28 @@ idea-devices → giant WIT that varies per scene`.
 - Review mirror: `hyperframes/review/section-04.html`. No MP4 exported.
 - Review fix (2026-06-23, round 2): BS5's 4 red calendar rings circled nothing → replaced with an `AUTO-PAY · same charge every month` statement card (identical −$9.99 rows) that actually demonstrates "recurring." Re-checked clean.
 
+## Section 5 Build Record (2026-06-23, Section 1 template)
+
+- Preview project: `section-previews/section-05-free-trial-countdown/`
+- Composition: `Section05Trial` (1920x1080, 53.867s), port 1005
+- Audio: `section-05-free-trial-countdown-david23-am_eric-0.8.mp3`
+- Word timings: GENERATED this run via transformers.js whisper-tiny.en (none existed); pinned to word starts; duration capped at 53.867
+- 6 distinct vivid bases: `base-gift` (feel-free) → `base-desk` (pop card) → `base-hourglass` (countdown) → `base-busydesk` (forget) → `base-wallet` (ghost) → `base-piggy` (statement). All CC0 via Openverse. See section ATTRIBUTION. (Review fix: BS1/BS4 blank-phone → gift / everyday desk; all bases now distinct.)
+- Real-UI idea-devices: FREE splash → credit card + form → FREE-TRIAL→$2.99 flip → Day-7 reminder fades → translucent ghost −$2.99 charges → bank statement with the `?? UNKNOWN −$3.00` row RINGED in red + EXPIRED banner.
+- WIT (4 giant beats, varied side/pose): deadpan-side-eye R → hidden-fee-panic L → thinking R → holding-receipt-evidence L. S1 + S5 breathe. AVOIDED `typing-on-laptop`/`money-panic` (baked black bg).
+- Build fixes: no emoji glyph (ghost = CSS card); notification grey-out via opacity (not className); the red ring nudged to land on the exact mystery-charge row; `$3 every month` label moved below the statement clear of WIT.
+- Checks: `lint` 0 errors (1 non-blocking density note); `validate` 0 errors / 0 warnings / ~60 contrast; `inspect` 0 layout issues; `snapshot` QA at 4.0/10.8/17.0/19.6/27.0/35.0/44.0/51.5.
+- Review mirror: `hyperframes/review/section-05.html`. No MP4 exported.
+- Review fix (2026-06-23, round 2): BS1/BS4 blank-screen phone (placeholder-looking + reused) → distinct `base-gift` (free = a gift) and `base-busydesk` (forget / loud life). Re-checked clean.
+
 ## Stale / Regeneration Notes
 
-- Sections 1-4 are rendered. Sections 5-7 are `not rendered`.
+- Sections 1-5 are rendered. Sections 6-7 are `not rendered`.
 - No `07-review.md` / `08-upload.md` / `09-self-learning.md` exist yet — nothing downstream is stale.
 - If `02-script.md`, the Section 1 voiceover, or the Section 1 visual plan changes, this render becomes stale and must be rebuilt.
 
 ## Next Step Boundary
 
-Next workflow step: `Review` (Sections 1-4) or render Section 5.
+Next workflow step: `Review` (Sections 1-5) or render Section 6.
 
-Do not continue into review, upload, or learning until the user asks. Sections 5-7 still need visual-plan + render.
+Do not continue into review, upload, or learning until the user asks. Sections 6-7 still need visual-plan + render.

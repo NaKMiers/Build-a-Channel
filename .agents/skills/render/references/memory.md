@@ -1137,6 +1137,59 @@ Apply next time:
 Promote to shared memory:
 no; reinforces the existing "markup must target a real object" rule with a concrete photo-base case.
 
+### 2026-06-23 - S5 built; blank-phone CSS canvas; meaningful ring on a CSS row; object-per-beat for UI sections
+
+Classification: `Render lesson`
+
+Context:
+`why-everything-is-a-subscription-now` Section 5 ("The Free Trial Is A Countdown", 53.9s) — the most
+real-UI-heavy section. Built to template with 5 distinct vivid bases (blank phone → keyboard desk →
+HOURGLASS → blank phone → wallet → piggy) and CSS real-UI per beat (FREE splash, credit card, FREE-TRIAL
+00:00 → $2.99/mo flip, Day-7 reminder that fades, translucent ghost charges, a bank statement). 4 giant
+WIT beats. Sourcing was very flaky (Openverse empty on card/desk/calendar/statement queries).
+
+Reusable lessons:
+- For UI-heavy sections, satisfy "real photo base + real-UI" two ways: (1) a "Hand holding smartphone with
+  BLANK WHITE SCREEN" photo (Wikimedia) is the perfect CSS-UI canvas — float the app screen on it; (2) pick
+  a literal OBJECT for the concept instead of forcing a phone every time — an HOURGLASS for "the free trial
+  is a COUNTDOWN" is far better than another phone, and keeps bases distinct.
+- The earlier S4 "rings circle nothing" lesson, applied forward: here the one red ring rings a row in a CSS
+  bank statement *I control*, so it lands exactly on the `?? UNKNOWN −$3.00` row. A ring on a CSS element is
+  safe/meaningful; a ring on a photo is not. NOTE: estimating the row's Y from CSS padding was off by a row —
+  it took 2 snapshot nudges to align; always snapshot-verify a ring's target row.
+- When sourcing is blocked, lean into the owner's real-UI love: build the card/statement/flip/notification in
+  CSS rather than chasing stock photos of them. Reject person-in-frame card photos (no-face), Apple flat-lays,
+  ID-cards-with-faces, and cutout-illustrations-on-white.
+- Don't plan emoji (👻/👍) — render a CSS shape/card instead (emoji fail in snapshot Chromium).
+
+Promote to shared memory:
+no; template is Core. Concrete render mechanics (blank-phone canvas, object-per-concept, ring-on-CSS-row).
+
+### 2026-06-23 - A blank-screen-phone base reads as a placeholder; pick a concrete metaphor object
+
+Classification: `Render lesson`
+
+Context:
+S5 review. Owner: "0:00 and 0:23 the illustrative images is white screen phone — this phone doesn't match
+the scene and script… use 2 images instead of reuse the same image for 2 scenes." I'd used the same
+blank-white-screen phone (the CSS-UI canvas) as the base for BS1 ("make it feel free") and BS4 ("they
+forget"). Fixed: BS1 → a pink GIFT box (free = a gift/lure); BS4 → an everyday DESK (notebook + coffee =
+a loud, busy life where the reminder is lost). All 6 bases now distinct.
+
+Lesson:
+- A "hand holding a phone with a blank white screen" is great as a CSS-UI *canvas*, but as a visible BASE it
+  reads as an empty placeholder/mockup, not a scene — and it doesn't describe the line. Prefer a CONCRETE
+  metaphor object that depicts the beat: a gift box for "they make it feel free," an everyday desk/clutter
+  for "you forget / life is loud," an hourglass for "countdown," a wallet for "drained account."
+- Reusing one base image for two scenes is a review failure even when non-adjacent — give every scene its
+  own distinct base. (The earlier lint-driven "2nd filename" trick avoids the lint warning but NOT the
+  visual repetition the owner objects to — only use it for a genuine, intended callback.)
+- The CSS idea-devices (FREE splash, Day-7 reminder) are base-independent: swapping the photo base under
+  them needed no device changes.
+
+Promote to shared memory:
+no; sharpens the existing "vivid object base per scene / no reuse" rule with the blank-phone-placeholder case.
+
 ## Feedback Entry Template
 
 ```markdown
