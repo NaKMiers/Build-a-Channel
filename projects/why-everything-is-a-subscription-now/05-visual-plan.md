@@ -2,7 +2,7 @@
 
 Video: `Why Everything Is a Subscription Now`
 
-Status: `section visual plan in progress (Section 1 planned)`
+Status: `section visual plan in progress (Sections 1-2 planned)`
 
 Source skill: `visual-plan`
 
@@ -29,8 +29,8 @@ Source files:
 
 | # | Section | Status | Duration | Big Scenes | Cue States | Section plan | Reference board | Notes |
 |---:|---|---|---:|---:|---:|---|---|---|
-| 1 | Hook: It's More Than You Think | planned | 23.509s | 3 | 7 | `visual-plan/section-01-hook/section-01-hook-visual-plan.md` | `visual-plan/section-01-hook/reference-board.md` | real bases + CSS bank-app/device screens; 4 WIT beats |
-| 2 | Reframe: You Stopped Buying, You Started Renting | not planned | 39.787s | — | — | — | — | — |
+| 1 | Hook: It's More Than You Think | planned (REMADE) | 23.509s | 3 | 12 | `visual-plan/section-01-hook/section-01-hook-visual-plan.md` | `visual-plan/section-01-hook/reference-board.md` | remade: money/cash/padlock bases + app grid/toasts/modal/padlock-wall; dynamic WIT |
+| 2 | Reframe: You Stopped Buying, You Started Renting | planned (REMADE) | 37.909s | 5 | 16 | `visual-plan/section-02-reframe/section-02-reframe-visual-plan.md` | `visual-plan/section-02-reframe/reference-board.md` | remade to S1 template: phone/vinyl/phone/padlock/flat-lay bases; varied idea-devices (struck banner, OWN/RENT stamps, paywall, lock-card, RENT tags); giant WIT varied R/L/center/R (4 beats) |
 | 3 | The Spread: From Apps To Your Car | not planned | 54.165s | — | — | — | — | — |
 | 4 | Why Companies Love It: One Sale Becomes Forever | not planned | 51.093s | — | — | — | — | — |
 | 5 | The Free Trial Is A Countdown | not planned | 53.867s | — | — | — | — | — |

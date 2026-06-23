@@ -704,6 +704,76 @@ label/UI positions AROUND a big high WIT from the start so render doesn't have t
 Promote to shared memory: yes — added to `_shared/systems/visual-production.md` (real-bg-behind-every-scene
 + WIT size/anchor) and the SKILL.md files; brand-system already carries the real-UI preference.
 
+### 2026-06-23 - Vivid object photos + dynamic WIT + VARIED idea-devices (not repeated label boxes)
+
+Classification: `Core` (confirmed channel creative direction)
+
+Context:
+`why-everything-is-a-subscription-now` Section 1 v1 used calm stock photos (two phones in a park, a
+dim home-office desk), the milder WIT poses (suspicious/shocked/deadpan), and the SAME cream
+handwritten rectangle label box for nearly every on-screen idea. Owner rejected it: "illustrative
+images not suitable, mundane and boring… WIT poses are boring… the rectangle boxes show up boring and
+repeat, not creative — try another way to demonstrate ideas, make it vary… remake completely." The
+accepted remake: vivid on-topic OBJECT photos (a pile of coins, a pile of cash, padlocks on a gate),
+DYNAMIC expressive WIT (price-tag-suspicion, hidden-fee-panic, holding-phone-panic, trapped-by-app-screen),
+and VARIED idea-demonstration devices — a colorful app-tile grid, a jumping "12+" counter, notification
+charge toasts, a free-trial countdown that flips to "$/mo", a full-screen EXPIRED system modal, and a
+padlock-wall with bold kinetic payoff type. Zero cream label boxes.
+
+Lesson (apply to ALL future sections):
+- IMAGERY: prefer vivid, concrete, on-topic OBJECT photos that dramatize the line (money/coins/cash for
+  "money leaving", padlocks for "locked/rent", a glowing screen, etc.) over calm desks/hands. If clean
+  topical photos are scarce, pivot to a strong concrete object (money, lock) + the owner's loved CSS real-UI.
+- WIT: pick the most EXPRESSIVE/funny pose for the beat (panic, hidden-fee-panic, trapped, betrayed,
+  empty-wallet, receipt-attacked, facepalm) — not the mild suspicious/neutral/deadpan defaults. NOTE:
+  `wit-pose-money-panic.png` has a baked BLACK background (not transparent) — do not use it on photo scenes.
+- TEXT/IDEA DEVICES: do NOT show every idea in the same handwritten cream rectangle. VARY the device per
+  beat — app-grid tiles, a big kinetic number/counter, notification toasts, a countdown timer, a system
+  error/EXPIRED banner, badges, a padlock wall, bold kinetic headline type, a chat bubble, a stamp. Reserve
+  the cream label for the occasional handwritten aside, not the default for everything.
+- WIT VARIETY ACROSS SCENES (owner-confirmed 2026-06-23, follow-up): do NOT park WIT on the SAME side every
+  scene with the text always on the opposite-same side. VARY WIT per scene in side (left / center / right),
+  scale, vertical anchor, AND pose; flip the text/UI to whichever side WIT is not using. Across a section,
+  aim for distinct WIT sides (e.g. scene1 left, scene2 center, scene3 right) and visibly different scales.
+  WIT stays GIANT (≈1/2 frame) and is the soul of each scene — rearrange the other items around it.
+
+Apply next time: plan 2-3 DISTINCT idea-devices per section; an expressive WIT pose per beat; a vivid
+object/real-UI base per scene; and a DIFFERENT WIT side+scale+pose per scene (never all-right/text-left).
+Treat "repeated identical label boxes" and "WIT always same side" as review failures to avoid up front.
+This Section-1 remake is the STANDING template for all remaining sections of this video and future videos.
+
+Promote to shared memory: yes — this is a channel-wide creative-direction signal; add a short note to
+`_shared/systems/visual-production.md` (vivid object imagery + varied idea-devices + expressive WIT) on the
+next shared-memory pass. Pairs with the standing Real-UI Illustration preference.
+
+### 2026-06-23 - "Remake like Section 1" = distinct vivid base per scene + varied devices + varied WIT
+
+Classification: `Visual plan lesson`
+
+Context:
+`why-everything-is-a-subscription-now` Section 2 was remade "based on Section 1." The first S2 plan
+reused ONE phone base across 4 scenes (graded normal/warm/cool/dark) and leaned on repeated cream label
+boxes — the exact pattern the owner rejected for S1 v1. Remade to the standing template: 5 distinct vivid
+object bases (glowing phone / vinyl crate / phone+paywall / padlock / device flat-lay), varied idea-devices
+per beat, and giant WIT varied per scene (facepalm R / thinking L / [breathe] / betrayed CENTER giant /
+suspicious R).
+
+Lesson:
+When the owner says "remake to Section 1," do NOT keep one base graded N ways — plan a DISTINCT vivid,
+on-topic OBJECT base per scene. A base may return only as a NON-CONSECUTIVE callback, and that is exactly
+right when the script intends "the same device shown two ways" (here the phone returns for the RENT beat,
+re-dressed with a cool grade + paywall + RENT stamp, with the vinyl scene between). Pair it with varied
+idea-devices (struck banner, stamps, receipt, real-UI paywall, lock-screen card, RENT tags, kinetic
+payoff) and a giant WIT that changes side/scale/pose each scene. Cream labels are for ≤2 asides.
+
+Apply next time:
+- one distinct vivid object base per scene; reuse only as a deliberate non-consecutive callback the script asks for
+- plan 2-3 idea-devices per section, an expressive WIT pose per beat, and a different WIT side+scale each scene
+- treat a stale "one base graded N ways + cream boxes" plan as a remake trigger
+
+Promote to shared memory:
+no; the Core template already lives in `_shared/systems/visual-production.md` and the 2026-06-23 entries above.
+
 ## Feedback Entry Template
 
 ```markdown

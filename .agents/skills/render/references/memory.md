@@ -954,6 +954,108 @@ Apply next time:
 Promote to shared memory:
 no; render execution mechanics.
 
+### 2026-06-23 - STANDING TEMPLATE: vivid object bases + varied CSS idea-devices + giant VARIED WIT
+
+Classification: `Core` (confirmed channel creative direction)
+
+Context:
+`why-everything-is-a-subscription-now` Section 1 was rebuilt twice on owner review and then approved as
+the template for all following sections ("I want next section will be similar to section 1, update the
+skill"). Rejections that shaped it: mundane stock photos; mild/boring WIT poses; repeated identical cream
+rectangle label boxes; WIT too small; and WIT always on the right with text always on the left.
+
+Build standard to apply to every section going forward:
+- BASES: vivid, on-topic, brand/people-free OBJECT photos that dramatize the line (coins/cash for money,
+  padlocks for locked/rent, a glowing screen, etc.) — not calm desks/hands. If clean topical photos are
+  scarce, use a strong concrete object + CSS real-UI. Grade per scene; keep scenes distinct.
+- IDEA DEVICES (vary per beat; NOT a repeated cream box): app-grid of colorful subscription tiles; a big
+  kinetic NUMBER/counter; notification TOAST cards (icon + red "−$X.XX"); a free-trial COUNTDOWN that flips
+  to "$/mo"; a full-width top EXPIRED system BANNER; a PADLOCK wall; bold kinetic headline type; badges.
+  Reserve the handwritten cream label for the occasional aside only.
+- WIT: GIANT (≈1/2 frame), the soul of each scene, with an EXPRESSIVE on-topic pose per beat
+  (price-tag-suspicion, hidden-fee-panic, holding-phone-panic, trapped-by-app-screen, betrayed, empty-wallet…).
+  VARY WIT across scenes: side (left / center / right), scale, vertical anchor, and pose — never all-right.
+  Flip the text/UI to the side WIT is not using; rearrange items around WIT rather than shrinking it.
+  NOTE: `wit-pose-money-panic.png` has a baked BLACK background — do not use on photo scenes.
+
+Build mechanics that mattered (reuse these):
+- A full-screen "system" message reads best as a TOP BANNER (z above WIT), and HIDE the underlying
+  toast/UI column when it takes over (otherwise the banner sits over the boxes = "text covering boxes").
+- Any element you scale/smash must be positioned with explicit left/top — GSAP scale drops percentage
+  `translateX(-50%)` centering. `show()` (opacity-only) elements may keep `translateX(-50%)`.
+- No emoji glyphs in snapshot Chromium (⚠ etc. fail) — draw a CSS shape (e.g. a red "!" circle) instead.
+- Reuse one photo file across scenes only via separate filename copies (`-own/-rent/-lock`) to dodge the
+  `duplicate_media_discovery_risk` lint warning.
+- Snapshot a beat just AFTER an impact (e.g. 18.3s for a 17.9s stamp), not on its `data-start` (opacity 0 there).
+- A reusable CSS kit now exists in `section-previews/section-01-hook/index.html` (tiles .g1-.g8, .toast,
+  .countdown, .modal banner, .lock padlock, .bignum counter, .payoff) — copy/adapt it for new sections.
+
+Apply next time: build new sections from the Section-1 CSS kit; vary WIT side/scale/pose per scene; vary
+the idea-device per beat; lint/validate 0 errors; snapshot every beat and check WIT-size + collisions.
+
+Promote to shared memory: yes — Core direction; add a short note to `_shared/systems/visual-production.md`.
+
+### 2026-06-23 - Remake S2 to the S1 template; the smash helper ignores scaleX
+
+Classification: `Render lesson`
+
+Context:
+`why-everything-is-a-subscription-now` Section 2 was remade completely "based on Section 1." The prior
+S2 build broke the standing template exactly like S1 v1 (one phone base graded 4×; repeated cream label
+boxes carrying every idea; small WIT). Rebuilt to `vivid object bases per scene → varied CSS idea-devices
+→ giant WIT that varies side/scale/pose`: phone (defuse) / vinyl crate (own) / phone+paywall (rent) /
+padlock (lock) / device flat-lay (question); struck RANT banner, OWN/RENT stamps, receipt, paywall,
+lock-screen card, RENT tags, payoff; WIT facepalm R → thinking L → betrayed CENTER giant → suspicious R.
+
+Lesson:
+- When a section is "remade based on Section 1," treat the prior build as stale and rebuild to the
+  template: a DISTINCT vivid object photo base per scene (a phone reused on a non-consecutive scene is OK
+  when the script intends "the same device shown two ways" — re-dress it heavily, separate filename to
+  dodge `duplicate_media_discovery_risk`), 2-3 varied idea-devices per beat instead of cream boxes, and a
+  giant WIT whose side/scale/pose changes each scene. Cream `.aside` is for ≤2 short handwritten asides.
+- GOTCHA: the shared `reveal`/`smash` helper only maps `x/y/scale/opacity` to its end state. Feeding it
+  `{scaleX:0}` animates nothing (it stays 0 → invisible). For a draw-on line (e.g. a strike crossing a
+  banner), use an explicit `tl.set({scaleX:0}); tl.to({scaleX:1})` with `transform-origin:left center`,
+  not `smash`. A silent invisible element can invert a message (an un-struck "ANTI-SUBSCRIPTION RANT"
+  banner reads as the opposite of the intent) — always snapshot-verify impact/draw beats.
+
+Apply next time:
+- rebuild remade sections to the template; one distinct vivid base per scene; vary the idea-device + WIT per scene
+- never pass `scaleX`/`scaleY`/`rotation` to the x/y/scale/opacity helper — write an explicit tween
+- snapshot every impact beat; confirm draw-on/strike elements actually rendered
+
+Promote to shared memory:
+no; the template is already Core in `_shared/systems/visual-production.md`. This is render execution mechanics.
+
+### 2026-06-23 - WIT at width ~900-1000 still "too small"; default to ~1300; bg must read as the topic
+
+Classification: `Render lesson`
+
+Context:
+`why-everything-is-a-subscription-now` Section 2 review (round 2). Even after WIT was built "big" at
+width 900–1000 (bottom:-300), the owner said "WIT too small, make it bigger or giant." Also flagged the
+BS1 base (a glowing phone against an aurora/night SKY) as "not suitable" — it read as a travel/landscape
+photo, not subscriptions — and two text-on-text overlaps (a red RENT stamp sitting on a struck OWN; a
+payoff colliding with on-screen tags). Fixes: WIT widths → 1200–1300 (≈1/2+ frame) at bottom:-320;
+swapped BS1 to a phone-full-of-app-icons photo; un-stacked OWN/RENT vertically; hid the tag set when the
+payoff lands.
+
+Lesson:
+- WIT "big" means width ≈1200–1400 on a 1920 frame (≈1/2+ visible), not 900–1000. Start there by default;
+  these full-body PNGs have transparent padding so a 900px box still reads as a small character. Anchor
+  bottom:-300…-340 so head+torso are in frame and only legs crop.
+- A scene base must read as the TOPIC, not just "a nice photo." A phone against a pretty sky reads as
+  travel; a phone full of app icons reads as "subscriptions." Pick the base by what the line is about.
+- Two text-on-text traps to pre-empt: (1) a stamp swap (OWN→RENT) must place the two stamps in separate
+  spots (stack vertically), not overlap; (2) when a payoff lands over a field of tags/labels, HIDE the
+  tags at the payoff beat (the S1 "hide the column when the banner takes over" pattern) so the payoff is clean.
+
+Apply next time: default WIT width ~1300; choose bases by topic-read; never overlap two text blocks — stack or hide.
+
+Promote to shared memory:
+no; the WIT big+high rule is already Core in `_shared/systems/visual-production.md`. This sharpens the
+default size and the bg-reads-as-topic + no-overlap checks for render execution.
+
 ## Feedback Entry Template
 
 ```markdown

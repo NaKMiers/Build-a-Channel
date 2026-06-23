@@ -224,3 +224,20 @@ For a `20-30s` hook, start with about `3` persistent big scenes and `6-8` cue st
 Do not add transition overlays, rapid pop-ins, object pile-ons, or WIT shake unless the static version is approved and the motion has a clear joke or clarity job.
 
 For connected object hooks, keep the same base scene while the voice describes the same object or situation. Add one or two voice-timed cue elements inside that scene instead of cutting to a new full-screen board for every sentence.
+
+## Vivid Hook Template (owner-confirmed 2026-06-23)
+
+The approved `why-everything-is-a-subscription-now` Section 1 remake is the standing template for vivid
+sections (and the bar to match for new sections). Three rules:
+
+- VIVID ON-TOPIC OBJECT BASES: dramatize the line with concrete brand/people-free objects (money/coins/cash,
+  padlocks, glowing screens), not mundane desks/hands. If clean topical photos are scarce, use a strong
+  object + CSS real-UI. Keep each scene's base distinct.
+- VARIED IDEA-DEVICES (not one repeated label box): vary how each idea is shown — app-grid tiles, a kinetic
+  number/counter, notification toasts, a free-trial countdown, a full-width system/EXPIRED banner, a padlock
+  wall, bold kinetic headline type, badges, a chat bubble, a stamp. Reserve the handwritten cream label for
+  the occasional aside.
+- GIANT, VARIED WIT: WIT is the soul of each scene — keep it giant (~1/2 frame) with an expressive on-topic
+  pose, and VARY it across scenes in side (left/center/right), scale, vertical anchor, and pose. Never park
+  WIT on the same side every scene with text always opposite; flip the text/UI to the side WIT isn't using
+  and rearrange items around WIT. (`wit-pose-money-panic.png` has a baked black bg — avoid on photo scenes.)

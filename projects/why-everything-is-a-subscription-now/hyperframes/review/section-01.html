@@ -6,121 +6,126 @@
   <title>Section 01 Hook - Why Everything Is a Subscription Now</title>
   <style>
     @font-face { font-family: "PatrickHandLocal"; src: url("./assets/fonts/patrick-hand-latin.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
-    :root { --ink:#14110d; --red:#c0392b; --red-deep:#7d1714; --cream:#fff7d8; --green:#188038; --bank:#12366e; }
+    :root { --ink:#14110d; --red:#e0392b; --red-deep:#7d1714; --cream:#fff7d8; }
     * { box-sizing: border-box; }
-    body { margin: 0; background: #0e0c0a; color: var(--ink); overflow: hidden; }
-    #Section01Hook { position: relative; width: 1920px; height: 1080px; overflow: hidden; background: #0e0c0a; font-family: "PatrickHandLocal"; }
+    body { margin: 0; background: #07070a; color:#fff; overflow: hidden; }
+    #Section01Hook { position: relative; width: 1920px; height: 1080px; overflow: hidden; background: #07070a; font-family: "PatrickHandLocal"; }
     .scene, .cue { position: absolute; inset: 0; width: 100%; height: 100%; overflow: hidden; }
     .scene { z-index: 1; will-change: opacity, transform, filter; }
     .cue { z-index: 5; pointer-events: none; }
-    .photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; user-select: none; pointer-events: none; }
-    .photo.hand { filter:saturate(1.02) contrast(1.03) brightness(0.78); }
-    .photo.desk { filter:saturate(1.02) contrast(1.04) brightness(0.7); }
-    .photo.dim  { filter:saturate(0.92) contrast(1.06) brightness(0.42) hue-rotate(4deg); }
-    .scrim { position:absolute; inset:0; z-index:1; background:radial-gradient(ellipse 86% 86% at 50% 46%, rgba(6,8,14,0.10), rgba(6,8,14,0.62) 98%); }
+    .photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+    .photo.coins { filter:saturate(1.05) contrast(1.05) brightness(0.62); }
+    .photo.cash  { filter:saturate(1.1) contrast(1.05) brightness(0.6) hue-rotate(6deg); }
+    .photo.lock  { filter:saturate(0.92) contrast(1.08) brightness(0.5); }
+    .scrim { position:absolute; inset:0; z-index:1; background:radial-gradient(ellipse 80% 80% at 50% 46%, rgba(4,5,10,0.25), rgba(4,5,10,0.74) 99%); }
+    .ui { font-family:"Segoe UI",system-ui,sans-serif; }
 
-    /* phone bank-app (Scene A) */
-    .phone { position:absolute; left:300px; top:110px; width:440px; height:860px; background:#0b0b0d; border-radius:46px; z-index:3; box-shadow:0 30px 60px rgba(0,0,0,0.55), inset 0 0 0 6px #23242a; padding:18px; }
-    .screen { width:100%; height:100%; border-radius:30px; overflow:hidden; background:#eef1f6; font-family:"Segoe UI",system-ui,sans-serif; }
-    .bankhead { height:108px; background:var(--bank); color:#fff; display:flex; flex-direction:column; justify-content:center; padding:0 26px; }
-    .bankhead .t { font-size:27px; opacity:0.85; }
-    .bankhead .b { font-size:34px; font-weight:700; }
-    .bankrow { height:92px; display:flex; align-items:center; gap:14px; padding:0 22px; border-bottom:1px solid #e2e6ee; }
-    .bankrow .nm { font-size:28px; color:#222; font-weight:600; }
-    .bankrow .am { margin-left:auto; font-size:28px; color:#c0392b; font-weight:700; }
-    .bankrow.mys .nm { color:#999; letter-spacing:3px; }
+    /* app grid of subscription tiles */
+    .grid { position:absolute; z-index:4; display:grid; grid-template-columns:repeat(4, 174px); grid-auto-rows:174px; gap:26px; }
+    .tile { border-radius:34px; display:flex; flex-direction:column; align-items:center; justify-content:center; color:#fff; font-family:"Segoe UI",system-ui,sans-serif; font-weight:800; font-size:30px; box-shadow:0 14px 30px rgba(0,0,0,0.5), 0 0 26px rgba(255,255,255,0.06); position:relative; }
+    .tile small { font-weight:600; font-size:21px; opacity:0.92; margin-top:6px; }
+    .g1{background:linear-gradient(135deg,#e50914,#b00610);} .g2{background:linear-gradient(135deg,#1db954,#0a8a3f);}
+    .g3{background:linear-gradient(135deg,#2aa3ff,#0a5ad6);} .g4{background:linear-gradient(135deg,#ff8a00,#d65d00);}
+    .g5{background:linear-gradient(135deg,#a05cff,#6a1fd0);} .g6{background:linear-gradient(135deg,#ff4d8d,#c81e63);}
+    .g7{background:linear-gradient(135deg,#13c4c4,#0a8f8f);} .g8{background:linear-gradient(135deg,#ffd23f,#e0a400); color:#222;}
+    .badge { position:absolute; top:-14px; right:-14px; background:var(--red); color:#fff; font-size:24px; font-weight:800; padding:4px 14px; border-radius:20px; box-shadow:0 6px 14px rgba(0,0,0,0.45); }
+    .lock { position:absolute; inset:0; background:rgba(8,8,12,0.62); border-radius:34px; display:flex; align-items:center; justify-content:center; }
+    .lockicon { width:62px; }
+    .lockicon .sh { width:38px; height:34px; border:11px solid #e9ecf2; border-bottom:none; border-radius:22px 22px 0 0; margin:0 auto -4px; }
+    .lockicon .bd { width:62px; height:48px; background:#ffd23f; border-radius:10px; }
 
-    /* floating subscription cards (Scene B) */
-    .subcard { position:absolute; background:#fff; border-radius:16px; z-index:3; box-shadow:0 20px 40px rgba(0,0,0,0.45); padding:18px 22px; font-family:"Segoe UI",system-ui,sans-serif; min-width:360px; }
-    .subcard .row1 { display:flex; align-items:center; gap:12px; font-size:30px; font-weight:700; color:#1a1a1a; }
-    .subcard .dotg { width:30px; height:30px; border-radius:8px; background:linear-gradient(135deg,#7b61ff,#22c1c3); }
-    .subcard .mo { margin-top:8px; font-size:34px; font-weight:800; color:#c0392b; }
-    .chip { position:absolute; z-index:6; background:#c0392b; color:#fff; font-family:"Segoe UI",system-ui,sans-serif; font-weight:800; font-size:34px; padding:8px 20px; border-radius:30px; box-shadow:0 10px 22px rgba(0,0,0,0.4); }
+    /* big counter headline */
+    .counter { position:absolute; z-index:7; }
+    .counter .lbl { font-family:"PatrickHandLocal"; font-size:62px; color:#fff; text-shadow:3px 4px 0 rgba(0,0,0,0.5); }
+    .bignum { font-family:"Segoe UI",system-ui,sans-serif; font-weight:900; font-size:240px; line-height:0.9; color:#fff; text-shadow:0 0 40px rgba(224,57,43,0.55), 6px 8px 0 rgba(0,0,0,0.4); }
+    .bignum.red { color:var(--red); }
 
-    /* shared overlays */
-    .label { position:absolute; display:inline-flex; align-items:center; justify-content:center; min-height:60px; padding:12px 26px 16px; background:var(--cream); border:7px solid var(--ink); border-radius:7px; box-shadow:12px 14px 0 rgba(20,17,13,0.24); color:var(--ink); font-size:54px; line-height:0.96; text-align:center; transform:rotate(-2deg); z-index:8; white-space:nowrap; }
-    .label.small { font-size:38px; padding:10px 20px 14px; }
-    .label.red { background:#fff5f1; color:var(--red-deep); border-color:var(--red-deep); }
-    .popup { position:absolute; z-index:9; background:#0b0b0d; color:#fff; border:5px solid #fff; border-radius:14px; padding:22px 30px; text-align:center; font-family:"Segoe UI",system-ui,sans-serif; box-shadow:0 18px 40px rgba(0,0,0,0.5); }
-    .popup .pt { font-size:30px; opacity:0.85; }
-    .popup .pb { font-size:46px; font-weight:800; color:#ff5b4d; letter-spacing:2px; margin-top:6px; }
-    .payoff { position:absolute; z-index:8; background:var(--cream); border:8px solid var(--ink); border-radius:8px; padding:16px 30px 20px; color:var(--ink); font-size:70px; line-height:0.98; box-shadow:14px 16px 0 rgba(20,17,13,0.28); transform:rotate(-2deg); text-align:center; }
-    .redcircle { position:absolute; z-index:9; border:9px solid var(--red); border-radius:50%; box-shadow:0 0 22px rgba(192,57,43,0.6); }
-    .qmark { position:absolute; z-index:10; color:var(--red); font-size:120px; font-weight:800; text-shadow:0 0 24px rgba(192,57,43,0.8); font-family:"Segoe UI",system-ui,sans-serif; }
-    .wit { position:absolute; object-fit:contain; z-index:9; filter:drop-shadow(15px 18px 0 rgba(0,0,0,0.30)); transform-origin:center center; }
-    .label, .popup, .payoff, .wit, .subcard, .chip, .redcircle, .qmark { will-change: opacity, transform; }
+    /* notification toasts (charges) */
+    .toast { position:absolute; z-index:7; background:#fff; color:#16181d; border-radius:18px; padding:14px 20px; display:flex; align-items:center; gap:16px; width:520px; box-shadow:0 16px 34px rgba(0,0,0,0.5); font-family:"Segoe UI",system-ui,sans-serif; }
+    .toast .ic { width:54px; height:54px; border-radius:14px; flex:0 0 auto; }
+    .toast .tx { font-size:28px; font-weight:700; }
+    .toast .tx small { display:block; font-weight:500; font-size:22px; color:#6b7280; }
+    .toast .amt { margin-left:auto; font-size:34px; font-weight:900; color:var(--red); }
+
+    /* free-trial countdown */
+    .countdown { position:absolute; z-index:7; background:#0c0c12; border:3px solid #2aa3ff; border-radius:18px; padding:16px 26px; text-align:center; font-family:"Segoe UI",system-ui,sans-serif; box-shadow:0 0 30px rgba(42,163,255,0.4); }
+    .countdown .ft { color:#2aa3ff; font-size:28px; font-weight:800; letter-spacing:1px; }
+    .countdown .tmr { color:#fff; font-size:64px; font-weight:900; }
+    .countdown.charged { border-color:var(--red); box-shadow:0 0 30px rgba(224,57,43,0.5); }
+    .countdown.charged .ft { color:var(--red); } .countdown.charged .tmr { color:var(--red); font-size:52px; }
+
+    /* EXPIRED system banner (top, full width) */
+    .modal { position:absolute; z-index:11; left:60px; top:34px; width:1800px; background:#0c0c12; border:5px solid var(--red); border-radius:18px; padding:20px 40px; display:flex; align-items:center; gap:28px; box-shadow:0 20px 50px rgba(0,0,0,0.7), 0 0 50px rgba(224,57,43,0.45); }
+    .modal .warn { width:72px; height:72px; border-radius:50%; background:var(--red); color:#fff; font-weight:900; font-size:48px; line-height:72px; text-align:center; flex:0 0 auto; }
+    .modal .mt { color:#cfd3dc; font-family:"Segoe UI",system-ui,sans-serif; font-size:40px; flex:0 0 auto; }
+    .modal .mb { color:#fff; font-family:"Segoe UI",system-ui,sans-serif; font-weight:900; font-size:58px; }
+    .modal .mb b { color:var(--red); }
+
+    /* kinetic payoff headline */
+    .payoff { position:absolute; z-index:8; font-family:"Segoe UI",system-ui,sans-serif; font-weight:900; font-size:128px; line-height:0.92; color:#fff; text-shadow:0 0 46px rgba(0,0,0,0.7), 8px 9px 0 rgba(0,0,0,0.45); letter-spacing:-1px; }
+    .payoff .hl { color:#ffd23f; }
+    .subline { position:absolute; z-index:8; font-family:"PatrickHandLocal"; font-size:54px; color:#fff; text-shadow:3px 4px 0 rgba(0,0,0,0.55); }
+
+    .wit { position:absolute; object-fit:contain; z-index:8; filter:drop-shadow(15px 18px 0 rgba(0,0,0,0.34)); transform-origin:center center; }
+    .grid,.tile,.badge,.lock,.counter,.bignum,.toast,.countdown,.modal,.payoff,.subline,.wit { will-change: opacity, transform; }
   </style>
 </head>
 <body>
   <div id="Section01Hook" data-composition-id="Section01Hook" data-start="0" data-duration="23.509" data-width="1920" data-height="1080">
 
-    <!-- SCENE A: phone bank-app 0-7.16 -->
+    <!-- SCENE A: app grid on money 0-7.16 -->
     <div id="scene-a" class="clip scene" data-start="0" data-duration="7.30" data-track-index="1">
-      <img class="photo hand" src="./assets/visual-references/section-01-hook/base-phone-blank-inhand.jpg" alt="">
+      <img class="photo coins" src="./assets/visual-references/section-01-hook/base-coins.jpg" alt="">
       <div class="scrim"></div>
-      <div class="phone">
-        <div class="screen">
-          <div class="bankhead"><div class="t">Your bank · June</div><div class="b">Monthly charges</div></div>
-          <div class="bankrow"><div class="nm">StreamFlix</div><div class="am">$9.99</div></div>
-          <div class="bankrow"><div class="nm">TunePass</div><div class="am">$4.99</div></div>
-          <div class="bankrow"><div class="nm">CloudBox</div><div class="am">$2.99</div></div>
-          <div class="bankrow mys"><div class="nm">? ? ?</div><div class="am">$3.00</div></div>
-          <div class="bankrow"><div class="nm">NewsDaily</div><div class="am">$6.99</div></div>
-          <div class="bankrow"><div class="nm">FitApp</div><div class="am">$12.99</div></div>
-        </div>
+      <div class="grid ga" style="left:1230px; top:430px; grid-template-columns:repeat(3,140px); grid-auto-rows:140px; gap:16px;">
+        <div class="tile g1">Flix</div><div class="tile g2">Tune</div><div class="tile g3">Cloud</div>
+        <div class="tile g4">News</div><div class="tile g5">Play</div><div class="tile g6">Fit</div>
+        <div class="tile g7">Pod</div><div class="tile g8">Box</div><div class="tile g3">Read</div>
       </div>
     </div>
 
-    <!-- SCENE B: screens that own you 7.16-18.54 -->
+    <!-- SCENE B: charges raining on cash 7.16-18.54 -->
     <div id="scene-b" class="clip scene" data-start="7.16" data-duration="11.44" data-track-index="3">
-      <img class="photo desk" src="./assets/visual-references/section-01-hook/base-desk-devices.jpg" alt="">
+      <img class="photo cash" src="./assets/visual-references/section-01-hook/base-cash.jpg" alt="">
       <div class="scrim"></div>
-      <div class="subcard sc-laptop" style="left:70px; top:120px;">
-        <div class="row1"><span class="dotg"></span>StreamFlix</div>
-        <div class="mo">− $9.99 / mo</div>
-      </div>
-      <div class="subcard sc-tv" style="right:70px; top:120px;">
-        <div class="row1"><span class="dotg"></span>TunePass</div>
-        <div class="mo">− $4.99 / mo</div>
-      </div>
-      <div class="chip ch-watch" style="left:810px; top:300px;">− $2.99 / mo</div>
     </div>
 
-    <!-- SCENE C: rent-your-life payoff 18.54-23.509 -->
+    <!-- SCENE C: padlock wall 18.54-23.509 -->
     <div id="scene-c" class="clip scene" data-start="18.54" data-duration="4.97" data-track-index="4">
-      <img class="photo dim" src="./assets/visual-references/section-01-hook/base-desk-devices-dim.jpg" alt="">
+      <img class="photo lock" src="./assets/visual-references/section-01-hook/base-padlock.jpg" alt="">
       <div class="scrim"></div>
-      <div class="chip cl1" style="left:120px; top:140px;">$9.99 / mo</div>
-      <div class="chip cl2" style="left:160px; top:250px;">$4.99 / mo</div>
-      <div class="chip cl3" style="left:90px; top:360px;">$2.99 / mo</div>
     </div>
 
-    <!-- CUE A 0-7.10 : phone question + suspicious WIT + red mystery circle -->
+    <!-- CUE A 0-7.10 -->
     <div id="cue-a" class="clip cue" data-start="0" data-duration="7.10" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
-      <div class="label red ca-howmany" style="left: 60px; top: 70px; width: 420px;">HOW MANY?</div>
-      <div class="redcircle ca-circle" style="left: 312px; top: 500px; width: 412px; height: 100px;"></div>
-      <div class="qmark ca-q" style="left: 762px; top: 486px;">?</div>
-      <img class="wit ca-wit" data-layout-allow-overflow="" style="right: -180px; bottom: -320px; width: 1180px;" src="./assets/wit/wit-pose-suspicious.png" alt="">
+      <div class="counter ca-head" style="left:1170px; top:60px; width:700px;"><span class="lbl">subscriptions you actually pay for…</span></div>
+      <div class="bignum ca-n1" style="position:absolute; z-index:7; left:1260px; top:170px;">7?</div>
+      <div class="bignum red ca-n2" style="position:absolute; z-index:7; left:1230px; top:160px;">12+</div>
+      <img class="wit ca-wit" data-layout-allow-overflow="" style="left:-150px; bottom:-330px; width:1150px;" src="./assets/wit/wit-pose-price-tag-suspicion.png" alt="">
     </div>
 
-    <!-- CUE B 7.16-18.46 : screens charging + items + EXPIRED + WIT shocked->deadpan -->
+    <!-- CUE B 7.16-18.46 : charges + items + countdown + EXPIRED modal -->
     <div id="cue-b" class="clip cue" data-start="7.16" data-duration="11.30" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
-      <div class="label small cb-i1" style="left: 1180px; top: 470px; width: 300px;">an app</div>
-      <div class="label small cb-i2" style="left: 1150px; top: 600px; width: 440px;">a "free" trial</div>
-      <div class="label small cb-i3" style="left: 1210px; top: 730px; width: 320px;">a show</div>
-      <div class="popup cb-popup" style="left: 660px; top: 60px; transform: rotate(-3deg);">
-        <div class="pt">Your free trial of owning things</div>
-        <div class="pb">EXPIRED</div>
+      <div class="toast cb-t1 ui" style="left:70px; top:120px;"><div class="ic g1"></div><div class="tx">StreamFlix<small>monthly charge</small></div><div class="amt">−$9.99</div></div>
+      <div class="toast cb-t2 ui" style="left:70px; top:240px;"><div class="ic g2"></div><div class="tx">TunePass<small>monthly charge</small></div><div class="amt">−$4.99</div></div>
+      <div class="toast cb-t3 ui" style="left:70px; top:360px;"><div class="ic g3"></div><div class="tx">CloudBox<small>an app you forgot</small></div><div class="amt">−$2.99</div></div>
+      <div class="countdown cb-cd ui" style="left:70px; top:500px;"><div class="ft">FREE TRIAL</div><div class="tmr">00:03</div></div>
+      <div class="countdown charged cb-cd2 ui" style="left:70px; top:500px; opacity:0;"><div class="ft">NOW CHARGING</div><div class="tmr">$2.99 /mo</div></div>
+      <div class="toast cb-t4 ui" style="left:70px; top:660px;"><div class="ic g6"></div><div class="tx">A show you watched once<small>still paying</small></div><div class="amt">−$6.99</div></div>
+      <div class="modal cb-modal ui">
+        <div class="warn">!</div>
+        <div class="mt">Your free trial of</div>
+        <div class="mb"><b>OWNING THINGS</b> has expired</div>
       </div>
-      <img class="wit cb-wit" data-layout-allow-overflow="" style="left: -150px; bottom: -300px; width: 980px;" src="./assets/wit/wit-pose-shocked.png" alt="">
-      <img class="wit cb-wit2" data-layout-allow-overflow="" style="left: -150px; bottom: -300px; width: 1000px; opacity:0;" src="./assets/wit/wit-pose-deadpan-side-eye.png" alt="">
+      <img class="wit cb-wit" data-layout-allow-overflow="" style="left:610px; bottom:-300px; width:1200px;" src="./assets/wit/wit-pose-hidden-fee-panic.png" alt="">
+      <img class="wit cb-wit2" data-layout-allow-overflow="" style="left:650px; bottom:-300px; width:1140px; opacity:0;" src="./assets/wit/wit-pose-holding-phone-panic.png" alt="">
     </div>
 
-    <!-- CUE C 18.54-23.50 : trapped WIT + payoff -->
+    <!-- CUE C 18.54-23.50 : padlock wall + payoff -->
     <div id="cue-c" class="clip cue" data-start="18.54" data-duration="4.96" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
-      <div class="payoff cc-payoff" style="left: 60px; top: 150px; width: 760px;">YOU RENT<br>YOUR WHOLE LIFE</div>
-      <div class="label small cc-sub" style="left: 80px; top: 470px; width: 520px;">one payment at a time</div>
-      <img class="wit cc-wit" data-layout-allow-overflow="" style="right: -150px; bottom: -300px; width: 1150px;" src="./assets/wit/wit-pose-trapped-by-app-screen.png" alt="">
+      <div class="payoff cc-payoff" style="left:70px; top:240px; font-size:96px;">YOU <span class="hl">RENT</span><br>YOUR WHOLE<br>LIFE</div>
+      <div class="subline cc-sub" style="left:80px; top:560px;">one payment at a time</div>
+      <img class="wit cc-wit" data-layout-allow-overflow="" style="right:-40px; bottom:-280px; width:1280px;" src="./assets/wit/wit-pose-trapped-by-app-screen.png" alt="">
     </div>
 
     <audio id="voiceover-section-01" data-start="0" data-duration="23.509" data-track-index="10" data-volume="1" crossorigin="anonymous" src="./section-01-hook-david23-am_eric-0.8.mp3"></audio>
@@ -133,39 +138,44 @@
       const show = (t, hideAt, at) => { tl.set(t, { opacity: 0 }, hideAt); tl.set(t, { opacity: 1 }, at); };
       const hide = (t, at) => { tl.set(t, { opacity: 0 }, at); };
       const smash = (t, hideAt, at, fv = { y: 20, scale: 1.3, opacity: 0 }) => reveal(t, hideAt, at, fv, { duration: 0.18, ease: "back.out(1.9)" });
+      const pop = (t, hideAt, at) => reveal(t, hideAt, at, { scale: 0.4, opacity: 0 }, { duration: 0.22, ease: "back.out(2)" });
 
-      // Scene cross-fades (word-pinned cuts)
+      // scene cross-fades
       tl.fromTo("#scene-b", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 7.16);
       tl.fromTo("#scene-c", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 18.54);
 
-      // SCENE A — phone bank-app
-      show("#scene-a .phone", 0, 0.40);          // "Quick question"
-      show("#cue-a .ca-howmany", 0, 0.58);
-      show("#cue-a .ca-wit", 0, 1.26);           // "how many subscriptions"
-      // red mystery circle + ? on "it's higher"
-      smash("#cue-a .ca-circle", 0, 5.60, { scale: 1.6, opacity: 0 });
-      smash("#cue-a .ca-q", 0, 5.86, { scale: 0, opacity: 0 });
+      // SCENE A — app grid fills + counter jumps
+      const tiles = gsap.utils.toArray("#scene-a .ga .tile");
+      tl.set(tiles, { opacity: 0, scale: 0.5 }, 0);
+      tiles.forEach((t, i) => { tl.to(t, { opacity: 1, scale: 1, duration: 0.18, ease: "back.out(1.8)" }, 0.40 + i * 0.34); });
+      show("#cue-a .ca-head", 0, 0.40);
+      show("#cue-a .ca-n1", 0, 1.26);                 // "how many subscriptions"
+      hide("#cue-a .ca-n1", 5.60);
+      smash("#cue-a .ca-n2", 0, 5.60, { scale: 1.6, opacity: 0 }); // "it's higher"
+      show("#cue-a .ca-wit", 0, 2.10);
 
-      // SCENE B — screens that own you
-      show("#cue-b .cb-wit", 7.16, 7.34);        // shocked rises
-      smash("#scene-b .sc-laptop", 7.16, 7.66, { y: -18, opacity: 0 });   // "money"
-      smash("#scene-b .sc-tv", 7.16, 9.04, { y: -18, opacity: 0 });       // "account"
-      smash("#scene-b .ch-watch", 7.16, 9.62, { scale: 0, opacity: 0 });  // "every month"
-      show("#cue-b .cb-i1", 7.16, 11.74);        // "An app"
-      show("#cue-b .cb-i2", 7.16, 12.48);        // "a free trial"
-      show("#cue-b .cb-i3", 7.16, 14.48);        // "a show"
-      // swap shocked -> deadpan for the gag, pop-up stamps on "expired"
+      // SCENE B — charges rain on cash, free trial expires
+      show("#cue-b .cb-wit", 7.16, 7.40);
+      pop("#cue-b .cb-t1", 7.16, 7.66);               // "money leaving"
+      pop("#cue-b .cb-t2", 7.16, 9.04);               // "account"
+      pop("#cue-b .cb-t3", 7.16, 11.74);              // "An app"
+      // free trial countdown shows on "a free trial", flips to charged on "stopped being free"
+      show("#cue-b .cb-cd", 7.16, 12.48);
+      hide("#cue-b .cb-cd", 13.90);
+      pop("#cue-b .cb-cd2", 7.16, 13.90);             // "that stopped being free"
+      pop("#cue-b .cb-t4", 7.16, 14.48);              // "a show you watched once"
+      // EXPIRED modal on "just expired"; swap WIT to phone-panic
       hide("#cue-b .cb-wit", 15.90);
       show("#cue-b .cb-wit2", 7.16, 15.90);
-      smash("#cue-b .cb-popup", 7.16, 17.90, { scale: 1.4, opacity: 0 });  // "expired"
+      // EXPIRED banner takes over: hide the toast/countdown column so nothing sits under it
+      ["#cue-b .cb-t1","#cue-b .cb-t2","#cue-b .cb-t3","#cue-b .cb-t4","#cue-b .cb-cd","#cue-b .cb-cd2"].forEach(s => hide(s, 17.90));
+      tl.set("#cue-b .cb-modal", { opacity: 0, scale: 0.6 }, 7.16);
+      tl.to("#cue-b .cb-modal", { opacity: 1, scale: 1, duration: 0.22, ease: "back.out(1.8)" }, 17.90);
 
-      // SCENE C — rent your whole life
+      // SCENE C — giant trapped WIT + payoff
       show("#cue-c .cc-wit", 18.54, 18.74);
-      show("#scene-c .cl1", 18.54, 18.95);
-      show("#scene-c .cl2", 18.54, 19.10);
-      show("#scene-c .cl3", 18.54, 19.25);
-      smash("#cue-c .cc-payoff", 18.54, 20.32);  // "rent your whole life"
-      show("#cue-c .cc-sub", 18.54, 21.40);      // "one payment at a time"
+      smash("#cue-c .cc-payoff", 18.54, 20.32, { y: 26, scale: 1.25, opacity: 0 }); // "rent your whole life"
+      show("#cue-c .cc-sub", 18.54, 21.40);
 
       window.__timelines["Section01Hook"] = tl;
     </script>

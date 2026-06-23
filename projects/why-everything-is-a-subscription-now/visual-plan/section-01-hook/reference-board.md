@@ -1,44 +1,45 @@
-# Section 1 Reference Board
+# Section 1 Reference Board (REMADE 2026-06-23)
+
+## Why remade
+
+Owner review of the first build: illustrative photos were mundane/boring; WIT poses boring; the cream
+rectangle label boxes were repetitive and uncreative. Direction: investigate the internet for better
+imagery, use more dynamic WIT, and demonstrate ideas with varied devices.
 
 ## Reference Pass Status
 
-- Status: `complete (real images sourced via Openverse; viewed before selection)`
-- Browsed references: Openverse API queries (smartphone blank screen, workspace desk, devices flat lay, smart-home)
-- Real images saved: 2 safe assets + 2 inspiration-only
-- Generated images: none (no image generator connected this session)
-- Inspected local assets: shared WIT pose library
+- Status: `complete (remake) — vivid on-topic real photos via Openverse + loved CSS real-UI`
+- Real images saved: 3 safe assets (coins, cash, padlocks)
+- Generated images: none (no generator connected)
 - Prompt-only fallbacks: none
-- Fallback reason: n/a
 
 ## Search / Browse Notes
 
-- Openverse API works on this network (search engines bot-blocked); `size=large` filter returns 0 — omit it and filter width in `node`.
-- Flickr `_k`(2048)/`_h`(1600) often 404 for these photos; `_b`(1024) is reliable. StockSnap CDN size paths beyond 960w returned HTML, not image.
-- Standing preference applied: build the phone bank-app screen and the device screens in CSS (real-UI illustration) over a real photo base, rather than relying on a perfect stock screenshot.
+- Striking brand/people-free topical photos were scarce; pivoted to concrete MONEY + LOCK objects
+  (coins, cash, padlocks) which are vivid, on-topic, and clean — plus the owner's confirmed-favorite
+  CSS real-UI built on top (app grid, notification toasts, free-trial countdown, EXPIRED modal, padlock wall).
+- Rejected: a face-lit phone photo (no-face rule), a brand-heavy desk (MacBook/Visa), vinyl with copyrighted covers, a Proton dashboard.
 
 ## References
 
-| Ref | Type | Source | Classification | Why useful | Attention / editor use | Use in production | Saved path |
-|---|---|---|---|---|---|---|---|
-| base-phone-blank-inhand.jpg | real photo | Flickr CC0 48124824108 | safe asset | blank phone screens, real hand, lifelike | hosts the CSS bank-app statement for BS1 | yes (BS1 base / phone texture) | assets/visual-references/section-01-hook/base-phone-blank-inhand.jpg |
-| base-desk-devices.jpg | real photo | Flickr CC BY 6916063044 | safe asset | real lived-in desk + laptop, people/brand-free | base for BS2/BS3 device spread; float CSS screens | yes (BS2/BS3 base) | assets/visual-references/section-01-hook/base-desk-devices.jpg |
-| insp-gear-flatlay.jpg | real photo | StockSnap CC0 Z5IW9QEFL6 | inspiration only | layout of phone+watch+laptop devices | composition reference for device spread | no (Apple ⌘ keys + Field Notes brand, sterile white) | assets/visual-references/section-01-hook/insp-gear-flatlay.jpg |
-| insp-phone-instagram.jpg | real photo | Flickr CC0 48846003727 | inspiration only | real hand-holding-phone framing | framing ref for phone-in-hand | no (real Instagram UI/brand on screen) | assets/visual-references/section-01-hook/insp-phone-instagram.jpg |
-| WIT pose library | local PNGs | .agents/_shared/assets/wit/poses | safe asset | suspicious / shocked / deadpan / trapped poses | emotional subject each big scene | yes | .agents/_shared/assets/wit/poses/ |
+| Ref | Type | Source | Classification | Why useful | Use in production | Saved path |
+|---|---|---|---|---|---|---|
+| base-coins.jpg | real photo | StockSnap CC0 K21A2RMCI8 | safe asset | money motif, dark, depth | BS1 base under the app grid | assets/visual-references/section-01-hook/base-coins.jpg |
+| base-cash.jpg | real photo | Flickr CC BY 48937550972 | safe asset | "money leaving" energy | BS2 base under charge toasts | assets/visual-references/section-01-hook/base-cash.jpg |
+| base-padlock.jpg | real photo | Flickr CC BY 4268291295 | safe asset | locked / "you rent it" | BS3 base under padlock wall + payoff | assets/visual-references/section-01-hook/base-padlock.jpg |
+| WIT poses | local PNG | shared library | safe asset | price-tag-suspicion, hidden-fee-panic, holding-phone-panic, trapped-by-app-screen | yes | .agents/_shared/assets/wit/poses/ |
 
-## Big Scene Reference Coverage
+Note: `wit-pose-money-panic.png` has a baked black background (not transparent) — avoided; used `hidden-fee-panic` instead.
 
-| Big Scene | Needed Visual Basis | Real / Local Reference | Generated Support | Production Decision | Remaining Gap |
-|---|---|---|---|---|---|
-| BS1 Phone bank-app | phone screen showing monthly charges | base-phone-blank-inhand.jpg | CSS-built bank statement UI | real phone base + CSS UI overlay | none (UI is CSS) |
-| BS2 Screens that own you | desk with multiple devices flicking on | base-desk-devices.jpg | CSS device screens (laptop/TV/watch/car) + charge chips | real desk base + CSS screens | car-screen is CSS only (fine) |
-| BS3 Payoff "you rent your whole life" | WIT as emotional subject over devices | base-desk-devices.jpg (darkened) + WIT trapped pose | CSS padlock/charge chips + payoff label | real desk base + giant WIT + CSS overlays | none |
+## Idea-demonstration devices (replacing the repeated cream boxes)
 
-## Image Generation Prompts
-
-Not used — no generator connected. If one becomes available, a clean brand-free "single smartphone face-up on a dark wood desk, blank screen, top-down, soft light, no logos" would improve BS1; until then the CC0 blank-screen phone + CSS UI is the plan.
+- a colorful APP GRID of subscription tiles (BS1)
+- a jumping COUNTER headline ("12+") (BS1)
+- notification TOASTS of monthly charges raining on cash (BS2)
+- a FREE-TRIAL COUNTDOWN that flips to "$2.99/mo" (BS2)
+- a full-screen EXPIRED system MODAL (BS2)
+- a PADLOCK WALL of locked app tiles + bold kinetic payoff (BS3)
 
 ## Rejected References
 
-- insp-gear-flatlay.jpg (Apple ⌘ keyboard + Field Notes branding; sterile objects-on-white)
-- insp-phone-instagram.jpg (real Instagram app UI on screen = brand/content)
+- base-phone-blank-inhand.jpg, base-desk-devices.jpg (original, mundane); face-lit phone (no-face); brand desk; vinyl albums; Proton dashboard.

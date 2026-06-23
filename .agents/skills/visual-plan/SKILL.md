@@ -36,6 +36,16 @@ few strong real/object backgrounds -> compressed memory labels -> 3-4 giant WIT 
 
 When a script lists many small product details, do not give every noun its own card, image, arrow, or label. Collapse related items into one visual idea per big scene and one short label per cue unless the voiceover needs a specific proof object.
 
+The approved Section 1 remake for `why-everything-is-a-subscription-now` is the STANDING vivid-hook template (owner-confirmed 2026-06-23). Plan every section to this bar:
+
+```text
+vivid on-topic OBJECT photo bases -> VARIED idea-devices per beat -> giant WIT that VARIES per scene
+```
+
+- Bases: vivid, on-topic, brand/people-free objects that dramatize the line (money/coins/cash, padlocks, glowing screens), not mundane desks/hands. If clean topical photos are scarce, use a strong concrete object + CSS real-UI.
+- Idea-devices: do NOT show every idea in the same handwritten cream rectangle. VARY the device per beat — app-grid tiles, a kinetic number/counter, notification toasts, a countdown, a full-width system/EXPIRED banner, a padlock wall, bold kinetic headline type, badges, a chat bubble, a stamp. Reserve the cream label for the occasional aside.
+- WIT: GIANT (≈`1/2` frame) and the soul of each scene, with an EXPRESSIVE on-topic pose per beat. VARY WIT across scenes in side (left / center / right), scale, vertical anchor, AND pose; flip the text/UI to the side WIT is not using; rearrange items around WIT instead of shrinking it. Never park WIT on the same side every scene with text always opposite. (`wit-pose-money-panic.png` has a baked black bg — avoid on photo scenes.)
+
 If a visual plan would still force `render` to invent the main scene, timing, joke, asset choice, WIT pose, or markup placement, the plan is not finished.
 
 The plan must also prevent the most common render-review failures before they happen:

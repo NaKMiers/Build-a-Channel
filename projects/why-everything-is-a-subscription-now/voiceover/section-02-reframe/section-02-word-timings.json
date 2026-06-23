@@ -1,0 +1,625 @@
+{
+  "transcript": "Now this is not a video about how subscriptions are evil and you should throw your phone in a lake. Some are genuinely useful. Calm down, this is about something weirder. We used to own things. You paid once the thing was yours, the end. A beautiful boring transaction. A subscription is different. You don't buy the thing, you rent access to it. Pay every month, the screen turns on. Miss a payment and your own device does this. You a little padlock appears and it looks at you like a disappointed parent. So here's the real question. How did almost everything your apps, your shows, your software, even buttons inside your car, quietly turn into stuff you rent instead of stuff you own.",
+  "words": [
+    {
+      "word": "Now",
+      "start": 0,
+      "end": 0.32
+    },
+    {
+      "word": "this",
+      "start": 0.32,
+      "end": 0.58
+    },
+    {
+      "word": "is",
+      "start": 0.58,
+      "end": 0.7
+    },
+    {
+      "word": "not",
+      "start": 0.7,
+      "end": 0.88
+    },
+    {
+      "word": "a",
+      "start": 0.88,
+      "end": 0.98
+    },
+    {
+      "word": "video",
+      "start": 0.98,
+      "end": 1.22
+    },
+    {
+      "word": "about",
+      "start": 1.22,
+      "end": 1.56
+    },
+    {
+      "word": "how",
+      "start": 1.56,
+      "end": 1.84
+    },
+    {
+      "word": "subscriptions",
+      "start": 1.84,
+      "end": 2.34
+    },
+    {
+      "word": "are",
+      "start": 2.34,
+      "end": 2.78
+    },
+    {
+      "word": "evil",
+      "start": 2.78,
+      "end": 3.06
+    },
+    {
+      "word": "and",
+      "start": 3.06,
+      "end": 3.26
+    },
+    {
+      "word": "you",
+      "start": 3.26,
+      "end": 3.4
+    },
+    {
+      "word": "should",
+      "start": 3.4,
+      "end": 3.62
+    },
+    {
+      "word": "throw",
+      "start": 3.62,
+      "end": 3.8
+    },
+    {
+      "word": "your",
+      "start": 3.8,
+      "end": 4.04
+    },
+    {
+      "word": "phone",
+      "start": 4.04,
+      "end": 4.26
+    },
+    {
+      "word": "in",
+      "start": 4.26,
+      "end": 4.44
+    },
+    {
+      "word": "a",
+      "start": 4.44,
+      "end": 4.56
+    },
+    {
+      "word": "lake.",
+      "start": 4.56,
+      "end": 5.32
+    },
+    {
+      "word": "Some",
+      "start": 5.32,
+      "end": 5.5
+    },
+    {
+      "word": "are",
+      "start": 5.5,
+      "end": 5.78
+    },
+    {
+      "word": "genuinely",
+      "start": 5.78,
+      "end": 6.18
+    },
+    {
+      "word": "useful.",
+      "start": 6.18,
+      "end": 7.1
+    },
+    {
+      "word": "Calm",
+      "start": 7.1,
+      "end": 7.38
+    },
+    {
+      "word": "down,",
+      "start": 7.38,
+      "end": 8
+    },
+    {
+      "word": "this",
+      "start": 8,
+      "end": 8.02
+    },
+    {
+      "word": "is",
+      "start": 8.02,
+      "end": 8.2
+    },
+    {
+      "word": "about",
+      "start": 8.2,
+      "end": 8.4
+    },
+    {
+      "word": "something",
+      "start": 8.4,
+      "end": 8.78
+    },
+    {
+      "word": "weirder.",
+      "start": 8.78,
+      "end": 9.3
+    },
+    {
+      "word": "We",
+      "start": 9.3,
+      "end": 9.54
+    },
+    {
+      "word": "used",
+      "start": 9.54,
+      "end": 9.78
+    },
+    {
+      "word": "to",
+      "start": 9.78,
+      "end": 9.9
+    },
+    {
+      "word": "own",
+      "start": 9.9,
+      "end": 10.12
+    },
+    {
+      "word": "things.",
+      "start": 10.12,
+      "end": 10.5
+    },
+    {
+      "word": "You",
+      "start": 10.5,
+      "end": 10.78
+    },
+    {
+      "word": "paid",
+      "start": 10.78,
+      "end": 11.02
+    },
+    {
+      "word": "once",
+      "start": 11.02,
+      "end": 11.28
+    },
+    {
+      "word": "the",
+      "start": 11.28,
+      "end": 11.42
+    },
+    {
+      "word": "thing",
+      "start": 11.42,
+      "end": 11.56
+    },
+    {
+      "word": "was",
+      "start": 11.56,
+      "end": 11.78
+    },
+    {
+      "word": "yours,",
+      "start": 11.78,
+      "end": 12.32
+    },
+    {
+      "word": "the",
+      "start": 12.32,
+      "end": 12.32
+    },
+    {
+      "word": "end.",
+      "start": 12.32,
+      "end": 12.78
+    },
+    {
+      "word": "A",
+      "start": 12.78,
+      "end": 13
+    },
+    {
+      "word": "beautiful",
+      "start": 13,
+      "end": 13.34
+    },
+    {
+      "word": "boring",
+      "start": 13.34,
+      "end": 13.8
+    },
+    {
+      "word": "transaction.",
+      "start": 13.8,
+      "end": 14.8
+    },
+    {
+      "word": "A",
+      "start": 14.8,
+      "end": 15.1
+    },
+    {
+      "word": "subscription",
+      "start": 15.1,
+      "end": 15.36
+    },
+    {
+      "word": "is",
+      "start": 15.36,
+      "end": 15.66
+    },
+    {
+      "word": "different.",
+      "start": 15.66,
+      "end": 16.16
+    },
+    {
+      "word": "You",
+      "start": 16.16,
+      "end": 16.28
+    },
+    {
+      "word": "don't",
+      "start": 16.28,
+      "end": 16.46
+    },
+    {
+      "word": "buy",
+      "start": 16.46,
+      "end": 16.64
+    },
+    {
+      "word": "the",
+      "start": 16.64,
+      "end": 16.84
+    },
+    {
+      "word": "thing,",
+      "start": 16.84,
+      "end": 17.16
+    },
+    {
+      "word": "you",
+      "start": 17.16,
+      "end": 17.24
+    },
+    {
+      "word": "rent",
+      "start": 17.24,
+      "end": 17.46
+    },
+    {
+      "word": "access",
+      "start": 17.46,
+      "end": 17.84
+    },
+    {
+      "word": "to",
+      "start": 17.84,
+      "end": 18.06
+    },
+    {
+      "word": "it.",
+      "start": 18.06,
+      "end": 18.4
+    },
+    {
+      "word": "Pay",
+      "start": 18.4,
+      "end": 18.62
+    },
+    {
+      "word": "every",
+      "start": 18.62,
+      "end": 18.9
+    },
+    {
+      "word": "month,",
+      "start": 18.9,
+      "end": 19.34
+    },
+    {
+      "word": "the",
+      "start": 19.34,
+      "end": 19.34
+    },
+    {
+      "word": "screen",
+      "start": 19.34,
+      "end": 19.62
+    },
+    {
+      "word": "turns",
+      "start": 19.62,
+      "end": 20.02
+    },
+    {
+      "word": "on.",
+      "start": 20.02,
+      "end": 20.52
+    },
+    {
+      "word": "Miss",
+      "start": 20.52,
+      "end": 20.64
+    },
+    {
+      "word": "a",
+      "start": 20.64,
+      "end": 20.88
+    },
+    {
+      "word": "payment",
+      "start": 20.88,
+      "end": 21.12
+    },
+    {
+      "word": "and",
+      "start": 21.12,
+      "end": 21.34
+    },
+    {
+      "word": "your",
+      "start": 21.34,
+      "end": 21.52
+    },
+    {
+      "word": "own",
+      "start": 21.52,
+      "end": 21.74
+    },
+    {
+      "word": "device",
+      "start": 21.74,
+      "end": 22.12
+    },
+    {
+      "word": "does",
+      "start": 22.12,
+      "end": 22.46
+    },
+    {
+      "word": "this.",
+      "start": 22.46,
+      "end": 22.92
+    },
+    {
+      "word": "You",
+      "start": 22.92,
+      "end": 23.12
+    },
+    {
+      "word": "a",
+      "start": 23.12,
+      "end": 23.18
+    },
+    {
+      "word": "little",
+      "start": 23.18,
+      "end": 23.44
+    },
+    {
+      "word": "padlock",
+      "start": 23.44,
+      "end": 23.94
+    },
+    {
+      "word": "appears",
+      "start": 23.94,
+      "end": 24.62
+    },
+    {
+      "word": "and",
+      "start": 24.72,
+      "end": 25.14
+    },
+    {
+      "word": "it",
+      "start": 25.14,
+      "end": 25.28
+    },
+    {
+      "word": "looks",
+      "start": 25.28,
+      "end": 25.44
+    },
+    {
+      "word": "at",
+      "start": 25.44,
+      "end": 25.62
+    },
+    {
+      "word": "you",
+      "start": 25.62,
+      "end": 25.8
+    },
+    {
+      "word": "like",
+      "start": 25.8,
+      "end": 26.06
+    },
+    {
+      "word": "a",
+      "start": 26.06,
+      "end": 26.4
+    },
+    {
+      "word": "disappointed",
+      "start": 26.4,
+      "end": 26.76
+    },
+    {
+      "word": "parent.",
+      "start": 26.76,
+      "end": 27.44
+    },
+    {
+      "word": "So",
+      "start": 27.44,
+      "end": 27.84
+    },
+    {
+      "word": "here's",
+      "start": 27.84,
+      "end": 28.1
+    },
+    {
+      "word": "the",
+      "start": 28.1,
+      "end": 28.26
+    },
+    {
+      "word": "real",
+      "start": 28.26,
+      "end": 28.52
+    },
+    {
+      "word": "question.",
+      "start": 28.52,
+      "end": 29.62
+    },
+    {
+      "word": "How",
+      "start": 29.62,
+      "end": 29.8
+    },
+    {
+      "word": "did",
+      "start": 29.8,
+      "end": 29.94
+    },
+    {
+      "word": "almost",
+      "start": 29.94,
+      "end": 30.32
+    },
+    {
+      "word": "everything",
+      "start": 30.32,
+      "end": 30.74
+    },
+    {
+      "word": "your",
+      "start": 30.74,
+      "end": 31.04
+    },
+    {
+      "word": "apps,",
+      "start": 31.04,
+      "end": 31.38
+    },
+    {
+      "word": "your",
+      "start": 31.38,
+      "end": 31.58
+    },
+    {
+      "word": "shows,",
+      "start": 31.58,
+      "end": 31.94
+    },
+    {
+      "word": "your",
+      "start": 31.94,
+      "end": 32.24
+    },
+    {
+      "word": "software,",
+      "start": 32.24,
+      "end": 33
+    },
+    {
+      "word": "even",
+      "start": 33,
+      "end": 33.26
+    },
+    {
+      "word": "buttons",
+      "start": 33.26,
+      "end": 33.62
+    },
+    {
+      "word": "inside",
+      "start": 33.62,
+      "end": 34.1
+    },
+    {
+      "word": "your",
+      "start": 34.1,
+      "end": 34.36
+    },
+    {
+      "word": "car,",
+      "start": 34.36,
+      "end": 35.08
+    },
+    {
+      "word": "quietly",
+      "start": 35.08,
+      "end": 35.08
+    },
+    {
+      "word": "turn",
+      "start": 35.08,
+      "end": 35.5
+    },
+    {
+      "word": "into",
+      "start": 35.5,
+      "end": 35.84
+    },
+    {
+      "word": "stuff",
+      "start": 35.84,
+      "end": 36.1
+    },
+    {
+      "word": "you",
+      "start": 36.1,
+      "end": 36.26
+    },
+    {
+      "word": "rent",
+      "start": 36.26,
+      "end": 36.54
+    },
+    {
+      "word": "instead",
+      "start": 36.54,
+      "end": 37.1
+    },
+    {
+      "word": "of",
+      "start": 37.1,
+      "end": 37.1
+    },
+    {
+      "word": "stuff",
+      "start": 37.1,
+      "end": 37.42
+    },
+    {
+      "word": "you",
+      "start": 37.42,
+      "end": 37.56
+    },
+    {
+      "word": "own.",
+      "start": 37.56,
+      "end": 39.16
+    }
+  ]
+}

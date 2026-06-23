@@ -1,4 +1,4 @@
-# Section 1 Visual Plan
+# Section 1 Visual Plan (REMADE)
 
 Video:
 `Why Everything Is a Subscription Now`
@@ -7,7 +7,7 @@ Section:
 `Section 1: Hook: It's More Than You Think`
 
 Status:
-`draft visual plan for approval`
+`remade after review — built + previewing on localhost:1001`
 
 ## Files
 
@@ -15,13 +15,11 @@ Status:
 - Reference board: `reference-board.md`
 - Asset folder: `../../assets/visual-references/section-01-hook/`
 
-## Build Notes
+## Build Notes (remake)
 
-- Big scene count: 3 (phone bank-app → screens that own you → rent-your-life payoff)
-- Cue state count: 7
-- Main motif: glowing screens silently charging you; one circled mystery charge
-- WIT emotion: suspicious → shocked → deadpan → trapped (4 beats, ≤2/scene)
-- Key labels: `HOW MANY?`, red circle + `?`, `an app / a "free" trial / a show`, `FREE TRIAL OF OWNING THINGS · EXPIRED`, `YOU RENT YOUR WHOLE LIFE`
-- Reference pass: real CC0/CC BY photos (phone-in-hand, desk-devices) + CSS bank-app/device screens (real-UI illustration); WIT from shared library
-- Key assets: base-phone-blank-inhand.jpg, base-desk-devices.jpg, WIT poses
-- HyperFrames readiness: ready; timing estimated — render should generate `section-01-word-timings.json` (whisper) and re-pin cues to real word starts
+- Big scenes: 3 — app grid (coins) → charge toasts (cash) → padlock wall (padlocks)
+- Main motif: money draining into subscriptions, then everything locks
+- WIT: price-tag-suspicion → hidden-fee-panic → holding-phone-panic → trapped-by-app-screen (4 beats)
+- Idea devices (replacing cream boxes): app grid, jumping counter, notification toasts, free-trial countdown, EXPIRED modal, padlock wall, kinetic payoff
+- Bases: base-coins.jpg, base-cash.jpg, base-padlock.jpg (vivid, on-topic, brand/people-free)
+- HyperFrames readiness: built; lint 0/0, validate 0 errors; cues pinned to word-timings
