@@ -32,8 +32,8 @@ Source files:
 | 1 | Hook: You're The Rabbit | draft plan for approval | 23.019s | 3 | 7 | `visual-plan/section-01-hook/section-01-hook-visual-plan.md` | `visual-plan/section-01-hook/reference-board.md` | store → cash → magic; rabbit payoff |
 | 2 | Same To You, Not To Them | draft plan for approval | 40.469s | 5 | 11 | `visual-plan/section-02-same-to-you-not-to-them/section-02-same-to-you-not-to-them-visual-plan.md` | `visual-plan/section-02-same-to-you-not-to-them/reference-board.md` | math shown on screen; register→cash→coins→counter→Wedgwood |
 | 3 | The Receipt Knows | remade (subscription style) | 32.235s | 5 | 13 | `visual-plan/section-03-the-receipt-knows/section-03-the-receipt-knows-visual-plan.md` | `visual-plan/section-03-the-receipt-knows/reference-board.md` | vivid dark money bases + giant kinetic $5→$10 + giant WIT; cash→coins→basket→curtain→cash |
-| 4 | The Magic Word | not planned | 37.099s | — | — | — | — | — |
-| 5 | The Price Never Drops | not planned | 36.416s | — | — | — | — | — |
+| 4 | The Magic Word | built (subscription bar) | 37.099s | 5 | 12 | `visual-plan/section-04-the-magic-word/section-04-the-magic-word-visual-plan.md` | `visual-plan/section-04-the-magic-word/reference-board.md` | giant FREE + NUMBER-vs-FEELING + hostage shampoo; brain→coins→gift→cash→coins |
+| 5 | The Price Never Drops | remade — fresh bases, clean text | 36.416s | 5 | 11 | `visual-plan/section-05-the-price-never-drops/section-05-the-price-never-drops-visual-plan.md` | `visual-plan/section-05-the-price-never-drops/reference-board.md` | anchoring; 5 FRESH retail bases (shelf-tags→sale-store→boutique→aisle→shop); one clean hero per beat, no stacked text |
 | 6 | When The Store Loses | not planned | 34.923s | — | — | — | — | — |
 | 7 | Payoff: Free Cuts Your Judgment | not planned | 38.912s | — | — | — | — | — |
 

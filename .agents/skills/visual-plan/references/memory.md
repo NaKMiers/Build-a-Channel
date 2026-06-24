@@ -801,6 +801,37 @@ Apply next time:
 Promote to shared memory:
 no for now; a per-owner taste signal. Revisit if it recurs across videos.
 
+### 2026-06-24 - Source FRESH bases per section + never stack/overlap text (S5 remake)
+
+Classification: `Visual plan lesson`
+
+Context:
+`why-buy-1-get-1-beats-50-off` Section 5 v1 reused cash/coins/red-curtain bases from S1–S4 and stacked
+several text elements close together. Owner: "you reuse too many images from other sections, don't be
+lazy; texts are covered by many texts; this section looks so bad — do it again." The accepted remake
+sourced 5 FRESH distinct retail photos for the section (shelf price tags, red 50%/30% sale store,
+boutique mannequins, supermarket aisle, clothing shop) and used one clean hero device per beat with
+well-spaced, sequentially-timed text.
+
+Lesson:
+Two hard rules, applied up front:
+1. SOURCE FRESH BASES PER SECTION. Reusing the same money/coins/curtain photos across sections reads as
+   lazy to this owner. Each section gets its own distinct, on-topic vivid bases (a few minutes of
+   Openverse/Wikimedia sourcing). Money objects can recur thematically only with genuinely different
+   photos + distinct grades — never literally the same files section after section.
+2. ONE CLEAN HERO PER BEAT, NO STACKED TEXT. Don't pile multiple labels/cards close together. Per scene:
+   one large hero device + at most one small caption, vertically well-spaced (≥~150px gaps), revealed
+   SEQUENTIALLY on their words (not all at once), all on the half opposite the giant WIT. Use a
+   side-gradient scrim to darken only the text half so labels read on busy photos.
+
+Apply next time:
+- budget sourcing time for fresh per-section bases; do not default to copying a prior section's assets.
+- design each scene as hero + spaced caption; stagger reveals; check the contact sheet for any
+  text-over-text or text-near-text crowding before handoff.
+
+Promote to shared memory:
+no for now; strong per-owner execution rules. Fold a one-liner into the SKILL Default Build Bar.
+
 ## Feedback Entry Template
 
 ```markdown

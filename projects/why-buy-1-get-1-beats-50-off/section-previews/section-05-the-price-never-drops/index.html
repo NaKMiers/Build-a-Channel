@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Section 05 - The Price Never Drops</title>
+  <style>
+    @font-face { font-family: "PatrickHandLocal"; src: url("./assets/fonts/patrick-hand-latin.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
+    :root { --ink:#14110d; --red:#e0392b; --green:#3ddc7f; --gold:#ffd23f; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #07070a; color:#fff; overflow: hidden; }
+    #Section05Anchor { position: relative; width: 1920px; height: 1080px; overflow: hidden; background: #07070a; font-family: "PatrickHandLocal"; }
+    .scene, .cue { position: absolute; inset: 0; width: 100%; height: 100%; overflow: hidden; }
+    .scene { z-index: 1; will-change: opacity, transform, filter; }
+    .cue { z-index: 5; pointer-events: none; }
+    .photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+    .photo.tags    { filter:saturate(1.12) contrast(1.06) brightness(0.6); }
+    .photo.sale    { filter:saturate(1.16) contrast(1.06) brightness(0.5); }
+    .photo.boutique{ filter:saturate(1.12) contrast(1.06) brightness(0.52); }
+    .photo.aisle   { filter:saturate(1.1) contrast(1.08) brightness(0.46); }
+    .photo.shop    { filter:saturate(1.12) contrast(1.06) brightness(0.5); }
+    /* side scrims: darken the half where the text sits so it always reads */
+    .scrim { position:absolute; inset:0; z-index:1; }
+    .scrim.left  { background:linear-gradient(90deg, rgba(4,5,10,0.84) 0%, rgba(4,5,10,0.5) 42%, rgba(4,5,10,0.12) 70%); }
+    .scrim.right { background:linear-gradient(270deg, rgba(4,5,10,0.84) 0%, rgba(4,5,10,0.5) 42%, rgba(4,5,10,0.12) 70%); }
+    .ui { font-family:"Segoe UI",system-ui,sans-serif; }
+
+    /* price tag (one hero) */
+    .ptag { position:absolute; z-index:9; background:#f7f4ea; color:#161616; border:6px solid #c9c0a8; border-radius:18px; padding:14px 38px 20px; text-align:center; font-family:"Segoe UI",system-ui,sans-serif; box-shadow:0 18px 44px rgba(0,0,0,0.6); }
+    .ptag .num { font-weight:900; font-size:168px; line-height:0.9; }
+    .ptag .lbl { font-weight:800; font-size:30px; color:#7a1714; margin-top:4px; }
+    .ptag.proud { border-color:var(--gold); box-shadow:0 0 48px rgba(255,210,63,0.5), 0 18px 44px rgba(0,0,0,0.6); }
+
+    .cap { position:absolute; z-index:9; font-family:"Segoe UI",system-ui,sans-serif; font-weight:900; color:#fff; text-shadow:0 0 28px rgba(0,0,0,0.85), 4px 5px 0 rgba(0,0,0,0.6); }
+    .cap .hi { color:var(--gold); } .cap .rd { color:#ff6a5a; }
+    .magic { position:absolute; z-index:9; font-family:"PatrickHandLocal"; font-size:58px; color:var(--gold); text-shadow:0 0 24px rgba(255,210,63,0.6), 3px 4px 0 rgba(0,0,0,0.6); }
+
+    /* anchoring shrink card (one stacked unit) */
+    .shrink { position:absolute; z-index:9; background:rgba(10,10,16,0.9); border:3px solid #fff; border-radius:20px; padding:22px 34px; text-align:center; font-family:"Segoe UI",system-ui,sans-serif; box-shadow:0 18px 40px rgba(0,0,0,0.6); width:520px; }
+    .shrink .old { font-weight:900; font-size:72px; color:#cdd3da; text-decoration:line-through; text-decoration-color:var(--red); text-decoration-thickness:8px; }
+    .shrink .new { font-weight:900; font-size:150px; line-height:0.92; color:#fff; }
+    .shrink .note { font-weight:700; font-size:34px; color:var(--gold); margin-top:6px; }
+
+    .stamp { position:absolute; z-index:11; font-family:"Segoe UI",system-ui,sans-serif; font-weight:900; color:#fff; border:7px solid var(--red); background:rgba(224,57,43,0.2); border-radius:16px; padding:12px 28px; transform:rotate(-7deg); text-shadow:3px 4px 0 rgba(0,0,0,0.6); box-shadow:0 0 32px rgba(224,57,43,0.55); }
+    .badge { position:absolute; z-index:10; font-family:"Segoe UI",system-ui,sans-serif; font-weight:900; font-size:54px; color:#06320f; background:var(--green); border-radius:16px; padding:12px 26px; transform:rotate(-5deg); box-shadow:0 0 28px rgba(61,220,127,0.55); }
+
+    /* want cards (Scene E) */
+    .want { position:absolute; z-index:9; border-radius:18px; padding:18px 28px; font-family:"Segoe UI",system-ui,sans-serif; font-weight:900; box-shadow:0 16px 36px rgba(0,0,0,0.55); width:600px; }
+    .want.hot { background:rgba(196,35,26,0.94); border:3px solid #ff8a7d; }
+    .want.meh { background:rgba(64,70,78,0.94); border:3px solid #9aa3ad; }
+    .want .h { font-size:42px; color:#fff; } .want .v { font-size:58px; color:var(--gold); margin-top:2px; }
+    .want.meh .v { color:#cdd3da; font-size:46px; }
+
+    .wit { position:absolute; object-fit:contain; z-index:8; filter:drop-shadow(16px 20px 0 rgba(0,0,0,0.36)); transform-origin:center center; }
+    .ptag,.cap,.magic,.shrink,.stamp,.badge,.want,.wit { will-change: opacity, transform; }
+  </style>
+</head>
+<body>
+  <div id="Section05Anchor" data-composition-id="Section05Anchor" data-start="0" data-duration="36.416" data-width="1920" data-height="1080">
+
+    <!-- SCENE A: shelf price tags 0-4.56 -->
+    <div id="scene-a" class="clip scene" data-start="0" data-duration="4.56" data-track-index="1">
+      <img class="photo tags" src="./assets/visual-references/section-05-the-price-never-drops/base-a-shelf-tags.jpg" alt=""><div class="scrim right"></div>
+    </div>
+    <!-- SCENE B: red sale store 4.56-12.62 -->
+    <div id="scene-b" class="clip scene" data-start="4.56" data-duration="8.06" data-track-index="3">
+      <img class="photo sale" src="./assets/visual-references/section-05-the-price-never-drops/base-b-sale-store.jpg" alt=""><div class="scrim left"></div>
+    </div>
+    <!-- SCENE C: boutique 12.62-20.02 -->
+    <div id="scene-c" class="clip scene" data-start="12.62" data-duration="7.40" data-track-index="4">
+      <img class="photo boutique" src="./assets/visual-references/section-05-the-price-never-drops/base-c-boutique.jpg" alt=""><div class="scrim right"></div>
+    </div>
+    <!-- SCENE D: aisle 20.02-23.68 -->
+    <div id="scene-d" class="clip scene" data-start="20.02" data-duration="3.66" data-track-index="5">
+      <img class="photo aisle" src="./assets/visual-references/section-05-the-price-never-drops/base-d-aisle.jpg" alt=""><div class="scrim left"></div>
+    </div>
+    <!-- SCENE E: clothing shop 23.68-36.416 -->
+    <div id="scene-e" class="clip scene" data-start="23.68" data-duration="12.736" data-track-index="6">
+      <img class="photo shop" src="./assets/visual-references/section-05-the-price-never-drops/base-e-shop.jpg" alt=""><div class="scrim right"></div>
+    </div>
+
+    <!-- CUE A 0-4.54 : WIT right, device left -->
+    <div id="cue-a" class="clip cue" data-start="0" data-duration="4.54" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="ptag ca-tag" style="left:140px; top:250px;"><div class="num">$10</div><div class="lbl">on the sign</div></div>
+      <div class="cap ca-cap" style="left:140px; top:660px; font-size:64px;">never <span class="rd">drops</span></div>
+      <img class="wit ca-wit" data-layout-allow-overflow="" style="right:-150px; bottom:-360px; width:1320px;" src="./assets/wit/wit-pose-price-tag-suspicion.png" alt="">
+    </div>
+
+    <!-- CUE B 4.56-12.60 : WIT left, device right -->
+    <div id="cue-b" class="clip cue" data-start="4.56" data-duration="8.04" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="shrink cb-card ui" style="left:1240px; top:200px;">
+        <div class="old cb-old">$10</div>
+        <div class="new cb-new">$5</div>
+        <div class="note cb-note">now $5 feels "normal"</div>
+      </div>
+      <div class="stamp cb-cheap ui" style="left:1300px; top:720px; font-size:58px;">LOOKS CHEAP — forever</div>
+      <img class="wit cb-wit" data-layout-allow-overflow="" style="left:-180px; bottom:-360px; width:1320px;" src="./assets/wit/wit-pose-deadpan-side-eye.png" alt="">
+    </div>
+
+    <!-- CUE C 12.62-20.00 : WIT right, device left -->
+    <div id="cue-c" class="clip cue" data-start="12.62" data-duration="7.38" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="ptag proud cc-tag" style="left:140px; top:200px;"><div class="num">$10</div><div class="lbl">the "real" price stays HIGH</div></div>
+      <div class="badge cc-bonus" style="left:170px; top:660px;">+1 FREE — "a bonus on top"</div>
+      <img class="wit cc-wit" data-layout-allow-overflow="" style="right:-150px; bottom:-360px; width:1320px;" src="./assets/wit/wit-pose-shocked.png" alt="">
+    </div>
+
+    <!-- CUE D 20.02-23.66 : WIT left, text right -->
+    <div id="cue-d" class="clip cue" data-start="20.02" data-duration="3.64" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="cap cd-love" style="left:1040px; top:250px; font-size:82px;">Stores <span class="rd">LOVE</span> this.</div>
+      <div class="cap cd-why" style="left:1040px; top:430px; font-size:44px; font-weight:800;">a sale — without admitting<br>the thing is <span class="hi">cheap</span></div>
+      <img class="wit cd-wit" data-layout-allow-overflow="" style="left:-180px; bottom:-360px; width:1300px;" src="./assets/wit/wit-pose-facepalm.png" alt="">
+    </div>
+
+    <!-- CUE E 23.68-36.416 : WIT right, cards left -->
+    <div id="cue-e" class="clip cue" data-start="23.68" data-duration="12.736" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="magic ce-cap" style="left:120px; top:96px; width:780px;">they pick this shape on purpose…</div>
+      <div class="want hot ce-w1" style="left:120px; top:250px;"><div class="h">the FIRST one</div><div class="v">you want it a lot</div></div>
+      <div class="want meh ce-w2" style="left:120px; top:440px;"><div class="h">the SECOND one</div><div class="v">…eh, not really</div></div>
+      <div class="stamp ce-full ui" style="left:140px; top:680px; font-size:46px;">so: FULL price for #1, #2 "free"</div>
+      <img class="wit ce-wit" data-layout-allow-overflow="" style="right:-150px; bottom:-360px; width:1320px;" src="./assets/wit/wit-pose-empty-wallet.png" alt="">
+    </div>
+
+    <audio id="voiceover-section-05" data-start="0" data-duration="36.416" data-track-index="10" data-volume="1" crossorigin="anonymous" src="./section-05-the-price-never-drops-david23-am_eric-0.82.mp3"></audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true, defaults: { overwrite: "auto" } });
+      const reveal = (t, hideAt, at, fv, tv = {}) => { const r = {}; if ("x" in fv) r.x = 0; if ("y" in fv) r.y = 0; if ("scale" in fv) r.scale = 1; if ("opacity" in fv) r.opacity = 1; tl.set(t, fv, hideAt); tl.to(t, { ...r, ...tv }, at); };
+      const show = (t, hideAt, at) => { tl.set(t, { opacity: 0 }, hideAt); tl.set(t, { opacity: 1 }, at); };
+      const hide = (t, at) => { tl.set(t, { opacity: 0 }, at); };
+      const smash = (t, hideAt, at, fv = { y: 20, scale: 1.3, opacity: 0 }) => reveal(t, hideAt, at, fv, { duration: 0.2, ease: "back.out(2)" });
+      const pop = (t, hideAt, at) => reveal(t, hideAt, at, { scale: 0.4, opacity: 0 }, { duration: 0.22, ease: "back.out(2)" });
+
+      // scene cross-fades
+      tl.fromTo("#scene-b", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 4.56);
+      tl.fromTo("#scene-c", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 12.62);
+      tl.fromTo("#scene-d", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 20.02);
+      tl.fromTo("#scene-e", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 23.68);
+
+      // SCENE A — the price never drops (1 hero + 1 caption, spaced)
+      show("#cue-a .ca-wit", 0, 0.50);
+      pop("#cue-a .ca-tag", 0, 2.16);                                 // "the price on the sign"
+      show("#cue-a .ca-cap", 0, 3.24);                                // "never drops"
+
+      // SCENE B — 50% off shrinks value (one stacked card, then one stamp)
+      hide("#cue-b .cb-cheap", 4.56);
+      show("#cue-b .cb-wit", 4.56, 4.70);
+      tl.set("#cue-b .cb-card", { opacity: 0 }, 4.56);
+      tl.set("#cue-b .cb-new", { opacity: 0 }, 4.56);
+      tl.to("#cue-b .cb-card", { opacity: 1, duration: 0.2 }, 6.50);  // "$10 ... only really worth"
+      smash("#cue-b .cb-new", 4.56, 8.80, { scale: 0.4, opacity: 0 }); // "$5 ... feels normal now"
+      smash("#cue-b .cb-cheap", 4.56, 11.34, { scale: 0.5, opacity: 0 }); // "looks cheap forever"
+
+      // SCENE C — BOGO keeps the proud price (1 tag + 1 badge, spaced)
+      hide("#cue-c .cc-bonus", 12.62);
+      show("#cue-c .cc-wit", 12.62, 12.78);
+      pop("#cue-c .cc-tag", 12.62, 12.88);                            // "keeps that proud $10"
+      smash("#cue-c .cc-bonus", 12.62, 18.48, { scale: 0.5, opacity: 0 }); // "a bonus on top"
+
+      // SCENE D — stores love it (2 short lines, spaced)
+      hide("#cue-d .cd-why", 20.02);
+      show("#cue-d .cd-wit", 20.02, 20.16);
+      show("#cue-d .cd-love", 20.02, 20.02);                          // "stores love that"
+      show("#cue-d .cd-why", 20.02, 21.74);                           // "without admitting it's cheap"
+
+      // SCENE E — want #1 not #2 (caption + 2 cards + stamp, all spaced & sequential)
+      hide("#cue-e .ce-w1", 23.68); hide("#cue-e .ce-w2", 23.68); hide("#cue-e .ce-full", 23.68);
+      show("#cue-e .ce-cap", 23.68, 23.68);                           // "they pick this shape on purpose"
+      show("#cue-e .ce-wit", 23.68, 24.00);
+      pop("#cue-e .ce-w1", 23.68, 25.74);                             // "the first one a lot"
+      pop("#cue-e .ce-w2", 23.68, 27.60);                             // "the second one, eh"
+      smash("#cue-e .ce-full", 23.68, 33.74, { scale: 0.5, opacity: 0 }); // "charge full for the first"
+
+      window.__timelines["Section05Anchor"] = tl;
+    </script>
+  </div>
+</body>
+</html>

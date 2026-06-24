@@ -1,0 +1,646 @@
+{
+  "transcript": "Third trick, and it is the sneaky one. The price on the sign never drops. Fifty percent off whispers: this thing is only really worth five bucks. And now five is the normal price in your head. The product looks cheap, forever. Buy one, get one free keeps that proud ten-dollar price right there. The real price stays high. You just got a bonus on top. Stores love that. They get the sale, without admitting the thing is cheap. And they pick this shape on purpose. You want the first one a lot, and the second one, eh, not really. At half price you would buy just one. So they do not drop the price. They shove a second one at you and charge full for the first.",
+  "words": [
+    {
+      "word": "Third",
+      "start": 0,
+      "end": 0.44
+    },
+    {
+      "word": "trick,",
+      "start": 0.44,
+      "end": 0.86
+    },
+    {
+      "word": "and",
+      "start": 0.86,
+      "end": 0.88
+    },
+    {
+      "word": "it",
+      "start": 0.88,
+      "end": 0.98
+    },
+    {
+      "word": "is",
+      "start": 0.98,
+      "end": 1.14
+    },
+    {
+      "word": "the",
+      "start": 1.14,
+      "end": 1.4
+    },
+    {
+      "word": "sneaky",
+      "start": 1.4,
+      "end": 1.62
+    },
+    {
+      "word": "one.",
+      "start": 1.62,
+      "end": 2.16
+    },
+    {
+      "word": "The",
+      "start": 2.16,
+      "end": 2.36
+    },
+    {
+      "word": "price",
+      "start": 2.36,
+      "end": 2.58
+    },
+    {
+      "word": "on",
+      "start": 2.58,
+      "end": 2.76
+    },
+    {
+      "word": "the",
+      "start": 2.76,
+      "end": 2.98
+    },
+    {
+      "word": "sign",
+      "start": 2.98,
+      "end": 3.24
+    },
+    {
+      "word": "never",
+      "start": 3.24,
+      "end": 3.62
+    },
+    {
+      "word": "drops.",
+      "start": 3.62,
+      "end": 4.56
+    },
+    {
+      "word": "50",
+      "start": 4.56,
+      "end": 4.82
+    },
+    {
+      "word": "%",
+      "start": 4.82,
+      "end": 5.18
+    },
+    {
+      "word": "off",
+      "start": 5.18,
+      "end": 5.52
+    },
+    {
+      "word": "whispers,",
+      "start": 5.52,
+      "end": 6.06
+    },
+    {
+      "word": "this",
+      "start": 6.06,
+      "end": 6.2
+    },
+    {
+      "word": "thing",
+      "start": 6.2,
+      "end": 6.36
+    },
+    {
+      "word": "is",
+      "start": 6.36,
+      "end": 6.5
+    },
+    {
+      "word": "only",
+      "start": 6.5,
+      "end": 6.74
+    },
+    {
+      "word": "really",
+      "start": 6.74,
+      "end": 7.02
+    },
+    {
+      "word": "worth",
+      "start": 7.02,
+      "end": 7.34
+    },
+    {
+      "word": "five",
+      "start": 7.34,
+      "end": 7.7
+    },
+    {
+      "word": "bucks.",
+      "start": 7.7,
+      "end": 8.2
+    },
+    {
+      "word": "And",
+      "start": 8.2,
+      "end": 8.48
+    },
+    {
+      "word": "now",
+      "start": 8.48,
+      "end": 8.8
+    },
+    {
+      "word": "five",
+      "start": 8.8,
+      "end": 9.04
+    },
+    {
+      "word": "is",
+      "start": 9.04,
+      "end": 9.18
+    },
+    {
+      "word": "the",
+      "start": 9.18,
+      "end": 9.36
+    },
+    {
+      "word": "normal",
+      "start": 9.36,
+      "end": 9.6
+    },
+    {
+      "word": "price",
+      "start": 9.6,
+      "end": 9.9
+    },
+    {
+      "word": "in",
+      "start": 9.9,
+      "end": 10
+    },
+    {
+      "word": "your",
+      "start": 10,
+      "end": 10.16
+    },
+    {
+      "word": "head.",
+      "start": 10.16,
+      "end": 10.54
+    },
+    {
+      "word": "The",
+      "start": 10.54,
+      "end": 10.76
+    },
+    {
+      "word": "product",
+      "start": 10.76,
+      "end": 11
+    },
+    {
+      "word": "looks",
+      "start": 11,
+      "end": 11.34
+    },
+    {
+      "word": "cheap",
+      "start": 11.34,
+      "end": 11.74
+    },
+    {
+      "word": "forever.",
+      "start": 11.74,
+      "end": 12.62
+    },
+    {
+      "word": "By",
+      "start": 12.62,
+      "end": 12.88
+    },
+    {
+      "word": "one,",
+      "start": 12.88,
+      "end": 13.18
+    },
+    {
+      "word": "get",
+      "start": 13.18,
+      "end": 13.22
+    },
+    {
+      "word": "one",
+      "start": 13.22,
+      "end": 13.48
+    },
+    {
+      "word": "free",
+      "start": 13.48,
+      "end": 13.72
+    },
+    {
+      "word": "keeps",
+      "start": 13.72,
+      "end": 14
+    },
+    {
+      "word": "that",
+      "start": 14,
+      "end": 14.24
+    },
+    {
+      "word": "proud.",
+      "start": 14.24,
+      "end": 14.76
+    },
+    {
+      "word": "$10",
+      "start": 14.76,
+      "end": 15.02
+    },
+    {
+      "word": "price",
+      "start": 15.02,
+      "end": 15.58
+    },
+    {
+      "word": "right",
+      "start": 15.58,
+      "end": 15.96
+    },
+    {
+      "word": "there.",
+      "start": 15.96,
+      "end": 16.38
+    },
+    {
+      "word": "The",
+      "start": 16.38,
+      "end": 16.56
+    },
+    {
+      "word": "real",
+      "start": 16.56,
+      "end": 16.84
+    },
+    {
+      "word": "price",
+      "start": 16.84,
+      "end": 17.14
+    },
+    {
+      "word": "stays",
+      "start": 17.14,
+      "end": 17.42
+    },
+    {
+      "word": "high.",
+      "start": 17.42,
+      "end": 17.84
+    },
+    {
+      "word": "You",
+      "start": 17.84,
+      "end": 17.98
+    },
+    {
+      "word": "just",
+      "start": 17.98,
+      "end": 18.2
+    },
+    {
+      "word": "got",
+      "start": 18.2,
+      "end": 18.38
+    },
+    {
+      "word": "a",
+      "start": 18.38,
+      "end": 18.48
+    },
+    {
+      "word": "bonus",
+      "start": 18.48,
+      "end": 18.72
+    },
+    {
+      "word": "on",
+      "start": 18.72,
+      "end": 19.04
+    },
+    {
+      "word": "top.",
+      "start": 19.04,
+      "end": 20.02
+    },
+    {
+      "word": "Stores",
+      "start": 20.02,
+      "end": 20.02
+    },
+    {
+      "word": "love",
+      "start": 20.02,
+      "end": 20.32
+    },
+    {
+      "word": "that.",
+      "start": 20.32,
+      "end": 20.84
+    },
+    {
+      "word": "They",
+      "start": 20.84,
+      "end": 20.9
+    },
+    {
+      "word": "get",
+      "start": 20.9,
+      "end": 21.06
+    },
+    {
+      "word": "the",
+      "start": 21.06,
+      "end": 21.32
+    },
+    {
+      "word": "sale.",
+      "start": 21.32,
+      "end": 21.74
+    },
+    {
+      "word": "Without",
+      "start": 21.74,
+      "end": 22.06
+    },
+    {
+      "word": "admitting",
+      "start": 22.06,
+      "end": 22.38
+    },
+    {
+      "word": "the",
+      "start": 22.38,
+      "end": 22.64
+    },
+    {
+      "word": "thing",
+      "start": 22.64,
+      "end": 22.82
+    },
+    {
+      "word": "is",
+      "start": 22.82,
+      "end": 23.08
+    },
+    {
+      "word": "cheap.",
+      "start": 23.08,
+      "end": 23.68
+    },
+    {
+      "word": "And",
+      "start": 23.68,
+      "end": 24.02
+    },
+    {
+      "word": "they",
+      "start": 24.02,
+      "end": 24.2
+    },
+    {
+      "word": "pick",
+      "start": 24.2,
+      "end": 24.38
+    },
+    {
+      "word": "this",
+      "start": 24.38,
+      "end": 24.66
+    },
+    {
+      "word": "shape",
+      "start": 24.66,
+      "end": 24.96
+    },
+    {
+      "word": "on",
+      "start": 24.96,
+      "end": 25.26
+    },
+    {
+      "word": "purpose.",
+      "start": 25.26,
+      "end": 25.74
+    },
+    {
+      "word": "You",
+      "start": 25.74,
+      "end": 26.04
+    },
+    {
+      "word": "want",
+      "start": 26.04,
+      "end": 26.2
+    },
+    {
+      "word": "the",
+      "start": 26.2,
+      "end": 26.34
+    },
+    {
+      "word": "first",
+      "start": 26.34,
+      "end": 26.6
+    },
+    {
+      "word": "one",
+      "start": 26.6,
+      "end": 26.78
+    },
+    {
+      "word": "a",
+      "start": 26.78,
+      "end": 26.94
+    },
+    {
+      "word": "lot.",
+      "start": 26.94,
+      "end": 27.28
+    },
+    {
+      "word": "and",
+      "start": 27.6,
+      "end": 27.78
+    },
+    {
+      "word": "the",
+      "start": 27.78,
+      "end": 27.96
+    },
+    {
+      "word": "second",
+      "start": 27.96,
+      "end": 28.24
+    },
+    {
+      "word": "one,",
+      "start": 28.24,
+      "end": 28.9
+    },
+    {
+      "word": "eh,",
+      "start": 28.9,
+      "end": 29.3
+    },
+    {
+      "word": "not",
+      "start": 29.3,
+      "end": 29.6
+    },
+    {
+      "word": "really.",
+      "start": 29.6,
+      "end": 30.05
+    },
+    {
+      "word": "At",
+      "start": 30.05,
+      "end": 30.22
+    },
+    {
+      "word": "half",
+      "start": 30.22,
+      "end": 30.46
+    },
+    {
+      "word": "price",
+      "start": 30.46,
+      "end": 30.7
+    },
+    {
+      "word": "you",
+      "start": 30.7,
+      "end": 30.86
+    },
+    {
+      "word": "would",
+      "start": 30.86,
+      "end": 31.08
+    },
+    {
+      "word": "buy",
+      "start": 31.08,
+      "end": 31.34
+    },
+    {
+      "word": "just",
+      "start": 31.34,
+      "end": 31.6
+    },
+    {
+      "word": "one.",
+      "start": 31.6,
+      "end": 32.15
+    },
+    {
+      "word": "So",
+      "start": 32.15,
+      "end": 32.32
+    },
+    {
+      "word": "they",
+      "start": 32.32,
+      "end": 32.48
+    },
+    {
+      "word": "do",
+      "start": 32.48,
+      "end": 32.62
+    },
+    {
+      "word": "not",
+      "start": 32.62,
+      "end": 32.84
+    },
+    {
+      "word": "drop",
+      "start": 32.84,
+      "end": 33.04
+    },
+    {
+      "word": "the",
+      "start": 33.04,
+      "end": 33.22
+    },
+    {
+      "word": "price.",
+      "start": 33.22,
+      "end": 33.74
+    },
+    {
+      "word": "They",
+      "start": 33.74,
+      "end": 33.96
+    },
+    {
+      "word": "shove",
+      "start": 33.96,
+      "end": 34.16
+    },
+    {
+      "word": "a",
+      "start": 34.16,
+      "end": 34.3
+    },
+    {
+      "word": "second",
+      "start": 34.3,
+      "end": 34.58
+    },
+    {
+      "word": "one",
+      "start": 34.58,
+      "end": 34.78
+    },
+    {
+      "word": "at",
+      "start": 34.78,
+      "end": 34.96
+    },
+    {
+      "word": "you,",
+      "start": 34.96,
+      "end": 35.18
+    },
+    {
+      "word": "and",
+      "start": 35.18,
+      "end": 35.42
+    },
+    {
+      "word": "charge",
+      "start": 35.42,
+      "end": 35.74
+    },
+    {
+      "word": "full",
+      "start": 35.74,
+      "end": 36
+    },
+    {
+      "word": "for",
+      "start": 36,
+      "end": 36.16
+    },
+    {
+      "word": "the",
+      "start": 36.16,
+      "end": 36.3
+    },
+    {
+      "word": "first.",
+      "start": 36.3,
+      "end": 36.416
+    }
+  ],
+  "tailNote": "words after 27.2s hand-estimated (whisper-tiny dropped the final segment)"
+}
