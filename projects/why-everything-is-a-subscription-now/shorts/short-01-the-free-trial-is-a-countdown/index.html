@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Short 01 — The Free Trial Is A Countdown</title>
+<style>
+  @font-face{ font-family:'Patrick Hand'; src:url('assets/fonts/patrick-hand-latin.woff2') format('woff2'); font-display:swap; }
+  *{ box-sizing:border-box; }
+  body{ margin:0; background:#07070a; overflow:hidden; }
+  #Short01{ position:relative; width:1080px; height:1920px; overflow:hidden; background:#07070a;
+            font-family:'Patrick Hand', system-ui, sans-serif; }
+
+  .scene{ position:absolute; inset:0; }
+  .photo{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; }
+  .scrim-top{ position:absolute; top:0; left:0; right:0; height:680px;
+              background:linear-gradient(180deg, rgba(0,0,0,0.62), rgba(0,0,0,0)); }
+  .scrim-bottom{ position:absolute; bottom:0; left:0; right:0; height:600px;
+                 background:linear-gradient(0deg, rgba(0,0,0,0.58), rgba(0,0,0,0)); }
+
+  /* WIT — big, face above the centered caption, body bleeds toward the bottom */
+  .wit{ position:absolute; left:50%; bottom:360px; transform:translateX(-50%);
+        width:940px; transform-origin:center bottom; opacity:0;
+        filter:drop-shadow(0 14px 30px rgba(0,0,0,0.55)); }
+  #witDeadpan{ bottom:430px; }
+  #witHiddenFee{ bottom:430px; }
+  #witReceipt{ bottom:400px; }
+  .wit-layer{ position:absolute; inset:0; pointer-events:none; }
+
+  .card-layer{ position:absolute; inset:0; }
+  /* FREE TRIAL splash */
+  .splash{ position:absolute; left:50%; top:250px; transform:translateX(-50%) rotate(-2deg);
+           color:#06281b; background:#33d17a; font-size:104px; line-height:0.98; letter-spacing:1px;
+           padding:22px 52px; border-radius:22px; border:7px solid #fff; white-space:nowrap; text-align:center;
+           box-shadow:0 16px 36px rgba(0,0,0,0.55); opacity:0; }
+  .splash small{ display:block; font-size:42px; color:#06281b; letter-spacing:3px; }
+  /* trial countdown card + flip */
+  .pillcard{ position:absolute; left:50%; top:300px; transform:translateX(-50%) rotate(-1.4deg);
+             font-size:80px; line-height:1.02; padding:20px 46px; border-radius:18px;
+             border:6px solid #241c12; box-shadow:0 14px 30px rgba(0,0,0,0.5);
+             white-space:nowrap; text-align:center; opacity:0; }
+  .pillcard.free{ background:#33d17a; color:#06281b; }
+  .pillcard.free small{ display:block; font-size:44px; letter-spacing:2px; }
+  .pillcard.flip{ background:#c0392b; color:#fff; top:470px; transform:translateX(-50%) rotate(2deg); }
+  /* forgetting is the design */
+  .label{ position:absolute; left:50%; top:280px; transform:translateX(-50%) rotate(-1.4deg);
+          background:#fdf6e3; color:#241c12; font-size:74px; line-height:1.06;
+          padding:18px 40px; border-radius:16px; border:5px solid #241c12;
+          box-shadow:0 12px 26px rgba(0,0,0,0.45); white-space:nowrap; text-align:center; opacity:0; }
+  .label b{ color:#c0392b; }
+  /* bank statement card */
+  .statement{ position:absolute; left:50%; top:250px; transform:translateX(-50%) rotate(-1deg);
+              background:#fdf6e3; color:#241c12; border:5px solid #241c12; border-radius:16px;
+              padding:18px 26px; box-shadow:0 14px 30px rgba(0,0,0,0.5); opacity:0; }
+  .statement .ttl{ font-size:42px; color:#7a6a52; letter-spacing:1px; margin-bottom:8px; }
+  .statement .row{ font-size:54px; display:flex; justify-content:space-between; gap:40px; padding:6px 12px; }
+  .statement .ghost{ position:relative; color:#c0392b; }
+  .statement .ghost::after{ content:""; position:absolute; left:-8px; right:-8px; top:-2px; bottom:-2px;
+                            border:5px solid #c0392b; border-radius:14px; transform:rotate(-1.5deg); }
+  .statement .every{ display:block; text-align:center; font-size:40px; color:#c0392b; margin-top:8px; }
+  /* payoff EXPIRED stamp */
+  .expired{ position:absolute; left:50%; top:280px; transform:translateX(-50%) rotate(-3deg);
+            color:#fff; background:#c0392b; font-size:70px; line-height:1.04; letter-spacing:1px;
+            padding:22px 40px; border-radius:18px; border:7px solid #fff; white-space:nowrap; text-align:center;
+            box-shadow:0 18px 40px rgba(0,0,0,0.55); opacity:0; }
+  .expired small{ display:block; font-size:46px; color:#ffd9d2; letter-spacing:2px; }
+  .expired .big{ display:block; margin-top:8px; font-size:78px; }
+
+  /* Captions */
+  .caption-layer{ position:absolute; inset:0; }
+  .cap{ position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);
+        background:rgba(16,12,9,0.5); border-radius:22px; padding:14px 32px;
+        color:#fff; font-size:62px; line-height:1.1; text-align:center; white-space:nowrap;
+        max-width:800px; text-shadow:0 2px 0 #000, 0 0 16px rgba(0,0,0,0.85);
+        -webkit-text-stroke:1px rgba(0,0,0,0.55); opacity:0; }
+</style>
+</head>
+<body>
+<div id="Short01" data-composition-id="Short01" data-start="0" data-duration="32.60" data-width="1080" data-height="1920">
+
+  <!-- Scene bases -->
+  <div class="clip scene" id="sceneA" data-composition-id="s01-sceneA" data-start="0"     data-duration="7.60"  data-track-index="1">
+    <img class="photo" src="assets/photos/gift.jpg" alt=""><div class="scrim-top"></div><div class="scrim-bottom"></div>
+  </div>
+  <div class="clip scene" id="sceneB" data-composition-id="s01-sceneB" data-start="7.10"  data-duration="6.90"  data-track-index="3">
+    <img class="photo" src="assets/photos/hourglass.jpg" alt=""><div class="scrim-top"></div><div class="scrim-bottom"></div>
+  </div>
+  <div class="clip scene" id="sceneC" data-composition-id="s01-sceneC" data-start="13.50" data-duration="7.90"  data-track-index="4">
+    <img class="photo" src="assets/photos/busydesk.jpg" alt=""><div class="scrim-top"></div><div class="scrim-bottom"></div>
+  </div>
+  <div class="clip scene" id="sceneD" data-composition-id="s01-sceneD" data-start="20.80" data-duration="11.80" data-track-index="5">
+    <img class="photo" src="assets/photos/piggy.jpg" alt=""><div class="scrim-top"></div><div class="scrim-bottom"></div>
+  </div>
+
+  <!-- WIT layer -->
+  <div class="wit-layer">
+    <img class="wit" id="witDeadpan" src="assets/wit/wit-pose-deadpan-side-eye.png" alt="">
+    <img class="wit" id="witHiddenFee" src="assets/wit/wit-pose-hidden-fee-panic.png" alt="">
+    <img class="wit" id="witReceipt" src="assets/wit/wit-pose-holding-receipt-evidence.png" alt="">
+  </div>
+
+  <!-- Hero cards -->
+  <div class="card-layer">
+    <div class="splash" id="lblSplash">START YOUR<br>FREE TRIAL!<small>no charge today*</small></div>
+    <div class="pillcard free" id="lblFree">FREE<small>for 7 days</small></div>
+    <div class="pillcard flip" id="lblFlip">→ then $2.99 / mo</div>
+    <div class="label" id="lblDesign">forgetting is the <b>DESIGN</b></div>
+    <div class="statement" id="lblStmt">
+      <div class="ttl">YOUR BANK STATEMENT</div>
+      <div class="row"><span>Coffee</span><span>−$4.20</span></div>
+      <div class="row"><span>Groceries</span><span>−$38.10</span></div>
+      <div class="row ghost"><span>?? UNKNOWN</span><span>−$3.00</span></div>
+      <span class="every">…every month, for a year you can't name</span>
+    </div>
+    <div class="expired" id="lblExpired"><small>YOUR FREE TRIAL OF</small><span class="big">FINANCIAL AWARENESS</span><small>has expired</small></div>
+  </div>
+
+  <!-- Captions -->
+  <div class="caption-layer">
+    <div class="cap" id="cap1">they make it feel free</div>
+    <div class="cap" id="cap2">just pop in your card</div>
+    <div class="cap" id="cap3">strangers love that</div>
+    <div class="cap" id="cap4">a countdown you can't see</div>
+    <div class="cap" id="cap5">most people just forget</div>
+    <div class="cap" id="cap6">a ghost in your account</div>
+    <div class="cap" id="cap7">open your bank statement</div>
+    <div class="cap" id="cap8">find a mystery charge</div>
+  </div>
+
+  <audio id="vo" data-start="0" data-duration="31.381" data-track-index="10" data-volume="1" crossorigin="anonymous" src="assets/../voiceover/short-01.mp3"></audio>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script>
+    window.__timelines = window.__timelines || {};
+    const tl = gsap.timeline({ paused:true, defaults:{ overwrite:"auto" } });
+    window.__timelines["Short01"] = tl;
+
+    gsap.set(['#sceneB','#sceneC','#sceneD'], { opacity:0 });
+    gsap.set(['#witDeadpan','#witHiddenFee','#witReceipt'], { opacity:0 });
+    gsap.set(['.splash','.pillcard','.label','.statement','.expired','.cap'], { opacity:0 });
+
+    const show = (sel,t)=> tl.set(sel,{opacity:1}, t);
+    const hide = (sel,t)=> tl.set(sel,{opacity:0}, t);
+    const pop  = (sel,t)=> tl.fromTo(sel,{opacity:0,scale:0.6},
+                    {opacity:1,scale:1,duration:0.42,ease:'back.out(2)',immediateRender:false}, t);
+    const fadeScene = (sel,t)=> tl.fromTo(sel,{opacity:0,filter:'blur(14px)'},
+                    {opacity:1,filter:'blur(0px)',duration:0.5,immediateRender:false}, t);
+
+    // ---- Scene A (gift) : they make it feel free ----
+    show('#witDeadpan', 0.0);
+    show('#cap1', 0.05); hide('#cap1', 2.40);
+    pop('#lblSplash', 2.94);                    // "Start your free trial!"
+    pop('#cap2', 4.60); hide('#cap2', 5.55);
+    pop('#cap3', 5.90); hide('#cap3', 7.00);
+
+    // ---- Scene B (hourglass) : the countdown, free -> payment ----
+    fadeScene('#sceneB', 7.10);
+    hide('#witDeadpan', 7.10); hide('#lblSplash', 7.10);
+    pop('#lblFree', 7.66);                       // "the trial is real for 7 days"
+    pop('#cap4', 10.46); hide('#cap4', 12.10);
+    hide('#lblFree', 12.50);
+    pop('#lblFlip', 12.66);                      // "free quietly becomes a payment"
+
+    // ---- Scene C (busydesk) : forgetting is the design, a ghost ----
+    fadeScene('#sceneC', 13.50);
+    hide('#lblFlip', 13.50);
+    show('#witHiddenFee', 13.60);
+    pop('#cap5', 13.80); hide('#cap5', 15.30);
+    pop('#lblDesign', 15.48);                    // "forgetting is the design"
+    hide('#lblDesign', 18.60);
+    pop('#cap6', 19.18); hide('#cap6', 20.70);   // "a ghost in your account"
+
+    // ---- Scene D (piggy) : the statement + payoff ----
+    fadeScene('#sceneD', 20.80);
+    hide('#witHiddenFee', 20.80);
+    show('#witReceipt', 20.90);
+    pop('#cap7', 20.95); hide('#cap7', 22.10);
+    pop('#cap8', 22.90); hide('#cap8', 23.95);
+    pop('#lblStmt', 24.16);                      // "a mystery charge, three dollars"
+    hide('#lblStmt', 28.50);
+    pop('#lblExpired', 28.64);                   // payoff card, holds to end
+  </script>
+</div>
+</body>
+</html>

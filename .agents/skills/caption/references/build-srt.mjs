@@ -1,11 +1,15 @@
 // Caption skill — align exact script cues to real word timestamps and write SRT.
 // Usage:
-//   node build-srt.mjs <timings.json> <cues.json> <out.srt> [audioDurationSeconds]
+//   node build-srt.mjs <timings.json> <cues.json> <out.srt> [audioDurationSeconds] [segments.json]
 //
-// timings.json : { words: [{ word, start, end }] }  (from transcribe-combined.mjs)
-// cues.json    : ["First caption line.", "Second line.", ...] exact display text
-//                derived from the project's 02-script.md narration, in order.
-// out.srt      : output path (export under projects/<slug>/output/)
+// timings.json  : { words: [{ word, start, end }] }  (from transcribe-combined.mjs)
+// cues.json     : ["First caption line.", "Second line.", ...] exact display text
+//                 derived from the project's 02-script.md narration, in order.
+// out.srt       : output path (export under projects/<slug>/output/captions/english.srt)
+// segments.json : OPTIONAL output path. When given, also writes the per-cue
+//                 timing table [{ index, start, end, text }] so the multi-language
+//                 step can reuse the EXACT same timing for every translated SRT
+//                 (timing comes once from the real audio; translations only swap text).
 //
 // Words shown come from cues.json (ground truth). Timing comes from the audio
 // (Needleman-Wunsch alignment of normalized tokens), so wording is exact and
@@ -16,6 +20,7 @@ const TIMINGS = process.argv[2];
 const CUES = process.argv[3];
 const OUT = process.argv[4];
 const AUDIO_DUR = process.argv[5] ? parseFloat(process.argv[5]) : null;
+const SEGMENTS_OUT = process.argv[6] || null;
 
 const cues = JSON.parse(readFileSync(CUES, "utf8"));
 const data = JSON.parse(readFileSync(TIMINGS, "utf8"));
@@ -108,6 +113,12 @@ function ts(sec) {
 let srt = "";
 cues.forEach((c, idx) => { srt += `${idx + 1}\n${ts(segs[idx].start)} --> ${ts(segs[idx].end)}\n${c}\n\n`; });
 writeFileSync(OUT, srt, "utf8");
+
+if (SEGMENTS_OUT) {
+  const table = cues.map((c, idx) => ({ index: idx + 1, start: segs[idx].start, end: segs[idx].end, text: c }));
+  writeFileSync(SEGMENTS_OUT, JSON.stringify(table, null, 2), "utf8");
+  console.error(`wrote ${table.length} timing segments -> ${SEGMENTS_OUT}`);
+}
 
 console.error(`cues: ${cues.length}, gt tokens: ${N}, hyp tokens: ${M}`);
 console.error(`first: ${ts(segs[0].start)} --> ${ts(segs[0].end)}`);

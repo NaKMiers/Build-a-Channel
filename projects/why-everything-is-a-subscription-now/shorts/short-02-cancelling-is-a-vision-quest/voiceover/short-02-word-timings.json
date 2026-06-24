@@ -1,0 +1,510 @@
+{
+  "transcript": "Okay, you say, I'll just cancel. Oh, sweet child. Here's the strange law of subscriptions. Signing up takes 10 seconds. Cancelling takes a vision quest. Getting in is a big, happy, glowing button. Getting out is hidden in your phone like a final boss. You tap account, then settings, then manage, then are you sure, then, here have a discount, then we'll miss you. Then a phone number that only answers between two and 215 on a Tuesday. This even has a name. Negative option billing, a fancy term for one simple trick. You keep paying unless you actively say stop.",
+  "words": [
+    {
+      "word": "Okay,",
+      "start": 0,
+      "end": 0.56
+    },
+    {
+      "word": "you",
+      "start": 0.56,
+      "end": 0.56
+    },
+    {
+      "word": "say,",
+      "start": 0.56,
+      "end": 0.88
+    },
+    {
+      "word": "I'll",
+      "start": 0.88,
+      "end": 0.9
+    },
+    {
+      "word": "just",
+      "start": 0.9,
+      "end": 1.18
+    },
+    {
+      "word": "cancel.",
+      "start": 1.18,
+      "end": 1.64
+    },
+    {
+      "word": "Oh,",
+      "start": 1.66,
+      "end": 1.9
+    },
+    {
+      "word": "sweet",
+      "start": 1.9,
+      "end": 2.1
+    },
+    {
+      "word": "child.",
+      "start": 2.1,
+      "end": 2.56
+    },
+    {
+      "word": "Here's",
+      "start": 2.56,
+      "end": 2.76
+    },
+    {
+      "word": "the",
+      "start": 2.76,
+      "end": 2.98
+    },
+    {
+      "word": "strange",
+      "start": 2.98,
+      "end": 3.26
+    },
+    {
+      "word": "law",
+      "start": 3.26,
+      "end": 3.42
+    },
+    {
+      "word": "of",
+      "start": 3.42,
+      "end": 3.6
+    },
+    {
+      "word": "subscriptions.",
+      "start": 3.6,
+      "end": 4.36
+    },
+    {
+      "word": "Signing",
+      "start": 4.36,
+      "end": 4.58
+    },
+    {
+      "word": "up",
+      "start": 4.58,
+      "end": 4.74
+    },
+    {
+      "word": "takes",
+      "start": 4.74,
+      "end": 4.92
+    },
+    {
+      "word": "10",
+      "start": 4.92,
+      "end": 5.3
+    },
+    {
+      "word": "seconds.",
+      "start": 5.3,
+      "end": 5.72
+    },
+    {
+      "word": "Cancelling",
+      "start": 5.76,
+      "end": 6.08
+    },
+    {
+      "word": "takes",
+      "start": 6.08,
+      "end": 6.34
+    },
+    {
+      "word": "a",
+      "start": 6.34,
+      "end": 6.48
+    },
+    {
+      "word": "vision",
+      "start": 6.48,
+      "end": 6.7
+    },
+    {
+      "word": "quest.",
+      "start": 6.7,
+      "end": 7.28
+    },
+    {
+      "word": "Getting",
+      "start": 7.28,
+      "end": 7.34
+    },
+    {
+      "word": "in",
+      "start": 7.34,
+      "end": 7.52
+    },
+    {
+      "word": "is",
+      "start": 7.52,
+      "end": 7.66
+    },
+    {
+      "word": "a",
+      "start": 7.66,
+      "end": 7.74
+    },
+    {
+      "word": "big,",
+      "start": 7.74,
+      "end": 8.06
+    },
+    {
+      "word": "happy,",
+      "start": 8.06,
+      "end": 8.6
+    },
+    {
+      "word": "glowing",
+      "start": 8.6,
+      "end": 8.6
+    },
+    {
+      "word": "button.",
+      "start": 8.6,
+      "end": 8.96
+    },
+    {
+      "word": "Getting",
+      "start": 8.96,
+      "end": 9.14
+    },
+    {
+      "word": "out",
+      "start": 9.14,
+      "end": 9.36
+    },
+    {
+      "word": "is",
+      "start": 9.36,
+      "end": 9.52
+    },
+    {
+      "word": "hidden",
+      "start": 9.52,
+      "end": 9.68
+    },
+    {
+      "word": "in",
+      "start": 9.68,
+      "end": 9.82
+    },
+    {
+      "word": "your",
+      "start": 9.82,
+      "end": 9.98
+    },
+    {
+      "word": "phone",
+      "start": 9.98,
+      "end": 10.18
+    },
+    {
+      "word": "like",
+      "start": 10.18,
+      "end": 10.38
+    },
+    {
+      "word": "a",
+      "start": 10.38,
+      "end": 10.8
+    },
+    {
+      "word": "final",
+      "start": 10.8,
+      "end": 10.8
+    },
+    {
+      "word": "boss.",
+      "start": 10.8,
+      "end": 11.62
+    },
+    {
+      "word": "You",
+      "start": 11.62,
+      "end": 11.74
+    },
+    {
+      "word": "tap",
+      "start": 11.74,
+      "end": 11.9
+    },
+    {
+      "word": "account,",
+      "start": 11.9,
+      "end": 12.32
+    },
+    {
+      "word": "then",
+      "start": 12.32,
+      "end": 12.56
+    },
+    {
+      "word": "settings,",
+      "start": 12.56,
+      "end": 12.96
+    },
+    {
+      "word": "then",
+      "start": 12.96,
+      "end": 13.18
+    },
+    {
+      "word": "manage,",
+      "start": 13.18,
+      "end": 13.48
+    },
+    {
+      "word": "then",
+      "start": 13.48,
+      "end": 13.76
+    },
+    {
+      "word": "are",
+      "start": 13.76,
+      "end": 13.88
+    },
+    {
+      "word": "you",
+      "start": 13.88,
+      "end": 14.06
+    },
+    {
+      "word": "sure,",
+      "start": 14.06,
+      "end": 14.3
+    },
+    {
+      "word": "then,",
+      "start": 14.3,
+      "end": 14.52
+    },
+    {
+      "word": "here",
+      "start": 14.52,
+      "end": 14.66
+    },
+    {
+      "word": "have",
+      "start": 14.66,
+      "end": 14.84
+    },
+    {
+      "word": "a",
+      "start": 14.84,
+      "end": 15
+    },
+    {
+      "word": "discount,",
+      "start": 15,
+      "end": 15.32
+    },
+    {
+      "word": "then",
+      "start": 15.32,
+      "end": 15.64
+    },
+    {
+      "word": "we'll",
+      "start": 15.64,
+      "end": 15.8
+    },
+    {
+      "word": "miss",
+      "start": 15.8,
+      "end": 16.04
+    },
+    {
+      "word": "you.",
+      "start": 16.04,
+      "end": 16.5
+    },
+    {
+      "word": "Then",
+      "start": 16.5,
+      "end": 16.66
+    },
+    {
+      "word": "a",
+      "start": 16.66,
+      "end": 16.82
+    },
+    {
+      "word": "phone",
+      "start": 16.82,
+      "end": 16.96
+    },
+    {
+      "word": "number",
+      "start": 16.96,
+      "end": 17.16
+    },
+    {
+      "word": "that",
+      "start": 17.16,
+      "end": 17.36
+    },
+    {
+      "word": "only",
+      "start": 17.36,
+      "end": 17.68
+    },
+    {
+      "word": "answers",
+      "start": 17.68,
+      "end": 17.92
+    },
+    {
+      "word": "between",
+      "start": 17.92,
+      "end": 18.34
+    },
+    {
+      "word": "two",
+      "start": 18.34,
+      "end": 18.62
+    },
+    {
+      "word": "and",
+      "start": 18.62,
+      "end": 18.86
+    },
+    {
+      "word": "215",
+      "start": 18.86,
+      "end": 19.18
+    },
+    {
+      "word": "on",
+      "start": 19.18,
+      "end": 19.44
+    },
+    {
+      "word": "a",
+      "start": 19.44,
+      "end": 19.56
+    },
+    {
+      "word": "Tuesday.",
+      "start": 19.56,
+      "end": 19.86
+    },
+    {
+      "word": "This",
+      "start": 19.96,
+      "end": 20.18
+    },
+    {
+      "word": "even",
+      "start": 20.18,
+      "end": 20.36
+    },
+    {
+      "word": "has",
+      "start": 20.36,
+      "end": 20.6
+    },
+    {
+      "word": "a",
+      "start": 20.6,
+      "end": 20.72
+    },
+    {
+      "word": "name.",
+      "start": 20.72,
+      "end": 21.12
+    },
+    {
+      "word": "Negative",
+      "start": 21.12,
+      "end": 21.5
+    },
+    {
+      "word": "option",
+      "start": 21.5,
+      "end": 22.06
+    },
+    {
+      "word": "billing,",
+      "start": 22.06,
+      "end": 22.76
+    },
+    {
+      "word": "a",
+      "start": 22.76,
+      "end": 22.86
+    },
+    {
+      "word": "fancy",
+      "start": 22.86,
+      "end": 23.1
+    },
+    {
+      "word": "term",
+      "start": 23.1,
+      "end": 23.48
+    },
+    {
+      "word": "for",
+      "start": 23.48,
+      "end": 23.66
+    },
+    {
+      "word": "one",
+      "start": 23.66,
+      "end": 23.94
+    },
+    {
+      "word": "simple",
+      "start": 23.94,
+      "end": 24.28
+    },
+    {
+      "word": "trick.",
+      "start": 24.28,
+      "end": 24.628
+    },
+    {
+      "word": "You",
+      "start": 24.628,
+      "end": 24.976
+    },
+    {
+      "word": "keep",
+      "start": 24.976,
+      "end": 25.324
+    },
+    {
+      "word": "paying",
+      "start": 25.324,
+      "end": 25.672
+    },
+    {
+      "word": "unless",
+      "start": 25.672,
+      "end": 26.021
+    },
+    {
+      "word": "you",
+      "start": 26.021,
+      "end": 26.369
+    },
+    {
+      "word": "actively",
+      "start": 26.369,
+      "end": 26.717
+    },
+    {
+      "word": "say",
+      "start": 26.717,
+      "end": 27.065
+    },
+    {
+      "word": "stop.",
+      "start": 27.065,
+      "end": 27.413
+    }
+  ]
+}

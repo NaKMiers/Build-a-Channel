@@ -50,7 +50,7 @@ Current dependency chain:
 |    6 | `render`              | `06-production-board.md`, `section-previews/`, `hyperframes/`, `renders/` | `05-visual-plan.md` and selected section visual plan |
 |    7 | future review skill   | `07-review.md`                                                            | rendered or previewable video sections               |
 |  7.5 | `combine`             | `hyperframes/full-video/` unified preview + `combined-voiceover.mp3`; final video exported to `output/<slug>.mp4` (via `renders/` staging, then moved; `renders/` removed if empty) | ALL sections rendered                                |
-|  7.8 | `caption`             | `output/captions.srt` (+ optional `.vtt`), `voiceover/combined-word-timings.json` | full combined audio or full video render             |
+|  7.8 | `caption`             | `output/captions/<language>.srt` for all 22 languages (+ compatibility `output/captions.srt`, optional `.vtt`), `voiceover/combined-word-timings.json` + `_segments.json` | full combined audio or full video render             |
 |    8 | future upload skill   | `08-upload.md`                                                            | approved review, captions                            |
 |    9 | future learning skill | `09-self-learning.md`                                                     | upload or review results                             |
 
@@ -84,7 +84,7 @@ Rerunning packaging does not make main pipeline outputs stale.
 - Step 5 `Visual plan` is implemented by `.agents/skills/visual-plan/`.
 - Step 6 `Render` is implemented by `.agents/skills/render/`.
 - Project-level `Combine` is implemented by `.agents/skills/combine/`.
-- Post-combine `Caption` is implemented by `.agents/skills/caption/`; it exports `output/captions.srt` from the full combined audio.
+- Post-combine `Caption` is implemented by `.agents/skills/caption/`; it derives timing once from the full combined audio and exports all 22 languages as `output/captions/<language>.srt` (plus a compatibility `output/captions.srt`).
 - The remaining lifecycle steps (review, upload, learning) do not have executable project-local skills yet.
 
 ## Section Production Branch
@@ -154,7 +154,7 @@ Each new video should start from `projects/_template/` and produce:
 - `section-previews/`
 - `visual-plan/`
 - `voiceover/`
-- `output/` (final deliverables for upload, e.g. `captions.srt`)
+- `output/` (final deliverables for upload, e.g. the final `.mp4`, `captions.srt`, and `captions/<language>.srt` for all 22 languages)
 
 ## Gate Rule
 

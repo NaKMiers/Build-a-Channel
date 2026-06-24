@@ -89,6 +89,13 @@ Build mechanics (for re-sync):
 - To re-sync after editing a section: re-copy `hyperframes/review/section-0X.html` → `compositions/section-0X.html`, strip its `<audio>`, copy new assets into `assets/`, regenerate `combined-voiceover.mp3`, and re-derive offsets from the new actual durations. Section 7's internal timing is `estimated` (no word-timings).
 - This is a preview, not an MP4 export (export not requested).
 
+## Caption (2026-06-24)
+
+- Multi-language captions exported to `output/captions/` — **22 languages**, one `<language>.srt` each (arabic, bangla, chinese-simplified, chinese-traditional, english, french, german, hindi, indonesian, italian, japanese, korean, malayalam, polish, portuguese, russian, spanish, tamil, telugu, thai, turkish, vietnamese).
+- Timing base: the verified English `output/captions.srt` (94 cues, first `00:00:00,000`, last ends `00:04:11,180` == combined audio `251.18s`). Parsed into a per-cue `_segments.json`; every language reuses that exact timing — translations only swap text, never the timestamps.
+- Each non-English track is a per-cue translation (exactly 94 cues, same order; "WIT" mascot preserved) written via `write-translated-srt.mjs`.
+- Verified: all 22 files have 94 cues with **byte-identical timestamps** to `english.srt` (0 mismatches); non-Latin scripts (Arabic, CJK, Indic, Thai, Cyrillic) render clean UTF-8, no mojibake. Compatibility `output/captions.srt` (English) left in place.
+
 ## Next Step Boundary
 
 Next workflow step: `Review` (Section 6 is auto-adjusted and verified).

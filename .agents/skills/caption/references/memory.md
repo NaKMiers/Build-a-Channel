@@ -10,8 +10,12 @@ Use this file for transcription toolchain details, alignment gotchas, and recurr
 - Require one project (named, smart-selected, or asked).
 - Require a single full-length audio source: `hyperframes/full-video/combined-voiceover.mp3` (preferred), a full video render's audio, or a user-pointed full track. Refuse on per-section audio only — tell the user to run `combine` first.
 - Timing ALWAYS from real word-level transcription of the full audio. Never estimate from word counts or documented durations.
-- Displayed text ALWAYS from `02-script.md` narration (ground truth), aligned to the transcribed timestamps.
-- Export `output/captions.srt` (+ `output/captions.vtt` only if asked). Keep `voiceover/combined-word-timings.json` for reuse.
+- English displayed text ALWAYS from `02-script.md` narration (ground truth), aligned to the transcribed timestamps.
+- **Multi-language (since 2026-06-24):** export ALL 22 supported languages as `output/captions/<language>.srt`. Timing is derived ONCE for English, emitted as `_segments.json` (`[{index,start,end,text}]`) by `build-srt.mjs`. Every other language is a per-cue translation of the English cue table (exact same count/order) and reuses `_segments.json` timing via `write-translated-srt.mjs` — never re-transcribed or re-timed. So all 22 tracks are frame-identical to the video by construction.
+- Translate WHOLE cues, never word-by-word, never split/merge a cue. `write-translated-srt.mjs` hard-fails on a count mismatch or empty cue.
+- MOST IMPORTANT gate: re-check that every `<language>.srt` has identical cue count and byte-identical timestamps to `english.srt`.
+- Export to `output/captions/` (22 files); also keep compatibility `output/captions.srt` (English) at output root. `.vtt` only if asked. Keep `voiceover/combined-word-timings.json` + `_segments.json` for reuse.
+- 22 languages: Arabic, Bangla, Chinese (Simplified→`chinese-simplified`), Chinese (Traditional→`chinese-traditional`), English, French, German, Hindi, Indonesian, Italian, Japanese, Korean, Malayalam, Polish, Portuguese, Russian, Spanish, Tamil, Telugu, Thai, Turkish, Vietnamese.
 
 ## Proven Toolchain (from `why-cheap-products-keep-getting-worse`, 2026-06-22)
 
@@ -31,12 +35,13 @@ Use this file for transcription toolchain details, alignment gotchas, and recurr
 - Build cues from `02-script.md` narration blocks, in order, one sentence / short clause per cue (split very long sentences for readability).
 - Needleman-Wunsch align normalized tokens (lowercase, strip punctuation, `&`→`and`, map number-words ↔ digits) between cue words and Whisper words. Assign each cue word the matched Whisper time; interpolate unmatched cue words from known neighbors. Cue start = first word start, end = last word end.
 - Enforce: monotonic, non-overlapping, gapless (cue ends at next cue's start), min ~0.7s, last cue end == audio duration (ffprobe / last word end).
-- Helpers in this folder: `transcribe-combined.mjs` (audio → word timings JSON) and `build-srt.mjs` (timings + cues JSON → SRT). `build-srt.mjs` takes cues as an external JSON array so it is not hardcoded per video.
+- Helpers in this folder: `transcribe-combined.mjs` (audio → word timings JSON), `build-srt.mjs` (timings + cues JSON → English SRT; pass arg 6 to also emit `_segments.json`), and `write-translated-srt.mjs` (`_segments.json` + translated-cues JSON → `<language>.srt`, reusing English timing). All take external JSON so nothing is hardcoded per video.
 
 ## Verified Results
 
 - `why-cheap-products-keep-getting-worse` (first run): combined audio 4:11.18 (251.18s) → 860 Whisper words → 94 cues. 0 overlaps, 0 zero-length, first `00:00:00,000`, last ends `00:04:11,180` (== audio).
 - `why-everything-is-a-subscription-now` (2026-06-23): combined audio 327.989s (combine cap 328.056s) → 1021 Whisper words → 132 cues. 0 overlaps / 0 zero-neg / monotonic / gapless; first `00:00:00,000`, last ends `00:05:28,056` (== cap). Tail clean (no whisper backward-jump this run). 1016 script tokens aligned vs 1021 hyp.
+- `why-cheap-products-keep-getting-worse` 22-language run (2026-06-24): reused the already-verified English `output/captions.srt` (94 cues, last `00:04:11,180`) as the timing base instead of re-transcribing — parsed it into `_segments.json` with a tiny SRT parser, then translated the 94 cues into 21 languages (one subagent per language, each writing a `<lang>-cues.json` of exactly 94 strings) and built each SRT via `write-translated-srt.mjs`. Verified all 22 files = 94 cues with byte-identical timestamp lines vs `english.srt` (0 mismatches). Efficient pattern: when a verified English SRT already exists, parse it for both cues + timing rather than re-running whisper. Parallel translator subagents (1 per language) + the count-guard in `write-translated-srt.mjs` make the 21-language fan-out fast and safe; "WIT" mascot must be flagged to translators as a keep-verbatim proper noun.
 
 ## Cross-Check Cue Times Against The Combine Section Offsets (cheap, high-signal)
 
@@ -56,6 +61,24 @@ On `why-everyone-pretends-to-be-busy` the final ~6 words got NON-MONOTONIC times
 Fix applied: the last cue's START was still correct (right after the previous distinct word); only its END was short. Extended the final cue's end to ≈ the audio duration (held the last line through the end — standard and harmless even over a short trailing silence). Always sanity-check the LAST 1-2 cues against the audio tail; if whisper timestamps go backwards there, extend the final cue end to the audio duration rather than trusting the glitched word times.
 
 ## Feedback Log
+
+### 2026-06-24 - Extended to 22-language captions
+
+Classification: `Operational lesson`
+
+Context:
+Anh Khoa asked caption to stop producing only English and instead export captions in 22 languages, each named `<language>.srt` in `output/captions/`, and stressed the re-check that every track matches the video timing as the most important step.
+
+Lesson:
+Derive timing exactly ONCE (English, against the real audio) and reuse it for all languages. Translation is per-cue (one line per cue, same count/order) so cue index → timing is shared; `write-translated-srt.mjs` reuses `_segments.json` and refuses on any count mismatch. This guarantees all 22 tracks are frame-identical to the video — translation can never introduce drift. Always re-verify cue count + byte-identical timestamps vs `english.srt` before handoff.
+
+Apply next time:
+- build English SRT + `_segments.json`, translate each other language cue-for-cue, write via `write-translated-srt.mjs`
+- export 22 files to `output/captions/` + compatibility `output/captions.srt`
+- re-check timestamps match across all languages (the hard gate)
+
+Promote to shared memory:
+No; caption-skill execution practice.
 
 ### 2026-06-22 - Skill created from the verified SRT build
 

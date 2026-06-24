@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Short 02 — Cancelling Is A Vision Quest</title>
+<style>
+  @font-face{ font-family:'Patrick Hand'; src:url('assets/fonts/patrick-hand-latin.woff2') format('woff2'); font-display:swap; }
+  *{ box-sizing:border-box; }
+  body{ margin:0; background:#07070a; overflow:hidden; }
+  #Short02{ position:relative; width:1080px; height:1920px; overflow:hidden; background:#07070a;
+            font-family:'Patrick Hand', system-ui, sans-serif; }
+
+  .scene{ position:absolute; inset:0; }
+  .photo{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; }
+  .scrim-top{ position:absolute; top:0; left:0; right:0; height:700px;
+              background:linear-gradient(180deg, rgba(0,0,0,0.64), rgba(0,0,0,0)); }
+  .scrim-bottom{ position:absolute; bottom:0; left:0; right:0; height:600px;
+                 background:linear-gradient(0deg, rgba(0,0,0,0.58), rgba(0,0,0,0)); }
+
+  .wit{ position:absolute; left:50%; bottom:360px; transform:translateX(-50%);
+        width:940px; transform-origin:center bottom; opacity:0;
+        filter:drop-shadow(0 14px 30px rgba(0,0,0,0.55)); }
+  #witConfused{ bottom:440px; }
+  #witDefeated{ bottom:430px; }
+  .wit-layer{ position:absolute; inset:0; pointer-events:none; }
+
+  .card-layer{ position:absolute; inset:0; }
+  /* SIGN UP vs CANCEL contrast */
+  .vs{ position:absolute; left:50%; transform:translateX(-50%) rotate(-1.4deg);
+       font-size:64px; line-height:1.04; padding:16px 38px; border-radius:16px;
+       border:5px solid #241c12; box-shadow:0 12px 26px rgba(0,0,0,0.46);
+       white-space:nowrap; text-align:center; opacity:0; }
+  .vs b{ font-size:70px; }
+  .vs.up{ top:280px; background:#33d17a; color:#06281b; }
+  .vs.up b{ color:#06281b; }
+  .vs.cancel{ top:450px; background:#fdf6e3; color:#241c12; transform:translateX(-50%) rotate(1.5deg); }
+  .vs.cancel b{ color:#c0392b; }
+  /* FINAL BOSS stamp */
+  .boss{ position:absolute; left:50%; top:300px; transform:translateX(-50%) rotate(-3deg);
+         color:#fff; background:#c0392b; font-size:96px; letter-spacing:2px;
+         padding:18px 50px; border-radius:18px; border:7px solid #fff; white-space:nowrap;
+         box-shadow:0 16px 36px rgba(0,0,0,0.55); opacity:0; }
+  /* maze breadcrumb chips */
+  .crumb{ position:absolute; background:#fdf6e3; color:#241c12; font-size:46px; line-height:1.0;
+          padding:10px 26px; border-radius:12px; border:4px solid #241c12; white-space:nowrap;
+          box-shadow:0 8px 18px rgba(0,0,0,0.42); opacity:0; }
+  .crumb.last{ background:#ffe2b8; }
+  /* phone-number gag card */
+  .gag{ position:absolute; left:50%; top:300px; transform:translateX(-50%) rotate(-1.6deg);
+        background:#fdf6e3; color:#241c12; font-size:66px; line-height:1.1;
+        padding:22px 44px; border-radius:18px; border:6px solid #241c12; text-align:center;
+        white-space:nowrap; box-shadow:0 14px 30px rgba(0,0,0,0.5); opacity:0; }
+  .gag small{ display:block; font-size:48px; color:#7a6a52; margin-top:6px; }
+  .gag b{ color:#c0392b; }
+  /* negative option billing stamp + payoff */
+  .name{ position:absolute; left:50%; top:300px; transform:translateX(-50%) rotate(-2.5deg);
+         color:#fff; background:#241c12; font-size:64px; line-height:1.04; letter-spacing:1px;
+         padding:20px 44px; border-radius:16px; border:6px solid #ffd23f; white-space:nowrap; text-align:center;
+         box-shadow:0 16px 34px rgba(0,0,0,0.55); opacity:0; }
+  .name small{ display:block; font-size:40px; color:#ffd23f; letter-spacing:2px; }
+  .payoff{ position:absolute; left:50%; top:290px; transform:translateX(-50%) rotate(-2deg);
+           color:#241c12; background:#fdf6e3; font-size:70px; line-height:1.08;
+           padding:24px 46px; border-radius:22px; border:7px solid #241c12; text-align:center;
+           white-space:nowrap; box-shadow:0 18px 40px rgba(0,0,0,0.55); opacity:0; }
+  .payoff .stop{ display:block; margin-top:12px; color:#fff; background:#c0392b;
+                 font-size:92px; letter-spacing:2px; padding:8px 30px; border-radius:14px; border:5px solid #fff; }
+
+  .caption-layer{ position:absolute; inset:0; }
+  .cap{ position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);
+        background:rgba(16,12,9,0.5); border-radius:22px; padding:14px 32px;
+        color:#fff; font-size:62px; line-height:1.1; text-align:center; white-space:nowrap;
+        max-width:800px; text-shadow:0 2px 0 #000, 0 0 16px rgba(0,0,0,0.85);
+        -webkit-text-stroke:1px rgba(0,0,0,0.55); opacity:0; }
+</style>
+</head>
+<body>
+<div id="Short02" data-composition-id="Short02" data-start="0" data-duration="28.70" data-width="1080" data-height="1920">
+
+  <!-- Scene bases -->
+  <div class="clip scene" id="sceneA" data-composition-id="s02-sceneA" data-start="0"     data-duration="7.80"  data-track-index="1">
+    <img class="photo" src="assets/photos/stopwatch.jpg" alt=""><div class="scrim-top"></div><div class="scrim-bottom"></div>
+  </div>
+  <div class="clip scene" id="sceneB" data-composition-id="s02-sceneB" data-start="7.28"  data-duration="9.50"  data-track-index="3">
+    <img class="photo" src="assets/photos/maze.jpg" alt=""><div class="scrim-top"></div><div class="scrim-bottom"></div>
+  </div>
+  <div class="clip scene" id="sceneC" data-composition-id="s02-sceneC" data-start="16.50" data-duration="3.70"  data-track-index="4">
+    <img class="photo" src="assets/photos/maze-2.jpg" alt=""><div class="scrim-top"></div><div class="scrim-bottom"></div>
+  </div>
+  <div class="clip scene" id="sceneD" data-composition-id="s02-sceneD" data-start="19.90" data-duration="8.80"  data-track-index="5">
+    <img class="photo" src="assets/photos/contract.jpg" alt=""><div class="scrim-top"></div><div class="scrim-bottom"></div>
+  </div>
+
+  <!-- WIT layer -->
+  <div class="wit-layer">
+    <img class="wit" id="witRunning"  src="assets/wit/wit-pose-running-away.png" alt="">
+    <img class="wit" id="witConfused" src="assets/wit/wit-pose-confused.png" alt="">
+    <img class="wit" id="witDefeated" src="assets/wit/wit-pose-tiny-defeated.png" alt="">
+    <img class="wit" id="witSuspicious" src="assets/wit/wit-pose-suspicious.png" alt="">
+  </div>
+
+  <!-- Hero cards -->
+  <div class="card-layer">
+    <div class="vs up"     id="lblUp">SIGN UP: <b>10 seconds</b></div>
+    <div class="vs cancel" id="lblCancel">CANCEL: <b>a vision quest</b></div>
+    <div class="boss" id="lblBoss">FINAL BOSS</div>
+    <div class="crumb"      id="cr1" style="top:250px; left:90px;">tap "account"</div>
+    <div class="crumb"      id="cr2" style="top:322px; left:170px;">then "settings"</div>
+    <div class="crumb"      id="cr3" style="top:394px; left:250px;">then "manage"</div>
+    <div class="crumb"      id="cr4" style="top:466px; left:170px;">"are you sure?"</div>
+    <div class="crumb"      id="cr5" style="top:538px; left:90px;">"here, have a discount"</div>
+    <div class="crumb last" id="cr6" style="top:610px; left:170px;">"we'll miss you…"</div>
+    <div class="gag" id="lblGag">a phone number that answers<br><b>2:00–2:15</b><small>Tuesdays only</small></div>
+    <div class="name" id="lblName"><small>it has a name:</small>NEGATIVE OPTION<br>BILLING</div>
+    <div class="payoff" id="lblPayoff">you keep paying unless you<span class="stop">say STOP</span></div>
+  </div>
+
+  <!-- Captions -->
+  <div class="caption-layer">
+    <div class="cap" id="cap1">i'll just cancel</div>
+    <div class="cap" id="cap2">oh, sweet child</div>
+    <div class="cap" id="cap3">getting in is one tap</div>
+    <div class="cap" id="cap4">this even has a name…</div>
+  </div>
+
+  <audio id="vo" data-start="0" data-duration="27.413" data-track-index="10" data-volume="1" crossorigin="anonymous" src="assets/../voiceover/short-02.mp3"></audio>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script>
+    window.__timelines = window.__timelines || {};
+    const tl = gsap.timeline({ paused:true, defaults:{ overwrite:"auto" } });
+    window.__timelines["Short02"] = tl;
+
+    gsap.set(['#sceneB','#sceneC','#sceneD'], { opacity:0 });
+    gsap.set(['#witRunning','#witConfused','#witDefeated','#witSuspicious'], { opacity:0 });
+    gsap.set(['.vs','.boss','.crumb','.gag','.name','.payoff','.cap'], { opacity:0 });
+
+    const show = (sel,t)=> tl.set(sel,{opacity:1}, t);
+    const hide = (sel,t)=> tl.set(sel,{opacity:0}, t);
+    const pop  = (sel,t)=> tl.fromTo(sel,{opacity:0,scale:0.6},
+                    {opacity:1,scale:1,duration:0.42,ease:'back.out(2)',immediateRender:false}, t);
+    const slide= (sel,t)=> tl.fromTo(sel,{opacity:0,x:-40},
+                    {opacity:1,x:0,duration:0.3,ease:'power2.out',immediateRender:false}, t);
+    const fadeScene = (sel,t)=> tl.fromTo(sel,{opacity:0,filter:'blur(14px)'},
+                    {opacity:1,filter:'blur(0px)',duration:0.5,immediateRender:false}, t);
+
+    // ---- Scene A (stopwatch) : easy in, vision quest out ----
+    show('#witRunning', 0.0);
+    show('#cap1', 0.05); hide('#cap1', 1.55);
+    pop('#cap2', 1.66); hide('#cap2', 2.55);
+    pop('#lblUp', 4.36);                         // "signing up takes 10 seconds"
+    pop('#lblCancel', 5.76);                     // "cancelling takes a vision quest"
+
+    // ---- Scene B (maze) : the final-boss menu maze ----
+    fadeScene('#sceneB', 7.28);
+    hide('#witRunning', 7.28); hide('#lblUp', 7.28); hide('#lblCancel', 7.28);
+    show('#cap3', 7.40); hide('#cap3', 8.90);
+    show('#witConfused', 9.10);
+    pop('#lblBoss', 10.80); hide('#lblBoss', 11.80);   // "like a final boss"
+    slide('#cr1', 11.90); slide('#cr2', 12.56); slide('#cr3', 13.18);
+    slide('#cr4', 13.76); slide('#cr5', 14.52); slide('#cr6', 15.64);
+
+    // ---- Scene C (maze-2) : the phone-number gag ----
+    fadeScene('#sceneC', 16.50);
+    hide('#witConfused', 16.50);
+    hide('#cr1', 16.50); hide('#cr2', 16.50); hide('#cr3', 16.50);
+    hide('#cr4', 16.50); hide('#cr5', 16.50); hide('#cr6', 16.50);
+    show('#witDefeated', 16.60);
+    pop('#lblGag', 16.96);                       // "a phone number that only answers..."
+
+    // ---- Scene D (contract) : negative option billing -> the payoff ----
+    fadeScene('#sceneD', 19.90);
+    hide('#witDefeated', 19.90); hide('#lblGag', 19.90);
+    show('#witSuspicious', 20.00);
+    pop('#cap4', 19.96); hide('#cap4', 21.05);
+    pop('#lblName', 21.12);                       // "negative option billing"
+    hide('#lblName', 24.40);
+    pop('#lblPayoff', 24.628);                    // "you keep paying unless you say stop", holds
+  </script>
+</div>
+</body>
+</html>

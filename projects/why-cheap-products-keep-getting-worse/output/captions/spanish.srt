@@ -1,0 +1,376 @@
+1
+00:00:00,000 --> 00:00:01,920
+Encuentro una silla por nueve dólares.
+
+2
+00:00:01,920 --> 00:00:05,020
+Tiene cuatro patas, un asiento y la confianza de una silla mucho mejor.
+
+3
+00:00:05,020 --> 00:00:05,940
+Así que la compra.
+
+4
+00:00:05,940 --> 00:00:07,520
+Durante la primera semana, todo va bien.
+
+5
+00:00:07,520 --> 00:00:10,520
+Luego la silla empieza a hacer un ruido que suena como un consejo legal.
+
+6
+00:00:10,520 --> 00:00:12,840
+El tornillo se afloja. El asiento se pone nervioso.
+
+7
+00:00:12,840 --> 00:00:15,040
+Una pata empieza a explorar otras opciones de carrera.
+
+8
+00:00:15,040 --> 00:00:17,600
+Y de repente, la silla barata no era tan barata.
+
+9
+00:00:17,600 --> 00:00:20,060
+Era una silla normal con un pequeño problema:
+
+10
+00:00:20,060 --> 00:00:21,280
+el futuro no estaba incluido.
+
+11
+00:00:21,280 --> 00:00:23,760
+Este video no trata de decir que lo barato es malo.
+
+12
+00:00:23,760 --> 00:00:25,060
+Eso sería injusto.
+
+13
+00:00:25,060 --> 00:00:27,980
+Además, haría que ir de compras costara muy caro emocionalmente.
+
+14
+00:00:27,980 --> 00:00:29,440
+Algunos productos económicos son excelentes.
+
+15
+00:00:29,440 --> 00:00:33,180
+Y algunos productos caros son solo productos normales con una chaqueta más bonita.
+
+16
+00:00:33,180 --> 00:00:35,520
+La verdadera pregunta es más pequeña, y más molesta.
+
+17
+00:00:35,520 --> 00:00:39,060
+¿Por qué tantos productos normales parecen tener menos mañana adentro?
+
+18
+00:00:39,060 --> 00:00:41,200
+Menos resistencia. Menos reparación. Menos soporte.
+
+19
+00:00:41,200 --> 00:00:43,660
+Menos tiempo antes de tener que comprar lo mismo otra vez.
+
+20
+00:00:43,660 --> 00:00:46,780
+La primera razón es que el precio habla primero.
+
+21
+00:00:46,780 --> 00:00:49,360
+Cuando compras algo, el precio es fácil de entender.
+
+22
+00:00:49,360 --> 00:00:50,800
+Nueve dólares son nueve dólares.
+
+23
+00:00:50,800 --> 00:00:52,540
+Tu billetera puede leer eso muy rápido.
+
+24
+00:00:52,540 --> 00:00:54,100
+Pero el costo futuro es silencioso.
+
+25
+00:00:54,100 --> 00:00:56,000
+No se para junto al producto para decir:
+
+26
+00:00:56,000 --> 00:00:58,440
+"Hola, soy el reemplazo que comprarás en tres meses."
+
+27
+00:00:58,440 --> 00:01:00,660
+Eso sería útil. También, muy mal marketing.
+
+28
+00:01:00,660 --> 00:01:03,560
+Así que los productos compiten en las cosas que puedes ver de inmediato.
+
+29
+00:01:03,560 --> 00:01:06,660
+Precio bajo. Entrega rápida. Color nuevo. Función extra.
+
+30
+00:01:06,660 --> 00:01:10,220
+Una etiqueta de oferta que parece haberte salvado la vida personalmente.
+
+31
+00:01:10,220 --> 00:01:14,900
+Pero si el precio visible tiene que mantenerse bajo, algo más puede volverse negociable.
+
+32
+00:01:14,900 --> 00:01:17,140
+A veces ese algo es el mañana.
+
+33
+00:01:17,140 --> 00:01:19,520
+El futuro de un producto normalmente no es emocionante.
+
+34
+00:01:19,520 --> 00:01:20,880
+Son cosas aburridas.
+
+35
+00:01:20,880 --> 00:01:22,760
+Tela más gruesa. Costuras más fuertes.
+
+36
+00:01:22,760 --> 00:01:24,940
+Una bisagra que no se sorprende con el movimiento.
+
+37
+00:01:24,940 --> 00:01:26,500
+Una batería que puedes reemplazar.
+
+38
+00:01:26,500 --> 00:01:29,980
+Un tornillo que usa un destornillador normal en lugar de un apretón de manos secreto.
+
+39
+00:01:29,980 --> 00:01:33,440
+Una pieza de repuesto que sigue existiendo después de que el producto sale de la fábrica.
+
+40
+00:01:33,440 --> 00:01:35,020
+Estas cosas no son muy glamorosas.
+
+41
+00:01:35,020 --> 00:01:37,260
+Nadie entra a una tienda y susurra:
+
+42
+00:01:37,260 --> 00:01:40,240
+"Guau. Mira la disponibilidad a largo plazo de las piezas de repuesto."
+
+43
+00:01:40,240 --> 00:01:44,260
+Esa persona existe, pero probablemente ya está reparando una impresora.
+
+44
+00:01:44,260 --> 00:01:48,660
+La mayoría de la gente ve la forma, el color, el precio y si el producto puede llegar mañana.
+
+45
+00:01:48,660 --> 00:01:51,540
+Así que las aburridas piezas del futuro son fáciles de esconder.
+
+46
+00:01:51,540 --> 00:01:53,120
+El producto sigue luciendo completo.
+
+47
+00:01:53,120 --> 00:01:55,080
+Solo tiene menos futuro integrado.
+
+48
+00:01:55,080 --> 00:01:58,100
+La segunda razón es que los productos pueden volverse más complicados.
+
+49
+00:01:58,100 --> 00:01:59,880
+Esto no es automáticamente malo.
+
+50
+00:01:59,880 --> 00:02:01,260
+Las funciones útiles son útiles.
+
+51
+00:02:01,260 --> 00:02:03,960
+Un electrodoméstico más seguro es bueno. Una mejor batería es buena.
+
+52
+00:02:03,960 --> 00:02:07,100
+Un teléfono que sobrevive a la gravedad es básicamente un servicio público.
+
+53
+00:02:07,100 --> 00:02:10,200
+Pero cada función extra es también una cosa más que puede romperse.
+
+54
+00:02:10,200 --> 00:02:12,440
+Un refrigerador simple tiene un trabajo principal: estar frío.
+
+55
+00:02:12,440 --> 00:02:17,800
+Un refrigerador moderno puede tener pantallas, sensores, líneas de agua, dispensadores de hielo, software y opiniones.
+
+56
+00:02:17,800 --> 00:02:20,860
+En algún punto, el producto ya no es solo un producto.
+
+57
+00:02:20,860 --> 00:02:24,580
+Es un pequeño comité tecnológico viviendo en tu cocina.
+
+58
+00:02:24,580 --> 00:02:30,080
+Y cuando falla una pieza diminuta, todo el aparato puede volverse más difícil y más caro de arreglar.
+
+59
+00:02:30,080 --> 00:02:31,380
+La tercera razón es la reparación.
+
+60
+00:02:31,380 --> 00:02:35,200
+Un producto se siente desechable cuando arreglarlo se vuelve más difícil que reemplazarlo.
+
+61
+00:02:35,200 --> 00:02:36,740
+A veces la pieza no está disponible.
+
+62
+00:02:36,740 --> 00:02:38,100
+A veces la herramienta es especial.
+
+63
+00:02:38,100 --> 00:02:39,640
+A veces falta el manual.
+
+64
+00:02:39,640 --> 00:02:42,480
+A veces la reparación cuesta casi tanto como comprar uno nuevo.
+
+65
+00:02:42,480 --> 00:02:44,340
+Y a veces el producto te mira y dice:
+
+66
+00:02:44,340 --> 00:02:46,580
+"Eres mi dueño, pero no lo suficiente como para abrirme."
+
+67
+00:02:46,580 --> 00:02:47,860
+Una relación muy sana.
+
+68
+00:02:47,860 --> 00:02:49,740
+Por eso importa la reparabilidad.
+
+69
+00:02:49,740 --> 00:02:52,740
+La reparabilidad simplemente significa qué tan fácil es arreglar algo.
+
+70
+00:02:52,740 --> 00:02:55,580
+¿Puedes reemplazar la batería? ¿Puedes comprar la pieza?
+
+71
+00:02:55,580 --> 00:03:00,560
+¿Puede un taller de reparación local entender el producto sin necesitar una máquina misteriosa en un cuarto cerrado con llave?
+
+72
+00:03:00,560 --> 00:03:08,260
+Algunos gobiernos ahora tratan la información de reparación, las piezas de repuesto, la duración de la batería y las etiquetas de reparabilidad como cosas que vale la pena exigir para ciertos productos.
+
+73
+00:03:08,260 --> 00:03:11,560
+Eso es básicamente la sociedad mirando un teléfono y diciendo:
+
+74
+00:03:11,560 --> 00:03:12,660
+"Por favor, ten un futuro."
+
+75
+00:03:12,660 --> 00:03:17,000
+Cuando la reparación se vuelve lenta, confusa o cara, reemplazar empieza a parecer normal.
+
+76
+00:03:17,000 --> 00:03:19,200
+No porque a la gente le encante tirar las cosas.
+
+77
+00:03:19,200 --> 00:03:20,780
+La mayoría de la gente no se despierta y dice:
+
+78
+00:03:20,780 --> 00:03:24,040
+"Hoy me gustaría crear un pequeño basurero con mis audífonos."
+
+79
+00:03:24,040 --> 00:03:27,000
+Reemplazan las cosas porque el sistema hace que reemplazar se sienta más fácil.
+
+80
+00:03:27,000 --> 00:03:29,280
+El presupuesto de reparación es alto. La pieza de repuesto no está.
+
+81
+00:03:29,280 --> 00:03:32,400
+El producto ya no tiene soporte. El nuevo llega mañana.
+
+82
+00:03:32,400 --> 00:03:36,680
+Así que WIT compra el producto otra vez. La etiqueta de precio vuelve a sonreír.
+
+83
+00:03:36,680 --> 00:03:38,080
+El recibo se imprime otra vez.
+
+84
+00:03:38,080 --> 00:03:42,120
+Y el producto barato se convierte silenciosamente en una suscripción con pasos extra.
+
+85
+00:03:42,120 --> 00:03:44,400
+Entonces, ¿por qué los productos baratos siguen empeorando?
+
+86
+00:03:44,400 --> 00:03:46,100
+No porque barato siempre signifique malo.
+
+87
+00:03:46,100 --> 00:03:49,480
+Y no porque cada producto esté planeando en secreto traicionarte.
+
+88
+00:03:49,480 --> 00:03:53,340
+La mejor respuesta es que los productos modernos están bajo presión para ganar el precio que ves hoy.
+
+89
+00:03:53,340 --> 00:03:56,040
+Así que el futuro que no ves se vuelve más fácil de recortar.
+
+90
+00:03:56,040 --> 00:03:58,460
+El precio real no es solo lo que pagas en la caja.
+
+91
+00:03:58,460 --> 00:04:03,300
+También es cuánto dura la cosa, qué tan fácil es arreglarla y qué tan pronto tienes que comprarla otra vez.
+
+92
+00:04:03,300 --> 00:04:07,160
+Así que la próxima vez que algo parezca una ganga, la mejor pregunta no es solo:
+
+93
+00:04:07,160 --> 00:04:08,780
+"¿Cuánto cuesta esto?"
+
+94
+00:04:08,780 --> 00:04:11,180
+Es: "¿Cuánto futuro está incluido?"
+

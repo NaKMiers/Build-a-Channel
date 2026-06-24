@@ -106,6 +106,13 @@ Note: the preview server resolves the project id/title from the launch context. 
 - Sections 2-7 not rendered.
 - Delivery mismatch: Section 1 audio is plain/0.84; Sections 4-7 are pause-tuned/0.86. If Section 1 audio is regenerated at 0.86, the duration changes — regenerate word timings and re-pin Section 1 cues, then re-snapshot.
 
+## Caption (2026-06-25)
+
+- Multi-language captions exported to `output/captions/` — **22 languages**, one `<language>.srt` each (arabic, bangla, chinese-simplified, chinese-traditional, english, french, german, hindi, indonesian, italian, japanese, korean, malayalam, polish, portuguese, russian, spanish, tamil, telugu, thai, turkish, vietnamese).
+- Timing base: the verified English `output/captions.srt` (94 cues, first `00:00:00,380`, last ends `00:04:25,000` == combined audio `265s`; the whisper tail-glitch fix is already baked into this verified file). Parsed into a per-cue `_segments.json`; every language reuses that exact timing — translations only swap text, never the timestamps.
+- Each non-English track is a per-cue translation (exactly 94 cues, same order; "Wi-Fi"/tech terms preserved) written via `write-translated-srt.mjs`.
+- Verified: all 22 files have 94 cues with **byte-identical timestamps** to `english.srt` (0 mismatches); non-Latin scripts (Arabic, CJK, Indic, Thai, Cyrillic) render clean UTF-8, no mojibake. Compatibility `output/captions.srt` (English) left in place.
+
 ## Next Step Boundary
 
 Next workflow step: `Review`

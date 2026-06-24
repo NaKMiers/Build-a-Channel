@@ -68,6 +68,16 @@ Memory for the `shorts` skill — turning one finished Why It Works long video i
 
 Same `.wit` geometry (`bottom:360px`, `width:940px`) lands the head at very different heights depending on the pose PNG: `talking-front`, `confused`, `awkward-celebration` sit HIGH (face ~upper third), but `thinking` and `shocked` sit LOW (face ~mid-frame), so the centered caption (`top:50%`) clipped their chin/jaw — a face-coverage violation. Fix is a per-pose `bottom` override to lift the low poses (e.g. `#witThinking{bottom:540px} #witShocked{bottom:520px}`); body just bleeds further off the bottom edge, which is allowed. ALWAYS snapshot one caption-over-WIT beat for EACH pose used, not just one pose — don't assume a pose that worked elsewhere lands the same. (`why-buy-1-get-1` S03.)
 
+## Per-pose WIT `bottom` reference + two card-overflow bugs (2026-06-24, `why-everything-is-a-subscription-now`, 4 shorts)
+
+Measured per-pose face heights at `width:940px` (which need a raised `bottom` so the centered caption at `top:50%` clears the face). Poses that sit HIGH (face upper third, leave at default `bottom:360px`): `running-away`, `suspicious`, `hidden-fee-panic` (~430 still safer). Poses that sit LOW (raise `bottom`): `thinking` ~450, `confused` ~440, `shocked` ~420, `deadpan-side-eye` ~430, `tiny-defeated` ~430, `holding-receipt-evidence` ~400. Always snapshot a caption-over-WIT beat per pose to confirm.
+
+Two recurring CARD bugs caught this run (both push a hero card past the right safe edge `x880` because cards center on the FRAME center 540, not the safe-zone center 470):
+- Long stamp text (`NEGATIVE OPTION BILLING`, `FINANCIAL AWARENESS`) overflows — **stack to two lines** (`<br>`) or drop the font; verify with the safe guide.
+- An inline-block badge inside a `white-space:nowrap` card (`.lock` "now: a monthly fee") renders BESIDE the line and blows the width out — set the badge `display:block; width:max-content; margin:.. auto` so it stacks centered. Same for statement rows: add `white-space:nowrap` so a long label ("The one you love") doesn't wrap ugly.
+
+Result: 4 shorts all 1080x1920, 0 lint errors, built on ports 1101-1104. S01 Free-Trial-Countdown 32.6s · S02 Cancelling-Vision-Quest 28.7s · S03 Warm-Bottom 21.05s · S04 Product-Is-You 21.2s. `✓` (U+2713) DID render in snapshot Chromium (unlike emoji); barcode via `repeating-linear-gradient` works well for a "PRODUCT: YOU" tag.
+
 ## Gotcha: don't zero a `.wit` that lives inside an opacity-controlled wrap (2026-06-24)
 
 `gsap.set('.wit', {opacity:0})` as a blanket initial-hide ALSO hides the `<img class="wit">` nested inside a `.witwrap` whose visibility you control via the WRAP's opacity. Result: the wrap shows but the figure stays invisible (only ears/cards render). Fix: hide the standalone WITs by id and the wrap by id (`#witSuspicion,#witShocked,#witBetrayedWrap,.ears`), and let `.witwrap .wit{opacity:1}` stay. Always snapshot a scene that uses the wrap to confirm the body renders, not just the ears.

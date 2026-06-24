@@ -34,6 +34,7 @@ Use these compact files instead of the old many-file system:
 - Script, learner clarity, voice: `.agents/_shared/systems/script-learner-voice.md`
 - Visual production: `.agents/_shared/systems/visual-production.md`
 - Audio, feedback, quality: `.agents/_shared/systems/audio-feedback-quality.md`
+- YouTube publishing & growth: `.agents/_shared/systems/youtube-publishing-growth.md`
 
 ## Current Skills
 

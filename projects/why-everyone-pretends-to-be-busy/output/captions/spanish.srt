@@ -1,0 +1,376 @@
+1
+00:00:00,380 --> 00:00:02,320
+Aquí tienes una regla extraña sobre la vida moderna.
+
+2
+00:00:02,320 --> 00:00:05,280
+Mientras menos tiempo tengas para el trabajo de verdad, más importante pareces.
+
+3
+00:00:05,280 --> 00:00:09,060
+Una agenda llena, una bandeja de entrada ruidosa, un teléfono que hace pequeños sonidos de pánico.
+
+4
+00:00:09,060 --> 00:00:11,000
+La gente ve eso y piensa: esta persona importa.
+
+5
+00:00:11,000 --> 00:00:14,600
+Pero siéntate en silencio a pensar en un problema difícil y la gente asume que eres flojo.
+
+6
+00:00:14,600 --> 00:00:16,040
+O que estás dormido con los ojos abiertos.
+
+7
+00:00:16,040 --> 00:00:17,260
+Así que todo el mundo se mantiene ocupado.
+
+8
+00:00:17,260 --> 00:00:19,980
+O al menos, todo el mundo se vuelve muy bueno para parecer ocupado.
+
+9
+00:00:19,980 --> 00:00:21,120
+Hay una diferencia.
+
+10
+00:00:21,120 --> 00:00:24,300
+Ahora bien, este no es un video sobre gente floja que se esconde del trabajo.
+
+11
+00:00:24,300 --> 00:00:26,060
+Ese es un problema distinto y más pequeño.
+
+12
+00:00:26,060 --> 00:00:27,760
+Esto trata de algo más extraño.
+
+13
+00:00:27,760 --> 00:00:30,820
+La vida moderna a menudo premia la apariencia del trabajo más que el trabajo en sí.
+
+14
+00:00:30,820 --> 00:00:32,620
+Porque el progreso real es difícil de ver.
+
+15
+00:00:32,620 --> 00:00:33,560
+Pensar parece que no es nada.
+
+16
+00:00:33,560 --> 00:00:35,400
+Resolver un problema en tu cabeza parece que no es nada.
+
+17
+00:00:35,400 --> 00:00:36,820
+Pero estar ocupado es fácil de ver.
+
+18
+00:00:36,820 --> 00:00:38,920
+Puedes ver reuniones. Puedes ver a alguien escribiendo rápido.
+
+19
+00:00:38,920 --> 00:00:41,100
+Puedes ver una cara seria mirando una pantalla.
+
+20
+00:00:41,100 --> 00:00:45,460
+Así que confiamos en lo que podemos ver e ignoramos en silencio lo que no.
+
+21
+00:00:45,460 --> 00:00:50,180
+Lo cual es un problema, porque el trabajo real suele esconderse en la parte que no puedes ver.
+
+22
+00:00:50,180 --> 00:00:53,000
+La primera razón es simple. Estar ocupado se convirtió en un símbolo de estatus.
+
+23
+00:00:53,000 --> 00:00:56,200
+Cuando alguien dice "estoy súper ocupado", no solo significa que tiene mucho que hacer.
+
+24
+00:00:56,200 --> 00:00:58,500
+También puede significar: por favor, nota que soy importante.
+
+25
+00:00:58,500 --> 00:01:00,820
+Por eso la gente lo dice incluso cuando nadie preguntó.
+
+26
+00:01:00,820 --> 00:01:02,420
+Tú dices: ¿cómo estás? Y responden: ocupado.
+
+27
+00:01:02,420 --> 00:01:03,820
+Lo cual en realidad no es una emoción.
+
+28
+00:01:03,820 --> 00:01:05,880
+Pero lo dejamos pasar, porque todo el mundo está cansado.
+
+29
+00:01:05,880 --> 00:01:07,660
+Y no es igual en todas partes.
+
+30
+00:01:07,660 --> 00:01:11,380
+En algunos lugares, lo que da orgullo son las vacaciones largas y las tardes libres.
+
+31
+00:01:11,380 --> 00:01:14,460
+En otros, lo que da orgullo es no tener ni un minuto libre.
+
+32
+00:01:14,460 --> 00:01:16,220
+El mismo planeta, presumiendo lo contrario.
+
+33
+00:01:16,220 --> 00:01:18,520
+Estar ocupado suena responsable. Estar ocupado suena necesario.
+
+34
+00:01:18,520 --> 00:01:20,680
+Estar ocupado suena como si hubiera gente haciendo fila para hablar contigo.
+
+35
+00:01:20,680 --> 00:01:22,600
+Y sentirse necesitado se siente como sentirse valioso.
+
+36
+00:01:22,600 --> 00:01:25,140
+Así que la gente llena el día. A veces con trabajo de verdad.
+
+37
+00:01:25,140 --> 00:01:30,100
+A veces con llamadas, actualizaciones y reuniones sobre por qué la última reunión no terminó nada.
+
+38
+00:01:30,100 --> 00:01:32,580
+En algún momento el trabajo deja de ser el trabajo.
+
+39
+00:01:32,580 --> 00:01:35,300
+El trabajo se convierte en demostrar que estás cerca del trabajo.
+
+40
+00:01:35,300 --> 00:01:38,800
+La segunda razón es que nuestras herramientas inventaron las emergencias.
+
+41
+00:01:38,800 --> 00:01:40,940
+El email se suponía que iba a hacer más fácil comunicarse.
+
+42
+00:01:40,940 --> 00:01:42,620
+Luego las apps de chat hicieron el email más rápido.
+
+43
+00:01:42,620 --> 00:01:45,220
+Luego las apps de tareas organizaron el chat sobre el email.
+
+44
+00:01:45,220 --> 00:01:48,440
+Luego las apps de calendario agendaron reuniones sobre por qué la app de tareas es confusa.
+
+45
+00:01:48,440 --> 00:01:51,620
+Así que ahora la jornada laboral es básicamente cinco apps interrumpiéndose entre sí.
+
+46
+00:01:51,620 --> 00:01:54,700
+Todo tiene un punto rojo. Todo tiene un número. Todo dice urgente.
+
+47
+00:01:54,700 --> 00:01:58,460
+Porque al parecer "por favor ignora esto hasta la próxima semana" es mal diseño.
+
+48
+00:01:58,460 --> 00:02:02,980
+Así que tu cerebro empieza a tratar cada pequeña notificación como una emergencia real.
+
+49
+00:02:02,980 --> 00:02:06,220
+Llega un mensaje, respondes. Llega otro, respondes de nuevo.
+
+50
+00:02:06,220 --> 00:02:09,800
+Alguien manda un pulgar arriba, y de alguna manera tu cerebro lo archiva como progreso.
+
+51
+00:02:09,800 --> 00:02:14,060
+Mientras tanto, la única tarea que de verdad importa sigue ahí. Sin tocar.
+
+52
+00:02:14,060 --> 00:02:17,640
+Echándose a perder en silencio, como una triste verdura al fondo del refrigerador.
+
+53
+00:02:17,640 --> 00:02:20,920
+La tercera razón es que el trabajo visible es simplemente más fácil de premiar.
+
+54
+00:02:20,920 --> 00:02:24,520
+Responde rápido y la gente lo ve. Únete a cada reunión y la gente lo ve.
+
+55
+00:02:24,520 --> 00:02:28,000
+Manda una actualización que diga "solo retomando el tema" y la gente definitivamente lo ve.
+
+56
+00:02:28,000 --> 00:02:31,240
+Pero pasa dos horas pensando a fondo y el resultado puede parecer que no pasó nada.
+
+57
+00:02:31,240 --> 00:02:32,900
+Podrías haber resuelto el problema de verdad.
+
+58
+00:02:32,900 --> 00:02:35,560
+Desde afuera, eras una persona mirando una pared.
+
+59
+00:02:35,560 --> 00:02:36,620
+Posiblemente parpadeando.
+
+60
+00:02:36,620 --> 00:02:41,460
+Hay incluso una encuesta donde la mayoría de los jefes admitieron que en realidad no sabían quién de su equipo estaba siendo productivo.
+
+61
+00:02:41,460 --> 00:02:43,020
+Así que premian lo que pueden ver.
+
+62
+00:02:43,020 --> 00:02:46,500
+Y lo que pueden ver es movimiento. Así que la gente empieza a actuar el movimiento.
+
+63
+00:02:46,500 --> 00:02:52,440
+Responden rápido, se unen a la llamada, mueven una tarea de una columna a otra columna y escriben actualizaciones sobre futuras actualizaciones.
+
+64
+00:02:52,440 --> 00:02:54,740
+Esto tiene un nombre. Teatro de la productividad.
+
+65
+00:02:54,740 --> 00:03:00,460
+Igual que el teatro normal, salvo que las entradas se pagan en estrés y la estrella del show es una hoja de cálculo.
+
+66
+00:03:00,460 --> 00:03:04,340
+La cuarta razón es que "estoy ocupado" es genuinamente útil. Es un escudo.
+
+67
+00:03:04,340 --> 00:03:06,140
+A veces significa: no puedo aceptar más.
+
+68
+00:03:06,140 --> 00:03:08,680
+A veces significa: no quiero tomar esta decisión.
+
+69
+00:03:08,680 --> 00:03:11,200
+A veces significa: por favor, deja de hacerme preguntas.
+
+70
+00:03:11,200 --> 00:03:15,760
+Y a veces significa: no tengo idea de lo que estoy haciendo, pero necesito parecer tranquilo hasta que aparezca la respuesta.
+
+71
+00:03:15,760 --> 00:03:19,620
+Esto no siempre es deshonesto. Mucha gente de verdad está sobrecargada.
+
+72
+00:03:19,620 --> 00:03:20,500
+El escudo es real.
+
+73
+00:03:20,500 --> 00:03:24,820
+El problema es que "ocupado" lentamente se convierte en la única forma aceptable de decir que no.
+
+74
+00:03:24,820 --> 00:03:29,140
+No siempre puedes decir: necesito tiempo en silencio para pensar. Eso suena sospechosamente relajado.
+
+75
+00:03:29,140 --> 00:03:32,540
+No siempre puedes decir: esta reunión pudo haber sido un mensaje. Eso suena peligroso.
+
+76
+00:03:32,540 --> 00:03:34,980
+Así que la gente solo dice: estoy ocupado. Y todos asienten.
+
+77
+00:03:34,980 --> 00:03:37,440
+Porque todos los demás también están ocupados. O fingiendo.
+
+78
+00:03:37,440 --> 00:03:38,480
+O ambas cosas.
+
+79
+00:03:38,480 --> 00:03:40,400
+Entonces, ¿por qué todo el mundo finge estar ocupado?
+
+80
+00:03:40,400 --> 00:03:43,600
+Porque la vida moderna sigue confundiendo la actividad con el valor.
+
+81
+00:03:43,600 --> 00:03:46,560
+Premia a la persona que parece disponible, rápida y sobrecargada.
+
+82
+00:03:46,560 --> 00:03:49,620
+Incluso cuando el trabajo real necesita lo contrario. Concentración. Silencio. Tiempo.
+
+83
+00:03:49,620 --> 00:03:51,400
+El problema nunca fue que la gente sea floja.
+
+84
+00:03:51,400 --> 00:03:54,580
+El problema es que parecer ocupado se volvió más seguro que parecer reflexivo.
+
+85
+00:03:54,580 --> 00:03:57,980
+Y una vez que toda una cultura premia el estar ocupado, todo el mundo se suma.
+
+86
+00:03:57,980 --> 00:03:59,780
+Los estudiantes resaltan apuntes en vez de aprenderlos.
+
+87
+00:03:59,780 --> 00:04:02,900
+Los trabajadores responden mensajes en vez de resolver el problema.
+
+88
+00:04:02,900 --> 00:04:05,980
+Los creadores organizan sus ideas en vez de hacer la cosa.
+
+89
+00:04:05,980 --> 00:04:11,920
+Y todos decimos que estamos ocupados, porque decir "estoy protegiendo mi atención del ruido sin sentido" suena demasiado honesto para un martes.
+
+90
+00:04:11,920 --> 00:04:14,040
+Así que tal vez la meta no sea estar menos ocupado.
+
+91
+00:04:14,040 --> 00:04:16,340
+La meta es ser más honesto sobre lo que de verdad importa.
+
+92
+00:04:16,340 --> 00:04:18,460
+Porque si todo es urgente, nada lo es.
+
+93
+00:04:18,460 --> 00:04:21,400
+Y si todo tu día son emergencias falsas, felicidades.
+
+94
+00:04:21,400 --> 00:04:25,000
+No eres flojo. Solo estás atrapado en un calendario con Wi-Fi.
+
