@@ -1272,6 +1272,35 @@ Promote to shared memory:
 no; the template already lives in `_shared/systems/visual-production.md` + visual-plan memory. This
 confirms it is the per-section DEFAULT for this owner — apply by default, not as a special case.
 
+### 2026-06-24 - CSS class collision can shrink a scene base (name photo grades uniquely)
+
+Classification: `Render lesson`
+
+Context:
+`why-buy-1-get-1-beats-50-off` Section 7 Scene C used `<img class="photo calc">` for the background,
+but `.calc` was ALSO the class of the calculator-CARD device (`position:absolute; width:520px;
+background; border`). The `.calc` rule overrode the `.photo` full-frame sizing, so the background
+image rendered shrunk into a ~520px box with the rest of the frame black. The owner flagged it as
+"the background looks bad / looks bug" at 0:12. Renaming the photo grade class to `.photo.abak`
+(device card keeps `.calc`) fixed it instantly.
+
+Lesson:
+Never reuse a device/component class name (`.calc`, `.cd`, `.toast`, `.chip`, `.tag`, etc.) as a
+`.photo.<x>` base-grade modifier in the same composition — the device CSS (width/position/background)
+will clobber the full-frame `.photo` rule and break or shrink the base. Keep photo-grade modifiers in
+their own namespace (e.g. `.photo.bgCalc`, `.photo.abak`) distinct from every device class.
+
+Apply next time:
+- when adding a `.photo.<x>` grade class, grep the file's CSS for an existing `.<x>` rule first; if it
+  exists as a device, pick a different grade name.
+- a base that renders as a narrow strip / partially black is the signature of this collision (or a
+  bad src) — check the class names before re-sourcing the image.
+- lint/validate do NOT catch this (it's valid CSS) — only the snapshot shows it; always eyeball each
+  scene's base in the contact sheet.
+
+Promote to shared memory:
+no; render mechanics gotcha.
+
 ## Feedback Entry Template
 
 ```markdown

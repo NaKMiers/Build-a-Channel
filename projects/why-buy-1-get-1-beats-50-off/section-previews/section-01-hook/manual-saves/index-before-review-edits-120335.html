@@ -125,13 +125,13 @@
       tl.fromTo("#scene-b", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 7.60);
       tl.fromTo("#scene-c", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 18.94);
 
-      // SCENE A — impossible claim + two signs
+      // SCENE A - impossible claim + two signs
       show("#cue-a .ca-label", 0, 0.30);                         // "Here is something..."
       show("#cue-a .ca-wit", 0, 2.00);                           // WIT suspicious on "impossible"
       smash("#cue-a .ca-free", 0, 3.88, { scale: 0.5, opacity: 0 }); // "free" @3.88
       show("#cue-a .ca-half", 0, 6.70);                          // "half price" @6.70
 
-      // SCENE B — same $5, but FREE doubles profit
+      // SCENE B - same $5, but FREE doubles profit
       show("#cue-b .cb-strip", 7.60, 7.72);                      // "Same product..." @7.72
       hide("#cue-b .cb-meter", 7.60); hide("#cue-b .cb-x2", 7.60); hide("#cue-b .cb-ring", 7.60); hide("#cue-b .cb-wit", 7.60);
       show("#cue-b .cb-meter", 7.60, 12.36);                     // "doubles" @12.36
@@ -141,7 +141,7 @@
       show("#cue-b .cb-wit", 7.60, 13.94);                       // WIT panic on "surprise" @13.94
       smash("#cue-b .cb-ring", 7.60, 14.98, { scale: 1.6, opacity: 0 }); // "free one" @14.98
 
-      // SCENE C — magic trick + rabbit payoff
+      // SCENE C - magic trick + rabbit payoff
       show("#cue-c .cc-head1", 18.94, 19.22);                    // "not generosity" @19.22
       smash("#cue-c .cc-head2", 18.94, 20.78, { y: 16, scale: 1.2, opacity: 0 }); // "magic trick" @20.78
       hide("#cue-c .cc-payoff", 18.94);

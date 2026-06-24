@@ -1,4 +1,4 @@
-# Section 1 Hook — Design
+# Section 1 Hook - Design
 
 Composition: `Section01Hook` · 1920x1080 · 23.019s · port 1001
 

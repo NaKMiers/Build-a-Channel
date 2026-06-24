@@ -2,7 +2,7 @@
 
 Video: `Why Buy 1 Get 1 Free Beats 50% Off`
 
-Status: `section visual plan in progress`
+Status: `all 7 sections planned + built (S3–S7 at the subscription bar; S1–S2 owner-tuned)`
 
 Source skill: `visual-plan`
 
@@ -34,8 +34,8 @@ Source files:
 | 3 | The Receipt Knows | remade (subscription style) | 32.235s | 5 | 13 | `visual-plan/section-03-the-receipt-knows/section-03-the-receipt-knows-visual-plan.md` | `visual-plan/section-03-the-receipt-knows/reference-board.md` | vivid dark money bases + giant kinetic $5→$10 + giant WIT; cash→coins→basket→curtain→cash |
 | 4 | The Magic Word | built (subscription bar) | 37.099s | 5 | 12 | `visual-plan/section-04-the-magic-word/section-04-the-magic-word-visual-plan.md` | `visual-plan/section-04-the-magic-word/reference-board.md` | giant FREE + NUMBER-vs-FEELING + hostage shampoo; brain→coins→gift→cash→coins |
 | 5 | The Price Never Drops | remade — fresh bases, clean text | 36.416s | 5 | 11 | `visual-plan/section-05-the-price-never-drops/section-05-the-price-never-drops-visual-plan.md` | `visual-plan/section-05-the-price-never-drops/reference-board.md` | anchoring; 5 FRESH retail bases (shelf-tags→sale-store→boutique→aisle→shop); one clean hero per beat, no stacked text |
-| 6 | When The Store Loses | not planned | 34.923s | — | — | — | — | — |
-| 7 | Payoff: Free Cuts Your Judgment | not planned | 38.912s | — | — | — | — | — |
+| 6 | When The Store Loses | built (subscription bar) | 34.923s | 5 | 13 | `visual-plan/section-06-when-the-store-loses/section-06-when-the-store-loses-visual-plan.md` | `visual-plan/section-06-when-the-store-loses/reference-board.md` | honest turn / loss leader; 5 FRESH bases (produce→milk→fishing-lure→fridge→bin); clean spaced text |
+| 7 | Payoff: Free Cuts Your Judgment | built (full bar, kinetic) | 38.912s | 5 | 14 | `visual-plan/section-07-free-cuts-your-judgment/section-07-free-cuts-your-judgment-visual-plan.md` | `visual-plan/section-07-free-cuts-your-judgment/reference-board.md` | payoff; 5 FRESH bright bases (chess→scissors→calculator→mask→cards); kinetic; "25% off in a costume" |
 
 ## Cross-Section Continuity
 

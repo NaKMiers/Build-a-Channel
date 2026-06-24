@@ -14,12 +14,12 @@
     .scene { z-index: 1; will-change: opacity, transform, filter; }
     .cue { z-index: 5; pointer-events: none; }
     .photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-    .photo.brain { filter:saturate(1.0) contrast(1.12) brightness(0.5); object-position:center 60%; }
-    .photo.coins { filter:saturate(1.1) contrast(1.1) brightness(0.46); }
-    .photo.gift  { filter:saturate(1.2) contrast(1.08) brightness(0.6); }
-    .photo.cash  { filter:saturate(1.14) contrast(1.08) brightness(0.5); }
-    .photo.coins2{ filter:saturate(1.12) contrast(1.12) brightness(0.42) hue-rotate(-6deg); }
-    .scrim { position:absolute; inset:0; z-index:1; background:radial-gradient(ellipse 78% 78% at 48% 50%, rgba(4,5,10,0.24), rgba(4,5,10,0.82) 99%); }
+    .photo.brain { filter:saturate(1.0) contrast(1.12) brightness(0.74); object-position:center 60%; }
+    .photo.coins { filter:saturate(1.1) contrast(1.1) brightness(0.70); }
+    .photo.gift  { filter:saturate(1.2) contrast(1.08) brightness(0.84); }
+    .photo.cash  { filter:saturate(1.14) contrast(1.08) brightness(0.74); }
+    .photo.coins2{ filter:saturate(1.12) contrast(1.12) brightness(0.66) hue-rotate(-6deg); }
+    .scrim { position:absolute; inset:0; z-index:1; background:radial-gradient(ellipse 100% 100% at 50% 46%, rgba(4,5,10,0) 54%, rgba(4,5,10,0.38) 100%); }
     .ui { font-family:"Segoe UI",system-ui,sans-serif; }
     .hand { position:absolute; z-index:7; font-family:"PatrickHandLocal"; font-size:62px; color:#fff; text-shadow:3px 4px 0 rgba(0,0,0,0.6); }
 
@@ -101,7 +101,7 @@
 
     <!-- CUE C 9.42-17.80 -->
     <div id="cue-c" class="clip cue" data-start="9.42" data-duration="8.38" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
-      <div class="cap cc-ariely" style="left:110px; top:96px;"><span class="k">THE ZERO-PRICE EFFECT</span><span class="a">— Dan Ariely: when it's free, we forget the downside</span></div>
+      <div class="cap cc-ariely" style="left:110px; top:96px;"><span class="k">THE ZERO-PRICE EFFECT</span><span class="a">- Dan Ariely: when it's free, we forget the downside</span></div>
       <div class="gifttag cc-gift" style="left:120px; top:300px;">FREE feels like<br>a GIFT</div>
       <div class="offbadge cc-off" style="left:160px; top:560px;">so we switch our brains OFF</div>
       <img class="wit cc-wit" data-layout-allow-overflow="" style="left:600px; bottom:-360px; width:1320px;" src="./assets/wit/wit-pose-awkward-celebration.png" alt="">
@@ -116,7 +116,7 @@
 
     <!-- CUE E 25.32-37.099 -->
     <div id="cue-e" class="clip cue" data-start="25.32" data-duration="11.779" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
-      <div class="lbl ce-word" style="left:110px; top:110px; font-size:62px;">not a <span class="strike">discount</span> — a <span style="color:var(--gold);">WORD</span></div>
+      <div class="lbl ce-word" style="left:110px; top:110px; font-size:62px;">not a <span class="strike">discount</span> - a <span style="color:var(--gold);">WORD</span></div>
       <div class="staple ce-staple" style="left:120px; top:280px;"><span class="free">"FREE"</span> &nbsp;+&nbsp; <span class="full">a FULL-PRICE purchase</span></div>
       <div class="photoframe ce-photo" style="left:150px; top:430px;"><img src="./assets/visual-references/section-04-the-magic-word/prop-shampoo.jpg" alt=""><div class="cpt">the "free" shampoo</div></div>
       <div class="rope ce-rope" style="left:120px; top:560px;"></div>
@@ -142,33 +142,33 @@
       tl.fromTo("#scene-d", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 17.82);
       tl.fromTo("#scene-e", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 25.32);
 
-      // SCENE A — FREE / brain goes stupid
+      // SCENE A - FREE / brain goes stupid
       show("#cue-a .ca-magic", 0, 0.40);
       show("#cue-a .ca-wit", 0, 1.00);
       smash("#cue-a .ca-free", 0, 1.12, { scale: 0.4, opacity: 0 });   // "free"
       show("#cue-a .ca-stupid", 0, 3.06);                              // "a little stupid"
 
-      // SCENE B — stop doing math
+      // SCENE B - stop doing math
       hide("#cue-b .cb-off", 4.14); hide("#cue-b .cb-q", 4.14);
       show("#cue-b .cb-wit", 4.14, 4.30);
       show("#cue-b .cb-eq", 4.14, 5.32);                               // "stop doing math"
       smash("#cue-b .cb-off", 4.14, 5.84, { scale: 0.5, opacity: 0 }); // math OFF
       pop("#cue-b .cb-q", 4.14, 7.78);                                 // "do I even want a second one?"
 
-      // SCENE C — Ariely / free feels like a gift
+      // SCENE C - Ariely / free feels like a gift
       hide("#cue-c .cc-gift", 9.42); hide("#cue-c .cc-off", 9.42);
       show("#cue-c .cc-ariely", 9.42, 9.66);                           // "a scientist named Dan Ariely"
       show("#cue-c .cc-wit", 9.42, 14.34);
       smash("#cue-c .cc-gift", 9.42, 14.34, { scale: 0.5, opacity: 0 }); // "free feels like a gift"
       smash("#cue-c .cc-off", 9.42, 16.48, { scale: 0.6, opacity: 0 }); // "switch our brains off"
 
-      // SCENE D — number vs feeling
+      // SCENE D - number vs feeling
       hide("#cue-d .cd-feel", 17.82);
       show("#cue-d .cd-wit", 17.82, 18.00);
       show("#cue-d .cd-num", 17.82, 17.95);                            // "fifty percent off is a number"
       smash("#cue-d .cd-feel", 17.82, 21.36, { scale: 0.5, opacity: 0 }); // "free is a feeling ... yells yes"
 
-      // SCENE E — selling a word / hostage shampoo
+      // SCENE E - selling a word / hostage shampoo
       hide("#cue-e .ce-staple", 25.32); hide("#cue-e .ce-photo", 25.32); hide("#cue-e .ce-rope", 25.32); hide("#cue-e .ce-ransom", 25.32); hide("#cue-e .ce-wit", 25.32);
       show("#cue-e .ce-word", 25.32, 26.66);                           // "not selling you a discount ... a word"
       show("#cue-e .ce-staple", 25.32, 30.28);                         // "stapling a full price purchase"

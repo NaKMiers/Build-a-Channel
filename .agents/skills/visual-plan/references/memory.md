@@ -832,6 +832,35 @@ Apply next time:
 Promote to shared memory:
 no for now; strong per-owner execution rules. Fold a one-liner into the SKILL Default Build Bar.
 
+### 2026-06-24 - Keep bases BRIGHT; no heavy dark overlay (correction)
+
+Classification: `Visual plan lesson`
+
+Context:
+Across the S3–S6 rebuilds I graded bases dark (`brightness ~0.42–0.55`) + a heavy full-frame/side
+scrim for text contrast. The owner pushed back twice: "remove the dark area behind the WIT" and then
+"why it always has dark areas overlay, I don't think it good." Fixed by brightening all bases to
+`~0.7–0.85` and replacing the heavy scrim with only a subtle edge vignette / a light text-side
+gradient that fades fully transparent before mid-frame.
+
+Lesson:
+This owner wants the vivid base photo to SHOW — a heavy dark overlay (full-frame radial or a strong
+half-darkening gradient) reads as "not good." Keep bases bright/visible. Get text readability from:
+strong text-shadow on bare labels, the device cards' own opaque backgrounds (chips/stamps/toasts/
+signs already carry contrast), and at most a faint edge vignette or a light text-side gradient. Never
+a full-frame dark scrim, and never darken the half where WIT stands.
+
+Apply next time:
+- grade bases ~0.7–0.85 brightness; design text as cards/stamps with their own bg, or bold text +
+  heavy shadow, so no big dark overlay is needed.
+- if a bare label sits on a busy/bright area, give THAT label a small local backing — don't darken the
+  whole frame.
+- SKILL Default Build Bar (BASES bullet) updated to this; the earlier "dark dramatic grade + heavy
+  scrim" guidance is superseded.
+
+Promote to shared memory:
+no for now; per-owner taste correction folded into the SKILL build bar.
+
 ## Feedback Entry Template
 
 ```markdown

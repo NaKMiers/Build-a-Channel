@@ -22,6 +22,8 @@ Source files:
 | Section 3 | 1003 | `http://localhost:1003/#project/section-03-the-receipt-knows` | `http://localhost:1003/api/projects/section-03-the-receipt-knows/preview/comp/index.html` | running |
 | Section 4 | 1004 | `http://localhost:1004/#project/section-04-the-magic-word` | `http://localhost:1004/api/projects/section-04-the-magic-word/preview/comp/index.html` | running |
 | Section 5 | 1005 | `http://localhost:1005/#project/section-05-the-price-never-drops` | `http://localhost:1005/api/projects/section-05-the-price-never-drops/preview/comp/index.html` | running |
+| Section 6 | 1006 | `http://localhost:1006/#project/section-06-when-the-store-loses` | `http://localhost:1006/api/projects/section-06-when-the-store-loses/preview/comp/index.html` | running |
+| Section 7 | 1007 | `http://localhost:1007/#project/section-07-free-cuts-your-judgment` | `http://localhost:1007/api/projects/section-07-free-cuts-your-judgment/preview/comp/index.html` | running |
 
 ## Section Render Index
 
@@ -31,9 +33,9 @@ Source files:
 | 2 | Same To You, Not To Them | built, ready for review | 1002 | `section-previews/section-02-same-to-you-not-to-them/` | `visual-plan/section-02-same-to-you-not-to-them/` | lint ✓(2 advisory) / validate ✓(15 contrast) / snapshot ✓ | none (no MP4 requested) | 5 scenes, 11 cues, math shown on screen word-pinned; real Wedgwood jasperware |
 | 3 | The Receipt Knows | remade (subscription style), ready for review | 1003 | `section-previews/section-03-the-receipt-knows/` | `visual-plan/section-03-the-receipt-knows/` | lint ✓(2 advisory) / validate ✓(contrast only) / snapshot ✓ | none (no MP4 requested) | 5 scenes, vivid dark money bases + giant kinetic $5→$10 + giant WIT + glowing FREE; word-pinned |
 | 4 | The Magic Word | built (subscription bar), ready for review | 1004 | `section-previews/section-04-the-magic-word/` | `visual-plan/section-04-the-magic-word/` | lint ✓(2 advisory) / validate ✓(contrast only) / snapshot ✓ | none (no MP4 requested) | 5 scenes; vivid bases + giant FREE + NUMBER-vs-FEELING + hostage shampoo + giant WIT; word-pinned |
-| 5 | The Price Never Drops | remade (fresh bases, clean text), ready for review | 1005 | `section-previews/section-05-the-price-never-drops/` | `visual-plan/section-05-the-price-never-drops/` | lint ✓(1 advisory) / validate ✓(contrast only) / snapshot ✓ | none (no MP4 requested) | 5 FRESH retail bases; one clean hero per beat; giant WIT R/L/R/L/R; word-pinned |
-| 6 | When The Store Loses | not rendered | 1006 | — | — | — | — | needs visual-plan first |
-| 7 | Payoff: Free Cuts Your Judgment | not rendered | 1007 | — | — | — | — | needs visual-plan first |
+| 5 | The Price Never Drops | remade KINETIC (subscription style), ready for review | 1005 | `section-previews/section-05-the-price-never-drops/` | `visual-plan/section-05-the-price-never-drops/` | lint ✓(1 advisory) / validate ✓(contrast only) / snapshot ✓ | none (no MP4 requested) | 5 FRESH bases; kinetic devices ($10 snap-back, $10→$5 morph, +1 toast, banner takeover, animated want-meter); giant WIT; word-pinned |
+| 6 | When The Store Loses | remade KINETIC (subscription style), ready for review | 1006 | `section-previews/section-06-when-the-store-loses/` | `visual-plan/section-06-when-the-store-loses/` | lint ✓(1 advisory) / validate ✓(contrast only) / snapshot ✓ | none (no MP4 requested) | 5 FRESH bright bases; kinetic devices (profit morph +$2→−$1, toast rain, cart fill +$52, use-by→EXPIRED flip, yogurt drop+BINNED); giant WIT; word-pinned |
+| 7 | Payoff: Free Cuts Your Judgment | built (full bar, kinetic), ready for review | 1007 | `section-previews/section-07-free-cuts-your-judgment/` | `visual-plan/section-07-free-cuts-your-judgment/` | lint ✓(1 advisory) / validate ✓(contrast only) / snapshot ✓ | none (no MP4 requested) | 5 FRESH bright bases (chess→scissors→calculator→mask→cards); kinetic; giant WIT R/L/R/L/R; word-pinned |
 
 ## Shared Asset Rules
 
