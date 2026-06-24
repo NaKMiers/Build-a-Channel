@@ -1,0 +1,350 @@
+{
+  "transcript": "Here's something that sounds impossible. A store can give you a product for free and still make more than if it sold at half price. Same product, same shelf. You pay five bucks an item either way, but the free sign doubles the store's profit. Half price, the store keeps a dollar. Free it keeps too, double. That's not generosity. It's a magic trick and you are the rabbit.",
+  "words": [
+    {
+      "word": "Here's",
+      "start": 0,
+      "end": 0.36
+    },
+    {
+      "word": "something",
+      "start": 0.36,
+      "end": 0.54
+    },
+    {
+      "word": "that",
+      "start": 0.54,
+      "end": 0.78
+    },
+    {
+      "word": "sounds",
+      "start": 0.78,
+      "end": 1.08
+    },
+    {
+      "word": "impossible.",
+      "start": 1.08,
+      "end": 2.02
+    },
+    {
+      "word": "A",
+      "start": 2.02,
+      "end": 2.08
+    },
+    {
+      "word": "store",
+      "start": 2.08,
+      "end": 2.24
+    },
+    {
+      "word": "can",
+      "start": 2.24,
+      "end": 2.42
+    },
+    {
+      "word": "give",
+      "start": 2.42,
+      "end": 2.6
+    },
+    {
+      "word": "you",
+      "start": 2.6,
+      "end": 2.74
+    },
+    {
+      "word": "a",
+      "start": 2.74,
+      "end": 2.86
+    },
+    {
+      "word": "product",
+      "start": 2.86,
+      "end": 3.12
+    },
+    {
+      "word": "for",
+      "start": 3.12,
+      "end": 3.36
+    },
+    {
+      "word": "free",
+      "start": 3.36,
+      "end": 3.62
+    },
+    {
+      "word": "and",
+      "start": 3.62,
+      "end": 3.84
+    },
+    {
+      "word": "still",
+      "start": 3.84,
+      "end": 4.04
+    },
+    {
+      "word": "make",
+      "start": 4.04,
+      "end": 4.24
+    },
+    {
+      "word": "more",
+      "start": 4.24,
+      "end": 4.48
+    },
+    {
+      "word": "than",
+      "start": 4.48,
+      "end": 4.54
+    },
+    {
+      "word": "if",
+      "start": 4.54,
+      "end": 4.76
+    },
+    {
+      "word": "it",
+      "start": 4.76,
+      "end": 4.86
+    },
+    {
+      "word": "sold",
+      "start": 4.86,
+      "end": 5.06
+    },
+    {
+      "word": "at",
+      "start": 5.06,
+      "end": 5.18
+    },
+    {
+      "word": "half",
+      "start": 5.18,
+      "end": 5.58
+    },
+    {
+      "word": "price.",
+      "start": 5.58,
+      "end": 6.52
+    },
+    {
+      "word": "Same",
+      "start": 6.52,
+      "end": 6.88
+    },
+    {
+      "word": "product,",
+      "start": 6.88,
+      "end": 7.36
+    },
+    {
+      "word": "same",
+      "start": 7.36,
+      "end": 7.58
+    },
+    {
+      "word": "shelf.",
+      "start": 7.58,
+      "end": 7.96
+    },
+    {
+      "word": "You",
+      "start": 7.96,
+      "end": 8.12
+    },
+    {
+      "word": "pay",
+      "start": 8.12,
+      "end": 8.32
+    },
+    {
+      "word": "five",
+      "start": 8.32,
+      "end": 8.66
+    },
+    {
+      "word": "bucks",
+      "start": 8.66,
+      "end": 8.86
+    },
+    {
+      "word": "an",
+      "start": 8.86,
+      "end": 9.04
+    },
+    {
+      "word": "item",
+      "start": 9.04,
+      "end": 9.26
+    },
+    {
+      "word": "either",
+      "start": 9.26,
+      "end": 9.48
+    },
+    {
+      "word": "way,",
+      "start": 9.48,
+      "end": 9.78
+    },
+    {
+      "word": "but",
+      "start": 9.78,
+      "end": 9.96
+    },
+    {
+      "word": "the",
+      "start": 9.96,
+      "end": 10.16
+    },
+    {
+      "word": "free",
+      "start": 10.16,
+      "end": 10.38
+    },
+    {
+      "word": "sign",
+      "start": 10.38,
+      "end": 10.66
+    },
+    {
+      "word": "doubles",
+      "start": 10.66,
+      "end": 10.96
+    },
+    {
+      "word": "the",
+      "start": 10.96,
+      "end": 11.22
+    },
+    {
+      "word": "store's",
+      "start": 11.22,
+      "end": 11.58
+    },
+    {
+      "word": "profit.",
+      "start": 11.58,
+      "end": 12.02
+    },
+    {
+      "word": "Half",
+      "start": 12.02,
+      "end": 12.3
+    },
+    {
+      "word": "price,",
+      "start": 12.3,
+      "end": 12.76
+    },
+    {
+      "word": "the",
+      "start": 12.76,
+      "end": 12.76
+    },
+    {
+      "word": "store",
+      "start": 12.76,
+      "end": 12.9
+    },
+    {
+      "word": "keeps",
+      "start": 12.9,
+      "end": 13.14
+    },
+    {
+      "word": "a",
+      "start": 13.14,
+      "end": 13.32
+    },
+    {
+      "word": "dollar.",
+      "start": 13.32,
+      "end": 13.7
+    },
+    {
+      "word": "Free",
+      "start": 13.7,
+      "end": 13.88
+    },
+    {
+      "word": "it",
+      "start": 13.88,
+      "end": 14
+    },
+    {
+      "word": "keeps",
+      "start": 14,
+      "end": 14.28
+    },
+    {
+      "word": "too,",
+      "start": 14.28,
+      "end": 14.66
+    },
+    {
+      "word": "double.",
+      "start": 14.66,
+      "end": 14.94
+    },
+    {
+      "word": "That's",
+      "start": 14.94,
+      "end": 15.22
+    },
+    {
+      "word": "not",
+      "start": 15.22,
+      "end": 15.48
+    },
+    {
+      "word": "generosity.",
+      "start": 15.48,
+      "end": 16.1
+    },
+    {
+      "word": "It's",
+      "start": 16.1,
+      "end": 16.34
+    },
+    {
+      "word": "a",
+      "start": 16.34,
+      "end": 16.52
+    },
+    {
+      "word": "magic",
+      "start": 16.52,
+      "end": 16.7
+    },
+    {
+      "word": "trick",
+      "start": 16.7,
+      "end": 17.12
+    },
+    {
+      "word": "and",
+      "start": 17.12,
+      "end": 17.38
+    },
+    {
+      "word": "you",
+      "start": 17.38,
+      "end": 17.5
+    },
+    {
+      "word": "are",
+      "start": 17.5,
+      "end": 17.62
+    },
+    {
+      "word": "the",
+      "start": 17.62,
+      "end": 17.84
+    },
+    {
+      "word": "rabbit.",
+      "start": 17.84,
+      "end": 18.15
+    }
+  ]
+}

@@ -57,6 +57,21 @@ Memory for the `shorts` skill — turning one finished Why It Works long video i
 - S02 You own me, but not enough to open me (Section 6 trimmed) — 26.62s, 5.5 MB.
 - S03 A subscription with extra steps (Section 7 re-ordered) — 21.42s, 7.0 MB.
 
+## Beat-sync the short to the SOURCE section's signature device (owner-confirmed 2026-06-24)
+
+- The owner wants each short to follow the long-form section's visual LOGIC, not just reuse its photos. If the source section pins a scene/device to a spoken word, the short must do the same: e.g. `why-buy-1-get-1` S1 shows the **magic-hat scene on the word "magic"** and **sprouts CSS bunny ears on the word "rabbit"** — the short must replicate both, synced to the short's own word timings.
+- Port the source section's signature device verbatim (here the `.ear.left/.right` CSS bunny ears + `.witwrap`), don't invent a flatter substitute (a plain "YOU'RE THE RABBIT" card alone was rejected).
+- Don't burn the payoff prop on the wrong beat: v1 opened on the magic hat for "sounds impossible," leaving nothing for "magic." Reserve each signature visual for the word it illustrates; pick a neutral context base (store/shelf) for the hook.
+- "WIT emerges from the magic hat" came free from the standard portrait WIT geometry (centered, `bottom:360px`, width ~980) landing the figure right at a centered top-hat photo — a happy reuse; worth aiming for when the source has a hat/frame/doorway base.
+
+## Gotcha: WIT face height is POSE-dependent — re-check caption-over-WIT per pose (2026-06-24)
+
+Same `.wit` geometry (`bottom:360px`, `width:940px`) lands the head at very different heights depending on the pose PNG: `talking-front`, `confused`, `awkward-celebration` sit HIGH (face ~upper third), but `thinking` and `shocked` sit LOW (face ~mid-frame), so the centered caption (`top:50%`) clipped their chin/jaw — a face-coverage violation. Fix is a per-pose `bottom` override to lift the low poses (e.g. `#witThinking{bottom:540px} #witShocked{bottom:520px}`); body just bleeds further off the bottom edge, which is allowed. ALWAYS snapshot one caption-over-WIT beat for EACH pose used, not just one pose — don't assume a pose that worked elsewhere lands the same. (`why-buy-1-get-1` S03.)
+
+## Gotcha: don't zero a `.wit` that lives inside an opacity-controlled wrap (2026-06-24)
+
+`gsap.set('.wit', {opacity:0})` as a blanket initial-hide ALSO hides the `<img class="wit">` nested inside a `.witwrap` whose visibility you control via the WRAP's opacity. Result: the wrap shows but the figure stays invisible (only ears/cards render). Fix: hide the standalone WITs by id and the wrap by id (`#witSuspicion,#witShocked,#witBetrayedWrap,.ears`), and let `.witwrap .wit{opacity:1}` stay. Always snapshot a scene that uses the wrap to confirm the body renders, not just the ears.
+
 ## Feedback Log
 
 ### 2026-06-22 — Skill created from the first verified shorts run

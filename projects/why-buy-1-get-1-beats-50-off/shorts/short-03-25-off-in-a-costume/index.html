@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Short 03 — 25% Off In A Costume</title>
+<style>
+  @font-face{ font-family:'Patrick Hand'; src:url('assets/fonts/patrick-hand-latin.woff2') format('woff2'); font-display:swap; }
+  *{ box-sizing:border-box; }
+  body{ margin:0; background:#07070a; overflow:hidden; }
+  #Short03{ position:relative; width:1080px; height:1920px; overflow:hidden; background:#07070a;
+            font-family:'Patrick Hand', system-ui, sans-serif; }
+
+  .scene{ position:absolute; inset:0; }
+  .photo{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; }
+  .scrim-top{ position:absolute; top:0; left:0; right:0; height:660px;
+              background:linear-gradient(180deg, rgba(0,0,0,0.60), rgba(0,0,0,0)); }
+  .scrim-bottom{ position:absolute; bottom:0; left:0; right:0; height:600px;
+                 background:linear-gradient(0deg, rgba(0,0,0,0.58), rgba(0,0,0,0)); }
+
+  /* WIT — big, face above the centered caption, body bleeds toward the bottom */
+  .wit{ position:absolute; left:50%; bottom:360px; transform:translateX(-50%);
+        width:940px; transform-origin:center bottom; opacity:0;
+        filter:drop-shadow(0 14px 30px rgba(0,0,0,0.55)); }
+  /* thinking + shocked poses sit lower in their PNG canvas — raise so the head clears the centered caption */
+  #witThinking{ bottom:540px; }
+  #witShocked{ bottom:520px; }
+  .wit-layer{ position:absolute; inset:0; pointer-events:none; }
+
+  /* Hero cards / handwritten labels — upper third */
+  .card-layer{ position:absolute; inset:0; }
+  .label{ position:absolute; left:50%; transform:translateX(-50%) rotate(-1.6deg);
+          background:#fdf6e3; color:#241c12; font-size:74px; line-height:1.06;
+          padding:18px 38px; border-radius:16px; border:4px solid #241c12;
+          box-shadow:0 12px 26px rgba(0,0,0,0.45); white-space:nowrap; text-align:center; opacity:0; }
+
+  /* cuts-the-X cards — one game per side */
+  .cuts{ position:absolute; left:50%; top:280px; transform:translateX(-50%) rotate(-1.4deg);
+         background:#fdf6e3; color:#241c12; font-size:70px; line-height:1.04;
+         padding:18px 40px; border-radius:16px; border:5px solid #241c12;
+         box-shadow:0 14px 28px rgba(0,0,0,0.46); white-space:nowrap; text-align:center; opacity:0; }
+  .cuts.price{ background:#fff6df; }
+  .cuts.price b{ color:#1d7a3a; }
+  .cuts.judg{ background:#ffd23f; transform:translateX(-50%) rotate(1.4deg); }
+  .cuts.judg b{ color:#c0392b; }
+
+  /* payoff card — BOGO 50% off = 25% off in a costume */
+  .payoff{ position:absolute; left:50%; top:250px; transform:translateX(-50%) rotate(-2deg);
+           color:#241c12; background:#fdf6e3; font-size:60px; line-height:1.05;
+           padding:22px 44px; border-radius:22px; border:7px solid #241c12;
+           box-shadow:0 18px 40px rgba(0,0,0,0.55); text-align:center; white-space:nowrap; opacity:0; }
+  .payoff .strike{ display:block; font-size:54px; color:#7a6a52; text-decoration:line-through; }
+  .payoff .big{ display:block; margin-top:8px; font-size:104px; color:#c0392b; }
+  .payoff .costume{ display:block; margin-top:14px; color:#fff; background:#241c12;
+                    font-size:56px; letter-spacing:1px; padding:8px 22px; border-radius:14px; }
+
+  /* Captions — distinct subtitle style, vertically centered */
+  .caption-layer{ position:absolute; inset:0; }
+  .cap{ position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);
+        background:rgba(16,12,9,0.5); border-radius:22px; padding:14px 32px;
+        color:#fff; font-size:62px; line-height:1.1; text-align:center; white-space:nowrap;
+        max-width:800px; text-shadow:0 2px 0 #000, 0 0 16px rgba(0,0,0,0.85);
+        -webkit-text-stroke:1px rgba(0,0,0,0.55); opacity:0; }
+</style>
+</head>
+<body>
+<div id="Short03" data-composition-id="Short03" data-start="0" data-duration="21.30" data-width="1080" data-height="1920">
+
+  <!-- Scene bases (each on its own track, cross-faded) -->
+  <div class="clip scene" id="sceneA" data-composition-id="s03-sceneA" data-start="0"     data-duration="6.05"  data-track-index="1">
+    <img class="photo" src="assets/photos/chess.jpg" alt="">
+    <div class="scrim-top"></div><div class="scrim-bottom"></div>
+  </div>
+  <div class="clip scene" id="sceneB" data-composition-id="s03-sceneB" data-start="5.55"  data-duration="10.95" data-track-index="3">
+    <img class="photo" src="assets/photos/cutmoney.jpg" alt="">
+    <div class="scrim-top"></div><div class="scrim-bottom"></div>
+  </div>
+  <div class="clip scene" id="sceneD" data-composition-id="s03-sceneD" data-start="16.00" data-duration="5.30"  data-track-index="4">
+    <img class="photo" src="assets/photos/mask.jpg" alt="">
+    <div class="scrim-top"></div><div class="scrim-bottom"></div>
+  </div>
+
+  <!-- WIT layer -->
+  <div class="wit-layer">
+    <img class="wit" id="witThinking" src="assets/wit/wit-pose-thinking.png" alt="">
+    <img class="wit" id="witTalking"  src="assets/wit/wit-pose-talking-front.png" alt="">
+    <img class="wit" id="witShocked"  src="assets/wit/wit-pose-shocked.png" alt="">
+  </div>
+
+  <!-- Hero cards / labels -->
+  <div class="card-layer">
+    <div class="label" id="lblHook" style="top:250px;">FREE vs ½ OFF?</div>
+    <div class="cuts price" id="lblPrice">50% off <b>cuts the PRICE</b></div>
+    <div class="cuts judg"  id="lblJudg">FREE <b>cuts your JUDGMENT</b></div>
+    <div class="payoff" id="lblPayoff"><span class="strike">"BOGO 50% off"</span><span class="big">= 25% OFF</span><span class="costume">…in a costume</span></div>
+  </div>
+
+  <!-- Captions -->
+  <div class="caption-layer">
+    <div class="cap" id="cap1">why does FREE win?</div>
+    <div class="cap" id="cap2">different games</div>
+    <div class="cap" id="cap3">"shush… relax"</div>
+    <div class="cap" id="cap4">buy 1, get 1, 50% off?</div>
+    <div class="cap" id="cap5">that's not free anything</div>
+  </div>
+
+  <audio id="vo" data-start="0" data-duration="19.989" data-track-index="10" data-volume="1" crossorigin="anonymous" src="assets/../voiceover/short-03.mp3"></audio>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script>
+    window.__timelines = window.__timelines || {};
+    const tl = gsap.timeline({ paused:true, defaults:{ overwrite:"auto" } });
+    window.__timelines["Short03"] = tl;
+
+    // initial hidden states
+    gsap.set(['#sceneB','#sceneD'], { opacity:0 });
+    gsap.set(['#witThinking','#witTalking','#witShocked'], { opacity:0 });
+    gsap.set(['.label','.cuts','.payoff','.cap'], { opacity:0 });
+
+    const show = (sel,t)=> tl.set(sel,{opacity:1}, t);
+    const hide = (sel,t)=> tl.set(sel,{opacity:0}, t);
+    const pop  = (sel,t)=> tl.fromTo(sel,{opacity:0,scale:0.6},
+                    {opacity:1,scale:1,duration:0.42,ease:'back.out(2)',immediateRender:false}, t);
+    const fadeScene = (sel,t)=> tl.fromTo(sel,{opacity:0,filter:'blur(14px)'},
+                    {opacity:1,filter:'blur(0px)',duration:0.5,immediateRender:false}, t);
+
+    // ---- Scene A (chess) : the hook — two signs, different games ----
+    show('#witThinking', 0.0);
+    show('#cap1', 0.05); hide('#cap1', 1.90);
+    show('#lblHook', 0.70);
+    pop('#cap2', 4.04); hide('#cap2', 5.45);   // "different games"
+
+    // ---- Scene B/C (cutmoney) : 50% cuts the price, free cuts your judgment ----
+    fadeScene('#sceneB', 5.55);
+    hide('#witThinking', 5.55); hide('#lblHook', 5.55);
+    pop('#lblPrice', 6.30);                    // "cuts the price" — card is hero
+    hide('#lblPrice', 7.70);
+    show('#witTalking', 7.40);
+    pop('#lblJudg', 8.28);                      // "cuts your judgment" — card is hero
+    pop('#cap3', 11.90); hide('#cap3', 12.75);  // "shush, relax"
+    hide('#lblJudg', 13.40);
+    pop('#cap4', 14.40); hide('#cap4', 15.95);  // "buy 1 get 1, 50% off?"
+
+    // ---- Scene D (mask) : the payoff — 25% off in a costume ----
+    fadeScene('#sceneD', 16.00);
+    hide('#witTalking', 16.00);
+    show('#witShocked', 16.10);
+    pop('#cap5', 16.20); hide('#cap5', 17.40);  // "that's not free anything"
+    pop('#lblPayoff', 18.06);                   // lands on "25% off", holds to end
+  </script>
+</div>
+</body>
+</html>

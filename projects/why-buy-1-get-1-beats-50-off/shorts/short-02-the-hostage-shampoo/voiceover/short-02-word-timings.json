@@ -1,0 +1,475 @@
+{
+  "transcript": "The magic word is free and free makes your brain go a little stupid. When something's free, you stop doing math. You forget the boring question. Do I even want a second one? 50% off is a number and your brain checks numbers. Free is a feeling. Your brain just yells yes and grabs. So by when get one free isn't selling you a discount, it's selling you a word with a full price purchase staple to it. You didn't get a free shampoo. You got a full price shampoo with a hostage.",
+  "words": [
+    {
+      "word": "The",
+      "start": 0,
+      "end": 0.24
+    },
+    {
+      "word": "magic",
+      "start": 0.24,
+      "end": 0.56
+    },
+    {
+      "word": "word",
+      "start": 0.56,
+      "end": 0.82
+    },
+    {
+      "word": "is",
+      "start": 0.82,
+      "end": 1.1
+    },
+    {
+      "word": "free",
+      "start": 1.1,
+      "end": 1.46
+    },
+    {
+      "word": "and",
+      "start": 1.46,
+      "end": 1.8
+    },
+    {
+      "word": "free",
+      "start": 1.8,
+      "end": 1.98
+    },
+    {
+      "word": "makes",
+      "start": 1.98,
+      "end": 2.18
+    },
+    {
+      "word": "your",
+      "start": 2.18,
+      "end": 2.36
+    },
+    {
+      "word": "brain",
+      "start": 2.36,
+      "end": 2.6
+    },
+    {
+      "word": "go",
+      "start": 2.6,
+      "end": 2.74
+    },
+    {
+      "word": "a",
+      "start": 2.74,
+      "end": 2.84
+    },
+    {
+      "word": "little",
+      "start": 2.84,
+      "end": 3.06
+    },
+    {
+      "word": "stupid.",
+      "start": 3.06,
+      "end": 3.48
+    },
+    {
+      "word": "When",
+      "start": 3.48,
+      "end": 3.72
+    },
+    {
+      "word": "something's",
+      "start": 3.72,
+      "end": 4.14
+    },
+    {
+      "word": "free,",
+      "start": 4.14,
+      "end": 4.48
+    },
+    {
+      "word": "you",
+      "start": 4.48,
+      "end": 4.48
+    },
+    {
+      "word": "stop",
+      "start": 4.48,
+      "end": 4.7
+    },
+    {
+      "word": "doing",
+      "start": 4.7,
+      "end": 4.98
+    },
+    {
+      "word": "math.",
+      "start": 4.98,
+      "end": 5.44
+    },
+    {
+      "word": "You",
+      "start": 5.44,
+      "end": 5.56
+    },
+    {
+      "word": "forget",
+      "start": 5.56,
+      "end": 5.78
+    },
+    {
+      "word": "the",
+      "start": 5.78,
+      "end": 5.98
+    },
+    {
+      "word": "boring",
+      "start": 5.98,
+      "end": 6.14
+    },
+    {
+      "word": "question.",
+      "start": 6.14,
+      "end": 6.64
+    },
+    {
+      "word": "Do",
+      "start": 6.64,
+      "end": 6.78
+    },
+    {
+      "word": "I",
+      "start": 6.78,
+      "end": 6.9
+    },
+    {
+      "word": "even",
+      "start": 6.9,
+      "end": 7.02
+    },
+    {
+      "word": "want",
+      "start": 7.02,
+      "end": 7.24
+    },
+    {
+      "word": "a",
+      "start": 7.24,
+      "end": 7.36
+    },
+    {
+      "word": "second",
+      "start": 7.36,
+      "end": 7.54
+    },
+    {
+      "word": "one?",
+      "start": 7.54,
+      "end": 7.94
+    },
+    {
+      "word": "50",
+      "start": 7.94,
+      "end": 8.14
+    },
+    {
+      "word": "%",
+      "start": 8.14,
+      "end": 8.48
+    },
+    {
+      "word": "off",
+      "start": 8.48,
+      "end": 8.62
+    },
+    {
+      "word": "is",
+      "start": 8.62,
+      "end": 8.78
+    },
+    {
+      "word": "a",
+      "start": 8.78,
+      "end": 8.88
+    },
+    {
+      "word": "number",
+      "start": 8.88,
+      "end": 9.06
+    },
+    {
+      "word": "and",
+      "start": 9.06,
+      "end": 9.22
+    },
+    {
+      "word": "your",
+      "start": 9.22,
+      "end": 9.44
+    },
+    {
+      "word": "brain",
+      "start": 9.44,
+      "end": 9.66
+    },
+    {
+      "word": "checks",
+      "start": 9.66,
+      "end": 9.9
+    },
+    {
+      "word": "numbers.",
+      "start": 9.9,
+      "end": 10.54
+    },
+    {
+      "word": "Free",
+      "start": 10.54,
+      "end": 10.68
+    },
+    {
+      "word": "is",
+      "start": 10.68,
+      "end": 10.86
+    },
+    {
+      "word": "a",
+      "start": 10.86,
+      "end": 10.98
+    },
+    {
+      "word": "feeling.",
+      "start": 10.98,
+      "end": 11.32
+    },
+    {
+      "word": "Your",
+      "start": 11.32,
+      "end": 11.44
+    },
+    {
+      "word": "brain",
+      "start": 11.44,
+      "end": 11.7
+    },
+    {
+      "word": "just",
+      "start": 11.7,
+      "end": 11.9
+    },
+    {
+      "word": "yells",
+      "start": 11.9,
+      "end": 12.12
+    },
+    {
+      "word": "yes",
+      "start": 12.12,
+      "end": 12.38
+    },
+    {
+      "word": "and",
+      "start": 12.38,
+      "end": 12.54
+    },
+    {
+      "word": "grabs.",
+      "start": 12.54,
+      "end": 13
+    },
+    {
+      "word": "So",
+      "start": 13,
+      "end": 13.18
+    },
+    {
+      "word": "by",
+      "start": 13.18,
+      "end": 13.32
+    },
+    {
+      "word": "when",
+      "start": 13.32,
+      "end": 13.46
+    },
+    {
+      "word": "get",
+      "start": 13.46,
+      "end": 13.62
+    },
+    {
+      "word": "one",
+      "start": 13.62,
+      "end": 13.86
+    },
+    {
+      "word": "free",
+      "start": 13.86,
+      "end": 14.02
+    },
+    {
+      "word": "isn't",
+      "start": 14.02,
+      "end": 14.24
+    },
+    {
+      "word": "selling",
+      "start": 14.24,
+      "end": 14.48
+    },
+    {
+      "word": "you",
+      "start": 14.48,
+      "end": 14.66
+    },
+    {
+      "word": "a",
+      "start": 14.66,
+      "end": 14.74
+    },
+    {
+      "word": "discount,",
+      "start": 14.74,
+      "end": 15.18
+    },
+    {
+      "word": "it's",
+      "start": 15.24,
+      "end": 15.66
+    },
+    {
+      "word": "selling",
+      "start": 15.66,
+      "end": 15.68
+    },
+    {
+      "word": "you",
+      "start": 15.68,
+      "end": 15.9
+    },
+    {
+      "word": "a",
+      "start": 15.9,
+      "end": 15.98
+    },
+    {
+      "word": "word",
+      "start": 15.98,
+      "end": 16.16
+    },
+    {
+      "word": "with",
+      "start": 16.16,
+      "end": 16.32
+    },
+    {
+      "word": "a",
+      "start": 16.32,
+      "end": 16.46
+    },
+    {
+      "word": "full",
+      "start": 16.46,
+      "end": 16.66
+    },
+    {
+      "word": "price",
+      "start": 16.66,
+      "end": 16.9
+    },
+    {
+      "word": "purchase",
+      "start": 16.9,
+      "end": 17.38
+    },
+    {
+      "word": "staple",
+      "start": 17.38,
+      "end": 17.66
+    },
+    {
+      "word": "to",
+      "start": 17.66,
+      "end": 17.94
+    },
+    {
+      "word": "it.",
+      "start": 17.94,
+      "end": 18.22
+    },
+    {
+      "word": "You",
+      "start": 18.22,
+      "end": 18.4
+    },
+    {
+      "word": "didn't",
+      "start": 18.4,
+      "end": 18.56
+    },
+    {
+      "word": "get",
+      "start": 18.56,
+      "end": 18.76
+    },
+    {
+      "word": "a",
+      "start": 18.76,
+      "end": 18.88
+    },
+    {
+      "word": "free",
+      "start": 18.88,
+      "end": 19.08
+    },
+    {
+      "word": "shampoo.",
+      "start": 19.08,
+      "end": 19.66
+    },
+    {
+      "word": "You",
+      "start": 19.66,
+      "end": 19.88
+    },
+    {
+      "word": "got",
+      "start": 19.88,
+      "end": 20.1
+    },
+    {
+      "word": "a",
+      "start": 20.1,
+      "end": 20.28
+    },
+    {
+      "word": "full",
+      "start": 20.28,
+      "end": 20.54
+    },
+    {
+      "word": "price",
+      "start": 20.54,
+      "end": 20.84
+    },
+    {
+      "word": "shampoo",
+      "start": 20.84,
+      "end": 21.34
+    },
+    {
+      "word": "with",
+      "start": 21.34,
+      "end": 21.62
+    },
+    {
+      "word": "a",
+      "start": 21.62,
+      "end": 21.74
+    },
+    {
+      "word": "hostage.",
+      "start": 21.74,
+      "end": 22.632
+    }
+  ]
+}

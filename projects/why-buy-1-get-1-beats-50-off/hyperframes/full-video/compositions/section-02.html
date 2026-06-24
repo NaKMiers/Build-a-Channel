@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Section 02 - Same To You, Not To Them</title>
+  <style>
+    @font-face { font-family: "PatrickHandLocal"; src: url("./assets/fonts/patrick-hand-latin.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
+    :root { --ink:#14110d; --red:#e0392b; --green:#3ddc7f; --gold:#ffd23f; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #07070a; color:#fff; overflow: hidden; }
+    #Section02Counter { position: relative; width: 1920px; height: 1080px; overflow: hidden; background: #07070a; font-family: "PatrickHandLocal"; }
+    .scene, .cue { position: absolute; inset: 0; width: 100%; height: 100%; overflow: hidden; }
+    .scene { z-index: 1; will-change: opacity, transform, filter; }
+    .cue { z-index: 5; pointer-events: none; }
+    .photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+    .photo.reg  { filter:saturate(1.05) contrast(1.05) brightness(0.7); }
+    .photo.reg2 { filter:saturate(1.0) contrast(1.06) brightness(0.64) hue-rotate(-10deg); }
+    .photo.cash { filter:saturate(1.08) contrast(1.05) brightness(0.62); }
+    .photo.coins{ filter:saturate(1.05) contrast(1.08) brightness(0.5); }
+    .photo.wedg { filter:saturate(1.08) contrast(1.06) brightness(0.72); }
+    .scrim { position:absolute; inset:0; z-index:1; background:radial-gradient(ellipse 85% 85% at 44% 48%, rgba(4,5,10,0.16), rgba(4,5,10,0.74) 99%); }
+    .ui { font-family:"Segoe UI",system-ui,sans-serif; }
+
+    .hand { position:absolute; z-index:7; font-family:"PatrickHandLocal"; font-size:62px; color:#fff; text-shadow:3px 4px 0 rgba(0,0,0,0.55); }
+
+    /* small product tags */
+    .tag { position:absolute; z-index:7; border-radius:16px; padding:16px 28px; font-family:"Segoe UI",system-ui,sans-serif; font-weight:900; box-shadow:0 14px 30px rgba(0,0,0,0.5); }
+    .tag small { display:block; font-size:30px; font-weight:700; opacity:0.9; margin-top:4px; }
+    .tag.sells { background:#1f7a44; color:#fff; font-size:64px; } .tag.sells small{ color:#d8ffe6; }
+    .tag.costs { background:#3a3f47; color:#fff; font-size:56px; } .tag.costs small{ color:#cbd2da; }
+
+    /* math card */
+    .mathcard { position:absolute; z-index:7; background:rgba(10,10,16,0.88); border:3px solid #fff; border-radius:20px; padding:26px 40px; font-family:"Segoe UI",system-ui,sans-serif; box-shadow:0 18px 40px rgba(0,0,0,0.55); min-width:640px; }
+    .mathcard .deal { font-weight:900; font-size:46px; color:var(--gold); margin-bottom:18px; letter-spacing:0.5px; }
+    .mathcard .ml { font-weight:800; font-size:54px; color:#fff; margin:10px 0; white-space:nowrap; }
+    .mathcard .ml .n { color:var(--gold); }
+    .mathcard .res { font-weight:900; font-size:60px; color:var(--green); border:5px solid var(--red); border-radius:12px; padding:6px 18px; display:inline-block; margin-top:10px; white-space:nowrap; }
+
+    .double { position:absolute; z-index:11; font-family:"Segoe UI",system-ui,sans-serif; font-weight:900; font-size:170px; color:var(--gold); text-shadow:0 0 30px rgba(0,0,0,0.6), 6px 8px 0 rgba(0,0,0,0.5); transform:rotate(-8deg); }
+
+    /* verdict split */
+    .vcard { position:absolute; z-index:7; border-radius:18px; padding:20px 30px; font-family:"Segoe UI",system-ui,sans-serif; font-weight:900; box-shadow:0 14px 30px rgba(0,0,0,0.5); width:720px; }
+    .vcard small { display:block; font-size:34px; font-weight:700; opacity:0.92; margin-top:6px; }
+    .vcard.you   { background:rgba(31,122,68,0.92); color:#fff; font-size:52px; }
+    .vcard.store { background:rgba(196,35,26,0.94); color:#fff; font-size:52px; }
+    .pricetag { position:absolute; z-index:8; background:#f4f1e8; color:#161616; border:6px solid #b9b2a0; border-radius:18px; padding:14px 34px; text-align:center; font-family:"Segoe UI",system-ui,sans-serif; box-shadow:0 16px 34px rgba(0,0,0,0.5); }
+    .pricetag .p { font-weight:900; font-size:96px; line-height:0.96; } .pricetag .c { font-weight:800; font-size:30px; color:#7a1714; }
+
+    /* wedgwood scene */
+    .cap { position:absolute; z-index:8; font-family:"Segoe UI",system-ui,sans-serif; font-weight:900; color:#fff; text-shadow:0 0 30px rgba(0,0,0,0.7), 4px 5px 0 rgba(0,0,0,0.5); }
+    .ticket { position:absolute; z-index:9; background:#fff7d8; color:#161616; border:4px dashed #7d1714; border-radius:14px; padding:16px 26px; font-family:"PatrickHandLocal"; font-size:52px; transform:rotate(-4deg); box-shadow:0 14px 28px rgba(0,0,0,0.45); }
+    .ticket b { color:var(--red); }
+
+    .wit { position:absolute; object-fit:contain; z-index:8; filter:drop-shadow(15px 18px 0 rgba(0,0,0,0.32)); transform-origin:center center; }
+    .tag,.mathcard,.double,.vcard,.pricetag,.cap,.ticket,.hand,.wit { will-change: opacity, transform; }
+  </style>
+</head>
+<body>
+  <div id="Section02Counter" data-composition-id="Section02Counter" data-start="0" data-duration="40.469" data-width="1920" data-height="1080">
+
+    <!-- SCENE A: register 0-7.48 -->
+    <div id="scene-a" class="clip scene" data-start="0" data-duration="7.48" data-track-index="1">
+      <img class="photo reg" src="./assets/visual-references/section-02-same-to-you-not-to-them/base-a-counter-register.jpg" alt="">
+      <div class="scrim"></div>
+    </div>
+    <!-- SCENE B: cash 7.48-13.86 -->
+    <div id="scene-b" class="clip scene" data-start="7.48" data-duration="6.38" data-track-index="3">
+      <img class="photo cash" src="./assets/visual-references/section-02-same-to-you-not-to-them/base-b-cash-usd.jpg" alt="">
+      <div class="scrim"></div>
+    </div>
+    <!-- SCENE C: rising coins 13.86-22.72 -->
+    <div id="scene-c" class="clip scene" data-start="13.86" data-duration="8.86" data-track-index="4">
+      <img class="photo coins" src="./assets/visual-references/section-02-same-to-you-not-to-them/base-c-coins-rising.jpg" alt="">
+      <div class="scrim"></div>
+    </div>
+    <!-- SCENE D: register callback 22.72-32.08 -->
+    <div id="scene-d" class="clip scene" data-start="22.72" data-duration="9.36" data-track-index="5">
+      <img class="photo reg2" src="./assets/visual-references/section-02-same-to-you-not-to-them/base-a-counter-register.jpg" alt="">
+      <div class="scrim"></div>
+    </div>
+    <!-- SCENE E: wedgwood 32.08-40.469 -->
+    <div id="scene-e" class="clip scene" data-start="32.08" data-duration="8.389" data-track-index="6">
+      <img class="photo wedg" src="./assets/visual-references/section-02-same-to-you-not-to-them/base-e-wedgwood.jpg" alt="">
+      <div class="scrim"></div>
+    </div>
+
+    <!-- CUE A 0-7.46 -->
+    <div id="cue-a" class="clip cue" data-start="0" data-duration="7.46" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="hand ca-hand" style="left:120px; top:96px; width:760px;">Look at the store's side…</div>
+      <div class="tag sells ca-sells" style="left:150px; top:300px;">SELLS $10<small>the price you see</small></div>
+      <div class="tag costs ca-costs" style="left:150px; top:520px;">COSTS $4<small>to make it</small></div>
+      <img class="wit ca-wit" data-layout-allow-overflow="" style="right:-150px; bottom:-360px; width:1080px;" src="./assets/wit/wit-pose-thinking.png" alt="">
+    </div>
+
+    <!-- CUE B 7.48-13.84 : 50% off math -->
+    <div id="cue-b" class="clip cue" data-start="7.48" data-duration="6.36" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="mathcard cb-card ui" style="left:560px; top:250px;">
+        <div class="deal cb-deal">50% OFF</div>
+        <div class="ml cb-l1">You pay <span class="n">$5</span></div>
+        <div class="ml cb-l2">&minus; Cost <span class="n">$4</span></div>
+        <div class="res cb-res">= Store keeps $1</div>
+      </div>
+    </div>
+
+    <!-- CUE C 13.86-22.70 : BOGO math + DOUBLE -->
+    <div id="cue-c" class="clip cue" data-start="13.86" data-duration="8.84" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="mathcard cc-card ui" style="left:120px; top:230px;">
+        <div class="deal cc-deal">BUY 1 GET 1 FREE</div>
+        <div class="ml cc-l1">You pay <span class="n">$10</span> (two items)</div>
+        <div class="ml cc-l2">&minus; Cost <span class="n">$8</span></div>
+        <div class="res cc-res">= Store keeps $2</div>
+      </div>
+      <div class="double cc-double" style="left:680px; top:30px;">DOUBLE</div>
+      <img class="wit cc-wit" data-layout-allow-overflow="" style="left:560px; bottom:-360px; width:1060px;" src="./assets/wit/wit-pose-shocked.png" alt="">
+    </div>
+
+    <!-- CUE D 22.72-32.06 : verdict -->
+    <div id="cue-d" class="clip cue" data-start="22.72" data-duration="9.34" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="vcard you cd-you ui" style="left:1060px; top:120px;">YOU pay $5 / item<small>exactly the same either way</small></div>
+      <div class="vcard store cd-store ui" style="left:1060px; top:330px;">STORE keeps 2&times; profit<small>on the same shelf</small></div>
+      <div class="pricetag cd-ten" style="left:1230px; top:560px;"><div class="p">$10</div><div class="c">the sign never moved</div></div>
+      <img class="wit cd-wit" data-layout-allow-overflow="" style="left:-170px; bottom:-360px; width:1080px;" src="./assets/wit/wit-pose-awkward-celebration.png" alt="">
+    </div>
+
+    <!-- CUE E 32.08-40.469 : Wedgwood roast -->
+    <div id="cue-e" class="clip cue" data-start="32.08" data-duration="8.389" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="cap ce-old" style="left:110px; top:96px; font-size:66px;">This trick is <span style="color:var(--gold);">≈250 years old</span></div>
+      <div class="cap ce-wedg" style="left:110px; top:230px; font-size:46px;">Josiah Wedgwood ran it · the 1700s</div>
+      <div class="ticket ce-ticket" style="left:140px; top:430px;">SUCKER ticket #&infin;<br><b>you're just the latest</b></div>
+      <img class="wit ce-wit" data-layout-allow-overflow="" style="right:-150px; bottom:-360px; width:1000px;" src="./assets/wit/wit-pose-facepalm.png" alt="">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true, defaults: { overwrite: "auto" } });
+      const reveal = (t, hideAt, at, fv, tv = {}) => { const r = {}; if ("x" in fv) r.x = 0; if ("y" in fv) r.y = 0; if ("scale" in fv) r.scale = 1; if ("opacity" in fv) r.opacity = 1; tl.set(t, fv, hideAt); tl.to(t, { ...r, ...tv }, at); };
+      const show = (t, hideAt, at) => { tl.set(t, { opacity: 0 }, hideAt); tl.set(t, { opacity: 1 }, at); };
+      const hide = (t, at) => { tl.set(t, { opacity: 0 }, at); };
+      const smash = (t, hideAt, at, fv = { y: 20, scale: 1.3, opacity: 0 }) => reveal(t, hideAt, at, fv, { duration: 0.18, ease: "back.out(1.9)" });
+      const pop = (t, hideAt, at) => reveal(t, hideAt, at, { scale: 0.4, opacity: 0 }, { duration: 0.22, ease: "back.out(2)" });
+
+      // scene cross-fades (word-pinned)
+      tl.fromTo("#scene-b", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 7.48);
+      tl.fromTo("#scene-c", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 13.86);
+      tl.fromTo("#scene-d", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 22.72);
+      tl.fromTo("#scene-e", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 32.08);
+
+      // SCENE A - behind the counter
+      show("#cue-a .ca-hand", 0, 0.40);
+      show("#cue-a .ca-wit", 0, 0.80);
+      smash("#cue-a .ca-sells", 0, 4.46, { scale: 0.5, opacity: 0 });   // "$10"
+      smash("#cue-a .ca-costs", 0, 6.06, { scale: 0.5, opacity: 0 });   // "$4 to make"
+
+      // SCENE B - 50% off math (reveal each line on its number)
+      show("#cue-b .cb-deal", 7.48, 7.62);                              // "Fifty percent off"
+      hide("#cue-b .cb-l1", 7.48); hide("#cue-b .cb-l2", 7.48); hide("#cue-b .cb-res", 7.48);
+      show("#cue-b .cb-l1", 7.48, 8.66);                                // "you pay five"
+      show("#cue-b .cb-l2", 7.48, 9.88);                                // "spent four to make it"
+      smash("#cue-b .cb-res", 7.48, 12.62, { scale: 0.6, opacity: 0 }); // "keeps one dollar"
+
+      // SCENE C - BOGO math, then DOUBLE takeover
+      show("#cue-c .cc-deal", 13.86, 13.92);                            // "Buy one, get one free"
+      hide("#cue-c .cc-l1", 13.86); hide("#cue-c .cc-l2", 13.86); hide("#cue-c .cc-res", 13.86);
+      hide("#cue-c .cc-double", 13.86); hide("#cue-c .cc-wit", 13.86);
+      show("#cue-c .cc-l1", 13.86, 15.38);                              // "you pay ten and take two"
+      show("#cue-c .cc-l2", 13.86, 17.08);                              // "cost the store eight"
+      smash("#cue-c .cc-res", 13.86, 20.52, { scale: 0.6, opacity: 0 });// "keeps two dollars"
+      // "Double." - hide the card, take over with the stamp + shocked WIT
+      hide("#cue-c .cc-card", 21.94);
+      smash("#cue-c .cc-double", 13.86, 21.94, { scale: 0.4, opacity: 0 });
+      show("#cue-c .cc-wit", 13.86, 21.94);
+
+      // SCENE D - verdict
+      hide("#cue-d .cd-store", 22.72); hide("#cue-d .cd-ten", 22.72); hide("#cue-d .cd-wit", 22.72);
+      show("#cue-d .cd-you", 22.72, 23.28);                             // "same five dollars for you"
+      show("#cue-d .cd-store", 22.72, 25.24);                           // "double the profit for the store"
+      smash("#cue-d .cd-ten", 22.72, 27.24, { scale: 0.6, opacity: 0 });// "the sign never changed / still says ten"
+      show("#cue-d .cd-wit", 22.72, 30.70);                             // "felt clever doing it"
+
+      // SCENE E - Wedgwood roast
+      show("#cue-e .ce-old", 32.08, 32.42);                             // "this trick is old"
+      hide("#cue-e .ce-wedg", 32.08); hide("#cue-e .ce-ticket", 32.08); hide("#cue-e .ce-wit", 32.08);
+      show("#cue-e .ce-wedg", 32.08, 34.42);                            // "Wedgwood ... 1700s"
+      show("#cue-e .ce-wit", 32.08, 37.74);                             // "you are not the first sucker"
+      smash("#cue-e .ce-ticket", 32.08, 38.32, { y: 24, scale: 1.2, opacity: 0 }); // "just the latest"
+
+      window.__timelines["Section02Counter"] = tl;
+    </script>
+  </div>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Section 07 - Free Cuts Your Judgment</title>
+  <style>
+    @font-face { font-family: "PatrickHandLocal"; src: url("./assets/fonts/patrick-hand-latin.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
+    :root { --ink:#14110d; --red:#e0392b; --green:#3ddc7f; --gold:#ffd23f; --blue:#3a86ff; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #07070a; color:#fff; overflow: hidden; }
+    #Section07Payoff { position: relative; width: 1920px; height: 1080px; overflow: hidden; background: #07070a; font-family: "PatrickHandLocal"; }
+    .scene, .cue { position: absolute; inset: 0; width: 100%; height: 100%; overflow: hidden; }
+    .scene { z-index: 1; will-change: opacity, transform, filter; }
+    .cue { z-index: 5; pointer-events: none; }
+    .photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+    .photo.chess { filter:saturate(1.1) contrast(1.08) brightness(0.8); }
+    .photo.sciss { filter:saturate(1.1) contrast(1.05) brightness(0.85); }
+    .photo.abak  { filter:saturate(1.08) contrast(1.06) brightness(0.86); }
+    .photo.mask  { filter:saturate(1.18) contrast(1.08) brightness(0.72); }
+    .photo.cards { filter:saturate(1.12) contrast(1.06) brightness(0.8); }
+    .scrim { position:absolute; inset:0; z-index:1; }
+    .scrim.left  { background:linear-gradient(90deg, rgba(4,5,10,0.52) 0%, rgba(4,5,10,0.2) 34%, rgba(4,5,10,0) 60%); }
+    .scrim.right { background:linear-gradient(270deg, rgba(4,5,10,0.52) 0%, rgba(4,5,10,0.2) 34%, rgba(4,5,10,0) 60%); }
+    .ui { font-family:"Segoe UI",system-ui,sans-serif; }
+    .magic { position:absolute; z-index:9; font-family:"PatrickHandLocal"; font-size:60px; color:#fff; text-shadow:3px 4px 0 rgba(0,0,0,0.7); }
+
+    .hero { position:absolute; z-index:10; font-family:"Segoe UI",system-ui,sans-serif; font-weight:900; line-height:0.92; text-shadow:0 0 40px rgba(0,0,0,0.65), 6px 8px 0 rgba(0,0,0,0.55); }
+    .hero.gold { color:var(--gold); } .hero.white { color:#fff; } .hero.red { color:#ff5a4d; } .hero.grn { color:var(--green); }
+
+    /* two signs face-off */
+    .sign { position:absolute; z-index:10; border-radius:18px; padding:16px 30px; text-align:center; font-family:"Segoe UI",system-ui,sans-serif; box-shadow:0 16px 36px rgba(0,0,0,0.5); }
+    .sign .top { font-weight:900; } .sign .sub { font-weight:700; font-size:28px; margin-top:4px; }
+    .sign.half { background:#f4f1e8; color:#1b1b1b; border:4px solid #b9b2a0; } .sign.half .top{font-size:58px;}
+    .sign.free { background:var(--red); color:#fff; border:5px solid #fff; } .sign.free .top{font-size:72px;}
+    .vs { position:absolute; z-index:11; font-family:"Segoe UI",system-ui,sans-serif; font-weight:900; font-size:90px; color:var(--gold); text-shadow:4px 5px 0 rgba(0,0,0,0.5); }
+
+    .chip { position:absolute; z-index:10; font-family:"Segoe UI",system-ui,sans-serif; font-weight:900; border-radius:16px; padding:12px 24px; font-size:42px; box-shadow:0 14px 30px rgba(0,0,0,0.5); }
+    .chip.ok { background:rgba(31,122,68,0.95); color:#fff; border:3px solid #7fe0a6; }
+    .stamp { position:absolute; z-index:12; font-family:"Segoe UI",system-ui,sans-serif; font-weight:900; color:#fff; border:7px solid var(--red); background:rgba(224,57,43,0.28); border-radius:16px; padding:12px 28px; transform:rotate(-7deg); text-shadow:3px 4px 0 rgba(0,0,0,0.6); box-shadow:0 0 32px rgba(224,57,43,0.6); }
+
+    /* calculator screen (on -> off) */
+    .calc { position:absolute; z-index:11; background:#11131a; border:4px solid #2b2f3a; border-radius:18px; padding:18px 26px; width:520px; box-shadow:0 16px 36px rgba(0,0,0,0.55); font-family:"Segoe UI",system-ui,sans-serif; }
+    .calc .scr { background:#0a1a12; border-radius:10px; padding:14px 20px; text-align:right; font-weight:900; font-size:72px; color:#6effa6; min-height:96px; }
+    .calc.off .scr { color:#26302b; background:#0a0d0b; }
+    .calc .tag { font-weight:800; font-size:30px; color:#9aa3ad; margin-top:10px; }
+
+    .wit { position:absolute; object-fit:contain; z-index:8; filter:drop-shadow(16px 20px 0 rgba(0,0,0,0.36)); transform-origin:center center; }
+    .magic,.hero,.sign,.vs,.chip,.stamp,.calc,.wit { will-change: opacity, transform; }
+  </style>
+</head>
+<body>
+  <div id="Section07Payoff" data-composition-id="Section07Payoff" data-start="0" data-duration="38.912" data-width="1920" data-height="1080">
+
+    <!-- SCENE A: chess 0-6.52 -->
+    <div id="scene-a" class="clip scene" data-start="0" data-duration="6.52" data-track-index="1">
+      <img class="photo chess" src="./assets/visual-references/section-07-free-cuts-your-judgment/base-a-chess.jpg" alt=""><div class="scrim left"></div>
+    </div>
+    <!-- SCENE B: scissors 6.52-10.72 -->
+    <div id="scene-b" class="clip scene" data-start="6.52" data-duration="4.20" data-track-index="3">
+      <img class="photo sciss" src="./assets/visual-references/section-07-free-cuts-your-judgment/base-b-cutmoney.jpg" alt=""><div class="scrim right"></div>
+    </div>
+    <!-- SCENE C: calculator 10.72-25.48 -->
+    <div id="scene-c" class="clip scene" data-start="10.72" data-duration="14.76" data-track-index="4">
+      <img class="photo abak" src="./assets/visual-references/section-07-free-cuts-your-judgment/base-c-abacus.jpg" alt=""><div class="scrim left"></div>
+    </div>
+    <!-- SCENE D: mask 25.48-33.84 -->
+    <div id="scene-d" class="clip scene" data-start="25.48" data-duration="8.36" data-track-index="5">
+      <img class="photo mask" src="./assets/visual-references/section-07-free-cuts-your-judgment/base-d-mask.jpg" alt=""><div class="scrim right"></div>
+    </div>
+    <!-- SCENE E: cards 33.84-38.912 -->
+    <div id="scene-e" class="clip scene" data-start="33.84" data-duration="5.072" data-track-index="6">
+      <img class="photo cards" src="./assets/visual-references/section-07-free-cuts-your-judgment/base-e-cards.jpg" alt=""><div class="scrim left"></div>
+    </div>
+
+    <!-- CUE A 0-6.50 : WIT right, devices left -->
+    <div id="cue-a" class="clip cue" data-start="0" data-duration="6.50" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="magic ca-q" style="left:110px; top:90px; width:760px;">why does "free" beat 50% off?</div>
+      <div class="sign free ca-free" style="left:120px; top:280px;"><div class="top">FREE</div></div>
+      <div class="vs ca-vs" style="left:400px; top:300px;">vs</div>
+      <div class="sign half ca-half" style="left:120px; top:470px;"><div class="top">50% OFF</div></div>
+      <div class="hero gold ca-games" style="left:520px; top:330px; font-size:64px; line-height: 1.1;">two different<br>GAMES</div>
+      <img class="wit ca-wit" data-layout-allow-overflow="" style="right:-150px; bottom:-360px; width:1320px;" src="./assets/wit/wit-pose-thinking.png" alt="">
+    </div>
+
+    <!-- CUE B 6.52-10.70 : WIT left, devices right - THE thesis -->
+    <div id="cue-b" class="clip cue" data-start="6.52" data-duration="4.18" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="hero white cb-price" style="left:1020px; top:230px; font-size:58px;">50% off cuts<br>the <span class="grn">PRICE</span></div>
+      <div class="hero red cb-judge" style="left:1020px; top:470px; font-size:72px;">"free" cuts your<br>JUDGMENT</div>
+      <img class="wit cb-wit" data-layout-allow-overflow="" style="left:-180px; bottom:-360px; width:1320px;" src="./assets/wit/wit-pose-suspicious.png" alt="">
+    </div>
+
+    <!-- CUE C 10.72-25.46 : WIT right, devices left - inner accountant + caveat -->
+    <div id="cue-c" class="clip cue" data-start="10.72" data-duration="14.74" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="magic cc-ask" style="left:110px; top:80px; width:780px;">one asks your brain a question…</div>
+      <div class="calc cc-calc ui" style="left:120px; top:230px;"><div class="scr">5 − 4 = ?</div><div class="tag">your inner accountant</div></div>
+      <div class="calc off cc-calc2 ui" style="left:120px; top:230px;"><div class="scr">- - -</div><div class="tag">…switched off</div></div>
+      <div class="chip ok cc-ok1 ui" style="left:120px; top:470px;">✓ sometimes you DO want two</div>
+      <div class="chip ok cc-ok2 ui" style="left:120px; top:575px;">✓ sometimes "free" really is free</div>
+      <div class="stamp cc-off ui" style="left:120px; top:710px; font-size:44px;">but "free" switches it OFF</div>
+      <img class="wit cc-wit" data-layout-allow-overflow="" style="right:-150px; bottom:-360px; width:1320px;" src="./assets/wit/wit-pose-talking-front.png" alt="">
+    </div>
+
+    <!-- CUE D 25.48-33.82 : WIT right, devices left - 25% in a costume -->
+    <div id="cue-d" class="clip cue" data-start="25.48" data-duration="8.34" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="sign free cd-sign" style="left:1080px; top:200px; width:640px;"><div class="top" style="font-size:54px;">BUY 1 GET 1<br>50% OFF</div></div>
+      <div class="hero cd-not" style="left:1080px; top:470px; font-size:50px;">not "free" anything…</div>
+      <div class="hero gold cd-reveal" style="left:1080px; top:560px; font-size:96px;">= 25% OFF</div>
+      <div class="stamp cd-costume ui" style="left:1110px; top:740px; font-size:48px;">…in a costume</div>
+      <img class="wit cd-wit" data-layout-allow-overflow="" style="left:-180px; bottom:-360px; width:1320px;" src="./assets/wit/wit-pose-betrayed.png" alt="">
+    </div>
+
+    <!-- CUE E 33.84-38.912 : WIT right, devices left - sign-off -->
+    <div id="cue-e" class="clip cue" data-start="33.84" data-duration="5.072" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
+      <div class="hero white ce-same" style="left:110px; top:170px; font-size:50px;">same shelf · same product</div>
+      <div class="hero gold ce-diff" style="left:110px; top:280px; font-size:78px;">different GAME</div>
+      <div class="hero white ce-go" style="left:110px; top:470px; font-size:62px;">now go be slightly<br><span class="grn">harder to trick</span></div>
+      <img class="wit ce-wit" data-layout-allow-overflow="" style="right:-150px; bottom:-360px; width:1320px;" src="./assets/wit/wit-pose-pointing-right.png" alt="">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true, defaults: { overwrite: "auto" } });
+      const reveal = (t, hideAt, at, fv, tv = {}) => { const r = {}; if ("x" in fv) r.x = 0; if ("y" in fv) r.y = 0; if ("scale" in fv) r.scale = 1; if ("opacity" in fv) r.opacity = 1; tl.set(t, fv, hideAt); tl.to(t, { ...r, ...tv }, at); };
+      const show = (t, hideAt, at) => { tl.set(t, { opacity: 0 }, hideAt); tl.set(t, { opacity: 1 }, at); };
+      const hide = (t, at) => { tl.set(t, { opacity: 0 }, at); };
+      const smash = (t, hideAt, at, fv = { y: 20, scale: 1.3, opacity: 0 }) => reveal(t, hideAt, at, fv, { duration: 0.2, ease: "back.out(2)" });
+      const pop = (t, hideAt, at) => reveal(t, hideAt, at, { scale: 0.4, opacity: 0 }, { duration: 0.22, ease: "back.out(2)" });
+
+      // scene cross-fades
+      tl.fromTo("#scene-b", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 6.52);
+      tl.fromTo("#scene-c", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 10.72);
+      tl.fromTo("#scene-d", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 25.48);
+      tl.fromTo("#scene-e", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 33.84);
+
+      // SCENE A - why? two signs, different games
+      hide("#cue-a .ca-free", 0); hide("#cue-a .ca-vs", 0); hide("#cue-a .ca-half", 0); hide("#cue-a .ca-games", 0);
+      show("#cue-a .ca-q", 0, 0.30);
+      show("#cue-a .ca-wit", 0, 0.60);
+      pop("#cue-a .ca-free", 0, 3.86);                                // "the two signs"
+      pop("#cue-a .ca-half", 0, 4.20);
+      smash("#cue-a .ca-vs", 0, 4.50, { scale: 0.4, opacity: 0 });
+      smash("#cue-a .ca-games", 0, 4.96, { scale: 0.5, opacity: 0 }); // "playing different games"
+
+      // SCENE B - THE thesis: cuts the price vs cuts your judgment
+      hide("#cue-b .cb-judge", 6.52);
+      show("#cue-b .cb-wit", 6.52, 6.70);
+      smash("#cue-b .cb-price", 6.52, 7.16, { y: 20, scale: 0.7, opacity: 0 });  // "fifty percent off cuts the price"
+      smash("#cue-b .cb-judge", 6.52, 9.76, { scale: 0.5, opacity: 0 });          // "cuts your JUDGMENT"
+
+      // SCENE C - inner accountant computes, caveat, then switches off
+      hide("#cue-c .cc-ok1", 10.72); hide("#cue-c .cc-ok2", 10.72); hide("#cue-c .cc-off", 10.72); hide("#cue-c .cc-calc2", 10.72);
+      show("#cue-c .cc-ask", 10.72, 10.72);
+      show("#cue-c .cc-wit", 10.72, 10.92);
+      pop("#cue-c .cc-calc", 10.72, 11.30);                           // "asks your brain a question" (calc on)
+      pop("#cue-c .cc-ok1", 10.72, 17.04);                            // "sometimes you genuinely want two"
+      pop("#cue-c .cc-ok2", 10.72, 18.88);                            // "sometimes free really is free money"
+      // "before free switches off your inner accountant" -> calc flips to the dark/off state
+      hide("#cue-c .cc-calc", 23.36);
+      show("#cue-c .cc-calc2", 10.72, 23.36);
+      smash("#cue-c .cc-off", 10.72, 23.36, { scale: 0.5, opacity: 0 });          // "switches off your inner accountant"
+
+      // SCENE D - buy1get1 50% off unmasks to 25% off in a costume
+      hide("#cue-d .cd-not", 25.48); hide("#cue-d .cd-reveal", 25.48); hide("#cue-d .cd-costume", 25.48);
+      show("#cue-d .cd-wit", 25.48, 25.62);
+      pop("#cue-d .cd-sign", 25.48, 27.40);                           // "buy one get one 50% off"
+      show("#cue-d .cd-not", 25.48, 29.46);                           // "that is not free anything"
+      smash("#cue-d .cd-reveal", 25.48, 31.14, { scale: 0.5, opacity: 0 });        // "25% off"
+      smash("#cue-d .cd-costume", 25.48, 32.64, { scale: 0.5, opacity: 0 });       // "in a costume"
+
+      // SCENE E - sign-off
+      hide("#cue-e .ce-diff", 33.84); hide("#cue-e .ce-go", 33.84);
+      show("#cue-e .ce-wit", 33.84, 34.00);
+      show("#cue-e .ce-same", 33.84, 33.84);                          // "same shelf, same product"
+      smash("#cue-e .ce-diff", 33.84, 35.24, { scale: 0.5, opacity: 0 });          // "completely different game"
+      smash("#cue-e .ce-go", 33.84, 36.84, { y: 24, scale: 1.2, opacity: 0 });     // "now go be slightly harder to trick"
+
+      window.__timelines["Section07Payoff"] = tl;
+    </script>
+  </div>
+</body>
+</html>
