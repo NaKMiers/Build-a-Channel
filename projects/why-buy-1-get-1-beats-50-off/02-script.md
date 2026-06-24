@@ -22,6 +22,12 @@ funny." Trimmed ~1026 → ~855 words, raised joke density, added a light cheeky 
 `01-research-pack.md`; math uses the safe abstract `$10 item / $4 cost` example. Timestamps are
 pre-generation estimates; re-align after voiceover.
 
+Rev 2.1 (2026-06-24): owner said Section 2 was confusing — the profit numbers ($1, $2) were stated
+without the subtraction being spoken, so a learner couldn't trace "$5 paid → $1 kept." Section 2
+rewritten to say the math aloud ("Five minus four... the store keeps one dollar") and to keep
+pronouns consistent ("you" = shopper, "the store" = seller). Section 2 only; all other sections
+unchanged. Section 2 voiceover is now stale and must be regenerated.
+
 ## Draft Strategy
 
 - Core thesis: "50% off" and "Buy 1 Get 1 Free" can cost you the same per item, but BOGO keeps the full sticker price, sells two units, and uses the word "free" to switch off your math — so it usually earns the store more and makes you spend more. A discount cuts the price; "free" cuts your judgment.
@@ -43,7 +49,7 @@ pre-generation estimates; re-align after voiceover.
 |   # | Section | Estimate | Words | Purpose |
 | --: | ------- | -------: | ----: | ------- |
 | 1 | Hook: You're The Rabbit | `0:00-0:24` | `78` | Shock + joke: a store gives it free and still earns more than half price. |
-| 2 | Same To You, Not To Them | `0:24-1:05` | `132` | Store-side math: same per-item price, double profit (+ Wedgwood roast). |
+| 2 | Same To You, Not To Them | `0:24-1:09` | `144` | Store-side math (subtraction spoken aloud): same per-item price, double profit (+ Wedgwood roast). |
 | 3 | The Receipt Knows | `1:05-1:44` | `124` | BOGO makes you spend twice as much in one trip. |
 | 4 | The Magic Word | `1:44-2:27` | `134` | "Free" switches off your math (zero-price effect). |
 | 5 | The Price Never Drops | `2:27-3:06` | `124` | BOGO protects the full sticker price (anchoring). |
@@ -86,39 +92,41 @@ Voice revision notes:
 
 ## Section 2: Same To You, Not To Them
 
-Estimated time: `0:24-1:05`
+Estimated time: `0:24-1:09`
 
-Words: `132`
+Words: `144`
 
 Purpose: Reveal the store-side math behind the identical price.
 
-Visual goal: Behind-the-counter view. `$10 item / $4 cost` as stacked coins. Profit meter: one bar under 50% off, two under BOGO. A dusty old shop card for Wedgwood.
+Visual goal: Behind-the-counter view. `$10 item / $4 cost` as stacked coins. Show the subtraction on screen each time: `$5 − $4 = $1` under 50% off, `$10 − $8 = $2` under BOGO, so the "keep" number is visibly derived, not just stated. Profit meter: one bar under 50% off, two under BOGO. A dusty old shop card for Wedgwood.
 
 Narration:
 
 ```text
-Stand behind the counter for a second.
+Stand behind the counter for a second. Look at the store's side.
 
 A product sells for ten dollars. It costs the store four dollars to make.
 
-Fifty percent off? You pay five, grab one, leave. The store keeps one dollar. Fine.
+Fifty percent off. You pay five. The store spent four to make it. Five minus four — the store keeps one dollar.
 
-Buy one, get one free? You pay the full ten and grab two. The store made both, so it spent eight. It keeps two dollars. Double.
+Buy one, get one free. You pay ten and take two. Those two cost the store eight to make. Ten minus eight — the store keeps two dollars. Double.
 
-Same five dollars an item for you. Twice the profit for them. And the price on the sign never moved. You paid full price and walked out feeling clever.
+So it is the same five dollars an item for you. But double the profit for the store. And the sign never changed — it still says ten. You paid full price and felt clever doing it.
 
-Oh, and this trick is about two hundred and fifty years old. A pottery guy named Wedgwood was running it in the seventeen hundreds. So no, you are not the first sucker. You are just the latest.
+Oh, and this trick is old. A pottery guy named Wedgwood ran it back in the seventeen hundreds. So no — you are not the first sucker. You are just the latest.
 ```
 
 Approval check:
 
-- The worked example uses the safe abstract numbers and is easy to follow.
+- The subtraction is now spoken out loud ("Five minus four... the store keeps one dollar"), so a learner can trace how the paid price becomes the kept profit.
+- Pronoun stays consistent: "you" is always the shopper, "the store" is always the seller (no behind-the-counter "you" flip).
 - "Double" is shown as arithmetic on this example, not a universal law.
-- Wedgwood line lands as a roast, not a history lecture.
+- Wedgwood line still lands as a roast, not a history lecture.
 
 Voice revision notes:
 
-- `[slower]` on the four-line math.
+- `[slower]` on both subtraction lines ("Five minus four..." / "Ten minus eight...") — let each number land.
+- `[beat]` before "the store keeps one dollar" and before "the store keeps two dollars" so the result lands after the subtraction.
 - `[beat]` before "You are just the latest."
 
 ## Section 3: The Receipt Knows

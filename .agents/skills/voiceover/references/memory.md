@@ -373,6 +373,35 @@ no for now; it's a Kokoro tts-input authoring technique. But it materially impro
 video, so apply it on all future sections by default and revisit promoting a short "voice rhythm"
 note to `script-learner-voice.md` if the user confirms the style across more videos.
 
+### 2026-06-24 - Kokoro Spells Out Non-Word Letter Clusters (shh -> "s-h-h")
+
+Classification: `Voiceover lesson`
+
+Context:
+On `why-buy-1-get-1-beats-50-off` Section 7, the tts-input contained "shh... relax." The owner heard
+David23 read it as the three letters "s-h-h" instead of the shushing sound. Fix: change the tts-input
+to the real word "shush" ("shush... relax."), which Kokoro pronounces as /ʃʌʃ/ and carries the same
+intent. Canonical `*-script.txt` kept "shh" to match `02-script.md`; only the tts-input diverged, and
+the divergence is documented in the section README.
+
+Lesson:
+HyperFrames Kokoro spells out short non-dictionary letter clusters letter-by-letter (interjections,
+onomatopoeia, initialisms): "shh", "hmm", "pfft", "ugh", "tsk", "brb", etc. can come out as named
+letters or garbled. For anything meant as a SOUND, write a real dictionary word the model knows, or a
+phonetic respelling that maps to normal English phonemes.
+
+Apply next time:
+- When a script line uses an interjection/onomatopoeia/initialism, swap it in the tts-input for a
+  pronounceable real word: shh -> "shush", hmm -> "hmmm" usually works but test, ugh -> "ugh" test,
+  initialisms -> spell the intended delivery ("F B I" if you WANT letters, "fibbie" if not).
+- Keep the canonical `*-script.txt` matching `02-script.md`; put the pronounceable form only in the
+  tts-input and note the divergence in the section README.
+- Quick proof the swap worked: regenerate and listen (and the JSON `durationSeconds` shifts).
+
+Promote to shared memory:
+no; Kokoro tts-input authoring guardrail, not a channel-wide strategy change. Fold into a future
+"voice rhythm / tts quirks" note in `script-learner-voice.md` if more quirks accumulate.
+
 ## Feedback Entry Template
 
 ```markdown

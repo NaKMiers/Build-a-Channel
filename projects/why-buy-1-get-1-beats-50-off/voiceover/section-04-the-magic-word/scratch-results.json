@@ -1,0 +1,22 @@
+{
+  "section": "Section 4: The Magic Word",
+  "status": "final section voice generated",
+  "voice": "am_eric",
+  "voiceName": "David23",
+  "speed": 0.82,
+  "lang": "en-us",
+  "tool": "npx hyperframes@0.6.76 tts",
+  "ttsInput": "tts-inputs/section-04-the-magic-word-tts.txt",
+  "outputPath": "scratch-audio/section-04-the-magic-word-david23-am_eric-0.82.mp3",
+  "durationSeconds": 37.099,
+  "scriptEstimateSeconds": 43,
+  "rev": "rev 2 — 'free' / zero-price effect, number-vs-feeling contrast, Ariely soft-cited, hostage punchline; speed 0.82 to match Sections 1-3 (unified video speed)",
+  "ok": true,
+  "pacingStyle": "approved spacious template: dry hold on 'a little stupid'; A-vs-B parallel for number-vs-feeling with a reset between halves; hold before the 'hostage' payoff",
+  "env": {
+    "pythonPathPrepended": "C:/Users/Anpha Right Choice/AppData/Local/Programs/Python/Python312",
+    "note": "Prepend real Python dir before npx so HyperFrames Kokoro does not hit the Windows Store python stub."
+  },
+  "assetCopy": "none yet; copy MP3 into the section HyperFrames asset folder at render time if needed",
+  "caveat": "Final approved channel voice. Timestamps in 02-script.md are pre-generation estimates; re-align after audio."
+}

@@ -247,6 +247,41 @@ no — sharpens the existing humor-density experiment for this owner; do not cha
 `channel-foundation.md` voice/tone without explicit confirmation. Revisit promoting a "cheeky register"
 note if he confirms the style across more videos.
 
+### 2026-06-24 - Speak The Math Aloud (Learner Clarity On Number Beats)
+
+Classification: `Script draft lesson`
+
+Context:
+On `why-buy-1-get-1-beats-50-off` Section 2, the owner generated the voiceover, listened, and said
+he could not even understand it — the store-side math was confusing. Root cause: the script stated
+the profit results ($1 for 50%-off, $2 for BOGO) without ever speaking the subtraction, so a learner
+heard "you pay five... the store keeps one dollar" with no audible bridge from $5 paid to $1 kept.
+It also flipped pronouns ("Stand behind the counter... you" = store, but "you" = shopper everywhere
+else). Fix: say the arithmetic out loud ("Five minus four — the store keeps one dollar" /
+"Ten minus eight — the store keeps two dollars") and keep "you" = shopper, "the store" = seller.
+
+Lesson:
+For an English-learner channel, any number beat must be VOICED as the operation, not just the result.
+If a profit/price/total is the payoff of a calculation, speak the calculation ("X minus Y —") right
+before the result so the listener can follow by ear, not only by reading the on-screen tag. Also keep
+one stable referent per pronoun across the whole video; a "pretend you're the store" framing that
+reuses "you" for the seller confuses learners who have "you" = viewer everywhere else — prefer naming
+"the store" in third person.
+
+Apply next time:
+- When a section hinges on math, write the subtraction/addition into the narration ("five minus four"),
+  put a `[beat]` before the result, and `[slower]` on the operation line.
+- Mirror it in the Visual goal so the on-screen tag shows the same operation (`$5 − $4 = $1`), not just
+  the answer — audio and screen reinforce the same derivation.
+- Avoid pronoun flips: keep "you" = the viewer/shopper; name other actors ("the store", "the seller")
+  explicitly rather than reusing "you".
+- A clarity rewrite of one section restales only that section's voiceover — regenerate just that
+  section and reset its `04-voiceover.md` row, not the whole video.
+
+Promote to shared memory:
+no for now — strong learner-clarity execution note; revisit promoting a one-line "speak the math
+aloud / one referent per pronoun" rule into `script-learner-voice.md` if it recurs on another video.
+
 ## Feedback Entry Template
 
 Use this shape when updating the skill after user review:
