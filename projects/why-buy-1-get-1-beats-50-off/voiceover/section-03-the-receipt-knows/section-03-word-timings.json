@@ -1,0 +1,595 @@
+{
+  "transcript": "Here's the part the sign hides, what you actually spend. 50% off, you wanted one thing, you paid five, done. By one, get one free to get the free one. You first coughed up the full 10. You spent twice as much in one trip, and you carried home a second when you did not need. That is the whole game. 50% off is a smaller price. By one, get one free is a bigger basket. One saves your money, the other spends it, and smiles at you while it robs you. If you only wanted one, half price was the better deal. You walked right past it because the other sign said the magic word.",
+  "words": [
+    {
+      "word": "Here's",
+      "start": 0,
+      "end": 0.44
+    },
+    {
+      "word": "the",
+      "start": 0.44,
+      "end": 0.56
+    },
+    {
+      "word": "part",
+      "start": 0.56,
+      "end": 0.7
+    },
+    {
+      "word": "the",
+      "start": 0.7,
+      "end": 1.12
+    },
+    {
+      "word": "sign",
+      "start": 1.12,
+      "end": 1.26
+    },
+    {
+      "word": "hides,",
+      "start": 1.26,
+      "end": 1.78
+    },
+    {
+      "word": "what",
+      "start": 1.78,
+      "end": 1.92
+    },
+    {
+      "word": "you",
+      "start": 1.92,
+      "end": 2.06
+    },
+    {
+      "word": "actually",
+      "start": 2.06,
+      "end": 2.46
+    },
+    {
+      "word": "spend.",
+      "start": 2.46,
+      "end": 3.1
+    },
+    {
+      "word": "50",
+      "start": 3.2,
+      "end": 3.42
+    },
+    {
+      "word": "%",
+      "start": 3.42,
+      "end": 3.78
+    },
+    {
+      "word": "off,",
+      "start": 3.78,
+      "end": 4.26
+    },
+    {
+      "word": "you",
+      "start": 4.26,
+      "end": 4.3
+    },
+    {
+      "word": "wanted",
+      "start": 4.3,
+      "end": 4.44
+    },
+    {
+      "word": "one",
+      "start": 4.44,
+      "end": 4.78
+    },
+    {
+      "word": "thing,",
+      "start": 4.78,
+      "end": 5.2
+    },
+    {
+      "word": "you",
+      "start": 5.2,
+      "end": 5.4
+    },
+    {
+      "word": "paid",
+      "start": 5.4,
+      "end": 5.7
+    },
+    {
+      "word": "five,",
+      "start": 5.7,
+      "end": 6.3
+    },
+    {
+      "word": "done.",
+      "start": 6.3,
+      "end": 6.86
+    },
+    {
+      "word": "By",
+      "start": 6.86,
+      "end": 7.06
+    },
+    {
+      "word": "one,",
+      "start": 7.06,
+      "end": 7.38
+    },
+    {
+      "word": "get",
+      "start": 7.38,
+      "end": 7.4
+    },
+    {
+      "word": "one",
+      "start": 7.4,
+      "end": 7.64
+    },
+    {
+      "word": "free",
+      "start": 7.64,
+      "end": 7.86
+    },
+    {
+      "word": "to",
+      "start": 7.86,
+      "end": 8.04
+    },
+    {
+      "word": "get",
+      "start": 8.04,
+      "end": 8.18
+    },
+    {
+      "word": "the",
+      "start": 8.18,
+      "end": 8.4
+    },
+    {
+      "word": "free",
+      "start": 8.4,
+      "end": 8.58
+    },
+    {
+      "word": "one.",
+      "start": 8.58,
+      "end": 8.78
+    },
+    {
+      "word": "You",
+      "start": 8.78,
+      "end": 8.98
+    },
+    {
+      "word": "first",
+      "start": 8.98,
+      "end": 9.2
+    },
+    {
+      "word": "coughed",
+      "start": 9.2,
+      "end": 9.44
+    },
+    {
+      "word": "up",
+      "start": 9.44,
+      "end": 9.6
+    },
+    {
+      "word": "the",
+      "start": 9.6,
+      "end": 9.74
+    },
+    {
+      "word": "full",
+      "start": 9.74,
+      "end": 9.92
+    },
+    {
+      "word": "10.",
+      "start": 9.92,
+      "end": 10.44
+    },
+    {
+      "word": "You",
+      "start": 10.44,
+      "end": 10.62
+    },
+    {
+      "word": "spent",
+      "start": 10.62,
+      "end": 10.86
+    },
+    {
+      "word": "twice",
+      "start": 10.86,
+      "end": 11.12
+    },
+    {
+      "word": "as",
+      "start": 11.12,
+      "end": 11.28
+    },
+    {
+      "word": "much",
+      "start": 11.28,
+      "end": 11.58
+    },
+    {
+      "word": "in",
+      "start": 11.58,
+      "end": 11.86
+    },
+    {
+      "word": "one",
+      "start": 11.86,
+      "end": 12.1
+    },
+    {
+      "word": "trip,",
+      "start": 12.1,
+      "end": 12.38
+    },
+    {
+      "word": "and",
+      "start": 12.38,
+      "end": 12.64
+    },
+    {
+      "word": "you",
+      "start": 12.64,
+      "end": 12.82
+    },
+    {
+      "word": "carried",
+      "start": 12.82,
+      "end": 13.02
+    },
+    {
+      "word": "home",
+      "start": 13.02,
+      "end": 13.36
+    },
+    {
+      "word": "a",
+      "start": 13.36,
+      "end": 13.52
+    },
+    {
+      "word": "second",
+      "start": 13.52,
+      "end": 13.76
+    },
+    {
+      "word": "when",
+      "start": 13.76,
+      "end": 13.98
+    },
+    {
+      "word": "you",
+      "start": 13.98,
+      "end": 14.04
+    },
+    {
+      "word": "did",
+      "start": 14.04,
+      "end": 14.16
+    },
+    {
+      "word": "not",
+      "start": 14.16,
+      "end": 14.34
+    },
+    {
+      "word": "need.",
+      "start": 14.34,
+      "end": 15.12
+    },
+    {
+      "word": "That",
+      "start": 15.12,
+      "end": 15.32
+    },
+    {
+      "word": "is",
+      "start": 15.32,
+      "end": 15.52
+    },
+    {
+      "word": "the",
+      "start": 15.52,
+      "end": 15.58
+    },
+    {
+      "word": "whole",
+      "start": 15.58,
+      "end": 15.84
+    },
+    {
+      "word": "game.",
+      "start": 15.84,
+      "end": 16.32
+    },
+    {
+      "word": "50",
+      "start": 16.32,
+      "end": 16.6
+    },
+    {
+      "word": "%",
+      "start": 16.6,
+      "end": 16.98
+    },
+    {
+      "word": "off",
+      "start": 16.98,
+      "end": 17.28
+    },
+    {
+      "word": "is",
+      "start": 17.28,
+      "end": 17.46
+    },
+    {
+      "word": "a",
+      "start": 17.46,
+      "end": 17.62
+    },
+    {
+      "word": "smaller",
+      "start": 17.62,
+      "end": 17.9
+    },
+    {
+      "word": "price.",
+      "start": 17.9,
+      "end": 18.5
+    },
+    {
+      "word": "By",
+      "start": 18.5,
+      "end": 18.74
+    },
+    {
+      "word": "one,",
+      "start": 18.74,
+      "end": 19.08
+    },
+    {
+      "word": "get",
+      "start": 19.08,
+      "end": 19.1
+    },
+    {
+      "word": "one",
+      "start": 19.1,
+      "end": 19.4
+    },
+    {
+      "word": "free",
+      "start": 19.4,
+      "end": 19.72
+    },
+    {
+      "word": "is",
+      "start": 19.72,
+      "end": 19.9
+    },
+    {
+      "word": "a",
+      "start": 19.9,
+      "end": 20.02
+    },
+    {
+      "word": "bigger",
+      "start": 20.02,
+      "end": 20.2
+    },
+    {
+      "word": "basket.",
+      "start": 20.2,
+      "end": 20.92
+    },
+    {
+      "word": "One",
+      "start": 20.92,
+      "end": 21.2
+    },
+    {
+      "word": "saves",
+      "start": 21.2,
+      "end": 21.46
+    },
+    {
+      "word": "your",
+      "start": 21.46,
+      "end": 21.64
+    },
+    {
+      "word": "money,",
+      "start": 21.64,
+      "end": 22.2
+    },
+    {
+      "word": "the",
+      "start": 22.2,
+      "end": 22.36
+    },
+    {
+      "word": "other",
+      "start": 22.36,
+      "end": 22.62
+    },
+    {
+      "word": "spends",
+      "start": 22.62,
+      "end": 22.86
+    },
+    {
+      "word": "it,",
+      "start": 22.86,
+      "end": 23.22
+    },
+    {
+      "word": "and",
+      "start": 23.22,
+      "end": 23.46
+    },
+    {
+      "word": "smiles",
+      "start": 23.46,
+      "end": 23.74
+    },
+    {
+      "word": "at",
+      "start": 23.74,
+      "end": 24
+    },
+    {
+      "word": "you",
+      "start": 24,
+      "end": 24.22
+    },
+    {
+      "word": "while",
+      "start": 24.22,
+      "end": 24.36
+    },
+    {
+      "word": "it",
+      "start": 24.36,
+      "end": 24.52
+    },
+    {
+      "word": "robs",
+      "start": 24.52,
+      "end": 24.84
+    },
+    {
+      "word": "you.",
+      "start": 24.84,
+      "end": 25.32
+    },
+    {
+      "word": "If",
+      "start": 25.32,
+      "end": 25.54
+    },
+    {
+      "word": "you",
+      "start": 25.54,
+      "end": 25.68
+    },
+    {
+      "word": "only",
+      "start": 25.68,
+      "end": 26
+    },
+    {
+      "word": "wanted",
+      "start": 26,
+      "end": 26.2
+    },
+    {
+      "word": "one,",
+      "start": 26.2,
+      "end": 26.68
+    },
+    {
+      "word": "half",
+      "start": 26.68,
+      "end": 26.9
+    },
+    {
+      "word": "price",
+      "start": 26.9,
+      "end": 27.12
+    },
+    {
+      "word": "was",
+      "start": 27.12,
+      "end": 27.34
+    },
+    {
+      "word": "the",
+      "start": 27.34,
+      "end": 27.48
+    },
+    {
+      "word": "better",
+      "start": 27.48,
+      "end": 27.7
+    },
+    {
+      "word": "deal.",
+      "start": 27.7,
+      "end": 28.42
+    },
+    {
+      "word": "You",
+      "start": 28.42,
+      "end": 28.6
+    },
+    {
+      "word": "walked",
+      "start": 28.6,
+      "end": 28.82
+    },
+    {
+      "word": "right",
+      "start": 28.82,
+      "end": 29.14
+    },
+    {
+      "word": "past",
+      "start": 29.14,
+      "end": 29.5
+    },
+    {
+      "word": "it",
+      "start": 29.5,
+      "end": 29.78
+    },
+    {
+      "word": "because",
+      "start": 29.78,
+      "end": 30.08
+    },
+    {
+      "word": "the",
+      "start": 30.08,
+      "end": 30.34
+    },
+    {
+      "word": "other",
+      "start": 30.34,
+      "end": 30.6
+    },
+    {
+      "word": "sign",
+      "start": 30.6,
+      "end": 31.08
+    },
+    {
+      "word": "said",
+      "start": 31.08,
+      "end": 31.32
+    },
+    {
+      "word": "the",
+      "start": 31.32,
+      "end": 31.62
+    },
+    {
+      "word": "magic",
+      "start": 31.62,
+      "end": 31.82
+    },
+    {
+      "word": "word.",
+      "start": 31.82,
+      "end": 33.56
+    }
+  ]
+}

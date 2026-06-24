@@ -1243,6 +1243,35 @@ Reusable lessons:
 Promote to shared memory:
 no; render execution mechanics for closers (motif-recap, script-literal-final-image, barcode/statement devices).
 
+### 2026-06-24 - Subscription vivid-hook template is the DEFAULT bar for this owner
+
+Classification: `Render lesson`
+
+Context:
+On `why-buy-1-get-1-beats-50-off` Section 3, the first render used plain bases (dark wood table, white
+veg basket) + all-CSS receipt cards + ~780px WIT. Owner rejected it: "backgrounds too simple, WIT too
+small, texts/items too simple — follow subscription-now style, remake completely." Accepted remake:
+5 vivid dark-graded money/coins/curtain bases, a giant kinetic number hero ($5 → red $10), popping
+stamps/toast/banner, a 230px glowing FREE payoff, and GIANT WIT (~1120–1200px) varied per scene.
+
+Lesson:
+For this owner, the `why-everything-is-a-subscription-now` S1 vivid-hook template is the DEFAULT for
+every section, not an option. Apply up front, don't wait for rejection: (1) vivid object base per scene
+with a DARK dramatic grade (brightness ~0.42–0.55, high saturation) + heavy scrim/glow; (2) a varied
+KINETIC hero device per beat (giant number/counter, popping toasts, banner takeover, glowing payoff) —
+plain label/receipt cards only as small supporting strips; (3) WIT GIANT (~1120–1300px, ~1/2 frame),
+varied side/scale/pose per scene; (4) ~5 scenes for a ~30s section with lots of pop/smash motion.
+Money/coins/cash/curtain bases reused across sections (distinct grades) are fine and on-brand.
+
+Apply next time:
+- copy the subscription S1 CSS kit (bignum, toast, stamp, banner, payoff, giant WIT) and adapt content.
+- a giant kinetic NUMBER beats a plain receipt/label card as the hero for any money/count beat.
+- keep devices clear of the giant WIT's face (arrange opposite); fix collisions before handoff.
+
+Promote to shared memory:
+no; the template already lives in `_shared/systems/visual-production.md` + visual-plan memory. This
+confirms it is the per-section DEFAULT for this owner — apply by default, not as a special case.
+
 ## Feedback Entry Template
 
 ```markdown

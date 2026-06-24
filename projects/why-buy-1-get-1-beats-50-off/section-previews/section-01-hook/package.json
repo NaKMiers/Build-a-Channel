@@ -1,0 +1,10 @@
+{
+  "name": "why-buy-1-get-1-beats-50-off-section-01-hook",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx --yes hyperframes@0.6.76 preview",
+    "check": "npx --yes hyperframes@0.6.76 lint && npx --yes hyperframes@0.6.76 validate && npx --yes hyperframes@0.6.76 inspect --at 0.5,2.5,5.0,7.2,9.2,13.3,15.5,20.4,22.0",
+    "render": "npx --yes hyperframes@0.6.76 render"
+  }
+}

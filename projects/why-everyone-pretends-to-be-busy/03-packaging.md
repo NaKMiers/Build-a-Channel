@@ -2,7 +2,7 @@
 
 Video: `Why Everyone Pretends To Be Busy`
 
-Status: `draft packaging`
+Status: `draft packaging (thumbnails refreshed to fixed-structure + MAX drama)`
 
 Source skill: `packaging`
 
@@ -12,10 +12,15 @@ Source files:
 - `01-research-pack.md`
 
 Note:
-No image-generation tool was available this session, so all 5 thumbnails are
-`prompt only / image not generated`. Each prompt is production-ready and reusable in any
-AI image platform. WIT prompts use the current pending channel WIT (white round-headed glasses
-character) matching the restored `Why Cheap Products Keep Getting Worse` thumbnail style.
+Updated `2026-06-24`. The 5 thumbnails were rebuilt to the current skill standard: a FIXED
+structure (variants A and B are split-screen comparisons; C, D, E are full-drama single scenes)
+at MAX shock / clickbait / rage-bait ENERGY / curiosity, while holding the honesty line
+(illustrative numbers only, hooks phrased as `?!` questions, no fake urgency claims, no real app
+logos or brand targeting). No image-generation tool is available this session, so all 5 are
+`prompt only / image not generated`; each prompt is production-ready and reusable, and
+`assets/thumbnails/PROMPTS.md` holds the self-contained, ready-to-paste ChatGPT versions. WIT
+prompts use the current pending channel WIT (white round-headed glasses character) matching the
+restored `Why Cheap Products Keep Getting Worse` thumbnail style.
 
 ## Packaging Brief
 
@@ -23,9 +28,9 @@ character) matching the restored `Why Cheap Products Keep Getting Worse` thumbna
 - Main contradiction: the less time you have for real work, the more important you look
 - Audience question: why do I feel I have to look busy all the time?
 - Recurring motif: calendar cage + fake emergency machine (red dots, `URGENT`) + one untouched `REAL WORK` folder
-- WIT emotion: trapped / overwhelmed / panicked
+- WIT emotion: trapped / overwhelmed / mid-scream panic (cranked to MAX on every thumbnail)
 - First 10 seconds promise: WIT sits to do one real task, then fake urgency ambushes him and the calendar closes like a cage
-- Risk to avoid: drifting into generic productivity advice, rage bait, fake stats, or any real app logo
+- Risk to avoid: drifting into generic productivity advice; fabricated stats; any real app logo; crossing from rage-bait ENERGY into an actual false claim
 
 ## Title Options
 
@@ -53,13 +58,17 @@ Top titles: #1, #2, #3, #4, #5.
 
 ## Thumbnail Concepts
 
-| # | Concept | Dominant object | Label | WIT emotion | Visual contradiction | Prompt / Production notes |
-|---:|---|---|---|---|---|---|
-| A | Real Object Close-Up | Overstuffed calendar wall bursting with red `URGENT` blocks | `ALL URGENT` | (small) panicked | Everything screams urgent; one tiny grey `REAL WORK` note ignored | prompt-only |
-| B | WIT Reaction | WIT trapped inside a cage made of calendar bars | `SO BUSY?` | Trapped / panicked | WIT drowning in alerts while the real task sits untouched | prompt-only (recommended) |
-| C | Before / After Lie | Split board: `LOOKING BUSY` vs `REAL WORK` | `vs` | Deadpan side-eye | Left = chaos of activity; right = one calm person thinking | prompt-only |
-| D | Trap Interface | A phone screen of red notification dots morphing into cage bars | `FAKE EMERGENCY` | Holding-phone panic | A "message" UI dressed up as an emergency | prompt-only |
-| E | Minimal Bold Label | One calendar-cage block + WIT face | `BUSY?` | Suspicious | Single clean object asks the question; mobile-first | prompt-only |
+Fixed structure: A and B are split-screen comparisons of the thesis; C, D, E are full-drama
+single scenes. All five run at MAX intensity (extreme WIT face, one huge shocking element, red
+markup, tight crop) with a short `?!` curiosity hook.
+
+| # | Concept | Type | Dominant object | Label | WIT emotion | Visual contradiction | Prompt / Production notes |
+|---:|---|---|---|---|---|---|---|
+| A | Looking Busy vs Real Work | Comparison | Split board: chaos of red `URGENT` blocks vs one calm glowing task | `FAKE?!` | Shocked on divider | The frantic side is the one that gets praised | prompt-only |
+| B | Full Day vs Nothing Done | Comparison | Split board: packed all-day calendar vs an empty `DONE` column | `HUH?!` | Shocked on divider | 9 hours of activity, zero real progress | prompt-only |
+| C | Calendar Cage Trap | Drama scene | Cage of calendar bars + clock hands trapping WIT, swarmed by red `URGENT` | `TRAPPED?!` | Mid-scream, gripping bars | Drowning in fake urgency while `REAL WORK` sits out of reach | prompt-only (motif anchor) |
+| D | Shock Face-Zoom | Drama scene | WIT's huge screaming face + one giant erupting red `99+` badge | `99+?!` | Maxed-out meltdown | A pile of notifications treated like a real emergency | prompt-only (recommended) |
+| E | Treadmill Metaphor | Drama scene | WIT sprinting on a treadmill of calendar pages, going nowhere | `NOWHERE?!` | Panicked sprint | All-out effort, the real task sits still off the belt | prompt-only |
 
 ## Thumbnail A/B Test
 
@@ -67,17 +76,23 @@ WIT consistency = match to current pending channel WIT (white round-headed glass
 
 | Variant | Style | Image / Path | Prompt ref | Label | WIT pose / emotion | WIT consistency | Score | Strength | Risk | Decision |
 |---|---|---|---|---|---|---|---:|---|---|---|
-| A | Real Object Close-Up | `assets/thumbnails/` prompt-only | Variant A | `ALL URGENT` | small panicked | prompt enforces it | 82 | Pure object read; strong 1-sec clarity | WIT too small to carry emotion | A/B #2 |
-| B | WIT Reaction | `assets/thumbnails/` prompt-only | Variant B | `SO BUSY?` | trapped / panicked (calendar cage) | prompt enforces it | 90 | Emotion + motif + contradiction in one | label "busy" overlaps title #1 | A/B #1 (winner) |
-| C | Before / After Lie | `assets/thumbnails/` prompt-only | Variant C | `vs` | deadpan side-eye | prompt enforces it | 84 | Explains the whole thesis instantly | two-panel can feel busy at mobile size | A/B #3 |
-| D | Trap Interface | `assets/thumbnails/` prompt-only | Variant D | `FAKE EMERGENCY` | holding-phone panic | prompt enforces it | 83 | Internet-native, notification trap | label longest; needs tight kerning | A/B #4 |
-| E | Minimal Bold Label | `assets/thumbnails/` prompt-only | Variant E | `BUSY?` | suspicious | prompt enforces it | 80 | Cleanest mobile read | least curiosity; simplest | A/B #5 |
+| A | Comparison: Looking Busy vs Real Work | `assets/thumbnails/` prompt-only | Variant A | `FAKE?!` | shocked on divider | prompt enforces it | 88 | Explains the whole thesis in one glance | two-panel can crowd at mobile size | A/B #3 |
+| B | Comparison: Full Day vs Nothing Done | `assets/thumbnails/` prompt-only | Variant B | `HUH?!` | shocked on divider | prompt enforces it | 85 | Hits the daily pain (full day, nothing moves) | second comparison; risk of feeling similar to A | A/B #4 |
+| C | Calendar Cage Trap | `assets/thumbnails/` prompt-only | Variant C | `TRAPPED?!` | mid-scream, gripping bars | prompt enforces it | 90 | Signature motif + emotion + contradiction in one | red swarm can clutter if overdone | A/B #2 (motif anchor) |
+| D | Shock Face-Zoom | `assets/thumbnails/` prompt-only | Variant D | `99+?!` | maxed-out meltdown | prompt enforces it | 91 | Highest curiosity; zero title-word overlap; reads at tiny size | drops the calendar motif | A/B #1 (winner) |
+| E | Treadmill Metaphor | `assets/thumbnails/` prompt-only | Variant E | `NOWHERE?!` | panicked sprint | prompt enforces it | 84 | Clever payoff image (activity ≠ value) | slightly more abstract to parse | A/B #5 |
 
-Recommended A/B order: `B -> C -> A -> D -> E`.
+Recommended A/B order: `D -> C -> A -> B -> E`.
 
 WIT consistency note: every prompt below carries the channel WIT identity block. Because no
 images were generated this session, none can be confirmed on-model yet — when generated, score
-down or reject any output whose WIT drifts from the white round-headed glasses style.
+down or reject any output whose WIT drifts from the white round-headed glasses style (no hair,
+no shirt/tie, no shoes).
+
+Honesty line (do NOT cross): numbers stay illustrative (a `99+` notification pile, a packed
+calendar), hooks stay as `?!` curiosity questions, and there is no fake urgency claim ("ONLY
+TODAY"), fabricated statistic, real app logo, or named-brand/person targeting. The goal is
+rage-bait ENERGY, not a lie.
 
 ## Thumbnail Generation Prompts
 
@@ -87,131 +102,131 @@ Shared WIT identity block (included in every prompt):
 Use the channel character WIT in the approved thumbnail style: a simple white round-headed cartoon figure with a thick imperfect black outline, oversized black glasses, expressive eyebrows, small black dot eyes, a simple white body, and a clean bold silhouette. WIT should match the character style from the five restored `Why Cheap Products Keep Getting Worse` thumbnails. Do not give WIT hair, a shirt and tie, shoes, or any extra clothing detail.
 ```
 
-### Variant A: `Real Object Close-Up`
+### Variant A: `Comparison — Looking Busy vs Real Work`
 
 Prompt:
 
 ```text
-A YouTube thumbnail, 1280x720, bold flat 2D illustration, high contrast for mobile. Dominant object: a wall-sized digital calendar bursting with overlapping appointment blocks, every block glowing red and stamped "URGENT" with small red notification dots flying off it. In the bottom corner, one small dull grey sticky note labeled "REAL WORK" sits ignored and untouched. Use the channel character WIT in the approved thumbnail style: a simple white round-headed cartoon figure with a thick imperfect black outline, oversized black glasses, expressive eyebrows, small black dot eyes, a simple white body, and a clean bold silhouette. WIT should match the character style from the five restored `Why Cheap Products Keep Getting Worse` thumbnails. Do not give WIT hair, a shirt and tie, shoes, or any extra clothing detail. WIT is small in the lower third, looking up panicked at the wall of red. Handwritten-style label reading "ALL URGENT" in the upper area, 2 words max, big and readable. Bold flat colors, clean background, strong silhouettes, no logos, no real brand UI. WIT emotion: panicked.
+A YouTube thumbnail, 1280x720, bold flat 2D illustration, MAXIMUM contrast for mobile, split into two halves by a rough hand-drawn vertical divider with a jagged red lightning crack down it. LEFT half, cool blue, a small black angled corner tag reading "REAL WORK": one calm glowing lightbulb or single clean document with lots of empty space, quiet and ignored. RIGHT half, hot orange/red, a small black angled corner tag reading "LOOK BUSY": a chaotic avalanche of overlapping red "URGENT" meeting blocks, red notification dots flying everywhere, frantic motion lines. Use the channel character WIT in the approved thumbnail style: a simple white round-headed cartoon figure with a thick imperfect black outline, oversized black glasses, expressive eyebrows, small black dot eyes, a simple white body, and a clean bold silhouette. WIT should match the character style from the five restored `Why Cheap Products Keep Getting Worse` thumbnails. Do not give WIT hair, a shirt and tie, shoes, or any extra clothing detail. A small WIT stands on the divider, jaw dropped in shock, little comic shock strokes around his head, looking at the busy side. One big red-and-white handwritten center hook reading "FAKE?!" with a rough red underline. Bold flat colors, clean halves, strong silhouettes, no logos, no real brand UI. WIT emotion: shocked.
 ```
 
 Negative prompt / avoid:
 
 ```text
-no real app logos, no Gmail/Slack/Outlook/Teams branding, no real screenshots, no photorealism, no cluttered tiny text, no paragraphs, no extra characters, no hair on WIT, no shirt or tie or shoes on WIT, no watermark, no rage-bait arrows everywhere, no more than 2 words of text, nothing in the bottom subtitle zone.
+no real app logos, no Gmail/Slack/Outlook/Teams branding, no real screenshots, no photorealism, no tiny cluttered text, no paragraphs, more than two short labels, no extra characters, no hair/shirt/tie/shoes on WIT, no watermark, no more than the corner tags plus the one center hook, nothing critical in the bottom subtitle zone.
 ```
 
 Use notes:
 
-- This variant tests the pure-object hypothesis: the calendar alone sells the chaos.
-- Keep WIT small but on-model; if WIT cannot read clearly, prefer Variant B.
+- Tests the "explain the whole thesis in one glance" hypothesis: the praised side is the chaotic one.
+- Mirrors the approved `why-cheap-products` `TODAY vs LATER` comparison layout. Keep each half to ONE clear visual so it survives at mobile size.
 
-### Variant B: `WIT Reaction` (recommended)
+### Variant B: `Comparison — Full Day vs Nothing Done`
 
 Prompt:
 
 ```text
-A YouTube thumbnail, 1280x720, bold flat 2D illustration, high contrast for mobile. WIT is trapped inside a cage whose bars are made of calendar day-columns and clock hands, hands gripping the bars. Red notification dots and small "URGENT" tags swarm around his head like angry bees. Behind the cage, faint and ignored, a single grey folder labeled "REAL WORK". Use the channel character WIT in the approved thumbnail style: a simple white round-headed cartoon figure with a thick imperfect black outline, oversized black glasses, expressive eyebrows, small black dot eyes, a simple white body, and a clean bold silhouette. WIT should match the character style from the five restored `Why Cheap Products Keep Getting Worse` thumbnails. Do not give WIT hair, a shirt and tie, shoes, or any extra clothing detail. WIT fills roughly one third to one half of the frame, emotion reads instantly. Handwritten-style label reading "SO BUSY?" placed clear of WIT's face. Bold flat colors, clean background, strong silhouette, no logos. WIT emotion: trapped and panicked.
+A YouTube thumbnail, 1280x720, bold flat 2D illustration, MAXIMUM contrast for mobile, split into two halves by a rough hand-drawn vertical divider. LEFT half, hot orange/red, a small black angled corner tag reading "ALL DAY": a fully packed calendar wall, every slot a red back-to-back meeting block, stuffed and overwhelming. RIGHT half, cool blue/grey, a small black angled corner tag reading "0 DONE": a nearly empty task board with a single column header "DONE" and nothing under it, plus one tiny wilting plant in the corner. Use the channel character WIT in the approved thumbnail style: a simple white round-headed cartoon figure with a thick imperfect black outline, oversized black glasses, expressive eyebrows, small black dot eyes, a simple white body, and a clean bold silhouette. WIT should match the character style from the five restored `Why Cheap Products Keep Getting Worse` thumbnails. Do not give WIT hair, a shirt and tie, shoes, or any extra clothing detail. A small WIT stands on the divider, eyes bulging, hands on his head in disbelief, little comic shock strokes. One big red-and-white handwritten center hook reading "HUH?!" with a rough red underline. Bold flat colors, no logos, no real brand UI. WIT emotion: shocked / disbelief.
 ```
 
 Negative prompt / avoid:
 
 ```text
-no real app logos or brand UI, no photorealism, no tiny cluttered text, no paragraphs, no extra characters, no hair/shirt/tie/shoes on WIT, no label covering WIT's face or glasses, no watermark, no more than 2 words of text, keep important elements out of the bottom subtitle zone.
+no real logos or brand UI, no photorealism, no tiny text, no paragraphs, no extra characters, no hair/shirt/tie/shoes on WIT, two halves only, do not crowd both halves with text, no watermark, keep labels to the corner tags plus one center hook, nothing critical in the bottom subtitle zone.
 ```
 
 Use notes:
 
-- Recommended winner: combines the calendar-cage motif, WIT emotion, and the real-work contradiction in one read.
-- If pairing with title #1 ("...Busy"), consider swapping the label to "TRAPPED" or "ALL URGENT" to avoid repeating the word "busy" (see title-thumbnail contrast note).
+- Second comparison on a different beat: time-in vs output ("your day is full but nothing moves").
+- Keep it visibly distinct from Variant A — this one is calendar-vs-empty-board, not chaos-vs-calm.
 
-### Variant C: `Before / After Lie`
+### Variant C: `Calendar Cage Trap` (motif anchor)
 
 Prompt:
 
 ```text
-A YouTube thumbnail, 1280x720, bold flat 2D illustration, high contrast for mobile, split into two panels by a rough hand-drawn divider. Left panel labeled "LOOKING BUSY": a chaotic pile of overlapping meeting blocks, red URGENT dots, chat bubbles, and a frantic blurred motion feel. Right panel labeled "REAL WORK": one calm scene, a single lightbulb or single document and lots of empty space. Use the channel character WIT in the approved thumbnail style: a simple white round-headed cartoon figure with a thick imperfect black outline, oversized black glasses, expressive eyebrows, small black dot eyes, a simple white body, and a clean bold silhouette. WIT should match the character style from the five restored `Why Cheap Products Keep Getting Worse` thumbnails. Do not give WIT hair, a shirt and tie, shoes, or any extra clothing detail. WIT stands on the divider doing a deadpan side-eye between the two panels. Small handwritten "vs" on the divider. Bold flat colors, no logos. WIT emotion: deadpan side-eye.
+A YouTube thumbnail, 1280x720, bold flat 2D illustration, MAXIMUM drama, high contrast for mobile, tight crop. WIT is trapped inside a cage whose bars are made of calendar day-columns and bent clock hands, both hands gripping the bars and shaking them. Red notification dots and small "URGENT" tags swarm around his head like angry bees, with thick red circles and fat red arrows pointing at him. Behind the cage, faint and out of reach, a single grey glowing folder labeled "REAL WORK". Use the channel character WIT in the approved thumbnail style: a simple white round-headed cartoon figure with a thick imperfect black outline, oversized black glasses, expressive eyebrows, small black dot eyes, a simple white body, and a clean bold silhouette. WIT should match the character style from the five restored `Why Cheap Products Keep Getting Worse` thumbnails. Do not give WIT hair, a shirt and tie, shoes, or any extra clothing detail. Crank WIT's expression all the way up: bulging eyes, jaw ripped wide open mid-scream, sweat spraying off his head, trembling, comic shock-burst lines, a hot red rage glow behind him. WIT fills roughly one third to one half of the frame. One big handwritten-style hook reading "TRAPPED?!" placed clear of WIT's face, with a rough red double-underline. Bold flat colors, clean background, strong silhouette, no logos. WIT emotion: trapped, mid-scream panic.
 ```
 
 Negative prompt / avoid:
 
 ```text
-no real logos or brand UI, no photorealism, no tiny text, no paragraphs, no extra characters, no hair/shirt/tie/shoes on WIT, two panels only, do not crowd both panels with text, no watermark, keep labels short, nothing critical in the bottom subtitle zone.
+no real app logos or brand UI, no photorealism, no tiny cluttered text, no paragraphs, no extra characters, no hair/shirt/tie/shoes on WIT, no label covering WIT's face or glasses, no watermark, no more than 1-2 words of text, keep important elements out of the bottom subtitle zone.
 ```
 
 Use notes:
 
-- Tests the "explain the whole thesis in one glance" hypothesis.
-- Two panels can get busy at mobile size; keep each panel to one clear visual.
+- Carries the channel's signature calendar-cage motif at full drama; strongest single-image story.
+- If pairing with title #1, `TRAPPED?!` avoids repeating the word "busy" (good title-thumbnail contrast).
 
-### Variant D: `Trap Interface`
+### Variant D: `Shock Face-Zoom` (recommended)
 
 Prompt:
 
 ```text
-A YouTube thumbnail, 1280x720, bold flat 2D illustration, high contrast for mobile. Dominant object: a large generic smartphone (no brand) whose screen is covered in glowing red notification dots and "URGENT" banners, and the screen's edges bend into cage bars trapping a tiny WIT inside the phone. Use the channel character WIT in the approved thumbnail style: a simple white round-headed cartoon figure with a thick imperfect black outline, oversized black glasses, expressive eyebrows, small black dot eyes, a simple white body, and a clean bold silhouette. WIT should match the character style from the five restored `Why Cheap Products Keep Getting Worse` thumbnails. Do not give WIT hair, a shirt and tie, shoes, or any extra clothing detail. WIT presses both hands on the inside of the screen, panicked. Handwritten-style label "FAKE EMERGENCY" in the upper area, kept tight and readable. Bold flat colors, clean background, no real app logos or recognizable real UI. WIT emotion: holding-phone panic.
+A YouTube thumbnail, 1280x720, bold flat 2D illustration, MAXIMUM drama, extreme close-up. WIT's head and shoulders fill most of the frame in a total meltdown: eyes bulging huge, jaw ripped wide open mid-scream, sweat spraying off his head, trembling, comic shock-burst lines radiating out, a hot red rage glow behind him. Right next to his face, ONE giant glowing red app-notification badge erupting with the number "99+", oversized, with little red dots bursting off it and a thick red circle slammed around it. Use the channel character WIT in the approved thumbnail style: a simple white round-headed cartoon figure with a thick imperfect black outline, oversized black glasses, expressive eyebrows, small black dot eyes, a simple white body, and a clean bold silhouette. WIT should match the character style from the five restored `Why Cheap Products Keep Getting Worse` thumbnails. Do not give WIT hair, a shirt and tie, shoes, or any extra clothing detail. One big handwritten-style hook reading "99+?!" placed clear of his face, rough red double-underline. Bold flat colors, clean background, very high contrast, no logos, no real app UI. WIT emotion: maxed-out screaming panic.
 ```
 
 Negative prompt / avoid:
 
 ```text
-no real app logos, no recognizable real app UI, no Gmail/Slack/WhatsApp/iOS look-alikes, no photorealism, no tiny cluttered text, no paragraphs, no extra characters, no hair/shirt/tie/shoes on WIT, no watermark, keep label to 2 words, nothing critical in the bottom subtitle zone.
+no real app logos, no recognizable real app UI, no iOS/Android look-alike badges with brand styling, no photorealism, no tiny cluttered text, no paragraphs, no extra characters, no hair/shirt/tie/shoes on WIT, no label covering his face or glasses, no watermark, keep text to the one hook, nothing critical in the bottom subtitle zone.
 ```
 
 Use notes:
 
-- Internet-native angle; strong for the "tools invented emergencies" reason.
-- "FAKE EMERGENCY" is the longest label; ensure tight kerning and large size.
+- Recommended winner: a loud single-face shock-zoom that does NOT repeat any title word — best title-thumbnail contrast and reads instantly at tiny mobile size.
+- `99+` is an illustrative notification pile (honest), not a cited statistic. Keep the badge generic — no real app's exact badge style.
 
-### Variant E: `Minimal Bold Label`
+### Variant E: `Treadmill Metaphor`
 
 Prompt:
 
 ```text
-A YouTube thumbnail, 1280x720, bold flat 2D illustration, maximum mobile readability, lots of empty space. One dominant object: a single oversized calendar block with bars across it like a tiny cage, one red URGENT dot in the corner. Use the channel character WIT in the approved thumbnail style: a simple white round-headed cartoon figure with a thick imperfect black outline, oversized black glasses, expressive eyebrows, small black dot eyes, a simple white body, and a clean bold silhouette. WIT should match the character style from the five restored `Why Cheap Products Keep Getting Worse` thumbnails. Do not give WIT hair, a shirt and tie, shoes, or any extra clothing detail. Just WIT's head and shoulders peeking from behind or beside the calendar block with a suspicious look. One big handwritten-style word: "BUSY?". Bold flat colors, single clean background color, very high contrast, no logos. WIT emotion: suspicious.
+A YouTube thumbnail, 1280x720, bold flat 2D illustration, MAXIMUM drama, high contrast for mobile. WIT sprints flat-out on a treadmill whose rolling belt is made of tearing calendar pages and day-blocks, going absolutely nowhere. Big motion lines, sweat spraying off him, eyes bulging, mouth open mid-gasp, a hot red rage glow. Red "URGENT" tags and notification dots fly off the spinning belt. Just off the front edge of the treadmill, standing still and glowing, one clean golden trophy or folder labeled "REAL WORK" that he can never reach, with a fat red arrow pointing to how close-yet-unreachable it is. Use the channel character WIT in the approved thumbnail style: a simple white round-headed cartoon figure with a thick imperfect black outline, oversized black glasses, expressive eyebrows, small black dot eyes, a simple white body, and a clean bold silhouette. WIT should match the character style from the five restored `Why Cheap Products Keep Getting Worse` thumbnails. Do not give WIT hair, a shirt and tie, shoes, or any extra clothing detail. One big handwritten-style hook reading "NOWHERE?!" with a rough red underline. Bold flat colors, clean background, no logos. WIT emotion: panicked, all-out sprint.
 ```
 
 Negative prompt / avoid:
 
 ```text
-no real logos, no photorealism, no extra objects, no clutter, no paragraphs, no extra characters, no hair/shirt/tie/shoes on WIT, no watermark, exactly one word of text, nothing critical in the bottom subtitle zone.
+no real logos or brand UI, no photorealism, no tiny text, no paragraphs, no extra characters, no hair/shirt/tie/shoes on WIT, no watermark, keep text to the one hook, do not clutter the belt with words, nothing critical in the bottom subtitle zone.
 ```
 
 Use notes:
 
-- Simplest mobile-first control variant for the A/B test.
-- Lowest curiosity; useful as a clean baseline to test against B.
+- Lands the payoff insight (activity ≠ value) as one bold image; good change-of-pace from the cage.
+- Slightly more abstract — keep the treadmill-of-calendar-pages reading instantly clear.
 
 ## Title-Thumbnail Packages
 
 | Rank | Title | Thumbnail concept | Why it works | Score | Decision |
 |---:|---|---|---|---:|---|
-| 1 | Why Everyone Pretends To Be Busy | Variant B (WIT trapped in calendar cage), label `TRAPPED` | Title names hidden logic; thumbnail shows the feeling; label avoids repeating "busy" | 90 | Recommended |
-| 2 | Why Looking Busy Beats Doing Work | Variant C (Before/After), label `vs` | Title + thumbnail both carry the contradiction cleanly | 88 | Strong A/B alt |
-| 3 | The Real Reason Everyone Is "So Busy" | Variant A (calendar wall of URGENT), label `ALL URGENT` | Curiosity title + object chaos; good contrast | 85 | Test |
-| 4 | Why "I'm Busy" Became The New Flex | Variant D (phone trap), label `FAKE EMERGENCY` | Internet-native; status + tools angle | 83 | Test |
-| 5 | Why Everyone Is Busy But Nobody Gets Anything Done | Variant E (minimal), label `BUSY?` | Pain title + clean control thumbnail | 81 | Baseline |
+| 1 | Why Everyone Pretends To Be Busy | Variant D (shock face-zoom + giant `99+`), label `99+?!` | Title names the hidden logic; thumbnail screams the feeling with zero word overlap | 91 | Recommended |
+| 2 | Why Everyone Pretends To Be Busy | Variant C (calendar-cage trap), label `TRAPPED?!` | Signature motif; emotion + contradiction in one frame, no "busy" repeat | 90 | Strong A/B alt (motif anchor) |
+| 3 | Why Looking Busy Beats Doing Work | Variant A (Looking Busy vs Real Work), label `FAKE?!` | Title + thumbnail both carry the contradiction cleanly | 88 | Test |
+| 4 | Why Your Day Is Full But Nothing Moves | Variant B (Full Day vs Nothing Done), label `HUH?!` | Pain title matches the time-vs-output comparison | 85 | Test |
+| 5 | Why Looking Busy Is Safer Than Thinking | Variant E (treadmill), label `NOWHERE?!` | Payoff-line title + payoff-image metaphor | 84 | Baseline |
 
 ## Recommended Package
 
 - Title: `Why Everyone Pretends To Be Busy`
-- Thumbnail concept: Variant B — WIT trapped inside a calendar-bar cage, swarmed by red `URGENT` alerts, one ignored `REAL WORK` folder behind him
-- Thumbnail label: `TRAPPED` (swap from `SO BUSY?` so the thumbnail does not repeat the title's word "busy")
-- Dominant object: calendar-bar cage
-- WIT emotion: trapped / panicked
-- Visual contradiction: drowning in fake urgency while the one real task is ignored
-- First 10 seconds payoff: WIT tries one real task, urgency ambushes him, the calendar closes like a cage — pays off the trapped thumbnail within the hook
-- Packaging score: `90/100`
-- Decision: `Go` (pending thumbnail image generation and on-model WIT check)
+- Thumbnail concept: Variant D — WIT's screaming face huge in frame next to one giant erupting red `99+` notification badge
+- Thumbnail label: `99+?!`
+- Dominant object: giant `99+` notification badge
+- WIT emotion: maxed-out screaming panic
+- Visual contradiction: a pile of notifications treated like a real emergency (fake urgency feels like real work)
+- First 10 seconds payoff: WIT tries one real task, fake urgency ambushes him and the calendar closes like a cage — pays off the screaming-overwhelm promise within the hook
+- Packaging score: `91/100`
+- Decision: `Go` (pending thumbnail image generation and on-model WIT check). Run Variant C as the motif-anchor A/B alternate.
 
 ## Thumbnail Comparison Notes
 
-- Best thumbnail: Variant B (emotion + motif + contradiction in one read)
-- Best prompt to reuse manually: Variant B
-- Most clickable: Variant B, then Variant C
-- Clearest for mobile: Variant E, then Variant B
-- Biggest risk: label/title word overlap on B (fix by using `TRAPPED` or `ALL URGENT`); two-panel clutter on C at small size
-- Recommended A/B order: `B -> C -> A -> D -> E`
+- Best thumbnail: Variant D (shock face-zoom) for clickability; Variant C for signature motif
+- Best prompt to reuse manually: Variant D
+- Most clickable: Variant D, then Variant C
+- Clearest for mobile: Variant D (one face + one number), then Variant C
+- Biggest risk: D drops the calendar motif (covered by running C alongside it); A and B can feel similar (keep their visuals distinct — chaos-vs-calm vs calendar-vs-empty-board)
+- Recommended A/B order: `D -> C -> A -> B -> E`
 
 ## YouTube Description
 
@@ -274,18 +289,18 @@ Be honest: how many times have you answered "How are you?" with "Busy"? 😅 Wha
 
 ## Scorecard Notes
 
-Using `.agents/_shared/systems/topic-packaging-hooks.md` packaging scorecard (out of 100) for the recommended package:
+Using `.agents/_shared/systems/topic-packaging-hooks.md` packaging scorecard (out of 100) for the recommended package (Title #1 + Variant D):
 
-- 1-second clarity (15): 14 — calendar cage + trapped WIT reads instantly
-- Curiosity gap (20): 18 — "pretends" implies a hidden reason
-- Visual contradiction (15): 14 — fake urgency vs ignored real work
-- WIT emotion (10): 10 — trapped/panicked is unmistakable
+- 1-second clarity (15): 14 — screaming WIT + giant `99+` reads instantly
+- Curiosity gap (20): 19 — "pretends" + a screaming face with no explanation forces the question
+- Visual contradiction (15): 13 — a pile of notifications treated like a real emergency (slightly less literal than the cage, covered by C)
+- WIT emotion (10): 10 — maxed-out meltdown is unmistakable
 - Title strength (15): 13 — clear, learner-friendly, slightly crowded niche
-- Title-thumbnail contrast (10): 9 — fixed by using `TRAPPED`/`ALL URGENT` label, not "busy"
-- First 10 seconds promise (10): 9 — hook pays off the trapped image directly
+- Title-thumbnail contrast (10): 10 — thumbnail repeats no title word
+- First 10 seconds promise (10): 9 — hook pays off the overwhelm image directly
 - Learner-friendly clarity (5): 5 — simple words, one clear idea
-- Total: `90/100`
-- Hard fails: none triggered
+- Total: `91/100`
+- Hard fails: none triggered (numbers illustrative, hooks are `?!` questions, no fake urgency claim, no real logos)
 
 ## Next Step Boundary
 

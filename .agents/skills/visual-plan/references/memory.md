@@ -774,6 +774,33 @@ Apply next time:
 Promote to shared memory:
 no; the Core template already lives in `_shared/systems/visual-production.md` and the 2026-06-23 entries above.
 
+### 2026-06-24 - "Funnier" ≠ a cute mascot prop (keep literal on-beat objects)
+
+Classification: `Visual plan lesson`
+
+Context:
+On `why-buy-1-get-1-beats-50-off` Section 2 (the store-side math), the owner first said the bases
+"aren't good, find more suitable and funny images." I swapped the cash register (Scenes A/D) for a
+bright pink piggy bank (a cute money mascot). The owner rejected it: "back to previous images,
+currently even worse," and we restored the register/cash/coins/Wedgwood set.
+
+Lesson:
+For this owner, "make it funnier" does NOT mean substitute a generic cute prop (piggy bank, mascot
+object) for the literal, on-beat object. The humor should come from WIT + labels + the dry framing,
+while the base stays a real, literal object that matches the spoken beat (a counter/register for
+"behind the counter," money for the money math, the actual Wedgwood piece for Wedgwood). A cute
+stand-in that doesn't literally depict the line reads as worse, not funnier.
+
+Apply next time:
+- when asked for "funnier" backgrounds, first improve the LITERAL base (clearer/brighter/better
+  composed real object of the same thing), and add the funny via WIT pose + label/markup, not via a
+  cute mascot swap.
+- offer a mascot/abstract prop only as an explicit option, not as the default fix.
+- keep already-approved literal bases (e.g. the real Wedgwood jasperware) unless the owner names them.
+
+Promote to shared memory:
+no for now; a per-owner taste signal. Revisit if it recurs across videos.
+
 ## Feedback Entry Template
 
 ```markdown
