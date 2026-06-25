@@ -1,0 +1,7 @@
+file 'C:/ME/THINGS/Build a Channel/projects/3-why-everything-is-a-subscription-now/section-previews/section-01-hook/section-01-hook-david23-am_eric-0.8.mp3'
+file 'C:/ME/THINGS/Build a Channel/projects/3-why-everything-is-a-subscription-now/section-previews/section-02-reframe/section-02-reframe-david23-am_eric-0.8.mp3'
+file 'C:/ME/THINGS/Build a Channel/projects/3-why-everything-is-a-subscription-now/section-previews/section-03-the-spread/section-03-the-spread-david23-am_eric-0.8.mp3'
+file 'C:/ME/THINGS/Build a Channel/projects/3-why-everything-is-a-subscription-now/section-previews/section-04-why-companies-love-it/section-04-why-companies-love-it-david23-am_eric-0.8.mp3'
+file 'C:/ME/THINGS/Build a Channel/projects/3-why-everything-is-a-subscription-now/section-previews/section-05-free-trial-countdown/section-05-free-trial-countdown-david23-am_eric-0.8.mp3'
+file 'C:/ME/THINGS/Build a Channel/projects/3-why-everything-is-a-subscription-now/section-previews/section-06-easy-in-no-way-out/section-06-easy-in-no-way-out-david23-am_eric-0.8.mp3'
+file 'C:/ME/THINGS/Build a Channel/projects/3-why-everything-is-a-subscription-now/section-previews/section-07-payoff/section-07-payoff-david23-am_eric-0.8.mp3'

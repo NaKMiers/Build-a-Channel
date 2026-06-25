@@ -50,9 +50,9 @@ Read these before generating or persisting topic ideas:
 
 For quality calibration, inspect recent project examples when available, especially:
 
-- `projects/why-everyone-pretends-to-be-busy/02-script.md`
-- `projects/why-everyone-pretends-to-be-busy/03-packaging.md`
-- `projects/why-everyone-pretends-to-be-busy/04-visual-plan.md`
+- `projects/2-why-everyone-pretends-to-be-busy/02-script.md`
+- `projects/2-why-everyone-pretends-to-be-busy/03-packaging.md`
+- `projects/2-why-everyone-pretends-to-be-busy/04-visual-plan.md`
 
 ## Reference Browsing Requirement
 

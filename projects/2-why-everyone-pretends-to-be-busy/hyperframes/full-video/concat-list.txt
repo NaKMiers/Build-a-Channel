@@ -1,0 +1,7 @@
+file 'C:/ME/THINGS/Build a Channel/projects/2-why-everyone-pretends-to-be-busy/voiceover/section-01-hook-the-busy-trap/scratch-audio/section-01-hook-the-busy-trap-david23-am_eric-0.84.mp3'
+file 'C:/ME/THINGS/Build a Channel/projects/2-why-everyone-pretends-to-be-busy/voiceover/section-02-reframe-looking-busy-vs-doing-work/scratch-audio/section-02-reframe-looking-busy-vs-doing-work-david23-am_eric-0.84.mp3'
+file 'C:/ME/THINGS/Build a Channel/projects/2-why-everyone-pretends-to-be-busy/voiceover/section-03-busy-became-a-status-symbol/scratch-audio/section-03-busy-became-a-status-symbol-david23-am_eric-0.84.mp3'
+file 'C:/ME/THINGS/Build a Channel/projects/2-why-everyone-pretends-to-be-busy/voiceover/section-04-your-apps-invented-emergencies/scratch-audio/section-04-your-apps-invented-emergencies-david23-am_eric-0.86.mp3'
+file 'C:/ME/THINGS/Build a Channel/projects/2-why-everyone-pretends-to-be-busy/voiceover/section-05-visible-work-beats-quiet-thinking/scratch-audio/section-05-visible-work-beats-quiet-thinking-david23-am_eric-0.86.mp3'
+file 'C:/ME/THINGS/Build a Channel/projects/2-why-everyone-pretends-to-be-busy/voiceover/section-06-im-busy-is-a-shield/scratch-audio/section-06-im-busy-is-a-shield-david23-am_eric-0.86.mp3'
+file 'C:/ME/THINGS/Build a Channel/projects/2-why-everyone-pretends-to-be-busy/voiceover/section-07-payoff-activity-is-not-value/scratch-audio/section-07-payoff-activity-is-not-value-david23-am_eric-0.86.mp3'

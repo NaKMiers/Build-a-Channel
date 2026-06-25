@@ -171,7 +171,7 @@ Always write the prompts into a ready-to-paste `projects/<slug>/assets/thumbnail
 - each variant is a SELF-CONTAINED block the user can paste alone (no cross-references needed to generate)
 - ChatGPT/DALL·E has no separate negative-prompt field, so fold the avoid-list INTO the prompt as `Do NOT include: ...`
 - assume the user attaches the WIT neutral pose (`.agents/_shared/assets/wit/poses/wit-pose-neutral-front.png`) as the reference image; open each prompt with "use the cartoon character in the attached reference image as WIT — keep his art style, only change his pose/expression"
-- for the two comparison variants, tell the user to ALSO attach the approved comparison thumbnail (`projects/why-cheap-products-keep-getting-worse/assets/thumbnails/variant-c-generated.png`) as a layout reference
+- for the two comparison variants, tell the user to ALSO attach the approved comparison thumbnail (`projects/1-why-cheap-products-keep-getting-worse/assets/thumbnails/variant-c-generated.png`) as a layout reference
 - include a short how-to (attach images, ask for 16:9 1280x720, re-roll line if WIT drifts) and the A/B generate-first order
 - name each output file (`variant-a-generated.png` … `variant-e-generated.png`) and the reject rule (no hair / shirt-tie / shoes = off-model WIT)
 

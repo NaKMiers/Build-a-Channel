@@ -49,7 +49,7 @@ Read these before creating or updating a script:
 11. `.agents/_shared/systems/script-learner-voice.md`
 12. `.agents/_shared/systems/visual-production.md`
 13. `references/memory.md`
-14. `projects/why-everyone-pretends-to-be-busy/02-script.md` when available, as the current sectioned script reference
+14. `projects/2-why-everyone-pretends-to-be-busy/02-script.md` when available, as the current sectioned script reference
 15. the chosen project files:
     - `projects/<slug>/00-topic-intake.md`
     - `projects/<slug>/01-research-pack.md`

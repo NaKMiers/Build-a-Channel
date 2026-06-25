@@ -1,0 +1,528 @@
+1
+00:00:00,000 --> 00:00:01,160
+Hỏi nhanh nhé.
+
+2
+00:00:01,160 --> 00:00:03,980
+Bạn đang trả tiền cho bao nhiêu gói đăng ký ngay lúc này?
+
+3
+00:00:03,980 --> 00:00:06,180
+Dù bạn đoán con số nào... thực tế còn cao hơn.
+
+4
+00:00:06,180 --> 00:00:07,220
+Lúc nào cũng cao hơn.
+
+5
+00:00:07,220 --> 00:00:10,040
+Ngay lúc này, tiền đang lặng lẽ rời khỏi tài khoản của bạn mỗi tháng —
+
+6
+00:00:10,040 --> 00:00:11,740
+cho những thứ bạn quên là mình đang sở hữu.
+
+7
+00:00:11,740 --> 00:00:14,440
+Một ứng dụng. Một bản dùng thử "miễn phí" đã hết miễn phí từ lâu.
+
+8
+00:00:14,440 --> 00:00:15,920
+Một bộ phim bạn xem đúng một lần.
+
+9
+00:00:15,920 --> 00:00:18,620
+Bản dùng thử miễn phí của việc sở hữu đồ đạc vừa hết hạn.
+
+10
+00:00:18,620 --> 00:00:20,240
+Bạn không còn mua đồ nữa.
+
+11
+00:00:20,240 --> 00:00:23,620
+Bạn thuê cả cuộc đời mình. Từng khoản thanh toán một.
+
+12
+00:00:23,620 --> 00:00:26,660
+Giờ thì — đây không phải video nói rằng gói đăng ký là xấu xa
+
+13
+00:00:26,660 --> 00:00:28,920
+và bạn nên ném điện thoại xuống hồ.
+
+14
+00:00:28,920 --> 00:00:31,340
+Một số gói thực sự hữu ích. Bình tĩnh nào.
+
+15
+00:00:31,340 --> 00:00:33,060
+Đây là chuyện gì đó kỳ lạ hơn.
+
+16
+00:00:33,060 --> 00:00:34,340
+Ngày xưa chúng ta sở hữu đồ đạc.
+
+17
+00:00:34,340 --> 00:00:36,440
+Bạn trả tiền một lần, món đồ là của bạn, hết chuyện.
+
+18
+00:00:36,440 --> 00:00:38,380
+Một giao dịch đẹp đẽ, nhàm chán.
+
+19
+00:00:38,380 --> 00:00:39,800
+Gói đăng ký thì khác.
+
+20
+00:00:39,800 --> 00:00:42,200
+Bạn không mua món đồ. Bạn thuê quyền truy cập vào nó.
+
+21
+00:00:42,200 --> 00:00:44,140
+Trả tiền mỗi tháng, màn hình sáng lên.
+
+22
+00:00:44,140 --> 00:00:46,920
+Lỡ một kỳ thanh toán, và chính thiết bị của bạn làm thế này —
+
+23
+00:00:46,920 --> 00:00:48,060
+một cái ổ khóa nhỏ hiện ra,
+
+24
+00:00:48,060 --> 00:00:51,340
+và nó nhìn bạn như một ông bố thất vọng.
+
+25
+00:00:51,340 --> 00:00:53,220
+Vậy đây mới là câu hỏi thật sự.
+
+26
+00:00:53,220 --> 00:00:56,420
+Làm sao mà gần như mọi thứ — ứng dụng, phim ảnh, phần mềm,
+
+27
+00:00:56,420 --> 00:00:58,280
+thậm chí cả nút bấm trong xe hơi của bạn —
+
+28
+00:00:58,280 --> 00:01:01,820
+lại lặng lẽ biến thành thứ bạn thuê thay vì thứ bạn sở hữu?
+
+29
+00:01:01,820 --> 00:01:04,340
+Nó bắt đầu lặng lẽ, từ phần mềm.
+
+30
+00:01:04,340 --> 00:01:07,920
+Chương trình bạn từng mua một lần, đóng hộp, biến thành gói trả theo tháng.
+
+31
+00:01:07,920 --> 00:01:08,660
+Vẫn chương trình đó.
+
+32
+00:01:08,660 --> 00:01:10,760
+Giờ thì nó chỉ... bắt cóc chính mình làm con tin.
+
+33
+00:01:10,760 --> 00:01:12,820
+Ngừng trả tiền, là nó xám lại, kiểu,
+
+34
+00:01:12,820 --> 00:01:14,540
+"trả tiền đi, không thì tài liệu này tiêu đời."
+
+35
+00:01:14,540 --> 00:01:16,360
+Rồi màn hình của bạn cũng nhập cuộc.
+
+36
+00:01:16,360 --> 00:01:17,780
+Nhạc, phim, chương trình —
+
+37
+00:01:17,780 --> 00:01:19,800
+bạn không sở hữu nổi một bài hát hay một bộ phim nào.
+
+38
+00:01:19,800 --> 00:01:21,220
+Bạn thuê một thư viện khổng lồ,
+
+39
+00:01:21,220 --> 00:01:24,760
+và ngay giây bạn ngừng trả tiền, tất cả biến mất.
+
+40
+00:01:24,760 --> 00:01:26,180
+Bụp. Góc nhìn: bạn chẳng sở hữu gì cả.
+
+41
+00:01:26,180 --> 00:01:28,980
+Và chẳng bao giờ chỉ là một gói. Là năm gói.
+
+42
+00:01:28,980 --> 00:01:31,960
+Một cho phim bộ, một cho phim lẻ, một cho mấy phim bộ khác,
+
+43
+00:01:31,960 --> 00:01:35,280
+một cho nhạc, và một cho ứng dụng sắp xếp các ứng dụng còn lại.
+
+44
+00:01:35,280 --> 00:01:36,780
+Mỗi gói thì nhỏ.
+
+45
+00:01:36,780 --> 00:01:39,820
+Cộng lại? Lớn hơn cả hóa đơn truyền hình cáp ngày xưa mà ai cũng bỏ chạy.
+
+46
+00:01:39,820 --> 00:01:42,880
+Chúng ta thoát một ngục tối rồi xây năm cái nhỏ hơn.
+
+47
+00:01:42,880 --> 00:01:44,740
+Và nó không dừng lại ở màn hình.
+
+48
+00:01:44,740 --> 00:01:48,260
+Một số hãng xe đã thử đưa ghế sưởi —
+
+49
+00:01:48,260 --> 00:01:50,840
+ghế đã có sẵn trong chiếc xe bạn mua —
+
+50
+00:01:50,840 --> 00:01:52,280
+vào sau một khoản phí hàng tháng.
+
+51
+00:01:52,280 --> 00:01:55,880
+Bản dùng thử miễn phí của cái mông ấm đã hết hạn.
+
+52
+00:01:55,880 --> 00:01:58,820
+Vậy tại sao ai cũng chuyển sang kiểu này? Đơn giản thôi.
+
+53
+00:01:58,820 --> 00:02:00,860
+Lần theo dòng tiền. Bao giờ cũng là tiền.
+
+54
+00:02:00,860 --> 00:02:02,440
+Hãy tưởng tượng bạn bán một cái máy pha cà phê.
+
+55
+00:02:02,440 --> 00:02:05,380
+Bạn bán được một lần, bạn nói cảm ơn, rồi bạn chờ —
+
+56
+00:02:05,380 --> 00:02:07,820
+có khi nhiều năm — hy vọng người đó quay lại.
+
+57
+00:02:07,820 --> 00:02:10,820
+Giờ thử tưởng tượng thay vào đó họ trả bạn một ít mỗi tháng.
+
+58
+00:02:10,820 --> 00:02:13,060
+Tự động. Có thể là mãi mãi.
+
+59
+00:02:13,060 --> 00:02:14,720
+Kể cả những tháng họ chẳng động đến món đồ.
+
+60
+00:02:14,720 --> 00:02:16,680
+Bạn muốn sở hữu việc kinh doanh nào hơn?
+
+61
+00:02:16,680 --> 00:02:17,980
+Ừ. Tôi cũng vậy.
+
+62
+00:02:17,980 --> 00:02:20,380
+Khách mua một lần thì đáng giá một chút.
+
+63
+00:02:20,380 --> 00:02:22,800
+Khách trả tiền mỗi tháng thì đáng giá rất nhiều —
+
+64
+00:02:22,800 --> 00:02:24,820
+vì khoản tiền đó cứ chảy về đều đều.
+
+65
+00:02:24,820 --> 00:02:26,320
+Như mưa. Hay như họ hàng.
+
+66
+00:02:26,320 --> 00:02:29,540
+Đây là từ thần kỳ đứng sau mọi thứ bây giờ: định kỳ.
+
+67
+00:02:29,540 --> 00:02:31,360
+Tiền định kỳ thì dễ đoán.
+
+68
+00:02:31,360 --> 00:02:34,740
+Một công ty có thể vạch ra cả tương lai dựa trên sự đãng trí của bạn.
+
+69
+00:02:34,740 --> 00:02:36,720
+Thế là mục tiêu lặng lẽ thay đổi.
+
+70
+00:02:36,720 --> 00:02:39,300
+Trước kia là: làm ra thứ đủ tốt để bạn mua.
+
+71
+00:02:39,300 --> 00:02:43,780
+Giờ còn có thể là: làm ra thứ đủ dính để bạn chẳng bao giờ rời được.
+
+72
+00:02:43,780 --> 00:02:47,000
+Bớt "sản phẩm tuyệt vời." Thêm "cái bẫy đẹp đẽ."
+
+73
+00:02:47,000 --> 00:02:48,660
+Đây là phần thiên tài.
+
+74
+00:02:48,660 --> 00:02:50,600
+Để kéo bạn vào, họ làm cho nó có cảm giác miễn phí.
+
+75
+00:02:50,600 --> 00:02:53,140
+"Bắt đầu dùng thử miễn phí!" Hôm nay không tính phí!
+
+76
+00:02:53,140 --> 00:02:56,240
+Chỉ cần nhập thẻ vào — bạn biết đấy, chẳng vì lý do gì cả.
+
+77
+00:02:56,240 --> 00:02:58,840
+Hoàn toàn bình thường. Người lạ rất thích giữ thẻ của bạn.
+
+78
+00:02:58,840 --> 00:03:02,260
+Và bản dùng thử là thật. Đúng là miễn phí thật. Trong bảy ngày.
+
+79
+00:03:02,260 --> 00:03:05,640
+Sau đó, một chiếc đồng hồ đếm ngược tí hon bạn không thấy được chạm số không,
+
+80
+00:03:05,640 --> 00:03:07,860
+và "miễn phí" lặng lẽ biến thành một khoản thanh toán.
+
+81
+00:03:07,860 --> 00:03:11,020
+Và hầu hết mọi người không hủy vào ngày thứ bảy. Họ quên.
+
+82
+00:03:11,020 --> 00:03:14,360
+Không phải vì họ cẩu thả — mà vì việc quên chính là chủ đích thiết kế.
+
+83
+00:03:14,360 --> 00:03:17,320
+Khoản phí thì nhỏ, ngày tháng thì mờ mịt, cuộc sống thì ồn ào.
+
+84
+00:03:17,320 --> 00:03:20,740
+Thế là khoản tiền nhỏ cứ... tiếp tục. Mãi mãi.
+
+85
+00:03:20,740 --> 00:03:23,240
+Một bóng ma, sống trong tài khoản ngân hàng của bạn.
+
+86
+00:03:23,240 --> 00:03:26,360
+Ở miễn phí. À — không miễn phí đâu. Đó mới là cả vấn đề.
+
+87
+00:03:26,360 --> 00:03:29,940
+Mở sao kê ngân hàng ngay bây giờ và bạn có lẽ sẽ tìm thấy một cái.
+
+88
+00:03:29,940 --> 00:03:33,200
+Một khoản phí bí ẩn. Ba đô la. Mỗi tháng.
+
+89
+00:03:33,200 --> 00:03:36,600
+Cho một thứ bạn mở đúng một lần, vào một năm bạn chẳng nhớ nổi.
+
+90
+00:03:36,600 --> 00:03:40,840
+Bản dùng thử miễn phí của sự tỉnh táo tài chính đã hết hạn.
+
+91
+00:03:40,840 --> 00:03:43,300
+Được rồi, bạn nói. Mình hủy là xong.
+
+92
+00:03:43,300 --> 00:03:44,460
+Ôi, đứa trẻ ngây thơ.
+
+93
+00:03:44,460 --> 00:03:46,520
+Đây là quy luật kỳ lạ của các gói đăng ký:
+
+94
+00:03:46,520 --> 00:03:48,330
+đăng ký mất mười giây.
+
+95
+00:03:48,330 --> 00:03:50,020
+Hủy thì như một chuyến hành xác tìm chân lý.
+
+96
+00:03:50,020 --> 00:03:52,200
+Vào thì là một nút bấm to, vui vẻ, sáng rực.
+
+97
+00:03:52,200 --> 00:03:55,560
+Ra thì giấu đâu đó trong điện thoại như con trùm cuối.
+
+98
+00:03:55,560 --> 00:03:58,360
+Bạn bấm "tài khoản." Rồi "cài đặt." Rồi "quản lý."
+
+99
+00:03:58,360 --> 00:04:00,720
+Rồi "bạn chắc chứ?" Rồi "đây, nhận giảm giá nè."
+
+100
+00:04:00,720 --> 00:04:01,920
+Rồi "chúng tôi sẽ nhớ bạn."
+
+101
+00:04:01,920 --> 00:04:06,560
+Rồi một số điện thoại chỉ bắt máy từ hai giờ đến hai giờ mười lăm vào thứ Ba.
+
+102
+00:04:06,560 --> 00:04:07,980
+Chuyện này thậm chí còn có tên gọi.
+
+103
+00:04:07,980 --> 00:04:10,220
+Người ta gọi nó là tính phí theo lựa chọn phủ định —
+
+104
+00:04:10,220 --> 00:04:12,220
+một thuật ngữ hoa mỹ cho một chiêu đơn giản:
+
+105
+00:04:12,220 --> 00:04:14,740
+bạn cứ phải trả tiền trừ khi bạn chủ động nói dừng.
+
+106
+00:04:14,740 --> 00:04:18,260
+Vậy là toàn bộ việc nhớ, quyết định và thoát ra? Đẩy hết sang bạn.
+
+107
+00:04:18,260 --> 00:04:21,660
+Trừ một nghìn điểm khí chất, mà bạn còn chẳng làm gì sai.
+
+108
+00:04:21,660 --> 00:04:25,300
+Thế là nhiều người cứ... bỏ cuộc. Họ tiếp tục trả tiền.
+
+109
+00:04:25,300 --> 00:04:29,500
+Không phải vì họ muốn — mà vì việc hủy giống như một công việc bán thời gian.
+
+110
+00:04:29,500 --> 00:04:31,320
+Mà không có lương.
+
+111
+00:04:31,320 --> 00:04:33,960
+Và đúng kiểu, nó cũng chẳng phải là một gói đăng ký.
+
+112
+00:04:33,960 --> 00:04:36,600
+Vậy tại sao bây giờ thứ gì cũng là gói đăng ký?
+
+113
+00:04:36,600 --> 00:04:39,500
+Vì các công ty phát hiện ra một điều lặng lẽ thiên tài.
+
+114
+00:04:39,500 --> 00:04:43,620
+Thứ giá trị nhất họ có thể bán không phải ứng dụng, hay phim, hay ghế sưởi.
+
+115
+00:04:43,620 --> 00:04:45,000
+Đó là sự lãng quên của bạn.
+
+116
+00:04:45,000 --> 00:04:46,860
+Cái tháng bạn định hủy, mà không hủy.
+
+117
+00:04:46,860 --> 00:04:48,640
+Một khi đã thấy, bạn không thể nào quên đi được.
+
+118
+00:04:48,640 --> 00:04:50,400
+Sản phẩm chưa bao giờ là món đồ.
+
+119
+00:04:50,400 --> 00:04:52,040
+Sản phẩm chính là bạn — vẫn ở lại.
+
+120
+00:04:52,040 --> 00:04:56,020
+Giờ, nhắc lại lần nữa: gói đăng ký không xấu xa. Có cái đáng từng xu.
+
+121
+00:04:56,020 --> 00:04:57,760
+Vấn đề chỉ là để ý.
+
+122
+00:04:57,760 --> 00:05:01,260
+Để biết rằng "nhỏ và hàng tháng" là một thiết kế, không phải tình cờ.
+
+123
+00:05:01,260 --> 00:05:04,260
+Vậy nên thỉnh thoảng, hãy cầm lên cái điện thoại đang tính tiền bạn —
+
+124
+00:05:04,260 --> 00:05:05,500
+và quay nó lại chống lại họ.
+
+125
+00:05:05,500 --> 00:05:08,640
+Mở sao kê ngân hàng. Đọc to những khoản phí nhỏ ấy lên.
+
+126
+00:05:08,640 --> 00:05:10,840
+Hỏi xem cái nào hôm nay bạn vẫn thực sự sẽ chọn lại.
+
+127
+00:05:10,840 --> 00:05:13,380
+Giữ những cái bạn yêu. Hủy những bóng ma.
+
+128
+00:05:13,380 --> 00:05:16,000
+Vì trong một thế giới nơi gần như mọi thứ đều đi thuê,
+
+129
+00:05:16,000 --> 00:05:20,260
+nước đi mạnh nhất bạn có là nhớ được mình đang trả tiền cho cái gì.
+
+130
+00:05:20,260 --> 00:05:23,280
+Và rồi lặng lẽ tận hưởng thứ duy nhất trong đời bạn
+
+131
+00:05:23,280 --> 00:05:24,210
+vẫn chưa phải là một gói đăng ký hàng tháng.
+
+132
+00:05:24,210 --> 00:05:28,056
+Lương của bạn. Tạm thời thì vậy.
+

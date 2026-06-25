@@ -58,7 +58,7 @@ This template is the DEFAULT for EVERY section of EVERY video for this owner, no
 - FRESH BASES PER SECTION (do not be lazy). Source each section's own distinct, on-topic vivid bases. Reusing the SAME photo files (cash/coins/curtain, etc.) across sections reads as lazy and was rejected ("you reuse too many images from other sections"). A motif (money) may recur only via genuinely DIFFERENT photos + distinct grades — never the literal same files section after section. Budget a few minutes of Openverse/Wikimedia sourcing per section.
 - ONE CLEAN HERO PER BEAT — NO STACKED/OVERLAPPING TEXT. Per scene plan one large hero device + at most one short caption, vertically well-spaced (≥~150px gaps), revealed SEQUENTIALLY on their words (never all at once), all on the half OPPOSITE the giant WIT. Use a side-gradient scrim to darken only the text half so labels read on busy photos. Piling multiple labels/cards close together was rejected as "texts are covered by many texts." Check the contact sheet for any text-near-text crowding before handoff.
 
-Reusable CSS kits to copy/adapt (bignum, toast, stamp, banner, payoff, giant WIT): `projects/why-everything-is-a-subscription-now/section-previews/section-01-hook/index.html` and `projects/why-buy-1-get-1-beats-50-off/section-previews/section-03-the-receipt-knows/index.html`.
+Reusable CSS kits to copy/adapt (bignum, toast, stamp, banner, payoff, giant WIT): `projects/3-why-everything-is-a-subscription-now/section-previews/section-01-hook/index.html` and `projects/4-why-buy-1-get-1-beats-50-off/section-previews/section-03-the-receipt-knows/index.html`.
 
 If a visual plan would still force `render` to invent the main scene, timing, joke, asset choice, WIT pose, or markup placement, the plan is not finished.
 
@@ -141,7 +141,7 @@ Read these before creating or updating visual plans:
 Load additional files only when needed:
 
 - `.agents/_shared/assets/wit/poses/manifest.json` when choosing WIT poses
-- existing section visual plans from `projects/why-everyone-pretends-to-be-busy/` when the user asks to follow that reference style
+- existing section visual plans from `projects/2-why-everyone-pretends-to-be-busy/` when the user asks to follow that reference style
 - existing project `visual-plan/` section folders when updating a section
 
 ## Project Selection Gate

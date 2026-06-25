@@ -34,7 +34,7 @@ Section 5 (final heavy-pause version, `David23 / am_eric / 0.84`, ~50s for ~195 
 future section TTS inputs in this style by default — do not wait to be asked, do not start sparse.
 
 Exemplar file to imitate (read it before authoring a new tts-input):
-`projects/why-everything-is-a-subscription-now/voiceover/section-05-free-trial-countdown/tts-inputs/section-05-free-trial-countdown-tts.txt`
+`projects/3-why-everything-is-a-subscription-now/voiceover/section-05-free-trial-countdown/tts-inputs/section-05-free-trial-countdown-tts.txt`
 
 The Section 5 recipe (concrete, copyable):
 - SPACIOUS BY DEFAULT. Put a standalone `...` line between almost every spoken beat. Use 2-3 stacked
@@ -365,8 +365,8 @@ Apply next time (author tts-inputs in THIS style by default, don't wait to be to
   one speed (per-section mismatches always get unified later, so don't create them).
 
 Reference exemplars to imitate (this project, user-tuned):
-- `projects/why-everything-is-a-subscription-now/voiceover/section-01-hook/tts-inputs/section-01-hook-tts.txt`
-- `projects/why-everything-is-a-subscription-now/voiceover/section-02-reframe/tts-inputs/section-02-reframe-tts.txt`
+- `projects/3-why-everything-is-a-subscription-now/voiceover/section-01-hook/tts-inputs/section-01-hook-tts.txt`
+- `projects/3-why-everything-is-a-subscription-now/voiceover/section-02-reframe/tts-inputs/section-02-reframe-tts.txt`
 
 Promote to shared memory:
 no for now; it's a Kokoro tts-input authoring technique. But it materially improves delivery on EVERY

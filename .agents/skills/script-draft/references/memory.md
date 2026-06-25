@@ -17,7 +17,7 @@ Use this file for lessons about selecting projects, shaping sectioned scripts, p
 - Write only `projects/<slug>/02-script.md`.
 - When `02-script.md` is created, updated, or rerun, treat `04-09` main-pipeline outputs as stale, starting with `04-voiceover.md`. Do not mark packaging stale.
 - Do not delete stale downstream outputs unless the user explicitly asks; otherwise tell the user to rerun downstream skills in order.
-- Use `projects/why-everyone-pretends-to-be-busy/02-script.md` as the structural reference when available.
+- Use `projects/2-why-everyone-pretends-to-be-busy/02-script.md` as the structural reference when available.
 - Copy the reference script's discipline, not its topic, jokes, or wording.
 - Draft in sections with estimates, word counts, purpose, visual goal, narration, approval checks, and voice revision notes.
 - Treat `01-research-pack.md` as the claim source of truth.

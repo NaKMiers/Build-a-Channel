@@ -185,7 +185,7 @@ no; keep in render memory until this override path is approved across more than 
 Classification: `Render lesson`
 
 Context:
-The user rejected the second Section 1 replacement for `why-everyone-pretends-to-be-busy` because the rendered WIT was not the channel's WIT and the section still felt messy. The user pointed to the complete WIT pose library in `projects/why-cheap-products-keep-getting-worse/assets/wit` and asked for a complete remake.
+The user rejected the second Section 1 replacement for `why-everyone-pretends-to-be-busy` because the rendered WIT was not the channel's WIT and the section still felt messy. The user pointed to the complete WIT pose library in `projects/1-why-cheap-products-keep-getting-worse/assets/wit` and asked for a complete remake.
 
 Lesson:
 Do not draw, approximate, or improvise WIT inside HyperFrames when approved WIT pose PNGs exist. Copy or junction the current WIT library into the active project, use only the pose files listed in its manifest for new work, and reserve WIT for emotional beats rather than every board.

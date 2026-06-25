@@ -23,7 +23,7 @@ Use this file for lessons about how this skill should suggest, score, reject, an
 ## Calibration From Current Best Project
 
 Reference project:
-`projects/why-everyone-pretends-to-be-busy`
+`projects/2-why-everyone-pretends-to-be-busy`
 
 Useful pattern:
 
@@ -164,7 +164,7 @@ Context:
 The user floated their own angle ("Buy 1 Get 1 Free makes more profit than 50% off, isn't
 it? but it looks the same"). It scored highest in the batch (`39/40`) and had the strongest
 proven demand found all session (Vox "Why 'Buy one, get one free' isn't a great deal" ~3.7M).
-Persisted as `projects/why-buy-1-get-1-beats-50-off/00-topic-intake.md`.
+Persisted as `projects/4-why-buy-1-get-1-beats-50-off/00-topic-intake.md`.
 
 Lesson:
 When the user brings a topic built on a math/economics/pricing claim, verify the actual
@@ -184,6 +184,36 @@ Apply next time:
 
 Promote to shared memory:
 no, this is topic-intake verification behavior, not a channel-wide strategy change.
+
+### 2026-06-25 - "More like BOGO" = a topic FAMILY, not one topic
+
+Classification: `Topic intake lesson`
+
+Context:
+After captioning the BOGO video, the user asked for "some topic like buy1get1 beats 50%off, trick
+in business that make people a rabbit." I generated a focused batch in that one family (pricing/
+perception tricks that hijack a mental shortcut: charm pricing $9.99, decoy effect, anchoring/fake
+original price, Veblen, unit-price trap, fake scarcity), browsed demand for each, and scored. The
+user chose `$9.99` (charm pricing). Persisted `projects/5-why-everything-costs-9-99/00-topic-intake.md`.
+
+Lesson:
+When the user references a past video as the template ("topic like X"), treat it as a request for
+the same ANGLE FAMILY, not a single idea. Mine the chosen reference's DNA (here: a tiny detail that
+fools one mental shortcut + clean worked example + two-price-tag visual + WIT-as-rabbit) and generate
+a tight batch that all share that DNA, instead of spreading across all lanes. Lead with the closest
+twin that also has the strongest proven demand. For $9.99 specifically, Half as Interesting (~1.2M)
+is hard proof, and HAI is the channel's #1 topic-selection model — so flag "learn, don't copy its
+structure." Kept the 2026-06-24 pricing-claim rule: verified the left-digit mechanism with a worked
+penny example and wrote a "Must Stay Honest" guardrail (perception nudge, not a lie; tendency not law;
+reverses at the luxury/round-number end) into the intake file so research + script inherit it.
+
+Apply next time:
+- "like <past video>" -> same-family batch, mine the reference's contradiction+motif+WIT pattern.
+- Recommend the closest twin with the best demand; offer the higher-ceiling sibling as the alt.
+- For any pricing/psychology claim, worked example + honesty guardrail in `00-topic-intake.md` first.
+
+Promote to shared memory:
+no, this is topic-intake batching/intake behavior, not a channel-wide strategy change.
 
 ## Feedback Entry Template
 

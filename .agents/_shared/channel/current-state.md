@@ -73,12 +73,12 @@ Do not use removed `original-wit-24`, older `core-24`, or `comedy-core` WIT as c
 
 ## Current Active Video
 
-- Active folder: `projects/why-cheap-products-keep-getting-worse`
+- Active folder: `projects/1-why-cheap-products-keep-getting-worse`
 - Current step: Section 2 render review/update on localhost; Section 1 Hook and Section 3 previews also exist
 - Section 1 composition: `Section01Hook`
 - Section 1 runtime: `21.205s`
 - Section 1 preview: `http://localhost:1001/#project/section-01-hook`
-- Section 1 source of truth: `projects/why-cheap-products-keep-getting-worse/section-previews/section-01-hook/index.html`
+- Section 1 source of truth: `projects/1-why-cheap-products-keep-getting-worse/section-previews/section-01-hook/index.html`
 - Manual Studio preservation: Anh Khoa made direct localhost/Studio edits after the reduced-WIT pass. Future Section 1 updates must preserve this `index.html`, diff before editing, and never overwrite it from an older review mirror or visual plan.
 - VFX cleanup state: accidental `vfx-liquid-glass` artifact was removed and root duration restored to the voiceover runtime.
 - Section 1 render: `MP4 not requested; use preview only unless user explicitly asks to export video`
@@ -87,16 +87,16 @@ Do not use removed `original-wit-24`, older `core-24`, or `comedy-core` WIT as c
 - Section 2 current style: `3` connected big scenes, grouped cue overlays, reduced WIT density, phrase-timed hard-shows, giant Section-1-style WIT emotional placements, no MP4 export
 - Section 2 manual Studio preservation: Anh Khoa manually adjusted the localhost/Studio preview after the giant-WIT pass. Future Section 2 updates must preserve `section-previews/section-02-cheap-is-not-the-villain/index.html` as canonical, diff before editing, and never overwrite it from the visual plan, old generated drafts, or an older review mirror. The latest backup is `section-previews/section-02-cheap-is-not-the-villain/manual-saves/save-110159.html`.
 - Section preview rule: review and approve one section at a time; assemble sections only after the user asks
-- Section asset rule: use one video-level shared asset library at `projects/why-cheap-products-keep-getting-worse/assets`; local section previews use minimal hardlinked working sets on this Windows HyperFrames setup
+- Section asset rule: use one video-level shared asset library at `projects/1-why-cheap-products-keep-getting-worse/assets`; local section previews use minimal hardlinked working sets on this Windows HyperFrames setup
 
 Key current project files:
 
-- `projects/why-cheap-products-keep-getting-worse/06-production-board.md`
-- `projects/why-cheap-products-keep-getting-worse/section-previews/section-01-hook/index.html`
-- `projects/why-cheap-products-keep-getting-worse/section-previews/section-01-hook/IMPLEMENTATION.md`
-- `projects/why-cheap-products-keep-getting-worse/hyperframes/review/section-01.html`
-- `projects/why-cheap-products-keep-getting-worse/section-previews/section-02-cheap-is-not-the-villain/index.html`
-- `projects/why-cheap-products-keep-getting-worse/section-previews/section-03-the-price-tag-speaks-first/index.html`
+- `projects/1-why-cheap-products-keep-getting-worse/06-production-board.md`
+- `projects/1-why-cheap-products-keep-getting-worse/section-previews/section-01-hook/index.html`
+- `projects/1-why-cheap-products-keep-getting-worse/section-previews/section-01-hook/IMPLEMENTATION.md`
+- `projects/1-why-cheap-products-keep-getting-worse/hyperframes/review/section-01.html`
+- `projects/1-why-cheap-products-keep-getting-worse/section-previews/section-02-cheap-is-not-the-villain/index.html`
+- `projects/1-why-cheap-products-keep-getting-worse/section-previews/section-03-the-price-tag-speaks-first/index.html`
 
 ## Current Production Lesson
 
