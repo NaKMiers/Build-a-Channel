@@ -1,4 +1,4 @@
-# 06 Production Board
+# 05 Production Board
 
 Video: `<title>`
 
@@ -9,8 +9,8 @@ Source skill: `render`
 Source files:
 
 - `02-script.md`
-- `04-voiceover.md`
-- `05-visual-plan.md`
+- `03-voiceover.md`
+- `04-visual-plan.md`
 
 ## Port Map
 

@@ -182,7 +182,7 @@ All 22 are exported every run. English is built from the script; the rest are pe
 7. For each of the other 21 languages: translate the English cue table cue-for-cue (exact count/order), then write `<language>.srt` from `_segments.json` (`write-translated-srt.mjs`).
 8. Run the Self-Check (including the multi-language timing re-check — the most important gate).
 9. Export all 22 files to `projects/<slug>/output/captions/`, plus the compatibility `output/captions.srt` (English). Add `.vtt` only if asked.
-10. Write a short status note in `06-production-board.md` (languages exported, cue count, duration).
+10. Write a short status note in `05-production-board.md` (languages exported, cue count, duration).
 11. Respond with the Caption report (output dir, languages, cue count, total duration, sync source). Do not continue into upload or learning.
 
 ## Self-Check (must pass before handoff)
@@ -201,7 +201,7 @@ Multi-language timing re-check (MOST IMPORTANT — captions must match the video
 - exactly 22 files exist in `output/captions/`, one per Supported Language, named per the table.
 - every `<language>.srt` has the **same cue count** as `english.srt`.
 - every `<language>.srt` cue's start/end timestamps are **byte-identical** to the corresponding `english.srt` cue (they came from the one `_segments.json`). Verify programmatically: extract the timestamp lines from each file and diff them against `english.srt`'s — any difference is a hard fail.
-- cross-check first cue of each section's narration against the combine section offsets in `06-production-board.md` (English track), confirming the shared timing actually lands on the video timeline.
+- cross-check first cue of each section's narration against the combine section offsets in `05-production-board.md` (English track), confirming the shared timing actually lands on the video timeline.
 - spot-check 2-3 cues per a few languages: the translated line is a faithful, fluent translation of the matching English cue (right meaning, right cue).
 - every file is valid UTF-8 SRT (non-Latin scripts — Arabic, CJK, Indic, Thai — render correctly, no mojibake).
 - compatibility `output/captions.srt` (English) also written.

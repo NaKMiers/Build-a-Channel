@@ -1,6 +1,6 @@
 ---
 name: visual-plan
-description: Create or update step 5 render-trustworthy section visual plans for a Why It Works video project. Use when the user asks for Visual Plan, visual planning, scene-by-scene or second-by-second what-when-how screen direction, big-scene and cue-state timeline, reference board, real-life internet visual references, generated support assets, WIT pose planning, HyperFrames build guidance, run step 5, or plan visuals for one section or all sections; requires completed 00-topic-intake.md, 01-research-pack.md, 02-script.md, 04-voiceover.md, explicit project selection, and explicit section selection with All as the first option, then writes only the project's 05-visual-plan.md, visual-plan/ section folders, and visual reference assets.
+description: Create or update step 4 render-trustworthy section visual plans for a Why It Works video project. Use when the user asks for Visual Plan, visual planning, scene-by-scene or second-by-second what-when-how screen direction, big-scene and cue-state timeline, reference board, real-life internet visual references, generated support assets, WIT pose planning, HyperFrames build guidance, run step 4, or plan visuals for one section or all sections; requires completed 00-topic-intake.md, 01-research-pack.md, 02-script.md, 03-voiceover.md, explicit project selection, and explicit section selection with All as the first option, then writes only the project's 04-visual-plan.md, visual-plan/ section folders, and visual reference assets.
 ---
 
 # Visual Plan
@@ -94,20 +94,20 @@ Required previous outputs:
 - `projects/<slug>/00-topic-intake.md`
 - `projects/<slug>/01-research-pack.md`
 - `projects/<slug>/02-script.md`
-- `projects/<slug>/04-voiceover.md`
+- `projects/<slug>/03-voiceover.md`
 - selected section voiceover output under `projects/<slug>/voiceover/`
 
 Write or update:
 
-- `projects/<slug>/05-visual-plan.md`
+- `projects/<slug>/04-visual-plan.md`
 - `projects/<slug>/visual-plan/section-XX-kebab-section-name/`
 - `projects/<slug>/assets/visual-references/section-XX-kebab-section-name/`
 
 If a required upstream file is missing or empty, stop and tell the user which previous skill to run.
 
-If `01-research-pack.md` is older than `00-topic-intake.md`, treat the research pack as stale and stop. If `02-script.md` is older than topic intake or research pack, treat the script as stale and stop. If `04-voiceover.md` or a selected section voiceover output is older than script, treat voiceover as stale and stop or ask whether to regenerate the affected section.
+If `01-research-pack.md` is older than `00-topic-intake.md`, treat the research pack as stale and stop. If `02-script.md` is older than topic intake or research pack, treat the script as stale and stop. If `03-voiceover.md` or a selected section voiceover output is older than script, treat voiceover as stale and stop or ask whether to regenerate the affected section.
 
-When this skill creates, updates, or reruns `05-visual-plan.md` or any file under `visual-plan/`, every later output for the affected section becomes stale.
+When this skill creates, updates, or reruns `04-visual-plan.md` or any file under `visual-plan/`, every later output for the affected section becomes stale.
 
 List stale downstream files in chat. Do not silently delete them.
 
@@ -136,7 +136,7 @@ Read these before creating or updating visual plans:
     - `00-topic-intake.md`
     - `01-research-pack.md`
     - `02-script.md`
-    - `04-voiceover.md`
+    - `03-voiceover.md`
 
 Load additional files only when needed:
 
@@ -152,7 +152,7 @@ Use this order:
 
 1. If the user names a project slug or path, use that project.
 2. If the current chat clearly selected a project and the folder exists, use that project.
-3. If there is exactly one project with completed `04-voiceover.md`, smart-select it and say so.
+3. If there is exactly one project with completed `03-voiceover.md`, smart-select it and say so.
 4. Otherwise scan `projects/`, excluding `_template`, and find visual-plan candidates.
 
 A visual-plan candidate has:
@@ -160,7 +160,7 @@ A visual-plan candidate has:
 - non-empty `00-topic-intake.md`
 - non-empty `01-research-pack.md`
 - non-empty `02-script.md`
-- non-empty `04-voiceover.md`
+- non-empty `03-voiceover.md`
 - at least one section voiceover output under `voiceover/`
 
 When multiple candidates exist or context is unclear, ask the user to choose before writing.
@@ -174,7 +174,7 @@ Before section selection or writing files, verify the chosen project has:
 - non-empty `00-topic-intake.md`
 - non-empty `01-research-pack.md`
 - non-empty `02-script.md`
-- non-empty `04-voiceover.md`
+- non-empty `03-voiceover.md`
 
 If `02-script.md` does not contain parsable sections in the form:
 
@@ -188,7 +188,7 @@ If `01-research-pack.md` is older than `00-topic-intake.md`, stop and ask the us
 
 If `02-script.md` is older than `00-topic-intake.md` or `01-research-pack.md`, stop and ask the user to rerun `script-draft`.
 
-If `04-voiceover.md` is missing, empty, or older than `02-script.md`, stop and ask the user to run or rerun `voiceover`.
+If `03-voiceover.md` is missing, empty, or older than `02-script.md`, stop and ask the user to run or rerun `voiceover`.
 
 ## Section Selection Gate
 
@@ -239,7 +239,7 @@ Acceptable evidence:
 - a matching section folder under `voiceover/section-XX-kebab-section-name/`
 - and a clean script or marked script file
 - and either an audio file or `scratch-results.json` that honestly records `tts not generated`
-- and an entry in `04-voiceover.md`
+- and an entry in `03-voiceover.md`
 
 If a selected section is missing voiceover output, stop and ask the user to run `voiceover` for that section first.
 
@@ -261,7 +261,7 @@ projects/<slug>/visual-plan/section-XX-kebab-section-name/README.md
 projects/<slug>/visual-plan/section-XX-kebab-section-name/section-XX-kebab-section-name-visual-plan.md
 projects/<slug>/visual-plan/section-XX-kebab-section-name/reference-board.md
 projects/<slug>/assets/visual-references/section-XX-kebab-section-name/
-projects/<slug>/05-visual-plan.md
+projects/<slug>/04-visual-plan.md
 ```
 
 ### Section Update Mode
@@ -286,7 +286,7 @@ Use when the user reviews a visual plan and gives reusable lessons.
 
 Update in this order:
 
-1. the project `05-visual-plan.md` or section visual plan if the review affects this video
+1. the project `04-visual-plan.md` or section visual plan if the review affects this video
 2. this skill's `references/memory.md`
 3. shared memory only if the lesson improves the whole channel
 
@@ -803,7 +803,7 @@ The plan also fails if it creates too many full-scene cuts for a short section. 
    - write `reference-board.md`
    - write `section-XX-kebab-section-name-visual-plan.md`
    - write or update the section `README.md`
-8. Write or update `projects/<slug>/05-visual-plan.md` as the section visual-plan index.
+8. Write or update `projects/<slug>/04-visual-plan.md` as the section visual-plan index.
 9. Run the Downstream Stale Gate.
 10. Respond with the Chat Response Format.
 11. Stop before render, review, upload, or learning unless explicitly asked.
@@ -838,24 +838,24 @@ Use lowercase kebab-case.
 
 Use `references/output-formats.md` for the exact templates for:
 
-- `05-visual-plan.md`
+- `04-visual-plan.md`
 - section visual-plan files
 - section `reference-board.md`
 - section `README.md`
 - chat response
 
-If only one section has been planned, include remaining sections in `05-visual-plan.md` as `not planned`.
+If only one section has been planned, include remaining sections in `04-visual-plan.md` as `not planned`.
 
 ## Downstream Stale Gate
 
-After creating, updating, or rerunning `05-visual-plan.md` or any section visual plan, check the same project for downstream files:
+After creating, updating, or rerunning `04-visual-plan.md` or any section visual plan, check the same project for downstream files:
 
-- `06-production-board.md`
+- `05-production-board.md`
 - `hyperframes/`
 - `renders/`
-- `07-review.md`
-- `08-upload.md`
-- `09-self-learning.md`
+- `06-review.md`
+- `07-upload.md`
+- `08-self-learning.md`
 
 If any exist, list them as stale in chat and tell the user they should be removed or regenerated by rerunning downstream skills in order, starting with `Render`.
 
@@ -874,7 +874,7 @@ Use this structure:
 ```markdown
 Done. I created/updated:
 
-[05-visual-plan.md](<absolute path>)
+[04-visual-plan.md](<absolute path>)
 
 Section target: `<All or Section X: name>`
 
@@ -934,7 +934,7 @@ A section visual plan is ready when:
 
 Reject or stop before finishing if:
 
-- the project lacks `04-voiceover.md`
+- the project lacks `03-voiceover.md`
 - the selected section lacks voiceover output
 - the user has not explicitly selected `All` or a specific section
 - the section target is inferred instead of selected

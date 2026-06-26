@@ -198,6 +198,65 @@ Apply next time:
 Promote to shared memory:
 no; this is a research-pack browsing/visual-leads tactic, not a channel-wide strategy change.
 
+### 2026-06-25 - One Wikipedia Article Can Carry Both The Spine AND The Honest Reversal
+
+Classification: `Research pack lesson`
+
+Context:
+Researching `why-everything-costs-9-99` (charm pricing). Search engines bot-blocked again; the
+single Wikipedia "Psychological pricing" article body direct-fetched cleanly and supplied the entire
+spine: left-digit effect (Thomas & Morwitz 2005 = anchoring on the leftmost digit), the two-process
+model (Stiving & Winer 1997: level effect + image effect), the "~60% of prices end in 9" stat, the
+gasoline 9/10-cent example, AND the channel's needed honest counter-turn ("high-end retailers and
+restaurants price in round/even numbers for brand image"). The famous Anderson & Simester (2003)
+"$39 outsold $34" field experiment was NOT on the page and is paywalled → routed to Open Questions.
+
+Lesson:
+For a pricing/behavioral-econ topic, the matching Wikipedia article often carries not just the
+mechanism but also the built-in reversal/caveat the channel needs for its honest back-half turn —
+read the WHOLE body (including "criticism"/"controversy"/"high-end" lines), not just the intro,
+before deciding the source is thin. The single most famous empirical proof of an effect frequently
+has NO standalone Wikipedia article and sits behind a paywall; cite it as "a famous field study
+found…" and route exact figures to Open Questions rather than stalling or inventing numbers.
+
+Apply next time:
+- Slice the full `.mw-parser-output` innerText in chunks; scan for the honest counter-turn explicitly.
+- Carry the topic-intake "Must Stay Honest" guardrails straight into Safe Claims / Claims To Avoid.
+- Famous named experiment + paywall → secondary framing + Open Questions, never an invented stat.
+
+Promote to shared memory:
+no; this is a research-pack sourcing tactic, the channel-wide Wikipedia-fallback rule already exists.
+
+### 2026-06-26 - Charm-pricing re-research: Commons DID have real 99¢ tags; typography gem grounds the motif
+
+Classification: `Research pack lesson`
+
+Context:
+Re-created `01-research-pack.md` for `why-everything-costs-9-99` (the prior folder was deleted; only
+the intake had ever been committed, so no research pack existed to recover). The Wikipedia
+"Psychological pricing" body direct-fetched cleanly again and was even richer than the 2026-06-25 note
+recalled. Unlike the BOGO run (where Commons had no clean signage), Commons MediaSearch this time
+returned several license-clear real hero objects: `Price Tag 99+TX 99 cents`, `Kiwi shoe polish tan
+99 cent`, `99¢ Rocks`, plus real gas-price signs (`Union 76`, `Wawa`) that literally show the 9/10¢
+ending. Keith Coulter's line ("effect may be enhanced when the cents are printed SMALLER") is direct
+grounding for the channel's mouse-type `.99` visual motif — a research fact that hands the visual plan
+its hero device. Routed Anderson & Simester (2003) "$39 outsold $34" to Open Questions (paywalled).
+
+Lesson:
+For a charm-pricing / `.99` topic specifically, Commons has usable real `99¢` tags and gas signs — try
+it before defaulting everything to mockup. And scan the mechanism source for a line that grounds the
+chosen VISUAL motif (here: smaller-cents typography), not just the verbal claim — it makes visual-plan
+nearly free.
+
+Apply next time:
+- For pricing-signage topics, run a Commons MediaSearch on the exact number/word ("99 cent", "gas price
+  sign"); keep the license-clear reals as `safe asset (verify license)`, rest as mockup target.
+- Pull out any source line that justifies the hero visual device, not only the headline fact.
+- Famous paywalled proof (Anderson & Simester) -> "a famous field study found…" + Open Questions.
+
+Promote to shared memory:
+no; this is a research-pack sourcing/visual-leads tactic, not a channel-wide strategy change.
+
 ## Feedback Entry Template
 
 Use this shape when updating the skill after user review:

@@ -7,11 +7,13 @@ Use this file for title taste, thumbnail concept behavior, description format, t
 
 ## Current Skill Standard
 
-- Run as a side branch from `research-pack`, outside the main production pipeline.
-- Require non-empty `00-topic-intake.md` and `01-research-pack.md` only.
-- Do not require `02-script.md` or `04-voiceover.md`.
-- Write only `03-packaging.md` and thumbnail assets under `assets/thumbnails/`.
-- Create title options, exactly `5` thumbnail drafts for A/B testing, reusable prompt for each thumbnail, thumbnail comparison scoring, and a full YouTube description package.
+- Runs **after `caption`** in the workflow (`... -> combine -> caption -> packaging -> upload -> learning`); it is no longer a research-pack side branch.
+- Require non-empty `00-topic-intake.md`, `01-research-pack.md`, AND `02-script.md` (hard gate). Recommended position is after caption so the finished video, real chapters, and built shorts are available, but only those three files are hard-required.
+- Write everything to ONE file: `output/packaging.md` (the 5 locked pairs, the description package, the thumbnail prompts folded into a `## Thumbnail Prompts` section, and per-short blocks when shorts exist). Thumbnail images go to `output/thumbnails/`. Do NOT create `03-packaging.md` or a separate `PROMPTS.md` anymore, and do NOT write under `assets/thumbnails/`. Leave legacy `03-packaging.md`/`assets/thumbnails/` in older projects as-is unless the user asks to migrate.
+- Main video = exactly `5` **locked title+thumbnail A/B pairs**: title `N` is coupled to thumbnail `N`. Editing thumbnail prompt `N` also rewrites title `N`, and editing title `N` also rewrites thumbnail prompt `N`; never leave one side of a pair stale. Keep pair numbers stable; pairs are independent of each other. Files named `main-pair-1.png` … `main-pair-5.png`.
+- Shorts-aware: detect built shorts via `shorts/shorts-plan.md` or `output/shorts/*.mp4`. If none, package the main video only. If present, also create ONE title + description + thumbnail per short (portrait `1080x1920` cover reusing the short's source-section assets, `short-0N.png`), standalone with NO long-video CTA.
+- Provide a reusable prompt for each thumbnail, score the `5` pairs as units, and write the full YouTube description package (description, chapters, tags, max-3 hashtags, links, pinned comment).
+- Export every title + description for the main video AND all shorts into the one `output/packaging.md` file.
 - The previous current channel WIT design from `original-wit-24` was removed on `2026-06-07`.
 - A draft replacement pose set now exists at `.agents/_shared/assets/wit/poses/` and is awaiting user review. Thumbnail prompts should use this WIT style: simple white round-headed figure, thick black outline, oversized black glasses, expressive eyebrows, simple white body, and strong suspicious / betrayed / panicked expressions.
 - Never prompt the removed old WIT details as current channel WIT: messy black hair, white shirt, receipt-like tie, dark pants, oversized dark shoes.
@@ -24,8 +26,8 @@ Use this file for title taste, thumbnail concept behavior, description format, t
 - Score all `5` thumbnail variants in a comparison table before recommending one.
 - Prefer simple English and mobile-readable thumbnail labels.
 - Keep the channel influence-first; do not turn descriptions into direct product promotion.
-- When `03-packaging.md` is created, updated, or rerun, do not mark main-pipeline outputs stale.
-- Stop before script, voiceover, visual plan, render, review, upload, or learning.
+- When `output/packaging.md` is created, updated, or rerun, the only downstream steps are `upload` and `learning`; do not mark earlier production outputs stale.
+- Stop before `upload` or `learning`.
 
 ## Output Standard
 
@@ -244,6 +246,64 @@ No; packaging-skill execution practice. The honesty guardrail itself is unchange
 Update 2026-06-24 (follow-up): owner asked to make this the SKILL default permanently and added "INSANE"
 to the intensity list. Promoted from a per-video note into `SKILL.md` → "Drama bar (ALL variants)" so
 every future run starts at MAX intensity by default (still holding the honesty line).
+
+### 2026-06-26 - Locked title+thumbnail A/B pairs, shorts packaging, outputs moved to output/
+
+Classification: `Core operational update`
+
+Context:
+The owner redefined the packaging output. (1) Titles and thumbnails are now A/B-tested TOGETHER as
+`5` locked pairs: title `N` ships with thumbnail `N`. Updating thumbnail prompt `N` must also update
+title `N`, and updating title `N` must rewrite thumbnail prompt `N`. (2) The skill is shorts-aware:
+if no built shorts exist, package only the main video; if built shorts exist, also create one title +
+description + thumbnail per short. (3) Relocate outputs: thumbnail images + prompts move from
+`assets/thumbnails/` to `output/thumbnails/`; titles + descriptions for the main video AND every short
+are exported into a single `output/packaging.md` file. `03-packaging.md` stays as the scored working doc.
+
+Lesson:
+Packaging's unit is now the locked title+thumbnail pair, not loose titles scored against loose
+thumbnails. The coupling is bidirectional and pair-numbered so a single edit never desyncs a pair.
+Shorts packaging is conditional on built shorts being present. `output/` is the single home for all
+deliverables, so packaging writes there (thumbnails, prompts, and the consolidated copy file).
+
+Apply next time:
+- main video: 5 locked pairs (`main-pair-1..5.png`), fixed structure (pairs 1-2 comparison, 3-5 drama),
+  scored as units; edit both sides of a pair together; keep pair numbers stable.
+- detect shorts (`shorts/shorts-plan.md` or `output/shorts/*.mp4`); when present, one title+desc+thumbnail
+  per short (portrait `short-0N.png`, standalone, no long-video CTA), pulled from the shorts plan + script.
+- write `output/thumbnails/` (images), `output/packaging.md` (single consolidated file). Never `assets/thumbnails/`.
+
+Promote to shared memory:
+No; this is packaging-skill output contract. The channel WIT/honesty/drama direction is unchanged.
+
+### 2026-06-26 (follow-up) - Single file, prompts folded in, retire 03-packaging.md/PROMPTS.md, run after caption
+
+Classification: `Core operational update`
+
+Context:
+Same day, the owner simplified further: (1) `PROMPTS.md` is redundant — fold the thumbnail prompts
+into a `## Thumbnail Prompts` section inside `output/packaging.md`. (2) Stop creating `03-packaging.md`
+for new projects; write `output/packaging.md` directly (existing projects keep their `03-packaging.md`
+as-is, untouched). (3) Packaging moves OUT of the "03 side-branch" slot to a step AFTER `caption`, and
+now hard-requires `00-topic-intake.md` + `01-research-pack.md` + `02-script.md`.
+
+Lesson:
+ONE deliverable file per project: `output/packaging.md` holds the 5 locked pairs, the description
+package, the folded thumbnail prompts, and the per-short blocks. Images only under `output/thumbnails/`.
+No `03-packaging.md`, no `PROMPTS.md`. Pipeline order is now
+`... -> combine -> caption -> packaging -> upload -> learning`. Recommended to run after caption so the
+finished video / real chapters / built shorts are available, but the hard gate is just the three files.
+
+Apply next time:
+- create only `output/packaging.md` (+ images in `output/thumbnails/`); never `03-packaging.md` or `PROMPTS.md`.
+- require topic-intake + research-pack + script; refuse otherwise.
+- on legacy projects, leave old `03-packaging.md`/`assets/thumbnails/` alone unless asked to migrate
+  (project 1 was migrated to the new layout on 2026-06-26 as the first test).
+
+Promote to shared memory:
+Partly — the pipeline-order change (packaging after caption, requires script) is a channel-wide
+pipeline rule and should be reflected in `current-state.md`/`production-workflow.md` and the
+`CLAUDE.md`/`AGENTS.md` pipeline gates. The single-file output detail stays packaging-local.
 
 ## Feedback Entry Template
 

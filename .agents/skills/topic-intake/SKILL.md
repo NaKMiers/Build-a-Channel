@@ -17,17 +17,17 @@ This is step `0` of the video workflow.
 
 It has no previous required output.
 
-When Persist Mode creates, updates, or reruns `projects/<slug>/00-topic-intake.md`, every later output in the same project becomes stale:
+When Persist Mode creates, updates, or reruns `projects/<slug>/00-topic-intake.md`, every later output in the same project becomes stale (new-project numbering shown; legacy projects use the old numbers — resolve by suffix per `.agents/rules/video-workflow.md`):
 
 - `01-research-pack.md`
 - `02-script.md`
-- `03-packaging.md`
-- `04-voiceover.md`
-- `05-visual-plan.md`
-- `06-production-board.md`
-- `07-review.md`
-- `08-upload.md`
-- `09-self-learning.md`
+- `03-voiceover.md`
+- `04-visual-plan.md`
+- `05-production-board.md`
+- `06-review.md`
+- `07-upload.md`
+- `08-self-learning.md`
+- `output/packaging.md` (+ `output/thumbnails/`)
 
 List stale downstream files in chat. Do not silently delete them. Remove stale downstream files only when the user explicitly asks; otherwise downstream skills must be rerun in order.
 

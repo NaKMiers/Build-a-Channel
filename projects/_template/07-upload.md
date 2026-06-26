@@ -1,4 +1,4 @@
-# 08 Upload
+# 07 Upload
 
 Use this when the video is ready to publish.
 

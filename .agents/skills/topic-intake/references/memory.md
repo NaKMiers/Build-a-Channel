@@ -215,6 +215,36 @@ Apply next time:
 Promote to shared memory:
 no, this is topic-intake batching/intake behavior, not a channel-wide strategy change.
 
+### 2026-06-26 - Re-running intake on a previously-chosen topic whose folder was deleted
+
+Classification: `Topic intake lesson`
+
+Context:
+The user said "why everything costs 9.99 / this is the topic, run /topic-intake." Skill memory
+(2026-06-25) showed this exact topic was already chosen and persisted as
+`projects/5-why-everything-costs-9-99/00-topic-intake.md`, but the whole project 5 folder had since
+been deleted from the working tree (and removed at HEAD). Recovered the prior 38/40 intake from git
+(`git show HEAD~1:...`), re-verified demand via browse (Half as Interesting ~1.2M confirmed; found a
+NEW data point, BrainStuff/HowStuffWorks ~421K; plus brand-new uploads proving the topic is still
+evergreen-active), and re-created the intake file with a refreshed reference table dated today.
+
+Lesson:
+A pre-chosen topic + "run topic-intake" is Persist Mode (per 2026-06-21). When skill memory says that
+topic was already worked through but the project folder is gone, do not blindly regenerate from
+scratch and do not silently restore the old file either: recover the prior intake from git to keep its
+validated scorecard/guardrail, but still satisfy the browsing requirement with a fresh re-verify so the
+reference table reflects today (it may strengthen — found the 421K HowStuffWorks reference this time).
+Because the folder was fully deleted, there were no downstream files to mark stale (clean slate).
+
+Apply next time:
+- Check git history for a deleted intake before regenerating; reuse the validated scorecard + honesty
+  guardrail, refresh only what browsing updates.
+- Always re-browse for demand even when reusing — date the reference table to the current run.
+- If the whole folder is gone, the stale-downstream check is trivially empty; say so.
+
+Promote to shared memory:
+no, this is topic-intake re-creation behavior, not a channel-wide strategy change.
+
 ## Feedback Entry Template
 
 Use this shape when updating the skill after user review:

@@ -7,7 +7,7 @@ Use these exact shapes when running the `visual-plan` skill.
 Write or update:
 
 ```text
-projects/<slug>/05-visual-plan.md
+projects/<slug>/04-visual-plan.md
 ```
 
 ````markdown
@@ -22,7 +22,7 @@ Source skill: `visual-plan`
 Source files:
 
 - `02-script.md`
-- `04-voiceover.md`
+- `03-voiceover.md`
 
 ## Visual Direction
 
@@ -283,7 +283,7 @@ Status:
 ````markdown
 Done. I created/updated:
 
-[05-visual-plan.md](<absolute path>)
+[04-visual-plan.md](<absolute path>)
 
 Section target: `<All or Section X: name>`
 

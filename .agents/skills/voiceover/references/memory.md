@@ -16,7 +16,7 @@ Use this file for section-selection behavior, section voiceover output shape, TT
 - Do not infer the section from the active video state, the next unfinished section, existing previews, missing outputs, or prior chat context.
 - Put `All` at the top of section choices.
 - Interpret `All` as separate voiceover outputs for every script section, not one stitched full-video file.
-- Write only `04-voiceover.md` and files under `voiceover/`.
+- Write only the voiceover index file (new projects `03-voiceover.md`; legacy projects `04-voiceover.md` — resolve by suffix per `.agents/rules/video-workflow.md`) and files under `voiceover/`.
 - Keep one useful MP3 preview per section by default.
 - Avoid preserving duplicate MP3/WAV scratch files unless a renderer requires them or the user asks.
 - Use `David23 / am_eric / 0.84 / en-us` as the default final voice direction from shared memory.
@@ -67,9 +67,9 @@ For each selected section, create or update:
 - `voiceover/section-XX-kebab-section-name/tts-inputs/`
 - `voiceover/section-XX-kebab-section-name/scratch-audio/`
 - `voiceover/section-XX-kebab-section-name/scratch-results.json`
-- `04-voiceover.md`
+- the voiceover index file (`03-voiceover.md`; legacy `04-voiceover.md`)
 
-`04-voiceover.md` should act as the project-level index for generated and not-yet-generated section voiceovers.
+The voiceover index file (`03-voiceover.md`; legacy `04-voiceover.md`) should act as the project-level index for generated and not-yet-generated section voiceovers.
 
 ## Feedback Log
 
@@ -102,8 +102,8 @@ Superseded. Packaging is now outside the main pipeline. Voiceover no longer requ
 Apply next time:
 
 - require non-empty `02-script.md`
-- do not require `03-packaging.md`
-- write or update `04-voiceover.md`, not `03-voiceover.md`
+- do not require packaging
+- write or update the voiceover index file (SUPERSEDED 2026-06-26: new projects now use `03-voiceover.md` because packaging left the numbered set; legacy projects keep `04-voiceover.md`. Resolve by suffix.)
 
 Promote to shared memory:
 yes, this is a pipeline-level rule.
@@ -401,6 +401,60 @@ Apply next time:
 Promote to shared memory:
 no; Kokoro tts-input authoring guardrail, not a channel-wide strategy change. Fold into a future
 "voice rhythm / tts quirks" note in `script-learner-voice.md` if more quirks accumulate.
+
+### 2026-06-27 - $9.99 hook: owner A/B'd speed down to 0.79 and wanted a shorter, condensed hook
+
+Classification: `Voiceover lesson`
+
+Context:
+On `why-everything-costs-9-99` Section 1, I generated the hook at the channel default 0.84 (25.7s, 99
+words) and offered 0.80. The owner replied: "it should be 0.82, should make the hook script shorter and
+more condense." Trimmed the script ~99 → ~63 words (cut the "most powerful penny on earth" line, moved
+to contractions, kept the trap question + "your brain said nine" reveal + "still get you tomorrow"
+close) and regenerated at 0.82 → 19.456s. He then auditioned downward in single-step nudges: "0.80"
+(20.672s), then "0.79" (21.739s), landing on 0.79. Each regen removed the prior MP3 (one preview per
+section). Speed locked at 0.79 for all later sections of this video.
+
+Lesson:
+This owner's comfortable David23 speed is the slow end of the predicted band — he A/B'd 0.84 → 0.82 →
+0.80 → 0.79 and settled on 0.79 (even slower than `why-everything-is-a-subscription-now`'s 0.8). Default
+to ~0.79-0.80 for him, not 0.84. He also has a clear taste for a SHORT, punchy hook — when a hook runs
+long, expect "shorter / more condense," so draft hooks tight and lean on contractions for the open. He
+auditions speed in fast one-step nudges (just a bare number like "0.79"), so generate one, expect a
+nudge, regen cheaply, and don't over-document until it stabilizes.
+
+Apply next time:
+- For this owner, generate at ~0.79-0.80 first (offer one step faster as an A/B); keep all sections at the one chosen speed.
+- Draft hooks tight from the start (~60-70 words), then expand only if asked; condensing is the common note.
+- When the hook wording changes, update `02-script.md` (rev bump + summary row + header totals) AND
+  regenerate the section audio at the locked speed, replacing the old MP3.
+
+Promote to shared memory:
+no; confirms the existing ~0.8 speed preference and is a per-owner hook-length taste, not a
+channel-wide change.
+
+### 2026-06-27 - "All" batch TTS exceeds the 2-min default Bash timeout; batch in 3-4s or raise it
+
+Classification: `Voiceover lesson`
+
+Context:
+On `why-everything-costs-9-99` the user chose "all remaining section" (2-7). Running all six `npx
+hyperframes@0.6.76 tts` calls in one Bash command hit the 120s default timeout after 4 sections
+(2,3,4,5 done; 6,7 not). Re-ran 6-7 in a second call with `timeout: 240000` and they finished.
+Each section gen is ~20-35s wall (model load + synth), so 6 sequential calls > 2 min.
+
+Lesson:
+For `All`-mode generation, don't run more than ~4 TTS calls in a single default-timeout Bash call.
+Either pass an explicit longer `timeout` (e.g. 240000-480000) or split into batches of 3-4. The npx
+calls are idempotent per output path, so a re-run of the unfinished ones is safe and doesn't duplicate
+(one MP3 per section folder, fixed filename).
+
+Apply next time:
+- `All` mode: raise the Bash `timeout` (~60s per section budget) or chunk into 2 batches.
+- After a timeout, `ls */scratch-audio/` to see which sections completed, then generate only the rest.
+
+Promote to shared memory:
+no; voiceover tooling/runtime guardrail, not a channel-wide strategy change.
 
 ## Feedback Entry Template
 

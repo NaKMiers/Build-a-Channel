@@ -22,25 +22,25 @@ Copy this folder when starting a new long-form `Why It Works` video.
 
 ## Standard Files
 
-Production order keeps script before packaging. Packaging can still run from topic intake and research pack alone.
+Packaging runs after caption and writes `output/packaging.md` (it is no longer a numbered file).
 
 ```text
 00-topic-intake.md
 01-research-pack.md
 02-script.md
-03-packaging.md
-04-voiceover.md
-05-visual-plan.md
-06-production-board.md
-07-review.md
-08-upload.md
-09-self-learning.md
+03-voiceover.md
+04-visual-plan.md
+05-production-board.md
+06-review.md
+07-upload.md
+08-self-learning.md
 assets/
 hyperframes/
 renders/
 section-previews/
 voiceover/
 visual-plan/
+output/            (final deliverables: <slug>.mp4, captions/<language>.srt, packaging.md, thumbnails/)
 ```
 
 ## Key Links

@@ -1,6 +1,6 @@
 ---
 name: render
-description: Build or update step 6 section HyperFrames previews for a Why It Works video project. Use when the user asks for Render, HyperFrames build, create video from visual-plan, build a section preview, run section localhost, start preview servers, or run step 6; export MP4/WebM only when the user explicitly asks to export video; requires completed 00-topic-intake.md, 01-research-pack.md, 02-script.md, 04-voiceover.md, 05-visual-plan.md, selected section voiceover, selected section visual plan, explicit project selection, and explicit section selection with All as the first option; creates 06-production-board.md, section-previews/ section HyperFrames projects, and hyperframes/ review copies while using port 1000 for unified preview and port 1000 plus section number for section previews.
+description: Build or update step 5 section HyperFrames previews for a Why It Works video project. Use when the user asks for Render, HyperFrames build, create video from visual-plan, build a section preview, run section localhost, start preview servers, or run step 5; export MP4/WebM only when the user explicitly asks to export video; requires completed 00-topic-intake.md, 01-research-pack.md, 02-script.md, 03-voiceover.md, 04-visual-plan.md, selected section voiceover, selected section visual plan, explicit project selection, and explicit section selection with All as the first option; creates 05-production-board.md, section-previews/ section HyperFrames projects, and hyperframes/ review copies while using port 1000 for unified preview and port 1000 plus section number for section previews.
 ---
 
 # Render
@@ -54,16 +54,16 @@ Required previous outputs:
 - `projects/<slug>/00-topic-intake.md`
 - `projects/<slug>/01-research-pack.md`
 - `projects/<slug>/02-script.md`
-- `projects/<slug>/04-voiceover.md`
-- `projects/<slug>/05-visual-plan.md`
+- `projects/<slug>/03-voiceover.md`
+- `projects/<slug>/04-visual-plan.md`
 - selected section voiceover under `projects/<slug>/voiceover/`
 - selected section visual plan under `projects/<slug>/visual-plan/`
 
-Packaging is a side branch. Do not require `03-packaging.md` for render unless the selected visual plan explicitly depends on packaging assets.
+Packaging now runs after caption and writes `output/packaging.md`; it is not a render prerequisite. Do not require packaging for render.
 
 Write or update:
 
-- `projects/<slug>/06-production-board.md`
+- `projects/<slug>/05-production-board.md`
 - `projects/<slug>/section-previews/section-XX-kebab-section-name/`
 - `projects/<slug>/hyperframes/review/section-XX.html`
 - `projects/<slug>/hyperframes/index.html` only as the current active mirror when useful
@@ -94,8 +94,8 @@ Read these before rendering:
 15. `references/output-formats.md` before writing outputs
 16. the chosen project files:
     - `02-script.md`
-    - `04-voiceover.md`
-    - `05-visual-plan.md`
+    - `03-voiceover.md`
+    - `04-visual-plan.md`
     - the selected section's `voiceover/section-XX-*/section-XX-word-timings.json` when present (word-level voice timing; the source of truth for cue `data-start` values)
 
 Also read active HyperFrames implementation guidance when available:
@@ -116,7 +116,7 @@ Use this order:
 
 1. If the user names a project slug or path, use that project.
 2. If the current chat clearly selected a project and the folder exists, use that project.
-3. If there is exactly one project with completed `05-visual-plan.md`, smart-select it and say so.
+3. If there is exactly one project with completed `04-visual-plan.md`, smart-select it and say so.
 4. Otherwise scan `projects/`, excluding `_template`, and find render candidates.
 
 A render candidate has:
@@ -124,8 +124,8 @@ A render candidate has:
 - non-empty `00-topic-intake.md`
 - non-empty `01-research-pack.md`
 - non-empty `02-script.md`
-- non-empty `04-voiceover.md`
-- non-empty `05-visual-plan.md`
+- non-empty `03-voiceover.md`
+- non-empty `04-visual-plan.md`
 - at least one section voiceover folder
 - at least one section visual-plan folder
 
@@ -140,8 +140,8 @@ Before section selection or writing files, verify the chosen project has:
 - non-empty `00-topic-intake.md`
 - non-empty `01-research-pack.md`
 - non-empty `02-script.md`
-- non-empty `04-voiceover.md`
-- non-empty `05-visual-plan.md`
+- non-empty `03-voiceover.md`
+- non-empty `04-visual-plan.md`
 
 If `02-script.md` does not contain parsable sections in the form:
 
@@ -151,9 +151,9 @@ If `02-script.md` does not contain parsable sections in the form:
 
 stop and ask the user to rerun `script-draft` or fix the script structure first.
 
-If `04-voiceover.md` is missing, empty, or older than `02-script.md`, stop and ask the user to run or rerun `voiceover`.
+If `03-voiceover.md` is missing, empty, or older than `02-script.md`, stop and ask the user to run or rerun `voiceover`.
 
-If `05-visual-plan.md` is missing, empty, or older than `04-voiceover.md`, stop and ask the user to run or rerun `visual-plan`.
+If `04-visual-plan.md` is missing, empty, or older than `03-voiceover.md`, stop and ask the user to run or rerun `visual-plan`.
 
 ## Section Selection Gate
 
@@ -208,7 +208,7 @@ For each selected section, verify:
 
 If selected section voiceover is stale versus `02-script.md`, stop and ask the user to rerun `voiceover`.
 
-If selected section visual plan is stale versus the section voiceover or `05-visual-plan.md`, stop and ask the user to rerun `visual-plan`.
+If selected section visual plan is stale versus the section voiceover or `04-visual-plan.md`, stop and ask the user to rerun `visual-plan`.
 
 If assets are missing but can be generated or created safely from the visual plan, create them and document source notes.
 If assets are missing and cannot be created safely, stop and report the exact missing assets.
@@ -226,7 +226,7 @@ Rules:
 - Remove only the specific accidental artifact the user named or the evidence clearly identifies, such as an unreferenced VFX registry composition, a duration extension, or a duplicate effect layer.
 - If Studio added `data-hf-studio-*` positioning attributes, preserve them unless they are part of the accidental artifact.
 - After cleanup, verify root `data-duration` matches the section voiceover duration unless the user explicitly approved extra silent visual time.
-- Record the preservation note in the section `IMPLEMENTATION.md` and `06-production-board.md`.
+- Record the preservation note in the section `IMPLEMENTATION.md` and `05-production-board.md`.
 
 ### Section Remake / Quality Recovery Mode
 
@@ -243,7 +243,7 @@ In this mode:
 - use one main visual idea per big scene, then add small voice-timed cue changes inside that big scene
 - avoid replacing the entire frame for every sentence when the spoken idea is still part of the same object, place, or mechanism
 - use WIT only for emotional beats, not every scene
-- write the override reason into `IMPLEMENTATION.md` and `06-production-board.md`
+- write the override reason into `IMPLEMENTATION.md` and `05-production-board.md`
 
 Good remake pattern:
 
@@ -296,7 +296,7 @@ Approved synthetic-failure recovery pattern from `why-cheap-products-keep-gettin
 - Replace neutral WIT poses with emotionally specific approved poses tied to the joke, such as suspicion, panic, trapped, betrayed, evidence, or money panic.
 - Compress feature lists into one or two readable labels. Do not make a separate prop, mini card, or floating image for every noun in the sentence.
 - Verify the recovery with a direct preview screenshot/contact sheet and ask: does each frame have a real texture anchor, a clear main idea, and a WIT pose that feels intentionally funny?
-- Record the rejected pattern and the new recovery source in `IMPLEMENTATION.md`, `06-production-board.md`, and `references/memory.md`.
+- Record the rejected pattern and the new recovery source in `IMPLEMENTATION.md`, `05-production-board.md`, and `references/memory.md`.
 
 Do not keep polishing a visual plan after the user identifies that plan as the failure source.
 
@@ -314,7 +314,7 @@ projects/<slug>/section-previews/section-XX-kebab-section-name/package.json
 projects/<slug>/section-previews/section-XX-kebab-section-name/hyperframes.json
 projects/<slug>/section-previews/section-XX-kebab-section-name/assets -> junction to ../../assets
 projects/<slug>/hyperframes/review/section-XX.html
-projects/<slug>/06-production-board.md
+projects/<slug>/05-production-board.md
 ```
 
 Start or reuse the section preview server on port `1000 + section number`.
@@ -384,7 +384,7 @@ Use when the user reviews render/build behavior and gives reusable lessons.
 
 Update in this order:
 
-1. affected project `06-production-board.md` or section implementation notes
+1. affected project `05-production-board.md` or section implementation notes
 2. this skill's `references/memory.md`
 3. shared memory only if the lesson improves the whole channel
 
@@ -507,7 +507,7 @@ Run this pass after reading the visual plan and before writing or editing HTML:
 - Real texture anchor: if a rejected/remade section felt synthetic, boring, or "too normal", each big scene needs a real/object texture or generated-real base unless there is a documented reason not to.
 - HyperFrames mechanics: data attributes, audio, deterministic GSAP, and timeline registration must follow the HyperFrames skill.
 
-If the visual plan is missing one of these decisions, render must make the decision explicitly and document it in `IMPLEMENTATION.md` / `06-production-board.md`; do not blindly build a weak plan.
+If the visual plan is missing one of these decisions, render must make the decision explicitly and document it in `IMPLEMENTATION.md` / `05-production-board.md`; do not blindly build a weak plan.
 
 ## Voice Sync And Motion Rules
 
@@ -627,7 +627,7 @@ If a real source has attribution, share-alike, logo, private-data, or unclear-co
    - when the user explicitly asks for video export, run `ffprobe`; clear stale extracted frames; extract key frames from the exported MP4; inspect a contact sheet; inspect any problem frames individually
    - start or reuse the preview server on the fixed section port
    - record Studio and direct composition URLs
-8. Write or update `projects/<slug>/06-production-board.md`.
+8. Write or update `projects/<slug>/05-production-board.md`.
 9. Run the Downstream Stale Gate.
 10. Respond with the Chat Response Format.
 11. Stop before review, upload, or learning unless explicitly asked.
@@ -657,7 +657,7 @@ Do not leave an interactive foreground server blocking the turn.
 
 Use `references/output-formats.md` for:
 
-- `06-production-board.md`
+- `05-production-board.md`
 - section implementation notes
 - chat response
 
@@ -665,9 +665,9 @@ Use `references/output-formats.md` for:
 
 After creating, updating, or rerunning a section preview, check for downstream files:
 
-- `07-review.md`
-- `08-upload.md`
-- `09-self-learning.md`
+- `06-review.md`
+- `07-upload.md`
+- `08-self-learning.md`
 - unified preview/render files when they exist
 
 If any exist for the affected section or full video, list them as stale in chat.
@@ -711,14 +711,14 @@ A section render is ready for review when:
 - real/object photos keep their natural texture unless a local label background is needed for readability
 - assets are referenced through the shared project asset library
 - source notes and attribution are updated
-- `06-production-board.md` records paths, commands, checks, and URLs
+- `05-production-board.md` records paths, commands, checks, and URLs
 - preview server is running or a clear failure reason is reported
 
 ## Hard Fails
 
 Reject or stop before finishing if:
 
-- the project lacks `05-visual-plan.md`
+- the project lacks `04-visual-plan.md`
 - the selected section lacks voiceover
 - the selected section lacks visual plan
 - the user has not explicitly selected `All` or a specific section

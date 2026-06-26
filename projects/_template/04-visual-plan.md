@@ -1,4 +1,4 @@
-# 05 Visual Plan
+# 04 Visual Plan
 
 Video: `<title>`
 
@@ -9,7 +9,7 @@ Source skill: `visual-plan`
 Source files:
 
 - `02-script.md`
-- `04-voiceover.md`
+- `03-voiceover.md`
 
 ## Visual Direction
 

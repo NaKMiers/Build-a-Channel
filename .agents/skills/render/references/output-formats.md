@@ -7,7 +7,7 @@ Use these shapes when running the `render` skill.
 Write or update:
 
 ```text
-projects/<slug>/06-production-board.md
+projects/<slug>/05-production-board.md
 ```
 
 ````markdown
@@ -22,8 +22,8 @@ Source skill: `render`
 Source files:
 
 - `02-script.md`
-- `04-voiceover.md`
-- `05-visual-plan.md`
+- `03-voiceover.md`
+- `04-visual-plan.md`
 
 ## Port Map
 
@@ -148,7 +148,7 @@ Status:
 ````markdown
 Done. I created/updated:
 
-[06-production-board.md](<absolute path>)
+[05-production-board.md](<absolute path>)
 
 Section target: `<All or Section X: name>`
 

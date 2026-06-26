@@ -28,7 +28,7 @@ Writes only:
 - `projects/<slug>/shorts/short-0N-<kebab>/` (one portrait HyperFrames project per short: `index.html`, `package.json`, `hyperframes.json`, `assets/`, `voiceover/`, `tts-inputs/`, `DESIGN.md`, `snapshots/`)
 - `projects/<slug>/output/shorts/short-0N-<kebab>.mp4` (the deliverables)
 
-Never modifies `section-previews/`, `hyperframes/`, `02-script.md`, `04-voiceover.md`, `05-visual-plan.md`, or any long-form section content. It only reads them.
+Never modifies `section-previews/`, `hyperframes/`, `02-script.md`, `03-voiceover.md`, `04-visual-plan.md`, or any long-form section content. It only reads them.
 
 ## Port Contract
 
@@ -51,7 +51,7 @@ Read before working:
 3. `.agents/_shared/channel/current-state.md`, `channel-foundation.md`, `channel-guardrails.md`, `learning-log.md`
 4. `.agents/_shared/systems/topic-packaging-hooks.md` (hook discipline) and `audio-feedback-quality.md`
 5. `references/memory.md` (this skill's proven toolchain + locked rules) — every run
-6. the chosen project's `02-script.md`, `04-voiceover.md`, `06-production-board.md`, the approved section builds, and `voiceover/combined-word-timings.json` when present
+6. the chosen project's `02-script.md`, `03-voiceover.md`, `05-production-board.md`, the approved section builds, and `voiceover/combined-word-timings.json` when present
 7. the `render` skill's WIT/safe-layout guidance for HyperFrames composition mechanics
 
 ## Locked Channel Rules For Shorts (owner-confirmed 2026-06-22)
@@ -97,7 +97,7 @@ Use only after the short(s) are approved.
 
 - `npx hyperframes render --output projects/<slug>/output/shorts/short-0N-<kebab>.mp4` (needs Chrome + ffmpeg; see memory).
 - Verify each MP4 with `ffprobe`: `1080x1920`, h264 + aac, duration == composition duration.
-- Record the deliverables in `shorts/shorts-plan.md` (and `06-production-board.md` if useful). Do not continue into upload/learning.
+- Record the deliverables in `shorts/shorts-plan.md` (and `05-production-board.md` if useful). Do not continue into upload/learning.
 
 ## Workflow
 

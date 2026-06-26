@@ -8,7 +8,7 @@ Use this file for section preview structure, port behavior, HyperFrames CLI habi
 ## Current Skill Standard
 
 - Run after `visual-plan`.
-- Require non-empty `00-topic-intake.md`, `01-research-pack.md`, `02-script.md`, `04-voiceover.md`, and `05-visual-plan.md`.
+- Require non-empty `00-topic-intake.md`, `01-research-pack.md`, `02-script.md`, the voiceover index (`03-voiceover.md`; legacy `04-voiceover.md`), and the visual-plan index (`04-visual-plan.md`; legacy `05-visual-plan.md`). Resolve by suffix per `.agents/rules/video-workflow.md`.
 - Require matching section voiceover output and matching section visual-plan output.
 - Do not require `03-packaging.md`; packaging is a side branch.
 - Require explicit user section selection: `All` or a specific section.
@@ -51,7 +51,7 @@ For each selected section, create or update:
 - `section-previews/section-XX-kebab-section-name/hyperframes.json`
 - `section-previews/section-XX-kebab-section-name/assets` junction to `../../assets`
 - `hyperframes/review/section-XX.html`
-- `06-production-board.md`
+- the production board file (`05-production-board.md`; legacy `06-production-board.md`)
 
 Explicitly requested MP4/WebM section exports belong under:
 
@@ -70,7 +70,7 @@ Lesson:
 Render must be section-first. Each section gets its own HyperFrames preview project and fixed port. Do not combine sections during section review.
 
 Apply next time:
-Use section port `1000 + section number`, reserve `1000` for unified preview, and write section build status into `06-production-board.md`.
+Use section port `1000 + section number`, reserve `1000` for unified preview, and write section build status into the production board file (`05-production-board.md`; legacy `06-production-board.md`).
 
 Promote to shared memory:
 Yes, as an operational production lesson.
@@ -146,7 +146,7 @@ Context:
 Section 1 Hook for `why-cheap-products-keep-getting-worse` used the approved preview-local `assets` junction first, but `hyperframes validate` returned repeated image 404s even though the junction resolved correctly in PowerShell.
 
 Lesson:
-Keep `projects/<slug>/assets/` as the source of truth, but if HyperFrames CLI checks fail to serve a section preview's junction-backed `assets/` folder on this Windows setup, materialize a minimal preview-local hardlinked asset working set for only the files used by that section and document the exception in `06-production-board.md`.
+Keep `projects/<slug>/assets/` as the source of truth, but if HyperFrames CLI checks fail to serve a section preview's junction-backed `assets/` folder on this Windows setup, materialize a minimal preview-local hardlinked asset working set for only the files used by that section and document the exception in the production board file (`05-production-board.md`; legacy `06-production-board.md`).
 
 Apply next time:
 
@@ -264,7 +264,7 @@ Apply next time:
 - use local font files for handwritten labels
 - use Studio/direct preview screenshots or screenshot contact sheets for QA
 - export MP4, run `ffprobe`, extract key frames, and inspect a contact sheet only when the user explicitly asks for video export
-- record the override, checks, render path, and stale downstream notes in `06-production-board.md`
+- record the override, checks, render path, and stale downstream notes in the production board file (`05-production-board.md`; legacy `06-production-board.md`)
 
 Promote to shared memory:
 no; keep in render memory unless the same pattern is approved across several sections.

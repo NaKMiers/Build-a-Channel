@@ -33,18 +33,20 @@ The main video pipeline is:
 00-topic-intake.md
 01-research-pack.md
 02-script.md
-04-voiceover.md
-05-visual-plan.md
-06-production-board.md
-07-review.md
-08-upload.md
-09-self-learning.md
+03-voiceover.md
+04-visual-plan.md
+05-production-board.md
+06-review.md
+07-upload.md
+08-self-learning.md
 ```
 
-Packaging side branch:
+Numbering note: the above is the NEW-project numbering (packaging left the numbered set on `2026-06-26`, so voiceover→render shifted up by one). Existing projects keep the old numbers (`04-voiceover` … `09-self-learning`, `03-packaging`). All skills resolve a step file by its name SUFFIX, never a hard-coded prefix — see `.agents/rules/video-workflow.md`.
+
+Packaging (after caption, not numbered):
 
 ```text
-01-research-pack.md -> 03-packaging.md
+caption -> packaging -> output/packaging.md (+ output/thumbnails/)
 ```
 
 Current executable steps:
@@ -52,17 +54,16 @@ Current executable steps:
 - `topic-intake` creates or updates `00-topic-intake.md`.
 - `research-pack` requires `00-topic-intake.md` and writes `01-research-pack.md`.
 - `script-draft` requires `00-topic-intake.md` and `01-research-pack.md`, then writes `02-script.md`.
-- `packaging` is a side branch from `research-pack`; it requires `00-topic-intake.md` and `01-research-pack.md`, then writes `03-packaging.md`.
-- `voiceover` requires `02-script.md`, then writes `04-voiceover.md` and section voiceover files.
-- `visual-plan` requires `04-voiceover.md` and selected section voiceover, then writes `05-visual-plan.md` and section visual-plan files.
-- `render` requires `05-visual-plan.md` and selected section visual plan, then writes `06-production-board.md` and section HyperFrames preview files.
+- `voiceover` requires `02-script.md`, then writes the voiceover index (`03-voiceover.md`; legacy `04`) and section voiceover files.
+- `visual-plan` requires the voiceover index and selected section voiceover, then writes the visual-plan index (`04-visual-plan.md`; legacy `05`) and section visual-plan files.
+- `render` requires the visual-plan index and selected section visual plan, then writes the production board (`05-production-board.md`; legacy `06`) and section HyperFrames preview files.
 - `combine` (after all sections) unifies the project on `localhost:1000` with one combined voiceover and exports the full MP4 to `output/`.
 - `caption` (after combine) transcribes the full combined audio for real word timings and exports `output/captions.srt`.
 - `shorts` (side sub-workflow from `combine`) turns the finished long video into 2-4 COMPLETE vertical shorts (`1080x1920`) on ports `1100 + short number` via native portrait HyperFrames rebuilds — reusing each source section's real assets, regenerating a per-short voiceover, and burning centered subtitles — then exports to `output/shorts/`. Each short carries NO CTA, never edits the long-form sections, and does not block caption, upload, or learning.
 
-Packaging side-branch rule:
+Packaging rule:
 
-Packaging does not block script, voiceover, visual plan, render, review, upload, or learning. Rerunning packaging does not make main pipeline outputs stale.
+Packaging runs after `caption` and requires `00-topic-intake.md`, `01-research-pack.md`, and `02-script.md`. It writes `output/packaging.md` (+ `output/thumbnails/`). Rerunning packaging makes only `upload`/`learning` potentially stale, not earlier production outputs.
 
 Pipeline rules:
 
@@ -71,7 +72,7 @@ Pipeline rules:
 - Rerunning an earlier step makes later outputs stale.
 - Remove stale downstream outputs only by explicit user request, or regenerate them by rerunning later skills in order.
 
-After `04-voiceover.md`, production branches by section. A selected section should move through visual plan, render, and review as its own branch. `All` means every section gets separate outputs, not one stitched planning artifact.
+After the voiceover index (`03-voiceover.md`; legacy `04`), production branches by section. A selected section should move through visual plan, render, and review as its own branch. `All` means every section gets separate outputs, not one stitched planning artifact.
 
 Render port rule:
 

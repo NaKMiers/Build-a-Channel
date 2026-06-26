@@ -1,6 +1,6 @@
 ---
 name: voiceover
-description: Create or update step 4 section voiceover for a Why It Works video project. Use when the user asks for Voiceover, section voiceover, generate audio for a script section, create narration audio, run step 4, or create all section voiceovers; requires completed project 00-topic-intake.md, 01-research-pack.md, and 02-script.md first, asks which script section to generate with All as the first option, then writes only the project's 04-voiceover.md plus section-local files under voiceover/.
+description: Create or update step 3 section voiceover for a Why It Works video project. Use when the user asks for Voiceover, section voiceover, generate audio for a script section, create narration audio, run step 3, or create all section voiceovers; requires completed project 00-topic-intake.md, 01-research-pack.md, and 02-script.md first, asks which script section to generate with All as the first option, then writes only the project's 03-voiceover.md plus section-local files under voiceover/.
 ---
 
 # Voiceover
@@ -33,9 +33,9 @@ If `01-research-pack.md` is older than `00-topic-intake.md`, treat the research 
 
 If `02-script.md` is older than `00-topic-intake.md` or `01-research-pack.md`, treat the script as stale and stop. Tell the user to rerun `script-draft`.
 
-If `02-script.md` has a newer modified time than `04-voiceover.md` or any section voiceover output, treat the existing voiceover output as stale. Do not trust it as current. Ask whether to regenerate the affected section or all sections.
+If `02-script.md` has a newer modified time than `03-voiceover.md` or any section voiceover output, treat the existing voiceover output as stale. Do not trust it as current. Ask whether to regenerate the affected section or all sections.
 
-When this skill creates, updates, or reruns `projects/<slug>/04-voiceover.md` or any file under `projects/<slug>/voiceover/`, every later output in the same project becomes stale.
+When this skill creates, updates, or reruns `projects/<slug>/03-voiceover.md` or any file under `projects/<slug>/voiceover/`, every later output in the same project becomes stale.
 
 List stale downstream files in chat. Do not silently delete them. Remove stale downstream files only when the user explicitly asks; otherwise downstream skills must be rerun in order.
 
@@ -178,7 +178,7 @@ projects/<slug>/voiceover/section-XX-kebab-section-name/section-XX-marked-script
 projects/<slug>/voiceover/section-XX-kebab-section-name/tts-inputs/
 projects/<slug>/voiceover/section-XX-kebab-section-name/scratch-audio/
 projects/<slug>/voiceover/section-XX-kebab-section-name/scratch-results.json
-projects/<slug>/04-voiceover.md
+projects/<slug>/03-voiceover.md
 ```
 
 If audio generation succeeds, place the selected audio file in:
@@ -205,7 +205,7 @@ Generate each script section as a separate section output using the same Section
 
 Do not stitch sections together. Assembly belongs to a later production or final-combine step.
 
-If one section fails, continue only when the failure does not invalidate the remaining sections. Record the failure in `04-voiceover.md` and chat.
+If one section fails, continue only when the failure does not invalidate the remaining sections. Record the failure in `03-voiceover.md` and chat.
 
 ### Improve Memory Mode
 
@@ -213,7 +213,7 @@ Use when the user reviews voiceover and gives reusable lessons.
 
 Update in this order:
 
-1. the project `04-voiceover.md` or section README if the review affects this video
+1. the project `03-voiceover.md` or section README if the review affects this video
 2. this skill's `references/memory.md`
 3. shared memory only if the lesson improves the whole channel
 
@@ -290,7 +290,7 @@ Do not create tag soup. If a line needs many tags to work, rewrite the line only
    - record exact voice, speed, language, tool, output path, duration, and status
    - write or update the section `README.md`
    - write or update `scratch-results.json`
-7. Write or update `projects/<slug>/04-voiceover.md` as the section voiceover index.
+7. Write or update `projects/<slug>/03-voiceover.md` as the section voiceover index.
 8. Run the Downstream Stale Gate.
 9. Respond with the Chat Response Format.
 10. Stop before visual plan, render, review, upload, or learning unless explicitly asked.
@@ -365,7 +365,7 @@ Use lowercase kebab-case.
 Write or update:
 
 ```text
-projects/<slug>/04-voiceover.md
+projects/<slug>/03-voiceover.md
 ```
 
 Use this structure:
@@ -465,13 +465,13 @@ Keep one useful MP3 preview file only unless a renderer requires another format.
 
 ## Downstream Stale Gate
 
-After creating, updating, or rerunning `04-voiceover.md` or section audio, check the same project for downstream files:
+After creating, updating, or rerunning `03-voiceover.md` or section audio, check the same project for downstream files:
 
-- `05-visual-plan.md`
-- `06-production-board.md`
-- `07-review.md`
-- `08-upload.md`
-- `09-self-learning.md`
+- `04-visual-plan.md`
+- `05-production-board.md`
+- `06-review.md`
+- `07-upload.md`
+- `08-self-learning.md`
 
 If any exist, list them as stale in chat and tell the user they should be removed or regenerated by rerunning downstream skills in order.
 
@@ -488,7 +488,7 @@ Use this structure:
 ```markdown
 Done. I created/updated:
 
-[04-voiceover.md](<absolute path>)
+[03-voiceover.md](<absolute path>)
 
 Section target: `<All or Section X: name>`
 

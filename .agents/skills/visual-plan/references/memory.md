@@ -8,14 +8,14 @@ Use this file for section-selection behavior, section visual-plan output shape, 
 ## Current Skill Standard
 
 - Run after `voiceover`.
-- Require non-empty `00-topic-intake.md`, `01-research-pack.md`, `02-script.md`, and `04-voiceover.md`.
+- Require non-empty `00-topic-intake.md`, `01-research-pack.md`, `02-script.md`, and the voiceover index (`03-voiceover.md`; legacy `04-voiceover.md` — resolve by suffix per `.agents/rules/video-workflow.md`).
 - Packaging is outside the main pipeline and must not block visual planning.
 - If voiceover is older than script, stop and ask for `voiceover`.
 - Require matching section voiceover output for each selected section.
 - Require the user to explicitly select `All` or a specific section before creating or editing visual-plan files.
 - Put `All` at the top of section choices.
 - Interpret `All` as separate visual-plan outputs for every section, not one giant full-video board table.
-- Write `05-visual-plan.md` as the project-level visual-plan index.
+- Write the visual-plan index (`04-visual-plan.md`; legacy `05-visual-plan.md`) as the project-level visual-plan index.
 - Write section details under `visual-plan/section-XX-kebab-section-name/`.
 - Put section reference images or generated references under `assets/visual-references/section-XX-kebab-section-name/`.
 - Act as a professional editor and content creator: decide what appears on screen, when it appears, how it reveals or moves, and why the viewer keeps watching.
@@ -48,9 +48,9 @@ For each selected section, create or update:
 - `visual-plan/section-XX-kebab-section-name/section-XX-kebab-section-name-visual-plan.md`
 - `visual-plan/section-XX-kebab-section-name/reference-board.md`
 - `assets/visual-references/section-XX-kebab-section-name/`
-- `05-visual-plan.md`
+- the visual-plan index (`04-visual-plan.md`; legacy `05-visual-plan.md`)
 
-`05-visual-plan.md` should act as the project-level index for generated and not-yet-generated section visual plans.
+The visual-plan index (`04-visual-plan.md`; legacy `05-visual-plan.md`) should act as the project-level index for generated and not-yet-generated section visual plans.
 
 Each section visual plan must include:
 
@@ -78,7 +78,7 @@ Lesson:
 Visual planning must be section-first. It should ask which project and which section to plan, include `All` as the first option, and produce separate section visual-plan outputs.
 
 Apply next time:
-Use the section list from `02-script.md`, verify matching `04-voiceover.md` section output, and do not infer the target section from existing work.
+Use the section list from `02-script.md`, verify matching voiceover section output (`03-voiceover.md`; legacy `04-voiceover.md`), and do not infer the target section from existing work.
 
 Promote to shared memory:
 Yes, as an operational production lesson.

@@ -42,15 +42,15 @@ Use these compact files instead of the old many-file system:
 - `topic-intake`: step 0, writes `00-topic-intake.md`
 - `research-pack`: step 1, writes `01-research-pack.md`
 - `script-draft`: main step 2, writes `02-script.md`
-- `packaging`: side branch step 3, requires only `00-topic-intake.md` and `01-research-pack.md`, writes `03-packaging.md`
-- `voiceover`: main step 4, writes `04-voiceover.md` and section audio
-- `visual-plan`: main step 5, writes `05-visual-plan.md`, section plans, reference boards, and visual reference assets
-- `render`: main step 6, writes `06-production-board.md`, section HyperFrames previews, review copies, and optional renders
+- `voiceover`: main step 3, writes `03-voiceover.md` (legacy `04`) and section audio
+- `visual-plan`: main step 4, writes `04-visual-plan.md` (legacy `05`), section plans, reference boards, and visual reference assets
+- `render`: main step 5, writes `05-production-board.md` (legacy `06`), section HyperFrames previews, review copies, and optional renders
+- `packaging`: runs after `caption`; requires `00-topic-intake.md`, `01-research-pack.md`, and `02-script.md`; writes `output/packaging.md` (titles, descriptions, thumbnail prompts) and `output/thumbnails/`. No longer numbered (was `03-packaging.md`)
 - `combine`: project-level assembly + export step after all sections; unifies on `localhost:1000` with one combined voiceover and exports the full MP4 to `output/`
 - `caption`: post-combine; transcribes the full combined audio for real word timings, uses exact `02-script.md` wording, exports `output/captions.srt`
 - `shorts`: side sub-workflow from `combine`; turns the finished long video into 2-4 COMPLETE vertical shorts (`1080x1920`) on ports `1100 + short number` via native portrait HyperFrames rebuilds (reused section assets + regenerated per-short voice + burned centered subtitles, NO CTA), exported to `output/shorts/`. First run: `why-cheap-products-keep-getting-worse` (3 shorts)
 
-Sequential production skills enforce prerequisites. Main pipeline order is `topic-intake -> research-pack -> script-draft -> voiceover -> visual-plan -> render -> review -> combine -> caption -> upload -> learning`. Packaging is a side branch from `research-pack`; it requires only topic intake and research pack and does not block script, voiceover, visual plan, render, review, upload, or learning. `shorts` is a side sub-workflow after `combine`. Rerunning an earlier main-pipeline dependency makes downstream main outputs stale until removed by explicit user request or regenerated in order. After voiceover, production branches by section: each section can move through visual plan, render, and review separately. Render uses fixed ports: unified preview on `localhost:1000`, section `N` on `localhost:1000 + N`.
+Sequential production skills enforce prerequisites. Main pipeline order is `topic-intake -> research-pack -> script-draft -> voiceover -> visual-plan -> render -> review -> combine -> caption -> packaging -> upload -> learning`. Packaging now runs after `caption` (it requires topic intake, research pack, and script, and writes `output/packaging.md` + `output/thumbnails/`). `shorts` is a side sub-workflow after `combine`. As of `2026-06-26` the numbered files shifted up by one for NEW projects (voiceover `03`, visual-plan `04`, production-board `05`, review `06`, upload `07`, learning `08`); existing projects keep their original numbers, and all skills resolve step files by name suffix per `.agents/rules/video-workflow.md`. Rerunning an earlier main-pipeline dependency makes downstream main outputs stale until removed by explicit user request or regenerated in order. After voiceover, production branches by section: each section can move through visual plan, render, and review separately. Render uses fixed ports: unified preview on `localhost:1000`, section `N` on `localhost:1000 + N`.
 
 ## Current WIT
 

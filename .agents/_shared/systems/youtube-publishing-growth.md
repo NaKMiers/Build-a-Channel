@@ -249,7 +249,7 @@ Run this every time. It's the cure for "uploading by instinct."
 1. Video file exported to `projects/<slug>/output/` (from `combine`).
 2. Captions `.srt` ready in `output/` (from `caption`) — always upload real captions; never
    rely on auto-captions (doubly important for English learners).
-3. Packaging decided from `03-packaging.md`: final **title**, **3 thumbnails** for Test &
+3. Packaging decided from `output/packaging.md`: final **title**, **3 thumbnails** for Test &
    compare, **description + chapters**, **3 hashtags**, tags, **pinned comment**.
 4. Studio → Upload → wait for **HD processing** before publishing.
 5. Paste title + description (with chapters and channel link filled in).
@@ -260,7 +260,7 @@ Run this every time. It's the cure for "uploading by instinct."
 10. End screen (subscribe + "best for viewer" video) — optional, can be added later.
 11. Set visibility (Public, Scheduled, or Premiere) at your fixed weekly slot.
 12. After live: post the pinned comment; schedule the 3 Shorts across the week.
-13. Record the published URL back into `projects/<slug>/03-packaging.md`.
+13. Record the published URL back into `projects/<slug>/output/packaging.md`.
 14. Day 7: log one lesson in `learning-log.md`.
 
 ---

@@ -1,6 +1,6 @@
 ---
 name: voiceover
-description: Create or update step 4 section voiceover for a Why It Works video project. Use when the user asks for Voiceover, section voiceover, generate audio for a script section, create narration audio, run step 4, or create all section voiceovers; requires completed project 00-topic-intake.md, 01-research-pack.md, and 02-script.md first, asks which script section to generate with All as the first option, then writes only the project's 04-voiceover.md plus section-local files under voiceover/.
+description: Create or update step 3 section voiceover for a Why It Works video project. Use when the user asks for Voiceover, section voiceover, generate audio for a script section, create narration audio, run step 3, or create all section voiceovers; requires completed project 00-topic-intake.md, 01-research-pack.md, and 02-script.md first, asks which script section to generate with All as the first option, then writes only the project's 03-voiceover.md plus section-local files under voiceover/.
 ---
 
 # Voiceover (Claude wrapper)

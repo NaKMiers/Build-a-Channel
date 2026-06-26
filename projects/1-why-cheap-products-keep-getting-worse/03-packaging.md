@@ -6,6 +6,16 @@ Status: `draft packaging - rerun overwrite`
 
 Source skill: `packaging`
 
+> **2026-06-26 — migrated to locked-pairs format.** The copy-paste deliverable now lives in
+> [`output/packaging.md`](output/packaging.md), and the 5 thumbnails moved to `output/thumbnails/`
+> renamed by pair number. Pair map: Pair 1 = old Variant A = `main-pair-1.png` (Why Cheap Products
+> Don't Stay Cheap / FUTURE?); Pair 2 = old Variant C = `main-pair-2.png` (Why Cheap Products Keep
+> Getting Worse / 2 WEEKS?); Pair 3 = old Variant D = `main-pair-3.png` (The Hidden Cost Of Cheap
+> Products / LATER? — remake); Pair 4 = old Variant E = `main-pair-4.png` (Why Cheap Products Have
+> Less Future / MISSING?); Pair 5 = old Variant B = `main-pair-5.png` (Why Good Deals Keep Breaking /
+> CHEAP?). The scored tables below are the original source of record; titles are now coupled to
+> their paired thumbnail.
+
 Source files:
 
 - `00-topic-intake.md`

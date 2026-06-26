@@ -15,9 +15,9 @@ Keep this short. Current rules belong in `current-state.md`, `production-workflo
 ## Current Operational Decisions
 
 - `.agents/_shared/` is now intentionally compact: use `channel/production-workflow.md`, `channel/brand-system.md`, and the four docs in `systems/` as the shared production brain.
-- Main pipeline order is `topic-intake -> research-pack -> script-draft -> voiceover -> visual-plan -> render -> review -> upload -> learning`.
-- Packaging is a side branch from `research-pack`: it requires only `00-topic-intake.md` and `01-research-pack.md`.
-- Packaging does not block script, voiceover, visual plan, render, review, upload, or learning.
+- Main pipeline order is `topic-intake -> research-pack -> script-draft -> voiceover -> visual-plan -> render -> review -> combine -> caption -> packaging -> upload -> learning`.
+- Packaging (as of 2026-06-26) runs after `caption`, requires `00-topic-intake.md` + `01-research-pack.md` + `02-script.md`, and writes `output/packaging.md` (+ `output/thumbnails/`); it is no longer the numbered `03-packaging.md`.
+- New-project file numbering shifted up by one (voiceover `03` … self-learning `08`); existing projects keep old numbers and skills resolve step files by name suffix (`.agents/rules/video-workflow.md`).
 - After voiceover, production branches by section. `visual-plan` requires the selected section voiceover and creates section-level plans before render.
 - `render` uses one HyperFrames preview project and one localhost per section. Unified/final preview is reserved for `localhost:1000`; section `N` uses `localhost:1000 + N`.
 - Current WIT source is the draft simple white round-headed pose set in `.agents/_shared/assets/wit/poses/`.

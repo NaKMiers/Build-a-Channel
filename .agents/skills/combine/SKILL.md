@@ -25,11 +25,11 @@ Combine writes:
 
 - `projects/<slug>/hyperframes/full-video/` (the unified project: `index.html`, `compositions/section-XX.html`, consolidated `assets/`, `combined-voiceover.mp3`, `package.json`, `hyperframes.json`)
 - `projects/<slug>/output/<slug>.mp4` (the final exported video — the deliverable)
-- a status note in `projects/<slug>/06-production-board.md`
+- a status note in `projects/<slug>/05-production-board.md`
 
 `renders/` is used only as a temporary staging area for the export and is removed if it ends up empty (see Final Video Export). `output/` is the single home for all final deliverables (final video, and later `caption`'s `captions.srt`, etc.).
 
-Combine does NOT create or modify: `section-previews/`, `hyperframes/review/`, `02-script.md`, `04-voiceover.md`, `05-visual-plan.md`, any section `index.html`, or any voiceover audio. It only reads them.
+Combine does NOT create or modify: `section-previews/`, `hyperframes/review/`, `02-script.md`, `03-voiceover.md`, `04-visual-plan.md`, any section `index.html`, or any voiceover audio. It only reads them.
 
 ## Port Contract
 
@@ -69,7 +69,7 @@ Read before assembling:
 3. `.agents/rules/video-workflow.md`
 4. `.agents/_shared/channel/current-state.md`
 5. `references/memory.md`
-6. the chosen project's `02-script.md`, `04-voiceover.md`, and `06-production-board.md`
+6. the chosen project's `02-script.md`, `03-voiceover.md`, and `05-production-board.md`
 7. the surviving section builds under `hyperframes/review/section-XX.html` (preferred source — the approved mirror) and/or `section-previews/section-XX-*/index.html`
 
 ## What Combine Reuses (never creates)
@@ -159,7 +159,7 @@ WebM: only if the user explicitly asks; same staging → move → cleanup flow, 
 5. Verify the preview (Self-Check below).
 6. Start/restart the preview server on port 1000; confirm `HTTP 200`.
 7. Export the final video (Final Video Export): render to `renders/` staging, move the result to `output/<slug>.mp4`, then remove `renders/` if it is left empty.
-8. Write the status note in `06-production-board.md` (note the `output/` deliverable path).
+8. Write the status note in `05-production-board.md` (note the `output/` deliverable path).
 9. Respond with the Combine report, including the exported `output/` path. Do not continue into caption, upload, or learning.
 
 ## Self-Check (must pass before handoff)
