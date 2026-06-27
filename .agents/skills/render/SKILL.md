@@ -58,8 +58,24 @@ Required previous outputs:
 - `projects/<slug>/04-visual-plan.md`
 - selected section voiceover under `projects/<slug>/voiceover/`
 - selected section visual plan under `projects/<slug>/visual-plan/`
+- the selected section's implemented assets in `projects/<slug>/assets/` (produced by `visual-implement`; see `assets/asset-manifest.md`)
 
 Packaging now runs after caption and writes `output/packaging.md`; it is not a render prerequisite. Do not require packaging for render.
+
+### Asset Consumption (post-`visual-implement`)
+
+As of `2026-06-28`, `visual-implement` runs between `visual-plan` and `render` and produces the
+scene assets as ISOLATED elements (generated images, browsed real photos, pose PNGs) into the project
+`assets/` library, tracked in `assets/asset-manifest.md`. Render's job is to **composite** the mascot +
+these pre-made assets into each scene's layout described by the visual plan — pull each asset by the
+filename the plan/manifest specifies and place it per the scene's layout. The same subject uses the
+same file across scenes, so a recurring character stays identical.
+
+Do not re-source or regenerate an asset that the manifest already provides. Only source/build an asset
+yourself as a documented fallback when it is genuinely missing or marked `prompt-ready / awaiting
+generation` / `awaiting drop` in the manifest — in that case, report the gap and (if safe) create a
+clean placeholder or fetch a safe asset, noting it in `IMPLEMENTATION.md` and `05-production-board.md`.
+If a section's assets are missing entirely, stop and tell the user to run `visual-implement` first.
 
 Write or update:
 

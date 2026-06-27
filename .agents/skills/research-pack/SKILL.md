@@ -102,7 +102,13 @@ If `01-research-pack.md` exists but `00-topic-intake.md` has a newer modified ti
 
 ## Browsing Requirement
 
-Research requires current web or YouTube browsing.
+Research requires current web or YouTube browsing, and it should browse the internet across **several
+passes**, not one: (1) a facts/explanation pass for credible sources; (2) a demand/reference pass for
+how others cover this topic and how engaging videos on it are MADE (hooks, structure, pacing, jokes,
+visuals worth learning from); (3) a visual-evidence pass for real-life objects, UI, and reference-board
+leads. Gather concrete, linked resources the script and visual plan can actually reference — the goal
+is a strong, accurate, *engaging* video for A2–C1 English learners (the channel's "interesting English"
+advantage), not a link dump.
 
 Use the project-local Browse skill first:
 
@@ -119,6 +125,7 @@ For every research pack, collect enough sources to support script writing:
 
 - `5-8` factual or explanatory sources from credible outlets, official pages, research papers, consumer organizations, company docs, industry reports, or reputable explainers
 - `2-4` YouTube/video references with visible demand, packaging, structure, or risk signals
+- `2-3` engagement-study references: how the best videos on this topic stay engaging (hook, structure, pacing, humor, visual ideas) — record what to learn without copying
 - `10-20` visual/reference-board leads as descriptions and source links, with real internet image leads prioritized when the topic has real-world objects
 
 If browsing fails, write `Reference confidence: low`, record what failed, and do not invent source details.

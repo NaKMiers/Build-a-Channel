@@ -9,9 +9,11 @@ Keep it short and current.
 - Channel: `Why It Works`
 - Type: English-first no-face explainer YouTube channel
 - Status: foundation stage with project-local skills and HyperFrames-first production
-- Main audience lens: English learners
-- Main lane: money, internet, society, business, and modern life
-- Tone: smart, simple, funny, dry
+- Main audience lens: English learners, level `A2–C1` (anchor at B1)
+- Competitive advantage: `interesting English` — entertainment-first explainers so learners stay and learn (their motivation to keep watching = their motivation to learn)
+- Topic sourcing: trending / currently-interesting topics the world cares about now, chosen with real demand evidence (see `topic-intake`)
+- Main lane: money, internet, society, business, modern life, and current culture
+- Tone: smart, simple, funny, dry, and allowed to be savage/cheeky (edge aimed at the system / the viewer's own wallet, never slurs; public figures only as transformative parody) — see `learning-log.md` confirmed tone + safety rules
 
 ## Core Promise
 
@@ -43,14 +45,15 @@ Use these compact files instead of the old many-file system:
 - `research-pack`: step 1, writes `01-research-pack.md`
 - `script-draft`: main step 2, writes `02-script.md`
 - `voiceover`: main step 3, writes `03-voiceover.md` (legacy `04`) and section audio
-- `visual-plan`: main step 4, writes `04-visual-plan.md` (legacy `05`), section plans, reference boards, and visual reference assets
-- `render`: main step 5, writes `05-production-board.md` (legacy `06`), section HyperFrames previews, review copies, and optional renders
+- `visual-plan`: main step 4, writes `04-visual-plan.md` (legacy `05`) + synced section plans. As of 2026-06-28 it is a rebuild: ONE master plan + synced section copies, per-sentence scenes, extreme scene detail + an ASSET list per scene (type/filename/layout). It DESCRIBES only (no image prompts) and may invent new poses/scenes (within copyright/law/community standards).
+- `visual-implement`: main step 4.5 (unnumbered), reads the visual plan's ASSET lists and produces them — writes image prompts + creates isolated `generate` elements, browses license-safe real photos / captures public screenshots, copies poses, REUSES by filename — into `assets/` + `assets/asset-manifest.md`.
+- `render`: main step 5, writes `05-production-board.md` (legacy `06`), section HyperFrames previews, review copies, and optional renders. As of 2026-06-28 it COMPOSITES the mascot + pre-made assets from `assets/` per the plan's layout (re-sources only as a documented fallback).
 - `packaging`: runs after `caption`; requires `00-topic-intake.md`, `01-research-pack.md`, and `02-script.md`; writes `output/packaging.md` (titles, descriptions, thumbnail prompts) and `output/thumbnails/`. No longer numbered (was `03-packaging.md`)
 - `combine`: project-level assembly + export step after all sections; unifies on `localhost:1000` with one combined voiceover and exports the full MP4 to `output/`
 - `caption`: post-combine; transcribes the full combined audio for real word timings, uses exact `02-script.md` wording, exports `output/captions.srt`
 - `shorts`: side sub-workflow from `combine`; turns the finished long video into 2-4 COMPLETE vertical shorts (`1080x1920`) on ports `1100 + short number` via native portrait HyperFrames rebuilds (reused section assets + regenerated per-short voice + burned centered subtitles, NO CTA), exported to `output/shorts/`. First run: `why-cheap-products-keep-getting-worse` (3 shorts)
 
-Sequential production skills enforce prerequisites. Main pipeline order is `topic-intake -> research-pack -> script-draft -> voiceover -> visual-plan -> render -> review -> combine -> caption -> packaging -> upload -> learning`. Packaging now runs after `caption` (it requires topic intake, research pack, and script, and writes `output/packaging.md` + `output/thumbnails/`). `shorts` is a side sub-workflow after `combine`. As of `2026-06-26` the numbered files shifted up by one for NEW projects (voiceover `03`, visual-plan `04`, production-board `05`, review `06`, upload `07`, learning `08`); existing projects keep their original numbers, and all skills resolve step files by name suffix per `.agents/rules/video-workflow.md`. Rerunning an earlier main-pipeline dependency makes downstream main outputs stale until removed by explicit user request or regenerated in order. After voiceover, production branches by section: each section can move through visual plan, render, and review separately. Render uses fixed ports: unified preview on `localhost:1000`, section `N` on `localhost:1000 + N`.
+Sequential production skills enforce prerequisites. Main pipeline order is `topic-intake -> research-pack -> script-draft -> voiceover -> visual-plan -> visual-implement -> render -> review -> combine -> caption -> packaging -> upload -> learning`. Packaging now runs after `caption` (it requires topic intake, research pack, and script, and writes `output/packaging.md` + `output/thumbnails/`). `shorts` is a side sub-workflow after `combine`. As of `2026-06-26` the numbered files shifted up by one for NEW projects (voiceover `03`, visual-plan `04`, production-board `05`, review `06`, upload `07`, learning `08`); existing projects keep their original numbers, and all skills resolve step files by name suffix per `.agents/rules/video-workflow.md`. Rerunning an earlier main-pipeline dependency makes downstream main outputs stale until removed by explicit user request or regenerated in order. After voiceover, production branches by section: each section can move through visual plan, render, and review separately. Render uses fixed ports: unified preview on `localhost:1000`, section `N` on `localhost:1000 + N`.
 
 ## Current WIT
 
@@ -68,6 +71,8 @@ It should contain only:
 - the `24` transparent PNG poses listed in the manifest
 
 The current WIT direction is the simple white round-headed thumbnail WIT with thick black outline, oversized black glasses, expressive eyebrows, simple white body, and suspicious / betrayed / panicked reactions.
+
+Mascot upgrade direction (owner-directed 2026-06-28, in design): the plain white-blob WIT scored as a primary weakness. The target is a mascot that is a REAL character — color, an outfit, a wide expression range, the ability to "play roles" (boss, broke, etc.), and a cheeky personality — modeled on the studied reference pose library at `analysis/vuive poses/` (catalogued in `analysis/vuive poses/pose.md`). The pose library is the starting palette; `visual-plan` may invent new poses and `visual-implement` generates them. A finalized WIT redesign is still pending owner approval.
 
 Do not use removed `original-wit-24`, older `core-24`, or `comedy-core` WIT as current channel WIT.
 

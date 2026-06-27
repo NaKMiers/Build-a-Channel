@@ -1,93 +1,54 @@
 ---
 name: visual-plan
-description: Create or update step 4 render-trustworthy section visual plans for a Why It Works video project. Use when the user asks for Visual Plan, visual planning, scene-by-scene or second-by-second what-when-how screen direction, big-scene and cue-state timeline, reference board, real-life internet visual references, generated support assets, WIT pose planning, HyperFrames build guidance, run step 4, or plan visuals for one section or all sections; requires completed 00-topic-intake.md, 01-research-pack.md, 02-script.md, 03-voiceover.md, explicit project selection, and explicit section selection with All as the first option, then writes only the project's 04-visual-plan.md, visual-plan/ section folders, and visual reference assets.
+description: Create or update the step 4 visual plan for a Why It Works video project — the detailed, imagination-led blueprint of every scene. Use when the user asks for visual plan, scene plan, scene-by-scene screen direction, describe the visuals, plan the visuals, or step 4 of the Why It Works workflow. It builds ONE master plan per video and synced per-section copies, breaks the script into per-sentence (or few-sentence) scenes, and describes each scene in extreme detail (composition, every element, mascot pose, on-screen text, emotion, insight, element linkage, show-as-you-say timing, sound, color) plus an ASSET list per scene (type generate/browse/screenshot/reuse, filename, layout). visual-plan DESCRIBES only — it never writes image-generation prompts (that is visual-implement's job) and is not limited to the existing pose library (it may invent new poses/scenes if good, within copyright/law/YouTube community standards). Requires completed 00-topic-intake.md, 01-research-pack.md, 02-script.md, 03-voiceover.md and an explicit section selection with All first; writes only 04-visual-plan.md and the visual-plan/ section folders.
 ---
 
 # Visual Plan
 
 ## Purpose
 
-Run step `5` of the `Why It Works` video workflow.
+Run step `4` of the `Why It Works` video workflow.
 
-Turn approved script and section voiceover into a section-level visual blueprint that is trustworthy enough for HyperFrames render to follow.
+The visual plan is the **backbone of the video's illustration**. It describes, scene by scene, exactly
+what the viewer sees, so that a person (or a later skill) can imagine ~99% of every frame from the
+text alone, then build it.
 
-This is the most important handoff before render. Treat the work as a professional video editor and professional content creator would:
+Two hard principles define this skill:
 
-- decide exactly what appears on screen
-- decide when it appears against the voiceover
-- decide how it attracts attention, supports the joke, and explains the idea
-- decide what assets HyperFrames needs before building
-- use sourced real-world references first, then generated images only as support, fallback, or controlled production mockups
-- make every big scene, cue state, visual asset, WIT pose, label, and markup decision useful enough that render can build from it without guessing
+1. **DESCRIBE only — never write image-generation prompts.** This skill paints the scene in words and
+   lists which ASSETS each scene needs (type + filename + layout). Turning an asset description into an
+   image-generation prompt, and actually creating/finding the asset, is `visual-implement`'s job.
+2. **Imagination is not limited.** Within copyright, law, and YouTube community standards, anything the
+   plan describes must be buildable by all means — so describe whatever is funniest/clearest. The plan
+   MAY invent brand-new mascot poses or whole new scene ideas; it is NOT restricted to the existing
+   pose library. The library (`.agents/_shared/assets/wit/poses/`) is a starting palette, not a cage.
 
-Do not treat this as a loose mood board. It is a timed scene plan, asset plan, humor plan, reference board, and render handoff.
+## One Master Plan, Synced Section Copies
 
-The current standard is based on the approved Section 1 rebuild for `why-cheap-products-keep-getting-worse`:
+There is exactly **one master visual plan per video**: `04-visual-plan.md`. It holds the video-level
+direction plus every scene of every section.
 
-```text
-few persistent big scenes -> small voice-timed cue changes -> real/local assets -> readable emotional WIT -> screenshot/contact-sheet QA handoff
-```
+Each section also gets its own file under `visual-plan/section-XX-*/`. A section file is an **exact
+copy of that section's slice of the master**, prefixed with the video-level direction summary, so each
+section "sees the whole video" and is never read in isolation.
 
-The Section 4 recovery for `why-cheap-products-keep-getting-worse` adds the default pattern for explanatory list sections:
+Sync rule: the master and the section copies must ALWAYS agree. Whenever you create or edit a section's
+scenes, write the same content into both the master `04-visual-plan.md` and that section's file in the
+same run. Never let them drift.
 
-```text
-few strong real/object backgrounds -> compressed memory labels -> 3-4 giant WIT emotional beats -> no scattered object-card tray
-```
+## Scene Granularity
 
-When a script lists many small product details, do not give every noun its own card, image, arrow, or label. Collapse related items into one visual idea per big scene and one short label per cue unless the voiceover needs a specific proof object.
+Cut scenes **per sentence, or a few sentences per scene** — never one static frame per whole section.
+The reference standard (the Vui Vẻ-style explainer the owner studied) changes the visual on almost
+every sentence: a new photo, a new mascot pose, or a clean mascot-only focus frame. The eye never
+habituates. Target a visible change every few seconds, synced to the spoken line.
 
-The approved Section 1 remake for `why-everything-is-a-subscription-now` is the STANDING vivid-hook template (owner-confirmed 2026-06-23). Plan every section to this bar:
-
-```text
-vivid on-topic OBJECT photo bases -> VARIED idea-devices per beat -> giant WIT that VARIES per scene
-```
-
-- Bases: vivid, on-topic, brand/people-free objects that dramatize the line (money/coins/cash, padlocks, glowing screens), not mundane desks/hands. If clean topical photos are scarce, use a strong concrete object + CSS real-UI.
-- Idea-devices: do NOT show every idea in the same handwritten cream rectangle. VARY the device per beat — app-grid tiles, a kinetic number/counter, notification toasts, a countdown, a full-width system/EXPIRED banner, a padlock wall, bold kinetic headline type, badges, a chat bubble, a stamp. Reserve the cream label for the occasional aside.
-- WIT: GIANT (≈`1/2` frame) and the soul of each scene, with an EXPRESSIVE on-topic pose per beat. VARY WIT across scenes in side (left / center / right), scale, vertical anchor, AND pose; flip the text/UI to the side WIT is not using; rearrange items around WIT instead of shrinking it. Never park WIT on the same side every scene with text always opposite. (`wit-pose-money-panic.png` AND `wit-pose-typing-on-laptop.png` have a baked black bg — avoid on photo scenes.)
-
-### Default Section Build Bar — apply UP FRONT, do not ship plain and wait for rejection (owner-confirmed 2026-06-24)
-
-This template is the DEFAULT for EVERY section of EVERY video for this owner, not an upgrade you reach for after a rejection. On `why-buy-1-get-1-beats-50-off` the owner rejected plain first passes three times (a dim antique register, a cute piggy-bank swap, and a plain wood/white + flat-CSS-card Section 3 with small WIT) before each was rebuilt to this bar. Plan to it from the first draft. Concrete recipe:
-
-- BASES: one vivid object photo per scene, kept BRIGHT and VISIBLE (`brightness ~0.7–0.85`, raised saturation/contrast). Do NOT cover the photo with a heavy dark overlay — the owner rejected "dark areas overlay" as not good. Readability comes from strong text-shadow + the device cards' own backgrounds, plus AT MOST a subtle edge vignette (`rgba(4,5,10,0) ~54%, ~0.38 at 100%`) or a light text-side gradient that fades fully to transparent before mid-frame. Never a full-frame dark scrim. Reusing money/coins/cash/padlock/curtain bases across sections (with DISTINCT grades) is fine; never a plain/literal-but-flat base (bare wood, objects-on-white, a dim antique) — those read as "too simple."
-- IDEA-DEVICES: each beat gets a VARIED, kinetic hero device. For any money/count/number beat, a GIANT kinetic number/counter (≈`250–320px`) is the hero, not a small label or receipt card. Plain cream labels / receipt strips are only small supporting elements, never the main thing on screen. Rotate devices across beats (giant number, popping toasts, stamp, full-width banner takeover, glowing payoff headline, app-grid, countdown).
-- WIT SIZE: plan WIT GIANT — target visible width ≈`1120–1300px` at 1920×1080 (≈`1/3–1/2` frame). A WIT planned below ~`1/3` frame is a defect to fix in the plan, not ship. Vary side/scale/pose every scene.
-- SCENE COUNT + MOTION: scale to runtime — about `5` scenes for a ~`30s` section, `4–5` for ~`20–25s` — with lots of pop/smash/stamp motion. Three plain scenes reads as too few/too static for this owner.
-- "FUNNIER" ≠ a cute mascot prop. When the owner asks for funnier, keep the literal-but-vivid base and get the humor from the GIANT WIT pose + dry labels + kinetic devices. Do NOT swap in a generic cute object (piggy bank, mascot) — that was rejected as "even worse."
-- FRESH BASES PER SECTION (do not be lazy). Source each section's own distinct, on-topic vivid bases. Reusing the SAME photo files (cash/coins/curtain, etc.) across sections reads as lazy and was rejected ("you reuse too many images from other sections"). A motif (money) may recur only via genuinely DIFFERENT photos + distinct grades — never the literal same files section after section. Budget a few minutes of Openverse/Wikimedia sourcing per section.
-- ONE CLEAN HERO PER BEAT — NO STACKED/OVERLAPPING TEXT. Per scene plan one large hero device + at most one short caption, vertically well-spaced (≥~150px gaps), revealed SEQUENTIALLY on their words (never all at once), all on the half OPPOSITE the giant WIT. Use a side-gradient scrim to darken only the text half so labels read on busy photos. Piling multiple labels/cards close together was rejected as "texts are covered by many texts." Check the contact sheet for any text-near-text crowding before handoff.
-
-Reusable CSS kits to copy/adapt (bignum, toast, stamp, banner, payoff, giant WIT): `projects/3-why-everything-is-a-subscription-now/section-previews/section-01-hook/index.html` and `projects/4-why-buy-1-get-1-beats-50-off/section-previews/section-03-the-receipt-knows/index.html`.
-
-If a visual plan would still force `render` to invent the main scene, timing, joke, asset choice, WIT pose, or markup placement, the plan is not finished.
-
-The plan must also prevent the most common render-review failures before they happen:
-
-- too many full-scene cuts for a short section
-- too many cue overlays appearing at once
-- every text block animating instead of appearing calmly on beat
-- WIT appearing on every cue or as a tiny corner sticker
-- WIT face/head/shoulders accidentally cropped
-- WIT covering labels, proof, or main objects
-- payoff text, stamps, or labels covering WIT's face/expression when WIT is the emotional subject
-- red markup that points nowhere or marks obvious details
-- generated/real references reused even when adjacent scenes look too similar
-- HyperFrames needing to guess timing, placement, asset choice, or motion type
-
-This skill is section-first. After voiceover, production branches by section:
-
-```text
-Voiceover S1 -> Visual plan S1 -> Render S1 -> Review S1
-Voiceover S2 -> Visual plan S2 -> Render S2 -> Review S2
-...
-```
-
-Use `All` only when the user explicitly selects `All`.
+A few sentences MAY share one scene when they describe the same object/situation, but the default is a
+new scene per sentence/beat.
 
 ## Pipeline Position
 
-This is step `5` of the main video workflow.
+This is step `4` of the main video workflow.
 
 Required previous outputs:
 
@@ -99,21 +60,18 @@ Required previous outputs:
 
 Write or update:
 
-- `projects/<slug>/04-visual-plan.md`
-- `projects/<slug>/visual-plan/section-XX-kebab-section-name/`
-- `projects/<slug>/assets/visual-references/section-XX-kebab-section-name/`
+- `projects/<slug>/04-visual-plan.md` (master)
+- `projects/<slug>/visual-plan/section-XX-kebab-section-name/` (synced section copy + notes)
 
-If a required upstream file is missing or empty, stop and tell the user which previous skill to run.
+Downstream: `visual-implement` (creates the assets this plan names), then `render` (composites them).
 
-If `01-research-pack.md` is older than `00-topic-intake.md`, treat the research pack as stale and stop. If `02-script.md` is older than topic intake or research pack, treat the script as stale and stop. If `03-voiceover.md` or a selected section voiceover output is older than script, treat voiceover as stale and stop or ask whether to regenerate the affected section.
-
-When this skill creates, updates, or reruns `04-visual-plan.md` or any file under `visual-plan/`, every later output for the affected section becomes stale.
-
-List stale downstream files in chat. Do not silently delete them.
+If a required upstream file is missing, empty, or stale (older than its own upstream), stop and tell
+the user which previous skill to run. When this skill creates/updates a section plan, the section's
+implemented assets and render become stale — list them.
 
 ## Required Context
 
-Read these before creating or updating visual plans:
+Read before planning:
 
 1. `README.md`
 2. `.agents/rules/README.md`
@@ -123,870 +81,182 @@ Read these before creating or updating visual plans:
 6. `.agents/_shared/channel/channel-guardrails.md`
 7. `.agents/_shared/channel/reference-channels.md`
 8. `.agents/_shared/channel/learning-log.md`
-9. `.agents/_shared/channel/codex-collaboration.md`
-10. `.agents/_shared/channel/production-workflow.md`
-11. `.agents/_shared/channel/brand-system.md`
-12. `.agents/_shared/systems/topic-packaging-hooks.md`
-13. `.agents/_shared/systems/script-learner-voice.md`
-14. `.agents/_shared/systems/visual-production.md`
-15. `.agents/_shared/systems/audio-feedback-quality.md`
-16. `references/memory.md`
-17. `references/output-formats.md` before writing outputs
-18. the chosen project files:
-    - `00-topic-intake.md`
-    - `01-research-pack.md`
-    - `02-script.md`
-    - `03-voiceover.md`
-
-Load additional files only when needed:
-
-- `.agents/_shared/assets/wit/poses/manifest.json` when choosing WIT poses
-- existing section visual plans from `projects/2-why-everyone-pretends-to-be-busy/` when the user asks to follow that reference style
-- existing project `visual-plan/` section folders when updating a section
+9. `.agents/_shared/channel/brand-system.md`
+10. `.agents/_shared/systems/visual-production.md`
+11. `.agents/_shared/systems/script-learner-voice.md`
+12. `references/memory.md`
+13. `references/output-formats.md` before writing outputs
+14. the mascot pose library: `.agents/_shared/assets/wit/poses/` and any pose reference notes (e.g. `analysis/vuive poses/pose.md` when present) so you can name exact poses
+15. the chosen project files: `00-topic-intake.md`, `01-research-pack.md`, `02-script.md`, `03-voiceover.md`
 
 ## Project Selection Gate
 
-Always resolve the target project before planning visuals.
+Resolve the target project before planning, in this order:
 
-Use this order:
+1. If the user names a slug/path, use it.
+2. If the current chat clearly selected a project and it exists, use it.
+3. If exactly one project has a completed `03-voiceover.md` and no/partial visual plan, smart-select and say so.
+4. Otherwise list candidates and ask.
 
-1. If the user names a project slug or path, use that project.
-2. If the current chat clearly selected a project and the folder exists, use that project.
-3. If there is exactly one project with completed `03-voiceover.md`, smart-select it and say so.
-4. Otherwise scan `projects/`, excluding `_template`, and find visual-plan candidates.
-
-A visual-plan candidate has:
-
-- non-empty `00-topic-intake.md`
-- non-empty `01-research-pack.md`
-- non-empty `02-script.md`
-- non-empty `03-voiceover.md`
-- at least one section voiceover output under `voiceover/`
-
-When multiple candidates exist or context is unclear, ask the user to choose before writing.
-
-Do not create a new project folder in this skill.
-
-## Required Inputs Gate
-
-Before section selection or writing files, verify the chosen project has:
-
-- non-empty `00-topic-intake.md`
-- non-empty `01-research-pack.md`
-- non-empty `02-script.md`
-- non-empty `03-voiceover.md`
-
-If `02-script.md` does not contain parsable sections in the form:
-
-```text
-## Section N: Section Name
-```
-
-stop and ask the user to rerun `script-draft` or fix the script structure first.
-
-If `01-research-pack.md` is older than `00-topic-intake.md`, stop and ask the user to rerun `research-pack`.
-
-If `02-script.md` is older than `00-topic-intake.md` or `01-research-pack.md`, stop and ask the user to rerun `script-draft`.
-
-If `03-voiceover.md` is missing, empty, or older than `02-script.md`, stop and ask the user to run or rerun `voiceover`.
+A candidate has non-empty `00`/`01`/`02`/`03` files and at least one section voiceover. Do not create
+a new project here.
 
 ## Section Selection Gate
 
-Visual Plan must get an explicit target section before writing files.
+Get an explicit target section before writing files. Offer `All` first, then each section. Never infer
+the target from active state, latest section, next-unfinished, or prior chat.
 
-The target must be selected by the user as `All` or as a specific section number/name in the current request or in the section-choice response.
-
-Do not infer the target section from:
-
-- active project state
-- latest reviewed section
-- next unfinished section
-- existing visual plans
-- missing visual-plan outputs
-- prior chat context
-
-Preferred option order:
-
-1. `All`
-2. `Section 1: <name>`
-3. `Section 2: <name>`
-4. Continue through the section list
-
-Important:
-
-- `All` means create or update each section as a separate visual-plan output.
-- `All` does not mean one giant full-video visual plan unless the user explicitly asks for a macro plan.
-- If option UI is available, show `All` first, then section choices.
-- If option UI is unavailable, list numbered choices in chat and stop. Do not guess.
-
-Fallback selection text:
+- `All` means produce each section as its own synced output (and the full master), NOT one giant
+  collapsed scene table.
 
 ```markdown
 Choose visual plan target:
-
 0. All sections
 1. Section 1: <name>
 2. Section 2: <name>
    ...
 ```
 
-## Section Voiceover Gate
-
-For each selected section, verify section voiceover exists before planning visuals.
-
-Acceptable evidence:
-
-- a matching section folder under `voiceover/section-XX-kebab-section-name/`
-- and a clean script or marked script file
-- and either an audio file or `scratch-results.json` that honestly records `tts not generated`
-- and an entry in `03-voiceover.md`
-
-If a selected section is missing voiceover output, stop and ask the user to run `voiceover` for that section first.
-
-If the selected section voiceover files are older than `02-script.md`, treat that section voiceover as stale. Stop and ask the user to rerun `voiceover` for the selected section.
-
-If the user selected `All` and some sections are missing voiceover, stop and list the missing sections.
-
-## Request Modes
-
-### Section Create Mode
-
-Use when the chosen section has no existing section visual plan.
-
-Create:
-
-```text
-projects/<slug>/visual-plan/section-XX-kebab-section-name/
-projects/<slug>/visual-plan/section-XX-kebab-section-name/README.md
-projects/<slug>/visual-plan/section-XX-kebab-section-name/section-XX-kebab-section-name-visual-plan.md
-projects/<slug>/visual-plan/section-XX-kebab-section-name/reference-board.md
-projects/<slug>/assets/visual-references/section-XX-kebab-section-name/
-projects/<slug>/04-visual-plan.md
-```
-
-### Section Update Mode
-
-Use when the user asks to revise, simplify, add real-life images, change WIT actions, adjust timing, improve HyperFrames guidance, or fix a plan after review.
-
-Read the existing section visual-plan folder first. Preserve approved decisions unless the user explicitly asks to replace them.
-
-If the user says a section is chaotic, too text-heavy, too image-heavy, too slide-like, or asks to remake it "like Section 1", treat both the current visual plan and downstream render for that section as stale. Rebuild the plan from script, voiceover, approved references, and current skill memory. Prefer sparse Section-1-style structure: `2-4` persistent backgrounds, `5-8` cue states for a `30-45s` explanatory section, one or two short labels per cue, and WIT only on the emotional beats.
-
-### All Sections Mode
-
-Use when the user chooses `All`.
-
-Create each section as its own output using Section Create or Section Update rules.
-
-Do not collapse the whole video into one giant scene/cue table unless the user explicitly asks for a macro visual plan.
-
-### Improve Memory Mode
-
-Use when the user reviews a visual plan and gives reusable lessons.
-
-Update in this order:
-
-1. the project `04-visual-plan.md` or section visual plan if the review affects this video
-2. this skill's `references/memory.md`
-3. shared memory only if the lesson improves the whole channel
-
-Promote shared lessons with a clear classification such as `Operational lesson` or `Core production system`.
-
-## Render-Trustworthy Planning Contract
-
-The output must be something `render` can follow directly.
-
-Every selected section must include these four layers:
-
-1. `Big Scene Plan`
-   - persistent base scenes that hold for multiple narration beats
-   - one main visual object/place/mechanism per big scene
-   - reason for cutting to the next big scene
-2. `Cue State Timeline`
-   - voice-timed cue states inside each big scene
-   - exact local start/end times or approximate times derived from section duration
-   - what changes on screen at each cue
-   - what stays on screen from the big scene
-   - whether each cue should hard-show, smash/stamp/pop for emphasis, or stay static
-3. `Reference And Asset Plan`
-   - real/local/generated references for each big scene
-   - production decision for each asset: direct asset, mockup target, support base, inspiration only, or reject
-   - saved paths/prompts/source notes
-4. `Render Handoff`
-   - composition target
-   - expected cue-state count
-   - WIT pose files and scale/placement guidance
-   - WIT safe-crop guidance: face/head/shoulders and important props must not look accidentally cut
-   - exact labels and markup jobs
-   - motion density rule: ordinary labels hard-show on beat; impact motion only for emphasized beats
-   - asset paths
-   - inspect timestamps and screenshot/contact-sheet QA timestamps; MP4 QA timestamps only when export is explicitly requested
-   - list of things HyperFrames must not invent
-
-### Big Scene And Cue State Rules
-
-Use big scenes first, not disconnected boards.
-
-Definitions:
-
-- `Big scene`: the persistent base image/illustration/layout that stays while the narration describes the same object, situation, place, or mechanism.
-- `Cue state`: a small timed change inside the big scene, such as a short label, WIT reaction, arrow, hidden tag, one prop, or red correction.
-
-For a `20-25s` hook, default to:
-
-```text
-3 big scenes
-6-8 cue states
-```
-
-For longer sections, scale by idea density, not sentence count. Several sentences can share one cue state when they describe the same object or situation.
-
-For explanatory list sections, first ask which `2-4` visual memory frames the viewer should remember. Lists of parts, features, costs, promises, or hidden support systems should usually be compressed into category labels rather than itemized on screen. Example: `fabric + stitching + hinge` can be one support label on a fabric background; `battery + screw + spare part` can become one repairability scene. If the section starts looking like a vocabulary worksheet or product-parts inventory, reduce cue count before adding more references.
-
-Cut to a new big scene only when:
-
-- the narration moves to a new object, place, mechanism, evidence type, or payoff
-- the existing scene can no longer explain the current line clearly
-- the viewer needs a visual reset for clarity or joke timing
-
-Do not create a new full-screen scene just because a new sentence begins.
-
-When a section has multiple big scenes, run a visual differentiation check before handoff. Non-callback scenes should not reuse the same background, object arrangement, camera language, or material mood just because a collected reference exists. Reuse a base only for purposeful continuity or payoff memory; otherwise plan a distinct scene base.
-
-### Voice Timing Rules
-
-The plan must map visuals to the selected section voiceover.
-
-Use this priority:
-
-1. exact transcript/word timestamps if available
-2. marked script pauses and beats plus section audio duration
-3. proportional timing from sentence length and known voiceover duration
-
-If exact word timing is unavailable, estimate honestly and label timing as `estimated`.
-
-Every cue state must include:
-
-- local start/end time
-- voice cue phrase
-- on-screen change
-- hold duration
-- planned motion type: `static`, `hard-show`, `impact`, or `transition`
-- reason the cue exists
-
-The first `3s` of a hook must show the topic object/situation.
-The first `5-6s` of a hook should show the contradiction or hidden detail when the section depends on one.
-
-### Motion Intent Rules
-
-Visual-plan must decide motion intent before render writes HTML.
-
-Use these categories:
-
-- `static`: element is present for the whole cue or scene.
-- `hard-show`: element appears instantly on the spoken beat.
-- `impact`: element uses a short smash, stamp, shake, pop, snap, or marker action.
-- `transition`: scene-level movement between persistent big scenes.
-
-Default to `hard-show` for ordinary labels, notes, props, and WIT appearances. Use `impact` only for emphasized spoken words, proof marks, contradiction labels, and payoff phrases. Do not ask render to animate every sequential label.
-
-### WIT Planning Rules
-
-Use only real channel WIT PNG pose files from:
-
-```text
-projects/<slug>/assets/wit/manifest.json
-```
-
-or the approved shared WIT manifest if the project does not have its own WIT folder.
-
-For each WIT appearance, specify:
-
-- exact pose file
-- emotion
-- local time range
-- screen region
-- visible footprint target, measured by the visible WIT character in the final frame, not by the PNG/CSS box
-- creative placement concept, such as corner peek, upside-down top entrance, hiding behind a product/wardrobe/tag/box/screen, looming from behind an object, or half-body rise from an edge
-- safe crop rule: face/head/shoulders and important props fully readable unless intentionally peeking
-- why WIT is needed
-
-WIT is useful on emotional beats: suspicion, betrayal, panic, confusion, judgment, evidence, trapped, payoff.
-
-Do not use WIT as filler in every cue state.
-Do not plan WIT for every cue just because the pose library has enough poses. For short sections, default to about `1-2` WIT beats per persistent big scene, then adjust only if the voice rhythm needs more emotional reactions.
-Do not draw WIT in HTML/SVG/CSS.
-Do not invent random WIT.
-If WIT is planned for an emotional beat, its visible character footprint must occupy at least `1/3` of the frame in the planned screenshot/contact-sheet frame. This means the visible WIT body/face area, not the transparent PNG bounds or CSS box. Default to `1/3` to `1/2` of the frame, and go larger when it strengthens the joke without blocking labels or evidence.
-Do not default to full-body WIT standing in a lower corner. For strong reaction/payoff beats, plan Section-1-style giant WIT placements: behind-layer oversized faces, half-body entrances from the lower edge, side peeks, WIT appearing from a corner, upside-down WIT dropping from the top, WIT hiding behind a wardrobe/product/tag/box/screen, WIT looming beside the main object, or cropped lower-body compositions that make the emotion dominate the frame.
-
-WIT default = BIG and HIGH (owner-confirmed 2026-06-22). Plan WIT large (`1/3`–`1/2` frame) AND
-anchored high enough that head+glasses+torso+arms are inside the frame with only the legs cropped — a
-bottom-edge peek anchored too low (only the head showing) gets rejected as "too low / covered by the
-frame." When a big WIT would cover a label/board/UI, the PLAN must place the other items elsewhere
-(opposite side / top / bottom) so WIT stays big and high — do not solve the collision by shrinking or
-lowering WIT. State WIT's screen region AND the cleared zone for the other items in the cue plan.
-Intentional WIT crop is allowed only for body/legs/edge peeking. Never plan a crop that cuts through WIT's face, glasses, head, shoulders, mouth, key prop, or readable emotion. If a contact-sheet frame would make WIT look accidentally broken, the plan must choose a different placement, scale, or pose.
-When WIT is the emotional subject of a payoff or reaction beat, plan a clean WIT emotion zone. Payoff text, stamps, tags, and labels must not cover WIT's face, eyes, mouth, or key prop; solve this with separate screen regions, not by hoping render can layer around it later.
-If the current approved pose library cannot express the beat, plan a new WIT pose asset and save it into the shared/project WIT asset library instead of settling for a weak pose.
-
-Every WIT plan must include a density note:
-
-- total WIT beats in the section
-- WIT beats per big scene
-- why any big scene exceeds `2` WIT beats
-- which cue states intentionally have no WIT so the section can breathe
-- which screenshot/contact-sheet timestamps must prove each emotional WIT beat reaches at least `1/3` visible frame presence
-
-### Markup And Label Rules
-
-Labels and red markup must explain the narration.
-
-Use:
-
-- short handwritten labels
-- one key label per cue state when possible
-- red markup only for exact evidence, correction, reveal, or punchline
-- arrows/circles only when they point to a specific real object or detail
-- hard-show timing for ordinary sequential labels
-- smash, stamp, shake, or pop only for words the voice truly emphasizes or for payoff/evidence beats
-
-Avoid:
-
-- meaningless red boxes/circles/leg marks
-- marking an obvious detail just because the voice names it
-- labels that repeat the narration without adding clarity or joke value
-- animating every label merely because it appears sequentially
-- white wash overlays over real/object photos unless required for readability
-
-If the image already proves the point, use a label instead of decorative annotation.
-
-### Review-Prevention Checklist
-
-Before writing the final section visual plan, run this self-check and fix the plan if any answer is weak:
-
-- Voice sync: does every cue map to the phrase that triggers it?
-- Big-scene rhythm: does a short hook avoid sprinting through unrelated full-screen boards?
-- Cue density: does each cue add only one or two meaningful changes?
-- Motion density: are ordinary labels planned as `hard-show`, not animated decoration?
-- Emphasis: are smash/stamp/pop actions reserved for words or proof the voice stresses?
-- WIT rhythm: does WIT appear only where the emotion changes or peaks?
-- WIT size: does each emotional WIT beat visibly occupy at least `1/3` of the frame in the planned screenshot/contact-sheet frame?
-- WIT placement: if this is a strong emotion beat, is WIT treated as the emotional subject with a creative giant placement instead of a small lower-corner sticker?
-- WIT crop: are face/head/shoulders and important props safely inside frame, with only body/legs/edge peeks intentionally cropped?
-- Text/WIT collision: does WIT avoid covering labels, main evidence, and payoff text, and do payoff text/stamps avoid covering WIT's face/expression?
-- Subtitle-safe layout: do important lower-third labels, receipts, stamps, arrows, boxes, and payoff props sit high enough that typical YouTube subtitles will not cover them?
-- Markup meaning: does every arrow/circle/underline point to a real target and explain the line?
-- Visual differentiation: do non-callback big scenes avoid repeating the same visual language?
-- HyperFrames readiness: can render build without inventing main scenes, timing, WIT choices, label text, markup placement, or motion type?
-
-## Browsing And Asset Rules
-
-Use the project-local `browse` skill for web or YouTube browsing when available.
-
-Every selected section must run a visual reference pass before writing the final section visual plan.
-
-The default order for the visual reference pass is:
-
-1. real, sourced images from web search, image search, YouTube/reference-channel review, self-shot photos, or existing local assets
-2. generated images only to fill gaps, create clean production-safe mockups, remove logos/text/private data, or test a composition
-3. prompt-only references only as a degraded fallback
-
-The reference pass must support the `Big Scene Plan`, not a random mood board.
-
-For every planned big scene, collect or create enough visual evidence to answer:
-
-- what the base image/illustration should look like
-- what object/material/texture makes it feel real
-- where labels and WIT can sit without blocking the main object
-- which detail needs markup, if any
-- whether the asset is safe for direct production or only a mockup/inspiration target
-
-The visual reference pass must include at least one of:
-
-- browsed web or image references for real objects, UI patterns, materials, composition, or visual benchmarks
-- generated section-specific reference images
-- self-shot or existing local visual assets that are inspected and documented
-
-For normal runs, actively look for real-life internet or local images first. Do not make generated images the main visual reference layer when useful real images can reasonably be found.
-
-If a selected section uses zero real images, the `reference-board.md` must explain why real images were unavailable, unsafe, irrelevant, or lower quality than the generated/self-made alternative.
-
-### Real Scene Base Rule
-
-Every persistent big scene must specify a real, descriptive image base (or a clearly justified self-made base) — never a bare flat gradient or empty colored background. A CSS-only/gradient beat reads to reviewers as "no background / no image to describe the voice" and gets sent back. Self-made CSS is for objects, props, labels, cards, and overlays on top of a base, not for the scene background itself unless the plan documents a specific reason (e.g. a deliberately blank paper beat).
-
-This INCLUDES real-UI scenes and stylized scenes (owner-confirmed 2026-06-22). A scene whose hero is
-a real-UI screen (chat, Meet grid, Trello, spreadsheet, calendar) or a CSS construct (a shield, a
-theater stage) still needs a real photo base behind it — float the UI as a `.screen` on a real desk
-photo, and back a stylized construct with a real photo (e.g. a real red-curtain stage, not CSS
-curtains). The owner rejected an all-CSS-UI section as "not lively" and a CSS stage as "still not have
-background." Prefer a base that literally echoes the line (empty meeting room = "this meeting could've
-been a message"; sticky-note wall = "overloaded"; packed calendar app = "a calendar with Wi-Fi").
-
-For each big scene, the plan must name the chosen base image, the search terms used to find it, and a fallback, so render can source/grade it without guessing. The image must *describe the voice beat*, e.g. a padlock for "you own me but cannot open me", money for "costs almost as much as a new one", a phone on a table for "society looking at a phone", an opened device + battery + tools for "repairability / replace the battery".
-
-### Image Sourcing Recipe And Selection Rubric
-
-PRIMARY source for clean, modern, real-world photo bases: the **Openverse API** (aggregates
-CC-licensed photos; no key; scriptable even when Google/Bing/DuckDuckGo/Pexels are bot-blocked,
-which they are on this network). Prefer `CC0` results whose `source` is `stocksnap` or `rawpixel`
-— they are clean, modern, and brand/people-free far more often than Wikimedia Commons, which skews
-dingy / antique / branded for everyday objects (on this project, raw Commons photos were rejected
-twice as "filthy and bad"). There is currently NO image-generation tool connected — do not promise
-generated images; source clean real photos, and if they are rejected, ask the user to drop files in.
-
-```bash
-curl -s -G "https://api.openverse.org/v1/images/" \
-  --data-urlencode "q=<descriptive terms>" \
-  --data-urlencode "page_size=8" \
-  --data-urlencode "license_type=commercial,modification" \
-  --data-urlencode "size=large" \
-  -H "User-Agent: WhyItWorks-Channel/1.0 (research)"
-```
-
-Parse the JSON with `node -e` (no python/jq on this box). For each result read `url`, `license`,
-`license_version`, `width`/`height`, `source`, `title`. Prefer `width >= 900` and CC0
-StockSnap/rawpixel; CC0 needs no attribution but record source for traceability.
-
-FULL-HD NOTE: Openverse's StockSnap/rawpixel `url`s are thumbnails (StockSnap ~960px, rawpixel
-~1024–1300px) — BELOW 1920. If the user requires full-HD (≥1920px) bases, source from **Wikimedia
-Commons with `iiurlwidth=1920`** (or the original), which reliably serves ≥1920, or from Flickr at
-its large sizes (`_k`=2048, `_h`=1600, `_o`=original). Brand-free trick for screen/phone scenes:
-search a "blank white screen" phone (e.g. "Hand holding smartphone with blank white screen") and add
-the UI in CSS. Prefer clear object metaphors (a red emergency button, a fire alarm, an open fridge)
-over vague abstract bases (a wireframe sketch reads as "poor/vague" and gets rejected).
-
-PREFERRED — Real-UI illustration (standing owner preference): when the script names or depicts real
-apps/products/screens, use REAL recognizable UI to illustrate it — phone/iPhone mockups, real app
-icons (Gmail, Messenger, Microsoft To Do, Google Calendar, WhatsApp, Slack…), and notification/chat
-screens. Build the screens in CSS with real icon PNGs sourced from Wikimedia Commons (rasterize SVG→PNG
-via `iiurlwidth`; thumbs-up etc. from Android/Noto emoji). Keep accumulating UI (notification cards,
-badges, chat bubbles) INSIDE the scene div so it persists and clips to the phone/tiles; never rely on
-emoji glyphs in HyperFrames (they fail to render — use an emoji PNG). Use editorially (depict, don't
-endorse); no private data / pixel-copied screenshots. See `_shared/channel/brand-system.md` → "Real-UI Illustration." Download the `url`
-and VIEW it before committing — reject brand-bearing shots (e.g. Apple Magic Mouse / iMac, Logitech,
-Casio) and any image with real people (no-face channel), even when sharper.
-
-As a SECONDARY source (Openverse thin or unhelpful), use the Wikimedia Commons API and capture attribution:
-
-```bash
-curl -s -G "https://commons.wikimedia.org/w/api.php" \
-  --data-urlencode "action=query" --data-urlencode "format=json" \
-  --data-urlencode "generator=search" \
-  --data-urlencode "gsrsearch=filetype:bitmap <descriptive terms>" \
-  --data-urlencode "gsrnamespace=6" --data-urlencode "gsrlimit=8" \
-  --data-urlencode "prop=imageinfo" \
-  --data-urlencode "iiprop=url|size|extmetadata" --data-urlencode "iiurlwidth=1920" \
-  -H "User-Agent: WhyItWorks-Channel/1.0 (research)"
-```
-
-Parse the JSON with `node -e` (this Windows box has no `python` and no `jq`). Read each candidate's `Artist`, `LicenseShortName`, `LicenseUrl`, and `descriptionurl`; capture them for `ATTRIBUTION.md`. CC0 / CC BY / CC BY-SA are all in policy. Download the `iiurlwidth` thumb (1920px) and View it before committing — never select on filename alone.
-
-Selection rubric — a base passes only if all are true:
-
-- describes the voice beat (literal or clear metaphor), not generic decoration
-- brand-free: no recognizable logos or recognizable branded devices (a MacBook, a battery stamped with a maker name). Verify on the actual pixels, not the filename; reject even high-res images that show a brand.
-- people-free for direct-use backgrounds: the channel is no-face, so reject images containing real people/faces even when they are sharper than the alternative (keep them `inspiration only` at most).
-- not sterile/floating stock: objects fanned on pure white read as cheap and get flagged; prefer in-context, textured, lived-in scenes.
-- distinct from adjacent big scenes (different surface, palette, composition) unless an intentional callback.
-- reads behind the planned overlays: if the definition card / labels cover most of the frame, moderate resolution is fine; if the base is the star, require a crisp source.
-- palette-friendly and clean: do not plan a gray wash or heavy desaturating filter over a real photo; keep the texture. Plan only a light, local label backing if readability needs it.
-
-Note for render handoff: `object-fit: cover` from a source whose width already equals the 1920 frame only crops vertically — a subject on the left/right edge cannot be hidden with `object-position`. If a candidate has an unwanted element pinned to a side edge, choose a different image rather than expecting a crop to remove it.
-
-For normal runs, use at least `3` useful references per selected section:
-
-- one real-life/object/material reference
-- one composition, editing, or attention reference
-- one asset or mockup reference that HyperFrames can build from
-
-For hooks and high-retention moments, prefer `4-6` references unless the section is extremely simple.
-
-For render-ready plans, references should map to big scenes:
-
-- at least one usable visual basis for each big scene
-- one clear candidate base asset or generated-support prompt for each big scene
-- at least one WIT/label placement note for each WIT-heavy big scene
-
-Prompt-only references are allowed only as a degraded fallback when browsing and image generation are unavailable, fail, or would create unsafe assets. If using prompt-only fallback, state the reason in `reference-board.md` and in the chat response.
-
-Do not skip the visual reference pass just because an object seems easy to draw. Even simple objects need visual certainty: silhouette, material, pose, camera angle, label placement, and readable contrast.
-
-Use `.agents/_shared/channel/reference-channels.md` as the source-base for channel inspiration. When a section needs pacing, hook, humor, retention, or framing guidance, browse or review `1-3` relevant reference-channel examples and mark them as `inspiration only`. Learn from timing, board simplicity, and joke rhythm. Do not copy their exact frame, thumbnail, joke layout, or visual composition.
-
-For each selected section, create a small reference board:
-
-- real-life objects that explain the section
-- real internet/self-shot/local images that make the video feel close to the viewer
-- possible safe assets
-- generated-image ideas only after real reference needs are understood
-- self-made UI/mockup targets
-- visual benchmark or editor-reference notes
-- attention / retention reason for using each reference
-- inspiration-only references
-- rejected references
-- source notes
-
-Classify every reference as:
-
-- `safe asset`
-- `mockup target`
-- `inspiration only`
-- `reject`
-
-Do not copy another creator's exact frame, thumbnail, joke layout, screenshot, or visual composition.
-
-Prefer:
-
-- self-shot images
-- licensed/public-domain images
-- real internet images with clear source and license notes
-- generated images for support, cleanup, or missing-safe-asset cases
-- self-made UI mockups
-- simple object cutouts
-- paper, receipts, phones, desks, product boxes, calendars, bills, or other lived-in objects
-
-Avoid:
-
-- private data
-- unclear copyrighted images
-- real app logos unless explicitly approved
-- real screenshots copied into production
-- generic stock images that do not explain the section
-
-When image generation is available, generate or request section-specific reference images only when they materially improve the plan after the real-reference pass. Save generated references or returned image paths under:
-
-```text
-projects/<slug>/assets/visual-references/section-XX-kebab-section-name/
-```
-
-If generation is unavailable, write reusable generation prompts and mark status as `prompt only / image not generated`.
-
-Generated or browsed images are not automatically production assets. Classify them first. Use them to clarify shape, mood, composition, or material. Only use them directly in production if their source and license are safe.
-
-Collected references are allowed to be inspected and skipped. Do not plan direct use of an image merely because it was downloaded or generated. If it does not improve the end viewer result, mark it as reference-only, fallback, inspiration, or reject.
-
-Generated images should normally be text-free and logo-free. Add labels, prices, UI text, red markup, and jokes in HyperFrames so timing and readability can be controlled.
-
-When generating support images for render, write prompts that specify:
-
-- object and camera angle
-- simple uncluttered composition
-- empty label-safe areas
-- no text, logos, watermarks, brand marks, or private data
-- realistic texture if the section is object-driven
-- 16:9-friendly framing unless the render needs a cutout or transparent object
-
-For real internet images, record:
-
-- source page URL
-- creator/credit when visible
-- source/license status when visible
-- direct saved path if downloaded
-- production decision: direct asset, crop/blur/trace target, inspiration only, or reject
-
-If a real image has unclear copyright, visible private data, real logos, or accidental brand accusation risk, classify it as `inspiration only` or `reject`, not `safe asset`.
-
-## Visual Planning Rules
-
-Work from the role of an editor, not a document writer.
-
-For every selected section, plan the visual experience as:
-
-```text
-what appears on screen -> when it appears -> how it moves / cuts / reveals -> why the viewer keeps watching
-```
-
-Use the channel grammar:
-
-```text
-static drawing -> narration twist -> red markup or hard cut -> next static drawing
-```
-
-Each big scene should carry:
-
-- one persistent object, situation, place, mechanism, or payoff
-- one clear visual job
-- one attention reason
-- one reference basis
-- one safe asset/build path
-
-Each cue state should carry:
-
-- one timed voice cue
-- one small visual change
-- one readable label or markup job when needed
-- optional WIT emotion only when useful
-- one reason it exists
-
-Visual plans should guide HyperFrames implementation, not replace it.
-
-For each selected section, plan:
-
-- section goal
-- viewer attention strategy
-- section retention risk and visual fix
-- narration beats
-- big scene list with local timing from the section voiceover
-- cue state list with exact/estimated local timing inside each big scene
-- exact on-screen what / when / how / why for every big scene and cue state
-- exact where each visual resource appears: big scene/cue number, time range, screen region, crop/placement, and whether it is direct asset, mockup target, support base, or inspiration only
-- visual job per big scene and cue state
-- joke or curiosity beat per cue state
-- real-life or generated asset needs
-- WIT pose/emotion per cue state, including exact PNG file when possible
-- labels and handwritten captions
-- red markup or joke beat
-- motion notes
-- voice-sync cues
-- asset/source safety notes
-- render / HyperFrames implementation guidance
-- screenshot/contact-sheet QA timestamps for render to verify
-- MP4 QA frame timestamps only when the user explicitly requests an export
-- approval checks
-
-Keep scenes simple. When a section gets abstract, return to a concrete object.
-
-Use WIT as the audience surrogate. WIT should usually be affected by the system, not lecturing from outside it.
-
-The plan fails if HyperFrames would need to invent the main scene, object, timing, joke, or asset logic from scratch.
-
-The plan also fails if it creates too many full-scene cuts for a short section. Good visual pacing comes from a base scene evolving through small cue changes, not from sprinting through unrelated images.
+For each selected section, confirm the matching section voiceover exists and is not older than the
+script; if word-level timing exists (`voiceover/section-XX-*/section-XX-word-timings.json`), prefer it
+for scene timestamps.
+
+## The Scene-Detail Standard (the core of this skill)
+
+Every scene must be described at the depth where a reader can imagine the frame with no image. Use ALL
+of these fields for every scene. "Too little detail to picture the frame" is a defect — fix it before
+handoff.
+
+For each scene:
+
+1. **Line / beat** — the exact script text for this scene + local time range (from section voiceover).
+2. **Role** — what this beat does in the video and how it links to the previous/next scene.
+3. **Composition / layout** — the frame: background; positions of every element in approximate %;
+   crop; z-order; which side each element sits; the thin gray horizon line if used.
+4. **Elements (one block each)** — describe every visual element in concrete detail: what it is, what
+   is inside it (for a photo/UI: the contents, framing, lighting, grade), size, treatment (float,
+   drop-shadow, distortion, etc.).
+5. **Mascot** — exact pose name (from the library) OR a clearly-marked NEW invented pose described in
+   full; placement, scale (as fraction of frame), crop (what is intentionally cut), facing direction,
+   expression. The mascot is a real character (color + personality), big and high — the soul of the
+   scene; do not park it tiny in a corner.
+6. **On-screen text** — exact words (channel language = English for WIW), handwritten style, position,
+   color, tilt, underline/scribble, and when it appears. Edge/tone may be savage-but-clean per the
+   channel tone rule.
+7. **Emotion** — what the scene should make the viewer feel.
+8. **Insight / joke** — the point or the gag this scene carries.
+9. **Linkage** — why the elements sit together; the intended eye path (left→right, etc.).
+10. **Show-as-you-say timeline** — element-by-element entrance/hold tied to the spoken words/syllables
+    (e.g. "on 'thirty songs' → zoom the '30 songs' label"); mark hard-show vs impact (pop/smash/stamp).
+11. **Sound** — any short SFX cue and where it ducks under narration.
+12. **Color / contrast** — palette and what should pop on a phone.
+
+Then list the scene's **ASSETS** (the handoff to visual-implement) — see below.
+
+## Asset Listing Rule (handoff to visual-implement)
+
+For each scene, list every asset it needs. For each asset record:
+
+- `type`: `generate` | `browse-real-photo` | `screenshot/web-capture` | `reuse` | `pose`
+- exact **description** (what it depicts) — detailed, but **NO image-generation prompt** (implement writes that)
+- **filename** (kebab-case, `.png`) — the canonical name in `assets/`. If the same subject already
+  appeared in an earlier scene, REUSE the same filename (`type: reuse`) so the character stays
+  identical; do not invent a new file for the same thing.
+- **layout/position** in the scene (left/right/center, crop, float) so render can place it
+- isolated-element note: generated/browsed assets are ISOLATED elements (transparent/plain background),
+  never a pre-composed full scene — render composites them.
+
+Poses come from the library where one fits (`type: pose`, reference the pose filename). When the plan
+invents a NEW pose, mark it `type: generate` with a vivid description and a new filename; visual-implement
+will create it (and it can be added back to the library).
+
+Safety bound on imagination: copyright, law, and YouTube community standards only. Public-figure
+mockery is allowed as transformative caricature / obvious parody, punching up, never false-as-fact;
+keep real private data and real raw copyrighted media out (prefer caricature or licensed/PD). See
+`learning-log.md` for the confirmed tone + safety rules.
+
+## Channel Visual Grammar (apply by default)
+
+- **Real photo / real-looking asset as evidence + mascot drawn on top** is the channel signature
+  (real photo base or floating real-UI, with the mascot reacting). A bare flat-gradient scene reads as
+  "no background" — give every scene a real or real-looking base unless a deliberately blank beat is justified.
+- **Vary everything across scenes**: scene-type, composition, mascot side/scale/pose, idea-device.
+  Rotate scene types (wide gag / close-up reaction / full-screen text payoff / diagram-or-receipt /
+  object hero / mascot-only focus beat). No two consecutive scenes should share a layout.
+- **Mascot-only focus beats**: occasionally an empty frame with just the mascot centered, to land a line.
+- **One clean hero per beat, no stacked text**: reveal labels sequentially on their words, well spaced,
+  on the side opposite a big mascot.
+- **Recognizable + relatable**: open and punctuate with things the global English-learner audience
+  recognizes (universal money/internet pain; for public figures use GLOBAL ones, not local-only).
+- Audience = A2–C1 English learners; the product advantage is "interesting English". When useful, a
+  scene's on-screen text can gloss a spicy/idiomatic phrase so edge doubles as learning.
 
 ## Workflow
 
-1. Run the Project Selection Gate.
-2. Run the Required Inputs Gate.
+1. Project Selection Gate.
+2. Verify required inputs and freshness.
 3. Parse `02-script.md` sections.
-4. Run the Section Selection Gate.
-5. Run the Section Voiceover Gate for selected sections.
-6. Read required shared context and skill memory.
+4. Section Selection Gate.
+5. Confirm section voiceover (+ word timings if present) for each selected section.
+6. Read required context, skill memory, output formats, and the pose library.
 7. For each selected section:
-   - extract section narration from `02-script.md`
-   - read the matching section voiceover files
-   - inspect voiceover duration or timing notes when available
-   - identify the section goal, contradiction, visual metaphor, and WIT emotion
-   - run the Visual Editor Pass:
-     - split narration into voice cue phrases
-     - group related cue phrases into persistent big scenes
-     - decide the target big-scene count and cue-state count before writing scene details
-     - decide attention hook, retention risk, joke rhythm, and visual payoff
-     - decide what must be shown, when it appears, and how it changes on screen
-     - remove cue states that only repeat the narration without adding clarity, evidence, emotion, or joke value
-     - mark each cue state with a motion type: `static`, `hard-show`, `impact`, or `transition`
-   - run the Visual Reference Pass:
-     - browse for real-life internet images, object/material references, UI patterns, or visual benchmarks for each big scene first
-     - inspect/download useful real images only when source safety is acceptable
-     - generate section-specific images only when they improve clarity, humor, source safety, or asset certainty after the real-reference pass
-     - save generated references when available under the section visual reference folder
-     - classify browsed/generated/self-made references before using them
-     - document any prompt-only fallback as a degraded fallback
-   - run the WIT Pass:
-     - inspect the project `assets/wit/manifest.json` when present, otherwise inspect approved shared WIT manifest
-     - choose exact WIT pose filenames only for cue states that need emotional clarity
-     - count WIT appearances per big scene and reduce them if WIT starts reacting to every cue
-     - specify placement and scale large enough for facial emotion to read
-     - specify crop guard and label/evidence collision risk for every WIT beat
-   - run the Markup Pass:
-     - specify only meaningful labels, arrows, circles, stamps, or red corrections
-     - delete decorative or obvious marks
-     - define exact target object for every callout
-   - run the Render Handoff Pass:
-     - list big scenes and cue states with local timestamps
-     - list WIT density, motion density, and known no-WIT breathing beats
-     - list asset paths/prompts and what render must not invent
-     - list suggested `inspect --at` timestamps
-     - list suggested screenshot/contact-sheet QA timestamps, including any likely problem frames
-     - list MP4 QA frame timestamps only when export is explicitly requested
-   - run the Review-Prevention Checklist and revise before handoff
-   - write `reference-board.md`
-   - write `section-XX-kebab-section-name-visual-plan.md`
-   - write or update the section `README.md`
-8. Write or update `projects/<slug>/04-visual-plan.md` as the section visual-plan index.
-9. Run the Downstream Stale Gate.
-10. Respond with the Chat Response Format.
-11. Stop before render, review, upload, or learning unless explicitly asked.
+   - split the section narration into per-sentence/per-beat scenes (map to voiceover timing).
+   - for EACH scene, write all Scene-Detail fields at full depth.
+   - for EACH scene, list its ASSETS (type, description, filename, layout), reusing filenames for
+     repeated subjects; mark new invented poses as `generate`.
+   - run the Quality Check below and deepen any thin scene.
+   - write the section file under `visual-plan/section-XX-*/` (video-level direction summary + the
+     section's full scene list) and keep it identical to the master slice.
+8. Write/update the master `04-visual-plan.md` (video-level direction + all planned sections), synced
+   with the section files.
+9. Build/refresh the `assets/asset-manifest.md` stub list of every asset filename the plan references
+   (so visual-implement and render can resolve them) — or leave that to visual-implement if it does not
+   yet exist; at minimum, the plan's asset filenames must be unambiguous.
+10. Run the Downstream Stale Gate (visual-implement + render for affected sections).
+11. Respond with the chat summary. Stop before visual-implement/render unless explicitly asked.
 
-## Output Folder Standard
+## Quality Check (run before handoff; fix any weak answer)
 
-Section folder naming:
-
-```text
-visual-plan/section-XX-kebab-section-name/
-```
-
-Examples:
-
-```text
-visual-plan/section-01-hook/
-visual-plan/section-02-cheap-is-not-the-villain/
-visual-plan/section-06-repair-gets-a-security-system/
-```
-
-File naming:
-
-```text
-section-XX-kebab-section-name-visual-plan.md
-reference-board.md
-README.md
-```
-
-Use lowercase kebab-case.
+- Could a reader picture each frame with no image? If not, the scene is too thin.
+- Is there a new scene roughly per sentence/beat, with varied scene-types and varied mascot use?
+- Does every scene name a real/real-looking base (not a bare gradient)?
+- Is the mascot a real character, big and high, with a specific pose/expression per scene?
+- Does every scene have a show-as-you-say timeline tied to the words?
+- Does every asset have a `type`, a clear description (no prompt), a `filename`, and a layout?
+- Are repeated subjects reused by the SAME filename (consistency), not regenerated?
+- Are public figures handled as transformative caricature / obvious parody, punching up?
+- Master and every section file in sync?
 
 ## Output Formats
 
-Use `references/output-formats.md` for the exact templates for:
-
-- `04-visual-plan.md`
-- section visual-plan files
-- section `reference-board.md`
-- section `README.md`
-- chat response
-
-If only one section has been planned, include remaining sections in `04-visual-plan.md` as `not planned`.
+Use `references/output-formats.md` for the exact templates of `04-visual-plan.md`, the section file,
+and the chat response. If only some sections are planned, mark the rest `not planned` in the master.
 
 ## Downstream Stale Gate
 
-After creating, updating, or rerunning `04-visual-plan.md` or any section visual plan, check the same project for downstream files:
-
-- `05-production-board.md`
-- `hyperframes/`
-- `renders/`
-- `06-review.md`
-- `07-upload.md`
-- `08-self-learning.md`
-
-If any exist, list them as stale in chat and tell the user they should be removed or regenerated by rerunning downstream skills in order, starting with `Render`.
-
-Do not delete downstream files unless the user explicitly asks.
-
-For section-level projects, note whether the stale output affects the selected section, all sections, or is unclear.
-
-## Chat Response Format
-
-After creating or updating visual plans, respond with a short summary.
-
-Do not paste the full visual plan unless the user asks.
-
-Use this structure:
-
-```markdown
-Done. I created/updated:
-
-[04-visual-plan.md](<absolute path>)
-
-Section target: `<All or Section X: name>`
-
-Status: `<status>`
-
-Generated:
-
-| Section | Status | Big Scenes | Cue States | Reference assets | Section plan |
-| ------- | ------ | ---------: | ---------: | ---------------- | ------------ |
-
-Notes:
-
-- <line 1>
-- <line 2>
-- <line 3>
-
-Stale downstream:
-
-- <file or none>
-```
-
-## Quality Bar
-
-A section visual plan is ready when:
-
-- selected section was explicitly chosen
-- selected section has matching voiceover output
-- section goal is clear
-- big scene plan maps to narration structure and voiceover duration
-- cue state timeline maps to narration beats and voiceover timing
-- each big scene states what persists, when it starts/ends, why it exists, and when to cut away
-- each cue state states what changes, what stays, when it appears, and why it exists
-- each cue state has a motion type: `static`, `hard-show`, `impact`, or `transition`
-- cue count is intentionally low enough for the section duration
-- WIT emotion supports the viewer's feeling
-- WIT pose filenames, placement, and scale guidance are included when WIT appears
-- emotional WIT beats specify a visible WIT footprint of at least `1/3` of the frame, measured by visible character area rather than CSS/PNG bounds
-- strong WIT emotion beats are planned as emotional subjects, not small full-body lower-corner stickers
-- WIT density is counted and justified per big scene
-- WIT crop and text/evidence collision risks are handled
-- ordinary labels use hard-show unless emphasis needs impact motion
-- labels are short and readable
-- red markup and callouts have exact target objects and are not decorative
-- every persistent big scene names a real (or justified self-made) descriptive base image with search terms and a fallback; no scene relies on a bare flat gradient
-- chosen base images are brand-free, people-free, non-sterile, palette-clean, distinct from adjacent scenes, and were viewed (not picked by filename) with creator/license recorded
-- the visual reference pass produced browsed, generated, inspected local, or clearly degraded prompt-only references
-- real-life, benchmark, and generated references are classified with source notes
-- references map to big scenes and buildable asset decisions
-- generated images, browsed images, or prompts are marked honestly
-- HyperFrames guidance is concrete enough to build from without inventing scene timing, asset choices, WIT, or markup
-- suggested `inspect --at` and screenshot/contact-sheet QA timestamps are included
-- script promise is paid off in the section when relevant
-- stale downstream files are listed
-- no render, review, upload, or learning files are created
+After creating/updating a section plan or the master, list stale downstream for the affected
+section(s): the section's implemented assets (`assets/`), `05-production-board.md`, `hyperframes/`,
+`renders/`, `06-review.md`, `07-upload.md`, `08-self-learning.md`. Do not delete unless asked.
 
 ## Hard Fails
 
-Reject or stop before finishing if:
+Stop or rework before finishing if:
 
-- the project lacks `03-voiceover.md`
-- the selected section lacks voiceover output
-- the user has not explicitly selected `All` or a specific section
-- the section target is inferred instead of selected
-- the skill plans a section from stale script or voiceover
-- the visual plan copies another creator's frame or thumbnail structure
-- the skill skips the visual reference pass without documenting a failed/unavailable fallback
-- the skill defaults to generated images without first trying useful real-world references
-- the reference board is prompt-only while browsing or image generation was available and safe
-- a persistent big scene ships with only a flat gradient / empty colored background instead of a named real (or justified self-made) descriptive base
-- a chosen base image shows a recognizable brand/logo/branded device, contains real people in a direct-use background, or is sterile objects-on-white when a descriptive in-context image was reasonably findable
-- a base image was selected on filename alone without viewing the pixels and recording its creator/license
-- the plan does not include a big scene plan and cue state timeline
-- the cue timeline creates too many unrelated full-scene cuts for a short section
-- cue states are based on sentence count instead of visual idea changes
-- a cue state has no clarity, evidence, emotion, or joke reason to exist
-- a list-style narration becomes a scattered tray of mini cards, images, arrows, or labels instead of a few memory frames
-- red markup is decorative, meaningless, or does not target a specific object
-- the plan does not map every important visual resource to what / when / how / where usage
-- HyperFrames would need to invent the main visual idea, asset list, or timing
-- HyperFrames would need to choose WIT pose files, WIT scale, label text, or markup placement from scratch
-- real private data or unclear copyrighted screenshots are treated as production assets
-- generated images are described as existing when they were only prompted
-- WIT is decorative and has no emotional job
-- WIT is planned for every cue without a voice-rhythm reason
-- a short section exceeds `2` WIT beats in a big scene without a clear reason
-- WIT appears without a real approved pose filename when WIT assets exist
-- WIT is planned too small to read facial emotion
-- emotional WIT is planned below `1/3` visible frame presence without an explicit user-approved tiny/background reason
-- WIT is planned as a small lower-corner sticker on a beat where WIT should carry the main emotion
-- WIT crop would make the character look broken
-- WIT would cover the main label, proof object, or payoff text
-- payoff text, stamps, tags, or labels would cover WIT's face/expression in the emotional beat
-- ordinary labels are planned with repeated fly-ins/smashes that create visual noise
-- labels are too long for a paused cue state
-- big scenes or cue states are too crowded to understand
-- real/object photos are globally washed out with white overlays without a documented readability reason
-- generated-image prompts include text, logos, watermarks, or brand marks without an explicit safe reason
-- the skill creates render, review, upload, or learning files
+- a required upstream file is missing or stale, or the section was inferred instead of explicitly chosen
+- scenes are too sparse to picture, or the section is one static frame instead of per-sentence scenes
+- the plan writes image-generation prompts (that belongs to visual-implement)
+- an asset lacks a `type`, a clear description, a `filename`, or a layout
+- a repeated subject is given a new filename instead of being reused (breaks character consistency)
+- a scene relies on a bare flat gradient with no real/real-looking base
+- the mascot is tiny/cornered or has no specific pose/expression
+- a public figure is used as a raw copyrighted photo for mockery or made to state something false-as-fact
+- the master and section files disagree
+- the skill creates assets/images, renders, or downstream files itself
 
 ## Self-Improvement
 
-Read `references/memory.md` every run.
-
-Update skill memory when:
-
-- the user approves or rejects a visual-plan style
-- a reference-board approach works or fails
-- generated images help or hurt clarity
-- a later HyperFrames build exposes missing planning details
-- a review shows recurring timing, label, WIT, or asset problems
-- the user clarifies how section branching should behave
-
-Promote lessons into `.agents/_shared/channel/learning-log.md` only when they improve the whole channel. Classify each promoted lesson as `Core`, `Experiment`, `Operational lesson`, or `Reject` according to `.agents/_shared/channel/channel-guardrails.md`.
-
-Do not rewrite channel foundation, audience, tone, WIT direction, or product-promotion boundary from one visual-plan run without explicit user confirmation.
+Read `references/memory.md` every run. Update it when the user approves/rejects a planning style, a
+scene-detail depth, an asset-listing convention, or a reuse/imagination decision. Promote channel-wide
+lessons into `.agents/_shared/channel/learning-log.md`, classified `Core` / `Experiment` /
+`Operational lesson` / `Reject`. Do not rewrite channel foundation, audience, tone, or the
+product-promotion boundary from one run without explicit user confirmation.

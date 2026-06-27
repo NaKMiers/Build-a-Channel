@@ -55,8 +55,9 @@ Current executable steps:
 - `research-pack` requires `00-topic-intake.md` and writes `01-research-pack.md`.
 - `script-draft` requires `00-topic-intake.md` and `01-research-pack.md`, then writes `02-script.md`.
 - `voiceover` requires `02-script.md`, then writes the voiceover index (`03-voiceover.md`; legacy `04`) and section voiceover files.
-- `visual-plan` requires the voiceover index and selected section voiceover, then writes the visual-plan index (`04-visual-plan.md`; legacy `05`) and section visual-plan files.
-- `render` requires the visual-plan index and selected section visual plan, then writes the production board (`05-production-board.md`; legacy `06`) and section HyperFrames preview files.
+- `visual-plan` requires the voiceover index and selected section voiceover, then writes the visual-plan index (`04-visual-plan.md`; legacy `05`) and section visual-plan files. It DESCRIBES each scene in extreme detail and lists the ASSETS each scene needs (type + filename + layout); it does NOT write image-generation prompts.
+- `visual-implement` (unnumbered, after `visual-plan`, before `render`) reads each scene's ASSET list and produces the assets: writes image prompts for `generate` assets and creates isolated elements, browses license-safe real photos / captures public screenshots for `browse` assets, copies poses, and REUSES any asset already made (by filename). Saves to the project `assets/` library + `assets/asset-manifest.md`.
+- `render` requires the visual-plan index, the selected section visual plan, and the section's implemented assets in `assets/`. It COMPOSITES the mascot + pre-made assets into each scene's layout (HyperFrames), then writes the production board (`05-production-board.md`; legacy `06`) and section preview files. It re-sources an asset itself only as a documented fallback when one is missing.
 - `combine` (after all sections) unifies the project on `localhost:1000` with one combined voiceover and exports the full MP4 to `output/`.
 - `caption` (after combine) transcribes the full combined audio for real word timings and exports `output/captions.srt`.
 - `shorts` (side sub-workflow from `combine`) turns the finished long video into 2-4 COMPLETE vertical shorts (`1080x1920`) on ports `1100 + short number` via native portrait HyperFrames rebuilds — reusing each source section's real assets, regenerating a per-short voiceover, and burning centered subtitles — then exports to `output/shorts/`. Each short carries NO CTA, never edits the long-form sections, and does not block caption, upload, or learning.
@@ -72,7 +73,9 @@ Pipeline rules:
 - Rerunning an earlier step makes later outputs stale.
 - Remove stale downstream outputs only by explicit user request, or regenerate them by rerunning later skills in order.
 
-After the voiceover index (`03-voiceover.md`; legacy `04`), production branches by section. A selected section should move through visual plan, render, and review as its own branch. `All` means every section gets separate outputs, not one stitched planning artifact.
+After the voiceover index (`03-voiceover.md`; legacy `04`), production branches by section. A selected section should move through visual plan, visual implement, render, and review as its own branch. `All` means every section gets separate outputs, not one stitched planning artifact.
+
+Plan / implement / render separation (2026-06-28): `visual-plan` describes scenes + names assets (no prompts); `visual-implement` creates the assets as ISOLATED, reusable elements (generate / browse / reuse by filename); `render` composites them. Generating isolated assets once and reusing by filename keeps a recurring character identical across scenes — never generate a full pre-composed scene.
 
 Render port rule:
 

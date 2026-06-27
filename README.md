@@ -23,7 +23,7 @@ README.md       source map for humans and future agents
 - [.agents/rules](C:\ME\THINGS\Build a Channel\.agents\rules)
   Rules for Codex, memory, and the video production workflow.
 - [.agents/skills](C:\ME\THINGS\Build a Channel\.agents\skills)
-  Executable project-local skills. Current skills include `browse`, `topic-intake`, `research-pack`, `script-draft`, `packaging`, `voiceover`, `visual-plan`, `render`, `combine`, `caption`, and `shorts`.
+  Executable project-local skills. Current skills include `browse`, `topic-intake`, `research-pack`, `script-draft`, `packaging`, `voiceover`, `visual-plan`, `visual-implement`, `render`, `combine`, `caption`, and `shorts`.
 - [projects](C:\ME\THINGS\Build a Channel\projects)
   Per-video work. Each video keeps its own script, packaging, voiceover, HyperFrames source, renders, review notes, upload notes, and lessons.
 
@@ -40,30 +40,28 @@ Read these first when making strategy or production decisions:
 
 ## Video Lifecycle
 
-The channel uses a `0-9` production flow with packaging as a side branch:
+The channel uses a numbered production flow. Main steps (new-project numbering):
 
-0. Topic intake
-1. Research pack
-2. Script draft
-3. Packaging: title, thumbnail, and YouTube description
-4. Voiceover
-5. Visual plan
-6. Render
-7. Review
-8. Upload
-9. Learning
+0. Topic intake -> `00-topic-intake.md`
+1. Research pack -> `01-research-pack.md`
+2. Script draft -> `02-script.md`
+3. Voiceover -> `03-voiceover.md`
+4. Visual plan -> `04-visual-plan.md`
+4.5. Visual implement (unnumbered) -> `assets/` + `assets/asset-manifest.md`
+5. Render -> `05-production-board.md`
+6. Review -> `06-review.md`
+7. Upload -> `07-upload.md`
+8. Learning -> `08-self-learning.md`
 
 Main production chain:
 
 ```text
-TopicIntake -> ResearchPack -> ScriptDraft -> Voiceover -> VisualPlan -> Render -> AutoAdjust -> Review -> Upload -> Learning
+TopicIntake -> ResearchPack -> ScriptDraft -> Voiceover -> VisualPlan -> VisualImplement -> Render -> Review -> Combine -> Caption -> Packaging -> Upload -> Learning
 ```
 
-Packaging side branch:
+Unnumbered deliverable steps: `Combine` (final MP4), `Caption` (SRTs), `Packaging` (runs after caption -> `output/packaging.md` + thumbnails), `Shorts` (side sub-workflow after combine).
 
-```text
-ResearchPack -> Packaging
-```
+Visual pipeline split (2026-06-28): `visual-plan` DESCRIBES scenes + names assets; `visual-implement` CREATES the assets (generate / browse / reuse by filename, isolated elements); `render` COMPOSITES them. See `.agents/rules/video-workflow.md`.
 
 Future skills should follow this graph and write their outputs into the relevant `projects/<slug>/` folder.
 
@@ -88,9 +86,10 @@ Pipeline rule:
 - Channel name: `Why It Works`
 - Primary language: `English`
 - Format: `no-face explainer channel`
-- Main audience lens: `English learners`
-- Core lane: `money, internet, society, business, and modern life`
-- Tone: `smart, simple, funny, dry`
+- Main audience lens: `English learners, level A2–C1 (anchor at B1)`
+- Competitive advantage: `interesting English` (entertainment-first explainers; learners come for the fun and improve English as a side effect)
+- Core lane: `money, internet, society, business, modern life, and current culture`
+- Tone: `smart, simple, funny, dry, and allowed savage/cheeky` (edge at the system/own wallet, never slurs; public figures as transformative parody)
 - Default video text style: `handwritten labels and captions rendered through HyperFrames`
 
 ## Core Rule

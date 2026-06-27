@@ -5,6 +5,24 @@ This file stores memory specific to the `visual-plan` skill.
 Use `.agents/_shared/` for channel-wide visual systems, WIT identity, HyperFrames grammar, reference safety rules, and reusable production lessons.
 Use this file for section-selection behavior, section visual-plan output shape, reference-board habits, asset planning notes, and lessons about making plans easier to build in HyperFrames.
 
+> ## 2026-06-28 REBUILD NOTE (read first)
+>
+> `visual-plan` was rebuilt this date. The CANONICAL behavior is now in `SKILL.md`:
+> ONE master plan + synced per-section copies; per-sentence scenes; an extreme-detail scene spec
+> (composition, elements, mascot pose, on-screen text, emotion, insight, linkage, show-as-you-say
+> timing, sound, color); and an ASSET list per scene (type generate/browse/screenshot/reuse, filename,
+> layout). The plan DESCRIBES only — it never writes image-generation prompts (that is now
+> `visual-implement`) — and imagination is unbounded (within copyright/law/YouTube community standards),
+> so it may invent new poses/scenes, not just reuse the pose library. Asset creation moved to
+> `visual-implement`; render now COMPOSITES pre-made assets.
+>
+> The "Current Skill Standard" / "Output Standard" sections below and the older feedback entries
+> describe the PREVIOUS big-scene/cue-state HyperFrames-handoff era. Keep them as historical reference;
+> the still-valid creative lessons (real/real-looking base per scene, vivid imagery, vary everything,
+> mascot big-and-high with real personality, no stacked text, subtitle-safe layout, public-figure
+> safety) carry forward and now live in `SKILL.md` + the shared docs. Where they conflict with the
+> rebuilt `SKILL.md`, `SKILL.md` wins.
+
 ## Current Skill Standard
 
 - Run after `voiceover`.

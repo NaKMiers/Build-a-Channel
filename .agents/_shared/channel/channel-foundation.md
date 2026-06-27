@@ -5,7 +5,8 @@
 - Channel name: `Why It Works`
 - Primary language: `English`
 - Format: `no-face explainer channel`
-- Main audience lens: `English learners`
+- Main audience lens: `English learners, level A2–C1 (anchor at B1)`
+- Competitive advantage: `interesting English` — entertainment-first explainers; learners come for genuinely fun, current topics and improve their English as a side effect (the motivation to keep watching is the motivation to learn)
 - Core promise: `Explain money, the internet, and modern life in simple, funny English that English learners can enjoy without feeling like they are studying.`
 - Core feel: `smart topics, simple English, dry humor, high curiosity, learner-friendly clarity`
 
@@ -188,6 +189,22 @@ The voice should not be:
 - Hyper-shouty
 - Fake-deep
 - Overly corporate
+
+### Edge & profanity (owner-confirmed 2026-06-28 — overrides the earlier "learner-clean / not slang-heavy" caution)
+
+Edginess is wanted: profanity (dumb, stupid, damn, hell, shit, etc.), savage takes, and comedic
+mockery of public figures are allowed because viewers find them real and engaging. "Riding close to
+the line" is the deliberate style. Execution guardrails (edge must not become self-sabotage):
+
+- Monetization-safe placement: keep the STRONGEST words (f-word and harsher) OUT of the first 7
+  seconds, the title, and the thumbnail; moderate words anywhere in the body are fine. Never slurs.
+- Edge as a learning feature: occasionally gloss a spicy/idiomatic phrase on screen so the edge doubles
+  as teaching real spoken English.
+- Public figures: transformative caricature / obvious parody only, never raw copyrighted photos for
+  mockery, never false-as-fact, always punching up; use GLOBAL figures (the audience is worldwide).
+- Aim edge at the system / the trick / the viewer's own wallet, not at a person or group.
+
+See `learning-log.md` for the full confirmed tone + safety rules.
 
 Default narrator voice:
 

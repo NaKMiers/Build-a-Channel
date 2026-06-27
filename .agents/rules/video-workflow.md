@@ -4,6 +4,10 @@
 set (it now writes `output/packaging.md` and runs after `caption`), so the numbered main-pipeline
 steps shifted up by one for **new** projects. Existing projects keep their original numbers.
 
+As of `2026-06-28`, a new main-pipeline step `visual-implement` runs between `visual-plan` and
+`render`. It is **unnumbered** (its deliverable is the project `assets/` library plus a manifest), so
+it does NOT renumber any markdown files. `render` keeps `05-production-board.md`.
+
 ## Steps (new-project numbering)
 
 0. Topic intake -> `00-topic-intake.md`
@@ -11,13 +15,15 @@ steps shifted up by one for **new** projects. Existing projects keep their origi
 2. Script draft -> `02-script.md`
 3. Voiceover -> `03-voiceover.md`
 4. Visual plan -> `04-visual-plan.md`
+4.5. Visual implement (unnumbered) -> `assets/` + `assets/asset-manifest.md`
 5. Render -> `05-production-board.md`
 6. Review -> `06-review.md`
 7. Upload -> `07-upload.md`
 8. Learning -> `08-self-learning.md`
 
-Unnumbered deliverable steps (write into `output/`):
+Unnumbered deliverable steps:
 
+- `Visual implement` -> per-scene assets in `assets/` (+ `assets/asset-manifest.md`); runs after `visual-plan`, before `render`
 - `Combine` -> `output/<slug>.mp4` (+ `hyperframes/full-video/`)
 - `Caption` -> `output/captions/<language>.srt`
 - `Packaging` -> `output/packaging.md` (+ `output/thumbnails/`); runs after `caption`
@@ -26,21 +32,40 @@ Unnumbered deliverable steps (write into `output/`):
 Main production chain:
 
 ```text
-TopicIntake -> ResearchPack -> ScriptDraft -> Voiceover -> VisualPlan -> Render -> Review -> Combine -> Caption -> Packaging -> Upload -> Learning
+TopicIntake -> ResearchPack -> ScriptDraft -> Voiceover -> VisualPlan -> VisualImplement -> Render -> Review -> Combine -> Caption -> Packaging -> Upload -> Learning
 ```
 
 `Shorts` branches from `Combine` and does not block caption/packaging/upload/learning.
 
+## Plan / Implement / Render separation (2026-06-28)
+
+The visual pipeline is split into three jobs with clean responsibilities:
+
+- `visual-plan` — **describes** every scene in extreme detail and lists the ASSETS each scene needs
+  (type, filename, layout). It does NOT write image-generation prompts and does NOT create images.
+- `visual-implement` — **creates the assets**: for each `generate` asset it writes the detailed
+  image prompt and generates an isolated element (transparent/plain background); for each `browse`
+  asset it finds a license-safe real photo / captures a real screenshot; it reuses any asset already
+  produced (by filename) and never recreates it. All assets land in the project `assets/` library.
+- `render` — **composites** the mascot + the pre-made assets from `assets/` into each scene's layout
+  (HyperFrames). It pulls assets by the filenames the plan specified; it does not re-source images
+  unless an asset is genuinely missing (documented fallback).
+
+Rationale: generating a full composed scene per beat makes a recurring character (e.g. the same
+person) look different every time. Generating ISOLATED assets once and reusing them by filename keeps
+every character identical across scenes.
+
 ## File Numbering Rule (legacy-tolerant)
 
-Two numbering schemes exist. **Always resolve a step's file by its name SUFFIX, never by a hard-coded
-numeric prefix.** For example, find the voiceover index by matching `*-voiceover.md`, the visual plan
-by `*-visual-plan.md`, the production board by `*-production-board.md`.
+Multiple numbering schemes exist. **Always resolve a step's file by its name SUFFIX, never by a
+hard-coded numeric prefix.** For example, find the voiceover index by matching `*-voiceover.md`, the
+visual plan by `*-visual-plan.md`, the production board by `*-production-board.md`.
 
 | Step | New project (created on/after 2026-06-26) | Legacy project (created before) |
 | --- | --- | --- |
 | Voiceover | `03-voiceover.md` | `04-voiceover.md` |
 | Visual plan | `04-visual-plan.md` | `05-visual-plan.md` |
+| Visual implement | `assets/asset-manifest.md` (unnumbered) | `assets/asset-manifest.md` (unnumbered) |
 | Render board | `05-production-board.md` | `06-production-board.md` |
 | Review | `06-review.md` | `07-review.md` |
 | Upload | `07-upload.md` | `08-upload.md` |
@@ -68,11 +93,12 @@ Current dependency chain (new-project numbers; legacy in parentheses):
 | 1 | `research-pack` | `01-research-pack.md` | `00-topic-intake.md` |
 | 2 | `script-draft` | `02-script.md` | `00-topic-intake.md`, `01-research-pack.md` |
 | 3 | `voiceover` | `03-voiceover.md` (legacy `04`) + `voiceover/` | `02-script.md` |
-| 4 | `visual-plan` | `04-visual-plan.md` (legacy `05`), `visual-plan/`, optional `assets/visual-references/` | voiceover file + selected section voiceover |
-| 5 | `render` | `05-production-board.md` (legacy `06`), `section-previews/`, `hyperframes/`, `renders/` | visual-plan file + selected section visual plan |
+| 4 | `visual-plan` | `04-visual-plan.md` (legacy `05`), `visual-plan/` | voiceover file + selected section voiceover |
+| 4.5 | `visual-implement` | `assets/` isolated assets + `assets/asset-manifest.md` | `04-visual-plan.md` + selected section visual plan |
+| 5 | `render` | `05-production-board.md` (legacy `06`), `section-previews/`, `hyperframes/`, `renders/` | visual plan + the section's implemented assets in `assets/` |
 | 6 | future review skill | `06-review.md` (legacy `07`) | rendered or previewable video sections |
-| 6.5 | `combine` | `hyperframes/full-video/` unified preview + `combined-voiceover.mp3`; final video exported to `output/<slug>.mp4` (via `renders/` staging, then moved; `renders/` removed if empty) | ALL sections rendered |
-| 6.8 | `caption` | `output/captions/<language>.srt` for all 22 languages (+ compatibility `output/captions.srt`, optional `.vtt`), `voiceover/combined-word-timings.json` + `_segments.json` | full combined audio or full video render |
+| 6.5 | `combine` | `hyperframes/full-video/` unified preview + `combined-voiceover.mp3`; final video exported to `output/<slug>.mp4` | ALL sections rendered |
+| 6.8 | `caption` | `output/captions/<language>.srt` for all 22 languages (+ compatibility `output/captions.srt`, optional `.vtt`) | full combined audio or full video render |
 | 6.9 | `packaging` | `output/packaging.md` + `output/thumbnails/` | `00-topic-intake.md`, `01-research-pack.md`, `02-script.md` (recommended after caption) |
 | 7 | future upload skill | `07-upload.md` (legacy `08`) | approved review, captions, packaging |
 | 8 | future learning skill | `08-self-learning.md` (legacy `09`) | upload or review results |
@@ -91,12 +117,14 @@ Apply this every time:
 
 If an upstream file has a newer modified time than a downstream file, treat the downstream file as stale.
 
+Rerunning `visual-plan` for a section makes that section's implemented assets and render stale: rerun
+`visual-implement` then `render` for the affected section.
+
 Packaging rule:
 
 Packaging depends only on `00-topic-intake.md`, `01-research-pack.md`, and `02-script.md`.
-Its recommended position is after `caption` so the finished video, real chapters, and any built shorts
-are available. Rerunning packaging makes only `upload`/`learning` potentially stale, not earlier
-production outputs.
+Its recommended position is after `caption`. Rerunning packaging makes only `upload`/`learning`
+potentially stale, not earlier production outputs.
 
 ## Current Skill Coverage
 
@@ -105,10 +133,11 @@ production outputs.
 - Step 2 `Script draft` -> `.agents/skills/script-draft/`.
 - Step 3 `Voiceover` -> `.agents/skills/voiceover/`.
 - Step 4 `Visual plan` -> `.agents/skills/visual-plan/`.
+- Step 4.5 `Visual implement` -> `.agents/skills/visual-implement/`.
 - Step 5 `Render` -> `.agents/skills/render/`.
 - Project-level `Combine` -> `.agents/skills/combine/`.
-- Post-combine `Caption` -> `.agents/skills/caption/`; derives timing once from the full combined audio and exports all 22 languages as `output/captions/<language>.srt` (plus a compatibility `output/captions.srt`).
-- Post-caption `Packaging` -> `.agents/skills/packaging/`; writes `output/packaging.md` + `output/thumbnails/`.
+- Post-combine `Caption` -> `.agents/skills/caption/`.
+- Post-caption `Packaging` -> `.agents/skills/packaging/`.
 - `Shorts` side sub-workflow -> `.agents/skills/shorts/`.
 - The remaining lifecycle steps (review, upload, learning) do not have executable project-local skills yet.
 
@@ -116,46 +145,41 @@ production outputs.
 
 After the voiceover file, production can branch by section.
 
-The `voiceover` skill should ask which script section to generate. It should offer `All` first, then
-each script section. `All` means generate separate voiceover outputs for every section, not one
-stitched full-video audio file.
+The `voiceover`, `visual-plan`, `visual-implement`, and `render` skills all follow the same
+section-first behavior: ask which section to work on, offer `All` first, then each script section,
+and produce separate outputs per selected section.
 
-The `visual-plan` skill should follow the same section-first behavior after the voiceover file. It
-should ask which section to plan, offer `All` first, and create separate visual-plan outputs for every
-selected section.
-
-The `render` skill should follow the same section-first behavior after the visual-plan file. It should
-ask which section to build, offer `All` first, and create separate HyperFrames preview projects for
-every selected section.
-
-Per-section voiceover outputs belong in:
+Per-section voiceover outputs:
 
 ```text
 projects/<slug>/voiceover/section-XX-kebab-section-name/
 ```
 
-The project-level voiceover index belongs in (new projects):
-
-```text
-projects/<slug>/03-voiceover.md
-```
-
-Per-section visual-plan outputs belong in:
+Per-section visual-plan outputs:
 
 ```text
 projects/<slug>/visual-plan/section-XX-kebab-section-name/
 ```
 
-The project-level visual-plan index belongs in (new projects):
+Visual-implement assets (one shared video-level library; assets are named per the plan and reused
+across scenes/sections):
 
 ```text
-projects/<slug>/04-visual-plan.md
+projects/<slug>/assets/
+projects/<slug>/assets/asset-manifest.md
 ```
 
-Per-section render preview projects belong in:
+Per-section render preview projects:
 
 ```text
 projects/<slug>/section-previews/section-XX-kebab-section-name/
+```
+
+The mascot pose library the plan/implement steps draw from (starting palette; the plan may invent new
+poses, which implement then generates and adds back):
+
+```text
+.agents/_shared/assets/wit/poses/
 ```
 
 Render ports are fixed:
@@ -178,19 +202,20 @@ Each new video starts from `projects/_template/` and produces:
 - `06-review.md`
 - `07-upload.md`
 - `08-self-learning.md`
-- `assets/`
+- `assets/` (incl. `assets/asset-manifest.md` from visual-implement)
 - `hyperframes/`
 - `renders/`
 - `section-previews/`
 - `visual-plan/`
 - `voiceover/`
-- `output/` (final deliverables for upload: the final `.mp4`, `captions/<language>.srt` for all 22 languages, `packaging.md`, and `thumbnails/`)
+- `output/` (final deliverables for upload)
 
 ## Gate Rule
 
 Do not rush into HyperFrames.
 
-Production starts only after the idea, script, voiceover, and visual plan are strong enough to build.
+Production starts only after the idea, script, voiceover, visual plan, and implemented assets are
+strong enough to build.
 
 ## Review Rule
 

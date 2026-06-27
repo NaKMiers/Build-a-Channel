@@ -1,39 +1,36 @@
 ---
 name: topic-intake
-description: Generate and evaluate next-video topic ideas for the Why It Works YouTube channel. Use when the user asks for topic intake, next video ideas, raw topic candidates, scored video angles, or step 0 of the Why It Works video workflow; reads the shared channel brain and this skill's memory, browses YouTube or the web for high-view reference videos, shapes ideas into angle packages, scores each criterion, and optionally writes a project topic-intake file when a candidate is chosen.
+description: Generate and evaluate next-video topic ideas for the Why It Works YouTube channel, sourced from what the world is ACTUALLY curious about right now. Use when the user asks for topic intake, next video ideas, trending topics, raw topic candidates, scored video angles, or step 0 of the Why It Works workflow. It reads the shared channel brain, BROWSES the web for trending / high-interest topics (Google Trends, high-view recent videos, search and news interest) and gathers real EVIDENCE of demand for every candidate (never fabricated), then shapes ideas into angle packages scored for an A2–C1 English-learner audience whose advantage is "interesting English" (entertainment-first so learners stay and learn). Optionally writes a project topic-intake file when a candidate is chosen.
 ---
 
 # Topic Intake
 
 ## Purpose
 
-Run step `0` of the `Why It Works` video workflow: turn raw topic possibilities into sharp, scored video angle candidates.
+Run step `0` of the `Why It Works` video workflow: find topics the world is **actually curious about
+right now**, prove the demand with evidence, and shape the best ones into sharp, scored video angles.
 
-The output is not a generic idea list. It should be a small set of usable angle packages that connect topic, contradiction, visual metaphor, WIT role, thumbnail tension, first `10` seconds, English learner value, and final insight.
+This is not a brainstorm of evergreen ideas pulled from memory. The channel's edge is **interesting
+English**: an A2–C1 English learner comes for a genuinely funny, current, "why does this work?"
+explainer and improves their English as a side effect. So topics must be (a) trending / currently
+interesting, (b) backed by real demand evidence, and (c) explainable in entertaining, learner-friendly
+English.
+
+## Audience & Advantage (apply to every candidate)
+
+- Audience: **A2–C1 English learners** (anchor at B1; let C1 enjoy the jokes, let A2 lean on captions).
+- Advantage: **interesting English** — entertainment first, learning rides along. A topic must be
+  something a learner would WANT to watch even if it were in their own language.
+- Tone is allowed to be savage/cheeky (see `learning-log.md` confirmed tone rules); edge aimed at the
+  system / the viewer's own wallet, never slurs; public figures only as transformative parody.
 
 ## Pipeline Position
 
-This is step `0` of the video workflow.
-
-It has no previous required output.
-
-When Persist Mode creates, updates, or reruns `projects/<slug>/00-topic-intake.md`, every later output in the same project becomes stale (new-project numbering shown; legacy projects use the old numbers — resolve by suffix per `.agents/rules/video-workflow.md`):
-
-- `01-research-pack.md`
-- `02-script.md`
-- `03-voiceover.md`
-- `04-visual-plan.md`
-- `05-production-board.md`
-- `06-review.md`
-- `07-upload.md`
-- `08-self-learning.md`
-- `output/packaging.md` (+ `output/thumbnails/`)
-
-List stale downstream files in chat. Do not silently delete them. Remove stale downstream files only when the user explicitly asks; otherwise downstream skills must be rerun in order.
+Step `0`. No required previous output. When Persist Mode creates/updates
+`projects/<slug>/00-topic-intake.md`, every later output in the project becomes stale (resolve by
+suffix per `.agents/rules/video-workflow.md`). List stale downstream; never silently delete.
 
 ## Required Context
-
-Read these before generating or persisting topic ideas:
 
 1. `README.md`
 2. `.agents/rules/README.md`
@@ -42,198 +39,141 @@ Read these before generating or persisting topic ideas:
 5. `.agents/_shared/channel/channel-guardrails.md`
 6. `.agents/_shared/channel/reference-channels.md`
 7. `.agents/_shared/channel/learning-log.md`
-8. `.agents/_shared/channel/codex-collaboration.md`
-9. `.agents/_shared/channel/production-workflow.md`
-10. `.agents/_shared/systems/topic-packaging-hooks.md`
-11. `.agents/_shared/systems/script-learner-voice.md`
-12. `references/memory.md`
+8. `.agents/_shared/channel/production-workflow.md`
+9. `.agents/_shared/systems/topic-packaging-hooks.md`
+10. `.agents/_shared/systems/script-learner-voice.md`
+11. `references/memory.md`
 
-For quality calibration, inspect recent project examples when available, especially:
+## Trend & Evidence Requirement (the core of this skill)
 
-- `projects/2-why-everyone-pretends-to-be-busy/02-script.md`
-- `projects/2-why-everyone-pretends-to-be-busy/03-packaging.md`
-- `projects/2-why-everyone-pretends-to-be-busy/04-visual-plan.md`
+Do not invent topics. Before recommending anything, BROWSE to discover what people are currently
+curious about and to PROVE demand for each candidate.
 
-## Reference Browsing Requirement
+Use the project-local `/browse` skill (`.agents/skills/browse/SKILL.md`); fall back to global gstack
+`/browse`. Do not use other browser tools without explicit approval.
 
-Before recommending or choosing topic ideas, browse YouTube or the web for reference videos with strong view signals.
+Look across multiple demand signals:
 
-Use the project-local `/browse` skill at `.agents/skills/browse/SKILL.md` for all browsing when available. This skill is vendored from gstack so the project does not depend only on global skills installed on one machine.
+- **Google Trends** — rising / breakout queries, and 12-month interest for a candidate term. Capture
+  the trend state (rising / breakout / steady-high) and the comparison.
+- **YouTube** — recent videos (ideally last weeks/months) on the topic with high view counts; note
+  view counts, recency, and how many strong videos exist (saturation vs opportunity).
+- **Search / news / social interest** — news volume, Reddit/forum threads, "people also ask", or
+  visible engagement showing the topic is alive now.
 
-If the project-local browse skill is missing or its binary cannot run, fall back to the global gstack `/browse` skill. Do not use other browser tools for web research in this workspace unless the user explicitly approves a fallback.
+For EVERY serious candidate, record real evidence:
 
-For each serious candidate, find at least `1` relevant reference video, preferably `2`, that shows audience demand, packaging patterns, or angle risk. Prioritize videos with many views, clear titles, strong topic fit, and adjacent audience overlap.
+- the signal type (Trends / YouTube views / news / social)
+- the concrete proof (e.g. "Google Trends: breakout"; "3 videos in last 60 days, top has 2.1M views")
+- source URL(s)
+- recency
+- a one-line read of demand and saturation
 
-Record:
-
-- reference title
-- channel
-- URL
-- visible view count if available
-- why it matters for this candidate
-- what to learn without copying
-
-Use reference videos as evidence of demand and packaging shape, not as permission to copy a premise, thumbnail, joke, script, or frame.
-
-If browsing fails, say so clearly, mark `Reference confidence: low`, and do not invent view counts.
+If browsing fails or a candidate has no real demand signal, mark `Demand evidence: low` and do NOT
+invent view counts, trend states, or numbers. A candidate with no evidence cannot be a top pick.
 
 ## Request Modes
 
-Choose the narrowest useful mode.
-
-### Suggest Mode
-
-Use when the user asks for topic ideas, next-video ideas, or topic intake without naming a final choice.
-
-Return candidates only. Do not create a project folder unless the user asks.
-
-### Persist Mode
-
-Use when the user selects a topic or asks to start the next video project.
-
-Create or update only `projects/<slug>/00-topic-intake.md` from the chosen angle. Do not create research, script, packaging, voice, visual plan, HyperFrames, or upload files beyond the project template unless explicitly asked.
-
-If updating an existing `00-topic-intake.md` and downstream outputs already exist, treat those downstream outputs as stale after the update. Tell the user to remove them or rerun downstream skills in order, starting with `research-pack`.
-
-### Improve Memory Mode
-
-Use when the user reviews topic suggestions, rejects candidates, chooses a direction, or gives a lesson that should improve future topic intake.
-
-Update the active project first if a project exists, then this skill's `references/memory.md`, then shared memory only when the lesson is reusable across the channel.
+- **Suggest Mode** — user wants ideas. Return scored candidates with evidence; do not create a project.
+- **Persist Mode** — user picks a topic / asks to start the next video. Create or update only
+  `projects/<slug>/00-topic-intake.md`. If downstream files exist, mark them stale and tell the user.
+- **Improve Memory Mode** — user gives taste feedback; update the active project, then
+  `references/memory.md`, then shared memory only for channel-wide lessons.
 
 ## Workflow
 
-1. Rebuild channel context from the required files.
-2. Identify recent or active topics so candidates do not repeat the same promise.
-3. Generate `8-12` raw topic ideas across the channel lanes:
-   - money and spending
-   - internet behavior
-   - modern life problems
-   - business and hidden systems
-   - work, status, attention, and social behavior
-4. Convert each raw idea into `1-2` sharper angles using:
+1. Rebuild channel context; note recent/active topics so candidates don't repeat.
+2. BROWSE for what's trending / currently interesting across the channel's world (money, internet,
+   society, business, modern life, current culture) — start from real trend/interest signals, not memory.
+3. Collect a pool of `8–12` currently-interesting candidates, each with at least one real demand signal.
+4. Shape each into a sharper angle: `topic + contradiction + visual metaphor + viewer pain`, with the
+   sentence test: `This video is about how ___ looks like ___, but is actually ___.`
+5. Gather/confirm demand EVIDENCE per candidate (Trends + recent high-view videos + news/social).
+6. Reject or revise on hard fails: no real demand evidence; not explainable as a "why"; no curiosity;
+   no visual/scene potential; weak interesting-English fit (too dry/academic to entertain a learner);
+   unsafe / copyright / community-standard risk; pure rage-bait; direct product promotion.
+7. Score the strongest angles (scorecard below).
+8. Keep the best `5–7`; recommend the top `1–3`. For the top pick, sketch what becomes research,
+   packaging, and the first 10 seconds.
+9. Persist Mode only: write `projects/<slug>/00-topic-intake.md`. Then run the stale downstream check.
 
-```text
-topic + contradiction + visual metaphor + viewer pain
-```
+## Scorecard (each /5)
 
-Use the sentence test:
+- **Trend / timeliness** — is it hot or rising NOW?
+- **Demand evidence** — how strong/real is the proof of interest?
+- **Curiosity** — strong "wait, why is that?" hook.
+- **Relatability (global)** — a universal pain the worldwide learner audience feels (not local-only).
+- **Explainability** — there is a real, satisfying hidden "why" to explain.
+- **Interesting-English fit** — entertaining + learnable for A2–C1; would they watch for fun?
+- **Visual potential** — strong scenes, mascot beats, real-asset/screenshot/caricature material.
+- **Packaging strength** — title + thumbnail curiosity without fake claims.
+- **Feasibility & safety** — buildable; copyright/law/community-standards safe; protects trust.
 
-```text
-This video is about how _____ looks like _____, but is actually _____.
-```
+Threshold for normal production: strong total with no critical category (trend, demand evidence,
+curiosity, explainability, interesting-English fit) below `3/5`.
 
-5. Reject or revise angles that trigger hard fails:
-   - generic education
-   - advice or motivation without a hidden system
-   - no repeated visual motif
-   - no clear WIT emotional role
-   - no real-life object, UI, paper, receipt, product, or phone evidence
-   - obvious final insight
-   - weak English learner fit
-   - unsafe, copied, misleading, or rage-bait packaging
-   - too close to direct product promotion
-6. Browse YouTube or the web for high-view reference videos for each serious candidate.
-7. Use the reference signal to revise, reject, or strengthen candidate angles.
-8. Score the strongest angles with `.agents/_shared/systems/topic-packaging-hooks.md`.
-9. Keep the best `5-7` candidates and recommend the top `1-3`.
-10. For the best candidate, include concrete next-step readiness: what would become research, packaging, and first `10` seconds.
-11. In Persist Mode, create or update only `projects/<slug>/00-topic-intake.md`.
-12. After updating `00-topic-intake.md`, run the stale downstream check and list later outputs that must be removed or rerun.
-
-## Output Format
-
-In Suggest Mode, use this structure:
+## Output Format (Suggest Mode)
 
 ```markdown
 ## Best Next Pick
-
 - Working title:
 - Sharp angle:
+- Why now (trend):
+- Demand evidence:
 - Why this one:
 - Score:
 - Main risk:
 
 ## Candidate Table
+| Rank | Working title | Trend | Demand evidence | Curiosity | Relatable | Explainable | Eng-fit | Visual | Packaging | Feasible/Safe | Total | Decision |
+|---:|---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---|
 
-| Rank | Working title | Ref signal | Curiosity | Relatability | Visual motif | Humor | English fit | Depth | Packaging | Feasible | Total | Decision |
-| ---: | ------------- | ---------- | --------: | ----------: | -----------: | ----: | ----------: | ----: | --------: | -------: | ----: | -------- |
-
-## Reference Evidence
-
-| Candidate | Reference video | Channel | Views | URL | What to learn |
-| --------- | --------------- | ------- | -----: | --- | ------------- |
+## Demand Evidence
+| Candidate | Signal type | Concrete proof (no invented numbers) | URL | Recency | Read |
+|---|---|---|---|---|---|
 
 ## Top Candidate Details
-
 ### 1. <working title>
-
-- Topic:
-- Viewer pain:
-- Hidden system:
+- Topic / why-question:
+- Why now (trend state):
+- Demand evidence:
+- Viewer pain / hidden system:
 - Main contradiction:
 - Recurring visual metaphor:
 - Thumbnail tension:
 - First 10 seconds:
-- WIT role:
-- Real-life objects:
-- English learner value:
+- Mascot role:
+- Real-life / asset material:
+- Interesting-English value (and a phrase or two learners gain):
 - Final insight:
-- Score breakdown:
-  - Curiosity: __ / 5
-  - Relatability: __ / 5
-  - Visual motif: __ / 5
-  - Humor potential: __ / 5
-  - English learner fit: __ / 5
-  - Explanation depth: __ / 5
-  - Packaging strength: __ / 5
-  - Production feasibility: __ / 5
-  - Total: __ / 40
-- Reference confidence:
-- Score notes:
+- Score breakdown (each /5) + total:
+- Demand evidence confidence:
 - Required fixes before research:
 
-## Parked Or Rejected
-
+## Parked / Rejected
 - <idea>: <reason>
 
 ## Next Step
-
-Pick one candidate, ask for revisions, or ask me to start `projects/<slug>/00-topic-intake.md`.
+Pick one, ask for revisions, or ask me to start `projects/<slug>/00-topic-intake.md`.
 ```
 
-In Persist Mode, write the chosen candidate into:
+Persist Mode writes the chosen candidate into `projects/<slug>/00-topic-intake.md` using the template
+fields from `projects/_template/00-topic-intake.md` plus the full angle package, demand evidence, and
+scorecard.
 
-```text
-projects/<slug>/00-topic-intake.md
-```
+## Hard Fails
 
-Use the template fields from `projects/_template/00-topic-intake.md`, plus the full topic angle package and scorecard.
-
-## Quality Bar
-
-Use `Why Everyone Pretends To Be Busy` as the current quality reference:
-
-- It is not just a workplace productivity topic; it is a social mechanism about visible busyness becoming status, safety, and fake urgency.
-- It avoids accusing the viewer; the system pressures WIT before WIT performs the behavior.
-- It has a recurring visual motif: calendar cage and fake emergency machine.
-- It has a clear WIT role: trapped, attacked, overloaded, deadpan.
-- It creates boardable scenes before script polish.
-- It ends with a useful insight in simple English: modern life confuses activity with value.
-
-Topic candidates should aim for that level of specific contradiction and visual carry.
+- recommending a topic with no real demand evidence, or inventing trend states / view counts
+- a top pick that is not currently interesting/trending (unless the user explicitly wants evergreen)
+- a topic with no explainable "why", no curiosity, or no visual/scene potential
+- weak interesting-English fit (cannot entertain an A2–C1 learner)
+- unsafe, copyright-risky, community-standard-violating, rage-bait, or direct-promotion topics
+- skipping the browse/evidence pass when browsing was available
 
 ## Self-Improvement
 
-Read `references/memory.md` every run.
-
-Update skill memory when:
-
-- the user chooses a candidate and explains why
-- the user rejects candidates and gives taste feedback
-- a topic later fails research, packaging, hook, or production
-- a repeated pattern appears in good or weak topic suggestions
-
-Promote lessons into `.agents/_shared/channel/learning-log.md` only when they can improve the whole channel. Classify each promoted lesson as `Core`, `Experiment`, `Operational lesson`, or `Reject` according to `.agents/_shared/channel/channel-guardrails.md`.
-
-Do not rewrite channel foundation, audience, tone, or content pillars from one topic-intake run without explicit user confirmation.
+Read `references/memory.md` every run. Update it when the user picks/rejects candidates and explains
+why, when a demand signal proves reliable or misleading, or when a topic later fails in production.
+Promote channel-wide lessons into `.agents/_shared/channel/learning-log.md`, classified `Core` /
+`Experiment` / `Operational lesson` / `Reject`. Do not rewrite channel foundation, audience, or tone
+from one run without explicit user confirmation.

@@ -23,10 +23,13 @@ This folder stores executable project-local Codex skills.
   Creates step 4 section voiceover outputs from a selected project's sectioned script.
 
 - [Visual Plan](visual-plan/SKILL.md)
-  Creates step 5 section visual plans, reference boards, and HyperFrames guidance from selected section voiceover output.
+  Creates step 4 visual plans: ONE master plan + synced per-section copies, per-sentence scenes described in extreme detail, and an ASSET list per scene (type/filename/layout). DESCRIBES only (no image prompts); may invent new poses/scenes.
+
+- [Visual Implement](visual-implement/SKILL.md)
+  Step 4.5 (after visual-plan, before render). Reads each scene's ASSET list and produces the assets — writes prompts + creates isolated `generate` elements, browses license-safe real photos / captures public screenshots, copies poses, reuses by filename — into `assets/` + `assets/asset-manifest.md`.
 
 - [Render](render/SKILL.md)
-  Creates step 6 section HyperFrames preview projects, fixed localhost previews, production-board status, and optional section renders.
+  Creates step 5 section HyperFrames preview projects by COMPOSITING the mascot + pre-made assets from `assets/` per the plan's layout; fixed localhost previews, production-board status, and optional section renders.
 
 - [Combine](combine/SKILL.md)
   Project-level assembly + export step. Combines all completed section renders into one unified preview on `localhost:1000` with a single combined voiceover, then exports the final MP4 to `projects/<slug>/output/` (rendered via `renders/` staging, then moved; `renders/` removed if left empty). Reuses existing renders/assets; never changes section content.
@@ -46,12 +49,13 @@ This folder stores executable project-local Codex skills.
 
 ## Remaining Future Skills
 
-`Topic Intake`, `Research Pack`, `Script Draft`, `Voiceover`, `Visual Plan`, `Render`, `Combine`, `Caption`, and `Packaging` are the current main-pipeline video-production skills (packaging runs after caption). `Shorts` is a side sub-workflow after `combine`.
+`Topic Intake`, `Research Pack`, `Script Draft`, `Voiceover`, `Visual Plan`, `Visual Implement`, `Render`, `Combine`, `Caption`, and `Packaging` are the current main-pipeline video-production skills (packaging runs after caption). `Shorts` is a side sub-workflow after `combine`.
 
 Pipeline rule:
 
 - each skill requires the previous step output before it runs
-- main pipeline order is `topic-intake -> research-pack -> script-draft -> voiceover -> visual-plan -> render -> review -> combine -> caption -> packaging`
+- main pipeline order is `topic-intake -> research-pack -> script-draft -> voiceover -> visual-plan -> visual-implement -> render -> review -> combine -> caption -> packaging`
+- `visual-implement` is unnumbered (deliverable is `assets/` + `assets/asset-manifest.md`); it runs after `visual-plan` and is a hard gate before `render`
 - `combine` runs once after all sections are rendered; `caption` runs once after `combine` and needs the full combined audio (or a full render)
 - render uses `localhost:1000` for unified preview and `localhost:1000 + section number` for section previews
 - `packaging` runs after `caption`; it requires `00-topic-intake.md`, `01-research-pack.md`, and `02-script.md`, and writes `output/packaging.md` + `output/thumbnails/`

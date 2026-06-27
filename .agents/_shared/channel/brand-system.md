@@ -10,9 +10,9 @@ This file consolidates the channel visual identity, WIT rules, and thumbnail vis
 
 - Name: `Why It Works`
 - Format: English-first no-face explainer channel
-- Audience lens: English learners
-- Lane: money, internet, society, business, and modern life
-- Tone: smart, simple, funny, dry
+- Audience lens: English learners, level A2–C1 (advantage: interesting English — entertainment-first; learners come for the fun and improve English as a side effect)
+- Lane: money, internet, society, business, modern life, and current culture
+- Tone: smart, simple, funny, dry, and allowed savage/cheeky (edge at the system/own wallet, never slurs; public figures as transformative parody) — see learning-log.md
 - Default text style: handwritten labels and captions rendered through HyperFrames
 
 Core promise:
