@@ -55,6 +55,80 @@ are owner-generated from prompts (no third-party rights; parody, no real logos, 
 `ai-face-does-not-exist.png` is an AI-generated, public-domain image of a non-existent person (used
 editorially to demonstrate "looks fine at a glance, but it's AI"); it depicts no real identifiable person.
 
+## Section 4: The Machine That Feeds Itself (bases)
+
+| Filename | Title | Creator | License | Source | Source URL |
+|---|---|---|---|---|---|
+| `dark-machine-hall-1.jpg` | Heating room (pump/valve machine room) | Carol M. Highsmith | CC0 1.0 | rawpixel | https://images.rawpixel.com/editor_1024/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGQxOS0zLTE4MjA3YS5qcGc.jpg |
+| `vintage-film-set-1.jpg` | Film production scenario setting | unknown | CC0 1.0 | rawpixel | https://images.rawpixel.com/editor_1024/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTEyL2ZsNTE4NTMwODU4NzItaW1hZ2UuanBn.jpg |
+| `clean-bright-desk-1.jpg` | Laptop Desk | Lisa Fotios | CC0 1.0 | StockSnap | https://stocksnap.io/photo/JCXQS3IVWD |
+| `casino-slot-machines-1.jpg` | Slot machines casino | unknown | CC0 1.0 | rawpixel | https://images.rawpixel.com/editor_1024/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA3L3B4NzU5Njg0LWltYWdlLmpwZw.jpg |
+| `dark-spotlight-stage-1.jpg` | Free theatre drapes image | unknown | CC0 1.0 | rawpixel | https://images.rawpixel.com/editor_1024/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcHgxMDk2NDI2LWltYWdlLWt3dnk0dTQ2LmpwZw.jpg |
+| `wall-of-screens-grid-1.jpg` | Television wall (4848859758) | Eric Chan | CC BY 2.0 | Wikimedia Commons | https://commons.wikimedia.org/wiki/File:Television_wall_(4848859758).jpg |
+| `cctv-control-room-1.jpg` | Control room desk | unknown | CC0 1.0 | rawpixel | https://images.rawpixel.com/editor_1024/cHJpdmF0ZS9zdGF0aWMvaW1hZ2Uvd2Vic2l0ZS8yMDIyLTA0L2xyL2ZyY29udHJvbF9yb29tX29wZXJhdGlvbl9jb250cm9sLWltYWdlLWt5YmR5bnc5LmpwZw.jpg |
+
+`wall-of-screens-grid-1.jpg` is CC BY 2.0 - credit "Eric Chan, CC BY 2.0" (recorded above). All others
+are CC0 1.0 / Public Domain (no attribution legally required; recorded for traceability).
+
+Render flags for S4 bases:
+- `clean-bright-desk-1.jpg`: a DELL logo is visible on the laptop bezel - crop/blur it at render, or swap to a brand-free desk.
+- `casino-slot-machines-1.jpg`: crop the far-left background (tiny distant blurred shapes); the slot-game titles on the screens are incidental, not focal.
+- `wall-of-screens-grid-1.jpg`: minor vintage SONY/PHILCO labels on the CRTs are incidental; the tiny on-screen images are not focal.
+- `dark-machine-hall-1.jpg` is bright as shot - grade it dark/moody for the night-engine mood. Most rawpixel/stocksnap bases are preview-res (~960-1024px); swap to a full-res source if soft at 1920.
+
+S4 GENERATE heroes (slop-engine-loop, money-trail-coins, old-creation-cost-pile, prompt-box-instant,
+engagement-slot-machine, attention-quality-scale, flood-the-zone-cannon, blindfold-sorter-robot) are
+owner-generated from the prompts in `asset-manifest.md` (no third-party rights; generic metaphors, no real
+logos, no real people).
+
+## Section 5: It Already Got Out (bases)
+
+| Filename | Title | Creator | License | Source | Source URL |
+|---|---|---|---|---|---|
+| `music-stage-lights-1.jpg` | high view empty concert hall | unknown | CC0 1.0 | rawpixel | https://images.rawpixel.com/editor_1024/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdXB3azYxNjkyNjE5LXdpa2ltZWRpYS1pbWFnZS1rb3diOTBwbC5qcGc.jpg |
+| `forest-floor-mushrooms-1.jpg` | Wild mushroom forest floor | unknown | CC0 1.0 | rawpixel | https://images.rawpixel.com/editor_1024/cHJpdmF0ZS9zdGF0aWMvaW1hZ2Uvd2Vic2l0ZS8yMDIyLTA0L2xyL2ZybXVzaHJvb21zX2ZvcmVzdF9tb3NzX2xvZy1pbWFnZS1reWJiMjFseS5qcGc.jpg |
+| `living-room-tv-1.jpg` | Free minimalist living room interior | unknown | CC0 1.0 | rawpixel | https://images.rawpixel.com/editor_1024/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L2lzMTU3OTAtaW1hZ2Uta3d2eWdzeWYuanBn.jpg |
+| `office-desk-inbox-1.jpg` | Home Office | Design by Matt | CC0 1.0 | StockSnap | https://stocksnap.io/photo/QUU0AQABSN |
+
+All four S5 bases are CC0 1.0 (no attribution legally required; recorded for traceability).
+
+Render flags for S5 bases:
+- `office-desk-inbox-1.jpg` has an Apple logo on the monitor bezel + Apple peripherals - crop/blur, or cover the screen with the CSS `workslop-document`, at render.
+- `music-stage-lights-1.jpg` is an empty concert hall (deliberately name-free; the first "Gavin James" stage pick was rejected for naming a real artist on the fake-band scene).
+- Most bases are preview-res (~960-1024px); swap to full-res if soft at 1920.
+
+S5 GENERATE heroes (slop-bursting-phone, ai-band-uncanny, mushroom-guide-book, six-legged-horse-cartoon,
+workslop-document, real-photo-lifeline) are owner-generated from the prompts in `asset-manifest.md`
+(no third-party rights; non-existent people, no real logos; the deadly-mushroom beat is a real safety
+warning played straight).
+
+## Section 6: It's Not AI's Fault (bases)
+
+| Filename | Title | Creator | License | Source | Source URL |
+|---|---|---|---|---|---|
+| `courtroom-1.jpg` | Courtroom details (Richard Sheppard Arno...) | unknown | CC0 1.0 | rawpixel | https://images.rawpixel.com/editor_1024/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGQxOS0yNi0wOF8wLmpwZw.jpg |
+| `clinic-scan-room-1.jpg` | MRI room | unknown | CC0 1.0 | rawpixel | https://images.rawpixel.com/editor_1024/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L2ZsNDgxMzIwMTE5NTgtcHVibGljLWltYWdlLWtvd3M5Z2VhLmpwZw.jpg |
+| `workbench-tools-1.jpg` | Workbench Machinery | unknown | CC0 1.0 | StockSnap | https://stocksnap.io/photo/RKR8CFTODQ |
+| `empty-boardroom-1.jpg` | empty elegant boardroom long table | unknown | CC0 1.0 | rawpixel | https://images.rawpixel.com/editor_1024/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdXB3azYxODA0ODQ2LXdpa2ltZWRpYS1pbWFnZS1rb3dibTl3cS5qcGc.jpg |
+
+## Section 7: Payoff: Attention In, Garbage Out (bases)
+
+| Filename | Title | Creator | License | Source | Source URL |
+|---|---|---|---|---|---|
+| `evidence-desk-1.jpg` | book + magnifying glass on it | unknown | CC0 1.0 | rawpixel | https://images.rawpixel.com/editor_1024/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA2L3Vwd2s2MTgwMjgxMS13aWtpbWVkaWEtaW1hZ2Uta293cTR1YXEuanBn.jpg |
+| `bright-window-calm-1.jpg` | Window With Plants | unknown | CC0 1.0 | rawpixel | https://images.rawpixel.com/editor_1024/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcHUyMzMzODI5LWltYWdlLWt3eXJveW41LmpwZw.jpg |
+
+All six S6/S7 bases are CC0 1.0 (no attribution legally required; recorded for traceability).
+
+Render flags:
+- `clinic-scan-room-1.jpg` has a faint Hitachi label on the scanner - minor, crop/blur if needed (re-fetched at editor_1024 to drop the rawpixel watermark on the image_1300 version).
+- S7 7.2 uses the reused `dark-spotlight-stage-1.jpg` (no new podium asset) because clean people-free award-podium photos were not license-safe (all real athletes).
+- Most bases are preview-res (~960-1024px); swap to full-res if soft at 1920.
+
+S6/S7 GENERATE props/heroes (artist-easel, tinfoil-hat, empty-villain-throne, uncuffable-incentive,
+slop-wins-trophy) are owner-generated from the prompts in `asset-manifest.md` (no third-party rights;
+generic metaphors, no real logos / people).
+
 ## Notes
 
 - `shrimp-jesus.jpg` and `ai-extra-fingers-hand.png` are AI-generated images released into the Public

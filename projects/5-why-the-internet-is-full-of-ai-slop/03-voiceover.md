@@ -2,7 +2,7 @@
 
 Video: `Why The Internet Is Full Of Garbage Now`
 
-Status: `all 7 sections generated (am_eric / 0.80)`
+Status: `all 8 sections generated (am_eric / 0.80)`
 
 Source skill: `voiceover`
 
@@ -30,6 +30,7 @@ Source file:
 | 5 | It Already Got Out | generated | am_eric (David23) | 0.80 | 53.739s | `voiceover/section-05-it-already-got-out/scratch-audio/section-05-it-already-got-out-david23-am_eric-0.80.mp3` | spread montage; numbers spoken in full; same speed |
 | 6 | It's Not AI's Fault (And Not A Plot) | generated | am_eric (David23) | 0.80 | 38.933s | `voiceover/section-06-its-not-ais-fault/scratch-audio/section-06-its-not-ais-fault-david23-am_eric-0.80.mp3` | honest turn; conspiracy rejected; same speed |
 | 7 | Payoff: Attention In, Garbage Out | generated | am_eric (David23) | 0.80 | 43.413s | `voiceover/section-07-attention-in-garbage-out/scratch-audio/section-07-attention-in-garbage-out-david23-am_eric-0.80.mp3` | calm payoff; "attention in, garbage out"; same speed |
+| 8 | Outro: Like, Share, Subscribe | generated | am_eric (David23) | 0.80 | 7.957s | `voiceover/section-08-outro-like-share-subscribe/scratch-audio/section-08-outro-like-share-subscribe-david23-am_eric-0.80.mp3` | short straightforward like/share/subscribe CTA (added 2026-06-29); same speed |
 
 ## Section Details
 
@@ -146,11 +147,27 @@ Source file:
 - Use: production preview / timing reference (approved voice)
 - Notes: calm payoff; "Attention in. Garbage out." is the core takeaway; canonical script keeps exact `02-script.md` wording.
 
+### Section 8: Outro: Like, Share, Subscribe
+
+- Status: `final section voice generated`
+- Section folder: `voiceover/section-08-outro-like-share-subscribe/`
+- Clean script: `voiceover/section-08-outro-like-share-subscribe/section-08-outro-like-share-subscribe-script.txt`
+- Marked script: `voiceover/section-08-outro-like-share-subscribe/section-08-outro-like-share-subscribe-marked-script.md`
+- TTS input: `voiceover/section-08-outro-like-share-subscribe/tts-inputs/section-08-outro-like-share-subscribe-tts.txt`
+- Audio file: `voiceover/section-08-outro-like-share-subscribe/scratch-audio/section-08-outro-like-share-subscribe-david23-am_eric-0.80.mp3`
+- Duration: `7.957s`
+- Voice: `am_eric` (David23)
+- Speed: `0.80`
+- Language: `en-us`
+- Tool: `npx hyperframes@0.6.76 tts ... --voice am_eric --speed 0.80 --lang en-us --json`
+- Use: production preview / timing reference (approved voice)
+- Notes: short, straightforward like/share/subscribe outro (added 2026-06-29 after the owner added Section 8 and asked for a shorter, more direct CTA); canonical script keeps exact `02-script.md` wording; speed 0.80 matches Sections 1-7.
+
 ## Stale / Regeneration Notes
 
-- All 7 sections generated at `am_eric / 0.80 / en-us`. Total spoken runtime approximately `5:20`
+- All 8 sections generated at `am_eric / 0.80 / en-us`. Total spoken runtime approximately `5:06`
   (sum of section durations, before any combine-stage gaps): 31.253 + 36.715 + 40.704 + 52.971 +
-  53.739 + 38.933 + 43.413 = `297.7s`.
+  53.739 + 38.933 + 43.413 + 7.957 = `305.685s`.
 - If any `02-script.md` section wording changes, regenerate only that section and update its row.
 - If `02-script.md` Section 1 wording is changed (e.g. condensing the hook), regenerate this section
   and update the index row.

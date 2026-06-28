@@ -218,6 +218,35 @@ bases that won't contain incidental people.
 Promote to shared memory: no; visual-implement sourcing tactic (the unlimited-imagination/generate-forward
 direction itself is already promoted via visual-plan memory + learning-log).
 
+### 2026-06-29 - Sourcing gotchas (S6/S7, ai-slop): rawpixel watermark path, athlete-podium trap, pose drift
+
+Classification: `Operational lesson`
+
+Context:
+Sourcing S6 + S7 browse bases for `5-why-the-internet-is-full-of-ai-slop`. Three concrete traps hit:
+
+Lessons (apply next time):
+- RAWPIXEL `image_1300/...` PATH CAN BE WATERMARKED: the MRI-room pick downloaded via the Openverse
+  `url` (`images.rawpixel.com/image_1300/...`) came back with a visible repeating "rawpixel" watermark.
+  The `editor_1024/...` variant of the SAME base64 id is un-watermarked. Fix: swap `image_1300` ->
+  `editor_1024` in the URL (and always Read-verify the downloaded pixels for watermarks, not just people/brands).
+- AWARD/PODIUM/SPORTS QUERIES = REAL IDENTIFIABLE ATHLETES: "winner podium", "trophy podium", "award
+  stage" return real cyclists/figure-skaters/NASCAR/Seinfeld-cast photos (named real people) - all reject
+  for the no-face/no-real-figure rule, and "empty award stage" returns ~0. When a podium/stage base isn't
+  license-safe, REUSE an existing stage base (here `dark-spotlight-stage-1.jpg`) and let the generated hero
+  carry the podium idea; document the swap in the plan + master.
+- POSE-CATALOG DRIFT (again): `talking_hand_at_chin_eyes_closed` is indexed in `pose.md` but NOT on disk in
+  the library. Substituted `hand_on_cheek_pondering_eyes_closed` (closest: hand-near-face + eyes-closed +
+  considering) and synced it into the S6 section plan + master. Always `ls` the real pose dir per filename.
+- BRAND-FREE DESK IS HARD: modern desk/monitor stock almost always shows Apple/Dell logos; for the
+  workslop beat the document is the hero, so a clean desk with a small croppable bezel logo (flagged) is
+  acceptable, consistent with the S1 SSL-console / S4 Dell handling.
+
+Apply next time: prefer rawpixel `editor_1024`; add athlete/celebrity/event terms to the people denylist
+for stage/podium queries; ls-verify every pose filename; flag (don't chase forever) minor croppable brands.
+
+Promote to shared memory: no; visual-implement sourcing/tooling behavior.
+
 ## Feedback Entry Template
 
 ```markdown

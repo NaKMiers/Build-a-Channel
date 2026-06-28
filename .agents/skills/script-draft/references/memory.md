@@ -313,6 +313,37 @@ Promote to shared memory:
 no - sharpens existing learner-clarity + tone notes; revisit promoting a one-line "speak the mechanism
 aloud" rule into `script-learner-voice.md` if it recurs on another mechanism-heavy video.
 
+### 2026-06-29 - Owner wants a like/share/subscribe OUTRO (reverses the "no spammy CTA" default)
+
+Classification: `Script draft lesson` (candidate `Experiment` for the channel)
+
+Context:
+On `5-why-the-internet-is-full-of-ai-slop`, after the script was finished with a deliberate no-CTA close
+(S7 ended dry, non-preachy - matching the channel's standing "no spammy CTA" guardrail), the owner asked
+to ADD a like/share/subscribe segment at the very end as a new Section 8 ("ở cuối video phải có đoạn yêu
+cầu like share subscribe"). Added Section 8 "Outro: Use The Machine": a short CTA that names like/share/
+subscribe explicitly but is EARNED by the video's own thesis (the internet is an attention machine, so
+the CTA reframes engaging as the viewer USING that machine for "more of this, less slop"), system-aimed
+and dry, not begging. Kept S1-S7 unchanged; strongest words / hook / title / thumbnail still carry no CTA.
+
+Lesson:
+This owner DOES want an explicit like/share/subscribe outro - the prior "no spammy CTA" rule is not
+absolute for him. When adding a CTA, keep it on-brand: a short final section, tied to the video's own
+motif/insight so it reads as a payoff not a plug; name like/share/subscribe simply (learner-clear) with
+one concrete reason each; stay system/self-aimed and warm, never guilt-trip; protect monetization-safe
+placement (no CTA in the first 7s/title/thumbnail).
+
+Apply next time:
+- Default to offering a short on-brand CTA outro section for this owner; tie it to the episode's metaphor.
+- Adding an outro section does NOT restale S1-S(n-1) narration; only the NEW section needs the full
+  per-section pipeline (voiceover -> visual-plan -> visual-implement -> render), and whole-video steps
+  (combine/caption/packaging) must include it when run.
+
+Promote to shared memory:
+not yet - this conflicts with the existing "no spammy CTA" note in channel-guardrails/packaging. Log here
+as a per-owner preference; promote to `learning-log.md` as an Experiment (and reconcile the guardrail) only
+after the owner confirms it should be the standing close for ALL videos.
+
 ## Feedback Entry Template
 
 Use this shape when updating the skill after user review:

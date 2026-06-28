@@ -4,9 +4,9 @@ Video: `Why The Internet Is Full Of Garbage Now`
 
 Status: `draft script`
 
-Estimated runtime: `5:50`
+Estimated runtime: `6:00`
 
-Estimated words: `1055`
+Estimated words: `1085`
 
 Source skill: `script-draft`
 
@@ -42,6 +42,7 @@ estimates; replace with aligned audio timestamps after voiceover.
 | 5 | It Already Got Out | `3:12-4:12` | `182` | Show the spread: music, books, kids, your job. |
 | 6 | It's Not AI's Fault (And Not A Plot) | `4:12-5:00` | `146` | Honest turn; reject the conspiracy; name the real culprit. |
 | 7 | Payoff: Attention In, Garbage Out | `5:00-5:50` | `152` | Land the insight; hand the viewer the tells. |
+| 8 | Outro: Like, Share, Subscribe | `5:50-6:00` | `30` | Short, straightforward like/share/subscribe ask. |
 
 ## Section 1: Hook: Is Any Of This Real?
 
@@ -295,6 +296,40 @@ Voice revision notes:
 
 - `[beat]` after "It is doing its job perfectly"; `[pause]` before the final upgrade line; `[slower]` on "stop being fooled by it."
 
+## Section 8: Outro: Like, Share, Subscribe
+
+Estimated time: `5:50-6:00`
+
+Words: `30`
+
+Purpose: A short, straightforward like/share/subscribe ask to close the video. Direct and friendly, kept
+dry and clean (not begging), placed after the S7 payoff.
+
+Visual goal: A simple end card. WIT center, eyes open, calm thumbs-up; three clear icons appear on their
+words - a thumbs-up (like), a share arrow, and a red `SUBSCRIBE` bell. Optional tiny `slop-engine-loop`
+callback in a corner. No frantic "smash the button" energy.
+
+Narration:
+
+```text
+That's it for today.
+
+If this helped, like the video, share it with one person who needs it, and subscribe for more. [beat]
+
+See you in the next one.
+```
+
+Approval check:
+
+- Short and direct: like / share / subscribe are each named plainly (learner-clear) with one short reason, no clever detour.
+- Tone stays calm and dry, never begging or guilt-tripping.
+- Owner-requested addition: Section 7 was written with no CTA; this outro is the deliberate reversal. The hook, title, thumbnail, and strongest words still carry no CTA (monetization-safe placement unchanged).
+
+Voice revision notes:
+
+- `[beat]` after the like/share/subscribe line, before "See you in the next one."
+- Keep it light and quick; a brief wind-down after the S7 payoff, not a second climax.
+
 ## Claim Safety Notes
 
 ### Safe Claims
@@ -332,6 +367,7 @@ Voice revision notes:
   "it's dumber than that," "congratulations... workslopped"), never at a person, group, or protected category.
 - Strongest word used is "garbage/junk" (mild); none in the first 7 seconds, the title, or the thumbnail.
 - No dark jokes targeting real harm; the "mushroom can kill you" line is a real safety warning, not a joke.
+- The Section 8 CTA is short and straightforward (like/share/subscribe, one brief reason); it never guilt-trips or begs, and the hook / title / thumbnail / strongest words still carry no CTA.
 
 ## English Learner Notes
 
