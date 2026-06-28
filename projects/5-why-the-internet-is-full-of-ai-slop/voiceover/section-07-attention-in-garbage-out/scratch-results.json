@@ -1,0 +1,21 @@
+{
+  "section": "Section 7: Payoff: Attention In, Garbage Out",
+  "status": "final section voice generated",
+  "voice": "am_eric",
+  "voiceName": "David23",
+  "speed": 0.8,
+  "lang": "en-us",
+  "tool": "npx hyperframes@0.6.76 tts",
+  "ttsInput": "tts-inputs/section-07-attention-in-garbage-out-tts.txt",
+  "outputPath": "scratch-audio/section-07-attention-in-garbage-out-david23-am_eric-0.80.mp3",
+  "durationSeconds": 43.413,
+  "ok": true,
+  "use": "production preview / timing reference (David23 channel voice, approved voice ID)",
+  "pythonPathPrepend": "/c/Users/Anpha Right Choice/AppData/Local/Programs/Python/Python312",
+  "notes": [
+    "Payoff: 'Attention in. Garbage out.' isolated as the core repeatable takeaway.",
+    "Three tells land separately (six fingers / too-perfect photo / too-good story); dry hopeful close, no spammy CTA.",
+    "Speed 0.80 kept consistent with Sections 1-6 - all 7 sections now at one speed."
+  ],
+  "copiedToAssetFolder": false
+}

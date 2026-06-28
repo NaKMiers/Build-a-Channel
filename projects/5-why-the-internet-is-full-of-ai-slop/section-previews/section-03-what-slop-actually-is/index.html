@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Section 03 What Slop Actually Is - Why The Internet Is Full Of Garbage Now</title>
+  <style>
+    @font-face { font-family:"PatrickHandLocal"; src:url("./assets/fonts/patrick-hand-latin.woff2") format("woff2"); font-weight:400; font-style:normal; font-display:block; }
+    :root { --ink:#14110d; --red:#e0392b; --gold:#ffd23f; --green:#1f9d4d; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:#07070a; color:#fff; overflow:hidden; }
+    #Section03Slop { position:relative; width:1920px; height:1080px; overflow:hidden; background:#07070a; font-family:"PatrickHandLocal"; }
+    .scene { position:absolute; inset:0; width:100%; height:100%; z-index:1; isolation:isolate; }
+    .photo { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+    .b-bright { filter:saturate(1.10) contrast(1.05) brightness(0.90); }
+    .b-dim    { filter:saturate(1.05) contrast(1.06) brightness(0.62); }
+    .b-stage  { filter:saturate(1.06) contrast(1.10) brightness(0.96); }
+    .vig { position:absolute; inset:0; z-index:2; background:radial-gradient(ellipse 88% 88% at 50% 46%, rgba(4,5,10,0) 54%, rgba(4,5,10,0.5) 100%); }
+
+    /* heroes */
+    .hero { position:absolute; z-index:7; object-fit:contain; filter:drop-shadow(12px 16px 0 rgba(0,0,0,0.32)); }
+    .ink  { position:absolute; z-index:7; object-fit:contain; mix-blend-mode:multiply; }
+    .lit  { position:absolute; z-index:7; object-fit:contain; mix-blend-mode:screen; -webkit-mask:linear-gradient(to bottom,#000 90%,rgba(0,0,0,0) 100%); mask:linear-gradient(to bottom,#000 90%,rgba(0,0,0,0) 100%); }
+    .pile { position:absolute; z-index:7; object-fit:contain; -webkit-mask:radial-gradient(ellipse 66% 82% at 50% 44%, #000 58%, rgba(0,0,0,0) 88%); mask:radial-gradient(ellipse 66% 82% at 50% 44%, #000 58%, rgba(0,0,0,0) 88%); }
+
+    /* slop "post" card frame (white-bg AI heroes presented as posts/ads) */
+    .post { position:absolute; z-index:7; background:#fff; border-radius:24px; padding:14px; box-shadow:0 26px 64px rgba(0,0,0,0.62); overflow:hidden; transform:rotate(-2deg); }
+    .post img { display:block; width:100%; height:100%; object-fit:cover; border-radius:14px; }
+    .post .bar { position:absolute; left:0; right:0; top:0; height:54px; background:#fff; display:flex; align-items:center; gap:12px; padding:0 18px; z-index:2; }
+    .post .ava { width:30px; height:30px; border-radius:50%; background:linear-gradient(135deg,#ffd23f,#e0392b); }
+    .post .hdl { font-family:"Segoe UI",system-ui,sans-serif; font-weight:800; font-size:26px; color:#16140f; }
+    .post.glitch img { filter:saturate(1.3) contrast(1.15) hue-rotate(-6deg); }
+
+    .wit { position:absolute; object-fit:contain; z-index:8; filter:drop-shadow(14px 16px 0 rgba(0,0,0,0.32)); transform-origin:center center; }
+
+    .hand { position:absolute; z-index:9; font-family:"PatrickHandLocal"; color:#fff; text-shadow:3px 4px 0 rgba(0,0,0,0.6); line-height:1.05; }
+    .h56 { font-size:60px; } .h72 { font-size:80px; }
+
+    /* big kinetic words (contrast-safe: yellow + dark outline) */
+    .bigword { position:absolute; z-index:10; font-family:"Segoe UI",system-ui,sans-serif; font-weight:900; letter-spacing:-1px; color:var(--gold); line-height:0.96; text-shadow:-4px -4px 0 #1a140a, 4px -4px 0 #1a140a, -4px 4px 0 #1a140a, 4px 4px 0 #1a140a, 0 0 40px rgba(0,0,0,0.7), 8px 10px 0 rgba(0,0,0,0.5); }
+    .xl { font-size:150px; } .lg { font-size:118px; }
+
+    /* mark cards (the 3-part checklist) */
+    .markcard { position:absolute; z-index:10; font-family:"Segoe UI",system-ui,sans-serif; font-weight:900; font-size:54px; letter-spacing:0.5px; padding:14px 30px; border-radius:16px; background:var(--green); color:#fff; box-shadow:0 14px 30px rgba(0,0,0,0.5); transform:rotate(-3deg); white-space:nowrap; }
+    .markcard.num { background:#16181d; color:var(--gold); }
+
+    /* hazard sign */
+    .hazard { position:absolute; z-index:10; font-family:"Segoe UI",system-ui,sans-serif; font-weight:900; font-size:58px; letter-spacing:1px; padding:14px 30px; background:var(--gold); color:#1a140a; border:6px solid #1a140a; border-radius:10px; transform:rotate(-5deg); box-shadow:0 12px 26px rgba(0,0,0,0.5); white-space:nowrap; }
+
+    /* small markup bits */
+    .redtag { position:absolute; z-index:12; font-family:"PatrickHandLocal"; color:var(--red); font-size:64px; transform:rotate(-7deg); text-shadow:2px 3px 0 rgba(0,0,0,0.45); white-space:nowrap; }
+    .circle { position:absolute; z-index:11; border:10px solid var(--red); border-radius:50%; box-shadow:0 2px 12px rgba(0,0,0,0.55); }
+    .check { position:absolute; z-index:10; font-family:"Segoe UI",system-ui,sans-serif; font-weight:900; font-size:48px; color:#fff; background:rgba(18,18,22,0.85); border-left:12px solid var(--green); padding:14px 28px; border-radius:10px; box-shadow:0 12px 26px rgba(0,0,0,0.5); white-space:nowrap; }
+    .check .tk { color:#36e07a; margin-right:14px; }
+    .chip { position:absolute; z-index:10; font-family:"Segoe UI",system-ui,sans-serif; font-weight:800; font-size:36px; color:#16140f; background:#fffdf6; padding:14px 22px; border-radius:14px; box-shadow:0 12px 26px rgba(0,0,0,0.5); transform:rotate(-3deg); white-space:nowrap; }
+    .chip .coin { color:#e0a400; }
+
+    /* clone tiles (the "10,000 identical fake posts" torrent) */
+    .clonetile { position:absolute; z-index:7; background:#fff; border-radius:12px; padding:6px; box-shadow:0 10px 22px rgba(0,0,0,0.55); overflow:hidden; transform:rotate(-2deg); }
+    .clonetile img { display:block; width:100%; height:100%; object-fit:cover; border-radius:7px; }
+
+    /* stamp (CERTIFIED SLOP) wrapper */
+    .stampwrap { position:absolute; z-index:11; transform:rotate(-9deg); }
+
+    /* volume meter (3.9) */
+    .vu { position:absolute; z-index:10; width:74px; height:380px; background:#101216; border:6px solid #000; border-radius:12px; overflow:hidden; box-shadow:0 12px 28px rgba(0,0,0,0.6); }
+    .vu .fill { position:absolute; left:0; right:0; bottom:0; height:0%; background:linear-gradient(to top, var(--green) 0%, var(--gold) 55%, var(--red) 100%); }
+    .vulab { position:absolute; z-index:10; font-family:"Segoe UI",system-ui,sans-serif; font-weight:900; font-size:40px; color:var(--red); transform:rotate(-90deg); transform-origin:center; letter-spacing:2px; }
+
+    .wit,.hand,.bigword,.markcard,.hazard,.redtag,.circle,.check,.chip,.post,.hero,.ink,.lit,.pile,.stampwrap,.vu .fill,.vulab { will-change:opacity, transform; }
+  </style>
+</head>
+<body>
+  <div id="Section03Slop" data-composition-id="Section03Slop" data-start="0" data-duration="40.704" data-width="1920" data-height="1080">
+
+    <!-- SCENE 3.1  0.00-3.10  "So what actually counts as slop? Three things." -->
+    <div id="scene-1" class="scene clip" data-start="0" data-duration="3.10" data-track-index="1" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-bright" src="./assets/factory-interior-1.jpg" alt="">
+      <div class="vig"></div>
+      <img class="hero s1-machine" data-layout-allow-overflow="" style="left:50%; top:120px; transform:translateX(-50%); width:1000px;" src="./assets/slop-machine.png" alt="">
+      <div class="hand h72 s1-lbl" style="left:80px; top:70px; width:640px;">what counts<br>as slop?</div>
+      <div class="hazard s1-hz" style="right:90px; top:120px;">3 THINGS TO SPOT</div>
+      <img class="wit s1-wit" data-layout-allow-overflow="" style="right:-150px; bottom:-300px; width:1080px;" src="./assets/poses/presenting_screen_announcing_open_mouth.png" alt="">
+    </div>
+
+    <!-- SCENE 3.2  2.96-6.94  "One: it looks fine for half a second. Quick glance, looks normal." -->
+    <div id="scene-2" class="scene clip" data-start="2.96" data-duration="3.98" data-track-index="2" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-dim" src="./assets/studio-backdrop-1.jpg" alt="">
+      <div class="vig"></div>
+      <div class="post s2-post" style="right:150px; top:150px; width:560px; height:660px;">
+        <div class="bar"><div class="ava"></div><div class="hdl">@perfect.her_</div></div>
+        <img src="./assets/ai-influencer-perfect.png" style="margin-top:54px; height:586px;" alt="">
+      </div>
+      <div class="markcard s2-mark" style="left:120px; top:210px;">1. LOOKS FINE</div>
+      <div class="hand h56 s2-sub" style="left:130px; top:320px; color:var(--gold);">...for half a second</div>
+      <img class="wit s2-wit" data-layout-allow-overflow="" style="left:-160px; bottom:-300px; width:1040px;" src="./assets/poses/delighted_blushing_sparkle_eyes.png" alt="">
+    </div>
+
+    <!-- SCENE 3.3  6.80-9.94  "Look closer, and it falls apart. The hand has six fingers." -->
+    <div id="scene-3" class="scene clip" data-start="6.80" data-duration="3.14" data-track-index="3" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-dim" src="./assets/studio-backdrop-1.jpg" style="filter:saturate(0.9) contrast(1.1) brightness(0.5);" alt="">
+      <div class="vig"></div>
+      <div class="post glitch s3-post" style="left:140px; top:140px; width:620px; height:680px;">
+        <div class="bar"><div class="ava"></div><div class="hdl">@perfect.her_</div></div>
+        <img src="./assets/ai-influencer-melting.png" style="margin-top:54px; height:606px;" alt="">
+      </div>
+      <div class="hand h56 s3-look" style="left:120px; bottom:130px; color:var(--gold);">look closer...</div>
+      <div class="circle s3-circle" style="left:250px; top:430px; width:230px; height:200px;"></div>
+      <div class="redtag s3-fingers" style="left:300px; top:640px;">6 fingers?!</div>
+      <img class="wit s3-wit" data-layout-allow-overflow="" style="right:-160px; bottom:-300px; width:1100px;" src="./assets/poses/panic_hands_on_cheeks_scream.png" alt="">
+    </div>
+
+    <!-- SCENE 3.4  9.80-11.24  "The words are gibberish." -->
+    <div id="scene-4" class="scene clip" data-start="9.80" data-duration="1.44" data-track-index="4" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-bright" src="./assets/night-storefront-1.jpg" alt="">
+      <div class="vig"></div>
+      <div class="post s4-post" style="right:160px; top:230px; width:760px; height:470px;">
+        <img src="./assets/gibberish-melting-sign.png" style="height:442px;" alt="">
+      </div>
+      <div class="redtag s4-tag" style="right:300px; top:170px; font-size:78px;">gibberish.</div>
+      <img class="wit s4-wit" data-layout-allow-overflow="" style="left:-170px; bottom:-300px; width:1020px;" src="./assets/poses/shrug_confused_flat_mouth.png" alt="">
+    </div>
+
+    <!-- SCENE 3.5  11.10-17.62  "...misspells its own name as 'Coca-Coola.' That really happened." -->
+    <div id="scene-5" class="scene clip" data-start="11.10" data-duration="6.52" data-track-index="5" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-dim" src="./assets/holiday-street-1.jpg" alt="">
+      <div class="vig"></div>
+      <div class="post s5-post" style="left:130px; top:150px; width:780px; height:560px;">
+        <img src="./assets/coca-coola-ad-fail.png" style="height:532px;" alt="">
+      </div>
+      <div class="circle s5-circle" style="left:280px; top:350px; width:330px; height:150px;"></div>
+      <div class="redtag s5-coola" style="left:170px; top:600px; font-size:70px;">"Coca-Coola"?!</div>
+      <div class="hand h56 s5-happened" style="right:120px; top:160px; color:var(--gold);">(that really happened.)</div>
+      <img class="wit s5-wit" data-layout-allow-overflow="" style="right:-180px; bottom:-280px; width:1120px;" src="./assets/poses/big_open_mouth_laugh_presenting_closeup.png" alt="">
+    </div>
+
+    <!-- SCENE 3.6  17.48-26.08  "Two: it costs the maker almost nothing, and it costs you everything..." -->
+    <div id="scene-6" class="scene clip" data-start="17.48" data-duration="8.60" data-track-index="6" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-dim" src="./assets/server-room-1.jpg" alt="">
+      <div class="vig"></div>
+      <div class="chip s6-chip" style="left:110px; top:120px;">the maker: a few seconds <span class="coin">+ 1 coin</span></div>
+      <div class="markcard num s6-mark" style="left:110px; top:230px;">2. COSTS THEM NOTHING</div>
+      <img class="pile s6-pile" data-layout-allow-overflow="" style="left:50%; top:-60px; transform:translateX(-50%); width:840px;" src="./assets/cost-crush-pile.png" alt="">
+      <div class="bigword lg s6-you" style="left:0; right:0; top:300px; text-align:center;">COSTS YOU<br>EVERYTHING</div>
+      <div class="redtag s6-time" style="left:520px; top:560px;">time</div>
+      <div class="redtag s6-att" style="left:50%; transform:translateX(-50%); top:640px;">attention</div>
+      <div class="redtag s6-trust" style="right:560px; top:560px;">trust</div>
+      <img class="wit s6-wit" data-layout-allow-overflow="" style="left:50%; transform:translateX(-50%); bottom:-280px; width:1180px;" src="./assets/poses/lying_down_fainted_dead.png" alt="">
+    </div>
+
+    <!-- SCENE 3.7  25.94-33.36  "Three: it is made by the thousand... sprayed into the feed like a fire hose." -->
+    <div id="scene-7" class="scene clip" data-start="25.94" data-duration="7.42" data-track-index="7" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-dim" src="./assets/pipes-industrial-1.jpg" alt="">
+      <div class="vig"></div>
+      <div class="markcard num s7-mark" style="left:110px; top:120px;">3. MADE BY THE THOUSAND</div>
+      <img class="ink s7-hose" data-layout-allow-overflow="" style="left:-120px; top:300px; width:1180px;" src="./assets/slop-firehose.png" alt="">
+      <div class="clonetile s7-c1" style="left:900px;  top:300px; width:150px; height:150px;"><img src="./assets/slop-clone.png" alt=""></div>
+      <div class="clonetile s7-c2" style="left:1060px; top:430px; width:170px; height:170px;"><img src="./assets/slop-clone.png" alt=""></div>
+      <div class="clonetile s7-c3" style="left:1240px; top:300px; width:140px; height:140px;"><img src="./assets/slop-clone.png" alt=""></div>
+      <div class="clonetile s7-c4" style="left:1230px; top:520px; width:180px; height:180px;"><img src="./assets/slop-clone.png" alt=""></div>
+      <div class="clonetile s7-c5" style="left:1430px; top:400px; width:160px; height:160px;"><img src="./assets/slop-clone.png" alt=""></div>
+      <div class="clonetile s7-c6" style="left:1450px; top:600px; width:150px; height:150px;"><img src="./assets/slop-clone.png" alt=""></div>
+      <div class="clonetile s7-c7" style="left:1630px; top:330px; width:150px; height:150px;"><img src="./assets/slop-clone.png" alt=""></div>
+      <div class="clonetile s7-c8" style="left:1060px; top:610px; width:140px; height:140px;"><img src="./assets/slop-clone.png" alt=""></div>
+      <div class="bigword lg s7-count" style="right:120px; top:130px;">10,000+</div>
+      <div class="redtag s7-hosecap" style="left:120px; bottom:120px; font-size:72px;">like a fire hose.</div>
+      <img class="wit s7-wit" data-layout-allow-overflow="" style="right:-200px; bottom:-300px; width:1060px;" src="./assets/poses/shocked_sweating_dismayed.png" alt="">
+    </div>
+
+    <!-- SCENE 3.8  33.22-37.40  "Looks fine, costs them nothing, made by the thousand. That is slop." -->
+    <div id="scene-8" class="scene clip" data-start="33.22" data-duration="4.18" data-track-index="8" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-bright" src="./assets/factory-interior-1.jpg" alt="">
+      <div class="vig"></div>
+      <img class="hero s8-machine" data-layout-allow-overflow="" style="left:40px; bottom:-40px; width:760px;" src="./assets/slop-machine.png" alt="">
+      <div class="check s8-c1" style="right:140px; top:150px;"><span class="tk">&#10003;</span>looks fine</div>
+      <div class="check s8-c2" style="right:140px; top:260px;"><span class="tk">&#10003;</span>costs them nothing</div>
+      <div class="check s8-c3" style="right:140px; top:370px;"><span class="tk">&#10003;</span>made by the thousand</div>
+      <div class="stampwrap s8-stamp" style="left:50%; top:520px; transform:translateX(-50%) rotate(-9deg); width:560px;">
+        <img class="ink" style="position:relative; width:560px;" src="./assets/certified-slop-stamp.png" alt="">
+      </div>
+      <img class="wit s8-wit" data-layout-allow-overflow="" style="right:-170px; bottom:-300px; width:1060px;" src="./assets/poses/smug_raised_eyebrow_smirk.png" alt="">
+    </div>
+
+    <!-- SCENE 3.9  37.26-40.704  "A machine pretending to be a person, at full volume." -->
+    <div id="scene-9" class="scene clip" data-start="37.26" data-duration="3.444" data-track-index="9" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-stage" src="./assets/dark-stage-mic-1.jpg" alt="">
+      <img class="lit s9-robot" data-layout-allow-overflow="" style="left:50%; top:40px; transform:translateX(-50%); width:760px;" src="./assets/robot-human-mask.png" alt="">
+      <div class="hand h72 s9-line" style="left:0; right:0; top:60px; text-align:center; color: #f44336; font-size: 82px;">a machine pretending<br>to be a person</div>
+      <div class="vu s9-vu" style="right:170px; top:300px;"><div class="fill"></div></div>
+      <div class="vulab s9-max" style="right:90px; top:460px;">MAX</div>
+      <div class="bigword xl s9-vol" style="left:0; right:0; bottom:120px; text-align:center;">AT FULL VOLUME</div>
+      <img class="wit s9-wit" data-layout-allow-overflow="" style="left:-200px; bottom:-360px; width:820px;" src="./assets/poses/deadpan_unimpressed_half_lidded.png" alt="">
+    </div>
+
+    <audio id="voiceover-section-03" data-start="0" data-duration="40.704" data-track-index="30" data-volume="1" crossorigin="anonymous" src="./section-03.mp3"></audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused:true, defaults:{ overwrite:"auto" } });
+      const reveal = (t, hideAt, at, fv, tv={}) => { const r={}; if("x"in fv)r.x=0; if("y"in fv)r.y=0; if("scale"in fv)r.scale=1; if("opacity"in fv)r.opacity=1; tl.set(t,fv,hideAt); tl.to(t,{...r,...tv},at); };
+      const show  = (t, hideAt, at) => { tl.set(t,{opacity:0},hideAt); tl.set(t,{opacity:1},at); };
+      const smash = (t, hideAt, at, fv={y:22,scale:1.3,opacity:0}) => reveal(t,hideAt,at,fv,{duration:0.2,ease:"back.out(1.9)"});
+      const pop   = (t, hideAt, at) => reveal(t,hideAt,at,{scale:0.4,opacity:0},{duration:0.22,ease:"back.out(2)"});
+
+      const fadeIn = (sel, at) => tl.fromTo(sel,{opacity:0},{opacity:1,duration:0.22,ease:"sine.out",immediateRender:false}, at);
+      fadeIn("#scene-2",2.96); fadeIn("#scene-3",6.80); fadeIn("#scene-4",9.80); fadeIn("#scene-5",11.10);
+      fadeIn("#scene-6",17.48); fadeIn("#scene-7",25.94); fadeIn("#scene-8",33.22); fadeIn("#scene-9",37.26);
+
+      // S3.1 - machine intro; "3 THINGS" hazard on "three things" (1.98)
+      show("#scene-1 .s1-wit", 0, 0.15);
+      pop("#scene-1 .s1-machine", 0, 0.20);
+      show("#scene-1 .s1-lbl", 0, 0.60);
+      smash("#scene-1 .s1-hz", 0, 1.98, {scale:1.4,opacity:0});
+
+      // S3.2 - glossy bait; "1. LOOKS FINE" on "looks fine" (3.74); sub on "half a second" (4.36)
+      show("#scene-2 .s2-wit", 2.96, 3.10);
+      pop("#scene-2 .s2-post", 2.96, 3.20);
+      smash("#scene-2 .s2-mark", 2.96, 3.74, {x:-30,scale:1.2,opacity:0});
+      show("#scene-2 .s2-sub", 2.96, 4.36);
+
+      // S3.3 - meltdown reveal; "look closer" (6.90); circle + "6 fingers?!" on "six fingers" (9.00)
+      show("#scene-3 .s3-wit", 6.80, 6.95);
+      pop("#scene-3 .s3-post", 6.80, 6.95);
+      show("#scene-3 .s3-look", 6.80, 6.90);
+      pop("#scene-3 .s3-circle", 6.80, 9.00);
+      smash("#scene-3 .s3-fingers", 6.80, 9.00, {y:18,scale:1.3,opacity:0});
+
+      // S3.4 - gibberish sign; tag on "gibberish" (10.44)
+      show("#scene-4 .s4-wit", 9.80, 9.92);
+      pop("#scene-4 .s4-post", 9.80, 9.98);
+      smash("#scene-4 .s4-tag", 9.80, 10.44, {y:20,scale:1.35,opacity:0});
+
+      // S3.5 - Coca-Coola ad; ad on "holiday ad" (12.92); circle on "Coca-Cola" (15.54); "really happened" (16.62)
+      show("#scene-5 .s5-wit", 11.10, 11.30);
+      pop("#scene-5 .s5-post", 11.10, 12.92);
+      pop("#scene-5 .s5-circle", 11.10, 15.54);
+      smash("#scene-5 .s5-coola", 11.10, 15.54, {y:18,scale:1.3,opacity:0});
+      show("#scene-5 .s5-happened", 11.10, 16.62);
+
+      // S3.6 - asymmetric cost; mark+chip on "almost nothing" (18.88); pile crash + "COSTS YOU EVERYTHING" (20.40); time/attention/trust (23.28/24.00/25.10)
+      show("#scene-6 .s6-wit", 17.48, 17.64);
+      show("#scene-6 .s6-chip", 17.48, 18.88);
+      smash("#scene-6 .s6-mark", 17.48, 18.88, {x:-30,scale:1.2,opacity:0});
+      reveal("#scene-6 .s6-pile", 17.48, 20.40, {y:-760,opacity:0}, {duration:0.55,ease:"bounce.out"});
+      smash("#scene-6 .s6-you", 17.48, 20.55, {y:26,scale:1.3,opacity:0});
+      smash("#scene-6 .s6-time", 17.48, 23.28, {scale:1.4,opacity:0});
+      smash("#scene-6 .s6-att", 17.48, 24.00, {scale:1.4,opacity:0});
+      smash("#scene-6 .s6-trust", 17.48, 25.10, {scale:1.4,opacity:0});
+
+      // S3.7 - firehose of clones; mark on "made by the thousand" (26.70); hose+clones+counter on "10,000" (29.24); "fire hose" (32.34)
+      show("#scene-7 .s7-wit", 25.94, 26.10);
+      smash("#scene-7 .s7-mark", 25.94, 26.70, {x:-30,scale:1.2,opacity:0});
+      reveal("#scene-7 .s7-hose", 25.94, 29.00, {x:-900,opacity:0}, {duration:0.32,ease:"power3.out"});
+      pop("#scene-7 .s7-c1", 25.94, 29.24);
+      pop("#scene-7 .s7-c2", 25.94, 29.46);
+      pop("#scene-7 .s7-c3", 25.94, 29.68);
+      pop("#scene-7 .s7-c4", 25.94, 29.90);
+      pop("#scene-7 .s7-c5", 25.94, 30.12);
+      pop("#scene-7 .s7-c6", 25.94, 30.34);
+      pop("#scene-7 .s7-c7", 25.94, 30.56);
+      pop("#scene-7 .s7-c8", 25.94, 30.78);
+      smash("#scene-7 .s7-count", 25.94, 29.24, {scale:1.5,opacity:0});
+      smash("#scene-7 .s7-hosecap", 25.94, 32.34, {y:20,scale:1.3,opacity:0});
+
+      // S3.8 - verdict; 3 checks tick (33.48/34.20/34.66); "CERTIFIED SLOP" stamp on "that is slop" (35.96)
+      show("#scene-8 .s8-wit", 33.22, 33.34);
+      show("#scene-8 .s8-machine", 33.22, 33.30);
+      pop("#scene-8 .s8-c1", 33.22, 33.48);
+      pop("#scene-8 .s8-c2", 33.22, 34.20);
+      pop("#scene-8 .s8-c3", 33.22, 34.66);
+      tl.set("#scene-8 .s8-stamp", {opacity:0, scale:1.8}, 33.22);
+      tl.to("#scene-8 .s8-stamp", {opacity:1, scale:1, duration:0.22, ease:"back.out(2)"}, 35.96);
+
+      // S3.9 - payoff; robot on "a machine..." (37.48); line on "a person" (38.80); meter MAX + "AT FULL VOLUME" (39.78)
+      show("#scene-9 .s9-wit", 37.26, 37.40);
+      reveal("#scene-9 .s9-robot", 37.26, 37.48, {scale:0.72,opacity:0}, {duration:0.4,ease:"back.out(1.6)"});
+      show("#scene-9 .s9-line", 37.26, 38.80);
+      tl.set("#scene-9 .s9-vu .fill", {height:"6%"}, 37.26);
+      tl.to("#scene-9 .s9-vu .fill", {height:"100%", duration:0.3, ease:"power2.out"}, 39.78);
+      show("#scene-9 .s9-max", 37.26, 39.78);
+      smash("#scene-9 .s9-vol", 37.26, 39.78, {y:28,scale:1.35,opacity:0});
+
+      window.__timelines["Section03Slop"] = tl;
+    </script>
+  </div>
+</body>
+</html>

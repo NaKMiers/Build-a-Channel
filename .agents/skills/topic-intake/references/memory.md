@@ -245,6 +245,40 @@ Apply next time:
 Promote to shared memory:
 no, this is topic-intake re-creation behavior, not a channel-wide strategy change.
 
+### 2026-06-28 - Fresh-trend batch; user picked the freshest/highest-demand angle (AI slop)
+
+Classification: `Topic intake lesson`
+
+Context:
+Plain `/topic-intake` (Suggest Mode). Browsed YouTube view counts + Google News recency for a
+balanced 7-candidate batch deliberately OUTSIDE the recent pricing-trick family (projects 4-5).
+Top picks all required two signal types. The user chose candidate 1, AI slop ("Why The Internet
+Is Full Of Garbage Now"), which had ranked 1 (43/45) on the strongest trend + freshest news
+(hours-old articles, "60% of TikTok is AI slop") and clean global relatability. Persisted as
+`projects/5-why-the-internet-is-full-of-ai-slop/00-topic-intake.md`.
+
+Lesson:
+When the user gives no steer, lead with the candidate that has the freshest, most current trend
+AND truly global relatability, not just the highest raw view count. Tipflation had bigger raw
+views but US-skewed pain; AI slop won on currency + global feed-pollution everyone shares. The
+user picked the recommended #1, which validates: rank by (trend currency x global pain), then
+demand size, then visual/packaging. Also: after several same-family pricing topics (4-5), a fresh
+internet/AI lane was welcome - vary the lane when the user does not ask for "more like X."
+
+Note carried into the intake file: for an AI-topic, write a "Why slop wins" incentive chain +
+an honesty guardrail (define slop cleanly; the incentive is the villain, not "AI"; no invented
+stats; public-figure AI images referenced as phenomenon via WIT caricature only). This mirrors
+the pricing-claim guardrail habit (2026-06-24 / 06-25) - any "X is ruining Y" topic needs the
+real mechanism + honesty rails baked in at step 0 so research and script inherit them.
+
+Apply next time:
+- No steer -> rank by trend-currency x global-relatability first, then demand size, then visuals.
+- Vary the lane after a run of same-family picks unless the user asks for the same family.
+- For AI / "X is ruining Y" topics, bake the incentive mechanism + honesty guardrail into intake.
+
+Promote to shared memory:
+no, this is topic-intake ranking/intake behavior, not a channel-wide strategy change.
+
 ## Feedback Entry Template
 
 Use this shape when updating the skill after user review:

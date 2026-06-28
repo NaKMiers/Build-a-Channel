@@ -82,11 +82,11 @@ It contains (replaced the old `wit-pose-*` 24-set on `2026-06-28`):
 
 - `_origin_.png` - canonical neutral identity, transparent rgba (always attach this when generating any new pose)
 - `pose.md` - the emotion/role catalog + quick index
-- `67` pose PNGs, each on a solid flat green (#00B140) screen, rgb24 / no alpha - chroma-key the green out at render with ffmpeg (`colorkey`/`chromakey` + `despill`)
+- `67` pose PNGs, now TRANSPARENT RGBA cutouts (chroma-keyed in place + committed 2026-06-28) - use DIRECTLY in any video; no keying step and no `poses-keyed` folder (the green originals remain in git history)
 
 The current WIT is the round bald white-headed mascot with a thick black outline, big rectangular glasses + dot eyes, expressive eyebrows, and a flat white body, drawn across a wide emotion/role range (boss, broke, gamer, doctor, etc.).
 
-Mascot upgrade direction (owner-directed 2026-06-28): the plain white-blob WIT scored as a primary weakness; the target is a mascot that is a REAL character with a wide expression range and the ability to "play roles". The new green-screen pose set above was pose-transferred from the studied reference casting sheet onto `_origin_`. The pose library is the starting palette; `visual-plan` may invent new poses and `visual-implement` generates them (always attaching `_origin_`). A finalized WIT sign-off is still pending owner approval.
+Mascot upgrade direction (owner-directed 2026-06-28): the plain white-blob WIT scored as a primary weakness; the target is a mascot that is a REAL character with a wide expression range and the ability to "play roles". The pose set above was pose-transferred from the studied reference casting sheet onto `_origin_` (originally delivered on a green screen, now keyed to transparent). The pose library is the starting palette; `visual-plan` may invent new poses and `visual-implement` generates them (always attaching `_origin_`). A finalized WIT sign-off is still pending owner approval.
 
 Do not use removed `original-wit-24`, older `core-24`, or `comedy-core` WIT as current channel WIT.
 

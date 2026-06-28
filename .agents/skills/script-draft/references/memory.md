@@ -282,6 +282,37 @@ Promote to shared memory:
 no for now - strong learner-clarity execution note; revisit promoting a one-line "speak the math
 aloud / one referent per pronoun" rule into `script-learner-voice.md` if it recurs on another video.
 
+### 2026-06-28 - Speak a mechanism step-by-step (extends "speak the math aloud"); edgy topic word can carry the tone
+
+Classification: `Script draft lesson`
+
+Context:
+Drafted `5-why-the-internet-is-full-of-ai-slop` (AI slop). The core of the video is a 5-step incentive
+chain (cost collapse -> pay-for-attention -> flood the zone -> blind algorithm -> money loop). Wrote it
+as numbered spoken steps ("Step one... Step two...") with `[slower]` on the key line, mirroring the
+on-screen conveyor-belt steps - the same principle as the 2026-06-24 "speak the math aloud" learner rule,
+but applied to a causal mechanism, not arithmetic. Also: the channel's edgy tone is now approved, but this
+topic needed no profanity - the topic words "slop / garbage / junk" plus system-aimed cheek ("you cannot
+arrest an incentive," "it's dumber than that") carried the edge while keeping the title/thumbnail/first-7s
+clean. Built the honest turn into its own section (not all AI is slop; reject the dead-internet conspiracy)
+so the video cannot read as AI-panic.
+
+Lesson:
+For any "why does this system work this way" video, voice the mechanism as ordered, spoken steps that the
+learner can follow by ear, and mirror each step in the visual goal - generalize "speak the math aloud" to
+"speak the mechanism aloud." Edge does not require profanity; let the topic's own vocabulary and
+system-aimed roasting carry the attitude, and keep the strongest words out of the first 7s/title/thumbnail.
+Give a "honest turn" its own section whenever the topic could be mistaken for panic or a conspiracy.
+
+Apply next time:
+- Causal/mechanism payload -> numbered spoken steps, `[slower]` on the pivot line, visual mirrors the steps.
+- Reach for topic-word edge + system-aimed cheek before profanity; protect monetization-safe placement.
+- For panic-prone topics (AI, scams, health), write a dedicated honest-turn section with the reject line.
+
+Promote to shared memory:
+no - sharpens existing learner-clarity + tone notes; revisit promoting a one-line "speak the mechanism
+aloud" rule into `script-learner-voice.md` if it recurs on another mechanism-heavy video.
+
 ## Feedback Entry Template
 
 Use this shape when updating the skill after user review:

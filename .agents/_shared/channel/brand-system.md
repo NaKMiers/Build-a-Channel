@@ -64,7 +64,7 @@ Contents (replaced the old `wit-pose-*` 24-set on `2026-06-28`):
 
 - `_origin_.png` - canonical neutral identity, transparent rgba (always attach when generating a new pose)
 - `pose.md` - emotion/role catalog + quick index
-- `67` pose PNGs on a solid flat green (#00B140) screen (rgb24, no alpha); chroma-key the green out at render with ffmpeg (`colorkey`/`chromakey` + `despill`)
+- `67` pose PNGs, now TRANSPARENT RGBA cutouts (keyed in place 2026-06-28); use directly - no chroma-key step, no `poses-keyed` folder (green originals are in git history)
 
 The current WIT direction is the round bald white-headed character:
 

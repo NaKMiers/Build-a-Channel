@@ -879,6 +879,39 @@ Apply next time:
 Promote to shared memory:
 no for now; per-owner taste correction folded into the SKILL build bar.
 
+### 2026-06-28 - UNLIMITED imagination + generate-forward; do NOT reuse one base as a crutch (owner-directed, Core)
+
+Classification: `Core` (confirmed channel creative direction)
+
+Context:
+On `5-why-the-internet-is-full-of-ai-slop` the owner reviewed S3 v1 and pushed back hard: `grey-sludge-flood-1.jpg`
+was reused in nearly every section "with no clear purpose"; S1 had bespoke generated imagery but S2/S3 drifted
+into reusing old/browsed photos; and the plan "wasn't creative enough - I need it crazier and unlimited."
+Quote (paraphrased): "Visual-plan does NOT limit imagination; always find every way to REALIZE the plan's
+ideas, don't restrict the plan." Rebuilt S3 v2: 10 bespoke GENERATE heroes (slop-machine, melting AI
+influencer, firehose of grey clones, robot-in-a-human-mask payoff), 8 FRESH distinct browse bases, ZERO sludge.
+
+Lesson (apply to ALL future sections):
+- IMAGINATION IS THE DEFAULT, not the exception. The plan should be bold/surreal/funny; if an idea is good
+  it MUST be executed by all means - lean on `generate` to realize it (write the prompt in visual-implement,
+  owner generates in ChatGPT + drops it in, exactly like the S1 cards). Do NOT downgrade a wild idea to a
+  safe browsed photo just because generation is an extra step.
+- NO CRUTCH BASE. Never reuse one background across many sections to save effort (the sludge overuse was
+  rejected). Each section earns its own distinct, purposeful imagery; a motif may recur ONLY within the
+  section/where it has clear meaning, graded/varied, not as a universal filler.
+- Per scene, prefer a bespoke generated HERO (object/creature/surreal device) + a fresh base; reuse only a
+  deliberate within-section callback (e.g. the same influencer shown perfect then melting; the machine
+  returning for the stamp).
+- Generate volume is fine: a section may call for ~8-12 generate assets. Batch them for the owner. The
+  constraint is copyright/law/YouTube community standards (parody not real logos; non-existent people), NOT effort.
+
+Apply next time: open every section by asking "what is the CRAZIEST true way to show this line?" and
+generate it. Treat browsed real photos as grounding bases/textures, not as a substitute for bold heroes.
+Rerunning a plan restales that section's implemented assets + render (list them; orphan unused old assets).
+
+Promote to shared memory: YES - added to `.agents/_shared/channel/learning-log.md` as a Core creative-direction
+signal (pairs with the existing vivid-imagery / varied-idea-devices entries).
+
 ## Feedback Entry Template
 
 ```markdown

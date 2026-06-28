@@ -240,4 +240,4 @@ sections (and the bar to match for new sections). Three rules:
 - GIANT, VARIED WIT: WIT is the soul of each scene - keep it giant (~1/2 frame) with an expressive on-topic
   pose, and VARY it across scenes in side (left/center/right), scale, vertical anchor, and pose. Never park
   WIT on the same side every scene with text always opposite; flip the text/UI to the side WIT isn't using
-  and rearrange items around WIT. (Current WIT poses ship on a flat green #00B140 screen - chroma-key the green out at render before compositing onto any scene.)
+  and rearrange items around WIT. (Current WIT poses are TRANSPARENT RGBA cutouts as of 2026-06-28 - composite them directly; no chroma-key step.)

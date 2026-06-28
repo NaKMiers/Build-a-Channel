@@ -257,6 +257,47 @@ Apply next time:
 Promote to shared memory:
 no; this is a research-pack sourcing/visual-leads tactic, not a channel-wide strategy change.
 
+### 2026-06-28 - AI-culture topic: one Wikipedia article carried the whole spine + example bench
+
+Classification: `Research pack lesson`
+
+Context:
+Researched `5-why-the-internet-is-full-of-ai-slop`. The single Wikipedia "AI slop" article was
+exceptionally rich and current (cited 2026 primaries: NYT YouTube-Kids ~40% investigation, Kommers
+et al. Jan 2026 academic definition, HBR/Stanford/BetterUp "workslop", Deezer ~70% AI-stream fraud,
+DoubleVerify "AutoBait" 200+ sites, Velvet Sundown, Coca-Coola, six-fingered "Necroclaus"). It gave
+the clean 3-mark definition (superficial competence / asymmetric effort / mass producibility), the
+incentive chain, AND a built-in honest counter-turn (D'Isa: not all AI is slop). The "Dead Internet
+theory" article supplied the honest frame: endorse the "leaner" observable version, reject the
+"conspiracy-laden" government version. Routed the unverified "60% of TikTok / 21% of YouTube" news
+headline to Open Questions rather than asserting it; kept named figures attributed (Deezer, HBR).
+
+Lesson:
+For a current internet/AI-culture topic, the matching Wikipedia article is often a one-stop spine +
+example bench AND carries the honest reversal the channel's back-half needs - read the whole body
+(every domain subsection: social/ads/books/music/games/work/science) before deciding it is thin. For
+any "X is killing the internet" topic, pair it with the "Dead Internet theory" article to get the
+explicit leaner-vs-conspiracy line so the script stays honest and is not AI-panic.
+
+Operational (browse on this Windows gstack build):
+- `element.innerText` returns 0 here (no layout in this headless mode). Use `element.textContent`,
+  or simplest: `$B text > file` then Read the file. Do not waste calls on `.innerText`.
+- The daemon can auto-restart between calls and reset to about:blank, losing page state. Chain
+  `goto` + extraction in ONE bash call.
+- Wikimedia Commons MediaSearch UI is JS-rendered, so `$B links` finds no File: hrefs. Hit the API
+  instead: `commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=...&srnamespace=6&format=json`
+  then map `.query.search[].title`. It returned the license-clear hero AI-slop images cleanly
+  (Shrimp Jesus 1/2, AI generated hand, extra-legs woman, "does not exist" face).
+
+Apply next time:
+- AI/internet-culture topic -> lead with the topic's Wikipedia article body + the "Dead Internet
+  theory" frame; carry the intake honesty guardrail straight into Safe Claims / Claims To Avoid.
+- Use `textContent` / `$B text`-to-file; chain goto+extract; use the Commons API for image leads.
+- Headline percentages with no reachable primary -> Open Questions, never stated as settled fact.
+
+Promote to shared memory:
+no; this is a research-pack sourcing + browse-resilience tactic, not a channel-wide strategy change.
+
 ## Feedback Entry Template
 
 Use this shape when updating the skill after user review:

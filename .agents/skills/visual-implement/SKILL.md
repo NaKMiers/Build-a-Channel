@@ -58,7 +58,7 @@ Read before implementing:
 8. `.agents/_shared/channel/brand-system.md`
 9. `.agents/_shared/systems/visual-production.md`
 10. `references/memory.md`
-11. the mascot pose library: `.agents/_shared/assets/wit/poses/` (catalog `pose.md`; `_origin_.png` = canonical neutral identity; poses are green-screen #00B140, key out at render)
+11. the mascot pose library: `.agents/_shared/assets/wit/poses/` (catalog `pose.md`; `_origin_.png` = canonical neutral identity; poses are TRANSPARENT RGBA cutouts as of 2026-06-28 - copy directly, NO chroma-key step, NO `poses-keyed` folder)
 12. the chosen project's `04-visual-plan.md` and the selected section visual-plan file(s)
 
 ## Gates

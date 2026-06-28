@@ -40,7 +40,7 @@ Current reusable asset:
 assets/wit/poses/
 ```
 
-This WIT folder holds `_origin_.png` (neutral identity, transparent), `pose.md` (catalog), and the `67` pose PNGs (green-screen #00B140, keyed at render).
+This WIT folder holds `_origin_.png` (neutral identity, transparent), `pose.md` (catalog), and the `67` pose PNGs (TRANSPARENT RGBA cutouts as of 2026-06-28 - use directly, no keying step).
 
 Video-specific assets belong in `projects/<slug>/assets/`.
 

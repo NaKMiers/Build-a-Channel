@@ -14,7 +14,8 @@ asset-manifest shape.
 - Walk each scene's ASSET list; build a de-duplicated worklist grouped by filename.
 - Per asset type:
   - `reuse` → verify the file exists; do nothing (consistency mechanism).
-  - `pose` → copy the pose PNG from the library into `assets/poses/`.
+  - `pose` → copy the pose PNG from the library into `assets/poses/`. Library poses are TRANSPARENT
+    RGBA cutouts (keyed in place 2026-06-28) - copy DIRECTLY, no chroma-key step, no `poses-keyed` folder.
   - `generate` → write a detailed image prompt (ISOLATED element, transparent/plain bg, channel
     flat-cartoon style + thick black outline; caricature = obvious parody + name-free fallback) and
     create the image if an image tool is connected; otherwise record the prompt and mark
@@ -59,6 +60,26 @@ Apply next time:
 - keep the manifest complete and honest about generation status
 
 Promote to shared memory: pipeline architecture already recorded in `_shared/channel/learning-log.md`.
+
+### 2026-06-28 - Pose library is now TRANSPARENT (keyed in place); copy poses directly
+
+Classification: `Asset lesson`
+
+Context:
+The whole green-screen pose library was chroma-keyed to transparent in place and committed
+(`.agents/_shared/assets/wit/poses/*.png` are RGBA cutouts now). The owner found maintaining BOTH a
+green `poses/` and a keyed `poses-keyed/` redundant.
+
+Lesson:
+For `pose` assets, just copy the library PNG into `projects/<slug>/assets/poses/` and reference it
+directly - no green screen, no chroma-key, no `poses-keyed/`. The white mascot fill is already opaque.
+The two entries below (green-screen white-fill survival, green-screen + ffmpeg-key fallback) are now
+HISTORICAL - they only apply if a future pose is ever delivered on green again.
+
+Apply next time: copy poses straight into `assets/poses/`; if you ever generate a NEW pose, prefer a
+transparent output (or key it once before adding it to the library, so the library stays all-transparent).
+
+Promote to shared memory: recorded in `pose.md`, `brand-system.md`, `current-state.md`, `learning-log.md`.
 
 ### 2026-06-28 - Pose-transfer prompt pattern (build the channel pose library from `_origin_`)
 
@@ -135,6 +156,67 @@ Apply next time: pose-transfer prompts must say "do not copy the reference's def
 white body unless a distinct costume defines the pose."
 
 Promote to shared memory: no; visual-implement asset-creation behavior.
+
+### 2026-06-28 - First browse/source run (Section 1, ai-slop): pose-catalog drift, Openverse preview-res, people/brand checks
+
+Classification: `Operational lesson`
+
+Context:
+First real sourcing run of `visual-implement` (project `5-why-the-internet-is-full-of-ai-slop`, Section 1).
+No image generator connected, so `generate` cards were handled as render-CSS real-UI + a PNG-fallback
+prompt in the manifest. Sourced 8 CC0 photo bases via Openverse + 2 Public-Domain AI-slop images from
+Wikimedia Commons, copied 9 library poses.
+
+Lessons (apply next time):
+- POSE-CATALOG DRIFT: `pose.md` listed poses that are NOT on disk (`holding_phone_looking_content`,
+  `ok_hand_sign_content_relaxed`). Always `ls` the real pose dir and reuse-check each filename before
+  copying; substitute the closest real pose (used `holding_phone_pointing_smile`,
+  `ok_hand_sign_content_closeup`) and then SYNC the substitution back into the section plan + master so
+  render never points at a missing file.
+- OPENVERSE `url` IS PREVIEW-RES (~960-1024px), not the declared original. For full-HD bases prefer
+  Wikimedia Commons (its `url` is full-res; e.g. the sludge base came back 4000x3000). Flag preview-res
+  bases in the manifest as "swap if soft at 1920".
+- COMMONS AI-SLOP IMAGES are easy and safe: Shrimp Jesus + "AI generated hand" are Public Domain;
+  fetch direct URL + license via the imageinfo API (`prop=imageinfo&iiprop=url|extmetadata`) then curl.
+- VERIFY PIXELS with the Read tool on the downloaded image - it catches what the API can't: the first
+  music pick ("concert crowd") was full of PEOPLE (owner rejects real-people backgrounds), re-sourced to
+  a studio mixing console (people-free, but has SSL/XLogic branding - flagged to blur/crop at render).
+  Eyeball at least the people/brand-risk bases (interiors, crowds, devices) before finalizing.
+- TOOLING ON THIS BOX: git-bash `/tmp` != node's `C:\tmp` - write temp files to the scratchpad dir.
+  `node` (global `fetch`) + `curl` are available; no python needed for sourcing.
+
+Promote to shared memory:
+no; visual-implement sourcing/tooling behavior. The Openverse-vs-Commons resolution + people/brand
+pixel-check already align with the shared visual-production reference rules.
+
+### 2026-06-28 - Generate-forward batch (S3 v2) + stock queries surface PEOPLE and NAMED FIGURES
+
+Classification: `Asset lesson`
+
+Context:
+S3 was rebuilt generate-forward (owner wants wild bespoke imagery, not reused photos). Implemented = copy
+poses + source 8 fresh bases + write 10 detailed generate prompts (no image tool connected -> status
+`prompt-ready / awaiting generation`; owner generates in ChatGPT + drops PNGs into `assets/`). While
+sourcing bases, blind "best match" picks repeatedly pulled rejects: a concert CROWD, a Korean street with
+people, and - worst - **Jimmy Carter at a UN podium** (a real, identifiable public figure) for "microphone
+dark background". Re-sourced each people-free/figure-free and VERIFIED with the Read tool.
+
+Lesson:
+- For generate-forward sections, write each prompt fully standalone (Attach line, channel-cartoon vs
+  photoreal-uncanny per asset, isolated transparent bg, explicit "do NOT: real logo / real person /
+  background / text"), and mark `prompt-ready / awaiting generation`. Render's asset-ready gate will block
+  until the owner drops the real PNGs in - say so clearly.
+- ALWAYS eyeball sourced bases. Stock/Openverse "microphone/stage/street/concert" queries frequently
+  return real people AND named public figures (politicians, celebrities). Add a name/role denylist to the
+  picker (carter|president|obama|trump|singer|player|crowd|...) AND still Read-verify; never ship a base
+  with an identifiable real person.
+- Keep a brand-free bias on object queries too (the earlier SSL console, Robby-the-Robot tin toy).
+
+Apply next time: budget for 1-2 re-sources per base batch; verify every base; prefer clean object/texture
+bases that won't contain incidental people.
+
+Promote to shared memory: no; visual-implement sourcing tactic (the unlimited-imagination/generate-forward
+direction itself is already promoted via visual-plan memory + learning-log).
 
 ## Feedback Entry Template
 

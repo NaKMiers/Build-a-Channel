@@ -1,6 +1,6 @@
 ---
 name: render
-description: Build or update step 5 section HyperFrames previews for a Why It Works video project. Use when the user asks for Render, HyperFrames build, create video from visual-plan, build a section preview, run section localhost, start preview servers, or run step 5; export MP4/WebM only when the user explicitly asks to export video; requires completed 00-topic-intake.md, 01-research-pack.md, 02-script.md, 03-voiceover.md, 04-visual-plan.md, selected section voiceover, selected section visual plan, explicit project selection, and explicit section selection with All as the first option; creates 05-production-board.md, section-previews/ section HyperFrames projects, and hyperframes/ review copies while using port 1000 for unified preview and port 1000 plus section number for section previews.
+description: Build or update step 5 section HyperFrames previews for a Why It Works video project. Use when the user asks for Render, HyperFrames build, create video from visual-plan, build a section preview, run section localhost, start preview servers, or run step 5; export MP4/WebM only when the user explicitly asks to export video; requires completed 00-topic-intake.md, 01-research-pack.md, 02-script.md, 03-voiceover.md, 04-visual-plan.md, selected section voiceover, selected section visual plan, ALL of the selected section's assets ready in assets/ (per assets/asset-manifest.md; render stops if any are missing or awaiting generation/drop rather than sourcing them itself), explicit project selection, and explicit section selection with All as the first option; creates 05-production-board.md, section-previews/ section HyperFrames projects, and hyperframes/ review copies while using port 1000 for unified preview and port 1000 plus section number for section previews.
 ---
 
 # Render
@@ -71,11 +71,12 @@ these pre-made assets into each scene's layout described by the visual plan - pu
 filename the plan/manifest specifies and place it per the scene's layout. The same subject uses the
 same file across scenes, so a recurring character stays identical.
 
-Do not re-source or regenerate an asset that the manifest already provides. Only source/build an asset
-yourself as a documented fallback when it is genuinely missing or marked `prompt-ready / awaiting
-generation` / `awaiting drop` in the manifest - in that case, report the gap and (if safe) create a
-clean placeholder or fetch a safe asset, noting it in `IMPLEMENTATION.md` and `05-production-board.md`.
-If a section's assets are missing entirely, stop and tell the user to run `visual-implement` first.
+Do not re-source or regenerate an asset that the manifest already provides, and do not silently fill
+gaps. Render REQUIRES every one of the selected section's assets to be ready before it builds anything
+(see the All Section Assets Ready Gate). If any asset is missing on disk or is marked `prompt-ready /
+awaiting generation` / `awaiting drop`, STOP and tell the user to finish `visual-implement` for those
+assets, then rerun render. Produce a missing asset yourself only when the user explicitly asks for that
+specific asset this run, and document it in `IMPLEMENTATION.md` and `05-production-board.md`.
 
 Write or update:
 
@@ -220,14 +221,44 @@ For each selected section, verify:
 - matching section visual-plan folder exists under `visual-plan/`
 - section visual-plan file exists and is non-empty
 - section voiceover includes an audio file or clearly documented TTS status
-- required visual assets or reference prompts are available
+- EVERY asset the section needs is ready (see the All Section Assets Ready Gate below)
 
 If selected section voiceover is stale versus `02-script.md`, stop and ask the user to rerun `voiceover`.
 
 If selected section visual plan is stale versus the section voiceover or `04-visual-plan.md`, stop and ask the user to rerun `visual-plan`.
 
-If assets are missing but can be generated or created safely from the visual plan, create them and document source notes.
-If assets are missing and cannot be created safely, stop and report the exact missing assets.
+## All Section Assets Ready Gate (hard requirement)
+
+Render is a compositor, not an asset producer. Do NOT build, update, or render a section until
+**100% of that section's assets are ready**. Producing assets is `visual-implement`'s job.
+
+Before writing any HTML, starting a server, or rendering for a selected section:
+
+1. Open `projects/<slug>/assets/asset-manifest.md` and collect every asset the selected section
+   references (match the section's scenes / the section visual-plan asset list to manifest rows). If
+   the manifest is missing or does not list the section's assets, STOP and tell the user to run
+   `visual-implement` for the section first.
+2. For EACH referenced asset, confirm it is in a render-ready state:
+   - `browse-real-photo` / `generate` / `reuse`: the file exists at `projects/<slug>/assets/<filename>`
+     (manifest status `done` or `reused`). Verify the file is actually present on disk, not just listed.
+   - `pose`: the pose PNG exists at `projects/<slug>/assets/poses/<filename>`.
+   - render-built CSS construct: only ready if the manifest EXPLICITLY marks it as built in render (no
+     file needed). A plan/manifest note like "render-CSS preferred" counts as ready; a bare missing
+     file does not.
+3. If ANY referenced asset is missing on disk, or its manifest status is `prompt-ready / awaiting
+   generation`, `awaiting drop`, or otherwise not-yet-produced, STOP. Do not source, generate,
+   screenshot, substitute, or placeholder it yourself, and do not build a partial section. Report the
+   exact list of not-ready assets (filename + status) and tell the user to finish `visual-implement`
+   for those assets (generate the prompts in ChatGPT / drop the files into `assets/` / source the
+   photos), then rerun `render`.
+4. Proceed only when every one of the section's assets is ready (file present, or explicitly
+   render-CSS). Exception: if the user EXPLICITLY asks render, this run, to create or substitute a
+   specific named missing asset, that single asset may be produced as a documented fallback (note it in
+   `IMPLEMENTATION.md` and `05-production-board.md`). The default with any gap is to STOP, not to
+   silently fill it.
+
+For `All`, run this gate per section; build only the sections whose assets are fully ready, and list
+the blocked sections with their missing assets.
 
 ## Request Modes
 
@@ -436,7 +467,7 @@ Channel-specific rules:
 - Verify WIT safe crop in direct preview screenshots. Avoid accidental cuts through the face, head, shoulders, or important props; if it looks broken rather than intentionally peeking, reposition or scale before handoff.
 - WIT size + vertical anchor default (owner-confirmed 2026-06-22): make WIT BIG (≈`1/3`–`1/2` frame) AND HIGH. For a bottom-edge peek, anchor around `bottom:-250…-340px` (not `-540…-600px`, which bleeds the body off-canvas and reads as "too low / covered by the frame") so head+glasses+torso+arms are inside the frame and only the legs crop. If a bigger WIT would cover a label/board/chat bubble/UI, RE-ARRANGE those other items (opposite side / up / down) instead of shrinking or lowering WIT - WIT is the emotional subject and content makes room for it. Confirm head clears the top edge too.
 - Ground UI scenes on real photos: do not ship a section of full-frame CSS UI / labels on flat gradients - it reads as "not lively / no background." Float the crisp real-UI (chat, Meet grid, Trello, spreadsheet, calendar) as a drop-shadowed `.screen` over a real, people-free photo (light scrim), and prefer a photo that echoes the line. Stylized scenes (e.g. a CSS stage) also get a real photo base (e.g. a real red-curtain stage).
-- STANDING VIVID-HOOK TEMPLATE (owner-confirmed 2026-06-23, from the `why-everything-is-a-subscription-now` Section 1 remake): build every section to `vivid on-topic OBJECT photo bases -> VARIED CSS idea-devices per beat -> giant WIT that VARIES per scene`. Vary the idea-device per beat (app-grid tiles, kinetic number/counter, notification toasts, free-trial countdown, full-width EXPIRED/system banner, padlock wall, bold kinetic headline, badges) - do NOT reuse one handwritten cream label box for every idea. VARY WIT across scenes in side (left/center/right), scale, vertical anchor, and pose - never park WIT on the same side with text always opposite; flip the text/UI to the side WIT isn't using and rearrange around WIT. A reusable CSS kit lives in `projects/3-why-everything-is-a-subscription-now/section-previews/section-01-hook/index.html` (tiles, toasts, countdown, banner modal, padlock, counter, payoff) - copy/adapt it. Current WIT poses ship on a flat green #00B140 screen - chroma-key the green out at render before compositing; always VIEW a pose before first use.
+- STANDING VIVID-HOOK TEMPLATE (owner-confirmed 2026-06-23, from the `why-everything-is-a-subscription-now` Section 1 remake): build every section to `vivid on-topic OBJECT photo bases -> VARIED CSS idea-devices per beat -> giant WIT that VARIES per scene`. Vary the idea-device per beat (app-grid tiles, kinetic number/counter, notification toasts, free-trial countdown, full-width EXPIRED/system banner, padlock wall, bold kinetic headline, badges) - do NOT reuse one handwritten cream label box for every idea. VARY WIT across scenes in side (left/center/right), scale, vertical anchor, and pose - never park WIT on the same side with text always opposite; flip the text/UI to the side WIT isn't using and rearrange around WIT. A reusable CSS kit lives in `projects/3-why-everything-is-a-subscription-now/section-previews/section-01-hook/index.html` (tiles, toasts, countdown, banner modal, padlock, counter, payoff) - copy/adapt it. Current WIT poses are TRANSPARENT RGBA cutouts (keyed in place 2026-06-28) - composite them directly from `assets/poses/`, NO chroma-key step and NO `poses-keyed` folder; always VIEW a pose before first use.
 - BUILD TO THIS BAR ON THE FIRST PASS - do not render a plain version and wait for rejection (owner-confirmed 2026-06-24). On `why-buy-1-get-1-beats-50-off` the owner rejected plain first passes three times before each was rebuilt to this template. Hard requirements every section:
   - base grade: keep the photo BRIGHT and VISIBLE - `filter: saturate(~1.1) contrast(~1.06) brightness(~0.7–0.85)`. Do NOT cover it with a heavy dark overlay (owner rejected "dark areas overlay"). Use AT MOST a subtle edge vignette (`radial-gradient(... rgba(4,5,10,0) 54%, rgba(4,5,10,0.38) 100%)`) or a light text-side gradient that fades to transparent before mid-frame; never a full-frame dark scrim. Get text contrast from text-shadow + the device cards' own backgrounds. Still never ship a bare/flat base (plain wood, objects-on-white, a dim antique) - that reads as "backgrounds too simple."
   - a GIANT kinetic NUMBER (`font-size ~250–320px`, the `.bignum` device) is the hero for any money/count beat; a plain receipt/label card is only a small supporting strip. Flat CSS label-cards as the main element read as "texts/items too simple."
@@ -614,7 +645,7 @@ If a real source has attribution, share-alike, logo, private-data, or unclear-co
 2. Run the Required Inputs Gate.
 3. Parse `02-script.md` sections.
 4. Run the Section Selection Gate.
-5. Run the Section Readiness Gate for selected sections.
+5. Run the Section Readiness Gate AND the All Section Assets Ready Gate for selected sections; stop (or skip a blocked section in `All` mode) if any of a section's assets are not ready.
 6. Read required shared context, skill memory, output formats, and HyperFrames guidance.
 7. For each selected section:
    - compute the fixed port: `1000 + section number`
@@ -696,6 +727,7 @@ A section render is ready for review when:
 
 - the selected section was explicitly chosen
 - section voiceover and visual plan are current
+- every asset the section references is ready before build: each file present in `assets/` (or `assets/poses/`), or explicitly marked render-CSS in the manifest; none `prompt-ready / awaiting generation` or `awaiting drop`
 - section preview project exists separately from other sections
 - section uses fixed port `1000 + section number`
 - `index.html` implements the visual plan without requiring review to infer missing boards
@@ -737,6 +769,8 @@ Reject or stop before finishing if:
 - the project lacks `04-visual-plan.md`
 - the selected section lacks voiceover
 - the selected section lacks visual plan
+- a section is built/rendered while ANY of its assets are missing on disk or still `prompt-ready / awaiting generation` / `awaiting drop` in `assets/asset-manifest.md` (render must stop per the All Section Assets Ready Gate, not build a partial section)
+- render silently sources, generates, screenshots, substitutes, or placeholders a missing asset instead of stopping (allowed only when the user explicitly asks for that specific asset this run, documented)
 - the user has not explicitly selected `All` or a specific section
 - the target section is inferred instead of selected
 - scene content does not match the current voiceover beat

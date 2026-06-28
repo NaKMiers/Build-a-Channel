@@ -1,0 +1,10 @@
+{
+  "name": "why-internet-full-of-ai-slop-section-03-what-slop-actually-is",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx --yes hyperframes@0.6.76 preview",
+    "check": "npx --yes hyperframes@0.6.76 lint && npx --yes hyperframes@0.6.76 validate && npx --yes hyperframes@0.6.76 inspect --at 2.4,4.6,9.4,10.8,16.8,25.5,32.6,36.4,40.2",
+    "render": "npx --yes hyperframes@0.6.76 render"
+  }
+}

@@ -2,7 +2,11 @@
 
 The channel mascot (WIT) pose set. These are the channel's **own** mascot (round bald white head, thick black outline, big rectangular glasses, dot eyes, flat white body), pose-transferred from a "Vui Vẻ"-style emotional/role-range casting sheet onto `_origin_` (the canonical neutral identity). This is now the live library, not external reference art.
 
-> **Green-screen poses:** every pose PNG is rendered on a solid flat green (#00B140) background (rgb24, no alpha) so the white-filled mascot survives. Chroma-key the green out at render time with ffmpeg (`colorkey`/`chromakey` + `despill`). Only `_origin_.png` is transparent rgba.
+> **Transparent poses (keyed 2026-06-28):** every pose PNG is now a TRANSPARENT RGBA cutout (the
+> green #00B140 screen was chroma-keyed out in place and committed). Use them DIRECTLY in any video -
+> no keying step, no `poses-keyed` folder. The white mascot fill is preserved (opaque white inside the
+> black outline). `_origin_.png` is the transparent canonical neutral identity. (History: the set was
+> originally delivered on a flat green screen; the green originals live in git history if ever needed.)
 > **Canonical neutral identity:** `_origin_.png` (the always-attach reference when generating any new pose).
 
 ## How an AI should use this file

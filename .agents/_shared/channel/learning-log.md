@@ -20,7 +20,7 @@ Keep this short. Current rules belong in `current-state.md`, `production-workflo
 - New-project file numbering shifted up by one (voiceover `03` … self-learning `08`); existing projects keep old numbers and skills resolve step files by name suffix (`.agents/rules/video-workflow.md`).
 - After voiceover, production branches by section. `visual-plan` requires the selected section voiceover and creates section-level plans before render.
 - `render` uses one HyperFrames preview project and one localhost per section. Unified/final preview is reserved for `localhost:1000`; section `N` uses `localhost:1000 + N`.
-- Current WIT source is the pose-transferred green-screen set in `.agents/_shared/assets/wit/poses/` (catalog `pose.md`; `_origin_.png` = neutral identity; poses on #00B140, keyed at render). Replaced the old `wit-pose-*` 24-set on 2026-06-28.
+- Current WIT source is the pose-transferred set in `.agents/_shared/assets/wit/poses/` (catalog `pose.md`; `_origin_.png` = neutral identity). As of 2026-06-28 the `67` poses are TRANSPARENT RGBA cutouts (chroma-keyed in place + committed) - use directly, no keying step, no `poses-keyed` folder (green originals in git history). Replaced the old `wit-pose-*` 24-set on 2026-06-28.
 - Do not use the removed older WIT directions as current channel WIT.
 - Default final narrator is `David23 / am_eric / 0.84 / en-us`; test `am_eric` directly before declaring it unavailable.
 - `Experiment` tooling (2026-06-28): Kokoro (HyperFrames `tts`) has NO Vietnamese voice. For Vietnamese-language experiment videos (e.g. `5-vi-sao-gia-vang-tang`), use **edge-tts** (Microsoft Edge TTS, free, no key, needs internet): `python -m edge_tts --voice vi-VN-NamMinhNeural` (young male, the VN equivalent of David23) or `vi-VN-HoaiMyNeural` (female); `--rate=-8%` to slow for clarity. This does NOT change the default English `David23 / am_eric` voice; it is the VN-experiment path only.
@@ -67,6 +67,16 @@ Keep this short. Current rules belong in `current-state.md`, `production-workflo
 - `Core` (owner-confirmed 2026-06-28): the mascot must be a **real character with color + personality**, not a featureless blob. Reference host = pink hair, outfit, expressive face, cheeky/"láo cá" attitude. WIT as a plain white blob is a primary reason the watch experience scores low. Give WIT color, an outfit, a wide expression range, and an attitude that fits "smart, dry, slightly rude."
 - `Core` (owner-confirmed 2026-06-28): use deliberate **mascot-only focus beats** - empty frame, mascot centered, no other illustration - to signal "listen to this line." Casually Explained does this constantly. It is a rhythm tool: dense illustrated beats, then a clean mascot beat to let a point or punchline land.
 - `Core` (owner-confirmed 2026-06-28): a single real screenshot / clean UI mockup can be a complete comedy beat on its own (the reference uses one real Threads post per joke). For Why It Works this = real-looking app/notification/chat/receipt mockups (see brand-system "Real-UI Illustration"), each carrying one joke or one piece of evidence.
+
+- `Core` creative direction (owner-confirmed 2026-06-28, `why-the-internet-is-full-of-ai-slop` S3): visual-plan
+  must be UNLIMITED in imagination and GENERATE-FORWARD. If an idea is good it must be realized by all means -
+  write generate prompts and produce bespoke surreal heroes (e.g. a content-grinder "slop machine", a melting
+  AI influencer, a firehose of grey clones, a robot in a human mask) rather than downgrading to a safe browsed
+  photo. Do NOT reuse one background across many sections as a crutch (the `grey-sludge-flood` overuse was
+  rejected: "every section uses it but the purpose isn't clear"); each section earns its own distinct imagery,
+  a motif recurs only with clear in-section meaning. Browsed real photos are grounding bases/textures, not a
+  substitute for bold generated heroes. Only real bound: copyright/law/YouTube community standards (parody not
+  real logos; non-existent people). A section may legitimately need ~8-12 generate assets.
 
 ### New visual pipeline architecture (owner-directed 2026-06-28, in design - replaces the current section-by-section visual-plan style)
 

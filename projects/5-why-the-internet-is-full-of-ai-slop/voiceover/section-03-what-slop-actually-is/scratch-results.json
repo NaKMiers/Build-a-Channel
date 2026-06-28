@@ -1,0 +1,21 @@
+{
+  "section": "Section 3: What Slop Actually Is",
+  "status": "final section voice generated",
+  "voice": "am_eric",
+  "voiceName": "David23",
+  "speed": 0.8,
+  "lang": "en-us",
+  "tool": "npx hyperframes@0.6.76 tts",
+  "ttsInput": "tts-inputs/section-03-what-slop-actually-is-tts.txt",
+  "outputPath": "scratch-audio/section-03-what-slop-actually-is-david23-am_eric-0.80.mp3",
+  "durationSeconds": 40.704,
+  "ok": true,
+  "use": "production preview / timing reference (David23 channel voice, approved voice ID)",
+  "pythonPathPrepend": "/c/Users/Anpha Right Choice/AppData/Local/Programs/Python/Python312",
+  "notes": [
+    "Pacing shaped in tts-input with periods + ellipses + '. .' (canonical spacious style); numbered marks One/Two/Three land separately.",
+    "Speed 0.80 kept consistent with Sections 1-2.",
+    "Coca-Coola left as the misspelled word in tts-input on purpose (the joke); quote marks dropped (Kokoro ignores them). Canonical script keeps exact 02-script.md wording."
+  ],
+  "copiedToAssetFolder": false
+}

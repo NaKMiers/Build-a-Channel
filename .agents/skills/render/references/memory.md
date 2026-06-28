@@ -10,6 +10,8 @@ Use this file for section preview structure, port behavior, HyperFrames CLI habi
 - Run after `visual-plan`.
 - Require non-empty `00-topic-intake.md`, `01-research-pack.md`, `02-script.md`, the voiceover index (`03-voiceover.md`; legacy `04-voiceover.md`), and the visual-plan index (`04-visual-plan.md`; legacy `05-visual-plan.md`). Resolve by suffix per `.agents/rules/video-workflow.md`.
 - Require matching section voiceover output and matching section visual-plan output.
+- WIT poses are TRANSPARENT RGBA cutouts in the shared library (keyed in place 2026-06-28): copy/reference them DIRECTLY from `assets/poses/`. No chroma-key step at render, no `poses-keyed` folder.
+- Require ALL of the selected section's assets ready before building (owner-confirmed 2026-06-28): check `assets/asset-manifest.md`, confirm every referenced asset is a file present in `assets/` (or `assets/poses/`) or explicitly render-CSS; if any is missing on disk or marked `prompt-ready / awaiting generation` / `awaiting drop`, STOP and tell the user to finish `visual-implement` for those assets - do NOT source/generate/substitute them yourself (only when the user explicitly asks for a specific asset this run). See the All Section Assets Ready Gate in SKILL.md.
 - Do not require `03-packaging.md`; packaging is a side branch.
 - Require explicit user section selection: `All` or a specific section.
 - Build one HyperFrames preview project per section under `section-previews/section-XX-kebab-section-name/`.
@@ -1301,6 +1303,74 @@ Apply next time:
 
 Promote to shared memory:
 no; render mechanics gotcha.
+
+### 2026-06-28 - Green-screen WIT poses: chroma-key with a temp static ffmpeg before compositing
+
+> SUPERSEDED same day: the owner had the WHOLE pose library chroma-keyed to TRANSPARENT in place
+> (`.agents/_shared/assets/wit/poses/*.png` are now RGBA cutouts, committed). Render now composites
+> poses DIRECTLY from `assets/poses/` - NO per-render keying, NO `poses-keyed` folder. The recipe below
+> is kept only for history / if a future green-delivered pose ever needs keying.
+
+Classification: `Operational lesson`
+
+Context:
+First render using the new green-screen WIT pose set (`#00B140`, rgb24, no alpha) on
+`5-why-the-internet-is-full-of-ai-slop` Section 1. HyperFrames previews are browser HTML, so the green
+cannot be keyed in CSS - the pose PNGs must be pre-keyed to transparent before being referenced. No
+ffmpeg/whisper-cpp/python-whisper on PATH this box.
+
+Lesson (reusable recipe on this Windows box):
+- Get a static ffmpeg without polluting the system: `npm.cmd install --no-save @ffmpeg-installer/ffmpeg`
+  in a temp dir; path = `node -e "console.log(require('@ffmpeg-installer/ffmpeg').path)"`.
+- Key each pose: `ffmpeg -y -i pose.png -vf "colorkey=0x00B140:0.30:0.12,despill=type=green:mix=0.5:expand=0" out.png`.
+  Result: clean transparent bg, white mascot fill + black outline + glasses preserved (verified by Read).
+  Save keyed copies to `projects/<slug>/assets/poses-keyed/` and reference `./assets/poses-keyed/*.png`
+  in the HTML (keep the green originals in `assets/poses/` as the library record).
+- Word timings (the skill's word-timings-first rule) also worked via that same ffmpeg + transformers.js:
+  `ffmpeg -i mp3 -ar 16000 -ac 1 -f f32le s.raw`, then `@xenova/transformers` `whisper-tiny.en`
+  `return_timestamps:"word"` -> save `voiceover/section-XX-*/section-XX-word-timings.json`. ~1 min,
+  aligned clean TTS well; pinned every cue/reveal to it (no estimating).
+- Build skeleton copied from the approved `projects/3-.../section-01-hook/index.html` (per-scene clip on
+  its own track, `<audio>` clip, GSAP timeline registered to `window.__timelines`, off-canvas WIT via
+  `data-layout-allow-overflow` + `style="overflow:visible"`). Pre-made cards (owner-generated PNGs) with
+  an artifact below them were cropped with CSS `clip-path: inset(...)`.
+
+Apply next time:
+- Always pre-key the green WIT poses to `assets/poses-keyed/` before writing HTML; verify one keyed pose
+  with the Read tool before batching all.
+- Generate real word-timings with the temp ffmpeg + transformers.js recipe rather than estimating.
+
+Promote to shared memory:
+no; render tooling recipe for the green-screen pose era. The chroma-key requirement is already implied
+by brand-system; this records the concrete working command on this machine.
+
+### 2026-06-28 - Render requires ALL section assets ready (no silent gap-filling)
+
+Classification: `Operational lesson`
+
+Context:
+Owner directive: "When using /render require all assets of section are ready, update skills to require
+that." Previously render was allowed to source/generate/placeholder a missing asset as a documented
+fallback. Owner wants render to be a pure compositor: every asset must be produced by `visual-implement`
+first.
+
+Lesson:
+Added the **All Section Assets Ready Gate** (hard) to `render/SKILL.md`: before building/rendering a
+section, read `assets/asset-manifest.md`, confirm every referenced asset is a file present in `assets/`
+(or `assets/poses/`) or explicitly render-CSS; if ANY is missing on disk or marked `prompt-ready /
+awaiting generation` / `awaiting drop`, STOP and tell the user to finish `visual-implement` for those
+assets, then rerun render. Render no longer fills gaps itself - the only exception is when the user
+explicitly asks render to make a specific named asset this run. Also added matching Hard Fails, a
+Quality-Bar line, a Workflow step, and updated the frontmatter description (and the Claude wrapper's
+copy) so discovery reflects the new requirement. For `All`, gate per section and skip blocked sections.
+
+Apply next time:
+- Run the assets gate every render; never build a partial section or substitute a missing asset silently.
+- In `All` mode, build only fully-ready sections and report the blocked ones with their missing files.
+
+Promote to shared memory:
+no; this is a render-skill gate. The pipeline architecture (visual-implement makes assets, render
+composites) already lives in `_shared/channel/learning-log.md`.
 
 ## Feedback Entry Template
 
