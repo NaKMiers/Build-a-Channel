@@ -13,7 +13,7 @@ Status:
 
 ## Section Goal
 
-Show the part the sign hides — what you actually SPEND. The receipt is the hero: 50% off = one item, total $5; BOGO = full $10 and a second item you didn't need. Land "smaller price vs bigger basket," then "half price was the better deal" and hand off to the magic word.
+Show the part the sign hides - what you actually SPEND. The receipt is the hero: 50% off = one item, total $5; BOGO = full $10 and a second item you didn't need. Land "smaller price vs bigger basket," then "half price was the better deal" and hand off to the magic word.
 
 ## Source Inputs
 
@@ -55,9 +55,9 @@ If you only wanted one, half price was the better deal. You walked right past it
 
 | Big Scene | Local Time | Voice Range | Persistent Base Visual | Why This Scene Exists | When To Cut Away | Reference Basis | Asset Path |
 |---|---:|---|---|---|---|---|---|
-| A — The receipts (what you spend) | 0.0–15.12 | "the part the sign hides…" → "a second one you did not need." | Dark wood counter + two CSS receipts | show $5 (1 item) vs $10 (2 items) — you spent twice as much | at "That is the whole game" | wood CC0 + CSS receipts | `base-a-wood-table.jpg` |
-| B — Bigger basket / robbed | 15.12–25.32 | "the whole game… smaller price… bigger basket… robs you." | Overflowing veg basket | "smaller price vs BIGGER BASKET"; the deal robs you while smiling | at "If you only wanted one" | veg basket CC0 | `base-c-veg-basket.jpg` |
-| C — Half price was better / magic word | 25.32–32.235 | "half price was the better deal… the magic word." | Wood counter (cooler) + two CSS signs | half price was the better deal; you walked past it for the magic word | end | wood CC0 (callback) + CSS signs | `base-a-wood-table.jpg` (cooler) |
+| A - The receipts (what you spend) | 0.0–15.12 | "the part the sign hides…" → "a second one you did not need." | Dark wood counter + two CSS receipts | show $5 (1 item) vs $10 (2 items) - you spent twice as much | at "That is the whole game" | wood CC0 + CSS receipts | `base-a-wood-table.jpg` |
+| B - Bigger basket / robbed | 15.12–25.32 | "the whole game… smaller price… bigger basket… robs you." | Overflowing veg basket | "smaller price vs BIGGER BASKET"; the deal robs you while smiling | at "If you only wanted one" | veg basket CC0 | `base-c-veg-basket.jpg` |
+| C - Half price was better / magic word | 25.32–32.235 | "half price was the better deal… the magic word." | Wood counter (cooler) + two CSS signs | half price was the better deal; you walked past it for the magic word | end | wood CC0 (callback) + CSS signs | `base-a-wood-table.jpg` (cooler) |
 
 ## Cue State Timeline
 
@@ -65,20 +65,20 @@ If you only wanted one, half price was the better deal. You walked right past it
 |---|---:|---|---|---|---|---|---|---|
 | A1 | 1.78 | "what you actually spend" | A | hand label + receipt slot | hard-show | `holding-receipt-evidence` RIGHT ~1/3 | "what you actually spend" | open on the receipt |
 | A2 | 3.20 | "Fifty percent off… paid five, done" | A | Receipt #1 prints: TOTAL $5 (1 item) | hard-show | holding-receipt | receipt-50 | the smaller spend |
-| A3 | 6.86 | "Buy one, get one free" | A | Receipt #2 starts beside it | hard-show | — | receipt-bogo header | the other deal |
-| A4 | 8.78 | "coughed up the full ten" | A | Receipt #2 TOTAL $10 + red ring | impact | — | "$10" red ring | the real spend |
-| A5 | 10.62 | "twice as much. In one trip." | A | "×2 — TWICE AS MUCH" stamp | impact | — | "×2" stamp | the punch |
-| A6 | 12.82 | "a second one you did not need" | A | "+1 you didn't need" tag on receipt #2 | hard-show | — | "+1 unwanted" | the hidden cost |
-| B1 | 16.32 | "smaller price… bigger basket" | B | cut to basket; "50% OFF = smaller price" vs "BOGO = BIGGER BASKET" | transition + hard-show | — | two labels | the reframe |
+| A3 | 6.86 | "Buy one, get one free" | A | Receipt #2 starts beside it | hard-show | - | receipt-bogo header | the other deal |
+| A4 | 8.78 | "coughed up the full ten" | A | Receipt #2 TOTAL $10 + red ring | impact | - | "$10" red ring | the real spend |
+| A5 | 10.62 | "twice as much. In one trip." | A | "×2 - TWICE AS MUCH" stamp | impact | - | "×2" stamp | the punch |
+| A6 | 12.82 | "a second one you did not need" | A | "+1 you didn't need" tag on receipt #2 | hard-show | - | "+1 unwanted" | the hidden cost |
+| B1 | 16.32 | "smaller price… bigger basket" | B | cut to basket; "50% OFF = smaller price" vs "BOGO = BIGGER BASKET" | transition + hard-show | - | two labels | the reframe |
 | B2 | 22.20 | "spends it… robs you while smiling" | B | "ROBBED" stamp + WIT | impact | `empty-wallet` LEFT ~1/2 | "robs you (with a smile)" | the betrayal |
-| C1 | 25.32 | "half price was the better deal" | C | cut to signs; check on 50% OFF sign | transition + impact | — | "✓ better deal" | fairness: 50% off wins if you want one |
+| C1 | 25.32 | "half price was the better deal" | C | cut to signs; check on 50% OFF sign | transition + impact | - | "✓ better deal" | fairness: 50% off wins if you want one |
 | C2 | 29.78 | "the other sign said the magic word" | C | FREE sign glows; WIT facepalm | impact | `facepalm` RIGHT ~1/2 | "the magic word →" | hand-off to Section 4 |
 
 ## WIT Pose Plan
 
 | Cue | Time | Emotion | Pose File | Placement / Scale | Safe Crop | Why |
 |---|---:|---|---|---|---|---|
-| A | 1.78–15 | suspicion | `wit-pose-holding-receipt-evidence.png` | RIGHT ~1/3, anchored high | face/glasses/shoulders in; legs crop | "the receipt knows" — WIT studies it |
+| A | 1.78–15 | suspicion | `wit-pose-holding-receipt-evidence.png` | RIGHT ~1/3, anchored high | face/glasses/shoulders in; legs crop | "the receipt knows" - WIT studies it |
 | B2 | 22.20 | betrayal | `wit-pose-empty-wallet.png` | LEFT ~1/2 | face clear; labels cleared RIGHT | robbed while smiling |
 | C2 | 29.78 | facepalm | `wit-pose-facepalm.png` | RIGHT ~1/2 | face clear; signs cleared LEFT | walked right past the better deal |
 

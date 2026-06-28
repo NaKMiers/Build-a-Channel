@@ -26,7 +26,7 @@ This folder stores executable project-local Codex skills.
   Creates step 4 visual plans: ONE master plan + synced per-section copies, per-sentence scenes described in extreme detail, and an ASSET list per scene (type/filename/layout). DESCRIBES only (no image prompts); may invent new poses/scenes.
 
 - [Visual Implement](visual-implement/SKILL.md)
-  Step 4.5 (after visual-plan, before render). Reads each scene's ASSET list and produces the assets — writes prompts + creates isolated `generate` elements, browses license-safe real photos / captures public screenshots, copies poses, reuses by filename — into `assets/` + `assets/asset-manifest.md`.
+  Step 4.5 (after visual-plan, before render). Reads each scene's ASSET list and produces the assets - writes prompts + creates isolated `generate` elements, browses license-safe real photos / captures public screenshots, copies poses, reuses by filename - into `assets/` + `assets/asset-manifest.md`.
 
 - [Render](render/SKILL.md)
   Creates step 5 section HyperFrames preview projects by COMPOSITING the mascot + pre-made assets from `assets/` per the plan's layout; fixed localhost previews, production-board status, and optional section renders.

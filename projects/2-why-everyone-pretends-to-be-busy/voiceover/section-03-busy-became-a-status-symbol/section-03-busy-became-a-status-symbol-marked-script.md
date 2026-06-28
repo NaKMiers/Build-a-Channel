@@ -1,4 +1,4 @@
-# Section 3 Marked Script — Busy Became A Status Symbol
+# Section 3 Marked Script - Busy Became A Status Symbol
 
 Video: `Why Everyone Pretends To Be Busy`
 
@@ -24,6 +24,6 @@ At some point the job stops being the work. [pause] The job becomes proving you 
 Direction notes:
 - `[beat]` after "Busy became a status symbol" to set the section thesis.
 - `[beat]` before "Which is not actually an emotion" so the dry line lands.
-- `[deadpan]` on "Same planet, opposite brag." — keep it flat and dry.
+- `[deadpan]` on "Same planet, opposite brag." - keep it flat and dry.
 - `[pause]` before the final line so "proving you are near the work" lands as the section button.
 - This is the longest section so far (~175 words); keep a steady, unhurried learner pace.

@@ -11,7 +11,7 @@ Status:
 
 ## Section Goal
 
-Explain fairly that more features are not automatically bad, then show how every extra feature is one more thing that can break — using one fridge that visibly grows from "be cold" into a "small technology committee," and pay off with a tiny failed part that is hard and expensive to fix.
+Explain fairly that more features are not automatically bad, then show how every extra feature is one more thing that can break - using one fridge that visibly grows from "be cold" into a "small technology committee," and pay off with a tiny failed part that is hard and expensive to fix.
 
 ## Source Inputs
 
@@ -21,7 +21,7 @@ Explain fairly that more features are not automatically bad, then show how every
 
 ## Timing Source
 
-`whisper-derived` — audio transcribed with Whisper (`transformers.js` / `@xenova/whisper-tiny.en`, WASM, no native deps) and saved to `voiceover/section-05-.../section-05-word-timings.json`. Every scene cut and reveal below is pinned to real word timings. Key anchors: "not automatically bad" `3.04` / safer `6.22` / better battery `7.46` / phone-survives-gravity `8.86` / "but every extra feature... break" `11.86` / "simple fridge... be cold" `15.04` / screens `18.44` / sensors `19.26` / water lines `19.68` / ice dispenser `20.24` / software `21.44` / "and opinions" `21.66` / "not just a product" `22.78` / "technology committee" `26.82` / "one tiny part fails" `30.32` / "more expensive to fix" `33.22`.
+`whisper-derived` - audio transcribed with Whisper (`transformers.js` / `@xenova/whisper-tiny.en`, WASM, no native deps) and saved to `voiceover/section-05-.../section-05-word-timings.json`. Every scene cut and reveal below is pinned to real word timings. Key anchors: "not automatically bad" `3.04` / safer `6.22` / better battery `7.46` / phone-survives-gravity `8.86` / "but every extra feature... break" `11.86` / "simple fridge... be cold" `15.04` / screens `18.44` / sensors `19.26` / water lines `19.68` / ice dispenser `20.24` / software `21.44` / "and opinions" `21.66` / "not just a product" `22.78` / "technology committee" `26.82` / "one tiny part fails" `30.32` / "more expensive to fix" `33.22`.
 
 ## Visual Direction
 
@@ -31,8 +31,8 @@ Explain fairly that more features are not automatically bad, then show how every
 - WIT path: `mild approval that features can be good -> overwhelmed/confused at the committee -> money-panic at the expensive repair`
 - WIT density: `3 beats; awkward-celebration (cues 1-2), confused (committee reveal), money-panic (circuit payoff); the turn and the feature pile-up are WIT-free so the labels read`
 - Motion density: `hard cut only at 29.52; labels hard-show; the only timed reveals are the good-feature checks, the staggered feature pile, the committee label, and the payoff`
-- Real-life texture: `2 real photo bases used clean — a real kitchen fridge and a real appliance control board`
-- Intentional clutter: `the 6 feature tags accumulate around the fridge — the "too many labels" IS the technology-committee joke (per the channel's Section-5 note)`
+- Real-life texture: `2 real photo bases used clean - a real kitchen fridge and a real appliance control board`
+- Intentional clutter: `the 6 feature tags accumulate around the fridge - the "too many labels" IS the technology-committee joke (per the channel's Section-5 note)`
 - Fairness: `do not imply features are bad or that old products were always better; "features can be good" is shown with green checks before the turn`
 
 ## Big Scene Plan

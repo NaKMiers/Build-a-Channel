@@ -18,7 +18,7 @@ Status:
 - learner clarity notes:
   - Authored in the approved Section 5 spacious pacing template.
   - The thesis "The product is you... staying." is split with stacked `...` holds so it lands slowly; deadpan closer "Your salary. For now." on holds.
-  - `**bold**` joke markers and `[beat]/[slower]/[deadpan]` cues are NOT spoken — stripped before TTS.
+  - `**bold**` joke markers and `[beat]/[slower]/[deadpan]` cues are NOT spoken - stripped before TTS.
 
 ## Output Rule
 

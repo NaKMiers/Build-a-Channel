@@ -1,10 +1,10 @@
-# Short 01 — "The Free Trial Is A Countdown"
+# Short 01 - "The Free Trial Is A Countdown"
 
 Native portrait HyperFrames rebuild · `1080x1920` · port `1101` · comp duration `32.60s` (audio `31.381s` + payoff hold).
-Source section: S5 (the free trial). Complete standalone short — **NO CTA**.
+Source section: S5 (the free trial). Complete standalone short - **NO CTA**.
 
 ## One idea
-"Free" is a hidden countdown — when it hits zero, free quietly becomes a payment most people forget, and it lives on your statement as a ghost.
+"Free" is a hidden countdown - when it hits zero, free quietly becomes a payment most people forget, and it lives on your statement as a ghost.
 
 ## Scenes (real photo base + scrims each)
 | Scene | Base | Track | Window | WIT | Hero card(s) |
@@ -25,10 +25,10 @@ Scene bases cross-fade (`fadeScene`, blur→0) on their own track indices.
 Punchlines/payoff carried by the on-screen cards; captions clear before each card pops.
 
 ## WIT note
-`deadpan-side-eye` and `hidden-fee-panic` sit lower in their PNG canvas, so raised with `bottom:430px` (`#witReceipt` 400px) to clear the centered caption band. Per skill memory: WIT face height is pose-dependent — snapshot a caption-over-WIT beat per pose.
+`deadpan-side-eye` and `hidden-fee-panic` sit lower in their PNG canvas, so raised with `bottom:430px` (`#witReceipt` 400px) to clear the centered caption band. Per skill memory: WIT face height is pose-dependent - snapshot a caption-over-WIT beat per pose.
 
 ## Voiceover
-`voiceover/short-01.mp3` — approved voice `am_eric / 0.84 / en-us`, 31.381s. `**` joke markers and `[...]` cues stripped before TTS. Timings `voiceover/short-01-word-timings.json` (whisper-tiny.en; final word "expired." end clamped 31.68→31.381).
+`voiceover/short-01.mp3` - approved voice `am_eric / 0.84 / en-us`, 31.381s. `**` joke markers and `[...]` cues stripped before TTS. Timings `voiceover/short-01-word-timings.json` (whisper-tiny.en; final word "expired." end clamped 31.68→31.381).
 
 ## QA
 - `lint`/`validate`: 0 errors. Non-blocking: `overlapping_gsap_tweens` 0–0.42s (opening pop); WCAG contrast false positives.

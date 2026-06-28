@@ -16,4 +16,4 @@ Status: `built to subscription vivid-hook bar`
 - Hero devices: giant glowing FREE, BRAIN OFF badge, ZERO-PRICE/GIFT, NUMBER-vs-FEELING split + "YES!", hostage shampoo photo + rope + ransom
 - WIT: holding-phone-panic → confused → awkward-celebration → suspicious → betrayed (~980–1180px, giant)
 - Reference pass: 5 CC0 images (brain, coins, gift, cash, shampoo); no generated
-- HyperFrames readiness: built — `Section04Magic`, 37.099s, port 1004; word-pinned; lint/validate 0 errors
+- HyperFrames readiness: built - `Section04Magic`, 37.099s, port 1004; word-pinned; lint/validate 0 errors

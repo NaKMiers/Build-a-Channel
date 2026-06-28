@@ -202,7 +202,7 @@ the same ANGLE FAMILY, not a single idea. Mine the chosen reference's DNA (here:
 fools one mental shortcut + clean worked example + two-price-tag visual + WIT-as-rabbit) and generate
 a tight batch that all share that DNA, instead of spreading across all lanes. Lead with the closest
 twin that also has the strongest proven demand. For $9.99 specifically, Half as Interesting (~1.2M)
-is hard proof, and HAI is the channel's #1 topic-selection model — so flag "learn, don't copy its
+is hard proof, and HAI is the channel's #1 topic-selection model - so flag "learn, don't copy its
 structure." Kept the 2026-06-24 pricing-claim rule: verified the left-digit mechanism with a worked
 penny example and wrote a "Must Stay Honest" guardrail (perception nudge, not a lie; tendency not law;
 reverses at the luxury/round-number end) into the intake file so research + script inherit it.
@@ -233,13 +233,13 @@ A pre-chosen topic + "run topic-intake" is Persist Mode (per 2026-06-21). When s
 topic was already worked through but the project folder is gone, do not blindly regenerate from
 scratch and do not silently restore the old file either: recover the prior intake from git to keep its
 validated scorecard/guardrail, but still satisfy the browsing requirement with a fresh re-verify so the
-reference table reflects today (it may strengthen — found the 421K HowStuffWorks reference this time).
+reference table reflects today (it may strengthen - found the 421K HowStuffWorks reference this time).
 Because the folder was fully deleted, there were no downstream files to mark stale (clean slate).
 
 Apply next time:
 - Check git history for a deleted intake before regenerating; reuse the validated scorecard + honesty
   guardrail, refresh only what browsing updates.
-- Always re-browse for demand even when reusing — date the reference table to the current run.
+- Always re-browse for demand even when reusing - date the reference table to the current run.
 - If the whole folder is gone, the stale-downstream check is trivially empty; say so.
 
 Promote to shared memory:

@@ -1,6 +1,6 @@
 ---
 name: packaging
-description: Create or update YouTube packaging for a Why It Works video project. Use when the user asks for Packaging, title and thumbnail, YouTube description, upload metadata, tags, hashtags, thumbnail concepts, thumbnail images, A/B thumbnail testing, A/B title testing, or packaging; this is the packaging step that runs after caption and requires completed 00-topic-intake.md, 01-research-pack.md, and 02-script.md (it does not require voiceover/render to be finished, but its recommended position is after caption so it can also package shorts and use real chapters). Produces 5 LOCKED title+thumbnail A/B pairs for the main video (title N is coupled to thumbnail N — editing one rewrites the other), plus the YouTube description and tags; when built shorts are available it also creates one title, description, and thumbnail per short. Writes everything to ONE file, projects/<slug>/output/packaging.md (titles, descriptions, AND the thumbnail generation prompts folded in), and saves all thumbnail images under projects/<slug>/output/thumbnails/. It no longer creates 03-packaging.md or a separate PROMPTS.md.
+description: Create or update YouTube packaging for a Why It Works video project. Use when the user asks for Packaging, title and thumbnail, YouTube description, upload metadata, tags, hashtags, thumbnail concepts, thumbnail images, A/B thumbnail testing, A/B title testing, or packaging; this is the packaging step that runs after caption and requires completed 00-topic-intake.md, 01-research-pack.md, and 02-script.md (it does not require voiceover/render to be finished, but its recommended position is after caption so it can also package shorts and use real chapters). Produces 5 LOCKED title+thumbnail A/B pairs for the main video (title N is coupled to thumbnail N - editing one rewrites the other), plus the YouTube description and tags; when built shorts are available it also creates one title, description, and thumbnail per short. Writes everything to ONE file, projects/<slug>/output/packaging.md (titles, descriptions, AND the thumbnail generation prompts folded in), and saves all thumbnail images under projects/<slug>/output/thumbnails/. It no longer creates 03-packaging.md or a separate PROMPTS.md.
 ---
 
 # Packaging
@@ -11,7 +11,7 @@ Run the `packaging` step of the `Why It Works` video workflow. Its position is *
 
 Turn a finished project into a strong YouTube package, written to ONE file (`output/packaging.md`):
 
-- `5` **locked title+thumbnail A/B pairs** for the main video — title `N` is coupled to thumbnail `N`, so A/B title testing runs alongside A/B thumbnail testing as one unit
+- `5` **locked title+thumbnail A/B pairs** for the main video - title `N` is coupled to thumbnail `N`, so A/B title testing runs alongside A/B thumbnail testing as one unit
 - a reusable generation prompt for each of the `5` thumbnails, **folded into `output/packaging.md`** (no separate `PROMPTS.md`)
 - a thumbnail comparison and score table
 - the YouTube description, tags, hashtags, links, chapters, and pinned comment idea for the main video
@@ -34,14 +34,14 @@ Hard-required previous outputs (the skill refuses without these three):
 - `projects/<slug>/01-research-pack.md`
 - `projects/<slug>/02-script.md`
 
-Recommended position is after `caption` so the finished video, real chapter timing, and any built shorts are available — but the only hard gate is the three files above. When the combined video / captions exist, use them for real chapters; otherwise estimate chapters from `02-script.md` and mark them `draft until aligned`.
+Recommended position is after `caption` so the finished video, real chapter timing, and any built shorts are available - but the only hard gate is the three files above. When the combined video / captions exist, use them for real chapters; otherwise estimate chapters from `02-script.md` and mark them `draft until aligned`.
 
 Write or update (only these):
 
-- `projects/<slug>/output/packaging.md` — the SINGLE deliverable: the `5` locked title+thumbnail pairs, the thumbnail generation prompts (folded in), the description/tags/hashtags/chapters/pinned comment, and one title+description+thumbnail per short when shorts exist
-- `projects/<slug>/output/thumbnails/` — the thumbnail images (`main-pair-1.png` … `main-pair-5.png`, and `short-0N.png` when shorts exist)
+- `projects/<slug>/output/packaging.md` - the SINGLE deliverable: the `5` locked title+thumbnail pairs, the thumbnail generation prompts (folded in), the description/tags/hashtags/chapters/pinned comment, and one title+description+thumbnail per short when shorts exist
+- `projects/<slug>/output/thumbnails/` - the thumbnail images (`main-pair-1.png` … `main-pair-5.png`, and `short-0N.png` when shorts exist)
 
-Do **not** create `03-packaging.md` or a separate `PROMPTS.md` anymore, and do not write under `assets/thumbnails/`. If an older project already has `03-packaging.md` or `assets/thumbnails/` from before this change, leave them in place as-is unless the user explicitly asks to remove or migrate them — write all new output to `output/`.
+Do **not** create `03-packaging.md` or a separate `PROMPTS.md` anymore, and do not write under `assets/thumbnails/`. If an older project already has `03-packaging.md` or `assets/thumbnails/` from before this change, leave them in place as-is unless the user explicitly asks to remove or migrate them - write all new output to `output/`.
 
 If `00-topic-intake.md`, `01-research-pack.md`, or `02-script.md` is missing, stop and tell the user to run the missing previous skill in order before `packaging`.
 
@@ -87,7 +87,7 @@ Before writing, check whether the project has **built shorts**:
 
 - shorts are available if `projects/<slug>/shorts/shorts-plan.md` exists OR `projects/<slug>/output/shorts/*.mp4` exists
 - if shorts are available, read `projects/<slug>/shorts/shorts-plan.md` (and `02-script.md` for the source-section wording) so each short's title, description, and thumbnail match its real content and source section
-- if no built shorts exist, package the main video only — do not invent shorts
+- if no built shorts exist, package the main video only - do not invent shorts
 
 This is the switch for the Shorts Packaging section below.
 
@@ -158,11 +158,11 @@ Create or update:
 projects/<slug>/output/thumbnails/
 ```
 
-Generate exactly `5` **locked title+thumbnail A/B pairs** for the main video. Each pair is one A/B test unit: thumbnail variant `N` always ships with title `N`. A/B title testing and A/B thumbnail testing run together — you never test a title against a thumbnail it was not paired with.
+Generate exactly `5` **locked title+thumbnail A/B pairs** for the main video. Each pair is one A/B test unit: thumbnail variant `N` always ships with title `N`. A/B title testing and A/B thumbnail testing run together - you never test a title against a thumbnail it was not paired with.
 
 Each of the `5` pairs must have:
 
-- pair number (`1`-`5`) — this is the stable key that binds the title and the thumbnail
+- pair number (`1`-`5`) - this is the stable key that binds the title and the thumbnail
 - the paired **title** (the click promise in words; names the hidden logic)
 - variant name + style direction (the thumbnail)
 - image path under `output/thumbnails/` or generation status
@@ -191,7 +191,7 @@ Write the prompts as a `## Thumbnail Prompts` section INSIDE `projects/<slug>/ou
 
 - each variant is a SELF-CONTAINED block the user can paste alone (no cross-references needed to generate)
 - ChatGPT/DALL·E has no separate negative-prompt field, so fold the avoid-list INTO the prompt as `Do NOT include: ...`
-- assume the user attaches the WIT neutral pose (`.agents/_shared/assets/wit/poses/wit-pose-neutral-front.png`) as the reference image; open each prompt with "use the cartoon character in the attached reference image as WIT — keep his art style, only change his pose/expression"
+- assume the user attaches the WIT neutral identity (`.agents/_shared/assets/wit/poses/_origin_.png`) as the reference image; open each prompt with "use the cartoon character in the attached reference image as WIT - keep his art style, only change his pose/expression"
 - for the two comparison variants, tell the user to ALSO attach an approved comparison thumbnail (e.g. `projects/1-why-cheap-products-keep-getting-worse/output/thumbnails/main-pair-2.png`) as a layout reference
 - include a short how-to (attach images, ask for 16:9 1280x720, re-roll line if WIT drifts) and the A/B generate-first order
 - name each output file by pair number (`main-pair-1.png` … `main-pair-5.png`) and the reject rule (no hair / shirt-tie / shoes = off-model WIT)
@@ -235,7 +235,7 @@ When shorts are available, also create, for **each** short:
 - one **description** (1-3 lines reinforcing the short's single idea + up to `3` meaningful hashtags; no CTA to the long video, matching the channel's standalone-short rule)
 - one **thumbnail** for the short's grid/cover: a `1080x1920` portrait prompt that reuses the short's source-section real photos + WIT pose + the short's own payoff/hook beat, saved (or prompt-only) under `output/thumbnails/` as `short-0N.png`, with its prompt added to the `## Thumbnail Prompts` section of `output/packaging.md`
 
-Shorts use **one** title + description + thumbnail each — not the `5`-way locked A/B pairs (that test is for the main video only). Pull each short's wording and source section from `shorts/shorts-plan.md` and `02-script.md` so the packaging matches what was actually built. Never edit the shorts themselves from this skill.
+Shorts use **one** title + description + thumbnail each - not the `5`-way locked A/B pairs (that test is for the main video only). Pull each short's wording and source section from `shorts/shorts-plan.md` and `02-script.md` so the packaging matches what was actually built. Never edit the shorts themselves from this skill.
 
 ## Packaging Rules
 
@@ -274,8 +274,7 @@ Thumbnail concepts should use:
 
 Use the current channel WIT direction from `.agents/_shared/channel/brand-system.md`.
 
-As of `2026-06-07`, the old `original-wit-24` pose set has been removed and the current draft WIT pose set lives in `.agents/_shared/assets/wit/poses/`.
-Until the user approves it as final, thumbnail prompts should follow the draft thumbnail-WIT style from the restored `Why Cheap Products Keep Getting Worse` thumbnail direction.
+As of `2026-06-28`, the old `wit-pose-*` (24) set has been removed and replaced by the current WIT pose set in `.agents/_shared/assets/wit/poses/` (catalog `pose.md`; neutral identity `_origin_.png`; poses are green-screen #00B140, keyed at render). Thumbnail prompts should attach `_origin_.png` and follow the WIT art style described there.
 
 Every thumbnail image prompt must include a WIT block like this, adapted only for pose and emotion:
 
@@ -293,7 +292,7 @@ Do not use removed `original-wit-24` details such as messy black hair, white shi
 
 Generated thumbnails should be scored down or rejected if WIT does not match the approved thumbnail-WIT style for the current video.
 
-The `5` generated thumbnail variants use a FIXED structure — two comparison thumbnails plus three full-drama single scenes — while staying inside the channel identity:
+The `5` generated thumbnail variants use a FIXED structure - two comparison thumbnails plus three full-drama single scenes - while staying inside the channel identity:
 
 1. `Comparison A` (split-screen): the core before/after of the video's thesis (e.g. `OWN` vs `RENT`, `REAL` vs `FAKE`, `THEN` vs `NOW`). Same object two ways.
 2. `Comparison B` (split-screen): a second contrast on a different beat (e.g. time-based `DAY 1` vs `DAY 8`, promise vs reality, cheap vs true cost).
@@ -303,15 +302,15 @@ The `5` generated thumbnail variants use a FIXED structure — two comparison th
 
 Comparison style (variants 1-2): a vertical divider down the middle; cool-blue "good/before" half vs warm-orange "bad/after" half; a small black angled tag in each top corner naming each side; one big red-and-white handwritten center hook with a rough red underline; a small shocked WIT standing on the divider with little shock strokes. This mirrors the approved `why-cheap-products-keep-getting-worse` `TODAY vs LATER` comparison thumbnail.
 
-Drama bar (ALL variants) — default to MAX, not medium. Every variant should aim for SHOCK, CLICKBAIT, RAGE-BAIT ENERGY, INSANE, and CURIOSITY:
+Drama bar (ALL variants) - default to MAX, not medium. Every variant should aim for SHOCK, CLICKBAIT, RAGE-BAIT ENERGY, INSANE, and CURIOSITY:
 
 - WIT expression cranked all the way up: bulging eyes, jaw ripped wide open, mid-scream, sweat spraying, trembling, comic shock-burst lines, hot red rage glow. Push past "surprised" into screaming meltdown / furious-betrayed / hypnotized-maniac.
 - ONE huge shocking element, oversized: a giant red number, an exploding/overflowing meter, an avalanche of objects, an erupting wallet, an impossible total.
 - Aggressive red markup: thick red circles, fat red arrows, violent double-underlines, jagged "lightning-crack" dividers, glowing danger edges.
 - Tight crop so WIT/emotion/number reads instantly at tiny mobile size.
-- Hooks phrased as short outrage+curiosity QUESTIONS (`A TRICK?!`, `ROBBED?!`, `$10?!`, `FREE?!`, `SCAM?!`) — `1-3` words, big and rough.
+- Hooks phrased as short outrage+curiosity QUESTIONS (`A TRICK?!`, `ROBBED?!`, `$10?!`, `FREE?!`, `SCAM?!`) - `1-3` words, big and rough.
 
-Honesty line that keeps it rage-bait ENERGY without tripping a hard-fail (do NOT cross these — they are hard-fails): keep numbers real (illustrative figures from the research), keep hooks as curiosity QUESTIONS rather than asserted lies, and never add fake urgency (`ONLY TODAY`), fabricated stats, or hateful targeting of a real brand/person. The goal: "feels like rage-bait, isn't a lie."
+Honesty line that keeps it rage-bait ENERGY without tripping a hard-fail (do NOT cross these - they are hard-fails): keep numbers real (illustrative figures from the research), keep hooks as curiosity QUESTIONS rather than asserted lies, and never add fake urgency (`ONLY TODAY`), fabricated stats, or hateful targeting of a real brand/person. The goal: "feels like rage-bait, isn't a lie."
 
 Do not make the five variants random. They should test different click hypotheses for the same video promise. A loud single-face shock-zoom that does NOT repeat the title text often makes the strongest recommended thumbnail (best title-thumbnail contrast).
 
@@ -354,7 +353,7 @@ Do not include product promotion unless the project explicitly requires it and t
    - chapters from the real video timing when available, else from the research/script promise, else mark `draft until script`
    - tags, keywords, hashtags (max `3`), links, and pinned comment idea
 11. If shorts are available, run Shorts Packaging: one title + description + thumbnail per short (save short thumbnails as `output/thumbnails/short-0N.png`).
-12. Write or update the single `projects/<slug>/output/packaging.md` — the A/B pairs, the description package, the `## Thumbnail Prompts` section (main pairs + per-short prompts folded in), the scorecard, and the shorts blocks when shorts exist.
+12. Write or update the single `projects/<slug>/output/packaging.md` - the A/B pairs, the description package, the `## Thumbnail Prompts` section (main pairs + per-short prompts folded in), the scorecard, and the shorts blocks when shorts exist.
 13. Run the Post-Packaging Notes Gate.
 14. Respond with the Chat Response Format, including every main pair with its copyable prompt block and any per-short packaging.
 15. Stop before `upload` or `learning`.
@@ -364,11 +363,11 @@ Do not include product promotion unless the project explicitly requires it and t
 Everything goes into the single `projects/<slug>/output/packaging.md`. Thumbnail images live beside it under `output/thumbnails/`. There is no `03-packaging.md` and no `PROMPTS.md`.
 
 ````markdown
-# Packaging — `<video title>`
+# Packaging - `<video title>`
 
 Source skill: `packaging`
 Generated from: `00-topic-intake.md`, `01-research-pack.md`, `02-script.md`
-Shorts included: `<yes — N shorts / no>`
+Shorts included: `<yes - N shorts / no>`
 
 ## Packaging Brief
 
@@ -382,7 +381,7 @@ Shorts included: `<yes — N shorts / no>`
 
 ## Main Video
 
-### A/B Pairs (locked — title N ships with thumbnail N)
+### A/B Pairs (locked - title N ships with thumbnail N)
 
 | Pair | Title | Thumbnail style | Label | WIT emotion | Visual contradiction | Image / Path | WIT consistency | Score | Decision |
 |---:|---|---|---|---|---|---|---|---:|---|
@@ -429,7 +428,7 @@ Recommended A/B order: `<e.g. 4 -> 3 -> 1 -> 2 -> 5>`
 
 (Only when built shorts exist; one block per short. Omit this whole section if no shorts.)
 
-### Short 01 — `<short name>` (source: Section `<n>`)
+### Short 01 - `<short name>` (source: Section `<n>`)
 
 - Thumbnail: `output/thumbnails/short-01.png`
 - Title: `<title>`
@@ -448,7 +447,7 @@ Repeat per short (`Short 02`, `Short 03`, ...).
 
 Self-contained, ready-to-paste generation prompts. Keep each main prompt under its pair number with the paired title, so a title and its thumbnail are never separated.
 
-### Pair 1 — Title: `<title 1>` · `main-pair-1.png`
+### Pair 1 - Title: `<title 1>` · `main-pair-1.png`
 
 ```text
 <full reusable prompt, WIT identity block, avoid-list folded in as "Do NOT include: ..."> 
@@ -499,9 +498,9 @@ Done. I created/updated:
 
 Status: `<status>`
 
-Shorts packaged: `<yes — N shorts / no>`
+Shorts packaged: `<yes - N shorts / no>`
 
-Recommended pair: `Pair <n>` — title `<title>` + thumbnail `<one-line concept>`
+Recommended pair: `Pair <n>` - title `<title>` + thumbnail `<one-line concept>`
 
 Packaging score: `<score>/100`
 
@@ -512,14 +511,14 @@ Description brief:
 - <line 2>
 - <line 3>
 
-Main video — A/B pairs:
+Main video - A/B pairs:
 
 | Pair | Title | Thumbnail | Label | Score | Decision |
 |---:|---|---|---|---:|---|
 
 Pair prompts:
 
-### Pair 1 — Title: `<title 1>` · Thumbnail: `<style>`
+### Pair 1 - Title: `<title 1>` · Thumbnail: `<style>`
 
 Image / path: `output/thumbnails/main-pair-1.png` (or prompt-only)
 
@@ -552,7 +551,7 @@ A packaging pass is ready when:
 - title and thumbnail within a pair do different jobs and do not repeat each other's words
 - each thumbnail has a reusable prompt that names its paired title
 - the five thumbnails follow the fixed structure: pairs 1-2 are split-screen comparisons, pairs 3-5 are full-drama single scenes
-- the thumbnail prompts are folded into the `## Thumbnail Prompts` section of `output/packaging.md` (self-contained ChatGPT prompts, negatives folded in, reference-image WIT, labelled by pair number) — there is no separate `PROMPTS.md`
+- the thumbnail prompts are folded into the `## Thumbnail Prompts` section of `output/packaging.md` (self-contained ChatGPT prompts, negatives folded in, reference-image WIT, labelled by pair number) - there is no separate `PROMPTS.md`
 - thumbnail images are saved under `output/thumbnails/`, not `assets/thumbnails/`, and there is no `03-packaging.md`
 - the `5` pairs are meaningfully different for A/B testing and are scored as units in a table
 - every thumbnail prompt uses the current approved or pending WIT direction and is checked for WIT consistency before recommendation

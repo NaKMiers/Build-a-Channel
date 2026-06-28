@@ -1,4 +1,4 @@
-# Section 5 The Free Trial Is A Countdown — Design (2026-06-23, Section 1 template)
+# Section 5 The Free Trial Is A Countdown - Design (2026-06-23, Section 1 template)
 
 Video: `Why Everything Is a Subscription Now`
 Composition: `Section05Trial` · 1920x1080 · duration `53.867s` · port `1005`
@@ -8,7 +8,7 @@ Composition: `Section05Trial` · 1920x1080 · duration `53.867s` · port `1005`
 - A feel free (0–6.0): pink gift box (free = a gift). `THE GENIUS PART: make it feel FREE` + CSS `FREE` trial splash. No WIT.
 - B pop card (6.0–11.9): keyboard desk. `just pop in your card` + CSS credit card; cream aside `strangers love holding your card`; WIT deadpan-side-eye RIGHT.
 - C countdown (11.9–21.0): hourglass. `free for 7 days…` + `FREE TRIAL 00:00` → flips to red `NOW CHARGING $2.99/mo`; `"free" quietly becomes a payment`; WIT hidden-fee-panic LEFT.
-- D forget (21.0–30.7): everyday desk (notebook + coffee). A `Day 7 — cancel?` notification appears then fades (ignored); `forgetting is the DESIGN`; `small · fuzzy · life is loud`; WIT thinking RIGHT.
+- D forget (21.0–30.7): everyday desk (notebook + coffee). A `Day 7 - cancel?` notification appears then fades (ignored); `forgetting is the DESIGN`; `small · fuzzy · life is loud`; WIT thinking RIGHT.
 - E ghost (30.7–39.5): wallet + cash. `it just continues. forever.` + 3 translucent recurring `−$2.99/mo` ghost charges; cream aside `"rent free." …no.`. No WIT.
 - F statement (39.5–53.867): piggy / finances. `open your statement` + CSS bank statement; a RED RING around the exact `?? UNKNOWN −$3.00` row; `$3. every month. a thing you can't name.`; EXPIRED banner `your free trial of FINANCIAL AWARENESS has expired`; WIT holding-receipt-evidence LEFT.
 

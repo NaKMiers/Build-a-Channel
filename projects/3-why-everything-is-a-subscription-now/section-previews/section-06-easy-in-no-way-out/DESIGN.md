@@ -1,4 +1,4 @@
-# Section 6 Easy In, No Way Out — Design (2026-06-23, Section 1 template)
+# Section 6 Easy In, No Way Out - Design (2026-06-23, Section 1 template)
 
 Video: `Why Everything Is a Subscription Now`
 Composition: `Section06Easy` · 1920x1080 · duration `53.013s` · port `1006`
@@ -16,7 +16,7 @@ Composition: `Section06Easy` · 1920x1080 · duration `53.013s` · port `1006`
 stopwatch (time) → wooden maze (the ordeal) → contract (fine print) → maze-dark → stopwatch-dark. The maze
 and stopwatch are the section's two controlling metaphors; they return once each as deliberate darker
 callbacks (distinct grade + CSS + WIT) because clean distinct photos for the abstract tail beats weren't
-sourceable — documented + swappable. 2nd filenames keep lint clean.
+sourceable - documented + swappable. 2nd filenames keep lint clean.
 
 ## Voice / timing
 

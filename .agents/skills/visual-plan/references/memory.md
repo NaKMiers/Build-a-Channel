@@ -11,8 +11,8 @@ Use this file for section-selection behavior, section visual-plan output shape, 
 > ONE master plan + synced per-section copies; per-sentence scenes; an extreme-detail scene spec
 > (composition, elements, mascot pose, on-screen text, emotion, insight, linkage, show-as-you-say
 > timing, sound, color); and an ASSET list per scene (type generate/browse/screenshot/reuse, filename,
-> layout). The plan DESCRIBES only — it never writes image-generation prompts (that is now
-> `visual-implement`) — and imagination is unbounded (within copyright/law/YouTube community standards),
+> layout). The plan DESCRIBES only - it never writes image-generation prompts (that is now
+> `visual-implement`) - and imagination is unbounded (within copyright/law/YouTube community standards),
 > so it may invent new poses/scenes, not just reuse the pose library. Asset creation moved to
 > `visual-implement`; render now COMPOSITES pre-made assets.
 >
@@ -26,7 +26,7 @@ Use this file for section-selection behavior, section visual-plan output shape, 
 ## Current Skill Standard
 
 - Run after `voiceover`.
-- Require non-empty `00-topic-intake.md`, `01-research-pack.md`, `02-script.md`, and the voiceover index (`03-voiceover.md`; legacy `04-voiceover.md` — resolve by suffix per `.agents/rules/video-workflow.md`).
+- Require non-empty `00-topic-intake.md`, `01-research-pack.md`, `02-script.md`, and the voiceover index (`03-voiceover.md`; legacy `04-voiceover.md` - resolve by suffix per `.agents/rules/video-workflow.md`).
 - Packaging is outside the main pipeline and must not block visual planning.
 - If voiceover is older than script, stop and ask for `voiceover`.
 - Require matching section voiceover output for each selected section.
@@ -468,17 +468,17 @@ no; this is visual-plan execution behavior, not a channel-wide creative rule.
 Classification: `Visual plan lesson`
 
 Context:
-Section 6 of `why-cheap-products-keep-getting-worse` shipped several CSS-only / flat-gradient scene bases (cost, ownership-lock, future-label) plus a sterile screwdrivers-on-white base. Reviewers rejected each as "no background / doesn't have an image to describe the voice / looks bad." Later review/fix passes had to source real Wikimedia photos (padlock, euro money, phone-on-table, opened-phone repair bench) pass by pass — work that should have been decided in the visual plan. Brand/people traps surfaced: a CC0 desk photo had a recognizable MacBook, a battery showed a Motorola brand, and the sharpest repair photos contained real people.
+Section 6 of `why-cheap-products-keep-getting-worse` shipped several CSS-only / flat-gradient scene bases (cost, ownership-lock, future-label) plus a sterile screwdrivers-on-white base. Reviewers rejected each as "no background / doesn't have an image to describe the voice / looks bad." Later review/fix passes had to source real Wikimedia photos (padlock, euro money, phone-on-table, opened-phone repair bench) pass by pass - work that should have been decided in the visual plan. Brand/people traps surfaced: a CC0 desk photo had a recognizable MacBook, a battery showed a Motorola brand, and the sharpest repair photos contained real people.
 
 Lesson:
-Every persistent big scene must name a real, descriptive image base (or a justified self-made base) — never a bare gradient/empty color. The plan must give the base's search terms, a fallback, and a one-line "why it describes this voice beat" so render can source/grade it without guessing. Apply a hard selection rubric: describes the beat, brand-free, people-free (no-face channel), non-sterile/in-context, distinct from adjacent scenes, palette-clean (no gray wash), reads behind overlays. Verify on the pixels, not the filename, and record creator/license.
+Every persistent big scene must name a real, descriptive image base (or a justified self-made base) - never a bare gradient/empty color. The plan must give the base's search terms, a fallback, and a one-line "why it describes this voice beat" so render can source/grade it without guessing. Apply a hard selection rubric: describes the beat, brand-free, people-free (no-face channel), non-sterile/in-context, distinct from adjacent scenes, palette-clean (no gray wash), reads behind overlays. Verify on the pixels, not the filename, and record creator/license.
 
 Apply next time:
 - for each big scene, plan a real base + search terms + fallback; reserve self-made CSS for objects/labels/overlays, not the background
 - use the Wikimedia Commons API recipe (curl + `node -e`; no python/jq on this box) and capture `Artist`/`License`/`descriptionurl`
 - reject brand/logo/branded-device images and real-people images for direct-use backgrounds even when sharper; keep them `inspiration only`
 - avoid objects-on-white sterile stock; prefer textured lived-in scenes
-- note for render: `object-fit: cover` from a frame-width source only crops vertically, so a side-edge element can't be cropped away — pick a different image
+- note for render: `object-fit: cover` from a frame-width source only crops vertically, so a side-edge element can't be cropped away - pick a different image
 - this is now codified in `visual-plan/SKILL.md` (Real Scene Base Rule + Image Sourcing Recipe And Selection Rubric)
 
 Promote to shared memory:
@@ -489,7 +489,7 @@ no; keep as visual-plan execution behavior. The sourcing recipe could move to `_
 Classification: `Visual plan lesson`
 
 Context:
-Section 6's timing reviews (ownership-lock spoken at 12.64s but planned at 16.8s; list items dumped at once) were partly a planning gap — the cue timeline used round/estimated times and did not call out per-item reveals, so render had nothing precise to build to even though `section-06-word-timings.json` existed.
+Section 6's timing reviews (ownership-lock spoken at 12.64s but planned at 16.8s; list items dumped at once) were partly a planning gap - the cue timeline used round/estimated times and did not call out per-item reveals, so render had nothing precise to build to even though `section-06-word-timings.json` existed.
 
 Lesson:
 When the section has a `voiceover/section-XX-*/section-XX-word-timings.json`, the cue-state timeline should cite real word timestamps, not estimates, and should explicitly mark which multi-element beats and on-screen lists (policy rows, checklist questions, quotes) reveal item-by-item on each spoken word. That removes the timing guesswork that caused the render rework.
@@ -516,7 +516,7 @@ clean CC0 real-world stock photos sourced via the **Openverse API** (warm work d
 minimal desk), composited with WIT + handwritten overlays.
 
 Lesson:
-For real-world photo bases, query the **Openverse API first** — it is scriptable without a key,
+For real-world photo bases, query the **Openverse API first** - it is scriptable without a key,
 works when search engines are blocked, and surfaces clean modern CC0 stock (StockSnap, rawpixel)
 that reads far better than raw Wikimedia Commons (which skews dingy, antique, or branded for
 everyday objects). Wikimedia Commons is the secondary source. Always VIEW candidates and reject
@@ -526,7 +526,7 @@ Apply next time:
 - `curl https://api.openverse.org/v1/images/?q=...&license_type=commercial,modification&size=large`, parse with `node -e`
 - prefer CC0 + `source` stocksnap/rawpixel + width >= 900; record source in ATTRIBUTION.md
 - view every pick; reject brands/people even when sharper
-- no image generator is connected — don't promise generated art; if clean photos are rejected, offer the "user drops in files" path
+- no image generator is connected - don't promise generated art; if clean photos are rejected, offer the "user drops in files" path
 - channel taste signal: dingy stock AND code-drawn CSS bases both get rejected; clean modern CC0 photos are accepted
 - the SKILL.md "Image Sourcing Recipe And Selection Rubric" now documents the Openverse-first recipe
 
@@ -546,7 +546,7 @@ you cannot see").
 
 Lesson:
 A reused/identical base across two scenes in the same short section reads as a repeated image, even
-when intended as a callback — and reusing a prior section's base compounds it. Default to a DISTINCT
+when intended as a callback - and reusing a prior section's base compounds it. Default to a DISTINCT
 base per scene. Only reuse a base for a true payoff callback the viewer will consciously recognize
 (e.g. S1's hook motif returning at the S1 payoff), and even then vary the grade/overlay. Across
 sections, prefer fresh imagery over re-running an earlier section's base.
@@ -565,13 +565,13 @@ Classification: `Visual plan lesson`
 
 Context:
 Section 3 (45s) first shipped with 3 big scenes: the trophy held ~15.7s and the meeting room held
-~19s. The user said the section is "pretty" but wanted more scenes — specifically a new scene after
-"...important" (splitting the trophy beat) and a second scene for the long meeting-room stretch —
+~19s. The user said the section is "pretty" but wanted more scenes - specifically a new scene after
+"...important" (splitting the trophy beat) and a second scene for the long meeting-room stretch -
 and noted the WIT poses were "not vary" (deadpan-side-eye repeated). Fixed by expanding to 5 scenes
 (trophy → coffee chat → beach → meeting → wall clock) and using 6 distinct poses.
 
 Lesson:
-For longer sections, scale big-scene count to runtime, not just idea count — a single base holding
+For longer sections, scale big-scene count to runtime, not just idea count - a single base holding
 ~15-20s reads as static even with cue changes. Target a fresh base roughly every ~6-10s of talky
 content. And rotate WIT poses: don't reuse the same pose (esp. deadpan-side-eye) twice in a section;
 pull from the wider library (talking-front, confused, suspicious, facepalm, tiny-defeated,
@@ -597,11 +597,11 @@ fullhd)... you're repeating many scenes... I need more scenes." Rebuilt with 5 d
 object photos.
 
 Lesson:
-Three compounding mistakes to avoid: (1) low-res bases — StockSnap (~960px) and rawpixel
+Three compounding mistakes to avoid: (1) low-res bases - StockSnap (~960px) and rawpixel
 (~1024–1300px) are BELOW full-HD; when full-HD is needed, use Wikimedia `iiurlwidth=1920` or Flickr
-`_k`(2048)/`_o`. (2) vague/abstract bases — a wireframe sketch reads as "poor/vague"; use CLEAR object
+`_k`(2048)/`_o`. (2) vague/abstract bases - a wireframe sketch reads as "poor/vague"; use CLEAR object
 metaphors (red emergency button = urgency, fire alarm = "every ping is an emergency", open fridge =
-"sad vegetable", blank-screen phone + CSS UI = the apps). (3) too few scenes / repeated images — give
+"sad vegetable", blank-screen phone + CSS UI = the apps). (3) too few scenes / repeated images - give
 a ~42s section ~5 scenes, each a DISTINCT image; a reused base is only OK as a non-consecutive callback.
 
 Apply next time:
@@ -624,7 +624,7 @@ the email/chat/task/calendar beats, plus a chat conversation instead of a blank 
 default is "no real app logos."
 
 Lesson:
-The no-logos rule is a DEFAULT, not absolute — the channel owner can explicitly approve real brand
+The no-logos rule is a DEFAULT, not absolute - the channel owner can explicitly approve real brand
 logos for a section (the "unless specifically approved" clause). When they do, use the real icons.
 Source app logos from Wikimedia Commons (rasterize SVG→PNG via `iiurlwidth`); they exist for Gmail,
 Messenger, To Do, Google Calendar, WhatsApp, Slack, and a thumbs-up emoji (Android/Noto). Record
@@ -633,14 +633,14 @@ them in ATTRIBUTION as trademarks used editorially with owner approval.
 Build technique that worked: app UI is best built in CSS (iPhone frame + notification cards; an
 app-icon grid with red badges; a Messenger-style chat with bubbles + a thumbs-up icon), with the
 real icon PNGs dropped in. CRITICAL: put accumulating UI (notification cards, badges, chat bubbles)
-INSIDE the scene div (so it persists and is clipped to the phone/tiles), not in short cue clips —
+INSIDE the scene div (so it persists and is clipped to the phone/tiles), not in short cue clips -
 cue-clip elements vanish when the cue ends and broke continuity. The 👍 emoji glyph does NOT render
 in the snapshot Chromium (font fallback to a coin glyph); use a thumbs-up PNG via `<img>` instead.
 
 Apply next time:
 - treat no-logos as a default the owner can waive per-section; if waived, use real icons from Commons
 - build app/notification/chat UI in CSS with real icon PNGs; keep accumulating UI in the scene div
-- never rely on emoji glyphs in HyperFrames snapshots — use an emoji/icon PNG
+- never rely on emoji glyphs in HyperFrames snapshots - use an emoji/icon PNG
 - record trademark logos in ATTRIBUTION with the editorial/owner-approved note
 
 Promote to shared memory:
@@ -657,13 +657,13 @@ to the skills." This is now a STANDING preference, not a one-off.
 
 Lesson:
 For every section going forward, when the script names or depicts real apps/products/screens, prefer
-REAL recognizable UI to illustrate it — phone/iPhone mockups, real app icons (Gmail, Messenger,
+REAL recognizable UI to illustrate it - phone/iPhone mockups, real app icons (Gmail, Messenger,
 Microsoft To Do, Google Calendar, WhatsApp, Slack, etc.), notification lists, app grids with badges,
 chat conversations. This overrides the old "avoid real logos" default. Use editorially (depict, not
 endorse); keep private data out; build the screens in CSS with real icon PNGs from Wikimedia Commons;
 keep accumulating UI inside the scene div; use emoji/icon PNGs (not emoji glyphs).
 
-Promoted to shared memory: YES — recorded in `_shared/channel/brand-system.md` ("Real-UI Illustration"),
+Promoted to shared memory: YES - recorded in `_shared/channel/brand-system.md` ("Real-UI Illustration"),
 `_shared/systems/visual-production.md`, and `_shared/channel/channel-foundation.md`. The SKILL.md
 Image Sourcing section also carries the technique.
 
@@ -684,7 +684,7 @@ behind every scene, then build the metaphor and the messages in CSS on top:
 - the "requests/messages" beats as real-UI chat (1:1 + group) floated as a `.screen` on a real desk,
   with a real app icon (Messenger) used editorially
 Pick photo bases that literally echo a line (an empty meeting room for "this meeting could've been a
-message"; a wall of sticky notes for "really are overloaded") — it makes an abstract section concrete.
+message"; a wall of sticky notes for "really are overloaded") - it makes an abstract section concrete.
 
 Apply next time:
 - abstract section → real photo base per scene + CSS metaphor/labels on top (never a bare gradient)
@@ -707,19 +707,19 @@ got a real red-curtain photo; (3) S7 "WIT too low / covered by the frame" then "
 re-arrange other items if it covers content."
 
 Lesson (now the default, codified in SKILL.md + shared):
-- EVERY scene needs a real, people-free photo base — including real-UI scenes (chat/Meet/Trello/
+- EVERY scene needs a real, people-free photo base - including real-UI scenes (chat/Meet/Trello/
   spreadsheet/calendar) and stylized/CSS constructs (shield, stage). Float the UI as a `.screen` on a
   real desk; back a CSS construct with a real photo. All-CSS-on-gradient = "not lively," gets rejected.
   Pick a base that literally echoes the line. Hands-at-keyboard photos are OK (no-face allows hands).
 - Plan WIT BIG (`1/3`–`1/2` frame) AND HIGH (head+torso inside frame, only legs cropped). If a big WIT
-  would cover content, the PLAN relocates the other items (opposite side/top/bottom) — never shrink or
+  would cover content, the PLAN relocates the other items (opposite side/top/bottom) - never shrink or
   lower WIT to fit. State both WIT's region and the cleared zone for labels in the cue plan.
 - Real-UI illustration remains the standing preference (see the 2026-06-22 STANDING PREFERENCE entry).
 
 Apply next time: assume real photo base per scene by default; assume WIT big+high by default; design
 label/UI positions AROUND a big high WIT from the start so render doesn't have to rescue collisions.
 
-Promote to shared memory: yes — added to `_shared/systems/visual-production.md` (real-bg-behind-every-scene
+Promote to shared memory: yes - added to `_shared/systems/visual-production.md` (real-bg-behind-every-scene
 + WIT size/anchor) and the SKILL.md files; brand-system already carries the real-UI preference.
 
 ### 2026-06-23 - Vivid object photos + dynamic WIT + VARIED idea-devices (not repeated label boxes)
@@ -731,10 +731,10 @@ Context:
 dim home-office desk), the milder WIT poses (suspicious/shocked/deadpan), and the SAME cream
 handwritten rectangle label box for nearly every on-screen idea. Owner rejected it: "illustrative
 images not suitable, mundane and boring… WIT poses are boring… the rectangle boxes show up boring and
-repeat, not creative — try another way to demonstrate ideas, make it vary… remake completely." The
+repeat, not creative - try another way to demonstrate ideas, make it vary… remake completely." The
 accepted remake: vivid on-topic OBJECT photos (a pile of coins, a pile of cash, padlocks on a gate),
 DYNAMIC expressive WIT (price-tag-suspicion, hidden-fee-panic, holding-phone-panic, trapped-by-app-screen),
-and VARIED idea-demonstration devices — a colorful app-tile grid, a jumping "12+" counter, notification
+and VARIED idea-demonstration devices - a colorful app-tile grid, a jumping "12+" counter, notification
 charge toasts, a free-trial countdown that flips to "$/mo", a full-screen EXPIRED system modal, and a
 padlock-wall with bold kinetic payoff type. Zero cream label boxes.
 
@@ -743,24 +743,24 @@ Lesson (apply to ALL future sections):
   "money leaving", padlocks for "locked/rent", a glowing screen, etc.) over calm desks/hands. If clean
   topical photos are scarce, pivot to a strong concrete object (money, lock) + the owner's loved CSS real-UI.
 - WIT: pick the most EXPRESSIVE/funny pose for the beat (panic, hidden-fee-panic, trapped, betrayed,
-  empty-wallet, receipt-attacked, facepalm) — not the mild suspicious/neutral/deadpan defaults. NOTE:
-  `wit-pose-money-panic.png` has a baked BLACK background (not transparent) — do not use it on photo scenes.
+  empty-wallet, receipt-attacked, facepalm) - not the mild suspicious/neutral/deadpan defaults. NOTE:
+  current WIT poses ship on a flat green #00B140 screen - chroma-key the green at render; always VIEW a pose first.
 - TEXT/IDEA DEVICES: do NOT show every idea in the same handwritten cream rectangle. VARY the device per
-  beat — app-grid tiles, a big kinetic number/counter, notification toasts, a countdown timer, a system
+  beat - app-grid tiles, a big kinetic number/counter, notification toasts, a countdown timer, a system
   error/EXPIRED banner, badges, a padlock wall, bold kinetic headline type, a chat bubble, a stamp. Reserve
   the cream label for the occasional handwritten aside, not the default for everything.
 - WIT VARIETY ACROSS SCENES (owner-confirmed 2026-06-23, follow-up): do NOT park WIT on the SAME side every
   scene with the text always on the opposite-same side. VARY WIT per scene in side (left / center / right),
   scale, vertical anchor, AND pose; flip the text/UI to whichever side WIT is not using. Across a section,
   aim for distinct WIT sides (e.g. scene1 left, scene2 center, scene3 right) and visibly different scales.
-  WIT stays GIANT (≈1/2 frame) and is the soul of each scene — rearrange the other items around it.
+  WIT stays GIANT (≈1/2 frame) and is the soul of each scene - rearrange the other items around it.
 
 Apply next time: plan 2-3 DISTINCT idea-devices per section; an expressive WIT pose per beat; a vivid
 object/real-UI base per scene; and a DIFFERENT WIT side+scale+pose per scene (never all-right/text-left).
 Treat "repeated identical label boxes" and "WIT always same side" as review failures to avoid up front.
 This Section-1 remake is the STANDING template for all remaining sections of this video and future videos.
 
-Promote to shared memory: yes — this is a channel-wide creative-direction signal; add a short note to
+Promote to shared memory: yes - this is a channel-wide creative-direction signal; add a short note to
 `_shared/systems/visual-production.md` (vivid object imagery + varied idea-devices + expressive WIT) on the
 next shared-memory pass. Pairs with the standing Real-UI Illustration preference.
 
@@ -771,13 +771,13 @@ Classification: `Visual plan lesson`
 Context:
 `why-everything-is-a-subscription-now` Section 2 was remade "based on Section 1." The first S2 plan
 reused ONE phone base across 4 scenes (graded normal/warm/cool/dark) and leaned on repeated cream label
-boxes — the exact pattern the owner rejected for S1 v1. Remade to the standing template: 5 distinct vivid
+boxes - the exact pattern the owner rejected for S1 v1. Remade to the standing template: 5 distinct vivid
 object bases (glowing phone / vinyl crate / phone+paywall / padlock / device flat-lay), varied idea-devices
 per beat, and giant WIT varied per scene (facepalm R / thinking L / [breathe] / betrayed CENTER giant /
 suspicious R).
 
 Lesson:
-When the owner says "remake to Section 1," do NOT keep one base graded N ways — plan a DISTINCT vivid,
+When the owner says "remake to Section 1," do NOT keep one base graded N ways - plan a DISTINCT vivid,
 on-topic OBJECT base per scene. A base may return only as a NON-CONSECUTIVE callback, and that is exactly
 right when the script intends "the same device shown two ways" (here the phone returns for the RENT beat,
 re-dressed with a cool grade + paywall + RENT stamp, with the vinyl scene between). Pair it with varied
@@ -826,7 +826,7 @@ Classification: `Visual plan lesson`
 Context:
 `why-buy-1-get-1-beats-50-off` Section 5 v1 reused cash/coins/red-curtain bases from S1–S4 and stacked
 several text elements close together. Owner: "you reuse too many images from other sections, don't be
-lazy; texts are covered by many texts; this section looks so bad — do it again." The accepted remake
+lazy; texts are covered by many texts; this section looks so bad - do it again." The accepted remake
 sourced 5 FRESH distinct retail photos for the section (shelf price tags, red 50%/30% sale store,
 boutique mannequins, supermarket aisle, clothing shop) and used one clean hero device per beat with
 well-spaced, sequentially-timed text.
@@ -836,7 +836,7 @@ Two hard rules, applied up front:
 1. SOURCE FRESH BASES PER SECTION. Reusing the same money/coins/curtain photos across sections reads as
    lazy to this owner. Each section gets its own distinct, on-topic vivid bases (a few minutes of
    Openverse/Wikimedia sourcing). Money objects can recur thematically only with genuinely different
-   photos + distinct grades — never literally the same files section after section.
+   photos + distinct grades - never literally the same files section after section.
 2. ONE CLEAN HERO PER BEAT, NO STACKED TEXT. Don't pile multiple labels/cards close together. Per scene:
    one large hero device + at most one small caption, vertically well-spaced (≥~150px gaps), revealed
    SEQUENTIALLY on their words (not all at once), all on the half opposite the giant WIT. Use a
@@ -862,7 +862,7 @@ scrim for text contrast. The owner pushed back twice: "remove the dark area behi
 gradient that fades fully transparent before mid-frame.
 
 Lesson:
-This owner wants the vivid base photo to SHOW — a heavy dark overlay (full-frame radial or a strong
+This owner wants the vivid base photo to SHOW - a heavy dark overlay (full-frame radial or a strong
 half-darkening gradient) reads as "not good." Keep bases bright/visible. Get text readability from:
 strong text-shadow on bare labels, the device cards' own opaque backgrounds (chips/stamps/toasts/
 signs already carry contrast), and at most a faint edge vignette or a light text-side gradient. Never
@@ -871,7 +871,7 @@ a full-frame dark scrim, and never darken the half where WIT stands.
 Apply next time:
 - grade bases ~0.7–0.85 brightness; design text as cards/stamps with their own bg, or bold text +
   heavy shadow, so no big dark overlay is needed.
-- if a bare label sits on a busy/bright area, give THAT label a small local backing — don't darken the
+- if a bare label sits on a busy/bright area, give THAT label a small local backing - don't darken the
   whole frame.
 - SKILL Default Build Bar (BASES bullet) updated to this; the earlier "dark dramatic grade + heavy
   scrim" guidance is superseded.

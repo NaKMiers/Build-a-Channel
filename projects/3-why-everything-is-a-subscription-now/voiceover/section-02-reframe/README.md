@@ -18,7 +18,7 @@ Status:
 - learner clarity notes:
   - Authored in the approved Section 5 spacious pacing template (heavy `...` holds, `. .` staccato, trailing `...` setups).
   - Ellipsis on "...does this..." holds before the padlock reveal.
-  - `**bold**` joke markers and the `[beat]` cue are NOT spoken — stripped before TTS.
+  - `**bold**` joke markers and the `[beat]` cue are NOT spoken - stripped before TTS.
 
 ## Output Rule
 

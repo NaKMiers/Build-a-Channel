@@ -83,25 +83,25 @@
       <img class="wit ca-wit" data-layout-allow-overflow="" style="right:-150px; bottom:-360px; width:1320px;" src="./assets/wit/wit-pose-thinking.png" alt="">
     </div>
 
-    <!-- CUE B 6.52-10.70 : WIT left, devices right — THE thesis -->
+    <!-- CUE B 6.52-10.70 : WIT left, devices right - THE thesis -->
     <div id="cue-b" class="clip cue" data-start="6.52" data-duration="4.18" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
       <div class="hero white cb-price" style="left:1020px; top:230px; font-size:58px;">50% off cuts<br>the <span class="grn">PRICE</span></div>
       <div class="hero red cb-judge" style="left:1020px; top:470px; font-size:72px;">"free" cuts your<br>JUDGMENT</div>
       <img class="wit cb-wit" data-layout-allow-overflow="" style="left:-180px; bottom:-360px; width:1320px;" src="./assets/wit/wit-pose-suspicious.png" alt="">
     </div>
 
-    <!-- CUE C 10.72-25.46 : WIT right, devices left — inner accountant + caveat -->
+    <!-- CUE C 10.72-25.46 : WIT right, devices left - inner accountant + caveat -->
     <div id="cue-c" class="clip cue" data-start="10.72" data-duration="14.74" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
       <div class="magic cc-ask" style="left:110px; top:80px; width:780px;">one asks your brain a question…</div>
       <div class="calc cc-calc ui" style="left:120px; top:230px;"><div class="scr">5 − 4 = ?</div><div class="tag">your inner accountant</div></div>
-      <div class="calc off cc-calc2 ui" style="left:120px; top:230px;"><div class="scr">— — —</div><div class="tag">…switched off</div></div>
+      <div class="calc off cc-calc2 ui" style="left:120px; top:230px;"><div class="scr">- - -</div><div class="tag">…switched off</div></div>
       <div class="chip ok cc-ok1 ui" style="left:120px; top:470px;">✓ sometimes you DO want two</div>
       <div class="chip ok cc-ok2 ui" style="left:120px; top:560px;">✓ sometimes "free" really is free</div>
       <div class="stamp cc-off ui" style="left:120px; top:680px; font-size:44px;">but "free" switches it OFF</div>
       <img class="wit cc-wit" data-layout-allow-overflow="" style="right:-150px; bottom:-360px; width:1320px;" src="./assets/wit/wit-pose-talking-front.png" alt="">
     </div>
 
-    <!-- CUE D 25.48-33.82 : WIT right, devices left — 25% in a costume -->
+    <!-- CUE D 25.48-33.82 : WIT right, devices left - 25% in a costume -->
     <div id="cue-d" class="clip cue" data-start="25.48" data-duration="8.34" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
       <div class="sign free cd-sign" style="left:1080px; top:200px; width:640px;"><div class="top" style="font-size:54px;">BUY 1 GET 1<br>50% OFF</div></div>
       <div class="hero red cd-not" style="left:1080px; top:470px; font-size:50px;">not "free" anything…</div>
@@ -110,7 +110,7 @@
       <img class="wit cd-wit" data-layout-allow-overflow="" style="left:-180px; bottom:-360px; width:1320px;" src="./assets/wit/wit-pose-betrayed.png" alt="">
     </div>
 
-    <!-- CUE E 33.84-38.912 : WIT right, devices left — sign-off -->
+    <!-- CUE E 33.84-38.912 : WIT right, devices left - sign-off -->
     <div id="cue-e" class="clip cue" data-start="33.84" data-duration="5.072" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
       <div class="hero white ce-same" style="left:110px; top:170px; font-size:50px;">same shelf · same product</div>
       <div class="hero gold ce-diff" style="left:110px; top:280px; font-size:78px;">different GAME</div>
@@ -136,7 +136,7 @@
       tl.fromTo("#scene-d", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 25.48);
       tl.fromTo("#scene-e", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 33.84);
 
-      // SCENE A — why? two signs, different games
+      // SCENE A - why? two signs, different games
       hide("#cue-a .ca-free", 0); hide("#cue-a .ca-vs", 0); hide("#cue-a .ca-half", 0); hide("#cue-a .ca-games", 0);
       show("#cue-a .ca-q", 0, 0.30);
       show("#cue-a .ca-wit", 0, 0.60);
@@ -145,13 +145,13 @@
       smash("#cue-a .ca-vs", 0, 4.50, { scale: 0.4, opacity: 0 });
       smash("#cue-a .ca-games", 0, 4.96, { scale: 0.5, opacity: 0 }); // "playing different games"
 
-      // SCENE B — THE thesis: cuts the price vs cuts your judgment
+      // SCENE B - THE thesis: cuts the price vs cuts your judgment
       hide("#cue-b .cb-judge", 6.52);
       show("#cue-b .cb-wit", 6.52, 6.70);
       smash("#cue-b .cb-price", 6.52, 7.16, { y: 20, scale: 0.7, opacity: 0 });  // "fifty percent off cuts the price"
       smash("#cue-b .cb-judge", 6.52, 9.76, { scale: 0.5, opacity: 0 });          // "cuts your JUDGMENT"
 
-      // SCENE C — inner accountant computes, caveat, then switches off
+      // SCENE C - inner accountant computes, caveat, then switches off
       hide("#cue-c .cc-ok1", 10.72); hide("#cue-c .cc-ok2", 10.72); hide("#cue-c .cc-off", 10.72); hide("#cue-c .cc-calc2", 10.72);
       show("#cue-c .cc-ask", 10.72, 10.72);
       show("#cue-c .cc-wit", 10.72, 10.92);
@@ -163,7 +163,7 @@
       show("#cue-c .cc-calc2", 10.72, 23.36);
       smash("#cue-c .cc-off", 10.72, 23.36, { scale: 0.5, opacity: 0 });          // "switches off your inner accountant"
 
-      // SCENE D — buy1get1 50% off unmasks to 25% off in a costume
+      // SCENE D - buy1get1 50% off unmasks to 25% off in a costume
       hide("#cue-d .cd-not", 25.48); hide("#cue-d .cd-reveal", 25.48); hide("#cue-d .cd-costume", 25.48);
       show("#cue-d .cd-wit", 25.48, 25.62);
       pop("#cue-d .cd-sign", 25.48, 27.40);                           // "buy one get one 50% off"
@@ -171,7 +171,7 @@
       smash("#cue-d .cd-reveal", 25.48, 31.14, { scale: 0.5, opacity: 0 });        // "25% off"
       smash("#cue-d .cd-costume", 25.48, 32.64, { scale: 0.5, opacity: 0 });       // "in a costume"
 
-      // SCENE E — sign-off
+      // SCENE E - sign-off
       hide("#cue-e .ce-diff", 33.84); hide("#cue-e .ce-go", 33.84);
       show("#cue-e .ce-wit", 33.84, 34.00);
       show("#cue-e .ce-same", 33.84, 33.84);                          // "same shelf, same product"

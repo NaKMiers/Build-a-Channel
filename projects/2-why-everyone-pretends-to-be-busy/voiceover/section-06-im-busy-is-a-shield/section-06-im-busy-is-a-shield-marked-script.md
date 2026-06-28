@@ -1,4 +1,4 @@
-# Section 6 Marked Script — "I'm Busy" Is A Shield
+# Section 6 Marked Script - "I'm Busy" Is A Shield
 
 Video: `Why Everyone Pretends To Be Busy`
 
@@ -26,4 +26,4 @@ So people just say, I'm busy. And everyone nods. Because everyone else is also b
 Direction notes:
 - Important words to lift: shield, overloaded, only.
 - WIT here is protected and overwhelmed, not smug; `overloaded` corrects any "fake person" read.
-- The closing "Or pretending. Or both." is the dry section button — give each a short beat.
+- The closing "Or pretending. Or both." is the dry section button - give each a short beat.

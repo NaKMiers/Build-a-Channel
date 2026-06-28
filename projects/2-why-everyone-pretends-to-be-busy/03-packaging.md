@@ -85,7 +85,7 @@ WIT consistency = match to current pending channel WIT (white round-headed glass
 Recommended A/B order: `D -> C -> A -> B -> E`.
 
 WIT consistency note: every prompt below carries the channel WIT identity block. Because no
-images were generated this session, none can be confirmed on-model yet — when generated, score
+images were generated this session, none can be confirmed on-model yet - when generated, score
 down or reject any output whose WIT drifts from the white round-headed glasses style (no hair,
 no shirt/tie, no shoes).
 
@@ -102,7 +102,7 @@ Shared WIT identity block (included in every prompt):
 Use the channel character WIT in the approved thumbnail style: a simple white round-headed cartoon figure with a thick imperfect black outline, oversized black glasses, expressive eyebrows, small black dot eyes, a simple white body, and a clean bold silhouette. WIT should match the character style from the five restored `Why Cheap Products Keep Getting Worse` thumbnails. Do not give WIT hair, a shirt and tie, shoes, or any extra clothing detail.
 ```
 
-### Variant A: `Comparison — Looking Busy vs Real Work`
+### Variant A: `Comparison - Looking Busy vs Real Work`
 
 Prompt:
 
@@ -121,7 +121,7 @@ Use notes:
 - Tests the "explain the whole thesis in one glance" hypothesis: the praised side is the chaotic one.
 - Mirrors the approved `why-cheap-products` `TODAY vs LATER` comparison layout. Keep each half to ONE clear visual so it survives at mobile size.
 
-### Variant B: `Comparison — Full Day vs Nothing Done`
+### Variant B: `Comparison - Full Day vs Nothing Done`
 
 Prompt:
 
@@ -138,7 +138,7 @@ no real logos or brand UI, no photorealism, no tiny text, no paragraphs, no extr
 Use notes:
 
 - Second comparison on a different beat: time-in vs output ("your day is full but nothing moves").
-- Keep it visibly distinct from Variant A — this one is calendar-vs-empty-board, not chaos-vs-calm.
+- Keep it visibly distinct from Variant A - this one is calendar-vs-empty-board, not chaos-vs-calm.
 
 ### Variant C: `Calendar Cage Trap` (motif anchor)
 
@@ -175,8 +175,8 @@ no real app logos, no recognizable real app UI, no iOS/Android look-alike badges
 
 Use notes:
 
-- Recommended winner: a loud single-face shock-zoom that does NOT repeat any title word — best title-thumbnail contrast and reads instantly at tiny mobile size.
-- `99+` is an illustrative notification pile (honest), not a cited statistic. Keep the badge generic — no real app's exact badge style.
+- Recommended winner: a loud single-face shock-zoom that does NOT repeat any title word - best title-thumbnail contrast and reads instantly at tiny mobile size.
+- `99+` is an illustrative notification pile (honest), not a cited statistic. Keep the badge generic - no real app's exact badge style.
 
 ### Variant E: `Treadmill Metaphor`
 
@@ -195,7 +195,7 @@ no real logos or brand UI, no photorealism, no tiny text, no paragraphs, no extr
 Use notes:
 
 - Lands the payoff insight (activity ≠ value) as one bold image; good change-of-pace from the cage.
-- Slightly more abstract — keep the treadmill-of-calendar-pages reading instantly clear.
+- Slightly more abstract - keep the treadmill-of-calendar-pages reading instantly clear.
 
 ## Title-Thumbnail Packages
 
@@ -210,12 +210,12 @@ Use notes:
 ## Recommended Package
 
 - Title: `Why Everyone Pretends To Be Busy`
-- Thumbnail concept: Variant D — WIT's screaming face huge in frame next to one giant erupting red `99+` notification badge
+- Thumbnail concept: Variant D - WIT's screaming face huge in frame next to one giant erupting red `99+` notification badge
 - Thumbnail label: `99+?!`
 - Dominant object: giant `99+` notification badge
 - WIT emotion: maxed-out screaming panic
 - Visual contradiction: a pile of notifications treated like a real emergency (fake urgency feels like real work)
-- First 10 seconds payoff: WIT tries one real task, fake urgency ambushes him and the calendar closes like a cage — pays off the screaming-overwhelm promise within the hook
+- First 10 seconds payoff: WIT tries one real task, fake urgency ambushes him and the calendar closes like a cage - pays off the screaming-overwhelm promise within the hook
 - Packaging score: `91/100`
 - Decision: `Go` (pending thumbnail image generation and on-model WIT check). Run Variant C as the motif-anchor A/B alternate.
 
@@ -225,7 +225,7 @@ Use notes:
 - Best prompt to reuse manually: Variant D
 - Most clickable: Variant D, then Variant C
 - Clearest for mobile: Variant D (one face + one number), then Variant C
-- Biggest risk: D drops the calendar motif (covered by running C alongside it); A and B can feel similar (keep their visuals distinct — chaos-vs-calm vs calendar-vs-empty-board)
+- Biggest risk: D drops the calendar motif (covered by running C alongside it); A and B can feel similar (keep their visuals distinct - chaos-vs-calm vs calendar-vs-empty-board)
 - Recommended A/B order: `D -> C -> A -> B -> E`
 
 ## YouTube Description
@@ -291,14 +291,14 @@ Be honest: how many times have you answered "How are you?" with "Busy"? 😅 Wha
 
 Using `.agents/_shared/systems/topic-packaging-hooks.md` packaging scorecard (out of 100) for the recommended package (Title #1 + Variant D):
 
-- 1-second clarity (15): 14 — screaming WIT + giant `99+` reads instantly
-- Curiosity gap (20): 19 — "pretends" + a screaming face with no explanation forces the question
-- Visual contradiction (15): 13 — a pile of notifications treated like a real emergency (slightly less literal than the cage, covered by C)
-- WIT emotion (10): 10 — maxed-out meltdown is unmistakable
-- Title strength (15): 13 — clear, learner-friendly, slightly crowded niche
-- Title-thumbnail contrast (10): 10 — thumbnail repeats no title word
-- First 10 seconds promise (10): 9 — hook pays off the overwhelm image directly
-- Learner-friendly clarity (5): 5 — simple words, one clear idea
+- 1-second clarity (15): 14 - screaming WIT + giant `99+` reads instantly
+- Curiosity gap (20): 19 - "pretends" + a screaming face with no explanation forces the question
+- Visual contradiction (15): 13 - a pile of notifications treated like a real emergency (slightly less literal than the cage, covered by C)
+- WIT emotion (10): 10 - maxed-out meltdown is unmistakable
+- Title strength (15): 13 - clear, learner-friendly, slightly crowded niche
+- Title-thumbnail contrast (10): 10 - thumbnail repeats no title word
+- First 10 seconds promise (10): 9 - hook pays off the overwhelm image directly
+- Learner-friendly clarity (5): 5 - simple words, one clear idea
 - Total: `91/100`
 - Hard fails: none triggered (numbers illustrative, hooks are `?!` questions, no fake urgency claim, no real logos)
 

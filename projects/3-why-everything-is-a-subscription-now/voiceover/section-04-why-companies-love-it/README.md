@@ -18,7 +18,7 @@ Status:
 - learner clarity notes:
   - Authored in the approved Section 5 spacious pacing template.
   - The magic word "recurring" is isolated for emphasis; "Like rain. Or relatives." kept quick.
-  - `**bold**` joke markers and the `[beat]` cue are NOT spoken — stripped before TTS.
+  - `**bold**` joke markers and the `[beat]` cue are NOT spoken - stripped before TTS.
 
 ## Output Rule
 

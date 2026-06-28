@@ -39,17 +39,17 @@ Source files:
 
 ## Combine / Final Export
 
-- Combine workspace: `hyperframes/full-video/` — parent composition `UnifiedBuy1Get1` mounts all 7 audio-stripped section builds (`compositions/section-01.html` … `section-07.html`) at cumulative offsets; assets consolidated at root (`assets/fonts`, `assets/wit`, `assets/visual-references/section-0N-*`).
+- Combine workspace: `hyperframes/full-video/` - parent composition `UnifiedBuy1Get1` mounts all 7 audio-stripped section builds (`compositions/section-01.html` … `section-07.html`) at cumulative offsets; assets consolidated at root (`assets/fonts`, `assets/wit`, `assets/visual-references/section-0N-*`).
 - Combined voiceover: `hyperframes/full-video/combined-voiceover.mp3` (ffmpeg concat of the 7 section mp3s in order, 243.528s).
 - Section mount offsets (start / duration, seconds): S1 0/23.088 · S2 23.088/40.536 · S3 63.624/32.304 · S4 95.928/37.152 · S5 133.080/36.480 · S6 169.560/34.992 · S7 204.552/38.976.
 - Unified preview: `localhost:1000` (project id `full-video`), lint 0 errors, all 7 sections snapshot-verified mounting in order with real bases + WIT.
-- **Final video: `output/4-why-buy-1-get-1-beats-50-off.mp4`** — 1920×1080 H.264 + AAC, 243.56s, 41.3 MB, standard quality. Rendered via `renders/` staging then moved to `output/`; `renders/` removed (left empty). `output/` is the single home for all final deliverables.
+- **Final video: `output/4-why-buy-1-get-1-beats-50-off.mp4`** - 1920×1080 H.264 + AAC, 243.56s, 41.3 MB, standard quality. Rendered via `renders/` staging then moved to `output/`; `renders/` removed (left empty). `output/` is the single home for all final deliverables.
 
 ## Shared Asset Rules
 
 - Video-level assets: `projects/4-why-buy-1-get-1-beats-50-off/assets/` (source of truth; bases under `assets/visual-references/section-01-hook/`, WIT under `assets/wit/`, font under `assets/fonts/`)
-- Section asset junction rule: junctions 404 on this Windows HyperFrames setup — each section preview uses a minimal REAL local `assets/` working set (font + the section's bases + the section's WIT poses) copied from the project library.
-- Attribution file: `assets/visual-references/section-01-hook/ATTRIBUTION.md` (magic hat is CC BY-SA 3.0 — credit "Magicianidris" if it ships).
+- Section asset junction rule: junctions 404 on this Windows HyperFrames setup - each section preview uses a minimal REAL local `assets/` working set (font + the section's bases + the section's WIT poses) copied from the project library.
+- Attribution file: `assets/visual-references/section-01-hook/ATTRIBUTION.md` (magic hat is CC BY-SA 3.0 - credit "Magicianidris" if it ships).
 
 ## Active Section Notes
 
@@ -59,21 +59,21 @@ Source files:
 
 ## Stale / Regeneration Notes
 
-- All 7 sections are rendered and combined into `output/4-why-buy-1-get-1-beats-50-off.mp4`. If any section's `02-script.md`, voiceover, visual plan, or section build changes, the section preview AND the combined output become stale — rerun that section's render, then rerun `combine` (it re-concats the voiceover and re-exports the MP4).
-- No `07-review.md` / `08-upload.md` / `09-self-learning.md` exist yet — nothing downstream to stale.
+- All 7 sections are rendered and combined into `output/4-why-buy-1-get-1-beats-50-off.mp4`. If any section's `02-script.md`, voiceover, visual plan, or section build changes, the section preview AND the combined output become stale - rerun that section's render, then rerun `combine` (it re-concats the voiceover and re-exports the MP4).
+- No `07-review.md` / `08-upload.md` / `09-self-learning.md` exist yet - nothing downstream to stale.
 
-## Caption — 22 languages (2026-06-25)
+## Caption - 22 languages (2026-06-25)
 
 Generated YouTube captions in all 22 supported languages from the FULL combined audio (real word-level timing), with English display text taken verbatim from `02-script.md`.
 
-- Audio source: `hyperframes/full-video/combined-voiceover.mp3` (decoded 243.464s; board concat reports 243.528s — ~64ms mp3-frame rounding, within tolerance).
+- Audio source: `hyperframes/full-video/combined-voiceover.mp3` (decoded 243.464s; board concat reports 243.528s - ~64ms mp3-frame rounding, within tolerance).
 - Transcription: `Xenova/whisper-tiny.en` via `@xenova/transformers`, word timestamps over the whole timeline in one pass → **842 words**. Saved to `voiceover/combined-word-timings.json`.
 - Alignment: Needleman-Wunsch of 843 script tokens (cues from `02-script.md` narration) against 832 hyp words → **95 cues**. Timing table emitted to `voiceover/_segments.json`.
 - Whisper tail glitch (known whisper-tiny artifact): final words `be slightly harder to trick` jumped backward to ~235.7s while `Now go` sat at 241.4s. Last cue START (241.38s) was correct; only its END was short. Extended the final cue end to the audio duration (243.464s) per the documented fix, then regenerated `english.srt` from the corrected `_segments.json` so English + all translations share identical timing.
 - Validation: 0 overlaps, 0 zero/negative-duration, monotonic, gapless; first cue `00:00:00,000`, last cue ends `00:04:03,464` (== audio duration).
 - Sync cross-check vs combine section offsets (all within 0.25s): S2 23.20 vs 23.088 · S3 63.81 vs 63.624 · S4 96.00 vs 95.928 · S5 133.28 vs 133.080 · S6 169.62 vs 169.560 · S7 204.80 vs 204.552.
 - Translation: each of the 21 other languages is a cue-for-cue translation of the English cue table (95 cues, same count/order), written via `write-translated-srt.mjs` (count-guard enforced).
-- Output: **`output/captions/<language>.srt`** — 22 files (English + 21 translations). Compatibility `output/captions.srt` (English) kept at output root.
+- Output: **`output/captions/<language>.srt`** - 22 files (English + 21 translations). Compatibility `output/captions.srt` (English) kept at output root.
 - Hard gate PASSED: every `<language>.srt` = **95 cues** with **byte-identical timestamps** to `english.srt` (0 mismatches across all 22), 0 empty cues, valid UTF-8 (Arabic / CJK / Indic / Thai render clean, no mojibake). Proper nouns (Dan Ariely, Wedgwood) kept verbatim.
 - No `.vtt` requested.
 

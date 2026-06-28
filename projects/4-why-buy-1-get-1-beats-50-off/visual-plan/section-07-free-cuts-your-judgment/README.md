@@ -16,4 +16,4 @@ Status: `built to full bar (kinetic, fresh bright bases)`
 - Kinetic devices: signs face-off, thesis smash, calculator on→off flip, unmask reveal, payoff smash
 - WIT: thinking → suspicious → talking-front → betrayed → pointing-right (~1320px, R/L/R/L/R)
 - Reference pass: 5 FRESH bright CC bases (no reuse, no dark overlay)
-- HyperFrames readiness: built — `Section07Payoff`, 38.912s, port 1007; word-pinned; lint/validate 0 errors
+- HyperFrames readiness: built - `Section07Payoff`, 38.912s, port 1007; word-pinned; lint/validate 0 errors

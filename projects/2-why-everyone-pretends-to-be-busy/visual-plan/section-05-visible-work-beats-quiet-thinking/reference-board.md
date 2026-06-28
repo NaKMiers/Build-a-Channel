@@ -18,14 +18,14 @@
 | base-stage.jpg | CC0 photo | Wikimedia Commons (Curtain-939464) | real stage base | lit red theater curtain, no people = "productivity theater / the star is a spreadsheet" | Scene E (behind Sheets) |
 
 ## CSS-built real UI (no pixel-copied screenshots)
-- Scene A: Google Meet call grid — dark UI, top bar with Meet icon + "Team standup", 6 video tiles with initials avatars (no faces), one speaking tile highlighted, bottom control bar with red end-call.
-- Scene C: survey poll card — "Can you tell who's actually being productive?" with Yes 15% (grey) / Not really 85% (red) bars that grow on cue; footer "— survey of managers".
-- Scene D: Trello Kanban — TO DO / DOING / DONE columns with cards + colored label chips; a highlighted card translates DOING→DONE on "move a task from one column to another column".
+- Scene A: Google Meet call grid - dark UI, top bar with Meet icon + "Team standup", 6 video tiles with initials avatars (no faces), one speaking tile highlighted, bottom control bar with red end-call.
+- Scene C: survey poll card - "Can you tell who's actually being productive?" with Yes 15% (grey) / Not really 85% (red) bars that grow on cue; footer "- survey of managers".
+- Scene D: Trello Kanban - TO DO / DOING / DONE columns with cards + colored label chips; a highlighted card translates DOING→DONE on "move a task from one column to another column".
 - Scene E: Google Sheets spreadsheet (Q4_updates · Sheet1) spotlit on a theater stage with red curtains; gold ★ badge pops = "the star of the show".
 
 ## Rejected / not used
-- pixel-copied real screenshots (privacy + copy rule) — built clean CSS mockups instead
-- real participant faces in Meet tiles (no-face rule) — used initials avatars
+- pixel-copied real screenshots (privacy + copy rule) - built clean CSS mockups instead
+- real participant faces in Meet tiles (no-face rule) - used initials avatars
 
 ## Note
 Real-UI illustration per standing owner preference (2026-06-22): depict the real apps the script

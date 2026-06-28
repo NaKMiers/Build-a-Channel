@@ -16,4 +16,4 @@ Status: `built to subscription vivid-hook bar`
 - Hero devices: CSS price tags (proud/shrinking), blocked down-arrow, +1 FREE bonus badge, FIRST-vs-SECOND want-meter, FULL-price stamp
 - WIT: price-tag-suspicion → deadpan-side-eye → shocked → facepalm → empty-wallet (~1280–1340px, giant)
 - Reference pass: 3 CC0 bases (cash, coins, curtain); price tags built in CSS
-- HyperFrames readiness: built — `Section05Anchor`, 36.416s, port 1005; word-pinned (tail hand-estimated); lint/validate 0 errors
+- HyperFrames readiness: built - `Section05Anchor`, 36.416s, port 1005; word-pinned (tail hand-estimated); lint/validate 0 errors

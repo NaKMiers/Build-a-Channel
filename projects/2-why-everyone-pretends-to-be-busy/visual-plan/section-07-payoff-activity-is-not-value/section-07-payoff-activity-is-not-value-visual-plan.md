@@ -19,24 +19,24 @@ Land the insight calmly and tie the motif together: modern life confuses activit
 ## Big Scene Plan
 | Scene | Time | Voice | Real base | Build |
 |---|---:|---|---|---|
-| A — the question | 0:00–6.24 | "why does everyone pretend to be busy? confusing activity with value" | base-question.jpg ("?" note + crumpled paper) | board `ACTIVITY ≠ VALUE` |
-| B — rewarded vs needed | 6.2–18.34 | "rewards available/fast/overloaded… needs focus/quiet/time… never lazy… safer than thoughtful" | base-busy.jpg (hands typing, wood) | red labels (rewarded) vs green labels (what real work needs) + NOT LAZY / SAFER THAN THOUGHTFUL |
-| C — everyone joins in | 18.3–27.04 | "students highlight… workers answer messages… creators organize" | base-culture.jpg (blurred warm office) | 3 rows: HIGHLIGHT≠LEARN / REPLY≠SOLVE / ORGANIZE≠MAKE |
-| D — the honest version | 27.0–38.54 | "saying 'I'm protecting my attention' sounds too honest… be more honest about what matters" | base-busy.jpg (reuse, non-adjacent; chat dominates) | real-UI chat: honest reply struck → board `BE HONEST ABOUT WHAT MATTERS` |
-| E — a calendar with Wi-Fi | 38.5–46.78 | "if everything is urgent, nothing is… trapped in a calendar with Wi-Fi" | base-question.jpg (reuse, non-adjacent; calendar dominates) | CSS Google Calendar packed with red URGENT events + final label; WIT trapped |
+| A - the question | 0:00–6.24 | "why does everyone pretend to be busy? confusing activity with value" | base-question.jpg ("?" note + crumpled paper) | board `ACTIVITY ≠ VALUE` |
+| B - rewarded vs needed | 6.2–18.34 | "rewards available/fast/overloaded… needs focus/quiet/time… never lazy… safer than thoughtful" | base-busy.jpg (hands typing, wood) | red labels (rewarded) vs green labels (what real work needs) + NOT LAZY / SAFER THAN THOUGHTFUL |
+| C - everyone joins in | 18.3–27.04 | "students highlight… workers answer messages… creators organize" | base-culture.jpg (blurred warm office) | 3 rows: HIGHLIGHT≠LEARN / REPLY≠SOLVE / ORGANIZE≠MAKE |
+| D - the honest version | 27.0–38.54 | "saying 'I'm protecting my attention' sounds too honest… be more honest about what matters" | base-busy.jpg (reuse, non-adjacent; chat dominates) | real-UI chat: honest reply struck → board `BE HONEST ABOUT WHAT MATTERS` |
+| E - a calendar with Wi-Fi | 38.5–46.78 | "if everything is urgent, nothing is… trapped in a calendar with Wi-Fi" | base-question.jpg (reuse, non-adjacent; calendar dominates) | CSS Google Calendar packed with red URGENT events + final label; WIT trapped |
 
 ## Cue State Timeline (word-timed)
 | Cue | Time | Voice cue (word@s) | Scene | Change | Motion | WIT |
 |---|---:|---|---|---|---|---|
 | C1 | 0–4.36 | "activity with value"@4.36 | A | board ACTIVITY ≠ VALUE | hard-show (≠ impact) | thinking @0.4 |
-| C2 | 6.52 | available@6.52 / fast / overloaded@7.60 | B | red labels AVAILABLE/FAST/OVERLOADED (REWARDED) | hard-show | — |
+| C2 | 6.52 | available@6.52 / fast / overloaded@7.60 | B | red labels AVAILABLE/FAST/OVERLOADED (REWARDED) | hard-show | - |
 | C3 | 10.38 | Focus@10.38 / quiet@10.46 / time@10.94 | B | green labels FOCUS/QUIET/TIME (WHAT REAL WORK NEEDS) | hard-show | talking-front @9.5 |
-| C4 | 12.62 | lazy@12.62 / safer@14.78 / thoughtful@15.58 | B | NOT LAZY → SAFER THAN THOUGHTFUL | impact (safer) | — |
+| C4 | 12.62 | lazy@12.62 / safer@14.78 / thoughtful@15.58 | B | NOT LAZY → SAFER THAN THOUGHTFUL | impact (safer) | - |
 | C5 | 19.56 | Students highlight@19.56 | C | row 1 HIGHLIGHT ≠ LEARN | hard-show | typing-on-laptop @18.6 |
-| C6 | 21.64 | Workers messages@21.64 | C | row 2 REPLY ≠ SOLVE | hard-show | — |
-| C7 | 24.48 | Creators organize@24.48 | C | row 3 ORGANIZE ≠ MAKE | hard-show | — |
+| C6 | 21.64 | Workers messages@21.64 | C | row 2 REPLY ≠ SOLVE | hard-show | - |
+| C7 | 24.48 | Creators organize@24.48 | C | row 3 ORGANIZE ≠ MAKE | hard-show | - |
 | C8 | 27.0 | "protecting my attention…"@~28 / Tuesday@~31.9 | D | chat: honest reply struck; red `TOO HONEST FOR A TUESDAY` | hard-show | deadpan-side-eye @31.9 |
-| C9 | 36.58 | honest@36.58 / matters@37.62 | D | board BE HONEST ABOUT WHAT MATTERS | impact | — |
+| C9 | 36.58 | honest@36.58 / matters@37.62 | D | board BE HONEST ABOUT WHAT MATTERS | impact | - |
 | C10 | 39.00 | urgent@39.00 / nothing@39.34 | E | calendar reveals packed; label IF EVERYTHING IS URGENT, NOTHING IS | hard-show | trapped-by-app-screen @40.0 |
 | C11 | 45.40 | calendar@45.40 / Wi-Fi@46.06 | E | final label `A CALENDAR WITH WI-FI` | impact | (trapped persists) |
 

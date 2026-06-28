@@ -16,7 +16,7 @@ It's always higher.
 
 5
 00:00:07,220 --> 00:00:10,040
-Right now, money is quietly leaving your account every month —
+Right now, money is quietly leaving your account every month -
 
 6
 00:00:10,040 --> 00:00:11,740
@@ -44,7 +44,7 @@ You rent your whole life. One payment at a time.
 
 12
 00:00:23,620 --> 00:00:26,660
-Now — this is not a video about how subscriptions are evil
+Now - this is not a video about how subscriptions are evil
 
 13
 00:00:26,660 --> 00:00:28,920
@@ -84,7 +84,7 @@ Pay every month, the screen turns on.
 
 22
 00:00:44,140 --> 00:00:46,920
-Miss a payment, and your own device does this —
+Miss a payment, and your own device does this -
 
 23
 00:00:46,920 --> 00:00:48,060
@@ -100,11 +100,11 @@ So here's the real question.
 
 26
 00:00:53,220 --> 00:00:56,420
-How did almost everything — your apps, your shows, your software,
+How did almost everything - your apps, your shows, your software,
 
 27
 00:00:56,420 --> 00:00:58,280
-even buttons inside your car —
+even buttons inside your car -
 
 28
 00:00:58,280 --> 00:01:01,820
@@ -140,7 +140,7 @@ Then your screens joined the party.
 
 36
 00:01:16,360 --> 00:01:17,780
-Music, movies, shows —
+Music, movies, shows -
 
 37
 00:01:17,780 --> 00:01:19,800
@@ -188,11 +188,11 @@ And it didn't stop at screens.
 
 48
 00:01:44,740 --> 00:01:48,260
-Some carmakers have tried putting heated seats —
+Some carmakers have tried putting heated seats -
 
 49
 00:01:48,260 --> 00:01:50,840
-seats already sitting in the car you bought —
+seats already sitting in the car you bought -
 
 50
 00:01:50,840 --> 00:01:52,280
@@ -216,11 +216,11 @@ Imagine you sell a coffee machine.
 
 55
 00:02:02,440 --> 00:02:05,380
-You make one sale, you say thank you, and then you wait —
+You make one sale, you say thank you, and then you wait -
 
 56
 00:02:05,380 --> 00:02:07,820
-maybe years — hoping that person ever comes back.
+maybe years - hoping that person ever comes back.
 
 57
 00:02:07,820 --> 00:02:10,820
@@ -248,7 +248,7 @@ A customer who buys once is worth a little.
 
 63
 00:02:20,380 --> 00:02:22,800
-A customer who pays every month is worth a lot —
+A customer who pays every month is worth a lot -
 
 64
 00:02:22,800 --> 00:02:24,820
@@ -300,7 +300,7 @@ To get you in, they make it feel free.
 
 76
 00:02:53,140 --> 00:02:56,240
-Just pop in your card — you know, for no reason at all.
+Just pop in your card - you know, for no reason at all.
 
 77
 00:02:56,240 --> 00:02:58,840
@@ -324,7 +324,7 @@ And most people don't cancel on day seven. They forget.
 
 82
 00:03:11,020 --> 00:03:14,360
-Not because they're careless — because forgetting is the design.
+Not because they're careless - because forgetting is the design.
 
 83
 00:03:14,360 --> 00:03:17,320
@@ -340,7 +340,7 @@ A ghost, living in your bank account.
 
 86
 00:03:23,240 --> 00:03:26,360
-Rent free. Well — not rent free. That's the whole problem.
+Rent free. Well - not rent free. That's the whole problem.
 
 87
 00:03:26,360 --> 00:03:29,940
@@ -408,7 +408,7 @@ This even has a name.
 
 103
 00:04:07,980 --> 00:04:10,220
-It's been called negative option billing —
+It's been called negative option billing -
 
 104
 00:04:10,220 --> 00:04:12,220
@@ -432,7 +432,7 @@ So a lot of people just... give up. They keep paying.
 
 109
 00:04:25,300 --> 00:04:29,500
-Not because they want it — because cancelling feels like a part-time job.
+Not because they want it - because cancelling feels like a part-time job.
 
 110
 00:04:29,500 --> 00:04:31,320
@@ -472,7 +472,7 @@ The product was never the thing.
 
 119
 00:04:50,400 --> 00:04:52,040
-The product is you — staying.
+The product is you - staying.
 
 120
 00:04:52,040 --> 00:04:56,020
@@ -488,7 +488,7 @@ To know that "small and monthly" is a design, not an accident.
 
 123
 00:05:01,260 --> 00:05:04,260
-So every so often, pick up the phone that's been billing you —
+So every so often, pick up the phone that's been billing you -
 
 124
 00:05:04,260 --> 00:05:05,500

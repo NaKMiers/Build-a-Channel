@@ -1,4 +1,4 @@
-# Section 3 Render — Design (v2 remake)
+# Section 3 Render - Design (v2 remake)
 
 Composition id: `Section03Status` · 1920x1080 · 45.14s · audio 0.84 (David23 / am_eric)
 
@@ -22,7 +22,7 @@ becomes proving you're near the work.
 | E | 6 | 25.42–33.36 | base-sounds.jpg (dark-wood hands) | RESPONSIBLE / NEEDED / WAITED-FOR → = FEELS VALUABLE; WIT thinking |
 | F | 7 | 33.32–45.14 | base-nearwork.jpg (meeting room) + CSS calendar | MEETINGS ABOUT MEETINGS → PROVING YOU'RE NEAR THE WORK; WIT tiny-defeated |
 
-## Cue Map (track 2 — pinned to word timings)
+## Cue Map (track 2 - pinned to word timings)
 A: BUSY = STATUS SYMBOL@2.48 (WIT@0.4). B: chat@4.30 → (=important)@7.84 (WIT@4.3).
 C: board@11.2 + Busy?@11.98 → NOT AN EMOTION@13.32 → (everyone's tired)@15.28 (WIT@11.2).
 D: LONG HOLIDAYS@19.34 → packed-calendar + NO FREE TIME@23.06 → OPPOSITE BRAG@25.42 (WIT@17.2).

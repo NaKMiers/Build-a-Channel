@@ -60,7 +60,7 @@ Der Laden hat vier ausgegeben, um es herzustellen.
 
 16
 00:00:34,080 --> 00:00:37,080
-Fünf minus vier — dem Laden bleibt ein Dollar.
+Fünf minus vier - dem Laden bleibt ein Dollar.
 
 17
 00:00:37,080 --> 00:00:39,680
@@ -72,7 +72,7 @@ Diese zwei kosten den Laden acht in der Herstellung.
 
 19
 00:00:41,960 --> 00:00:45,620
-Zehn minus acht — dem Laden bleiben zwei Dollar. Doppelt so viel.
+Zehn minus acht - dem Laden bleiben zwei Dollar. Doppelt so viel.
 
 20
 00:00:45,620 --> 00:00:48,200
@@ -84,7 +84,7 @@ Aber doppelter Gewinn für den Laden.
 
 22
 00:00:50,020 --> 00:00:52,640
-Und das Schild hat sich nie geändert — es sagt immer noch zehn.
+Und das Schild hat sich nie geändert - es sagt immer noch zehn.
 
 23
 00:00:52,640 --> 00:00:55,260
@@ -100,7 +100,7 @@ Ein Töpfer namens Wedgwood hat ihn schon im siebzehnten Jahrhundert abgezogen.
 
 26
 00:01:00,080 --> 00:01:03,813
-Also nein — du bist nicht der erste Trottel. Du bist nur der neueste.
+Also nein - du bist nicht der erste Trottel. Du bist nur der neueste.
 
 27
 00:01:03,813 --> 00:01:06,787

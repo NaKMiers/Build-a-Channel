@@ -96,14 +96,14 @@
     <div id="cue-b" class="clip cue" data-start="4.56" data-duration="8.04" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
       <div class="bignum cb-10" style="left:1300px; top:230px;"><span class="cap">it's "really worth"…</span><span class="v">$10</span></div>
       <div class="bignum red cb-5" style="left:1300px; top:210px;"><span class="cap">now this feels normal</span><span class="v">$5</span></div>
-      <div class="stamp cb-cheap ui" style="left:1300px; top:660px; font-size:60px;">looks CHEAP — forever</div>
+      <div class="stamp cb-cheap ui" style="left:1300px; top:660px; font-size:60px;">looks CHEAP - forever</div>
       <img class="wit cb-wit" data-layout-allow-overflow="" style="left:-180px; bottom:-360px; width:1320px;" src="./assets/wit/wit-pose-deadpan-side-eye.png" alt="">
     </div>
 
     <!-- CUE C 12.62-20.00 : WIT right, device left -->
     <div id="cue-c" class="clip cue" data-start="12.62" data-duration="7.38" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
       <div class="bignum gold cc-10" style="left:130px; top:210px;"><span class="cap">the "real" price stays HIGH</span><span class="v">$10</span></div>
-      <div class="toast cc-bonus ui" style="left:150px; top:640px;">+1 FREE — "a bonus!"</div>
+      <div class="toast cc-bonus ui" style="left:150px; top:640px;">+1 FREE - "a bonus!"</div>
       <img class="wit cc-wit" data-layout-allow-overflow="" style="right:-150px; bottom:-360px; width:1320px;" src="./assets/wit/wit-pose-shocked.png" alt="">
     </div>
 
@@ -111,7 +111,7 @@
     <div id="cue-d" class="clip cue" data-start="20.02" data-duration="3.64" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
       <div class="modal luv cd-banner ui" style="left:1000px; top:300px; width:820px;">
         <div class="big">Stores <span class="rd">LOVE</span> this.</div>
-        <div class="sub">a sale — without admitting the thing is cheap</div>
+        <div class="sub">a sale - without admitting the thing is cheap</div>
       </div>
       <img class="wit cd-wit" data-layout-allow-overflow="" style="left:-180px; bottom:-360px; width:1300px;" src="./assets/wit/wit-pose-facepalm.png" alt="">
     </div>
@@ -120,8 +120,8 @@
     <div id="cue-e" class="clip cue" data-start="23.68" data-duration="12.736" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
       <div class="magic ce-cap" style="left:120px; top:96px; width:760px;">they pick this shape on purpose…</div>
       <div class="meter ce-meter" style="left:120px; top:250px;">
-        <div class="mrow"><div class="fill hot ce-f1"></div><div class="ml">1st one — you want it a LOT</div></div>
-        <div class="mrow"><div class="fill cold ce-f2"></div><div class="ml">2nd one — …eh, not really</div></div>
+        <div class="mrow"><div class="fill hot ce-f1"></div><div class="ml">1st one - you want it a LOT</div></div>
+        <div class="mrow"><div class="fill cold ce-f2"></div><div class="ml">2nd one - …eh, not really</div></div>
       </div>
       <div class="stamp ce-full ui" style="left:140px; top:560px; font-size:46px;">so: FULL price for #1, #2 "free"</div>
       <img class="wit ce-wit" data-layout-allow-overflow="" style="right:-150px; bottom:-360px; width:1320px;" src="./assets/wit/wit-pose-empty-wallet.png" alt="">
@@ -145,7 +145,7 @@
       tl.fromTo("#scene-d", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 20.02);
       tl.fromTo("#scene-e", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 23.68);
 
-      // SCENE A — $10 tries to drop, snaps back ("never drops")
+      // SCENE A - $10 tries to drop, snaps back ("never drops")
       show("#cue-a .ca-wit", 0, 0.50);
       pop("#cue-a .ca-num", 0, 2.16);                                 // "the price on the sign"
       // arrow drops to the floor then snaps back up = the price refuses to drop
@@ -155,7 +155,7 @@
       tl.to("#cue-a .ca-drop", { y: -70, duration: 0.34, ease: "back.out(3)" }, 3.56);
       show("#cue-a .ca-never", 0, 3.30);                              // "never drops"
 
-      // SCENE B — perceived value MORPHS $10 -> $5 (subscription counter-change)
+      // SCENE B - perceived value MORPHS $10 -> $5 (subscription counter-change)
       hide("#cue-b .cb-5", 4.56); hide("#cue-b .cb-cheap", 4.56);
       show("#cue-b .cb-wit", 4.56, 4.70);
       pop("#cue-b .cb-10", 4.56, 6.06);                               // "only really worth..."
@@ -163,18 +163,18 @@
       smash("#cue-b .cb-5", 4.56, 7.34, { scale: 1.5, opacity: 0 });  // "...five bucks" -> morph to $5
       smash("#cue-b .cb-cheap", 4.56, 11.34, { scale: 0.5, opacity: 0 }); // "looks cheap forever"
 
-      // SCENE C — proud $10 HOLDS, a +1 FREE toast pops on top
+      // SCENE C - proud $10 HOLDS, a +1 FREE toast pops on top
       hide("#cue-c .cc-bonus", 12.62);
       show("#cue-c .cc-wit", 12.62, 12.78);
       pop("#cue-c .cc-10", 12.62, 12.88);                             // "keeps that proud $10" (then holds)
       pop("#cue-c .cc-bonus", 12.62, 18.48);                          // "a bonus on top"
 
-      // SCENE D — banner takeover
+      // SCENE D - banner takeover
       show("#cue-d .cd-wit", 20.02, 20.16);
       tl.set("#cue-d .cd-banner", { opacity: 0, scale: 0.6 }, 20.02);
       tl.to("#cue-d .cd-banner", { opacity: 1, scale: 1, duration: 0.24, ease: "back.out(1.8)" }, 20.02); // "stores love that"
 
-      // SCENE E — want meter bars animate (1st fills full, 2nd barely), then stamp
+      // SCENE E - want meter bars animate (1st fills full, 2nd barely), then stamp
       hide("#cue-e .ce-full", 23.68);
       show("#cue-e .ce-cap", 23.68, 23.68);                           // "they pick this shape on purpose"
       show("#cue-e .ce-wit", 23.68, 24.00);

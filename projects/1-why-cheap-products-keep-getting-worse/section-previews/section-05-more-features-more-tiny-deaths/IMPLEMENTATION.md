@@ -7,13 +7,13 @@ Section:
 `Section 5: More Features, More Tiny Deaths`
 
 Status:
-`remade from scratch 2026-06-21 (voice-synced) — preview on port 1005, ready for review`
+`remade from scratch 2026-06-21 (voice-synced) - preview on port 1005, ready for review`
 
 ## Remake From Scratch (2026-06-21)
 
 Rebuilt fresh and voice-synced. 2 big scenes: a real fridge (`fridge.jpg`) persisting 0-29.52 that gains a staggered feature pile-up into "A SMALL TECHNOLOGY COMMITTEE", then a real control board (`circuit-board.jpg`) for the failure payoff. 5 cues; 3 WIT beats (`awkward-celebration` / `confused` / `money-panic`); turn + pile WIT-free so the clutter joke reads. Payoff `HARDER + MORE EXPENSIVE TO FIX` (one line, span border-bottom underline). Removed an unneeded stray brand-mask. `dev` patched to `preview --port 1005`.
 
-Timing is `whisper-derived`: transcribed with `transformers.js` (`@xenova/whisper-tiny.en`, WASM — no native deps) → `voiceover/section-05-.../section-05-word-timings.json`; every cut + reveal pinned to real word times (feature pile screens 18.44 / sensors 19.26 / water 19.68 / ice 20.24 / software 21.44 / opinions 21.66; committee 26.82; payoff 33.22). Verified: lint 0 / validate 0 / inspect 0 (8 samples); snapshot QA confirms the pile builds in sync. Synced to review mirror + unified full video (audio stripped; duration unchanged so unified offsets unaffected).
+Timing is `whisper-derived`: transcribed with `transformers.js` (`@xenova/whisper-tiny.en`, WASM - no native deps) → `voiceover/section-05-.../section-05-word-timings.json`; every cut + reveal pinned to real word times (feature pile screens 18.44 / sensors 19.26 / water 19.68 / ice 20.24 / software 21.44 / opinions 21.66; committee 26.82; payoff 33.22). Verified: lint 0 / validate 0 / inspect 0 (8 samples); snapshot QA confirms the pile builds in sync. Synced to review mirror + unified full video (audio stripped; duration unchanged so unified offsets unaffected).
 
 ## Result
 

@@ -156,14 +156,14 @@ Classification: `Script draft lesson`
 
 Context:
 On `why-everything-is-a-subscription-now`, the owner reviewed rev 1 and asked for a funnier script:
-dad jokes, jokes "trending now on the internet," and even dark jokes — explicitly "as long as it
+dad jokes, jokes "trending now on the internet," and even dark jokes - explicitly "as long as it
 doesn't harm anyone." He also asked to swap the abstract `$/mo tag` motif for concrete devices
 (phone, laptop, monitor, car screen), and reminded the skill to browse YouTube/the internet so the
 video lands with viewers. Quote: "I love joking in the video."
 
 Lesson:
 This creator wants a higher humor density than rev-1 dry-explainer baseline, and he wants the comedy
-to feel current. Default future scripts toward more jokes — but keep them learner-safe and
+to feel current. Default future scripts toward more jokes - but keep them learner-safe and
 guardrail-safe. Concrete object/device motifs beat abstract symbols for him.
 
 Apply next time:
@@ -176,12 +176,12 @@ Apply next time:
 - Dark jokes allowed ONLY if self-aimed/absurd and targeting the *system*, never a person, group, or
   protected category, and never encouraging real harm. Add a "Humor Safety" sub-section to Claim Safety.
 - A recognized meme FORMAT adapted to the topic (e.g. "your free trial of ___ has expired" for a
-  subscription video) is a strong, reusable running gag — adapt the format, don't copy a specific line.
+  subscription video) is a strong, reusable running gag - adapt the format, don't copy a specific line.
 - Prefer concrete real objects/devices as the recurring motif over abstract tags/symbols.
 - Still browse YouTube for demand + current comedic packaging every script revision he asks to "make funnier."
 
 Promote to shared memory:
-yes — logged as an Experiment in `learning-log.md` (humor density is a tunable channel preference to
+yes - logged as an Experiment in `learning-log.md` (humor density is a tunable channel preference to
 validate against retention, not yet a foundation rewrite). Do not change `channel-foundation.md`
 voice/tone without explicit owner confirmation.
 
@@ -198,7 +198,7 @@ Lesson:
 The channel's first-10-seconds rule (situation → suspicious detail → WIT reaction → bigger question)
 is right, but the FIRST SPOKEN LINE must itself be a curiosity gap, not throat-clearing. A calm
 "normal morning / you do X" open buries the hook. Lead with a question the viewer can't answer about
-their own life, a surprising claim, or a contradiction — then reveal.
+their own life, a surprising claim, or a contradiction - then reveal.
 
 Apply next time:
 
@@ -212,7 +212,7 @@ Apply next time:
 - The motif/running gag can stay, but as a beat inside the hook, not as the opening line.
 
 Promote to shared memory:
-no — the channel-foundation first-10s rule already covers this; this is a sharper script-draft
+no - the channel-foundation first-10s rule already covers this; this is a sharper script-draft
 execution note (lead-line must be the curiosity gap).
 
 ### 2026-06-24 - Owner Wants Shorter + Cheeky/"Slightly Rude" Register
@@ -229,7 +229,7 @@ stupid", "go be slightly harder to trick").
 Lesson:
 This creator's comedy taste extends past dry-deadpan into a light cheeky/roast register, AND he
 prefers tighter runtime. "Slightly rude" = affectionate roasting of the *trick*, the concept, and the
-viewer's own brain/wallet/fridge — never a person, group, brand, or protected category, and no
+viewer's own brain/wallet/fridge - never a person, group, brand, or protected category, and no
 profanity (channel stays learner-clean). Pairs with the 2026-06-23 denser-humor experiment.
 
 Apply next time:
@@ -239,11 +239,11 @@ Apply next time:
   vetted edgy lines, and gloss any cheeky phrase ("you're the rabbit", "sucker", "inner accountant")
   in English Learner Notes so the joke isn't native-only.
 - Keep the math/claim honesty even while funnier (the loss-leader "when the store loses" turn stays).
-- A script tone/length rewrite restales already-generated section voiceover — regenerate the affected
+- A script tone/length rewrite restales already-generated section voiceover - regenerate the affected
   section(s) and reset the `04-voiceover.md` index.
 
 Promote to shared memory:
-no — sharpens the existing humor-density experiment for this owner; do not change
+no - sharpens the existing humor-density experiment for this owner; do not change
 `channel-foundation.md` voice/tone without explicit confirmation. Revisit promoting a "cheeky register"
 note if he confirms the style across more videos.
 
@@ -253,33 +253,33 @@ Classification: `Script draft lesson`
 
 Context:
 On `why-buy-1-get-1-beats-50-off` Section 2, the owner generated the voiceover, listened, and said
-he could not even understand it — the store-side math was confusing. Root cause: the script stated
+he could not even understand it - the store-side math was confusing. Root cause: the script stated
 the profit results ($1 for 50%-off, $2 for BOGO) without ever speaking the subtraction, so a learner
 heard "you pay five... the store keeps one dollar" with no audible bridge from $5 paid to $1 kept.
 It also flipped pronouns ("Stand behind the counter... you" = store, but "you" = shopper everywhere
-else). Fix: say the arithmetic out loud ("Five minus four — the store keeps one dollar" /
-"Ten minus eight — the store keeps two dollars") and keep "you" = shopper, "the store" = seller.
+else). Fix: say the arithmetic out loud ("Five minus four - the store keeps one dollar" /
+"Ten minus eight - the store keeps two dollars") and keep "you" = shopper, "the store" = seller.
 
 Lesson:
 For an English-learner channel, any number beat must be VOICED as the operation, not just the result.
-If a profit/price/total is the payoff of a calculation, speak the calculation ("X minus Y —") right
+If a profit/price/total is the payoff of a calculation, speak the calculation ("X minus Y -") right
 before the result so the listener can follow by ear, not only by reading the on-screen tag. Also keep
 one stable referent per pronoun across the whole video; a "pretend you're the store" framing that
-reuses "you" for the seller confuses learners who have "you" = viewer everywhere else — prefer naming
+reuses "you" for the seller confuses learners who have "you" = viewer everywhere else - prefer naming
 "the store" in third person.
 
 Apply next time:
 - When a section hinges on math, write the subtraction/addition into the narration ("five minus four"),
   put a `[beat]` before the result, and `[slower]` on the operation line.
 - Mirror it in the Visual goal so the on-screen tag shows the same operation (`$5 − $4 = $1`), not just
-  the answer — audio and screen reinforce the same derivation.
+  the answer - audio and screen reinforce the same derivation.
 - Avoid pronoun flips: keep "you" = the viewer/shopper; name other actors ("the store", "the seller")
   explicitly rather than reusing "you".
-- A clarity rewrite of one section restales only that section's voiceover — regenerate just that
+- A clarity rewrite of one section restales only that section's voiceover - regenerate just that
   section and reset its `04-voiceover.md` row, not the whole video.
 
 Promote to shared memory:
-no for now — strong learner-clarity execution note; revisit promoting a one-line "speak the math
+no for now - strong learner-clarity execution note; revisit promoting a one-line "speak the math
 aloud / one referent per pronoun" rule into `script-learner-voice.md` if it recurs on another video.
 
 ## Feedback Entry Template

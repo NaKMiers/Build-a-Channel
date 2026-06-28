@@ -1,6 +1,6 @@
 # Shorts Skill Memory
 
-Memory for the `shorts` skill — turning one finished Why It Works long video into 2-4 COMPLETE vertical shorts (1080x1920) and exporting each to MP4. Use this file for the toolchain, layout rules, and recurring fixes. Use `.agents/_shared/` only for channel-wide lessons.
+Memory for the `shorts` skill - turning one finished Why It Works long video into 2-4 COMPLETE vertical shorts (1080x1920) and exporting each to MP4. Use this file for the toolchain, layout rules, and recurring fixes. Use `.agents/_shared/` only for channel-wide lessons.
 
 ## Current Skill Standard
 
@@ -12,11 +12,11 @@ Memory for the `shorts` skill — turning one finished Why It Works long video i
 ## Locked layout rules (owner-confirmed 2026-06-22, first run = `why-cheap-products-keep-getting-worse`)
 
 - Native portrait REBUILD (1080x1920), never crop/letterbox the 16:9 master.
-- COMPLETE short, NOT a hook/teaser — **NO CTA / "watch the full video" / subscribe card**. End on the short's own payoff.
+- COMPLETE short, NOT a hook/teaser - **NO CTA / "watch the full video" / subscribe card**. End on the short's own payoff.
 - Platform-safe zone `x[60..880] · y[220..1490]`. UI covers the edges: top title, right action rail, bottom caption + subscribe + progress bar. WIT body may bleed off edges; FACE stays inside. Verify with a temporary dashed `.safe-guide` overlay (+ a `.center-line` at `top:960`), then DELETE the guides before handoff.
 - WIT big (≈1/3-1/2 frame), face ABOVE the centered caption; approved pose PNGs only; `transform-origin: center bottom`.
 - Captions = distinct SUBTITLE style, NOT the cream label look: white text + dark text-stroke shadow on a translucent dark pill `rgba(16,12,9,0.5)`, `border-radius:22px`, centered vertically (`left:50%; top:50%; translate(-50%,-50%)`), font ~60px, max-width ~780-800, 2-4 words. Punchline/definition/payoff lines are carried by the cards/bubbles (the hero text), NOT duplicated in a caption; time captions to CLEAR before a card pops (e.g. cap end == card pop time) so nothing overlaps.
-- Every scene = a real photo base (object-fit:cover) + top/bottom scrim. 16:9 -> 9:16 cover fills height fully and crops the sides to the center ~32%; center-framed subjects survive (tune `object-position` X only — vertical is a no-op under cover for a 16:9 source in a 9:16 box).
+- Every scene = a real photo base (object-fit:cover) + top/bottom scrim. 16:9 -> 9:16 cover fills height fully and crops the sides to the center ~32%; center-framed subjects survive (tune `object-position` X only - vertical is a no-op under cover for a 16:9 source in a 9:16 box).
 - Reuse the source section's real photos + WIT poses + font. Copy a MINIMAL working set into `assets/photos`, `assets/wit`, `assets/fonts` (Windows junctions fail on this HyperFrames setup).
 
 ## HyperFrames structure that passed lint (reuse this skeleton)
@@ -25,7 +25,7 @@ Memory for the `shorts` skill — turning one finished Why It Works long video i
 - 4 scene bases, each `class="clip scene"` on its OWN `data-track-index` (1/3/4/5) with a blur/opacity cross-fade `fromTo(..., immediateRender:false)` at its start.
 - 4 cue overlays `class="clip cue"` sequential on `data-track-index="2"`; TRIM each cue duration by 0.01 so it ends before the next starts (float overlap = `overlapping_clips_same_track` hard error, e.g. `7.74+6.38=14.120000001`).
 - captions in a static `.caption-layer` (inset:0, not a clip), children toggled by `tl.set(sel,{opacity},t)`.
-- CAPTION GOTCHA (found `why-everyone-pretends` 2026-06-23): for the FIRST caption whose show time is `0.0`, setting `opacity:0` AND `opacity:1` at the SAME time `0` cancels out and that caption NEVER appears. Fix: clamp the show time, `const st = Math.max(s, 0.05)`, so show != hide-init. The opening caption is the hook line — verify it renders with a snapshot at ~1s, not just mid-clip frames. (Video-2 shorts shipped with this bug; re-export if you touch them.)
+- CAPTION GOTCHA (found `why-everyone-pretends` 2026-06-23): for the FIRST caption whose show time is `0.0`, setting `opacity:0` AND `opacity:1` at the SAME time `0` cancels out and that caption NEVER appears. Fix: clamp the show time, `const st = Math.max(s, 0.05)`, so show != hide-init. The opening caption is the hook line - verify it renders with a snapshot at ~1s, not just mid-clip frames. (Video-2 shorts shipped with this bug; re-export if you touch them.)
 - one `<audio data-track-index="10">`; GSAP from jsdelivr; register `window.__timelines["ShortNN"]` synchronously.
 - helpers: `show(sel,hideAt,at)` (hard-show) and `pop(sel,hideAt,at)` (scale-in for emphasis). Hide at cue start, show on the spoken word.
 - Non-blocking warnings seen and accepted: `timeline_track_too_dense` (track 2), `overlapping_gsap_tweens` 0-0.2s, WCAG contrast on red labels over photos (false positives).
@@ -33,7 +33,7 @@ Memory for the `shorts` skill — turning one finished Why It Works long video i
 ## Toolchain (this Windows box)
 
 ### Voiceover (regenerate per short)
-- `hyperframes tts` needs **Python 3 + kokoro-onnx** — NOT preinstalled here. One-time setup (done 2026-06-22):
+- `hyperframes tts` needs **Python 3 + kokoro-onnx** - NOT preinstalled here. One-time setup (done 2026-06-22):
   - `scoop install python` (installed 3.14.6). `python` is shadowed by the Microsoft Store alias, so prepend the real dir to PATH: `export PATH="$HOME/scoop/apps/python/current:$HOME/scoop/apps/python/current/Scripts:$PATH"` (then `python` resolves correctly).
   - `python -m pip install kokoro-onnx soundfile` (kokoro-onnx 0.4.7 works on py3.14).
 - Generate: `npx --yes hyperframes@0.6.76 tts <input.txt> --output <out.mp3> --voice am_eric --speed 0.84 --lang en-us --json` (run with the python-first PATH so HyperFrames finds real Python).
@@ -53,28 +53,28 @@ Memory for the `shorts` skill — turning one finished Why It Works long video i
 ## Verified Result (first run)
 
 `why-cheap-products-keep-getting-worse` -> 3 shorts, all 1080x1920 / h264 / aac / 30fps, exported to `output/shorts/`:
-- S01 The $9 chair (Section 1 + condensed Section 8) — 28.42s, 4.2 MB.
-- S02 You own me, but not enough to open me (Section 6 trimmed) — 26.62s, 5.5 MB.
-- S03 A subscription with extra steps (Section 7 re-ordered) — 21.42s, 7.0 MB.
+- S01 The $9 chair (Section 1 + condensed Section 8) - 28.42s, 4.2 MB.
+- S02 You own me, but not enough to open me (Section 6 trimmed) - 26.62s, 5.5 MB.
+- S03 A subscription with extra steps (Section 7 re-ordered) - 21.42s, 7.0 MB.
 
 ## Beat-sync the short to the SOURCE section's signature device (owner-confirmed 2026-06-24)
 
-- The owner wants each short to follow the long-form section's visual LOGIC, not just reuse its photos. If the source section pins a scene/device to a spoken word, the short must do the same: e.g. `why-buy-1-get-1` S1 shows the **magic-hat scene on the word "magic"** and **sprouts CSS bunny ears on the word "rabbit"** — the short must replicate both, synced to the short's own word timings.
+- The owner wants each short to follow the long-form section's visual LOGIC, not just reuse its photos. If the source section pins a scene/device to a spoken word, the short must do the same: e.g. `why-buy-1-get-1` S1 shows the **magic-hat scene on the word "magic"** and **sprouts CSS bunny ears on the word "rabbit"** - the short must replicate both, synced to the short's own word timings.
 - Port the source section's signature device verbatim (here the `.ear.left/.right` CSS bunny ears + `.witwrap`), don't invent a flatter substitute (a plain "YOU'RE THE RABBIT" card alone was rejected).
 - Don't burn the payoff prop on the wrong beat: v1 opened on the magic hat for "sounds impossible," leaving nothing for "magic." Reserve each signature visual for the word it illustrates; pick a neutral context base (store/shelf) for the hook.
-- "WIT emerges from the magic hat" came free from the standard portrait WIT geometry (centered, `bottom:360px`, width ~980) landing the figure right at a centered top-hat photo — a happy reuse; worth aiming for when the source has a hat/frame/doorway base.
+- "WIT emerges from the magic hat" came free from the standard portrait WIT geometry (centered, `bottom:360px`, width ~980) landing the figure right at a centered top-hat photo - a happy reuse; worth aiming for when the source has a hat/frame/doorway base.
 
-## Gotcha: WIT face height is POSE-dependent — re-check caption-over-WIT per pose (2026-06-24)
+## Gotcha: WIT face height is POSE-dependent - re-check caption-over-WIT per pose (2026-06-24)
 
-Same `.wit` geometry (`bottom:360px`, `width:940px`) lands the head at very different heights depending on the pose PNG: `talking-front`, `confused`, `awkward-celebration` sit HIGH (face ~upper third), but `thinking` and `shocked` sit LOW (face ~mid-frame), so the centered caption (`top:50%`) clipped their chin/jaw — a face-coverage violation. Fix is a per-pose `bottom` override to lift the low poses (e.g. `#witThinking{bottom:540px} #witShocked{bottom:520px}`); body just bleeds further off the bottom edge, which is allowed. ALWAYS snapshot one caption-over-WIT beat for EACH pose used, not just one pose — don't assume a pose that worked elsewhere lands the same. (`why-buy-1-get-1` S03.)
+Same `.wit` geometry (`bottom:360px`, `width:940px`) lands the head at very different heights depending on the pose PNG: `talking-front`, `confused`, `awkward-celebration` sit HIGH (face ~upper third), but `thinking` and `shocked` sit LOW (face ~mid-frame), so the centered caption (`top:50%`) clipped their chin/jaw - a face-coverage violation. Fix is a per-pose `bottom` override to lift the low poses (e.g. `#witThinking{bottom:540px} #witShocked{bottom:520px}`); body just bleeds further off the bottom edge, which is allowed. ALWAYS snapshot one caption-over-WIT beat for EACH pose used, not just one pose - don't assume a pose that worked elsewhere lands the same. (`why-buy-1-get-1` S03.)
 
 ## Per-pose WIT `bottom` reference + two card-overflow bugs (2026-06-24, `why-everything-is-a-subscription-now`, 4 shorts)
 
 Measured per-pose face heights at `width:940px` (which need a raised `bottom` so the centered caption at `top:50%` clears the face). Poses that sit HIGH (face upper third, leave at default `bottom:360px`): `running-away`, `suspicious`, `hidden-fee-panic` (~430 still safer). Poses that sit LOW (raise `bottom`): `thinking` ~450, `confused` ~440, `shocked` ~420, `deadpan-side-eye` ~430, `tiny-defeated` ~430, `holding-receipt-evidence` ~400. Always snapshot a caption-over-WIT beat per pose to confirm.
 
 Two recurring CARD bugs caught this run (both push a hero card past the right safe edge `x880` because cards center on the FRAME center 540, not the safe-zone center 470):
-- Long stamp text (`NEGATIVE OPTION BILLING`, `FINANCIAL AWARENESS`) overflows — **stack to two lines** (`<br>`) or drop the font; verify with the safe guide.
-- An inline-block badge inside a `white-space:nowrap` card (`.lock` "now: a monthly fee") renders BESIDE the line and blows the width out — set the badge `display:block; width:max-content; margin:.. auto` so it stacks centered. Same for statement rows: add `white-space:nowrap` so a long label ("The one you love") doesn't wrap ugly.
+- Long stamp text (`NEGATIVE OPTION BILLING`, `FINANCIAL AWARENESS`) overflows - **stack to two lines** (`<br>`) or drop the font; verify with the safe guide.
+- An inline-block badge inside a `white-space:nowrap` card (`.lock` "now: a monthly fee") renders BESIDE the line and blows the width out - set the badge `display:block; width:max-content; margin:.. auto` so it stacks centered. Same for statement rows: add `white-space:nowrap` so a long label ("The one you love") doesn't wrap ugly.
 
 Result: 4 shorts all 1080x1920, 0 lint errors, built on ports 1101-1104. S01 Free-Trial-Countdown 32.6s · S02 Cancelling-Vision-Quest 28.7s · S03 Warm-Bottom 21.05s · S04 Product-Is-You 21.2s. `✓` (U+2713) DID render in snapshot Chromium (unlike emoji); barcode via `repeating-linear-gradient` works well for a "PRODUCT: YOU" tag.
 
@@ -84,12 +84,12 @@ Result: 4 shorts all 1080x1920, 0 lint errors, built on ports 1101-1104. S01 Fre
 
 ## Feedback Log
 
-### 2026-06-22 — Skill created from the first verified shorts run
+### 2026-06-22 - Skill created from the first verified shorts run
 
 Classification: `Operational lesson`
 
 Context:
-Anh Khoa asked to split the main video into 3 vertical shorts as a sub-workflow, build natively in HyperFrames, review per short, then export. During the run he corrected four things that are now LOCKED rules: (1) WIT must be much bigger; (2) keep content out of the platform-UI edge zones (added the safe zone); (3) captions must sit at the vertical center AND look distinct from the in-video labels (white-on-dark subtitle), never covering WIT/labels/cards; (4) each short must be a COMPLETE short, not a hook — remove the "full video" CTA. He chose native portrait rebuild + regenerated VO + one-off-then-skillify.
+Anh Khoa asked to split the main video into 3 vertical shorts as a sub-workflow, build natively in HyperFrames, review per short, then export. During the run he corrected four things that are now LOCKED rules: (1) WIT must be much bigger; (2) keep content out of the platform-UI edge zones (added the safe zone); (3) captions must sit at the vertical center AND look distinct from the in-video labels (white-on-dark subtitle), never covering WIT/labels/cards; (4) each short must be a COMPLETE short, not a hook - remove the "full video" CTA. He chose native portrait rebuild + regenerated VO + one-off-then-skillify.
 
 Lesson:
 Shorts are first-class. Rebuild vertically (don't crop), reuse the section's real assets + voice, regenerate clean per-short VO, caption from real timings, keep everything in the safe zone with a big WIT and centered distinct subtitles, and end on the payoff with NO CTA.

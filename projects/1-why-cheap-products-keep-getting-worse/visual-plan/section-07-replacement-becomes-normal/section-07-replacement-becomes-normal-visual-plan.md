@@ -11,7 +11,7 @@ Status:
 
 ## Section Goal
 
-Explain why replacement becomes the default even when people dislike waste — not by blaming the buyer, but by showing the *system* making replacement easier than repair. Land the recurring motif as a dry punchline: the cheap product quietly becomes `a subscription with extra steps`.
+Explain why replacement becomes the default even when people dislike waste - not by blaming the buyer, but by showing the *system* making replacement easier than repair. Land the recurring motif as a dry punchline: the cheap product quietly becomes `a subscription with extra steps`.
 
 ## Source Inputs
 
@@ -22,7 +22,7 @@ Explain why replacement becomes the default even when people dislike waste — n
 
 ## Timing Source
 
-`estimated` — no `section-07-word-timings.json` exists, and word timings could not be generated in this environment (`hyperframes transcribe` requires whisper-cpp, which is not installed; no Python/faster-whisper). All cue times below are estimated proportionally from the marked script (word counts + `[pause]`/`[beat]` markers) against the `29.312s` audio. Structure is correct; fine sync may drift by a few tenths and should be confirmed in Studio against the audio (or re-pinned precisely if word timings are generated later).
+`estimated` - no `section-07-word-timings.json` exists, and word timings could not be generated in this environment (`hyperframes transcribe` requires whisper-cpp, which is not installed; no Python/faster-whisper). All cue times below are estimated proportionally from the marked script (word counts + `[pause]`/`[beat]` markers) against the `29.312s` audio. Structure is correct; fine sync may drift by a few tenths and should be confirmed in Studio against the audio (or re-pinned precisely if word timings are generated later).
 
 ## Narration
 
@@ -50,7 +50,7 @@ And the cheap product quietly becomes a subscription with extra steps.
 - WIT density: `3 beats; Scene 1: 1 (held cues 1-2), Scene 2: 0 (breathing for the reasons list), Scene 3: 2 (re-buy + payoff)`
 - Motion density: `hard cuts between big scenes; labels hard-show on the spoken beat; the only timed reveals are the landfill joke, the four staggered reasons, the price-tag "smile", and the deadpan payoff`
 - Real-life texture: `real e-waste pile (Scene 1 base) and real fulfillment-warehouse boxes (Scene 2 base), both used clean (no gray wash)`
-- Self-made base: `Scene 3 is a justified self-made CSS checkout/receipt scene — the channel builds receipts in CSS (Sections 1-2), the joke needs custom repeating "AGAIN" text, and clean brand-free real checkout/receipt photos were not available on Commons (all candidates were store-branded or contained people)`
+- Self-made base: `Scene 3 is a justified self-made CSS checkout/receipt scene - the channel builds receipts in CSS (Sections 1-2), the joke needs custom repeating "AGAIN" text, and clean brand-free real checkout/receipt photos were not available on Commons (all candidates were store-branded or contained people)`
 - Retention strategy: `open on a literal pile of discarded gadgets (the result), explain the system as a fulfillment line, then pay off with a receipt that prints "AGAIN" three times`
 - Do-not: `do not blame the buyer; the system, not the person, makes replacement easy`
 

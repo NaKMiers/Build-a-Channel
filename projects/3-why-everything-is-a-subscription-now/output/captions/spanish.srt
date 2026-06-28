@@ -16,7 +16,7 @@ Siempre es más alto.
 
 5
 00:00:07,220 --> 00:00:10,040
-Ahora mismo, el dinero sale en silencio de tu cuenta cada mes —
+Ahora mismo, el dinero sale en silencio de tu cuenta cada mes -
 
 6
 00:00:10,040 --> 00:00:11,740
@@ -44,7 +44,7 @@ Alquilas toda tu vida. Un pago a la vez.
 
 12
 00:00:23,620 --> 00:00:26,660
-Ahora bien — este no es un video sobre que las suscripciones son malvadas
+Ahora bien - este no es un video sobre que las suscripciones son malvadas
 
 13
 00:00:26,660 --> 00:00:28,920
@@ -84,7 +84,7 @@ Paga cada mes, y la pantalla se enciende.
 
 22
 00:00:44,140 --> 00:00:46,920
-Salta un pago, y tu propio dispositivo hace esto —
+Salta un pago, y tu propio dispositivo hace esto -
 
 23
 00:00:46,920 --> 00:00:48,060
@@ -100,11 +100,11 @@ Así que aquí está la verdadera pregunta.
 
 26
 00:00:53,220 --> 00:00:56,420
-¿Cómo es que casi todo — tus apps, tus series, tu software,
+¿Cómo es que casi todo - tus apps, tus series, tu software,
 
 27
 00:00:56,420 --> 00:00:58,280
-hasta los botones dentro de tu auto —
+hasta los botones dentro de tu auto -
 
 28
 00:00:58,280 --> 00:01:01,820
@@ -140,7 +140,7 @@ Luego tus pantallas se unieron a la fiesta.
 
 36
 00:01:16,360 --> 00:01:17,780
-Música, películas, series —
+Música, películas, series -
 
 37
 00:01:17,780 --> 00:01:19,800
@@ -188,11 +188,11 @@ Y no se detuvo en las pantallas.
 
 48
 00:01:44,740 --> 00:01:48,260
-Algunas automotrices han intentado poner los asientos con calefacción —
+Algunas automotrices han intentado poner los asientos con calefacción -
 
 49
 00:01:48,260 --> 00:01:50,840
-asientos que ya están en el auto que compraste —
+asientos que ya están en el auto que compraste -
 
 50
 00:01:50,840 --> 00:01:52,280
@@ -216,11 +216,11 @@ Imagina que vendes una cafetera.
 
 55
 00:02:02,440 --> 00:02:05,380
-Haces una venta, dices gracias, y luego esperas —
+Haces una venta, dices gracias, y luego esperas -
 
 56
 00:02:05,380 --> 00:02:07,820
-quizás años — con la esperanza de que esa persona vuelva alguna vez.
+quizás años - con la esperanza de que esa persona vuelva alguna vez.
 
 57
 00:02:07,820 --> 00:02:10,820
@@ -248,7 +248,7 @@ Un cliente que compra una vez vale poco.
 
 63
 00:02:20,380 --> 00:02:22,800
-Un cliente que paga cada mes vale mucho —
+Un cliente que paga cada mes vale mucho -
 
 64
 00:02:22,800 --> 00:02:24,820
@@ -300,7 +300,7 @@ Para atraparte, hacen que se sienta gratis.
 
 76
 00:02:53,140 --> 00:02:56,240
-Solo pon tu tarjeta — ya sabes, sin ninguna razón en absoluto.
+Solo pon tu tarjeta - ya sabes, sin ninguna razón en absoluto.
 
 77
 00:02:56,240 --> 00:02:58,840
@@ -324,7 +324,7 @@ Y la mayoría no cancela el día siete. Lo olvidan.
 
 82
 00:03:11,020 --> 00:03:14,360
-No porque sean descuidados — porque olvidar es el diseño.
+No porque sean descuidados - porque olvidar es el diseño.
 
 83
 00:03:14,360 --> 00:03:17,320
@@ -340,7 +340,7 @@ Un fantasma, viviendo en tu cuenta bancaria.
 
 86
 00:03:23,240 --> 00:03:26,360
-Sin pagar renta. Bueno — no sin pagar renta. Ese es justo el problema.
+Sin pagar renta. Bueno - no sin pagar renta. Ese es justo el problema.
 
 87
 00:03:26,360 --> 00:03:29,940
@@ -408,7 +408,7 @@ Esto incluso tiene nombre.
 
 103
 00:04:07,980 --> 00:04:10,220
-Se le ha llamado facturación de opción negativa —
+Se le ha llamado facturación de opción negativa -
 
 104
 00:04:10,220 --> 00:04:12,220
@@ -432,7 +432,7 @@ Así que mucha gente simplemente... se rinde. Siguen pagando.
 
 109
 00:04:25,300 --> 00:04:29,500
-No porque lo quieran — porque cancelar se siente como un trabajo de medio tiempo.
+No porque lo quieran - porque cancelar se siente como un trabajo de medio tiempo.
 
 110
 00:04:29,500 --> 00:04:31,320
@@ -472,7 +472,7 @@ El producto nunca fue la cosa.
 
 119
 00:04:50,400 --> 00:04:52,040
-El producto eres tú — quedándote.
+El producto eres tú - quedándote.
 
 120
 00:04:52,040 --> 00:04:56,020
@@ -488,7 +488,7 @@ Saber que "pequeño y mensual" es un diseño, no un accidente.
 
 123
 00:05:01,260 --> 00:05:04,260
-Así que de vez en cuando, toma el teléfono que te ha estado cobrando —
+Así que de vez en cuando, toma el teléfono que te ha estado cobrando -
 
 124
 00:05:04,260 --> 00:05:05,500

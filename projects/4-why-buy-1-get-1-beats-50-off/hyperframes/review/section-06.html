@@ -84,16 +84,16 @@
       <img class="photo bin" src="./assets/visual-references/section-06-when-the-store-loses/base-e-bin.jpg" alt=""><div class="scrim right"></div>
     </div>
 
-    <!-- CUE A 0-6.42 : WIT right, device left — profit counter morphs +$2 -> -$1 -->
+    <!-- CUE A 0-6.42 : WIT right, device left - profit counter morphs +$2 -> -$1 -->
     <div id="cue-a" class="clip cue" data-start="0" data-duration="6.42" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
       <div class="magic ca-fair" style="left:120px; top:96px;">okay, fair is fair…</div>
       <div class="bignum green ca-plus" style="left:120px; top:250px;"><span class="cap">store's profit</span><span class="v">+$2</span></div>
       <div class="bignum red ca-minus" style="left:120px; top:250px;"><span class="cap">…sometimes</span><span class="v">−$1</span></div>
-      <div class="stamp ca-good ui" style="left:150px; top:600px; font-size:58px;">they lose too — good.</div>
+      <div class="stamp ca-good ui" style="left:150px; top:600px; font-size:58px;">they lose too - good.</div>
       <img class="wit ca-wit" data-layout-allow-overflow="" style="right:-150px; bottom:-360px; width:1320px;" src="./assets/wit/wit-pose-awkward-celebration.png" alt="">
     </div>
 
-    <!-- CUE B 6.44-12.54 : WIT left, devices right — staple toasts rain -->
+    <!-- CUE B 6.44-12.54 : WIT left, devices right - staple toasts rain -->
     <div id="cue-b" class="clip cue" data-start="6.44" data-duration="6.10" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
       <div class="toast cb-t1 ui" style="left:1160px; top:170px;"><div class="ic" style="background:#eef2f6;"></div><div class="tx">milk</div><div class="amt grn">+1¢</div></div>
       <div class="toast cb-t2 ui" style="left:1160px; top:290px;"><div class="ic" style="background:#d9b382;"></div><div class="tx">bread</div><div class="amt grn">+2¢</div></div>
@@ -102,7 +102,7 @@
       <img class="wit cb-wit" data-layout-allow-overflow="" style="left:-180px; bottom:-360px; width:1320px;" src="./assets/wit/wit-pose-thinking.png" alt="">
     </div>
 
-    <!-- CUE C 12.56-22.54 : WIT right, devices left — BAIT + cart fills -->
+    <!-- CUE C 12.56-22.54 : WIT right, devices left - BAIT + cart fills -->
     <div id="cue-c" class="clip cue" data-start="12.56" data-duration="9.98" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
       <div class="hero gold cc-bait" style="left:120px; top:110px; font-size:118px;">BAIT</div>
       <div class="hero white cc-leader" style="left:124px; top:270px; font-size:46px;">a "loss leader"</div>
@@ -113,7 +113,7 @@
       <img class="wit cc-wit" data-layout-allow-overflow="" style="right:-150px; bottom:-360px; width:1320px;" src="./assets/wit/wit-pose-suspicious.png" alt="">
     </div>
 
-    <!-- CUE D 22.56-30.26 : WIT left, devices right — use-by flips to EXPIRED -->
+    <!-- CUE D 22.56-30.26 : WIT left, devices right - use-by flips to EXPIRED -->
     <div id="cue-d" class="clip cue" data-start="22.56" data-duration="7.70" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
       <div class="hero white cd-twofor" style="left:1020px; top:200px; font-size:60px;">2-for-1 you<br>can't finish…</div>
       <div class="cd live cd-live ui" style="left:1020px; top:430px;"><div class="t">USE BY</div><div class="n">3 days</div></div>
@@ -121,7 +121,7 @@
       <img class="wit cd-wit" data-layout-allow-overflow="" style="left:-180px; bottom:-360px; width:1300px;" src="./assets/wit/wit-pose-confused.png" alt="">
     </div>
 
-    <!-- CUE E 30.28-34.923 : WIT right, device left — yogurt drops, BINNED -->
+    <!-- CUE E 30.28-34.923 : WIT right, device left - yogurt drops, BINNED -->
     <div id="cue-e" class="clip cue" data-start="30.28" data-duration="4.643" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
       <div class="hero white ce-bin" style="left:120px; top:150px; font-size:64px;">a "free" yogurt…<br><span class="red">you forgot you owned</span></div>
       <div class="yog ce-yog" style="left:300px; top:380px;"><div class="cup"><div class="lid"></div><div class="lbl">FREE</div></div></div>
@@ -147,7 +147,7 @@
       tl.fromTo("#scene-d", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 22.56);
       tl.fromTo("#scene-e", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 30.28);
 
-      // SCENE A — profit counter morphs +$2 -> -$1 ("sometimes they lose too")
+      // SCENE A - profit counter morphs +$2 -> -$1 ("sometimes they lose too")
       hide("#cue-a .ca-minus", 0); hide("#cue-a .ca-good", 0);
       show("#cue-a .ca-fair", 0, 0.40);
       show("#cue-a .ca-wit", 0, 0.60);
@@ -156,7 +156,7 @@
       smash("#cue-a .ca-minus", 0, 4.50, { scale: 1.5, opacity: 0 }); // "sometimes they lose too"
       pop("#cue-a .ca-good", 0, 5.90);                                // "good."
 
-      // SCENE B — staple toasts rain, then loss chip
+      // SCENE B - staple toasts rain, then loss chip
       hide("#cue-b .cb-t2", 6.44); hide("#cue-b .cb-t3", 6.44); hide("#cue-b .cb-loss", 6.44);
       show("#cue-b .cb-wit", 6.44, 6.60);
       pop("#cue-b .cb-t1", 6.44, 7.80);                               // "milk"
@@ -164,7 +164,7 @@
       pop("#cue-b .cb-t3", 6.44, 8.20);                               // "eggs"
       smash("#cue-b .cb-loss", 6.44, 10.74, { scale: 0.6, opacity: 0 }); // "give one away ... lose money"
 
-      // SCENE C — BAIT, then the cart fills with profit items + total
+      // SCENE C - BAIT, then the cart fills with profit items + total
       hide("#cue-c .cc-leader", 12.56); hide("#cue-c .cc-i1", 12.56); hide("#cue-c .cc-i2", 12.56); hide("#cue-c .cc-cart", 12.56); hide("#cue-c .cc-spoiler", 12.56);
       show("#cue-c .cc-wit", 12.56, 12.70);
       smash("#cue-c .cc-bait", 12.56, 13.76, { scale: 0.4, opacity: 0 }); // "Bait."
@@ -174,7 +174,7 @@
       smash("#cue-c .cc-cart", 12.56, 20.20, { scale: 0.5, opacity: 0 }); // "make money"
       smash("#cue-c .cc-spoiler", 12.56, 21.16, { scale: 0.5, opacity: 0 }); // "spoiler, you will"
 
-      // SCENE D — use-by flips to EXPIRED science experiment
+      // SCENE D - use-by flips to EXPIRED science experiment
       hide("#cue-d .cd-dead", 22.56);
       show("#cue-d .cd-wit", 22.56, 22.70);
       show("#cue-d .cd-twofor", 22.56, 24.74);                        // "two for one you can't finish"
@@ -182,7 +182,7 @@
       hide("#cue-d .cd-live", 27.62);
       smash("#cue-d .cd-dead", 22.56, 27.62, { scale: 0.5, opacity: 0 }); // "science experiments in the fridge"
 
-      // SCENE E — yogurt drops in, BINNED
+      // SCENE E - yogurt drops in, BINNED
       hide("#cue-e .ce-binned", 30.28);
       show("#cue-e .ce-wit", 30.28, 30.42);
       show("#cue-e .ce-bin", 30.28, 32.06);                          // "binning a free yogurt"

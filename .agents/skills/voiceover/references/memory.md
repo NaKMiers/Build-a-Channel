@@ -16,7 +16,7 @@ Use this file for section-selection behavior, section voiceover output shape, TT
 - Do not infer the section from the active video state, the next unfinished section, existing previews, missing outputs, or prior chat context.
 - Put `All` at the top of section choices.
 - Interpret `All` as separate voiceover outputs for every script section, not one stitched full-video file.
-- Write only the voiceover index file (new projects `03-voiceover.md`; legacy projects `04-voiceover.md` — resolve by suffix per `.agents/rules/video-workflow.md`) and files under `voiceover/`.
+- Write only the voiceover index file (new projects `03-voiceover.md`; legacy projects `04-voiceover.md` - resolve by suffix per `.agents/rules/video-workflow.md`) and files under `voiceover/`.
 - Keep one useful MP3 preview per section by default.
 - Avoid preserving duplicate MP3/WAV scratch files unless a renderer requires them or the user asks.
 - Use `David23 / am_eric / 0.84 / en-us` as the default final voice direction from shared memory.
@@ -31,7 +31,7 @@ Use this file for section-selection behavior, section voiceover output shape, TT
 
 APPROVED GOLD STANDARD: the user loves the pace, tone, and pause of `why-everything-is-a-subscription-now`
 Section 5 (final heavy-pause version, `David23 / am_eric / 0.84`, ~50s for ~195 words). Generate ALL
-future section TTS inputs in this style by default — do not wait to be asked, do not start sparse.
+future section TTS inputs in this style by default - do not wait to be asked, do not start sparse.
 
 Exemplar file to imitate (read it before authoring a new tts-input):
 `projects/3-why-everything-is-a-subscription-now/voiceover/section-05-free-trial-countdown/tts-inputs/section-05-free-trial-countdown-tts.txt`
@@ -53,7 +53,7 @@ The Section 5 recipe (concrete, copyable):
 - Levers reminder (measured): only `...` (~0.28s) and `.` (~0.21s) add pause; `. .` resets prosody
   without adding length; commas, line breaks, and `_` add nothing.
 
-Density check: a finished section should have MANY more `...` lines than spoken lines — if it reads
+Density check: a finished section should have MANY more `...` lines than spoken lines - if it reads
 sparse/even, it will sound "đều đều, buồn ngủ" (flat, sleepy). When unsure, add more holds, not fewer.
 The user's repeated direction across S3/S4/S5 was always "more pause".
 
@@ -191,7 +191,7 @@ Probing showed no `python3`, `python`, `py`, or `pip` on this Windows machine.
 
 Lesson:
 HyperFrames Kokoro TTS depends on a system Python 3.8+ with `kokoro-onnx` + `soundfile`. When
-Python is absent, TTS cannot run for ANY voice, so a scratch fallback is also impossible — do not
+Python is absent, TTS cannot run for ANY voice, so a scratch fallback is also impossible - do not
 offer scratch as a workaround in that case. This is an environment/tooling block, not an am_eric
 voice-availability issue.
 
@@ -244,11 +244,11 @@ has no SSML, so `[emphasis]`/`[pause]` in the marked script do not change the au
 
 Lesson:
 To actually affect Kokoro delivery, shape the TTS INPUT TEXT:
-- Pauses: WRONG to rely on line breaks or commas — both are ignored for timing on this build. Use
+- Pauses: WRONG to rely on line breaks or commas - both are ignored for timing on this build. Use
   PERIODS and ELLIPSES. See the 2026-06-23 measured correction below for the verified table.
 - Pseudo-emphasis: true per-word stress is not possible in Kokoro. Comma-isolation gives at most a
   slight intonation change, not a timing pause.
-- Global deliberateness: lower speed (0.80, or the learner 0.78/0.76) — but changing speed mid-video
+- Global deliberateness: lower speed (0.80, or the learner 0.78/0.76) - but changing speed mid-video
   breaks consistency, so prefer text-shaping at the kept 0.84 unless the user wants the whole video slower.
 Keep the canonical `*-script.txt` as the real script wording (matching 02-script.md); only the
 `tts-inputs/*.txt` carries the pause/comma phrasing tweaks. Document the divergence in the section README.
@@ -280,7 +280,7 @@ breaks produce no audible pause. Rather than guess, ran a controlled experiment 
 | no punctuation           | 2.581s   | baseline          |
 | commas `,`               | 2.581s   | none (identical!) |
 | line breaks / blank lines| 2.795s*  | none (newlines flattened; the .214 here is the periods, not the breaks) |
-| em dash `—`              | 2.645s   | ~0.06s (tiny)     |
+| em dash `-`              | 2.645s   | ~0.06s (tiny)     |
 | period `.`               | 2.795s   | ~0.21s            |
 | ellipsis `...`           | 2.859s   | ~0.28s (largest)  |
 
@@ -291,17 +291,17 @@ comma-isolation adds a pause. Both the per-section files used the same `0.6.76` 
 Lesson:
 This HyperFrames Kokoro build flattens ALL whitespace (newlines + blank lines) into one continuous
 string before synthesis. Timing pauses come ONLY from punctuation and `--speed`. Measured pause
-strength: ellipsis `...` > period `.` > em dash `—` > comma `,` ≈ nothing ≈ line break. Even the
+strength: ellipsis `...` > period `.` > em dash `-` > comma `,` ≈ nothing ≈ line break. Even the
 strongest single mark adds only ~0.2-0.3s, so a long dramatic silence is NOT achievable from text
 punctuation alone.
 
 Apply next time:
-- Do NOT shape pauses with line breaks or commas — they do nothing for timing on this build. The
+- Do NOT shape pauses with line breaks or commas - they do nothing for timing on this build. The
   canonical `*-script.txt` and `tts-inputs/*.txt` line layout is for human readability only.
 - For a noticeable beat, use `...`; for a normal sentence stop, a period; chain `. ...` or split into
   more sentences to stack ~0.2s holds.
 - For a LONG/dramatic pause, add real silence at the HyperFrames render/assembly stage (visual holds
-  while audio is quiet) — TTS text cannot produce it.
+  while audio is quiet) - TTS text cannot produce it.
 - For a uniformly slower read, use `--speed` (0.80 / learner 0.78 / 0.76), not punctuation.
 - Fast confirmation that an edit changed nothing: the JSON `durationSeconds` is identical to the prior run.
 
@@ -339,7 +339,7 @@ The user's verified style toolkit:
   ellipses around it. The user listed `_` but their files don't actually use it.
 
 Measured pause strength (same 8-word phrase, speed 0.84), to combine with the rhythm rules:
-ellipsis `...` (~0.28s) > period `.` (~0.21s) > em dash `—` (~0.06s) > comma `,` ~= line break ~= 0.
+ellipsis `...` (~0.28s) > period `.` (~0.21s) > em dash `-` (~0.06s) > comma `,` ~= line break ~= 0.
 
 Apply next time (author tts-inputs in THIS style by default, don't wait to be told):
 - Vary pause lengths within a section: single `.` (short), `. .` (reset/staccato), trailing `...`
@@ -416,9 +416,9 @@ close) and regenerated at 0.82 → 19.456s. He then auditioned downward in singl
 section). Speed locked at 0.79 for all later sections of this video.
 
 Lesson:
-This owner's comfortable David23 speed is the slow end of the predicted band — he A/B'd 0.84 → 0.82 →
+This owner's comfortable David23 speed is the slow end of the predicted band - he A/B'd 0.84 → 0.82 →
 0.80 → 0.79 and settled on 0.79 (even slower than `why-everything-is-a-subscription-now`'s 0.8). Default
-to ~0.79-0.80 for him, not 0.84. He also has a clear taste for a SHORT, punchy hook — when a hook runs
+to ~0.79-0.80 for him, not 0.84. He also has a clear taste for a SHORT, punchy hook - when a hook runs
 long, expect "shorter / more condense," so draft hooks tight and lean on contractions for the open. He
 auditions speed in fast one-step nudges (just a bare number like "0.79"), so generate one, expect a
 nudge, regen cheaply, and don't over-document until it stabilizes.

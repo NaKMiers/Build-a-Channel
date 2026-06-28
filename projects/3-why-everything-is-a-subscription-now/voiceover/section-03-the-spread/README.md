@@ -18,7 +18,7 @@ Status:
 - learner clarity notes:
   - Authored in the approved Section 5 spacious pacing template.
   - The subscription list ("one for shows, one for movies...") is split into separate held lines so it stops rushing (commas add no pause in this engine).
-  - `**bold**` joke markers and `[beat]/[deadpan]` cues are NOT spoken — stripped before TTS.
+  - `**bold**` joke markers and `[beat]/[deadpan]` cues are NOT spoken - stripped before TTS.
 
 ## Output Rule
 

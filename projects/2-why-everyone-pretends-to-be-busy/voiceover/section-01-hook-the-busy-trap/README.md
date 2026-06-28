@@ -26,7 +26,7 @@ Keep one useful MP3 preview file only unless a renderer requires another format.
 
 - File: `scratch-audio/section-01-hook-the-busy-trap-david23-am_eric-0.84.mp3`
 - Duration: `21.056s`
-- Use: `approved channel voice — production preview`
+- Use: `approved channel voice - production preview`
 - Tool: `hyperframes@0.6.76 tts` (Kokoro)
 - Caveat: Duration (21.056s) is a little under the script estimate (~27s); visual production may add short holds or silence to fill timing.
 

@@ -27,7 +27,7 @@ Keep one useful MP3 preview file only unless a renderer requires another format.
 
 - File: `scratch-audio/section-05-visible-work-beats-quiet-thinking-david23-am_eric-0.86.mp3`
 - Duration: `42.859s`
-- Use: `approved voice, 0.86 pace — production preview`
+- Use: `approved voice, 0.86 pace - production preview`
 - Tool: `hyperframes@0.6.76 tts` (Kokoro)
 - Caveat: 0.86 to match Section 4; sections 1-3 are still 0.84.
 

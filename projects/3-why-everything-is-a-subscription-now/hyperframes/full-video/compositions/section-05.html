@@ -138,7 +138,7 @@
 
     <!-- CUE D forget -->
     <div id="cue-d" class="clip cue" data-start="21.0" data-duration="9.7" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
-      <div class="notif cd-notif ui" style="left:90px; top:250px; opacity:0;"><div class="ic"></div><div class="tx">Day 7 — cancel your trial?<small>tap to manage subscription</small></div></div>
+      <div class="notif cd-notif ui" style="left:90px; top:250px; opacity:0;"><div class="ic"></div><div class="tx">Day 7 - cancel your trial?<small>tap to manage subscription</small></div></div>
       <div class="headline cd-design" style="left:90px; top:430px; width:760px; opacity:0;">forgetting is the <span class="hl">DESIGN</span></div>
       <div class="label cd-flld" style="left:90px; bottom:140px; opacity:0;">small · fuzzy · life is loud</div>
       <img class="wit cd-wit" data-layout-allow-overflow="" style="right:-180px; bottom:-330px; width:1200px; opacity:0;" src="./assets/wit/wit-pose-thinking.png" alt="">
@@ -160,7 +160,7 @@
         <div class="sh">bank statement · this month</div>
         <div class="row known"><span class="nm">Groceries</span><span class="amt">−$54.20</span></div>
         <div class="row known"><span class="nm">Electric bill</span><span class="amt">−$61.00</span></div>
-        <div class="row myst cf-myst"><span class="nm">?? UNKNOWN — opened once</span><span class="amt">−$3.00</span></div>
+        <div class="row myst cf-myst"><span class="nm">?? UNKNOWN - opened once</span><span class="amt">−$3.00</span></div>
         <div class="row known"><span class="nm">Coffee</span><span class="amt">−$4.50</span></div>
       </div>
       <div class="stmtring cf-ring" style="right:28px; top:422px; width:844px; height:66px; opacity:0;"></div>
@@ -207,7 +207,7 @@
 
       // SCENE D forget
       show("#cue-d .cd-notif", 21.0, 21.5);                            // "most people don't cancel on day seven"
-      tl.to("#cue-d .cd-notif", { opacity: 0.32, duration: 0.3 }, 23.5);            // "they forget" — reminder fades, ignored
+      tl.to("#cue-d .cd-notif", { opacity: 0.32, duration: 0.3 }, 23.5);            // "they forget" - reminder fades, ignored
       smash("#cue-d .cd-design", 21.0, 26.0, { scale: 1.2, opacity: 0 });          // "forgetting is the design"
       show("#cue-d .cd-flld", 21.0, 27.6);                             // "small / fuzzy / loud"
       show("#cue-d .cd-wit", 21.0, 23.2);
@@ -222,7 +222,7 @@
       // SCENE F statement / mystery charge
       show("#cue-f .cf-head", 39.5, 39.7);                             // "open your bank statement"
       show("#cue-f .cf-stmt", 39.5, 40.2);
-      smash("#cue-f .cf-ring", 39.5, 43.3, { scale: 1.4, opacity: 0 });// "a mystery charge" — ring the exact row
+      smash("#cue-f .cf-ring", 39.5, 43.3, { scale: 1.4, opacity: 0 });// "a mystery charge" - ring the exact row
       show("#cue-f .cf-wit", 39.5, 43.3);
       smash("#cue-f .cf-every", 39.5, 44.5, { scale: 1.2, opacity: 0 });// "three dollars every month"
       // EXPIRED banner takes over; hide the headline so it doesn't sit under the banner

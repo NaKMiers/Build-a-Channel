@@ -2,7 +2,7 @@
 
 Video: `Why Everyone Pretends To Be Busy`
 
-Status: `all 7 sections generated (mixed delivery — see notes)`
+Status: `all 7 sections generated (mixed delivery - see notes)`
 
 Source skill: `voiceover`
 
@@ -17,7 +17,7 @@ Source file:
 - Speed: `0.84`
 - Language: `en-us`
 - Tone: calm, lightly dry, learner-friendly
-- Voice status: `active` — Section 1 generated with the approved David23 voice. Python 3.12.10 installed via winget this session (`kokoro-onnx` + `soundfile`); the real Python dir must be prepended to PATH so HyperFrames bypasses the Microsoft Store python stub.
+- Voice status: `active` - Section 1 generated with the approved David23 voice. Python 3.12.10 installed via winget this session (`kokoro-onnx` + `soundfile`); the real Python dir must be prepended to PATH so HyperFrames bypasses the Microsoft Store python stub.
 
 ## Section Voiceover Index
 
@@ -46,7 +46,7 @@ Source file:
 - Speed: `0.84`
 - Language: `en-us`
 - Tool: `hyperframes@0.6.76 tts` (Kokoro)
-- Use: `approved channel voice — production preview`
+- Use: `approved channel voice - production preview`
 - Notes: Generated with the approved David23 voice; no scratch fallback. Duration is ~6s under the script estimate (~27s); visual production may add short holds or silence. Python 3.12.10 installed via winget this session.
 
 ### Section 2: Reframe: Looking Busy vs Doing Work
@@ -62,7 +62,7 @@ Source file:
 - Speed: `0.84`
 - Language: `en-us`
 - Tool: `hyperframes@0.6.76 tts` (Kokoro)
-- Use: `approved channel voice — production preview`
+- Use: `approved channel voice - production preview`
 - Notes: Generated with the approved David23 voice; no scratch fallback. Duration ~2s under the script estimate (~31s).
 
 ### Section 3: Busy Became A Status Symbol
@@ -78,7 +78,7 @@ Source file:
 - Speed: `0.84`
 - Language: `en-us`
 - Tool: `hyperframes@0.6.76 tts` (Kokoro)
-- Use: `approved channel voice — production preview`
+- Use: `approved channel voice - production preview`
 - Notes: Generated with the approved David23 voice; no scratch fallback. Duration ~9s under the script estimate (~54s).
 
 ### Section 4: Your Apps Invented Emergencies
@@ -94,7 +94,7 @@ Source file:
 - Speed: `0.86` (user-chosen after trying 0.84 and 0.88)
 - Language: `en-us`
 - Tool: `hyperframes@0.6.76 tts` (Kokoro)
-- Use: `approved voice, 0.86 per-section pace — production preview`
+- Use: `approved voice, 0.86 per-section pace - production preview`
 - Notes: User asked for emphasis + pauses, then a slightly faster pace; settled on 0.86 (0.84 slow, 0.88 too fast). Pause-tuned TTS input kept. Earlier 0.84 and 0.88 takes removed. Section 4 now faster than sections 1-3 (0.84).
 
 ### Section 5: Visible Work Beats Quiet Thinking
@@ -110,7 +110,7 @@ Source file:
 - Speed: `0.86`
 - Language: `en-us`
 - Tool: `hyperframes@0.6.76 tts` (Kokoro)
-- Use: `approved voice, 0.86 pace — production preview`
+- Use: `approved voice, 0.86 pace - production preview`
 - Notes: Pause-tuned + 0.86 to match the user-approved Section 4 delivery. `[slower]` honored on the manager-survey line. Duration on the ~42s estimate.
 
 ### Section 6: "I'm Busy" Is A Shield
@@ -126,7 +126,7 @@ Source file:
 - Speed: `0.86`
 - Language: `en-us`
 - Tool: `hyperframes@0.6.76 tts` (Kokoro)
-- Use: `approved voice, 0.86 pace — production preview`
+- Use: `approved voice, 0.86 pace - production preview`
 - Notes: Pause-tuned + 0.86 to match Sections 4-5. Closing "busy... or pretending... or both" uses ellipsis holds. Duration ~10s under estimate (~48s).
 
 ### Section 7: Payoff: Activity Is Not Value
@@ -142,7 +142,7 @@ Source file:
 - Speed: `0.86`
 - Language: `en-us`
 - Tool: `hyperframes@0.6.76 tts` (Kokoro)
-- Use: `approved voice, 0.86 pace — production preview`
+- Use: `approved voice, 0.86 pace - production preview`
 - Notes: Final section. Pause-tuned + 0.86 to match Sections 4-6; calmer, more deliberate payoff. `[slower]` on the insight line. Duration ~13s under estimate (~60s).
 
 ## Stale / Regeneration Notes

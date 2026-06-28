@@ -2,11 +2,11 @@
 
 Video: `Why Buy 1 Get 1 Free Beats 50% Off`
 Section: `Section 6: When The Store Loses`
-Status: `built to subscription bar — fresh bases + clean text; see IMPLEMENTATION.md for as-built`
+Status: `built to subscription bar - fresh bases + clean text; see IMPLEMENTATION.md for as-built`
 
 ## Section Goal
 
-The honest turn: BOGO is not always a store win. On cheap staples (milk/bread/eggs) the store can lose money — so why do it? Bait: a loss leader to drag you in and fill your cart with profitable stuff. And there's a cost to you: food you can't finish becomes science experiments / a binned "free" yogurt.
+The honest turn: BOGO is not always a store win. On cheap staples (milk/bread/eggs) the store can lose money - so why do it? Bait: a loss leader to drag you in and fill your cart with profitable stuff. And there's a cost to you: food you can't finish becomes science experiments / a binned "free" yogurt.
 
 ## Source Inputs
 
@@ -37,11 +37,11 @@ Nothing screams "I saved money" like binning a free yogurt you forgot you owned.
 
 | Scene | Local Time | Voice Range | Base | Hero Device | WIT |
 |---|---:|---|---|---|---|
-| A — fair is fair / store loses | 0.0–6.44 | "fair is fair… sometimes they lose too. Good." | produce flat-lay | "the store can LOSE too" + "…good." | awkward-celebration R |
-| B — cheap staples | 6.44–12.56 | "milk, bread, eggs… can actually lose money" | milk bottles | "milk·bread·eggs" + "barely any profit → LOSE money" | thinking L |
-| C — bait / loss leader | 12.56–22.56 | "Bait… a loss leader… fill the cart… spoiler, you will" | red fishing lure | "BAIT" → "a loss leader" → "fill the cart" → "spoiler: you will" | suspicious R |
-| D — science experiments | 22.56–30.28 | "two-for-one you can't finish… science experiments in the fridge" | open night fridge | "2-for-1 you can't finish → science experiments" | confused L |
-| E — binning a free yogurt | 30.28–34.923 | "binning a free yogurt you forgot you owned" | litter bin | "binning a 'free' yogurt → you forgot you owned" | facepalm R |
+| A - fair is fair / store loses | 0.0–6.44 | "fair is fair… sometimes they lose too. Good." | produce flat-lay | "the store can LOSE too" + "…good." | awkward-celebration R |
+| B - cheap staples | 6.44–12.56 | "milk, bread, eggs… can actually lose money" | milk bottles | "milk·bread·eggs" + "barely any profit → LOSE money" | thinking L |
+| C - bait / loss leader | 12.56–22.56 | "Bait… a loss leader… fill the cart… spoiler, you will" | red fishing lure | "BAIT" → "a loss leader" → "fill the cart" → "spoiler: you will" | suspicious R |
+| D - science experiments | 22.56–30.28 | "two-for-one you can't finish… science experiments in the fridge" | open night fridge | "2-for-1 you can't finish → science experiments" | confused L |
+| E - binning a free yogurt | 30.28–34.923 | "binning a free yogurt you forgot you owned" | litter bin | "binning a 'free' yogurt → you forgot you owned" | facepalm R |
 
 ## HyperFrames Guidance
 

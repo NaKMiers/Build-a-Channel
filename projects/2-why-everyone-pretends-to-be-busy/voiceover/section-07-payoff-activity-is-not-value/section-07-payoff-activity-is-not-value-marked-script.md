@@ -1,9 +1,9 @@
-# Section 7 Marked Script — Payoff: Activity Is Not Value
+# Section 7 Marked Script - Payoff: Activity Is Not Value
 
 Video: `Why Everyone Pretends To Be Busy`
 
 Delivery: pause-tuned + speed 0.86 (matching the user-approved Section 4-6 delivery). This is the
-payoff — calmer than the earlier chaos.
+payoff - calmer than the earlier chaos.
 
 IMPORTANT: HyperFrames Kokoro TTS ignores markup tags. Emphasis/pauses below are human direction
 only; the real pauses come from line breaks + commas + ellipsis in the TTS input file.
@@ -30,4 +30,4 @@ Direction notes:
 - Important words to lift: activity, value, nothing is.
 - Keep the whole section calmer and more deliberate than the chaotic middle sections.
 - `[slower]` on "be more honest about what actually matters" (the real insight).
-- The final line "trapped in a calendar with Wi-Fi" is the closing dry button — clean, unhurried, no rush.
+- The final line "trapped in a calendar with Wi-Fi" is the closing dry button - clean, unhurried, no rush.

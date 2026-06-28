@@ -6,8 +6,8 @@ description: Manually synchronize the Codex (.agents) and Claude (.claude) confi
 # Skill Sync (Claude wrapper)
 
 This is the Claude discovery wrapper for the **skill-sync** skill. The canonical
-definition — full purpose, source-of-truth model, workflow, templates, and self-improving
-memory — lives under `.agents/` so Codex and Claude share one source of truth.
+definition - full purpose, source-of-truth model, workflow, templates, and self-improving
+memory - lives under `.agents/` so Codex and Claude share one source of truth.
 
 When this skill runs:
 

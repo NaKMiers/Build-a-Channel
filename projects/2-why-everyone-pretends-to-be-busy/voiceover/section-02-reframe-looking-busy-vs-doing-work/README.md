@@ -26,7 +26,7 @@ Keep one useful MP3 preview file only unless a renderer requires another format.
 
 - File: `scratch-audio/section-02-reframe-looking-busy-vs-doing-work-david23-am_eric-0.84.mp3`
 - Duration: `28.949s`
-- Use: `approved channel voice — production preview`
+- Use: `approved channel voice - production preview`
 - Tool: `hyperframes@0.6.76 tts` (Kokoro)
 - Caveat: Duration (28.949s) is just under the script estimate (~31s); visual production may add a short hold.
 

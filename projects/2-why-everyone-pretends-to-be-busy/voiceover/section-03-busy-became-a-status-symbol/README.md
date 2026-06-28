@@ -26,7 +26,7 @@ Keep one useful MP3 preview file only unless a renderer requires another format.
 
 - File: `scratch-audio/section-03-busy-became-a-status-symbol-david23-am_eric-0.84.mp3`
 - Duration: `45.077s`
-- Use: `approved channel voice — production preview`
+- Use: `approved channel voice - production preview`
 - Tool: `hyperframes@0.6.76 tts` (Kokoro)
 - Caveat: Duration (45.077s) is under the script estimate (~54s); visual production may add holds or silence.
 

@@ -17,12 +17,12 @@ Source files:
 - Format: `1920x1080`
 - Main grammar: real photo base → CSS real-UI overlay (bank-app / device screens) → handwritten label/red markup → giant WIT emotion → hard cut
 - Script promise: you are paying for more subscriptions than you can name; you rent your whole life
-- Main motif: screens that own you — every device glows, fills with subscription rows, padlocks when payment stops
+- Main motif: screens that own you - every device glows, fills with subscription rows, padlocks when payment stops
 - WIT role: suspicious audience surrogate ambushed by his own devices
 - Real-life texture: real CC0/CC BY phone + desk photos behind CSS UI
 - Editor intent: few persistent big scenes, voice-timed cue changes, giant readable WIT
 - Reference standard: real images first (Openverse), CSS real-UI illustration on top, WIT from shared library
-- Red markup style: sparse — one red circle + `?` on a mystery charge, one EXPIRED stamp
+- Red markup style: sparse - one red circle + `?` on a mystery charge, one EXPIRED stamp
 - Motion rule: hard-show labels on the spoken word; impact only for the red circle, the stamp, and the payoff
 
 ## Section Visual Plan Index

@@ -19,7 +19,7 @@ English.
 ## Audience & Advantage (apply to every candidate)
 
 - Audience: **A2–C1 English learners** (anchor at B1; let C1 enjoy the jokes, let A2 lean on captions).
-- Advantage: **interesting English** — entertainment first, learning rides along. A topic must be
+- Advantage: **interesting English** - entertainment first, learning rides along. A topic must be
   something a learner would WANT to watch even if it were in their own language.
 - Tone is allowed to be savage/cheeky (see `learning-log.md` confirmed tone rules); edge aimed at the
   system / the viewer's own wallet, never slurs; public figures only as transformative parody.
@@ -54,11 +54,11 @@ Use the project-local `/browse` skill (`.agents/skills/browse/SKILL.md`); fall b
 
 Look across multiple demand signals:
 
-- **Google Trends** — rising / breakout queries, and 12-month interest for a candidate term. Capture
+- **Google Trends** - rising / breakout queries, and 12-month interest for a candidate term. Capture
   the trend state (rising / breakout / steady-high) and the comparison.
-- **YouTube** — recent videos (ideally last weeks/months) on the topic with high view counts; note
+- **YouTube** - recent videos (ideally last weeks/months) on the topic with high view counts; note
   view counts, recency, and how many strong videos exist (saturation vs opportunity).
-- **Search / news / social interest** — news volume, Reddit/forum threads, "people also ask", or
+- **Search / news / social interest** - news volume, Reddit/forum threads, "people also ask", or
   visible engagement showing the topic is alive now.
 
 For EVERY serious candidate, record real evidence:
@@ -74,17 +74,17 @@ invent view counts, trend states, or numbers. A candidate with no evidence canno
 
 ## Request Modes
 
-- **Suggest Mode** — user wants ideas. Return scored candidates with evidence; do not create a project.
-- **Persist Mode** — user picks a topic / asks to start the next video. Create or update only
+- **Suggest Mode** - user wants ideas. Return scored candidates with evidence; do not create a project.
+- **Persist Mode** - user picks a topic / asks to start the next video. Create or update only
   `projects/<slug>/00-topic-intake.md`. If downstream files exist, mark them stale and tell the user.
-- **Improve Memory Mode** — user gives taste feedback; update the active project, then
+- **Improve Memory Mode** - user gives taste feedback; update the active project, then
   `references/memory.md`, then shared memory only for channel-wide lessons.
 
 ## Workflow
 
 1. Rebuild channel context; note recent/active topics so candidates don't repeat.
 2. BROWSE for what's trending / currently interesting across the channel's world (money, internet,
-   society, business, modern life, current culture) — start from real trend/interest signals, not memory.
+   society, business, modern life, current culture) - start from real trend/interest signals, not memory.
 3. Collect a pool of `8–12` currently-interesting candidates, each with at least one real demand signal.
 4. Shape each into a sharper angle: `topic + contradiction + visual metaphor + viewer pain`, with the
    sentence test: `This video is about how ___ looks like ___, but is actually ___.`
@@ -99,15 +99,15 @@ invent view counts, trend states, or numbers. A candidate with no evidence canno
 
 ## Scorecard (each /5)
 
-- **Trend / timeliness** — is it hot or rising NOW?
-- **Demand evidence** — how strong/real is the proof of interest?
-- **Curiosity** — strong "wait, why is that?" hook.
-- **Relatability (global)** — a universal pain the worldwide learner audience feels (not local-only).
-- **Explainability** — there is a real, satisfying hidden "why" to explain.
-- **Interesting-English fit** — entertaining + learnable for A2–C1; would they watch for fun?
-- **Visual potential** — strong scenes, mascot beats, real-asset/screenshot/caricature material.
-- **Packaging strength** — title + thumbnail curiosity without fake claims.
-- **Feasibility & safety** — buildable; copyright/law/community-standards safe; protects trust.
+- **Trend / timeliness** - is it hot or rising NOW?
+- **Demand evidence** - how strong/real is the proof of interest?
+- **Curiosity** - strong "wait, why is that?" hook.
+- **Relatability (global)** - a universal pain the worldwide learner audience feels (not local-only).
+- **Explainability** - there is a real, satisfying hidden "why" to explain.
+- **Interesting-English fit** - entertaining + learnable for A2–C1; would they watch for fun?
+- **Visual potential** - strong scenes, mascot beats, real-asset/screenshot/caricature material.
+- **Packaging strength** - title + thumbnail curiosity without fake claims.
+- **Feasibility & safety** - buildable; copyright/law/community-standards safe; protects trust.
 
 Threshold for normal production: strong total with no critical category (trend, demand evidence,
 curiosity, explainability, interesting-English fit) below `3/5`.

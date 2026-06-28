@@ -1,6 +1,6 @@
 ---
 name: shorts
-description: Side sub-workflow after combine. Turn one finished Why It Works long video into 2-4 COMPLETE vertical short videos (1080x1920, 9:16) for YouTube Shorts / TikTok / Reels, then export each to MP4. Use when the user asks for shorts, vertical shorts, YouTube Shorts, TikTok/Reels clips, cut shorts from the main video, portrait clips, or "split the video into shorts". Has three modes — plan (pick clippable moments, write shorts/shorts-plan.md), build (native portrait HyperFrames rebuild per short on port 1100+N with regenerated voiceover + burned centered subtitles), and export (render approved shorts to projects/<slug>/output/shorts/*.mp4). Each short is a COMPLETE standalone short, NOT a hook/teaser, and carries NO "watch the full video" CTA. Requires one project whose sections are already built (combine done, or every section rendered). Reuses each source section's real photos, WIT poses, and font; never edits the long-form sections. Requires one project (named or smart-selected) and an explicit short selection with All as the first option.
+description: Side sub-workflow after combine. Turn one finished Why It Works long video into 2-4 COMPLETE vertical short videos (1080x1920, 9:16) for YouTube Shorts / TikTok / Reels, then export each to MP4. Use when the user asks for shorts, vertical shorts, YouTube Shorts, TikTok/Reels clips, cut shorts from the main video, portrait clips, or "split the video into shorts". Has three modes - plan (pick clippable moments, write shorts/shorts-plan.md), build (native portrait HyperFrames rebuild per short on port 1100+N with regenerated voiceover + burned centered subtitles), and export (render approved shorts to projects/<slug>/output/shorts/*.mp4). Each short is a COMPLETE standalone short, NOT a hook/teaser, and carries NO "watch the full video" CTA. Requires one project whose sections are already built (combine done, or every section rendered). Reuses each source section's real photos, WIT poses, and font; never edits the long-form sections. Requires one project (named or smart-selected) and an explicit short selection with All as the first option.
 ---
 
 # Shorts
@@ -9,7 +9,7 @@ description: Side sub-workflow after combine. Turn one finished Why It Works lon
 
 Run the `shorts` side sub-workflow of the `Why It Works` channel: derive 2-4 **complete vertical short videos** (1080x1920) from ONE finished long video and export each to MP4.
 
-Each short is its own little story (hook -> beats -> payoff), carries channel identity (big WIT, real photo bases, handwritten labels), and is built as a **native portrait composition**, never a crop/letterbox of the 16:9 master. Each short stands alone — it is NOT a trailer for the long video and carries NO call-to-action card.
+Each short is its own little story (hook -> beats -> payoff), carries channel identity (big WIT, real photo bases, handwritten labels), and is built as a **native portrait composition**, never a crop/letterbox of the 16:9 master. Each short stands alone - it is NOT a trailer for the long video and carries NO call-to-action card.
 
 This skill REUSES each source section's approved assets (photos, WIT poses, font) and the script wording. It never edits, re-renders, or restyles the long-form sections.
 
@@ -40,7 +40,7 @@ Require exactly one project.
 
 Resolution order: (1) the slug/path the user names; (2) the unambiguous active project in chat; (3) the single project under `projects/` (excluding `_template`) whose sections are all built; else ask.
 
-Readiness: the project's sections must be built — `combine` done (`hyperframes/full-video/`) OR every `## Section N` in `02-script.md` has an approved build (`hyperframes/review/section-XX.html` or `section-previews/section-XX-*/index.html`) plus its section voiceover. If sections are missing, STOP and tell the user to finish the main pipeline first.
+Readiness: the project's sections must be built - `combine` done (`hyperframes/full-video/`) OR every `## Section N` in `02-script.md` has an approved build (`hyperframes/review/section-XX.html` or `section-previews/section-XX-*/index.html`) plus its section voiceover. If sections are missing, STOP and tell the user to finish the main pipeline first.
 
 ## Required Context
 
@@ -50,7 +50,7 @@ Read before working:
 2. `.agents/rules/README.md`
 3. `.agents/_shared/channel/current-state.md`, `channel-foundation.md`, `channel-guardrails.md`, `learning-log.md`
 4. `.agents/_shared/systems/topic-packaging-hooks.md` (hook discipline) and `audio-feedback-quality.md`
-5. `references/memory.md` (this skill's proven toolchain + locked rules) — every run
+5. `references/memory.md` (this skill's proven toolchain + locked rules) - every run
 6. the chosen project's `02-script.md`, `03-voiceover.md`, `05-production-board.md`, the approved section builds, and `voiceover/combined-word-timings.json` when present
 7. the `render` skill's WIT/safe-layout guidance for HyperFrames composition mechanics
 
@@ -64,7 +64,7 @@ These came out of the first run (`why-cheap-products-keep-getting-worse`) and ar
 - **WIT big** (≈1/3-1/2 of the frame), face kept ABOVE the centered caption so the caption never covers it. Reuse approved WIT pose PNGs only.
 - **Captions = distinct SUBTITLE style**, NOT the cream handwritten label look: white text on a translucent dark pill (`rgba(16,12,9,0.5)` + dark text-stroke shadow), centered VERTICALLY (`top:50%`), 2-4 words, voice-synced. Punchline/definition/payoff lines are carried by the on-screen cards/bubbles and are NOT duplicated in a caption; captions are timed to clear before a card pops so they never overlap WIT, labels, or cards.
 - **Reuse the source section's real photo bases + WIT poses + font.** Copy a minimal working set into the short's `assets/photos`, `assets/wit`, `assets/fonts` (junctions fail on this Windows HyperFrames setup). Every scene has a real photo base + a top/bottom scrim.
-- **Voiceover regenerated per short** from the trimmed/assembled script via `hyperframes tts` in the approved voice `David23 / am_eric / 0.84 / en-us` — see memory for the Python/kokoro toolchain. Same words, same voice, only the subset the short needs.
+- **Voiceover regenerated per short** from the trimmed/assembled script via `hyperframes tts` in the approved voice `David23 / am_eric / 0.84 / en-us` - see memory for the Python/kokoro toolchain. Same words, same voice, only the subset the short needs.
 - **Captions timed from real word-level timings** (whisper-tiny.en) of the short's own audio; re-time the tail monotonically (whisper end-of-audio glitch). Never estimate.
 
 ## Modes

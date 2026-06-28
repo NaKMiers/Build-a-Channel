@@ -16,4 +16,4 @@ Status: `built to subscription bar (fresh bases + clean text)`
 - One clean hero device per beat, well-spaced + sequential (no stacked text); giant WIT R/L/R/L/R
 - WIT: awkward-celebration → thinking → suspicious → confused → facepalm (~1280–1320px)
 - Reference pass: 5 FRESH CC bases (none reused from other sections)
-- HyperFrames readiness: built — `Section06Loses`, 34.923s, port 1006; word-pinned; lint/validate 0 errors
+- HyperFrames readiness: built - `Section06Loses`, 34.923s, port 1006; word-pinned; lint/validate 0 errors

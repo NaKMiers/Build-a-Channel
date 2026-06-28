@@ -1,10 +1,10 @@
-# Section 1 Hook — Implementation Notes
+# Section 1 Hook - Implementation Notes
 
 ## Build
 
 - Modeled on the approved `why-everyone-pretends-to-be-busy` Section 1 structure (scenes on tracks 1/3/4, cues on track 2, audio track 10, GSAP `show/reveal/smash` helpers, `window.__timelines["Section01Hook"]`).
 - Real-UI illustration (standing preference): bank statement + subscription cards built in CSS over real CC photo bases; no real brand logos used (fake service names).
-- Assets materialized as a local working set under `assets/` (font, 4 WIT poses, 2 base photos) instead of a junction — junctions 404 with the HyperFrames CLI on this Windows box (documented precedent).
+- Assets materialized as a local working set under `assets/` (font, 4 WIT poses, 2 base photos) instead of a junction - junctions 404 with the HyperFrames CLI on this Windows box (documented precedent).
 
 ## Word timings
 
@@ -19,14 +19,14 @@
 ## Checks
 
 - `lint`: 0 errors, 0 warnings.
-- `validate`: 0 errors, 0 warnings, 80 non-blocking contrast warnings (white UI text / photo bases — expected; 0 errors is the gate).
+- `validate`: 0 errors, 0 warnings, 80 non-blocking contrast warnings (white UI text / photo bases - expected; 0 errors is the gate).
 - `snapshot --at`: verified all 7 cues (2.5/6.0/8.5/13.0/17.9/18.3/21.0).
 
 ## Server
 
 - `http://localhost:1001/#project/Build%20a%20Channel`
 - `http://localhost:1001/api/projects/Build%20a%20Channel/preview/comp/index.html`
-- Project id resolves to `Build a Channel` (workspace root), not the section folder — known HyperFrames behavior on this setup.
+- Project id resolves to `Build a Channel` (workspace root), not the section folder - known HyperFrames behavior on this setup.
 
 ## Not done (by rule)
 

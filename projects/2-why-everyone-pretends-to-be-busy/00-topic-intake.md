@@ -34,19 +34,19 @@ What makes the viewer think `Wait, that's true. Why does that happen?`
 ## Channel Fit
 
 - Lane: work, status, attention, and social behavior (with modern-life + internet-tools overlap)
-- Tone fit: smart, simple, dry, funny — strong fit; script is already deadpan and learner-clear
+- Tone fit: smart, simple, dry, funny - strong fit; script is already deadpan and learner-clear
 - English learner fit: short sentences, repeated key phrases (`busy`, `urgent`, `visible work`, `real progress`), jokes that land from context not slang
 - Why now: remote/hybrid work, notification overload, and "fake productivity" discourse are high-demand (see reference evidence below)
 
 ## Angle Package
 
 - Topic: Why everyone pretends to be busy
-- Contradiction: Visible busyness signals importance; quiet thinking signals laziness — even though thinking is where the real work happens
+- Contradiction: Visible busyness signals importance; quiet thinking signals laziness - even though thinking is where the real work happens
 - Recurring visual metaphor: calendar cage + fake emergency machine (five apps interrupting each other, red dots, "URGENT")
 - Viewer pain: pressure to always look available, responsive, and overloaded; guilt about slow/quiet deep work
-- WIT role: trapped, attacked, overloaded, deadpan — the system happens *to* WIT before WIT performs the behavior
+- WIT role: trapped, attacked, overloaded, deadpan - the system happens *to* WIT before WIT performs the behavior
 - Real-life objects: full calendar, exploding inbox, chat notifications, task board columns, dashboards, receipts of "updates about updates," the sad vegetable in the fridge
-- Final insight: modern life confuses activity with value; the goal is not to be less busy but more honest about what actually matters — "if everything is urgent, nothing is important"
+- Final insight: modern life confuses activity with value; the goal is not to be less busy but more honest about what actually matters - "if everything is urgent, nothing is important"
 
 ## Reference Evidence
 
@@ -65,7 +65,7 @@ Reference confidence: `medium-high` (multiple high-view, on-topic, recent refere
 
 Takeaway: demand for this exact angle is proven and current. The opening is crowded, so our
 edge is the WIT calendar-cage / fake-emergency motif, dry learner-friendly humor, and the
-specific four-reason hidden-system structure — not a generic "be more productive" message.
+specific four-reason hidden-system structure - not a generic "be more productive" message.
 
 ## Scorecard
 
@@ -98,10 +98,10 @@ insight ("looking busy became safer than looking thoughtful") rather than produc
 ## Next-Step Readiness
 
 - Research (step 1): credible sources/examples on "busyness as status," productivity theater,
-  notification/attention overload, and the visible-work bias — to factually ground the four reasons.
+  notification/attention overload, and the visible-work bias - to factually ground the four reasons.
 - Packaging (side branch): title that creates the question + thumbnail showing the contradiction
   (calendar cage / overloaded WIT) with 1-3 readable words; avoid repeating the title in the thumbnail.
-- First 10 seconds: Section 1 hook already drafted — WIT tries one real task, fake urgency attacks,
+- First 10 seconds: Section 1 hook already drafted - WIT tries one real task, fake urgency attacks,
   `REAL WORK` and the calendar cage / `BUSY?` appear, title promise clear by second 10.
 
 ## Note On Existing Script

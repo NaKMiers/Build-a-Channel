@@ -16,13 +16,13 @@ Source files:
 - Renderer: `HyperFrames`
 - Format: 1920x1080, section-first, real photo base behind every scene
 - Main grammar: real object base → voice-timed cue change → red markup / hard cut → next base
-- Script promise: "free" beats "50% off" — a trick, not generosity
+- Script promise: "free" beats "50% off" - a trick, not generosity
 - Main motif: the store as a stage magician; the shopper is the rabbit
 - WIT role: audience surrogate, giant on emotional beats, varied side/scale/pose per scene
 - Real-life texture: real store, real cash, real magic hat/curtain (CC0 + one CC BY-SA)
 - Editor intent: land the impossible claim fast, prove the doubling literally, pay off with the rabbit joke
 - Reference standard: Openverse/Wikimedia real photos first; no generated images this session
-- Red markup style: sparse — one red circle on the FREE culprit only
+- Red markup style: sparse - one red circle on the FREE culprit only
 - Motion rule: hard-show ordinary labels; impact only for FREE sticker, profit doubling, red circle, rabbit reveal
 
 ## Section Visual Plan Index
@@ -33,13 +33,13 @@ Source files:
 | 2 | Same To You, Not To Them | draft plan for approval | 40.469s | 5 | 11 | `visual-plan/section-02-same-to-you-not-to-them/section-02-same-to-you-not-to-them-visual-plan.md` | `visual-plan/section-02-same-to-you-not-to-them/reference-board.md` | math shown on screen; register→cash→coins→counter→Wedgwood |
 | 3 | The Receipt Knows | remade (subscription style) | 32.235s | 5 | 13 | `visual-plan/section-03-the-receipt-knows/section-03-the-receipt-knows-visual-plan.md` | `visual-plan/section-03-the-receipt-knows/reference-board.md` | vivid dark money bases + giant kinetic $5→$10 + giant WIT; cash→coins→basket→curtain→cash |
 | 4 | The Magic Word | built (subscription bar) | 37.099s | 5 | 12 | `visual-plan/section-04-the-magic-word/section-04-the-magic-word-visual-plan.md` | `visual-plan/section-04-the-magic-word/reference-board.md` | giant FREE + NUMBER-vs-FEELING + hostage shampoo; brain→coins→gift→cash→coins |
-| 5 | The Price Never Drops | remade — fresh bases, clean text | 36.416s | 5 | 11 | `visual-plan/section-05-the-price-never-drops/section-05-the-price-never-drops-visual-plan.md` | `visual-plan/section-05-the-price-never-drops/reference-board.md` | anchoring; 5 FRESH retail bases (shelf-tags→sale-store→boutique→aisle→shop); one clean hero per beat, no stacked text |
+| 5 | The Price Never Drops | remade - fresh bases, clean text | 36.416s | 5 | 11 | `visual-plan/section-05-the-price-never-drops/section-05-the-price-never-drops-visual-plan.md` | `visual-plan/section-05-the-price-never-drops/reference-board.md` | anchoring; 5 FRESH retail bases (shelf-tags→sale-store→boutique→aisle→shop); one clean hero per beat, no stacked text |
 | 6 | When The Store Loses | built (subscription bar) | 34.923s | 5 | 13 | `visual-plan/section-06-when-the-store-loses/section-06-when-the-store-loses-visual-plan.md` | `visual-plan/section-06-when-the-store-loses/reference-board.md` | honest turn / loss leader; 5 FRESH bases (produce→milk→fishing-lure→fridge→bin); clean spaced text |
 | 7 | Payoff: Free Cuts Your Judgment | built (full bar, kinetic) | 38.912s | 5 | 14 | `visual-plan/section-07-free-cuts-your-judgment/section-07-free-cuts-your-judgment-visual-plan.md` | `visual-plan/section-07-free-cuts-your-judgment/reference-board.md` | payoff; 5 FRESH bright bases (chess→scissors→calculator→mask→cards); kinetic; "25% off in a costume" |
 
 ## Cross-Section Continuity
 
-- Recurring object: two price signs (FREE vs 50% OFF, both "$5/item") — the spine motif of the whole video
+- Recurring object: two price signs (FREE vs 50% OFF, both "$5/item") - the spine motif of the whole video
 - Recurring label: "$5/item" and the word "free" as the magic word
 - WIT emotion arc: S1 suspicion → panic → betrayed (rabbit); later sections escalate the betrayal
 - Color/texture notes: warm store / green-gold cash / deep-red magic stage

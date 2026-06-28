@@ -18,6 +18,6 @@
   "speedNote": "Video-wide unified speed 0.8 (below the 0.84 channel default), set by user across all 7 sections.",
   "envNote": "Required PATH prepend on this Windows machine so HyperFrames finds the real Python 3.12 (not the Microsoft Store stub): export PATH=\"/c/Users/Anpha Right Choice/AppData/Local/Programs/Python/Python312:$PATH\"",
   "deliveryNote": "TTS input authored in the user's anti-monotone rhythm style: thesis 'The product is you... staying.' split with stacked ... holds for the [slower] landing; stacked ... before reveals ('It's your forgetting.') and the deadpan closer ('Your salary.' / 'For now.'); action list on '. .' staccato to 'Cancel the ghosts.' Bold joke markers and [beat]/[slower]/[deadpan] cues stripped before TTS.",
-  "assetCopy": "none — no HyperFrames section asset folder exists for this project yet",
+  "assetCopy": "none - no HyperFrames section asset folder exists for this project yet",
   "caveat": "none"
 }

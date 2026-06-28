@@ -7,7 +7,7 @@ Section:
 `Section 2: Reframe: You Stopped Buying, You Started Renting`
 
 Status:
-`REMADE 2026-06-23 to the approved Section 1 standing template — built + previewing on localhost:1002`
+`REMADE 2026-06-23 to the approved Section 1 standing template - built + previewing on localhost:1002`
 
 ## Files
 

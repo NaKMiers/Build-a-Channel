@@ -8,7 +8,7 @@ imagery, use more dynamic WIT, and demonstrate ideas with varied devices.
 
 ## Reference Pass Status
 
-- Status: `complete (remake) — vivid on-topic real photos via Openverse + loved CSS real-UI`
+- Status: `complete (remake) - vivid on-topic real photos via Openverse + loved CSS real-UI`
 - Real images saved: 3 safe assets (coins, cash, padlocks)
 - Generated images: none (no generator connected)
 - Prompt-only fallbacks: none
@@ -16,7 +16,7 @@ imagery, use more dynamic WIT, and demonstrate ideas with varied devices.
 ## Search / Browse Notes
 
 - Striking brand/people-free topical photos were scarce; pivoted to concrete MONEY + LOCK objects
-  (coins, cash, padlocks) which are vivid, on-topic, and clean — plus the owner's confirmed-favorite
+  (coins, cash, padlocks) which are vivid, on-topic, and clean - plus the owner's confirmed-favorite
   CSS real-UI built on top (app grid, notification toasts, free-trial countdown, EXPIRED modal, padlock wall).
 - Rejected: a face-lit phone photo (no-face rule), a brand-heavy desk (MacBook/Visa), vinyl with copyrighted covers, a Proton dashboard.
 
@@ -29,7 +29,7 @@ imagery, use more dynamic WIT, and demonstrate ideas with varied devices.
 | base-padlock.jpg | real photo | Flickr CC BY 4268291295 | safe asset | locked / "you rent it" | BS3 base under padlock wall + payoff | assets/visual-references/section-01-hook/base-padlock.jpg |
 | WIT poses | local PNG | shared library | safe asset | price-tag-suspicion, hidden-fee-panic, holding-phone-panic, trapped-by-app-screen | yes | .agents/_shared/assets/wit/poses/ |
 
-Note: `wit-pose-money-panic.png` has a baked black background (not transparent) — avoided; used `hidden-fee-panic` instead.
+Note: `wit-pose-money-panic.png` has a baked black background (not transparent) - avoided; used `hidden-fee-panic` instead.
 
 ## Idea-demonstration devices (replacing the repeated cream boxes)
 

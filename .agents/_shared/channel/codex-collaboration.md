@@ -13,7 +13,7 @@ This file describes how future Codex sessions should work inside `Why It Works`.
 - Channel name: `Why It Works`
 - Primary language: English
 - Format: no-face explainer
-- Audience lens: English learners, level A2–C1 (advantage: interesting English — entertainment-first; edge allowed, see learning-log.md)
+- Audience lens: English learners, level A2–C1 (advantage: interesting English - entertainment-first; edge allowed, see learning-log.md)
 - Lane: money, internet, society, business, and modern life
 - Tone: smart, simple, funny, dry
 - Renderer: HyperFrames-first

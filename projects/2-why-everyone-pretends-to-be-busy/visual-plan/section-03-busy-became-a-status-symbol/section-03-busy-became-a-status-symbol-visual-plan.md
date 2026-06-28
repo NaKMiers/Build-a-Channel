@@ -2,7 +2,7 @@
 
 Video: `Why Everyone Pretends To Be Busy`
 Section: `Section 3: Busy Became A Status Symbol`
-Status: `draft visual plan for approval (v2 — new standard: real bg every scene + real-UI + GIANT WIT)`
+Status: `draft visual plan for approval (v2 - new standard: real bg every scene + real-UI + GIANT WIT)`
 
 ## Section Goal
 Reason 1: busy became a status symbol. "I'm so busy" signals importance; busy gets treated like an emotion; the brag flips by culture; busy *sounds* responsible/needed/valuable, so people fill the day until the job becomes proving you're near the work.
@@ -20,12 +20,12 @@ Reason 1: busy became a status symbol. "I'm so busy" signals importance; busy ge
 ## Big Scene Plan
 | Scene | Time | Voice | Real base | Build |
 |---|---:|---|---|---|
-| A — status symbol | 0:00–4.06 | "the first reason… busy became a status symbol" | base-trophy.jpg (gold trophy) | BUSY = STATUS SYMBOL; WIT awkward-celebration |
-| B — I'm so busy = important | 4.06–11.0 | "I'm so busy… please notice that I am important" | base-busychat.jpg (hands at laptop) + CSS chat | "I'm so busy!!" → (= please notice I'm important); WIT talking |
-| C — busy isn't an emotion | 11.0–17.0 | "how are you? busy. which is not actually an emotion… everyone is tired" | base-emotions.jpg (grey desk) + CSS emotions board | EMOTIONS list + BUSY? in red; NOT AN EMOTION; WIT deadpan |
-| D — opposite brag | 17.0–25.42 | "long holidays / free afternoons… no free time at all. same planet, opposite brag" | base-holiday.jpg (tropical beach) + CSS packed-calendar | LONG HOLIDAYS vs NO FREE TIME → OPPOSITE BRAG; WIT suspicious |
-| E — busy sounds good | 25.42–33.32 | "busy sounds responsible / needed / lined up waiting… being needed feels valuable" | base-sounds.jpg (dark-wood hands) | RESPONSIBLE / NEEDED / WAITED-FOR → = FEELS VALUABLE; WIT thinking |
-| F — near the work | 33.32–45.14 | "fill the day… meetings about why the last meeting didn't finish… proving you are near the work" | base-nearwork.jpg (meeting room) + CSS calendar | MEETINGS ABOUT MEETINGS → PROVING YOU'RE NEAR THE WORK; WIT tiny-defeated |
+| A - status symbol | 0:00–4.06 | "the first reason… busy became a status symbol" | base-trophy.jpg (gold trophy) | BUSY = STATUS SYMBOL; WIT awkward-celebration |
+| B - I'm so busy = important | 4.06–11.0 | "I'm so busy… please notice that I am important" | base-busychat.jpg (hands at laptop) + CSS chat | "I'm so busy!!" → (= please notice I'm important); WIT talking |
+| C - busy isn't an emotion | 11.0–17.0 | "how are you? busy. which is not actually an emotion… everyone is tired" | base-emotions.jpg (grey desk) + CSS emotions board | EMOTIONS list + BUSY? in red; NOT AN EMOTION; WIT deadpan |
+| D - opposite brag | 17.0–25.42 | "long holidays / free afternoons… no free time at all. same planet, opposite brag" | base-holiday.jpg (tropical beach) + CSS packed-calendar | LONG HOLIDAYS vs NO FREE TIME → OPPOSITE BRAG; WIT suspicious |
+| E - busy sounds good | 25.42–33.32 | "busy sounds responsible / needed / lined up waiting… being needed feels valuable" | base-sounds.jpg (dark-wood hands) | RESPONSIBLE / NEEDED / WAITED-FOR → = FEELS VALUABLE; WIT thinking |
+| F - near the work | 33.32–45.14 | "fill the day… meetings about why the last meeting didn't finish… proving you are near the work" | base-nearwork.jpg (meeting room) + CSS calendar | MEETINGS ABOUT MEETINGS → PROVING YOU'RE NEAR THE WORK; WIT tiny-defeated |
 
 ## Cue State Timeline (word-timed)
 | Cue | Time | Voice cue (word@s) | Scene | Change | Motion | WIT |
@@ -42,10 +42,10 @@ Reason 1: busy became a status symbol. "I'm so busy" signals importance; busy ge
 |---|---|---|---|
 | base-trophy.jpg | CC0 (gold trophy on dark) | safe base | A (reuse, HD) |
 | base-busychat.jpg | CC0 StockSnap (hands at laptop) | safe base | B (chat float) |
-| base-emotions.jpg | CC0 StockSnap (grey desk) — reused from S6 | safe base | C |
+| base-emotions.jpg | CC0 StockSnap (grey desk) - reused from S6 | safe base | C |
 | base-holiday.jpg | CC0 StockSnap (tropical beach) | safe base | D |
-| base-sounds.jpg | CC0 StockSnap (dark-wood hands) — reused from S7 | safe base | E |
-| base-nearwork.jpg | CC0 (empty meeting room) — reused from S6 | safe base | F |
+| base-sounds.jpg | CC0 StockSnap (dark-wood hands) - reused from S7 | safe base | E |
+| base-nearwork.jpg | CC0 (empty meeting room) - reused from S6 | safe base | F |
 | icons/gcal.png, messenger.png | Wikimedia (Calendar / Messenger) | real-UI icon | B chat, D+F calendar |
 | 6 WIT poses | shared manifest | safe asset | A–F |
 Dropped v1 low-res bases base-beach/base-meeting/base-clock/base-coffee (~250px).

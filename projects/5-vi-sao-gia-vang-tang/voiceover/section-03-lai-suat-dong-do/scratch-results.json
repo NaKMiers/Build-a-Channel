@@ -1,0 +1,12 @@
+{
+  "section": "section-03-lai-suat-dong-do",
+  "status": "voice generated",
+  "engine": "edge-tts 7.2.8 (Microsoft Edge TTS)",
+  "voice": "vi-VN-NamMinhNeural",
+  "rate": "normal",
+  "language": "vi-VN",
+  "audio": "scratch-audio/section-03-lai-suat-dong-do-nam-minh.mp3",
+  "duration_seconds": 42.648,
+  "markup_stripped": true,
+  "note": "Vietnamese experiment; markup tags ([pause]/[beat]/[deadpan]/[slower]) removed before TTS. Marked source: 02-script.md."
+}

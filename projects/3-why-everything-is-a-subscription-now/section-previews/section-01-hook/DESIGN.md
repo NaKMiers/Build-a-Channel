@@ -1,4 +1,4 @@
-# Section 1 Hook — Design
+# Section 1 Hook - Design
 
 Video: `Why Everything Is a Subscription Now`
 Composition: `Section01Hook` · 1920x1080 · duration `23.509s` · port `1001`

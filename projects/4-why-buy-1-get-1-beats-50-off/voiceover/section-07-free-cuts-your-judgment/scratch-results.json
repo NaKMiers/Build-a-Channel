@@ -10,7 +10,7 @@
   "outputPath": "scratch-audio/section-07-free-cuts-your-judgment-david23-am_eric-0.82.mp3",
   "durationSeconds": 38.912,
   "scriptEstimateSeconds": 45,
-  "rev": "rev 2 — payoff: 'cuts the price vs cuts your judgment' thesis, fair caveat, '25% off in a costume' stinger, cheeky sign-off; speed 0.82 to match Sections 1-6 (unified video speed). Fix: tts-input 'shh' -> 'shush' because Kokoro spelled 'shh' as 's-h-h'; canonical script keeps 'shh'. Regenerated 39.381s -> 38.912s.",
+  "rev": "rev 2 - payoff: 'cuts the price vs cuts your judgment' thesis, fair caveat, '25% off in a costume' stinger, cheeky sign-off; speed 0.82 to match Sections 1-6 (unified video speed). Fix: tts-input 'shh' -> 'shush' because Kokoro spelled 'shh' as 's-h-h'; canonical script keeps 'shh'. Regenerated 39.381s -> 38.912s.",
   "ok": true,
   "pacingStyle": "approved spacious template: longest hold of the section after 'cuts your judgment' (the [pause] cue, the thesis line); soft 'shh... relax'; hold before the '25% off in a costume' stinger; staccato 'Same shelf. Same product.' callback then warm sign-off",
   "env": {

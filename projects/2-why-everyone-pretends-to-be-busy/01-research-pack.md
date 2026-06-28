@@ -14,7 +14,7 @@ Source skill: `research-pack`
 - Sharp angle: looking busy looks like hard work, but is actually a status performance that modern tools and culture reward more than real progress
 - Main contradiction: the less time you have for real work, the more professional you look
 - Recurring motif: calendar cage + fake emergency machine (notifications, red dots, "URGENT")
-- WIT role: trapped, attacked, overloaded, deadpan — the system happens *to* WIT before WIT performs the behavior
+- WIT role: trapped, attacked, overloaded, deadpan - the system happens *to* WIT before WIT performs the behavior
 - Final insight: modern life confuses activity with value; "if everything is urgent, nothing is important"
 - Main risk: going generic/preachy ("just be less busy / more productive")
 
@@ -25,7 +25,7 @@ quietly rewards the *appearance* of effort over the result. Real progress (think
 deep work) is mostly invisible, while busyness (meetings, fast replies, full calendars,
 notifications) is highly visible. On top of that, "being busy" has become a status signal,
 and modern tools manufacture a constant stream of fake urgency. So the rational move, for
-almost everyone, is to perform visible activity — and once a whole culture does this, looking
+almost everyone, is to perform visible activity - and once a whole culture does this, looking
 busy becomes safer than looking thoughtful.
 
 ## Research Questions
@@ -46,8 +46,8 @@ confirmed = navigated to the page and read its title/text this session.
 |---|---|---|---|---|---|---|
 | Research: Why Americans Are So Impressed by Busyness (2016) | Explainer of academic study | Harvard Business Review (Bellezza, Paharia, Keinan) | https://hbr.org/2016/12/research-why-americans-are-so-impressed-by-busyness | Reason 1: busy = status; long hours & no leisure signal importance (US); contrast with Italy where leisure = status | High (direct-fetch confirmed) | Use as fact source for "busy became status"; do not copy HBR framing/wording |
 | Conspicuous Consumption of Time: When Busyness and Lack of Leisure Time Become a Status Symbol (2017) | Peer-reviewed study | Journal of Consumer Research (Bellezza, Paharia, Keinan) | https://academic.oup.com/jcr/article-abstract/44/1/118/2736404 | Underlying academic basis for "busy as status symbol" | Medium (paywalled/Cloudflare-gated, not directly loaded; cited via HBR) | Cite as the study behind the HBR piece; verify exact wording before any on-screen quote |
-| Work Trend Index 2022: "Hybrid Work Is Just Work. Are We Doing It Wrong?" | Industry research report | Microsoft WorkLab | https://www.microsoft.com/en-us/worklab/work-trend-index/hybrid-work-is-just-work | Reason 3: "productivity paranoia" — 85% of leaders say hybrid makes it hard to be confident employees are productive; people perform visibility | High (direct-fetch confirmed; 85% stat read live) | Use the 85% / "productivity paranoia" framing as fact; do not imply it's our own survey |
-| Anatomy of Work 2023 | Industry research report | Asana | https://asana.com/resources/anatomy-of-work | Reason 2: modern tools create "work about work" — coordination, app-switching, status updates crowd out skilled work | Medium (title confirmed; exact % not re-read live) | Use the "work about work" concept; verify the precise percentage before putting a number on screen |
+| Work Trend Index 2022: "Hybrid Work Is Just Work. Are We Doing It Wrong?" | Industry research report | Microsoft WorkLab | https://www.microsoft.com/en-us/worklab/work-trend-index/hybrid-work-is-just-work | Reason 3: "productivity paranoia" - 85% of leaders say hybrid makes it hard to be confident employees are productive; people perform visibility | High (direct-fetch confirmed; 85% stat read live) | Use the 85% / "productivity paranoia" framing as fact; do not imply it's our own survey |
+| Anatomy of Work 2023 | Industry research report | Asana | https://asana.com/resources/anatomy-of-work | Reason 2: modern tools create "work about work" - coordination, app-switching, status updates crowd out skilled work | Medium (title confirmed; exact % not re-read live) | Use the "work about work" concept; verify the precise percentage before putting a number on screen |
 | The "Pretend to Work" Loophole of China | Video reference (demand/packaging) | Wonny | https://www.youtube.com/watch?v=W7VJLipgiuQ | Proven, fresh demand (~1.5M, 6 mo) for the "pretend to work" frame | High (direct-fetch confirmed) | Demand/packaging signal only; do not copy premise, script, or visuals |
 | Busy People vs. Productive People | Video reference | After Skool | https://www.youtube.com/watch?v=OTy-Fy3M00k | Appetite for busy-vs-productive contrast (~1.8M) | High (confirmed) | Structure/demand signal; do not copy the illustrated style |
 | Your "Busy" Life Would Disgust an Ancient Roman | Video reference | Folks of Yore | https://www.youtube.com/watch?v=1sGDIeldr-s | Recent curiosity-gap packaging on busyness as culture (~635K) | High (confirmed) | Packaging/title-hook signal only |
@@ -68,10 +68,10 @@ search. Overall `Reference confidence: medium-high`.
 
 ## What Is Actually Happening
 
-- `Fact (HBR / Bellezza et al)`: In the US, busyness and lack of leisure have become a **status symbol** — visible long hours signal that you are scarce, in demand, and important. (Notably culture-specific: in Italy, leisure signals status instead.)
+- `Fact (HBR / Bellezza et al)`: In the US, busyness and lack of leisure have become a **status symbol** - visible long hours signal that you are scarce, in demand, and important. (Notably culture-specific: in Italy, leisure signals status instead.)
 - `Inference`: Because **real progress is invisible** (thinking, focus, problem-solving) and **busyness is visible** (meetings, replies, full calendars), people are rewarded for visible activity, not results.
-- `Fact (Microsoft WTI 2022)`: **85% of leaders** say the shift to hybrid work made it hard to be confident employees are actually productive — "productivity paranoia." This pushes workers to *perform* visibility (be online, reply fast, attend everything).
-- `Fact/Inference (Asana Anatomy of Work)`: Modern stacks create **"work about work"** — coordination, status updates, app-switching — which looks like work and consumes the day while the real task waits.
+- `Fact (Microsoft WTI 2022)`: **85% of leaders** say the shift to hybrid work made it hard to be confident employees are actually productive - "productivity paranoia." This pushes workers to *perform* visibility (be online, reply fast, attend everything).
+- `Fact/Inference (Asana Anatomy of Work)`: Modern stacks create **"work about work"** - coordination, status updates, app-switching - which looks like work and consumes the day while the real task waits.
 - `Inference`: Notifications, red dots, and "URGENT" flags train the brain to treat every small ping as an emergency, so reacting feels like progress even when nothing important moved.
 
 ## Why It Keeps Happening
@@ -80,7 +80,7 @@ search. Overall `Reference confidence: medium-high`.
 - `Visibility bias`: Managers can only reward what they can see, so visible activity gets rewarded and quiet deep work goes unnoticed → people do more visible work.
 - `Tool design`: Apps compete for attention; "please ignore this until later" is bad for engagement, so everything is marked urgent → constant fake emergencies.
 - `Social shield`: "I'm busy" is the one socially accepted way to say no, defer a decision, or hide uncertainty → everyone keeps using it, so everyone stays "busy."
-- `Inference (open)`: Parkinson's Law — work expands to fill the time available — so an empty calendar gets filled with low-value visible tasks. (Common knowledge; not from a fetched source this run.)
+- `Inference (open)`: Parkinson's Law - work expands to fill the time available - so an empty calendar gets filled with low-value visible tasks. (Common knowledge; not from a fetched source this run.)
 
 ## Explanation Spine
 
@@ -89,7 +89,7 @@ Maps to the existing 7-section drafted script. (Script not written by this skill
 | Section | Job | Evidence | Visual anchor | WIT state |
 |---|---|---|---|---|
 | 1. Hook | Show fake urgency attacking real work | Visibility bias; "looking busy = professional" | WIT at desk → calendar cage + `REAL WORK` vs `BUSY?` | Trying to focus, then ambushed |
-| 2. Reframe | Not lazy people — appearance of work beats the work | Visible vs invisible work (inference) | Split: `appearance of work` vs `work`; thinking looks like "nothing" | Dry, slightly defensive |
+| 2. Reframe | Not lazy people - appearance of work beats the work | Visible vs invisible work (inference) | Split: `appearance of work` vs `work`; thinking looks like "nothing" | Dry, slightly defensive |
 | 3. Busy Became Status | Why looking busy became social value | HBR / Bellezza: busyness as status symbol | "Busy" as a fake emotion; meeting tower; "near the work" | Performing importance |
 | 4. Tools Create Fake Urgency | Tools manufacture tiny emergencies | Asana work-about-work; notification design (inference) | Fake emergency machine: 5 apps, red dots, `URGENT`; sad fridge vegetable | Overstimulated, twitchy |
 | 5. Visibility Beats Progress | Visible work rewarded over thinking | Microsoft productivity paranoia (85%); visibility bias | "Productivity theater"; moving tasks column-to-column; "possibly blinking" | Performing, then defeated |
@@ -125,17 +125,17 @@ Maps to the existing 7-section drafted script. (Script not written by this skill
 - Generic task board with cards being dragged column-to-column
 - "Productivity dashboard" with meaningless rising line
 - Fake meeting invite: "Planning meeting re: why the planning doc isn't done"
-- All UIs must be **self-made mockups** — no real logos, no pixel-copied app screens, no private data
+- All UIs must be **self-made mockups** - no real logos, no pixel-copied app screens, no private data
 
 ### Visual Metaphors
-- Calendar **cage** (bars made of calendar blocks trapping WIT) — the core recurring motif
+- Calendar **cage** (bars made of calendar blocks trapping WIT) - the core recurring motif
 - Fake **emergency machine** (apps as levers/buttons firing tiny alarms)
 - **Theater stage** for "productivity theater" (spotlight on a spreadsheet as the lead actor)
 - **Shield** labeled `I'M BUSY` deflecting questions/requests
 - Treadmill of visible activity going nowhere
 
 ### Thumbnail Tension
-- WIT trapped inside a calendar cage, overwhelmed, with one giant red `URGENT` — 1–3 words max
+- WIT trapped inside a calendar cage, overwhelmed, with one giant red `URGENT` - 1–3 words max
 - Contradiction: a frantic, alarm-covered WIT next to a tiny untouched `REAL WORK` folder
 - Keep title and thumbnail from repeating the same words (finalize in `packaging`)
 
@@ -181,23 +181,23 @@ Maps to the existing 7-section drafted script. (Script not written by this skill
 
 - In the US, busyness and lack of leisure can act as a status symbol (HBR / Bellezza, Paharia, Keinan).
 - This is culture-specific: in some countries leisure, not busyness, signals status (HBR).
-- 85% of leaders report it's hard to be confident hybrid employees are productive — "productivity paranoia" (Microsoft Work Trend Index 2022).
+- 85% of leaders report it's hard to be confident hybrid employees are productive - "productivity paranoia" (Microsoft Work Trend Index 2022).
 - Modern tools generate a large amount of "work about work" (coordination/updates/app-switching) that competes with focused work (Asana, concept).
 - Visible activity is easier to observe and reward than quiet thinking (inference, broadly supported).
 
 ## Claims To Avoid
 
-- Any precise statistic we did not confirm this session (e.g., exact "X% of the day on work about work," exact "23 minutes to refocus") — verify before putting a number on screen.
-- "Most people are faking all their work" / accusing viewers of dishonesty — off-thesis and off-brand.
+- Any precise statistic we did not confirm this session (e.g., exact "X% of the day on work about work," exact "23 minutes to refocus") - verify before putting a number on screen.
+- "Most people are faking all their work" / accusing viewers of dishonesty - off-thesis and off-brand.
 - Naming or blaming specific companies/apps/brands.
 - Health/psychology claims about burnout causing illness without a solid source.
-- Treating Parkinson's Law or "attention residue" as cited fact this run — they're framed as inference/common knowledge.
+- Treating Parkinson's Law or "attention residue" as cited fact this run - they're framed as inference/common knowledge.
 
 ## Open Questions
 
-- Exact Asana "work about work" percentage and report year — confirm before any on-screen number.
-- Gloria Mark / interruption-recovery time (often cited as ~23 minutes) — confirm a primary source before using.
-- The JCR (2017) paper's exact quotable line — confirm wording if we want a direct quote (HBR summary is safe to use as-is).
+- Exact Asana "work about work" percentage and report year - confirm before any on-screen number.
+- Gloria Mark / interruption-recovery time (often cited as ~23 minutes) - confirm a primary source before using.
+- The JCR (2017) paper's exact quotable line - confirm wording if we want a direct quote (HBR summary is safe to use as-is).
 - Is there a clean, license-safe real image for the calendar-cage / notification-overload thumbnail, or should it be fully generated/mockup? (Decide in `visual-plan`.)
 
 ## Research Decision
@@ -206,7 +206,7 @@ Strong enough to move into script. The four-reason hidden system (status, fake u
 visibility-beats-progress, busy-as-shield) is each backed by at least one credible source or a
 clearly-labeled inference, the recurring motif (calendar cage + fake emergency machine) is
 concrete and boardable, WIT has a clear emotional path across all 7 sections, and the learner
-vocabulary is practical. The existing external script aligns with this evidence spine — it can
+vocabulary is practical. The existing external script aligns with this evidence spine - it can
 enter at `script-draft` and be grounded/trimmed against this pack (especially the "Claims To
 Avoid" list) rather than rewritten from scratch.
 

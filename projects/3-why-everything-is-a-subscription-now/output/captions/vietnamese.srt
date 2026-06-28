@@ -16,7 +16,7 @@ Lúc nào cũng cao hơn.
 
 5
 00:00:07,220 --> 00:00:10,040
-Ngay lúc này, tiền đang lặng lẽ rời khỏi tài khoản của bạn mỗi tháng —
+Ngay lúc này, tiền đang lặng lẽ rời khỏi tài khoản của bạn mỗi tháng -
 
 6
 00:00:10,040 --> 00:00:11,740
@@ -44,7 +44,7 @@ Bạn thuê cả cuộc đời mình. Từng khoản thanh toán một.
 
 12
 00:00:23,620 --> 00:00:26,660
-Giờ thì — đây không phải video nói rằng gói đăng ký là xấu xa
+Giờ thì - đây không phải video nói rằng gói đăng ký là xấu xa
 
 13
 00:00:26,660 --> 00:00:28,920
@@ -84,7 +84,7 @@ Trả tiền mỗi tháng, màn hình sáng lên.
 
 22
 00:00:44,140 --> 00:00:46,920
-Lỡ một kỳ thanh toán, và chính thiết bị của bạn làm thế này —
+Lỡ một kỳ thanh toán, và chính thiết bị của bạn làm thế này -
 
 23
 00:00:46,920 --> 00:00:48,060
@@ -100,11 +100,11 @@ Vậy đây mới là câu hỏi thật sự.
 
 26
 00:00:53,220 --> 00:00:56,420
-Làm sao mà gần như mọi thứ — ứng dụng, phim ảnh, phần mềm,
+Làm sao mà gần như mọi thứ - ứng dụng, phim ảnh, phần mềm,
 
 27
 00:00:56,420 --> 00:00:58,280
-thậm chí cả nút bấm trong xe hơi của bạn —
+thậm chí cả nút bấm trong xe hơi của bạn -
 
 28
 00:00:58,280 --> 00:01:01,820
@@ -140,7 +140,7 @@ Rồi màn hình của bạn cũng nhập cuộc.
 
 36
 00:01:16,360 --> 00:01:17,780
-Nhạc, phim, chương trình —
+Nhạc, phim, chương trình -
 
 37
 00:01:17,780 --> 00:01:19,800
@@ -188,11 +188,11 @@ Và nó không dừng lại ở màn hình.
 
 48
 00:01:44,740 --> 00:01:48,260
-Một số hãng xe đã thử đưa ghế sưởi —
+Một số hãng xe đã thử đưa ghế sưởi -
 
 49
 00:01:48,260 --> 00:01:50,840
-ghế đã có sẵn trong chiếc xe bạn mua —
+ghế đã có sẵn trong chiếc xe bạn mua -
 
 50
 00:01:50,840 --> 00:01:52,280
@@ -216,11 +216,11 @@ Hãy tưởng tượng bạn bán một cái máy pha cà phê.
 
 55
 00:02:02,440 --> 00:02:05,380
-Bạn bán được một lần, bạn nói cảm ơn, rồi bạn chờ —
+Bạn bán được một lần, bạn nói cảm ơn, rồi bạn chờ -
 
 56
 00:02:05,380 --> 00:02:07,820
-có khi nhiều năm — hy vọng người đó quay lại.
+có khi nhiều năm - hy vọng người đó quay lại.
 
 57
 00:02:07,820 --> 00:02:10,820
@@ -248,7 +248,7 @@ Khách mua một lần thì đáng giá một chút.
 
 63
 00:02:20,380 --> 00:02:22,800
-Khách trả tiền mỗi tháng thì đáng giá rất nhiều —
+Khách trả tiền mỗi tháng thì đáng giá rất nhiều -
 
 64
 00:02:22,800 --> 00:02:24,820
@@ -300,7 +300,7 @@ Bớt "sản phẩm tuyệt vời." Thêm "cái bẫy đẹp đẽ."
 
 76
 00:02:53,140 --> 00:02:56,240
-Chỉ cần nhập thẻ vào — bạn biết đấy, chẳng vì lý do gì cả.
+Chỉ cần nhập thẻ vào - bạn biết đấy, chẳng vì lý do gì cả.
 
 77
 00:02:56,240 --> 00:02:58,840
@@ -324,7 +324,7 @@ Và hầu hết mọi người không hủy vào ngày thứ bảy. Họ quên.
 
 82
 00:03:11,020 --> 00:03:14,360
-Không phải vì họ cẩu thả — mà vì việc quên chính là chủ đích thiết kế.
+Không phải vì họ cẩu thả - mà vì việc quên chính là chủ đích thiết kế.
 
 83
 00:03:14,360 --> 00:03:17,320
@@ -340,7 +340,7 @@ Một bóng ma, sống trong tài khoản ngân hàng của bạn.
 
 86
 00:03:23,240 --> 00:03:26,360
-Ở miễn phí. À — không miễn phí đâu. Đó mới là cả vấn đề.
+Ở miễn phí. À - không miễn phí đâu. Đó mới là cả vấn đề.
 
 87
 00:03:26,360 --> 00:03:29,940
@@ -408,7 +408,7 @@ Chuyện này thậm chí còn có tên gọi.
 
 103
 00:04:07,980 --> 00:04:10,220
-Người ta gọi nó là tính phí theo lựa chọn phủ định —
+Người ta gọi nó là tính phí theo lựa chọn phủ định -
 
 104
 00:04:10,220 --> 00:04:12,220
@@ -432,7 +432,7 @@ Thế là nhiều người cứ... bỏ cuộc. Họ tiếp tục trả tiền.
 
 109
 00:04:25,300 --> 00:04:29,500
-Không phải vì họ muốn — mà vì việc hủy giống như một công việc bán thời gian.
+Không phải vì họ muốn - mà vì việc hủy giống như một công việc bán thời gian.
 
 110
 00:04:29,500 --> 00:04:31,320
@@ -472,7 +472,7 @@ Sản phẩm chưa bao giờ là món đồ.
 
 119
 00:04:50,400 --> 00:04:52,040
-Sản phẩm chính là bạn — vẫn ở lại.
+Sản phẩm chính là bạn - vẫn ở lại.
 
 120
 00:04:52,040 --> 00:04:56,020
@@ -488,7 +488,7 @@ Vấn đề chỉ là để ý.
 
 123
 00:05:01,260 --> 00:05:04,260
-Vậy nên thỉnh thoảng, hãy cầm lên cái điện thoại đang tính tiền bạn —
+Vậy nên thỉnh thoảng, hãy cầm lên cái điện thoại đang tính tiền bạn -
 
 124
 00:05:04,260 --> 00:05:05,500

@@ -10,7 +10,7 @@
   "outputPath": "scratch-audio/section-03-the-receipt-knows-david23-am_eric-0.82.mp3",
   "durationSeconds": 32.235,
   "scriptEstimateSeconds": 39,
-  "rev": "rev 2 — spend contrast ($5 vs $10, bigger basket); speed 0.82 to match Sections 1-2 (unified video speed). Owner hand-tuned the tts-input (heavier holds on the 'you paid five' line); regenerated 31.829s -> 32.235s.",
+  "rev": "rev 2 - spend contrast ($5 vs $10, bigger basket); speed 0.82 to match Sections 1-2 (unified video speed). Owner hand-tuned the tts-input (heavier holds on the 'you paid five' line); regenerated 31.829s -> 32.235s.",
   "ok": true,
   "pacingStyle": "approved spacious template: let 'five' and 'the full ten' land as clear separated numbers so the doubling is heard; . . staccato on 'In one trip.'; hold before 'a second one you did not need'; smaller price / bigger basket as a clean parallel",
   "env": {

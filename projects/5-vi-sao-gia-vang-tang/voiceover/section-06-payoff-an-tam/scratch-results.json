@@ -1,0 +1,12 @@
+{
+  "section": "section-06-payoff-an-tam",
+  "status": "voice generated",
+  "engine": "edge-tts 7.2.8 (Microsoft Edge TTS)",
+  "voice": "vi-VN-NamMinhNeural",
+  "rate": "normal",
+  "language": "vi-VN",
+  "audio": "scratch-audio/section-06-payoff-an-tam-nam-minh.mp3",
+  "duration_seconds": 41.088,
+  "markup_stripped": true,
+  "note": "Vietnamese experiment; markup tags ([pause]/[beat]/[deadpan]/[slower]) removed before TTS. Marked source: 02-script.md."
+}

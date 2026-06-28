@@ -17,7 +17,7 @@
 ## CSS-built on top (no pixel-copied screenshots)
 - Scene A: a shield labeled `I'M BUSY` deflecting incoming request bubbles; WIT peeking behind it.
 - Scenes B/E: Messenger-style chat (header + bubbles) with the real Messenger icon; incoming requests + a calm "I'm busy" reply (B), and a group chat where everyone replies "busy/swamped" (E).
-- Scene D: three speech bubbles over the meeting room — two struck out (`I need quiet time to think` → TOO RELAXED; `this meeting could've been a message` → TOO DANGEROUS) and one accepted `I'M BUSY ✓`.
+- Scene D: three speech bubbles over the meeting room - two struck out (`I need quiet time to think` → TOO RELAXED; `this meeting could've been a message` → TOO DANGEROUS) and one accepted `I'M BUSY ✓`.
 
 ## Rejected / not used
 - ss-2FQ69FRGV6 (visible iiyama brand), ss-AWYUDM17G5 (visible Apple logo), ss-RVVFEKQTWA (marble too close to S5 survey desk), Citizens Theatre Glasgow (audience faces).

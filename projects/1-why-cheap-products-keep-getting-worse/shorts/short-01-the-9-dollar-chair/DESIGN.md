@@ -1,18 +1,18 @@
-# Short 01 — The $9 Chair (vertical)
+# Short 01 - The $9 Chair (vertical)
 
 Composition: `Short01Chair` · 1080×1920 (9:16) · duration `28.4s` (audio `26.901s` + ~1.5s CTA hold)
 Port: `localhost:1101`
 Source: main video Section 1 (body) + condensed Section 8 (button).
 
 ## Voiceover
-- `voiceover/short-01.mp3` — regenerated clean per-short VO, approved voice `David23 / am_eric / 0.84 / en-us` (`hyperframes tts`).
-- `voiceover/short-01-word-timings.json` — whisper-tiny.en word timings; tail (button line) re-timed monotonically by hand (chunk-boundary glitch).
+- `voiceover/short-01.mp3` - regenerated clean per-short VO, approved voice `David23 / am_eric / 0.84 / en-us` (`hyperframes tts`).
+- `voiceover/short-01-word-timings.json` - whisper-tiny.en word timings; tail (button line) re-timed monotonically by hand (chunk-boundary glitch).
 
 ## Structure (4 big scenes + button, all on real photo bases)
-1. **Setup** `0–7.74` — `chair-price-tag` photo. Kicker `$9 CHAIR`, joke `CONFIDENCE: EXPENSIVE`, `FIRST WEEK ✓ FINE`. WIT thinking (curious).
-2. **Failure** `7.74–14.12` — `wobbly-leg-loose-screw` photo (real loose screw = evidence). `A NOISE LIKE LEGAL ADVICE`, `SCREW: LOOSE` + arrow, `EXPLORING CAREER OPTIONS`. WIT shocked.
-3. **Reveal** `14.12–20.04` — `hidden-future-tag` photo; the hanging tag becomes the `FUTURE NOT INCLUDED` card; `NOT REALLY CHEAP` stamp. WIT betrayed.
-4. **Payoff** `20.04–28.4` — `price-tag-receipt` photo (dimmed). Ends on the `HOW MUCH FUTURE?` card + deadpan WIT. No CTA — this is a complete standalone short, not a hook/teaser (owner note 2026-06-22).
+1. **Setup** `0–7.74` - `chair-price-tag` photo. Kicker `$9 CHAIR`, joke `CONFIDENCE: EXPENSIVE`, `FIRST WEEK ✓ FINE`. WIT thinking (curious).
+2. **Failure** `7.74–14.12` - `wobbly-leg-loose-screw` photo (real loose screw = evidence). `A NOISE LIKE LEGAL ADVICE`, `SCREW: LOOSE` + arrow, `EXPLORING CAREER OPTIONS`. WIT shocked.
+3. **Reveal** `14.12–20.04` - `hidden-future-tag` photo; the hanging tag becomes the `FUTURE NOT INCLUDED` card; `NOT REALLY CHEAP` stamp. WIT betrayed.
+4. **Payoff** `20.04–28.4` - `price-tag-receipt` photo (dimmed). Ends on the `HOW MUCH FUTURE?` card + deadpan WIT. No CTA - this is a complete standalone short, not a hook/teaser (owner note 2026-06-22).
 
 ## Platform-safe zone (owner note 2026-06-22)
 All readable content (labels, captions, CTA, WIT face) is kept inside the box `x[60..880] · y[220..1490]`.

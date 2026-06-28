@@ -1,4 +1,4 @@
-# Section 7 Payoff — Design (2026-06-23, Section 1 template) — FINAL SECTION
+# Section 7 Payoff - Design (2026-06-23, Section 1 template) - FINAL SECTION
 
 Video: `Why Everything Is a Subscription Now`
 Composition: `Section07Payoff` · 1920x1080 · duration `54.101s` · port `1007`
@@ -6,8 +6,8 @@ Composition: `Section07Payoff` · 1920x1080 · duration `54.101s` · port `1007`
 ## Structure (5 big scenes, ~16 cues)
 
 - A reveal / forgetting (0–13.0): dollar spread. `so why is everything a subscription now?` → crossed `not the app/show/seat` chips → big `YOUR FORGETTING` + aside `the month you meant to cancel… and didn't`; WIT thinking RIGHT.
-- B the product is YOU (13.0–18.6): phone. `the product was never the thing.` → barcode `THE PRODUCT: YOU — staying` tag; WIT shocked LEFT.
-- C some worth it / a design (18.6–27.4): coin jar. `it's not evil — just notice`; green `some are worth every cent ✓`; red `"small & monthly" = a DESIGN, not an accident`. No WIT.
+- B the product is YOU (13.0–18.6): phone. `the product was never the thing.` → barcode `THE PRODUCT: YOU - staying` tag; WIT shocked LEFT.
+- C some worth it / a design (18.6–27.4): coin jar. `it's not evil - just notice`; green `some are worth every cent ✓`; red `"small & monthly" = a DESIGN, not an accident`. No WIT.
 - D cancel the ghosts (27.4–39.4): $1 close-up. `turn the phone against them` → a bank statement (keep row green, ghost rows struck) → red `CANCEL THE GHOSTS`; WIT holding-receipt-evidence RIGHT.
 - E your salary, for now (39.4–54.101): phone bank-app. `the most powerful move: remember what you pay for` → bank-app `Salary +$3,200.00 · the one screen not asking for money` → payoff `your salary. (for now.)`; WIT deadpan-side-eye RIGHT. The literal final image.
 

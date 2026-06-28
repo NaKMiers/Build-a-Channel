@@ -1,9 +1,9 @@
-# Section 6 Easy In, No Way Out — Implementation Notes (2026-06-23)
+# Section 6 Easy In, No Way Out - Implementation Notes (2026-06-23)
 
 ## Build
 
 - Created on the S1–S5 pattern + CSS kit (scenes on tracks 1/3/4/5/6 with cross-fades, cues on track 2, audio track 10, GSAP show/hide/smash/pop/reveal, `window.__timelines["Section06Easy"]`).
-- 3 distinct vivid bases (stopwatch, wooden maze, contract). The maze + stopwatch each return once as a deliberate darker thematic callback (BS4/BS5) — sourcing of distinct tail-beat objects ("burden/−1000 aura", "part-time job no salary") failed this session; documented + swappable. Each callback uses a 2nd filename to avoid `duplicate_media_discovery_risk`.
+- 3 distinct vivid bases (stopwatch, wooden maze, contract). The maze + stopwatch each return once as a deliberate darker thematic callback (BS4/BS5) - sourcing of distinct tail-beat objects ("burden/−1000 aura", "part-time job no salary") failed this session; documented + swappable. Each callback uses a 2nd filename to avoid `duplicate_media_discovery_risk`.
 - Hero device: a 7-step CSS menu breadcrumb trail (the real cancel steps) winding through the maze, each chip popping on its spoken step.
 - Assets materialized as a local working set under `assets/`.
 
@@ -22,7 +22,7 @@
 - `lint`: 0 errors, 1 non-blocking warning (`timeline_track_too_dense`).
 - `validate`: 0 errors, 0 warnings, 25 non-blocking contrast advisories.
 - `inspect --at 4,8,12,19,24,28,32,38,45,51`: 0 layout issues.
-- `snapshot` (10 frames + 23.0 recheck): all beats verified — distinct bases, the menu maze reads, callbacks look distinct (dark + HUD + defeated WIT), no collisions.
+- `snapshot` (10 frames + 23.0 recheck): all beats verified - distinct bases, the menu maze reads, callbacks look distinct (dark + HUD + defeated WIT), no collisions.
 
 ## Server
 

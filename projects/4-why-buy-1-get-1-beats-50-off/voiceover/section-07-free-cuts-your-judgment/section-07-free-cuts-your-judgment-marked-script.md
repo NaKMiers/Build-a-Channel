@@ -1,11 +1,11 @@
-# Section 7 — Marked Script
+# Section 7 - Marked Script
 
 Video: `Why Buy 1 Get 1 Free Beats 50% Off`
 Section: `Section 7: Payoff: Free Cuts Your Judgment`
 Voice: `David23 / am_eric / 0.82 / en-us`
 
 Markup is for human reading only. HyperFrames Kokoro strips tags and ignores commas/line breaks
-for timing — real pacing lives in `tts-inputs/section-07-free-cuts-your-judgment-tts.txt` via
+for timing - real pacing lives in `tts-inputs/section-07-free-cuts-your-judgment-tts.txt` via
 `...`, `.`, and `. .`.
 
 ```text
@@ -26,13 +26,13 @@ Same shelf. Same product. Completely different game. Now go be slightly harder t
 
 Delivery intent:
 - Open with the title question restated, then the reframe "playing different games."
-- THE thesis line is the parallel: "cuts the price" vs "cuts your judgment" — let "cuts your
+- THE thesis line is the parallel: "cuts the price" vs "cuts your judgment" - let "cuts your
   judgment" land, then the longest hold of the section (the [pause] cue). This is the line the whole
   video exists for.
-- "shh, relax" — soft, almost whispered; the seductive voice of "free."
+- "shh, relax" - soft, almost whispered; the seductive voice of "free."
 - Fair caveat kept warm, not preachy ("Sometimes free really is free money").
 - Stinger: hold before "That is not free anything," then "twenty-five percent off, in a costume"
   lands as the memorable button.
-- "Same shelf. Same product." — staccato callback to the hook; then the warm cheeky sign-off
+- "Same shelf. Same product." - staccato callback to the hook; then the warm cheeky sign-off
   "Now go be slightly harder to trick."
 ```

@@ -1,4 +1,4 @@
-# Section 7 Design — Payoff: Activity Is Not Value
+# Section 7 Design - Payoff: Activity Is Not Value
 
 Composition id: `Section07Payoff` · 1920x1080 · 46.78s · audio 0.86 (David23 / am_eric)
 
@@ -6,7 +6,7 @@ Composition id: `Section07Payoff` · 1920x1080 · 46.78s · audio 0.86 (David23 
 The calm payoff: modern life confuses activity with value; the fix is not "be less busy" but "be more honest about what matters." Ends on the calendar-with-Wi-Fi motif.
 
 ## Real backgrounds + real-UI (owner-preferred), calmer pacing
-Every scene sits on a REAL people-free photo (hands OK) or a real-UI screen that IS the descriptive image. Closes on a real-UI Google Calendar packed with red "urgent" events — literally "a calendar with Wi-Fi."
+Every scene sits on a REAL people-free photo (hands OK) or a real-UI screen that IS the descriptive image. Closes on a real-UI Google Calendar packed with red "urgent" events - literally "a calendar with Wi-Fi."
 
 ## Scene Map
 | Scene | Track | Time | Real base | Build |
@@ -17,7 +17,7 @@ Every scene sits on a REAL people-free photo (hands OK) or a real-UI screen that
 | D | 5 | 27.0–38.54 | base-busy-d.jpg (reuse, chat dominates) | real-UI chat: honest reply struck + TOO HONEST FOR A TUESDAY → board BE HONEST ABOUT WHAT MATTERS |
 | E | 6 | 38.5–46.78 | base-question-e.jpg (reuse, calendar dominates) | real-UI Google Calendar packed with red URGENT events + `A CALENDAR WITH WI-FI`; WIT trapped |
 
-## Cue Map (track 2 — pinned to tail-fixed word timings)
+## Cue Map (track 2 - pinned to tail-fixed word timings)
 | Cue (scene) | Beats (word@s) | WIT |
 |---|---|---|
 | A | board@1.1 · ≠ smash@4.36 (value) | thinking @0.4 |

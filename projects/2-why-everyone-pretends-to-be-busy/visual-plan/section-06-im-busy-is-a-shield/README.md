@@ -1,8 +1,8 @@
-# Section 6 Visual Plan — "I'm Busy" Is A Shield
+# Section 6 Visual Plan - "I'm Busy" Is A Shield
 
 Files:
-- `section-06-im-busy-is-a-shield-visual-plan.md` — scene/cue plan (5 scenes, 13 cues)
-- `reference-board.md` — reference pass (5 real backgrounds + real-UI chat)
+- `section-06-im-busy-is-a-shield-visual-plan.md` - scene/cue plan (5 scenes, 13 cues)
+- `reference-board.md` - reference pass (5 real backgrounds + real-UI chat)
 
 Render lives at:
 `section-previews/section-06-im-busy-is-a-shield/` (port 1006)

@@ -6,7 +6,7 @@ description: Create or update step 3 section voiceover for a Why It Works video 
 # Voiceover (Claude wrapper)
 
 This is the Claude discovery wrapper for the **voiceover** skill. The canonical
-definition — full purpose, workflow, output format, and self-improving memory — lives
+definition - full purpose, workflow, output format, and self-improving memory - lives
 under `.agents/` so Codex and Claude share one source of truth.
 
 When this skill runs:

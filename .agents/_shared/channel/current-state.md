@@ -10,10 +10,23 @@ Keep it short and current.
 - Type: English-first no-face explainer YouTube channel
 - Status: foundation stage with project-local skills and HyperFrames-first production
 - Main audience lens: English learners, level `A2–C1` (anchor at B1)
-- Competitive advantage: `interesting English` — entertainment-first explainers so learners stay and learn (their motivation to keep watching = their motivation to learn)
+- Competitive advantage: `interesting English` - entertainment-first explainers so learners stay and learn (their motivation to keep watching = their motivation to learn)
 - Topic sourcing: trending / currently-interesting topics the world cares about now, chosen with real demand evidence (see `topic-intake`)
 - Main lane: money, internet, society, business, modern life, and current culture
-- Tone: smart, simple, funny, dry, and allowed to be savage/cheeky (edge aimed at the system / the viewer's own wallet, never slurs; public figures only as transformative parody) — see `learning-log.md` confirmed tone + safety rules
+- Tone: smart, simple, funny, dry, and allowed to be savage/cheeky (edge aimed at the system / the viewer's own wallet, never slurs; public figures only as transformative parody) - see `learning-log.md` confirmed tone + safety rules
+
+## File Language Convention (owner-confirmed 2026-06-28)
+
+Write ALL workspace/source files in **English** - skills, plans, research packs, manifests, docs,
+generation prompts, notes. Non-English text appears ONLY as **in-video content**: the spoken narration
+in the script and the on-screen text labels that appear in the video. Conversation with the owner may
+be in Vietnamese, but written deliverables are English. This holds even for a Vietnamese-language
+experiment video: its narration + on-screen labels are Vietnamese; every description/field around them
+is English.
+
+**HARD RULE (owner-confirmed 2026-06-28): NEVER use the em dash (Unicode U+2014) anywhere in this
+project - not in any file and not in chat replies. Always use a plain hyphen "-" instead. The owner
+never wants to see that character.**
 
 ## Core Promise
 
@@ -46,7 +59,7 @@ Use these compact files instead of the old many-file system:
 - `script-draft`: main step 2, writes `02-script.md`
 - `voiceover`: main step 3, writes `03-voiceover.md` (legacy `04`) and section audio
 - `visual-plan`: main step 4, writes `04-visual-plan.md` (legacy `05`) + synced section plans. As of 2026-06-28 it is a rebuild: ONE master plan + synced section copies, per-sentence scenes, extreme scene detail + an ASSET list per scene (type/filename/layout). It DESCRIBES only (no image prompts) and may invent new poses/scenes (within copyright/law/community standards).
-- `visual-implement`: main step 4.5 (unnumbered), reads the visual plan's ASSET lists and produces them — writes image prompts + creates isolated `generate` elements, browses license-safe real photos / captures public screenshots, copies poses, REUSES by filename — into `assets/` + `assets/asset-manifest.md`.
+- `visual-implement`: main step 4.5 (unnumbered), reads the visual plan's ASSET lists and produces them - writes image prompts + creates isolated `generate` elements, browses license-safe real photos / captures public screenshots, copies poses, REUSES by filename - into `assets/` + `assets/asset-manifest.md`.
 - `render`: main step 5, writes `05-production-board.md` (legacy `06`), section HyperFrames previews, review copies, and optional renders. As of 2026-06-28 it COMPOSITES the mascot + pre-made assets from `assets/` per the plan's layout (re-sources only as a documented fallback).
 - `packaging`: runs after `caption`; requires `00-topic-intake.md`, `01-research-pack.md`, and `02-script.md`; writes `output/packaging.md` (titles, descriptions, thumbnail prompts) and `output/thumbnails/`. No longer numbered (was `03-packaging.md`)
 - `combine`: project-level assembly + export step after all sections; unifies on `localhost:1000` with one combined voiceover and exports the full MP4 to `output/`
@@ -57,7 +70,7 @@ Sequential production skills enforce prerequisites. Main pipeline order is `topi
 
 ## Current WIT
 
-Status: `draft replacement generated - awaiting user review`
+Status: `new pose-transferred set live - final WIT sign-off still pending`
 
 Current reusable pose folder:
 
@@ -65,14 +78,15 @@ Current reusable pose folder:
 .agents/_shared/assets/wit/poses/
 ```
 
-It should contain only:
+It contains (replaced the old `wit-pose-*` 24-set on `2026-06-28`):
 
-- `manifest.json`
-- the `24` transparent PNG poses listed in the manifest
+- `_origin_.png` - canonical neutral identity, transparent rgba (always attach this when generating any new pose)
+- `pose.md` - the emotion/role catalog + quick index
+- `67` pose PNGs, each on a solid flat green (#00B140) screen, rgb24 / no alpha - chroma-key the green out at render with ffmpeg (`colorkey`/`chromakey` + `despill`)
 
-The current WIT direction is the simple white round-headed thumbnail WIT with thick black outline, oversized black glasses, expressive eyebrows, simple white body, and suspicious / betrayed / panicked reactions.
+The current WIT is the round bald white-headed mascot with a thick black outline, big rectangular glasses + dot eyes, expressive eyebrows, and a flat white body, drawn across a wide emotion/role range (boss, broke, gamer, doctor, etc.).
 
-Mascot upgrade direction (owner-directed 2026-06-28, in design): the plain white-blob WIT scored as a primary weakness. The target is a mascot that is a REAL character — color, an outfit, a wide expression range, the ability to "play roles" (boss, broke, etc.), and a cheeky personality — modeled on the studied reference pose library at `analysis/vuive poses/` (catalogued in `analysis/vuive poses/pose.md`). The pose library is the starting palette; `visual-plan` may invent new poses and `visual-implement` generates them. A finalized WIT redesign is still pending owner approval.
+Mascot upgrade direction (owner-directed 2026-06-28): the plain white-blob WIT scored as a primary weakness; the target is a mascot that is a REAL character with a wide expression range and the ability to "play roles". The new green-screen pose set above was pose-transferred from the studied reference casting sheet onto `_origin_`. The pose library is the starting palette; `visual-plan` may invent new poses and `visual-implement` generates them (always attaching `_origin_`). A finalized WIT sign-off is still pending owner approval.
 
 Do not use removed `original-wit-24`, older `core-24`, or `comedy-core` WIT as current channel WIT.
 

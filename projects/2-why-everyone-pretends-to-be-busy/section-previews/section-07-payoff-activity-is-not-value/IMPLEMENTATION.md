@@ -1,4 +1,4 @@
-# Section 7 Implementation — Payoff: Activity Is Not Value
+# Section 7 Implementation - Payoff: Activity Is Not Value
 
 Composition: `Section07Payoff` · 1920x1080 · 46.78s · port 1007
 
@@ -9,19 +9,19 @@ Composition: `Section07Payoff` · 1920x1080 · 46.78s · port 1007
 - GSAP reveal/show/smash; scene-internal builds revealed at word times; cue WIT/stamps/boards shown on their words.
 
 ## Scenes
-1. **A — the question** (0–6.24): base-question; `ACTIVITY ≠ VALUE` board; ≠ smashes on "value"@4.36; WIT thinking.
-2. **B — rewarded vs needed** (6.2–18.34): base-busy (hands typing); red REWARDED labels (AVAILABLE@6.52/FAST@7.0/OVERLOADED@7.6) vs green REAL WORK NEEDS (FOCUS@10.38/QUIET@10.5/TIME@10.94) + NOT LAZY@12.62 + BUSY=SAFER THAN THOUGHTFUL@14.78; WIT talking-front.
-3. **C — everyone joins in** (18.3–27.04): base-culture; 3 rows HIGHLIGHT≠LEARN@19.56 / REPLY≠SOLVE@21.64 / ORGANIZE≠MAKE@24.48; WIT typing-on-laptop.
-4. **D — the honest version** (27.0–38.54): base-busy-d + chat `.screen`; struck reply "I'm protecting my attention from pointless noise"@28.3 + TOO HONEST FOR A TUESDAY stamp@32.0 + "Busy." sent@33.2 → BE HONEST ABOUT WHAT MATTERS board@36.58; WIT deadpan-side-eye.
-5. **E — a calendar with Wi-Fi** (38.5–46.78): base-question-e + CSS Google Calendar (gcal icon) filling with red URGENT events@38.8–40.6; EVERYTHING URGENT = NOTHING IS@39.0; final A CALENDAR WITH WI-FI@45.40; WIT trapped-by-app-screen.
+1. **A - the question** (0–6.24): base-question; `ACTIVITY ≠ VALUE` board; ≠ smashes on "value"@4.36; WIT thinking.
+2. **B - rewarded vs needed** (6.2–18.34): base-busy (hands typing); red REWARDED labels (AVAILABLE@6.52/FAST@7.0/OVERLOADED@7.6) vs green REAL WORK NEEDS (FOCUS@10.38/QUIET@10.5/TIME@10.94) + NOT LAZY@12.62 + BUSY=SAFER THAN THOUGHTFUL@14.78; WIT talking-front.
+3. **C - everyone joins in** (18.3–27.04): base-culture; 3 rows HIGHLIGHT≠LEARN@19.56 / REPLY≠SOLVE@21.64 / ORGANIZE≠MAKE@24.48; WIT typing-on-laptop.
+4. **D - the honest version** (27.0–38.54): base-busy-d + chat `.screen`; struck reply "I'm protecting my attention from pointless noise"@28.3 + TOO HONEST FOR A TUESDAY stamp@32.0 + "Busy." sent@33.2 → BE HONEST ABOUT WHAT MATTERS board@36.58; WIT deadpan-side-eye.
+5. **E - a calendar with Wi-Fi** (38.5–46.78): base-question-e + CSS Google Calendar (gcal icon) filling with red URGENT events@38.8–40.6; EVERYTHING URGENT = NOTHING IS@39.0; final A CALENDAR WITH WI-FI@45.40; WIT trapped-by-app-screen.
 
 ## Word timings
-- Generated this run (whisper); the tail had a chunk-boundary glitch (words 154–164 jumped back to ~40s) — re-timed monotonically so "…you are not lazy. You are just trapped in a calendar with Wi-Fi" runs 43.56→46.78. All cues pinned to the fixed JSON.
+- Generated this run (whisper); the tail had a chunk-boundary glitch (words 154–164 jumped back to ~40s) - re-timed monotonically so "…you are not lazy. You are just trapped in a calendar with Wi-Fi" runs 43.56→46.78. All cues pinned to the fixed JSON.
 
 ## QA
 - `hyperframes lint`: 0 errors (1 advisory `timeline_track_too_dense`, same as prior sections).
 - `hyperframes validate`: 0 errors; contrast advisories are fixed-sample-time measurements of off-screen elements (same pattern as prior sections).
-- `hyperframes snapshot --at 4.5,8,11.5,15.5,20.5,25,31.5,37,41,45.8`: all 5 scenes verified — ACTIVITY≠VALUE board, rewarded/needed contrast, 3 ≠ rows, honest-struck vs Busy. chat + BE HONEST board, packed Google Calendar + A CALENDAR WITH WI-FI + trapped WIT.
+- `hyperframes snapshot --at 4.5,8,11.5,15.5,20.5,25,31.5,37,41,45.8`: all 5 scenes verified - ACTIVITY≠VALUE board, rewarded/needed contrast, 3 ≠ rows, honest-struck vs Busy. chat + BE HONEST board, packed Google Calendar + A CALENDAR WITH WI-FI + trapped WIT.
 
 ## Fixes during build
 - duplicate_media_discovery_risk (base-busy reused in B+D; base-question in A+E) → copied to `base-busy-d.jpg` / `base-question-e.jpg` for the reuse scenes.

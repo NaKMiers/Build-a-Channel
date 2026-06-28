@@ -1,4 +1,4 @@
-# Section 6 Marked Script — Easy In, No Way Out
+# Section 6 Marked Script - Easy In, No Way Out
 
 Marked for delivery only. The `**bold**` joke markers and `[beat]` cue are NOT spoken.
 Real pacing/rhythm lives in `tts-inputs/section-06-easy-in-no-way-out-tts.txt`.
@@ -12,11 +12,11 @@ Getting in is a big, happy, glowing button. Getting out is hidden somewhere in y
 
 You tap "account." Then "settings." Then "manage." Then "are you sure?" Then "here, have a discount." Then "we'll miss you." Then a phone number that only answers between two and two-fifteen on a Tuesday.
 
-This even has a name. It's been called negative option billing — a fancy term for one simple trick: you keep paying unless you actively say stop.
+This even has a name. It's been called negative option billing - a fancy term for one simple trick: you keep paying unless you actively say stop.
 
 So all the remembering, deciding, and escaping? Pushed onto you. Minus a thousand aura points, and you didn't even do anything wrong.
 
-So a lot of people just... give up. They keep paying. Not because they want it — because cancelling feels like a part-time job. With no salary. Which, fittingly, is also not a subscription.
+So a lot of people just... give up. They keep paying. Not because they want it - because cancelling feels like a part-time job. With no salary. Which, fittingly, is also not a subscription.
 ```
 
 ## Delivery intent (from 02-script.md voice revision notes)
@@ -28,7 +28,7 @@ So a lot of people just... give up. They keep paying. Not because they want it �
 
 - Stacked `...` hold after "I'll just cancel." to land the dry "Oh, sweet child."
 - The cancel-menu list ("You tap account. Then settings. Then manage...") uses `. .` staccato on each
-  step so it builds into the escalating maze — the rhythm IS the joke.
+  step so it builds into the escalating maze - the rhythm IS the joke.
 - Trailing `...` setups before payoffs ("Getting out...", "So a lot of people just...").
 - "negative option billing" introduced after a hold, then explained plainly.
 - "Minus a thousand aura points" kept quick (single periods), not milked, per the script note.

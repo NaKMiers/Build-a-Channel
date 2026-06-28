@@ -21,7 +21,7 @@ Source files: `02-script.md`, `03-voiceover.md`
 - Audience: `A2–C1 English learners (interesting-English advantage)`
 - Renderer: `HyperFrames (composited from pre-made assets)`
 - Visual grammar: `real / real-looking base + mascot drawn on top; new scene ~per sentence; vary everything`
-- Mascot character: `<colorful, expressive WIT — big and high, real personality>`
+- Mascot character: `<colorful, expressive WIT - big and high, real personality>`
 - Tone on screen: `savage-but-clean; edge aimed at the system/the viewer's own wallet, never slurs`
 - Recurring motif:
 - Scene-type rotation in use:
@@ -37,7 +37,7 @@ Source files: `02-script.md`, `03-voiceover.md`
 > Each section below is identical to its `visual-plan/section-XX-*/` file. Keep them in sync.
 
 ### Section 1: <name>
-<paste the full section block — see "Section File" template, scenes only>
+<paste the full section block - see "Section File" template, scenes only>
 
 ### Section 2: <name>
 ...
@@ -60,13 +60,13 @@ Next workflow step: `visual-implement` (creates the assets named here), then `re
 Write `projects/<slug>/visual-plan/section-XX-kebab-section-name/section-XX-kebab-section-name-visual-plan.md`.
 
 ````markdown
-# Section X Visual Plan — <name>
+# Section X Visual Plan - <name>
 
 Video: `<title>`
 Section: `Section X: <name>`
 Status: `draft visual plan for approval`
 
-## Video-Level Direction (for context — keep identical to master)
+## Video-Level Direction (for context - keep identical to master)
 
 <short copy of the master Video-Level Direction so this section is never read in isolation>
 
@@ -80,7 +80,7 @@ Status: `draft visual plan for approval`
 
 ## Scenes
 
-### Scene X.1 — "<exact script line/beat>"
+### Scene X.1 - "<exact script line/beat>"
 
 - **Local time:** `0:00–0:00`
 - **Role:** <what this beat does; link to prev/next>
@@ -89,7 +89,7 @@ Status: `draft visual plan for approval`
   - *Left (~x%–x%):* <detailed description of the element and its contents/treatment>
   - *Right / center / etc.:* <...>
 - **Mascot:** pose `<pose_filename OR NEW: described>`; placement `<side, scale as frame fraction, crop>`; facing `<dir>`; expression `<...>`
-- **On-screen text:** `"<exact words>"` — <handwritten style, position, color, tilt, when it appears>
+- **On-screen text:** `"<exact words>"` - <handwritten style, position, color, tilt, when it appears>
 - **Emotion:** <...>
 - **Insight / joke:** <...>
 - **Linkage / eye path:** <why elements sit together; left→right etc.>
@@ -104,7 +104,7 @@ Status: `draft visual plan for approval`
 | `mck-face-distorted.png` | browse-real-photo | real MCK photo, chin/neck stretched funhouse-style, vertical phone frame | left 13–40%, float w/ shadow | new |
 | `pose_cheerful_presenting_open_mouth.png` | pose | mascot presenting toward left | right, half-body crop | reuse (library) |
 
-### Scene X.2 — "..."
+### Scene X.2 - "..."
 ...
 
 ## Section Asset Summary

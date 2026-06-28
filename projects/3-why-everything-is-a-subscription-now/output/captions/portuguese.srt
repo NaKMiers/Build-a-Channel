@@ -16,7 +16,7 @@ Seja qual for o número que você chutou... é maior.
 
 5
 00:00:07,220 --> 00:00:10,040
-Neste exato momento, o dinheiro está saindo silenciosamente da sua conta todo mês —
+Neste exato momento, o dinheiro está saindo silenciosamente da sua conta todo mês -
 
 6
 00:00:10,040 --> 00:00:11,740
@@ -44,7 +44,7 @@ Você aluga a vida inteira. Um pagamento de cada vez.
 
 12
 00:00:23,620 --> 00:00:26,660
-Agora — este não é um vídeo sobre como as assinaturas são malignas
+Agora - este não é um vídeo sobre como as assinaturas são malignas
 
 13
 00:00:26,660 --> 00:00:28,920
@@ -84,7 +84,7 @@ Pague todo mês, a tela liga.
 
 22
 00:00:44,140 --> 00:00:46,920
-Falte um pagamento, e o seu próprio aparelho faz isto —
+Falte um pagamento, e o seu próprio aparelho faz isto -
 
 23
 00:00:46,920 --> 00:00:48,060
@@ -100,11 +100,11 @@ Então aqui está a verdadeira pergunta.
 
 26
 00:00:53,220 --> 00:00:56,420
-Como quase tudo — seus aplicativos, suas séries, seus programas,
+Como quase tudo - seus aplicativos, suas séries, seus programas,
 
 27
 00:00:56,420 --> 00:00:58,280
-até botões dentro do seu carro —
+até botões dentro do seu carro -
 
 28
 00:00:58,280 --> 00:01:01,820
@@ -140,7 +140,7 @@ Aí suas telas entraram na festa.
 
 36
 00:01:16,360 --> 00:01:17,780
-Música, filmes, séries —
+Música, filmes, séries -
 
 37
 00:01:17,780 --> 00:01:19,800
@@ -188,11 +188,11 @@ E não parou nas telas.
 
 48
 00:01:44,740 --> 00:01:48,260
-Algumas montadoras tentaram colocar os bancos aquecidos —
+Algumas montadoras tentaram colocar os bancos aquecidos -
 
 49
 00:01:48,260 --> 00:01:50,840
-bancos que já estão dentro do carro que você comprou —
+bancos que já estão dentro do carro que você comprou -
 
 50
 00:01:50,840 --> 00:01:52,280
@@ -216,11 +216,11 @@ Imagine que você vende uma máquina de café.
 
 55
 00:02:02,440 --> 00:02:05,380
-Você faz uma venda, diz obrigado, e então espera —
+Você faz uma venda, diz obrigado, e então espera -
 
 56
 00:02:05,380 --> 00:02:07,820
-talvez anos — torcendo para que aquela pessoa um dia volte.
+talvez anos - torcendo para que aquela pessoa um dia volte.
 
 57
 00:02:07,820 --> 00:02:10,820
@@ -248,7 +248,7 @@ Um cliente que compra uma vez vale pouco.
 
 63
 00:02:20,380 --> 00:02:22,800
-Um cliente que paga todo mês vale muito —
+Um cliente que paga todo mês vale muito -
 
 64
 00:02:22,800 --> 00:02:24,820
@@ -300,7 +300,7 @@ Para te fisgar, eles fazem parecer grátis.
 
 76
 00:02:53,140 --> 00:02:56,240
-Só coloque o seu cartão — você sabe, por nenhum motivo em especial.
+Só coloque o seu cartão - você sabe, por nenhum motivo em especial.
 
 77
 00:02:56,240 --> 00:02:58,840
@@ -324,7 +324,7 @@ E a maioria das pessoas não cancela no sétimo dia. Elas esquecem.
 
 82
 00:03:11,020 --> 00:03:14,360
-Não por serem descuidadas — porque esquecer é o projeto.
+Não por serem descuidadas - porque esquecer é o projeto.
 
 83
 00:03:14,360 --> 00:03:17,320
@@ -340,7 +340,7 @@ Um fantasma, morando na sua conta bancária.
 
 86
 00:03:23,240 --> 00:03:26,360
-De graça. Bem — não de graça. Esse é o problema todo.
+De graça. Bem - não de graça. Esse é o problema todo.
 
 87
 00:03:26,360 --> 00:03:29,940
@@ -408,7 +408,7 @@ Isto até tem um nome.
 
 103
 00:04:07,980 --> 00:04:10,220
-Já foi chamado de cobrança por opção negativa —
+Já foi chamado de cobrança por opção negativa -
 
 104
 00:04:10,220 --> 00:04:12,220
@@ -432,7 +432,7 @@ Então muita gente simplesmente... desiste. Continua pagando.
 
 109
 00:04:25,300 --> 00:04:29,500
-Não porque quer — porque cancelar parece um emprego de meio período.
+Não porque quer - porque cancelar parece um emprego de meio período.
 
 110
 00:04:29,500 --> 00:04:31,320
@@ -472,7 +472,7 @@ O produto nunca foi a coisa.
 
 119
 00:04:50,400 --> 00:04:52,040
-O produto é você — continuando.
+O produto é você - continuando.
 
 120
 00:04:52,040 --> 00:04:56,020
@@ -488,7 +488,7 @@ Saber que "pequeno e mensal" é um projeto, não um acidente.
 
 123
 00:05:01,260 --> 00:05:04,260
-Então de vez em quando, pegue o celular que vem te cobrando —
+Então de vez em quando, pegue o celular que vem te cobrando -
 
 124
 00:05:04,260 --> 00:05:05,500

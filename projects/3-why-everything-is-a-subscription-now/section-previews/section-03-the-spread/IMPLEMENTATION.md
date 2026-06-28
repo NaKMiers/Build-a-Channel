@@ -1,4 +1,4 @@
-# Section 3 The Spread — Implementation Notes (2026-06-23)
+# Section 3 The Spread - Implementation Notes (2026-06-23)
 
 ## Build
 
@@ -12,17 +12,17 @@
 
 ## Build gotchas
 
-- WIT `typing-on-laptop.png` has a baked BLACK background (like `money-panic`) — unusable on photo scenes; swapped to `hidden-fee-panic` for the software beat.
+- WIT `typing-on-laptop.png` has a baked BLACK background (like `money-panic`) - unusable on photo scenes; swapped to `hidden-fee-panic` for the software beat.
 - Float overlap on track 2: cue-d `35.20 + 6.20 = 41.4000000006` overlapped cue-e at 41.4 → trimmed cue-d duration to 6.18.
-- Car base has a small "Blaupunkt" head-unit logo — covered by the CSS heated-seat/price panel and the giant deadpan WIT (which sits on the right over the head unit). Classified mockup target.
+- Car base has a small "Blaupunkt" head-unit logo - covered by the CSS heated-seat/price panel and the giant deadpan WIT (which sits on the right over the head unit). Classified mockup target.
 - EXPIRED banner is a top banner; the BS5 headline hides at 50.90 so it doesn't sit under the banner.
 
 ## Checks
 
-- `lint`: 0 errors, 1 non-blocking warning (`timeline_track_too_dense`: 5 cues on track 2 — same as approved S1/S2).
+- `lint`: 0 errors, 1 non-blocking warning (`timeline_track_too_dense`: 5 cues on track 2 - same as approved S1/S2).
 - `validate`: 0 errors, 0 warnings, 40 non-blocking contrast advisories.
 - `inspect --at 6.0,11.5,18.5,23.0,29.5,37.0,40.0,47.0,52.5`: 0 layout issues.
-- `snapshot` (same + 23.8): all beats verified — distinct bases, varied idea-devices, giant WIT, no collisions.
+- `snapshot` (same + 23.8): all beats verified - distinct bases, varied idea-devices, giant WIT, no collisions.
 
 ## Server
 

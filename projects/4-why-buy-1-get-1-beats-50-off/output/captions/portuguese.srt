@@ -60,7 +60,7 @@ A loja gastou quatro para fazer.
 
 16
 00:00:34,080 --> 00:00:37,080
-Cinco menos quatro — a loja fica com um dólar.
+Cinco menos quatro - a loja fica com um dólar.
 
 17
 00:00:37,080 --> 00:00:39,680
@@ -72,7 +72,7 @@ Esses dois custam oito para a loja fabricar.
 
 19
 00:00:41,960 --> 00:00:45,620
-Dez menos oito — a loja fica com dois dólares. O dobro.
+Dez menos oito - a loja fica com dois dólares. O dobro.
 
 20
 00:00:45,620 --> 00:00:48,200
@@ -84,7 +84,7 @@ Mas o dobro de lucro para a loja.
 
 22
 00:00:50,020 --> 00:00:52,640
-E a placa nunca mudou — ainda diz dez.
+E a placa nunca mudou - ainda diz dez.
 
 23
 00:00:52,640 --> 00:00:55,260
@@ -100,7 +100,7 @@ Um cara da cerâmica chamado Wedgwood já fazia isso lá nos anos mil e setecent
 
 26
 00:01:00,080 --> 00:01:03,813
-Então não — você não é o primeiro otário. Você é só o mais recente.
+Então não - você não é o primeiro otário. Você é só o mais recente.
 
 27
 00:01:03,813 --> 00:01:06,787

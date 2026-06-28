@@ -8,7 +8,7 @@ Status: `built + previewing on localhost:1004`
 
 - Voiceover: `voiceover/section-04-why-companies-love-it/scratch-audio/section-04-...-david23-am_eric-0.8.mp3`
 - Duration: `51.093s` (TTS `scratch-results.json`)
-- Word timings: `voiceover/section-04-why-companies-love-it/section-04-word-timings.json` — GENERATED this run
+- Word timings: `voiceover/section-04-why-companies-love-it/section-04-word-timings.json` - GENERATED this run
   (whisper-tiny.en). Clean except a chunk-boundary BACKWARD-jump around 24–26s (the "worth a little / pays
   every month" line re-emitted); cues are pinned to the CLEAN word starts (buys-once 22.1, worth-a-lot 26.8,
   like-rain 29.3). Tail "trap." ends ~51.46 → capped at the 51.093 audio.
@@ -47,19 +47,19 @@ So the goal quietly changed. It used to be: make something good enough that you 
 
 | Cue | Time | Voice | Scene | What changes | Motion | WIT |
 |---|---:|---|---|---|---|---|
-| C1 | 0.30 / 2.90 | "why switch / follow the money" | BS1 | question label → `FOLLOW THE MONEY` kinetic | hard-show / impact | — |
-| C2 | 5.0 / 7.0 | "coffee machine / one sale" | BS2 | headline; gold coin + `ONE sale. thanks!` | hard-show / pop | — |
+| C1 | 0.30 / 2.90 | "why switch / follow the money" | BS1 | question label → `FOLLOW THE MONEY` kinetic | hard-show / impact | - |
+| C2 | 5.0 / 7.0 | "coffee machine / one sale" | BS2 | headline; gold coin + `ONE sale. thanks!` | hard-show / pop | - |
 | C3 | 9.50 | "wait. maybe years" | BS2 | `then you wait… maybe YEARS` | impact | sleeping-burned-out RIGHT |
 | C4 | 12.0 / 13.8 | "now every month" | BS3 | headline; coin GEYSER rises (staggered) | hard-show / pop | empty-wallet LEFT |
-| C5 | 15.7 / 16.5 | "automatically / forever" | BS3 | `automatically` → red `FOREVER.` | hard-show / impact | — |
-| C6 | 19.0 | "which would you rather own? me too" | BS3 | cream aside | hard-show | — |
-| C7 | 22.1 | "buys once is worth a little" | BS4 | `buys once = a little` + small coin | hard-show | — |
-| C8 | 26.8 | "worth a lot" | BS4 | `pays monthly = A LOT` + coin stack | impact | — |
-| C9 | 29.3 | "keeps coming. like rain" | BS4 | coin RAIN + cream aside `like rain. or relatives` | pop | — |
-| C10 | 30.9 / 33.3 | "the magic word / recurring" | BS5 | `the magic word:` → giant `RECURRING` | hard-show / impact | — |
-| C11 | 33.9–35.4 | "recurring money is predictable" | BS5 | `AUTO-PAY · same charge every month` statement card; identical −$9.99 rows (Jan/Feb/Mar/Apr) pop one-per-beat (review fix: replaced 4 meaningless red rings) | hard-show (staggered) | — |
+| C5 | 15.7 / 16.5 | "automatically / forever" | BS3 | `automatically` → red `FOREVER.` | hard-show / impact | - |
+| C6 | 19.0 | "which would you rather own? me too" | BS3 | cream aside | hard-show | - |
+| C7 | 22.1 | "buys once is worth a little" | BS4 | `buys once = a little` + small coin | hard-show | - |
+| C8 | 26.8 | "worth a lot" | BS4 | `pays monthly = A LOT` + coin stack | impact | - |
+| C9 | 29.3 | "keeps coming. like rain" | BS4 | coin RAIN + cream aside `like rain. or relatives` | pop | - |
+| C10 | 30.9 / 33.3 | "the magic word / recurring" | BS5 | `the magic word:` → giant `RECURRING` | hard-show / impact | - |
+| C11 | 33.9–35.4 | "recurring money is predictable" | BS5 | `AUTO-PAY · same charge every month` statement card; identical −$9.99 rows (Jan/Feb/Mar/Apr) pop one-per-beat (review fix: replaced 4 meaningless red rings) | hard-show (staggered) | - |
 | C12 | 36.0 / 38.1 | "your forgetfulness" | BS5 | confused WIT; `plan around your FORGETFULNESS` | hard-show / impact | confused LEFT |
-| C13 | 39.3 / 41.7 | "goal changed / good enough to buy" | BS6 | headline; `old: good enough to BUY` | hard-show | — |
+| C13 | 39.3 / 41.7 | "goal changed / good enough to buy" | BS6 | headline; `old: good enough to BUY` | hard-show | - |
 | C14 | 44.8 | "sticky enough you never leave" | BS6 | red `now: sticky enough you NEVER LEAVE` | impact | suspicious RIGHT @46 |
 | C15 | 50.0 | "more beautiful trap" | BS6 | `BEAUTIFUL TRAP` payoff (labels hidden) | impact | suspicious holds |
 
@@ -72,7 +72,7 @@ So the goal quietly changed. It used to be: make something good enough that you 
 | 36.0–39.1 | wit-pose-confused.png | LEFT, width 1200, bottom:-340 | planned around your forgetfulness |
 | 46.0–51.0 | wit-pose-suspicious.png | RIGHT, width 1250, bottom:-330 | eyeing the beautiful trap |
 
-WIT density: 4 beats / 6 scenes; BS1 (follow the money) and BS4 (worth a lot) breathe — the kinetic word and
+WIT density: 4 beats / 6 scenes; BS1 (follow the money) and BS4 (worth a lot) breathe - the kinetic word and
 the coin comparison/rain carry them. All verified transparent. AVOID `typing-on-laptop` + `money-panic` (baked black bg).
 
 ## Reference And Asset Plan

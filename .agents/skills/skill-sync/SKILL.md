@@ -69,7 +69,7 @@ description: <verbatim copy of the canonical .agents/skills/<name>/SKILL.md desc
 # <Title> (Claude wrapper)
 
 This is the Claude discovery wrapper for the **<name>** skill. The canonical
-definition — full purpose, workflow, output format, and self-improving memory — lives
+definition - full purpose, workflow, output format, and self-improving memory - lives
 under `.agents/` so Codex and Claude share one source of truth.
 
 When this skill runs:
@@ -145,7 +145,7 @@ For every Claude wrapper with no matching canonical skill:
 - Diff the other **shared sections** (startup routine, browsing rule, memory/persistence
   rules, pipeline gate, workspace boundaries, safety gate, identity, goal). If they match
   in substance, leave them. If they genuinely diverge, **stop and ask the user which side
-  is authoritative** before overwriting hand-written instructions — do not guess.
+  is authoritative** before overwriting hand-written instructions - do not guess.
 
 ### 6. Report
 
@@ -175,7 +175,7 @@ a user decision. If nothing was out of sync, say so explicitly.
 ## Safety
 
 - Manual only; never auto-run.
-- Never delete user work silently — orphans and conflicts are reported, not removed.
+- Never delete user work silently - orphans and conflicts are reported, not removed.
 - Never overwrite canonical skill logic or root-doc prose without showing the change and
   getting confirmation.
 - Never touch `.agents/_shared/`, `.agents/rules/`, `projects/`, assets, or the vendored

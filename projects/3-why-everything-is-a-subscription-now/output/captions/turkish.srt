@@ -16,7 +16,7 @@ Her zaman daha yüksektir.
 
 5
 00:00:07,220 --> 00:00:10,040
-Şu anda, her ay hesabından sessizce para çıkıyor —
+Şu anda, her ay hesabından sessizce para çıkıyor -
 
 6
 00:00:10,040 --> 00:00:11,740
@@ -44,7 +44,7 @@ Tüm hayatını kiralıyorsun. Her seferinde bir ödemeyle.
 
 12
 00:00:23,620 --> 00:00:26,660
-Şimdi — bu, aboneliklerin ne kadar kötü olduğuna dair bir video değil
+Şimdi - bu, aboneliklerin ne kadar kötü olduğuna dair bir video değil
 
 13
 00:00:26,660 --> 00:00:28,920
@@ -84,7 +84,7 @@ Her ay öde, ekran açılır.
 
 22
 00:00:44,140 --> 00:00:46,920
-Bir ödemeyi kaçır, ve kendi cihazın bunu yapar —
+Bir ödemeyi kaçır, ve kendi cihazın bunu yapar -
 
 23
 00:00:46,920 --> 00:00:48,060
@@ -100,11 +100,11 @@ ve sana hayal kırıklığına uğramış bir ebeveyn gibi bakar.
 
 26
 00:00:53,220 --> 00:00:56,420
-Neredeyse her şey — uygulamaların, dizilerin, yazılımların,
+Neredeyse her şey - uygulamaların, dizilerin, yazılımların,
 
 27
 00:00:56,420 --> 00:00:58,280
-hatta arabanın içindeki düğmeler bile —
+hatta arabanın içindeki düğmeler bile -
 
 28
 00:00:58,280 --> 00:01:01,820
@@ -140,7 +140,7 @@ Sonra ekranların da partiye katıldı.
 
 36
 00:01:16,360 --> 00:01:17,780
-Müzik, filmler, diziler —
+Müzik, filmler, diziler -
 
 37
 00:01:17,780 --> 00:01:19,800
@@ -188,11 +188,11 @@ Ve ekranlarda durmadı.
 
 48
 00:01:44,740 --> 00:01:48,260
-Bazı araba üreticileri ısıtmalı koltukları —
+Bazı araba üreticileri ısıtmalı koltukları -
 
 49
 00:01:48,260 --> 00:01:50,840
-satın aldığın arabanın içinde zaten duran koltukları —
+satın aldığın arabanın içinde zaten duran koltukları -
 
 50
 00:01:50,840 --> 00:01:52,280
@@ -216,11 +216,11 @@ Bir kahve makinesi sattığını hayal et.
 
 55
 00:02:02,440 --> 00:02:05,380
-Bir satış yaparsın, teşekkür edersin, ve sonra beklersin —
+Bir satış yaparsın, teşekkür edersin, ve sonra beklersin -
 
 56
 00:02:05,380 --> 00:02:07,820
-belki yıllarca — o kişinin bir gün geri dönmesini umarak.
+belki yıllarca - o kişinin bir gün geri dönmesini umarak.
 
 57
 00:02:07,820 --> 00:02:10,820
@@ -248,7 +248,7 @@ Bir kere satın alan bir müşteri biraz değerlidir.
 
 63
 00:02:20,380 --> 00:02:22,800
-Her ay ödeyen bir müşteri çok değerlidir —
+Her ay ödeyen bir müşteri çok değerlidir -
 
 64
 00:02:22,800 --> 00:02:24,820
@@ -300,7 +300,7 @@ Seni içeri çekmek için, bunu ücretsizmiş gibi hissettirirler.
 
 76
 00:02:53,140 --> 00:02:56,240
-Sadece kartını gir — bilirsin, hiçbir sebep olmadan.
+Sadece kartını gir - bilirsin, hiçbir sebep olmadan.
 
 77
 00:02:56,240 --> 00:02:58,840
@@ -324,7 +324,7 @@ Ve çoğu insan yedinci günde iptal etmez. Unutur.
 
 82
 00:03:11,020 --> 00:03:14,360
-Dikkatsiz oldukları için değil — çünkü unutmak tasarımın ta kendisidir.
+Dikkatsiz oldukları için değil - çünkü unutmak tasarımın ta kendisidir.
 
 83
 00:03:14,360 --> 00:03:17,320
@@ -340,7 +340,7 @@ Banka hesabında yaşayan bir hayalet.
 
 86
 00:03:23,240 --> 00:03:26,360
-Bedavaya. Şey — bedavaya değil. Bütün sorun da bu zaten.
+Bedavaya. Şey - bedavaya değil. Bütün sorun da bu zaten.
 
 87
 00:03:26,360 --> 00:03:29,940
@@ -408,7 +408,7 @@ Bunun bir adı bile var.
 
 103
 00:04:07,980 --> 00:04:10,220
-Buna negatif opsiyonlu faturalama deniyor —
+Buna negatif opsiyonlu faturalama deniyor -
 
 104
 00:04:10,220 --> 00:04:12,220
@@ -432,7 +432,7 @@ Bu yüzden birçok insan sadece... pes eder. Ödemeye devam ederler.
 
 109
 00:04:25,300 --> 00:04:29,500
-İstedikleri için değil — çünkü iptal etmek yarı zamanlı bir iş gibi gelir.
+İstedikleri için değil - çünkü iptal etmek yarı zamanlı bir iş gibi gelir.
 
 110
 00:04:29,500 --> 00:04:31,320
@@ -472,7 +472,7 @@ Bunu bir kez gördüğünde, görmemiş olamazsın.
 
 119
 00:04:50,400 --> 00:04:52,040
-Ürün sensin — kalman.
+Ürün sensin - kalman.
 
 120
 00:04:52,040 --> 00:04:56,020
@@ -488,7 +488,7 @@ Mesele sadece fark etmek.
 
 123
 00:05:01,260 --> 00:05:04,260
-O yüzden arada bir, seni faturalandırıp duran o telefonu eline al —
+O yüzden arada bir, seni faturalandırıp duran o telefonu eline al -
 
 124
 00:05:04,260 --> 00:05:05,500

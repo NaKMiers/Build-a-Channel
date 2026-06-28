@@ -20,7 +20,7 @@ This is a Windows repo (`MAX_PATH` ≈ 260 chars). Long nested paths break `git 
 - Keep filenames short and kebab-case. For asset files, prefer `<subject>-<n>.jpg` (e.g. `cardboard-boxes-1.jpg`), not long descriptive + attribution strings in the filename. Put photographer/source/license in the section `ATTRIBUTION.md`, not the filename.
 - Do not repeat the long `section-XX-kebab-section-name` more than once in a single path. Asset trees that nest the section slug inside another section slug folder (and then again inside a cache) are what overflow the limit.
 - Never commit generated/derived files. These are regenerable and must stay out of git (already in `.gitignore`):
-  - `.thumbnails/` — HyperFrames thumbnail caches (they mirror the whole asset tree under the preview folder, creating the deepest paths in the repo)
+  - `.thumbnails/` - HyperFrames thumbnail caches (they mirror the whole asset tree under the preview folder, creating the deepest paths in the repo)
   - `node_modules/`, `.cache/`, `*.raw`/`*.tmp` decode artifacts
 - Commit only source + deliverables: scripts/markdown, section `index.html` + `DESIGN.md`/`IMPLEMENTATION.md`, the shared `assets/` library, voiceover audio + timings, and the `output/` deliverables. Preview/cache byproducts stay ignored.
 - `git config core.longpaths true` is set on this repo as a safety net, but the real fix is short paths + ignoring caches.
@@ -41,7 +41,7 @@ The main video pipeline is:
 08-self-learning.md
 ```
 
-Numbering note: the above is the NEW-project numbering (packaging left the numbered set on `2026-06-26`, so voiceover→render shifted up by one). Existing projects keep the old numbers (`04-voiceover` … `09-self-learning`, `03-packaging`). All skills resolve a step file by its name SUFFIX, never a hard-coded prefix — see `.agents/rules/video-workflow.md`.
+Numbering note: the above is the NEW-project numbering (packaging left the numbered set on `2026-06-26`, so voiceover→render shifted up by one). Existing projects keep the old numbers (`04-voiceover` … `09-self-learning`, `03-packaging`). All skills resolve a step file by its name SUFFIX, never a hard-coded prefix - see `.agents/rules/video-workflow.md`.
 
 Packaging (after caption, not numbered):
 
@@ -60,7 +60,7 @@ Current executable steps:
 - `render` requires the visual-plan index, the selected section visual plan, and the section's implemented assets in `assets/`. It COMPOSITES the mascot + pre-made assets into each scene's layout (HyperFrames), then writes the production board (`05-production-board.md`; legacy `06`) and section preview files. It re-sources an asset itself only as a documented fallback when one is missing.
 - `combine` (after all sections) unifies the project on `localhost:1000` with one combined voiceover and exports the full MP4 to `output/`.
 - `caption` (after combine) transcribes the full combined audio for real word timings and exports `output/captions.srt`.
-- `shorts` (side sub-workflow from `combine`) turns the finished long video into 2-4 COMPLETE vertical shorts (`1080x1920`) on ports `1100 + short number` via native portrait HyperFrames rebuilds — reusing each source section's real assets, regenerating a per-short voiceover, and burning centered subtitles — then exports to `output/shorts/`. Each short carries NO CTA, never edits the long-form sections, and does not block caption, upload, or learning.
+- `shorts` (side sub-workflow from `combine`) turns the finished long video into 2-4 COMPLETE vertical shorts (`1080x1920`) on ports `1100 + short number` via native portrait HyperFrames rebuilds - reusing each source section's real assets, regenerating a per-short voiceover, and burning centered subtitles - then exports to `output/shorts/`. Each short carries NO CTA, never edits the long-form sections, and does not block caption, upload, or learning.
 
 Packaging rule:
 
@@ -75,7 +75,7 @@ Pipeline rules:
 
 After the voiceover index (`03-voiceover.md`; legacy `04`), production branches by section. A selected section should move through visual plan, visual implement, render, and review as its own branch. `All` means every section gets separate outputs, not one stitched planning artifact.
 
-Plan / implement / render separation (2026-06-28): `visual-plan` describes scenes + names assets (no prompts); `visual-implement` creates the assets as ISOLATED, reusable elements (generate / browse / reuse by filename); `render` composites them. Generating isolated assets once and reusing by filename keeps a recurring character identical across scenes — never generate a full pre-composed scene.
+Plan / implement / render separation (2026-06-28): `visual-plan` describes scenes + names assets (no prompts); `visual-implement` creates the assets as ISOLATED, reusable elements (generate / browse / reuse by filename); `render` composites them. Generating isolated assets once and reusing by filename keeps a recurring character identical across scenes - never generate a full pre-composed scene.
 
 Render port rule:
 

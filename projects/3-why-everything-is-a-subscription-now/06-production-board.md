@@ -2,7 +2,7 @@
 
 Video: `Why Everything Is a Subscription Now`
 
-Status: `COMBINED — unified preview on localhost:1000 + final MP4 exported to output/ (ready for caption)`
+Status: `COMBINED - unified preview on localhost:1000 + final MP4 exported to output/ (ready for caption)`
 
 Source skill: `render` → `combine`
 
@@ -42,8 +42,8 @@ Original build rejected on review (mundane photos, boring WIT, repetitive cream 
 - Composition: `Section01Hook` (1920x1080, 23.509s)
 - Audio: `section-01-hook-david23-am_eric-0.8.mp3`
 - Word timings: `voiceover/section-01-hook/section-01-word-timings.json`
-- Design: vivid real bases (coins → cash → padlocks) + loved CSS real-UI — colorful app-grid, jumping "12+" counter, notification charge toasts, free-trial countdown→charge, full-screen EXPIRED modal, padlock-wall + kinetic payoff. No cream label boxes.
-- Bases: `base-coins.jpg` (CC0), `base-cash.jpg` (CC BY), `base-padlock.jpg` (CC BY) — see section ATTRIBUTION.
+- Design: vivid real bases (coins → cash → padlocks) + loved CSS real-UI - colorful app-grid, jumping "12+" counter, notification charge toasts, free-trial countdown→charge, full-screen EXPIRED modal, padlock-wall + kinetic payoff. No cream label boxes.
+- Bases: `base-coins.jpg` (CC0), `base-cash.jpg` (CC BY), `base-padlock.jpg` (CC BY) - see section ATTRIBUTION.
 - WIT poses: price-tag-suspicion, hidden-fee-panic, holding-phone-panic, trapped-by-app-screen (4 beats). Avoided `money-panic` (baked black bg).
 - Checks: `lint` 0/0; `validate` 0 errors / 0 warnings / 40 non-blocking contrast warnings; `snapshot` QA at 1.2/5.9/8.6/13.2/18.2/21.2.
 - Review mirror: `hyperframes/review/section-01.html`. No MP4 exported.
@@ -113,20 +113,20 @@ idea-devices → giant WIT that varies per scene`.
 - Composition: `Section06Easy` (1920x1080, 53.013s), port 1006
 - Audio: `section-06-easy-in-no-way-out-david23-am_eric-0.8.mp3`
 - Word timings: GENERATED this run via transformers.js whisper-tiny.en (none existed); pinned to word starts; capped at 53.013
-- 3 distinct vivid bases: `base-stopwatch` (easy/hard) → `base-maze` wooden labyrinth (the ordeal / menu maze) → `base-contract` (negative option). The maze + stopwatch each RETURN once as deliberate darker thematic callbacks (`base-maze-2` −1000 aura; `base-stopwatch-2` give-up/no-salary) because clean distinct photos for those abstract tail beats weren't sourceable — documented + swappable. See section ATTRIBUTION.
+- 3 distinct vivid bases: `base-stopwatch` (easy/hard) → `base-maze` wooden labyrinth (the ordeal / menu maze) → `base-contract` (negative option). The maze + stopwatch each RETURN once as deliberate darker thematic callbacks (`base-maze-2` −1000 aura; `base-stopwatch-2` give-up/no-salary) because clean distinct photos for those abstract tail beats weren't sourceable - documented + swappable. See section ATTRIBUTION.
 - Idea-devices: SIGN-UP vs CANCEL labels → "FINAL BOSS" + a 7-step menu breadcrumb maze (account→…→a phone number) → `NEGATIVE OPTION BILLING` stamp → `−1000 AURA` game HUD → "part-time job / salary $0 / not a subscription" payoff.
 - WIT (4 giant beats, varied side/pose): running-away R → suspicious R → confused L → tiny-defeated R. S1 breathes. AVOIDED `typing-on-laptop`/`money-panic` (baked black bg).
 - Build fixes: float overlap (cue-d 8.6→8.58); menu chips moved to the left 2/3 so the running WIT (right) doesn't cover them.
 - Checks: `lint` 0 errors (1 non-blocking density note); `validate` 0 errors / 0 warnings / 25 contrast; `inspect` 0 layout issues; `snapshot` QA at 4/8/13/19/23/28/32/38/46/51.5.
 - Review mirror: `hyperframes/review/section-06.html`. No MP4 exported.
 
-## Section 7 Build Record (2026-06-23, Section 1 template) — FINAL SECTION
+## Section 7 Build Record (2026-06-23, Section 1 template) - FINAL SECTION
 
 - Preview project: `section-previews/section-07-payoff/`
 - Composition: `Section07Payoff` (1920x1080, 54.101s), port 1007
 - Audio: `section-07-payoff-david23-am_eric-0.8.mp3`
 - Word timings: GENERATED this run via transformers.js whisper-tiny.en (none existed); pinned to word starts; capped at 54.101
-- 4 distinct vivid bases: `base-cash` (reveal) → `base-phone` (the product is you) → `base-coins` (some worth it) → `base-cash2` $1 close-up (cancel the ghosts) → `base-phone-2` bank-app (your salary — the script's literal final image; phone reused once, non-adjacent). See section ATTRIBUTION.
+- 4 distinct vivid bases: `base-cash` (reveal) → `base-phone` (the product is you) → `base-coins` (some worth it) → `base-cash2` $1 close-up (cancel the ghosts) → `base-phone-2` bank-app (your salary - the script's literal final image; phone reused once, non-adjacent). See section ATTRIBUTION.
 - Idea-devices: crossed chips → `YOUR FORGETTING` → barcode `PRODUCT: YOU` tag → green/red worth-vs-design → bank statement (keep green / ghost rows struck) + `CANCEL THE GHOSTS` → bank-app `Salary +$3,200` + `your salary. (for now.)` payoff.
 - WIT (4 giant beats, varied side/pose): thinking R → shocked L → holding-receipt-evidence R → deadpan-side-eye R. S3 breathes. AVOIDED `typing-on-laptop`/`money-panic` (baked black bg).
 - Build fixes: float overlap (cue-c 8.8→8.78); the final payoff centered + WIT pushed right (verified @53.2s).
@@ -136,7 +136,7 @@ idea-devices → giant WIT that varies per scene`.
 ## Stale / Regeneration Notes
 
 - ALL 7 sections are rendered (previewing on 1001-1007), awaiting review.
-- No `07-review.md` / `08-upload.md` / `09-self-learning.md` exist yet — nothing downstream is stale.
+- No `07-review.md` / `08-upload.md` / `09-self-learning.md` exist yet - nothing downstream is stale.
 - If `02-script.md`, the Section 1 voiceover, or the Section 1 visual plan changes, this render becomes stale and must be rebuilt.
 
 ## Next Step Boundary
@@ -154,7 +154,7 @@ Assembled all 7 rendered sections into one unified video on `localhost:1000` wit
 - Combined voiceover: `hyperframes/full-video/combined-voiceover.mp3` (ffmpeg stream-copy concat of the 7 section mp3s, ffprobe 328.056s)
 - Per-section offsets (start / dur): s1 0/23.568 · s2 23.568/37.968 · s3 61.536/54.216 · s4 115.752/51.144 · s5 166.896/53.928 · s6 220.824/53.064 · s7 273.888/54.168
 - Assets consolidated at `full-video/` root: `assets/visual-references/section-01..07`, `assets/wit/` (16 poses), `assets/fonts/patrick-hand-latin.woff2`
-- Self-check: lint 0 errors (6 pre-existing per-section `timeline_track_too_dense` warnings only); compositions = 8 elements (7 mounts + 1 audio); 1 `<audio>` in index, 0 in sub-comps; 7-frame snapshot — every section renders with real bases + WIT + labels; preview HTTP 200 on 1000
+- Self-check: lint 0 errors (6 pre-existing per-section `timeline_track_too_dense` warnings only); compositions = 8 elements (7 mounts + 1 audio); 1 `<audio>` in index, 0 in sub-comps; 7-frame snapshot - every section renders with real bases + WIT + labels; preview HTTP 200 on 1000
 - **Final video: `output/3-why-everything-is-a-subscription-now.mp4`** (44.8 MB, 30fps standard, ffprobe 328.089s ≈ combined 328.056s). Rendered via `renders/` staging, then moved to `output/`; empty `renders/` removed.
 
 Next step: `caption`.
@@ -165,18 +165,18 @@ Generated YouTube captions from the FULL combined audio (real word-level timing)
 
 - Audio source: `hyperframes/full-video/combined-voiceover.mp3` (decoded 327.989s; combine cap 328.056s)
 - Transcription: `Xenova/whisper-tiny.en` via `@xenova/transformers`, word timestamps over the whole timeline in one pass → **1021 words**. Saved to `voiceover/combined-word-timings.json` (reusable).
-- Alignment: Needleman-Wunsch of 1016 script tokens (cues from `02-script.md`, delivery cues `[...]` and `**` joke markers stripped — bold text IS spoken) against the 1021 Whisper words; cue times from the matched audio words.
-- Output: **`output/captions.srt`** — **132 cues**. Validation: 0 overlaps, 0 zero/negative-duration, monotonic, gapless; first cue `00:00:00,000`, last cue ends `00:05:28,056` (== audio duration).
-- Sync spot-check vs combine section offsets: S2 cue 00:00:23.62 vs 23.568s · S5 00:02:47.00 vs 166.896s · S7 00:04:33.96 vs 273.888s — all exact. No tail glitch this run (last words monotonic).
+- Alignment: Needleman-Wunsch of 1016 script tokens (cues from `02-script.md`, delivery cues `[...]` and `**` joke markers stripped - bold text IS spoken) against the 1021 Whisper words; cue times from the matched audio words.
+- Output: **`output/captions.srt`** - **132 cues**. Validation: 0 overlaps, 0 zero/negative-duration, monotonic, gapless; first cue `00:00:00,000`, last cue ends `00:05:28,056` (== audio duration).
+- Sync spot-check vs combine section offsets: S2 cue 00:00:23.62 vs 23.568s · S5 00:02:47.00 vs 166.896s · S7 00:04:33.96 vs 273.888s - all exact. No tail glitch this run (last words monotonic).
 - No `.vtt` requested.
 
-## Caption — 22 languages (2026-06-25)
+## Caption - 22 languages (2026-06-25)
 
-Extended captions to all 22 supported languages. Reused the verified English track as the single timing base (no re-transcription) — timing came once from the real audio and every language inherits it, so all 22 tracks are frame-identical to the video by construction.
+Extended captions to all 22 supported languages. Reused the verified English track as the single timing base (no re-transcription) - timing came once from the real audio and every language inherits it, so all 22 tracks are frame-identical to the video by construction.
 
 - Timing base: parsed the verified `output/captions.srt` (132 cues, last ends `00:05:28,056`) into `voiceover/_segments.json`.
 - Translation: one cue-for-cue translation per language (132 cues each, same count/order), one parallel translator per language, written via `write-translated-srt.mjs` (count-guard enforced).
-- Output: **`output/captions/<language>.srt`** — 22 files (English + 21 translations). Compatibility `output/captions.srt` (English) kept at output root.
+- Output: **`output/captions/<language>.srt`** - 22 files (English + 21 translations). Compatibility `output/captions.srt` (English) kept at output root.
 - Verification (hard gate): every `<language>.srt` = **132 cues** with **byte-identical timestamps** to `english.srt` (0 mismatches across all 22), 0 empty cues, all valid UTF-8 (Arabic / CJK / Indic / Thai render clean, no mojibake).
 - Languages: arabic, bangla, chinese-simplified, chinese-traditional, english, french, german, hindi, indonesian, italian, japanese, korean, malayalam, polish, portuguese, russian, spanish, tamil, telugu, thai, turkish, vietnamese.
 - No `.vtt` requested.

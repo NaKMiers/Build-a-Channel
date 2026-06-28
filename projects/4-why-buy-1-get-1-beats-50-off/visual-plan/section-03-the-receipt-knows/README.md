@@ -18,4 +18,4 @@ Status: `draft visual plan for approval`
 - WIT emotion: holding-receipt suspicion → empty-wallet betrayal → facepalm (3 beats)
 - Key labels: receipts "TOTAL $5 / $10", "×2 TWICE AS MUCH", "+1 you didn't need", "BIGGER BASKET", "ROBBED", "✓ better deal", "the magic word →"
 - Reference pass: 2 CC0 photos (wood table, veg basket); receipts/signs built in CSS
-- HyperFrames readiness: ready — `Section03Receipt`, 32.235s, port 1003; cues pinned to word timings
+- HyperFrames readiness: ready - `Section03Receipt`, 32.235s, port 1003; cues pinned to word timings

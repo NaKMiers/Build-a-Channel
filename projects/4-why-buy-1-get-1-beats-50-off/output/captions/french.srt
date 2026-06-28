@@ -60,7 +60,7 @@ Le magasin a dépensé quatre pour le fabriquer.
 
 16
 00:00:34,080 --> 00:00:37,080
-Cinq moins quatre — le magasin garde un dollar.
+Cinq moins quatre - le magasin garde un dollar.
 
 17
 00:00:37,080 --> 00:00:39,680
@@ -72,7 +72,7 @@ Ces deux-là coûtent huit au magasin à fabriquer.
 
 19
 00:00:41,960 --> 00:00:45,620
-Dix moins huit — le magasin garde deux dollars. Le double.
+Dix moins huit - le magasin garde deux dollars. Le double.
 
 20
 00:00:45,620 --> 00:00:48,200
@@ -84,7 +84,7 @@ Mais le double du profit pour le magasin.
 
 22
 00:00:50,020 --> 00:00:52,640
-Et l'affiche n'a jamais changé — elle dit toujours dix.
+Et l'affiche n'a jamais changé - elle dit toujours dix.
 
 23
 00:00:52,640 --> 00:00:55,260
@@ -100,7 +100,7 @@ Un potier nommé Wedgwood le pratiquait déjà dans les années dix-sept cents.
 
 26
 00:01:00,080 --> 00:01:03,813
-Donc non — vous n'êtes pas le premier pigeon. Vous êtes juste le dernier en date.
+Donc non - vous n'êtes pas le premier pigeon. Vous êtes juste le dernier en date.
 
 27
 00:01:03,813 --> 00:01:06,787

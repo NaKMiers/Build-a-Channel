@@ -1,4 +1,4 @@
-# Section 3 Marked Script — The Spread: From Apps To Your Car
+# Section 3 Marked Script - The Spread: From Apps To Your Car
 
 Marked for delivery only. The `**bold**` joke markers and `[beat]/[deadpan]` cues are NOT spoken.
 Real pacing/rhythm lives in `tts-inputs/section-03-the-spread-tts.txt`.
@@ -8,11 +8,11 @@ It started quietly, with software.
 
 The program you used to buy once, in a box, became a monthly plan. Same program. Now it just... [beat] holds itself hostage. Stop paying, and it greys out, like, "pay me, or the document gets it."
 
-Then your screens joined the party. Music, movies, shows — you don't own a single song or film. You rent a giant library, and the second you stop paying, the whole thing vanishes. Poof. POV: you own nothing.
+Then your screens joined the party. Music, movies, shows - you don't own a single song or film. You rent a giant library, and the second you stop paying, the whole thing vanishes. Poof. POV: you own nothing.
 
 And it's never one subscription. It's five. One for shows, one for movies, one for the other shows, one for music, and one for the app that organizes your other apps. Each one is small. Together? Bigger than the old cable bill everyone was running from. We escaped one dungeon and built five smaller ones.
 
-And it didn't stop at screens. Some carmakers have tried putting heated seats — seats already sitting in the car you bought — behind a monthly fee.
+And it didn't stop at screens. Some carmakers have tried putting heated seats - seats already sitting in the car you bought - behind a monthly fee.
 
 [deadpan] Your free trial of a warm bottom has expired.
 ```

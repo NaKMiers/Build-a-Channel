@@ -6,7 +6,7 @@ description: Create or update the step 2 sectioned script draft for a Why It Wor
 # Script Draft (Claude wrapper)
 
 This is the Claude discovery wrapper for the **script-draft** skill. The canonical
-definition — full purpose, workflow, output format, and self-improving memory — lives
+definition - full purpose, workflow, output format, and self-improving memory - lives
 under `.agents/` so Codex and Claude share one source of truth.
 
 When this skill runs:

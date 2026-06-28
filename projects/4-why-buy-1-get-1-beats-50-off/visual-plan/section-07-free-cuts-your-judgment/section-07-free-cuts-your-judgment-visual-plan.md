@@ -2,11 +2,11 @@
 
 Video: `Why Buy 1 Get 1 Free Beats 50% Off`
 Section: `Section 7: Payoff: Free Cuts Your Judgment`
-Status: `built to full bar (kinetic, fresh bright bases) — see IMPLEMENTATION.md for as-built`
+Status: `built to full bar (kinetic, fresh bright bases) - see IMPLEMENTATION.md for as-built`
 
 ## Section Goal
 
-The payoff: the two signs play different games — 50% off cuts the PRICE, "free" cuts your JUDGMENT. Stay fair (sometimes you want two; sometimes free is free), but see the second sign before "free" switches off your inner accountant. Stinger: "buy 1 get 1 50% off" is just 25% off in a costume. Sign-off: same shelf, same product, different game — go be slightly harder to trick.
+The payoff: the two signs play different games - 50% off cuts the PRICE, "free" cuts your JUDGMENT. Stay fair (sometimes you want two; sometimes free is free), but see the second sign before "free" switches off your inner accountant. Stinger: "buy 1 get 1 50% off" is just 25% off in a costume. Sign-off: same shelf, same product, different game - go be slightly harder to trick.
 
 ## Source Inputs
 
@@ -39,11 +39,11 @@ Same shelf. Same product. Completely different game. Now go be slightly harder t
 
 | Scene | Local Time | Voice Range | Base | Hero Device | WIT |
 |---|---:|---|---|---|---|
-| A — different games | 0.0–6.52 | "why does free beat 50%?… different games" | chess | FREE vs 50% OFF + "two different GAMES" | thinking R |
-| B — the thesis | 6.52–10.72 | "cuts the price… cuts your judgment" | scissors | "cuts the PRICE" / "free cuts your JUDGMENT" | suspicious L |
-| C — inner accountant | 10.72–25.48 | "asks your brain a question… free is free money… switches off your inner accountant" | calculator | calc "5−4=?" + caveat ✓✓ → "switched off" | talking-front R |
-| D — 25% in a costume | 25.48–33.84 | "buy 1 get 1 50% off… not free… 25% off in a costume" | carnival mask | "BUY 1 GET 1 50% OFF" → "= 25% OFF" + "in a costume" | betrayed L |
-| E — sign-off | 33.84–38.912 | "same shelf, same product, different game… harder to trick" | playing cards | "different GAME" + "go be slightly harder to trick" | pointing-right R |
+| A - different games | 0.0–6.52 | "why does free beat 50%?… different games" | chess | FREE vs 50% OFF + "two different GAMES" | thinking R |
+| B - the thesis | 6.52–10.72 | "cuts the price… cuts your judgment" | scissors | "cuts the PRICE" / "free cuts your JUDGMENT" | suspicious L |
+| C - inner accountant | 10.72–25.48 | "asks your brain a question… free is free money… switches off your inner accountant" | calculator | calc "5−4=?" + caveat ✓✓ → "switched off" | talking-front R |
+| D - 25% in a costume | 25.48–33.84 | "buy 1 get 1 50% off… not free… 25% off in a costume" | carnival mask | "BUY 1 GET 1 50% OFF" → "= 25% OFF" + "in a costume" | betrayed L |
+| E - sign-off | 33.84–38.912 | "same shelf, same product, different game… harder to trick" | playing cards | "different GAME" + "go be slightly harder to trick" | pointing-right R |
 
 ## HyperFrames Guidance
 

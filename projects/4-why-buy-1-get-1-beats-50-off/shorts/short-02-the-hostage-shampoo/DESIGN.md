@@ -1,10 +1,10 @@
-# Short 02 — "The Hostage Shampoo"
+# Short 02 - "The Hostage Shampoo"
 
 Native portrait HyperFrames rebuild · `1080x1920` · port `1102` · comp duration `23.85s` (audio `22.632s` + payoff hold).
-Source section: S4 (the magic word "FREE"). Complete standalone short — **NO CTA**.
+Source section: S4 (the magic word "FREE"). Complete standalone short - **NO CTA**.
 
 ## One idea
-"Free" is a feeling, not a number — it switches off your math, so BOGO sells you a word with a full-price purchase stapled on. Payoff: you didn't get a free shampoo, you got a full-price shampoo with a hostage.
+"Free" is a feeling, not a number - it switches off your math, so BOGO sells you a word with a full-price purchase stapled on. Payoff: you didn't get a free shampoo, you got a full-price shampoo with a hostage.
 
 ## Scenes (real photo base + top/bottom scrim each)
 | Scene | Base | Track | Window | WIT | Hero card(s) |
@@ -19,13 +19,13 @@ Cues sequential; scene bases cross-fade (`fadeScene`, blur→0) on their own tra
 ## Captions (distinct white-on-dark subtitle, vertical center, from real word timings)
 - "The magic word…" 0.05→1.00 · "your brain goes stupid" 1.98→3.45 · "you stop doing math" 3.55→5.30
 - "do you even want two?" 5.60→7.80 (clears before the contrast cards)
-- (Scene C punchline carried by cards — no caption duplication)
+- (Scene C punchline carried by cards - no caption duplication)
 - "you didn't get a free shampoo" 18.30→19.66 · "you got a full-price one…" 19.88→21.10 (clears before the payoff card)
 
 Punchline/payoff carried by the on-screen cards, never duplicated in a caption; captions clear before each card pops.
 
 ## Voiceover
-`voiceover/short-02.mp3` — approved voice `am_eric / 0.84 / en-us`. Timings `voiceover/short-02-word-timings.json` (whisper-tiny.en; tail "shampoo with a hostage" re-timed monotonically 20.84→22.632 to fix the whisper end-of-audio glitch).
+`voiceover/short-02.mp3` - approved voice `am_eric / 0.84 / en-us`. Timings `voiceover/short-02-word-timings.json` (whisper-tiny.en; tail "shampoo with a hostage" re-timed monotonically 20.84→22.632 to fix the whisper end-of-audio glitch).
 
 ## QA
 - `lint`/`validate`: 0 errors. Non-blocking: `overlapping_gsap_tweens` 0–0.42s (intentional opening pop); WCAG contrast false positives (colored key text sampled while cards are hidden).

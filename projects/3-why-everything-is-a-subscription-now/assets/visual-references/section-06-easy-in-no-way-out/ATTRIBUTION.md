@@ -1,4 +1,4 @@
-# Section 6 Visual References — Attribution (2026-06-23)
+# Section 6 Visual References - Attribution (2026-06-23)
 
 Built to the Section 1 standing template. Sourced via Openverse / Wikimedia and viewed before selection.
 
@@ -20,8 +20,8 @@ callbacks (separate filenames). Owner can drop replacement photos here for those
 
 ## Rejected (not saved)
 
-- A phone shot with a person's head/face — no-face channel
-- A Holocaust-memorial photo (search mis-hit for "maze") — off-tone
+- A phone shot with a person's head/face - no-face channel
+- A Holocaust-memorial photo (search mis-hit for "maze") - off-tone
 - A cluttered museum punch-clock display (exhibit text panels)
-- PNG "sticker" illustrations (alarm clock, labyrinth, stopwatch) — not real photos
+- PNG "sticker" illustrations (alarm clock, labyrinth, stopwatch) - not real photos
 - "White flag" search → historical war photos

@@ -7,7 +7,7 @@ Section:
 `Section 1: Hook: It's More Than You Think`
 
 Status:
-`remade after review — built + previewing on localhost:1001`
+`remade after review - built + previewing on localhost:1001`
 
 ## Files
 
@@ -17,7 +17,7 @@ Status:
 
 ## Build Notes (remake)
 
-- Big scenes: 3 — app grid (coins) → charge toasts (cash) → padlock wall (padlocks)
+- Big scenes: 3 - app grid (coins) → charge toasts (cash) → padlock wall (padlocks)
 - Main motif: money draining into subscriptions, then everything locks
 - WIT: price-tag-suspicion → hidden-fee-panic → holding-phone-panic → trapped-by-app-screen (4 beats)
 - Idea devices (replacing cream boxes): app grid, jumping counter, notification toasts, free-trial countdown, EXPIRED modal, padlock wall, kinetic payoff

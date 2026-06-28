@@ -13,18 +13,18 @@ Status: `built + previewing on localhost:1007`
 
 ```text
 So why is everything a subscription now? Because companies found something quietly genius. The most valuable thing they can sell isn't the app, or the show, or the heated seat. It's your forgetting. The month you meant to cancel, and didn't.
-Once you see it, you can't unsee it. The product was never the thing. The product is you — staying.
+Once you see it, you can't unsee it. The product was never the thing. The product is you - staying.
 Now, again: subscriptions aren't evil. Some are worth every cent. The point is just to notice. To know that "small and monthly" is a design, not an accident.
-So every so often, pick up the phone that's been billing you — and turn it against them. Open the bank statement. Read the little charges out loud. Ask which ones you'd actually choose again today. Keep the ones you love. Cancel the ghosts.
+So every so often, pick up the phone that's been billing you - and turn it against them. Open the bank statement. Read the little charges out loud. Ask which ones you'd actually choose again today. Keep the ones you love. Cancel the ghosts.
 Because in a world where almost everything is rented, the most powerful move you've got is remembering what you're paying for.
 And then quietly enjoying the one thing in your life that is still not a monthly subscription. Your salary. For now.
 ```
 
 ## Visual Direction
 
-- 5 big scenes for 54s — the payoff/closer; it recaps the video's money/device motif and resolves on the bank-app salary screen (the script's literal final image: "the one screen not asking for money").
-- VIVID OBJECT BASES: a spread of dollar bills (the reveal) → a phone (the product is YOU) → a coin jar (some worth it) → a $1 close-up (cancel the ghosts) → a phone again, bank-app (your salary — final). The two phone uses (S2 device / S5 the salary screen) are non-adjacent and carry very different CSS; S5 is the script's literal closing image. The two money shots are distinct images. This money/device recap is appropriate for a closer.
-- VARIED idea-devices per beat: crossed "not the app/show/seat" chips → big `YOUR FORGETTING`; a barcode `THE PRODUCT: YOU — staying` tag; green "worth every cent ✓" + red "'small & monthly' = a DESIGN"; a bank statement (keep the green row, the ghost rows struck) + `CANCEL THE GHOSTS`; a bank-app `Salary +$3,200.00` card + the `your salary. (for now.)` payoff.
+- 5 big scenes for 54s - the payoff/closer; it recaps the video's money/device motif and resolves on the bank-app salary screen (the script's literal final image: "the one screen not asking for money").
+- VIVID OBJECT BASES: a spread of dollar bills (the reveal) → a phone (the product is YOU) → a coin jar (some worth it) → a $1 close-up (cancel the ghosts) → a phone again, bank-app (your salary - final). The two phone uses (S2 device / S5 the salary screen) are non-adjacent and carry very different CSS; S5 is the script's literal closing image. The two money shots are distinct images. This money/device recap is appropriate for a closer.
+- VARIED idea-devices per beat: crossed "not the app/show/seat" chips → big `YOUR FORGETTING`; a barcode `THE PRODUCT: YOU - staying` tag; green "worth every cent ✓" + red "'small & monthly' = a DESIGN"; a bank statement (keep the green row, the ghost rows struck) + `CANCEL THE GHOSTS`; a bank-app `Salary +$3,200.00` card + the `your salary. (for now.)` payoff.
 - GIANT WIT, varied side/pose (4 beats; S3 breathes): thinking RIGHT (the realization) → shocked LEFT ("I'm the product") → holding-receipt-evidence RIGHT (taking control / reading the statement) → deadpan-side-eye RIGHT (the dry "for now").
 
 ## Big Scene Plan
@@ -41,13 +41,13 @@ And then quietly enjoying the one thing in your life that is still not a monthly
 
 | Cue | Time | Voice | Scene | What changes | Motion | WIT |
 |---|---:|---|---|---|---|---|
-| C1 | 0.4 / 7.9–9.1 | "subscription now? / not the app/show/seat" | BS1 | headline; 3 crossed chips | hard-show / pop | — |
+| C1 | 0.4 / 7.9–9.1 | "subscription now? / not the app/show/seat" | BS1 | headline; 3 crossed chips | hard-show / pop | - |
 | C2 | 9.8 / 11.1 | "it's your forgetting / the month you meant to cancel" | BS1 | big `YOUR FORGETTING`; cream aside | impact / hard-show | thinking R @9.8 |
 | C3 | 14.7 / 16.5 | "the product was never the thing / is you" | BS2 | label; barcode `PRODUCT: YOU` tag | hard-show / impact | shocked L @16.5 |
-| C4 | 19.3 / 20.7 / 24.5 | "not evil / worth every cent / a design" | BS3 | headline; green label; red "a DESIGN" | hard-show / impact | — |
+| C4 | 19.3 / 20.7 / 24.5 | "not evil / worth every cent / a design" | BS3 | headline; green label; red "a DESIGN" | hard-show / impact | - |
 | C5 | 28.5 / 31.5 / 32.8–34.1 | "turn it against them / open the statement / read the charges" | BS4 | headline; bank statement; 4 rows pop | hard-show / pop | holding-receipt R @31.5 |
 | C6 | 38.5 | "cancel the ghosts" | BS4 | red `CANCEL THE GHOSTS` | impact | holds |
-| C7 | 42.3 | "remembering what you're paying for" | BS5 | headline | hard-show | — |
+| C7 | 42.3 | "remembering what you're paying for" | BS5 | headline | hard-show | - |
 | C8 | 47.5 | "the one thing not a monthly subscription" | BS5 | bank-app `Salary +$3,200.00` card | hard-show | deadpan-side-eye R @47.5 |
 | C9 | 52.6 | "your salary. for now." | BS5 | payoff `your salary. (for now.)` | impact | holds |
 
@@ -57,7 +57,7 @@ And then quietly enjoying the one thing in your life that is still not a monthly
 |---:|---|---|---|
 | 9.8–13.0 | wit-pose-thinking.png | RIGHT, width 1080, bottom:-320 | the realization (your forgetting) |
 | 16.5–18.6 | wit-pose-shocked.png | LEFT, width 1120, bottom:-320 | "I'm the product" |
-| 31.5–39.4 | wit-pose-holding-receipt-evidence.png | RIGHT, width 1080, bottom:-320 | taking control — reading the statement |
+| 31.5–39.4 | wit-pose-holding-receipt-evidence.png | RIGHT, width 1080, bottom:-320 | taking control - reading the statement |
 | 47.5–54.1 | wit-pose-deadpan-side-eye.png | RIGHT, width 980, bottom:-330 | the dry "your salary. for now." |
 
 WIT density: 4 beats / 5 scenes; BS3 breathes. All verified transparent. AVOID `typing-on-laptop` + `money-panic` (baked black bg).

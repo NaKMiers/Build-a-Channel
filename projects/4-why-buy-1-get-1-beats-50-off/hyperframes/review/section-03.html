@@ -142,13 +142,13 @@
       tl.fromTo("#scene-d", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 20.92);
       tl.fromTo("#scene-e", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 25.32);
 
-      // SCENE A — what you spend ($5)
+      // SCENE A - what you spend ($5)
       show("#cue-a .ca-label", 0, 1.78);
       show("#cue-a .ca-wit", 0, 1.95);
       show("#cue-a .ca-strip", 0, 3.20);                        // "fifty percent off"
       smash("#cue-a .ca-num", 0, 5.40, { y: 30, scale: 0.5, opacity: 0 }); // "paid five"
 
-      // SCENE B — full ten, twice as much
+      // SCENE B - full ten, twice as much
       show("#cue-b .cb-strip", 6.86, 6.95);                     // "buy one get one free"
       hide("#cue-b .cb-num", 6.86); hide("#cue-b .cb-x2", 6.86); hide("#cue-b .cb-plus1", 6.86);
       show("#cue-b .cb-wit", 6.86, 7.10);
@@ -156,7 +156,7 @@
       smash("#cue-b .cb-x2", 6.86, 10.62, { scale: 0.4, opacity: 0 });         // "twice as much"
       pop("#cue-b .cb-plus1", 6.86, 12.82);                     // "a second one you did not need"
 
-      // SCENE C — bigger basket
+      // SCENE C - bigger basket
       hide("#cue-c .cc-band", 15.12);
       show("#cue-c .cc-wit", 15.12, 15.30);
       // reveal "smaller price" line first, then the BIGGER BASKET on its word via the band container
@@ -164,14 +164,14 @@
       tl.set("#cue-c .cc-band .big", { opacity: 0, scale: 0.5 }, 15.12);
       tl.to("#cue-c .cc-band .big", { opacity: 1, scale: 1, duration: 0.2, ease: "back.out(2)" }, 20.02); // "bigger basket"
 
-      // SCENE D — robs you while smiling
+      // SCENE D - robs you while smiling
       hide("#cue-d .cd-rob", 20.92); hide("#cue-d .cd-robbed", 20.92); hide("#cue-d .cd-wit", 20.92);
       show("#cue-d .cd-save", 20.92, 21.00);                    // "one saves your money"
       show("#cue-d .cd-rob", 20.92, 22.36);                     // "the other ... robs you"
       show("#cue-d .cd-wit", 20.92, 22.20);
       smash("#cue-d .cd-robbed", 20.92, 24.52, { scale: 0.4, opacity: 0 });    // "robs you"
 
-      // SCENE E — half price better / magic word
+      // SCENE E - half price better / magic word
       show("#cue-e .ce-half", 25.32, 25.55);
       hide("#cue-e .ce-check", 25.32); hide("#cue-e .ce-free", 25.32); hide("#cue-e .ce-magic", 25.32); hide("#cue-e .ce-wit", 25.32);
       smash("#cue-e .ce-check", 25.32, 27.48, { scale: 0.4, opacity: 0 });     // "better deal"

@@ -6,7 +6,7 @@ description: Generate and evaluate next-video topic ideas for the Why It Works Y
 # Topic Intake (Claude wrapper)
 
 This is the Claude discovery wrapper for the **topic-intake** skill. The canonical
-definition — full purpose, workflow, output format, and self-improving memory — lives
+definition - full purpose, workflow, output format, and self-improving memory - lives
 under `.agents/` so Codex and Claude share one source of truth.
 
 When this skill runs:

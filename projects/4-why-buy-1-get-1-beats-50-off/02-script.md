@@ -16,13 +16,13 @@ Source files:
 - `01-research-pack.md`
 
 Note:
-Rev 2 (2026-06-24): owner asked for shorter, funnier, and slightly rude/cheeky — "less serious, more
+Rev 2 (2026-06-24): owner asked for shorter, funnier, and slightly rude/cheeky - "less serious, more
 funny." Trimmed ~1026 → ~855 words, raised joke density, added a light cheeky edge that roasts the
 *trick* and the shopper's own "free"-brain, never a person or group. Claims still trace to
 `01-research-pack.md`; math uses the safe abstract `$10 item / $4 cost` example. Timestamps are
 pre-generation estimates; re-align after voiceover.
 
-Rev 2.1 (2026-06-24): owner said Section 2 was confusing — the profit numbers ($1, $2) were stated
+Rev 2.1 (2026-06-24): owner said Section 2 was confusing - the profit numbers ($1, $2) were stated
 without the subtraction being spoken, so a learner couldn't trace "$5 paid → $1 kept." Section 2
 rewritten to say the math aloud ("Five minus four... the store keeps one dollar") and to keep
 pronouns consistent ("you" = shopper, "the store" = seller). Section 2 only; all other sections
@@ -30,16 +30,16 @@ unchanged. Section 2 voiceover is now stale and must be regenerated.
 
 ## Draft Strategy
 
-- Core thesis: "50% off" and "Buy 1 Get 1 Free" can cost you the same per item, but BOGO keeps the full sticker price, sells two units, and uses the word "free" to switch off your math — so it usually earns the store more and makes you spend more. A discount cuts the price; "free" cuts your judgment.
+- Core thesis: "50% off" and "Buy 1 Get 1 Free" can cost you the same per item, but BOGO keeps the full sticker price, sells two units, and uses the word "free" to switch off your math - so it usually earns the store more and makes you spend more. A discount cuts the price; "free" cuts your judgment.
 - Recurring motif: two near-identical price tags (`50% OFF` vs `BUY 1 GET 1 FREE`, both "$5/item"), a hidden profit meter, and a giant `FREE!` sticker covering a tiny truthful footnote.
 - WIT arc: smug → "wait, what?" → mild dread (total doubles) → hypnotized by FREE → dry realization → smug "gotcha," then corrected → cocky-but-wiser, holding two of the same product.
-- Tone (rev 2): punchier and cheekier — stand-up with a point, not a lecture. Light roasting of the trick and the viewer's own brain ("you're the rabbit," "you're not the first sucker, just the latest"). Still warm, never mean.
+- Tone (rev 2): punchier and cheekier - stand-up with a point, not a lecture. Light roasting of the trick and the viewer's own brain ("you're the rabbit," "you're not the first sucker, just the latest"). Still warm, never mean.
 - Script risk: "slightly rude" tipping into mean, or cheeky slang confusing learners. Mitigation: edge is self/system-aimed only, every cheeky phrase works from context (glossed in Learner Notes), and jokes still carry the explanation. Math honesty kept (loss-leader turn stays).
 
 ## Humor System
 
 - Density: a beat roughly every 12-20s (denser than rev 1), jokes still support clarity.
-- Running gag: WIT proudly holding two of the same product while the register rings double — the "you played yourself" energy.
+- Running gag: WIT proudly holding two of the same product while the register rings double - the "you played yourself" energy.
 - Cheeky/self-aimed lines (the "slightly rude" edge): "you're the rabbit," "you're not the first sucker, just the latest," "your brain goes a little stupid," "makes you smile while it robs you," "go be slightly harder to trick."
 - Object jokes: giant `FREE!` sticker over a tiny footnote; the "hostage" shampoo; the dying free yogurt; `25% off in a costume`.
 - Rude-but-safe rule: aim only at the trick, the word "free," or the viewer's own wallet/brain/fridge. Never a person, group, brand, or protected category. No profanity (keep it learner-clean).
@@ -107,13 +107,13 @@ Stand behind the counter for a second. Look at the store's side.
 
 A product sells for ten dollars. It costs the store four dollars to make.
 
-Fifty percent off. You pay five. The store spent four to make it. Five minus four — the store keeps one dollar.
+Fifty percent off. You pay five. The store spent four to make it. Five minus four - the store keeps one dollar.
 
-Buy one, get one free. You pay ten and take two. Those two cost the store eight to make. Ten minus eight — the store keeps two dollars. Double.
+Buy one, get one free. You pay ten and take two. Those two cost the store eight to make. Ten minus eight - the store keeps two dollars. Double.
 
-So it is the same five dollars an item for you. But double the profit for the store. And the sign never changed — it still says ten. You paid full price and felt clever doing it.
+So it is the same five dollars an item for you. But double the profit for the store. And the sign never changed - it still says ten. You paid full price and felt clever doing it.
 
-Oh, and this trick is old. A pottery guy named Wedgwood ran it back in the seventeen hundreds. So no — you are not the first sucker. You are just the latest.
+Oh, and this trick is old. A pottery guy named Wedgwood ran it back in the seventeen hundreds. So no - you are not the first sucker. You are just the latest.
 ```
 
 Approval check:
@@ -125,7 +125,7 @@ Approval check:
 
 Voice revision notes:
 
-- `[slower]` on both subtraction lines ("Five minus four..." / "Ten minus eight...") — let each number land.
+- `[slower]` on both subtraction lines ("Five minus four..." / "Ten minus eight...") - let each number land.
 - `[beat]` before "the store keeps one dollar" and before "the store keeps two dollars" so the result lands after the subtraction.
 - `[beat]` before "You are just the latest."
 
@@ -135,7 +135,7 @@ Estimated time: `1:05-1:44`
 
 Words: `124`
 
-Purpose: Point 1 — BOGO makes you spend more total, not less.
+Purpose: Point 1 - BOGO makes you spend more total, not less.
 
 Visual goal: Two receipts: total `$5` vs `$10`, same per-item line. WIT's basket gets suspiciously heavy.
 
@@ -171,7 +171,7 @@ Estimated time: `1:44-2:27`
 
 Words: `134`
 
-Purpose: Point 2 — the word "free" switches off your math.
+Purpose: Point 2 - the word "free" switches off your math.
 
 Visual goal: Giant `FREE!` sticker slaps down and covers a tiny footnote ("(you didn't need two)"). WIT hypnotized, then betrayed. The "hostage" shampoo gag.
 
@@ -207,7 +207,7 @@ Estimated time: `2:27-3:06`
 
 Words: `124`
 
-Purpose: Point 3 — BOGO protects the full sticker price.
+Purpose: Point 3 - BOGO protects the full sticker price.
 
 Visual goal: Under 50% OFF the price number shrinks ($10 → $5) and stays small. Under BOGO the proud `$10` stays put with a `+1 FREE` tag. Dry realization on WIT.
 
@@ -241,7 +241,7 @@ Estimated time: `3:06-3:47`
 
 Words: `127`
 
-Purpose: Honest turn — BOGO is not always a store win; keep it fair.
+Purpose: Honest turn - BOGO is not always a store win; keep it fair.
 
 Visual goal: A cheap staple (milk) on a fishing hook as bait, pulling a full cart. A "free" yogurt expiring in a fridge. WIT smug "gotcha," then corrected.
 
@@ -318,15 +318,15 @@ Voice revision notes:
 - People value the second identical unit less than the first, which is why BOGO outperforms half-price for the seller. (Wikipedia / Alex Tabarrok.)
 - "Free" carries an outsized emotional pull that makes people discount the downside. (Dan Ariely, "The Cost of Zero Cost.")
 - BOGO is an old technique, ~18th century, Josiah Wedgwood. (Wikipedia.)
-- On low-margin staples, BOGO can be a loss leader — sold below margin to pull customers in to buy other profitable goods. (Wikipedia.)
+- On low-margin staples, BOGO can be a loss leader - sold below margin to pull customers in to buy other profitable goods. (Wikipedia.)
 - Two-for-one on short-shelf-life food is linked to more food waste / buying more than intended. (Wikipedia.)
 - "Buy 1 Get 1 50% off" is a 25% effective discount. (Arithmetic.)
 
 ### Inferences Used Carefully
 
-- "Most stores quietly prefer BOGO" — framed as the high-margin case and balanced by Section 6.
-- "The product looks cheap forever" under repeated 50%-off — anchoring-based synthesis, stated as a tendency.
-- The number-vs-feeling framing of FREE — a simplification of the zero-price effect, kept illustrative.
+- "Most stores quietly prefer BOGO" - framed as the high-margin case and balanced by Section 6.
+- "The product looks cheap forever" under repeated 50%-off - anchoring-based synthesis, stated as a tendency.
+- The number-vs-feeling framing of FREE - a simplification of the zero-price effect, kept illustrative.
 
 ### Claims Avoided
 
@@ -337,7 +337,7 @@ Voice revision notes:
 
 ### Humor Safety
 
-- Rev 2 adds a light cheeky/"slightly rude" edge per owner direction. All of it is aimed at the *trick*, the word "free," or the viewer's own wallet/brain/fridge — never a person, group, brand, or protected category.
+- Rev 2 adds a light cheeky/"slightly rude" edge per owner direction. All of it is aimed at the *trick*, the word "free," or the viewer's own wallet/brain/fridge - never a person, group, brand, or protected category.
 - Specific edgy lines vetted: "you're the rabbit," "not the first sucker, just the latest," "your brain goes a little stupid," "smiles at you while it robs you," "go be slightly harder to trick." All self/system-aimed, affectionate, no real insult to a person.
 - No profanity; everything stays learner-clean and works from context. Cheeky phrases are glossed in Learner Notes.
 

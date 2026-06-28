@@ -1,4 +1,4 @@
-# .claude — Claude compatibility layer
+# .claude - Claude compatibility layer
 
 This workspace is shared by **Codex** and **Claude**. To avoid two diverging copies of
 the channel brain and self-improving skill memory, there is exactly one source of truth:

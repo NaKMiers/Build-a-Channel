@@ -2,7 +2,7 @@
 
 Video: `Why Buy 1 Get 1 Free Beats 50% Off`
 Section: `Section 4: The Magic Word`
-Status: `built to subscription vivid-hook bar — see IMPLEMENTATION.md for as-built`
+Status: `built to subscription vivid-hook bar - see IMPLEMENTATION.md for as-built`
 
 ## Section Goal
 
@@ -39,13 +39,13 @@ You did not get a free shampoo. You got a full-price shampoo, with a hostage.
 
 | Scene | Local Time | Voice Range | Base | Hero Device | WIT |
 |---|---:|---|---|---|---|
-| A — FREE / brain stupid | 0.0–4.14 | "magic word is free… brain go a little stupid" | brain (dark) | giant glowing FREE | holding-phone-panic R |
-| B — stop doing math | 4.14–9.42 | "stop doing math… do I even want a second one?" | coins (dark) | math + BRAIN OFF badge + "?" toast | confused L |
-| C — Ariely / free = gift | 9.42–17.82 | "Dan Ariely… free feels like a gift… brains off" | gift boxes | ZERO-PRICE caption + GIFT + brains OFF | awkward-celebration C |
-| D — number vs feeling | 17.82–25.32 | "a number, brain checks… a feeling, yells yes" | cash (dark) | blue NUMBER card vs red FEELING "YES!" card | suspicious R |
-| E — selling a word / hostage | 25.32–37.099 | "not a discount, a word… full-price… a hostage" | coins (dark red) | "a WORD" + stapled FULL-PRICE + hostage shampoo photo + ransom | betrayed R |
+| A - FREE / brain stupid | 0.0–4.14 | "magic word is free… brain go a little stupid" | brain (dark) | giant glowing FREE | holding-phone-panic R |
+| B - stop doing math | 4.14–9.42 | "stop doing math… do I even want a second one?" | coins (dark) | math + BRAIN OFF badge + "?" toast | confused L |
+| C - Ariely / free = gift | 9.42–17.82 | "Dan Ariely… free feels like a gift… brains off" | gift boxes | ZERO-PRICE caption + GIFT + brains OFF | awkward-celebration C |
+| D - number vs feeling | 17.82–25.32 | "a number, brain checks… a feeling, yells yes" | cash (dark) | blue NUMBER card vs red FEELING "YES!" card | suspicious R |
+| E - selling a word / hostage | 25.32–37.099 | "not a discount, a word… full-price… a hostage" | coins (dark red) | "a WORD" + stapled FULL-PRICE + hostage shampoo photo + ransom | betrayed R |
 
-## Cue Timeline (word-pinned — see IMPLEMENTATION.md for exact data-starts)
+## Cue Timeline (word-pinned - see IMPLEMENTATION.md for exact data-starts)
 
 - FREE smash @1.12 ("free"); "a little stupid" @3.06
 - math @5.32; BRAIN OFF @5.84; "?" @7.78
@@ -64,7 +64,7 @@ You did not get a free shampoo. You got a full-price shampoo, with a hostage.
 
 - vivid dark bases per scene: yes
 - giant kinetic hero device per beat: yes
-- WIT giant + varied: yes (5 poses; sides r/l/c/r/r — D/E share right with different poses/scales)
+- WIT giant + varied: yes (5 poses; sides r/l/c/r/r - D/E share right with different poses/scales)
 - word-pinned: yes
 - hostage punchline lands: yes
 - safe for learners: yes (number vs feeling is the clear teach)

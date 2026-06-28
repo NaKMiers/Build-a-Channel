@@ -15,7 +15,7 @@ Status:
 - id: `am_eric`
 - speed: `0.86` (matching the user-approved Section 4-5 pace)
 - language: `en-us`
-- tone: calm, lightly dry; reason 4 (busy as a social shield) — WIT protected and overwhelmed, not smug
+- tone: calm, lightly dry; reason 4 (busy as a social shield) - WIT protected and overwhelmed, not smug
 - delivery: pause-tuned (line breaks + commas + ellipses on the closing "busy... or pretending... or both")
 - limitation: Kokoro has no true per-word emphasis; commas give only a slight lift
 
@@ -27,7 +27,7 @@ Keep one useful MP3 preview file only unless a renderer requires another format.
 
 - File: `scratch-audio/section-06-im-busy-is-a-shield-david23-am_eric-0.86.mp3`
 - Duration: `37.973s`
-- Use: `approved voice, 0.86 pace — production preview`
+- Use: `approved voice, 0.86 pace - production preview`
 - Tool: `hyperframes@0.6.76 tts` (Kokoro)
 - Caveat: Duration (~38s) is under the script estimate (~48s); visual production may add holds. 0.86 to match Sections 4-5; sections 1-3 are still 0.84.
 

@@ -9,8 +9,8 @@
 |---|---|---|---|---|---|
 | base-workplace.jpg | CC0 photo | StockSnap (modern office interior) | safe base | empty glass-walled offices = "not lazy people / the modern workplace" | Scene A |
 | base-idea.jpg | CC0 photo | StockSnap (glowing bulb on black) | safe base | a bulb glowing in the dark = real progress/thinking that "looks like nothing" | Scene B |
-| base-idea-d.jpg | copy of base-idea | — | safe base | the bulb returns at the payoff "real work hides where you can't see" (bookend) | Scene D |
-| base-typing.jpg | CC0 photo | StockSnap (hands on keyboard) | safe base | literal "fast typing" — the visible busy | Scene C |
+| base-idea-d.jpg | copy of base-idea | - | safe base | the bulb returns at the payoff "real work hides where you can't see" (bookend) | Scene D |
+| base-typing.jpg | CC0 photo | StockSnap (hands on keyboard) | safe base | literal "fast typing" - the visible busy | Scene C |
 | icons/meet.png | trademark logo (editorial) | Wikimedia Commons | real-UI icon | a Google Meet grid = the visible "meetings" | Scene C |
 | 4 WIT poses | shared manifest | safe asset | talking / thinking / typing / deadpan | A/B/C/D |
 
@@ -19,7 +19,7 @@
 - Scene D: a red circle on the bulb + "REAL WORK HIDES HERE."
 
 ## Rejected / not used
-- base-meeting.jpg + base-think.jpg (v1 assets, ~250px — too low-res for fullscreen).
+- base-meeting.jpg + base-think.jpg (v1 assets, ~250px - too low-res for fullscreen).
 - marble flat-lays ZUQSBU4E5B / OHGFDECWNU (too similar to S5/S7 marble desks).
 
 ## Note

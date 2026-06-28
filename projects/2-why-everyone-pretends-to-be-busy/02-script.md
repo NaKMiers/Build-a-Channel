@@ -116,7 +116,7 @@ Estimated time: `0:58-1:52`
 
 Words: `175`
 
-Purpose: Reason 1 — busyness signals importance and demand.
+Purpose: Reason 1 - busyness signals importance and demand.
 
 Visual goal: "Busy" filed under EMOTIONS as a deadpan board. A meeting tower that keeps stacking. A second board: in some places long holidays are the brag, here no free time is the brag.
 
@@ -154,7 +154,7 @@ Estimated time: `1:52-2:42`
 
 Words: `165`
 
-Purpose: Reason 2 — modern tools manufacture fake urgency and "work about work."
+Purpose: Reason 2 - modern tools manufacture fake urgency and "work about work."
 
 Visual goal: The fake emergency machine. Five generic app windows (no real logos) interrupting each other. Everything has a red dot and the word `URGENT`. The real task sits in the corner like a forgotten vegetable in a fridge.
 
@@ -190,7 +190,7 @@ Estimated time: `2:42-3:33`
 
 Words: `165`
 
-Purpose: Reason 3 — visible activity is easier to reward than deep thinking.
+Purpose: Reason 3 - visible activity is easier to reward than deep thinking.
 
 Visual goal: A boss squinting at a dashboard. A `PRODUCTIVITY THEATER` stage where a spreadsheet is the lead actor. Tasks being dragged from one column to another. WIT "possibly blinking" deadpan close-up.
 
@@ -226,7 +226,7 @@ Estimated time: `3:33-4:20`
 
 Words: `150`
 
-Purpose: Reason 4 — busy is a socially acceptable defense, not a moral failure.
+Purpose: Reason 4 - busy is a socially acceptable defense, not a moral failure.
 
 Visual goal: WIT holding a shield labeled `I'M BUSY` that deflects incoming questions and requests. `OVERLOADED` stamp to correct the "fake person" reading.
 
@@ -304,16 +304,16 @@ Voice revision notes:
 ### Safe Claims
 
 - Busyness can act as a status symbol; saying you are busy can signal importance. (HBR / Bellezza, Paharia, Keinan.)
-- The status of busyness is culture-specific — in some places free time is the brag, in others lack of free time is. (HBR.) Script keeps this general, with no risky named-country accusation.
+- The status of busyness is culture-specific - in some places free time is the brag, in others lack of free time is. (HBR.) Script keeps this general, with no risky named-country accusation.
 - Most leaders report they cannot be confident who is actually productive ("productivity paranoia"). (Microsoft Work Trend Index 2022; script softens to "a survey where most managers admitted.")
 - Modern tools generate large amounts of "work about work" / coordination that competes with focused work. (Asana, concept-level; no on-screen percentage.)
 - Visible activity is easier to observe and reward than quiet thinking. (Inference, broadly supported.)
 
 ### Inferences Used Carefully
 
-- Notifications train the brain to treat small pings like emergencies — framed with "starts to," not as proven neuroscience.
-- "Once a culture rewards busy, everyone joins in" — synthesis, kept as a general pattern, not a measured fact.
-- Parkinson's-Law-style "the day fills with visible tasks" — implied, never stated as a cited law.
+- Notifications train the brain to treat small pings like emergencies - framed with "starts to," not as proven neuroscience.
+- "Once a culture rewards busy, everyone joins in" - synthesis, kept as a general pattern, not a measured fact.
+- Parkinson's-Law-style "the day fills with visible tasks" - implied, never stated as a cited law.
 
 ### Claims Avoided
 

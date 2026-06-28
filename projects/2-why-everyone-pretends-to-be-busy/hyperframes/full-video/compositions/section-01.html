@@ -59,7 +59,7 @@
       <div class="scrim"></div>
     </div>
 
-    <!-- SCENE B: the busy signals — real-UI (bright flat-lay) 5.24-11.04 -->
+    <!-- SCENE B: the busy signals - real-UI (bright flat-lay) 5.24-11.04 -->
     <div id="scene-b" class="clip scene" data-start="5.24" data-duration="5.80" data-track-index="3">
       <img class="photo signals" src="./assets/visual-references/section-01-hook-the-busy-trap/base-busy-signals.jpg" alt="">
       <div class="scrim"></div>
@@ -114,7 +114,7 @@
     <div id="cue-c" class="clip cue" data-start="11.0" data-duration="5.02" data-track-index="2" data-layout-allow-overflow="" style="overflow: visible;">
       <div class="label small cc-quiet" style="left: 70px; top: 90px; width: 460px;">(THINK QUIETLY)</div>
       <div class="label red cc-lazy" style="left: 80px; top: 300px; width: 360px;">LAZY?</div>
-      <div class="label small cc-asleep" style="left: 80px; top: 470px; width: 600px;">"ASLEEP — EYES OPEN"</div>
+      <div class="label small cc-asleep" style="left: 80px; top: 470px; width: 600px;">"ASLEEP - EYES OPEN"</div>
       <img class="wit cc-wit" data-layout-allow-overflow="" style="right: -200px; bottom: -350px; width: 1340px;" src="./assets/wit/wit-pose-deadpan-side-eye.png" alt="">
     </div>
 
@@ -140,12 +140,12 @@
       tl.fromTo("#scene-c", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 11.0);
       tl.fromTo("#scene-d", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "sine.out", immediateRender: false }, 16.06);
 
-      // SCENE A — the strange rule
+      // SCENE A - the strange rule
       show("#cue-a .ca-wit", 0, 0.40);
       show("#cue-a .ca-rule", 0, 0.58);
       show("#cue-a .ca-claim", 0, 3.48);
 
-      // SCENE B — the busy signals (real-UI)
+      // SCENE B - the busy signals (real-UI)
       show("#cue-b .cb-wit", 5.24, 5.50);
       smash("#scene-b .calcard", 5.24, 5.76, { y: -20, opacity: 0 });
       smash("#scene-b .mailcard", 5.24, 6.64, { y: -20, opacity: 0 });
@@ -153,13 +153,13 @@
       smash("#scene-b .pn2", 5.24, 8.14, { scale: 0, opacity: 0 });
       show("#cue-b .cb-matters", 5.24, 10.64);
 
-      // SCENE C — quiet = lazy
+      // SCENE C - quiet = lazy
       show("#cue-c .cc-wit", 11.0, 11.20);
       show("#cue-c .cc-quiet", 11.0, 11.30);
       smash("#cue-c .cc-lazy", 11.0, 14.32);
       smash("#cue-c .cc-asleep", 11.0, 14.90, { y: -16, opacity: 0 });
 
-      // SCENE D — looking busy / the difference
+      // SCENE D - looking busy / the difference
       show("#cue-d .cd-wit", 16.06, 16.30);
       show("#cue-d .cd-busy", 16.06, 16.34);
       // cage bars slam down on "everyone gets busy"

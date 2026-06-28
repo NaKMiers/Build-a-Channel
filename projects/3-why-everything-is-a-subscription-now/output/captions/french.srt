@@ -16,7 +16,7 @@ C'est toujours plus.
 
 5
 00:00:07,220 --> 00:00:10,040
-En ce moment, de l'argent quitte discrètement votre compte chaque mois —
+En ce moment, de l'argent quitte discrètement votre compte chaque mois -
 
 6
 00:00:10,040 --> 00:00:11,740
@@ -44,7 +44,7 @@ Vous louez votre vie entière. Un paiement à la fois.
 
 12
 00:00:23,620 --> 00:00:26,660
-Alors — ce n'est pas une vidéo sur le fait que les abonnements sont diaboliques
+Alors - ce n'est pas une vidéo sur le fait que les abonnements sont diaboliques
 
 13
 00:00:26,660 --> 00:00:28,920
@@ -84,7 +84,7 @@ Payez chaque mois, l'écran s'allume.
 
 22
 00:00:44,140 --> 00:00:46,920
-Ratez un paiement, et votre propre appareil fait ceci —
+Ratez un paiement, et votre propre appareil fait ceci -
 
 23
 00:00:46,920 --> 00:00:48,060
@@ -100,11 +100,11 @@ Alors voici la vraie question.
 
 26
 00:00:53,220 --> 00:00:56,420
-Comment presque tout — vos applis, vos séries, vos logiciels,
+Comment presque tout - vos applis, vos séries, vos logiciels,
 
 27
 00:00:56,420 --> 00:00:58,280
-même les boutons dans votre voiture —
+même les boutons dans votre voiture -
 
 28
 00:00:58,280 --> 00:01:01,820
@@ -140,7 +140,7 @@ Puis vos écrans ont rejoint la fête.
 
 36
 00:01:16,360 --> 00:01:17,780
-Musique, films, séries —
+Musique, films, séries -
 
 37
 00:01:17,780 --> 00:01:19,800
@@ -188,11 +188,11 @@ Et ça ne s'est pas arrêté aux écrans.
 
 48
 00:01:44,740 --> 00:01:48,260
-Certains constructeurs auto ont essayé de mettre les sièges chauffants —
+Certains constructeurs auto ont essayé de mettre les sièges chauffants -
 
 49
 00:01:48,260 --> 00:01:50,840
-des sièges déjà installés dans la voiture que vous avez achetée —
+des sièges déjà installés dans la voiture que vous avez achetée -
 
 50
 00:01:50,840 --> 00:01:52,280
@@ -216,11 +216,11 @@ Imaginez que vous vendez une machine à café.
 
 55
 00:02:02,440 --> 00:02:05,380
-Vous faites une vente, vous dites merci, puis vous attendez —
+Vous faites une vente, vous dites merci, puis vous attendez -
 
 56
 00:02:05,380 --> 00:02:07,820
-peut-être des années — en espérant que cette personne revienne un jour.
+peut-être des années - en espérant que cette personne revienne un jour.
 
 57
 00:02:07,820 --> 00:02:10,820
@@ -248,7 +248,7 @@ Un client qui achète une fois vaut un peu.
 
 63
 00:02:20,380 --> 00:02:22,800
-Un client qui paie chaque mois vaut beaucoup —
+Un client qui paie chaque mois vaut beaucoup -
 
 64
 00:02:22,800 --> 00:02:24,820
@@ -300,7 +300,7 @@ Pour vous faire entrer, ils font en sorte que ça paraisse gratuit.
 
 76
 00:02:53,140 --> 00:02:56,240
-Glissez juste votre carte — vous savez, pour aucune raison du tout.
+Glissez juste votre carte - vous savez, pour aucune raison du tout.
 
 77
 00:02:56,240 --> 00:02:58,840
@@ -324,7 +324,7 @@ Et la plupart des gens n'annulent pas le septième jour. Ils oublient.
 
 82
 00:03:11,020 --> 00:03:14,360
-Pas parce qu'ils sont négligents — parce que l'oubli fait partie du design.
+Pas parce qu'ils sont négligents - parce que l'oubli fait partie du design.
 
 83
 00:03:14,360 --> 00:03:17,320
@@ -340,7 +340,7 @@ Un fantôme, vivant dans votre compte en banque.
 
 86
 00:03:23,240 --> 00:03:26,360
-Logé gratuitement. Enfin — pas gratuitement. C'est tout le problème.
+Logé gratuitement. Enfin - pas gratuitement. C'est tout le problème.
 
 87
 00:03:26,360 --> 00:03:29,940
@@ -408,7 +408,7 @@ Puis un numéro de téléphone qui ne répond qu'entre quatorze heures et quator
 
 103
 00:04:07,980 --> 00:04:10,220
-On appelle ça la facturation par option négative —
+On appelle ça la facturation par option négative -
 
 104
 00:04:10,220 --> 00:04:12,220
@@ -432,7 +432,7 @@ Alors beaucoup de gens... abandonnent. Ils continuent à payer.
 
 109
 00:04:25,300 --> 00:04:29,500
-Pas parce qu'ils le veulent — parce qu'annuler ressemble à un boulot à temps partiel.
+Pas parce qu'ils le veulent - parce qu'annuler ressemble à un boulot à temps partiel.
 
 110
 00:04:29,500 --> 00:04:31,320
@@ -472,7 +472,7 @@ Le produit n'a jamais été la chose.
 
 119
 00:04:50,400 --> 00:04:52,040
-Le produit, c'est vous — qui restez.
+Le produit, c'est vous - qui restez.
 
 120
 00:04:52,040 --> 00:04:56,020
@@ -488,7 +488,7 @@ De savoir que « petit et mensuel » est un design, pas un accident.
 
 123
 00:05:01,260 --> 00:05:04,260
-Alors de temps en temps, prenez le téléphone qui vous facture —
+Alors de temps en temps, prenez le téléphone qui vous facture -
 
 124
 00:05:04,260 --> 00:05:05,500

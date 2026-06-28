@@ -1,4 +1,4 @@
-# Section 5 Marked Script — Visible Work Beats Quiet Thinking
+# Section 5 Marked Script - Visible Work Beats Quiet Thinking
 
 Video: `Why Everyone Pretends To Be Busy`
 
@@ -24,5 +24,5 @@ This has a name. [beat] [emphasis: Productivity theater]. Same as normal theater
 Direction notes:
 - Important words to lift: visible work, see it (x3), nothing happened, possibly blinking, most managers, motion, productivity theater, spreadsheet.
 - `[slower]` on the manager-survey line (from the script's voice revision note) so the factual beat lands for learners.
-- "possibly blinking" is the deadpan close-up button — give it the ellipsis hold.
+- "possibly blinking" is the deadpan close-up button - give it the ellipsis hold.
 - "Productivity theater" should land as a named, memorable beat.

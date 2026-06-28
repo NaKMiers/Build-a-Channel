@@ -1,8 +1,8 @@
-# Section 5 Visual Plan — Visible Work Beats Quiet Thinking
+# Section 5 Visual Plan - Visible Work Beats Quiet Thinking
 
 Files:
-- `section-05-visible-work-beats-quiet-thinking-visual-plan.md` — scene/cue plan (5 scenes, 9 cues)
-- `reference-board.md` — reference pass (real-UI icons + CC wall base)
+- `section-05-visible-work-beats-quiet-thinking-visual-plan.md` - scene/cue plan (5 scenes, 9 cues)
+- `reference-board.md` - reference pass (real-UI icons + CC wall base)
 
 Render lives at:
 `section-previews/section-05-visible-work-beats-quiet-thinking/` (port 1005)

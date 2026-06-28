@@ -19,7 +19,7 @@ Note: this section's hand-tuned pacing is the APPROVED gold-standard template th
 - tone: young male ~23, clear, bright, lightly dry, learner-friendly
 - learner clarity notes:
   - Spacious pacing: a `...` hold between nearly every beat; 2-3 stacked `...` for big holds; trailing `...` setups; `. .` staccato on punchy statement lines.
-  - `**bold**` joke markers and `[beat]/[deadpan]` cues are NOT spoken — stripped before TTS.
+  - `**bold**` joke markers and `[beat]/[deadpan]` cues are NOT spoken - stripped before TTS.
 
 ## Output Rule
 

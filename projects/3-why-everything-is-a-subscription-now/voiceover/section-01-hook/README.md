@@ -17,7 +17,7 @@ Status:
 - tone: young male ~23, clear, bright, lightly dry, learner-friendly
 - learner clarity notes:
   - Authored in the approved Section 5 spacious pacing template (heavy `...` holds, `. .` staccato, trailing `...` setups).
-  - `**bold**` joke markers and `[beat]/[deadpan]/[slower]` cues are NOT spoken — stripped before TTS.
+  - `**bold**` joke markers and `[beat]/[deadpan]/[slower]` cues are NOT spoken - stripped before TTS.
 
 ## Output Rule
 

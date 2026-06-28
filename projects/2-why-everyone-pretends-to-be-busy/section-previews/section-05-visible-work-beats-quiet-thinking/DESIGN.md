@@ -1,15 +1,15 @@
-# Section 5 Design — Visible Work Beats Quiet Thinking
+# Section 5 Design - Visible Work Beats Quiet Thinking
 
 Composition id: `Section05Visible` · 1920x1080 · 42.859s · audio 0.86 (David23 / am_eric)
 
 ## Idea
 Visible work is easier to reward than quiet thinking. Replies, meetings, and "just circling
 back" are seen; two hours of real thinking looks like nothing. Managers reward visible motion,
-so people perform motion — and the whole thing is "productivity theater" whose star is a spreadsheet.
+so people perform motion - and the whole thing is "productivity theater" whose star is a spreadsheet.
 
 ## Real-UI illustration (owner-preferred)
 Per the standing owner preference, this section leans into the REAL apps the script names,
-built in CSS with real app-icon PNGs (used editorially — depict, not endorse; no private data):
+built in CSS with real app-icon PNGs (used editorially - depict, not endorse; no private data):
 - Scene A: a **Google Meet** call grid (header icon + video tiles, one speaking tile highlighted)
 - Scene C: a survey **poll card** (Yes 15% / Not really 85% bars)
 - Scene D: a **Trello** Kanban board (TO DO / DOING / DONE) where a card visibly moves DOING→DONE
@@ -26,22 +26,22 @@ built in CSS with real app-icon PNGs (used editorially — depict, not endorse; 
 
 v2 liveliness pass (owner feedback "missing some real-world images, not lively"): scenes A/C/D now
 sit the crisp UI as a floating `.screen` (1500x846, drop shadow) over a real, people-free CC desk
-photo with a dark scrim — so each app reads as a real screen on a real desk. Scene B was already a
+photo with a dark scrim - so each app reads as a real screen on a real desk. Scene B was already a
 real photo. v3: Scene E's CSS curtains were swapped for a real lit red theater-curtain photo
-(`base-stage.jpg`, CC0, no people) with a spotlight glow on the spreadsheet — so ALL five scenes
+(`base-stage.jpg`, CC0, no people) with a spotlight glow on the spreadsheet - so ALL five scenes
 now have a real-world background.
 
-## Cue Map (track 2 — pinned to word timings)
+## Cue Map (track 2 - pinned to word timings)
 | Cue | Start | Beat | WIT |
 |---|--:|---|---|
 | C1 | 0.0 | VISIBLE WORK = EASY TO REWARD | typing-on-laptop |
-| C2 | 3.48 | REPLY FAST → MEETINGS → "JUST CIRCLING BACK" → ↑PEOPLE SEE IT | — |
+| C2 | 3.48 | REPLY FAST → MEETINGS → "JUST CIRCLING BACK" → ↑PEOPLE SEE IT | - |
 | C3 | 10.5 | THINKING… / (LOOKS LIKE NOTHING) | thinking |
 | C4 | 13.8 | STARING AT A WALL / POSSIBLY BLINKING | deadpan-side-eye |
-| C5 | 19.1 | MANAGERS: CAN'T TELL / REWARD WHAT THEY SEE | — |
-| C6 | 25.76 | PERFORM MOTION | — |
+| C5 | 19.1 | MANAGERS: CAN'T TELL / REWARD WHAT THEY SEE | - |
+| C6 | 25.76 | PERFORM MOTION | - |
 | C7 | 28.9 | card moves DOING→DONE / "UPDATES ABOUT FUTURE UPDATES" | facepalm |
-| C8 | 35.04 | PRODUCTIVITY THEATER | — |
+| C8 | 35.04 | PRODUCTIVITY THEATER | - |
 | C9 | 37.28 | TICKETS: PAID IN STRESS / THE STAR ★ | tiny-defeated |
 
 ## Motion rules

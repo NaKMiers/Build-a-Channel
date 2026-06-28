@@ -1,10 +1,10 @@
-# Short 02 — "Cancelling Is A Vision Quest"
+# Short 02 - "Cancelling Is A Vision Quest"
 
 Native portrait HyperFrames rebuild · `1080x1920` · port `1102` · comp duration `28.70s` (audio `27.413s` + payoff hold).
-Source section: S6 (easy in, no way out). Complete standalone short — **NO CTA**.
+Source section: S6 (easy in, no way out). Complete standalone short - **NO CTA**.
 
 ## One idea
-Signing up takes ten seconds; cancelling is deliberately a vision quest — negative option billing keeps you paying unless you actively say stop.
+Signing up takes ten seconds; cancelling is deliberately a vision quest - negative option billing keeps you paying unless you actively say stop.
 
 ## Scenes (real photo base + scrims each)
 | Scene | Base | Track | Window | WIT | Hero card(s) |
@@ -22,10 +22,10 @@ Scene bases cross-fade (`fadeScene`); breadcrumb chips use a `slide` (x:-40→0)
 Punchlines/payoff carried by the cards; captions clear before a card pops.
 
 ## WIT note
-`confused`/`tiny-defeated` sit lower in their PNG canvas → raised (`#witConfused` 440px, `#witDefeated` 430px). `running-away` and `suspicious` sit high — left at default `bottom:360px`. Per skill memory: WIT face height is pose-dependent.
+`confused`/`tiny-defeated` sit lower in their PNG canvas → raised (`#witConfused` 440px, `#witDefeated` 430px). `running-away` and `suspicious` sit high - left at default `bottom:360px`. Per skill memory: WIT face height is pose-dependent.
 
 ## Voiceover
-`voiceover/short-02.mp3` — approved voice `am_eric / 0.84 / en-us`, 27.413s. `**`/`[...]` stripped before TTS. Timings `voiceover/short-02-word-timings.json` (whisper-tiny.en; **tail glitch from "trick." onward — last 9 words re-timed monotonically across 24.28→27.413**; whisper had jumped them backward and overshot to 28.07).
+`voiceover/short-02.mp3` - approved voice `am_eric / 0.84 / en-us`, 27.413s. `**`/`[...]` stripped before TTS. Timings `voiceover/short-02-word-timings.json` (whisper-tiny.en; **tail glitch from "trick." onward - last 9 words re-timed monotonically across 24.28→27.413**; whisper had jumped them backward and overshot to 28.07).
 
 ## QA
 - `lint`/`validate`: 0 errors. Non-blocking: 2× `overlapping_gsap_tweens` 0–0.42s (opening pop + slide); WCAG contrast false positives.

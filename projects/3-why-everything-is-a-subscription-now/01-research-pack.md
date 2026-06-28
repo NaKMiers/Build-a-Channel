@@ -17,7 +17,7 @@ rule, switched to direct fetches of authoritative pages and confirmed each by re
 
 - `direct-fetch confirmed`: Wikipedia "Subscription business model", Wikipedia "Negative option billing".
 - `cited via secondary / verify before quoting`: FTC click-to-cancel rule status, Adobe Creative
-  Cloud shift year, BMW heated-seats subscription — widely reported but not confirmable live this
+  Cloud shift year, BMW heated-seats subscription - widely reported but not confirmable live this
   session (FTC and several news sites blocked). Precise figures/dates routed to Open Questions.
 - YouTube reference/demand search worked (same as topic-intake); demand references reused/confirmed.
 
@@ -28,11 +28,11 @@ examples and one time-sensitive regulation need a live re-check before they are 
 
 - Working title: `Why Everything Is a Subscription Now`
 - Sharp angle: a subscription looks like a small convenient payment, but is actually a quiet shift
-  from owning things to renting your own life — where the only thing not on a monthly plan is your salary
+  from owning things to renting your own life - where the only thing not on a monthly plan is your salary
 - Main contradiction: you pay forever but own nothing; subscribing takes 10 seconds, cancelling takes a fight
 - Recurring motif: everything WIT touches sprouts a little `$/mo` tag + a one-way "cancel maze" door
 - WIT role: trapped, nickel-and-dimed, deadpan; the system charges him before he notices
-- Final insight: the product was never the app or the car feature — the product is *you not cancelling*
+- Final insight: the product was never the app or the car feature - the product is *you not cancelling*
 - Main risk: easy to turn generic/preachy ("subscriptions bad / just cancel them")
 
 ## Working Thesis
@@ -43,7 +43,7 @@ instead of ownership. Three forces lock the model in place: it gives companies p
 relies on customers forgetting and on free trials that auto-renew, and it makes leaving deliberately
 harder than joining. The result is "subscription fatigue": people pay for a growing pile of small
 charges they can't fully name and struggle to escape. The non-obvious point is that the real product
-is no longer the app, the show, or the car feature — it is *your continued payment*, which means the
+is no longer the app, the show, or the car feature - it is *your continued payment*, which means the
 business is quietly optimized around you *not cancelling*.
 
 ## Research Questions
@@ -64,9 +64,9 @@ business is quietly optimized around you *not cancelling*.
 | How Subscriptions RUINED the Internet (and everything else) | Video / demand | Levi Hildebrand | (same search) | "Own nothing" framing has audience (~365K) | Medium (demand) | Signal only; keep ours visual not ranty |
 | Why Is Everything A Monthly Subscription Now...? | Video / demand | Haylo Hayley | (same search) | Literal-question packaging works (~298K) | Medium (demand) | Signal only |
 | How to fight hard-to-cancel subscriptions and WIN! | Video / demand | Louis Rossmann | https://www.youtube.com/results?search_query=why+is+it+so+hard+to+cancel+subscriptions | Confirms cancel-maze is a real, felt pain (~104K); standalone demand is thin → use as a section | Medium (demand) | Signal only |
-| FTC "click-to-cancel" / negative option rule | Fact (time-sensitive) | US FTC (blocked this session) | https://www.ftc.gov (blocked) | Regulators tried to force "cancelling as easy as signing up" | Low — VERIFY before quoting | State only after live re-check; precise status in Open Questions |
-| Adobe Creative Cloud subscription shift (2013) | Example (historical) | Adobe / press (not fetched live) | verify | Landmark "you used to buy it, now you rent it" case (Creative Suite → Creative Cloud) | Medium — verify year/details | Use as example; confirm before stating the year on screen |
-| BMW heated-seats subscription (2022) + reversal | Example (historical) | BMW / The Verge (not fetched live) | verify | Hardware-feature-behind-a-paywall as the absurd peak of the trend | Medium — verify before quoting | Use as comedic example; confirm it was reversed before stating |
+| FTC "click-to-cancel" / negative option rule | Fact (time-sensitive) | US FTC (blocked this session) | https://www.ftc.gov (blocked) | Regulators tried to force "cancelling as easy as signing up" | Low - VERIFY before quoting | State only after live re-check; precise status in Open Questions |
+| Adobe Creative Cloud subscription shift (2013) | Example (historical) | Adobe / press (not fetched live) | verify | Landmark "you used to buy it, now you rent it" case (Creative Suite → Creative Cloud) | Medium - verify year/details | Use as example; confirm before stating the year on screen |
+| BMW heated-seats subscription (2022) + reversal | Example (historical) | BMW / The Verge (not fetched live) | verify | Hardware-feature-behind-a-paywall as the absurd peak of the trend | Medium - verify before quoting | Use as comedic example; confirm it was reversed before stating |
 
 ## What People Think
 
@@ -82,24 +82,24 @@ business is quietly optimized around you *not cancelling*.
 - `Fact`: renewal is usually automatic, so payment continues by default unless you act
   (auto-renew / negative-option structure).
 - `Fact`: many people keep paying for subscriptions "they no longer value because they do not realize
-  they are subscribed" (Wikipedia) — forgetting is built into the model, not an accident.
+  they are subscribed" (Wikipedia) - forgetting is built into the model, not an accident.
 - `Inference`: the business has shifted from selling a product once to renting access forever, because
   a recurring customer is worth far more over time than a one-time buyer (recurring revenue + loyalty).
 - `Example`: software went first (e.g. Adobe moved Creative Suite buyers to a Creative Cloud
-  subscription, ~2013 — verify), then streaming, then even physical car features (BMW heated-seat
-  subscription, 2022 — verify), showing the model spreading from digital into hardware.
+  subscription, ~2013 - verify), then streaming, then even physical car features (BMW heated-seat
+  subscription, 2022 - verify), showing the model spreading from digital into hardware.
 
 ## Why It Keeps Happening
 
-- `Fact / Inference`: predictable recurring revenue is the prize — steady monthly income and stronger
+- `Fact / Inference`: predictable recurring revenue is the prize - steady monthly income and stronger
   customer lock-in beat one-off sales, so companies have every reason to keep expanding it.
 - `Fact`: the model leans on inertia. Free trials convert ("increase the likelihood the customer will
   convert and commit"), auto-renew keeps charging, and forgotten subscriptions keep paying.
 - `Fact`: leaving is structurally hard. Negative-option billing means you keep paying unless you
   actively cancel; the Scholastic case shows consumers feeling "harassed, deceived, intimidated, and
-  threatened" when they tried to cancel — the cancel-maze is an old, documented pattern.
+  threatened" when they tried to cancel - the cancel-maze is an old, documented pattern.
 - `Inference`: because the money comes from continued payment, the business is quietly optimized around
-  you *not noticing and not cancelling* — that is the engine, and it is also the channel's payoff line.
+  you *not noticing and not cancelling* - that is the engine, and it is also the channel's payoff line.
 
 ## Explanation Spine
 
@@ -134,7 +134,7 @@ business is quietly optimized around you *not cancelling*.
 - A printed receipt / invoice unrolling.
 
 ### UI Or Paper Mockup Targets
-- Generic app paywall ("Start free trial — then $X/mo").
+- Generic app paywall ("Start free trial - then $X/mo").
 - Mock "Manage subscription / Cancel" screen with the Cancel button buried or greyed.
 - Mock bank-statement table with mystery charges.
 - Phone "Settings → Subscriptions" list that keeps scrolling.
@@ -164,7 +164,7 @@ business is quietly optimized around you *not cancelling*.
 - "You don't own your stuff anymore. You're just... a long-term guest." (own vs rent)
 - The `FREE TRIAL` that flips to `$/mo` the second you blink (free was a countdown).
 - The cancel maze: signing up is a slide; cancelling is an escape room.
-- WIT's whole house has `$/mo` tags — fridge, sofa, even the front door — the only tag-free thing is
+- WIT's whole house has `$/mo` tags - fridge, sofa, even the front door - the only tag-free thing is
   his paycheck. (payoff visual)
 - "It's easy to get in. That's the whole business." (deadpan)
 
@@ -175,7 +175,7 @@ business is quietly optimized around you *not cancelling*.
 - Useful phrases (natural, on-screen friendly):
   - "You stopped buying things. You started renting them."
   - "Easy to sign up, hard to cancel."
-  - "Out of sight, out of mind." (idiom — show the meaning on screen the first time)
+  - "Out of sight, out of mind." (idiom - show the meaning on screen the first time)
   - "It adds up." (small amounts becoming large)
 - Jargon to explain simply:
   - `recurring revenue` → "money a company gets again and again, every month."
@@ -192,30 +192,30 @@ business is quietly optimized around you *not cancelling*.
 - People often keep paying for subscriptions they no longer value because they don't realize they're
   still subscribed. (Wikipedia)
 - Free trials exist to increase the chance a customer converts to paying. (Wikipedia)
-- "Negative option" billing — you keep paying unless you actively cancel — is a long-documented
+- "Negative option" billing - you keep paying unless you actively cancel - is a long-documented
   practice that has triggered consumer complaints and regulation (e.g. Canada 1995 cable case,
   Scholastic class action). (Wikipedia)
 - The subscription model has spread from digital products into physical/hardware features. (Inference,
-  with Adobe + BMW as examples — see "verify" notes.)
+  with Adobe + BMW as examples - see "verify" notes.)
 
 ## Claims To Avoid
 
 - Any exact statistic on average number of subscriptions or average monthly subscription spend per
-  person (no live-confirmed source this session — do not invent).
+  person (no live-confirmed source this session - do not invent).
 - Stating the FTC "click-to-cancel" rule is currently in force / was struck down without a live re-check
   (status is time-sensitive and was not confirmable this session).
 - Naming a specific company as deliberately "scamming" or using "illegal dark patterns" without solid,
   current sourcing.
 - Precise dollar figures for any named example (e.g. BMW heated-seat monthly price) without verifying.
-- "Everyone is being ripped off" framing — keep it system-explains-it, not accusation.
+- "Everyone is being ripped off" framing - keep it system-explains-it, not accusation.
 
 ## Open Questions
 
-1. Current legal status of the FTC "click-to-cancel" / negative option rule (announced Oct 2024) —
+1. Current legal status of the FTC "click-to-cancel" / negative option rule (announced Oct 2024) -
    in force, delayed, or vacated? Verify live before any on-screen statement.
 2. A credible, current statistic for how much people underestimate their monthly subscription spending
-   (West Monroe / C+R Research-type surveys) — find one citable source if we want a number.
-3. Adobe Creative Suite → Creative Cloud exact year and framing (commonly cited as 2013) — confirm.
+   (West Monroe / C+R Research-type surveys) - find one citable source if we want a number.
+3. Adobe Creative Suite → Creative Cloud exact year and framing (commonly cited as 2013) - confirm.
 4. BMW heated-seat subscription: confirm it launched (2022), the price, and that it was later reversed.
 5. Optional: one solid number on streaming-service price increases or total streaming spend overtaking
    cable, if we want a money comparison beat.

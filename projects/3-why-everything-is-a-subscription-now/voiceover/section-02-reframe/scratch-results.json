@@ -17,6 +17,6 @@
   "use": "final channel voice (David23 / am_eric)",
   "envNote": "Required PATH prepend on this Windows machine so HyperFrames finds the real Python 3.12 (not the Microsoft Store stub): export PATH=\"/c/Users/Anpha Right Choice/AppData/Local/Programs/Python/Python312:$PATH\"",
   "deliveryNote": "Bold joke markers and [beat] cue stripped before TTS. Pacing realized via per-line synthesis + ellipsis on '...does this...' to land the padlock beat (Kokoro has no SSML).",
-  "assetCopy": "none — no HyperFrames section asset folder exists for this project yet",
+  "assetCopy": "none - no HyperFrames section asset folder exists for this project yet",
   "caveat": "none"
 }

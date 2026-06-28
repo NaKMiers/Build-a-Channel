@@ -15,17 +15,17 @@ VIEWED before selection. One vivid object base per scene; brand/people-free.
 |---|---|---|---|---|
 | BS1 follow the money | base-cash.jpg | a $100 bill close-up | "follow the money. it's always the money." | CC0, StockSnap (Openverse) "Money Cash" |
 | BS2 coffee one-sale | base-coffee.jpg | an espresso machine pulling a shot | "imagine you sell a coffee machine… one sale" | CC0, StockSnap (Openverse) "Espresso Coffee" |
-| BS3 recurring machine | base-coffee-machine.jpg | the same machine, warm-graded, with a CSS coin geyser | "now imagine they pay you every month" — the money machine | CC0 (copy of base-coffee) |
+| BS3 recurring machine | base-coffee-machine.jpg | the same machine, warm-graded, with a CSS coin geyser | "now imagine they pay you every month" - the money machine | CC0 (copy of base-coffee) |
 | BS4 worth a lot | base-cash-lot.jpg | cash again (non-consecutive callback) | "pays every month is worth a lot… keeps coming" | CC0 (copy of base-cash) |
 | BS5 recurring word | base-calendar.jpg | a wall/desk calendar of dates | "recurring… predictable… your forgetfulness" | CC0, rawpixel (Openverse) calendar |
 | BS6 beautiful trap | base-mousetrap.jpg | a wooden mousetrap baited with cheese | "less great product, more beautiful trap" | CC0, rawpixel (Openverse) mousetrap |
 
 ## Inspected and rejected
 
-- rawpixel "Gold coins stacked" — a cartoon/vector illustration on white (not a real photo). reject; built coins in CSS instead.
-- StockSnap "$20 fan on white" — sterile objects-on-white. reject (used the $100 close-up).
-- Openverse "coins" search — mostly French "coin"=corner photos. irrelevant.
-- Branded laptops/iMacs — Apple logos. reject (not needed this section).
+- rawpixel "Gold coins stacked" - a cartoon/vector illustration on white (not a real photo). reject; built coins in CSS instead.
+- StockSnap "$20 fan on white" - sterile objects-on-white. reject (used the $100 close-up).
+- Openverse "coins" search - mostly French "coin"=corner photos. irrelevant.
+- Branded laptops/iMacs - Apple logos. reject (not needed this section).
 
 ## CSS idea-devices
 

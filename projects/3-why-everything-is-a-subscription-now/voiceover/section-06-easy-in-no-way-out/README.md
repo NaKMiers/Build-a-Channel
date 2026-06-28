@@ -17,8 +17,8 @@ Status:
 - tone: young male ~23, clear, bright, lightly dry, learner-friendly
 - learner clarity notes:
   - Authored in the approved Section 5 spacious pacing template.
-  - The cancel-menu list uses `. .` staccato on each step to build the escalating maze — the rhythm is the joke.
-  - `**bold**` joke markers and the `[beat]` cue are NOT spoken — stripped before TTS.
+  - The cancel-menu list uses `. .` staccato on each step to build the escalating maze - the rhythm is the joke.
+  - `**bold**` joke markers and the `[beat]` cue are NOT spoken - stripped before TTS.
 
 ## Output Rule
 

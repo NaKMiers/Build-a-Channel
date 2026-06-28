@@ -24,6 +24,6 @@
 
 ## Rejected References
 
-- "Drinks Food" shelf — AK-47 branded cocktail bottles.
-- Supermarket checkout photos — real people + brands.
-- Antique 1822 receipt — wrong era/look.
+- "Drinks Food" shelf - AK-47 branded cocktail bottles.
+- Supermarket checkout photos - real people + brands.
+- Antique 1822 receipt - wrong era/look.

@@ -6,7 +6,7 @@ description: Create or update the step 1 research pack for a Why It Works video 
 # Research Pack (Claude wrapper)
 
 This is the Claude discovery wrapper for the **research-pack** skill. The canonical
-definition — full purpose, workflow, output format, and self-improving memory — lives
+definition - full purpose, workflow, output format, and self-improving memory - lives
 under `.agents/` so Codex and Claude share one source of truth.
 
 When this skill runs:

@@ -25,10 +25,10 @@ Make the store-side math impossible to miss: show the subtraction ON SCREEN, in 
 ```text
 Stand behind the counter for a second. Look at the store's side.
 A product sells for ten dollars. It costs the store four dollars to make.
-Fifty percent off. You pay five. The store spent four to make it. Five minus four — the store keeps one dollar.
-Buy one, get one free. You pay ten and take two. Those two cost the store eight to make. Ten minus eight — the store keeps two dollars. Double.
-So it is the same five dollars an item for you. But double the profit for the store. And the sign never changed — it still says ten. You paid full price and felt clever doing it.
-Oh, and this trick is old. A pottery guy named Wedgwood ran it back in the seventeen hundreds. So no — you are not the first sucker. You are just the latest.
+Fifty percent off. You pay five. The store spent four to make it. Five minus four - the store keeps one dollar.
+Buy one, get one free. You pay ten and take two. Those two cost the store eight to make. Ten minus eight - the store keeps two dollars. Double.
+So it is the same five dollars an item for you. But double the profit for the store. And the sign never changed - it still says ten. You paid full price and felt clever doing it.
+Oh, and this trick is old. A pottery guy named Wedgwood ran it back in the seventeen hundreds. So no - you are not the first sucker. You are just the latest.
 ```
 
 ## Visual Direction
@@ -43,7 +43,7 @@ Oh, and this trick is old. A pottery guy named Wedgwood ran it back in the seven
 - Real-life texture: real register, real cash, real coins, real Wedgwood jasperware
 - Real image references: 4 CC bases (register CC BY, cash CC0, coins CC0, Wedgwood CC0)
 - Generated/support assets: none
-- Viewer attention strategy: the math is the retention risk and the payoff — reveal it one number at a time, exactly as spoken
+- Viewer attention strategy: the math is the retention risk and the payoff - reveal it one number at a time, exactly as spoken
 - Retention risk: number overload / confusion (the very thing the script rewrite fixed)
 - Visual fix: one subtraction card per deal, each line appearing on its word; the result ($1 / $2) lands as an impact
 - Red markup: a red box/underline on the result number and the DOUBLE stamp only
@@ -53,11 +53,11 @@ Oh, and this trick is old. A pottery guy named Wedgwood ran it back in the seven
 
 | Big Scene | Local Time | Voice Range | Persistent Base Visual | Why This Scene Exists | When To Cut Away | Reference Basis | Asset Path |
 |---|---:|---|---|---|---|---|---|
-| A — Behind the counter | 0.0–7.48 | "Stand behind the counter… $10 sells… $4 to make." | Vintage cash register | put us on the store's side; set $10 sell / $4 cost | at "Fifty percent off" | register CC BY | `base-a-counter-register.jpg` |
-| B — 50% off math | 7.48–13.86 | "Fifty percent off… five minus four… keeps one dollar." | USD cash pile | show $5 − $4 = $1 | at "Buy one, get one free" | cash CC0 | `base-b-cash-usd.jpg` |
-| C — BOGO doubling | 13.86–22.72 | "Buy one get one free… ten minus eight… two dollars. Double." | Rising coin stacks | show $10 − $8 = $2 = DOUBLE | at "So it is the same five dollars" | coins CC0 | `base-c-coins-rising.jpg` |
-| D — The verdict / unchanged sign | 22.72–32.08 | "same five for you… double for the store… sign never changed… felt clever." | Cash register (callback) | same $5 to you vs 2× to store; $10 sign never moved | at "this trick is old" | register CC BY (callback) | `base-a-counter-register.jpg` (`reg2` grade) |
-| E — Wedgwood / old trick | 32.08–40.469 | "this trick is old… Wedgwood… seventeen hundreds… just the latest." | Wedgwood blue jasperware | the trick is ~250 years old; you're just the latest sucker | end | Wedgwood CC0 | `base-e-wedgwood.jpg` |
+| A - Behind the counter | 0.0–7.48 | "Stand behind the counter… $10 sells… $4 to make." | Vintage cash register | put us on the store's side; set $10 sell / $4 cost | at "Fifty percent off" | register CC BY | `base-a-counter-register.jpg` |
+| B - 50% off math | 7.48–13.86 | "Fifty percent off… five minus four… keeps one dollar." | USD cash pile | show $5 − $4 = $1 | at "Buy one, get one free" | cash CC0 | `base-b-cash-usd.jpg` |
+| C - BOGO doubling | 13.86–22.72 | "Buy one get one free… ten minus eight… two dollars. Double." | Rising coin stacks | show $10 − $8 = $2 = DOUBLE | at "So it is the same five dollars" | coins CC0 | `base-c-coins-rising.jpg` |
+| D - The verdict / unchanged sign | 22.72–32.08 | "same five for you… double for the store… sign never changed… felt clever." | Cash register (callback) | same $5 to you vs 2× to store; $10 sign never moved | at "this trick is old" | register CC BY (callback) | `base-a-counter-register.jpg` (`reg2` grade) |
+| E - Wedgwood / old trick | 32.08–40.469 | "this trick is old… Wedgwood… seventeen hundreds… just the latest." | Wedgwood blue jasperware | the trick is ~250 years old; you're just the latest sucker | end | Wedgwood CC0 | `base-e-wedgwood.jpg` |
 
 ## Cue State Timeline
 
@@ -66,22 +66,22 @@ Oh, and this trick is old. A pottery guy named Wedgwood ran it back in the seven
 | A1 | 0.30 | "Stand behind the counter" | A | "the STORE's side" hand label | register | hard-show | `thinking` RIGHT ~1/3, legs crop only | "the store's side" | put us behind the counter |
 | A2 | 4.46 | "$10" (sells) | A | green "SELLS $10" tag | register | hard-show | thinking | "SELLS $10" | the price |
 | A3 | 6.06 | "$4 to make" | A | gray "COSTS $4 to make" tag | register | hard-show | thinking | "COSTS $4" | the cost |
-| B1 | 7.62 | "Fifty percent off" | B | math card header "50% OFF" + cut to cash | — | transition + hard-show | (no WIT) | "50% OFF" | open deal 1 |
-| B2 | 8.66 | "you pay five" | B | line "You pay $5" | card | hard-show | — | "You pay $5" | first number |
-| B3 | 9.88 | "spent four to make" | B | line "− Cost $4" | card | hard-show | — | "− Cost $4" | subtract cost |
-| B4 | 12.62 | "keeps one dollar" | B | result "= keeps $1" + red box | card | impact | — | "= $1" red box | the result lands |
-| C1 | 13.90 | "Buy one, get one free" | C | math card header "BUY 1 GET 1 FREE" + cut to coins | — | transition + hard-show | (no WIT) | "BUY 1 GET 1 FREE" | open deal 2 |
-| C2 | 15.38 | "you pay ten and take two" | C | line "You pay $10 (for 2)" | card | hard-show | — | "You pay $10" | first number |
-| C3 | 17.08 | "cost the store eight" | C | line "− Cost $8" | card | hard-show | — | "− Cost $8" | subtract cost |
-| C4 | 20.52 | "keeps two dollars" | C | result "= keeps $2" + red box | card, coins | impact | — | "= $2" red box | result lands |
+| B1 | 7.62 | "Fifty percent off" | B | math card header "50% OFF" + cut to cash | - | transition + hard-show | (no WIT) | "50% OFF" | open deal 1 |
+| B2 | 8.66 | "you pay five" | B | line "You pay $5" | card | hard-show | - | "You pay $5" | first number |
+| B3 | 9.88 | "spent four to make" | B | line "− Cost $4" | card | hard-show | - | "− Cost $4" | subtract cost |
+| B4 | 12.62 | "keeps one dollar" | B | result "= keeps $1" + red box | card | impact | - | "= $1" red box | the result lands |
+| C1 | 13.90 | "Buy one, get one free" | C | math card header "BUY 1 GET 1 FREE" + cut to coins | - | transition + hard-show | (no WIT) | "BUY 1 GET 1 FREE" | open deal 2 |
+| C2 | 15.38 | "you pay ten and take two" | C | line "You pay $10 (for 2)" | card | hard-show | - | "You pay $10" | first number |
+| C3 | 17.08 | "cost the store eight" | C | line "− Cost $8" | card | hard-show | - | "− Cost $8" | subtract cost |
+| C4 | 20.52 | "keeps two dollars" | C | result "= keeps $2" + red box | card, coins | impact | - | "= $2" red box | result lands |
 | C5 | 21.94 | "Double." | C | "DOUBLE" stamp over rising coins | coins | impact | `shocked` CENTER ~1/2 | "DOUBLE" stamp | the punch; WIT reacts |
 | D1 | 23.28 | "same five dollars… for you" | D | split card: "YOU: $5 / item" | register | transition + hard-show | (WIT enters D3) | "YOU: $5/item" | your side unchanged |
-| D2 | 25.24 | "double the profit for the store" | D | "STORE: 2× profit" half + arrow | split card | hard-show | — | "STORE: 2× profit" | store's side doubled |
-| D3 | 27.24 | "the sign never changed… still says ten" | D | big "$10" price tag stamps, "never moved" | split card | impact | — | "$10 — never moved" | anchor: price never drops |
-| D4 | 30.70 | "felt clever doing it" | D | WIT awkward-celebration | register | hard-show | `awkward-celebration` LEFT ~1/2 | — | the dry joke on the shopper |
+| D2 | 25.24 | "double the profit for the store" | D | "STORE: 2× profit" half + arrow | split card | hard-show | - | "STORE: 2× profit" | store's side doubled |
+| D3 | 27.24 | "the sign never changed… still says ten" | D | big "$10" price tag stamps, "never moved" | split card | impact | - | "$10 - never moved" | anchor: price never drops |
+| D4 | 30.70 | "felt clever doing it" | D | WIT awkward-celebration | register | hard-show | `awkward-celebration` LEFT ~1/2 | - | the dry joke on the shopper |
 | E1 | 32.42 | "this trick is old" | E | cut to Wedgwood; "≈ 250 years old" | jasperware | transition + hard-show | (WIT enters E3) | "≈ 250 years old" | reframe to history |
-| E2 | 34.42 | "Wedgwood… seventeen hundreds" | E | "Josiah Wedgwood · 1700s" caption | jasperware | hard-show | — | "Wedgwood · 1700s" | name the originator |
-| E3 | 38.32 | "not the first sucker… just the latest" | E | "SUCKER #—— you're just the latest" ticket | jasperware | impact | `facepalm` RIGHT ~1/2 | sucker ticket | the roast button |
+| E2 | 34.42 | "Wedgwood… seventeen hundreds" | E | "Josiah Wedgwood · 1700s" caption | jasperware | hard-show | - | "Wedgwood · 1700s" | name the originator |
+| E3 | 38.32 | "not the first sucker… just the latest" | E | "SUCKER #-- you're just the latest" ticket | jasperware | impact | `facepalm` RIGHT ~1/2 | sucker ticket | the roast button |
 
 ## WIT Pose Plan
 
@@ -104,9 +104,9 @@ WIT density note:
 | Cue | Time | Text / Markup | Motion | Target | Why | Avoid |
 |---|---:|---|---|---|---|---|
 | B4 | 12.62 | red box on "$1" | impact | the result number | the kept profit lands | no marks on the setup lines |
-| C4 | 20.52 | red box on "$2" | impact | the result number | the doubled profit lands | — |
-| C5 | 21.94 | "DOUBLE" stamp | impact | over coins | the punch | — |
-| D3 | 27.24 | "$10 never moved" | impact | the price tag | anchoring: price never drops | — |
+| C4 | 20.52 | red box on "$2" | impact | the result number | the doubled profit lands | - |
+| C5 | 21.94 | "DOUBLE" stamp | impact | over coins | the punch | - |
+| D3 | 27.24 | "$10 never moved" | impact | the price tag | anchoring: price never drops | - |
 | E3 | 38.32 | sucker ticket | impact | over jasperware | the roast | keep off WIT face |
 
 ## Reference And Asset Plan

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Short 03 — 25% Off In A Costume</title>
+<title>Short 03 - 25% Off In A Costume</title>
 <style>
   @font-face{ font-family:'Patrick Hand'; src:url('assets/fonts/patrick-hand-latin.woff2') format('woff2'); font-display:swap; }
   *{ box-sizing:border-box; }
@@ -18,23 +18,23 @@
   .scrim-bottom{ position:absolute; bottom:0; left:0; right:0; height:600px;
                  background:linear-gradient(0deg, rgba(0,0,0,0.58), rgba(0,0,0,0)); }
 
-  /* WIT — big, face above the centered caption, body bleeds toward the bottom */
+  /* WIT - big, face above the centered caption, body bleeds toward the bottom */
   .wit{ position:absolute; left:50%; bottom:360px; transform:translateX(-50%);
         width:940px; transform-origin:center bottom; opacity:0;
         filter:drop-shadow(0 14px 30px rgba(0,0,0,0.55)); }
-  /* thinking + shocked poses sit lower in their PNG canvas — raise so the head clears the centered caption */
+  /* thinking + shocked poses sit lower in their PNG canvas - raise so the head clears the centered caption */
   #witThinking{ bottom:540px; }
   #witShocked{ bottom:520px; }
   .wit-layer{ position:absolute; inset:0; pointer-events:none; }
 
-  /* Hero cards / handwritten labels — upper third */
+  /* Hero cards / handwritten labels - upper third */
   .card-layer{ position:absolute; inset:0; }
   .label{ position:absolute; left:50%; transform:translateX(-50%) rotate(-1.6deg);
           background:#fdf6e3; color:#241c12; font-size:74px; line-height:1.06;
           padding:18px 38px; border-radius:16px; border:4px solid #241c12;
           box-shadow:0 12px 26px rgba(0,0,0,0.45); white-space:nowrap; text-align:center; opacity:0; }
 
-  /* cuts-the-X cards — one game per side */
+  /* cuts-the-X cards - one game per side */
   .cuts{ position:absolute; left:50%; top:280px; transform:translateX(-50%) rotate(-1.4deg);
          background:#fdf6e3; color:#241c12; font-size:70px; line-height:1.04;
          padding:18px 40px; border-radius:16px; border:5px solid #241c12;
@@ -44,7 +44,7 @@
   .cuts.judg{ background:#ffd23f; transform:translateX(-50%) rotate(1.4deg); }
   .cuts.judg b{ color:#c0392b; }
 
-  /* payoff card — BOGO 50% off = 25% off in a costume */
+  /* payoff card - BOGO 50% off = 25% off in a costume */
   .payoff{ position:absolute; left:50%; top:250px; transform:translateX(-50%) rotate(-2deg);
            color:#241c12; background:#fdf6e3; font-size:60px; line-height:1.05;
            padding:22px 44px; border-radius:22px; border:7px solid #241c12;
@@ -54,7 +54,7 @@
   .payoff .costume{ display:block; margin-top:14px; color:#fff; background:#241c12;
                     font-size:56px; letter-spacing:1px; padding:8px 22px; border-radius:14px; }
 
-  /* Captions — distinct subtitle style, vertically centered */
+  /* Captions - distinct subtitle style, vertically centered */
   .caption-layer{ position:absolute; inset:0; }
   .cap{ position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);
         background:rgba(16,12,9,0.5); border-radius:22px; padding:14px 32px;
@@ -124,7 +124,7 @@
     const fadeScene = (sel,t)=> tl.fromTo(sel,{opacity:0,filter:'blur(14px)'},
                     {opacity:1,filter:'blur(0px)',duration:0.5,immediateRender:false}, t);
 
-    // ---- Scene A (chess) : the hook — two signs, different games ----
+    // ---- Scene A (chess) : the hook - two signs, different games ----
     show('#witThinking', 0.0);
     show('#cap1', 0.05); hide('#cap1', 1.90);
     show('#lblHook', 0.70);
@@ -133,15 +133,15 @@
     // ---- Scene B/C (cutmoney) : 50% cuts the price, free cuts your judgment ----
     fadeScene('#sceneB', 5.55);
     hide('#witThinking', 5.55); hide('#lblHook', 5.55);
-    pop('#lblPrice', 6.30);                    // "cuts the price" — card is hero
+    pop('#lblPrice', 6.30);                    // "cuts the price" - card is hero
     hide('#lblPrice', 7.70);
     show('#witTalking', 7.40);
-    pop('#lblJudg', 8.28);                      // "cuts your judgment" — card is hero
+    pop('#lblJudg', 8.28);                      // "cuts your judgment" - card is hero
     pop('#cap3', 11.90); hide('#cap3', 12.75);  // "shush, relax"
     hide('#lblJudg', 13.40);
     pop('#cap4', 14.40); hide('#cap4', 15.95);  // "buy 1 get 1, 50% off?"
 
-    // ---- Scene D (mask) : the payoff — 25% off in a costume ----
+    // ---- Scene D (mask) : the payoff - 25% off in a costume ----
     fadeScene('#sceneD', 16.00);
     hide('#witTalking', 16.00);
     show('#witShocked', 16.10);

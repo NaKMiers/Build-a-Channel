@@ -1,4 +1,4 @@
-# Section 2 Marked Script — Reframe: Looking Busy vs Doing Work
+# Section 2 Marked Script - Reframe: Looking Busy vs Doing Work
 
 Video: `Why Everyone Pretends To Be Busy`
 

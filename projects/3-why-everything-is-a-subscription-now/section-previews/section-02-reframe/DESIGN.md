@@ -1,4 +1,4 @@
-# Section 2 Reframe — Design (REMADE 2026-06-23 to the Section 1 template)
+# Section 2 Reframe - Design (REMADE 2026-06-23 to the Section 1 template)
 
 Video: `Why Everything Is a Subscription Now`
 Composition: `Section02Reframe` · 1920x1080 · duration `37.909s` · port `1002`
@@ -13,10 +13,10 @@ cream label boxes carrying every idea, and small/low WIT. This build uses `vivid
 ## Structure (5 big scenes, ~16 cues)
 
 - A defuse (0–9.30): hands on a phone full of app icons (`base-apps-phone.jpg`). Struck `AN ANTI-SUBSCRIPTION RANT` banner; cream aside `(don't throw it in a lake)`; green `SOME ARE GENUINELY USEFUL` + 3 app tiles, 2 with green ✓ badges; WIT facepalm RIGHT (giant).
-- B OWN (9.30–14.80): crate of vinyl records (warm). `WE USED TO OWN THINGS` headline; green `OWN` stamp slams on the records; receipt card `PAID ONCE ✓ / yours — forever`; cream aside `a beautiful, boring transaction`; WIT thinking LEFT.
-- C RENT (14.80–20.52): glowing phone again (cool) — the script's "same device, now rented" callback. CSS subscription paywall `StreamFlix · $9.99/mo · Subscribe`; small faded `OWN` crossed out → red `RENT` stamp slams; green `pay monthly → screen ON` toggle. No WIT (the swap carries it).
-- D LOCK (20.52–27.44): a real padlock (dark). Red `MISS A PAYMENT` top banner; CSS lock-screen card with `LOCKED` pop; cream aside `…like a disappointed parent`; WIT betrayed CENTER, giant — the peak.
-- E real question (27.44–37.909): device flat-lay. Kinetic `SO… HOW DID EVERYTHING?` headline; staccato RENT tags (apps/shows/software/car buttons); kinetic payoff `RENT — NOT OWN`; WIT suspicious RIGHT.
+- B OWN (9.30–14.80): crate of vinyl records (warm). `WE USED TO OWN THINGS` headline; green `OWN` stamp slams on the records; receipt card `PAID ONCE ✓ / yours - forever`; cream aside `a beautiful, boring transaction`; WIT thinking LEFT.
+- C RENT (14.80–20.52): glowing phone again (cool) - the script's "same device, now rented" callback. CSS subscription paywall `StreamFlix · $9.99/mo · Subscribe`; small faded `OWN` crossed out → red `RENT` stamp slams; green `pay monthly → screen ON` toggle. No WIT (the swap carries it).
+- D LOCK (20.52–27.44): a real padlock (dark). Red `MISS A PAYMENT` top banner; CSS lock-screen card with `LOCKED` pop; cream aside `…like a disappointed parent`; WIT betrayed CENTER, giant - the peak.
+- E real question (27.44–37.909): device flat-lay. Kinetic `SO… HOW DID EVERYTHING?` headline; staccato RENT tags (apps/shows/software/car buttons); kinetic payoff `RENT - NOT OWN`; WIT suspicious RIGHT.
 
 ## Vivid object bases (one per scene)
 

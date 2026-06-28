@@ -1,10 +1,10 @@
-# Short 04 — "The Product Is You, Not Cancelling"
+# Short 04 - "The Product Is You, Not Cancelling"
 
 Native portrait HyperFrames rebuild · `1080x1920` · port `1104` · comp duration `21.20s` (audio `19.861s` + payoff hold).
-Source section: S7 (payoff). Complete standalone short — **NO CTA**.
+Source section: S7 (payoff). Complete standalone short - **NO CTA**.
 
 ## One idea
-The product was never the app or the show — it's your forgetting, the month you meant to cancel and didn't. So read your statement and cancel the ghosts.
+The product was never the app or the show - it's your forgetting, the month you meant to cancel and didn't. So read your statement and cancel the ghosts.
 
 ## Scenes (real photo base + scrims each)
 | Scene | Base | Track | Window | WIT | Hero card(s) |
@@ -23,10 +23,10 @@ Scene bases cross-fade (`fadeScene`).
 Punchlines/payoff carried by the cards; captions clear before a card pops. Ends on "Cancel the ghosts" (the actionable payoff), NOT the long video's "your salary. for now." closer.
 
 ## WIT note
-`thinking` raised to `bottom:450px`, `shocked` 420px, `deadpan-side-eye` 430px, `holding-receipt-evidence` 400px — all sit lower in their PNG; raised so the centered caption clears the face.
+`thinking` raised to `bottom:450px`, `shocked` 420px, `deadpan-side-eye` 430px, `holding-receipt-evidence` 400px - all sit lower in their PNG; raised so the centered caption clears the face.
 
 ## Voiceover
-`voiceover/short-04.mp3` — approved voice `am_eric / 0.84 / en-us`, 19.861s. Timings `voiceover/short-04-word-timings.json` (whisper-tiny.en; final word "ghosts." end clamped 22.16→19.861).
+`voiceover/short-04.mp3` - approved voice `am_eric / 0.84 / en-us`, 19.861s. Timings `voiceover/short-04-word-timings.json` (whisper-tiny.en; final word "ghosts." end clamped 22.16→19.861).
 
 ## QA
 - `lint`/`validate`: 0 errors. Non-blocking: `overlapping_gsap_tweens` 0–0.42s (opening pop); WCAG contrast false positives.

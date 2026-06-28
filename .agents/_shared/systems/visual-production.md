@@ -116,8 +116,8 @@ Avoid:
 - real logos used to imply endorsement or a fake claim, or pixel-copied private screenshots
 
 Standing technique (owner-approved 2026-06-22): real recognizable UI is a PREFERRED illustration
-device — phone/iPhone mockups, real app icons (Gmail, Messenger, To Do, Google Calendar, etc.), and
-app/notification/chat screens — whenever the script depicts those actual apps/products/screens. Build
+device - phone/iPhone mockups, real app icons (Gmail, Messenger, To Do, Google Calendar, etc.), and
+app/notification/chat screens - whenever the script depicts those actual apps/products/screens. Build
 them in CSS with real icon PNGs (from Wikimedia Commons), used editorially. See `brand-system.md` →
 "Real-UI Illustration."
 - generic stock images that do not explain the point
@@ -126,8 +126,8 @@ Channel-wide reusable assets should be rare and high-value. Most video-specific 
 
 Real background behind EVERY scene, including UI scenes (owner-confirmed 2026-06-22). A section
 made of full-frame CSS UI / labels on flat gradients reads as "no background / not lively" and gets
-sent back. Every scene — even a real-UI scene (Meet grid, chat, Trello, spreadsheet, calendar) or a
-stylized one — must sit on a REAL, people-free photo. Float the crisp UI as a drop-shadowed `.screen`
+sent back. Every scene - even a real-UI scene (Meet grid, chat, Trello, spreadsheet, calendar) or a
+stylized one - must sit on a REAL, people-free photo. Float the crisp UI as a drop-shadowed `.screen`
 over a real desk/office photo (with a light scrim), and prefer a photo that literally echoes the line
 (empty meeting room for "this meeting could've been a message", sticky-note wall for "overloaded",
 real theater curtain for "the star of the show", a packed calendar app for "a calendar with Wi-Fi").
@@ -167,7 +167,7 @@ WIT should not block labels or replace the explanation. The reverse also matters
 When WIT appears, treat it as the emotional subject of the beat, not a small corner sticker. For strong emotional beats, WIT can occupy roughly `1/3` to `1/2` of the frame when it does not cover labels or evidence. Prefer goofy, readable poses such as panic, facepalm, suspicion, betrayal, confusion, shock, or defeated reactions over neutral filler poses.
 
 WIT size + vertical anchor (owner-confirmed 2026-06-22). Two complementary defaults the owner asked for:
-- **Big (default to GIANT)**: the owner has repeatedly said "I love giant WIT", so default to the LARGE end — about `1/2` of the frame (giant), not a cautious `1/3`. A small WIT reads as a sticker. If a bigger WIT would cover a label, board, chat bubble, or other content, RE-ARRANGE the other items (move them to the opposite side / up / down) rather than shrinking or lowering WIT. WIT is the emotional subject; the supporting content makes room for it. (Concrete sizing that worked at 1920x1080: side-anchored WIT `width ~1340–1380`, centered WIT `width ~1140`.)
+- **Big (default to GIANT)**: the owner has repeatedly said "I love giant WIT", so default to the LARGE end - about `1/2` of the frame (giant), not a cautious `1/3`. A small WIT reads as a sticker. If a bigger WIT would cover a label, board, chat bubble, or other content, RE-ARRANGE the other items (move them to the opposite side / up / down) rather than shrinking or lowering WIT. WIT is the emotional subject; the supporting content makes room for it. (Concrete sizing that worked at 1920x1080: side-anchored WIT `width ~1340–1380`, centered WIT `width ~1140`.)
 - **High**: do NOT anchor a bottom-edge WIT so low that only the head peeks (e.g. CSS `bottom:-540…-600px` bled most of the body off-canvas and the owner said it looked "too low / covered by the frame"). Anchor higher (`bottom ≈ -250…-340px`, even for a giant figure) so head + glasses + torso + arms sit inside the frame and only the legs crop. Verify in a snapshot that the head is comfortably inside the top edge too.
 
 Do not overuse WIT. WIT is emotional punctuation, not a reaction requirement for every cue. For short sections, start with about `1-2` WIT beats per persistent big scene, then adjust based on voice rhythm. Let labels, props, and markup carry explanatory beats between WIT moments.
@@ -233,11 +233,11 @@ sections (and the bar to match for new sections). Three rules:
 - VIVID ON-TOPIC OBJECT BASES: dramatize the line with concrete brand/people-free objects (money/coins/cash,
   padlocks, glowing screens), not mundane desks/hands. If clean topical photos are scarce, use a strong
   object + CSS real-UI. Keep each scene's base distinct.
-- VARIED IDEA-DEVICES (not one repeated label box): vary how each idea is shown — app-grid tiles, a kinetic
+- VARIED IDEA-DEVICES (not one repeated label box): vary how each idea is shown - app-grid tiles, a kinetic
   number/counter, notification toasts, a free-trial countdown, a full-width system/EXPIRED banner, a padlock
   wall, bold kinetic headline type, badges, a chat bubble, a stamp. Reserve the handwritten cream label for
   the occasional aside.
-- GIANT, VARIED WIT: WIT is the soul of each scene — keep it giant (~1/2 frame) with an expressive on-topic
+- GIANT, VARIED WIT: WIT is the soul of each scene - keep it giant (~1/2 frame) with an expressive on-topic
   pose, and VARY it across scenes in side (left/center/right), scale, vertical anchor, and pose. Never park
   WIT on the same side every scene with text always opposite; flip the text/UI to the side WIT isn't using
-  and rearrange items around WIT. (`wit-pose-money-panic.png` and `wit-pose-typing-on-laptop.png` have a baked black bg — avoid on photo scenes.)
+  and rearrange items around WIT. (Current WIT poses ship on a flat green #00B140 screen - chroma-key the green out at render before compositing onto any scene.)

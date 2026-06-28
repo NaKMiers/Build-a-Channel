@@ -8,14 +8,14 @@
 - Generated images: none (no image generator connected this session)
 - Inspected local assets: shared WIT pose library `.agents/_shared/assets/wit/poses/`
 - Prompt-only fallbacks: none
-- Fallback reason: n/a — real photos were available and accepted
+- Fallback reason: n/a - real photos were available and accepted
 
 ## Search / Browse Notes
 
 - Openverse queries: "supermarket shelf grocery store aisle", "pile of cash money dollars", "magician top hat magic" (empty), "top hat", "empty grocery store shelves", "shopping cart supermarket", "retail shelf boxes".
 - Wikimedia queries: "magician top hat", "red theater curtain stage", "stack of cash banknotes".
 - Brand traps hit and avoided: snack/liquor/detergent aisles all carried recognizable brand logos → rejected for direct use per the no-incidental-logo rubric.
-- The magic top hat photo is shot with white gloves + wand (NO face) — safe for the no-face channel and almost exactly the script's "pulled out of a magician's hat" beat.
+- The magic top hat photo is shot with white gloves + wand (NO face) - safe for the no-face channel and almost exactly the script's "pulled out of a magician's hat" beat.
 
 ## References
 
@@ -31,17 +31,17 @@
 
 | Big Scene | Needed Visual Basis | Real / Local Reference | Generated Support | Production Decision | Remaining Gap |
 |---|---|---|---|---|---|
-| A — store / two signs | a real store base to float two price signs on | shopping cart photo | none | direct base + CSS price-sign devices | none |
-| B — profit reveal | money + a profit comparison | USD cash photo | none | direct base + CSS profit meter | none |
-| C — magic trick / rabbit | magic-show backdrop + a hat WIT emerges from | red curtain + magic hat | none | direct base + hat element + giant WIT | none |
+| A - store / two signs | a real store base to float two price signs on | shopping cart photo | none | direct base + CSS price-sign devices | none |
+| B - profit reveal | money + a profit comparison | USD cash photo | none | direct base + CSS profit meter | none |
+| C - magic trick / rabbit | magic-show backdrop + a hat WIT emerges from | red curtain + magic hat | none | direct base + hat element + giant WIT | none |
 
 ## Image Generation Prompts
 
-Not used — no image generator is connected this session and real CC0/CC-BY-SA photos covered every big scene.
+Not used - no image generator is connected this session and real CC0/CC-BY-SA photos covered every big scene.
 
 ## Rejected References
 
-- Snack aisle (Lay's / Pringles / Doritos visible) — recognizable brand logos.
-- Liquor aisle (branded bottles, possible distant person) — brands + people risk.
-- Detergent shelf (branded bottles) — brands.
+- Snack aisle (Lay's / Pringles / Doritos visible) - recognizable brand logos.
+- Liquor aisle (branded bottles, possible distant person) - brands + people risk.
+- Detergent shelf (branded bottles) - brands.
 - These were viewed then deleted from the active folder; not saved.

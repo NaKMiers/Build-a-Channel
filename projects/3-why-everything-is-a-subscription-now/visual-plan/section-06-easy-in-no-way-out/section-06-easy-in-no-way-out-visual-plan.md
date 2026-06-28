@@ -16,16 +16,16 @@ Okay, you say. I'll just cancel. Oh, sweet child.
 Here's the strange law of subscriptions: signing up takes ten seconds. Cancelling takes a vision quest.
 Getting in is a big, happy, glowing button. Getting out is hidden somewhere in your phone like a final boss.
 You tap "account." Then "settings." Then "manage." Then "are you sure?" Then "here, have a discount." Then "we'll miss you." Then a phone number that only answers between two and two-fifteen on a Tuesday.
-This even has a name. It's been called negative option billing — a fancy term for one simple trick: you keep paying unless you actively say stop.
+This even has a name. It's been called negative option billing - a fancy term for one simple trick: you keep paying unless you actively say stop.
 So all the remembering, deciding, and escaping? Pushed onto you. Minus a thousand aura points, and you didn't even do anything wrong.
-So a lot of people just... give up. They keep paying. Not because they want it — because cancelling feels like a part-time job. With no salary. Which, fittingly, is also not a subscription.
+So a lot of people just... give up. They keep paying. Not because they want it - because cancelling feels like a part-time job. With no salary. Which, fittingly, is also not a subscription.
 ```
 
 ## Visual Direction
 
 - 5 big scenes for 53s, built around the section's two controlling metaphors: TIME (a stopwatch) and the CANCEL ORDEAL (a maze). Plus the fine-print trick (a contract).
 - VIVID OBJECT BASES: a STOPWATCH (the time contrast) → a wooden LABYRINTH/maze game (the vision quest / final boss / menu maze) → a CONTRACT with fine print (negative option billing) → the maze again, dark (still lost / −1000 aura) → the stopwatch again, dark (a part-time job, no salary).
-  - SOURCING NOTE: clean CC photos for the abstract tail beats ("the unfair burden / −1000 aura" and "a part-time job with no salary") were not findable on the CC sources this session. The maze (S4) and stopwatch (S5) therefore RETURN as deliberate, darker-graded thematic callbacks — the maze = the ongoing cancel ordeal, the stopwatch = the time cost — rather than lazy reuse. They are visually distinguished by a dark grade + different CSS devices + different WIT, and each uses a separate filename copy (lint). The owner can drop replacement photos into the section folder for S4/S5 if preferred.
+  - SOURCING NOTE: clean CC photos for the abstract tail beats ("the unfair burden / −1000 aura" and "a part-time job with no salary") were not findable on the CC sources this session. The maze (S4) and stopwatch (S5) therefore RETURN as deliberate, darker-graded thematic callbacks - the maze = the ongoing cancel ordeal, the stopwatch = the time cost - rather than lazy reuse. They are visually distinguished by a dark grade + different CSS devices + different WIT, and each uses a separate filename copy (lint). The owner can drop replacement photos into the section folder for S4/S5 if preferred.
 - VARIED idea-devices per beat: green "SIGN UP 10s ✓" vs red "CANCEL: a vision quest"; a green "getting IN: 1 tap" + red "FINAL BOSS" + a 7-step MENU breadcrumb trail (account → settings → manage → "are you sure?" → "have a discount!" → "we'll miss you" → ☎ a number, Tue 2:00–2:15) winding through the maze; a red `NEGATIVE OPTION BILLING` stamp + "you keep paying unless you say STOP"; a game-HUD `−1000 AURA`; a "part-time job / salary: $0" payoff.
 - GIANT WIT, varied side/pose (4 beats; S1 breathes): running-away RIGHT (fleeing the menu maze) → suspicious RIGHT (the sneaky trick) → confused LEFT (lost, −1000 aura) → tiny-defeated RIGHT (gave up).
 
@@ -43,9 +43,9 @@ So a lot of people just... give up. They keep paying. Not because they want it �
 
 | Cue | Time | Voice | Scene | What changes | Motion | WIT |
 |---|---:|---|---|---|---|---|
-| C1 | 1.2 / 2.6 | "I'll just cancel / oh sweet child" | BS1 | headline; cream aside | hard-show | — |
-| C2 | 5.7 / 7.4 | "10 seconds / a vision quest" | BS1 | green SIGN-UP label; red CANCEL label | hard-show / impact | — |
-| C3 | 9.1 / 11.4 | "glowing button / final boss" | BS2 | green "1 tap"; red "FINAL BOSS" | hard-show / impact | — |
+| C1 | 1.2 / 2.6 | "I'll just cancel / oh sweet child" | BS1 | headline; cream aside | hard-show | - |
+| C2 | 5.7 / 7.4 | "10 seconds / a vision quest" | BS1 | green SIGN-UP label; red CANCEL label | hard-show / impact | - |
+| C3 | 9.1 / 11.4 | "glowing button / final boss" | BS2 | green "1 tap"; red "FINAL BOSS" | hard-show / impact | - |
 | C4 | 14.8–21.7 | "account → … → a phone number" | BS2 | 7 menu chips pop one-per-spoken-step (winding); WIT enters @13.0 | pop (staggered) | running-away R |
 | C5 | 26.2 / 27.5 | "it has a name / negative option billing" | BS3 | small label; red `NEGATIVE OPTION BILLING` stamp | hard-show / impact | suspicious R @28 |
 | C6 | 31.5 | "you keep paying unless you say stop" | BS3 | red callout | impact | holds |
@@ -69,7 +69,7 @@ WIT density: 4 beats / 5 scenes; BS1 breathes. All verified transparent. AVOID `
 |---|---|---|---|
 | base-stopwatch.jpg / base-stopwatch-2.jpg | real CC0 | safe asset; rawpixel (Openverse) sports stopwatch (2nd filename = dark callback) | BS1, BS5 |
 | base-maze.jpg / base-maze-2.jpg | real CC0 | safe asset; rawpixel (Openverse) wooden labyrinth game (2nd filename = dark callback) | BS2, BS4 |
-| base-contract.jpg | real CC BY | safe asset; Wikimedia "Legal Contract & Signature" — fine print + pen | BS3 |
+| base-contract.jpg | real CC BY | safe asset; Wikimedia "Legal Contract & Signature" - fine print + pen | BS3 |
 | menu chips / FINAL BOSS / stamp / HUD / payoff | self-made CSS | build in render | the idea-devices |
 | WIT poses | local PNG | shared manifest | emotion |
 

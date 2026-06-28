@@ -2,7 +2,7 @@
 
 Video: `Why Buy 1 Get 1 Free Beats 50% Off`
 Section: `Section 5: The Price Never Drops`
-Status: `REMADE 2026-06-24 — fresh distinct retail bases + clean spaced text; see IMPLEMENTATION.md for as-built`
+Status: `REMADE 2026-06-24 - fresh distinct retail bases + clean spaced text; see IMPLEMENTATION.md for as-built`
 
 > Remake note: v1 lazily reused cash/coins/curtain from other sections and stacked overlapping text. As-built now uses 5 FRESH retail bases (shelf-tags → red sale store → boutique → aisle → clothing shop) with one clean hero device per beat, well-spaced and sequentially timed. The base table below reflects the original (money) plan; the shipped bases are in ATTRIBUTION.md / IMPLEMENTATION.md.
 
@@ -39,11 +39,11 @@ And they pick this shape on purpose. You want the first one a lot, and the secon
 
 | Scene | Local Time | Voice Range | Base | Hero Device | WIT |
 |---|---:|---|---|---|---|
-| A — the price never drops | 0.0–4.56 | "Third trick… never drops" | cash | "$10 on the sign" + blocked ↓ "never drops" | price-tag-suspicion R |
-| B — 50% off shrinks value | 4.56–12.62 | "only worth five bucks… cheap forever" | coins | $10 struck → $5 "feels normal" + "LOOKS CHEAP forever" | deadpan-side-eye L |
-| C — BOGO keeps proud price | 12.62–20.02 | "keeps that proud $10… a bonus on top" | red curtain | proud gold $10 "real price stays HIGH" + "+1 FREE bonus" | shocked C |
-| D — stores love it | 20.02–23.68 | "Stores love that… without admitting it's cheap" | cash | "Stores LOVE this" + "a sale without admitting it's cheap" | facepalm R |
-| E — designed shape | 23.68–36.416 | "want the first a lot, second eh… charge full for the first" | coins | FIRST (want a lot) vs SECOND (…eh) want-meter + "FULL price for #1" stamp | empty-wallet L |
+| A - the price never drops | 0.0–4.56 | "Third trick… never drops" | cash | "$10 on the sign" + blocked ↓ "never drops" | price-tag-suspicion R |
+| B - 50% off shrinks value | 4.56–12.62 | "only worth five bucks… cheap forever" | coins | $10 struck → $5 "feels normal" + "LOOKS CHEAP forever" | deadpan-side-eye L |
+| C - BOGO keeps proud price | 12.62–20.02 | "keeps that proud $10… a bonus on top" | red curtain | proud gold $10 "real price stays HIGH" + "+1 FREE bonus" | shocked C |
+| D - stores love it | 20.02–23.68 | "Stores love that… without admitting it's cheap" | cash | "Stores LOVE this" + "a sale without admitting it's cheap" | facepalm R |
+| E - designed shape | 23.68–36.416 | "want the first a lot, second eh… charge full for the first" | coins | FIRST (want a lot) vs SECOND (…eh) want-meter + "FULL price for #1" stamp | empty-wallet L |
 
 ## Cue Timeline (word-pinned; see IMPLEMENTATION.md for exact data-starts)
 

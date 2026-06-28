@@ -1,4 +1,4 @@
-# Section 3 The Spread — Design (2026-06-23, Section 1 template)
+# Section 3 The Spread - Design (2026-06-23, Section 1 template)
 
 Video: `Why Everything Is a Subscription Now`
 Composition: `Section03Spread` · 1920x1080 · duration `54.165s` · port `1003`

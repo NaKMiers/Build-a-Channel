@@ -1,4 +1,4 @@
-# Section 1 Marked Script — Hook: The Busy Trap
+# Section 1 Marked Script - Hook: The Busy Trap
 
 Video: `Why Everyone Pretends To Be Busy`
 
@@ -21,4 +21,4 @@ Direction notes:
 - `[pause]` after the opening line lets the "strange rule" hook land before the payoff.
 - `[beat]` before "Or asleep with your eyes open" sets up the dry joke.
 - `[beat] [deadpan]` before "There is a difference." is the section-ending dry button (from the script's voice revision note).
-- Keep delivery calm and lightly dry — a person explaining something ridiculous without acting surprised.
+- Keep delivery calm and lightly dry - a person explaining something ridiculous without acting surprised.

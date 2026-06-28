@@ -24,7 +24,7 @@ Use this file for section preview structure, port behavior, HyperFrames CLI habi
 - Use one video-level shared asset library at `projects/<slug>/assets/`.
 - Use local section `assets` junctions instead of copied asset folders.
 - Keep asset filenames SHORT (kebab `<subject>-<n>.jpg`); put photographer/source/license in `ATTRIBUTION.md`, not the filename. Long descriptive+attribution filenames nested under `section-previews/section-XX-.../assets/visual-references/section-XX-.../...` overflow Windows `MAX_PATH` and break `git add` (`Filename too long`). Do not repeat the long section slug twice in one path.
-- HyperFrames preview/Studio and `snapshot` generate a `.thumbnails/` cache that MIRRORS the asset tree under the preview folder — these are the deepest, longest paths in the repo. They are regenerable and `.gitignore`d; never commit them. If a `git add` fails on a long path, it is almost always a `.thumbnails/` file — delete the `.thumbnails/` dirs (`find . -type d -name .thumbnails | xargs rm -rf`) and re-add.
+- HyperFrames preview/Studio and `snapshot` generate a `.thumbnails/` cache that MIRRORS the asset tree under the preview folder - these are the deepest, longest paths in the repo. They are regenerable and `.gitignore`d; never commit them. If a `git add` fails on a long path, it is almost always a `.thumbnails/` file - delete the `.thumbnails/` dirs (`find . -type d -name .thumbnails | xargs rm -rf`) and re-add.
 - Inspect real-world visual references and source notes from the selected visual plan before using generated support assets.
 - Treat generated images as controlled support bases unless the visual plan explicitly approves them as primary.
 - Before using a planned image as a direct scene base, compare it against adjacent big scenes. If a non-callback scene repeats the same background, object setup, camera language, or material mood, rebuild it as a more distinct CSS/self-made/generated scene and document the reason.
@@ -693,7 +693,7 @@ If a scene base is a flat gradient or empty color, render should treat it as a d
 Apply next time:
 - replace any gradient/empty scene base with a real descriptive image that matches the voice beat
 - verify brand-free/people-free on the actual pixels; keep photos clean (no gray wash); record creator/license in `ATTRIBUTION.md`
-- `object-fit: cover` from a frame-width source only crops vertically — pick a different image if a side-edge element must go
+- `object-fit: cover` from a frame-width source only crops vertically - pick a different image if a side-edge element must go
 
 Promote to shared memory:
 no; the upstream prevention lives in `visual-plan/SKILL.md` (Real Scene Base Rule + sourcing recipe). Keep render-side enforcement here.
@@ -703,10 +703,10 @@ no; the upstream prevention lives in `visual-plan/SKILL.md` (Real Scene Base Rul
 Classification: `Render lesson`
 
 Context:
-Sections 4 and 7 of `why-cheap-products-keep-getting-worse` were first built with estimated cue timing because no `word-timings.json` existed and `hyperframes transcribe` needs whisper-cpp (not installed; no Python/faster-whisper either). The estimates drifted badly — for Section 4 the voice rattled the parts list out ~4s earlier than estimated (e.g. "a hinge" spoken at 5.66s but shown at 9.5s), so Anh Khoa reported "the text doesn't match the voice again." Generating real word timings and re-pinning every cut/reveal fixed it.
+Sections 4 and 7 of `why-cheap-products-keep-getting-worse` were first built with estimated cue timing because no `word-timings.json` existed and `hyperframes transcribe` needs whisper-cpp (not installed; no Python/faster-whisper either). The estimates drifted badly - for Section 4 the voice rattled the parts list out ~4s earlier than estimated (e.g. "a hinge" spoken at 5.66s but shown at 9.5s), so Anh Khoa reported "the text doesn't match the voice again." Generating real word timings and re-pinning every cut/reveal fixed it.
 
 Lesson:
-Estimating cue timing is unreliable and keeps producing "text doesn't match the voice" review hits. When a section lacks `word-timings.json`, generate it. Whisper via `transformers.js` (`@xenova/transformers@2.17.2`, `Xenova/whisper-tiny.en`) runs in WASM with NO native deps — it works on this Windows box where whisper-cpp/Python do not.
+Estimating cue timing is unreliable and keeps producing "text doesn't match the voice" review hits. When a section lacks `word-timings.json`, generate it. Whisper via `transformers.js` (`@xenova/transformers@2.17.2`, `Xenova/whisper-tiny.en`) runs in WASM with NO native deps - it works on this Windows box where whisper-cpp/Python do not.
 
 Apply next time:
 - `npm.cmd install --prefix %TEMP%/wiw-whisper --no-save @xenova/transformers@2.17.2`
@@ -725,7 +725,7 @@ Classification: `Operational lesson`
 Context:
 First render for `why-everyone-pretends-to-be-busy` Section 1. Generated
 `section-01-word-timings.json` with the documented transformers.js recipe (whisper-tiny.en, WASM).
-The first two runs threw `Error: Unsupported model type: whisper` — caused by an earlier
+The first two runs threw `Error: Unsupported model type: whisper` - caused by an earlier
 `ECONNRESET` that left a partial/corrupt model in the transformers.js cache. A third run (after
 the model finished downloading/caching) succeeded and produced clean monotonic word timings.
 The final two words ("a", "difference.") had a chunk-boundary timestamp glitch (jumped back to
@@ -740,7 +740,7 @@ chunk-boundary timestamp reset and clamp them to the section duration.
 Apply next time:
 - if `Unsupported model type` appears, retry the same node command (model finishes caching), don't change code
 - after generating, eyeball the JSON tail for non-monotonic/garbage timestamps and clamp to the audio duration
-- ESM ignores NODE_PATH — run the gen script from inside the `--prefix` dir where node_modules resolves
+- ESM ignores NODE_PATH - run the gen script from inside the `--prefix` dir where node_modules resolves
 
 Promote to shared memory:
 no; environment/tooling note for the render word-timings step.
@@ -762,7 +762,7 @@ swapping in more stock photos. Rebuild the scene bases as clean, bold **flat-ill
 scenes** that match the channel's actual identity (bold flat 2D illustration, not photoreal). A
 fully-drawn illustration (e.g. a calendar wall with header/weekday row/numbered cells packed with
 colored event chips; a desk room with notebook/pen/mug/plant) is a justified self-made descriptive
-base — it is NOT the "bare gradient" the hard-fail rule forbids. This is usually cleaner AND more
+base - it is NOT the "bare gradient" the hard-fail rule forbids. This is usually cleaner AND more
 on-brand than dingy stock. Keep cue timing/WIT unchanged; only swap the base layer.
 
 Apply next time:
@@ -781,7 +781,7 @@ Classification: `Core` (confirmed channel creative direction)
 
 Context:
 Section 4 was rebuilt with real app icons + an iPhone notification screen, an app-icon overload grid
-with red badges, and a Messenger-style chat — all built in CSS with real icon PNGs. The owner
+with red badges, and a Messenger-style chat - all built in CSS with real icon PNGs. The owner
 confirmed: "I love to use real illustrative like phone, app icons to describe the script like this."
 
 Lesson (render side):
@@ -792,7 +792,7 @@ red badges, chat conversations. Key mechanics learned:
   persists and clips to the phone/tiles; cue-clip elements vanish when the cue ends (broke continuity).
 - Position notification cards relative to the phone frame (not the 1920 frame) or they render full-width.
 - Put app-icon badges INSIDE each `.apptile` (corner), not at fixed composition coords (they misalign/stretch).
-- The 👍 emoji glyph does NOT render in the snapshot Chromium — use a thumbs-up PNG via `<img>`.
+- The 👍 emoji glyph does NOT render in the snapshot Chromium - use a thumbs-up PNG via `<img>`.
 - Real logos are used editorially (depict, not endorse); no private data / pixel-copied screenshots.
 
 Promote to shared memory: covered in `_shared/channel/brand-system.md` ("Real-UI Illustration"); keep the render build mechanics here.
@@ -801,9 +801,9 @@ Promote to shared memory: covered in `_shared/channel/brand-system.md` ("Real-UI
 
 Classification: `Render lesson` / `Operational lesson`
 
-Context: Section 5 ("Visible Work Beats Quiet Thinking") built four CSS real-UI surfaces — a Google
+Context: Section 5 ("Visible Work Beats Quiet Thinking") built four CSS real-UI surfaces - a Google
 Meet call grid, a survey poll card, a Trello Kanban board, and a Google Sheets spreadsheet on a
-theater stage — plus one CC wall photo. Lint/validate/snapshot all clean.
+theater stage - plus one CC wall photo. Lint/validate/snapshot all clean.
 
 Lesson:
 - Real-UI scope keeps widening per owner preference: Meet grids, Kanban boards, poll/survey cards,
@@ -821,7 +821,7 @@ Lesson:
 Apply next time: check `/api/projects` for the real id before recording preview URLs; expect to build
 calls/boards/sheets/polls as CSS real-UI; watch track-2 float sums for overlap.
 
-Promote to shared memory: no — render/operational mechanics; real-UI policy already in `brand-system.md`.
+Promote to shared memory: no - render/operational mechanics; real-UI policy already in `brand-system.md`.
 
 ### 2026-06-22 - Pure CSS-UI scenes feel flat; ground them on real desk photos
 
@@ -834,7 +834,7 @@ liked, but full-frame flat-gradient backgrounds read as synthetic slides.
 Lesson:
 - Real UI is loved, but a whole section of full-frame CSS UI on flat gradients feels like slides.
   Ground each digital scene in a REAL, people-free photo so the app reads as a real screen in a real
-  space — much livelier without losing the recognizable UI.
+  space - much livelier without losing the recognizable UI.
 - Pattern: `.deskphoto` (real photo, object-fit cover, slight darken filter) + radial `.deskscrim` +
   a floating `.screen` window (≈1500x846, rounded, big drop shadow) that holds the UI. The real desk
   shows around the window = environment/texture.
@@ -846,10 +846,10 @@ Lesson:
   CC0 StockSnap top-down desk FLAT-LAYS (coffee/notebook/laptop, ~960w) are reliably people-free and
   fine as darkened backdrops. Keep a clearly stylized scene (CSS theater) as a deliberate contrast.
 
-Apply next time: don't ship an all-CSS-UI section on flat gradients — float the UI on real
+Apply next time: don't ship an all-CSS-UI section on flat gradients - float the UI on real
 people-free desk/space photos for liveliness; vary the surface; verify no faces.
 
-Promote to shared memory: candidate — consider a short "ground real-UI on real photos" note in
+Promote to shared memory: candidate - consider a short "ground real-UI on real photos" note in
 `_shared/channel/brand-system.md` if this recurs across sections.
 
 ### 2026-06-22 - Whisper tail glitch: last sentence jumps BACKWARD (re-time monotonically)
@@ -859,7 +859,7 @@ Classification: `Operational lesson`
 Context:
 Section 7's generated `section-07-word-timings.json` had a clean body but the FINAL sentence
 ("…you are not lazy. You are just trapped in a calendar with Wi-Fi") had word timestamps that jumped
-BACKWARD to ~40s after a correct run to 43.56s — a whisper-tiny chunk-boundary artifact (the 30s
+BACKWARD to ~40s after a correct run to 43.56s - a whisper-tiny chunk-boundary artifact (the 30s
 chunk + 5s stride re-decoded the tail). Earlier sections showed the related tail-DUPLICATION variant.
 
 Lesson:
@@ -885,7 +885,7 @@ Section 7 used the established bottom-edge WIT peek at `bottom:-560/-600px` (wid
 Only the head was peeking; most of the body bled below the canvas, reading as cut/hidden.
 
 Lesson:
-For the bottom-edge WIT placement, `bottom:-540…-600px` pushes too much of the figure off-canvas —
+For the bottom-edge WIT placement, `bottom:-540…-600px` pushes too much of the figure off-canvas -
 head+shoulders only, looks broken. Anchor higher: `bottom ≈ -250…-320px` (trim width to ~640–880)
 so head + glasses + torso + arms sit inside the frame and only the legs crop. Keep WIT horizontally
 off to a side/corner so it clears labels; verify in a snapshot. This is the safer default going forward.
@@ -893,7 +893,7 @@ off to a side/corner so it clears labels; verify in a snapshot. This is the safe
 Apply next time:
 - default bottom-peek WIT to ~`-260px`, not ~`-560px`; show head→hips, crop legs only
 - re-check face/head/shoulders are well inside frame and not covering labels/evidence
-- the prior low anchor (S4–S6) may get the same complaint — raise on request
+- the prior low anchor (S4–S6) may get the same complaint - raise on request
 
 Promote to shared memory: no; render WIT-placement mechanic (pairs with the WIT safe-crop rule).
 
@@ -904,7 +904,7 @@ Classification: `Render lesson`
 Context:
 Right after the "WIT too low" fix, the owner said: "Make the WIT bigger, if the bigger wit cover
 content behind, you can re-arrange positions of other items." So the raised-but-medium WIT (width
-~640–880) was still not what they wanted — they want it BIG too.
+~640–880) was still not what they wanted - they want it BIG too.
 
 Lesson:
 The two WIT defaults combine into one rule: WIT is BIG (≈`1/3`–`1/2` frame) AND HIGH (head+torso inside
@@ -922,7 +922,7 @@ Apply next time:
 - snapshot a mid/late timestamp too, not just the WIT's entrance, to catch later labels colliding
 - now codified in `render/SKILL.md`, `visual-plan/SKILL.md`, and `_shared/systems/visual-production.md`
 
-Promote to shared memory: yes — done (WIT size+anchor rule added to `_shared/systems/visual-production.md`).
+Promote to shared memory: yes - done (WIT size+anchor rule added to `_shared/systems/visual-production.md`).
 
 ### 2026-06-23 - GSAP smash drops percentage translateX; center animated els via explicit left
 
@@ -944,7 +944,7 @@ Lesson:
   (left) and keep labels/pop-up on the opposite side; verify with a snapshot just AFTER the smash
   completes (e.g. 18.3s for a 17.9s stamp), since at the exact smash start opacity is still 0.
 - Duplicate-media lint warning: reusing one photo file in two scenes trips `duplicate_media_discovery_risk`
-  — give the second scene its own copy (`*-dim.jpg`) to keep lint 0/0.
+  - give the second scene its own copy (`*-dim.jpg`) to keep lint 0/0.
 
 Apply next time:
 - never put `translateX(±%)` on an element you also smash/scale; use explicit `left`
@@ -966,7 +966,7 @@ rectangle label boxes; WIT too small; and WIT always on the right with text alwa
 
 Build standard to apply to every section going forward:
 - BASES: vivid, on-topic, brand/people-free OBJECT photos that dramatize the line (coins/cash for money,
-  padlocks for locked/rent, a glowing screen, etc.) — not calm desks/hands. If clean topical photos are
+  padlocks for locked/rent, a glowing screen, etc.) - not calm desks/hands. If clean topical photos are
   scarce, use a strong concrete object + CSS real-UI. Grade per scene; keep scenes distinct.
 - IDEA DEVICES (vary per beat; NOT a repeated cream box): app-grid of colorful subscription tiles; a big
   kinetic NUMBER/counter; notification TOAST cards (icon + red "−$X.XX"); a free-trial COUNTDOWN that flips
@@ -974,26 +974,26 @@ Build standard to apply to every section going forward:
   Reserve the handwritten cream label for the occasional aside only.
 - WIT: GIANT (≈1/2 frame), the soul of each scene, with an EXPRESSIVE on-topic pose per beat
   (price-tag-suspicion, hidden-fee-panic, holding-phone-panic, trapped-by-app-screen, betrayed, empty-wallet…).
-  VARY WIT across scenes: side (left / center / right), scale, vertical anchor, and pose — never all-right.
+  VARY WIT across scenes: side (left / center / right), scale, vertical anchor, and pose - never all-right.
   Flip the text/UI to the side WIT is not using; rearrange items around WIT rather than shrinking it.
-  NOTE: `wit-pose-money-panic.png` has a baked BLACK background — do not use on photo scenes.
+  NOTE: current WIT poses ship on a flat green #00B140 screen - chroma-key the green out at render before compositing.
 
 Build mechanics that mattered (reuse these):
 - A full-screen "system" message reads best as a TOP BANNER (z above WIT), and HIDE the underlying
   toast/UI column when it takes over (otherwise the banner sits over the boxes = "text covering boxes").
-- Any element you scale/smash must be positioned with explicit left/top — GSAP scale drops percentage
+- Any element you scale/smash must be positioned with explicit left/top - GSAP scale drops percentage
   `translateX(-50%)` centering. `show()` (opacity-only) elements may keep `translateX(-50%)`.
-- No emoji glyphs in snapshot Chromium (⚠ etc. fail) — draw a CSS shape (e.g. a red "!" circle) instead.
+- No emoji glyphs in snapshot Chromium (⚠ etc. fail) - draw a CSS shape (e.g. a red "!" circle) instead.
 - Reuse one photo file across scenes only via separate filename copies (`-own/-rent/-lock`) to dodge the
   `duplicate_media_discovery_risk` lint warning.
 - Snapshot a beat just AFTER an impact (e.g. 18.3s for a 17.9s stamp), not on its `data-start` (opacity 0 there).
 - A reusable CSS kit now exists in `section-previews/section-01-hook/index.html` (tiles .g1-.g8, .toast,
-  .countdown, .modal banner, .lock padlock, .bignum counter, .payoff) — copy/adapt it for new sections.
+  .countdown, .modal banner, .lock padlock, .bignum counter, .payoff) - copy/adapt it for new sections.
 
 Apply next time: build new sections from the Section-1 CSS kit; vary WIT side/scale/pose per scene; vary
 the idea-device per beat; lint/validate 0 errors; snapshot every beat and check WIT-size + collisions.
 
-Promote to shared memory: yes — Core direction; add a short note to `_shared/systems/visual-production.md`.
+Promote to shared memory: yes - Core direction; add a short note to `_shared/systems/visual-production.md`.
 
 ### 2026-06-23 - Remake S2 to the S1 template; the smash helper ignores scaleX
 
@@ -1010,18 +1010,18 @@ lock-screen card, RENT tags, payoff; WIT facepalm R → thinking L → betrayed 
 Lesson:
 - When a section is "remade based on Section 1," treat the prior build as stale and rebuild to the
   template: a DISTINCT vivid object photo base per scene (a phone reused on a non-consecutive scene is OK
-  when the script intends "the same device shown two ways" — re-dress it heavily, separate filename to
+  when the script intends "the same device shown two ways" - re-dress it heavily, separate filename to
   dodge `duplicate_media_discovery_risk`), 2-3 varied idea-devices per beat instead of cream boxes, and a
   giant WIT whose side/scale/pose changes each scene. Cream `.aside` is for ≤2 short handwritten asides.
 - GOTCHA: the shared `reveal`/`smash` helper only maps `x/y/scale/opacity` to its end state. Feeding it
   `{scaleX:0}` animates nothing (it stays 0 → invisible). For a draw-on line (e.g. a strike crossing a
   banner), use an explicit `tl.set({scaleX:0}); tl.to({scaleX:1})` with `transform-origin:left center`,
   not `smash`. A silent invisible element can invert a message (an un-struck "ANTI-SUBSCRIPTION RANT"
-  banner reads as the opposite of the intent) — always snapshot-verify impact/draw beats.
+  banner reads as the opposite of the intent) - always snapshot-verify impact/draw beats.
 
 Apply next time:
 - rebuild remade sections to the template; one distinct vivid base per scene; vary the idea-device + WIT per scene
-- never pass `scaleX`/`scaleY`/`rotation` to the x/y/scale/opacity helper — write an explicit tween
+- never pass `scaleX`/`scaleY`/`rotation` to the x/y/scale/opacity helper - write an explicit tween
 - snapshot every impact beat; confirm draw-on/strike elements actually rendered
 
 Promote to shared memory:
@@ -1034,8 +1034,8 @@ Classification: `Render lesson`
 Context:
 `why-everything-is-a-subscription-now` Section 2 review (round 2). Even after WIT was built "big" at
 width 900–1000 (bottom:-300), the owner said "WIT too small, make it bigger or giant." Also flagged the
-BS1 base (a glowing phone against an aurora/night SKY) as "not suitable" — it read as a travel/landscape
-photo, not subscriptions — and two text-on-text overlaps (a red RENT stamp sitting on a struck OWN; a
+BS1 base (a glowing phone against an aurora/night SKY) as "not suitable" - it read as a travel/landscape
+photo, not subscriptions - and two text-on-text overlaps (a red RENT stamp sitting on a struck OWN; a
 payoff colliding with on-screen tags). Fixes: WIT widths → 1200–1300 (≈1/2+ frame) at bottom:-320;
 swapped BS1 to a phone-full-of-app-icons photo; un-stacked OWN/RENT vertically; hid the tag set when the
 payoff lands.
@@ -1050,7 +1050,7 @@ Lesson:
   spots (stack vertically), not overlap; (2) when a payoff lands over a field of tags/labels, HIDE the
   tags at the payoff beat (the S1 "hide the column when the banner takes over" pattern) so the payoff is clean.
 
-Apply next time: default WIT width ~1300; choose bases by topic-read; never overlap two text blocks — stack or hide.
+Apply next time: default WIT width ~1300; choose bases by topic-read; never overlap two text blocks - stack or hide.
 
 Promote to shared memory:
 no; the WIT big+high rule is already Core in `_shared/systems/visual-production.md`. This sharpens the
@@ -1069,17 +1069,18 @@ padlock + EXPIRED running-gag banner), and 4 giant WIT beats varied by side/pose
 shocked L → trapped-by-app-screen C → deadpan-side-eye R), with the cash scene breathing (no WIT).
 
 Lesson / reusables:
-- `wit-pose-typing-on-laptop.png` ALSO has a baked BLACK background (not transparent) — add it to the
-  `money-panic` avoid-list for photo scenes. Always VIEW a pose before first use; if it shows on black,
-  swap it (here → hidden-fee-panic). The known-transparent set so far: facepalm, thinking, betrayed,
+- (HISTORICAL - old `wit-pose-*` set, removed 2026-06-28.) That set had baked black backgrounds on some
+  poses, so the habit was: always VIEW a pose before first use. The current WIT poses ship on a flat green
+  #00B140 screen (rgb24) and are chroma-keyed at render; only `_origin_.png` is transparent. Keep the
+  VIEW-before-use habit. Former known-transparent set (legacy note): facepalm, thinking, betrayed,
   suspicious, shocked, trapped-by-app-screen, deadpan-side-eye, hidden-fee-panic, holding-phone-panic,
   price-tag-suspicion.
 - For a ~54s section, ~5 scenes at ~10s each reads well; when one idea-cluster would hold one base >15s
   (here the "five subs / cable / dungeon" stretch), SPLIT it onto a second on-topic base (a jail corridor
-  for "five smaller dungeons") rather than riding one base — matches the owner's "fresh base every ~6-10s."
+  for "five smaller dungeons") rather than riding one base - matches the owner's "fresh base every ~6-10s."
 - Brand-cover technique: when the only good modern base carries a small logo (a "Blaupunkt" car head unit),
   keep it but COVER the logo in the final frame with a CSS panel + the giant side WIT; classify it a mockup target.
-- Generate word timings when missing (whisper-tiny.en) — Section 3 had none; pinned every cue to real word starts.
+- Generate word timings when missing (whisper-tiny.en) - Section 3 had none; pinned every cue to real word starts.
 
 Promote to shared memory:
 no; template is already Core. The typing-on-laptop black-bg fact is a concrete asset gotcha for render/visual-plan.
@@ -1102,32 +1103,32 @@ Reusable lessons:
   the same machine warm-graded + coin geyser = "now they pay monthly" (BS3). When you reuse a base file in two
   scenes you MUST give the 2nd scene its own filename copy (`base-coffee-machine.jpg`, `base-cash-lot.jpg`) or
   `duplicate_media_discovery_risk` fires. (Both before/after-adjacent and non-consecutive reuse need this.)
-- A centered kinetic word (`RECURRING`) and a centered WIT collide — put the WIT on one half and ALL the
+- A centered kinetic word (`RECURRING`) and a centered WIT collide - put the WIT on one half and ALL the
   text/marks on the other half (here WIT left, word+calendar-rings+label right). Cleaner than nudging z-index.
 - Verified-transparent poses (safe on photos): sleeping-burned-out, empty-wallet, confused (+ the earlier list).
-  Still AVOID `typing-on-laptop` and `money-panic` (baked black bg) — both now flagged in the SKILL files.
+  Still AVOID `typing-on-laptop` and `money-panic` (baked black bg) - both now flagged in the SKILL files.
 - Whisper word-timings can jump BACKWARD mid-line at a chunk boundary (S4's "worth a little / pays every
-  month" re-emitted ~24–26s). Don't trust the glitched run — pin cues to the CLEAN word starts around it.
+  month" re-emitted ~24–26s). Don't trust the glitched run - pin cues to the CLEAN word starts around it.
 
 Promote to shared memory:
 no; template is Core. These are concrete render idea-device + asset + timing mechanics.
 
-### 2026-06-23 - Red rings over a photo circle nothing — use a meaningful device instead
+### 2026-06-23 - Red rings over a photo circle nothing - use a meaningful device instead
 
 Classification: `Render lesson`
 
 Context:
 S4 (`why-everything-is-a-subscription-now`) BS5 used 4 red CSS rings on the calendar photo to suggest
-"recurring charges." Reviewer: "the circles don't circle anything — I don't know what they're on." The
+"recurring charges." Reviewer: "the circles don't circle anything - I don't know what they're on." The
 rings sat over blurry "Novembre" grid text, aligned to no actual date.
 
 Lesson:
 A red ring/circle/arrow on a PHOTO base only works if it lands exactly on a real, legible target in that
 photo (a specific date number, a button, an object). Over a soft/typographic/blurred photo it reads as
-decoration pointing at nothing — the classic meaningless-markup failure. When you can't guarantee a precise
+decoration pointing at nothing - the classic meaningless-markup failure. When you can't guarantee a precise
 target, drop the markup and SHOW the idea with a built device instead. Here the fix was an `AUTO-PAY · the
 same charge, every month` statement card with identical `−$9.99` rows (Jan/Feb/Mar/Apr) popping one-per-beat
-— it demonstrates "recurring" far more clearly than circles ever could, and it's real-UI (owner-preferred).
+- it demonstrates "recurring" far more clearly than circles ever could, and it's real-UI (owner-preferred).
 
 Apply next time:
 - only place a circle/arrow when it aligns to a specific readable target verified in the snapshot
@@ -1142,7 +1143,7 @@ no; reinforces the existing "markup must target a real object" rule with a concr
 Classification: `Render lesson`
 
 Context:
-`why-everything-is-a-subscription-now` Section 5 ("The Free Trial Is A Countdown", 53.9s) — the most
+`why-everything-is-a-subscription-now` Section 5 ("The Free Trial Is A Countdown", 53.9s) - the most
 real-UI-heavy section. Built to template with 5 distinct vivid bases (blank phone → keyboard desk →
 HOURGLASS → blank phone → wallet → piggy) and CSS real-UI per beat (FREE splash, credit card, FREE-TRIAL
 00:00 → $2.99/mo flip, Day-7 reminder that fades, translucent ghost charges, a bank statement). 4 giant
@@ -1150,17 +1151,17 @@ WIT beats. Sourcing was very flaky (Openverse empty on card/desk/calendar/statem
 
 Reusable lessons:
 - For UI-heavy sections, satisfy "real photo base + real-UI" two ways: (1) a "Hand holding smartphone with
-  BLANK WHITE SCREEN" photo (Wikimedia) is the perfect CSS-UI canvas — float the app screen on it; (2) pick
-  a literal OBJECT for the concept instead of forcing a phone every time — an HOURGLASS for "the free trial
+  BLANK WHITE SCREEN" photo (Wikimedia) is the perfect CSS-UI canvas - float the app screen on it; (2) pick
+  a literal OBJECT for the concept instead of forcing a phone every time - an HOURGLASS for "the free trial
   is a COUNTDOWN" is far better than another phone, and keeps bases distinct.
 - The earlier S4 "rings circle nothing" lesson, applied forward: here the one red ring rings a row in a CSS
   bank statement *I control*, so it lands exactly on the `?? UNKNOWN −$3.00` row. A ring on a CSS element is
-  safe/meaningful; a ring on a photo is not. NOTE: estimating the row's Y from CSS padding was off by a row —
+  safe/meaningful; a ring on a photo is not. NOTE: estimating the row's Y from CSS padding was off by a row -
   it took 2 snapshot nudges to align; always snapshot-verify a ring's target row.
 - When sourcing is blocked, lean into the owner's real-UI love: build the card/statement/flip/notification in
   CSS rather than chasing stock photos of them. Reject person-in-frame card photos (no-face), Apple flat-lays,
   ID-cards-with-faces, and cutout-illustrations-on-white.
-- Don't plan emoji (👻/👍) — render a CSS shape/card instead (emoji fail in snapshot Chromium).
+- Don't plan emoji (👻/👍) - render a CSS shape/card instead (emoji fail in snapshot Chromium).
 
 Promote to shared memory:
 no; template is Core. Concrete render mechanics (blank-phone canvas, object-per-concept, ring-on-CSS-row).
@@ -1170,7 +1171,7 @@ no; template is Core. Concrete render mechanics (blank-phone canvas, object-per-
 Classification: `Render lesson`
 
 Context:
-S5 review. Owner: "0:00 and 0:23 the illustrative images is white screen phone — this phone doesn't match
+S5 review. Owner: "0:00 and 0:23 the illustrative images is white screen phone - this phone doesn't match
 the scene and script… use 2 images instead of reuse the same image for 2 scenes." I'd used the same
 blank-white-screen phone (the CSS-UI canvas) as the base for BS1 ("make it feel free") and BS4 ("they
 forget"). Fixed: BS1 → a pink GIFT box (free = a gift/lure); BS4 → an everyday DESK (notebook + coffee =
@@ -1178,12 +1179,12 @@ a loud, busy life where the reminder is lost). All 6 bases now distinct.
 
 Lesson:
 - A "hand holding a phone with a blank white screen" is great as a CSS-UI *canvas*, but as a visible BASE it
-  reads as an empty placeholder/mockup, not a scene — and it doesn't describe the line. Prefer a CONCRETE
+  reads as an empty placeholder/mockup, not a scene - and it doesn't describe the line. Prefer a CONCRETE
   metaphor object that depicts the beat: a gift box for "they make it feel free," an everyday desk/clutter
   for "you forget / life is loud," an hourglass for "countdown," a wallet for "drained account."
-- Reusing one base image for two scenes is a review failure even when non-adjacent — give every scene its
+- Reusing one base image for two scenes is a review failure even when non-adjacent - give every scene its
   own distinct base. (The earlier lint-driven "2nd filename" trick avoids the lint warning but NOT the
-  visual repetition the owner objects to — only use it for a genuine, intended callback.)
+  visual repetition the owner objects to - only use it for a genuine, intended callback.)
 - The CSS idea-devices (FREE splash, Day-7 reminder) are base-independent: swapping the photo base under
   them needed no device changes.
 
@@ -1195,20 +1196,20 @@ no; sharpens the existing "vivid object base per scene / no reuse" rule with the
 Classification: `Render lesson`
 
 Context:
-`why-everything-is-a-subscription-now` Section 6 ("Easy In, No Way Out", 53s) — the cancel-maze /
+`why-everything-is-a-subscription-now` Section 6 ("Easy In, No Way Out", 53s) - the cancel-maze /
 negative-option-billing section. Strong distinct bases: a STOPWATCH (time asymmetry), a wooden LABYRINTH
-game (the cancel ordeal — perfect for "vision quest / final boss / wandering the menus"), and a CONTRACT
+game (the cancel ordeal - perfect for "vision quest / final boss / wandering the menus"), and a CONTRACT
 (fine-print trick). Hero device: a 7-step CSS menu breadcrumb trail (account→settings→…→a phone number)
 winding through the maze, each chip popping on its spoken step.
 
 Reusable lessons:
-- For an abstract PROCESS section (cancelling), a literal MAZE/labyrinth photo is a great hero — the
+- For an abstract PROCESS section (cancelling), a literal MAZE/labyrinth photo is a great hero - the
   "menu steps" become a breadcrumb path through it, and a running-away WIT sells the ordeal. Keep the
   breadcrumb chips in the left 2/3 so a side WIT doesn't cover them.
 - Sourcing abstract tail beats ("the unfair burden / −1000 aura", "a part-time job with no salary") failed
   on the CC sources. When that happens, prefer a DELIBERATE darker-graded CALLBACK of the section's own
   controlling metaphor (here the maze returns for "−1000 aura, still lost"; the stopwatch returns for "an
-  unpaid part-time job") over a sterile/off-tone stock photo — distinguish it with a dark grade + different
+  unpaid part-time job") over a sterile/off-tone stock photo - distinguish it with a dark grade + different
   CSS device + different WIT + a 2nd filename, and flag it to the owner as swappable. This is the allowed
   "purposeful callback" exception, not the lazy-reuse the owner rejects.
 - Search-term traps to watch: "free labyrinth maze" surfaced a Holocaust memorial (off-tone); "white flag"
@@ -1223,14 +1224,14 @@ no; render execution mechanics (maze-as-process-hero, menu-breadcrumb device, ca
 Classification: `Render lesson`
 
 Context:
-`why-everything-is-a-subscription-now` Section 7 ("Payoff: The Product Is You Not Cancelling", 54s) — the
+`why-everything-is-a-subscription-now` Section 7 ("Payoff: The Product Is You Not Cancelling", 54s) - the
 closer. Built with 4 distinct bases (2 different money shots, a phone, a coin jar) + the phone reused ONCE
 non-adjacently for the script's literal final image (the bank-app salary screen). This completes all 7
 sections of the video (previewing on 1001–1007).
 
 Reusable lessons:
-- A payoff/closer can legitimately RECAP the video's core motif imagery (here money + the phone/device) —
-  that's a feature of a closer, not lazy reuse — but still use DISTINCT shots per scene (two different money
+- A payoff/closer can legitimately RECAP the video's core motif imagery (here money + the phone/device) -
+  that's a feature of a closer, not lazy reuse - but still use DISTINCT shots per scene (two different money
   photos, not the same one) and only reuse the device non-adjacently for a motivated beat. Resolve on the
   script's literal final image: the bank-app salary card ("the one screen not asking for money") + the dry
   "your salary. for now." was the satisfying, on-script close.
@@ -1250,7 +1251,7 @@ Classification: `Render lesson`
 Context:
 On `why-buy-1-get-1-beats-50-off` Section 3, the first render used plain bases (dark wood table, white
 veg basket) + all-CSS receipt cards + ~780px WIT. Owner rejected it: "backgrounds too simple, WIT too
-small, texts/items too simple — follow subscription-now style, remake completely." Accepted remake:
+small, texts/items too simple - follow subscription-now style, remake completely." Accepted remake:
 5 vivid dark-graded money/coins/curtain bases, a giant kinetic number hero ($5 → red $10), popping
 stamps/toast/banner, a 230px glowing FREE payoff, and GIANT WIT (~1120–1200px) varied per scene.
 
@@ -1258,7 +1259,7 @@ Lesson:
 For this owner, the `why-everything-is-a-subscription-now` S1 vivid-hook template is the DEFAULT for
 every section, not an option. Apply up front, don't wait for rejection: (1) vivid object base per scene
 with a DARK dramatic grade (brightness ~0.42–0.55, high saturation) + heavy scrim/glow; (2) a varied
-KINETIC hero device per beat (giant number/counter, popping toasts, banner takeover, glowing payoff) —
+KINETIC hero device per beat (giant number/counter, popping toasts, banner takeover, glowing payoff) -
 plain label/receipt cards only as small supporting strips; (3) WIT GIANT (~1120–1300px, ~1/2 frame),
 varied side/scale/pose per scene; (4) ~5 scenes for a ~30s section with lots of pop/smash motion.
 Money/coins/cash/curtain bases reused across sections (distinct grades) are fine and on-brand.
@@ -1270,7 +1271,7 @@ Apply next time:
 
 Promote to shared memory:
 no; the template already lives in `_shared/systems/visual-production.md` + visual-plan memory. This
-confirms it is the per-section DEFAULT for this owner — apply by default, not as a special case.
+confirms it is the per-section DEFAULT for this owner - apply by default, not as a special case.
 
 ### 2026-06-24 - CSS class collision can shrink a scene base (name photo grades uniquely)
 
@@ -1286,7 +1287,7 @@ image rendered shrunk into a ~520px box with the rest of the frame black. The ow
 
 Lesson:
 Never reuse a device/component class name (`.calc`, `.cd`, `.toast`, `.chip`, `.tag`, etc.) as a
-`.photo.<x>` base-grade modifier in the same composition — the device CSS (width/position/background)
+`.photo.<x>` base-grade modifier in the same composition - the device CSS (width/position/background)
 will clobber the full-frame `.photo` rule and break or shrink the base. Keep photo-grade modifiers in
 their own namespace (e.g. `.photo.bgCalc`, `.photo.abak`) distinct from every device class.
 
@@ -1294,8 +1295,8 @@ Apply next time:
 - when adding a `.photo.<x>` grade class, grep the file's CSS for an existing `.<x>` rule first; if it
   exists as a device, pick a different grade name.
 - a base that renders as a narrow strip / partially black is the signature of this collision (or a
-  bad src) — check the class names before re-sourcing the image.
-- lint/validate do NOT catch this (it's valid CSS) — only the snapshot shows it; always eyeball each
+  bad src) - check the class names before re-sourcing the image.
+- lint/validate do NOT catch this (it's valid CSS) - only the snapshot shows it; always eyeball each
   scene's base in the contact sheet.
 
 Promote to shared memory:

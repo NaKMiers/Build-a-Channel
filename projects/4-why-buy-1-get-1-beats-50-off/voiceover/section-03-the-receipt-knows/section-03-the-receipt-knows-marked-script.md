@@ -1,11 +1,11 @@
-# Section 3 — Marked Script
+# Section 3 - Marked Script
 
 Video: `Why Buy 1 Get 1 Free Beats 50% Off`
 Section: `Section 3: The Receipt Knows`
 Voice: `David23 / am_eric / 0.82 / en-us`
 
 Markup is for human reading only. HyperFrames Kokoro strips tags and ignores commas/line breaks
-for timing — real pacing lives in `tts-inputs/section-03-the-receipt-knows-tts.txt` via
+for timing - real pacing lives in `tts-inputs/section-03-the-receipt-knows-tts.txt` via
 `...`, `.`, and `. .`.
 
 ```text
@@ -23,9 +23,9 @@ If you only wanted one, half price was the better deal. You walked right past it
 ```
 
 Delivery intent:
-- The spend contrast is the clarity job: "$5" (50% off) vs "$10" (BOGO) — let "five" and "the full
+- The spend contrast is the clarity job: "$5" (50% off) vs "$10" (BOGO) - let "five" and "the full
   ten" land as clear, separated numbers so the doubling is heard, not skimmed.
-- "You spent twice as much. In one trip." — short, punchy `. .` reset lines; hold before "And you
+- "You spent twice as much. In one trip." - short, punchy `. .` reset lines; hold before "And you
   carried home a second one you did not need" (the cost lands).
 - "smaller price" vs "bigger basket" = the clean parallel; let each land on its own beat.
 - Ends handing into Section 4: "the magic word" gets a small lift so the next section picks it up.

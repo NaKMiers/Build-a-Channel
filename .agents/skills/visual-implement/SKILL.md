@@ -1,6 +1,6 @@
 ---
 name: visual-implement
-description: Run step 4.5 of the Why It Works workflow — turn a completed visual plan into actual assets. Use when the user asks to implement the visual plan, create the assets, generate the scene images, build the assets folder, prep assets for render, or run visual-implement. It reads each scene's ASSET list in the section visual plan and, per asset, EITHER writes a detailed image-generation prompt and creates an isolated element (generate), OR browses for a license-safe real photo / captures a real public screenshot (browse), OR copies a pose from the library, and it REUSES any asset already produced (by filename) instead of recreating it. All assets are saved as isolated elements (transparent/plain background, never a pre-composed scene) into the project assets/ library, tracked in assets/asset-manifest.md with prompt/source/license/status. Requires a completed 04-visual-plan.md and the selected section's visual-plan folder; requires one project and an explicit section selection with All first. Runs after visual-plan and before render.
+description: Run step 4.5 of the Why It Works workflow - turn a completed visual plan into actual assets. Use when the user asks to implement the visual plan, create the assets, generate the scene images, build the assets folder, prep assets for render, or run visual-implement. It reads each scene's ASSET list in the section visual plan and, per asset, EITHER writes a detailed image-generation prompt and creates an isolated element (generate), OR browses for a license-safe real photo / captures a real public screenshot (browse), OR copies a pose from the library, and it REUSES any asset already produced (by filename) instead of recreating it. All assets are saved as isolated elements (transparent/plain background, never a pre-composed scene) into the project assets/ library, tracked in assets/asset-manifest.md with prompt/source/license/status. Requires a completed 04-visual-plan.md and the selected section's visual-plan folder; requires one project and an explicit section selection with All first. Runs after visual-plan and before render.
 ---
 
 # Visual Implement
@@ -12,8 +12,8 @@ Run step `4.5` of the `Why It Works` video workflow.
 Take the scenes described by `visual-plan` and **produce the actual assets** so that `render` only has
 to composite them. This skill is the bridge between description and pixels.
 
-Core idea (do not break it): assets are **isolated elements** — one character, one object, one UI card,
-on a transparent/plain background — created or fetched **once per filename and reused everywhere**.
+Core idea (do not break it): assets are **isolated elements** - one character, one object, one UI card,
+on a transparent/plain background - created or fetched **once per filename and reused everywhere**.
 Never generate a full pre-composed scene, because a recurring subject would look different every time.
 Reuse keeps every character identical across scenes; `render` composites the isolated assets into each
 scene's layout.
@@ -42,7 +42,7 @@ Write or update:
 
 If `04-visual-plan.md` or the selected section plan is missing, empty, or stale, stop and tell the user
 to run/rerun `visual-plan` first. When this skill creates/updates assets for a section, that section's
-`render` output becomes stale — list it.
+`render` output becomes stale - list it.
 
 ## Required Context
 
@@ -58,7 +58,7 @@ Read before implementing:
 8. `.agents/_shared/channel/brand-system.md`
 9. `.agents/_shared/systems/visual-production.md`
 10. `references/memory.md`
-11. the mascot pose library: `.agents/_shared/assets/wit/poses/` (+ `analysis/vuive poses/pose.md` when present)
+11. the mascot pose library: `.agents/_shared/assets/wit/poses/` (catalog `pose.md`; `_origin_.png` = canonical neutral identity; poses are green-screen #00B140, key out at render)
 12. the chosen project's `04-visual-plan.md` and the selected section visual-plan file(s)
 
 ## Gates
@@ -76,7 +76,7 @@ Choose visual-implement target:
 
 ## Asset Style Contract (for every produced asset)
 
-- **Isolated element**, transparent or plain background — never a full composed scene.
+- **Isolated element**, transparent or plain background - never a full composed scene.
 - **Channel flat-cartoon style** for drawn assets: thick uniform black outline, flat fills, matching
   the mascot. When a generated asset must match the mascot character, attach/reference the relevant
   pose file from the library so style/proportions stay consistent.
@@ -103,12 +103,22 @@ project WIT folder) into `projects/<slug>/assets/poses/<filename>`. If the plan 
 when useful, also copy it back into the pose library so future videos can reuse it.
 
 ### `generate`
-1. Write a **detailed image-generation prompt** from the plan's description. The prompt must specify:
-   isolated single element, transparent/plain background, channel flat-cartoon style + thick black
-   outline (for mascot/caricature assets), exact subject details, framing (full upper body / object
-   only), and "no background scene, no extra elements". For a caricature of a real public figure,
-   phrase it as an obvious parody caricature (and provide a name-free fallback description in case the
-   image tool refuses a named figure).
+1. Write a **fully self-contained, detailed image-generation prompt**. The owner generates images by
+   pasting the prompt into **ChatGPT, which has NO project context** - so the prompt must stand alone,
+   never reference the plan/project/"the channel" implicitly, and never be terse. Each prompt MUST
+   specify, explicitly: art style (flat 2D cartoon, thick uniform black outline, flat fills - for drawn
+   assets), exact subject + details, composition/framing, background (transparent for cutouts / plain
+   for objects), and a clear **"do NOT include"** list (no text, no logos/brands, no extra elements,
+   no readable faces for no-face scenes). Photoreal assets say "photorealistic … no text, no logos".
+   - **Reference attachments - always state them.** Every generate prompt must begin with an
+     `Attach:` line naming exactly which reference image(s) the owner should attach in ChatGPT (or
+     `Attach: none`). For ANY mascot/character/pose asset, the owner attaches the **mascot neutral
+     pose**, so the prompt must say `Attach: the mascot neutral pose` AND instruct: "use the attached
+     character as the EXACT reference for identity, proportions, line weight, and color; draw the SAME
+     mascot in <new pose> … keep glasses/head shape/outline identical." This is how a new pose stays on-model.
+   - For a caricature of a real public figure: obvious parody caricature + a name-free fallback
+     description in case the tool refuses a named figure.
+   - Record the full prompt (and its `Attach:` line) in `asset-manifest.md`.
 2. Produce the image:
    - If an image-generation capability is connected, generate it and save to
      `projects/<slug>/assets/<filename>`.
@@ -120,7 +130,7 @@ when useful, also copy it back into the pose library so future videos can reuse 
 
 ### `browse-real-photo`
 Use the project-local `/browse` skill to find a **license-safe** real photo (Openverse CC0/CC, or
-Wikimedia Commons / public-domain — e.g. official government portraits are PD). Verify the actual
+Wikimedia Commons / public-domain - e.g. official government portraits are PD). Verify the actual
 pixels (brand-free / people-appropriate per the scene), download to `assets/<filename>`, and record
 source URL + creator + license in `ATTRIBUTION.md`. If the only safe option is risky for mockery,
 fall back to a `generate` caricature and note the switch.

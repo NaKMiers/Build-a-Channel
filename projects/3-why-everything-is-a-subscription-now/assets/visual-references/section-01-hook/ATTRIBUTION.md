@@ -1,4 +1,4 @@
-# Section 1 Visual References — Attribution (REMADE 2026-06-23)
+# Section 1 Visual References - Attribution (REMADE 2026-06-23)
 
 Section 1 was remade after review (original stock photos rejected as mundane/boring; WIT poses and
 repeated cream label boxes rejected). New bases are vivid, on-topic, brand/people-free, sourced via
@@ -12,8 +12,8 @@ Openverse and viewed before selection.
 
 ## Rejected in the remake (removed from active folder)
 
-- base-phone-blank-inhand.jpg (two phones in a sunny park) — mundane/boring per review
-- base-desk-devices.jpg / -dim.jpg (dim home-office desk) — mundane/boring per review
-- insp-gear-flatlay.jpg, insp-phone-instagram.jpg — brand/app-content (were inspiration only)
+- base-phone-blank-inhand.jpg (two phones in a sunny park) - mundane/boring per review
+- base-desk-devices.jpg / -dim.jpg (dim home-office desk) - mundane/boring per review
+- insp-gear-flatlay.jpg, insp-phone-instagram.jpg - brand/app-content (were inspiration only)
 
 CC0 needs no attribution; CC BY photographers credited above; kept for traceability.

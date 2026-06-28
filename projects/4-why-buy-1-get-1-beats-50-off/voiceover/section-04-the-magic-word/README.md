@@ -15,7 +15,7 @@ Status:
 - speed: `0.82` (unified video speed, matching Sections 1-3)
 - language: `en-us`
 - tone: young, clear, lightly dry, learner-friendly; the "free switches off your math" reveal, soft Ariely cite, hostage punchline
-- learner clarity notes: the number-vs-feeling contrast is the core — ""Fifty percent off" is a number / your brain checks numbers" vs ""Free" is a feeling / your brain yells yes and grabs." Build as a clean A-vs-B parallel with a reset between halves. Dry hold on "a little stupid." Hold before the "hostage" payoff.
+- learner clarity notes: the number-vs-feeling contrast is the core - ""Fifty percent off" is a number / your brain checks numbers" vs ""Free" is a feeling / your brain yells yes and grabs." Build as a clean A-vs-B parallel with a reset between halves. Dry hold on "a little stupid." Hold before the "hostage" payoff.
 
 ## Pacing
 

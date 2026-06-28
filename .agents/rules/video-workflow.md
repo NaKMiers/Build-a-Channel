@@ -41,13 +41,13 @@ TopicIntake -> ResearchPack -> ScriptDraft -> Voiceover -> VisualPlan -> VisualI
 
 The visual pipeline is split into three jobs with clean responsibilities:
 
-- `visual-plan` — **describes** every scene in extreme detail and lists the ASSETS each scene needs
+- `visual-plan` - **describes** every scene in extreme detail and lists the ASSETS each scene needs
   (type, filename, layout). It does NOT write image-generation prompts and does NOT create images.
-- `visual-implement` — **creates the assets**: for each `generate` asset it writes the detailed
+- `visual-implement` - **creates the assets**: for each `generate` asset it writes the detailed
   image prompt and generates an isolated element (transparent/plain background); for each `browse`
   asset it finds a license-safe real photo / captures a real screenshot; it reuses any asset already
   produced (by filename) and never recreates it. All assets land in the project `assets/` library.
-- `render` — **composites** the mascot + the pre-made assets from `assets/` into each scene's layout
+- `render` - **composites** the mascot + the pre-made assets from `assets/` into each scene's layout
   (HyperFrames). It pulls assets by the filenames the plan specified; it does not re-source images
   unless an asset is genuinely missing (documented fallback).
 

@@ -1,6 +1,6 @@
 # Combine Skill Memory
 
-Memory for the `combine` skill — assembling all completed section renders of one project into a unified preview on `localhost:1000`.
+Memory for the `combine` skill - assembling all completed section renders of one project into a unified preview on `localhost:1000`.
 
 Use this file for assembly mechanics, HyperFrames mounting/asset-resolution behavior, combined-audio handling, and recurring gotchas. Use `.agents/_shared/` only for channel-wide lessons.
 
@@ -20,14 +20,14 @@ Use this file for assembly mechanics, HyperFrames mounting/asset-resolution beha
 - Mount sections with `<div class="clip" data-composition-id="mount-sN" data-composition-src="compositions/section-XX.html" data-start=<offset> data-duration=<actual mp3 dur> data-track-index=N>`. Unique track per section avoids same-track overlap lint; `.clip` keeps only the active one visible.
 - Parent needs `window.__timelines["<parent id>"] = gsap.timeline({paused:true})` (load GSAP) or lint flags `missing_timeline_registry`. Each host needs `data-composition-id` (else `host_missing_composition_id`).
 - ASSET RESOLUTION IS PROJECT-ROOT-RELATIVE: a mounted sub-comp's `./assets/...` and `./*.mp3` resolve against the parent `index.html` location, not the sub-comp's folder. Put consolidated `assets/` and `combined-voiceover.mp3` at `full-video/` ROOT. (First attempt put them under `compositions/` → `audio_src_not_found`; moving to root fixed it.)
-- Copy ALL WIT poses from the project `assets/wit/` into `full-video/assets/wit/` — remade sections introduce poses the older mirror's wit folder lacked (e.g. awkward-celebration, confused, money-panic, thinking, betrayed). Missing poses = blank WIT.
+- Copy ALL WIT poses from the project `assets/wit/` into `full-video/assets/wit/` - remade sections introduce poses the older mirror's wit folder lacked (e.g. awkward-celebration, confused, money-panic, thinking, betrayed). Missing poses = blank WIT.
 
 ## Combined Voiceover
 
 - Strip each section's `<audio>` from its `compositions/section-XX.html`. The "messy / overlapping" voice bug was 8 per-section audios all playing; the fix is one combined track + silent section visuals.
 - Concatenate the section mp3s in order with `ffmpeg -f concat -safe 0 -i list -c copy combined-voiceover.mp3` (stream copy preserves exact section boundaries, so each section's voice starts exactly at its mount offset).
 - Offsets = cumulative ACTUAL mp3 durations (ffprobe each). Real mp3s run ~0.05s longer than the documented voiceover durations; using documented values drifts ~0.4s by the last section.
-- ffmpeg/ffprobe are not on PATH here — install static binaries to temp: `npm.cmd install --prefix %TEMP%/wiw-ffmpeg-static --no-save ffmpeg-static ffprobe-static`.
+- ffmpeg/ffprobe are not on PATH here - install static binaries to temp: `npm.cmd install --prefix %TEMP%/wiw-ffmpeg-static --no-save ffmpeg-static ffprobe-static`.
 - If a section's render is later changed, re-copy it (audio-stripped) and refresh assets; only regenerate `combined-voiceover.mp3` + offsets if that section's AUDIO changed (visual/cue-timing edits don't change the audio).
 
 ## Self-Check That Caught Real Issues
@@ -38,7 +38,7 @@ Use this file for assembly mechanics, HyperFrames mounting/asset-resolution beha
 
 Watch `data-start + data-duration` overflowing the next offset by ~1e-15 → `overlapping_clips_same_track`. Trim a hundredth of a second when it triggers (e.g. section host or a cue duration `7.38 -> 7.37`).
 
-### 2026-06-22 - The review mirror can lag the live section file — source/refresh from live
+### 2026-06-22 - The review mirror can lag the live section file - source/refresh from live
 
 Classification: `Operational lesson`
 
@@ -56,14 +56,14 @@ compositions directly from `section-previews`). Then build `compositions/section
 current file (audio stripped). Cheap one-liner: `diff -q live mirror` per section.
 
 Audio note: if only visuals/WIT/layout changed (no voiceover regenerated), the section mp3 durations
-are unchanged — keep the existing `combined-voiceover.mp3` and offsets; only re-copy the compositions
+are unchanged - keep the existing `combined-voiceover.mp3` and offsets; only re-copy the compositions
 and re-consolidate assets. Regenerate the combined audio only when a section's AUDIO actually changed.
 
 Apply next time:
 - diff live vs mirror for all sections at the start of combine; refresh stale mirrors from live
 - prefer the live `section-previews` file as the composition source when in doubt
 - keep combined audio/offsets if no audio changed; just refresh comps + assets
-- watch for zombie `chrome-headless-shell` processes after many snapshots — they exhaust memory and
+- watch for zombie `chrome-headless-shell` processes after many snapshots - they exhaust memory and
   make `snapshot` hit "Navigation timeout"; kill them (`Stop-Process`) and retry
 
 Promote to shared memory:

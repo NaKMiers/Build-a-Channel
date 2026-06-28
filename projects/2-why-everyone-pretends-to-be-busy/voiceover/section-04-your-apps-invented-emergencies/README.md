@@ -27,7 +27,7 @@ Keep one useful MP3 preview file only unless a renderer requires another format.
 
 - File: `scratch-audio/section-04-your-apps-invented-emergencies-david23-am_eric-0.86.mp3`
 - Duration: `42.133s`
-- Use: `approved voice, 0.86 per-section pace — production preview`
+- Use: `approved voice, 0.86 per-section pace - production preview`
 - Tool: `hyperframes@0.6.76 tts` (Kokoro)
 - Caveat: Section 4 runs at 0.86 vs sections 1-3 at 0.84. If you want a uniform video, match the others to 0.86. Earlier 0.84 (43.072s) and 0.88 (41.685s) takes were removed.
 

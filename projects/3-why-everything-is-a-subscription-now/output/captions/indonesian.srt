@@ -16,7 +16,7 @@ Selalu lebih banyak.
 
 5
 00:00:07,220 --> 00:00:10,040
-Saat ini, uang diam-diam keluar dari rekeningmu setiap bulan —
+Saat ini, uang diam-diam keluar dari rekeningmu setiap bulan -
 
 6
 00:00:10,040 --> 00:00:11,740
@@ -44,7 +44,7 @@ Kamu menyewa seluruh hidupmu. Satu pembayaran demi satu pembayaran.
 
 12
 00:00:23,620 --> 00:00:26,660
-Nah — ini bukan video tentang betapa jahatnya langganan
+Nah - ini bukan video tentang betapa jahatnya langganan
 
 13
 00:00:26,660 --> 00:00:28,920
@@ -84,7 +84,7 @@ Bayar setiap bulan, layarnya menyala.
 
 22
 00:00:44,140 --> 00:00:46,920
-Telat bayar, dan perangkatmu sendiri melakukan ini —
+Telat bayar, dan perangkatmu sendiri melakukan ini -
 
 23
 00:00:46,920 --> 00:00:48,060
@@ -100,11 +100,11 @@ Jadi inilah pertanyaan sesungguhnya.
 
 26
 00:00:53,220 --> 00:00:56,420
-Bagaimana hampir semuanya — aplikasimu, acaramu, perangkat lunakmu,
+Bagaimana hampir semuanya - aplikasimu, acaramu, perangkat lunakmu,
 
 27
 00:00:56,420 --> 00:00:58,280
-bahkan tombol-tombol di dalam mobilmu —
+bahkan tombol-tombol di dalam mobilmu -
 
 28
 00:00:58,280 --> 00:01:01,820
@@ -140,7 +140,7 @@ Lalu layar-layarmu ikut meriah.
 
 36
 00:01:16,360 --> 00:01:17,780
-Musik, film, acara —
+Musik, film, acara -
 
 37
 00:01:17,780 --> 00:01:19,800
@@ -188,11 +188,11 @@ Dan itu tidak berhenti di layar.
 
 48
 00:01:44,740 --> 00:01:48,260
-Sebagian produsen mobil sudah mencoba menaruh kursi berpemanas —
+Sebagian produsen mobil sudah mencoba menaruh kursi berpemanas -
 
 49
 00:01:48,260 --> 00:01:50,840
-kursi yang sudah ada di mobil yang kamu beli —
+kursi yang sudah ada di mobil yang kamu beli -
 
 50
 00:01:50,840 --> 00:01:52,280
@@ -216,11 +216,11 @@ Bayangkan kamu menjual mesin kopi.
 
 55
 00:02:02,440 --> 00:02:05,380
-Kamu menjual satu, mengucapkan terima kasih, lalu menunggu —
+Kamu menjual satu, mengucapkan terima kasih, lalu menunggu -
 
 56
 00:02:05,380 --> 00:02:07,820
-mungkin bertahun-tahun — berharap orang itu kembali lagi.
+mungkin bertahun-tahun - berharap orang itu kembali lagi.
 
 57
 00:02:07,820 --> 00:02:10,820
@@ -248,7 +248,7 @@ Pelanggan yang membeli sekali bernilai sedikit.
 
 63
 00:02:20,380 --> 00:02:22,800
-Pelanggan yang membayar setiap bulan bernilai banyak —
+Pelanggan yang membayar setiap bulan bernilai banyak -
 
 64
 00:02:22,800 --> 00:02:24,820
@@ -300,7 +300,7 @@ Untuk menjeratmu, mereka membuatnya terasa gratis.
 
 76
 00:02:53,140 --> 00:02:56,240
-Cukup masukkan kartumu — kamu tahu, tanpa alasan apa pun.
+Cukup masukkan kartumu - kamu tahu, tanpa alasan apa pun.
 
 77
 00:02:56,240 --> 00:02:58,840
@@ -324,7 +324,7 @@ Dan kebanyakan orang tidak membatalkan di hari ketujuh. Mereka lupa.
 
 82
 00:03:11,020 --> 00:03:14,360
-Bukan karena ceroboh — karena lupa itu memang bagian dari desainnya.
+Bukan karena ceroboh - karena lupa itu memang bagian dari desainnya.
 
 83
 00:03:14,360 --> 00:03:17,320
@@ -340,7 +340,7 @@ Hantu, yang tinggal di rekening bankmu.
 
 86
 00:03:23,240 --> 00:03:26,360
-Tanpa bayar sewa. Yah — bukan tanpa bayar. Itulah masalahnya.
+Tanpa bayar sewa. Yah - bukan tanpa bayar. Itulah masalahnya.
 
 87
 00:03:26,360 --> 00:03:29,940
@@ -408,7 +408,7 @@ Ini bahkan ada namanya.
 
 103
 00:04:07,980 --> 00:04:10,220
-Ini disebut penagihan opsi negatif —
+Ini disebut penagihan opsi negatif -
 
 104
 00:04:10,220 --> 00:04:12,220
@@ -432,7 +432,7 @@ Jadi banyak orang akhirnya cuma... menyerah. Mereka terus membayar.
 
 109
 00:04:25,300 --> 00:04:29,500
-Bukan karena mereka menginginkannya — karena membatalkan terasa seperti kerja paruh waktu.
+Bukan karena mereka menginginkannya - karena membatalkan terasa seperti kerja paruh waktu.
 
 110
 00:04:29,500 --> 00:04:31,320
@@ -472,7 +472,7 @@ Produknya tidak pernah berupa barangnya.
 
 119
 00:04:50,400 --> 00:04:52,040
-Produknya adalah kamu — yang bertahan.
+Produknya adalah kamu - yang bertahan.
 
 120
 00:04:52,040 --> 00:04:56,020
@@ -488,7 +488,7 @@ Untuk tahu bahwa "kecil dan bulanan" itu sebuah desain, bukan kebetulan.
 
 123
 00:05:01,260 --> 00:05:04,260
-Jadi sesekali, ambillah ponsel yang selama ini menagihmu —
+Jadi sesekali, ambillah ponsel yang selama ini menagihmu -
 
 124
 00:05:04,260 --> 00:05:05,500

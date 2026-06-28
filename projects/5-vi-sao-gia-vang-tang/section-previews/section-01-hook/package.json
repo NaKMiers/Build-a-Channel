@@ -1,0 +1,10 @@
+{
+  "name": "vi-sao-gia-vang-tang-section-01",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx --yes hyperframes@0.6.76 preview",
+    "check": "npx --yes hyperframes@0.6.76 lint && npx --yes hyperframes@0.6.76 validate && npx --yes hyperframes@0.6.76 inspect --at 1.2,2.6,4.0,8.0,10.0,13.0,17.5,21.6,24.5,27.2,28.4",
+    "render": "npx --yes hyperframes@0.6.76 render"
+  }
+}

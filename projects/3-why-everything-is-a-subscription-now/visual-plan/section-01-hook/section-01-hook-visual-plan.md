@@ -7,7 +7,7 @@ Section:
 `Section 1: Hook: It's More Than You Think`
 
 Status:
-`remade after review — built + previewing on localhost:1001`
+`remade after review - built + previewing on localhost:1001`
 
 ## Why remade
 
@@ -33,7 +33,7 @@ You don't buy things anymore. You rent your whole life. One payment at a time.
 ## Visual Direction
 
 - 3 big scenes, vivid + kinetic; idea demonstrated by varied UI devices, not cream boxes
-- Real bases: coins (BS1), cash (BS2), padlocks (BS3) — money → draining → locked
+- Real bases: coins (BS1), cash (BS2), padlocks (BS3) - money → draining → locked
 - WIT path: price-tag-suspicion → hidden-fee-panic → holding-phone-panic → trapped-by-app-screen (4 beats)
 - Motion: tiles pop in waves; counter jumps; toasts pop; modal smashes; padlocks slam; payoff smashes
 
@@ -78,7 +78,7 @@ WIT density: 4 beats, ≤2/scene; `money-panic` avoided (baked black bg).
 - Composition `Section01Hook`, 1920x1080, 23.509s, port 1001
 - All cue reveals pinned to `section-01-word-timings.json`
 - Varied devices replace cream boxes: app grid, counter, toasts, countdown, modal, padlock wall, kinetic type
-- Modal positioned with explicit left/top (NOT translate centering — GSAP scale would drop it); no emoji glyphs (CSS `!` circle instead of ⚠)
+- Modal positioned with explicit left/top (NOT translate centering - GSAP scale would drop it); no emoji glyphs (CSS `!` circle instead of ⚠)
 - Payoff is a top banner clear of the trapped WIT
 - Checks: lint 0/0, validate 0 errors; snapshot QA at 1.2/5.9/8.6/13.2/18.2/21.2
 - Must not invent: bases, scene order, WIT poses, device text, timings, motion

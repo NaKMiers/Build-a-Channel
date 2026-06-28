@@ -6,7 +6,7 @@ description: Build or update step 5 section HyperFrames previews for a Why It Wo
 # Render (Claude wrapper)
 
 This is the Claude discovery wrapper for the **render** skill. The canonical
-definition — full purpose, workflow, output format, and self-improving memory — lives
+definition - full purpose, workflow, output format, and self-improving memory - lives
 under `.agents/` so Codex and Claude share one source of truth.
 
 When this skill runs:

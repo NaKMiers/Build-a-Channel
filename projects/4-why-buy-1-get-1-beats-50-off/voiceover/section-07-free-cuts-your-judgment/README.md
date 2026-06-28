@@ -15,7 +15,7 @@ Status:
 - speed: `0.82` (unified video speed, matching Sections 1-6)
 - language: `en-us`
 - tone: young, clear, lightly dry, learner-friendly; the payoff that lands the insight, stays fair, and ends on a warm cheeky sign-off
-- learner clarity notes: THE thesis line is "Fifty percent off cuts the price. Buy one, get one free cuts your judgment." — let "cuts your judgment" land, then the section's longest hold. Soft "shh... relax." "25% off in a costume" is the memorable stinger; hold before it. "Same shelf. Same product." is a staccato callback to the hook.
+- learner clarity notes: THE thesis line is "Fifty percent off cuts the price. Buy one, get one free cuts your judgment." - let "cuts your judgment" land, then the section's longest hold. Soft "shh... relax." "25% off in a costume" is the memorable stinger; hold before it. "Same shelf. Same product." is a staccato callback to the hook.
 
 ## Pacing
 

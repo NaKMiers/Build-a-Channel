@@ -14,8 +14,8 @@ Status:
 - voice: `David23 / am_eric`
 - speed: `0.82` (unified video speed, matching Sections 1-4)
 - language: `en-us`
-- tone: young, clear, lightly dry, learner-friendly; the sneakiest trick — anchoring — plus the deliberate-design close
-- learner clarity notes: the anchoring idea is the job — 50% off makes the thing "only really worth five bucks... cheap, forever" (heaviest, slowest hold) vs BOGO keeping "that proud ten-dollar price." Dry shrug on "eh, not really." Close lands the on-purpose design ("charge full for the first").
+- tone: young, clear, lightly dry, learner-friendly; the sneakiest trick - anchoring - plus the deliberate-design close
+- learner clarity notes: the anchoring idea is the job - 50% off makes the thing "only really worth five bucks... cheap, forever" (heaviest, slowest hold) vs BOGO keeping "that proud ten-dollar price." Dry shrug on "eh, not really." Close lands the on-purpose design ("charge full for the first").
 
 ## Pacing
 

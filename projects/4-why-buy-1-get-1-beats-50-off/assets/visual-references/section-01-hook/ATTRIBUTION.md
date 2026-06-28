@@ -1,15 +1,15 @@
-# Section 1 — Image Attribution
+# Section 1 - Image Attribution
 
 All bases were viewed (not picked by filename) and checked brand-free + people-free for direct use.
 
 | File | Use | Source | License | Attribution |
 | ---- | --- | ------ | ------- | ----------- |
-| `base-a-store-greengrocer.jpg` | Scene A base (a store selling products) — **active since 2026-06-24** | StockSnap "Vegetable Stall" (`KZ19NV9MVY`, via Openverse) | CC0 | none required |
-| `base-b-profit-coins.jpg` | Scene B base (store profit doubling — rising coin stacks) — **active since 2026-06-24** | rawpixel "Free coin image" (`sv235013`, via Openverse) | CC0 | none required |
-| `base-a-shopping-cart.jpg` | Scene A base — **replaced 2026-06-24, no longer referenced** (owner: cart image not suitable) | Wikimedia Commons `Shopping_Cart_Supermarket.jpg` (via Openverse) | CC0 | none required (public domain dedication) |
-| `base-b-cash-usd.jpg` | Scene B base — **replaced 2026-06-24, no longer referenced** (owner: cash pile not suitable) | rawpixel via Openverse (`sv155879`) | CC0 | none required |
+| `base-a-store-greengrocer.jpg` | Scene A base (a store selling products) - **active since 2026-06-24** | StockSnap "Vegetable Stall" (`KZ19NV9MVY`, via Openverse) | CC0 | none required |
+| `base-b-profit-coins.jpg` | Scene B base (store profit doubling - rising coin stacks) - **active since 2026-06-24** | rawpixel "Free coin image" (`sv235013`, via Openverse) | CC0 | none required |
+| `base-a-shopping-cart.jpg` | Scene A base - **replaced 2026-06-24, no longer referenced** (owner: cart image not suitable) | Wikimedia Commons `Shopping_Cart_Supermarket.jpg` (via Openverse) | CC0 | none required (public domain dedication) |
+| `base-b-cash-usd.jpg` | Scene B base - **replaced 2026-06-24, no longer referenced** (owner: cash pile not suitable) | rawpixel via Openverse (`sv155879`) | CC0 | none required |
 | `base-c-red-curtain.jpg` | Scene C base (magic-show backdrop) | Wikimedia Commons `Curtain-939464.jpg` (via Openverse) | CC0 | none required |
-| `base-c-magic-hat.jpg` | Scene C hero element (magic top hat + gloves + wand, no face) | Wikimedia Commons `Top-hat-red_01.jpg` | CC BY-SA 3.0 | "Magicianidris, CC BY-SA 3.0" — required in description/credits |
+| `base-c-magic-hat.jpg` | Scene C hero element (magic top hat + gloves + wand, no face) | Wikimedia Commons `Top-hat-red_01.jpg` | CC BY-SA 3.0 | "Magicianidris, CC BY-SA 3.0" - required in description/credits |
 | `alt-cash-euro.jpg` | Alt money base (fallback) | rawpixel via Openverse (`frmoney_euro_riches_finance`) | CC0 | none required |
 
 Notes:

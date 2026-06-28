@@ -1,4 +1,4 @@
-# Section 5 Visual References — Attribution (2026-06-23)
+# Section 5 Visual References - Attribution (2026-06-23)
 
 Built to the Section 1 standing template (most real-UI-heavy section). Sourced via Openverse / Wikimedia
 and viewed before selection. CC0 needs no attribution; kept for traceability.
@@ -14,7 +14,7 @@ and viewed before selection. CC0 needs no attribution; kept for traceability.
 
 ## Rejected (not saved to the active folder)
 
-- "Middle-aged woman holding a credit card" — a person's body in frame (no-face channel); built a CSS card instead
-- B&W MacBook + Apple-Watch flat-lay — Apple brand
-- ID-cards flat-lay (Universiteit Maastricht / Edah / Canon) — faces on cards + brand logos
-- rawpixel coin/piggy/hourglass PNG "stickers" — cutout illustrations on white
+- "Middle-aged woman holding a credit card" - a person's body in frame (no-face channel); built a CSS card instead
+- B&W MacBook + Apple-Watch flat-lay - Apple brand
+- ID-cards flat-lay (Universiteit Maastricht / Edah / Canon) - faces on cards + brand logos
+- rawpixel coin/piggy/hourglass PNG "stickers" - cutout illustrations on white

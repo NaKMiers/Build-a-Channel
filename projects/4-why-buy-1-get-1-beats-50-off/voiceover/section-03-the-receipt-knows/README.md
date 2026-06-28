@@ -15,7 +15,7 @@ Status:
 - speed: `0.82` (unified video speed, matching Sections 1-2)
 - language: `en-us`
 - tone: young, clear, lightly dry, learner-friendly; the "what you actually spend" reveal, then the smaller-price-vs-bigger-basket parallel
-- learner clarity notes: the spend contrast is the job — "five" (50% off) vs "the full ten" (BOGO) must land as clearly separated numbers so the doubling is heard. "You spent twice as much. In one trip." are short reset lines; hold before "a second one you did not need." Ends handing into Section 4's "magic word."
+- learner clarity notes: the spend contrast is the job - "five" (50% off) vs "the full ten" (BOGO) must land as clearly separated numbers so the doubling is heard. "You spent twice as much. In one trip." are short reset lines; hold before "a second one you did not need." Ends handing into Section 4's "magic word."
 
 ## Pacing
 

@@ -14,7 +14,7 @@ Working rule for this whole doc:
 
 ---
 
-## 1. Mindset reset — how YouTube actually decides who sees a video (2026)
+## 1. Mindset reset - how YouTube actually decides who sees a video (2026)
 
 Most beginners think YouTube "promotes" channels it likes, that you must upload at a
 magic time, and that tags/SEO are the engine. None of that is how it works now.
@@ -43,28 +43,28 @@ So the job is never "get subscribers" or "beat the algorithm." The job is:
 
 ---
 
-## 2. The growth equation — Idea > Packaging > Payoff
+## 2. The growth equation - Idea > Packaging > Payoff
 
 Three levers, in order of impact for a small channel:
 
-1. **Idea (topic-market fit) — ~60% of outcome.**
+1. **Idea (topic-market fit) - ~60% of outcome.**
    Did you pick a topic enough people already half-care about? `Why It Works` already
    has a gate for this: the topic-angle scorecard (`topic + contradiction + visual
    metaphor + viewer pain`) in `topic-packaging-hooks.md`. A weak idea cannot be saved
    by good editing. A strong idea can survive average editing.
 
-2. **Packaging (title + thumbnail) — ~30%.**
+2. **Packaging (title + thumbnail) - ~30%.**
    This earns the click. CTR lives here. Title and thumbnail must each do a *different*
    job and together create one clear curiosity gap (see §4 and §5). This is what the
    `packaging` skill produces.
 
-3. **Payoff (hook + retention) — keeps the click.**
+3. **Payoff (hook + retention) - keeps the click.**
    The first 10 seconds and the pacing decide AVD. `Why It Works` already has hook rules
    (`normal thing → suspicious detail → WIT reaction → bigger question`, topic by second 3,
    contradiction by second 5). Retention is mostly won or lost in the first 30 seconds.
 
 The channel's real advantage: all three are already systematized as skills. The missing
-piece was *publishing discipline* — this doc.
+piece was *publishing discipline* - this doc.
 
 ---
 
@@ -89,18 +89,18 @@ as a number. They feel good but tell you nothing actionable in the first 10 vide
 
 ---
 
-## 4. Thumbnails — the real rules + native A/B testing
+## 4. Thumbnails - the real rules + native A/B testing
 
 Your channel rules already exist in `brand-system.md` and `topic-packaging-hooks.md`:
 1–3 words max, one dominant real/real-looking object, one visible contradiction, one clear
 WIT emotion, strong contrast at mobile size, and the thumbnail must NOT repeat the title's
 exact words. Keep all of that.
 
-**A/B testing — the 2026 native way (no third-party tools):**
+**A/B testing - the 2026 native way (no third-party tools):**
 
 YouTube Studio has **"Test & compare"** for thumbnails. You upload **up to 3 thumbnails**
 for the same video; YouTube rotates them to real viewers and, over roughly **2 weeks**,
-picks the winner by **watch-time share** (not just clicks — it optimizes for the thumbnail
+picks the winner by **watch-time share** (not just clicks - it optimizes for the thumbnail
 that brings viewers who actually stay). Then it sets the winner automatically.
 
 How to use it well:
@@ -117,13 +117,13 @@ account by phone if you have not (`youtube.com/verify`).
 
 ---
 
-## 5. Titles & descriptions — what each part is actually for
+## 5. Titles & descriptions - what each part is actually for
 
 **Title** earns the click together with the thumbnail.
 - Front-load the interesting words; the first ~40–50 characters are what shows on mobile.
 - Create a curiosity gap: a question or contradiction the viewer can't resolve without
   clicking. `Why Cheap Products Keep Getting Worse` works because it names a felt pain.
-- Keep it readable for English learners — common words, no clever wordplay that needs
+- Keep it readable for English learners - common words, no clever wordplay that needs
   native knowledge (this is a channel guardrail).
 - Title and thumbnail should not say the same thing. If the thumbnail shows a broken
   before/after chair, the title should add the *why*, not repeat "broken chair."
@@ -138,7 +138,7 @@ account by phone if you have not (`youtube.com/verify`).
 - **Subscribe line + channel link** at the bottom.
 
 **Hashtags**: pick max **3 meaningful** ones (e.g. `#WhyItWorks` + 2 topical). More than 3
-and YouTube ignores all of them. **Tags**: minor in 2026 — fill them, don't agonize.
+and YouTube ignores all of them. **Tags**: minor in 2026 - fill them, don't agonize.
 
 `Title + thumbnail = the click. Hook + pacing = the watch. Description = context + trust.`
 
@@ -155,7 +155,7 @@ Rules:
   trains both the audience and your own production rhythm.
 - Publish a few hours **before** your biggest audience's leisure window, so the video is
   indexed and has its thumbnail tested before the evening rush.
-- **Starting hypothesis** (until you have data): your audience is global English learners —
+- **Starting hypothesis** (until you have data): your audience is global English learners -
   students, young adults, internet-natives, many in Asia/SE Asia + worldwide. A safe first
   slot is a **weekend morning–midday in your local time** (weekend = leisure viewing for
   students/learners). Treat this as a guess to be replaced by data, not a law.
@@ -176,47 +176,47 @@ bursts. Adjust the target to what you can actually sustain, then hold it.
 Shorts are a **separate funnel** with their own feed and their own audience. Use them, but
 understand them:
 - Shorts are great for **reach and discovery** and for **testing which hooks/ideas land**.
-- Shorts viewers do **not** reliably convert into long-form viewers or loyal subs — don't
+- Shorts viewers do **not** reliably convert into long-form viewers or loyal subs - don't
   measure a Short by how many people then watched the 7-minute video.
 - Post the 3 shorts **spread across the week** (e.g. day 1, day 3, day 5), not all at once,
   so each gets its own fresh push and you stay present in the feed between long videos.
-- Each Short is a **complete standalone** with no "watch the full video" CTA — this is
+- Each Short is a **complete standalone** with no "watch the full video" CTA - this is
   already your channel rule and it's correct; Shorts audiences reject obvious funnels.
-- A Short that overperforms is a signal: that topic/angle has demand — consider a full video
+- A Short that overperforms is a signal: that topic/angle has demand - consider a full video
   on it.
 
 ---
 
-## 8. The first 10 videos — a learning roadmap
+## 8. The first 10 videos - a learning roadmap
 
 You are in the hardest, most important phase: **before product-market fit.** The goal of the
 first 10 videos is NOT views or subs. It is to **learn what your audience clicks and watches**,
 and to **build the habit of shipping.**
 
-**Phase 0 — Channel setup (one-time, do before/around video 1).** See §12 checklist.
+**Phase 0 - Channel setup (one-time, do before/around video 1).** See §12 checklist.
 
-**Phase 1 — Videos 1–10: Consistency + Packaging discovery.**
+**Phase 1 - Videos 1–10: Consistency + Packaging discovery.**
 - Goal: ship on schedule, every time, no matter what. Reliability is the skill being built.
 - Each upload, follow the channel's existing rule: `Measure the upload. Learn one useful
   thing. Change the next video.` Write that one lesson into `learning-log.md`.
-- Focus learning on **CTR (packaging)** and **first-30s retention (hook)** — the two cheapest
+- Focus learning on **CTR (packaging)** and **first-30s retention (hook)** - the two cheapest
   things to improve.
 - Do not redesign the channel based on one flop or one hit. Patterns need ~5+ videos.
-- Expect most early videos to underperform. This is normal and is not failure — it's data.
+- Expect most early videos to underperform. This is normal and is not failure - it's data.
 
-**Phase 2 — Videos 10–30: Double down.**
-- By now 1–3 topics/angles will outperform the rest. Make **more of what works** — same
+**Phase 2 - Videos 10–30: Double down.**
+- By now 1–3 topics/angles will outperform the rest. Make **more of what works** - same
   cluster, same packaging pattern, similar thumbnail style.
 - Start **playlists/series** around winning clusters (e.g. a "Why modern life is expensive"
   series). Playlists boost session time and suggested-video pull.
 
-**Phase 3 — Monetization + community.**
+**Phase 3 - Monetization + community.**
 - YouTube Partner Program (2026 thresholds, confirm in Studio as they change): either
   **1,000 subscribers + 4,000 public watch hours (last 12 months)**, OR
   **1,000 subscribers + 10M valid Shorts views (last 90 days)**.
 - Don't optimize *for* monetization; it arrives as a side effect of consistency + good videos.
 - Once you have a small loyal base, add a pinned community question per video and reply to
-  comments — trust is the channel's long-term asset (see foundation's "trust engine" note).
+  comments - trust is the channel's long-term asset (see foundation's "trust engine" note).
 
 ---
 
@@ -234,7 +234,7 @@ The first 48 hours are when the cold-start test runs, so this is high-leverage t
 **Day 7:**
 - Read CTR and average % viewed. Compare to your own previous videos, not to big channels.
 - Write **one** concrete lesson into `learning-log.md` (e.g. "before/after thumbnail beat
-  WIT-reaction thumbnail on CTR" or "retention dropped at 0:18 — hook ran too long").
+  WIT-reaction thumbnail on CTR" or "retention dropped at 0:18 - hook ran too long").
 
 **Day 28 (after several uploads):**
 - Check "When your viewers are on YouTube" and adjust your weekly slot.
@@ -247,7 +247,7 @@ The first 48 hours are when the cold-start test runs, so this is high-leverage t
 Run this every time. It's the cure for "uploading by instinct."
 
 1. Video file exported to `projects/<slug>/output/` (from `combine`).
-2. Captions `.srt` ready in `output/` (from `caption`) — always upload real captions; never
+2. Captions `.srt` ready in `output/` (from `caption`) - always upload real captions; never
    rely on auto-captions (doubly important for English learners).
 3. Packaging decided from `output/packaging.md`: final **title**, **3 thumbnails** for Test &
    compare, **description + chapters**, **3 hashtags**, tags, **pinned comment**.
@@ -257,7 +257,7 @@ Run this every time. It's the cure for "uploading by instinct."
 7. Upload `captions.srt` → English → **with timing**.
 8. Audience = **not made for kids**; Language = **English**.
 9. Add to the relevant **playlist**.
-10. End screen (subscribe + "best for viewer" video) — optional, can be added later.
+10. End screen (subscribe + "best for viewer" video) - optional, can be added later.
 11. Set visibility (Public, Scheduled, or Premiere) at your fixed weekly slot.
 12. After live: post the pinned comment; schedule the 3 Shorts across the week.
 13. Record the published URL back into `projects/<slug>/output/packaging.md`.

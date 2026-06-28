@@ -10,9 +10,9 @@ This file consolidates the channel visual identity, WIT rules, and thumbnail vis
 
 - Name: `Why It Works`
 - Format: English-first no-face explainer channel
-- Audience lens: English learners, level A2–C1 (advantage: interesting English — entertainment-first; learners come for the fun and improve English as a side effect)
+- Audience lens: English learners, level A2–C1 (advantage: interesting English - entertainment-first; learners come for the fun and improve English as a side effect)
 - Lane: money, internet, society, business, modern life, and current culture
-- Tone: smart, simple, funny, dry, and allowed savage/cheeky (edge at the system/own wallet, never slurs; public figures as transformative parody) — see learning-log.md
+- Tone: smart, simple, funny, dry, and allowed savage/cheeky (edge at the system/own wallet, never slurs; public figures as transformative parody) - see learning-log.md
 - Default text style: handwritten labels and captions rendered through HyperFrames
 
 Core promise:
@@ -41,8 +41,8 @@ Avoid:
 ## Real-UI Illustration (standing owner preference, 2026-06-22)
 
 The channel owner explicitly loves and approves using **real recognizable UI to illustrate the
-script** — phone / iPhone mockups, real app icons (Gmail, Messenger, Microsoft To Do, Google
-Calendar, WhatsApp, Slack, etc.), and app/notification/chat screens — whenever the narration names
+script** - phone / iPhone mockups, real app icons (Gmail, Messenger, Microsoft To Do, Google
+Calendar, WhatsApp, Slack, etc.), and app/notification/chat screens - whenever the narration names
 or depicts those actual apps, products, or screens. This is a PREFERRED technique, not just an
 allowed exception; it overrides the older default "avoid real logos."
 
@@ -52,7 +52,7 @@ pixel-copy someone's real private screenshot; mock the UI up cleanly with the re
 
 ## WIT Direction
 
-Current status: `draft replacement generated - awaiting user review`
+Current status: `new pose-transferred set live - final WIT sign-off still pending`
 
 Current WIT asset location:
 
@@ -60,12 +60,13 @@ Current WIT asset location:
 .agents/_shared/assets/wit/poses/
 ```
 
-Keep only:
+Contents (replaced the old `wit-pose-*` 24-set on `2026-06-28`):
 
-- `manifest.json`
-- the `24` transparent PNG pose files listed in the manifest
+- `_origin_.png` - canonical neutral identity, transparent rgba (always attach when generating a new pose)
+- `pose.md` - emotion/role catalog + quick index
+- `67` pose PNGs on a solid flat green (#00B140) screen (rgb24, no alpha); chroma-key the green out at render with ffmpeg (`colorkey`/`chromakey` + `despill`)
 
-The current WIT direction is the simple white round-headed character from the approved thumbnail direction:
+The current WIT direction is the round bald white-headed character:
 
 - thick black outline
 - oversized black glasses

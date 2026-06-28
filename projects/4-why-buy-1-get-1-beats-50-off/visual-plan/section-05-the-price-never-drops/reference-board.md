@@ -2,7 +2,7 @@
 
 ## Reference Pass Status
 
-- Status: `REMADE 2026-06-24 — 5 fresh distinct retail photos sourced for this section (no reuse)`
+- Status: `REMADE 2026-06-24 - 5 fresh distinct retail photos sourced for this section (no reuse)`
 - Browsed: Openverse + Wikimedia
 - Real images: 5 bases, all fresh for S5
 - Generated: none

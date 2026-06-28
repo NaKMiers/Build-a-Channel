@@ -40,7 +40,7 @@ Current reusable asset:
 assets/wit/poses/
 ```
 
-This WIT folder should keep only `manifest.json` and the `24` transparent PNG pose files listed in it.
+This WIT folder holds `_origin_.png` (neutral identity, transparent), `pose.md` (catalog), and the `67` pose PNGs (green-screen #00B140, keyed at render).
 
 Video-specific assets belong in `projects/<slug>/assets/`.
 

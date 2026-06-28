@@ -1,9 +1,9 @@
-# Section 7 Payoff — Implementation Notes (2026-06-23) — FINAL SECTION
+# Section 7 Payoff - Implementation Notes (2026-06-23) - FINAL SECTION
 
 ## Build
 
 - Created on the S1–S6 pattern + CSS kit (scenes on tracks 1/3/4/5/6 with cross-fades, cues on track 2, audio track 10, GSAP show/hide/smash/pop/reveal, `window.__timelines["Section07Payoff"]`).
-- 4 distinct vivid bases (2 different money shots, a phone, a coin jar). The phone returns once (non-adjacent, 2nd filename) for the script's literal final image — the bank-app salary screen.
+- 4 distinct vivid bases (2 different money shots, a phone, a coin jar). The phone returns once (non-adjacent, 2nd filename) for the script's literal final image - the bank-app salary screen.
 - The closer recaps the money/device motif and resolves on the bank-app salary card.
 - Idea-devices built in CSS: crossed chips, `YOUR FORGETTING`, a barcode `PRODUCT: YOU` tag, green/red worth-vs-design labels, a bank statement (keep green / ghost rows struck), the bank-app salary card, the `your salary. (for now.)` payoff.
 - Assets materialized as a local working set under `assets/`.
@@ -22,7 +22,7 @@
 - `lint`: 0 errors, 1 non-blocking warning (`timeline_track_too_dense`).
 - `validate`: 0 errors, 0 warnings, 40 non-blocking contrast advisories.
 - `inspect --at 5,11.5,17,22,25.5,30,35,39,45,53`: 0 layout issues.
-- `snapshot` (10 frames + 53.2 recheck): all beats verified — distinct bases, the reveal/insight/action/close arc reads, the final salary screen + dry "for now" lands, no collisions.
+- `snapshot` (10 frames + 53.2 recheck): all beats verified - distinct bases, the reveal/insight/action/close arc reads, the final salary screen + dry "for now" lands, no collisions.
 
 ## Server
 

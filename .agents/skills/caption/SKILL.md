@@ -1,6 +1,6 @@
 ---
 name: caption
-description: Post-combine workflow step. Create accurate multi-language YouTube subtitle/caption files (.srt) for one Why It Works video project by transcribing the FULL combined audio (or full video render), aligning the exact English script text to real word-level timestamps, then translating that one timed cue set into all 22 supported languages while reusing the exact same timing. Use when the user asks to create captions, subtitles, an SRT/VTT file, closed captions, caption the video, or generate subtitles for upload. Requires a full combined voiceover (`hyperframes/full-video/combined-voiceover.mp3`) or a full video render — refuses to run on per-section audio only. Requires one project; use the project the user names, or smart-select the unambiguous active project, otherwise ask. Exports one `<language>.srt` per language to `projects/<slug>/output/captions/`.
+description: Post-combine workflow step. Create accurate multi-language YouTube subtitle/caption files (.srt) for one Why It Works video project by transcribing the FULL combined audio (or full video render), aligning the exact English script text to real word-level timestamps, then translating that one timed cue set into all 22 supported languages while reusing the exact same timing. Use when the user asks to create captions, subtitles, an SRT/VTT file, closed captions, caption the video, or generate subtitles for upload. Requires a full combined voiceover (`hyperframes/full-video/combined-voiceover.mp3`) or a full video render - refuses to run on per-section audio only. Requires one project; use the project the user names, or smart-select the unambiguous active project, otherwise ask. Exports one `<language>.srt` per language to `projects/<slug>/output/captions/`.
 ---
 
 # Caption
@@ -9,7 +9,7 @@ description: Post-combine workflow step. Create accurate multi-language YouTube 
 
 Produce subtitle/caption files for ONE finished `Why It Works` video in **all 22 supported languages** that match the spoken audio **100%**, then export one `<language>.srt` per language to the project's `output/captions/` folder for YouTube upload.
 
-The non-negotiable requirement: **captions must not drift from the voice.** Timing is derived ONCE from the real audio (word-level transcription) against the English script, producing a single timed cue table. Every other language reuses that exact same cue table — only the displayed text is translated, never the timing. This makes all 22 tracks match the video by construction.
+The non-negotiable requirement: **captions must not drift from the voice.** Timing is derived ONCE from the real audio (word-level transcription) against the English script, producing a single timed cue table. Every other language reuses that exact same cue table - only the displayed text is translated, never the timing. This makes all 22 tracks match the video by construction.
 
 Two ground-truth rules:
 
@@ -44,11 +44,11 @@ Project resolution order:
 
 Caption only runs when a single full-length audio/video source exists. In priority order:
 
-1. `projects/<slug>/hyperframes/full-video/combined-voiceover.mp3` (preferred — the combine output).
-2. A full video render (`renders/*.mp4` / `*.webm`) covering the whole video — extract its audio track.
+1. `projects/<slug>/hyperframes/full-video/combined-voiceover.mp3` (preferred - the combine output).
+2. A full video render (`renders/*.mp4` / `*.webm`) covering the whole video - extract its audio track.
 3. Any other single continuous full-length audio the user points to.
 
-If only per-section audio exists (`voiceover/section-XX-*/scratch-audio/*.mp3`), STOP and tell the user to run `combine` first (or point to a full render). Do not stitch a full SRT from separate section files in this skill — combine owns audio assembly.
+If only per-section audio exists (`voiceover/section-XX-*/scratch-audio/*.mp3`), STOP and tell the user to run `combine` first (or point to a full render). Do not stitch a full SRT from separate section files in this skill - combine owns audio assembly.
 
 ## Required Context
 
@@ -97,13 +97,13 @@ Whisper transcription is close but not authoritative for wording (it may write `
 - Align the two word sequences with Needleman-Wunsch (normalize: lowercase, strip punctuation, map number-words ↔ digits, `&`→`and`). Assign each script word the matched Whisper word's time; interpolate timing for any unmatched script word from its known neighbors.
 - Per cue: start = first word's start, end = last word's end.
 
-The reusable builder is `references/build-srt.mjs` — it reads a cues file + the timings JSON and writes the SRT. Provide the cues as a JSON array of strings derived from `02-script.md`. Pass the optional 5th/6th args so it ALSO emits the per-cue timing table that the translation step reuses:
+The reusable builder is `references/build-srt.mjs` - it reads a cues file + the timings JSON and writes the SRT. Provide the cues as a JSON array of strings derived from `02-script.md`. Pass the optional 5th/6th args so it ALSO emits the per-cue timing table that the translation step reuses:
 
 ```bash
 node build-srt.mjs <timings.json> <english-cues.json> <out>/english.srt <audioDur> <out>/_segments.json
 ```
 
-`_segments.json` is `[{ index, start, end, text }]` — the single source of timing for every language. Keep it under `voiceover/` (or the captions output dir); it is the only thing translated SRTs read for timing.
+`_segments.json` is `[{ index, start, end, text }]` - the single source of timing for every language. Keep it under `voiceover/` (or the captions output dir); it is the only thing translated SRTs read for timing.
 
 ### 4. Enforce clean cue timing
 
@@ -115,9 +115,9 @@ node build-srt.mjs <timings.json> <english-cues.json> <out>/english.srt <audioDu
 
 ### 5. Translate into all 22 languages (reuse the exact timing)
 
-For every language in the **Supported Languages** list below other than English, translate the English cue table into that language, ONE line per cue, keeping the cue **count and order identical** to `_segments.json`. Then write the SRT by reusing the English timing — never re-transcribe or re-time per language.
+For every language in the **Supported Languages** list below other than English, translate the English cue table into that language, ONE line per cue, keeping the cue **count and order identical** to `_segments.json`. Then write the SRT by reusing the English timing - never re-transcribe or re-time per language.
 
-- Translate **whole cues**, not words. Natural, fluent translation of each cue's meaning; preserve the channel's smart/simple/dry tone. Reorder words within a cue as the target language requires — the cue still keeps its English start/end.
+- Translate **whole cues**, not words. Natural, fluent translation of each cue's meaning; preserve the channel's smart/simple/dry tone. Reorder words within a cue as the target language requires - the cue still keeps its English start/end.
 - Keep the count exact: do NOT split one English cue into two target lines or merge two into one. If a translation would naturally be very long, keep it as one cue anyway (it inherits that cue's duration).
 - Keep untranslatables intact where appropriate: numbers, currency, brand/proper nouns, and code/UI identifiers (per the language rule) unless the language convention localizes them.
 - Produce a `<lang>-cues.json` array of strings (same length as `_segments.json`), then:
@@ -126,7 +126,7 @@ For every language in the **Supported Languages** list below other than English,
 node write-translated-srt.mjs <out>/_segments.json <lang>-cues.json <out>/<language>.srt
 ```
 
-`write-translated-srt.mjs` refuses to write if the translated cue count ≠ segment count or any cue is empty — that guard is what keeps every language frame-aligned to the video. English uses its own `build-srt.mjs` output directly (no translation pass).
+`write-translated-srt.mjs` refuses to write if the translated cue count ≠ segment count or any cue is empty - that guard is what keeps every language frame-aligned to the video. English uses its own `build-srt.mjs` output directly (no translation pass).
 
 Batch the translation efficiently (translate many cues per model turn), but always re-emit the FULL array for each language so lengths stay exact.
 
@@ -135,7 +135,7 @@ Batch the translation efficiently (translate many cues per model turn), but alwa
 Write all language caption files to `projects/<slug>/output/captions/`:
 
 - `output/captions/english.srt` plus one `<language>.srt` for every other supported language (22 files total).
-- Filenames are lowercase, spaces→hyphens, parentheticals flattened — see the **Supported Languages** table for the exact basenames.
+- Filenames are lowercase, spaces→hyphens, parentheticals flattened - see the **Supported Languages** table for the exact basenames.
 - `.vtt` variants only if the user asks (same cues, WebVTT header + `.` decimal separator).
 
 Keep backward compatibility: also write `output/captions.srt` (the English track) at the project `output/` root so existing upload tooling still finds it.
@@ -180,7 +180,7 @@ All 22 are exported every run. English is built from the script; the rest are pe
 5. Transcribe full audio → word timings JSON (`transcribe-combined.mjs`); save under `voiceover/`.
 6. Derive ordered English cue text from `02-script.md`; align to the timings and build `english.srt` AND the `_segments.json` timing table (`build-srt.mjs` with the segments arg).
 7. For each of the other 21 languages: translate the English cue table cue-for-cue (exact count/order), then write `<language>.srt` from `_segments.json` (`write-translated-srt.mjs`).
-8. Run the Self-Check (including the multi-language timing re-check — the most important gate).
+8. Run the Self-Check (including the multi-language timing re-check - the most important gate).
 9. Export all 22 files to `projects/<slug>/output/captions/`, plus the compatibility `output/captions.srt` (English). Add `.vtt` only if asked.
 10. Write a short status note in `05-production-board.md` (languages exported, cue count, duration).
 11. Respond with the Caption report (output dir, languages, cue count, total duration, sync source). Do not continue into upload or learning.
@@ -196,14 +196,14 @@ English / timing base:
 - first cue starts at/near `00:00:00,000`; last cue end == audio duration (within ~0.2s).
 - spot-check 2-3 English cues against the audio/script wording.
 
-Multi-language timing re-check (MOST IMPORTANT — captions must match the video):
+Multi-language timing re-check (MOST IMPORTANT - captions must match the video):
 
 - exactly 22 files exist in `output/captions/`, one per Supported Language, named per the table.
 - every `<language>.srt` has the **same cue count** as `english.srt`.
-- every `<language>.srt` cue's start/end timestamps are **byte-identical** to the corresponding `english.srt` cue (they came from the one `_segments.json`). Verify programmatically: extract the timestamp lines from each file and diff them against `english.srt`'s — any difference is a hard fail.
+- every `<language>.srt` cue's start/end timestamps are **byte-identical** to the corresponding `english.srt` cue (they came from the one `_segments.json`). Verify programmatically: extract the timestamp lines from each file and diff them against `english.srt`'s - any difference is a hard fail.
 - cross-check first cue of each section's narration against the combine section offsets in `05-production-board.md` (English track), confirming the shared timing actually lands on the video timeline.
 - spot-check 2-3 cues per a few languages: the translated line is a faithful, fluent translation of the matching English cue (right meaning, right cue).
-- every file is valid UTF-8 SRT (non-Latin scripts — Arabic, CJK, Indic, Thai — render correctly, no mojibake).
+- every file is valid UTF-8 SRT (non-Latin scripts - Arabic, CJK, Indic, Thai - render correctly, no mojibake).
 - compatibility `output/captions.srt` (English) also written.
 
 ## Hard Fails
@@ -214,8 +214,8 @@ Stop and report if:
 - no full-length combined audio or full video render exists (tell the user to run `combine` first).
 - the produced SRT has overlaps, gaps that imply drift, or a last-cue end that does not match the audio duration, and the cause cannot be fixed.
 - the caption would be built from estimated timing instead of real transcription (never allowed).
-- the audio source is not the one used in the video the user will upload (offsets would shift — re-sync against the exact file).
-- any `<language>.srt` cue count or timestamps differ from `english.srt` (translation split/merged/dropped a cue — re-translate that language to exactly one line per cue; never hand-edit timestamps to paper over it).
+- the audio source is not the one used in the video the user will upload (offsets would shift - re-sync against the exact file).
+- any `<language>.srt` cue count or timestamps differ from `english.srt` (translation split/merged/dropped a cue - re-translate that language to exactly one line per cue; never hand-edit timestamps to paper over it).
 - a translation pass changed cue boundaries instead of only the text.
 
 ## Self-Improvement

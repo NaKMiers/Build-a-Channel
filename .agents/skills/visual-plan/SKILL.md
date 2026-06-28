@@ -1,6 +1,6 @@
 ---
 name: visual-plan
-description: Create or update the step 4 visual plan for a Why It Works video project — the detailed, imagination-led blueprint of every scene. Use when the user asks for visual plan, scene plan, scene-by-scene screen direction, describe the visuals, plan the visuals, or step 4 of the Why It Works workflow. It builds ONE master plan per video and synced per-section copies, breaks the script into per-sentence (or few-sentence) scenes, and describes each scene in extreme detail (composition, every element, mascot pose, on-screen text, emotion, insight, element linkage, show-as-you-say timing, sound, color) plus an ASSET list per scene (type generate/browse/screenshot/reuse, filename, layout). visual-plan DESCRIBES only — it never writes image-generation prompts (that is visual-implement's job) and is not limited to the existing pose library (it may invent new poses/scenes if good, within copyright/law/YouTube community standards). Requires completed 00-topic-intake.md, 01-research-pack.md, 02-script.md, 03-voiceover.md and an explicit section selection with All first; writes only 04-visual-plan.md and the visual-plan/ section folders.
+description: Create or update the step 4 visual plan for a Why It Works video project - the detailed, imagination-led blueprint of every scene. Use when the user asks for visual plan, scene plan, scene-by-scene screen direction, describe the visuals, plan the visuals, or step 4 of the Why It Works workflow. It builds ONE master plan per video and synced per-section copies, breaks the script into per-sentence (or few-sentence) scenes, and describes each scene in extreme detail (composition, every element, mascot pose, on-screen text, emotion, insight, element linkage, show-as-you-say timing, sound, color) plus an ASSET list per scene (type generate/browse/screenshot/reuse, filename, layout). visual-plan DESCRIBES only - it never writes image-generation prompts (that is visual-implement's job) and is not limited to the existing pose library (it may invent new poses/scenes if good, within copyright/law/YouTube community standards). Requires completed 00-topic-intake.md, 01-research-pack.md, 02-script.md, 03-voiceover.md and an explicit section selection with All first; writes only 04-visual-plan.md and the visual-plan/ section folders.
 ---
 
 # Visual Plan
@@ -15,11 +15,11 @@ text alone, then build it.
 
 Two hard principles define this skill:
 
-1. **DESCRIBE only — never write image-generation prompts.** This skill paints the scene in words and
+1. **DESCRIBE only - never write image-generation prompts.** This skill paints the scene in words and
    lists which ASSETS each scene needs (type + filename + layout). Turning an asset description into an
    image-generation prompt, and actually creating/finding the asset, is `visual-implement`'s job.
 2. **Imagination is not limited.** Within copyright, law, and YouTube community standards, anything the
-   plan describes must be buildable by all means — so describe whatever is funniest/clearest. The plan
+   plan describes must be buildable by all means - so describe whatever is funniest/clearest. The plan
    MAY invent brand-new mascot poses or whole new scene ideas; it is NOT restricted to the existing
    pose library. The library (`.agents/_shared/assets/wit/poses/`) is a starting palette, not a cage.
 
@@ -38,7 +38,7 @@ same run. Never let them drift.
 
 ## Scene Granularity
 
-Cut scenes **per sentence, or a few sentences per scene** — never one static frame per whole section.
+Cut scenes **per sentence, or a few sentences per scene** - never one static frame per whole section.
 The reference standard (the Vui Vẻ-style explainer the owner studied) changes the visual on almost
 every sentence: a new photo, a new mascot pose, or a clean mascot-only focus frame. The eye never
 habituates. Target a visible change every few seconds, synced to the spoken line.
@@ -67,7 +67,7 @@ Downstream: `visual-implement` (creates the assets this plan names), then `rende
 
 If a required upstream file is missing, empty, or stale (older than its own upstream), stop and tell
 the user which previous skill to run. When this skill creates/updates a section plan, the section's
-implemented assets and render become stale — list them.
+implemented assets and render become stale - list them.
 
 ## Required Context
 
@@ -86,7 +86,7 @@ Read before planning:
 11. `.agents/_shared/systems/script-learner-voice.md`
 12. `references/memory.md`
 13. `references/output-formats.md` before writing outputs
-14. the mascot pose library: `.agents/_shared/assets/wit/poses/` and any pose reference notes (e.g. `analysis/vuive poses/pose.md` when present) so you can name exact poses
+14. the mascot pose library: `.agents/_shared/assets/wit/poses/` and its catalog `.agents/_shared/assets/wit/poses/pose.md` (emotion/role index + `_origin_.png` neutral identity) so you can name exact poses
 15. the chosen project files: `00-topic-intake.md`, `01-research-pack.md`, `02-script.md`, `03-voiceover.md`
 
 ## Project Selection Gate
@@ -124,47 +124,47 @@ for scene timestamps.
 ## The Scene-Detail Standard (the core of this skill)
 
 Every scene must be described at the depth where a reader can imagine the frame with no image. Use ALL
-of these fields for every scene. "Too little detail to picture the frame" is a defect — fix it before
+of these fields for every scene. "Too little detail to picture the frame" is a defect - fix it before
 handoff.
 
 For each scene:
 
-1. **Line / beat** — the exact script text for this scene + local time range (from section voiceover).
-2. **Role** — what this beat does in the video and how it links to the previous/next scene.
-3. **Composition / layout** — the frame: background; positions of every element in approximate %;
+1. **Line / beat** - the exact script text for this scene + local time range (from section voiceover).
+2. **Role** - what this beat does in the video and how it links to the previous/next scene.
+3. **Composition / layout** - the frame: background; positions of every element in approximate %;
    crop; z-order; which side each element sits; the thin gray horizon line if used.
-4. **Elements (one block each)** — describe every visual element in concrete detail: what it is, what
+4. **Elements (one block each)** - describe every visual element in concrete detail: what it is, what
    is inside it (for a photo/UI: the contents, framing, lighting, grade), size, treatment (float,
    drop-shadow, distortion, etc.).
-5. **Mascot** — exact pose name (from the library) OR a clearly-marked NEW invented pose described in
+5. **Mascot** - exact pose name (from the library) OR a clearly-marked NEW invented pose described in
    full; placement, scale (as fraction of frame), crop (what is intentionally cut), facing direction,
-   expression. The mascot is a real character (color + personality), big and high — the soul of the
+   expression. The mascot is a real character (color + personality), big and high - the soul of the
    scene; do not park it tiny in a corner.
-6. **On-screen text** — exact words (channel language = English for WIW), handwritten style, position,
+6. **On-screen text** - exact words (channel language = English for WIW), handwritten style, position,
    color, tilt, underline/scribble, and when it appears. Edge/tone may be savage-but-clean per the
    channel tone rule.
-7. **Emotion** — what the scene should make the viewer feel.
-8. **Insight / joke** — the point or the gag this scene carries.
-9. **Linkage** — why the elements sit together; the intended eye path (left→right, etc.).
-10. **Show-as-you-say timeline** — element-by-element entrance/hold tied to the spoken words/syllables
+7. **Emotion** - what the scene should make the viewer feel.
+8. **Insight / joke** - the point or the gag this scene carries.
+9. **Linkage** - why the elements sit together; the intended eye path (left→right, etc.).
+10. **Show-as-you-say timeline** - element-by-element entrance/hold tied to the spoken words/syllables
     (e.g. "on 'thirty songs' → zoom the '30 songs' label"); mark hard-show vs impact (pop/smash/stamp).
-11. **Sound** — any short SFX cue and where it ducks under narration.
-12. **Color / contrast** — palette and what should pop on a phone.
+11. **Sound** - any short SFX cue and where it ducks under narration.
+12. **Color / contrast** - palette and what should pop on a phone.
 
-Then list the scene's **ASSETS** (the handoff to visual-implement) — see below.
+Then list the scene's **ASSETS** (the handoff to visual-implement) - see below.
 
 ## Asset Listing Rule (handoff to visual-implement)
 
 For each scene, list every asset it needs. For each asset record:
 
 - `type`: `generate` | `browse-real-photo` | `screenshot/web-capture` | `reuse` | `pose`
-- exact **description** (what it depicts) — detailed, but **NO image-generation prompt** (implement writes that)
-- **filename** (kebab-case, `.png`) — the canonical name in `assets/`. If the same subject already
+- exact **description** (what it depicts) - detailed, but **NO image-generation prompt** (implement writes that)
+- **filename** (kebab-case, `.png`) - the canonical name in `assets/`. If the same subject already
   appeared in an earlier scene, REUSE the same filename (`type: reuse`) so the character stays
   identical; do not invent a new file for the same thing.
 - **layout/position** in the scene (left/right/center, crop, float) so render can place it
 - isolated-element note: generated/browsed assets are ISOLATED elements (transparent/plain background),
-  never a pre-composed full scene — render composites them.
+  never a pre-composed full scene - render composites them.
 
 Poses come from the library where one fits (`type: pose`, reference the pose filename). When the plan
 invents a NEW pose, mark it `type: generate` with a vivid description and a new filename; visual-implement
@@ -179,7 +179,7 @@ keep real private data and real raw copyrighted media out (prefer caricature or 
 
 - **Real photo / real-looking asset as evidence + mascot drawn on top** is the channel signature
   (real photo base or floating real-UI, with the mascot reacting). A bare flat-gradient scene reads as
-  "no background" — give every scene a real or real-looking base unless a deliberately blank beat is justified.
+  "no background" - give every scene a real or real-looking base unless a deliberately blank beat is justified.
 - **Vary everything across scenes**: scene-type, composition, mascot side/scale/pose, idea-device.
   Rotate scene types (wide gag / close-up reaction / full-screen text payoff / diagram-or-receipt /
   object hero / mascot-only focus beat). No two consecutive scenes should share a layout.
@@ -210,7 +210,7 @@ keep real private data and real raw copyrighted media out (prefer caricature or 
 8. Write/update the master `04-visual-plan.md` (video-level direction + all planned sections), synced
    with the section files.
 9. Build/refresh the `assets/asset-manifest.md` stub list of every asset filename the plan references
-   (so visual-implement and render can resolve them) — or leave that to visual-implement if it does not
+   (so visual-implement and render can resolve them) - or leave that to visual-implement if it does not
    yet exist; at minimum, the plan's asset filenames must be unambiguous.
 10. Run the Downstream Stale Gate (visual-implement + render for affected sections).
 11. Respond with the chat summary. Stop before visual-implement/render unless explicitly asked.
@@ -226,6 +226,13 @@ keep real private data and real raw copyrighted media out (prefer caricature or 
 - Are repeated subjects reused by the SAME filename (consistency), not regenerated?
 - Are public figures handled as transformative caricature / obvious parody, punching up?
 - Master and every section file in sync?
+
+## File Language
+
+Write the plan files in **English** (per the File Language Convention in `current-state.md`). Keep
+non-English text ONLY in `On-screen text` field VALUES and quoted narration lines - those are in-video
+content. All descriptions, roles, layouts, and asset descriptions are English, even for a non-English
+video.
 
 ## Output Formats
 

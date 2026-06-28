@@ -181,7 +181,7 @@ On `why-everything-is-a-subscription-now` the first calm prompts produced tidy, 
 
 Lesson:
 The 5 thumbnail variants now use a FIXED structure, not the old five free-form styles:
-1-2 = split-screen COMPARISONS (vertical divider; cool-blue good/before half vs warm-orange bad/after half; black angled corner tags; one big red+white handwritten center hook with red underline; small shocked WIT on the divider — mirrors the approved cheap-products comparison).
+1-2 = split-screen COMPARISONS (vertical divider; cool-blue good/before half vs warm-orange bad/after half; black angled corner tags; one big red+white handwritten center hook with red underline; small shocked WIT on the divider - mirrors the approved cheap-products comparison).
 3 = trap/dramatic scene; 4 = shock face-zoom with one giant shocking element (big red number); 5 = dramatic metaphor (puppet/chained/clean-thing-out-of-reach).
 Push the DRAMA bar on all five (extreme WIT expression, tight crop, one shocking element, red/motion danger cues) but keep the CLAIM honest (illustrative numbers, no fake promises) so it reads dramatic, not deceptive.
 
@@ -199,10 +199,10 @@ No; packaging-skill execution practice (the WIT/brand direction itself is unchan
 Classification: `Packaging lesson`
 
 Context:
-On `why-everything-is-a-subscription-now`, the user generates thumbnails in ChatGPT (Claude can't make images) and said they will attach the WIT neutral pose (`.agents/_shared/assets/wit/poses/wit-pose-neutral-front.png`) as the reference image. They asked the prompts to reference the attached WIT rather than describe him from scratch.
+On `why-everything-is-a-subscription-now`, the user generates thumbnails in ChatGPT (Claude can't make images) and said they will attach the WIT neutral identity (`.agents/_shared/assets/wit/poses/_origin_.png`) as the reference image. They asked the prompts to reference the attached WIT rather than describe him from scratch.
 
 Lesson:
-For ChatGPT/DALL·E thumbnail prompts: (1) there is no separate negative-prompt field, so fold the avoid-list into the prompt as "Do NOT include: ..."; (2) make each prompt self-contained (one paste = one thumbnail); (3) when the user attaches a WIT reference image, open every prompt with "Use the cartoon character in the attached reference image as WIT — keep his exact art style and proportions; only change his pose and expression," and keep a short style reminder as a drift fallback. Write these copy-paste prompts into `assets/thumbnails/PROMPTS.md` (self-contained), with `03-packaging.md` remaining the scored source of record. Name the exact reference file to attach in the how-to.
+For ChatGPT/DALL·E thumbnail prompts: (1) there is no separate negative-prompt field, so fold the avoid-list into the prompt as "Do NOT include: ..."; (2) make each prompt self-contained (one paste = one thumbnail); (3) when the user attaches a WIT reference image, open every prompt with "Use the cartoon character in the attached reference image as WIT - keep his exact art style and proportions; only change his pose and expression," and keep a short style reminder as a drift fallback. Write these copy-paste prompts into `assets/thumbnails/PROMPTS.md` (self-contained), with `03-packaging.md` remaining the scored source of record. Name the exact reference file to attach in the how-to.
 
 Apply next time:
 - if no image tool, write `PROMPTS.md` as ready-to-paste ChatGPT prompts, not just a pointer to `03-packaging.md`
@@ -281,7 +281,7 @@ No; this is packaging-skill output contract. The channel WIT/honesty/drama direc
 Classification: `Core operational update`
 
 Context:
-Same day, the owner simplified further: (1) `PROMPTS.md` is redundant — fold the thumbnail prompts
+Same day, the owner simplified further: (1) `PROMPTS.md` is redundant - fold the thumbnail prompts
 into a `## Thumbnail Prompts` section inside `output/packaging.md`. (2) Stop creating `03-packaging.md`
 for new projects; write `output/packaging.md` directly (existing projects keep their `03-packaging.md`
 as-is, untouched). (3) Packaging moves OUT of the "03 side-branch" slot to a step AFTER `caption`, and
@@ -301,7 +301,7 @@ Apply next time:
   (project 1 was migrated to the new layout on 2026-06-26 as the first test).
 
 Promote to shared memory:
-Partly — the pipeline-order change (packaging after caption, requires script) is a channel-wide
+Partly - the pipeline-order change (packaging after caption, requires script) is a channel-wide
 pipeline rule and should be reflected in `current-state.md`/`production-workflow.md` and the
 `CLAUDE.md`/`AGENTS.md` pipeline gates. The single-file output detail stays packaging-local.
 

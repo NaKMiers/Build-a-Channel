@@ -1,4 +1,4 @@
-# Section 4 Why Companies Love It — Design (2026-06-23, Section 1 template)
+# Section 4 Why Companies Love It - Design (2026-06-23, Section 1 template)
 
 Video: `Why Everything Is a Subscription Now`
 Composition: `Section04Why` · 1920x1080 · duration `51.093s` · port `1004`

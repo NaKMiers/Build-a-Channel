@@ -24,4 +24,4 @@ Status:
 - Key labels: "FREE! $5/item" vs "50% OFF $5/item"; profit "+$1 / +$2 / ×2"; "YOU ARE THE RABBIT"
 - Reference pass: real CC0 photos (cart, cash, curtain) + CC BY-SA magic hat (credit "Magicianidris"); no generated images
 - Key assets: bases in `assets/visual-references/section-01-hook/`; WIT from shared poses
-- HyperFrames readiness: ready — composition `Section01Hook`, 23.019s, port 1001; timing estimated, re-align after a runtime listen
+- HyperFrames readiness: ready - composition `Section01Hook`, 23.019s, port 1001; timing estimated, re-align after a runtime listen

@@ -1,4 +1,4 @@
-# Section 3 Visual References — Attribution (2026-06-23)
+# Section 3 Visual References - Attribution (2026-06-23)
 
 Built to the Section 1 standing template (one vivid object base per scene). Sourced via the Openverse API
 (rawpixel / StockSnap aggregations) and viewed on the pixels before selection. CC0 needs no attribution;
@@ -14,7 +14,7 @@ kept for traceability.
 
 ## Rejected (not saved to the active folder)
 
-- StockSnap/iMac laptops ("Laptop Computer", "Developer Code", "Seo Computer") — Apple logos / a blurred person
-- 2020 MG ZS interior — MG steering-wheel logo + showroom people
-- $20-fan-on-white — sterile objects-on-white (used the textured euro spread instead)
-- Wikimedia antique/vintage cars + medieval padlocks — dingy / off-tone
+- StockSnap/iMac laptops ("Laptop Computer", "Developer Code", "Seo Computer") - Apple logos / a blurred person
+- 2020 MG ZS interior - MG steering-wheel logo + showroom people
+- $20-fan-on-white - sterile objects-on-white (used the textured euro spread instead)
+- Wikimedia antique/vintage cars + medieval padlocks - dingy / off-tone

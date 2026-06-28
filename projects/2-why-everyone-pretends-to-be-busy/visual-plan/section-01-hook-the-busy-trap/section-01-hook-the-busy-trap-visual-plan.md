@@ -2,7 +2,7 @@
 
 Video: `Why Everyone Pretends To Be Busy`
 Section: `Section 1: Hook: The Busy Trap`
-Status: `draft visual plan for approval (v2 — new standard: real bg every scene + real-UI + big/high WIT)`
+Status: `draft visual plan for approval (v2 - new standard: real bg every scene + real-UI + big/high WIT)`
 
 ## Section Goal
 Open inside the situation and make the title promise visible fast: the less time you have for real work, the more important you look. Busy *signals* (calendar/inbox/phone) read as "this person matters"; quiet thinking reads as "lazy." Land the dry button: there is a difference between being busy and looking busy.
@@ -10,7 +10,7 @@ Open inside the situation and make the title promise visible fast: the less time
 ## Source Inputs
 - Voiceover: `voiceover/section-01-.../...david23-am_eric-0.84.mp3` (21.12s, 0.84)
 - Word timings: `voiceover/section-01-.../section-01-word-timings.json` (existing; cue times REAL)
-- NOTE: this section's audio is 0.84 (plain); Sections 4–7 are 0.86 (pause-tuned). Delivery mismatch flagged — see chat. Visual cues are pinned to the current 0.84 timings; if voiceover is regenerated at 0.86 the cues must be re-pinned.
+- NOTE: this section's audio is 0.84 (plain); Sections 4–7 are 0.86 (pause-tuned). Delivery mismatch flagged - see chat. Visual cues are pinned to the current 0.84 timings; if voiceover is regenerated at 0.86 the cues must be re-pinned.
 
 ## Visual Direction (new standard)
 - 4 scenes, each on a REAL people-free photo base; the busy-signals beat uses REAL-UI (packed calendar, unread inbox, phone panic notifications) built in CSS with real icons.
@@ -20,24 +20,24 @@ Open inside the situation and make the title promise visible fast: the less time
 ## Big Scene Plan
 | Scene | Time | Voice | Real base | Build |
 |---|---:|---|---|---|
-| A — the strange rule | 0:00–5.24 | "here's a strange rule… the less time for real work, the more important you look" | base-deskwork.jpg (warm desk, real work) | labels A STRANGE RULE + LESS REAL WORK = LOOK MORE IMPORTANT; WIT working |
-| B — the busy signals | 5.24–11.0 | "a full calendar, a loud inbox, a phone making tiny panic sounds… this person matters" | base-busy-signals.jpg (bright flat-lay + phone) | REAL-UI: packed calendar / unread inbox / phone panic notifications; THIS PERSON MATTERS |
-| C — quiet = lazy | 11.0–16.06 | "but sit quietly and think… people assume you are lazy. or asleep with your eyes open" | base-deskcalm.jpg (bright minimal desk) | THINK QUIETLY → LAZY? / ASLEEP — EYES OPEN; WIT deadpan |
-| D — looking busy / the difference | 16.06–21.0 | "everyone gets busy… very good at looking busy. there is a difference" | base-deskwork-cage.jpg (warm desk, cooled + CSS cage bars; callback to A) | LOOKING BUSY → THERE IS A DIFFERENCE; WIT suspicious |
+| A - the strange rule | 0:00–5.24 | "here's a strange rule… the less time for real work, the more important you look" | base-deskwork.jpg (warm desk, real work) | labels A STRANGE RULE + LESS REAL WORK = LOOK MORE IMPORTANT; WIT working |
+| B - the busy signals | 5.24–11.0 | "a full calendar, a loud inbox, a phone making tiny panic sounds… this person matters" | base-busy-signals.jpg (bright flat-lay + phone) | REAL-UI: packed calendar / unread inbox / phone panic notifications; THIS PERSON MATTERS |
+| C - quiet = lazy | 11.0–16.06 | "but sit quietly and think… people assume you are lazy. or asleep with your eyes open" | base-deskcalm.jpg (bright minimal desk) | THINK QUIETLY → LAZY? / ASLEEP - EYES OPEN; WIT deadpan |
+| D - looking busy / the difference | 16.06–21.0 | "everyone gets busy… very good at looking busy. there is a difference" | base-deskwork-cage.jpg (warm desk, cooled + CSS cage bars; callback to A) | LOOKING BUSY → THERE IS A DIFFERENCE; WIT suspicious |
 
 ## Cue State Timeline (word-timed)
 | Cue | Time | Voice cue (word@s) | Scene | Change | Motion | WIT |
 |---|---:|---|---|---|---|---|
 | C1 | 0–2.34 | "a strange rule"@0.58 | A | label A STRANGE RULE; WIT working | hard-show | typing-on-laptop @0.4 |
-| C2 | 2.34 | real work@3.48 / important@4.32 | A | LESS REAL WORK = LOOK MORE IMPORTANT | hard-show | — |
+| C2 | 2.34 | real work@3.48 / important@4.32 | A | LESS REAL WORK = LOOK MORE IMPORTANT | hard-show | - |
 | C3 | 5.24 | calendar@5.76 | B | packed CALENDAR card pops | impact | holding-phone-panic @5.5 |
-| C4 | 6.64 | inbox@6.64 / phone@7.3 | B | unread INBOX card + phone PANIC notifications pop | impact | — |
-| C5 | 10.64 | "this person matters"@10.64 | B | THIS PERSON MATTERS ✓ | hard-show | — |
+| C4 | 6.64 | inbox@6.64 / phone@7.3 | B | unread INBOX card + phone PANIC notifications pop | impact | - |
+| C5 | 10.64 | "this person matters"@10.64 | B | THIS PERSON MATTERS ✓ | hard-show | - |
 | C6 | 11.0 | sit quietly@11.3 / think@11.98 | C | cut to quiet desk; THINK QUIETLY; WIT | hard-show | deadpan-side-eye @11.2 |
-| C7 | 14.32 | lazy@14.32 / asleep…eyes open@14.9 | C | LAZY? then ASLEEP — EYES OPEN | impact | — |
+| C7 | 14.32 | lazy@14.32 / asleep…eyes open@14.9 | C | LAZY? then ASLEEP - EYES OPEN | impact | - |
 | C8 | 16.06 | everyone gets busy@16.34 | D | cut to caged desk; EVERYONE GETS BUSY | hard-show | suspicious @16.3 |
-| C9 | 19.12 | "looking busy"@19.12 | D | GOOD AT LOOKING BUSY | hard-show | — |
-| C10 | 20.58 | "there is a difference"@20.58 | D | THERE IS A DIFFERENCE | impact | — |
+| C9 | 19.12 | "looking busy"@19.12 | D | GOOD AT LOOKING BUSY | hard-show | - |
+| C10 | 20.58 | "there is a difference"@20.58 | D | THERE IS A DIFFERENCE | impact | - |
 
 ## Reference And Asset Plan
 | Asset | Source | Class | Use |

@@ -14,24 +14,24 @@ Source files:
 ## Packaging Brief
 
 - Core promise: two deals look like the exact same $5-per-item deal, but "Buy 1 Get 1 Free" usually doubles the store's profit and makes you spend more.
-- Main contradiction: same per-item price on both signs, opposite outcome — the store wins, you spend double, and you smile while doing it.
-- Audience question: "Wait — if both signs come to $5 an item, how is one a better deal for the store?"
+- Main contradiction: same per-item price on both signs, opposite outcome - the store wins, you spend double, and you smile while doing it.
+- Audience question: "Wait - if both signs come to $5 an item, how is one a better deal for the store?"
 - Recurring motif: two identical-looking price tags (`50% OFF` vs `BUY 1 GET 1 FREE`) + a hidden store-profit meter.
 - WIT emotion: confident math face → suspicious squint → grinning/hypnotized by "FREE" → betrayed.
-- First 10 seconds promise: two shelf signs, both come to $5/item, WIT says "so they're the same, right?", the register rings up 2× behind him — "...right?"
+- First 10 seconds promise: two shelf signs, both come to $5/item, WIT says "so they're the same, right?", the register rings up 2× behind him - "...right?"
 - Risk to avoid: dishonest math ("BOGO is ALWAYS double profit") or preachy anti-store framing. Keep the condition (high margin + shopper takes both units) and stay curious, not accusatory.
 
 ## Title Options
 
 | # | Title | Promise | Curiosity | Risk | Score |
 |---:|---|---|---|---|---:|
-| 1 | Why "Buy 1 Get 1 Free" Beats "50% Off" | Names the hidden winner | High — two deals, one secretly better | Low | 92 |
-| 2 | Same Deal. Double Profit. | Sharp contradiction | High — how can same be double? | Low | 90 |
-| 3 | The $5 Deal That Makes You Spend $10 | Concrete money pain | High — the spend twist | Low | 89 |
+| 1 | Why "Buy 1 Get 1 Free" Beats "50% Off" | Names the hidden winner | High - two deals, one secretly better | Low | 92 |
+| 2 | Same Deal. Double Profit. | Sharp contradiction | High - how can same be double? | Low | 90 |
+| 3 | The $5 Deal That Makes You Spend $10 | Concrete money pain | High - the spend twist | Low | 89 |
 | 4 | Why Stores Love "Free" More Than "Half Price" | Store-side logic | High | Low | 86 |
 | 5 | "Free" Doesn't Cut the Price. It Cuts Your Judgment. | Names the insight | Med-High | Low | 85 |
 | 6 | "50% Off" and "Buy 1 Get 1 Free" Are NOT the Same Deal | Direct myth-break | High | Low | 84 |
-| 7 | The Word That Switches Off Your Math Brain | Curiosity-led | High — which word? | Med (vague topic) | 82 |
+| 7 | The Word That Switches Off Your Math Brain | Curiosity-led | High - which word? | Med (vague topic) | 82 |
 | 8 | Why "Buy 1 Get 1 Free" Is a Profit Machine | Store-side reveal | Med-High | Low | 81 |
 | 9 | How "Free" Quietly Doubles Your Spending | Spend pain | Med-High | Low | 80 |
 | 10 | Two Signs, Same Price, Double the Profit | Restates contradiction | Med-High | Low | 80 |
@@ -43,7 +43,7 @@ Source files:
 
 ## Thumbnail Concepts
 
-Intensity: MAX shock / clickbait / outrage / curiosity (owner-requested). Honesty line kept — real numbers ($5/$10/$1/$2), curiosity-question hooks, no fake urgency, no fake stat, no hateful brand targeting.
+Intensity: MAX shock / clickbait / outrage / curiosity (owner-requested). Honesty line kept - real numbers ($5/$10/$1/$2), curiosity-question hooks, no fake urgency, no fake stat, no hateful brand targeting.
 
 | # | Concept | Dominant object | Label | WIT emotion | Visual contradiction | Prompt / Production notes |
 |---:|---|---|---|---|---|---|
@@ -71,7 +71,7 @@ WIT consistency note: every prompt uses the current draft thumbnail-WIT (white r
 >
 > Intensity dialed to MAX shock / clickbait / outrage / curiosity (owner request). Honesty line held: real numbers ($5/$10/$1/$2), curiosity-question hooks (`?!`), NO fake urgency ("only today"), NO fabricated stats, NO hateful real-brand targeting.
 
-### Variant A: `Comparison split-screen — "A TRICK?!"`
+### Variant A: `Comparison split-screen - "A TRICK?!"`
 
 Prompt:
 
@@ -79,7 +79,7 @@ Prompt:
 Use the channel character WIT in the approved thumbnail style: a simple white round-headed cartoon
 figure with thick imperfect black outline, oversized black glasses, expressive eyebrows, small black
 dot eyes, simple white body, clean bold silhouette. WIT should match the character style from the five
-restored Why Cheap Products Keep Getting Worse thumbnails. WIT emotion: FURIOUS and betrayed —
+restored Why Cheap Products Keep Getting Worse thumbnails. WIT emotion: FURIOUS and betrayed -
 bulging eyes, mouth wide open mid-shout, eyebrows slammed down, sweat flying, red rage glow and
 comic shock-burst lines behind his head.
 
@@ -106,7 +106,7 @@ Use notes:
 - Attach `wit-pose-neutral-front.png` + the comparison layout ref `variant-c-generated.png`.
 - Save as `variant-a-generated.png`. Shopper-facing curiosity+outrage comparison.
 
-### Variant B: `Comparison split-screen — "ROBBED?!"`
+### Variant B: `Comparison split-screen - "ROBBED?!"`
 
 Prompt:
 
@@ -114,7 +114,7 @@ Prompt:
 Use the channel character WIT in the approved thumbnail style: a simple white round-headed cartoon
 figure with thick imperfect black outline, oversized black glasses, expressive eyebrows, small black
 dot eyes, simple white body, clean bold silhouette, matching the restored Why Cheap Products thumbnail
-WIT. WIT emotion: ENRAGED and robbed — jaw on the floor, eyes popping, hands thrown up, sweat flying,
+WIT. WIT emotion: ENRAGED and robbed - jaw on the floor, eyes popping, hands thrown up, sweat flying,
 red rage glow and shock-burst lines behind him.
 
 16:9, 1280x720 YouTube thumbnail, EXTREME clickbait energy. Split frame with a thick jagged vertical
@@ -140,7 +140,7 @@ Use notes:
 - Attach `wit-pose-neutral-front.png` + comparison layout ref `variant-c-generated.png`.
 - Save as `variant-b-generated.png`. Tests the store-profit hypothesis with a rage hook.
 
-### Variant C: `Trap / dramatic scene — "FREE?!"`
+### Variant C: `Trap / dramatic scene - "FREE?!"`
 
 Prompt:
 
@@ -148,7 +148,7 @@ Prompt:
 Use the channel character WIT in the approved thumbnail style: a simple white round-headed cartoon
 figure with thick imperfect black outline, oversized black glasses, expressive eyebrows, small black
 dot eyes, simple white body, matching the restored Why Cheap Products thumbnail WIT. WIT emotion: full
-SCREAMING panic — eyes bulging out, mouth stretched wide, sweat spraying, arms flailing, comic motion
+SCREAMING panic - eyes bulging out, mouth stretched wide, sweat spraying, arms flailing, comic motion
 lines and a red danger glow.
 
 16:9, 1280x720 YouTube thumbnail, EXTREME clickbait energy. One chaotic scene: WIT buried up to his
@@ -174,7 +174,7 @@ Use notes:
 - Attach `wit-pose-neutral-front.png`. Save as `variant-c-generated.png`.
 - Drama/backup test; keep the duplicate avalanche clean enough to read.
 
-### Variant D: `Shock face-zoom — "$10?!"`
+### Variant D: `Shock face-zoom - "$10?!"`
 
 Prompt:
 
@@ -182,7 +182,7 @@ Prompt:
 Use the channel character WIT in the approved thumbnail style: a simple white round-headed cartoon
 figure with thick imperfect black outline, oversized black glasses, expressive eyebrows, small black
 dot eyes, simple white body, matching the restored Why Cheap Products thumbnail WIT. WIT emotion:
-SCREAMING meltdown — eyes bulging huge out of the glasses, jaw ripped wide open, eyebrows flying off,
+SCREAMING meltdown - eyes bulging huge out of the glasses, jaw ripped wide open, eyebrows flying off,
 sweat spraying, trembling, comic shock-burst lines and a hot red rage glow.
 
 16:9, 1280x720 YouTube thumbnail, MAXIMUM shock clickbait. Extreme tight close-up: WIT's round head and
@@ -206,7 +206,7 @@ Use notes:
 - Attach `wit-pose-neutral-front.png`. Save as `variant-d-generated.png`.
 - Loudest single emotional face; lead A/B test.
 
-### Variant E: `Dramatic metaphor — "FREE = TRAP"`
+### Variant E: `Dramatic metaphor - "FREE = TRAP"`
 
 Prompt:
 
@@ -214,12 +214,12 @@ Prompt:
 Use the channel character WIT in the approved thumbnail style: a simple white round-headed cartoon
 figure with thick imperfect black outline, oversized black glasses, expressive eyebrows, small black
 dot eyes, simple white body, matching the restored Why Cheap Products thumbnail WIT. WIT emotion:
-hypnotized maniac grin (totally blind to the danger) — dark dramatic irony.
+hypnotized maniac grin (totally blind to the danger) - dark dramatic irony.
 
 16:9, 1280x720 YouTube thumbnail, EXTREME clickbait energy. One bold metaphor: a HUGE glowing yellow
 "FREE" sticker slapped across WIT's glasses like a blindfold so he's totally blind, grinning like a
 hypnotized maniac, both arms greedily lunging to grab a second product. On his other side, hidden from
-him, his wallet ERUPTS — a fountain of coins and bills blasting out and vanishing into a dark void,
+him, his wallet ERUPTS - a fountain of coins and bills blasting out and vanishing into a dark void,
 with a red downward arrow and a "−$10" tag. Brutal contrast: ecstatic while being drained. One GIANT
 rough handwritten hook "FREE = TRAP" with a violent red double-underline. Hot red warning glow at the
 exploding wallet, dramatic shadow, warm retail-yellow palette, tight composition, extreme contrast,
@@ -243,16 +243,16 @@ Use notes:
 
 | Rank | Title | Thumbnail concept | Why it works | Score | Decision |
 |---:|---|---|---|---:|---|
-| 1 | `Why "Buy 1 Get 1 Free" Beats "50% Off"` | Variant D — `$10?!` face-zoom meltdown | Title names the hidden winner; loudest single-face shock + the $10 receipt pays it off — zero title-text repeat, max contrast | 93 | Recommended |
-| 2 | `The $5 Deal That Makes You Spend $10` | Variant A — `A TRICK?!` split screen | Title sets the $5→$10 pain; comparison shows the "same price" trap + outrage | 91 | Strong A/B alt |
-| 3 | `Same Deal. Double Profit.` | Variant B — `ROBBED?!` profit meter | Strongest store-side contradiction; thumbnail proves the "double" visually with a rage hook | 90 | Strong A/B alt |
-| 4 | `"Free" Doesn't Cut the Price. It Cuts Your Judgment.` | Variant E — `FREE = TRAP` blindfold | Title + metaphor both land the payoff insight; most "smart" pairing | 84 | Test if A/B plateaus |
-| 5 | `Why Stores Love "Free" More Than "Half Price"` | Variant C — `FREE?!` trap scene | Store-side title + chaos drama; good for a comedy-forward cut | 84 | Backup |
+| 1 | `Why "Buy 1 Get 1 Free" Beats "50% Off"` | Variant D - `$10?!` face-zoom meltdown | Title names the hidden winner; loudest single-face shock + the $10 receipt pays it off - zero title-text repeat, max contrast | 93 | Recommended |
+| 2 | `The $5 Deal That Makes You Spend $10` | Variant A - `A TRICK?!` split screen | Title sets the $5→$10 pain; comparison shows the "same price" trap + outrage | 91 | Strong A/B alt |
+| 3 | `Same Deal. Double Profit.` | Variant B - `ROBBED?!` profit meter | Strongest store-side contradiction; thumbnail proves the "double" visually with a rage hook | 90 | Strong A/B alt |
+| 4 | `"Free" Doesn't Cut the Price. It Cuts Your Judgment.` | Variant E - `FREE = TRAP` blindfold | Title + metaphor both land the payoff insight; most "smart" pairing | 84 | Test if A/B plateaus |
+| 5 | `Why Stores Love "Free" More Than "Half Price"` | Variant C - `FREE?!` trap scene | Store-side title + chaos drama; good for a comedy-forward cut | 84 | Backup |
 
 ## Recommended Package
 
 - Title: `Why "Buy 1 Get 1 Free" Beats "50% Off"`
-- Thumbnail concept: Variant D — face-zoom meltdown, WIT screaming with two crushed bottles next to a giant red `$10` receipt (crossed-out `$5`)
+- Thumbnail concept: Variant D - face-zoom meltdown, WIT screaming with two crushed bottles next to a giant red `$10` receipt (crossed-out `$5`)
 - Thumbnail label: `$10?!`
 - Dominant object: receipt with a massive red `$10` total
 - WIT emotion: screaming shock / betrayal
@@ -267,7 +267,7 @@ Use notes:
 - Best prompt to reuse manually: Variant A (most controlled comparison layout; reusable for any "two signs, same price" beat)
 - Most clickable: Variant D (biggest screaming face + giant `$10`) closely followed by A (`A TRICK?!`) and B (`ROBBED?!`)
 - Clearest for mobile: Variant D (one huge face + one huge number)
-- Biggest risk: Variant E (conceptual — the wallet-explosion must read instantly or it's just a grinning WIT)
+- Biggest risk: Variant E (conceptual - the wallet-explosion must read instantly or it's just a grinning WIT)
 - Recommended A/B order: D → A → B → C → E
 
 ## YouTube Description
@@ -275,7 +275,7 @@ Use notes:
 ### Final Description
 
 ```text
-"50% off" and "Buy 1 Get 1 Free" can cost you the exact same $5 per item — so they feel like the same
+"50% off" and "Buy 1 Get 1 Free" can cost you the exact same $5 per item - so they feel like the same
 deal. They're not.
 
 One of them quietly doubles the store's profit and gets you to spend more, while you walk out smiling.
@@ -285,13 +285,13 @@ explain the one word that switches off the part of your brain that does math.
 You'll learn:
 • Why the per-item price can be identical but the deals are not
 • How "Buy 1 Get 1 Free" can roughly double a store's profit (and when it doesn't)
-• Why "free" feels better than "half price" — even when it costs you more
+• Why "free" feels better than "half price" - even when it costs you more
 • The hidden "Buy 1 Get 1 50% off" trick that's really only 25% off
 • When 50% off is actually the smarter choice for YOU
 
 A discount cuts the price. "Free" cuts your judgment.
 
-This is "Why It Works" — money, the internet, and modern life, explained in simple English without the
+This is "Why It Works" - money, the internet, and modern life, explained in simple English without the
 boring part.
 
 #WhyItWorks #BuyOneGetOneFree #MoneyTips
@@ -301,7 +301,7 @@ boring part.
 
 ```text
 You see "50% OFF" on one shelf and "BUY 1 GET 1 FREE" on the next. Same $5 an item. Same deal, right?
-Wrong — and the store is counting on you believing it.
+Wrong - and the store is counting on you believing it.
 ```
 
 ### Chapters
@@ -350,20 +350,20 @@ spend less money, deal psychology, learn english money, simple english explainer
 ```text
 Quick honest note: "Buy 1 Get 1 Free" only roughly doubles the store's profit when the item is
 high-margin AND you actually take both units. On cheap staples (milk, bread) it's often a "loss leader"
-— the store loses a little to get you in the door. And if you only needed ONE, 50% off is the better
+- the store loses a little to get you in the door. And if you only needed ONE, 50% off is the better
 deal for you. What's the most pointless "free" thing a BOGO ever talked you into? 👇
 ```
 
 ## Scorecard Notes
 
-- 1-second clarity (`/15`): 14 — two tags + "SAME?" reads instantly at mobile size
-- Curiosity gap (`/20`): 19 — "same $5, but one beats the other" is a clean "wait, that's true"
-- Visual contradiction (`/15`): 14 — identical price, two signs; the core motif is built in
-- WIT emotion (`/10`): 9 — suspicious math face, one clear readable emotion
-- Title strength (`/15`): 14 — names the hidden winner, learner-simple, specific
-- Title-thumbnail contrast (`/10`): 9 — title names the logic, thumbnail shows the situation; no phrase repeat
-- First 10 seconds promise (`/10`): 9 — hook beats pay off the click by second 10
-- Learner-friendly clarity (`/5`): 4 — high-frequency shopping English ("free", "half price", "$5")
+- 1-second clarity (`/15`): 14 - two tags + "SAME?" reads instantly at mobile size
+- Curiosity gap (`/20`): 19 - "same $5, but one beats the other" is a clean "wait, that's true"
+- Visual contradiction (`/15`): 14 - identical price, two signs; the core motif is built in
+- WIT emotion (`/10`): 9 - suspicious math face, one clear readable emotion
+- Title strength (`/15`): 14 - names the hidden winner, learner-simple, specific
+- Title-thumbnail contrast (`/10`): 9 - title names the logic, thumbnail shows the situation; no phrase repeat
+- First 10 seconds promise (`/10`): 9 - hook beats pay off the click by second 10
+- Learner-friendly clarity (`/5`): 4 - high-frequency shopping English ("free", "half price", "$5")
 - Hard fails: none triggered
 - Total: `92/100`
 

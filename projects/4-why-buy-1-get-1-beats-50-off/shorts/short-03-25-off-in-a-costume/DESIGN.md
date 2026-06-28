@@ -1,10 +1,10 @@
-# Short 03 — "25% Off In A Costume"
+# Short 03 - "25% Off In A Costume"
 
 Native portrait HyperFrames rebuild · `1080x1920` · port `1103` · comp duration `21.30s` (audio `19.989s` + payoff hold).
-Source section: S7 (free cuts your judgment — the payoff). Complete standalone short — **NO CTA**.
+Source section: S7 (free cuts your judgment - the payoff). Complete standalone short - **NO CTA**.
 
 ## One idea
-The two signs play different games: 50% off cuts the PRICE, "free" cuts your JUDGMENT. So "buy one, get one 50% off" isn't free anything — it's 25% off, in a costume.
+The two signs play different games: 50% off cuts the PRICE, "free" cuts your JUDGMENT. So "buy one, get one 50% off" isn't free anything - it's 25% off, in a costume.
 
 ## Scenes (real photo base + top/bottom scrim each)
 | Scene | Base | Track | Window | WIT | Hero card(s) |
@@ -23,10 +23,10 @@ B and C share the cutmoney base (the scissor-cut €50 note literally illustrate
 Punchlines ("cuts the PRICE/JUDGMENT", the payoff) carried by the on-screen cards, never duplicated in a caption; captions clear before each card pops.
 
 ## WIT note
-The `thinking` and `shocked` pose PNGs sit lower in their canvas than `talking-front`, so the centered caption clipped the chin. Fixed with per-pose overrides `#witThinking{bottom:540px}` / `#witShocked{bottom:520px}` to lift the head clear of the caption band (body bleeds below the bottom edge, which is allowed). **General lesson: WIT face height is pose-dependent — always snapshot a caption-over-WIT beat per pose.**
+The `thinking` and `shocked` pose PNGs sit lower in their canvas than `talking-front`, so the centered caption clipped the chin. Fixed with per-pose overrides `#witThinking{bottom:540px}` / `#witShocked{bottom:520px}` to lift the head clear of the caption band (body bleeds below the bottom edge, which is allowed). **General lesson: WIT face height is pose-dependent - always snapshot a caption-over-WIT beat per pose.**
 
 ## Voiceover
-`voiceover/short-03.mp3` — approved voice `am_eric / 0.84 / en-us`, 19.989s. "shush" spelled out (not "shh") so kokoro speaks the word. Timings `voiceover/short-03-word-timings.json` (whisper-tiny.en; final word "costume." end clamped 22.44→19.989 to fix the whisper end-of-audio glitch).
+`voiceover/short-03.mp3` - approved voice `am_eric / 0.84 / en-us`, 19.989s. "shush" spelled out (not "shh") so kokoro speaks the word. Timings `voiceover/short-03-word-timings.json` (whisper-tiny.en; final word "costume." end clamped 22.44→19.989 to fix the whisper end-of-audio glitch).
 
 ## QA
 - `lint`/`validate`: 0 errors. Non-blocking: `overlapping_gsap_tweens` 0–0.42s (intentional opening pop); WCAG contrast false positives (colored key text sampled while cards are hidden).

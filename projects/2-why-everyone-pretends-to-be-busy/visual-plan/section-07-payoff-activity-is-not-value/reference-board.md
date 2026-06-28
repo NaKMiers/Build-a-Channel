@@ -16,11 +16,11 @@
 - Scene A: `ACTIVITY ≠ VALUE` board.
 - Scene B: red "rewarded" labels (AVAILABLE/FAST/OVERLOADED) vs green "what real work needs" (FOCUS/QUIET/TIME) + NOT LAZY / SAFER THAN THOUGHTFUL.
 - Scene C: three rows HIGHLIGHT≠LEARN / REPLY≠SOLVE / ORGANIZE≠MAKE (students/workers/creators).
-- Scene D: real-UI chat — the honest reply "I'm protecting my attention from pointless noise" struck as "too honest for a Tuesday" → board `BE HONEST ABOUT WHAT MATTERS`.
+- Scene D: real-UI chat - the honest reply "I'm protecting my attention from pointless noise" struck as "too honest for a Tuesday" → board `BE HONEST ABOUT WHAT MATTERS`.
 - Scene E: real-UI Google Calendar packed with red "URGENT" events (using the real gcal icon) = "a calendar with Wi-Fi"; final label; WIT trapped.
 
 ## Rejected / not used
-- ss-OGBUJERCEV, ss-AUNO6KK0TL (visible Apple logos), ss-MY9TVNEESX (marble too close to S5 survey desk), Wikimedia "Person writing / Woman typing / note-taking" (real faces — no-face channel).
+- ss-OGBUJERCEV, ss-AUNO6KK0TL (visible Apple logos), ss-MY9TVNEESX (marble too close to S5 survey desk), Wikimedia "Person writing / Woman typing / note-taking" (real faces - no-face channel).
 
 ## Note
 Real backgrounds per owner liveliness preference; real-UI (calendar/chat) per standing real-UI preference (depict, not endorse; no private data; no pixel-copied screenshots). Bases reused in D/E are non-adjacent and the UI dominates the frame; A/B/C bases are distinct. Payoff deliberately ties the calendar motif together.

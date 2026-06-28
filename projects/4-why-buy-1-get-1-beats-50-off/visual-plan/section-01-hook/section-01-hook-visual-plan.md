@@ -11,13 +11,13 @@ Status:
 
 ## Section Goal
 
-Land the impossible-sounding claim in the first ~5s (a store can give it FREE and still beat half price), then frame the whole thing as a magic trick the viewer is the victim of — "you are the rabbit." Make the title promise visible fast and set the magic-show motif that pays off in the final beat.
+Land the impossible-sounding claim in the first ~5s (a store can give it FREE and still beat half price), then frame the whole thing as a magic trick the viewer is the victim of - "you are the rabbit." Make the title promise visible fast and set the magic-show motif that pays off in the final beat.
 
 ## Source Inputs
 
 - Script: `02-script.md` → Section 1
 - Voiceover: `voiceover/section-01-hook/scratch-audio/section-01-hook-david23-am_eric-0.82.mp3`
-- Script promise: "free" beats "50% off" — a trick, not generosity
+- Script promise: "free" beats "50% off" - a trick, not generosity
 - Section duration: `23.019s` (David23 / am_eric / 0.82)
 
 ## Narration
@@ -52,9 +52,9 @@ Yeah. Stores would rather hand you a freebie than knock fifty percent off. That 
 
 | Big Scene | Local Time | Voice Range | Persistent Base Visual | Why This Scene Exists | When To Cut Away | Reference Basis | Asset Path / Prompt |
 |---|---:|---|---|---|---|---|---|
-| A — Store & two signs | 0.0–8.5s | "Here is something..." → "...at half price." | Shopping cart in a store (real photo) | Ground the claim in a real store; present the two competing signs | When voice moves to the per-item price / profit | shopping cart CC0 | `assets/visual-references/section-01-hook/base-a-shopping-cart.jpg` |
-| B — The profit reveal | 8.5–17.5s | "Same product..." → "...the 'free' one." | USD cash pile (real photo) | Show same $5 to you, but FREE doubles the store's take | When voice names it "a magic trick" | USD cash CC0 | `.../base-b-cash-usd.jpg` |
-| C — Magic trick / rabbit | 17.5–23.019s | "Yeah. Stores would rather..." → "...the rabbit." | Red curtain + black magic top hat (real photos) | Pay off the magic-trick frame; the shopper IS the rabbit | end of section | red curtain CC0 + magic hat CC BY-SA 3.0 | `.../base-c-red-curtain.jpg`, `.../base-c-magic-hat.jpg` |
+| A - Store & two signs | 0.0–8.5s | "Here is something..." → "...at half price." | Shopping cart in a store (real photo) | Ground the claim in a real store; present the two competing signs | When voice moves to the per-item price / profit | shopping cart CC0 | `assets/visual-references/section-01-hook/base-a-shopping-cart.jpg` |
+| B - The profit reveal | 8.5–17.5s | "Same product..." → "...the 'free' one." | USD cash pile (real photo) | Show same $5 to you, but FREE doubles the store's take | When voice names it "a magic trick" | USD cash CC0 | `.../base-b-cash-usd.jpg` |
+| C - Magic trick / rabbit | 17.5–23.019s | "Yeah. Stores would rather..." → "...the rabbit." | Red curtain + black magic top hat (real photos) | Pay off the magic-trick frame; the shopper IS the rabbit | end of section | red curtain CC0 + magic hat CC BY-SA 3.0 | `.../base-c-red-curtain.jpg`, `.../base-c-magic-hat.jpg` |
 
 ## Cue State Timeline
 
@@ -62,10 +62,10 @@ Yeah. Stores would rather hand you a freebie than knock fifty percent off. That 
 |---|---:|---|---|---|---|---|---|---|---|---|
 | A1 | 0.0–3.0 | "...sounds impossible." | A | Cart base in; small handwritten label top-left | cart base | hard-show | `price-tag-suspicion` RIGHT, ~1/3 frame, head+torso in frame | label: "Sounds impossible." | base-a | open on the contradiction, WIT already suspicious |
 | A2 | 3.0–8.5 | "for free... than at half price." | A | Two signs hard-show: LEFT card "50% OFF · $5/item", RIGHT giant red "FREE!" sticker "$5/item"; FREE pops | cart base, WIT | impact (FREE sticker pops) | WIT stays RIGHT, suspicious | signs: "50% OFF $5/item" / "FREE! $5/item" | CSS signs | make the two-sign claim visible by ~3s |
-| B1 | 8.5–11.5 | "Same product. Same shelf. $5 either way." | B | Cut to cash base; centered strip "Same product · same shelf · $5 each" | cash base | transition + hard-show | (no WIT — breathing beat) | strip label | base-b | establish you pay the same either way |
+| B1 | 8.5–11.5 | "Same product. Same shelf. $5 either way." | B | Cut to cash base; centered strip "Same product · same shelf · $5 each" | cash base | transition + hard-show | (no WIT - breathing beat) | strip label | base-b | establish you pay the same either way |
 | B2 | 11.5–15.0 | "one of these signs doubles the store's profit." | B | Profit meter: "50% OFF → +$1" one short bar; "FREE → +$2" two-tall bar grows; ×2 stamp | cash base, profit meter | impact (bar doubles, ×2 stamp) | (no WIT) | meter labels "+$1" / "+$2", "×2" stamp | CSS meter | show the doubling literally, not just spoken |
 | B3 | 15.0–17.5 | "surprise, it is the 'free' one." | B | Red circle snaps around the FREE bar; WIT panics | cash base, meter | impact (red circle) | `hidden-fee-panic` LEFT, ~1/2 frame, head+torso in; meter stays RIGHT | red circle on FREE bar | WIT panic | name the culprit; WIT feels it |
-| C1 | 17.5–20.0 | "That is not generosity. A magic trick." | C | Cut to red curtain; magic hat lands center-low; "MAGIC TRICK" kinetic headline top | curtain base | transition + impact (headline) | (WIT enters next beat) | headline "NOT GENEROSITY — A MAGIC TRICK" | base-c curtain + hat | flip frame to the magic show |
+| C1 | 17.5–20.0 | "That is not generosity. A magic trick." | C | Cut to red curtain; magic hat lands center-low; "MAGIC TRICK" kinetic headline top | curtain base | transition + impact (headline) | (WIT enters next beat) | headline "NOT GENEROSITY - A MAGIC TRICK" | base-c curtain + hat | flip frame to the magic show |
 | C2 | 20.0–23.019 | "And you are the rabbit." | C | Giant WIT rises FROM the hat as the rabbit; payoff headline "YOU ARE THE RABBIT" lands above | curtain + hat | impact (WIT rise + headline stamp) | `betrayed` CENTER, ~1/2 frame, rising from hat, face fully clear, headline ABOVE (not over face) | "YOU ARE THE RABBIT" | base-c + WIT | the punchline; WIT is the emotional subject |
 
 ## WIT Pose Plan
@@ -74,7 +74,7 @@ Yeah. Stores would rather hand you a freebie than knock fifty percent off. That 
 |---|---:|---|---|---|---|---|
 | A1–A2 | 0.0–8.5 | suspicion | `wit-pose-price-tag-suspicion.png` | RIGHT, ~1/3 frame, anchored high (legs may crop) | face/glasses/shoulders fully in; signs cleared to LEFT | the viewer's "wait, what?" at the two signs |
 | B3 | 15.0–17.5 | panic | `wit-pose-hidden-fee-panic.png` | LEFT, ~1/2 frame, anchored high | face/glasses/shoulders in; profit meter cleared to RIGHT | the gut-punch when FREE is the winner |
-| C2 | 20.0–23.0 | betrayed | `wit-pose-betrayed.png` | CENTER, ~1/2 frame, rising from the hat mouth | face fully clear; headline sits ABOVE the head, never over the face | the rabbit reveal — WIT is the joke |
+| C2 | 20.0–23.0 | betrayed | `wit-pose-betrayed.png` | CENTER, ~1/2 frame, rising from the hat mouth | face fully clear; headline sits ABOVE the head, never over the face | the rabbit reveal - WIT is the joke |
 
 WIT density note:
 
@@ -88,11 +88,11 @@ WIT density note:
 | Cue | Time | Text / Markup | Motion Type | Target Object | Why It Helps | Avoid / Do Not Use |
 |---|---:|---|---|---|---|---|
 | A1 | 0.0 | "Sounds impossible." | hard-show | top-left, over cart | sets the contradiction tone | no extra labels |
-| A2 | 3.0 | "50% OFF · $5/item" / "FREE! · $5/item" | hard-show + FREE pop | two signs | the whole claim in one frame | don't animate both equally — only FREE pops |
+| A2 | 3.0 | "50% OFF · $5/item" / "FREE! · $5/item" | hard-show + FREE pop | two signs | the whole claim in one frame | don't animate both equally - only FREE pops |
 | B1 | 8.5 | "Same product · same shelf · $5 each" | hard-show | center strip | you pay the same either way | keep above subtitle zone |
 | B2 | 11.5 | "+$1" / "+$2" / "×2" | impact | profit bars | the doubling is the point | no extra numbers |
 | B3 | 15.0 | red circle | impact | FREE bar | marks the culprit ("the free one") | no decorative red marks elsewhere |
-| C1 | 17.5 | "NOT GENEROSITY — A MAGIC TRICK" | impact | top headline | reframes to the trick | keep clear of where WIT enters |
+| C1 | 17.5 | "NOT GENEROSITY - A MAGIC TRICK" | impact | top headline | reframes to the trick | keep clear of where WIT enters |
 | C2 | 20.0 | "YOU ARE THE RABBIT" | impact stamp | top headline, above WIT | the punchline | must NOT cover WIT's face |
 
 ## Reference And Asset Plan
@@ -136,7 +136,7 @@ WIT density note:
 - Suggested inspect timestamps: 2.5s, 5.5s, 10s, 13s, 16s, 18.5s, 21.5s
 - Suggested screenshot/contact-sheet QA timestamps: 5.5s (two signs readable), 13s (profit doubling), 16s (WIT panic + red circle), 21.5s (rabbit reveal, headline not covering face)
 - Suggested MP4 QA frame timestamps: only if export is explicitly requested
-- Build risks: cash/cart bases are ~1024px — keep a dark scrim + large overlays so softness reads as styling; magic hat is 565x850, keep it ≤~480px wide; ensure "YOU ARE THE RABBIT" sits above WIT's head
+- Build risks: cash/cart bases are ~1024px - keep a dark scrim + large overlays so softness reads as styling; magic hat is 565x850, keep it ≤~480px wide; ensure "YOU ARE THE RABBIT" sits above WIT's head
 - Must not invent: scene order, base images, the two-sign claim, the profit-doubling device, WIT poses/sides/scale, label text, which beats use impact motion
 
 ## Review-Prevention Checklist
@@ -151,7 +151,7 @@ WIT density note:
 - WIT crop safe: yes (anchor high, legs only)
 - WIT does not cover text/evidence: yes (signs/meter on the opposite side; headline above face)
 - red markup targets exact objects: yes (FREE bar only)
-- scene bases visually differentiated: yes (store / cash / curtain) — curtain is an intentional magic-frame payoff, not a repeat
+- scene bases visually differentiated: yes (store / cash / curtain) - curtain is an intentional magic-frame payoff, not a repeat
 - render does not need to invent timing/layout/assets: yes
 
 ## Approval Checks

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Short 02 — The Hostage Shampoo</title>
+<title>Short 02 - The Hostage Shampoo</title>
 <style>
   @font-face{ font-family:'Patrick Hand'; src:url('assets/fonts/patrick-hand-latin.woff2') format('woff2'); font-display:swap; }
   *{ box-sizing:border-box; }
@@ -18,13 +18,13 @@
   .scrim-bottom{ position:absolute; bottom:0; left:0; right:0; height:600px;
                  background:linear-gradient(0deg, rgba(0,0,0,0.58), rgba(0,0,0,0)); }
 
-  /* WIT — big, face above the centered caption, body bleeds toward the bottom */
+  /* WIT - big, face above the centered caption, body bleeds toward the bottom */
   .wit{ position:absolute; left:50%; bottom:360px; transform:translateX(-50%);
         width:960px; transform-origin:center bottom; opacity:0;
         filter:drop-shadow(0 14px 30px rgba(0,0,0,0.55)); }
   .wit-layer{ position:absolute; inset:0; pointer-events:none; }
 
-  /* Hero cards / handwritten labels — upper third */
+  /* Hero cards / handwritten labels - upper third */
   .card-layer{ position:absolute; inset:0; }
   .label{ position:absolute; left:50%; transform:translateX(-50%) rotate(-1.6deg);
           background:#fdf6e3; color:#241c12; font-size:72px; line-height:1.06;
@@ -57,7 +57,7 @@
           padding:20px 48px; border-radius:22px; border:7px solid #241c12;
           box-shadow:0 18px 40px rgba(0,0,0,0.55); text-align:center; white-space:nowrap; opacity:0; }
 
-  /* payoff card — full-price shampoo + 1 hostage */
+  /* payoff card - full-price shampoo + 1 hostage */
   .payoff{ position:absolute; left:50%; top:250px; transform:translateX(-50%) rotate(-2deg);
            color:#241c12; background:#fdf6e3; font-size:82px; line-height:1.02;
            padding:22px 44px; border-radius:22px; border:7px solid #241c12;
@@ -66,7 +66,7 @@
                     font-size:70px; letter-spacing:1px; padding:8px 22px; border-radius:14px;
                     border:5px solid #fff; }
 
-  /* Captions — distinct subtitle style, vertically centered */
+  /* Captions - distinct subtitle style, vertically centered */
   .caption-layer{ position:absolute; inset:0; }
   .cap{ position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);
         background:rgba(16,12,9,0.5); border-radius:22px; padding:14px 32px;
@@ -167,7 +167,7 @@
     pop('#lblWord', 15.66);            // "selling you a word"
     pop('#lblStaple', 16.46);          // "with a full-price purchase stapled"
 
-    // ---- Scene D (prop-shampoo) : the payoff — a hostage ----
+    // ---- Scene D (prop-shampoo) : the payoff - a hostage ----
     fadeScene('#sceneD', 18.10);
     hide('#witAwkward', 18.10); hide('#lblWord', 18.10); hide('#lblStaple', 18.10);
     show('#witBetrayed', 18.14);

@@ -6,7 +6,7 @@
 - Primary language: `English`
 - Format: `no-face explainer channel`
 - Main audience lens: `English learners, level A2–C1 (anchor at B1)`
-- Competitive advantage: `interesting English` — entertainment-first explainers; learners come for genuinely fun, current topics and improve their English as a side effect (the motivation to keep watching is the motivation to learn)
+- Competitive advantage: `interesting English` - entertainment-first explainers; learners come for genuinely fun, current topics and improve their English as a side effect (the motivation to keep watching is the motivation to learn)
 - Core promise: `Explain money, the internet, and modern life in simple, funny English that English learners can enjoy without feeling like they are studying.`
 - Core feel: `smart topics, simple English, dry humor, high curiosity, learner-friendly clarity`
 
@@ -190,7 +190,7 @@ The voice should not be:
 - Fake-deep
 - Overly corporate
 
-### Edge & profanity (owner-confirmed 2026-06-28 — overrides the earlier "learner-clean / not slang-heavy" caution)
+### Edge & profanity (owner-confirmed 2026-06-28 - overrides the earlier "learner-clean / not slang-heavy" caution)
 
 Edginess is wanted: profanity (dumb, stupid, damn, hell, shit, etc.), savage takes, and comedic
 mockery of public figures are allowed because viewers find them real and engaging. "Riding close to
@@ -313,7 +313,7 @@ The working rule is:
 
 Future videos should regularly use recognizable objects, paper, phones, bills, receipts, desks, mock app screens, or other lived-in assets when they make the explanation clearer or funnier.
 Prefer self-shot, generated, licensed, public-domain, or self-made mockup assets with source notes.
-Avoid real private data, unclear copyrighted images, and pixel-copied private app screens. NOTE (owner-approved 2026-06-22): real app icons and clean phone/app/notification/chat UI mockups ARE a preferred way to illustrate the script when it depicts those actual apps/products — see `brand-system.md` → "Real-UI Illustration."
+Avoid real private data, unclear copyrighted images, and pixel-copied private app screens. NOTE (owner-approved 2026-06-22): real app icons and clean phone/app/notification/chat UI mockups ARE a preferred way to illustrate the script when it depicts those actual apps/products - see `brand-system.md` → "Real-UI Illustration."
 
 Reusable comedy assets are part of the default channel production system.
 Use [visual-production.md](C:\ME\THINGS\Build a Channel\.agents\_shared\systems\visual-production.md) when future videos need recurring funny objects, red markup, hidden payment props, internet traps, modern-life pain objects, or WIT interaction props.

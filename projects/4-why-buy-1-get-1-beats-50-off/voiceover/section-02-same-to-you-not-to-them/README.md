@@ -15,13 +15,13 @@ Status:
 - speed: `0.82` (unified video speed, matching Section 1)
 - language: `en-us`
 - tone: young, clear, lightly dry, learner-friendly; calm reveal of the store-side math, then a dry Wedgwood roast
-- learner clarity notes: rev 2.1 — owner found the original confusing because the profit numbers were stated without the subtraction. The math is now SPOKEN aloud ("Five minus four... the store keeps one dollar" / "Ten minus eight... two dollars"). Each operation gets the heaviest holds so numbers land one at a time. "you" = shopper, "the store" = seller throughout (no pronoun flip). "Double." lands alone as the payoff. Hold before "You are just the latest."
+- learner clarity notes: rev 2.1 - owner found the original confusing because the profit numbers were stated without the subtraction. The math is now SPOKEN aloud ("Five minus four... the store keeps one dollar" / "Ten minus eight... two dollars"). Each operation gets the heaviest holds so numbers land one at a time. "you" = shopper, "the store" = seller throughout (no pronoun flip). "Double." lands alone as the payoff. Hold before "You are just the latest."
 
 ## Pacing
 
 Authored in the approved spacious template (heavy `...` holds, trailing `...` on setups, `. .`
-staccato on punchy short lines). The subtraction lines get the heaviest holds — the operation hangs,
-then the result lands — shaped with stacked `...`, NOT a speed change (the whole video stays at
+staccato on punchy short lines). The subtraction lines get the heaviest holds - the operation hangs,
+then the result lands - shaped with stacked `...`, NOT a speed change (the whole video stays at
 `0.82`). Real pacing lives only in `tts-inputs/section-02-same-to-you-not-to-them-tts.txt`; the
 canonical `section-02-same-to-you-not-to-them-script.txt` keeps the clean wording that matches
 `02-script.md` rev 2.1.

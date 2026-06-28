@@ -60,7 +60,7 @@ Mağaza onu üretmek için dört harcadı.
 
 16
 00:00:34,080 --> 00:00:37,080
-Beş eksi dört — mağazaya bir dolar kalıyor.
+Beş eksi dört - mağazaya bir dolar kalıyor.
 
 17
 00:00:37,080 --> 00:00:39,680
@@ -72,7 +72,7 @@ O iki tanenin mağazaya üretimi sekize mal oluyor.
 
 19
 00:00:41,960 --> 00:00:45,620
-On eksi sekiz — mağazaya iki dolar kalıyor. İki katı.
+On eksi sekiz - mağazaya iki dolar kalıyor. İki katı.
 
 20
 00:00:45,620 --> 00:00:48,200
@@ -84,7 +84,7 @@ Ama mağaza için kâr iki katı.
 
 22
 00:00:50,020 --> 00:00:52,640
-Ve tabela hiç değişmedi — hâlâ on yazıyor.
+Ve tabela hiç değişmedi - hâlâ on yazıyor.
 
 23
 00:00:52,640 --> 00:00:55,260
@@ -100,7 +100,7 @@ Wedgwood adında bir çömlekçi bunu ta bin yedi yüzlerde uyguluyormuş.
 
 26
 00:01:00,080 --> 00:01:03,813
-Yani hayır — ilk enayi sen değilsin. Sadece en sonuncususun.
+Yani hayır - ilk enayi sen değilsin. Sadece en sonuncususun.
 
 27
 00:01:03,813 --> 00:01:06,787

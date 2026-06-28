@@ -13,7 +13,7 @@
 | base-fridge.jpg | PD photo | Wikimedia | safe asset | open fridge = "sad vegetable at the back" | Scene 5 |
 
 ## Rejected
-- app-sketch wireframe (vague, low-res, repeated — v1)
+- app-sketch wireframe (vague, low-res, repeated - v1)
 - StockSnap/rawpixel desks & app-sketch (≤960–1300px, below full-HD)
 - branded phones (Blackview/LG), people-laptops (no-face), watermarked rawpixel fridge
 

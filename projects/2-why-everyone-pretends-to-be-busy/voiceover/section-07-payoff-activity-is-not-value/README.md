@@ -15,7 +15,7 @@ Status:
 - id: `am_eric`
 - speed: `0.86` (matching the user-approved Section 4-6 pace)
 - language: `en-us`
-- tone: calm, deliberate payoff — calmer than the chaotic middle sections
+- tone: calm, deliberate payoff - calmer than the chaotic middle sections
 - delivery: pause-tuned (line breaks + comma before "with value"); `[slower]` on the insight line; final line "trapped in a calendar with Wi-Fi" is the closing dry button
 - limitation: Kokoro has no true per-word emphasis; commas give only a slight lift
 
@@ -27,7 +27,7 @@ Keep one useful MP3 preview file only unless a renderer requires another format.
 
 - File: `scratch-audio/section-07-payoff-activity-is-not-value-david23-am_eric-0.86.mp3`
 - Duration: `46.72s`
-- Use: `approved voice, 0.86 pace — production preview`
+- Use: `approved voice, 0.86 pace - production preview`
 - Tool: `hyperframes@0.6.76 tts` (Kokoro)
 - Caveat: Duration (~47s) is under the script estimate (~60s); visual production may add holds. 0.86 to match Sections 4-6; sections 1-3 are still 0.84.
 

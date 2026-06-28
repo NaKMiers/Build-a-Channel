@@ -15,7 +15,7 @@
 | 4 WIT poses | shared manifest | safe asset | typing / phone-panic / deadpan / suspicious | A/B/C/D |
 
 ## CSS-built on top (no pixel-copied screenshots)
-- Scene B: a packed CALENDAR card (gcal icon + red events), an unread INBOX card (gmail icon + "Inbox 47" + unread rows), and phone PANIC notifications — the "fake urgency machine."
+- Scene B: a packed CALENDAR card (gcal icon + red events), an unread INBOX card (gmail icon + "Inbox 47" + unread rows), and phone PANIC notifications - the "fake urgency machine."
 - Scene D: red cage bars over the warm desk = "trapped in busy" (the channel's calendar-cage motif), with the dry "THERE IS A DIFFERENCE" button.
 
 ## Note

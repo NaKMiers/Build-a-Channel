@@ -1,4 +1,4 @@
-# Section 4 Marked Script — Your Apps Invented Emergencies
+# Section 4 Marked Script - Your Apps Invented Emergencies
 
 Video: `Why Everyone Pretends To Be Busy`
 

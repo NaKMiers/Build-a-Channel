@@ -1,8 +1,8 @@
-# Section 7 Visual Plan — Payoff: Activity Is Not Value
+# Section 7 Visual Plan - Payoff: Activity Is Not Value
 
 Files:
-- `section-07-payoff-activity-is-not-value-visual-plan.md` — scene/cue plan (5 scenes, 11 cues)
-- `reference-board.md` — reference pass (3 real bases + real-UI boards/chat/calendar)
+- `section-07-payoff-activity-is-not-value-visual-plan.md` - scene/cue plan (5 scenes, 11 cues)
+- `reference-board.md` - reference pass (3 real bases + real-UI boards/chat/calendar)
 
 Render lives at:
 `section-previews/section-07-payoff-activity-is-not-value/` (port 1007)

@@ -1,4 +1,4 @@
-# Section 5 Implementation — Visible Work Beats Quiet Thinking
+# Section 5 Implementation - Visible Work Beats Quiet Thinking
 
 Composition: `Section05Visible` · 1920x1080 · 42.859s · port 1005
 
@@ -9,11 +9,11 @@ Composition: `Section05Visible` · 1920x1080 · 42.859s · port 1005
   (poll bar width growth; Trello card DOING→DONE translate).
 
 ## Scenes
-1. **A — Google Meet call grid** (0–10.54): dark Meet UI, top bar w/ Meet icon, 6 tiles (initials avatars, no faces), speaking tile highlighted, control bar w/ red end-call.
-2. **B — wall photo** (10.5–19.14): `base-wall.jpg` + shade; WIT thinking then deadpan.
-3. **C — survey poll card** (19.1–25.8): Yes 15% / Not really 85% bars grow on cue; "— survey of managers".
-4. **D — Trello board** (25.76–35.08): TO DO / DOING / DONE columns + cards; `.movecard` translates DOING→DONE (x:-520→0) over 1.5s at 30.56.
-5. **E — Sheets on theater stage** (35.04–42.859): red curtains + spotlight + Q4_updates spreadsheet; gold ★ badge pops at 40.76.
+1. **A - Google Meet call grid** (0–10.54): dark Meet UI, top bar w/ Meet icon, 6 tiles (initials avatars, no faces), speaking tile highlighted, control bar w/ red end-call.
+2. **B - wall photo** (10.5–19.14): `base-wall.jpg` + shade; WIT thinking then deadpan.
+3. **C - survey poll card** (19.1–25.8): Yes 15% / Not really 85% bars grow on cue; "- survey of managers".
+4. **D - Trello board** (25.76–35.08): TO DO / DOING / DONE columns + cards; `.movecard` translates DOING→DONE (x:-520→0) over 1.5s at 30.56.
+5. **E - Sheets on theater stage** (35.04–42.859): red curtains + spotlight + Q4_updates spreadsheet; gold ★ badge pops at 40.76.
 
 ## Cue timing (pinned to section-05-word-timings.json)
 C1 0.0 · C2 3.48 · C3 10.5 · C4 13.8 · C5 19.1 · C6 25.76 · C7 28.9 · C8 35.04 · C9 37.28.
@@ -26,7 +26,7 @@ updates 33.20 / theater 36.22 / tickets 39.20 / star 40.76–40.90.
 - `hyperframes validate`: 0 errors; contrast advisories are fixed-sample-time measurements of
   off-screen elements (same pattern as prior sections); visible-time labels use cream/red/green
   cards with dark/contrasting text.
-- `hyperframes snapshot --at 2,6,9,12.5,18,22,27.5,31.8,36.5,41.5`: all 5 scenes verified —
+- `hyperframes snapshot --at 2,6,9,12.5,18,22,27.5,31.8,36.5,41.5`: all 5 scenes verified -
   Meet grid + label, REPLY/MEETINGS/CIRCLING labels, wall+THINKING, wall+STARING+deadpan,
   poll 15/85 bars, Trello board, card moved to DONE, Sheets+THEATER, TICKETS+THE STAR+defeated WIT.
 
@@ -38,7 +38,7 @@ updates 33.20 / theater 36.22 / tickets 39.20 / star 40.76–40.90.
   shadow) over a real people-free CC desk photo (`.deskphoto`) + a radial `.deskscrim`. Reads as the
   app on a real screen on a real desk.
   - A: `base-desk-call.jpg` (white desk + MacBook); C: `base-desk-survey.jpg` (marble + iPad/notepad);
-    D: `base-desk-board.jpg` (dark wood + "To Do List" notepad) — distinct surfaces, no faces.
+    D: `base-desk-board.jpg` (dark wood + "To Do List" notepad) - distinct surfaces, no faces.
 - Internal UI rescaled to fit the 1500x846 window (meet tiles/avatars, poll card, kanban columns/cards).
 - Trello `.movecard` columns rescaled → DOING→DONE translate offset updated x:-520→-460.
 - Scene B (real wall) unchanged.

@@ -20,7 +20,7 @@ Port: `1007`
 
 ## Timing
 
-`estimated` — no word-timings file; whisper-cpp not available to generate one. Cue times estimated from the marked script + 29.312s. GSAP timed reveals: landfill note 5.79; four reasons 16.17/17.5/19.36; price-tag smile 23.18; deadpan payoff 26.7.
+`estimated` - no word-timings file; whisper-cpp not available to generate one. Cue times estimated from the marked script + 29.312s. GSAP timed reveals: landfill note 5.79; four reasons 16.17/17.5/19.36; price-tag smile 23.18; deadpan payoff 26.7.
 
 ## Motion rules
 
@@ -36,4 +36,4 @@ Port: `1007`
 ## Known notes
 
 - Timing is estimated; confirm sync in Studio against the audio (or re-pin from a generated word-timings file later).
-- Scene 1's e-waste photo has a baked-in "ALL TRASH" arrow — generic and on-theme; left as-is.
+- Scene 1's e-waste photo has a baked-in "ALL TRASH" arrow - generic and on-theme; left as-is.

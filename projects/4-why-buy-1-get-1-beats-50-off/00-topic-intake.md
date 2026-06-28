@@ -12,7 +12,7 @@ running "50% off," even though the two deals look identical to the shopper. The 
 instinct: "buy 1 get 1 is more profit, isn't it? but it looks the same."
 
 Confirmed: the instinct is correct under normal supermarket conditions (high margin, shopper
-takes both units). The deals are NOT equal — to the store, or to the buyer.
+takes both units). The deals are NOT equal - to the store, or to the buyer.
 
 ## Clean Angle
 
@@ -60,19 +60,19 @@ Honesty guardrails for the script:
 ## Channel Fit
 
 - Lane: money and spending + business and hidden pricing (core channel lane)
-- Tone fit: smart, simple, dry, funny — very strong; the dramatic irony (WIT thinks he won) is built in
-- English learner fit: pure high-frequency shopping English — "buy one get one free," "half price",
+- Tone fit: smart, simple, dry, funny - very strong; the dramatic irony (WIT thinks he won) is built in
+- English learner fit: pure high-frequency shopping English - "buy one get one free," "half price",
   "50% off", "deal", "save", "free". Instantly reusable outside the video.
 - Why now: evergreen + recession-era deal-hunting; the Vox 3.7M proves a durable English audience
 
 ## Angle Package
 
 - Topic: Why Buy 1 Get 1 Free beats 50% off
-- Contradiction: two signs, same $5-per-item price, opposite outcome — store doubles profit, you double spend
+- Contradiction: two signs, same $5-per-item price, opposite outcome - store doubles profit, you double spend
 - Recurring visual metaphor: two identical-looking price tags + a hidden profit meter behind the counter
 - Viewer pain: feeling clever about a "free" item while quietly spending more than planned
 - WIT role: walks out grinning with two of something ("I basically got paid to shop"); the register
-  behind him rings up double — the system happens TO WIT, he is not blamed
+  behind him rings up double - the system happens TO WIT, he is not blamed
 - Real-life objects: shelf price tags, shopping basket, receipt, register/total screen, "FREE" sticker
 - Final insight: a discount cuts the price; "free" cuts your judgment
 
@@ -107,7 +107,7 @@ honest math that still leaves the viewer with a useful takeaway.
 | English learner fit | 5/5 | High-frequency shopping English, simple words, reusable phrases |
 | Explanation depth | 5/5 | Margin math + volume + price anchoring + zero-price effect + the hidden "half-off" variant |
 | Packaging strength | 5/5 | Vox 3.7M proves the title works; thumbnail tension (two same tags) is obvious |
-| Production feasibility | 5/5 | Price tags, basket, receipt, register — cheap mockups, no complex UI |
+| Production feasibility | 5/5 | Price tags, basket, receipt, register - cheap mockups, no complex UI |
 | **Total** | **39/40** | Above the 30/40 threshold; no critical category below 3/5 |
 
 ## Decision
@@ -127,7 +127,7 @@ rather than "never buy BOGO."
 
 ## Next-Step Readiness
 
-- Research (step 1): ground the claims — gross-margin/markup norms for the BOGO-friendly categories
+- Research (step 1): ground the claims - gross-margin/markup norms for the BOGO-friendly categories
   (groceries, cosmetics, perishables), the zero-price / "power of free" effect (Dan Ariely,
   Predictably Irrational), price-anchoring, and the common "buy 1 get 1 50% off" variant. Find one
   real shelf/ad example per claim.

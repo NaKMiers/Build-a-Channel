@@ -101,14 +101,14 @@ Scope:
   Terms checked: `CC BY-SA 4.0`
   Safe-use note: direct texture use only; visible source-product markings are masked in HyperFrames and the frame does not claim the photographed product is defective, cheap, blocked, or criticized
 - `assets/section-06/repairability-photo-base.jpg`
-  Use: Section `6`, Big Scene `3` (repairability test, `17.98-30.9`), real opened-phone / battery / repair-tools bench behind the REPAIRABILITY definition and checklist boards — illustrates "easy to fix / replace the battery / buy the part" (added 2026-06-21 to replace the sterile screwdrivers-on-white image the reviewer flagged)
+  Use: Section `6`, Big Scene `3` (repairability test, `17.98-30.9`), real opened-phone / battery / repair-tools bench behind the REPAIRABILITY definition and checklist boards - illustrates "easy to fix / replace the battery / buy the part" (added 2026-06-21 to replace the sterile screwdrivers-on-white image the reviewer flagged)
   Source: [Wikimedia Commons - Cell Phone Repair.jpg](https://commons.wikimedia.org/wiki/File:Cell_Phone_Repair.jpg)
   Creator: `Peretz Partensky`
   Terms checked: `CC BY-SA 2.0` (https://creativecommons.org/licenses/by-sa/2.0)
   Safe-use note: no people, no visible brand logo (battery shows only a generic Li-ion warning); all labels added in HyperFrames
 - `assets/section-06/precision-screwdriver-photo-base.jpg`
   Copied from: `visual-references/section-06-repair-gets-a-security-system/real-world/precision-screwdriver-set-commons-oomlout-cc-by-sa-2.jpg`
-  Use: `SUPERSEDED 2026-06-21` — was the Big Scene `3` background; replaced by `repairability-photo-base.jpg` because the screwdrivers-on-white read as sterile/floating. File kept on disk, no longer referenced.
+  Use: `SUPERSEDED 2026-06-21` - was the Big Scene `3` background; replaced by `repairability-photo-base.jpg` because the screwdrivers-on-white read as sterile/floating. File kept on disk, no longer referenced.
   Source: [Wikimedia Commons - Precision Screwdriver Set 2.jpg](https://commons.wikimedia.org/wiki/File:Precision_Screwdriver_Set_2.jpg)
   Creator: `oomlout`
   Terms checked: `CC BY-SA 2.0`

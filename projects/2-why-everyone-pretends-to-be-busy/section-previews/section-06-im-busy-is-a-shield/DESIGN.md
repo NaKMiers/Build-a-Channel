@@ -1,12 +1,12 @@
-# Section 6 Design — "I'm Busy" Is A Shield
+# Section 6 Design - "I'm Busy" Is A Shield
 
 Composition id: `Section06Shield` · 1920x1080 · 38.04s · audio 0.86 (David23 / am_eric)
 
 ## Idea
-"I'm busy" is a socially safe defense, not a moral failure. It deflects requests, it is often genuinely true (overloaded), and it slowly becomes the only acceptable way to say no — so everyone says it.
+"I'm busy" is a socially safe defense, not a moral failure. It deflects requests, it is often genuinely true (overloaded), and it slowly becomes the only acceptable way to say no - so everyone says it.
 
 ## Real backgrounds + real-UI (owner-preferred)
-Every scene sits on a REAL people-free photo (owner: backgrounds make it lively). The metaphor (shield, speech bubbles) and the messages (1:1 + group chat with the real Messenger icon) are built in CSS on top — depict, not endorse; no private data; no pixel-copied screenshots.
+Every scene sits on a REAL people-free photo (owner: backgrounds make it lively). The metaphor (shield, speech bubbles) and the messages (1:1 + group chat with the real Messenger icon) are built in CSS on top - depict, not endorse; no private data; no pixel-copied screenshots.
 
 ## Scene Map
 | Scene | Track | Time | Real base | Build |
@@ -17,7 +17,7 @@ Every scene sits on a REAL people-free photo (owner: backgrounds make it lively)
 | D | 5 | 20.08–32.18 | base-meeting.jpg (empty meeting room) | speech bubbles: 2 struck-out (TOO RELAXED / TOO DANGEROUS) |
 | E | 6 | 32.14–38.04 | base-desk-group.jpg (grey desk + laptop/phone) | real-UI group chat full of "busy"; WIT defeated; OR BOTH |
 
-## Cue Map (track 2 — pinned to word timings)
+## Cue Map (track 2 - pinned to word timings)
 | Cue (scene group) | Beats (word@s) | WIT |
 |---|---|---|
 | cue-a | A SHIELD@3.52 · =CAN'T TAKE MORE@4.46 · =WON'T DECIDE@6.30 | deadpan-side-eye |
