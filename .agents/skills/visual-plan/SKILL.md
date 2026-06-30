@@ -180,6 +180,19 @@ keep real private data and real raw copyrighted media out (prefer caricature or 
 - **Real photo / real-looking asset as evidence + mascot drawn on top** is the channel signature
   (real photo base or floating real-UI, with the mascot reacting). A bare flat-gradient scene reads as
   "no background" - give every scene a real or real-looking base unless a deliberately blank beat is justified.
+- **Animated interactive graphics (UI mockup that PERFORMS the action)** is a high-impact device the
+  owner loves - reach for it whenever a beat describes using an app/site or asks the viewer to DO
+  something (subscribe/like/share, tap, toggle, search, buy, swipe, fill a form, watch a number change).
+  Instead of a static screen, plan the screen to act itself out: a drawn mouse cursor (or tap ripple)
+  flies in and CLICKS; buttons boing/wiggle and FLIP STATE (SUBSCRIBE->SUBSCRIBED, Like turns blue, a
+  toggle slides on); counters tick, progress bars fill, toasts/confetti pop on the click. Pin every
+  click/state-change to the spoken word (real word-timings). Build it in CSS/SVG with our own or
+  editorially-approved branding (parody UI like "WhyTube" is safe; no real screen-grabs, no fake inflated
+  numbers - keep it honest), use SVG/CSS icons + an SVG cursor (never emoji glyphs - they don't render in
+  the snapshot Chromium), and namespace decorative classes (confetti/particles) so they don't collide
+  with icon parts. This is the proven `section-08` outro pattern; treat it as a go-to for CTAs, "how it
+  works" demos, before/after toggles, and any "tap/scroll/click" beat. See `references/memory.md`
+  (2026-06-30) and `_shared/systems/visual-production.md`.
 - **Vary everything across scenes**: scene-type, composition, mascot side/scale/pose, idea-device.
   Rotate scene types (wide gag / close-up reaction / full-screen text payoff / diagram-or-receipt /
   object hero / mascot-only focus beat). No two consecutive scenes should share a layout.

@@ -68,7 +68,7 @@
     .thumb { position:relative; border-radius:12px; box-shadow:0 8px 18px rgba(0,0,0,0.45); overflow:hidden; }
     .thumb .pl { position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:0; height:0; border-left:26px solid rgba(255,255,255,0.92); border-top:16px solid transparent; border-bottom:16px solid transparent; }
     .thumb.slop { outline:4px solid #c52b1f; }
-    .thumb .ss { position:absolute; left:50%; top:50%; transform:translate(-50%,-50%) rotate(-8deg); font-family:"Segoe UI",system-ui,sans-serif; font-weight:900; font-size:26px; color:#fff; background:#c52b1f; padding:3px 12px; border-radius:7px; box-shadow:0 4px 10px rgba(0,0,0,0.5); letter-spacing:1px; }
+    .thumb .ss { opacity:0; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%) rotate(-8deg); font-family:"Segoe UI",system-ui,sans-serif; font-weight:900; font-size:26px; color:#fff; background:#c52b1f; padding:3px 12px; border-radius:7px; box-shadow:0 4px 10px rgba(0,0,0,0.5); letter-spacing:1px; }
 
     /* bobbing domain icons (payoff) */
     .dicon { position:absolute; z-index:10; display:flex; flex-direction:column; align-items:center; gap:10px; }
@@ -237,9 +237,8 @@
       show("#scene-4 .s4-flood", 21.10, 21.10);
       pop("#scene-4 .s4-dom", 21.10, 21.26);
       smash("#scene-4 .s4-num", 21.10, 24.00, {y:28,scale:1.35,opacity:0});
-      // SLOP stamps already present in grid; ticking handled by re-popping the 4 slop tiles
-      pop("#scene-4 .s4-grid .thumb.slop:nth-of-type(1)", 21.10, 26.80);
-      tl.fromTo("#scene-4 .thumb.slop:nth-child(2) .ss",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.18,ease:"back.out(2)",immediateRender:false},26.90);
+      // 4 SLOP stamps slam down in sequence over the grid (.ss hidden by default in CSS)
+      tl.fromTo("#scene-4 .thumb.slop:nth-child(2) .ss",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.18,ease:"back.out(2)",immediateRender:false},26.80);
       tl.fromTo("#scene-4 .thumb.slop:nth-child(4) .ss",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.18,ease:"back.out(2)",immediateRender:false},27.30);
       tl.fromTo("#scene-4 .thumb.slop:nth-child(6) .ss",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.18,ease:"back.out(2)",immediateRender:false},27.70);
       tl.fromTo("#scene-4 .thumb.slop:nth-child(9) .ss",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.18,ease:"back.out(2)",immediateRender:false},28.14);

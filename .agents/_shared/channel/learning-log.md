@@ -9,6 +9,7 @@ Keep this short. Current rules belong in `current-state.md`, `production-workflo
 - English learners are the main audience lens, but the channel is still an explainer channel, not an English class.
 - Working rule: `Teach the topic first. Make the English learner-friendly by design.`
 - Handwritten-looking labels, captions, arrows, red corrections, and punchline text are part of the default visual language.
+- Animated interactive UI mockups (a screen that performs the action: SVG cursor clicks, buttons boing + flip state, counters tick, confetti/toasts pop, all word-timed) are a confirmed go-to device for CTAs and any "tap/click/toggle/subscribe" beat (owner-confirmed 2026-06-30, after the S8 subscribe-popup outro). Parody UI + our own branding, no fake metrics, CSS/SVG not emoji. See `systems/visual-production.md` (Animated Interactive UI Mockup). Pairs with the Real-UI Illustration preference.
 - Topic selection should use angle thinking: `topic + contradiction + visual metaphor + viewer pain`.
 - Publishing learning rule: `Measure the upload. Learn one useful thing. Change the next video.`
 

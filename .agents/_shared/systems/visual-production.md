@@ -151,6 +151,28 @@ Use a small set per video:
 
 Do not throw every pattern into one video.
 
+## Animated Interactive UI Mockup (owner-confirmed 2026-06-30)
+
+A high-impact device the owner specifically loves and asked to use across future videos: instead of a
+static screenshot, make the UI PERFORM the action. Reach for it whenever a beat depicts using an
+app/site or asks the viewer to DO something (subscribe/like/share, tap, toggle, search, buy, swipe,
+fill a form, watch a number move).
+
+- The kit: a drawn SVG mouse cursor (or a tap-ripple) that moves and clicks; buttons that boing/wiggle
+  and FLIP STATE (SUBSCRIBE->SUBSCRIBED, Like turns blue, a toggle slides on); counters/badges that
+  tick; progress bars that fill; toasts + confetti on the click.
+- Sync: pin every click and state-change to the real word-timings, exactly like any other reveal.
+- Build: CSS/SVG, on a single continuous scene so the card holds its final state. Use SVG/CSS icons +
+  an SVG cursor, NEVER emoji glyphs (they don't render in the snapshot Chromium). Namespace decorative
+  classes (confetti/particles) so they don't collide with structural icon parts.
+- Honesty + safety: parody UI with our own / editorially-approved branding (e.g. "WhyTube", "Why It
+  Works") - never a real screen-grab, never a real channel/person, and NO fake inflated metrics (use a
+  non-numeric line like "Subscribe for more" -> "Welcome to the channel!" and a humble tick).
+- Proven reference: the `5-why-the-internet-is-full-of-ai-slop` Section 8 subscribe-popup outro. Treat
+  it as a go-to for CTAs, "how it works" demos, before/after toggles, and any tap/scroll/click beat;
+  reserve it for beats that genuinely depict interaction (don't force it onto every scene). Pairs with
+  the standing Real-UI Illustration preference.
+
 ## WIT Use
 
 Use `.agents/_shared/channel/brand-system.md` for the current WIT direction.

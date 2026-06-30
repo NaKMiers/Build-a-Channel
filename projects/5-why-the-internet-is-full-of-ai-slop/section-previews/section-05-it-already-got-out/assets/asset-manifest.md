@@ -274,9 +274,9 @@ assets themselves stay text-free.
 
 ## Section 5: It Already Got Out - assets (implemented 2026-06-28, generate-forward)
 
-The spread montage; the GREY-SLUDGE FLOOD motif returns (reuse `grey-sludge-flood-1.jpg`). No image
-generator connected -> the 6 GENERATE heroes are `prompt-ready / awaiting generation`. 4 fresh browse bases
-sourced + verified. 2 reuse bases verified. All 7 poses already in `assets/poses/`.
+The spread montage; the GREY-SLUDGE FLOOD motif returns (reuse `grey-sludge-flood-1.jpg`). All 6 GENERATE
+heroes are now generated and composited in the render S5 build (2026-06-30). 4 fresh browse bases sourced +
+verified. 2 reuse bases verified. All 7 poses already in `assets/poses/`.
 
 ### Browse bases (done; licenses in ATTRIBUTION.md)
 
@@ -291,17 +291,17 @@ sourced + verified. 2 reuse bases verified. All 7 poses already in `assets/poses
 
 
 
-### Generate heroes (prompt-ready / awaiting generation - owner generates in ChatGPT + drops PNGs in)
+### Generate heroes (done; generated + composited in render S5, 2026-06-30)
 
 
-| Filename                       | Type     | Used in | Description                                                                         | Status                             |
-| ------------------------------ | -------- | ------- | ----------------------------------------------------------------------------------- | ---------------------------------- |
-| `slop-bursting-phone.png`      | generate | 5.1     | a phone with grey sludge gushing/overflowing out of its screen                      | prompt-ready / awaiting generation |
-| `ai-band-uncanny.png`          | generate | 5.2     | an uncanny 4-piece AI "band" promo (non-existent people, wrong hands)               | prompt-ready / awaiting generation |
-| `mushroom-guide-book.png`      | generate | 5.3     | an AI mushroom-foraging guide book with a subtly-wrong AI mushroom on the cover     | prompt-ready / awaiting generation |
-| `six-legged-horse-cartoon.png` | generate | 5.5     | a garish low-quality AI kids-cartoon horse with SIX legs, dead eyes                 | prompt-ready / awaiting generation |
-| `workslop-document.png`        | generate | 5.6     | a glossy official-looking AI document whose body text is meaningless wavy filler    | prompt-ready / awaiting generation |
-| `real-photo-lifeline.png`      | generate | 5.7     | one ordinary framed real-looking snapshot (the one real thing held above the flood) | prompt-ready / awaiting generation |
+| Filename                       | Type     | Used in | Description                                                                         | Status                                                          |
+| ------------------------------ | -------- | ------- | ----------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| `slop-bursting-phone.png`      | generate | 5.1     | a phone with grey sludge gushing/overflowing out of its screen                      | done (generated; real RGBA; composited in render S5 2026-06-30) |
+| `ai-band-uncanny.png`          | generate | 5.2     | an uncanny 4-piece AI "band" promo (non-existent people, wrong hands)               | done (generated; composited in render S5 2026-06-30)            |
+| `mushroom-guide-book.png`      | generate | 5.3     | an AI mushroom-foraging guide book with a subtly-wrong AI mushroom on the cover     | done (generated; checkerboard keyed to true alpha; raw in `_raw-checkerboard/`; composited in render S5 2026-06-30) |
+| `six-legged-horse-cartoon.png` | generate | 5.5     | a garish low-quality AI kids-cartoon horse with SIX legs, dead eyes                 | done (generated; checkerboard keyed to true alpha; raw in `_raw-checkerboard/`; composited in render S5 2026-06-30) |
+| `workslop-document.png`        | generate | 5.6     | a glossy official-looking AI document whose body text is meaningless wavy filler    | done (generated; real RGBA; covers the 5.6 base Apple logo; composited in render S5 2026-06-30) |
+| `real-photo-lifeline.png`      | generate | 5.7     | one ordinary framed real-looking snapshot (the one real thing held above the flood) | done (generated; checkerboard keyed to true alpha; raw in `_raw-checkerboard/`; composited in render S5 2026-06-30) |
 
 
 Reuse: `social-scroll-livingroom-1.jpg` (S1) -> 5.1; `grey-sludge-flood-1.jpg` (S1/S2 flood motif) -> 5.7
@@ -350,10 +350,9 @@ identifiable people, no watermark). On-screen wording is added in render (CSS), 
 
 ## Section 6: It's Not AI's Fault (And Not A Plot) - assets (implemented 2026-06-29, the honest turn)
 
-Calmer "argument" section: real bases + CSS graphics + a few generated props. No image generator
-connected -> the 4 GENERATE props are `prompt-ready / awaiting generation`. 4 fresh browse bases sourced
-
-- verified. 2 reuse bases verified. Poses copied (one substitution).
+Calmer "argument" section: real bases + CSS graphics + a few generated props. All 4 GENERATE props are
+now generated and composited in the render S6 build (2026-06-30). 4 fresh browse bases sourced +
+verified. 2 reuse bases verified. Poses copied (one substitution).
 
 
 
@@ -370,15 +369,15 @@ connected -> the 4 GENERATE props are `prompt-ready / awaiting generation`. 4 fr
 
 
 
-### Generate props (prompt-ready / awaiting generation)
+### Generate props (done; generated + composited in render S6, 2026-06-30)
 
 
 | Filename                   | Type     | Used in | Description                                                  | Status                             |
 | -------------------------- | -------- | ------- | ------------------------------------------------------------ | ---------------------------------- |
-| `artist-easel.png`         | generate | 6.2     | a simple artist's easel + canvas + palette + brush           | prompt-ready / awaiting generation |
-| `tinfoil-hat.png`          | generate | 6.4     | a crumpled tinfoil "conspiracy" hat (empty)                  | prompt-ready / awaiting generation |
-| `empty-villain-throne.png` | generate | 6.6     | an ominous empty villain throne with an unpressed red button | prompt-ready / awaiting generation |
-| `uncuffable-incentive.png` | generate | 6.7     | a glowing gold `$` coin shrugging off a pair of handcuffs    | prompt-ready / awaiting generation |
+| `artist-easel.png`         | generate | 6.2     | a simple artist's easel + canvas + palette + brush           | done (generated; checkerboard keyed to true alpha; raw in `_raw-checkerboard/`; composited in render S6 2026-06-30) |
+| `tinfoil-hat.png`          | generate | 6.4     | a crumpled tinfoil "conspiracy" hat (empty)                  | done (generated; real RGBA; composited in render S6 2026-06-30) |
+| `empty-villain-throne.png` | generate | 6.6     | an ominous empty villain throne with an unpressed red button | done (generated; checkerboard keyed to true alpha; raw in `_raw-checkerboard/`; composited in render S6 2026-06-30) |
+| `uncuffable-incentive.png` | generate | 6.7     | a glowing gold `$` coin shrugging off a pair of handcuffs    | done (generated; checkerboard keyed to true alpha; raw in `_raw-checkerboard/`; composited in render S6 2026-06-30) |
 
 
 Reuse: `corkboard-redstring-1.jpg` (S2 conspiracy board) -> 6.4, 6.5; `dark-spotlight-stage-1.jpg` (S4.5)
@@ -444,7 +443,7 @@ verified. Reuses verified on disk (incl. `slop-engine-loop.png`, now generated).
 
 | Filename               | Type     | Used in | Description                                                                                           | Status                             |
 | ---------------------- | -------- | ------- | ----------------------------------------------------------------------------------------------------- | ---------------------------------- |
-| `slop-wins-trophy.png` | generate | 7.2     | a grey slop blob on a #1 winner's podium holding up an ATTENTION trophy, a sad "quality" figure below | prompt-ready / awaiting generation |
+| `slop-wins-trophy.png` | generate | 7.2     | a grey slop blob on a #1 winner's podium holding up an ATTENTION trophy, a sad "quality" figure below | done (render 2026-06-30); delivered opaque RGB w/ baked checkerboard -> keyed out to true alpha (raw in `_raw-checkerboard/`) |
 
 
 Reuse (all verified present in `assets/`): `dark-spotlight-stage-1.jpg` (S4 stage) -> 7.2 (base swap -
@@ -468,21 +467,24 @@ empowerment text + glasses glint, `we'll keep explaining the weird machine`, big
 
 > Attach: none. Create a single ISOLATED illustration on a FULLY TRANSPARENT background, flat 2D cartoon with a thick uniform black outline and flat fills. Subject: a grey blob "slop" creature (a featureless grey humanoid blob with a dumb grin) standing triumphantly on the tall #1 step of a three-step winner's podium, holding up a shiny gold trophy; on a lower step, a small sad, dull figure slumps (representing the "quality" that lost). Convey "the worthless thing won". Do NOT include: any text/letters/numbers, any brand or logo, any real person, any background, any watermark, any gradient. Output: one high-resolution PNG, fully transparent background, isolated group only.
 
-## Section 8: Outro: Like, Share, Subscribe - assets (implemented 2026-06-29, light outro)
+## Section 8: Outro: Like, Share, Subscribe - assets (v2 gamified CTA rebuild 2026-06-30)
 
-Short ~8s outro end-card. NO new generate or browse assets - it reuses the calm S7 base + the S4 engine
-callback + 2 library poses; the like/share/subscribe buttons are render-CSS.
+Short ~8s outro end-card. NO new generate or browse assets - the entire fake-YouTube card, mouse cursor,
+buttons, and confetti are render-CSS/SVG; it reuses the calm base + 2 library poses.
 
 Reuse (all verified present in `assets/`):
-- `bright-window-calm-1.jpg` (S7 base) -> 8.1, 8.2 (continues the calm close).
-- `slop-engine-loop.png` (S4 engine) -> 8.1 (tiny low-corner "weird machine" callback).
+- `bright-window-calm-1.jpg` -> the single continuous scene (calm close).
+- `channel-avatar.png` -> copied in from `.agents/_shared/assets/brand/channel-avatar.png` (the real WIT
+  channel avatar, yellow circle) for the card's channel-row avatar (replaces the old "W" text circle).
 
-Section 8 poses (library, transparent - copied to `assets/poses/` this run): `cheerful_presenting_fullbody`
-(8.1, warm offering), `peace_sign_calm_open_mouth` (8.2, chill sign-off).
+Section 8 poses (library, transparent - in `assets/poses/`): `enthusiastic_point_big_smile` (CTA, points
+at the card), `peace_sign_calm_open_mouth` (sign-off).
 
-Section 8 render-CSS (no asset file): the `LIKE` / `SHARE` / `SUBSCRIBE` buttons (thumb / arrow / bell -
-build as CSS shapes or tiny icon PNGs, NOT emoji glyphs; the 👍 emoji does not render in the snapshot
-Chromium), `"if this helped..."`, `"see you in the next one"`, and an optional `Why It Works` wordmark.
+Section 8 render-CSS/SVG (no asset file): the entire fake YouTube card (WhyTube logo, video thumbnail,
+title, gold "W" avatar, channel row, the `SUBSCRIBE`->`SUBSCRIBED` button + bell, the `LIKE`->Liked +
+`SHARE` pills), an inline-SVG mouse cursor, a confetti burst (12 CSS squares), the glow ring, the "Link
+copied!" toast, `"if this helped..."`, `"see you in the next one."`, and the `WHY IT WORKS` wordmark. All
+icons are CSS shapes (thumb / arrow / bell), NOT emoji glyphs (emoji do not render in snapshot Chromium).
 
 No generate prompts and no ATTRIBUTION rows for Section 8 (zero new generated/browsed assets).
 

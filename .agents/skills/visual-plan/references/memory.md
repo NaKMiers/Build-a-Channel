@@ -912,6 +912,48 @@ Rerunning a plan restales that section's implemented assets + render (list them;
 Promote to shared memory: YES - added to `.agents/_shared/channel/learning-log.md` as a Core creative-direction
 signal (pairs with the existing vivid-imagery / varied-idea-devices entries).
 
+### 2026-06-30 - Animated interactive UI-mockup graphics are a go-to device (owner loved the S8 subscribe popup, Core)
+
+Classification: `Core` (confirmed channel creative direction)
+
+Context:
+On `5-why-the-internet-is-full-of-ai-slop` the owner first found the Section 8 outro (a flat, static
+like/share/subscribe card) boring and asked for "something super unrealistic, superficial... a popup
+that looks like a YouTube screen with subscribe and like buttons, a pointer that clicks them, buttons
+that wiggle and become subscribed/liked." I rebuilt it as an animated fake-YouTube card: a drawn SVG
+mouse cursor flies in and CLICKS LIKE then SUBSCRIBE on their spoken words; the buttons boing/wiggle and
+flip state (red SUBSCRIBE -> grey SUBSCRIBED + ringing bell, Like turns blue), a "Link copied!" toast +
+confetti pop, all on a parody "WhyTube" UI. The owner's reaction: "you used visualize VERY well at the
+subscribe popup - use this advantage in future videos to make them livelier, and update it into
+/visual-plan so whenever a video needs this kind of graphics-animation illustration it applies
+excellently." So this is now a STANDING device, not a one-off.
+
+Lesson (apply to ALL future videos):
+- When a beat describes USING an app/site or asks the viewer to DO something (subscribe/like/share, tap,
+  toggle, search, buy, swipe, fill a form, watch a value change), default to an ANIMATED interactive
+  UI-mockup instead of a static screen. The screen performs the action itself.
+- The kit: a drawn SVG mouse cursor (or a tap-ripple) that moves and clicks; buttons that boing/wiggle
+  (one combined scale+rotate "boing" tween, single transform set, so tweens don't fight) and FLIP STATE
+  by cross-fading two stacked state elements; counters/badges that tick; progress bars that fill;
+  toasts + confetti on the click. Pin every click and state-change to the real word-timings.
+- Build rules learned: CSS/SVG only; use SVG/CSS icons + an SVG cursor, NEVER emoji glyphs (they don't
+  render in the snapshot Chromium); namespace decorative classes (confetti = `.cfp`, not `.cf`) so they
+  can't collide with structural icon sub-element classes; a single continuous scene (no hard cut) lets
+  an interactive card hold its final state through the end of the beat.
+- Honesty + safety: parody UI with our own branding (e.g. "WhyTube", "Why It Works") - never a real
+  screen-grab, never a real channel/person, and NO fake inflated metrics (the owner explicitly rejected
+  "1.2M subscribers" for a small channel; use a non-numeric line like "Subscribe for more" ->
+  "Welcome to the channel!" and a humble tick instead).
+
+Apply next time: for CTAs, "how it works" demos, before/after toggles, settings/permission beats, and
+any "tap/scroll/click/type" line, plan the interactive-mockup device by default; describe the cursor
+path, each button's state flip, and the celebration beat, all pinned to the spoken words. Reserve it for
+beats that genuinely depict interaction (don't force it onto every scene).
+
+Promote to shared memory: YES - add to `_shared/systems/visual-production.md` (a named device:
+"Animated interactive UI mockup") and `_shared/channel/learning-log.md` as a Core creative-direction
+signal; pairs with the standing Real-UI Illustration preference.
+
 ## Feedback Entry Template
 
 ```markdown

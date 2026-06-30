@@ -1427,3 +1427,175 @@ Apply next time:
 
 Promote to shared memory:
 no; render execution + environment behavior. The brand-logo-cover technique stays here.
+
+### 2026-06-30 - Section 5 (ai-slop): Key Out Baked-Checkerboard "Transparency" + GSAP :nth-of-type vs :nth-child
+
+Classification: `Render lesson` / `Operational lesson`
+
+Context:
+Rendered `5-why-the-internet-is-full-of-ai-slop` Section 5 ("It Already Got Out", 53.739s, 7 scenes:
+music / books / kids / six-legged horse / job / payoff). Section motif = the GREY-SLUDGE FLOOD callback
+from S1/S2, with the `.flood` waterline rising 13 -> 66 % across the 7 scenes and peaking at 5.7 with WIT
+drowning while holding one real photo above the water. 6 generated heroes + 4 fresh bases + 2 reuse bases
++ 7 poses. Word timings generated first (159 words; whisper tail "inbox." 56.52 clamped to 53.739). Two
+real defects surfaced during snapshot QA.
+
+Lessons:
+- A "transparent" generated PNG can actually be OPAQUE RGB with the transparency CHECKERBOARD baked into
+  the pixels (the generator rendered its own UI backdrop). Signature: `Image.open(f).convert("RGBA")
+  .getchannel("A").getextrema()` returns `(255,255)` (no real alpha) and the RGB is alternating ~254
+  white / ~241-245 light-grey squares - vs a real cutout which returns `(0,255)`. Always check alpha
+  extrema on every generated hero before compositing; 3 of 6 here (book / horse / polaroid) were baked,
+  while the phone / document were real RGBA. Key the checkerboard out to true alpha with a tone-mask
+  (light AND neutral: `mn>=200 & (mx-mn)<=28`) + `scipy.ndimage.label` connected components + keep ONLY
+  border-touching components + `binary_dilation(iterations=1)` to swallow the antialiased fringe -> set
+  alpha 0. This beats flood-fill-with-threshold, which leaves speckle at tonal boundaries. Back up the
+  originals (here `assets/_raw-checkerboard/`).
+- GSAP `:nth-of-type(n)` counts by element TYPE, not by class. `.thumb.slop:nth-of-type(1)` matched
+  NOTHING because the 1st child div in the grid is a plain `.thumb` (no `.slop`) - so the tween silently
+  did nothing and validate flagged "GSAP target not found". Use `:nth-child(n)` to target by sibling
+  POSITION (the 4 slop tiles sit at child positions 2/4/6/9). Also give cue elements an explicit hidden
+  default (`.ss { opacity:0 }`) so they don't flash before their pop.
+- `snapshot` reads its positional arg as the PROJECT dir, not an output dir. Run `snapshot --at
+  <comma-separated-timestamps>` with NO positional; output always lands in `snapshots/` named by
+  timestamp index. Verify cue fixes with a before/after pair (here 24.5s = no SLOP stamps yet, 29.5s =
+  all 4 popped).
+- `duplicate_media_discovery_risk` again expected + non-blocking: `living-room-tv-1.jpg` reused 5.4/5.5
+  (same room, different kid content). 0 errors is the gate; 75 contrast advisories on stylized text are
+  the same class as S1-S4 and read fine.
+
+Apply next time:
+- check alpha extrema on EVERY generated hero at the assets gate; key out any baked checkerboard before compositing, back up the raw
+- target GSAP child elements with `:nth-child` (sibling position), never `:nth-of-type`, when selecting by class; give animated cue elements a hidden default in CSS
+- `snapshot --at <times>` with no positional dir; QA cue timing with a before/after snapshot pair
+
+Promote to shared memory:
+no; render execution mechanics + tooling. The checkerboard-keyout + selector gotchas stay here.
+
+### 2026-06-30 - Section 6 (ai-slop): Baked Checkerboard Recurs; Don't Reinstall Over The Whisper Cache; Keep Marks Off WIT's Face
+
+Classification: `Render lesson` / `Operational lesson`
+
+Context:
+Rendered `5-why-the-internet-is-full-of-ai-slop` Section 6 ("It's Not AI's Fault (And Not A Plot)",
+38.933s, 7 scenes - the fair/calm turn). Generated word timings first (123 words; whisper tail
+"incentive." end 47.96 clamped to 38.933). 3 of the 4 generate props had the SAME baked
+transparency-checkerboard as S5 (`artist-easel`, `empty-villain-throne`, `uncuffable-incentive`;
+`tinfoil-hat` was real RGBA), keyed out with the S5 method. Built to the standing bar; passed snapshot
+QA after 3 WIT-collision fixes.
+
+Lessons:
+- The baked-checkerboard "fake transparency" is now a RECURRING delivery defect (S5: 3/6, S6: 3/4).
+  Make the alpha-extrema check (`(255,255)` = opaque/baked, `(0,255)` = real) a STANDARD assets-gate
+  step for every generated PNG, and key out any opaque ones before compositing (tone-mask `mn>=200 &
+  (mx-mn)<=28` -> scipy connected components -> keep only BORDER-touching -> 1px dilation). Interior
+  whites (an easel canvas, a coin's glow halo + sparkles) are non-border components and correctly
+  survive. Back up raws to `assets/_raw-checkerboard/`.
+- WHISPER CACHE TOOLING: `npm install --no-save <pkg>` in `%TEMP%/wiw-whisper` PRUNES the other
+  packages (it "removed 81 packages" and wiped `@xenova/transformers` + its `.cache` model). Symptom:
+  `pipeline()` dies with a hard native EXIT 127 (no catchable JS error) because the decoder
+  `.onnx` only partially re-downloaded (encoder present, `decoder_model_merged_quantized.onnx` missing).
+  Fixes: (1) install ffmpeg + transformers together in one `npm install --no-save @xenova/transformers@2.17.2
+  @ffmpeg-installer/ffmpeg`; (2) a COMPLETE model cache survives at `%TEMP%/wiw-tools/node_modules/
+  @xenova/transformers/.cache/Xenova/whisper-tiny.en` - copy it into the whisper dir's cache to restore
+  the decoder instantly instead of waiting on a flaky re-download. ffmpeg path:
+  `node -e "console.log(require('@ffmpeg-installer/ffmpeg').path)"`.
+- KEEP MARKS/TEXT OFF WIT'S FACE (both directions, again): first snapshot put the giant red X over
+  WIT's deadpan face (the deadpan IS the 6.5 joke), the "money rewards it" label on WIT's white body,
+  and the payoff lines over WIT's face. All three were obvious only in the snapshot (lint/validate/
+  inspect passed). Fix by moving the MARK/TEXT to clear negative space (the board, the dark floor,
+  center), not by shrinking WIT. Always snapshot every scene's payoff frame and check WIT-face overlap.
+- The validator's contrast advisories measure stylized text against the PHOTO BEHIND, ignoring a
+  device card's own opaque background - so an AI badge / green check / cream pinnote with a solid bg
+  reads fine despite a "1.15:1" advisory. 0 errors is the gate; document the advisories as non-blocking.
+
+Apply next time:
+- alpha-extrema check + checkerboard keyout is now routine for generated props; expect ~half to be baked
+- never `npm install --no-save` a single pkg into `wiw-whisper` (it prunes transformers + model cache); install together, or restore the model cache from `wiw-tools`
+- snapshot every payoff frame and move any mark/text off WIT's face/body into clear space
+
+Promote to shared memory:
+no; render execution mechanics + tooling.
+
+### 2026-06-30 - Sections 7 + 8 (ai-slop): Whisper Chunk-Boundary REORDER Glitch; Build Button Icons As CSS (Emoji Don't Render); Checkerboard Recurs Again
+
+Classification: `Render lesson` / `Operational lesson`
+
+Context:
+Rendered the last two sections of `5-why-the-internet-is-full-of-ai-slop` in one pass. S7 ("Payoff:
+Attention In, Garbage Out", 43.413s, 7 scenes - the thesis-landing payoff) on port 1007; S8 ("Outro:
+Like, Share, Subscribe", 7.957s, 2 scenes - the clean warm CTA) on port 1008. Generated word timings
+first for both. S7's one generate prop (`slop-wins-trophy`) had the same baked checkerboard (now S5:3/6,
+S6:3/4, S7:1/1) and was keyed out. Both passed snapshot QA; S7 needed two targeted re-snaps (1.3s, 14.2s)
+to confirm cue text cleared WIT.
+
+Lessons:
+- NEW WHISPER ARTIFACT - CHUNK-BOUNDARY REORDER: beyond the known tail-glitch (last word's END runs long),
+  whisper-tiny.en with `chunk_length_s:30 / stride_length_s:5` can also REORDER / mistime phrases that
+  straddle a chunk boundary. In S7 the closing "you keep your eyes open" was pulled forward to ~35s, out
+  of spoken order. Don't trust a word-timing JSON that is non-monotonic near a chunk seam: read the JSON,
+  spot the out-of-order span, and PIN those few cues from the audio tail by ear/duration instead (S7's
+  final cue pinned to 42.00). Document the one estimated cue in IMPLEMENTATION.md. Most of the file is
+  still real timings - only the reordered span needs manual pinning.
+- BUTTON / UI ICONS = CSS SHAPES, NOT EMOJI (reconfirmed, now load-bearing): the snapshot/preview Chromium
+  does not render full-color emoji (👍 🔔 come out blank), but unicode dingbats (✓ &#10003;, → &#8594;) DO.
+  For LIKE/SHARE/SUBSCRIBE built the thumb (palm+thumb+cuff divs), arrow (bar + border-triangle head), and
+  bell (dome+lip+clapper) as pure CSS `<div>` shapes. They render crisply and scale (settled corner stack
+  in 8.2 via a `.sm` modifier). Default to CSS shapes for ANY icon that must appear in a render.
+- Checkerboard keyout is now fully routine - 1 prop this run, same method, ~5 min. Alpha-extrema check
+  stays a standing assets-gate step.
+- Same-base reuse for continuity is fine and only produces a non-blocking `duplicate_media_discovery_risk`
+  lint warning: S7 reuses the slop-engine motif 4x + machine-hall 3x + bright-window 2x (3 warns); S8
+  reuses bright-window across both scenes (1 warn). Intentional; document and move on.
+- Section-first port + direct-comp URL pattern held: each section its own preview project with an `assets`
+  junction; verified both servers return 200 (`http://localhost:1007/`, `http://localhost:1008/`).
+
+Apply next time:
+- after generating word timings, scan the JSON for non-monotonic word starts near 30s chunk seams; pin any reordered span from the audio tail and label it the estimated cue
+- build every in-render icon/button glyph as CSS shapes, never color emoji; unicode dingbats are the only safe glyphs
+- keep the alpha-extrema + checkerboard-keyout step routine for every generated PNG
+
+Promote to shared memory:
+no; render execution mechanics + tooling.
+
+### 2026-06-30 - Section 8 (ai-slop) v2: Gamified Fake-YouTube CTA (Cursor Clicks The Buttons); Watch For CSS Class Collisions
+
+Classification: `Render lesson` / `Design lesson`
+
+Context:
+Owner rejected the first S8 outro as "so boring" - it was three static pills that just popped in. Asked
+for an over-the-top, superficial-fun end-card: a YouTube-screen popup with like/subscribe buttons, a
+pointer that clicks them, buttons that wiggle and flip to liked/subscribed. Rebuilt the whole section as
+a single continuous scene: a parody fake-YouTube card (all CSS/SVG, our own WhyTube/Why It Works branding,
+no screen-grab) + an inline-SVG mouse cursor that flies in and CLICKS LIKE (2.24) / SHARE (3.14) /
+SUBSCRIBE (5.22) on their spoken words, with boing wiggles, state cross-fades (red SUBSCRIBE -> grey
+SUBSCRIBED + ringing bell, white LIKE -> blue Liked), a "Link copied!" toast, a pulsing glow ring, a
+confetti burst, and a count tick (1.2M -> 1,200,001 + floating "+1"). Passed snapshot QA on all 6 beats.
+
+Lessons:
+- A "click-the-button" CTA is cheap and high-impact, all in deterministic GSAP: animate an inline-SVG
+  cursor's `left`/`top` to each button center, click-dip its `scale`, and `boing` the button (one combined
+  scale-up + rotate + settle, single transform set - do NOT layer a separate scale tween and rotate tween
+  on the same element or they fight). Cross-fade two stacked state elements (red/grey, white/blue) at the
+  click time instead of restyling one element. Pin every click to the real spoken word.
+- CSS CLASS COLLISION BIT ME: the confetti pieces and the thumb-icon cuff both used class `.cf`. The bare
+  `.cf` confetti color rules (`.cf:nth-child(6n+3){background:green}`) have the SAME specificity as the
+  scoped `.ic-thumb .cf{background:currentColor}` and come LATER in the stylesheet, so they won the cuff's
+  color (green cuff bug). Fix: namespace decorative-element classes (`.cfp` for confetti) so they can't
+  match structural icon parts. When two unrelated things share a short class name, the later same-specificity
+  rule silently wins - grep your class names before shipping.
+- `overlapping_gsap_tweens` lint warnings are EXPECTED and non-blocking for intentional rapid
+  micro-sequences (boing = 4 chained scale/rotate tweens, click-dip = 2). They already carry
+  `overwrite:"auto"`. 0 errors is the gate; document the warnings as intentional.
+- For a busy interactive card, a SINGLE continuous scene (no hard cut) is better than splitting into
+  scenes - the card holds its final liked/subscribed state through the sign-off with no rebuild.
+- Parody UI is the safe way to show a "YouTube screen": rebuild it in CSS with our own channel branding
+  (WhyTube logo, Why It Works) - never a real screen-grab or a real channel/person.
+
+Apply next time:
+- reach for the cursor-clicks-button pattern for any CTA/explainer that should feel interactive; it is all CSS/SVG + GSAP, no assets
+- namespace decorative classes (confetti, sparkles, particles) so they never collide with structural icon/sub-element classes; grep class names before snapshot
+- treat boing/click-dip `overlapping_gsap_tweens` warnings as intentional; keep the gate at 0 errors
+
+Promote to shared memory:
+no; render execution mechanics + a reusable CTA technique.
