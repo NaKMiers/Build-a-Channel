@@ -1,0 +1,528 @@
+1
+00:00:00,000 --> 00:00:01,160
+Quick question.
+
+2
+00:00:01,160 --> 00:00:04,820
+Pick up your phone, open any feed, and scroll for ten seconds.
+
+3
+00:00:04,820 --> 00:00:08,580
+Now be honest: how much of that was actually made by a human?
+
+4
+00:00:08,580 --> 00:00:10,480
+Three years ago, the answer was easy.
+
+5
+00:00:10,480 --> 00:00:11,160
+All of it.
+
+6
+00:00:11,160 --> 00:00:12,700
+Today? Good luck.
+
+7
+00:00:12,700 --> 00:00:16,560
+Because somewhere in that feed there is a photo of a shrimp shaped like Jesus,
+
+8
+00:00:16,560 --> 00:00:19,080
+a news story about an event that never happened,
+
+9
+00:00:19,080 --> 00:00:21,760
+and a hit song by a band that does not exist.
+
+10
+00:00:21,760 --> 00:00:24,660
+The internet is filling up with garbage.
+
+11
+00:00:24,660 --> 00:00:26,820
+Cheap, fake, mass-produced garbage.
+
+12
+00:00:26,820 --> 00:00:30,040
+And the strange part is, nobody told it to.
+
+13
+00:00:30,040 --> 00:00:31,400
+Let's find out why.
+
+14
+00:00:31,400 --> 00:00:33,520
+This stuff actually has a name now.
+
+15
+00:00:33,520 --> 00:00:34,860
+We call it slop.
+
+16
+00:00:34,860 --> 00:00:35,260
+Slop.
+
+17
+00:00:35,260 --> 00:00:37,680
+Like the grey mush you pour into a pig trough.
+
+18
+00:00:37,680 --> 00:00:39,740
+And that is not an insult I invented.
+
+19
+00:00:39,740 --> 00:00:43,320
+"Slop" was literally named Word of the Year in 2025.
+
+20
+00:00:43,320 --> 00:00:45,460
+Now, one thing to get straight right away.
+
+21
+00:00:45,460 --> 00:00:49,640
+This is not a video about how AI is evil and the robots are coming.
+
+22
+00:00:49,640 --> 00:00:50,780
+That's a different video.
+
+23
+00:00:50,780 --> 00:00:53,780
+This is about something quieter, and honestly dumber.
+
+24
+00:00:53,780 --> 00:00:57,540
+The internet did not get worse because of some master plan.
+
+25
+00:00:57,540 --> 00:01:01,440
+It got worse because making fake content became almost free,
+
+26
+00:01:01,440 --> 00:01:05,040
+and the internet pays you for attention, not for quality.
+
+27
+00:01:05,040 --> 00:01:06,500
+So a flood started.
+
+28
+00:01:06,500 --> 00:01:08,180
+And it is still rising.
+
+29
+00:01:08,180 --> 00:01:10,040
+So what actually counts as slop?
+
+30
+00:01:10,040 --> 00:01:11,100
+Three things.
+
+31
+00:01:11,100 --> 00:01:13,400
+One: it looks fine for half a second.
+
+32
+00:01:13,400 --> 00:01:14,880
+Quick glance, looks normal.
+
+33
+00:01:14,880 --> 00:01:16,500
+Look closer, and it falls apart.
+
+34
+00:01:16,500 --> 00:01:17,900
+The hand has six fingers.
+
+35
+00:01:17,900 --> 00:01:19,200
+The words are gibberish.
+
+36
+00:01:19,200 --> 00:01:24,400
+A giant brand spends millions on a holiday ad and misspells its own name as "Coca-Coola."
+
+37
+00:01:24,400 --> 00:01:25,760
+That really happened.
+
+38
+00:01:25,760 --> 00:01:29,600
+Two: it costs the maker almost nothing, and it costs you everything.
+
+39
+00:01:29,600 --> 00:01:30,700
+Seconds to make.
+
+40
+00:01:30,700 --> 00:01:34,060
+But it eats your time, your attention, and your trust.
+
+41
+00:01:34,060 --> 00:01:36,260
+Three: it is made by the thousand.
+
+42
+00:01:36,260 --> 00:01:37,400
+Not one fake post.
+
+43
+00:01:37,400 --> 00:01:41,440
+Ten thousand fake posts, sprayed into the feed like a fire hose.
+
+44
+00:01:41,440 --> 00:01:44,200
+Looks fine, costs them nothing, made by the thousand.
+
+45
+00:01:44,200 --> 00:01:45,380
+That is slop.
+
+46
+00:01:45,380 --> 00:01:49,000
+A machine pretending to be a person, at full volume.
+
+47
+00:01:49,000 --> 00:01:50,400
+Now the important part.
+
+48
+00:01:50,400 --> 00:01:51,920
+Why does the flood keep coming?
+
+49
+00:01:51,920 --> 00:01:55,180
+Follow the money, slowly, because this is the whole video.
+
+50
+00:01:55,180 --> 00:01:55,580
+Step one.
+
+51
+00:01:55,580 --> 00:01:57,460
+Making content used to be expensive.
+
+52
+00:01:57,460 --> 00:02:00,460
+You needed a writer, a camera, a musician, time.
+
+53
+00:02:00,460 --> 00:02:02,360
+Now you need a prompt and ten seconds.
+
+54
+00:02:02,360 --> 00:02:04,620
+The cost dropped to almost zero.
+
+55
+00:02:04,620 --> 00:02:05,080
+Step two.
+
+56
+00:02:05,080 --> 00:02:07,240
+The platform does not pay you for being good.
+
+57
+00:02:07,240 --> 00:02:09,110
+It pays you for engagement,
+
+58
+00:02:09,110 --> 00:02:12,500
+and engagement just means clicks, likes, and time spent.
+
+59
+00:02:12,500 --> 00:02:14,700
+It rewards attention, not quality.
+
+60
+00:02:14,700 --> 00:02:15,180
+Step three.
+
+61
+00:02:15,180 --> 00:02:17,460
+So the smart move is not to make one great thing.
+
+62
+00:02:17,460 --> 00:02:19,580
+The smart move is to flood the zone:
+
+63
+00:02:19,580 --> 00:02:22,840
+post a thousand cheap things, and hope a few go viral.
+
+64
+00:02:22,840 --> 00:02:23,320
+Step four.
+
+65
+00:02:23,320 --> 00:02:25,360
+The algorithm that decides what you see?
+
+66
+00:02:25,360 --> 00:02:27,640
+It cannot really tell slop from real.
+
+67
+00:02:27,640 --> 00:02:29,640
+So it serves the slop anyway.
+
+68
+00:02:29,640 --> 00:02:30,280
+Step five.
+
+69
+00:02:30,280 --> 00:02:33,220
+The slop makes money, which pays for more slop.
+
+70
+00:02:33,220 --> 00:02:35,540
+The machine feeds itself.
+
+71
+00:02:35,540 --> 00:02:36,860
+That is the whole engine.
+
+72
+00:02:36,860 --> 00:02:40,620
+Cheap to make, paid by attention, impossible to filter.
+
+73
+00:02:40,620 --> 00:02:41,920
+Of course it floods.
+
+74
+00:02:41,920 --> 00:02:44,680
+And it is not just funny Facebook pictures anymore.
+
+75
+00:02:44,680 --> 00:02:45,880
+It got out.
+
+76
+00:02:45,880 --> 00:02:46,480
+Music.
+
+77
+00:02:46,480 --> 00:02:50,470
+A band called the Velvet Sundown passed one million listeners on Spotify
+
+78
+00:02:50,470 --> 00:02:54,780
+before people noticed that not a single member of the band was real.
+
+79
+00:02:54,780 --> 00:02:55,020
+Books.
+
+80
+00:02:55,020 --> 00:02:58,580
+People are selling AI mushroom-picking guides with fake photos.
+
+81
+00:02:58,580 --> 00:03:01,200
+Pick the wrong mushroom because a robot drew it,
+
+82
+00:03:01,200 --> 00:03:03,080
+and that one can actually kill you.
+
+83
+00:03:03,080 --> 00:03:03,720
+Kids.
+
+84
+00:03:03,720 --> 00:03:10,790
+One investigation found that around forty percent of the videos recommended to children looked like AI slop.
+
+85
+00:03:10,790 --> 00:03:11,940
+Forty out of every hundred:
+
+86
+00:03:11,940 --> 00:03:16,740
+nonsense cartoons with six-legged horses, all pretending to teach the alphabet.
+
+87
+00:03:16,740 --> 00:03:17,840
+Even your job.
+
+88
+00:03:17,840 --> 00:03:23,500
+There is now a word for the co-worker who sends you a beautiful AI document that says absolutely nothing.
+
+89
+00:03:23,500 --> 00:03:24,840
+You just got "workslopped."
+
+90
+00:03:24,840 --> 00:03:29,820
+On average, it costs the person who receives it about two hours to clean up.
+
+91
+00:03:29,820 --> 00:03:31,300
+So congratulations.
+
+92
+00:03:31,300 --> 00:03:35,760
+The slop is in your feed, your music, your kid's tablet, and your inbox.
+
+93
+00:03:35,760 --> 00:03:39,880
+Now let me be fair for a second, because this is where it gets interesting.
+
+94
+00:03:39,880 --> 00:03:42,040
+Not all AI content is slop.
+
+95
+00:03:42,040 --> 00:03:45,140
+A doctor using AI to explain a scan - not slop.
+
+96
+00:03:45,140 --> 00:03:47,420
+An artist using it as a tool - not slop.
+
+97
+00:03:47,420 --> 00:03:49,760
+Slop is about low effort and high volume.
+
+98
+00:03:49,760 --> 00:03:51,200
+It is not about the tool.
+
+99
+00:03:51,200 --> 00:03:53,700
+And no, this is not a secret plot.
+
+100
+00:03:53,700 --> 00:03:57,200
+There is a popular idea online called "dead internet theory,"
+
+101
+00:03:57,200 --> 00:04:02,440
+which says the government is secretly filling the web with bots to control your mind.
+
+102
+00:04:02,440 --> 00:04:04,320
+Relax. It's dumber than that.
+
+103
+00:04:04,320 --> 00:04:05,760
+Nobody is in charge.
+
+104
+00:04:05,760 --> 00:04:07,160
+No villain pressed a button.
+
+105
+00:04:07,160 --> 00:04:10,400
+The garbage spreads on its own, because the money rewards it.
+
+106
+00:04:10,400 --> 00:04:12,600
+And that is the uncomfortable part.
+
+107
+00:04:12,600 --> 00:04:14,820
+You cannot arrest an incentive.
+
+108
+00:04:14,820 --> 00:04:17,460
+So, why is the internet full of garbage now?
+
+109
+00:04:17,460 --> 00:04:19,200
+Not because AI is evil.
+
+110
+00:04:19,200 --> 00:04:20,820
+Not because of a conspiracy.
+
+111
+00:04:20,820 --> 00:04:24,160
+Because the internet is working exactly the way it was built to work.
+
+112
+00:04:24,160 --> 00:04:25,640
+It pays for attention.
+
+113
+00:04:25,640 --> 00:04:28,060
+Slop is very good at grabbing attention.
+
+114
+00:04:28,060 --> 00:04:28,880
+So slop wins.
+
+115
+00:04:28,880 --> 00:04:31,180
+Attention in. Garbage out.
+
+116
+00:04:31,180 --> 00:04:32,400
+The internet is not broken.
+
+117
+00:04:32,400 --> 00:04:34,620
+It is doing its job perfectly.
+
+118
+00:04:34,620 --> 00:04:35,960
+That is the problem.
+
+119
+00:04:35,960 --> 00:04:38,360
+But here is the small, useful upgrade.
+
+120
+00:04:38,360 --> 00:04:39,760
+Now you know the tells.
+
+121
+00:04:39,760 --> 00:04:40,740
+The six fingers.
+
+122
+00:04:40,740 --> 00:04:42,680
+The photo that is a little too perfect.
+
+123
+00:04:42,680 --> 00:04:45,160
+The story that is a little too good to be true.
+
+124
+00:04:45,160 --> 00:04:46,740
+You cannot stop the flood.
+
+125
+00:04:46,740 --> 00:04:48,760
+But you can stop being fooled by it.
+
+126
+00:04:48,760 --> 00:04:50,700
+And on an internet built on attention,
+
+127
+00:04:50,700 --> 00:04:54,440
+the person who pays attention on purpose is the one who wins.
+
+128
+00:04:54,440 --> 00:04:56,640
+We'll keep explaining the weird machine.
+
+129
+00:04:56,640 --> 00:04:58,220
+You keep your eyes open.
+
+130
+00:04:58,220 --> 00:04:59,560
+That's it for today.
+
+131
+00:04:59,560 --> 00:05:02,840
+If this helped, like the video, share it with one person who needs it, and subscribe for more.
+
+132
+00:05:02,840 --> 00:05:06,168
+See you in the next one.
+

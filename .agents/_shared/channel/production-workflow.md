@@ -128,9 +128,9 @@ Use simple board scenes, WIT poses, voiceover, hard cuts, cue-timed labels, red 
 
 During normal preview/review fixes, use HyperFrames checks plus direct preview screenshots/contact sheets. Do not export MP4/WebM unless the user explicitly asks for a video file.
 
-Each rendered section should live in its own HyperFrames preview project under `projects/<slug>/section-previews/section-XX-kebab-section-name/`.
+Each rendered section should live in its own HyperFrames preview project. NEW projects (folder convention changed 2026-06-30): `projects/<slug>/previews/<N>-kebab-section-name/` (folder `previews/`, unpadded number, e.g. `1-hook`, `2-it-has-a-name-slop`). LEGACY projects keep `projects/<slug>/section-previews/section-XX-kebab-section-name/`. Do not rename existing folders unless asked; resolve by checking the new path first, then legacy. See `.agents/rules/video-workflow.md`.
 
-Manual Studio edit rule: if Anh Khoa edits a localhost/HyperFrames Studio section manually, the live `section-previews/.../index.html` becomes canonical for the next update. Future agents must read and diff it before editing, must not restore from `hyperframes/review/` or older visual plans, and should remove only the specific accidental effect/duration artifact that was identified.
+Manual Studio edit rule: if Anh Khoa edits a localhost/HyperFrames Studio section manually, the live preview `index.html` (`previews/<N>-*/` new, legacy `section-previews/.../`) becomes canonical for the next update. Future agents must read and diff it before editing, must not restore from `hyperframes/review/` or older visual plans, and should remove only the specific accidental effect/duration artifact that was identified.
 
 Legacy Remotion notes are historical only. Do not revive Remotion production unless the user explicitly asks.
 

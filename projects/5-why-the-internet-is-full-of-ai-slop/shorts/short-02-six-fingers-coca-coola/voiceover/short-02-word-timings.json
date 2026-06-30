@@ -1,0 +1,325 @@
+{
+  "transcript": "So what actually counts as slop? It looks fine for half a second. Quick glance looks normal, look closer, and it falls apart. The hand has six fingers, the words are gibberish. A giant brand spends millions on a holiday ad and misspells its own name as Coca-Cola. That really happened. Looks fine, cost them nothing made by the thousand. That is slop.",
+  "words": [
+    {
+      "word": "So",
+      "start": 0,
+      "end": 0.28
+    },
+    {
+      "word": "what",
+      "start": 0.28,
+      "end": 0.46
+    },
+    {
+      "word": "actually",
+      "start": 0.46,
+      "end": 0.84
+    },
+    {
+      "word": "counts",
+      "start": 0.84,
+      "end": 1.1
+    },
+    {
+      "word": "as",
+      "start": 1.1,
+      "end": 1.36
+    },
+    {
+      "word": "slop?",
+      "start": 1.36,
+      "end": 1.82
+    },
+    {
+      "word": "It",
+      "start": 1.82,
+      "end": 1.96
+    },
+    {
+      "word": "looks",
+      "start": 1.96,
+      "end": 2.18
+    },
+    {
+      "word": "fine",
+      "start": 2.18,
+      "end": 2.5
+    },
+    {
+      "word": "for",
+      "start": 2.5,
+      "end": 2.7
+    },
+    {
+      "word": "half",
+      "start": 2.7,
+      "end": 2.92
+    },
+    {
+      "word": "a",
+      "start": 2.92,
+      "end": 3.02
+    },
+    {
+      "word": "second.",
+      "start": 3.02,
+      "end": 3.3
+    },
+    {
+      "word": "Quick",
+      "start": 3.3,
+      "end": 3.56
+    },
+    {
+      "word": "glance",
+      "start": 3.56,
+      "end": 3.88
+    },
+    {
+      "word": "looks",
+      "start": 3.88,
+      "end": 4.18
+    },
+    {
+      "word": "normal,",
+      "start": 4.18,
+      "end": 4.52
+    },
+    {
+      "word": "look",
+      "start": 4.52,
+      "end": 4.8
+    },
+    {
+      "word": "closer,",
+      "start": 4.8,
+      "end": 5.12
+    },
+    {
+      "word": "and",
+      "start": 5.12,
+      "end": 5.32
+    },
+    {
+      "word": "it",
+      "start": 5.32,
+      "end": 5.46
+    },
+    {
+      "word": "falls",
+      "start": 5.46,
+      "end": 5.62
+    },
+    {
+      "word": "apart.",
+      "start": 5.62,
+      "end": 6.38
+    },
+    {
+      "word": "The",
+      "start": 6.38,
+      "end": 6.58
+    },
+    {
+      "word": "hand",
+      "start": 6.58,
+      "end": 6.74
+    },
+    {
+      "word": "has",
+      "start": 6.74,
+      "end": 6.94
+    },
+    {
+      "word": "six",
+      "start": 6.94,
+      "end": 7.2
+    },
+    {
+      "word": "fingers,",
+      "start": 7.2,
+      "end": 7.68
+    },
+    {
+      "word": "the",
+      "start": 7.68,
+      "end": 7.8
+    },
+    {
+      "word": "words",
+      "start": 7.8,
+      "end": 8.04
+    },
+    {
+      "word": "are",
+      "start": 8.04,
+      "end": 8.28
+    },
+    {
+      "word": "gibberish.",
+      "start": 8.28,
+      "end": 8.92
+    },
+    {
+      "word": "A",
+      "start": 8.92,
+      "end": 9.1
+    },
+    {
+      "word": "giant",
+      "start": 9.1,
+      "end": 9.44
+    },
+    {
+      "word": "brand",
+      "start": 9.44,
+      "end": 9.74
+    },
+    {
+      "word": "spends",
+      "start": 9.74,
+      "end": 10
+    },
+    {
+      "word": "millions",
+      "start": 10,
+      "end": 10.34
+    },
+    {
+      "word": "on",
+      "start": 10.34,
+      "end": 10.54
+    },
+    {
+      "word": "a",
+      "start": 10.54,
+      "end": 10.66
+    },
+    {
+      "word": "holiday",
+      "start": 10.66,
+      "end": 10.9
+    },
+    {
+      "word": "ad",
+      "start": 10.9,
+      "end": 11.28
+    },
+    {
+      "word": "and",
+      "start": 11.28,
+      "end": 11.54
+    },
+    {
+      "word": "misspells",
+      "start": 11.54,
+      "end": 11.9
+    },
+    {
+      "word": "its",
+      "start": 11.9,
+      "end": 12.02
+    },
+    {
+      "word": "own",
+      "start": 12.02,
+      "end": 12.24
+    },
+    {
+      "word": "name",
+      "start": 12.24,
+      "end": 12.44
+    },
+    {
+      "word": "as",
+      "start": 12.44,
+      "end": 12.72
+    },
+    {
+      "word": "Coca",
+      "start": 12.72,
+      "end": 13
+    },
+    {
+      "word": "-Cola.",
+      "start": 13,
+      "end": 13.8
+    },
+    {
+      "word": "That",
+      "start": 13.8,
+      "end": 14.12
+    },
+    {
+      "word": "really",
+      "start": 14.12,
+      "end": 14.44
+    },
+    {
+      "word": "happened.",
+      "start": 14.44,
+      "end": 14.92
+    },
+    {
+      "word": "Looks",
+      "start": 14.92,
+      "end": 15.18
+    },
+    {
+      "word": "fine,",
+      "start": 15.18,
+      "end": 15.66
+    },
+    {
+      "word": "cost",
+      "start": 15.66,
+      "end": 15.9
+    },
+    {
+      "word": "them",
+      "start": 15.9,
+      "end": 16.08
+    },
+    {
+      "word": "nothing",
+      "start": 16.08,
+      "end": 16.34
+    },
+    {
+      "word": "made",
+      "start": 16.34,
+      "end": 16.68
+    },
+    {
+      "word": "by",
+      "start": 16.68,
+      "end": 16.82
+    },
+    {
+      "word": "the",
+      "start": 16.82,
+      "end": 17.02
+    },
+    {
+      "word": "thousand.",
+      "start": 17.02,
+      "end": 17.38
+    },
+    {
+      "word": "That",
+      "start": 17.38,
+      "end": 17.68
+    },
+    {
+      "word": "is",
+      "start": 17.68,
+      "end": 17.92
+    },
+    {
+      "word": "slop.",
+      "start": 17.92,
+      "end": 19.92
+    }
+  ]
+}

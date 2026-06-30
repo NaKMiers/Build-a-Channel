@@ -19,3 +19,8 @@ node_modules/
 Thumbs.db
 desktop.ini
 .gstack/
+
+# Full-length final video renders: too large for plain git (e.g. a 4K combine is ~240 MB)
+# and GitHub LFS budget is exhausted. They live on YouTube + locally; keep them out of git.
+# The small vertical shorts under output/shorts/ stay tracked. (2026-07-01)
+projects/*/output/*.mp4

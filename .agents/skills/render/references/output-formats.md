@@ -58,8 +58,10 @@ Do not continue into review, upload, or learning until the user asks for the nex
 Write when useful under:
 
 ```text
-projects/<slug>/section-previews/section-XX-kebab-section-name/IMPLEMENTATION.md
+projects/<slug>/previews/<N>-kebab-section-name/IMPLEMENTATION.md
 ```
+
+(Legacy projects: `projects/<slug>/section-previews/section-XX-kebab-section-name/IMPLEMENTATION.md`.)
 
 ````markdown
 # Section X Render Implementation

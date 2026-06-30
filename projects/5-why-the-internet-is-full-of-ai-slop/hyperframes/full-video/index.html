@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Why The Internet Is Full Of Garbage Now - Full Video</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #07070a; overflow: hidden; }
+    #UnifiedAiSlop { position: relative; width: 1920px; height: 1080px; overflow: hidden; background: #07070a; }
+    /* Layout ONLY the section mount hosts. Do NOT use a bare `.clip` rule here:
+       it leaks into a mounted section's own `.clip` elements (e.g. Section 4's
+       persistent "hud clip" overlay), stretching them to full-frame and turning
+       the HUD's dark pill background into a full-screen scrim. The hosts keep
+       class="clip" for the HyperFrames visibility runtime; styling is via .mount. */
+    .mount { position: absolute; inset: 0; width: 100%; height: 100%; }
+  </style>
+</head>
+<body>
+  <div id="UnifiedAiSlop" data-composition-id="UnifiedAiSlop" data-start="0" data-duration="306.168" data-width="1920" data-height="1080">
+
+    <div class="clip mount" data-composition-id="mount-s1" data-composition-src="compositions/section-01.html" data-start="0"       data-duration="31.320" data-track-index="1"></div>
+    <div class="clip mount" data-composition-id="mount-s2" data-composition-src="compositions/section-02.html" data-start="31.320"  data-duration="36.768" data-track-index="2"></div>
+    <div class="clip mount" data-composition-id="mount-s3" data-composition-src="compositions/section-03.html" data-start="68.088"  data-duration="40.752" data-track-index="3"></div>
+    <div class="clip mount" data-composition-id="mount-s4" data-composition-src="compositions/section-04.html" data-start="108.840" data-duration="53.040" data-track-index="4"></div>
+    <div class="clip mount" data-composition-id="mount-s5" data-composition-src="compositions/section-05.html" data-start="161.880" data-duration="53.808" data-track-index="5"></div>
+    <div class="clip mount" data-composition-id="mount-s6" data-composition-src="compositions/section-06.html" data-start="215.688" data-duration="39.000" data-track-index="6"></div>
+    <div class="clip mount" data-composition-id="mount-s7" data-composition-src="compositions/section-07.html" data-start="254.688" data-duration="43.464" data-track-index="7"></div>
+    <div class="clip mount" data-composition-id="mount-s8" data-composition-src="compositions/section-08.html" data-start="298.152" data-duration="8.016"  data-track-index="8"></div>
+
+    <audio id="voiceover-full" data-start="0" data-duration="306.168" data-track-index="10" data-volume="1" crossorigin="anonymous" src="./combined-voiceover.mp3"></audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["UnifiedAiSlop"] = gsap.timeline({ paused: true });
+    </script>
+  </div>
+</body>
+</html>

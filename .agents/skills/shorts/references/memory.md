@@ -78,6 +78,21 @@ Two recurring CARD bugs caught this run (both push a hero card past the right sa
 
 Result: 4 shorts all 1080x1920, 0 lint errors, built on ports 1101-1104. S01 Free-Trial-Countdown 32.6s · S02 Cancelling-Vision-Quest 28.7s · S03 Warm-Bottom 21.05s · S04 Product-Is-You 21.2s. `✓` (U+2713) DID render in snapshot Chromium (unlike emoji); barcode via `repeating-linear-gradient` works well for a "PRODUCT: YOU" tag.
 
+## Verified Result (`why-the-internet-is-full-of-ai-slop`, 3 shorts, 2026-07-01)
+
+3 shorts, all `1080x1920` / h264 / aac / 30fps, exported to `output/shorts/`:
+- S01 Is-Any-Of-This-Real (Shrimp Jesus, source S1 hook) - 21.89s, 4.6 MB. Feed-of-fakes device: 3 absurd posts (shrimp / fake-news card / fake-band card) pinned to their spoken words, then grey-sludge GARBAGE payoff + "NOBODY TOLD IT TO." card.
+- S02 Six-Fingers-Coca-Coola (source S3) - 19.52s, 4.2 MB. SLOP MACHINE intro + 3 tells (six-finger hand / gibberish sign / Coca-Coola ad) each with circle+redtag, CERTIFIED SLOP stamp payoff.
+- S03 Arrest-An-Incentive (source S6) - 20.32s, 4.1 MB. Conspiracy corkboard named (DEAD INTERNET THEORY + tinfoil) -> punctured (big red X) -> empty villain throne -> glowing $ -> uncuffable-incentive coin payoff "YOU CANNOT ARREST AN INCENTIVE."
+
+Lessons confirmed this run:
+- Centered + GSAP-animated elements: `left:50%;transform:translateX(-50%)` survives `pop`/`smash` because GSAP parses the inline `translateX(-50%)` into `xPercent:-50` and animates `scale`/`y`/`rotation` separately - centering is preserved. Verified across all 3 shorts (posts, cards, bigwords, consp title). No need to switch to `left:0;right:0` for centered animated items.
+- nowrap bigwords MUST be size-checked against the safe width (820px): "NOBODY IS IN CHARGE" / "it's dumber than that." overflowed at 92px; dropped to 66-74px. Rule of thumb in portrait: a full-width nowrap line caps ~14-16 chars at 100px, ~20 chars at 66px.
+- AVOID a hand-label that repeats the caption verbatim (S03 scene-1 had both "not a secret plot..." label AND caption "This is not a secret plot." - dropped the label). Captions carry the spoken line; labels/cards carry DIFFERENT emphasis or the punch.
+- Whisper tail glitch on the LAST word's END recurred on S02 ("slop." end 19.92 > audio 18.325) and S03 ("incentive." end 21.54 > audio 19.051); both START times were correct, so pin the final beat to the correct start and clamp root `data-duration` to audio + ~1.2s hold. S01 had clean monotonic timings (no glitch).
+- Export PATH: add BOTH `%TEMP%/wiw-ffmpeg-static/node_modules/ffmpeg-static` and `.../ffprobe-static/bin/win32/x64` to PATH; `npx hyperframes render --output <abs.mp4>` renders ~30fps (frames = round(duration*30)), Chrome already provisioned. ffprobe duration ran ~+0.04s over root (trailing frame) - acceptable.
+- `snapshot` CLI takes `[DIR]` positional (run from the short folder with `.`), NOT `--out`; it writes to `snapshots/` + a `contact-sheet.jpg` automatically.
+
 ## Gotcha: don't zero a `.wit` that lives inside an opacity-controlled wrap (2026-06-24)
 
 `gsap.set('.wit', {opacity:0})` as a blanket initial-hide ALSO hides the `<img class="wit">` nested inside a `.witwrap` whose visibility you control via the WRAP's opacity. Result: the wrap shows but the figure stays invisible (only ears/cards render). Fix: hide the standalone WITs by id and the wrap by id (`#witSuspicion,#witShocked,#witBetrayedWrap,.ears`), and let `.witwrap .wit{opacity:1}` stay. Always snapshot a scene that uses the wrap to confirm the body renders, not just the ears.

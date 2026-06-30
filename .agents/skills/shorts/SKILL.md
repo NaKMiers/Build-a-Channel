@@ -28,7 +28,7 @@ Writes only:
 - `projects/<slug>/shorts/short-0N-<kebab>/` (one portrait HyperFrames project per short: `index.html`, `package.json`, `hyperframes.json`, `assets/`, `voiceover/`, `tts-inputs/`, `DESIGN.md`, `snapshots/`)
 - `projects/<slug>/output/shorts/short-0N-<kebab>.mp4` (the deliverables)
 
-Never modifies `section-previews/`, `hyperframes/`, `02-script.md`, `03-voiceover.md`, `04-visual-plan.md`, or any long-form section content. It only reads them.
+Never modifies the section previews folder (`previews/` new projects / `section-previews/` legacy), `hyperframes/`, `02-script.md`, `03-voiceover.md`, `04-visual-plan.md`, or any long-form section content. It only reads them.
 
 ## Port Contract
 
@@ -40,7 +40,7 @@ Require exactly one project.
 
 Resolution order: (1) the slug/path the user names; (2) the unambiguous active project in chat; (3) the single project under `projects/` (excluding `_template`) whose sections are all built; else ask.
 
-Readiness: the project's sections must be built - `combine` done (`hyperframes/full-video/`) OR every `## Section N` in `02-script.md` has an approved build (`hyperframes/review/section-XX.html` or `section-previews/section-XX-*/index.html`) plus its section voiceover. If sections are missing, STOP and tell the user to finish the main pipeline first.
+Readiness: the project's sections must be built - `combine` done (`hyperframes/full-video/`) OR every `## Section N` in `02-script.md` has an approved build (`hyperframes/review/section-XX.html`, or the live preview `previews/<N>-*/index.html` (new) / `section-previews/section-XX-*/index.html` (legacy)) plus its section voiceover. If sections are missing, STOP and tell the user to finish the main pipeline first.
 
 ## Required Context
 

@@ -37,7 +37,7 @@ Packaging runs after caption and writes `output/packaging.md` (it is no longer a
 assets/
 hyperframes/
 renders/
-section-previews/
+previews/          (per-section HyperFrames previews: <N>-kebab-section-name/, e.g. 1-hook)
 voiceover/
 visual-plan/
 output/            (final deliverables: <slug>.mp4, captions/<language>.srt, packaging.md, thumbnails/)

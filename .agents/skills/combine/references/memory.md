@@ -9,10 +9,12 @@ Use this file for assembly mechanics, HyperFrames mounting/asset-resolution beha
 - Project-level assembly + export step; runs once per project after ALL sections are rendered, before `caption`.
 - Require one project (named, smart-selected, or asked). No per-section selection.
 - Refuse to run if any script section lacks a rendered build or audio.
-- Reuse approved section builds + assets; never re-render, re-time, restyle, or create section CONTENT; never touch `section-previews/` or `hyperframes/review/` section files.
+- Reuse approved section builds + assets; never re-render, re-time, restyle, or create section CONTENT; never touch the section previews folder (`previews/` new / `section-previews/` legacy) or `hyperframes/review/` section files.
+- Section-preview folder convention (changed 2026-06-30): NEW projects = `previews/<N>-kebab-section-name/` (unpadded, e.g. `1-hook`); LEGACY = `section-previews/section-XX-kebab-section-name/`. Resolve a section by checking the new path first, then legacy. Projects `1-`…`5-…ai-slop` are legacy.
 - Always port 1000.
-- Outputs: `hyperframes/full-video/`, the final exported video at `projects/<slug>/output/<slug>.mp4`, and a `06-production-board.md` note.
-- EXPORT THE FINAL VIDEO (changed 2026-06-22): render the unified comp to MP4 into `renders/` as staging, then MOVE it to `output/`. Remove `renders/` only if left empty; never delete files in `renders/` this run did not create. On render failure, leave `renders/` untouched. `output/` is the single home for all final deliverables.
+- PREVIEW-ONLY BY DEFAULT (changed 2026-06-30, owner Anh Khoa): a plain combine run assembles + verifies the unified preview on `localhost:1000` and STOPS. It does NOT render or export an MP4. Outputs of a default run: `hyperframes/full-video/` + a `05/06-production-board.md` note. Never export on assumption; if unsure whether export is wanted, ask.
+- EXPORT ONLY ON EXPLICIT REQUEST: when the user explicitly asks to export ("export", "render the mp4", "export the final video"), render the unified comp to MP4 into `renders/` staging, then MOVE it to `output/<slug>.mp4`. On render failure leave `renders/` untouched. `output/` is the single home for all final deliverables.
+- `.gitkeep` RULE (added 2026-06-30): a `.gitkeep` only holds an EMPTY tracked folder. When a folder gains real content, delete its `.gitkeep`. So after moving a real deliverable into `output/`, remove `output/.gitkeep`. Keep/restore `.gitkeep` only in folders with no real content. (`renders/` staging: keep its `.gitkeep` if only the `.gitkeep` remains after the move.)
 
 ## Proven Mechanics (from `why-cheap-products-keep-getting-worse`, 2026-06-21)
 
@@ -69,7 +71,100 @@ Apply next time:
 Promote to shared memory:
 No; combine-skill execution practice.
 
+### 2026-06-30 - Benign render warning + no review mirror (project 5 ai-slop)
+
+Classification: `Operational lesson`
+
+Context:
+Combined `5-why-the-internet-is-full-of-ai-slop` (8 sections). There was NO `hyperframes/review/`
+mirror at all, so I sourced compositions straight from the live `section-previews/<section>/index.html`
+(which is the source of truth anyway - matches the 2026-06-22 mirror-lag lesson). Recipe worked verbatim:
+8 mounts, audio stripped, one stream-copy combined mp3 (306.168s), consolidated assets at root
+(107/107 resolved). Exported `output/<slug>.mp4` (306.219s, ~82 MB).
+
+Lesson:
+During `hyperframes render` of the unified comp, calibration logs a WARNING:
+`Sub-composition timelines not registered after 45000ms: mount-s1..mount-sN`. This is BENIGN - the
+mount host divs carry no timeline; each inner section registers its own `window.__timelines["Section0XName"]`.
+Frames extracted from the final mp4 (ffmpeg `-ss`) confirmed every reveal/animation baked in correctly.
+Do not chase this warning. Verify by extracting mp4 frames, not by trusting the warning.
+
+Also: `renders/` may hold a tracked `.gitkeep` - after moving the mp4, `renders/` is NOT empty, so
+LEAVE it in place (don't rmdir). The renderer cleans up its own `renders/work-*` scratch folder.
+
+Apply next time:
+- if no review mirror exists, source from live `section-previews/<section>/index.html`
+- ignore the `Sub-composition timelines not registered` render warning; verify via extracted mp4 frames
+- leave `renders/` when it still holds `.gitkeep`
+
+Promote to shared memory:
+No; combine-skill execution practice.
+
+### 2026-06-30 - Parent `.clip` CSS leaks into mounted sections (Section 4 HUD went full-screen dark)
+
+Classification: `Assembly mechanics - HIGH IMPACT gotcha`
+
+Context:
+On `5-why-the-internet-is-full-of-ai-slop`, Section 4 looked perfect standalone on `localhost:1004`
+but in the combined video (`localhost:1000`) the WHOLE section was washed dark and its "THE LOOP" HUD
+jumped from top-right to a vertically-centered mid-left blob. Every other section was fine.
+
+Root cause:
+The mounted sub-composition's `<style>` and the parent `index.html`'s `<style>` share ONE CSS scope
+(HyperFrames does NOT isolate sub-comp styles in a shadow DOM / iframe). The parent declared a BARE
+`.clip { position:absolute; inset:0; width:100%; height:100%; }` to lay out the 8 section mount hosts.
+Section 4 is the only section whose composition contains a NON-scene element carrying class `clip` -
+its persistent loop-ring HUD: `<div id="hud" class="hud clip" ...>`. The parent's `.clip` rule leaked
+onto that HUD and stretched it to full-frame (`inset:0; width/height:100%`), turning the HUD's compact
+dark pill background (`rgba(8,9,14,0.74)`, `z-index:12`) into a full-screen 74%-dark scrim over the
+whole section, and (via `display:flex; align-items:center`) re-centering its text mid-left. Sections
+1-3/5-8 only use `clip` on full-frame `.scene` elements, where `.clip`'s rule is harmless, so they
+were unaffected.
+
+Fix:
+Do NOT use a bare `.clip` style rule in the parent. Give each mount host an extra class (`mount`) and
+style THAT: `.mount { position:absolute; inset:0; width:100%; height:100%; }`, hosts become
+`class="clip mount"` (keep `clip` for the HyperFrames visibility runtime). The bare `.clip` rule is
+gone, so it can never leak onto a section's inner `.hud.clip` (or any future non-scene `.clip`).
+Verified: HUD back top-right, darkening gone, lint still 0 errors.
+
+Apply next time (BUILD RECIPE UPDATE):
+- the parent `index.html` MUST style mount hosts via a dedicated class (`.mount`), NEVER a bare `.clip`
+- mount hosts = `class="clip mount"`
+- before trusting a combine, snapshot any section that has a persistent/full-span overlay element
+  (HUD, watermark, progress bar) - those are the ones a leaked parent rule will wreck
+- remember: sub-comp + parent CSS is ONE scope; any generic selector in the parent hits sub-comp DOM
+
+Promote to shared memory:
+No; combine-skill build mechanics.
+
 ## Feedback Log
+
+### 2026-06-30 - Combine is PREVIEW-ONLY again; export only on explicit request; `.gitkeep` rule
+
+Classification: `Core workflow change`
+
+Context:
+Anh Khoa changed the contract again: `/combine` must NOT render/export an MP4 by default - it only
+assembles + verifies the unified preview on `localhost:1000`. Export to `output/<slug>.mp4` happens
+ONLY when the user explicitly asks to export. Also a new `.gitkeep` rule: when a folder gains real
+content, delete its `.gitkeep` (it only exists to track an empty folder). This partly reverses the
+2026-06-22 "combine now always exports" change.
+
+Lesson:
+Default combine = preview only (assemble `hyperframes/full-video/`, verify, serve on 1000, write the
+board note, stop). Export (render to `renders/` staging -> move to `output/<slug>.mp4`) is gated on an
+explicit user request. After moving a real deliverable into a folder, remove that folder's `.gitkeep`;
+keep `.gitkeep` only where no real content remains.
+
+Apply next time:
+- never auto-render the MP4; if unsure whether export is wanted, ask
+- on export: after the move, `rm output/.gitkeep` (folder now has real content); keep `renders/.gitkeep`
+  if only the `.gitkeep` remains
+- a pre-existing exported MP4 that predates a section fix is STALE/buggy - do not silently ship it
+
+Promote to shared memory:
+No; combine-skill execution practice.
 
 ### 2026-06-22 - Combine now exports the final MP4 to output/ (reversed the no-export rule)
 

@@ -95,7 +95,7 @@ Current dependency chain (new-project numbers; legacy in parentheses):
 | 3 | `voiceover` | `03-voiceover.md` (legacy `04`) + `voiceover/` | `02-script.md` |
 | 4 | `visual-plan` | `04-visual-plan.md` (legacy `05`), `visual-plan/` | voiceover file + selected section voiceover |
 | 4.5 | `visual-implement` | `assets/` isolated assets + `assets/asset-manifest.md` | `04-visual-plan.md` + selected section visual plan |
-| 5 | `render` | `05-production-board.md` (legacy `06`), `section-previews/`, `hyperframes/`, `renders/` | visual plan + the section's implemented assets in `assets/` |
+| 5 | `render` | `05-production-board.md` (legacy `06`), `previews/` (legacy `section-previews/`), `hyperframes/`, `renders/` | visual plan + the section's implemented assets in `assets/` |
 | 6 | future review skill | `06-review.md` (legacy `07`) | rendered or previewable video sections |
 | 6.5 | `combine` | `hyperframes/full-video/` unified preview + `combined-voiceover.mp3`; final video exported to `output/<slug>.mp4` | ALL sections rendered |
 | 6.8 | `caption` | `output/captions/<language>.srt` for all 22 languages (+ compatibility `output/captions.srt`, optional `.vtt`) | full combined audio or full video render |
@@ -169,11 +169,18 @@ projects/<slug>/assets/
 projects/<slug>/assets/asset-manifest.md
 ```
 
-Per-section render preview projects:
+Per-section render preview projects (folder convention changed 2026-06-30):
 
 ```text
-projects/<slug>/section-previews/section-XX-kebab-section-name/
+projects/<slug>/previews/<N>-kebab-section-name/
 ```
+
+NEW projects use the `previews/` folder with UNPADDED, `section-`-free subfolder names
+(`1-hook`, `2-it-has-a-name-slop`, `10-outro`). LEGACY projects keep
+`section-previews/section-XX-kebab-section-name/` (zero-padded). Do NOT rename existing project folders
+unless the user explicitly asks. Resolve a section's preview by checking `previews/<N>-*/` first, then
+the legacy `section-previews/section-XX-*/`. Preview ports, the `hyperframes/review/section-XX.html`
+mirror name, and composition IDs are unchanged.
 
 The mascot pose library the plan/implement steps draw from (starting palette; the plan may invent new
 poses, which implement then generates and adds back):
@@ -205,7 +212,7 @@ Each new video starts from `projects/_template/` and produces:
 - `assets/` (incl. `assets/asset-manifest.md` from visual-implement)
 - `hyperframes/`
 - `renders/`
-- `section-previews/`
+- `previews/` (legacy projects: `section-previews/`)
 - `visual-plan/`
 - `voiceover/`
 - `output/` (final deliverables for upload)

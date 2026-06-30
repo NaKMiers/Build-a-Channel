@@ -302,6 +302,61 @@ Using `.agents/_shared/systems/topic-packaging-hooks.md` packaging scorecard (ou
 - Total: `91/100`
 - Hard fails: none triggered (numbers illustrative, hooks are `?!` questions, no fake urgency claim, no real logos)
 
+## Shorts Packaging
+
+Added `2026-07-01`. Titles + descriptions for the 3 exported vertical shorts in
+`output/shorts/` (built by the `shorts` skill from the long-form sections). Each short is a
+COMPLETE standalone short with NO in-video CTA; the "Full video:" line below lives only in the
+YouTube description text (allowed), not in the video itself. Posting order: S01 -> S02 -> S03.
+
+| Short | File | Source | Recommended title | Title alternates |
+|---|---|---|---|---|
+| S01 | `short-01-busy-is-not-an-emotion.mp4` | Section 3 | `"Busy" Is Not An Emotion` | `Why We All Say "Busy"` · `Stop Answering "Busy"` |
+| S02 | `short-02-productivity-theater.mp4` | Section 5 | `This Is Called "Productivity Theater"` | `You're Not Working, You're Performing` · `Why Looking Busy Beats Thinking` |
+| S03 | `short-03-work-you-cant-see.mp4` | Section 2 | `Why Real Work Looks Like Doing Nothing` | `The Real Work Is The Part You Can't See` · `Thinking Looks Like Nothing` |
+
+### S01 - "Busy" Is Not An Emotion
+
+Description:
+
+```text
+"How are you?" "Busy." But busy isn't an emotion - it's a quiet way of saying "please notice I'm important." That's why people say it even when nobody asked. At some point the job stops being the work and becomes proving you're near the work.
+
+Full video: Why Everyone Pretends To Be Busy.
+
+#Shorts #BusyCulture #WhyItWorks
+```
+
+### S02 - This Is Called "Productivity Theater"
+
+Description:
+
+```text
+Visible work is just easier to reward. Reply fast, join every call, drag a task from one column to another - it all looks like progress. Spend two hours actually thinking and it looks like nothing happened. That's productivity theater: the tickets are paid in stress, and the star of the show is a spreadsheet.
+
+Full video: Why Everyone Pretends To Be Busy.
+
+#Shorts #ProductivityTheater #WhyItWorks
+```
+
+### S03 - Why Real Work Looks Like Doing Nothing
+
+Description:
+
+```text
+Modern life rewards the look of work more than the work itself - because real progress is hard to see. Thinking looks like nothing. Solving a problem in your head looks like nothing. So we trust what we can see (meetings, fast typing, a serious face at a screen) and ignore what we can't. But the real work usually hides in the part you can't see.
+
+Full video: Why Everyone Pretends To Be Busy.
+
+#Shorts #ProductivityTheater #WhyItWorks
+```
+
+### Shorts tags / keywords (shared)
+
+```text
+busy culture, productivity theater, looking busy, fake productivity, busy vs productive, why everyone is so busy, modern work, office humor, work shorts, english explainer, learn english, why it works
+```
+
 ## Next Step Boundary
 
 Next workflow step: `independent side branch`

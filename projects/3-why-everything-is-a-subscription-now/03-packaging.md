@@ -2,14 +2,19 @@
 
 Video: `Why Everything Is a Subscription Now`
 
-Status: `draft packaging`
+Status: `FINAL - main video + 4 shorts packaged, ready for upload (chapters set from real combine offsets; one manual step left: generate the Variant A thumbnail image from the ready prompt)`
 
 Source skill: `packaging`
+
+Shorts included: `yes - 4 shorts` (S01 The Free Trial Is A Countdown, S02 Cancelling Is A Vision Quest, S03 Your Free Trial Of A Warm Bottom, S04 The Product Is You)
 
 Source files:
 
 - `00-topic-intake.md`
 - `01-research-pack.md`
+- `02-script.md` (section titles)
+- `06-production-board.md` (real combine section offsets for chapters)
+- `shorts/shorts-plan.md` (per-short wording + source sections)
 
 ## Packaging Brief
 
@@ -227,12 +232,18 @@ Somewhere along the way, you stopped buying things and started renting your whol
 
 ### Chapters
 
-```text
-draft until script
-```
+Final - timestamps from the real combine section offsets (`06-production-board.md`; combined video
+`328.056s`). First chapter starts at `0:00` per YouTube requirements.
 
-(Rough chapter spine from the research explanation spine, to finalize against `02-script.md` timings:
-Hook / Everything is monthly now -> What a subscription really is (access, not ownership) -> Why companies love it (recurring revenue) -> Why you forget (free trials + auto-renew) -> Why you can't leave (the cancel maze) -> The payoff (the product is you not cancelling).)
+```text
+0:00 More than you think
+0:23 You stopped buying, you started renting
+1:01 From apps to your car
+1:55 Why companies love it
+2:46 The free trial is a countdown
+3:40 Easy in, no way out
+4:33 The product is you not cancelling
+```
 
 ### Tags / Keywords
 
@@ -260,6 +271,167 @@ subscription, subscriptions, why everything is a subscription, subscription mode
 Quick honesty check before anyone asks: this isn't "subscriptions are evil, cancel everything." Some are genuinely worth it. The point is that the system is built around you forgetting and around leaving being harder than joining - so the choice quietly stops being yours. What's one subscription you forgot you were paying for? 👇
 ```
 
+## Shorts Packaging
+
+Four built shorts (`output/shorts/`), each a COMPLETE standalone short with NO "watch the full video" CTA. One title + one description + one portrait thumbnail each (not the 5-way A/B - that is main-video only). Wording and source sections pulled from `shorts/shorts-plan.md`. Thumbnails are `1080x1920` portrait, prompt-only (no image-generation tool in this environment); generate in ChatGPT/DALL·E and save under `output/thumbnails/`.
+
+| Short | File | Source | Title | Thumbnail | Hashtags |
+|---|---|---|---|---|---|
+| 01 The Free Trial Is A Countdown | `output/shorts/short-01-the-free-trial-is-a-countdown.mp4` | S5 | `Your "Free Trial" Is a Countdown` | `short-01.png` | #subscriptions #freetrial #moneyexplained |
+| 02 Cancelling Is A Vision Quest | `output/shorts/short-02-cancelling-is-a-vision-quest.mp4` | S6 | `Signing Up: 10 Seconds. Cancelling: a Vision Quest.` | `short-02.png` | #subscriptions #cancelanytime #moneyexplained |
+| 03 Your Free Trial Of A Warm Bottom | `output/shorts/short-03-your-free-trial-of-a-warm-bottom.mp4` | S3 | `They Put Your Car's Heated Seats Behind a Monthly Fee` | `short-03.png` | #subscriptions #ownnothing #moneyexplained |
+| 04 The Product Is You, Not Cancelling | `output/shorts/short-04-the-product-is-you.mp4` | S7 | `The Product Was Never the App. It's Your Forgetting.` | `short-04.png` | #subscriptions #moneyexplained #learnenglish |
+
+### Short 01 - `The Free Trial Is A Countdown` (source: Section 5)
+
+- Thumbnail: `output/thumbnails/short-01.png` (`prompt only / image not generated`)
+- Title: `Your "Free Trial" Is a Countdown`
+- One idea: "free" is a hidden countdown - when it hits zero, free quietly becomes a payment you forget about.
+
+Description:
+
+```text
+"Start your free trial - no charge today, just pop in your card." The trial is real... for seven days.
+Then a countdown you can't see hits zero and "free" quietly becomes a payment. Most people don't
+cancel - they forget, because forgetting is the design. Open your bank statement and you'll probably
+find a $3 ghost charge for something you opened once.
+
+#subscriptions #freetrial #moneyexplained
+```
+
+### Short 02 - `Cancelling Is A Vision Quest` (source: Section 6)
+
+- Thumbnail: `output/thumbnails/short-02.png` (`prompt only / image not generated`)
+- Title: `Signing Up: 10 Seconds. Cancelling: a Vision Quest.`
+- One idea: easy in, no way out - leaving is made deliberately harder than joining (negative option billing).
+
+Description:
+
+```text
+Signing up takes ten seconds. Cancelling takes a vision quest: account, settings, manage, "are you
+sure?", "here's a discount," "we'll miss you," then a phone number that only answers 2:00-2:15 on a
+Tuesday. It even has a name - negative option billing: you keep paying unless you actively say stop.
+
+#subscriptions #cancelanytime #moneyexplained
+```
+
+### Short 03 - `Your Free Trial Of A Warm Bottom` (source: Section 3)
+
+- Thumbnail: `output/thumbnails/short-03.png` (`prompt only / image not generated`)
+- Title: `They Put Your Car's Heated Seats Behind a Monthly Fee`
+- One idea: the rent model spread past screens into hardware you already own.
+
+Description:
+
+```text
+The rent model didn't stop at apps. You don't own a single song or show - you rent a giant library,
+and the second you stop paying it all vanishes. Then it left the screen: some carmakers tried putting
+heated seats - already sitting in the car you bought - behind a monthly fee. Your free trial of a warm
+bottom has expired.
+
+#subscriptions #ownnothing #moneyexplained
+```
+
+### Short 04 - `The Product Is You, Not Cancelling` (source: Section 7)
+
+- Thumbnail: `output/thumbnails/short-04.png` (`prompt only / image not generated`)
+- Title: `The Product Was Never the App. It's Your Forgetting.`
+- One idea: the product was never the app or the show - it's your forgetting; the month you meant to cancel and didn't.
+
+Description:
+
+```text
+Why is everything a subscription now? Because the most valuable thing companies can sell isn't the app,
+the show, or the heated seat - it's your forgetting. The month you meant to cancel, and didn't. The
+product was never the thing. The product is you, staying. So open your bank statement, read the little
+charges out loud, keep the ones you love, and cancel the ghosts.
+
+#subscriptions #moneyexplained #learnenglish
+```
+
+### Shorts Thumbnail Prompts (portrait `1080x1920`)
+
+> Prompt-only. Generate in ChatGPT/DALL·E. For each, attach the WIT neutral reference (`.agents/_shared/assets/wit/poses/_origin_.png`) and the named real photo from that short's `shorts/<short>/assets/photos/`. Ask for a 9:16 `1080x1920` portrait. Re-roll if WIT grows hair/shirt-tie/shoes (off-model). Save as `output/thumbnails/short-0N.png`.
+
+#### Short 01 - `short-01.png`
+
+```text
+Use the cartoon character in the attached reference image as WIT - keep his art style (simple white
+round head, thick imperfect black outline, oversized black glasses, expressive eyebrows, small black
+dot eyes, simple white body), only change his pose/expression. WIT emotion: deadpan, unconvinced side-eye.
+
+9:16 vertical 1080x1920 YouTube Shorts cover, EXTREME clickbait energy. Background: the attached
+"hourglass" photo filling the frame, darkened with top and bottom scrims so text pops. Center-low: WIT
+standing, deadpan side-eye, arms crossed. Across the upper third a GIANT rough handwritten hook
+"FREE TRIAL = COUNTDOWN" with a violent red double-underline; show a bold "FREE - 7 days" tag flipping
+to "$2.99 / mo" with a fat red arrow. High contrast, bold flat colors, all key text inside the centered
+safe zone, readable at tiny mobile size.
+
+Do NOT include: no hair, no shirt, no tie, no shoes or accessories on WIT; no real brand logos or app
+names; no real bank data; no paragraphs of text; no fake-urgency text; no clutter; not low-contrast;
+do not crop WIT's head or glasses.
+```
+
+#### Short 02 - `short-02.png`
+
+```text
+Use the cartoon character in the attached reference image as WIT - keep his art style (simple white
+round head, thick imperfect black outline, oversized black glasses, expressive eyebrows, small black
+dot eyes, simple white body), only change his pose/expression. WIT emotion: tiny and defeated, slumped,
+lost.
+
+9:16 vertical 1080x1920 YouTube Shorts cover, EXTREME clickbait energy. Background: the attached "maze"
+photo filling the frame, darkened with top and bottom scrims. Center-low: a small defeated WIT lost
+inside the maze. Across the upper third a GIANT rough handwritten contrast hook: "SIGN UP: 10 sec"
+struck through small, "CANCEL: ???" huge with a violent red double-underline; a red one-way arrow
+showing easy-in / no-way-out. High contrast, bold flat colors, all key text inside the centered safe
+zone, readable at tiny mobile size.
+
+Do NOT include: no hair, no shirt, no tie, no shoes or accessories on WIT; no real brand logos or app
+names; no overly complex maze; no paragraphs of text; no fake-urgency text; no clutter; not
+low-contrast; do not crop WIT's head or glasses.
+```
+
+#### Short 03 - `short-03.png`
+
+```text
+Use the cartoon character in the attached reference image as WIT - keep his art style (simple white
+round head, thick imperfect black outline, oversized black glasses, expressive eyebrows, small black
+dot eyes, simple white body), only change his pose/expression. WIT emotion: shocked - jaw dropped,
+eyes wide, comic shock-burst lines.
+
+9:16 vertical 1080x1920 YouTube Shorts cover, EXTREME clickbait energy. Background: the attached "car"
+photo (a car interior with a seat) filling the frame, darkened with top and bottom scrims. Center-low:
+WIT shocked, pointing at the seat. Slap a bright padlock graphic on the seat with a "$/mo" tag. Across
+the upper third a GIANT rough handwritten hook "HEATED SEATS = MONTHLY?!" with a violent red
+double-underline. High contrast, bold flat colors, all key text inside the centered safe zone, readable
+at tiny mobile size.
+
+Do NOT include: no hair, no shirt, no tie, no shoes or accessories on WIT; no real brand logos or car
+maker names; no paragraphs of text; no fake-urgency text; no clutter; not low-contrast; do not crop
+WIT's head or glasses.
+```
+
+#### Short 04 - `short-04.png`
+
+```text
+Use the cartoon character in the attached reference image as WIT - keep his art style (simple white
+round head, thick imperfect black outline, oversized black glasses, expressive eyebrows, small black
+dot eyes, simple white body), only change his pose/expression. WIT emotion: dawning realization -
+thinking, eyebrows up, a hand near his chin.
+
+9:16 vertical 1080x1920 YouTube Shorts cover, EXTREME clickbait energy. Background: the attached
+"phone" photo filling the frame, darkened with top and bottom scrims. Center-low: WIT thinking, then a
+bold barcode tag reading "PRODUCT: YOU" pinned to his chest. Across the upper third a GIANT rough
+handwritten hook "THE PRODUCT IS YOU" with a violent red double-underline; small struck-through "the
+app? the show?" tag in a top corner. High contrast, bold flat colors, all key text inside the centered
+safe zone, readable at tiny mobile size.
+
+Do NOT include: no hair, no shirt, no tie, no shoes or accessories on WIT; no real brand logos or app
+names; no real bank data; no paragraphs of text; no fake-urgency text; no clutter; not low-contrast;
+do not crop WIT's head or glasses.
+```
+
 ## Scorecard Notes
 
 - 1-second clarity: `14/15` - WIT + `$/mo` tags reads as "everything is monthly now" instantly.
@@ -274,6 +446,6 @@ Quick honesty check before anyone asks: this isn't "subscriptions are evil, canc
 
 ## Next Step Boundary
 
-Next workflow step: `independent side branch`
+Next workflow step: `upload` (then `learning`)
 
-Do not continue into script, voiceover, visual plan, render, review, upload, or learning until the user asks for that step.
+Main video and all 4 shorts are packaged. Stale main-pipeline outputs: `none` (packaging does not stale render/combine/caption/shorts). Do not continue into upload or learning until the user asks for that step.

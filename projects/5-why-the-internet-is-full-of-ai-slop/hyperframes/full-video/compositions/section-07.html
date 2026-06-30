@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Section 07 Attention In, Garbage Out - Why The Internet Is Full Of Garbage Now</title>
+  <style>
+    @font-face { font-family:"PatrickHandLocal"; src:url("./assets/fonts/patrick-hand-latin.woff2") format("woff2"); font-weight:400; font-style:normal; font-display:block; }
+    :root { --ink:#14110d; --red:#e0392b; --green:#1db954; --gold:#ffd23f; --cream:#fff7d8; --blue:#2aa3ff; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:#07070a; color:#fff; overflow:hidden; }
+    #Section07Payoff { position:relative; width:1920px; height:1080px; overflow:hidden; background:#07070a; font-family:"PatrickHandLocal"; }
+    .scene { position:absolute; inset:0; width:100%; height:100%; z-index:1; }
+    .photo { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+    .b-hall   { filter:saturate(1.0) contrast(1.1) brightness(0.55) hue-rotate(-4deg); }
+    .b-stage  { filter:saturate(1.08) contrast(1.08) brightness(0.5); }
+    .b-desk   { filter:saturate(1.05) contrast(1.06) brightness(0.74); }
+    .b-bright { filter:saturate(1.12) contrast(1.05) brightness(0.95); }
+    .vig { position:absolute; inset:0; z-index:2; background:radial-gradient(ellipse 86% 86% at 50% 48%, rgba(4,5,10,0) 56%, rgba(4,5,10,0.42) 100%); }
+    .scrimL { position:absolute; inset:0; z-index:2; background:linear-gradient(90deg, rgba(4,5,12,0.52) 0%, rgba(4,5,12,0.18) 34%, rgba(4,5,12,0) 56%); }
+    .scrimR { position:absolute; inset:0; z-index:2; background:linear-gradient(270deg, rgba(4,5,12,0.52) 0%, rgba(4,5,12,0.18) 34%, rgba(4,5,12,0) 56%); }
+
+    .hero { position:absolute; z-index:7; object-fit:contain; filter:drop-shadow(0 22px 40px rgba(0,0,0,0.55)); }
+    .wit  { position:absolute; object-fit:contain; z-index:8; filter:drop-shadow(14px 16px 0 rgba(0,0,0,0.3)); transform-origin:center center; }
+
+    /* handwritten labels */
+    .hand { position:absolute; z-index:9; font-family:"PatrickHandLocal"; color:#fff; text-shadow:3px 4px 0 rgba(0,0,0,0.6); line-height:1.05; }
+    .h48 { font-size:52px; } .h56 { font-size:60px; } .h72 { font-size:78px; } .h90 { font-size:96px; }
+    .aside { font-size:46px; color:#cfd3dc; }
+
+    /* big kinetic words */
+    .bigword { position:absolute; z-index:10; font-family:"Segoe UI",system-ui,sans-serif; font-weight:900; letter-spacing:-1px; color:#fff; text-shadow:0 0 42px rgba(0,0,0,0.6), 7px 8px 0 rgba(0,0,0,0.45); white-space:nowrap; }
+    .gword { color:var(--gold); text-shadow:-4px -4px 0 #1a140a, 4px -4px 0 #1a140a, -4px 4px 0 #1a140a, 4px 4px 0 #1a140a, 0 0 40px rgba(0,0,0,0.7), 8px 10px 0 rgba(0,0,0,0.5); }
+    .rword { color:#ff5a4d; text-shadow:-4px -4px 0 #2a0907, 4px -4px 0 #2a0907, -4px 4px 0 #2a0907, 4px 4px 0 #2a0907, 0 0 40px rgba(0,0,0,0.7), 8px 10px 0 rgba(0,0,0,0.5); }
+    .w110 { font-size:110px; } .w130 { font-size:130px; } .w160 { font-size:160px; }
+
+    /* struck card (AI IS EVIL / CONSPIRACY / BROKEN) */
+    .struck { position:absolute; z-index:10; font-family:"Segoe UI",system-ui,sans-serif; font-weight:900; font-size:56px; color:#8c8c95; background:#15151b; border:4px solid #3a3a44; border-radius:14px; padding:10px 26px; box-shadow:0 10px 26px rgba(0,0,0,0.5); white-space:nowrap; }
+    .struck::after { content:""; position:absolute; left:6%; right:6%; top:50%; height:9px; background:var(--red); border-radius:5px; transform:rotate(-4deg); box-shadow:0 2px 4px rgba(0,0,0,0.5); }
+
+    /* chips */
+    .chip { position:absolute; z-index:9; font-family:"Segoe UI",system-ui,sans-serif; font-weight:800; font-size:46px; color:#fff; background:#0c0c12; border:4px solid var(--gold); border-radius:16px; padding:10px 26px; box-shadow:0 10px 26px rgba(0,0,0,0.5); white-space:nowrap; }
+    .gcheck { position:absolute; z-index:10; font-family:"Segoe UI",system-ui,sans-serif; font-weight:900; font-size:50px; color:#dffbe6; background:#0c1a10; border:4px solid var(--green); border-radius:16px; padding:10px 26px; box-shadow:0 12px 28px rgba(0,0,0,0.55); white-space:nowrap; }
+    .gcheck .ck { color:var(--green); margin-left:10px; }
+
+    /* in/out arrows (7.3) */
+    .flowtag { position:absolute; z-index:10; font-family:"PatrickHandLocal"; font-size:48px; color:var(--cream); text-shadow:2px 3px 0 rgba(0,0,0,0.7); }
+
+    /* THE TELLS checklist (7.5) */
+    .tellsboard { position:absolute; z-index:9; width:760px; }
+    .tellshdr { font-family:"Segoe UI",system-ui,sans-serif; font-weight:900; font-size:54px; color:#0c0c12; background:var(--gold); border-radius:14px; padding:8px 26px; display:inline-block; box-shadow:0 10px 26px rgba(0,0,0,0.5); letter-spacing:1px; }
+    .tellrow { display:flex; align-items:center; gap:22px; margin-top:22px; background:rgba(12,12,18,0.82); border:3px solid #2a2f3b; border-radius:16px; padding:12px 18px; box-shadow:0 10px 24px rgba(0,0,0,0.5); }
+    .tellrow .tk { flex:0 0 auto; width:150px; height:96px; border-radius:10px; overflow:hidden; background:#000; border:2px solid #444; position:relative; }
+    .tellrow .tk img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+    .tellrow .tk.head { background:linear-gradient(135deg,#23304a,#101620); }
+    .tellrow .tk.head .hl { position:absolute; left:8px; right:8px; top:14px; height:12px; background:#7f8aa0; border-radius:3px; }
+    .tellrow .tk.head .hl2 { position:absolute; left:8px; right:30px; top:40px; height:10px; background:#5c6577; border-radius:3px; }
+    .tellrow .tk.head .hl3 { position:absolute; left:8px; right:54px; top:62px; height:10px; background:#5c6577; border-radius:3px; }
+    .tellrow .lbl { font-family:"PatrickHandLocal"; font-size:50px; color:#fff; }
+    .tellrow .gck { font-family:"Segoe UI",sans-serif; font-weight:900; font-size:44px; color:var(--green); margin-left:auto; }
+
+    /* receding flood (7.6) */
+    .flood { position:absolute; left:0; right:0; bottom:0; z-index:6; background:linear-gradient(180deg, rgba(72,78,52,0) 0%, rgba(60,66,42,0.5) 30%, rgba(46,52,32,0.82) 70%, rgba(36,42,24,0.9) 100%); }
+    .flood::before { content:""; position:absolute; left:0; right:0; top:0; height:14px; background:repeating-linear-gradient(96deg, rgba(126,134,96,0.5) 0 46px, rgba(92,100,68,0.5) 46px 92px); filter:blur(1px); }
+
+    .wit,.hand,.bigword,.hero,.struck,.chip,.gcheck,.flowtag,.tellsboard,.flood { will-change:opacity, transform; }
+  </style>
+</head>
+<body>
+  <div id="Section07Payoff" data-composition-id="Section07Payoff" data-start="0" data-duration="43.413" data-width="1920" data-height="1080">
+
+    <!-- SCENE 7.1  0.00-3.00  "So - why is the internet full of garbage now?" -->
+    <div id="scene-1" class="scene clip" data-start="0" data-duration="3.00" data-track-index="1" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-hall" src="./assets/dark-machine-hall-1.jpg" alt="">
+      <div class="vig"></div>
+      <div class="scrimL"></div>
+      <img class="hero s1-engine" style="right:140px; bottom:60px; width:620px;" src="./assets/slop-engine-loop.png" alt="">
+      <div class="bigword w160 gword s1-why" style="left:90px; top:150px;">WHY?</div>
+      <div class="hand aside s1-aside" style="left:96px; top:360px;">full of garbage now...</div>
+      <img class="wit s1-wit" data-layout-allow-overflow="" style="left:200px; bottom:-300px; width:1080px;" src="./assets/poses/pointing_up_curious_open_mouth.png" alt="">
+    </div>
+
+    <!-- SCENE 7.2  2.70-14.70  "Not because AI is evil. Not because of a conspiracy. Because the internet is working exactly the way it was built to work. It pays for attention. Slop is very good at grabbing attention. So slop wins." -->
+    <div id="scene-2" class="scene clip" data-start="2.70" data-duration="12.00" data-track-index="2" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-stage" src="./assets/dark-spotlight-stage-1.jpg" alt="">
+      <div class="vig"></div>
+      <div class="scrimR"></div>
+      <img class="hero s2-trophy" style="left:50%; transform:translateX(-50%); bottom:40px; width:680px;" src="./assets/slop-wins-trophy.png" alt="">
+      <div class="struck s2-evil" style="left:80px; top:110px;">AI IS EVIL</div>
+      <div class="struck s2-consp" style="left:80px; top:240px;">CONSPIRACY</div>
+      <div class="chip s2-pays" style="left:80px; top:380px;">pays for ATTENTION</div>
+      <div class="bigword w110 gword s2-wins" style="right:90px; top:150px;">slop wins.</div>
+      <img class="wit s2-wit" data-layout-allow-overflow="" style="right:-220px; bottom:-300px; width:1040px;" src="./assets/poses/eyes_closed_talking_open_palm.png" alt="">
+    </div>
+
+    <!-- SCENE 7.3  14.30-16.60  "Attention in. Garbage out." -->
+    <div id="scene-3" class="scene clip" data-start="14.30" data-duration="2.30" data-track-index="3" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-hall" src="./assets/dark-machine-hall-1.jpg" alt="">
+      <div class="vig"></div>
+      <img class="hero s3-engine" style="left:50%; transform:translateX(-50%); top:300px; width:520px;" src="./assets/slop-engine-loop.png" alt="">
+      <div class="bigword w130 gword s3-in" style="left:70px; top:150px;">ATTENTION IN.</div>
+      <div class="bigword w130 rword s3-out" style="right:70px; bottom:160px;">GARBAGE OUT.</div>
+      <img class="wit s3-wit" data-layout-allow-overflow="" style="left:-120px; bottom:-320px; width:980px;" src="./assets/poses/lecturing_finger_raised_eyes_closed.png" alt="">
+    </div>
+
+    <!-- SCENE 7.4  16.25-21.30  "The internet is not broken. It is doing its job perfectly. That is the problem." -->
+    <div id="scene-4" class="scene clip" data-start="16.25" data-duration="5.05" data-track-index="4" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-hall" src="./assets/dark-machine-hall-1.jpg" alt="">
+      <div class="vig"></div>
+      <div class="scrimR"></div>
+      <img class="hero s4-engine" style="left:50%; transform:translateX(-50%); top:180px; width:560px;" src="./assets/slop-engine-loop.png" alt="">
+      <div class="struck s4-broken" style="left:80px; top:120px;">BROKEN</div>
+      <div class="gcheck s4-perfect" style="left:80px; top:280px;">WORKING PERFECTLY<span class="ck">&#10003;</span></div>
+      <div class="hand h72 s4-problem" style="left:90px; bottom:230px; color:var(--cream);">that is the problem.</div>
+      <img class="wit s4-wit" data-layout-allow-overflow="" style="right:-210px; bottom:-300px; width:1020px;" src="./assets/poses/deadpan_unimpressed_half_lidded.png" alt="">
+    </div>
+
+    <!-- SCENE 7.5  20.95-30.70  "But here is the small, useful upgrade. Now you know the tells. The six fingers. The photo that is a little too perfect. The story that is a little too good to be true." -->
+    <div id="scene-5" class="scene clip" data-start="20.95" data-duration="9.75" data-track-index="5" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-desk" src="./assets/evidence-desk-1.jpg" alt="">
+      <div class="vig"></div>
+      <div class="scrimR"></div>
+      <div class="hand h56 s5-upgrade" style="left:90px; top:90px; color:var(--cream);">a small, useful upgrade.</div>
+      <div class="tellsboard" style="right:90px; top:150px;">
+        <div class="tellshdr s5-tells">THE TELLS</div>
+        <div class="tellrow s5-row1"><div class="tk"><img src="./assets/ai-extra-fingers-hand.png" alt=""></div><div class="lbl">six fingers</div><div class="gck">&#10003;</div></div>
+        <div class="tellrow s5-row2"><div class="tk"><img src="./assets/ai-influencer-perfect.png" alt=""></div><div class="lbl">a little too perfect</div><div class="gck">&#10003;</div></div>
+        <div class="tellrow s5-row3"><div class="tk head"><div class="hl"></div><div class="hl2"></div><div class="hl3"></div></div><div class="lbl">too good to be true</div><div class="gck">&#10003;</div></div>
+      </div>
+      <img class="wit s5-wit" data-layout-allow-overflow="" style="left:-140px; bottom:-300px; width:1000px; transform: scaleX(-1);" src="./assets/poses/presenting_screen_announcing_open_mouth.png" alt="">
+    </div>
+
+    <!-- SCENE 7.6  30.40-39.55  "You cannot stop the flood, but you can stop being fooled by it. And on an internet built on attention, the person who pays attention on purpose is the one who wins." -->
+    <div id="scene-6" class="scene clip" data-start="30.40" data-duration="9.15" data-track-index="6" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-bright" src="./assets/bright-window-calm-1.jpg" alt="">
+      <div class="vig"></div>
+      <div class="flood s6-flood" style="height:18%;"></div>
+      <div class="hand h56 s6-fooled1" style="left:90px; top:90px; color:var(--cream);">you can't stop the flood.</div>
+      <div class="bigword w110 gword s6-fooled2" style="left:70px; top:200px;">but stop being<br>FOOLED.</div>
+      <div class="hand h72 s6-win" style="right:90px; bottom:250px; color:var(--cream); text-align:right;">pay attention on purpose<br>= <span style="color:var(--gold);">you win.</span></div>
+      <img class="wit s6-wit" data-layout-allow-overflow="" style="left:45%; transform:translateX(-50%); bottom:-300px; width:980px;" src="./assets/poses/proud_explaining_hand_on_chest_hand_on_hip.png" alt="">
+    </div>
+
+    <!-- SCENE 7.7  39.30-43.413  "We'll keep explaining the weird machine. You keep your eyes open." -->
+    <div id="scene-7" class="scene clip" data-start="39.30" data-duration="4.113" data-track-index="7" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-bright" src="./assets/bright-window-calm-1.jpg" alt="">
+      <div class="vig"></div>
+      <img class="hero s7-engtag" style="right:80px; bottom:70px; width:180px; opacity:0.92;" src="./assets/slop-engine-loop.png" alt="">
+      <div class="hand h48 s7-machine" style="left:90px; top:96px; color:#cfd3dc;">we'll keep explaining the weird machine.</div>
+      <div class="bigword w130 gword s7-eyes" style="left:60px; top:230px; width:1500px;">keep your eyes open.</div>
+      <img class="wit s7-wit" data-layout-allow-overflow="" style="left:25%; bottom:-300px; width:1000px;" src="./assets/poses/pointing_at_viewer_serious_accusing.png" alt="">
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused:true, defaults:{ overwrite:"auto" } });
+      const reveal = (t, hideAt, at, fv, tv={}) => { const r={}; if("x"in fv)r.x=0; if("y"in fv)r.y=0; if("scale"in fv)r.scale=1; if("opacity"in fv)r.opacity=1; if("rotation"in fv)r.rotation=tv.rotation??0; tl.set(t,fv,hideAt); tl.to(t,{...r,...tv},at); };
+      const show  = (t, hideAt, at) => { tl.set(t,{opacity:0},hideAt); tl.set(t,{opacity:1},at); };
+      const smash = (t, hideAt, at, fv={y:24,scale:1.25,opacity:0}) => reveal(t,hideAt,at,fv,{duration:0.2,ease:"back.out(1.9)"});
+      const pop   = (t, hideAt, at) => reveal(t,hideAt,at,{scale:0.4,opacity:0},{duration:0.22,ease:"back.out(2)"});
+      const fadeIn = (sel, at) => tl.fromTo(sel,{opacity:0},{opacity:1,duration:0.22,ease:"sine.out",immediateRender:false}, at);
+
+      // scene crossfades (each scene on its own track)
+      fadeIn("#scene-2",2.70); fadeIn("#scene-3",14.30); fadeIn("#scene-4",16.25);
+      fadeIn("#scene-5",20.95); fadeIn("#scene-6",30.40); fadeIn("#scene-7",39.30);
+
+      // S7.1 - recap question; hall + winding engine + WIT at start; "WHY?" on "why" 0.50; aside on "garbage now" 2.08
+      show("#scene-1 .s1-wit", 0, 0.20);
+      show("#scene-1 .s1-engine", 0, 0.20);
+      smash("#scene-1 .s1-why", 0, 0.50, {y:24,scale:1.3,opacity:0});
+      show("#scene-1 .s1-aside", 0, 2.08);
+
+      // S7.2 - the answer; stage + trophy + WIT at start; struck AI IS EVIL 3.82; struck CONSPIRACY 5.52; pays for ATTENTION 9.80; slop wins 13.80
+      show("#scene-2 .s2-wit", 2.70, 2.80);
+      show("#scene-2 .s2-trophy", 2.70, 2.80);
+      smash("#scene-2 .s2-evil", 2.70, 3.82, {scale:1.3,opacity:0,rotation:-3});
+      smash("#scene-2 .s2-consp", 2.70, 5.52, {scale:1.3,opacity:0,rotation:-3});
+      show("#scene-2 .s2-pays", 2.70, 9.80);
+      smash("#scene-2 .s2-wins", 2.70, 13.80, {y:20,scale:1.2,opacity:0});
+
+      // S7.3 - THE takeaway; engine in/out + WIT at start; "ATTENTION IN." 14.48; "GARBAGE OUT." 15.22
+      show("#scene-3 .s3-wit", 14.30, 14.40);
+      show("#scene-3 .s3-engine", 14.30, 14.40);
+      smash("#scene-3 .s3-in", 14.30, 14.48, {x:-30,scale:1.15,opacity:0});
+      smash("#scene-3 .s3-out", 14.30, 15.22, {x:30,scale:1.15,opacity:0});
+
+      // S7.4 - the reframe; engine + WIT at start; struck BROKEN 17.22; green WORKING PERFECTLY 19.12; "that is the problem." 20.18
+      show("#scene-4 .s4-wit", 16.25, 16.35);
+      show("#scene-4 .s4-engine", 16.25, 16.35);
+      smash("#scene-4 .s4-broken", 16.25, 17.22, {scale:1.3,opacity:0,rotation:-3});
+      smash("#scene-4 .s4-perfect", 16.25, 19.12, {scale:1.2,opacity:0});
+      show("#scene-4 .s4-problem", 16.25, 20.18);
+
+      // S7.5 - the tells; desk + WIT at start; "upgrade" 22.60; THE TELLS 24.46; row1 six fingers 25.18; row2 too perfect 27.20; row3 too good to be true 29.52
+      show("#scene-5 .s5-wit", 20.95, 21.05);
+      show("#scene-5 .s5-upgrade", 20.95, 22.60);
+      smash("#scene-5 .s5-tells", 20.95, 24.46, {y:18,scale:1.12,opacity:0});
+      pop("#scene-5 .s5-row1", 20.95, 25.18);
+      pop("#scene-5 .s5-row2", 20.95, 27.20);
+      pop("#scene-5 .s5-row3", 20.95, 29.52);
+
+      // S7.6 - empowerment; bright base + receding flood + WIT at start; "can't stop the flood" 30.76; "but stop being FOOLED" 32.58; "pay attention on purpose = you win" 37.00
+      show("#scene-6 .s6-wit", 30.40, 30.50);
+      show("#scene-6 .s6-flood", 30.40, 30.50);
+      show("#scene-6 .s6-fooled1", 30.40, 30.76);
+      smash("#scene-6 .s6-fooled2", 30.40, 32.58, {y:18,scale:1.1,opacity:0});
+      smash("#scene-6 .s6-win", 30.40, 37.00, {y:18,scale:1.1,opacity:0});
+
+      // S7.7 - sign-off; bright base + WIT at start; "we'll keep explaining the weird machine" 39.76; big "keep your eyes open." ~42.00 (whisper reordered the tail; pinned from the audio end)
+      show("#scene-7 .s7-wit", 39.30, 39.40);
+      show("#scene-7 .s7-engtag", 39.30, 39.40);
+      show("#scene-7 .s7-machine", 39.30, 39.76);
+      smash("#scene-7 .s7-eyes", 39.30, 42.00, {y:22,scale:1.18,opacity:0});
+
+      window.__timelines["Section07Payoff"] = tl;
+    </script>
+  </div>
+</body>
+</html>

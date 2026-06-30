@@ -2,14 +2,18 @@
 
 Video: `Why Buy 1 Get 1 Free Beats 50% Off`
 
-Status: `draft packaging`
+Status: `main video packaged + 3 shorts packaged (ready to upload)`
 
 Source skill: `packaging`
+
+Shorts included: `yes - 3 shorts` (S01 You're The Rabbit, S02 The Hostage Shampoo, S03 25% Off In A Costume)
 
 Source files:
 
 - `00-topic-intake.md`
 - `01-research-pack.md`
+- `02-script.md`
+- `shorts/shorts-plan.md`
 
 ## Packaging Brief
 
@@ -354,6 +358,130 @@ high-margin AND you actually take both units. On cheap staples (milk, bread) it'
 deal for you. What's the most pointless "free" thing a BOGO ever talked you into? 👇
 ```
 
+## Shorts Packaging
+
+Three built shorts (`output/shorts/`), each a COMPLETE standalone short with NO "watch the full video" CTA. One title + one description + one portrait thumbnail each (not the 5-way A/B - that is main-video only). Wording and source sections pulled from `shorts/shorts-plan.md`. Thumbnails are `1080x1920` portrait, prompt-only (no image-generation tool in this environment); generate in ChatGPT/DALL·E and save under `output/thumbnails/`.
+
+| Short | File | Source | Title | Thumbnail | Hashtags |
+|---|---|---|---|---|---|
+| 01 You're The Rabbit | `output/shorts/short-01-youre-the-rabbit.mp4` | S1 hook + S2 math | `Why "Free" Doubles a Store's Profit 🐇` | `short-01.png` | #WhyItWorks #BuyOneGetOneFree #MoneyTips |
+| 02 The Hostage Shampoo | `output/shorts/short-02-the-hostage-shampoo.mp4` | S4 the magic word | `You Didn't Get a Free Shampoo. You Got a Hostage.` | `short-02.png` | #WhyItWorks #BuyOneGetOneFree #ShoppingPsychology |
+| 03 25% Off In A Costume | `output/shorts/short-03-25-off-in-a-costume.mp4` | S7 payoff | `"Buy 1 Get 1 50% Off" Is 25% Off in a Costume` | `short-03.png` | #WhyItWorks #PricingPsychology #MoneyTips |
+
+### Short 01 - `You're The Rabbit` (source: Section 1 + 2)
+
+- Thumbnail: `output/thumbnails/short-01.png` (`prompt only / image not generated`)
+- Title: `Why "Free" Doubles a Store's Profit 🐇`
+- One idea: a store can give it away free and still out-earn half price, because "free" doubles its profit - and you are the rabbit.
+
+Description:
+
+```text
+A store can hand you a product for free and still out-earn the shop next door selling at half price.
+Same $5 an item either way - but the "free" sign quietly doubles the store's profit. Half price, it
+keeps $1. Free, it keeps $2. That's the magic trick, and you're the rabbit.
+
+#WhyItWorks #BuyOneGetOneFree #MoneyTips
+```
+
+### Short 02 - `The Hostage Shampoo` (source: Section 4)
+
+- Thumbnail: `output/thumbnails/short-02.png` (`prompt only / image not generated`)
+- Title: `You Didn't Get a Free Shampoo. You Got a Hostage.`
+- One idea: "free" is a feeling, not a number - it switches off your math, so BOGO sells you a word with a full-price purchase stapled on.
+
+Description:
+
+```text
+"Free" isn't a number - it's a feeling, and it switches off the part of your brain that does math.
+50% off is a number your brain checks. Free just yells "yes" and grabs. So "Buy 1 Get 1 Free" isn't
+selling you a discount - it's selling you a word, with a full-price purchase stapled to it.
+
+#WhyItWorks #BuyOneGetOneFree #ShoppingPsychology
+```
+
+### Short 03 - `25% Off In A Costume` (source: Section 7)
+
+- Thumbnail: `output/thumbnails/short-03.png` (`prompt only / image not generated`)
+- Title: `"Buy 1 Get 1 50% Off" Is 25% Off in a Costume`
+- One idea: the two signs play different games - 50% off cuts the price, "free" cuts your judgment - and "BOGO 50% off" is just 25% off in disguise.
+
+Description:
+
+```text
+50% off cuts the price. "Buy 1 Get 1 Free" cuts your judgment - two signs playing completely
+different games. One asks your brain a question; the other hands it a gift and says "shush, relax."
+And "Buy 1 Get 1 50% off"? That's just 25% off wearing a costume.
+
+#WhyItWorks #PricingPsychology #MoneyTips
+```
+
+### Shorts Thumbnail Prompts (portrait `1080x1920`)
+
+> Prompt-only. Generate in ChatGPT/DALL·E. For each, attach the WIT neutral reference (`.agents/_shared/assets/wit/poses/_origin_.png`) and the named real photo from that short's `shorts/<short>/assets/photos/`. Ask for a 9:16 `1080x1920` portrait. Re-roll if WIT grows hair/shirt-tie/shoes (off-model). Save as `output/thumbnails/short-0N.png`.
+
+#### Short 01 - `short-01.png`
+
+```text
+Use the cartoon character in the attached reference image as WIT - keep his art style (simple white
+round head, thick imperfect black outline, oversized black glasses, expressive eyebrows, small black
+dot eyes, simple white body), only change his pose/expression. WIT emotion: betrayed and stunned -
+wide eyes behind the glasses, mouth open, little shock strokes around his head.
+
+9:16 vertical 1080x1920 YouTube Shorts cover, EXTREME clickbait energy. Background: the attached
+"magic-hat" photo (a magician's black top hat on red velvet) filling the frame, darkened with a top
+and bottom scrim so text pops. Center-low: WIT standing, betrayed, looking up. Across the upper third
+a GIANT rough red-and-white handwritten hook "YOU'RE THE RABBIT 🐇" with a violent red double-underline.
+Lower-mid, a small bold comparison stamp: "50% off = +$1" struck through, "FREE = +$2" circled hot red
+with a fat upward arrow. High contrast, bold flat colors, all key text inside the centered safe zone,
+readable at tiny mobile size.
+
+Do NOT include: no hair, no shirt, no tie, no shoes or accessories on WIT; no real brand logos; no
+paragraphs of text; no "only today" or fake-urgency text; no clutter; not low-contrast; do not crop
+WIT's head or glasses.
+```
+
+#### Short 02 - `short-02.png`
+
+```text
+Use the cartoon character in the attached reference image as WIT - keep his art style (simple white
+round head, thick imperfect black outline, oversized black glasses, expressive eyebrows, small black
+dot eyes, simple white body), only change his pose/expression. WIT emotion: betrayed / sheepish - eyes
+narrowed, awkward grimace, a bead of sweat.
+
+9:16 vertical 1080x1920 YouTube Shorts cover, EXTREME clickbait energy. Background: the attached
+"prop-shampoo" photo (a plain shampoo bottle) filling the frame, darkened with top and bottom scrims.
+Center-low: WIT holding/standing beside the bottle, looking betrayed. Across the upper third a GIANT
+rough red-and-white handwritten hook "FULL-PRICE SHAMPOO + 1 HOSTAGE" with a violent red
+double-underline; wrap a thick red rope/chain graphic around the second bottle to sell the "hostage"
+gag. High contrast, bold flat colors, all key text inside the centered safe zone, readable at tiny
+mobile size.
+
+Do NOT include: no hair, no shirt, no tie, no shoes or accessories on WIT; no real brand logos; no
+paragraphs of text; no fake-urgency text; no clutter; not low-contrast; do not crop WIT's head or
+glasses.
+```
+
+#### Short 03 - `short-03.png`
+
+```text
+Use the cartoon character in the attached reference image as WIT - keep his art style (simple white
+round head, thick imperfect black outline, oversized black glasses, expressive eyebrows, small black
+dot eyes, simple white body), only change his pose/expression. WIT emotion: shocked - jaw dropped,
+eyes wide, comic shock-burst lines.
+
+9:16 vertical 1080x1920 YouTube Shorts cover, EXTREME clickbait energy. Background: the attached "mask"
+photo (a plain disguise/costume mask) filling the frame, darkened with top and bottom scrims.
+Center-low: WIT standing, shocked, pointing at the mask. Across the upper third a GIANT rough
+red-and-white handwritten hook "= 25% OFF (in a costume)" with a violent red double-underline; small
+struck-through "FREE?" tag in a top corner. High contrast, bold flat colors, all key text inside the
+centered safe zone, readable at tiny mobile size.
+
+Do NOT include: no hair, no shirt, no tie, no shoes or accessories on WIT; no real brand logos; no
+paragraphs of text; no fake-urgency text; no clutter; not low-contrast; do not crop WIT's head or
+glasses.
+```
+
 ## Scorecard Notes
 
 - 1-second clarity (`/15`): 14 - two tags + "SAME?" reads instantly at mobile size
@@ -369,6 +497,6 @@ deal for you. What's the most pointless "free" thing a BOGO ever talked you into
 
 ## Next Step Boundary
 
-Next workflow step: `independent side branch`
+Next workflow step: `upload` (then `learning`)
 
-Do not continue into script, voiceover, visual plan, render, review, upload, or learning until the user asks for that step.
+Main video and all 3 shorts are packaged. Stale main-pipeline outputs: `none` (packaging does not stale render/combine/caption/shorts). Do not continue into upload or learning until the user asks for that step.

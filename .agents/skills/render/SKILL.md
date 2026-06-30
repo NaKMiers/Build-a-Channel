@@ -1,6 +1,6 @@
 ---
 name: render
-description: Build or update step 5 section HyperFrames previews for a Why It Works video project. Use when the user asks for Render, HyperFrames build, create video from visual-plan, build a section preview, run section localhost, start preview servers, or run step 5; export MP4/WebM only when the user explicitly asks to export video; requires completed 00-topic-intake.md, 01-research-pack.md, 02-script.md, 03-voiceover.md, 04-visual-plan.md, selected section voiceover, selected section visual plan, ALL of the selected section's assets ready in assets/ (per assets/asset-manifest.md; render stops if any are missing or awaiting generation/drop rather than sourcing them itself), explicit project selection, and explicit section selection with All as the first option; creates 05-production-board.md, section-previews/ section HyperFrames projects, and hyperframes/ review copies while using port 1000 for unified preview and port 1000 plus section number for section previews.
+description: Build or update step 5 section HyperFrames previews for a Why It Works video project. Use when the user asks for Render, HyperFrames build, create video from visual-plan, build a section preview, run section localhost, start preview servers, or run step 5; export MP4/WebM only when the user explicitly asks to export video; requires completed 00-topic-intake.md, 01-research-pack.md, 02-script.md, 03-voiceover.md, 04-visual-plan.md, selected section voiceover, selected section visual plan, ALL of the selected section's assets ready in assets/ (per assets/asset-manifest.md; render stops if any are missing or awaiting generation/drop rather than sourcing them itself), explicit project selection, and explicit section selection with All as the first option; for NEW projects creates 05-production-board.md, a previews/ folder of per-section HyperFrames projects named <N>-kebab-section-name (e.g. 1-hook, 2-it-has-a-name-slop), and hyperframes/ review copies, while using port 1000 for unified preview and port 1000 plus section number for section previews. Legacy projects keep their existing section-previews/section-XX-name layout.
 ---
 
 # Render
@@ -78,17 +78,37 @@ awaiting generation` / `awaiting drop`, STOP and tell the user to finish `visual
 assets, then rerun render. Produce a missing asset yourself only when the user explicitly asks for that
 specific asset this run, and document it in `IMPLEMENTATION.md` and `05-production-board.md`.
 
-Write or update:
+Write or update (NEW-project folder convention; see Output Folder Convention below):
 
 - `projects/<slug>/05-production-board.md`
-- `projects/<slug>/section-previews/section-XX-kebab-section-name/`
+- `projects/<slug>/previews/<N>-kebab-section-name/`
 - `projects/<slug>/hyperframes/review/section-XX.html`
 - `projects/<slug>/hyperframes/index.html` only as the current active mirror when useful
-- `projects/<slug>/renders/section-XX-kebab-section-name/` only when the user explicitly asks to export an MP4/WebM
+- `projects/<slug>/renders/<N>-kebab-section-name/` only when the user explicitly asks to export an MP4/WebM
 
 When this skill creates, updates, or reruns section preview files, every later output for the affected section becomes stale.
 
 List stale downstream files in chat. Do not silently delete them.
+
+## Output Folder Convention (changed 2026-06-30)
+
+NEW projects: render writes section previews under `projects/<slug>/previews/` (the folder is named
+`previews/`, NOT `section-previews/`), with one subfolder per section named `<N>-<kebab-section-name>`
+using the UNPADDED section number - e.g. `1-hook`, `2-it-has-a-name-slop`, `10-outro`.
+
+LEGACY projects (created before this change, e.g. `1-` … `5-…ai-slop`) keep their existing
+`section-previews/section-XX-<kebab-name>/` layout (zero-padded `section-01-hook`). Do NOT rename
+existing project folders unless the user explicitly asks; this convention applies to folders this skill
+CREATES from now on.
+
+Resolution rule (legacy-tolerant): to find a section's preview, check the NEW path first
+(`projects/<slug>/previews/<N>-*/index.html`), then fall back to the LEGACY path
+(`projects/<slug>/section-previews/section-XX-*/index.html`). Downstream skills (`combine`, `shorts`)
+resolve both the same way.
+
+Unchanged by this rule: preview ports (unified `1000`, section `1000 + N`), the review mirror name
+`hyperframes/review/section-XX.html`, and composition IDs (`SectionXXName`). Only the render output
+folder name (`previews/`) and its per-section subfolder names (`<N>-<kebab-name>`) change.
 
 ## Required Context
 
@@ -119,7 +139,7 @@ Also read active HyperFrames implementation guidance when available:
 
 - the bundled `hyperframes` skill for composition rules
 - the bundled `hyperframes-cli` skill for CLI commands
-- existing project `section-previews/` and `hyperframes/` files when updating an existing section
+- existing project preview files (`previews/<N>-*/` on new projects, legacy `section-previews/section-XX-*/`) and `hyperframes/` files when updating an existing section
 
 Use the HyperFrames skill for core composition mechanics: HTML as source of truth, layout before animation, deterministic GSAP timelines, correct `data-start` / `data-duration` / `data-track-index`, audio as an `<audio>` clip, synchronous timeline registration, and CLI validation.
 
@@ -268,7 +288,7 @@ Use when the user says they edited the localhost/HyperFrames Studio preview manu
 
 Rules:
 
-- Treat the live section preview `section-previews/section-XX-*/index.html` as canonical before any automated rewrite.
+- Treat the live section preview (`previews/<N>-*/index.html` on new projects, legacy `section-previews/section-XX-*/index.html`) as canonical before any automated rewrite.
 - Read and diff the current preview file before editing. Do not copy from `hyperframes/review/section-XX.html`, an older visual plan, or a previous generated draft over the live preview.
 - Remove only the specific accidental artifact the user named or the evidence clearly identifies, such as an unreferenced VFX registry composition, a duration extension, or a duplicate effect layer.
 - If Studio added `data-hf-studio-*` positioning attributes, preserve them unless they are part of the accidental artifact.
@@ -354,15 +374,17 @@ Default mode.
 Create or update:
 
 ```text
-projects/<slug>/section-previews/section-XX-kebab-section-name/
-projects/<slug>/section-previews/section-XX-kebab-section-name/index.html
-projects/<slug>/section-previews/section-XX-kebab-section-name/DESIGN.md
-projects/<slug>/section-previews/section-XX-kebab-section-name/package.json
-projects/<slug>/section-previews/section-XX-kebab-section-name/hyperframes.json
-projects/<slug>/section-previews/section-XX-kebab-section-name/assets -> junction to ../../assets
+projects/<slug>/previews/<N>-kebab-section-name/
+projects/<slug>/previews/<N>-kebab-section-name/index.html
+projects/<slug>/previews/<N>-kebab-section-name/DESIGN.md
+projects/<slug>/previews/<N>-kebab-section-name/package.json
+projects/<slug>/previews/<N>-kebab-section-name/hyperframes.json
+projects/<slug>/previews/<N>-kebab-section-name/assets -> junction to ../../assets
 projects/<slug>/hyperframes/review/section-XX.html
 projects/<slug>/05-production-board.md
 ```
+
+(Legacy projects keep `section-previews/section-XX-kebab-section-name/`; see Output Folder Convention.)
 
 Start or reuse the section preview server on port `1000 + section number`.
 
@@ -604,8 +626,10 @@ projects/<slug>/assets/
 Each section preview project should expose that folder through a local `assets` junction:
 
 ```text
-projects/<slug>/section-previews/section-XX-kebab-section-name/assets
+projects/<slug>/previews/<N>-kebab-section-name/assets
 ```
+
+(Legacy projects: `section-previews/section-XX-kebab-section-name/assets`.)
 
 Do not copy the full assets folder into each section preview.
 

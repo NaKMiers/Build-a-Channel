@@ -1,0 +1,528 @@
+1
+00:00:00,000 --> 00:00:01,160
+Pregunta rápida.
+
+2
+00:00:01,160 --> 00:00:04,820
+Toma tu teléfono, abre cualquier feed y desliza durante diez segundos.
+
+3
+00:00:04,820 --> 00:00:08,580
+Ahora sé honesto: ¿cuánto de eso lo hizo realmente un humano?
+
+4
+00:00:08,580 --> 00:00:10,480
+Hace tres años, la respuesta era fácil.
+
+5
+00:00:10,480 --> 00:00:11,160
+Todo.
+
+6
+00:00:11,160 --> 00:00:12,700
+¿Hoy? Buena suerte.
+
+7
+00:00:12,700 --> 00:00:16,560
+Porque en algún lugar de ese feed hay una foto de un camarón con forma de Jesus,
+
+8
+00:00:16,560 --> 00:00:19,080
+una noticia sobre un evento que nunca ocurrió,
+
+9
+00:00:19,080 --> 00:00:21,760
+y una canción de éxito de una banda que no existe.
+
+10
+00:00:21,760 --> 00:00:24,660
+El internet se está llenando de basura.
+
+11
+00:00:24,660 --> 00:00:26,820
+Basura barata, falsa y producida en masa.
+
+12
+00:00:26,820 --> 00:00:30,040
+Y lo extraño es que nadie se lo ordenó.
+
+13
+00:00:30,040 --> 00:00:31,400
+Averigüemos por qué.
+
+14
+00:00:31,400 --> 00:00:33,520
+Esto ahora hasta tiene un nombre.
+
+15
+00:00:33,520 --> 00:00:34,860
+Lo llamamos slop.
+
+16
+00:00:34,860 --> 00:00:35,260
+Slop.
+
+17
+00:00:35,260 --> 00:00:37,680
+Como la papilla gris que echas en el comedero de un cerdo.
+
+18
+00:00:37,680 --> 00:00:39,740
+Y ese no es un insulto que yo inventé.
+
+19
+00:00:39,740 --> 00:00:43,320
+"Slop" fue literalmente nombrada Palabra del Año en 2025.
+
+20
+00:00:43,320 --> 00:00:45,460
+Ahora, una cosa que quiero dejar clara de inmediato.
+
+21
+00:00:45,460 --> 00:00:49,640
+Este no es un video sobre cómo la AI es malvada y los robots vienen por nosotros.
+
+22
+00:00:49,640 --> 00:00:50,780
+Ese es otro video.
+
+23
+00:00:50,780 --> 00:00:53,780
+Este trata de algo más silencioso y, sinceramente, más tonto.
+
+24
+00:00:53,780 --> 00:00:57,540
+El internet no empeoró por un plan maestro.
+
+25
+00:00:57,540 --> 00:01:01,440
+Empeoró porque crear contenido falso se volvió casi gratis,
+
+26
+00:01:01,440 --> 00:01:05,040
+y el internet te paga por la atención, no por la calidad.
+
+27
+00:01:05,040 --> 00:01:06,500
+Así que empezó una inundación.
+
+28
+00:01:06,500 --> 00:01:08,180
+Y todavía sigue subiendo.
+
+29
+00:01:08,180 --> 00:01:10,040
+Entonces, ¿qué cuenta realmente como slop?
+
+30
+00:01:10,040 --> 00:01:11,100
+Tres cosas.
+
+31
+00:01:11,100 --> 00:01:13,400
+Uno: se ve bien durante medio segundo.
+
+32
+00:01:13,400 --> 00:01:14,880
+Un vistazo rápido, parece normal.
+
+33
+00:01:14,880 --> 00:01:16,500
+Mira más de cerca y se desmorona.
+
+34
+00:01:16,500 --> 00:01:17,900
+La mano tiene seis dedos.
+
+35
+00:01:17,900 --> 00:01:19,200
+Las palabras no tienen ningún sentido.
+
+36
+00:01:19,200 --> 00:01:24,400
+Una marca gigante gasta millones en un anuncio navideño y escribe mal su propio nombre como "Coca-Coola."
+
+37
+00:01:24,400 --> 00:01:25,760
+Eso pasó de verdad.
+
+38
+00:01:25,760 --> 00:01:29,600
+Dos: al creador casi no le cuesta nada, y a ti te cuesta todo.
+
+39
+00:01:29,600 --> 00:01:30,700
+Segundos para hacerlo.
+
+40
+00:01:30,700 --> 00:01:34,060
+Pero se come tu tiempo, tu atención y tu confianza.
+
+41
+00:01:34,060 --> 00:01:36,260
+Tres: se produce de a miles.
+
+42
+00:01:36,260 --> 00:01:37,400
+No una sola publicación falsa.
+
+43
+00:01:37,400 --> 00:01:41,440
+Diez mil publicaciones falsas, rociadas en el feed como una manguera de bomberos.
+
+44
+00:01:41,440 --> 00:01:44,200
+Se ve bien, no les cuesta nada, hecho de a miles.
+
+45
+00:01:44,200 --> 00:01:45,380
+Eso es slop.
+
+46
+00:01:45,380 --> 00:01:49,000
+Una máquina que finge ser una persona, a todo volumen.
+
+47
+00:01:49,000 --> 00:01:50,400
+Ahora la parte importante.
+
+48
+00:01:50,400 --> 00:01:51,920
+¿Por qué la inundación no para de venir?
+
+49
+00:01:51,920 --> 00:01:55,180
+Sigue el dinero, despacio, porque de esto trata todo el video.
+
+50
+00:01:55,180 --> 00:01:55,580
+Paso uno.
+
+51
+00:01:55,580 --> 00:01:57,460
+Crear contenido solía ser caro.
+
+52
+00:01:57,460 --> 00:02:00,460
+Necesitabas un escritor, una cámara, un músico, tiempo.
+
+53
+00:02:00,460 --> 00:02:02,360
+Ahora necesitas un prompt y diez segundos.
+
+54
+00:02:02,360 --> 00:02:04,620
+El costo cayó a casi cero.
+
+55
+00:02:04,620 --> 00:02:05,080
+Paso dos.
+
+56
+00:02:05,080 --> 00:02:07,240
+La plataforma no te paga por ser bueno.
+
+57
+00:02:07,240 --> 00:02:09,110
+Te paga por la interacción,
+
+58
+00:02:09,110 --> 00:02:12,500
+y la interacción solo significa clics, me gusta y tiempo invertido.
+
+59
+00:02:12,500 --> 00:02:14,700
+Premia la atención, no la calidad.
+
+60
+00:02:14,700 --> 00:02:15,180
+Paso tres.
+
+61
+00:02:15,180 --> 00:02:17,460
+Así que la jugada inteligente no es crear una sola cosa genial.
+
+62
+00:02:17,460 --> 00:02:19,580
+La jugada inteligente es inundar la zona:
+
+63
+00:02:19,580 --> 00:02:22,840
+publica mil cosas baratas y espera que unas pocas se vuelvan virales.
+
+64
+00:02:22,840 --> 00:02:23,320
+Paso cuatro.
+
+65
+00:02:23,320 --> 00:02:25,360
+¿El algoritmo que decide lo que ves?
+
+66
+00:02:25,360 --> 00:02:27,640
+Realmente no puede distinguir el slop de lo real.
+
+67
+00:02:27,640 --> 00:02:29,640
+Así que sirve el slop de todos modos.
+
+68
+00:02:29,640 --> 00:02:30,280
+Paso cinco.
+
+69
+00:02:30,280 --> 00:02:33,220
+El slop genera dinero, que paga por más slop.
+
+70
+00:02:33,220 --> 00:02:35,540
+La máquina se alimenta a sí misma.
+
+71
+00:02:35,540 --> 00:02:36,860
+Ese es todo el motor.
+
+72
+00:02:36,860 --> 00:02:40,620
+Barato de hacer, pagado por la atención, imposible de filtrar.
+
+73
+00:02:40,620 --> 00:02:41,920
+Por supuesto que se inunda.
+
+74
+00:02:41,920 --> 00:02:44,680
+Y ya no son solo fotos graciosas de Facebook.
+
+75
+00:02:44,680 --> 00:02:45,880
+Se salió de control.
+
+76
+00:02:45,880 --> 00:02:46,480
+Música.
+
+77
+00:02:46,480 --> 00:02:50,470
+Una banda llamada Velvet Sundown superó el millón de oyentes en Spotify
+
+78
+00:02:50,470 --> 00:02:54,780
+antes de que la gente notara que ni un solo miembro de la banda era real.
+
+79
+00:02:54,780 --> 00:02:55,020
+Libros.
+
+80
+00:02:55,020 --> 00:02:58,580
+Hay gente vendiendo guías de AI para recolectar hongos con fotos falsas.
+
+81
+00:02:58,580 --> 00:03:01,200
+Recoge el hongo equivocado porque lo dibujó un robot,
+
+82
+00:03:01,200 --> 00:03:03,080
+y ese sí que puede matarte.
+
+83
+00:03:03,080 --> 00:03:03,720
+Niños.
+
+84
+00:03:03,720 --> 00:03:10,790
+Una investigación encontró que alrededor del cuarenta por ciento de los videos recomendados a niños parecían slop de AI.
+
+85
+00:03:10,790 --> 00:03:11,940
+Cuarenta de cada cien:
+
+86
+00:03:11,940 --> 00:03:16,740
+dibujos animados sin sentido con caballos de seis patas, todos fingiendo enseñar el abecedario.
+
+87
+00:03:16,740 --> 00:03:17,840
+Incluso tu trabajo.
+
+88
+00:03:17,840 --> 00:03:23,500
+Ahora hay una palabra para el compañero de trabajo que te envía un hermoso documento de AI que no dice absolutamente nada.
+
+89
+00:03:23,500 --> 00:03:24,840
+Te acaban de "workslopear."
+
+90
+00:03:24,840 --> 00:03:29,820
+En promedio, a la persona que lo recibe le cuesta unas dos horas limpiarlo.
+
+91
+00:03:29,820 --> 00:03:31,300
+Así que felicidades.
+
+92
+00:03:31,300 --> 00:03:35,760
+El slop está en tu feed, en tu música, en la tablet de tu hijo y en tu bandeja de entrada.
+
+93
+00:03:35,760 --> 00:03:39,880
+Ahora déjame ser justo por un segundo, porque aquí es donde se pone interesante.
+
+94
+00:03:39,880 --> 00:03:42,040
+No todo el contenido de AI es slop.
+
+95
+00:03:42,040 --> 00:03:45,140
+Un médico que usa AI para explicar una resonancia: no es slop.
+
+96
+00:03:45,140 --> 00:03:47,420
+Un artista que la usa como herramienta: no es slop.
+
+97
+00:03:47,420 --> 00:03:49,760
+El slop se trata de poco esfuerzo y mucho volumen.
+
+98
+00:03:49,760 --> 00:03:51,200
+No se trata de la herramienta.
+
+99
+00:03:51,200 --> 00:03:53,700
+Y no, esto no es un complot secreto.
+
+100
+00:03:53,700 --> 00:03:57,200
+Hay una idea popular en internet llamada "teoría del internet muerto",
+
+101
+00:03:57,200 --> 00:04:02,440
+que dice que el gobierno está llenando la web en secreto con bots para controlar tu mente.
+
+102
+00:04:02,440 --> 00:04:04,320
+Tranquilo. Es más tonto que eso.
+
+103
+00:04:04,320 --> 00:04:05,760
+Nadie está al mando.
+
+104
+00:04:05,760 --> 00:04:07,160
+Ningún villano apretó un botón.
+
+105
+00:04:07,160 --> 00:04:10,400
+La basura se propaga sola, porque el dinero la premia.
+
+106
+00:04:10,400 --> 00:04:12,600
+Y esa es la parte incómoda.
+
+107
+00:04:12,600 --> 00:04:14,820
+No puedes arrestar a un incentivo.
+
+108
+00:04:14,820 --> 00:04:17,460
+Entonces, ¿por qué el internet está lleno de basura ahora?
+
+109
+00:04:17,460 --> 00:04:19,200
+No porque la AI sea malvada.
+
+110
+00:04:19,200 --> 00:04:20,820
+No por una conspiración.
+
+111
+00:04:20,820 --> 00:04:24,160
+Porque el internet está funcionando exactamente como fue construido para funcionar.
+
+112
+00:04:24,160 --> 00:04:25,640
+Paga por la atención.
+
+113
+00:04:25,640 --> 00:04:28,060
+El slop es muy bueno para captar la atención.
+
+114
+00:04:28,060 --> 00:04:28,880
+Así que el slop gana.
+
+115
+00:04:28,880 --> 00:04:31,180
+Entra atención. Sale basura.
+
+116
+00:04:31,180 --> 00:04:32,400
+El internet no está roto.
+
+117
+00:04:32,400 --> 00:04:34,620
+Está haciendo su trabajo a la perfección.
+
+118
+00:04:34,620 --> 00:04:35,960
+Ese es el problema.
+
+119
+00:04:35,960 --> 00:04:38,360
+Pero aquí está la pequeña mejora útil.
+
+120
+00:04:38,360 --> 00:04:39,760
+Ahora conoces las señales.
+
+121
+00:04:39,760 --> 00:04:40,740
+Los seis dedos.
+
+122
+00:04:40,740 --> 00:04:42,680
+La foto que es un poco demasiado perfecta.
+
+123
+00:04:42,680 --> 00:04:45,160
+La historia que es demasiado buena para ser verdad.
+
+124
+00:04:45,160 --> 00:04:46,740
+No puedes detener la inundación.
+
+125
+00:04:46,740 --> 00:04:48,760
+Pero sí puedes dejar de dejarte engañar por ella.
+
+126
+00:04:48,760 --> 00:04:50,700
+Y en un internet construido sobre la atención,
+
+127
+00:04:50,700 --> 00:04:54,440
+la persona que presta atención a propósito es la que gana.
+
+128
+00:04:54,440 --> 00:04:56,640
+Seguiremos explicando esta máquina rara.
+
+129
+00:04:56,640 --> 00:04:58,220
+Tú mantén los ojos abiertos.
+
+130
+00:04:58,220 --> 00:04:59,560
+Eso es todo por hoy.
+
+131
+00:04:59,560 --> 00:05:02,840
+Si esto te ayudó, dale me gusta al video, compártelo con alguien que lo necesite y suscríbete para ver más.
+
+132
+00:05:02,840 --> 00:05:06,168
+Nos vemos en el próximo.
+

@@ -240,8 +240,67 @@ loud, gamified fake-YouTube end-card.
 - S3 v1 assets orphaned by the v2 rebuild (kept unless removed on request): `gallery-wall-1.jpg`, `ai-face-does-not-exist.png`, `holiday-bokeh-red-1.jpg`, `hourglass-time-1.jpg` (see `assets/ATTRIBUTION.md`).
 - No `06-review.md` / `07-upload.md` / `08-self-learning.md` yet - nothing downstream stale.
 
+## Combine Note (2026-06-30)
+
+Unified full video assembled + exported.
+
+- Build: `hyperframes/full-video/` (parent comp `UnifiedAiSlop`, 1920x1080, `306.168s`).
+  - 8 section mounts under `compositions/section-0X.html` (each = the live `section-previews/<section>/index.html`, per-section `<audio>` stripped), one combined `<audio>` only.
+  - Cumulative ACTUAL-mp3 offsets: S1 0.000 (31.320) / S2 31.320 (36.768) / S3 68.088 (40.752) / S4 108.840 (53.040) / S5 161.880 (53.808) / S6 215.688 (39.000) / S7 254.688 (43.464) / S8 298.152 (8.016). Total `306.168s`.
+  - `combined-voiceover.mp3` = the 8 section mp3s concatenated in order (ffmpeg stream-copy); ffprobe `306.168s`.
+  - Consolidated `assets/` at the full-video root (all bases + `poses/` + `fonts/`); 107/107 referenced assets resolve, 0 missing. (`_raw-checkerboard/` backups intentionally not copied.)
+- Self-check: `lint` 0 errors / 17 warnings (all intended: reused-media discovery + S8 boing/click GSAP overlaps); `compositions` shows `UnifiedAiSlop` with 8 mounts + 1 audio; exactly 1 `<audio>` in `index.html`, 0 across `compositions/*`; 8-section snapshot renders every section with real bases + WIT + labels. Preview answers `HTTP 200` on `localhost:1000`.
+- Preview: `http://localhost:1000`.
+
+### Section 4 overlay fix (2026-06-30)
+
+Bug: in the combined preview the WHOLE of Section 4 was washed dark and its "THE LOOP" HUD jumped
+from top-right to a mid-left blob, even though Section 4 was perfect standalone on `localhost:1004`.
+Cause: mounted sub-comp + parent share ONE CSS scope. The parent `index.html` had a bare
+`.clip { position:absolute; inset:0; width:100%; height:100% }` rule for the mount hosts, which leaked
+onto Section 4's persistent loop-ring HUD (`<div class="hud clip">` - the only NON-scene `clip` element
+in the video), stretching its dark pill background (`rgba(8,9,14,0.74)`, z-index 12) into a full-screen
+scrim. Fix: parent now styles hosts via a dedicated `.mount` class (hosts = `class="clip mount"`,
+keeping `clip` for the visibility runtime); the bare `.clip` rule is removed so it can no longer leak.
+Verified by re-snapshot: HUD back top-right, darkening gone, STEP/HUD nodes light correctly, lint 0 err.
+
+### MP4 export (2026-06-30 1080p, upgraded to 4K on request 2026-07-01)
+
+Current deliverable (HIGH QUALITY): `output/5-why-the-internet-is-full-of-ai-slop.mp4` -
+h264 **3840x2160 (4K)** 30fps + AAC, ~237 MB (~6.4 Mbps), ffprobe `306.219s` ≈ combined audio
+`306.168s`. Rendered at `--resolution landscape-4k --quality high` (HyperFrames supersamples the
+1080p composition 2x, so the WIT outlines, handwritten labels, and CSS graphics are genuinely crisper;
+raster photo bases are unchanged). Render took ~31 min. Verified the Section 4 fix is baked in at 4K
+(frame at 116s: HUD top-right, bright scene, white WIT, no dark scrim; vector/text crisp).
+
+Rendered to `renders/` staging then MOVED to `output/`, replacing the earlier 1080p export (h264
+1920x1080, ~88 MB) which was the first post-fix render. `.gitkeep` rule applied: `output/` has real
+content so no `.gitkeep`; `renders/` has no real content so its `.gitkeep` is restored.
+
+## Caption Note (2026-06-30)
+
+Captions built once from the full combined audio and exported in all 22 languages.
+
+- Source: `hyperframes/full-video/combined-voiceover.mp3` (decoded 306.109s; combine timeline 306.168s).
+- Transcribed in one pass with `whisper-tiny.en` (`@xenova/transformers`, word timestamps) -> 992 words; saved `voiceover/combined-word-timings.json`.
+- English cue text taken verbatim from `02-script.md` narration (stage directions stripped), aligned to the real word timings -> 132 cues. Timing table saved as `voiceover/combined-segments.json`.
+- Whisper tail glitch recurred (final "...needs it," jumped back to 299.3s while "See you in the next one." ran to 303.4s). Last cue START was sound; only its END was short, so extended the final cue end to the audio duration (306.168s) and regenerated `english.srt` from the patched segments. Standard tail fix.
+- Section-offset cross-check (vs Combine offsets): all 8 section first-cues within 0.16s (S1 0.000 / S2 +0.080 / S3 +0.092 / S4 +0.160 / S5 +0.040 / S6 +0.072 / S7 +0.132 / S8 +0.068).
+- 21 other languages translated cue-for-cue (132 each, "slop"/"workslopped" kept as the English pun words; brands/years verbatim) and written via `write-translated-srt.mjs` reusing the English timing.
+- Verified: 22 files in `output/captions/`, every language identical cue count (132) and byte-identical timestamps vs `english.srt`, 0 empty cues, clean UTF-8 (Arabic/CJK/Indic/Thai render, no mojibake). Compatibility `output/captions.srt` (English) also written.
+
+## Shorts Note (2026-07-01)
+
+3 vertical shorts built + exported (side sub-workflow; long-form untouched). Plan + log in `shorts/shorts-plan.md`.
+
+- `output/shorts/short-01-is-any-of-this-real.mp4` (S1) - 21.89s
+- `output/shorts/short-02-six-fingers-coca-coola.mp4` (S3) - 19.52s
+- `output/shorts/short-03-arrest-an-incentive.mp4` (S6) - 20.32s
+
+All native `1080x1920`, h264/aac/30fps, no CTA, regenerated per-short VO + burned centered subtitles, reused source-section assets + signature devices.
+
 ## Next Step Boundary
 
-Next workflow step: `Review`
+Next workflow step: `Packaging` (recommended) or `Upload`
 
-Do not continue into review, upload, or learning until the user asks for the next skill or explicitly requests that step.
+Do not continue into packaging, review, upload, or learning until the user asks for the next skill or explicitly requests that step.

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Short 02 - Six Fingers & Coca-Coola</title>
+  <style>
+    @font-face { font-family:"PatrickHandLocal"; src:url("./assets/fonts/patrick-hand-latin.woff2") format("woff2"); font-weight:400; font-style:normal; font-display:block; }
+    :root { --ink:#14110d; --red:#e0392b; --gold:#ffd23f; --green:#1f9d4d; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:#07070a; color:#fff; overflow:hidden; }
+    #Short02 { position:relative; width:1080px; height:1920px; overflow:hidden; background:#07070a; font-family:"PatrickHandLocal"; }
+    .scene { position:absolute; inset:0; width:100%; height:100%; z-index:1; isolation:isolate; }
+    .photo { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+    .b-bright { filter:saturate(1.10) contrast(1.05) brightness(0.86); }
+    .b-dim    { filter:saturate(1.05) contrast(1.06) brightness(0.6); }
+    .scrim-top { position:absolute; left:0; right:0; top:0; height:620px; z-index:2; background:linear-gradient(180deg, rgba(4,5,10,0.7) 0%, rgba(4,5,10,0.26) 60%, rgba(4,5,10,0) 100%); }
+    .scrim-bot { position:absolute; left:0; right:0; bottom:0; height:520px; z-index:2; background:linear-gradient(0deg, rgba(4,5,10,0.66) 0%, rgba(4,5,10,0) 100%); }
+
+    .hero { position:absolute; z-index:7; object-fit:contain; filter:drop-shadow(12px 16px 0 rgba(0,0,0,0.32)); }
+    .ink  { position:absolute; z-index:7; object-fit:contain; mix-blend-mode:multiply; }
+
+    /* slop "post" card frame */
+    .post { position:absolute; z-index:7; background:#fff; border-radius:24px; padding:14px; box-shadow:0 26px 64px rgba(0,0,0,0.62); overflow:hidden; transform:rotate(-2deg); }
+    .post img { display:block; width:100%; height:100%; object-fit:cover; border-radius:14px; }
+    .post .bar { position:absolute; left:0; right:0; top:0; height:54px; background:#fff; display:flex; align-items:center; gap:12px; padding:0 18px; z-index:2; }
+    .post .ava { width:30px; height:30px; border-radius:50%; background:linear-gradient(135deg,#ffd23f,#e0392b); }
+    .post .hdl { font-family:"Segoe UI",system-ui,sans-serif; font-weight:800; font-size:26px; color:#16140f; }
+    .post.glitch img { filter:saturate(1.3) contrast(1.15) hue-rotate(-6deg); }
+
+    .wit { position:absolute; object-fit:contain; z-index:8; filter:drop-shadow(12px 14px 0 rgba(0,0,0,0.3)); transform-origin:center bottom; }
+
+    .hand { position:absolute; z-index:9; font-family:"PatrickHandLocal"; color:#fff; text-shadow:3px 4px 0 rgba(0,0,0,0.6); line-height:1.05; }
+    .h64 { font-size:66px; } .h80 { font-size:84px; }
+
+    .bigword { position:absolute; z-index:10; font-family:"Segoe UI",system-ui,sans-serif; font-weight:900; letter-spacing:-1px; color:var(--gold); line-height:0.98; text-shadow:-4px -4px 0 #1a140a, 4px -4px 0 #1a140a, -4px 4px 0 #1a140a, 4px 4px 0 #1a140a, 0 0 40px rgba(0,0,0,0.7), 8px 10px 0 rgba(0,0,0,0.5); }
+    .xl { font-size:148px; } .lg { font-size:104px; }
+
+    /* mark cards / hazard */
+    .markcard { position:absolute; z-index:10; font-family:"Segoe UI",system-ui,sans-serif; font-weight:900; font-size:60px; letter-spacing:0.5px; padding:14px 32px; border-radius:16px; background:#16181d; color:var(--gold); box-shadow:0 14px 30px rgba(0,0,0,0.5); transform:rotate(-3deg); white-space:nowrap; }
+    .hazard { position:absolute; z-index:10; font-family:"Segoe UI",system-ui,sans-serif; font-weight:900; font-size:54px; letter-spacing:1px; padding:14px 30px; background:var(--gold); color:#1a140a; border:6px solid #1a140a; border-radius:10px; transform:rotate(-4deg); box-shadow:0 12px 26px rgba(0,0,0,0.5); white-space:nowrap; }
+
+    /* markup bits */
+    .redtag { position:absolute; z-index:12; font-family:"PatrickHandLocal"; color:var(--red); font-size:80px; transform:rotate(-7deg); text-shadow:2px 3px 0 rgba(0,0,0,0.5); white-space:nowrap; }
+    .circle { position:absolute; z-index:11; border:10px solid var(--red); border-radius:50%; box-shadow:0 2px 12px rgba(0,0,0,0.55); }
+    .check { position:absolute; z-index:10; left:50%; transform:translateX(-50%); font-family:"Segoe UI",system-ui,sans-serif; font-weight:900; font-size:52px; color:#fff; background:rgba(18,18,22,0.88); border-left:12px solid var(--green); padding:16px 30px; border-radius:10px; box-shadow:0 12px 26px rgba(0,0,0,0.5); white-space:nowrap; }
+    .check .tk { color:#36e07a; margin-right:14px; }
+    .stampwrap { position:absolute; z-index:13; transform:rotate(-9deg); }
+
+    /* distinct centered SUBTITLE layer */
+    .caption-layer { position:absolute; inset:0; z-index:20; pointer-events:none; }
+    .cap { position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:max-content; max-width:820px; text-align:center;
+           font-family:"Segoe UI",system-ui,sans-serif; font-weight:800; font-size:58px; line-height:1.16; color:#fff;
+           background:rgba(16,12,9,0.5); border-radius:22px; padding:14px 30px;
+           text-shadow:-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0 3px 10px rgba(0,0,0,0.6); }
+
+    /* TEMP safe-guide (REMOVE before handoff) */
+    .safe-guide { position:absolute; left:60px; top:220px; width:820px; height:1270px; z-index:90; border:4px dashed rgba(0,255,170,0.9); pointer-events:none; }
+    .center-line { position:absolute; left:0; right:0; top:960px; height:3px; background:rgba(0,255,170,0.7); z-index:90; pointer-events:none; }
+
+    .wit,.hand,.bigword,.markcard,.hazard,.redtag,.circle,.check,.post,.hero,.ink,.stampwrap,.cap { will-change:opacity, transform; }
+  </style>
+</head>
+<body>
+  <div id="Short02" data-composition-id="Short02" data-start="0" data-duration="19.5" data-width="1080" data-height="1920">
+
+    <!-- SCENE 1  0.00-1.96  "So what actually counts as slop?" -->
+    <div id="scene-1" class="scene clip" data-start="0" data-duration="1.96" data-track-index="1" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-bright" src="./assets/factory-interior-1.jpg" alt="">
+      <div class="scrim-top"></div><div class="scrim-bot"></div>
+      <img class="hero s1-machine" data-layout-allow-overflow="" style="left:50%; top:300px; transform:translateX(-50%); width:680px;" src="./assets/slop-machine.png" alt="">
+      <div class="hazard s1-hz" style="left:50%; transform:translateX(-50%); top:250px;">3 TELLS</div>
+      <img class="wit s1-wit" data-layout-allow-overflow="" style="right:-160px; bottom:-130px; width:960px;" src="./assets/poses/presenting_screen_announcing_open_mouth.png" alt="">
+    </div>
+
+    <!-- SCENE 2  1.96-4.52  "It looks fine for half a second. Quick glance, looks normal." -->
+    <div id="scene-2" class="scene clip" data-start="1.96" data-duration="2.56" data-track-index="3" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-dim" src="./assets/studio-backdrop-1.jpg" alt="">
+      <div class="scrim-top"></div><div class="scrim-bot"></div>
+      <div class="post s2-post" style="left:50%; transform:translateX(-50%); top:360px; width:470px; height:550px;">
+        <div class="bar"><div class="ava"></div><div class="hdl">@perfect.her_</div></div>
+        <img src="./assets/ai-influencer-perfect.png" style="margin-top:54px; height:496px;" alt="">
+      </div>
+      <div class="markcard s2-mark" style="left:50%; transform:translateX(-50%); top:270px;">LOOKS FINE</div>
+      <img class="wit s2-wit" data-layout-allow-overflow="" style="left:-180px; bottom:-130px; width:920px;" src="./assets/poses/delighted_blushing_sparkle_eyes.png" alt="">
+    </div>
+
+    <!-- SCENE 3  4.52-7.68  "Look closer, and it falls apart. The hand has six fingers." -->
+    <div id="scene-3" class="scene clip" data-start="4.52" data-duration="3.16" data-track-index="4" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-dim" src="./assets/studio-backdrop-1.jpg" style="filter:saturate(0.9) contrast(1.1) brightness(0.5);" alt="">
+      <div class="scrim-top"></div><div class="scrim-bot"></div>
+      <div class="post glitch s3-post" style="left:50%; transform:translateX(-50%); top:280px; width:560px; height:520px;">
+        <img src="./assets/ai-extra-fingers-hand.png" alt="">
+      </div>
+      <div class="circle s3-circle" style="left:320px; top:400px; width:280px; height:230px;"></div>
+      <div class="redtag s3-fingers" style="left:50%; transform:translate(-50%,0); top:800px;">6 FINGERS?!</div>
+      <img class="wit s3-wit" data-layout-allow-overflow="" style="right:-180px; bottom:-140px; width:940px;" src="./assets/poses/panic_hands_on_cheeks_scream.png" alt="">
+    </div>
+
+    <!-- SCENE 4  7.68-8.92  "The words are gibberish." -->
+    <div id="scene-4" class="scene clip" data-start="7.68" data-duration="1.24" data-track-index="5" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-bright" src="./assets/night-storefront-1.jpg" alt="">
+      <div class="scrim-top"></div><div class="scrim-bot"></div>
+      <div class="post s4-post" style="left:50%; transform:translateX(-50%); top:330px; width:660px; height:410px;">
+        <img src="./assets/gibberish-melting-sign.png" alt="">
+      </div>
+      <div class="redtag s4-tag" style="left:50%; transform:translate(-50%,0); top:250px;">gibberish.</div>
+      <img class="wit s4-wit" data-layout-allow-overflow="" style="left:-180px; bottom:-130px; width:920px;" src="./assets/poses/shrug_confused_flat_mouth.png" alt="">
+    </div>
+
+    <!-- SCENE 5  8.92-14.92  "...misspells its own name as 'Coca-Coola.' That really happened." -->
+    <div id="scene-5" class="scene clip" data-start="8.92" data-duration="6.00" data-track-index="6" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-dim" src="./assets/holiday-street-1.jpg" alt="">
+      <div class="scrim-top"></div><div class="scrim-bot"></div>
+      <div class="post s5-post" style="left:50%; transform:translateX(-50%); top:300px; width:680px; height:500px;">
+        <img src="./assets/coca-coola-ad-fail.png" alt="">
+      </div>
+      <div class="circle s5-circle" style="left:290px; top:520px; width:330px; height:150px;"></div>
+      <div class="redtag s5-coola" style="left:50%; transform:translate(-50%,0); top:760px;">"Coca-Coola"?!</div>
+      <div class="hand h64 s5-happened" style="left:50%; transform:translateX(-50%); top:250px; color:var(--gold); text-align:center;">(that really happened.)</div>
+      <img class="wit s5-wit" data-layout-allow-overflow="" style="right:-190px; bottom:-130px; width:980px;" src="./assets/poses/big_open_mouth_laugh_presenting_closeup.png" alt="">
+    </div>
+
+    <!-- SCENE 6  14.92-19.5  "Looks fine, costs them nothing, made by the thousand. That is slop." -->
+    <div id="scene-6" class="scene clip" data-start="14.92" data-duration="4.58" data-track-index="7" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-bright" src="./assets/factory-interior-1.jpg" alt="">
+      <div class="scrim-top"></div><div class="scrim-bot"></div>
+      <img class="hero s6-machine" data-layout-allow-overflow="" style="left:-40px; bottom:-30px; width:560px;" src="./assets/slop-machine.png" alt="">
+      <div class="check s6-c1" style="top:330px;"><span class="tk">&#10003;</span>looks fine</div>
+      <div class="check s6-c2" style="top:450px;"><span class="tk">&#10003;</span>costs them nothing</div>
+      <div class="check s6-c3" style="top:570px;"><span class="tk">&#10003;</span>made by the thousand</div>
+      <div class="stampwrap s6-stamp" style="left:50%; top:760px; transform:translateX(-50%) rotate(-9deg); width:600px;">
+        <img class="ink" style="position:relative; width:600px;" src="./assets/certified-slop-stamp.png" alt="">
+      </div>
+      <img class="wit s6-wit" data-layout-allow-overflow="" style="right:-180px; bottom:-130px; width:940px;" src="./assets/poses/smug_raised_eyebrow_smirk.png" alt="">
+    </div>
+
+    <!-- distinct centered subtitles -->
+    <div class="caption-layer">
+      <div class="cap c1">What counts as slop?</div>
+      <div class="cap c2">for half a second.</div>
+      <div class="cap c3">Quick glance, looks normal.</div>
+      <div class="cap c4">But look closer...</div>
+      <div class="cap c5">it falls apart.</div>
+      <div class="cap c6">The words are...</div>
+      <div class="cap c7">A giant brand's holiday ad</div>
+      <div class="cap c8">misspells its own name.</div>
+    </div>
+
+    <audio id="voiceover-short-02" data-start="0" data-duration="19.5" data-track-index="30" data-volume="1" crossorigin="anonymous" src="./voiceover/short-02.mp3"></audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script>
+      window.__timelines = window.__timelines || {};
+      gsap.set(".caption-layer .cap", { opacity:0 });
+
+      const tl = gsap.timeline({ paused:true, defaults:{ overwrite:"auto" } });
+      const reveal = (t, hideAt, at, fv, tv={}) => { const r={}; if("x"in fv)r.x=0; if("y"in fv)r.y=0; if("scale"in fv)r.scale=1; if("opacity"in fv)r.opacity=1; tl.set(t,fv,hideAt); tl.to(t,{...r,...tv},at); };
+      const show  = (t, hideAt, at) => { tl.set(t,{opacity:0},hideAt); tl.set(t,{opacity:1},at); };
+      const smash = (t, hideAt, at, fv={y:22,scale:1.3,opacity:0}) => reveal(t,hideAt,at,fv,{duration:0.2,ease:"back.out(1.9)"});
+      const pop   = (t, hideAt, at) => reveal(t,hideAt,at,{scale:0.4,opacity:0},{duration:0.22,ease:"back.out(2)"});
+      const cap   = (sel, at, hideAt) => { tl.set(sel,{opacity:1}, Math.max(at,0.05)); tl.set(sel,{opacity:0}, hideAt); };
+      const fadeIn = (sel, at) => tl.fromTo(sel,{opacity:0},{opacity:1,duration:0.22,ease:"sine.out",immediateRender:false}, at);
+
+      fadeIn("#scene-2",1.96); fadeIn("#scene-3",4.52); fadeIn("#scene-4",7.68); fadeIn("#scene-5",8.92); fadeIn("#scene-6",14.92);
+
+      // S1 - machine + "3 TELLS" on "slop?" (1.36)
+      show("#scene-1 .s1-wit", 0, 0.20);
+      pop("#scene-1 .s1-machine", 0, 0.25);
+      smash("#scene-1 .s1-hz", 0, 1.36, {scale:1.4,opacity:0});
+
+      // S2 - bait post; "LOOKS FINE" on "looks fine" (1.96)
+      show("#scene-2 .s2-wit", 1.96, 2.10);
+      pop("#scene-2 .s2-post", 1.96, 2.16);
+      smash("#scene-2 .s2-mark", 1.96, 2.18, {x:-30,scale:1.2,opacity:0});
+
+      // S3 - meltdown; circle + "6 FINGERS?!" on "six fingers" (6.94)
+      show("#scene-3 .s3-wit", 4.52, 4.66);
+      pop("#scene-3 .s3-post", 4.52, 4.70);
+      pop("#scene-3 .s3-circle", 4.52, 6.94);
+      smash("#scene-3 .s3-fingers", 4.52, 6.94, {y:18,scale:1.3,opacity:0});
+
+      // S4 - gibberish; tag on "gibberish" (8.28)
+      show("#scene-4 .s4-wit", 7.68, 7.80);
+      pop("#scene-4 .s4-post", 7.68, 7.86);
+      smash("#scene-4 .s4-tag", 7.68, 8.28, {y:20,scale:1.35,opacity:0});
+
+      // S5 - Coca-Coola ad on "holiday ad" (10.66); circle + tag on "Coca-Cola" (12.72); "(that really happened.)" (13.80)
+      show("#scene-5 .s5-wit", 8.92, 9.10);
+      pop("#scene-5 .s5-post", 8.92, 10.66);
+      pop("#scene-5 .s5-circle", 8.92, 12.72);
+      smash("#scene-5 .s5-coola", 8.92, 12.72, {y:18,scale:1.3,opacity:0});
+      show("#scene-5 .s5-happened", 8.92, 13.80);
+
+      // S6 - verdict; checks tick (14.92/15.66/16.34); CERTIFIED SLOP on "that is slop" (17.38)
+      show("#scene-6 .s6-wit", 14.92, 15.04);
+      show("#scene-6 .s6-machine", 14.92, 15.00);
+      pop("#scene-6 .s6-c1", 14.92, 15.04);
+      pop("#scene-6 .s6-c2", 14.92, 15.66);
+      pop("#scene-6 .s6-c3", 14.92, 16.34);
+      tl.set("#scene-6 .s6-stamp", {opacity:0, scale:1.8}, 14.92);
+      tl.to("#scene-6 .s6-stamp", {opacity:1, scale:1, duration:0.24, ease:"back.out(2)"}, 17.38);
+
+      // captions (cleared where markup/cards carry the punch)
+      cap(".c1", 0.28, 1.96);
+      cap(".c2", 2.5, 3.3);
+      cap(".c3", 3.3, 4.52);
+      cap(".c4", 4.52, 5.46);
+      cap(".c5", 5.46, 6.94);
+      cap(".c6", 7.68, 8.28);
+      cap(".c7", 8.92, 11.54);
+      cap(".c8", 11.54, 12.72);
+
+      window.__timelines["Short02"] = tl;
+    </script>
+  </div>
+</body>
+</html>

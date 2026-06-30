@@ -1,0 +1,528 @@
+1
+00:00:00,000 --> 00:00:01,160
+Pertanyaan singkat.
+
+2
+00:00:01,160 --> 00:00:04,820
+Ambil ponselmu, buka feed apa saja, dan scroll selama sepuluh detik.
+
+3
+00:00:04,820 --> 00:00:08,580
+Sekarang jujurlah: berapa banyak dari itu yang benar-benar dibuat oleh manusia?
+
+4
+00:00:08,580 --> 00:00:10,480
+Tiga tahun lalu, jawabannya gampang.
+
+5
+00:00:10,480 --> 00:00:11,160
+Semuanya.
+
+6
+00:00:11,160 --> 00:00:12,700
+Sekarang? Semoga beruntung.
+
+7
+00:00:12,700 --> 00:00:16,560
+Karena di suatu tempat dalam feed itu ada foto udang yang berbentuk seperti Jesus,
+
+8
+00:00:16,560 --> 00:00:19,080
+sebuah berita tentang peristiwa yang tidak pernah terjadi,
+
+9
+00:00:19,080 --> 00:00:21,760
+dan lagu hits dari band yang tidak ada.
+
+10
+00:00:21,760 --> 00:00:24,660
+Internet dipenuhi dengan sampah.
+
+11
+00:00:24,660 --> 00:00:26,820
+Sampah murahan, palsu, dan diproduksi massal.
+
+12
+00:00:26,820 --> 00:00:30,040
+Dan anehnya, tidak ada yang menyuruhnya begitu.
+
+13
+00:00:30,040 --> 00:00:31,400
+Ayo kita cari tahu kenapa.
+
+14
+00:00:31,400 --> 00:00:33,520
+Hal ini sekarang bahkan punya nama.
+
+15
+00:00:33,520 --> 00:00:34,860
+Kita menyebutnya slop.
+
+16
+00:00:34,860 --> 00:00:35,260
+Slop.
+
+17
+00:00:35,260 --> 00:00:37,680
+Seperti bubur abu-abu yang dituang ke palungan babi.
+
+18
+00:00:37,680 --> 00:00:39,740
+Dan itu bukan hinaan yang aku ciptakan.
+
+19
+00:00:39,740 --> 00:00:43,320
+"Slop" benar-benar dinobatkan sebagai Word of the Year di 2025.
+
+20
+00:00:43,320 --> 00:00:45,460
+Nah, ada satu hal yang perlu diluruskan dulu.
+
+21
+00:00:45,460 --> 00:00:49,640
+Ini bukan video tentang AI yang jahat dan robot yang akan datang menyerang.
+
+22
+00:00:49,640 --> 00:00:50,780
+Itu video yang berbeda.
+
+23
+00:00:50,780 --> 00:00:53,780
+Ini tentang sesuatu yang lebih sunyi, dan jujur saja, lebih konyol.
+
+24
+00:00:53,780 --> 00:00:57,540
+Internet tidak menjadi buruk karena suatu rencana besar.
+
+25
+00:00:57,540 --> 00:01:01,440
+Internet menjadi buruk karena membuat konten palsu jadi nyaris gratis,
+
+26
+00:01:01,440 --> 00:01:05,040
+dan internet membayarmu untuk perhatian, bukan untuk kualitas.
+
+27
+00:01:05,040 --> 00:01:06,500
+Maka banjir pun dimulai.
+
+28
+00:01:06,500 --> 00:01:08,180
+Dan banjir itu masih terus naik.
+
+29
+00:01:08,180 --> 00:01:10,040
+Jadi apa sebenarnya yang dihitung sebagai slop?
+
+30
+00:01:10,040 --> 00:01:11,100
+Tiga hal.
+
+31
+00:01:11,100 --> 00:01:13,400
+Satu: terlihat baik-baik saja selama setengah detik.
+
+32
+00:01:13,400 --> 00:01:14,880
+Sekilas pandang, terlihat normal.
+
+33
+00:01:14,880 --> 00:01:16,500
+Lihat lebih dekat, dan semuanya berantakan.
+
+34
+00:01:16,500 --> 00:01:17,900
+Tangannya punya enam jari.
+
+35
+00:01:17,900 --> 00:01:19,200
+Kata-katanya tidak masuk akal.
+
+36
+00:01:19,200 --> 00:01:24,400
+Sebuah merek raksasa menghabiskan jutaan untuk iklan liburan dan salah mengeja namanya sendiri menjadi "Coca-Coola."
+
+37
+00:01:24,400 --> 00:01:25,760
+Itu benar-benar terjadi.
+
+38
+00:01:25,760 --> 00:01:29,600
+Dua: biayanya nyaris nol bagi pembuatnya, tapi memakan segalanya darimu.
+
+39
+00:01:29,600 --> 00:01:30,700
+Hitungan detik untuk membuatnya.
+
+40
+00:01:30,700 --> 00:01:34,060
+Tapi ia memakan waktumu, perhatianmu, dan kepercayaanmu.
+
+41
+00:01:34,060 --> 00:01:36,260
+Tiga: ia dibuat ribuan banyaknya.
+
+42
+00:01:36,260 --> 00:01:37,400
+Bukan satu postingan palsu.
+
+43
+00:01:37,400 --> 00:01:41,440
+Sepuluh ribu postingan palsu, disemprotkan ke feed seperti selang pemadam kebakaran.
+
+44
+00:01:41,440 --> 00:01:44,200
+Terlihat baik-baik saja, gratis bagi mereka, dibuat ribuan banyaknya.
+
+45
+00:01:44,200 --> 00:01:45,380
+Itulah slop.
+
+46
+00:01:45,380 --> 00:01:49,000
+Sebuah mesin yang berpura-pura jadi manusia, dengan volume penuh.
+
+47
+00:01:49,000 --> 00:01:50,400
+Sekarang bagian pentingnya.
+
+48
+00:01:50,400 --> 00:01:51,920
+Kenapa banjir itu terus datang?
+
+49
+00:01:51,920 --> 00:01:55,180
+Ikuti alur uangnya, pelan-pelan, karena inilah inti seluruh videonya.
+
+50
+00:01:55,180 --> 00:01:55,580
+Langkah satu.
+
+51
+00:01:55,580 --> 00:01:57,460
+Dulu membuat konten itu mahal.
+
+52
+00:01:57,460 --> 00:02:00,460
+Kamu butuh penulis, kamera, musisi, waktu.
+
+53
+00:02:00,460 --> 00:02:02,360
+Sekarang kamu cukup butuh sebuah prompt dan sepuluh detik.
+
+54
+00:02:02,360 --> 00:02:04,620
+Biayanya turun ke nyaris nol.
+
+55
+00:02:04,620 --> 00:02:05,080
+Langkah dua.
+
+56
+00:02:05,080 --> 00:02:07,240
+Platform tidak membayarmu karena kamu bagus.
+
+57
+00:02:07,240 --> 00:02:09,110
+Ia membayarmu untuk engagement,
+
+58
+00:02:09,110 --> 00:02:12,500
+dan engagement cuma berarti klik, like, dan waktu yang dihabiskan.
+
+59
+00:02:12,500 --> 00:02:14,700
+Ia menghargai perhatian, bukan kualitas.
+
+60
+00:02:14,700 --> 00:02:15,180
+Langkah tiga.
+
+61
+00:02:15,180 --> 00:02:17,460
+Jadi langkah cerdasnya bukan membuat satu hal hebat.
+
+62
+00:02:17,460 --> 00:02:19,580
+Langkah cerdasnya adalah membanjiri area itu:
+
+63
+00:02:19,580 --> 00:02:22,840
+posting seribu hal murahan, dan berharap beberapa jadi viral.
+
+64
+00:02:22,840 --> 00:02:23,320
+Langkah empat.
+
+65
+00:02:23,320 --> 00:02:25,360
+Algoritma yang menentukan apa yang kamu lihat?
+
+66
+00:02:25,360 --> 00:02:27,640
+Ia tidak benar-benar bisa membedakan slop dari yang asli.
+
+67
+00:02:27,640 --> 00:02:29,640
+Jadi ia tetap saja menyajikan slop itu.
+
+68
+00:02:29,640 --> 00:02:30,280
+Langkah lima.
+
+69
+00:02:30,280 --> 00:02:33,220
+Slop menghasilkan uang, yang membiayai lebih banyak slop.
+
+70
+00:02:33,220 --> 00:02:35,540
+Mesin itu memberi makan dirinya sendiri.
+
+71
+00:02:35,540 --> 00:02:36,860
+Itulah keseluruhan mesinnya.
+
+72
+00:02:36,860 --> 00:02:40,620
+Murah dibuat, dibayar oleh perhatian, mustahil disaring.
+
+73
+00:02:40,620 --> 00:02:41,920
+Tentu saja internet banjir.
+
+74
+00:02:41,920 --> 00:02:44,680
+Dan ini bukan cuma soal gambar lucu di Facebook lagi.
+
+75
+00:02:44,680 --> 00:02:45,880
+Ia sudah lepas keluar.
+
+76
+00:02:45,880 --> 00:02:46,480
+Musik.
+
+77
+00:02:46,480 --> 00:02:50,470
+Sebuah band bernama Velvet Sundown menembus satu juta pendengar di Spotify
+
+78
+00:02:50,470 --> 00:02:54,780
+sebelum orang-orang sadar bahwa tidak ada satu pun anggota band itu yang nyata.
+
+79
+00:02:54,780 --> 00:02:55,020
+Buku.
+
+80
+00:02:55,020 --> 00:02:58,580
+Orang-orang menjual panduan AI memetik jamur dengan foto-foto palsu.
+
+81
+00:02:58,580 --> 00:03:01,200
+Petik jamur yang salah karena robot yang menggambarnya,
+
+82
+00:03:01,200 --> 00:03:03,080
+dan yang satu itu benar-benar bisa membunuhmu.
+
+83
+00:03:03,080 --> 00:03:03,720
+Anak-anak.
+
+84
+00:03:03,720 --> 00:03:10,790
+Sebuah investigasi menemukan bahwa sekitar empat puluh persen video yang direkomendasikan untuk anak-anak terlihat seperti slop AI.
+
+85
+00:03:10,790 --> 00:03:11,940
+Empat puluh dari setiap seratus:
+
+86
+00:03:11,940 --> 00:03:16,740
+kartun ngawur dengan kuda berkaki enam, semuanya pura-pura mengajari alfabet.
+
+87
+00:03:16,740 --> 00:03:17,840
+Bahkan pekerjaanmu.
+
+88
+00:03:17,840 --> 00:03:23,500
+Sekarang ada istilah untuk rekan kerja yang mengirimimu dokumen AI yang indah tapi sama sekali tidak berisi apa-apa.
+
+89
+00:03:23,500 --> 00:03:24,840
+Kamu baru saja kena "workslopped."
+
+90
+00:03:24,840 --> 00:03:29,820
+Rata-rata, butuh sekitar dua jam bagi orang yang menerimanya untuk membereskannya.
+
+91
+00:03:29,820 --> 00:03:31,300
+Jadi selamat.
+
+92
+00:03:31,300 --> 00:03:35,760
+Slop sudah ada di feed-mu, musikmu, tablet anakmu, dan kotak masukmu.
+
+93
+00:03:35,760 --> 00:03:39,880
+Sekarang biar aku adil sebentar, karena di sinilah hal ini jadi menarik.
+
+94
+00:03:39,880 --> 00:03:42,040
+Tidak semua konten AI adalah slop.
+
+95
+00:03:42,040 --> 00:03:45,140
+Seorang dokter yang memakai AI untuk menjelaskan hasil scan - bukan slop.
+
+96
+00:03:45,140 --> 00:03:47,420
+Seorang seniman yang memakainya sebagai alat - bukan slop.
+
+97
+00:03:47,420 --> 00:03:49,760
+Slop itu soal usaha rendah dan volume tinggi.
+
+98
+00:03:49,760 --> 00:03:51,200
+Ini bukan soal alatnya.
+
+99
+00:03:51,200 --> 00:03:53,700
+Dan tidak, ini bukan persekongkolan rahasia.
+
+100
+00:03:53,700 --> 00:03:57,200
+Ada gagasan populer di internet yang disebut "dead internet theory,"
+
+101
+00:03:57,200 --> 00:04:02,440
+yang mengatakan pemerintah diam-diam mengisi web dengan bot untuk mengendalikan pikiranmu.
+
+102
+00:04:02,440 --> 00:04:04,320
+Tenang. Ini lebih konyol dari itu.
+
+103
+00:04:04,320 --> 00:04:05,760
+Tidak ada yang memegang kendali.
+
+104
+00:04:05,760 --> 00:04:07,160
+Tidak ada penjahat yang menekan tombol.
+
+105
+00:04:07,160 --> 00:04:10,400
+Sampah itu menyebar dengan sendirinya, karena uanglah yang menghargainya.
+
+106
+00:04:10,400 --> 00:04:12,600
+Dan itulah bagian yang bikin tidak nyaman.
+
+107
+00:04:12,600 --> 00:04:14,820
+Kamu tidak bisa menangkap sebuah insentif.
+
+108
+00:04:14,820 --> 00:04:17,460
+Jadi, kenapa internet penuh sampah sekarang?
+
+109
+00:04:17,460 --> 00:04:19,200
+Bukan karena AI jahat.
+
+110
+00:04:19,200 --> 00:04:20,820
+Bukan karena konspirasi.
+
+111
+00:04:20,820 --> 00:04:24,160
+Karena internet bekerja persis seperti yang dirancang untuk bekerja.
+
+112
+00:04:24,160 --> 00:04:25,640
+Ia membayar untuk perhatian.
+
+113
+00:04:25,640 --> 00:04:28,060
+Slop sangat jago merebut perhatian.
+
+114
+00:04:28,060 --> 00:04:28,880
+Jadi slop menang.
+
+115
+00:04:28,880 --> 00:04:31,180
+Perhatian masuk. Sampah keluar.
+
+116
+00:04:31,180 --> 00:04:32,400
+Internet tidak rusak.
+
+117
+00:04:32,400 --> 00:04:34,620
+Ia menjalankan tugasnya dengan sempurna.
+
+118
+00:04:34,620 --> 00:04:35,960
+Itulah masalahnya.
+
+119
+00:04:35,960 --> 00:04:38,360
+Tapi inilah peningkatan kecil yang berguna.
+
+120
+00:04:38,360 --> 00:04:39,760
+Sekarang kamu tahu ciri-cirinya.
+
+121
+00:04:39,760 --> 00:04:40,740
+Enam jari itu.
+
+122
+00:04:40,740 --> 00:04:42,680
+Foto yang sedikit terlalu sempurna.
+
+123
+00:04:42,680 --> 00:04:45,160
+Cerita yang sedikit terlalu indah untuk jadi nyata.
+
+124
+00:04:45,160 --> 00:04:46,740
+Kamu tidak bisa menghentikan banjirnya.
+
+125
+00:04:46,740 --> 00:04:48,760
+Tapi kamu bisa berhenti tertipu olehnya.
+
+126
+00:04:48,760 --> 00:04:50,700
+Dan di internet yang dibangun di atas perhatian,
+
+127
+00:04:50,700 --> 00:04:54,440
+orang yang memberi perhatian dengan sengaja adalah orang yang menang.
+
+128
+00:04:54,440 --> 00:04:56,640
+Kami akan terus menjelaskan mesin aneh ini.
+
+129
+00:04:56,640 --> 00:04:58,220
+Kamu tetap buka matamu.
+
+130
+00:04:58,220 --> 00:04:59,560
+Sekian untuk hari ini.
+
+131
+00:04:59,560 --> 00:05:02,840
+Kalau ini membantu, like videonya, bagikan ke satu orang yang membutuhkannya, dan subscribe untuk lebih banyak lagi.
+
+132
+00:05:02,840 --> 00:05:06,168
+Sampai jumpa di video berikutnya.
+

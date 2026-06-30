@@ -455,7 +455,7 @@ Lesson:
 The project index can drift from the filesystem. Always verify actual files with a glob before deciding Create vs Update mode. When the plan markdown is missing but an approved (or ready-for-review) render survives, reconstruct the plan to match the render 1:1 - read the render HTML for exact scene/cue starts, durations, labels, WIT poses, placements, and timed reveals - instead of inventing a new, contradictory plan. This preserves prior approved decisions and gives render a clean rebuild spec. Reuse the already-saved references rather than re-browsing.
 
 Apply next time:
-- glob the `visual-plan/`, `section-previews/`, and `hyperframes/review/` folders before trusting the index
+- glob the `visual-plan/`, the section previews folder (`previews/` new / `section-previews/` legacy), and `hyperframes/review/` folders before trusting the index
 - if a render survives, treat it as the source of truth and document it (exact timings/coordinates/reveals) in the reconstructed plan
 - reconcile the index row and stale notes to the real filesystem (missing preview, missing `06-production-board.md`, surviving review mirror)
 - reuse surviving saved references; document them in `reference-board.md` with their licenses

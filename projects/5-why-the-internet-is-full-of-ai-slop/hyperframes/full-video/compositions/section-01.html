@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Section 01 Hook - Why The Internet Is Full Of Garbage Now</title>
+  <style>
+    @font-face { font-family:"PatrickHandLocal"; src:url("./assets/fonts/patrick-hand-latin.woff2") format("woff2"); font-weight:400; font-style:normal; font-display:block; }
+    :root { --ink:#14110d; --red:#e0392b; --green:#1db954; --cream:#fff7d8; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:#07070a; color:#fff; overflow:hidden; }
+    #Section01Hook { position:relative; width:1920px; height:1080px; overflow:hidden; background:#07070a; font-family:"PatrickHandLocal"; }
+    .scene { position:absolute; inset:0; width:100%; height:100%; z-index:1; }
+    .photo { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+    .b-bright { filter:saturate(1.1) contrast(1.05) brightness(0.82); }
+    .b-warm   { filter:saturate(1.12) contrast(1.05) brightness(0.85) hue-rotate(-4deg); }
+    .b-cool   { filter:saturate(1.05) contrast(1.08) brightness(0.8) hue-rotate(6deg); }
+    .b-dark   { filter:saturate(1.05) contrast(1.1) brightness(0.8); }
+    .b-sludge { filter:saturate(0.72) contrast(1.1) brightness(0.48) hue-rotate(16deg); }
+    .vig { position:absolute; inset:0; z-index:2; background:radial-gradient(ellipse 86% 86% at 50% 48%, rgba(4,5,10,0) 56%, rgba(4,5,10,0.42) 100%); }
+    .ui  { font-family:"Segoe UI",system-ui,sans-serif; }
+
+    .wit { position:absolute; object-fit:contain; z-index:8; filter:drop-shadow(14px 16px 0 rgba(0,0,0,0.3)); transform-origin:center center; }
+
+    /* handwritten labels */
+    .hand { position:absolute; z-index:9; font-family:"PatrickHandLocal"; color:#fff; text-shadow:3px 4px 0 rgba(0,0,0,0.55); line-height:1.05; }
+    .qbig { font-size:108px; } .h56 { font-size:60px; } .h72 { font-size:78px; }
+
+    /* chips / stamps / markup */
+    .chip { position:absolute; z-index:9; font-family:"Segoe UI",system-ui,sans-serif; font-weight:800; font-size:40px; color:#fff; background:#0c0c12; border:3px solid #2aa3ff; border-radius:16px; padding:10px 22px; box-shadow:0 10px 26px rgba(0,0,0,0.5); white-space:nowrap; }
+    .chip.amen { border-color:var(--red); color:#fff; font-size:34px; }
+    .chip.dark { border-color:#3a3f4b; }
+    .stamp { position:absolute; z-index:10; font-family:"Segoe UI",system-ui,sans-serif; font-weight:900; font-size:64px; letter-spacing:1px; padding:12px 28px; border-radius:14px; transform:rotate(-8deg); white-space:nowrap; }
+    .stamp.green { color:#0a8a3f; border:7px solid #0a8a3f; background:rgba(255,255,255,0.92); box-shadow:0 8px 22px rgba(0,0,0,0.35); }
+    .markup { position:absolute; z-index:11; font-family:"PatrickHandLocal"; color:var(--red); font-size:62px; transform:rotate(-7deg); text-shadow:1px 2px 0 rgba(0,0,0,0.3); white-space:nowrap; }
+    .strike { position:absolute; z-index:11; height:10px; background:var(--red); border-radius:6px; transform:rotate(-5deg); box-shadow:0 2px 6px rgba(0,0,0,0.4); }
+
+    /* big kinetic words */
+    .bigword { position:absolute; z-index:10; font-family:"Segoe UI",system-ui,sans-serif; font-weight:900; letter-spacing:-1px; color:#fff; text-shadow:0 0 42px rgba(0,0,0,0.6), 7px 8px 0 rgba(0,0,0,0.4); }
+    .gword { font-size:225px; color:#ffd23f; text-shadow:-4px -4px 0 #1a140a, 4px -4px 0 #1a140a, -4px 4px 0 #1a140a, 4px 4px 0 #1a140a, 0 0 40px rgba(0,0,0,0.7), 8px 10px 0 rgba(0,0,0,0.5); }
+    .why  { font-size:240px; color:#ffd23f; text-shadow:-4px -4px 0 #1a140a, 4px -4px 0 #1a140a, -4px 4px 0 #1a140a, 4px 4px 0 #1a140a, 0 0 40px rgba(0,0,0,0.7), 8px 10px 0 rgba(0,0,0,0.5); }
+    .mini { position:absolute; z-index:10; font-family:"Segoe UI",system-ui,sans-serif; font-weight:900; font-size:96px; color:#fff; text-shadow:-2px -2px 0 #141414, 2px -2px 0 #141414, -2px 2px 0 #141414, 2px 2px 0 #141414, 4px 6px 0 rgba(0,0,0,0.55); }
+
+    /* phone "post" frame (shrimp) */
+    .post { position:absolute; z-index:7; width:560px; background:#fff; border-radius:30px; box-shadow:0 22px 50px rgba(0,0,0,0.55); overflow:hidden; }
+    .post .pimg { width:100%; height:430px; object-fit:cover; display:block; }
+    .post .prow { display:flex; align-items:center; gap:14px; padding:16px 20px; font-family:"Segoe UI",system-ui,sans-serif; }
+    .post .pdot { width:46px; height:46px; border-radius:50%; background:#d8dbe0; }
+    .post .pbar { height:14px; width:150px; background:#e3e5ea; border-radius:8px; }
+    .post .plike { margin-left:auto; font-weight:900; color:var(--red); font-size:30px; }
+
+    /* news + band cards (pre-made assets) */
+    .newscard { position:absolute; z-index:7; width:980px; filter:drop-shadow(0 22px 44px rgba(0,0,0,0.5)); }
+    .bandcard { position:absolute; z-index:7; width:1020px; clip-path:inset(30% 2% 33% 2%); filter:drop-shadow(0 22px 44px rgba(0,0,0,0.55)); }
+
+    /* rising sludge overlay for scene 8 */
+    .sludge { position:absolute; left:0; right:0; bottom:0; height:64%; z-index:6; background:linear-gradient(180deg, rgba(60,66,40,0) 0%, rgba(54,60,36,0.55) 34%, rgba(40,46,28,0.92) 78%); }
+    .slopbit { position:absolute; z-index:7; object-fit:contain; opacity:0.92; border-radius:14px; filter:saturate(0.95) brightness(0.95) drop-shadow(0 8px 16px rgba(0,0,0,0.5)); transform:rotate(-5deg); }
+
+    .wit,.hand,.chip,.stamp,.markup,.strike,.bigword,.mini,.post,.newscard,.bandcard,.slopbit { will-change:opacity, transform; }
+  </style>
+</head>
+<body>
+  <div id="Section01Hook" data-composition-id="Section01Hook" data-start="0" data-duration="31.253" data-width="1920" data-height="1080">
+
+    <!-- SCENE 1.1  0.00-5.09  "Quick question. ... scroll for ten seconds." -->
+    <div id="scene-1" class="scene clip" data-start="0" data-duration="5.09" data-track-index="1" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-warm" src="./assets/couch-phone-evening-1.jpg" alt="">
+      <div class="vig"></div>
+      <div class="hand h72 s1-lbl" style="left:90px; top:150px; width:760px;">scroll for<br>10 seconds...</div>
+      <img class="wit s1-wit" data-layout-allow-overflow="" style="right:-120px; bottom:-300px; width:1180px;" src="./assets/poses/holding_phone_pointing_smile.png" alt="">
+    </div>
+
+    <!-- SCENE 1.2  4.84-8.84  "Now be honest: how much of that was actually made by a human?" -->
+    <div id="scene-2" class="scene clip" data-start="4.84" data-duration="4.00" data-track-index="2" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-dark" src="./assets/dark-room-phone-glow-1.jpg" alt="">
+      <div class="vig"></div>
+      <div class="hand qbig s2-q" style="left:60px; top:90px; width:1800px; text-align:center;">how much is <span style="color:#ffd23f;">REAL?</span></div>
+      <div class="chip s2-chip" style="right:120px; bottom:150px;">% human?</div>
+      <img class="wit s2-wit" data-layout-allow-overflow="" style="left:50%; transform:translateX(-50%); bottom:-300px; width:1150px;" src="./assets/poses/skeptical_side_eye_doubtful.png" alt="">
+    </div>
+
+    <!-- SCENE 1.3  8.58-11.88  "Three years ago, the answer was easy. All of it." -->
+    <div id="scene-3" class="scene clip" data-start="8.58" data-duration="3.30" data-track-index="3" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-warm" src="./assets/cozy-laptop-desk-1.jpg" alt="">
+      <div class="vig"></div>
+      <div class="hand h72 s3-lbl" style="left:90px; top:120px;">3 years ago...</div>
+      <div class="stamp green s3-stamp" style="right:150px; top:360px;">100% HUMAN</div>
+      <img class="wit s3-wit" data-layout-allow-overflow="" style="left:-150px; bottom:-300px; width:1080px;" src="./assets/poses/ok_hand_sign_content_closeup.png" alt="">
+    </div>
+
+    <!-- SCENE 1.4  11.62-12.97  "Today? Good luck." -->
+    <div id="scene-4" class="scene clip" data-start="11.62" data-duration="1.35" data-track-index="4" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-cool" src="./assets/phone-on-table-screen-on-1.jpg" alt="">
+      <div class="vig"></div>
+      <div class="hand h72 s4-a" style="left:110px; top:120px;">today...</div>
+      <div class="hand h72 s4-b" style="right:140px; bottom:200px; color:#ffd23f;">good luck.</div>
+      <img class="wit s4-wit" data-layout-allow-overflow="" style="left:50%; transform:translateX(-50%); bottom:-360px; width:1240px;" src="./assets/poses/deadpan_unimpressed_half_lidded.png" alt="">
+    </div>
+
+    <!-- SCENE 1.5  12.70-16.80  "...a photo of a shrimp shaped like Jesus," -->
+    <div id="scene-5" class="scene clip" data-start="12.70" data-duration="4.10" data-track-index="5" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-bright" src="./assets/social-scroll-livingroom-1.jpg" alt="">
+      <div class="vig"></div>
+      <div class="post s5-post" style="left:120px; top:150px;">
+        <img class="pimg" src="./assets/shrimp-jesus.jpg" alt="">
+        <div class="prow"><div class="pdot"></div><div class="pbar"></div><div class="plike">AMEN 47K</div></div>
+      </div>
+      <div class="hand h56 s5-cap" style="left:120px; bottom:120px; width:760px;">...a shrimp. as Jesus.</div>
+      <img class="wit s5-wit" data-layout-allow-overflow="" style="right:-140px; bottom:-300px; width:1150px;" src="./assets/poses/cringe_uneasy_drool.png" alt="">
+    </div>
+
+    <!-- SCENE 1.6  16.56-19.34  "a news story about an event that never happened," -->
+    <div id="scene-6" class="scene clip" data-start="16.56" data-duration="2.78" data-track-index="6" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-cool" src="./assets/newsroom-blur-1.jpg" alt="">
+      <div class="vig"></div>
+      <img class="newscard s6-card" style="right:60px; top:250px;" src="./assets/fake-news-card.png" alt="">
+      <div class="markup s6-mark" style="right:230px; top:330px; font-size:72px;">DIDN'T HAPPEN</div>
+      <img class="wit s6-wit" data-layout-allow-overflow="" style="left:-160px; bottom:-300px; width:1100px;" src="./assets/poses/pondering_skeptical_hand_on_chin.png" alt="">
+    </div>
+
+    <!-- SCENE 1.7  19.08-22.01  "and a hit song by a band that does not exist." -->
+    <div id="scene-7" class="scene clip" data-start="19.08" data-duration="2.93" data-track-index="7" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-dark" src="./assets/music-studio-blur-1.jpg" alt="">
+      <div class="vig"></div>
+      <img class="bandcard s7-card" style="left:90px; top:150px;" src="./assets/fake-band-card.png" alt="">
+      <div class="hand h56 s7-cap" style="left:150px; bottom:120px; color:#ff5b6e;">0 real members</div>
+      <img class="wit s7-wit" data-layout-allow-overflow="" style="right:-150px; bottom:-300px; width:1110px;" src="./assets/poses/mildly_surprised_hand_at_chin.png" alt="">
+    </div>
+
+    <!-- SCENE 1.8  21.76-30.21  "The internet is filling up with garbage. Cheap, fake, mass-produced garbage. And the strange part is, nobody told it to." -->
+    <div id="scene-8" class="scene clip" data-start="21.76" data-duration="8.45" data-track-index="8" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-sludge" src="./assets/grey-sludge-flood-1.jpg" alt="">
+      <div class="sludge"></div>
+      <img class="slopbit s8-slop1" style="left:110px; bottom:300px; width:300px;" src="./assets/shrimp-jesus.jpg" alt="">
+      <img class="slopbit s8-slop2" style="right:150px; bottom:280px; width:240px;" src="./assets/ai-extra-fingers-hand.png" alt="">
+      <div class="bigword gword s8-garbage" style="left:60px; top:60px; width:1800px; text-align:center;">GARBAGE</div>
+      <div class="mini s8-m1" style="left:120px; top:330px;">cheap.</div>
+      <div class="mini s8-m2" style="left:470px; top:330px; color:#ffd23f;">fake.</div>
+      <div class="mini s8-m3" style="left:790px; top:330px;">mass-produced.</div>
+      <div class="hand h72 s8-nobody" style="left:60px; bottom:150px; width:1800px; text-align:center;">...and nobody told it to.</div>
+      <img class="wit s8-wit" data-layout-allow-overflow="" style="left:50%; transform:translateX(-50%); bottom:-250px; width:1240px;" src="./assets/poses/swimming_underwater_goggles_cap.png" alt="">
+    </div>
+
+    <!-- SCENE 1.9  30.00-31.253  "Let's find out why." -->
+    <div id="scene-9" class="scene clip" data-start="30.00" data-duration="1.253" data-track-index="9" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-sludge" src="./assets/grey-sludge-flood-1.jpg" style="filter:saturate(0.55) contrast(1.08) brightness(0.38) hue-rotate(18deg);" alt="">
+      <div class="vig"></div>
+      <div class="bigword why s9-why" style="left:60px; top:120px; width:1800px; text-align:center;">WHY?</div>
+      <img class="wit s9-wit" data-layout-allow-overflow="" style="left:50%; transform:translateX(-50%); bottom:-300px; width:1120px;" src="./assets/poses/pointing_up_curious_open_mouth.png" alt="">
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused:true, defaults:{ overwrite:"auto" } });
+      const reveal = (t, hideAt, at, fv, tv={}) => { const r={}; if("x"in fv)r.x=0; if("y"in fv)r.y=0; if("scale"in fv)r.scale=1; if("opacity"in fv)r.opacity=1; tl.set(t,fv,hideAt); tl.to(t,{...r,...tv},at); };
+      const show  = (t, hideAt, at) => { tl.set(t,{opacity:0},hideAt); tl.set(t,{opacity:1},at); };
+      const smash = (t, hideAt, at, fv={y:22,scale:1.3,opacity:0}) => reveal(t,hideAt,at,fv,{duration:0.2,ease:"back.out(1.9)"});
+      const pop   = (t, hideAt, at) => reveal(t,hideAt,at,{scale:0.4,opacity:0},{duration:0.22,ease:"back.out(2)"});
+
+      // scene fade-ins (each scene on its own track; tiny crossfade)
+      const fadeIn = (sel, at) => tl.fromTo(sel,{opacity:0},{opacity:1,duration:0.22,ease:"sine.out",immediateRender:false}, at);
+      fadeIn("#scene-2",4.84); fadeIn("#scene-3",8.58); fadeIn("#scene-4",11.62); fadeIn("#scene-5",12.70);
+      fadeIn("#scene-6",16.56); fadeIn("#scene-7",19.08); fadeIn("#scene-8",21.76); fadeIn("#scene-9",30.00);
+
+      // S1 - WIT in; label on "scroll" (3.28)
+      show("#scene-1 .s1-wit", 0, 0.30);
+      show("#scene-1 .s1-lbl", 0, 3.28);
+
+      // S2 - WIT; "how much is REAL?" on "be honest" (5.22); chip on "made by a human" (7.12)
+      show("#scene-2 .s2-wit", 4.84, 5.00);
+      smash("#scene-2 .s2-q", 4.84, 5.22, {y:24,scale:1.2,opacity:0});
+      pop("#scene-2 .s2-chip", 4.84, 7.12);
+
+      // S3 - WIT + "3 years ago" (8.58); green stamp on "all of it" (10.48)
+      show("#scene-3 .s3-wit", 8.58, 8.74);
+      show("#scene-3 .s3-lbl", 8.58, 8.74);
+      smash("#scene-3 .s3-stamp", 8.58, 10.48, {scale:1.5,opacity:0,rotation:-8});
+
+      // S4 - deadpan; "today..." (11.62); "good luck." on "good luck" (11.88)
+      show("#scene-4 .s4-wit", 11.62, 11.66);
+      show("#scene-4 .s4-a", 11.62, 11.62);
+      show("#scene-4 .s4-b", 11.62, 11.92);
+
+      // S5 - post (shrimp) on "a photo of a shrimp" (14.52); WIT; caption on "Jesus" (15.92)
+      show("#scene-5 .s5-wit", 12.70, 13.40);
+      pop("#scene-5 .s5-post", 12.70, 14.52);
+      smash("#scene-5 .s5-cap", 12.70, 15.92, {y:18,scale:1.15,opacity:0});
+
+      // S6 - news card on "a new story" (16.84); WIT; red markup on "never happened" (18.24)
+      show("#scene-6 .s6-wit", 16.56, 16.66);
+      pop("#scene-6 .s6-card", 16.56, 16.84);
+      smash("#scene-6 .s6-mark", 16.56, 18.24, {scale:1.6,opacity:0,rotation:-7});
+
+      // S7 - band card on "a hit song" (19.40); WIT; caption on "does not exist" (20.74)
+      show("#scene-7 .s7-wit", 19.08, 19.18);
+      pop("#scene-7 .s7-card", 19.08, 19.40);
+      smash("#scene-7 .s7-cap", 19.08, 20.74, {y:16,scale:1.15,opacity:0});
+
+      // S8 - sludge motif; GARBAGE on "garbage" (23.38); chips cheap/fake/mass-produced; nobody on "nobody" (28.40)
+      show("#scene-8 .s8-wit", 21.76, 22.10);
+      show("#scene-8 .s8-slop1", 21.76, 22.40);
+      show("#scene-8 .s8-slop2", 21.76, 22.60);
+      smash("#scene-8 .s8-garbage", 21.76, 23.38, {y:30,scale:1.25,opacity:0});
+      pop("#scene-8 .s8-m1", 21.76, 24.66);
+      pop("#scene-8 .s8-m2", 21.76, 24.98);
+      pop("#scene-8 .s8-m3", 21.76, 25.40);
+      smash("#scene-8 .s8-nobody", 21.76, 28.40, {y:18,scale:1.1,opacity:0});
+
+      // S9 - WHY on "why" (30.82)
+      show("#scene-9 .s9-wit", 30.00, 30.06);
+      smash("#scene-9 .s9-why", 30.00, 30.50, {y:24,scale:1.3,opacity:0});
+
+      window.__timelines["Section01Hook"] = tl;
+    </script>
+  </div>
+</body>
+</html>

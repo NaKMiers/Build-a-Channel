@@ -14,7 +14,7 @@ Use this file for section preview structure, port behavior, HyperFrames CLI habi
 - Require ALL of the selected section's assets ready before building (owner-confirmed 2026-06-28): check `assets/asset-manifest.md`, confirm every referenced asset is a file present in `assets/` (or `assets/poses/`) or explicitly render-CSS; if any is missing on disk or marked `prompt-ready / awaiting generation` / `awaiting drop`, STOP and tell the user to finish `visual-implement` for those assets - do NOT source/generate/substitute them yourself (only when the user explicitly asks for a specific asset this run). See the All Section Assets Ready Gate in SKILL.md.
 - Do not require `03-packaging.md`; packaging is a side branch.
 - Require explicit user section selection: `All` or a specific section.
-- Build one HyperFrames preview project per section under `section-previews/section-XX-kebab-section-name/`.
+- Build one HyperFrames preview project per section. NEW projects (folder convention changed 2026-06-30): under `previews/<N>-kebab-section-name/` (folder `previews/`, unpadded number, e.g. `1-hook`, `2-it-has-a-name-slop`). LEGACY projects keep `section-previews/section-XX-kebab-section-name/`. Do not rename existing folders unless asked; resolve a section by checking `previews/<N>-*/` first, then legacy `section-previews/section-XX-*/`. See Output Folder Convention in SKILL.md.
 - Never put all sections into one localhost during section review.
 - Use port `1000 + section number` for section preview:
   - Section 1 -> `1001`
@@ -45,13 +45,13 @@ Use this file for section preview structure, port behavior, HyperFrames CLI habi
 
 ## Output Standard
 
-For each selected section, create or update:
+For each selected section, create or update (NEW-project paths; legacy projects use `section-previews/section-XX-kebab-section-name/`):
 
-- `section-previews/section-XX-kebab-section-name/index.html`
-- `section-previews/section-XX-kebab-section-name/DESIGN.md`
-- `section-previews/section-XX-kebab-section-name/package.json`
-- `section-previews/section-XX-kebab-section-name/hyperframes.json`
-- `section-previews/section-XX-kebab-section-name/assets` junction to `../../assets`
+- `previews/<N>-kebab-section-name/index.html`
+- `previews/<N>-kebab-section-name/DESIGN.md`
+- `previews/<N>-kebab-section-name/package.json`
+- `previews/<N>-kebab-section-name/hyperframes.json`
+- `previews/<N>-kebab-section-name/assets` junction to `../../assets`
 - `hyperframes/review/section-XX.html`
 - the production board file (`05-production-board.md`; legacy `06-production-board.md`)
 
