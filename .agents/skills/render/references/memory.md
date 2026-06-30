@@ -1388,3 +1388,42 @@ Apply next time:
 Promote to shared memory:
 yes/no, with reason
 ```
+
+### 2026-06-30 - Section 4 (ai-slop) Built Clean First Pass; Cover Manifest-Flagged Brand Logos With A Bezel-Matching CSS Patch
+
+Classification: `Render lesson` / `Operational lesson`
+
+Context:
+Rendered `5-why-the-internet-is-full-of-ai-slop` Section 4 ("The Machine That Feeds Itself", 52.971s,
+9 scenes). All assets were already produced by visual-implement (8 generated heroes + 7 fresh photo
+bases + 9 poses, all present on disk), so the All-Assets gate passed - note the manifest PROSE table
+still said `prompt-ready / awaiting generation` for the generate rows even though the files existed and
+the checklist marked them `[x]`; trust the files-on-disk + checklist, then fix the stale status text.
+The per-section whisper scripts are pre-staged in `%TEMP%/wiw-whisper` (incl. `gen-s04.mjs`) with the
+model cached; generating `section-04-word-timings.json` worked first try (ffmpeg-static decode ->
+gen-sNN.mjs). Built to the standing bar (bright photo bases + side scrim, giant varied WIT, hard-show
+labels, impact only on emphasis) and it passed snapshot QA with only minor fixes.
+
+Lessons:
+- A base photo can carry an incidental brand logo the manifest flags for crop/blur (here a DELL laptop
+  bezel on `clean-bright-desk-1.jpg`). If the object is too central to crop out with `object-position`,
+  COVER the logo with a small CSS patch whose color matches that exact surface (here a black
+  `#0b0b0d` rounded rect over the black bezel; a silver patch on a black bezel reads as a blotch).
+  Measure the logo position on the FULL-RES snapshot frame, not the scaled contact sheet - my first
+  patch was placed from contact-sheet coords and landed on the screen instead of the bezel.
+- `duplicate_media_discovery_risk` lint warnings are expected + non-blocking when the same file is the
+  reused section MOTIF (engine across 4.1/4.8/4.9) or an intentionally TILED asset (`slop-clone.png`
+  x6 as the flood barrage). Snapshots confirmed all instances render. Document, don't chase to zero.
+- A persistent continuity HUD (the loop-ring lighting one node per Step) works as a top-level
+  composition overlay on its own track (`data-start 0`, full duration) with GSAP targeting its child
+  dots by selector; keep it small + top-right so it never collides with the top-left STEP chips/labels.
+
+Apply next time:
+- check files-on-disk + the manifest checklist, not just the prose status column, at the assets gate;
+  fix stale `prompt-ready` text after compositing
+- reuse the pre-staged `%TEMP%/wiw-whisper/gen-sNN.mjs` scripts for word timings; model is cached
+- cover (don't crop) a central incidental brand logo with a surface-color-matched patch; verify on the
+  full-res frame
+
+Promote to shared memory:
+no; render execution + environment behavior. The brand-logo-cover technique stays here.

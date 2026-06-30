@@ -184,7 +184,7 @@ fills, bold and readable (so it sits next to the white WIT mascot).
 ## Section 4: The Machine That Feeds Itself - assets (implemented 2026-06-28, generate-forward)
 
 The mechanism core. Section motif = THE SELF-FEEDING ENGINE (`slop-engine-loop.png`), a callback to S3's
-slop-machine. No image generator connected -> the 8 GENERATE heroes are `prompt-ready / awaiting generation` (owner pastes each prompt into ChatGPT, drops the PNG into `assets/<filename>`). The 7 browse
+slop-machine. No image generator connected -> the 8 GENERATE heroes are GENERATED + composited in render S4 (2026-06-30) (owner pastes each prompt into ChatGPT, drops the PNG into `assets/<filename>`). The 7 browse
 bases are sourced + verified (people-free). Poses copied. `slop-clone.png` reused from S3.
 
 ### Browse bases (done; licenses in ATTRIBUTION.md)
@@ -203,19 +203,19 @@ bases are sourced + verified (people-free). Poses copied. `slop-clone.png` reuse
 
 
 
-### Generate heroes (prompt-ready / awaiting generation - owner generates in ChatGPT + drops PNGs in)
+### Generate heroes (DONE - generated + composited in render S4 2026-06-30)
 
 
 | Filename                      | Type     | Used in       | Description                                                                                       | Status                             |
 | ----------------------------- | -------- | ------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------- |
-| `slop-engine-loop.png`        | generate | 4.1, 4.8, 4.9 | the self-feeding engine (prompt in -> slop out -> coins -> return pipe loops back); section motif | prompt-ready / awaiting generation |
-| `money-trail-coins.png`       | generate | 4.1           | a glowing curving trail of gold coins ("follow the money")                                        | prompt-ready / awaiting generation |
-| `old-creation-cost-pile.png`  | generate | 4.2           | a stacked pile: film camera + typewriter + guitar + hourglass + "$$$" tag                         | prompt-ready / awaiting generation |
-| `prompt-box-instant.png`      | generate | 4.3           | a glowing AI prompt box extruding an instant content card + a small stopwatch                     | prompt-ready / awaiting generation |
-| `engagement-slot-machine.png` | generate | 4.4           | a slot machine with like/click/clock reels, coins pouring out                                     | prompt-ready / awaiting generation |
-| `attention-quality-scale.png` | generate | 4.5           | a balance scale: attention pan (eyes/likes/play) crashes down, quality pan (a medal) flies up     | prompt-ready / awaiting generation |
-| `flood-the-zone-cannon.png`   | generate | 4.6           | a cannon blasting a barrage of identical blank grey post-cards                                    | prompt-ready / awaiting generation |
-| `blindfold-sorter-robot.png`  | generate | 4.7           | a blindfolded sorter robot stamping two identical items the same                                  | prompt-ready / awaiting generation |
+| `slop-engine-loop.png`        | generate | 4.1, 4.8, 4.9 | the self-feeding engine (prompt in -> slop out -> coins -> return pipe loops back); section motif | done (generated; composited in render S4 2026-06-30) |
+| `money-trail-coins.png`       | generate | 4.1           | a glowing curving trail of gold coins ("follow the money")                                        | done (generated; composited in render S4 2026-06-30) |
+| `old-creation-cost-pile.png`  | generate | 4.2           | a stacked pile: film camera + typewriter + guitar + hourglass + "$$$" tag                         | done (generated; composited in render S4 2026-06-30) |
+| `prompt-box-instant.png`      | generate | 4.3           | a glowing AI prompt box extruding an instant content card + a small stopwatch                     | done (generated; composited in render S4 2026-06-30) |
+| `engagement-slot-machine.png` | generate | 4.4           | a slot machine with like/click/clock reels, coins pouring out                                     | done (generated; composited in render S4 2026-06-30) |
+| `attention-quality-scale.png` | generate | 4.5           | a balance scale: attention pan (eyes/likes/play) crashes down, quality pan (a medal) flies up     | done (generated; composited in render S4 2026-06-30) |
+| `flood-the-zone-cannon.png`   | generate | 4.6           | a cannon blasting a barrage of identical blank grey post-cards                                    | done (generated; composited in render S4 2026-06-30) |
+| `blindfold-sorter-robot.png`  | generate | 4.7           | a blindfolded sorter robot stamping two identical items the same                                  | done (generated; composited in render S4 2026-06-30) |
 
 
 Reuse: `slop-clone.png` (from S3 3.7) -> 4.6 (tiled barrage) / 4.7 (the belt blob). Already in `assets/`.

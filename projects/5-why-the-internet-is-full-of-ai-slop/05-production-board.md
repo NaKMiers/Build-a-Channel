@@ -2,7 +2,7 @@
 
 Video: `Why The Internet Is Full Of Garbage Now`
 
-Status: `section render in progress (Sections 1 + 2 + 3 built, ready for review)`
+Status: `section render in progress (Sections 1 + 2 + 3 + 4 built, ready for review)`
 
 Source skill: `render`
 
@@ -20,6 +20,7 @@ Source files:
 | Section 1: Hook | 1001 | http://localhost:1001/#project/section-01-hook | http://localhost:1001/api/projects/section-01-hook/preview/comp/index.html | running, built |
 | Section 2: It Has A Name: Slop | 1002 | http://localhost:1002/#project/section-02-it-has-a-name-slop | http://localhost:1002/api/projects/section-02-it-has-a-name-slop/preview/comp/index.html | running, built |
 | Section 3: What Slop Actually Is | 1003 | http://localhost:1003/#project/section-03-what-slop-actually-is | http://localhost:1003/api/projects/section-03-what-slop-actually-is/preview/comp/index.html | running, built |
+| Section 4: The Machine That Feeds Itself | 1004 | http://localhost:1004/#project/Build%20a%20Channel | http://localhost:1004/api/projects/Build%20a%20Channel/preview/comp/index.html | running, built |
 
 ## Section Render Index
 
@@ -28,7 +29,8 @@ Source files:
 | 1 | Hook: Is Any Of This Real? | built, ready for review | 1001 | `section-previews/section-01-hook/` | visual-plan S1 + word timings | lint 0 err (1 warn); validate 0 err (15 contrast warns); 9-frame snapshot QA done | none (preview only) | 9 scenes, voice-timed to real word timings |
 | 2 | It Has A Name: Slop | built, ready for review | 1002 | `section-previews/section-02-it-has-a-name-slop/` | visual-plan S2 + word timings | lint 0 err (1 warn); validate 0 err (45 contrast warns); 8-frame snapshot QA done | none (preview only) | 8 scenes, voice-timed to real word timings |
 | 3 | What Slop Actually Is | built (v2 generate-forward rebuild), ready for review | 1003 | `section-previews/section-03-what-slop-actually-is/` | visual-plan S3 v2 + word timings | lint 0 err; validate 0 err (contrast warns are false positives); 9-frame snapshot QA + scenes 6/7 re-snap done | none (preview only) | 9 scenes, voice-timed; 10 generated heroes + 7 fresh bases; SLOP MACHINE motif (no sludge) |
-| 4-7 | - | not rendered | - | - | - | - | - | - |
+| 4 | The Machine That Feeds Itself | built, ready for review | 1004 | `section-previews/section-04-the-machine-that-feeds-itself/` | visual-plan S4 + GENERATED word timings | lint 0 err (2 warns: reused-media); validate 0 err (150 contrast warns); 18-frame snapshot QA + scenes 3/4/9 re-snap done | none (preview only) | 9 scenes, voice-timed to real word timings; 8 generated heroes + 7 fresh bases; SELF-FEEDING ENGINE motif + loop-ring HUD |
+| 5-8 | - | not rendered | - | - | - | - | - | - |
 
 ## Shared Asset Rules
 
@@ -84,9 +86,38 @@ over-reusing `grey-sludge-flood` and leaning on old browsed photos.
   raised into frame + time/attention/trust labels repositioned off the edges.
 - Safety: "Coca-Coola" = generic parody (no real logo); AI influencer = non-existent person.
 
+## Section 4 Notes (2026-06-30)
+
+Build (`section-previews/section-04-the-machine-that-feeds-itself/index.html`), composition
+`Section04Machine`, 1920x1080, 52.971s, audio `section-04.mp3`. See the section `IMPLEMENTATION.md`
+for the full per-scene cue table.
+
+- GENERATED real word timings first (plan was estimated): `voiceover/.../section-04-word-timings.json`
+  (transformers.js / whisper-tiny.en). Every `data-start` + GSAP reveal pinned to actual word starts.
+- 9 connected big scenes, one per beat, each its own track + crossfade. Section motif = THE
+  SELF-FEEDING ENGINE (`slop-engine-loop.png`): dormant/silhouette 4.1 -> lit + roaring 4.8 -> labeled
+  "THE WHOLE ENGINE" 4.9. `dark-machine-hall-1.jpg` is the shared motif base (dark -> lit callback).
+- Continuity device: a small top-right loop-ring HUD that lights one node per Step (6.04 / 15.38 /
+  25.86 / 33.88 / 40.58) and shows a green check on "the machine feeds itself" (44.64).
+- 8 generated heroes + 7 fresh real bases + 9 distinct WIT poses (giant, varied side/pose per scene).
+  `slop-clone.png` reused from S3, tiled 6x as the "flood the zone" barrage.
+- Motion: ordinary labels + the writer/camera/musician/time and clicks/likes/time lists hard-show on
+  their words; impact reserved for STEP pops, `$0`, `ATTENTION`, `FLOOD THE ZONE`, the payoff, and the
+  SERVED + verdict stamps. 4.9 ends with a grey sludge overflow (deliberate S1-S2 flood callback /
+  Section 5 setup).
+- Brand safety: engagement=generic slot machine, attention=generic balance scale (no real logos). The
+  incidental DELL logo on the 4.3 desk base is covered with a black bezel-matching CSS patch.
+- Post-snapshot fixes: 4.4 "PAID for ENGAGEMENT" reduced 120->74px and moved left of the boss WIT
+  (was overflowing the right edge / colliding with WIT); 4.9 "THE WHOLE ENGINE" given a dark shadow
+  for contrast over the bright pipes; 4.3 DELL logo covered.
+- Owner review fix (2026-06-30): at 0:44 the "slop -> money" / "-> MORE slop" labels were white text
+  lying on the white WIT mascot (vague). Rebuilt them as dark gold-bordered "loop flow" chips moved to
+  the clear top-center band (above WIT's head, between the STEP chip and the HUD) - high contrast, no
+  longer covering WIT's face.
+
 ## Stale / Regeneration Notes
 
-- Lint warning `duplicate_media_discovery_risk`: S1 reuses (`shrimp-jesus.jpg` S5+S8, `grey-sludge-flood-1.jpg` S8+S9) and S3 `slop-clone.png` tile reuse - all intended; non-blocking.
+- Lint warning `duplicate_media_discovery_risk`: S1 reuses (`shrimp-jesus.jpg` S5+S8, `grey-sludge-flood-1.jpg` S8+S9), S3 `slop-clone.png` tile reuse, and S4 reuses `slop-engine-loop.png` (3.x motif 4.1/4.8/4.9) + `slop-clone.png` tiled 6x (4.6 barrage) - all intended; non-blocking.
 - S3 v1 assets orphaned by the v2 rebuild (kept unless removed on request): `gallery-wall-1.jpg`, `ai-face-does-not-exist.png`, `holiday-bokeh-red-1.jpg`, `hourglass-time-1.jpg` (see `assets/ATTRIBUTION.md`).
 - No `06-review.md` / `07-upload.md` / `08-self-learning.md` yet - nothing downstream stale.
 
