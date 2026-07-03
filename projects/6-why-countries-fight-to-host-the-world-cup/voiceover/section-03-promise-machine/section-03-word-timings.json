@@ -1,0 +1,840 @@
+{
+ "transcript": " Every bid starts the same way, with a promise machine. For a country bid, someone hires consultants. The consultants produce a big, shiny document called an economic impact study, which sounds scientific. It is a horoscope with a spreadsheet. For 2014, Brazil's study promised a boost worth billions, plus around 3.6 million jobs every year bold for 2010. South Africa was told to expect almost 500,000 foreign visitors. About 300,000 actually came for the cup. And when economists counted South Africa's real gain in tourists, the bill came to thousands of dollars of public money, for extra tourists, per tourist. At that price, it is cheaper to mail strangers free plane tickets, in Brazil for every hundred dollars Brazil spent on its world cup. Tourist money brought back about two dollars fifty, two dollars fifty out of one hundred, because impact studies are not predictions, they are advertisements, nobody re-reads the horoscope after the party. Well, economists do. That is the problem.",
+ "meta": {
+  "extractor": "transformers.js @xenova whisper-tiny.en",
+  "generatedAt": "2026-07-02",
+  "audioSeconds": 60.779
+ },
+ "words": [
+  {
+   "word": " Every",
+   "start": 0,
+   "end": 0.36
+  },
+  {
+   "word": " bid",
+   "start": 0.36,
+   "end": 0.6
+  },
+  {
+   "word": " starts",
+   "start": 0.6,
+   "end": 0.94
+  },
+  {
+   "word": " the",
+   "start": 0.94,
+   "end": 1.24
+  },
+  {
+   "word": " same",
+   "start": 1.24,
+   "end": 1.5
+  },
+  {
+   "word": " way,",
+   "start": 1.5,
+   "end": 2.16
+  },
+  {
+   "word": " with",
+   "start": 2.16,
+   "end": 2.16
+  },
+  {
+   "word": " a",
+   "start": 2.16,
+   "end": 2.34
+  },
+  {
+   "word": " promise",
+   "start": 2.34,
+   "end": 2.62
+  },
+  {
+   "word": " machine.",
+   "start": 2.62,
+   "end": 3.3
+  },
+  {
+   "word": " For",
+   "start": 3.3,
+   "end": 3.54
+  },
+  {
+   "word": " a",
+   "start": 3.54,
+   "end": 3.74
+  },
+  {
+   "word": " country",
+   "start": 3.74,
+   "end": 3.98
+  },
+  {
+   "word": " bid,",
+   "start": 3.98,
+   "end": 4.32
+  },
+  {
+   "word": " someone",
+   "start": 4.32,
+   "end": 4.54
+  },
+  {
+   "word": " hires",
+   "start": 4.54,
+   "end": 4.94
+  },
+  {
+   "word": " consultants.",
+   "start": 4.94,
+   "end": 5.82
+  },
+  {
+   "word": " The",
+   "start": 5.82,
+   "end": 6.12
+  },
+  {
+   "word": " consultants",
+   "start": 6.12,
+   "end": 6.48
+  },
+  {
+   "word": " produce",
+   "start": 6.48,
+   "end": 6.9
+  },
+  {
+   "word": " a",
+   "start": 6.9,
+   "end": 7
+  },
+  {
+   "word": " big,",
+   "start": 7,
+   "end": 7.3
+  },
+  {
+   "word": " shiny",
+   "start": 7.3,
+   "end": 7.56
+  },
+  {
+   "word": " document",
+   "start": 7.56,
+   "end": 8.08
+  },
+  {
+   "word": " called",
+   "start": 8.2,
+   "end": 8.52
+  },
+  {
+   "word": " an",
+   "start": 8.52,
+   "end": 8.7
+  },
+  {
+   "word": " economic",
+   "start": 8.7,
+   "end": 9.2
+  },
+  {
+   "word": " impact",
+   "start": 9.2,
+   "end": 9.62
+  },
+  {
+   "word": " study,",
+   "start": 9.62,
+   "end": 10.22
+  },
+  {
+   "word": " which",
+   "start": 10.22,
+   "end": 10.34
+  },
+  {
+   "word": " sounds",
+   "start": 10.34,
+   "end": 10.62
+  },
+  {
+   "word": " scientific.",
+   "start": 10.62,
+   "end": 11.78
+  },
+  {
+   "word": " It",
+   "start": 11.78,
+   "end": 11.94
+  },
+  {
+   "word": " is",
+   "start": 11.94,
+   "end": 12.16
+  },
+  {
+   "word": " a",
+   "start": 12.16,
+   "end": 12.28
+  },
+  {
+   "word": " horoscope",
+   "start": 12.28,
+   "end": 12.66
+  },
+  {
+   "word": " with",
+   "start": 12.66,
+   "end": 12.92
+  },
+  {
+   "word": " a",
+   "start": 12.92,
+   "end": 13.06
+  },
+  {
+   "word": " spreadsheet.",
+   "start": 13.06,
+   "end": 13.82
+  },
+  {
+   "word": " For",
+   "start": 13.82,
+   "end": 14
+  },
+  {
+   "word": " 2014,",
+   "start": 14,
+   "end": 15.18
+  },
+  {
+   "word": " Brazil's",
+   "start": 15.18,
+   "end": 15.58
+  },
+  {
+   "word": " study",
+   "start": 15.58,
+   "end": 15.84
+  },
+  {
+   "word": " promised",
+   "start": 15.84,
+   "end": 16.14
+  },
+  {
+   "word": " a",
+   "start": 16.14,
+   "end": 16.36
+  },
+  {
+   "word": " boost",
+   "start": 16.36,
+   "end": 16.6
+  },
+  {
+   "word": " worth",
+   "start": 16.6,
+   "end": 16.9
+  },
+  {
+   "word": " billions,",
+   "start": 16.9,
+   "end": 17.54
+  },
+  {
+   "word": " plus",
+   "start": 17.54,
+   "end": 17.88
+  },
+  {
+   "word": " around",
+   "start": 17.88,
+   "end": 18.16
+  },
+  {
+   "word": " 3",
+   "start": 18.16,
+   "end": 18.48
+  },
+  {
+   "word": ".6",
+   "start": 18.48,
+   "end": 18.96
+  },
+  {
+   "word": " million",
+   "start": 18.96,
+   "end": 19.3
+  },
+  {
+   "word": " jobs",
+   "start": 19.3,
+   "end": 19.8
+  },
+  {
+   "word": " every",
+   "start": 19.8,
+   "end": 20.18
+  },
+  {
+   "word": " year",
+   "start": 20.18,
+   "end": 20.66
+  },
+  {
+   "word": " bold",
+   "start": 20.66,
+   "end": 21.1
+  },
+  {
+   "word": " for",
+   "start": 21.1,
+   "end": 21.48
+  },
+  {
+   "word": " 2010.",
+   "start": 21.48,
+   "end": 22.6
+  },
+  {
+   "word": " South",
+   "start": 22.6,
+   "end": 22.94
+  },
+  {
+   "word": " Africa",
+   "start": 22.94,
+   "end": 23.26
+  },
+  {
+   "word": " was",
+   "start": 23.26,
+   "end": 23.54
+  },
+  {
+   "word": " told",
+   "start": 23.54,
+   "end": 23.8
+  },
+  {
+   "word": " to",
+   "start": 23.8,
+   "end": 24
+  },
+  {
+   "word": " expect",
+   "start": 24,
+   "end": 24.36
+  },
+  {
+   "word": " almost",
+   "start": 24.34,
+   "end": 24.82
+  },
+  {
+   "word": " 500",
+   "start": 24.82,
+   "end": 25.58
+  },
+  {
+   "word": ",000",
+   "start": 25.58,
+   "end": 26
+  },
+  {
+   "word": " foreign",
+   "start": 26,
+   "end": 26.32
+  },
+  {
+   "word": " visitors.",
+   "start": 26.32,
+   "end": 27.28
+  },
+  {
+   "word": " About",
+   "start": 27.36,
+   "end": 27.64
+  },
+  {
+   "word": " 300",
+   "start": 27.64,
+   "end": 28.26
+  },
+  {
+   "word": ",000",
+   "start": 28.26,
+   "end": 28.68
+  },
+  {
+   "word": " actually",
+   "start": 28.68,
+   "end": 29.06
+  },
+  {
+   "word": " came",
+   "start": 29.06,
+   "end": 29.28
+  },
+  {
+   "word": " for",
+   "start": 29.28,
+   "end": 29.42
+  },
+  {
+   "word": " the",
+   "start": 29.42,
+   "end": 29.6
+  },
+  {
+   "word": " cup.",
+   "start": 29.6,
+   "end": 30.2
+  },
+  {
+   "word": " And",
+   "start": 30.2,
+   "end": 30.3
+  },
+  {
+   "word": " when",
+   "start": 30.3,
+   "end": 30.5
+  },
+  {
+   "word": " economists",
+   "start": 30.5,
+   "end": 30.94
+  },
+  {
+   "word": " counted",
+   "start": 30.94,
+   "end": 31.4
+  },
+  {
+   "word": " South",
+   "start": 31.4,
+   "end": 31.84
+  },
+  {
+   "word": " Africa's",
+   "start": 31.84,
+   "end": 32.36
+  },
+  {
+   "word": " real",
+   "start": 32.36,
+   "end": 32.6
+  },
+  {
+   "word": " gain",
+   "start": 32.6,
+   "end": 32.88
+  },
+  {
+   "word": " in",
+   "start": 32.88,
+   "end": 33.14
+  },
+  {
+   "word": " tourists,",
+   "start": 33.14,
+   "end": 33.92
+  },
+  {
+   "word": " the",
+   "start": 33.92,
+   "end": 34.04
+  },
+  {
+   "word": " bill",
+   "start": 34.04,
+   "end": 34.24
+  },
+  {
+   "word": " came",
+   "start": 34.24,
+   "end": 34.44
+  },
+  {
+   "word": " to",
+   "start": 34.44,
+   "end": 34.64
+  },
+  {
+   "word": " thousands",
+   "start": 34.64,
+   "end": 34.94
+  },
+  {
+   "word": " of",
+   "start": 34.94,
+   "end": 35.26
+  },
+  {
+   "word": " dollars",
+   "start": 35.26,
+   "end": 35.42
+  },
+  {
+   "word": " of",
+   "start": 35.42,
+   "end": 35.76
+  },
+  {
+   "word": " public",
+   "start": 35.76,
+   "end": 35.98
+  },
+  {
+   "word": " money,",
+   "start": 35.98,
+   "end": 36.56
+  },
+  {
+   "word": " for",
+   "start": 36.56,
+   "end": 36.78
+  },
+  {
+   "word": " extra",
+   "start": 36.78,
+   "end": 37.1
+  },
+  {
+   "word": " tourists,",
+   "start": 37.58,
+   "end": 37.88
+  },
+  {
+   "word": " per",
+   "start": 37.88,
+   "end": 37.88
+  },
+  {
+   "word": " tourist.",
+   "start": 37.88,
+   "end": 38.58
+  },
+  {
+   "word": " At",
+   "start": 38.58,
+   "end": 38.72
+  },
+  {
+   "word": " that",
+   "start": 38.72,
+   "end": 38.92
+  },
+  {
+   "word": " price,",
+   "start": 38.92,
+   "end": 39.3
+  },
+  {
+   "word": " it",
+   "start": 39.3,
+   "end": 39.3
+  },
+  {
+   "word": " is",
+   "start": 39.3,
+   "end": 39.5
+  },
+  {
+   "word": " cheaper",
+   "start": 39.5,
+   "end": 39.7
+  },
+  {
+   "word": " to",
+   "start": 39.7,
+   "end": 39.94
+  },
+  {
+   "word": " mail",
+   "start": 39.94,
+   "end": 40.22
+  },
+  {
+   "word": " strangers",
+   "start": 40.22,
+   "end": 40.64
+  },
+  {
+   "word": " free",
+   "start": 40.64,
+   "end": 41.04
+  },
+  {
+   "word": " plane",
+   "start": 41.04,
+   "end": 41.32
+  },
+  {
+   "word": " tickets,",
+   "start": 41.32,
+   "end": 42.08
+  },
+  {
+   "word": " in",
+   "start": 42.08,
+   "end": 42.38
+  },
+  {
+   "word": " Brazil",
+   "start": 42.38,
+   "end": 42.64
+  },
+  {
+   "word": " for",
+   "start": 42.64,
+   "end": 43.02
+  },
+  {
+   "word": " every",
+   "start": 43.02,
+   "end": 43.34
+  },
+  {
+   "word": " hundred",
+   "start": 43.34,
+   "end": 43.68
+  },
+  {
+   "word": " dollars",
+   "start": 43.68,
+   "end": 44
+  },
+  {
+   "word": " Brazil",
+   "start": 44,
+   "end": 44.38
+  },
+  {
+   "word": " spent",
+   "start": 44.38,
+   "end": 44.74
+  },
+  {
+   "word": " on",
+   "start": 44.74,
+   "end": 44.86
+  },
+  {
+   "word": " its",
+   "start": 44.86,
+   "end": 45.04
+  },
+  {
+   "word": " world",
+   "start": 45.04,
+   "end": 45.36
+  },
+  {
+   "word": " cup.",
+   "start": 45.36,
+   "end": 45.92
+  },
+  {
+   "word": " Tourist",
+   "start": 45.94,
+   "end": 46.24
+  },
+  {
+   "word": " money",
+   "start": 46.24,
+   "end": 46.48
+  },
+  {
+   "word": " brought",
+   "start": 46.48,
+   "end": 46.78
+  },
+  {
+   "word": " back",
+   "start": 46.78,
+   "end": 47.32
+  },
+  {
+   "word": " about",
+   "start": 47.32,
+   "end": 47.7
+  },
+  {
+   "word": " two",
+   "start": 47.7,
+   "end": 48.02
+  },
+  {
+   "word": " dollars",
+   "start": 48.02,
+   "end": 48.26
+  },
+  {
+   "word": " fifty,",
+   "start": 48.26,
+   "end": 48.94
+  },
+  {
+   "word": " two",
+   "start": 48.94,
+   "end": 49.2
+  },
+  {
+   "word": " dollars",
+   "start": 49.2,
+   "end": 49.56
+  },
+  {
+   "word": " fifty",
+   "start": 49.56,
+   "end": 50.06
+  },
+  {
+   "word": " out",
+   "start": 50.06,
+   "end": 50.3
+  },
+  {
+   "word": " of",
+   "start": 50.3,
+   "end": 50.48
+  },
+  {
+   "word": " one",
+   "start": 50.48,
+   "end": 50.62
+  },
+  {
+   "word": " hundred,",
+   "start": 50.62,
+   "end": 51.3
+  },
+  {
+   "word": " because",
+   "start": 51.3,
+   "end": 51.64
+  },
+  {
+   "word": " impact",
+   "start": 51.64,
+   "end": 51.92
+  },
+  {
+   "word": " studies",
+   "start": 51.92,
+   "end": 52.42
+  },
+  {
+   "word": " are",
+   "start": 52.42,
+   "end": 52.6
+  },
+  {
+   "word": " not",
+   "start": 52.6,
+   "end": 52.82
+  },
+  {
+   "word": " predictions,",
+   "start": 52.82,
+   "end": 53.78
+  },
+  {
+   "word": " they",
+   "start": 53.78,
+   "end": 53.78
+  },
+  {
+   "word": " are",
+   "start": 53.78,
+   "end": 54.1
+  },
+  {
+   "word": " advertisements,",
+   "start": 54.1,
+   "end": 55.3
+  },
+  {
+   "word": " nobody",
+   "start": 55.3,
+   "end": 55.58
+  },
+  {
+   "word": " re",
+   "start": 55.58,
+   "end": 55.88
+  },
+  {
+   "word": "-reads",
+   "start": 55.88,
+   "end": 56.12
+  },
+  {
+   "word": " the",
+   "start": 56.12,
+   "end": 56.32
+  },
+  {
+   "word": " horoscope",
+   "start": 56.44,
+   "end": 56.78
+  },
+  {
+   "word": " after",
+   "start": 56.78,
+   "end": 57.14
+  },
+  {
+   "word": " the",
+   "start": 57.14,
+   "end": 57.8
+  },
+  {
+   "word": " party.",
+   "start": 57.8,
+   "end": 58.08
+  },
+  {
+   "word": " Well,",
+   "start": 58.08,
+   "end": 58.82
+  },
+  {
+   "word": " economists",
+   "start": 58.82,
+   "end": 59.02
+  },
+  {
+   "word": " do.",
+   "start": 59.02,
+   "end": 59.72
+  },
+  {
+   "word": " That",
+   "start": 59.72,
+   "end": 59.9
+  },
+  {
+   "word": " is",
+   "start": 59.9,
+   "end": 60.06
+  },
+  {
+   "word": " the",
+   "start": 60.06,
+   "end": 60.3
+  },
+  {
+   "word": " problem.",
+   "start": 51.04,
+   "end": 52.3
+  }
+ ]
+}

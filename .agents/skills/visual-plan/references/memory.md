@@ -954,6 +954,39 @@ Promote to shared memory: YES - add to `_shared/systems/visual-production.md` (a
 "Animated interactive UI mockup") and `_shared/channel/learning-log.md` as a Core creative-direction
 signal; pairs with the standing Real-UI Illustration preference.
 
+### 2026-07-02 - Generate word timings BEFORE planning (working recipe on this machine)
+
+Classification: `Operational lesson`
+
+Context:
+Planned `6-why-countries-fight-to-host-the-world-cup` Section 1. Instead of writing the plan
+with estimated times (the project-5 S1 fallback), generated the word-timings JSON first, so
+every scene cut and reveal in the plan cites a real timestamp (fight@10.26, money@19.10,
+behind@26.96...). Working recipe, verified end-to-end on this Windows box:
+(1) `npm install @xenova/transformers ffmpeg-static` in a scratch folder;
+(2) a ~30-line `gen-timings.mjs`: ffmpeg-static decodes the MP3 to 16 kHz mono f32 raw,
+`pipeline('automatic-speech-recognition','Xenova/whisper-tiny.en')` with
+`return_timestamps:'word', chunk_length_s:30, stride_length_s:5`, write
+`{transcript, meta, words:[{word,start,end}]}`;
+(3) checks: monotonic starts (no backward jumps), clamp the section/root duration to the real
+audio seconds (whisper's last-word end overshoots), ignore harmless mishearings ("beg" ->
+"bag") - the timestamps are what matter.
+
+Lesson:
+Visual-plan should generate the timings itself when missing rather than planning on
+estimates - the plan quality jump is large (every show-as-you-say line is real) and the cost
+is ~2 minutes. The whisper-tiny mishearing of words does NOT block use; map misheard tokens
+to the script words by position.
+
+Apply next time:
+- If `section-XX-word-timings.json` is missing, run the wtgen recipe before writing scenes.
+- Always clamp scene-end to the real audio duration; check for backward jumps before pinning.
+- Keep the plan's timing-source note explicit (file + extractor + date + clamp note).
+
+Promote to shared memory:
+no; pairs with the existing learning-log whisper line - this is the concrete working recipe
+for visual-plan/render on this machine.
+
 ## Feedback Entry Template
 
 ```markdown

@@ -247,6 +247,43 @@ for stage/podium queries; ls-verify every pose filename; flag (don't chase forev
 
 Promote to shared memory: no; visual-implement sourcing/tooling behavior.
 
+### 2026-07-02 - Sourcing round (World Cup S1): title-keyword traps, MET "ledger" trap, blank-page upgrade
+
+Classification: `Operational lesson`
+
+Context:
+Sourced 7 bases for `6-why-countries-fight-to-host-the-world-cup` Section 1. Hit rate on
+blind picks was ~30% - 7 of the first 10 candidates failed the pixel check: "Gold Medal
+Bokeh" was a branded GOLD MEDAL FLOUR neon sign (title keyword trap); the MET's "Account
+Book Ledger" objects are artists' SKETCHBOOKS, not accounting pages; the Kodak archive
+ledger had a KODAK brand label; Beijing-2008 "fireworks" was actually the athletes'
+parade (dozens of identifiable faces); a Wembley "stadium fireworks" was a near-black
+frame of phone lights; a "dark wooden table" pick was a food photo. Every reject was
+caught only by Reading the pixels.
+
+Lesson:
+- Title keywords lie in both directions ("Gold Medal" = a flour brand; "Account Book
+  Ledger" at the MET = sketchbook; "fireworks" files can be crowd shots). Budget ~2
+  re-sources per base and NEVER skip the Read check, even for "obviously safe" subjects.
+- A photo that differs from the plan's description can be BETTER: the blank aged ledger
+  page (red center rule, index tabs) beats "columns of figures" because the handwritten
+  verdict pops on empty paper; a giant festival firework over a night town carries
+  "celebration" without any stadium. When substituting, sync a dated "Sourcing note"
+  into the scene's Elements block in BOTH the section plan and the master (same edit).
+- Wikimedia thumb URLs must come from the API (`iiprop=url&iiurlwidth=N` -> `thumburl`);
+  hand-building `/thumb/<hash>/` paths 404s. Wikimedia rate-limits (429) after ~2 fast
+  downloads - sleep 5-8s between requests and retry with backoff.
+- Language check before finishing: a stray non-English word slipped into a plan file
+  ("читается" for "reads"); grep plan/manifest text for non-ASCII before handoff (File
+  Language Convention).
+
+Apply next time: query -> shortlist -> Read EVERY candidate -> rename to plan filenames
+only after acceptance; record preview-res flags (StockSnap 960w / rawpixel editor_1024)
+in ATTRIBUTION; bokeh/curtain/soft textures tolerate preview res, detailed textures do not.
+
+Promote to shared memory: no; visual-implement sourcing behavior (consistent with prior
+entries - this adds the title-keyword trap + plan-sync-note pattern).
+
 ## Feedback Entry Template
 
 ```markdown

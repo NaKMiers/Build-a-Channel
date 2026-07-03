@@ -1,0 +1,640 @@
+{
+ "transcript": " Most people think hosting is an investment. Tourists arrive, hotels fill, shops get rich, the economy grows. That is the story every bidding government tells. It is a lovely story. The numbers tell a different one. So here is the truth. Hosting the World Cup is not an investment. It is a purchase. Nobody buys a Ferrari to make money. You buy a Ferrari to be seen in a Ferrari. Countries do the same. Except the Ferrari is a football tournament. The price is billions. And the credit card is yours, the same. Except the Ferrari is a football tournament. The price is billions and the credit card is yours, the taxpayers. So the real question is never will it pay off? It is who pays.",
+ "meta": {
+  "extractor": "transformers.js @xenova whisper-tiny.en",
+  "generatedAt": "2026-07-02",
+  "audioSeconds": 33.728
+ },
+ "words": [
+  {
+   "word": " Most",
+   "start": 0,
+   "end": 0.36
+  },
+  {
+   "word": " people",
+   "start": 0.36,
+   "end": 0.66
+  },
+  {
+   "word": " think",
+   "start": 0.66,
+   "end": 0.94
+  },
+  {
+   "word": " hosting",
+   "start": 0.94,
+   "end": 1.22
+  },
+  {
+   "word": " is",
+   "start": 1.22,
+   "end": 1.48
+  },
+  {
+   "word": " an",
+   "start": 1.48,
+   "end": 1.66
+  },
+  {
+   "word": " investment.",
+   "start": 1.66,
+   "end": 2.56
+  },
+  {
+   "word": " Tourists",
+   "start": 2.56,
+   "end": 2.82
+  },
+  {
+   "word": " arrive,",
+   "start": 2.82,
+   "end": 3.38
+  },
+  {
+   "word": " hotels",
+   "start": 3.38,
+   "end": 3.7
+  },
+  {
+   "word": " fill,",
+   "start": 3.7,
+   "end": 4.46
+  },
+  {
+   "word": " shops",
+   "start": 4.46,
+   "end": 4.46
+  },
+  {
+   "word": " get",
+   "start": 4.46,
+   "end": 4.7
+  },
+  {
+   "word": " rich,",
+   "start": 4.7,
+   "end": 5
+  },
+  {
+   "word": " the",
+   "start": 5,
+   "end": 5.14
+  },
+  {
+   "word": " economy",
+   "start": 5.14,
+   "end": 5.52
+  },
+  {
+   "word": " grows.",
+   "start": 5.52,
+   "end": 6.22
+  },
+  {
+   "word": " That",
+   "start": 6.22,
+   "end": 6.38
+  },
+  {
+   "word": " is",
+   "start": 6.38,
+   "end": 6.52
+  },
+  {
+   "word": " the",
+   "start": 6.52,
+   "end": 6.7
+  },
+  {
+   "word": " story",
+   "start": 6.7,
+   "end": 6.98
+  },
+  {
+   "word": " every",
+   "start": 6.98,
+   "end": 7.32
+  },
+  {
+   "word": " bidding",
+   "start": 7.32,
+   "end": 7.56
+  },
+  {
+   "word": " government",
+   "start": 7.56,
+   "end": 7.9
+  },
+  {
+   "word": " tells.",
+   "start": 7.9,
+   "end": 8.58
+  },
+  {
+   "word": " It",
+   "start": 8.58,
+   "end": 8.72
+  },
+  {
+   "word": " is",
+   "start": 8.72,
+   "end": 8.92
+  },
+  {
+   "word": " a",
+   "start": 8.92,
+   "end": 9.06
+  },
+  {
+   "word": " lovely",
+   "start": 9.06,
+   "end": 9.22
+  },
+  {
+   "word": " story.",
+   "start": 9.22,
+   "end": 10.04
+  },
+  {
+   "word": " The",
+   "start": 10.04,
+   "end": 10.18
+  },
+  {
+   "word": " numbers",
+   "start": 10.18,
+   "end": 10.42
+  },
+  {
+   "word": " tell",
+   "start": 10.42,
+   "end": 10.68
+  },
+  {
+   "word": " a",
+   "start": 10.68,
+   "end": 10.84
+  },
+  {
+   "word": " different",
+   "start": 10.84,
+   "end": 11
+  },
+  {
+   "word": " one.",
+   "start": 11,
+   "end": 11.48
+  },
+  {
+   "word": " So",
+   "start": 11.48,
+   "end": 11.74
+  },
+  {
+   "word": " here",
+   "start": 11.74,
+   "end": 11.92
+  },
+  {
+   "word": " is",
+   "start": 11.92,
+   "end": 12.08
+  },
+  {
+   "word": " the",
+   "start": 12.08,
+   "end": 12.3
+  },
+  {
+   "word": " truth.",
+   "start": 12.3,
+   "end": 12.8
+  },
+  {
+   "word": " Hosting",
+   "start": 12.8,
+   "end": 13.08
+  },
+  {
+   "word": " the",
+   "start": 13.08,
+   "end": 13.24
+  },
+  {
+   "word": " World",
+   "start": 13.24,
+   "end": 13.48
+  },
+  {
+   "word": " Cup",
+   "start": 13.48,
+   "end": 13.62
+  },
+  {
+   "word": " is",
+   "start": 13.62,
+   "end": 13.82
+  },
+  {
+   "word": " not",
+   "start": 13.82,
+   "end": 14
+  },
+  {
+   "word": " an",
+   "start": 14,
+   "end": 14.18
+  },
+  {
+   "word": " investment.",
+   "start": 14.18,
+   "end": 14.94
+  },
+  {
+   "word": " It",
+   "start": 14.94,
+   "end": 15.08
+  },
+  {
+   "word": " is",
+   "start": 15.08,
+   "end": 15.28
+  },
+  {
+   "word": " a",
+   "start": 15.28,
+   "end": 15.42
+  },
+  {
+   "word": " purchase.",
+   "start": 15.42,
+   "end": 16.32
+  },
+  {
+   "word": " Nobody",
+   "start": 16.32,
+   "end": 16.54
+  },
+  {
+   "word": " buys",
+   "start": 16.54,
+   "end": 16.94
+  },
+  {
+   "word": " a",
+   "start": 16.94,
+   "end": 17.18
+  },
+  {
+   "word": " Ferrari",
+   "start": 17.18,
+   "end": 17.4
+  },
+  {
+   "word": " to",
+   "start": 17.4,
+   "end": 17.6
+  },
+  {
+   "word": " make",
+   "start": 17.6,
+   "end": 17.82
+  },
+  {
+   "word": " money.",
+   "start": 17.82,
+   "end": 18.34
+  },
+  {
+   "word": " You",
+   "start": 18.34,
+   "end": 18.48
+  },
+  {
+   "word": " buy",
+   "start": 18.48,
+   "end": 18.62
+  },
+  {
+   "word": " a",
+   "start": 18.62,
+   "end": 18.84
+  },
+  {
+   "word": " Ferrari",
+   "start": 18.84,
+   "end": 19.18
+  },
+  {
+   "word": " to",
+   "start": 19.18,
+   "end": 19.38
+  },
+  {
+   "word": " be",
+   "start": 19.38,
+   "end": 19.64
+  },
+  {
+   "word": " seen",
+   "start": 19.64,
+   "end": 19.84
+  },
+  {
+   "word": " in",
+   "start": 19.84,
+   "end": 19.96
+  },
+  {
+   "word": " a",
+   "start": 19.96,
+   "end": 20.14
+  },
+  {
+   "word": " Ferrari.",
+   "start": 20.14,
+   "end": 20.88
+  },
+  {
+   "word": " Countries",
+   "start": 20.88,
+   "end": 21.16
+  },
+  {
+   "word": " do",
+   "start": 21.16,
+   "end": 21.44
+  },
+  {
+   "word": " the",
+   "start": 21.44,
+   "end": 21.72
+  },
+  {
+   "word": " same.",
+   "start": 21.72,
+   "end": 22.2
+  },
+  {
+   "word": " Except",
+   "start": 22.2,
+   "end": 22.48
+  },
+  {
+   "word": " the",
+   "start": 22.48,
+   "end": 22.78
+  },
+  {
+   "word": " Ferrari",
+   "start": 22.78,
+   "end": 23.16
+  },
+  {
+   "word": " is",
+   "start": 23.16,
+   "end": 23.48
+  },
+  {
+   "word": " a",
+   "start": 23.48,
+   "end": 23.62
+  },
+  {
+   "word": " football",
+   "start": 23.62,
+   "end": 23.98
+  },
+  {
+   "word": " tournament.",
+   "start": 23.98,
+   "end": 24.78
+  },
+  {
+   "word": " The",
+   "start": 24.78,
+   "end": 24.98
+  },
+  {
+   "word": " price",
+   "start": 24.98,
+   "end": 25.2
+  },
+  {
+   "word": " is",
+   "start": 25.2,
+   "end": 25.5
+  },
+  {
+   "word": " billions.",
+   "start": 25.5,
+   "end": 26.14
+  },
+  {
+   "word": " And",
+   "start": 26.14,
+   "end": 26.48
+  },
+  {
+   "word": " the",
+   "start": 26.48,
+   "end": 26.68
+  },
+  {
+   "word": " credit",
+   "start": 26.68,
+   "end": 26.92
+  },
+  {
+   "word": " card",
+   "start": 26.92,
+   "end": 27.22
+  },
+  {
+   "word": " is",
+   "start": 27.22,
+   "end": 27.48
+  },
+  {
+   "word": " yours,",
+   "start": 27.48,
+   "end": 28.14
+  },
+  {
+   "word": " the",
+   "start": 21.48,
+   "end": 21.72
+  },
+  {
+   "word": " same.",
+   "start": 21.72,
+   "end": 22.32
+  },
+  {
+   "word": " Except",
+   "start": 22.32,
+   "end": 22.48
+  },
+  {
+   "word": " the",
+   "start": 22.48,
+   "end": 22.78
+  },
+  {
+   "word": " Ferrari",
+   "start": 22.78,
+   "end": 23.18
+  },
+  {
+   "word": " is",
+   "start": 23.18,
+   "end": 23.48
+  },
+  {
+   "word": " a",
+   "start": 23.48,
+   "end": 23.62
+  },
+  {
+   "word": " football",
+   "start": 23.62,
+   "end": 23.98
+  },
+  {
+   "word": " tournament.",
+   "start": 23.98,
+   "end": 24.72
+  },
+  {
+   "word": " The",
+   "start": 24.72,
+   "end": 24.96
+  },
+  {
+   "word": " price",
+   "start": 24.96,
+   "end": 25.22
+  },
+  {
+   "word": " is",
+   "start": 25.22,
+   "end": 25.56
+  },
+  {
+   "word": " billions",
+   "start": 25.56,
+   "end": 25.96
+  },
+  {
+   "word": " and",
+   "start": 25.96,
+   "end": 26.44
+  },
+  {
+   "word": " the",
+   "start": 26.44,
+   "end": 26.92
+  },
+  {
+   "word": " credit",
+   "start": 26.92,
+   "end": 26.94
+  },
+  {
+   "word": " card",
+   "start": 26.94,
+   "end": 27.22
+  },
+  {
+   "word": " is",
+   "start": 27.22,
+   "end": 27.48
+  },
+  {
+   "word": " yours,",
+   "start": 27.48,
+   "end": 28.06
+  },
+  {
+   "word": " the",
+   "start": 28.06,
+   "end": 28.32
+  },
+  {
+   "word": " taxpayers.",
+   "start": 28.32,
+   "end": 29.34
+  },
+  {
+   "word": " So",
+   "start": 29.34,
+   "end": 29.48
+  },
+  {
+   "word": " the",
+   "start": 29.48,
+   "end": 29.62
+  },
+  {
+   "word": " real",
+   "start": 29.62,
+   "end": 29.9
+  },
+  {
+   "word": " question",
+   "start": 29.9,
+   "end": 30.28
+  },
+  {
+   "word": " is",
+   "start": 30.28,
+   "end": 30.48
+  },
+  {
+   "word": " never",
+   "start": 30.48,
+   "end": 30.86
+  },
+  {
+   "word": " will",
+   "start": 30.86,
+   "end": 31.24
+  },
+  {
+   "word": " it",
+   "start": 31.24,
+   "end": 31.4
+  },
+  {
+   "word": " pay",
+   "start": 31.4,
+   "end": 31.68
+  },
+  {
+   "word": " off?",
+   "start": 31.68,
+   "end": 32.06
+  },
+  {
+   "word": " It",
+   "start": 32.06,
+   "end": 32.34
+  },
+  {
+   "word": " is",
+   "start": 32.34,
+   "end": 32.9
+  },
+  {
+   "word": " who",
+   "start": 32.9,
+   "end": 33.16
+  },
+  {
+   "word": " pays.",
+   "start": 33.16,
+   "end": 36.24
+  }
+ ]
+}

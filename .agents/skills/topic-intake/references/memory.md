@@ -279,6 +279,46 @@ Apply next time:
 Promote to shared memory:
 no, this is topic-intake ranking/intake behavior, not a channel-wide strategy change.
 
+### 2026-07-02 - User-steered family batch; user's own angle beat the higher-scored sibling
+
+Classification: `Topic intake lesson`
+
+Context:
+The user steered the run to the World Cup family (2026 tournament live, mid-knockout) with
+their own raw angle ("why world is loss but every hold it?") and asked for it "or a much
+better choice." Browsed a 5-candidate family batch. The ticket-price/dynamic-pricing angle
+scored highest (43/45, freshest demand: BBC ~1M, Business Insider ~893K, Bloomberg ~410K,
+all within a month) and was recommended; the user still chose their own host-economics
+angle (39/45; CNBC ~1M evergreen proof). Persisted as
+`projects/6-why-countries-fight-to-host-the-world-cup/00-topic-intake.md`.
+
+Lesson:
+When the user brings their own angle and asks "or choose better," present the
+better-scoring sibling honestly, but expect the user's own angle to win even against a
+higher score - ownership and taste beat a 4-point scorecard gap, and both were above
+threshold so both were legitimate. The recommendation's job is to inform, not override.
+Also: before persisting, a parallel fact-check workflow on the topic's anchor claims (7
+claims, one web-verification agent each) caught a would-be scripting error - USA 1994 is
+NOT a host-economics success story (host metros came in $5.5-9.3B BELOW forecast; only the
+organizing committee profited; the real exceptions are LA 1984 and Barcelona 1992). The
+verified facts + honesty rails went into the intake file as a "Verified Anchor Facts"
+table so research and script inherit them.
+
+Apply next time:
+- User-brought angle above threshold + explicit pick = persist it; log the higher-scored
+  sibling as parked, not as a pushback.
+- For any topic whose whole premise is an economics/history claim, run the anchor-claim
+  verification pass BEFORE writing the intake, and bake a dated verified-facts table +
+  "Must Stay Honest" rails into `00-topic-intake.md`.
+- Parked candidate worth resurrecting: "Why World Cup Tickets Cost $6,000 One Day and $600
+  the Next" (dynamic pricing, 43/45 on 2026-07-02, evidence: BBC ~1M, Business Insider
+  ~893K, Bloomberg ~410K, StubHub class action + 4 US state probes). Strongest while the
+  tournament runs (final: 2026-07-19); the mechanism (surge pricing everywhere: Uber,
+  flights, concerts) keeps a longer shelf life if reframed away from the tournament.
+
+Promote to shared memory:
+no, this is topic-intake intake-mode and verification behavior, not a channel-wide change.
+
 ## Feedback Entry Template
 
 Use this shape when updating the skill after user review:

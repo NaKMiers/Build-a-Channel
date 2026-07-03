@@ -298,6 +298,44 @@ Apply next time:
 Promote to shared memory:
 no; this is a research-pack sourcing + browse-resilience tactic, not a channel-wide strategy change.
 
+### 2026-07-02 - Same-session verification workflow output is a ready-made facts pass
+
+Classification: `Research pack lesson`
+
+Context:
+Researched `6-why-countries-fight-to-host-the-world-cup` immediately after topic-intake in
+the same session. At intake time, a 7-agent fact-check workflow (one WebSearch agent per
+anchor claim) had already verified the topic's anchor claims and returned 60+ dated facts
+WITH primary source URLs (FIFA Annual Reports, FEMA, JEP, ProPublica, Fortune, ministry
+PDFs). Reused that output (persisted task output file + workflow journal) as the facts
+pass backbone instead of re-browsing the same ground, then spent the browse budget on what
+was still missing: Commons API image leads and the engagement pass.
+
+Lesson:
+When topic-intake ran an anchor-claim verification pass in the same session (or its
+workflow output file still exists), extract its full key_facts + URLs first and build the
+Source Map from it - the facts pass is then mostly done, at higher quality than typical
+link-hunting (agents recorded verdicts, honesty conditions, and per-fact dates). Also:
+(1) YouTube CHAPTER LISTS captured during topic-intake demand browsing double as the
+engagement-study pass - a competitor's chapter arc is its structure, no rewatch needed;
+(2) Commons API again delivered license-clear real heroes for every named stadium/venue -
+for infrastructure/place topics, query each PROPER NOUN separately, plus one generic
+texture query (empty seats, receipt); (3) real protest photos are strong evidence boards
+but need face-cropping notes for the no-face channel; (4) an "Engagement Study" section
+added after the Source Map records learn-don't-copy structure lessons cleanly.
+
+Apply next time:
+- Check for a same-session (or on-disk) verification workflow output before re-browsing
+  facts; extract key_facts + honesty_notes into the Source Map and Safe/Avoid claims.
+- Mine already-captured YouTube chapter lists for the engagement pass.
+- Proper-noun-per-query on the Commons API for place/infrastructure topics; flag any
+  people-containing photo with a face-crop note.
+- Keep the intake's "Must Stay Honest" rails as the seed of Safe Claims / Claims To Avoid
+  (did this; the rails mapped 1:1).
+
+Promote to shared memory:
+no; this is research-pack sourcing efficiency, not a channel-wide strategy change.
+
 ## Feedback Entry Template
 
 Use this shape when updating the skill after user review:

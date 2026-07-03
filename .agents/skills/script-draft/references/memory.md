@@ -344,6 +344,47 @@ not yet - this conflicts with the existing "no spammy CTA" note in channel-guard
 as a per-owner preference; promote to `learning-log.md` as an Experiment (and reconcile the guardrail) only
 after the owner confirms it should be the standing close for ALL videos.
 
+### 2026-07-02 - Pre-delivery 3-lens adversarial review catches what one pass cannot
+
+Classification: `Script draft lesson`
+
+Context:
+Drafted `6-why-countries-fight-to-host-the-world-cup` (host-economics, evidence-heavy
+topic). Before reporting to the owner, ran a 3-agent adversarial review workflow (lenses:
+factual honesty vs research pack, B1-learner clarity/voiceability, engagement/channel
+rules), each agent reading the draft + research pack from disk. It caught 24 findings,
+including: a genuine factual error ("the LAST host that made a profit was LA 1984" -
+contradicted by the pack's own Barcelona 1992 exception); a killer-stat inversion risk
+(the "[slower] Two fifty" echo can be heard as 250, not $2.50 - the units must survive
+the echo); a silent punchline failure (Zurich never glossed, so the S5 "leaks toward
+Zurich" joke dies for B1 learners); "cycle" jargon silently undoing the revenue-honesty
+rail; the hook naming the topic word only at ~14s (past the ~10s title-payoff window);
+and an over-generalized per-city cost claim ("$100M+ each" spoken over Mexico when the
+pack scopes it to US cities). Applied all must/should fixes in rev 2.
+
+Lesson:
+For evidence-heavy scripts, a self-pass is not enough: run the 3-lens adversarial review
+(honesty / learner / engagement) between draft and delivery. Specific reusable rules it
+produced: (1) SPOKEN NUMBER ECHOES MUST KEEP THEIR UNITS ("Two dollars fifty", never
+"Two fifty") - the echo is the part learners remember; (2) any place-name punchline
+(Zurich) needs its gloss planted in an earlier section; (3) hedges must survive
+compression - a superlative ("the last", "every single time") sneaks in where the pack
+only supports "one of the only" / "every time anyone has counted"; (4) the topic noun
+belongs inside the FIRST spoken line when the video rides a live trend; (5) an announced
+numbered scaffold ("step one... step two") must either complete or be dropped; (6) keep a
+real-name rule in the Humor System: neutral factual celebrity references OK, real people
+as joke targets banned.
+
+Apply next time:
+- Evidence-heavy or claim-dense script -> 3-lens adversarial review workflow before the
+  chat summary; apply must/should fixes; note rev 2 in the script header.
+- Write number echoes with units; gloss punchline place-names early; audit every
+  superlative against the pack; topic word in line one on trend-timed videos.
+
+Promote to shared memory:
+no - this is script-draft QA process; revisit promoting "number echoes keep units" into
+`script-learner-voice.md` if it recurs.
+
 ## Feedback Entry Template
 
 Use this shape when updating the skill after user review:

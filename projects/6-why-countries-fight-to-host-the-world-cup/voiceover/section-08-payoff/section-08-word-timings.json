@@ -1,0 +1,650 @@
+{
+ "transcript": " So why do countries fight to host the World Cup and lose billions? They sell you an investment. They are buying something else. Attention status, a month of being the center of the world, paid for with public money, planned by people who will not be in office when the receipt arrives. Hosting is not a bad investment. It was never an investment. It is the world's most expensive selfie in the World Cup itself. Oh, it makes money every single time anyone is counted. For FIFA, so next time someone promises your city a boom, a stadium, a big event, a once-in-a-lifetime opportunity, ask one simple question, who keeps the tickets because the party is fun. Just check whose name is on the receipt.",
+ "meta": {
+  "extractor": "transformers.js @xenova whisper-tiny.en",
+  "generatedAt": "2026-07-02",
+  "audioSeconds": 39.573
+ },
+ "words": [
+  {
+   "word": " So",
+   "start": 0,
+   "end": 0.3
+  },
+  {
+   "word": " why",
+   "start": 0.3,
+   "end": 0.48
+  },
+  {
+   "word": " do",
+   "start": 0.48,
+   "end": 0.74
+  },
+  {
+   "word": " countries",
+   "start": 0.74,
+   "end": 1.08
+  },
+  {
+   "word": " fight",
+   "start": 1.08,
+   "end": 1.36
+  },
+  {
+   "word": " to",
+   "start": 1.36,
+   "end": 1.54
+  },
+  {
+   "word": " host",
+   "start": 1.54,
+   "end": 1.72
+  },
+  {
+   "word": " the",
+   "start": 1.72,
+   "end": 1.9
+  },
+  {
+   "word": " World",
+   "start": 1.9,
+   "end": 2.16
+  },
+  {
+   "word": " Cup",
+   "start": 2.16,
+   "end": 2.52
+  },
+  {
+   "word": " and",
+   "start": 2.52,
+   "end": 2.8
+  },
+  {
+   "word": " lose",
+   "start": 2.8,
+   "end": 3.06
+  },
+  {
+   "word": " billions?",
+   "start": 3.06,
+   "end": 3.88
+  },
+  {
+   "word": " They",
+   "start": 3.88,
+   "end": 4.14
+  },
+  {
+   "word": " sell",
+   "start": 4.14,
+   "end": 4.36
+  },
+  {
+   "word": " you",
+   "start": 4.36,
+   "end": 4.5
+  },
+  {
+   "word": " an",
+   "start": 4.5,
+   "end": 4.62
+  },
+  {
+   "word": " investment.",
+   "start": 4.62,
+   "end": 5.36
+  },
+  {
+   "word": " They",
+   "start": 5.36,
+   "end": 5.36
+  },
+  {
+   "word": " are",
+   "start": 5.36,
+   "end": 5.54
+  },
+  {
+   "word": " buying",
+   "start": 5.54,
+   "end": 5.84
+  },
+  {
+   "word": " something",
+   "start": 5.84,
+   "end": 6.12
+  },
+  {
+   "word": " else.",
+   "start": 6.12,
+   "end": 6.9
+  },
+  {
+   "word": " Attention",
+   "start": 7.22,
+   "end": 7.22
+  },
+  {
+   "word": " status,",
+   "start": 7.22,
+   "end": 8.08
+  },
+  {
+   "word": " a",
+   "start": 8.08,
+   "end": 8.14
+  },
+  {
+   "word": " month",
+   "start": 8.14,
+   "end": 8.28
+  },
+  {
+   "word": " of",
+   "start": 8.28,
+   "end": 8.42
+  },
+  {
+   "word": " being",
+   "start": 8.42,
+   "end": 8.58
+  },
+  {
+   "word": " the",
+   "start": 8.58,
+   "end": 8.86
+  },
+  {
+   "word": " center",
+   "start": 8.86,
+   "end": 8.96
+  },
+  {
+   "word": " of",
+   "start": 8.96,
+   "end": 9.12
+  },
+  {
+   "word": " the",
+   "start": 9.12,
+   "end": 9.26
+  },
+  {
+   "word": " world,",
+   "start": 9.26,
+   "end": 9.82
+  },
+  {
+   "word": " paid",
+   "start": 9.82,
+   "end": 10.02
+  },
+  {
+   "word": " for",
+   "start": 10.02,
+   "end": 10.2
+  },
+  {
+   "word": " with",
+   "start": 10.2,
+   "end": 10.4
+  },
+  {
+   "word": " public",
+   "start": 10.4,
+   "end": 10.68
+  },
+  {
+   "word": " money,",
+   "start": 10.68,
+   "end": 11.44
+  },
+  {
+   "word": " planned",
+   "start": 11.5,
+   "end": 11.52
+  },
+  {
+   "word": " by",
+   "start": 11.52,
+   "end": 11.76
+  },
+  {
+   "word": " people",
+   "start": 11.76,
+   "end": 12.04
+  },
+  {
+   "word": " who",
+   "start": 12.04,
+   "end": 12.2
+  },
+  {
+   "word": " will",
+   "start": 12.2,
+   "end": 12.3
+  },
+  {
+   "word": " not",
+   "start": 12.3,
+   "end": 12.5
+  },
+  {
+   "word": " be",
+   "start": 12.5,
+   "end": 12.66
+  },
+  {
+   "word": " in",
+   "start": 12.66,
+   "end": 12.8
+  },
+  {
+   "word": " office",
+   "start": 12.8,
+   "end": 13.12
+  },
+  {
+   "word": " when",
+   "start": 13.12,
+   "end": 13.4
+  },
+  {
+   "word": " the",
+   "start": 13.4,
+   "end": 13.6
+  },
+  {
+   "word": " receipt",
+   "start": 13.6,
+   "end": 13.8
+  },
+  {
+   "word": " arrives.",
+   "start": 13.8,
+   "end": 14.76
+  },
+  {
+   "word": " Hosting",
+   "start": 14.9,
+   "end": 15.14
+  },
+  {
+   "word": " is",
+   "start": 15.14,
+   "end": 15.34
+  },
+  {
+   "word": " not",
+   "start": 15.34,
+   "end": 15.52
+  },
+  {
+   "word": " a",
+   "start": 15.52,
+   "end": 15.62
+  },
+  {
+   "word": " bad",
+   "start": 15.62,
+   "end": 15.8
+  },
+  {
+   "word": " investment.",
+   "start": 15.8,
+   "end": 16.54
+  },
+  {
+   "word": " It",
+   "start": 16.54,
+   "end": 16.54
+  },
+  {
+   "word": " was",
+   "start": 16.54,
+   "end": 16.78
+  },
+  {
+   "word": " never",
+   "start": 16.78,
+   "end": 17
+  },
+  {
+   "word": " an",
+   "start": 17,
+   "end": 17.2
+  },
+  {
+   "word": " investment.",
+   "start": 17.2,
+   "end": 18.04
+  },
+  {
+   "word": " It",
+   "start": 18.04,
+   "end": 18.24
+  },
+  {
+   "word": " is",
+   "start": 18.24,
+   "end": 18.4
+  },
+  {
+   "word": " the",
+   "start": 18.4,
+   "end": 18.54
+  },
+  {
+   "word": " world's",
+   "start": 18.54,
+   "end": 18.9
+  },
+  {
+   "word": " most",
+   "start": 18.9,
+   "end": 19.18
+  },
+  {
+   "word": " expensive",
+   "start": 19.18,
+   "end": 19.72
+  },
+  {
+   "word": " selfie",
+   "start": 19.72,
+   "end": 20.22
+  },
+  {
+   "word": " in",
+   "start": 20.22,
+   "end": 20.58
+  },
+  {
+   "word": " the",
+   "start": 20.58,
+   "end": 20.72
+  },
+  {
+   "word": " World",
+   "start": 20.72,
+   "end": 20.96
+  },
+  {
+   "word": " Cup",
+   "start": 20.96,
+   "end": 21.18
+  },
+  {
+   "word": " itself.",
+   "start": 21.18,
+   "end": 21.86
+  },
+  {
+   "word": " Oh,",
+   "start": 21.86,
+   "end": 22.06
+  },
+  {
+   "word": " it",
+   "start": 22.06,
+   "end": 22.14
+  },
+  {
+   "word": " makes",
+   "start": 22.14,
+   "end": 22.42
+  },
+  {
+   "word": " money",
+   "start": 22.42,
+   "end": 22.78
+  },
+  {
+   "word": " every",
+   "start": 22.78,
+   "end": 23.3
+  },
+  {
+   "word": " single",
+   "start": 23.3,
+   "end": 23.64
+  },
+  {
+   "word": " time",
+   "start": 23.64,
+   "end": 23.96
+  },
+  {
+   "word": " anyone",
+   "start": 23.96,
+   "end": 24.2
+  },
+  {
+   "word": " is",
+   "start": 24.2,
+   "end": 24.56
+  },
+  {
+   "word": " counted.",
+   "start": 24.56,
+   "end": 25.34
+  },
+  {
+   "word": " For",
+   "start": 25.34,
+   "end": 25.62
+  },
+  {
+   "word": " FIFA,",
+   "start": 25.62,
+   "end": 26.46
+  },
+  {
+   "word": " so",
+   "start": 26.46,
+   "end": 26.6
+  },
+  {
+   "word": " next",
+   "start": 26.6,
+   "end": 26.82
+  },
+  {
+   "word": " time",
+   "start": 26.82,
+   "end": 27.08
+  },
+  {
+   "word": " someone",
+   "start": 27.08,
+   "end": 27.38
+  },
+  {
+   "word": " promises",
+   "start": 27.38,
+   "end": 27.72
+  },
+  {
+   "word": " your",
+   "start": 27.72,
+   "end": 28.14
+  },
+  {
+   "word": " city",
+   "start": 28.14,
+   "end": 28.3
+  },
+  {
+   "word": " a",
+   "start": 28.3,
+   "end": 28.5
+  },
+  {
+   "word": " boom,",
+   "start": 28.5,
+   "end": 29.26
+  },
+  {
+   "word": " a",
+   "start": 29.26,
+   "end": 29.26
+  },
+  {
+   "word": " stadium,",
+   "start": 29.26,
+   "end": 29.72
+  },
+  {
+   "word": " a",
+   "start": 29.72,
+   "end": 29.78
+  },
+  {
+   "word": " big",
+   "start": 29.78,
+   "end": 30
+  },
+  {
+   "word": " event,",
+   "start": 30,
+   "end": 30.58
+  },
+  {
+   "word": " a",
+   "start": 30.58,
+   "end": 30.66
+  },
+  {
+   "word": " once",
+   "start": 30.66,
+   "end": 30.9
+  },
+  {
+   "word": "-in",
+   "start": 30.9,
+   "end": 31.02
+  },
+  {
+   "word": "-a",
+   "start": 31.02,
+   "end": 31.14
+  },
+  {
+   "word": "-lifetime",
+   "start": 31.14,
+   "end": 31.6
+  },
+  {
+   "word": " opportunity,",
+   "start": 31.84,
+   "end": 32.58
+  },
+  {
+   "word": " ask",
+   "start": 32.58,
+   "end": 32.86
+  },
+  {
+   "word": " one",
+   "start": 32.86,
+   "end": 33.12
+  },
+  {
+   "word": " simple",
+   "start": 33.12,
+   "end": 33.46
+  },
+  {
+   "word": " question,",
+   "start": 33.46,
+   "end": 34.34
+  },
+  {
+   "word": " who",
+   "start": 34.34,
+   "end": 34.5
+  },
+  {
+   "word": " keeps",
+   "start": 34.5,
+   "end": 34.78
+  },
+  {
+   "word": " the",
+   "start": 34.78,
+   "end": 35.02
+  },
+  {
+   "word": " tickets",
+   "start": 35.02,
+   "end": 35.34
+  },
+  {
+   "word": " because",
+   "start": 35.34,
+   "end": 35.88
+  },
+  {
+   "word": " the",
+   "start": 35.88,
+   "end": 36.12
+  },
+  {
+   "word": " party",
+   "start": 36.12,
+   "end": 36.36
+  },
+  {
+   "word": " is",
+   "start": 36.36,
+   "end": 36.66
+  },
+  {
+   "word": " fun.",
+   "start": 36.66,
+   "end": 37.48
+  },
+  {
+   "word": " Just",
+   "start": 37.56,
+   "end": 37.84
+  },
+  {
+   "word": " check",
+   "start": 37.84,
+   "end": 38.12
+  },
+  {
+   "word": " whose",
+   "start": 38.12,
+   "end": 38.32
+  },
+  {
+   "word": " name",
+   "start": 38.32,
+   "end": 38.6
+  },
+  {
+   "word": " is",
+   "start": 38.6,
+   "end": 38.82
+  },
+  {
+   "word": " on",
+   "start": 38.82,
+   "end": 38.98
+  },
+  {
+   "word": " the",
+   "start": 38.98,
+   "end": 39.2
+  },
+  {
+   "word": " receipt.",
+   "start": 39.2,
+   "end": 42.3
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+  "section": "Section 7: Who Decides Is Not Who Pays",
+  "video": "Why Countries Fight to Host the World Cup (and Lose Billions)",
+  "status": "final section voice generated (draft-script timing pass)",
+  "voice": "am_eric",
+  "voiceName": "David23",
+  "speed": 0.81,
+  "lang": "en-us",
+  "tool": "npx hyperframes@0.6.76 tts",
+  "input": "tts-inputs/section-07-who-decides-who-pays-tts.txt",
+  "output": "scratch-audio/section-07-who-decides-who-pays-david23-am_eric-0.81.mp3",
+  "durationSeconds": 66.987,
+  "generatedAt": "2026-07-02",
+  "pacingStyle": "approved spacious style (heavy ... holds, . . staccato resets) per voiceover skill memory",
+  "speedNote": "0.81 locked for this video (owner A/B on Section 1: 0.79 -> 0.80 -> 0.81)",
+  "divergenceFromScript": "none in wording; [beat]/[slower]/[deadpan] markup stripped; pacing shaped with punctuation only",
+  "copies": [],
+  "notes": "One MP3 preview kept per section rule. thesis 'the people who decide / are not the people who pay' split across lines with a stacked hold; 'not spending any.' after a double hold; 'Build nothing. / Still pay.' as the spaced pre-payoff"
+}
