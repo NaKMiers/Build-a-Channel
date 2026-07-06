@@ -284,6 +284,92 @@ in ATTRIBUTION; bokeh/curtain/soft textures tolerate preview res, detailed textu
 Promote to shared memory: no; visual-implement sourcing behavior (consistent with prior
 entries - this adds the title-keyword trap + plan-sync-note pattern).
 
+### 2026-07-06 - World Cup S2 sourcing: brand-free-calculator trap, WebP-only rawpixel, Pillow is the box's image tool
+
+Classification: `Operational lesson`
+
+Context:
+Sourced 5 fresh bases for `6-why-countries-fight-to-host-the-world-cup` Section 2 (reframe):
+resort pool, calculator+paper, empty showroom floor, marble checkout counter, empty wallet.
+Copied 3 library poses (skeptical_side_eye already present from S1), wrote 4 generate prompts
+(supercar, blank price tag, TAXPAYER credit card, NEW pool-float WIT pose - no image tool
+connected, so all `prompt-ready / awaiting generation`). Trophy-gold-parody is a reuse from S1
+(shared awaiting-generation status - one PNG serves all sections, do not re-prompt).
+
+Lessons (apply next time):
+- BRAND-FREE CALCULATOR + WHITE PAPER is nearly unfindable license-safe: almost every stock
+  calculator has a brand on the body (Canon, Sharp), or hands, or currency with a portrait
+  (£10 Queen, $100 Franklin), or a branded laptop. Accept the cleanest brand-free calculator
+  and let render supply the white paper (CSS) + display overlay; sync a plan sourcing note.
+- EMPTY SHOWROOM/SHOWFLOOR is hard (same family as the S6 podium trap): "showroom" queries
+  return cars or brand logos. A glossy pale LOBBY floor with daylight windows (rawpixel CC0)
+  substitutes cleanly for a "car showroom floor" once the generated red car is composited on it.
+- MARBLE COUNTER: the most counter-like real photo (marble + bright bokeh bg) had a BLURRED
+  PERSON in the background - blurred still = person, reject. A clean white-gray marble flat-lay
+  cropped to its prop-free region (upscaled) is safer; render fakes the boutique backdrop.
+  Marble flat-lays usually carry props (notebook/pen/roses/berries) on one side - crop them out.
+- RAWPIXEL editor_1024 SERVES WebP even when the URL ends `.jpg` and even with an
+  `Accept: image/jpeg` header. The bytes are WebP; a `.jpg` filename would be mislabeled.
+- TOOLING ON THIS BOX (Linux, not the old git-bash box): NO ffmpeg, NO ImageMagick (`convert`),
+  NO cwebp/dwebp, NO node `sharp`/`jimp`. But `python3` has Pillow (PIL 12.x). Use Pillow to
+  transcode WebP->JPEG and to crop/upscale (LANCZOS) so delivered bases match the plan's `.jpg`
+  filenames and 16:9 framing. This replaces the ffmpeg/convert habits in older entries.
+- PORTRAIT pool base: crop to 16:9 AND trim the edge that holds an incidental sunbather; always
+  Read-verify the CROPPED result, because a crop can pull a person into frame that the full
+  image hid at the margin.
+- StockSnap only exposes the 960w preview via Openverse `url`; guessed full-res CDN paths 404.
+  Fine for low-frequency surfaces (marble/bokeh) with an upscale; flag softness.
+
+Promote to shared memory: no; visual-implement sourcing/tooling behavior (adds the
+brand-free-calculator trap, the blurred-person-in-bokeh reject, and the Pillow-is-the-tool note
+for Linux boxes to the existing sourcing entries).
+
+### 2026-07-06 - World Cup S4-S9 in one pass: parallel per-section browse subagents + Openverse-blocked fallbacks
+
+Classification: `Operational lesson`
+
+Context:
+Ran visual-implement for SIX sections at once (S4-S9 of the World Cup video): 50 generate prompts (42
+objects + 8 new WIT poses), 10 new library poses copied, and 40 browse bases. The judgment-heavy work
+(prompt writing, pose copying, manifest + shared-registry bookkeeping) was kept central for consistency;
+the slow, parallelizable browse sourcing was fanned out to 6 background subagents (one per section), each
+told to source license-safe + Read-verify + Pillow-crop to 1920x1080 and RETURN an attribution table
+(not touch ATTRIBUTION.md/manifest, to avoid concurrent-write races). Main agent consolidated. This
+turned ~40 sequential sourcing jobs into 6 parallel ones and worked cleanly (38/40 sourced, 1 fallback,
+1 shared with S9 already done).
+
+Lessons (apply next time):
+- PARALLEL SUBAGENT SOURCING SCALES: for a multi-section implement, spawn one browse subagent per section
+  with the section plan path + filename list + the sourcing rules; have them download to `assets/` (distinct
+  filenames never collide) but RETURN attribution as text for the main agent to write centrally. Keep
+  prompt-writing/pose-copying/manifest with the main agent so shared-registry reuse (trophy, receipt,
+  gold-safe, drain-grate, etc.) stays consistent and is never re-prompted.
+- OPENVERSE WAS CLOUDFLARE-BLOCKED all session for curl/node/direct fetch (403/"Just a moment"/429).
+  Working fallbacks this box: Wikimedia Commons (imageinfo API with a bot UA; CDN with a browser UA),
+  rawpixel `editor_1024` (WebP -> Pillow JPEG), Flickr CC, StockSnap CC0. One subagent got Openverse only
+  via the WebFetch TOOL (returns Flickr/rawpixel CDN URLs that then curl fine). Commons rejects
+  non-whitelisted thumbnail widths with HTTP 400 - use 1024/1280/1920/2560 for `iiurlwidth`.
+- "EMPTY + BRANDLESS + PEOPLE-FREE VENUE" IS OFTEN UNSOURCEABLE: stadium exteriors/seats, red carpet,
+  voting booth, money-counting machine, and a "dark table under a warm lamp pool" all had NO clean
+  license-safe option. Resolve by accepting the closest real base and letting render/CSS carry the missing
+  specific: draw the CSS center circle on plain grass; supply spreadsheet context around a bare calculator;
+  use scattered Euro notes for a counting machine; stanchions+ropes for a red carpet. When even the closest
+  base fails (blank glowing TV wall), switch to a documented GENERATE FALLBACK (full-frame background) or a
+  CSS build - never ship a branded/person shot. Record every substitution in BOTH the manifest sourcing
+  notes and ATTRIBUTION so render knows what to compensate for.
+- CREDIT LOAD IS HEAVY WHEN COMMONS-DOMINATED: with Openverse down, most bases came from Commons and are
+  CC-BY/CC-BY-SA (several ShareAlike). Maintain a single "Upload credit checklist" block in ATTRIBUTION so
+  the `upload` step has one list; CC0/PD (rawpixel/StockSnap/PD) need none.
+- SEASONAL/CONTENT CAVEATS: the only license-safe fireplace mantel was Christmas-decorated - flag such
+  content caveats for the render grade/crop or an owner replace, don't silently ship.
+
+Apply next time: fan out browse by section with return-only attribution; expect Openverse blocks and lead
+with Commons/rawpixel/StockSnap; budget substitutions for empty-branded-venue subjects and push the
+missing specific to render/CSS; keep one upload-credit list.
+
+Promote to shared memory: no; visual-implement orchestration + sourcing behavior (extends the prior
+sourcing entries with the parallel-subagent pattern and the Openverse-blocked fallback chain).
+
 ## Feedback Entry Template
 
 ```markdown

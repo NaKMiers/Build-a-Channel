@@ -60,6 +60,10 @@ Status: `draft visual plan for approval`
   - *Base (full-bleed):* bright tropical resort pool - turquoise water, empty white
     loungers, palm trees, clear sunny sky; zero people, zero brand signage; the sunniest
     frame of the section (~0.85 brightness, no scrim).
+    - *Sourcing note (2026-07-06):* sourced `resort-pool-1.jpg` (CC0, ritanjeri) - a real
+      sunny resort pool; the portrait original was cropped to 16:9 and its left edge trimmed
+      to drop one distant sunbather, so the frame is people-free. The visible pool water sits
+      center-right (not bottom-left) - WIT floats on the water wherever it reads best.
   - *Chip 1 (arrive@2.82):* small rounded postcard-style card, white with a thin teal
     border: drawn SVG airplane-landing icon over a small suitcase + handwritten
     `tourists!`.
@@ -122,6 +126,11 @@ Status: `draft visual plan for approval`
 - **Elements:**
   - *Base (full-bleed):* large desk calculator resting on white paper sheets, bright
     neutral daylight (~0.8), no hands, no brand text on the calculator body.
+    - *Sourcing note (2026-07-06):* license-safe brand-free calculator stock with white
+      paper was not findable (nearly all had a brand - Canon/Sharp - or hands/currency).
+      Sourced `calculator-desk-1.jpg` (CC0) = a clean brand-free calculator, no hands, no
+      people, on a plain surface. Render supplies the white paper sheets (CSS) that carry
+      `INVESTMENT?` / red X / `PURCHASE` and overlays the green->red readout on the display.
   - *Calculator display (CSS overlay on the photo's display):* phase A - green digits
     flicker, then snap to a flat RED negative readout (a generic minus + digit string,
     deliberately not readable as any specific figure - illustrative, not a fact claim)
@@ -233,6 +242,11 @@ Status: `draft visual plan for approval`
 - **Elements:**
   - *Base (full-bleed):* white-gray marble counter with soft warm boutique light and
     blurred shelving behind; no brands, no people. The purchase gets rung up here.
+    - *Sourcing note (2026-07-06):* the best real counter-with-bokeh candidate had a
+      blurred person in the background (rejected, no-people rule). Sourced
+      `marble-counter-1.jpg` (CC0, StockSnap) = clean white-gray Carrara marble cropped from
+      a flat-lay's prop-free region and upscaled to 1920x1080 (soft, tolerated). Render adds
+      the soft warm blurred boutique backdrop behind the objects.
   - *Supercar:* reused file, smaller, nose angled right toward the trophy - the old
     status object making room for the new one.
   - *Trophy:* `trophy-gold-parody.png` standing tall right, warm gold, small dark plinth
@@ -308,6 +322,10 @@ Status: `draft visual plan for approval`
   - *Base (full-bleed):* open empty brown leather wallet, card slots visibly empty, on
     warm wood in soft window light (~0.75) - the answer to "who pays" sitting quietly
     under the whole scene.
+    - *Sourcing note (2026-07-06):* sourced `wallet-empty-1.jpg` (CC0) = a clean open empty
+      brown wallet with visibly empty card slots, no brand, isolated on a white studio
+      background. Render places it on warm wood (grade to ~0.75, or reuse `desk-darkwood-1.jpg`
+      as the table surface) so it reads as "wallet on a wooden table" per the composition.
   - *Trophy:* reused hero, graded slightly cooler than 2.4 (the shine is wearing off).
   - *Price tag:* reused `price-tag-blank.png`, CSS text in small neat handwriting:
     `PRESTIGE - price on request` - the luxury-boutique dodge applied to national pride.

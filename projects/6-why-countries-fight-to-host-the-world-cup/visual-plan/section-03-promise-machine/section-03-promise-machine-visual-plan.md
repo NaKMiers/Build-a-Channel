@@ -65,6 +65,10 @@ Status: `draft visual plan for approval`
   - *Base (full-bleed):* vintage fairground / carnival midway at dusk - warm bulb strings,
     striped booth edges blurred in the background, empty of people; bright and inviting so
     the machine reads as an attraction, not a horror prop.
+    - *Sourcing note (2026-07-06):* people-free carnival midways were not findable license-safe
+      (all had crowds). Sourced `fairground-lights-1.jpg` (CC BY, Capt' Gorgeous) and cropped to
+      the vibrant people-free left booth (glowing bulb strings, dusk sky), upscaled. Render
+      blurs it as the background so the promise machine + WIT read on top.
   - *Promise machine (center-right, ~30% width):* a bespoke brass fortune-teller-style
     cabinet: glass dome on top with gold sparkles swirling inside, ornate scrollwork
     sides, a big side crank (right side), a coin slot, and a wide front output slot.
@@ -258,6 +262,10 @@ Status: `draft visual plan for approval`
 - **Elements:**
   - *Base (full-bleed):* bright empty airport arrivals hall - the place half a million
     visitors were supposed to walk through; its emptiness is the quiet joke.
+    - *Sourcing note (2026-07-06):* sourced `airport-arrivals-1.jpg` (CC0, Matt Moloney) - a
+      bright, empty gate lounge (no people). Distant Delta airline tails are visible through the
+      far window; render blurs/darkens the window band. The empty foreground seating carries the
+      "nobody came" emptiness.
   - *Giant gold balloon (center-right, ~38% width):* the same gold balloon file scaled
     giant; inflates from 55% to full between expect@24.00 and visitors@26.32. CSS label
     in bold handwritten black: `ALMOST 500,000 VISITORS`.
