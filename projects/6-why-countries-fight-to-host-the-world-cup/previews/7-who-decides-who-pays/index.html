@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Section 07 Who Decides Is Not Who Pays - Why Countries Fight to Host the World Cup</title>
+  <style>
+    @font-face { font-family:"PatrickHandLocal"; src:url("./assets/fonts/patrick-hand-latin.woff2") format("woff2"); font-weight:400; font-style:normal; font-display:block; }
+    :root { --ink:#1c1712; --red:#e0392b; --cream:#fff7d8; --teal:#0f5e63; --green:#1d8a3e; --gold:#c9a13f; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:#07070a; color:#fff; overflow:hidden; }
+    #Section07WhoDecidesWhoPays { position:relative; width:1920px; height:1080px; overflow:hidden; background:#07070a; font-family:"PatrickHandLocal"; }
+    .scene { position:absolute; inset:0; width:100%; height:100%; z-index:1; }
+    .photo { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+    .b-rope   { filter:saturate(1.05) contrast(1.03) brightness(0.85); }
+    .b-carpet { filter:saturate(1.08) contrast(1.02) brightness(0.82); }
+    .b-atlas  { filter:saturate(1.05) contrast(1.02) brightness(0.96); }
+    .b-calc   { filter:saturate(0.88) contrast(1.0) brightness(0.9) sepia(0.12); }
+    .b-booth  { filter:saturate(1.0) contrast(1.02) brightness(0.82); }
+    .b-seats  { filter:saturate(1.05) contrast(1.02) brightness(0.78); }
+    .b-palms  { filter:saturate(1.1) contrast(1.02) brightness(0.92); }
+    .b-crt    { filter:saturate(1.0) contrast(1.02) brightness(0.9); }
+    .b-hall   { filter:saturate(1.05) contrast(1.02) brightness(0.84); }
+    .vig { position:absolute; inset:0; z-index:2; background:radial-gradient(ellipse 86% 86% at 50% 48%, rgba(4,5,10,0) 58%, rgba(4,5,10,0.30) 100%); }
+
+    .wit { position:absolute; object-fit:contain; z-index:8; filter:drop-shadow(14px 16px 0 rgba(0,0,0,0.3)); transform-origin:center center; }
+    .mirror { position:absolute; z-index:8; }
+    .mirror img { width:100%; height:auto; transform:scaleX(-1); filter:drop-shadow(-14px 16px 0 rgba(0,0,0,0.3)); }
+    .prop { position:absolute; object-fit:contain; z-index:6; }
+    .hand { position:absolute; z-index:10; font-family:"PatrickHandLocal"; color:#fff; text-shadow:3px 4px 0 rgba(0,0,0,0.55); line-height:1.05; white-space:nowrap; }
+    .cue  { opacity:0; }
+    .chip { background:var(--cream); border:3px solid #2a2118; border-radius:10px; padding:2px 16px; color:var(--ink); text-shadow:none; box-shadow:0 8px 18px rgba(0,0,0,0.4); }
+    .stampt { border-radius:14px; background:rgba(255,247,216,0.92); text-shadow:none; }
+
+    /* 7.1 */
+    .s71-q { position:absolute; z-index:10; left:170px; top:112px; font-size:70px; color:#fff; text-shadow:3px 4px 0 rgba(0,0,0,0.7), -2px -2px 0 rgba(0,0,0,0.35); transform:rotate(-2deg); }
+    .s71-q b { color:#ffd24a; font-weight:400; }
+    .s71-banner { position:absolute; z-index:11; left:490px; top:30px; width:940px; background:var(--teal); border:4px solid #08383c; border-radius:10px; padding:8px 0 12px; text-align:center; font-size:48px; color:var(--cream); letter-spacing:2px; box-shadow:0 12px 26px rgba(0,0,0,0.5); }
+    .s71-banner::before, .s71-banner::after { content:""; position:absolute; top:14px; width:0; height:0; border:20px solid #0a4a4e; }
+    .s71-banner::before { left:-36px; border-left-color:transparent; border-top-color:transparent; }
+    .s71-banner::after { right:-36px; border-right-color:transparent; border-top-color:transparent; }
+    .s71-panel { position:absolute; z-index:6; background:#f6efdd; border-radius:6px; box-shadow:0 14px 30px rgba(0,0,0,0.45); clip-path:polygon(1.5% 0.8%, 23% 0%, 48% 1.4%, 74% 0.3%, 99% 1.2%, 100% 26%, 98.6% 52%, 100% 77%, 98.8% 99%, 74% 98.4%, 49% 100%, 24% 98.8%, 0.8% 99.4%, 0% 74%, 1.2% 50%, 0% 25%); }
+    .s71-panel.pl { left:38px; top:238px; width:500px; height:540px; transform:rotate(-2deg); }
+    .s71-panel.pr { left:1382px; top:216px; width:500px; height:626px; transform:rotate(2deg); }
+    .s71-tag { position:absolute; z-index:10; font-size:44px; color:#fff; text-shadow:none; padding:2px 22px; box-shadow:0 8px 18px rgba(0,0,0,0.45); clip-path:polygon(2% 6%, 30% 0%, 68% 4%, 98% 0%, 100% 50%, 97% 96%, 66% 100%, 32% 95%, 0% 100%, 3% 48%); }
+    .s71-tagd { left:120px; top:206px; background:var(--green); transform:rotate(-3deg); }
+    .s71-tagp { left:1560px; top:186px; background:var(--red); transform:rotate(2deg); }
+
+    /* 7.2 */
+    .s72-tag { position:absolute; z-index:10; left:330px; top:800px; background:#3a2c0a; color:#ffd98c; border:3px solid #ffd98c; border-radius:10px; padding:2px 18px; font-size:40px; text-shadow:none; transform:rotate(-2deg); box-shadow:0 8px 18px rgba(0,0,0,0.45); }
+    .s72-pol { position:absolute; z-index:10; width:272px; background:#fdfdf8; border:2px solid #d8d2be; border-radius:4px; padding:14px 14px 40px; box-shadow:0 12px 26px rgba(0,0,0,0.5); }
+    .s72-pol .ph { width:240px; height:210px; overflow:hidden; background:#c9b795; position:relative; }
+    .s72-pol .ph img { position:absolute; width:420px; }
+    .s72-flash { position:absolute; z-index:12; width:280px; height:280px; border-radius:50%; background:radial-gradient(circle, rgba(255,255,255,0.95), rgba(255,255,255,0) 70%); }
+    .s72-bub { position:absolute; z-index:11; left:960px; top:110px; width:440px; background:#fff; border:4px solid #2a2118; border-radius:22px; padding:12px 20px; color:var(--ink); font-size:42px; line-height:1.1; text-align:center; text-shadow:none; box-shadow:0 12px 26px rgba(0,0,0,0.45); }
+    .s72-bub::after { content:""; position:absolute; left:22px; bottom:-32px; width:0; height:0; border:18px solid transparent; border-top:32px solid #fff; transform:rotate(38deg); }
+
+    /* 7.3 */
+    .s73-arrow { position:absolute; z-index:9; left:1058px; top:388px; width:11px; height:132px; background:var(--red); border-radius:5px; transform:rotate(32deg); transform-origin:top center; box-shadow:2px 3px 0 rgba(0,0,0,0.25); }
+    .s73-arrow i { position:absolute; left:-13px; bottom:-22px; width:0; height:0; border-left:18px solid transparent; border-right:18px solid transparent; border-top:32px solid var(--red); }
+    .s73-here { position:absolute; z-index:10; left:1090px; top:318px; background:rgba(255,255,255,0.88); border-radius:10px; padding:2px 16px; font-size:48px; color:var(--red); text-shadow:none; transform:rotate(-2deg); box-shadow:0 6px 14px rgba(0,0,0,0.25); }
+    .s73-envc { position:absolute; z-index:7; left:1110px; top:540px; width:500px; }
+    .s73-envc img { width:100%; transform:rotate(3deg); filter:drop-shadow(0 12px 22px rgba(0,0,0,0.35)); }
+    .s73-stamp { position:absolute; z-index:9; left:1210px; top:596px; font-size:56px; color:var(--red); border:6px solid var(--red); background:rgba(255,255,255,0.85); border-radius:10px; padding:0 18px; transform:rotate(-8deg); text-shadow:none; }
+    .s73-date { position:absolute; z-index:10; left:1150px; top:800px; background:rgba(255,255,255,0.9); border-radius:10px; padding:2px 16px; font-size:42px; color:var(--ink); text-shadow:none; transform:rotate(-1deg); box-shadow:0 6px 14px rgba(0,0,0,0.25); }
+    .s73-date b { color:var(--red); font-weight:400; }
+    .s73-trio2 { position:absolute; z-index:6; left:1620px; top:430px; width:300px; filter:grayscale(1) brightness(1.05) drop-shadow(0 8px 16px rgba(0,0,0,0.3)); }
+    .s73-gone { position:absolute; z-index:10; left:1494px; top:396px; background:rgba(240,240,240,0.92); border-radius:8px; padding:0 14px; font-size:36px; color:#6b6154; text-shadow:none; transform:rotate(-3deg); }
+
+    /* 7.4 */
+    .s74-sheet { position:absolute; inset:0; z-index:2; background:
+      repeating-linear-gradient(0deg, rgba(80,110,150,0.10) 0 2px, rgba(0,0,0,0) 2px 64px),
+      repeating-linear-gradient(90deg, rgba(80,110,150,0.08) 0 2px, rgba(0,0,0,0) 2px 150px),
+      rgba(252,246,224,0.12); }
+    .s74-form { position:absolute; z-index:6; left:115px; top:173px; width:730px; height:690px; background:#fbf4dd; border:4px solid #2a2118; border-radius:14px; box-shadow:0 16px 34px rgba(0,0,0,0.45); transform:rotate(-1deg); padding:18px 28px; color:var(--ink); }
+    .s74-form .fh { font-size:50px; letter-spacing:2px; border-bottom:4px solid #2a2118; padding-bottom:8px; }
+    .s74-row { margin-top:16px; font-size:30px; color:#6b6154; border-bottom:2px solid #d8ccae; padding-bottom:10px; display:flex; justify-content:space-between; }
+    .s74-row i { font-style:normal; color:#9a8f7a; }
+    .s74-boxlbl { margin-top:18px; font-size:32px; color:#6b6154; }
+    .s74-box { position:absolute; left:290px; top:290px; width:330px; height:140px; background:#fffef7; border:4px solid #2a2118; border-radius:8px; box-shadow:inset 0 0 0 6px rgba(255,210,74,0.65); }
+    .s74-dash { position:absolute; z-index:8; left:393px; top:451px; width:354px; height:164px; border:6px dashed var(--red); border-radius:12px; }
+    .s74-fit { position:absolute; z-index:10; left:810px; top:470px; font-size:52px; color:var(--red); border:6px solid var(--red); background:rgba(255,247,216,0.92); border-radius:12px; padding:0 20px; transform:rotate(3deg); text-shadow:none; }
+    .s74-num { position:absolute; z-index:9; left:425px; top:505px; font-size:46px; color:var(--red); transform:rotate(-3deg); text-shadow:none; font-family:"Courier New",monospace; font-weight:bold; }
+    .s74-num i { font-style:normal; font-size:40px; }
+    .s74-foot { position:absolute; z-index:9; left:190px; top:788px; font-size:34px; color:var(--ink); text-shadow:none; transform:rotate(-1deg); }
+    .s74-foot b { color:var(--red); font-weight:400; }
+    .s74-gear { position:absolute; z-index:10; left:760px; top:56px; background:var(--cream); border:4px solid #2a2118; border-radius:12px; padding:4px 22px 4px 96px; font-size:46px; color:var(--ink); text-shadow:none; transform:rotate(-2deg); box-shadow:0 10px 22px rgba(0,0,0,0.45); }
+    .s74-gear i, .s74-gear i::before { position:absolute; border:6px solid #5a4a2a; border-radius:50%; }
+    .s74-gear i { left:18px; top:14px; width:34px; height:34px; }
+    .s74-gear i::before { content:""; left:26px; top:12px; width:22px; height:22px; }
+    .s74-gear em { position:absolute; left:52px; top:38px; width:26px; height:26px; border:6px solid #5a4a2a; border-radius:50%; }
+
+    /* 7.5 */
+    .s75-no { position:absolute; z-index:10; left:846px; top:326px; font-size:104px; color:var(--red); border:9px solid var(--red); background:rgba(255,247,216,0.94); border-radius:16px; padding:0 30px; transform:rotate(-6deg); text-shadow:none; }
+    .s75-bal { position:absolute; z-index:9; width:172px; height:118px; background:#fdfdf8; border:3px solid #2a2118; border-radius:8px; box-shadow:0 8px 18px rgba(0,0,0,0.4); text-align:center; font-size:56px; color:var(--red); line-height:110px; text-shadow:none; }
+    .s75-tally { position:absolute; z-index:9; left:1070px; top:660px; width:450px; font-size:42px; color:#fff; text-shadow:2px 3px 0 rgba(0,0,0,0.6); line-height:1.25; }
+    .s75-tally .olyw { position:relative; display:inline-block; }
+    .s75-tally .olyu { position:absolute; left:0; right:0; bottom:-2px; height:5px; background:var(--red); border-radius:3px; }
+    .s75-least { position:absolute; z-index:10; left:1078px; top:622px; font-size:30px; color:#ffd98c; transform:rotate(-5deg); text-shadow:2px 3px 0 rgba(0,0,0,0.6); }
+
+    /* 7.6 */
+    .s76-meh { position:absolute; z-index:9; left:792px; top:498px; font-size:30px; color:#6b5b3a; transform:rotate(-16deg); text-shadow:none; }
+    .s76-app { position:absolute; z-index:7; left:1128px; top:468px; font-size:34px; color:var(--green); transform:rotate(14deg); text-shadow:none; }
+    .s76-glow { position:absolute; z-index:8; left:1120px; top:458px; width:150px; height:70px; border-radius:50%; background:radial-gradient(circle, rgba(126,232,155,0.7), rgba(126,232,155,0) 70%); }
+    .s76-plate { position:absolute; z-index:7; left:808px; top:664px; width:404px; text-align:center; font-size:42px; letter-spacing:3px; color:#3d2c10; text-shadow:0 1px 0 rgba(255,240,200,0.5); }
+    .s76-acc { position:absolute; z-index:9; left:830px; top:754px; background:rgba(50,45,35,0.82); border-radius:8px; padding:0 14px; font-size:30px; color:#d8d2c4; text-shadow:none; transform:rotate(-2deg); }
+    .s76-stub { position:absolute; z-index:9; left:290px; top:360px; width:270px; background:#fdfdf8; border:3px solid #2a2118; border-radius:10px; padding:10px 16px 14px; box-shadow:0 10px 22px rgba(0,0,0,0.4); border-left:3px dashed #8b8171; color:var(--ink); font-size:38px; text-shadow:none; transform:rotate(-3deg); text-align:center; }
+    .s76-one { display:block; font-size:84px; color:var(--red); line-height:1.0; }
+    .s76-patch { position:absolute; z-index:7; left:775px; top:487px; width:252px; height:30px; background:linear-gradient(180deg,#ecdfb8,#e2cfa0); border-radius:16px; transform:rotate(13.3deg); transform-origin:left center; filter:blur(4px); }
+    .s76-needle { position:absolute; z-index:8; left:1005px; top:544px; width:255px; height:14px; background:#8e1f14; border-radius:7px; transform-origin:8px 7px; box-shadow:0 2px 3px rgba(0,0,0,0.35); }
+    .s76-hub { position:absolute; z-index:9; left:988px; top:530px; width:42px; height:42px; border-radius:50%; background:radial-gradient(circle at 38% 32%, #b98a3a, #6e4d18 78%); }
+    .s76-cf { position:absolute; z-index:11; width:18px; height:11px; border-radius:3px; }
+
+    /* 7.7 */
+    .s77-shelf { position:absolute; z-index:5; left:430px; top:796px; width:1080px; height:10px; background:rgba(255,255,255,0.78); border-radius:5px; box-shadow:0 10px 20px rgba(0,0,0,0.35); }
+    .s77-hedge { position:absolute; z-index:10; left:620px; top:250px; font-size:42px; color:#14202c; transform:rotate(-2deg); text-shadow:0 2px 0 rgba(255,255,255,0.55); }
+    .s77-jlabel { position:absolute; z-index:10; left:1010px; top:812px; font-size:38px; }
+    .s77-jlabel .law { position:relative; display:inline-block; }
+    .s77-jlabel .la2 { position:absolute; inset:0; color:var(--red); font-weight:400; transform:rotate(-1deg); }
+    .s77-tag { position:absolute; z-index:11; left:1430px; top:196px; background:#f3ead2; border:3px solid #2a2118; border-radius:8px; padding:2px 16px 2px 30px; font-size:34px; color:var(--ink); text-shadow:none; transform:rotate(6deg); box-shadow:0 8px 16px rgba(0,0,0,0.35); }
+    .s77-tag::before { content:""; position:absolute; left:8px; top:12px; width:14px; height:14px; border-radius:50%; background:var(--red); box-shadow:inset 0 -2px 0 rgba(0,0,0,0.3); }
+    .s77-banner { position:absolute; z-index:10; left:384px; top:96px; width:1150px; background:#f3ead2; border:4px solid #4a4030; border-radius:8px; padding:10px 0 14px; text-align:center; font-size:54px; color:#1d3a2e; text-shadow:none; transform:rotate(-1.5deg); box-shadow:0 14px 28px rgba(0,0,0,0.4); }
+    .s77-banner b { color:var(--red); font-weight:400; }
+    .s77-imp { position:absolute; z-index:9; width:46px; height:8px; background:#fff; border-radius:4px; box-shadow:0 2px 4px rgba(0,0,0,0.3); }
+
+    /* 7.8 */
+    .s78-h { position:absolute; z-index:7; left:740px; top:340px; font-size:40px; color:var(--red); letter-spacing:1px; text-shadow:none; }
+    .s78-big { position:absolute; z-index:7; left:724px; top:398px; width:630px; text-align:center; font-size:88px; color:#1a1430; line-height:1.0; text-shadow:none; }
+    .s78-star { position:absolute; z-index:8; left:650px; top:298px; width:174px; text-align:center; font-size:27px; color:#7a1f00; transform:rotate(-14deg); text-shadow:none; line-height:1.0; }
+    .s78-stick { position:absolute; z-index:9; left:700px; top:512px; background:#fff; border:6px solid var(--red); border-radius:10px; padding:2px 24px; font-size:58px; color:var(--red); transform:rotate(3deg); text-shadow:none; box-shadow:0 10px 24px rgba(0,0,0,0.45); white-space:nowrap; }
+    .s78-x { position:absolute; z-index:7; left:1347px; top:277px; width:42px; height:45px; background:#dcdcdc; border:2px solid #565656; border-radius:7px; transform-origin:center center; }
+    .s78-x::before, .s78-x::after { content:""; position:absolute; left:7px; top:19px; width:24px; height:5px; background:#3a3a3a; border-radius:2px; }
+    .s78-x::before { transform:rotate(45deg); } .s78-x::after { transform:rotate(-45deg); }
+    .s78-cnt { position:absolute; z-index:10; left:130px; top:540px; width:470px; background:#17130e; border:4px solid #4a4030; border-radius:14px; padding:12px 18px 16px; box-shadow:0 14px 30px rgba(0,0,0,0.55); }
+    .s78-cnt .t { font-family:"Courier New",monospace; font-weight:bold; font-size:29px; color:#f0e8d0; letter-spacing:1px; text-align:center; }
+    .s78-win { position:relative; height:74px; margin-top:8px; overflow:hidden; border:3px dashed #6b6154; border-radius:8px; background:#0c0a07; }
+    .s78-strip { position:absolute; left:0; right:0; top:0; }
+    .s78-strip div { height:74px; font-family:"Courier New",monospace; font-weight:bold; font-size:56px; color:#fff; line-height:72px; text-align:center; }
+    .s78-strip div:last-child { color:var(--red); }
+    .s78-ctag { position:absolute; z-index:10; left:150px; top:768px; font-family:"Courier New",monospace; font-weight:bold; font-size:30px; color:#f0e8d0; letter-spacing:1px; text-shadow:2px 3px 0 rgba(0,0,0,0.6); }
+
+    /* 7.9 */
+    .s79-cb { position:absolute; z-index:10; left:1540px; top:80px; background:#17130e; border:3px solid #4a4030; border-radius:10px; padding:6px 16px; font-family:"Courier New",monospace; font-weight:bold; font-size:30px; color:#f0e8d0; box-shadow:0 10px 22px rgba(0,0,0,0.5); }
+    .s79-cb b { color:var(--red); }
+    .s79-plate { position:absolute; z-index:9; left:1090px; top:720px; width:370px; background:#fbf4dd; border:4px solid #2a2118; border-radius:10px; padding:8px 18px 12px; transform:rotate(-3deg); box-shadow:0 12px 24px rgba(0,0,0,0.45); text-align:center; }
+    .s79-plate .l1 { font-size:44px; color:var(--ink); text-shadow:none; }
+    .s79-m { display:block; font-size:66px; color:var(--red); line-height:1.05; text-shadow:none; font-family:"Courier New",monospace; font-weight:bold; }
+    .s79-each { position:absolute; z-index:11; left:1330px; top:560px; font-size:98px; color:var(--red); border:10px solid var(--red); background:rgba(255,247,216,0.92); border-radius:16px; padding:0 26px; transform:rotate(-8deg); text-shadow:none; }
+    .s79-ticket { position:absolute; z-index:10; left:730px; top:324px; width:300px; }
+    .s79-tk { position:relative; width:250px; height:118px; margin:0 auto; background:#f3ead2; border:4px solid #2a2118; border-radius:12px; box-shadow:0 10px 22px rgba(0,0,0,0.4); }
+    .s79-tk::before { content:""; position:absolute; left:170px; top:0; bottom:0; border-left:3px dashed #8b8171; }
+    .s79-tk i { position:absolute; left:170px; width:26px; height:13px; background:#2a2118; border-radius:0 0 13px 13px; margin-left:-13px; }
+    .s79-tk i.b { bottom:0; border-radius:13px 13px 0 0; top:auto; }
+    .s79-tk span { position:absolute; left:14px; top:34px; font-size:30px; color:#6b6154; text-shadow:none; }
+    .s79-tkx1, .s79-tkx2 { position:absolute; left:22px; top:52px; width:230px; height:13px; background:var(--red); border-radius:6px; box-shadow:0 3px 6px rgba(0,0,0,0.3); }
+    .s79-tkx1 { transform:rotate(24deg); } .s79-tkx2 { transform:rotate(-24deg); }
+    .s79-tktag { margin-top:16px; text-align:center; background:rgba(255,255,255,0.9); border-radius:8px; padding:0 10px; font-size:30px; color:var(--ink); text-shadow:none; transform:rotate(-2deg); }
+    .s79-pay { position:absolute; z-index:10; left:720px; top:56px; width:780px; background:#fff7d8; border-radius:6px; box-shadow:0 14px 30px rgba(0,0,0,0.5); padding:10px 0 14px; text-align:center; clip-path:polygon(1% 4%, 26% 0%, 52% 3%, 75% 0.5%, 99% 3%, 100% 52%, 98.8% 96%, 74% 100%, 49% 97%, 23% 100%, 0% 96%, 1.4% 50%); }
+    .s79-pay .p1 { font-size:62px; color:var(--ink); text-shadow:none; line-height:1.05; }
+    .s79-pay .p2 { display:inline-block; font-size:74px; color:var(--red); text-shadow:none; line-height:1.05; transform:rotate(-2deg); }
+    .s79-rwrap { position:absolute; z-index:9; left:60px; top:860px; width:1800px; height:200px; overflow:hidden; }
+    .s79-rwrap img { position:absolute; left:475px; top:-760px; width:850px; transform:rotate(90deg); filter:drop-shadow(0 6px 12px rgba(0,0,0,0.3)); }
+
+    .prop,.wit,.mirror,.s71-q,.s71-banner,.s71-panel,.s71-tag,.s72-tag,.s72-pol,.s72-flash,.s72-bub,.s73-arrow,.s73-here,.s73-envc,.s73-stamp,.s73-date,.s73-trio2,.s73-gone,.s74-form,.s74-dash,.s74-fit,.s74-num,.s74-foot,.s74-gear,.s75-no,.s75-bal,.s75-tally,.s75-least,.s76-plate,.s76-acc,.s76-stub,.s76-patch,.s76-needle,.s76-hub,.s76-glow,.s76-cf,.s77-hedge,.s77-jlabel,.s77-tag,.s77-banner,.s77-imp,.s78-h,.s78-big,.s78-star,.s78-stick,.s78-x,.s78-cnt,.s78-strip,.s78-ctag,.s79-cb,.s79-plate,.s79-each,.s79-ticket,.s79-pay,.s79-rwrap { will-change:opacity, transform; }
+  </style>
+</head>
+<body>
+  <div id="Section07WhoDecidesWhoPays" data-composition-id="Section07WhoDecidesWhoPays" data-start="0" data-duration="66.987" data-width="1920" data-height="1080">
+
+    <!-- SCENE 7.1  0.00-8.78  the question + the thesis split: DECIDES vs PAYS -->
+    <div id="scene-71" class="scene clip" data-start="0" data-duration="8.78" data-track-index="1" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-rope" src="./assets/rope-tug-frayed-1.jpg" alt="">
+      <div class="vig"></div>
+      <div class="s71-panel pl cue s71-plc">
+        <img class="prop" style="left:35px; bottom:8px; width:430px; filter:drop-shadow(0 8px 16px rgba(0,0,0,0.3));" src="./assets/podium-suits-trio.png" alt="">
+      </div>
+      <div class="s71-tag s71-tagd cue">DECIDES</div>
+      <div class="s71-panel pr cue s71-prc" data-layout-allow-overflow="" style="overflow:hidden;">
+        <img class="prop" style="left:60px; top:60px; width:330px; transform:rotate(8deg); filter:drop-shadow(0 8px 16px rgba(0,0,0,0.3));" src="./assets/receipt-conveyor-machine.png" alt="">
+        <img class="prop s71-rec" style="left:150px; top:214px; width:250px; transform:rotate(4deg); z-index:5;" src="./assets/receipt-endless-roll.png" alt="">
+        <img class="prop cue s71-t1" style="left:40px; top:370px; width:150px; z-index:6;" src="./assets/wit-tiny-taxpayer-catching-receipt.png" alt="">
+        <img class="prop cue s71-t2" style="left:190px; top:355px; width:165px; z-index:6; transform:rotate(2deg);" src="./assets/wit-tiny-taxpayer-catching-receipt.png" alt="">
+        <img class="prop cue s71-t3" style="left:335px; top:385px; width:140px; z-index:6; transform:rotate(-3deg);" src="./assets/wit-tiny-taxpayer-catching-receipt.png" alt="">
+      </div>
+      <div class="s71-tag s71-tagp cue">PAYS</div>
+      <img data-hf-studio-original-inline-translate="" data-hf-studio-original-translate="" data-hf-studio-path-offset="true" class="wit" data-layout-allow-overflow="" style="left:335px;top:75px;width:1250px;--hf-studio-offset-x:412px;--hf-studio-offset-y:-160px;translate:var(--hf-studio-offset-x, 0px) var(--hf-studio-offset-y, 0px)" src="./assets/poses/shrug_confused_flat_mouth.png" alt="">
+      <div class="s71-q cue">why still <b>FIGHT?</b></div>
+      <div class="s71-banner cue">THE OLDEST TRICK IN ECONOMICS</div>
+    </div>
+
+    <!-- SCENE 7.2  8.78-15.36  the politician's payoff: photo-op, polaroid brag wall, map speech -->
+    <div id="scene-72" class="scene clip" data-start="8.78" data-duration="6.58" data-track-index="2" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-carpet" src="./assets/red-carpet-stanchions-1.jpg" alt="">
+      <div class="vig"></div>
+      <img class="prop" style="left:190px; top:300px; width:960px; z-index:6; filter:drop-shadow(0 14px 26px rgba(0,0,0,0.4));" src="./assets/podium-suits-trio.png" alt="">
+      <img class="prop" style="left:860px; top:278px; width:300px; z-index:7; filter:drop-shadow(0 10px 20px rgba(0,0,0,0.4));" src="./assets/trophy-gold-parody.png" alt="">
+      <div class="s72-pol cue s72-p1" style="left:140px; top:64px; transform:rotate(-4deg);"><div class="ph"><img style="left:-90px; top:-30px;" src="./assets/podium-suits-trio.png" alt=""></div></div>
+      <div class="s72-pol cue s72-p2" style="left:430px; top:58px; transform:rotate(3deg);"><div class="ph"><img style="left:-160px; top:-10px;" src="./assets/podium-suits-trio.png" alt=""></div></div>
+      <div class="s72-pol cue s72-p3" style="left:720px; top:70px; transform:rotate(-2deg);"><div class="ph"><img style="left:-120px; top:-60px;" src="./assets/podium-suits-trio.png" alt=""></div></div>
+      <div class="s72-flash cue s72-f1" style="left:60px; top:20px;"></div>
+      <div class="s72-flash cue s72-f2" style="left:1420px; top:10px;"></div>
+      <div class="s72-bub cue">"WE PUT OUR COUNTRY<br>ON THE MAP"</div>
+      <div class="s72-tag cue">the good part - NOW</div>
+      <img class="wit" data-layout-allow-overflow="" style="left:920px; top:90px; width:1500px;" src="./assets/poses/unimpressed_smirk_closeup.png" alt="">
+    </div>
+
+    <!-- SCENE 7.3  15.36-21.04  the map gag + the delayed bill + the exit -->
+    <div id="scene-73" class="scene clip" data-start="15.36" data-duration="5.68" data-track-index="3" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-atlas" src="./assets/map-atlas-colored-1.jpg" alt="">
+      <div class="vig" style="background:radial-gradient(ellipse 86% 86% at 50% 48%, rgba(4,5,10,0) 62%, rgba(4,5,10,0.22) 100%);"></div>
+      <div class="s73-arrow cue"><i></i></div>
+      <div class="s73-here cue">you are here <b class="cue s73-alr" style="color:var(--red);">(already)</b></div>
+      <div class="s73-envc cue" data-layout-allow-overflow="">
+        <img src="./assets/bill-envelope-overdue.png" alt="">
+      </div>
+      <div class="s73-stamp cue">THE BILL</div>
+      <div class="s73-date cue" style="clip-path:inset(0 100% 0 0);">+5-10 YEARS <b>LATER</b></div>
+      <img class="s73-trio2 cue" data-layout-allow-overflow="" src="./assets/podium-suits-trio.png" alt="">
+      <div class="s73-gone cue">gone.</div>
+      <div class="mirror" data-layout-allow-overflow="" style="left:-60px; top:340px; width:900px;">
+        <img src="./assets/poses/pointing_at_globe_explaining.png" alt="">
+      </div>
+    </div>
+
+    <!-- SCENE 7.4  21.04-27.82  prestige does not fit the budget; the stamp invents a number -->
+    <div id="scene-74" class="scene clip" data-start="21.04" data-duration="6.78" data-track-index="4" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-calc" src="./assets/calculator-spreadsheet-1.jpg" alt="">
+      <div class="s74-sheet"></div>
+      <div class="vig"></div>
+      <div class="s74-form">
+        <div class="fh">CITY BUDGET</div>
+        <div class="s74-row"><span>roads</span><i>$ 214,000,000</i></div>
+        <div class="s74-row"><span>schools</span><i>$ 188,000,000</i></div>
+        <div class="s74-boxlbl">prestige:</div>
+        <div class="s74-box"></div>
+        <div class="s74-row" style="margin-top:190px;"><span>hospitals</span><i>$ 240,000,000</i></div>
+      </div>
+      <img id="s74-crown" class="prop cue" style="left:455px; top:300px; width:230px; z-index:7; filter:drop-shadow(0 8px 18px rgba(0,0,0,0.3));" src="./assets/prestige-crown-glow.png" alt="">
+      <div class="s74-dash cue"></div>
+      <div class="s74-fit cue">DOES NOT FIT</div>
+      <img id="s74-stamp" class="prop cue" data-layout-allow-overflow="" style="left:445px; top:250px; width:340px; z-index:9; filter:drop-shadow(0 12px 22px rgba(0,0,0,0.4));" src="./assets/rubber-stamp-red.png" alt="">
+      <div class="s74-num cue">+$9.9 BILLION<i>*</i></div>
+      <div class="s74-foot cue" style="clip-path:inset(0 100% 0 0);"><b>*</b>number invented</div>
+      <div class="s74-gear cue"><i></i><em></em>THE WHOLE MACHINE</div>
+      <img class="wit" data-layout-allow-overflow="" style="left:1003px; top:240px; width:1250px;" src="./assets/poses/mildly_surprised_hand_at_chin.png" alt="">
+    </div>
+
+    <!-- SCENE 7.5  27.82-34.94  the payers vote: NO x6 into the locked box -->
+    <div id="scene-75" class="scene clip" data-start="27.82" data-duration="7.12" data-track-index="5" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-booth" src="./assets/voting-booth-1.jpg" alt="">
+      <div class="vig"></div>
+      <img class="prop" style="left:940px; top:380px; width:700px; z-index:6; filter:drop-shadow(0 16px 30px rgba(0,0,0,0.45));" src="./assets/ballot-box-wood.png" alt="">
+      <div class="s75-tally cue" style="clip-path:inset(0 100% 0 0);">SINCE 2013:<br>6+ <span class="olyw">OLYMPIC<i class="olyu cue"></i></span> BIDS - DEAD</div>
+      <div class="s75-least cue">at least</div>
+      <div class="s75-bal cue s75-b1" style="left:900px; top:210px; transform:rotate(-10deg);">NO</div>
+      <div class="s75-bal cue s75-b2" style="left:1080px; top:140px; transform:rotate(-4deg);">NO</div>
+      <div class="s75-bal cue s75-b3" style="left:1260px; top:110px; transform:rotate(2deg);">NO</div>
+      <div class="s75-bal cue s75-b4" style="left:1440px; top:140px; transform:rotate(8deg);">NO</div>
+      <div class="s75-bal cue s75-b5" style="left:1610px; top:206px; transform:rotate(14deg);">NO</div>
+      <div class="s75-bal cue s75-b6" style="left:1275px; top:322px; transform:rotate(4deg);">NO</div>
+      <img class="wit" data-layout-allow-overflow="" style="left:-120px; top:40px; width:1300px;" src="./assets/poses/furious_shouting_anger_mark.png" alt="">
+      <div class="s75-no cue">NO.</div>
+    </div>
+
+    <!-- SCENE 7.6  34.94-40.32  2034: one bidder, approved by applause-o-meter -->
+    <div id="scene-76" class="scene clip" data-start="34.94" data-duration="5.38" data-track-index="6" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-seats" src="./assets/auditorium-seats-1.jpg" alt="">
+      <div class="vig"></div>
+      <img class="prop" style="left:560px; top:200px; width:900px; z-index:6; filter:drop-shadow(0 16px 30px rgba(0,0,0,0.5));" src="./assets/applause-meter-dial.png" alt="">
+      <div class="s76-meh">meh</div>
+      <div class="s76-app">APPROVED</div>
+      <div class="s76-glow cue"></div>
+      <div class="s76-patch cue"></div>
+      <div class="s76-needle cue"></div>
+      <div class="s76-hub cue"></div>
+      <div class="s76-plate cue">2034 WORLD CUP</div>
+      <div class="s76-acc cue">(by acclamation)</div>
+      <div class="s76-stub cue">BIDDERS:<span class="s76-one cue">1</span></div>
+      <div class="s76-cf cue s76-c1" style="left:900px; top:300px; background:#ffd24a;"></div>
+      <div class="s76-cf cue s76-c2" style="left:1060px; top:276px; background:#f27fb4;"></div>
+      <img class="wit" data-layout-allow-overflow="" style="left:910px; top:120px; width:1350px;" src="./assets/poses/deadpan_unimpressed_half_lidded.png" alt="">
+    </div>
+
+    <!-- SCENE 7.7  40.32-49.36  LA 1984: banned from spending, so it profited -->
+    <div id="scene-77" class="scene clip" data-start="40.32" data-duration="9.04" data-track-index="7" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-palms" src="./assets/palm-trees-sky-1.jpg" alt="">
+      <div class="vig" style="background:radial-gradient(ellipse 86% 86% at 50% 48%, rgba(4,5,10,0) 62%, rgba(4,5,10,0.22) 100%);"></div>
+      <div class="s77-shelf"></div>
+      <div class="s77-hedge cue">one of the only ones - ever</div>
+      <img id="s77-jar" class="prop cue" style="left:980px; top:98px; width:550px; z-index:6; filter:drop-shadow(0 14px 26px rgba(0,0,0,0.35));" src="./assets/surplus-jar-coins.png" alt="">
+      <div class="s77-jlabel chip cue"><span class="law">LA 1984<b class="la2 cue">LA 1984</b></span> - ORGANIZERS' PROFIT</div>
+      <div class="s77-tag cue">THE OLYMPICS</div>
+      <div class="s77-banner cue">PUBLIC VOTE: <b>NO TAXPAYER $$</b></div>
+      <img id="s77-wallet" class="prop cue" data-layout-allow-overflow="" style="left:480px; top:453px; width:600px; z-index:7; filter:drop-shadow(0 14px 26px rgba(0,0,0,0.4));" src="./assets/wallet-padlocked-city.png" alt="">
+      <div class="s77-imp cue s77-i1" style="left:430px; top:520px; transform:rotate(-30deg);"></div>
+      <div class="s77-imp cue s77-i2" style="left:1080px; top:500px; transform:rotate(30deg);"></div>
+      <img class="wit" data-layout-allow-overflow="" style="left:-130px; top:300px; width:900px;" src="./assets/poses/ok_hand_sign_content_closeup.png" alt="">
+    </div>
+
+    <!-- SCENE 7.8  49.36-58.68  the honest clickbait ad + the 2026 stadium counter -->
+    <div id="scene-78" class="scene clip" data-start="49.36" data-duration="9.32" data-track-index="8" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-crt" src="./assets/crt-monitor-retro-1.jpg" alt="">
+      <div class="vig"></div>
+      <img class="prop" style="left:590px; top:210px; width:900px; z-index:6; filter:drop-shadow(0 16px 34px rgba(0,0,0,0.55));" src="./assets/clickbait-ad-card.png" alt="">
+      <div class="s78-x"></div>
+      <div class="s78-h cue">ECONOMISTS HATE THIS</div>
+      <div class="s78-big cue">ONE WEIRD TRICK</div>
+      <div class="s78-star cue">100%<br>LEGAL</div>
+      <div class="s78-stick cue">NOT SPENDING ANY.</div>
+      <div class="s78-cnt cue">
+        <div class="t">NEW STADIUMS BUILT:</div>
+        <div class="s78-win"><div class="s78-strip"><div>14</div><div>9</div><div>5</div><div>2</div><div>0</div></div></div>
+      </div>
+      <div class="s78-ctag cue">USA - MEXICO - CANADA</div>
+      <img class="wit" data-layout-allow-overflow="" style="left:880px; top:-40px; width:1520px; transform:rotate(-5deg);" src="./assets/poses/smug_sly_smirk_leaning.png" alt="">
+    </div>
+
+    <!-- SCENE 7.9  58.68-66.987  build nothing, still pay: the payoff board -->
+    <div id="scene-79" class="scene clip" data-start="58.68" data-duration="8.307" data-track-index="9" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-hall" src="./assets/city-hall-columns-1.jpg" alt="">
+      <div class="vig"></div>
+      <div class="s79-cb">NEW STADIUMS: <b>0</b></div>
+      <img class="prop" style="left:1030px; top:510px; width:700px; z-index:6; filter:drop-shadow(0 16px 30px rgba(0,0,0,0.45));" src="./assets/bill-stack-invoices.png" alt="">
+      <div class="s79-plate">
+        <div class="l1 cue s79-us" style="clip-path:inset(0 100% 0 0);">US CITIES:</div>
+        <span class="s79-m cue">$100M+</span>
+      </div>
+      <div class="s79-each cue">EACH.</div>
+      <div class="s79-ticket cue">
+        <div class="s79-tk"><i></i><i class="b"></i><span>ADMIT 1</span><div class="s79-tkx1"></div><div class="s79-tkx2"></div></div>
+        <div class="s79-tktag">share of ticket money: <b style="color:var(--red); font-weight:400;">none</b></div>
+      </div>
+      <div class="s79-pay cue"><div class="p1">BUILD NOTHING.</div><span class="p2 cue">STILL PAY.</span></div>
+      <img class="wit" data-layout-allow-overflow="" style="left:-80px; top:10px; width:1240px;" src="./assets/poses/shrug_both_hands_up_smile.png" alt="">
+      <div class="s79-rwrap cue" data-layout-allow-overflow="">
+        <img src="./assets/receipt-endless-roll.png" alt="">
+      </div>
+    </div>
+
+    <audio id="voiceover-section-07" data-start="0" data-duration="66.987" data-track-index="30" data-volume="1" crossorigin="anonymous" src="./section-07-who-decides-who-pays.mp3"></audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js" integrity="sha384-sG0Hv1tP1lZCk9KQmrIbY/XNwi+OY84GQqhMscbnsoBFqAz8KNCil1kvfL3Hbbk2" crossorigin="anonymous"></script>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused:true, defaults:{ overwrite:"auto" } });
+      const reveal = (t, hideAt, at, fv, tv={}) => { const r={}; if("x"in fv)r.x=0; if("y"in fv)r.y=0; if("scale"in fv)r.scale=1; if("opacity"in fv)r.opacity=1; tl.set(t,fv,hideAt); tl.to(t,{...r,...tv},at); };
+      const show  = (t, hideAt, at) => { tl.set(t,{opacity:0},hideAt); tl.set(t,{opacity:1},at); };
+      const smash = (t, hideAt, at, fv={y:22,scale:1.3,opacity:0}) => reveal(t,hideAt,at,fv,{duration:0.2,ease:"back.out(1.9)"});
+      const pop   = (t, hideAt, at) => reveal(t,hideAt,at,{scale:0.4,opacity:0},{duration:0.22,ease:"back.out(2)"});
+      const wipe  = (t, hideAt, at, from, dur=0.5, ease="power1.inOut") => { tl.set(t,{clipPath:from},hideAt); tl.set(t,{opacity:1},at); tl.to(t,{clipPath:"inset(0% 0% 0% 0%)",duration:dur,ease:ease},at); };
+
+      /* SCENE 7.1  base+giant WIT from 0; question fight?@3.30; banner economics@5.10; DECIDES decide@6.66; PAYS+conveyor+tiny WITs pay@8.18 */
+      show("#scene-71 .s71-q", 0.04, 3.30);
+      wipe("#scene-71 .s71-banner", 0.04, 5.10, "inset(0% 50% 0% 50%)", 0.35);
+      reveal("#scene-71 .s71-plc", 0.04, 6.66, { x:-70, opacity:0 }, { duration:0.22, ease:"power2.out" });
+      show("#scene-71 .s71-tagd", 0.04, 6.66);
+      smash("#scene-71 .s71-prc", 0.04, 8.18, { scale:1.15, opacity:0 });
+      show("#scene-71 .s71-tagp", 0.04, 8.18);
+      tl.set("#scene-71 .s71-rec", { clipPath:"inset(0% 0% 88% 0%)" }, 0.04);
+      tl.to("#scene-71 .s71-rec", { clipPath:"inset(0% 0% 0% 0%)", duration:0.55, ease:"none" }, 8.20);
+      pop("#scene-71 .s71-t1", 0.04, 8.18);
+      pop("#scene-71 .s71-t2", 0.04, 8.32);
+      pop("#scene-71 .s71-t3", 0.04, 8.46);
+
+      /* SCENE 7.2  cut The@8.78 (base+trio+trophy+WIT static); tag now@10.44; polaroid+flash photos@11.08 / ceremony@12.22 / speech@14.42; bubble we@13.14 */
+      const flash = (sel, at) => { tl.set(sel, { opacity:0.9 }, at); tl.to(sel, { opacity:0, duration:0.25, ease:"power1.out" }, at+0.08); };
+      show("#scene-72 .s72-tag", 8.82, 10.44);
+      pop("#scene-72 .s72-p1", 8.82, 11.08); flash("#scene-72 .s72-f1", 11.08);
+      pop("#scene-72 .s72-p2", 8.82, 12.22); flash("#scene-72 .s72-f2", 12.22);
+      smash("#scene-72 .s72-bub", 8.82, 13.14, { scale:0.5, opacity:0, y:14 });
+      pop("#scene-72 .s72-p3", 8.82, 14.42); flash("#scene-72 .s72-f1", 14.42);
+
+      /* SCENE 7.3  cut The@15.36; arrow+you-are-here already@15.98; (already) map@16.54; envelope+stamp bill@17.36; date five@17.86->later@18.86; trio 19.36; gone.@20.68 */
+      show("#scene-73 .s73-arrow", 15.40, 15.98);
+      show("#scene-73 .s73-here", 15.40, 15.98);
+      smash("#scene-73 .s73-alr", 15.40, 16.54, { scale:1.4, opacity:0 });
+      reveal("#scene-73 .s73-envc", 15.40, 17.36, { x:420, opacity:0 }, { duration:0.24, ease:"power2.out" });
+      smash("#scene-73 .s73-stamp", 15.40, 17.44, { scale:1.6, opacity:0, rotation:-16 });
+      wipe("#scene-73 .s73-date", 15.40, 17.86, "inset(0% 100% 0% 0%)", 1.0, "none");
+      show("#scene-73 .s73-trio2", 15.40, 19.36);
+      tl.to("#scene-73 .s73-trio2", { x:400, duration:0.34, ease:"power1.in" }, 20.68);
+      show("#scene-73 .s73-gone", 15.40, 20.68);
+
+      /* SCENE 7.4  cut You@21.04; crown bobs; DOES NOT FIT budget@22.52; stamp in invents@24.10; slam number@24.60; footnote budget@25.68; gear tag machine@27.00 */
+      tl.set("#s74-crown", { opacity:1 }, 21.10);
+      tl.to("#s74-crown", { y:-12, duration:0.55, yoyo:true, repeat:1, ease:"sine.inOut" }, 21.30);
+      show("#scene-74 .s74-dash", 21.08, 22.52);
+      smash("#scene-74 .s74-fit", 21.08, 22.52, { scale:1.5, opacity:0, rotation:8 });
+      tl.to("#s74-crown", { x:-70, y:80, rotation:-24, opacity:0.4, duration:0.5, ease:"power1.in" }, 22.52);
+      tl.set("#s74-stamp", { opacity:1, x:520, y:-180, rotation:15 }, 24.10);
+      tl.to("#s74-stamp", { x:0, y:0, rotation:0, duration:0.42, ease:"power2.in" }, 24.10);
+      tl.to("#s74-stamp", { scale:0.94, duration:0.08, yoyo:true, repeat:1, ease:"power1.inOut" }, 24.58);
+      smash("#scene-74 .s74-num", 21.08, 24.60, { scale:1.6, opacity:0 });
+      tl.to("#s74-stamp", { x:420, y:-160, opacity:0, duration:0.3, ease:"power1.in" }, 25.30);
+      wipe("#scene-74 .s74-foot", 21.08, 25.68, "inset(0% 100% 0% 0%)", 0.5, "none");
+      smash("#scene-74 .s74-gear", 21.08, 27.00, { scale:1.25, opacity:0 });
+
+      /* SCENE 7.5  cut and@27.82 (booth+box+furious WIT); NO.+anger no@30.38; ballots 2013@31.04 x6; tally dozen@32.56; OLYMPIC underline+at least@32.82 */
+      smash("#scene-75 .s75-no", 27.86, 30.38, { scale:1.8, opacity:0, rotation:-14 });
+      pop("#scene-75 .s75-b1", 27.86, 31.04);
+      pop("#scene-75 .s75-b2", 27.86, 31.70);
+      pop("#scene-75 .s75-b3", 27.86, 32.40);
+      pop("#scene-75 .s75-b4", 27.86, 33.10);
+      pop("#scene-75 .s75-b5", 27.86, 33.70);
+      pop("#scene-75 .s75-b6", 27.86, 34.34);
+      wipe("#scene-75 .s75-tally", 27.86, 32.56, "inset(0% 100% 0% 0%)", 0.5);
+      show("#scene-75 .s75-tally .olyu", 27.86, 32.82);
+      show("#scene-75 .s75-least", 27.86, 32.82);
+
+      /* SCENE 7.6  cut and@34.94 (seats+meter+resting needle+deadpan WIT); plate -34@35.84; stub one@37.64; 1 bidder@37.94; acclamation approved@38.82; needle sweep+glow+confetti applause@39.46 */
+      show("#scene-76 .s76-plate", 34.98, 35.84);
+      show("#scene-76 .s76-stub", 34.98, 37.64);
+      smash("#scene-76 .s76-one", 34.98, 37.94, { scale:1.7, opacity:0, rotation:-8 });
+      show("#scene-76 .s76-acc", 34.98, 38.82);
+      show("#scene-76 .s76-patch", 34.98, 39.40);
+      tl.set("#scene-76 .s76-needle", { rotation:-166 }, 34.98);
+      show("#scene-76 .s76-needle", 34.98, 39.40);
+      show("#scene-76 .s76-hub", 34.98, 39.40);
+      tl.to("#scene-76 .s76-needle", { rotation:-24, duration:0.5, ease:"power2.inOut" }, 39.42);
+      show("#scene-76 .s76-glow", 34.98, 39.46);
+      tl.to("#scene-76 .s76-glow", { scale:1.2, duration:0.3, yoyo:true, repeat:1, ease:"sine.inOut" }, 39.5);
+      const conf = (sel, at, dx, rot) => {
+        tl.set(sel, { opacity:1 }, at);
+        tl.to(sel, { x:dx, y:380, rotation:rot, duration:0.9, ease:"power1.in" }, at);
+        tl.to(sel, { opacity:0, duration:0.15, ease:"none" }, at+0.78);
+      };
+      conf("#scene-76 .s76-c1", 39.50, -60, 220);
+      conf("#scene-76 .s76-c2", 39.56, 50, -180);
+
+      /* SCENE 7.7  cut one@40.32 (palms+shelf+OK WIT); hedge only@40.84; jar+label profit@42.78; LA re-ink 1984@44.36; tag Olympics@45.64; banner vote@46.78; wallet slam taxpayer@48.38 + click money@48.86 */
+      show("#scene-77 .s77-hedge", 40.36, 40.84);
+      pop("#s77-jar", 40.36, 42.78);
+      show("#scene-77 .s77-jlabel", 40.36, 42.78);
+      show("#scene-77 .s77-jlabel .la2", 40.36, 44.36);
+      tl.to("#scene-77 .s77-jlabel", { scale:1.05, duration:0.09, yoyo:true, repeat:1, ease:"power1.inOut" }, 44.36);
+      pop("#scene-77 .s77-tag", 40.36, 45.64);
+      wipe("#scene-77 .s77-banner", 40.36, 46.78, "inset(0% 100% 0% 0%)", 0.45);
+      reveal("#s77-wallet", 40.36, 48.38, { y:-170, scale:1.12, opacity:0 }, { duration:0.22, ease:"power2.in" });
+      pop("#scene-77 .s77-i1", 40.36, 48.52);
+      pop("#scene-77 .s77-i2", 40.36, 48.52);
+      tl.to("#s77-wallet", { scale:1.04, duration:0.09, yoyo:true, repeat:1, ease:"power1.inOut" }, 48.86);
+
+      /* SCENE 7.8  cut So@49.36 (CRT+empty ad+leaning WIT); header organizers@49.94; ONE WEIRD TRICK weird@51.70; 100% LEGAL trick@52.02; sticker+X wiggle not@52.62; counter 2026@54.02; whir->0 zero@57.56; countries tag stadiums@58.24 */
+      show("#scene-78 .s78-h", 49.40, 49.94);
+      smash("#scene-78 .s78-big", 49.40, 51.70, { scale:1.5, opacity:0 });
+      pop("#scene-78 .s78-star", 49.40, 52.02);
+      smash("#scene-78 .s78-stick", 49.40, 52.62, { scale:1.4, opacity:0, rotation:12 });
+      tl.to("#scene-78 .s78-x", { rotation:14, duration:0.07, yoyo:true, repeat:3, ease:"sine.inOut" }, 52.62);
+      show("#scene-78 .s78-cnt", 49.40, 54.02);
+      tl.set("#scene-78 .s78-strip", { y:0 }, 49.40);
+      tl.to("#scene-78 .s78-strip", { y:-296, duration:3.3, ease:"power1.inOut" }, 54.15);
+      tl.to("#scene-78 .s78-cnt", { scale:1.06, duration:0.09, yoyo:true, repeat:1, ease:"power1.inOut" }, 57.56);
+      show("#scene-78 .s78-ctag", 49.40, 58.24);
+
+      /* SCENE 7.9  cut And@58.68 (hall+giant WIT+stack+callback); US CITIES US@59.34; $100M+ $100@61.04; EACH. Each@62.86; ticket ~64.26 (interpolated tail); BUILD NOTHING ~65.04; STILL PAY ~66.04; receipt ~66.34; clamp 66.987 */
+      wipe("#scene-79 .s79-us", 58.72, 59.34, "inset(0% 100% 0% 0%)", 0.4);
+      smash("#scene-79 .s79-m", 58.72, 61.04, { scale:1.35, opacity:0 });
+      smash("#scene-79 .s79-each", 58.72, 62.86, { scale:1.7, opacity:0, rotation:-16 });
+      show("#scene-79 .s79-ticket", 58.72, 64.26);
+      show("#scene-79 .s79-pay", 58.72, 65.04);
+      smash("#scene-79 .s79-pay .p2", 58.72, 66.04, { scale:1.6, opacity:0, rotation:-8 });
+      wipe("#scene-79 .s79-rwrap", 58.72, 66.34, "inset(0% 100% 0% 0%)", 0.55, "none");
+
+      window.__timelines["Section07WhoDecidesWhoPays"] = tl;
+    </script>
+  </div>
+</body>
+</html>

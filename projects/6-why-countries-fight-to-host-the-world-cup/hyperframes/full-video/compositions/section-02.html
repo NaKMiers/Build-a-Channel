@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Section 02 Reframe - Why Countries Fight to Host the World Cup</title>
+  <style>
+    @font-face { font-family:"PatrickHandLocal"; src:url("./assets/fonts/patrick-hand-latin.woff2") format("woff2"); font-weight:400; font-style:normal; font-display:block; }
+    :root { --ink:#1c1712; --red:#e0392b; --cream:#fff7d8; --gold:#ffd23f; --teal:#17a2a8; --pink:#f0568c; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:#07070a; color:#fff; overflow:hidden; }
+    #Section02Reframe { position:relative; width:1920px; height:1080px; overflow:hidden; background:#07070a; font-family:"PatrickHandLocal"; }
+    .scene { position:absolute; inset:0; width:100%; height:100%; z-index:1; }
+    .photo { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+    .b-pool  { filter:saturate(1.18) contrast(1.04) brightness(1.0); }
+    .b-calc  { filter:saturate(0.92) contrast(1.05) brightness(0.94); }
+    .b-show  { filter:saturate(1.0) contrast(1.05) brightness(0.92); }
+    .b-marb  { filter:saturate(1.02) contrast(1.03) brightness(0.8) sepia(0.12); }
+    .b-wood  { filter:saturate(1.05) contrast(1.04) brightness(0.72); }
+    .vig { position:absolute; inset:0; z-index:2; background:radial-gradient(ellipse 86% 86% at 50% 48%, rgba(4,5,10,0) 58%, rgba(4,5,10,0.3) 100%); }
+
+    .wit { position:absolute; object-fit:contain; z-index:8; filter:drop-shadow(14px 16px 0 rgba(0,0,0,0.3)); transform-origin:center center; }
+    .prop { position:absolute; object-fit:contain; z-index:6; }
+    .hand { position:absolute; z-index:9; font-family:"PatrickHandLocal"; color:#fff; text-shadow:3px 4px 0 rgba(0,0,0,0.55); line-height:1.05; white-space:nowrap; }
+    .ink  { color:var(--ink); text-shadow:none; }
+    .cue  { opacity:0; }
+
+    /* 2.1 postcard chips */
+    .chip { position:absolute; z-index:10; display:flex; align-items:center; gap:14px; background:#fff; border:4px solid var(--teal); border-radius:16px; padding:12px 22px; box-shadow:0 12px 26px rgba(0,0,0,0.35); }
+    .chip .clabel { font-family:"PatrickHandLocal"; font-size:42px; color:var(--ink); white-space:nowrap; }
+    .chip svg { display:block; }
+    /* 2.1 ribbon */
+    .ribbon { position:absolute; z-index:10; background:var(--teal); color:#fff; font-size:31px; letter-spacing:2px; padding:12px 30px; border-radius:6px; box-shadow:0 10px 22px rgba(0,0,0,0.35); white-space:nowrap; }
+    .ribbon i { position:absolute; top:10px; width:26px; height:70%; background:#0e7d82; z-index:-1; }
+    .ribbon i.rl { left:-18px; transform:skewY(18deg); }
+    .ribbon i.rr { right:-18px; transform:skewY(-18deg); }
+    /* 2.1 lovely sticker */
+    .sticker { position:absolute; z-index:11; width:230px; height:230px; border-radius:50%; background:var(--pink); border:6px solid #fff; outline:5px dashed rgba(255,255,255,0.85); outline-offset:-20px; display:flex; align-items:center; justify-content:center; transform:rotate(5deg); box-shadow:0 14px 30px rgba(0,0,0,0.4); }
+    .sticker span { font-size:64px; color:#fff; transform:rotate(-4deg); }
+
+    /* 2.2 paper sheets + verdict */
+    .paper { position:absolute; z-index:5; background:linear-gradient(178deg,#ffffff,#f2ede0); border-radius:8px; box-shadow:0 18px 40px rgba(0,0,0,0.45); }
+    .display { position:absolute; z-index:6; background:#101614; border:5px solid #2a2f2c; border-radius:10px; display:flex; align-items:center; justify-content:flex-end; padding:0 26px; box-shadow:inset 0 4px 14px rgba(0,0,0,0.8); }
+    .display span { font-family:"PatrickHandLocal"; font-size:64px; letter-spacing:6px; }
+    .dgreen { color:#59e08a; text-shadow:0 0 12px rgba(89,224,138,0.7); }
+    .dred { color:#ff5d4a; text-shadow:0 0 12px rgba(255,93,74,0.75); position:absolute; right:26px; }
+    .xstroke { position:absolute; z-index:10; height:16px; background:var(--red); border-radius:8px; transform-origin:left center; box-shadow:0 3px 8px rgba(0,0,0,0.2); }
+    .stampred { position:absolute; z-index:10; font-family:"PatrickHandLocal"; font-size:112px; color:var(--red); border:8px solid var(--red); background:rgba(255,247,216,0.94); border-radius:16px; padding:4px 38px; transform:rotate(-3deg); white-space:nowrap; box-shadow:0 12px 28px rgba(0,0,0,0.35); }
+
+    /* 2.3 flashes + glints + mini card */
+    .flash { position:absolute; z-index:12; width:560px; height:560px; border-radius:50%; background:radial-gradient(circle, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.35) 38%, rgba(255,255,255,0) 70%); }
+    .glint { position:absolute; z-index:11; width:74px; height:74px; }
+    .glint i { position:absolute; left:50%; top:0; width:12px; height:74px; margin-left:-6px; background:#fff; border-radius:6px; box-shadow:0 0 18px rgba(255,240,190,0.9); }
+    .glint i:last-child { transform:rotate(90deg); }
+    .minicard { position:absolute; z-index:10; background:#fff; border:4px solid #2a2118; border-radius:14px; padding:14px 26px; box-shadow:0 12px 26px rgba(0,0,0,0.4); font-size:46px; color:var(--ink); white-space:nowrap; transform:rotate(-2deg); }
+    .minicard b { color:var(--red); font-weight:400; font-size:54px; }
+
+    /* 2.4 boutique backdrop + counter + tag + card sweep */
+    .boutique { position:absolute; left:0; right:0; top:0; height:60%; z-index:2; background:linear-gradient(180deg, #3a2a20 0%, #4a382a 55%, rgba(74,56,42,0) 100%); }
+    .shelfblur { position:absolute; border-radius:26px; filter:blur(26px); opacity:0.55; z-index:3; }
+    .counterline { position:absolute; left:0; right:0; top:58%; height:26px; z-index:4; background:linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0)); }
+    .witwrap24 { position:absolute; left:0; right:0; top:0; height:59.5%; overflow:hidden; z-index:7; }
+    .tagwrap { position:absolute; z-index:10; transform-origin:top center; }
+    .tagwrap img { width:100%; display:block; filter:drop-shadow(0 10px 22px rgba(0,0,0,0.45)); }
+    .tagtext { position:absolute; left:8%; top:44%; width:84%; text-align:center; transform:rotate(-13deg); font-family:"PatrickHandLocal"; line-height:1.0; }
+    .cardwrap { position:absolute; z-index:9; overflow:hidden; border-radius:26px; }
+    .cardwrap img { width:100%; display:block; }
+    .sweep { position:absolute; top:-40px; bottom:-40px; left:0; width:150px; background:linear-gradient(100deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.75) 50%, rgba(255,255,255,0) 100%); transform:translateX(-260px) skewX(-18deg); }
+    .yoursnote { position:absolute; z-index:11; font-size:58px; color:#fff2d8; text-shadow:3px 4px 0 rgba(0,0,0,0.6); transform:rotate(-4deg); white-space:nowrap; }
+
+    /* 2.5 cards */
+    .qcard { position:absolute; z-index:10; background:#fff; border:4px solid #2a2118; border-radius:14px; padding:12px 30px; box-shadow:0 14px 30px rgba(0,0,0,0.5); font-size:58px; color:var(--ink); white-space:nowrap; transform:rotate(-1.5deg); }
+    .qcard2 { position:absolute; z-index:10; background:var(--cream); border:5px solid #2a2118; border-radius:18px; padding:16px 44px 24px; box-shadow:0 18px 38px rgba(0,0,0,0.55); font-size:120px; color:var(--red); white-space:nowrap; transform:rotate(-2deg); }
+    .qcard2 .u1, .qcard2 .u2 { position:absolute; left:10%; width:80%; height:9px; background:var(--red); border-radius:5px; transform:scaleX(0); transform-origin:left center; }
+    .qcard2 .u1 { bottom:16px; } .qcard2 .u2 { bottom:4px; width:72%; left:14%; }
+    .uspan { position:relative; display:inline-block; }
+    .uspan .ub { position:absolute; left:-3%; width:106%; height:9px; background:var(--red); border-radius:5px; transform:scaleX(0); transform-origin:left center; top:52%; }
+
+    .wit,.hand,.chip,.ribbon,.sticker,.xstroke,.stampred,.flash,.glint,.minicard,.tagwrap,.cardwrap,.yoursnote,.qcard,.qcard2,.prop { will-change:opacity, transform; }
+  </style>
+</head>
+<body>
+  <div id="Section02Reframe" data-composition-id="Section02Reframe" data-start="0" data-duration="33.728" data-width="1920" data-height="1080">
+
+    <!-- SCENE 2.1  0.00-10.04  postcard fantasy: pool WIT + rising chip arc + ribbon + lovely! sticker -->
+    <div id="scene-21" class="scene clip" data-start="0" data-duration="10.04" data-track-index="1" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-pool" src="./assets/resort-pool-1.jpg" alt="">
+      <div class="chip cue c1" style="left:720px; top:600px; transform:rotate(-3deg);">
+        <svg width="58" height="52" viewBox="0 0 26 22"><path d="M1 12 L10 10 L16 2 L19 2 L16 10 L23 9 L25 12 L16 13 L12 20 L9 20 L11 13 Z" fill="#17a2a8" stroke="#0e5f63" stroke-width="1" stroke-linejoin="round" transform="rotate(12 13 11)"/><rect x="9" y="16" width="9" height="6" rx="1.4" fill="#2a2118"/><rect x="12.4" y="14" width="2.2" height="2.4" fill="#2a2118"/></svg>
+        <span class="clabel">tourists!</span>
+      </div>
+      <div class="chip cue c2" style="left:1000px; top:455px; transform:rotate(2deg);">
+        <svg width="52" height="56" viewBox="0 0 22 24"><rect x="3" y="2" width="16" height="20" rx="1.6" fill="#2a2118"/><g fill="#ffd23f"><rect x="5.4" y="4.6" width="3.2" height="3.2"/><rect x="9.6" y="4.6" width="3.2" height="3.2"/><rect x="13.8" y="4.6" width="3.2" height="3.2"/><rect x="5.4" y="9.4" width="3.2" height="3.2"/><rect x="9.6" y="9.4" width="3.2" height="3.2"/><rect x="13.8" y="9.4" width="3.2" height="3.2"/><rect x="5.4" y="14.2" width="3.2" height="3.2"/><rect x="9.6" y="14.2" width="3.2" height="3.2"/><rect x="13.8" y="14.2" width="3.2" height="3.2"/></g><rect x="9.2" y="18.6" width="3.6" height="3.4" fill="#fff7d8"/></svg>
+        <span class="clabel">hotels full!</span>
+      </div>
+      <div class="chip cue c3" style="left:1260px; top:310px; transform:rotate(-2deg);">
+        <svg width="56" height="54" viewBox="0 0 24 23"><path d="M4 10 L20 10 L21.5 21 L2.5 21 Z" fill="#2a2118"/><rect x="5.5" y="12.5" width="13" height="4" rx="1" fill="#fff7d8"/><rect x="7" y="4" width="10" height="6" rx="1.2" fill="#2a2118"/><circle cx="12" cy="4" r="3.4" fill="#ffd23f" stroke="#b98e0f" stroke-width="1"/><text x="12" y="5.6" font-size="4.6" text-anchor="middle" fill="#7a5c05" font-family="sans-serif">$</text></svg>
+        <span class="clabel">shops rich!</span>
+      </div>
+      <div class="chip cue c4" style="left:1520px; top:165px; transform:rotate(3deg); padding:16px 26px;">
+        <svg width="60" height="58" viewBox="0 0 25 24"><path d="M3 21 L10 12 L14 16 L22 5" fill="none" stroke="#2fae52" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M15.5 4 L22 5 L21.5 11.5" fill="none" stroke="#2fae52" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="clabel">economy UP!</span>
+      </div>
+      <div class="ribbon cue r1" style="left:1140px; top:560px; transform:rotate(-1.5deg);"><i class="rl"></i><i class="rr"></i>as told by every bidding government</div>
+      <div class="sticker cue lov" style="left:1400px; top:650px;"><span>lovely!</span></div>
+      <img class="wit" data-layout-allow-overflow="" style="left:30px; bottom:-90px; width:800px;" src="./assets/wit-pool-float-shades.png" alt="">
+    </div>
+
+    <!-- SCENE 2.2  10.04-16.32  correction board: calculator + paper verdict + giant lecturing WIT -->
+    <div id="scene-22" class="scene clip" data-start="10.04" data-duration="6.28" data-track-index="2" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-calc" src="./assets/calculator-desk-1.jpg" alt="">
+      <div class="vig"></div>
+      <div class="display" style="left:150px; top:150px; width:560px; height:104px;">
+        <span class="dgreen d-g">88888888</span>
+        <span class="dred cue d-r">-4,000,000,000</span>
+      </div>
+      <div class="paper" style="left:130px; top:370px; width:1020px; height:470px; transform:rotate(-2deg);"></div>
+      <div class="paper" style="left:210px; top:410px; width:980px; height:440px; transform:rotate(1.2deg);"></div>
+      <div class="hand ink cue inv" style="left:280px; top:470px; font-size:126px; transform:rotate(-2deg); clip-path:inset(0 100% -20% 0);">INVESTMENT?</div>
+      <div class="xstroke cue x1" style="left:290px; top:470px; width:780px; transform:rotate(9deg);"></div>
+      <div class="xstroke cue x2" style="left:290px; top:600px; width:780px; transform:rotate(-9deg);"></div>
+      <div class="stampred cue pur" style="left:380px; top:640px; font-size:122px;">PURCHASE</div>
+      <img class="wit cue w22" data-layout-allow-overflow="" style="right:-170px; bottom:-700px; width:1160px;" src="./assets/poses/lecturing_finger_raised_eyes_closed.png" alt="">
+    </div>
+
+    <!-- SCENE 2.3  16.32-20.88  showroom flex: red supercar + WIT + LOOK AT ME. -->
+    <div id="scene-23" class="scene clip" data-start="16.32" data-duration="4.56" data-track-index="3" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-show" src="./assets/showroom-floor-1.jpg" alt="">
+      <div class="vig"></div>
+      <img class="prop" style="left:600px; top:400px; width:1300px; filter:saturate(1.12) drop-shadow(0 26px 40px rgba(0,0,0,0.45));" src="./assets/red-supercar-generic.png" alt="">
+      <div class="minicard cue mm" style="left:120px; top:140px;">makes money? <b>NO.</b></div>
+      <div class="flash cue f1" style="left:-160px; top:-140px;"></div>
+      <div class="flash cue f2" style="left:1500px; top:60px;"></div>
+      <div class="flash cue f3" style="left:900px; top:-220px;"></div>
+      <div class="glint cue g1" style="left:1030px; top:660px;"><i></i><i></i></div>
+      <div class="glint cue g2" style="left:1520px; top:600px;"><i></i><i></i></div>
+      <div class="glint cue g3" style="left:1270px; top:790px;"><i></i><i></i></div>
+      <div class="hand cue look" style="left:760px; top:130px; font-size:118px; color:#fff3d0; text-shadow:5px 6px 0 rgba(0,0,0,0.8), 0 0 26px rgba(0,0,0,0.45); transform:rotate(-2deg);">LOOK AT ME.</div>
+      <img class="wit" data-layout-allow-overflow="" style="left:-60px; bottom:-300px; width:1150px;" src="./assets/poses/boss_suit_sunglasses_sparkle.png" alt="">
+    </div>
+
+    <!-- SCENE 2.4  20.88-29.34  luxury checkout: car + trophy + tag arc + TAXPAYER card + panic WIT -->
+    <div id="scene-24" class="scene clip" data-start="20.88" data-duration="8.46" data-track-index="4" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-marb" src="./assets/marble-counter-1.jpg" alt="">
+      <div class="boutique"></div>
+      <div class="shelfblur" style="left:120px; top:60px; width:420px; height:200px; background:#6b4f38;"></div>
+      <div class="shelfblur" style="left:1380px; top:40px; width:440px; height:190px; background:#5c4430;"></div>
+      <div class="shelfblur" style="left:760px; top:30px; width:360px; height:150px; background:#63482f;"></div>
+      <div class="counterline"></div>
+      <div class="vig"></div>
+      <img class="prop" style="left:30px; top:480px; width:600px; transform:scaleX(-1); filter:saturate(1.05) drop-shadow(0 18px 30px rgba(0,0,0,0.5));" src="./assets/red-supercar-generic.png" alt="">
+      <img class="prop" style="left:1380px; top:200px; width:420px; filter:drop-shadow(0 20px 40px rgba(0,0,0,0.6)) drop-shadow(0 -6px 26px rgba(255,214,90,0.25));" src="./assets/trophy-gold-parody.png" alt="">
+      <div class="tagwrap" id="tag24" style="left:480px; top:450px; width:235px; transform:rotate(6deg);">
+        <img src="./assets/price-tag-blank.png" alt="">
+        <div class="tagtext t-status" style="font-size:56px; color:var(--ink);">STATUS</div>
+        <div class="tagtext cue t-bill" style="font-size:43px; color:var(--red);">BILLIONS...</div>
+      </div>
+      <div class="witwrap24">
+        <img class="wit cue w24" style="left:580px; top:30px; width:780px;" src="./assets/poses/panic_hands_on_cheeks_scream.png" alt="">
+      </div>
+      <div class="cardwrap" id="card24" style="left:610px; top:600px; width:700px;">
+        <img src="./assets/credit-card-taxpayer.png" alt="">
+        <div class="sweep"></div>
+      </div>
+      <div class="yoursnote cue yn" style="left:1190px; top:540px;"><svg width="60" height="66" viewBox="0 0 30 33" style="vertical-align:-40px; transform:scaleX(-1);"><path d="M8 3 C18 8 22 16 20 26" fill="none" stroke="#fff2d8" stroke-width="4" stroke-linecap="round"/><path d="M12 22 L20 26 L24 17" fill="none" stroke="#fff2d8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg> yours.</div>
+    </div>
+
+    <!-- SCENE 2.5  29.34-33.728  closer: wallet + trophy w/ PRESTIGE tag + skeptic WIT + WHO PAYS? -->
+    <div id="scene-25" class="scene clip" data-start="29.34" data-duration="4.388" data-track-index="5" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-wood" src="./assets/desk-darkwood-1.jpg" alt="">
+      <img src="./assets/wallet-empty-cutout.png" alt="" style="position:absolute; left:560px; top:640px; width:1160px; z-index:3; filter:sepia(0.25) saturate(1.1) brightness(0.92) drop-shadow(0 26px 44px rgba(0,0,0,0.65));">
+      <div class="vig"></div>
+      <img class="prop" style="left:1320px; top:180px; width:330px; filter:saturate(0.8) brightness(0.9) drop-shadow(0 18px 36px rgba(0,0,0,0.6));" src="./assets/trophy-gold-parody.png" alt="">
+      <div class="tagwrap" id="tag25" style="left:1545px; top:395px; width:190px; transform:rotate(14deg);">
+        <img src="./assets/price-tag-blank.png" alt="">
+        <div class="tagtext" style="font-size:29px; color:var(--ink); line-height:1.1;">PRESTIGE<br><span style="font-size:22px;">price on request</span></div>
+      </div>
+      <div class="qcard cue q1" style="left:700px; top:130px;"><span class="uspan">"will it pay off?"<span class="ub ubx"></span></span></div>
+      <div class="qcard2 cue q2" style="left:750px; top:330px;">WHO PAYS?<span class="u1"></span><span class="u2"></span></div>
+      <img class="wit" data-layout-allow-overflow="" style="left:-150px; bottom:-320px; width:1300px;" src="./assets/poses/skeptical_side_eye_doubtful.png" alt="">
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js" integrity="sha384-sG0Hv1tP1lZCk9KQmrIbY/XNwi+OY84GQqhMscbnsoBFqAz8KNCil1kvfL3Hbbk2" crossorigin="anonymous"></script>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused:true, defaults:{ overwrite:"auto" } });
+      const reveal = (t, hideAt, at, fv, tv={}) => { const r={}; if("x"in fv)r.x=0; if("y"in fv)r.y=0; if("scale"in fv)r.scale=1; if("opacity"in fv)r.opacity=1; tl.set(t,fv,hideAt); tl.to(t,{...r,...tv},at); };
+      const show  = (t, hideAt, at) => { tl.set(t,{opacity:0},hideAt); tl.set(t,{opacity:1},at); };
+      const smash = (t, hideAt, at, fv={y:22,scale:1.3,opacity:0}) => reveal(t,hideAt,at,fv,{duration:0.2,ease:"back.out(1.9)"});
+      const pop   = (t, hideAt, at) => reveal(t,hideAt,at,{scale:0.4,opacity:0},{duration:0.22,ease:"back.out(2)"});
+
+      /* SCENE 2.1  base + floating WIT from 0. Chips pop on arrive@2.82 / fill@3.70 / rich@4.70 / grows@5.52; ribbon hard-shows on story@6.70; lovely! slaps on lovely@9.06 */
+      tl.to("#scene-21 .wit", { y:-16, rotation:1.4, duration:1.7, ease:"sine.inOut", yoyo:true, repeat:5 }, 0);
+      pop("#scene-21 .c1", 0, 2.82);
+      pop("#scene-21 .c2", 0, 3.70);
+      pop("#scene-21 .c3", 0, 4.70);
+      pop("#scene-21 .c4", 0, 5.52);
+      show("#scene-21 .r1", 0, 6.70);
+      smash("#scene-21 .lov", 0, 9.06, { scale:1.9, opacity:0, rotation:14 });
+      tl.to("#scene-21 .lov", { rotation:5, duration:0.28, ease:"elastic.out(1,0.5)" }, 9.28);
+
+      /* SCENE 2.2  display green from cut, snaps red on different@10.84; WIT on truth@12.30; INVESTMENT? writes on from Hosting@12.80; X on not@13.82; PURCHASE stamp on purchase@15.42 + frame shake */
+      tl.to("#scene-22 .d-g", { opacity:0.25, duration:0.07, yoyo:true, repeat:3 }, 10.44);
+      tl.set("#scene-22 .d-g", { opacity:0 }, 10.84);
+      show("#scene-22 .d-r", 10.04, 10.84);
+      show("#scene-22 .w22", 10.04, 12.30);
+      tl.set("#scene-22 .inv", { opacity:1 }, 12.80);
+      tl.fromTo("#scene-22 .inv", { clipPath:"inset(0% 100% -20% 0%)" }, { clipPath:"inset(0% 0% -20% 0%)", duration:0.5, ease:"none", immediateRender:false }, 12.80);
+      tl.set("#scene-22 .x1", { scaleX:0 }, 10.04);
+      tl.set("#scene-22 .x2", { scaleX:0 }, 10.04);
+      tl.set("#scene-22 .x1", { opacity:1 }, 13.82);
+      tl.to("#scene-22 .x1", { scaleX:1, duration:0.14, ease:"power2.out" }, 13.82);
+      tl.set("#scene-22 .x2", { opacity:1 }, 13.98);
+      tl.to("#scene-22 .x2", { scaleX:1, duration:0.14, ease:"power2.out" }, 13.98);
+      smash("#scene-22 .pur", 10.04, 15.42, { scale:1.7, opacity:0, rotation:-8 });
+      tl.to("#scene-22", { x:7, duration:0.05, yoyo:true, repeat:3, ease:"power1.inOut" }, 15.42);
+      tl.set("#scene-22", { x:0 }, 15.66);
+
+      /* SCENE 2.3  base + car + WIT posed from cut; mini-card on money@17.82; flashes + glints + LOOK AT ME. on SEEN@19.64; extra glint on Ferrari@20.14 */
+      show("#scene-23 .mm", 16.32, 17.82);
+      smash("#scene-23 .look", 16.32, 19.64, { y:26, scale:1.4, opacity:0 });
+      [[".f1",19.64],[".f2",19.78],[".f3",19.92]].forEach(([sel,at])=>{
+        tl.set("#scene-23 "+sel, { opacity:0 }, 16.32);
+        tl.to("#scene-23 "+sel, { opacity:0.9, duration:0.07, yoyo:true, repeat:1, ease:"power1.in" }, at);
+      });
+      pop("#scene-23 .g1", 16.32, 19.70);
+      pop("#scene-23 .g2", 16.32, 19.86);
+      pop("#scene-23 .g3", 16.32, 20.14);
+
+      /* SCENE 2.4  car + trophy + STATUS tag from cut; tag arcs car->trophy on football@23.62, docks by 24.78; BILLIONS... on billions@25.50; WIT on And@26.14; card slides on credit@26.68; yours. on yours@27.48; emboss sweep + bounce on taxpayer's@28.32 */
+      tl.set("#card24", { x:-1700 }, 20.88);
+      tl.to("#tag24", { keyframes:[
+        { x:450, y:-230, rotation:18, duration:0.4, ease:"power1.out" },
+        { x:993, y:-85, rotation:-8, duration:0.45, ease:"power1.in" },
+        { rotation:6, duration:0.3, ease:"sine.out" }
+      ]}, 23.62);
+      tl.set("#scene-24 .t-status", { opacity:0 }, 25.50);
+      smash("#scene-24 .t-bill", 20.88, 25.50, { scale:1.5, opacity:0 });
+      show("#scene-24 .w24", 20.88, 26.14);
+      tl.to("#card24", { x:0, duration:0.5, ease:"power2.out" }, 26.68);
+      pop("#scene-24 .yn", 20.88, 27.48);
+      tl.to("#card24 .sweep", { x:1160, duration:0.45, ease:"power1.inOut" }, 28.32);
+      tl.to("#card24", { y:-16, duration:0.12, yoyo:true, repeat:1, ease:"power1.out" }, 28.32);
+
+      /* SCENE 2.5  wallet + trophy + PRESTIGE tag + WIT from cut; tag wiggles on question@29.90; card1 pops on will@30.86; X on off@31.68; WHO PAYS? on pays@33.16 */
+      tl.to("#tag25", { rotation:20, duration:0.16, ease:"sine.inOut" }, 29.90);
+      tl.to("#tag25", { rotation:11, duration:0.2, ease:"sine.inOut" }, 30.06);
+      tl.to("#tag25", { rotation:14, duration:0.22, ease:"sine.out" }, 30.26);
+      pop("#scene-25 .q1", 29.34, 30.86);
+      tl.to("#scene-25 .ubx", { scaleX:1, duration:0.18, ease:"power2.out" }, 31.68);
+      smash("#scene-25 .q2", 29.34, 33.16, { y:30, scale:1.5, opacity:0, rotation:-5 });
+      tl.to("#scene-25 .q2 .u1", { scaleX:1, duration:0.12, ease:"power2.out" }, 33.40);
+      tl.to("#scene-25 .q2 .u2", { scaleX:1, duration:0.12, ease:"power2.out" }, 33.54);
+
+      window.__timelines["Section02Reframe"] = tl;
+    </script>
+  </div>
+</body>
+</html>

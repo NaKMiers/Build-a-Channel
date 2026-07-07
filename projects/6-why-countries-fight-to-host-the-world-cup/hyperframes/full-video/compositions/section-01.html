@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Section 01 Hook - Why Countries Fight to Host the World Cup</title>
+  <style>
+    @font-face { font-family:"PatrickHandLocal"; src:url("./assets/fonts/patrick-hand-latin.woff2") format("woff2"); font-weight:400; font-style:normal; font-display:block; }
+    :root { --ink:#1c1712; --red:#e0392b; --cream:#fff7d8; --gold:#ffd23f; --teal:#17a2a8; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:#07070a; color:#fff; overflow:hidden; }
+    #Section01Hook { position:relative; width:1920px; height:1080px; overflow:hidden; background:#07070a; font-family:"PatrickHandLocal"; }
+    .scene { position:absolute; inset:0; width:100%; height:100%; z-index:1; }
+    .photo { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+    .b-fest   { filter:saturate(1.15) contrast(1.05) brightness(0.85); }
+    .b-spot   { filter:saturate(0.95) contrast(1.08) brightness(0.95); }
+    .b-map    { filter:sepia(0.45) saturate(1.25) contrast(1.0) brightness(1.02); }
+    .b-ledger { filter:saturate(1.02) contrast(1.02) brightness(0.98); }
+    .b-desk   { filter:saturate(1.05) contrast(1.06) brightness(0.78); }
+    .b-bokeh  { filter:saturate(1.12) contrast(1.05) brightness(0.85); }
+    .b-curt   { filter:saturate(0.8) contrast(1.1) brightness(0.42); }
+    .vig { position:absolute; inset:0; z-index:2; background:radial-gradient(ellipse 86% 86% at 50% 48%, rgba(4,5,10,0) 56%, rgba(4,5,10,0.38) 100%); }
+    .vig-heavy { position:absolute; inset:0; z-index:2; background:radial-gradient(ellipse 62% 66% at 50% 42%, rgba(4,5,10,0) 30%, rgba(4,5,10,0.55) 62%, rgba(4,5,10,0.9) 100%); }
+
+    .wit { position:absolute; object-fit:contain; z-index:8; filter:drop-shadow(14px 16px 0 rgba(0,0,0,0.3)); transform-origin:center center; }
+    .prop { position:absolute; object-fit:contain; z-index:6; }
+
+    .hand { position:absolute; z-index:9; font-family:"PatrickHandLocal"; color:#fff; text-shadow:3px 4px 0 rgba(0,0,0,0.55); line-height:1.05; white-space:nowrap; }
+    .ink  { color:var(--ink); text-shadow:none; }
+    .cue  { opacity:0; }
+
+    /* winner stamp */
+    .stampred { position:absolute; z-index:10; font-family:"PatrickHandLocal"; font-weight:400; font-size:96px; color:var(--red); border:7px solid var(--red); background:rgba(255,247,216,0.92); border-radius:14px; padding:6px 30px; transform:rotate(4deg); white-space:nowrap; box-shadow:0 10px 26px rgba(0,0,0,0.4); }
+
+    /* confetti */
+    .cfp { position:absolute; z-index:5; width:26px; height:11px; border-radius:3px; }
+
+    /* glint star */
+    .glint { position:absolute; z-index:11; width:74px; height:74px; }
+    .glint i { position:absolute; left:50%; top:0; width:12px; height:74px; margin-left:-6px; background:#fff; border-radius:6px; box-shadow:0 0 18px rgba(255,240,190,0.9); }
+    .glint i:last-child { transform:rotate(90deg); }
+
+    /* price tag */
+    .tagwrap { position:absolute; z-index:9; transform-origin:top center; }
+    .tagstring { position:absolute; left:50%; top:-86px; width:5px; height:92px; margin-left:-2px; background:#d9cdaa; border-radius:3px; }
+    .tagcard { width:470px; background:var(--cream); border:4px solid #2a2118; border-radius:14px; padding:22px 26px 18px; box-shadow:0 16px 34px rgba(0,0,0,0.55); text-align:center; }
+    .tagcard .t1 { font-size:62px; color:var(--ink); }
+    .tagcard .t2 { font-size:76px; color:var(--red); transform:rotate(-3deg); margin-top:4px; }
+
+    /* receipt printing */
+    .rwrap { position:absolute; z-index:7; transform-origin:top right; }
+    .rwrap img { width:100%; display:block; filter:drop-shadow(0 10px 22px rgba(0,0,0,0.35)); }
+    #s3-receipt { clip-path:inset(0 0 92% 0); }
+
+    /* gag chips */
+    .gag { position:absolute; z-index:10; display:flex; align-items:center; gap:16px; background:var(--cream); border:4px solid #2a2118; border-radius:16px; padding:14px 24px; box-shadow:0 12px 26px rgba(0,0,0,0.45); }
+    .gag .glabel { font-family:"PatrickHandLocal"; font-size:44px; color:var(--ink); white-space:nowrap; }
+    .gag svg { display:block; }
+
+    /* podium under trophy (hides map fold seam) */
+    .podium { position:absolute; z-index:5; background:linear-gradient(180deg,#4a3a2c,#2b2118); border-radius:10px; box-shadow:0 14px 30px rgba(0,0,0,0.5); }
+    .podium.lip { border-radius:6px; }
+
+    /* checklist card */
+    .klist { position:absolute; z-index:9; width:610px; background:var(--cream); border:4px solid #2a2118; border-radius:18px; padding:28px 34px; box-shadow:0 16px 34px rgba(0,0,0,0.5); }
+    .klist .khead { font-size:62px; color:var(--ink); border-bottom:5px solid var(--ink); padding-bottom:10px; margin-bottom:18px; }
+    .klist .krow { display:flex; align-items:center; gap:20px; font-size:58px; color:var(--ink); padding:10px 0; }
+    .klist .krow svg { flex:0 0 auto; }
+
+    /* googly eyes */
+    .geye { position:absolute; z-index:9; width:66px; height:66px; background:#fff; border:5px solid #17130e; border-radius:50%; }
+    .geye i { position:absolute; left:17px; top:22px; width:22px; height:22px; background:#17130e; border-radius:50%; }
+
+    /* strike / underline bars tied to text spans */
+    .uspan { position:relative; display:inline-block; }
+    .uspan .ub { position:absolute; left:0; width:100%; height:7px; background:var(--red); border-radius:4px; transform:scaleX(0); transform-origin:left center; }
+
+    /* the bill arrow */
+    .billarrow { position:absolute; z-index:10; }
+
+    .wit,.hand,.stampred,.cfp,.glint,.tagwrap,.gag,.klist,.geye,.rwrap,.billarrow,.prop { will-change:opacity, transform; }
+  </style>
+</head>
+<body>
+  <div id="Section01Hook" data-composition-id="Section01Hook" data-start="0" data-duration="35.904" data-width="1920" data-height="1080">
+
+    <!-- SCENE 1.1  0.00-5.86  "Every four years ... The trophy. The party." -->
+    <div id="scene-1" class="scene clip" data-start="0" data-duration="5.86" data-track-index="1" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-fest" src="./assets/stadium-fireworks-1.jpg" alt="">
+      <div class="vig"></div>
+      <span class="cfp" style="left:120px;  top:60px;  background:var(--gold); transform:rotate(24deg);"></span>
+      <span class="cfp" style="left:330px;  top:180px; background:var(--red);  transform:rotate(-40deg);"></span>
+      <span class="cfp" style="left:520px;  top:90px;  background:var(--teal); transform:rotate(66deg);"></span>
+      <span class="cfp" style="left:700px;  top:250px; background:var(--gold); transform:rotate(-18deg);"></span>
+      <span class="cfp" style="left:880px;  top:70px;  background:var(--red);  transform:rotate(48deg);"></span>
+      <span class="cfp" style="left:1060px; top:210px; background:var(--teal); transform:rotate(-58deg);"></span>
+      <span class="cfp" style="left:1250px; top:110px; background:var(--gold); transform:rotate(12deg);"></span>
+      <span class="cfp" style="left:1450px; top:280px; background:var(--red);  transform:rotate(-30deg);"></span>
+      <span class="cfp" style="left:1610px; top:80px;  background:var(--teal); transform:rotate(72deg);"></span>
+      <span class="cfp" style="left:1770px; top:200px; background:var(--gold); transform:rotate(-46deg);"></span>
+      <span class="cfp" style="left:230px;  top:320px; background:var(--teal); transform:rotate(30deg);"></span>
+      <span class="cfp" style="left:1520px; top:180px; background:var(--red);  transform:rotate(-8deg);"></span>
+      <img id="s1-trophy" class="prop" style="left:1060px; top:150px; width:520px; filter:drop-shadow(0 18px 40px rgba(0,0,0,0.6)) drop-shadow(0 -6px 30px rgba(255,214,90,0.35));" src="./assets/trophy-gold-parody.png" alt="">
+      <div class="glint cue s1-glint" style="left:1210px; top:230px;"><i></i><i></i></div>
+      <div class="stampred cue s1-winner" style="right:120px; top:96px;">WINNER!</div>
+      <span class="cfp cue s1-b" style="left:1150px; top:130px; background:var(--gold); transform:rotate(20deg);"></span>
+      <span class="cfp cue s1-b" style="left:1300px; top:90px;  background:var(--red);  transform:rotate(-52deg);"></span>
+      <span class="cfp cue s1-b" style="left:1480px; top:150px; background:var(--teal); transform:rotate(40deg);"></span>
+      <span class="cfp cue s1-b" style="left:1390px; top:260px; background:var(--gold); transform:rotate(-24deg);"></span>
+      <span class="cfp cue s1-b" style="left:1240px; top:300px; background:var(--red);  transform:rotate(58deg);"></span>
+      <span class="cfp cue s1-b" style="left:1560px; top:60px;  background:var(--teal); transform:rotate(-70deg);"></span>
+      <img class="wit s1-wit" data-layout-allow-overflow="" style="left:-40px; bottom:-250px; width:820px;" src="./assets/wit-fan-flag-cheer.png" alt="">
+    </div>
+
+    <!-- SCENE 1.2  5.86-9.66  "And a very strange prize: the chance to lose billions of dollars." -->
+    <div id="scene-2" class="scene clip" data-start="5.86" data-duration="3.80" data-track-index="2" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-spot" src="./assets/podium-spotlight-1.jpg" alt="">
+      <img id="s2-trophy" class="prop" style="left:700px; top:130px; width:560px; filter:saturate(0.8) brightness(0.94) drop-shadow(0 18px 40px rgba(0,0,0,0.7));" src="./assets/trophy-gold-parody.png" alt="">
+      <div class="tagwrap cue" id="s2-tag" style="left:1010px; top:520px;">
+        <div class="tagstring"></div>
+        <div class="tagcard">
+          <div class="t1">1st PRIZE:</div>
+          <div class="t2 cue s2-lose">LOSE BILLIONS</div>
+        </div>
+      </div>
+      <img class="wit cue s2-wit" data-layout-allow-overflow="" style="right:-150px; bottom:-320px; width:860px;" src="./assets/poses/skeptical_side_eye_doubtful.png" alt="">
+    </div>
+
+    <!-- SCENE 1.3  9.66-16.06  "And countries FIGHT for this. Presidents fly to Zurich. Ministers film promo videos. Entire governments beg." -->
+    <div id="scene-3" class="scene clip" data-start="9.66" data-duration="6.40" data-track-index="3" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-map" style="transform:scale(2.09); transform-origin:0% 50%;" src="./assets/world-map-vintage-1.jpg" alt="">
+      <div class="vig"></div>
+      <div class="podium" style="left:790px; top:545px; width:340px; height:125px;"></div>
+      <div class="podium lip" style="left:770px; top:658px; width:380px; height:26px;"></div>
+      <div class="rwrap cue" id="s3-rwrap" style="left:790px; top:646px; width:340px; transform:rotate(35deg); transform-origin:top center; z-index:9;">
+        <img id="s3-receipt" src="./assets/receipt-endless-roll.png" alt="">
+      </div>
+      <img id="s3-trophy" class="prop" style="left:810px; top:120px; width:300px; filter:drop-shadow(0 14px 30px rgba(0,0,0,0.5));" src="./assets/trophy-gold-parody.png" alt="">
+      <div class="hand cue s3-label" style="left:980px; top:840px; font-size:84px; color:var(--red); text-shadow:2px 3px 0 rgba(255,247,216,0.8); transform:rotate(-2deg);">they <span style="border-bottom:8px solid var(--red); display:inline-block; line-height:0.95;">FIGHT</span> for this</div>
+      <div class="gag cue s3-g1" style="left:250px; top:96px;">
+        <svg width="56" height="56" viewBox="0 0 24 24"><path d="M2 21 L23 12 L2 3 L6 12 Z" fill="#17a2a8" stroke="#17130e" stroke-width="1.4" stroke-linejoin="round"/></svg>
+        <span class="glabel">Zurich</span>
+      </div>
+      <div class="gag cue s3-g2" style="left:800px; top:96px;">
+        <svg width="58" height="52" viewBox="0 0 24 22"><rect x="2" y="9" width="20" height="11" rx="1.6" fill="#2a2118"/><g transform="rotate(-14 3 8)"><rect x="2" y="3" width="20" height="5.6" rx="1.4" fill="#2a2118"/><rect x="4" y="3.4" width="3.4" height="4.8" fill="#fff7d8"/><rect x="10" y="3.4" width="3.4" height="4.8" fill="#fff7d8"/><rect x="16" y="3.4" width="3.4" height="4.8" fill="#fff7d8"/></g></svg>
+        <span class="glabel">promo video</span>
+      </div>
+      <div class="gag cue s3-g3" style="left:1380px; top:96px;">
+        <svg width="52" height="56" viewBox="0 0 22 24"><g fill="#fff" stroke="#17130e" stroke-width="1.5" stroke-linejoin="round"><path d="M7.6 21 C4.6 17.6 3.6 12.4 4.6 7.4 C4.9 6 6.7 6 7.1 7.4 L8.2 12"/><path d="M14.4 21 C17.4 17.6 18.4 12.4 17.4 7.4 C17.1 6 15.3 6 14.9 7.4 L13.8 12"/><path d="M8.2 12 C9 9.6 13 9.6 13.8 12 L14 16 C14 19 8 19 8 16 Z"/></g></svg>
+        <span class="glabel">pretty please</span>
+      </div>
+      <img class="wit s3-wit" data-layout-allow-overflow="" style="left:90px; bottom:-140px; width:620px;" src="./assets/wit-fan-frozen-mid-cheer.png" alt="">
+    </div>
+
+    <!-- SCENE 1.4  16.06-19.76  "Which is strange. Because hosting the World Cup almost never makes money." -->
+    <div id="scene-4" class="scene clip" data-start="16.06" data-duration="3.70" data-track-index="4" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-ledger" src="./assets/ledger-red-pen-1.jpg" alt="">
+      <div class="hand ink cue s4-l1" style="left:1010px; top:320px; font-size:70px; transform:rotate(-2deg);">hosting the World Cup</div>
+      <div class="hand ink cue s4-l2" style="left:990px; top:430px; font-size:76px; transform:rotate(-1.5deg);">almost <span class="uspan" style="color:var(--red);">NEVER<span class="ub s4-u1" style="bottom:-8px;"></span><span class="ub s4-u2" style="bottom:-20px;"></span></span> makes money</div>
+      <img class="wit s4-wit" data-layout-allow-overflow="" style="right:-80px; bottom:-300px; width:920px;" src="./assets/poses/pondering_skeptical_hand_on_chin.png" alt="">
+    </div>
+
+    <!-- SCENE 1.5  19.76-23.90  "Economists know it. Politicians know it. Even the trophy knows it." -->
+    <div id="scene-5" class="scene clip" data-start="19.76" data-duration="4.14" data-track-index="5" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-desk" src="./assets/desk-darkwood-1.jpg" alt="">
+      <div class="vig"></div>
+      <div class="klist" style="left:150px; top:150px;">
+        <div class="khead">WHO KNOWS IT?</div>
+        <div class="krow cue s5-r1"><svg width="54" height="54" viewBox="0 0 24 24"><path d="M4 13 L10 19 L20 5" fill="none" stroke="#e0392b" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>economists</span></div>
+        <div class="krow cue s5-r2"><svg width="54" height="54" viewBox="0 0 24 24"><path d="M4 13 L10 19 L20 5" fill="none" stroke="#e0392b" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>politicians</span></div>
+        <div class="krow cue s5-r3"><svg width="54" height="54" viewBox="0 0 24 24"><path d="M4 13 L10 19 L20 5" fill="none" stroke="#e0392b" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>the trophy</span></div>
+      </div>
+      <div id="s5-tro" style="position:absolute; left:1190px; top:230px; width:470px; z-index:6; transform-origin:50% 85%;">
+        <img class="prop" style="left:0; top:0; width:470px; position:relative; filter:drop-shadow(0 16px 34px rgba(0,0,0,0.6));" src="./assets/trophy-gold-parody.png" alt="">
+        <div class="geye cue s5-e1" style="left:128px; top:118px;"><i></i></div>
+        <div class="geye cue s5-e2" style="left:262px; top:118px;"><i></i></div>
+      </div>
+      <img class="wit cue s5-wit" data-layout-allow-overflow="" style="left:610px; bottom:-230px; width:560px;" src="./assets/poses/deadpan_unimpressed_half_lidded.png" alt="">
+    </div>
+
+    <!-- SCENE 1.6  23.90-30.78  "Look at it. Shiny. Golden. Beautiful. And behind it, a receipt. A very, very long receipt." -->
+    <div id="scene-6" class="scene clip" data-start="23.90" data-duration="6.88" data-track-index="6" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-bokeh" src="./assets/gold-bokeh-black-1.jpg" alt="">
+      <div class="vig"></div>
+      <div id="pan" style="position:absolute; inset:0; z-index:5;">
+        <img id="s6-tro" class="prop" style="left:740px; top:80px; width:540px; filter:saturate(1.2) brightness(1.08) drop-shadow(0 20px 44px rgba(0,0,0,0.75)) drop-shadow(0 -8px 34px rgba(255,214,90,0.4));" src="./assets/trophy-gold-parody.png" alt="">
+        <div class="glint cue s6-gl1" style="left:880px; top:200px;"><i></i><i></i></div>
+        <div class="glint cue s6-gl2" style="left:1160px; top:430px;"><i></i><i></i></div>
+        <div class="glint cue s6-gl3" style="left:970px; top:650px;"><i></i><i></i></div>
+        <img class="prop s6-fold" style="left:2220px; top:100px; width:560px; transform:rotate(88deg);" src="./assets/receipt-endless-roll.png" alt="">
+        <img class="prop s6-fold" style="left:2480px; top:150px; width:560px; transform:rotate(-86deg) scaleX(-1);" src="./assets/receipt-endless-roll.png" alt="">
+        <img class="prop s6-fold" style="left:2740px; top:90px; width:560px; transform:rotate(90deg);" src="./assets/receipt-endless-roll.png" alt="">
+        <img class="prop cue s6-fold4" style="left:2340px; top:200px; width:520px; transform:rotate(94deg) scaleX(-1);" src="./assets/receipt-endless-roll.png" alt="">
+        <div class="hand cue s6-bill" style="left:2360px; top:230px; font-size:66px; color:var(--red); text-shadow:2px 3px 0 rgba(0,0,0,0.6); transform:rotate(-4deg);">the bill</div>
+        <svg class="billarrow cue s6-arrow" style="left:2420px; top:320px;" width="120" height="130" viewBox="0 0 60 65"><path d="M14 4 C34 18 44 34 40 52" fill="none" stroke="#e0392b" stroke-width="5" stroke-linecap="round"/><path d="M28 46 L40 52 L46 40" fill="none" stroke="#e0392b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <img class="wit cue s6-wit" data-layout-allow-overflow="" style="left:-170px; bottom:-240px; width:760px;" src="./assets/poses/hand_on_cheek_surprised_curious.png" alt="">
+    </div>
+
+    <!-- SCENE 1.7  30.78-35.904  "So here is today's question: if hosting loses money, why does everyone want to pay?" -->
+    <div id="scene-7" class="scene clip" data-start="30.78" data-duration="5.124" data-track-index="7" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-curt" src="./assets/curtain-dark-1.jpg" alt="">
+      <div class="vig-heavy"></div>
+      <img class="prop" style="left:1060px; top:615px; width:240px; transform:rotate(60deg); z-index:9; opacity:0.96; filter:drop-shadow(0 8px 18px rgba(0,0,0,0.55));" src="./assets/receipt-endless-roll.png" alt="">
+      <img class="wit s7-wit" data-layout-allow-overflow="" style="left:460px; bottom:-220px; width:1000px; z-index:8;" src="./assets/poses/pointing_up_curious_open_mouth.png" alt="">
+      <div class="hand cue s7-l1" style="left:170px; top:210px; font-size:80px; transform:rotate(-2deg);"><span class="uspan">loses money<span class="ub s7-u1" style="bottom:-10px; height:8px;"></span></span></div>
+      <div class="hand cue s7-l2" style="left:1170px; top:170px; font-size:104px; color:#ffe9c4; transform:rotate(-1.5deg);">...so why <span class="uspan">PAY?<span class="ub s7-u2" style="bottom:-10px; height:9px; transform:scaleX(1);"></span></span></div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js" integrity="sha384-sG0Hv1tP1lZCk9KQmrIbY/XNwi+OY84GQqhMscbnsoBFqAz8KNCil1kvfL3Hbbk2" crossorigin="anonymous"></script>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused:true, defaults:{ overwrite:"auto" } });
+      const reveal = (t, hideAt, at, fv, tv={}) => { const r={}; if("x"in fv)r.x=0; if("y"in fv)r.y=0; if("scale"in fv)r.scale=1; if("opacity"in fv)r.opacity=1; tl.set(t,fv,hideAt); tl.to(t,{...r,...tv},at); };
+      const show  = (t, hideAt, at) => { tl.set(t,{opacity:0},hideAt); tl.set(t,{opacity:1},at); };
+      const smash = (t, hideAt, at, fv={y:22,scale:1.3,opacity:0}) => reveal(t,hideAt,at,fv,{duration:0.2,ease:"back.out(1.9)"});
+      const pop   = (t, hideAt, at) => reveal(t,hideAt,at,{scale:0.4,opacity:0},{duration:0.22,ease:"back.out(2)"});
+
+      /* SCENE 1  base+WIT+trophy from 0 (cold open). Confetti drifts; WINNER on Cup@4.18; glint on trophy@4.74; burst on party@5.26 */
+      tl.to("#scene-1 .cfp", { y:170, duration:5.8, ease:"none" }, 0);
+      smash("#scene-1 .s1-winner", 0, 4.18, { scale:1.6, opacity:0, rotation:4 });
+      pop("#scene-1 .s1-glint", 0, 4.74);
+      pop("#scene-1 .s1-b", 0, 5.26);
+
+      /* SCENE 2  tag swings in on prize@6.72; WIT on chance@7.76; LOSE BILLIONS stamps on dollars@8.98 */
+      tl.set("#s2-tag", { opacity:0, rotation:-14 }, 5.86);
+      tl.to("#s2-tag", { opacity:1, rotation:4, duration:0.32, ease:"back.out(1.6)" }, 6.72);
+      tl.to("#s2-tag", { rotation:-2, duration:0.35, ease:"sine.inOut" }, 7.06);
+      tl.to("#s2-tag", { rotation:0,  duration:0.4,  ease:"sine.inOut" }, 7.43);
+      show("#scene-2 .s2-wit", 5.86, 7.76);
+      smash("#scene-2 .s2-lose", 5.86, 8.98, { scale:1.5, opacity:0, rotation:-3 });
+
+      /* SCENE 3  label + receipt printer start on fight@10.26; chips on Zurich@12.16 / promo@13.50 / beg@15.66 */
+      show("#scene-3 .s3-label", 9.66, 10.26);
+      tl.set("#s3-rwrap", { opacity:1 }, 10.26);
+      tl.fromTo("#s3-receipt", { clipPath:"inset(0% 0% 92% 0%)" }, { clipPath:"inset(0% 0% 0% 0%)", duration:5.6, ease:"none", immediateRender:false }, 10.26);
+      pop("#scene-3 .s3-g1", 9.66, 12.16);
+      pop("#scene-3 .s3-g2", 9.66, 13.50);
+      pop("#scene-3 .s3-g3", 9.66, 15.66);
+
+      /* SCENE 4  line1 on hosting@17.22; line2 on never@18.56; red double underline scribbles on money@19.10 */
+      show("#scene-4 .s4-l1", 16.06, 17.22);
+      show("#scene-4 .s4-l2", 16.06, 18.56);
+      tl.to(".s4-u1", { scaleX:1, duration:0.16, ease:"power2.out" }, 19.10);
+      tl.to(".s4-u2", { scaleX:1, duration:0.16, ease:"power2.out" }, 19.24);
+
+      /* SCENE 5  rows stamp on Economists@19.76 / politicians@21.54 / the trophy@22.66; WIT arrives Even@22.12; googly eyes + nod on knows@22.92 */
+      smash("#scene-5 .s5-r1", 19.76, 19.82, { scale:1.25, opacity:0 });
+      smash("#scene-5 .s5-r2", 19.76, 21.54, { scale:1.25, opacity:0 });
+      smash("#scene-5 .s5-r3", 19.76, 22.66, { scale:1.25, opacity:0 });
+      show("#scene-5 .s5-wit", 19.76, 22.12);
+      pop("#scene-5 .s5-e1", 19.76, 22.70);
+      pop("#scene-5 .s5-e2", 19.76, 22.78);
+      tl.to("#s5-tro", { rotation:2.5, duration:0.12, ease:"power1.inOut" }, 22.92);
+      tl.to("#s5-tro", { rotation:0,   duration:0.22, ease:"sine.out" }, 23.06);
+      tl.to("#scene-5 .geye", { scaleY:0.15, duration:0.07, yoyo:true, repeat:1 }, 23.30);
+
+      /* SCENE 6  glints on Shiny@25.24 / Golden@25.44 / Beautiful@25.98; pan reveal on behind@26.96; WIT peek @27.30; "the bill" on receipt@28.30; extra fold on receipt@29.80 */
+      pop("#scene-6 .s6-gl1", 23.90, 25.24);
+      pop("#scene-6 .s6-gl2", 23.90, 25.44);
+      pop("#scene-6 .s6-gl3", 23.90, 25.98);
+      tl.to("#pan", { x:-1100, duration:0.6, ease:"power2.inOut" }, 26.96);
+      show("#scene-6 .s6-wit", 23.90, 27.30);
+      show("#scene-6 .s6-bill", 23.90, 28.30);
+      show("#scene-6 .s6-arrow", 23.90, 28.30);
+      smash("#scene-6 .s6-fold4", 23.90, 29.80, { y:-40, scale:1.15, opacity:0 });
+
+      /* SCENE 7  line1 on money@33.48 (strike draws right after); line2 pops on why@34.38 */
+      show("#scene-7 .s7-l1", 30.78, 33.48);
+      tl.to(".s7-u1", { scaleX:1, duration:0.18, ease:"power2.out" }, 33.60);
+      smash("#scene-7 .s7-l2", 30.78, 34.38, { y:20, scale:1.25, opacity:0 });
+
+      window.__timelines["Section01Hook"] = tl;
+    </script>
+  </div>
+</body>
+</html>

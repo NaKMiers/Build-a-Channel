@@ -1806,3 +1806,92 @@ Apply next time:
 
 Promote to shared memory:
 no; render execution mechanics.
+
+### 2026-07-07 - Section 6 (world-cup): clip-path Wipe Clips Protruding Children; Ground Creatures On The Photo's Ground Band; sysctl Port Fix Resets On Reboot
+
+Classification: `Render lesson` / `Operational lesson`
+
+Context:
+Rendered `6-why-countries-fight-to-host-the-world-cup` Section 6 (The Morning After, 61.44s,
+8 scenes, port 1006). All 25 assets pre-made and real RGBA (first section of this video with zero
+baked-checkerboard); the plan's pinned cue times matched the word-timings JSON exactly. Two QA
+rounds; lint/validate/inspect 0 errors.
+
+Lessons:
+- CLIP-PATH WIPE CLIPS PROTRUDING CHILDREN: a draw-on container revealed with
+  `clip-path:inset(...)` clips its absolutely-positioned children to the ELEMENT BOX even after
+  the wipe completes - a timeline year label at `left:-16px` rendered as "014". Keep every child
+  inside the container's box (pad the box, shift internals) when using clip-path reveals.
+- GROUND A CREATURE/PROP ON THE PHOTO'S GROUND BAND: the elephant-stadium hero was positioned by
+  %-of-frame from the plan and floated in the sky - the base photo's grass band started much
+  lower than the plan's nominal horizon. Anchor feet to the actual ground band measured on the
+  photo (content-bbox bottom -> ground y), same class as the S5 snapshot-measure rule.
+- The whisper corrupt-tail bypass worked as planned: pin the final beat to the last GOOD word's
+  end (Bruno@60.86) and clamp to audio duration; never use a backward-jump timestamp.
+- Linux box: `net.ipv4.ip_unprivileged_port_start` had RESET to 1024 (reboot since the last
+  session) - re-run `sudo sysctl -w net.ipv4.ip_unprivileged_port_start=1000` before starting any
+  100x preview server; consider persisting in /etc/sysctl.d/ if this recurs.
+- Reconfirmed standing rules that caught real defects in snapshot QA: chip any cue text on a
+  bright/textured base (bare white handwriting on sky was unreadable), keep the zoom-lens inset
+  on the pose's physical glass instead of near the face, and put must-read receipt text on a
+  self-carried chip.
+
+Apply next time:
+- pad clip-path-wiped containers so no child sticks out of the box
+- measure the base photo's ground band before placing any standing creature/prop
+- re-check the sysctl port floor at the start of every render session on this box
+
+Promote to shared memory:
+no; render execution mechanics + environment note.
+
+### 2026-07-07 - Sections 7+8+9 (world-cup) Built By THREE PARALLEL AGENTS In One Run; New Text/Type-On, Decorated-Base, And CTA-Port Mechanics
+
+Classification: `Render lesson` / `Operational lesson`
+
+Context:
+The owner asked to render Sections 7, 8, and 9 of `6-why-countries-fight-to-host-the-world-cup` "in
+parallel". The orchestrator ran all gates first (assets on disk vs manifest, word timings, ports free,
+sysctl port floor re-applied - it HAD reset again since the morning session), then spawned three
+concurrent agents, one section each. All three passed lint/validate 0 errors and snapshot QA
+(S7: 9 scenes 66.987s port 1007; S8: 6 scenes 39.573s port 1008; S9: 2 scenes 17.877s port 1009).
+
+Lessons:
+- PARALLEL SECTION RENDERING WORKS when each agent stays inside its own `previews/<N>-*/` folder +
+  its own `hyperframes/review/section-XX.html`, and ALL shared files (`05-production-board.md`,
+  `asset-manifest.md`, `ATTRIBUTION.md`, this memory file) are written ONLY by the orchestrator after
+  the agents finish. Give each agent the full required-reading list, the Linux environment facts, and
+  an explicit do-not-touch list. Derived assets get NEW filenames and are reported up, not logged
+  directly.
+- CENTERED TYPE-ON CLIPS HALF-WORDS: a `clip-path` type-on/wipe across CENTERED (or multi-line) text
+  reveals clipped word fragments mid-animation ("worlc/expensi"). Use per-line word-timed hard-shows
+  for typed captions, or left-align a single line so the wipe follows the reading direction.
+- DECORATED/HOLIDAY BASE NEUTRALIZATION: when the only good base carries seasonal decor (Christmas
+  mantel), crop INTO a clean texture region (chimney breast, `transform: scale(2.35)` + origin) +
+  desaturate/cool-grade to kill the palette, and rebuild the load-bearing surface (the shelf) as a
+  CSS prop instead of fighting the photo's geometry.
+- CSS TEXT ON IMAGE PROPS: anchor the text to the MEASURED content face (bbox) of the asset (a paper
+  tag's face), never to the PNG canvas top - canvas padding puts text on the string/knot.
+- BAKED-STATE PROPS ANIMATE VIA PATCH + REPLICA: to animate a needle/X/dial that is baked into a
+  generated PNG, cover the baked state with a BLURRED gradient patch (a crisp cream patch reads as a
+  pill) and reveal a CSS replica from the beat onward.
+- DETACHED CSS EMOTION MARKS READ AS NOISE: pose-catalog descriptions still drift from pixels
+  (`furious_shouting_anger_mark` has NO separate mark). If the pose already carries the emotion, drop
+  the companion CSS mark entirely rather than drawing one next to the face.
+- CTA KIT PORTS CLEANLY: the ai-slop S8 fake-YouTube cursor-click card adapts directly (new copy, new
+  timings). Center click targets on the pill's right HALF so the cursor never sits on the button text
+  at flip time; check toast/snackbar subtitle-safety at the ZOOMED position when the card gets a
+  push-in (a 6% zoom drifts bottom elements ~2% down); occlusion gags whose plan wording conflicts
+  with the plan's own zones resolve best as a believable frame-edge crop (rise-from-bottom) instead of
+  a fake mid-air wrapper crop.
+- SNAPSHOT FILENAMES TRUNCATE DECIMALS: `--at 39.65` writes `frame-NN-at-39.6s.png` - glob by prefix
+  when reading QA frames, don't build the exact path from the requested timestamp.
+
+Apply next time:
+- for multi-section requests, gate centrally, fan out one agent per section, reserve shared files for
+  the orchestrator
+- word-timed per-line hard-shows for typed captions; bbox-anchor tag text; blurred patches over baked
+  prop states; no detached emotion marks; re-check the sysctl port floor EVERY session (it keeps
+  resetting)
+
+Promote to shared memory:
+no; render execution + orchestration mechanics.

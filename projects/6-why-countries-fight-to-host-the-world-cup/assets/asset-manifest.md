@@ -1781,7 +1781,7 @@ subscribe UI built entirely in CSS at render (no PNG needed). All receipt/card t
 | [x]  | `desk-cozy-evening-1.jpg`              | browse-real-photo | 9.2                       | cozy lamp-lit wooden home desk at evening, warm glow, small plant silhouette, golden bokeh, no people/brands | see ATTRIBUTION.md                  | `done`                                                |
 
 
-Render gate: Section 9 render is BLOCKED until the two shared reuses (`trophy-gold-parody.png`,
+Render gate: Section 9 render is READY. The two shared reuses (`trophy-gold-parody.png`,
 `receipt-endless-roll.png`) and both browse bases are in `assets/`. The subscribe UI is CSS - no asset
 file. (`peace_sign_calm_open_mouth.png` pose is already copied.)
 

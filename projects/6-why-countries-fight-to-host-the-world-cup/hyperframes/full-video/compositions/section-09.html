@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Section 09 Outro: The Cheapest Host On Earth - Why Countries Fight to Host the World Cup</title>
+  <style>
+    @font-face { font-family:"PatrickHandLocal"; src:url("./assets/fonts/patrick-hand-latin.woff2") format("woff2"); font-weight:400; font-style:normal; font-display:block; }
+    :root { --ink:#1c1712; --red:#e0392b; --cream:#fff7d8; --green:#1d8a3e; --amber:#d97706; --ytred:#ff0033; --ytblue:#2f6fed; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:#07070a; color:#fff; overflow:hidden; }
+    #Section09Outro { position:relative; width:1920px; height:1080px; overflow:hidden; background:#07070a; font-family:"PatrickHandLocal"; }
+    .scene { position:absolute; inset:0; width:100%; height:100%; z-index:1; }
+    .photo { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+    .b-cafe { filter:saturate(1.12) contrast(1.06) brightness(0.9); }
+    .b-desk { filter:saturate(1.1) contrast(1.08) brightness(0.86); }
+    .vig { position:absolute; inset:0; z-index:2; background:radial-gradient(ellipse 88% 88% at 50% 48%, rgba(4,5,10,0) 56%, rgba(4,5,10,0.3) 100%); }
+    .cue { opacity:0; }
+    .uifont { font-family:"Liberation Sans","Segoe UI",Arial,sans-serif; }
+
+    /* ============ SCENE 9.1  the trophy prints its LAST receipt line ============ */
+    .s91-shadow { position:absolute; z-index:3; left:1130px; top:688px; width:340px; height:46px; background:radial-gradient(ellipse at center, rgba(20,12,4,0.32), rgba(20,12,4,0) 70%); }
+    .s91-band { position:absolute; z-index:4; left:710px; top:120px; width:460px; transform:rotate(-68deg); filter:drop-shadow(0 8px 16px rgba(60,40,10,0.3)); }
+    .s91-trophy { position:absolute; z-index:6; left:1070px; top:45px; width:473px; filter:saturate(1.14) brightness(1.05) drop-shadow(0 14px 24px rgba(60,35,5,0.4)); }
+    .s91-glint { position:absolute; z-index:7; left:1244px; top:118px; width:52px; height:52px; }
+    .s91-glint::before { content:""; position:absolute; left:22px; top:0; width:8px; height:52px; background:#fff; border-radius:4px; box-shadow:0 0 14px rgba(255,255,255,0.9); }
+    .s91-glint::after { content:""; position:absolute; left:0; top:22px; width:52px; height:8px; background:#fff; border-radius:4px; }
+    .s91-panel { position:absolute; z-index:10; left:190px; top:180px; width:520px; height:560px; background:#fdfdf8; transform:rotate(-2deg); padding:30px 36px 0; filter:drop-shadow(0 16px 30px rgba(30,20,5,0.4));
+      clip-path:polygon(0 0, 100% 0, 100% 97%, 96% 100%, 92% 97%, 88% 100%, 84% 97%, 80% 100%, 76% 97%, 72% 100%, 68% 97%, 64% 100%, 60% 97%, 56% 100%, 52% 97%, 48% 100%, 44% 97%, 40% 100%, 36% 97%, 32% 100%, 28% 97%, 24% 100%, 20% 97%, 16% 100%, 12% 97%, 8% 100%, 4% 97%, 0 100%); }
+    .s91-head { font-family:"Courier New",monospace; font-weight:bold; font-size:37px; letter-spacing:2px; color:#4a453c; border-bottom:3px dashed #b9ac86; padding-bottom:12px; }
+    .s91-item { display:flex; align-items:flex-end; margin-top:26px; font-family:"Courier New",monospace; font-weight:bold; font-size:34px; color:#55503f; }
+    .s91-item .lead { flex:1; border-bottom:4px dotted #9a927c; margin:0 12px 8px; }
+    .s91-item .amt { color:var(--green); }
+    .s91-rule { border-top:6px double #4a453c; margin-top:30px; }
+    .s91-total { display:flex; justify-content:space-between; align-items:baseline; margin-top:18px; font-family:"Courier New",monospace; font-weight:bold; font-size:44px; color:#2c281f; }
+    .s91-total .amt { font-size:60px; color:var(--green); }
+    .s91-l4 { position:relative; }
+    .s91-flash { position:absolute; left:-10px; right:-10px; top:-8px; bottom:-10px; background:rgba(29,138,62,0.22); border-radius:10px; z-index:-1; }
+
+    /* ============ SCENE 9.2  the WhyTube card performs the CTA ============ */
+    .zoom { position:absolute; inset:0; transform-origin:50% 46%; }
+    .wit { position:absolute; object-fit:contain; z-index:3; filter:drop-shadow(14px 16px 0 rgba(0,0,0,0.28)); transform-origin:center center; }
+
+    .card { position:absolute; z-index:5; left:120px; top:100px; width:980px; height:740px; background:#ffffff; border-radius:22px; box-shadow:0 30px 60px rgba(10,8,4,0.5); transform-origin:center center; }
+    .thumb { position:absolute; left:22px; top:22px; width:936px; height:360px; border-radius:14px; background:linear-gradient(135deg,#1b2b4d 0%,#0d1730 62%,#141026 100%); overflow:hidden; }
+    .thumb::before { content:""; position:absolute; inset:0; background:radial-gradient(circle at 46% 42%, rgba(255,200,90,0.26), rgba(0,0,0,0) 58%); }
+    .thumb img { position:absolute; left:319px; top:27px; width:222px; filter:saturate(1.1) brightness(1.02) drop-shadow(0 10px 18px rgba(0,0,0,0.5)); }
+    .tdoodle { position:absolute; left:474px; top:258px; width:54px; height:86px; background:#f5f2e8; border-radius:6px; transform:rotate(12deg); box-shadow:0 4px 10px rgba(0,0,0,0.4); }
+    .tdoodle::after { content:""; position:absolute; left:9px; right:9px; top:12px; height:56px; background:repeating-linear-gradient(180deg, #b9b3a2 0 3px, transparent 3px 12px); }
+    .vtitle { position:absolute; left:30px; top:398px; width:920px; font-family:"Liberation Sans","Segoe UI",Arial,sans-serif; font-weight:800; font-size:42px; line-height:1.18; color:#111; }
+    .ava { position:absolute; left:30px; top:516px; width:84px; height:84px; border-radius:50%; background:#f0a800; box-shadow:0 5px 12px rgba(0,0,0,0.25); }
+    .ava span { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-family:"PatrickHandLocal"; font-size:56px; color:#fff; padding-bottom:6px; }
+    .cname { position:absolute; left:132px; top:522px; font-family:"Liberation Sans","Segoe UI",Arial,sans-serif; font-weight:800; font-size:36px; color:#111; }
+    .csub { position:absolute; left:132px; top:574px; font-family:"Liberation Sans","Segoe UI",Arial,sans-serif; font-weight:600; font-size:27px; color:#8a8a8a; }
+    .mline { position:absolute; left:130px; top:612px; width:266px; height:8px; background:var(--amber); border-radius:4px; }
+
+    .likewrap { position:absolute; left:30px; top:620px; width:250px; height:74px; transform-origin:center center; }
+    .subwrap  { position:absolute; left:610px; top:620px; width:340px; height:74px; transform-origin:center center; }
+    .pill { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; gap:14px; border-radius:40px; font-family:"Liberation Sans","Segoe UI",Arial,sans-serif; font-weight:800; font-size:34px; box-shadow:0 8px 18px rgba(0,0,0,0.18); }
+    .like-off { background:#ebebeb; color:#222; }
+    .like-on  { background:var(--ytblue); color:#fff; opacity:0; }
+    .sub-red  { background:var(--ytred); color:#fff; letter-spacing:0.5px; }
+    .sub-done { background:#ececec; color:#333; border:2px solid #d5d5d5; opacity:0; }
+    .svgic { flex:0 0 auto; display:block; }
+
+    /* $0.00 swing tag: anchored at the LIKE pill's right edge */
+    .tagwrap { position:absolute; left:284px; top:648px; width:190px; height:90px; transform-origin:8px 10px; }
+    .tagwrap i { position:absolute; left:2px; top:4px; width:34px; height:5px; background:#7a7a72; border-radius:3px; transform:rotate(24deg); transform-origin:left center; }
+    .tagbody { position:absolute; left:24px; top:12px; width:160px; height:62px; background:var(--green); border-radius:8px; transform:rotate(-9deg); clip-path:polygon(0 50%, 26px 0, 100% 0, 100% 100%, 26px 100%); display:flex; align-items:center; justify-content:center; padding-left:22px; font-family:"Liberation Sans","Segoe UI",Arial,sans-serif; font-weight:800; font-size:34px; color:#fff; box-shadow:0 8px 16px rgba(0,0,0,0.3); }
+    .tagbody::before { content:""; position:absolute; left:12px; top:26px; width:11px; height:11px; border-radius:50%; background:#fff; }
+
+    .toast { position:absolute; left:480px; top:690px; width:462px; height:58px; background:#202124; border-radius:12px; display:flex; align-items:center; justify-content:center; font-family:"Liberation Sans","Segoe UI",Arial,sans-serif; font-weight:700; font-size:29px; color:#fff; box-shadow:0 10px 22px rgba(0,0,0,0.35); }
+
+    /* namespaced confetti (never collides with icon sub-elements) */
+    .confetti { position:absolute; z-index:12; left:900px; top:752px; width:10px; height:10px; }
+    .cfp { position:absolute; left:0; top:0; width:18px; height:12px; border-radius:3px; }
+    .cfp:nth-child(5n+1){ background:#ffd23f; } .cfp:nth-child(5n+2){ background:#17a2a8; }
+    .cfp:nth-child(5n+3){ background:var(--red); } .cfp:nth-child(5n+4){ background:#ffb0d0; }
+    .cfp:nth-child(5n+5){ background:#fff; }
+
+    .ring { position:absolute; z-index:14; width:96px; height:96px; border-radius:50%; border:6px solid rgba(25,25,25,0.45); transform-origin:center center; }
+    .r-like { left:312px; top:709px; } /* frame coords; centered on the LIKE pill's right half */
+    .r-sub  { left:852px; top:709px; }
+
+    .anno { position:absolute; z-index:15; left:1244px; top:92px; font-family:"PatrickHandLocal"; font-size:62px; color:#b45309; background:rgba(255,247,216,0.82); border-radius:12px; padding:0 20px 4px; transform:rotate(-2deg); box-shadow:0 6px 14px rgba(0,0,0,0.2); }
+    .annoarrow { position:absolute; z-index:14; inset:0; }
+
+    .stamp { position:absolute; z-index:16; left:1236px; top:668px; border:6px solid var(--green); border-radius:12px; padding:4px 22px 8px; transform:rotate(-6deg); font-family:"Courier New",monospace; font-weight:bold; font-size:40px; letter-spacing:3px; color:var(--green); background:rgba(255,255,255,0.72); box-shadow:0 6px 14px rgba(0,0,0,0.18); transform-origin:center center; }
+
+    .cursor { position:absolute; left:1760px; top:1020px; z-index:20; opacity:0; transform-origin:8px 5px; filter:drop-shadow(2px 3px 3px rgba(0,0,0,0.5)); }
+
+    .wit,.card,.likewrap,.subwrap,.tagwrap,.toast,.cursor,.confetti,.ring,.anno,.annoarrow,.stamp,.mline,.s91-panel,.s91-glint,.s91-flash,.tdoodle { will-change:opacity, transform; }
+  </style>
+</head>
+<body>
+  <div id="Section09Outro" data-composition-id="Section09Outro" data-start="0" data-duration="17.877" data-width="1920" data-height="1080">
+
+    <!-- SCENE 9.1  0.00-5.66  "By the way, hosting THIS channel costs you nothing. No stadiums. No taxes. No receipt." -->
+    <div id="scene-91" class="scene clip" data-start="0" data-duration="5.66" data-track-index="1" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-cafe" src="./assets/cafe-counter-warm-1.jpg" alt="">
+      <div class="vig"></div>
+      <div class="s91-shadow"></div>
+      <img class="s91-band" data-layout-allow-overflow="" src="./assets/receipt-endless-roll.png" alt="">
+      <img class="s91-trophy" data-layout-allow-overflow="" src="./assets/trophy-gold-parody.png" alt="">
+      <div class="s91-glint cue"></div>
+      <div class="s91-panel" id="panel91">
+        <div class="s91-head cue s91-l1">HOSTING: THIS CHANNEL</div>
+        <div class="s91-item cue s91-l2"><span>STADIUMS</span><span class="lead"></span><span class="amt">$0</span></div>
+        <div class="s91-item cue s91-l3"><span>TAXES</span><span class="lead"></span><span class="amt">$0</span></div>
+        <div class="cue s91-l4">
+          <div class="s91-flash cue" id="flash91"></div>
+          <div class="s91-rule"></div>
+          <div class="s91-total"><span>TOTAL:</span><span class="amt">$0.00</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCENE 9.2  5.66-17.877  the WhyTube card: cursor clicks LIKE + SUBSCRIBE, WIT peeks, CONSULTANT-FREE stamp -->
+    <div id="scene-92" class="scene clip" data-start="5.66" data-duration="12.217" data-track-index="2" data-layout-allow-overflow="" style="overflow:visible;">
+      <div class="zoom" id="s92zoom" data-layout-allow-overflow="" style="overflow:visible;">
+        <img class="photo b-desk" src="./assets/desk-cozy-evening-1.jpg" alt="">
+        <div class="vig"></div>
+
+        <!-- WIT hides below frame behind the card's right edge until 15.48 -->
+        <img class="wit" id="wit92" data-layout-allow-overflow="" style="left:934px; top:240px; width:990px;" src="./assets/poses/peace_sign_calm_open_mouth.png" alt="">
+
+        <!-- parody WhyTube card (own branding only, zero numeric UI lines) -->
+        <div class="card" id="card92">
+          <div class="thumb">
+            <img src="./assets/trophy-gold-parody.png" alt="">
+            <div class="tdoodle"></div>
+          </div>
+          <div class="vtitle uifont">Why Countries Fight to Host the World Cup</div>
+          <div class="ava"><span>W</span></div>
+          <div class="cname uifont">Why It Works</div>
+          <div class="csub uifont">stories about money</div>
+          <div class="mline" id="mline92" style="clip-path:inset(0 100% 0 0);"></div>
+          <div class="likewrap" id="likewrap">
+            <div class="pill like-off" id="likeOff"><svg class="svgic" width="38" height="38" viewBox="0 0 24 24" fill="currentColor"><path d="M2 21h2.5V10H2v11zm20-10c0-1.1-.9-2-2-2h-5.7l.86-4.14.03-.32c0-.41-.17-.79-.44-1.06L13.67 2 7.6 8.1c-.37.36-.6.87-.6 1.4v9.5c0 1.1.9 2 2 2h8c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1z"/></svg>LIKE</div>
+            <div class="pill like-on" id="likeOn"><svg class="svgic thumbic" width="38" height="38" viewBox="0 0 24 24" fill="currentColor"><path d="M2 21h2.5V10H2v11zm20-10c0-1.1-.9-2-2-2h-5.7l.86-4.14.03-.32c0-.41-.17-.79-.44-1.06L13.67 2 7.6 8.1c-.37.36-.6.87-.6 1.4v9.5c0 1.1.9 2 2 2h8c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1z"/></svg>Liked</div>
+          </div>
+          <div class="subwrap" id="subwrap">
+            <div class="pill sub-red" id="subRed">SUBSCRIBE</div>
+            <div class="pill sub-done" id="subDone"><svg class="svgic bellic" width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5S10.5 3.17 10.5 4v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/></svg>SUBSCRIBED</div>
+          </div>
+          <div class="tagwrap cue" id="tag92"><i></i><div class="tagbody">$0.00</div></div>
+          <div class="toast cue uifont" id="toast92">Welcome to the channel!</div>
+        </div>
+
+        <!-- editorial annotation: quotes the narration, not a UI metric -->
+        <div class="anno cue" id="anno92">100% ours</div>
+        <svg class="annoarrow cue" id="annoarrow92" width="1920" height="1080" viewBox="0 0 1920 1080">
+          <path d="M1330,185 C1240,400 1140,560 600,688" fill="none" stroke="#d97706" stroke-width="10" stroke-linecap="round"/>
+          <path d="M652,664 L586,694 L648,724 Z" fill="#d97706"/>
+        </svg>
+
+        <div class="ring cue r-like" id="ringLike"></div>
+        <div class="ring cue r-sub" id="ringSub"></div>
+
+        <div class="confetti" id="confetti92">
+          <i class="cfp"></i><i class="cfp"></i><i class="cfp"></i><i class="cfp"></i><i class="cfp"></i>
+          <i class="cfp"></i><i class="cfp"></i><i class="cfp"></i><i class="cfp"></i><i class="cfp"></i>
+          <i class="cfp"></i><i class="cfp"></i><i class="cfp"></i><i class="cfp"></i>
+        </div>
+
+        <div class="stamp cue" id="stamp92">CONSULTANT-FREE</div>
+
+        <!-- drawn SVG cursor -->
+        <svg class="cursor" id="cursor92" width="72" height="72" viewBox="0 0 24 24"><path d="M3 2 L3 20.5 L8 15.5 L11.2 22 L14.2 20.6 L11 14.2 L18 14.2 Z" fill="#ffffff" stroke="#111111" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js" integrity="sha384-sG0Hv1tP1lZCk9KQmrIbY/XNwi+OY84GQqhMscbnsoBFqAz8KNCil1kvfL3Hbbk2" crossorigin="anonymous"></script>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused:true, defaults:{ overwrite:"auto" } });
+      const show  = (t, hideAt, at) => { tl.set(t,{opacity:0},hideAt); tl.set(t,{opacity:1},at); };
+      const pop   = (t, hideAt, at) => { tl.set(t,{opacity:0,scale:0.4},hideAt); tl.to(t,{opacity:1,scale:1,duration:0.22,ease:"back.out(2)"},at); };
+      const boing = (sel, at) => {
+        tl.to(sel,{scale:1.18,rotation:-5,duration:0.10,ease:"power2.out"},at);
+        tl.to(sel,{scale:0.92,rotation:5, duration:0.10},at+0.10);
+        tl.to(sel,{scale:1.06,rotation:-3,duration:0.10},at+0.20);
+        tl.to(sel,{scale:1,   rotation:0, duration:0.16,ease:"sine.out"},at+0.30);
+      };
+      const clickdip = (sel, at) => { tl.to(sel,{scale:0.78,duration:0.07,ease:"power2.in"},at); tl.to(sel,{scale:1,duration:0.13,ease:"back.out(2)"},at+0.07); };
+      const clickring = (sel, at) => { tl.set(sel,{opacity:0.9,scale:0.35},at); tl.to(sel,{opacity:0,scale:1.5,duration:0.4,ease:"power1.out"},at+0.02); };
+
+      /* ===== SCENE 9.1  print cues: channel@1.52, stadiums@3.24, taxes@4.24, receipt@5.12 (impact), tear 5.45 ===== */
+      const nudge = (at) => tl.to("#panel91",{y:"-=6",duration:0.06,yoyo:true,repeat:1,ease:"power1.inOut"},at);
+      pop("#scene-91 .s91-glint", 0.04, 1.10);
+      tl.to("#scene-91 .s91-glint",{opacity:0,duration:0.3,ease:"sine.in"},1.85);
+      show("#scene-91 .s91-l1", 0.04, 1.52); nudge(1.52);
+      show("#scene-91 .s91-l2", 0.04, 3.24); nudge(3.24);
+      show("#scene-91 .s91-l3", 0.04, 4.24); nudge(4.24);
+      /* TOTAL: the impact beat - scale-punch + brief green flash */
+      tl.set("#scene-91 .s91-l4",{opacity:0,scale:1.15},0.04);
+      tl.to("#scene-91 .s91-l4",{opacity:1,scale:1,duration:0.2,ease:"back.out(1.8)"},5.12);
+      tl.set("#flash91",{opacity:0},0.04);
+      tl.to("#flash91",{opacity:0.55,duration:0.1,ease:"power1.out"},5.12);
+      tl.to("#flash91",{opacity:0,duration:0.25,ease:"power1.in"},5.24);
+      /* tear-off at 5.45: printed stub drops ~20px, straightens, settles */
+      tl.to("#panel91",{y:20,rotation:0.6,duration:0.16,ease:"power2.in"},5.45);
+      tl.to("#panel91",{y:24,rotation:0,duration:0.09,ease:"sine.out"},5.61);
+
+      /* ===== SCENE 9.2  card pop 5.66; cursor in something@6.60; LIKE click there@8.22; tag free@8.92;
+             anno hundred@9.94; SUBSCRIBE click Subscribe@11.32 (+push-in, confetti, toast 11.62);
+             underline money@12.86; bell goes@14.22; WIT consultants@15.48; stamp predict@16.66 ===== */
+      tl.set("#s92zoom",{scale:1},5.70);
+      tl.set("#wit92",{y:880},5.70);
+      tl.set("#cursor92",{left:1760,top:1020,opacity:0,scale:1},5.70);
+      tl.set("#mline92",{clipPath:"inset(0 100% 0 0)"},5.70);
+      tl.set(["#tag92","#toast92","#anno92","#annoarrow92","#ringLike","#ringSub","#stamp92"],{opacity:0},5.70);
+      tl.set("#confetti92 .cfp",{opacity:0},5.70);
+      tl.set(["#likeOn"],{opacity:0},5.70);
+      tl.set(["#subDone"],{opacity:0},5.70);
+      tl.set("#likeOn .thumbic",{rotation:0},5.70);
+
+      /* card pops in with the cut */
+      tl.set("#card92",{opacity:0,scale:0.86},5.66);
+      tl.to("#card92",{opacity:1,scale:1,duration:0.3,ease:"back.out(1.6)"},5.70);
+
+      /* cursor slides in on something@6.60, lazy arc, hovers LIKE by 7.92 */
+      tl.to("#cursor92",{opacity:1,duration:0.2,ease:"sine.out"},6.60);
+      tl.to("#cursor92",{left:351,duration:1.32,ease:"power1.inOut"},6.60);
+      tl.to("#cursor92",{top:751,duration:1.32,ease:"power2.out"},6.60);
+
+      /* LIKE click on there@8.22 */
+      clickdip("#cursor92",8.22);
+      clickring("#ringLike",8.22);
+      boing("#likewrap",8.22);
+      tl.set("#likeOff",{opacity:0},8.30); tl.set("#likeOn",{opacity:1},8.30);
+      tl.to("#likeOn .thumbic",{rotation:-15,duration:0.2,ease:"back.out(2)"},8.30);
+
+      /* $0.00 tag swings out of the LIKE pill's corner on free@8.92 */
+      tl.set("#tag92",{opacity:1,rotation:-46},8.92);
+      tl.to("#tag92",{rotation:0,duration:0.62,ease:"elastic.out(1,0.45)"},8.92);
+
+      /* handwritten annotation + arrow on hundred@9.94 (token "100") */
+      tl.set("#anno92",{opacity:0,scale:1.2},5.72);
+      tl.to("#anno92",{opacity:1,scale:1,duration:0.18,ease:"back.out(1.8)"},9.94);
+      show("#annoarrow92",5.72,10.10);
+
+      /* cursor darts to SUBSCRIBE */
+      tl.to("#cursor92",{left:892,top:751,duration:0.55,ease:"power2.inOut"},10.60);
+
+      /* SUBSCRIBE click on Subscribe@11.32 + two-phase push-in */
+      clickdip("#cursor92",11.32);
+      clickring("#ringSub",11.32);
+      boing("#subwrap",11.32);
+      tl.set("#subRed",{opacity:0},11.40); tl.set("#subDone",{opacity:1},11.40);
+      tl.set("#subDone .bellic",{transformOrigin:"50% 18%"},11.40);
+      tl.to("#subDone .bellic",{rotation:-20,duration:0.07},11.44);
+      tl.to("#subDone .bellic",{rotation:18,duration:0.10},11.51);
+      tl.to("#subDone .bellic",{rotation:-10,duration:0.10},11.61);
+      tl.to("#subDone .bellic",{rotation:0,duration:0.12,ease:"sine.out"},11.71);
+      tl.to("#s92zoom",{scale:1.06,duration:0.8,ease:"power1.inOut"},11.32);
+      /* localized confetti burst from the SUBSCRIBE pill */
+      const bx=[-190,-130,-60,30,110,190,-160,-90,20,130,200,-30,70,-210];
+      const by=[-160,-220,-190,-230,-200,-150,-90,-120,-240,-110,-90,-260,-170,-130];
+      tl.set("#confetti92 .cfp",{x:0,y:0,opacity:1,scale:1,rotation:0},11.34);
+      tl.to("#confetti92 .cfp",{x:(i)=>bx[i], y:(i)=>by[i]+100, rotation:(i)=>bx[i]*1.3, opacity:0, scale:0.5, duration:0.8, ease:"power2.out"},11.36);
+      /* toast at 11.62 (end of the spoken word "Subscribe") */
+      tl.set("#toast92",{opacity:0,y:44},5.72);
+      tl.to("#toast92",{opacity:1,y:0,duration:0.28,ease:"back.out(1.7)"},11.62);
+
+      /* cursor drifts off */
+      tl.to("#cursor92",{left:1790,top:1035,duration:0.6,ease:"power1.in"},12.30);
+      tl.to("#cursor92",{opacity:0,duration:0.35,ease:"sine.in"},12.50);
+
+      /* marker underline under "stories about money" on money@12.86 */
+      tl.set("#mline92",{opacity:1},12.84);
+      tl.to("#mline92",{clipPath:"inset(0 0% 0 0)",duration:0.3,ease:"power1.inOut"},12.86);
+
+      /* tiny bell wiggle on goes@14.22 */
+      tl.to("#subDone .bellic",{rotation:-12,duration:0.08},14.22);
+      tl.to("#subDone .bellic",{rotation:9,duration:0.10},14.30);
+      tl.to("#subDone .bellic",{rotation:0,duration:0.12,ease:"sine.out"},14.40);
+
+      /* WIT's single appearance: peeks up from behind the card's right edge on consultants@15.48 */
+      tl.to("#wit92",{y:0,duration:0.45,ease:"power3.out"},15.48);
+
+      /* CONSULTANT-FREE stamp lands on predict@16.66 */
+      tl.set("#stamp92",{opacity:0,scale:1.8,rotation:-14},5.72);
+      tl.to("#stamp92",{opacity:1,scale:1,rotation:-6,duration:0.18,ease:"power3.in"},16.66);
+      /* everything holds in final state to the clamped end 17.877 */
+
+      window.__timelines["Section09Outro"] = tl;
+    </script>
+  </div>
+</body>
+</html>
