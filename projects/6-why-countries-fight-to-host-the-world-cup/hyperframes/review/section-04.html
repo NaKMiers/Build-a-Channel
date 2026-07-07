@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Section 04 FIFA Keeps The Money - Why Countries Fight to Host the World Cup</title>
+  <style>
+    @font-face { font-family:"PatrickHandLocal"; src:url("./assets/fonts/patrick-hand-latin.woff2") format("woff2"); font-weight:400; font-style:normal; font-display:block; }
+    :root { --ink:#1c1712; --red:#e0392b; --cream:#fff7d8; --gold:#ffd23f; --green:#1d8a3e; --mint:#bff0cc; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:#07070a; color:#fff; overflow:hidden; }
+    #Section04FifaKeepsTheMoney { position:relative; width:1920px; height:1080px; overflow:hidden; background:#07070a; font-family:"PatrickHandLocal"; }
+    .scene { position:absolute; inset:0; width:100%; height:100%; z-index:1; }
+    .photo { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+    .b-board { filter:saturate(1.08) contrast(1.03) brightness(1.02); }
+    .b-tv    { filter:saturate(1.05) contrast(1.04) brightness(0.88); }
+    .b-crane { filter:sepia(0.22) saturate(1.18) contrast(1.03) brightness(0.86); }
+    .b-stamp { filter:saturate(1.05) contrast(1.02) brightness(1.0); }
+    .b-lake  { filter:saturate(1.12) contrast(1.02) brightness(1.02); }
+    .b-chess { filter:saturate(1.06) contrast(1.03) brightness(0.94); }
+    .b-vault { filter:saturate(0.95) contrast(1.05) brightness(0.9); }
+    .b-scale { filter:saturate(1.12) contrast(0.98) brightness(1.42); }
+    .b-gavel { filter:sepia(0.12) saturate(1.1) contrast(1.02) brightness(0.92); }
+    .vig { position:absolute; inset:0; z-index:2; background:radial-gradient(ellipse 86% 86% at 50% 48%, rgba(4,5,10,0) 58%, rgba(4,5,10,0.32) 100%); }
+
+    .wit { position:absolute; object-fit:contain; z-index:8; filter:drop-shadow(14px 16px 0 rgba(0,0,0,0.3)); transform-origin:center center; }
+    .witwrap { position:absolute; overflow:hidden; z-index:8; }
+    .witwrap img { position:absolute; display:block; filter:drop-shadow(14px 16px 0 rgba(0,0,0,0.3)); }
+    .flip { transform:scaleX(-1); }
+    .prop { position:absolute; object-fit:contain; z-index:6; }
+    .hand { position:absolute; z-index:10; font-family:"PatrickHandLocal"; color:#fff; text-shadow:3px 4px 0 rgba(0,0,0,0.55); line-height:1.05; white-space:nowrap; }
+    .ink  { color:var(--ink); text-shadow:none; }
+    .cue  { opacity:0; }
+
+    /* ---- 4.1 boardroom signing ---- */
+    .s41-label { position:absolute; z-index:9; font-family:Georgia,serif; font-size:27px; letter-spacing:2px; color:#17130e; background:#fdfdf8; border:double 7px #2a2118; padding:8px 22px; white-space:nowrap; box-shadow:0 10px 24px rgba(0,0,0,0.35); }
+    .s41-tab { position:absolute; z-index:9; background:#ffe23e; border:3px solid #b89a00; border-radius:4px 10px 10px 4px; padding:5px 14px 5px 10px; font-family:"Courier New",monospace; font-weight:bold; font-size:22px; color:#8a0d00; white-space:nowrap; box-shadow:0 6px 14px rgba(0,0,0,0.35); transform-origin:left center; }
+    .s41-tab i { display:inline-block; width:0; height:0; border-top:8px solid transparent; border-bottom:8px solid transparent; border-left:14px solid #c22; margin-right:8px; }
+    .s41-sticky { position:absolute; z-index:10; background:#fdf3c0; border:2px solid #d8c476; box-shadow:0 10px 22px rgba(0,0,0,0.35); padding:12px 24px; font-size:44px; color:var(--ink); transform:rotate(2deg); white-space:nowrap; font-family:"PatrickHandLocal"; }
+    .s41-arrowdn { position:absolute; z-index:10; width:5px; background:#2a2118; border-radius:3px; transform-origin:top center; }
+    .s41-arrowdn i { position:absolute; bottom:-4px; left:-7px; width:0; height:0; border-left:9px solid transparent; border-right:9px solid transparent; border-top:16px solid #2a2118; }
+    .s41-dust { position:absolute; z-index:7; width:80px; height:34px; background:rgba(210,200,180,0.75); border-radius:50%; }
+
+    /* ---- 4.2 contract card + safe ---- */
+    .s42-card { position:absolute; z-index:6; left:115px; top:170px; width:770px; height:670px; background:#fdfdf8; border:2px solid #d9d4c6; border-radius:6px; box-shadow:0 20px 44px rgba(0,0,0,0.55); transform:rotate(-1deg); padding:30px 38px; font-family:Georgia,serif; color:#17130e; }
+    .s42-hdr { font-size:32px; letter-spacing:4px; border-bottom:3px solid #17130e; padding-bottom:10px; margin-bottom:26px; font-variant:small-caps; }
+    .s42-row { position:relative; font-size:38px; line-height:1.25; margin-bottom:30px; }
+    .s42-hl { position:absolute; left:-8px; top:-2px; height:52px; background:rgba(80,220,120,0.45); z-index:-1; transform:scaleX(0); transform-origin:left center; }
+    .s42-fifacircle { position:absolute; z-index:9; width:130px; height:64px; border:5px solid var(--red); border-radius:50%; transform:rotate(-4deg); }
+    .s42-link { position:absolute; z-index:9; width:6px; background:var(--red); border-radius:3px; transform-origin:top center; }
+    .s42-spot { position:absolute; z-index:9; font-family:"PatrickHandLocal"; font-size:42px; color:var(--red); transform:rotate(-5deg); white-space:nowrap; }
+    .garrow { position:absolute; z-index:7; transform-origin:left center; }
+    .garrow b { position:absolute; left:0; top:0; right:26px; bottom:0; background:var(--green); border-radius:6px; box-shadow:0 4px 10px rgba(0,0,0,0.4); }
+    .garrow i { position:absolute; right:0; top:50%; width:0; height:0; }
+    .rarrow { position:absolute; z-index:7; transform-origin:right center; }
+    .rarrow b { position:absolute; left:26px; top:0; right:0; bottom:0; background:var(--red); border-radius:6px; box-shadow:0 4px 10px rgba(0,0,0,0.4); }
+    .rarrow i { position:absolute; left:0; top:50%; width:0; height:0; }
+
+    /* ---- 4.3 bills board ---- */
+    .s43-chip { position:absolute; z-index:9; width:250px; background:#fdfdf8; border:3px solid #c9c2b2; border-top:14px solid var(--red); border-radius:8px; padding:12px 10px 10px; font-family:"Courier New",monospace; font-weight:bold; font-size:30px; color:#17130e; text-align:center; box-shadow:0 12px 26px rgba(0,0,0,0.45); }
+    .rwrap { position:absolute; z-index:7; transform-origin:top center; }
+    .rwrap img { width:100%; display:block; filter:drop-shadow(0 8px 18px rgba(0,0,0,0.4)); }
+    .rline { position:absolute; z-index:9; font-family:"Courier New",monospace; font-weight:bold; font-size:28px; color:#17130e; white-space:nowrap; background:#fff; border:2px solid #e2ddd2; border-bottom:4px dashed #c8c2b4; padding:10px 20px; box-shadow:0 10px 22px rgba(0,0,0,0.45); }
+
+    /* ---- 4.4 guarantee no. 3 ---- */
+    .s44-strip { position:absolute; z-index:6; left:154px; top:130px; width:1610px; height:280px; background:#fbf5e4; border:2px solid #d9cfb2; border-radius:4px; transform:rotate(1deg); box-shadow:0 18px 40px rgba(0,0,0,0.5); padding:26px 40px; font-family:Georgia,serif; color:#17130e; }
+    .s44-hdr { font-size:34px; letter-spacing:3px; font-variant:small-caps; }
+    .s44-body { position:relative; margin-top:34px; font-size:52px; font-style:italic; white-space:nowrap; }
+    .s44-hlyellow { position:absolute; left:-10px; top:-4px; height:74px; background:rgba(255,225,60,0.55); z-index:-1; transform:scaleX(0); transform-origin:left center; width:880px; }
+    .s44-no3circle { position:absolute; z-index:9; width:150px; height:66px; border:5px solid var(--red); border-radius:50%; transform:rotate(-5deg); }
+    .s44-stamp { position:absolute; z-index:10; left:1150px; top:170px; font-family:"PatrickHandLocal"; font-size:100px; color:var(--red); border:10px solid var(--red); background:rgba(224,57,43,0.10); border-radius:18px; padding:6px 40px; transform:rotate(-8deg); white-space:nowrap; box-shadow:0 12px 26px rgba(0,0,0,0.3); }
+    .s44-tag { position:absolute; z-index:8; width:150px; height:96px; background:#e8d29a; border:3px solid #8f7433; border-radius:8px 20px 8px 8px; font-family:"Courier New",monospace; font-weight:bold; font-size:40px; color:#3a2c0a; display:flex; align-items:center; justify-content:center; box-shadow:0 8px 18px rgba(0,0,0,0.35); }
+    .s44-str { position:absolute; z-index:7; width:4px; background:#6b5a2e; transform-origin:top center; }
+    .s44-x { position:absolute; z-index:11; height:14px; background:var(--red); border-radius:7px; transform-origin:left center; box-shadow:0 4px 10px rgba(0,0,0,0.3); }
+    .s44-all { position:absolute; z-index:10; left:960px; top:470px; font-family:"PatrickHandLocal"; font-size:64px; color:var(--red); text-shadow:2px 3px 0 rgba(255,255,255,0.8); transform:rotate(-5deg); white-space:nowrap; }
+
+    /* ---- 4.5 postcard ---- */
+    .s45-frame { position:absolute; inset:0; z-index:5; border:36px solid #fff; box-shadow:inset 0 0 0 3px #d9d4c6; pointer-events:none; }
+    .s45-stampcorner { position:absolute; z-index:6; right:64px; top:60px; width:120px; height:96px; background:#fdfdf8; border:3px dashed #b9b2a0; display:flex; align-items:center; justify-content:center; }
+    .s45-stampcorner i { width:66px; height:50px; border:3px solid #c98; border-radius:4px; }
+    .s45-caption { position:absolute; z-index:9; left:154px; top:796px; background:#fff; padding:10px 26px; font-family:Georgia,serif; font-size:44px; color:#17130e; box-shadow:0 8px 18px rgba(0,0,0,0.3); white-space:nowrap; }
+    .s45-tag { position:absolute; z-index:10; left:700px; top:520px; font-size:50px; transform:rotate(-3deg); }
+    .s45-tagarrow { position:absolute; z-index:10; left:1000px; top:580px; width:190px; height:6px; background:#fff; border-radius:3px; transform:rotate(32deg); box-shadow:2px 3px 0 rgba(0,0,0,0.4); }
+    .s45-tagarrow i { position:absolute; right:-4px; top:-7px; width:0; height:0; border-top:10px solid transparent; border-bottom:10px solid transparent; border-left:18px solid #fff; }
+    .s45-mat { position:absolute; z-index:7; left:1215px; top:872px; width:220px; height:40px; background:#8a6b45; border:3px solid #5e4526; border-radius:6px; display:flex; align-items:center; justify-content:center; font-family:"Courier New",monospace; font-weight:bold; font-size:20px; color:#f3e6cf; letter-spacing:3px; transform:perspective(300px) rotateX(38deg); }
+    .s45-puff { position:absolute; z-index:7; background:rgba(240,240,240,0.85); border-radius:50%; }
+    .s45-rosette { position:absolute; z-index:10; left:1440px; top:150px; width:250px; height:250px; }
+    .s45-rosette .ring { position:absolute; inset:0; border-radius:50%; background:#1b5fb8; box-shadow:0 12px 26px rgba(0,0,0,0.4); }
+    .s45-rosette .core { position:absolute; inset:38px; border-radius:50%; background:#2d7de0; border:5px dashed #fff; display:flex; align-items:center; justify-content:center; text-align:center; font-family:Georgia,serif; font-size:33px; line-height:1.05; color:#fff; font-variant:small-caps; }
+    .s45-rosette .r1, .s45-rosette .r2 { position:absolute; top:216px; width:64px; height:120px; background:#1b5fb8; z-index:-1; }
+    .s45-rosette .r1 { left:48px; transform:rotate(14deg); clip-path:polygon(0 0,100% 0,100% 100%,50% 82%,0 100%); }
+    .s45-rosette .r2 { right:48px; transform:rotate(-14deg); clip-path:polygon(0 0,100% 0,100% 100%,50% 82%,0 100%); }
+
+    /* ---- 4.6 chess club sign ---- */
+    .s46-signwrap { position:absolute; z-index:7; left:420px; top:-20px; width:680px; transform-origin:50% 4%; }
+    .s46-signwrap img { width:100%; display:block; filter:drop-shadow(0 16px 30px rgba(0,0,0,0.45)); }
+    .s46-line1 { position:absolute; z-index:9; left:500px; top:390px; width:520px; text-align:center; font-size:78px; color:#fff; text-shadow:2px 3px 0 rgba(0,0,0,0.45); }
+    .s46-strike { position:absolute; z-index:10; left:505px; top:432px; width:510px; height:13px; background:var(--red); border-radius:7px; transform:rotate(-3deg); transform-origin:left center; }
+    .s46-fifa { position:absolute; z-index:10; left:640px; top:302px; font-size:96px; color:var(--red); transform:rotate(-6deg); text-shadow:2px 3px 0 rgba(0,0,0,0.35); }
+    .s46-line2 { position:absolute; z-index:9; left:500px; top:508px; width:520px; text-align:center; font-size:46px; color:#ffe9b0; text-shadow:2px 3px 0 rgba(0,0,0,0.45); }
+    .s46-bar { position:absolute; z-index:8; width:300px; filter:drop-shadow(0 10px 20px rgba(0,0,0,0.5)); }
+
+    /* ---- 4.7 counter ---- */
+    .s47-panel { position:absolute; z-index:9; left:500px; top:100px; width:920px; height:230px; background:#0a0d0a; border:4px solid #2c332c; border-radius:18px; box-shadow:0 18px 40px rgba(0,0,0,0.6), inset 0 0 30px rgba(40,255,120,0.12); }
+    .s47-digits { position:absolute; left:0; right:0; top:18px; height:120px; }
+    .s47-digits span { position:absolute; left:0; right:0; text-align:center; font-family:"Courier New",monospace; font-weight:bold; font-size:104px; color:#3dff7c; text-shadow:0 0 18px rgba(61,255,124,0.75); letter-spacing:6px; opacity:0; }
+    .s47-plate { position:absolute; left:330px; top:150px; width:260px; height:56px; }
+    .s47-plate span { position:absolute; inset:0; background:linear-gradient(180deg,#cfd4d9,#9aa1a8); border:2px solid #6c7278; border-radius:8px; display:flex; align-items:center; justify-content:center; font-family:Georgia,serif; font-size:34px; letter-spacing:4px; color:#2b2f33; text-shadow:0 1px 0 rgba(255,255,255,0.6); opacity:0; }
+    .s47-chip { position:absolute; left:0; right:0; top:344px; text-align:center; z-index:9; }
+    .s47-chip span { position:absolute; left:0; right:0; font-family:"Courier New",monospace; font-size:27px; color:#dfe8df; opacity:0; }
+    .s47-glow { position:absolute; z-index:6; left:1300px; top:420px; width:420px; height:320px; background:radial-gradient(ellipse 60% 55% at 50% 55%, rgba(60,255,130,0.5) 0%, rgba(60,255,130,0) 70%); }
+
+    /* ---- 4.8 balance scale ---- */
+    .s48-banner { position:absolute; z-index:9; left:270px; top:62px; width:1380px; height:96px; background:linear-gradient(180deg,#f5d97a,#c9a13a 55%,#e8c667); border:3px solid #8a6b1c; display:flex; align-items:center; justify-content:center; font-family:Georgia,serif; font-size:58px; letter-spacing:5px; color:#5a4310; text-shadow:0 2px 0 rgba(255,244,200,0.8); box-shadow:0 14px 30px rgba(0,0,0,0.5); clip-path:polygon(0 0,100% 0,96.5% 50%,100% 100%,0 100%,3.5% 50%); }
+    .s48-aside { position:absolute; z-index:9; left:170px; top:210px; background:var(--cream); border:4px solid #2a2118; border-radius:12px; padding:8px 22px; font-size:42px; color:var(--ink); transform:rotate(-3deg); white-space:nowrap; box-shadow:0 10px 22px rgba(0,0,0,0.4); }
+    .s48-plate { position:absolute; z-index:9; left:1520px; top:660px; background:#fdfdf8; border:3px solid #2a2118; border-radius:8px; padding:6px 16px; font-family:"Courier New",monospace; font-weight:bold; font-size:28px; color:#17130e; white-space:nowrap; box-shadow:0 8px 18px rgba(0,0,0,0.35); }
+    .s48-chip { position:absolute; z-index:9; background:var(--mint); border:4px solid #1d6a34; border-radius:12px; padding:8px 18px; font-family:"PatrickHandLocal"; font-size:36px; color:#123f1f; white-space:nowrap; box-shadow:0 10px 22px rgba(0,0,0,0.4); }
+    .s48-tag { position:absolute; z-index:10; background:#ffe3de; border:4px solid var(--red); border-radius:10px; padding:8px 16px; font-family:"PatrickHandLocal"; font-size:34px; color:#8c1408; white-space:nowrap; box-shadow:0 10px 22px rgba(0,0,0,0.4); }
+    .s48-tag i { display:inline-block; width:22px; height:22px; margin-right:10px; position:relative; }
+    .s48-tag i::before, .s48-tag i::after { content:""; position:absolute; left:9px; top:-2px; width:5px; height:26px; background:var(--red); border-radius:3px; }
+    .s48-tag i::before { transform:rotate(45deg); } .s48-tag i::after { transform:rotate(-45deg); }
+    .s48-tray { position:absolute; z-index:7; left:130px; top:868px; width:340px; height:150px; }
+    .s48-tray .back { position:absolute; inset:0 0 46px 0; background:#b08d5e; border:3px solid #7c6038; border-radius:6px 6px 0 0; }
+    .s48-tray .front { position:absolute; z-index:11; left:-10px; right:-10px; bottom:0; height:86px; background:#c8a877; border:3px solid #7c6038; border-radius:8px; display:flex; align-items:center; justify-content:center; font-family:"PatrickHandLocal"; font-size:34px; color:#4a3608; }
+    .s48-sackshadow { position:absolute; z-index:6; left:392px; top:816px; width:300px; height:44px; background:rgba(0,0,0,0.35); border-radius:50%; }
+
+    /* ---- 4.9 auction payoff ---- */
+    .s49-lot { position:absolute; z-index:10; left:1462px; top:540px; background:#fdfdf8; border:3px solid #2a2118; border-radius:8px; padding:6px 14px; font-family:"Courier New",monospace; font-weight:bold; font-size:25px; color:#17130e; white-space:nowrap; box-shadow:0 8px 18px rgba(0,0,0,0.4); transform:rotate(4deg); }
+    .s49-lotstr { position:absolute; z-index:9; left:1452px; top:500px; width:4px; height:52px; background:#d8cdb4; transform:rotate(24deg); transform-origin:top center; }
+    .s49-pay1 { position:absolute; z-index:10; left:50px; top:214px; font-size:64px; transform:rotate(-3deg); }
+    .s49-pay1 em { font-style:normal; color:var(--gold); }
+    .s49-pay2 { position:absolute; z-index:10; left:1010px; top:618px; font-size:56px; color:#ffe9c4; transform:rotate(-2deg); }
+    .s49-pay2 em { font-style:normal; color:var(--gold); }
+    .s49-bang { position:absolute; z-index:9; left:950px; top:420px; width:220px; height:120px; }
+    .s49-bang i { position:absolute; width:9px; height:64px; background:#fff; border-radius:5px; box-shadow:0 0 12px rgba(255,240,190,0.9); }
+    .s49-bang i:nth-child(1) { left:30px; bottom:0; transform:rotate(34deg); }
+    .s49-bang i:nth-child(2) { left:105px; bottom:14px; transform:rotate(0deg); height:76px; }
+    .s49-bang i:nth-child(3) { left:180px; bottom:0; transform:rotate(-34deg); }
+    .s49-alabel { position:absolute; z-index:8; font-family:"PatrickHandLocal"; white-space:nowrap; text-shadow:2px 3px 0 rgba(0,0,0,0.55); }
+
+    .s41-label,.s41-tab,.s41-sticky,.s41-arrowdn,.s41-dust,.s42-fifacircle,.s42-link,.s42-spot,.garrow,.rarrow,.s43-chip,.rwrap,.rline,.s44-no3circle,.s44-stamp,.s44-tag,.s44-str,.s44-x,.s44-all,.s45-caption,.s45-tag,.s45-tagarrow,.s45-rosette,.s46-signwrap,.s46-strike,.s46-fifa,.s46-bar,.s47-panel,.s48-banner,.s48-aside,.s48-plate,.s48-chip,.s48-tag,.s49-lot,.s49-lotstr,.s49-pay1,.s49-pay2,.s49-bang,.s49-alabel,.prop,.wit,.witwrap { will-change:opacity, transform; }
+  </style>
+</head>
+<body>
+  <div id="Section04FifaKeepsTheMoney" data-composition-id="Section04FifaKeepsTheMoney" data-start="0" data-duration="62.101" data-width="1920" data-height="1080">
+
+    <!-- SCENE 4.1  0.00-4.04  the blind signing -->
+    <div id="scene-41" class="scene clip" data-start="0" data-duration="4.04" data-track-index="1" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-board" src="./assets/boardroom-table-1.jpg" alt="">
+      <div class="vig"></div>
+      <div class="witwrap" id="s41-witwrap" style="left:600px; top:0; width:760px; height:790px;">
+        <img id="s41-wit" style="left:0; top:-52px; width:760px; transform-origin:52% 78%;" src="./assets/wit-mayor-signing.png" alt="">
+      </div>
+      <img id="s41-stack" class="prop cue" style="z-index:9; left:250px; top:393px; width:520px; filter:drop-shadow(0 18px 34px rgba(0,0,0,0.5)); transform-origin:50% 85%;" src="./assets/contract-stack-guarantees.png" alt="">
+      <div class="s41-label cue s41-title" style="left:340px; top:438px; transform:rotate(-4deg);">GOVERNMENT GUARANTEES</div>
+      <div class="s41-dust cue s41-d1" style="left:230px; top:700px;"></div>
+      <div class="s41-dust cue s41-d2" style="left:600px; top:716px;"></div>
+      <div class="s41-tab cue s41-tabel" style="left:712px; top:560px;"><i></i>SIGN HERE</div>
+      <div class="s41-sticky cue s41-note" style="left:1240px; top:140px;">(he did not read it)</div>
+      <div class="s41-arrowdn cue s41-noteaim" style="left:1230px; top:240px; height:360px; transform:rotate(46deg);"><i></i></div>
+    </div>
+
+    <!-- SCENE 4.2  4.04-10.14  what FIFA keeps -->
+    <div id="scene-42" class="scene clip" data-start="4.04" data-duration="6.10" data-track-index="2" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-tv" src="./assets/tv-wall-glow-1.jpg" alt="">
+      <div class="vig"></div>
+      <div class="s42-card">
+        <div class="s42-hdr">WHAT FIFA KEEPS</div>
+        <div id="s42-row1" class="s42-row cue s42-r1"><span class="s42-hl s42-h1" style="width:400px;"></span>1. FIFA keeps the TV money.</div>
+        <div id="s42-row2" class="s42-row cue s42-r2"><span class="s42-hl s42-h2" style="width:400px;"></span>2. FIFA keeps the sponsor money.</div>
+        <div id="s42-row3" class="s42-row cue s42-r3"><span class="s42-hl s42-h3" style="width:400px;"></span>3. FIFA keeps the ticket money.</div>
+        <div class="s42-fifacircle cue s42-c1" style="left:32px; top:77px;"></div>
+        <div class="s42-fifacircle cue s42-c2" style="left:32px; top:157px;"></div>
+        <div class="s42-fifacircle cue s42-c3" style="left:32px; top:237px;"></div>
+        <div class="s42-link cue s42-lk" style="left:94px; top:120px; height:140px; transform:rotate(3deg);"></div>
+        <div class="s42-spot cue s42-sp" style="left:210px; top:388px;">spot the pattern</div>
+      </div>
+      <img id="s42-safe" class="prop" style="left:1300px; top:130px; width:460px; filter:drop-shadow(0 16px 30px rgba(0,0,0,0.5)); transform-origin:50% 80%;" src="./assets/gold-safe-fat.png" alt="">
+      <div class="garrow cue s42-arrow" style="left:900px; top:288px; width:420px; height:14px; transform:rotate(-4deg);"><b></b><i style="margin-top:-15px; border-top:15px solid transparent; border-bottom:15px solid transparent; border-left:26px solid var(--green);"></i></div>
+      <div class="hand cue s42-alabel" style="left:960px; top:216px; font-size:40px; color:#7dff9f; transform:rotate(-4deg);">MONEY -&gt; FIFA</div>
+      <img class="prop cue s42-b1" style="left:870px; top:240px; width:190px; filter:drop-shadow(0 8px 16px rgba(0,0,0,0.5));" src="./assets/cash-bundle-generic.png" alt="">
+      <img class="prop cue s42-b2" style="left:870px; top:240px; width:190px; filter:drop-shadow(0 8px 16px rgba(0,0,0,0.5));" src="./assets/cash-bundle-generic.png" alt="">
+      <img class="prop cue s42-b3" style="left:870px; top:240px; width:190px; filter:drop-shadow(0 8px 16px rgba(0,0,0,0.5));" src="./assets/cash-bundle-generic.png" alt="">
+      <img class="wit" data-layout-allow-overflow="" style="left:950px; top:420px; width:1500px;" src="./assets/poses/unimpressed_smirk_closeup.png" alt="">
+    </div>
+
+    <!-- SCENE 4.3  10.14-14.58  what the host pays -->
+    <div id="scene-43" class="scene clip" data-start="10.14" data-duration="4.44" data-track-index="3" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-crane" src="./assets/stadium-construction-crane-1.jpg" alt="">
+      <div class="vig"></div>
+      <div class="rarrow cue s43-arrow" style="left:700px; top:330px; width:1010px; height:18px; transform:rotate(-19deg);"><b></b><i style="margin-top:-16px; border-top:16px solid transparent; border-bottom:16px solid transparent; border-right:28px solid var(--red);"></i></div>
+      <div class="hand cue s43-alabel" style="left:1060px; top:378px; font-size:42px; color:#ff9d8f; transform:rotate(-19deg);">BILLS -&gt; HOST</div>
+      <div class="s43-chip cue s43-p1" style="left:900px; top:470px; transform:rotate(-6deg);">STADIUMS</div>
+      <div class="s43-chip cue s43-p2" style="left:1030px; top:540px; transform:rotate(5deg);">SECURITY</div>
+      <div class="s43-chip cue s43-p3" style="left:880px; top:590px; transform:rotate(-3deg);">TRANSPORT</div>
+      <div class="s43-chip cue s43-p4" style="left:1020px; top:648px; transform:rotate(7deg);">FAN ZONES</div>
+      <div class="rwrap cue" id="s43-rwrap" style="left:1130px; top:690px; width:400px; transform:rotate(4deg);">
+        <img id="s43-receipt" style="clip-path:inset(0 0 88% 0);" src="./assets/receipt-endless-roll.png" alt="">
+      </div>
+      <div class="rline cue s43-rline" style="left:820px; top:735px; transform:rotate(-2deg); clip-path:inset(0 100% 0 0);">16x STADIUM (RETROFIT) ......... $???</div>
+      <img class="wit" data-layout-allow-overflow="" style="left:-80px; bottom:-380px; width:1050px;" src="./assets/poses/shocked_sweating_dismayed.png" alt="">
+    </div>
+
+    <!-- SCENE 4.4  14.58-23.20  guarantee number three: taxes -->
+    <div id="scene-44" class="scene clip" data-start="14.58" data-duration="8.62" data-track-index="4" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-stamp" src="./assets/rubber-stamp-ink-1.jpg" alt="">
+      <div class="vig"></div>
+      <div class="s44-strip">
+        <div class="s44-hdr cue s44-hdrc">GOVERNMENT GUARANTEE No. 3</div>
+        <div class="s44-body cue s44-bodyc" style="clip-path:inset(0 100% 0 0);"><span class="s44-hlyellow s44-hly"></span>...a full exemption from ALL taxes...</div>
+        <div class="s44-no3circle cue s44-no3" style="left:526px; top:6px;"></div>
+      </div>
+      <div class="s44-stamp cue s44-zero">PAYS: $0</div>
+      <div class="s44-str cue s44-strA" style="left:372px; top:396px; height:76px; transform:rotate(6deg);"></div>
+      <div class="s44-str cue s44-strB" style="left:592px; top:396px; height:76px; transform:rotate(-4deg);"></div>
+      <div class="s44-str cue s44-strC" style="left:812px; top:396px; height:76px; transform:rotate(5deg);"></div>
+      <div class="s44-tag cue s44-tagA" style="left:300px; top:468px; transform:rotate(-4deg);">TAX</div>
+      <div class="s44-tag cue s44-tagB" style="left:520px; top:472px; transform:rotate(3deg);">TAX</div>
+      <div class="s44-tag cue s44-tagC" style="left:740px; top:466px; transform:rotate(-2deg);">TAX</div>
+      <div class="s44-x cue s44-x1" style="left:270px; top:490px; width:660px; transform:rotate(7deg);"></div>
+      <div class="s44-x cue s44-x2" style="left:270px; top:560px; width:660px; transform:rotate(-7deg);"></div>
+      <div class="s44-all cue">ALL of them.</div>
+      <img class="wit" data-layout-allow-overflow="" style="left:880px; top:290px; width:1450px;" src="./assets/poses/deadpan_unimpressed_half_lidded.png" alt="">
+    </div>
+
+    <!-- SCENE 4.5  23.20-27.76  the Zurich postcard -->
+    <div id="scene-45" class="scene clip" data-start="23.20" data-duration="4.56" data-track-index="5" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-lake" src="./assets/alpine-lake-town-1.jpg" alt="">
+      <div class="s45-frame"></div>
+      <div class="s45-stampcorner"><i></i></div>
+      <img id="s45-safe" class="prop" style="left:1150px; top:690px; width:350px; filter:drop-shadow(0 14px 26px rgba(0,0,0,0.45));" src="./assets/gold-safe-fat.png" alt="">
+      <div class="s45-mat" style="left:1200px; top:986px;">HOME</div>
+      <div class="s45-puff" style="left:1392px; top:706px; width:32px; height:22px;"></div>
+      <div class="s45-puff" style="left:1408px; top:664px; width:44px; height:30px;"></div>
+      <div class="s45-puff" style="left:1430px; top:612px; width:56px; height:38px;"></div>
+      <div class="hand cue s45-tag">FIFA lives here</div>
+      <div class="s45-tagarrow cue"><i></i></div>
+      <div class="s45-caption cue s45-cap" style="clip-path:inset(0 100% 0 0);">Zurich, Switzerland</div>
+      <div class="s45-rosette cue s45-ros" style="transform-origin:50% 50%;">
+        <span class="r1"></span><span class="r2"></span>
+        <span class="ring"></span>
+        <span class="core">NON-<br>PROFIT</span>
+      </div>
+      <div class="witwrap" id="s45-witwrap" data-layout-allow-overflow="" style="left:-100px; top:270px; width:1050px; height:810px;">
+        <img class="flip" style="left:0; top:0; width:1050px;" src="./assets/poses/pointing_at_globe_explaining.png" alt="">
+      </div>
+    </div>
+
+    <!-- SCENE 4.6  27.76-34.18  the rich chess club -->
+    <div id="scene-46" class="scene clip" data-start="27.76" data-duration="6.42" data-track-index="6" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-chess" src="./assets/chessboard-closeup-1.jpg" alt="">
+      <div class="vig"></div>
+      <div class="s46-signwrap cue" id="s46-sign">
+        <img src="./assets/wood-sign-hanging-blank.png" alt="">
+      </div>
+      <div class="hand cue s46-line1" id="s46-l1" style="clip-path:inset(0 100% 0 0);">CHESS CLUB</div>
+      <div class="s46-strike cue s46-str"></div>
+      <div class="hand cue s46-fifa" id="s46-f">FIFA</div>
+      <div class="hand cue s46-line2" id="s46-l2" style="clip-path:inset(0 100% 0 0);">$4B IN RESERVES</div>
+      <img class="s46-bar cue s46-bar1" style="left:1060px; top:690px; width:300px; transform:rotate(-3deg);" src="./assets/gold-bar-single.png" alt="">
+      <img class="s46-bar cue s46-bar2" style="left:1230px; top:700px; width:300px; transform:rotate(2deg);" src="./assets/gold-bar-single.png" alt="">
+      <img class="s46-bar cue s46-bar3" style="left:1140px; top:610px; width:300px; transform:rotate(-1deg);" src="./assets/gold-bar-single.png" alt="">
+      <img class="s46-bar cue s46-bar4" style="left:1145px; top:522px; width:300px; transform:rotate(2deg);" src="./assets/gold-bar-single.png" alt="">
+      <div class="witwrap" id="s46-witwrap" data-layout-allow-overflow="" style="left:1050px; top:150px; width:1450px; height:930px; overflow:visible;">
+        <img class="flip" style="left:0; top:0; width:1450px;" src="./assets/poses/boss_suit_sunglasses_sparkle.png" alt="">
+      </div>
+    </div>
+
+    <!-- SCENE 4.7  34.18-43.54  the money counter -->
+    <div id="scene-47" class="scene clip" data-start="34.18" data-duration="9.36" data-track-index="7" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-vault" src="./assets/vault-door-1.jpg" alt="">
+      <div class="vig"></div>
+      <div class="s47-glow cue s47-glowc"></div>
+      <img id="s47-safe" class="prop" style="left:1260px; top:380px; width:460px; filter:drop-shadow(0 16px 30px rgba(0,0,0,0.55)); transform-origin:50% 80%;" src="./assets/gold-safe-fat.png" alt="">
+      <div class="garrow s47-arrow" style="left:154px; top:486px; width:1080px; height:28px; transform-origin:left center;"><b></b><i style="margin-top:-26px; border-top:26px solid transparent; border-bottom:26px solid transparent; border-left:40px solid var(--green);"></i></div>
+      <img class="prop cue s47-fl s47-fl1" style="left:120px; top:445px; width:175px;" src="./assets/cash-bundle-generic.png" alt="">
+      <img class="prop cue s47-fl s47-fl2" style="left:120px; top:445px; width:175px;" src="./assets/cash-bundle-generic.png" alt="">
+      <img class="prop cue s47-fl s47-fl3" style="left:120px; top:445px; width:175px;" src="./assets/cash-bundle-generic.png" alt="">
+      <img class="prop cue s47-fl s47-fl4" style="left:120px; top:445px; width:175px;" src="./assets/cash-bundle-generic.png" alt="">
+      <img class="prop cue s47-fl s47-fl5" style="left:120px; top:445px; width:175px;" src="./assets/cash-bundle-generic.png" alt="">
+      <img class="prop cue s47-fl s47-fl6" style="left:120px; top:445px; width:175px;" src="./assets/cash-bundle-generic.png" alt="">
+      <img class="prop cue s47-fl2nd s47-fla" style="left:120px; top:505px; width:150px;" src="./assets/cash-bundle-generic.png" alt="">
+      <img class="prop cue s47-fl2nd s47-flb" style="left:120px; top:505px; width:150px;" src="./assets/cash-bundle-generic.png" alt="">
+      <img class="prop cue s47-fl2nd s47-flc" style="left:120px; top:505px; width:150px;" src="./assets/cash-bundle-generic.png" alt="">
+      <div class="s47-panel cue s47-panelc">
+        <div class="s47-digits">
+          <span class="dg dg0">$0.0B</span><span class="dg dg1">$1.2B</span><span class="dg dg2">$2.8B</span><span class="dg dg3">$4.6B</span><span class="dg dg4">$6.1B</span><span class="dg dg5">$7.5B</span>
+          <span class="dg dg6">$8.9B</span><span class="dg dg7">$10.4B</span><span class="dg dg8">$11.8B</span><span class="dg dg9">$13B</span>
+        </div>
+        <div class="s47-plate"><span class="pl plA">REVENUE</span><span class="pl plB">EXPECTS</span></div>
+      </div>
+      <div class="s47-chip"><span class="ch chA">the four years around the QATAR World Cup</span><span class="ch chB">the four years around THIS one</span></div>
+      <img class="wit" data-layout-allow-overflow="" style="left:-60px; bottom:-330px; width:1000px;" src="./assets/poses/mildly_surprised_hand_at_chin.png" alt="">
+    </div>
+
+    <!-- SCENE 4.8  43.54-53.70  payday + the fairness scale -->
+    <div id="scene-48" class="scene clip" data-start="43.54" data-duration="10.16" data-track-index="8" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-scale" src="./assets/balance-scale-brass-1.jpg" alt="">
+      <div class="s48-banner cue s48-bannerc">BIGGEST PAYDAY EVER</div>
+      <div class="s48-aside cue s48-asidec">to be fair...</div>
+      <div class="s48-sackshadow cue s48-shadowc"></div>
+      <img id="s48-sack" class="prop cue" style="left:390px; top:400px; width:320px; filter:drop-shadow(0 14px 26px rgba(0,0,0,0.5)); transform-origin:50% 92%;" src="./assets/money-sack-gold.png" alt="">
+      <div class="s48-plate cue s48-platec">FIFA DOES PAY:</div>
+      <div class="s48-chip cue s48-ch1" style="left:1545px; top:752px; transform:rotate(-3deg);">PRIZE MONEY</div>
+      <div class="s48-chip cue s48-ch2" style="left:1480px; top:846px; transform:rotate(2deg); font-size:32px;">RUNNING THE TOURNAMENT</div>
+      <div class="s48-tray cue s48-trayc"><span class="back"></span><span class="front">HOST PAYS THESE</span></div>
+      <div class="s48-tag cue s48-t1" style="left:1560px; top:640px; transform:rotate(-4deg);"><i></i>YOUR POLICE</div>
+      <div class="s48-tag cue s48-t2" style="left:1560px; top:640px; transform:rotate(3deg);"><i></i>YOUR TRAINS</div>
+      <div class="s48-tag cue s48-t3" style="left:1560px; top:640px; transform:rotate(-2deg);"><i></i>YOUR STADIUM</div>
+      <div class="witwrap" id="s48-witwrap" style="left:780px; top:460px; width:950px; height:620px;">
+        <img style="left:0; top:0; width:950px;" src="./assets/poses/eyes_closed_talking_open_palm.png" alt="">
+      </div>
+    </div>
+
+    <!-- SCENE 4.9  53.70-62.101  the auction where the winner pays -->
+    <div id="scene-49" class="scene clip" data-start="53.70" data-duration="8.401" data-track-index="9" data-layout-allow-overflow="" style="overflow:visible;">
+      <img class="photo b-gavel" src="./assets/auction-gavel-1.jpg" alt="">
+      <div class="vig"></div>
+      <img id="s49-auc" class="prop" style="left:1180px; top:190px; width:640px; filter:drop-shadow(0 18px 34px rgba(0,0,0,0.5)); transform-origin:50% 90%;" src="./assets/auctioneer-at-podium.png" alt="">
+      <img class="prop" style="left:1300px; top:300px; width:240px; filter:drop-shadow(0 10px 20px rgba(0,0,0,0.5));" src="./assets/trophy-gold-parody.png" alt="">
+      <img class="prop" style="left:1210px; top:930px; width:210px; transform:rotate(-12deg); filter:drop-shadow(0 8px 16px rgba(0,0,0,0.5));" src="./assets/cash-bundle-generic.png" alt="">
+      <img class="prop" style="left:1350px; top:960px; width:210px; transform:rotate(9deg); filter:drop-shadow(0 8px 16px rgba(0,0,0,0.5));" src="./assets/cash-bundle-generic.png" alt="">
+      <img class="prop" style="left:1270px; top:996px; width:210px; transform:rotate(-4deg); filter:drop-shadow(0 8px 16px rgba(0,0,0,0.5));" src="./assets/cash-bundle-generic.png" alt="">
+      <img class="prop" style="left:1430px; top:1000px; width:210px; transform:rotate(15deg); filter:drop-shadow(0 8px 16px rgba(0,0,0,0.5));" src="./assets/cash-bundle-generic.png" alt="">
+      <img class="prop" style="left:1180px; top:1020px; width:210px; transform:rotate(6deg); filter:drop-shadow(0 8px 16px rgba(0,0,0,0.5));" src="./assets/cash-bundle-generic.png" alt="">
+      <div class="s49-lotstr cue s49-lotstrc"></div>
+      <div class="s49-lot cue s49-lotc">LOT No. 1: HOSTING RIGHTS</div>
+      <div class="garrow cue s49-ga" style="left:230px; top:100px; width:615px; height:16px; transform:scaleX(0);"><b></b><i style="margin-top:-16px; border-top:16px solid transparent; border-bottom:16px solid transparent; border-left:26px solid var(--green);"></i></div>
+      <div class="s49-alabel cue s49-gl" style="left:400px; top:40px; font-size:42px; color:#7dff9f;">REVENUE</div>
+      <div class="rarrow cue s49-ra" style="left:1075px; top:196px; width:615px; height:16px; transform:scaleX(0);"><b></b><i style="margin-top:-16px; border-top:16px solid transparent; border-bottom:16px solid transparent; border-right:26px solid var(--red);"></i></div>
+      <div class="s49-alabel cue s49-rl" style="left:1300px; top:136px; font-size:42px; color:#ff9d8f;">BILLS</div>
+      <div class="s49-bang cue s49-bangc"><i></i><i></i><i></i></div>
+      <div class="hand cue s49-pay1">the <em>WINNER</em> pays</div>
+      <div class="hand cue s49-pay2">the <em>AUCTIONEER</em> keeps the money</div>
+      <img class="wit" data-layout-allow-overflow="" style="left:300px; bottom:-210px; width:800px;" src="./assets/wit-auction-winner-paddle.png" alt="">
+    </div>
+
+    <audio id="voiceover-section-04" data-start="0" data-duration="62.101" data-track-index="30" data-volume="1" crossorigin="anonymous" src="./section-04-fifa-keeps-the-money.mp3"></audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js" integrity="sha384-sG0Hv1tP1lZCk9KQmrIbY/XNwi+OY84GQqhMscbnsoBFqAz8KNCil1kvfL3Hbbk2" crossorigin="anonymous"></script>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused:true, defaults:{ overwrite:"auto" } });
+      const reveal = (t, hideAt, at, fv, tv={}) => { const r={}; if("x"in fv)r.x=0; if("y"in fv)r.y=0; if("scale"in fv)r.scale=1; if("opacity"in fv)r.opacity=1; tl.set(t,fv,hideAt); tl.to(t,{...r,...tv},at); };
+      const show  = (t, hideAt, at) => { tl.set(t,{opacity:0},hideAt); tl.set(t,{opacity:1},at); };
+      const smash = (t, hideAt, at, fv={y:22,scale:1.3,opacity:0}) => reveal(t,hideAt,at,fv,{duration:0.2,ease:"back.out(1.9)"});
+      const pop   = (t, hideAt, at) => reveal(t,hideAt,at,{scale:0.4,opacity:0},{duration:0.22,ease:"back.out(2)"});
+
+      /* SCENE 4.1  pen scribble loop from 0; stack SLAM + title on contract@0.82 (nudge); SIGN HERE tab flips on sign@2.32; sticky on together@3.32 */
+      tl.to("#s41-wit", { rotation:0.7, duration:0.22, yoyo:true, repeat:15, ease:"sine.inOut" }, 0.1);
+      reveal("#s41-stack", 0, 0.82, { y:-260, scale:1.25, opacity:0 }, { duration:0.17, ease:"power3.in" });
+      show("#scene-41 .s41-title", 0, 0.94);
+      tl.to("#scene-41", { x:9, duration:0.05, yoyo:true, repeat:3, ease:"power1.inOut" }, 0.99);
+      tl.set("#scene-41", { x:0 }, 1.24);
+      tl.set("#scene-41 .s41-d1", { opacity:0.8, scale:0.4 }, 0.99);
+      tl.set("#scene-41 .s41-d2", { opacity:0.8, scale:0.4 }, 0.99);
+      tl.to("#scene-41 .s41-d1", { x:-90, scale:1.5, opacity:0, duration:0.5, ease:"power1.out" }, 0.99);
+      tl.to("#scene-41 .s41-d2", { x:90, scale:1.5, opacity:0, duration:0.5, ease:"power1.out" }, 0.99);
+      reveal("#scene-41 .s41-tabel", 0, 2.32, { scale:0.2, opacity:0, rotation:-30 }, { rotation:0, duration:0.22, ease:"back.out(2)" });
+      show("#scene-41 .s41-note", 0, 3.32);
+      show("#scene-41 .s41-noteaim", 0, 3.32);
+
+      /* SCENE 4.2  card+row1 on FIFA@4.04; swipes TV@4.64/sponsor@6.14/ticket@7.92; bundles money@4.84/6.40/7.92; circles+scribble spot@9.24; arrow+label pattern@9.68 */
+      show("#s42-row1", 4.06, 4.20);
+      tl.set("#scene-42 .s42-h1", { scaleX:0 }, 4.06);
+      tl.set("#scene-42 .s42-arrow", { scaleX:0 }, 4.06);
+      tl.set("#scene-42 .s42-lk", { scaleY:0 }, 4.06);
+      tl.to("#scene-42 .s42-h1", { scaleX:1, duration:0.30, ease:"power1.inOut" }, 4.64);
+      show("#s42-row2", 4.06, 5.56);
+      tl.set("#scene-42 .s42-h2", { scaleX:0 }, 4.06);
+      tl.to("#scene-42 .s42-h2", { scaleX:1, duration:0.30, ease:"power1.inOut" }, 6.14);
+      show("#s42-row3", 4.06, 7.18);
+      tl.set("#scene-42 .s42-h3", { scaleX:0 }, 4.06);
+      tl.to("#scene-42 .s42-h3", { scaleX:1, duration:0.30, ease:"power1.inOut" }, 7.92);
+      const flyBundle = (sel, at) => {
+        tl.set(sel, { opacity:1, x:0, y:0, rotation:-6 }, at);
+        tl.to(sel, { x:470, y:60, rotation:8, duration:0.42, ease:"power1.in" }, at);
+        tl.to(sel, { opacity:0, scale:0.55, duration:0.1, ease:"power1.in" }, at+0.42);
+        tl.to("#s42-safe", { rotation:1.2, duration:0.09, yoyo:true, repeat:1, ease:"power1.inOut" }, at+0.46);
+      };
+      flyBundle("#scene-42 .s42-b1", 4.84);
+      flyBundle("#scene-42 .s42-b2", 6.40);
+      flyBundle("#scene-42 .s42-b3", 7.96);
+      pop("#scene-42 .s42-c1", 4.04, 9.24);
+      pop("#scene-42 .s42-c2", 4.04, 9.34);
+      pop("#scene-42 .s42-c3", 4.04, 9.44);
+      tl.set("#scene-42 .s42-lk", { opacity:1 }, 9.44);
+      tl.to("#scene-42 .s42-lk", { scaleY:1, duration:0.16, ease:"power2.out" }, 9.44);
+      show("#scene-42 .s42-sp", 4.04, 9.24);
+      tl.set("#scene-42 .s42-arrow", { opacity:1 }, 9.68);
+      tl.to("#scene-42 .s42-arrow", { scaleX:1, duration:0.26, ease:"power2.out" }, 9.68);
+      smash("#scene-42 .s42-alabel", 4.04, 9.80, { scale:1.5, opacity:0 });
+
+      /* SCENE 4.3  red arrow draws at cut; BILLS->HOST on pays@10.54; chips stadiums@11.16/security@12.04/transport@12.88/fan@13.78; receipt prints 11.16->14.02 */
+      tl.set("#scene-43 .s43-arrow", { scaleX:0 }, 10.14);
+      tl.set("#scene-43 .s43-arrow", { opacity:1 }, 10.16);
+      tl.to("#scene-43 .s43-arrow", { scaleX:1, duration:0.45, ease:"power2.out" }, 10.16);
+      smash("#scene-43 .s43-alabel", 10.14, 10.54, { scale:1.5, opacity:0 });
+      const slideChip = (sel, at, tx, ty, rot) => {
+        tl.set(sel, { opacity:1, x:1500-tx, y:230-ty, rotation:rot+16, scale:0.7 }, at);
+        tl.to(sel, { x:0, y:0, rotation:rot, scale:1, duration:0.34, ease:"power2.in" }, at);
+        tl.to(sel, { y:-10, duration:0.09, yoyo:true, repeat:1, ease:"power1.out" }, at+0.34);
+      };
+      slideChip("#scene-43 .s43-p1", 11.16, 900, 470, 0);
+      slideChip("#scene-43 .s43-p2", 12.04, 1030, 540, 0);
+      slideChip("#scene-43 .s43-p3", 12.88, 880, 590, 0);
+      slideChip("#scene-43 .s43-p4", 13.78, 1020, 648, 0);
+      tl.set("#s43-rwrap", { opacity:1 }, 11.16);
+      tl.fromTo("#s43-receipt", { clipPath:"inset(0% 0% 88% 0%)" }, { clipPath:"inset(0% 0% 0% 0%)", duration:2.6, ease:"none", immediateRender:false }, 11.16);
+      tl.set("#scene-43 .s43-rline", { opacity:1 }, 11.16);
+      tl.fromTo("#scene-43 .s43-rline", { clipPath:"inset(0 100% 0 0)" }, { clipPath:"inset(0 0% 0 0)", duration:2.8, ease:"none", immediateRender:false }, 11.16);
+
+      /* SCENE 4.4  header guarantee@15.00; No.3 circle three@15.64; clause types promises@16.72; highlight exemption@17.92; PAYS:$0 none@20.28 (+shake); tags some@21.10; X All@22.08; ALL of them. them@22.56 */
+      show("#scene-44 .s44-hdrc", 14.58, 15.00);
+      pop("#scene-44 .s44-no3", 14.58, 15.64);
+      tl.set("#scene-44 .s44-bodyc", { opacity:1 }, 16.72);
+      tl.fromTo("#scene-44 .s44-bodyc", { clipPath:"inset(0 100% 0 0)" }, { clipPath:"inset(0 0% 0 0)", duration:0.95, ease:"none", immediateRender:false }, 16.72);
+      tl.set("#scene-44 .s44-hly", { scaleX:0 }, 14.58);
+      tl.to("#scene-44 .s44-hly", { scaleX:1, duration:0.5, ease:"power1.inOut" }, 17.92);
+      tl.set("#scene-44 .s44-x1", { scaleX:0 }, 14.58);
+      tl.set("#scene-44 .s44-x2", { scaleX:0 }, 14.58);
+      smash("#scene-44 .s44-zero", 14.58, 20.28, { scale:1.9, opacity:0, rotation:6 });
+      tl.to("#scene-44", { x:10, duration:0.05, yoyo:true, repeat:3, ease:"power1.inOut" }, 20.30);
+      tl.set("#scene-44", { x:0 }, 20.55);
+      show("#scene-44 .s44-strA", 14.58, 21.10); show("#scene-44 .s44-tagA", 14.58, 21.10);
+      show("#scene-44 .s44-strB", 14.58, 21.16); show("#scene-44 .s44-tagB", 14.58, 21.16);
+      show("#scene-44 .s44-strC", 14.58, 21.22); show("#scene-44 .s44-tagC", 14.58, 21.22);
+      tl.set("#scene-44 .s44-x1", { opacity:1 }, 22.08);
+      tl.to("#scene-44 .s44-x1", { scaleX:1, duration:0.14, ease:"power2.out" }, 22.08);
+      tl.set("#scene-44 .s44-x2", { opacity:1 }, 22.24);
+      tl.to("#scene-44 .s44-x2", { scaleX:1, duration:0.14, ease:"power2.out" }, 22.24);
+      pop("#scene-44 .s44-all", 14.58, 22.56);
+
+      /* SCENE 4.5  postcard cut 23.20; FIFA lives here lives@23.90; caption types Zurich@24.50->25.16; rosette stamps non-profit@26.80 + flutter */
+      show("#scene-45 .s45-tag", 23.20, 23.90);
+      show("#scene-45 .s45-tagarrow", 23.20, 23.90);
+      tl.set("#scene-45 .s45-cap", { opacity:1 }, 24.50);
+      tl.fromTo("#scene-45 .s45-cap", { clipPath:"inset(0 100% 0 0)" }, { clipPath:"inset(0 0% 0 0)", duration:0.66, ease:"none", immediateRender:false }, 24.50);
+      smash("#scene-45 .s45-ros", 23.20, 26.80, { scale:1.7, opacity:0, rotation:10 });
+      tl.to("#scene-45 .s45-ros", { rotation:2.5, duration:0.18, yoyo:true, repeat:3, ease:"sine.inOut" }, 27.05);
+
+      /* SCENE 4.6  sign drops at cut + swings; CHESS CLUB paints chess@30.04; strike+FIFA chess2@31.18 (+kick); bars $4@32.12->billion@32.40; $4B line reserves@33.22 */
+      reveal("#s46-sign", 27.76, 27.80, { y:-180, opacity:0 }, { duration:0.5, ease:"power2.out" });
+      tl.to("#s46-sign", { rotation:1.8, duration:1.1, yoyo:true, repeat:5, ease:"sine.inOut" }, 28.3);
+      tl.set("#s46-l1", { opacity:1 }, 30.04);
+      tl.fromTo("#s46-l1", { clipPath:"inset(0 100% 0 0)" }, { clipPath:"inset(0 0% 0 0)", duration:0.46, ease:"none", immediateRender:false }, 30.04);
+      tl.set("#scene-46 .s46-str", { opacity:1, scaleX:0 }, 27.76);
+      tl.to("#scene-46 .s46-str", { scaleX:1, duration:0.16, ease:"power2.out" }, 31.18);
+      smash("#s46-f", 27.76, 31.24, { scale:1.7, opacity:0, rotation:-14 });
+      tl.to("#s46-sign", { rotation:3, duration:0.1, yoyo:true, repeat:1, ease:"power1.inOut" }, 31.24);
+      reveal("#scene-46 .s46-bar1", 27.76, 32.12, { y:-90, opacity:0 }, { duration:0.2, ease:"bounce.out" });
+      reveal("#scene-46 .s46-bar2", 27.76, 32.22, { y:-90, opacity:0 }, { duration:0.2, ease:"bounce.out" });
+      reveal("#scene-46 .s46-bar3", 27.76, 32.32, { y:-90, opacity:0 }, { duration:0.2, ease:"bounce.out" });
+      reveal("#scene-46 .s46-bar4", 27.76, 32.42, { y:-90, opacity:0 }, { duration:0.2, ease:"bounce.out" });
+      tl.set("#s46-l2", { opacity:1 }, 33.22);
+      tl.fromTo("#s46-l2", { clipPath:"inset(0 100% 0 0)" }, { clipPath:"inset(0 0% 0 0)", duration:0.44, ease:"none", immediateRender:false }, 33.22);
+
+      /* SCENE 4.7  stream flows from cut; sub-chip Qatar@35.42; panel+REVENUE brought@36.34; digits $7@37.56->revenue@39.12 (arrow widens); chip swap this@40.72; plate flips expects@41.76; digits $13@42.56->billion.@43.04 (widen 2) */
+      tl.set("#scene-47 .s47-arrow", { scaleY:0.5, transformOrigin:"left center" }, 34.18);
+      const flow = (sel, start, dur, xTo) => {
+        tl.set(sel, { opacity:0 }, 34.18);
+        tl.fromTo(sel, { x:0, opacity:0 }, { x:60, opacity:1, duration:0.12, ease:"none", immediateRender:false }, start);
+        tl.to(sel, { x:xTo, duration:dur-0.3, ease:"none" }, start+0.12);
+        tl.to(sel, { opacity:0, scale:0.6, duration:0.18, ease:"power1.in" }, start+dur-0.18);
+      };
+      /* 6-bundle looping stream: each bundle flies card->safe in 1.5s, staggered 0.5s, repeated to cover 34.18-43.5 */
+      const streamStarts = [34.18,34.68,35.18,35.68,36.18,36.68];
+      streamStarts.forEach((s0,i) => {
+        for (let k=0; k<3; k++) {
+          const st = s0 + k*3.0;
+          if (st < 42.6) flow("#scene-47 .s47-fl"+(i+1), st, 1.5, 1130);
+        }
+      });
+      /* second-row bundles join after the arrow widens (39.12) */
+      [39.3,39.8,40.3].forEach((st,i) => {
+        const sel = ["#scene-47 .s47-fla","#scene-47 .s47-flb","#scene-47 .s47-flc"][i];
+        flow(sel, st, 1.5, 1150);
+        flow(sel, st+3.0, 1.4, 1150);
+      });
+      show("#scene-47 .chA", 34.18, 35.42);
+      show("#scene-47 .s47-panelc", 34.18, 36.34);
+      show("#scene-47 .plA", 34.18, 36.34);
+      show("#scene-47 .dg0", 34.18, 36.34);
+      const tick = (fromSel, toSel, at) => { tl.set(fromSel, { opacity:0 }, at); tl.set(toSel, { opacity:1 }, at); };
+      tick("#scene-47 .dg0", "#scene-47 .dg1", 37.56);
+      tick("#scene-47 .dg1", "#scene-47 .dg2", 37.86);
+      tick("#scene-47 .dg2", "#scene-47 .dg3", 38.16);
+      tick("#scene-47 .dg3", "#scene-47 .dg4", 38.50);
+      tick("#scene-47 .dg4", "#scene-47 .dg5", 39.12);
+      tl.to("#scene-47 .s47-arrow", { scaleY:0.75, duration:0.4, ease:"power2.out" }, 39.12);
+      tick("#scene-47 .chA", "#scene-47 .chB", 40.72);
+      tl.to("#scene-47 .plA", { scaleY:0, duration:0.12, ease:"power1.in" }, 41.76);
+      tl.set("#scene-47 .plB", { opacity:1, scaleY:0 }, 41.86);
+      tl.to("#scene-47 .plB", { scaleY:1, duration:0.12, ease:"power1.out" }, 41.88);
+      tick("#scene-47 .dg5", "#scene-47 .dg6", 42.56);
+      tick("#scene-47 .dg6", "#scene-47 .dg7", 42.72);
+      tick("#scene-47 .dg7", "#scene-47 .dg8", 42.88);
+      tick("#scene-47 .dg8", "#scene-47 .dg9", 43.04);
+      tl.to("#scene-47 .s47-arrow", { scaleY:1, duration:0.3, ease:"power2.out" }, 43.04);
+      show("#scene-47 .s47-glowc", 34.18, 39.12);
+
+      /* SCENE 4.8  banner payday@44.82; sack lands ever@45.14; aside fair@46.16; plate does@46.66; chips prize@48.46/running@49.08; tags bounce police@51.62/trains@52.18/stadium@52.94; tray label ~52.0 */
+      tl.set("#scene-48 .s48-bannerc", { opacity:1, scaleX:0 }, 43.54);
+      tl.to("#scene-48 .s48-bannerc", { scaleX:1, duration:0.3, ease:"power2.out" }, 44.82);
+      reveal("#s48-sack", 43.54, 44.84, { y:-620, opacity:0 }, { duration:0.3, ease:"power2.in" });
+      tl.to("#s48-sack", { scaleY:0.92, scaleX:1.07, duration:0.08, yoyo:true, repeat:1, ease:"power1.inOut" }, 45.14);
+      show("#scene-48 .s48-shadowc", 43.54, 45.14);
+      tl.to("#scene-48", { y:7, duration:0.05, yoyo:true, repeat:3, ease:"power1.inOut" }, 45.14);
+      tl.set("#scene-48", { y:0 }, 45.39);
+      show("#scene-48 .s48-asidec", 43.54, 46.16);
+      show("#scene-48 .s48-platec", 43.54, 46.66);
+      reveal("#scene-48 .s48-ch1", 43.54, 48.46, { y:-160, opacity:0 }, { duration:0.28, ease:"bounce.out" });
+      reveal("#scene-48 .s48-ch2", 43.54, 49.08, { y:-160, opacity:0 }, { duration:0.28, ease:"bounce.out" });
+      show("#scene-48 .s48-trayc", 43.54, 52.0);
+      const bounceTag = (sel, at) => {
+        tl.set(sel, { opacity:1, x:0, y:-260 }, at);
+        tl.to(sel, { y:0, duration:0.16, ease:"power2.in" }, at);
+        tl.to(sel, { x:-620, y:-160, rotation:-14, duration:0.26, ease:"power1.out" }, at+0.16);
+        tl.to(sel, { x:-1290, y:250, rotation:-6, duration:0.26, ease:"power2.in" }, at+0.42);
+        tl.to(sel, { y:234, duration:0.09, yoyo:true, repeat:1, ease:"power1.out" }, at+0.68);
+      };
+      bounceTag("#scene-48 .s48-t1", 51.62);
+      bounceTag("#scene-48 .s48-t2", 52.18);
+      bounceTag("#scene-48 .s48-t3", 52.94);
+
+      /* SCENE 4.9  tableau at cut; green arrow revenue@54.82; red arrow bills@56.44; lot tag + GAVEL BANG auction@58.30; rake sweep 58.86-61.3; WINNER pays pays@59.84; AUCTIONEER line ~61.40 (estimated - whisper tail regression); hold to 62.101 */
+      tl.set("#scene-49 .s49-ga", { opacity:1 }, 54.82);
+      tl.to("#scene-49 .s49-ga", { scaleX:1, duration:0.3, ease:"power2.out" }, 54.82);
+      show("#scene-49 .s49-gl", 53.70, 54.82);
+      tl.set("#scene-49 .s49-ra", { opacity:1 }, 56.44);
+      tl.to("#scene-49 .s49-ra", { scaleX:1, duration:0.3, ease:"power2.out" }, 56.44);
+      smash("#scene-49 .s49-rl", 53.70, 56.44, { scale:1.5, opacity:0 });
+      show("#scene-49 .s49-lotstrc", 53.70, 58.30);
+      show("#scene-49 .s49-lotc", 53.70, 58.30);
+      tl.set("#scene-49 .s49-bangc", { opacity:1, scale:0.4 }, 58.30);
+      tl.to("#scene-49 .s49-bangc", { scale:1, duration:0.14, ease:"back.out(2)" }, 58.30);
+      tl.to("#scene-49 .s49-bangc", { opacity:0, duration:0.3, ease:"power1.in" }, 58.9);
+      tl.to("#scene-49", { x:7, duration:0.05, yoyo:true, repeat:3, ease:"power1.inOut" }, 58.30);
+      tl.set("#scene-49", { x:0 }, 58.55);
+      tl.to("#s49-auc", { rotation:-1.6, duration:1.2, yoyo:true, repeat:1, ease:"sine.inOut" }, 58.86);
+      smash("#scene-49 .s49-pay1", 53.70, 59.84, { scale:1.6, opacity:0, rotation:-4 });
+      smash("#scene-49 .s49-pay2", 53.70, 61.40, { scale:1.6, opacity:0, rotation:3 });
+
+      window.__timelines["Section04FifaKeepsTheMoney"] = tl;
+    </script>
+  </div>
+</body>
+</html>

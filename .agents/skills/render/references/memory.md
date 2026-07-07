@@ -1599,3 +1599,210 @@ Apply next time:
 
 Promote to shared memory:
 no; render execution mechanics + a reusable CTA technique.
+
+### 2026-07-07 - First Render On The Linux Box (world-cup S1): Ports <1024, Symlink Assets OK, Snapshot First-Frame Race, Strip-Prop Geometry
+
+Classification: `Render lesson` / `Operational lesson`
+
+Context:
+Rendered `6-why-countries-fight-to-host-the-world-cup` Section 1 (Hook, 35.904s, 7 scenes) - the
+first render on the new LINUX machine (prior memory entries describe the old Windows box). Built
+1:1 from the visual plan; word timings pre-existed and the plan's pinned timestamps matched the
+JSON exactly. All 16 assets passed the gate (all real RGBA - no baked checkerboard this time).
+Lint 0 err / validate 0 err / inspect 0 issues; 4 defects found and fixed via snapshot QA.
+
+Lessons (Linux environment - replaces the Windows habits):
+- Ports 1000-1023 are PRIVILEGED on Linux: `hyperframes preview --port 1001` dies with
+  `listen EACCES`. Fix that keeps the channel's fixed-port convention:
+  `sudo sysctl -w net.ipv4.ip_unprivileged_port_start=1000` (passwordless sudo works on this box).
+  NOT persistent - re-run after reboot or persist in /etc/sysctl.d/.
+- The preview-local `assets` as a plain SYMLINK (`ln -sfn ../../assets`) serves fine (HTTP 200 on
+  deep asset paths). The Windows junction-404/hardlink workaround is NOT needed here.
+- Plain `npm`/`npx` (no `npm.cmd`); no ffmpeg on PATH but none needed when word timings exist.
+- Preview project id resolves to the section FOLDER name (`1-hook`) - confirm via `/api/projects`.
+
+Lessons (render mechanics):
+- SNAPSHOT FIRST-FRAME RACE: in screenshot-fallback mode (system Chrome, no chrome-headless-shell)
+  the FIRST captured frame of a run can miss a late-decoding PNG (trophy absent at frame 1 in three
+  separate runs; a pose missed once mid-run). It is a tool artifact, not a composition bug - verify
+  by re-snapping the same timestamp NOT in first position before editing anything. Consider
+  installing chrome-headless-shell for the optimized path if exports are requested.
+- ROTATED STRIP PROPS (receipt "printing" from a plinth): a rotated wrapper's top corners swing out
+  of the anchor object - pivot `transform-origin: top center`, place the top edge ON the plinth, and
+  make the plinth tall/wide enough to cover the swing (corner y = cy - sin(a)*w/2). Animate
+  `clip-path inset(0 0 92% 0) -> inset(0 0 0 0)` with ease:none for a believable printer crawl;
+  z-index ABOVE podium+WIT makes it read as printing over the scene and rolling over WIT's feet.
+- NEARLY-90deg-ROTATED imgs (receipt folds pile): the rotated box centers at (left+w/2, top+h/2) of
+  the UNROTATED box - a 560x1120 fold set at top:430 lands its band at y~710-1270 (bottom edge!).
+  Compute centers first: top = targetCenterY - h/2. For a pan-reveal, folds must center >= 1920 +
+  visibleHalfWidth pre-pan or they leak into the glamour phase; that forced pan x:-1100 (not -670),
+  which slides the hero almost fully out - acceptable when the revealed motif carries phase B.
+- BASE PHOTO DEFECT CROP-OUT: a vertical fold seam that a podium cannot fully hide is killed with
+  `transform:scale(2.09); transform-origin:0% 50%` (crop to the clean left region) + a sepia/saturate
+  regrade to restore the parchment warmth the zoom loses. Scene overflow is fine (root clips).
+- S7-style shoulder drape: first placement covered WIT's MOUTH - any prop crossing the torso needs a
+  face-clearance snapshot check, same rule as text-over-WIT.
+
+Apply next time:
+- run the sysctl port fix before starting any preview server on this box; symlink assets directly
+- re-snap a "missing element" frame in non-first position before touching the composition
+- compute rotated-box centers for every strip/fold prop; pivot strips on the anchor object
+- crop out base-photo defects with scale+origin and regrade, instead of patch overlays on texture
+
+Promote to shared memory:
+partial - the Linux port/symlink/tooling facts belong in a shared environment note if more skills hit
+them (combine/shorts also bind ports); the strip-geometry and snapshot-race mechanics stay here.
+
+### 2026-07-07 - Section 2 (world-cup): Pose Catalog vs Pixels Mismatch; mix-blend-mode Is Isolated; Degenerate scaleX(0) Loses Rotation
+
+Classification: `Render lesson` / `Operational lesson`
+
+Context:
+Rendered `6-why-countries-fight-to-host-the-world-cup` Section 2 (Reframe, 33.728s, 5 scenes) on the
+Linux box, port 1002. All assets pre-made (gate passed, all real RGBA). Word-timings had the known
+whisper duplicate-backward-pass glitch (words 91-109) which the visual plan had already mapped -
+pinning to the first pass worked directly. Three new build gotchas surfaced in snapshot QA.
+
+Lessons:
+- POSE CATALOG LIES: `rich_flex_gold_chain_sunglasses.png` in the pose-transferred library does NOT
+  match its `pose.md` entry ("gray hair + gold chain + sunglasses + tank top") - the pixels are a
+  plain hands-behind-back smirk. `smug_sly_smirk_leaning` is nearly the same plain figure. The
+  2026-06-28 pose-transfer regenerated bodies without the costumes/props some catalog names promise.
+  ALWAYS view the actual pose PNG before building a beat around its name; substitute the closest
+  real-pixels pose (here `boss_suit_sunglasses_sparkle` = glasses-adjust smug flex) and document.
+- `mix-blend-mode` DOES NOT SURVIVE this pipeline: a white-studio-bg JPG composited with
+  `mix-blend-mode:multiply` rendered as an opaque white box (any positioned/z-indexed ancestor
+  isolates the blend, and the screenshot capture path is unreliable with it anyway). For a
+  white-background photo that must sit on another base, KEY the white out into a derived cutout
+  (border-connected near-white BFS + 1px dilation works in pure PIL - no numpy/scipy on this box),
+  save as `<name>-cutout.png`, note it in ATTRIBUTION.md, keep the original.
+- DEGENERATE INLINE TRANSFORM: `transform:rotate(14deg) scaleX(0)` collapses the matrix - GSAP
+  cannot decompose rotation out of a zero-scaled matrix, so the tweened element renders UNROTATED
+  (the 2.2 X strokes drew near-horizontal). Keep only the rotation inline and apply `scaleX(0)` via
+  `tl.set(...)` at scene start; GSAP then tracks components correctly.
+- Snapshot first-frame decode race recurred (TAXPAYER card emboss "missing" at 27.9); re-snapping
+  the same timestamp in non-first position rendered it fully. Re-snap before editing anything.
+
+Apply next time:
+- view every pose before first use even when the catalog name sounds right; expect name/pixels drift
+- never rely on mix-blend-mode for compositing; key a cutout instead
+- never combine rotate + scaleX(0)/scaleY(0) in one inline transform for a GSAP-tweened element
+
+Promote to shared memory:
+no; render execution mechanics. The pose-catalog drift may deserve a `visual-implement`/pose.md
+cleanup note if it recurs.
+
+### 2026-07-07 - Section 3 (world-cup): Check Asset Content BBox Before Sizing; Don't Fake "Behind" Crops The Photo Can't Support
+
+Classification: `Render lesson`
+
+Context:
+Rendered `6-why-countries-fight-to-host-the-world-cup` Section 3 (Promise Machine, 60.779s,
+8 scenes, port 1003). Densest section so far (~40 cues: balloon inflations, a pin pop with
+scrap burst, a banknote turnstile squeeze, coin drops, a ghost-note size comparison). Three
+QA rounds; all misses were geometry/content, not timing.
+
+Lessons:
+- CONTENT BBOX != CANVAS: several generated PNGs are much smaller than their canvas
+  (`receipt-endless-roll.png` paper = ~37% of canvas width; `balloon-deflated-grey.png` =
+  a narrow full-height hanging strip). Sizing a wrapper by canvas width made the receipt
+  strip too thin to carry its cue-critical text and made the lying deflated balloons
+  invisible (content off-frame). Run `Image.getbbox()` per asset BEFORE laying out any
+  strip/lying/text-carrying prop, and put must-read text on a self-carried chip (white
+  receipt-excerpt card) when the asset can't carry it.
+- DON'T FAKE A "BEHIND" CROP: the plan wanted WIT waist-cropped behind the turnstile bar,
+  but the photo has no barrier at that x - an overflow-hidden wrapper crop read as a
+  floating half-body. If the base photo lacks a real occluder at the planned position,
+  reposition WIT (frame-edge crop at the bottom/side) instead of wrapper-cropping mid-air.
+  Wrapper crops only work when the crop line lands on a believable photo edge (S2.4's
+  counter line worked; S3.7's walkway did not).
+- Static connector lines (balloon strings to an anchor) break as soon as the connected
+  element scales/moves - drop them or animate them with the element; the prop's own baked
+  string usually suffices.
+- A prop resting ON WIT's face (the thrown pushpin's rest position) is the same class of
+  bug as text-over-face - check every prop's rest/hold position against WIT's head zone,
+  not just its entrance.
+
+Apply next time:
+- bbox-check every strip/tall/lying asset at the assets gate alongside the alpha check
+- pick WIT crop strategy from the actual photo's occluders, not the plan's wording
+- give echo/restamp beats clearly separated positions (no stacked text), per the S2 rule
+
+Promote to shared memory:
+no; render execution mechanics.
+
+### 2026-07-07 - Section 4 (world-cup): Scripted-Edit Placeholder Corrupted HTML; fromTo From-Only Props Tween Back To Current; Validator "GSAP target not found" Can Be A REAL Missing Element
+
+Classification: `Render lesson` / `Operational lesson`
+
+Context:
+Rendered `6-why-countries-fight-to-host-the-world-cup` Section 4 (FIFA Keeps The Money, 62.101s,
+9 scenes, port 1004). All 27 assets passed the gate (all real RGBA). Built to plan; four snapshot-QA
+rounds. Three new reusable gotchas.
+
+Lessons:
+- SCRIPTED-EDIT PLACEHOLDER BUG (self-inflicted): a python batch-edit used 'KEEP' as a temporary
+  swap token; the token matched INSIDE unrelated content ("WHAT FIFA KEEPS") and injected a broken
+  `style="` attribute whose unclosed quote swallowed the next sibling element at parse time. Symptom
+  chain: validate warned `GSAP target not found` for an element that WAS in the source, and the
+  snapshot showed the header text truncated + the element missing. When using scripted replaces,
+  pick sentinel tokens that cannot occur in the file (e.g. `@@X9@@`), and treat a "target not found"
+  warning as possibly REAL - check the COMPILED comp DOM (`/api/projects/<id>/preview/comp/index.html`)
+  and the snapshot before dismissing it as a tool quirk.
+- GSAP fromTo: a property present ONLY in the from-vars (e.g. `fromTo(el, {opacity:1, scaleY:0},
+  {scaleY:1})`) tweens that property from the from-value BACK to its pre-tween current value -
+  the EXPECTS plate flashed and vanished (opacity 1 -> 0 over the tween). Set opacity with a separate
+  `tl.set` and tween only the intended transform.
+- Sets pinned exactly on a clip's start boundary (e.g. 4.04 for a clip starting 4.04) made the
+  validator's GSAP resolution flaky for one element; nudging the hide/show sets ~0.02-0.16s into the
+  clip fixed it with no visual change. Prefer cue sets slightly after the clip boundary.
+- Reconfirmed: pose-catalog drift (`rich_flex_gold_chain_sunglasses` is still the plain smirk - use
+  `boss_suit_sunglasses_sparkle`), adapt layouts to the real photo geometry instead of faking physics
+  (4.8's "level two-pan scale" is actually a hanging pan + a flat desk disc - the sack went into the
+  real hanging pan and the CSS beam tilt was dropped), and mirror poses via a wrapper (flip on the
+  inner img) so GSAP tweens never touch the scaleX(-1).
+
+Apply next time:
+- unique sentinel tokens in scripted edits; verify compiled DOM when validate flags a missing GSAP target
+- never put a property only in fromTo's from-vars; tl.set it separately
+- keep cue sets off exact clip-start boundaries
+- snapshot-check every text/prop against WIT's face zone (4.8 plate + 4.9 bang lines both needed moves)
+
+Promote to shared memory:
+no; render execution mechanics.
+
+### 2026-07-07 - Section 5 (world-cup): Measure WIT From The Snapshot When Math Disagrees; Legibility Chips Beat Bare Text; Build Direction Devices As Real Paths
+
+Classification: `Render lesson`
+
+Context:
+Rendered `6-why-countries-fight-to-host-the-world-cup` Section 5 (Three Drains, 55.851s, 7 scenes,
+port 1005). All 26 assets pre-made and real RGBA. Six quick snapshot rounds; all fixes were
+readability/geometry, not timing.
+
+Lessons:
+- BBOX MATH CAN LIE ABOUT RENDERED POSITION: the shocked pose anchored by `top` landed ~150px lower
+  than the content-bbox arithmetic predicted (cause not chased). When a character lands off-target,
+  don't re-derive the math - measure the offset on the snapshot and re-anchor. One measurement beat
+  three recalculations.
+- BARE TEXT ON BUSY PHOTOS FAILS REPEATEDLY: white numerals on confetti, white handwriting on a
+  bright window, black handwriting near a white surround - all unreadable in snapshots. The reliable
+  fix is the same every time: put the text on its own chip (dark circle chips on the grates, the
+  standard cream chip for `bye.`). Default any free-floating cue word to a chip when the base is
+  textured or high-key.
+- DIRECTION DEVICES MUST BE REAL PATHS: a border-radius dome arc + stray arrowhead read as a rainbow,
+  not a U-turn. Build direction gags from explicit path segments (in-line, loop, out-line, arrowhead)
+  so the motion story is unambiguous even paused.
+- A scripted [beat] freeze = simply NO tweens in that window; lint will demand a hard-kill set when an
+  exit tween ends exactly on the clip boundary (gsap_exit_missing_hard_kill) - end the fade 0.1s early
+  and add a tl.set kill.
+- Mirrored-asset wrappers (flip on inner img) worked for three different asset types this section
+  (pose, flock, walking bills) - now the standing pattern for any leftward-drawn asset that must face right.
+
+Apply next time:
+- snapshot-measure misplaced characters instead of re-deriving bbox math
+- chip any cue text that sits on texture; keep bare handwriting for clean/dark zones only
+- draw turns/loops as segmented paths; verify the arrowhead exists in the snapshot
+
+Promote to shared memory:
+no; render execution mechanics.

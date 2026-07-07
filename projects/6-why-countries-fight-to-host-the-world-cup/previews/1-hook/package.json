@@ -1,0 +1,10 @@
+{
+  "name": "why-countries-fight-to-host-the-world-cup-1-hook",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx --yes hyperframes@0.6.76 preview --port 1001",
+    "check": "npx --yes hyperframes@0.6.76 lint && npx --yes hyperframes@0.6.76 validate && npx --yes hyperframes@0.6.76 inspect --at 2.5,7.3,11.5,14.5,18.8,22.4,26.2,29.0,34.0,35.2",
+    "render": "npx --yes hyperframes@0.6.76 render"
+  }
+}
