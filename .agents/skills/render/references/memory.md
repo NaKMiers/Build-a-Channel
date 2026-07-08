@@ -1895,3 +1895,43 @@ Apply next time:
 
 Promote to shared memory:
 no; render execution + orchestration mechanics.
+
+### 2026-07-08 - P6 render is the best-video standard: the reusable animation kit + motion-design bar (owner praised animation/transition/render)
+
+Classification: `Core` (confirmed render quality bar - the new default)
+
+Context:
+The owner called `6-why-countries-fight-to-host-the-world-cup` the best video the channel has made and
+named "animation, transition, render" as part of why. Re-read of `previews/1-hook/index.html` (and the
+combine of all 9) confirms a compact, repeatable motion-design recipe worth locking in as the default.
+Many mechanics are already in this memory (CTA kit, baked-state patch+replica, bbox text anchoring,
+per-base grade). This entry names the CORE KIT so every future section reuses it verbatim.
+
+Lesson (the P6 composition recipe - reuse as-is):
+- REUSABLE ANIMATION HELPER KIT, defined once at the top of the timeline script, keyed to word times:
+  `reveal(t,hideAt,at,fromVars,toVars)`, `show(t,hideAt,at)` (opacity hard-show), `smash(t,hideAt,at,
+  {y:22,scale:1.3,opacity:0})` -> `back.out(1.9)` ~0.2s, `pop(t,hideAt,at)` {scale:0.4,opacity:0} ->
+  `back.out(2)` ~0.22s. Build the whole section from these four primitives; do not hand-roll every tween.
+- `gsap.timeline({paused:true, defaults:{overwrite:"auto"}})` - `overwrite:auto` stops tweens fighting;
+  register it as `window.__timelines["<CompId>"]`.
+- ONE `.scene.clip` per beat, each on its OWN `data-track-index`, hard cuts (no crossfade between scenes);
+  set `data-layout-allow-overflow` + `overflow:visible` so a GIANT WIT can bleed off-frame cleanly (WIT
+  sits at negative offsets, e.g. `bottom:-250px; width:820px`, with a hard `drop-shadow(14px 16px 0 ...)`).
+- EVERY cue comment cites the word@time it fires on (`WINNER on Cup@4.18`); pin every reveal/impact to the
+  real word-timings JSON, never estimates.
+- PROPS ARE CSS, NEVER EMOJI: confetti = namespaced `.cfp` strips; glint = CSS 4-point star; price tag /
+  checklist / gag chips = cream CSS cards with inline SVG icons; googly eyes = CSS circles; underline/strike
+  = a `.ub` bar animated `scaleX:0->1` tied to a text span. Emoji glyphs do not render in snapshot Chromium.
+- SIGNATURE MOVES: receipt "printing" via `clip-path: inset()` growing over the beat (a printer effect);
+  camera push/reveal via translating a wrapper (`#pan` `x:-1100`); hide a photo's flaw (map fold seam) by
+  `transform:scale(2.09)` + a CSS podium over it; googly-eye blink via `scaleY:0.15` yoyo.
+- LOOK: per-base filter-grade classes (`.b-fest`/`.b-spot`/`.b-map` sepia/`.b-curt` brightness 0.42) +
+  `.vig`/`.vig-heavy` radial vignette layers; local handwritten `@font-face` woff2 with
+  `font-display:block`; one CSS `:root` palette (ink/red/cream/gold/teal); `will-change` on animated els.
+
+Apply next time: start every section composition from the four-helper kit + `overwrite:auto`; one
+`.clip` per beat on its own track with hard cuts; giant WIT with allow-overflow + drop-shadow; all props
+CSS/SVG (no emoji); word@time comment on every cue; per-base grade class + vignette; local woff2 font.
+
+Promote to shared memory:
+no; render execution recipe (pairs with the visual-plan video-level doctrine, which drives it).

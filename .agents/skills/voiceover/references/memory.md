@@ -456,6 +456,38 @@ Apply next time:
 Promote to shared memory:
 no; voiceover tooling/runtime guardrail, not a channel-wide strategy change.
 
+### 2026-07-08 - P6 shipped best-ever: pacing-via-punctuation + one owner-locked speed is the voiceover standard
+
+Classification: `Voiceover lesson`
+
+Context:
+`6-why-countries-fight-to-host-the-world-cup` shipped and the owner called it the best video the channel
+has made (voice explicitly praised). Re-read of `03-voiceover.md` + the section `tts-inputs/` confirms the
+approach that produced the loved narration; lock it in as the default.
+
+Lesson (apply to every future video):
+- ONE OWNER-LOCKED SPEED FOR THE WHOLE VIDEO, found by a bare-number A/B ladder on Section 1 only
+  (P6: 0.79 -> 0.80 -> 0.81, owner nudged to 0.81), then ALL sections generated at that locked speed.
+  Do the ladder on the hook, lock, and stop re-auditioning speed per section.
+- PACING IS SHAPED IN THE `tts-inputs/*.txt` VIA PUNCTUATION, not via speed or SSML: standalone `...`
+  hold lines, stacked `...` before a reveal/punchline, `. .` staccato resets, trailing `...` on setup
+  phrases. The script's `[beat]`/`[slower]`/`[deadpan]` markup is STRIPPED for TTS and REALIZED as these
+  punctuation holds. Wording in the tts-input must match `02-script.md` EXACTLY (only spacing differs).
+- ISOLATE THE THESIS AND PUNCHLINE LINES with their own holds so they breathe ("It is a purchase.";
+  "Full of buses."; "Two dollars fifty."; "Who keeps the tickets?"). The channel voice = a calm person
+  explaining something ridiculous; the silence around the punchline is what makes it land.
+- ONE MP3 PREVIEW PER SECTION at the locked speed; keep a per-section duration table (P6 total 434.24s,
+  ~7:14) so combine/caption inherit accurate timings. Expect the spacious holds to run the real audio a
+  bit longer than the flat-read word estimate - that is intended, not drift.
+- REGEN DISCIPLINE: if a script section's wording changes, regenerate ONLY that section's MP3 at the
+  locked speed and replace it; do not re-ladder speed.
+
+Apply next time: ladder+lock speed on the hook, then shape every section's delivery through punctuation
+holds in tts-inputs (markup stripped, wording exact), isolating thesis/punchline lines.
+
+Promote to shared memory:
+no; confirms + sharpens the existing ~0.8-speed and pacing-via-punctuation preferences already logged.
+
 ## Feedback Entry Template
 
 ```markdown

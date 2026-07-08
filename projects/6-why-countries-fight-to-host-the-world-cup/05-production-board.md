@@ -15,32 +15,40 @@ Source files:
 
 ## Port Map
 
-| Target | Port | Studio URL | Direct Composition URL | Status |
-|---|---:|---|---|---|
-| Unified preview | 1000 | `http://localhost:1000/#project/full-video` | `http://localhost:1000/api/projects/full-video/preview/comp/index.html` | running (combine 2026-07-07) |
-| Section 1 Hook | 1001 | `http://localhost:1001/#project/1-hook` | `http://localhost:1001/api/projects/1-hook/preview/comp/index.html` | stopped (owner request 2026-07-07) |
-| Section 2 Reframe | 1002 | `http://localhost:1002/#project/2-reframe` | `http://localhost:1002/api/projects/2-reframe/preview/comp/index.html` | stopped (owner request 2026-07-07) |
-| Section 3 Promise Machine | 1003 | `http://localhost:1003/#project/3-promise-machine` | `http://localhost:1003/api/projects/3-promise-machine/preview/comp/index.html` | stopped (owner shutdown-all 2026-07-07) |
-| Section 4 FIFA Keeps The Money | 1004 | `http://localhost:1004/#project/4-fifa-keeps-the-money` | `http://localhost:1004/api/projects/4-fifa-keeps-the-money/preview/comp/index.html` | stopped (owner shutdown-all 2026-07-07) |
-| Section 5 The Three Drains | 1005 | `http://localhost:1005/#project/5-three-drains` | `http://localhost:1005/api/projects/5-three-drains/preview/comp/index.html` | stopped (owner shutdown-all 2026-07-07) |
-| Section 6 The Morning After | 1006 | `http://localhost:1006/#project/6-morning-after` | `http://localhost:1006/api/projects/6-morning-after/preview/comp/index.html` | stopped (owner shutdown-all 2026-07-07) |
+
+| Target                                | Port | Studio URL                                              | Direct Composition URL                                                              | Status                                  |
+| ------------------------------------- | ---- | ------------------------------------------------------- | ----------------------------------------------------------------------------------- | --------------------------------------- |
+| Unified preview                       | 1000 | `http://localhost:1000/#project/full-video`             | `http://localhost:1000/api/projects/full-video/preview/comp/index.html`             | running (combine 2026-07-07)            |
+| Section 1 Hook                        | 1001 | `http://localhost:1001/#project/1-hook`                 | `http://localhost:1001/api/projects/1-hook/preview/comp/index.html`                 | stopped (owner request 2026-07-07)      |
+| Section 2 Reframe                     | 1002 | `http://localhost:1002/#project/2-reframe`              | `http://localhost:1002/api/projects/2-reframe/preview/comp/index.html`              | stopped (owner request 2026-07-07)      |
+| Section 3 Promise Machine             | 1003 | `http://localhost:1003/#project/3-promise-machine`      | `http://localhost:1003/api/projects/3-promise-machine/preview/comp/index.html`      | stopped (owner shutdown-all 2026-07-07) |
+| Section 4 FIFA Keeps The Money        | 1004 | `http://localhost:1004/#project/4-fifa-keeps-the-money` | `http://localhost:1004/api/projects/4-fifa-keeps-the-money/preview/comp/index.html` | stopped (owner shutdown-all 2026-07-07) |
+| Section 5 The Three Drains            | 1005 | `http://localhost:1005/#project/5-three-drains`         | `http://localhost:1005/api/projects/5-three-drains/preview/comp/index.html`         | stopped (owner shutdown-all 2026-07-07) |
+| Section 6 The Morning After           | 1006 | `http://localhost:1006/#project/6-morning-after`        | `http://localhost:1006/api/projects/6-morning-after/preview/comp/index.html`        | stopped (owner shutdown-all 2026-07-07) |
 | Section 7 Who Decides Is Not Who Pays | 1007 | `http://localhost:1007/#project/7-who-decides-who-pays` | `http://localhost:1007/api/projects/7-who-decides-who-pays/preview/comp/index.html` | stopped (owner shutdown-all 2026-07-07) |
-| Section 8 Payoff: Check The Receipt | 1008 | `http://localhost:1008/#project/8-payoff` | `http://localhost:1008/api/projects/8-payoff/preview/comp/index.html` | stopped (owner shutdown-all 2026-07-07) |
-| Section 9 Outro | 1009 | `http://localhost:1009/#project/9-outro` | `http://localhost:1009/api/projects/9-outro/preview/comp/index.html` | stopped (owner shutdown-all 2026-07-07) |
+| Section 8 Payoff: Check The Receipt   | 1008 | `http://localhost:1008/#project/8-payoff`               | `http://localhost:1008/api/projects/8-payoff/preview/comp/index.html`               | stopped (owner shutdown-all 2026-07-07) |
+| Section 9 Outro                       | 1009 | `http://localhost:1009/#project/9-outro`                | `http://localhost:1009/api/projects/9-outro/preview/comp/index.html`                | stopped (owner shutdown-all 2026-07-07) |
+
+
+
 
 ## Section Render Index
 
-| # | Section | Status | Port | Preview project | Source | Checks | Export file | Notes |
-|---:|---|---|---:|---|---|---|---|---|
-| 1 | Hook: The Trophy Prints A Receipt | `built - awaiting owner review` | 1001 | `previews/1-hook/` | section-01-hook visual plan + word timings | lint 0 err / validate 0 err / inspect 0 issues / snapshot QA passed | none (not requested) | 7 scenes, 35.904s; receipt motif born at 10.26 |
-| 2 | Reframe: A Purchase, Not An Investment | `built - awaiting owner review` | 1002 | `previews/2-reframe/` | section-02-reframe visual plan + word timings | lint 0 err / validate 0 err / inspect 0 issues / snapshot QA passed (3 rounds) | none (not requested) | 5 scenes, 33.728s; trophy hero returns; pose substitution + derived wallet cutout documented in IMPLEMENTATION.md |
-| 3 | The Promise Machine | `built - awaiting owner review` | 1003 | `previews/3-promise-machine/` | section-03-promise-machine visual plan + word timings | lint 0 err / validate 0 err (0 contrast warns) / inspect 0 issues / snapshot QA passed (3 rounds) | none (not requested) | 8 scenes, 60.779s; receipt motif returns; NEW hypnotized-numbers pose; mailbox generate-fallback per manifest; render adjustments in IMPLEMENTATION.md |
-| 4 | FIFA Keeps The Money | `built - awaiting owner review` | 1004 | `previews/4-fifa-keeps-the-money/` | section-04-fifa-keeps-the-money visual plan + word timings | lint 0 err / validate 0 err 0 warn / inspect 0 issues / snapshot QA passed (4 rounds) | none (not requested) | 9 scenes, 62.101s; arrow direction language born; gold safe + cash bundle heroes; 2 NEW WIT poses; final payoff cue estimated ~61.40 (whisper tail regression, per plan) |
-| 5 | The Three Drains | `built - awaiting owner review` | 1005 | `previews/5-three-drains/` | section-05-three-drains visual plan + word timings | lint 0 err / validate 0 err 0 warn / inspect 0 issues / snapshot QA passed (6 rounds) | none (not requested) | 7 scenes, 55.851s; drain-grate hero x4, shrinking boom-pile running gag; flock freeze [beat] -> ZURICH payoff; 1 NEW WIT pose (minister) |
-| 6 | The Morning After | `built - awaiting owner review` | 1006 | `previews/6-morning-after/` | section-06-morning-after visual plan + word timings | lint 0 err / validate 0 err / inspect 0 issues / snapshot QA passed (2 rounds) | none (not requested) | 8 scenes, 61.44s; elephant-stadium pet HERO + MAINTENANCE bowl motif (returns 6.7); receipt motif prints the white-elephant line; 2 NEW WIT poses (party-hat feeder, magnifier); corrupt "Mars." timestamp bypassed per plan |
-| 7 | Who Decides Is Not Who Pays | `built - awaiting owner review` | 1007 | `previews/7-who-decides-who-pays/` | section-07 visual plan + word timings | lint 0 err (5 documented warns) / validate 0 err 0 warn / inspect 0 issues / snapshot QA passed (7 fixes) | none (not requested) | 9 scenes, 66.987s; ~69 cues; giant WIT alternating sides C-R-L-R-L-R-L-R-L; whisper tail non-monotonic (words 206-216) -> final cues on the plan's +2.99s shift; 3 tiny taxpayer WITs as PAYS-panel props |
-| 8 | Payoff: Check The Receipt | `built - awaiting owner review` | 1008 | `previews/8-payoff/` | section-08 visual plan + word timings | lint 0 err (3 motif-reuse warns) / validate 0 err 0 warn / inspect 0 issues / snapshot QA passed (5 fixes) | none (not requested) | 6 calm scenes, 39.573s; ~35 cues; 1 WIT per scene, no pose repeats; Christmas mantel neutralized by chimney-breast crop + cool grade + CSS shelf; 8.5 thesis receipt panel per chip rule |
-| 9 | Outro: The Cheapest Host On Earth | `built - awaiting owner review` | 1009 | `previews/9-outro/` | section-09 visual plan + word timings | lint 0 err (8 documented warns) / validate 0 err / inspect 0 issues / snapshot QA passed (4 fixes) | none (not requested) | 2 scenes, 17.877s; motif retirement receipt prints TOTAL: $0.00; interactive CSS/SVG WhyTube card (LIKE click @8.22, SUBSCRIBE click @11.32 + confetti); giant peace-sign WIT + CONSULTANT-FREE stamp |
+
+| #   | Section                                | Status                          | Port | Preview project                    | Source                                                     | Checks                                                                                                     | Export file          | Notes                                                                                                                                                                                                                        |
+| --- | -------------------------------------- | ------------------------------- | ---- | ---------------------------------- | ---------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | Hook: The Trophy Prints A Receipt      | `built - awaiting owner review` | 1001 | `previews/1-hook/`                 | section-01-hook visual plan + word timings                 | lint 0 err / validate 0 err / inspect 0 issues / snapshot QA passed                                        | none (not requested) | 7 scenes, 35.904s; receipt motif born at 10.26                                                                                                                                                                               |
+| 2   | Reframe: A Purchase, Not An Investment | `built - awaiting owner review` | 1002 | `previews/2-reframe/`              | section-02-reframe visual plan + word timings              | lint 0 err / validate 0 err / inspect 0 issues / snapshot QA passed (3 rounds)                             | none (not requested) | 5 scenes, 33.728s; trophy hero returns; pose substitution + derived wallet cutout documented in IMPLEMENTATION.md                                                                                                            |
+| 3   | The Promise Machine                    | `built - awaiting owner review` | 1003 | `previews/3-promise-machine/`      | section-03-promise-machine visual plan + word timings      | lint 0 err / validate 0 err (0 contrast warns) / inspect 0 issues / snapshot QA passed (3 rounds)          | none (not requested) | 8 scenes, 60.779s; receipt motif returns; NEW hypnotized-numbers pose; mailbox generate-fallback per manifest; render adjustments in IMPLEMENTATION.md                                                                       |
+| 4   | FIFA Keeps The Money                   | `built - awaiting owner review` | 1004 | `previews/4-fifa-keeps-the-money/` | section-04-fifa-keeps-the-money visual plan + word timings | lint 0 err / validate 0 err 0 warn / inspect 0 issues / snapshot QA passed (4 rounds)                      | none (not requested) | 9 scenes, 62.101s; arrow direction language born; gold safe + cash bundle heroes; 2 NEW WIT poses; final payoff cue estimated ~61.40 (whisper tail regression, per plan)                                                     |
+| 5   | The Three Drains                       | `built - awaiting owner review` | 1005 | `previews/5-three-drains/`         | section-05-three-drains visual plan + word timings         | lint 0 err / validate 0 err 0 warn / inspect 0 issues / snapshot QA passed (6 rounds)                      | none (not requested) | 7 scenes, 55.851s; drain-grate hero x4, shrinking boom-pile running gag; flock freeze [beat] -> ZURICH payoff; 1 NEW WIT pose (minister)                                                                                     |
+| 6   | The Morning After                      | `built - awaiting owner review` | 1006 | `previews/6-morning-after/`        | section-06-morning-after visual plan + word timings        | lint 0 err / validate 0 err / inspect 0 issues / snapshot QA passed (2 rounds)                             | none (not requested) | 8 scenes, 61.44s; elephant-stadium pet HERO + MAINTENANCE bowl motif (returns 6.7); receipt motif prints the white-elephant line; 2 NEW WIT poses (party-hat feeder, magnifier); corrupt "Mars." timestamp bypassed per plan |
+| 7   | Who Decides Is Not Who Pays            | `built - awaiting owner review` | 1007 | `previews/7-who-decides-who-pays/` | section-07 visual plan + word timings                      | lint 0 err (5 documented warns) / validate 0 err 0 warn / inspect 0 issues / snapshot QA passed (7 fixes)  | none (not requested) | 9 scenes, 66.987s; ~69 cues; giant WIT alternating sides C-R-L-R-L-R-L-R-L; whisper tail non-monotonic (words 206-216) -> final cues on the plan's +2.99s shift; 3 tiny taxpayer WITs as PAYS-panel props                    |
+| 8   | Payoff: Check The Receipt              | `built - awaiting owner review` | 1008 | `previews/8-payoff/`               | section-08 visual plan + word timings                      | lint 0 err (3 motif-reuse warns) / validate 0 err 0 warn / inspect 0 issues / snapshot QA passed (5 fixes) | none (not requested) | 6 calm scenes, 39.573s; ~35 cues; 1 WIT per scene, no pose repeats; Christmas mantel neutralized by chimney-breast crop + cool grade + CSS shelf; 8.5 thesis receipt panel per chip rule                                     |
+| 9   | Outro: The Cheapest Host On Earth      | `built - awaiting owner review` | 1009 | `previews/9-outro/`                | section-09 visual plan + word timings                      | lint 0 err (8 documented warns) / validate 0 err / inspect 0 issues / snapshot QA passed (4 fixes)         | none (not requested) | 2 scenes, 17.877s; motif retirement receipt prints TOTAL: $0.00; interactive CSS/SVG WhyTube card (LIKE click @8.22, SUBSCRIBE click @11.32 + confetti); giant peace-sign WIT + CONSULTANT-FREE stamp                        |
+
+
+
 
 ## Shared Asset Rules
 
@@ -48,6 +56,8 @@ Source files:
 - Section asset junction rule: preview-local `assets` is a SYMLINK to `../../assets` (works on this Linux box; HTTP 200 verified). Fonts live in shared `assets/fonts/patrick-hand-latin.woff2`.
 - Attribution file: `assets/ATTRIBUTION.md`
 - Section voiceover mp3 is copied next to each section `index.html` (relative `src`).
+
+
 
 ## Active Section Notes
 
@@ -64,12 +74,38 @@ Source files:
 - Known snapshot-tool artifact: first captured frame of a run can miss a late-decoding PNG (screenshot fallback mode). All elements verified present via re-snaps. Re-check if MP4 export is requested.
 - Environment (Linux box, first render here): unprivileged port floor lowered to 1000 via `sudo sysctl -w net.ipv4.ip_unprivileged_port_start=1000` - NOT persistent across reboots; re-run before starting servers or persist in `/etc/sysctl.d/`.
 
+
+
+## Caption Note (2026-07-08)
+
+Captions completed for all 22 supported languages, exported to `output/captions/`.
+
+- Timing base: `voiceover/combined-segments.json` (163 cues, English text taken verbatim from `02-script.md`, aligned to the real combined-audio word timings from an earlier pass of this project) - reused as-is, not re-transcribed.
+- Prior partial run had exported 7 of 22 languages (arabic, chinese-simplified, chinese-traditional, english, french, german, italian). This run translated the remaining 15 (bangla, hindi, indonesian, japanese, korean, malayalam, polish, portuguese, russian, spanish, tamil, telugu, thai, turkish, vietnamese) cue-for-cue via 15 parallel translator subagents (163 cues each) and wrote each SRT via `write-translated-srt.mjs`, reusing the exact English timing.
+- "FIFA" kept verbatim (transliterated where the language convention calls for it, e.g. Cyrillic); "World Cup" localized to each language's natural sports-media term; numbers/currency figures left unchanged.
+- Verified: all 22 files in `output/captions/`, every language has the same cue count (163) and byte-identical timestamps vs `english.srt`, 0 empty cues, clean UTF-8 (Arabic/CJK/Indic/Thai render correctly, no mojibake). No duplicate root-level `output/captions.srt` (removed 2026-07-08 - `output/captions/english.srt` is the single English file).
+
+
+
 ## Stale / Regeneration Notes
 
-- None. No downstream outputs exist yet (review/combine/caption/packaging not run).
+- Combine and caption have both run (this board's Port Map / Section Render Index above predate that; update them if section-level details are needed again). Final MP4 exported 2026-07-08. Packaging has not run yet.
+
+
+
+## Final Video Export (2026-07-08)
+
+- Rendered the unified composition (`hyperframes/full-video/index.html`) to MP4 with `hyperframes@0.6.76 render` (Chrome + ffmpeg-static/ffprobe-static, since neither is on this box's PATH).
+- Lint before render: 0 errors, 60 pre-existing per-section warnings (no combine-introduced issues).
+- Output: `output/6-why-countries-fight-to-host-the-world-cup.mp4` - 1920x1080, h264/aac, 434.789s (matches `combined-voiceover.mp3` at 434.760s), 78,123,611 bytes (~74.5 MB).
+- Verified by extracting a frame per section (via ffmpeg `-ss`) at each of the 9 mount offsets (0, 35.952, 69.744, 130.584, 192.744, 248.664, 310.152, 377.208, 416.832s) - all 9 rendered with real content (mascot, photos, WIT poses, on-screen text), none blank.
+- The render log's `Sub-composition timelines not registered after 45000ms` warning is benign (documented in the combine skill's memory) - confirmed by the frame check above.
+- `renders/` was empty after the move (no leftover scratch or `.gitkeep`) and was removed per the `.gitkeep` rule.
+
+
 
 ## Next Step Boundary
 
-Next workflow step: `Review` (ALL 9 sections built; ALL preview servers stopped per owner shutdown-all 2026-07-07 - restart any section on demand with `npx --yes hyperframes@0.6.76 preview --port 100N` from its `previews/<N>-*/` folder; re-apply the sysctl port fix first if the box rebooted)
+Next workflow step: `Packaging` (all 9 sections built, combine/caption/final-MP4-export complete; ALL preview servers stopped per owner shutdown-all 2026-07-07 - restart any section on demand with `npx --yes hyperframes@0.6.76 preview --port 100N` from its `previews/<N>-*/` folder; re-apply the sysctl port fix first if the box rebooted)
 
 Do not continue into review, upload, or learning until the user asks for the next skill or explicitly requests that step.

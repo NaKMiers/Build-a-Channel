@@ -319,6 +319,39 @@ Apply next time:
 Promote to shared memory:
 no, this is topic-intake intake-mode and verification behavior, not a channel-wide change.
 
+### 2026-07-08 - P6 shipped as the best video ever: its intake STRUCTURE is now the standard
+
+Classification: `Topic intake lesson`
+
+Context:
+`6-why-countries-fight-to-host-the-world-cup` shipped and the owner called it the best video the channel
+has made, asking to raise every skill to match it. The 2026-07-02 entry above logged HOW the topic was
+picked; this confirms the intake FILE STRUCTURE as the template, because the downstream quality traces
+directly back to what the intake pre-decided.
+
+Lesson (make every future `00-topic-intake.md` carry these, because P6's did and it paid off end-to-end):
+- A `## Angle Package` written as `topic + contradiction + visual metaphor + viewer pain` - and a named
+  RECURRING MOTIF SEED + WIT-ARC SEED right there at intake (P6 seeded "trophy prints an endless receipt"
+  and the euphoric-fan -> lone-guy-with-receipt arc). The motif that carries the whole finished video was
+  chosen at step 0, not discovered later.
+- A `## The Real Mechanism` numbered chain (promise -> reality -> contract -> leftovers -> why-still -> the
+  live twist) that grounds BOTH research and script so the spine is stable from the start.
+- A `## Must Stay Honest` rails block + a dated `## Verified Anchor Facts` table (one web-verification
+  agent per anchor claim) for any topic whose premise is an economics/history claim - research and script
+  INHERIT these rails, which is what kept a stat-dense video accurate and un-rewritten.
+- Dual scorecards (channel template /40 + batch /45) and 3-signal demand evidence (YouTube views + Google
+  Trends + news volume) with real links, so "why now" and "why this angle" are evidenced, not asserted.
+- An `## Interesting-English Value` block naming the reusable phrases + on-screen gloss targets, so learner
+  value is designed in from step 0.
+
+Apply next time: treat the P6 intake as the section-by-section template for any evidence-heavy trending
+topic; the motif seed + honesty rails at intake are the highest-leverage, cheapest quality investment in
+the whole pipeline.
+
+Promote to shared memory:
+partly - "seed the recurring motif + WIT arc at intake" and "honesty rails + verified-facts table for
+claim-based premises" are channel-wide; fold into `_shared/systems/topic-packaging-hooks.md` next pass.
+
 ## Feedback Entry Template
 
 Use this shape when updating the skill after user review:

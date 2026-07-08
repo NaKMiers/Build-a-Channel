@@ -14,7 +14,7 @@ Use this file for transcription toolchain details, alignment gotchas, and recurr
 - **Multi-language (since 2026-06-24):** export ALL 22 supported languages as `output/captions/<language>.srt`. Timing is derived ONCE for English, emitted as `_segments.json` (`[{index,start,end,text}]`) by `build-srt.mjs`. Every other language is a per-cue translation of the English cue table (exact same count/order) and reuses `_segments.json` timing via `write-translated-srt.mjs` - never re-transcribed or re-timed. So all 22 tracks are frame-identical to the video by construction.
 - Translate WHOLE cues, never word-by-word, never split/merge a cue. `write-translated-srt.mjs` hard-fails on a count mismatch or empty cue.
 - MOST IMPORTANT gate: re-check that every `<language>.srt` has identical cue count and byte-identical timestamps to `english.srt`.
-- Export to `output/captions/` (22 files); also keep compatibility `output/captions.srt` (English) at output root. `.vtt` only if asked. Keep `voiceover/combined-word-timings.json` + `_segments.json` for reuse.
+- Export to `output/captions/` (22 files) ONLY - do NOT also write a duplicate `output/captions.srt` at the output root; `output/captions/english.srt` is the single English file (owner rejected the root-level copy on 2026-07-08, see Feedback Log). `.vtt` only if asked. Keep `voiceover/combined-word-timings.json` + `_segments.json` for reuse.
 - 22 languages: Arabic, Bangla, Chinese (Simplified→`chinese-simplified`), Chinese (Traditional→`chinese-traditional`), English, French, German, Hindi, Indonesian, Italian, Japanese, Korean, Malayalam, Polish, Portuguese, Russian, Spanish, Tamil, Telugu, Thai, Turkish, Vietnamese.
 
 ## Proven Toolchain (from `why-cheap-products-keep-getting-worse`, 2026-06-22)
@@ -46,6 +46,8 @@ Use this file for transcription toolchain details, alignment gotchas, and recurr
 - `why-the-internet-is-full-of-ai-slop` 22-language run (2026-06-30): FRESH full path (no prior English SRT). Transcribed `combined-voiceover.mp3` (decoded 306.109s; combine timeline 306.168s) with whisper-tiny.en -> 992 words; built 132 cues from `02-script.md` narration via `build-srt.mjs` (954 gt / 991 hyp tokens) + `combined-segments.json`. **Whisper tail glitch recurred again** (final "...one person who needs it," jumped BACK to ~299.3s while "and subscribe for more / See you in the next one" sat at 300-303.4s) - the long cue 131 legitimately absorbed the backward words so its end was fine, but the final cue 132 end was short (303.54 vs audio 306.168). Patched `combined-segments.json` last end to 306.168 and REGENERATED `english.srt` from the patched segments via `write-translated-srt.mjs` (same clean trick). Section-offset cross-check all within 0.16s (best run yet). Fanned out 21 parallel translator subagents (132 cues each, namespaced `aislop-<lang>-cues.json`) -> all 22 = 132 cues, byte-identical timestamps, 0 empty cues, clean UTF-8. Indic/Thai translators (Tamil/Telugu/Thai/Malayalam) were the slowest (160-320s); the rest ~50-90s. Reconfirms: extend-final-cue-to-audio-duration is now the EXPECTED tail step for this channel's Kokoro TTS (every project so far has the trailing-silence/backward-jump artifact). "slop"/"workslopped" flagged to translators as keep-verbatim English pun words (the video is literally about the English word).
 - `why-cheap-products-keep-getting-worse` 22-language run (2026-06-24): reused the already-verified English `output/captions.srt` (94 cues, last `00:04:11,180`) as the timing base instead of re-transcribing - parsed it into `_segments.json` with a tiny SRT parser, then translated the 94 cues into 21 languages (one subagent per language, each writing a `<lang>-cues.json` of exactly 94 strings) and built each SRT via `write-translated-srt.mjs`. Verified all 22 files = 94 cues with byte-identical timestamp lines vs `english.srt` (0 mismatches). Efficient pattern: when a verified English SRT already exists, parse it for both cues + timing rather than re-running whisper. Parallel translator subagents (1 per language) + the count-guard in `write-translated-srt.mjs` make the 21-language fan-out fast and safe; "WIT" mascot must be flagged to translators as a keep-verbatim proper noun.
 
+- `why-countries-fight-to-host-the-world-cup` 22-language run (2026-07-08), "finish remaining captions" resume case: a prior partial run had already exported 7/22 languages (arabic, chinese-simplified, chinese-traditional, english, french, german, italian) plus `voiceover/combined-segments.json` (163 cues, `english.srt` verified). No re-transcription needed - just checked `output/captions/` for which language basenames were missing, diffed against the 22-language table, and fanned out translator subagents for only the missing 15. Built each via `write-translated-srt.mjs` against the existing `combined-segments.json`. All 22 verified: same cue count, byte-identical timestamps vs `english.srt`, 0 empty cues, clean UTF-8. Lesson: when asked to "finish remaining captions" (or similar resume phrasing), first `ls output/captions/` and diff against the Supported Languages table instead of assuming a fresh run - only translate what's missing, reusing the existing segments/timing file untouched.
+
 ## Cross-Check Cue Times Against The Combine Section Offsets (cheap, high-signal)
 
 When the project was combined, `06-production-board.md` records each section's cumulative ACTUAL-mp3 offset (start of section N on the full timeline). After building the SRT, grep the first cue of each section's narration and confirm its timestamp ≈ that section offset. On subscription: S2 cue `00:00:23.62` vs offset 23.568s; S5 `00:02:47.00` vs 166.896s; S7 `00:04:33.96` vs 273.888s - all near-exact. If a section's first cue is off by more than ~0.3s, alignment drifted there (or the cue text doesn't match what's spoken). Faster and more reliable than listening to spot-checks.
@@ -64,6 +66,23 @@ On `why-everyone-pretends-to-be-busy` the final ~6 words got NON-MONOTONIC times
 Fix applied: the last cue's START was still correct (right after the previous distinct word); only its END was short. Extended the final cue's end to ≈ the audio duration (held the last line through the end - standard and harmless even over a short trailing silence). Always sanity-check the LAST 1-2 cues against the audio tail; if whisper timestamps go backwards there, extend the final cue end to the audio duration rather than trusting the glitched word times.
 
 ## Feedback Log
+
+### 2026-07-08 - Dropped the duplicate root-level `output/captions.srt`
+
+Classification: `Operational lesson`
+
+Context:
+On `why-countries-fight-to-host-the-world-cup`, Anh Khoa pointed out that `output/captions.srt` is just the English track duplicated - `output/captions/english.srt` already exists and is the file to use - and asked for the skill updated so it stops generating that extra copy.
+
+Lesson:
+The "backward compatibility" root-level copy from the original single-language version of this skill is no longer needed now that every run exports `output/captions/english.srt` as part of the 22-language set. Keeping both was redundant and confusing about which file is canonical.
+
+Apply next time:
+- export only `projects/<slug>/output/captions/<language>.srt` for all 22 languages, English included.
+- do NOT write a root-level `output/captions.srt`. If an older project already has one (created by a prior skill run), it's fine to leave it unless the user asks to clean it up.
+
+Promote to shared memory:
+No; caption-skill execution practice.
 
 ### 2026-06-24 - Extended to 22-language captions
 

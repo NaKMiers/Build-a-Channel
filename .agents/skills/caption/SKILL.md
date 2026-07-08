@@ -138,7 +138,7 @@ Write all language caption files to `projects/<slug>/output/captions/`:
 - Filenames are lowercase, spaces→hyphens, parentheticals flattened - see the **Supported Languages** table for the exact basenames.
 - `.vtt` variants only if the user asks (same cues, WebVTT header + `.` decimal separator).
 
-Keep backward compatibility: also write `output/captions.srt` (the English track) at the project `output/` root so existing upload tooling still finds it.
+Do NOT also write a duplicate `output/captions.srt` at the project `output/` root - `output/captions/english.srt` is the single English file; a root-level copy is redundant and the owner has explicitly rejected it.
 
 Also keep `voiceover/combined-word-timings.json` and `_segments.json` for reuse.
 
@@ -181,7 +181,7 @@ All 22 are exported every run. English is built from the script; the rest are pe
 6. Derive ordered English cue text from `02-script.md`; align to the timings and build `english.srt` AND the `_segments.json` timing table (`build-srt.mjs` with the segments arg).
 7. For each of the other 21 languages: translate the English cue table cue-for-cue (exact count/order), then write `<language>.srt` from `_segments.json` (`write-translated-srt.mjs`).
 8. Run the Self-Check (including the multi-language timing re-check - the most important gate).
-9. Export all 22 files to `projects/<slug>/output/captions/`, plus the compatibility `output/captions.srt` (English). Add `.vtt` only if asked.
+9. Export all 22 files to `projects/<slug>/output/captions/` (no duplicate root-level `output/captions.srt`). Add `.vtt` only if asked.
 10. Write a short status note in `05-production-board.md` (languages exported, cue count, duration).
 11. Respond with the Caption report (output dir, languages, cue count, total duration, sync source). Do not continue into upload or learning.
 
@@ -204,7 +204,7 @@ Multi-language timing re-check (MOST IMPORTANT - captions must match the video):
 - cross-check first cue of each section's narration against the combine section offsets in `05-production-board.md` (English track), confirming the shared timing actually lands on the video timeline.
 - spot-check 2-3 cues per a few languages: the translated line is a faithful, fluent translation of the matching English cue (right meaning, right cue).
 - every file is valid UTF-8 SRT (non-Latin scripts - Arabic, CJK, Indic, Thai - render correctly, no mojibake).
-- compatibility `output/captions.srt` (English) also written.
+- no duplicate `output/captions.srt` left at the output root (English lives only at `output/captions/english.srt`).
 
 ## Hard Fails
 

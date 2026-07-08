@@ -234,6 +234,37 @@ Avoid:
 - turning visual notes into full HyperFrames boards
 - voiceover markup overload in the first draft
 
+## Motif, Numbers, and Humor System (the P6 best-video standard)
+
+`6-why-countries-fight-to-host-the-world-cup` (the owner's best video to date) set the script bar. Build
+these into the draft, not just the visuals:
+
+- **Recurring motif = a THESIS OBJECT, not a decoration.** Pick one concrete object that literally IS the
+  argument, write it into the hook, reference it (or add to it) in most sections, and CLOSE the video on
+  it. P6's receipt is born in the hook, gains a line each section, and the payoff is "check whose name is
+  on the receipt". Name the motif (and any secondary motif) in the Draft Strategy block up front. Add a
+  short **WIT arc** line to Draft Strategy too: one emotional state per section, start to finish.
+- **One number per beat; every number lives on a prop.** Evidence-heavy topics die as lectures. Never
+  stack two figures in a sentence; give each surviving number a physical home the visual can build (a
+  price tag, a receipt line, a counter, a gauge) and say so in that section's Visual goal. Cut numbers the
+  argument does not need.
+- **Write a `Humor System` block** near the top of the script with: the running gag; the register (dry /
+  cheeky / system-aimed); a short bank of vetted cheeky lines; and the real-name rule (neutral factual
+  celebrity mentions allowed, e.g. "And Bruno Mars." - real people as joke TARGETS banned). This makes the
+  comedy deliberate and keeps the edge safe and consistent.
+- **Every section ends on a button / mini-payoff** that also hands off to the next section (P6: "the money
+  leaves with the guests." -> next section opens "Then the tournament ends..."). The button is the line a
+  viewer would quote.
+- **Pre-load the downstream skills in each section**: `Purpose`, a `Visual goal` (naming the motif beat +
+  which number sits on which prop), the `Narration` block, `Approval check` bullets, and `Voice revision
+  notes` (where `[beat]`/`[slower]`/`[deadpan]` go, which thesis/punchline lines to isolate). A section
+  that carries these lets visual-plan and voiceover succeed without inventing intent.
+- **For evidence-heavy or claim-dense scripts, run the 3-lens adversarial review before delivery**
+  (honesty vs the pack / B1-learner clarity+voiceability / engagement+channel rules); apply must/should
+  fixes and note "rev 2" in the header. See the 2026-07-02 memory entry for the reusable rules it yields
+  (number echoes keep units; gloss punchline place-names early; hedges must survive compression; topic
+  noun in the first spoken line on trend-timed videos).
+
 ## Section Shape
 
 Choose the section count from the research, usually `6-8` sections:

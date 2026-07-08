@@ -336,6 +336,40 @@ Apply next time:
 Promote to shared memory:
 no; this is research-pack sourcing efficiency, not a channel-wide strategy change.
 
+### 2026-07-08 - P6 shipped best-ever: the research-pack OUTPUT STRUCTURE that fed a great script is the standard
+
+Classification: `Research pack lesson`
+
+Context:
+`6-why-countries-fight-to-host-the-world-cup` shipped and the owner called it the best video the channel
+has made. The 2026-07-02 entry above logged sourcing efficiency; this locks in the pack's OUTPUT SECTIONS,
+because every strong script/visual choice downstream can be traced to a specific pack section.
+
+Lesson (build these sections into every pack; P6's did and the script wrote almost itself):
+- An `## Explanation Spine` TABLE with columns `Section | Job | Evidence | Visual anchor | WIT state` - this
+  is a pre-storyboard: it hands script-draft the section list AND hands visual-plan the per-section visual
+  anchor and WIT beat in one grid. Highest-leverage section in the pack.
+- A `## Useful Examples` table mapping each killer stat to a concrete VISUAL USE (2.5% recouped -> receipt
+  line; $4,700-13,000 per tourist -> price tag on one suitcase; 381 fans in 41,000 seats -> dot-in-ocean
+  seat map). Research should choose the picture for each number, which is what makes "one number on a prop"
+  possible upstream of the script.
+- An explicit `## Engagement Study` (learn, do NOT copy): for each top competitor video, its chapter arc +
+  the one lesson to steal + the weakness to exploit; plus the standing mandate "every number in our video
+  must live on a prop" (born here from the "small remakes recite numbers without objects" failure).
+- A `Source Map` table with a `Confidence` column AND a `Use / Do not copy` column per source, so honesty
+  and originality constraints travel with each fact.
+- `## Safe Claims` / `## Claims To Avoid` mapped 1:1 from the intake's Must Stay Honest rails, plus
+  `## Open Questions` for anything unverified (so the script knows what NOT to state as fact).
+- A `## Jokes And Analogies` bank and `## Visual Metaphors` / `## Thumbnail Tension` / `## WIT Emotions` /
+  `## Color And Contrast` lists - the pack pre-supplies the comedy and visual language, not just facts.
+
+Apply next time: treat the P6 pack as the section template; the Explanation Spine + Useful-Examples
+(stat->visual) tables are the two sections that most improve the script and visual plan, so never skip them.
+
+Promote to shared memory:
+partly - "Explanation Spine table" and "map every stat to a visual (one number on a prop)" are channel-wide;
+fold into `_shared/systems/script-learner-voice.md` / `visual-production.md` next pass.
+
 ## Feedback Entry Template
 
 Use this shape when updating the skill after user review:

@@ -7,8 +7,8 @@ Use this file for title taste, thumbnail concept behavior, description format, t
 
 ## Current Skill Standard
 
-- Runs **after `caption`** in the workflow (`... -> combine -> caption -> packaging -> upload -> learning`); it is no longer a research-pack side branch.
-- Require non-empty `00-topic-intake.md`, `01-research-pack.md`, AND `02-script.md` (hard gate). Recommended position is after caption so the finished video, real chapters, and built shorts are available, but only those three files are hard-required.
+- Runs **after `caption`** in the workflow (`... -> combine -> caption -> packaging -> upload -> learning`); it is a final upload-prep step, not a research-pack side branch.
+- Require non-empty `00-topic-intake.md`, `01-research-pack.md`, AND `02-script.md` (hard gate). Do not block on modified-time ordering between those three files. At the post-caption stage, earlier files may have been touched out of order; use the finished video, captions, and built shorts as the final-run context.
 - Write everything to ONE file: `output/packaging.md` (the 5 locked pairs, the description package, the thumbnail prompts folded into a `## Thumbnail Prompts` section, and per-short blocks when shorts exist). Thumbnail images go to `output/thumbnails/`. Do NOT create `03-packaging.md` or a separate `PROMPTS.md` anymore, and do NOT write under `assets/thumbnails/`. Leave legacy `03-packaging.md`/`assets/thumbnails/` in older projects as-is unless the user asks to migrate.
 - Main video = exactly `5` **locked title+thumbnail A/B pairs**: title `N` is coupled to thumbnail `N`. Editing thumbnail prompt `N` also rewrites title `N`, and editing title `N` also rewrites thumbnail prompt `N`; never leave one side of a pair stale. Keep pair numbers stable; pairs are independent of each other. Files named `main-pair-1.png` … `main-pair-5.png`.
 - Shorts-aware: detect built shorts via `shorts/shorts-plan.md` or `output/shorts/*.mp4`. If none, package the main video only. If present, also create ONE title + description + thumbnail per short (portrait `1080x1920` cover reusing the short's source-section assets, `short-0N.png`), standalone with NO long-video CTA.
@@ -28,6 +28,26 @@ Use this file for title taste, thumbnail concept behavior, description format, t
 - Keep the channel influence-first; do not turn descriptions into direct product promotion.
 - When `output/packaging.md` is created, updated, or rerun, the only downstream steps are `upload` and `learning`; do not mark earlier production outputs stale.
 - Stop before `upload` or `learning`.
+
+### 2026-07-08 - Post-caption packaging ignores upstream mtime ordering
+
+Classification: `Core operational update`
+
+Context:
+On video 6, packaging was blocked because `00-topic-intake.md` was newer than `01-research-pack.md` and `02-script.md`, even though packaging is meant to run at the very end after `caption`.
+
+Lesson:
+Packaging should not use modified-time ordering among `00-topic-intake.md`, `01-research-pack.md`, and `02-script.md` as a hard stale-upstream gate. The final step is after `caption`; if the three required files exist and are non-empty, proceed. Prefer the finished artifacts (`output/captions/`, full video/audio, shorts) for chapters and upload metadata.
+
+Apply next time:
+
+- require the three source files to exist and be non-empty
+- ignore unusual mtime ordering among those three files
+- use Update Mode if `output/packaging.md` already exists
+- keep upload and learning as the only downstream steps
+
+Promote to shared memory:
+No. This is a packaging-skill execution rule.
 
 ## Output Standard
 

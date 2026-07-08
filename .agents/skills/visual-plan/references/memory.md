@@ -987,6 +987,63 @@ Promote to shared memory:
 no; pairs with the existing learning-log whisper line - this is the concrete working recipe
 for visual-plan/render on this machine.
 
+### 2026-07-08 - P6 is the best-video standard: design the WHOLE video, not just scenes (owner-directed, Core)
+
+Classification: `Core` (confirmed channel creative direction - the new visual-plan bar)
+
+Context:
+The owner reviewed the finished `6-why-countries-fight-to-host-the-world-cup` (9 sections, combined and
+exported) and called it the best video the channel has ever made - "everything is so good" - and
+explicitly said MOST of that quality came from the visual-plan skill. He asked for a big channel-wide
+skill upgrade so future videos are this good by default. Deep re-read of the master `04-visual-plan.md`
+plus all 9 section plans (esp. S1 hook and S5 three-drains) shows the jump over project 5 is at the
+VIDEO level of design, not the scene level. These patterns are now codified in SKILL.md
+("Video-Level Design", "Scene-Craft Devices", "Per-Section Approval-Check Self-Audit").
+
+Lesson (what P6 did that earlier videos did not - apply to ALL future videos):
+- RECURRING MOTIF ENGINEERED ACROSS ALL SECTIONS, not a loose callback. One hero object carries the
+  thesis: BORN in the hook on a named beat (receipt starts printing at `fight@10.26`), THREADED through
+  every section (a new item prints at each section's gag beat), CLOSED in the payoff (final receipt
+  close-up + outro `TOTAL: $0.00`). Plus a secondary motif (white-elephant feeding bowl). A motif the
+  viewer can name and predict is what makes a video feel authored.
+- MASCOT EMOTIONAL ARC ACROSS THE WHOLE VIDEO, planned top-down, one state per section (euphoric fan ->
+  squint -> frozen -> hypnotized -> mayor signing -> horror -> deadpan party hat -> tiny taxpayer -> calm
+  nod). Each section's WIT beats must sit on this arc; WIT tells the argument through feeling.
+- NAMED SCENE-TYPE ROTATION PALETTE + no two consecutive scenes share a type (wide gag / object hero /
+  evidence board / checklist device / glamour reveal / mascot-only focus / animated interactive UI).
+- SECTION-LEVEL RUNNING-GAG THAT MUTATES STATE where the script allows: S5's "boom" money pile shrinks
+  100% -> 70% -> 45% -> 20% -> gone as each drain drinks; the shrink IS the explanation. A mutating prop
+  beats a reappearing prop.
+- BLANK ASSET + CSS LABEL: generate a text-FREE element (receipt, drain plate, signpost, ticket stub) and
+  let CSS overlay the specific words per scene on the spoken word. ONE `drain-grate-ornate.png` is labelled
+  three different ways across three scenes. Max reuse, crisp animatable text, same hero says a new thing
+  each beat.
+- TWO-PHASE SCENES for ~8-11s beats (internal spotlight slide / camera push / left->right stage) so the
+  frame still changes every ~4s (S1.6 glamour->reveal push; S5.5 mobbed->dead shop->verdict).
+- ONE NUMBER PER BEAT, EVERY NUMBER ON A PROP (price tag, receipt line, counter, gauge) - the fix for a
+  numbers-heavy topic reading as a lecture.
+- PLANNED SILENCE as a joke: mark where SFX / the receipt-tick STOP; the audible absence is the punchline.
+- SAFETY SPINE stated once at video level and re-checked per section: parody the hero object (generic
+  trophy, NOT the real FIFA sculpture), nationality-neutral props (no real flags), no real people (WIT in
+  costume plays every role), edge at institutions only; neutral factual celebrity mentions OK, real people
+  as joke targets banned.
+- PER-SECTION APPROVAL-CHECK SELF-AUDIT block at the end of every section file (concrete yes-answer per
+  rule) - writing the audit forces the plan to meet the bar before handoff.
+- Reaffirmed and still true: real people-free brand-free photo base behind EVERY scene (fresh per scene,
+  none reused within a section), bright grade ~0.75-0.8 with only a light vignette (no heavy dark scrim),
+  giant WIT big-and-high with rotating side/scale/pose, subtitle-safe lower zone, word-timings generated
+  first so every show-as-you-say line cites a real timestamp.
+
+Apply next time:
+- open the master by deciding the 5 video-level choices (motif / WIT arc / scene-type palette / running
+  gag / safety spine) BEFORE any scene; record them in `Video-Level Direction`.
+- reach for the scene-craft devices (blank-asset+CSS-label, two-phase scene, one-number-per-prop, planned
+  silence, eye-path) by default.
+- end every section file with the approval-check self-audit.
+
+Promote to shared memory: YES - the video-level doctrine belongs in `_shared/systems/visual-production.md`
+and `_shared/channel/learning-log.md` as a Core creative-direction signal on the next shared-memory pass.
+
 ## Feedback Entry Template
 
 ```markdown

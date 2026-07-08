@@ -385,6 +385,46 @@ Promote to shared memory:
 no - this is script-draft QA process; revisit promoting "number echoes keep units" into
 `script-learner-voice.md` if it recurs.
 
+### 2026-07-08 - P6 script craft: motif-as-thesis-object + one-number-on-a-prop + Humor System block (owner's best video)
+
+Classification: `Script draft lesson`
+
+Context:
+The owner named `6-why-countries-fight-to-host-the-world-cup` the best video the channel has made and
+asked to raise every skill's bar to match it. The 3-lens review and on-brand CTA outro were already
+logged; a full re-read of `02-script.md` (rev 2) surfaces the STRUCTURAL script choices that made the
+downstream skills succeed. Now codified in SKILL.md ("Motif, Numbers, and Humor System").
+
+Lesson (apply to future scripts, especially evidence-heavy ones):
+- RECURRING MOTIF = A THESIS OBJECT. The receipt is not decoration: it is born in the hook ("the trophy
+  prints a receipt"), gains one item per section, and the payoff line IS the motif ("check whose name is
+  on the receipt"). Choose an object that literally is the argument; name it (plus any secondary motif)
+  in Draft Strategy, with a one-line WIT emotional arc (one state per section).
+- ONE NUMBER PER BEAT, EVERY NUMBER ON A PROP. P6 is stat-dense but never lectures because no sentence
+  stacks two figures and each number lands on a physical object (price tag, receipt line, counter, gauge),
+  called out in that section's Visual goal. This single rule is the difference between "explainer" and
+  "documentary essay".
+- A `Humor System` BLOCK near the top: running gag + register (dry/cheeky/system-aimed) + a bank of vetted
+  cheeky lines ("a chess club with four billion in reserves"; "a horoscope with a spreadsheet"; "the
+  world's most expensive selfie") + the real-name rule (neutral factual celebrity mentions OK - "And Bruno
+  Mars." - real people as joke targets banned). Deliberate comedy, safe and consistent edge.
+- PER-SECTION BUTTONS that hand off to the next section ("the money leaves with the guests." -> "Then the
+  tournament ends..."). Each section ends on the quotable line.
+- PRE-LOAD DOWNSTREAM: each section carries Purpose + Visual goal (motif beat + which number on which prop)
+  + Narration + Approval check + Voice revision notes ([beat]/[slower]/[deadpan] placement, which lines to
+  isolate). A `Claim Safety Notes` block (Safe / Inferences used carefully / Claims avoided / Humor safety)
+  and `English Learner Notes` (in-line glosses, jargon deliberately avoided) make honesty and learner-fit
+  auditable. This is why P6's voiceover, visual-plan, and captions all landed on the first serious pass.
+
+Apply next time:
+- Draft Strategy block first (core thesis / motif + secondary motif / WIT arc / risk + mitigation), then
+  a Humor System block, then sections that each pre-load visual-plan + voiceover.
+- Enforce one-number-per-beat-on-a-prop while drafting, not in review.
+
+Promote to shared memory:
+partly - "one number per beat, every number on a prop" and "recurring motif = thesis object" are
+channel-wide; fold them into `_shared/systems/script-learner-voice.md` on the next shared-memory pass.
+
 ## Feedback Entry Template
 
 Use this shape when updating the skill after user review:

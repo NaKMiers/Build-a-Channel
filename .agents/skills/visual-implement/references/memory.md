@@ -370,6 +370,45 @@ missing specific to render/CSS; keep one upload-credit list.
 Promote to shared memory: no; visual-implement orchestration + sourcing behavior (extends the prior
 sourcing entries with the parallel-subagent pattern and the Openverse-blocked fallback chain).
 
+### 2026-07-08 - P6 shipped best-ever: generation-prompt + reuse discipline is the asset standard
+
+Classification: `Asset lesson`
+
+Context:
+`6-why-countries-fight-to-host-the-world-cup` shipped and the owner called it the best video the channel
+has made ("images" praised). Prior entries cover sourcing/orchestration; this locks in the GENERATE-prompt
+and REUSE discipline in `assets/asset-manifest.md` that kept the generated heroes consistent, safe, and
+render-ready.
+
+Lesson (apply to every generate asset):
+- PROMPT SHAPE: "Create ONE isolated object on a fully transparent background: <thing>", then explicit
+  structure + style + framing (centered, whole object visible, generous transparent margin), then an
+  explicit `Do NOT include:` list (text, numbers, logos, brands, flags, ribbons, background, people,
+  hands). Isolated transparent element, NEVER a pre-composed scene - render composites.
+- SAFETY BAKED INTO THE PROMPT: for any real-world-adjacent hero, add a "do NOT reproduce/imitate <the real
+  copyrighted thing>" clause (P6 G1: "do NOT imitate the real FIFA World Cup trophy - no spiraling figures,
+  no green stone rings; must read as a generic fantasy trophy"). Parody by construction, not by hoping.
+- ATTACH-REFERENCE CHAIN for character consistency: every NEW WIT pose prompt says "attach `_origin_.png`";
+  a VARIANT of an existing pose attaches BOTH `_origin_.png` AND the finished prior pose (P6 G4 fan-frozen
+  attaches G3 fan-cheer) so the costume/kit stays identical across the callback.
+- TEXT-FREE ASSETS ON PURPOSE: generate blank plates/receipts/stubs/signposts (no baked text) so CSS
+  overlays the specific words per scene at render - this is what lets ONE `drain-grate-ornate.png` be
+  labelled three ways and keeps text crisp/animatable. Note "text-free so CSS labels later" in the manifest.
+- REUSE BY FILENAME IS A HARD RULE: the manifest's `Used in scenes` column lists every reuse; a repeated
+  subject (trophy, receipt, money pile, banknote, pose) is ONE file reused, never re-prompted - this is why
+  the hero object looks identical all video. Mark `reused` in the status legend.
+- OWNER-PASTE WORKFLOW: assets are `prompt-ready / awaiting generation` (owner pastes the prompt into
+  ChatGPT, attaches the named reference, drops the PNG into `assets/` under the exact filename) or `done`;
+  browse bases record CC license in ATTRIBUTION.md. Batch all of a section's prompts together for the owner.
+
+Apply next time: write every generate prompt as isolated-transparent + explicit Do-NOT + safety clause;
+attach `_origin_` (and the prior pose for a variant); keep hero props text-free for CSS labels; reuse by
+filename and log it in the manifest; batch prompts per section with the owner-paste status.
+
+Promote to shared memory:
+partly - the prompt shape + attach-`_origin_` + text-free-for-CSS + reuse-by-filename rules are channel-wide
+asset doctrine; fold into `_shared/systems/visual-production.md` next pass.
+
 ## Feedback Entry Template
 
 ```markdown

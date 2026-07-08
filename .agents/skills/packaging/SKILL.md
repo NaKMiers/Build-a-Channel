@@ -1,6 +1,6 @@
 ---
 name: packaging
-description: Create or update YouTube packaging for a Why It Works video project. Use when the user asks for Packaging, title and thumbnail, YouTube description, upload metadata, tags, hashtags, thumbnail concepts, thumbnail images, A/B thumbnail testing, A/B title testing, or packaging; this is the packaging step that runs after caption and requires completed 00-topic-intake.md, 01-research-pack.md, and 02-script.md (it does not require voiceover/render to be finished, but its recommended position is after caption so it can also package shorts and use real chapters). Produces 5 LOCKED title+thumbnail A/B pairs for the main video (title N is coupled to thumbnail N - editing one rewrites the other), plus the YouTube description and tags; when built shorts are available it also creates one title, description, and thumbnail per short. Writes everything to ONE file, projects/<slug>/output/packaging.md (titles, descriptions, AND the thumbnail generation prompts folded in), and saves all thumbnail images under projects/<slug>/output/thumbnails/. It no longer creates 03-packaging.md or a separate PROMPTS.md.
+description: Create or update YouTube packaging for a Why It Works video project. Use when the user asks for Packaging, title and thumbnail, YouTube description, upload metadata, tags, hashtags, thumbnail concepts, thumbnail images, A/B thumbnail testing, A/B title testing, or packaging; this is the final packaging step that runs after caption and requires completed 00-topic-intake.md, 01-research-pack.md, and 02-script.md. Produces 5 LOCKED title+thumbnail A/B pairs for the main video (title N is coupled to thumbnail N - editing one rewrites the other), plus the YouTube description and tags; when built shorts are available it also creates one title, description, and thumbnail per short. Writes everything to ONE file, projects/<slug>/output/packaging.md (titles, descriptions, AND the thumbnail generation prompts folded in), and saves all thumbnail images under projects/<slug>/output/thumbnails/. It no longer creates 03-packaging.md or a separate PROMPTS.md.
 ---
 
 # Packaging
@@ -28,13 +28,13 @@ Packaging runs **after `caption`**, near the end of the workflow:
                      \-> shorts (side sub-workflow; if built, packaging includes them)
 ```
 
-Hard-required previous outputs (the skill refuses without these three):
+Hard-required source files (the skill refuses without these three):
 
 - `projects/<slug>/00-topic-intake.md`
 - `projects/<slug>/01-research-pack.md`
 - `projects/<slug>/02-script.md`
 
-Recommended position is after `caption` so the finished video, real chapter timing, and any built shorts are available - but the only hard gate is the three files above. When the combined video / captions exist, use them for real chapters; otherwise estimate chapters from `02-script.md` and mark them `draft until aligned`.
+Normal position is after `caption`, so the finished video, real chapter timing, and any built shorts are available. The only hard gate is that the three source files above exist and are non-empty. When the combined video / captions exist, use them for real chapters; otherwise estimate chapters from `02-script.md` and mark them `draft until aligned`.
 
 Write or update (only these):
 
@@ -45,9 +45,9 @@ Do **not** create `03-packaging.md` or a separate `PROMPTS.md` anymore, and do n
 
 If `00-topic-intake.md`, `01-research-pack.md`, or `02-script.md` is missing, stop and tell the user to run the missing previous skill in order before `packaging`.
 
-If `01-research-pack.md` is older than `00-topic-intake.md`, or `02-script.md` is older than `01-research-pack.md`, treat the upstream as stale and stop. Tell the user to rerun the stale step.
+Do not block packaging only because `00-topic-intake.md`, `01-research-pack.md`, and `02-script.md` have unusual modified-time ordering. Packaging is the final post-caption step, and earlier files may be touched during cleanup, caption alignment, or metadata edits after the real video is already finished. If the files exist and are non-empty, proceed and use the latest available finished artifacts (`output/captions/`, `hyperframes/full-video/`, output video, shorts) as the final-run context.
 
-If `output/packaging.md` exists but any required upstream file has a newer modified time, treat packaging as stale and use Update Mode when the user asks for packaging.
+If `output/packaging.md` exists and the user asks for packaging again, use Update Mode. Preserve useful approved decisions, refresh chapter/caption/shorts-aware sections from the finished outputs, and do not treat mtime differences among the three source files as a hard stale-upstream failure.
 
 When this skill creates, updates, or reruns `output/packaging.md` or thumbnail images, the only downstream steps are `upload` and `learning`; do not mark earlier production outputs stale. Do not delete or regenerate other files unless the user explicitly asks.
 
@@ -106,7 +106,7 @@ A packaging candidate is usually:
 
 - a folder with non-empty `00-topic-intake.md`, `01-research-pack.md`, and `02-script.md`
 - and no `output/packaging.md`, or an empty/stub `output/packaging.md`
-- and not obviously blocked by stale upstream files
+- and has enough finished context for packaging, preferably post-caption outputs
 
 (A legacy `03-packaging.md` from before the relocation does not count as a completed package; the current deliverable is `output/packaging.md`.)
 
@@ -121,6 +121,8 @@ Before writing packaging, verify the chosen project has:
 - non-empty `00-topic-intake.md`
 - non-empty `01-research-pack.md`
 - non-empty `02-script.md`
+
+Modified-time ordering between these three files is not a blocker. This skill runs at the very end after `caption`; once the required files exist, the final video, captions, and shorts are the highest-priority context for chapters and upload metadata.
 
 If any are missing, stop and name the missing skill:
 
@@ -569,7 +571,6 @@ A packaging pass is ready when:
 Reject or revise packaging before finishing if:
 
 - the project lacks `00-topic-intake.md`, `01-research-pack.md`, or `02-script.md`
-- `01-research-pack.md` is older than `00-topic-intake.md`, or `02-script.md` is older than `01-research-pack.md`
 - it creates `03-packaging.md` or a separate `PROMPTS.md` (both are retired; everything goes in `output/packaging.md`)
 - a pair's title and thumbnail repeat the same phrase
 - one side of a pair is edited while the other is left stale (the coupling rule was not applied)

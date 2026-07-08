@@ -36,6 +36,67 @@ Sync rule: the master and the section copies must ALWAYS agree. Whenever you cre
 scenes, write the same content into both the master `04-visual-plan.md` and that section's file in the
 same run. Never let them drift.
 
+## Video-Level Design (plan the whole video before the scenes)
+
+The strongest videos are designed at the VIDEO level first, then the scene level. Project 6
+(`why-countries-fight-to-host-the-world-cup`, the owner's best video to date) established this as the
+standard. Before writing any scene, decide and record in the master's `Video-Level Direction` block:
+
+1. **A recurring motif engineered across ALL sections** (not just a callback). Pick one hero object that
+   carries the thesis, BORN inside the hook on a specific narration beat, THREADED through every section
+   (it gains a new item/state at each section's gag beat), and CLOSED in the payoff. P6's receipt is born
+   at `fight@10.26`, prints one line per section, and returns as the final close-up + the outro's
+   `TOTAL: $0.00`. Add a secondary motif if the script has one (P6's white-elephant feeding bowl). A motif
+   the viewer can name and predict is what makes a video feel authored, not assembled.
+2. **A mascot emotional ARC across the whole video** - one line, planned top-down, one emotional state per
+   section, so WIT tells the argument through feeling. P6: euphoric fan -> suspicious squint -> frozen
+   mid-cheer -> hypnotized -> mayor signing -> horror at the drains -> deadpan party hat -> tiny taxpayer
+   -> calm resigned nod. Each section's WIT beats must land somewhere on this arc.
+3. **A named scene-type rotation palette** and the rule that no two consecutive scenes share a type.
+   P6's palette: `wide gag / object hero close-up / evidence board / checklist device / glamour reveal /
+   mascot-only focus / animated interactive UI`. Rotate deliberately; the eye never habituates.
+4. **A section-level running-gag element that MUTATES STATE** to track the argument, where the script
+   supports it. P6 S5's money pile ("the boom") is born full-size, then returns as a widget at ~70% ->
+   ~45% -> ~20% -> gone as each drain drinks - the shrink IS the explanation. A prop that changes across a
+   section beats a prop that just reappears.
+5. **A safety spine, stated once at video level and re-checked per section.** Parody the hero object
+   (P6: a generic trophy, explicitly NOT the real FIFA sculpture - copyrighted); nationality-neutral props
+   (no real flags/colors); no real people (WIT plays every role in costume); edge aimed at institutions
+   /incentives, never a nation or its fans. Neutral factual celebrity mentions are fine; real people as
+   joke TARGETS are not.
+
+## Scene-Craft Devices (reach for these by default)
+
+- **Blank asset + CSS label** (high-reuse, high-polish): generate a TEXT-FREE element (receipt, drain
+  plate, signpost, ticket stub, contract page) so CSS can overlay the specific words per scene, keyed to
+  word-timings. P6 uses ONE `drain-grate-ornate.png` labelled `SUBSTITUTION` / `CROWDING OUT` / `LEAKAGE`
+  by CSS across three scenes. This maximizes reuse, keeps text crisp and animatable, and lets the same
+  hero prop say a different thing on each spoken word. Prefer it over baking text into an image.
+- **Two-phase scenes for longer beats**: when one scene must run ~8-11s, give it an internal phase break
+  (a spotlight slide, a camera push, a left->right stage) so the frame still changes every ~4s. P6 S1.6
+  (glamour hero -> camera pushes to reveal the receipt pile) and S5.5 (mobbed shop -> spotlight slides to
+  the dead shop -> verdict arrow) both do this. Document the phase times explicitly.
+- **One number per beat, every number on a prop.** A numbers-heavy script becomes a lecture unless each
+  figure lands on a physical object (a price tag, a receipt line, a counter, a suitcase tag, a gauge). Map
+  every spoken number in the section to the prop it sits on.
+- **Planned silence / audio-absence as a joke.** Mark where SFX and even the receipt-tick STOP - the
+  audible absence is often the punchline (P6: party audio cuts dead at the price-tag reveal; the flock
+  freezes mid-air with all SFX stopping before "Zurich"). Sound is part of the scene design, not an
+  afterthought.
+- **Eye-path discipline.** Every scene states the intended eye path (a rising left-to-right diagonal for
+  triumph, a drop for the fall). Compose element positions to lead the eye along the beat.
+
+## Per-Section Approval-Check Self-Audit (write it into every section file)
+
+End every section plan with an `## Approval Checks` block that verifies the plan against the rules, with
+a concrete yes/answer per line (P6 does this). At minimum audit: each scene picturable from text alone;
+~one scene per sentence with varied scene-types; every scene has a real/real-looking base (list the fresh
+bases and confirm none reused within the section); mascot big/high with a distinct pose+expression and
+rotating sides (never the same side twice in a row); a show-as-you-say timeline pinned to real word
+timestamps per scene; every asset has type+description+filename+layout; repeated subjects reuse the same
+filename; public figures/safety handled; NO image-generation prompts here; master and section in sync.
+Writing the audit forces the plan to actually meet the bar before handoff.
+
 ## Scene Granularity
 
 Cut scenes **per sentence, or a few sentences per scene** - never one static frame per whole section.
