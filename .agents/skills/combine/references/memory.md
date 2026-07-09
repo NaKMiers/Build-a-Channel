@@ -101,6 +101,47 @@ Apply next time:
 Promote to shared memory:
 No; combine-skill execution practice.
 
+### 2026-07-09 - Export render worker count matters on this Linux box (auto-16 stalls, 4 can timeout)
+
+Classification: `Assembly mechanics - render export gotcha`
+
+Context:
+Exported the MP4s for `4-why-buy-1-get-1-beats-50-off` (7 sections, 243.5s, 7306 frames) and
+`5-why-the-internet-is-full-of-ai-slop` (8 sections, 306.2s, 9186 frames) on the Linux box
+(16 cores, 14Gi RAM). Both full-video builds already existed from prior combine runs; this was
+export-only.
+
+What broke:
+- `hyperframes render` with DEFAULT auto workers picked 16 (one per core) → ~79 Chrome procs, and the
+  run STALLED during/after the 45s warmup: log went silent, 0 frames captured after 3+ min. RAM was
+  fine (10Gi free), so it's worker/Chrome CONTENTION, not memory. Had to kill and restart.
+- `--workers 4` fixed video 4 (captured cleanly, ~20 fps, done in ~7 min). But on the longer video 5,
+  4 workers FAILED near ~73% with `Worker 3: Runtime.evaluate timed out` (CDP protocol timeout under
+  contention), `RENDER_EXIT=1`, no mp4.
+- `--workers 2 --protocol-timeout 600000 --player-ready-timeout 120000` completed video 5 reliably
+  (~17 min wall clock). Slower but no stall/timeout.
+
+Lesson / apply next time (EXPORT RECIPE):
+- NEVER use default/auto workers for the unified full-video export on this box - it over-subscribes.
+- Use `--workers 4` as the default; if a worker hits `Runtime.evaluate timed out` / capture fails,
+  retry with `--workers 2 --protocol-timeout 600000 --player-ready-timeout 120000`.
+- Run the render fully DETACHED so it survives Claude session teardown: `setsid bash -c '...'`. Two
+  gotchas that bit me: (1) a bare `setsid` subshell does NOT inherit the interactive PATH, so node/npx
+  are missing (`exit 127`) - export PATH with the nvm node bin dir explicitly
+  (`/home/nakmiers/.nvm/versions/node/<ver>/bin`) AND the ffmpeg static `bin/`, and call npx by its
+  absolute path. (2) append `echo "RENDER_EXIT=$?"` to the log so a file-watch Monitor can detect
+  done/fail without a live parent.
+- Track progress by tailing the log (`Capturing frame N/TOTAL`) and detect completion by the mp4
+  file existing AND `RENDER_EXIT=0` in the log (the mp4 appears during "Assembling final video" while
+  still muxing - wait for the exit code before verifying/moving).
+- The render's final summary line shows WALL-CLOCK time (e.g. "17m 0.8s"), NOT video duration - verify
+  real duration with ffprobe (video 5 = 306.219s ≈ the 306.168s combined mp3).
+- When killing a stalled/failed render, `pgrep -fc <pattern>` counts your OWN command line as a match
+  (self-match) - don't trust a non-zero count; check `renders/work-*` is gone and Chrome procs by pid.
+
+Promote to shared memory:
+No; combine-skill export execution practice.
+
 ### 2026-06-30 - Parent `.clip` CSS leaks into mounted sections (Section 4 HUD went full-screen dark)
 
 Classification: `Assembly mechanics - HIGH IMPACT gotcha`

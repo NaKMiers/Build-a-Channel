@@ -78,9 +78,9 @@ Owner selection (2026-06-30): build **3 shorts** - S1 Shrimp Jesus, S3 Six finge
 - DONE short-01 built (port 1101): VO 20.651s, root 21.85s, 6 scenes, 0 lint errors (1 reuse warn). Clean whisper timings (no tail glitch). Safe-guide QA passed + removed.
 - DONE short-02 built (port 1102): VO 18.325s, root 19.5s, 6 scenes, 0 lint errors (1 reuse warn). Tail glitch on "slop." end (start 17.92 correct) - stamp pinned to 17.92, root clamped. Scene-2 post centered + scene-3 circle nudged after snapshot QA.
 - DONE short-03 built (port 1103): VO 19.051s, root 20.3s, 6 scenes, 0 lint errors (2 reuse warns). Tail glitch on "incentive." end (start 18.5 correct) - payoff pinned to 18.5, root clamped. Dropped duplicate scene-1 label; safe-guide QA passed + removed.
-- DONE export (owner-approved 2026-07-01) to `output/shorts/`, all ffprobe-verified `1080x1920` / h264 / 30fps / aac:
-  - `short-01-is-any-of-this-real.mp4` - 21.89s, 4.6 MB
-  - `short-02-six-fingers-coca-coola.mp4` - 19.52s, 4.2 MB
-  - `short-03-arrest-an-incentive.mp4` - 20.32s, 4.1 MB
+- DONE export (owner-approved 2026-07-01; re-exported 2026-07-09) to `output/shorts/`, all ffprobe-verified `1080x1920` / h264 / 30fps / aac:
+  - `short-01-is-any-of-this-real.mp4` - 21.89s, 6.6 MB
+  - `short-02-six-fingers-coca-coola.mp4` - 19.52s, 5.9 MB
+  - `short-03-arrest-an-incentive.mp4` - 20.32s, 5.9 MB
 
 Status: `3 shorts exported; complete`. Preview servers ran on 1101/1102/1103. No long-form content was edited. Does not block caption (done) / packaging / upload / learning.

@@ -100,6 +100,8 @@ Build **one short at a time** (S01 → S02 → S03), review each on its port bef
 
 | Short | MP4 | Duration | Size | ffprobe |
 |---|---|--:|--:|---|
-| 01 You're The Rabbit | `output/shorts/short-01-youre-the-rabbit.mp4` | 19.52s | 4.4 MB | 1080x1920 · h264 · 30/1 · aac ✓ |
-| 02 The Hostage Shampoo | `output/shorts/short-02-the-hostage-shampoo.mp4` | 23.89s | 5.4 MB | 1080x1920 · h264 · 30/1 · aac ✓ |
-| 03 25% Off In A Costume | `output/shorts/short-03-25-off-in-a-costume.mp4` | 21.32s | 4.6 MB | 1080x1920 · h264 · 30/1 · aac ✓ |
+| 01 You're The Rabbit | `output/shorts/short-01-youre-the-rabbit.mp4` | 19.52s | 6.2 MB | 1080x1920 · h264 · 30/1 · aac ✓ |
+| 02 The Hostage Shampoo | `output/shorts/short-02-the-hostage-shampoo.mp4` | 23.89s | 7.5 MB | 1080x1920 · h264 · 30/1 · aac ✓ |
+| 03 25% Off In A Costume | `output/shorts/short-03-25-off-in-a-costume.mp4` | 21.32s | 6.0 MB | 1080x1920 · h264 · 30/1 · aac ✓ |
+
+Exported 2026-07-09 (quality=high, 2 workers). All three ffprobe-verified `1080x1920 / h264 30fps / aac`.
