@@ -2,8 +2,8 @@
 
 Source skill: `packaging`
 Generated from: `00-topic-intake.md`, `01-research-pack.md`, `02-script.md`
-Finished context used: `output/captions/english.srt`, `output/6-why-countries-fight-to-host-the-world-cup.mp4`, `hyperframes/full-video/combined-voiceover.mp3`
-Shorts included: `no`
+Finished context used: `output/captions/english.srt`, `output/6-why-countries-fight-to-host-the-world-cup.mp4`, `hyperframes/full-video/combined-voiceover.mp3`, `shorts/shorts-plan.md`
+Shorts included: `yes - 3 exported shorts` (added 2026-07-16; main-video A/B pairs unchanged)
 
 ## Packaging Brief
 
@@ -100,6 +100,49 @@ World Cup economics, why host the World Cup, FIFA revenue, World Cup host cost, 
 If your city could host the World Cup but had to pay the bill later, would you vote yes or no?
 ```
 
+## Shorts
+
+Three built, exported vertical shorts (`1080x1920`, in `output/shorts/`). Each is a COMPLETE standalone short with its own payoff and NO "watch the full video" CTA. Covers are real payoff frames from each built short (`output/thumbnails/short-0N.png`); the regen prompts are folded into `## Thumbnail Prompts`.
+
+### Short 01 - `It's Not An Investment. It's A Ferrari.` (source: Section 2)
+
+- Thumbnail: `output/thumbnails/short-01.png`
+- Title: `Hosting The World Cup Is Just Buying A Ferrari`
+
+Description:
+
+```text
+Nobody buys a Ferrari to make money - they buy it to be seen. Hosting the World Cup works the same way, except the credit card belongs to the taxpayer. So the real question was never "will it pay off." It's "who pays."
+
+#WorldCup #WhyItWorks #Shorts
+```
+
+### Short 02 - `The Only Auction Where The Winner Pays` (source: Section 4)
+
+- Thumbnail: `output/thumbnails/short-02.png`
+- Title: `The Only Auction Where The Winner Pays The Bill`
+
+Description:
+
+```text
+FIFA keeps the TV money, the sponsor money, and the ticket money. The host pays for the stadiums, security, and transport. One side gets the revenue, the other gets the bills - the only auction on Earth where the winner pays and the auctioneer keeps the money.
+
+#WorldCup #FIFA #WhyItWorks
+```
+
+### Short 03 - `The Stadium Was Full Of Buses` (source: Section 6)
+
+- Thumbnail: `output/thumbnails/short-03.png`
+- Title: `This $550M World Cup Stadium Ended Up Full Of Buses`
+
+Description:
+
+```text
+After the party, the host keeps the stadium - a "white elephant" you must keep feeding. Brasilia built one for at least $550 million in a city with no big football club. By 2015 its parking lot had a new job: holding city buses. The stadium was finally full. Full of buses.
+
+#WorldCup #WhiteElephant #WhyItWorks
+```
+
 ## Thumbnail Prompts
 
 How to generate or reroll:
@@ -188,6 +231,42 @@ Thumbnail style: Dramatic Metaphor. A giant empty stadium is drawn as a white el
 Thumbnail text: "MONEY PIT?!" in huge rough red and white handwritten letters with violent red underline. Add red arrows from WIT's wallet to the feeding bowl, red circles around the receipt, high contrast, one dominant metaphor. Bold flat 2D cartoon style, thick black outlines, mobile-readable.
 
 Do NOT include: official FIFA logo, official World Cup logo, real team logos, real people, real faces, exact country flags, fake urgency, hateful targeting, tiny unreadable text, extra characters, shirt-tie-hair version of WIT, realistic photography, cluttered layout.
+```
+
+### Short 01 - Title: `Hosting The World Cup Is Just Buying A Ferrari` · `short-01.png`
+
+```text
+Create a YouTube Shorts cover, 9:16 portrait, 1080x1920. The shipped cover is a real frame from the built short; use this prompt only to regenerate.
+
+Use the cartoon character in the attached reference image as WIT - keep his exact art style and proportions; only change his pose and expression. WIT identity reminder: simple white round-headed cartoon figure, thick imperfect black outline, oversized black glasses, expressive eyebrows, small black dot eyes, simple white body. WIT emotion: calm, finger raised, delivering the punchline.
+
+Dark wood-desk background (reuse the source Section 2 base). In the upper-center, one bold dark card with a red border reading "WHO PAYS?" and a small gold subline "the real question". Keep all text and WIT's face inside the portrait safe zone (x 60-880, y 220-1490). One idea only, mobile-readable, no clutter.
+
+Do NOT include: official FIFA logo, official World Cup logo, real team/brand logos, real people, real faces, a Ferrari brand badge, "watch the full video" / subscribe / CTA text, tiny unreadable text, hair-shirt-tie-shoes version of WIT, realistic photography of a real person, cluttered layout.
+```
+
+### Short 02 - Title: `The Only Auction Where The Winner Pays The Bill` · `short-02.png`
+
+```text
+Create a YouTube Shorts cover, 9:16 portrait, 1080x1920. The shipped cover is a real frame from the built short; use this prompt only to regenerate.
+
+Use the cartoon character in the attached reference image as WIT - keep his exact art style and proportions; only change his pose and expression. WIT identity reminder: simple white round-headed cartoon figure, thick imperfect black outline, oversized black glasses, small black dot eyes, simple white body. WIT emotion: shocked, sweating, one hand raising an auction paddle while clutching a long receipt.
+
+Warm auction-room background with a big wooden gavel (reuse the source Section 4 base). A generic faceless suited auctioneer stands lower-left at a podium. Upper-center: one bold dark card with a red border reading "WINNER PAYS." and a gold subline "the auctioneer keeps it." Keep all text and WIT's face inside the portrait safe zone. One dominant idea, mobile-readable.
+
+Do NOT include: official FIFA logo, official World Cup logo, real team/brand logos, real people, real faces, "watch the full video" / subscribe / CTA text, tiny unreadable text, hair-shirt-tie-shoes version of WIT, realistic photography of a real person, cluttered layout.
+```
+
+### Short 03 - Title: `This $550M World Cup Stadium Ended Up Full Of Buses` · `short-03.png`
+
+```text
+Create a YouTube Shorts cover, 9:16 portrait, 1080x1920. The shipped cover is a real frame from the built short; use this prompt only to regenerate.
+
+Use the cartoon character in the attached reference image as WIT - keep his exact art style and proportions; only change his pose and expression. WIT identity reminder: simple white round-headed cartoon figure, thick imperfect black outline, oversized black glasses, small black dot eyes, simple white body. WIT emotion: deadpan, unimpressed.
+
+Warm dawn stadium parking-lot background (reuse the source Section 6 base). Across the upper third, a long row of parked city buses. Center: one bold dark card with a gold border reading "FULL OF BUSES." in big white letters. Keep all text and WIT's face inside the portrait safe zone. One dominant joke, mobile-readable.
+
+Do NOT include: official FIFA logo, official World Cup logo, real team/brand logos, real bus-company branding, real people, real faces, "watch the full video" / subscribe / CTA text, tiny unreadable text, hair-shirt-tie-shoes version of WIT, cluttered layout.
 ```
 
 ## Scorecard Notes

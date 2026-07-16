@@ -1,0 +1,66 @@
+{
+  "audio": "short-03.mp3",
+  "duration": 28.813061,
+  "cues": [
+    {
+      "index": 97,
+      "localStart": 0,
+      "localEnd": 2.4,
+      "text": "Then the tournament ends. The fans fly home."
+    },
+    {
+      "index": 98,
+      "localStart": 2.4,
+      "localEnd": 3.92,
+      "text": "And the stadiums stay."
+    },
+    {
+      "index": 99,
+      "localStart": 3.92,
+      "localEnd": 7.82,
+      "text": "English has a perfect phrase for what happens next: a \"white elephant\"."
+    },
+    {
+      "index": 100,
+      "localStart": 7.82,
+      "localEnd": 12.21,
+      "text": "A huge, expensive thing you cannot really use - but you must keep feeding."
+    },
+    {
+      "index": 101,
+      "localStart": 12.21,
+      "localEnd": 15.82,
+      "text": "Brasilia built a stadium that cost at least five hundred fifty million dollars."
+    },
+    {
+      "index": 102,
+      "localStart": 15.82,
+      "localEnd": 17.42,
+      "text": "Beautiful. Enormous."
+    },
+    {
+      "index": 103,
+      "localStart": 17.42,
+      "localEnd": 20.18,
+      "text": "One problem: the city has no big football club."
+    },
+    {
+      "index": 104,
+      "localStart": 20.18,
+      "localEnd": 25.1,
+      "text": "So by 2015, its parking lot was being used... by city buses."
+    },
+    {
+      "index": 105,
+      "localStart": 25.1,
+      "localEnd": 26.16,
+      "text": "Rows of them."
+    },
+    {
+      "index": 106,
+      "localStart": 26.16,
+      "localEnd": 28.78,
+      "text": "The stadium was finally full. Full of buses."
+    }
+  ]
+}

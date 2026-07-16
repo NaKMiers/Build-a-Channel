@@ -1,0 +1,60 @@
+{
+  "audio": "short-01.mp3",
+  "duration": 21.054694,
+  "cues": [
+    {
+      "index": 22,
+      "localStart": 0,
+      "localEnd": 2.1,
+      "text": "Hosting the World Cup is not an investment."
+    },
+    {
+      "index": 23,
+      "localStart": 2.1,
+      "localEnd": 3.38,
+      "text": "It is a purchase."
+    },
+    {
+      "index": 24,
+      "localStart": 3.38,
+      "localEnd": 5.38,
+      "text": "Nobody buys a Ferrari to make money."
+    },
+    {
+      "index": 25,
+      "localStart": 5.38,
+      "localEnd": 8.02,
+      "text": "You buy a Ferrari to be SEEN in a Ferrari."
+    },
+    {
+      "index": 26,
+      "localStart": 8.02,
+      "localEnd": 9.32,
+      "text": "Countries do the same."
+    },
+    {
+      "index": 27,
+      "localStart": 9.32,
+      "localEnd": 13.38,
+      "text": "Except the Ferrari is a football tournament, the price is billions..."
+    },
+    {
+      "index": 28,
+      "localStart": 13.38,
+      "localEnd": 16.3,
+      "text": "and the credit card is yours. The taxpayer's."
+    },
+    {
+      "index": 29,
+      "localStart": 16.3,
+      "localEnd": 19.38,
+      "text": "So the real question is never \"will it pay off\"."
+    },
+    {
+      "index": 30,
+      "localStart": 19.38,
+      "localEnd": 21.02,
+      "text": "It is \"who pays\"."
+    }
+  ]
+}
