@@ -223,17 +223,28 @@ Promote shared lessons with a clear classification such as `Operational lesson` 
 
 Use `.agents/_shared/systems/script-learner-voice.md` as the source of truth.
 
-Default final channel voice:
+Default final channel voice (owner-locked 2026-07-18): **`Alan`** - a custom ElevenLabs Voice-Design voice, the channel's official voice going forward.
 
 ```text
-Name: David23
-Voice: am_eric
-Speed: 0.84
-Language: en-us
-Direction: young male around age 23, clear, bright, lightly dry, learner-friendly
+Name: Alan
+Engine: ElevenLabs (commercial license - owner on Starter+)
+voice_id: f8k6yACqa8sb7OSDGsSp
+model_id: eleven_multilingual_v2
+Settings: stability 0.4, similarity_boost 0.8, style 0.35, use_speaker_boost true
+Language: English (en)
+Direction: young American man, mid-20s, warm + clear, dry deadpan with a slightly cheeky edge,
+           expressive comedic timing, easy to follow for learners
+Key: read from ELEVENLABS_API_KEY env var - NEVER hardcode or commit the key
 ```
 
-If local TTS tooling does not expose `am_eric`, stop and ask before using any scratch voice.
+Generate with `POST https://api.elevenlabs.io/v1/text-to-speech/f8k6yACqa8sb7OSDGsSp`. Tune `stability`
+lower for more comedic variation on a given line if a read is too flat; audition before locking a change.
+
+Legacy fallback voice: `David23 / am_eric` (Kokoro, free, speed 0.84, en-us) - use ONLY when ElevenLabs
+is unavailable or for a no-cost scratch timing pass, never as the final published voice without the
+owner's say-so. Do not silently substitute it for `Alan`.
+
+If neither `Alan` (ElevenLabs) nor the fallback tooling is available, stop and ask before using any other voice.
 
 Do not automatically fall back to `am_adam`, `am_michael`, `bm_george`, or any other voice when the user asked for `David23`.
 
@@ -250,6 +261,33 @@ Use: timing reference only, not final brand approval
 
 Do not silently pretend scratch audio is the final approved channel voice.
 Do not generate scratch audio as a substitute for `David23` without explicit user approval.
+
+## Expressive Voice Upgrade (owner-directed 2026-07-18)
+
+Why It Works is a COMEDY / dry-humor channel, so the voice must carry the jokes - delivery matters MORE
+here than for an earnest explainer. A flat read kills a punchline. This raises the voice bar; treat the
+voiceover as a place to invest, not to cut.
+
+- **Engine target: an expressive, top-tier TTS (ElevenLabs-class).** The owner has an ElevenLabs account
+  and wants to test it against the current free engine (Kokoro `am_eric`). Kokoro / edge-tts remain the
+  free fallback. Do NOT swap the locked default channel voice without owner sign-off from a real A/B.
+  - **ElevenLabs usage:** read the key from the `ELEVENLABS_API_KEY` env var - NEVER hardcode or commit
+    an API key into any repo file. Endpoint: `POST https://api.elevenlabs.io/v1/text-to-speech/<voice_id>`.
+  - **Voice pick (match the `David23` persona: young, male, American, clear + lightly dry):** candidates
+    on this account are `Liam` (`TX3LPaxmHKxFdv7VOQHJ`, young creator, confident) and `Will`
+    (`bIHbv24MWmeRgasZH58o`, young, chill - good for deadpan). Confirm the final voice with the owner via
+    an A/B demo before locking.
+  - **Settings for comedy:** lower `stability` (~0.3-0.45) gives more emotional variation for jokes;
+    keep `similarity_boost` high (~0.8); add `style` for delivery; `use_speaker_boost: true`. Too-low
+    stability = inconsistent, so audition.
+- **Write FOR the voice (biggest free lever).** Even great TTS reads flat on prose written for the eye:
+  short sentences, fragments, contractions, one idea per line, and put the PUNCHLINE WORD at the END of
+  the sentence. Use the existing `[pause] [beat] [deadpan] [slower] [emphasis]` markers deliberately -
+  especially a micro-pause right BEFORE a punchline lands (comedic timing).
+- **Direct it like takes.** Generate per line/short segment, keep the best take, and regenerate any weak
+  line rather than accepting one flat full-length read. This is how you get "soul" out of TTS.
+- **Light post-processing** makes any voice sound produced: gentle compression + a presence EQ bump
+  (~3-5 kHz) + de-ess + a touch of warmth. Keep it subtle.
 
 ## Markup Rules
 
@@ -270,6 +308,35 @@ For each section:
 5. Save both the clean script and marked script.
 
 Do not create tag soup. If a line needs many tags to work, rewrite the line only after noting the change in the section README.
+
+## ElevenLabs Pause Handling
+
+For the official `Alan` voice on ElevenLabs, create deliberate silence with inline break tags in the
+`tts-inputs/*.txt` file. This is the approved, repeatable method for comedy timing and learner clarity.
+
+```text
+Now look down.<break time="1s"/>
+The first rung is missing.<break time="0.8s"/>
+So what removed it?
+```
+
+Rules:
+
+- Use `<break time="..."/>` inline, immediately after the sentence that earns a pause. Start with
+  `0.5s-0.7s` for a normal beat, `0.8s-1s` for a reveal, thesis, deadpan punchline, or cliffhanger.
+- Keep the clean script and marked script free of these implementation tags. They belong only in the
+  ElevenLabs input file.
+- Never send a standalone `...` line to ElevenLabs. In testing, it created audible non-lexical artifacts
+  after lines such as `Now look down.` even though a transcript did not show an extra word.
+- Never use Kokoro's `. .` reset syntax with ElevenLabs. It is not an ElevenLabs pacing control.
+- Do not assume blank lines create reliable silence. Use an inline break when the timing must be heard.
+- After a pause-sensitive Alan generation, transcribe the MP3 with ElevenLabs Scribe using word timestamps
+  and verify the target gaps and absence of unexpected words before locking the preview.
+- Keep break tags sparse and purposeful. A pause must serve a reveal, joke, thesis, emotional turn, or
+  cliffhanger, not appear after every sentence.
+
+Kokoro punctuation pacing (`...`, `. .`) is a legacy fallback technique only. Do not transfer that
+template to Alan.
 
 ## Audio Generation Workflow
 

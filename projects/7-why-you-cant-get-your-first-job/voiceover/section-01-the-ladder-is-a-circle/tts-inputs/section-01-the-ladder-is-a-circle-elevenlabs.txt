@@ -1,0 +1,9 @@
+You just graduated.<break time="0.4s"/> You find an entry-level job listing.<break time="0.35s"/> Good.<break time="0.75s"/>
+
+Three years of experience required.<break time="0.9s"/>
+
+You need experience for the job.<break time="0.45s"/> You need the job for experience.<break time="0.8s"/>
+
+Excellent.<break time="0.35s"/> The career ladder is now a circle.<break time="0.9s"/>
+
+Here are four reasons you can't get your first job, and how to get in.

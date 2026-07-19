@@ -1935,3 +1935,82 @@ CSS/SVG (no emoji); word@time comment on every cue; per-base grade class + vigne
 
 Promote to shared memory:
 no; render execution recipe (pairs with the visual-plan video-level doctrine, which drives it).
+
+### 2026-07-20 - A 3-Second Promise Frame Cannot Carry A Presenter, Motif Diagram, Count, Door, And Route At Once
+
+Classification: `Render lesson`
+
+Context:
+Section 1 Scene 1.6 of `7-why-you-cant-get-your-first-job` was only `3.386s`, but the first build
+combined a giant presenter WIT, an open ladder ring, six rung props, four numbered tabs, a fake doorway,
+`4 REASONS`, `FIRST JOB`, and a drawn `HOW TO GET IN` route. The owner rejected the frame as strange and
+messy and asked for a complete remake.
+
+Lesson:
+A short hook promise should reset visual complexity after the punchline, not restage every motif and
+illustrate every noun. In a sub-4-second promise beat, use one real/object texture, one main headline
+device, and only the cue groups needed to follow the sentence. Removing WIT can improve clarity when
+the prior scene already delivered the emotional punchline.
+
+Apply next time:
+- for a `3-4s` promise frame, default to one background, one headline system, and no more than `3-4`
+  hard-show text groups
+- do not combine a presenter, numbered map, route arrow, destination object, and recurring motif in the
+  same short frame
+- use the prior scene's real base as an intentional visual callback when it creates a calm reset
+- keep WIT out when the frame's job is contract clarity rather than emotion
+- inspect the complete final cue state first; if it cannot be understood in one second, remove devices
+
+Promote to shared memory:
+no; keep as a concrete render execution limit until the same promise-frame failure recurs.
+
+### 2026-07-20 - Do Not Show Both Directions Of A Verbal Loop At Once
+
+Classification: `Render lesson`
+
+Context:
+Section 1 Scene 1.4 of `7-why-you-cant-get-your-first-job` illustrated a two-sentence paradox with a
+receipt, a job card, two large red loop arrows, and a floral office-lobby photo all visible together.
+The owner rejected the scene as extremely chaotic.
+
+Lesson:
+When narration states one direction and then reverses it, do not display both directions at the same
+time. Use one persistent container and replace `A -> B` with `B -> A` on the second sentence. If the
+words already carry the concept, literal receipt/card props and a presenter add decoding work without
+adding meaning.
+
+Apply next time:
+- keep only one arrow and one active row visible at any moment
+- clear the first state when the second sentence begins
+- use one quiet real-world texture behind one dominant information surface
+- omit WIT when the beat is a short logic explanation rather than an emotional reaction
+- inspect the completed state of each direction separately before handoff
+
+Promote to shared memory:
+no; keep as a concrete render recovery rule until the same mirrored-logic problem recurs.
+
+### 2026-07-20 - One-State Clarity Still Needs A Physical Mechanism
+
+Classification: `Render lesson`
+
+Context:
+After the chaotic two-object loop in Section 1 Scene 1.4 of
+`7-why-you-cant-get-your-first-job` was simplified to one cream equation board, the owner clarified
+that the monotonous frame was the `0:09` state. A separate Scene 1.3 edit made from the misunderstood
+`0:07` timestamp was fully restored before the correct scene was changed.
+
+Lesson:
+Removing clutter is not enough if the remaining frame becomes a flat typography slide. Preserve the
+one-state-at-a-time logic, but give it one physical mechanism with depth. A credential pass entering a
+red reader beside a destination door carries the same `A needs B / B needs A` logic more vividly than
+an equation card without reintroducing two simultaneous arrows.
+
+Apply next time:
+- when a user corrects a timecode, restore every change to the mistakenly targeted scene first
+- keep only one logical direction visible at a time
+- physicalize abstract prerequisites with one door, reader, gate, slot, or similar mechanism
+- let the real background remain visible so the device feels grounded rather than slide-like
+- reveal the credential and destination on their exact spoken words
+
+Promote to shared memory:
+no; keep as a concrete render recovery pattern until the same sparse-but-flat failure recurs.

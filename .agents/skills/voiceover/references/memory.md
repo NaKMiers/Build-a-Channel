@@ -7,6 +7,20 @@ Use this file for section-selection behavior, section voiceover output shape, TT
 
 ## Current Skill Standard
 
+### Alan / ElevenLabs pacing override (owner-confirmed 2026-07-19)
+
+- The official voice is `Alan` on ElevenLabs. For Alan, use inline `<break time="..."/>` tags only in
+  `tts-inputs/*.txt` to create deliberate silence.
+- Use `0.5s-0.7s` for a normal beat and `0.8s-1s` for a thesis, reveal, deadpan punchline, or
+  cliffhanger. Put the tag immediately after the sentence that earns the pause.
+- NEVER use standalone `...` lines with ElevenLabs. Testing created audible non-lexical artifacts after
+  the pause, including after `Now look down.` NEVER use Kokoro's `. .` reset syntax with ElevenLabs.
+- Blank lines are for human readability only. They are not a reliable timing control for Alan.
+- For a pause-sensitive read, run ElevenLabs Scribe with word timestamps after generation. Confirm the
+  intended pause gap and that no unexpected lexical content appears before locking the MP3.
+- The older "Canonical Pacing Template" below is for the legacy Kokoro `David23 / am_eric` fallback only.
+  It must not be applied to Alan.
+
 - Run after `script-draft`.
 - Require non-empty `00-topic-intake.md`, `01-research-pack.md`, and `02-script.md`.
 - Treat `02-script.md` as the voiceover source of truth.
@@ -487,6 +501,50 @@ holds in tts-inputs (markup stripped, wording exact), isolating thesis/punchline
 
 Promote to shared memory:
 no; confirms + sharpens the existing ~0.8-speed and pacing-via-punctuation preferences already logged.
+
+### 2026-07-19 - Alan pacing requires inline ElevenLabs breaks, not Kokoro punctuation
+
+Classification: `Voiceover lesson`
+
+Context:
+For Video 7 Section 1, standalone `...` lines made Alan create audible artifacts after `Now look down.`
+and `The first rung is missing.` Removing them made the read too continuous. A direct ElevenLabs test
+confirmed that inline `<break time="..."/>` tags create clean, measurable pauses without extra words.
+Scribe verification measured a `1.119s` gap after `Now look down.` and a `0.941s` gap after
+`The first rung is missing.`.
+
+Lesson:
+Alan must use inline ElevenLabs break tags for intentional silence. Kokoro's standalone ellipses and
+`. .` syntax are engine-specific and must never be reused for Alan.
+
+Apply next time:
+- Put an inline break immediately after a sentence that earns a reveal, joke, thesis, or cliffhanger.
+- Start with `0.5s-0.7s` for ordinary beats and `0.8s-1s` for major turns.
+- Keep the clean and marked scripts tag-free; put implementation tags only in the TTS input.
+- Validate pause-sensitive output through ElevenLabs Scribe word timestamps before locking the MP3.
+
+Promote to shared memory:
+no; this is an engine-specific voiceover-skill rule.
+
+### 2026-07-20 - Measure Alan hooks from real audio before trusting word-count estimates
+
+Classification: `Voiceover lesson`
+
+Context:
+Generated Video 7 Section 1 with Alan from a 50-word hook using eight intentional inline breaks. The script estimated 16 seconds, but the MP3 measured 19.226 seconds. Scribe showed that the final numbered promise began at 15.859 seconds, well after the channel's first-10-seconds target.
+
+Lesson:
+Short-hook word-count estimates are not reliable once Alan's comedy and learner pauses are added. For hook approval, generate the real Section 1 audio and measure when the title promise begins, not only the file's total duration. A hook can feel concise on the page while its necessary pause architecture pushes the promise too late.
+
+Apply next time:
+
+- Generate and transcribe Section 1 before treating hook timing as locked.
+- Record both total MP3 duration and the timestamp where the title promise begins.
+- If the promise lands after second 10, report the timing conflict instead of silently removing approved pauses or rewriting the script.
+- Let the owner choose whether to shorten wording, reduce pauses, or accept a later promise.
+
+Promote to shared memory:
+no. The first-10-seconds target is already channel-wide; this is an Alan-specific measurement practice.
 
 ## Feedback Entry Template
 

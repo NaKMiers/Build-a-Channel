@@ -26,6 +26,16 @@ The channel should help viewers feel:
 - `This creator sounds like a real person, not a textbook`
 - `I am improving my English while watching something I actually care about`
 
+### Audience-layer rule (owner-confirmed 2026-07-18)
+
+The niche stacks three layers, and they must be kept in the right roles:
+
+- **Layer 1 - Topic (money / internet / society / business / modern life): the packaging layer.** This is a mega-niche with huge proven demand (Johnny Harris ~8M, Economics Explained ~2.9M, Half as Interesting ~2M+). Thumbnails, titles, and topic choice target THIS audience so the channel earns Layer-1 demand.
+- **Layer 2 - Format (no-face funny explainer + WIT): proven, keep as-is.**
+- **Layer 3 - English learners (A2-C1): the delivery layer, NOT the label.** Learner-friendliness lives in the SCRIPT (simple words, slower pace, clear structure, on-screen keywords), never in the packaging. Do NOT package or market the channel as "learn English through X" - that shrinks reach and blurs who YouTube serves the video to. Learners come for a great money/modern-life explainer and improve their English as a side effect.
+
+Working rule: `Package for the money/modern-life audience. Deliver in learner-friendly English.`
+
 ## Target Audience
 
 - English learners who are tired of boring lessons
@@ -206,7 +216,14 @@ the line" is the deliberate style. Execution guardrails (edge must not become se
 
 See `learning-log.md` for the full confirmed tone + safety rules.
 
-Default narrator voice:
+Default narrator voice (owner-locked 2026-07-18): **`Alan`** - the channel's official voice.
+
+- Name: `Alan` (custom ElevenLabs Voice-Design voice; commercial license via owner's Starter+ plan)
+- `voice_id`: `f8k6yACqa8sb7OSDGsSp`; `model_id`: `eleven_multilingual_v2`; settings: stability 0.4, similarity_boost 0.8, style 0.35, speaker_boost on; language English
+- Direction: young American man, mid-20s, warm + clear, dry deadpan with a slightly cheeky edge, expressive comedic timing, easy for learners
+- Key from `ELEVENLABS_API_KEY` env var, NEVER committed. Full usage in the voiceover skill -> "Default final channel voice".
+
+Legacy fallback voice (free, scratch/timing only, not final published):
 
 - Name: `David23`
 - Direction: young male narrator around age `23`, clear, bright, lightly dry, learner-friendly, and not too deep or raspy
@@ -215,6 +232,7 @@ Default narrator voice:
 - Slower learner-paced fallback settings: `am_eric`, speed `0.76`, `en-us`
 - Avoid using the faster audition speed for full videos because the channel is for English learners
 - Keep older George/reference voices as fallback or comparison voices, not the default channel voice
+- Expressive-voice direction (owner-directed 2026-07-18): this is a COMEDY channel, so delivery carries the jokes - invest in the voice. Testing an **expressive top-tier TTS (ElevenLabs-class)** against the free Kokoro `am_eric`; candidate voices matching David23 are ElevenLabs `Liam` or `Will`. Keys come from the `ELEVENLABS_API_KEY` env var, never committed. Do NOT change the locked default voice without an owner-approved A/B. Biggest free lever regardless of engine: **write for the voice** (short lines, punchline word at the end, deliberate `[pause]/[beat]/[deadpan]`, micro-pause before punchlines) + direct per-segment takes + light post-processing. See the voiceover skill -> "Expressive Voice Upgrade".
 
 Narration direction:
 
@@ -267,6 +285,8 @@ Working rule:
 `The viewer should understand the point even if they miss one joke.`
 
 ## Visual Direction
+
+> NOTE (2026-07-19): a "SIMPLE + CONSISTENT held-image" production rule and a "clean light background" locked base style were briefly adopted here on 2026-07-18 and were REJECTED by the owner after the first real render ("worse than garbage"). They have been removed; the P6 standard below governs. See `learning-log.md` -> "FAILED EXPERIMENT: SIMPLE + CONSISTENT held-image style".
 
 - No face on screen
 - Simple 2D illustrations
@@ -354,6 +374,30 @@ Thumbnail direction:
 - One clear WIT emotion
 - Strong contrast at mobile size
 - Title and thumbnail should not repeat the exact same information
+
+### Packaging rules (owner-confirmed 2026-07-18, from the Simple Ways of Life reference teardown in `analysis/simple-way-of-life/`)
+
+The teardown found our thumbnails are well-drawn but were losing the click battle at feed size. The reference channel (0 -> 25K, one 427K-view breakout) wins on packaging strategy, not art. Apply these hard rules to every future thumbnail + title:
+
+Thumbnail:
+
+- **Text must be HUGE and central/left, never small corner labels.** The main words should fill roughly 30-50% of the frame and stay readable when the thumbnail is the size of a thumbnail. Our old "TODAY/LATER", "PROMISE/REALITY", "REAL WORK/LOOK BUSY" corner tags were too small to read on a phone.
+- **The words must state the VALUE or the topic, not just the twist.** A scanning viewer who does not yet know the topic cannot decode a bare punchline ("2 WEEKS?", "A TRICK?!", "FAKE?!"). Lead with what the video is about / what they get; the twist can be the second, smaller element.
+- **Clean the background - cut ~50% of the detail.** One dominant object + WIT + big text + empty space beats a busy two-panel scene packed with tiny props and receipts. Detailed art reads as visual noise at small size.
+- **Keep the WIT mascot + hand-drawn style** - that identity is good; the fix is text size, text content, and clutter, not the art style.
+
+Title:
+
+- **Prefer a number or a concrete stake** (a dollar amount, a timeframe, a quantity). In the reference data, titles with a number averaged ~4x the views of titles without one.
+- **Do not open every title with "Why...?"** - a "Why X?" question is curiosity-only. Promise a specific payoff or name the stakes. "Why Countries Fight to Host the World Cup (and Lose Billions)" works because of the concrete stake in the parentheses; copy that move.
+- **Package for the mainstream money / modern-life audience (Layer 1), not for "ESL".** Titles and thumbnails should read like a normal money/modern-life explainer so they earn the huge Layer-1 demand; the learner-friendliness lives in the SCRIPT (simple, slow, clear), never on the label. See the audience-layer note under Positioning.
+
+Thumbnail-first + template (owner-confirmed 2026-07-18):
+
+- **The thumbnail carries the click, not the title.** On feed/mobile the eye processes the image in milliseconds and reads the title only if the thumbnail earned the glance. So the thumbnail does ~70% of the "stop the scroll" work - invest there first.
+- **Thumbnail + title are a PAIR and must NOT repeat each other.** Thumbnail states one half (the value/hook visually), title states the other half (the specifics/stakes); together they form one complete promise. Never put the same word in both.
+- **The real rule is "communicate the value in 1 second", and for this channel big text is the best way to do that** - it is not that text is mandatory. When using text: 2-4 words max, HUGE, stating the value (not the twist). Big-but-short beats small-and-many; too much text is worse than none.
+- **Use ONE fixed thumbnail template; vary only the hook word + one main object.** Keep the style constant (WIT + hand-drawn text + layout) so the channel is recognizable at a glance and thumbnails are fast to produce. Change the big hook word and the single dominant object per video; do not redesign the style each time. (The reference channel wins partly by doing exactly this - one recognizable style, different big word each video.)
 
 First `10` seconds direction:
 
@@ -481,7 +525,10 @@ If you want more videos about money, the internet, and modern life, stick around
 ## Publishing System
 
 - `1 long video per week`
-- Long video target: `6 to 10 minutes`
+- Long video target (owner-confirmed 2026-07-18): **sweet spot `8 to 10 minutes`** for now. 8+ min clears the mid-roll ad threshold (revenue) and banks watch-time; ~10 min keeps retention achievable for a channel still building skill.
+- Length principle: **length follows value, not a number.** Make it as long as it stays dense and interesting, and not one minute longer. A tight 8-min video beats a padded 15-min one. Do NOT pad a video to hit a duration target - padding kills retention, which kills reach.
+- Length is a lever for watch-time, not a virtue in itself. Longer only helps IF retention holds; if going longer drops the retention curve, it hurts reach. (Reference proof: the studied channel's 12-min video hit 427K views while its 32-min video got only 33K - longer was NOT better.)
+- Length-progression ladder (leo theo điều kiện, KHÔNG theo thời gian): stay at `8-10 min` now; try `10-12 min` only once average retention is ~45-50%+ and production is faster; go `15 min+` only after a video has genuinely held attention at the shorter length. Confirm against the channel's own YouTube Analytics retention graph before extending.
 - `3 shorts per week` cut from the long video
 - Batch script ideas in groups of 4 or more
 - Reuse one consistent voice and thumbnail logic
@@ -547,3 +594,11 @@ The audience should come for:
 - Curiosity
 
 Later, that trust can support broader creator opportunities such as products, templates, newsletters, sponsorships, community, collaborations, or education.
+
+### Monetization direction (owner-confirmed 2026-07-18)
+
+- **Primary long-term money engine: personal-finance SaaS**, aimed at a **developed-market audience** (viewers with income + purchasing power). This category is the strongest fit because the content is problem-first about money (subscriptions draining the wallet, cheap products, consumer traps), which makes a finance tool a native, non-forced integration - e.g. a subscription-tracker/canceller cross-cut from the "everything is a subscription" video.
+- **Secondary fallback: language-learning apps** (they pay well to reach English learners), kept as a backup, not the main target.
+- **Implication for topic + packaging choices:** lean topics and packaging toward the money / personal-finance / consumer angle so the audience skews toward the developed-market, higher-income viewer that finance SaaS sponsors (and any future first-party app) want to reach. This is compatible with the Layer-1 packaging rule under Positioning.
+- Do not chase sponsorships now; this direction only steers today's topic and packaging choices. Sponsors typically engage from ~20-50K subs.
+- A future first-party app (e.g. a subscription tracker, or an "improve money + English through real stories" app) is the highest-margin long-term option and should be kept open.

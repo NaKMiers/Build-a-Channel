@@ -425,6 +425,249 @@ Promote to shared memory:
 partly - "one number per beat, every number on a prop" and "recurring motif = thesis object" are
 channel-wide; fold them into `_shared/systems/script-learner-voice.md` on the next shared-memory pass.
 
+### 2026-07-19 - Alan (ElevenLabs) reads ~2x Kokoro pace: word-count-to-runtime math changed; practical "spot it" section fights doom AND adds runtime value
+
+Classification: `Script draft lesson`
+
+Context:
+Drafted `7-why-you-cant-get-your-first-job` ("The 4 Reasons You Can't Get Your First Job Anymore" -
+number-first title per the locked packaging rule). Ran the required 3-lens adversarial review (honesty /
+B1 learner / engagement); 40+ findings, all must/should fixes applied in rev 2.
+
+Lesson:
+1. **Runtime math changed with the new voice.** The old 140-150 wpm learner-pace assumption came from
+   Kokoro at 0.84. The NEW official voice Alan (ElevenLabs) measures ~229 wpm at speed 1.0, ~207 at 0.9,
+   ~193 at 0.85 (from real generated demos). So ~1,200 words = only ~6:30-7:10 of video, NOT 8+. To hit
+   the 8:00 mid-roll threshold needs ~1,500-1,650 words of REAL value - or accept a shorter video (the
+   channel rule bans padding). Always estimate runtime from the MEASURED voice pace, and surface the
+   trade-off to the owner instead of silently inflating word counts (rev 1's counts were ~15-20% inflated
+   - the engagement reviewer caught it).
+2. Review catches that matter, now standing rules: (a) stat UNITS must match the pack exactly (rev 1 said
+   "postings 7x more likely to demand senior skills"; the pack's 52%-vs-7% is about the share of NEW
+   SKILLS - a different claim); (b) superlatives must stay scoped ("fastest-growing kind of ENTRY-LEVEL
+   job", never "on the whole ladder"); (c) the motif WORD itself must be glossed at first use for B1 ears
+   ("each step is called a rung") and B1-hostile verbs swapped ("saw off" -> "cut off"); (d) number beats
+   need human units by ear ("about four PEOPLE", not "about four"); (e) don't punch at an age group
+   ("everyone over forty" -> "the classic advice").
+3. **A practical "how to spot it" section** (3 hedged tells, "commonly reported - no promises") is a
+   triple win on bleak topics: gives the viewer agency (anti-doom), is the most shareable beat, and adds
+   honest runtime without padding. Pattern: reasons -> honest turn -> practical tells -> hopeful payoff -> CTA.
+4. Pattern-break one mid-video section by cold-opening on the absurd artifact BEFORE the "Reason N"
+   announce (S5's listing read) - kills the predictable reason-section rhythm.
+
+Apply next time:
+- Compute runtime from measured Alan wpm (speed 0.85-0.9 => ~190-210 wpm); state honest per-section word counts.
+- Keep the 3-lens review mandatory for claim-dense scripts; fix stat units against the pack verbatim.
+- Gloss the motif word at first use; give every number a human unit by ear.
+- Offer a practical "spot it / do this" section on any doom-prone topic.
+
+Promote to shared memory:
+partly - the Alan wpm numbers belong wherever voiceover timing is planned (voiceover skill memory should
+mirror them); the rest is script-draft craft.
+
+### 2026-07-19 - Keep WIT silent in narration; simplify cognitive pace, not only sentence length
+
+Classification: `Script draft lesson`
+
+Context:
+The owner reviewed rev 2 of `7-why-you-cant-get-your-first-job` and flagged three connected problems:
+the narration said `Meet WIT` even though a new viewer does not know that internal mascot name; the script
+felt fast despite short sentences; and several words and jokes needed too much English or cultural context.
+(Historical note: this review happened during the short-lived "SIMPLE + CONSISTENT" style experiment,
+which the owner REJECTED on 2026-07-19 and fully reverted - see learning-log "FAILED EXPERIMENT". The
+LEARNER-PACE lessons below stand on their own and remain valid under the restored P6 standard.)
+
+Lesson:
+`WIT` is an internal production name, not required viewer knowledge. Keep WIT as a silent audience
+surrogate in visual goals, but never speak the name in narration unless a future video explicitly earns
+and explains a character introduction. A script can also feel fast even when its sentences are short if
+it stacks a claim, number, definition, qualifier, and joke in one breath. Learner pace is cognitive pace:
+one important idea at a time, common words first, visible jokes, and a repeated story object that reduces
+the amount the viewer must remember.
+
+Apply next time:
+- Audit every narration block for internal labels such as `WIT`; introduce character through visible
+  action, not unexplained lore or names.
+- Give each section one clear question and one section button.
+- Do not stack a new statistic, new term, and punchline in the same breath.
+- Prefer jokes that are visible from the scene and understandable without slang, memes, public figures,
+  or native-only knowledge.
+- Use pauses and repeated plain labels to slow comprehension; do not rely on slower TTS alone.
+- Script visual goals follow the P6 standard (per-sentence scenes, thesis-object motif, one number per
+  beat on a prop) - the "held boards / SIMPLE + CONSISTENT" phrasing that briefly lived here was part of
+  the rejected 2026-07-18 experiment and no longer applies.
+
+Promote to shared memory:
+partly. Common-word learner clarity and contextual jokes are already channel-wide Core rules. The unique
+`WIT is an internal name, not spoken viewer knowledge` rule stays here unless it recurs in another
+production system.
+
+### 2026-07-19 - A numbered-title hook should promise the count without revealing the answers
+
+Classification: `Script draft lesson`
+
+Context:
+The owner wanted the hook for `7-why-you-cant-get-your-first-job` to say clearly that the video contains
+four reasons. The first revision then over-corrected by naming Reason 1, 2, 3, and 4 inside the hook. The
+owner rejected that because revealing the full content map removed the curiosity that should carry the
+viewer into the body.
+
+Lesson:
+When the title promises a numbered list, the hook should confirm the count but preserve the answers as
+open loops. Say one clear line such as `Here are the four reasons you can't get your first job anymore`,
+show one matching `4 REASONS` label, and move into Reason 1. Do not preview all four reasons unless the
+video is intentionally a roadmap-first tutorial. In a curiosity-driven explainer, each reason is a reveal.
+
+Apply next time:
+- Put the promised number inside the first 10 seconds.
+- State the title promise in one direct sentence.
+- Do not name or summarize all the reasons in the hook.
+- Mirror the promise with one count label such as `4 REASONS`, not a four-item preview.
+- End the hook with a direct handoff into `Reason one`.
+- Let the body reveal each reason one at a time.
+
+Promote to shared memory:
+no for now. This is a reusable script-draft execution rule already compatible with the channel's existing
+first-10-seconds promise system.
+
+### 2026-07-19 - Build a paid-off cliffhanger chain across sections
+
+Classification: `Script draft lesson`
+
+Context:
+The owner asked for every section of `7-why-you-cant-get-your-first-job` to end with a cliffhanger that
+pulls the viewer into the next section and continues that chain until the end of the video.
+
+Lesson:
+A useful section cliffhanger is not a random tease. The section must first answer its own question and
+deliver a mini-payoff. Its final line then opens one specific missing question, and the next section must
+begin by answering that exact question. This creates forward pull without breaking trust. The penultimate
+section may tease the on-theme CTA, but the final section must close the video rather than opening a fake
+loop.
+
+Apply next time:
+- Write the transition chain before polishing individual section endings.
+- End Sections 1 through the penultimate section with one short, B1-clear open question or incomplete
+  consequence.
+- Make the next section answer that line immediately; never postpone the promised answer.
+- Keep each cliffhanger tied to the thesis object or the mechanism already on screen.
+- Avoid repeated empty phrases such as `but it gets worse` or exaggerated danger language.
+- Let the final section deliver closure with no new unresolved promise.
+
+Promote to shared memory:
+no for now. The script skill already requires section buttons; this sharpens them into a connected
+retention chain and should stay in skill memory until confirmed across another video.
+
+### 2026-07-19 - CTA needs a value exchange and a thematic payoff
+
+Classification: `Script draft lesson`
+
+Context:
+After the cliffhanger pass on `7-why-you-cant-get-your-first-job`, the owner found the final subscribe
+and like request shallow. The outro mentioned actions quickly but did not make the viewer feel why each
+action mattered, and it failed to turn the video's job-listing motif into a satisfying final payoff.
+
+Lesson:
+An earned CTA is not a checklist of platform verbs. Give each requested action one concrete value
+exchange: like signals that the explanation was useful and helps distribution; share helps one specific
+person who needs the insight; subscribe promises the exact kind of future content the channel makes.
+Then close on the episode's motif so the CTA feels like the final joke, not an ad attached after the
+ending.
+
+Apply next time:
+- Audit that `like`, `share`, and `subscribe` are all spoken when the owner expects all three.
+- Give each action one short, viewer-centered reason.
+- State the future-content promise specifically, not `more videos` in general.
+- Tie the CTA visual and final line to the video's thesis object or running gag.
+- Deliver the actions as separate beats; do not rush them into one sentence.
+- End with warmth and closure, never guilt, begging, or a new unresolved promise.
+
+Promote to shared memory:
+no for now. This is a script-draft execution lesson that sharpens the existing owner CTA preference.
+
+### 2026-07-20 - End the hook on count plus practical promise; keep CTA in a separate outro
+
+Classification: `Script draft lesson`
+
+Context:
+On the recreated `7-why-you-cant-get-your-first-job` rev 2, the owner asked for three connected changes. The hook needed to END on a line promising the four reasons plus how to move forward. Every section needed a paid-off cliffhanger into the next section. The like/share/subscribe ending needed to follow video 6, where the core payoff and the CTA are separate sections. The embedded CTA inside the payoff did not read as a real ending.
+
+Lesson:
+A numbered explainer hook should close on `count + problem + practical payoff`, while still hiding the answers. The body should form an explicit question-and-answer chain: each section finishes its own point, then asks one question or names one action that the next section answers immediately. The thematic payoff must finish before platform requests begin. Like, share, and subscribe belong in a separate named `Outro` section tied to the episode motif, with one clear value exchange per action and a final motif line.
+
+Apply next time:
+
+- End the hook with a direct line such as `Here are four reasons X is happening, and how to Y.`
+- Do not reveal the four answers in the hook.
+- Audit every section ending and the next section opening as a matched pair.
+- Keep the payoff section free of platform requests until its core insight has landed.
+- Add a separate CTA outro modeled on the structural discipline of video 6, without copying its wording.
+- Speak `like`, `share`, and `subscribe` as separate beats when the owner requests all three.
+- Close the final outro on the episode's thesis object with no new cliffhanger.
+
+Promote to shared memory:
+no. This consolidates existing script-draft hook, cliffhanger, and CTA lessons into a clearer execution rule.
+
+### 2026-07-20 - Vary cliffhanger devices so the chain does not feel templated
+
+Classification: `Script draft lesson`
+
+Context:
+The owner said the cliffhangers at the end of each section felt too similar. The chain technically worked, but repeated direct questions made the writing sound like a visible formula.
+
+Lesson:
+A retention chain does not require every section to end with a question. Rotate the handoff device while keeping the promise specific and the next-section payoff immediate. Useful devices include a count promise, image transformation, paradox, evidence tease, pattern reveal, action command, withheld verdict, and person-specific handoff.
+
+Apply next time:
+
+- Design the handoff sequence across the whole script before polishing individual section endings.
+- Audit repeated grammar such as `But what if`, `But why`, and `one useful question`.
+- Keep each button short, quotable, tied to the thesis object, and immediately paid off.
+- Let the final section close without a new open loop.
+
+Promote to shared memory:
+no. This is a script-specific craft refinement of the existing retention-chain rule.
+
+### 2026-07-20 - Replace a flat listing hook with a self-contained paradox
+
+Classification: `Script draft lesson`
+
+Context:
+The owner rejected the `entry-level, three years required` opening in rev 4 as not strong enough and asked for a complete hook rewrite. The example stated the topic, but it did not transform the contradiction into a fresh enough curiosity event.
+
+Lesson:
+When a familiar job-listing contradiction feels flat, compress the mechanism into a self-contained paradox, transform the thesis object on screen, add one dry reaction, and then deliver the numbered promise. For this topic, `job -> experience -> job` bends the career ladder into a circle before the script promises the four reasons and the way in.
+
+Apply next time:
+
+- Do not assume a recognizable frustrating example is automatically a strong hook.
+- Make the first line contain the mechanism or paradox, not just an artifact from the topic.
+- Let the visual object transform before the promise line so the hook creates a memorable image.
+- Keep the final hook line as `count + problem + practical payoff` without revealing the answers.
+
+Promote to shared memory:
+no. This is a script-draft execution lesson from one rejected hook and should be tested on future videos before wider promotion.
+
+### 2026-07-20 - Ground the paradox in a second-person viewer scenario
+
+Classification: `Script draft lesson`
+
+Context:
+After rev 5 compressed the hook directly into the experience-job paradox, the owner provided a preferred demo: begin with a recent graduate finding an entry-level job, reveal the three-year requirement, explain the job-experience loop, turn the ladder into a circle, and only then deliver the four-reason promise.
+
+Lesson:
+For this topic, the owner prefers the abstract paradox to grow out of a concrete second-person story. The sequence should let the viewer feel one moment of relief at finding an entry-level listing before the requirement reverses it. `Good` creates the false relief; `Excellent` becomes the dry reaction after the full loop is visible.
+
+Apply next time:
+
+- When the owner supplies a hook demo, preserve its emotional sequence and signature reaction words while polishing the spoken English.
+- Use `viewer situation -> false relief -> contradiction -> mechanism -> visual transformation -> promise` for similar modern-life traps.
+- Keep the viewer as the subject so the hook feels lived rather than summarized.
+- Do not reveal the numbered answers before the final promise.
+
+Promote to shared memory:
+no. This is a project-specific hook preference that may become reusable if the owner confirms the pattern on another video.
+
 ## Feedback Entry Template
 
 Use this shape when updating the skill after user review:
