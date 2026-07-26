@@ -1,4 +1,0 @@
-interface:
-  display_name: "Packaging"
-  short_description: "After caption: 5 locked title+thumbnail A/B pairs, descriptions, per-short packaging"
-  default_prompt: "Use $packaging after Caption to build the YouTube package for the selected Why It Works video project: 5 LOCKED title+thumbnail A/B pairs for the main video (title N coupled to thumbnail N), the description and tags, and - when built shorts exist - one title, description, and thumbnail per short. Everything (titles, descriptions, and thumbnail prompts) goes into ONE file output/packaging.md; thumbnail images go to output/thumbnails/. No 03-packaging.md, no PROMPTS.md. Requires Topic Intake, Research Pack, and Script complete."

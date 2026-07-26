@@ -1,0 +1,88 @@
+[0:00] Your hand is already moving.
+[0:01] You didn't decide to do it.
+[0:03] There was a pause in the conversation,
+[0:06] a red light, a half second of silence between one thought
+[0:09] and the next, and your hand went to your pocket before any
+[0:12] part of you asked it to.
+[0:14] You looked down at the screen.
+[0:17] Nothing new.
+[0:18] You put it back.
+[0:19] Count how many times that happened today.
+[0:22] Most people guess about 40.
+[0:23] When researchers stop asking people to guess
+[0:26] and start measuring it with tracking software,
+[0:28] the number usually lands somewhere between 2 and 300.
+[0:33] You probably think this is a story about willpower.
+[0:36] It isn't. The real answer is far stranger,
+[0:40] and it begins with a pigeon in a wooden box in the 1930s.
+[0:43] The man who built that box was a psychologist named Boris Frederick Skinner.
+[0:48] His setup was simple.
+[0:50] A pigeon stood inside, and when it
+[0:52] pecked a small disc, a food pellet dropped into a tray.
+[0:56] Peck, pellet, peck, pellet.
+[0:58] The bird learned the rule in minutes, and then it did something you would expect.
+[1:03] It pecked when it was hungry,
+[1:04] and it stopped when it wasn't. Then Skinner changed one thing.
+[1:08] He stopped giving a pellet for every peck.
+[1:11] Now the food came sometimes,
+[1:13] not on a rhythm the bird could learn,
+[1:15] not every third peck or every tenth, but on no pattern at all.
+[1:19] Sometimes the disc gave food,
+[1:21] usually it gave nothing, and the pigeon stopped being a pigeon that ate.
+[1:25] It became a pigeon that pecked.
+[1:28] This is called a variable ratio schedule, and the phrase is uglier than the idea.
+[1:33] It just means a reward that arrives on an unpredictable number of tries.
+[1:37] Not never, not always, sometimes.
+[1:40] That single word is the most powerful behavioral lever ever discovered,
+[1:45] and Skinner found it by accident.
+[1:47] Why would unreliable food produce more effort than reliable food?
+[1:51] Everything you assume about motivation says the opposite.
+[1:54] A machine that always pays should be more attractive than a machine
+[1:58] that usually doesn't. In 1968,
+[2:01] a researcher named Michael Zeiler ran the comparison directly.
+[2:05] He gave one group of pigeons a reward for every single peck.
+[2:09] He gave another group a reward for only some of them.
+[2:12] The birds on the unpredictable schedule pecked at roughly twice the rate
+[2:15] of the birds who were paid every time.
+[2:18] They worked harder for less.
+[2:20] They also kept going far longer after the food stopped entirely,
+[2:23] because a machine that often gives nothing has already trained you to accept
+[2:28] nothing and try again.
+[2:30] Hold that in your mind, and now look at your phone.
+[2:33] You pull down on the screen.
+[2:35] The little wheel spins.
+[2:37] Sometimes there's a message.
+[2:39] Usually, there isn't. You are the pigeon,
+[2:42] the screen is the disc,
+[2:43] and the gesture you make dozens of times a day was designed
+[2:46] by a specific person for a specific purpose.
+[2:50] His name is Loren Brichter.
+[2:52] And in 2008, he built Pull to Refresh for a small Twitter app.
+[2:56] He has since said in public that he regrets it.
+[2:59] But the gesture is only the handle.
+[3:02] To understand what it's connected to, you
+[3:04] have to look inside your own head,
+[3:06] at a chemical you have almost certainly been lied to about.
+[3:10] You've heard dopamine described as the pleasure chemical.
+[3:13] It isn't. That description survives because it's easy, not
+[3:17] because it's true, and the person
+[3:19] who proved otherwise spent years recording the activity of single brain cells in monkeys.
+[3:24] His name is Wolfram Schultz.
+[3:27] Starting in the 1980s,
+[3:28] he lowered fine electrodes into the dopamine neurons of monkeys
+[3:32] and gave them drops of juice.
+[3:34] At first, the cells did what everyone expected.
+[3:37] Juice arrived.
+[3:38] Dopamine fired.
+[3:39] Then the monkeys learned that a light came on just before the juice.
+[3:43] And the dopamine moved.
+[3:45] It stopped firing when the juice touched their tongues,
+[3:47] and it started firing at the light.
+[3:50] The chemical had detached itself from the reward
+[3:52] and attached itself to the promise of the reward.
+[3:55] Then Schultz did the thing that explains your afternoon.
+[3:59] He made the juice unreliable.
+[4:01] Now the light came on, and the juice arrived only about half the time.
+[4:05] The dopamine response didn't shrink.
+[4:07] It grew, and it stretched out,
+[4:10] and it kept burning through the gap between the signal and the answer.

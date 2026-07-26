@@ -1,4 +1,0 @@
-interface:
-  display_name: "Visual Implement"
-  short_description: "Create the assets a Why It Works visual plan describes (generate / browse / reuse)"
-  default_prompt: "Use $visual-implement to create the assets for my current Why It Works visual plan."

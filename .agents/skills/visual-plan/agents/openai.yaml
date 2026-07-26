@@ -1,4 +1,0 @@
-interface:
-  display_name: "Visual Plan"
-  short_description: "Plan section visuals for Why It Works videos"
-  default_prompt: "Use $visual-plan to create a section visual plan for my current Why It Works project."
