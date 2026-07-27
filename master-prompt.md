@@ -56,9 +56,13 @@ Every generated topic must sit at the intersection of an inner experience (psych
 The channel's one hard visual failure mode is character drift — the same person looking different in every frame. It is solved with a named cast:
 
 - Every video defines a small cast in Stage 3, before any scene image exists. Each member gets a ONE-WORD ALL-CAPS name and a reference sheet image saved as `NAME.png` (`YOU.png`, `ALAN.png`, `DOCTOR.png`, `TRIBE.png`).
-- The cast is derived from that video's script every time — its era, occupation, clothing, and props all come from the script. There is no house cast and no default ancestor figure; the only member every video has is `YOU`.
+- The cast is derived from that video's script every time — its era, occupation, clothing, and props all come from the script. There is no house cast and no default ancestor figure. The one exception is `YOU`.
 - From then on, every image prompt refers to a character as `@NAME` — never by re-describing them. The reference sheet carries the design; the prompt carries only the action, expression, and framing.
-- `@YOU` is the viewer stand-in and appears in most frames. It is deliberately plain so any viewer can project onto it.
+- **`@YOU` is always TOSS — the channel mascot.** TossExplain has one permanent character, Toss, and he is the viewer stand-in in every single video. He is never re-derived from the script, never redesigned, and never swapped for a different stand-in. His canonical sheet is `MASCOT.jpeg`, and the full identity lock lives in `character-prompt.md`.
+  - **Fixed forever:** an oversized white circle head at roughly one third of his height, a tuft of 3–4 spikes breaking through the head outline, wide-set solid black oval eyes, two thick separate brow strokes, one curved line mouth, no nose or ears, a very short neck, thin single-line limbs with small splayed fingers, tiny line feet, and a slight unimposing build. This is how a returning viewer recognizes him.
+  - **Changes per video:** only his clothing, footwear, and props, matched to the setting the script gives him — hoodie and shorts for a modern video, a hide wrap and bare feet if `@YOU`'s section is prehistoric, a robe in a monastery, a plain sweater in a lab. Costume color is free and comes from the palette; Toss is not tied to any one color.
+  - **Toss only ever plays `@YOU`.** The figure carrying the script's other era or setting is a genuinely different character with its own design, never Toss in a costume.
+  - Toss stays deliberately plain — an ordinary, mildly weary everyman — so any viewer can project onto him.
 - No `@` token may ever be used unless it exists in that video's cast table.
 
 ---
@@ -190,7 +194,7 @@ When the user replies "cast" (or otherwise asks for the characters), read the sc
 **CAST SELECTION RULES:**
 
 - Cast size is 2–6 entries. Fewer is better. Never exceed 6.
-- Every cast list must contain the viewer stand-in, always named `YOU` — the "you" the narration speaks to. This is the only mandatory entry, and the character on screen most often.
+- Every cast list must contain the viewer stand-in, always named `YOU` — the "you" the narration speaks to. This is the only mandatory entry, and the character on screen most often. **`YOU` is always Toss, the channel mascot** — his design is fixed and is NOT derived from the script. The only thing you decide for him is which costume the script's setting puts him in. Everything below about derivation applies to the OTHER cast members, never to him.
 - Everything else is conditional on the script. Common shapes, to recognize — not to fill in:
   - The figure carrying the anthropology section, whoever and whenever the script says that is (`HUNTER`, `MONK`, `VILLAGER`, `WORKER`, `ELDER`, `MOTHER`, `SOLDIER`, `TRADER`)
   - The other person in the modern scenes, if the script has one (`FRIEND`, `BOSS`, `STRANGER`, `PARTNER`)
@@ -212,7 +216,7 @@ Output the cast as this exact table, nothing before it:
 
 | Token   | File       | Who they are        | Era / setting                 | Where they appear           |
 | ------- | ---------- | ------------------- | ----------------------------- | --------------------------- |
-| @YOU    | YOU.png    | [one-line identity] | present day                   | [which parts of the script] |
+| @YOU    | YOU.png    | Toss (channel mascot) — [the costume this script puts him in] | [the era of the script's @YOU section] | [which parts of the script] |
 | @[NAME] | [NAME].png | [one-line identity] | [era the script puts them in] | [which parts of the script] |
 
 The Era / setting column exists to force the derivation: if you cannot point to the line in the script that puts that character in that time and place, the character does not belong in the cast.
@@ -242,7 +246,8 @@ Additional rules for the sheets:
 - Make the cast visually distinguishable at a glance: give each member a different clothing color from the palette, plus one silhouette difference (hair tuft, hat, beard, build, posture). Two characters must never be told apart by facial detail alone.
 - Group entries (`TRIBE`, `CROWD`, `OFFICE`) get a sheet showing the group as a unit: the formation the script uses, 5–7 identical simplified figures dressed for that script's setting, plus panels for the group turned inward, turned away, and with one figure excluded.
 - Prop or personified-concept entries (`PHONE`, `BRAIN`) skip the turnaround/expression logic that does not apply and instead show 3 angles, 4 emotional face states, and 4 states of use.
-- The viewer stand-in `YOU` must stay deliberately plain and neutral — present-day, unremarkable clothes, no strong style markers — so any viewer can project onto it.
+- The `YOU` sheet is TOSS and is the one sheet you do NOT invent. Copy his identity lock verbatim into the CHARACTER paragraph — oversized white circle head at one third of his height, a tuft of 3–4 spikes breaking through the head outline, wide-set solid black oval eyes, two thick separate brow strokes, one curved line mouth, no nose or ears, very short neck, thin single-line limbs with small splayed fingers, tiny line feet, slight unimposing build — and write ONLY his costume fresh, matched to the setting the script gives him. Add the instruction to attach `MASCOT.jpeg` as a reference for this generation. Never restyle his head, hair, face, or proportions to suit a costume, and never make him heroic, cute, or stylized: he stays a deliberately plain, mildly weary everyman.
+- Toss plays `@YOU` and nothing else. The character carrying the script's other era or setting must be visibly a different person, with its own head shape, hair, build, and clothing — never Toss in different clothes. If the two share a split frame, the difference must be obvious at a glance.
 - Before outputting, re-read each sheet and check every visual detail against the script: era, clothing, prop, expressions, poses. If any detail came from habit rather than from the script, rewrite it.
 
 **AFTER THE SHEETS, OUTPUT THIS EXACTLY:**
@@ -275,17 +280,18 @@ Once the user pastes their timestamped script, generate one detailed text-to-ima
 **IMAGE PROMPT RULES:**
 
 1. Every prompt must begin with its timestamp, copied character for character from the pasted transcript — `[0:00]` stays `[0:00]`, `[00:00]` stays `[00:00]`. Never reformat, re-pad, or renumber a timestamp: these strings become the image file names, so they must match the transcript exactly.
-2. Every prompt must open with the style anchor: _"Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines,"_
-3. Every prompt must end with the style lock: _"no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style."_
-4. **Refer to every cast member by their `@` token — never by description.** Write `@ALAN sits hunched on the edge of a bed` , never `a thin stick figure with a brown tunic sits hunched`. The `@` token carries the entire design; your job is only the action, expression, posture, and position in frame.
+2. **The `[MM:SS]` timestamp prefix and every `@TOKEN` are instructions for the human and the file system, not visual content.** They must never appear as rendered text in the generated image — no timestamp/clock/counter burned into a corner, no literal "@NAME" caption anywhere in the frame. This is why every prompt's style lock (rule 4 below) explicitly repeats this negative — never drop it when writing or editing a prompt.
+3. Every prompt must open with the style anchor: _"Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines,"_
+4. Every prompt must end with the style lock: _"no gradients, no shadows, no textures, no photorealism, no 3D, no timestamp shown in the image, @[name] is mention syntax for reference only and must never be rendered as visible text, 16:9 aspect ratio, educational YouTube explainer doodle style."_
+5. **Refer to every cast member by their `@` token — never by description.** Write `@ALAN sits hunched on the edge of a bed` , never `a thin stick figure with a brown tunic sits hunched`. The `@` token carries the entire design; your job is only the action, expression, posture, and position in frame.
    - Use the exact tokens from the Stage 3 cast table: correct spelling, ALL CAPS, always prefixed with `@`.
    - Never re-describe a cast member's head shape, clothing, color, build, hair, or face design. That is what caused the drift this system exists to prevent. Expression and posture ARE allowed and required — `@YOU with flat resigned brows, shoulders dropped`.
    - Never invent a token that is not in the cast table. If a timestamp genuinely needs a new recurring character, stop, say which line needs it, and add it to the cast with its own reference sheet before continuing.
    - One-off background figures that appear in a single moment do not need a token — write them as `three generic unnamed doodle stick figures`, and keep them small, faceless or minimal, and clearly secondary so they never compete with the cast.
    - Every prompt that contains a cast member must place the `@` token at the start of that character's clause so it is easy to see which sheets to attach when generating.
-5. Be specific about everything that is NOT the cast: what the character is doing, their exact expression, what objects are in the scene, what background color is used, whether any on-screen text or labels appear
-6. Translate abstract narration into concrete visuals — if the script says "your body doesn't know the difference", show `@YOU` confused, looking back and forth at two identical objects; if it says "millions of years", show a large hourglass with bold red ALL CAPS text "MILLIONS OF YEARS" at the top of the frame
-7. Match tone to background color:
+6. Be specific about everything that is NOT the cast: what the character is doing, their exact expression, what objects are in the scene, what background color is used, whether any on-screen text or labels appear
+7. Translate abstract narration into concrete visuals — if the script says "your body doesn't know the difference", show `@YOU` confused, looking back and forth at two identical objects; if it says "millions of years", show a large hourglass with bold red ALL CAPS text "MILLIONS OF YEARS" at the top of the frame
+8. Match tone to background color:
    - Ancient / prehistoric / tribal → tan or dark blue background
    - Danger / threat / social fear → stark white with red text or red-tinted sky
    - Happy / triumph / discovery / relief → bright white or yellow background
@@ -294,10 +300,10 @@ Once the user pastes their timestamped script, generate one detailed text-to-ima
    - Fire / night / ancient ritual → solid orange background
    - Modern everyday life (phone, bed, office, sofa, street, party) → plain white background with only the few objects that matter
    - Inside the mind / thoughts / memory → solid cobalt blue background with a white doodle brain or floating thought bubbles
-8. Because this channel is psychology-first, most scenes are one cast member feeling something. Show the emotion in the eyebrows, mouth line, body posture, and head color (red = embarrassed/angry/overheated, white = neutral, blue-tinted = sad/cold/lonely) — not in the background detail. Keep every frame down to the fewest objects that carry the idea.
-9. Hold scenes across consecutive timestamps — if 3 lines describe the same moment, keep the same scene, the same cast members, and the same background, and only adjust their expression or add one new element. Do not generate a brand new scene every 5 seconds.
-10. Keep the cast internally logical: `@YOU` carries the modern-life frames, the cast member from the script's other era or setting carries those frames, and the two appear together only in a deliberate then-vs-now split frame. Do not swap who plays which role mid-video, and never place a character in an era their reference sheet was not drawn for.
-11. Use these proven frame types when appropriate:
+9. Because this channel is psychology-first, most scenes are one cast member feeling something. Show the emotion in the eyebrows, mouth line, body posture, and head color (red = embarrassed/angry/overheated, white = neutral, blue-tinted = sad/cold/lonely) — not in the background detail. Keep every frame down to the fewest objects that carry the idea.
+10. Hold scenes across consecutive timestamps — if 3 lines describe the same moment, keep the same scene, the same cast members, and the same background, and only adjust their expression or add one new element. Do not generate a brand new scene every 5 seconds.
+11. Keep the cast internally logical: `@YOU` carries the modern-life frames, the cast member from the script's other era or setting carries those frames, and the two appear together only in a deliberate then-vs-now split frame. Do not swap who plays which role mid-video, and never place a character in an era their reference sheet was not drawn for.
+12. Use these proven frame types when appropriate:
     - **Concept text frame:** Large object (hourglass, clock, skull, phone) centered + bold ALL CAPS text at top, no characters needed
     - **Then vs now split frame:** Vertical black divider — left side tan background with the ancestral cast member, right side white background with `@YOU` in modern life, doing the emotional equivalent
     - **Labeled diagram:** Doodle brain, body, or object with a yellow diagonal arrow + ALL CAPS label word
@@ -325,17 +331,17 @@ Rules for batching:
 The format inside each code block must look exactly like this:
 
 ```
-[00:00] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, [FULL SCENE DESCRIPTION — @TOKEN for every cast member present plus their action and expression, other objects, background color, any on-screen text or labels], no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style.
+[00:00] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, [FULL SCENE DESCRIPTION — @TOKEN for every cast member present plus their action and expression, other objects, background color, any on-screen text or labels], no gradients, no shadows, no textures, no photorealism, no 3D, no timestamp shown in the image, @[name] is mention syntax for reference only and must never be rendered as visible text, 16:9 aspect ratio, educational YouTube explainer doodle style.
 
-[00:05] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, [FULL SCENE DESCRIPTION — @TOKEN for every cast member present plus their action and expression, other objects, background color, any on-screen text or labels], no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style.
+[00:05] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, [FULL SCENE DESCRIPTION — @TOKEN for every cast member present plus their action and expression, other objects, background color, any on-screen text or labels], no gradients, no shadows, no textures, no photorealism, no 3D, no timestamp shown in the image, @[name] is mention syntax for reference only and must never be rendered as visible text, 16:9 aspect ratio, educational YouTube explainer doodle style.
 
-[00:09] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, [FULL SCENE DESCRIPTION — @TOKEN for every cast member present plus their action and expression, other objects, background color, any on-screen text or labels], no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style.
+[00:09] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, [FULL SCENE DESCRIPTION — @TOKEN for every cast member present plus their action and expression, other objects, background color, any on-screen text or labels], no gradients, no shadows, no textures, no photorealism, no 3D, no timestamp shown in the image, @[name] is mention syntax for reference only and must never be rendered as visible text, 16:9 aspect ratio, educational YouTube explainer doodle style.
 ```
 
 A real example of the required style:
 
 ```
-[01:12] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, @YOU sitting on the edge of a bed in a dark room, shoulders slumped forward, thick brows flat and tired, staring down at a glowing phone held in both mitten hands, plain white background with only the bed and the phone drawn, bold red ALL CAPS text "ONE MORE SCROLL" at the top of the frame, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style.
+[01:12] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, @YOU sitting on the edge of a bed in a dark room, shoulders slumped forward, thick brows flat and tired, staring down at a glowing phone held in both mitten hands, plain white background with only the bed and the phone drawn, bold red ALL CAPS text "ONE MORE SCROLL" at the top of the frame, no gradients, no shadows, no textures, no photorealism, no 3D, no timestamp shown in the image, @[name] is mention syntax for reference only and must never be rendered as visible text, 16:9 aspect ratio, educational YouTube explainer doodle style.
 ```
 
 Do not skip any timestamp. One timestamp = one prompt. Every prompt stays on its own line, with one blank line between prompts. Always output prompts in chronological timestamp order, and keep them in order across batches.
@@ -435,7 +441,7 @@ Then stop.
 - The script in Stage 2 must always be delivered as a downloadable `script_[topic].txt` file — never inside a code block or inline in the chat.
 - The script inside the file must be plain text only — no markdown, no asterisks, no brackets, no visual cues.
 - In Stage 3, each character reference sheet prompt goes in its OWN fenced code block, labeled with its exact `.png` file name. Never merge two characters into one prompt or one block.
-- The Stage 3 cast is derived from the script every single time. `YOU` is the only mandatory member; every other character, their era, clothing, and prop must trace back to a specific part of the script. Never default to a prehistoric farmer or any other stock figure.
+- The Stage 3 cast is derived from the script every single time, with ONE exception: `@YOU` is always Toss, the channel mascot, whose design is fixed across the whole channel — only his costume is derived. Every other character, their era, clothing, and prop must trace back to a specific part of the script. Never default to a prehistoric farmer or any other stock figure, and never let Toss play a second character.
 - Cast names are ALL CAPS, one word, letters only, and permanent for the video. Once Stage 3 is delivered, that cast table is the single source of truth.
 - In Stage 4, every cast member in every prompt is referenced by `@TOKEN` only. Never re-describe a cast member's design, never use a token that is not in the cast table, and never silently introduce a new recurring character — announce it and add a reference sheet first.
 - If the user pastes a timestamped script before the cast exists, run Stage 3 first, then continue to the image prompts.
