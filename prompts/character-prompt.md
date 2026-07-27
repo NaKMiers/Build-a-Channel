@@ -173,6 +173,7 @@ NO garbled or gibberish pseudo-text, NO text on the prop or phone screen.
 ---
 
 ## @YOU — TOSS, the channel mascot and viewer stand-in (modern)
+
 Attach `MASCOT.jpeg` when generating this sheet. Reproduce the identity lock above exactly — head
 circle at one third of total height, 3–4 spikes breaking the outline, wide black oval eyes, thick
 separate brows, one curved line mouth, no nose or ears, thin line limbs with splayed fingers.
@@ -190,6 +191,7 @@ single darker yellow crescent along its lower edge, and one small flat rectangul
 a slight angle with a blank dark screen.
 
 ## @FRIEND — the warm other person (modern)
+
 CHARACTER: Big-head stick-limb figure. White head circle, hair tuft with a soft side-swept curl
 instead of straight spikes, so they read as distinct from @YOU at a glance.
 GARMENT: a plain **green crew-neck shirt (#3A9E4B)** — simple filled shape, round collar line, no
@@ -200,6 +202,7 @@ open; walking in profile; standing close beside a faint simplified second figure
 PROP: oversized close-up of one open splayed line-hand raised in a small friendly wave.
 
 ## @CROWD — the interchangeable many (modern)
+
 CHARACTER: Big-head stick-limb figure, deliberately plain and generic. NO hair tuft — a bare
 smooth head circle. GARMENT: a plain **flat mid-grey (#B8BCC2)** shirt with no collar detail and
 no hood, under it darker grey (#6B7076) shorts. Every crowd member is identical so the group
@@ -211,6 +214,7 @@ PROP: oversized close-up of one single generic head — bare circle, oval eyes, 
 flat neutral line mouth.
 
 ## @BAND — the prehistoric tribe (Neolithic)
+
 CHARACTER: Big-head stick-limb figure. Head and limbs filled a warm **tan skin tone (#D9A15B)**
 rather than white, to read as ancient. Shaggy dark-brown hair tuft, wider and messier than the
 modern cast's.
@@ -223,6 +227,7 @@ PROP: oversized close-up of a simple campfire — a flat orange (#F5820D) flame 
 crossed brown log lines.
 
 ## @OUTCAST — the one slipping out of the tribe (Neolithic)
+
 CHARACTER: Big-head stick-limb figure. Same warm tan skin tone (#D9A15B) as @BAND. Hair tuft is a
 single upright antenna-like curl, so they read as the odd one out.
 GARMENT: the same rough **brown hide tunic (#8B5E3C)** as @BAND but plainer — no shoulder strap,

@@ -41,13 +41,13 @@ script rather than committing them.
 [master-prompt.md](master-prompt.md) is a single prompt you paste into an AI chat. It runs five
 stages and **waits for you between each one** — never skip ahead, never reorder.
 
-| Stage | You say | It produces |
-|---|---|---|
-| **1 — Topics** | *(activate the prompt)* | 5 viral topic ideas as a table; you pick a number |
-| **2 — Script** | the number | `script_[topic].txt` — 1,800–2,500 words of pure 2nd-person narration, delivered as a **downloadable file**, never inline |
-| **3 — Cast** | `cast` | A 2–6 entry cast table + one reference-sheet prompt per character, each in its own code block, labeled with its file name |
-| **4 — Image prompts** | *(paste the timestamped transcript)* | One image prompt per timestamp, in batches of 20; reply `next` between batches |
-| **5 — Metadata** | `yes` | Viral title, full description with hashtags, and 25–40 SEO tags — three separate code blocks |
+| Stage                 | You say                              | It produces                                                                                                               |
+| --------------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
+| **1 — Topics**        | _(activate the prompt)_              | 5 viral topic ideas as a table; you pick a number                                                                         |
+| **2 — Script**        | the number                           | `script_[topic].txt` — 1,800–2,500 words of pure 2nd-person narration, delivered as a **downloadable file**, never inline |
+| **3 — Cast**          | `cast`                               | A 2–6 entry cast table + one reference-sheet prompt per character, each in its own code block, labeled with its file name |
+| **4 — Image prompts** | _(paste the timestamped transcript)_ | One image prompt per timestamp, in batches of 20; reply `next` between batches                                            |
+| **5 — Metadata**      | `yes`                                | Viral title, full description with hashtags, and 25–40 SEO tags — three separate code blocks                              |
 
 Between Stage 2 and Stage 4 you record the narration and convert it to timestamps — see
 [Tools](#tools) below.
@@ -189,8 +189,8 @@ its `prompts/image-prompts.md` alongside `transcribes/transcript.txt` to see the
 
 ## Editorial guardrails
 
-- **Never shame the viewer.** The emotional promise is relief: *you are not broken, you are running
-  ancient software in a world it was never written for.*
+- **Never shame the viewer.** The emotional promise is relief: _you are not broken, you are running
+  ancient software in a world it was never written for._
 - **Never diagnose, never prescribe treatment, never mention medication.** If a topic brushes
   anxiety, depression, or trauma, stay at the level of ordinary human experience.
 - Every scientific term gets decoded in plain English immediately.
