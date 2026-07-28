@@ -27,6 +27,30 @@ rediscover it:
 
 ## Proposed but not picked
 
+### 2026-07-28, batch 4, titles 1 to 4 not picked
+
+The user selected title 5. These four remain eligible for a future batch.
+
+| Title | Theme | Numeric material available |
+| --- | --- | --- |
+| The Asch Effect Is Still Running Your Opinions | conformity and social proof | Asch 1951, 12 trials, 37 percent conforming responses on critical trials |
+| Why You Feel Closer To Someone After You Help Them | belonging and reciprocity | Jecker and Landy Ben Franklin effect, reciprocal altruism in small bands |
+| Why Your Mind Goes Blank When People Watch You | shame and social fear | Yerkes-Dodson performance curve, social facilitation research |
+| Why You Keep Saving Things You Never Use | scarcity and loss aversion | Kahneman and Tversky loss aversion, endowment effect experiments |
+
+### 2026-07-28, batch 3, rejected wholesale without a selection
+
+The user invoked `topic` again and gave no reason, so nothing is recorded about why.
+Do not repeat these titles in the immediately following batch.
+
+| Title | Theme | Numeric material available |
+| --- | --- | --- |
+| Why You Feel Like A Fraud When Things Are Going Well | status and comparison | Clance and Imes impostor phenomenon, 70 percent often-cited prevalence estimate |
+| Why Your Brain Thinks Boredom Is An Emergency | boredom and attention | Eastwood boredom framework, Wilson 2014 15-minute waiting study |
+| Why You Feel Guilty When You Rest | sleep and rest | Calvinist work ethic research, hunter-gatherer time-use comparisons |
+| Why You Hate Being Bad At Something In Public | shame and social fear | Gilovich spotlight effect, social rank and competence displays |
+| Why You Stop Wanting Things Right After You Get Them | habit and reward | Brickman and Campbell hedonic adaptation, reward prediction error |
+
 ### 2026-07-28, batch 1, rejected wholesale without a selection
 
 The user replied `again` and gave no reason, so nothing is recorded about why. Do not infer
