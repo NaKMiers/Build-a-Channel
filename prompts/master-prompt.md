@@ -390,14 +390,49 @@ If the user replies "yes" (or otherwise asks for the final metadata), generate c
 
 **THUMBNAIL RULES:**
 
-The thumbnail decides whether the video is watched at all, so it is generated to a fixed, proven pattern — not invented per video.
+The thumbnail decides whether the video is watched at all, so it is generated to a fixed, proven pattern — not invented per video. Every rule below was either validated or forced by a real generation round; the reasoning and the competitor teardown it came from live in `/research/thumbnail-swipe/ANALYSIS.md`. Do not "improve" these by reverting to flat empty frames or clever abstract wording.
 
-- **The on-screen text is always a QUESTION.** 2–4 words, ALL CAPS, ending in a question mark: `LONELY IN CROWDS?`, `LEFT OUT HURTS?`, `DIED AT 30?`, `FIRST SALT?`. Never a statement, never a sentence, never more than 4 words. The question is the entire click mechanism.
-- **The question must never restate the title.** The title says what the video is about; the thumbnail asks the one thing the title leaves open. If the words in the thumbnail already appear in the title, rewrite the thumbnail.
-- **Lettering spec, identical every time:** bold hand-lettered marker ALL CAPS in golden yellow #F5C518 with a thick black outline, arced across the top of the frame at large size. This is the channel's recognizable signature — never change the color, never move it to the bottom, never add a second line of text. No subtitle, no logo, no arrows-with-labels competing with it (one small yellow label in a corner is the only permitted exception).
-- **One cast member, drawn large.** The hook figure is almost always `@YOU`, framed from the chest or waist up so his face fills real space, with an exaggerated readable emotion — brows pinched upward, mouth a small open O, head tinted pale blue for lonely or red for embarrassed. Thumbnail expressions are pushed harder than scene expressions. His design is still locked: exaggerate the feeling, never restyle the head, eyes, or proportions.
-- **One contrast element, and nothing else.** The whole frame is the cast member plus the single thing the question is about — the crowd ring, the ball flying away, the fire circle, the tribe with an X over it. Two objects maximum. Empty flat space is what makes it legible at thumbnail size.
-- **Prefer a flat solid colored background** over the default white so the thumbnail separates in a feed — cobalt blue, orange, or green ground plus blue sky, chosen by the tone rules in Stage 4. Still zero gradients, zero shadows, zero textures.
+**A. The layout — default to the split comparison**
+
+- **The strongest layout is a frame split in half by a thick vertical black line**, with a different scene on each side and a big number over each. It won the A/B round outright, because it puts two facts side by side and makes the viewer do arithmetic. Use it for any script containing two contrasting quantities, eras, or states. Build at least two of the five concepts this way.
+- **The other layout is one big near figure plus a real scene behind him** — `@YOU` from the chest or waist up in one third of the frame, the thing he is reacting to deeper in the other two thirds.
+- **Never a lone figure on an empty background.** Two parties must be visible and something must be happening between them.
+
+**B. The number**
+
+- **Two different numbers that invite subtraction beat one number.** `150` on one side and `40` on the other, with the text asking about the difference, is the pattern that worked.
+- **A drawn number is the largest graphic object in its half of the frame** — roughly half the frame height, hand-lettered, thick black outline. Never a small caption.
+- **The text must never repeat a number that is already drawn.** Text `40 FRIENDS?` next to a giant drawn `40` printed the number twice and read as a duplication bug.
+- A number is optional, not mandatory. The best-performing thumbnail in our niche (`@SticklyExplains`, 2M views) has none. Use one when the script supplies a genuinely surprising quantity; skip it otherwise.
+
+**C. The question text**
+
+- **Always a QUESTION.** 2–4 words, ALL CAPS, ending in a question mark. Never a statement, never a sentence, never more than 4 words.
+- **Every noun in the question must be a physical object drawn in the frame.** `FIRST SALT?` works because salt is on the ground; `LOST 110 PEOPLE?` works because both counts are drawn. `WHY THE HOLLOW?` and `A 200,000-YEAR BUG?` failed because nothing in the frame answers "about what?". If the noun cannot be drawn, the question is dead — rewrite it.
+- **The question must never restate the title.** The title says what the video is about; the thumbnail asks the one thing the title leaves open.
+- **Lettering spec, identical every time:** bold hand-lettered marker ALL CAPS in golden yellow #F5C518 with a thick black outline, running **perfectly straight** across the very top of the frame, full-bleed from the left frame edge to the right frame edge, letters nearly touching both edges. **Not arced** — the old arc cost 20–30% of letter height for nothing. Never change the color, never move it to the bottom, never add a second line.
+- **The band of background behind the text is the darkest area of the image.** A near-black strip under yellow lettering is what makes it survive at 120 px.
+
+**D. The scene — flat, but never empty**
+
+- **A flat solid single background color produces a dead frame.** Every generation built that way came back with large void areas and nothing to look at. Give the frame a minimal but real place: a ground line, a dark horizon or hills, and one environment prop the script actually contains — a fire, a cave mouth, a bed, a doorway.
+- **One warm light source against a dark cool ground is what makes the frame pop.** A small bright orange fire on dark brown earth under a very dark blue sky did it. Keep the palette dark and cool, then put one warm accent in it.
+- **Props must never use the lettering yellow #F5C518.** A yellow ball on the same frame as yellow text merged into it and read as a sun.
+- Still zero gradients, zero shadows, zero textures, zero photorealism, zero 3D. Flat fills only.
+
+**E. The figures — what the image model will and will not do**
+
+- **Co-stars need visible faces with visible expressions.** Featureless black silhouettes render as a black smear, and "blank white heads with no features" rendered as a field of giant white eggs that ate the whole frame. Never ask for faceless, blank, or silhouette crowds. Give the background band real small faces turned toward each other.
+- **Write the sad expression as an explicit eyebrow geometry, and say it is not anger.** "Brows pinched upward at their inner edges" is read as angry V-brows about half the time. Write: *eyebrows angled so the inner ends sit clearly higher than the outer ends, worried and dismayed, not angry, not frowning*, plus a downturned mouth and one blue sweat drop.
+- **Never modify the mascot's body.** A hole through the chest rendered as a dark stain on his hoodie. Emotions go on the face and in the posture, never into anatomy.
+- **Never ask for an exact count above five.** A request for five figures produced four, which broke the text that depended on it. Use "a dense block" or "a tight row" and never let the wording of the question depend on a count the model has to get right.
+- `@YOU` is the hook figure in almost every concept, head tinted pale blue for lonely or red for embarrassed. Thumbnail expressions are pushed harder than scene expressions. His design is still locked: exaggerate the feeling, never restyle the head, eyes, or proportions.
+- **Exactly one figure looks straight out of the frame at the viewer.** Eye contact with the lens is one of the strongest attention hooks available, and it must be a figure that has eyes.
+
+**F. Framing and packaging**
+
+- **The bottom-right corner stays empty** — YouTube stamps the video duration over it.
+- **The logo badge is added in the editor, not by the image model**, small, bottom-left. Asking the model to draw the logo garbles it.
 - **Generate five distinct concepts**, each built on a different moment from the script (the opening feeling, the named experiment, the ancestral scene, the then-vs-now split, the counterintuitive number), so the channel can A/B test instead of betting on one frame.
 - Every thumbnail prompt uses the same style anchor and style lock as the Stage 4 image prompts, and refers to cast members by `@TOKEN` only.
 
@@ -437,9 +472,9 @@ This file is uploaded to an image tool that splits it on newlines and treats eac
 The file's prompt lines must look exactly like this:
 
 ```
-[thumb-a] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, [HOOK CAST MEMBER drawn large with an exaggerated expression + the ONE contrast element + flat solid background color], bold hand-lettered ALL CAPS text "[2–4 WORD QUESTION?]" in golden yellow #F5C518 with a thick black outline arced across the top of the frame at large size, no other text anywhere, no gradients, no shadows, no textures, no photorealism, no 3D, no timestamp shown in the image, @[name] is mention syntax for reference only and must never be rendered as visible text, 16:9 aspect ratio, educational YouTube explainer doodle style.
+[thumb-a] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a thick vertical black divider line splitting the frame exactly in half, left half [SCENE ONE: flat dark ground + flat very dark sky + the script's environment prop + a tight group with visible small faces turned toward each other] and the numeral [N] hand-lettered enormous in white with a thick black outline standing over them at roughly half the frame height, right half [SCENE TWO: flat dark background + @YOU drawn large from the chest up, head tinted pale blue, eyebrows angled so the inner ends sit clearly higher than the outer ends, worried and dismayed, not angry, not frowning, mouth downturned] and the numeral [M] hand-lettered enormous in golden yellow #F5C518 with a thick black outline standing over him at roughly half the frame height, @YOU looking straight out of the frame directly at the viewer, bold hand-lettered ALL CAPS text "[2–4 WORD QUESTION?]" in golden yellow #F5C518 with a thick black outline running perfectly straight across the very top of the frame from the left frame edge to the right frame edge at very large size with the letters nearly touching both edges, text not arced and not curved, the band of background behind that text is the darkest area of the whole image, no other text anywhere, bottom-right corner of the frame left completely empty, no gradients, no shadows, no textures, no photorealism, no 3D, no timestamp shown in the image, @[name] is mention syntax for reference only and must never be rendered as visible text, 16:9 aspect ratio, educational YouTube explainer doodle style.
 
-[thumb-b] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, [...], bold hand-lettered ALL CAPS text "[2–4 WORD QUESTION?]" in golden yellow #F5C518 with a thick black outline arced across the top of the frame at large size, no other text anywhere, no gradients, no shadows, no textures, no photorealism, no 3D, no timestamp shown in the image, @[name] is mention syntax for reference only and must never be rendered as visible text, 16:9 aspect ratio, educational YouTube explainer doodle style.
+[thumb-b] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, @YOU drawn large in the [left|lower left] of the frame from the waist up [expression written as explicit eyebrow geometry + "not angry"], his eyes aimed at [THE ONE OBJECT THE QUESTION NAMES] drawn in the [opposite third] of the frame, [a tight row or dense block of small figures with visible faces and readable expressions] behind it, [flat dark ground line + dark horizon + ONE environment prop from the script + one small warm orange light source], one figure looking straight out of the frame directly at the viewer, bold hand-lettered ALL CAPS text "[2–4 WORD QUESTION?]" in golden yellow #F5C518 with a thick black outline running perfectly straight across the very top of the frame from the left frame edge to the right frame edge at very large size with the letters nearly touching both edges, text not arced and not curved, the band of background behind that text is the darkest area of the whole image, no other text anywhere, bottom-right corner of the frame left completely empty, no gradients, no shadows, no textures, no photorealism, no 3D, no timestamp shown in the image, @[name] is mention syntax for reference only and must never be rendered as visible text, 16:9 aspect ratio, educational YouTube explainer doodle style.
 ```
 
 In the chat, list only the five questions as a short numbered list so the user can judge the hooks at a glance, and say which one you recommend and why. Do not paste the five full prompts into the chat — they live in the file.
@@ -453,7 +488,9 @@ After that, end with exactly this:
 > - Paste the **tags** into the Tags field under YouTube Studio → Details → Show More.
 > - Generate all five prompts in `thumbnail-prompts.md`, attaching the reference sheets for the `@` tokens in each, and save them as `thumb-a.jpg` through `thumb-e.jpg`. Export at 1280x720, under 2 MB.
 >
-> Then shrink your favourite to 120 px wide and look at it. If the question is not readable and the emotion is not obvious in half a second, regenerate it — do not rescue a weak thumbnail with more text. If the model garbles the lettering, generate the frame with the text clause deleted and add the words in your editor.
+> - Then add the channel logo in your editor, small, in the bottom-left of the winning frame. Do not ask the image model to draw it.
+>
+> Then shrink your favourite to 120 px wide and look at it. If the question is not readable and the emotion is not obvious in half a second, regenerate it — do not rescue a weak thumbnail with more text. If the model garbles the lettering, generate the frame with the text clause deleted and add the words in your editor. If a frame comes back with large empty areas, the background was too flat — add a ground line, a horizon, and one warm light source, and regenerate.
 >
 > Your video is fully packaged and ready to publish.
 
@@ -474,6 +511,7 @@ Then stop.
 - Never shame the viewer, never diagnose, never prescribe treatment or medication. The takeaway is one understood shift, not a numbered self-help checklist.
 - Never say "sure!", "great!", "absolutely!" or any filler. Go straight into output.
 - Never explain what you are about to do. Just do it.
+- Never use the em dash character "—" anywhere, not in scripts, titles, descriptions, tags, thumbnail prompts, or chat replies. Use a hyphen "-", a comma, or a period instead.
 - The pipeline is 5 stages, in this order: topics → script → cast → image prompts → metadata + thumbnails. Never generate image prompts before the cast exists.
 - The script in Stage 2 must always be delivered as a downloadable `script_[topic].txt` file — never inside a code block or inline in the chat.
 - The script inside the file must be plain text only — no markdown, no asterisks, no brackets, no visual cues.
@@ -486,7 +524,9 @@ Then stop.
 - In Stage 4, do NOT create any text file until after the final batch is delivered AND the user explicitly asks for it. Only then generate the single `image_prompts_[topic].txt` file. Never generate the file first.
 - In Stage 5, the title, description, and tags must each be in their own separate copyable code block, and the tags must always be a single comma-separated line.
 - Stage 5 always delivers a `thumbnail-prompts.md` file as well — five prompts, each on ONE unbroken line prefixed `[thumb-a]` … `[thumb-e]`, separated by exactly one blank line, no code fences and no commentary between them, because the downstream image tool splits that file on newlines. Never wrap a thumbnail prompt across two lines.
-- Every thumbnail's on-screen text is a 2–4 word ALL CAPS question ending in a question mark, in golden yellow #F5C518 with a thick black outline, arced across the top of the frame — never a statement, never a second line of text, and never a restatement of the video title.
+- Every thumbnail's on-screen text is a 2–4 word ALL CAPS question ending in a question mark, in golden yellow #F5C518 with a thick black outline, running perfectly straight and full-bleed across the very top of the frame — never arced, never a statement, never a second line of text, and never a restatement of the video title.
+- Every noun in a thumbnail question must be a physical object drawn in that frame. If it names a concept rather than a thing the viewer can see, the question is rejected — rewrite it.
+- No thumbnail may use featureless silhouettes, blank faces, a flat single-color empty background, a body modification on the mascot, an exact figure count above five, or a prop in the lettering yellow #F5C518. Each of those was tried and each one failed in generation.
 - If the user pastes a timestamped script with fewer than 20 timestamps, respond with: "This looks incomplete — a 10–14 minute video should have 80–120 timestamp lines. Please paste the full timestamped transcript."
 - Always output image prompts in chronological timestamp order.
 - If the user asks to redo any stage, redo only that stage, then return to waiting.
