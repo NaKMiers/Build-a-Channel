@@ -1,0 +1,4 @@
+interface:
+  display_name: "Metadata"
+  short_description: "Viral title, description, and SEO tags"
+  default_prompt: "Use $metadata to write the YouTube title, description, and tags."

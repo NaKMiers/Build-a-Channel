@@ -1,6 +1,6 @@
-# TossExplain
+# TossExplains
 
-Production repo for **TossExplain** — a YouTube channel of hand-drawn doodle explainers about
+Production repo for **TossExplains** — a YouTube channel of hand-drawn doodle explainers about
 psychology, anthropology, and self-help.
 
 Every video answers one question the viewer has personally felt ("why do you feel lonelier in a
@@ -10,29 +10,61 @@ crowd than alone in your room?") by hitting three pillars in order:
 2. **Anthropology** — the ancestral world that installed it
 3. **Self-help** — one concrete shift the viewer can make tonight
 
-This repo holds no video editor and no rendering code. It holds the **prompts that drive the AI
-pipeline**, the **tools** that turn narration audio into timestamps, and the **per-video artifacts**
-(script, transcript, character sheets, scene images) each episode produces.
+This repo holds no video editor and no rendering code. It holds the **agent pipeline** that
+produces each episode, the **tools** that turn narration audio into timestamps, and the
+**per-video artifacts** (script, transcript, character sheets, scene images) each episode
+produces.
+
+The pipeline is nine skills, shared by **Codex** and **Claude Code** from one source of truth
+under `.agents/`. Start at [AGENTS.md](AGENTS.md).
+
+| Skill | Produces |
+| --- | --- |
+| `/topic` | 5 title candidates in chat, then scaffolds `projects/<n>-<slug>/` |
+| `/script` | `script_<short_slug>.md` |
+| `/transcript` | `transcribes/transcript.md` |
+| `/cast` | `prompts/character-prompts.md` |
+| `/scenes` | `prompts/image-prompts.md` |
+| `/metadata` | `metadata.md` |
+| `/thumbnail` | `prompts/thumbnail-prompts.md` |
+| `/check` | validation report |
+| `/skill-sync` | regenerates the Claude wrappers |
+
+The channel knowledge lives in six rule files under `.agents/rules/`: `house-rules`,
+`channel-dna`, `visual-style`, `mascot-toss`, `thumbnail-rules`, `file-formats`. Edit a rule
+there and every skill picks it up.
+
+The former single mega-prompt is retired to [prompts/retired/](prompts/retired/README.md) as
+the provenance record for its 256 rules.
 
 ---
 
 ## Repository layout
 
 ```
-master-prompt.md        The 5-stage video engine — the heart of the channel
-character-prompt.md     Reference-sheet prompts for the current cast (TRUE STICKMAN style)
-MASCOT.jpeg             Channel mascot
-tools/                  Audio/subtitle → [M:SS] transcript converters
+AGENTS.md               Root agent instructions. CLAUDE.md just imports it.
+.agents/rules/          The channel brain, 6 files, read by Codex and Claude
+.agents/skills/         The 9 canonical skills
+.claude/skills/         Thin generated wrappers so Claude discovers the skills
+brand/                  MASCOT.jpeg, logo, banner
+tools/                  Audio and subtitle to [M:SS] transcript converters
+prompts/retired/        The former mega-prompt, kept as a provenance record
+research/               Competitor thumbnail teardown
 projects/               One folder per video
   <n>-<title-slug>/
-    transcribes/        script_*.txt, transcript*.txt, words.json
-    characters/         NAME.jpeg reference sheets (YOU, FRIEND, CROWD, …)
-    prompts/            image-prompts.md, video-prompts.md
+    script_<short>.md   Pure narration, no markdown inside
+    metadata.md         Title, description, tags
+    audios/             The recorded voiceover (gitignored, .gitkeep only)
+    characters/         NAME.jpeg reference sheets (YOU, FRIEND, CROWD, ...)
+    outputs/            thumbnail-N.jpg, and the accepted one
+    prompts/            character-prompts.md, image-prompts.md,
+                        thumbnail-prompts.md, video-prompts.md (reserved)
     scenes/             Generated scene images, named by timestamp
+    transcribes/        transcript.md, words.json
 ```
 
-Generated media (`*.mp3`, `*.wav`, `*.mp4`) and `.env` are gitignored — regenerate them from the
-script rather than committing them.
+Generated media (`*.mp3`, `*.wav`, `*.mp4`) and `.env` are gitignored. Regenerate them from
+the script rather than committing them, which is why `audios/` carries only a `.gitkeep`.
 
 ---
 
@@ -64,7 +96,7 @@ and framing.
 
 Rules that matter:
 
-- **`@YOU` is always Toss, the channel mascot.** Toss is the one permanent character on TossExplain
+- **`@YOU` is always Toss, the channel mascot.** Toss is the one permanent character on TossExplains
   and appears in every video as the viewer stand-in. His design is fixed channel-wide — oversized
   white circle head at ⅓ of his height, a tuft of 3–4 spikes breaking the head outline, wide black
   oval eyes, thick separate brows, one line mouth, thin limbs with splayed fingers. Canonical sheet:
@@ -79,10 +111,17 @@ Rules that matter:
 - Cast size 2–6. Fewer is better. A recurring group (`CROWD`, `TRIBE`) counts as **one** entry.
 - No `@` token may be used in Stage 4 unless it exists in that video's cast table.
 
-[character-prompt.md](character-prompt.md) holds the reference-sheet template. It specifies the TRUE
-STICKMAN look (circle head, single-line spine, no filled torso), the 16:9 model-sheet layout, and a
-hard **absolutely-no-text** rule — image models love to label panels "FRONT / SIDE / BACK", and every
-such label has to be suppressed explicitly.
+[.agents/rules/mascot-toss.md](.agents/rules/mascot-toss.md) holds the reference-sheet template.
+It specifies the **big-head stick-limb hybrid**: a large circle head at one third of total
+height, thin single-line limbs, and ONE filled garment standing in for the torso. It is
+explicitly *not* a pure line stickman with a single-line spine, and not a fully drawn cartoon
+person. It also carries the 16:9 model-sheet layout and a hard **absolutely-no-text** rule,
+because image models love to label panels "FRONT / SIDE / BACK" and every such label has to be
+suppressed explicitly.
+
+Hands are **small splayed line fingers**, three or four short strokes off the arm line. Not
+mittens. The retired prompts contradicted themselves on this point; see the resolution note in
+[prompts/retired/README.md](prompts/retired/README.md).
 
 ### Stage 4 — image prompt anatomy
 

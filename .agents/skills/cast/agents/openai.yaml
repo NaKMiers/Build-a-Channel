@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cast"
+  short_description: "Derive the cast and write reference sheet prompts"
+  default_prompt: "Use $cast to lock the character cast for this video's script."

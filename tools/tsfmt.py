@@ -11,6 +11,19 @@ BRACE_RE = re.compile(r"\{[^}]*\}")  # {\an8}
 SENTENCE_END = ('.', '!', '?', '…', '"', "'", '”', '’')
 CLAUSE_END = (',', ';', ':', '—', '–')
 
+# A single capital plus a period is an initial, not the end of a sentence:
+# "E. J. Masicampo", "E. Adamson Hoebel", "Robin B. Lee". Without this, the
+# splitter breaks after "E." and the healer then keeps it, because a capitalized
+# one-word token ending in "." looks exactly like a short complete sentence
+# ("Not less."). The result is a transcript line reading "E." which becomes a
+# scene image with nothing to draw.
+INITIAL_RE = re.compile(r"^[A-Z][.!?]?[\"'”’]?$")
+
+
+def ends_sentence(token):
+    """True if this token really closes a sentence, ignoring personal initials."""
+    return token.endswith(SENTENCE_END) and not INITIAL_RE.match(token)
+
 
 def parse_timecode(text):
     """Parse a single timecode into seconds. Returns None if it isn't one."""
@@ -85,8 +98,7 @@ def split_by_pause(
         if i + 1 >= len(words):
             break
         gap = words[i + 1][0] - word[1]
-        ends_sentence = word[2].endswith(SENTENCE_END)
-        if gap >= pause or (split_sentences and ends_sentence):
+        if gap >= pause or (split_sentences and ends_sentence(word[2])):
             flush()
     flush()
 
@@ -115,8 +127,19 @@ def _heal_fragments(lines, min_words):
     while i < len(pending):
         start, end, text = pending[i]
         runt = len(text.split()) < min_words
-        complete = text.endswith(SENTENCE_END)
+        complete = ends_sentence(text)
         continuation = not text[:1].isupper()
+
+        # A line ending in an initial belongs to the name that follows it, however
+        # long the line already is. The narrator's small pause in "E. Adamson" or
+        # "E. J. Masicampo" would otherwise leave the initial stranded at the end of
+        # the previous line, or alone on its own.
+        tokens = text.split()
+        if tokens and INITIAL_RE.match(tokens[-1]) and i + 1 < len(pending):
+            _, next_end, next_text = pending[i + 1]
+            pending[i + 1] = (start, next_end, f"{text} {next_text}")
+            i += 1
+            continue
 
         if runt and continuation and out:
             # Tail of the sentence above it — belongs to the line before.
@@ -195,7 +218,7 @@ def merge(cues, min_dur, max_chars):
     for start, end, text in cues:
         if buf_text:
             long_enough = (buf_end - buf_start) >= min_dur
-            complete = buf_text.endswith(SENTENCE_END)
+            complete = ends_sentence(buf_text)
             too_long = max_chars > 0 and len(buf_text) + 1 + len(text) > max_chars
             # Running out of room mid-sentence: take the last clause boundary
             # instead of letting max_chars cut between two words.

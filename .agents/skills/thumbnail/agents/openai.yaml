@@ -1,0 +1,4 @@
+interface:
+  display_name: "Thumbnail"
+  short_description: "Five A/B-testable thumbnail concepts"
+  default_prompt: "Use $thumbnail to write five thumbnail concepts for this video."

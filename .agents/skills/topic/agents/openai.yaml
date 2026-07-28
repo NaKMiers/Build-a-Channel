@@ -1,0 +1,4 @@
+interface:
+  display_name: "Topic"
+  short_description: "Generate 5 viral video topic ideas, then scaffold the project"
+  default_prompt: "Use $topic to propose 5 TossExplains video ideas and scaffold the one I pick."

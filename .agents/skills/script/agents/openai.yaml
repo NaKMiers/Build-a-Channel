@@ -1,0 +1,4 @@
+interface:
+  display_name: "Script"
+  short_description: "Write the full 2nd-person narration script"
+  default_prompt: "Use $script to write the narration script for the chosen topic."

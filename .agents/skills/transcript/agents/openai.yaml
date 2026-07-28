@@ -1,0 +1,4 @@
+interface:
+  display_name: "Transcript"
+  short_description: "Turn narration audio into a timestamped cue list"
+  default_prompt: "Use $transcript to align my voiceover into transcribes/transcript.md."
