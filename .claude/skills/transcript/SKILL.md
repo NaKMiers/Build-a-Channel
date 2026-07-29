@@ -1,6 +1,6 @@
 ---
 name: transcript
-description: Turn a recorded TossExplains narration audio file into transcribes/transcript.md, the timestamped [M:SS] cue list that the scenes skill consumes. Wraps tools/audio-to-timestamps.py and tools/srt-to-timestamps.py with the right paths and flags. Use when the user says "transcript", "timestamps", "align the audio", or has just recorded a voiceover.
+description: Turn a recorded TossExplains narration into transcribes/transcript.md, the timestamped [M:SS] cue list that the scenes skill consumes. Combines multi-part recordings into audios/full.mp3 first, then transcribes each part and merges onto that one timeline. Wraps tools/combine-audio.py, tools/audio-to-timestamps.py, and tools/srt-to-timestamps.py with the right paths and flags. Use when the user says "transcript", "timestamps", "align the audio", or has just recorded a voiceover.
 ---
 
 # Transcript (Claude wrapper)

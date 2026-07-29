@@ -128,15 +128,21 @@ awk '{print $1}' "$T" | sort | uniq -d      # duplicates, informational
 C="$P/prompts/character-prompts.md"
 grep -oE '@[A-Z]+' "$C" | sort -u                 # tokens
 grep -c '^```' "$C"                                # even, 2 per character
-grep -ciE '\bmitten\b' "$C"                        # must be 0
 grep -c 'brand/MASCOT.jpeg' "$C"                   # at least 1, the YOU sheet
+
+# 'mitten' as a POSITIVE instruction, must be 0
+grep -oiE '(no|never|not) +mittens?|mittens?' "$C" | grep -civE '^(no|never|not) '
 ```
 
 - Cast size outside 2 to 6 is a FAIL.
 - A token that is not one ALL CAPS word of letters A to Z is a FAIL.
 - Odd number of code fences means a malformed or merged sheet block. FAIL.
-- `mitten` anywhere is a FAIL. `.agents/rules/mascot-toss.md` resolved this: the correct
-  hand is small splayed line fingers, and `mitten hands` is in the NEGATIVE block.
+- `mitten` as a **positive instruction** is a FAIL. `.agents/rules/mascot-toss.md` resolved this:
+  the correct hand is small splayed line fingers, and `no mitten hands` belongs in every NEGATIVE
+  block. So a bare `grep -c mitten` counts the fix as the fault: it reads 11 on project 2, which is
+  correct, and 8 on project 1's cast file, also correct. Use the grep above, which strips
+  occurrences preceded by no, never, or not. Only project 1's `image-prompts.md` genuinely fails,
+  at 30, and that is the grandfathered INFO.
 - The `YOU` sheet must instruct attaching `brand/MASCOT.jpeg`.
 - Every `NAME` in the cast table should have a matching `characters/NAME.jpeg`. Missing
   files are informational, the user may not have generated them yet.
@@ -162,6 +168,9 @@ comm -13 <(grep -oE '@[A-Z]+' "$C" | sort -u) <(grep -oE '@[A-Z]+' "$F" | sort -
 
 # blank-line separation: no two prompt lines adjacent
 awk '/^\[/{if(prev)print NR": adjacent prompts"; prev=1; next}{prev=0}' "$F"
+
+# PROMPTS ONLY: no header, no title, no commentary. Must be 0 from project 3 onward.
+grep -v '^\[' "$F" | grep -c .
 ```
 
 FAIL conditions:
@@ -170,6 +179,10 @@ FAIL conditions:
 - anchor count or lock count not equal to prompt count
 - any `@TOKEN` not in the cast table. `@[name]` is expected, it is part of the style lock.
 - two prompt lines adjacent with no blank line between them
+- any non-prompt non-blank line, **from project 3 onward**. This file is imported wholesale
+  into an image tool that treats every line as a prompt, so a header becomes a junk
+  generation. Projects 1 and 4 still carry a 4 line header block: report those as INFO, not
+  FAIL, and say project 4 should be stripped before import. Projects 2 and 3 are already clean.
 
 **Reading the timestamp diff.** A clean diff is a PASS. A non-empty diff is only a PASS if
 every differing line is a documented duplicate remap, and there are no more of them than
@@ -184,9 +197,20 @@ first, and the diff is exactly one line:
 > [3:25]
 ```
 
-That is correct and must be reported as INFO, not FAIL. Verify the remap is declared in the
-`image-prompts.md` header note. **Any differing line that is not an accounted-for remap is a
-FAIL**, because a drifted timestamp means a scene image will be named wrong.
+That is correct and must be reported as INFO, not FAIL. **Any differing line that is not an
+accounted-for remap is a FAIL**, because a drifted timestamp means a scene image will be named
+wrong.
+
+"Accounted for" is now judged arithmetically, not by reading a note. `image-prompts.md` carries
+no header from project 3 onward, so there is nowhere to declare a remap. A differing line is
+accounted for when the transcript stamp is one of the `declared duplicates` and the prompt
+stamp is that duplicate advanced by one second. Check that the count of differing lines does
+not exceed `declared duplicates`, and that each differing pair fits that shape:
+
+```bash
+# project 3: transcript has [8:26] twice, prompts are [8:26] then [8:27]
+diff <(awk '{print $1}' "$T") <(grep -o '^\[[0-9:]*\]' "$F") | grep -c '^[<>]'   # 2 lines = 1 remap
+```
 
 ## Step 7 - Thumbnail checks
 

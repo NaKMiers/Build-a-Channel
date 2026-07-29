@@ -150,6 +150,106 @@ silhouette and by trim, never by facial detail: flat level fringe with tan trim,
 beard with reversed dark trim, and a plain short cap with no trim at all. The no-trim parka is what
 marks an ordinary band member apart from the two named ancestral characters.
 
+## Project 3's cast (2026-07-29), and what it added
+
+`@YOU` (Toss, canonical cobalt hoodie, modern), `@WORK` (group, red, the work friends), `@GYM`
+(group, grass green, the gym people), `@METER` (personified object, the sociometer as a gauge),
+`@FORAGER` (Kalahari Ju/'hoansi forager, brown hide wrap with tan hem trim), `@CAMP` (group, sky
+blue, the camp of thirty). Six entries, three of them groups, one an object.
+
+Nothing carried over. Third video, third setting: forager band, Arctic band, now a Kalahari
+camp, and the derivation gave a different figure each time.
+
+### Three groups in one cast is correct when the script is about audiences
+
+This script's subject is literally having six or seven separate audiences, and the party where
+two of them collide is the opening image and the closing image. One group entry could not carry
+a collision, so `@WORK` and `@GYM` are both cast. They are the two the script names most often
+(lines 27, 35, 79, 97), and line 97 gives each of them a specific instruction, so they were
+already the two doing the work.
+
+### A recurring abstraction beats a vivid one-off for a cast slot
+
+The cut was between `@METER` and a `@STRANGER` for Tory Higgins's ambiguous person. The stranger
+is more vivid and gets four paragraphs, but they are four **contiguous** paragraphs, so drift is
+bounded and `scenes` can carry it with generic figures. The sociometer recurs at lines 11, 13, 15,
+83 and 99, spanning the entire video, which is the highest drift exposure on the whole cast. **Rank
+candidates by moments times spread, not by vividness.** A signature object threaded through every
+act needs the lock more than a memorable figure confined to one section.
+
+### The gauge is the most text-prone sheet the channel has produced
+
+A real gauge has numerals printed on its face and every model will supply them. The dial carries
+plain tick marks and nothing else, and the `ABSOLUTELY NO TEXT` block names the specific
+temptations: no numerals, no scale values, no min or max labels, no percent sign, no degree marks,
+no brand name on the casing. **Any object with a readable face needs its own enumerated text
+negatives**, not just the standard block. Flag it in the Generating section too, so the human
+checks that sheet first.
+
+### Warm ancestral backgrounds rule out warm ancestral garments
+
+Same collision as project 2 and the same resolution. Every camp scene sits on tan `#C4965A` or
+solid orange `#F5820D`, so a tan or brown **group** disappears into its own background. `@CAMP` is
+saturated sky blue `#6EB5E8` for the cool-against-warm read, and `@FORAGER` keeps brown
+`#8B5E3C` so the ancestral colour family still reads in a split frame. This means `@YOU` and
+`@CAMP` are both blue, which contradicts the "modern and ancestral never share a colour family"
+rule below. It is a deliberate exception: they never share a background, Toss is on white and the
+camp is on tan or orange. Project 2 shipped the same exception for the same reason. **Write the
+reasoning into the cast file so `scenes` does not re-litigate it.**
+
+### The two verification greps were both wrong, and both said "pass"
+
+- **`grep -c mitten` counts the fix as the fault.** Every NEGATIVE block correctly says `no mitten
+  hands`, so the old grep read 11 on project 2 and 8 on project 1's cast file, both of which are
+  correct files. The corrected form strips occurrences preceded by no, never, or not:
+  `grep -oiE '(no|never|not) +mittens?|mittens?' "$F" | grep -civE '^(no|never|not) '`. Only
+  project 1's `image-prompts.md` genuinely fails, at 30. Fixed in both `cast` and `check`.
+- **The garment-colour grep only knew hoodie, shirt, parka, tunic, robe.** Project 3 introduced a
+  vest, a wrap, and a casing ring, so three of six entries printed an empty line, which reads as
+  "no colour assigned" rather than "the grep cannot see this word". A blank is indistinguishable
+  from a pass, which is how two characters would come to share a colour. Extend the alternation
+  whenever a cast introduces a new garment word.
+
+Also: `grep -ciE 'muted|desaturated|washed.out'` is **expected** to equal the cast size in a
+finished file, because every NEGATIVE block carries `no pale washed-out fills` and `no muted
+palette`. Zero would mean the negatives are missing. Read where the hits sit.
+
+### Costuming Toss off cobalt, when the user asks for it
+
+The user asked for @YOU's clothes to match the topic, so project 3 puts him in a saturated orange
+`#F5820D` short-sleeve camp-collar going-out shirt over his usual charcoal shorts, dressed for the
+party that bookends the script. Three things this run established:
+
+- **Pick the costume from the script's bookend scene**, not from an average of its settings. The
+  sheet locks ONE outfit, so the right one is whichever room carries the video's opening and
+  closing image.
+- **An edit prompt inherits everything it does not override, so removing a feature needs its own
+  instruction.** `brand/MASCOT.jpeg` has a hood. Simply describing a shirt leaves the model free to
+  draw a hooded shirt, so the CHANGE block says REMOVE THE HOOD COMPLETELY and names the hood bump,
+  the drawstring and the V notch, and the NEGATIVE repeats them. The same applies to any KEEP-block
+  feature being dropped rather than replaced.
+- **Check what the colour is free of, not just who else wears it.** Orange was the only free
+  saturated palette colour, but solid orange `#F5820D` is also the tone map's fire background. A
+  garment can collide with a background as easily as with another character. Noted in the cast file
+  so `scenes` keeps @YOU off warm grounds.
+
+Write a one-line revert into the sheet's prose when overriding a standing design rule. The costume
+touches only the CHANGE, CONSISTENCY and NEGATIVE blocks, so saying that plainly is cheaper than
+re-deriving it later.
+
+**Watch the garment grep when a sheet mentions two garments.** The first pass opened with "replace
+the hoodie with a plain short-sleeve shirt in orange", and the Step 5 grep reported
+`@YOU hoodie with a plain short-sleeve going-out shirt in saturated orange (#F5820D)`, because the
+alternation matches the first garment word on the line. The hex was right, the label was misleading.
+Declare the garment first and mention the one being replaced afterwards.
+
+### Do not paraphrase the opening line for a non-person entry
+
+First pass opened `@METER` with "...for ONE simple hand-drawn 2D doodle cartoon **object with a
+face**", which broke the verbatim REFERENCE SHEET OPENING LINE and dropped the count to 4 of 5.
+Caught by the grep, not by eye. The verbatim line goes first unchanged, then a following sentence
+says it is a personified object with no body, arms or legs.
+
 ## Resolved conflict: hand shape
 
 The retired prompts contradicted each other. Splayed line fingers win, `mitten` is banned. The

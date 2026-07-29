@@ -91,6 +91,15 @@ Record the totals. They go in the file header and the `check` skill verifies the
    75 percent of all prompts.** Cobalt blue is capped at 15 percent and means literally inside
    the mind, a brain or a thought loop as the subject. It does not mean night, sad, or serious.
    A 2am bedroom is modern everyday life and gets white. Labs and restaurants get white.
+   - **Budget the warm backgrounds against the act sizes before writing a single prompt.** Count
+     the cues in the script's other-era act. If that act is larger than the tan plus orange plus
+     green ceiling, the surplus must be planned as white concept, number, and diagram frames from
+     the start. Project 3's ancestral act was 83 of 266 cues, 31 percent, against a 25 percent
+     warm ceiling, so about 20 of them were designed as white frames up front rather than
+     discovered in review.
+   - Also read the project's `character-prompts.md` colour notes for per-video constraints, for
+     example a cast member whose garment colour matches a background colour, and add one grep per
+     constraint to Step 3.
 9. **On-screen text is black by default, red only for danger, threat, failure, or negation.**
    Never yellow on a white background, it is unreadable.
 10. **Emotion lives in the eyebrows, mouth line, body posture, and head color**, never in
@@ -109,14 +118,17 @@ Record the totals. They go in the file header and the `check` skill verifies the
 13. **Use the nine proven frame types** from `visual-style.md` when appropriate rather than
     inventing a layout.
 
-## Step 2 - Write the header, then generate in internal chunks
+## Step 2 - Generate in internal chunks
 
-Write the header block first, exactly as `file-formats.md` specifies, including the cast
-line, the source transcript line with the cue count and any duplicate-timestamp note, and
-the GENERATION LINE.
+**Write NO header. The file contains prompts and nothing else.** The first byte of the file is
+the `[` of the first prompt. No title, no cast line, no source-transcript line, no attachment
+note, no GENERATION LINE, no commentary anywhere. `image-prompts.md` is imported wholesale into
+an image tool that treats every line as a prompt, so a header becomes a junk generation. The
+cast list, cue counts, duplicate-timestamp note and GENERATION LINE all go in the **chat
+report** at Step 4 instead, where the human reads them and the tool never sees them.
 
-Then work through the transcript in **internal chunks of 25 cues**, appending each chunk to
-the file. Do not ask the user between chunks. Before each chunk after the first, re-read the
+Work through the transcript in **internal chunks of 25 cues**, appending each chunk to the
+file. Do not ask the user between chunks. Before each chunk after the first, re-read the
 last 3 prompts you wrote so the scene-holding rule survives the chunk boundary, and re-check
 the tone map so the background palette does not drift.
 
@@ -134,6 +146,10 @@ T="$P/transcribes/transcript.md"
 # one prompt per cue
 echo "cues: $(grep -c . "$T")  prompts: $(grep -c '^\[' "$F")"
 
+# PROMPTS ONLY: no header, no title, no commentary. Must be 0.
+grep -v '^\[' "$F" | grep -c .
+head -c1 "$F"   # must be [
+
 # timestamps identical and in order
 diff <(awk '{print $1}' "$T") <(grep -o '^\[[0-9:]*\]' "$F") && echo "timestamps match"
 
@@ -148,9 +164,12 @@ grep -n "$(printf '\u2014')" "$F" && echo "FAIL: em dash" || echo "clean"
 
 # BACKGROUND BUDGET - white must be the clear majority, cobalt capped
 N=$(grep -c '^\[' "$F")
-for pat in 'plain white background' 'cobalt blue' 'tan #C4965A' 'orange #F5820D'; do
-  c=$(grep -ci "$pat" "$F"); printf '  %-24s %3s  %2s%%\n' "$pat" "$c" "$((c*100/N))"
+S=0
+for pat in 'plain white background' 'cobalt blue' 'tan #C4965A' 'orange #F5820D' 'grass green #3A9E3A'; do
+  c=$(grep -ci "$pat" "$F"); S=$((S+c)); printf '  %-26s %3s  %2s%%\n' "$pat" "$c" "$((c*100/N))"
 done
+# the five counts must sum to N: anything else means a prompt has two backgrounds or none
+echo "  sum $S of $N"
 # text colour: black default, red for threat, yellow never
 for col in black red yellow; do printf '  text %-7s %3s\n' "$col" "$(grep -c "bold $col ALL CAPS" "$F")"; done
 grep '^\[' "$F" | grep 'plain white background' | grep -c 'bold yellow'   # must be 0
@@ -171,14 +190,18 @@ lock. Fix anything that fails before reporting.
 
 ## Step 4 - Report and hand off
 
-Give the prompt count against the cue count, any duplicate timestamps and the file-naming
-workaround, and the first 3 prompts as a sample. Then:
+**The chat report carries everything the header used to.** Since the file is prompts only,
+this is the only place the human gets it, so do not abbreviate it. Give the prompt count
+against the cue count, the cast list with its `.jpeg` file names, any duplicate timestamps
+with the file-naming workaround, the background budget table, and the first 3 prompts as a
+sample. Then, quoting the GENERATION LINE from `visual-style.md` verbatim so the human can
+copy it:
 
-> Image prompts saved to `<path>`.
+> Image prompts saved to `<path>`. The file is prompts only, so it imports directly.
 >
 > Paste them into Nano Banana, Gemini, Midjourney, DALL-E 3, or Stable Diffusion. For each
-> prompt, attach only the `.jpeg` sheets for the `@` tokens it contains, and add the
-> generation line from the file header.
+> prompt, attach only the `.jpeg` sheets for the `@` tokens it contains, and add this line to
+> every generation: `<GENERATION LINE, verbatim>`
 >
 > **Pro tip:** generate the 3 or 4 frames where your main character is most visible first.
 > If any drifts from the reference sheet, fix it before generating the rest. Drift
@@ -192,8 +215,10 @@ workaround, and the first 3 prompts as a sample. Then:
 - Never output prompts out of chronological order.
 - Never wrap a prompt across two lines. Downstream tools split this file on newlines, so a
   wrapped prompt becomes two broken prompts.
-- Never put commentary, a header, or a blank second line between prompts. Exactly one
-  blank line separates them.
+- Never write a header, a title, a cast line, or any commentary into the file. Every line is
+  either a prompt or one of the single blank separators between them. The file is imported
+  wholesale, so a header line becomes a junk image.
+- Never put a blank second line between prompts. Exactly one blank line separates them.
 - Never re-describe a cast member. Never invent a token.
 
 ## Self-improvement

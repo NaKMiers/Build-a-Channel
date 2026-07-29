@@ -19,14 +19,22 @@ short sentence stays its own line and nothing is glued to its neighbour. Anythin
 still holding more than --max-dur seconds of video is split at its widest internal
 pause. On a 12-minute script this lands around 230 lines of ~3s each.
 
-Multiple audio files are treated as consecutive parts of one recording, so
-part 2 continues where part 1 ended. With --engine align, pass one --script per
-audio file, in the same order.
+Multiple audio files are treated as consecutive parts of one recording, so part 2
+continues where part 1 ended. Each part is offset by the *measured duration* of the
+parts before it, not by where its last word fell, so trailing silence at the end of a
+part does not pull every later timestamp early. With --engine align, pass one --script
+per audio file, in the same order.
+
+To transcribe the parts in separate runs instead, save a --save-json cache per part,
+then merge them onto one timeline with repeated --from-json plus the --offsets file
+that combine-audio.py writes. No API call, so re-merging is free.
 
 Examples:
     audio-to-timestamps.py voice.mp3 --script script_why_you_fear_the_dark.txt -o t.txt
     audio-to-timestamps.py part-1.mp3 part-2.mp3 --script s1.txt --script s2.txt
     audio-to-timestamps.py part-1.mp3 part-2.mp3 part-3.mp3 --engine groq -o t.txt
+    audio-to-timestamps.py --from-json w1.json --from-json w2.json \
+        --offsets offsets.json -o t.md
 """
 
 import argparse
@@ -40,6 +48,7 @@ import urllib.request
 import uuid
 from pathlib import Path
 
+import mp3frames
 import tsfmt
 
 ALIGN_URL = "https://api.elevenlabs.io/v1/forced-alignment"
@@ -199,6 +208,56 @@ def transcribe(audio, timeout):
     sys.exit(f"error: transcription returned nothing for {audio}")
 
 
+def save_cache(path, cues):
+    """Write word timings for later reuse with --from-json. No-op without a path."""
+    if not path:
+        return
+    path.write_text(
+        json.dumps([{"start": s, "end": e, "text": t} for s, e, t in cues],
+                   ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+
+
+def merge_caches(paths, offsets_path):
+    """Load one or more --save-json caches and place them on a single timeline.
+
+    With --offsets, each cache is shifted by its part's measured start, so the result
+    matches the combined audio exactly. Without it, each part simply continues where
+    the previous part's last word ended, which is only correct when the parts have no
+    trailing silence.
+    """
+    starts = None
+    if offsets_path:
+        data = json.loads(offsets_path.read_text(encoding="utf-8"))
+        starts = [float(part["start"]) for part in data["parts"]]
+        if len(starts) != len(paths):
+            sys.exit(
+                f"error: {offsets_path} describes {len(starts)} parts but "
+                f"{len(paths)} --from-json cache(s) were given. Pass one cache per "
+                "part, in the same order."
+            )
+
+    cues, offset = [], 0.0
+    for i, path in enumerate(paths):
+        part = [
+            (float(w["start"]), float(w["end"]), w["text"])
+            for w in json.loads(path.read_text(encoding="utf-8"))
+        ]
+        if not part:
+            sys.exit(f"error: {path} holds no word timings")
+        if starts is not None:
+            offset = starts[i]
+        if len(paths) > 1:
+            print(f"[{i + 1}/{len(paths)}] {path.name}: {len(part)} words, "
+                  f"offset {mp3frames.fmt(offset)}", file=sys.stderr)
+        cues.extend((s + offset, e + offset, t) for s, e, t in part)
+        if starts is None:
+            offset = cues[-1][1]
+
+    return cues
+
+
 def main():
     p = argparse.ArgumentParser(
         description="Turn narration audio into [M:SS] transcript lines.",
@@ -289,21 +348,31 @@ def main():
     )
     p.add_argument(
         "--from-json",
+        action="append",
+        default=[],
         type=Path,
         metavar="PATH",
         help="re-chunk word timings saved earlier by --save-json, with no API call "
-        "and no cost. Use this to retune the line splitting.",
+        "and no cost. Use this to retune the line splitting. Repeat once per part, "
+        "in order, to merge caches transcribed in separate runs.",
+    )
+    p.add_argument(
+        "--offsets",
+        type=Path,
+        metavar="PATH",
+        help="the durations file combine-audio.py --json wrote. Shifts each "
+        "--from-json cache onto the combined timeline by its part's true start.",
     )
     args = p.parse_args()
 
     if not args.audio and not args.from_json:
         p.error("give at least one audio file, or --from-json to re-chunk saved timings")
+    if args.offsets and not args.from_json:
+        p.error("--offsets applies to --from-json; the audio path measures the parts itself")
 
     if args.from_json:
-        cues = [
-            (float(w["start"]), float(w["end"]), w["text"])
-            for w in json.loads(args.from_json.read_text(encoding="utf-8"))
-        ]
+        cues = merge_caches(args.from_json, args.offsets)
+        save_cache(args.save_json, cues)
         return emit(args, cues)
 
     env_file = load_dotenv()
@@ -332,7 +401,7 @@ def main():
         )
 
     cues = []
-    running_end = 0.0
+    offset = 0.0
     for i, audio in enumerate(args.audio):
         label = f"[{i + 1}/{len(args.audio)}] {audio.name}"
         print(f"{label}: {engine}...", file=sys.stderr)
@@ -340,19 +409,22 @@ def main():
         part = align(audio, args.script[i], args.timeout) if engine == "align" \
             else transcribe(audio, args.timeout)
 
-        cues.extend((s + running_end, e + running_end, t) for s, e, t in part)
-        running_end = cues[-1][1]
+        cues.extend((s + offset, e + offset, t) for s, e, t in part)
 
-    if args.save_json:
-        args.save_json.write_text(
-            json.dumps(
-                [{"start": s, "end": e, "text": t} for s, e, t in cues],
-                ensure_ascii=False,
-                indent=2,
-            ),
-            encoding="utf-8",
-        )
+        # Advance by the part's real length, so silence after its last word still
+        # occupies the timeline. Only if the format can be measured; otherwise fall
+        # back to where the last word landed.
+        seconds = mp3frames.duration(audio)
+        if seconds is None:
+            offset = cues[-1][1]
+        else:
+            if seconds < part[-1][1] - 0.5:
+                print(f"warning: {audio.name} measured {seconds:.1f}s but its last "
+                      f"aligned word ends at {part[-1][1]:.1f}s. Check the part order.",
+                      file=sys.stderr)
+            offset += seconds
 
+    save_cache(args.save_json, cues)
     return emit(args, cues)
 
 

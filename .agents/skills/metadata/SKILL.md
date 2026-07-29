@@ -88,7 +88,9 @@ the code blocks are the convenience.
 - Never put hashtags in the tags block or commas-as-tags in the hashtag line.
 - Never shame the viewer in the description. The emotional promise is relief.
 - The title may differ from the working title used for the folder slug. Do not rename the
-  folder to match: the slug is already referenced by every prompt file header.
+  folder to match: the `script_<short_slug>.md` file name is derived from it and is referenced
+  by `character-prompts.md`. Note that `image-prompts.md` no longer carries a header, so it is
+  not one of the places that would need updating.
 
 ## Self-improvement
 

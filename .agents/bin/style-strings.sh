@@ -29,7 +29,7 @@ _ss_block() {
 
 STYLE_ANCHOR="$(_ss_block 'STYLE ANCHOR - opens every image and thumbnail prompt')"
 STYLE_LOCK="$(_ss_block 'STYLE LOCK - closes every image and thumbnail prompt')"
-GENERATION_LINE="$(_ss_block 'GENERATION LINE - printed in every prompt file header, for the human to paste')"
+GENERATION_LINE="$(_ss_block 'GENERATION LINE - the instruction the human adds to every generation')"
 SHEET_OPENING_LINE="$(_ss_block 'REFERENCE SHEET OPENING LINE - opens every character sheet prompt')"
 
 export STYLE_ANCHOR STYLE_LOCK GENERATION_LINE SHEET_OPENING_LINE

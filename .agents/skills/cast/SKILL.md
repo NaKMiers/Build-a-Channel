@@ -145,16 +145,29 @@ F="projects/<n>-<slug>/prompts/character-prompts.md"
 grep -c '^```' "$F"                              # even number, 2 per character
 grep -oE '@[A-Z]+' "$F" | sort -u                # tokens, all ALL CAPS single words
 grep -n "$(printf '\u2014')" "$F" && echo "FAIL: em dash" || echo "clean"
-grep -c 'mitten' "$F"                            # must be 0, see mascot-toss.md
+
+# 'mitten' as a POSITIVE instruction must be 0. Every sheet's NEGATIVE block says
+# "no mitten hands", so a bare `grep -c mitten` counts the fix as the fault.
+grep -oiE '(no|never|not) +mittens?|mittens?' "$F" | grep -civE '^(no|never|not) '
 
 # every garment colour distinct, and nothing off palette or muted
 for t in $(grep -oE '^\| @[A-Z]+' "$F" | tr -d '| @'); do
   printf '%-10s %s\n' "@$t" "$(sed -n "/^## $t.jpeg/,/^## [A-Z]*.jpeg/p" "$F" \
-    | grep -oE '(hoodie|shirt|parka|tunic|robe)[^,]*\(#[0-9A-F]{6}\)' | head -1)"
+    | grep -oE '(hoodie|shirt|parka|tunic|robe|vest|wrap|coat|dress|casing ring)[^,]*\(#[0-9A-F]{6}\)' \
+    | head -1)"
 done
 grep -oE '#[0-9A-F]{6}' "$F" | sort -u           # cross-check against the palette
 grep -ciE 'muted|desaturated|washed.out|pale (grey|slate)' "$F"   # design language, aim for 0
 ```
+
+The garment grep has to name the garment word, so **extend that alternation whenever a cast
+introduces a new one.** A word it does not know prints an empty line, which looks like "no colour
+assigned" rather than "the grep cannot see it", and a silent blank is how two characters end up
+sharing a colour.
+
+The design-language count is **not** expected to be 0 in a finished file: every NEGATIVE block
+carries `no pale washed-out fills` and `no muted palette`, so a 6-entry cast reads 6. What must be
+0 is any such word describing a garment positively. Check where the hits sit before acting.
 
 Two expectations that differ from a naive count:
 

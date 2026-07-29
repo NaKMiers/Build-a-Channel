@@ -8,8 +8,13 @@ __pycache__/
 *.pyc
 
 # Generated media — regenerate from the script instead of committing
+*.mp3
+*.wav
 *.mp4
 *.m4a
 *.aac
 *.flac
 .gstack/
+
+# macOS
+.DS_Store

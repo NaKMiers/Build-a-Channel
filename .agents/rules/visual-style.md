@@ -22,7 +22,7 @@ Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slight
 no gradients, no shadows, no textures, no photorealism, no 3D, no timestamp shown in the image, @[name] is mention syntax for reference only and must never be rendered as visible text, 16:9 aspect ratio, educational YouTube explainer doodle style.
 ```
 
-### GENERATION LINE - printed in every prompt file header, for the human to paste
+### GENERATION LINE - the instruction the human adds to every generation
 
 ```
 match the attached character reference exactly, no photorealism, no 3D render, no gradients, no drop shadows, no textures, no realistic faces, no anime style

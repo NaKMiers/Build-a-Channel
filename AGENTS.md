@@ -81,5 +81,11 @@ and it must pass clean.
 
 `tools/audio-to-timestamps.py` (forced alignment via ElevenLabs, or plain transcription
 via Groq) and `tools/srt-to-timestamps.py` both emit the `[M:SS] narration` format. They
-share `tools/tsfmt.py` for line splitting. The `transcript` skill drives them. API keys
-live in a gitignored `.env`.
+share `tools/tsfmt.py` for line splitting. `tools/combine-audio.py` merges a multi-part
+recording into `audios/full.mp3` and reports each part's true start, which is the timeline
+the transcript is built against. It also rewrites the combined file's Xing header, because
+parts exported at different bitrates otherwise make players report a badly wrong duration.
+It shares `tools/mp3frames.py` with `audio-to-timestamps.py`, which needs the same
+durations to offset per-part word timings.
+No ffmpeg required anywhere. The `transcript` skill drives all of them. API keys live in a
+gitignored `.env`.
