@@ -34,11 +34,6 @@ The people with more separate selves suffered less.
 
 When your identity is one undivided block and a piece of it fails, the failure floods everything, because there is nothing else to be. When it is built from genuinely distinct parts, a failure in one is contained. The gym version of you is untouched by what happened at work. Linville called it self-complexity, and it works like a bulkhead in a ship. The compartments are not evidence of dishonesty. They are what keeps you afloat when one of them floods.
 
-
-
-
-
-
 So the multiplicity is not the problem. Hold onto that, because the mismatch is coming, and it is not where you would expect.
 
 Which raises the real question. If having many selves is normal, and having many selves is protective, then why does the party still feel like that?
@@ -68,11 +63,6 @@ There is something else that follows from this, and it is easy to miss because n
 Which means your self did not have to be portable. It did not need a version that could be packed up and presented cold to a room of people with no history of you. It only needed to be maintained, continuously, in front of witnesses who already held every previous draft.
 
 So the machinery in your head, the audience-tuner, the sociometer, the self that assembles per room, all of it was built under one enormous constraint. One audience. Permanent. Fully cross-referenced.
-
-
-
-
-
 
 That constraint has been gone for about a century, and nothing in you has been told.
 
