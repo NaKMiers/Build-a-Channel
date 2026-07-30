@@ -31,7 +31,7 @@ the next command to run. Nothing is generated ahead of its inputs.
 | `/transcript` | script + recorded voiceover | `transcribes/transcript.md`, `transcribes/words.json` |
 | `/cast` | script | `prompts/character-prompts.md` |
 | `/scenes` | transcript + cast | `prompts/image-prompts.md` |
-| `/metadata` | script | `metadata.md` |
+| `/metadata` | script | `outputs/metadata.md` |
 | `/thumbnail` | script + cast | `prompts/thumbnail-prompts.md` |
 | `/check` | anything | a PASS / FAIL / INFO report, read-only |
 | `/skill-sync` | nothing | regenerates the Claude wrappers. Manual only |
@@ -126,10 +126,9 @@ research/               Competitor thumbnail teardown, 40 sampled images plus AN
 projects/               One folder per video
   <n>-<title-slug>/
     script_<short>.md   Pure narration, no markdown inside
-    metadata.md         Title, description, tags
     audios/             The recorded voiceover, one file or part-1, part-2, ...
     characters/         NAME.jpeg reference sheets (YOU, CROWD, HADZA, ...)
-    outputs/            thumbnail-N.jpg, the chosen one suffixed -accepted
+    outputs/            metadata.md, thumbnail-N.jpg, the chosen one suffixed -accepted
     prompts/            character-prompts.md, image-prompts.md,
                         thumbnail-prompts.md, video-prompts.md (reserved, empty on purpose)
     scenes/             Generated scene images, named [M-SS].jpg by timestamp
@@ -171,7 +170,7 @@ Generate one image per code block in `character-prompts.md`, attaching `brand/MA
 
 ```bash
 /scenes         # one prompt per timestamp -> prompts/image-prompts.md
-/metadata       # -> metadata.md
+/metadata       # -> outputs/metadata.md
 /thumbnail      # 5 A/B concepts -> prompts/thumbnail-prompts.md
 ```
 

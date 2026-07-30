@@ -1,7 +1,8 @@
 # Visual style - art DNA, the verbatim strings, tone map, frame types
 
-Canonical source for how a TossExplains frame looks. Read this before writing any
-image prompt, reference sheet, or thumbnail prompt.
+Canonical source for how a TossExplains scene or character sheet looks. Read this before
+writing any scene prompt, reference sheet, or thumbnail prompt. Thumbnail prompts preserve
+the character identity rules here but use the separate rendering exception below.
 
 ## THE FOUR VERBATIM STRINGS (single source of truth)
 
@@ -9,6 +10,10 @@ These four strings appeared 7, 7, 7, and 2 times across the retired prompt files
 That duplication is how a contradiction survived undetected. They now exist here
 once. **Copy them character for character. Never paraphrase, never re-type from
 memory, never "improve" the wording.** The `check` skill greps for them.
+
+The STYLE ANCHOR and STYLE LOCK heading names are extractor keys and remain unchanged.
+The thumbnail-only exception below overrides the word `thumbnail` in those historical
+heading names.
 
 ### STYLE ANCHOR - opens every image and thumbnail prompt
 
@@ -41,6 +46,17 @@ the file system, not visual content. They must never appear as rendered text in 
 generated image: no timestamp, clock, or counter burned into a corner, no literal
 "@NAME" caption anywhere in the frame. That is why the style lock explicitly repeats
 the negative. **Never drop it when writing or editing a prompt.**
+
+## Thumbnail-only exception
+
+Thumbnail prompts do not use the scene STYLE ANCHOR, STYLE LOCK, or GENERATION LINE.
+Thumbnails preserve the attached TossExplains character designs but use the separate
+self-contained cinematic rendering system in `.agents/rules/thumbnail-rules.md` and
+`.agents/skills/thumbnail/references/style-spec.json`. That system allows controlled
+gradients, soft shadows, painted texture, atmospheric depth, and warm light spill.
+
+This exception applies only to thumbnail prompts. Video scenes and character sheets keep
+the flat rendering rules below.
 
 ## Art style
 

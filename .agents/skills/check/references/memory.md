@@ -26,6 +26,8 @@ These are expected and must not be reported as FAIL:
   grep cannot tell subject from background, so read the surrounding clause before calling it
   a FAIL. Only 1 of the 5 concepts uses the split comparison layout, below the 2 the skill
   asks for; that also predates the rule.
+- `prompts/thumbnail-prompts.md` keeps its legacy header, `[thumb-*]` labels, and blank
+  separators. The five-line prompt-only import format applies from project 2 onward.
 
 So the fixture does **not** currently produce an all-PASS table, and the quality bar in
 `AGENTS.md` overstates it. What regression testing actually means here: the items above stay

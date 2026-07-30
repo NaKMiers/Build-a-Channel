@@ -1,148 +1,147 @@
 # Thumbnail rules
 
-Canonical source for thumbnail concepts. Read this before running the `thumbnail`
-skill.
+Canonical operational rules for TossExplains thumbnail concepts. Read this file and
+`.agents/skills/thumbnail/references/style-spec.json` before writing any thumbnail prompt.
 
-The thumbnail decides whether the video is watched at all, so it is generated to a
-fixed, proven pattern, not invented per video. **Every rule here was either validated
-or forced by a real generation round.** The competitor teardown that produced them is
-`research/thumbnail-swipe/ANALYSIS.md`, with the 40 sampled thumbnails beside it.
-Do not "improve" these by reverting to flat empty frames or clever abstract wording.
+The style specification is self-contained. Never require competitor thumbnails, research
+images, or external style references. Attach only the project character sheets used by a
+prompt.
 
-## Evidence base
+## A. Thumbnail-only rendering
 
-- `@SticklyExplains`, 41.5K subs, same niche and same stick-figure format. Their 2M
-  view outlier says only "WHY NOT ATTACK?" over a sleeping figure and a wolf. Their
-  top 20 average 2.4 words of thumbnail text and only 1 of 20 uses a number.
-- `@Simplewaysoflife`, 26.2K subs. Opposite formula: typography carries everything,
-  60 percent of their top 20 lead with a big number, solid white background.
-- Our own A/B round: 5 concepts generated, 1 accepted
-  (`projects/1-*/outputs/thumbnail-3-accepted.jpg`, the split-frame `LOST 110 PEOPLE?`).
-  The 4 rejects produced the failure rules in section E.
+Video scene prompts remain locked to the flat doodle style in `visual-style.md`. Thumbnails
+use a separate rendering system because they must compete at feed size:
 
-## A. Layout - default to the split comparison
+- Keep the attached TossExplains characters recognizable and faithful to their sheets.
+- Draw characters as expressive 2D doodles with bold black outlines and slightly imperfect
+  hand-drawn linework.
+- Render the environment as a polished painterly cartoon with cinematic depth.
+- Use controlled gradients, soft shadows, atmospheric haze, painted texture, and warm light
+  spill when they improve depth and focus.
+- Never use photorealistic people, 3D rendering, anime, or generic stock illustration.
 
-- **The strongest layout is a frame split in half by a thick vertical black line**,
-  with a different scene on each side and a big number over each. It won the A/B round
-  outright, because it puts two facts side by side and makes the viewer do arithmetic.
-  Use it for any script containing two contrasting quantities, eras, or states. Build
-  at least two of the five concepts this way.
-- **The other layout is one big near figure plus a real scene behind him.** `@YOU`
-  from the chest or waist up in one third of the frame, the thing he is reacting to
-  deeper in the other two thirds.
-- **Never a lone figure on an empty background.** Two parties must be visible and
-  something must be happening between them.
+Do not add the scene STYLE ANCHOR or STYLE LOCK to a thumbnail prompt. They prohibit the
+lighting and depth this thumbnail-only style requires.
 
-## B. The number
+## B. Headline
 
-- **Two different numbers that invite subtraction beat one number.** `150` on one side
-  and `40` on the other, with the text asking about the difference, is the pattern
-  that worked.
-- **A drawn number is the largest graphic object in its half of the frame**, roughly
-  half the frame height, hand-lettered, thick black outline. Never a small caption.
-- **The text must never repeat a number that is already drawn.** Text `40 FRIENDS?`
-  next to a giant drawn `40` printed the number twice and read as a duplication bug.
-- A number is optional, not mandatory. The best-performing thumbnail in our niche has
-  none. Use one when the script supplies a genuinely surprising quantity, skip it
-  otherwise.
+- Use 1 to 4 words. Prefer 2 to 3.
+- Use one straight line across the top whenever possible.
+- Use uppercase heavy rounded sans-serif lettering.
+- Use saturated golden yellow `#FFD900`, a very thick smooth black `#050505` outline, and a
+  soft black shadow.
+- Let the headline occupy roughly 85 to 94 percent of the canvas width.
+- Reserve the top 22 percent as the darkest and least cluttered part of the image.
+- Render no other text.
 
-## C. The question text
+The headline is a second hook, not a shortened title. It may be a question or an extremely
+short statement. Prefer one of these functions:
 
-- **Always a QUESTION.** 2 to 4 words, ALL CAPS, ending in a question mark. Never a
-  statement, never a sentence, never more than 4 words.
-- **Every noun in the question must be a physical object drawn in the frame.**
-  `FIRST SALT?` works because salt is on the ground. `LOST 110 PEOPLE?` works because
-  both counts are drawn. `WHY THE HOLLOW?` and `A 200,000-YEAR BUG?` failed because
-  nothing in the frame answers "about what?". If the noun cannot be drawn, the
-  question is dead. Rewrite it.
-- **The question must never restate the title.** The title says what the video is
-  about. The thumbnail asks the one thing the title leaves open.
-- **Lettering spec, identical every time:** bold hand-lettered marker ALL CAPS in
-  golden yellow `#F5C518` with a thick black outline, running **perfectly straight**
-  across the very top of the frame, full-bleed from the left frame edge to the right
-  frame edge, letters nearly touching both edges. **Not arced.** The old arc cost 20
-  to 30 percent of letter height for nothing. Never change the color, never move it to
-  the bottom, never add a second line.
-- **The band of background behind the text is the darkest area of the image.** A
-  near-black strip under yellow lettering is what makes it survive at 120 px.
+- danger or consequence
+- scarcity or time pressure
+- visible contradiction
+- unresolved outcome
+- one physical mistake
+- surprising behavior
 
-## D. The scene - flat, but never empty
+Connect the words to something visible in the frame. Avoid abstract jargon and complete
+explanations.
 
-- **A flat solid single background color produces a dead frame.** Every generation
-  built that way came back with large void areas and nothing to look at. Give the
-  frame a minimal but real place: a ground line, a dark horizon or hills, and one
-  environment prop the script actually contains (a fire, a cave mouth, a bed, a
-  doorway).
-- **One warm light source against a dark cool ground is what makes the frame pop.** A
-  small bright orange fire on dark brown earth under a very dark blue sky did it. Keep
-  the palette dark and cool, then put one warm accent in it.
-- **Props must never use the lettering yellow `#F5C518`.** A yellow ball on the same
-  frame as yellow text merged into it and read as a sun.
-- Still zero gradients, zero shadows, zero textures, zero photorealism, zero 3D. Flat
-  fills only.
+## C. One cinematic story
 
-## E. The figures - what the image model will and will not do
+Default to one full-frame story, not a split comparison:
 
-Each of these is a recorded failure, not a preference.
+- Show the instant a character discovers the problem, one second before the consequence.
+- Use one protagonist, one visible physical problem, and 1 to 3 supporting subjects.
+- Make the main character roughly 45 to 60 percent of the frame height.
+- Put the story in the middle and lower 78 percent.
+- Keep no more than two focal points.
+- Leave the bottom-right corner visually quiet for the duration badge.
 
-- **Co-stars need visible faces with visible expressions.** Featureless black
-  silhouettes render as a black smear, and "blank white heads with no features"
-  rendered as a field of giant white eggs that ate the whole frame. Never ask for
-  faceless, blank, or silhouette crowds. Give the background band real small faces
-  turned toward each other.
-- **Write the sad expression as an explicit eyebrow geometry, and say it is not
-  anger.** "Brows pinched upward at their inner edges" is read as angry V-brows about
-  half the time. Write: *eyebrows angled so the inner ends sit clearly higher than the
-  outer ends, worried and dismayed, not angry, not frowning*, plus a downturned mouth
-  and one blue sweat drop.
-- **Never modify the mascot's body.** A hole through the chest rendered as a dark
-  stain on his hoodie. Emotions go on the face and in the posture, never into anatomy.
-- **Never ask for an exact count above five.** A request for five figures produced
-  four, which broke the text that depended on it. Use "a dense block" or "a tight row"
-  and never let the wording of the question depend on a count the model has to get
-  right.
-- `@YOU` is the hook figure in almost every concept, head tinted pale blue for lonely
-  or red for embarrassed. Thumbnail expressions are pushed harder than scene
-  expressions. His design is still locked: exaggerate the feeling, never restyle the
-  head, eyes, or proportions.
-- **Exactly one figure looks straight out of the frame at the viewer.** Eye contact
-  with the lens is one of the strongest attention hooks available, and it must be a
-  figure that has eyes.
+Use a split comparison only when the script contains a genuinely useful contrast in
+numbers, eras, temperatures, or states. Never force two split concepts into every set.
 
-## F. Framing and packaging
+Never use a lone neutral portrait, a flat empty background, or several unrelated actions.
 
-- **The bottom-right corner stays empty.** YouTube stamps the video duration over it.
-- **The logo badge is added in the editor, not by the image model**, small,
-  bottom-left. Asking the model to draw the logo garbles it.
-- **Generate five distinct concepts**, each built on a different moment from the
-  script (the opening feeling, the named experiment, the ancestral scene, the
-  then-vs-now split, the counterintuitive number), so the channel can A/B test instead
-  of betting on one frame.
-- Every thumbnail prompt uses the same STYLE ANCHOR and STYLE LOCK as the image
-  prompts, and refers to cast members by `@TOKEN` only.
+## D. Emotion and character identity
 
-## The two layout templates
+- Attach only the sheets for the `@TOKENS` used in the prompt.
+- Preserve every attached character's head, hair, face geometry, proportions, clothing, and
+  recognizable design. Change only expression, pose, placement, and lighting.
+- Make one face emotionally dominant and readable at phone size.
+- Describe the eyes, eyebrows, mouth, hands, and body direction explicitly.
+- For sadness or worry, write: `eyebrows angled so the inner ends sit clearly higher than
+  the outer ends, worried and dismayed, not angry, not frowning`.
+- Give co-stars visible faces and distinct reactions.
+- Do not modify the mascot's body or identity.
+- Do not request an exact crowd count above five.
+- Exactly one figure may look directly at the viewer.
 
-Fill the bracketed slots from the script. Keep everything outside the brackets
-verbatim.
+## E. Environment, color, and light
 
-### Split comparison
+Build a real place around the story:
 
-```
-[thumb-a] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a thick vertical black divider line splitting the frame exactly in half, left half [SCENE ONE: flat dark ground + flat very dark sky + the script's environment prop + a tight group with visible small faces turned toward each other] and the numeral [N] hand-lettered enormous in white with a thick black outline standing over them at roughly half the frame height, right half [SCENE TWO: flat dark background + @YOU drawn large from the chest up, head tinted pale blue, eyebrows angled so the inner ends sit clearly higher than the outer ends, worried and dismayed, not angry, not frowning, mouth downturned] and the numeral [M] hand-lettered enormous in golden yellow #F5C518 with a thick black outline standing over him at roughly half the frame height, @YOU looking straight out of the frame directly at the viewer, bold hand-lettered ALL CAPS text "[2-4 WORD QUESTION?]" in golden yellow #F5C518 with a thick black outline running perfectly straight across the very top of the frame from the left frame edge to the right frame edge at very large size with the letters nearly touching both edges, text not arced and not curved, the band of background behind that text is the darkest area of the whole image, no other text anywhere, bottom-right corner of the frame left completely empty, no gradients, no shadows, no textures, no photorealism, no 3D, no timestamp shown in the image, @[name] is mention syntax for reference only and must never be rendered as visible text, 16:9 aspect ratio, educational YouTube explainer doodle style.
+- Use a foreground, midground, and background.
+- Keep the main face, physical problem, and important animal or object sharpest.
+- Use deep navy, storm blue, charcoal, forest green, ice blue, and earth brown as the
+  dominant environment families.
+- Use one warm orange or golden visible light source.
+- Illuminate the main face clearly.
+- Keep distant colors quieter and nonessential corners darker.
+- Protect the headline zone from branches, faces, tools, and bright highlights.
+
+The preferred formula is a cool dark environment plus a concentrated warm focal light. A
+bright setting is allowed when the script requires it, but the headline still needs a dark
+quiet band.
+
+## F. Packaging
+
+- Render at `1280x720`, 16:9.
+- Add the logo later in an editor, small at bottom-left. Never ask the model to draw it.
+- Keep the bottom-right corner quiet.
+- If the model garbles the headline, generate the art without text and add the headline in
+  an editor.
+- Test the result at 120 pixels wide.
+
+## Concept diversity
+
+When writing five prompts, use five different script moments. Prefer:
+
+1. the opening physical situation
+2. the named experiment or mechanism made concrete
+3. the ancestral or anthropological scene
+4. a modern-versus-ancestral contrast
+5. the strongest number, consequence, or counterintuitive fact
+
+Do not make five camera-angle variants of one idea.
+
+## Single-scene prompt template
+
+Fill every bracketed slot. The generated prompt is one unbroken line.
+
+```text
+Create a beautiful, high-impact YouTube thumbnail illustration in 16:9 format, 1280x720. Use the attached character sheets as strict identity references for [TOKENS]. Preserve their exact head shapes, hair, faces, proportions, clothing, colors, and recognizable designs while changing only their expressions, poses, lighting, and placement. Render the exact headline "[HEADLINE]" in one straight line across the top, using huge uppercase rounded golden-yellow letters with a very thick smooth black outline and a soft black shadow. Make the letters occupy approximately [85 TO 94] percent of the canvas width. Reserve the top 22 percent as the darkest and least cluttered part of the image. Show [MAIN TOKEN AND ACTION] large in the [POSITION], experiencing extreme [EMOTION] because of [VISIBLE PHYSICAL PROBLEM]. Capture the exact moment the problem is discovered, one second before the consequence, with the outcome unresolved. [EXPLICIT EYES, EYEBROWS, MOUTH, HANDS, AND BODY POSE]. Include [SUPPORTING TOKENS, ANIMAL, OBJECT, OR THREAT] to create conflict, danger, scale, or emotional contrast. Set the scene in [SETTING FROM SCRIPT], using [FOREGROUND], [MIDGROUND], and [BACKGROUND] to create cinematic depth. Use a cool dark palette of deep navy, storm blue, charcoal, forest green, ice blue, and earth brown, with one concentrated warm orange or golden visible light source illuminating the main face and problem. Keep the background atmospheric but subordinate to the faces. The visual hierarchy must be headline first, main emotional face second, visible problem third, supporting subject fourth, and environment last. Use expressive doodle-like characters with bold black outlines and slightly imperfect hand-drawn linework inside a richly painted cinematic 2D cartoon environment with atmospheric depth, controlled gradients, soft shadows, painted texture, cohesive dramatic lighting, beautiful color grading, and strong mobile readability. Exactly one figure looks directly at the viewer. Leave the bottom-right corner visually quiet for the YouTube duration badge. Spell "[HEADLINE]" exactly and render no other text. No logos, watermarks, borders, unnecessary arrows, extra limbs, duplicated faces, weak expressions, tiny subjects, unrelated actions, photorealistic people, 3D rendering, anime styling, generic stock illustration, flat lighting, or empty background.
 ```
 
-### Near figure plus scene
+## Split comparison template
 
+Use only for a real comparison. The generated prompt is one unbroken line.
+
+```text
+Create a beautiful, high-impact YouTube thumbnail illustration in 16:9 format, 1280x720. Use the attached character sheets as strict identity references for [TOKENS]. Preserve their exact designs while changing only expressions, poses, lighting, and placement. Divide the story into two clearly readable halves with a strong central separation created by composition and lighting, not a decorative border. Render the exact headline "[HEADLINE]" in one straight line across the top, using huge uppercase rounded golden-yellow letters with a very thick smooth black outline and a soft black shadow. Reserve the top 22 percent as the darkest and least cluttered part of the image. On the left, show [FIRST STATE WITH A VISIBLE NUMBER, ERA, OR CONDITION]. On the right, show [SECOND STATE WITH A VISIBLE NUMBER, ERA, OR CONDITION]. Make the contrast understandable without the video title. Give each visible character a readable face and reaction, with one emotionally dominant character looking directly at the viewer. Use a cool dark palette with one concentrated warm orange or golden visible light source and a richly painted cinematic 2D cartoon environment with atmospheric depth, controlled gradients, soft shadows, painted texture, bold black doodle outlines, and strong mobile readability. Leave the bottom-right corner visually quiet for the YouTube duration badge. Spell "[HEADLINE]" exactly and render no other text beyond the essential comparison numerals or units. No logos, watermarks, unnecessary arrows, extra limbs, duplicated faces, weak expressions, tiny subjects, unrelated actions, photorealistic people, 3D rendering, anime styling, generic stock illustration, flat lighting, or empty background.
 ```
-[thumb-b] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, @YOU drawn large in the [left|lower left] of the frame from the waist up [expression written as explicit eyebrow geometry + "not angry"], his eyes aimed at [THE ONE OBJECT THE QUESTION NAMES] drawn in the [opposite third] of the frame, [a tight row or dense block of small figures with visible faces and readable expressions] behind it, [flat dark ground line + dark horizon + ONE environment prop from the script + one small warm orange light source], one figure looking straight out of the frame directly at the viewer, bold hand-lettered ALL CAPS text "[2-4 WORD QUESTION?]" in golden yellow #F5C518 with a thick black outline running perfectly straight across the very top of the frame from the left frame edge to the right frame edge at very large size with the letters nearly touching both edges, text not arced and not curved, the band of background behind that text is the darkest area of the whole image, no other text anywhere, bottom-right corner of the frame left completely empty, no gradients, no shadows, no textures, no photorealism, no 3D, no timestamp shown in the image, @[name] is mention syntax for reference only and must never be rendered as visible text, 16:9 aspect ratio, educational YouTube explainer doodle style.
-```
 
-## Post-generation review, tell the user this
+## Rejection gate
 
-Shrink the favourite to 120 px wide and look at it. If the question is not readable
-and the emotion is not obvious in half a second, regenerate. Do not rescue a weak
-thumbnail with more text. If the model garbles the lettering, generate the frame with
-the text clause deleted and add the words in the editor. If a frame comes back with
-large empty areas, the background was too flat: add a ground line, a horizon, and one
-warm light source, then regenerate.
+Reject and rewrite a concept when any answer is no:
+
+1. Is the headline four words or fewer?
+2. Does the headline add information instead of repeating the title?
+3. Is the physical problem visible?
+4. Is one emotion obvious in half a second?
+5. Are there no more than two focal points?
+6. Is the outcome unresolved?
+7. Is the headline zone dark and uncluttered?
+8. Are only project cast sheets required?
+9. Is the bottom-right corner quiet?
+10. Will the design still read at 120 pixels wide?

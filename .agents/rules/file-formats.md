@@ -12,12 +12,11 @@ example. Every new project matches it.
 ```
 projects/<n>-<title-slug>/
   script_<short_slug>.md      root level. Written by `script`.
-  metadata.md                 root level. Written by `metadata`.
   audios/                     the recorded narration voiceover. You put files here.
     part-1.mp3, part-2.mp3    multi-part recording, in read order.
     full.mp3                  the parts combined. Written by `transcript`.
   characters/                 NAME.jpeg reference sheets. You generate these.
-  outputs/                    thumbnail-N.jpg and the accepted thumbnail. You generate these.
+  outputs/                    metadata.md, thumbnail-N.jpg, and the accepted thumbnail. You generate these.
   prompts/
     character-prompts.md      Written by `cast`.
     image-prompts.md          Written by `scenes`.
@@ -33,8 +32,8 @@ projects/<n>-<title-slug>/
 
 Rules:
 
-- **Root level holds text you read or publish.** Subfolders hold prompts and
-  generated media.
+- **Root level holds the script.** Subfolders hold prompts, generated media, and published
+  packaging.
 - **`outputs/` is plural.** Not `output/`. So is `audios/`.
 - **`audios/` holds the recorded voiceover** read from `script_<short_slug>.md`, and is the
   default place `transcript` looks for input. Multi-part recordings live here in read order,
@@ -147,12 +146,22 @@ count is unchanged. Project 2 already has no header.
 
 ## `prompts/thumbnail-prompts.md`
 
-Header block, then exactly five unbroken lines prefixed `[thumb-a]` through
-`[thumb-e]`, one blank line between, nothing after the last prompt.
+**PROMPTS ONLY. No header, title, cast line, labels, or commentary.** The file is imported
+into an image tool that splits on `\n\n`, so it contains exactly five prompt records.
 
-The bracket name becomes that image's file name, exactly as timestamps do.
+- Every prompt is exactly one unbroken line.
+- Prompts are separated by exactly one blank line. There is no leading blank line and no
+  trailing blank line after the fifth prompt.
+- The first through fifth lines map in order to `thumbnail-1.jpg` through
+  `thumbnail-5.jpg`.
+- Reference-sheet attachment directions, output dimensions, file names, and logo badge
+  instructions are reported in chat by `thumbnail`, never written into this file.
 
-## `metadata.md`
+Project 1 predates this import format and remains unchanged as the regression fixture. Its
+legacy header, `[thumb-*]` labels, and blank separators are informational when validating.
+Apply the prompt-only format from project 2 onward.
+
+## `outputs/metadata.md`
 
 Three sections, each holding a fenced block so the text can be copied without
 markdown bleeding in.
@@ -187,4 +196,4 @@ markdown bleeding in.
 - `scenes/[M-SS].jpg`, derived from the matching prompt timestamp by replacing its
   colon with a hyphen. For example, `[3:20]` becomes `[3-20].jpg`.
 - `characters/NAME.jpeg` where NAME matches the cast token without the `@`.
-- `outputs/thumbnail-N.jpg`, and the chosen one suffixed `-accepted`.
+- `outputs/metadata.md`, `thumbnail-N.jpg`, and the chosen one suffixed `-accepted`.

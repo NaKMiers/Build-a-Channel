@@ -1,6 +1,6 @@
 ---
 name: metadata
-description: Generate the publish-ready YouTube title, description with hashtags, and 25 to 40 SEO tags for a TossExplains video, saved to metadata.md at the project root. Use when the user says "metadata", "title", "description", "tags", "SEO", or "package the video".
+description: Generate the publish-ready YouTube title, description with hashtags, and 25 to 40 SEO tags for a TossExplains video, saved to outputs/metadata.md. Use when the user says "metadata", "title", "description", "tags", "SEO", or "package the video".
 allowed-tools:
   - Bash
   - Read
@@ -54,14 +54,14 @@ video's topic. **No hashtags here.** Plain comma-separated keywords only.
 
 ## Step 1 - Write the file
 
-Path: `projects/<n>-<slug>/metadata.md`, shaped exactly as `file-formats.md` specifies:
+Path: `projects/<n>-<slug>/outputs/metadata.md`, shaped exactly as `file-formats.md` specifies:
 three sections, each holding a fenced block so the text copies out without markdown
 bleeding in.
 
 ## Step 2 - Verify
 
 ```bash
-F="projects/<n>-<slug>/metadata.md"
+F="projects/<n>-<slug>/outputs/metadata.md"
 grep -n "$(printf '\u2014')" "$F" && echo "FAIL: em dash" || echo "clean"
 ```
 

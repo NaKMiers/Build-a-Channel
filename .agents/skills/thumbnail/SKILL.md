@@ -1,28 +1,25 @@
 ---
 name: thumbnail
-description: Write five A/B-testable thumbnail concepts for a TossExplains video into prompts/thumbnail-prompts.md, following the evidence-backed rules from the competitor teardown. Use when the user says "thumbnail", "thumbnails", "thumbnail prompts", or "thumbnail concepts".
-allowed-tools:
-  - Bash
-  - Read
-  - Write
-  - Glob
+description: Create self-contained cinematic TossExplains thumbnail prompts from a finished script and cast. Supports one or more copyable chat prompts and the default five-prompt prompts/thumbnail-prompts.md workflow. Use when the user asks for a thumbnail, thumbnail prompt, thumbnail concept, alternate thumbnail, or YouTube packaging image.
 ---
 
 # thumbnail
 
-Stage 5b of the TossExplains pipeline. The thumbnail decides whether the video is watched at
-all, so it is generated to a fixed, proven pattern, not invented per video.
+Create high-click thumbnail prompts from the video's strongest drawable moments. Preserve
+the TossExplains cast while using the thumbnail-only cinematic style.
 
 ## Read first
 
 - `.agents/rules/house-rules.md`
-- `.agents/rules/thumbnail-rules.md` - **the whole file, every run.** Rules A to F and the
-  two layout templates. Every rule there was validated or forced by a real generation
-  round.
-- `.agents/rules/visual-style.md` - the two verbatim strings and the palette
-- `.agents/rules/file-formats.md` - the `prompts/thumbnail-prompts.md` section
+- `.agents/rules/thumbnail-rules.md`
+- `.agents/skills/thumbnail/references/style-spec.json`
+- `.agents/rules/visual-style.md` for cast identity and palette context, not its scene prompt
+  STYLE ANCHOR or STYLE LOCK
+- `.agents/rules/file-formats.md`
 - `.agents/skills/thumbnail/references/memory.md`
-- `research/thumbnail-swipe/ANALYSIS.md` when you need the reasoning behind a rule
+
+Never require competitor thumbnails, research thumbnails, or external style images. The
+style specification is self-contained.
 
 ## Preconditions
 
@@ -32,128 +29,163 @@ ls "$P"/script_*.md
 grep -oE '@[A-Z]+' "$P"/prompts/character-prompts.md | sort -u
 ```
 
-Both the script and the cast file are required. The transcript is not. If the cast file is
-missing, stop and say to run `/cast`: thumbnails refer to cast members by `@TOKEN` and the
-sheets must exist for generation.
+The script and cast file are required. The transcript is not. If the cast file is missing,
+stop and say to run `/cast`.
 
-## Step 1 - Mine the script for drawable hooks
+## Step 1 - Determine the requested output
 
-Read the script and extract, in writing to yourself:
+Follow the user's explicit count and destination:
 
-- Every **physical object or creature** the script actually contains. This is the critical
-  list. Rule C says every noun in a thumbnail question must be a thing drawn in the frame,
-  and the two concepts that failed our A/B round failed exactly here.
-- Every **number** the script states, and which two of them invite subtraction.
-- The **five distinct moments** the concepts will be built on: the opening feeling, the
-  named experiment, the ancestral scene, the then-vs-now split, the counterintuitive
-  number.
-- The **read title**, so no thumbnail question restates it.
+- `one prompt`, `another one`, or a number: create exactly that many.
+- `in chat`, `block to copy`, or equivalent: return prompts in fenced text blocks and do
+  not write a file.
+- `save`, `update the prompts`, or no destination: write the default five prompts to
+  `prompts/thumbnail-prompts.md`.
 
-If the script yields no drawable objects at all, say so. That is a script problem, not a
-thumbnail problem, and no amount of prompt wording fixes it.
+The saved artifact always contains exactly five prompts. If the user requests fewer than five
+and also asks to save them, return them in chat unless they explicitly ask to replace the
+five-prompt artifact with an incomplete set.
 
-## Step 2 - Draft the five questions first, before any prompt
+## Step 2 - Mine the script
 
-For each of the five, write the 2 to 4 word ALL CAPS question and name the object in the
-frame that the question points at. Then run each one through this gate:
+Read the full script and record:
 
-- Is every noun in it drawn in the frame? If not, rewrite.
-- Does it restate the title? If so, rewrite.
-- Is it 4 words or fewer, ALL CAPS, ending in `?`
-- Does the frame have two parties with something happening between them?
-- If it uses a number, is that number NOT also printed in the question text?
+- physical objects, animals, places, and actions
+- numbers and useful comparisons
+- the opening physical situation
+- the named experiment or mechanism made visible
+- the ancestral scene
+- the modern-versus-ancestral contrast
+- the strongest consequence or counterintuitive fact
+- the video title, so the headline does not repeat it
 
-A question that fails any gate is dead. Rewrite it before writing the prompt.
+If the script has no drawable physical problem, stop and explain that the script needs a
+stronger visual hook.
 
-## Step 3 - Build the prompts
+## Step 3 - Draft concepts before prompts
 
-- **At least two of the five use the split comparison layout.** It won the A/B round
-  outright.
-- Fill the bracketed slots in the layout templates from `thumbnail-rules.md`. Keep
-  everything outside the brackets verbatim, including the STYLE ANCHOR and STYLE LOCK.
-- Each concept is built on a different moment from the script, so the five are genuinely
-  A/B testable rather than five variants of one idea.
+For every requested prompt, define:
 
-Every prompt must satisfy all of these, and they are all in `thumbnail-rules.md`:
+1. headline
+2. main character
+3. dominant emotion
+4. visible physical problem
+5. supporting subject
+6. setting
+7. warm light source
+8. unresolved moment
 
-- Text runs perfectly straight, full-bleed edge to edge, at the very top. Not arced.
-- The band behind the text is the darkest area of the image.
-- A drawn number is roughly half the frame height, the largest object in its half.
-- The scene has a ground line, a horizon, and one environment prop from the script, plus
-  one warm light source against a dark cool palette.
-- Co-stars have visible faces with visible expressions. **Never featureless, blank, or
-  silhouette crowds.**
-- The sad expression is written as explicit eyebrow geometry plus "not angry, not
-  frowning".
-- No body modification on the mascot.
-- No exact figure count above five.
-- No prop in the lettering yellow `#F5C518`.
-- Exactly one figure looks straight out at the viewer, and it is a figure that has eyes.
-- The bottom-right corner is left completely empty.
+Run the rejection gate in `thumbnail-rules.md`. Rewrite any concept that fails.
 
-## Step 4 - Write the file
+Headline rules:
 
-Path: `projects/<n>-<slug>/prompts/thumbnail-prompts.md`
+- 1 to 4 uppercase words, with 2 to 3 preferred
+- one straight line at the top
+- a second hook, never a restatement of the title
+- connected to something visible
+- question or short statement
+- no abstract jargon or complete explanation
 
-Header block, then five unbroken lines `[thumb-a]` through `[thumb-e]`, one blank line
-between, nothing after the last. The header must include the note that the logo badge is
-added in the editor at bottom-left, not drawn by the image model.
+When creating multiple concepts, use different script moments. Default to single cinematic
+stories. Use a split comparison only for a real numeric, era, temperature, or state contrast.
 
-## Step 5 - Verify mechanically
+## Step 4 - Build each prompt
+
+Use the single-scene or split template in `thumbnail-rules.md`. Fill every slot with script
+and cast details.
+
+Every prompt must:
+
+- open with `Create a beautiful, high-impact YouTube thumbnail illustration in 16:9 format,
+  1280x720.`
+- reference only cast tokens whose project sheets will be attached
+- preserve attached character identity exactly
+- render one exact headline in large yellow type at the top
+- reserve the top 22 percent as the darkest and least cluttered zone
+- show one dominant emotional face and one visible physical problem
+- capture the instant before the consequence
+- use a cool environment and one warm visible light source
+- use expressive doodle characters inside a richly painted cinematic 2D environment
+- allow controlled gradients, soft shadows, painted texture, and atmospheric depth
+- leave the bottom-right corner visually quiet
+- render no extra text, logo, or watermark
+- reject photorealism, 3D, anime, generic stock art, flat lighting, and empty backgrounds
+
+Do not add the scene STYLE ANCHOR, STYLE LOCK, or GENERATION LINE. They prohibit the
+thumbnail-only depth and lighting.
+
+## Step 5A - Chat-only output
+
+For each prompt:
+
+1. Outside the code block, list the exact `characters/NAME.jpeg` files to attach.
+2. State that no competitor or research images are needed.
+3. Put only the complete generation prompt inside one fenced `text` block.
+
+Do not write or update `thumbnail-prompts.md`.
+
+When the user says `another one`, select a different script moment, headline, physical
+problem, and composition from the previous concept.
+
+## Step 5B - Saved five-prompt artifact
+
+Write:
+
+`projects/<n>-<slug>/prompts/thumbnail-prompts.md`
+
+The file contains exactly five complete unbroken prompt lines separated by exactly one blank
+line. No header, title, labels, attachment directions, file names, dimensions, or commentary.
+Human-only attachment instructions remain in chat.
+
+## Step 6 - Verify a saved artifact
 
 ```bash
 F="$P/prompts/thumbnail-prompts.md"
-grep -c '^\[thumb-' "$F"                                    # must be 5
-grep -c 'running perfectly straight across the very top' "$F"
-grep -c 'not arced and not curved' "$F"
-grep -c 'darkest area of the whole image' "$F"
-grep -c 'straight out of the frame directly at the viewer' "$F"
-grep -c 'bottom-right corner of the frame left completely empty' "$F"
-grep -c 'educational YouTube explainer doodle style\.$' "$F"
+wc -l < "$F"                                                        # 9
+grep -cve '^$' "$F"                                                # 5
+grep -c '^$' "$F"                                                  # 4
+grep -c '^Create a beautiful, high-impact YouTube thumbnail' "$F"  # 5
+grep -c 'Reserve the top 22 percent' "$F"                          # 5
+grep -c 'very thick smooth black outline' "$F"                     # 5
+grep -c 'richly painted cinematic 2D' "$F"                         # 5
+grep -c 'bottom-right corner visually quiet' "$F"                  # 5
+grep -c 'render no other text' "$F"                                # 5
 
-# banned patterns, all must be 0
-grep -ciE 'silhouette|featureless|blank (white )?(oval|head)' "$F"
-
-grep -n "$(printf '\u2014')" "$F" && echo "FAIL: em dash" || echo "clean"
+# all must be 0
+grep -ciE 'competitor thumbnail|research thumbnail|style reference image' "$F"
+grep -ciE 'no gradients, no shadows, no textures|educational YouTube explainer doodle style' "$F"
+grep -cE '^#|^\[thumb-|^Cast:|^Attach only|^Add the channel logo' "$F"
+grep -n "$(printf '\u2014')" "$F"
 ```
 
-Every count except the banned-pattern line must be 5. The banned-pattern line must be 0.
+Also verify:
 
-## Step 6 - Report and hand off
+- every `@TOKEN` exists in `character-prompts.md`
+- every headline is uppercase and no more than four words
+- each prompt names a different script moment
+- no more than one concept uses a split comparison unless the script strongly justifies it
+- no leading, trailing, or consecutive blank lines
 
-In chat, list **only the five questions** as a short numbered list so the user can judge
-the hooks at a glance, say which one you recommend and why, and name which layout each
-uses. **Do not paste the five full prompts into chat**, they live in the file. Then:
+## Step 7 - Handoff
 
-> Thumbnail prompts saved to `<path>`.
->
-> Generate all five, attaching the sheets for the `@` tokens in each, and save them to
-> `outputs/` as `thumbnail-1.jpg` through `thumbnail-5.jpg`. Export at 1280x720, under 2 MB.
->
-> Add the channel logo in your editor, small, bottom-left of the winner. Do not ask the
-> image model to draw it.
->
-> Then shrink your favourite to 120 px wide and look at it. If the question is not readable
-> and the emotion is not obvious in half a second, regenerate. Do not rescue a weak
-> thumbnail with more text. If the model garbles the lettering, generate the frame with the
-> text clause deleted and add the words in your editor. If a frame comes back with large
-> empty areas, the background was too flat: add a ground line, a horizon, and one warm
-> light source, then regenerate.
->
-> Rename the accepted one with an `-accepted` suffix, then run **`/check`**.
+For a saved set, list the headline and attachment files for each concept. Recommend the
+strongest one and explain the choice in one sentence.
 
-## Guardrails
+Tell the user:
 
-- Never write a question whose noun is not drawn in the frame. This is the single rule that
-  killed our v1 and v2 rounds.
-- Never arc the text. Never move it off the top. Never add a second line.
-- Never use a flat single-color empty background.
-- Never repeat a drawn number in the question text.
-- Never ask the image model to draw the logo.
+- attach only the named project character sheets
+- no competitor or research images are needed
+- export at 1280x720 and under 2 MB
+- add the channel logo in an editor at bottom-left
+- test at 120 pixels wide
+- if the model garbles the headline, regenerate the art without text and add the headline
+  in an editor
+
+Save generated candidates as `outputs/thumbnail-1.jpg` through `thumbnail-5.jpg`. Rename the
+winner with an `-accepted` suffix, then run `/check`.
 
 ## Self-improvement
 
-Read `.agents/skills/thumbnail/references/memory.md` at the start of every run. **Append
-after every generation round**: which concept the user accepted, which failed, and the
-specific visual failure mode. This memory is the mechanism that produced rules A to F, and
-it is how the next round gets better. Record the failure even when it seems obvious.
+After the user reports a generated result, append only the durable lesson to
+`references/memory.md`: accepted concept, failed concept, and observable failure mode. Do
+not add external image dependencies or source-specific style references.

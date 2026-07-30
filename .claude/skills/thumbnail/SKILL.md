@@ -1,6 +1,6 @@
 ---
 name: thumbnail
-description: Write five A/B-testable thumbnail concepts for a TossExplains video into prompts/thumbnail-prompts.md, following the evidence-backed rules from the competitor teardown. Use when the user says "thumbnail", "thumbnails", "thumbnail prompts", or "thumbnail concepts".
+description: Create self-contained cinematic TossExplains thumbnail prompts from a finished script and cast. Supports one or more copyable chat prompts and the default five-prompt prompts/thumbnail-prompts.md workflow. Use when the user asks for a thumbnail, thumbnail prompt, thumbnail concept, alternate thumbnail, or YouTube packaging image.
 ---
 
 # Thumbnail (Claude wrapper)

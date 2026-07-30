@@ -21,6 +21,8 @@ something.
 
 - `.agents/rules/file-formats.md` - the spec everything is validated against
 - `.agents/rules/visual-style.md` - the four verbatim strings
+- `.agents/rules/thumbnail-rules.md` - the thumbnail-only rendering and packaging rules
+- `.agents/skills/thumbnail/references/style-spec.json` - the self-contained thumbnail style
 - `.agents/skills/check/references/memory.md`
 
 ## Step 0 - Pick the project
@@ -36,7 +38,7 @@ highest-numbered one and say which you picked.
 
 ```bash
 P="projects/<n>-<slug>"
-for f in script_*.md metadata.md prompts/character-prompts.md prompts/image-prompts.md \
+for f in script_*.md outputs/metadata.md prompts/character-prompts.md prompts/image-prompts.md \
          prompts/thumbnail-prompts.md transcribes/transcript.md; do
   ls "$P"/$f >/dev/null 2>&1 && echo "present  $f" || echo "MISSING  $f"
 done
@@ -73,24 +75,18 @@ find projects -name '*.txt' | head
 source .agents/bin/style-strings.sh
 echo "anchor ${#STYLE_ANCHOR}  lock ${#STYLE_LOCK}  gen ${#GENERATION_LINE}  sheet ${#SHEET_OPENING_LINE}"
 
-# the thumbnail templates must still carry the current strings
-grep -qF "$STYLE_ANCHOR" .agents/rules/thumbnail-rules.md || echo "DRIFT anchor in thumbnail-rules.md"
-grep -qF "$STYLE_LOCK"   .agents/rules/thumbnail-rules.md || echo "DRIFT lock in thumbnail-rules.md"
-
 # no other copy anywhere under .agents/ or in the root docs
-grep -rlF "$STYLE_ANCHOR" .agents/ AGENTS.md 2>/dev/null | grep -vE 'visual-style|thumbnail-rules'
+grep -rlF "$STYLE_ANCHOR" .agents/ AGENTS.md 2>/dev/null | grep -v 'visual-style'
 ```
 
 Any empty string means the headings in `visual-style.md` were renamed and the extractor no
 longer finds them. That is a FAIL and it silently disables the anchor and lock checks
 everywhere, so fix it first.
 
-**The guarantee is identity, not uniqueness.** Exactly two places under `.agents/` hold these
-strings: the definition in `visual-style.md`, and the two copy-pasteable layout templates in
-`thumbnail-rules.md`. Every skill that needs to grep for them sources
-`.agents/bin/style-strings.sh` instead of hard-coding a pattern, because a hard-coded pattern
-can drift from the definition it is supposed to be checking. A `DRIFT` line, or any file
-printed by the last command, is a FAIL.
+Exactly one file under `.agents/` holds the full strings: the definition in
+`visual-style.md`. Scene skills source `.agents/bin/style-strings.sh` instead of hard-coding
+them. Thumbnail prompts intentionally use the separate cinematic style and must not copy the
+scene strings. Any file printed by the last command is a FAIL.
 
 Project 1's `transcribes/*.txt` files are grandfathered. Report them as informational, not
 as a failure.
@@ -124,7 +120,7 @@ awk '{print $1}' "$T" | sort | uniq -d      # duplicates, informational
 
 ## Step 5 - Cast checks
 
-```bash
+````bash
 C="$P/prompts/character-prompts.md"
 grep -oE '@[A-Z]+' "$C" | sort -u                 # tokens
 grep -c '^```' "$C"                                # even, 2 per character
@@ -132,7 +128,7 @@ grep -c 'brand/MASCOT.jpeg' "$C"                   # at least 1, the YOU sheet
 
 # 'mitten' as a POSITIVE instruction, must be 0
 grep -oiE '(no|never|not) +mittens?|mittens?' "$C" | grep -civE '^(no|never|not) '
-```
+````
 
 - Cast size outside 2 to 6 is a FAIL.
 - A token that is not one ALL CAPS word of letters A to Z is a FAIL.
@@ -216,40 +212,56 @@ diff <(awk '{print $1}' "$T") <(grep -o '^\[[0-9:]*\]' "$F") | grep -c '^[<>]'  
 
 ```bash
 H="$P/prompts/thumbnail-prompts.md"
-grep -c '^\[thumb-' "$H"                                     # exactly 5
-grep -o '^\[thumb-[a-e]\]' "$H" | sort              # a through e, no gaps
+wc -l < "$H"                                                  # exactly 9
+grep -cve '^$' "$H"                                          # exactly 5
+grep -c '^$' "$H"                                             # exactly 4
+grep -c '^Create a beautiful, high-impact YouTube thumbnail' "$H"  # exactly 5
 
 # required clauses, each must be 5
-for s in 'running perfectly straight across the very top' \
-         'not arced and not curved' \
-         'darkest area of the whole image' \
-         'straight out of the frame directly at the viewer' \
-         'bottom-right corner of the frame left completely empty'; do
+for s in 'Reserve the top 22 percent' \
+         'very thick smooth black outline' \
+         'richly painted cinematic 2D' \
+         'bottom-right corner visually quiet' \
+         'render no other text'; do
   printf '%-52s %s\n' "$s" "$(grep -c "$s" "$H")"
 done
 
 # banned patterns, must be 0
-grep -ciE 'silhouette|featureless|blank (white )?(oval|head)|arced across' "$H"
+grep -ciE 'competitor thumbnail|research thumbnail|style reference image' "$H"
+grep -ciE 'no gradients, no shadows, no textures|educational YouTube explainer doodle style' "$H"
+grep -cE '^#|^\[thumb-|^Cast:|^Five candidate|^Attach only|^Add the channel logo' "$H"
 
-# question text: 2 to 4 words, ALL CAPS, ends with ?
-grep -oE 'ALL CAPS text "[^"]*"' "$H"
+# headline text: 1 to 4 uppercase words, question or short statement
+grep -oE 'exact headline "[^"]*"' "$H"
+
+# tokens used but not in the cast table, must be empty
+comm -13 <(grep -oE '@[A-Z]+' "$C" | sort -u) <(grep -oE '@[A-Z]+' "$H" | sort -u)
 ```
 
-FAIL conditions: not exactly 5 prompts, any required clause count below 5, any banned
-pattern present, any question longer than 4 words or not ending in `?`, or a question whose
-number is also drawn as a numeral in the same prompt.
+FAIL conditions: not exactly 5 nonempty prompt lines separated by exactly 4 blank lines,
+any header, label, instruction, leading blank line, trailing blank line, or consecutive
+blank lines, any required clause count below 5, any banned pattern present, any headline
+longer than 4 words, any headline that is not uppercase, or any cast token not in the cast
+table.
 
-Also verify at least 2 of the 5 use the split comparison layout, by counting
-`thick vertical black divider line splitting the frame exactly in half`.
+Project 1 is the accepted regression fixture and predates both the thumbnail import format
+and the thumbnail-only cinematic style. Report its legacy header, `[thumb-*]` labels, scene
+STYLE ANCHOR and STYLE LOCK, and blank separators as INFO, not FAIL. Do not enforce the new
+thumbnail commands above on project 1. Enforce the five-line cinematic prompt-only format
+from project 2 onward.
+
+Single cinematic stories are the default. Report more than one split comparison as INFO and
+verify the script genuinely justifies each one. It is a FAIL only when the split does not
+represent a real numeric, era, temperature, or state contrast.
 
 ## Step 8 - Metadata checks
 
-```bash
-M="$P/metadata.md"
+````bash
+M="$P/outputs/metadata.md"
 grep -c '^#' "$M"
 awk '/^## Title/{t=1} t&&/^```/{c++} c==2{exit}' "$M"
 grep -oE '#[A-Za-z0-9_]+' "$M" | wc -l      # 15 to 25 hashtags
-```
+````
 
 Title over 70 characters is a FAIL. Hashtag count outside 15 to 25, or tag count outside 25
 to 40, is a FAIL. A `#` inside the tags block is a FAIL.
@@ -259,10 +271,10 @@ to 40, is a FAIL. A `#` inside the tags block is a FAIL.
 Print one table, most severe first:
 
 ```markdown
-| Check | Result | Detail |
-| --- | --- | --- |
-| image prompts vs cues | PASS | 254 / 254 |
-| style lock coverage | FAIL | 251 of 254 prompts |
+| Check                 | Result | Detail             |
+| --------------------- | ------ | ------------------ |
+| image prompts vs cues | PASS   | 254 / 254          |
+| style lock coverage   | FAIL   | 251 of 254 prompts |
 ```
 
 Use PASS, FAIL, or INFO. Then state the pipeline position and the next command:
@@ -285,7 +297,7 @@ conflict was resolved.
 - Read-only unless the user explicitly asks for a fix.
 - Never report empty `prompts/video-prompts.md` as missing. It is a reserved slot.
 - Never report missing `characters/*.jpeg`, `scenes/*`, `outputs/*`, or `audios/*` as FAIL.
-  Those are generated by the user outside this repo, so they are INFO. A missing *directory*
+  Those are generated by the user outside this repo, so they are INFO. A missing _directory_
   is still a FAIL.
 - Never guess at a count. Run the command and report the number.
 

@@ -41,13 +41,15 @@ Never ask the user to describe them. Read the rule file.
 The STYLE ANCHOR, STYLE LOCK, GENERATION LINE, and REFERENCE SHEET OPENING LINE are
 **defined** in `.agents/rules/visual-style.md`. That file is the authority.
 
-Three other places legitimately contain a copy, and no others:
+One other place legitimately contains copies, and no others:
 
-1. `.agents/rules/thumbnail-rules.md`, inside the two layout templates, because a
-   template has to be copy-pasteable to be useful.
-2. The verification grep patterns in `.agents/skills/scenes/SKILL.md` and
-   `.agents/skills/check/SKILL.md`.
-3. Generated project artifacts under `projects/`, where every prompt line carries them.
+1. Generated scene artifacts and legacy thumbnail artifacts under `projects/`.
+
+Verification skills source the strings through `.agents/bin/style-strings.sh`; they never
+hard-code another copy.
+
+Thumbnail prompts use the separate self-contained rendering system in
+`.agents/rules/thumbnail-rules.md` and never copy the scene STYLE ANCHOR or STYLE LOCK.
 
 **The guarantee is identity, not uniqueness.** Every copy must be byte-identical to the
 definition in `visual-style.md`. The `check` skill extracts the canonical string and

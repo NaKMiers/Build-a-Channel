@@ -16,14 +16,14 @@ delegate back. See `.agents/README.md` and `.claude/README.md`.
 
 ## Project rules - read the matching file before acting
 
-| File | Read before |
-| --- | --- |
-| `.agents/rules/house-rules.md` | anything. Always active. Output hygiene, no em dash, stage discipline. |
-| `.agents/rules/channel-dna.md` | generating a topic, a script, or metadata. Pillars, angles, voice, editorial guardrails. |
-| `.agents/rules/visual-style.md` | writing any image, sheet, or thumbnail prompt. Palette, tone map, frame types, and the four verbatim strings. |
-| `.agents/rules/mascot-toss.md` | building the cast. Toss identity lock and the reference sheet template. |
-| `.agents/rules/thumbnail-rules.md` | writing thumbnail concepts. Rules A to F, evidence-backed. |
-| `.agents/rules/file-formats.md` | writing any project artifact. Layout and exact file shapes. |
+| File                               | Read before                                                                                                   |
+| ---------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| `.agents/rules/house-rules.md`     | anything. Always active. Output hygiene, no em dash, stage discipline.                                        |
+| `.agents/rules/channel-dna.md`     | generating a topic, a script, or metadata. Pillars, angles, voice, editorial guardrails.                      |
+| `.agents/rules/visual-style.md`    | writing any image, sheet, or thumbnail prompt. Palette, tone map, frame types, and the four verbatim strings. |
+| `.agents/rules/mascot-toss.md`     | building the cast. Toss identity lock and the reference sheet template.                                       |
+| `.agents/rules/thumbnail-rules.md` | writing thumbnail concepts. Rules A to F, evidence-backed.                                                    |
+| `.agents/rules/file-formats.md`    | writing any project artifact. Layout and exact file shapes.                                                   |
 
 ## The pipeline
 
@@ -37,10 +37,9 @@ pipeline skill validates its inputs, writes its artifact, and names the next com
 /transcript  transcribes/transcript.md              (needs the recorded voiceover)
 /cast        prompts/character-prompts.md
 /scenes      prompts/image-prompts.md               (needs transcript + cast)
-/metadata    metadata.md
+/metadata    outputs/metadata.md
 /thumbnail   prompts/thumbnail-prompts.md           (needs cast)
 /check       validation report, runnable any time
-/skill-sync  regenerate the Claude wrappers         (manual only)
 ```
 
 Scene-image file management is separate from the content pipeline:
