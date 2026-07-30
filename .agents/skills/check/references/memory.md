@@ -55,3 +55,7 @@ and those do pass clean, including the canonical one-line `[3:24]` to `[3:25]` r
   file into a word stream, so `##` becomes a spoken token and shifts every later timestamp.
 - **Banned thumbnail patterns.** silhouette, featureless, blank heads, and `arced across` are
   each a recorded generation failure. See the thumbnail skill's memory for the round history.
+- **Headline integration is counted, not inferred.** A dark top area ending at a hard
+  horizontal seam reached generated Project 2 thumbnails and made the headline look like a
+  detached banner. New cinematic thumbnail prompts must include both the continuous-scene
+  integration clause and the explicit separate-band prohibition five times.

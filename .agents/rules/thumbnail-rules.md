@@ -31,7 +31,15 @@ lighting and depth this thumbnail-only style requires.
 - Use saturated golden yellow `#FFD900`, a very thick smooth black `#050505` outline, and a
   soft black shadow.
 - Let the headline occupy roughly 85 to 94 percent of the canvas width.
-- Reserve the top 22 percent as the darkest and least cluttered part of the image.
+- Integrate the headline directly into the illustrated environment. Treat it as part of the
+  same full-frame composition, not a separate graphic layer.
+- Reserve the top 22 percent for readable local contrast inside the same continuous scene.
+  Continue the environment, atmospheric depth, and lighting behind, around, and below the
+  letters.
+- Allow one or two low-contrast environmental forms, such as haze, smoke, mountains, walls,
+  branches, or machinery, to rise behind or between the letters without obscuring them.
+- Never create a separate text band, header strip, banner, rectangle, solid-color panel, empty
+  bar, border, or hard horizontal division.
 - Render no other text.
 
 The headline is a second hook, not a shortened title. It may be a question or an extremely
@@ -40,6 +48,9 @@ short statement. Prefer one of these functions:
 - danger or consequence
 - scarcity or time pressure
 - visible contradiction
+- social exposure or discovery
+- shocking or forbidden behavior
+- an urgent command tied to a fragile object or action
 - unresolved outcome
 - one physical mistake
 - surprising behavior
@@ -47,21 +58,43 @@ short statement. Prefer one of these functions:
 Connect the words to something visible in the frame. Avoid abstract jargon and complete
 explanations.
 
+### Headline-image contract
+
+Write one viewer question before composing the thumbnail. The headline and image must pursue
+that same question from two directions:
+
+- The headline asks, warns, commands, or predicts something involving a visible subject.
+- The image confirms the premise with physical evidence and makes the stakes legible.
+- The image withholds the decisive cause, identity, explanation, escape, or outcome.
+- The combined effect must create more curiosity than either element creates alone.
+
+The image should answer enough of the headline to orient the viewer, then introduce one new
+piece of evidence that makes the unanswered part more urgent. If the headline can be swapped
+for an unrelated phrase without changing the image, reject the concept.
+
 ## C. One cinematic story
 
 Default to one full-frame story, not a split comparison:
 
+- Start from a specific event in the script, not merely its topic or theory.
 - Show the instant a character discovers the problem, one second before the consequence.
 - Use one protagonist, one visible physical problem, and 1 to 3 supporting subjects.
 - Make the main character roughly 45 to 60 percent of the frame height.
-- Put the story in the middle and lower 78 percent.
+- Let the environment span the full canvas while keeping the main action in the middle and
+  lower area. Do not crop the story into a panel beneath the headline.
 - Keep no more than two focal points.
 - Leave the bottom-right corner visually quiet for the duration badge.
 
 Use a split comparison only when the script contains a genuinely useful contrast in
 numbers, eras, temperatures, or states. Never force two split concepts into every set.
 
-Never use a lone neutral portrait, a flat empty background, or several unrelated actions.
+Prefer literal script incidents with a clear subject, action, witness or threat, physical
+evidence, and imminent consequence. A concrete experiment or mechanism is valid when its
+action is instantly understandable. Use a metaphor only when no script event can carry the
+idea physically.
+
+Never use a lone neutral portrait, a generic social tableau, a theory label presented as the
+hook, a flat empty background, or several unrelated actions.
 
 ## D. Emotion and character identity
 
@@ -88,11 +121,12 @@ Build a real place around the story:
 - Use one warm orange or golden visible light source.
 - Illuminate the main face clearly.
 - Keep distant colors quieter and nonessential corners darker.
-- Protect the headline zone from branches, faces, tools, and bright highlights.
+- Keep faces, tools, and bright highlights away from the headline, but carry low-contrast
+  environmental forms and the same scene lighting behind it.
 
 The preferred formula is a cool dark environment plus a concentrated warm focal light. A
 bright setting is allowed when the script requires it, but the headline still needs a dark
-quiet band.
+quiet upper portion of the same continuous scene.
 
 ## F. Packaging
 
@@ -120,7 +154,7 @@ Do not make five camera-angle variants of one idea.
 Fill every bracketed slot. The generated prompt is one unbroken line.
 
 ```text
-Create a beautiful, high-impact YouTube thumbnail illustration in 16:9 format, 1280x720. Use the attached character sheets as strict identity references for [TOKENS]. Preserve their exact head shapes, hair, faces, proportions, clothing, colors, and recognizable designs while changing only their expressions, poses, lighting, and placement. Render the exact headline "[HEADLINE]" in one straight line across the top, using huge uppercase rounded golden-yellow letters with a very thick smooth black outline and a soft black shadow. Make the letters occupy approximately [85 TO 94] percent of the canvas width. Reserve the top 22 percent as the darkest and least cluttered part of the image. Show [MAIN TOKEN AND ACTION] large in the [POSITION], experiencing extreme [EMOTION] because of [VISIBLE PHYSICAL PROBLEM]. Capture the exact moment the problem is discovered, one second before the consequence, with the outcome unresolved. [EXPLICIT EYES, EYEBROWS, MOUTH, HANDS, AND BODY POSE]. Include [SUPPORTING TOKENS, ANIMAL, OBJECT, OR THREAT] to create conflict, danger, scale, or emotional contrast. Set the scene in [SETTING FROM SCRIPT], using [FOREGROUND], [MIDGROUND], and [BACKGROUND] to create cinematic depth. Use a cool dark palette of deep navy, storm blue, charcoal, forest green, ice blue, and earth brown, with one concentrated warm orange or golden visible light source illuminating the main face and problem. Keep the background atmospheric but subordinate to the faces. The visual hierarchy must be headline first, main emotional face second, visible problem third, supporting subject fourth, and environment last. Use expressive doodle-like characters with bold black outlines and slightly imperfect hand-drawn linework inside a richly painted cinematic 2D cartoon environment with atmospheric depth, controlled gradients, soft shadows, painted texture, cohesive dramatic lighting, beautiful color grading, and strong mobile readability. Exactly one figure looks directly at the viewer. Leave the bottom-right corner visually quiet for the YouTube duration badge. Spell "[HEADLINE]" exactly and render no other text. No logos, watermarks, borders, unnecessary arrows, extra limbs, duplicated faces, weak expressions, tiny subjects, unrelated actions, photorealistic people, 3D rendering, anime styling, generic stock illustration, flat lighting, or empty background.
+Create a beautiful, high-impact YouTube thumbnail illustration in 16:9 format, 1280x720. Use the attached character sheets as strict identity references for [TOKENS]. Preserve their exact head shapes, hair, faces, proportions, clothing, colors, and recognizable designs while changing only their expressions, poses, lighting, and placement. Render the exact headline "[HEADLINE]" in one straight line across the top, using huge uppercase rounded golden-yellow letters with a very thick smooth black outline and a soft black shadow. Make the letters occupy approximately [85 TO 94] percent of the canvas width. Integrate the headline directly into the illustrated environment so the typography and artwork feel like one continuous composition. Reserve the top 22 percent for headline readability inside that same continuous scene, but do not create a separate text band, header strip, banner, rectangle, solid-color panel, empty bar, border, or hard horizontal division. Continue the same environment, atmospheric depth, and lighting uninterrupted behind, around, and below the letters. Allow one or two low-contrast environmental forms to rise behind or between the letters without covering them. Show [MAIN TOKEN AND ACTION] large in the [POSITION], experiencing extreme [EMOTION] because of [VISIBLE PHYSICAL PROBLEM]. Capture the exact moment the problem is discovered, one second before the consequence, with the outcome unresolved. [EXPLICIT EYES, EYEBROWS, MOUTH, HANDS, AND BODY POSE]. Include [SUPPORTING TOKENS, ANIMAL, OBJECT, OR THREAT] to create conflict, danger, scale, or emotional contrast. Set the scene in [SETTING FROM SCRIPT], using [FOREGROUND], [MIDGROUND], and [BACKGROUND] to create cinematic depth. Use a cool dark palette of deep navy, storm blue, charcoal, forest green, ice blue, and earth brown, with one concentrated warm orange or golden visible light source illuminating the main face and problem. Keep the background atmospheric but subordinate to the faces. The visual hierarchy must be headline first, main emotional face second, visible problem third, supporting subject fourth, and environment last. Use expressive doodle-like characters with bold black outlines and slightly imperfect hand-drawn linework inside a richly painted cinematic 2D cartoon environment with atmospheric depth, controlled gradients, soft shadows, painted texture, cohesive dramatic lighting, beautiful color grading, and strong mobile readability. Exactly one figure looks directly at the viewer. Leave the bottom-right corner visually quiet for the YouTube duration badge. Spell "[HEADLINE]" exactly and render no other text. No logos, watermarks, detached headline panels, unnecessary arrows, extra limbs, duplicated faces, weak expressions, tiny subjects, unrelated actions, photorealistic people, 3D rendering, anime styling, generic stock illustration, flat lighting, or empty background.
 ```
 
 ## Split comparison template
@@ -128,7 +162,7 @@ Create a beautiful, high-impact YouTube thumbnail illustration in 16:9 format, 1
 Use only for a real comparison. The generated prompt is one unbroken line.
 
 ```text
-Create a beautiful, high-impact YouTube thumbnail illustration in 16:9 format, 1280x720. Use the attached character sheets as strict identity references for [TOKENS]. Preserve their exact designs while changing only expressions, poses, lighting, and placement. Divide the story into two clearly readable halves with a strong central separation created by composition and lighting, not a decorative border. Render the exact headline "[HEADLINE]" in one straight line across the top, using huge uppercase rounded golden-yellow letters with a very thick smooth black outline and a soft black shadow. Reserve the top 22 percent as the darkest and least cluttered part of the image. On the left, show [FIRST STATE WITH A VISIBLE NUMBER, ERA, OR CONDITION]. On the right, show [SECOND STATE WITH A VISIBLE NUMBER, ERA, OR CONDITION]. Make the contrast understandable without the video title. Give each visible character a readable face and reaction, with one emotionally dominant character looking directly at the viewer. Use a cool dark palette with one concentrated warm orange or golden visible light source and a richly painted cinematic 2D cartoon environment with atmospheric depth, controlled gradients, soft shadows, painted texture, bold black doodle outlines, and strong mobile readability. Leave the bottom-right corner visually quiet for the YouTube duration badge. Spell "[HEADLINE]" exactly and render no other text beyond the essential comparison numerals or units. No logos, watermarks, unnecessary arrows, extra limbs, duplicated faces, weak expressions, tiny subjects, unrelated actions, photorealistic people, 3D rendering, anime styling, generic stock illustration, flat lighting, or empty background.
+Create a beautiful, high-impact YouTube thumbnail illustration in 16:9 format, 1280x720. Use the attached character sheets as strict identity references for [TOKENS]. Preserve their exact designs while changing only expressions, poses, lighting, and placement. Divide the story into two clearly readable halves with a strong central separation created by composition and lighting, not a decorative border. Render the exact headline "[HEADLINE]" in one straight line across the top, using huge uppercase rounded golden-yellow letters with a very thick smooth black outline and a soft black shadow. Integrate the headline directly into the illustrated environment so the typography and artwork feel like one continuous composition across both halves. Reserve the top 22 percent for headline readability inside that same continuous scene, but do not create a separate text band, header strip, banner, rectangle, solid-color panel, empty bar, border, or hard horizontal division. Continue the environments, atmospheric depth, and lighting uninterrupted behind, around, and below the letters. Allow one or two low-contrast environmental forms to rise behind or between the letters without covering them. On the left, show [FIRST STATE WITH A VISIBLE NUMBER, ERA, OR CONDITION]. On the right, show [SECOND STATE WITH A VISIBLE NUMBER, ERA, OR CONDITION]. Make the contrast understandable without the video title. Give each visible character a readable face and reaction, with one emotionally dominant character looking directly at the viewer. Use a cool dark palette with one concentrated warm orange or golden visible light source and a richly painted cinematic 2D cartoon environment with atmospheric depth, controlled gradients, soft shadows, painted texture, bold black doodle outlines, and strong mobile readability. Leave the bottom-right corner visually quiet for the YouTube duration badge. Spell "[HEADLINE]" exactly and render no other text beyond the essential comparison numerals or units. No logos, watermarks, detached headline panels, unnecessary arrows, extra limbs, duplicated faces, weak expressions, tiny subjects, unrelated actions, photorealistic people, 3D rendering, anime styling, generic stock illustration, flat lighting, or empty background.
 ```
 
 ## Rejection gate
@@ -137,11 +171,17 @@ Reject and rewrite a concept when any answer is no:
 
 1. Is the headline four words or fewer?
 2. Does the headline add information instead of repeating the title?
-3. Is the physical problem visible?
-4. Is one emotion obvious in half a second?
-5. Are there no more than two focal points?
-6. Is the outcome unresolved?
-7. Is the headline zone dark and uncluttered?
-8. Are only project cast sheets required?
-9. Is the bottom-right corner quiet?
-10. Will the design still read at 120 pixels wide?
+3. Does the scene depict a specific event, action, object, relationship, or consequence from
+   the script?
+4. Do the headline and image pursue one shared viewer question?
+5. Does the image partially answer the headline with visible physical evidence?
+6. Is a decisive cause, explanation, identity, escape, or outcome still withheld?
+7. Is the physical problem visible?
+8. Is one emotion obvious in half a second?
+9. Are there no more than two focal points?
+10. Is the outcome unresolved one beat before the consequence?
+11. Would changing the headline require changing the scene?
+12. Is the headline readable inside the same continuous scene, with no detached panel?
+13. Are only project cast sheets required?
+14. Is the bottom-right corner quiet?
+15. Will the design still read at 120 pixels wide?

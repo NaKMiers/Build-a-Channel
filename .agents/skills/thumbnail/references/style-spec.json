@@ -1,6 +1,6 @@
 {
   "name": "Cinematic Doodle Thumbnail",
-  "version": "1.0",
+  "version": "1.2",
   "self_contained": true,
   "external_reference_images_required": false,
   "purpose": "Create emotionally intense, highly readable YouTube thumbnails that preserve the TossExplains cast while using richer thumbnail-only environments, lighting, and depth.",
@@ -24,7 +24,7 @@
     "word_count_maximum": 4,
     "line_count_preferred": 1,
     "case": "uppercase",
-    "position": "top center",
+    "position": "top center, integrated into the continuous illustrated scene",
     "zone_height_percent": 22,
     "width_percent_preferred": 90,
     "baseline": "straight",
@@ -33,16 +33,31 @@
     "outline": "#050505",
     "outline_weight": "very thick",
     "shadow": "soft black",
+    "integration": {
+      "mode": "embedded in the same full-frame environment",
+      "background": "Continue the environment, atmosphere, and lighting behind, around, and below the letters.",
+      "allowed_overlap": "One or two low-contrast environmental forms may rise behind or between letters without obscuring them.",
+      "forbidden": [
+        "separate text band",
+        "header strip",
+        "banner",
+        "rectangular text panel",
+        "solid-color header block",
+        "empty top bar",
+        "hard horizontal division"
+      ]
+    },
     "rules": [
       "Use the headline as a second hook, not a repetition of the video title.",
       "Connect the hook to something visible in the frame.",
       "Prefer danger, scarcity, contradiction, consequence, time pressure, or an unresolved outcome.",
+      "Create readability through local contrast inside the scene, never through a detached graphic panel.",
       "Render no other text."
     ]
   },
   "layout": {
     "default": "single cinematic story",
-    "story_zone": "middle and lower 78 percent",
+    "story_zone": "full-frame continuous environment, with the main action in the middle and lower area",
     "main_subject_frame_height_percent": "45 to 60",
     "supporting_subject_count_preferred": "1 to 3",
     "focal_point_count_maximum": 2,
@@ -54,11 +69,23 @@
   },
   "story": {
     "core": "Show a frozen moment from an unresolved event, not a neutral portrait.",
+    "source": "Use a specific event, action, object, relationship, experiment, or consequence from the script. Prefer literal incidents over generic scenes or decorative metaphors.",
+    "curiosity_contract": {
+      "viewer_question": "Define one unanswered question before composing.",
+      "headline_role": "Ask, warn, command, or predict something involving a visible subject.",
+      "image_role": "Confirm the premise and stakes with physical evidence, then add one clue that makes the missing answer more urgent.",
+      "withhold": "Do not reveal the decisive cause, identity, explanation, escape, or outcome.",
+      "swap_test": "If an unrelated headline can replace the chosen headline without changing the scene, reject the concept."
+    },
     "required": [
       "protagonist",
+      "script-specific event",
       "visible physical problem",
       "extreme readable emotion",
-      "unresolved outcome"
+      "unresolved outcome",
+      "one shared question between headline and image",
+      "visible evidence that partially answers the headline",
+      "a decisive answer that remains hidden"
     ],
     "preferred_moments": [
       "one second before the consequence",
@@ -93,7 +120,8 @@
       "size reduction",
       "atmospheric perspective",
       "localized sharpness",
-      "dark framing shapes"
+      "dark framing shapes",
+      "low-contrast scenery continuing behind the headline"
     ],
     "detail_priority": {
       "high": [
@@ -157,6 +185,13 @@
       "weak expressions",
       "tiny main subjects",
       "multiple unrelated actions",
+      "generic scene that could illustrate another video",
+      "abstract theory label as the hook",
+      "headline and image pursuing different questions",
+      "fully explained outcome",
+      "detached headline band",
+      "solid text panel",
+      "hard horizontal seam below the headline",
       "extra text",
       "logos",
       "watermarks"
@@ -174,10 +209,16 @@
   "quality_gate": [
     "The headline is readable at 120 pixels wide.",
     "The headline contains no more than four words.",
+    "The scene depicts a specific event, action, object, relationship, or consequence from the script.",
     "The physical event is understandable without the video title.",
+    "The headline and image pursue one shared viewer question.",
+    "The image partially answers the headline with visible physical evidence.",
+    "The decisive explanation or outcome remains hidden.",
+    "Changing the headline would require changing the scene.",
     "One emotional face dominates.",
     "The outcome remains unresolved.",
-    "The headline zone is uncluttered.",
+    "The headline is readable inside the same continuous illustrated scene.",
+    "No separate text band, header strip, or hard horizontal seam is present.",
     "The cool-versus-warm contrast is obvious.",
     "The mascot and cast identities match their attached sheets.",
     "The bottom-right corner remains visually quiet."

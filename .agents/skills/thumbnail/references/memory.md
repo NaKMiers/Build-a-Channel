@@ -49,6 +49,35 @@ Several smiling figures or a lone neutral portrait produced no unresolved questi
 
 Show two parties, a physical problem, and the instant before a consequence.
 
+### Beautiful but unrelated
+
+A polished scene can still fail when it illustrates the broad topic instead of a specific
+event from the script. Generic parties, crowds, portraits, and abstract mechanisms do not
+create enough reason to click.
+
+Mine a literal script incident first. Preserve its subject, action, witness or threat,
+physical evidence, and imminent consequence. Use visual beauty to intensify that event, not
+to replace it.
+
+### Headline and image open different questions
+
+A headline feels decorative when it does not describe, question, warn about, or command the
+visible action. The viewer receives two weak hooks instead of one strong curiosity loop.
+
+Write one viewer question before composing. Let the headline open or sharpen that question.
+Let the image confirm the premise and stakes, add one provocative clue, and withhold the
+decisive explanation or outcome.
+
+### Detached headline band
+
+A uniformly dark header above a hard horizontal seam made the headline feel pasted onto a
+separate graphic panel instead of belonging to the illustration.
+
+Keep the top area readable through local contrast, but continue the same environment,
+atmosphere, and lighting behind, around, and below the letters. Allow a few low-contrast scene
+forms to rise behind or between the letters. Forbid banners, solid text panels, empty top bars,
+and hard horizontal divisions.
+
 ## Standing rules
 
 - Straight top typography survives small-size viewing better than arced typography.
@@ -57,6 +86,9 @@ Show two parties, a physical problem, and the instant before a consequence.
 - Single cinematic stories are the default. Split comparisons are special cases.
 - Character sheets preserve identity. They do not define the richer thumbnail environment.
 - Competitor, research, or style reference images are never required.
+- Content relevance comes before visual polish. Start with an exact script event.
+- The headline and image must pursue one shared question.
+- Reveal the premise and physical evidence, then stop before the decisive consequence.
 
 ## Future entries
 
@@ -73,3 +105,17 @@ Failed:
 
 Durable rule:
 ```
+
+### 2026-07-31, project 2, round 2
+
+Accepted: The machine-loop and ancestral song-duel concepts with headlines embedded in the
+same full-frame environment.
+
+Worked: Bedroom scenery, tape reels, Arctic sky, mountains, haze, and smoke continued behind
+and around the letters while the headline stayed readable.
+
+Failed: The earlier uniformly dark headline area ended at a hard horizontal seam and read as
+a separate banner above the illustration.
+
+Durable rule: Reserve upper space through local contrast inside one continuous scene. Never
+isolate the headline in a separate band or panel.

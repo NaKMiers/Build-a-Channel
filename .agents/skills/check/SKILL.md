@@ -222,7 +222,9 @@ for s in 'Reserve the top 22 percent' \
          'very thick smooth black outline' \
          'richly painted cinematic 2D' \
          'bottom-right corner visually quiet' \
-         'render no other text'; do
+         'render no other text' \
+         'Integrate the headline directly into the illustrated environment' \
+         'do not create a separate text band'; do
   printf '%-52s %s\n' "$s" "$(grep -c "$s" "$H")"
 done
 
@@ -242,7 +244,7 @@ FAIL conditions: not exactly 5 nonempty prompt lines separated by exactly 4 blan
 any header, label, instruction, leading blank line, trailing blank line, or consecutive
 blank lines, any required clause count below 5, any banned pattern present, any headline
 longer than 4 words, any headline that is not uppercase, or any cast token not in the cast
-table.
+table. The two headline-integration clauses prevent a detached text banner from returning.
 
 Project 1 is the accepted regression fixture and predates both the thumbnail import format
 and the thumbnail-only cinematic style. Report its legacy header, `[thumb-*]` labels, scene

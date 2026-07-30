@@ -51,43 +51,66 @@ five-prompt artifact with an incomplete set.
 Read the full script and record:
 
 - physical objects, animals, places, and actions
+- exact events: who acts, who notices, what physical evidence is visible, and what
+  consequence is about to happen
 - numbers and useful comparisons
 - the opening physical situation
 - the named experiment or mechanism made visible
 - the ancestral scene
 - the modern-versus-ancestral contrast
 - the strongest consequence or counterintuitive fact
+- moments of danger, exposure, collision, forbidden behavior, loss, or irreversible choice
 - the video title, so the headline does not repeat it
 
 If the script has no drawable physical problem, stop and explain that the script needs a
 stronger visual hook.
 
+Rank candidate moments by content relevance before visual beauty. Prefer a literal event from
+the script over a generic scene, decorative metaphor, theory label, or explanatory diagram. A
+beautiful concept that could illustrate an unrelated video is invalid.
+
 ## Step 3 - Draft concepts before prompts
 
 For every requested prompt, define:
 
-1. headline
-2. main character
-3. dominant emotion
-4. visible physical problem
-5. supporting subject
-6. setting
-7. warm light source
-8. unresolved moment
+1. exact script moment
+2. one viewer curiosity question
+3. headline
+4. visible evidence that partially answers the headline
+5. decisive answer or consequence the image withholds
+6. main character
+7. dominant emotion
+8. visible physical problem
+9. supporting subject
+10. setting
+11. warm light source
+12. unresolved moment
 
 Run the rejection gate in `thumbnail-rules.md`. Rewrite any concept that fails.
+
+Use one curiosity contract:
+
+- The headline and image must point toward the same unanswered question.
+- The image must reveal the premise, physical evidence, and stakes, but not the cause,
+  explanation, or outcome.
+- Freeze the scene one beat before contact, discovery, exposure, loss, attack, escape, or an
+  irreversible decision.
+- If the headline could be replaced by an unrelated phrase without changing the scene, the
+  concept is too generic.
 
 Headline rules:
 
 - 1 to 4 uppercase words, with 2 to 3 preferred
 - one straight line at the top
+- integrated into the same continuous illustrated scene, never isolated in a graphic panel
 - a second hook, never a restatement of the title
-- connected to something visible
-- question or short statement
-- no abstract jargon or complete explanation
+- names, questions, warns about, or commands an action involving something visible
+- prefer a question, urgent command, alarming statement, or unresolved consequence
+- no abstract jargon, theory label, moral, summary, or complete explanation
 
-When creating multiple concepts, use different script moments. Default to single cinematic
-stories. Use a split comparison only for a real numeric, era, temperature, or state contrast.
+When creating multiple concepts, use different script moments and different curiosity
+mechanisms. Default to single cinematic stories. Use a split comparison only for a real
+numeric, era, temperature, or state contrast.
 
 ## Step 4 - Build each prompt
 
@@ -98,10 +121,18 @@ Every prompt must:
 
 - open with `Create a beautiful, high-impact YouTube thumbnail illustration in 16:9 format,
   1280x720.`
+- translate one exact script event rather than a loose theme
 - reference only cast tokens whose project sheets will be attached
 - preserve attached character identity exactly
 - render one exact headline in large yellow type at the top
-- reserve the top 22 percent as the darkest and least cluttered zone
+- make the headline and visible action pursue one shared curiosity question
+- show enough physical evidence to establish what is happening and why it matters
+- explicitly state what answer or consequence remains hidden
+- integrate the headline into the illustrated environment
+- reserve the top 22 percent for readable local contrast inside the same continuous scene
+- continue the environment and lighting behind, around, and below the letters
+- forbid a separate text band, header strip, banner, rectangle, solid-color panel, empty bar,
+  border, or hard horizontal division
 - show one dominant emotional face and one visible physical problem
 - capture the instant before the consequence
 - use a cool environment and one warm visible light source
@@ -150,6 +181,8 @@ grep -c 'very thick smooth black outline' "$F"                     # 5
 grep -c 'richly painted cinematic 2D' "$F"                         # 5
 grep -c 'bottom-right corner visually quiet' "$F"                  # 5
 grep -c 'render no other text' "$F"                                # 5
+grep -c 'Integrate the headline directly into the illustrated environment' "$F"  # 5
+grep -c 'do not create a separate text band' "$F"                  # 5
 
 # all must be 0
 grep -ciE 'competitor thumbnail|research thumbnail|style reference image' "$F"
@@ -163,7 +196,12 @@ Also verify:
 - every `@TOKEN` exists in `character-prompts.md`
 - every headline is uppercase and no more than four words
 - each prompt names a different script moment
+- each scene contains a script-specific action, object, relationship, or consequence
+- each headline and image pursue one shared viewer question
+- each image reveals the setup and stakes but withholds the decisive answer
+- no generic tableau or abstract theory metaphor replaces an available script event
 - no more than one concept uses a split comparison unless the script strongly justifies it
+- the upper environment continues behind the headline with no detached graphic panel
 - no leading, trailing, or consecutive blank lines
 
 ## Step 7 - Handoff
