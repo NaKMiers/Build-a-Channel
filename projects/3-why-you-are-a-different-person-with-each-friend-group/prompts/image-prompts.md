@@ -212,16 +212,6 @@
 
 [4:58] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, the party frame returning with @WORK clustered at the far left and @GYM clustered at the far right and @YOU frozen in the gap between them with brows angled steeply upward at their inner edges and mouth a small tight flat line, plain white background, bold red ALL CAPS text "SO WHY THIS?" at the top of the frame, no gradients, no shadows, no textures, no photorealism, no 3D, no timestamp shown in the image, @[name] is mention syntax for reference only and must never be rendered as visible text, 16:9 aspect ratio, educational YouTube explainer doodle style.
 
-
-
-
-
-
-
-
-
-
-
 [5:01] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, one very large plain black arrow drawn pointing left across the whole width of the frame, @YOU standing small at the right end of it looking left with brows raised, plain white background with nothing else in the frame, bold black ALL CAPS text "GO BACK" at the top of the frame, no gradients, no shadows, no textures, no photorealism, no 3D, no timestamp shown in the image, @[name] is mention syntax for reference only and must never be rendered as visible text, 16:9 aspect ratio, educational YouTube explainer doodle style.
 
 [5:02] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, one enormous simple hourglass shape drawn in the center of the frame at nearly full frame height with almost all of its sand already fallen into the lower bulb, plain white background with nothing else in the frame, bold black ALL CAPS text "FAR BACK" at the top of the frame, no gradients, no shadows, no textures, no photorealism, no 3D, no timestamp shown in the image, @[name] is mention syntax for reference only and must never be rendered as visible text, 16:9 aspect ratio, educational YouTube explainer doodle style.
@@ -307,9 +297,6 @@
 [6:40] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, solid tan #C4965A background, @FORAGER drawn small and alone walking away in profile toward the far right edge of the frame with his head down, the fire and the ring of @CAMP drawn tiny in the far distance behind him at the left, one long empty stretch of tan between them, bold red ALL CAPS text "EXILE" at the top of the frame, no gradients, no shadows, no textures, no photorealism, no 3D, no timestamp shown in the image, @[name] is mention syntax for reference only and must never be rendered as visible text, 16:9 aspect ratio, educational YouTube explainer doodle style.
 
 [6:43] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, two plain flat cards drawn side by side in the center of the frame, the left card showing a simple ring of small doodle heads all facing inward and the right card showing one small doodle head with many thin black lines radiating from it to all the others, one bold black plus sign between the two cards, plain white background, bold black ALL CAPS text "HOLD BOTH" at the top of the frame, no gradients, no shadows, no textures, no photorealism, no 3D, no timestamp shown in the image, @[name] is mention syntax for reference only and must never be rendered as visible text, 16:9 aspect ratio, educational YouTube explainer doodle style.
-
-
-
 
 [6:45] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, the same two plain flat cards side by side with the bold black plus sign between them, one bold black ring drawn around the whole pair to bind them together, one black diagonal arrow pointing at that ring from below, plain white background, bold black ALL CAPS text "THE WHOLE POINT" at the top of the frame, no gradients, no shadows, no textures, no photorealism, no 3D, no timestamp shown in the image, @[name] is mention syntax for reference only and must never be rendered as visible text, 16:9 aspect ratio, educational YouTube explainer doodle style.
 
@@ -456,14 +443,6 @@
 [9:52] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, solid cobalt blue #2D5FBF background showing the literal inside of a head, one white doodle closed ring of small white figures drawn at the center of the frame as the shape the mind is waiting for, one white doodle brain shape beside it, and one bold white arrow pointing from the brain to the ring, no gradients, no shadows, no textures, no photorealism, no 3D, no timestamp shown in the image, @[name] is mention syntax for reference only and must never be rendered as visible text, 16:9 aspect ratio, educational YouTube explainer doodle style.
 
 [9:57] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, one closed ring of small generic unnamed doodle stick figures drawn in the center of the frame entirely in faint dashed outline as though no longer really there, and one plain solid black museum plinth shape beneath it, plain white background with nothing else in the frame, bold red ALL CAPS text "NO LONGER EXISTS" at the top of the frame, no gradients, no shadows, no textures, no photorealism, no 3D, no timestamp shown in the image, @[name] is mention syntax for reference only and must never be rendered as visible text, 16:9 aspect ratio, educational YouTube explainer doodle style.
-
-
-
-
-
-
-
-
 
 [10:01] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, six torn paper folder fragments arranged in a loose heap in the center of the frame with one bold black plus sign between them, and one large plain complete folder outline drawn beside the heap in faint dashed line showing what they still do not make, plain white background, bold red ALL CAPS text "DO NOT ADD UP" at the top of the frame, no gradients, no shadows, no textures, no photorealism, no 3D, no timestamp shown in the image, @[name] is mention syntax for reference only and must never be rendered as visible text, 16:9 aspect ratio, educational YouTube explainer doodle style.
 

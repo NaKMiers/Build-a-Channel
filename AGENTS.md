@@ -27,9 +27,9 @@ delegate back. See `.agents/README.md` and `.claude/README.md`.
 
 ## The pipeline
 
-Nine project-local skills, canonical under `.agents/skills/`, discovered by Claude
-through `.claude/skills/` wrappers. Each one validates its inputs, writes its artifact,
-and names the next command.
+Nine pipeline skills and one scene-image management skill are canonical under
+`.agents/skills/` and discovered by Claude through `.claude/skills/` wrappers. Each
+pipeline skill validates its inputs, writes its artifact, and names the next command.
 
 ```
 /topic       chat only, 5 titles, you pick one -> scaffolds projects/<n>-<slug>/
@@ -41,6 +41,12 @@ and names the next command.
 /thumbnail   prompts/thumbnail-prompts.md           (needs cast)
 /check       validation report, runnable any time
 /skill-sync  regenerate the Claude wrappers         (manual only)
+```
+
+Scene-image file management is separate from the content pipeline:
+
+```
+/scene-images   check, rename, move, and verify scene image files
 ```
 
 After `/script` the branches run in parallel: `/transcript`, `/cast`, and `/metadata`
@@ -59,6 +65,7 @@ When the user's request matches a skill, invoke that skill instead of answering 
 - Title, description, tags, SEO -> `/metadata`
 - Thumbnail concepts -> `/thumbnail`
 - "Is this project correct", validate, "what is missing" -> `/check`
+- Manage scene image timestamps, renaming, moves, or verification -> `/scene-images`
 - Added or renamed a skill -> `/skill-sync`
 
 For web browsing use the `/browse` skill from gstack. Do not use

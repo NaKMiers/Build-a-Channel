@@ -7,9 +7,7 @@
       "duration": 285.753,
       "frames": 10939,
       "sample_rate": 44100,
-      "bitrates": [
-        256
-      ]
+      "bitrates": [256]
     },
     {
       "file": "projects/3-why-you-are-a-different-person-with-each-friend-group/audios/part-2.mp3",
@@ -17,9 +15,7 @@
       "duration": 222.433,
       "frames": 8515,
       "sample_rate": 44100,
-      "bitrates": [
-        128
-      ]
+      "bitrates": [128]
     },
     {
       "file": "projects/3-why-you-are-a-different-person-with-each-friend-group/audios/part-3.mp3",
@@ -27,9 +23,7 @@
       "duration": 219.011,
       "frames": 8384,
       "sample_rate": 44100,
-      "bitrates": [
-        128
-      ]
+      "bitrates": [128]
     }
   ]
 }
