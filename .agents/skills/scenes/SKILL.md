@@ -53,8 +53,8 @@ Record the totals. They go in the file header and the `check` skill verifies the
 
 1. **Every prompt begins with its timestamp, copied character for character from the
    transcript.** `[0:00]` stays `[0:00]`, `[00:00]` stays `[00:00]`. Never reformat,
-   re-pad, or renumber a timestamp: these strings become the image file names, so they
-   must match the transcript exactly.
+   re-pad, or renumber a timestamp. When saving the image, replace its colon with a
+   hyphen so the filename works on Windows: `[0:00]` becomes `[0-00].jpg`.
 2. **The `[MM:SS]` prefix and every `@TOKEN` are instructions for the human and the file
    system, not visual content.** They must never appear as rendered text in the generated
    image: no timestamp, clock, or counter burned into a corner, no literal "@NAME" caption
@@ -207,7 +207,8 @@ copy it:
 > If any drifts from the reference sheet, fix it before generating the rest. Drift
 > compounds.
 >
-> Save each image to `scenes/` named by its timestamp, then run **`/check`**.
+> Save each image to `scenes/` using the timestamp with its colon replaced by a hyphen,
+> such as `[3:20]` to `[3-20].jpg`, then run **`/check`**.
 
 ## Guardrails
 

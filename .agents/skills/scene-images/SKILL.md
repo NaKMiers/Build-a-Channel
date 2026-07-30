@@ -7,7 +7,21 @@ description: Safely check, rename, move, and verify TossExplains scene images ag
 
 Read `.agents/rules/house-rules.md`, `.agents/rules/file-formats.md`, and `references/memory.md` first.
 
-Use one operation at a time. Never rename or move files unless its safety checks pass.
+Use one operation at a time. Scene image files are Windows-safe `[M-SS].jpg` names,
+derived from their `[M:SS]` prompt timestamps by replacing `:` with `-`. Never rename
+or move files unless its safety checks pass.
+
+## Migrate Windows-incompatible image names
+
+Use this only to repair existing scene image files containing `:` in their names:
+
+```bash
+python3 .agents/skills/scene-images/scripts/scene_images.py migrate-windows projects/<n>-<slug>
+```
+
+The command inspects every scene image recursively, checks for duplicate destinations
+and existing-file collisions, then replaces `:` with `-`. On any conflict it exits
+without renaming. Run `verify` afterward.
 
 ## Check a numbered range
 
@@ -26,6 +40,8 @@ python3 .agents/skills/scene-images/scripts/scene_images.py rename-range project
 ```
 
 The command checks equal counts, a complete `1` through `N` sequence, unexpected files, and destination collisions before changing any name. On a mismatch it exits without renaming.
+It saves each image as `[M-SS].jpg`, replacing the prompt timestamp colon with a
+hyphen.
 
 ## Flatten range folders
 

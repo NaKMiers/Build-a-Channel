@@ -204,7 +204,7 @@ Only write an alternate cut if the user asks for one.
 If two cues share a timestamp, say so explicitly and state the disambiguation the
 `scenes` skill must record in its header, for example: `[3:24] appears twice; save the
 second one as [3:25] so it does not overwrite the first`. Project 1 has exactly this
-case. It matters because timestamps become scene image file names.
+case. The resulting scene filename replaces `:` with `-`.
 
 ## Step 5 - Report and hand off
 
@@ -227,7 +227,8 @@ that is the file the editor loads. Then:
 - Never split the script by eyeballed word count alone. Check words per second against
   each part's measured duration first, because a mismatched script aligns without error.
 - Never drop `--save-json`. Re-cutting without the cache costs another API call.
-- Never reformat the `[M:SS]` timestamps the tool produces. They become file names.
+- Never reformat the `[M:SS]` timestamps the tool produces. Scene image file names
+  derive from them by replacing `:` with `-` for Windows compatibility.
 - Never commit the audio file. `*.mp3`, `*.wav`, and `*.mp4` are gitignored on purpose, so
   `audios/` keeps only a `.gitkeep` in git. The recording is reproducible from the script,
   and `full.mp3` is reproducible from the parts.

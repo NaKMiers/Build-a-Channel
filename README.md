@@ -132,7 +132,7 @@ projects/               One folder per video
     outputs/            thumbnail-N.jpg, the chosen one suffixed -accepted
     prompts/            character-prompts.md, image-prompts.md,
                         thumbnail-prompts.md, video-prompts.md (reserved, empty on purpose)
-    scenes/             Generated scene images, named [M:SS].jpg by timestamp
+    scenes/             Generated scene images, named [M-SS].jpg by timestamp
     transcribes/        transcript.md, words.json
 ```
 
@@ -249,8 +249,8 @@ for danger, threat, failure, or negation, and never yellow on white because it i
 Every scene prompt is exactly one unbroken line that opens with its timestamp copied character for
 character from the transcript, opens with the STYLE ANCHOR, and closes with the STYLE LOCK. The
 timestamp and the `@` tokens are instructions for you and the file system, never visual content,
-which is why the style lock repeats that negative. The timestamps become the scene image file
-names, so they are never reformatted, re-padded, or renumbered.
+which is why the style lock repeats that negative. Scene filenames derive from the timestamps by
+replacing `:` with `-`, so `[3:20]` is saved as `[3-20].jpg` and works on Windows.
 
 ---
 

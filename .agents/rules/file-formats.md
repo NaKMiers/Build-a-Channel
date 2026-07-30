@@ -23,7 +23,7 @@ projects/<n>-<title-slug>/
     image-prompts.md          Written by `scenes`.
     thumbnail-prompts.md      Written by `thumbnail`.
     video-prompts.md          Reserved and intentionally empty. Not missing.
-  scenes/                     [M:SS].jpg scene images. You generate these.
+  scenes/                     [M-SS].jpg scene images. You generate these.
   transcribes/
     transcript.md             Written by `transcript`.
     transcript-min5.md        Optional coarser cut, only on request.
@@ -131,8 +131,9 @@ blank line, no fences.
   A title line or an attachment note is not harmless decoration here, it is an extra record
   the importing tool will try to render as an image.
 - The timestamp prefix is copied character for character from the transcript. `[0:00]`
-  stays `[0:00]`, `[00:00]` stays `[00:00]`. Never reformat, re-pad, or renumber:
-  these strings become the scene image file names.
+  stays `[0:00]`, `[00:00]` stays `[00:00]`. Never reformat, re-pad, or renumber.
+  Scene image file names replace the timestamp colon with a hyphen for Windows
+  compatibility: `[0:00]` becomes `[0-00].jpg`.
 - **The cast list, the cue counts, the duplicate-timestamp note, and the GENERATION LINE are
   reported in chat by `scenes` instead**, because the human needs them and the tool must not
   see them. A repeated timestamp still gets remapped in the prompts themselves, for example a
@@ -183,6 +184,7 @@ markdown bleeding in.
 - `audios/` holds the narration recording. One file, or `part-1`, `part-2` in read order,
   plus the `full.mp3` that `transcript` combines them into.
   `.mp3`, `.wav`, and `.mp4` are gitignored, so only the `.gitkeep` is tracked.
-- `scenes/[M:SS].jpg` where the bracket name matches the prompt's timestamp exactly.
+- `scenes/[M-SS].jpg`, derived from the matching prompt timestamp by replacing its
+  colon with a hyphen. For example, `[3:20]` becomes `[3-20].jpg`.
 - `characters/NAME.jpeg` where NAME matches the cast token without the `@`.
 - `outputs/thumbnail-N.jpg`, and the chosen one suffixed `-accepted`.

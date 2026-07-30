@@ -9,7 +9,12 @@ from pathlib import Path
 
 STAMP = re.compile(r"^\[(\d+):(\d{2})\]", re.MULTILINE)
 NUMBERED = re.compile(r"^(\d+)_2k\.jpg$")
-TIMESTAMPED = re.compile(r"^\[\d+:\d{2}\]\.jpg$")
+TIMESTAMPED = re.compile(r"^\[\d+-\d{2}\]\.jpg$")
+
+
+def image_name(stamp: str) -> str:
+    """Return the Windows-safe filename for a transcript or prompt timestamp."""
+    return f"[{stamp.replace(':', '-')}].jpg"
 
 
 def fail(message: str, code: int = 2) -> None:
@@ -51,7 +56,7 @@ def inspect(project: Path, start: str, end: str) -> bool:
     folder, expected, numbered, timestamped, unexpected = range_data(project, start, end)
     indices = [int(NUMBERED.fullmatch(item.name).group(1)) for item in numbered]
     root = project / "scenes"
-    collisions = [stamp for stamp in expected if (root / f"[{stamp}].jpg").exists()]
+    collisions = [stamp for stamp in expected if (root / image_name(stamp)).exists()]
     passed = len(expected) == len(numbered) and indices == list(range(1, len(expected) + 1)) and not timestamped and not unexpected and not collisions
     print(f"Range: {folder.name}")
     print(f"Prompt timestamps: {len(expected)}")
@@ -60,7 +65,7 @@ def inspect(project: Path, start: str, end: str) -> bool:
     print(f"Unexpected entries: {len(unexpected)}")
     print(f"Destination collisions: {len(collisions)}")
     if expected:
-        print(f"Expected span: [{expected[0]}].jpg through [{expected[-1]}].jpg")
+        print(f"Expected span: {image_name(expected[0])} through {image_name(expected[-1])}")
     print("PASS" if passed else "FAIL")
     return passed
 
@@ -70,7 +75,7 @@ def rename(project: Path, start: str, end: str) -> None:
         fail("Range was not renamed. Resolve every mismatch first.")
     folder, expected, numbered, _, _ = range_data(project, start, end)
     for source, stamp in zip(numbered, expected, strict=True):
-        source.rename(folder / f"[{stamp}].jpg")
+        source.rename(folder / image_name(stamp))
     print(f"Renamed {len(expected)} images in {folder.name}.")
 
 
@@ -102,9 +107,28 @@ def move(project: Path) -> None:
     print(f"Moved {len(sources)} images and removed {len(folders)} folders.")
 
 
+def migrate_windows(project: Path) -> None:
+    """Replace colons in scene image names after checking every destination."""
+    scenes = project / "scenes"
+    if not scenes.is_dir():
+        fail(f"Missing scenes directory: {scenes}")
+    sources = sorted(item for item in scenes.rglob("*") if item.is_file() and ":" in item.name)
+    destinations = [source.with_name(source.name.replace(":", "-")) for source in sources]
+    duplicate_destinations = {path for path in destinations if destinations.count(path) > 1}
+    collisions = [path for path in destinations if path.exists() and path not in sources]
+    if duplicate_destinations or collisions:
+        print(f"Invalid image names: {len(sources)}")
+        print(f"Duplicate destinations: {len(duplicate_destinations)}")
+        print(f"Destination collisions: {len(collisions)}")
+        fail("No images renamed. Resolve every destination conflict first.")
+    for source, destination in zip(sources, destinations, strict=True):
+        source.rename(destination)
+    print(f"Renamed {len(sources)} image files for Windows compatibility.")
+
+
 def verify(project: Path) -> None:
     scenes = project / "scenes"
-    expected = [f"[{stamp}].jpg" for stamp in prompt_stamps(project)]
+    expected = [image_name(stamp) for stamp in prompt_stamps(project)]
     actual = sorted(item.name for item in scenes.iterdir() if item.is_file() and TIMESTAMPED.fullmatch(item.name))
     unexpected = sorted(item.name for item in scenes.iterdir() if item.is_file() and item.name != ".gitkeep" and not TIMESTAMPED.fullmatch(item.name))
     duplicate_prompts = {name for name in expected if expected.count(name) > 1}
@@ -123,7 +147,7 @@ def verify(project: Path) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command", choices=("check-range", "rename-range", "move", "verify"))
+    parser.add_argument("command", choices=("check-range", "rename-range", "move", "migrate-windows", "verify"))
     parser.add_argument("project", type=Path)
     parser.add_argument("start", nargs="?")
     parser.add_argument("end", nargs="?")
@@ -138,6 +162,8 @@ def main() -> None:
         rename(args.project, args.start, args.end)
     elif args.command == "move":
         move(args.project)
+    elif args.command == "migrate-windows":
+        migrate_windows(args.project)
     else:
         verify(args.project)
 
