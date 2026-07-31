@@ -1,0 +1,4 @@
+interface:
+  display_name: "Scene Polish"
+  short_description: "Safely manage timestamp-named scene images"
+  default_prompt: "Use $scene-polish to check, rename, move, or verify scene images."

@@ -27,8 +27,8 @@ delegate back. See `.agents/README.md` and `.claude/README.md`.
 
 ## The pipeline
 
-Nine pipeline skills and one scene-image management skill are canonical under
-`.agents/skills/` and discovered by Claude through `.claude/skills/` wrappers. Each
+Eight pipeline skills, plus `scene-polish`, `video-swipe`, and `skill-sync`, are canonical
+under `.agents/skills/` and discovered by Claude through `.claude/skills/` wrappers. Each
 pipeline skill validates its inputs, writes its artifact, and names the next command.
 
 ```
@@ -45,7 +45,14 @@ pipeline skill validates its inputs, writes its artifact, and names the next com
 Scene-image file management is separate from the content pipeline:
 
 ```
-/scene-images   check, rename, move, and verify scene image files
+/scene-polish   check, rename, move, and verify scene image files
+```
+
+Competitor research is also separate from the content pipeline:
+
+```
+/video-swipe    research/videos-swipe/<slug>/   frames, contact sheets, visual-analysis.md
+                (needs a YouTube link plus the video file downloaded from that link)
 ```
 
 After `/script` the branches run in parallel: `/transcript`, `/cast`, and `/metadata`
@@ -64,7 +71,8 @@ When the user's request matches a skill, invoke that skill instead of answering 
 - Title, description, tags, SEO -> `/metadata`
 - Thumbnail concepts -> `/thumbnail`
 - "Is this project correct", validate, "what is missing" -> `/check`
-- Manage scene image timestamps, renaming, moves, or verification -> `/scene-images`
+- Manage scene image timestamps, renaming, moves, or verification -> `/scene-polish`
+- Analyze a competitor video, extract its frames, "phan tich video" -> `/video-swipe`
 - Added or renamed a skill -> `/skill-sync`
 
 For web browsing use the `/browse` skill from gstack. Do not use
@@ -72,7 +80,7 @@ For web browsing use the `/browse` skill from gstack. Do not use
 
 ## Quality bar
 
-The nine skills replace a single 533 line mega-prompt (`prompts/master-prompt.md`,
+The pipeline skills replace a single 533 line mega-prompt (`prompts/master-prompt.md`,
 retired to `prompts/retired/`). That prompt encoded 256 hard-won rules, several of them
 recovered from specific generation failures. **This is a reorganization, not a
 compression.** If a skill or rule file looks suspiciously short, something was lost.
@@ -93,5 +101,17 @@ the transcript is built against. It also rewrites the combined file's Xing heade
 parts exported at different bitrates otherwise make players report a badly wrong duration.
 It shares `tools/mp3frames.py` with `audio-to-timestamps.py`, which needs the same
 durations to offset per-part word timings.
-No ffmpeg required anywhere. The `transcript` skill drives all of them. API keys live in a
-gitignored `.env`.
+No ffmpeg required for any of the audio tools. The `transcript` skill drives all of them.
+API keys live in a gitignored `.env`.
+
+`tools/video-frames.py` and `tools/youtube-verify.py` serve the `video-swipe` research
+skill and are the only tools here that do need ffmpeg. `video-frames.py` runs in three
+stages, `candidates` then `finalize` with the agent's review in between, plus a `stats`
+stage that recomputes pacing from an existing `frame-index.csv`; its `ensure-ffmpeg` stage
+fetches a static ffmpeg build when the machine has none. `youtube-verify.py` decides whether
+a local file really is the YouTube video that was named: it checks the link against the
+oEmbed endpoint, which also hands back the real title, channel, and folder slug, then weighs
+the video id in the file name, the title, and an optional duration. A lookup it cannot reach
+is a hard error rather than a weaker verdict, and `--offline` is the explicit opt-out. The
+duration is not fetchable by script, YouTube's bot check hides it, so it arrives from
+`/browse` as `--expect-duration`. Neither tool needs numpy or ffprobe, only Pillow.

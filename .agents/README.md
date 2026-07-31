@@ -18,7 +18,7 @@ that delegate back (see `.claude/README.md`).
 
 ## What lives where
 
-The nine skills are the pipeline. The six rule files are the channel knowledge that used
+Eight of the skills are the content pipeline. The six rule files are the channel knowledge that used
 to sit inside `prompts/master-prompt.md`. Skills read the rule files at run time rather
 than restating them, so a rule is edited in exactly one place.
 

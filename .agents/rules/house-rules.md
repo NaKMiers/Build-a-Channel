@@ -8,9 +8,16 @@ Both Codex and Claude read this file.
 - **Never use the em dash character.** Not in scripts, titles, descriptions, tags,
   prompts, rule files, or chat replies. Use a plain hyphen, a comma, or a period.
   This applies to files you write and to what you say.
-- ASCII only, unless the artifact genuinely needs otherwise. The one sanctioned
-  non-ASCII character is the middle dot `·` used as a separator in prompt-file cast
-  lines, matching the existing project.
+- ASCII only, unless the artifact genuinely needs otherwise. Two sanctioned exceptions,
+  and no others:
+  1. The middle dot `·` used as a separator in prompt-file cast lines, matching the
+     existing project.
+  2. `research/videos-swipe/*/visual-analysis.md` is written in Vietnamese with
+     diacritics, as are the section names that `.agents/skills/video-swipe/SKILL.md`
+     quotes to specify them. These are notes the owner reads, not anything an image model
+     or a downstream tool parses, and unaccented Vietnamese was ambiguous enough to have
+     already produced two unreadable sentences. The em dash ban still applies, and every
+     file name, timestamp, on-screen string, and quoted rule inside them stays verbatim.
 - Never say "sure", "great", "absolutely", or any filler. Go straight into output.
 - Never explain what you are about to do. Just do it.
 

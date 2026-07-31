@@ -1,281 +1,281 @@
-# Phan tich hinh anh - The Rarest Human Possible
+# Phân tích hình ảnh - The Rarest Human Possible
 
-## Ket qua extract
+## Kết quả extract
 
-- Video nguon: 6:18.21, 1920x1080, 30 FPS, 11.344 frame ma hoa.
-- Bo nghien cuu: 181 trang thai hinh anh khac nhau, giu nguyen do phan giai 1920x1080.
-- Contact sheet: 8 trang, moi frame co so thu tu va timestamp.
+- Video nguồn: 6:18.21, 1920x1080, 30 FPS, 11.344 frame mã hóa.
+- Bộ nghiên cứu: 181 trạng thái hình ảnh khác nhau, giữ nguyên độ phân giải 1920x1080.
+- Contact sheet: 8 trang, mỗi frame có số thứ tự và timestamp.
 - Index: `frame-index.csv`.
-- Phuong phap: phat hien thay doi noi dung o nguong thap de bat ca cut lon va cac buoc build nho. Tu 187 ung vien, loai 2 frame chuyen tiep trong va 4 ban gan trung khong them thong tin.
+- Phương pháp: phát hiện thay đổi nội dung ở ngưỡng thấp để bắt cả cut lớn và các bước build nhỏ. Từ 187 ứng viên, loại 2 frame chuyển tiếp trong và 4 bản gần trùng không thêm thông tin.
 
-"181 frame" o day khong co nghia la lay 181 frame ngau nhien trong 11.344 frame. Day la 181 visual beat. Moi beat la mot trang thai ma nguoi xem thuc su nhan duoc thong tin moi, vi du them mot icon, doi goc nhin, them mot nhan vat, hoan thanh mot phep tinh, hoac chuyen sang mot an du moi.
+"181 frame" ở đây không có nghĩa là lấy 181 frame ngẫu nhiên trong 11.344 frame. Đây là 181 visual beat. Mỗi beat là một trạng thái mà người xem thực sự nhận được thông tin mới, ví dụ thêm một icon, đổi góc nhìn, thêm một nhân vật, hoàn thành một phép tính, hoặc chuyển sang một ẩn dụ mới.
 
-## Ket luan quan trong nhat
+## Kết luận quan trọng nhất
 
-Video nay khong hay vi moi frame deu day chi tiet.
+Video này không hay vì mọi frame đều đầy chi tiết.
 
-No hay vi muc do chi tiet duoc dieu tiet rat thong minh. Canh ke chuyen co boi canh dep va giau khong khi. Canh khoa hoc duoc rut gon thanh mot so do. Canh con so chi giu mot phep tinh. Canh cam xuc chi giu mot khuon mat. Sau do video doi che do truoc khi mat nguoi xem quen voi bo cuc cu.
+Nó hay vì mức độ chi tiết được điều tiết rất thông minh. Cảnh kể chuyện có bối cảnh đẹp và giàu không khí. Cảnh khoa học được rút gọn thành một sơ đồ. Cảnh con số chỉ giữ một phép tính. Cảnh cảm xúc chỉ giữ một khuôn mặt. Sau đó video đổi chế độ trước khi mắt người xem quen với bố cục cũ.
 
-Cong thuc cot loi la:
+Công thức cốt lõi là:
 
-1. Moi cau noi duoc chuyen thanh mot hanh dong thi giac cu the.
-2. Moi frame chi co mot diem nhin chinh.
-3. Thong tin duoc build tung lop thay vi dua ra mot bang day du ngay lap tuc.
-4. Cu 1 den 2 giay lai co mot phan thuong thi giac nho.
-5. Tat ca su da dang van nam trong mot he thong nhan vat, net ve va bang mau thong nhat.
+1. Mỗi câu nói được chuyển thành một hành động thị giác cụ thể.
+2. Mỗi frame chỉ có một điểm nhìn chính.
+3. Thông tin được build từng lớp thay vì đưa ra một bảng đầy đủ ngay lập tức.
+4. Cứ 1 đến 2 giây lại có một phần thưởng thị giác nhỏ.
+5. Tất cả sự đa dạng vẫn nằm trong một hệ thống nhân vật, nét vẽ và bảng màu thống nhất.
 
-Dieu TossExplains nen hoc la he thong quyet dinh thi giac nay, khong phai sao chep be mat my thuat cua PastTense.
+Điều TossExplains nên học là hệ thống quyết định thị giác này, không phải sao chép bề mặt mỹ thuật của PastTense.
 
-## Nhip hinh anh
+## Nhịp hình ảnh
 
-| Chi so | Ket qua |
+| Chỉ số | Kết quả |
 | --- | ---: |
 | Visual beat trong 6:18 | 181 |
-| Visual beat moi phut | 28,7 |
-| Thoi gian trung binh moi beat | 2,09 giay |
-| Trung vi khoang cach giua hai beat | 1,87 giay |
-| Lan thay doi trong 1 giay hoac nhanh hon | 31 |
-| Lan thay doi trong 2 giay hoac nhanh hon | 99 tren 180 |
-| Khoang giu hinh tu 4 giay tro len | 7 |
-| Nhip rieng phan hook | 1,62 giay moi beat |
+| Visual beat mỗi phút | 28,7 |
+| Thời gian trung bình mỗi beat | 2,09 giây |
+| Trung vị khoảng cách giữa hai beat | 1,87 giây |
+| Lần thay đổi trong 1 giây hoặc nhanh hơn | 31 |
+| Lần thay đổi trong 2 giây hoặc nhanh hơn | 99 trên 180 |
+| Khoảng giữ hình từ 4 giây trở lên | 7 |
+| Nhịp riêng phần hook | 1,62 giây mỗi beat |
 
-Day la ly do video tao cam giac "rat dau tu". Nguoi xem khong phai nhin cung mot y tuong trong 5 den 8 giay. Ke ca khi bo cuc co ban duoc giu lai, mot chi tiet moi se xuat hien de tao tien trien.
+Đây là lý do video tạo cảm giác "rất đầu tư". Người xem không phải nhìn cùng một ý tưởng trong 5 đến 8 giây. Kể cả khi bố cục cơ bản được giữ lại, một chi tiết mới sẽ xuất hiện để tạo tiến triển.
 
-Nhip khong dong deu. Hook nhanh nhat. Cac phan khoa hoc cham hon de nguoi xem kip hieu. Doan ket cham hon nua de thong diep cam xuc co thoi gian ha xuong. Day la nhip co chu y, khong phai thay hinh lien tuc mot cach may moc.
+Nhịp không đồng đều. Hook nhanh nhất. Các phần khoa học chậm hơn để người xem kịp hiểu. Đoạn kết chậm hơn nữa để thông điệp cảm xúc có thời gian hạ xuống. Đây là nhịp có chủ ý, không phải thay hình liên tục một cách máy móc.
 
-## Tam co che lam video cuon
+## Tám cơ chế làm video cuốn
 
-### 1. Hook la mot cau chuyen, khong phai mot loi gioi thieu
+### 1. Hook là một câu chuyện, không phải một lời giới thiệu
 
-Tu [frame 001](extracted-frames/frame-001_00m00.00s.jpg) den [frame 029](extracted-frames/frame-029_00m44.20s.jpg), video dung 29 visual beat trong khoang 47 giay.
+Từ [frame 001](extracted-frames/frame-001_00m00.00s.jpg) đến [frame 029](extracted-frames/frame-029_00m44.20s.jpg), video dùng 29 visual beat trong khoảng 47 giây.
 
-Nguoi xem duoc dua vao mot cong vien, gap mot nguoi phu nu, thay lan luot da trang nhu tuyet, toc bac, mat xanh, nguon goc chau Phi, tay trai, hen ho, tinh yeu, roi dong ho bao thuc pha vo tat ca. Cau hoi "nguoi nhu vay co ton tai khong?" chi den sau khi nguoi xem da co mot khoan dau tu cam xuc nho vao nhan vat.
+Người xem được đưa vào một công viên, gặp một người phụ nữ, thấy lần lượt da trắng như tuyết, tóc bạc, mắt xanh, nguồn gốc châu Phi, tay trái, hẹn hò, tình yêu, rồi đồng hồ báo thức phá vỡ tất cả. Câu hỏi "người như vậy có tồn tại không?" chỉ đến sau khi người xem đã có một khoản đầu tư cảm xúc nhỏ vào nhân vật.
 
-Chuoi goc nhin cung duoc thay doi co chu y:
+Chuỗi góc nhìn cũng được thay đổi có chủ ý:
 
-- Toan canh cong vien de dinh vi khong gian.
-- Can trung khi nhan vat buoc vao.
-- Can can cua tay, toc va mat de bien mo ta thanh vat the.
-- Chan dung de tao ket noi.
-- Can doi thoai va hen ho de tao quan he.
-- Can dong ho va giuong ngu de tao cu lat.
-- Can dam dong va con so 8 ty de mo rong quy mo.
+- Toàn cảnh công viên để định vị không gian.
+- Cận trung khi nhân vật bước vào.
+- Cận cận của tay, tóc và mắt để biến mô tả thành vật thể.
+- Chân dung để tạo kết nối.
+- Cận đối thoại và hẹn hò để tạo quan hệ.
+- Cận đồng hồ và giường ngủ để tạo cú lật.
+- Cận đám đông và con số 8 tỷ để mở rộng quy mô.
 
-Trong 30 giay, video di tu mot cau chuyen ca nhan den mot cau hoi ve toan bo loai nguoi. Do la mot escalation rat sach.
+Trong 30 giây, video đi từ một câu chuyện cá nhân đến một câu hỏi về toàn bộ loài người. Đó là một escalation rất sạch.
 
-### 2. Moi danh tu quan trong deu co hinh anh rieng
+### 2. Mỗi danh từ quan trọng đều có hình ảnh riêng
 
-Kich ban noi "snow", video cho bong tuyet. Noi "silver and curly hair", video tach toc thanh mot can rieng. Noi "left hand", video cho ngon tay trai bam dien thoai. Noi "7,000 ethnic groups", video cho ban do va mot tap hop nhan vat da dang. Noi "melanin", video cho gene, hat sac to, da, nang long va mat.
+Kịch bản nói "snow", video cho bông tuyết. Nói "silver and curly hair", video tách tóc thành một cận riêng. Nói "left hand", video cho ngón tay trái bấm điện thoại. Nói "7,000 ethnic groups", video cho bản đồ và một tập hợp nhân vật đa dạng. Nói "melanin", video cho gene, hạt sắc tố, da, nang lông và mắt.
 
-Day la su khac biet giua minh hoa noi dung va trang tri noi dung.
+Đây là sự khác biệt giữa minh họa nội dung và trang trí nội dung.
 
-Trang tri la cho mot nhan vat dung noi trong khi narration tiep tuc. Minh hoa la moi khai niem moi deu lam bo cuc thay doi. Video nay lam dieu thu hai.
+Trang trí là cho một nhân vật đứng nói trong khi narration tiếp tục. Minh họa là mỗi khái niệm mới đều làm bố cục thay đổi. Video này làm điều thứ hai.
 
-### 3. Progressive disclosure tao micro-curiosity
+### 3. Progressive disclosure tạo micro-curiosity
 
-Nhieu bo cuc khong xuat hien hoan chinh. Chung duoc build:
+Nhiều bố cục không xuất hiện hoàn chỉnh. Chúng được build:
 
-- Cac dac diem cua "rarest human" xuat hien tung icon o 00:47.
-- Nam nhom sac toc lon xuat hien tung nguoi mot.
-- Melanin lan luot anh huong den da, toc va mat.
-- Cac mau mat xuat hien tung cap.
-- Retina bat dau voi ba cone, sau do them cone thu tu.
-- So do nhiem sac the them tung lop de giai thich vi sao dac diem chu yeu xuat hien o phu nu.
-- Phan ket them lan luot nhom mau, gene, nao va nhieu dac diem khac.
+- Các đặc điểm của "rarest human" xuất hiện từng icon ở 00:47.
+- Năm nhóm sắc tộc lớn xuất hiện từng người một.
+- Melanin lần lượt ảnh hưởng đến da, tóc và mắt.
+- Các màu mắt xuất hiện từng cặp.
+- Retina bắt đầu với ba cone, sau đó thêm cone thứ tư.
+- Sơ đồ nhiễm sắc thể thêm từng lớp để giải thích vì sao đặc điểm chủ yếu xuất hiện ở phụ nữ.
+- Phần kết thêm lần lượt nhóm máu, gene, não và nhiều đặc điểm khác.
 
-Moi lan mot phan moi xuat hien, nao nguoi xem nhan duoc mot cau tra loi nho va dong thoi cho mot phan tiep theo. Mot bo cuc co the song 2 den 4 giay ma van khong tinh.
+Mỗi lần một phần mới xuất hiện, não người xem nhận được một câu trả lời nhỏ và đồng thời chờ một phần tiếp theo. Một bố cục có thể sống 2 đến 4 giây mà vẫn không tĩnh.
 
-### 4. Video luan phien nam che do hinh anh
+### 4. Video luân phiên năm chế độ hình ảnh
 
-Nam che do chinh duoc luan phien:
+Năm chế độ chính được luân phiên:
 
-1. Canh doi song co boi canh, vi du cong vien, hen ho, lop hoc.
-2. Chan dung hoac bieu cam, vi du ngac nhien, yeu, suy nghi.
-3. So do khoa hoc, vi du gene, melanin, retina, nao.
-4. Infographic va phep tinh, vi du 500 tren 8 ty, 1 tren 20.000.
-5. An du quy mo, vi du dam dong, bau troi sao, hat cat, dan ca trong bien.
+1. Cảnh đời sống có bối cảnh, ví dụ công viên, hẹn hò, lớp học.
+2. Chân dung hoặc biểu cảm, ví dụ ngạc nhiên, yêu, suy nghĩ.
+3. Sơ đồ khoa học, ví dụ gene, melanin, retina, não.
+4. Infographic và phép tính, ví dụ 500 trên 8 tỷ, 1 trên 20.000.
+5. Ẩn dụ quy mô, ví dụ đám đông, bầu trời sao, hạt cát, đàn cá trong biển.
 
-Khong co che do nao bi dung qua lau. Su thay doi the loai hinh anh la mot phan cua retention.
+Không có chế độ nào bị dùng quá lâu. Sự thay đổi thể loại hình ảnh là một phần của retention.
 
-### 5. Chi tiet co chuc nang, khong phai chi tiet trang tri
+### 5. Chi tiết có chức năng, không phải chi tiết trang trí
 
-Canh cong vien co cay, hoa, ghe, duong di va chieu sau vi muc tieu la lam cuoc gap go co ve that. Canh cac nhom nguoi nho co moi truong song rieng vi boi canh dia ly la noi dung. Canh san bay co cua so, may bay, radar va bang thi luc vi canh do can dien ta mot cuoc kiem tra.
+Cảnh công viên có cây, hoa, ghế, đường đi và chiều sâu vì mục tiêu là làm cuộc gặp gỡ có vẻ thật. Cảnh các nhóm người nhỏ có môi trường sống riêng vì bối cảnh địa lý là nội dung. Cảnh sân bay có cửa sổ, máy bay, radar và bảng thị lực vì cảnh đó cần diễn tả một cuộc kiểm tra.
 
-Nguoc lai, phep tinh xac suat dung nen phang va rat it vat the. So do gene chi giu nhung thanh phan can cho quan he nhan qua. Video khong nham "nhieu chi tiet" voi "chat luong cao".
+Ngược lại, phép tính xác suất dùng nền phẳng và rất ít vật thể. Sơ đồ gene chỉ giữ những thành phần cần cho quan hệ nhân quả. Video không nhầm "nhiều chi tiết" với "chất lượng cao".
 
-Chat luong den tu viec biet frame nao can the gioi va frame nao can su im lang.
+Chất lượng đến từ việc biết frame nào cần thế giới và frame nào cần sự im lặng.
 
-### 6. Bo cuc duoc thiet ke cho cach mat doc thong tin
+### 6. Bố cục được thiết kế cho cách mắt đọc thông tin
 
-Video thuong dung mot trong cac duong doc sau:
+Video thường dùng một trong các đường đọc sau:
 
-- Trai sang phai: nguyen nhan, mui ten, ket qua.
-- Tren xuong duoi: tieu de, vat the, nhan.
-- Trung tam: mot nhan vat hoac con so quan trong.
-- Doi xung: hai mat, hai ban cau nao, hai nhiem sac the.
-- Truoc va sau: nhan vat binh thuong, dac diem hiem duoc them vao.
+- Trái sang phải: nguyên nhân, mũi tên, kết quả.
+- Trên xuống dưới: tiêu đề, vật thể, nhãn.
+- Trung tâm: một nhân vật hoặc con số quan trọng.
+- Đối xứng: hai mắt, hai bán cầu não, hai nhiễm sắc thể.
+- Trước và sau: nhân vật bình thường, đặc điểm hiếm được thêm vào.
 
-Negative space duoc de san cho nhan, mui ten va con so. Chu khong bi dat len vung hinh anh phuc tap. Vi vay frame van doc duoc tren man hinh dien thoai.
+Negative space được để sẵn cho nhãn, mũi tên và con số. Chữ không bị đặt lên vùng hình ảnh phức tạp. Vì vậy frame vẫn đọc được trên màn hình điện thoại.
 
-### 7. Bang mau vua thong nhat vua bao hieu chuong moi
+### 7. Bảng màu vừa thống nhất vừa báo hiệu chương mới
 
-Video dung mot he pastel am va net vien toi xuyen suot, nhung thay mau nen de chia khoi y:
+Video dùng một hệ pastel ấm và nét viền tối xuyên suốt, nhưng thay màu nền để chia khối ý:
 
-- Vang kem cho narration va phep tinh.
-- Hong san ho cho albinism va phenotype.
-- Xanh olive cho "rarest human" va cac moc xac suat cong don.
-- Tim lavender cho tetrachromacy va thi giac.
-- Xanh nhat cho hyperthymesia va nha nghien cuu.
-- Xanh dam bau troi sao chi xuat hien khi can cam giac vu tru.
+- Vàng kem cho narration và phép tính.
+- Hồng san hô cho albinism và phenotype.
+- Xanh olive cho "rarest human" và các mốc xác suất cộng dồn.
+- Tím lavender cho tetrachromacy và thị giác.
+- Xanh nhạt cho hyperthymesia và nhà nghiên cứu.
+- Xanh đậm bầu trời sao chỉ xuất hiện khi cần cảm giác vũ trụ.
 
-Mau nen khong chi lam dep. No la bien bao chuong. Nguoi xem cam thay video da sang phan moi truoc ca khi narration noi ro.
+Màu nền không chỉ làm đẹp. Nó là biển báo chương. Người xem cảm thấy video đã sang phần mới trước cả khi narration nói rõ.
 
-### 8. Moi chuong lai mo mot curiosity loop moi
+### 8. Mỗi chương lại mở một curiosity loop mới
 
-Video khong chi co mot cau hoi "nguoi hiem nhat la ai?". No tach cau hoi do thanh mot tro choi cong don:
+Video không chỉ có một câu hỏi "người hiếm nhất là ai?". Nó tách câu hỏi đó thành một trò chơi cộng dồn:
 
-- Sac toc hiem den dau?
-- Them albinism thi sao?
-- Mau mat nao hiem hon?
-- Tay trai thay doi xac suat the nao?
-- Neu co bon loai cone thi sao?
-- Neu nho gan nhu moi ngay trong doi thi sao?
-- Tong so cuoi cung lon den muc nao?
+- Sắc tố hiếm đến đâu?
+- Thêm albinism thì sao?
+- Màu mắt nào hiếm hơn?
+- Tay trái thay đổi xác suất thế nào?
+- Nếu có bốn loại cone thì sao?
+- Nếu nhớ gần như mọi ngày trong đời thì sao?
+- Tổng số cuối cùng lớn đến mức nào?
 
-Moi chuong co mot cau hoi, mot giai thich va mot con so payoff. Sau payoff, video lap tuc mo bien moi. Nguoi xem luon co ly do de o lai them mot chuong.
+Mỗi chương có một câu hỏi, một giải thích và một con số payoff. Sau payoff, video lập tức mở biến mới. Người xem luôn có lý do để ở lại thêm một chương.
 
-## Phan tich tung chuong
+## Phân tích từng chương
 
-| Thoi gian | Frame | Cach hinh anh hoat dong | Tac dong |
+| Thời gian | Frame | Cách hình ảnh hoạt động | Tác động |
 | --- | --- | --- | --- |
-| 00:00-00:47 | 001-029 | Cau chuyen cong vien, macro detail, hen ho, dream reveal, dam dong 8 ty | Tao cam xuc truoc, sau do moi dat cau hoi tri tue |
-| 00:47-01:39 | 030-063 | Icon build, ban do, top 5 nhom, crowd 1,4 ty, cac nhom nho trong moi truong rieng, phep chia | Bien quy mo dan so thanh thu co the nhin thay |
-| 01:39-02:22 | 064-084 | Albinism card, gene, melanin, da-toc-mat, phenotype truoc/sau, mau mat, dam dong | Di tu co che vi mo den bieu hien con nguoi va tan suat |
-| 02:22-03:40 | 085-120 | Mau mat, em be, gradient melanin, san bay, kham mat, gia dinh, sinh doi, DNA, nao, lop hoc, khao sat | Xen ke khoa hoc voi tinh huong doi song de tranh cam giac bai giang |
-| 03:40-04:30 | 121-139 | Retina, cone build, mat da sac, pho anh sang, "con chim" ma nguoi thuong khong doc duoc, nhiem sac the | Bien mot khai niem kho thanh mot trai nghiem thi giac co tinh vui choi |
-| 04:30-05:16 | 140-156 | Hyperthymesia card, thought bubble, ky uc bi gach, nha khoa hoc, 2006, Jill Price, filmstrip, world map | Chuyen tu dinh nghia sang lich su ca nhan, sau do ve do hiem |
-| 05:16-05:48 | 157-170 | Recap tung dac diem, nhan vat tong hop, 6,83, bau troi sao, cat va 910.000 Trai Dat | Lap lai thong tin theo dang nen de tao cam giac payoff lon |
-| 05:48-06:18 | 171-181 | "Not rarest", thu vien dac diem, unique, vuot kho, bien ca, "you", keep swimming, CTA | Doi thong tin lanh thanh mot thong diep ca nhan va am ap |
+| 00:00-00:47 | 001-029 | Câu chuyện công viên, macro detail, hẹn hò, dream reveal, đám đông 8 tỷ | Tạo cảm xúc trước, sau đó mới đặt câu hỏi trí tuệ |
+| 00:47-01:39 | 030-063 | Icon build, bản đồ, top 5 nhóm, crowd 1,4 tỷ, các nhóm nhỏ trong môi trường riêng, phép chia | Biến quy mô dân số thành thứ có thể nhìn thấy |
+| 01:39-02:22 | 064-084 | Albinism card, gene, melanin, da-tóc-mắt, phenotype trước/sau, màu mắt, đám đông | Đi từ cơ chế vi mô đến biểu hiện con người và tần suất |
+| 02:22-03:40 | 085-120 | Màu mắt, em bé, gradient melanin, sân bay, khám mắt, gia đình, sinh đôi, DNA, não, lớp học, khảo sát | Xen kẽ khoa học với tình huống đời sống để tránh cảm giác bài giảng |
+| 03:40-04:30 | 121-139 | Retina, cone build, mắt đa sắc, phổ ánh sáng, "con chim" mà người thường không đọc được, nhiễm sắc thể | Biến một khái niệm khó thành một trải nghiệm thị giác có tính vui chơi |
+| 04:30-05:16 | 140-156 | Hyperthymesia card, thought bubble, ký ức bị gạch, nhà khoa học, 2006, Jill Price, filmstrip, world map | Chuyển từ định nghĩa sang lịch sử cá nhân, sau đó về độ hiếm |
+| 05:16-05:48 | 157-170 | Recap từng đặc điểm, nhân vật tổng hợp, 6,83, bầu trời sao, cát và 910.000 Trái Đất | Lặp lại thông tin theo dạng nén để tạo cảm giác payoff lớn |
+| 05:48-06:18 | 171-181 | "Not rarest", thư viện đặc điểm, unique, vượt khó, biển cả, "you", keep swimming, CTA | Đổi thông tin lạnh thành một thông điệp cá nhân và ấm áp |
 
-## Vi sao phan ket hieu qua
+## Vì sao phần kết hiệu quả
 
-Neu video dung o con so xac suat, no chi la mot explainer thu vi. No tiep tuc mot buoc:
+Nếu video dừng ở con số xác suất, nó chỉ là một explainer thú vị. Nó tiếp tục một bước:
 
-1. Pha vo ket luan bang "Not Rarest Human".
-2. Mo rong ra vo so dac diem chua duoc tinh.
-3. Chuyen tu "nhan vat hiem" sang "ban la duy nhat".
-4. Dung an du "plenty of fish in the sea".
-5. Dat nhan vat "You" vao giua dan ca.
-6. Ket bang "Keep Swimming".
+1. Phá vỡ kết luận bằng "Not Rarest Human".
+2. Mở rộng ra vô số đặc điểm chưa được tính.
+3. Chuyển từ "nhân vật hiếm" sang "bạn là duy nhất".
+4. Dùng ẩn dụ "plenty of fish in the sea".
+5. Đặt nhân vật "You" vào giữa đàn cá.
+6. Kết bằng "Keep Swimming".
 
-Doan ket tra lai gia tri cam xuc cho nguoi xem. Kien thuc khong chi nam trong dau, no duoc phan chieu tro lai danh tinh cua nguoi xem. Day la ly do video co kha nang duoc chia se cao hon mot video chi day so lieu.
+Đoạn kết trả lại giá trị cảm xúc cho người xem. Kiến thức không chỉ nằm trong đầu, nó được phản chiếu trở lại danh tính của người xem. Đây là lý do video có khả năng được chia sẻ cao hơn một video chỉ dạy số liệu.
 
-## Nhung diem khong nen sao chep
+## Những điểm không nên sao chép
 
-### 1. Phep tinh co loi
+### 1. Phép tính có lỗi
 
-O [frame 082](extracted-frames/frame-082_02m16.20s.jpg), hinh anh ghi ethnic origin la 1 tren 160.000.000. Voi 500 nguoi tren 8 ty, ket qua dung la 1 tren 16.000.000. Narration va cac ket qua tiep theo lai dung 16 trieu, nen frame nay lech mot bac 10.
+Ở [frame 082](extracted-frames/frame-082_02m16.20s.jpg), hình ảnh ghi ethnic origin là 1 trên 160.000.000. Với 500 người trên 8 tỷ, kết quả đúng là 1 trên 16.000.000. Narration và các kết quả tiếp theo lại dùng 16 triệu, nên frame này lệch một bậc 10.
 
-Neu nhan tat ca con so video su dung:
+Nếu nhân tất cả con số video sử dụng:
 
 `16.000.000 x 20.000 x 1.667 x 10 x 80.000 x 16.000.000 = 6,828032 x 10^27`
 
-Theo he short scale ma video dung khi noi ve so sao, day la khoang 6,83 octillion, khong phai 6,83 septillion nhu [frame 164](extracted-frames/frame-164_05m31.37s.jpg). Sai lech la 1.000 lan.
+Theo hệ short scale mà video dùng khi nói về số sao, đây là khoảng 6,83 octillion, không phải 6,83 septillion như [frame 164](extracted-frames/frame-164_05m31.37s.jpg). Sai lệch là 1.000 lần.
 
-### 2. Gia dinh cac dac diem doc lap la qua don gian
+### 2. Giả định các đặc điểm độc lập là quá đơn giản
 
-Video nhan cac tan suat nhu the sac toc, albinism, gioi tinh, tetrachromacy va cac dac diem khac khong lien quan voi nhau. Trong thuc te, mot so dac diem phu thuoc gioi tinh, di truyen va quan the. Phep nhan tao mot tro choi narration rat tot, nhung khong phai mot uoc tinh xac suat chat che.
+Video nhân các tần suất như thể sắc tố, albinism, giới tính, tetrachromacy và các đặc điểm khác không liên quan với nhau. Trong thực tế, một số đặc điểm phụ thuộc giới tính, di truyền và quần thể. Phép nhân tạo một trò chơi narration rất tốt, nhưng không phải một ước tính xác suất chặt chẽ.
 
-### 3. Mot vai cut la hinh trung gian bi blur
+### 3. Một vài cut là hình trung gian bị blur
 
-Video co mot so khoanh khac zoom hoac crossfade lam chu va nhan vat mem. Day la ly do bo extract da loai cac trang thai khong them thong tin, thay vi coi moi thay doi pixel la mot scene.
+Video có một số khoảnh khắc zoom hoặc crossfade làm chữ và nhân vật mềm. Đây là lý do bộ extract đã loại các trạng thái không thêm thông tin, thay vì coi mọi thay đổi pixel là một scene.
 
-Bai hoc cho TossExplains la hoc visual storytelling, progressive disclosure va nhip. Khong nen ke thua cach noi qua chac chan ve mot phep tinh chua duoc kiem tra.
+Bài học cho TossExplains là học visual storytelling, progressive disclosure và nhịp. Không nên kế thừa cách nói quá chắc chắn về một phép tính chưa được kiểm tra.
 
-## Cach ap dung cho TossExplains ma van giu dung channel DNA
+## Cách áp dụng cho TossExplains mà vẫn giữ đúng channel DNA
 
-PastTense va TossExplains co chung ngon ngu doodle, nhung TossExplains co khoa phong cach rieng: nen trang la da so, mau phang, khong gradient, khong texture, nhan vat va mascot nhat quan, tam ly hoc gan voi trai nghiem cua "you". Khong can pha khoa nay de dat duoc do phong phu cua video mau.
+PastTense và TossExplains có chung ngôn ngữ doodle, nhưng TossExplains có khóa phong cách riêng: nền trắng là đa số, màu phẳng, không gradient, không texture, nhân vật và mascot nhất quán, tâm lý học gắn với trải nghiệm của "you". Không cần phá khóa này để đạt được độ phong phú của video mẫu.
 
-### Muc tieu nhip de xuat
+### Mục tiêu nhịp đề xuất
 
-| Phan | Visual beat de xuat |
+| Phần | Visual beat đề xuất |
 | --- | --- |
-| 45 giay dau | 32-38 beat moi phut, khoang 1,6-1,9 giay moi beat |
-| Than bai | 24-30 beat moi phut, khoang 2-2,5 giay moi beat |
-| Doan ket cam xuc | 20-24 beat moi phut, khoang 2,5-3 giay moi beat |
+| 45 giây đầu | 32-38 beat mỗi phút, khoảng 1,6-1,9 giây mỗi beat |
+| Thân bài | 24-30 beat mỗi phút, khoảng 2-2,5 giây mỗi beat |
+| Đoạn kết cảm xúc | 20-24 beat mỗi phút, khoảng 2,5-3 giây mỗi beat |
 
-Voi video TossExplains 10 den 14 phut, khong nhat thiet phai tao 300 anh hoan toan doc lap. Co the dung ba cap:
+Với video TossExplains 10 đến 14 phút, không nhất thiết phải tạo 300 ảnh hoàn toàn độc lập. Có thể dùng ba cấp:
 
-1. Hero scene moi cho moi y lon.
-2. Bien the build A/B/C cua cung mot bo cuc cho cac danh sach, phep tinh va quan he nhan qua.
-3. Can can hoac reaction insert de nhan vao mot tu khoa quan trong.
+1. Hero scene mới cho mỗi ý lớn.
+2. Biến thể build A/B/C của cùng một bố cục cho các danh sách, phép tính và quan hệ nhân quả.
+3. Cận cận hoặc reaction insert để nhấn vào một từ khóa quan trọng.
 
-Mot base scene tot co the tao 2 den 4 visual beat neu moi bien the them thong tin thuc su.
+Một base scene tốt có thể tạo 2 đến 4 visual beat nếu mỗi biến thể thêm thông tin thực sự.
 
-### Quy tac thiet ke scene nen bo sung vao quy trinh tu duy
+### Quy tắc thiết kế scene nên bổ sung vào quy trình tư duy
 
-Truoc khi viet prompt, gan moi cau narration vao mot trong sau vai tro:
+Trước khi viết prompt, gán mỗi câu narration vào một trong sáu vai trò:
 
-- Locate: no xay ra o dau?
-- Demonstrate: hanh dong nao dang xay ra?
-- Explain: co che nao gay ra no?
-- Compare: hai trang thai khac nhau the nao?
-- Quantify: con so lon hay nho den muc nao?
-- Emotionalize: nguoi xem cam thay gi?
-- Bridge: y cu dang bien thanh y moi nhu the nao?
+- Locate: nó xảy ra ở đâu?
+- Demonstrate: hành động nào đang xảy ra?
+- Explain: cơ chế nào gây ra nó?
+- Compare: hai trạng thái khác nhau thế nào?
+- Quantify: con số lớn hay nhỏ đến mức nào?
+- Emotionalize: người xem cảm thấy gì?
+- Bridge: ý cũ đang biến thành ý mới như thế nào?
 
-Neu mot frame khong lam it nhat mot vai tro, frame do co nguy co chi la trang tri.
+Nếu một frame không làm ít nhất một vai trò, frame đó có nguy cơ chỉ là trang trí.
 
-### Ti le da dang hinh anh de xuat
+### Tỉ lệ đa dạng hình ảnh đề xuất
 
-Day la ti le tham chieu, khong phai khoa cung:
+Đây là tỉ lệ tham chiếu, không phải khóa cứng:
 
-- 25-30% canh nhan vat va tinh huong doi song.
-- 15-20% canh tam ly ben trong, thought object, memory, brain.
-- 15-20% so do co che va nghien cuu.
-- 10-15% then-vs-now hoac so sanh.
+- 25-30% cảnh nhân vật và tình huống đời sống.
+- 15-20% cảnh tâm lý bên trong, thought object, memory, brain.
+- 15-20% sơ đồ cơ chế và nghiên cứu.
+- 10-15% then-vs-now hoặc so sánh.
 - 10-15% anthropology, tribe, ritual, ancestral environment.
-- 10% con so, scale va infographic.
-- 5-10% an du cam xuc hoac visual payoff.
+- 10% con số, scale và infographic.
+- 5-10% ẩn dụ cảm xúc hoặc visual payoff.
 
-Khong de cung mot layout xuat hien qua hai beat lien tiep, tru khi dang progressive build co chu y.
+Không để cùng một layout xuất hiện quá hai beat liên tiếp, trừ khi đang progressive build có chủ ý.
 
-### Tang chi tiet dung cho TossExplains
+### Tăng chi tiết đúng cho TossExplains
 
-Do chi tiet nen den tu specificity, khong den tu them do vat ngau nhien.
+Độ chi tiết nên đến từ specificity, không đến từ thêm đồ vật ngẫu nhiên.
 
-Vi du:
+Ví dụ:
 
-- Canh nghien cuu khong chi la "mot phong lab". No can dung apparatus cua thi nghiem, vi tri cua nguoi tham gia, nut bam, ghe, vach ngan hoac bang diem thuc su quan trong.
-- Canh anthropology khong chi la "mot bo lac". No can vong lua, vi tri nguoi trong va ngoai nhom, cong cu, khoang cach co the, va bo cuc cho thay status hoac belonging.
-- Canh modern mismatch khong chi la "ban cam thay co don". No can mot tinh huong cu the nhu group chat, ban tiec, thang may, train carriage hoac phong ngu 2 gio sang.
-- Canh so do nao khong chi la mot bo nao co nhan. Mui ten phai noi ro luong thong tin va phan nao tao ra hanh vi nao.
+- Cảnh nghiên cứu không chỉ là "một phòng lab". Nó cần đúng apparatus của thí nghiệm, vị trí của người tham gia, nút bấm, ghế, vách ngăn hoặc bảng điểm thực sự quan trọng.
+- Cảnh anthropology không chỉ là "một bộ lạc". Nó cần vòng lửa, vị trí người trong và ngoài nhóm, công cụ, khoảng cách cơ thể, và bố cục cho thấy status hoặc belonging.
+- Cảnh modern mismatch không chỉ là "bạn cảm thấy cô đơn". Nó cần một tình huống cụ thể như group chat, bàn tiệc, thang máy, train carriage hoặc phòng ngủ 2 giờ sáng.
+- Cảnh sơ đồ não không chỉ là một bộ não có nhãn. Mũi tên phải nói rõ luồng thông tin và phần nào tạo ra hành vi nào.
 
-Moi chi tiet phai hoac xac dinh boi canh, hoac giai thich co che, hoac day cam xuc.
+Mỗi chi tiết phải hoặc xác định bối cảnh, hoặc giải thích cơ chế, hoặc đẩy cảm xúc.
 
-### Ba thay doi co tac dong lon nhat
+### Ba thay đổi có tác động lớn nhất
 
-1. Tang do chi tiet cua scene description, nhung giu so vat the tren frame o muc co kiem soat.
-2. Tao progressive variants cho cac y co cau truc build, thay vi mot frame da hoan thanh tu dau.
-3. Lap ke hoach luan phien frame type tren toan timeline, de khong co chuoi 4 den 5 canh cung mot nhan vat dung giua nen trang.
+1. Tăng độ chi tiết của scene description, nhưng giữ số vật thể trên frame ở mức có kiểm soát.
+2. Tạo progressive variants cho các ý có cấu trúc build, thay vì một frame đã hoàn thành từ đầu.
+3. Lập kế hoạch luân phiên frame type trên toàn timeline, để không có chuỗi 4 đến 5 cảnh cùng một nhân vật đứng giữa nền trắng.
 
-## Checklist review cho moi video TossExplains tiep theo
+## Checklist review cho mỗi video TossExplains tiếp theo
 
-- 15 giay dau co it nhat 7 den 9 visual beat khac nhau.
-- Hook co wide shot, detail shot, reaction va reframe.
-- Moi khai niem khoa hoc co mot so do nhan qua, khong chi mot icon.
-- Moi con so lon co mot phep so sanh cu the.
-- Moi phan anthropology co boi canh chuc nang, khong phai phong canh chung chung.
-- Moi 20 den 30 giay co it nhat mot lan doi frame type.
-- Khong co hon hai center-character frame lien tiep.
-- Progressive build chi giu cac trang thai them thong tin.
-- Chu, mui ten va nhan van doc duoc khi thu frame con 25% kich thuoc.
-- Mau nen phuc vu meaning va van ton trong background budget cua TossExplains.
-- Nhan vat Toss va `@YOU` giu dung reference sheet.
-- Tat ca con so va quan he xac suat duoc kiem tra doc lap truoc khi render.
-- Phan ket phan chieu co che khoa hoc tro lai mot cam xuc hoac hanh dong cua nguoi xem.
+- 15 giây đầu có ít nhất 7 đến 9 visual beat khác nhau.
+- Hook có wide shot, detail shot, reaction và reframe.
+- Mỗi khái niệm khoa học có một sơ đồ nhân quả, không chỉ một icon.
+- Mỗi con số lớn có một phép so sánh cụ thể.
+- Mỗi phần anthropology có bối cảnh chức năng, không phải phong cảnh chung chung.
+- Mỗi 20 đến 30 giây có ít nhất một lần đổi frame type.
+- Không có hơn hai center-character frame liên tiếp.
+- Progressive build chỉ giữ các trạng thái thêm thông tin.
+- Chữ, mũi tên và nhãn vẫn đọc được khi thu frame còn 25% kích thước.
+- Màu nền phục vụ meaning và vẫn tôn trọng background budget của TossExplains.
+- Nhân vật Toss và `@YOU` giữ đúng reference sheet.
+- Tất cả con số và quan hệ xác suất được kiểm tra độc lập trước khi render.
+- Phần kết phản chiếu cơ chế khoa học trở lại một cảm xúc hoặc hành động của người xem.
 
-## Thu tu xem bo frame
+## Thứ tự xem bộ frame
 
 | Contact sheet | Frame | Timeline |
 | --- | --- | --- |
@@ -287,4 +287,3 @@ Moi chi tiet phai hoac xac dinh boi canh, hoac giai thich co che, hoac day cam x
 | [06](contact-sheets/contact-sheet-06.jpg) | 121-144 | 03:40.50-04:42.00 |
 | [07](contact-sheets/contact-sheet-07.jpg) | 145-168 | 04:43.00-05:40.27 |
 | [08](contact-sheets/contact-sheet-08.jpg) | 169-181 | 05:42.33-06:08.63 |
-

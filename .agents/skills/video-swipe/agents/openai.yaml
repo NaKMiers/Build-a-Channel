@@ -1,0 +1,4 @@
+interface:
+  display_name: "Video Swipe"
+  short_description: "Frame-by-frame study of a competitor video"
+  default_prompt: "Use $video-swipe to analyze this YouTube video and its downloaded file."
