@@ -1,9 +1,3 @@
-# Image prompts - Why Your Life Feels Faster When Every Day Looks The Same
-
-Cast: @YOU (YOU.jpeg) · @HADZA (HADZA.jpeg) · @ANCESTOR (ANCESTOR.jpeg) · @CLOCK (CLOCK.jpeg)
-Source transcript: ../transcribes/transcript.md - 268 lines, 268 unique timestamps
-Attach only the reference sheets for the @ tokens that appear in a given prompt. Add to every generation: match the attached character reference exactly, no photorealism, no 3D render, no gradients, no drop shadows, no textures, no realistic faces, no anime style.
-
 [0:00] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, @YOU slumps at a small desk on the left, tired brows and drooping posture; @CLOCK stands huge on the right with heavy limbs and barely moving hands. Bold black ALL CAPS caption MONDAY FELT LONG at the top, plain white background, sparse desk and chair only. no gradients, no shadows, no textures, no photorealism, no 3D, no timestamp shown in the image, @[name] is mention syntax for reference only and must never be rendered as visible text, 16:9 aspect ratio, educational YouTube explainer doodle style.
 
 [0:02] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, @YOU holds a stack of blank calendar pages that collapses into one paper-thin sheet; @CLOCK races away toward the right edge. Bold black ALL CAPS caption THE MONTH VANISHED at the top, plain white background, strong left-to-right motion, no calendar numbers. no gradients, no shadows, no textures, no photorealism, no 3D, no timestamp shown in the image, @[name] is mention syntax for reference only and must never be rendered as visible text, 16:9 aspect ratio, educational YouTube explainer doodle style.
@@ -216,10 +210,6 @@ Attach only the reference sheets for the @ tokens that appear in a given prompt.
 
 [4:59] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, Several memory cards slide into the same single folder slot until their edges overlap and become difficult to separate. Plain white background, bold black ALL CAPS caption OVERLAPPING ADDRESSES. no gradients, no shadows, no textures, no photorealism, no 3D, no timestamp shown in the image, @[name] is mention syntax for reference only and must never be rendered as visible text, 16:9 aspect ratio, educational YouTube explainer doodle style.
 
-
-
-
-
 [5:00] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, @YOU opens both arms to measure a blank calendar month while the calendar collapses inward between the hands. Plain white background, reflective brows, bold black ALL CAPS caption HOW LARGE WAS IT? no gradients, no shadows, no textures, no photorealism, no 3D, no timestamp shown in the image, @[name] is mention syntax for reference only and must never be rendered as visible text, 16:9 aspect ratio, educational YouTube explainer doodle style.
 
 [5:03] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, @CLOCK stands beside a huge pile of tiny minute dots and pushes the pile away, refusing to count them again. Plain white background, bold black ALL CAPS caption NOT EVERY MINUTE, no numerals or ticks. no gradients, no shadows, no textures, no photorealism, no 3D, no timestamp shown in the image, @[name] is mention syntax for reference only and must never be rendered as visible text, 16:9 aspect ratio, educational YouTube explainer doodle style.
@@ -413,10 +403,6 @@ Attach only the reference sheets for the @ tokens that appear in a given prompt.
 [9:55] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, Two machines sit side by side on a plain white background: one storage box swallows many image cards, while one segmentation cutter separates only a few cards. Bold black ALL CAPS caption STORAGE IS NOT SEGMENTATION. no gradients, no shadows, no textures, no photorealism, no 3D, no timestamp shown in the image, @[name] is mention syntax for reference only and must never be rendered as visible text, 16:9 aspect ratio, educational YouTube explainer doodle style.
 
 [9:58] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, Inside a large white doodle brain on a solid cobalt blue #2D5FBF background inside the mind, one unique event card gains a thick black border while six yesterday copies remain borderless. Bold black ALL CAPS caption NOT ANOTHER COPY. no gradients, no shadows, no textures, no photorealism, no 3D, no timestamp shown in the image, @[name] is mention syntax for reference only and must never be rendered as visible text, 16:9 aspect ratio, educational YouTube explainer doodle style.
-
-
-
-
 
 [10:02] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, @YOU stands between a calm ordinary path and an exploding amusement-ride collage, turning away from the collage with overwhelmed brows. Plain white background, bold red ALL CAPS caption NOT CONSTANT EXCITEMENT. no gradients, no shadows, no textures, no photorealism, no 3D, no timestamp shown in the image, @[name] is mention syntax for reference only and must never be rendered as visible text, 16:9 aspect ratio, educational YouTube explainer doodle style.
 

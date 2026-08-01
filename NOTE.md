@@ -15,6 +15,7 @@ Improve:
 - [ ] Insert real image of the person who mentioned on video.
 - [ ] Social links
 - [ ] first 15 videos, don't care views, care impressions
+- [ ] create image prompts that references to each needed scenes
 
 Referenced channels:
 @SticklyExplains
