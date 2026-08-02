@@ -214,10 +214,10 @@ When the user replies "cast" (or otherwise asks for the characters), read the sc
 
 Output the cast as this exact table, nothing before it:
 
-| Token   | File       | Who they are        | Era / setting                 | Where they appear           |
-| ------- | ---------- | ------------------- | ----------------------------- | --------------------------- |
+| Token   | File       | Who they are                                                  | Era / setting                          | Where they appear           |
+| ------- | ---------- | ------------------------------------------------------------- | -------------------------------------- | --------------------------- |
 | @YOU    | YOU.png    | Toss (channel mascot) — [the costume this script puts him in] | [the era of the script's @YOU section] | [which parts of the script] |
-| @[NAME] | [NAME].png | [one-line identity] | [era the script puts them in] | [which parts of the script] |
+| @[NAME] | [NAME].png | [one-line identity]                                           | [era the script puts them in]          | [which parts of the script] |
 
 The Era / setting column exists to force the derivation: if you cannot point to the line in the script that puts that character in that time and place, the character does not belong in the cast.
 
@@ -423,7 +423,7 @@ The thumbnail decides whether the video is watched at all, so it is generated to
 **E. The figures — what the image model will and will not do**
 
 - **Co-stars need visible faces with visible expressions.** Featureless black silhouettes render as a black smear, and "blank white heads with no features" rendered as a field of giant white eggs that ate the whole frame. Never ask for faceless, blank, or silhouette crowds. Give the background band real small faces turned toward each other.
-- **Write the sad expression as an explicit eyebrow geometry, and say it is not anger.** "Brows pinched upward at their inner edges" is read as angry V-brows about half the time. Write: *eyebrows angled so the inner ends sit clearly higher than the outer ends, worried and dismayed, not angry, not frowning*, plus a downturned mouth and one blue sweat drop.
+- **Write the sad expression as an explicit eyebrow geometry, and say it is not anger.** "Brows pinched upward at their inner edges" is read as angry V-brows about half the time. Write: _eyebrows angled so the inner ends sit clearly higher than the outer ends, worried and dismayed, not angry, not frowning_, plus a downturned mouth and one blue sweat drop.
 - **Never modify the mascot's body.** A hole through the chest rendered as a dark stain on his hoodie. Emotions go on the face and in the posture, never into anatomy.
 - **Never ask for an exact count above five.** A request for five figures produced four, which broke the text that depended on it. Use "a dense block" or "a tight row" and never let the wording of the question depend on a count the model has to get right.
 - `@YOU` is the hook figure in almost every concept, head tinted pale blue for lonely or red for embarrassed. Thumbnail expressions are pushed harder than scene expressions. His design is still locked: exaggerate the feeling, never restyle the head, eyes, or proportions.
@@ -487,7 +487,6 @@ After that, end with exactly this:
 > - Paste the **description** into the description box.
 > - Paste the **tags** into the Tags field under YouTube Studio → Details → Show More.
 > - Generate all five prompts in `thumbnail-prompts.md`, attaching the reference sheets for the `@` tokens in each, and save them as `thumb-a.jpg` through `thumb-e.jpg`. Export at 1280x720, under 2 MB.
->
 > - Then add the channel logo in your editor, small, in the bottom-left of the winning frame. Do not ask the image model to draw it.
 >
 > Then shrink your favourite to 120 px wide and look at it. If the question is not readable and the emotion is not obvious in half a second, regenerate it — do not rescue a weak thumbnail with more text. If the model garbles the lettering, generate the frame with the text clause deleted and add the words in your editor. If a frame comes back with large empty areas, the background was too flat — add a ground line, a horizon, and one warm light source, and regenerate.
