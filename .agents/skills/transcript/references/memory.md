@@ -4,6 +4,13 @@ Self-improving notes for audio to timestamps. Single canonical copy.
 
 ## Known-good settings
 
+- **V2 dense profile, tested 2026-08-03:** `--pause 0.24 --max-dur 3.2 --min-words 2` on
+  Project 1's cached 11m30s word timings produced 316 cues, median 1.8 seconds, 27.5 generated
+  cues per minute, and two one-word cues. Both one-word cues were intentional verdicts: `No.`
+  and `Hunger.` The V2 visual plan adds CapCut-only events to reach 28 to 32 visual states per
+  minute. Nearby tests produced 327 cues at pause 0.22 and 317 at pause 0.25, with no reduction
+  in one-word cues, so 0.24 was selected.
+
 - Project 1's `transcript.txt` is 255 lines for a roughly 12 minute read, which is the
   default cut. Alternate cuts at `--max-dur 3` and `--max-dur 5` were also produced and kept.
 - Always pass `--save-json`. Project 1 has `transcribes/words.json`, so its transcript can be
@@ -43,7 +50,7 @@ Self-improving notes for audio to timestamps. Single canonical copy.
   table, prints what a player will report, and exits non-zero rather than write a file
   whose header disagrees with its frames.
   **The lesson generalises: check the thing that actually breaks.** The tool warned on
-  mixed *sample rates*, which matched across all three parts, while the mixed *bitrates*
+  mixed _sample rates_, which matched across all three parts, while the mixed _bitrates_
   that caused the bug went unmentioned. A passing check on the wrong property reads as
   reassurance.
   Xing's seek table has only 100 entries, so seeks land within about 1% of the duration,

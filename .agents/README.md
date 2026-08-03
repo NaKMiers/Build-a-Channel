@@ -24,8 +24,8 @@ than restating them, so a rule is edited in exactly one place.
 
 This matters because it already bit us: the style anchor and style lock strings were
 re-typed 7 times each across the old prompt files, and a thumbnail rule was fixed in one
-copy while two others still contradicted it. Those four strings now live once, in
-`rules/visual-style.md`, and the `check` skill greps for them.
+copy while two others still contradicted it. The frozen V1 set and current V2 set now live once,
+in `rules/visual-style.md`, and the `check` skill greps for the selected version.
 
 ## Editing rules
 

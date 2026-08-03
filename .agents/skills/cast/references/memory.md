@@ -2,6 +2,14 @@
 
 Self-improving notes for cast derivation and reference sheets. Single canonical copy.
 
+## 2026-08-03 - V2 sheets stay functional
+
+Warm Editorial Storybook depth belongs in scene prompts, not in identity sheets. V2 reference
+sheets stay flat, pure white, texture-free, and evenly lit. They add line-weight hierarchy,
+story-specific silhouette and prop decisions, and chapter-palette compatibility only. This keeps
+the sheet useful as a stable reference while allowing scenes to use CLEAN, LAYERED, or
+ATMOSPHERIC rendering.
+
 ## Project 1's cast, as a shape reference not a template
 
 `@YOU` (Toss in a modern hoodie), `@FRIEND`, `@CROWD` (group entry, the anonymous forty),
@@ -59,8 +67,8 @@ generated the sheets and reported `@YOU` and `@JURY` as pale and unattractive wh
 looked good. Both faults were real:
 
 1. **`#6B7076` is not in the channel palette.** The palette is `#2D5FBF #3A9E3A #6EB5E8
-   #8B5E3C #C4965A #D94040 #F5820D #F5C518 #FFFFFF`. `mascot-toss.md` allows a free costume
-   colour *from the palette*, and "at 2am so grey" is not a licence to invent one.
+#8B5E3C #C4965A #D94040 #F5820D #F5C518 #FFFFFF`. `mascot-toss.md` allows a free costume
+   colour _from the palette_, and "at 2am so grey" is not a licence to invent one.
 2. **`#6B7076` is the exact colour project 1 gives the anonymous `@CROWD`'s trousers.** The
    protagonist was wearing crowd grey, so he could not separate from the group he exists to
    stand against. `@OTHER` only looked better because red `#D94040` was the sole saturated
@@ -112,10 +120,10 @@ Standing rules that came out of it:
 spiky strokes". All three parts of that were wrong, confirmed by cropping `brand/MASCOT.jpeg`
 and viewing the head at magnification:
 
-| Was written | Actually |
-| --- | --- |
-| 3 to 4 spikes | **exactly 2 peaks**, one tall leaning right, one shorter beside it |
-| at the top-left | on the crown **slightly right of centre** |
+| Was written        | Actually                                                                |
+| ------------------ | ----------------------------------------------------------------------- |
+| 3 to 4 spikes      | **exactly 2 peaks**, one tall leaning right, one shorter beside it      |
+| at the top-left    | on the crown **slightly right of centre**                               |
 | open spiky strokes | **one closed outlined shape** with the same flat white fill as the head |
 
 The user caught this from a generated sheet. It had propagated into project 1's and project 2's
@@ -200,7 +208,7 @@ reasoning into the cast file so `scenes` does not re-litigate it.**
 ### The two verification greps were both wrong, and both said "pass"
 
 - **`grep -c mitten` counts the fix as the fault.** Every NEGATIVE block correctly says `no mitten
-  hands`, so the old grep read 11 on project 2 and 8 on project 1's cast file, both of which are
+hands`, so the old grep read 11 on project 2 and 8 on project 1's cast file, both of which are
   correct files. The corrected form strips occurrences preceded by no, never, or not:
   `grep -oiE '(no|never|not) +mittens?|mittens?' "$F" | grep -civE '^(no|never|not) '`. Only
   project 1's `image-prompts.md` genuinely fails, at 30. Fixed in both `cast` and `check`.

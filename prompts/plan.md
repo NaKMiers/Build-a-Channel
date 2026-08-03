@@ -1,6 +1,10 @@
 # TossExplains Visual Style V2 Plan
 
-Status: PROPOSED. No implementation is authorized until the owner approves this file.
+Status: APPROVED by the owner on 2026-08-03. Phase 1 pilot implementation is authorized.
+
+Implementation update: the A/B/C pilot selected Direction B, and the versioned V2 pipeline is
+implemented for Project 6 onward. A five-pair Google Flow base-and-variant smoke test remains the
+production gate before the first V2 upload.
 
 ## Executive decision
 
@@ -60,14 +64,14 @@ then receive a payoff.
 
 ### Visual rhythm
 
-| Video | Duration | Visual beats | Beats per minute | Mean gap | First 15 seconds |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| Why Humans Eat 3 Meals a Day | 8:25 | 272 | 32.3 | 1.85s | 14 beats |
-| The Rarest Human Possible | 6:18 | 181 | 28.7 | about 2.05s | 9 beats |
-| Toss project 1 | 11:27 | 255 | 22.3 | 2.70s | 8 beats |
-| Toss project 2 | 12:00 | 263 | 21.9 | 2.75s | 7 beats |
-| Toss project 3 | 12:04 | 266 | 22.0 | 2.73s | 6 beats |
-| Toss project 4 | 13:11 | 268 | 20.3 | 2.96s | 8 beats |
+| Video                        | Duration | Visual beats | Beats per minute |    Mean gap | First 15 seconds |
+| ---------------------------- | -------: | -----------: | ---------------: | ----------: | ---------------: |
+| Why Humans Eat 3 Meals a Day |     8:25 |          272 |             32.3 |       1.85s |         14 beats |
+| The Rarest Human Possible    |     6:18 |          181 |             28.7 | about 2.05s |          9 beats |
+| Toss project 1               |    11:27 |          255 |             22.3 |       2.70s |          8 beats |
+| Toss project 2               |    12:00 |          263 |             21.9 |       2.75s |          7 beats |
+| Toss project 3               |    12:04 |          266 |             22.0 |       2.73s |          6 beats |
+| Toss project 4               |    13:11 |          268 |             20.3 |       2.96s |          8 beats |
 
 The current Toss pipeline produces roughly 20 to 22 beats per minute. The reference videos
 produce roughly 29 to 32. Toss therefore asks the viewer to hold the same visual state about
@@ -84,12 +88,12 @@ The difference is more visible in long holds:
 The following measurements are mean pixel statistics across all extracted frames. They are
 not prompt-background counts.
 
-| Set | Near-white pixels | Mean saturation | Colorfulness |
-| --- | ---: | ---: | ---: |
-| Why Humans Eat 3 Meals a Day | 1.1% | 0.384 | 52.8 |
-| The Rarest Human Possible | 4.7% | 0.335 | 51.2 |
-| Toss project 1 | 39.6% | 0.269 | 41.2 |
-| Toss project 4 | 47.8% | 0.168 | 36.5 |
+| Set                          | Near-white pixels | Mean saturation | Colorfulness |
+| ---------------------------- | ----------------: | --------------: | -----------: |
+| Why Humans Eat 3 Meals a Day |              1.1% |           0.384 |         52.8 |
+| The Rarest Human Possible    |              4.7% |           0.335 |         51.2 |
+| Toss project 1               |             39.6% |           0.269 |         41.2 |
+| Toss project 4               |             47.8% |           0.168 |         36.5 |
 
 This confirms the contact-sheet impression. Toss frames are not only simpler. They are far
 more often dominated by near-white space and have much lower color saturation.
@@ -185,19 +189,19 @@ that keeps revealing new meaning.
 
 The palette is led by existing Toss colors and extended with muted chapter colors.
 
-| Role | Color | Hex | Use |
-| --- | --- | --- | --- |
-| Warm paper | Cream | `#FFF4DE` | default card surface and modern neutral |
-| Ink | Charcoal | `#2F3133` | outlines, neutral text, diagrams |
-| Brand 1 | Orange | `#F5820D` | energy, ritual, key brand memory |
-| Brand 2 | Cobalt | `#2D5FBF` | mind interiors, trust, cool contrast |
-| Verdict | Red | `#D94040` | negation, threat, decisive conclusion |
-| History | Tan | `#C4965A` | anthropology and ancestral worlds |
-| Human warmth | Coral | `#D96F5F` | relationships, shame, attachment, social scenes |
-| Nature | Olive | `#8FA35A` | tribe, landscape, regulation, belonging |
-| Science | Dusty teal | `#67A6A3` | mechanisms, experiments, body systems |
-| Memory | Lavender | `#B79AD9` | memory, perception, unusual cognition |
-| Highlight | Golden yellow | `#F2C14E` | small object highlight, never body text on light ground |
+| Role         | Color         | Hex       | Use                                                     |
+| ------------ | ------------- | --------- | ------------------------------------------------------- |
+| Warm paper   | Cream         | `#FFF4DE` | default card surface and modern neutral                 |
+| Ink          | Charcoal      | `#2F3133` | outlines, neutral text, diagrams                        |
+| Brand 1      | Orange        | `#F5820D` | energy, ritual, key brand memory                        |
+| Brand 2      | Cobalt        | `#2D5FBF` | mind interiors, trust, cool contrast                    |
+| Verdict      | Red           | `#D94040` | negation, threat, decisive conclusion                   |
+| History      | Tan           | `#C4965A` | anthropology and ancestral worlds                       |
+| Human warmth | Coral         | `#D96F5F` | relationships, shame, attachment, social scenes         |
+| Nature       | Olive         | `#8FA35A` | tribe, landscape, regulation, belonging                 |
+| Science      | Dusty teal    | `#67A6A3` | mechanisms, experiments, body systems                   |
+| Memory       | Lavender      | `#B79AD9` | memory, perception, unusual cognition                   |
+| Highlight    | Golden yellow | `#F2C14E` | small object highlight, never body text on light ground |
 
 Each video should choose three chapter colors plus cream, charcoal, orange, cobalt, and red.
 It should not use the full extension palette in every episode.
@@ -206,13 +210,13 @@ It should not use the full extension palette in every episode.
 
 Replace the current majority-white rule with this target:
 
-| Surface family | Target | Purpose |
-| --- | ---: | --- |
-| Warm cream or off-white cards | 30% | clean explanations, modern life, number cards |
-| Light tinted chapter cards | 20% | topic changes, definitions, compact diagrams |
-| Illustrated story environments | 35% | hooks, experiments, anthropology, modern mismatch |
-| Cobalt mind interiors | 7% | only when literally inside thought, memory, or attention |
-| Pure white cards | 8% | maximum clarity for dense science or contrast pauses |
+| Surface family                 | Target | Purpose                                                  |
+| ------------------------------ | -----: | -------------------------------------------------------- |
+| Warm cream or off-white cards  |    30% | clean explanations, modern life, number cards            |
+| Light tinted chapter cards     |    20% | topic changes, definitions, compact diagrams             |
+| Illustrated story environments |    35% | hooks, experiments, anthropology, modern mismatch        |
+| Cobalt mind interiors          |     7% | only when literally inside thought, memory, or attention |
+| Pure white cards               |     8% | maximum clarity for dense science or contrast pauses     |
 
 One near-dark hero frame may be used for a major reveal. It must immediately return to the
 light system. Dark mode is punctuation, not a chapter palette.
@@ -261,14 +265,14 @@ light system. Dark mode is punctuation, not a chapter palette.
 
 Every beat is assigned one register before a prompt is written.
 
-| Register | Job | Target share |
-| --- | --- | ---: |
-| STORY | concrete action inside a place | 30 to 40% |
-| CARD | object, number, title, or concise editorial verdict | 15 to 20% |
-| DIAGRAM | causal mechanism, experiment, anatomy, or flow | 15 to 20% |
-| PORTRAIT | face, posture, emotion, or researcher | 10 to 15% |
-| HYBRID | story scene plus diagram overlay or question layer | 10 to 15% |
-| SPLIT_OR_SCALE | comparison, then-vs-now, crowd, distance, probability | 5 to 10% |
+| Register       | Job                                                   | Target share |
+| -------------- | ----------------------------------------------------- | -----------: |
+| STORY          | concrete action inside a place                        |    30 to 40% |
+| CARD           | object, number, title, or concise editorial verdict   |    15 to 20% |
+| DIAGRAM        | causal mechanism, experiment, anatomy, or flow        |    15 to 20% |
+| PORTRAIT       | face, posture, emotion, or researcher                 |    10 to 15% |
+| HYBRID         | story scene plus diagram overlay or question layer    |    10 to 15% |
+| SPLIT_OR_SCALE | comparison, then-vs-now, crowd, distance, probability |     5 to 10% |
 
 Change register after two or three beats on average. A four-beat run is legal only when it is
 an intentional progressive build on one base plate.
@@ -327,14 +331,14 @@ emotion itself is the meaning change.
 
 ### Cadence
 
-| Section | Target beats per minute | Typical gap |
-| --- | ---: | ---: |
-| First 15 seconds | 45 to 60 | 1.0 to 1.3s |
-| 15 to 45 seconds | 36 to 45 | 1.3 to 1.7s |
-| Psychology and mechanisms | 28 to 34 | 1.8 to 2.1s |
-| Anthropology story work | 26 to 32 | 1.9 to 2.3s |
-| Dense reading or evidence | 22 to 26 | 2.3 to 2.7s |
-| Ending | 24 to 28 | 2.1 to 2.5s |
+| Section                   | Target beats per minute | Typical gap |
+| ------------------------- | ----------------------: | ----------: |
+| First 15 seconds          |                45 to 60 | 1.0 to 1.3s |
+| 15 to 45 seconds          |                36 to 45 | 1.3 to 1.7s |
+| Psychology and mechanisms |                28 to 34 | 1.8 to 2.1s |
+| Anthropology story work   |                26 to 32 | 1.9 to 2.3s |
+| Dense reading or evidence |                22 to 26 | 2.3 to 2.7s |
+| Ending                    |                24 to 28 | 2.1 to 2.5s |
 
 Whole-video target: **28 to 32 visual beats per minute**.
 
@@ -503,20 +507,20 @@ Add mechanical checks for:
 
 ## Files expected to change after approval
 
-| File | Planned change |
-| --- | --- |
-| `.agents/rules/visual-style.md` | add the V2 art direction, palette, render tiers, registers, shot grammar, background budget, and current style strings |
-| `.agents/rules/house-rules.md` | document V1 and V2 style-string authority without allowing stray copies |
-| `.agents/rules/file-formats.md` | define the lean visual-beat plan only if it becomes a saved artifact |
-| `.agents/rules/mascot-toss.md` | add V2 line hierarchy and compatibility rules without changing Toss identity |
-| `.agents/bin/style-strings.sh` | export legacy and current scene strings safely |
-| `.agents/skills/cast/SKILL.md` | produce V2-ready character sheets for new projects |
-| `.agents/skills/scenes/SKILL.md` | add register, shot, tier, plate, variant, motif, and cadence planning |
-| `.agents/skills/scenes/references/memory.md` | record the accepted pilot settings and generation failures |
-| `.agents/skills/transcript/SKILL.md` | expose the approved dense-cue profile and reporting |
-| `tools/tsfmt.py` | change only if the existing flags cannot produce clean dense cues |
-| `.agents/skills/check/SKILL.md` | validate V1 and V2 projects plus cadence and variant integrity |
-| `.agents/skills/check/references/memory.md` | document style-version and pilot regression behavior |
+| File                                         | Planned change                                                                                                         |
+| -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| `.agents/rules/visual-style.md`              | add the V2 art direction, palette, render tiers, registers, shot grammar, background budget, and current style strings |
+| `.agents/rules/house-rules.md`               | document V1 and V2 style-string authority without allowing stray copies                                                |
+| `.agents/rules/file-formats.md`              | define the lean visual-beat plan only if it becomes a saved artifact                                                   |
+| `.agents/rules/mascot-toss.md`               | add V2 line hierarchy and compatibility rules without changing Toss identity                                           |
+| `.agents/bin/style-strings.sh`               | export legacy and current scene strings safely                                                                         |
+| `.agents/skills/cast/SKILL.md`               | produce V2-ready character sheets for new projects                                                                     |
+| `.agents/skills/scenes/SKILL.md`             | add register, shot, tier, plate, variant, motif, and cadence planning                                                  |
+| `.agents/skills/scenes/references/memory.md` | record the accepted pilot settings and generation failures                                                             |
+| `.agents/skills/transcript/SKILL.md`         | expose the approved dense-cue profile and reporting                                                                    |
+| `tools/tsfmt.py`                             | change only if the existing flags cannot produce clean dense cues                                                      |
+| `.agents/skills/check/SKILL.md`              | validate V1 and V2 projects plus cadence and variant integrity                                                         |
+| `.agents/skills/check/references/memory.md`  | document style-version and pilot regression behavior                                                                   |
 
 Potential pilot artifacts, created only after approval, should live under a new research folder
 and must not modify project 1.

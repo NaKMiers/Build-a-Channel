@@ -6,8 +6,9 @@ against this document.
 
 ## Project layout
 
-`projects/1-why-you-feel-lonelier-in-a-crowd-than-alone-in-your-room/` is the worked
-example. Every new project matches it.
+`projects/1-why-you-feel-lonelier-in-a-crowd-than-alone-in-your-room/` is the frozen V1
+regression example. New V2 projects keep its directory layout and add the V2-only visual plan
+listed below.
 
 ```
 projects/<n>-<title-slug>/
@@ -19,6 +20,7 @@ projects/<n>-<title-slug>/
   outputs/                    metadata.md, thumbnail-N.jpg, and the accepted thumbnail. You generate these.
   prompts/
     character-prompts.md      Written by `cast`.
+    visual-plan.md            V2 only. Written by `scenes` before prompt prose.
     image-prompts.md          Written by `scenes`.
     thumbnail-prompts.md      Written by `thumbnail`.
     video-prompts.md          Reserved and intentionally empty. Not missing.
@@ -81,7 +83,8 @@ One cue per line, `[M:SS] ` then the narration text.
 [0:06] A party, a train carriage,
 ```
 
-A 12 minute script lands around 230 lines of roughly 3 seconds each.
+A 12 minute V1 script lands around 230 lines of roughly 3 seconds each. The V2 dense profile
+usually lands around 300 to 330 lines with a 1.7 to 2.0 second median cue.
 
 ## `prompts/character-prompts.md`
 
@@ -92,6 +95,8 @@ immediately preceded by a bold label of its file name.
 # Character reference sheets - <Video Title>
 
 Cast derived from `../script_<short_slug>.md`.
+Visual style version: V2
+Chapter palette: Coral #D96F5F, Olive #8FA35A, Dusty teal #67A6A3
 Style rules: `.agents/rules/mascot-toss.md` and `.agents/rules/visual-style.md`
 Mascot identity lock: `brand/MASCOT.jpeg`
 
@@ -110,6 +115,51 @@ Mascot identity lock: `brand/MASCOT.jpeg`
 
 One code block equals one image generation. **Never merge two characters into one
 block.**
+
+The Visual style version and Chapter palette lines are required for V2 and absent from legacy
+V1 cast files. A V2 episode selects exactly three extension colors from `visual-style.md`.
+
+## `prompts/visual-plan.md`
+
+Required for V2 projects and absent from V1 legacy projects. This is the lean planning layer
+that lets `scenes` decide rhythm, register, camera, render cost, and variant lineage before it
+writes long generation prose.
+
+```markdown
+# Visual plan - <Video Title>
+
+Style version: V2
+Chapter colors: <three V2 extension colors>
+Recurring motif: <one concrete object or shape>
+
+| Beat | Time | Meaning | Register | Shot | Tier | Asset | Plate | Source | Delta | Motif | Text |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| B001 | [0:00] | viewer isolated in a friendly crowd | STORY | wide | ATMOSPHERIC | PLATE | P001 | - | - | gap | FORTY PEOPLE |
+| B002 | [0:02] | the crowd stays warm while Toss goes cold | PORTRAIT | close | LAYERED | VARIANT | P001 | B001 | cool Toss only | gap | - |
+```
+
+Rules:
+
+- Beat IDs are `B` plus three digits and increase in file order.
+- Times use `[M:SS]` and increase in timeline order. They may include extra CapCut-only beats
+  between transcript cues, but every generated prompt beat uses an exact transcript timestamp.
+- Register is one of `STORY`, `CARD`, `DIAGRAM`, `PORTRAIT`, `HYBRID`, or `SPLIT_OR_SCALE`.
+- Shot is one of `wide`, `medium`, `close`, `macro`, `overhead`, `pov`, `card`, `diagram`, or
+  `scale`.
+- Tier is exactly `CLEAN`, `LAYERED`, or `ATMOSPHERIC`.
+- Asset is one of `PLATE`, `VARIANT`, `CALLBACK`, or `CAPCUT`.
+- Every new composition gets one plate ID such as `P001`. Variants and callbacks reuse the
+  source plate ID. A CapCut beat uses the plate visible under the edit.
+- `Source` is `-` only for a new plate. Every other asset points to an earlier beat ID.
+- A variant names exactly one information-changing delta. Camera, cast placement, environment
+  geometry, major objects, palette, and line hierarchy remain fixed.
+- A callback points to an earlier plate and names the new meaning in `Delta`.
+- `Motif` is `-`, the episode motif, or `CALLBACK` when the motif returns with changed meaning.
+- `Text` is `-` or the exact one-to-five-word editorial text. It is never subtitle narration.
+- One table row stays on one physical line.
+
+For generated assets, the order of non-`CAPCUT` rows must match `image-prompts.md`. CapCut rows
+describe edit events and do not create prompt records or scene files.
 
 ## `prompts/image-prompts.md`
 

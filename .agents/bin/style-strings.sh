@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# style-strings.sh - export the four verbatim prompt strings, extracted at runtime
+# style-strings.sh - export the V1 and V2 verbatim prompt strings, extracted at runtime
 # from their single definition in .agents/rules/visual-style.md.
 #
 # Skills source this instead of hard-coding the strings, so there is exactly one
@@ -11,7 +11,13 @@
 #   source .agents/bin/style-strings.sh
 #   grep -cF "$STYLE_LOCK" projects/1-*/prompts/image-prompts.md
 #
-# Exports: STYLE_ANCHOR, STYLE_LOCK, GENERATION_LINE, SHEET_OPENING_LINE
+# The historical names remain V1 aliases so old project checks and external commands do not
+# break. New pipeline code uses the explicit V2 names.
+#
+# Exports: V1_STYLE_ANCHOR, V1_STYLE_LOCK, V1_GENERATION_LINE,
+# V1_SHEET_OPENING_LINE, V2_STYLE_ANCHOR, V2_STYLE_LOCK, V2_GENERATION_LINE,
+# V2_SHEET_OPENING_LINE, STYLE_ANCHOR, STYLE_LOCK, GENERATION_LINE,
+# SHEET_OPENING_LINE, CURRENT_STYLE_VERSION
 
 _ss_root="$(git rev-parse --show-toplevel 2>/dev/null || pwd)"
 _ss_src="$_ss_root/.agents/rules/visual-style.md"
@@ -27,15 +33,33 @@ _ss_block() {
   ' "$_ss_src"
 }
 
-STYLE_ANCHOR="$(_ss_block 'STYLE ANCHOR - opens every image and thumbnail prompt')"
-STYLE_LOCK="$(_ss_block 'STYLE LOCK - closes every image and thumbnail prompt')"
-GENERATION_LINE="$(_ss_block 'GENERATION LINE - the instruction the human adds to every generation')"
-SHEET_OPENING_LINE="$(_ss_block 'REFERENCE SHEET OPENING LINE - opens every character sheet prompt')"
+V1_STYLE_ANCHOR="$(_ss_block 'STYLE ANCHOR - opens every image and thumbnail prompt')"
+V1_STYLE_LOCK="$(_ss_block 'STYLE LOCK - closes every image and thumbnail prompt')"
+V1_GENERATION_LINE="$(_ss_block 'GENERATION LINE - the instruction the human adds to every generation')"
+V1_SHEET_OPENING_LINE="$(_ss_block 'REFERENCE SHEET OPENING LINE - opens every character sheet prompt')"
 
-export STYLE_ANCHOR STYLE_LOCK GENERATION_LINE SHEET_OPENING_LINE
+V2_STYLE_ANCHOR="$(_ss_block 'V2 STYLE ANCHOR - opens every V2 scene prompt')"
+V2_STYLE_LOCK="$(_ss_block 'V2 STYLE LOCK - closes every V2 scene prompt')"
+V2_GENERATION_LINE="$(_ss_block 'V2 GENERATION LINE - the instruction the human adds to every V2 generation')"
+V2_SHEET_OPENING_LINE="$(_ss_block 'V2 REFERENCE SHEET OPENING LINE - opens every V2 character sheet prompt')"
+
+# Backward-compatible V1 aliases.
+STYLE_ANCHOR="$V1_STYLE_ANCHOR"
+STYLE_LOCK="$V1_STYLE_LOCK"
+GENERATION_LINE="$V1_GENERATION_LINE"
+SHEET_OPENING_LINE="$V1_SHEET_OPENING_LINE"
+CURRENT_STYLE_VERSION="V2"
+
+export V1_STYLE_ANCHOR V1_STYLE_LOCK V1_GENERATION_LINE V1_SHEET_OPENING_LINE
+export V2_STYLE_ANCHOR V2_STYLE_LOCK V2_GENERATION_LINE V2_SHEET_OPENING_LINE
+export STYLE_ANCHOR STYLE_LOCK GENERATION_LINE SHEET_OPENING_LINE CURRENT_STYLE_VERSION
 
 # Explicit checks rather than ${!var} indirection, which bash supports and zsh does not.
 [ -n "$STYLE_ANCHOR" ]       || echo "style-strings.sh: WARNING STYLE_ANCHOR is empty" >&2
 [ -n "$STYLE_LOCK" ]         || echo "style-strings.sh: WARNING STYLE_LOCK is empty" >&2
 [ -n "$GENERATION_LINE" ]    || echo "style-strings.sh: WARNING GENERATION_LINE is empty" >&2
 [ -n "$SHEET_OPENING_LINE" ] || echo "style-strings.sh: WARNING SHEET_OPENING_LINE is empty" >&2
+[ -n "$V2_STYLE_ANCHOR" ]       || echo "style-strings.sh: WARNING V2_STYLE_ANCHOR is empty" >&2
+[ -n "$V2_STYLE_LOCK" ]         || echo "style-strings.sh: WARNING V2_STYLE_LOCK is empty" >&2
+[ -n "$V2_GENERATION_LINE" ]    || echo "style-strings.sh: WARNING V2_GENERATION_LINE is empty" >&2
+[ -n "$V2_SHEET_OPENING_LINE" ] || echo "style-strings.sh: WARNING V2_SHEET_OPENING_LINE is empty" >&2

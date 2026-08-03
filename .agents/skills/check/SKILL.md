@@ -20,7 +20,7 @@ something.
 ## Read first
 
 - `.agents/rules/file-formats.md` - the spec everything is validated against
-- `.agents/rules/visual-style.md` - the four verbatim strings
+- `.agents/rules/visual-style.md` - the V1 and V2 verbatim strings and V2 budgets
 - `.agents/rules/thumbnail-rules.md` - the thumbnail-only rendering and packaging rules
 - `.agents/skills/thumbnail/references/style-spec.json` - the self-contained thumbnail style
 - `.agents/skills/check/references/memory.md`
@@ -42,6 +42,8 @@ for f in script_*.md outputs/metadata.md prompts/character-prompts.md prompts/im
          prompts/thumbnail-prompts.md transcribes/transcript.md; do
   ls "$P"/$f >/dev/null 2>&1 && echo "present  $f" || echo "MISSING  $f"
 done
+ls "$P"/prompts/visual-plan.md >/dev/null 2>&1 && echo "present  prompts/visual-plan.md" \
+  || echo "absent   prompts/visual-plan.md"
 for d in audios characters outputs prompts scenes transcribes; do
   ls -d "$P/$d" >/dev/null 2>&1 && echo "present  $d/" || echo "MISSING  $d/"
 done
@@ -73,23 +75,29 @@ find projects -name '*.txt' | head
 
 # the verbatim strings: extract from the one definition, then find stray copies
 source .agents/bin/style-strings.sh
-echo "anchor ${#STYLE_ANCHOR}  lock ${#STYLE_LOCK}  gen ${#GENERATION_LINE}  sheet ${#SHEET_OPENING_LINE}"
+echo "V1 anchor ${#V1_STYLE_ANCHOR} lock ${#V1_STYLE_LOCK} gen ${#V1_GENERATION_LINE} sheet ${#V1_SHEET_OPENING_LINE}"
+echo "V2 anchor ${#V2_STYLE_ANCHOR} lock ${#V2_STYLE_LOCK} gen ${#V2_GENERATION_LINE} sheet ${#V2_SHEET_OPENING_LINE}"
 
 # no other copy anywhere under .agents/ or in the root docs
-grep -rlF "$STYLE_ANCHOR" .agents/ AGENTS.md 2>/dev/null | grep -v 'visual-style'
+for s in "$V1_STYLE_ANCHOR" "$V2_STYLE_ANCHOR"; do
+  grep -rlF "$s" .agents/ AGENTS.md 2>/dev/null | grep -v 'visual-style'
+done
 ```
 
 Any empty string means the headings in `visual-style.md` were renamed and the extractor no
 longer finds them. That is a FAIL and it silently disables the anchor and lock checks
 everywhere, so fix it first.
 
-Exactly one file under `.agents/` holds the full strings: the definition in
+Exactly one file under `.agents/` holds the full strings for both versions: the definition in
 `visual-style.md`. Scene skills source `.agents/bin/style-strings.sh` instead of hard-coding
 them. Thumbnail prompts intentionally use the separate cinematic style and must not copy the
 scene strings. Any file printed by the last command is a FAIL.
 
 Project 1's `transcribes/*.txt` files are grandfathered. Report them as informational, not
 as a failure.
+
+The missing `visual-plan.md` is INFO for V1 and FAIL for V2. Never create one inside a legacy
+project merely to satisfy the current format.
 
 ## Step 3 - Script checks
 
@@ -122,12 +130,19 @@ awk '{print $1}' "$T" | sort | uniq -d      # duplicates, informational
 
 ````bash
 C="$P/prompts/character-prompts.md"
+source .agents/bin/style-strings.sh
 grep -oE '@[A-Z]+' "$C" | sort -u                 # tokens
 grep -c '^```' "$C"                                # even, 2 per character
 grep -c 'brand/MASCOT.jpeg' "$C"                   # at least 1, the YOU sheet
 
 # 'mitten' as a POSITIVE instruction, must be 0
 grep -oiE '(no|never|not) +mittens?|mittens?' "$C" | grep -civE '^(no|never|not) '
+
+# V2 cast header and sheet opening. Run when the style line exists.
+grep -c '^Visual style version: V2$' "$C"          # exactly 1
+grep -c '^Chapter palette:' "$C"                   # exactly 1, three extension colors
+CAST_N=$(grep -c '^| @[A-Z]' "$C")
+grep -cF "$V2_SHEET_OPENING_LINE" "$C"            # CAST_N minus the edit-based YOU sheet
 ````
 
 - Cast size outside 2 to 6 is a FAIL.
@@ -142,6 +157,8 @@ grep -oiE '(no|never|not) +mittens?|mittens?' "$C" | grep -civE '^(no|never|not)
 - The `YOU` sheet must instruct attaching `brand/MASCOT.jpeg`.
 - Every `NAME` in the cast table should have a matching `characters/NAME.jpeg`. Missing
   files are informational, the user may not have generated them yet.
+- A V2 cast must declare V2 once, select exactly three extension colors, and use the V2 sheet
+  opening for every non-`@YOU` block. These lines must be absent from V1 legacy casts.
 
 ## Step 6 - Image prompt checks, the big one
 
@@ -156,8 +173,11 @@ diff <(awk '{print $1}' "$T") <(grep -o '^\[[0-9:]*\]' "$F")
 DUPS=$(awk '{print $1}' "$T" | sort | uniq -d | wc -l)
 echo "declared duplicates: $DUPS"
 
-# anchor and lock on every prompt, compared against the one definition
-echo "anchor $(grep -cF "$STYLE_ANCHOR" "$F")  lock $(grep -cF "$STYLE_LOCK" "$F")  of $PR"
+# one internally consistent style version, never a mix
+V1A=$(grep -cF "$V1_STYLE_ANCHOR" "$F"); V1L=$(grep -cF "$V1_STYLE_LOCK" "$F")
+V2A=$(grep -cF "$V2_STYLE_ANCHOR" "$F"); V2L=$(grep -cF "$V2_STYLE_LOCK" "$F")
+printf 'V1 anchor/lock %s/%s  V2 anchor/lock %s/%s  prompts %s\n' \
+  "$V1A" "$V1L" "$V2A" "$V2L" "$PR"
 
 # tokens used but not in the cast table
 comm -13 <(grep -oE '@[A-Z]+' "$C" | sort -u) <(grep -oE '@[A-Z]+' "$F" | sort -u)
@@ -172,7 +192,8 @@ grep -v '^\[' "$F" | grep -c .
 FAIL conditions:
 
 - prompt count not equal to cue count
-- anchor count or lock count not equal to prompt count
+- neither version has anchor and lock counts equal to prompt count
+- any V1 count above zero in a V2 project, or any V2 count above zero in a V1 project
 - any `@TOKEN` not in the cast table. `@[name]` is expected, it is part of the style lock.
 - two prompt lines adjacent with no blank line between them
 - any non-prompt non-blank line, **from project 3 onward**. This file is imported wholesale
@@ -207,6 +228,101 @@ not exceed `declared duplicates`, and that each differing pair fits that shape:
 # project 3: transcript has [8:26] twice, prompts are [8:26] then [8:27]
 diff <(awk '{print $1}' "$T") <(grep -o '^\[[0-9:]*\]' "$F") | grep -c '^[<>]'   # 2 lines = 1 remap
 ```
+
+### V2 visual-plan checks
+
+Run these only when `V2A` equals `PR`. A missing plan is a FAIL.
+
+```bash
+V="$P/prompts/visual-plan.md"
+test -f "$V" || echo "FAIL: missing V2 visual plan"
+grep -c '^Style version: V2$' "$V"             # exactly 1
+grep -c '^Chapter colors:' "$V"                # exactly 1
+grep -c '^Recurring motif:' "$V"               # exactly 1
+ROWS=$(grep -c '^| B[0-9][0-9][0-9] ' "$V")
+GENERATED=$(grep '^| B[0-9][0-9][0-9] ' "$V" | grep -vc ' | CAPCUT |')
+echo "plan rows $ROWS  generated rows $GENERATED  prompts $PR"
+
+# Exact enums and nonempty fields.
+grep '^| B[0-9][0-9][0-9] ' "$V" | grep -vcE ' \| (STORY|CARD|DIAGRAM|PORTRAIT|HYBRID|SPLIT_OR_SCALE) \|'
+grep '^| B[0-9][0-9][0-9] ' "$V" | grep -vcE ' \| (wide|medium|close|macro|overhead|pov|card|diagram|scale) \|'
+grep '^| B[0-9][0-9][0-9] ' "$V" | grep -vcE ' \| (CLEAN|LAYERED|ATMOSPHERIC) \|'
+grep '^| B[0-9][0-9][0-9] ' "$V" | grep -vcE ' \| (PLATE|VARIANT|CALLBACK|CAPCUT) \|'
+
+# Tier totals cover generated prompts. ATMOSPHERIC is at most 10 percent of all states.
+for tier in CLEAN LAYERED ATMOSPHERIC; do
+  printf '%-12s plan-generated %s  prompts %s\n' "$tier" \
+    "$(grep '^| B[0-9][0-9][0-9] ' "$V" | grep -v ' | CAPCUT |' | grep -c " | $tier |")" \
+    "$(grep -c "$tier render tier:" "$F")"
+done
+ATM=$(grep '^| B[0-9][0-9][0-9] ' "$V" | grep -c ' | ATMOSPHERIC |')
+test $((ATM*100)) -le $((ROWS*10)) || echo "FAIL: ATMOSPHERIC over 10 percent"
+
+# Exactly one V2 surface family per prompt.
+SURF=0
+for s in 'warm cream or off-white card' 'light tinted chapter card' \
+  'illustrated story environment' 'cobalt mind interior' 'pure white card'; do
+  n=$(grep -ci "$s" "$F"); SURF=$((SURF+n)); printf '%-34s %s\n' "$s" "$n"
+done
+echo "surface total $SURF of $PR"
+COB=$(grep -ci 'cobalt mind interior' "$F")
+WHT=$(grep -ci 'pure white card' "$F")
+test $((COB*100)) -le $((PR*10)) || echo "FAIL: cobalt over 10 percent"
+test $((WHT*100)) -le $((PR*15)) || echo "FAIL: pure white over 15 percent"
+
+# Sources point backward, non-plates have one delta, and plates have neither.
+awk -F'|' '
+  /^\| B[0-9][0-9][0-9] / {
+    for (i=2;i<=13;i++) gsub(/^ +| +$/, "", $i)
+    beat=$2; asset=$8; source=$10; delta=$11
+    if (asset == "PLATE" && (source != "-" || delta != "-"))
+      print "plate carries source or delta at " beat
+    if (asset != "PLATE" && (source == "-" || !(source in seen)))
+      print "bad source at " beat ": " source
+    if (asset != "PLATE" && delta == "-") print "missing delta at " beat
+    seen[beat]=1
+  }
+' "$V"
+
+# Cadence and long holds across all visual states.
+awk -F'|' '
+  /^\| B[0-9][0-9][0-9] / {
+    t=$3; gsub(/[\[\] ]/, "", t); split(t,a,":"); sec=a[1]*60+a[2]
+    if (have && sec-prev > 4) print "hold over 4s before " $2 ": " sec-prev "s"
+    if (!have) first=sec
+    prev=sec; last=sec; have=1; count++
+  }
+  END { if (last>first) printf "planned rhythm %.1f beats/min\n", count*60/(last-first) }
+' "$V"
+
+# Register runs over three must stay on one plate and form a sourced build.
+awk -F'|' '
+  function trim(s){gsub(/^ +| +$/, "", s); return s}
+  function report(){if(run>3 && !oneplate) print "register run over 3 changes plate near " lastbeat}
+  /^\| B[0-9][0-9][0-9] / {
+    beat=trim($2); reg=trim($5); plate=trim($9); asset=trim($8)
+    if(reg!=prevreg){report(); run=1; firstplate=plate; oneplate=1}
+    else {run++; if(plate!=firstplate || asset=="PLATE") oneplate=0}
+    prevreg=reg; lastbeat=beat
+  }
+  END {report()}
+' "$V"
+
+# Editorial text is one to five words, or '-'.
+awk -F'|' '
+  /^\| B[0-9][0-9][0-9] / {
+    t=$13; gsub(/^ +| +$/, "", t); n=split(t,w,/ +/)
+    if(t!="-" && (n<1 || n>5)) print "text length at " $2 ": " n
+  }
+' "$V"
+```
+
+V2 FAIL conditions also include generated plan rows not equal to prompt count, mixed style
+versions, invalid enums, tier or surface totals not equal to prompt count, ATMOSPHERIC over 10
+percent, cobalt over 10 percent, pure white over 15 percent, a bad source, missing or multiple
+meaning deltas, an unexplained register run, an ordinary hold over 4 seconds, overall rhythm
+outside 28 to 32 beats per minute, or editorial text over 5 words. Review every callback to
+confirm that it changes meaning rather than merely repeating an asset.
 
 ## Step 7 - Thumbnail checks
 

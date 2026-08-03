@@ -98,6 +98,31 @@ from the head, hair tuft, face, and build, never from a color.
   character with its own design, never Toss in a costume. If `@YOU` and that
   character share a frame, they must be clearly two different people.
 
+## V2 scene compatibility without identity drift
+
+Reference sheets remain clean flat model sheets on pure white in both V1 and V2. Do not add
+paper grain, room scenery, atmospheric light, or cast shadows to a sheet. Those scene-level
+effects belong to the V2 prompt tier, not to character identity.
+
+For casts created for a V2 project:
+
+- Use the V2 REFERENCE SHEET OPENING LINE for every non-`@YOU` sheet.
+- Keep the existing BODY CONSTRUCTION, REFERENCE LAYOUT, ABSOLUTELY NO TEXT, CONSISTENCY, and
+  NEGATIVE blocks. They are identity controls and do not change with rendering style.
+- Specify a medium-heavy outer contour, thinner internal detail lines, and thin accessory lines.
+  This prepares the design for V2 line hierarchy without adding scene depth to the sheet.
+- Give every non-Toss character a silhouette, story-specific garment, and signature prop that
+  still read when the later scene uses a tinted card or layered environment.
+- Choose garment colors from the episode's three chapter colors or the core palette. Do not use
+  saturated channel blue on a generic crowd, background group, or minor character when Toss
+  wears his default blue hoodie.
+- Include one sentence that the flat sheet defines identity and that attached-image V2 scene
+  prompts may add only the render tier named in the scene prompt.
+- For `@YOU`, the attached `brand/MASCOT.jpeg` still wins over every written description.
+
+V2 changes surface treatment around a character. It never changes Toss's two-peak tuft, head
+ratio, eyes, brows, mouth, proportions, limb construction, or splayed fingers.
+
 ## The sheet template - identical for every character
 
 Every reference sheet prompt contains these blocks, in this order, as plain labeled
@@ -249,8 +274,8 @@ keep this exact character, change only what the script requires.
 **Shape of the prompt:**
 
 1. Open by naming the attached image as the character and stating that it is preserved
-   exactly. Something of the form: *"The attached image is the character. Reproduce this
-   exact character with no redesign. Change ONLY what is listed under CHANGE below."*
+   exactly. Something of the form: _"The attached image is the character. Reproduce this
+   exact character with no redesign. Change ONLY what is listed under CHANGE below."_
 2. **KEEP block** - an explicit list of what must not move: the two-peak tuft, the head
    circle and its one-third proportion, the wide black oval eyes, the two thick brow
    strokes, the single curved line mouth, no nose or ears, the short neck, the thin
@@ -269,8 +294,8 @@ exactly the drift this system exists to prevent. Replace it with the KEEP block.
 State plainly in the prompt that if the description and the attached image ever
 disagree, **the image wins.**
 
-The negative block for `@YOU` must include: *no redesign of the head, no change to the
-hair, no extra hair spikes, no fringe, no different face, no new proportions.*
+The negative block for `@YOU` must include: _no redesign of the head, no change to the
+hair, no extra hair spikes, no fringe, no different face, no new proportions._
 
 ## Distinguishability
 

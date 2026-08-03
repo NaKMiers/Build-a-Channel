@@ -2,6 +2,36 @@
 
 Self-improving notes for image prompts. Single canonical copy.
 
+## 2026-08-03 - PastTense study and Project 1 V2 pilot
+
+The approved A/B/C pilot is under `research/visual-style-pilot/project-1-hook/`. Direction B,
+Warm Editorial Storybook Doodle, is the V2 target.
+
+Measured on the same Project 1 hook composition:
+
+| Surface        | Near-white area | Mean saturation |
+| -------------- | --------------: | --------------: |
+| V1 original    |    66.1 percent |           0.035 |
+| A conservative |     3.1 percent |           0.133 |
+| B recommended  |     0.1 percent |           0.309 |
+| C aggressive   |     0.2 percent |           0.510 |
+
+Learnings:
+
+- Warm paper plus two or three depth planes improved perceived quality before any extra character
+  detail was added.
+- A pale negative-space corridor around Toss protected the focal point in a dense crowd scene.
+- Story-specific props made the frame feel authored, but Direction C showed the ceiling: many
+  lamps, plants, snacks, dark corners, and foreground heads competed with the narration.
+- The recommended preview allowed generic crowd shirts to become saturated channel blue. V2
+  prompts now reserve it for Toss or one semantic diagram signal.
+- The preview generated more than forty countable people. Say `a crowd that reads as about forty`
+  unless exact counting is the information task.
+- Generated text survived this edit, but mission-critical spelling still belongs in CapCut when
+  the image model is unreliable.
+- Google Flow is the production renderer. The preview used OpenAI image generation because Flow
+  was not connected, so five base and variant pairs must be smoke-tested in Flow before publish.
+
 ## Scale reference
 
 Project 1: 255 transcript cues, 254 unique timestamps, 515 lines in
@@ -37,16 +67,15 @@ circles-and-web diagram of cross-cutting ties rather than a character, which kep
 and made the abstract point concrete at the same time. Prefer a diagram frame over inventing a
 figure for a researcher the cast deliberately excluded.
 
-
 ### REJECTED: the first pass was 40 percent dark blue
 
 The user rejected the entire first pass of project 2 as "dark and ugly". The numbers, against
 the accepted project 1:
 
-| | project 2 first pass | project 1 accepted |
-| --- | --- | --- |
-| plain white | 37 percent | **58 percent** |
-| cobalt + solid blue | **40 percent** | 18 percent |
+|                     | project 2 first pass | project 1 accepted |
+| ------------------- | -------------------- | ------------------ |
+| plain white         | 37 percent           | **58 percent**     |
+| cobalt + solid blue | **40 percent**       | 18 percent         |
 
 `visual-style.md` already said "White is the default" and I ignored it, because the script is
 set at 2am and is emotionally heavy. **Cobalt blue is not a mood.** It means the frame is

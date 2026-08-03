@@ -43,17 +43,22 @@ Never ask the user to describe them. Read the rule file.
   wrapped line is a broken prompt, not a cosmetic issue.
 - Never create a file the user did not ask for and the format spec does not name.
 
-## Guarding the verbatim strings
+## Guarding the versioned verbatim strings
 
-The STYLE ANCHOR, STYLE LOCK, GENERATION LINE, and REFERENCE SHEET OPENING LINE are
-**defined** in `.agents/rules/visual-style.md`. That file is the authority.
+The V1 and V2 STYLE ANCHOR, STYLE LOCK, GENERATION LINE, and REFERENCE SHEET OPENING
+LINE are **defined** in `.agents/rules/visual-style.md`. That file is the authority.
+
+V1 is frozen for legacy Projects 1 through 5. V2 is current for new projects. Never mix V1
+and V2 scene strings inside one project. Never bulk-rewrite a legacy project's prompts merely
+to make it current.
 
 One other place legitimately contains copies, and no others:
 
 1. Generated scene artifacts and legacy thumbnail artifacts under `projects/`.
 
-Verification skills source the strings through `.agents/bin/style-strings.sh`; they never
-hard-code another copy.
+Verification skills source both versions through `.agents/bin/style-strings.sh`; they never
+hard-code another copy. The historical unversioned shell variables remain V1 aliases for
+backward compatibility. New pipeline work uses the explicit `V2_*` variables.
 
 Thumbnail prompts use the separate self-contained rendering system in
 `.agents/rules/thumbnail-rules.md` and never copy the scene STYLE ANCHOR or STYLE LOCK.

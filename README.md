@@ -21,16 +21,16 @@ under `.agents/`. If you are an agent, start at [AGENTS.md](AGENTS.md).
 
 ## The pipeline
 
-Nine project-local skills. Each one validates its inputs, writes exactly one artifact, and names
-the next command to run. Nothing is generated ahead of its inputs.
-
+Nine project-local skills. Each one validates its inputs, writes its stage-specific artifact set,
+and names the next command to run. Nothing is generated ahead of its inputs.
+z
 | Skill | Needs | Writes |
 | --- | --- | --- |
 | `/topic` | nothing | 5 titles in chat, then scaffolds `projects/<n>-<slug>/` |
 | `/script` | a chosen title | `script_<short_slug>.md` |
 | `/transcript` | script + recorded voiceover | `transcribes/transcript.md`, `transcribes/words.json` |
 | `/cast` | script | `prompts/character-prompts.md` |
-| `/scenes` | transcript + cast | `prompts/image-prompts.md` |
+| `/scenes` | transcript + cast | V2 `prompts/visual-plan.md` plus `prompts/image-prompts.md`; V1 prompts only |
 | `/metadata` | script | `outputs/metadata.md` |
 | `/thumbnail` | script + cast | `prompts/thumbnail-prompts.md` |
 | `/check` | anything | a PASS / FAIL / INFO report, read-only |
@@ -74,20 +74,18 @@ Edit skill logic and memory only under `.agents/skills/`, then run `/skill-sync`
 
 ### Why rules are single-sourced
 
-The four verbatim prompt strings (STYLE ANCHOR, STYLE LOCK, GENERATION LINE, REFERENCE SHEET
-OPENING LINE) once appeared 7, 7, 7, and 2 times across the old prompt files. A thumbnail rule
+The V1 set of four verbatim prompt strings (STYLE ANCHOR, STYLE LOCK, GENERATION LINE,
+REFERENCE SHEET OPENING LINE) once appeared 7, 7, 7, and 2 times across the old prompt files. A thumbnail rule
 was fixed in one copy while two others still contradicted it, and the contradiction survived
-undetected. They now live once, in
+undetected. The frozen V1 set and current V2 set now live once, in
 [.agents/rules/visual-style.md](.agents/rules/visual-style.md).
 
 Nothing greps for them by hard-coded pattern either. Skills `source .agents/bin/style-strings.sh`,
 which extracts the strings from the rule file at run time, so a verification pattern cannot drift
 from the definition it is meant to be checking.
 
-Only three other places may legally hold a copy: the two copy-pasteable layout templates in
-`thumbnail-rules.md`, the grep helpers in the `scenes` and `check` skills, and the generated
-artifacts under `projects/`. A copy anywhere else is a bug. This README deliberately does not
-quote them.
+Only generated project artifacts under `projects/` may legally hold a copy. A copy anywhere else
+is a bug. This README deliberately does not quote either version.
 
 ---
 
@@ -95,14 +93,14 @@ quote them.
 
 Six files under `.agents/rules/`. Edit a rule there and every skill picks it up.
 
-| File | Covers |
-| --- | --- |
-| [house-rules.md](.agents/rules/house-rules.md) | always active. No em dash, ASCII only, stage discipline, guarding the verbatim strings |
-| [channel-dna.md](.agents/rules/channel-dna.md) | the three pillars, the five proven topic angles, voice, script rules, editorial guardrails |
-| [visual-style.md](.agents/rules/visual-style.md) | the four verbatim strings, palette, background tone map, where emotion lives, the nine frame types |
-| [mascot-toss.md](.agents/rules/mascot-toss.md) | Toss's identity lock and the reference sheet template |
-| [thumbnail-rules.md](.agents/rules/thumbnail-rules.md) | rules A to F, every one validated or forced by a real generation round |
-| [file-formats.md](.agents/rules/file-formats.md) | project layout and the exact shape of every artifact |
+| File                                                   | Covers                                                                                           |
+| ------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
+| [house-rules.md](.agents/rules/house-rules.md)         | always active. No em dash, ASCII only, stage discipline, guarding the verbatim strings           |
+| [channel-dna.md](.agents/rules/channel-dna.md)         | the three pillars, the five proven topic angles, voice, script rules, editorial guardrails       |
+| [visual-style.md](.agents/rules/visual-style.md)       | V1 and V2 strings, palettes, render tiers, registers, shot grammar, cadence, and legacy tone map |
+| [mascot-toss.md](.agents/rules/mascot-toss.md)         | Toss's identity lock and the reference sheet template                                            |
+| [thumbnail-rules.md](.agents/rules/thumbnail-rules.md) | rules A to F, every one validated or forced by a real generation round                           |
+| [file-formats.md](.agents/rules/file-formats.md)       | project layout and the exact shape of every artifact                                             |
 
 The former 533 line mega-prompt is retired to
 [prompts/retired/](prompts/retired/README.md) as the provenance record for its 256 rules. It is
@@ -169,13 +167,13 @@ Generate one image per code block in `character-prompts.md`, attaching `brand/MA
 `YOU` sheet, and save each as `characters/NAME.jpeg`. Then:
 
 ```bash
-/scenes         # one prompt per timestamp -> prompts/image-prompts.md
+/scenes         # V2 visual plan, then one generated prompt per transcript cue
 /metadata       # -> outputs/metadata.md
 /thumbnail      # 5 A/B concepts -> prompts/thumbnail-prompts.md
 ```
 
 Generate each scene image with only the sheets for the `@` tokens in that prompt attached, plus the
-generation line from the file header, and save it to `scenes/` named by its timestamp. Generate the
+versioned generation line from the `/scenes` handoff report, and save it to `scenes/` named by its timestamp. Generate the
 five thumbnails into `outputs/`, rename the winner with an `-accepted` suffix, then:
 
 ```bash
@@ -236,17 +234,25 @@ the abstraction.
 The two numbers that get a set rejected when they slip, both budgeted in
 [visual-style.md](.agents/rules/visual-style.md):
 
+For V1 legacy projects:
+
 - **Plain white is the default and must be the clear majority, 55 to 75 percent of prompts.** The
   accepted fixture runs 58 percent white. Project 2's rejected first pass ran 37 percent.
 - **Cobalt blue is capped at 15 percent and means literally inside the mind**, a brain or a thought
   loop as the subject. It does not mean night, sad, or serious. A 2am bedroom is modern everyday
   life and gets white. So do labs.
 
+For V2 projects, warm cream and light tinted cards replace majority white, illustrated story
+environments target 35 percent, pure white is capped at 15 percent, and cobalt mind interiors are
+capped at 10 percent. Every beat names CLEAN, LAYERED, or ATMOSPHERIC, with ATMOSPHERIC capped at
+10 percent.
+
 On-screen text is bold ALL CAPS hand-lettered marker at the top of the frame: black by default, red
 for danger, threat, failure, or negation, and never yellow on white because it is unreadable.
 
 Every scene prompt is exactly one unbroken line that opens with its timestamp copied character for
-character from the transcript, opens with the STYLE ANCHOR, and closes with the STYLE LOCK. The
+character from the transcript, opens with the selected version's STYLE ANCHOR, and closes with the
+same version's STYLE LOCK. The
 timestamp and the `@` tokens are instructions for you and the file system, never visual content,
 which is why the style lock repeats that negative. Scene filenames derive from the timestamps by
 replacing `:` with `-`, so `[3:20]` is saved as `[3-20].jpg` and works on Windows.
@@ -318,7 +324,7 @@ python3 tools/audio-to-timestamps.py --from-json .../words.json --max-dur 5 -o t
 Cutting flags: `--pause` (new line wherever the narrator paused this long, default 0.30),
 `--max-dur` (split any line holding more than this much video at its widest internal pause,
 default 4.5, 0 disables), `--min-words` (fold shorter fragments into a neighbour, default 3),
-`--max-chars` (off by default), `--min-dur` (glue lines back together *after* splitting, only to
+`--max-chars` (off by default), `--min-dur` (glue lines back together _after_ splitting, only to
 cut how many images you pay for), `--no-split-sentences`, `--pad` for `[00:05]` instead of `[0:05]`,
 and `--timeout` (default 900s).
 
@@ -392,4 +398,7 @@ Non-negotiable, from [channel-dna.md](.agents/rules/channel-dna.md):
 - End on a closing line that echoes the opening, completely reframed.
 - **Off-limits:** pure history with no inner-life payoff, pure advice with no science underneath,
   dated news, politics, religion as a truth claim, medical prescriptions.
+
+```
+
 ```

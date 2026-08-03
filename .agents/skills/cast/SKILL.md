@@ -25,6 +25,10 @@ character.
 - `.agents/rules/file-formats.md` - the `prompts/character-prompts.md` section
 - `.agents/skills/cast/references/memory.md`
 
+Source `.agents/bin/style-strings.sh` after reading the rules. Projects 1 through 5 are frozen
+V1. Project 6 and later use V2. If an existing file explicitly declares a style version, keep
+that version when redoing only the cast stage.
+
 ## Preconditions
 
 ```bash
@@ -103,6 +107,16 @@ previous video and do not reach for a default set of characters.
 Path: `projects/<n>-<slug>/prompts/character-prompts.md`, shaped exactly as
 `.agents/rules/file-formats.md` specifies.
 
+For V2, add these two header lines after the source-script line:
+
+```text
+Visual style version: V2
+Chapter palette: <three named V2 extension colors with hex values>
+```
+
+Choose the three chapter colors from the script's actual worlds and mechanisms. The later
+`scenes` plan must reuse them. Do not choose all extension colors.
+
 **Part 1, the cast table.** The Era / setting column exists to force the derivation: if
 you cannot point to the line in the script that puts that character in that time and
 place, the character does not belong in the cast.
@@ -134,14 +148,26 @@ Per-character requirements:
   fresh. Include the instruction to attach `brand/MASCOT.jpeg` as a reference for that
   generation.
 
+V2 additions:
+
+- Every non-`@YOU` sheet opens with `V2_SHEET_OPENING_LINE` from
+  `.agents/bin/style-strings.sh`. V1 sheets keep `V1_SHEET_OPENING_LINE`.
+- Keep the sheet itself pure white, flat, crisp, and texture-free. V2 depth belongs to scene
+  prompts, not identity sheets.
+- Specify medium-heavy outer contours, thinner internal detail lines, and thin accessory lines.
+- Add the V2 compatibility sentence required by `.agents/rules/mascot-toss.md`.
+- Do not give a generic crowd or minor cast member saturated channel blue when Toss uses his
+  default blue hoodie. Use silhouette, garment, prop, and posture together for recognition.
+
 ## Step 5 - Re-read before finishing
 
 Re-read each sheet and check every visual detail against the script: era, clothing, prop,
 expressions, poses. **If any detail came from habit rather than from the script, rewrite
 it.** Then verify mechanically:
 
-```bash
+````bash
 F="projects/<n>-<slug>/prompts/character-prompts.md"
+source .agents/bin/style-strings.sh
 grep -c '^```' "$F"                              # even number, 2 per character
 grep -oE '@[A-Z]+' "$F" | sort -u                # tokens, all ALL CAPS single words
 grep -n "$(printf '\u2014')" "$F" && echo "FAIL: em dash" || echo "clean"
@@ -158,7 +184,12 @@ for t in $(grep -oE '^\| @[A-Z]+' "$F" | tr -d '| @'); do
 done
 grep -oE '#[0-9A-F]{6}' "$F" | sort -u           # cross-check against the palette
 grep -ciE 'muted|desaturated|washed.out|pale (grey|slate)' "$F"   # design language, aim for 0
-```
+
+# V2 only: opening line count equals cast size minus the edit-based YOU sheet.
+grep -cF "$V2_SHEET_OPENING_LINE" "$F"
+grep -c 'Visual style version: V2' "$F"
+grep -c 'Chapter palette:' "$F"
+````
 
 The garment grep has to name the garment word, so **extend that alternation whenever a cast
 introduces a new one.** A word it does not know prints an empty line, which looks like "no colour

@@ -12,15 +12,17 @@ allowed-tools:
 
 # scenes
 
-Stage 4 of the TossExplains pipeline, and the largest artifact: one prompt per transcript
-cue, typically 230 to 255 of them.
+Stage 4 of the TossExplains pipeline, and the largest artifact: one generated prompt per
+transcript cue, typically 230 to 270 for V1 and 300 to 330 for V2, plus optional V2 CapCut-only
+beats in the visual plan.
 
 ## Read first
 
 - `.agents/rules/house-rules.md`
-- `.agents/rules/visual-style.md` - **the whole file.** The two verbatim strings, the
-  background tone map, where emotion lives, the head color code, the nine frame types.
-- `.agents/rules/file-formats.md` - the `prompts/image-prompts.md` section
+- `.agents/rules/visual-style.md` - **the whole file.** Both style versions, the current V2
+  render tiers, registers, shot grammar, palette, cadence, and the legacy V1 rules.
+- `.agents/rules/file-formats.md` - the `prompts/visual-plan.md` and
+  `prompts/image-prompts.md` sections
 - `.agents/skills/scenes/references/memory.md`
 - The project's `prompts/character-prompts.md` cast table. This is the only legal source
   of `@` tokens.
@@ -36,8 +38,8 @@ grep -oE '@[A-Z]+' "$P"/prompts/character-prompts.md | sort -u
 - No transcript: stop, say to run `/transcript`.
 - No cast file: stop, say to run `/cast`. **Never invent a cast inline.** The whole point
   of the cast system is that the sheet carries the design.
-- Transcript under 20 lines: stop and say "This looks incomplete. A 10 to 14 minute video
-  should have 80 to 120 timestamp lines."
+- Transcript under 20 lines: stop and say "This looks incomplete. A normal 10 to 14 minute
+  TossExplains video should have hundreds of timestamp lines."
 
 ## Step 1 - Inventory the transcript
 
@@ -47,7 +49,43 @@ grep -c . "$T"                           # total cues
 awk '{print $1}' "$T" | sort | uniq -d   # duplicate timestamps
 ```
 
-Record the totals. They go in the file header and the `check` skill verifies them.
+Record the totals for the final chat report and mechanical verification.
+
+## Style version selection
+
+Source `.agents/bin/style-strings.sh` before planning.
+
+- Projects 1 through 5 are frozen V1. A redo keeps V1 even if its prompt file is missing.
+- Project 6 and later use V2.
+- If an existing `character-prompts.md`, `visual-plan.md`, or `image-prompts.md` explicitly
+  identifies a version, keep that version when redoing only this stage.
+- Never mix V1 and V2 anchors or locks inside one project.
+
+V1 follows the legacy path below and does not receive `visual-plan.md`. V2 completes the lean
+planning pass before writing prompt prose.
+
+## V2 lean planning pass
+
+Write `prompts/visual-plan.md` in the exact format from `file-formats.md`.
+
+1. Copy the three chapter colors from the V2 cast header. Choose one recurring concrete motif.
+2. Create one generated beat for every transcript cue. Extra CapCut-only beats may subdivide a
+   long cue or create a meaningful diagram build without adding a generation.
+3. Assign register, shot, tier, asset type, plate, source, delta, motif, and text before writing
+   any full image prompt.
+4. Target 35 to 45 percent new `PLATE` rows, 30 to 40 percent `VARIANT`, 10 to 15 percent
+   `CAPCUT`, 5 to 10 percent `CALLBACK`, and 5 to 10 percent text or diagram update beats.
+5. Keep `ATMOSPHERIC` at or below 10 percent. Use `CLEAN` near 40 percent and `LAYERED` near
+   50 percent.
+6. Rotate registers after two or three beats. A longer run is legal only when every beat shares
+   one plate and forms a valid build.
+7. In each 30 second block, plan at least four shot tasks from the V2 shot grammar.
+8. Every variant points backward to an earlier source beat and names exactly one meaningful
+   delta. Every callback points backward and states the changed meaning.
+9. Add CapCut-only events where required so no ordinary unchanged hold exceeds 4 seconds and
+   whole-video rhythm reaches 28 to 32 meaningful visual states per minute.
+10. Plan 5 to 8 build chains and an ending callback to the hook for a normal 10 to 12 minute
+    episode.
 
 ## The prompt rules
 
@@ -60,13 +98,13 @@ Record the totals. They go in the file header and the `check` skill verifies the
    image: no timestamp, clock, or counter burned into a corner, no literal "@NAME" caption
    anywhere in the frame. This is why every prompt's STYLE LOCK explicitly repeats that
    negative. **Never drop it.**
-3. **Every prompt opens with the STYLE ANCHOR** from `visual-style.md`, copied character
-   for character.
-4. **Every prompt ends with the STYLE LOCK** from `visual-style.md`, copied character for
-   character.
+3. **Every prompt opens with the selected version's STYLE ANCHOR** from `visual-style.md`,
+   copied character for character. V1 uses `V1_STYLE_ANCHOR`; V2 uses `V2_STYLE_ANCHOR`.
+4. **Every prompt ends with the same version's STYLE LOCK**, copied character for character.
+   V1 uses `V1_STYLE_LOCK`; V2 uses `V2_STYLE_LOCK`.
 5. **Refer to every cast member by their `@` token, never by description.** Write
    `@ALAN sits hunched on the edge of a bed`, never `a thin stick figure with a brown
-   tunic sits hunched`. The `@` token carries the entire design. Your job is only the
+tunic sits hunched`. The `@` token carries the entire design. Your job is only the
    action, expression, posture, and position in frame.
    - Use the exact tokens from the cast table: correct spelling, ALL CAPS, always `@`
      prefixed.
@@ -86,7 +124,8 @@ Record the totals. They go in the file header and the `check` skill verifies the
    whether any on-screen text or labels appear.
 7. **Translate abstract narration into concrete visuals.** See the examples in
    `visual-style.md`. Never render an abstraction as an abstraction.
-8. **Match background color to tone** using the tone map in `visual-style.md`, and respect the
+8. **For V1, match background color to tone** using the legacy tone map in
+   `visual-style.md`, and respect the
    background budget there. **Plain white is the default and must be the clear majority, 55 to
    75 percent of all prompts.** Cobalt blue is capped at 15 percent and means literally inside
    the mind, a brain or a thought loop as the subject. It does not mean night, sad, or serious.
@@ -100,23 +139,35 @@ Record the totals. They go in the file header and the `check` skill verifies the
    - Also read the project's `character-prompts.md` colour notes for per-video constraints, for
      example a cast member whose garment colour matches a background colour, and add one grep per
      constraint to Step 3.
-9. **On-screen text is black by default, red only for danger, threat, failure, or negation.**
+   - **For V2, use exactly one planned surface family per generated prompt:** `warm cream or
+off-white card`, `light tinted chapter card`, `illustrated story environment`, `cobalt mind
+interior`, or `pure white card`. Follow the V2 budget and selected chapter palette. Reserve
+     saturated channel blue for Toss or one semantic diagram signal. A generic crowd may use dusty
+     blue, but not saturated channel blue when Toss wears his default blue hoodie.
+9. **On-screen text is charcoal or black by default, red only for danger, threat, failure, or
+   negation.**
    Never yellow on a white background, it is unreadable.
-10. **Emotion lives in the eyebrows, mouth line, body posture, and head color**, never in
-   background detail. Red equals embarrassed, angry, or overheated. White is neutral.
-   Blue-tinted is sad, cold, or lonely. Keep every frame down to the fewest objects that
-   carry the idea.
-11. **Hold scenes across consecutive timestamps.** If 3 lines describe the same moment,
+10. **Emotion lives first in the eyebrows, mouth line, body posture, and head color.** V1 never
+    places emotion in background detail. V2 may use one supporting environment contrast, such as
+    a warm party around a cool isolated Toss, but the character must still read without it.
+11. **Hold plates across consecutive timestamps.** If 3 lines describe the same moment,
     keep the same scene, the same cast members, and the same background, and only adjust
-    their expression or add one new element. **Do not generate a brand new scene every 5
-    seconds.**
+    their expression or add one new element. In V2, encode the chain in `visual-plan.md` and
+    preserve camera axis, cast placement, environment geometry, major objects, palette, and line
+    hierarchy. **Do not generate a brand new scene every 5 seconds.**
 12. **Keep the cast internally logical.** `@YOU` carries the modern-life frames. The cast
     member from the script's other era or setting carries those frames. The two appear
     together only in a deliberate then-vs-now split frame. Do not swap who plays which
     role mid-video, and never place a character in an era their reference sheet was not
     drawn for.
-13. **Use the nine proven frame types** from `visual-style.md` when appropriate rather than
-    inventing a layout.
+13. **Use the nine proven frame types** from `visual-style.md` when appropriate. V2 also rotates
+    the six named registers and the seven shot tasks instead of repeating one layout.
+14. **Every V2 prompt names its render tier in this exact form:** `CLEAN render tier:`,
+    `LAYERED render tier:`, or `ATMOSPHERIC render tier:`. Follow only the permissions for that
+    tier. Do not let an atmospheric effect leak into CLEAN.
+15. **Every V2 prompt implements one visual-plan row.** A new plate describes a complete
+    composition. A variant begins its scene clause with `Preserve the attached source plate`
+    and names the single delta. A callback names the earlier plate and its changed meaning.
 
 ## Step 2 - Generate in internal chunks
 
@@ -133,60 +184,93 @@ last 3 prompts you wrote so the scene-holding rule survives the chunk boundary, 
 the tone map so the background palette does not drift.
 
 Chunking is not cosmetic. A single uninterrupted pass over 250 prompts degrades: scenes stop
-holding, backgrounds drift toward white, and the last 50 prompts get shorter than the first
-50. Chunk, re-anchor, continue.
+holding, backgrounds drift toward white, and the last 50 prompts get shorter than the first 50. Chunk, re-anchor, continue.
 
 ## Step 3 - Verify mechanically
 
 ```bash
-source .agents/bin/style-strings.sh   # exports STYLE_ANCHOR and STYLE_LOCK
+source .agents/bin/style-strings.sh
 F="$P/prompts/image-prompts.md"
 T="$P/transcribes/transcript.md"
+N=$(grep -c '^\[' "$F")
 
-# one prompt per cue
-echo "cues: $(grep -c . "$T")  prompts: $(grep -c '^\[' "$F")"
+# One prompt per cue. CapCut-only plan rows do not create prompt records.
+echo "cues: $(grep -c . "$T")  prompts: $N"
 
 # PROMPTS ONLY: no header, no title, no commentary. Must be 0.
 grep -v '^\[' "$F" | grep -c .
 head -c1 "$F"   # must be [
 
-# timestamps identical and in order
+# Timestamps identical and in order.
 diff <(awk '{print $1}' "$T") <(grep -o '^\[[0-9:]*\]' "$F") && echo "timestamps match"
 
-# anchor and lock on every prompt, compared against the one definition
-echo "anchor: $(grep -cF "$STYLE_ANCHOR" "$F")  lock: $(grep -cF "$STYLE_LOCK" "$F")"
+# Exactly one style version must cover every prompt.
+V1A=$(grep -cF "$V1_STYLE_ANCHOR" "$F"); V1L=$(grep -cF "$V1_STYLE_LOCK" "$F")
+V2A=$(grep -cF "$V2_STYLE_ANCHOR" "$F"); V2L=$(grep -cF "$V2_STYLE_LOCK" "$F")
+printf 'V1 anchor/lock %s/%s  V2 anchor/lock %s/%s\n' "$V1A" "$V1L" "$V2A" "$V2L"
 
-# no token outside the cast table
+# No token outside the cast table.
 comm -13 <(grep -oE '@[A-Z]+' "$P"/prompts/character-prompts.md | sort -u) \
          <(grep -oE '@[A-Z]+' "$F" | sort -u)
 
 grep -n "$(printf '\u2014')" "$F" && echo "FAIL: em dash" || echo "clean"
 
-# BACKGROUND BUDGET - white must be the clear majority, cobalt capped
-N=$(grep -c '^\[' "$F")
+# V1 background budget. Run only when V1A equals N.
 S=0
 for pat in 'plain white background' 'cobalt blue' 'tan #C4965A' 'orange #F5820D' 'grass green #3A9E3A'; do
   c=$(grep -ci "$pat" "$F"); S=$((S+c)); printf '  %-26s %3s  %2s%%\n' "$pat" "$c" "$((c*100/N))"
 done
-# the five counts must sum to N: anything else means a prompt has two backgrounds or none
 echo "  sum $S of $N"
-# text colour: black default, red for threat, yellow never
 for col in black red yellow; do printf '  text %-7s %3s\n' "$col" "$(grep -c "bold $col ALL CAPS" "$F")"; done
 grep '^\[' "$F" | grep 'plain white background' | grep -c 'bold yellow'   # must be 0
+
+# V2 plan and prompt budgets. Run only when V2A equals N.
+V="$P/prompts/visual-plan.md"
+grep -c '^Style version: V2$' "$V"          # exactly 1
+grep -c '^| B[0-9][0-9][0-9] ' "$V"        # all planned visual states
+grep '^| B[0-9][0-9][0-9] ' "$V" | grep -vc ' | CAPCUT |'  # must equal N
+for tier in CLEAN LAYERED ATMOSPHERIC; do
+  printf '  tier %-12s plan %3s prompts %3s\n' "$tier" \
+    "$(grep '^| B[0-9][0-9][0-9] ' "$V" | grep -v ' | CAPCUT |' | grep -c " | $tier |")" \
+    "$(grep -c "$tier render tier:" "$F")"
+done
+for surface in 'warm cream or off-white card' 'light tinted chapter card' \
+  'illustrated story environment' 'cobalt mind interior' 'pure white card'; do
+  printf '  surface %-34s %3s\n' "$surface" "$(grep -ci "$surface" "$F")"
+done
+
+# Variant, callback, and CapCut sources must point backward and carry one delta.
+awk -F'|' '
+  /^\| B[0-9][0-9][0-9] / {
+    gsub(/^ +| +$/, "", $2); beat=$2
+    gsub(/^ +| +$/, "", $8); asset=$8
+    gsub(/^ +| +$/, "", $10); source=$10
+    gsub(/^ +| +$/, "", $11); delta=$11
+    if (asset != "PLATE" && (source == "-" || !(source in seen)))
+      print "bad source at " beat ": " source
+    if (asset != "PLATE" && delta == "-") print "missing delta at " beat
+    seen[beat]=1
+  }
+' "$V"
 ```
 
-**FAIL the run and fix it if** white is under 55 percent, cobalt is over 15 percent, any
-`solid blue` background appears, any yellow caption appears, or any yellow caption sits on a
-white background. These are the exact faults that got project 2's first pass rejected.
+For V1, fail if white is under 55 percent, cobalt is over 15 percent, any `solid blue`
+background appears, any yellow caption appears, or any yellow caption sits on a white
+background.
+
+For V2, fail if the plan is missing, generated plan rows do not equal prompt count, tier counts
+or surface counts do not equal prompt count, ATMOSPHERIC exceeds 10 percent, cobalt mind
+interiors exceed 10 percent, pure white cards exceed 15 percent, a source points forward or
+nowhere, a non-plate delta is missing, or both V1 and V2 strings appear.
 
 Sourcing `.agents/bin/style-strings.sh` extracts the anchor and lock from
 `.agents/rules/visual-style.md` at run time. Never hard-code them into a grep pattern here:
 a hard-coded pattern can drift from the definition it is meant to be checking, which defeats
 the purpose.
 
-Prompt count must equal cue count. Anchor count and lock count must both equal prompt
-count. The `comm` output must be empty except for `@[name]`, which is part of the style
-lock. Fix anything that fails before reporting.
+Prompt count must equal cue count. Exactly one version's anchor and lock counts must both equal
+prompt count while the other version counts remain zero. The `comm` output must be empty except
+for `@[name]`, which is part of the style lock. Fix anything that fails before reporting.
 
 ## Step 4 - Report and hand off
 
@@ -194,8 +278,10 @@ lock. Fix anything that fails before reporting.
 this is the only place the human gets it, so do not abbreviate it. Give the prompt count
 against the cue count, the cast list with its `.jpeg` file names, any duplicate timestamps
 with the file-naming workaround, the background budget table, and the first 3 prompts as a
-sample. Then, quoting the GENERATION LINE from `visual-style.md` verbatim so the human can
-copy it:
+sample. For V2, also report style version, chapter colors, motif, register totals, tier totals,
+surface totals, new plates, variants, callbacks, CapCut-only beats, hero frames, longest planned
+hold, and planned beats per minute. Then quote the selected version's GENERATION LINE from
+`visual-style.md` verbatim so the human can copy it:
 
 > Image prompts saved to `<path>`. The file is prompts only, so it imports directly.
 >

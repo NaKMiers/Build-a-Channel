@@ -2,6 +2,18 @@
 
 Self-improving notes for validation. Single canonical copy.
 
+## V2 version and plan checks, 2026-08-03
+
+V1 and V2 strings are separately canonical in `visual-style.md`. Projects 1 through 5 remain
+V1. A V2 project must have one `prompts/visual-plan.md`, complete V2 anchor and lock coverage,
+and zero V1 string occurrences. A V1 project must not be failed for lacking a visual plan.
+
+The V2 plan is checked mechanically for generated-row coverage, enums, tier totals, surface
+totals, backward source links, one delta per non-plate beat, 4 second holds, 28 to 32 whole-video
+beats per minute, register runs, and one-to-five-word editorial text. The pilot found two prompt
+failures worth retaining as checks: generic crowd clothing must not take Toss's saturated blue,
+and ATMOSPHERIC richness must remain at or below 10 percent.
+
 **The rule for this file: every defect that reaches a generated image, and that could have
 been caught mechanically, becomes a permanent check here and in SKILL.md.**
 

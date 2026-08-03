@@ -89,6 +89,23 @@ silently wrong timings, not an error.
 
 ## Step 2 - Choose the engine
 
+### Select the cue-density profile
+
+Projects 1 through 5 keep the V1 defaults when their transcript stage is redone. Project 6 and
+later use the tested V2 dense profile:
+
+```bash
+TS_PROFILE=(--pause 0.24 --max-dur 3.2 --min-words 2)
+```
+
+The V2 profile was tested against Project 1's cached 11m30s word timings. It produced 316 cues,
+a 1.8 second median cue, and only two one-word cues, both intentional verdicts. That is 27.5
+generated cues per minute before the V2 plan adds CapCut-only beats, which brings the finished
+visual rhythm into the 28 to 32 target range without creating one-word junk.
+
+For a V1 project use `TS_PROFILE=()` instead. Add `"${TS_PROFILE[@]}"` to every
+`audio-to-timestamps.py` invocation below, including the final cache merge.
+
 **Case A, audio plus script. The default.** Forced alignment via ElevenLabs, roughly
 $0.08 for a 12 minute video.
 
@@ -97,6 +114,7 @@ Single part:
 ```bash
 python3 tools/audio-to-timestamps.py "$P"/audios/<audio> \
   --script "$P"/script_<short_slug>.md \
+  "${TS_PROFILE[@]}" \
   --save-json "$P"/transcribes/words.json \
   -o "$P"/transcribes/transcript.md
 ```
@@ -116,6 +134,7 @@ W=<scratch dir>
 for i in 1 2 3; do
   python3 tools/audio-to-timestamps.py "$P"/audios/part-$i.mp3 \
     --script "$W"/script-part-$i.md \
+    "${TS_PROFILE[@]}" \
     --save-json "$W"/words-part-$i.json \
     -o "$W"/transcript-part-$i.md
 done
@@ -125,6 +144,7 @@ python3 tools/audio-to-timestamps.py \
   --from-json "$W"/words-part-2.json \
   --from-json "$W"/words-part-3.json \
   --offsets "$P"/transcribes/offsets.json \
+  "${TS_PROFILE[@]}" \
   --save-json "$P"/transcribes/words.json \
   -o "$P"/transcribes/transcript.md
 ```
@@ -141,7 +161,7 @@ project keeps; the per-part caches stay in the working directory.
 the user that wording and punctuation can drift from the script.
 
 ```bash
-python3 tools/audio-to-timestamps.py "$P"/audios/<audio> --engine groq \
+python3 tools/audio-to-timestamps.py "$P"/audios/<audio> --engine groq "${TS_PROFILE[@]}" \
   --save-json "$P"/transcribes/words.json \
   -o "$P"/transcribes/transcript.md
 ```
@@ -187,8 +207,9 @@ Interpret the line count:
 - **Fewer than 20 lines** means the transcript is incomplete. Tell the user exactly:
   "This looks incomplete. A 10 to 14 minute video should have 80 to 120 timestamp lines."
   Then stop.
-- **Around 230 lines of roughly 3 seconds** is normal for a 12 minute script with the
-  default settings.
+- **V1: around 230 lines of roughly 3 seconds** is normal for a 12 minute script.
+- **V2: around 300 to 330 lines with a 1.7 to 2.0 second median** is normal for a 12 minute
+  script. The exact number follows the narrator's real pauses.
 - **More lines than the user wants to pay to illustrate**: re-cut for free from the cache
   rather than re-calling the API.
 
