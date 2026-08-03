@@ -166,19 +166,31 @@ describe edit events and do not create prompt records or scene files.
 **PROMPTS ONLY. No header, no title, no cast line, no commentary.** The file is a machine
 input: it gets imported wholesale into an image tool that expects every line to be a prompt.
 The first line of the file is the first prompt. One prompt per line, separated by exactly ONE
-blank line, no fences.
+blank line, no fences. The single exception is the `---` chain break described below.
 
 ```markdown
 [0:00] <STYLE ANCHOR> <scene> <STYLE LOCK>
 
 [0:04] <STYLE ANCHOR> <scene> <STYLE LOCK>
+
+---
+
+[0:07] <STYLE ANCHOR> <scene> <STYLE LOCK>
 ```
 
 - Every prompt is exactly ONE unbroken line. A wrapped prompt becomes two broken
   prompts because downstream tools split this file on newlines.
-- **Nothing but prompts and single blank separators.** `grep -v '^\[' | grep -c .` must be 0.
-  A title line or an attachment note is not harmless decoration here, it is an extra record
-  the importing tool will try to render as an image.
+- **Nothing but prompts, single blank separators, and `---` chain breaks.**
+  `grep -vE '^(\[|---$)' | grep -c .` must be 0. A title line or an attachment note is not
+  harmless decoration here, it is an extra record the importing tool will try to render as
+  an image.
+- **A lone `---` line is a chain break.** The Google Flow chain workflow wires each generated
+  card to the card before it, so prompt N inherits prompt N-1's image. `---` cuts that wire so
+  the prompt below it starts a fresh chain. Read `.agents/rules/image-generation.md` for the
+  tool, the break shape, and when a break belongs. Format: exactly three hyphens alone on the
+  line, one blank line above and one below, never the first or last line of the file, never
+  two breaks in a row. A break creates no record and no scene image, so prompt count, cue
+  count, and file names are unaffected by it.
 - The timestamp prefix is copied character for character from the transcript. `[0:00]`
   stays `[0:00]`, `[00:00]` stays `[00:00]`. Never reformat, re-pad, or renumber.
   Scene image file names replace the timestamp colon with a hyphen for Windows

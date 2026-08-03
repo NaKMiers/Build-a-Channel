@@ -24,6 +24,7 @@ delegate back. See `.agents/README.md` and `.claude/README.md`.
 | `.agents/rules/mascot-toss.md`     | building the cast. Toss identity lock and the reference sheet template.                                      |
 | `.agents/rules/thumbnail-rules.md` | writing thumbnail concepts. Rules A to F, evidence-backed.                                                   |
 | `.agents/rules/file-formats.md`    | writing any project artifact. Layout and exact file shapes.                                                  |
+| `.agents/rules/image-generation.md`| writing or editing `image-prompts.md`. The chain workflow that renders it, and the `---` chain break.        |
 
 ## The pipeline
 

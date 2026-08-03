@@ -6,9 +6,9 @@ that delegate back (see `.claude/README.md`).
 
 ```text
 .agents/
-  rules/     the channel brain. Six files, read the focused one before acting:
+  rules/     the channel brain. Seven files, read the focused one before acting:
              house-rules, channel-dna, visual-style, mascot-toss,
-             thumbnail-rules, file-formats.
+             thumbnail-rules, file-formats, image-generation.
   skills/    executable project-local skills. Each skill is:
                <name>/
                  SKILL.md              full logic, workflow, self-check
@@ -18,8 +18,9 @@ that delegate back (see `.claude/README.md`).
 
 ## What lives where
 
-Eight of the skills are the content pipeline. The six rule files are the channel knowledge that used
-to sit inside `prompts/master-prompt.md`. Skills read the rule files at run time rather
+Eight of the skills are the content pipeline. The rule files are the channel knowledge that used
+to sit inside `prompts/master-prompt.md`, plus `image-generation.md`, which documents the tool
+that turns `image-prompts.md` into images. Skills read the rule files at run time rather
 than restating them, so a rule is edited in exactly one place.
 
 This matters because it already bit us: the style anchor and style lock strings were

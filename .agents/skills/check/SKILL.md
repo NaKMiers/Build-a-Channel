@@ -21,6 +21,7 @@ something.
 
 - `.agents/rules/file-formats.md` - the spec everything is validated against
 - `.agents/rules/visual-style.md` - the V1 and V2 verbatim strings and V2 budgets
+- `.agents/rules/image-generation.md` - the chain workflow and the `---` chain break rules
 - `.agents/rules/thumbnail-rules.md` - the thumbnail-only rendering and packaging rules
 - `.agents/skills/thumbnail/references/style-spec.json` - the self-contained thumbnail style
 - `.agents/skills/check/references/memory.md`
@@ -185,8 +186,15 @@ comm -13 <(grep -oE '@[A-Z]+' "$C" | sort -u) <(grep -oE '@[A-Z]+' "$F" | sort -
 # blank-line separation: no two prompt lines adjacent
 awk '/^\[/{if(prev)print NR": adjacent prompts"; prev=1; next}{prev=0}' "$F"
 
-# PROMPTS ONLY: no header, no title, no commentary. Must be 0 from project 3 onward.
-grep -v '^\[' "$F" | grep -c .
+# PROMPTS ONLY, plus '---' chain breaks. Must be 0 from project 3 onward.
+grep -vE '^(\[|---$)' "$F" | grep -c .
+
+# chain breaks: count, then shape
+grep -c '^---$' "$F"
+awk '{L[NR]=$0} END{for(i=1;i<=NR;i++) if(L[i]=="---"){
+  if(i==1||L[i-1]!="") print i": break needs one blank line above"
+  if(i==NR||L[i+1]!="") print i": break needs one blank line below"
+  if(i>2&&L[i-2]=="---") print i": two breaks in a row"}}' "$F"
 ```
 
 FAIL conditions:
@@ -196,10 +204,19 @@ FAIL conditions:
 - any V1 count above zero in a V2 project, or any V2 count above zero in a V1 project
 - any `@TOKEN` not in the cast table. `@[name]` is expected, it is part of the style lock.
 - two prompt lines adjacent with no blank line between them
-- any non-prompt non-blank line, **from project 3 onward**. This file is imported wholesale
-  into an image tool that treats every line as a prompt, so a header becomes a junk
-  generation. Projects 1 and 4 still carry a 4 line header block: report those as INFO, not
-  FAIL, and say project 4 should be stripped before import. Projects 2 and 3 are already clean.
+- any non-prompt non-blank line that is not a `---` chain break, **from project 3 onward**.
+  This file is imported wholesale into an image tool that treats every line as a prompt, so a
+  header becomes a junk generation. Projects 1 and 4 still carry a 4 line header block: report
+  those as INFO, not FAIL, and say project 4 should be stripped before import. Projects 2 and 3
+  are already clean.
+- a malformed chain break: not exactly `---`, missing a blank line above or below, sitting on
+  the first or last line of the file, or doubled
+
+Zero chain breaks is INFO, not FAIL, and only in a legacy project written before the rule.
+Say plainly what it costs: the generation tool wires every card to the one before it, so
+without breaks every chapter and era cut inherits the frame it was supposed to leave behind.
+See `.agents/rules/image-generation.md`. Projects 1 through 5 predate the rule and are reported
+as INFO. Enforce breaks from the first project written after it.
 
 **Reading the timestamp diff.** A clean diff is a PASS. A non-empty diff is only a PASS if
 every differing line is a documented duplicate remap, and there are no more of them than
@@ -284,6 +301,19 @@ awk -F'|' '
   }
 ' "$V"
 
+# A chain break may only open a new PLATE, never a variant, callback, or hold.
+awk -F'|' '
+  NR==FNR { if ($0 ~ /^\| B[0-9][0-9][0-9] /) {
+      t=$3; a=$8; gsub(/^ +| +$/, "", t); gsub(/^ +| +$/, "", a); asset[t]=a } ; next }
+  { L[FNR]=$0 }
+  END { for (i=1;i<=FNR;i++) if (L[i]=="---")
+          for (j=i+1;j<=FNR;j++) if (L[j] ~ /^\[/) {
+            match(L[j], /^\[[0-9:]+\]/); t=substr(L[j], 1, RLENGTH)
+            if (asset[t] != "" && asset[t] != "PLATE")
+              print "break before " t " opens a " asset[t] ", not a PLATE"
+            break } }
+' "$V" "$F"
+
 # Cadence and long holds across all visual states.
 awk -F'|' '
   /^\| B[0-9][0-9][0-9] / {
@@ -321,7 +351,8 @@ V2 FAIL conditions also include generated plan rows not equal to prompt count, m
 versions, invalid enums, tier or surface totals not equal to prompt count, ATMOSPHERIC over 10
 percent, cobalt over 10 percent, pure white over 15 percent, a bad source, missing or multiple
 meaning deltas, an unexplained register run, an ordinary hold over 4 seconds, overall rhythm
-outside 28 to 32 beats per minute, or editorial text over 5 words. Review every callback to
+outside 28 to 32 beats per minute, editorial text over 5 words, or a chain break that opens
+anything other than a `PLATE`. Review every callback to
 confirm that it changes meaning rather than merely repeating an asset.
 
 ## Step 7 - Thumbnail checks

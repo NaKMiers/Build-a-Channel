@@ -23,6 +23,8 @@ beats in the visual plan.
   render tiers, registers, shot grammar, palette, cadence, and the legacy V1 rules.
 - `.agents/rules/file-formats.md` - the `prompts/visual-plan.md` and
   `prompts/image-prompts.md` sections
+- `.agents/rules/image-generation.md` - the chain workflow this file feeds, and the `---`
+  chain break it must carry
 - `.agents/skills/scenes/references/memory.md`
 - The project's `prompts/character-prompts.md` cast table. This is the only legal source
   of `@` tokens.
@@ -86,6 +88,10 @@ Write `prompts/visual-plan.md` in the exact format from `file-formats.md`.
    whole-video rhythm reaches 28 to 32 meaningful visual states per minute.
 10. Plan 5 to 8 build chains and an ending callback to the hook for a normal 10 to 12 minute
     episode.
+11. Mark where the generation chain gets cut. A cut belongs at a chapter or act boundary and at
+    any hard cut in place, era, cast, or surface register. It may only land on a `PLATE` row,
+    never on a `VARIANT`, a `CALLBACK`, or a hold, and never between a variant and its source.
+    These become the `---` lines in `image-prompts.md`. See prompt rule 16.
 
 ## The prompt rules
 
@@ -168,15 +174,30 @@ interior`, or `pure white card`. Follow the V2 budget and selected chapter palet
 15. **Every V2 prompt implements one visual-plan row.** A new plate describes a complete
     composition. A variant begins its scene clause with `Preserve the attached source plate`
     and names the single delta. A callback names the earlier plate and its changed meaning.
+16. **Cut the chain with a `---` line wherever a frame must not inherit the frame before it.**
+    The generation tool wires every card to the previous card, so prompt N is generated from
+    prompt N-1's image unless a break stops it. Read `.agents/rules/image-generation.md` for
+    the full rule. In short:
+    - Break at a chapter or act boundary, a hard cut in place, era, or cast, a register switch
+      that changes the whole surface, and before any new `PLATE` the previous frame would
+      contaminate.
+    - **Never break between a `VARIANT` or `CALLBACK` and the plate it points back to.** The
+      chain is linear, so cutting it there destroys the lineage the plan just declared. Never
+      break inside a hold either. Those beats depend on inheritance.
+    - Format is exactly `---` alone on a line, one blank line above and one below, never the
+      first or last line of the file, never two in a row.
+    - A break creates no record and no scene image. Prompt count, timestamps, and file names
+      are untouched by it.
 
 ## Step 2 - Generate in internal chunks
 
-**Write NO header. The file contains prompts and nothing else.** The first byte of the file is
-the `[` of the first prompt. No title, no cast line, no source-transcript line, no attachment
-note, no GENERATION LINE, no commentary anywhere. `image-prompts.md` is imported wholesale into
-an image tool that treats every line as a prompt, so a header becomes a junk generation. The
-cast list, cue counts, duplicate-timestamp note and GENERATION LINE all go in the **chat
-report** at Step 4 instead, where the human reads them and the tool never sees them.
+**Write NO header. The file contains prompts, blank separators, and `---` chain breaks, and
+nothing else.** The first byte of the file is the `[` of the first prompt. No title, no cast
+line, no source-transcript line, no attachment note, no GENERATION LINE, no commentary
+anywhere. `image-prompts.md` is imported wholesale into an image tool that treats every line as
+a prompt, so a header becomes a junk generation. The cast list, cue counts,
+duplicate-timestamp note and GENERATION LINE all go in the **chat report** at Step 4 instead,
+where the human reads them and the tool never sees them.
 
 Work through the transcript in **internal chunks of 25 cues**, appending each chunk to the
 file. Do not ask the user between chunks. Before each chunk after the first, re-read the
@@ -197,9 +218,16 @@ N=$(grep -c '^\[' "$F")
 # One prompt per cue. CapCut-only plan rows do not create prompt records.
 echo "cues: $(grep -c . "$T")  prompts: $N"
 
-# PROMPTS ONLY: no header, no title, no commentary. Must be 0.
-grep -v '^\[' "$F" | grep -c .
+# PROMPTS ONLY: no header, no title, no commentary. Only '---' breaks are allowed. Must be 0.
+grep -vE '^(\[|---$)' "$F" | grep -c .
 head -c1 "$F"   # must be [
+
+# Chain breaks: exactly '---', blank line each side, never first or last, never doubled.
+grep -c '^---$' "$F"
+awk '{L[NR]=$0} END{for(i=1;i<=NR;i++) if(L[i]=="---"){
+  if(i==1||L[i-1]!="") print i": break needs one blank line above"
+  if(i==NR||L[i+1]!="") print i": break needs one blank line below"
+  if(i>2&&L[i-2]=="---") print i": two breaks in a row"}}' "$F"
 
 # Timestamps identical and in order.
 diff <(awk '{print $1}' "$T") <(grep -o '^\[[0-9:]*\]' "$F") && echo "timestamps match"
@@ -252,6 +280,19 @@ awk -F'|' '
     seen[beat]=1
   }
 ' "$V"
+
+# A chain break may only open a new PLATE, never a variant, callback, or hold.
+awk -F'|' '
+  NR==FNR { if ($0 ~ /^\| B[0-9][0-9][0-9] /) {
+      t=$3; a=$8; gsub(/^ +| +$/, "", t); gsub(/^ +| +$/, "", a); asset[t]=a } ; next }
+  { L[FNR]=$0 }
+  END { for (i=1;i<=FNR;i++) if (L[i]=="---")
+          for (j=i+1;j<=FNR;j++) if (L[j] ~ /^\[/) {
+            match(L[j], /^\[[0-9:]+\]/); t=substr(L[j], 1, RLENGTH)
+            if (asset[t] != "" && asset[t] != "PLATE")
+              print "break before " t " opens a " asset[t] ", not a PLATE"
+            break } }
+' "$V" "$F"
 ```
 
 For V1, fail if white is under 55 percent, cobalt is over 15 percent, any `solid blue`
@@ -262,6 +303,11 @@ For V2, fail if the plan is missing, generated plan rows do not equal prompt cou
 or surface counts do not equal prompt count, ATMOSPHERIC exceeds 10 percent, cobalt mind
 interiors exceed 10 percent, pure white cards exceed 15 percent, a source points forward or
 nowhere, a non-plate delta is missing, or both V1 and V2 strings appear.
+
+Either version fails if a `---` line is malformed, doubled, leading, or trailing, or if any
+other non-prompt line survives. For V2 it also fails if a break opens anything but a `PLATE`.
+Zero breaks in a multi-act episode is not a pass, it means every hard cut is still inheriting
+the frame before it. Re-read prompt rule 16 and place them.
 
 Sourcing `.agents/bin/style-strings.sh` extracts the anchor and lock from
 `.agents/rules/visual-style.md` at run time. Never hard-code them into a grep pattern here:
@@ -277,17 +323,23 @@ for `@[name]`, which is part of the style lock. Fix anything that fails before r
 **The chat report carries everything the header used to.** Since the file is prompts only,
 this is the only place the human gets it, so do not abbreviate it. Give the prompt count
 against the cue count, the cast list with its `.jpeg` file names, any duplicate timestamps
-with the file-naming workaround, the background budget table, and the first 3 prompts as a
-sample. For V2, also report style version, chapter colors, motif, register totals, tier totals,
+with the file-naming workaround, the background budget table, the chain-break count with the
+timestamp each break opens and why, and the first 3 prompts as a sample. For V2, also report style version, chapter colors, motif, register totals, tier totals,
 surface totals, new plates, variants, callbacks, CapCut-only beats, hero frames, longest planned
 hold, and planned beats per minute. Then quote the selected version's GENERATION LINE from
 `visual-style.md` verbatim so the human can copy it:
 
 > Image prompts saved to `<path>`. The file is prompts only, so it imports directly.
 >
-> Paste them into Nano Banana, Gemini, Midjourney, DALL-E 3, or Stable Diffusion. For each
-> prompt, attach only the `.jpeg` sheets for the `@` tokens it contains, and add this line to
-> every generation: `<GENERATION LINE, verbatim>`
+> In the Flow chain workflow: bind every `characters/NAME.jpeg` under its exact `@TOKEN`, set
+> the model and 16:9, then paste the whole file into IMAGE PROMPTS. The CREATE button must
+> read `<N>` images, the same `<N>` as the prompt count above. The `<B>` `---` lines are chain
+> breaks and generate nothing. Add this line to every generation:
+> `<GENERATION LINE, verbatim>`
+>
+> One prompt at a time in Nano Banana, Gemini, Midjourney, DALL-E 3, or Stable Diffusion also
+> works. There, attach only the `.jpeg` sheets for the `@` tokens each prompt contains, and
+> carry the previous image forward as a reference except where a `---` says not to.
 >
 > **Pro tip:** generate the 3 or 4 frames where your main character is most visible first.
 > If any drifts from the reference sheet, fix it before generating the rest. Drift
@@ -303,9 +355,12 @@ hold, and planned beats per minute. Then quote the selected version's GENERATION
 - Never wrap a prompt across two lines. Downstream tools split this file on newlines, so a
   wrapped prompt becomes two broken prompts.
 - Never write a header, a title, a cast line, or any commentary into the file. Every line is
-  either a prompt or one of the single blank separators between them. The file is imported
-  wholesale, so a header line becomes a junk image.
-- Never put a blank second line between prompts. Exactly one blank line separates them.
+  either a prompt, a `---` chain break, or one of the single blank separators between them.
+  The file is imported wholesale, so a header line becomes a junk image.
+- Never put a blank second line between prompts. Exactly one blank line separates them, and a
+  chain break sits as blank, `---`, blank.
+- Never cut the chain between a variant or a callback and the plate it points back to, and
+  never inside a hold. Those beats exist because they inherit the frame before them.
 - Never re-describe a cast member. Never invent a token.
 
 ## Self-improvement

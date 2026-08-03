@@ -8,7 +8,7 @@ import sys
 from pathlib import Path
 
 STAMP = re.compile(r"^\[(\d+):(\d{2})\]", re.MULTILINE)
-NUMBERED = re.compile(r"^(\d+)_2k\.jpg$")
+NUMBERED = re.compile(r"^(\d+)_2k\.jpe?g$")
 TIMESTAMPED = re.compile(r"^\[\d+-\d{2}\]\.jpg$")
 
 
@@ -39,10 +39,24 @@ def prompt_stamps(project: Path) -> list[str]:
     return [f"{match.group(1)}:{match.group(2)}" for match in STAMP.finditer(prompt.read_text(encoding="utf-8"))]
 
 
+def range_folder(project: Path, start: str, end: str) -> Path:
+    """Resolve a range folder by name, tolerating Windows-safe colon replacements."""
+    scenes = project / "scenes"
+    if not scenes.is_dir():
+        fail(f"Missing scenes directory: {scenes}")
+    names = list(dict.fromkeys(
+        f"{start.replace(':', sep)} - {end.replace(':', sep)}" for sep in (":", ".", "-")
+    ))
+    for name in names:
+        folder = scenes / name
+        if folder.is_dir():
+            return folder
+    present = sorted(item.name for item in scenes.iterdir() if item.is_dir())
+    fail(f"Missing scene range folder. Tried {names}. Present: {present or 'none'}")
+
+
 def range_data(project: Path, start: str, end: str):
-    folder = project / "scenes" / f"{start} - {end}"
-    if not folder.is_dir():
-        fail(f"Missing scene range folder: {folder}")
+    folder = range_folder(project, start, end)
     lower, upper = seconds(start), seconds(end)
     expected = [stamp for stamp in prompt_stamps(project) if lower <= seconds(stamp) <= upper]
     entries = list(folder.iterdir())
