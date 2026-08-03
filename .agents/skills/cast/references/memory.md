@@ -273,3 +273,47 @@ grandfathered INFO.
 - Group entries are one cast entry, not one per figure. `@CROWD` and `@BAND` each cover a whole
   formation and get a group sheet showing the formation, plus turned inward, turned away, and
   one figure excluded.
+
+## Project 6 (2026-08-03) - @FORAGER regenerated, and the eight ways a sheet drifts
+
+Cast is `@YOU` (Toss, canonical cobalt hoodie), `@PHONE` (personified object, dusty teal
+`#67A6A3`), `@FORAGER` (illustrative small-camp adult, brown `#8B5E3C`), `@HADZA` (present-day
+Tanzanian research group, coral `#D96F5F`). First V2 cast in the repo.
+
+The user rejected the generated `characters/FORAGER.jpeg` and asked for the prompt again. Comparing
+the render to the prompt, every fault was something the prompt had asked for in prose but not
+enforced, so the model quietly chose the easier drawing:
+
+| Rendered                                     | Prompt had said                        | What fixed it                                                                   |
+| -------------------------------------------- | -------------------------------------- | ------------------------------------------------------------------------------- |
+| single-stroke wire arms and legs             | two-contour white-filled tubes         | own `LIMB CONSTRUCTION` block, named the second priority after the head, with a width (one eighth of head diameter) and a fail test ("if it reads as a wire the sheet is wrong") |
+| legs ending in bare stroke tips              | small bare outlined line feet          | "in every single panel", plus "a figure missing one or both feet is a failed sheet" |
+| head about a quarter of the height           | roughly one third                      | a `PROPORTION LOCK` block placed FIRST, in head-heights: 3 total, torso 1, legs 1.25, arms 1 |
+| shaggy hair mass, fully black head from back | one compact closed crown shape         | "covers only the top third of the head circle", and the back view keeps the white head visible |
+| eyes with white highlights                   | solid black ovals                      | "no highlight, no catchlight, no pupil ring, no iris, no outline ring"           |
+| hands rubbing an eye and touching a chin in the expression row | expressions change brows and mouth only | "head and neck only in this row, no hands, fingers, arms, shoulders, props, sweat drops, or tears" |
+| dirt speckles, grass tufts, a drawn trail    | no scenery                             | negated per item on the POSE block itself, not only in `NEGATIVE`               |
+| tall angular stone slab                      | flat chipped oval                       | "wider than it is tall", "no upright standing stone, no faceted knapping flakes" |
+
+Three transferable rules:
+
+- **A construction detail that keeps coming back wrong needs its own labeled block with a
+  measurement and a fail test.** Buried inside `BODY CONSTRUCTION`, the limb sentence lost to the
+  model's stickman prior three panels in. As its own block with a number, it held.
+- **Put the negative where the temptation is.** "No scenery" in `NEGATIVE` did not stop ground
+  speckles under a crouching figure; naming them inside the pose block did.
+- **Referring to `brand/MASCOT.jpeg` in prose does nothing for a non-`@YOU` sheet.** The mascot is
+  not attached for those generations, so "matching the limbs in brand/MASCOT.jpeg" is a note to a
+  human. Describe the construction in full or attach nothing.
+
+Two Step 5 grep notes, both false alarms that cost a pass each:
+
+- `never a mitten` slips the mitten grep, because the alternation only excludes `never mittens`
+  with no article between. Write `never mittens, blobs, or nubs`.
+- The garment grep needs garment-word-then-hex. `brown (#8B5E3C) work wrap` prints blank, which
+  reads as "no colour assigned". Write `work wrap in brown (#8B5E3C)`.
+
+`MASCOT.jpeg` settles one open contradiction: `mascot-toss.md` says arms and legs are "thin single
+black lines", but the image shows bare limbs as **narrow white-filled tubes with two contours** and
+small outlined feet. Only the hoodie sleeves read as solid. Every bare-limbed cast member follows
+the image, not the sentence.

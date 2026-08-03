@@ -41,3 +41,60 @@ only at the colour-block boundaries and bisect. Project 5 took six image reads t
 images 1 through 145 were unshifted and the missing frame was the last one. Colour blocks
 alone bracketed it to nine white prompts; the final step compared the named delta in each
 prompt against the checklist drawn in the image.
+
+## Project 6 (2026-08-03), 303 images in 4 batches, clean end to end
+
+Folders `0.00 - 2.58`, `3.02 - 6.11`, `6.14 - 8.46`, `8.48 - 11.34`, dot separated like project 5,
+so `range_folder()`'s dot support carried it with no edits. 81 + 81 + 65 + 76 equals 303, all four
+`check-range` calls PASS, `move` flattened 303 files and removed 4 folders, `verify` PASS with zero
+missing, extra, duplicate, or unexpected entries.
+
+### Add one pre-rename test: prompts that fall BETWEEN two labelled ranges
+
+Project 5's dropped `[7:03]` would not be caught by per-range checks even today. Each folder can
+match the count of prompts inside its own label while a prompt sitting in the gap between two labels
+was never generated at all, and every `check-range` still says PASS. Only `verify`, after all the
+renames, reports it. The cheap test is one pass over the prompt timestamps:
+
+```python
+between = [t for t in ts if sec(prev_end) < sec(t) < sec(next_start)]   # must be empty
+```
+
+Project 6 returned empty for all three seams. Run this before the first `rename-range`, not after.
+
+### V2 has no tone map, so use the text and the motif as the alignment fingerprint
+
+Project 5's bisect recipe leans on the V1 background colour blocks. V2 frames are warm cream, tinted
+chapter cards, story environments, and cobalt interiors, which do not partition the timeline the way
+the V1 tone map did. What does fingerprint a V2 frame is the exact one-to-five-word on-screen text
+and the episode motif, both named in `image-prompts.md` and in `visual-plan.md`'s Text and Motif
+columns.
+
+**When every folder's count matches its label, three image reads are enough**: the first image of the
+first batch, one distinctive frame partway into a different batch, and the last image of the last
+batch. An intra-folder shift cannot happen without changing that folder's count, so the only
+remaining risk is a whole batch being mislabelled or swapped, which a probe in a second folder
+rules out. Project 6 used `[0:00]` SIX O'CLOCK, `[7:28]` the Hadza establishing shot, and `[11:34]`
+the full battery over Toss beside the dead one on the phone.
+
+### The generator leaves a watermark in the bottom-right corner of every frame
+
+Every sampled project 6 image carries a pale four-pointed sparkle in the bottom-right corner, the
+image model's own watermark, at roughly 60 px on a 1376 px wide frame. It survives into `scenes/`
+and has to be cropped or covered in the edit, and a crop costs frame edge on a 16:9 timeline.
+
+Sampling is cheap and worth doing once per episode, because a corner artifact is easy to miss when
+reviewing full frames:
+
+```python
+crops=[Image.open(S+n).crop((w-150,h-150,w,h)) for n in sample]   # paste into one contact sheet
+```
+
+Report it to the owner as an edit-stage task. It is not a file-management fault and no rename or
+move fixes it.
+
+### Shell note: this repo's shell is zsh, which does not word-split unquoted parameters
+
+`for r in "3:02 6:11" ...; do set -- $r; script "$1" "$2"; done` passes empty arguments in zsh and
+the tool exits on "requires START and END". Run the range commands as separate lines, or use
+`${=r}`. One operation at a time is the skill's rule anyway.

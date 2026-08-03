@@ -76,3 +76,31 @@ Self-improving notes for audio to timestamps. Single canonical copy.
   by creating multiple free accounts". A key being present is not a working key. There is
   no `GROQ_API_KEY` in `.env` and no local ASR installed, so with ElevenLabs blocked this
   stage cannot run at all. Report that and stop, do not silently switch engines.
+
+## Project 6 (2026-08-03) - align `full.mp3` in one call when the script has no part markers
+
+3 parts at 256 kbps: 4m46.7s, 4m20.7s, 2m30.5s, combined 11m37.9s, header and frames agreeing.
+303 cues, median 1.9s, last cue `[11:34]`, no duplicate timestamps, transcript text word-for-word
+identical to the script at 1891 words. Two one-word cues, `No.` and `Maybe.`, both intentional
+from "This video? No. That message? Maybe." Right on the V2 profile's predicted shape.
+
+**Aligned `audios/full.mp3` against the whole script in a single ElevenLabs call rather than per
+part, because this script has no part boundary to find.** `script_why_you_feel_more_tired.md` is
+single-blank-line separated throughout, so there is no run of blank lines marking where the
+recording stopped, and the words-per-second check could not pick a split: proportional word counts
+wanted boundaries at cum 777 and 1483, and the nearest paragraph ends gave a 10 percent wps spread
+whichever pair was chosen (2.65 / 2.85 / 2.58 at 760+743+388, 2.65 / 2.65 / 2.92 at 760+692+439).
+A 10 percent spread is exactly the condition the skill warns about, and a mismatched split aligns
+without raising an error.
+
+Per-part alignment buys retry granularity and stays under Groq's 25MB cap. Neither is a
+correctness argument, and ElevenLabs forced alignment has no size guard in
+`audio-to-timestamps.py`, only Groq does, so a 22.3 MB `full.mp3` uploads fine. **When the split
+point is a guess, one call on the combined file is the safer trade.** No `--offsets` pass is
+needed either, since the timeline is already the combined one. Both seams came back continuous,
+cues at `[4:46]` and `[9:05]` straddling the 4m46.7s and 9m07.4s joins with no gap over 4s
+anywhere in the file, which is the check that confirms no part was dropped.
+
+**This narrator reads V2 scripts at about 2.71 wps, not 2.98.** 1891 words over 697.9s. Project 3
+established 2.9 to 3.1 from a V1 script. Do not treat 2.7 as a failed split on its own: check
+whether the parts agree with each other, not whether they hit the older number.
