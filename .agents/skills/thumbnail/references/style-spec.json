@@ -47,6 +47,32 @@
         "hard horizontal division"
       ]
     },
+    "curiosity_power": {
+      "traits": [
+        "names a specific visible thing",
+        "withholds an answer the image cannot give",
+        "carries tone (question, alarm, command, or contradiction)"
+      ],
+      "hook_functions": [
+        "danger or consequence",
+        "scarcity or time pressure",
+        "visible contradiction",
+        "social exposure or discovery",
+        "forbidden or shocking behavior",
+        "urgent command tied to a fragile object or action",
+        "unresolved outcome",
+        "one physical mistake",
+        "surprising behavior"
+      ],
+      "rejection": [
+        "restates the video title",
+        "is a moral, takeaway, or complete explanation",
+        "could be swapped for an unrelated phrase without changing the scene",
+        "uses abstract jargon, theory label, or category name",
+        "names something invisible or impossible to depict"
+      ],
+      "speed_test": "A viewer who understands the question in under half a second is a viewer who clicks."
+    },
     "rules": [
       "Use the headline as a second hook, not a repetition of the video title.",
       "Connect the hook to something visible in the frame.",
@@ -115,14 +141,40 @@
   },
   "environment": {
     "style": "richly painted cinematic 2D cartoon environment",
-    "depth": [
-      "foreground overlap",
-      "size reduction",
-      "atmospheric perspective",
-      "localized sharpness",
-      "dark framing shapes",
-      "low-contrast scenery continuing behind the headline"
+    "depth_planes": {
+      "foreground": {
+        "count": "1 to 3 shapes",
+        "examples": ["cropped edge", "hand", "shoulder", "prop", "doorway frame"],
+        "treatment": "darker or warmer than the main subject, partial soft focus, overlaps the midground",
+        "purpose": "give the eye a place to enter the frame"
+      },
+      "midground": {
+        "contains": ["dominant face", "physical problem", "one supporting subject"],
+        "treatment": "sharpest, most detail, highest light, strongest saturation"
+      },
+      "background": {
+        "treatment": "20 to 40 percent lower saturation, 1 to 2 value steps cooler, softer edges",
+        "examples": ["distant landscape", "architecture", "sky", "haze", "fog"]
+      }
+    },
+    "depth_cues": [
+      "foreground shape overlapping the main subject",
+      "atmospheric perspective dropping saturation and value with distance",
+      "motivated occlusion by a doorway, branch, window mullion, shoulder, or falling object",
+      "size reduction across planes",
+      "localized sharpness on the midground",
+      "dark framing shapes at the edges"
     ],
+    "atmosphere": {
+      "haze": "low-contrast distant forms rise behind the headline without obscuring it",
+      "falloff": "warm light spills onto a face or prop with a radial gradient that fades to the cool ambient over 30 to 60 percent of the subject radius",
+      "background_softness": "soft edges, no hard outlines on the most distant plane"
+    },
+    "palette_continuity": {
+      "rule": "The headline area, the midground, and the background share one hue gradient.",
+      "failure_mode": "Three different palettes across the three planes break the painted-on illusion.",
+      "prefer": "one cool dominant family + one warm accent carried through every plane"
+    },
     "detail_priority": {
       "high": [
         "main face",

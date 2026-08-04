@@ -85,6 +85,9 @@ For every requested prompt, define:
 10. setting
 11. warm light source
 12. unresolved moment
+13. **foreground shape** (what overlaps the main subject from in front)
+14. **background atmosphere** (haze, falloff, distant color)
+15. **palette continuity** (one cool family + one warm accent that carries through)
 
 Run the rejection gate in `thumbnail-rules.md`. Rewrite any concept that fails.
 
@@ -138,6 +141,12 @@ Every prompt must:
 - use a cool environment and one warm visible light source
 - use expressive doodle characters inside a richly painted cinematic 2D environment
 - allow controlled gradients, soft shadows, painted texture, and atmospheric depth
+- declare a real **foreground shape** (cropped edge, hand, shoulder, prop) that overlaps the
+  main subject and is darker or warmer than it
+- build a **background plane** that drops 20 to 40 percent in saturation and 1 to 2 steps in
+  value compared to the midground, with atmospheric haze or falloff where the script permits
+- keep one **palette continuity** through the headline area, the midground, and the background
+  so the headline reads as painted onto the scene, never pasted on top
 - leave the bottom-right corner visually quiet
 - render no extra text, logo, or watermark
 - reject photorealism, 3D, anime, generic stock art, flat lighting, and empty backgrounds
@@ -183,6 +192,10 @@ grep -c 'bottom-right corner visually quiet' "$F"                  # 5
 grep -c 'render no other text' "$F"                                # 5
 grep -c 'Integrate the headline directly into the illustrated environment' "$F"  # 5
 grep -c 'do not create a separate text band' "$F"                  # 5
+grep -c 'foreground shape' "$F"                                    # 5
+grep -c 'background plane' "$F"                                    # 5
+grep -c 'palette continuity' "$F"                                  # 5
+grep -c 'one visible physical problem' "$F"                        # 5
 
 # all must be 0
 grep -ciE 'competitor thumbnail|research thumbnail|style reference image' "$F"
@@ -202,6 +215,8 @@ Also verify:
 - no generic tableau or abstract theory metaphor replaces an available script event
 - no more than one concept uses a split comparison unless the script strongly justifies it
 - the upper environment continues behind the headline with no detached graphic panel
+- every concept declares a foreground shape, a background plane, and a palette continuity
+- every headline names a specific visible thing, withholds an answer, and carries tone
 - no leading, trailing, or consecutive blank lines
 
 ## Step 7 - Handoff
@@ -227,3 +242,9 @@ winner with an `-accepted` suffix, then run `/check`.
 After the user reports a generated result, append only the durable lesson to
 `references/memory.md`: accepted concept, failed concept, and observable failure mode. Do
 not add external image dependencies or source-specific style references.
+
+When recording a depth lesson, name the foreground shape, the background falloff, and
+the palette continuity that worked or failed. When recording a headline lesson, name the
+hook function (danger, scarcity, contradiction, social exposure, forbidden behavior,
+urgent command, unresolved outcome) and whether the curiosity question formed in under
+half a second.

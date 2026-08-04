@@ -119,3 +119,72 @@ a separate banner above the illustration.
 
 Durable rule: Reserve upper space through local contrast inside one continuous scene. Never
 isolate the headline in a separate band or panel.
+
+### 2026-08-02, project 4, round 1
+
+Accepted: All five thumbnails. The `WHERE DID IT GO?`, `WHY AM I HERE?`, `IS IT FRESH?`,
+`WHICH ONE VANISHES?`, and `500 PHOTOS. NOTHING.` headline + scene pairs.
+
+Worked:
+
+- **Foreground shape** in every accepted image: a calendar edge and a hand, a doorway frame,
+  a moving fern in front of the kneeling ancestor, a phone held away from the body, a desk
+  edge meeting the seated viewer. The foreground is darker or warmer than the midground and
+  partially out of focus, so the eye enters the frame through it.
+- **Background plane** with atmospheric perspective: distant trees, the moonlit window, the
+  office geometry, the Tanzania hills, and the shadowed bedroom all drop in saturation and
+  value against the focal subject.
+- **Palette continuity**: the cool environment family (deep navy, storm blue, charcoal,
+  forest green) carries through the headline area, the midground, and the background. The
+  warm focal light (desk lamp, campfire, sunset, phone glow) is the only hue that breaks
+  the cool family, and it stays motivated.
+- **Headline curiosity power**: every headline names a specific visible thing (the calendar,
+  the doorway, the track, the photos, the room) and withholds an answer the image cannot
+  give. The viewer question forms in under half a second.
+
+Failed:
+
+- Concepts that put the main subject on a soft gradient with no foreground shape looked
+  flat and lost to the surrounding feed.
+- Headlines that summarized the title or named an abstract concept ("ROUTINE COMPRESSES
+  TIME?") did not beat the hook-style candidates.
+
+Durable rule: Every thumbnail must declare a foreground shape, a background plane with
+atmospheric perspective, and a palette continuity that runs through all three planes. Every
+headline must name a specific visible thing, withhold an answer, and carry tone.
+
+### 2026-08-02, project 5, round 1
+
+Accepted: All five thumbnails. The `WHY TOUCH IT?`, `WHY SO PRECISE?`, `ONE THING FIRST`,
+`STILL NOT SAFE?`, and `SAME MOVE?` headline + scene pairs.
+
+Worked:
+
+- **Foreground overlap from the script's own props**: a pen and a desk edge for the office
+  loop, a polishing cloth and the metal rim for the lab experiment, wet rope and foaming
+  water for the shore, a key ring and reaching fingers for the hallway, the pen tip and net
+  fibers for the split comparison. The script already names these objects; using them as the
+  foreground shape keeps the depth cue grounded in the story instead of added decoration.
+- **Background silhouettes that carry the script's stakes**: observation glass with two
+  faint figures and a closed expert-room door behind the lab test, a cool navy cityscape
+  visible through the home-office window, distant rain and dark palms across the offshore
+  horizon, and the narrowing elevator doors behind the hallway. The background is doing
+  narrative work, not just atmosphere.
+- **Headline functions beyond the question form**: `ONE THING FIRST` is an urgent command
+  tied to a fragile shared sequence, and it works as well as the question form. The hook
+  function list in the rules covers this. The viewer's question ("which thing?") still forms
+  in under half a second.
+- **Split comparison built from composition + lighting**: the `SAME MOVE?` thumbnail splits
+  by placing the modern desk and the island shore in mirrored framing with one warm sunrise
+  continuing across both halves through matched windows. No decorative border, no center
+  seam.
+
+Failed:
+
+- Adding extra crowd figures or props beyond what the script's literal scene supplies. The
+  accepted projects keep crowd count under five and prefer one supporting subject.
+
+Durable rule: Use a script-named object as the foreground shape. Use a script-named threat
+or audience silhouette as the background plane. Both depth planes must do narrative work,
+not just compositional work. Command-form headlines are valid hooks when the action is
+visible and the urgency is shared.
