@@ -98,3 +98,21 @@ move fixes it.
 `for r in "3:02 6:11" ...; do set -- $r; script "$1" "$2"; done` passes empty arguments in zsh and
 the tool exits on "requires START and END". Run the range commands as separate lines, or use
 `${=r}`. One operation at a time is the skill's rule anyway.
+
+## Project 5 (2026-08-05), V2, 293 images in 2 batches, clean end to end
+
+Folders `0.00 - 4.03` and `4.06 - 10.59`, dot separated like the earlier V2 runs, so `range_folder()`
+dot support carried it with no edits. 110 + 183 equals 293, both `check-range` calls PASS, `move`
+flattened 293 files and removed 2 folders, `verify` PASS with zero missing, extra, duplicate, or
+unexpected entries. No prompt sat in the gap between the labels (`[4:03] < sec < [4:06]` was empty).
+
+The downloader now emits `N_I_2k.jpg` (with an `_I` infix) on every image, not the legacy `N_2k.jpg`.
+The old `NUMBERED` regex `^(\d+)_2k\.jpe?g$` rejected every file in the folder as "Unexpected entries"
+and failed the range on. The regex was loosened to `^(\d+)(?:_I)?_2k\.jpe?g$` so it accepts both
+shapes; the rename always writes `.jpg` so this normalises itself. Project 4 still uses the old
+`N_2k.jpg` and project 6 uses `_I_2k.jpg` - the new regex matches both.
+
+Three V2 fingerprint frames confirmed the two batches are not mislabelled: `[0:00]` is the theater
+with @CROWD standing around @YOU still seated, `[7:32]` is the cream "10,000 LIKES" heart card, and
+`[10:59]` is the calm seated ending with @YOU composed inside the applauding @CROWD. None of the
+project 5 frames sampled show the corner watermark that hit project 6.

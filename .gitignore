@@ -13,6 +13,7 @@ __pycache__/
 *.aac
 *.flac
 .gstack/
+.temp
 
 # macOS
 .DS_Store

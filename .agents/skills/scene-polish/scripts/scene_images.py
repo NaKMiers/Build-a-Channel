@@ -8,7 +8,7 @@ import sys
 from pathlib import Path
 
 STAMP = re.compile(r"^\[(\d+):(\d{2})\]", re.MULTILINE)
-NUMBERED = re.compile(r"^(\d+)_2k\.jpe?g$")
+NUMBERED = re.compile(r"^(\d+)(?:_I)?_2k\.jpe?g$")
 TIMESTAMPED = re.compile(r"^\[\d+-\d{2}\]\.jpg$")
 
 
