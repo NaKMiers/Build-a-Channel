@@ -10,6 +10,22 @@ Self-improving notes for topic selection. Single canonical copy, no Claude-side 
 | 1 | Why You Feel Lonelier In A Crowd Than Alone In Your Room | packaged, thumbnail accepted |
 | 2 | Why You Still Replay That Argument From Last Week | scaffolded 2026-07-28, no script yet |
 | 3 | Why You Are A Different Person With Each Friend Group | scaffolded 2026-07-28, no script yet |
+| 5 | Why do people follow the crowd? | scripted, cast, metadata, thumbnails done 2026-08-04, user-supplied title |
+
+Project 5 numbering note: this was scaffolded as project 7, but the user deleted the old
+project 5 (What Every Human Tribe Did That You Still Do Under Stress) and renamed the folder
+to `projects/5-why-do-people-follow-the-crowd` mid-pipeline on 2026-08-04. The next new
+project number is therefore 7, not 8.
+
+Project 5 note: the user supplied this title verbatim and reaffirmed it after being told it
+breaks two title rules (no "you" or "your", third-person "people"). **Their title stands as
+the folder name and working title.** `metadata` may still set a compliant published title.
+Conformity research to reuse: Asch 1951 line task, 12 critical trials, 37 percent conforming
+responses and about 75 percent conforming at least once. Sherif autokinetic effect for how a
+group norm forms out of nothing. Berns 2005 and Klucharev for conformity altering perception
+and firing an error signal, not just speech. Anthropology is Boehm on counter-dominance and
+the survival cost of exile from a band, where being the one dissenter was not a social risk
+but a food and protection risk.
 
 Planned research for the two scaffolded projects, so the `script` skill does not have to
 rediscover it:
@@ -26,6 +42,52 @@ rediscover it:
   which is fine because project 1 used it for a different mechanism.
 
 ## Proposed but not picked
+
+### 2026-08-04, batch 10, conformity variants, none picked
+
+The user asked for the topic "Why do people follow the crowd?", was offered five compliant
+conformity titles, and rejected all five in favour of their own exact wording. **When a user
+names a topic themselves, offer the reframed titles once, then take their wording if they
+repeat it.** These four remain eligible as titles for a future conformity video.
+
+| Title | Theme | Numeric material available |
+| --- | --- | --- |
+| Why You Doubt Your Own Eyes When Everyone Disagrees | conformity | Asch 1951, 37 percent conforming responses, 75 percent conformed at least once |
+| Why You Stay Quiet When You Know The Room Is Wrong | conformity, social fear | Prentice and Miller pluralistic ignorance, Latane and Darley |
+| Why A Long Line Makes You Want To Join It | social proof | Sherif autokinetic effect, Cialdini social proof field studies |
+| Why Your Taste Is Not As Personal As You Think | identity, social proof | Salganik music lab, 14,341 participants across 8 parallel worlds |
+
+### 2026-08-04, batch 9, rejected wholesale, steer recorded
+
+The user replied "I need a problem that every mistakes, that a good catch". The steer is
+toward **a mistake the viewer is making right now without knowing it**, not a feeling they
+notice. A feeling title gets sympathy, a mistake title gets caught. Cognitive-bias topics
+(attribution, planning fallacy, sunk cost, illusion of explanatory depth) serve this better
+than mood topics, and they still carry an ancestral origin.
+
+| Title | Theme | Numeric material available |
+| --- | --- | --- |
+| Why You Say Yes When You Really Want To Say No | shame and social fear | Bohns and Flynn compliance underestimation |
+| Why You Forget 50 Nice Words But Never 1 Mean One | negativity bias | Baumeister 2001, Gottman 5 to 1 |
+| Why You Stop Being Lazy The Second Someone Walks In | habit and willpower | Zajonc social facilitation, Hawthorne |
+| Why You Can Fix Everyone's Life But Your Own | identity | Grossmann and Kross 2014 Solomon's paradox |
+| Why Your Good News Dies After You Open Your Phone | status and comparison | Festinger, Dunbar 150 as the old comparison ceiling |
+
+### 2026-08-04, batch 8, rejected wholesale, reason given
+
+The user replied "More curious but simple for everone kow", meaning the titles were worded
+too cleverly and read as literary rather than plain. **Write titles in words a tired viewer
+understands at a glance**, and let the curiosity come from the contradiction inside the
+sentence, not from the vocabulary. Plain nouns, small numbers, no inverted phrasing like
+"outlives" or "the second someone".
+
+| Title | Theme | Numeric material available |
+| --- | --- | --- |
+| Why You Say Yes When Every Part Of You Means No | shame and social fear | Bohns and Flynn, askers underestimate compliance by roughly half |
+| Why One Bad Comment Outlives Fifty Good Ones In Your Head | negativity bias | Baumeister 2001 bad is stronger than good, Gottman 5 to 1 ratio |
+| Why You Suddenly Work Harder The Second Someone Walks In | habit and willpower | Zajonc social facilitation, Hawthorne studies |
+| Why You Give Advice You Would Never Follow Yourself | identity | Grossmann and Kross 2014 Solomon's paradox, self-distancing |
+| Why Your Win Stops Feeling Like A Win After You Scroll | status and comparison | Festinger social comparison, Dunbar 150 as the old comparison ceiling |
 
 ### 2026-07-28, batch 4, titles 1 to 4 not picked
 

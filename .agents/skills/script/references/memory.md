@@ -52,6 +52,32 @@ Two craft notes worth keeping:
 Fresh anthropologists to reach for so Wiessner and Boehm are not used a fourth time:
 Hoebel, Gluckman, Jean Briggs, Richard B. Lee, Sarah Blaffer Hrdy, Joseph Henrich.
 
+## Project 5, why people follow the crowd, cited (2026-08-04, scaffolded as 7 then renamed by the user)
+
+Solomon Asch (1951 line study, 37 percent conforming answers on critical trials, 75 percent
+conformed at least once, plus the one-ally variation where errors fell by nearly three
+quarters), Gregory Berns (2005 fMRI mental rotation conformity study, conformity showed in
+perception regions, independence lit the amygdala), Vasily Klucharev (deviation from the
+group fires a prediction-error signal that nudges the view back toward the group), Joseph
+Henrich (cumulative culture, the bitter manioc cyanide detoxification example, conformist
+transmission as survival). Three behavioral or neuroscientists plus one anthropologist.
+
+Craft notes:
+
+- The Asch one-ally variation is a second finding from the same lineage as the opening
+  experiment, so the closing hope note falls out of the science the same way the
+  Zeigarnik-to-Masicampo chain did in project 2. The shift itself stays ONE question, "has
+  anyone in this crowd actually tested this, or is everyone copying everyone", and the ally
+  finding is reflection, not a second instruction.
+- The user asked for "best as possible but still simple for everyone". Kept every study in
+  plain narrative language, decoded fMRI, amygdala, prediction error, and information
+  cascade inline, and used the standing-ovation moment as hook and echo.
+- First draft landed at 6 questions. Trimmed to 3 to match the fixture per the open
+  discrepancy below. The trim pattern that works: merge the rhetorical pivot question into
+  the following statement.
+- Numeric material for the thumbnail: 37 percent, 3 out of 4, 1 ally, band of 50, 200,000
+  years, 99 out of 100 alone.
+
 ## OPEN DISCREPANCY: question density
 
 `.agents/rules/channel-dna.md` says "Question every 4 to 6 sentences". **The accepted

@@ -30,9 +30,6 @@ Your routine week has pages, but many of them carry the same background. Same al
 
 That is why you can remember what happened without remembering when. You know the conversation occurred, but you cannot tell whether it was this week or last week. You know you ate that meal, but the scene has no date attached. The memories are real. Their addresses overlap.
 
-
-
-
 And when you later ask how large the month was, your mind does not measure every minute again. It samples what can be retrieved. A month containing many distinct episodes offers many handles. A month containing repeated contexts offers a few handles attached to piles of similar material. The second month feels shorter, even if both contained exactly the same number of hours.
 
 Why would a mind built for survival store time this way?

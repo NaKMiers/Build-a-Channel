@@ -1,0 +1,35 @@
+{
+  "total": 661.682,
+  "parts": [
+    {
+      "file": "projects/5-why-do-people-follow-the-crowd/audios/part-1.mp3",
+      "start": 0.0,
+      "duration": 289.515,
+      "frames": 11083,
+      "sample_rate": 44100,
+      "bitrates": [
+        256
+      ]
+    },
+    {
+      "file": "projects/5-why-do-people-follow-the-crowd/audios/part-2.mp3",
+      "start": 289.515,
+      "duration": 310.831,
+      "frames": 11899,
+      "sample_rate": 44100,
+      "bitrates": [
+        256
+      ]
+    },
+    {
+      "file": "projects/5-why-do-people-follow-the-crowd/audios/part-3.mp3",
+      "start": 600.346,
+      "duration": 61.336,
+      "frames": 2348,
+      "sample_rate": 44100,
+      "bitrates": [
+        256
+      ]
+    }
+  ]
+}

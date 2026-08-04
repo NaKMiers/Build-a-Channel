@@ -76,6 +76,33 @@ Self-improving notes for audio to timestamps. Single canonical copy.
   by creating multiple free accounts". A key being present is not a working key. There is
   no `GROQ_API_KEY` in `.env` and no local ASR installed, so with ElevenLabs blocked this
   stage cannot run at all. Report that and stop, do not silently switch engines.
+- **A second, different ElevenLabs refusal on 2026-08-04**: HTTP 401
+  `missing_permissions`, "The API key you used is missing the permission
+  forced_alignment to execute this operation." The key authenticates fine, it just is not
+  scoped for the forced-alignment endpoint, which is a workspace API-key permission
+  toggle rather than an account status. **So the `grep -q ELEVENLABS_API_KEY .env`
+  precondition has now failed to predict a working call twice, in two unrelated ways.**
+  Treat that grep as a cheap "is it even worth trying" gate, never as evidence the call
+  will succeed, and expect the real verdict only from the first API response. The fix here
+  is the user's to make in the ElevenLabs dashboard, not anything the pipeline can route
+  around: still no `GROQ_API_KEY`, so there is no second engine to fall back to even if
+  falling back were allowed.
+- **The retry minutes later hit a third refusal, also HTTP 401**: `quota_exceeded`, "You
+  have 24 credits remaining, while 735 credits are required for this request", on a free
+  tier at 9,976 of 10,000 credits with `allowed_to_extend_character_limit: false` and a
+  reset 24 days out. **Two different failures wearing the same 401 status, so read
+  `detail.code`, never the HTTP code.** `missing_permissions` is a key-scope toggle,
+  `quota_exceeded` is a billing state, and the earlier `detected_unusual_activity` is an
+  account ban; the fix differs each time and only the body says which.
+- **Forced alignment and ElevenLabs TTS spend the same monthly credit pool.** An 11m01.7s
+  alignment costs 735 credits, so the free tier's 10,000 is about 13 alignments a month if
+  nothing else touches it. If the narration itself is TTS-generated on this account,
+  generating an episode's voiceover and aligning it compete for one budget, and the
+  alignment is the one that starves because it runs second. **Check remaining quota against
+  the roughly 735 credit cost, not merely that a key exists, when a run has to succeed.**
+  `GET /v1/user/subscription` with the `xi-api-key` header returns `character_count`,
+  `character_limit`, and `next_character_count_reset_unix` for free, which turns a bare
+  `quota_exceeded` into a date and a decision.
 
 ## Project 6 (2026-08-03) - align `full.mp3` in one call when the script has no part markers
 
@@ -104,3 +131,40 @@ anywhere in the file, which is the check that confirms no part was dropped.
 **This narrator reads V2 scripts at about 2.71 wps, not 2.98.** 1891 words over 697.9s. Project 3
 established 2.9 to 3.1 from a V1 script. Do not treat 2.7 as a failed split on its own: check
 whether the parts agree with each other, not whether they hit the older number.
+
+## Project 5 rebuild (2026-08-04) - three key failures before one clean align
+
+The project 5 folder was retopiced to `5-why-do-people-follow-the-crowd` and its cast file
+says `Visual style version: V2`, so it takes the V2 dense profile despite the older note that
+projects 1 through 5 keep V1 defaults. **Read the project's own cast header for the style
+version, do not infer it from the project number.**
+
+3 parts at 256 kbps: 4m49.5s, 5m10.8s, 1m01.3s, combined 11m01.7s, header and frames agreeing.
+`audios/full.mp3` and `transcribes/offsets.json` are written and correct.
+
+**293 cues**, median 1.9s, last cue `[10:59]` against 11m01.7s of audio, transcript text
+word-for-word identical to the script at 1854 words, no malformed lines. Two one-word cues,
+`Trending.` and `You.`, both intentional verdicts. Largest gap anywhere is 5s, and nothing
+unusual sits at the 4m49.5s or 10m00.3s part joins, which is the check that no part was dropped.
+Right on the V2 profile's shape.
+
+**`[5:15]` appears twice**, "soak it," then "squeeze it, wait,". `[5:16]` and `[5:17]` are
+unused, so the `scenes` stage saves the second image as `[5:16]`.
+
+Three consecutive key failures preceded that one clean run, in three unrelated ways: 401
+`missing_permissions`, then 401 `quota_exceeded` after the key was re-scoped, then success on a
+replacement key. **Nothing was billed on the failures and nothing was hand-written.** Because
+`full.mp3` and `offsets.json` survive a failed align, each retry cost exactly one alignment call
+and no rework, which is the argument for doing the combine and the arithmetic first and letting
+the API call be the last and only expensive step.
+
+Like project 6, `script_why_people_follow_the_crowd.md` is single-blank-line separated
+throughout with no run of blank lines marking where the recording stopped. 1854 words over
+661.7s is 2.80 wps, in this narrator's V2 band. Proportional boundaries wanted cum 811 and
+1682; the nearest paragraph ends are 831 and 1680, giving 831 / 849 / 174 words at 2.87 /
+2.73 / 2.84 wps, a 5.1 percent spread. That is much tighter than project 6's rejected 10
+percent, and boundary 2 lands 2 words off its prediction, but boundary 1 is still a 20 word
+guess, so the single call on `full.mp3` remains the right trade. Every other candidate split
+is far worse: the next paragraph end back for boundary 1 gives 16.9 percent, and moving
+boundary 2 back gives over 130 percent. **Record the arithmetic even when the split is not
+used, so a retry does not redo it.**

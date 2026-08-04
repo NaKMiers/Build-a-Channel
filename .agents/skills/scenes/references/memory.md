@@ -265,3 +265,52 @@ have been the wrong kind. **Report the deviation with the reason instead of padd
 @YOU 78, @FORAGER 30, @PHONE 10, @HADZA 6. That is 26 percent of all prompts, which looks like the
 drift project 3's note warns about, but rule 12 bars Toss from the camp act, the Hadza act, and the
 experiment room, about 89 cues. Against the 214 cues where he is eligible he is at 36 percent.
+
+## Project 5 rebuilt as V2 (2026-08-04), 293 prompts, 340 plan beats, 41 chain breaks
+
+The numbered folder changed identity: the old project 5 was deleted and
+`5-why-do-people-follow-the-crowd` replaced it with a cast file that states
+`Visual style version: V2`. The SKILL's "projects 1 through 5 are frozen V1" line lost to its own
+more specific rule: an existing artifact that explicitly identifies a version wins when redoing one
+stage. **Check the cast file's version line before assuming the project number decides the
+version.**
+
+Clean on every mechanical check after two scripted passes: 293 cues to 293 prompts with one
+documented `[5:15]` to `[5:16]` remap, V2 anchor and lock on all 293 and zero V1 strings, tier
+counts equal plan exactly, surfaces summing 293 with one per prompt, zero mixed-surface plates,
+zero stray tokens, 667 lines.
+
+### The variant surface-phrase fault happens at scale, not once
+
+Project 6 lost one surface phrase; this run lost 157, every variant written as "Preserve the
+attached source plate of the cream card" style shorthand. The per-prompt surface count caught all
+of them and one mechanical pass inserted `keeping the same <verbatim surface phrase>` before each
+`the single delta is` clause. **Write the verbatim surface phrase into every variant while
+drafting**, or plan on the repair pass.
+
+### Placeholder assembly guarantees the verbatim strings
+
+Prompts were drafted in 12 chunk files with `{{A}}`/`{{L}}` placeholders and joined by a script
+that substitutes the strings sourced from `.agents/bin/style-strings.sh` and inserts the break
+lines from a checked list. Byte-identical anchor and lock on all 293 by construction, and the
+break placement was validated against the plan (every break opens a PLATE) before the file
+existed. Same trick for the plan: write generated-only rows 1:1 with cues so beat number equals
+cue number, then a script inserts the CAPCUT rows, renumbers, and remaps Source references.
+Hand-numbering 340 rows with interleaved capcut beats is where the errors would have lived.
+
+### Budgets: the same four first-pass errors as project 6, plus two honest deviations
+
+First pass: CARD 26 and DIAGRAM 30 percent against 15 to 20 bands, PORTRAIT 6 and HYBRID 3 against
+10 to 15, CLEAN 54 against 40. One scripted register-and-tier pass fixed most of it. Final:
+STORY 27.3, CARD 23.9, DIAGRAM 22.2, PORTRAIT 9.6, HYBRID 10.2, SPLIT 6.8. STORY sits under its
+band and CARD/DIAGRAM over because the script's spine is Asch numbers, fMRI regions, and cascade
+mechanics; inventing scenes to pad STORY would be the wrong conversion. Callbacks landed at 8 rows,
+2.4 percent of beats, under the 5 to 10 band, but 8 of 113 plates is 7 percent, inside the
+cadence rule's "reuse 5 to 8 percent of plates near the ending". The callbacks concentrate in five
+reprises (dial, case file, lab row, rule tablet, theater) whose follow-on beats are variants of
+the reprised plate; relabeling those variants as callbacks would fake the band.
+
+### Characters are .png, format says .jpeg
+
+`characters/` holds `YOU.png` and friends. `file-formats.md` says sheets are `.jpeg`. Flagged in
+the report rather than silently renamed; binding works either way in Flow, `/check` will complain.
