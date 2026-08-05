@@ -125,6 +125,8 @@ Every prompt must:
 - open with `Create a beautiful, high-impact YouTube thumbnail illustration in 16:9 format,
   1280x720.`
 - translate one exact script event rather than a loose theme
+- include `@YOU` in the scene, as the protagonist or as the reacting witness or struggling
+  participant when the moment belongs to another cast member
 - reference only cast tokens whose project sheets will be attached
 - preserve attached character identity exactly
 - render one exact headline in large yellow type at the top
@@ -196,6 +198,7 @@ grep -c 'foreground shape' "$F"                                    # 5
 grep -c 'background plane' "$F"                                    # 5
 grep -c 'palette continuity' "$F"                                  # 5
 grep -c 'one visible physical problem' "$F"                        # 5
+grep -c '@YOU' "$F"                                                # 5
 
 # all must be 0
 grep -ciE 'competitor thumbnail|research thumbnail|style reference image' "$F"
@@ -207,6 +210,7 @@ grep -n "$(printf '\u2014')" "$F"
 Also verify:
 
 - every `@TOKEN` exists in `character-prompts.md`
+- every prompt places `@YOU` in the scene, not merely in the attachment list
 - every headline is uppercase and no more than four words
 - each prompt names a different script moment
 - each scene contains a script-specific action, object, relationship, or consequence

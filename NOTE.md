@@ -2,20 +2,20 @@
 
 Improve:
 
-- [ ] Image quality
-- [ ] Video 2k
+- [ ] Image quality .
+- [ ] Video 2k .
 - [ ] Srt in 21 languages for each video
-- [ ] Title
+- [ ] Title .
 - [ ] Thumbnails .
-- [ ] Depict each scenes => image prompts
+- [ ] Depict each scenes => image prompts .
 - [ ] Description, 5-6 sentences to sumarice video, add links to another videos
 - [ ] Mascot .
 - [ ] Banner .
-- [ ] Transition and zoom animation for each scene.
-- [ ] Insert real image of the person who mentioned on video.
+- [ ] Transition and zoom animation for each scene
+- [ ] Insert real image of the person who mentioned on video
 - [ ] Social links
-- [ ] first 15 videos, don't care views, care impressions
-- [ ] create image prompts that references to each needed scenes
+- [ ] First 15 videos, don't care views, care impressions
+- [ ] Create image prompts that references to each needed scenes
 
 Referenced channels:
 @SticklyExplains

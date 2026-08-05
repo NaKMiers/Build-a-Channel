@@ -80,6 +80,9 @@ and hard horizontal divisions.
 
 ## Standing rules
 
+- `@YOU` appears in every thumbnail. Owner rule set during project 6: the mascot anchors
+  channel recognition even when another cast member owns the script moment, so Toss joins
+  those scenes as a reacting witness or struggling participant.
 - Straight top typography survives small-size viewing better than arced typography.
 - One dominant face plus one physical problem is the default.
 - A cool environment with one warm focal light creates strong depth and separation.

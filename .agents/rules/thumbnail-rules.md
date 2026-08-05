@@ -98,6 +98,10 @@ hook, a flat empty background, or several unrelated actions.
 
 ## D. Emotion and character identity
 
+- Include `@YOU` in every thumbnail. Toss is the channel's recognition anchor, and a
+  thumbnail without the mascot is invalid. When the script moment belongs to another cast
+  member, place `@YOU` in the scene as the reacting witness or struggling participant
+  rather than dropping the mascot.
 - Attach only the sheets for the `@TOKENS` used in the prompt.
 - Preserve every attached character's head, hair, face geometry, proportions, clothing, and
   recognizable design. Change only expression, pose, placement, and lighting.
