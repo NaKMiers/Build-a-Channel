@@ -3,6 +3,10 @@
 .env.*
 !.env.example
 
+# YouTube OAuth client secrets and refresh tokens
+client_secrets.json
+token.json
+
 # Python
 __pycache__/
 *.pyc

@@ -28,9 +28,9 @@ delegate back. See `.agents/README.md` and `.claude/README.md`.
 
 ## The pipeline
 
-Eight pipeline skills, plus `scene-polish`, `video-swipe`, and `skill-sync`, are canonical
-under `.agents/skills/` and discovered by Claude through `.claude/skills/` wrappers. Each
-pipeline skill validates its inputs, writes its artifact, and names the next command.
+Eight pipeline skills, plus `scene-polish`, `video-swipe`, `youtube`, and `skill-sync`, are
+canonical under `.agents/skills/` and discovered by Claude through `.claude/skills/` wrappers.
+Each pipeline skill validates its inputs, writes its artifact, and names the next command.
 
 ```
 /topic       chat only, 5 titles, you pick one -> scaffolds projects/<n>-<slug>/
@@ -57,6 +57,13 @@ Competitor research is also separate from the content pipeline:
                 (needs a YouTube link plus the video file downloaded from that link)
 ```
 
+Channel-side read/write lives outside the content pipeline too:
+
+```
+/youtube        stats, transcript, analytics, upload, competitor
+                (needs YOUTUBE_API_KEY in .env; analytics + upload also need OAuth)
+```
+
 After `/script` the branches run in parallel: `/transcript`, `/cast`, and `/metadata`
 depend only on the script. `/scenes` needs transcript plus cast. `/thumbnail` needs the
 script plus cast, not the transcript.
@@ -75,6 +82,7 @@ When the user's request matches a skill, invoke that skill instead of answering 
 - "Is this project correct", validate, "what is missing" -> `/check`
 - Manage scene image timestamps, renaming, moves, or verification -> `/scene-polish`
 - Analyze a competitor video, extract its frames, "phan tich video" -> `/video-swipe`
+- Pull from YouTube, upload to YouTube, channel analytics, competitor research -> `/youtube`
 - Added or renamed a skill -> `/skill-sync`
 
 For web browsing use the `/browse` skill from gstack. Do not use
@@ -117,3 +125,14 @@ the video id in the file name, the title, and an optional duration. A lookup it 
 is a hard error rather than a weaker verdict, and `--offline` is the explicit opt-out. The
 duration is not fetchable by script, YouTube's bot check hides it, so it arrives from
 `/browse` as `--expect-duration`. Neither tool needs numpy or ffprobe, only Pillow.
+
+`tools/youtube-api.py` serves the `youtube` skill. It has five subcommands:
+`stats`, `transcript`, `analytics`, `upload`, `competitor`. `stats` and
+`competitor` use `YOUTUBE_API_KEY`; `transcript`, `analytics`, and `upload`
+use an OAuth refresh token in `.env` exchanged through `tools/yt_oauth.py`.
+The token is minted once via `tools/yt_auth.py`, which reads the OAuth
+client blob from `YOUTUBE_CLIENT_SECRETS_JSON` in `.env` (or a legacy
+`client_secrets.json` at the project root) and walks the user through the
+browser flow. Every secret lives in `.env`; no JSON file is shipped.
+Dependencies (`defusedxml`, `google-auth-oauthlib`) are declared in
+`requirements.txt`.

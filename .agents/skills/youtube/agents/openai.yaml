@@ -1,0 +1,4 @@
+interface:
+  display_name: "YouTube"
+  short_description: "Read and write YouTube channel data via the Data API v3"
+  default_prompt: "Use $name to pull video stats, transcripts, analytics, or upload."
