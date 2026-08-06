@@ -8,12 +8,13 @@ Improve:
 - [ ] Title .
 - [ ] Thumbnails .
 - [ ] Depict each scenes => image prompts .
-- [ ] Description, 5-6 sentences to sumarice video, add links to another videos
+- [ ] Description, 5-6 sentences to sumarice video, add links to another videos .
+- [ ] Description contain chapter timestamp
 - [ ] Mascot .
 - [ ] Banner .
 - [ ] Transition and zoom animation for each scene
-- [ ] Insert real image of the person who mentioned on video
-- [ ] Social links
+- [ ] Insert real image of the person who mentioned on video .
+- [ ] Social links .
 - [ ] First 15 videos, don't care views, care impressions
 - [ ] Create image prompts that references to each needed scenes
 

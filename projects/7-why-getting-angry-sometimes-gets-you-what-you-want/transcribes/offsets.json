@@ -1,0 +1,35 @@
+{
+  "total": 671.817,
+  "parts": [
+    {
+      "file": "projects/7-why-getting-angry-sometimes-gets-you-what-you-want/audios/part-1.mp3",
+      "start": 0.0,
+      "duration": 309.838,
+      "frames": 11861,
+      "sample_rate": 44100,
+      "bitrates": [
+        256
+      ]
+    },
+    {
+      "file": "projects/7-why-getting-angry-sometimes-gets-you-what-you-want/audios/part-2.mp3",
+      "start": 309.838,
+      "duration": 275.096,
+      "frames": 10531,
+      "sample_rate": 44100,
+      "bitrates": [
+        256
+      ]
+    },
+    {
+      "file": "projects/7-why-getting-angry-sometimes-gets-you-what-you-want/audios/part-3.mp3",
+      "start": 584.934,
+      "duration": 86.883,
+      "frames": 3326,
+      "sample_rate": 44100,
+      "bitrates": [
+        256
+      ]
+    }
+  ]
+}
