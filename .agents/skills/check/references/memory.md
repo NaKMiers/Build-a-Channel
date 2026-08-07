@@ -71,3 +71,18 @@ and those do pass clean, including the canonical one-line `[3:24]` to `[3:25]` r
   horizontal seam reached generated Project 2 thumbnails and made the headline look like a
   detached banner. New cinematic thumbnail prompts must include both the continuous-scene
   integration clause and the explicit separate-band prohibition five times.
+
+## Project 7 full-rebuild check (2026-08-07): two by-the-letter V2 deviations worth understanding
+
+- **Rhythm arithmetic when the plan has zero CAPCUT rows.** With no CapCut-only beats, planned
+  beats per minute equals raw transcript cue density. Project 7's 297 cues over 669 seconds is
+  26.6, under the 28 to 32 band, even though no individual hold exceeds 4 seconds. The lever is
+  CapCut rows, not more generations: 16 added CapCut beats lift it to 28.0. Report the number
+  and the cheapest fix, do not demand new prompts for it.
+- **Reading the register-run flags.** The run check fires on more-than-3 same-register beats
+  that cross a plate boundary. Two adjacent 2-beat build chains in the same register (a card
+  pair followed by another card pair) trip it exactly like a lazy 5-beat hold does. Before
+  reporting, print the flagged window: a run whose plates each carry sourced deltas is a
+  pacing observation, a run of near-identical variants is real monotony. Project 7's 10 flags
+  were all the former, including one deliberate 12-beat STORY stretch that is a single
+  continuous scene (the yell, then the pull-back to the room).

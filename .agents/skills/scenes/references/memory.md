@@ -442,3 +442,58 @@ a rebalancing pass. Shot tasks reached 4 to 7 per 30 second block in every block
 6 both needed a scripted rebalance after the first pass; the difference here is that every row
 was written against its own transcript cue instead of an act label repeated down a column. A
 Meaning column that repeats one phrase for 37 rows is the tell that no per-cue planning happened.
+
+## Project 7 full rebuild (2026-08-07): 297 prompts, 297 plan rows, 106 plates, 95 breaks
+
+The user committed `remove scenes project 7` (deleting image-prompts.md, visual-plan.md, and
+all scene images) and asked for a from-scratch rebuild with three constraints: best-ever hook,
+no duplication, simple absorbable frames that still describe the transcript perfectly. The four
+ranges already rebuilt and accepted this session were kept verbatim as the spine ([0:00]-[0:35],
+[0:38]-[1:59], [2:03]-[2:22], [2:59]-[3:08]); the other 226 cues were designed fresh. Clean on
+every mechanical check on the first assembly pass.
+
+### From-scratch at this scale is a data problem, not a prose problem
+
+The order that worked: (1) write all 226 plan rows as python data with per-cue meanings copied
+against the transcript, (2) machine-verify the row timestamps equal the transcript exactly and
+tally registers, tiers, assets before any prose exists, (3) write prose chunk files of about 25
+cues with {{A}}/{{L}} placeholders and inline `---` breaks, (4) assemble with a script that
+substitutes the sourced verbatim strings and asserts prompt count, timestamp diff, break shape.
+Variant Source columns computed as previous-beat-of-same-plate by the generator, which makes
+the source-points-backward check pass by construction. Zero of the four classic first-pass V2
+budget errors survived to the prompt file because the plan was rebalanced as data first.
+
+### Visual language reuse is what kills duplication at scale
+
+The rebuild leaned on a small set of recurring devices, each introduced once and then quoted:
+the two-pan balance (worth), the orange arc/ring (the signal), identical thought bubbles over
+every watcher (shared updating), tiny up/down arrows in witness bubbles (credibility updates),
+the orange body-fill (the flood), the red X (negation), check-mark trails (track record).
+Because each device has one meaning, a new cue can be drawn as a one-delta variation of a known
+composition instead of a brand-new invention, which is simultaneously simpler for the viewer
+and immune to the copy-paste duplication the old file died of. Rule of thumb: if a script idea
+recurs, give it a glyph; if a glyph exists, never invent a second drawing for the same idea.
+
+### Honest deviations, reported not padded
+
+- Text beats 47 of 297, 16 percent, versus the 25 to 35 band: deliberate, the user asked for
+  low reading load; single words only, red reserved for negation and verdicts.
+- STORY 29 / CARD 24 / DIAGRAM 22 / PORTRAIT 7 / HYBRID 5 percent: evidence-heavy script, same
+  shape and same justification as projects 5 and 6.
+- Surfaces: story environments 46 percent versus 35 target, cream 20 versus 30; the script's
+  spine is scenes (band life, office life, the ending room) and converting them to cards would
+  fight the ask.
+- Three 30-second blocks under four shot tasks: 5:30 (one sustained cobalt build), 9:00 (dense
+  card/diagram evidence run), 11:00 (5-beat outro, arithmetic limit). Three other short blocks
+  were fixed by honest relabeling (a split scene is wide, cupped hands are pov).
+- First-50 versus last-50 word count 152 to 127, 17 percent drift, but the composition differs
+  by design: the hook is dense story prose, the outro is terse cards. Compare like-for-like
+  registers before treating this as chunking decay.
+
+### The ending must land the hook and the next video at once
+
+[9:57]-[10:06] replays the hook literally (rewind card quoting the three-chairs thumbnail, the
+advice trio crossed out behind @YOU). [10:29]-[10:34] is the thesis hero frame (EVERYONE ring).
+[10:36]-[11:09] then inverts the thesis (you are also the crowd) and hands off to project 5's
+topic with a FOLLOW THE CROWD teaser card. That three-beat ending shape (callback, thesis hero,
+inversion-teaser) is reusable for any episode that has a named next video.
