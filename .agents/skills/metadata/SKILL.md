@@ -1,11 +1,10 @@
 ---
 name: metadata
-description: Generate the publish-ready YouTube title, description with hashtags, and 25 to 40 SEO tags for a TossExplains video, saved to outputs/metadata.md. Use when the user says "metadata", "title", "description", "tags", "SEO", or "package the video".
+description: Generate the publish-ready YouTube title, description with hashtags and chapters, and 25 to 40 SEO tags for a TossExplains video, saved to outputs/metadata.md. Use when the user says "metadata", "title", "description", "tags", "SEO", or "package the video".
 allowed-tools:
   - Bash
   - Read
   - Write
-  - Glob
 ---
 
 # metadata
@@ -17,46 +16,128 @@ because they need the cast and iterate at a different rate.
 
 - `.agents/rules/house-rules.md`
 - `.agents/rules/channel-dna.md` - the voice, the title constraints, the guardrails
-- `.agents/rules/file-formats.md` - the `metadata.md` section
+- `.agents/rules/file-formats.md` - the `outputs/metadata.md` section
 - `.agents/skills/metadata/references/memory.md`
 
 ## Preconditions
 
+Two inputs are required:
+
 ```bash
 ls projects/<n>-<slug>/script_*.md
+ls projects/<n>-<slug>/transcribes/transcript.md
 ```
 
-The script is required and is the only input. Read it in full before writing. The
-description must mirror the tone of the script's actual opening, and the tags must be
-pulled from the script's actual topic, so a summary of the script is not enough.
+**Read both in full before writing.** The script drives the title, the description hook, and
+the tags. The transcript drives the chapter timestamps. A summary of the script is not
+enough: the description must mirror the tone of the script's actual opening, and the tags
+must be pulled from the script's actual topic.
 
-## The rules
+**This skill must run after `/transcript`.** The chapters in the description are derived from
+the transcript's timestamp structure. Run `/transcript` first.
 
-**Title.** One scroll-stopping, curiosity-driven title under 70 characters. Use the
-channel's proven angles: provocative question, counterintuitive reframe, or hidden-truth
-reveal. **No clickbait the script does not deliver on.** Uses "you" or "your". Never names
-the takeaway outright.
+## Five title variants
 
-**Description.**
+Generate five title options, one per formula slot. The folder title slug is a hint, not
+a constraint. Pick the slot that best fits the script's actual angle.
 
-- Open with a 2 to 3 sentence hook that mirrors the tone of the script's opening and
-  teases the core reframe.
-- Follow with a short paragraph, 3 to 4 sentences, summarizing what the viewer will
-  discover, written in the calm 2nd-person voice. Name the psychological mechanism, hint
-  at its ancestral origin, and tease the one shift they walk away with.
-- Add a line inviting likes, comments, and subscribes in the channel's voice.
-- End with a block of 15 to 25 relevant hashtags on one line, each starting with `#`.
+| Slot | Formula | Constraint |
+| ---- | ------- | ---------- |
+| A | "Why do/can't you ___?" | Universal inner experience, traced to tribal life |
+| B | "Your brain still thinks you're ___" | Modern mismatch, ancient wiring misfiring |
+| C | "The ___ Effect" | Named experiment mirrored onto daily life |
+| D | "What every human tribe does that you stopped doing" | Lost cross-cultural practice |
+| E | "You never noticed that ___" | Hidden pattern revealed as survival instinct |
 
-**Tags.** 25 to 40 SEO tags in a single comma-separated line. Mix broad terms (psychology,
-human behavior, anthropology, self improvement, personal growth, evolutionary psychology,
-mental health awareness, human nature) with specific long-tail phrases pulled from this
-video's topic. **No hashtags here.** Plain comma-separated keywords only.
+Rules per title:
+- Under 70 characters.
+- Uses "you" or "your".
+- Promises an inner experience the viewer has personally felt, not an era or species fact.
+- Never names the takeaway outright. The curiosity gap is the point.
+- **No clickbait the script does not deliver on.**
+
+## Description
+
+Structure: hook paragraph, summary paragraph, chapters block, call-to-action, hashtag line.
+
+**Hook (2-3 sentences).** Mirror the tone of the script's actual opening. Tease the core
+reframe. Do not give the answer away.
+
+**Summary (3-4 sentences).** Written in the calm 2nd-person voice. Name the psychological
+mechanism, hint at its ancestral origin, and tease the one shift they walk away with.
+
+**Chapters.** Derive 5 to 7 chapter entries from the transcript. Scan for natural topic
+shifts, major research introductions, and structural beats. Each entry is:
+```
+M:SS  <short chapter title, max ~8 words>
+```
+Match the M:SS to the nearest transcript timestamp. Chapters should feel like a useful
+viewing map, not a complete outline.
+
+**Call to action.** One line inviting likes, comments, and subscribes in the channel voice.
+
+**Hashtags.** 15 to 25 relevant hashtags on one line, each starting with `#`. Include the
+broad channel hashtags (psychology, anthropology, selfhelp, etc.) plus topic-specific ones
+derived from the script.
+
+## Tags
+
+25 to 40 SEO keywords in a single comma-separated line. Mix:
+- Broad terms: psychology, human behavior, anthropology, self improvement, personal growth,
+  evolutionary psychology, mental health awareness, human nature
+- Specific long-tail phrases pulled from this video's topic
+
+**No hashtags.** Plain comma-separated keywords only.
 
 ## Step 1 - Write the file
 
-Path: `projects/<n>-<slug>/outputs/metadata.md`, shaped exactly as `file-formats.md` specifies:
-three sections, each holding a fenced block so the text copies out without markdown
-bleeding in.
+Path: `projects/<n>-<slug>/outputs/metadata.md`.
+
+Shape it like this:
+
+```markdown
+# Metadata - <Video Title>
+
+## Title
+
+```
+<one viral title under 70 characters>
+```
+
+### All five title variants
+
+|     | Formula                        | Title                                               |
+| --- | ------------------------------ | --------------------------------------------------- |
+| A   | Why do/can't you \_\_\_?       | <title A>                                           |
+| B   | Your brain still thinks \_\_\_ | <title B>                                           |
+| C   | The \_\_\_ Effect              | <title C>                                           |
+| D   | What every human tribe does... | <title D>                                           |
+| E   | You never noticed that \_\_\_  | <title E>                                           |
+
+## Description
+
+```
+<hook paragraph>
+
+Chapters:
+<timestamp>  <chapter title>
+<timestamp>  <chapter title>
+...
+
+If this helped you see something new about yourself, a like and a comment genuinely help,
+and subscribing brings you the next mechanism your mind is quietly running.
+
+#hashtag #hashtag #hashtag ...
+```
+
+## Tags
+
+```
+<25 to 40 comma-separated keywords on one line>
+```
+```
+
+Three fenced blocks so the text copies out without markdown bleeding in.
 
 ## Step 2 - Verify
 
@@ -65,19 +146,26 @@ F="projects/<n>-<slug>/outputs/metadata.md"
 grep -n "$(printf '\u2014')" "$F" && echo "FAIL: em dash" || echo "clean"
 ```
 
-Then check by eye: title under 70 characters, hashtag count between 15 and 25, tag count
-between 25 and 40, tags on one line with no `#`.
+Then check by eye:
+- Each of the 5 titles is under 70 characters
+- Hashtag count between 15 and 25
+- Tag count between 25 and 40
+- Tags on one line with no `#`
+- Chapters have valid M:SS timestamps matching the transcript
+- No more than 7 chapter entries
 
 ## Step 3 - Report and hand off
 
-Print the title, description, and tags in three separate copyable code blocks in chat, in
-that order, so the user can paste each straight into YouTube. The file is the durable copy,
-the code blocks are the convenience.
+Print the primary title, description, and tags in three separate copyable code blocks in
+chat, in that order, so the user can paste each straight into YouTube. Also print the five
+title variants table. The file is the durable copy, the code blocks are the convenience.
 
 > Metadata saved to `<path>`.
 >
-> Paste the title into the title field, the description into the description box, and the
-> tags into YouTube Studio, Details, Show More, Tags.
+> Paste the **title** into the title field, the **description** into the description box,
+> and the **tags** into YouTube Studio, Details, Show More, Tags.
+>
+> **Pick a title** from the five variants, or request a rewrite.
 >
 > Next: **`/thumbnail`** for the five thumbnail concepts.
 
@@ -87,6 +175,8 @@ the code blocks are the convenience.
   script, pick a weaker title or say the script needs a stronger payoff.
 - Never put hashtags in the tags block or commas-as-tags in the hashtag line.
 - Never shame the viewer in the description. The emotional promise is relief.
+- Never write fewer than 5 or more than 7 chapters. Too few is not a useful map; too many
+  kills the "just one more minute" retention effect.
 - The title may differ from the working title used for the folder slug. Do not rename the
   folder to match: the `script_<short_slug>.md` file name is derived from it and is referenced
   by `character-prompts.md`. Note that `image-prompts.md` no longer carries a header, so it is

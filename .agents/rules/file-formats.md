@@ -225,8 +225,8 @@ Apply the prompt-only format from project 2 onward.
 
 ## `outputs/metadata.md`
 
-Three sections, each holding a fenced block so the text can be copied without
-markdown bleeding in.
+Four sections: title block, title variants table, description block, tags block. Each prose
+section holds a fenced block so the text copies out without markdown bleeding in.
 
 ```markdown
 # Metadata - <Video Title>
@@ -237,11 +237,32 @@ markdown bleeding in.
 <one viral title under 70 characters>
 ```
 
+### All five title variants
+
+|     | Formula                        | Title                                               |
+| --- | ------------------------------ | --------------------------------------------------- |
+| A   | Why do/can't you \_\_\_?       | <title A>                                           |
+| B   | Your brain still thinks \_\_\_ | <title B>                                           |
+| C   | The \_\_\_ Effect              | <title C>                                           |
+| D   | What every human tribe does... | <title D>                                           |
+| E   | You never noticed that \_\_\_  | <title E>                                           |
+
 ## Description
 
 ```
-<hook, summary, call to action, then one hashtag line>
+<hook paragraph>
+
+Chapters:
+M:SS  <chapter title>
+M:SS  <chapter title>
+...
+
+<call to action line>
+
+#hashtag #hashtag #hashtag ...
 ```
+
+Chapters: 5 to 7 entries, each `M:SS` matching a transcript timestamp. Hashtags: 15 to 25.
 
 ## Tags
 
