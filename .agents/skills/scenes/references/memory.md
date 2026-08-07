@@ -314,3 +314,131 @@ the reprised plate; relabeling those variants as callbacks would fake the band.
 
 `characters/` holds `YOU.png` and friends. `file-formats.md` says sheets are `.jpeg`. Flagged in
 the report rather than silently renamed; binding works either way in Flow, `/check` will complain.
+
+## Project 7 hook rebuilt (2026-08-07), and the import bug that was hiding in the whole file
+
+The user rejected `[0:00]` to `[0:35]` as duplicated, off-transcript, and not attractive for a
+hook. Only that range was rebuilt. What the range looked like before is worth recording as a
+failure signature, because the same signature runs through the rest of project 7's file:
+
+- **21 consecutive cues on one plate** with `Delta: expression change` on all 20 variants, and
+  only 6 distinct prompt bodies across the 21, so seven cues in a row generated the identical
+  image. A delta that says "expression change" and nothing else is not a delta. If the plan's
+  Delta column repeats one phrase down a whole act, the prose above it has already collapsed.
+- **Every one of the 297 plan rows said `medium`**, and the register column held zero
+  `PORTRAIT` and zero `SPLIT_OR_SCALE`. The shot-grammar rule (four of seven tasks per 30
+  second block) is the check that catches this, and it was never run.
+- **The tier string was written `LAYERED render tier,` with a comma**, so
+  `grep -c "$tier render tier:"` returned 0 on all 297 and the tier check silently passed as
+  "nothing to compare". Rule 14 says colon. Grep for the colon form, and treat a zero count as
+  a failure rather than an absence.
+- **`Source` held plate IDs (`P002`), not beat IDs.** The Step 3 awk resolves Source against
+  `seen[beat]`, so every non-plate row in the untouched part of the file reports `bad source`.
+  `file-formats.md`'s own example is `| VARIANT | P001 | B001 |`: Plate is a plate ID, Source is
+  a beat ID. They are different columns and different namespaces.
+
+### The file had no blank lines between prompts, so it would have imported as 26 records
+
+271 of the 296 adjacent prompt pairs had no blank line between them. Only the 25 `---` breaks
+carried blank lines. Google Flow splits the pasted text on blank lines, so CREATE would have
+read **26 images, not 297**, and every one of them would have been a 10-prompt run-on. This is
+invisible to the prompt count, the timestamp diff, the anchor and lock counts, and the
+prompts-only grep. All five passed. Add the adjacent-pair check to every run:
+
+```bash
+awk 'p ~ /^\[/ && $0 ~ /^\[/ {c++} {p=$0} END{print c+0}' "$F"   # must be 0
+```
+
+The repair is mechanical and safe: keep only non-blank lines, then rejoin with `\n\n`.
+
+### Rebuilding one range without renumbering the plan
+
+The hook needed 8 plates where the old plan had 1, and plate IDs `P001` to `P026` were already
+taken by later beats. Renumbering the whole file to make the hook's plates sequential would
+have rewritten 276 rows the user did not ask about. **Plate IDs only have to be unique, not
+sequential**, so the new plates took `P001` plus `P027` to `P033`. Nothing outside `[0:00]` to
+`[0:35]` moved.
+
+Same reasoning killed the CapCut rows. The hook's 21 cues over 35 seconds is 36 beats per
+minute against the 45 to 60 the cadence rule wants for the first 15 seconds, and the honest fix
+is CapCut-only beats. But inserting them renumbers every beat after B021, and the plan carries
+zero CAPCUT rows over all 297 rows anyway, so adding them to the hook alone would have been
+inconsistent with the rest of the file. Reported as a deviation instead. The three build chains
+were written so CapCut can subdivide them (advisors filling chairs one at a time, the
+MOMENT/FORCE/AUDIENCE diagram build, the balance tipping inside the thought bubble) without any
+new generation.
+
+### Rule 12 forces a split frame, and the split is the better hook anyway
+
+`[0:14]` "They needed you to get angry" wants @YOU and the ancestors in one frame, which rule 12
+forbids outside a deliberate then-versus-now split. Writing it as an actual split frame, tan
+ground and @BAND around the fire on the left, cream modern room and a red-headed @YOU on the
+right, is stronger than the "faint ancestral silhouette" the old pass used, and it is the only
+`SPLIT_OR_SCALE` beat the plan had anywhere.
+
+### The three advisors stay untokenised
+
+The therapist, the boss and the mother appear across five beats of one plate chain and nowhere
+else in the video, so they are unnamed scene figures, not cast. To keep them from drifting they
+are seen from behind in the wide shots, and the one close-up on the mother crops her to a
+shoulder and a pointing hand with no face. A recurring-looking figure that never recurs does
+not need a sheet; it needs a composition that never asks for one.
+
+## Project 7, ranges two and three (2026-08-07): the mechanism act, then a simplicity correction
+
+`[0:38]` to `[1:59]`, 37 cues, and `[2:03]` to `[2:22]`, 9 cues. Same collapse as the hook:
+37 cues on 2 plates, 9 on 1, `Delta: expression change` on every variant. Rebuilt to 67 beats
+across 25 plates total for `[0:00]` to `[2:22]`.
+
+### Give a mechanism act one physical object and let it recur
+
+The recalibrational theory is a welfare tradeoff ratio, which is a comparison, which is a
+**two-pan balance**. Introducing it in the hook as a thought bubble at `[0:28]`, formalising it
+at `[0:59]` as the diagram @YOU stands beside, clamping its beam at `[1:41]` for "hold your
+welfare hostage", levelling it at `[1:53]` for "the negotiation ending", and reducing it to the
+one thing under the line at `[2:20]` for "the underlying mechanism does not vary" costs five
+plates and carries the entire act. The old pass spent those same 46 cues on the phrase "a
+simple diagram of the negotiation model" and drew nothing. **Pick the object the mechanism
+already is, plant it early, and pay it off.** Abstract acts do not need abstract frames, they
+need one prop that survives the whole act.
+
+### The user's word for the old frames was "complex", and the cause was on-screen prose
+
+`[2:03]` to `[2:22]` was rejected as too complex to absorb in a couple of seconds. Every frame
+carried a full sentence of generated lettering: "bold charcoal text reading recalibrational
+theory of anger", "bold charcoal text reading the negotiation signal underneath". Those are 4
+to 6 words the viewer has to read while the narration is already moving, and the image model
+renders long strings unreliably anyway. The rebuild caps the whole range at three single words,
+`EVERYWHERE`, `VARY`, `SAME`, and moves the meaning into the drawing.
+
+**Density lives in the count of marks, not the count of ideas.** `[2:06]` is two figures and one
+block on an empty card. The next three beats add one thing each: three smaller identical pairs,
+a check beside each, a bracket under the group. Nothing is ever removed and nothing is ever
+redrawn. A viewer who read frame one can read frame four at a glance, which is the actual
+definition of absorbable. The text budget rule already says 1 to 5 words; treat 1 to 2 as the
+default and 5 as the exception.
+
+### The above-the-line / below-the-line card
+
+"The specific rules vary widely, but the mechanism underneath does not" is one composition, not
+six: a horizontal line, variable shapes above it, one invariant object below it. Build it in
+four beats (tablets clustered, tablets spread apart under a double arrow, the balance appears
+below, a bracket closes with `SAME`) and the sentence draws itself. Worth reaching for any time
+the script contrasts a varying surface with a constant underneath.
+
+### Splicing a range: the boundary break is part of the slice
+
+Replacing records `i` through `j-1` silently swallowed the `---` that sat immediately before the
+untouched `[2:26]`, because that break was the last record of the removed slice. The break count
+still moved in the right direction (42 to 43) so nothing looked wrong. **After any splice, print
+the two records on each side of both seams and look at them**, or the chain quietly re-wires a
+hard cut. Check the seam before the first new record and after the last one, both.
+
+### Registers land naturally when the plan is written per-cue
+
+Across the 67 rebuilt beats: CARD 17, STORY 16, DIAGRAM 14, HYBRID 9, SPLIT_OR_SCALE 8,
+PORTRAIT 3. Assets 25 plates to 42 variants, 37 percent plates, inside the 35 to 45 band without
+a rebalancing pass. Shot tasks reached 4 to 7 per 30 second block in every block. Projects 5 and
+6 both needed a scripted rebalance after the first pass; the difference here is that every row
+was written against its own transcript cue instead of an act label repeated down a column. A
+Meaning column that repeats one phrase for 37 rows is the tell that no per-cue planning happened.
