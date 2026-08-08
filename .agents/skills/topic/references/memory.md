@@ -10,7 +10,11 @@ Self-improving notes for topic selection. Single canonical copy, no Claude-side 
 | 1 | Why You Feel Lonelier In A Crowd Than Alone In Your Room | packaged, thumbnail accepted |
 | 2 | Why You Still Replay That Argument From Last Week | scaffolded 2026-07-28, no script yet |
 | 3 | Why You Are A Different Person With Each Friend Group | scaffolded 2026-07-28, no script yet |
+| 4 | Why Your Life Feels Faster When Every Day Looks The Same | scaffolded 2026-08-04, no script yet |
 | 5 | Why do people follow the crowd? | scripted, cast, metadata, thumbnails done 2026-08-04, user-supplied title |
+| 6 | Why You Feel More Tired After Doing Nothing All Day | scaffolded 2026-08-04, no script yet |
+| 7 | Why Getting Angry Sometimes Gets You What You Want | scaffolded 2026-08-04, no script yet |
+| 8 | Why You Stay Quiet When You Know The Room Is Wrong | scaffolded 2026-08-08 |
 
 Project 5 numbering note: this was scaffolded as project 7, but the user deleted the old
 project 5 (What Every Human Tribe Did That You Still Do Under Stress) and renamed the folder
@@ -158,3 +162,14 @@ The user picked 1 and 4. These three remain eligible.
   not-picked, do not invent a reason, and keep all five eligible. Do not silently reuse a
   rejected title in the very next batch either: the user rejected the batch, so give them
   genuinely different themes first.
+
+### 2026-08-08, batch 11
+
+User picked title 1. The other four remain eligible.
+
+| Title | Theme | Numeric material available |
+| --- | --- | --- |
+| Why One Mean Comment Outweighs Ten Kind Ones | negativity bias | Baumeister 2001, Gottman 5 to 1 ratio |
+| Why Your Willpower Runs Out Even When You Do Nothing | habit and willpower | Baumeister ego depletion, glucose depletion studies |
+| Why You Give More To Others Than You Give Yourself | identity and belonging | self-neglect paradox, Fisher rejection circuits |
+| Why You Still Need Rituals More Than You Think | ritual and meaning | Malinowski, Hadza, cross-cultural ritual prevalence |
