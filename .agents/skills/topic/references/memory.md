@@ -4,7 +4,7 @@
 
 | Title | Status |
 | --- | --- |
-| The Economics of Tipping | planned |
+| The Economics of Tipping | selected |
 | The Economics of Being Single | planned |
 | The Economics of Black Friday | planned |
 | The Economics of Search | planned |

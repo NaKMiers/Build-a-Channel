@@ -1,6 +1,6 @@
 ---
 name: thumbnail
-description: Create five self-contained HumanPrice thumbnail prompts from a finished script, research brief, and cast. Use for thumbnails, thumbnail concepts, cover art prompts, click-through packaging, or A/B concepts.
+description: Create five self-contained, reference-backed HumanPrice thumbnail prompts from a finished script, research brief, and cast. Every prompt binds the bundled finance-board image as its dominant style and layout-density reference. Use for thumbnails, thumbnail concepts, cover art prompts, click-through packaging, or A/B concepts.
 ---
 
 # Thumbnail (Claude wrapper)

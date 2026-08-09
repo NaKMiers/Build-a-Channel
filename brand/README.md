@@ -12,9 +12,14 @@
 
 - Channel name: HumanPrice
 - Core promise: Every human behavior has a price.
-- Olive: `#6F7D3C`
-- Terracotta: `#C86B3C`
+- Permanent cross-channel color: Toss blue `#2E77C4`
+- HumanPrice system accent: Olive `#6F7D3C`
+- HumanPrice cost accent: Terracotta `#C86B3C`
 - Supporting colors: warm cream and charcoal
+
+Toss blue remains the main color of the shared warm-doodle visual style. Niche palettes may
+add meaning but never replace it inside characters, scenes, diagrams, and thumbnails. This
+rule does not require the existing logo or banner to be regenerated.
 
 ## Channel description
 

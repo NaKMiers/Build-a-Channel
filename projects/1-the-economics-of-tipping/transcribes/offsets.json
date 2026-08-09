@@ -1,0 +1,25 @@
+{
+  "total": 528.065,
+  "parts": [
+    {
+      "file": "projects/1-the-economics-of-tipping/audios/part-1.mp3",
+      "start": 0.0,
+      "duration": 305.711,
+      "frames": 11703,
+      "sample_rate": 44100,
+      "bitrates": [
+        256
+      ]
+    },
+    {
+      "file": "projects/1-the-economics-of-tipping/audios/part-2.mp3",
+      "start": 305.711,
+      "duration": 222.354,
+      "frames": 8512,
+      "sample_rate": 44100,
+      "bitrates": [
+        256
+      ]
+    }
+  ]
+}

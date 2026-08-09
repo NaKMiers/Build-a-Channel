@@ -32,16 +32,27 @@ the audience participates in the behavior. Supporting roles may include a worker
 partner, seller, platform operator, expert, or observer. Do not turn a company, market,
 or coin into a cute mascot.
 
-If `brand/PROTAGONIST.jpeg` exists, state that it is the locked reference for `@YOU`. If
+If `brand/PROTAGONIST.jpeg` exists, state that it is the locked identity reference for
+`@YOU` and the mandatory rendering-language reference for every supporting character. If
 it does not, include the complete creation prompt from `cast-identity.md` first and add a
 blocking note that this reference must be generated and saved before scene generation.
+
+When the protagonist reference exists, all cast sheets must match its simple doodle-cartoon
+language: large simple head shapes, small charcoal dot eyes, minimal brows and mouth, broad
+silhouettes, clean charcoal contour lines, flat paper-texture color fills, and no rendered
+skin texture, facial anatomy, realistic eyes, detailed hair strands, material shine, or
+semi-realistic shading. The protagonist reference controls rendering language only for
+supporting characters. Their stated age, silhouette, hair mass, clothing blocks, and story
+prop must remain distinct.
 
 ## Write prompts
 
 For each entry, define the narrative role, identity lock, turnaround views, six useful
 expressions, three story-specific poses, and story props. Include a scale lineup when
-characters share frames. Every prompt must be self-contained and end with the exact style
-and generation strings from `visual-style.md`.
+characters share frames. Every prompt must explicitly say that it matches the locked
+protagonist's doodle-cartoon rendering language while not copying the protagonist's
+identity. Every prompt must be self-contained and end with the exact style and generation
+strings from `visual-style.md`.
 
 Write `prompts/character-prompts.md` using `file-formats.md`. Do not generate images.
 

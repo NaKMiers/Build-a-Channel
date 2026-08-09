@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research"
+  short_description: "Build a sourced HumanPrice evidence brief"
+  default_prompt: "Use $research to build a sourced evidence brief for this HumanPrice topic."

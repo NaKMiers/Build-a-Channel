@@ -1,0 +1,907 @@
+1
+00:00:00,000 --> 00:00:00,990
+La pantalla gira hacia ti.
+
+2
+00:00:01,000 --> 00:00:02,990
+Tres propinas sugeridas.
+
+3
+00:00:03,000 --> 00:00:05,990
+Quizás un pequeño botón que diga "Sin propina".
+
+4
+00:00:06,000 --> 00:00:07,990
+El trabajador espera cerca.
+
+5
+00:00:08,000 --> 00:00:08,990
+Alguien está detrás de ti.
+
+6
+00:00:09,000 --> 00:00:10,990
+Antes de que puedas guardar tu tarjeta,
+
+7
+00:00:11,000 --> 00:00:12,990
+una compra de café se ha vuelto pública
+
+8
+00:00:13,000 --> 00:00:15,990
+pregunta sobre si eres justo.
+
+9
+00:00:16,000 --> 00:00:17,990
+Una propina premia el buen servicio.
+
+10
+00:00:18,000 --> 00:00:18,990
+Es voluntario.
+
+11
+00:00:19,000 --> 00:00:20,990
+Tú decides.
+
+12
+00:00:21,000 --> 00:00:22,990
+Pero si el pago es realmente opcional,
+
+13
+00:00:23,000 --> 00:00:24,990
+¿Por qué elegir cero puede parecer como negarse?
+
+14
+00:00:25,000 --> 00:00:26,990
+¿Pagar parte de la factura?
+
+15
+00:00:27,000 --> 00:00:29,990
+Porque dar propina no es sólo un agradecimiento.
+
+16
+00:00:30,000 --> 00:00:30,990
+En los Estados Unidos,
+
+17
+00:00:31,000 --> 00:00:33,990
+también puede ser una decisión salarial descentralizada,
+
+18
+00:00:34,000 --> 00:00:35,990
+hecho por un cliente a la vez,
+
+19
+00:00:36,000 --> 00:00:38,990
+bajo presión social y diseño de producto.
+
+20
+00:00:39,000 --> 00:00:41,990
+Comience con una transacción ordinaria.
+
+21
+00:00:42,000 --> 00:00:43,990
+La factura de tu restaurante es de veinte dólares.
+
+22
+00:00:44,000 --> 00:00:46,990
+Utilizando el promedio del 15,4 por ciento reportado en
+
+23
+00:00:47,000 --> 00:00:50,990
+Transacciones de restaurantes cuadrados en 2024,
+
+24
+00:00:51,000 --> 00:00:53,990
+la propina es de tres dólares y ocho centavos.
+
+25
+00:00:54,000 --> 00:00:56,990
+Su total asciende a veintitrés dólares y ocho centavos.
+
+26
+00:00:57,000 --> 00:00:59,990
+Esos tres dólares y ocho centavos adicionales parecen simples.
+
+27
+00:01:00,000 --> 00:01:01,990
+El dinero sale de tu cuenta y,
+
+28
+00:01:02,000 --> 00:01:03,990
+sujeto a las reglas del lugar de trabajo,
+
+29
+00:01:04,000 --> 00:01:06,990
+ayuda a compensar a las personas que le atienden.
+
+30
+00:01:07,000 --> 00:01:08,990
+Pero el menú te dio un precio,
+
+31
+00:01:09,000 --> 00:01:11,990
+mientras que el sistema social te pedía que calcularas otro.
+
+32
+00:01:12,000 --> 00:01:13,990
+El coste final de la mano de obra se dejó en parte
+
+33
+00:01:14,000 --> 00:01:15,990
+Abierto hasta el último momento.
+
+34
+00:01:16,000 --> 00:01:18,990
+Este acuerdo da a cada participante una oportunidad razonable
+
+35
+00:01:19,000 --> 00:01:19,990
+razón para seguir así.
+
+36
+00:01:20,000 --> 00:01:22,990
+El trabajador quiere ingresos fiables.
+
+37
+00:01:23,000 --> 00:01:24,990
+Las propinas pueden ser una parte significativa.
+
+38
+00:01:25,000 --> 00:01:26,990
+En los datos de 2024 de Square,
+
+39
+00:01:27,000 --> 00:01:29,990
+el trabajador promedio de un restaurante ganaba casi
+
+40
+00:01:30,000 --> 00:01:32,990
+23 por ciento de los ingresos provenientes de propinas.
+
+41
+00:01:33,000 --> 00:01:35,990
+Esa cifra describe a los trabajadores en los datos de Square,
+
+42
+00:01:36,000 --> 00:01:37,990
+no todos los trabajadores de restaurantes en Estados Unidos.
+
+43
+00:01:38,000 --> 00:01:40,990
+Aun así, demuestra por qué la elección de su
+
+44
+00:01:41,000 --> 00:01:43,990
+La pantalla puede ser importante para la persona que está al otro lado del mostrador.
+
+45
+00:01:44,000 --> 00:01:45,990
+El empleador tiene que atraer trabajadores,
+
+46
+00:01:46,000 --> 00:01:49,990
+gestionar la nómina y mantener los precios competitivos.
+
+47
+00:01:50,000 --> 00:01:50,990
+En algunas jurisdicciones,
+
+48
+00:01:51,000 --> 00:01:52,990
+las propinas pueden contar para parte
+
+49
+00:01:53,000 --> 00:01:54,990
+de la obligación del empleador de salario mínimo.
+
+50
+00:01:55,000 --> 00:01:58,990
+Un mensaje de propina también puede hacer visible una compensación adicional
+
+51
+00:01:59,000 --> 00:02:01,990
+sin incluirlo en el precio del menú publicado.
+
+52
+00:02:02,000 --> 00:02:04,990
+La plataforma de pago quiere que el proceso de pago funcione para el comerciante.
+
+53
+00:02:05,000 --> 00:02:08,990
+Proporciona la interfaz y las posibles configuraciones de propinas.
+
+54
+00:02:09,000 --> 00:02:11,990
+La empresa controla cómo se configura ese pago.
+
+55
+00:02:12,000 --> 00:02:13,990
+Tú controlas la elección final,
+
+56
+00:02:14,000 --> 00:02:16,990
+pero sólo después de que otra persona haya diseñado la pregunta.
+
+57
+00:02:17,000 --> 00:02:17,990
+Y quieres ser justo.
+
+58
+00:02:18,000 --> 00:02:20,990
+No querrás pagarle menos a alguien que te ayudó.
+
+59
+00:02:21,000 --> 00:02:22,990
+Tampoco quieres cada compra.
+
+60
+00:02:23,000 --> 00:02:24,990
+convertirse en una negociación sobre salarios.
+
+61
+00:02:25,000 --> 00:02:26,990
+Entonces buscas una regla.
+
+62
+00:02:27,000 --> 00:02:28,990
+Ahí es donde aparece el motor conductual.
+
+63
+00:02:29,000 --> 00:02:30,990
+Las propinas se ejecutan según la norma
+
+64
+00:02:31,000 --> 00:02:32,990
+cumplimiento bajo ambigüedad.
+
+65
+00:02:33,000 --> 00:02:34,990
+Cuando la acción correcta no está clara,
+
+66
+00:02:35,000 --> 00:02:37,990
+la gente busca una expectativa compartida.
+
+67
+00:02:38,000 --> 00:02:39,990
+La pantalla proporciona posibles respuestas.
+
+68
+00:02:40,000 --> 00:02:43,990
+La presencia del trabajador hace que la decisión parezca interpersonal.
+
+69
+00:02:44,000 --> 00:02:45,990
+La fila detrás de ti añade urgencia.
+
+70
+00:02:46,000 --> 00:02:48,990
+Nada de esto elimina tu capacidad de elegir.
+
+71
+00:02:49,000 --> 00:02:50,990
+Cambia la sensación de la elección.
+
+72
+00:02:51,000 --> 00:02:53,990
+Los propios estadounidenses describen esa incertidumbre.
+
+73
+00:02:54,000 --> 00:02:55,990
+En un representante a nivel nacional
+
+74
+00:02:56,000 --> 00:02:57,990
+encuesta 2023,
+
+75
+00:02:58,000 --> 00:02:59,990
+El 72 por ciento de los adultos dijo
+
+76
+00:03:00,000 --> 00:03:00,990
+Se esperaba que se volcara en más
+
+77
+00:03:01,000 --> 00:03:03,990
+lugares que cinco años antes.
+
+78
+00:03:04,000 --> 00:03:06,990
+Sin embargo, sólo el 34 por ciento dijo que era
+
+79
+00:03:07,000 --> 00:03:08,990
+muy o extremadamente fácil de saber
+
+80
+00:03:09,000 --> 00:03:09,990
+si dar propina.
+
+81
+00:03:10,000 --> 00:03:11,990
+Casi la mitad dijo si dar propina es una opción
+
+82
+00:03:12,000 --> 00:03:14,990
+o una obligación depende de la situación.
+
+83
+00:03:15,000 --> 00:03:17,990
+Esa es una posición inusualmente poderosa.
+
+84
+00:03:18,000 --> 00:03:18,990
+por un pago para ocupar.
+
+85
+00:03:19,000 --> 00:03:20,990
+Es legalmente voluntario,
+
+86
+00:03:21,000 --> 00:03:22,990
+socialmente condicional,
+
+87
+00:03:23,000 --> 00:03:25,990
+y económicamente significativo para la persona que lo recibe.
+
+88
+00:03:26,000 --> 00:03:27,990
+Las cantidades sugeridas también importan,
+
+89
+00:03:28,000 --> 00:03:30,990
+aunque no de una manera universal.
+
+90
+00:03:31,000 --> 00:03:32,990
+Un experimento de campo en el que participaron más de noventa y cuatro
+
+91
+00:03:33,000 --> 00:03:35,990
+mil pedidos de un servicio de lavandería basado en una aplicación
+
+92
+00:03:36,000 --> 00:03:39,990
+descubrió que las recomendaciones de propina asignadas aleatoriamente cambiaron
+
+93
+00:03:40,000 --> 00:03:40,990
+montos de propina.
+
+94
+00:03:41,000 --> 00:03:41,990
+En ese escenario,
+
+95
+00:03:42,000 --> 00:03:44,990
+las recomendaciones no cambiaron la satisfacción,
+
+96
+00:03:45,000 --> 00:03:46,990
+frecuencia de retorno,
+
+97
+00:03:47,000 --> 00:03:47,990
+o el tamaño del billete.
+
+98
+00:03:48,000 --> 00:03:48,990
+Pero otro estudio,
+
+99
+00:03:49,000 --> 00:03:51,990
+usando una cafetería simulada de servicio limitado,
+
+100
+00:03:52,000 --> 00:03:53,990
+descubrió que los métodos de pago basados ​​en pantalla
+
+101
+00:03:54,000 --> 00:03:55,990
+produjo más sentimientos negativos
+
+102
+00:03:56,000 --> 00:03:56,990
+que los frascos sin punta
+
+103
+00:03:57,000 --> 00:03:58,990
+aumentando el tamaño de las puntas.
+
+104
+00:03:59,000 --> 00:04:01,990
+Debido a que ese estudio utilizó opciones hipotéticas,
+
+105
+00:04:02,000 --> 00:04:02,990
+no puede decirnos exactamente qué
+
+106
+00:04:03,000 --> 00:04:04,990
+sucede en todos los cafés reales.
+
+107
+00:04:05,000 --> 00:04:06,990
+Lo que sí muestra es la tensión:
+
+108
+00:04:07,000 --> 00:04:08,990
+un aviso puede afectar la experiencia
+
+109
+00:04:09,000 --> 00:04:11,990
+incluso cuando no produce más dinero.
+
+110
+00:04:12,000 --> 00:04:14,990
+Así que el costo oculto no es sólo el dinero.
+
+111
+00:04:15,000 --> 00:04:17,990
+Es la conversión de una caja ordinaria en una pequeña
+
+112
+00:04:18,000 --> 00:04:18,990
+decisión moral.
+
+113
+00:04:19,000 --> 00:04:21,990
+Ahora viene la distinción que cambia la categoría.
+
+114
+00:04:22,000 --> 00:04:24,990
+Una propina y un cargo por servicio obligatorio.
+
+115
+00:04:25,000 --> 00:04:26,990
+puede aparecer en el mismo recibo,
+
+116
+00:04:27,000 --> 00:04:27,990
+pero bajo reglas federales
+
+117
+00:04:28,000 --> 00:04:30,990
+no son el mismo tipo de pago.
+
+118
+00:04:31,000 --> 00:04:31,990
+Para propósitos de impuestos federales,
+
+119
+00:04:32,000 --> 00:04:33,990
+una propina es voluntaria.
+
+120
+00:04:34,000 --> 00:04:37,990
+El cliente decide si pagarlo y determina el importe.
+
+121
+00:04:38,000 --> 00:04:39,990
+Un cargo por servicio obligatorio es diferente.
+
+122
+00:04:40,000 --> 00:04:41,990
+Es una parte obligatoria de la factura,
+
+123
+00:04:42,000 --> 00:04:44,990
+tratado como ingreso para el empleador y
+
+124
+00:04:45,000 --> 00:04:48,990
+generalmente como salarios cuando se distribuyen a los empleados.
+
+125
+00:04:49,000 --> 00:04:51,990
+Incluso el diseño de un mensaje digital puede cruzar esa línea.
+
+126
+00:04:52,000 --> 00:04:55,990
+Si una pantalla requiere que seleccione una cantidad mayor que cero,
+
+127
+00:04:56,000 --> 00:04:56,990
+el IRS
+
+128
+00:04:57,000 --> 00:04:59,990
+lo da como ejemplo de un cargo por servicio,
+
+129
+00:05:00,000 --> 00:05:00,990
+no es una propina.
+
+130
+00:05:01,000 --> 00:05:02,990
+La opción cero es importante porque
+
+131
+00:05:03,000 --> 00:05:04,990
+separa una sugerencia de un precio.
+
+132
+00:05:05,000 --> 00:05:06,990
+Esto significa la incomodidad al momento de pagar.
+
+133
+00:05:07,000 --> 00:05:09,990
+no es un efecto secundario accidental.
+
+134
+00:05:10,000 --> 00:05:10,990
+Se asienta exactamente sobre el
+
+135
+00:05:11,000 --> 00:05:13,990
+límite que define la transacción.
+
+136
+00:05:14,000 --> 00:05:15,990
+El pago debe seguir siendo voluntario para ser una propina,
+
+137
+00:05:16,000 --> 00:05:18,990
+Sin embargo, el sistema de compensación funciona mejor cuando
+
+138
+00:05:19,000 --> 00:05:20,990
+suficientes clientes sienten que se espera que lo paguen.
+
+139
+00:05:21,000 --> 00:05:24,990
+El caso de estudio más claro es el crédito federal por propinas.
+
+140
+00:05:25,000 --> 00:05:26,990
+Según la Ley federal de Normas Laborales Justas,
+
+141
+00:05:27,000 --> 00:05:29,990
+un empleador elegible que utiliza el crédito de propinas
+
+142
+00:05:30,000 --> 00:05:31,990
+puede pagarle a un trabajador que recibe propinas un salario directo en efectivo de
+
+143
+00:05:32,000 --> 00:05:34,990
+al menos dos dólares con trece centavos por hora.
+
+144
+00:05:35,000 --> 00:05:36,990
+El empleador podrá contar hasta cinco
+
+145
+00:05:37,000 --> 00:05:38,990
+dólares y doce centavos por hora
+
+146
+00:05:39,000 --> 00:05:40,990
+en propinas hacia el salario mínimo federal
+
+147
+00:05:41,000 --> 00:05:43,990
+de siete dólares con veinticinco centavos.
+
+148
+00:05:44,000 --> 00:05:45,990
+Eso no significa que el trabajador pueda
+
+149
+00:05:46,000 --> 00:05:48,990
+quedar legalmente por debajo del mínimo federal.
+
+150
+00:05:49,000 --> 00:05:49,990
+Si los salarios y las propinas no alcanzan
+
+151
+00:05:50,000 --> 00:05:51,990
+la cantidad requerida durante la semana laboral,
+
+152
+00:05:52,000 --> 00:05:54,990
+el empleador debe compensar la diferencia.
+
+153
+00:05:55,000 --> 00:05:57,990
+Las reglas estatales pueden requerir un salario directo más alto
+
+154
+00:05:58,000 --> 00:06:00,990
+o prohibir el crédito de propinas por completo.
+
+155
+00:06:01,000 --> 00:06:01,990
+El punto no es que tu individuo
+
+156
+00:06:02,000 --> 00:06:04,990
+La propina borra la responsabilidad del empleador.
+
+157
+00:06:05,000 --> 00:06:06,990
+No es así.
+
+158
+00:06:07,000 --> 00:06:09,990
+La cuestión es que, cuando se aplica el crédito por propinas,
+
+159
+00:06:10,000 --> 00:06:11,990
+Las sugerencias de los clientes están formalmente conectadas.
+
+160
+00:06:12,000 --> 00:06:13,990
+a la obligación salarial del empleador.
+
+161
+00:06:14,000 --> 00:06:16,990
+Un pago presentado como agradecimiento personal también.
+
+162
+00:06:17,000 --> 00:06:19,990
+participa en un sistema de compensación regulado.
+
+163
+00:06:20,000 --> 00:06:21,990
+Esto ayuda a explicar por qué la gente razonable en
+
+164
+00:06:22,000 --> 00:06:24,990
+cada lado puede defenderse del vuelco.
+
+165
+00:06:25,000 --> 00:06:27,990
+Un trabajador puede preferir las propinas sobre ingresos que ofrecen.
+
+166
+00:06:28,000 --> 00:06:30,990
+Es posible que un cliente quiera recompensar el servicio atento.
+
+167
+00:06:31,000 --> 00:06:32,990
+Una empresa puede creer que el modelo le ayuda a emplear
+
+168
+00:06:33,000 --> 00:06:35,990
+personas manteniendo atractivo el precio publicado.
+
+169
+00:06:36,000 --> 00:06:38,990
+Y la calidad del servicio sí importa a los clientes.
+
+170
+00:06:39,000 --> 00:06:40,990
+En la encuesta de 2023,
+
+171
+00:06:41,000 --> 00:06:42,990
+El 77 por ciento dijo que era un problema importante.
+
+172
+00:06:43,000 --> 00:06:45,990
+factor a la hora de decidir si dar propina y cuánto.
+
+173
+00:06:46,000 --> 00:06:48,990
+También sería un error tratar cada filtro de información como coerción.
+
+174
+00:06:49,000 --> 00:06:51,990
+La norma cambia con el entorno.
+
+175
+00:06:52,000 --> 00:06:54,990
+Entre los estadounidenses que utilizaron cada servicio en esa encuesta,
+
+176
+00:06:55,000 --> 00:06:57,990
+El 92 por ciento de los comensales de restaurantes sentados dijeron que
+
+177
+00:06:58,000 --> 00:06:59,990
+siempre o con frecuencia dan propina.
+
+178
+00:07:00,000 --> 00:07:00,990
+La figura era
+
+179
+00:07:01,000 --> 00:07:02,990
+25 por ciento al comprar café
+
+180
+00:07:03,000 --> 00:07:05,990
+y el 12 por ciento en restaurantes de comida rápida e informal.
+
+181
+00:07:06,000 --> 00:07:07,990
+No existe una regla única para las propinas.
+
+182
+00:07:08,000 --> 00:07:10,990
+Esa incertidumbre es parte del mecanismo.
+
+183
+00:07:11,000 --> 00:07:11,990
+Ahora pruebe el sistema mediante
+
+184
+00:07:12,000 --> 00:07:14,990
+Imaginando que el botón de propina desaparece mañana.
+
+185
+00:07:15,000 --> 00:07:17,990
+Aún hay que pagar el trabajo.
+
+186
+00:07:18,000 --> 00:07:19,990
+Si las propinas hubieran apoyado los ingresos de los trabajadores,
+
+187
+00:07:20,000 --> 00:07:22,990
+esa compensación necesitaría otra fuente.
+
+188
+00:07:23,000 --> 00:07:24,990
+Una empresa podría utilizar precios publicados más altos,
+
+189
+00:07:25,000 --> 00:07:26,990
+diferentes salarios, un cargo por servicio,
+
+190
+00:07:27,000 --> 00:07:28,990
+o alguna combinación.
+
+191
+00:07:29,000 --> 00:07:31,990
+La evidencia aquí no nos dice exactamente
+
+192
+00:07:32,000 --> 00:07:33,990
+cuánto cambiarían los precios o salarios.
+
+193
+00:07:34,000 --> 00:07:36,990
+Nos dice que quitando la punta visible
+
+194
+00:07:37,000 --> 00:07:38,990
+no elimina el costo laboral subyacente.
+
+195
+00:07:39,000 --> 00:07:41,990
+Cambiaría quién tiene que nombrar ese costo.
+
+196
+00:07:42,000 --> 00:07:43,990
+Con un precio publicado o cargo obligatorio,
+
+197
+00:07:44,000 --> 00:07:46,990
+la empresa toma la decisión sobre el precio antes de que usted pague.
+
+198
+00:07:47,000 --> 00:07:47,990
+Con una propina,
+
+199
+00:07:48,000 --> 00:07:50,990
+parte de la decisión llega después del servicio,
+
+200
+00:07:51,000 --> 00:07:52,990
+y se le pide que lo complete.
+
+201
+00:07:53,000 --> 00:07:54,990
+El negocio prepara el escenario.
+
+202
+00:07:55,000 --> 00:07:56,990
+La plataforma enmarca las opciones.
+
+203
+00:07:57,000 --> 00:07:59,990
+El trabajador vive con el resultado.
+
+204
+00:08:00,000 --> 00:08:01,990
+Entregas el número final.
+
+205
+00:08:02,000 --> 00:08:03,990
+Ese es el precio humano total de las propinas.
+
+206
+00:08:04,000 --> 00:08:04,990
+Pagas dinero
+
+207
+00:08:05,000 --> 00:08:06,990
+pero también prestas atención.
+
+208
+00:08:07,000 --> 00:08:08,990
+Te detienes, calculas,
+
+209
+00:08:09,000 --> 00:08:09,990
+leer la habitación,
+
+210
+00:08:10,000 --> 00:08:11,990
+interpretar una norma incierta,
+
+211
+00:08:12,000 --> 00:08:13,990
+y decidir cuánto debería costar la justicia
+
+212
+00:08:14,000 --> 00:08:15,990
+en este encuentro particular.
+
+213
+00:08:16,000 --> 00:08:16,990
+El trabajador recibe ingresos,
+
+214
+00:08:17,000 --> 00:08:18,990
+pero también puede recibir incertidumbre
+
+215
+00:08:19,000 --> 00:08:21,990
+ligado al tráfico de clientes, contexto,
+
+216
+00:08:22,000 --> 00:08:22,990
+y costumbre.
+
+217
+00:08:23,000 --> 00:08:24,990
+El empresario gana en flexibilidad,
+
+218
+00:08:25,000 --> 00:08:26,990
+pero deja parte de la compensación expuesta a
+
+219
+00:08:27,000 --> 00:08:29,990
+miles de juicios individuales.
+
+220
+00:08:30,000 --> 00:08:31,990
+Luego la pantalla vuelve a girar.
+
+221
+00:08:32,000 --> 00:08:33,990
+El café sigue siendo el mismo café.
+
+222
+00:08:34,000 --> 00:08:35,990
+El botón sigue siendo opcional.
+
+223
+00:08:36,000 --> 00:08:39,990
+Pero ahora puedes ver lo que la transacción te pide que hagas.
+
+224
+00:08:40,000 --> 00:08:41,990
+No eres simplemente un servicio gratificante.
+
+225
+00:08:42,000 --> 00:08:42,990
+Durante unos segundos,
+
+226
+00:08:43,000 --> 00:08:44,990
+se le pide que fije precios justos
+
+227
+00:08:45,000 --> 00:08:48,065
+dentro de un sistema que usted no diseñó.

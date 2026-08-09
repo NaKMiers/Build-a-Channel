@@ -3,9 +3,9 @@
   "purpose": "Reveal the hidden economic price of ordinary human behavior through one readable contradiction.",
   "canvas": "16:9 YouTube thumbnail",
   "copy_words": {
-    "minimum": 0,
-    "preferred_maximum": 3,
-    "hard_maximum": 4
+    "minimum": 4,
+    "preferred_maximum": 6,
+    "hard_maximum": 9
   },
   "required_elements": [
     "one readable human decision or reaction",
@@ -13,6 +13,7 @@
     "one visual contradiction"
   ],
   "palette": {
+    "master_brand_blue": "#2E77C4",
     "olive": "#6F7D3C",
     "terracotta": "#C86B3C",
     "cream": "#F5EBD8",
@@ -27,6 +28,26 @@
     "hidden system",
     "human price"
   ],
+  "default_visual_system": {
+    "name": "finance-board",
+    "reference_asset": ".agents/skills/thumbnail/assets/finance-board-reference.jpg",
+    "reference_role": "Image 1 and dominant style and layout-density reference for every prompt",
+    "paper_ground": "bright white or warm off-white paper with a faint gray blueprint grid and light pencil texture",
+    "header": "top quarter to third, mandatory four-to-nine-word uppercase heavy black topic statement or complete curiosity/consequence question in no more than two lines, one thin terracotta-red underline; never a one-word or elliptical short-fragment headline",
+    "hero": "one detailed coherent central transaction environment with a readable human decision embedded inside it and characters smaller than the system",
+    "margin_callouts": "four to six short handwritten economic labels in separate white edge zones, each with a thin charcoal arrow and short terracotta underline",
+    "mobile_hierarchy": [
+      "headline",
+      "central transaction",
+      "human decision"
+    ],
+    "constraints": [
+      "shared visual grammar only, never a competitor's exact composition or branded asset",
+      "dense coherent detail in the center, clean white callout zones at the margins",
+      "detailed hand-inked 2D editorial subjects and objects with bold charcoal contours, restrained watercolor-like fills, subtle pencil hatch, and slight paper grain",
+      "no glossy product rendering, volumetric 3D shading, dramatic perspective, realistic skin, sparse icon bubbles, or floating icon soup"
+    ]
+  },
   "prohibited": [
     "unsupported number",
     "title repetition",
@@ -35,5 +56,6 @@
     "3D render",
     "literal coin mascot",
     "tiny factual text"
-  ]
+  ],
+  "cross_channel_rule": "Toss blue must appear in every thumbnail; olive and terracotta remain HumanPrice semantic accents."
 }

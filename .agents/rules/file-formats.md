@@ -18,6 +18,12 @@ projects/<n>-<title-slug>/
     NAME.jpeg
   outputs/
     metadata.md
+    captions/
+      english.srt
+      spanish.srt
+      japanese.srt
+      chinese.srt
+      hindi.srt
     thumbnail-N.jpg
   prompts/
     character-prompts.md
@@ -77,7 +83,7 @@ Rules:
 ## Incentive map
 
 | Actor | Pays | Receives | Controls | Incentive |
-| --- | --- | --- | --- | --- |
+| ----- | ---- | -------- | -------- | --------- |
 
 ## Behavioral engine
 
@@ -101,9 +107,9 @@ Rules:
 
 ## Claim ledger
 
-| ID | Claim | Type | Source | Year | Geography | Definition | Script use |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| C01 | ... | FACT | S01 | 2025 | US | ... | unit economics |
+| ID  | Claim | Type | Source | Year | Geography | Definition | Script use     |
+| --- | ----- | ---- | ------ | ---- | --------- | ---------- | -------------- |
+| C01 | ...   | FACT | S01    | 2025 | US        | ...        | unit economics |
 
 ## Sources
 
@@ -142,19 +148,20 @@ real recording controls the count.
 
 Cast derived from `../script_<short_slug>.md`.
 Visual style: HumanPrice current
+Master brand: Toss blue #2E77C4
 Chapter palette: Olive #6F7D3C, Terracotta #C86B3C, <one extension color>
 Style rules: `.agents/rules/cast-identity.md` and `.agents/rules/visual-style.md`
 Protagonist identity lock: `brand/PROTAGONIST.jpeg` when present
 
-| Token | File | Who they are | Setting | Where they appear |
-| --- | --- | --- | --- | --- |
-| @YOU | YOU.jpeg | viewer stand-in | modern | hook, mechanisms, ending |
+| Token | File     | Who they are    | Setting | Where they appear        |
+| ----- | -------- | --------------- | ------- | ------------------------ |
+| @YOU  | YOU.jpeg | viewer stand-in | modern  | hook, mechanisms, ending |
 
 ---
 
 **YOU.jpeg**
-
 ```
+
 <one reference-sheet prompt>
 ```
 ```
@@ -167,12 +174,13 @@ Use one fenced block per cast entry. Tokens are one ALL-CAPS ASCII word. Cast si
 # Visual plan - <Video Title>
 
 Visual style: HumanPrice current
+Master brand: Toss blue #2E77C4
 Chapter colors: <olive, terracotta, one extension>
 Recurring motif: <one concrete economic object>
 
-| Beat | Time | Meaning | Register | Shot | Tier | Asset | Plate | Source | Delta | Motif | Text |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| B001 | [0:00] | viewer faces a tip screen | STORY | pov | ATMOSPHERIC | PLATE | P001 | - | - | receipt | - |
+| Beat | Time   | Meaning                   | Register | Shot | Tier        | Asset | Plate | Source | Delta | Motif   | Text |
+| ---- | ------ | ------------------------- | -------- | ---- | ----------- | ----- | ----- | ------ | ----- | ------- | ---- |
+| B001 | [0:00] | viewer faces a tip screen | STORY    | pov  | ATMOSPHERIC | PLATE | P001  | -      | -     | receipt | -    |
 ```
 
 Enums:
@@ -205,8 +213,9 @@ one second to prevent overwrite. Scene filenames replace `:` with `-`.
 ## `prompts/thumbnail-prompts.md`
 
 Exactly five complete prompt lines separated by exactly one blank line. No header, labels,
-attachment instructions, or commentary. The lines map to `thumbnail-1.jpg` through
-`thumbnail-5.jpg`.
+separate attachment-instruction lines, or commentary. Every prompt line includes the
+canonical Image 1 asset-binding sentence required by `.agents/skills/thumbnail/SKILL.md`.
+The lines map to `thumbnail-1.jpg` through `thumbnail-5.jpg`.
 
 ## `outputs/metadata.md`
 
@@ -214,20 +223,20 @@ attachment instructions, or commentary. The lines map to `thumbnail-1.jpg` throu
 # Metadata - <Video Title>
 
 ## Title
-
 ```
+
 <primary title>
 ```
 
 ### All five title variants
 
-| Slot | Formula | Title |
-| --- | --- | --- |
-| A | The Economics of [Behavior] | ... |
-| B | The Economics of [Behavior]: Why [Contradiction] | ... |
-| C | The Hidden Cost of [Behavior] | ... |
-| D | Who Really Profits When You [Behavior]? | ... |
-| E | Verified exact-number variant | ... or N/A |
+| Slot | Formula                                          | Title      |
+| ---- | ------------------------------------------------ | ---------- |
+| A    | The Economics of [Behavior]                      | ...        |
+| B    | The Economics of [Behavior]: Why [Contradiction] | ...        |
+| C    | The Hidden Cost of [Behavior]                    | ...        |
+| D    | Who Really Profits When You [Behavior]?          | ...        |
+| E    | Verified exact-number variant                    | ... or N/A |
 
 ## Description
 
@@ -248,7 +257,9 @@ M:SS  <chapter>
 ```
 <25 to 40 comma-separated tags>
 ```
+
 ```
 
 Use 4 to 6 chapters and 12 to 20 hashtags. Exact-number title slot E may be `N/A` when the
 research brief does not support one.
+```

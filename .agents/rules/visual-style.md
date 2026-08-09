@@ -14,22 +14,28 @@ Use this exact style string in every image prompt:
 
 Use this exact generation string in every image prompt:
 
-`match the attached character reference exactly, preserve the named plate composition for variants, keep olive and terracotta reserved for HumanPrice brand signals, no photorealism, no 3D render, no CGI, no realistic faces, no anime style`
+`match the attached character reference exactly, preserve the named plate composition for variants, keep saturated Toss blue reserved for the recurring protagonist or one semantic diagram signal, use olive and terracotta only for HumanPrice economic meaning, no photorealism, no 3D render, no CGI, no realistic faces, no anime style`
 
 The style string and generation string must appear verbatim. The scripts in
 `.agents/bin/style-strings.sh` expose the canonical copies.
 
 ## Palette
 
-- Olive green `#6F7D3C`: channel identity, choices, systems, and positive emphasis.
-- Terracotta `#C86B3C`: prices, friction, urgency, and human cost.
+- Toss blue `#2E77C4`: permanent master brand color across every channel, recurring
+  protagonist, trust, and one important diagram signal.
+- Olive green `#6F7D3C`: HumanPrice choices, systems, and positive economic emphasis.
+- Terracotta `#C86B3C`: HumanPrice prices, friction, urgency, and human cost.
 - Warm cream `#F5EBD8`: default ground and breathing space.
 - Charcoal `#252522`: outlines, type-like marks, and structural contrast.
 - Muted gold `#D5A84B`: money and value.
 - Dusty teal `#4F8580` and muted blue `#6883A3`: supporting information only.
 - Muted red `#B84F43`: loss, warning, or negative movement only.
 
-Olive and terracotta are not generic decoration. Reserve them for the argument.
+Toss blue is the cross-channel visual-style anchor. Use it prominently in recurring
+characters, scene accents, diagrams, and thumbnail focal points, but do not turn generic
+crowds or whole backgrounds uniformly blue. Olive and terracotta are HumanPrice semantic
+accents, not replacements for the master style color. Logo and banner design are separate
+from this rule and do not need to be regenerated when a channel adopts the style.
 
 ## Surface families
 

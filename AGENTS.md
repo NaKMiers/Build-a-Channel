@@ -33,6 +33,7 @@ wrappers only. `CLAUDE.md` imports this file as `@AGENTS.md`.
 /research    research/research-brief.md
 /script      script_<short_slug>.md, 1,250 to 1,750 words
 /transcript  transcribes/transcript.md from recorded narration
+/caption     outputs/captions/english.srt, spanish.srt, japanese.srt, chinese.srt, hindi.srt
 /cast        prompts/character-prompts.md
 /metadata    outputs/metadata.md
 /scenes      prompts/visual-plan.md + prompts/image-prompts.md
@@ -40,7 +41,8 @@ wrappers only. `CLAUDE.md` imports this file as `@AGENTS.md`.
 /check       read-only validation, runnable at any point
 ```
 
-After `/script`, `/transcript`, `/cast`, and `/metadata` can proceed independently.
+After `/script`, `/transcript`, `/cast`, and `/metadata` can proceed independently. `/caption`
+needs the completed transcript.
 `/scenes` needs transcript plus cast. `/thumbnail` needs the script, research brief, and
 cast.
 
@@ -59,6 +61,7 @@ Supporting skills:
 - Sources, evidence brief, fact-checking, claim validation -> `/research`
 - Narration or episode script -> `/script`
 - Audio timestamps or subtitles -> `/transcript`
+- Captions, subtitle translations, or multilingual SRT files -> `/caption`
 - Characters, cast, or reference sheets -> `/cast`
 - Scene prompts or prompts for every timestamp -> `/scenes`
 - Titles, description, chapters, hashtags, tags, SEO -> `/metadata`
