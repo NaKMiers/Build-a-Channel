@@ -1,6 +1,6 @@
 ---
 name: scene-polish
-description: Safely check, rename, move, and verify TossExplains scene images against image-prompts.md timestamps. Use when the user asks to manage scene-image files, timestamp names, range folders, or scene-image validation.
+description: Safely check, rename, move, and verify HumanPrice scene images against image-prompts.md timestamps. Use for scene-image files, timestamp names, range folders, renaming, moves, or scene-image validation.
 ---
 
 # scene-polish

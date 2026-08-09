@@ -70,7 +70,7 @@ FONT_BOLD_CANDIDATES = [
 ] + FONT_CANDIDATES
 
 FFMPEG_WHEEL = "imageio-ffmpeg"
-CACHE_DIR = os.path.expanduser("~/.cache/tossexplains-ffmpeg")
+CACHE_DIR = os.path.expanduser("~/.cache/humanprice-ffmpeg")
 
 
 def die(msg, code=2):

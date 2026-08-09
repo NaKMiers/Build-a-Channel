@@ -1,6 +1,6 @@
 ---
 name: video-swipe
-description: Turn one competitor YouTube video into a swipe-file study under research/videos-swipe/<slug>/, with every distinct frame extracted, contact sheets, frame-index.csv, and a Vietnamese visual-analysis.md. Requires the YouTube link plus the video file downloaded from that same link, and refuses to run if the file is not that video. Use when the user says "video-swipe", "phan tich video", "extract frame", "analyze this video", or gives a YouTube link plus a local video file.
+description: Turn one competitor YouTube video into a swipe-file study under its own research folder, with every distinct frame extracted, contact sheets, frame-index.csv, and a Vietnamese visual-analysis.md. Requires the YouTube link plus the matching downloaded video file. Use for video swipe studies, frame extraction, competitor visual analysis, or a YouTube link paired with a local video.
 allowed-tools:
   - Bash
   - Read
@@ -30,7 +30,7 @@ Two artifacts already exist in this shape and are the reference for everything b
   `visual-analysis.md` is Vietnamese with diacritics. Everything else stays ASCII, and the
   no-em-dash rule still applies here.
 - `.agents/rules/visual-style.md` and `.agents/rules/channel-dna.md` - needed for the two
-  closing sections of the analysis, which say what TossExplains can and cannot borrow.
+  closing sections of the analysis, which say what HumanPrice can and cannot borrow.
 - `.agents/skills/video-swipe/references/memory.md`
 - At least the section skeleton of one existing `visual-analysis.md`.
 
@@ -258,9 +258,9 @@ Required sections, in this order:
    yourself, not a style opinion. Both existing analyses caught a real arithmetic or
    sourcing problem here. Also state plainly which parts of the render cannot be copied
    because `.agents/rules/visual-style.md` forbids them.
-9. `## Cách áp dụng cho TossExplains` - concrete and inside the style lock: mode
+9. `## Cách áp dụng cho HumanPrice` - concrete and inside the style lock: mode
    definitions, beat targets per section, and the techniques that survive flat colour.
-10. `## Checklist review cho mỗi video TossExplains tiếp theo` - one line per checkable item.
+10. `## Checklist review cho mỗi video HumanPrice tiếp theo` - one line per checkable item.
 11. `## Thứ tự xem bộ frame` - the contact-sheet table the tool printed.
 
 Rules for the body:
@@ -270,7 +270,7 @@ Rules for the body:
   opinion, and a link that does not resolve is worse.
 - Quote on-screen text exactly as it appears, including capitals.
 - Numbers come from the tool. Never round differently in two places.
-- Name mechanisms in a way that transfers to a TossExplains scene prompt. "Chữ luôn nằm
+- Name mechanisms in a way that transfers to a HumanPrice scene prompt. "Chữ luôn nằm
   trên thẻ trắng" is usable; "bố cục đẹp" is not.
 - Say what the video does badly too, with evidence.
 
@@ -295,7 +295,7 @@ link means the frame number and the timestamp disagree and the citation points a
 
 Give the verification verdict, the candidate count and how many were dropped with the
 reason, the frame and sheet counts, the three or four findings that matter most for the
-next TossExplains video, and anything the video gets wrong. Then:
+next HumanPrice video, and anything the video gets wrong. Then:
 
 > Swipe study saved to `research/videos-swipe/<slug>/`.
 >
@@ -317,7 +317,7 @@ next TossExplains video, and anything the video gets wrong. Then:
 - Never commit the video file. `*.mp4` is gitignored on purpose. Frames are committed:
   around 150 KB each, so a 12 minute video adds roughly 50 MB. Say that number in the
   report so the user can object before it lands in git.
-- Never copy the competitor's rendering into a TossExplains prompt. The four verbatim
+- Never copy the competitor's rendering into a HumanPrice prompt. The verbatim
   strings in `.agents/rules/visual-style.md` win over anything admired in a swipe video.
 - Never claim a study is complete while any candidate went unviewed.
 
@@ -326,4 +326,4 @@ next TossExplains video, and anything the video gets wrong. Then:
 Read `.agents/skills/video-swipe/references/memory.md` at the start of every run. Append
 when a channel needs a different scene threshold, when a downloader's file naming defeats
 or helps verification, when a new mode vocabulary is needed for a different visual style,
-or when a pacing target proves itself on a published TossExplains video.
+or when a pacing target proves itself on a published HumanPrice video.

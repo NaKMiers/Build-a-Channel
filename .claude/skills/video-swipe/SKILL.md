@@ -1,6 +1,6 @@
 ---
 name: video-swipe
-description: Turn one competitor YouTube video into a swipe-file study under research/videos-swipe/<slug>/, with every distinct frame extracted, contact sheets, frame-index.csv, and a Vietnamese visual-analysis.md. Requires the YouTube link plus the video file downloaded from that same link, and refuses to run if the file is not that video. Use when the user says "video-swipe", "phan tich video", "extract frame", "analyze this video", or gives a YouTube link plus a local video file.
+description: Turn one competitor YouTube video into a swipe-file study under its own research folder, with every distinct frame extracted, contact sheets, frame-index.csv, and a Vietnamese visual-analysis.md. Requires the YouTube link plus the matching downloaded video file. Use for video swipe studies, frame extraction, competitor visual analysis, or a YouTube link paired with a local video.
 ---
 
 # Video Swipe (Claude wrapper)

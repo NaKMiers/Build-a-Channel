@@ -1,284 +1,58 @@
-# Thumbnail rules
+# HumanPrice Thumbnail Rules
 
-Canonical operational rules for TossExplains thumbnail concepts. Read this file and
-`.agents/skills/thumbnail/references/style-spec.json` before writing any thumbnail prompt.
+Read this file before writing thumbnail concepts or prompts.
 
-The style specification is self-contained. Never require competitor thumbnails, research
-images, or external style references. Attach only the project character sheets used by a
-prompt.
+## Core promise
 
-## A. Thumbnail-only rendering
+The thumbnail must show one human decision, one economic object, and one contradiction.
+It should make the viewer feel that an ordinary behavior has a price they have not seen.
 
-Video scene prompts remain locked to the flat doodle style in `visual-style.md`. Thumbnails
-use a separate rendering system because they must compete at feed size:
+## Composition
 
-- Keep the attached TossExplains characters recognizable and faithful to their sheets.
-- Draw characters as expressive 2D doodles with bold black outlines and slightly imperfect
-  hand-drawn linework.
-- Render the environment as a polished painterly cartoon with cinematic depth.
-- Use controlled gradients, soft shadows, atmospheric haze, painted texture, and warm light
-  spill when they improve depth and focus.
-- Never use photorealistic people, 3D rendering, anime, or generic stock illustration.
+- Use one readable face or body reaction as the emotional anchor.
+- Use one dominant economic object such as a receipt, price tag, bill, phone, cart, coin,
+  house, or meter.
+- Build a single visual conflict. Do not summarize the whole video.
+- Keep the focal subjects large enough for a phone screen.
+- Use foreground, midground, and background only when each layer adds meaning.
+- Reserve clean negative space for optional copy.
 
-Do not add the scene STYLE ANCHOR or STYLE LOCK to a thumbnail prompt. They prohibit the
-lighting and depth this thumbnail-only style requires.
+## Copy
 
-## B. Headline
+- Zero to four words, with two or three preferred.
+- Do not repeat the title.
+- Use a concrete contradiction, price, or consequence.
+- Exact numbers are allowed only when the research brief clears them for title or
+  thumbnail use.
 
-- Use 1 to 4 words. Prefer 2 to 3.
-- Use one straight line across the top whenever possible.
-- Use uppercase heavy rounded sans-serif lettering.
-- Use saturated golden yellow `#FFD900`, a very thick smooth black `#050505` outline, and a
-  soft black shadow.
-- Let the headline occupy roughly 85 to 94 percent of the canvas width.
-- Integrate the headline directly into the illustrated environment. Treat it as part of the
-  same full-frame composition, not a separate graphic layer.
-- Reserve the top 22 percent for readable local contrast inside the same continuous scene.
-  Continue the environment, atmospheric depth, and lighting behind, around, and below the
-  letters.
-- Allow one or two low-contrast environmental forms, such as haze, smoke, mountains, walls,
-  branches, or machinery, to rise behind or between the letters without obscuring them.
-- Never create a separate text band, header strip, banner, rectangle, solid-color panel, empty
-  bar, border, or hard horizontal division.
-- Render no other text.
+## Color
 
-The headline is a second hook, not a shortened title. It may be a question or an extremely
-short statement. Prefer one of these functions:
+Olive `#6F7D3C` and terracotta `#C86B3C` carry brand recognition. Cream and charcoal
+provide structure. Gold signals money. Red is reserved for loss, warning, or negation.
 
-- danger or consequence
-- scarcity or time pressure
-- visible contradiction
-- social exposure or discovery
-- shocking or forbidden behavior
-- an urgent command tied to a fragile object or action
-- unresolved outcome
-- one physical mistake
-- surprising behavior
+## Five concept angles
 
-Connect the words to something visible in the frame. Avoid abstract jargon and complete
-explanations.
+Create five distinct concepts based on:
 
-### Headline-image contract
+1. the opening transaction;
+2. the unit economics;
+3. the behavioral mechanism;
+4. the hidden system or beneficiary;
+5. the final human price.
 
-Write one viewer question before composing the thumbnail. The headline and image must pursue
-that same question from two directions:
+Do not produce five cosmetic variations of one composition.
 
-- The headline asks, warns, commands, or predicts something involving a visible subject.
-- The image confirms the premise with physical evidence and makes the stakes legible.
-- The image withholds the decisive cause, identity, explanation, escape, or outcome.
-- The combined effect must create more curiosity than either element creates alone.
+## Evidence and honesty
 
-The image should answer enough of the headline to orient the viewer, then introduce one new
-piece of evidence that makes the unanswered part more urgent. If the headline can be swapped
-for an unrelated phrase without changing the image, reject the concept.
+- Every shown price, percentage, or claim must appear in `research/research-brief.md`.
+- Do not imply a causal claim stronger than the research supports.
+- Do not fabricate an app interface, brand mark, receipt, or legal notice.
+- Avoid shame-based or dehumanizing depictions of addiction, poverty, dating, or work.
 
-## C. One cinematic story
+## Generation controls
 
-Default to one full-frame story, not a split comparison:
-
-- Start from a specific event in the script, not merely its topic or theory.
-- Show the instant a character discovers the problem, one second before the consequence.
-- Use one protagonist, one visible physical problem, and 1 to 3 supporting subjects.
-- Make the main character roughly 45 to 60 percent of the frame height.
-- Let the environment span the full canvas while keeping the main action in the middle and
-  lower area. Do not crop the story into a panel beneath the headline.
-- Keep no more than two focal points.
-- Leave the bottom-right corner visually quiet for the duration badge.
-
-Use a split comparison only when the script contains a genuinely useful contrast in
-numbers, eras, temperatures, or states. Never force two split concepts into every set.
-
-Prefer literal script incidents with a clear subject, action, witness or threat, physical
-evidence, and imminent consequence. A concrete experiment or mechanism is valid when its
-action is instantly understandable. Use a metaphor only when no script event can carry the
-idea physically.
-
-Never use a lone neutral portrait, a generic social tableau, a theory label presented as the
-hook, a flat empty background, or several unrelated actions.
-
-## D. Emotion and character identity
-
-- Include `@YOU` in every thumbnail. Toss is the channel's recognition anchor, and a
-  thumbnail without the mascot is invalid. When the script moment belongs to another cast
-  member, place `@YOU` in the scene as the reacting witness or struggling participant
-  rather than dropping the mascot.
-- Attach only the sheets for the `@TOKENS` used in the prompt.
-- Preserve every attached character's head, hair, face geometry, proportions, clothing, and
-  recognizable design. Change only expression, pose, placement, and lighting.
-- Make one face emotionally dominant and readable at phone size.
-- Describe the eyes, eyebrows, mouth, hands, and body direction explicitly.
-- For sadness or worry, write: `eyebrows angled so the inner ends sit clearly higher than
-  the outer ends, worried and dismayed, not angry, not frowning`.
-- Give co-stars visible faces and distinct reactions.
-- Do not modify the mascot's body or identity.
-- Do not request an exact crowd count above five.
-- Exactly one figure may look directly at the viewer.
-
-## E. Atmospheric depth
-
-A thumbnail that reads as one flat plane dies at feed size. Every accepted thumbnail must
-declare three depth planes and the cues that separate them. The viewer registers depth in
-under a second, so the cues must be unmistakable.
-
-- **Foreground (1 to 3 shapes):** a cropped object edge, a silhouetted prop, a hand, a
-  shoulder, or a frame corner that overlaps the main subject. Foreground objects must be
-  darker or warmer than the main subject and at least partially out of focus. Foreground
-  gives the eye a place to enter the frame.
-- **Midground (the story):** the dominant face, the physical problem, and one supporting
-  subject. Midground is the sharpness peak. It carries the most detail, the highest light,
-  and the strongest color saturation.
-- **Background (atmosphere):** everything behind the midground. Lower contrast, lower
-  saturation, cooler value, and a softer edge than the midground. Distant landscape,
-  architecture, sky, or fog sits in this plane.
-
-Apply three depth cues at once, not one:
-
-- **Scale and overlap:** make a foreground object physically overlap the main subject.
-- **Atmospheric perspective:** the background plane drops in saturation by roughly 20 to
-  40 percent and cools in value by 1 to 2 steps. A distant mountain is not the same blue
-  as the air in front of it.
-- **Motivated occlusion:** a doorway, a branch, a window mullion, a falling object, a
-  blurred curtain, or a shoulder passes between the viewer and the main subject. The
-  occluder must be part of the scene, never a decoration.
-
-Reject a concept that has no foreground shape, no atmospheric falloff, or no occluder.
-A single midground subject on a soft gradient is still a flat composition.
-
-## F. Color and light blending
-
-The headline must feel painted onto the scene, never pasted onto it. Three rules enforce
-that:
-
-- **Palette continuity.** The scene must use one cool dominant family plus one warm
-  accent. The hero palette is deep navy, storm blue, charcoal, forest green, ice blue,
-  and earth brown. The warm accent is golden orange `#FF861C`, honey `#FFD15A`, or deep
-  ember `#D94824`. Mixing two cool families or two warm families looks dirty.
-- **Soft falloff.** Every warm light source lands on a face, a prop, or a hand with a
-  radial gradient that fades to the cool ambient over roughly 30 to 60 percent of the
-  subject radius. A hard-edged hotspot looks like a flashlight taped to the wall.
-- **Hue carry-through.** The environment, the headline area, and the focal light all
-  share the same hue gradient. The dark area behind the headline is the same blue
-  family as the wall behind the chair, just darker. A monochrome background that
-  switches color around the headline breaks the painted-on illusion.
-
-The headline integration depends on this blending. A scene that uses three depth
-planes and a continuous palette reads as one composed painting even at feed size.
-
-### F.1 Blending checks
-
-Reject a concept that fails any of these:
-
-- The gradient behind the headline, the gradient behind the main face, and the gradient
-  behind the supporting subject are three different palettes.
-- The foreground, midground, and background use three different value temperatures.
-- The warm light spills onto a face but the surrounding wall is a flat ungraded fill.
-- The headline area is darker than the headline support area below it and the value
-  jump is visible as a hard line.
-
-## G. Headline curiosity power
-
-The headline is a click trigger, not a label. Five accepted project 4 headlines
-(`WHERE DID IT GO?`, `WHY AM I HERE?`, `IS IT FRESH?`, `WHICH ONE VANISHES?`,
-`500 PHOTOS. NOTHING.`) all share three traits. Test every headline against them before
-it goes into a prompt.
-
-- **It names a specific visible thing.** A clock, a doorway, a track, a photo, a face.
-  The word must point to a noun the viewer can already see in the image.
-- **It withholds an answer.** The headline asks what, why, where, which, or how, and the
-  image does not answer. `WHERE DID IT GO?` works because the calendar page is streaming
-  away. `500 PHOTOS. NOTHING.` works because the camera is erupting photos but the
-  vivid memory is still buried.
-- **It carries tone.** Question, alarm, command, or contradiction. Not a summary of the
-  title.
-
-Reject a headline that:
-
-- Restates the video title in a different wording.
-- Is a moral, a piece of advice, or a complete takeaway.
-- Could be swapped for an unrelated phrase without changing the scene.
-- Uses abstract jargon, theory label, or category name.
-- Names something invisible or impossible to depict.
-
-When choosing between candidates, rank by how fast the question forms in the viewer's
-head. A viewer who understands the question in under half a second is a viewer who
-clicks.
-
-## H. Environment, color, and light
-
-Build a real place around the story:
-
-- Use a foreground, midground, and background.
-- Keep the main face, physical problem, and important animal or object sharpest.
-- Use deep navy, storm blue, charcoal, forest green, ice blue, and earth brown as the
-  dominant environment families.
-- Use one warm orange or golden visible light source.
-- Illuminate the main face clearly.
-- Keep distant colors quieter and nonessential corners darker.
-- Keep faces, tools, and bright highlights away from the headline, but carry low-contrast
-  environmental forms and the same scene lighting behind it.
-
-The preferred formula is a cool dark environment plus a concentrated warm focal light. A
-bright setting is allowed when the script requires it, but the headline still needs a dark
-quiet upper portion of the same continuous scene.
-
-## I. Packaging
-
-- Render at `1280x720`, 16:9.
-- Add the logo later in an editor, small at bottom-left. Never ask the model to draw it.
-- Keep the bottom-right corner quiet.
-- If the model garbles the headline, generate the art without text and add the headline in
-  an editor.
-- Test the result at 120 pixels wide.
-
-## Concept diversity
-
-When writing five prompts, use five different script moments. Prefer:
-
-1. the opening physical situation
-2. the named experiment or mechanism made concrete
-3. the ancestral or anthropological scene
-4. a modern-versus-ancestral contrast
-5. the strongest number, consequence, or counterintuitive fact
-
-Do not make five camera-angle variants of one idea.
-
-## Single-scene prompt template
-
-Fill every bracketed slot. The generated prompt is one unbroken line.
-
-```text
-Create a beautiful, high-impact YouTube thumbnail illustration in 16:9 format, 1280x720. Use the attached character sheets as strict identity references for [TOKENS]. Preserve their exact head shapes, hair, faces, proportions, clothing, colors, and recognizable designs while changing only their expressions, poses, lighting, and placement. Render the exact headline "[HEADLINE]" in one straight line across the top, using huge uppercase rounded golden-yellow letters with a very thick smooth black outline and a soft black shadow. Make the letters occupy approximately [85 TO 94] percent of the canvas width. Integrate the headline directly into the illustrated environment so the typography and artwork feel like one continuous composition. Reserve the top 22 percent for headline readability inside that same continuous scene, but do not create a separate text band, header strip, banner, rectangle, solid-color panel, empty bar, border, or hard horizontal division. Continue the same environment, atmospheric depth, and lighting uninterrupted behind, around, and below the letters. Allow one or two low-contrast environmental forms to rise behind or between the letters without covering them. Show [MAIN TOKEN AND ACTION] large in the [POSITION], experiencing extreme [EMOTION] because of [VISIBLE PHYSICAL PROBLEM]. Capture the exact moment the problem is discovered, one second before the consequence, with the outcome unresolved. [EXPLICIT EYES, EYEBROWS, MOUTH, HANDS, AND BODY POSE]. Include [SUPPORTING TOKENS, ANIMAL, OBJECT, OR THREAT] to create conflict, danger, scale, or emotional contrast. Set the scene in [SETTING FROM SCRIPT], using [FOREGROUND], [MIDGROUND], and [BACKGROUND] to create cinematic depth. Place a real foreground shape (a cropped edge, a hand, a shoulder, a prop, or a doorway frame) that overlaps the main subject from in front and is darker or warmer than it. Drop the background plane 20 to 40 percent in saturation and 1 to 2 steps in value below the midground, with atmospheric haze or falloff where the script permits. Carry one palette continuity (deep navy, storm blue, charcoal, forest green, ice blue, or earth brown) through the headline area, the midground, and the background. Use a cool dark palette of deep navy, storm blue, charcoal, forest green, ice blue, and earth brown, with one concentrated warm orange or golden visible light source illuminating the main face and problem. Keep the background atmospheric but subordinate to the faces. The visual hierarchy must be headline first, main emotional face second, visible problem third, supporting subject fourth, and environment last. Use expressive doodle-like characters with bold black outlines and slightly imperfect hand-drawn linework inside a richly painted cinematic 2D cartoon environment with atmospheric depth, controlled gradients, soft shadows, painted texture, cohesive dramatic lighting, beautiful color grading, and strong mobile readability. Exactly one figure looks directly at the viewer. Leave the bottom-right corner visually quiet for the YouTube duration badge. Spell "[HEADLINE]" exactly and render no other text. No logos, watermarks, detached headline panels, unnecessary arrows, extra limbs, duplicated faces, weak expressions, tiny subjects, unrelated actions, photorealistic people, 3D rendering, anime styling, generic stock illustration, flat lighting, or empty background.
-```
-
-## Split comparison template
-
-Use only for a real comparison. The generated prompt is one unbroken line.
-
-```text
-Create a beautiful, high-impact YouTube thumbnail illustration in 16:9 format, 1280x720. Use the attached character sheets as strict identity references for [TOKENS]. Preserve their exact designs while changing only expressions, poses, lighting, and placement. Divide the story into two clearly readable halves with a strong central separation created by composition and lighting, not a decorative border. Render the exact headline "[HEADLINE]" in one straight line across the top, using huge uppercase rounded golden-yellow letters with a very thick smooth black outline and a soft black shadow. Integrate the headline directly into the illustrated environment so the typography and artwork feel like one continuous composition across both halves. Reserve the top 22 percent for headline readability inside that same continuous scene, but do not create a separate text band, header strip, banner, rectangle, solid-color panel, empty bar, border, or hard horizontal division. Continue the environments, atmospheric depth, and lighting uninterrupted behind, around, and below the letters. Allow one or two low-contrast environmental forms to rise behind or between the letters without covering them. On the left, show [FIRST STATE WITH A VISIBLE NUMBER, ERA, OR CONDITION]. On the right, show [SECOND STATE WITH A VISIBLE NUMBER, ERA, OR CONDITION]. Make the contrast understandable without the video title. Give each visible character a readable face and reaction, with one emotionally dominant character looking directly at the viewer. Use a cool dark palette with one concentrated warm orange or golden visible light source and a richly painted cinematic 2D cartoon environment with atmospheric depth, controlled gradients, soft shadows, painted texture, bold black doodle outlines, and strong mobile readability. Leave the bottom-right corner visually quiet for the YouTube duration badge. Spell "[HEADLINE]" exactly and render no other text beyond the essential comparison numerals or units. No logos, watermarks, detached headline panels, unnecessary arrows, extra limbs, duplicated faces, weak expressions, tiny subjects, unrelated actions, photorealistic people, 3D rendering, anime styling, generic stock illustration, flat lighting, or empty background.
-```
-
-## Rejection gate
-
-Reject and rewrite a concept when any answer is no:
-
-1. Is the headline four words or fewer?
-2. Does the headline add information instead of repeating the title?
-3. Does the scene depict a specific event, action, object, relationship, or consequence from
-   the script?
-4. Do the headline and image pursue one shared viewer question?
-5. Does the image partially answer the headline with visible physical evidence?
-6. Is a decisive cause, explanation, identity, escape, or outcome still withheld?
-7. Is the physical problem visible?
-8. Is one emotion obvious in half a second?
-9. Are there no more than two focal points?
-10. Is the outcome unresolved one beat before the consequence?
-11. Would changing the headline require changing the scene?
-12. Is the headline readable inside the same continuous scene, with no detached panel?
-13. Are only project cast sheets required?
-14. Is the bottom-right corner quiet?
-15. Will the design still read at 120 pixels wide?
-16. Does the scene name three depth planes and one foreground overlap?
-17. Is the background plane cooler and lower in saturation than the midground?
-18. Do the headline area, the midground, and the background share one hue gradient?
-19. Does the headline name a specific visible thing, withhold an answer, and carry tone?
+- At least one concept should use `@YOU`; another may use the strongest topic-specific
+  cast member when that creates a clearer story.
+- Every prompt must be self-contained and include the exact style and generation strings
+  from `visual-style.md`.
+- No photorealism, 3D render, CGI, realistic faces, anime, logos, watermark, or tiny text.

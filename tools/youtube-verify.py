@@ -59,7 +59,7 @@ import urllib.request
 
 ID_RE = r"[A-Za-z0-9_-]{11}"
 DURATION_TOLERANCE = 2.0   # seconds. Container duration vs the reported length.
-CACHE_DIR = os.path.expanduser("~/.cache/tossexplains-ffmpeg")
+CACHE_DIR = os.path.expanduser("~/.cache/humanprice-ffmpeg")
 OEMBED = "https://www.youtube.com/oembed"
 UA = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) "
       "Chrome/124.0 Safari/537.36")

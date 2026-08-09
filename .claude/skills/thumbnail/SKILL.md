@@ -1,6 +1,6 @@
 ---
 name: thumbnail
-description: Create self-contained cinematic TossExplains thumbnail prompts from a finished script and cast. Supports one or more copyable chat prompts and the default five-prompt prompts/thumbnail-prompts.md workflow. Use when the user asks for a thumbnail, thumbnail prompt, thumbnail concept, alternate thumbnail, or YouTube packaging image.
+description: Create five self-contained HumanPrice thumbnail prompts from a finished script, research brief, and cast. Use for thumbnails, thumbnail concepts, cover art prompts, click-through packaging, or A/B concepts.
 ---
 
 # Thumbnail (Claude wrapper)

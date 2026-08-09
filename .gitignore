@@ -18,6 +18,7 @@ __pycache__/
 *.flac
 .gstack/
 .temp
+research
 
 # macOS
 .DS_Store

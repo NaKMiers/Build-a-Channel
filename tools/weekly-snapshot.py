@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Pull a weekly snapshot of TossExplains analytics.
+"""Pull a weekly snapshot of HumanPrice analytics.
 
 Reads YOUTUBE_API_KEY, YOUTUBE_REFRESH_TOKEN, YOUTUBE_CHANNEL_ID from .env
 the same way tools/youtube-api.py does. Pulls Data API stats and Analytics

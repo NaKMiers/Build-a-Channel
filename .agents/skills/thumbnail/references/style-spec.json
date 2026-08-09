@@ -1,278 +1,39 @@
 {
-  "name": "Cinematic Doodle Thumbnail",
-  "version": "1.2",
-  "self_contained": true,
-  "external_reference_images_required": false,
-  "purpose": "Create emotionally intense, highly readable YouTube thumbnails that preserve the TossExplains cast while using richer thumbnail-only environments, lighting, and depth.",
-  "canvas": {
-    "aspect_ratio": "16:9",
-    "width": 1280,
-    "height": 720,
-    "mobile_first": true,
-    "safe_margin_percent": 4
+  "channel": "HumanPrice",
+  "purpose": "Reveal the hidden economic price of ordinary human behavior through one readable contradiction.",
+  "canvas": "16:9 YouTube thumbnail",
+  "copy_words": {
+    "minimum": 0,
+    "preferred_maximum": 3,
+    "hard_maximum": 4
   },
-  "hierarchy": [
-    "headline",
-    "main emotional face",
-    "visible physical problem",
-    "supporting subject",
-    "environment"
+  "required_elements": [
+    "one readable human decision or reaction",
+    "one dominant economic object",
+    "one visual contradiction"
   ],
-  "headline": {
-    "word_count_minimum": 1,
-    "word_count_preferred": "2 to 3",
-    "word_count_maximum": 4,
-    "line_count_preferred": 1,
-    "case": "uppercase",
-    "position": "top center, integrated into the continuous illustrated scene",
-    "zone_height_percent": 22,
-    "width_percent_preferred": 90,
-    "baseline": "straight",
-    "font": "heavy rounded sans-serif",
-    "fill": "#FFD900",
-    "outline": "#050505",
-    "outline_weight": "very thick",
-    "shadow": "soft black",
-    "integration": {
-      "mode": "embedded in the same full-frame environment",
-      "background": "Continue the environment, atmosphere, and lighting behind, around, and below the letters.",
-      "allowed_overlap": "One or two low-contrast environmental forms may rise behind or between letters without obscuring them.",
-      "forbidden": [
-        "separate text band",
-        "header strip",
-        "banner",
-        "rectangular text panel",
-        "solid-color header block",
-        "empty top bar",
-        "hard horizontal division"
-      ]
-    },
-    "curiosity_power": {
-      "traits": [
-        "names a specific visible thing",
-        "withholds an answer the image cannot give",
-        "carries tone (question, alarm, command, or contradiction)"
-      ],
-      "hook_functions": [
-        "danger or consequence",
-        "scarcity or time pressure",
-        "visible contradiction",
-        "social exposure or discovery",
-        "forbidden or shocking behavior",
-        "urgent command tied to a fragile object or action",
-        "unresolved outcome",
-        "one physical mistake",
-        "surprising behavior"
-      ],
-      "rejection": [
-        "restates the video title",
-        "is a moral, takeaway, or complete explanation",
-        "could be swapped for an unrelated phrase without changing the scene",
-        "uses abstract jargon, theory label, or category name",
-        "names something invisible or impossible to depict"
-      ],
-      "speed_test": "A viewer who understands the question in under half a second is a viewer who clicks."
-    },
-    "rules": [
-      "Use the headline as a second hook, not a repetition of the video title.",
-      "Connect the hook to something visible in the frame.",
-      "Prefer danger, scarcity, contradiction, consequence, time pressure, or an unresolved outcome.",
-      "Create readability through local contrast inside the scene, never through a detached graphic panel.",
-      "Render no other text."
-    ]
+  "palette": {
+    "olive": "#6F7D3C",
+    "terracotta": "#C86B3C",
+    "cream": "#F5EBD8",
+    "charcoal": "#252522",
+    "gold": "#D5A84B",
+    "warning_red": "#B84F43"
   },
-  "layout": {
-    "default": "single cinematic story",
-    "story_zone": "full-frame continuous environment, with the main action in the middle and lower area",
-    "main_subject_frame_height_percent": "45 to 60",
-    "supporting_subject_count_preferred": "1 to 3",
-    "focal_point_count_maximum": 2,
-    "bottom_right": "visually quiet for the YouTube duration badge",
-    "split_comparison": {
-      "default": false,
-      "use_only_when": "The script contains a genuinely useful numeric, era, or state comparison."
-    }
-  },
-  "story": {
-    "core": "Show a frozen moment from an unresolved event, not a neutral portrait.",
-    "source": "Use a specific event, action, object, relationship, experiment, or consequence from the script. Prefer literal incidents over generic scenes or decorative metaphors.",
-    "curiosity_contract": {
-      "viewer_question": "Define one unanswered question before composing.",
-      "headline_role": "Ask, warn, command, or predict something involving a visible subject.",
-      "image_role": "Confirm the premise and stakes with physical evidence, then add one clue that makes the missing answer more urgent.",
-      "withhold": "Do not reveal the decisive cause, identity, explanation, escape, or outcome.",
-      "swap_test": "If an unrelated headline can replace the chosen headline without changing the scene, reject the concept."
-    },
-    "required": [
-      "protagonist",
-      "script-specific event",
-      "visible physical problem",
-      "extreme readable emotion",
-      "unresolved outcome",
-      "one shared question between headline and image",
-      "visible evidence that partially answers the headline",
-      "a decisive answer that remains hidden"
-    ],
-    "preferred_moments": [
-      "one second before the consequence",
-      "the instant the danger is discovered",
-      "the moment a resource is nearly lost",
-      "the moment a character realizes something is wrong",
-      "the moment two characters react differently"
-    ]
-  },
-  "characters": {
-    "identity": "Attach only the project character sheets used in the prompt and preserve them exactly.",
-    "main_face": "large enough for the eyes, brows, and mouth to read at phone size",
-    "emotion_strength": "extreme",
-    "emotion_devices": [
-      "wide directional eyes",
-      "strong eyebrow geometry",
-      "large readable mouth",
-      "clear body reaction",
-      "tears or sweat when justified"
-    ],
-    "group_rules": [
-      "Give every visible co-star a readable face and expression.",
-      "Give one character the dominant emotional reaction.",
-      "Do not request exact crowd counts above five.",
-      "Do not alter the mascot's anatomy or identity."
-    ]
-  },
-  "environment": {
-    "style": "richly painted cinematic 2D cartoon environment",
-    "depth_planes": {
-      "foreground": {
-        "count": "1 to 3 shapes",
-        "examples": ["cropped edge", "hand", "shoulder", "prop", "doorway frame"],
-        "treatment": "darker or warmer than the main subject, partial soft focus, overlaps the midground",
-        "purpose": "give the eye a place to enter the frame"
-      },
-      "midground": {
-        "contains": ["dominant face", "physical problem", "one supporting subject"],
-        "treatment": "sharpest, most detail, highest light, strongest saturation"
-      },
-      "background": {
-        "treatment": "20 to 40 percent lower saturation, 1 to 2 value steps cooler, softer edges",
-        "examples": ["distant landscape", "architecture", "sky", "haze", "fog"]
-      }
-    },
-    "depth_cues": [
-      "foreground shape overlapping the main subject",
-      "atmospheric perspective dropping saturation and value with distance",
-      "motivated occlusion by a doorway, branch, window mullion, shoulder, or falling object",
-      "size reduction across planes",
-      "localized sharpness on the midground",
-      "dark framing shapes at the edges"
-    ],
-    "atmosphere": {
-      "haze": "low-contrast distant forms rise behind the headline without obscuring it",
-      "falloff": "warm light spills onto a face or prop with a radial gradient that fades to the cool ambient over 30 to 60 percent of the subject radius",
-      "background_softness": "soft edges, no hard outlines on the most distant plane"
-    },
-    "palette_continuity": {
-      "rule": "The headline area, the midground, and the background share one hue gradient.",
-      "failure_mode": "Three different palettes across the three planes break the painted-on illusion.",
-      "prefer": "one cool dominant family + one warm accent carried through every plane"
-    },
-    "detail_priority": {
-      "high": [
-        "main face",
-        "physical problem",
-        "important animal or object"
-      ],
-      "medium": [
-        "supporting characters",
-        "nearby environment"
-      ],
-      "low": [
-        "distant landscape",
-        "nonessential objects"
-      ]
-    }
-  },
-  "color": {
-    "dominant_cool_palette": [
-      "#102133",
-      "#37546B",
-      "#A9D5EB",
-      "#20262B",
-      "#314A35"
-    ],
-    "earth_palette": [
-      "#4A2D1D",
-      "#765036",
-      "#A16F42"
-    ],
-    "warm_accents": [
-      "#FF861C",
-      "#FFD15A",
-      "#D94824"
-    ],
-    "formula": "Cool or dark environment, warm brown characters, yellow headline, and one concentrated warm focal light."
-  },
-  "lighting": {
-    "style": "cinematic and motivated by a visible source",
-    "ambient": "cool and dark",
-    "focal": "warm and concentrated",
-    "face": "clearly illuminated",
-    "corners": "quiet and darker than the focal area",
-    "allowed": [
-      "soft shadows",
-      "controlled gradients",
-      "painted texture",
-      "atmospheric haze",
-      "warm light spill"
-    ]
-  },
-  "rendering": {
-    "characters": "expressive 2D doodle characters with bold black outlines and slightly imperfect hand-drawn linework",
-    "environment": "polished painterly cartoon with cinematic depth and cohesive color grading",
-    "forbidden": [
-      "photorealistic people",
-      "3D rendering",
-      "anime",
-      "generic stock illustration",
-      "flat empty background",
-      "weak expressions",
-      "tiny main subjects",
-      "multiple unrelated actions",
-      "generic scene that could illustrate another video",
-      "abstract theory label as the hook",
-      "headline and image pursuing different questions",
-      "fully explained outcome",
-      "detached headline band",
-      "solid text panel",
-      "hard horizontal seam below the headline",
-      "extra text",
-      "logos",
-      "watermarks"
-    ]
-  },
-  "attachment_policy": {
-    "attach": "Only the character sheets for tokens used in the prompt.",
-    "do_not_attach": [
-      "competitor thumbnails",
-      "research thumbnails",
-      "style reference images"
-    ],
-    "logo": "Add the channel logo later in an editor, never ask the image model to draw it."
-  },
-  "quality_gate": [
-    "The headline is readable at 120 pixels wide.",
-    "The headline contains no more than four words.",
-    "The scene depicts a specific event, action, object, relationship, or consequence from the script.",
-    "The physical event is understandable without the video title.",
-    "The headline and image pursue one shared viewer question.",
-    "The image partially answers the headline with visible physical evidence.",
-    "The decisive explanation or outcome remains hidden.",
-    "Changing the headline would require changing the scene.",
-    "One emotional face dominates.",
-    "The outcome remains unresolved.",
-    "The headline is readable inside the same continuous illustrated scene.",
-    "No separate text band, header strip, or hard horizontal seam is present.",
-    "The cool-versus-warm contrast is obvious.",
-    "The mascot and cast identities match their attached sheets.",
-    "The bottom-right corner remains visually quiet."
+  "concept_angles": [
+    "opening transaction",
+    "unit economics",
+    "behavioral mechanism",
+    "hidden system",
+    "human price"
+  ],
+  "prohibited": [
+    "unsupported number",
+    "title repetition",
+    "logo or watermark",
+    "photorealism",
+    "3D render",
+    "literal coin mascot",
+    "tiny factual text"
   ]
 }

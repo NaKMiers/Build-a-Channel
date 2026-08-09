@@ -1,6 +1,6 @@
 ---
 name: transcript
-description: Turn a recorded TossExplains narration into transcribes/transcript.md, the timestamped [M:SS] cue list that the scenes skill consumes. Combines multi-part recordings into audios/full.mp3 first, then transcribes each part and merges onto that one timeline. Wraps tools/combine-audio.py, tools/audio-to-timestamps.py, and tools/srt-to-timestamps.py with the right paths and flags. Use when the user says "transcript", "timestamps", "align the audio", or has just recorded a voiceover.
+description: Turn a recorded HumanPrice narration into transcribes/transcript.md, the timestamped [M:SS] cue list consumed by the scenes skill. Combine multi-part recordings into audios/full.mp3, align each part, and merge them onto one timeline. Use for transcripts, timestamps, audio alignment, subtitles, or a newly recorded voiceover.
 allowed-tools:
   - Bash
   - Read
@@ -83,7 +83,8 @@ the durable fix is re-exporting every part at the same bitrate.
 
 **Sanity-check the part boundaries against the script before spending an API call.**
 Divide each part's word count by its duration. Every part should land near the same words
-per second, roughly 2.9 to 3.1 for this channel. A part that is well off means the script
+per second. The parts should be reasonably consistent with one another. A part that is
+well off means the script
 was split in the wrong place, and forced alignment against a mismatched script produces
 silently wrong timings, not an error.
 
@@ -91,20 +92,15 @@ silently wrong timings, not an error.
 
 ### Select the cue-density profile
 
-Projects 1 through 5 keep the V1 defaults when their transcript stage is redone. Project 6 and
-later use the tested V2 dense profile:
+HumanPrice uses one current dense profile:
 
 ```bash
 TS_PROFILE=(--pause 0.24 --max-dur 3.2 --min-words 2)
 ```
 
-The V2 profile was tested against Project 1's cached 11m30s word timings. It produced 316 cues,
-a 1.8 second median cue, and only two one-word cues, both intentional verdicts. That is 27.5
-generated cues per minute before the V2 plan adds CapCut-only beats, which brings the finished
-visual rhythm into the 28 to 32 target range without creating one-word junk.
-
-For a V1 project use `TS_PROFILE=()` instead. Add `"${TS_PROFILE[@]}"` to every
-`audio-to-timestamps.py` invocation below, including the final cache merge.
+This normally produces 22 to 32 cues per minute without creating one-word junk. Add
+`"${TS_PROFILE[@]}"` to every `audio-to-timestamps.py` invocation below, including the
+final cache merge.
 
 **Case A, audio plus script. The default.** Forced alignment via ElevenLabs, roughly
 $0.08 for a 12 minute video.
@@ -204,12 +200,10 @@ offsets were not applied.
 
 Interpret the line count:
 
-- **Fewer than 20 lines** means the transcript is incomplete. Tell the user exactly:
-  "This looks incomplete. A 10 to 14 minute video should have 80 to 120 timestamp lines."
-  Then stop.
-- **V1: around 230 lines of roughly 3 seconds** is normal for a 12 minute script.
-- **V2: around 300 to 330 lines with a 1.7 to 2.0 second median** is normal for a 12 minute
-  script. The exact number follows the narrator's real pauses.
+- **Fewer than 100 lines** for an 8 to 12 minute narration usually means the transcript
+  is incomplete. Compare the final cue with the true audio duration before stopping.
+- **About 180 to 320 lines** is normal for HumanPrice. The exact number follows the
+  narrator's real pauses and the episode's evidence density.
 - **More lines than the user wants to pay to illustrate**: re-cut for free from the cache
   rather than re-calling the API.
 

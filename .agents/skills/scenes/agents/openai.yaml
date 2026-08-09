@@ -1,4 +1,4 @@
 interface:
   display_name: "Scenes"
-  short_description: "One image prompt per transcript timestamp"
-  default_prompt: "Use $scenes to write an image prompt for every timestamp."
+  short_description: "Plan HumanPrice visuals for every timestamp"
+  default_prompt: "Use $scenes to plan and prompt every timestamp in this HumanPrice episode."

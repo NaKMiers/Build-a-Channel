@@ -1,4 +1,4 @@
 interface:
   display_name: "Script"
-  short_description: "Write the full 2nd-person narration script"
-  default_prompt: "Use $script to write the narration script for the chosen topic."
+  short_description: "Write a sourced 8 to 12 minute narration"
+  default_prompt: "Use $script to write this HumanPrice narration from its research brief."
