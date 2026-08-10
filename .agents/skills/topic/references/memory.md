@@ -13,6 +13,16 @@
 Do not treat a planned title as made. It may still be proposed when the user asks to start
 that specific launch episode.
 
+## Proposed titles
+
+| Title | Status |
+| --- | --- |
+| The Economics of Being Single: Why One Person Pays Two Prices | proposed, not selected |
+| The Economics of Free Shipping: Why Free Is the Most Expensive | selected, project 2 |
+| The Hidden Cost of Loyalty Programs | proposed, not selected |
+| The Economics of Waiting: Who Profits From Your Time in Line | proposed, not selected |
+| Who Really Profits When You Play a Free Game? | proposed, not selected |
+
 ## Durable lessons
 
 - A HumanPrice topic needs a transaction, an incentive map, a behavioral engine, and a

@@ -1,3 +1,6 @@
 # Research Memory
 
 - For US tipping episodes, keep the voluntary-tip definition, mandatory service-charge classification, and FLSA tip-credit rules separate. They answer different questions and vary by jurisdiction.
+- SEC EDGAR is reachable from bash via `curl` with a descriptive User-Agent, and the browse-edgar atom feed gives accession numbers. Strip tags from the 10-K HTML and grep the MD&A for the cost line. Use this instead of secondary summaries of filings, which routinely misattribute the fiscal year.
+- Several official sites refuse both WebFetch and sandbox curl. Census (census.gov, www2.census.gov) and FRED returned 403 or no route; ecfr.gov blocks WebFetch but its `api/renderer/v1/content/enhanced` endpoint answers curl; federalregister.gov redirects WebFetch to an unblock page, while the same document is readable at govinfo.gov under `content/pkg/FR-YYYY-MM-DD/html/<doc>.htm`. Springer and INFORMS article pages are JavaScript walls, so get bibliographic records and abstracts from ideas.repec.org.
+- When a filing reports a cost but no matching revenue line, say so explicitly rather than inventing a ratio. Cross-line ratios from one filing (cost versus a differently-scoped revenue segment) are INFERENCE, and the denominator mismatch belongs in the ledger row, not in a footnote.

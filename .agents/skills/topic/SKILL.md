@@ -64,6 +64,7 @@ audios/
 transcribes/
 prompts/
 outputs/
+scenes/
 ```
 
 Do not invent a script or research brief during scaffolding. Report every created path

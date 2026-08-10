@@ -59,3 +59,26 @@ Durable planning and prompt lessons for the current HumanPrice visual system.
 - Narrative build chains and Flow inheritance chains are different. A plan may have four to
   seven macro chains but still need a break before nearly every independent PLATE. Benchmark
   plate-break coverage, not chapter count.
+- Generate the plan and the prompts from one per-cue data table rather than authoring 280
+  prompt lines by hand. Author the creative fields per cue, meaning, register, shot, tier,
+  asset, delta, and the scene body, then render the repeated scaffolding, surface wording,
+  lighting, negative space, text policy, and both canonical strings, mechanically. The two
+  files cannot drift out of agreement, and the timestamp and narration text come straight
+  from the transcript instead of being retyped.
+- Write a non-plate's Source as the timestamp of the cue it builds on and resolve it to a
+  beat ID at render time. Hand-computed beat IDs break the moment a CAPCUT row is inserted
+  ahead of a generated beat, and the validator only checks that a source was seen earlier,
+  so a wrong-but-earlier ID passes silently while the plan describes the wrong lineage.
+
+## Simple-frame briefs trade plate count for per-cue fidelity
+
+A brief asking for simple frames that track the voiceover exactly pushes the plan toward
+holding one composition and changing a single readable element per cue. That raises CLEAN
+share and pushes new-PLATE share well below the thirty-five to forty-five percent review
+band, because most cues become one-step builds instead of fresh scenes. Both effects are
+real consequences of the instruction, not planning slack. State them in the plan's notes
+with the reasoning and name where variety could be bought back, rather than padding plates
+to satisfy the band or leaving the deviation unexplained.
+
+An ATMOSPHERIC beat is by definition the added environmental complexity such a brief asks
+to avoid, so zero ATMOSPHERIC is a legitimate reading of the ceiling rather than a gap.
