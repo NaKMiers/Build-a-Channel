@@ -100,15 +100,15 @@ Chapter palette: Coral #D96F5F, Olive #8FA35A, Dusty teal #67A6A3
 Style rules: `.agents/rules/mascot-toss.md` and `.agents/rules/visual-style.md`
 Mascot identity lock: `brand/MASCOT.jpeg`
 
-| Token | File | Who they are | Era / setting | Where they appear |
-| --- | --- | --- | --- | --- |
-| @YOU | YOU.jpeg | ... | ... | ... |
+| Token | File     | Who they are | Era / setting | Where they appear |
+| ----- | -------- | ------------ | ------------- | ----------------- |
+| @YOU  | YOU.jpeg | ...          | ...           | ...               |
 
 ---
 
 **YOU.jpeg**
-
 ```
+
 <full reference sheet prompt>
 ```
 ```
@@ -132,10 +132,10 @@ Style version: V2
 Chapter colors: <three V2 extension colors>
 Recurring motif: <one concrete object or shape>
 
-| Beat | Time | Meaning | Register | Shot | Tier | Asset | Plate | Source | Delta | Motif | Text |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| B001 | [0:00] | viewer isolated in a friendly crowd | STORY | wide | ATMOSPHERIC | PLATE | P001 | - | - | gap | FORTY PEOPLE |
-| B002 | [0:02] | the crowd stays warm while Toss goes cold | PORTRAIT | close | LAYERED | VARIANT | P001 | B001 | cool Toss only | gap | - |
+| Beat | Time   | Meaning                                   | Register | Shot  | Tier        | Asset   | Plate | Source | Delta          | Motif | Text         |
+| ---- | ------ | ----------------------------------------- | -------- | ----- | ----------- | ------- | ----- | ------ | -------------- | ----- | ------------ |
+| B001 | [0:00] | viewer isolated in a friendly crowd       | STORY    | wide  | ATMOSPHERIC | PLATE   | P001  | -      | -              | gap   | FORTY PEOPLE |
+| B002 | [0:02] | the crowd stays warm while Toss goes cold | PORTRAIT | close | LAYERED     | VARIANT | P001  | B001   | cool Toss only | gap   | -            |
 ```
 
 Rules:
@@ -232,9 +232,10 @@ section holds a fenced block so the text copies out without markdown bleeding in
 # Metadata - <Video Title>
 
 ## Title
-
 ```
+
 <one viral title under 70 characters>
+
 ```
 
 ### All five title variants
@@ -250,25 +251,30 @@ section holds a fenced block so the text copies out without markdown bleeding in
 ## Description
 
 ```
+
 <hook paragraph>
 
-Chapters:
-M:SS  <chapter title>
-M:SS  <chapter title>
+🗺️ Chapters:
+M:SS <chapter title>
+M:SS <chapter title>
 ...
 
-<call to action line>
+💡 <call to action line>
+
+📚 Sources:
+
+- <short reference> (<year>): <URL>
+- <short reference> (<year>): <URL>
+  ...
 
 #hashtag #hashtag #hashtag ...
+
 ```
 
 Chapters: 5 to 7 entries, each `M:SS` matching a transcript timestamp. Hashtags: 15 to 25.
-
-## Tags
-
-```
-<25 to 40 comma separated keywords on one line>
-```
+Citations live inside this block, after the call-to-action and before the hashtags, with a
+`Sources:` label. Emoji is contextual — pick icons that match the video's emotional register.
+Two fenced blocks total (Title and Description, then Tags).
 ```
 
 ## `audios/` and `scenes/` and `characters/` and `outputs/`
