@@ -1,4 +1,4 @@
 interface:
   display_name: "Metadata"
-  short_description: "Package HumanPrice titles and YouTube metadata"
-  default_prompt: "Use $metadata to package this HumanPrice episode for YouTube."
+  short_description: "Viral title, description, and SEO tags"
+  default_prompt: "Use $metadata to write the YouTube title, description, and tags."

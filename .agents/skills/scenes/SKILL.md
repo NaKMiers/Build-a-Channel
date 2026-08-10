@@ -1,6 +1,6 @@
 ---
 name: scenes
-description: Turn a timestamped HumanPrice transcript and locked cast into a visual plan plus one detailed image prompt per timestamp. Use for scenes, image prompts, visual planning, or prompts for every narration cue.
+description: Write one detailed text-to-image prompt for every timestamp in a TossExplains transcript, using the locked cast, into prompts/image-prompts.md. Use when the user says "scenes", "image prompts", "scene prompts", or "prompts for every timestamp".
 allowed-tools:
   - Bash
   - Read
@@ -12,269 +12,268 @@ allowed-tools:
 
 # scenes
 
-Creates the HumanPrice visual plan and the generation-ready prompt file. This is the
-largest text stage in the pipeline: one planned generated beat and one prompt for every
-timestamped transcript cue, plus optional edit-only beats in the visual plan.
+Stage 4 of the TossExplains pipeline, and the largest artifact: one generated prompt per
+transcript cue, typically 230 to 270 for V1 and 300 to 330 for V2, plus optional V2 CapCut-only
+beats in the visual plan.
 
 ## Read first
 
 - `.agents/rules/house-rules.md`
-- `.agents/rules/visual-style.md` - the whole file, including palette, surfaces,
-  density tiers, registers, frame grammar, pacing, and prohibited defaults
-- `.agents/rules/cast-identity.md`
+- `.agents/rules/visual-style.md` - **the whole file.** Both style versions, the current V2
+  render tiers, registers, shot grammar, palette, cadence, and the legacy V1 rules.
 - `.agents/rules/file-formats.md` - the `prompts/visual-plan.md` and
-  `prompts/image-prompts.md` contracts
-- `.agents/rules/image-generation.md` - the Google Flow chain and the `---` break
+  `prompts/image-prompts.md` sections
+- `.agents/rules/image-generation.md` - the chain workflow this file feeds, and the `---`
+  chain break it must carry
 - `.agents/skills/scenes/references/memory.md`
-- the selected project's `prompts/character-prompts.md`; its cast table is the only
-  legal source of `@TOKEN` handles
+- The project's `prompts/character-prompts.md` cast table. This is the only legal source
+  of `@` tokens.
 
-## Resolve one project and validate the gates
-
-Resolve exactly one `projects/<n>-<slug>/`. Never mix inputs from two projects.
+## Preconditions - both required
 
 ```bash
 P="projects/<n>-<slug>"
+wc -l "$P"/transcribes/transcript.md
+grep -oE '@[A-Z]+' "$P"/prompts/character-prompts.md | sort -u
+```
+
+- No transcript: stop, say to run `/transcript`.
+- No cast file: stop, say to run `/cast`. **Never invent a cast inline.** The whole point
+  of the cast system is that the sheet carries the design.
+- Transcript under 20 lines: stop and say "This looks incomplete. A normal 10 to 14 minute
+  TossExplains video should have hundreds of timestamp lines."
+
+## Step 1 - Inventory the transcript
+
+```bash
 T="$P/transcribes/transcript.md"
-C="$P/prompts/character-prompts.md"
-
-test -f "$T" && grep -cE '^\[[0-9]+:[0-5][0-9]\] .+' "$T"
-test -f "$C" && grep -oE '@[A-Z][A-Z0-9_]*' "$C" | sort -u
-grep -nvE '^\[[0-9]+:[0-5][0-9]\] .+' "$T"
-awk '{stamp=$1; gsub(/\[|\]/,"",stamp); split(stamp,a,":"); now=a[1]*60+a[2]
-      if(NR>1 && now<=prior) print NR ": non-increasing timestamp " $1
-      prior=now}' "$T"
+grep -c . "$T"                           # total cues
+awk '{print $1}' "$T" | sort | uniq -d   # duplicate timestamps
 ```
 
-Hard gates:
+Record the totals for the final chat report and mechanical verification.
 
-- No transcript: stop and say to run `/transcript`.
-- No cast file: stop and say to run `/cast`. Never invent a cast inline.
-- Any nonblank transcript line outside `[M:SS] narration`: stop and repair the
-  transcript stage first.
-- Fewer than 20 cues: stop and report that the transcript looks incomplete. A normal
-  8 to 12 minute HumanPrice recording usually has 180 to 320 cues, but the recording
-  controls the final count.
-- Duplicate or decreasing timestamps: stop and run `/transcript`; scene prompts must copy
-  the transcript timestamps exactly and scene filenames cannot safely collide.
-- If the cast uses `@YOU`, require `brand/PROTAGONIST.jpeg`. Stop if it is missing.
+## Style version selection
 
-Inventory the source before planning:
+Source `.agents/bin/style-strings.sh` before planning.
 
-```bash
-wc -l "$T"
-awk '{print $1}' "$T" | sort | uniq -d
-grep -oE '@[A-Z][A-Z0-9_]*' "$C" | sort -u
-```
+- Projects 1 through 5 are frozen V1. A redo keeps V1 even if its prompt file is missing.
+- Project 6 and later use V2.
+- If an existing `character-prompts.md`, `visual-plan.md`, or `image-prompts.md` explicitly
+  identifies a version, keep that version when redoing only this stage.
+- Never mix V1 and V2 anchors or locks inside one project.
 
-Record the cue count and cast handles for the final report.
+V1 follows the legacy path below and does not receive `visual-plan.md`. V2 completes the lean
+planning pass before writing prompt prose.
 
-## Load the current style strings
+## V2 lean planning pass
 
-```bash
-source .agents/bin/style-strings.sh
-test -n "$STYLE_STRING" && test -n "$GENERATION_STRING"
-```
+Write `prompts/visual-plan.md` in the exact format from `file-formats.md`.
 
-HumanPrice has one active visual system: `HumanPrice current`. Do not introduce legacy
-visual-version names, retired channel identities, or retired character systems. Never
-hard-code a second copy of either canonical string in this skill or in a validator.
+1. Copy the three chapter colors from the V2 cast header. Choose one recurring concrete motif.
+2. Create one generated beat for every transcript cue. Extra CapCut-only beats may subdivide a
+   long cue or create a meaningful diagram build without adding a generation.
+3. Assign register, shot, tier, asset type, plate, source, delta, motif, and text before writing
+   any full image prompt.
+4. Target 35 to 45 percent new `PLATE` rows, 30 to 40 percent `VARIANT`, 10 to 15 percent
+   `CAPCUT`, 5 to 10 percent `CALLBACK`, and 5 to 10 percent text or diagram update beats.
+5. Keep `ATMOSPHERIC` at or below 10 percent. Use `CLEAN` near 40 percent and `LAYERED` near
+   50 percent.
+6. Rotate registers after two or three beats. A longer run is legal only when every beat shares
+   one plate and forms a valid build.
+7. In each 30 second block, plan at least four shot tasks from the V2 shot grammar.
+8. Every variant points backward to an earlier source beat and names exactly one meaningful
+   delta. Every callback points backward and states the changed meaning.
+9. Add CapCut-only events where required so no ordinary unchanged hold exceeds 4 seconds and
+   whole-video rhythm reaches 28 to 32 meaningful visual states per minute.
+10. Plan 5 to 8 build chains and an ending callback to the hook for a normal 10 to 12 minute
+    episode.
+11. Mark where the generation chain gets cut. A cut belongs at a chapter or act boundary and at
+    any hard cut in place, era, cast, or surface register. It may only land on a `PLATE` row,
+    never on a `VARIANT`, a `CALLBACK`, or a hold, and never between a variant and its source.
+    These become the `---` lines in `image-prompts.md`. See prompt rule 16.
 
-## Step 1 - Read the transcript as an episode
+## The prompt rules
 
-Read the whole transcript before writing rows. Map the reveal ladder, not isolated lines:
+1. **Every prompt begins with its timestamp, copied character for character from the
+   transcript.** `[0:00]` stays `[0:00]`, `[00:00]` stays `[00:00]`. Never reformat,
+   re-pad, or renumber a timestamp. When saving the image, replace its colon with a
+   hyphen so the filename works on Windows: `[0:00]` becomes `[0-00].jpg`.
+2. **The `[MM:SS]` prefix and every `@TOKEN` are instructions for the human and the file
+   system, not visual content.** They must never appear as rendered text in the generated
+   image: no timestamp, clock, or counter burned into a corner, no literal "@NAME" caption
+   anywhere in the frame. This is why every prompt's STYLE LOCK explicitly repeats that
+   negative. **Never drop it.**
+3. **Every prompt opens with the selected version's STYLE ANCHOR** from `visual-style.md`,
+   copied character for character. V1 uses `V1_STYLE_ANCHOR`; V2 uses `V2_STYLE_ANCHOR`.
+4. **Every prompt ends with the same version's STYLE LOCK**, copied character for character.
+   V1 uses `V1_STYLE_LOCK`; V2 uses `V2_STYLE_LOCK`.
+5. **Refer to every cast member by their `@` token, never by description.** Write
+   `@ALAN sits hunched on the edge of a bed`, never `a thin stick figure with a brown
+tunic sits hunched`. The `@` token carries the entire design. Your job is only the
+   action, expression, posture, and position in frame.
+   - Use the exact tokens from the cast table: correct spelling, ALL CAPS, always `@`
+     prefixed.
+   - **Never re-describe a cast member's head shape, clothing, color, build, hair, or face
+     design.** That is what caused the drift this system exists to prevent. Expression and
+     posture ARE allowed and required: `@YOU with flat resigned brows, shoulders dropped`.
+   - **Never invent a token that is not in the cast table.** If a timestamp genuinely needs
+     a new recurring character, stop, say which line needs it, and add it to the cast with
+     its own reference sheet before continuing.
+   - One-off background figures that appear in a single moment do not need a token. Write
+     them as `three generic unnamed doodle stick figures`, and keep them small, faceless or
+     minimal, and clearly secondary so they never compete with the cast.
+   - **Every prompt that contains a cast member places the `@` token at the start of that
+     character's clause**, so it is easy to see which sheets to attach when generating.
+6. **Be specific about everything that is NOT the cast:** what the character is doing,
+   their exact expression, what objects are in the scene, what background color is used,
+   whether any on-screen text or labels appear.
+7. **Translate abstract narration into concrete visuals.** See the examples in
+   `visual-style.md`. Never render an abstraction as an abstraction.
+8. **For V1, match background color to tone** using the legacy tone map in
+   `visual-style.md`, and respect the
+   background budget there. **Plain white is the default and must be the clear majority, 55 to
+   75 percent of all prompts.** Cobalt blue is capped at 15 percent and means literally inside
+   the mind, a brain or a thought loop as the subject. It does not mean night, sad, or serious.
+   A 2am bedroom is modern everyday life and gets white. Labs and restaurants get white.
+   - **Budget the warm backgrounds against the act sizes before writing a single prompt.** Count
+     the cues in the script's other-era act. If that act is larger than the tan plus orange plus
+     green ceiling, the surplus must be planned as white concept, number, and diagram frames from
+     the start. Project 3's ancestral act was 83 of 266 cues, 31 percent, against a 25 percent
+     warm ceiling, so about 20 of them were designed as white frames up front rather than
+     discovered in review.
+   - Also read the project's `character-prompts.md` colour notes for per-video constraints, for
+     example a cast member whose garment colour matches a background colour, and add one grep per
+     constraint to Step 3.
+   - **For V2, use exactly one planned surface family per generated prompt:** `warm cream or
+off-white card`, `light tinted chapter card`, `illustrated story environment`, `cobalt mind
+interior`, or `pure white card`. Follow the V2 budget and selected chapter palette. Reserve
+     saturated channel blue for Toss or one semantic diagram signal. A generic crowd may use dusty
+     blue, but not saturated channel blue when Toss wears his default blue hoodie.
+9. **On-screen text is charcoal or black by default, red only for danger, threat, failure, or
+   negation.**
+   Never yellow on a white background, it is unreadable.
+10. **Emotion lives first in the eyebrows, mouth line, body posture, and head color.** V1 never
+    places emotion in background detail. V2 may use one supporting environment contrast, such as
+    a warm party around a cool isolated Toss, but the character must still read without it.
+11. **Hold plates across consecutive timestamps.** If 3 lines describe the same moment,
+    keep the same scene, the same cast members, and the same background, and only adjust
+    their expression or add one new element. In V2, encode the chain in `visual-plan.md` and
+    preserve camera axis, cast placement, environment geometry, major objects, palette, and line
+    hierarchy. **Do not generate a brand new scene every 5 seconds.**
+12. **Keep the cast internally logical.** `@YOU` carries the modern-life frames. The cast
+    member from the script's other era or setting carries those frames. The two appear
+    together only in a deliberate then-vs-now split frame. Do not swap who plays which
+    role mid-video, and never place a character in an era their reference sheet was not
+    drawn for.
+13. **Use the nine proven frame types** from `visual-style.md` when appropriate. V2 also rotates
+    the six named registers and the seven shot tasks instead of repeating one layout.
+14. **Every V2 prompt names its render tier in this exact form:** `CLEAN render tier:`,
+    `LAYERED render tier:`, or `ATMOSPHERIC render tier:`. Follow only the permissions for that
+    tier. Do not let an atmospheric effect leak into CLEAN.
+15. **Every V2 prompt implements one visual-plan row.** A new plate describes a complete
+    composition. A variant begins its scene clause with `Preserve the attached source plate`
+    and names the single delta. A callback names the earlier plate and its changed meaning.
+16. **Cut the chain with a `---` line wherever a frame must not inherit the frame before it.**
+    The generation tool wires every card to the previous card, so prompt N is generated from
+    prompt N-1's image unless a break stops it. Read `.agents/rules/image-generation.md` for
+    the full rule. In short:
+    - Break at a chapter or act boundary, a hard cut in place, era, or cast, a register switch
+      that changes the whole surface, and before any new `PLATE` the previous frame would
+      contaminate.
+    - **Never break between a `VARIANT` or `CALLBACK` and the plate it points back to.** The
+      chain is linear, so cutting it there destroys the lineage the plan just declared. Never
+      break inside a hold either. Those beats depend on inheritance.
+    - Format is exactly `---` alone on a line, one blank line above and one below, never the
+      first or last line of the file, never two in a row.
+    - A break creates no record and no scene image. Prompt count, timestamps, and file names
+      are untouched by it.
 
-- the familiar transaction and participant point of view;
-- the hidden economic mechanism and behavioral engine;
-- evidence, scale, boundary conditions, and counterargument;
-- the full human price and the ending reframe.
+## Step 2 - Generate in internal chunks
 
-When multiple cues split one spoken sentence, understand the full sentence first. Each cue
-still receives its own beat, but its visual claim must be a concrete step in the sentence's
-larger idea rather than a vague picture of a fragment.
+**Write NO header. The file contains prompts, blank separators, and `---` chain breaks, and
+nothing else.** The first byte of the file is the `[` of the first prompt. No title, no cast
+line, no source-transcript line, no attachment note, no GENERATION LINE, no commentary
+anywhere. `image-prompts.md` is imported wholesale into an image tool that treats every line as
+a prompt, so a header becomes a junk generation. The cast list, cue counts,
+duplicate-timestamp note and GENERATION LINE all go in the **chat report** at Step 4 instead,
+where the human reads them and the tool never sees them.
 
-Choose before writing:
+Work through the transcript in **internal chunks of 25 cues**, appending each chunk to the
+file. Do not ask the user between chunks. Before each chunk after the first, re-read the
+last 3 prompts you wrote so the scene-holding rule survives the chunk boundary, and re-check
+the tone map so the background palette does not drift.
 
-- one visual thesis;
-- the chapter color extension from the cast header;
-- one recurring economic motif, such as a receipt, clock, cart, phone, price tag, scale,
-  funnel, queue, or energy bar;
-- 4 to 7 build chains and the base plate for each;
-- where hard cuts require a Flow chain break;
-- which factual labels or exact numbers must remain edit-only because generated text is
-  unreliable.
+Chunking is not cosmetic. A single uninterrupted pass over 250 prompts degrades: scenes stop
+holding, backgrounds drift toward white, and the last 50 prompts get shorter than the first 50. Chunk, re-anchor, continue.
 
-## Step 2 - Write the visual plan first
-
-Write `prompts/visual-plan.md` in the exact table format from `file-formats.md`. Finish and
-verify the plan before writing prompt prose. It is cheaper and safer to rebalance table rows
-than to rewrite hundreds of prompts.
-
-Planning rules:
-
-1. Create one generated row for every transcript cue in exact timestamp order. Optional
-   `CAPCUT` rows may add an edit-only reveal but never replace a generated cue.
-2. Give every row a unique beat ID. Give every new composition a unique plate ID.
-3. Assign one register, shot, density tier, surface family, asset type, source, delta,
-   motif, and text decision before prose begins.
-4. Use only current enums from `file-formats.md`. `TRANSACTION` is especially useful for
-   the visible exchange; `HYBRID` should make a human action and an economic mechanism
-   readable in one frame.
-5. Keep `ATMOSPHERIC` at or below 10 percent. Aim for roughly 40 percent `CLEAN` and 50
-   percent `LAYERED`, adjusting honestly to the script.
-6. Treat 35 to 45 percent new `PLATE` rows as a useful review band, not a quota. Use
-   `VARIANT` rows for one-step builds and holds, and `CALLBACK` rows when an earlier image
-   returns with changed meaning.
-7. Every non-plate points backward to an existing source beat and names exactly one
-   information-changing delta. `expression change` alone is not a delta. Name the visible
-   change, such as `receipt length doubles` or `scale tips toward time`.
-8. A plate and all of its variants keep the same surface, camera axis, cast placement,
-   environment geometry, major props, palette, and line hierarchy. Change one meaningful
-   element at a time.
-9. Rotate registers and shot tasks after two or three beats unless a valid build chain is
-   intentionally holding the composition. Avoid a whole section of medium shots.
-10. Use `CLEAN` for a single idea, `LAYERED` for a mechanism with two to four explanatory
-    elements, and `ATMOSPHERIC` only for an emotional turn that needs an environment.
-11. Keep on-screen words optional, short, and non-load-bearing. Prefer one or two words;
-    five is an exception. Mission-critical numbers, names, and labels belong in editing.
-12. Give recurring abstract mechanisms one stable physical device. Reuse the same scale,
-    funnel, queue, receipt, ring, or gauge instead of inventing a new metaphor every time.
-13. Plan intentional negative space around the focal action. Density is the number of
-    competing marks, not the number of ideas.
-14. Give the ending a visual callback to the hook when the script supports it, then land
-    the HumanPrice reframe on one simple final claim.
-15. Mark chain breaks only before new `PLATE` rows whose composition must not inherit the
-    previous frame. Never put a break inside a build, hold, variant, or callback lineage.
-
-Target 180 to 320 meaningful visual states for a normal 8 to 12 minute episode, including
-generated variants and useful edit-only builds. The recording and explanation control the
-honest count; do not add decorative states to hit a number.
-
-## Step 3 - Write the image prompts in internal chunks
-
-Write `prompts/image-prompts.md`. The file is prompts only. Its first byte is `[` and it
-contains only prompt lines, one blank separator between records, and legal `---` breaks.
-Never write a header, title, cast list, source note, generation note, or commentary into it.
-
-Work in internal chunks of about 25 cues. Do not pause for user approval between chunks.
-Before each chunk after the first, re-read the last three prompts and the corresponding
-plan rows so plate continuity, density, and prompt detail do not drift.
-
-Every generated prompt must follow this order on one physical line:
-
-```text
-[M:SS] Narration cue context only, render none of these words: <exact narration text> <register, tier, surface, visual claim, composition, cast actions, props, lighting, negative space, text policy, and build delta> <STYLE_STRING> <GENERATION_STRING>
-```
-
-Prompt rules:
-
-1. Copy the timestamp character for character from the transcript. Never re-pad, renumber,
-   or silently remap it.
-2. Copy the narration text after the timestamp exactly, introduced by `Narration cue
-   context only, render none of these words:`. Derive the visual claim from that cue in
-   context. The timestamp and narration are source context, never visible image text.
-3. End with `STYLE_STRING` immediately followed by `GENERATION_STRING`, both copied
-   verbatim from `.agents/bin/style-strings.sh`.
-4. Name the row's register, density tier, and surface family explicitly. Use the canonical
-   enum and surface wording from the current rules.
-5. State one visual claim. Translate abstraction into a concrete human action, transaction,
-   spatial mechanism, comparison, or stable recurring symbol.
-6. Refer to cast members only by exact handles from the cast table. Put the `@TOKEN` at the
-   start of that character's clause.
-7. Never re-describe a cast member's face, hair, clothing, body proportions, or color lock.
-   The bound reference sheet carries identity. Describe only action, expression, posture,
-   position, interaction, and story-relevant props.
-8. Never invent a token. If a genuinely recurring new character is required, stop and
-   return to `/cast`. One-off background figures may be unnamed, minimal, and secondary.
-9. A new `PLATE` prompt describes the complete composition. A `VARIANT` begins its scene
-   clause with `Preserve the attached source plate` and names the one visible delta. A
-   `CALLBACK` names the earlier plate and explains the changed meaning.
-10. Keep the plate's surface family and composition stable through every variant. A variant
-    prompt must still repeat the canonical surface-family wording so validation can count it.
-11. Use saturated Toss blue only for `@YOU` or one semantic diagram signal. Olive indicates
-    choices, systems, or positive economic emphasis. Terracotta indicates price, friction,
-    urgency, or human cost. Do not flood generic crowds or backgrounds with brand blue.
-12. Use generated text only when optional and short. Explicitly say `no generated labels or
-    factual tiny text` when the meaning lives in editing.
-13. Keep faces and hands readable at phone size, leave intentional negative space, and use
-    soft directional lighting appropriate to the selected surface.
-14. No photorealism, 3D render, CGI, realistic faces, anime, logos, watermarks, floating icon
-    soup, decorative charts, wall of numbers, or literal coin mascot.
-15. Never wrap a prompt across two lines. Downstream Flow parsing treats a wrapped line as a
-    separate record.
-16. Separate adjacent prompt records with exactly one blank line.
-17. Insert a line containing exactly `---`, with one blank line above and below, when a new
-    plate must not inherit the preceding frame. A break creates no prompt and no image.
-18. Never break between a variant or callback and its lineage, never at the first or last
-    line, and never place two breaks in a row.
-
-## Step 4 - Verify mechanically
-
-Run these checks before reporting. Fix every failure in this stage.
+## Step 3 - Verify mechanically
 
 ```bash
 source .agents/bin/style-strings.sh
 F="$P/prompts/image-prompts.md"
-V="$P/prompts/visual-plan.md"
+T="$P/transcribes/transcript.md"
 N=$(grep -c '^\[' "$F")
-CUES=$(grep -cE '^\[[0-9]+:[0-5][0-9]\] .+' "$T")
 
-printf 'cues: %s  prompts: %s\n' "$CUES" "$N"
-test "$CUES" -eq "$N"
+# One prompt per cue. CapCut-only plan rows do not create prompt records.
+echo "cues: $(grep -c . "$T")  prompts: $N"
 
-# Prompts only. Blank separators and exact chain breaks are the only exceptions.
-head -c1 "$F"
-grep -vE '^(\[|---$|$)' "$F"
+# PROMPTS ONLY: no header, no title, no commentary. Only '---' breaks are allowed. Must be 0.
+grep -vE '^(\[|---$)' "$F" | grep -c .
+head -c1 "$F"   # must be [
 
-# Every adjacent prompt pair must have a blank separator. Must print 0.
-awk 'p ~ /^\[/ && $0 ~ /^\[/ {c++} {p=$0} END{print c+0}' "$F"
-awk 'NR==1 && $0=="" {print "leading blank"}
-     $0=="" && p=="" {print NR ": repeated blank"}
-     {p=$0}
-     END {if(p=="") print "trailing blank"}' "$F"
+# Chain breaks: exactly '---', blank line each side, never first or last, never doubled.
+grep -c '^---$' "$F"
+awk '{L[NR]=$0} END{for(i=1;i<=NR;i++) if(L[i]=="---"){
+  if(i==1||L[i-1]!="") print i": break needs one blank line above"
+  if(i==NR||L[i+1]!="") print i": break needs one blank line below"
+  if(i>2&&L[i-2]=="---") print i": two breaks in a row"}}' "$F"
 
-# Prompt timestamps must exactly match transcript timestamps and order.
-diff <(awk '{print $1}' "$T") <(grep -o '^\[[0-9:]*\]' "$F")
+# Timestamps identical and in order.
+diff <(awk '{print $1}' "$T") <(grep -o '^\[[0-9:]*\]' "$F") && echo "timestamps match"
 
-# Every prompt preserves its exact narration source text.
-while IFS= read -r cue; do
-  timestamp=${cue%% *}
-  narration=${cue#*] }
-  grep -Fq "$timestamp Narration cue context only, render none of these words: $narration" "$F" || \
-    printf 'missing exact narration context: %s\n' "$cue"
-done < "$T"
-
-# Every prompt carries the one current pair of canonical strings.
-printf 'style: %s  generation: %s\n' \
-  "$(grep -cF "$STYLE_STRING" "$F")" \
-  "$(grep -cF "$GENERATION_STRING" "$F")"
-test "$(grep -cF "$STYLE_STRING" "$F")" -eq "$N"
-test "$(grep -cF "$GENERATION_STRING" "$F")" -eq "$N"
+# Exactly one style version must cover every prompt.
+V1A=$(grep -cF "$V1_STYLE_ANCHOR" "$F"); V1L=$(grep -cF "$V1_STYLE_LOCK" "$F")
+V2A=$(grep -cF "$V2_STYLE_ANCHOR" "$F"); V2L=$(grep -cF "$V2_STYLE_LOCK" "$F")
+printf 'V1 anchor/lock %s/%s  V2 anchor/lock %s/%s\n' "$V1A" "$V1L" "$V2A" "$V2L"
 
 # No token outside the cast table.
-comm -13 \
-  <(grep -oE '@[A-Z][A-Z0-9_]*' "$P/prompts/character-prompts.md" | sort -u) \
-  <(grep -oE '@[A-Z][A-Z0-9_]*' "$F" | sort -u)
+comm -13 <(grep -oE '@[A-Z]+' "$P"/prompts/character-prompts.md | sort -u) \
+         <(grep -oE '@[A-Z]+' "$F" | sort -u)
 
-# House-rule contamination checks.
-grep -n "$(printf '\u2014')" "$F" && echo 'FAIL: em dash' || true
-test "$(grep -c '^Visual style: HumanPrice current$' "$V")" -eq 1
+grep -n "$(printf '\u2014')" "$F" && echo "FAIL: em dash" || echo "clean"
 
-# Chain-break shape: exact, separated, not leading, trailing, or doubled.
-grep -c '^---$' "$F"
-awk '{L[NR]=$0} END {for(i=1;i<=NR;i++) if(L[i]=="---") {
-  if(i==1 || L[i-1]!="") print i ": break needs one blank line above"
-  if(i==NR || L[i+1]!="") print i ": break needs one blank line below"
-  if(i>2 && L[i-2]=="---") print i ": doubled break"
-}}' "$F"
+# V1 background budget. Run only when V1A equals N.
+S=0
+for pat in 'plain white background' 'cobalt blue' 'tan #C4965A' 'orange #F5820D' 'grass green #3A9E3A'; do
+  c=$(grep -ci "$pat" "$F"); S=$((S+c)); printf '  %-26s %3s  %2s%%\n' "$pat" "$c" "$((c*100/N))"
+done
+echo "  sum $S of $N"
+for col in black red yellow; do printf '  text %-7s %3s\n' "$col" "$(grep -c "bold $col ALL CAPS" "$F")"; done
+grep '^\[' "$F" | grep 'plain white background' | grep -c 'bold yellow'   # must be 0
 
-# Plan rows: generated rows equal prompts; all non-plates source a prior beat and one delta.
-grep -c '^| B[0-9][0-9][0-9] ' "$V"
-test "$(grep '^| B[0-9][0-9][0-9] ' "$V" | grep -vc ' | CAPCUT |')" -eq "$N"
+# V2 plan and prompt budgets. Run only when V2A equals N.
+V="$P/prompts/visual-plan.md"
+grep -c '^Style version: V2$' "$V"          # exactly 1
+grep -c '^| B[0-9][0-9][0-9] ' "$V"        # all planned visual states
+grep '^| B[0-9][0-9][0-9] ' "$V" | grep -vc ' | CAPCUT |'  # must equal N
+for tier in CLEAN LAYERED ATMOSPHERIC; do
+  printf '  tier %-12s plan %3s prompts %3s\n' "$tier" \
+    "$(grep '^| B[0-9][0-9][0-9] ' "$V" | grep -v ' | CAPCUT |' | grep -c " | $tier |")" \
+    "$(grep -c "$tier render tier:" "$F")"
+done
+for surface in 'warm cream or off-white card' 'light tinted chapter card' \
+  'illustrated story environment' 'cobalt mind interior' 'pure white card'; do
+  printf '  surface %-34s %3s\n' "$surface" "$(grep -ci "$surface" "$F")"
+done
+
+# Variant, callback, and CapCut sources must point backward and carry one delta.
 awk -F'|' '
   /^\| B[0-9][0-9][0-9] / {
-    for (i=2;i<=11;i++) gsub(/^ +| +$/, "", $i)
-    beat=$2; asset=$8; source=$10; delta=$11
+    gsub(/^ +| +$/, "", $2); beat=$2
+    gsub(/^ +| +$/, "", $8); asset=$8
+    gsub(/^ +| +$/, "", $10); source=$10
+    gsub(/^ +| +$/, "", $11); delta=$11
     if (asset != "PLATE" && (source == "-" || !(source in seen)))
       print "bad source at " beat ": " source
     if (asset != "PLATE" && delta == "-") print "missing delta at " beat
@@ -282,76 +281,90 @@ awk -F'|' '
   }
 ' "$V"
 
-# Every break must open a PLATE row.
+# A chain break may only open a new PLATE, never a variant, callback, or hold.
 awk -F'|' '
-  NR==FNR {
-    if ($0 ~ /^\| B[0-9][0-9][0-9] /) {
-      t=$3; a=$8; gsub(/^ +| +$/, "", t); gsub(/^ +| +$/, "", a); asset[t]=a
-    }
-    next
-  }
-  {L[FNR]=$0}
-  END {for(i=1;i<=FNR;i++) if(L[i]=="---")
-    for(j=i+1;j<=FNR;j++) if(L[j] ~ /^\[/) {
-      match(L[j], /^\[[0-9:]+\]/); t=substr(L[j],1,RLENGTH)
-      if(asset[t] != "PLATE") print "break before " t " opens " asset[t]
-      break
-    }}
+  NR==FNR { if ($0 ~ /^\| B[0-9][0-9][0-9] /) {
+      t=$3; a=$8; gsub(/^ +| +$/, "", t); gsub(/^ +| +$/, "", a); asset[t]=a } ; next }
+  { L[FNR]=$0 }
+  END { for (i=1;i<=FNR;i++) if (L[i]=="---")
+          for (j=i+1;j<=FNR;j++) if (L[j] ~ /^\[/) {
+            match(L[j], /^\[[0-9:]+\]/); t=substr(L[j], 1, RLENGTH)
+            if (asset[t] != "" && asset[t] != "PLATE")
+              print "break before " t " opens a " asset[t] ", not a PLATE"
+            break } }
 ' "$V" "$F"
 ```
 
-Also review, do not merely count:
+For V1, fail if white is under 55 percent, cobalt is over 15 percent, any `solid blue`
+background appears, any yellow caption appears, or any yellow caption sits on a white
+background.
 
-- every plan timestamp matches its transcript cue;
-- every prompt implements its plan row;
-- register, shot, tier, surface, and cast choices remain coherent through the episode;
-- `ATMOSPHERIC` stays at or below 10 percent;
-- no build chain changes surface or composition accidentally;
-- deltas do not collapse into repeated generic wording;
-- every hard change of place, time, cast, or surface has a justified break;
-- no break destroys a variant, callback, or hold;
-- the first 15 seconds are visually faster than the mechanism sections;
-- the ending pays off the visual thesis and human price.
+For V2, fail if the plan is missing, generated plan rows do not equal prompt count, tier counts
+or surface counts do not equal prompt count, ATMOSPHERIC exceeds 10 percent, cobalt mind
+interiors exceed 10 percent, pure white cards exceed 15 percent, a source points forward or
+nowhere, a non-plate delta is missing, or both V1 and V2 strings appear.
 
-Zero breaks in a multi-act episode is usually a failure. Excessive breaks are also a
-failure because they discard useful inheritance. Use the judgment rule from
-`image-generation.md`: break when bleed would hurt, keep the chain when inheritance helps.
+Either version fails if a `---` line is malformed, doubled, leading, or trailing, or if any
+other non-prompt line survives. For V2 it also fails if a break opens anything but a `PLATE`.
+Zero breaks in a multi-act episode is not a pass, it means every hard cut is still inheriting
+the frame before it. Re-read prompt rule 16 and place them.
 
-## Step 5 - Report and hand off
+Sourcing `.agents/bin/style-strings.sh` extracts the anchor and lock from
+`.agents/rules/visual-style.md` at run time. Never hard-code them into a grep pattern here:
+a hard-coded pattern can drift from the definition it is meant to be checking, which defeats
+the purpose.
 
-Report:
+Prompt count must equal cue count. Exactly one version's anchor and lock counts must both equal
+prompt count while the other version counts remain zero. The `comm` output must be empty except
+for `@[name]`, which is part of the style lock. Fix anything that fails before reporting.
 
-- paths to `prompts/visual-plan.md` and `prompts/image-prompts.md`;
-- cue count against prompt count;
-- cast handles with their `.jpeg` filenames;
-- chapter colors and recurring motif;
-- register, tier, surface, asset, and CapCut totals;
-- new plates, variants, callbacks, and build-chain count;
-- chain-break count, each opening timestamp, and its reason;
-- any honest deviation from the target bands;
-- the first three prompts as a sample;
-- confirmation that the Flow CREATE button must show the prompt count, because `---`
-  records generate nothing.
+## Step 4 - Report and hand off
 
-Tell the user to bind each `characters/NAME.jpeg` under its exact `@TOKEN`, paste the whole
-prompt file into IMAGE PROMPTS, and save generated images under `scenes/` with `:` replaced
-by `-`, such as `[3:20]` to `[3-20].jpg`.
+**The chat report carries everything the header used to.** Since the file is prompts only,
+this is the only place the human gets it, so do not abbreviate it. Give the prompt count
+against the cue count, the cast list with its `.jpeg` file names, any duplicate timestamps
+with the file-naming workaround, the background budget table, the chain-break count with the
+timestamp each break opens and why, and the first 3 prompts as a sample. For V2, also report style version, chapter colors, motif, register totals, tier totals,
+surface totals, new plates, variants, callbacks, CapCut-only beats, hero frames, longest planned
+hold, and planned beats per minute. Then quote the selected version's GENERATION LINE from
+`visual-style.md` verbatim so the human can copy it:
 
-End with exactly: `Next: generate the scene images, then run /scene-polish.`
+> Image prompts saved to `<path>`. The file is prompts only, so it imports directly.
+>
+> In the Flow chain workflow: bind every `characters/NAME.jpeg` under its exact `@TOKEN`, set
+> the model and 16:9, then paste the whole file into IMAGE PROMPTS. The CREATE button must
+> read `<N>` images, the same `<N>` as the prompt count above. The `<B>` `---` lines are chain
+> breaks and generate nothing. Add this line to every generation:
+> `<GENERATION LINE, verbatim>`
+>
+> One prompt at a time in Nano Banana, Gemini, Midjourney, DALL-E 3, or Stable Diffusion also
+> works. There, attach only the `.jpeg` sheets for the `@` tokens each prompt contains, and
+> carry the previous image forward as a reference except where a `---` says not to.
+>
+> **Pro tip:** generate the 3 or 4 frames where your main character is most visible first.
+> If any drifts from the reference sheet, fix it before generating the rest. Drift
+> compounds.
+>
+> Save each image to `scenes/` using the timestamp with its colon replaced by a hyphen,
+> such as `[3:20]` to `[3-20].jpg`, then run **`/check`**.
 
 ## Guardrails
 
-- Never skip, reorder, or silently rewrite a transcript timestamp.
-- Never generate image prompts before the cast is locked.
-- Never write prompt prose before the visual plan is complete enough to verify.
-- Never write a header or commentary into `image-prompts.md`.
-- Never wrap a prompt or omit the single blank separator.
-- Never invent or re-describe a cast identity.
-- Never mix legacy channel instructions into current HumanPrice artifacts.
-- Never use a chain break to hide a continuity problem that the plan should solve.
+- Never skip a timestamp. One timestamp equals one prompt.
+- Never output prompts out of chronological order.
+- Never wrap a prompt across two lines. Downstream tools split this file on newlines, so a
+  wrapped prompt becomes two broken prompts.
+- Never write a header, a title, a cast line, or any commentary into the file. Every line is
+  either a prompt, a `---` chain break, or one of the single blank separators between them.
+  The file is imported wholesale, so a header line becomes a junk image.
+- Never put a blank second line between prompts. Exactly one blank line separates them, and a
+  chain break sits as blank, `---`, blank.
+- Never cut the chain between a variant or a callback and the plate it points back to, and
+  never inside a hold. Those beats exist because they inherit the frame before them.
+- Never re-describe a cast member. Never invent a token.
 
 ## Self-improvement
 
-Read `references/memory.md` at the start of every run. Append only durable lessons about
-prompt quality, planning, Flow inheritance, continuity, or validation. Do not append project
-status, retired channel rules, or one-off production notes.
+Read `.agents/skills/scenes/references/memory.md` at the start of every run. Append when a
+prompt shape generates badly, when a scene-holding decision was wrong, or when the user
+corrects a background choice.

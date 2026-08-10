@@ -1,4 +1,4 @@
 interface:
   display_name: "Check"
-  short_description: "Validate a HumanPrice project end to end"
-  default_prompt: "Use $check to validate this HumanPrice project and name the next step."
+  short_description: "Validate the project against the rule files"
+  default_prompt: "Use $check to validate this project and tell me what is missing."

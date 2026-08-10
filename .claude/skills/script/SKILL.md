@@ -1,6 +1,6 @@
 ---
 name: script
-description: Write a sourced 8 to 12 minute HumanPrice narration from an approved research brief and save it at the project root. Use when the user asks for a script, narration, outline-to-script conversion, or the next writing stage.
+description: Write the full 1,800 to 2,500 word 2nd-person narration script for a TossExplains video and save it as script_<short_slug>.md at the project root. Use when the user says "script", "write the script", "write the narration", or picks a topic to develop.
 ---
 
 # Script (Claude wrapper)

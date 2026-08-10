@@ -1,6 +1,6 @@
 ---
 name: check
-description: Validate a HumanPrice project against research, script, transcript, cast, scene, metadata, and thumbnail contracts, then report failures and the next pipeline step. Use to check, validate, audit, or find what a project is missing.
+description: Validate a TossExplains project against the rule files and report what is missing or malformed, then name the next pipeline step. Checks the verbatim style strings, timestamp alignment, cast token integrity, file formats, and banned patterns. Use when the user says "check", "validate", "is this correct", "what is missing", or "audit the project".
 ---
 
 # Check (Claude wrapper)

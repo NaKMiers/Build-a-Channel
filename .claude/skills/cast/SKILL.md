@@ -1,6 +1,6 @@
 ---
 name: cast
-description: Derive the 2 to 6 character cast for a HumanPrice episode and write reference-sheet prompts with a stable recurring protagonist. Use for cast, characters, character sheets, or locking visual identities from a finished script.
+description: Derive the 2 to 6 entry character cast for a TossExplains video from its script, then write one reference sheet prompt per cast member into prompts/character-prompts.md. Solves character drift. Use when the user says "cast", "characters", "reference sheets", or "lock the cast".
 ---
 
 # Cast (Claude wrapper)

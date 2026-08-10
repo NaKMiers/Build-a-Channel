@@ -1,104 +1,138 @@
-# HumanPrice - Agent Project Instructions
+# TossExplains - Agent Project Instructions
 
-Production repository for **HumanPrice**, a YouTube channel about the economics of social
-phenomena and human behavior. Episodes explain the visible transaction, hidden economic
-mechanism, behavioral engine, and full human price in 8 to 12 minutes.
-
-The repository contains the agent pipeline for research, narration, timestamps, cast,
-visual prompts, thumbnails, and publishing metadata. It does not contain a video editor or
-renderer.
+Production repo for **TossExplains**, a YouTube channel of hand-drawn doodle explainers
+about psychology, anthropology, and self-help. This repo holds no video editor and no
+rendering code. It holds the agent pipeline that produces each episode's script, cast,
+prompts, and packaging, plus the tools that turn narration audio into timestamps.
 
 ## Source of truth
 
-`.agents/` is canonical for Codex and Claude. `.claude/skills/` contains thin discovery
-wrappers only. `CLAUDE.md` imports this file as `@AGENTS.md`.
+`.agents/` is the single source of truth for how agents operate here. Both **Codex**
+and **Claude** read from it. `.claude/skills/` holds only thin discovery wrappers that
+delegate back. See `.agents/README.md` and `.claude/README.md`.
 
-## Rules to read before acting
+`AGENTS.md` is this file, Codex's auto-loaded entry point. `CLAUDE.md` is just
+`@AGENTS.md`, a Claude import, so the two never drift.
 
-| File | Read before |
-| --- | --- |
-| `.agents/rules/house-rules.md` | Anything. Output hygiene and stage discipline. |
-| `.agents/rules/channel-dna.md` | Topics, research, scripts, titles, and metadata. |
-| `.agents/rules/research-standards.md` | Claims, sources, exact numbers, and fact-checking. |
-| `.agents/rules/visual-style.md` | Character, scene, and thumbnail prompts. |
-| `.agents/rules/cast-identity.md` | Cast selection and the recurring protagonist. |
-| `.agents/rules/thumbnail-rules.md` | Thumbnail concepts and evidence limits. |
-| `.agents/rules/file-formats.md` | Any project artifact. |
-| `.agents/rules/image-generation.md` | `image-prompts.md` and chain breaks. |
+## Project rules - read the matching file before acting
 
-## Pipeline
+| File                               | Read before                                                                                                  |
+| ---------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| `.agents/rules/house-rules.md`     | anything. Always active. Output hygiene, no em dash, stage discipline.                                       |
+| `.agents/rules/channel-dna.md`     | generating a topic, a script, or metadata. Pillars, angles, voice, editorial guardrails.                     |
+| `.agents/rules/visual-style.md`    | writing any image, sheet, or thumbnail prompt. V1/V2 strings, palettes, tiers, registers, and frame grammar. |
+| `.agents/rules/mascot-toss.md`     | building the cast. Toss identity lock and the reference sheet template.                                      |
+| `.agents/rules/thumbnail-rules.md` | writing thumbnail concepts. Rules A to F, evidence-backed.                                                   |
+| `.agents/rules/file-formats.md`    | writing any project artifact. Layout and exact file shapes.                                                  |
+| `.agents/rules/image-generation.md`| writing or editing `image-prompts.md`. The chain workflow that renders it, and the `---` chain break.        |
 
-```text
-/topic       five ideas, user selects, project is scaffolded
-/research    research/research-brief.md
-/script      script_<short_slug>.md, 1,250 to 1,750 words
-/transcript  transcribes/transcript.md from recorded narration
-/caption     outputs/captions/english.srt, spanish.srt, japanese.srt, chinese.srt, hindi.srt
+## The pipeline
+
+Eight pipeline skills, plus `scene-polish`, `video-swipe`, `youtube`, and `skill-sync`, are
+canonical under `.agents/skills/` and discovered by Claude through `.claude/skills/` wrappers.
+Each pipeline skill validates its inputs, writes its artifact, and names the next command.
+
+```
+/topic       chat only, 5 titles, you pick one -> scaffolds projects/<n>-<slug>/
+/script      script_<short_slug>.md
+/transcript  transcribes/transcript.md              (needs the recorded voiceover)
 /cast        prompts/character-prompts.md
+/scenes      prompts/visual-plan.md + image-prompts.md for V2
+             prompts/image-prompts.md only for V1   (needs transcript + cast)
 /metadata    outputs/metadata.md
-/scenes      prompts/visual-plan.md + prompts/image-prompts.md
-/thumbnail   prompts/thumbnail-prompts.md
-/check       read-only validation, runnable at any point
+/thumbnail   prompts/thumbnail-prompts.md           (needs cast)
+/check       validation report, runnable any time
 ```
 
-After `/script`, `/transcript`, `/cast`, and `/metadata` can proceed independently. `/caption`
-needs the completed transcript.
-`/scenes` needs transcript plus cast. `/thumbnail` needs the script, research brief, and
-cast.
+Scene-image file management is separate from the content pipeline:
 
-Supporting skills:
-
-```text
-/scene-polish  verify and organize generated scene images
-/video-swipe   analyze one competitor video's visual system
-/youtube       channel stats, captions, analytics, uploads, competitors
-/skill-sync    regenerate Claude wrappers and Codex metadata after skill changes
 ```
+/scene-polish   check, rename, move, and verify scene image files
+```
+
+Competitor research is also separate from the content pipeline:
+
+```
+/video-swipe    research/videos-swipe/<slug>/   frames, contact sheets, visual-analysis.md
+                (needs a YouTube link plus the video file downloaded from that link)
+```
+
+Channel-side read/write lives outside the content pipeline too:
+
+```
+/youtube        stats, transcript, analytics, upload, competitor
+                (needs YOUTUBE_API_KEY in .env; analytics + upload also need OAuth)
+```
+
+After `/script` the branches run in parallel: `/transcript`, `/cast`, and `/metadata`
+depend only on the script. `/scenes` needs transcript plus cast. `/thumbnail` needs the
+script plus cast, not the transcript.
 
 ## Skill routing
 
-- Video ideas or what to make next -> `/topic`
-- Sources, evidence brief, fact-checking, claim validation -> `/research`
-- Narration or episode script -> `/script`
-- Audio timestamps or subtitles -> `/transcript`
-- Captions, subtitle translations, or multilingual SRT files -> `/caption`
-- Characters, cast, or reference sheets -> `/cast`
-- Scene prompts or prompts for every timestamp -> `/scenes`
-- Titles, description, chapters, hashtags, tags, SEO -> `/metadata`
-- Thumbnail concepts -> `/thumbnail`
-- Project validation or missing artifacts -> `/check`
-- Scene-image filenames, timestamps, moves, or ranges -> `/scene-polish`
-- Competitor frame extraction or video analysis -> `/video-swipe`
-- YouTube data, upload, analytics, or competitor profile -> `/youtube`
-- Added, renamed, removed, or re-described a skill -> `/skill-sync`
+When the user's request matches a skill, invoke that skill instead of answering ad hoc.
 
-For web browsing use the gstack `/browse` skill when it is available. Do not use
+- Video ideas, "what should I make next", topic brainstorm -> `/topic`
+- Write the narration, "write the script" -> `/script`
+- Audio to timestamps, "make the transcript" -> `/transcript`
+- Characters, cast, reference sheets, "lock the cast" -> `/cast`
+- Image prompts, scene prompts, "prompts for every timestamp" -> `/scenes`
+- Title, description, tags, SEO -> `/metadata`
+- Thumbnail concepts -> `/thumbnail`
+- "Is this project correct", validate, "what is missing" -> `/check`
+- Manage scene image timestamps, renaming, moves, or verification -> `/scene-polish`
+- Analyze a competitor video, extract its frames, "phan tich video" -> `/video-swipe`
+- Pull from YouTube, upload to YouTube, channel analytics, competitor research -> `/youtube`
+- Added or renamed a skill -> `/skill-sync`
+
+For web browsing use the `/browse` skill from gstack. Do not use
 `mcp__claude-in-chrome__*` tools.
 
 ## Quality bar
 
-- Research is mandatory before scriptwriting.
-- Material claims come from the research brief. Exact title and thumbnail numbers need
-  explicit clearance.
-- Narration is 8 to 12 minutes, normally 1,250 to 1,750 words, with hard bounds of 1,150
-  to 1,850.
-- The participant remains the point of view. Explain why reasonable people participate
-  before exposing the cost.
-- Current projects use the HumanPrice style and cast identity only.
-- The first accepted HumanPrice episode will become the regression fixture. Until then,
-  structural validation and skill synchronization are required after system changes.
+The pipeline skills replace a single 533 line mega-prompt (`prompts/master-prompt.md`,
+retired to `prompts/retired/`). That prompt encoded 256 hard-won rules, several of them
+recovered from specific generation failures. **This is a reorganization, not a
+compression.** If a skill or rule file looks suspiciously short, something was lost.
+Restore it from `prompts/retired/`.
+
+The regression fixture is
+`projects/1-why-you-feel-lonelier-in-a-crowd-than-alone-in-your-room/`, a completed and
+accepted video. Any change to the pipeline must still reproduce it: run `/check` on it
+and it must pass clean.
 
 ## Tools
 
-`tools/audio-to-timestamps.py`, `tools/srt-to-timestamps.py`, and
-`tools/combine-audio.py` implement the transcript stage. They use `tools/tsfmt.py` and
-`tools/mp3frames.py`. Forced alignment uses ElevenLabs; plain transcription uses Groq.
-No ffmpeg is required for audio processing.
+`tools/audio-to-timestamps.py` (forced alignment via ElevenLabs, or plain transcription
+via Groq) and `tools/srt-to-timestamps.py` both emit the `[M:SS] narration` format. They
+share `tools/tsfmt.py` for line splitting. `tools/combine-audio.py` merges a multi-part
+recording into `audios/full.mp3` and reports each part's true start, which is the timeline
+the transcript is built against. It also rewrites the combined file's Xing header, because
+parts exported at different bitrates otherwise make players report a badly wrong duration.
+It shares `tools/mp3frames.py` with `audio-to-timestamps.py`, which needs the same
+durations to offset per-part word timings.
+No ffmpeg required for any of the audio tools. The `transcript` skill drives all of them.
+API keys live in a gitignored `.env`.
 
-`tools/video-frames.py` and `tools/youtube-verify.py` support `/video-swipe` and require
-ffmpeg. The verifier uses YouTube oEmbed, title, file name, and optional duration. An
-unreachable verification request is a hard error unless the user explicitly chooses
-offline mode.
+`tools/video-frames.py` and `tools/youtube-verify.py` serve the `video-swipe` research
+skill and are the only tools here that do need ffmpeg. `video-frames.py` runs in three
+stages, `candidates` then `finalize` with the agent's review in between, plus a `stats`
+stage that recomputes pacing from an existing `frame-index.csv`; its `ensure-ffmpeg` stage
+fetches a static ffmpeg build when the machine has none. `youtube-verify.py` decides whether
+a local file really is the YouTube video that was named: it checks the link against the
+oEmbed endpoint, which also hands back the real title, channel, and folder slug, then weighs
+the video id in the file name, the title, and an optional duration. A lookup it cannot reach
+is a hard error rather than a weaker verdict, and `--offline` is the explicit opt-out. The
+duration is not fetchable by script, YouTube's bot check hides it, so it arrives from
+`/browse` as `--expect-duration`. Neither tool needs numpy or ffprobe, only Pillow.
 
-`tools/youtube-api.py` supports `stats`, `transcript`, `analytics`, `upload`, and
-`competitor`. API and OAuth secrets live only in the gitignored `.env`.
+`tools/youtube-api.py` serves the `youtube` skill. It has five subcommands:
+`stats`, `transcript`, `analytics`, `upload`, `competitor`. `stats` and
+`competitor` use `YOUTUBE_API_KEY`; `transcript`, `analytics`, and `upload`
+use an OAuth refresh token in `.env` exchanged through `tools/yt_oauth.py`.
+The token is minted once via `tools/yt_auth.py`, which reads the OAuth
+client blob from `YOUTUBE_CLIENT_SECRETS_JSON` in `.env` (or a legacy
+`client_secrets.json` at the project root) and walks the user through the
+browser flow. Every secret lives in `.env`; no JSON file is shipped.
+Dependencies (`defusedxml`, `google-auth-oauthlib`) are declared in
+`requirements.txt`.

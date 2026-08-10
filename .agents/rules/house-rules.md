@@ -19,12 +19,12 @@ Both Codex and Claude read this file.
      already produced two unreadable sentences. The em dash ban still applies, and every
      file name, timestamp, on-screen string, and quoted rule inside them stays verbatim.
 - Never say "sure", "great", "absolutely", or any filler. Go straight into output.
-- Keep progress updates concise and concrete.
+- Never explain what you are about to do. Just do it.
 
 ## Stage discipline
 
-- The pipeline order is topic -> research -> script -> transcript, cast, and metadata ->
-  scenes and thumbnail, with `check` runnable at any point. Never generate image
+- The pipeline order is topic -> script -> transcript -> cast -> scenes ->
+  metadata -> thumbnail, with `check` runnable at any point. Never generate image
   prompts before the cast exists.
 - Every skill validates its preconditions first and stops with a clear message if an
   input is missing. Do not improvise around a missing input.
@@ -33,7 +33,7 @@ Both Codex and Claude read this file.
 
 ## Never ask the user about the channel
 
-The channel style, palette, voice, pillars, and cast identity are all in `.agents/rules/`.
+The channel style, palette, voice, pillars, and mascot are all in `.agents/rules/`.
 Never ask the user to describe them. Read the rule file.
 
 ## File writing
@@ -43,12 +43,32 @@ Never ask the user to describe them. Read the rule file.
   wrapped line is a broken prompt, not a cosmetic issue.
 - Never create a file the user did not ask for and the format spec does not name.
 
-## Guarding the verbatim style strings
+## Guarding the versioned verbatim strings
 
-The style string and generation string are defined once in
-`.agents/rules/visual-style.md`. That file is authoritative. Project prompt artifacts may
-copy them verbatim. Skills and validators must source them through
-`.agents/bin/style-strings.sh`, never maintain another hard-coded copy.
+The V1 and V2 STYLE ANCHOR, STYLE LOCK, GENERATION LINE, and REFERENCE SHEET OPENING
+LINE are **defined** in `.agents/rules/visual-style.md`. That file is the authority.
 
-If either string changes, edit `visual-style.md` first, then run `/check` on every active
-project. A partial copy is a validation failure.
+V1 is frozen for legacy Projects 1 through 5. V2 is current for new projects. Never mix V1
+and V2 scene strings inside one project. Never bulk-rewrite a legacy project's prompts merely
+to make it current.
+
+One other place legitimately contains copies, and no others:
+
+1. Generated scene artifacts and legacy thumbnail artifacts under `projects/`.
+
+Verification skills source both versions through `.agents/bin/style-strings.sh`; they never
+hard-code another copy. The historical unversioned shell variables remain V1 aliases for
+backward compatibility. New pipeline work uses the explicit `V2_*` variables.
+
+Thumbnail prompts use the separate self-contained rendering system in
+`.agents/rules/thumbnail-rules.md` and never copy the scene STYLE ANCHOR or STYLE LOCK.
+
+**The guarantee is identity, not uniqueness.** Every copy must be byte-identical to the
+definition in `visual-style.md`. The `check` skill extracts the canonical string and
+diffs the copies against it, because a partial edit that updates one copy and not the
+others is exactly how the arced-versus-straight thumbnail contradiction survived
+undetected. If you edit one of these strings, edit `visual-style.md` first, then run
+`check` and fix every copy it reports.
+
+A copy anywhere outside those three places is a bug: delete it and point at the rule
+file instead.

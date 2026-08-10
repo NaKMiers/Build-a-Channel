@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Safely inspect, rename, move, and verify HumanPrice scene images."""
+"""Safely inspect, rename, move, and verify TossExplains scene images."""
 from __future__ import annotations
 
 import argparse

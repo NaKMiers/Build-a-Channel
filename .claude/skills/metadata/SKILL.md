@@ -1,6 +1,6 @@
 ---
 name: metadata
-description: Generate publish-ready HumanPrice titles, description, chapters, hashtags, and SEO tags from a finished script and research brief. Use for YouTube metadata, title options, descriptions, chapters, hashtags, tags, or SEO packaging.
+description: Generate the publish-ready YouTube title, description with hashtags, and 25 to 40 SEO tags for a TossExplains video, saved to outputs/metadata.md. Use when the user says "metadata", "title", "description", "tags", "SEO", or "package the video".
 ---
 
 # Metadata (Claude wrapper)

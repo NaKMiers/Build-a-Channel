@@ -1,4 +1,4 @@
 interface:
   display_name: "Thumbnail"
-  short_description: "Create five reference-backed thumbnail prompts"
-  default_prompt: "Use $thumbnail to create five evidence-backed HumanPrice thumbnail prompts using the bundled finance-board image as Image 1."
+  short_description: "Cinematic thumbnail prompts from a script and cast"
+  default_prompt: "Use $thumbnail to create cinematic thumbnail prompts for this video."

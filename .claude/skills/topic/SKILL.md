@@ -1,6 +1,6 @@
 ---
 name: topic
-description: Generate five high-potential HumanPrice episode ideas, wait for the user to choose, then scaffold one project per selection. Use for topic ideas, a new video, what to make next, or starting a HumanPrice episode.
+description: Generate 5 viral TossExplains video topic ideas as a table, wait for the user to pick one, then scaffold the project folder for it. Use when the user says "topic", "topics", "new video", "video ideas", "what should I make next", or asks to start a new episode.
 ---
 
 # Topic (Claude wrapper)

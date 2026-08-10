@@ -1,29 +1,41 @@
-# .agents - canonical HumanPrice agent layer
+# .agents - canonical agent layer (Codex + Claude source of truth)
 
-This directory is the source of truth for both Codex and Claude.
+This folder is the single source of truth for how AI agents operate in this project.
+Both **Codex** and **Claude** read from here. `.claude/skills/` holds only thin wrappers
+that delegate back (see `.claude/README.md`).
 
 ```text
 .agents/
-  rules/     HumanPrice editorial, evidence, visual, and artifact contracts
-  skills/    canonical project skills
-    <name>/
-      SKILL.md
-      references/memory.md
-      agents/openai.yaml
+  rules/     the channel brain. Seven files, read the focused one before acting:
+             house-rules, channel-dna, visual-style, mascot-toss,
+             thumbnail-rules, file-formats, image-generation.
+  skills/    executable project-local skills. Each skill is:
+               <name>/
+                 SKILL.md              full logic, workflow, self-check
+                 references/memory.md  self-improving notes (single canonical copy)
+                 agents/openai.yaml    Codex discovery metadata
 ```
 
-`.claude/skills/` contains generated thin wrappers. It never contains independent skill
-logic or memory.
+## What lives where
 
-## Editing contract
+Eight of the skills are the content pipeline. The rule files are the channel knowledge that used
+to sit inside `prompts/master-prompt.md`, plus `image-generation.md`, which documents the tool
+that turns `image-prompts.md` into images. Skills read the rule files at run time rather
+than restating them, so a rule is edited in exactly one place.
 
-- Edit skill workflows and memory only under `.agents/skills/<name>/`.
-- Edit channel rules only under `.agents/rules/`.
-- Run `/skill-sync` after adding, renaming, removing, or changing the frontmatter of a
-  canonical skill.
-- The exact HumanPrice style strings live only in `rules/visual-style.md`; project prompt
-  artifacts may copy them verbatim.
-- Historical competitor research is evidence, not active channel instruction.
+This matters because it already bit us: the style anchor and style lock strings were
+re-typed 7 times each across the old prompt files, and a thumbnail rule was fixed in one
+copy while two others still contradicted it. The frozen V1 set and current V2 set now live once,
+in `rules/visual-style.md`, and the `check` skill greps for the selected version.
 
-The current pipeline is topic, research, script, transcript, cast, metadata, scenes,
-thumbnail, and check. Research is a required gate before scriptwriting.
+## Editing rules
+
+- Skill logic, workflow, and self-improving memory are edited **only** here, under
+  `.agents/skills/<name>/`.
+- After adding, renaming, or removing a skill, or changing its frontmatter, run the
+  **skill-sync** skill to regenerate the Claude wrappers.
+- Rules in `.agents/rules/` are read directly by both tools. Never copy them into
+  `.claude/`.
+- The retired `prompts/master-prompt.md` and `prompts/character-prompt.md` are kept
+  under `prompts/retired/` as the provenance record. If a rule here looks wrong or thin,
+  check it against those files before changing it.

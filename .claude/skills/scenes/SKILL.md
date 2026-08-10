@@ -1,6 +1,6 @@
 ---
 name: scenes
-description: Turn a timestamped HumanPrice transcript and locked cast into a visual plan plus one detailed image prompt per timestamp. Use for scenes, image prompts, visual planning, or prompts for every narration cue.
+description: Write one detailed text-to-image prompt for every timestamp in a TossExplains transcript, using the locked cast, into prompts/image-prompts.md. Use when the user says "scenes", "image prompts", "scene prompts", or "prompts for every timestamp".
 ---
 
 # Scenes (Claude wrapper)

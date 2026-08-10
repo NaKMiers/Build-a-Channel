@@ -73,11 +73,11 @@ Shape rules, enforced by `check`:
 Break the chain before a prompt whose frame must not inherit the one before it:
 
 - A chapter or act boundary in the script.
-- A hard cut in place, time, or cast: restaurant counter to platform control room,
-  `@YOU` alone to a crowd scene.
+- A hard cut in place, era, or cast: modern bedroom to ancestral savanna, `@YOU` alone to a
+  tribe scene.
 - A register switch that changes the whole surface, for example an illustrated story
   environment to a clean diagram or text card, and back.
-- Any beat planned as a new `PLATE` whose composition the previous frame would
+- Any V2 beat planned as a new `PLATE` whose composition the previous frame would
   contaminate.
 
 Keep the chain, no break, when the next frame is meant to look like the last one:

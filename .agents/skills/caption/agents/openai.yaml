@@ -1,4 +1,0 @@
-interface:
-  display_name: "Captions"
-  short_description: "Create multilingual SRT captions from a transcript"
-  default_prompt: "Use $caption to create multilingual SRT files from this transcript."
