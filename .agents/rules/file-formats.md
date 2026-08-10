@@ -252,23 +252,25 @@ section holds a fenced block so the text copies out without markdown bleeding in
 ```
 <hook paragraph>
 
-Chapters:
+🗺️ Chapters:
 M:SS  <chapter title>
 M:SS  <chapter title>
 ...
 
-<call to action line>
+💡 <call to action line>
+
+📚 Sources:
+- <short reference> (<year>): <URL>
+- <short reference> (<year>): <URL>
+...
 
 #hashtag #hashtag #hashtag ...
 ```
 
 Chapters: 5 to 7 entries, each `M:SS` matching a transcript timestamp. Hashtags: 15 to 25.
-
-## Tags
-
-```
-<25 to 40 comma separated keywords on one line>
-```
+Citations live inside this block, after the call-to-action and before the hashtags, with a
+`Sources:` label. Emoji is contextual — pick icons that match the video's emotional register.
+Two fenced blocks total (Title and Description, then Tags).
 ```
 
 ## `audios/` and `scenes/` and `characters/` and `outputs/`

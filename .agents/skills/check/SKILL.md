@@ -407,13 +407,18 @@ represent a real numeric, era, temperature, or state contrast.
 
 ````bash
 M="$P/outputs/metadata.md"
-grep -c '^#' "$M"
-awk '/^## Title/{t=1} t&&/^```/{c++} c==2{exit}' "$M"
-grep -oE '#[A-Za-z0-9_]+' "$M" | wc -l      # 15 to 25 hashtags
+grep -c '^## Citations' "$M"               # must be 0 (citations live inside description)
+grep -c '^## ' "$M"                        # exactly 2 (Title, Tags)
+grep -cE '^## |^```' "$M"                 # exactly 4 (2 x ## + 2 x ```)
+grep -oE '#[A-Za-z0-9_]+' "$M" | wc -l   # 15 to 25 hashtags
+grep -c '^Sources:' "$M"                   # must be 1
 ````
 
 Title over 70 characters is a FAIL. Hashtag count outside 15 to 25, or tag count outside 25
-to 40, is a FAIL. A `#` inside the tags block is a FAIL.
+to 40, is a FAIL. A `#` inside the tags block is a FAIL. Any `## Citations` section header
+is a FAIL — citations live inside the description block with a `Sources:` label, not as a
+separate fenced block. A metadata file without a `Sources:` label is incomplete — every
+named study or researcher in the script must be cited.
 
 ## Step 9 - Report
 
@@ -438,8 +443,9 @@ to publish.
 `projects/1-why-you-feel-lonelier-in-a-crowd-than-alone-in-your-room/` is a completed and
 accepted video. **Any change to a rule file or a skill must keep it passing.** Run `check`
 on it after editing the pipeline. Known grandfathered INFO results there: `transcribes/*.txt`
-extensions, and `image-prompts.md` containing `mitten hands` from before the hand-shape
-conflict was resolved.
+extensions, `image-prompts.md` containing `mitten hands` from before the hand-shape conflict
+was resolved, and `outputs/metadata.md` having the old separate `Citations` fenced block
+format (now superseded — sources live inside the description with a `Sources:` label).
 
 ## Guardrails
 
