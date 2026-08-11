@@ -102,6 +102,57 @@ averageViewPercentage` and pull CTR / traffic share via the
 `insightTrafficSourceType` dimension instead. `impressionClickThroughRate`
 in the same call also rejected, so CTR is compute-from-source-counts only.
 
+## 2026-08-11 - correction: impressions is an API-wide gap, not project scoping
+
+The 2026-08-06 note above guessed that this GCP project scopes Analytics to the
+engagement metric set. That guess was wrong. Thumbnail `impressions` and
+`impressionClickThroughRate` are **YouTube Studio exclusives** and have never
+existed in Analytics API v2 for any project. No console toggle fixes it. Any CTR
+number has to be read out of Studio by hand.
+
+Consequence: `cmd_analytics` in `tools/youtube-api.py` hardcodes both metrics in
+its `metrics=` list, so **the `analytics` subcommand fails 400 on every single
+call**. It has never worked. Fix is to drop those two names from the list. Until
+then, query `youtubeanalytics.googleapis.com/v2/reports` directly.
+
+Metrics confirmed working on this channel: `views`,
+`estimatedMinutesWatched`, `averageViewDuration`, `averageViewPercentage`,
+`subscribersGained`, `subscribersLost`, `likes`, `dislikes`, `comments`,
+`shares`.
+
+## 2026-08-11 - audience retention report is the high-value call
+
+Not in the skill yet, and it is the most useful thing the API gives this channel:
+
+```
+dimensions=elapsedVideoTimeRatio
+metrics=audienceWatchRatio,relativeRetentionPerformance
+filters=video==<id>
+```
+
+Returns 100 buckets from 0.01 to 1.0. `audienceWatchRatio` is the share of
+viewers still watching. `relativeRetentionPerformance` is a percentile against
+comparable videos, 0.5 = median. This is what diagnoses whether a weak video is
+a packaging problem or a hook problem, which the view/CTR pair cannot do.
+Worth promoting to a documented step in SKILL.md.
+
+## 2026-08-11 - data horizon lags 3 to 4 days
+
+Queried on 2026-08-11, the last day with any rows was 2026-08-07. Videos
+published inside that window return **zero** views from Analytics while the Data
+API shows real public counts (2 videos at 3 and 14 public views both reported 0).
+Any report that mixes `data_*` and `ana_*` columns must say so, and a zero from
+Analytics on a fresh video is never evidence the video flopped.
+
+## 2026-08-11 - competitor subcommand rejects channel ids
+
+`cmd_competitor` branches on `not ID_RE.match(handle)`, but `ID_RE` is the
+11-character **video** id regex. Channel ids are 24 characters starting with
+`UC`, so they never match and always fall through to the `forHandle` path,
+producing a misleading `error: channel handle 'UCQfgnFoty6qGUw0H0dCyYOQ' not
+found`. The `else` branch that calls `channels?id=` is currently dead code.
+Workaround: pass the handle. Real fix: gate on `^UC[A-Za-z0-9_-]{22}$`.
+
 ## 2026-08-06 - reject loop in yauth.py auth block
 
 OAuth error screen reads "EnglishForOnlyMe has not completed the Google
