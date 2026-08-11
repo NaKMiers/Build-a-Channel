@@ -69,23 +69,41 @@ These are what make a returning viewer recognize him. Reproduce them exactly.
 - **Bearing** - an ordinary, mildly weary everyman. Not heroic, not comedic, not
   cute-mascot. Deliberately plain so any viewer can project onto him.
 
-### What changes - costume and role only
+### What changes - a NEW outfit every single video
 
 Toss is an ordinary person the script drops into different worlds. Only his
 **clothing, footwear, and props** change, matched to whatever setting the script's
 `@YOU` section gives him.
 
-- Modern default (as in `MASCOT.jpeg`): a plain **blue hoodie `#2E77C4`**, a simple
-  filled hoodie silhouette with a small hood bump behind the neck and a shallow V
-  notch at the collar, rounded bottom hem. Under it, small filled **charcoal
-  `#3F3F46`** shorts.
-- Modern variants: t-shirt and jeans, office shirt, pyjamas, jacket and scarf, gym
-  clothes. Whatever the script actually puts him in.
-- Other eras, if the script's `@YOU` section is set there: a hide wrap and bare feet
-  for prehistory, a robe for a monastery, a plain sweater for a lab study.
+**Every video gives Toss a new outfit. This is a requirement, not an option.** The
+cobalt hoodie in `brand/MASCOT.jpeg` is the identity reference, not a uniform. Carrying
+it forward unchanged into a new video is a failed `@YOU` sheet, even when the setting
+would allow it. Derive the outfit from this script the same way every other cast member
+is derived.
 
-**Costume color is free.** Toss is not tied to cobalt blue. Recognizability comes
-from the head, hair tuft, face, and build, never from a color.
+How to choose it:
+
+- **Take the costume from the script's bookend scene**, the room that carries the
+  opening image and the closing image. The sheet locks ONE outfit, so an average of the
+  script's settings is the wrong answer.
+- **Change the silhouette, not only the colour.** A recoloured hoodie still reads as the
+  same outfit. Move between hoodie, crew-neck sweatshirt, t-shirt, buttoned shirt,
+  jacket, pyjamas, gym kit, apron, coat, whatever the script's room actually contains.
+- **Change the colour too**, to a colour no other member of THIS cast wears and that does
+  not disappear into the chapter colour its scenes sit on.
+- Other eras, if the script's `@YOU` section is genuinely set there: a hide wrap and bare
+  feet for prehistory, a robe for a monastery, a plain sweater for a lab study.
+
+**Costume colour is free** within the channel palette. Toss is not tied to cobalt blue.
+Recognizability comes from the head, hair tuft, face, and build, never from a colour, so
+changing the outfit costs nothing and is what stops the channel looking like one long
+video.
+
+**Removing a feature needs its own instruction.** The `@YOU` sheet is an edit against
+`brand/MASCOT.jpeg`, and an edit inherits everything it does not override. Describing a
+crew-neck leaves the model free to draw a hooded crew-neck. When the new outfit drops the
+hoodie, the CHANGE block must say REMOVE THE HOOD COMPLETELY and name the hood bump, the
+drawstring, and the collar V notch, and the NEGATIVE must repeat them.
 
 ### Two hard limits on the costume
 

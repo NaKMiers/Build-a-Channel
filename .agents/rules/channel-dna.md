@@ -25,9 +25,24 @@ A topic or script missing any one pillar is off-channel. Regenerate it.
 
 - 10 to 14 minute educational explainer, narrated in calm 2nd-person ("you",
   "your brain", "your ancestors"). Never "we" or "I".
-- **Hook formula:** open with a relatable modern moment, a feeling or impulse or
-  social situation the viewer had this week, then immediately say the real answer
-  is far stranger, then reframe everything.
+- **Hook formula, the first 100 words.** Narration runs at about 169 words per
+  minute, measured across the first seven videos, so word 100 is roughly the 35
+  second mark. That window is where the channel currently loses about half its
+  audience, so it is budgeted in four beats rather than written freely:
+  1. **Words 1 to 30, the moment.** One relatable modern moment, a feeling or
+     impulse or social situation the viewer had this week. Three sentences at most,
+     a concrete image rather than accumulated atmosphere.
+  2. **Words 30 to 50, the wrong answer.** Say out loud the explanation the viewer
+     already believes, which is usually the one that blames them: weak, bitter,
+     lazy, dwelling, bad at letting go.
+  3. **Words 50 to 75, the reversal.** The real answer is far stranger, and it is a
+     specific named mechanism. Not "it is more complicated than that". A thing with
+     a name, promised here and delivered in the psychology pillar.
+  4. **Words 75 to 100, the open loop.** State what the viewer will know by the end
+     that they do not know now, then hand off to the body.
+
+  The hard constraint: **the first "but" lands before word 50.** Scene-setting past
+  word 30 loses viewers faster than it earns them, however good the prose is.
 - **Script rhythm:** Short sentence. Short sentence. One longer sentence that
   builds depth. Short sentence. Question?
 - **Narrative arc:** Hook (a modern feeling) -> Reframe -> Psychology Deep Dive
@@ -87,7 +102,9 @@ treat).
   scientists. At least 1 must be an anthropologist, ethnographer, or
   cross-cultural researcher. Robin Dunbar, Sarah Blaffer Hrdy, Jared Diamond,
   Margaret Mead, Joseph Henrich, Christopher Boehm and the like.
-- Open with a hook that makes the first 4 lines impossible to stop reading.
+- Open with the four-beat hook budgeted in "Format and voice" above. The first 100
+  words decide whether the rest of the script is watched at all, so they are the
+  least free part of the script, not the most.
 - **Body split across the three pillars, in this order and roughly these
   proportions:**
   1. **Psychology, roughly 35 percent.** Name and decode the mechanism inside the

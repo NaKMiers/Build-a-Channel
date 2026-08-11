@@ -14,7 +14,9 @@ Self-improving notes for topic selection. Single canonical copy, no Claude-side 
 | 5 | Why do people follow the crowd? | scripted, cast, metadata, thumbnails done 2026-08-04, user-supplied title |
 | 6 | Why You Feel More Tired After Doing Nothing All Day | scaffolded 2026-08-04, no script yet |
 | 7 | Why Getting Angry Sometimes Gets You What You Want | scaffolded 2026-08-04, no script yet |
-| 8 | Why You Stay Quiet When You Know The Room Is Wrong | scaffolded 2026-08-08 |
+| 8 | Why Your New Phone Makes Everything Else Look Cheap | scaffolded 2026-08-12, the Diderot effect, current holder of number 8 |
+| old 8 | Why You Stay Quiet When You Know The Room Is Wrong | abandoned 2026-08-12, unpublished, artifacts recoverable at `c9f048f` |
+| old 9 | Why You Think Everyone Is Watching When Nobody Is | abandoned 2026-08-12, unpublished, artifacts recoverable at `c9f048f` |
 
 Project 5 numbering note: this was scaffolded as project 7, but the user deleted the old
 project 5 (What Every Human Tribe Did That You Still Do Under Stress) and renamed the folder
@@ -45,7 +47,80 @@ rediscover it:
   audiences that never meet. Reuses Dunbar's 150 as a supporting fact, not as the subject,
   which is fine because project 1 used it for a different mechanism.
 
+## ABANDONED PROJECTS 8 AND 9, resolved 2026-08-12
+
+Two completed-but-unpublished projects were dropped from the tree, and the user has
+confirmed they stay dropped. Recorded here because the artifacts still exist and the
+titles will otherwise look like fresh ideas to a future batch.
+
+- Old **8** (`why-you-stay-quiet-when-you-know-the-room-is-wrong`) and old **9**
+  (`why-you-think-everyone-is-watching-when-nobody-is`) were both completed and committed
+  in `c9f048f "pr 8 9"`, with 190 media files between them including `audios/full.mp3` and
+  the three-part recordings, character sheets, and scene images. Neither was ever
+  published: the channel's seven live videos map to projects 1 through 7.
+- Commit `44cff0b "skill: metadata"` deleted 209 files under `projects/`, removing both.
+  The commit subject says nothing about it, so it looks accidental.
+- **The user was shown this on 2026-08-12 and chose to leave them out.** Not a mistake to
+  re-raise. Everything remains recoverable with
+  `git checkout c9f048f -- 'projects/8-*' 'projects/9-*'` if they ever change their mind.
+- The number **8 was then reassigned** to the Diderot project at the user's instruction.
+  Old 8 and old 9 no longer own a number.
+
+**Both titles are eligible again, with one condition.** If either is re-proposed, say
+plainly that a full voiceover is already recorded and recoverable, because that changes
+the cost of the video from a full production to a re-edit. Do not silently offer them as
+new ideas.
+
+The old project 9 title is also a near-duplicate of batch 12 title 2 below. Check
+deleted-but-recoverable projects in git history, not just the working tree, before
+proposing a title.
+
 ## Proposed but not picked
+
+### 2026-08-12, batch 12, none picked, user supplied their own topic
+
+All five were compliant and none were rejected on their merits. The user read the batch,
+then asked about a mechanism they already had in mind (the cascade where one luxury
+purchase makes every other possession look wrong) and chose that instead. This is the
+second time the user has arrived with their own topic after seeing a batch, project 5
+being the first. **Treat the batch as a prompt for their own thinking as much as a menu.**
+All five remain eligible.
+
+| Title | Theme | Numeric material available |
+| --- | --- | --- |
+| Why Your Life Looks Unfixable At 3AM And Fine By 9AM | sleep and rest | Samson Hadza sentinel study, 33 sleepers, 18 minutes of whole-group sleep synchrony across 20 days; Yoo and Walker amygdala reactivity after sleep loss |
+| Why You Think Everyone Noticed When Almost Nobody Did | shame and social fear | Gilovich spotlight effect, roughly 50 percent predicted noticing vs 23 percent actual. **Overlaps deleted project 9, check before reusing** |
+| Why You Knock On Wood When You Know It Does Nothing | ritual and meaning | Malinowski Trobriand contrast, elaborate magic for open-sea fishing and almost none for the safe lagoon; Damisch 2010 superstition and putting performance |
+| Why You Clean The Kitchen Instead Of The Real Task | habit and willpower | Sirois and Pychyl procrastination as mood repair; Steel meta-analysis; Woodburn immediate-return vs delayed-return economies |
+| Why You Want The Person Who Answers Slowest | love and attachment | intermittent reinforcement; Fisher fMRI rejection lighting reward circuits; Jankowiak and Fischer, romantic love in 88.5 percent of 166 societies |
+
+### Selected instead: project 8, the Diderot effect
+
+Working title **Why Your New Phone Makes Everything Else Look Cheap**. Research already
+established in conversation, so `script` does not have to rediscover it:
+
+- **Psychology.** The consistency or unity motive. A new possession that sits outside the
+  existing set creates visible inconsistency, and upgrading the rest is the cheaper
+  resolution than returning the one item. Distinct from hedonic adaptation, which is about
+  pleasure resetting over time, and the opposite of the endowment effect, which inflates
+  what you already own. Diderot makes what you own look worse.
+- **Anthropology.** Grant McCracken, *Culture and Consumption* (1988), coined both "the
+  Diderot effect" and "Diderot unity". McCracken is himself an anthropologist of
+  consumption, so the mechanism and its ancestral layer come from one lineage, the same
+  clean shape as the Zeigarnik-to-Masicampo chain in project 2. Extend with potlatch and
+  Veblen's conspicuous consumption for status display through matched sets.
+- **Origin story.** Diderot's 1769 essay *Regrets on Parting with My Old Dressing Gown*. A
+  gifted scarlet gown made his desk, chair, prints and shelves look shabby; he replaced
+  them one by one into debt, and wrote that he had been master of the old gown and became
+  a slave to the new one.
+- **Known weakness: this topic is story-rich and number-poor.** 1769 and 1988 are dates,
+  not quantities that invite subtraction, and the `thumbnail` skill's strongest layout
+  needs two such numbers. Bring a quantity from the consumption or status-signalling
+  literature during `script`, or the thumbnail stage will be starved.
+
+This is also the deliberate bridge into the planned behavioural-economics series: the
+title is psychological, so it stays in the existing suggested-video cluster and does not
+contaminate the hook-rule retention test, while the subject matter is economics.
 
 ### 2026-08-04, batch 10, conformity variants, none picked
 

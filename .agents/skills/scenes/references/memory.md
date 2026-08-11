@@ -266,6 +266,86 @@ have been the wrong kind. **Report the deviation with the reason instead of padd
 drift project 3's note warns about, but rule 12 bars Toss from the camp act, the Hadza act, and the
 experiment room, about 89 cues. Against the 214 cues where he is eligible he is at 36 percent.
 
+## Project 8 (2026-08-12), the Diderot effect: 268 prompts, 309 plan beats, 104 breaks
+
+Clean on all 21 mechanical checks on the first assembly pass. 268 cues to 268 prompts, V2 anchor
+and lock on all 268 with zero V1 strings, timestamps an exact diff match, zero stray tokens, zero
+non-prompt lines, zero adjacent pairs without a blank line, 743 lines, 131 plates, tier counts
+equal to plan exactly, surfaces summing to 268 with exactly one phrase per prompt, zero
+mixed-surface plates, every break opening a PLATE.
+
+Final budgets. Registers STORY 31.0, DIAGRAM 19.4, CARD 17.5, HYBRID 12.3, PORTRAIT 10.4,
+SPLIT_OR_SCALE 9.3, **all six inside their bands, the first time that has happened.** Surfaces
+story 35.8, cream 26.1, tinted 24.6, white 7.5, cobalt 6.0. Assets over 309 beats PLATE 42.4,
+VARIANT 37.2, CAPCUT 13.3, CALLBACK 7.1. Text 27.6 percent. Cadence 31.7 beats per minute.
+Length drift first-50 to last-50 was 5.2 percent.
+
+### THE DEFECT WORTH REMEMBERING: variants that never name their own cast
+
+First assembly passed every mechanical check while `@YOU` sat on **22 of 268 prompts, 8 percent**.
+Cause: variants and callbacks were written as "Preserve the attached source plate ... the single
+delta is X", which describes only the change, so the character standing in the frame is never
+named. Nothing in the Step 3 block catches this. It is invisible to prompt count, timestamps,
+anchor and lock counts, surface counts, and the prompts-only grep.
+
+It matters for two independent reasons. Flow binds reference sheets **per prompt**, so a variant
+that omits `@YOU` gives the model no sheet for the character it is supposed to preserve. And the
+cast-distribution note below reads as catastrophic drift when it is really a prose omission.
+
+**Fix: propagate every plate's tokens to its variants and callbacks automatically.** Build a
+`plate_key -> tokens` map from each plate's originating prose, then emit
+"`@TOKEN` stays in the frame in the same position and posture as the source plate, unchanged in
+design" inside the preserve clause. That took `@YOU` from 22 to 44 and token-carrying prompts from
+79 to 110 without touching a single scene description.
+
+Add this to the check block:
+
+```bash
+grep -c '@[A-Z]' "$F"     # prompts carrying at least one token; compare against plate coverage
+```
+
+### Then measure @YOU against eligible cues, and fix the real gap separately
+
+44 of 268 is 16 percent, but rule 12 bars Toss from the 33-cue Diderot act and the 56-cue Kalahari
+act, so he is eligible in 179. 44 there is 24.6 percent, still under project 6's 36. Listing the
+modern-act plates with no `@YOU` showed 33 of 45, and ten of them were frames a second-person
+script genuinely puts the viewer inside: the coherence ring, the dining table, the kitchen counter,
+his own hands at the till, the absorbed set, the row of ordinary weeks, the four dimmed objects,
+the two visible prices, the unseen bill. Adding him to those ten plates propagated through their
+variants and landed 64 of 179, **35.8 percent, matching project 6.** The other 23 stayed
+characterless because they are cards, diagrams, or the Diderot returns, and padding them would
+have been the wrong conversion.
+
+### 21 planned breaks opened a CALLBACK, and relocation is mechanical
+
+Rule 16 allows a break only before a PLATE. The first pass had 21 illegal ones. Rather than
+hand-resolving each, a script dropped every illegal break and moved the cut to the next PLATE
+within four cues, which relocated 5 and dropped 16 as genuinely unnecessary. Breaks went 120 to
+104. Then a lineage scan found **22 callbacks whose source is severed by an intervening break and
+zero variants severed**, which is the correct shape: variants must inherit, callbacks can be
+rebuilt in prose. Those 22 are emitted as "the earlier P0NN composition returns on the same
+`<surface>`, rebuilt in full", which is project 6's prescribed fix applied by construction rather
+than by hand.
+
+The ending was the one worth restructuring instead. `[9:38]` and `[9:41]` originally pointed back
+to the hook plate `P001` across 100 breaks. Same fix as project 6: they became variants of a new
+ending plate carrying `Motif: CALLBACK`, so the hook echo gets a clean chain.
+
+### `style-strings.sh` resolves its rules file relative to cwd
+
+Sourcing it from a scratch directory silently yields empty strings, and an empty anchor makes
+every `grep -cF` return the line count rather than failing. The assembler asserts
+`len(ANCHOR)==163 and len(LOCK)==346` before writing anything, which caught it immediately.
+**Assert the lengths, never just that the variables are set.**
+
+### One recurring glyph carried both halves of the script
+
+The motif is a horizontal charcoal reference line. The psychology act is a line that lifts and
+quiets everything beneath it; the anthropology act is the same line held down by hand so nobody
+rises above the camp. Because the script's two halves are literally the same shape, one glyph
+covers 78 beats and the mismatch act is drawn simply by removing the hand. **When a script
+contrasts two systems, look for the drawing they share before inventing two.**
+
 ## Project 5 rebuilt as V2 (2026-08-04), 293 prompts, 340 plan beats, 41 chain breaks
 
 The numbered folder changed identity: the old project 5 was deleted and

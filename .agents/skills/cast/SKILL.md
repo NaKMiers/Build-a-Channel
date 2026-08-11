@@ -73,9 +73,13 @@ previous video and do not reach for a default set of characters.
 - Cast size is 2 to 6 entries. Fewer is better. Never exceed 6.
 - Every cast list contains the viewer stand-in, always named `YOU`. This is the only
   mandatory entry and the character on screen most often. **`YOU` is always Toss**, whose
-  design is fixed channel-wide and is NOT derived from the script. The only thing you
-  decide for him is which costume the script's setting puts him in. Everything about
-  derivation applies to the OTHER cast members, never to him.
+  head, hair, face, build, and proportions are fixed channel-wide and are NOT derived from
+  the script. Everything about derivation applies to the OTHER cast members, never to those.
+- **His outfit IS derived, and it is new in every video.** Reusing the cobalt hoodie from
+  `brand/MASCOT.jpeg` is a failed sheet, not a safe default. Take the outfit from the
+  script's bookend scene, change the silhouette and not only the colour, and pick a colour
+  no other member of this cast wears. Full rules in `mascot-toss.md` under "What changes -
+  a NEW outfit every single video".
 - Everything else is conditional on the script. Common shapes, to recognize, not to fill
   in:
   - The figure carrying the anthropology section, whoever and whenever the script says
@@ -179,7 +183,7 @@ grep -oiE '(no|never|not) +mittens?|mittens?' "$F" | grep -civE '^(no|never|not)
 # every garment colour distinct, and nothing off palette or muted
 for t in $(grep -oE '^\| @[A-Z]+' "$F" | tr -d '| @'); do
   printf '%-10s %s\n' "@$t" "$(sed -n "/^## $t.jpeg/,/^## [A-Z]*.jpeg/p" "$F" \
-    | grep -oE '(hoodie|shirt|parka|tunic|robe|vest|wrap|coat|dress|casing ring)[^,]*\(#[0-9A-F]{6}\)' \
+    | grep -oE '(hoodie|shirt|parka|tunic|robe|vest|wrap|coat|dress|casing ring|shell)[^,]*\(#[0-9A-F]{6}\)' \
     | head -1)"
 done
 grep -oE '#[0-9A-F]{6}' "$F" | sort -u           # cross-check against the palette

@@ -102,9 +102,14 @@ the pairing that made the accepted thumbnail work.
 
 Standing rules that came out of it:
 
-- **`@YOU` wears saturated cobalt `#2E77C4`, his canonical hoodie, unless the script's setting
-  genuinely forbids it.** Reusing it across modern videos is correct, not lazy: it is how a
-  returning viewer recognises Toss. Never dress him in grey, slate, or any desaturated tone.
+- ~~**`@YOU` wears saturated cobalt `#2E77C4`, his canonical hoodie, unless the script's setting
+  genuinely forbids it.** Reusing it across modern videos is correct, not lazy.~~
+  **SUPERSEDED 2026-08-12 by the channel owner.** Toss gets a NEW outfit in every video, derived
+  from that script's bookend scene, changing silhouette as well as colour. Carrying the cobalt
+  hoodie forward is now a failed sheet. See `mascot-toss.md`, "What changes - a NEW outfit every
+  single video". The half of the old rule that still stands: **never dress him in grey, slate, or
+  any desaturated tone.** Recognition comes from the head, two-peak tuft, face, and build, which is
+  precisely why the outfit is free to change.
 - **No two cast members share a garment colour**, and the modern cast and the ancestral cast
   must not share a colour family at all. Modern here is blue, red, green over charcoal
   `#3F3F46`. Ancestral is brown, tan, grey-brown over hide `#5C4030` with tan skin `#D9A15B`.
@@ -257,6 +262,99 @@ First pass opened `@METER` with "...for ONE simple hand-drawn 2D doodle cartoon 
 face**", which broke the verbatim REFERENCE SHEET OPENING LINE and dropped the count to 4 of 5.
 Caught by the grep, not by eye. The verbatim line goes first unchanged, then a following sentence
 says it is a personified object with no body, arms or legs.
+
+## Project 8 (2026-08-12), the Diderot effect - a 5-entry cast and the object-versus-prop cut
+
+`@YOU` (Toss, golden yellow crew-neck sweatshirt `#F5C518`, no hood), `@CASE` (personified
+object, grass green `#3A9E3A`), `@DIDEROT` (Paris 1769, scarlet dressing gown `#D94040`),
+`@HUNTER` (Ju/'hoansi, brown hide wrap `#8B5E3C` with tan hem trim), `@CAMP` (group of six, sky
+blue `#6EB5E8`). Chapter palette Lilac `#B79AD9`, Coral `#D96F5F`, Olive `#8FA35A`.
+
+### The run that established the new-outfit-every-video rule
+
+First pass put Toss in his canonical cobalt hoodie and wrote "the default costume is correct and
+is deliberately not overridden", citing the old standing rule above. **The channel owner rejected
+that and made a new outfit mandatory in every video.** The rule now lives in `mascot-toss.md`
+under "What changes - a NEW outfit every single video", the old memory rule is struck through
+above, and `cast/SKILL.md` Step 2 says plainly that reusing the hoodie is a failed sheet.
+
+Two things the change taught immediately:
+
+- **A new outfit dissolved a conflict two earlier videos had to work around.** Projects 2 and 3
+  both shipped a documented exception for Toss and the ancestral group sharing a blue family.
+  With Toss in yellow, `@CAMP`'s sky blue is the only blue in the cast and the exception simply
+  does not arise. Changing the outfit is not just variety, it frees a palette slot every time.
+- **Silhouette has to change, not only colour.** A recoloured hoodie still reads as the same
+  outfit, so the crew-neck exists to drop the hood. That immediately triggered the project 3
+  lesson about edit prompts inheriting what they do not override: the CHANGE block names the hood
+  bump, the drawstring and the collar V notch for removal, the NEGATIVE repeats all three, and
+  CONSISTENCY states that the nape is flat and empty in the back and side views.
+
+Colour choice was constrained to what four other cast members and the coral modern ground left
+free. Deep blue was too near the old cobalt to read as a change, orange collided with the coral
+ground, tan is a prop colour here. Golden yellow `#F5C518` was the only saturated palette colour
+that survived all three tests.
+
+Five entries, not six. Nothing carried over: fourth video, fourth setting, and the first one
+whose anthropology is a named present-day people rather than a generic band.
+
+### The cut that mattered: a signature object can be a prop instead of a cast entry
+
+The obvious reading gives six entries, with `@PHONE` and `@CASE` both cast, because the video is
+about a new object devaluing an old one and both bookend the script. That is one too many, and
+two rounded rectangles with faces would have been hard to tell apart anyway.
+
+Resolution: **the script is about the object that lost value, not the one that arrived.** The case
+carries the counter-intuitive claim ("The case really did lose value"), the mid-video callback,
+and the closing line. The phone causes the effect but is never the subject, so it became `@YOU`'s
+signature PROP and got its lock on his sheet instead of its own entry.
+
+Generalisable: when two objects form a cause-and-effect pair, **cast the one the narration keeps
+returning to, and give the other to whoever holds it.** Ranking by moments times spread would have
+scored them nearly equally and picked wrong.
+
+### Chapter colours have to be checked against garments, not just against each other
+
+First pass set the 1769 chapter colour to coral `#D96F5F` because the thread is warm and
+period. But Diderot's gown is scarlet `#D94040` and the script will not let it be anything else,
+so the video's single most important object would have sat on a ground of nearly its own hue.
+
+Fix: the 1769 thread is grounded in lilac `#B79AD9` and coral moved to the modern thread, where
+nothing warm-red is worn. **Pick the chapter colours after the garments, or at least re-check them
+against every garment before writing the header.** Project 3 learned that a garment can collide
+with a background; this is the same fault caught one stage earlier.
+
+### The `@YOU`-and-`@CAMP` blue exception, now shipped three times
+
+Same reasoning as projects 2 and 3 and written into the cast file again: a warm group vanishes into
+the warm ground its own scenes sit on, so the group takes saturated sky blue and relies on never
+sharing a ground with Toss. Three videos in, this is no longer an exception to justify case by
+case. **Treat cool group against warm ancestral ground as the default**, and write the one-line
+reason into the cast file each time so `scenes` does not re-litigate it.
+
+### Garment alternation extended again: `shell`
+
+`@CASE` is a phone case, so its colour line reads `case shell in grass green (#3A9E3A)` and the
+Step 5 grep printed a blank until `shell` was added to the alternation in `cast/SKILL.md`. Fourth
+time the alternation has been short. The blank looks identical to "no colour assigned", which is
+the failure mode the grep exists to catch.
+
+`dressing gown` needs no new word: the existing `dress` alternative matches it. Worth knowing
+before adding a redundant `gown`.
+
+### A phone case is more text-prone than it looks
+
+Not as bad as project 3's gauge, but close enough to need enumerated negatives rather than the
+standard block alone. Named individually: brand name, manufacturer logo, model number, camera
+lettering, regulatory marks, barcode, price sticker, embossed wordmark, moulded lettering, plus
+the usual screen suppressions for the phone visible inside the shell.
+
+### Non-graphic kill
+
+The insulting-the-meat scene is the video's centrepiece anthropology visual and it is about a dead
+animal. `@HUNTER`'s prop is a carrying pole with an abstract wrapped bundle, explicitly negated
+for animal, fur, head, legs and blood. The mockery reads from the camp's faces and gestures, which
+is where the script puts it anyway.
 
 ## Resolved conflict: hand shape
 

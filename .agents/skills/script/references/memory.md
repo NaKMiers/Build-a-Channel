@@ -99,6 +99,54 @@ F=projects/<n>-*/script_*.md
 echo "questions $(grep -o '?' $F | wc -l)  sentences $(grep -oE '[.!?]' $F | wc -l)"
 ```
 
+## HOOK RULE UNDER TEST (added 2026-08-12, from the first seven videos' retention)
+
+The four-beat hook budget in `channel-dna.md` was derived from analytics, not from taste.
+It is a hypothesis with a scheduled test, so do not treat it as settled and do not quietly
+relax it either.
+
+What the data showed, from `outputs/retention-2026-08-11.json`:
+
+- Roughly half the audience leaves between second 7 and second 22 on every video.
+- YouTube's own `relativeRetentionPerformance` puts the first 70 seconds in the 0.15 to
+  0.34 band, meaning bottom quartile against comparable videos, while the middle and end
+  of the same videos sit at 0.50 to 0.80. Project 2 reaches 0.80 at the 88 percent mark.
+  The content holds people. The entry does not.
+- Cause is structural, not cosmetic. Scene cadence is already fast, a new image about
+  every 2 seconds, and the prose is good. The problem is that the viewer cannot tell what
+  they will learn until 25 to 40 seconds in.
+
+Where the reversal actually lands in each script, which is what the rule now constrains:
+
+| Project | Reversal at | Note |
+| ------- | ----------- | ---- |
+| 7 anger | 0:06 | sharpest opening the channel has written, use as the model |
+| 6 tired | 0:23 | reversal then drifts back into analogy |
+| 1 loneliness | 0:29 | 28 seconds of atmosphere first |
+| 5 crowd | 0:31 | |
+| 3 different self | 0:33 | |
+| 2 argument | never in 40s | pure scene-painting, steepest early cliff of the trusted samples |
+| 4 days drag | never in 40s | |
+
+Only projects 1 and 2 have samples worth trusting, 71 and 63 views. Projects 3 to 7 have
+12 to 19 views each and their retention arrays are visibly non-monotonic, which is sample
+noise, not signal. So the rule rests on two videos agreeing plus YouTube's percentile
+band, not on seven.
+
+Pace, measured across all seven scripts: 13,998 words over 4,975 seconds of finished
+audio is 168.8 wpm, range 152 to 177. That is what converts the timing rule into the word
+budget. Recompute it if the delivery pace ever changes.
+
+**The test.** On the next video, pull the first 10 datapoints of
+`relativeRetentionPerformance`. Today they sit at 0.15 to 0.34.
+
+- Above 0.40: structure was the cause, keep the budget and tighten it further.
+- Still under 0.30: the writing was not the bottleneck. The untested variable is the
+  voiceover itself, delivery, energy, audio quality, and whether there is any music bed.
+  Nobody has inspected that yet. Say so plainly rather than tuning the words again.
+
+Record the result here either way. A rule this specific should not survive on faith.
+
 ## Lessons
 
 - The opening line and the closing echo should be drafted **before** the body. Project 1's

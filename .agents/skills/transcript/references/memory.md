@@ -132,6 +132,63 @@ anywhere in the file, which is the check that confirms no part was dropped.
 established 2.9 to 3.1 from a V1 script. Do not treat 2.7 as a failed split on its own: check
 whether the parts agree with each other, not whether they hit the older number.
 
+## Project 8 (2026-08-12) - a wps anomaly that turned out to be a fast read, and how to tell
+
+3 parts at 256 kbps: 4m51.9s, 3m27.6s, 1m24.5s, combined **9m44.0s**, header and frames agreeing
+(Xing reports 9m43.9s, a rounding difference, not a mismatch). Single ElevenLabs call on
+`full.mp3` against the whole script, same as projects 5 and 6, because
+`script_why_your_new_phone_looks_cheap.md` is single-blank-line separated with no run of blank
+lines marking where the recording stopped.
+
+**268 cues**, median 1.8s, last cue `[9:41]` against 583.6s of aligned speech, no duplicate
+timestamps, no malformed lines, transcript text word-for-word identical to the script at 1873
+words. 27.5 cues per minute, exactly the V2 profile's predicted rate.
+
+### 3.21 wps breaks the established band, and it was still correct
+
+1873 words over 584.0s is **3.21 wps**. Projects 5 and 6 put this narrator at 2.71 to 2.87, and
+the seven published videos average 2.81. At 2.80 the script should have run 11.1 minutes, so the
+recording looked about 230 words short, and the skill's own warning is that a mismatched script
+aligns without raising an error.
+
+It was a faster read. Nothing was missing. **The check that proves it is a rolling word-rate
+window over `words.json`, and it costs nothing:**
+
+```bash
+python3 - <<'PY'
+import json,bisect
+ws=[x for x in json.load(open("<P>/transcribes/words.json"))["words"] if x.get("end") is not None]
+starts=[x["start"] for x in ws]; win=30.0; rates=[]; worst=(0,0)
+for t in range(0,int(ws[-1]["end"])-int(win),5):
+    r=(bisect.bisect_left(starts,t+win)-bisect.bisect_left(starts,t))/win
+    rates.append(r); worst=max(worst,(r,t))
+rates.sort(); print(f"median {rates[len(rates)//2]:.2f} max {worst[0]:.2f} at {worst[1]}s")
+PY
+```
+
+Here it returned median 3.17 and max 4.03, the max sitting at 0m05s inside the deliberately fast
+hook. **A uniform rate means a uniform read.** Missing content produces one of two signatures and
+neither appeared: a local rate spike far above the file median where the aligner crams orphaned
+words, or a silence much longer than the read's natural pauses. The largest silence in the whole
+file was 1.5 seconds.
+
+Transferable rule: **a whole-file wps figure outside the narrator's band is a question, not a
+verdict.** Compare the rolling median against the whole-file figure. If they agree, the narrator
+changed pace; if the rolling max spikes somewhere, that timestamp is where the audio and script
+part company. This can run before alignment only if a cache already exists, so in practice it is
+the first thing to run after the call, before reporting success.
+
+The band itself now spans 2.71 to 3.21 across five measured recordings. Treat it as read-dependent
+rather than fixed, and do not reject a split on the older narrower numbers alone.
+
+### Duration is below the channel-dna 10 to 14 minute spec
+
+9m44.0s against a rule that says 10 to 14 minutes. Flagged to the user rather than corrected: the
+retention analysis on 2026-08-11 pointed toward shorter videos, since average view duration sits
+near 2m10s regardless of length, so a shorter file raises average view percentage for the same
+watch time. **If short videos become the norm, `channel-dna.md`'s duration line needs updating**
+rather than every project quietly violating it.
+
 ## Project 5 rebuild (2026-08-04) - three key failures before one clean align
 
 The project 5 folder was retopiced to `5-why-do-people-follow-the-crowd` and its cast file
