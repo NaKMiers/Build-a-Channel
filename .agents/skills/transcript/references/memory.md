@@ -189,6 +189,42 @@ near 2m10s regardless of length, so a shorter file raises average view percentag
 watch time. **If short videos become the norm, `channel-dna.md`'s duration line needs updating**
 rather than every project quietly violating it.
 
+## Project 9 (2026-08-21) - single-call align, uniform read, and a words.json shape gotcha
+
+3 parts at 256 kbps (uniform, so no VBR header risk): 4m29.6s, 3m45.2s, 1m52.0s, combined
+**10m06.9s**, Xing header agreeing with the frames. Single ElevenLabs forced-alignment call on
+`audios/full.mp3` against the whole script, same as projects 5, 6 and 8, because
+`script_advice_you_never_take.md` is single-blank-line separated throughout with no run of blank
+lines marking where the recording stopped.
+
+**273 cues**, median 1.8s, last cue `[10:04]` against 606.9s of audio, no duplicate timestamps,
+no malformed lines, transcript text word-for-word identical to the script at 1875 words. About
+27 cues per minute, right on the V2 profile's shape. Duration 10m06.9s is inside the channel-dna
+10 to 14 minute spec (project 8 at 9m44s was below it).
+
+Whole-file rate 1875 / 606.9 = **3.09 wps**, and the rolling 30s window returned median 3.10, max
+3.70 at 575s, largest silence 1.6s at 119s. Rolling median equals the whole-file figure, so the
+read was uniform and nothing was dropped. This narrator's measured band is now 2.71 to 3.21 across
+six recordings; 3.09 is unremarkable.
+
+Quota was checked before spending via `GET /v1/user/subscription`: free tier, 5811 of 10000 used,
+4189 remaining, plenty for the ~600 credit call. The key authenticated and was in-scope on the
+first try this time, unlike projects 4 and 5.
+
+### GOTCHA: words.json is a top-level LIST here, not a dict with a "words" key
+
+The rolling word-rate snippet in the project 8 note opens with `json.load(open(...))["words"]`,
+which assumes a dict. `audio-to-timestamps.py --save-json` on this run wrote a **bare JSON list**
+of `{"start","end","text"}` objects, so `["words"]` raised `TypeError: list indices must be
+integers`. Make the snippet shape-tolerant:
+
+```python
+data=json.load(open(f"{P}/transcribes/words.json"))
+ws=[x for x in (data if isinstance(data,list) else data.get("words",data)) if x.get("end") is not None]
+```
+
+Do not assume the cache schema. Check `type()` first, or use the tolerant line above.
+
 ## Project 5 rebuild (2026-08-04) - three key failures before one clean align
 
 The project 5 folder was retopiced to `5-why-do-people-follow-the-crowd` and its cast file

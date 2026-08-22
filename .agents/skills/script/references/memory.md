@@ -78,6 +78,43 @@ Craft notes:
 - Numeric material for the thumbnail: 37 percent, 3 out of 4, 1 ally, band of 50, 200,000
   years, 99 out of 100 alone.
 
+## Project 9, advice you never take, cited (2026-08-19, Solomon's paradox)
+
+Igor Grossmann and Ethan Kross (2014, "Exploring Solomon's Paradox", Psychological Science:
+the partner-infidelity scenario, own vs a friend's, wiser reasoning for the friend, and the
+self-distancing manipulation that eliminated the asymmetry), Ethan Kross (immersion vs the
+distanced vantage, the pronoun/name flip), Ozlem Ayduk (distanced self-reflection, the fly
+on the wall, reduced emotional reactivity and rumination), Richard B. Lee (Ju/'hoansi of the
+Kalahari, camp-wide talked-out consensus decisions around the fire). Three behavioral
+scientists plus one anthropologist. Lee is fresh, first use on the channel, drawn from the
+memory list of anthropologists not yet spent.
+
+Craft notes:
+
+- This is the Zeigarnik-to-Masicampo shape again, the channel's best science-to-shift line.
+  The open-loop mechanism (self-immersion locks the wisdom away) and the finding that closes
+  it (self-distancing via third-person language reopens it) come from the SAME study,
+  Grossmann and Kross 2014. So the shift falls straight out of the science and is not bolted
+  on. When a topic has this shape, use it: it is the strongest arc the channel has.
+- The shift is ONE move, framed as a reframe, not a command list: phrase your own problem in
+  the third person, using your own name, the way you would ask it about a friend. Modeled
+  self-talk ("a plain question about what this person, the one with your name, ought to do")
+  is the one allowed first-person-ish spot; the two `\bI\b` grep hits are (1) the pronoun "I"
+  named as an object of discussion and (2) modeled viewer self-talk. Neither is narrator voice.
+- Reversal lands at word 49 (about 0:17 at 169 wpm), right at the beat 2 / beat 3 boundary the
+  hook budget prescribes. Compliant with the four-beat budget, though not as sharp as project
+  7's 0:06. The "hypocrite" self-blame is the beat-2 wrong answer, which is unusually clean
+  here because the viewer genuinely arrives already believing it.
+- KNOWN WEAKNESS carried from topic memory, now PARTLY solved. The script itself is
+  number-light and leans on two hundred thousand years, a band of thirty or forty, and the
+  one-voice vs whole-camp contrast. During `metadata` the Grossmann and Kross 2014 paper was
+  verified (SAGE DOI 10.1177/0956797614535400) and it reports **three experiments, 693
+  participants**. That 693 is a real, citeable quantity the `thumbnail` stage can use even
+  though the narration does not say it. So thumbnail material is: 200,000 years, band of 30 to
+  40, one voice vs the whole camp, and 693 people in the study. Still no subtractable ratio, so
+  the two-number thumbnail layout should pair 40-vs-1 (the camp that decided for you vs you
+  alone) rather than reach for a Baumeister-style ratio.
+
 ## OPEN DISCREPANCY: question density
 
 `.agents/rules/channel-dna.md` says "Question every 4 to 6 sentences". **The accepted

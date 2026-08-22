@@ -15,6 +15,7 @@ Self-improving notes for topic selection. Single canonical copy, no Claude-side 
 | 6 | Why You Feel More Tired After Doing Nothing All Day | scaffolded 2026-08-04, no script yet |
 | 7 | Why Getting Angry Sometimes Gets You What You Want | scaffolded 2026-08-04, no script yet |
 | 8 | Why Your New Phone Makes Everything Else Look Cheap | scaffolded 2026-08-12, the Diderot effect, current holder of number 8 |
+| 9 | Why You Give Great Advice You Never Take Yourself | scaffolded 2026-08-19, Solomon's paradox, no script yet |
 | old 8 | Why You Stay Quiet When You Know The Room Is Wrong | abandoned 2026-08-12, unpublished, artifacts recoverable at `c9f048f` |
 | old 9 | Why You Think Everyone Is Watching When Nobody Is | abandoned 2026-08-12, unpublished, artifacts recoverable at `c9f048f` |
 
@@ -76,6 +77,27 @@ deleted-but-recoverable projects in git history, not just the working tree, befo
 proposing a title.
 
 ## Proposed but not picked
+
+### 2026-08-19, batch 13, user picked title 5 (Solomon's paradox -> project 9)
+
+The user restated title 5 verbatim to select it. The other four remain eligible. Batch was
+spread across attachment, boredom, ritual, and procrastination; all four carry real numeric
+material for the thumbnail stage.
+
+| Title | Theme | Numeric material available |
+| --- | --- | --- |
+| Why The Slowest Texter Is The Hardest To Forget | love and attachment | intermittent reinforcement; Fisher fMRI rejection lighting reward circuits; Jankowiak and Fischer, romantic love in 88.5 percent of 166 societies |
+| Why Doing Nothing For Ten Minutes Feels Like A Threat | boredom and attention | Wilson 2014, 15 minutes alone, 67 percent of men self-administered a shock; default mode network vigilance |
+| Why You Knock On Wood When You Know It Does Nothing | ritual and meaning | Malinowski Trobriand contrast, elaborate magic for open-sea fishing and almost none for the safe lagoon; Damisch 2010 superstition and putting performance |
+| Why You Clean The House When A Real Deadline Is Close | habit and willpower | Sirois and Pychyl procrastination as mood repair; Steel meta-analysis; Woodburn immediate-return vs delayed-return economies |
+
+Selected: project 9, **Why You Give Great Advice You Never Take Yourself**, Solomon's paradox.
+Research to reuse so `script` does not rediscover it: Grossmann and Kross 2014 on Solomon's
+paradox, wiser reasoning about others' problems than one's own, closed by self-distancing
+(third-person self-talk). Anthropology is the council or elder-advising structure of the band,
+where wisdom was pooled and spoken aloud to others rather than kept inward. Known weakness:
+like Diderot this topic is number-light, so pull a hard quantity from the self-distancing or
+advice literature during `script` or the thumbnail stage will be starved.
 
 ### 2026-08-12, batch 12, none picked, user supplied their own topic
 

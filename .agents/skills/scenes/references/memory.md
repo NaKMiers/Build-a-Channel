@@ -346,6 +346,76 @@ rises above the camp. Because the script's two halves are literally the same sha
 covers 78 beats and the mismatch act is drawn simply by removing the hand. **When a script
 contrasts two systems, look for the drawing they share before inventing two.**
 
+## Project 9 (2026-08-21), advice you never take: 273 prompts, 284 plan beats, 78 breaks
+
+Clean on every mechanical check after fixes: 273 cues to 273 prompts, V2 anchor and lock on all
+273 with zero V1, timestamps an exact diff match with no duplicates, zero stray tokens, zero
+non-prompt lines, zero adjacent pairs without a blank line, surfaces summing to 273 with exactly
+one phrase per prompt, tier plan equal to prompt tier exactly (114 CLEAN / 154 LAYERED / 5
+ATMOSPHERIC), every source pointing backward, every break opening a PLATE, no em dash. 83 plates.
+Built data-first with the generator script (all beats as python data, verbatim strings
+substituted, breaks inserted by flag, sources computed as previous-beat-of-plate), same method
+as projects 5 and 7.
+
+Motif: a windowpane of glass separating the calm view from outside from the flooded view when
+you are trapped inside. It carries the whole script, appearing in the study/distance act, the
+anthropology act (the camp wall drawn as a window), and the ending payoff (looking back at your
+own life through the same glass). One glyph, both halves, exactly the shape project 8's note
+recommends looking for.
+
+Final budgets. Tiers CLEAN 41.8, LAYERED 56.4, ATMOSPHERIC 1.8 percent. Surfaces story 44.3,
+cream 32.2, tinted 12.8, cobalt 5.5, white 5.1. Registers STORY 38.5, CARD 20.5,
+SPLIT_OR_SCALE 14.7, PORTRAIT 13.9, HYBRID 6.2, DIAGRAM 6.2. Assets over 284 beats PLATE 29.2,
+VARIANT 66.9, CAPCUT 3.9, CALLBACK 0. Text 28.6 percent. Cadence 28.1 beats per minute. Cast
+@YOU 111, @CAMP 32, @SOLOMON 11, @FRIEND 7; tokens on 154 of 273 prompts. @YOU is 41 percent of
+all prompts and 61 percent of the 181 cues where rule 12 allows him (barred from the Solomon
+and Kalahari acts).
+
+### NEW TRAP: a plate's `tokens` field does not put the token in the plate's prose
+
+The generator stored `tokens=[CA]` on a plate but its composition prose said "the ring" or "the
+band" or "one camp figure" and never wrote `@CAMP`. The token-clause builder still injected
+`@CAMP stays in the frame...` into every VARIANT of that plate, so 11 variants named a character
+their own base plate never contained. This is project 8's "variant names a token its source
+lacks" defect with a new cause: not a terse variant, but a plate whose prose describes the cast
+in words instead of by token. **A plate must write the `@TOKEN` into its own composition prose,
+not merely carry it in a data field.** Audit: for every VARIANT, its tokens must be a subset of
+its PLATE's prose tokens, unless the delta text itself introduces the new one (the deliberate
+"@FRIEND appears in the call bubble" case is fine because the delta names @FRIEND). Two beats
+also placed @CAMP on another character's card (@YOU's counselor card, Lee's notebook card); the
+ring got its own PLATE and Lee's camp became generic untokenised sketch figures.
+
+### The on-screen-text budget needs a keeper allowlist, not per-beat judgement
+
+First assembly carried text on 163 of 273 beats, 60 percent, against the 25 to 35 target, because
+almost every card and label beat got a caption. The fix was a `KEEP_TEXT` allowlist of ~80
+timestamps limited to verdicts, numbers, researcher and concept names, and the shift's key
+instruction words, with a one-line guard in the beat builders that nulls text off any beat not in
+the set. Landed at 28.6 percent. **Decide the keeper set as a list up front rather than judging
+"does this beat need text" 273 times; the second method always drifts high.**
+
+### A CapCut beat sharing a break-opening plate's timestamp trips the break-opens-PLATE check
+
+The Step 3 break check maps `asset` by timestamp, last row wins. A CapCut beat given the same
+`[M:SS]` as the PLATE a break precedes overwrites the plate's asset in that map, so the check
+reports "break opens CAPCUT" even though the break correctly precedes the plate's prompt (CapCut
+makes no prompt). Nine such collisions appeared. **Never give a CapCut beat the same timestamp as
+a break-opening PLATE.** Either retime the CapCut to the previous cue or drop it. Dropped all
+nine here, which left cadence at 28.1 per minute, still in band.
+
+### Honest deviations, reported not padded
+
+- Surfaces story 44 vs 35 target, tinted 13 vs 20: the script's spine is sustained scenes (the
+  hook bedroom, the Kalahari camp, the mismatch room, the ending), same shape as project 7's 46.
+- Registers SPLIT_OR_SCALE 14.7 over its 5 to 10 band, DIAGRAM and HYBRID both 6.2 under theirs:
+  the script is built on self-versus-other and modern-versus-ancestral contrasts, which are
+  splits and scales, and its mechanism is a single vantage flip rather than a multi-node
+  flowchart, so there is little to diagram. Same class of script-driven skew as projects 5 to 7.
+- Assets VARIANT 67 high, PLATE 29 low, CAPCUT 3.9 low, CALLBACK 0: deliberate. The window and
+  the camp ring are long continuous metaphor scenes, so composition-preserving variants carry
+  them, which also minimises character drift. The only reprise is the ending, handled as two
+  PLATEs with Motif CALLBACK per the project 8 pattern so the hook echo gets a clean chain.
+
 ## Project 5 rebuilt as V2 (2026-08-04), 293 prompts, 340 plan beats, 41 chain breaks
 
 The numbered folder changed identity: the old project 5 was deleted and

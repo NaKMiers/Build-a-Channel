@@ -1,0 +1,35 @@
+{
+  "total": 606.877,
+  "parts": [
+    {
+      "file": "projects/9-why-you-give-great-advice-you-never-take-yourself/audios/part-1.mp3",
+      "start": 0.0,
+      "duration": 269.636,
+      "frames": 10322,
+      "sample_rate": 44100,
+      "bitrates": [
+        256
+      ]
+    },
+    {
+      "file": "projects/9-why-you-give-great-advice-you-never-take-yourself/audios/part-2.mp3",
+      "start": 269.636,
+      "duration": 225.228,
+      "frames": 8622,
+      "sample_rate": 44100,
+      "bitrates": [
+        256
+      ]
+    },
+    {
+      "file": "projects/9-why-you-give-great-advice-you-never-take-yourself/audios/part-3.mp3",
+      "start": 494.864,
+      "duration": 112.013,
+      "frames": 4288,
+      "sample_rate": 44100,
+      "bitrates": [
+        256
+      ]
+    }
+  ]
+}

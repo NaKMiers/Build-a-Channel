@@ -356,6 +356,38 @@ animal. `@HUNTER`'s prop is a carrying pole with an abstract wrapped bundle, exp
 for animal, fur, head, legs and blood. The mockery reads from the camp's faces and gestures, which
 is where the script puts it anyway.
 
+## Project 9 (2026-08-19), advice you never take - a 4-entry cast and a token-leak trap
+
+`@YOU` (Toss, grass green `#3A9E3A` crew-neck sweatshirt, no hood, evening-at-home), `@FRIEND`
+(the modern person he advises, golden yellow `#F5C518` long-sleeve shirt, rounded chin-length
+bob), `@SOLOMON` (ancient king, scarlet `#D94040` robe, white hair-and-beard on tan skin
+`#D9A15B`, small gold crown), `@CAMP` (Ju/'hoansi group of six, sky blue `#6EB5E8` wraps,
+charcoal `#2F3133` hair caps, campfire prop in orange `#F5820D`). Chapter palette Coral
+`#D96F5F`, Lavender `#B79AD9`, Tan `#C4965A`. Four entries. Nothing carried over.
+
+- **`@FRIEND` locked over `@SOLOMON`-style one-section figures because it bookends.** The person
+  Toss advises appears in the hook, the mid "somebody you love calls you in the dark" beat, and
+  the closing echo. Highest drift exposure on the cast, so it earned the lock even though it is
+  visually plain.
+- **`@SOLOMON` is the origin figure, cast on the project 8 Diderot precedent.** One section, but
+  four contrasting beats inside it (consult, judgment, chaotic house, split kingdom) is enough
+  intra-section drift to lock a single historical figure.
+- **No blue exception, again, because Toss is not blue.** With Toss in green, `@CAMP` sky blue is
+  the only blue on the sheet, exactly the clean shape project 8 first got by moving Toss off cobalt.
+- **`sweatshirt` is caught by the garment grep via the `shirt` substring.** The alternation prints
+  `shirt in ...` for a `crew-neck sweatshirt` line, which still confirms the hex. No need to extend
+  the alternation for sweatshirt.
+
+### TOKEN-LEAK TRAP: reusing a prior cast file as a structural template
+
+Project 9's sheets were modelled on project 8's file for exact V2 shape. A derivation note read
+"same judgement as project 8's `@DIDEROT`", which put a stray `@DIDEROT` into the token set. The
+Step 5 `grep -oE '@[A-Z]+'` caught it. **Any `@TOKEN` in prose is indistinguishable from a cast
+token to the scanner, and `check` will flag it as not in the cast table.** When referring to a
+character from another project in a derivation note, write the plain name ("the Diderot figure in
+project 8"), never the `@` token. Re-run the token grep after writing the header notes, not only
+after the sheets.
+
 ## Resolved conflict: hand shape
 
 The retired prompts contradicted each other. Splayed line fingers win, `mitten` is banned. The
