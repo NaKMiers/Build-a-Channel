@@ -8,22 +8,18 @@ Why You Give Great Advice You Never Take Yourself
 
 ### All five title variants
 
-|     | Formula                        | Title                                                  |
-| --- | ------------------------------ | ------------------------------------------------------ |
-| A   | Why do/can't you \_\_\_?       | Why Can You Fix Everyone's Life But Your Own?          |
+|     | Formula                        | Title                                                   |
+| --- | ------------------------------ | ------------------------------------------------------- |
+| A   | Why do/can't you \_\_\_?       | Why Can You Fix Everyone's Life But Your Own?           |
 | B   | Your brain still thinks \_\_\_ | Your Brain Still Expects a Tribe to Solve Your Problems |
-| C   | The \_\_\_ Effect              | Solomon's Paradox: Why You Can't Take Your Own Advice  |
-| D   | What every human tribe does... | What Every Tribe Did With Big Decisions That You Don't |
-| E   | You never noticed that \_\_\_  | You Never Noticed Your Best Advice Is Never for You    |
+| C   | The \_\_\_ Effect              | Solomon's Paradox: Why You Can't Take Your Own Advice   |
+| D   | What every human tribe does... | What Every Tribe Did With Big Decisions That You Don't  |
+| E   | You never noticed that \_\_\_  | You Never Noticed Your Best Advice Is Never for You     |
 
 ## Description
 
 ```
-A friend calls you at midnight, wrecked over a decision, and in ten minutes you say exactly the right thing. Calm, clear, kind. Then your own turn comes, you freeze for weeks, and you quietly decide this makes you a hypocrite.
-
-It does not. There is a name for the split, and it is named after the king people traveled miles to consult while his own house fell apart around him.
-
-Your mind reasons wisely about everyone's life but your own, because when a problem has your name on it you stand too close to see the shape of it. For almost all of human history you never had to see it alone. Your hardest choices were talked out loud by the whole camp, around the fire, until the group found its way to an answer. This is where the split came from, why the council in your head went quiet, and the one change in the words you use that hands your own advice back to you.
+You give brilliant advice to everyone in your life — except yourself. This is not hypocrisy. It's called Solomon's Paradox, named after the king who was wise for everyone except his own family. Your brain loses perspective on your own problems because you're standing too close to them. For most of human history, big decisions were never made alone — the whole tribe talked it out around the fire. Science now shows that one simple shift, using your own name instead of "I," can hand your wisdom back to you.
 
 🗺️ Chapters:
 0:00  The advice you never take
