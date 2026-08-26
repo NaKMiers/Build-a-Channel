@@ -416,6 +416,71 @@ nine here, which left cadence at 28.1 per minute, still in band.
   them, which also minimises character drift. The only reprise is the ending, handled as two
   PLATEs with Motif CALLBACK per the project 8 pattern so the hook echo gets a clean chain.
 
+## Project 10 (2026-08-25), third vs second: 304 prompts, 348 plan beats, 89 breaks
+
+Clean on every mechanical check. 304 cues to 304 prompts, V2 anchor and lock on all 304 with zero
+V1 strings, timestamps an exact diff apart from the two documented remaps, zero stray tokens, zero
+non-prompt lines, zero adjacent pairs without a blank line, 785 lines, 119 plates, tier counts equal
+to plan exactly (117 CLEAN / 177 LAYERED / 10 ATMOSPHERIC), surfaces summing to 304 with exactly one
+phrase per prompt, zero mixed-surface plates, every break opening a PLATE, no em dash. Built
+data-first with the generator method: plan rows as python data, budgets rebalanced as data, 119
+plate compositions written as prose, variants and callbacks derived mechanically.
+
+Motif: **the near span**, a short charcoal measuring bracket between two marks. The script contrasts
+an ancestral system against a modern one, so per the project 8 rule I looked for the drawing they
+share instead of inventing two. The ancestral half is a short span the camp's hands push closed; the
+modern half is the same span with a lavender phantom on the far end and an endless supply of them.
+One glyph covers 198 of 304 beats and carries the podium, the airport, the band, the camp, the feed
+and the ending.
+
+Final budgets. Registers STORY 33.6, CARD 19.1, DIAGRAM 18.4, HYBRID 12.2, PORTRAIT 11.2,
+SPLIT_OR_SCALE 5.6, **all six inside their bands**, second time that has happened after project 8.
+Surfaces story 39.5, cream 27.6, tinted 16.4, white 10.9, cobalt 5.6, all inside the 5-point
+tolerance. Tiers CLEAN 38.5, LAYERED 58.2, ATMOSPHERIC 3.3. Assets over 348 beats VARIANT 50.0,
+PLATE 34.2, CAPCUT 12.6, CALLBACK 3.2. Text 29.9 percent. Cadence 30.4 beats per minute. Length
+drift first-50 to last-50 was 7.0 percent, but the two ends differ by register (dense story plates
+at the hook, terse card variants at the outro), so compare like for like before reading it as decay.
+
+### Writing 119 plate compositions is the whole job; variants are then free
+
+The 304 prompts cost 119 pieces of prose, not 304. Every VARIANT is generated as
+"preserve the attached source plate, keeping the same `<verbatim surface phrase>`, the same camera
+axis, cast placement, environment geometry, object positions, palette and line hierarchy" plus the
+propagated token clauses plus one named delta. Every CALLBACK is emitted with its plate prose
+rebuilt in full, which is project 8's prescribed fix applied by construction rather than by hand, so
+a severed lineage cannot happen. **The verbatim surface phrase goes into the variant string at
+generation time**, which is project 5's 157-variant repair avoided entirely.
+
+### The project 9 token trap fired again, and the subset check caught it
+
+Two plates carried `@YOU` in their token data while their own composition prose never wrote the
+token: P034, the two identical scene boxes for the travellers, and P108, the four-second timing
+diagram. The token-clause builder then injected "@YOU stays in the frame..." into their variants,
+naming a character the base plate never contained. The audit that catches it is one line and should
+run before every assembly:
+
+    for every non-PLATE beat, plate_tokens[plate] must be a subset of the @TOKENs
+    found by regex in that plate's own prose string
+
+Both were fixed by putting the figure into the plate composition rather than by deleting the token,
+because in both cases the viewer genuinely belongs in the frame. **A plate whose meaning includes a
+character must draw that character, not merely declare it.**
+
+### Chapter tint is named in the plate prose, the surface phrase stays verbatim
+
+Three chapter colours means three different tinted cards, but the grep needs the exact string
+`light tinted chapter card`. The working shape is to emit the verbatim phrase in the surface slot and
+let the plate prose say "on the tinted lavender card" or "on the tinted tan card" as ordinary
+description. Both the check and the renderer get what they need.
+
+### One grammar slip that only a read catches
+
+The surface slot was emitted as "a `<surface phrase>`", which produced "a illustrated story
+environment" on 120 prompts. Every mechanical check passed: the phrase was present, the count was
+one per prompt, the sum was 304. **Read one prompt of each asset type end to end before reporting.**
+Fixed with a single sed, and the surface counts were re-verified afterwards because a sed inside the
+phrase would have broken them.
+
 ## Project 5 rebuilt as V2 (2026-08-04), 293 prompts, 340 plan beats, 41 chain breaks
 
 The numbered folder changed identity: the old project 5 was deleted and

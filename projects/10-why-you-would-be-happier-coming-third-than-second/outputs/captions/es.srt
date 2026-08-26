@@ -1,0 +1,583 @@
+1
+00:00:00,000 --> 00:00:04,920
+El atleta que queda segundo es mediblemente menos feliz que el atleta que queda tercero.
+
+2
+00:00:05,000 --> 00:00:07,920
+No es una sensación. No es a veces.
+
+3
+00:00:08,000 --> 00:00:11,920
+Es un número, sacado de las caras de los medallistas olímpicos en el instante en que terminaron.
+
+4
+00:00:12,000 --> 00:00:15,920
+Ya tienes una explicación lista. La plata es mal perdedora.
+
+5
+00:00:16,000 --> 00:00:22,920
+Pero no es eso. Lo que estás viendo es pensamiento contrafactual, y esa misma máquina está funcionando en ti esta noche.
+
+6
+00:00:23,000 --> 00:00:26,920
+Tu mente nunca puntúa tu vida comparándola con tu vida.
+
+7
+00:00:27,000 --> 00:00:29,920
+La puntúa comparándola con una vida inventada que está justo al lado.
+
+8
+00:00:30,000 --> 00:00:34,920
+Al final vas a saber por qué el casi duele más que el lejos, de dónde viene eso,
+
+9
+00:00:35,000 --> 00:00:38,920
+y la única pregunta que saca de la habitación al rival inventado.
+
+10
+00:00:39,000 --> 00:00:41,920
+Así es como alguien descubrió esto en primer lugar.
+
+11
+00:00:42,000 --> 00:00:48,920
+En 1995, tres psicólogos llamados Victoria Medvec, Scott Madey y Thomas Gilovich
+
+12
+00:00:49,000 --> 00:00:54,920
+tomaron las imágenes de televisión de los Juegos de Barcelona e hicieron algo casi tramposo con ellas.
+
+13
+00:00:55,000 --> 00:01:01,920
+Quitaron el sonido. Quitaron los comentarios, las banderas, los marcadores, cualquier cosa que te dijera quién había ganado qué.
+
+14
+00:01:02,000 --> 00:01:06,920
+Después enseñaron esas caras mudas a personas que no sabían nada de las pruebas y les hicieron una sola pregunta.
+
+15
+00:01:07,000 --> 00:01:11,920
+Cómo se siente esta persona, en una escala que va de la agonía en un extremo al éxtasis en el otro.
+
+16
+00:01:12,000 --> 00:01:14,920
+Los evaluadores no tenían ni idea de que estaban ordenando medallas.
+
+17
+00:01:15,000 --> 00:01:19,920
+Solo estaban leyendo caras. Y las caras salieron en el orden equivocado.
+
+18
+00:01:20,000 --> 00:01:24,920
+En el momento de terminar, los medallistas de bronce puntuaron alrededor de siete sobre diez.
+
+19
+00:01:25,000 --> 00:01:27,920
+Los medallistas de plata puntuaron por debajo de cinco.
+
+20
+00:01:28,000 --> 00:01:33,920
+La persona a la que acababan de ganar casi todos en la final parecía más feliz que la persona que había ganado a todos menos a uno.
+
+21
+00:01:34,000 --> 00:01:40,920
+Objetivamente, la plata es la mejor tarde. La plata está más cerca de la cima del mundo que cualquier ser humano vivo salvo uno.
+
+22
+00:01:41,000 --> 00:01:45,920
+Y la plata parecía duelo. Entonces los investigadores escucharon lo que los atletas dijeron después,
+
+23
+00:01:46,000 --> 00:01:48,920
+y el motivo salió directamente de sus propias bocas.
+
+24
+00:01:49,000 --> 00:01:51,920
+Los medallistas de plata hablaban en casis.
+
+25
+00:01:52,000 --> 00:01:54,920
+Casi lo tenía. Una décima de segundo más.
+
+26
+00:01:55,000 --> 00:01:58,920
+Si el giro hubiera sido más limpio. Los medallistas de bronce hablaban en al menos.
+
+27
+00:01:59,000 --> 00:02:01,920
+Al menos gané una medalla. Al menos estoy en este podio.
+
+28
+00:02:02,000 --> 00:02:08,920
+Mismo podio, mismo día, mismo deporte, y dos mundos invisibles completamente distintos usados como vara de medir.
+
+29
+00:02:09,000 --> 00:02:15,920
+La plata está al lado del oro. El bronce está al lado del cuarto puesto, y el cuarto puesto es un nombre que nadie volverá a decir.
+
+30
+00:02:16,000 --> 00:02:20,920
+Eso es el pensamiento contrafactual, y una vez que lo ves ya no puedes dejar de verlo.
+
+31
+00:02:21,000 --> 00:02:26,920
+Tu mente no evalúa lo que pasó. Construye la versión más cercana de lo que casi pasó, la deja al lado de la realidad,
+
+32
+00:02:27,000 --> 00:02:29,920
+y te informa de la diferencia en forma de emoción.
+
+33
+00:02:30,000 --> 00:02:33,920
+Cuanto más cerca se sienta el mundo inventado, más alto suena el informe.
+
+34
+00:02:34,000 --> 00:02:40,920
+Daniel Kahneman y Amos Tversky demostraron esto con una situación tan corriente que apenas suena a experimento.
+
+35
+00:02:41,000 --> 00:02:47,920
+Dos viajeros quedan atrapados en el mismo atasco, llegan al mismo aeropuerto en el mismo minuto, y los dos pierden su vuelo.
+
+36
+00:02:48,000 --> 00:02:51,920
+Uno lo perdió por media hora. El otro lo perdió por cinco minutos.
+
+37
+00:02:52,000 --> 00:02:56,920
+Cuál de los dos está más disgustado. Todo el mundo sabe la respuesta al instante, y esa es la cuestión.
+
+38
+00:02:57,000 --> 00:03:00,920
+Aproximadamente noventa y seis de cada cien personas dijeron el que lo perdió por cinco minutos.
+
+39
+00:03:01,000 --> 00:03:03,920
+Pero mira lo que realmente les pasó a cada uno. Resultado idéntico.
+
+40
+00:03:04,000 --> 00:03:08,920
+La misma noche en el mismo aeropuerto, la misma reunión perdida, el mismo hotel.
+
+41
+00:03:09,000 --> 00:03:11,920
+Nada en el mundo real los separa.
+
+42
+00:03:12,000 --> 00:03:16,920
+Lo único que cambia es lo fácil que resulta imaginar la otra versión, esa en la que el tráfico se despejó un poco antes.
+
+43
+00:03:17,000 --> 00:03:19,920
+Cinco minutos es un mundo que casi puedes tocar.
+
+44
+00:03:20,000 --> 00:03:26,920
+Media hora no lo es. Y tu mente te cobra emocionalmente por la distancia hasta el mundo que casi puedes tocar, no por nada de lo que ocurrió.
+
+45
+00:03:27,000 --> 00:03:29,920
+Así que el casi no es una pérdida mayor.
+
+46
+00:03:30,000 --> 00:03:36,920
+Es una distancia más corta hasta un lugar imaginario. Lo cual plantea una pregunta incómoda sobre cómo has llevado la cuenta toda tu vida,
+
+47
+00:03:37,000 --> 00:03:39,920
+porque estás aplicando esto a muchísimo más que medallas y vuelos.
+
+48
+00:03:40,000 --> 00:03:43,920
+El trabajo que se quedó entre dos candidatos duele más que los cincuenta que nunca contestaron.
+
+49
+00:03:44,000 --> 00:03:47,920
+El mensaje que fue leído y no respondido duele más que el silencio.
+
+50
+00:03:48,000 --> 00:03:52,920
+La relación que casi funcionó te persigue de una forma en que no lo hacen las que claramente nunca podrían.
+
+51
+00:03:53,000 --> 00:03:55,920
+En todos los casos el dolor no sigue el tamaño de lo que perdiste.
+
+52
+00:03:56,000 --> 00:03:59,920
+Sigue lo vívidamente que puedes imaginar la versión en la que salió al revés.
+
+53
+00:04:00,000 --> 00:04:05,920
+Y antes de que decidas que tu cerebro está roto, entiende lo que el psicólogo Neal Roese pasó años demostrando.
+
+54
+00:04:06,000 --> 00:04:08,920
+El pensamiento contrafactual no es una avería.
+
+55
+00:04:09,000 --> 00:04:13,920
+Es preparación. Cuando tu mente genera el ojalá, no te está torturando por diversión,
+
+56
+00:04:14,000 --> 00:04:16,920
+está extrayendo una lección y apuntándola hacia adelante.
+
+57
+00:04:17,000 --> 00:04:21,920
+Las personas que hacen esas comparaciones hacia arriba después de fallar de hecho rinden mejor en el siguiente intento.
+
+58
+00:04:22,000 --> 00:04:28,920
+El escozor es el mecanismo de entrega. Duele precisamente para que lo recuerdes, y duele más en las distancias que se podían cerrar,
+
+59
+00:04:29,000 --> 00:04:31,920
+porque son las únicas que merece la pena recordar.
+
+60
+00:04:32,000 --> 00:04:37,920
+Y ahí es exactamente donde tienes que salir del laboratorio, porque una máquina que te castiga por los casi
+
+61
+00:04:38,000 --> 00:04:41,920
+solo tiene sentido en un mundo que ya no existe.
+
+62
+00:04:42,000 --> 00:04:44,920
+Retrocede doscientos mil años.
+
+63
+00:04:45,000 --> 00:04:50,920
+Vives en un grupo de unas treinta personas, y vas a pasar toda tu vida dentro de él.
+
+64
+00:04:51,000 --> 00:04:55,920
+Cada persona con la que te van a comparar alguna vez está ahora mismo a distancia de un grito.
+
+65
+00:04:56,000 --> 00:04:59,920
+No hay ninguna escalera que suba hasta perderse de vista. No hay siguiente nivel.
+
+66
+00:05:00,000 --> 00:05:05,920
+Hay unas treinta caras, y tu posición entre ellas es el marcador entero.
+
+67
+00:05:06,000 --> 00:05:08,920
+Fíjate ahora en algo raro de ese mundo.
+
+68
+00:05:09,000 --> 00:05:12,920
+Allí, una sola comparación aportaba información.
+
+69
+00:05:13,000 --> 00:05:18,920
+La persona justo por delante de ti. No el cazador legendario a tres campamentos que nunca ibas a conocer,
+
+70
+00:05:19,000 --> 00:05:25,920
+ni un mejor del mundo abstracto, sino esa persona concreta que estaba entre tú y una porción mejor de carne,
+
+71
+00:05:26,000 --> 00:05:29,920
+un sitio más cerca del fuego, la pareja que querías.
+
+72
+00:05:30,000 --> 00:05:32,920
+Esa distancia era lo bastante corta como para cerrarla.
+
+73
+00:05:33,000 --> 00:05:38,920
+Mira lo que hicieron, hazlo un poco mejor la temporada siguiente, y avanzabas.
+
+74
+00:05:39,000 --> 00:05:45,920
+Mientras tanto la distancia hasta alguien muy por encima de ti no aportaba nada, porque ningún esfuerzo de ese año iba a cruzarla.
+
+75
+00:05:46,000 --> 00:05:51,920
+Un cerebro que sentía la distancia corta como agonía y la larga como un encogimiento de hombros no estaba siendo cruel.
+
+76
+00:05:52,000 --> 00:05:55,920
+Estaba gastando tu atención en el único trecho que de verdad podías caminar.
+
+77
+00:05:56,000 --> 00:05:58,920
+Lo que había en juego debajo de eso no era el orgullo.
+
+78
+00:05:59,000 --> 00:06:03,920
+El antropólogo James Woodburn estudió sociedades que viven al día,
+
+79
+00:06:04,000 --> 00:06:08,920
+que toman lo que da la tierra y lo consumen enseguida, y documentó con qué ferocidad
+
+80
+00:06:09,000 --> 00:06:11,920
+esos grupos se mantienen planos.
+
+81
+00:06:12,000 --> 00:06:15,920
+Nadie puede acumular. Nadie puede subir.
+
+82
+00:06:16,000 --> 00:06:21,920
+La igualdad allí no es un valor amable, se impone a diario, porque un grupo donde una persona puede acaparar
+
+83
+00:06:22,000 --> 00:06:26,920
+estatus y comida es un grupo en el que alguien acaba muerto.
+
+84
+00:06:27,000 --> 00:06:31,920
+Richard Lee, que vivió años entre los Ju/'hoansi del Kalahari,
+
+85
+00:06:32,000 --> 00:06:34,920
+se topó personalmente con esa imposición.
+
+86
+00:06:35,000 --> 00:06:41,920
+Por Navidad compró al campamento un buey enorme, el animal más grande que encontró, esperando alegría.
+
+87
+00:06:42,000 --> 00:06:45,920
+En cambio todos le dijeron que era un saco de huesos.
+
+88
+00:06:46,000 --> 00:06:48,920
+Piel y costillas. Apenas valía la caminata.
+
+89
+00:06:49,000 --> 00:06:52,920
+Estaba desconcertado y algo dolido, hasta que se lo explicaron con claridad.
+
+90
+00:06:53,000 --> 00:06:59,920
+Cuando un hombre mata un animal grande, empieza a creerse un gran hombre, y un gran hombre acaba haciendo daño a alguien.
+
+91
+00:07:00,000 --> 00:07:05,920
+Así que el campamento se burla de la carne. Le enfrían el corazón mientras aún es joven, y lo mantienen manso.
+
+92
+00:07:06,000 --> 00:07:10,920
+Quédate un momento con lo que eso significa. Tus antepasados no solo vivían sin escalera de estatus.
+
+93
+00:07:11,000 --> 00:07:16,920
+Desmontaban activamente el peldaño más alto, cada vez que empezaba a formarse uno, a propósito,
+
+94
+00:07:17,000 --> 00:07:22,920
+durante doscientos mil años. El marcador era pequeño, era local, era toda la gente que conocías,
+
+95
+00:07:23,000 --> 00:07:26,920
+y el propio grupo trabajaba para mantener las distancias cortas.
+
+96
+00:07:27,000 --> 00:07:30,920
+Tu máquina del casi se construyó para eso. Treinta rivales, distancias que se podían cerrar,
+
+97
+00:07:31,000 --> 00:07:34,920
+y una revancha la temporada siguiente con la misma gente.
+
+98
+00:07:35,000 --> 00:07:38,920
+Ahora abre el móvil. El grupo ya no son treinta personas.
+
+99
+00:07:39,000 --> 00:07:45,920
+Son todos. Tu conjunto de comparación no tiene techo ni suelo y se renueva cada vez que mueves el pulgar.
+
+100
+00:07:46,000 --> 00:07:48,920
+Y la máquina que llevas dentro no lo sabe.
+
+101
+00:07:49,000 --> 00:07:54,920
+Sigue haciendo lo único que ha hecho siempre, buscar a la persona justo por delante de ti, aquella cuya distancia parece cerrable,
+
+102
+00:07:55,000 --> 00:08:00,920
+e informar de esa distancia como dolor. Solo que ahora hay un suministro infinito de ellas,
+
+103
+00:08:01,000 --> 00:08:07,920
+ordenadas y servidas por un feed, cada una recortada con cuidado para parecer una vida que tenías a quince centímetros.
+
+104
+00:08:08,000 --> 00:08:13,920
+Ese es el desajuste. No que te compares con otros, tus antepasados lo hacían constantemente
+
+105
+00:08:14,000 --> 00:08:16,920
+y eso los mantuvo vivos.
+
+106
+00:08:17,000 --> 00:08:23,920
+Es que el casi antes era raro, local, y venía seguido de una revancha, y ahora es interminable,
+
+107
+00:08:24,000 --> 00:08:26,920
+global, y no viene seguido de nada.
+
+108
+00:08:27,000 --> 00:08:33,920
+Pierdes contra un desconocido de otro país cuya vida real no puedes ver, en un marcador que nadie acordó,
+
+109
+00:08:34,000 --> 00:08:39,920
+y sin temporada siguiente. El medallista de plata al menos tiene otros Juegos.
+
+110
+00:08:40,000 --> 00:08:42,920
+A ti te entregan una medalla de plata cuarenta veces antes de comer.
+
+111
+00:08:43,000 --> 00:08:46,920
+Así que aquí está el cambio, y es más pequeño de lo que suena.
+
+112
+00:08:47,000 --> 00:08:49,920
+No puedes impedir que tu mente construya el otro mundo.
+
+113
+00:08:50,000 --> 00:08:54,920
+Eso ocurre por debajo del nivel de la elección, y de verdad está intentando ayudar.
+
+114
+00:08:55,000 --> 00:08:58,920
+Pero el mundo que construye es invisible para ti, y ese es todo el problema.
+
+115
+00:08:59,000 --> 00:09:01,920
+Sientes el veredicto sin haber visto nunca el tribunal.
+
+116
+00:09:02,000 --> 00:09:04,920
+Así que dilo en voz alta.
+
+117
+00:09:05,000 --> 00:09:08,920
+Cuando llegue el bajón, nombra aquello con lo que te están comparando.
+
+118
+00:09:09,000 --> 00:09:12,920
+No qué te pasa a ti, sino con qué se está midiendo esto.
+
+119
+00:09:13,000 --> 00:09:15,920
+Y después haz la única pregunta que importa.
+
+120
+00:09:16,000 --> 00:09:18,920
+Hay revancha. Si la hay, quédatela.
+
+121
+00:09:19,000 --> 00:09:22,920
+Ese escozor es la señal de preparación de Roese haciendo su trabajo,
+
+122
+00:09:23,000 --> 00:09:27,920
+y está señalando una distancia que de verdad puedes cerrar, así que déjala.
+
+123
+00:09:28,000 --> 00:09:34,920
+Pero si no hay revancha, si el vuelo ya se fue, si el trabajo se lo dieron a otro hace seis meses,
+
+124
+00:09:35,000 --> 00:09:41,920
+si la versión de ti que se está usando como vara nunca estuvo disponible, entonces la comparación ya no tiene trabajo que hacer.
+
+125
+00:09:42,000 --> 00:09:46,920
+No te está preparando para nada. Solo está de pie en tu cocina cobrándote alquiler.
+
+126
+00:09:47,000 --> 00:09:51,920
+Ese es el momento en que puedes hacer lo que el medallista de bronce hace automáticamente.
+
+127
+00:09:52,000 --> 00:09:57,920
+Date la vuelta. Mira al otro lado. Porque siempre hay otro mundo inventado disponible,
+
+128
+00:09:58,000 --> 00:10:03,920
+ese en el que no subiste al podio en absoluto, y es exactamente igual de real que el que tu mente eligió para ti.
+
+129
+00:10:04,000 --> 00:10:06,920
+Es decir, nada real.
+
+130
+00:10:07,000 --> 00:10:13,920
+Así que esta noche, solo esto. El atleta que quedó segundo nunca estuvo triste por la medalla que llevaba al cuello.
+
+131
+00:10:14,000 --> 00:10:16,920
+Estaba triste por una medalla colgada en un mundo que nunca ocurrió.
+
+132
+00:10:17,000 --> 00:10:22,920
+Y tú también, casi todas las noches, de pie en tu vida real al lado de una persona que no existe,
+
+133
+00:10:23,000 --> 00:10:25,920
+perdiendo contra ella en silencio, una y otra vez.
+
+134
+00:10:26,000 --> 00:10:31,920
+No tienes que ganar esa carrera. Solo tienes que levantar la vista y notar que quien te estaba ganando nunca estuvo en la habitación.
+
+135
+00:10:32,000 --> 00:10:35,920
+Y fíjate en lo fácil que ves todo esto en otras personas.
+
+136
+00:10:36,000 --> 00:10:41,920
+Cuando un amigo se está destrozando en silencio por una vida que nunca estuvo realmente disponible, lo detectas en unos cuatro segundos.
+
+137
+00:10:42,000 --> 00:10:45,920
+Tu propia versión sigue siendo completamente invisible.
+
+138
+00:10:46,000 --> 00:10:51,920
+Así que una última pregunta antes de irte. Eres tú a quien tus amigos llaman a medianoche, la persona que dice lo tranquilo,
+
+139
+00:10:52,000 --> 00:10:56,920
+lo correcto, en diez minutos, y que siempre parece saber exactamente qué deberían hacer.
+
+140
+00:10:57,000 --> 00:11:03,920
+Y entonces te toca a ti, y te quedas paralizado tres semanas por una decisión que a cualquier otro le habrías resuelto en una sola frase.
+
+141
+00:11:04,000 --> 00:11:07,920
+Si ese eres tú, no eres un hipócrita y no eres débil.
+
+142
+00:11:08,000 --> 00:11:11,920
+Estás ejecutando un fallo de hace tres mil años, tiene nombre,
+
+143
+00:11:12,000 --> 00:11:18,920
+y hay un cambio muy pequeño en cómo te hablas a ti mismo que te devuelve toda esa sabiduría desperdiciada.
+
+144
+00:11:19,000 --> 00:11:21,920
+Ese es el vídeo que tienes ahora mismo en pantalla.
+
+145
+00:11:22,000 --> 00:11:24,920
+Por qué das consejos buenísimos que tú nunca sigues.
+
+146
+00:11:25,000 --> 00:11:26,420
+Mira ese a continuación.

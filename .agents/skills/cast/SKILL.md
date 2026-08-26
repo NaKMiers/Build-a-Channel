@@ -183,7 +183,7 @@ grep -oiE '(no|never|not) +mittens?|mittens?' "$F" | grep -civE '^(no|never|not)
 # every garment colour distinct, and nothing off palette or muted
 for t in $(grep -oE '^\| @[A-Z]+' "$F" | tr -d '| @'); do
   printf '%-10s %s\n' "@$t" "$(sed -n "/^## $t.jpeg/,/^## [A-Z]*.jpeg/p" "$F" \
-    | grep -oE '(hoodie|shirt|parka|tunic|robe|vest|wrap|coat|dress|casing ring|shell)[^,]*\(#[0-9A-F]{6}\)' \
+    | grep -oE '(hoodie|shirt|parka|tunic|robe|vest|wrap|coat|dress|jacket|singlet|casing ring|shell)[^,]*\(#[0-9A-F]{6}\)' \
     | head -1)"
 done
 grep -oE '#[0-9A-F]{6}' "$F" | sort -u           # cross-check against the palette

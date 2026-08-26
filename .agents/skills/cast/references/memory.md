@@ -388,6 +388,138 @@ character from another project in a derivation note, write the plain name ("the 
 project 8"), never the `@` token. Re-run the token grep after writing the header notes, not only
 after the sheets.
 
+## Project 10 (2026-08-25), third vs second - a 6-entry cast and a concept drawn as a person
+
+`@YOU` (Toss, open zip-up track jacket in orange `#F5820D` over a charcoal `#3F3F46` tee, no
+hood), `@SILVER` (red `#D94040` racerback singlet, flat swept fringe, white medal disc),
+`@BRONZE` (grass green `#3A9E3A` round-neck singlet, high topknot, tan `#C4965A` medal disc),
+`@RIVAL` (personified concept, fully lavender `#B79AD9` including the head, dashed contour),
+`@HUNTER` (Ju/'hoansi, brown `#8B5E3C` hide wrap with tan hem trim), `@CAMP` (group of six,
+sky blue `#6EB5E8` wraps, no trim). Chapter palette Dusty teal `#67A6A3`, Tan `#C4965A`,
+Lavender `#B79AD9`. Six entries, at the cap. Nothing carried over.
+
+### Two individuals, not one podium group, when the video's claim IS the comparison
+
+The obvious compression is a single `@PODIUM` group entry covering both medalists. It is wrong.
+The thesis is a difference between two people two steps apart, and a group entry cannot hold a
+comparison between two of its own members. Same shape as the two friend groups in project 3.
+**When the script's central claim is A versus B, both A and B are cast, and the 6-entry budget
+gets planned around that from the start.**
+
+### A personified concept can be person-shaped, and the unreality goes in the construction
+
+`@RIVAL` is the invented life the mind scores you against. It had to be a person shape, and it
+could not be Toss in ghost form, because Toss only ever plays `@YOU`. Three decisions made it work:
+
+- **Fully filled, head included, in one flat saturated colour.** Every other character on this
+  channel has a flat white head. Breaking that one rule is the instant read of "not a real person",
+  and it costs nothing else.
+- **Broken dashed outer contour, thin solid internal lines.** The dash carries the unreality; the
+  solid internals keep the design legible.
+- **A complete face, always.** The project 2 white-egg failure applies directly here. The NEGATIVE
+  enumerates no faceless head, no blank head, no egg-shaped blank head, no solid black silhouette,
+  and additionally no transparency, no fade, no glow, no ghost trail, no sheet-ghost shape, because
+  every model's first instinct for "a person who is not there" is a translucent ghost.
+- Its four states of use are the script's own arc rather than generic poses: standing beside a real
+  figure, holding up the phantom medal, being pointed at by a bare charcoal arrow with no word, and
+  being crossed out by the episode's recurring red X while the contour opens up.
+
+### A cast member may carry a chapter colour, as a written exception
+
+`@RIVAL` is lavender and lavender is a chapter colour, which normally means the figure vanishes into
+its own ground. It is allowed here because @RIVAL **is** the embodiment of that chapter rather than a
+figure standing inside it. The exception is written into the cast file with its rule: @RIVAL never
+stands on a lavender ground, and lavender cards are reserved for the @RIVAL-absent card and diagram
+beats. Same shape as the group-blue exception shipped in projects 2, 3 and 8.
+
+### The colour cascade ran medalists-first, and that forced Toss off the obvious choice
+
+Assigning `@SILVER` red and `@BRONZE` green first, because that pair is the thesis in two colours,
+made coral `#D96F5F` unusable for Toss: coral and red `#D94040` are the same family and the two
+share frames. Toss took orange `#F5820D` instead, the only remaining saturated colour that also
+holds against green and lavender on a cream ground. **Assign the colours that carry the argument
+before the colours that carry the protagonist.** Project 8 assigned Toss last for a similar reason
+and it worked there too.
+
+### Silhouette separation for two same-era, same-costume figures
+
+`@SILVER` and `@BRONZE` are the same era in the same kind of kit, so per the project 2 rule they are
+separated three ways and never by facial detail: flat swept fringe versus high round topknot, narrow
+racerback singlet versus boxy round-neck singlet with broad shoulder panels, and a white medal disc
+versus a tan one. Build is also differentiated, taller and leaner versus shorter and stockier.
+
+### Medals are a text trap AND a trademark trap
+
+A medal disc invites an engraved numeral, a year, and five interlocking rings. Every medal panel
+across three sheets enumerates: no numeral, no 1, no 2, no 3, no year, no date, no engraved
+lettering, no interlocking rings, no Olympic rings, no Olympic emblem, no national flag, no team
+badge, no brand logo, no maker mark. The rings negative is doing double duty, keeping the sheet
+text-free and keeping a real trademark out of the render. Athletics kit adds two more: no athlete
+number bib and no sponsor mark.
+
+### THE ACCEPTED SHEET DROPPED EVERY FOOT, and that is now the first thing to check
+
+The user generated `YOU.png`, kept it, and asked for the other five prompts again. Reading the
+accepted render against its own prompt is the cheapest calibration available and it should be done
+before rewriting anything, because it says what THIS renderer actually honours.
+
+Held, first time, no fixes needed: the two-peak tuft, the flat-white head at roughly one third of
+height, solid black oval eyes with thick brows, splayed line fingers, the two-contour white-filled
+tube limbs, the hood removed with no bump and no drawstring, the stand collar, the open jacket with
+the charcoal tee showing, the panel layout with pale-grey dividers, and zero text anywhere.
+
+Dropped: **every foot, in all ten full-body panels.** Each leg ends in a bare rounded tube tip. The
+prompt asked for feet twice, once in the KEEP block and once inside LIMB CONSTRUCTION, and it was
+still not enough. This is the same failure project 6 recorded on `@FORAGER`, which means the fix
+that worked there (a sentence inside a larger block) does not hold on its own.
+
+**The fix that replaces it: give feet their own labeled block with a shape, a size, a fail test and
+a COUNT.** The count is the part that is new and the part that matters, because a model that will
+not honour an adjective will often honour an arithmetic check:
+
+> FEET, its own rule, check this LAST and check it by counting: EVERY leg in EVERY full-body panel
+> ends in a small closed outlined FOOT ... about one third of the head's width ... clearly wider
+> than the leg tube. A leg that simply ends in a bare rounded tube tip is a FAILED SHEET. There are
+> three full-body turnaround panels and four full-body pose panels, so before finishing count
+> FOURTEEN feet on the canvas.
+
+`no missing feet` and `no leg ending in a bare tube tip` also went into every NEGATIVE. Generalise
+the project 6 rule: a construction detail that has now failed twice needs its own block AND a
+countable target, not just a measurement.
+
+Also crept in: faint grey shading on the jacket and a soft gradient on the phone prop, despite
+`no gradients` and `no drop shadows` already being in the NEGATIVE. Each sheet now carries a
+dedicated `FLAT FILL, strictly enforced` block naming soft shading, grey gradient across a fill,
+airbrushed edge, drop shadow, contact shadow, prop shading, highlight and sheen individually.
+**A negative buried in a 40-item list is weaker than a three-line positive block.**
+
+Two design changes made in the same pass, both risk reduction rather than redesign:
+
+- **`@CAMP` went from six figures to five.** Six identical figures across three group angles plus
+  four group panels is a lot of small marks; five keeps each one large enough to read.
+- **`@RIVAL`'s non-white head got its own numbered instruction with a fail test.** Every other
+  character on this channel has a flat-white head, so that is the renderer's prior and a lavender
+  head is the single instruction most likely to be silently ignored. It is now stated as the first
+  of two mandatory construction choices, repeated in CONSISTENCY, and negated as `no white head, no
+  white fill anywhere on this figure`.
+
+The generated file is `characters/YOU.png`, not `.jpeg`. Same mismatch project 5 recorded. Flagged
+in the Generating section rather than renamed.
+
+### Garment alternation extended again: `jacket` and `singlet`
+
+Fifth and sixth time the Step 5 alternation has been short. `track jacket` and `singlet` both
+printed blank, which is indistinguishable from "no colour assigned". Both added to
+`cast/SKILL.md`. The alternation is now
+`hoodie|shirt|parka|tunic|robe|vest|wrap|coat|dress|jacket|singlet|casing ring|shell`.
+
+### The non-graphic kill, reused verbatim from project 8
+
+Line 25 is the insulting-the-meat scene again, a different script reaching the same ethnography.
+`@HUNTER`'s prop is a carrying pole plus an abstract wrapped bundle, negated for animal, animal
+form, fur, hide pattern, head, horns, legs, hooves, tail, face, eyes, blood, red marks, meat, bone
+and carcass. This is now a settled channel solution, not a per-video judgement call.
+
 ## Resolved conflict: hand shape
 
 The retired prompts contradicted each other. Splayed line fingers win, `mitten` is banned. The

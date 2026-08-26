@@ -115,6 +115,83 @@ Craft notes:
   the two-number thumbnail layout should pair 40-vs-1 (the camp that decided for you vs you
   alone) rather than reach for a Baumeister-style ratio.
 
+## Project 10, third vs second, cited (2026-08-25, counterfactual thinking)
+
+Victoria Medvec, Scott Madey and Thomas Gilovich (1995, "When Less Is More", JPSP: Barcelona
+1992 footage with the sound cut, naive raters scoring faces on an agony-to-ecstasy scale,
+bronze about 7.1 and silver under 5 at the moment of finishing, plus the interview analysis
+where silver speaks in "I almost" and bronze in "at least"), Daniel Kahneman and Amos Tversky
+(the simulation heuristic, the two travellers who miss flights by thirty minutes and by five,
+roughly 96 out of 100 name the five-minute man as more upset), Neal Roese (counterfactuals as
+preparation, upward comparison hurts but improves the next attempt), James Woodburn
+(immediate-return societies, equality actively enforced rather than merely valued), Richard B.
+Lee (the Kalahari Christmas ox derided as a bag of bones, insulting the meat to cool a young
+hunter's heart). Three behavioral scientists plus two anthropologists.
+
+Lee is reused from project 9 but doing entirely different work: project 9 used him for camp
+consensus decision-making, project 10 uses him for active rank leveling. Woodburn is fresh,
+first use on the channel, and was drawn from the standing list of unspent anthropologists.
+
+Craft notes:
+
+- **The Zeigarnik-to-Masicampo shape again, third time.** The mechanism that opens the loop
+  (counterfactual thinking scores you against an invented world) and the finding that closes
+  it (Roese: that same signal is preparation, so it only has a job when a rematch exists) come
+  from the same research lineage. The shift falls out of the science instead of being bolted
+  on. This shape keeps winning. Look for it at planning time, before writing.
+- **The user asked for a shock-first hook, and the fix was to spend beat 1 on the shock rather
+  than on atmosphere.** The four-beat budget assumes beat 1 is a relatable modern moment. Here
+  beat 1 is a counterintuitive verifiable claim, "the athlete who comes second is measurably
+  less happy than the athlete who comes third", delivered by word 15, which is about 0:05 at
+  169 wpm. That is earlier than project 7's 0:06 reversal, the previous channel best. The
+  formal "but" then lands at word 44 (0:16) and the mechanism is named at word 53 (0:19).
+  **When a topic has a provable counterintuitive fact, lead with the fact.** The viewer's own
+  moment can arrive in beat 2, because the fact is what makes them stay to hear it.
+- Beat 1 runs to word 33 rather than 30. Acceptable only because it is all claim and no
+  scene-setting. Do not use this as licence to widen beat 1 for prose.
+- **First next-video tease the channel has written, and the user rewrote the first attempt.**
+  Draft 1 was indirect: a thematic bridge ending in "there is a whole video about it waiting
+  for you when this one ends", never naming the video. The user rejected that shape and asked
+  for a direct introduction, specifically "if you're someone who..." or a question that makes
+  the viewer curious, followed by naming the next video outright. **The accepted shape, in
+  order:**
+  1. One sentence of thematic bridge, no more. Here: you can see a friend's invisible
+     comparison in four seconds and never your own.
+  2. A self-selecting question aimed straight at the viewer. "Are you the one your friends
+     call at midnight, the person who..." The viewer has to answer yes in their head.
+  3. The relief line, so the tease still obeys the never-shame guardrail. "You are not a
+     hypocrite and you are not weak."
+  4. The promise, compressed to one sentence, naming that it has a name and a small fix
+     without giving either away.
+  5. The end-screen pointer plus the title spoken aloud. "That is the video on your screen
+     right now. Why you give great advice you never take yourself. Watch that one next."
+  The bridge must be thematic, not promotional: this script's shift is "name the invisible
+  comparison", and Solomon's paradox is that same blindness pointed at advice. **A tease works
+  only when the two mechanisms genuinely touch.**
+- **ORDER, corrected by the user on the same run: echo first, then bridge, then CTA. The
+  script's last spoken words are "Watch that one next."** The first attempt put the CTA before
+  the echo, reasoning that `channel-dna.md` requires the closing line to echo the opening. The
+  user asked for the CTA to be last. Both are satisfiable at once, and the final order is
+  strictly better than either draft:
+  1. the echo paragraph, opening "So tonight, just this", closing the argument emotionally,
+  2. the one-sentence bridge, opening "And notice how easily you see all of this in other
+     people", stepping back out,
+  3. the CTA, ending on the naked instruction.
+  The echo rule is still honoured, because the echo is still the closing line of the narration
+  proper. The CTA is a separate register, spoken to the viewer as a viewer rather than as the
+  subject of the essay, which is exactly why it can sit outside the echo without breaking it.
+  It also lands the instruction at the precise second the YouTube end screen appears.
+  **Default to this order for every future video that carries an end-screen tease.**
+- The direct tease costs one question, taking the script to 4 rather than the fixture's 3.
+  That is a deliberate user instruction, not drift. A CTA question is not narration rhythm.
+  Do not count it against the question-density discrepancy below.
+- Numeric material for the thumbnail, and this one is finally rich: 7.1 vs under 5 on the
+  agony-to-ecstasy scale, 2nd vs 3rd, 96 out of 100, 30 minutes vs 5 minutes, a band of 30,
+  200,000 years. The 30-vs-5 and the 2nd-vs-3rd pairs are both genuinely subtractable, which
+  is what the two-number thumbnail layout has been starved of since project 7.
+- 2,069 words, 4 questions across 157 sentences. 3 of those are narration questions, matching
+  the fixture; the 4th is the end-screen CTA question the user asked for.
+
 ## OPEN DISCREPANCY: question density
 
 `.agents/rules/channel-dna.md` says "Question every 4 to 6 sentences". **The accepted

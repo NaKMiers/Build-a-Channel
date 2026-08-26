@@ -16,6 +16,7 @@ Self-improving notes for topic selection. Single canonical copy, no Claude-side 
 | 7 | Why Getting Angry Sometimes Gets You What You Want | scaffolded 2026-08-04, no script yet |
 | 8 | Why Your New Phone Makes Everything Else Look Cheap | scaffolded 2026-08-12, the Diderot effect, current holder of number 8 |
 | 9 | Why You Give Great Advice You Never Take Yourself | scaffolded 2026-08-19, Solomon's paradox, no script yet |
+| 10 | Why You Would Be Happier Coming Third Than Second | scaffolded 2026-08-25, counterfactual thinking, no script yet |
 | old 8 | Why You Stay Quiet When You Know The Room Is Wrong | abandoned 2026-08-12, unpublished, artifacts recoverable at `c9f048f` |
 | old 9 | Why You Think Everyone Is Watching When Nobody Is | abandoned 2026-08-12, unpublished, artifacts recoverable at `c9f048f` |
 
@@ -77,6 +78,34 @@ deleted-but-recoverable projects in git history, not just the working tree, befo
 proposing a title.
 
 ## Proposed but not picked
+
+### 2026-08-25, batch 14, user picked title 5 (counterfactual thinking -> project 10)
+
+The user typed `4`, interrupted the response, then typed `5`. Asked to disambiguate, they
+confirmed **only 5**. **An interrupt followed by a single different number is a correction,
+not a second pick.** Ask rather than scaffolding both, because a stray folder consumes a
+project number. The other four remain eligible. Batch was deliberately spread into themes the
+channel has not touched yet, all five carrying hard quantities, and it answers the standing
+batch 9 steer toward a mistake the viewer is making right now without knowing it.
+
+| Title | Theme | Numeric material available |
+| --- | --- | --- |
+| Why Everything Takes Twice As Long As You Planned | habit and willpower | Buehler, Griffin and Ross 1994 planning fallacy, students predicted 33.9 days and took 55.5; only about 30 percent finished by their own estimate; Woodburn immediate-return economies |
+| Why You Know Far Less Than You Feel You Know | identity and knowledge | Rozenblit and Keil 2002 illusion of explanatory depth, confidence ratings collapse after trying to explain a zipper or a toilet; Sloman and Fernbach community of knowledge; Henrich on cumulative culture |
+| Why You Finish The Movie You Stopped Enjoying | scarcity and loss aversion | Arkes and Blumer 1985 theater season tickets, full-price holders attended more plays than discount holders; Kahneman and Tversky loss aversion |
+| Why You Remember Things That Never Happened | memory | Loftus and Palmer 1974, "smashed" produced 40.8 mph vs "hit" 31.8 mph, and 32 percent falsely recalled broken glass; oral tradition as reconstruction rather than storage |
+
+Selected: project 10, **Why You Would Be Happier Coming Third Than Second**, counterfactual
+thinking. Research to reuse so `script` does not rediscover it: Medvec, Madey and Gilovich
+1995 on Olympic medalists, where bronze winners were rated visibly happier than silver
+winners because silver compares upward to gold and bronze compares downward to no medal at
+all. Psychology is counterfactual thinking, the invented nearby world that the real outcome
+gets scored against. Anthropology is the rank ladder of a small band, where your share of
+food and mates tracked your position relative to the person immediately above you, so
+upward comparison was the only comparison worth making. Modern mismatch: the ladder now has
+no top and no fixed rungs. **This topic is number-rich**, unlike projects 8 and 9, so the
+thumbnail stage gets its two subtractable numbers back from the silver-versus-bronze
+happiness ratings. Pull the exact rating figures during `script`.
 
 ### 2026-08-19, batch 13, user picked title 5 (Solomon's paradox -> project 9)
 

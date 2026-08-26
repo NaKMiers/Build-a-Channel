@@ -225,6 +225,57 @@ ws=[x for x in (data if isinstance(data,list) else data.get("words",data)) if x.
 
 Do not assume the cache schema. Check `type()` first, or use the tolerant line above.
 
+## Project 10 (2026-08-25) - a part saved to the wrong folder, caught by arithmetic
+
+3 parts at 256 kbps (uniform, no VBR risk): 4m32.0s, 4m45.3s, 2m09.2s, combined **11m26.5s**,
+Xing header agreeing with the frames. Single ElevenLabs forced-alignment call on `audios/full.mp3`
+against the whole script, same as projects 5, 6, 8 and 9.
+
+**304 cues**, median 1.9s, last cue `[11:25]`, aligned speech ending at 686.2s of 686.5s audio,
+transcript text word-for-word identical to the script at 2070 words, no malformed lines. 26.6 cues
+per minute, on the V2 profile's shape. Duration is inside the channel-dna 10 to 14 minute spec.
+
+Whole-file rate 2070 / 686.5 = **3.02 wps**; rolling 30s window returned median 3.00, max 3.77 at
+210s, largest silence 1.3s. Rolling median equals the whole-file figure, so the read was uniform.
+Quota checked first: free tier, 2138 of 10000 used, 7862 remaining against a roughly 760 credit
+call. Key authenticated and was in scope on the first try.
+
+### THE FIND: part 3 was in `outputs/`, not `audios/`, and had no file extension
+
+`audios/` held only `part-1.mp3` and `part-2.mp3`. A 4.1 MB file named `part-3`, no extension, sat
+in `outputs/`. Taking `audios/` at face value would have produced a transcript covering 9m17s of a
+11m26s recording, silently missing the entire ending including the end-screen call to action, and
+**forced alignment would not have raised an error**, it would have compressed the script's last 400
+words into the wrong timestamps.
+
+**The check that caught it costs nothing and should run every time, before any API call:** divide
+the script's word count by the measured audio duration and compare against the narrator's band.
+
+- 2070 words / 557.3s (two parts) = **3.71 wps**, far outside the measured band of 2.71 to 3.21.
+- 2070 words / 686.5s (three parts) = **3.02 wps**, mid-band.
+
+`file` confirmed the stray was MPEG layer III at 256 kbps 44.1 kHz mono, the identical encode
+profile to the other two parts, and its mtime sat three minutes after part 2. The file was moved to
+`audios/part-3.mp3` and the run proceeded normally.
+
+Transferable rules:
+
+- **Do not trust `audios/` to be complete. Verify it with the wps arithmetic.** The skill already
+  says a mismatched split aligns without error; the same is true of a missing part, and a missing
+  part is easier to end up with because export dialogs remember the last folder used.
+- **Sweep the whole project folder for stray audio before concluding what the parts are**, not just
+  `audios/`. `find <P> -type f` plus `file` on anything unrecognised is enough.
+- A wps figure far ABOVE the band means audio is missing. A figure far below means the script is
+  short of the recording, or a part was duplicated. Project 8 established that a figure moderately
+  outside the band can still be a genuine fast read, so confirm with the rolling window; but 3.71
+  against a 3.21 ceiling was too far out to be pace.
+
+### Two duplicate timestamps, both with the next second free
+
+`[5:09]` appears twice, "In it," then "only one comparison". `[6:27]` appears twice, "Richard Lee,"
+then "who lived for years among the". `[5:10]` and `[6:28]` are both unused, so the `scenes` header
+must say to save the second image of each pair as `[5:10]` and `[6:28]` respectively.
+
 ## Project 5 rebuild (2026-08-04) - three key failures before one clean align
 
 The project 5 folder was retopiced to `5-why-do-people-follow-the-crowd` and its cast file

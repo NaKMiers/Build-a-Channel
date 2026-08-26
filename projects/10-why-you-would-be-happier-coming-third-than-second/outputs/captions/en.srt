@@ -1,0 +1,583 @@
+1
+00:00:00,000 --> 00:00:04,920
+The athlete who comes second is measurably less happy than the athlete who comes third.
+
+2
+00:00:05,000 --> 00:00:07,920
+Not a feeling. Not sometimes.
+
+3
+00:00:08,000 --> 00:00:11,920
+A number, pulled off the faces of Olympic medalists the moment they finished.
+
+4
+00:00:12,000 --> 00:00:15,920
+You have an explanation ready. Silver is a sore loser.
+
+5
+00:00:16,000 --> 00:00:22,920
+But that is not it. What you are watching is counterfactual thinking, and the same machine is running in you tonight.
+
+6
+00:00:23,000 --> 00:00:26,920
+Your mind never scores your life against your life.
+
+7
+00:00:27,000 --> 00:00:29,920
+It scores it against an invented one standing right beside it.
+
+8
+00:00:30,000 --> 00:00:34,920
+By the end you will know why the near miss hurts worse than the far one, where that came from,
+
+9
+00:00:35,000 --> 00:00:38,920
+and the one question that gets the invented rival out of the room.
+
+10
+00:00:39,000 --> 00:00:41,920
+Here is how anyone found this out in the first place.
+
+11
+00:00:42,000 --> 00:00:48,920
+In 1995, three psychologists named Victoria Medvec, Scott Madey and Thomas Gilovich
+
+12
+00:00:49,000 --> 00:00:54,920
+took the television footage of the Barcelona Olympics and did something almost sneaky with it.
+
+13
+00:00:55,000 --> 00:01:01,920
+They cut the sound. They stripped out the commentary, the flags, the scoreboards, anything that would tell you who had won what.
+
+14
+00:01:02,000 --> 00:01:06,920
+Then they showed those silent faces to people who knew nothing about the events and asked one question.
+
+15
+00:01:07,000 --> 00:01:11,920
+How does this person feel, on a scale that runs from agony at one end to ecstasy at the other?
+
+16
+00:01:12,000 --> 00:01:14,920
+The raters had no idea they were sorting medals.
+
+17
+00:01:15,000 --> 00:01:19,920
+They were just reading faces. And the faces came out in the wrong order.
+
+18
+00:01:20,000 --> 00:01:24,920
+At the moment of finishing, the bronze medalists scored around seven out of ten.
+
+19
+00:01:25,000 --> 00:01:27,920
+The silver medalists scored under five.
+
+20
+00:01:28,000 --> 00:01:33,920
+The person who had just been beaten by almost everyone in the final looked happier than the person who had beaten everyone but one.
+
+21
+00:01:34,000 --> 00:01:40,920
+Objectively, silver is the better afternoon. Silver is closer to the top of the world than any human being alive except one.
+
+22
+00:01:41,000 --> 00:01:45,920
+And silver looked like grief. Then the researchers listened to what the athletes actually said afterward,
+
+23
+00:01:46,000 --> 00:01:48,920
+and the reason walked straight out of their own mouths.
+
+24
+00:01:49,000 --> 00:01:51,920
+The silver medalists talked in almosts.
+
+25
+00:01:52,000 --> 00:01:54,920
+I almost had it. Another tenth of a second.
+
+26
+00:01:55,000 --> 00:01:58,920
+If the turn had been cleaner. The bronze medalists talked in at leasts.
+
+27
+00:01:59,000 --> 00:02:01,920
+At least I medalled. At least I am on this podium at all.
+
+28
+00:02:02,000 --> 00:02:08,920
+Same podium, same day, same sport, and two completely different invisible worlds being used as the measuring stick.
+
+29
+00:02:09,000 --> 00:02:15,920
+Silver is standing next to gold. Bronze is standing next to fourth place, and fourth place is a name nobody will ever say again.
+
+30
+00:02:16,000 --> 00:02:20,920
+That is counterfactual thinking, and once you can see it you cannot unsee it.
+
+31
+00:02:21,000 --> 00:02:26,920
+Your mind does not evaluate what happened. It builds the nearest version of what almost happened, sets it down next to reality,
+
+32
+00:02:27,000 --> 00:02:29,920
+and reports the difference to you as an emotion.
+
+33
+00:02:30,000 --> 00:02:33,920
+The closer the invented world sits, the louder the report.
+
+34
+00:02:34,000 --> 00:02:40,920
+Daniel Kahneman and Amos Tversky demonstrated this with a situation so ordinary it barely sounds like an experiment.
+
+35
+00:02:41,000 --> 00:02:47,920
+Two travellers are stuck in the same traffic, arrive at the same airport at the same minute, and both miss their flights.
+
+36
+00:02:48,000 --> 00:02:51,920
+One missed his by half an hour. The other missed his by five minutes.
+
+37
+00:02:52,000 --> 00:02:56,920
+Which man is more upset? Everybody knows the answer instantly, and that is the point.
+
+38
+00:02:57,000 --> 00:03:00,920
+Roughly ninety six out of a hundred people said the man who missed by five minutes.
+
+39
+00:03:01,000 --> 00:03:03,920
+But look at what actually happened to each of them. Identical outcome.
+
+40
+00:03:04,000 --> 00:03:08,920
+Same night in the same airport, same missed meeting, same hotel.
+
+41
+00:03:09,000 --> 00:03:11,920
+Nothing in the real world separates them at all.
+
+42
+00:03:12,000 --> 00:03:16,920
+The only thing that differs is how easy it is to imagine the other version, the one where the traffic broke a little sooner.
+
+43
+00:03:17,000 --> 00:03:19,920
+Five minutes is a world you can almost touch.
+
+44
+00:03:20,000 --> 00:03:26,920
+Half an hour is not. And your mind charges you emotionally for the distance to the world you can almost touch, not for anything that occurred.
+
+45
+00:03:27,000 --> 00:03:29,920
+So the near miss is not a bigger loss.
+
+46
+00:03:30,000 --> 00:03:36,920
+It is a smaller gap to an imaginary place. Which raises an uncomfortable question about the way you have been keeping score your whole life,
+
+47
+00:03:37,000 --> 00:03:39,920
+because you are running this on far more than medals and flights.
+
+48
+00:03:40,000 --> 00:03:43,920
+The job that came down to two candidates hurts more than the fifty that never replied.
+
+49
+00:03:44,000 --> 00:03:47,920
+The message that got read and not answered hurts more than silence.
+
+50
+00:03:48,000 --> 00:03:52,920
+The relationship that nearly worked haunts you in a way the ones that obviously never could do not.
+
+51
+00:03:53,000 --> 00:03:55,920
+In every case the pain is not tracking the size of what you lost.
+
+52
+00:03:56,000 --> 00:03:59,920
+It is tracking how vividly you can picture the version where it went the other way.
+
+53
+00:04:00,000 --> 00:04:05,920
+And before you decide your brain is broken, understand what the psychologist Neal Roese spent years demonstrating.
+
+54
+00:04:06,000 --> 00:04:08,920
+Counterfactual thinking is not a malfunction.
+
+55
+00:04:09,000 --> 00:04:13,920
+It is preparation. When your mind generates the if only, it is not torturing you for entertainment,
+
+56
+00:04:14,000 --> 00:04:16,920
+it is extracting a lesson and pointing it forward.
+
+57
+00:04:17,000 --> 00:04:21,920
+People who run those upward comparisons after failing actually perform better on the next attempt.
+
+58
+00:04:22,000 --> 00:04:28,920
+The sting is the delivery mechanism. It hurts precisely so that you remember, and it hurts most for the gaps that were closeable,
+
+59
+00:04:29,000 --> 00:04:31,920
+because those are the only ones worth remembering.
+
+60
+00:04:32,000 --> 00:04:37,920
+Which is exactly where you have to leave the laboratory, because a machine that punishes you for near misses
+
+61
+00:04:38,000 --> 00:04:41,920
+only makes sense in a world that no longer exists.
+
+62
+00:04:42,000 --> 00:04:44,920
+Go back two hundred thousand years.
+
+63
+00:04:45,000 --> 00:04:50,920
+You are living in a band of maybe thirty people, and you will spend your whole life inside it.
+
+64
+00:04:51,000 --> 00:04:55,920
+Every person you will ever be compared to is standing within shouting distance right now.
+
+65
+00:04:56,000 --> 00:04:59,920
+There is no ladder stretching up out of sight. There is no next level.
+
+66
+00:05:00,000 --> 00:05:05,920
+There are about thirty faces, and your position among them is the entire scoreboard.
+
+67
+00:05:06,000 --> 00:05:08,920
+Now notice something strange about that world.
+
+68
+00:05:09,000 --> 00:05:12,920
+In it, only one comparison ever carried information.
+
+69
+00:05:13,000 --> 00:05:18,920
+The person immediately ahead of you. Not the legendary hunter three camps over that you would never meet,
+
+70
+00:05:19,000 --> 00:05:25,920
+not some abstract best in the world, but the one specific person standing between you and a better share of the meat,
+
+71
+00:05:26,000 --> 00:05:29,920
+a place nearer the fire, the mate you wanted.
+
+72
+00:05:30,000 --> 00:05:32,920
+That gap was small enough to close.
+
+73
+00:05:33,000 --> 00:05:38,920
+Watch what they did, do it slightly better next season, and you moved.
+
+74
+00:05:39,000 --> 00:05:45,920
+Meanwhile the gap to somebody far above you carried nothing at all, because no amount of effort this year was going to cross it.
+
+75
+00:05:46,000 --> 00:05:51,920
+A brain that felt the near gap as agony and the far gap as a shrug was not being cruel.
+
+76
+00:05:52,000 --> 00:05:55,920
+It was spending your attention on the only distance you could actually walk.
+
+77
+00:05:56,000 --> 00:05:58,920
+The stakes underneath that were not pride.
+
+78
+00:05:59,000 --> 00:06:03,920
+The anthropologist James Woodburn studied societies that live hand to mouth,
+
+79
+00:06:04,000 --> 00:06:08,920
+taking what the land gives and consuming it quickly, and he documented how ferociously
+
+80
+00:06:09,000 --> 00:06:11,920
+flat those groups stay.
+
+81
+00:06:12,000 --> 00:06:15,920
+Nobody is allowed to accumulate. Nobody is allowed to rise.
+
+82
+00:06:16,000 --> 00:06:21,920
+Equality there is not a gentle value, it is enforced daily, because a group where one person can hoard
+
+83
+00:06:22,000 --> 00:06:26,920
+status and food is a group that gets somebody killed.
+
+84
+00:06:27,000 --> 00:06:31,920
+Richard Lee, who lived for years among the Ju/'hoansi of the Kalahari,
+
+85
+00:06:32,000 --> 00:06:34,920
+ran into that enforcement personally.
+
+86
+00:06:35,000 --> 00:06:41,920
+For Christmas he bought the camp an enormous ox, the biggest animal he could find, expecting delight.
+
+87
+00:06:42,000 --> 00:06:45,920
+Instead everyone told him it was a bag of bones.
+
+88
+00:06:46,000 --> 00:06:48,920
+Skin and ribs. Barely worth the walk.
+
+89
+00:06:49,000 --> 00:06:52,920
+He was baffled and slightly hurt until it was explained to him plainly.
+
+90
+00:06:53,000 --> 00:06:59,920
+When a man kills a great animal, he starts to think of himself as a big man, and a big man eventually gets someone hurt.
+
+91
+00:07:00,000 --> 00:07:05,920
+So the camp mocks the meat. They cool his heart while he is still young, and they keep him gentle.
+
+92
+00:07:06,000 --> 00:07:10,920
+Sit with what that means. Your ancestors did not merely live without a status ladder.
+
+93
+00:07:11,000 --> 00:07:16,920
+They actively dismantled the top rung, every time one started to form, on purpose,
+
+94
+00:07:17,000 --> 00:07:22,920
+for two hundred thousand years. The scoreboard was small, it was local, it was everyone you knew,
+
+95
+00:07:23,000 --> 00:07:26,920
+and the group itself worked to keep the distances short.
+
+96
+00:07:27,000 --> 00:07:30,920
+Your near miss machine was built for that. Thirty rivals, closeable gaps,
+
+97
+00:07:31,000 --> 00:07:34,920
+and a rematch next season with the same people.
+
+98
+00:07:35,000 --> 00:07:38,920
+Now open your phone. The band is not thirty people anymore.
+
+99
+00:07:39,000 --> 00:07:45,920
+It is everyone. Your comparison set has no ceiling and no floor and it refreshes every time your thumb moves.
+
+100
+00:07:46,000 --> 00:07:48,920
+And the machine inside you does not know that.
+
+101
+00:07:49,000 --> 00:07:54,920
+It is still doing the only job it has ever done, scanning for the person just ahead of you, the one whose gap looks closeable,
+
+102
+00:07:55,000 --> 00:08:00,920
+and reporting the distance as pain. Except now there is an infinite supply of them,
+
+103
+00:08:01,000 --> 00:08:07,920
+sorted and delivered by a feed, each one carefully cropped to look like a life you were about six inches away from having.
+
+104
+00:08:08,000 --> 00:08:13,920
+That is the mismatch. Not that you compare yourself to others, your ancestors did that constantly
+
+105
+00:08:14,000 --> 00:08:16,920
+and it kept them alive.
+
+106
+00:08:17,000 --> 00:08:23,920
+It is that the near miss used to be rare, local, and followed by a rematch, and now it is endless,
+
+107
+00:08:24,000 --> 00:08:26,920
+global, and followed by nothing.
+
+108
+00:08:27,000 --> 00:08:33,920
+You lose to a stranger in another country whose actual life you cannot see, on a scoreboard nobody agreed to,
+
+109
+00:08:34,000 --> 00:08:39,920
+with no next season. The silver medalist at least gets another Games.
+
+110
+00:08:40,000 --> 00:08:42,920
+You are being handed a silver medal forty times before lunch.
+
+111
+00:08:43,000 --> 00:08:46,920
+So here is the shift, and it is smaller than it sounds.
+
+112
+00:08:47,000 --> 00:08:49,920
+You cannot stop your mind building the other world.
+
+113
+00:08:50,000 --> 00:08:54,920
+That happens below the level of choice, and it is genuinely trying to help.
+
+114
+00:08:55,000 --> 00:08:58,920
+But the world it builds is invisible to you, and that is the whole problem.
+
+115
+00:08:59,000 --> 00:09:01,920
+You feel the verdict without ever seeing the courtroom.
+
+116
+00:09:02,000 --> 00:09:04,920
+So say it out loud.
+
+117
+00:09:05,000 --> 00:09:08,920
+When the drop comes, name the thing you are being compared to.
+
+118
+00:09:09,000 --> 00:09:12,920
+Not what is wrong with you, but what is this being measured against.
+
+119
+00:09:13,000 --> 00:09:15,920
+And then ask the only question that matters.
+
+120
+00:09:16,000 --> 00:09:18,920
+Is there a rematch? If there is, keep it.
+
+121
+00:09:19,000 --> 00:09:22,920
+That ache is Roese's preparation signal doing its job,
+
+122
+00:09:23,000 --> 00:09:27,920
+and it is pointing at a gap you can genuinely close, so let it.
+
+123
+00:09:28,000 --> 00:09:34,920
+But if there is no rematch, if the flight is gone, if the job went to someone else six months ago,
+
+124
+00:09:35,000 --> 00:09:41,920
+if the version of you being used as the ruler was never on offer, then the comparison has no work left to do.
+
+125
+00:09:42,000 --> 00:09:46,920
+It is not preparing you for anything. It is just standing in your kitchen charging you rent.
+
+126
+00:09:47,000 --> 00:09:51,920
+That is the moment you get to do what the bronze medalist does automatically.
+
+127
+00:09:52,000 --> 00:09:57,920
+Turn around. Look at the other side. Because there is always another invented world available,
+
+128
+00:09:58,000 --> 00:10:03,920
+the one where you did not get on the podium at all, and it is exactly as real as the one your mind picked for you.
+
+129
+00:10:04,000 --> 00:10:06,920
+Which is to say, not at all.
+
+130
+00:10:07,000 --> 00:10:13,920
+So tonight, just this. The athlete who came second was never unhappy about the medal around their neck.
+
+131
+00:10:14,000 --> 00:10:16,920
+They were unhappy about a medal hanging in a world that never happened.
+
+132
+00:10:17,000 --> 00:10:22,920
+And so are you, most nights, standing in your real life next to a person who does not exist,
+
+133
+00:10:23,000 --> 00:10:25,920
+losing to them quietly, over and over.
+
+134
+00:10:26,000 --> 00:10:31,920
+You do not have to win that race. You only have to look up and notice that the person beating you was never in the room.
+
+135
+00:10:32,000 --> 00:10:35,920
+And notice how easily you see all of this in other people.
+
+136
+00:10:36,000 --> 00:10:41,920
+When a friend is quietly wrecking themselves over a life that was never actually on offer, you can spot it in about four seconds.
+
+137
+00:10:42,000 --> 00:10:45,920
+Your own version of it stays completely invisible.
+
+138
+00:10:46,000 --> 00:10:51,920
+So one last question before you go. Are you the one your friends call at midnight, the person who says the calm,
+
+139
+00:10:52,000 --> 00:10:56,920
+right thing in ten minutes and always seems to know exactly what they should do?
+
+140
+00:10:57,000 --> 00:11:03,920
+And then your own turn comes, and you sit frozen for three weeks over a decision you could have solved for anybody else in a single sentence.
+
+141
+00:11:04,000 --> 00:11:07,920
+If that is you, you are not a hypocrite and you are not weak.
+
+142
+00:11:08,000 --> 00:11:11,920
+You are running a glitch three thousand years old, it has a name,
+
+143
+00:11:12,000 --> 00:11:18,920
+and there is one very small change in the way you speak to yourself that hands all of that wasted wisdom straight back to you.
+
+144
+00:11:19,000 --> 00:11:21,920
+That is the video on your screen right now.
+
+145
+00:11:22,000 --> 00:11:24,920
+Why you give great advice you never take yourself.
+
+146
+00:11:25,000 --> 00:11:26,420
+Watch that one next.
