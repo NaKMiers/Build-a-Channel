@@ -38,7 +38,7 @@ Recurring motif: the near span, a short charcoal measuring bracket between two m
 | B030 | [0:39] | how anyone found this out | STORY | wide | LAYERED | PLATE | P010 | - | - | - | - |
 | B031 | [0:42] | the year | CARD | card | LAYERED | PLATE | P011 | - | - | - | 1995 |
 | B032 | [0:43] | the first researcher | PORTRAIT | close | CLEAN | PLATE | P012 | - | - | - | MEDVEC |
-| B033 | [0:46] | the other two | PORTRAIT | close | CLEAN | VARIANT | P012 | B032 | two more sketched heads join the row | - | MADEY  GILOVICH |
+| B033 | [0:46] | the other two | PORTRAIT | close | CLEAN | VARIANT | P012 | B032 | two more sketched heads join, each with distinct hair and face so all three read as different people | - | MADEY  GILOVICH |
 | B034 | [0:49] | they took the broadcast tape | STORY | medium | LAYERED | PLATE | P013 | - | - | - | - |
 | B035 | [0:50] | the tape reel spins up | - | - | - | CAPCUT | P013 | B034 | - | - | - |
 | B036 | [0:52] | and did something sly to it | STORY | medium | LAYERED | VARIANT | P013 | B034 | a hand reaches for the tape deck | - | - |
@@ -64,8 +64,8 @@ Recurring motif: the near span, a short charcoal measuring bracket between two m
 | B056 | [1:30] | the two ranks slide into place | - | - | - | CAPCUT | P018 | B055 | - | - | - |
 | B057 | [1:31] | than the one who beat everyone but one | SPLIT_OR_SCALE | scale | CLEAN | VARIANT | P018 | B055 | the ranks above each figure become visible | span | - |
 | B058 | [1:34] | on paper silver is the better day | CARD | card | CLEAN | PLATE | P019 | - | - | - | - |
-| B059 | [1:36] | closer to the top than anyone alive | CARD | scale | CLEAN | VARIANT | P019 | B058 | a tall stack shrinks to a single figure above | span | - |
-| B060 | [1:38] | except one person | CARD | scale | CLEAN | VARIANT | P019 | B059 | only one mark remains above the silver mark | span | 1 |
+| B059 | [1:36] | closer to the top than anyone alive | CARD | scale | CLEAN | VARIANT | P019 | B058 | the sliver above the rule thins to three, world stack and medal disc unchanged | span | - |
+| B060 | [1:38] | except one person | CARD | scale | CLEAN | VARIANT | P019 | B059 | only one mark remains above the rule, alone above the medal disc | span | 1 |
 | B061 | [1:41] | and silver looked like grief | PORTRAIT | close | CLEAN | PLATE | P020 | - | - | - | - |
 | B062 | [1:43] | then they listened to the athletes | STORY | medium | LAYERED | PLATE | P021 | - | - | - | - |
 | B063 | [1:46] | and the reason was in their own words | STORY | medium | LAYERED | VARIANT | P021 | B062 | two speech shapes open, one on each side | - | - |
@@ -87,18 +87,18 @@ Recurring motif: the near span, a short charcoal measuring bracket between two m
 | B079 | [2:11] | bronze stands next to fourth place | STORY | scale | LAYERED | VARIANT | P024 | B078 | the phantom beside bronze is an empty step | span | - |
 | B080 | [2:13] | a name nobody will say again | CARD | card | LAYERED | PLATE | P026 | - | - | - | FOURTH |
 | B081 | [2:16] | that is the mechanism | HYBRID | diagram | LAYERED | PLATE | P027 | - | - | span | THE MECHANISM |
-| B082 | [2:18] | and you cannot unsee it | HYBRID | diagram | LAYERED | VARIANT | P027 | B081 | the diagram repeats small across the card | span | - |
-| B083 | [2:21] | your mind does not judge what happened | DIAGRAM | diagram | LAYERED | PLATE | P028 | - | - | span | - |
-| B084 | [2:23] | it builds the nearest almost | DIAGRAM | diagram | LAYERED | VARIANT | P028 | B083 | a lavender copy assembles beside the real one | span | - |
+| B082 | [2:18] | and you cannot unsee it | HYBRID | diagram | LAYERED | VARIANT | P027 | B081 | the bell rings once, a small sound ripple spreads | span | - |
+| B083 | [2:21] | your mind does not judge what happened | DIAGRAM | diagram | LAYERED | PLATE | P028 | - | - | - | - |
+| B084 | [2:23] | it builds the nearest almost | DIAGRAM | diagram | LAYERED | VARIANT | P028 | B083 | a lavender flag rises out of the ground, half formed | - | - |
 | B085 | [2:24] | the lavender copy assembles | - | - | - | CAPCUT | P028 | B084 | - | - | - |
-| B086 | [2:25] | and sets it down beside reality | DIAGRAM | diagram | LAYERED | VARIANT | P028 | B084 | the copy is placed level with the real one | span | - |
-| B087 | [2:27] | then reports the difference as feeling | DIAGRAM | diagram | LAYERED | VARIANT | P028 | B086 | the span between them becomes the output | span | - |
-| B088 | [2:30] | the closer it sits the louder it is | DIAGRAM | diagram | LAYERED | VARIANT | P028 | B087 | the span shortens and the output grows | span | - |
+| B086 | [2:25] | and sets it down beside reality | DIAGRAM | diagram | LAYERED | VARIANT | P028 | B084 | the lavender flag finishes rising, level with the real one | - | - |
+| B087 | [2:27] | then reports the difference as feeling | DIAGRAM | diagram | LAYERED | VARIANT | P028 | B086 | the span and bell appear between the two flags | span | - |
+| B088 | [2:30] | the closer it sits the louder it is | DIAGRAM | diagram | LAYERED | VARIANT | P028 | B087 | the span shortens and the bell grows larger and louder | span | - |
 | B089 | [2:31] | the span pulses shorter and louder | - | - | - | CAPCUT | P028 | B088 | - | - | - |
 | B090 | [2:34] | two more researchers | PORTRAIT | close | CLEAN | PLATE | P029 | - | - | - | KAHNEMAN  TVERSKY |
-| B091 | [2:36] | who used something very ordinary | CARD | card | CLEAN | VARIANT | P029 | B090 | the heads give way to a plain ticket | - | - |
-| B092 | [2:38] | so plain it hardly sounds like a study | CARD | card | CLEAN | VARIANT | P029 | B091 | the ticket is stamped with a small plain mark | - | - |
-| B093 | [2:40] | but it is one | CARD | card | CLEAN | VARIANT | P029 | B092 | the stamp resolves into a neat check | - | - |
+| B091 | [2:36] | who used something very ordinary | HYBRID | close | CLEAN | VARIANT | P029 | B090 | a plain ticket appears in the gap between the two faces | - | - |
+| B092 | [2:38] | so plain it hardly sounds like a study | HYBRID | close | CLEAN | VARIANT | P029 | B091 | the ticket between the two faces is stamped PAID | - | - |
+| B093 | [2:40] | but it is one | HYBRID | close | CLEAN | VARIANT | P029 | B092 | the stamp between the two faces resolves into a neat check | - | - |
 | B094 | [2:41] | two travellers in the same traffic | STORY | wide | LAYERED | PLATE | P030 | - | - | - | - |
 | B095 | [2:43] | the clock ticks once | - | - | - | CAPCUT | P030 | B094 | - | - | - |
 | B096 | [2:44] | arriving at the same minute | STORY | wide | LAYERED | VARIANT | P030 | B094 | one clock above the car reads for both | - | - |
@@ -247,11 +247,11 @@ Recurring motif: the near span, a short charcoal measuring bracket between two m
 | B239 | [7:36] | the band is not thirty anymore | HYBRID | scale | CLEAN | PLATE | P079 | - | - | span | - |
 | B240 | [7:39] | it is everyone | HYBRID | scale | CLEAN | VARIANT | P079 | B239 | the set runs past every edge of the frame | span | - |
 | B241 | [7:40] | no ceiling and no floor | DIAGRAM | scale | CLEAN | PLATE | P080 | - | - | span | NO CEILING |
-| B242 | [7:43] | refreshing with every thumb move | DIAGRAM | scale | CLEAN | VARIANT | P080 | B241 | the whole set is replaced by a new one | span | - |
+| B242 | [7:43] | refreshing with every thumb move | DIAGRAM | scale | CLEAN | VARIANT | P080 | B241 | a swipe streak sweeps through and the marks resettle into a new scatter | span | - |
 | B243 | [7:44] | the whole set refreshes | - | - | - | CAPCUT | P080 | B242 | - | - | - |
 | B244 | [7:46] | and the machine does not know | HYBRID | medium | LAYERED | CALLBACK | P077 | B237 | the old machine runs on inside the new set | span | - |
-| B245 | [7:48] | it has no idea anything changed | HYBRID | medium | LAYERED | VARIANT | P077 | B244 | its thirty-mark dial is stuck at the old number | span | - |
-| B246 | [7:49] | still doing its only job | HYBRID | medium | LAYERED | VARIANT | P077 | B245 | the machine keeps scanning at the same rate | span | - |
+| B245 | [7:48] | it has no idea anything changed | HYBRID | medium | LAYERED | VARIANT | P077 | B244 | the dial needle pins on the old number, a red crack splits the glass | span | - |
+| B246 | [7:49] | still doing its only job | HYBRID | medium | LAYERED | VARIANT | P077 | B245 | the hopper overflows with fresh marks while the output arrow fires on, unattended | span | - |
 | B247 | [7:52] | scanning for the person just ahead | HYBRID | diagram | LAYERED | PLATE | P081 | - | - | span | - |
 | B248 | [7:54] | the one whose gap looks closeable | HYBRID | diagram | LAYERED | VARIANT | P081 | B247 | one near mark is picked out of the crowd | span | - |
 | B249 | [7:55] | and reporting the distance as pain | HYBRID | diagram | LAYERED | VARIANT | P081 | B248 | the span converts into a felt output | span | AS PAIN |
@@ -313,8 +313,8 @@ Recurring motif: the near span, a short charcoal measuring bracket between two m
 | B305 | [9:54] | there is always another invented world | STORY | scale | LAYERED | VARIANT | P101 | B304 | a second phantom stands on the downward side | span | - |
 | B306 | [9:56] | the second phantom fades up | - | - | - | CAPCUT | P101 | B305 | - | - | - |
 | B307 | [9:58] | the one where you never medalled | STORY | scale | LAYERED | VARIANT | P101 | B305 | the downward phantom holds nothing at all | span | - |
-| B308 | [10:01] | and it is exactly as real | STORY | scale | LAYERED | VARIANT | P101 | B307 | both phantoms are drawn identically dashed | span | - |
-| B309 | [10:02] | as the one your mind picked | STORY | scale | LAYERED | VARIANT | P101 | B308 | the chosen phantom is ringed, not favoured | span | - |
+| B308 | [10:01] | and it is exactly as real | STORY | scale | LAYERED | VARIANT | P101 | B307 | both phantoms settle into matching silhouettes, identical size and dash weight | span | - |
+| B309 | [10:02] | as the one your mind picked | STORY | scale | LAYERED | VARIANT | P101 | B308 | a thick ring closes on the chosen phantom, the span touches it, the other fades paler | span | - |
 | B310 | [10:04] | which is to say, not at all | CARD | card | CLEAN | PLATE | P102 | - | - | span | NOT AT ALL |
 | B311 | [10:07] | so tonight | STORY | wide | ATMOSPHERIC | PLATE | P103 | - | - | CALLBACK | - |
 | B312 | [10:08] | just this | STORY | wide | ATMOSPHERIC | VARIANT | P103 | B311 | the stadium quiets to the two figures | CALLBACK | - |
@@ -350,7 +350,7 @@ Recurring motif: the near span, a short charcoal measuring bracket between two m
 | B342 | [11:11] | it has a name | CARD | scale | CLEAN | VARIANT | P116 | B341 | a blank name plate appears, deliberately unfilled | - | - |
 | B343 | [11:12] | and one small change in how you speak | STORY | medium | LAYERED | PLATE | P117 | - | - | - | - |
 | B344 | [11:14] | the small change lands | - | - | - | CAPCUT | P117 | B343 | - | - | - |
-| B345 | [11:16] | hands the wasted wisdom back | STORY | medium | LAYERED | VARIANT | P117 | B343 | the advice returns to him instead of leaving | - | STRAIGHT BACK |
+| B345 | [11:16] | hands the wasted wisdom back | STORY | medium | LAYERED | VARIANT | P117 | B343 | the arrow bends back and points into his own ear | - | STRAIGHT BACK |
 | B346 | [11:19] | that video is on your screen now | HYBRID | medium | CLEAN | PLATE | P118 | - | - | - | - |
 | B347 | [11:22] | the next video's title | CARD | card | CLEAN | PLATE | P119 | - | - | - | NEXT |
 | B348 | [11:25] | watch that one next | CARD | card | CLEAN | VARIANT | P119 | B347 | a forward arrow points off the right edge | - | WATCH NEXT |
