@@ -1014,3 +1014,53 @@ Project 10 lost 120 prompts to "a illustrated story environment". Emitting the s
 end-to-end read of one PLATE, one VARIANT and one CALLBACK confirmed it. The VARIANT does name its
 surface twice, once in the preserve clause and once in the render clause; that is deliberate, it is
 what makes the per-prompt surface count pass, and project 10 shipped the same shape.
+
+## 2026-08-29 - Two standing rules from user feedback
+
+### Scene density: the script decides, the numbers are only a sanity anchor
+
+Confirmed directly: "chia phân cảnh trong image prompts khá tốt" for projects 7 through 11,
+"đừng chia ít phân cảnh quá sẽ bị nhàm chán và cũng đừng chia nhiều phân cảnh quá sẽ bị rời rạc".
+Each stretch between two `---` is one phân cảnh. Too few is boring, too many is rời rạc.
+
+**Corrected by the user immediately after I first wrote this note.** I had turned the observed
+2.6 to 3.5 range into a hard pass/fail gate in Step 3. The user's correction: "scene density
+không phải lúc nào cũng cứng nhắc ... quan trọng là nó phải phù hợp với phân cảnh và nội dung
+của script, tất cả là để biểu đạt script một cách tốt nhất có thể." So the range is a reference,
+not a threshold. Most episodes land in it, up to about 4.5 is fine when the script carries long
+sustained scenes, and the check now prints "in the usual range" or "REVIEW" instead of FAIL.
+
+**The generalisable mistake is mine, not the rule's: I converted a descriptive observation into
+a prescriptive gate.** Five projects landing between 2.6 and 3.5 is evidence about what those
+scripts needed, not a constraint the next script must satisfy. Cut where the meaning changes.
+A number that is unexplained is the failure; a number that is justified and reported is fine.
+
+The two real defects the figure exists to surface, and they are asymmetric in how they look:
+a long stretch of unrelated frames all inheriting one image (project 11's rejected 13.28), and
+a chain cut so often that no build survives to its payoff. Project 11 shipped at 3.32, 100
+breaks over 332 prompts.
+
+The generating rule matters more than the number: **default to breaking at every `PLATE`**, and
+whitelist only the plates that genuinely continue the frame above them. Placing breaks at act
+boundaries alone undershoots by about four times.
+
+### A real named person needs a real likeness and a one-time name caption
+
+When the script names a real scientist, psychologist, or public figure who appears on screen,
+the audience has to recognise them and be told who they are. Two halves, in two skills, because
+`scenes` rule 5 forbids re-describing a cast member:
+
+- **`/cast` builds the likeness.** Two or three recognisable features locked into the sheet,
+  carried by hair shape, facial hair, eyewear, headgear, and era clothing, never by realistic
+  anatomy. A generic sheet makes that person generic for the whole video.
+- **`/scenes` captions and introduces.** The name in bold charcoal ALL CAPS on the **first**
+  frame the person appears in and nowhere after it, because the audience already knows them by
+  the second frame and the repeat wastes the text budget. Where the script introduces someone
+  before showing their work, spend one generation on a portrait beat with the name over it, then
+  cut to the action. Two people introduced together can share one portrait frame with both
+  names, which hands the next scene two known faces.
+
+Stay flexible: this is not a template to apply on every mention. A researcher named once and
+never depicted still stays a diagram, per the project 2 note above. The style lock is unchanged,
+so this is a recognisable doodle likeness, never a rendered face. A genuine photograph, if ever
+wanted, is a CapCut overlay at edit time, not a generation prompt.

@@ -165,9 +165,9 @@ Craft notes:
      without giving either away.
   5. The end-screen pointer plus the title spoken aloud. "That is the video on your screen
      right now. Why you give great advice you never take yourself. Watch that one next."
-  The bridge must be thematic, not promotional: this script's shift is "name the invisible
-  comparison", and Solomon's paradox is that same blindness pointed at advice. **A tease works
-  only when the two mechanisms genuinely touch.**
+     The bridge must be thematic, not promotional: this script's shift is "name the invisible
+     comparison", and Solomon's paradox is that same blindness pointed at advice. **A tease works
+     only when the two mechanisms genuinely touch.**
 - **ORDER, corrected by the user on the same run: echo first, then bridge, then CTA. The
   script's last spoken words are "Watch that one next."** The first attempt put the CTA before
   the echo, reasoning that `channel-dna.md` requires the closing line to echo the opening. The
@@ -177,11 +177,15 @@ Craft notes:
   2. the one-sentence bridge, opening "And notice how easily you see all of this in other
      people", stepping back out,
   3. the CTA, ending on the naked instruction.
-  The echo rule is still honoured, because the echo is still the closing line of the narration
-  proper. The CTA is a separate register, spoken to the viewer as a viewer rather than as the
-  subject of the essay, which is exactly why it can sit outside the echo without breaking it.
-  It also lands the instruction at the precise second the YouTube end screen appears.
-  **Default to this order for every future video that carries an end-screen tease.**
+     The echo rule is still honoured, because the echo is still the closing line of the narration
+     proper. The CTA is a separate register, spoken to the viewer as a viewer rather than as the
+     subject of the essay, which is exactly why it can sit outside the echo without breaking it.
+     It also lands the instruction at the precise second the YouTube end screen appears.
+     **SUPERSEDED 2026-08-29. This five-step order was written here as "default to this order for
+     every future video", and following it literally across projects 10 and 11 is exactly what the
+     user then rejected as rập khuôn, formulaic.** It remains a proven pattern worth returning to
+     after several videos have used other shapes, but it is no longer the default. See "The
+     end-screen tease must be reinvented every video" below and rule 5 in `SKILL.md` Step 2.
 - The direct tease costs one question, taking the script to 4 rather than the fixture's 3.
   That is a deliberate user instruction, not drift. A CTA question is not narration rhythm.
   Do not count it against the question-density discrepancy below.
@@ -340,13 +344,13 @@ Two corrections to the section below:
    assumes it does. The data says otherwise, and the two extremes of the sample disagree with
    it most sharply.
 
-| Video | 7s | 14s | 21s | 30s | relPerf @30s | reversal |
-| ----- | -- | --- | --- | --- | ------------ | -------- |
-| P4 days drag | 78% | **94%** | 78% | **61%** | **0.34** | never in 40s |
-| P1 loneliness | 96% | 80% | 55% | 54% | 0.23 | 0:29 |
-| P3 diff self | 94% | 61% | 44% | 50% | 0.16 | 0:33 |
-| P2 argument | 95% | 64% | 51% | 44% | 0.25 | never in 40s |
-| P5 crowd | 100% | 58% | 33% | 33% | 0.18 | 0:31 |
+| Video         | 7s   | 14s     | 21s | 30s     | relPerf @30s | reversal     |
+| ------------- | ---- | ------- | --- | ------- | ------------ | ------------ |
+| P4 days drag  | 78%  | **94%** | 78% | **61%** | **0.34**     | never in 40s |
+| P1 loneliness | 96%  | 80%     | 55% | 54%     | 0.23         | 0:29         |
+| P3 diff self  | 94%  | 61%     | 44% | 50%     | 0.16         | 0:33         |
+| P2 argument   | 95%  | 64%     | 51% | 44%     | 0.25         | never in 40s |
+| P5 crowd      | 100% | 58%     | 33% | 33%     | 0.18         | 0:31         |
 
 **P4 has the best early curve in the sample and its reversal never lands inside 40 seconds.
 P5 has the worst and its turn lands earlier than P4's.** So the reversal clock is not the
@@ -390,7 +394,6 @@ has inspected it yet.
 still in force, but its stated cause, reversal position, does not survive the datapoint-level
 audit.**
 
-
 The four-beat hook budget in `channel-dna.md` was derived from analytics, not from taste.
 It is a hypothesis with a scheduled test, so do not treat it as settled and do not quietly
 relax it either.
@@ -408,15 +411,15 @@ What the data showed, from `outputs/retention-2026-08-11.json`:
 
 Where the reversal actually lands in each script, which is what the rule now constrains:
 
-| Project | Reversal at | Note |
-| ------- | ----------- | ---- |
-| 7 anger | 0:06 | sharpest opening the channel has written, use as the model |
-| 6 tired | 0:23 | reversal then drifts back into analogy |
-| 1 loneliness | 0:29 | 28 seconds of atmosphere first |
-| 5 crowd | 0:31 | |
-| 3 different self | 0:33 | |
-| 2 argument | never in 40s | pure scene-painting, steepest early cliff of the trusted samples |
-| 4 days drag | never in 40s | |
+| Project          | Reversal at  | Note                                                             |
+| ---------------- | ------------ | ---------------------------------------------------------------- |
+| 7 anger          | 0:06         | sharpest opening the channel has written, use as the model       |
+| 6 tired          | 0:23         | reversal then drifts back into analogy                           |
+| 1 loneliness     | 0:29         | 28 seconds of atmosphere first                                   |
+| 5 crowd          | 0:31         |                                                                  |
+| 3 different self | 0:33         |                                                                  |
+| 2 argument       | never in 40s | pure scene-painting, steepest early cliff of the trusted samples |
+| 4 days drag      | never in 40s |                                                                  |
 
 Only projects 1 and 2 have samples worth trusting, 71 and 63 views. Projects 3 to 7 have
 12 to 19 views each and their retention arrays are visibly non-monotonic, which is sample
@@ -449,3 +452,36 @@ Record the result here either way. A rule this specific should not survive on fa
 - Keep the script free of every markdown character. This is not cosmetic. The forced aligner
   flattens the file into one word stream, so a stray `##` or `**` becomes a spoken token and
   shifts every timestamp after it.
+
+## 2026-08-29 - The end-screen tease must be reinvented every video
+
+The user's verdict on projects 10 and 11: the way the previous video gets mentioned at the end
+is **rập khuôn**, formulaic. Both scripts ran the same five-step shape recorded above, and the
+repetition is now visible to a viewer who watches more than one episode. The tease is supposed
+to feel like a natural thought at the end of a thought, and a template cannot do that twice.
+
+**The standing instruction is now: invent a fresh, specific way in every script.** An old shape
+may return once several videos have used other approaches, so the rotation is what keeps it
+feeling natural. What must stay constant is only the purpose and the guardrails: a genuine
+mechanism-level link between the two videos, no shaming, the title spoken aloud, and the
+instruction landing where the end screen appears.
+
+Shapes available besides the projects 10 and 11 five-stepper, none of them a new default:
+
+- **The unanswered question.** The body raised a question it deliberately did not answer; the
+  tease answers it by pointing at the other video.
+- **The same mechanism, opposite direction.** This video's mechanism pointed outward, the other
+  video is the same mechanism pointed inward, named in one sentence.
+- **The second example.** Give a second instance of tonight's shift that happens to be the whole
+  subject of the other video, then stop.
+- **The object callback.** Hand the video's recurring physical motif to the next topic, so the
+  glyph itself does the bridging.
+- **The confession.** State the cost of the mechanism in the viewer's own life, then say the
+  other video is about the one place it hurts most.
+- **The cold pivot.** One short sentence, no bridge at all, straight to the title. Works when
+  the echo has already landed hard and any bridge would dilute it.
+
+Two things to check before accepting a tease: would a viewer who just watched the previous
+episode notice the same construction, and does the link survive being stated in one plain
+sentence. If the answer to the first is yes, change the shape. If the answer to the second is
+no, the two videos do not genuinely touch and the tease should be cut rather than fudged.

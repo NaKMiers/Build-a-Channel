@@ -89,6 +89,24 @@ previous video and do not reach for a default set of characters.
     `STRANGER`, `PARTNER`.
   - A named researcher, only if the script describes their experiment in a way that puts
     them on screen: `DUNBAR`, `MILGRAM`, `ASCH`.
+- **A real named person on screen must be drawn from their real documented appearance.**
+  This is a `cast` obligation and nowhere else: `scenes` rule 5 forbids re-describing a cast
+  member, so if this sheet is generic, that person is generic for the whole video and the one
+  moment the audience could attach a face to a name is wasted. Einstein, Tesla, Loftus, and
+  Bartlett all have a public likeness, so use it.
+  - Pick the **2 or 3 features that make them recognisable at doodle scale** and lock them
+    the way any other identity feature is locked: Einstein's wild white hair and heavy
+    moustache, Tesla's centre-parted slicked dark hair and narrow moustache, Bartlett's high
+    receding hairline and bow tie. Silhouette and hair carry recognition at this size; fine
+    facial detail does not and is forbidden anyway.
+  - Keep the channel's construction rules intact. Same big flat-white head circle, dot eyes,
+    thick brow strokes, tube limbs, one filled garment. The likeness is expressed through
+    hair shape, facial hair, eyewear, headgear, and era-correct clothing, never through
+    realistic anatomy or a rendered face.
+  - Note in the derivation notes which features are the likeness, so a later redo of this
+    stage does not quietly normalise them back to a generic figure.
+  - A person the script names once and never depicts does not get a sheet. They stay
+    narration, and `scenes` draws them as a diagram or a generic figure.
   - A recurring group. Treat a repeatedly used ring or crowd as ONE entry: `TRIBE`,
     `CROWD`, `CLASS`, `OFFICE`, `BAND`.
   - A personified concept or signature object that recurs: `PHONE`, `BRAIN`, `FIRE`,

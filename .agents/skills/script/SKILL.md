@@ -57,8 +57,21 @@ Silently decide, and do not print:
   script, and no amount of good prose in beat 1 will cover for it.
 - The **closing line that echoes the first, completely reframed**. Write it before the
   body, because the echo is the hardest thing to retrofit.
+- **If this video points at another one, the shape of that end-screen tease, invented fresh.**
+  Decide it here, not when you reach the last paragraph, because the bridge has to be a real
+  mechanism-level link and those are found while planning.
+  - **A new shape every video.** The user rejected projects 10 and 11 for being rập khuôn,
+    formulaic: both ran the same five-step tease and the repetition is visible to anyone who
+    watches two episodes. Read the shape list in `references/memory.md` under "The end-screen
+    tease must be reinvented every video", check which shapes the last few scripts used, and
+    pick a different one. An old shape may return once several videos have used others.
+  - What never varies: the two mechanisms genuinely touch, the never-shame guardrail holds,
+    the title is spoken aloud, and the instruction lands where the end screen appears.
+  - **State the link in one plain sentence before writing it.** If it does not survive that,
+    the videos do not really connect, and the honest move is to cut the tease rather than
+    fudge a bridge.
 
-If you cannot fill all five slots, the topic is not ready. Say so instead of writing a
+If you cannot fill all the slots above, the topic is not ready. Say so instead of writing a
 weak script.
 
 ## Step 2 - Write the script
@@ -150,6 +163,9 @@ you cited. Then:
 - Never let the anthropology become the subject. If the script would still work with the
   viewer's inner life removed, it is the wrong script. Rewrite it.
 - Never end without the echo of the opening line.
+- Never reuse the previous video's end-screen tease shape. Check the last few scripts, pick a
+  different one from the list in `references/memory.md`, and keep the echo before the bridge
+  before the CTA so the last spoken words are still the instruction.
 
 ## Self-improvement
 

@@ -177,10 +177,47 @@ interior`, or `pure white card`. Follow the V2 budget and selected chapter palet
 16. **Cut the chain with a `---` line wherever a frame must not inherit the frame before it.**
     The generation tool wires every card to the previous card, so prompt N is generated from
     prompt N-1's image unless a break stops it. Read `.agents/rules/image-generation.md` for
-    the full rule. In short:
-    - Break at a chapter or act boundary, a hard cut in place, era, or cast, a register switch
-      that changes the whole surface, and before any new `PLATE` the previous frame would
-      contaminate.
+    the full rule.
+
+    **Each stretch between two `---` lines is one phân cảnh, one scene, and the user judges
+    the video by how those scenes are divided.** Too few and long stretches all inherit one
+    frame and the video is boring. Too many and it is rời rạc, disjointed, with nothing
+    holding together.
+
+    **The real criterion is the script, not a number.** The division has to suit the scenes and
+    the content, because the only job here is to express the script as well as possible. A
+    sustained metaphor scene, a long camp sequence, or one continuous room legitimately runs
+    longer; a dense run of cards, numbers, and diagrams legitimately runs shorter. Cut where
+    the meaning changes, not on a quota.
+
+    Projects 7 through 11 are the observed range, useful as a sanity anchor:
+
+    | project | breaks / prompts | one fresh start every |
+    | ------- | ---------------: | --------------------: |
+    | 7       |         95 / 297 |           3.1 prompts |
+    | 8       |        104 / 268 |           2.6 prompts |
+    | 9       |         78 / 273 |           3.5 prompts |
+    | 10      |         89 / 304 |           3.4 prompts |
+    | 11      |        100 / 332 |           3.3 prompts |
+
+    Most episodes land near one break every 2.6 to 3.5 prompts, and up to about 4.5 is fine
+    when the script genuinely carries long sustained scenes. **Treat that as a reference, not a
+    gate.** Compute the figure, and if it sits outside, decide whether the script justifies it:
+    if it does, say so with the reason in the Step 4 report; if it does not, re-place the
+    breaks. What is never acceptable is a count nobody looked at. The signature of the real
+    defect is a long stretch of unrelated frames all inheriting one image, which is how project
+    11's 13.3 prompts per break got rejected, and its opposite is a chain cut so often that a
+    build never survives to pay off.
+    - **The default at a `PLATE` is to break.** A plate is by definition a complete new
+      composition, so placing breaks only at act boundaries and hard cuts undershoots badly:
+      that approach gave project 11 twenty-five breaks, one every 13.3 prompts, and the user
+      rejected it. Instead break before every plate-opening prompt and keep an explicit
+      whitelist of plates that deliberately inherit, being a closer view or the next step of
+      one build on the same surface and the same subject.
+    - A whitelisted continuation is only valid if the frame **immediately above it** shares its
+      surface. A `CALLBACK` can land between a plate and its intended continuation, so the
+      continuation would inherit the callback's frame instead. Guard it:
+      `if plate not in CONTINUE or surface(prev) != surface(this): cut = True`.
     - **Never break between a `VARIANT` or `CALLBACK` and the plate it points back to.** The
       chain is linear, so cutting it there destroys the lineage the plan just declared. Never
       break inside a hold either. Those beats depend on inheritance.
@@ -188,6 +225,29 @@ interior`, or `pure white card`. Follow the V2 budget and selected chapter palet
       first or last line of the file, never two in a row.
     - A break creates no record and no scene image. Prompt count, timestamps, and file names
       are untouched by it.
+
+17. **When the script names a real person who appears on screen, the viewer must be able to
+    recognise them and be told who they are.** A generic doodle for Einstein, Tesla, Loftus, or
+    Bartlett wastes the one moment the audience can attach a face to a name.
+    - **The likeness lives in the cast sheet, never here.** Rule 5 forbids re-describing a cast
+      member, so `scenes` cannot make a figure look like anyone. If a real named person appears
+      on screen, `/cast` must build their sheet from the person's documented appearance, and
+      `scenes` refers to them by `@TOKEN` as with any other member. If the sheet is generic,
+      stop and fix the cast, do not compensate with description here.
+    - **Caption the name on the first frame the person appears in, and only there.** Bold
+      charcoal ALL CAPS, upper frame, the name alone. Later frames of the same person carry no
+      caption: the audience already knows them, and repeating it burns the text budget.
+    - **An introduction beat is often worth one generation.** Where the script introduces a
+      person before showing what they did, a portrait frame with the name over it, followed by
+      the action scene, reads far better than dropping a stranger into an experiment. Where the
+      script introduces two people at once, one frame holding both portraits with both names
+      hands the next scene two known faces.
+    - **Be flexible.** Neither shape is mandatory. A person named once in passing and never
+      depicted stays a diagram or a generic figure, per the researcher-not-depicted rule in
+      `references/memory.md`. Fit the script rather than applying a template.
+    - The style lock still holds: no photorealism, no 3D, no CGI. A recognisable doodle
+      likeness, not a rendered face. If a genuine photograph of the person is wanted, that is
+      an overlay decision for CapCut at edit time, not an image-generation prompt.
 
 ## Step 2 - Generate in internal chunks
 
@@ -223,11 +283,24 @@ grep -vE '^(\[|---$)' "$F" | grep -c .
 head -c1 "$F"   # must be [
 
 # Chain breaks: exactly '---', blank line each side, never first or last, never doubled.
-grep -c '^---$' "$F"
+B=$(grep -c '^---$' "$F")
 awk '{L[NR]=$0} END{for(i=1;i<=NR;i++) if(L[i]=="---"){
   if(i==1||L[i-1]!="") print i": break needs one blank line above"
   if(i==NR||L[i+1]!="") print i": break needs one blank line below"
   if(i>2&&L[i-2]=="---") print i": two breaks in a row"}}' "$F"
+
+# SCENE DENSITY, rule 16. Advisory, not a gate: the script decides. Outside the reference
+# range, either justify it in the Step 4 report or re-place the breaks.
+awk -v b="$B" -v n="$N" 'BEGIN{
+  d=n/b
+  printf "  breaks %d / prompts %d = one scene every %.2f prompts\n", b, n, d
+  if (d>=2.6 && d<=3.5) print "  in the usual range"
+  else if (d<=4.5 && d>3.5) print "  above usual: OK only if the script carries long sustained scenes, say which"
+  else if (d>4.5) print "  REVIEW likely too few scenes; check for unrelated frames inheriting one image"
+  else print "  REVIEW likely too many scenes; check that builds still survive to a payoff"}'
+# Longest inherited run. A run past about 10 prompts is one frame carrying too much.
+awk '/^---$/{if(r>m){m=r;t=s}; r=0; next} /^\[/{if(r==0)s=$1; r++}
+     END{if(r>m){m=r;t=s}; print "  longest inherited run "m" prompts, starting "t}' "$F"
 
 # Timestamps identical and in order.
 diff <(awk '{print $1}' "$T") <(grep -o '^\[[0-9:]*\]' "$F") && echo "timestamps match"
@@ -306,8 +379,16 @@ nowhere, a non-plate delta is missing, or both V1 and V2 strings appear.
 
 Either version fails if a `---` line is malformed, doubled, leading, or trailing, or if any
 other non-prompt line survives. For V2 it also fails if a break opens anything but a `PLATE`.
-Zero breaks in a multi-act episode is not a pass, it means every hard cut is still inheriting
-the frame before it. Re-read prompt rule 16 and place them.
+
+**Scene density is measured every run, but it is judged against the script rather than against
+a threshold.** Print the figure and look at it. Inside the reference range, carry on. Outside
+it, ask whether the script's own shape explains it: long sustained scenes justify a higher
+number, a dense card and diagram act justifies a lower one, and either way the reason goes in
+the Step 4 report. What does fail is a figure nobody examined, and the two defects the figure
+exists to surface: unrelated frames inheriting one image over a long stretch, which is why
+project 11's 13.3 prompts per break was rejected, and a chain cut so often that no build
+survives to a payoff. If the number is unexplained rather than justified, re-read prompt rule
+16, invert the default so every `PLATE` breaks unless whitelisted, and place them again.
 
 Sourcing `.agents/bin/style-strings.sh` extracts the anchor and lock from
 `.agents/rules/visual-style.md` at run time. Never hard-code them into a grep pattern here:
@@ -323,8 +404,11 @@ for `@[name]`, which is part of the style lock. Fix anything that fails before r
 **The chat report carries everything the header used to.** Since the file is prompts only,
 this is the only place the human gets it, so do not abbreviate it. Give the prompt count
 against the cue count, the cast list with its `.jpeg` file names, any duplicate timestamps
-with the file-naming workaround, the background budget table, the chain-break count with the
-timestamp each break opens and why, and the first 3 prompts as a sample. For V2, also report style version, chapter colors, motif, register totals, tier totals,
+with the file-naming workaround, the background budget table, the chain-break count together
+with the **scene density figure and the longest inherited run**, the name-caption frames for
+any real named people, and the first 3 prompts as a sample. At the target density there are
+around 100 breaks, so give the density number and the act boundaries rather than annotating
+every break. For V2, also report style version, chapter colors, motif, register totals, tier totals,
 surface totals, new plates, variants, callbacks, CapCut-only beats, hero frames, longest planned
 hold, and planned beats per minute. Then quote the selected version's GENERATION LINE from
 `visual-style.md` verbatim so the human can copy it:
@@ -361,6 +445,12 @@ hold, and planned beats per minute. Then quote the selected version's GENERATION
   chain break sits as blank, `---`, blank.
 - Never cut the chain between a variant or a callback and the plate it points back to, and
   never inside a hold. Those beats exist because they inherit the frame before them.
+- Never ship a break count that only covers act boundaries, and never ship one you have not
+  looked at. Measure prompts per break, then judge it against what the script needs rather than
+  against the reference range in rule 16, and report the reason whenever it sits outside.
+- Never leave a real named person on screen as a generic doodle, and never caption their name
+  more than once. The likeness is a `/cast` obligation; the caption and the introduction beat
+  are this skill's.
 - Never re-describe a cast member. Never invent a token.
 
 ## Self-improvement
