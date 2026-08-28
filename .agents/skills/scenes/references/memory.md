@@ -779,7 +779,74 @@ where the beat sits in a chain of 3 or more beats on one plate, which is where t
 actually static. Landed 49 beats, 12.9 percent, cadence 31.7/min. Check the gap histogram before
 picking any threshold.
 
-### Rebuild numbers (2026-08-28): 332 prompts, 381 plan beats, 128 plates, 25 breaks
+### BREAK DENSITY IS A QUALITY LEVER, AND 25 WAS AN OUTLIER. Measure it every run.
+
+The user rejected the rebuild's break count on the same grounds as the prose: "the fewer `---` in
+prompts the fewer scenes the video is". That is exactly right and Step 3 never measures it. The
+Step 3 note only says "zero breaks in a multi-act episode is not a pass", which 25 clears easily
+while still being four times too few.
+
+Every accepted project restarts the chain every 2.6 to 3.5 prompts:
+
+| project | breaks / prompts | one fresh start every |
+| ------- | ---------------: | --------------------: |
+| 6       |        113 / 303 |          2.7 prompts  |
+| 8       |        104 / 268 |          2.6 prompts  |
+| 9       |         78 / 273 |          3.5 prompts  |
+| 10      |         89 / 304 |          3.4 prompts  |
+| **11 first pass** |  **15 / 332** | **22.1 prompts**  |
+| **11 rebuild, before this fix** | **25 / 332** | **13.3 prompts** |
+
+**Compute breaks-per-prompt and compare against that table before reporting.** Anything past about
+4 prompts per break means long stretches are inheriting one frame and the video goes flat.
+
+### The rule that produces the right density: break at every PLATE except real continuations
+
+Placing breaks only at act boundaries and hard cuts is what produced 25. A `PLATE` is by definition
+a complete new composition, so the default must be inverted: **break before every plate-opening
+prompt, and keep a whitelist of plates that deliberately inherit** because they are a closer view or
+the next step of one build on the same surface and the same subject (`face1` inside the same kitchen,
+`empty1` as the same room emptied, `edited1` as the same block with pen marks). 128 plates minus 29
+whitelisted continuations gave **99 breaks, one every 3.35 prompts**, longest inherited run 9,
+mean 3.3. Rule 16 holds by construction: a break only ever lands immediately before a PLATE's first
+prompt, so no variant or callback is ever severed from the plate above it.
+
+### A callback landing between a plate and its continuation inherits the wrong frame
+
+`P071` (the close on @SINGER) was whitelisted as continuing the Yugoslav tavern, but the prompt
+directly above it is a `CALLBACK` to the cream overhead of two tape spools. So it would have
+inherited a spools card, not the room, which is the contamination rule 16 exists to prevent. A
+whitelisted continuation is only valid if the frame *immediately above it* shares its surface, and
+callbacks reorder what that frame is. Guard, worth keeping in any re-break pass:
+
+```python
+if plate_not_in_CONTINUE or surface(prompts[i-1]) != surface(prompts[i]):
+    cut = True
+```
+
+Two other whitelist entries were dropped because their runs reached 9 and 11 prompts (`ribbons`,
+`honest1`); both fully describe themselves, so the cut costs nothing. The three runs that stay long
+(8 to 9) each end in a callback that cannot legally be broken before, which is projects 6 and 8's
+documented situation, and each callback rebuilds its composition in full.
+
+### Re-placing breaks does not require the generators
+
+Only break lines move, so the pass is: keep the lines starting with `[`, read `asset` and `Plate`
+per timestamp out of `visual-plan.md`, re-insert `---`, re-assert shape. Prose, surfaces, tiers and
+budgets come out byte-identical. Confirmed here: surfaces still 132/108/54/21/17 and tiers still
+139/163/30 after the rewrite.
+
+### The scratchpad is wiped mid-session, so "keep the generators" is not a plan
+
+`/tmp/claude-1000/.../scratchpad` was emptied between two turns of one session, taking `plan11.py`,
+`comps11.py`, `build11.py` and the earlier session's `plan_p11.py` with it. The previous entry's
+advice to keep generators in the scratchpad until the video ships is therefore unreliable. What
+survived is what was written into the project: `image-prompts.md` plus `visual-plan.md` together
+carry the prose, the per-beat asset, plate, register, shot, tier, delta, motif and text, and the
+surface is recoverable from each prompt's own phrase. **Treat those two files as the recovery pair,
+and if a generator must survive a session, write it under the project rather than the scratchpad.**
+
+### Rebuild numbers (2026-08-28): 332 prompts, 381 plan beats, 128 plates, 99 breaks
 
 Clean on all 22 checks. V2 anchor and lock on all 332 with zero V1, timestamps exact, zero
 non-prompt lines, first byte `[`, zero adjacent pairs without a blank line, 713 lines, tier plan
