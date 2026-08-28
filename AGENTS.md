@@ -16,15 +16,15 @@ delegate back. See `.agents/README.md` and `.claude/README.md`.
 
 ## Project rules - read the matching file before acting
 
-| File                               | Read before                                                                                                  |
-| ---------------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| `.agents/rules/house-rules.md`     | anything. Always active. Output hygiene, no em dash, stage discipline.                                       |
-| `.agents/rules/channel-dna.md`     | generating a topic, a script, or metadata. Pillars, angles, voice, editorial guardrails.                     |
-| `.agents/rules/visual-style.md`    | writing any image, sheet, or thumbnail prompt. V1/V2 strings, palettes, tiers, registers, and frame grammar. |
-| `.agents/rules/mascot-toss.md`     | building the cast. Toss identity lock and the reference sheet template.                                      |
-| `.agents/rules/thumbnail-rules.md` | writing thumbnail concepts. Rules A to F, evidence-backed.                                                   |
-| `.agents/rules/file-formats.md`    | writing any project artifact. Layout and exact file shapes.                                                  |
-| `.agents/rules/image-generation.md`| writing or editing `image-prompts.md`. The chain workflow that renders it, and the `---` chain break.        |
+| File                                | Read before                                                                                                  |
+| ----------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| `.agents/rules/house-rules.md`      | anything. Always active. Output hygiene, no em dash, stage discipline.                                       |
+| `.agents/rules/channel-dna.md`      | generating a topic, a script, or metadata. Pillars, angles, voice, editorial guardrails.                     |
+| `.agents/rules/visual-style.md`     | writing any image, sheet, or thumbnail prompt. V1/V2 strings, palettes, tiers, registers, and frame grammar. |
+| `.agents/rules/mascot-toss.md`      | building the cast. Toss identity lock and the reference sheet template.                                      |
+| `.agents/rules/thumbnail-rules.md`  | writing thumbnail concepts. Rules A to F, evidence-backed.                                                   |
+| `.agents/rules/file-formats.md`     | writing any project artifact. Layout and exact file shapes.                                                  |
+| `.agents/rules/image-generation.md` | writing or editing `image-prompts.md`. The chain workflow that renders it, and the `---` chain break.        |
 
 ## The pipeline
 

@@ -276,6 +276,54 @@ Transferable rules:
 then "who lived for years among the". `[5:10]` and `[6:28]` are both unused, so the `scenes` header
 must say to save the second image of each pair as `[5:10]` and `[6:28]` respectively.
 
+## Project 11 (2026-08-28) - textbook clean run, and the first check of a hook prediction against real audio
+
+3 parts at 256 kbps 44.1 kHz mono (uniform, so no VBR header risk): 4m57.5s, 2m10.6s, 4m53.4s,
+combined **12m01.5s**, Xing reporting 12m01.4s which is rounding, not a mismatch. Single
+ElevenLabs forced-alignment call on `audios/full.mp3` against the whole script, same as projects
+5, 6, 8, 9 and 10, because `script_things_that_never_happened.md` has **zero runs of 2+ blank
+lines** across its 32 paragraphs, so there is no part boundary to find.
+
+**332 cues**, median 1.7s, last cue `[12:00]`, aligned speech ending at 721.3s of 721.5s audio,
+**no duplicate timestamps at all**, no malformed lines, transcript text word-for-word identical to
+the script at 2076 words. 27.6 cues per minute against the V2 profile's predicted 27.5. One
+one-word cue, `None.`, an intentional verdict from "There was no broken glass in that film. None."
+Duration is inside the channel-dna 10 to 14 minute spec.
+
+Pre-flight checks all passed first time, in this order, which is the order worth keeping:
+
+1. **Folder sweep before trusting `audios/`** (the project 10 lesson): `find <P> -type f` showed
+   exactly three parts and no stray. Nothing hiding in `outputs/` this time.
+2. **wps arithmetic before any API call:** 2076 words / 721.5s = **2.88 wps**, mid-band against
+   the measured 2.71 to 3.21. No part missing.
+3. **Quota before spending:** free tier, 4830 of 10000 used, 5170 remaining against a roughly 780
+   credit call. Key authenticated and was in scope on the first try.
+4. **Rolling 30s window after the call:** whole-file 2.88, rolling median 2.90, max 3.60 at 645s,
+   largest silence 1.5s at 0m54.2s. Rolling median agrees with the whole-file figure, so the read
+   was uniform and nothing was dropped.
+
+The `words.json` cache was again a **bare top-level list**, matching projects 9 and 10. The
+shape-tolerant loader is now the only sensible default; do not write `["words"]`.
+
+### The 169 wpm hook estimator is slightly conservative, and that is now measured
+
+Project 11's hook was engineered beat by beat against the 169 wpm figure in
+`.agents/skills/script/references/memory.md`. This is the first time those predictions could be
+checked against a real recording, and every beat landed **1 to 2 seconds early**:
+
+| Beat | Predicted at 169 wpm | Real audio |
+| ---- | -------------------- | ---------- |
+| contradiction, "your least reliable one" | 0:03 | **0:01** |
+| formal "but" | 0:20 | **0:18** |
+| mechanism named, "It is reconstruction" | 0:26 | **0:25** |
+| new open question, "which of yours have been rewritten?" | 0:35 | **0:33** |
+| beat 4 promise, "By the end you will know" | 0:38 | **0:37** |
+
+Cause is simply that this read came in at 2.88 wps, which is 172.8 wpm against the 169 the
+estimator uses. **Treat 169 wpm as a safe upper bound on timing: a beat engineered to land at
+second N will land at or slightly before N.** That is the right direction for the error to point,
+so do not recalibrate the script skill's figure on one recording. Recheck after another two.
+
 ## Project 5 rebuild (2026-08-04) - three key failures before one clean align
 
 The project 5 folder was retopiced to `5-why-do-people-follow-the-crowd` and its cast file

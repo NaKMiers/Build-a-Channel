@@ -23,6 +23,35 @@ a chapter pointing at a second with no cue is invisible until a viewer clicks it
   institution.** Woodburn resolved cleanly through `doi.org/10.2307/2801707` to JSTOR, and Roese
   through his own Kellogg faculty page.
 
+## Project 11 (2026-08-28), false memory - title chosen for glance-clarity over hook-echo
+
+7 chapters, 20 hashtags, 36 tags, all five titles 47 to 62 characters, 3 fenced blocks matching
+projects 9 and 10. Every chapter timestamp grepped back against `transcript.md` and present
+verbatim.
+
+- **Recommended title A, "Why Do You Remember Things That Never Happened?", over E** even though
+  E ("You Never Noticed Your Most Certain Memory Is Your Most Edited") is a closer echo of the
+  script's actual first line, which after a hook rewrite is "The memory you trust most is your
+  least reliable one." A is 47 characters against E's 62, is a question, and states the paradox in
+  words a tired viewer parses at a glance, which is the standing batch 8 steer in
+  `topic/references/memory.md`. E front-loads two possessive comparatives and has to be read
+  twice. **Title-to-hook echo is worth less than glance-clarity when the hook resolves the
+  title's claim inside 30 seconds anyway**, and this one does: the new open question at 0:33 is
+  "So which of yours have been rewritten?"
+- C is the search-friendly alternative and follows a form the channel already publishes under
+  ("The Loneliness Effect", "The Boredom Signal Effect"). Worth an A/B if title A underperforms.
+- **Chapters deliberately stop at 9:18 of a 12:01 video.** The last chapter is the shift, and
+  nothing after it is mapped, so the echo, the bridge, and the end-screen CTA stay unsignposted.
+  Mapping the CTA would tell a viewer exactly when the essay ends.
+- Citations: all six URLs were HTTP-checked before writing, and all six returned 200 on the first
+  try, unlike project 10 where a course-page full text died. The Loftus and Palmer 1974 paper
+  resolved cleanly through `doi.org/10.1016/S0022-5371(74)80011-3`, so the primary study is cited
+  by DOI rather than by an encyclopedia article. **Prefer the DOI when the script's central
+  experiment has one**; use Wikipedia for the researcher or the named effect around it.
+- The script's `FIGURE CORRECTION` in `script/references/memory.md` was honoured here: the
+  description does not quote speed figures at all, so the mispaired 40.8-versus-31.8 numbers from
+  topic memory had no route into a published artifact.
+
 ## PRECONDITION CONTRADICTION IN THE REPO, hit on 2026-08-25 (project 10), NOW RESOLVED IN PRACTICE
 
 `/metadata` was invoked straight after `/cast`, before any voiceover existed, and correctly

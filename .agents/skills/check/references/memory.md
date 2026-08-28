@@ -86,3 +86,40 @@ and those do pass clean, including the canonical one-line `[3:24]` to `[3:25]` r
   pacing observation, a run of near-identical variants is real monotony. Project 7's 10 flags
   were all the former, including one deliberate 12-beat STORY stretch that is a single
   continuous scene (the yell, then the pull-back to the room).
+
+## Project 11 check (2026-08-28): the skill's own Step 1 snippet aborts under zsh
+
+Step 1's inventory loop is
+
+```bash
+for f in script_*.md outputs/metadata.md ...; do ls "$P"/$f ...
+```
+
+The unquoted `script_*.md` is glob-expanded **by the shell in the current directory**, not by
+`ls` inside the project directory. Under zsh with default `nomatch`, no `script_*.md` exists at
+the repo root, so the shell aborts the entire command with
+`no matches found: script_*.md` and **exit 1 before a single check runs**. Under bash it would
+degrade differently: the pattern passes through literally and `ls` reports one missing file, so
+the loop keeps going and only that row is wrong.
+
+Fix in place when running it: name the script file literally, or test with `[ -f "$P/$f" ]`
+instead of `ls`, which needs no glob at all. The durable fix is to change the snippet in
+`check/SKILL.md` to `[ -f ... ]` and drop the glob, since the script's real name is discoverable
+with one `ls "$P"/script_*.md` beforehand. **A verification snippet that cannot run is worse
+than a missing one: the exit status looked like a failed project rather than a failed check.**
+
+### Result on project 11
+
+Everything that exists passes: script 2076 words with zero markdown characters, 332 cues with
+zero malformed lines and zero duplicate timestamps, cast 10 fences with 4 V2 opening lines and
+zero positive `mitten` hits, 5 cast tokens all used legally and zero orphan tokens in the
+thumbnail file, thumbnails 9 lines and 5 records, metadata 7 chapters all resolving to real
+transcript timestamps and 20 hashtags, visual plan 370 rows with exactly 332 generated matching
+the cue count, zero em dashes anywhere.
+
+Legitimately absent, not defects: `prompts/image-prompts.md` (the scenes prose pass is the
+declared next step), `characters/` empty (sheets not generated yet, prompts are ready),
+`scenes/` empty (follows image-prompts), and `outputs/captions/` holding 2 of 8 languages.
+**`check` should report an empty `characters/` alongside a complete `character-prompts.md` as
+PENDING GENERATION rather than a fault**, because the pipeline's artifact is the prompt file and
+the images are a human step.

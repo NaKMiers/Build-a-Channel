@@ -192,6 +192,117 @@ Craft notes:
 - 2,069 words, 4 questions across 157 sentences. 3 of those are narration questions, matching
   the fixture; the 4th is the end-screen CTA question the user asked for.
 
+## Project 11, false memory, cited (2026-08-28, reconstructive memory)
+
+Elizabeth Loftus and John Palmer (1974, both experiments: the verb-substitution speed
+estimates, and the broken-glass follow-up a week later), Frederic Bartlett (1932,
+serial reproduction of an unfamiliar folk tale, schema, remembering as imaginative
+reconstruction), Elizabeth Loftus and Jacqueline Pickrell (1995, lost in the mall, about
+one in four came to remember the planted event), Jack Goody (the LoDagaa of northern
+Ghana, the Bagre recitation recorded more than once from the same men and not matching),
+Albert Lord with Milman Parry (Yugoslav epic singers claiming word-for-word fidelity while
+recordings years apart differed in length and scenes). Three behavioral scientists plus two
+anthropologists, and both anthropologists are fresh, first use on the channel.
+
+**FIGURE CORRECTION, carry this forward.** `.agents/skills/topic/references/memory.md`
+batch 14 records Loftus and Palmer 1974 as "smashed produced 40.8 mph vs hit 31.8". That
+pairing is wrong. The real Experiment 1 means are smashed 40.8, collided 39.3, bumped 38.1,
+**hit 34.0**, contacted 31.8. So 31.8 belongs to **contacted**, not hit. The script uses
+smashed versus contacted, which is both accurate and the widest honest spread, about nine
+miles an hour. The 32 percent broken-glass figure in topic memory is correct and belongs to
+Experiment 2 (16 of 50 smashed, 7 of 50 hit at 14 percent, 6 of 50 control at 12 percent).
+Do not let the wrong pairing propagate into `metadata` sources or thumbnail numbers.
+
+Craft notes:
+
+- **Zeigarnik-to-Masicampo shape, fourth time, and the cleanest version yet.** The mechanism
+  that opens the loop and the finding that closes it are the SAME finding read twice. Loftus
+  and Bartlett establish that memory absorbs post-event information; the anthropology then
+  reveals that absorption is not a defect but the pooling mechanism a band without writing
+  used to assemble one picture from ten partial views. So the shift is not bolted on, it is
+  the mechanism turned around. Keep hunting for this shape at planning time.
+- **The anthropological inversion is the strongest structural move in this script**, and it
+  is reusable. Instead of "the ancestral world installed the bug", it is "the bug is the
+  feature and the input channel changed". Suggestibility was survival because in a world with
+  no records the newest thing you heard was almost always truer than the oldest thing you
+  stored. Modern mismatch writes itself: the channel is still open and now strangers, feeds,
+  headlines, and leading questions are feeding it.
+- **HOOK REPLACED ON THE SAME RUN after a retention audit. Read the OPEN-LOOP LATENCY section
+  below before touching any hook.** Draft 1 used project 10's shock-first shape: "One word.
+  Change one word inside a single question and people will remember broken glass that was never
+  there." It scored well on the written rule (claim at word 19 or 0:07, "but" at word 39,
+  mechanism at word 60) and still had two structural faults the audit exposed. First, it was
+  about anonymous students for 27 words, so the viewer had no personal stake until word 28 and
+  even then only as the holder of a wrong opinion, while the title promises the viewer's own
+  false memories. Second, "One word." spent four seconds of the most expensive real estate in
+  the video on a drumroll carrying no information.
+- **The shipped hook opens on the confidence inversion**, which is the script's own shift
+  hoisted to word one: "The memory you trust most is your least reliable one." Measured
+  positions: personal stake at word 3 (0:01), the contradiction at word 9 (0:03), formal "but"
+  at word 56 (0:20), mechanism named at word 73 (0:26), a fresh open question at word 98
+  (0:35), beat 4 promise from word 107 (0:38). At the 30 second mark the viewer is landing on
+  the punchline, "every retelling is a save, not a read", and gets a new unanswered question
+  five seconds later.
+- **DELIBERATE RULE DEVIATION, do not "fix" this.** The formal "but" lands at word 56, breaking
+  `channel-dna.md`'s "first but before word 50". The rule exists so the viewer holds a
+  contradiction early, and this hook delivers the contradiction in its first sentence at word 9,
+  which is 41 words earlier than the threshold was ever asking for. The word "but" at 56 is a
+  SECOND reversal, aimed at the viewer's objection ("good memory"), not the first. Forcing it
+  under word 50 would mean deleting working words for no retention gain. Mechanism at word 73
+  is compliant. If a future `/check` flags the word-50 threshold here, this paragraph is the
+  answer.
+- **Because the hook now front-loads rehearsal while the psychology pillar proves suggestion, a
+  one-line bridge was added** at the top of the Loftus paragraph: "Rehearsal is only one of the
+  ways new material gets into a memory. The first hard proof came from something far smaller
+  than a retelling. One word." This keeps the hook's promise alive and relocates the "One word"
+  beat from second 0, where it was expensive, to second 45, where it is cheap. **Any hook that
+  front-loads one route into the mechanism needs this kind of bridge, or the body reads as a
+  different argument than the one the viewer was promised.**
+- **The echo had to move with the first line.** The old echo closed on the broken glass, which
+  is no longer the opening image. Two sentences were appended to the echo paragraph so it
+  reframes the actual first line: "The memory you trust most is not the one that happened. It
+  is the one you have handled the most." **Changing a hook's first line always obligates an
+  echo rewrite.** The glass material stays in the echo as the proof, which still works because
+  the bridge moved it to paragraph two rather than deleting it.
+- One narration question was converted to a statement to hold the total at 5, since the new
+  opening question ("So which of yours have been rewritten?") made the old psychology-pillar
+  closer redundant. "How much of what you are absolutely sure about was actually in the film?"
+  became "You have no way to audit your own footage. There is no footage."
+- **Questions came in at 9 on first draft and were trimmed to 5.** The trim patterns that
+  worked: fold a paired stimulus question into one question plus a statement ("For another
+  group the verb was not smashed. It was contacted."), and convert a rhetorical
+  set-up question into the declarative it was already implying ("new information had exactly
+  one possible source"). Final 5 breaks down as 2 quoted experimental stimuli, 2 narration
+  questions, 1 CTA question. Project 10 was 4 with 2 stimuli, so this is in line. **Quoted
+  stimulus questions count against the raw grep total but are not narration rhythm.** Note
+  that when measuring against the fixture.
+- **End-screen tease points at project 10, third versus second, by the user's instruction on
+  the same run.** The first draft pointed at project 2, the argument replay, on the reasoning
+  that this script's shift is "retelling is a write operation" and project 2's mechanism is the
+  loop that makes you retell. The user redirected it to project 10, and project 10 is the
+  better pairing on the merits: both videos are about the same faculty inventing a version of
+  events that never occurred, this one inventing the past and project 10 inventing the
+  alternative outcome. **When choosing a tease target, prefer the video that shares the
+  faculty over the video that shares the symptom.** Bridge sentence: the same machine does not
+  only rebuild the past that happened, it builds the one that did not, and then hands you the
+  bill for the difference. The CTA teases with a verifiable image, medalists' faces with the
+  sound turned off, and names neither the mechanism nor the fix.
+- Order follows project 10's accepted shape unchanged: echo paragraph, then one-sentence
+  thematic bridge, then CTA last, ending on the naked instruction.
+- 2,015 words, 165 sentences. Proportions with the hook counted as psychology setup: psychology
+  35 percent, anthropology 29 percent, mismatch plus shift 36 percent.
+- One `\bme\b` grep hit, in "while looking at me like that", which is modeled viewer speech
+  inside the gist-versus-detail contrast. Not narrator voice.
+- Numeric material for the thumbnail, and it is rich: 40.8 versus 31.8 miles an hour (nine
+  miles an hour of difference from one word), 32 percent versus 14 percent on broken glass that
+  did not exist, 1 in 4 for lost in the mall, 1 word, 7 days, 200,000 years of humans versus
+  5,000 of writing, a band of 30. The 40.8-vs-31.8 and 32-vs-14 pairs are both genuinely
+  subtractable, which is what the two-number layout wants.
+
+Fresh anthropologists still unspent after this: Jean Briggs, Sarah Blaffer Hrdy, Joseph
+Henrich, Max Gluckman, E. Adamson Hoebel, Polly Wiessner and Christopher Boehm are now heavily
+used; Goody and Lord are spent as of this project.
+
 ## OPEN DISCREPANCY: question density
 
 `.agents/rules/channel-dna.md` says "Question every 4 to 6 sentences". **The accepted
@@ -213,7 +324,72 @@ F=projects/<n>-*/script_*.md
 echo "questions $(grep -o '?' $F | wc -l)  sentences $(grep -oE '[.!?]' $F | wc -l)"
 ```
 
+## OPEN-LOOP LATENCY: the variable that actually predicts early retention (2026-08-28)
+
+Re-audited `outputs/retention-2026-08-11.json` at datapoint resolution rather than in summary,
+and it **partly falsifies the causal claim in the HOOK RULE UNDER TEST section below.** Read
+this first. The rule's word budget survives; its stated cause does not.
+
+Two corrections to the section below:
+
+1. **The cliff is second 7 to second 14, not 7 to 22.** Datapoint spacing is about 7 seconds,
+   and four of the five videos with data lose 15 to 42 percentage points across the single gap
+   between datapoint 1 and datapoint 2. The curve mostly flattens after 21s. A hook has to have
+   done its work by second 14.
+2. **Reversal position does not predict early retention across these five.** The rule below
+   assumes it does. The data says otherwise, and the two extremes of the sample disagree with
+   it most sharply.
+
+| Video | 7s | 14s | 21s | 30s | relPerf @30s | reversal |
+| ----- | -- | --- | --- | --- | ------------ | -------- |
+| P4 days drag | 78% | **94%** | 78% | **61%** | **0.34** | never in 40s |
+| P1 loneliness | 96% | 80% | 55% | 54% | 0.23 | 0:29 |
+| P3 diff self | 94% | 61% | 44% | 50% | 0.16 | 0:33 |
+| P2 argument | 95% | 64% | 51% | 44% | 0.25 | never in 40s |
+| P5 crowd | 100% | 58% | 33% | 33% | 0.18 | 0:31 |
+
+**P4 has the best early curve in the sample and its reversal never lands inside 40 seconds.
+P5 has the worst and its turn lands earlier than P4's.** So the reversal clock is not the
+mechanism.
+
+What separates them is **open-loop latency: how many seconds pass before the viewer holds a
+question they cannot answer and recognise as true of themselves.**
+
+- **P4, about 3 seconds.** "Monday felt long. Somehow, the whole month vanished." A complete
+  paradox in eight words, about the viewer's own life, requiring no named mechanism to work. It
+  even rises to 94 percent at 16s, which means viewers scrubbed back.
+- **P5, about 26 seconds.** "You have clapped for something you did not love" is relatable but
+  is not a paradox, and the viewer already believes they know the answer is social pressure, so
+  no loop opens until "most will say fear" at 0:26. Minus 41.7 points.
+
+**Practical rule, and this is what to optimise now:** the first sentence must hand the viewer a
+contradiction about their own life that they cannot resolve. A named mechanism, a study, or a
+shocking statistic about other people is not a substitute, because it opens a loop about
+strangers. Personal stake and paradox are one requirement, not two.
+
+Also note: **a relatable moment is not an open loop.** P5, P1, and the project 11 draft-1 hook
+all opened well by the old rule and all opened on something that was not a question. That is
+the failure mode the word budget does not catch.
+
+Caveats, stated plainly because this rests on five videos: 12 to 71 views each, so P4 being one
+atypical video is live. P4 also starts at 78 percent, meaning it lost a fifth of its audience
+before second 8, which points at a separate title-or-thumbnail problem the retention curve
+cannot see. And **project 10's shock-first opening still has no data at all.** The lesson in the
+project 10 section calling it best practice is a hypothesis, not a result; project 11 declined
+it on the strength of this audit.
+
+**The next test.** Project 11 ships with a hook whose paradox lands at 0:03 and whose personal
+stake lands at 0:01. Pull the first three datapoints when it has views. Above 0.40 relPerf at
+14s, or a 14s watch ratio above 80 percent, and open-loop latency is confirmed as the lever.
+Still under 0.30 and the untested variable named below, the voiceover itself, is next and nobody
+has inspected it yet.
+
 ## HOOK RULE UNDER TEST (added 2026-08-12, from the first seven videos' retention)
+
+**Superseded in part. Read the OPEN-LOOP LATENCY section above first: the word budget below is
+still in force, but its stated cause, reversal position, does not survive the datapoint-level
+audit.**
+
 
 The four-beat hook budget in `channel-dna.md` was derived from analytics, not from taste.
 It is a hypothesis with a scheduled test, so do not treat it as settled and do not quietly

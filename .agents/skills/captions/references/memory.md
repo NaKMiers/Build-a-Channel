@@ -60,6 +60,55 @@ Also spot-read blocks 1, 38, 87 and 146 across all eight files side by side befo
 reporting. The structural check proves alignment of the containers; only a read proves the
 right sentence is inside the right container.
 
+### 2026-08-28, project 11, blocking cap
+
+Issue: the project 10 sentence-boundary fix was applied as written and still produced **18
+blocks over the 7 second cap, up to 9.9 seconds.** Cause: the cap was tested as
+`dur >= 7000` on the block as it already stands, so a block sitting at 6.5 seconds still
+accepts one more 3 second cue and lands at 9.5. The cap closed the block after it had
+already been breached.
+
+Fix: test the cap **against what the block would become**, not what it is.
+`would = ends[i+1] - start; close = ... or would > 7000`. That took 142 blocks at max 9.9s
+to **153 blocks, mean 4.6s, max 6.9s**, and zero over the cap. Compare project 10's 146
+blocks at mean 4.7s: the shape is the same, and the look-ahead form is strictly the correct
+one. Non-sentence blocks went 18 to 30, which is the honest trade, and matches project 10's
+28: a tighter cap has to split more long sentences.
+
+Generalisable beyond captions: **a ceiling checked after the fact is not a ceiling.** Any
+accumulate-until-limit loop must test the candidate state, not the committed state.
+
+### 2026-08-28, project 11, all eight languages
+
+All eight languages written and sync-checked: en, vi, es, ja, nl, hi, zh, ko. 153 blocks in
+every file, zero sequence errors, zero timestamp mismatches against `en.srt`, zero empty
+texts, zero consecutive duplicates, zero em dashes, UTF-8 throughout. Spot-read blocks 1, 22,
+87, 143 and 153 across all eight side by side.
+
+**An initial pass shipped only en and vi as a scope call and the owner rejected it: they want
+all eight, every time.** Do not offer a subset. Budget for eight from the start; the
+translation itself is the whole cost, and the assembler makes each extra language cheap.
+
+### Two defects that only a targeted scan catches
+
+1. **Unit conversion breaks the on-screen text.** The Spanish pass helpfully converted 41 and
+   32 miles per hour into 66 and 51 km/h. But the scene prompts render the numerals **41** and
+   **32** as on-screen text, so the caption would have contradicted the image it sits under.
+   **Never localise a unit that appears as generated on-screen text.** Keep miles, keep the
+   numerals, keep any figure the visual plan carries in its Text column. Check the plan's Text
+   column before translating a number.
+2. **A source-language word can leak into a non-Latin script and pass every structural
+   check.** Japanese block 72 came out as `ロダガー people と長年暮らし`, with a stray English
+   word inside the Japanese. Block count, timestamps, emptiness and duplicate checks all
+   passed. The scan that catches it is one regex per CJK and Devanagari file:
+
+   ```python
+   leak = sum(len(re.findall(r'[A-Za-z]{3,}', t)) for _, _, t in blocks)   # must be 0
+   ```
+
+   Run it for ja, zh, ko and hi on every assembly. Latin-script languages cannot use it, so
+   for es, nl and vi the spot-read is the only guard.
+
 ### 2026-08-22, project 9, vi
 
 Issue: vi.srt had drifted out of sync with en.srt for roughly the first half of

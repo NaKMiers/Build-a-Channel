@@ -1,16 +1,16 @@
-# Metadata - Why You Would Be Happier Coming Third Than Second
+# Metadata - The Psychology Of Why You Would Be Happier Coming Third Than Second
 
 ## Title
 
 ```
-Why You Would Be Happier Coming Third Than Second
+The Psychology Of Why You Would Be Happier Coming Third Than Second
 ```
 
 ### All five title variants
 
-|     | Formula                        | Title                                              | Chars |
-| --- | ------------------------------ | -------------------------------------------------- | ----- |
-| A   | Why do/can't you \_\_\_?       | Why You Would Be Happier Coming Third Than Second  | 49    |
+|     | Formula                        | Title                                               | Chars |
+| --- | ------------------------------ | --------------------------------------------------- | ----- |
+| A   | Why do/can't you \_\_\_?       | Why You Would Be Happier Coming Third Than Second   | 49    |
 | B   | Your brain still thinks \_\_\_ | Your Brain Still Thinks You Only Have Thirty Rivals | 51    |
 | C   | The \_\_\_ Effect              | The Counterfactual Effect Is Deciding How You Feel  | 50    |
 | D   | What every human tribe does... | What Every Tribe Did To Stop You Feeling This Way   | 49    |
@@ -19,6 +19,11 @@ Why You Would Be Happier Coming Third Than Second
 Recommended: **A**. It carries the video's opening shock, it is the one claim a viewer cannot
 scroll past without checking, and it hands the thumbnail stage a clean two-number contrast
 without the title having already spent it.
+
+Published title: **A with the "psychology" keyword front-loaded** - "The Psychology Of Why You
+Would Be Happier Coming Third Than Second" (66 chars). The claim and the curiosity gap are
+untouched, the search term now sits in the first two words where YouTube weights it hardest,
+and it still reads as a sentence rather than a keyword stuffed in.
 
 ## Description
 

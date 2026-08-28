@@ -712,3 +712,238 @@ advice trio crossed out behind @YOU). [10:29]-[10:34] is the thesis hero frame (
 [10:36]-[11:09] then inverts the thesis (you are also the crowd) and hands off to project 5's
 topic with a FOLLOW THE CROWD teaser card. That three-beat ending shape (callback, thesis hero,
 inversion-teaser) is reusable for any episode that has a named next video.
+
+## Project 11 (2026-08-28), REJECTED as "really bad and unattractive", then rebuilt
+
+**Read this before the section below it.** The 332-prompt artifact described in the next section
+passed all 21 mechanical checks and the user rejected the whole set on sight. Everything in that
+section about method (data-first assembly, the Text-column defect, the token traps) still holds.
+Its *content* is the counter-example. The rebuild is at the end of this file.
+
+### THE DEFECT: every surface check passed while every story environment was empty
+
+The budget said `illustrated story environment` on 35 percent of prompts. The prose delivered
+"the room behind them is only a chair back and a plain wall edge" and "one plain doorframe stands
+behind him at frame left". So 35 percent of the video was nominally a place and actually a blank
+card with one prop, and the finished contact sheet read as wall-to-wall empty cards.
+
+**Every check in Step 3 counts the surface *phrase*. Not one of them asks whether the prose
+describes a place.** This is invisible to surface totals, per-prompt surface counts, the
+mixed-surface check, tier equality, prompt count, timestamps, anchor and lock counts, and the
+prompts-only grep. It is the same class as project 8's missing tokens and the Text column below:
+a column the checks confirm the *presence* of but never the *content* of.
+
+Rule now applied at authoring time: **a story-environment plate must name the place and at least
+three objects that belong to it**, and must never be described as "an ordinary room", "a plain
+wall edge", or "nothing else in the frame". Cheap check:
+
+```bash
+# story-environment prompts that never name a place-defining noun
+grep '^\[' "$F" | grep 'illustrated story environment' | grep -cvE \
+  'room|kitchen|study|camp|mall|concourse|road|landscape|podium|tavern|compound'
+```
+
+### Abstract glyph inflation: the script hands over concrete nouns and the plan ignored them
+
+The rejected plan was built out of memory blocks, routes, markers, spans, two dials, a tape reel
+and a doorway-with-a-block. The script supplies a 1974 projector and rows of chairs, broken glass
+on a road, canoes and seal hunts turning into boats and fishing, a 1990s mall and a stranger's
+flannel shirt, a gusle, spears, a river that shifted course, a group chat. Rule 7 says never
+render an abstraction as an abstraction, and this was breaking it for roughly half the file with
+nothing to catch it. **When a script is location-rich, list its concrete nouns first and check how
+many reach the prompt file.** A plan whose plate keys are mostly shapes (`twoshelf`, `orderstrip`,
+`twodials`, `notape`, `routes`) has already lost.
+
+### Pick the motif from the script's own closing image, and prefer one a cast sheet already locks
+
+Old motif: "an open doorway with one fragment passing through it", which degenerated into "a
+charcoal doorway shape with one small block". New motif: **a flat broken glass shard**. It is the
+script's own last image ("the broken glass was never in the film, it was in the question"), it is
+already a locked prop in `@CLASS`'s reference sheet so the design is fixed, and the same drawing
+*is* a fragment, so it carries the band pooling ten viewpoints, Bartlett's chain, the planted mall
+detail, the modern feed and the ending. 102 beats, four acts, one glyph.
+
+### Surface belongs to the plate, not the beat
+
+Storing surface on the plate composition rather than on each beat makes a mixed-surface plate
+structurally impossible instead of merely checked. Ten fewer things to verify. Tier still varies
+per beat, which is legal when the delta justifies it.
+
+### Cue gaps are bimodal, so a single CapCut threshold cannot hit the band
+
+`gap >= 3.0` produced 92 CapCut beats (21.7 percent, cadence 35.3/min). `gap >= 3.5` produced 16
+(4.6 percent, cadence 28.9). Nothing lands in between, because most cues in this transcript sit
+exactly 3.0 seconds apart. Loosening and tightening the number is a dead end. **Make the rule
+chain-aware instead:** always subdivide a hold of 3.5s or more, and add a 3.0s subdivision only
+where the beat sits in a chain of 3 or more beats on one plate, which is where the video is
+actually static. Landed 49 beats, 12.9 percent, cadence 31.7/min. Check the gap histogram before
+picking any threshold.
+
+### Rebuild numbers (2026-08-28): 332 prompts, 381 plan beats, 128 plates, 25 breaks
+
+Clean on all 22 checks. V2 anchor and lock on all 332 with zero V1, timestamps exact, zero
+non-prompt lines, first byte `[`, zero adjacent pairs without a blank line, 713 lines, tier plan
+equal to prompts exactly, one surface phrase per prompt, zero mixed-surface plates, all 25 breaks
+opening a PLATE, every source pointing backward, no em dash, no yellow.
+
+Registers STORY 30.4, CARD 18.7, DIAGRAM 18.7, HYBRID 13.0, PORTRAIT 10.5, SPLIT_OR_SCALE 8.7,
+**all six in band**, reached in one rebalancing pass by honest relabeling only (a room with two
+people is STORY not SPLIT; booklets on a table are CARD not DIAGRAM). Surfaces story 39.8, cream
+32.5, tinted 16.3, cobalt 6.3, white 5.1, all inside tolerance. Tiers CLEAN 41.9, LAYERED 49.1,
+ATMOSPHERIC 9.0. Assets VARIANT 49.1, PLATE 33.6, CAPCUT 12.9, CALLBACK 4.5. Text 31.0 percent.
+
+Plates went 130 to 128 but the *chain* shape changed, which is what the user was reacting to: the
+rejected file ran 53 percent variants with deltas like "a bracket measures the gap between the two
+blocks". Chain lengths are now capped at 4 and every delta is a story event.
+
+@YOU 69 prompts, 20.8 percent of all and **42.0 percent of the 162 eligible cues**, the highest
+recorded (project 6 was 36, project 8 35.8). The lift came from project 8's rule applied
+deliberately: a second-person script puts the viewer inside his own hands rebuilding the fragments,
+his own phone, his own palm holding the shard, and one of the two people remembering it
+differently. Adding him to those plates took him 45 to 69 without inventing a frame.
+
+One 30 second block carries fewer than four shot tasks: the `12:00` block, one beat, the last cue.
+Arithmetic limit. Two others were real and fixed by re-shotting three plates.
+
+## Project 11 first pass (2026-08-28), the REJECTED artifact: 332 prompts, 370 plan beats, 130 plates, 15 breaks
+
+Clean on every mechanical check. 332 cues to 332 prompts, V2 anchor and lock on all 332 with zero
+V1 strings, timestamps an exact diff match with no duplicate stamps anywhere in the transcript,
+zero non-prompt lines, first byte `[`, zero adjacent pairs without a blank line, 693 lines, tier
+counts equal to plan exactly (152 CLEAN / 160 LAYERED / 20 ATMOSPHERIC), surfaces summing to 332
+with exactly one phrase per prompt, zero mixed-surface plates, all 15 breaks opening a PLATE, no
+em dash, no yellow text.
+
+Motif: **an open doorway with one fragment passing through it**, on 92 beats. Per the project 8
+rule I looked for the drawing both halves share instead of inventing two, and this script hands it
+over explicitly: "a second reason to leave the door open", then "the door is still wide open, it
+has never closed". The ancestral half is witnesses carrying fragments through it; the modern half
+is the identical door with lawyers, headlines and feeds coming through. It also carries the
+psychology act (the word walks through it) and the echo (the glass came through it). One glyph,
+four acts.
+
+Final budgets. Registers STORY 29.7, CARD 19.2, DIAGRAM 15.7, SPLIT_OR_SCALE 12.4, PORTRAIT 11.9,
+HYBRID 11.1 percent, five of six inside their bands. Surfaces story 34.9, cream 29.8, tinted 19.9,
+white 8.4, cobalt 6.9, **every one within a point of target**, the closest the channel has come.
+Tiers CLEAN 45.8, LAYERED 48.2, ATMOSPHERIC 6.0. Assets over 370 beats VARIANT 53.0, PLATE 35.1,
+CAPCUT 10.3, CALLBACK 1.6. Text 26.5 percent (88 of 332). Cadence 30.8 beats per minute. Cast
+@YOU 77, @CLASS 18, @BAND 15, @SINGER 10, @BARTLETT 8; tokens on 127 of 332 prompts. @YOU is 23
+percent of all prompts and **40.3 percent of the 191 cues where rule 12 allows him**, above
+project 6's 36 and project 8's 35.8. The three other-era acts that bar him are `[1:00]` to
+`[2:52]`, `[4:49]` to `[7:47]`, and `[10:39]` to `[10:50]`, 141 cues. Exactly one `@YOU` frame
+sits inside one of them, `[7:47]`, and it is an explicit ancestral-left / modern-right split
+composition, which is the deliberate then-versus-now case rule 12 permits.
+
+One 30 second block carries fewer than four shot tasks: the `12:00` block, which holds a single
+beat because it is the last cue. Arithmetic limit, not a defect, same as project 6's 5 second
+final block.
+
+Two plates span two render tiers, `mall` and `wordforword`. Both are justified by the delta: the
+mall callback drops the atmospheric fog to rebuild as LAYERED, and the wordforword variants strip
+to locking blocks and lines, which is a CLEAN diagram move. **A plate chain may change tier when
+the delta is the reason; only a plate chain that changes SURFACE is a contradiction.** Zero plates
+have mixed surfaces.
+
+### THE DEFECT WORTH REMEMBERING: the plan's Text column never reached the prompts
+
+First assembly passed **every** mechanical check in Step 3 while on-screen text sat at **25 of 332
+prompts, 8 percent**, against a plan that assigns text to 88 beats and a V2 band of 25 to 35.
+
+Cause: text was only present where I happened to write it into a PLATE's composition prose. Every
+VARIANT and CALLBACK is generated from the plate prose plus a delta, and the delta clause says
+nothing about text, so 63 beats that the plan marks as carrying text rendered none. This is
+invisible to prompt count, timestamps, anchor and lock counts, surface counts, tier equality, the
+prompts-only grep, and the adjacent-pair check. It is the same shape as project 8's missing-token
+defect, one column over.
+
+**Fix: emit the plan's Text column in the assembler, not in the prose.** Three lines:
+
+```python
+txt = beat["text"]
+if txt != "-" and txt not in scene:
+    scene += f' Bold {"red" if txt in NEG else "charcoal"} ALL CAPS text reads {txt} in the upper frame.'
+```
+
+with `NEG` an explicit negation allowlist so rule 9's red-only-for-negation holds by construction.
+That took text from 8 to **26.5 percent, 88 of 332, zero yellow.** **Generalise: every plan column
+that carries information must be read by the assembler. A column the generator never reads is a
+column the plan is lying about.**
+
+### The obvious check for that defect is itself wrong, and it under-reports
+
+The equality check first written here was `grep -c 'ALL CAPS text reads' "$F"` against the plan's
+text-beat count. **It reads 62, not 88, on a file that is correct.** The `txt not in scene` guard
+means the assembler appends its clause only where the plate prose has not already written the
+string, so 26 of the 88 carry their text inside the composition prose in some other wording and
+the grep cannot see them. A re-verification run reported a false 62-versus-88 failure on a clean
+file and nearly triggered a repair of something that was never broken.
+
+The check has to compare **the plan's text string against its own prompt**, not one phrasing:
+
+```python
+missing = [b["ts"] for b in gen if b["text"] != "-" and b["text"] not in prompts[b["ts"]]]
+```
+
+Zero missing, and text coverage is then `len(withtext)/len(gen)`. The 62 figure is still worth
+printing as a breakdown (11 red, 51 charcoal come from the assembler clause) but it is not the
+coverage number. **Generalise the generalisation: a check written against the fix rather than
+against the requirement inherits the fix's blind spots.**
+
+Same class of error one column over: the plan table has **no Surface column** at all. Its header is
+`Beat | Time | Meaning | Register | Shot | Tier | Asset | Plate | Source | Delta | Motif | Text`,
+so a mixed-surface check that splits the markdown row on `|` and reaches for a surface index is
+really reading Tier and will report tier spans as surface contradictions. Surface lives in the beat
+data only. **Run the mixed-surface check against `beats.json`, never against the plan table.**
+
+### Deletion and rebuild: data-first assembly reproduced the artifact byte for byte
+
+`image-prompts.md` and `visual-plan.md` were both removed from the project after acceptance, and
+project 11 is untracked so git held no copy. Re-running `plan_p11.py` then `assemble.py` restored
+both exactly: 332 prompts, 15 breaks, 693 lines, identical cast distribution, identical tier and
+surface totals, every Step 3 check green again. **The generator scripts are the real artifact; the
+markdown is an output.** Keep the scratchpad generators for a project until the video ships, and
+prefer re-running them over recovering the markdown from anywhere else.
+
+### Second deletion, and the generators were in a SIBLING session's scratchpad
+
+Both files were removed again and rebuilt a third time from `plan_p11.py` plus `assemble.py`,
+reproducing every number exactly: 332 prompts, 15 breaks, 693 lines, 130 plates, 370 plan beats,
+identical tier, surface, register and cast totals, all 21 checks green. The note above is now
+confirmed twice over.
+
+The trap is where the generators live. **The scratchpad is session-scoped**
+(`/tmp/claude-1000/<project>/<session-uuid>/scratchpad`), so "keep the generators until the video
+ships" does not mean they are in *this* session's scratchpad. They were in `5f4c353a`'s while the
+run was happening in `3755bad7`. Before rebuilding any stage from scratch, search every sibling
+session directory first:
+
+```bash
+find /tmp/claude-1000/<project-slug> -maxdepth 3 -name 'plan_p*.py' -o -maxdepth 3 -name 'assemble.py'
+```
+
+Copy what you find into the current scratchpad and re-run it there rather than editing another
+session's directory. Rewriting 130 plate compositions by hand because the generator looked missing
+is the expensive version of this mistake.
+
+### The eligible-share denominator needs stating, not just the number
+
+The entry above records @YOU at 40.3 percent of eligible cues; recomputing gives 39.8. Both are
+right: 77 of 191 counts the `[7:47]` split frame that sits inside a barred act, 76 of 191 excludes
+it. A one-frame difference is noise, but **write which denominator the figure used**, or a later
+re-verification reads a convention change as drift.
+
+### Length drift 2.3 percent, the lowest the channel has recorded
+
+First 50 prompts 137 words, last 50 134. Projects 8 and 10 recorded 5.2 and 7.0 percent. The
+difference is not discipline, it is that only 130 pieces of prose were hand-written and the other
+202 prompts were generated from them, so there is nothing to decay. Variants-only comparison was
+0.9 percent. **Data-first assembly makes the chunking-decay metric almost meaningless; read it as
+a check on the plate prose, not on the whole file.**
+
+### Reading one prompt of each asset type caught nothing this time, and still earned its place
+
+Project 10 lost 120 prompts to "a illustrated story environment". Emitting the surface as
+`Render on the <phrase>.` avoids the article problem entirely for all five phrases, and the
+end-to-end read of one PLATE, one VARIANT and one CALLBACK confirmed it. The VARIANT does name its
+surface twice, once in the preserve clause and once in the render clause; that is deliberate, it is
+what makes the per-prompt surface count pass, and project 10 shipped the same shape.

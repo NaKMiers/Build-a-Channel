@@ -17,6 +17,7 @@ Self-improving notes for topic selection. Single canonical copy, no Claude-side 
 | 8 | Why Your New Phone Makes Everything Else Look Cheap | scaffolded 2026-08-12, the Diderot effect, current holder of number 8 |
 | 9 | Why You Give Great Advice You Never Take Yourself | scaffolded 2026-08-19, Solomon's paradox, no script yet |
 | 10 | Why You Would Be Happier Coming Third Than Second | scaffolded 2026-08-25, counterfactual thinking, no script yet |
+| 11 | Why You Remember Things That Never Happened | scaffolded 2026-08-28, misinformation effect, no script yet |
 | old 8 | Why You Stay Quiet When You Know The Room Is Wrong | abandoned 2026-08-12, unpublished, artifacts recoverable at `c9f048f` |
 | old 9 | Why You Think Everyone Is Watching When Nobody Is | abandoned 2026-08-12, unpublished, artifacts recoverable at `c9f048f` |
 
@@ -79,6 +80,33 @@ proposing a title.
 
 ## Proposed but not picked
 
+### 2026-08-28, batch 15, user picked title 1 (false memory -> project 11)
+
+Batch was spread across five themes not yet made into a video (memory, boredom, love and
+attachment, sleep and rest, negativity bias), all carrying real numeric material, drawn
+partly from the eligible pool left over by batches 11 through 14. The other four remain
+eligible.
+
+| Title | Theme | Numeric material available |
+| --- | --- | --- |
+| Why Your Brain Panics After Ten Minutes Alone | boredom and attention | Wilson 2014, 15 minutes alone, 67 percent of men self-administered a shock; default mode network vigilance |
+| Why You Cannot Forget The Slowest Texter | love and attachment | intermittent reinforcement; Fisher fMRI rejection lighting reward circuits; Jankowiak and Fischer, romantic love in 88.5 percent of 166 societies |
+| Why Your Life Looks Unfixable At 3AM And Fine By 9AM | sleep and rest | Samson Hadza sentinel study, 33 sleepers, 18 minutes of whole-group sleep synchrony across 20 days; Yoo and Walker amygdala reactivity after sleep loss |
+| Why You Remember One Mean Comment Over Ten Kind Ones | negativity bias | Baumeister 2001 bad is stronger than good, Gottman 5 to 1 ratio |
+
+Selected: project 11, **Why You Remember Things That Never Happened**, the misinformation
+effect. Research to reuse so `script` does not rediscover it: Loftus and Palmer 1974, the
+verb-substitution experiment where "smashed" produced an estimated 40.8 mph versus "hit" at
+31.8 mph, and 32 percent of the "smashed" group falsely recalled broken glass that was never
+in the film. Psychology is memory as reconstruction, not playback, rebuilt fresh each time
+from fragments and cues rather than replayed from a fixed recording. Anthropology is oral
+tradition itself: a story told and retold around a fire is reconstructed at each telling, so
+a memory system built for that transmission mode was never selected for verbatim accuracy,
+only for a usable-enough version. Modern mismatch: the viewer treats their own memory as
+raw footage and defends it as fact, when courts, arguments, and grudges all rest on a
+reconstruction that borrowed material from whatever was suggested afterward. This topic is
+number-rich (40.8, 31.8, 32 percent), same shape as project 1.
+
 ### 2026-08-25, batch 14, user picked title 5 (counterfactual thinking -> project 10)
 
 The user typed `4`, interrupted the response, then typed `5`. Asked to disambiguate, they
@@ -93,7 +121,7 @@ batch 9 steer toward a mistake the viewer is making right now without knowing it
 | Why Everything Takes Twice As Long As You Planned | habit and willpower | Buehler, Griffin and Ross 1994 planning fallacy, students predicted 33.9 days and took 55.5; only about 30 percent finished by their own estimate; Woodburn immediate-return economies |
 | Why You Know Far Less Than You Feel You Know | identity and knowledge | Rozenblit and Keil 2002 illusion of explanatory depth, confidence ratings collapse after trying to explain a zipper or a toilet; Sloman and Fernbach community of knowledge; Henrich on cumulative culture |
 | Why You Finish The Movie You Stopped Enjoying | scarcity and loss aversion | Arkes and Blumer 1985 theater season tickets, full-price holders attended more plays than discount holders; Kahneman and Tversky loss aversion |
-| Why You Remember Things That Never Happened | memory | Loftus and Palmer 1974, "smashed" produced 40.8 mph vs "hit" 31.8 mph, and 32 percent falsely recalled broken glass; oral tradition as reconstruction rather than storage |
+| Why You Remember Things That Never Happened | memory | Loftus and Palmer 1974, "smashed" produced 40.8 mph vs "contacted" 31.8 mph ("hit" was 34.0, this row previously mispaired the figures, corrected 2026-08-28), and 32 percent falsely recalled broken glass; oral tradition as reconstruction rather than storage |
 
 Selected: project 10, **Why You Would Be Happier Coming Third Than Second**, counterfactual
 thinking. Research to reuse so `script` does not rediscover it: Medvec, Madey and Gilovich

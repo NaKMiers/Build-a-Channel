@@ -1,0 +1,611 @@
+1
+00:00:00,000 --> 00:00:02,920
+The memory you trust most is your least reliable one.
+
+2
+00:00:03,000 --> 00:00:05,920
+Not the vague ones. The vivid one.
+
+3
+00:00:06,000 --> 00:00:10,920
+The one you can describe in order, with the lines and the tone and the look on their face.
+
+4
+00:00:11,000 --> 00:00:14,920
+That memory has been edited the most, and you were the editor.
+
+5
+00:00:15,000 --> 00:00:17,920
+You have an explanation ready. Good memory.
+
+6
+00:00:18,000 --> 00:00:20,920
+But confidence does not track accuracy.
+
+7
+00:00:21,000 --> 00:00:24,920
+It tracks rehearsal. Your memory is not a recording.
+
+8
+00:00:25,000 --> 00:00:31,920
+It is reconstruction, rebuilt from scratch every time you reach for it, and every retelling is a save,
+
+9
+00:00:32,000 --> 00:00:34,920
+not a read. So which of yours have been rewritten?
+
+10
+00:00:35,000 --> 00:00:40,920
+You cannot tell from the inside. By the end you will know why your brain was built this way on purpose, who is feeding it now,
+
+11
+00:00:41,000 --> 00:00:44,920
+and the one question that tells you when to trust yourself.
+
+12
+00:00:45,000 --> 00:00:48,920
+Rehearsal is only one of the ways new material gets into a memory.
+
+13
+00:00:49,000 --> 00:00:52,920
+The first hard proof came from something far smaller than a retelling.
+
+14
+00:00:53,000 --> 00:00:59,920
+One word. In 1974, two psychologists named Elizabeth Loftus and John Palmer
+
+15
+00:01:00,000 --> 00:01:03,920
+sat students down and showed them films of car accidents.
+
+16
+00:01:04,000 --> 00:01:06,920
+Short films, a few seconds each.
+
+17
+00:01:07,000 --> 00:01:11,920
+Then they asked everyone the same question with one deliberate difference buried inside it.
+
+18
+00:01:12,000 --> 00:01:14,920
+About how fast were the cars going when they smashed into each other?
+
+19
+00:01:15,000 --> 00:01:17,920
+For another group the verb was not smashed.
+
+20
+00:01:18,000 --> 00:01:20,920
+It was contacted. Same film.
+
+21
+00:01:21,000 --> 00:01:23,920
+Same students. One verb.
+
+22
+00:01:24,000 --> 00:01:28,920
+The group that got smashed estimated just under forty one miles an hour.
+
+23
+00:01:29,000 --> 00:01:32,920
+The group that got contacted estimated just under thirty two.
+
+24
+00:01:33,000 --> 00:01:38,920
+Nine miles an hour of difference, produced by a single word inside a question asked after the event was already over.
+
+25
+00:01:39,000 --> 00:01:42,920
+Nobody was arguing. Nobody was being pressured.
+
+26
+00:01:43,000 --> 00:01:48,920
+They were just reporting what they saw. Then Loftus and Palmer did the part that matters more.
+
+27
+00:01:49,000 --> 00:01:55,920
+They ran it again, with a film of a multi-car crash, split the room the same way, and sent everyone home.
+
+28
+00:01:56,000 --> 00:01:59,920
+A week later they brought them back and asked a question that had nothing to do with speed.
+
+29
+00:02:00,000 --> 00:02:04,920
+Did you see any broken glass? There was no broken glass in that film.
+
+30
+00:02:05,000 --> 00:02:11,920
+None. Of the people who had been given the word smashed, about a third said yes, they had seen it.
+
+31
+00:02:12,000 --> 00:02:14,920
+Of the people given hit, about one in seven.
+
+32
+00:02:15,000 --> 00:02:18,920
+The word had not changed their opinion or their guess or their willingness to please a researcher.
+
+33
+00:02:19,000 --> 00:02:21,920
+It had changed the film.
+
+34
+00:02:22,000 --> 00:02:28,920
+Seven days later they were looking at a slightly different accident, one with glass on the road, and the glass had arrived through a question.
+
+35
+00:02:29,000 --> 00:02:34,920
+This was not new, and Loftus was building on someone who had seen it forty years earlier.
+
+36
+00:02:35,000 --> 00:02:40,920
+In 1932 a Cambridge psychologist named Frederic Bartlett gave English students a folk tale from
+
+37
+00:02:41,000 --> 00:02:47,920
+a culture they knew nothing about, full of canoes and seal hunting and spirits, and asked them to retell it.
+
+38
+00:02:48,000 --> 00:02:53,920
+Then he had it retold again, and again, down a chain of people.
+
+39
+00:02:54,000 --> 00:02:58,920
+The story did not simply fade. It reorganised itself.
+
+40
+00:02:59,000 --> 00:03:02,920
+Canoes turned into boats. Seal hunting turned into fishing.
+
+41
+00:03:03,000 --> 00:03:05,920
+The supernatural parts quietly disappeared.
+
+42
+00:03:06,000 --> 00:03:10,920
+Every version was shorter, tidier, and more English than the one before, and
+
+43
+00:03:11,000 --> 00:03:15,920
+every single person believed they were repeating what they had been given.
+
+44
+00:03:16,000 --> 00:03:19,920
+Bartlett's conclusion was that remembering is not retrieval at all.
+
+45
+00:03:20,000 --> 00:03:22,920
+It is imaginative reconstruction.
+
+46
+00:03:23,000 --> 00:03:29,920
+You do not open a file. You take a handful of fragments, a feeling, a rough shape, and you rebuild the event
+
+47
+00:03:30,000 --> 00:03:36,920
+using whatever else you know, and the rebuild is so fast and so seamless that it arrives in your mind wearing the
+
+48
+00:03:37,000 --> 00:03:40,920
+costume of a recording. And it can be built out of almost nothing.
+
+49
+00:03:41,000 --> 00:03:45,920
+In 1995 Loftus and Jacqueline Pickrell gave people four
+
+50
+00:03:46,000 --> 00:03:50,920
+short stories about their own childhoods, collected from a family member.
+
+51
+00:03:51,000 --> 00:03:57,920
+Three were true. One was invented: you were lost in a shopping mall at around five years old, crying,
+
+52
+00:03:58,000 --> 00:04:00,920
+and an elderly stranger found you and brought you back.
+
+53
+00:04:01,000 --> 00:04:03,920
+Roughly one in four came to remember it.
+
+54
+00:04:04,000 --> 00:04:09,920
+Not vaguely. Some of them added details nobody had supplied, the stranger's flannel shirt,
+
+55
+00:04:10,000 --> 00:04:12,920
+what the shop fronts looked like, how frightened they had been.
+
+56
+00:04:13,000 --> 00:04:18,920
+When they were finally told which memory was planted, some of them were genuinely reluctant to give it up.
+
+57
+00:04:19,000 --> 00:04:22,920
+Which raises something uncomfortable about your own certainty tonight.
+
+58
+00:04:23,000 --> 00:04:25,920
+You have no way to audit your own footage.
+
+59
+00:04:26,000 --> 00:04:31,920
+There is no footage. Before you decide your brain is faulty, look at the world it was built for,
+
+60
+00:04:32,000 --> 00:04:36,920
+because this design is not an accident and it is not damage.
+
+61
+00:04:37,000 --> 00:04:39,920
+For almost the whole of human existence there was no writing.
+
+62
+00:04:40,000 --> 00:04:44,920
+Two hundred thousand years of people, and roughly five thousand years of anything you could read.
+
+63
+00:04:45,000 --> 00:04:50,920
+So for something like ninety seven percent of your species' time on earth, everything a group knew lived only in living memory and
+
+64
+00:04:51,000 --> 00:04:53,920
+moved only by being spoken out loud.
+
+65
+00:04:54,000 --> 00:04:56,920
+So what is a memory system for in a world like that?
+
+66
+00:04:57,000 --> 00:05:00,920
+Not an archive. An archive is pointless
+
+67
+00:05:01,000 --> 00:05:04,920
+when there is nothing to check it against and nobody who will ever read it.
+
+68
+00:05:05,000 --> 00:05:08,920
+What it is, in that world, is a transmission device.
+
+69
+00:05:09,000 --> 00:05:15,920
+Its job is to hold the useful shape of what happened and hand it to the next person in a form they can actually use.
+
+70
+00:05:16,000 --> 00:05:18,920
+Accuracy of wording is worth nothing.
+
+71
+00:05:19,000 --> 00:05:21,920
+Usefulness is worth everything.
+
+72
+00:05:22,000 --> 00:05:28,920
+The anthropologist Jack Goody spent years with the LoDagaa of northern Ghana, recording the Bagre,
+
+73
+00:05:29,000 --> 00:05:32,920
+a long sacred recitation performed at initiation.
+
+74
+00:05:33,000 --> 00:05:35,920
+Everyone in that world understood it as fixed.
+
+75
+00:05:36,000 --> 00:05:38,920
+Ancient, handed down whole, the same every time.
+
+76
+00:05:39,000 --> 00:05:43,920
+Goody recorded it more than once, from the same men, and the versions did not match.
+
+77
+00:05:44,000 --> 00:05:46,920
+Different lengths. Different episodes.
+
+78
+00:05:47,000 --> 00:05:50,920
+Details that appeared in one telling and were simply absent from another.
+
+79
+00:05:51,000 --> 00:05:55,920
+Nobody was lying to him. They were reconstructing, and from the inside
+
+80
+00:05:56,000 --> 00:05:59,920
+reconstruction feels precisely like remembering.
+
+81
+00:06:00,000 --> 00:06:06,920
+Albert Lord, who with Milman Parry recorded the great epic singers of Yugoslavia, ran into the same wall.
+
+82
+00:06:07,000 --> 00:06:13,920
+The singers told him plainly that they sang each song exactly as they had learned it, word for word, line for line.
+
+83
+00:06:14,000 --> 00:06:19,920
+Then Lord recorded the same singer performing the same song years apart, and the songs came out at different lengths
+
+84
+00:06:20,000 --> 00:06:25,920
+with scenes that had moved or vanished. The claim of perfect fidelity was completely sincere.
+
+85
+00:06:26,000 --> 00:06:31,920
+The fidelity was not there. Now here is the part that turns the Loftus experiment upside down.
+
+86
+00:06:32,000 --> 00:06:37,920
+In a band of thirty people, new information about a past event had exactly one possible source.
+
+87
+00:06:38,000 --> 00:06:44,920
+The others who were there. Ten people watched the same hunt from ten different positions and each of them saw a fragment.
+
+88
+00:06:45,000 --> 00:06:50,920
+The only way that band ever assembled one good picture of what happened was for the fragments to move between them and
+
+89
+00:06:51,000 --> 00:06:57,920
+settle into each person's memory. Which means a memory that absorbs what it is told afterwards is not a broken memory.
+
+90
+00:06:58,000 --> 00:07:03,920
+It is the pooling mechanism. Suggestion is how a group with no writing arrived at a shared and usually more
+
+91
+00:07:04,000 --> 00:07:07,920
+accurate version of events than any single pair of eyes could produce.
+
+92
+00:07:08,000 --> 00:07:13,920
+And there was a second reason to leave the door open. The world kept changing and nothing wrote it down.
+
+93
+00:07:14,000 --> 00:07:16,920
+The river shifted course. The herd took a different route.
+
+94
+00:07:17,000 --> 00:07:21,920
+The plant that was safe last generation grew somewhere else now.
+
+95
+00:07:22,000 --> 00:07:26,920
+A memory that held rigidly to the oldest version of the world eventually killed someone.
+
+96
+00:07:27,000 --> 00:07:32,920
+A memory that quietly took on the newest thing it heard carried the current version.
+
+97
+00:07:33,000 --> 00:07:39,920
+In a world without records, the freshest information in the room was almost always better than the oldest information in your head.
+
+98
+00:07:40,000 --> 00:07:42,920
+So your ancestors were not fighting their own suggestibility.
+
+99
+00:07:43,000 --> 00:07:49,920
+They were living off it. The band that remembered flexibly ate, and passed the trait to you.
+
+100
+00:07:50,000 --> 00:07:52,920
+Now open your phone. The door is still wide open.
+
+101
+00:07:53,000 --> 00:07:59,920
+It has never closed. But almost nothing coming through it now is another witness pooling what they saw.
+
+102
+00:08:00,000 --> 00:08:03,920
+It is a lawyer's question with the answer folded inside it.
+
+103
+00:08:04,000 --> 00:08:08,920
+It is a headline that tells you what the footage means before you watch the footage.
+
+104
+00:08:09,000 --> 00:08:13,920
+It is the group chat where somebody else's version of the evening arrives before you have finished forming your own.
+
+105
+00:08:14,000 --> 00:08:17,920
+It is a comment telling you what you must have felt.
+
+106
+00:08:18,000 --> 00:08:23,920
+It is the same clip served to you thirty times until the edited version is smoother and more available than
+
+107
+00:08:24,000 --> 00:08:27,920
+the thing you actually witnessed. That is the mismatch.
+
+108
+00:08:28,000 --> 00:08:32,920
+Not that your memory updates, it always did, and it kept people alive.
+
+109
+00:08:33,000 --> 00:08:39,920
+It is that the update channel used to be fed by thirty people who were standing right there and had no reason to distort anything,
+
+110
+00:08:40,000 --> 00:08:45,920
+and now it is fed by strangers, headlines, feeds, and people with an argument to win.
+
+111
+00:08:46,000 --> 00:08:48,920
+And the closest example is not a courtroom.
+
+112
+00:08:49,000 --> 00:08:51,920
+It is the story you tell about someone you know.
+
+113
+00:08:52,000 --> 00:08:56,920
+Count the times you have told it. Six, maybe eleven.
+
+114
+00:08:57,000 --> 00:09:03,920
+Each time to someone slightly different, and each time you shaped it a little for the person listening, sharpened the part that landed,
+
+115
+00:09:04,000 --> 00:09:10,920
+dropped the part that slowed it down, gave yourself a slightly better line and them a slightly worse one.
+
+116
+00:09:11,000 --> 00:09:13,920
+And every one of those tellings was not a read.
+
+117
+00:09:14,000 --> 00:09:16,920
+It was a save. You were not consulting the memory.
+
+118
+00:09:17,000 --> 00:09:21,920
+You were writing over it. So here is the shift, and it is one small move.
+
+119
+00:09:22,000 --> 00:09:27,920
+The next time you are completely certain about something that matters, do not ask whether it is true.
+
+120
+00:09:28,000 --> 00:09:31,920
+Ask how many times you have told it. Because confidence does not track accuracy.
+
+121
+00:09:32,000 --> 00:09:38,920
+Confidence tracks rehearsal. The memory you can describe in the most vivid detail, in the smoothest order, with the best lines,
+
+122
+00:09:39,000 --> 00:09:42,920
+is not your most reliable memory. It is your most edited one.
+
+123
+00:09:43,000 --> 00:09:45,920
+The smoothness is the tell.
+
+124
+00:09:46,000 --> 00:09:49,920
+Real events come back rough. That does not mean stop trusting yourself.
+
+125
+00:09:50,000 --> 00:09:52,920
+It means separate the two things Bartlett separated.
+
+126
+00:09:53,000 --> 00:09:55,920
+The gist survives. The details drift.
+
+127
+00:09:56,000 --> 00:10:00,920
+So hold the gist with both hands and hand the details back.
+
+128
+00:10:01,000 --> 00:10:03,920
+Something happened and it hurt is almost certainly true.
+
+129
+00:10:04,000 --> 00:10:10,920
+He said those exact words, in that exact tone, while looking at me like that is a sentence that has been through eleven drafts,
+
+130
+00:10:11,000 --> 00:10:13,920
+and you were the editor every time.
+
+131
+00:10:14,000 --> 00:10:17,920
+And when the other person remembers it differently, they are not lying to you.
+
+132
+00:10:18,000 --> 00:10:24,920
+That is the relief in all of this. There are two reconstruction devices in the room, each rebuilding from fragments,
+
+133
+00:10:25,000 --> 00:10:29,920
+each shaped by different retellings to different audiences, both running honestly.
+
+134
+00:10:30,000 --> 00:10:32,920
+Nobody has the recording. There is no recording.
+
+135
+00:10:33,000 --> 00:10:37,920
+So tonight, just this. The broken glass was never in the film.
+
+136
+00:10:38,000 --> 00:10:42,920
+It was in the question. Nobody lied to those students and nobody was weak or gullible.
+
+137
+00:10:43,000 --> 00:10:49,920
+Somebody handed them one word, and their mind built glass out of it, and a week later they could see it and describe it
+
+138
+00:10:50,000 --> 00:10:54,920
+and would have sworn to it in front of anyone. You are carrying glass like that right now,
+
+139
+00:10:55,000 --> 00:10:58,920
+somewhere in the story you tell about a person, or about yourself.
+
+140
+00:10:59,000 --> 00:11:03,920
+You are certain you saw it. Somebody handed it to you, and you kept it, and you have been paying for it
+
+141
+00:11:04,000 --> 00:11:06,920
+ever since as if you found it yourself.
+
+142
+00:11:07,000 --> 00:11:09,920
+The memory you trust most is not the one that happened.
+
+143
+00:11:10,000 --> 00:11:12,920
+It is the one you have handled the most.
+
+144
+00:11:13,000 --> 00:11:18,920
+And notice that the same machine does not only rebuild the past that happened, it builds the one that did not,
+
+145
+00:11:19,000 --> 00:11:21,920
+and then hands you the bill for the difference.
+
+146
+00:11:22,000 --> 00:11:28,920
+So one last question before you go. Have you ever missed something by almost nothing, a job that came down to two people,
+
+147
+00:11:29,000 --> 00:11:35,920
+a train by a single minute, and found that it hurt far more than all the things you missed by a mile?
+
+148
+00:11:36,000 --> 00:11:40,920
+If that is you, you are not ungrateful and you are not a sore loser.
+
+149
+00:11:41,000 --> 00:11:46,920
+There is a reason the near miss burns hotter than the far one, it was measured straight off the faces of Olympic
+
+150
+00:11:47,000 --> 00:11:52,920
+medalists with the sound turned off, and there is one question you can ask that gets the invented version out of the room.
+
+151
+00:11:53,000 --> 00:11:56,920
+That is the video on your screen right now.
+
+152
+00:11:57,000 --> 00:11:59,920
+Why you would be happier coming third than second.
+
+153
+00:12:00,000 --> 00:12:01,500
+Watch that one next.
