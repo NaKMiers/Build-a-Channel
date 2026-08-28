@@ -10,11 +10,11 @@ Why Do You Remember Things That Never Happened?
 
 |     | Formula                        | Title                                                          |
 | --- | ------------------------------ | -------------------------------------------------------------- |
-| A   | Why do/can't you \_\_\_?       | Why Do You Remember Things That Never Happened?                 |
-| B   | Your brain still thinks \_\_\_ | Your Brain Still Thinks Nobody Ever Writes Anything Down        |
-| C   | The \_\_\_ Effect              | The Misinformation Effect: Why You Trust Your Worst Memories    |
-| D   | What every human tribe does... | What Every Tribe Did With Memories That You Now Do Alone        |
-| E   | You never noticed that \_\_\_  | You Never Noticed Your Most Certain Memory Is Your Most Edited  |
+| A   | Why do/can't you \_\_\_?       | Why Do You Remember Things That Never Happened?                |
+| B   | Your brain still thinks \_\_\_ | Your Brain Still Thinks Nobody Ever Writes Anything Down       |
+| C   | The \_\_\_ Effect              | The Misinformation Effect: Why You Trust Your Worst Memories   |
+| D   | What every human tribe does... | What Every Tribe Did With Memories That You Now Do Alone       |
+| E   | You never noticed that \_\_\_  | You Never Noticed Your Most Certain Memory Is Your Most Edited |
 
 ## Description
 

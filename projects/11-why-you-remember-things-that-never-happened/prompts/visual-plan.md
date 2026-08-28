@@ -308,15 +308,15 @@ Recurring motif: a flat broken glass shard, the detail that was never there
 | B300 | [9:28] | ask how many times you have told it | PORTRAIT | close | LAYERED | VARIANT | P104 | B298 | a second bubble opens beside it carrying a short row of tally strokes | - | HOW MANY TIMES? |
 | B301 | [9:30] | confidence does not track accuracy | DIAGRAM | diagram | CLEAN | CALLBACK | P007 | B013 | the gauge from the opening returns, its wire still on the accuracy mark | CALLBACK | - |
 | B302 | [9:32] | confidence tracks rehearsal | DIAGRAM | diagram | CLEAN | VARIANT | P007 | B301 | the wire lifts and reconnects to the row of tally strokes | - | REHEARSAL |
-| B303 | [9:34] | the memory described in most vivid detail | CARD | macro | CLEAN | PLATE | P105 | - | - | - | - |
-| B304 | [9:34] | hold subdivided on the same plate | CARD | macro | CLEAN | CAPCUT | P105 | B303 | one added element in the edit | - | - |
-| B305 | [9:37] | in the smoothest order | CARD | macro | CLEAN | VARIANT | P105 | B303 | every edge of the block is drawn perfectly regular and even | - | - |
-| B306 | [9:38] | with the best lines | CARD | macro | CLEAN | VARIANT | P105 | B305 | two polished speech shapes attach neatly to its side | - | - |
-| B307 | [9:39] | is not your most reliable memory | CARD | macro | CLEAN | VARIANT | P105 | B306 | one red X settles across the reliability mark beneath it | - | NOT RELIABLE |
-| B308 | [9:41] | it is your most | CARD | macro | CLEAN | PLATE | P106 | - | - | - | - |
-| B309 | [9:42] | edited one | CARD | macro | CLEAN | VARIANT | P106 | B308 | the pen marks multiply until they cover the whole surface | - | MOST EDITED |
-| B310 | [9:43] | the smoothness is the tell | CARD | macro | CLEAN | VARIANT | P106 | B309 | one charcoal circle closes around the polished edge | - | THE TELL |
-| B311 | [9:43] | hold subdivided on the same plate | CARD | macro | CLEAN | CAPCUT | P106 | B310 | one added element in the edit | - | - |
+| B303 | [9:34] | vivid retelling as a remembered scene storyboard | HYBRID | overhead | LAYERED | PLATE | P105 | - | - | - | - |
+| B304 | [9:34] | hold subdivided on the same plate | HYBRID | overhead | LAYERED | CAPCUT | P105 | B303 | focus shifts across the three panels | - | - |
+| B305 | [9:37] | in the smoothest order | HYBRID | overhead | LAYERED | VARIANT | P105 | B303 | one thread connects all three panels | - | - |
+| B306 | [9:38] | with the best lines | HYBRID | overhead | LAYERED | VARIANT | P105 | B305 | two crisp empty speech bubbles appear | - | - |
+| B307 | [9:39] | polished retelling is not reliable | HYBRID | overhead | LAYERED | VARIANT | P105 | B306 | Toss redraws one mouth line with a pencil | - | CHECK THE EDITS |
+| B308 | [9:41] | the memory has accumulated revisions | HYBRID | overhead | LAYERED | PLATE | P106 | - | - | - | - |
+| B309 | [9:42] | edited one | HYBRID | overhead | LAYERED | VARIANT | P106 | B308 | lower tracing pages fan out to reveal more revisions | - | MOST EDITED |
+| B310 | [9:43] | smoothness is the tell | HYBRID | overhead | LAYERED | VARIANT | P106 | B309 | top page aligns perfectly over rough earlier versions | - | SMOOTHNESS IS THE TELL |
+| B311 | [9:43] | hold subdivided on the same plate | HYBRID | overhead | LAYERED | CAPCUT | P106 | B310 | crop tightens on misaligned page edges | - | - |
 | B312 | [9:46] | real events come back rough | SPLIT_OR_SCALE | split | CLEAN | PLATE | P107 | - | - | glass | ROUGH |
 | B313 | [9:47] | that does not mean stop trusting yourself | PORTRAIT | medium | CLEAN | PLATE | P108 | - | - | - | - |
 | B314 | [9:50] | separate the two things Bartlett separated | STORY | medium | LAYERED | CALLBACK | P042 | B107 | he returns holding the two sheets apart at the same height | CALLBACK | - |
@@ -325,11 +325,11 @@ Recurring motif: a flat broken glass shard, the detail that was never there
 | B317 | [9:56] | hold the gist with both hands | HYBRID | close | LAYERED | PLATE | P110 | - | - | - | - |
 | B318 | [9:59] | and hand the details back | HYBRID | close | LAYERED | VARIANT | P110 | B317 | the second hand opens and lets the small shards fall away | glass | - |
 | B319 | [10:01] | something happened and it hurt is true | STORY | wide | LAYERED | CALLBACK | P003 | B006 | the night kitchen returns but only the two figures and the hurt remain, the detail stripped out | CALLBACK | ALMOST TRUE |
-| B320 | [10:04] | he said those exact words | DIAGRAM | overhead | LAYERED | PLATE | P111 | - | - | - | - |
-| B321 | [10:06] | in that exact tone | DIAGRAM | overhead | LAYERED | VARIANT | P111 | B320 | a small tone wave is pencilled along the top sheet | - | - |
-| B322 | [10:07] | while looking at me like that | DIAGRAM | overhead | LAYERED | VARIANT | P111 | B321 | a remembered face is pencilled in beside the tone wave | - | - |
-| B323 | [10:09] | a sentence through eleven drafts | CARD | overhead | LAYERED | PLATE | P112 | - | - | - | ELEVEN DRAFTS |
-| B324 | [10:11] | and you were the editor every time | CARD | overhead | LAYERED | VARIANT | P112 | B323 | a hand in a golden yellow cuff holds the pen above the top sheet | - | - |
+| B320 | [10:04] | certainty about exact words | STORY | medium | LAYERED | PLATE | P111 | - | - | - | - |
+| B321 | [10:06] | certainty about exact tone | STORY | medium | LAYERED | VARIANT | P111 | B320 | one rigid coral sound ribbon enters the speech bubble | - | - |
+| B322 | [10:07] | certainty about an exact look | STORY | medium | LAYERED | VARIANT | P111 | B321 | remembered expression and gaze arrow become crisp | - | - |
+| B323 | [10:09] | exact sentence has passed through eleven revisions | HYBRID | overhead | LAYERED | PLATE | P112 | - | - | - | ELEVEN DRAFTS |
+| B324 | [10:11] | the viewer made every revision | HYBRID | overhead | LAYERED | VARIANT | P112 | B323 | Toss edits the brow on the final tracing card | - | - |
 | B325 | [10:14] | when the other person remembers it differently | STORY | medium | LAYERED | PLATE | P113 | - | - | glass | - |
 | B326 | [10:16] | they are not lying to you | STORY | medium | LAYERED | VARIANT | P113 | B325 | neither of the two assembled pictures carries a single red mark | glass | NOT LYING |
 | B327 | [10:18] | that is the relief in all of this | STORY | medium | LAYERED | VARIANT | P113 | B326 | both figures' shoulders drop and their hands open on their knees | glass | - |
