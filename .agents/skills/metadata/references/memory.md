@@ -52,6 +52,36 @@ verbatim.
   description does not quote speed figures at all, so the mispaired 40.8-versus-31.8 numbers from
   topic memory had no route into a published artifact.
 
+## Project 12 (2026-08-29), one stranger's comment - the citation list is longer than usual and every DOI was confirmed by content, not by status code
+
+7 chapters, 20 hashtags, 36 tags, all five titles 52 to 53 characters, 3 fenced blocks. Every
+chapter timestamp grepped back against `transcript.md` and present verbatim.
+
+- **A 403 from a publisher is not a dead link, and a 200 is not proof the DOI is the right paper.**
+  Project 11's note says to HTTP-check every URL first. Here the APA and PNAS DOIs both returned
+  403 to curl, which is bot-blocking rather than rot, and a status check alone could not tell the
+  difference. The fix that settles it in one call per DOI is the Crossref API,
+  `https://api.crossref.org/works/<doi>`, which returns the title, journal and year, so the check
+  becomes "does this DOI resolve to the paper the script actually cites" rather than "does the
+  server answer a robot". All three confirmed: Bad is Stronger than Good, Review of General
+  Psychology 2001; Negative information weighs more heavily on the brain, JPSP 1998; Emotion
+  shapes the diffusion of moralized content in social networks, PNAS 2017. **Use Crossref for any
+  DOI citation from now on and keep the status check only for encyclopedia and institution pages.**
+- Eight sources, the longest list the channel has published, because this script names four
+  studies plus two anthropologists. Gottman gets two entries on purpose: the 1992 JPSP paper for
+  the dissolution prediction and his Wikipedia article for the five to one ratio itself, since the
+  ratio is discussed across a body of work rather than one citeable experiment.
+- **Recommended title A over C.** C is the search-friendly form the channel already publishes under
+  ("The Loneliness Effect"), but the script's own hook is a count, ten against one, and A states
+  the paradox as a question a tired viewer parses at a glance, which is the standing batch 8 steer.
+  All five variants are within one character of each other, so the choice is entirely about shape.
+- **Chapters stop at 7:31 of an 11:32 video**, the same deliberate choice as project 11. The last
+  chapter is "Now open your phone", so the mismatch payoff, the shift, the echo and the end-screen
+  tease all stay unsignposted rather than telling a viewer exactly when the essay ends.
+- Watch the hashtag count check: `grep -o '#[a-z]*'` over the whole file reads 30 on a file with 20
+  hashtags, because `*` allows zero letters and every markdown heading `#` matches. Use
+  `grep -o '#[a-z]\+'` or count the hashtag line alone.
+
 ## PRECONDITION CONTRADICTION IN THE REPO, hit on 2026-08-25 (project 10), NOW RESOLVED IN PRACTICE
 
 `/metadata` was invoked straight after `/cast`, before any voiceover existed, and correctly

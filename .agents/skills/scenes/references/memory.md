@@ -1015,6 +1015,91 @@ end-to-end read of one PLATE, one VARIANT and one CALLBACK confirmed it. The VAR
 surface twice, once in the preserve clause and once in the render clause; that is deliberate, it is
 what makes the per-prompt surface count pass, and project 10 shipped the same shape.
 
+## Project 12 (2026-08-29), one stranger's comment: 316 prompts, 349 plan beats, 114 plates, 99 breaks
+
+Clean on every mechanical check on the first assembly pass. 316 cues to 316 prompts, V2 anchor and
+lock on all 316 with zero V1 strings, timestamps an exact diff apart from the one documented remap,
+zero stray tokens, zero non-prompt lines, first byte `[`, zero adjacent pairs without a blank line,
+829 lines, tier plan equal to prompts exactly (130 CLEAN / 179 LAYERED / 7 ATMOSPHERIC), one surface
+phrase per prompt, zero mixed-surface plates, every source pointing backward, every break opening a
+PLATE, no em dash, no yellow. Breaks 99 over 316 is one scene every 3.19 prompts, longest inherited
+run 8. Built data-first: chains as python data, budgets rebalanced as data, 114 plate compositions
+written as prose, variants and callbacks derived mechanically.
+
+Motif: **the speech bubble in two states**, red and filled when it is the hostile voice, white and
+hollow when it is approval that made no sound. 116 beats. It was chosen the way the project 8 rule
+prescribes, by looking for the drawing both halves share, and it had the extra property project 11
+recommends: both states are already locked assets on the cast sheets, `@COMMENT` itself and the
+empty bubble that is `@NINE`'s prop, so the design cannot drift. The anthropology act uses the same
+glyph negated, because the Utku freeze-out is drawn as three hollow bubbles nobody ever fills.
+
+### A CASCADING REMAP, the first the channel has needed
+
+The transcript carries `[9:32]` twice, and unlike project 3's `[8:26]` the next two stamps were also
+occupied, so the usual "move the duplicate forward one second" fix collides. The resolution is a
+three-stamp cascade: the second `[9:32]` becomes `[9:33]`, the old `[9:33]` becomes `[9:34]`, the old
+`[9:34]` becomes `[9:35]`, and `[9:35]` was free so the cascade terminates. All 316 stamps stay
+unique and strictly ascending, which is what the scene file names actually need. The Step 3 diff
+therefore prints two lines rather than none, and that is the expected output, not a failure. **Check
+whether the next stamp is free before assuming a one-second remap is enough.**
+
+### The four classic first-pass budget errors, all four present, all four fixed as data
+
+Exactly the shape projects 5 and 6 recorded, which is now five runs in a row, so treat a first pass
+as wrong by default and rebalance before writing prose:
+
+1. **Surface**: cream 46.2 percent against a 30 target, story 29.4 against 35. Twenty chains moved
+   off cream as whole plate chains, to `pure white card` for the dense evidence run and to tinted
+   chapter cards for the ratio and verdict beats. Final cream 26.3, tinted 24.1, story 35.1, white
+   9.5, cobalt 5.1, every one inside the five point tolerance.
+2. **Tier**: CLEAN 65.5 percent against a 40 target. The first correction over-applied and took
+   LAYERED to 88 percent, which is worth recording because it looked like a fix: **a tier override
+   list is a blunt instrument, so count the beats it will move before running it.** Trimmed to 21
+   chains with genuine depth planes and landed 41.1 CLEAN, 56.6 LAYERED, 2.2 ATMOSPHERIC.
+3. **Register**: CARD 25.0 and DIAGRAM 23.4 over their bands with STORY at 23.4. Fixed by honest
+   relabeling only, per project 11: four chains the script sets in a real place (the status stair,
+   the share, the withdrawn warmth, the three unspoken bubbles) were card and diagram abstractions of
+   scenes that actually happen at the camp, so they became story environments with place prose.
+4. **Shot grammar**: two 30 second blocks under four shot tasks. One was fixed by re-shotting two
+   beats, the `11:30` block holds two beats and is an arithmetic limit.
+
+### An abstraction the script states as a literal count is allowed to be a diagram
+
+The five-to-one exchange rate is the video's key number and has no scene attached to it, so the
+two pan balance is planted at `[0:18]` in the hook, formalised at `[2:53]`, called back at `[3:11]`
+carrying five pale bubbles against one red, called back again at `[7:02]` driven past its old limit,
+and returned at `[9:39]` when the shift decides which bubble is allowed onto the pan. Five uses,
+one object, exactly the project 7 rule about giving a mechanism act one physical object and letting
+it recur.
+
+### Honest deviations, reported not padded
+
+- **Registers STORY 24.7 against a 30 to 40 band**, with DIAGRAM 21.2, CARD 20.3 and SPLIT 11.1
+  each about a point over theirs and PORTRAIT 9.5 half a point under. This script is three named
+  experiments, a measured ratio, a four rung ladder and a mismatch diagram, so its natural centre is
+  cards and diagrams. Same class of skew as projects 5, 6 and 7, and inventing scenes to reach 30
+  would be the wrong conversion.
+- **Assets PLATE 32.7, VARIANT 56.7, CAPCUT 9.5, CALLBACK 1.1.** The variant-heavy shape is project
+  9's: the balance, the camp arc and the kitchen are long continuous compositions that variants carry
+  without redrawing. CapCut is capped by the transcript's own gap histogram, which is almost entirely
+  two second cues, so loosening the rule from three-beat chains to two-beat chains bought only two
+  extra beats. Cadence still lands at 30.3 beats per minute, inside the 28 to 32 band.
+- Length drift first-50 to last-50 was 0.7 percent, in line with project 11's 2.3, and for the same
+  reason: only 114 pieces of prose were hand-written.
+
+Cast: @YOU 104, @COMMENT 60, @UTKU 32, @BRIGGS 29, @NINE 14, @STRANGER 10; tokens on 188 of 316
+prompts. @YOU is 32.9 percent of all prompts and **46.0 percent of the 226 cues where rule 12 allows
+him**, the highest the channel has recorded, ahead of project 11's 42.0. The denominator excludes the
+90 cues of the Arctic act, `[4:09]` to `[5:22]`, `[5:24]` to `[7:18]`, and `[7:53]` to `[7:59]`, and
+zero `@YOU` frames sit inside them. The lift is the project 8 rule applied at planning time: a second
+person script puts the viewer in his own kitchen, his own shower, his own bed at eleven at night and
+his own chair under the electrodes.
+
+`@BRIGGS` is captioned once, at `[5:24]`, on the portrait beat that introduces her before the tent
+scene, which is the introduction shape rule 17 prescribes. The five uncast researcher names
+(`BAUMEISTER 2001`, `ITO 1998`, `GOTTMAN`, `BOEHM`, `BRADY 2017`) are charcoal text on their own
+first frame only and stay diagram or scene labels, since none of those people is on the cast sheet.
+
 ## 2026-08-29 - Two standing rules from user feedback
 
 ### Scene density: the script decides, the numbers are only a sanity anchor

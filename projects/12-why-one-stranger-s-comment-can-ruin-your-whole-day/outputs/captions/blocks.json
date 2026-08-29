@@ -1,0 +1,1598 @@
+{
+  "words": "projects/12-why-one-stranger-s-comment-can-ruin-your-whole-day/transcribes/words.json",
+  "transcript": "projects/12-why-one-stranger-s-comment-can-ruin-your-whole-day/transcribes/transcript.md",
+  "count": 176,
+  "settings": {
+    "max_dur": 7.0,
+    "min_dur": 2.5,
+    "sentence_min": 2.0,
+    "gap": 0.5,
+    "max_chars": 96
+  },
+  "blocks": [
+    {
+      "i": 1,
+      "start_ms": 100,
+      "end_ms": 3420,
+      "start": "00:00:00,100",
+      "end": "00:00:03,420",
+      "text": "Ten people liked it. One did not.",
+      "words": 7
+    },
+    {
+      "i": 2,
+      "start_ms": 3500,
+      "end_ms": 7300,
+      "start": "00:00:03,500",
+      "end": "00:00:07,300",
+      "text": "Guess which one you took home. The nine you can barely remember.",
+      "words": 12
+    },
+    {
+      "i": 3,
+      "start_ms": 7380,
+      "end_ms": 11220,
+      "start": "00:00:07,380",
+      "end": "00:00:11,220",
+      "text": "The one you can quote word for word. You have a name for it already.",
+      "words": 15
+    },
+    {
+      "i": 4,
+      "start_ms": 11660,
+      "end_ms": 14180,
+      "start": "00:00:11,660",
+      "end": "00:00:14,180",
+      "text": "Too sensitive. Too thin skinned.",
+      "words": 5
+    },
+    {
+      "i": 5,
+      "start_ms": 14540,
+      "end_ms": 18060,
+      "start": "00:00:14,540",
+      "end": "00:00:18,060",
+      "text": "But the count is not a character flaw. It is a measurement.",
+      "words": 12
+    },
+    {
+      "i": 6,
+      "start_ms": 18260,
+      "end_ms": 22580,
+      "start": "00:00:18,260",
+      "end": "00:00:22,580",
+      "text": "Your mind runs a permanent weighting system called negativity bias,",
+      "words": 10
+    },
+    {
+      "i": 7,
+      "start_ms": 22840,
+      "end_ms": 27190,
+      "start": "00:00:22,840",
+      "end": "00:00:27,190",
+      "text": "and inside it one hostile voice does not weigh the same as one kind voice,",
+      "words": 15
+    },
+    {
+      "i": 8,
+      "start_ms": 27280,
+      "end_ms": 29600,
+      "start": "00:00:27,280",
+      "end": "00:00:29,600",
+      "text": "and the exchange rate is not close.",
+      "words": 7
+    },
+    {
+      "i": 9,
+      "start_ms": 29680,
+      "end_ms": 33320,
+      "start": "00:00:29,680",
+      "end": "00:00:33,320",
+      "text": "By the end you will know what that rate actually is, who set it,",
+      "words": 14
+    },
+    {
+      "i": 10,
+      "start_ms": 33500,
+      "end_ms": 37700,
+      "start": "00:00:33,500",
+      "end": "00:00:37,700",
+      "text": "and the one question that decides whether a stranger gets your evening or not.",
+      "words": 14
+    },
+    {
+      "i": 11,
+      "start_ms": 38760,
+      "end_ms": 43500,
+      "start": "00:00:38,760",
+      "end": "00:00:43,500",
+      "text": "Start with the size of the effect, because it is bigger than it feels like it should be.",
+      "words": 18
+    },
+    {
+      "i": 12,
+      "start_ms": 43580,
+      "end_ms": 49810,
+      "start": "00:00:43,580",
+      "end": "00:00:49,810",
+      "text": "In 2001 a team of psychologists led by Roy Baumeister set out to find an exception.",
+      "words": 16
+    },
+    {
+      "i": 13,
+      "start_ms": 49890,
+      "end_ms": 53360,
+      "start": "00:00:49,890",
+      "end": "00:00:53,360",
+      "text": "They pulled together evidence from everywhere anyone had looked.",
+      "words": 9
+    },
+    {
+      "i": 14,
+      "start_ms": 53700,
+      "end_ms": 57620,
+      "start": "00:00:53,700",
+      "end": "00:00:57,620",
+      "text": "First impressions. Money won and money lost.",
+      "words": 7
+    },
+    {
+      "i": 15,
+      "start_ms": 57980,
+      "end_ms": 61800,
+      "start": "00:00:57,980",
+      "end": "00:01:01,800",
+      "text": "Feedback at work. Good days and bad days.",
+      "words": 8
+    },
+    {
+      "i": 16,
+      "start_ms": 62140,
+      "end_ms": 65840,
+      "start": "00:01:02,140",
+      "end": "00:01:05,840",
+      "text": "How new parents feel. How couples survive or do not.",
+      "words": 10
+    },
+    {
+      "i": 17,
+      "start_ms": 66060,
+      "end_ms": 71400,
+      "start": "00:01:06,060",
+      "end": "00:01:11,400",
+      "text": "They were looking for one domain where a good event of a certain size outweighed a bad event of",
+      "words": 19
+    },
+    {
+      "i": 18,
+      "start_ms": 71480,
+      "end_ms": 74450,
+      "start": "00:01:11,480",
+      "end": "00:01:14,450",
+      "text": "the same size. They did not find one.",
+      "words": 8
+    },
+    {
+      "i": 19,
+      "start_ms": 74580,
+      "end_ms": 79060,
+      "start": "00:01:14,580",
+      "end": "00:01:19,060",
+      "text": "The paper is called Bad Is Stronger Than Good, and that title is not a mood.",
+      "words": 16
+    },
+    {
+      "i": 20,
+      "start_ms": 79140,
+      "end_ms": 85120,
+      "start": "00:01:19,140",
+      "end": "00:01:25,120",
+      "text": "It is the result. Across almost everything measured, a bad thing of a given size hits harder,",
+      "words": 17
+    },
+    {
+      "i": 21,
+      "start_ms": 85200,
+      "end_ms": 90800,
+      "start": "00:01:25,200",
+      "end": "00:01:30,800",
+      "text": "lasts longer, and shapes what you do next more than a good thing of exactly equal size.",
+      "words": 17
+    },
+    {
+      "i": 22,
+      "start_ms": 90880,
+      "end_ms": 93870,
+      "start": "00:01:30,880",
+      "end": "00:01:33,870",
+      "text": "And it happens far too fast to be a decision you are making.",
+      "words": 13
+    },
+    {
+      "i": 23,
+      "start_ms": 93980,
+      "end_ms": 99900,
+      "start": "00:01:33,980",
+      "end": "00:01:39,900",
+      "text": "In 1998 Tiffany Ito and her colleagues sat people down with electrodes on their scalps and",
+      "words": 16
+    },
+    {
+      "i": 24,
+      "start_ms": 99980,
+      "end_ms": 104410,
+      "start": "00:01:39,980",
+      "end": "00:01:44,410",
+      "text": "showed them pictures. Pleasant ones, neutral ones, unpleasant ones,",
+      "words": 9
+    },
+    {
+      "i": 25,
+      "start_ms": 104560,
+      "end_ms": 110380,
+      "start": "00:01:44,560",
+      "end": "00:01:50,380",
+      "text": "matched so the pleasant and unpleasant images were equally intense, just in opposite directions.",
+      "words": 14
+    },
+    {
+      "i": 26,
+      "start_ms": 111400,
+      "end_ms": 115970,
+      "start": "00:01:51,400",
+      "end": "00:01:55,970",
+      "text": "Then they watched the electrical response of the brain as each image landed.",
+      "words": 13
+    },
+    {
+      "i": 27,
+      "start_ms": 116170,
+      "end_ms": 118920,
+      "start": "00:01:56,170",
+      "end": "00:01:58,920",
+      "text": "The negative images produced a bigger response.",
+      "words": 7
+    },
+    {
+      "i": 28,
+      "start_ms": 119440,
+      "end_ms": 121660,
+      "start": "00:01:59,440",
+      "end": "00:02:01,660",
+      "text": "Not a bigger opinion afterwards.",
+      "words": 5
+    },
+    {
+      "i": 29,
+      "start_ms": 121740,
+      "end_ms": 125070,
+      "start": "00:02:01,740",
+      "end": "00:02:05,070",
+      "text": "A bigger electrical event, inside the first second,",
+      "words": 8
+    },
+    {
+      "i": 30,
+      "start_ms": 125220,
+      "end_ms": 128300,
+      "start": "00:02:05,220",
+      "end": "00:02:08,300",
+      "text": "before the person had consciously judged anything at all.",
+      "words": 9
+    },
+    {
+      "i": 31,
+      "start_ms": 128880,
+      "end_ms": 133749,
+      "start": "00:02:08,880",
+      "end": "00:02:13,749",
+      "text": "Their paper put it plainly. Negative information weighs more heavily on the brain.",
+      "words": 13
+    },
+    {
+      "i": 32,
+      "start_ms": 133829,
+      "end_ms": 136740,
+      "start": "00:02:13,829",
+      "end": "00:02:16,740",
+      "text": "So by the time you are deciding whether the comment was fair,",
+      "words": 12
+    },
+    {
+      "i": 33,
+      "start_ms": 136820,
+      "end_ms": 138820,
+      "start": "00:02:16,820",
+      "end": "00:02:18,820",
+      "text": "the weighting has already happened.",
+      "words": 5
+    },
+    {
+      "i": 34,
+      "start_ms": 138900,
+      "end_ms": 140820,
+      "start": "00:02:18,900",
+      "end": "00:02:20,820",
+      "text": "You are not choosing to give it more room.",
+      "words": 9
+    },
+    {
+      "i": 35,
+      "start_ms": 140900,
+      "end_ms": 143680,
+      "start": "00:02:20,900",
+      "end": "00:02:23,680",
+      "text": "You are being handed it with more room already attached.",
+      "words": 10
+    },
+    {
+      "i": 36,
+      "start_ms": 143840,
+      "end_ms": 146670,
+      "start": "00:02:23,840",
+      "end": "00:02:26,670",
+      "text": "Which leaves the obvious question. How much more?",
+      "words": 8
+    },
+    {
+      "i": 37,
+      "start_ms": 146810,
+      "end_ms": 149740,
+      "start": "00:02:26,810",
+      "end": "00:02:29,740",
+      "text": "The clearest number comes from a place you would not expect,",
+      "words": 11
+    },
+    {
+      "i": 38,
+      "start_ms": 149820,
+      "end_ms": 151800,
+      "start": "00:02:29,820",
+      "end": "00:02:31,800",
+      "text": "which is people who love each other.",
+      "words": 7
+    },
+    {
+      "i": 39,
+      "start_ms": 151880,
+      "end_ms": 156520,
+      "start": "00:02:31,880",
+      "end": "00:02:36,520",
+      "text": "For decades John Gottman brought couples into a lab built to look like an apartment and recorded",
+      "words": 17
+    },
+    {
+      "i": 40,
+      "start_ms": 156600,
+      "end_ms": 159520,
+      "start": "00:02:36,600",
+      "end": "00:02:39,520",
+      "text": "them arguing. Not performing happiness.",
+      "words": 5
+    },
+    {
+      "i": 41,
+      "start_ms": 159740,
+      "end_ms": 163960,
+      "start": "00:02:39,740",
+      "end": "00:02:43,960",
+      "text": "Arguing, about money and in-laws and dishes, while cameras ran.",
+      "words": 10
+    },
+    {
+      "i": 42,
+      "start_ms": 164560,
+      "end_ms": 168060,
+      "start": "00:02:44,560",
+      "end": "00:02:48,060",
+      "text": "Then he tracked those couples for years to see who stayed together.",
+      "words": 12
+    },
+    {
+      "i": 43,
+      "start_ms": 168350,
+      "end_ms": 171160,
+      "start": "00:02:48,350",
+      "end": "00:02:51,160",
+      "text": "The couples who lasted were not the couples who never fought.",
+      "words": 11
+    },
+    {
+      "i": 44,
+      "start_ms": 171280,
+      "end_ms": 173220,
+      "start": "00:02:51,280",
+      "end": "00:02:53,220",
+      "text": "They were the couples running a surplus.",
+      "words": 7
+    },
+    {
+      "i": 45,
+      "start_ms": 173560,
+      "end_ms": 178760,
+      "start": "00:02:53,560",
+      "end": "00:02:58,760",
+      "text": "During conflict itself, stable couples produced around five positive moments for every negative",
+      "words": 13
+    },
+    {
+      "i": 46,
+      "start_ms": 178840,
+      "end_ms": 182940,
+      "start": "00:02:58,840",
+      "end": "00:03:02,940",
+      "text": "one. A joke, a touch, a small yes,",
+      "words": 8
+    },
+    {
+      "i": 47,
+      "start_ms": 183300,
+      "end_ms": 186310,
+      "start": "00:03:03,300",
+      "end": "00:03:06,310",
+      "text": "an acknowledgement that the other person had a point.",
+      "words": 9
+    },
+    {
+      "i": 48,
+      "start_ms": 186390,
+      "end_ms": 191340,
+      "start": "00:03:06,390",
+      "end": "00:03:11,340",
+      "text": "The couples heading for separation were running closer to one to one, and often below it.",
+      "words": 16
+    },
+    {
+      "i": 49,
+      "start_ms": 191420,
+      "end_ms": 194970,
+      "start": "00:03:11,420",
+      "end": "00:03:14,970",
+      "text": "Five to one. In a bond where both people chose each other,",
+      "words": 12
+    },
+    {
+      "i": 50,
+      "start_ms": 195380,
+      "end_ms": 200640,
+      "start": "00:03:15,380",
+      "end": "00:03:20,640",
+      "text": "know each other, and are trying. That is the exchange rate your mind is working with.",
+      "words": 16
+    },
+    {
+      "i": 51,
+      "start_ms": 201400,
+      "end_ms": 205720,
+      "start": "00:03:21,400",
+      "end": "00:03:25,720",
+      "text": "Now hold that next to your afternoon. One stranger left one comment.",
+      "words": 12
+    },
+    {
+      "i": 52,
+      "start_ms": 206049,
+      "end_ms": 210280,
+      "start": "00:03:26,049",
+      "end": "00:03:30,280",
+      "text": "To level it out, at that rate, you would need five specific, personal,",
+      "words": 13
+    },
+    {
+      "i": 53,
+      "start_ms": 210360,
+      "end_ms": 212920,
+      "start": "00:03:30,360",
+      "end": "00:03:32,920",
+      "text": "warm things to happen to you before the end of the day.",
+      "words": 12
+    },
+    {
+      "i": 54,
+      "start_ms": 213200,
+      "end_ms": 218430,
+      "start": "00:03:33,200",
+      "end": "00:03:38,430",
+      "text": "How many did you get? And the nine people who liked it did not each hand you one.",
+      "words": 18
+    },
+    {
+      "i": 55,
+      "start_ms": 218510,
+      "end_ms": 221440,
+      "start": "00:03:38,510",
+      "end": "00:03:41,440",
+      "text": "Most of them handed you a silence you never noticed.",
+      "words": 10
+    },
+    {
+      "i": 56,
+      "start_ms": 221520,
+      "end_ms": 225210,
+      "start": "00:03:41,520",
+      "end": "00:03:45,210",
+      "text": "That is also why you can still quote the comment in the voice it was said in.",
+      "words": 17
+    },
+    {
+      "i": 57,
+      "start_ms": 225420,
+      "end_ms": 228300,
+      "start": "00:03:45,420",
+      "end": "00:03:48,300",
+      "text": "The kind ones were received once and filed.",
+      "words": 8
+    },
+    {
+      "i": 58,
+      "start_ms": 228380,
+      "end_ms": 231270,
+      "start": "00:03:48,380",
+      "end": "00:03:51,270",
+      "text": "The other one was replayed on the way home, in the shower,",
+      "words": 12
+    },
+    {
+      "i": 59,
+      "start_ms": 231560,
+      "end_ms": 236380,
+      "start": "00:03:51,560",
+      "end": "00:03:56,380",
+      "text": "at eleven at night, and every replay laid it down again a little deeper.",
+      "words": 14
+    },
+    {
+      "i": 60,
+      "start_ms": 236600,
+      "end_ms": 238860,
+      "start": "00:03:56,600",
+      "end": "00:03:58,860",
+      "text": "You did not choose to give it that many hours.",
+      "words": 10
+    },
+    {
+      "i": 61,
+      "start_ms": 238940,
+      "end_ms": 241860,
+      "start": "00:03:58,940",
+      "end": "00:04:01,860",
+      "text": "It was already flagged as important before you got a vote.",
+      "words": 11
+    },
+    {
+      "i": 62,
+      "start_ms": 242180,
+      "end_ms": 247260,
+      "start": "00:04:02,180",
+      "end": "00:04:07,260",
+      "text": "Before you decide this makes you fragile, look at the world the weighting was set in,",
+      "words": 16
+    },
+    {
+      "i": 63,
+      "start_ms": 247340,
+      "end_ms": 249560,
+      "start": "00:04:07,340",
+      "end": "00:04:09,560",
+      "text": "because nobody set it carelessly.",
+      "words": 5
+    },
+    {
+      "i": 64,
+      "start_ms": 249640,
+      "end_ms": 252580,
+      "start": "00:04:09,640",
+      "end": "00:04:12,580",
+      "text": "For almost all of human history you lived in a band.",
+      "words": 11
+    },
+    {
+      "i": 65,
+      "start_ms": 252850,
+      "end_ms": 257580,
+      "start": "00:04:12,850",
+      "end": "00:04:17,580",
+      "text": "Thirty people, forty, at the outer edge a network of about a hundred and fifty.",
+      "words": 15
+    },
+    {
+      "i": 66,
+      "start_ms": 257680,
+      "end_ms": 262760,
+      "start": "00:04:17,680",
+      "end": "00:04:22,760",
+      "text": "Not thirty people you had chosen. Thirty people you were born among and would die among,",
+      "words": 16
+    },
+    {
+      "i": 67,
+      "start_ms": 262840,
+      "end_ms": 267780,
+      "start": "00:04:22,840",
+      "end": "00:04:27,780",
+      "text": "who fed you when your hunt failed and carried you when you were sick and were the entire supply",
+      "words": 19
+    },
+    {
+      "i": 68,
+      "start_ms": 267860,
+      "end_ms": 272220,
+      "start": "00:04:27,860",
+      "end": "00:04:32,220",
+      "text": "of everything you needed. In that world, what is a hostile comment?",
+      "words": 12
+    },
+    {
+      "i": 69,
+      "start_ms": 272300,
+      "end_ms": 275780,
+      "start": "00:04:32,300",
+      "end": "00:04:35,780",
+      "text": "It is not an opinion. It is a reading of your standing.",
+      "words": 12
+    },
+    {
+      "i": 70,
+      "start_ms": 275860,
+      "end_ms": 279560,
+      "start": "00:04:35,860",
+      "end": "00:04:39,560",
+      "text": "Somebody in the group is now speaking about you in a way that lowers you,",
+      "words": 15
+    },
+    {
+      "i": 71,
+      "start_ms": 279640,
+      "end_ms": 283380,
+      "start": "00:04:39,640",
+      "end": "00:04:43,380",
+      "text": "and lowering is not a feeling in that world, it is a share.",
+      "words": 13
+    },
+    {
+      "i": 72,
+      "start_ms": 283460,
+      "end_ms": 285790,
+      "start": "00:04:43,460",
+      "end": "00:04:45,790",
+      "text": "Of meat. Of protection.",
+      "words": 4
+    },
+    {
+      "i": 73,
+      "start_ms": 286500,
+      "end_ms": 290300,
+      "start": "00:04:46,500",
+      "end": "00:04:50,300",
+      "text": "Of who is willing to travel with you when the water dries up.",
+      "words": 13
+    },
+    {
+      "i": 74,
+      "start_ms": 290380,
+      "end_ms": 292880,
+      "start": "00:04:50,380",
+      "end": "00:04:52,880",
+      "text": "And a comment does not sit still.",
+      "words": 7
+    },
+    {
+      "i": 75,
+      "start_ms": 292960,
+      "end_ms": 297290,
+      "start": "00:04:52,960",
+      "end": "00:04:57,290",
+      "text": "Christopher Boehm described the ladder small groups use to control their own members,",
+      "words": 13
+    },
+    {
+      "i": 76,
+      "start_ms": 297520,
+      "end_ms": 300420,
+      "start": "00:04:57,520",
+      "end": "00:05:00,420",
+      "text": "and it starts almost gently. Gossip.",
+      "words": 6
+    },
+    {
+      "i": 77,
+      "start_ms": 300740,
+      "end_ms": 303920,
+      "start": "00:05:00,740",
+      "end": "00:05:03,920",
+      "text": "Then ridicule. Then people stop including you.",
+      "words": 7
+    },
+    {
+      "i": 78,
+      "start_ms": 304000,
+      "end_ms": 308040,
+      "start": "00:05:04,000",
+      "end": "00:05:08,040",
+      "text": "Then, at the top, exclusion from the band, which was not a bad month.",
+      "words": 14
+    },
+    {
+      "i": 79,
+      "start_ms": 308420,
+      "end_ms": 312060,
+      "start": "00:05:08,420",
+      "end": "00:05:12,060",
+      "text": "Alone, on foot, in that landscape, it was usually death.",
+      "words": 10
+    },
+    {
+      "i": 80,
+      "start_ms": 312300,
+      "end_ms": 314769,
+      "start": "00:05:12,300",
+      "end": "00:05:14,769",
+      "text": "So the first hostile voice was the first rung.",
+      "words": 9
+    },
+    {
+      "i": 81,
+      "start_ms": 315000,
+      "end_ms": 320540,
+      "start": "00:05:15,000",
+      "end": "00:05:20,540",
+      "text": "Reacting to it immediately, taking it home, turning it over all night, was not oversensitivity.",
+      "words": 15
+    },
+    {
+      "i": 82,
+      "start_ms": 320620,
+      "end_ms": 324190,
+      "start": "00:05:20,620",
+      "end": "00:05:24,190",
+      "text": "It was maintenance on the only life support system there was.",
+      "words": 11
+    },
+    {
+      "i": 83,
+      "start_ms": 324270,
+      "end_ms": 328680,
+      "start": "00:05:24,270",
+      "end": "00:05:28,680",
+      "text": "There is an anthropologist who lived inside that machinery and wrote down what it does to a",
+      "words": 17
+    },
+    {
+      "i": 84,
+      "start_ms": 328760,
+      "end_ms": 334920,
+      "start": "00:05:28,760",
+      "end": "00:05:34,920",
+      "text": "person. In the 1960s Jean Briggs spent seventeen months with a small group of Utku Inuit in the",
+      "words": 18
+    },
+    {
+      "i": 85,
+      "start_ms": 335000,
+      "end_ms": 340680,
+      "start": "00:05:35,000",
+      "end": "00:05:40,680",
+      "text": "Canadian Arctic, adopted into a family as a daughter, living in the tent, learning the language.",
+      "words": 16
+    },
+    {
+      "i": 86,
+      "start_ms": 341380,
+      "end_ms": 344130,
+      "start": "00:05:41,380",
+      "end": "00:05:44,130",
+      "text": "The Utku had an unusual relationship with anger.",
+      "words": 8
+    },
+    {
+      "i": 87,
+      "start_ms": 344210,
+      "end_ms": 349460,
+      "start": "00:05:44,210",
+      "end": "00:05:49,460",
+      "text": "They did not express it. Not in raised voices, not in confrontation, not at children,",
+      "words": 15
+    },
+    {
+      "i": 88,
+      "start_ms": 349540,
+      "end_ms": 355120,
+      "start": "00:05:49,540",
+      "end": "00:05:55,120",
+      "text": "barely at all. Then some visiting outsiders borrowed a canoe and treated it badly,",
+      "words": 14
+    },
+    {
+      "i": 89,
+      "start_ms": 355360,
+      "end_ms": 358970,
+      "start": "00:05:55,360",
+      "end": "00:05:58,970",
+      "text": "and Briggs, on the group's behalf, spoke to them sharply.",
+      "words": 10
+    },
+    {
+      "i": 90,
+      "start_ms": 360040,
+      "end_ms": 363700,
+      "start": "00:06:00,040",
+      "end": "00:06:03,700",
+      "text": "The Utku did not shout at her. They did something quieter",
+      "words": 11
+    },
+    {
+      "i": 91,
+      "start_ms": 364400,
+      "end_ms": 367920,
+      "start": "00:06:04,400",
+      "end": "00:06:07,920",
+      "text": "and far heavier. They went cool.",
+      "words": 6
+    },
+    {
+      "i": 92,
+      "start_ms": 369160,
+      "end_ms": 373279,
+      "start": "00:06:09,160",
+      "end": "00:06:13,279",
+      "text": "She was still fed. She was still spoken to when speaking was necessary.",
+      "words": 13
+    },
+    {
+      "i": 93,
+      "start_ms": 373940,
+      "end_ms": 377420,
+      "start": "00:06:13,940",
+      "end": "00:06:17,420",
+      "text": "But the warmth was gone and the inclusion was gone,",
+      "words": 10
+    },
+    {
+      "i": 94,
+      "start_ms": 378020,
+      "end_ms": 382930,
+      "start": "00:06:18,020",
+      "end": "00:06:22,930",
+      "text": "and it stayed gone for about three months. Here is the part worth sitting with.",
+      "words": 15
+    },
+    {
+      "i": 95,
+      "start_ms": 383840,
+      "end_ms": 387180,
+      "start": "00:06:23,840",
+      "end": "00:06:27,180",
+      "text": "Briggs was a Harvard-trained researcher with an aeroplane out,",
+      "words": 9
+    },
+    {
+      "i": 96,
+      "start_ms": 387620,
+      "end_ms": 392760,
+      "start": "00:06:27,620",
+      "end": "00:06:32,760",
+      "text": "a university behind her, a whole other world where hundreds of people thought well of her.",
+      "words": 16
+    },
+    {
+      "i": 97,
+      "start_ms": 392840,
+      "end_ms": 394899,
+      "start": "00:06:32,840",
+      "end": "00:06:34,899",
+      "text": "She knew the ostracism was temporary.",
+      "words": 6
+    },
+    {
+      "i": 98,
+      "start_ms": 395040,
+      "end_ms": 399380,
+      "start": "00:06:35,040",
+      "end": "00:06:39,380",
+      "text": "She knew exactly what was happening and why, because studying it was her job.",
+      "words": 14
+    },
+    {
+      "i": 99,
+      "start_ms": 399800,
+      "end_ms": 403950,
+      "start": "00:06:39,800",
+      "end": "00:06:43,950",
+      "text": "It devastated her anyway. She wrote about it for the rest of her career.",
+      "words": 14
+    },
+    {
+      "i": 100,
+      "start_ms": 404030,
+      "end_ms": 405940,
+      "start": "00:06:44,030",
+      "end": "00:06:45,940",
+      "text": "That is the strength of the machinery.",
+      "words": 7
+    },
+    {
+      "i": 101,
+      "start_ms": 406280,
+      "end_ms": 411270,
+      "start": "00:06:46,280",
+      "end": "00:06:51,270",
+      "text": "Even with an exit, even with an explanation, even with a whole other life waiting,",
+      "words": 15
+    },
+    {
+      "i": 102,
+      "start_ms": 411400,
+      "end_ms": 416860,
+      "start": "00:06:51,400",
+      "end": "00:06:56,860",
+      "text": "being frozen out by a handful of people you live among reorganises everything inside you.",
+      "words": 15
+    },
+    {
+      "i": 103,
+      "start_ms": 417320,
+      "end_ms": 421840,
+      "start": "00:06:57,320",
+      "end": "00:07:01,840",
+      "text": "Your ancestors had no exit, no explanation, and no other life.",
+      "words": 11
+    },
+    {
+      "i": 104,
+      "start_ms": 422600,
+      "end_ms": 427740,
+      "start": "00:07:02,600",
+      "end": "00:07:07,740",
+      "text": "Five to one starts to look conservative. And notice what the Utku were not doing.",
+      "words": 15
+    },
+    {
+      "i": 105,
+      "start_ms": 428120,
+      "end_ms": 433140,
+      "start": "00:07:08,120",
+      "end": "00:07:13,140",
+      "text": "Nobody insulted her. Nobody raised a voice or issued a warning or explained the rule she had",
+      "words": 17
+    },
+    {
+      "i": 106,
+      "start_ms": 433220,
+      "end_ms": 436800,
+      "start": "00:07:13,220",
+      "end": "00:07:16,800",
+      "text": "broken. The signal was carried entirely by warmth being withdrawn,",
+      "words": 10
+    },
+    {
+      "i": 107,
+      "start_ms": 436880,
+      "end_ms": 441640,
+      "start": "00:07:16,880",
+      "end": "00:07:21,640",
+      "text": "which is the cheapest thing a group can do and the most expensive thing a member can receive.",
+      "words": 18
+    },
+    {
+      "i": 108,
+      "start_ms": 441720,
+      "end_ms": 443940,
+      "start": "00:07:21,720",
+      "end": "00:07:23,940",
+      "text": "Your mind still scans for it constantly,",
+      "words": 7
+    },
+    {
+      "i": 109,
+      "start_ms": 444020,
+      "end_ms": 448640,
+      "start": "00:07:24,020",
+      "end": "00:07:28,640",
+      "text": "which is why a short reply from someone you love can occupy a whole evening while a long",
+      "words": 18
+    },
+    {
+      "i": 110,
+      "start_ms": 448720,
+      "end_ms": 451280,
+      "start": "00:07:28,720",
+      "end": "00:07:31,280",
+      "text": "friendly one occupies none of it.",
+      "words": 6
+    },
+    {
+      "i": 111,
+      "start_ms": 451360,
+      "end_ms": 455220,
+      "start": "00:07:31,360",
+      "end": "00:07:35,220",
+      "text": "Now open your phone. Every part of that system is still running,",
+      "words": 12
+    },
+    {
+      "i": 112,
+      "start_ms": 455300,
+      "end_ms": 457700,
+      "start": "00:07:35,300",
+      "end": "00:07:37,700",
+      "text": "and the thing feeding it has changed completely.",
+      "words": 8
+    },
+    {
+      "i": 113,
+      "start_ms": 458060,
+      "end_ms": 460660,
+      "start": "00:07:38,060",
+      "end": "00:07:40,660",
+      "text": "The voice in the comments is not in your band.",
+      "words": 10
+    },
+    {
+      "i": 114,
+      "start_ms": 460740,
+      "end_ms": 463480,
+      "start": "00:07:40,740",
+      "end": "00:07:43,480",
+      "text": "They have not fed you. They will not carry you.",
+      "words": 10
+    },
+    {
+      "i": 115,
+      "start_ms": 463560,
+      "end_ms": 469060,
+      "start": "00:07:43,560",
+      "end": "00:07:49,060",
+      "text": "They will never see you again, and nothing that happens to you tomorrow costs them anything.",
+      "words": 16
+    },
+    {
+      "i": 116,
+      "start_ms": 469140,
+      "end_ms": 473380,
+      "start": "00:07:49,140",
+      "end": "00:07:53,380",
+      "text": "In the world your alarm was built for, that combination did not exist.",
+      "words": 13
+    },
+    {
+      "i": 117,
+      "start_ms": 473460,
+      "end_ms": 476250,
+      "start": "00:07:53,460",
+      "end": "00:07:56,250",
+      "text": "A person who spoke badly of you was, without exception,",
+      "words": 10
+    },
+    {
+      "i": 118,
+      "start_ms": 476330,
+      "end_ms": 478990,
+      "start": "00:07:56,330",
+      "end": "00:07:58,990",
+      "text": "a person who had to live beside the result.",
+      "words": 9
+    },
+    {
+      "i": 119,
+      "start_ms": 479070,
+      "end_ms": 482270,
+      "start": "00:07:59,070",
+      "end": "00:08:02,270",
+      "text": "That was the whole reason their words were information.",
+      "words": 9
+    },
+    {
+      "i": 120,
+      "start_ms": 482360,
+      "end_ms": 484060,
+      "start": "00:08:02,360",
+      "end": "00:08:04,060",
+      "text": "And there is a second change, which is worse,",
+      "words": 9
+    },
+    {
+      "i": 121,
+      "start_ms": 484140,
+      "end_ms": 486860,
+      "start": "00:08:04,140",
+      "end": "00:08:06,860",
+      "text": "because it decides which comment reaches you at all.",
+      "words": 9
+    },
+    {
+      "i": 122,
+      "start_ms": 487220,
+      "end_ms": 493140,
+      "start": "00:08:07,220",
+      "end": "00:08:13,140",
+      "text": "In 2017 William Brady, Jay Van Bavel and their colleagues took more than half a million tweets",
+      "words": 17
+    },
+    {
+      "i": 123,
+      "start_ms": 493220,
+      "end_ms": 498180,
+      "start": "00:08:13,220",
+      "end": "00:08:18,180",
+      "text": "about gun control, same-sex marriage, and climate change, and counted the words.",
+      "words": 12
+    },
+    {
+      "i": 124,
+      "start_ms": 498510,
+      "end_ms": 502500,
+      "start": "00:08:18,510",
+      "end": "00:08:22,500",
+      "text": "They found that each additional moral or emotional word in a message raised its spread by",
+      "words": 16
+    },
+    {
+      "i": 125,
+      "start_ms": 502580,
+      "end_ms": 505460,
+      "start": "00:08:22,580",
+      "end": "00:08:25,460",
+      "text": "roughly twenty percent. Not its truth.",
+      "words": 6
+    },
+    {
+      "i": 126,
+      "start_ms": 505550,
+      "end_ms": 508090,
+      "start": "00:08:25,550",
+      "end": "00:08:28,090",
+      "text": "Not its representativeness. Its spread.",
+      "words": 5
+    },
+    {
+      "i": 127,
+      "start_ms": 508540,
+      "end_ms": 510920,
+      "start": "00:08:28,540",
+      "end": "00:08:30,920",
+      "text": "Sit with what that means for your afternoon.",
+      "words": 8
+    },
+    {
+      "i": 128,
+      "start_ms": 511000,
+      "end_ms": 514940,
+      "start": "00:08:31,000",
+      "end": "00:08:34,940",
+      "text": "The comment that reached you was not a fair sample of what people think about you.",
+      "words": 16
+    },
+    {
+      "i": 129,
+      "start_ms": 515020,
+      "end_ms": 519859,
+      "start": "00:08:35,020",
+      "end": "00:08:39,859",
+      "text": "It was the one shaped to travel, and what travels is the sharpest wording available.",
+      "words": 15
+    },
+    {
+      "i": 130,
+      "start_ms": 519960,
+      "end_ms": 524660,
+      "start": "00:08:39,960",
+      "end": "00:08:44,660",
+      "text": "The nine kind opinions did not have that property, so most of them never became words at all.",
+      "words": 18
+    },
+    {
+      "i": 131,
+      "start_ms": 524880,
+      "end_ms": 527140,
+      "start": "00:08:44,880",
+      "end": "00:08:47,140",
+      "text": "Your mind then took that filtered, selected,",
+      "words": 7
+    },
+    {
+      "i": 132,
+      "start_ms": 527220,
+      "end_ms": 531240,
+      "start": "00:08:47,220",
+      "end": "00:08:51,240",
+      "text": "deliberately sharpened voice and processed it as though it were a member of your band speaking",
+      "words": 16
+    },
+    {
+      "i": 133,
+      "start_ms": 531320,
+      "end_ms": 533900,
+      "start": "00:08:51,320",
+      "end": "00:08:53,900",
+      "text": "at the fire. That is the mismatch.",
+      "words": 7
+    },
+    {
+      "i": 134,
+      "start_ms": 533980,
+      "end_ms": 538480,
+      "start": "00:08:53,980",
+      "end": "00:08:58,480",
+      "text": "Not that you weight bad news heavily. That was correct and it kept your line alive.",
+      "words": 16
+    },
+    {
+      "i": 135,
+      "start_ms": 538560,
+      "end_ms": 543490,
+      "start": "00:08:58,560",
+      "end": "00:09:03,490",
+      "text": "It is that the weighting was calibrated for people who bore the cost of being wrong about you,",
+      "words": 18
+    },
+    {
+      "i": 136,
+      "start_ms": 543570,
+      "end_ms": 546560,
+      "start": "00:09:03,570",
+      "end": "00:09:06,560",
+      "text": "and it is now being applied to people who bear no cost at all.",
+      "words": 14
+    },
+    {
+      "i": 137,
+      "start_ms": 546640,
+      "end_ms": 550120,
+      "start": "00:09:06,640",
+      "end": "00:09:10,120",
+      "text": "So here is the shift, and it is one question, not a discipline.",
+      "words": 13
+    },
+    {
+      "i": 138,
+      "start_ms": 550200,
+      "end_ms": 554300,
+      "start": "00:09:10,200",
+      "end": "00:09:14,300",
+      "text": "When something someone said is still with you tonight, do not ask whether it was fair.",
+      "words": 16
+    },
+    {
+      "i": 139,
+      "start_ms": 554380,
+      "end_ms": 556800,
+      "start": "00:09:14,380",
+      "end": "00:09:16,800",
+      "text": "Fairness is an argument, and you will lose it,",
+      "words": 9
+    },
+    {
+      "i": 140,
+      "start_ms": 556880,
+      "end_ms": 560120,
+      "start": "00:09:16,880",
+      "end": "00:09:20,120",
+      "text": "because you will argue both sides yourself until two in the morning.",
+      "words": 12
+    },
+    {
+      "i": 141,
+      "start_ms": 560220,
+      "end_ms": 562780,
+      "start": "00:09:20,220",
+      "end": "00:09:22,780",
+      "text": "Ask instead whether that person has to see you tomorrow.",
+      "words": 10
+    },
+    {
+      "i": 142,
+      "start_ms": 562860,
+      "end_ms": 565680,
+      "start": "00:09:22,860",
+      "end": "00:09:25,680",
+      "text": "That is the whole move. Not thicker skin.",
+      "words": 8
+    },
+    {
+      "i": 143,
+      "start_ms": 565760,
+      "end_ms": 570140,
+      "start": "00:09:25,760",
+      "end": "00:09:30,140",
+      "text": "Better routing. Because the question separates the two things that have been jammed together in",
+      "words": 15
+    },
+    {
+      "i": 144,
+      "start_ms": 570220,
+      "end_ms": 574600,
+      "start": "00:09:30,220",
+      "end": "00:09:34,600",
+      "text": "one channel. A friend, a partner, a colleague, your sister,",
+      "words": 10
+    },
+    {
+      "i": 145,
+      "start_ms": 574680,
+      "end_ms": 578060,
+      "start": "00:09:34,680",
+      "end": "00:09:38,060",
+      "text": "anyone who has to live with the result of being wrong about you,",
+      "words": 13
+    },
+    {
+      "i": 146,
+      "start_ms": 578260,
+      "end_ms": 583100,
+      "start": "00:09:38,260",
+      "end": "00:09:43,100",
+      "text": "is inside the band, and their hostile comment is real information and deserves the full weight",
+      "words": 16
+    },
+    {
+      "i": 147,
+      "start_ms": 583180,
+      "end_ms": 586480,
+      "start": "00:09:43,180",
+      "end": "00:09:46,480",
+      "text": "your mind is already giving it. Listen to that one properly.",
+      "words": 11
+    },
+    {
+      "i": 148,
+      "start_ms": 586740,
+      "end_ms": 590700,
+      "start": "00:09:46,740",
+      "end": "00:09:50,700",
+      "text": "It is expensive to them to say, which is exactly what makes it worth something.",
+      "words": 15
+    },
+    {
+      "i": 149,
+      "start_ms": 590840,
+      "end_ms": 593940,
+      "start": "00:09:50,840",
+      "end": "00:09:53,940",
+      "text": "And the stranger is not withholding information from you.",
+      "words": 9
+    },
+    {
+      "i": 150,
+      "start_ms": 594250,
+      "end_ms": 598080,
+      "start": "00:09:54,250",
+      "end": "00:09:58,080",
+      "text": "They never had any. They did not see the nine people who liked it.",
+      "words": 14
+    },
+    {
+      "i": 151,
+      "start_ms": 598330,
+      "end_ms": 600530,
+      "start": "00:09:58,330",
+      "end": "00:10:00,530",
+      "text": "They will not be there on Thursday.",
+      "words": 7
+    },
+    {
+      "i": 152,
+      "start_ms": 600610,
+      "end_ms": 605480,
+      "start": "00:10:00,610",
+      "end": "00:10:05,480",
+      "text": "They paid nothing to say it, and a thing that costs nothing to say was never evidence about your",
+      "words": 19
+    },
+    {
+      "i": 153,
+      "start_ms": 605560,
+      "end_ms": 609320,
+      "start": "00:10:05,560",
+      "end": "00:10:09,320",
+      "text": "standing anywhere. You are not going to stop feeling the sting.",
+      "words": 11
+    },
+    {
+      "i": 154,
+      "start_ms": 609400,
+      "end_ms": 613110,
+      "start": "00:10:09,400",
+      "end": "00:10:13,110",
+      "text": "That is not on offer, and anyone promising it is selling something.",
+      "words": 12
+    },
+    {
+      "i": 155,
+      "start_ms": 613190,
+      "end_ms": 617840,
+      "start": "00:10:13,190",
+      "end": "00:10:17,840",
+      "text": "The sting arrives before you do, on electrodes, in under a second.",
+      "words": 12
+    },
+    {
+      "i": 156,
+      "start_ms": 617920,
+      "end_ms": 620670,
+      "start": "00:10:17,920",
+      "end": "00:10:20,670",
+      "text": "But the sting is the alarm, not the verdict,",
+      "words": 9
+    },
+    {
+      "i": 157,
+      "start_ms": 620760,
+      "end_ms": 624180,
+      "start": "00:10:20,760",
+      "end": "00:10:24,180",
+      "text": "and you get to decide who is allowed to be the verdict.",
+      "words": 12
+    },
+    {
+      "i": 158,
+      "start_ms": 624440,
+      "end_ms": 626920,
+      "start": "00:10:24,440",
+      "end": "00:10:26,920",
+      "text": "Ten people liked it. One did not.",
+      "words": 7
+    },
+    {
+      "i": 159,
+      "start_ms": 627000,
+      "end_ms": 629940,
+      "start": "00:10:27,000",
+      "end": "00:10:29,940",
+      "text": "The one you took home was not the truest voice in the room.",
+      "words": 13
+    },
+    {
+      "i": 160,
+      "start_ms": 630020,
+      "end_ms": 634780,
+      "start": "00:10:30,020",
+      "end": "00:10:34,780",
+      "text": "It was simply the loudest one to a system built for a world where every voice belonged to",
+      "words": 18
+    },
+    {
+      "i": 161,
+      "start_ms": 634860,
+      "end_ms": 637850,
+      "start": "00:10:34,860",
+      "end": "00:10:37,850",
+      "text": "somebody who had to feed you in winter.",
+      "words": 8
+    },
+    {
+      "i": 162,
+      "start_ms": 637930,
+      "end_ms": 640940,
+      "start": "00:10:37,930",
+      "end": "00:10:40,940",
+      "text": "The nine were your band and they were quiet,",
+      "words": 9
+    },
+    {
+      "i": 163,
+      "start_ms": 642000,
+      "end_ms": 647340,
+      "start": "00:10:42,000",
+      "end": "00:10:47,340",
+      "text": "because being liked has never made a sound. That silence is not absence.",
+      "words": 13
+    },
+    {
+      "i": 164,
+      "start_ms": 648100,
+      "end_ms": 652360,
+      "start": "00:10:48,100",
+      "end": "00:10:52,360",
+      "text": "It is nine people who have to see you tomorrow, and who are fine with that.",
+      "words": 16
+    },
+    {
+      "i": 165,
+      "start_ms": 653580,
+      "end_ms": 657350,
+      "start": "00:10:53,580",
+      "end": "00:10:57,350",
+      "text": "Now here is a question to take with you, and it is not a rhetorical one.",
+      "words": 16
+    },
+    {
+      "i": 166,
+      "start_ms": 657760,
+      "end_ms": 662400,
+      "start": "00:10:57,760",
+      "end": "00:11:02,400",
+      "text": "That sentence you can still quote word for word, in the voice it was said in.",
+      "words": 16
+    },
+    {
+      "i": 167,
+      "start_ms": 662480,
+      "end_ms": 665950,
+      "start": "00:11:02,480",
+      "end": "00:11:05,950",
+      "text": "How many times have you replayed it since it was actually said, six times,",
+      "words": 14
+    },
+    {
+      "i": 168,
+      "start_ms": 666260,
+      "end_ms": 668700,
+      "start": "00:11:06,260",
+      "end": "00:11:08,700",
+      "text": "twenty, more than you would admit?",
+      "words": 6
+    },
+    {
+      "i": 169,
+      "start_ms": 669420,
+      "end_ms": 671660,
+      "start": "00:11:09,420",
+      "end": "00:11:11,660",
+      "text": "Because not one of those was you listening to it again.",
+      "words": 11
+    },
+    {
+      "i": 170,
+      "start_ms": 671740,
+      "end_ms": 675460,
+      "start": "00:11:11,740",
+      "end": "00:11:15,460",
+      "text": "Every single one was you writing it down again, a little sharper, a little colder,",
+      "words": 15
+    },
+    {
+      "i": 171,
+      "start_ms": 675540,
+      "end_ms": 679940,
+      "start": "00:11:15,540",
+      "end": "00:11:19,940",
+      "text": "in a voice you supplied yourself. Nobody is making anything up here and something was certainly",
+      "words": 16
+    },
+    {
+      "i": 172,
+      "start_ms": 680020,
+      "end_ms": 684180,
+      "start": "00:11:20,020",
+      "end": "00:11:24,180",
+      "text": "said. But the version burning you tonight has been through your hands far more than theirs,",
+      "words": 16
+    },
+    {
+      "i": 173,
+      "start_ms": 684260,
+      "end_ms": 687600,
+      "start": "00:11:24,260",
+      "end": "00:11:27,600",
+      "text": "and there is a whole video about what that does to a memory.",
+      "words": 13
+    },
+    {
+      "i": 174,
+      "start_ms": 687680,
+      "end_ms": 690160,
+      "start": "00:11:27,680",
+      "end": "00:11:30,160",
+      "text": "It is on your screen right now.",
+      "words": 7
+    },
+    {
+      "i": 175,
+      "start_ms": 690240,
+      "end_ms": 692460,
+      "start": "00:11:30,240",
+      "end": "00:11:32,460",
+      "text": "Why you remember things that never happened.",
+      "words": 7
+    },
+    {
+      "i": 176,
+      "start_ms": 692540,
+      "end_ms": 693760,
+      "start": "00:11:32,540",
+      "end": "00:11:33,760",
+      "text": "Watch that one next.",
+      "words": 4
+    }
+  ]
+}

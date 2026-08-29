@@ -8,11 +8,15 @@ Both Codex and Claude read this file.
 - **Never use the em dash character.** Not in scripts, titles, descriptions, tags,
   prompts, rule files, or chat replies. Use a plain hyphen, a comma, or a period.
   This applies to files you write and to what you say.
-- ASCII only, unless the artifact genuinely needs otherwise. Two sanctioned exceptions,
+- ASCII only, unless the artifact genuinely needs otherwise. Three sanctioned exceptions,
   and no others:
   1. The middle dot `·` used as a separator in prompt-file cast lines, matching the
      existing project.
-  2. `research/videos-swipe/*/visual-analysis.md` is written in Vietnamese with
+  2. `outputs/captions/*.srt` are subtitle files in 25 languages, so every script the
+     channel publishes into is expected there. The em dash ban still applies, and
+     `tools/captions-srt.py` enforces it at both the assemble and check stages. The tool
+     itself stays ASCII: it holds the em dash as the escape `\u2014`.
+  3. `research/videos-swipe/*/visual-analysis.md` is written in Vietnamese with
      diacritics, as are the section names that `.agents/skills/video-swipe/SKILL.md`
      quotes to specify them. These are notes the owner reads, not anything an image model
      or a downstream tool parses, and unaccented Vietnamese was ambiguous enough to have

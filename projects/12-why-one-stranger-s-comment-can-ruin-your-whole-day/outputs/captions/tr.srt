@@ -1,0 +1,703 @@
+1
+00:00:00,100 --> 00:00:03,420
+On kişi beğendi. Biri beğenmedi.
+
+2
+00:00:03,500 --> 00:00:07,300
+Bil bakalım hangisini eve götürdün. Dokuzunu zar zor hatırlıyorsun.
+
+3
+00:00:07,380 --> 00:00:11,220
+Birini kelimesi kelimesine aktarabiliyorsun. Buna zaten bir ad koydun bile.
+
+4
+00:00:11,660 --> 00:00:14,180
+Fazla hassas. Fazla ince derili.
+
+5
+00:00:14,540 --> 00:00:18,060
+Ama bu sayım bir karakter kusuru değil. Bir ölçüm.
+
+6
+00:00:18,260 --> 00:00:22,580
+Zihnin, olumsuzluk yanlılığı denen kalıcı bir ağırlıklandırma sistemi çalıştırıyor,
+
+7
+00:00:22,840 --> 00:00:27,190
+ve orada bir düşmanca ses, bir nazik ses kadar ağır basmıyor,
+
+8
+00:00:27,280 --> 00:00:29,600
+ve kur yakın bile değil.
+
+9
+00:00:29,680 --> 00:00:33,320
+Sonunda bu kurun gerçekte ne olduğunu, kimin belirlediğini öğreneceksin,
+
+10
+00:00:33,500 --> 00:00:37,700
+ve bir yabancının akşamını alıp almayacağına karar veren tek soruyu.
+
+11
+00:00:38,760 --> 00:00:43,500
+Etkinin büyüklüğüyle başla, çünkü hissettirmesi gerekenden daha büyük.
+
+12
+00:00:43,580 --> 00:00:49,810
+2001'de Roy Baumeister önderliğindeki bir psikolog ekibi bir istisna aramaya çıktı.
+
+13
+00:00:49,890 --> 00:00:53,360
+Herkesin baktığı her yerden kanıt topladılar.
+
+14
+00:00:53,700 --> 00:00:57,620
+İlk izlenimler. Kazanılan para ve kaybedilen para.
+
+15
+00:00:57,980 --> 00:01:01,800
+İşteki geri bildirimler. İyi günler ve kötü günler.
+
+16
+00:01:02,140 --> 00:01:05,840
+Yeni ebeveynlerin hissettikleri. Çiftlerin ayakta kalması ya da kalmaması.
+
+17
+00:01:06,060 --> 00:01:11,400
+Belli büyüklükteki iyi bir olayın aynı büyüklükteki kötü bir olayı geçtiği tek bir
+
+18
+00:01:11,480 --> 00:01:14,450
+alan arıyorlardı. Bulamadılar.
+
+19
+00:01:14,580 --> 00:01:19,060
+Makalenin adı Bad Is Stronger Than Good, ve bu başlık bir ruh hali değil.
+
+20
+00:01:19,140 --> 00:01:25,120
+Sonucun kendisi. Ölçülen neredeyse her şeyde, kötü bir şey daha sert vuruyor,
+
+21
+00:01:25,200 --> 00:01:30,800
+daha uzun sürüyor ve sonraki adımını, tam aynı büyüklükte iyi bir şeyden daha çok biçimlendiriyor.
+
+22
+00:01:30,880 --> 00:01:33,870
+Ve senin verdiğin bir karar olamayacak kadar hızlı oluyor.
+
+23
+00:01:33,980 --> 00:01:39,900
+1998'de Tiffany Ito ve meslektaşları insanları kafa derilerine elektrot takıp oturttular ve
+
+24
+00:01:39,980 --> 00:01:44,410
+onlara resimler gösterdiler. Hoş olanlar, nötr olanlar, rahatsız edici olanlar,
+
+25
+00:01:44,560 --> 00:01:50,380
+hoş ve rahatsız edici görüntüler eşit yoğunlukta olacak şekilde, sadece ters yönde.
+
+26
+00:01:51,400 --> 00:01:55,970
+Sonra her görüntü geldikçe beynin elektriksel tepkisini izlediler.
+
+27
+00:01:56,170 --> 00:01:58,920
+Olumsuz görüntüler daha büyük bir tepki üretti.
+
+28
+00:01:59,440 --> 00:02:01,660
+Sonrasında daha büyük bir görüş değil.
+
+29
+00:02:01,740 --> 00:02:05,070
+Daha büyük bir elektriksel olay, ilk saniye içinde,
+
+30
+00:02:05,220 --> 00:02:08,300
+kişi bilinçli olarak hiçbir şeyi yargılamadan önce.
+
+31
+00:02:08,880 --> 00:02:13,749
+Makaleleri bunu açıkça yazdı. Olumsuz bilgi beyinde daha ağır basar.
+
+32
+00:02:13,829 --> 00:02:16,740
+Yani sen yorumun adil olup olmadığına karar verirken,
+
+33
+00:02:16,820 --> 00:02:18,820
+ağırlıklandırma çoktan olmuş oluyor.
+
+34
+00:02:18,900 --> 00:02:20,820
+Ona daha fazla yer vermeyi seçmiyorsun.
+
+35
+00:02:20,900 --> 00:02:23,680
+Sana fazladan yeri iliştirilmiş halde uzatılıyor.
+
+36
+00:02:23,840 --> 00:02:26,670
+Geriye bariz soru kalıyor. Ne kadar fazla?
+
+37
+00:02:26,810 --> 00:02:29,740
+En net sayı beklemeyeceğin bir yerden geliyor,
+
+38
+00:02:29,820 --> 00:02:31,800
+yani birbirini seven insanlardan.
+
+39
+00:02:31,880 --> 00:02:36,520
+John Gottman onlarca yıl boyunca çiftleri daireye benzeyen bir laboratuvara getirdi ve
+
+40
+00:02:36,600 --> 00:02:39,520
+tartışmalarını kaydetti. Mutluluk oynamadan.
+
+41
+00:02:39,740 --> 00:02:43,960
+Para, kayınlar ve bulaşık üzerine tartışırken, kameralar açıkken.
+
+42
+00:02:44,560 --> 00:02:48,060
+Sonra kimin birlikte kaldığını görmek için o çiftleri yıllarca takip etti.
+
+43
+00:02:48,350 --> 00:02:51,160
+Ayakta kalan çiftler hiç kavga etmeyenler değildi.
+
+44
+00:02:51,280 --> 00:02:53,220
+Fazlalıkla çalışan çiftlerdi.
+
+45
+00:02:53,560 --> 00:02:58,760
+Çatışmanın tam içinde, istikrarlı çiftler her olumsuz an için yaklaşık beş olumlu
+
+46
+00:02:58,840 --> 00:03:02,940
+an üretiyordu. Bir şaka, bir dokunuş, küçük bir evet,
+
+47
+00:03:03,300 --> 00:03:06,310
+karşıdakinin haklı olduğunu kabul etmek.
+
+48
+00:03:06,390 --> 00:03:11,340
+Ayrılığa giden çiftler bire bire daha yakındı, çoğu zaman altındaydı.
+
+49
+00:03:11,420 --> 00:03:14,970
+Beşe bir. Her iki insanın birbirini seçtiği,
+
+50
+00:03:15,380 --> 00:03:20,640
+birbirini tanıdığı ve çabaladığı bir bağda. Zihninin çalıştığı kur bu.
+
+51
+00:03:21,400 --> 00:03:25,720
+Şimdi bunu öğleden sonrana koy. Bir yabancı bir yorum bıraktı.
+
+52
+00:03:26,049 --> 00:03:30,280
+Bunu dengelemek için, bu kurla, gün bitmeden başına gelmesi gereken beş belirli,
+
+53
+00:03:30,360 --> 00:03:32,920
+kişisel, sıcak şey lazım.
+
+54
+00:03:33,200 --> 00:03:38,430
+Kaç tane oldu? Ve beğenen dokuz kişi sana birer tane uzatmadı.
+
+55
+00:03:38,510 --> 00:03:41,440
+Çoğu sana hiç fark etmediğin bir sessizlik uzattı.
+
+56
+00:03:41,520 --> 00:03:45,210
+Yorumu hâlâ söylendiği ses tonuyla aktarabilmenin sebebi de bu.
+
+57
+00:03:45,420 --> 00:03:48,300
+Nazik olanlar bir kez alındı ve dosyalandı.
+
+58
+00:03:48,380 --> 00:03:51,270
+Diğeri eve giderken tekrar oynatıldı, duşta,
+
+59
+00:03:51,560 --> 00:03:56,380
+gece on birde, ve her tekrar onu biraz daha derine kazıdı.
+
+60
+00:03:56,600 --> 00:03:58,860
+Ona o kadar saati vermeyi sen seçmedin.
+
+61
+00:03:58,940 --> 00:04:01,860
+Sen oy hakkı kazanmadan önce önemli olarak işaretlenmişti.
+
+62
+00:04:02,180 --> 00:04:07,260
+Bunun seni kırılgan yaptığına karar vermeden önce, bu ağırlığın ayarlandığı dünyaya bak,
+
+63
+00:04:07,340 --> 00:04:09,560
+çünkü kimse onu özensizce ayarlamadı.
+
+64
+00:04:09,640 --> 00:04:12,580
+İnsanlık tarihinin neredeyse tamamında küçük bir grupta yaşadın.
+
+65
+00:04:12,850 --> 00:04:17,580
+Otuz kişi, kırk, en dışta yaklaşık yüz elli kişilik bir ağ.
+
+66
+00:04:17,680 --> 00:04:22,760
+Seçtiğin otuz kişi değil. Aralarında doğduğun ve öleceğin otuz kişi,
+
+67
+00:04:22,840 --> 00:04:27,780
+avın boşa çıkınca seni doyuran, hastalanınca seni taşıyan ve ihtiyacın olan her şeyin
+
+68
+00:04:27,860 --> 00:04:32,220
+tek kaynağı olan kişiler. O dünyada düşmanca bir yorum nedir?
+
+69
+00:04:32,300 --> 00:04:35,780
+Bir görüş değil. Konumunun bir okuması.
+
+70
+00:04:35,860 --> 00:04:39,560
+Gruptan biri şimdi senden seni alçaltan bir biçimde söz ediyor,
+
+71
+00:04:39,640 --> 00:04:43,380
+ve o dünyada alçalmak bir duygu değil, bir paydır.
+
+72
+00:04:43,460 --> 00:04:45,790
+Etten. Korumadan.
+
+73
+00:04:46,500 --> 00:04:50,300
+Su çekildiğinde seninle yola çıkmaya razı olan kişiden.
+
+74
+00:04:50,380 --> 00:04:52,880
+Ve bir yorum yerinde durmaz.
+
+75
+00:04:52,960 --> 00:04:57,290
+Christopher Boehm küçük grupların kendi üyelerini denetlemek için kullandığı merdiveni anlattı,
+
+76
+00:04:57,520 --> 00:05:00,420
+ve neredeyse nazikçe başlıyor. Dedikodu.
+
+77
+00:05:00,740 --> 00:05:03,920
+Sonra alay. Sonra insanlar seni dahil etmeyi bırakıyor.
+
+78
+00:05:04,000 --> 00:05:08,040
+Sonra, en tepede, gruptan dışlanma, ki bu kötü bir ay değildi.
+
+79
+00:05:08,420 --> 00:05:12,060
+Yalnız, yaya, o coğrafyada, bu genelde ölümdü.
+
+80
+00:05:12,300 --> 00:05:14,769
+Yani ilk düşmanca ses ilk basamaktı.
+
+81
+00:05:15,000 --> 00:05:20,540
+Ona hemen tepki vermek, eve götürmek, bütün gece evirip çevirmek, aşırı hassaslık değildi.
+
+82
+00:05:20,620 --> 00:05:24,190
+Var olan tek yaşam destek sisteminin bakımıydı.
+
+83
+00:05:24,270 --> 00:05:28,680
+O mekanizmanın içinde yaşayıp onun bir insana ne yaptığını yazan bir
+
+84
+00:05:28,760 --> 00:05:34,920
+antropolog var. 1960'larda Jean Briggs Kanada Kutbu'nda küçük bir Utku Inuit grubuyla on yedi ay
+
+85
+00:05:35,000 --> 00:05:40,680
+geçirdi, bir aileye kız evlat olarak kabul edildi, çadırda yaşadı, dili öğrendi.
+
+86
+00:05:41,380 --> 00:05:44,130
+Utku'ların öfkeyle alışılmadık bir ilişkisi vardı.
+
+87
+00:05:44,210 --> 00:05:49,460
+Onu dışa vurmuyorlardı. Ne yükselen sesle, ne yüzleşmeyle, ne çocuklara,
+
+88
+00:05:49,540 --> 00:05:55,120
+neredeyse hiç. Sonra dışarıdan gelen bazı konuklar bir kano ödünç alıp kötü kullandılar,
+
+89
+00:05:55,360 --> 00:05:58,970
+ve Briggs, grup adına, onlarla sert konuştu.
+
+90
+00:06:00,040 --> 00:06:03,700
+Utku'lar ona bağırmadı. Daha sessiz
+
+91
+00:06:04,400 --> 00:06:07,920
+ve çok daha ağır bir şey yaptılar. Soğudular.
+
+92
+00:06:09,160 --> 00:06:13,279
+Yine besleniyordu. Konuşmak gerektiğinde yine onunla konuşuluyordu.
+
+93
+00:06:13,940 --> 00:06:17,420
+Ama sıcaklık gitmişti ve içine alınma gitmişti,
+
+94
+00:06:18,020 --> 00:06:22,930
+ve yaklaşık üç ay gitmiş kaldı. İşte üzerinde durmaya değer kısım.
+
+95
+00:06:23,840 --> 00:06:27,180
+Briggs Harvard eğitimli bir araştırmacıydı, çıkış için bir uçağı,
+
+96
+00:06:27,620 --> 00:06:32,760
+arkasında bir üniversitesi, yüzlerce insanın onu iyi bildiği koca bir başka dünyası vardı.
+
+97
+00:06:32,840 --> 00:06:34,899
+Dışlanmanın geçici olduğunu biliyordu.
+
+98
+00:06:35,040 --> 00:06:39,380
+Ne olduğunu ve nedenini tam olarak biliyordu, çünkü bunu incelemek onun işiydi.
+
+99
+00:06:39,800 --> 00:06:43,950
+Yine de onu yıktı. Kariyerinin geri kalanında bunu yazdı.
+
+100
+00:06:44,030 --> 00:06:45,940
+Mekanizmanın gücü bu.
+
+101
+00:06:46,280 --> 00:06:51,270
+Bir çıkış olsa bile, bir açıklama olsa bile, bekleyen koca bir başka hayat olsa bile,
+
+102
+00:06:51,400 --> 00:06:56,860
+aralarında yaşadığın bir avuç insanın seni dondurması içindeki her şeyi yeniden düzenler.
+
+103
+00:06:57,320 --> 00:07:01,840
+Atalarının çıkışı, açıklaması ve başka bir hayatı yoktu.
+
+104
+00:07:02,600 --> 00:07:07,740
+Beşe bir ihtiyatlı görünmeye başlıyor. Ve Utku'ların ne yapmadığına dikkat et.
+
+105
+00:07:08,120 --> 00:07:13,140
+Kimse ona hakaret etmedi. Kimse sesini yükseltmedi, uyarı vermedi ya da çiğnediği kuralı
+
+106
+00:07:13,220 --> 00:07:16,800
+açıklamadı. Sinyali tamamen geri çekilen sıcaklık taşıdı,
+
+107
+00:07:16,880 --> 00:07:21,640
+bir grubun yapabileceği en ucuz şey ve bir üyenin alabileceği en pahalı şey.
+
+108
+00:07:21,720 --> 00:07:23,940
+Zihnin hâlâ sürekli bunu tarıyor,
+
+109
+00:07:24,020 --> 00:07:28,640
+bu yüzden sevdiğin birinden gelen kısa bir yanıt koca bir akşamı kaplarken uzun
+
+110
+00:07:28,720 --> 00:07:31,280
+ve sıcak olanı hiç kaplamıyor.
+
+111
+00:07:31,360 --> 00:07:35,220
+Şimdi telefonunu aç. O sistemin her parçası hâlâ çalışıyor,
+
+112
+00:07:35,300 --> 00:07:37,700
+ve onu besleyen şey tamamen değişti.
+
+113
+00:07:38,060 --> 00:07:40,660
+Yorumlardaki ses senin grubunda değil.
+
+114
+00:07:40,740 --> 00:07:43,480
+Seni beslemediler. Seni taşımayacaklar.
+
+115
+00:07:43,560 --> 00:07:49,060
+Seni bir daha hiç görmeyecekler, ve yarın başına gelen hiçbir şey onlara bir şeye mal olmuyor.
+
+116
+00:07:49,140 --> 00:07:53,380
+Alarmının yapıldığı dünyada bu birleşim yoktu.
+
+117
+00:07:53,460 --> 00:07:56,250
+Senin hakkında kötü konuşan kişi, istisnasız,
+
+118
+00:07:56,330 --> 00:07:58,990
+sonucun yanında yaşamak zorunda olan kişiydi.
+
+119
+00:07:59,070 --> 00:08:02,270
+Sözlerinin bilgi olmasının tüm sebebi buydu.
+
+120
+00:08:02,360 --> 00:08:04,060
+Ve ikinci bir değişim var, daha kötüsü,
+
+121
+00:08:04,140 --> 00:08:06,860
+çünkü hangi yorumun sana ulaşacağına o karar veriyor.
+
+122
+00:08:07,220 --> 00:08:13,140
+2017'de William Brady, Jay Van Bavel ve meslektaşları yarım milyondan fazla tweet aldı,
+
+123
+00:08:13,220 --> 00:08:18,180
+silah denetimi, eşcinsel evlilik ve iklim değişikliği üzerine, ve kelimeleri saydılar.
+
+124
+00:08:18,510 --> 00:08:22,500
+Bir mesaja eklenen her ahlaki ya da duygusal kelimenin yayılımını yaklaşık
+
+125
+00:08:22,580 --> 00:08:25,460
+yüzde yirmi artırdığını buldular. Doğruluğunu değil.
+
+126
+00:08:25,550 --> 00:08:28,090
+Temsil gücünü değil. Yayılımını.
+
+127
+00:08:28,540 --> 00:08:30,920
+Bunun senin öğleden sonran için ne demek olduğunu düşün.
+
+128
+00:08:31,000 --> 00:08:34,940
+Sana ulaşan yorum, insanların senin hakkında düşündüklerinin adil bir örneği değildi.
+
+129
+00:08:35,020 --> 00:08:39,859
+Yolculuk etmek için biçimlendirilmiş olandı, ve yolculuk eden en keskin ifadedir.
+
+130
+00:08:39,960 --> 00:08:44,660
+Dokuz nazik görüş bu özelliğe sahip değildi, bu yüzden çoğu hiç kelimeye dönüşmedi.
+
+131
+00:08:44,880 --> 00:08:47,140
+Zihnin sonra o süzülmüş, seçilmiş,
+
+132
+00:08:47,220 --> 00:08:51,240
+kasıtlı olarak keskinleştirilmiş sesi aldı ve sanki grubundan biri ateşin başında
+
+133
+00:08:51,320 --> 00:08:53,900
+konuşuyormuş gibi işledi. Uyumsuzluk bu.
+
+134
+00:08:53,980 --> 00:08:58,480
+Kötü haberi ağır tartman değil. O doğruydu ve soyunu hayatta tuttu.
+
+135
+00:08:58,560 --> 00:09:03,490
+Asıl mesele, bu ağırlığın senin hakkında yanılmanın bedelini ödeyen insanlar için ayarlanmış olması,
+
+136
+00:09:03,570 --> 00:09:06,560
+ve şimdi hiçbir bedel ödemeyen insanlara uygulanması.
+
+137
+00:09:06,640 --> 00:09:10,120
+İşte kayma bu, ve bu bir soru, bir disiplin değil.
+
+138
+00:09:10,200 --> 00:09:14,300
+Birinin söylediği bir şey bu gece hâlâ sendeyse, adil miydi diye sorma.
+
+139
+00:09:14,380 --> 00:09:16,800
+Adalet bir tartışmadır, ve onu kaybedeceksin,
+
+140
+00:09:16,880 --> 00:09:20,120
+çünkü sabahın ikisine kadar iki tarafı da kendin savunacaksın.
+
+141
+00:09:20,220 --> 00:09:22,780
+Bunun yerine, o kişinin yarın seni görmek zorunda olup olmadığını sor.
+
+142
+00:09:22,860 --> 00:09:25,680
+Bütün hamle bu. Daha kalın bir deri değil.
+
+143
+00:09:25,760 --> 00:09:30,140
+Daha iyi yönlendirme. Çünkü soru, tek bir kanala birlikte tıkıştırılmış iki şeyi
+
+144
+00:09:30,220 --> 00:09:34,600
+birbirinden ayırıyor. Bir arkadaş, bir eş, bir iş arkadaşı, kız kardeşin,
+
+145
+00:09:34,680 --> 00:09:38,060
+senin hakkında yanılmanın sonucuyla yaşamak zorunda olan herkes,
+
+146
+00:09:38,260 --> 00:09:43,100
+grubun içindedir, ve onun sert yorumu gerçek bilgidir ve zihninin ona zaten verdiği
+
+147
+00:09:43,180 --> 00:09:46,480
+tam ağırlığı hak eder. Onu adamakıllı dinle.
+
+148
+00:09:46,740 --> 00:09:50,700
+Bunu söylemek onlara pahalıya patlar, ve onu değerli kılan tam da budur.
+
+149
+00:09:50,840 --> 00:09:53,940
+Yabancı ise senden bilgi saklamıyor.
+
+150
+00:09:54,250 --> 00:09:58,080
+Onda hiç bilgi yoktu. Beğenen dokuz kişiyi görmedi.
+
+151
+00:09:58,330 --> 00:10:00,530
+Perşembe günü orada olmayacak.
+
+152
+00:10:00,610 --> 00:10:05,480
+Bunu söylemek için hiçbir bedel ödemedi, ve söylemesi hiçbir şeye mal olmayan bir şey hiçbir yerde
+
+153
+00:10:05,560 --> 00:10:09,320
+konumunun kanıtı olmadı. Sızıyı hissetmeyi bırakmayacaksın.
+
+154
+00:10:09,400 --> 00:10:13,110
+Bu sunulmuyor, ve bunu vaat eden herkes sana bir şey satıyor.
+
+155
+00:10:13,190 --> 00:10:17,840
+Sızı senden önce varır, elektrotlarda, bir saniyeden kısa sürede.
+
+156
+00:10:17,920 --> 00:10:20,670
+Ama sızı alarmdır, hüküm değil,
+
+157
+00:10:20,760 --> 00:10:24,180
+ve kimin hüküm olmasına izin verileceğine sen karar verirsin.
+
+158
+00:10:24,440 --> 00:10:26,920
+On kişi beğendi. Biri beğenmedi.
+
+159
+00:10:27,000 --> 00:10:29,940
+Eve götürdüğün, odadaki en doğru ses değildi.
+
+160
+00:10:30,020 --> 00:10:34,780
+Sadece, her sesin kışın seni doyurmak zorunda olan birine ait olduğu bir dünya için kurulmuş
+
+161
+00:10:34,860 --> 00:10:37,850
+bir sisteme göre en yüksek olandı.
+
+162
+00:10:37,930 --> 00:10:40,940
+Dokuzu senin grubundu ve sessizdiler,
+
+163
+00:10:42,000 --> 00:10:47,340
+çünkü sevilmek hiç ses çıkarmadı. O sessizlik yokluk değil.
+
+164
+00:10:48,100 --> 00:10:52,360
+O, yarın seni görmek zorunda olan ve bundan rahatsız olmayan dokuz kişi.
+
+165
+00:10:53,580 --> 00:10:57,350
+Şimdi yanında götüreceğin bir soru var, ve retorik değil.
+
+166
+00:10:57,760 --> 00:11:02,400
+Hâlâ kelimesi kelimesine aktarabildiğin o cümle, söylendiği ses tonuyla.
+
+167
+00:11:02,480 --> 00:11:05,950
+Gerçekten söylendiğinden beri kaç kez tekrar oynattın, altı kez,
+
+168
+00:11:06,260 --> 00:11:08,700
+yirmi, itiraf edeceğinden fazla mı?
+
+169
+00:11:09,420 --> 00:11:11,660
+Çünkü bunların hiçbiri senin onu yeniden dinlemen değildi.
+
+170
+00:11:11,740 --> 00:11:15,460
+Her biri senin onu yeniden yazmandı, biraz daha keskin, biraz daha soğuk,
+
+171
+00:11:15,540 --> 00:11:19,940
+kendi sağladığın bir sesle. Burada kimse bir şey uydurmuyor ve kesinlikle bir şey
+
+172
+00:11:20,020 --> 00:11:24,180
+söylendi. Ama bu gece seni yakan sürüm, onların elinden çok senin elinden geçti,
+
+173
+00:11:24,260 --> 00:11:27,600
+ve bunun bir hatıraya ne yaptığı hakkında koca bir video var.
+
+174
+00:11:27,680 --> 00:11:30,160
+Şu anda ekranında.
+
+175
+00:11:30,240 --> 00:11:32,460
+Neden hiç yaşanmamış şeyleri hatırlıyorsun.
+
+176
+00:11:32,540 --> 00:11:33,760
+Sıradaki olarak onu izle.

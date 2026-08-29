@@ -1,6 +1,6 @@
 ---
 name: captions
-description: Translate a finished transcript into SRT subtitle files for English, Vietnamese, Spanish, Japanese, Dutch, Hindi, Chinese, and Korean. Saves one .srt file per language to outputs/captions/. Use when the user asks for captions, subtitles, subtitle files, or to translate the transcript into another language.
+description: Build word-accurate SRT subtitle files for a TossExplains video from the forced-aligned words.json, then translate them into up to 25 languages. Writes one .srt per language to outputs/captions/. Runs after /transcript. Use when the user says "captions", "subtitles", "srt", "translate the transcript", or names a language to subtitle into.
 ---
 
 # Captions (Claude wrapper)

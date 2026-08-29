@@ -41,6 +41,7 @@ Each pipeline skill validates its inputs, writes its artifact, and names the nex
              prompts/image-prompts.md only for V1   (needs transcript + cast)
 /metadata    outputs/metadata.md
 /thumbnail   prompts/thumbnail-prompts.md           (needs cast)
+/captions    outputs/captions/*.srt                 (needs transcript, 25 languages)
 /check       validation report, runnable any time
 ```
 
@@ -66,7 +67,8 @@ Channel-side read/write lives outside the content pipeline too:
 
 After `/script` the branches run in parallel: `/transcript`, `/cast`, and `/metadata`
 depend only on the script. `/scenes` needs transcript plus cast. `/thumbnail` needs the
-script plus cast, not the transcript.
+script plus cast, not the transcript. `/captions` needs `/transcript` and nothing else,
+because it is built on the word-level `transcribes/words.json`, not on the script.
 
 ## Skill routing
 
@@ -79,6 +81,7 @@ When the user's request matches a skill, invoke that skill instead of answering 
 - Image prompts, scene prompts, "prompts for every timestamp" -> `/scenes`
 - Title, description, tags, SEO -> `/metadata`
 - Thumbnail concepts -> `/thumbnail`
+- Captions, subtitles, SRT files, "translate the transcript" -> `/captions`
 - "Is this project correct", validate, "what is missing" -> `/check`
 - Manage scene image timestamps, renaming, moves, or verification -> `/scene-polish`
 - Analyze a competitor video, extract its frames, "phan tich video" -> `/video-swipe`
@@ -113,6 +116,16 @@ It shares `tools/mp3frames.py` with `audio-to-timestamps.py`, which needs the sa
 durations to offset per-part word timings.
 No ffmpeg required for any of the audio tools. The `transcript` skill drives all of them.
 API keys live in a gitignored `.env`.
+
+`tools/captions-srt.py` serves the `captions` skill and reads the same
+`transcribes/words.json` that `audio-to-timestamps.py` saves, so subtitles land on each
+word's true onset instead of the whole second `[M:SS]` rounds it to. It runs in three
+stages: `build` cuts `en.srt` plus a `blocks.json` timing spine from the word timings and
+refuses a `words.json` that does not match the transcript; `assemble` pours one language's
+translation into that spine, so every file is frame-identical by construction; `check`
+diffs all 25 files against `en.srt` block by block and scans for empty blocks, repeats,
+overlaps, em dashes, and untranslated Latin runs inside non-Latin scripts. It shares
+`tools/tsfmt.py` with the audio tools for the sentence-boundary test. No dependencies.
 
 `tools/video-frames.py` and `tools/youtube-verify.py` serve the `video-swipe` research
 skill and are the only tools here that do need ffmpeg. `video-frames.py` runs in three

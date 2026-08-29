@@ -198,10 +198,13 @@ grep -n "$(printf '\u2014')" "$F" && echo "FAIL: em dash" || echo "clean"
 # "no mitten hands", so a bare `grep -c mitten` counts the fix as the fault.
 grep -oiE '(no|never|not) +mittens?|mittens?' "$F" | grep -civE '^(no|never|not) '
 
-# every garment colour distinct, and nothing off palette or muted
+# every garment colour distinct, and nothing off palette or muted.
+# Sheets are delimited by the BOLD FILE-NAME LABEL that `file-formats.md` specifies,
+# never by a `## NAME.jpeg` heading, so the range is taken between bold labels.
 for t in $(grep -oE '^\| @[A-Z]+' "$F" | tr -d '| @'); do
-  printf '%-10s %s\n' "@$t" "$(sed -n "/^## $t.jpeg/,/^## [A-Z]*.jpeg/p" "$F" \
-    | grep -oE '(hoodie|shirt|parka|tunic|robe|vest|wrap|coat|dress|jacket|singlet|casing ring|shell)[^,]*\(#[0-9A-F]{6}\)' \
+  printf '%-10s %s\n' "@$t" "$(awk -v n="**$t.jpeg**" 'index($0,n){f=1} f' "$F" \
+    | awk 'NR>1 && /^\*\*[A-Z]+\.jpeg\*\*/{exit} {print}' \
+    | grep -oiE '(hoodie|shirt|parka|tunic|robe|vest|wrap|coat|dress|jacket|singlet|jumper|top|bubble body|casing ring|shell|envelope body)[^,]*\(#[0-9A-F]{6}\)' \
     | head -1)"
 done
 grep -oE '#[0-9A-F]{6}' "$F" | sort -u           # cross-check against the palette

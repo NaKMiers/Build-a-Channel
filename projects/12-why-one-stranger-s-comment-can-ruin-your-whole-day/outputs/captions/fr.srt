@@ -1,0 +1,703 @@
+1
+00:00:00,100 --> 00:00:03,420
+Dix personnes ont aimé. Une non.
+
+2
+00:00:03,500 --> 00:00:07,300
+Devine laquelle tu as ramenée chez toi. Les neuf dont tu te souviens à peine.
+
+3
+00:00:07,380 --> 00:00:11,220
+Celle que tu peux citer mot pour mot. Tu as déjà un nom pour ça.
+
+4
+00:00:11,660 --> 00:00:14,180
+Trop sensible. Trop à fleur de peau.
+
+5
+00:00:14,540 --> 00:00:18,060
+Mais ce décompte n'est pas un défaut de caractère. C'est une mesure.
+
+6
+00:00:18,260 --> 00:00:22,580
+Ton esprit fait tourner un système de pondération permanent appelé biais de négativité,
+
+7
+00:00:22,840 --> 00:00:27,190
+et dedans une voix hostile ne pèse pas autant qu'une voix bienveillante,
+
+8
+00:00:27,280 --> 00:00:29,600
+et le taux de change n'est même pas proche.
+
+9
+00:00:29,680 --> 00:00:33,320
+À la fin tu sauras ce qu'est vraiment ce taux, qui l'a fixé,
+
+10
+00:00:33,500 --> 00:00:37,700
+et la seule question qui décide si un inconnu prend ta soirée ou non.
+
+11
+00:00:38,760 --> 00:00:43,500
+Commence par la taille de l'effet, parce qu'elle est plus grande qu'elle ne devrait sembler.
+
+12
+00:00:43,580 --> 00:00:49,810
+En 2001 une équipe de psychologues menée par Roy Baumeister est partie chercher une exception.
+
+13
+00:00:49,890 --> 00:00:53,360
+Ils ont rassemblé des preuves partout où quelqu'un avait cherché.
+
+14
+00:00:53,700 --> 00:00:57,620
+Premières impressions. Argent gagné et argent perdu.
+
+15
+00:00:57,980 --> 00:01:01,800
+Retours au travail. Bonnes journées et mauvaises journées.
+
+16
+00:01:02,140 --> 00:01:05,840
+Ce que ressentent les jeunes parents. Comment les couples survivent ou pas.
+
+17
+00:01:06,060 --> 00:01:11,400
+Ils cherchaient un seul domaine où un bon événement d'une certaine taille l'emportait sur un mauvais
+
+18
+00:01:11,480 --> 00:01:14,450
+de même taille. Ils n'en ont trouvé aucun.
+
+19
+00:01:14,580 --> 00:01:19,060
+L'article s'appelle Bad Is Stronger Than Good, et ce titre n'est pas une humeur.
+
+20
+00:01:19,140 --> 00:01:25,120
+C'est le résultat. Sur presque tout, une mauvaise chose d'une taille donnée frappe plus fort,
+
+21
+00:01:25,200 --> 00:01:30,800
+dure plus longtemps, et façonne la suite plus qu'une bonne chose exactement de même taille.
+
+22
+00:01:30,880 --> 00:01:33,870
+Et ça arrive bien trop vite pour être une décision que tu prends.
+
+23
+00:01:33,980 --> 00:01:39,900
+En 1998 Tiffany Ito et ses collègues ont assis des gens avec des électrodes sur le crâne et
+
+24
+00:01:39,980 --> 00:01:44,410
+leur ont montré des images. Agréables, neutres, désagréables,
+
+25
+00:01:44,560 --> 00:01:50,380
+calibrées pour que les agréables et les désagréables soient aussi intenses, en sens inverse.
+
+26
+00:01:51,400 --> 00:01:55,970
+Puis ils ont observé la réponse électrique du cerveau à l'arrivée de chaque image.
+
+27
+00:01:56,170 --> 00:01:58,920
+Les images négatives ont produit une réponse plus forte.
+
+28
+00:01:59,440 --> 00:02:01,660
+Pas un avis plus fort ensuite.
+
+29
+00:02:01,740 --> 00:02:05,070
+Un événement électrique plus fort, dans la première seconde,
+
+30
+00:02:05,220 --> 00:02:08,300
+avant que la personne ait consciemment jugé quoi que ce soit.
+
+31
+00:02:08,880 --> 00:02:13,749
+Leur article le dit clairement. L'information négative pèse plus lourd sur le cerveau.
+
+32
+00:02:13,829 --> 00:02:16,740
+Donc au moment où tu décides si le commentaire était juste,
+
+33
+00:02:16,820 --> 00:02:18,820
+la pondération a déjà eu lieu.
+
+34
+00:02:18,900 --> 00:02:20,820
+Tu ne choisis pas de lui donner plus de place.
+
+35
+00:02:20,900 --> 00:02:23,680
+On te le tend avec la place supplémentaire déjà attachée.
+
+36
+00:02:23,840 --> 00:02:26,670
+Reste la question évidente. Combien de plus ?
+
+37
+00:02:26,810 --> 00:02:29,740
+Le chiffre le plus net vient d'un endroit inattendu,
+
+38
+00:02:29,820 --> 00:02:31,800
+c'est-à-dire des gens qui s'aiment.
+
+39
+00:02:31,880 --> 00:02:36,520
+Pendant des décennies John Gottman a fait venir des couples dans un labo conçu comme un appartement et a filmé
+
+40
+00:02:36,600 --> 00:02:39,520
+leurs disputes. Sans jouer le bonheur.
+
+41
+00:02:39,740 --> 00:02:43,960
+Des disputes, sur l'argent et la belle-famille et la vaisselle, caméras allumées.
+
+42
+00:02:44,560 --> 00:02:48,060
+Puis il a suivi ces couples pendant des années pour voir qui restait ensemble.
+
+43
+00:02:48,350 --> 00:02:51,160
+Les couples qui ont duré n'étaient pas ceux qui ne se disputaient jamais.
+
+44
+00:02:51,280 --> 00:02:53,220
+C'étaient les couples en excédent.
+
+45
+00:02:53,560 --> 00:02:58,760
+Pendant le conflit lui-même, les couples stables produisaient environ cinq moments positifs pour chaque
+
+46
+00:02:58,840 --> 00:03:02,940
+négatif. Une blague, un contact, un petit oui,
+
+47
+00:03:03,300 --> 00:03:06,310
+une reconnaissance que l'autre avait raison.
+
+48
+00:03:06,390 --> 00:03:11,340
+Les couples qui allaient vers la séparation étaient plus proches de un pour un, et souvent en dessous.
+
+49
+00:03:11,420 --> 00:03:14,970
+Cinq pour un. Dans un lien où les deux se sont choisis,
+
+50
+00:03:15,380 --> 00:03:20,640
+se connaissent, et font des efforts. C'est le taux de change avec lequel ton esprit travaille.
+
+51
+00:03:21,400 --> 00:03:25,720
+Mets ça à côté de ton après-midi. Un inconnu a laissé un commentaire.
+
+52
+00:03:26,049 --> 00:03:30,280
+Pour équilibrer, à ce taux, il te faudrait cinq choses précises, personnelles
+
+53
+00:03:30,360 --> 00:03:32,920
+et chaleureuses avant la fin de la journée.
+
+54
+00:03:33,200 --> 00:03:38,430
+Tu en as eu combien ? Et les neuf personnes qui ont aimé ne t'en ont pas tendu une chacune.
+
+55
+00:03:38,510 --> 00:03:41,440
+La plupart t'ont tendu un silence que tu n'as jamais remarqué.
+
+56
+00:03:41,520 --> 00:03:45,210
+C'est aussi pour ça que tu peux encore citer le commentaire avec la voix qui l'a dit.
+
+57
+00:03:45,420 --> 00:03:48,300
+Les gentils ont été reçus une fois puis classés.
+
+58
+00:03:48,380 --> 00:03:51,270
+L'autre a été rejoué sur le trajet du retour, sous la douche,
+
+59
+00:03:51,560 --> 00:03:56,380
+à onze heures du soir, et chaque rediffusion l'a gravé un peu plus profond.
+
+60
+00:03:56,600 --> 00:03:58,860
+Tu n'as pas choisi de lui donner autant d'heures.
+
+61
+00:03:58,940 --> 00:04:01,860
+Il était déjà marqué important avant que tu aies voix au chapitre.
+
+62
+00:04:02,180 --> 00:04:07,260
+Avant de décider que ça te rend fragile, regarde le monde où cette pondération a été réglée,
+
+63
+00:04:07,340 --> 00:04:09,560
+parce que personne ne l'a réglée à la légère.
+
+64
+00:04:09,640 --> 00:04:12,580
+Pendant presque toute l'histoire humaine tu as vécu dans une bande.
+
+65
+00:04:12,850 --> 00:04:17,580
+Trente personnes, quarante, tout au plus un réseau d'environ cent cinquante.
+
+66
+00:04:17,680 --> 00:04:22,760
+Pas trente personnes choisies. Trente parmi lesquelles tu es né et mourrais,
+
+67
+00:04:22,840 --> 00:04:27,780
+qui te nourrissaient quand ta chasse échouait et te portaient quand tu étais malade et étaient toute la réserve
+
+68
+00:04:27,860 --> 00:04:32,220
+de tout ce dont tu avais besoin. Dans ce monde, qu'est-ce qu'un commentaire hostile ?
+
+69
+00:04:32,300 --> 00:04:35,780
+Ce n'est pas un avis. C'est une lecture de ton rang.
+
+70
+00:04:35,860 --> 00:04:39,560
+Quelqu'un du groupe parle de toi d'une façon qui te rabaisse,
+
+71
+00:04:39,640 --> 00:04:43,380
+et être rabaissé dans ce monde n'est pas un sentiment, c'est une part.
+
+72
+00:04:43,460 --> 00:04:45,790
+De viande. De protection.
+
+73
+00:04:46,500 --> 00:04:50,300
+De qui accepte de voyager avec toi quand l'eau se tarit.
+
+74
+00:04:50,380 --> 00:04:52,880
+Et un commentaire ne reste pas immobile.
+
+75
+00:04:52,960 --> 00:04:57,290
+Christopher Boehm a décrit l'échelle que les petits groupes utilisent pour contrôler leurs membres,
+
+76
+00:04:57,520 --> 00:05:00,420
+et elle commence presque doucement. La rumeur.
+
+77
+00:05:00,740 --> 00:05:03,920
+Puis la moquerie. Puis on cesse de t'inclure.
+
+78
+00:05:04,000 --> 00:05:08,040
+Puis, tout en haut, l'exclusion de la bande, et ce n'était pas un mauvais mois.
+
+79
+00:05:08,420 --> 00:05:12,060
+Seul, à pied, dans ce paysage, c'était souvent la mort.
+
+80
+00:05:12,300 --> 00:05:14,769
+Donc la première voix hostile était le premier barreau.
+
+81
+00:05:15,000 --> 00:05:20,540
+Y réagir tout de suite, la ramener chez soi, la retourner toute la nuit, ce n'était pas de l'hypersensibilité.
+
+82
+00:05:20,620 --> 00:05:24,190
+C'était l'entretien du seul système de survie qui existait.
+
+83
+00:05:24,270 --> 00:05:28,680
+Il y a une anthropologue qui a vécu dans cette machinerie et a noté ce qu'elle fait à une
+
+84
+00:05:28,760 --> 00:05:34,920
+personne. Dans les années 1960 Jean Briggs a passé dix-sept mois avec un petit groupe d'Inuit Utku dans
+
+85
+00:05:35,000 --> 00:05:40,680
+l'Arctique canadien, adoptée par une famille comme fille, vivant sous la tente, apprenant la langue.
+
+86
+00:05:41,380 --> 00:05:44,130
+Les Utku avaient un rapport inhabituel à la colère.
+
+87
+00:05:44,210 --> 00:05:49,460
+Ils ne l'exprimaient pas. Ni en haussant la voix, ni en confrontation, ni envers les enfants,
+
+88
+00:05:49,540 --> 00:05:55,120
+presque jamais. Puis des visiteurs de passage ont emprunté un canoë et l'ont mal traité,
+
+89
+00:05:55,360 --> 00:05:58,970
+et Briggs, au nom du groupe, leur a parlé sèchement.
+
+90
+00:06:00,040 --> 00:06:03,700
+Les Utku ne lui ont pas crié dessus. Ils ont fait quelque chose de plus silencieux
+
+91
+00:06:04,400 --> 00:06:07,920
+et de bien plus lourd. Ils sont devenus froids.
+
+92
+00:06:09,160 --> 00:06:13,279
+Elle était toujours nourrie. On lui parlait encore quand il fallait parler.
+
+93
+00:06:13,940 --> 00:06:17,420
+Mais la chaleur avait disparu et l'inclusion avait disparu,
+
+94
+00:06:18,020 --> 00:06:22,930
+et c'est resté ainsi environ trois mois. Voici la partie qui mérite qu'on s'y arrête.
+
+95
+00:06:23,840 --> 00:06:27,180
+Briggs était une chercheuse formée à Harvard avec un avion pour partir,
+
+96
+00:06:27,620 --> 00:06:32,760
+une université derrière elle, tout un autre monde où des centaines de gens l'estimaient.
+
+97
+00:06:32,840 --> 00:06:34,899
+Elle savait que l'ostracisme était temporaire.
+
+98
+00:06:35,040 --> 00:06:39,380
+Elle savait exactement ce qui se passait et pourquoi, puisque l'étudier était son métier.
+
+99
+00:06:39,800 --> 00:06:43,950
+Ça l'a dévastée quand même. Elle en a écrit le reste de sa carrière.
+
+100
+00:06:44,030 --> 00:06:45,940
+Voilà la puissance de cette machinerie.
+
+101
+00:06:46,280 --> 00:06:51,270
+Même avec une sortie, même avec une explication, même avec toute une autre vie qui attend,
+
+102
+00:06:51,400 --> 00:06:56,860
+être mis au froid par une poignée de gens avec qui tu vis réorganise tout en toi.
+
+103
+00:06:57,320 --> 00:07:01,840
+Tes ancêtres n'avaient ni sortie, ni explication, ni autre vie.
+
+104
+00:07:02,600 --> 00:07:07,740
+Cinq pour un commence à paraître prudent. Et remarque ce que les Utku ne faisaient pas.
+
+105
+00:07:08,120 --> 00:07:13,140
+Personne ne l'a insultée. Personne n'a haussé la voix ni lancé d'avertissement ni expliqué la règle qu'elle avait
+
+106
+00:07:13,220 --> 00:07:16,800
+brisée. Le signal était porté entièrement par le retrait de la chaleur,
+
+107
+00:07:16,880 --> 00:07:21,640
+ce qui est la chose la moins chère qu'un groupe puisse faire et la plus chère qu'un membre puisse recevoir.
+
+108
+00:07:21,720 --> 00:07:23,940
+Ton esprit la cherche encore en permanence,
+
+109
+00:07:24,020 --> 00:07:28,640
+c'est pourquoi une réponse courte de quelqu'un que tu aimes peut occuper toute une soirée alors qu'une longue
+
+110
+00:07:28,720 --> 00:07:31,280
+et chaleureuse n'en occupe rien.
+
+111
+00:07:31,360 --> 00:07:35,220
+Ouvre ton téléphone. Chaque partie de ce système tourne encore,
+
+112
+00:07:35,300 --> 00:07:37,700
+et ce qui l'alimente a complètement changé.
+
+113
+00:07:38,060 --> 00:07:40,660
+La voix dans les commentaires n'est pas dans ta bande.
+
+114
+00:07:40,740 --> 00:07:43,480
+Ils ne t'ont pas nourri. Ils ne te porteront pas.
+
+115
+00:07:43,560 --> 00:07:49,060
+Ils ne te reverront jamais, et rien de ce qui t'arrive demain ne leur coûte quoi que ce soit.
+
+116
+00:07:49,140 --> 00:07:53,380
+Dans le monde pour lequel ton alarme a été construite, cette combinaison n'existait pas.
+
+117
+00:07:53,460 --> 00:07:56,250
+Une personne qui parlait mal de toi était, sans exception,
+
+118
+00:07:56,330 --> 00:07:58,990
+une personne qui devait vivre à côté du résultat.
+
+119
+00:07:59,070 --> 00:08:02,270
+C'était toute la raison pour laquelle ses mots étaient une information.
+
+120
+00:08:02,360 --> 00:08:04,060
+Et il y a un second changement, pire encore,
+
+121
+00:08:04,140 --> 00:08:06,860
+parce qu'il décide quel commentaire t'atteint.
+
+122
+00:08:07,220 --> 00:08:13,140
+En 2017 William Brady, Jay Van Bavel et leurs collègues ont pris plus d'un demi-million de tweets
+
+123
+00:08:13,220 --> 00:08:18,180
+sur le contrôle des armes, le mariage homosexuel et le climat, et ont compté les mots.
+
+124
+00:08:18,510 --> 00:08:22,500
+Ils ont trouvé que chaque mot moral ou émotionnel ajouté à un message augmentait sa diffusion d'environ
+
+125
+00:08:22,580 --> 00:08:25,460
+vingt pour cent. Pas sa vérité.
+
+126
+00:08:25,550 --> 00:08:28,090
+Pas sa représentativité. Sa diffusion.
+
+127
+00:08:28,540 --> 00:08:30,920
+Pense à ce que ça signifie pour ton après-midi.
+
+128
+00:08:31,000 --> 00:08:34,940
+Le commentaire qui t'est parvenu n'était pas un échantillon juste de ce que les gens pensent de toi.
+
+129
+00:08:35,020 --> 00:08:39,859
+C'était celui façonné pour voyager, et ce qui voyage est la formulation la plus tranchante disponible.
+
+130
+00:08:39,960 --> 00:08:44,660
+Les neuf avis bienveillants n'avaient pas cette propriété, donc la plupart ne sont jamais devenus des mots.
+
+131
+00:08:44,880 --> 00:08:47,140
+Ton esprit a ensuite pris cette voix filtrée, sélectionnée,
+
+132
+00:08:47,220 --> 00:08:51,240
+délibérément affûtée et l'a traitée comme si c'était un membre de ta bande parlant
+
+133
+00:08:51,320 --> 00:08:53,900
+au coin du feu. Voilà le décalage.
+
+134
+00:08:53,980 --> 00:08:58,480
+Pas que tu pondères lourdement les mauvaises nouvelles. C'était juste et ça a gardé ta lignée en vie.
+
+135
+00:08:58,560 --> 00:09:03,490
+C'est que cette pondération a été calibrée pour des gens qui payaient le prix de se tromper sur toi,
+
+136
+00:09:03,570 --> 00:09:06,560
+et elle s'applique maintenant à des gens qui ne paient aucun prix.
+
+137
+00:09:06,640 --> 00:09:10,120
+Voici donc le basculement, et c'est une question, pas une discipline.
+
+138
+00:09:10,200 --> 00:09:14,300
+Quand ce que quelqu'un a dit est encore avec toi ce soir, ne demande pas si c'était juste.
+
+139
+00:09:14,380 --> 00:09:16,800
+La justesse est un débat, et tu vas le perdre,
+
+140
+00:09:16,880 --> 00:09:20,120
+parce que tu défendras les deux camps tout seul jusqu'à deux heures du matin.
+
+141
+00:09:20,220 --> 00:09:22,780
+Demande plutôt si cette personne doit te revoir demain.
+
+142
+00:09:22,860 --> 00:09:25,680
+C'est tout le mouvement. Pas une peau plus épaisse.
+
+143
+00:09:25,760 --> 00:09:30,140
+Un meilleur aiguillage. Parce que la question sépare les deux choses qu'on a entassées dans
+
+144
+00:09:30,220 --> 00:09:34,600
+un seul canal. Un ami, un partenaire, un collègue, ta sœur,
+
+145
+00:09:34,680 --> 00:09:38,060
+quiconque doit vivre avec le résultat de s'être trompé sur toi,
+
+146
+00:09:38,260 --> 00:09:43,100
+est dans la bande, et son commentaire hostile est une vraie information et mérite tout le poids
+
+147
+00:09:43,180 --> 00:09:46,480
+que ton esprit lui donne déjà. Celui-là, écoute-le vraiment.
+
+148
+00:09:46,740 --> 00:09:50,700
+Le dire leur coûte cher, et c'est exactement ce qui lui donne de la valeur.
+
+149
+00:09:50,840 --> 00:09:53,940
+Et l'inconnu ne te cache aucune information.
+
+150
+00:09:54,250 --> 00:09:58,080
+Il n'en a jamais eu. Il n'a pas vu les neuf personnes qui ont aimé.
+
+151
+00:09:58,330 --> 00:10:00,530
+Il ne sera pas là jeudi.
+
+152
+00:10:00,610 --> 00:10:05,480
+Il n'a rien payé pour le dire, et une chose qui ne coûte rien à dire n'a jamais été une preuve sur ton
+
+153
+00:10:05,560 --> 00:10:09,320
+rang où que ce soit. Tu ne vas pas cesser de sentir la piqûre.
+
+154
+00:10:09,400 --> 00:10:13,110
+Ce n'est pas au menu, et quiconque te le promet te vend quelque chose.
+
+155
+00:10:13,190 --> 00:10:17,840
+La piqûre arrive avant toi, sur des électrodes, en moins d'une seconde.
+
+156
+00:10:17,920 --> 00:10:20,670
+Mais la piqûre est l'alarme, pas le verdict,
+
+157
+00:10:20,760 --> 00:10:24,180
+et c'est toi qui décides qui a le droit d'être le verdict.
+
+158
+00:10:24,440 --> 00:10:26,920
+Dix personnes ont aimé. Une non.
+
+159
+00:10:27,000 --> 00:10:29,940
+Celle que tu as ramenée n'était pas la voix la plus vraie de la pièce.
+
+160
+00:10:30,020 --> 00:10:34,780
+C'était simplement la plus forte pour un système bâti pour un monde où chaque voix appartenait à
+
+161
+00:10:34,860 --> 00:10:37,850
+quelqu'un qui devait te nourrir en hiver.
+
+162
+00:10:37,930 --> 00:10:40,940
+Les neuf étaient ta bande et ils étaient silencieux,
+
+163
+00:10:42,000 --> 00:10:47,340
+parce qu'être apprécié n'a jamais fait de bruit. Ce silence n'est pas une absence.
+
+164
+00:10:48,100 --> 00:10:52,360
+C'est neuf personnes qui doivent te revoir demain, et que ça ne dérange pas.
+
+165
+00:10:53,580 --> 00:10:57,350
+Voici une question à emporter, et elle n'est pas rhétorique.
+
+166
+00:10:57,760 --> 00:11:02,400
+Cette phrase que tu peux encore citer mot pour mot, avec la voix qui l'a dite.
+
+167
+00:11:02,480 --> 00:11:05,950
+Combien de fois l'as-tu rejouée depuis qu'elle a vraiment été dite, six fois,
+
+168
+00:11:06,260 --> 00:11:08,700
+vingt, plus que tu ne l'admettrais ?
+
+169
+00:11:09,420 --> 00:11:11,660
+Parce que pas une seule n'était toi en train de l'écouter à nouveau.
+
+170
+00:11:11,740 --> 00:11:15,460
+Chacune était toi en train de la réécrire, un peu plus tranchante, un peu plus froide,
+
+171
+00:11:15,540 --> 00:11:19,940
+avec une voix que tu fournissais toi-même. Personne n'invente rien ici et quelque chose a bien été
+
+172
+00:11:20,020 --> 00:11:24,180
+dit. Mais la version qui te brûle ce soir est passée par tes mains bien plus que par les siennes,
+
+173
+00:11:24,260 --> 00:11:27,600
+et il y a toute une vidéo sur ce que ça fait à un souvenir.
+
+174
+00:11:27,680 --> 00:11:30,160
+Elle est sur ton écran en ce moment.
+
+175
+00:11:30,240 --> 00:11:32,460
+Pourquoi tu te souviens de choses qui ne sont jamais arrivées.
+
+176
+00:11:32,540 --> 00:11:33,760
+Regarde celle-là ensuite.

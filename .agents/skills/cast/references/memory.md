@@ -520,6 +520,189 @@ Line 25 is the insulting-the-meat scene again, a different script reaching the s
 form, fur, hide pattern, head, horns, legs, hooves, tail, face, eyes, blood, red marks, meat, bone
 and carcass. This is now a settled channel solution, not a per-video judgement call.
 
+## Project 12 (2026-08-29), one stranger's comment - a 6-entry cast and a speech bubble with a face
+
+`@YOU` (Toss, short-sleeve round-neck t-shirt in orange `#F5820D`, bare forearms, no hood),
+`@COMMENT` (personified object, a speech bubble, red `#D94040`), `@NINE` (group of five, olive
+`#8FA35A` knitted jumpers), `@STRANGER` (lavender `#B79AD9` zip-front top, bowl-cut fringe),
+`@BRIGGS` (Jean Briggs, sky blue `#6EB5E8` fieldwork parka, round glasses, blunt-fringed bob),
+`@UTKU` (group of five, brown `#8B5E3C` hide parkas with tan `#C4965A` hem and cuff trim).
+Chapter palette Coral `#D96F5F`, Dusty teal `#67A6A3`, Tan `#C4965A`. Six entries, at the cap.
+Nothing carried over.
+
+### The first real named person the channel has drawn from a documented likeness
+
+Project 11 cast Bartlett and gave him a receding hairline and a bow tie, but this is the first
+run where the likeness rule was applied deliberately and written down as an identity lock rather
+than as costume. Three features carry Jean Briggs at doodle scale: round glasses as two thin
+circles joined by a bridge stroke, a short blunt-fringed bob, and the 1960s Arctic fieldwork
+parka with the hood DOWN. The hood-down instruction is load-bearing, because a hood up erases
+both of the other two features at once, so it is stated in the garment block, repeated in
+CONSISTENCY, and negated as `no hood pulled up over the head, no hood covering the hair or the
+glasses`. **A likeness carried by the head is only as safe as the instruction keeping headgear
+off it.**
+
+### A speech bubble is the most text-prone design the channel has ever specified
+
+Worse than project 3's gauge and project 8's phone case, because a speech bubble does not merely
+invite text, it exists to hold it. The `ABSOLUTELY NO TEXT` block for `@COMMENT` enumerates the
+temptations individually rather than relying on the standard block: letters, words, quotation
+marks, apostrophe, full stop, comma, question mark, exclamation mark, ellipsis, dashes,
+asterisks, scribbled wavy lines standing in for handwriting, ruled lines, lorem ipsum, emoji,
+smiley icon, thumbs up or down, heart, star, rating marks, notification badge, red dot with a
+number, counter, timestamp, username, avatar circle. Flag this sheet first when checking the
+generated set.
+
+Two more decisions kept it a character rather than a monster: the face is the channel's ordinary
+face (solid black oval eyes, thick brows, one curved mouth) on a flat red field, and the NEGATIVE
+kills the obvious escalations, `no monster, no fangs, no horns, no knife, no blade, no weapon, no
+flame, no lightning bolt`. The video's argument is that this is an ordinary sentence carrying
+more weight than its size, so a menacing design would contradict the script.
+
+### The hollow counterpart trick, for a group whose defining feature is silence
+
+`@NINE`'s prop is an EMPTY white speech bubble with no face, which is the exact hollow twin of
+`@COMMENT`'s filled red bubble with a face. The script's line is that being liked has never made
+a sound, and a prop that is visibly the same object minus its contents says that in one shape.
+The risk is the two reading as the same asset, so the difference is stated on both sheets as a
+rule: red plus a face versus white plus no face, never one without the other.
+
+### Cast the sentence, not the phone, and cast both halves of a count
+
+Two prior rules did the work here. Project 8: when two objects form a cause-and-effect pair, cast
+the one the narration keeps returning to. The phone causes the sting but the script returns to
+the sentence, quoting it in the hook and rewriting it in the tease, so the phone became `@YOU`'s
+PROP. Project 10: when the central claim is A versus B, both are cast, which is why `@NINE` and
+`@STRANGER` are separate entries rather than one modern group.
+
+### A group sheet may define fewer figures than the script counts
+
+The script's number is nine and nine figures per panel do not read at doodle scale. The sheet
+defines FIVE identical figures as the identity unit and says explicitly that the scene prompt
+sets the count, with every added figure identical to these. Project 10 cut a group from six to
+five for readability; this extends that to a case where the count is semantically load-bearing.
+The fourth group panel then uses a sixth identical figure walking out of frame, so the ten-versus-
+nine idea is on the sheet without ever drawing ten.
+
+### Colour cascade, argument-first again, and the one collision it left
+
+`@COMMENT` red and `@NINE` olive were assigned first because they are the thesis, then
+`@STRANGER` lavender, then the two Arctic entries where the only pairing that truly matters is
+Briggs against the camp, so she took sky blue against their brown. Toss was assigned last and
+took orange `#F5820D`, which is adjacent to the coral chapter colour. **Unresolved by colour and
+resolved by ground instead**, on the project 3 precedent: modern frames Toss occupies use cream
+or a LIGHT coral tint, never a saturated coral fill. Written into the cast file so `scenes` does
+not re-litigate it. Cobalt and Toss blue are unused by any garment, so the reserved-blue rule is
+respected without an exception.
+
+### The Step 5 garment grep never matched the current file shape, and printed blanks for every entry
+
+`file-formats.md` specifies a BOLD file-name label before each fenced sheet, and projects 9, 10,
+11 and 12 all use it, but the Step 5 grep took its range with `sed -n "/^## $t.jpeg/,..."`, a
+heading form the format spec does not use. Against a current cast file that range matches nothing
+and every entry prints blank, which is exactly the failure the check exists to catch and is
+indistinguishable from "no colour assigned". Replaced in `SKILL.md` with an awk range between
+bold labels. **The blank-means-broken warning recorded three times in this file was itself being
+produced by the checker, not by the files.** Re-run it on any older cast file before trusting a
+past pass.
+
+Alternation extended again, seventh time: `jumper`, `top`, and `bubble body` were all short.
+`t-shirt` needs nothing because `shirt` matches it.
+
+## Project 13 (2026-08-29), the psychology of being poor - a 5-entry cast and an envelope instead of a bill
+
+`@YOU` (Toss, buttoned long-sleeve work shirt in grass green `#3A9E3A`, sleeves rolled, no
+hood), `@BILL` (personified object, a sealed envelope, red `#D94040`), `@FARMER` (present-day
+Tamil Nadu sugarcane farmer, golden yellow `#F5C518` short-sleeve shirt, tan `#C4965A` waist
+wrap, white shoulder cloth), `@FORAGER` (illustrative mobile forager, brown `#8B5E3C`
+single-shoulder hide wrap with tan trim), `@BAND` (group of five, sky blue `#6EB5E8` untrimmed
+two-shoulder wraps). Chapter palette Coral `#D96F5F`, Dusty teal `#67A6A3`, Tan `#C4965A`. Five
+entries. Nothing carried over.
+
+### Draw the container, not the document
+
+`@BILL` is the unpaid number, and the obvious design is a printed statement. That is close to
+unrenderable under the no-text rule: a statement is a blank rectangle without its printed lines,
+so the model has to invent lettering to make the object legible, and it will. **A SEALED
+ENVELOPE is the same idea with an inherently textless silhouette**: a rectangle plus a triangular
+flap plus a diagonal seam reads as post from across the room with zero glyphs. The script also
+hands it over directly, "the letter you have not opened". Generalisable: **when an object's
+meaning normally comes from words printed on it, cast its container or its closed state
+instead.** The gauge in project 3 and the phone case in project 8 were solved by enumerating
+negatives; this one was solved by changing the object.
+
+It still needs the enumerated block. Named individually because an envelope exists to carry
+writing: address, address block, ruled address lines, window panel, stamp, postmark, franking
+mark, barcode, QR code, account number, reference number, currency symbols, amounts, digits,
+date, due date, overdue stamp, urgent or final-notice mark, letterhead, tick boxes, signature
+line, columns, table, and squiggles standing in for handwriting. Check this sheet first.
+
+Kept ordinary rather than menacing, on the project 12 precedent: the face is the channel's
+normal face on a flat red field, and the NEGATIVE kills fangs, horns, flames, lightning and
+cracks. The script's argument is that a dull small object carries more weight than its size, so
+a threatening design would contradict it.
+
+### The recurring motif was considered for a cast slot and correctly refused
+
+The tunnel is the script's most repeated image and spans every pillar, which by moments-times-
+spread is the strongest cast candidate on the page. It is still not a cast entry, because it is
+a framing device rather than a character or a handheld object: there is nothing to turn around,
+no face to give it, and no hands to put it in. **Moments times spread ranks candidates that are
+already depictable as a character. It does not promote a composition into one.** It went to
+`scenes` as a cobalt `#2D5FBF` mind interior with a hard vignette, written into the cast file so
+the next stage inherits the decision.
+
+That also freed the chapter budget. Cobalt is a base episode colour, not one of the three
+chapter colours, so the video's most-used visual thread costs nothing from the three-colour
+allowance and coral, dusty teal and tan could each go to a world.
+
+### The colour cascade ran argument-first again, and it forced Toss into the tunnel test
+
+`@BILL` red first (verdict and threat, and it is the antagonist), then `@FARMER` yellow, then
+the settled ancestral pair of brown individual against sky blue group. Toss last. The new
+constraint this script added: **he stands inside cobalt mind-interior frames repeatedly**, so
+the costume colour had to survive cobalt as well as cream and a light coral tint. Orange failed
+on coral, the same collision projects 3 and 12 both hit. Grass green `#3A9E3A` was the only free
+saturated palette colour that held against all three. Project 9 also dressed Toss in green, which
+is allowed: the rule is a new outfit per video and a colour no other member of THIS cast wears,
+and the silhouette here is a buttoned collared work shirt rather than a crew-neck sweatshirt.
+
+### Culture-neutral is the honest answer when a script cites three ethnographies and depicts none
+
+Sahlins, Woodburn and Peterson worked with different peoples on different continents, and the
+script names none of them on screen, describing only "a group of a few dozen people" that "moves
+camp several times a year". So `@FORAGER` and `@BAND` are an illustrative small mobile camp and
+are explicitly not dressed as any identifiable living people, with no face paint, feathers, bone
+ornaments or headdress. The project 2 rule was "build for the culture the script actually depicts
+rather than the one it cites"; **when the script depicts none, build none, and say so in the file
+so a later stage does not attach an ethnonym.**
+
+### A present-day non-Western character keeps the standard flat white head
+
+`@FARMER` is a living person in a named 2013 study, not an ancestral figure, so he takes the
+channel's default flat white head like every other modern character and is separated by garment,
+hair cap, white shoulder cloth and props. Tan skin `#D9A15B` stays on the ancestral pair, where
+it has been the convention since project 2. **Do not let skin tone become the thing that tells a
+modern Indian farmer apart from the modern protagonist**; the distinguishability rule already
+demands garment colour plus a silhouette difference, and here that is the shoulder cloth.
+
+He also needed an explicit anti-default paragraph, because "farmer" is the exact word that pulls
+the banned early-Neolithic figure: no hoe, no sickle, no scythe, no wheat, no straw or conical
+hat, no sackcloth tunic, no medieval setting. His cane stalk is script-derived (the script says
+sugarcane) and is not the banned stalk of wheat, which is worth stating so a later reader does
+not "correct" it.
+
+### The Step 5 garment grep was case-sensitive and every declaration was shouted
+
+First pass wrote the garment word in caps for emphasis inside the prompt, `work SHIRT in
+saturated grass green (#3A9E3A)`, and the grep is `grep -oE` with a lowercase alternation, so
+all five entries printed blank. Same blank-means-broken failure the file has now recorded five
+times, from a fifth distinct cause. Two fixes applied: the alternation in `SKILL.md` is now
+`grep -oiE`, and the declaration lines are lowercase. **Do not shout the garment word.**
+
+Alternation extended again, eighth time: `envelope body`. Plain `envelope` was not used, because
+the sheet's phrase is "the envelope body is one simple filled rectangle in ...".
+
 ## Resolved conflict: hand shape
 
 The retired prompts contradicted each other. Splayed line fingers win, `mitten` is banned. The

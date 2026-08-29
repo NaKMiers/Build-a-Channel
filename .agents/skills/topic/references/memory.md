@@ -18,6 +18,8 @@ Self-improving notes for topic selection. Single canonical copy, no Claude-side 
 | 9 | Why You Give Great Advice You Never Take Yourself | scaffolded 2026-08-19, Solomon's paradox, no script yet |
 | 10 | Why You Would Be Happier Coming Third Than Second | scaffolded 2026-08-25, counterfactual thinking, no script yet |
 | 11 | Why You Remember Things That Never Happened | scaffolded 2026-08-28, misinformation effect, no script yet |
+| 12 | Why One Stranger's Comment Can Ruin Your Whole Day | scaffolded 2026-08-29, negativity bias plus moral outrage contagion, no script yet |
+| 13 | The Psychology Of Being Poor | scaffolded 2026-08-29, scarcity mindset, user-supplied title, no script yet |
 | old 8 | Why You Stay Quiet When You Know The Room Is Wrong | abandoned 2026-08-12, unpublished, artifacts recoverable at `c9f048f` |
 | old 9 | Why You Think Everyone Is Watching When Nobody Is | abandoned 2026-08-12, unpublished, artifacts recoverable at `c9f048f` |
 
@@ -79,6 +81,99 @@ deleted-but-recoverable projects in git history, not just the working tree, befo
 proposing a title.
 
 ## Proposed but not picked
+
+### 2026-08-29, batch 18, none picked, user supplied their own title
+
+The user asked for "Psychology of Being Poor", was offered five compliant reframed titles,
+then replied that the title is just **"The Psychology Of Being Poor"**. This is the third
+time the user has arrived with their own wording after seeing a batch (project 5 and
+project 8 being the first two), and the second time they took a plain topic-name title over
+compliant reframes. **The batch-10 lesson held: offer the reframed titles once, then take
+their wording when they repeat it.** All five remain eligible.
+
+| Title | Theme | Numeric material available |
+| --- | --- | --- |
+| Why Worrying About Money Makes You Worse At Everything | attention and scarcity | Mani, Mullainathan, Shafir and Zhao 2013, Indian sugarcane farmers tested pre-harvest and post-harvest, a gap of roughly 13 IQ points |
+| Why You Feel Poor In The Year You Earned The Most | status and comparison | Solnick and Hemenway 1998 relative income survey; Easterlin paradox. **Also listed in batch 17, still unpicked** |
+| Why The Cheapest Option Always Costs You Twice | scarcity and time horizon | Shah, Mullainathan and Shafir 2012, poor players over-borrowed rounds and scored worse; Woodburn immediate-return vs delayed-return economies |
+| Why You Buy The Nice Thing When You Can Least Afford It | shame and status signalling | Charles, Hurst and Roussanov on visible-goods spending; costly signalling and sharing-network access in a band |
+| Why Your Body Stores Fat When Your Life Feels Unstable | scarcity and the body | Nettle and Bateson insurance hypothesis, food insecurity predicting weight gain; unpredictable-return foraging |
+
+### Selected instead: project 13, the psychology of being poor
+
+Working title **The Psychology Of Being Poor**, taken verbatim from the user. **It breaks
+two title rules** (no "you" or "your", and it names a subject rather than an inner
+experience the viewer has felt). The user reaffirmed it after being told. **Their title
+stands as the folder name and working title**, exactly as with project 5. `metadata` may
+still set a compliant published title.
+
+Research to reuse so `script` does not rediscover it:
+
+- **Psychology.** Scarcity as a bandwidth tax, Mullainathan and Shafir. The headline study
+  is Mani, Mullainathan, Shafir and Zhao 2013: the same Indian sugarcane farmers were
+  tested before harvest, when they were poor, and after harvest, when they were not, and
+  the pre-harvest gap was roughly 13 IQ points. Same people, same fields, different
+  cognitive load. Pair with tunneling and the borrowing result in Shah, Mullainathan and
+  Shafir 2012. This is the anti-shame frame the channel needs: the deficit is caused by the
+  condition, not the person.
+- **Anthropology.** Woodburn's immediate-return versus delayed-return economies, plus
+  demand sharing among the Ju/'hoansi and Hadza. Under unpredictable returns, steep
+  discounting and immediate consumption were correct, and the insurance was the group
+  rather than the store. Extend with Boehm on levelling to explain why visible accumulation
+  was punished.
+- **Modern mismatch.** The wiring now meets an environment that requires long-horizon
+  planning and offers no sharing network, so the ancestral solution reads as bad decisions.
+- **Numeric material is strong**: 13 IQ points, pre-harvest versus post-harvest, the
+  borrowing rounds. Two subtractable numbers are available for `thumbnail`.
+- **Editorial risk to watch.** Poverty is the one topic where the "never shame the viewer"
+  guardrail is easiest to break by accident. Keep the mechanism causal, never characterological,
+  and keep the takeaway a reframe rather than a budgeting instruction.
+
+### 2026-08-29, batch 16, rejected wholesale with the single word "others"
+
+The user asked for topics that **follow what is trending now, with a wide range of
+audience**, then replied "others" to the first batch and gave no reason. Treat "others"
+exactly like "again": record the batch, invent no reason, keep all five eligible, and give
+genuinely different themes in the very next batch. Batch 16 leaned on 2026-current surfaces
+(AI chatbots, second-screening, choice overload). Batch 17 moved to money, self-perception,
+parasocial, planning, and outrage, and the user picked from that one, so **the standing
+trending steer is satisfied by everyday modern friction, not by naming the technology in the
+title.**
+
+| Title | Theme | Numeric material available |
+| --- | --- | --- |
+| Why You Tell A Chatbot Things You Hide From Your Best Friend | shame and social fear | Joinson on computer-mediated self-disclosure; Dunbar on gossip as social grooming; reputation cost inside a known band |
+| Why You Scroll Your Phone During The Show You Chose To Watch | attention and distraction | Ophir, Nass and Wagner 2009 heavy media multitaskers; attention residue |
+| Why You Stay Up Late When You Are Already Exhausted | sleep and rest | Kroese 2014 bedtime procrastination; Wiessner Ju/'hoansi firelight study, about 81 percent of night talk was stories versus about 34 percent of day talk |
+| Why More Options Make You Pick Someone You Like Less | love and attachment, choice | Iyengar and Lepper 2000 jam study, 24 versus 6 options, about 3 percent versus 30 percent purchase |
+| Why Letting A Machine Do Your Work Feels Like Cheating | identity and habit | Norton, Mochon and Ariely 2011 IKEA effect willingness-to-pay premium; effort as a reliability signal in a band |
+
+### 2026-08-29, batch 17, user picked title 5 (moral outrage -> project 12)
+
+The user selected by restating the title verbatim rather than by number. The other four
+remain eligible. Batch was spread across status and money, self-perception, belonging,
+habit and willpower, and anger, all carrying hard quantities.
+
+| Title | Theme | Numeric material available |
+| --- | --- | --- |
+| Why You Feel Poor In The Year You Earned The Most | status and comparison | Solnick and Hemenway 1998 relative income survey, majority preferred 50k while others earn 25k over 100k while others earn 200k; Easterlin paradox |
+| Why Your Own Voice Sounds Wrong Only To You | identity and self-perception | Zajonc mere exposure; Mita 1977 mirror-image preference; bone conduction shifting perceived pitch |
+| Why A Stranger On Your Screen Feels Like A Real Friend | belonging | Horton and Wohl 1956 parasocial interaction; Dunbar 150 as the ceiling now filled with strangers |
+| Why Everything Takes Twice As Long As You Planned | habit and willpower | Buehler, Griffin and Ross 1994 planning fallacy, students predicted 33.9 days and took 55.5; about 30 percent finished by their own estimate. **Also listed in batch 14, still unpicked** |
+
+Selected: project 12, **Why One Stranger's Comment Can Ruin Your Whole Day**. Research to
+reuse so `script` does not rediscover it: psychology is negativity bias, Baumeister 2001
+"bad is stronger than good" plus the Gottman 5 to 1 ratio, extended with Brady, Wills,
+Jost, Tucker and Van Bavel 2017 on moral and emotional language raising diffusion by
+roughly 20 percent per word, so outrage is selected for by the feed rather than by the
+viewer. Anthropology is reputation policing inside a band of 150, where a single hostile
+voice really did forecast exclusion and exile carried a survival cost, so no comment from a
+group member was ever cheap enough to ignore. Modern mismatch: the commenter is not a group
+member, cannot affect your food or protection, and will never be seen again, but the alarm
+system cannot tell the difference. **This topic is number-rich** (5 to 1, 20 percent, 150),
+so the thumbnail stage gets its two subtractable numbers. Note the overlap with the still
+unpicked negativity-bias titles in batches 8, 11 and 15: project 12 now owns that
+mechanism, so retire those three rather than re-proposing them.
 
 ### 2026-08-28, batch 15, user picked title 1 (false memory -> project 11)
 

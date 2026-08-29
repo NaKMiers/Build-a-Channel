@@ -307,6 +307,161 @@ Fresh anthropologists still unspent after this: Jean Briggs, Sarah Blaffer Hrdy,
 Henrich, Max Gluckman, E. Adamson Hoebel, Polly Wiessner and Christopher Boehm are now heavily
 used; Goody and Lord are spent as of this project.
 
+## Project 12, one stranger's comment, cited (2026-08-29, negativity bias)
+
+Roy Baumeister with Bratslavsky, Finkenauer and Vohs (2001, "Bad Is Stronger Than Good",
+Review of General Psychology: a search across domains for a case where a good event of a
+given size outweighs a bad one of equal size, and no clear exception found), Tiffany Ito
+(1998, "Negative information weighs more heavily on the brain", evaluative categorization
+with scalp electrodes, larger late positive response to negative images than to equally
+intense positive ones, inside the first second), John Gottman (the apartment lab, stable
+couples running about five positive moments to one negative during conflict, couples
+heading for separation nearer one to one or below), William Brady with Jay Van Bavel and
+colleagues (2017, over half a million tweets on gun control, same-sex marriage and climate
+change, each additional moral or emotional word raising spread by roughly twenty percent),
+Jean Briggs (1970, "Never in Anger", seventeen months with the Utku Inuit, the roughly
+three-month freeze-out after she spoke sharply to outsiders on the band's behalf),
+Christopher Boehm (the gossip, ridicule, shunning, exile ladder). Four behavioral
+scientists plus two anthropologists.
+
+**Jean Briggs is fresh, first use on the channel**, drawn from the standing unspent list.
+After this project the only genuinely unspent name left on that list is Sarah Blaffer Hrdy.
+Boehm is reused for a narrow job, the ladder starting at one voice, and gets three sentences
+rather than a pillar.
+
+Craft notes:
+
+- **Briggs is the strongest anthropological asset the channel has used so far, because the
+  ethnographer is the subject.** She had an exit, an explanation, a university, and hundreds
+  of people elsewhere who thought well of her, and three months of withdrawn warmth from a
+  handful of people still marked her for a career. That single detail carries the whole
+  mismatch argument, so the script states it explicitly rather than leaving it implied.
+  **Look for ethnography where the fieldworker was on the receiving end**: it converts an
+  observation about other people into evidence about the viewer.
+- **The Gottman five to one is doing the work the channel usually needs a lab experiment
+  for.** It is a measured exchange rate inside a bond where both people chose each other,
+  which makes the stranger comparison land without any extra argument. The script explicitly
+  says the stranger delivers the one and never the five, and that the nine kind people hand
+  over a silence rather than a positive.
+- **Zeigarnik-to-Masicampo shape, fifth time.** The mechanism that opens the loop
+  (bad weighs about five times good) and the finding that closes it (the weighting was
+  calibrated to people who bear the cost of being wrong about you) are the same fact read
+  from the other end. The shift is one question, "does this person have to see me tomorrow",
+  and it routes rather than suppresses: the in-band critic keeps the full weight, the
+  stranger loses the standing to be a verdict. Never-shame holds because the script says
+  plainly that the sting is not going away and that anyone promising otherwise is selling
+  something.
+- Hook measured: personal stake at word 1, paradox at word 8 ("Guess which one you took
+  home"), formal "but" at word 40, mechanism named at word 61, promise from word 88. The
+  open-loop latency rule is satisfied by the count itself, ten versus one, which is a
+  contradiction about the viewer's own life needing no named mechanism to work.
+- Echo: "Ten people liked it. One did not" returns reframed as the nine being quiet because
+  being liked has never made a sound, and the silence being nine people who have to see you
+  tomorrow.
+- **End-screen tease shape: the object callback, first use of that shape.** Deliberately NOT
+  the projects 10 and 11 five-stepper, per the standing reinvention instruction. The
+  episode's recurring object is the quotable sentence, the one the viewer can still say in
+  the voice it was said in, planted in the psychology pillar. The tease hands that object to
+  the next video: count the replays, every replay was a write and not a read, so the version
+  burning you tonight has been through your hands more than theirs. No self-selecting
+  question, no compressed promise. One relief line kept ("nobody is making anything up here,
+  and something was certainly said") because the never-shame guardrail needs it when the
+  tease implies the viewer edited their own grievance.
+- **TEASE TARGET CHANGED BY THE USER ON THE SAME RUN, second time this has happened.** Draft
+  1 pointed at project 1, "Why You Feel Lonelier In A Crowd Than Alone In Your Room", using
+  the same-mechanism-opposite-direction shape: the sorter that files a stranger as kin also
+  refuses to count a crowd. Compliant and published, but the user asked for project 11
+  instead. **Project 11 is the better pairing on the merits**, which makes this the same
+  correction as the project 11 run, where the user redirected a project 2 tease to project
+  10. The pattern across both: **the user prefers the tease to point at the immediately
+  preceding project in the pipeline, and prefers the link that shares the viewer's own
+  faculty over the link that shares the setting.** Draft first for the previous project and
+  only reach further back if no honest bridge exists. Plain-sentence test for the shipped
+  version: the comment you can quote word for word has been rewritten by your own replaying,
+  so this video's sting is project 11's mechanism running on a sentence instead of an event.
+- **TEASE OPENING REWRITTEN A THIRD TIME, by user instruction: "like now I have a question
+  for you, then mention it".** The user wants the tease to turn and address the viewer
+  directly before naming the video, rather than sliding into it from the echo. **First
+  person is still not available to the narrator**, so the accepted line is "Now here is a
+  question to take with you, and it is not a rhetorical one", followed by the object, then
+  the question itself. That construction gives the direct-address feel the user asked for
+  while keeping 2nd person, and it is not project 11's "So one last question before you go",
+  which is the phrasing the reinvention instruction exists to avoid. **When the user asks
+  for an "I" register, translate it into a direct turn toward the viewer rather than
+  refusing or breaking voice.**
+- The tease question is deliberately answerable with a number ("six times, twenty, more than
+  you would admit"), because the object callback needs the viewer to actually count before
+  the write-not-read reveal lands. Kept as one question with the options folded in as a
+  clause, rather than a second question mark, so the total stays near the fixture.
+- 2,076 words, 174 sentences, 4 questions. 3 are narration questions matching the fixture,
+  the 4th is the CTA question the user asked for, which is the same accounting project 10
+  used.
+- Numeric material for the thumbnail, and it is rich and genuinely subtractable: 5 to 1
+  versus 1 to 1, 10 versus 1, 20 percent per word, half a million tweets, 17 months and 3
+  months with the Utku, a band of 30 to 150, under 1 second on the electrodes.
+
+## Project 13, the psychology of being poor, cited (2026-08-29, scarcity and bandwidth)
+
+Anandi Mani, Sendhil Mullainathan, Eldar Shafir and Jiaying Zhao (2013, "Poverty Impedes
+Cognitive Function", Science: both studies, the New Jersey mall scenario with the 150 dollar
+versus 1,500 dollar car repair, and the Tamil Nadu sugarcane farmers tested a month before
+and a month after harvest, a gap the authors put at around thirteen IQ points, with nutrition
+and physical exertion checked and excluded), Anuj Shah with Mullainathan and Shafir (2012,
+"Some Consequences of Having Too Little", Science: lab games where scarcity of guesses made
+players more efficient per attempt and worse overall once borrowing against future rounds was
+allowed), Marshall Sahlins (1972, "The Original Affluent Society": affluence as a ratio
+between wants and means rather than an amount, and accumulation as literal weight for a group
+that moves camp), James Woodburn (1982, immediate-return societies: food consumed within a day
+or two, almost no storage, accumulation actively levelled), Nicolas Peterson (1993, demand
+sharing: the transfer begins with the person in need asking, and refusing is the deviant act,
+not asking). Three behavioral scientists plus three anthropologists.
+
+**Sahlins and Peterson are both fresh, first use on the channel.** Woodburn is a second use
+doing different work: project 10 used him for enforced rank levelling, project 13 uses him for
+the absence of storage. Sarah Blaffer Hrdy remains the last name on the old unspent list.
+
+Craft notes:
+
+- **Zeigarnik-to-Masicampo shape, sixth time, and the study IS the shift.** The finding that
+  opens the loop and the finding that closes it are the same experiment read forward: the same
+  farmer scored roughly thirteen points higher after the harvest, so the shift is "give the
+  decision to your own post-harvest self", meaning make the important calls in the slack window
+  right after money lands rather than the night before it runs out. Nothing bolted on.
+- **This topic is the highest never-shame risk the channel has run.** Two moves carry it.
+  First, the within-person design is stated explicitly and twice ("the same character in both
+  columns, only the money moved"), so causality runs condition to cognition and cannot be read
+  the other way. Second, the script says plainly that the shift does not close the gap: "nothing
+  about this makes you less short of money, and anyone telling you a mindset closes a real gap
+  is selling you something." Without that line the video becomes bootstraps advice. Keep it.
+- Hook measured: paradox at word 14 (about 0:05 at 169 wpm) and it is about the viewer's own
+  money, which satisfies the open-loop latency rule rather than the reversal clock. Beat 1 ends
+  at word 29, formal "but" at word 43, mechanism named ("bandwidth") at word 71, open loop by
+  word 100. Fully compliant with the four-beat budget, no deviation to defend.
+- The wrong answer in beat 2 is unusually easy here because the viewer arrives already
+  believing it and has been told it by other people: "bad with money, undisciplined,
+  short-sighted." Three words, no sentence needed.
+- Echo: "The month you have the least money is the month you handle it worst" returns as "will
+  probably still be the month you handle it worst. That does not go away tonight. What goes away
+  is the idea that this proves anything about you."
+- **End-screen tease shape: the second example, first use of that shape.** Not the projects 10
+  and 11 five-stepper, not project 12's object callback, per the standing reinvention
+  instruction. Four sentences: money is not the only thing that takes a whole mind, here is a
+  second instance of tonight's tunnel that costs nothing, one question the viewer answers in
+  their head, then the title and the instruction. Target is project 12, the immediately
+  preceding project, which is what the user has now corrected toward twice. Plain-sentence link:
+  attentional capture by a survival-relevant signal is one faculty, and an unpayable number and
+  a hostile stranger both trip it.
+- 2,102 words, 171 sentences, 4 questions. 3 narration questions matching the fixture plus the
+  CTA question, the same accounting as projects 10 and 12.
+- Proportions against the body, excluding hook and tease: psychology 38 percent, anthropology
+  29 percent, mismatch plus shift 33 percent. Psychology runs slightly long because the topic
+  needs two experiments rather than one, the mall study to show the effect and the farmer study
+  to show it is not the people. Deliberate, not drift.
+- Numeric material for the thumbnail, and it is rich and genuinely subtractable: 13 IQ points,
+  150 dollars versus 1,500 dollars, before harvest versus after harvest, about 450 farmers, 1
+  paycheck a year, a band of 30, 3 or 4 days without food. The 150-vs-1500 and the
+  before-vs-after pairs are both what the two-number layout wants.
+
 ## OPEN DISCREPANCY: question density
 
 `.agents/rules/channel-dna.md` says "Question every 4 to 6 sentences". **The accepted
@@ -480,6 +635,11 @@ Shapes available besides the projects 10 and 11 five-stepper, none of them a new
   other video is about the one place it hurts most.
 - **The cold pivot.** One short sentence, no bridge at all, straight to the title. Works when
   the echo has already landed hard and any bridge would dilute it.
+
+Shapes used so far: projects 10 and 11, the five-stepper. Project 12, the object callback,
+handing the episode's recurring object to the next topic. Project 13, the second example,
+giving one more instance of tonight's mechanism that turns out to be the whole subject of the
+other video, then stopping. Pick something other than those three next.
 
 Two things to check before accepting a tease: would a viewer who just watched the previous
 episode notice the same construction, and does the link survive being stated in one plain

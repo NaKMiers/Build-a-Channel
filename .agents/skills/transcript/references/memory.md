@@ -324,6 +324,92 @@ estimator uses. **Treat 169 wpm as a safe upper bound on timing: a beat engineer
 second N will land at or slightly before N.** That is the right direction for the error to point,
 so do not recalibrate the script skill's figure on one recording. Recheck after another two.
 
+## Project 12 (2026-08-29) - mixed bitrates again, and the first duplicate with no free next second
+
+3 parts, **not uniform**: 5m12.2s @ 256 kbps, 4m38.6s @ 256 kbps, 1m43.1s @ **128 kbps**, combined
+**11m33.8s**, Xing header agreeing with the frames (11m33.8s reported, 11m33.8s true). Single
+ElevenLabs forced-alignment call on `audios/full.mp3` against the whole script, same as projects
+5, 6, 8, 9, 10 and 11, because `script_one_strangers_comment.md` has **zero runs of 2+ blank
+lines**, so there is no part boundary to find.
+
+**316 cues**, median 1.8s, last cue `[11:32]`, aligned speech ending at 693.5s of 693.8s audio,
+no malformed lines, transcript text word-for-word identical to the script at 2076 words. 27.3 cues
+per minute against the V2 profile's predicted 27.5. One one-word cue, `Gossip.`, intentional from
+"it starts almost gently. Gossip. Then ridicule." Duration is inside the channel-dna 10 to 14
+minute spec. V2 profile confirmed from the project's own cast header, not the project number.
+
+Pre-flight checks, in the project 11 order, all passed first time:
+
+1. **Folder sweep:** `find <P> -type f` showed exactly three parts, no stray. `file` on each caught
+   the bitrate mismatch before the combine ran.
+2. **wps arithmetic:** 2076 / 693.8 = **2.99 wps**, mid-band against the measured 2.71 to 3.21.
+3. **Quota:** free tier, 1725 of 10000 used, 8275 remaining against a roughly 740 credit call.
+   Key authenticated and was in scope on the first try.
+4. **Rolling 30s window:** whole-file 2.99, rolling median 3.00, max 3.70 at 530s, largest silence
+   1.6s at 6m05.2s. Rolling median equals the whole-file figure, so the read was uniform.
+
+Both part seams came back continuous, 0.54s gap at the 312.2s join and 0.44s at the 590.8s join,
+which is the check that no part was dropped. `words.json` was again a **bare top-level list**.
+
+### The mixed-bitrate case recurred, and the project 3 fix held
+
+First non-uniform export since project 3's 256/128/128. `combine-audio.py` named it explicitly
+("parts differ in bitrate [128, 256] kbps, so the result is a VBR stream"), wrote the Xing header
+with the true frame count, and printed agreeing true and reported lengths. **No manual check was
+needed beyond reading that last line.** Project 3's silent 8m28s-for-12m07s failure is now
+genuinely closed, but the condition still arrives unannounced from the export dialog, so keep
+running `file` on the parts during the folder sweep: it costs nothing and predicts the warning.
+
+### THE FIND: a duplicate timestamp where the next second was ALSO taken
+
+`[9:32]` appears twice, "a partner," then "a colleague,". **Every prior duplicate in this repo
+(projects 1, 3, 5, 10) had a free second immediately after, so "save the second one as the next
+second" always worked. Here it does not.** The neighbourhood is a rapid four-item list, roughly
+0.8s per item, that fills every second from 9:31 to 9:34:
+
+```
+[9:30] FREE
+[9:31] A friend,
+[9:32] a partner,   ||  a colleague,     <- the duplicate
+[9:33] your sister,
+[9:34] anyone who has to live with the result of being wrong about you,
+[9:35] FREE
+```
+
+A one-step bump collides with "your sister,". A suffix like `[9:32]b` is not an option either:
+scene file names derive from the stamp by replacing `:` with `-`, and
+`scene-polish/scripts/scene_images.py` fails on duplicate prompt timestamps, so the remap has to
+land on a real, free `[M:SS]`.
+
+**The resolution is a forward cascade to the next free second**, which is the direct generalisation
+of the existing convention: `a colleague,` -> `[9:33]`, `your sister,` -> `[9:34]`,
+`anyone who...` -> `[9:35]`.
+
+Forward beats backward on both counts here, and the arithmetic is worth keeping because it is not
+obvious in advance. Closely spaced list items sit just under their integer second, so shifting each
+one forward lands it almost exactly on its true time: `a colleague,` true 572.86 -> 573 is +0.14s,
+`your sister,` 573.78 -> 574 is +0.22s, `anyone` 574.68 -> 575 is +0.32s, **max drift 0.32s across
+three files**. The backward cascade into the free `[9:30]` touches only two files but drifts far
+more, `A friend,` 571.30 -> 570 is -1.30s and `a partner,` 572.10 -> 571 is -1.10s, and it moves
+images ahead of the words they illustrate.
+
+Transferable rules:
+
+- **Check the whole neighbourhood for free seconds, not just the next one.** Report the free/taken
+  map, not a bare "save it as the next second", because that instruction can be wrong.
+- **Prefer the forward cascade.** It keeps the first occurrence on its true stamp, matches every
+  prior project, and on tightly packed runs the drift is a fraction of a second.
+- Do not re-cut the transcript at a different granularity to dodge a duplicate. That changes all
+  316 cues to fix one file name, and the V2 profile is the tested one.
+
+### The 169 wpm hook estimator is now conservative on two recordings
+
+2076 words over 693.8s is **179.5 wpm**, against the 169 wpm figure in
+`.agents/skills/script/references/memory.md`. Project 11 measured 172.8 and asked for two more
+data points before recalibrating; this is the first. The error still points the safe way, a beat
+engineered for second N lands at or before N, but the gap is widening. **One more recording above
+175 wpm and the script skill's estimator should move.**
+
 ## Project 5 rebuild (2026-08-04) - three key failures before one clean align
 
 The project 5 folder was retopiced to `5-why-do-people-follow-the-crowd` and its cast file

@@ -1,0 +1,29 @@
+{
+  "total": 693.838,
+  "parts": [
+    {
+      "file": "projects/12-why-one-stranger-s-comment-can-ruin-your-whole-day/audios/part-1.mp3",
+      "start": 0.0,
+      "duration": 312.163,
+      "frames": 11950,
+      "sample_rate": 44100,
+      "bitrates": [256]
+    },
+    {
+      "file": "projects/12-why-one-stranger-s-comment-can-ruin-your-whole-day/audios/part-2.mp3",
+      "start": 312.163,
+      "duration": 278.596,
+      "frames": 10665,
+      "sample_rate": 44100,
+      "bitrates": [256]
+    },
+    {
+      "file": "projects/12-why-one-stranger-s-comment-can-ruin-your-whole-day/audios/part-3.mp3",
+      "start": 590.759,
+      "duration": 103.079,
+      "frames": 3946,
+      "sample_rate": 44100,
+      "bitrates": [128]
+    }
+  ]
+}
