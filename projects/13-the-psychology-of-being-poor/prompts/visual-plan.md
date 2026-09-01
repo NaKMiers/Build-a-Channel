@@ -8,7 +8,7 @@ Recurring motif: the aperture ring, a heavy charcoal circle that narrows onto on
 | ---- | ---- | ------- | -------- | ---- | ---- | ----- | ----- | ------ | ----- | ----- | ---- |
 | B001 | [0:00] | The month you have the least money is the month you handle it worst. | STORY | wide | ATMOSPHERIC | PLATE | P001 | - | - | the aperture ring | - |
 | B002 | [0:01] | capcut reframe, no new generation | STORY | wide | ATMOSPHERIC | CAPCUT | P001 | B001 | capcut reframe on the same plate, a slow push in on the delt | - | - |
-| B003 | [0:03] | You miss the payment. | STORY | wide | ATMOSPHERIC | VARIANT | P001 | B002 | @BILL slides to the front of the stack, still sealed, its fa | the aperture ring | - |
+| B003 | [0:03] | You miss the payment. | STORY | wide | ATMOSPHERIC | VARIANT | P001 | B002 | @BILL slides to the front of the stack, still unread, its fa | the aperture ring | - |
 | B004 | [0:05] | You forget the appointment. | STORY | card | LAYERED | PLATE | P002 | - | - | - | - |
 | B005 | [0:06] | You buy the thing you cannot afford. | STORY | card | LAYERED | VARIANT | P002 | B004 | @YOU lifts one boxed item off the shelf into the wire basket | - | - |
 | B006 | [0:07] | capcut reframe, no new generation | STORY | card | LAYERED | CAPCUT | P002 | B005 | capcut reframe on the same plate, a slow push in on the delt | - | - |
@@ -92,7 +92,7 @@ Recurring motif: the aperture ring, a heavy charcoal circle that narrows onto on
 | B084 | [2:40] | genuinely poor. | DIAGRAM | diagram | CLEAN | VARIANT | P029 | B083 | the aperture ring closes narrow over that bracketed month an | the aperture ring | BEFORE |
 | B085 | [2:41] | Loans out, | STORY | medium | LAYERED | PLATE | P030 | - | - | - | - |
 | B086 | [2:42] | pawn tickets in the drawer, | STORY | medium | LAYERED | VARIANT | P030 | B085 | small folded paper slips fill the open drawer to its top. | - | - |
-| B087 | [2:44] | bills waiting. | STORY | medium | LAYERED | VARIANT | P030 | B086 | a short leaning stack of sealed envelopes appears on the rop | - | - |
+| B087 | [2:44] | bills waiting. | STORY | medium | LAYERED | VARIANT | P030 | B086 | a short leaning stack of red paper bills appears on the rop | - | - |
 | B088 | [2:45] | In the month after the harvest the | STORY | medium | LAYERED | PLATE | P031 | - | - | the aperture ring | - |
 | B089 | [2:46] | same money problem is simply gone. | STORY | medium | LAYERED | VARIANT | P031 | B088 | the aperture ring around the chest opens wide and its line l | the aperture ring | - |
 | B090 | [2:49] | Same farmer. | SPLIT_OR_SCALE | scale | CLEAN | PLATE | P032 | - | - | - | - |
@@ -275,7 +275,7 @@ Recurring motif: the aperture ring, a heavy charcoal circle that narrows onto on
 | B267 | [8:34] | so the one move your ancestors made without | PORTRAIT | close | LAYERED | PLATE | P093 | - | - | - | - |
 | B268 | [8:36] | embarrassment is the move you would rather starve | PORTRAIT | close | LAYERED | VARIANT | P093 | B267 | the hand withdraws all the way back and settles in his lap. | - | - |
 | B269 | [8:38] | capcut reframe, no new generation | PORTRAIT | close | LAYERED | CAPCUT | P093 | B268 | capcut reframe on the same plate, a slow push in on the delt | - | - |
-| B270 | [8:40] | than make. | PORTRAIT | close | LAYERED | VARIANT | P093 | B269 | the phone stays face down and the envelope stack beside it i | - | - |
+| B270 | [8:40] | than make. | PORTRAIT | close | LAYERED | VARIANT | P093 | B269 | the phone stays face down and the bill stack beside it i | - | - |
 | B271 | [8:41] | When did you last ask anyone for anything that actually mattered? | PORTRAIT | close | CLEAN | PLATE | P094 | - | - | - | - |
 | B272 | [8:43] | capcut reframe, no new generation | PORTRAIT | close | CLEAN | CAPCUT | P094 | B271 | capcut reframe on the same plate, a slow push in on the delt | - | - |
 | B273 | [8:45] | Then the system does something genuinely cruel. | HYBRID | diagram | LAYERED | PLATE | P095 | - | - | the aperture ring | - |
@@ -346,7 +346,7 @@ Recurring motif: the aperture ring, a heavy charcoal circle that narrows onto on
 | B338 | [10:55] | and that story has been costing you as much as the fees have. | HYBRID | close | CLEAN | CALLBACK | P117 | B337 | the label card is set down beside the row of fee tags and is | - | - |
 | B339 | [10:57] | capcut reframe, no new generation | HYBRID | close | CLEAN | CAPCUT | P117 | B338 | capcut reframe on the same plate, a slow push in on the delt | - | - |
 | B340 | [10:59] | The month you have the least money will probably | STORY | wide | ATMOSPHERIC | PLATE | P118 | - | - | CALLBACK | - |
-| B341 | [11:01] | still be the month you handle it worst. | STORY | wide | ATMOSPHERIC | CALLBACK | P118 | B340 | the aperture ring closes narrow around the envelope stack ag | CALLBACK | - |
+| B341 | [11:01] | still be the month you handle it worst. | STORY | wide | ATMOSPHERIC | CALLBACK | P118 | B340 | the aperture ring closes narrow around the bill stack ag | CALLBACK | - |
 | B342 | [11:04] | That does not go away tonight. | STORY | wide | ATMOSPHERIC | CALLBACK | P118 | B341 | a small vanishing puff shape beside the stack is struck thro | CALLBACK | NOT TONIGHT |
 | B343 | [11:06] | What goes away is the idea that | PORTRAIT | close | LAYERED | PLATE | P119 | - | - | - | - |
 | B344 | [11:07] | this proves anything about you, | PORTRAIT | close | LAYERED | CALLBACK | P119 | B343 | he lifts the red verdict tag off the wood and it comes away  | - | - |

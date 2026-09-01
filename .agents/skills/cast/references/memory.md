@@ -762,3 +762,39 @@ Two Step 5 grep notes, both false alarms that cost a pass each:
 black lines", but the image shows bare limbs as **narrow white-filled tubes with two contours** and
 small outlined feet. Only the hoodie sleeves read as solid. Every bare-limbed cast member follows
 the image, not the sentence.
+
+## Project 13 (2026-09-01), @BILL rejected as an envelope and rebuilt as a bill
+
+The sheet named the object `@BILL` and then drew a sealed envelope, on the reasoning that an
+envelope has an inherently textless silhouette while a printed statement is a rectangle that means
+nothing without ruled lines. The owner rejected the generated sheet with "it looks like an envelope
+instead of a bill". The reasoning was sound and the conclusion was still wrong.
+
+- **A personified object has to read as the thing the token names, not as its container.** The
+  textless-silhouette argument is a real constraint, but it was allowed to pick the object. When a
+  textless design and the named object disagree, keep the object and find a different textless
+  route to it.
+- **The route that works is silhouette markers, not print.** Three of them carried "bill" with zero
+  glyphs: portrait proportion, about 3 wide to 4 tall, which is the one shape an envelope can never
+  be; a torn zigzag bottom edge, a sheet off a pad, and the only broken edge anywhere in the cast;
+  a folded-down top corner plus a deliberately EMPTY white header band, which is where a real bill
+  puts its letterhead. An empty letterhead band says "document" louder than filling it would.
+- **When a design is replaced, put the old design in the NEGATIVE, first and by name.** The old
+  sheet is the drift attractor: the model has already been rewarded for drawing an envelope here.
+  The new NEGATIVE opens with no envelope, no flap, no triangular flap, no diagonal seam, no
+  window panel, no stamp, no landscape rectangle, no shape wider than it is tall.
+- **Check the SHAPE before the text on the reprint.** The generating checklist now says so
+  explicitly for this sheet: a returned image that is wider than tall is the old design, and no
+  amount of text checking matters after that.
+- **Replacing a personified object is never a one-file edit.** `@BILL` was described physically in
+  `image-prompts.md` (about 20 places), `visual-plan.md` (3), and `thumbnail-prompts.md` (12),
+  because `scenes` and `thumbnail` both write the object's appearance into prose rather than
+  relying on the token alone. Grep the object's noun across every prompt file, not just the token.
+  Watch for a same-noun different-object collision while doing it: this project also has a "pay
+  envelope" wage packet in four scene prompts, which is a separate object and correctly stayed an
+  envelope.
+- The `@YOU` sheet also had to change, because his pose one rests a hand on a stack of these
+  objects. A cast member holding another cast member's object inherits that object's redesign.
+- Step 5's garment grep needed `bill body` added to its alternation, exactly the extension the
+  skill tells you to make. Written as "The bill body is one simple filled rectangle in saturated
+  red (#D94040)" so the garment-word-then-hex pattern matches.
