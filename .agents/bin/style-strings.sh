@@ -15,9 +15,9 @@
 # break. New pipeline code uses the explicit V2 names.
 #
 # Exports: V1_STYLE_ANCHOR, V1_STYLE_LOCK, V1_GENERATION_LINE,
-# V1_SHEET_OPENING_LINE, V2_STYLE_ANCHOR, V2_STYLE_LOCK, V2_GENERATION_LINE,
-# V2_SHEET_OPENING_LINE, STYLE_ANCHOR, STYLE_LOCK, GENERATION_LINE,
-# SHEET_OPENING_LINE, CURRENT_STYLE_VERSION
+# V1_SHEET_OPENING_LINE, V2_STYLE_ANCHOR, V2_STYLE_LOCK, V2_SCENE_REF_LIMIT,
+# V2_GENERATION_LINE, V2_SHEET_OPENING_LINE, STYLE_ANCHOR, STYLE_LOCK,
+# GENERATION_LINE, SHEET_OPENING_LINE, CURRENT_STYLE_VERSION
 
 _ss_root="$(git rev-parse --show-toplevel 2>/dev/null || pwd)"
 _ss_src="$_ss_root/.agents/rules/visual-style.md"
@@ -40,6 +40,7 @@ V1_SHEET_OPENING_LINE="$(_ss_block 'REFERENCE SHEET OPENING LINE - opens every c
 
 V2_STYLE_ANCHOR="$(_ss_block 'V2 STYLE ANCHOR - opens every V2 scene prompt')"
 V2_STYLE_LOCK="$(_ss_block 'V2 STYLE LOCK - closes every V2 scene prompt')"
+V2_SCENE_REF_LIMIT="$(_ss_block 'V2 SCENE REFERENCE LIMIT - required in every prompt that carries an @[timestamp]')"
 V2_GENERATION_LINE="$(_ss_block 'V2 GENERATION LINE - the instruction the human adds to every V2 generation')"
 V2_SHEET_OPENING_LINE="$(_ss_block 'V2 REFERENCE SHEET OPENING LINE - opens every V2 character sheet prompt')"
 
@@ -51,7 +52,7 @@ SHEET_OPENING_LINE="$V1_SHEET_OPENING_LINE"
 CURRENT_STYLE_VERSION="V2"
 
 export V1_STYLE_ANCHOR V1_STYLE_LOCK V1_GENERATION_LINE V1_SHEET_OPENING_LINE
-export V2_STYLE_ANCHOR V2_STYLE_LOCK V2_GENERATION_LINE V2_SHEET_OPENING_LINE
+export V2_STYLE_ANCHOR V2_STYLE_LOCK V2_GENERATION_LINE V2_SHEET_OPENING_LINE V2_SCENE_REF_LIMIT
 export STYLE_ANCHOR STYLE_LOCK GENERATION_LINE SHEET_OPENING_LINE CURRENT_STYLE_VERSION
 
 # Explicit checks rather than ${!var} indirection, which bash supports and zsh does not.
@@ -63,3 +64,4 @@ export STYLE_ANCHOR STYLE_LOCK GENERATION_LINE SHEET_OPENING_LINE CURRENT_STYLE_
 [ -n "$V2_STYLE_LOCK" ]         || echo "style-strings.sh: WARNING V2_STYLE_LOCK is empty" >&2
 [ -n "$V2_GENERATION_LINE" ]    || echo "style-strings.sh: WARNING V2_GENERATION_LINE is empty" >&2
 [ -n "$V2_SHEET_OPENING_LINE" ] || echo "style-strings.sh: WARNING V2_SHEET_OPENING_LINE is empty" >&2
+[ -n "$V2_SCENE_REF_LIMIT" ]    || echo "style-strings.sh: WARNING V2_SCENE_REF_LIMIT is empty" >&2

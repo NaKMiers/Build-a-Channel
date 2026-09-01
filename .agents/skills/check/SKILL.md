@@ -195,6 +195,20 @@ awk '{L[NR]=$0} END{for(i=1;i<=NR;i++) if(L[i]=="---"){
   if(i==1||L[i-1]!="") print i": break needs one blank line above"
   if(i==NR||L[i+1]!="") print i": break needs one blank line below"
   if(i>2&&L[i-2]=="---") print i": two breaks in a row"}}' "$F"
+
+# @[timestamp] scene references, V2 only. Backward, resolvable, never self.
+awk '
+  /^\[/ { match($0, /^\[[0-9:]+\]/); ts=substr($0, 1, RLENGTH); seen[ts]=1
+    n=split($0, part, /@\[/)
+    for (i=2; i<=n; i++) if (match(part[i], /^[0-9]+:[0-9]+\]/)) {
+      r="[" substr(part[i], 1, RLENGTH); refs++
+      if (r == ts) print ts " references itself"
+      else if (!(r in seen)) print ts ": @" r " does not resolve to an earlier prompt" } }
+  END { print "@[timestamp] references: " refs+0 }
+' "$F"
+
+# Every referencing prompt carries the V2 SCENE REFERENCE LIMIT verbatim. Must be 0.
+grep '@\[[0-9]' "$F" | grep -cvF "$V2_SCENE_REF_LIMIT"
 ```
 
 FAIL conditions:
@@ -211,6 +225,12 @@ FAIL conditions:
   are already clean.
 - a malformed chain break: not exactly `---`, missing a blank line above or below, sitting on
   the first or last line of the file, or doubled
+- an `@[timestamp]` pointing forward, at its own prompt, or at a timestamp no prompt carries.
+  The tool cannot resolve it, so it silently does nothing and the cross-scene inconsistency it
+  was placed to fix ships anyway.
+- an `@[timestamp]` in a prompt that does not also carry the V2 SCENE REFERENCE LIMIT. The tool
+  attaches a whole frame, so without the limit the model copies that frame's composition into a
+  scene meant to be new. Absent references are fine, V1 projects have none.
 
 Zero chain breaks is INFO, not FAIL, and only in a legacy project written before the rule.
 Say plainly what it costs: the generation tool wires every card to the one before it, so
@@ -265,6 +285,39 @@ grep '^| B[0-9][0-9][0-9] ' "$V" | grep -vcE ' \| (STORY|CARD|DIAGRAM|PORTRAIT|H
 grep '^| B[0-9][0-9][0-9] ' "$V" | grep -vcE ' \| (wide|medium|close|macro|overhead|pov|card|diagram|scale) \|'
 grep '^| B[0-9][0-9][0-9] ' "$V" | grep -vcE ' \| (CLEAN|LAYERED|ATMOSPHERIC) \|'
 grep '^| B[0-9][0-9][0-9] ' "$V" | grep -vcE ' \| (PLATE|VARIANT|CALLBACK|CAPCUT) \|'
+
+# Asset mix. ADVISORY, never a FAIL. VARIANT is the share that drifts upward: project 12
+# shipped 63 percent against a 40 percent ceiling and every surplus variant was a near
+# duplicate whose delta was too thin to earn a plate.
+awk -F'|' '
+  /^\| B[0-9][0-9][0-9] / { a=$8; gsub(/^ +| +$/, "", a); n[a]++; t++ }
+  END {
+    lo["PLATE"]=35;   hi["PLATE"]=45
+    lo["VARIANT"]=30; hi["VARIANT"]=40
+    lo["CALLBACK"]=5; hi["CALLBACK"]=10
+    lo["CAPCUT"]=10;  hi["CAPCUT"]=15
+    printf "asset mix over %d planned beats\n", t
+    split("PLATE VARIANT CALLBACK CAPCUT", k, " ")
+    for (i=1; i<=4; i++) { a=k[i]; p=n[a]*100/t
+      printf "  %-9s %3d  %5.2f%%  target %d to %d%s\n", \
+        a, n[a], p, lo[a], hi[a], (p<lo[a]||p>hi[a]) ? "   REVIEW" : "" } }
+' "$V"
+
+# Continuity ledger: every listed return carries @[canonical] in its prompt.
+awk -F'|' '
+  NR==FNR {
+    if ($0 ~ /^\| B[0-9][0-9][0-9] /) next
+    if ($0 !~ /^\| *[A-Za-z]/ || $0 ~ /^\| *Object/) next
+    if ($3 !~ /\[[0-9]+:[0-9]+\]/) next
+    c=$3; gsub(/[^0-9:]/, "", c); canon="[" c "]"
+    n=split($5, parts, ",")
+    for (i=1; i<=n; i++) { t=parts[i]; gsub(/[^0-9:]/, "", t)
+      if (t != "") need["[" t "]"]=canon }
+    next }
+  /^\[/ { match($0, /^\[[0-9:]+\]/); ts=substr($0, 1, RLENGTH)
+    if (ts in need && index($0, "@" need[ts]) == 0)
+      print "ledger: " ts " returns " need[ts] " but carries no @" need[ts] }
+' "$V" "$F"
 
 # Tier totals cover generated prompts. ATMOSPHERIC is at most 10 percent of all states.
 for tier in CLEAN LAYERED ATMOSPHERIC; do
@@ -354,6 +407,18 @@ meaning deltas, an unexplained register run, an ordinary hold over 4 seconds, ov
 outside 28 to 32 beats per minute, editorial text over 5 words, or a chain break that opens
 anything other than a `PLATE`. Review every callback to
 confirm that it changes meaning rather than merely repeating an asset.
+
+**A ledger return with no `@[canonical]` in its prompt is a FAIL.** The ledger states that an
+object recurs and names the frame every later drawing must match. A return that carries no
+reference is that promise unkept, and the object comes back a different colour twenty blocks
+later, which is the defect the ledger exists to prevent.
+
+**The asset mix is ADVISORY and never a FAIL.** Print it and read it. `VARIANT` above its
+ceiling is the signature of near-duplicate scenes: beats whose delta was too thin to justify a
+plate, so the frames differ only by generator noise. Project 12 is the worked example, 56.7
+percent variants against a 40 percent ceiling with `PLATE`, `CALLBACK`, and `CAPCUT` all below
+theirs. Report the figure with a one-line judgement. A mix outside target that the script
+explains is fine; a mix nobody looked at is the actual problem.
 
 ## Step 7 - Thumbnail checks
 

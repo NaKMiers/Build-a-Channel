@@ -132,6 +132,12 @@ Style version: V2
 Chapter colors: <three V2 extension colors>
 Recurring motif: <one concrete object or shape>
 
+## Continuity ledger
+
+| Object        | Canonical | Locked description                                          | Returns at            |
+| ------------- | --------- | ----------------------------------------------------------- | --------------------- |
+| tilted balance | [0:18]   | a charcoal two-pan beam balance, near pan low, no base plate | [2:41], [6:03], [11:52] |
+
 | Beat | Time   | Meaning                                   | Register | Shot  | Tier        | Asset   | Plate | Source | Delta          | Motif | Text         |
 | ---- | ------ | ----------------------------------------- | -------- | ----- | ----------- | ------- | ----- | ------ | -------------- | ----- | ------------ |
 | B001 | [0:00] | viewer isolated in a friendly crowd       | STORY    | wide  | ATMOSPHERIC | PLATE   | P001  | -      | -              | gap   | FORTY PEOPLE |
@@ -140,6 +146,18 @@ Recurring motif: <one concrete object or shape>
 
 Rules:
 
+- **The continuity ledger lists every recurring non-cast object**, meaning anything drawn in
+  two or more separated scenes that is not a cast member with a bound sheet. Characters never
+  appear here, their `@TOKEN` already carries them.
+- `Canonical` is the timestamp of the object's **first** appearance, the one every later
+  `@[timestamp]` in `image-prompts.md` points back at. `Returns at` lists the later timestamps,
+  and each of them must carry `@[<canonical>]` in its prompt.
+- `Locked description` is the one phrase every prompt drawing that object reuses word for word,
+  so the prose does not drift even where a reference is not attached.
+- An object that recurs and carries identity, meaning it is named, spoken about, or treated as
+  a participant rather than a prop, does not belong in the ledger. It belongs in the cast with
+  its own reference sheet. The ledger is for props, diagrams, charts, and shapes.
+- The ledger is absent only when a project genuinely has no recurring non-cast object.
 - Beat IDs are `B` plus three digits and increase in file order.
 - Times use `[M:SS]` and increase in timeline order. They may include extra CapCut-only beats
   between transcript cues, but every generated prompt beat uses an exact transcript timestamp.
@@ -153,6 +171,11 @@ Rules:
 - `Source` is `-` only for a new plate. Every other asset points to an earlier beat ID.
 - A variant names exactly one information-changing delta. Camera, cast placement, environment
   geometry, major objects, palette, and line hierarchy remain fixed.
+- **That delta must be legible as presence, absence, position, or count, at the size it is
+  drawn.** A delta that only changes an attribute of something already on screen, thicker,
+  harder, calmer, warmer, more tense, is not generatable: the model either ignores it, leaving
+  two frames that differ only by generator noise, or redraws the frame for the wrong reason. If
+  a beat has no legible delta available, it is not a variant. Make it a `PLATE`.
 - A callback points to an earlier plate and names the new meaning in `Delta`.
 - `Motif` is `-`, the episode motif, or `CALLBACK` when the motif returns with changed meaning.
 - `Text` is `-` or the exact one-to-five-word editorial text. It is never subtitle narration.

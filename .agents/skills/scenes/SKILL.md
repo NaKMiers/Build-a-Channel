@@ -77,18 +77,32 @@ Write `prompts/visual-plan.md` in the exact format from `file-formats.md`.
    any full image prompt.
 4. Target 35 to 45 percent new `PLATE` rows, 30 to 40 percent `VARIANT`, 10 to 15 percent
    `CAPCUT`, 5 to 10 percent `CALLBACK`, and 5 to 10 percent text or diagram update beats.
-5. Keep `ATMOSPHERIC` at or below 10 percent. Use `CLEAN` near 40 percent and `LAYERED` near
+   **`VARIANT` is the share that drifts, and it drifts upward.** Project 12 planned inside this
+   budget and shipped 63 percent variants against the 40 percent ceiling, roughly 70 surplus
+   beats, because nothing measured the mix until Step 3 was taught to. Count the mix while
+   planning, not after writing 300 prompts. Every beat that wants to be a variant but has no
+   legible delta under rule 18 becomes a `PLATE`, which is what brings the share back down.
+5. **Fill the continuity ledger before assigning beats.** Walk the script for every non-cast
+   object drawn in two or more separated scenes: the balance, the ladder, the chart, the camp
+   ring, the recurring diagram. Give each one a canonical first timestamp, a locked one-phrase
+   description, and the list of timestamps it returns at. Anything named, spoken about, or
+   treated as a participant is not a ledger object, it is a cast member, so stop and add it to
+   `/cast` instead. Every return listed here becomes an `@[timestamp]` in Step 2 under rule 19.
+6. **Compose every build-opening plate around the space its deltas will need.** A plate that
+   arrives full cannot carry a build, and its variants degrade into attribute changes, which is
+   the rule 18 failure. Decide the empty regions at plan time, in the plate's `Meaning` cell.
+7. Keep `ATMOSPHERIC` at or below 10 percent. Use `CLEAN` near 40 percent and `LAYERED` near
    50 percent.
-6. Rotate registers after two or three beats. A longer run is legal only when every beat shares
+8. Rotate registers after two or three beats. A longer run is legal only when every beat shares
    one plate and forms a valid build.
-7. In each 30 second block, plan at least four shot tasks from the V2 shot grammar.
-8. Every variant points backward to an earlier source beat and names exactly one meaningful
-   delta. Every callback points backward and states the changed meaning.
-9. Add CapCut-only events where required so no ordinary unchanged hold exceeds 4 seconds and
-   whole-video rhythm reaches 28 to 32 meaningful visual states per minute.
-10. Plan 5 to 8 build chains and an ending callback to the hook for a normal 10 to 12 minute
+9. In each 30 second block, plan at least four shot tasks from the V2 shot grammar.
+10. Every variant points backward to an earlier source beat and names exactly one meaningful
+    delta that satisfies rule 18. Every callback points backward and states the changed meaning.
+11. Add CapCut-only events where required so no ordinary unchanged hold exceeds 4 seconds and
+    whole-video rhythm reaches 28 to 32 meaningful visual states per minute.
+12. Plan 5 to 8 build chains and an ending callback to the hook for a normal 10 to 12 minute
     episode.
-11. Mark where the generation chain gets cut. A cut belongs at a chapter or act boundary and at
+13. Mark where the generation chain gets cut. A cut belongs at a chapter or act boundary and at
     any hard cut in place, era, cast, or surface register. It may only land on a `PLATE` row,
     never on a `VARIANT`, a `CALLBACK`, or a hold, and never between a variant and its source.
     These become the `---` lines in `image-prompts.md`. See prompt rule 16.
@@ -249,6 +263,64 @@ interior`, or `pure white card`. Follow the V2 budget and selected chapter palet
       likeness, not a rendered face. If a genuine photograph of the person is wanted, that is
       an overlay decision for CapCut at edit time, not an image-generation prompt.
 
+18. **A delta must be legible as presence, absence, position, or count, at the size it is
+    drawn.** This is the rule that separates a real variant from a duplicate.
+
+    Project 12 shipped both shapes and the difference is visible in the finished images.
+    `[0:29]` to `[0:35]` works: the plate plants three panels and leaves two of them **empty**,
+    then panel 2 fills, panel 3 fills, and a figure walks out of panel 3. Every delta claims a
+    different region that was reserved for it. `[1:41]` to `[1:48]` fails: the plate draws
+    three cards with their shapes already in them, and the delta at `[1:43]` is "the angular
+    shape on the right thickens and turns hard edged". Nothing appears, nothing moves, no
+    region is claimed. The model can only ignore it, which leaves generator noise as the sole
+    difference, or redraw, which changes the frame for the wrong reason. `[10:50]`'s "every one
+    of those faces is calm and settled", on nine figures a few pixels wide, fails the same way:
+    the delta sits below the scale it is drawn at.
+
+    - **Attribute-only deltas are banned.** Thicker, harder, softer, calmer, tenser, warmer,
+      more hostile, more crowded. If the change is an adjective applied to something already on
+      screen, it is not a delta.
+    - **Check the scale before writing the delta.** A change to a face, a label, or a texture
+      inside an element drawn small is not legible no matter how it is worded. Either the plate
+      draws that element large enough, or the delta belongs somewhere else.
+    - **Reserve the space in the plate.** When the plan opens a build chain, the plate must be
+      composed with the empty regions its coming deltas will occupy. A plate that arrives full
+      has nowhere to put its own build.
+    - **When a beat has no legible delta available, promote it to a `PLATE`.** Never write a
+      variant you know will not read. Do not drop the generation and do not merge it into a
+      neighbour: one transcript cue is always exactly one prompt, and `CAPCUT` beats are extra
+      beats, never replacements. The escape hatch is a genuinely new composition on the same
+      meaning, a different register, shot, or angle, which is also how the variant share stays
+      inside its budget.
+
+19. **Use `@[timestamp]` to hold a recurring non-cast object consistent across a chain break.**
+    Read the `@[timestamp]` section of `.agents/rules/image-generation.md` for the tool
+    contract. The chain reaches one card back and a `---` severs it, so an object introduced at
+    `[0:38]` and drawn again at `[10:12]` is otherwise redrawn from words alone and returns a
+    different colour. That inconsistency is what this syntax exists to fix.
+
+    - **Write `@[M:SS]`, colon and all**, copied from the target prompt's own leading
+      timestamp. `@[0:38]`, never `@[0-38]`.
+    - **Point at the object's canonical first appearance, never at its most recent one.**
+      Chained hops re-generate from a copy and compound the drift. The canonical timestamp is
+      the one recorded in the continuity ledger.
+    - **Backward only**, and never at the prompt's own timestamp.
+    - **Two per prompt is the ceiling in practice.** More are legal but the model starts
+      blending the referenced compositions into the new frame.
+    - **Every prompt containing an `@[timestamp]` also carries the V2 SCENE REFERENCE LIMIT**
+      from `visual-style.md`, copied character for character, placed after the scene clause and
+      before the STYLE LOCK. Without it the tool hands over a whole image and the model takes
+      the whole image. The limit is what makes it a design source instead of a composition
+      source, which is the exact opposite of a `VARIANT`'s
+      `Preserve the attached source plate`.
+    - **Put the reference at the start of the clause about that object**, the same way a
+      `@TOKEN` opens its character's clause: `@[0:38] the same charcoal beam balance returns,
+      now tipped the other way`.
+    - **Do not reference a cast member's timestamp.** Characters are held by their bound sheet.
+      A `@[timestamp]` aimed at a character competes with the sheet instead of helping it.
+    - **Do not reference across a hold or inside a build chain.** Consecutive frames already
+      inherit each other; a reference there is noise.
+
 ## Step 2 - Generate in internal chunks
 
 **Write NO header. The file contains prompts, blank separators, and `---` chain breaks, and
@@ -261,8 +333,11 @@ where the human reads them and the tool never sees them.
 
 Work through the transcript in **internal chunks of 25 cues**, appending each chunk to the
 file. Do not ask the user between chunks. Before each chunk after the first, re-read the
-last 3 prompts you wrote so the scene-holding rule survives the chunk boundary, and re-check
-the tone map so the background palette does not drift.
+last 3 prompts you wrote so the scene-holding rule survives the chunk boundary, re-check
+the tone map so the background palette does not drift, and **re-read the continuity ledger** so
+a returning object still gets its `@[canonical]` reference. The ledger matters most exactly
+where chunking hurts most: an object introduced in chunk 1 and returning in chunk 11 is the
+case the whole reference syntax exists for, and it is the case a single forward pass forgets.
 
 Chunking is not cosmetic. A single uninterrupted pass over 250 prompts degrades: scenes stop
 holding, backgrounds drift toward white, and the last 50 prompts get shorter than the first 50. Chunk, re-anchor, continue.
@@ -366,6 +441,52 @@ awk -F'|' '
               print "break before " t " opens a " asset[t] ", not a PLATE"
             break } }
 ' "$V" "$F"
+
+# ASSET MIX, rule 18 and planning step 4. Advisory, like scene density: print it and judge it.
+# VARIANT is the share that drifts upward. Project 12 shipped 63% against a 40% ceiling.
+awk -F'|' '
+  /^\| B[0-9][0-9][0-9] / { a=$8; gsub(/^ +| +$/, "", a); n[a]++; t++ }
+  END {
+    lo["PLATE"]=35;    hi["PLATE"]=45
+    lo["VARIANT"]=30;  hi["VARIANT"]=40
+    lo["CALLBACK"]=5;  hi["CALLBACK"]=10
+    lo["CAPCUT"]=10;   hi["CAPCUT"]=15
+    printf "  asset mix over %d planned beats\n", t
+    split("PLATE VARIANT CALLBACK CAPCUT", k, " ")
+    for (i=1; i<=4; i++) { a=k[i]; p=n[a]*100/t
+      printf "    %-9s %3d  %5.2f%%  target %d to %d%s\n", \
+        a, n[a], p, lo[a], hi[a], (p<lo[a]||p>hi[a]) ? "   REVIEW" : "" } }
+' "$V"
+
+# @[timestamp] references: resolve backward to a real earlier prompt, never to self.
+awk '
+  /^\[/ { match($0, /^\[[0-9:]+\]/); ts=substr($0, 1, RLENGTH); seen[ts]=1
+    n=split($0, part, /@\[/)
+    for (i=2; i<=n; i++) if (match(part[i], /^[0-9]+:[0-9]+\]/)) {
+      r="[" substr(part[i], 1, RLENGTH); refs++
+      if (r == ts) print "  " ts " references itself"
+      else if (!(r in seen)) print "  " ts ": @" r " does not resolve to an earlier prompt" } }
+  END { print "  @[timestamp] references: " refs+0 }
+' "$F"
+
+# Every prompt carrying a reference also carries the V2 SCENE REFERENCE LIMIT. Must be 0.
+grep '@\[[0-9]' "$F" | grep -cvF "$V2_SCENE_REF_LIMIT"
+
+# Continuity ledger: every listed return actually carries @[canonical] in its prompt.
+awk -F'|' '
+  NR==FNR {
+    if ($0 ~ /^\| B[0-9][0-9][0-9] /) next
+    if ($0 !~ /^\| *[A-Za-z]/ || $0 ~ /^\| *Object/) next
+    if ($3 !~ /\[[0-9]+:[0-9]+\]/) next
+    c=$3; gsub(/[^0-9:]/, "", c); canon="[" c "]"
+    n=split($5, parts, ",")
+    for (i=1; i<=n; i++) { t=parts[i]; gsub(/[^0-9:]/, "", t)
+      if (t != "") need["[" t "]"]=canon }
+    next }
+  /^\[/ { match($0, /^\[[0-9:]+\]/); ts=substr($0, 1, RLENGTH)
+    if (ts in need && index($0, "@" need[ts]) == 0)
+      print "  ledger: " ts " returns " need[ts] " but carries no @" need[ts] }
+' "$V" "$F"
 ```
 
 For V1, fail if white is under 55 percent, cobalt is over 15 percent, any `solid blue`
@@ -376,6 +497,22 @@ For V2, fail if the plan is missing, generated plan rows do not equal prompt cou
 or surface counts do not equal prompt count, ATMOSPHERIC exceeds 10 percent, cobalt mind
 interiors exceed 10 percent, pure white cards exceed 15 percent, a source points forward or
 nowhere, a non-plate delta is missing, or both V1 and V2 strings appear.
+
+**The `@[timestamp]` checks are hard failures.** A reference that points forward, at itself, or
+at a timestamp no prompt carries is a reference the tool cannot resolve, so it silently does
+nothing and the inconsistency it was placed to fix ships anyway. A prompt carrying a reference
+without the V2 SCENE REFERENCE LIMIT is worse than no reference at all: the tool attaches a
+whole frame and the model copies its composition into a scene that was supposed to be new. A
+ledger return with no `@[canonical]` in its prompt means the ledger is describing an intent the
+file does not implement. Fix all three before reporting.
+
+**The asset mix is advisory, exactly like scene density.** Print it, then judge it against the
+script. A dense card and diagram act legitimately runs variant-heavy; a fast-cutting act
+legitimately runs plate-heavy. What is not acceptable is a `VARIANT` share above its ceiling
+that nobody looked at, because every surplus variant is a beat whose delta was too thin to
+justify a plate, which is precisely the rule 18 defect. When `VARIANT` prints `REVIEW`, re-read
+rule 18 against the offending beats and promote the ones with no legible delta to `PLATE`. If
+the share is genuinely justified, say why in the Step 4 report.
 
 Either version fails if a `---` line is malformed, doubled, leading, or trailing, or if any
 other non-prompt line survives. For V2 it also fails if a break opens anything but a `PLATE`.
@@ -410,7 +547,11 @@ any real named people, and the first 3 prompts as a sample. At the target densit
 around 100 breaks, so give the density number and the act boundaries rather than annotating
 every break. For V2, also report style version, chapter colors, motif, register totals, tier totals,
 surface totals, new plates, variants, callbacks, CapCut-only beats, hero frames, longest planned
-hold, and planned beats per minute. Then quote the selected version's GENERATION LINE from
+hold, and planned beats per minute. Also report **the asset mix as percentages against its
+targets**, with a reason for anything marked `REVIEW`, and **the continuity ledger**: each
+recurring non-cast object, its canonical timestamp, and how many `@[timestamp]` references
+point back at it. Those two lines are what tell the human that the near-duplicate and
+cross-scene-drift defects were actually addressed on this run. Then quote the selected version's GENERATION LINE from
 `visual-style.md` verbatim so the human can copy it:
 
 > Image prompts saved to `<path>`. The file is prompts only, so it imports directly.
@@ -451,6 +592,20 @@ hold, and planned beats per minute. Then quote the selected version's GENERATION
 - Never leave a real named person on screen as a generic doodle, and never caption their name
   more than once. The likeness is a `/cast` obligation; the caption and the introduction beat
   are this skill's.
+- Never write a delta that is only an attribute change on something already drawn, and never
+  write one below the scale it is drawn at. If the beat has no legible delta, it is a `PLATE`.
+- Never solve a thin delta by dropping the generation or merging it into a neighbour. One cue
+  is always one prompt, and `CAPCUT` beats are extra beats, never replacements.
+- Never open a build chain on a plate that arrives full. Reserve the space the deltas will need.
+- Never point an `@[timestamp]` forward, at itself, or at a timestamp no prompt carries.
+- Never write an `@[timestamp]` without the V2 SCENE REFERENCE LIMIT in the same prompt. Without
+  it the model copies the referenced frame's composition instead of just its object design.
+- Never chain references. Every appearance points at the object's canonical first timestamp, not
+  at the previous appearance, or the drift compounds hop by hop.
+- Never aim an `@[timestamp]` at a cast member. The bound sheet holds characters, and a
+  reference competes with it.
+- Never ship a `VARIANT` share above its ceiling without looking at it. Every surplus variant is
+  a beat whose delta was too thin to earn a plate.
 - Never re-describe a cast member. Never invent a token.
 
 ## Self-improvement

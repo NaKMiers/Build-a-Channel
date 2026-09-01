@@ -1272,3 +1272,158 @@ Stay flexible: this is not a template to apply on every mention. A researcher na
 never depicted still stays a diagram, per the project 2 note above. The style lock is unchanged,
 so this is a recognisable doodle likeness, never a rendered face. A genuine photograph, if ever
 wanted, is a CapCut overlay at edit time, not a generation prompt.
+
+## 2026-09-01 - Two defects found in the generated project 12 images, and the two rules added
+
+The user reviewed the rendered scene images from project 12 and named two problems. Both were
+real, both are now rules, and the second one changed the tool.
+
+### Near-duplicate scenes inside one block, caused by attribute-only deltas
+
+Named pairs: `[1-41]`/`[1-43]`, `[1-46]`/`[1-48]`, `[10-48]`/`[10-50]`, `[0-38]`/`[0-40]`. The
+user's words: they differ "because of the AI-Generated Deviation", not because the prompt asked
+for anything different, so the difference "doesn't mean anything" and does not help the frame
+express the transcript.
+
+The user's own theory was that the frames look alike because each scene references the previous
+one. That is not the discriminator, and the counter-example is in the same project: the user
+praised `[0-29]`, `[0-32]`, `[0-33]`, `[0-35]`, which use the identical VARIANT-inherits-previous
+mechanism and read as a build. **The discriminator is the kind of delta.**
+
+- The praised run's plate plants three panels and leaves two of them **empty**. Then panel 2
+  fills, panel 3 fills, a figure walks out of panel 3. Each delta claims a different reserved
+  region.
+- The rejected run's plate draws three cards with their shapes already in them, and `[1:43]`'s
+  delta is "the angular shape on the right thickens and turns hard edged". Nothing appears,
+  nothing moves, no region is claimed, so the model either ignores it, leaving pure generator
+  noise as the only difference, or redraws for the wrong reason.
+- `[10:50]`'s "every one of those faces is calm and settled", on nine figures a few pixels wide,
+  fails on scale rather than on kind. Same outcome.
+
+Now rule 18: **a delta must be legible as presence, absence, position, or count, at the size it
+is drawn.** Attribute-only deltas are banned. Build-opening plates must reserve the space their
+deltas will occupy. A beat with no legible delta is promoted to `PLATE`.
+
+**Do not fix a thin delta by deleting the beat.** The user was asked whether to drop it to
+CapCut or merge it into a neighbour and said keep it, which is also what the architecture
+requires: one cue is always one prompt, and `CAPCUT` rows are extra beats, never replacements.
+Promotion to `PLATE` is the only escape hatch.
+
+The measurable cause behind it: **project 12 shipped 56.7 percent `VARIANT` against a 40 percent
+ceiling**, with `PLATE` 32.7, `CALLBACK` 1.1, and `CAPCUT` 9.5, all three under theirs. The
+budget existed in the planning pass and **nothing ever measured it**, so it drifted 17 points
+unseen across 349 beats. Step 3 and `/check` now print the mix. Per the user, it is **advisory,
+not a gate**, like scene density. Beware measuring it with a bare `grep -c '| CALLBACK |'`: the
+`Motif` column also takes the value `CALLBACK`, which double-counts. Read field `$8`.
+
+### Cross-block inconsistency, fixed by a new `@[timestamp]` syntax and a tool change
+
+The user's example: a green ball called Alex is drawn green in block 1 and red in block 20,
+because the two blocks are separated by a `---` and the chain only reaches one card back. Cast
+sheets solve this for characters and solve nothing for props.
+
+The user's fix, and they updated the generation tool to implement it: **a prompt may reference an
+earlier scene by its timestamp, `@[0:38]`, the same way it references a cast member by `@TOKEN`.**
+The tool resolves it to the image that card generated and attaches it as an extra reference.
+
+Answers the user gave when the spec was put to them, all of which are now in
+`.agents/rules/image-generation.md`:
+
+- The reference is a **design source, not a composition source**, and they asked for the
+  limiting sentence to be included. That is the new `V2 SCENE REFERENCE LIMIT` verbatim string in
+  `visual-style.md`, exported by `style-strings.sh` as `V2_SCENE_REF_LIMIT`, required in every
+  prompt carrying a reference. Without it the tool hands over a whole frame and the model takes
+  the whole frame, which is the exact opposite of what a `VARIANT` wants.
+- References **add to** the chain wire rather than replacing it. The user will change tool code
+  if that combination causes trouble.
+- **Unlimited references are legal, two is the recommendation.**
+
+Two rules the spec work produced that the user did not have to state:
+
+- **Always point at the object's canonical first appearance, never at its most recent one.**
+  Chained hops re-generate from a copy and compound the drift; every appearance pointing at the
+  original makes the twentieth as accurate as the second.
+- The syntax is addressable **only because timestamps in `image-prompts.md` are unique and
+  strictly ascending**, which is true only because `transcript` cascades duplicate remaps.
+  Project 12 needed a three-stamp cascade at `[9:32]`. That invariant is now load-bearing for
+  two features, not one.
+
+The canonical timestamps live in a new **continuity ledger** table at the top of
+`visual-plan.md`. Fill it before assigning beats, and re-read it at every chunk boundary: an
+object introduced in chunk 1 and returning in chunk 11 is exactly the case a single forward pass
+forgets, and exactly the case the syntax exists for. Anything named, spoken about, or treated as
+a participant is not a ledger object, it is a cast member.
+
+## Project 13 revised (2026-09-01) under rules 18 and 19: 6 delta rewrites, 11 ledger objects, 74 references
+
+First run of the legible-delta rule and the `@[timestamp]` syntax on a real project. Project 13
+was already clean on every mechanical check, so this was a targeted revision of the two things
+the new rules reach, not a rebuild. Prompt count, breaks, tiers and surfaces all came out
+byte-identical afterwards, which is the point: the new rules touch delta prose and references
+and nothing else.
+
+### Auditing rule 18 needs BOTH directions, because each one alone misses real faults
+
+Grepping for attribute verbs (`thicken`, `darken`, `soften`, `is redrawn`) found 4 bad deltas
+out of 183. Then the inverse test, flagging every delta with no presence, absence, position or
+count signal, flagged 18, of which 16 were false alarms of the regex and **2 were genuine
+faults the verb list had missed**: `[1:08]` "the three filled boxes are redrawn with a heavier
+contour" and `[9:59]` "one week on the wall calendar lightens slightly against the rest of the
+grid". Six real faults total. Neither test alone is sufficient. Run the verb list, then run the
+inverse, then read the inverse's output by hand.
+
+### The fix is almost always a region the plate already reserved
+
+Four of the six rewrites landed in empty space the plate had already composed for them: the
+empty right panel at `[2:26]`, the empty fourth box of the reasoning card at `[1:08]`, the empty
+third node of the loop at `[9:28]`. That is the same shape as the `[0:29]` build the user praised
+in project 12. **When a plate reserves space, its variants write themselves; when it arrives
+full, its variants degrade into adjectives.** Reserving the space is a planning decision, not a
+prose decision, which is why it belongs in the planning pass rather than in the prompt rules.
+
+Zero variants were promoted to `PLATE`, because after the audit none was left without a legible
+delta. **Promotion is the escape hatch for a beat with no delta available, not a lever for
+hitting the asset budget.** `VARIANT` therefore stayed at 50.55 percent against a 40 ceiling and
+is reported as an honest deviation: 126 plates each carrying a two or three beat build is what
+this script's dense card and diagram content produces, the same skew projects 5, 6, 7 and 12
+recorded. Converting 38 sound variants into plates to reach 40 percent would be the project 11
+mistake in reverse.
+
+### The @ prefix is the failure mode, and only the reference check catches it
+
+The insertion script wrote `[0:00] the charcoal aperture ring, ...` instead of
+`@[0:00] the charcoal aperture ring, ...` for all 74 references, because the ledger table stores
+the canonical stamp as `[0:00]` and the `@` has to be added at insertion time. **Nothing else in
+the pipeline sees this.** The timestamp diff is anchored to line start so it passes, the
+prompts-only check passes, the surface and tier counts pass, and the file looks right to a
+reader. The only thing that failed was the reference count, which read 0. Count the references
+after writing them and compare against the ledger's own `Returns at` total.
+
+### The previous generator truncated the plan's Delta cells at exactly 60 characters
+
+183 VARIANT cells, 18 CALLBACK cells and 35 CAPCUT cells, all cut mid-word. Memory's own claim
+that **`image-prompts.md` plus `visual-plan.md` are the recovery pair is false while this is
+true**, because the plan cannot reconstruct a delta it only holds two thirds of. Restoring it
+needs three passes, not one: variants carry `The single delta is`, callbacks carry
+`The change in meaning is`, and CapCut rows have no prompt at all so their text has to be
+rewritten rather than recovered. Check `length(delta) == 60` as a truncation signature on any
+plan a previous run generated.
+
+### One reference per block, not per frame, and anchor every one at the first appearance
+
+74 references across 66 prompts, 58 carrying one and 8 carrying two, none carrying three. The
+rule that produced that spread: place the reference on the first prompt in each break-separated
+block that draws the object, and skip the rest of the block because they already inherit. The
+aperture ring returns in 25 blocks and the camp hearth in 19, so those two objects alone are 44
+of the 74. Both point at their own first drawing, never at the previous return.
+
+Ledger: aperture ring `[0:00]`, month-block strip `[0:34]`, reasoning test card `[1:05]`,
+capacity vessel `[1:46]`, standing sugarcane `[2:30]`, clock face `[3:52]`, camp hearth `[4:55]`,
+affluence span `[5:03]`, wrapped bundle `[5:18]`, gathering bag `[5:29]`, decision token `[9:52]`.
+
+Two of these are the cases the syntax exists for and would have drifted without it: the reasoning
+test card appears at `[1:05]` and `[1:38]` with **no cast token in either frame**, and the
+capacity vessel is established at `[1:46]`, disappears for six minutes, and returns at `[8:12]`.
+Props that live on a cast sheet's prop block (the bundle, the cane, the bag) are lower risk
+because their token usually accompanies them, but they are still ledger objects: the sheet binds
+the design only when the token is in the prompt.

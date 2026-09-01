@@ -94,6 +94,53 @@ through every card in between. Place breaks between chains, never inside one.
 Judgment call in one line: if you would be annoyed to see the previous image bleed into
 this one, break. If you would be relieved, do not.
 
+## The `@[timestamp]` scene reference
+
+The chain is linear and only reaches one card back, so a `---` permanently severs a later
+frame from everything before it. That is correct for composition and wrong for identity: an
+object introduced at `[0:38]` and shown again at `[10:12]` has no path back to its own first
+drawing, so the second one is redrawn from words alone and comes back a different colour. The
+cast sheets solve this for characters, because they are bound once and reach every card. They
+do not solve it for props, diagrams, and recurring objects that do not deserve a sheet.
+
+`@[timestamp]` is the manual wire that closes that gap. Written inside a prompt, it tells the
+tool to find the card whose prompt begins with that exact timestamp, take the image that card
+generated, and attach it to this card as an **additional** reference alongside the bound
+character sheets.
+
+The contract, which the tool implements and `scenes` and `check` both enforce:
+
+- **Syntax is `@[M:SS]`, colon and all**, copied character for character from the target
+  prompt's own leading timestamp. `@[0:38]`, never `@[0-38]`. The hyphen form is only ever a
+  file name.
+- **It resolves to exactly one card.** Timestamps in `image-prompts.md` are unique and strictly
+  ascending, because `transcript` remaps any duplicate before `scenes` runs, cascading when the
+  next second is also taken. That uniqueness is what makes the syntax addressable at all.
+- **Backward only.** The target must appear earlier in the file. A reference pointing forward
+  or at itself names an image that does not exist yet at generation time.
+- **It survives `---`.** This is the whole point. The break cuts the automatic wire to the
+  previous card; it must never cut a reference placed by hand. A break and a reference are
+  different mechanisms and the break does not outrank it.
+- **It adds to the chain, it does not replace it.** A `VARIANT` that also carries a reference
+  inherits its source plate *and* receives the referenced image, plus the character sheets.
+- **Any number are legal, two is the practical ceiling.** Past two, the model starts blending
+  the composition of the referenced frames into the new one and the frame falls apart.
+- **It is a design source, not a composition source.** The tool hands over a whole image
+  because that is all it can hand over, so the prompt must say which part of it counts. Every
+  prompt containing an `@[timestamp]` also carries the V2 SCENE REFERENCE LIMIT string from
+  `visual-style.md` verbatim, which restricts the reference to the named object's shape,
+  proportion, colour, and line treatment and forbids taking composition, camera, background, or
+  any other object from it. This is exactly the opposite of a `VARIANT`, where
+  `Preserve the attached source plate` deliberately does take the whole composition.
+- **Never rendered.** The existing style lock already covers it: `@[name] is mention syntax for
+  reference only and must never be rendered as visible text`.
+
+**Always point at the object's first appearance, never at its most recent one.** If `[10:12]`
+references `[5:04]` and `[5:04]` references `[0:38]`, each hop re-generates from a copy and the
+drift compounds down the chain. Every appearance pointing straight back at `[0:38]` makes the
+twentieth one as accurate as the second. `scenes` records that canonical timestamp per object
+in the continuity ledger at the top of `visual-plan.md`.
+
 ## After the run
 
 The tool auto-downloads the generated images. The owner saves each one into `scenes/` under
