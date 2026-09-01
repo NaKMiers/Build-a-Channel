@@ -1100,6 +1100,129 @@ scene, which is the introduction shape rule 17 prescribes. The five uncast resea
 (`BAUMEISTER 2001`, `ITO 1998`, `GOTTMAN`, `BOEHM`, `BRADY 2017`) are charcoal text on their own
 first frame only and stay diagram or scene labels, since none of those people is on the cast sheet.
 
+## Project 13 (2026-09-01), the psychology of being poor: 327 prompts, 362 plan beats, 126 plates, 103 breaks
+
+Clean on every mechanical check. 327 cues to 327 prompts, V2 anchor and lock on all 327 with zero
+V1 strings, timestamps an exact diff apart from the four documented remap lines, zero stray tokens,
+zero non-prompt lines, first byte `[`, zero adjacent pairs without a blank line, 859 lines, tier
+plan equal to prompts exactly (141 CLEAN / 176 LAYERED / 10 ATMOSPHERIC), one surface phrase per
+prompt, zero mixed-surface plates, every source pointing backward, every break opening a PLATE, no
+em dash, no yellow, zero positive mitten hits. Breaks 103 over 327 is one scene every 3.17 prompts,
+longest inherited run 8. Built data-first: chains as python data, budgets rebalanced as data, 126
+plate compositions written as prose, variants and callbacks derived mechanically.
+
+Motif: **the aperture ring**, a heavy charcoal circle that narrows onto one bright object and drops
+everything outside it into the dark. 71 beats. Chosen by the project 8 rule, the drawing both
+halves share: the ancestral half is the ring narrowing onto an empty bag and then opening again
+when the ask is answered, the modern half is the identical ring with a lock drawn on its hinge. The
+script hands the word over directly ("It goes into the tunnel") and returns to it in the shift and
+the tease, so one glyph covers all four acts.
+
+### A framing device is not a cast entry, and that decision pays the chapter budget back
+
+`/cast` had already refused the tunnel a cast slot on the grounds that it is a framing device
+rather than a character, and assigned it the reserved cobalt mind interior. That turned out to
+matter here for a reason the cast stage did not state: **cobalt is a base episode colour, not one
+of the three chapter colours, so the video's most-repeated visual thread cost nothing from the
+three-colour allowance** and coral, dusty teal and tan could each carry a world. Worth checking at
+planning time whenever a motif is a mind-state: if it can be a surface instead of a chapter colour,
+the chapter budget gets a slot back.
+
+### THE FIRST-PASS BUDGET ERRORS, all four again, all four fixed as data
+
+Sixth run in a row with the same shape, so a first pass is now reliably wrong by default.
+
+1. **Surface**: tinted 35.2 percent against a 20 target and cobalt 15.0 against a 10 ceiling, with
+   story at 26.9 and cream at 12.8. Two causes, and the cobalt one is new: every mind-adjacent beat
+   reached for the mind interior because the episode's motif lives there. **A motif that has a
+   surface of its own will blow that surface's ceiling unless it is capped at planning time.**
+   Ten cobalt chains were moved out to story environments and cream cards, keeping only the eight
+   that are literally inside a head. Final story 37.9, cream 31.8, tinted 15.0, white 9.2, cobalt
+   6.1, every one inside tolerance.
+2. **Register**: DIAGRAM 30.6 against a 15 to 20 band with STORY at 19.9. Fixed by honest
+   relabeling only, per projects 11 and 12: seven chains the script actually sets in the camp or a
+   shop were card and diagram abstractions of scenes that happen in a place, so they became story
+   environments with real place prose. Final STORY 27.2, DIAGRAM 19.3, CARD 19.3, HYBRID 13.8,
+   SPLIT_OR_SCALE 10.4, PORTRAIT 10.1.
+3. **Tier**: the first pass sat at 62 percent CLEAN because every card defaulted there. Moving
+   depth-plane card chains to LAYERED overshot to 63 percent LAYERED, the same over-correction
+   project 12 recorded, so eleven chains were moved back. Final 43.1 CLEAN, 53.8 LAYERED, 3.1
+   ATMOSPHERIC.
+4. **Shot grammar**: six 30 second blocks under four shot tasks. Fixed by re-shotting nine plates
+   and one beat, all honest (a bracket drawn large is macro, a two-column editorial frame is a
+   card, two compared bars are a scale). Zero blocks under four afterwards, including the final
+   block, which is the first time no arithmetic-limit exception was needed.
+
+### The CapCut threshold is bimodal again, and the chain-aware rule landed it first try
+
+Same finding as project 11 and project 12. Measured on this transcript: `gap >= 3` gives 111
+CapCut beats and a cadence of 37.1 per minute, `gap >= 4` gives 19 and 29.3. Nothing between.
+**The chain-aware form is what fits: `gap >= 4` always, plus `gap >= 3` only where the beat sits
+in a chain of four or more beats on one plate.** That gave 35 beats, 9.7 percent, cadence 30.6 per
+minute, mid-band. Print the histogram of both thresholds before choosing; a single number will
+always miss.
+
+CapCut ended at 9.7 percent, a fraction under the 10 to 15 band. Reported rather than padded: the
+transcript's cues are mostly two seconds apart, so there is nothing left to subdivide without
+inventing holds that do not exist.
+
+### The thin-place check needs an object vocabulary, not a comma count
+
+Project 11's rule is that a story-environment plate must name the place and at least three objects
+that belong to it. The cheap implementation, counting commas, flagged twenty plates that were
+perfectly fine and missed the shape of the real fault. Replaced with a regex of concrete object
+nouns and a count of DISTINCT hits, plus an explicit ban on "an ordinary room", "a plain wall edge"
+and "nothing else in the frame". That found four genuinely thin plates and passed the rest.
+**Check the content, not the punctuation.**
+
+Related trap from the same pass: when a chain is converted from a card to a story environment
+during rebalancing, **its prose is still card prose and has to be rewritten**. Seven chains were
+moved to story environments and all seven still opened "A warm cream card holding...". The surface
+counter, the mixed-surface check and the tier equality all passed on them. Only the place-noun
+assertion caught it. **Any surface move in a rebalancing pass is a prose rewrite, not a data edit.**
+
+### @YOU landed at 46.2 percent of eligible cues by the project 8 rule applied deliberately
+
+First assembly had @YOU on 49 of 327, which is 31.4 percent of the 156 cues where rule 12 allows
+him (the mall study, the farmer act, the lab games and the whole ancestral act bar him, 171 cues).
+Listing the modern plates without him showed nine where a second-person script genuinely puts the
+viewer in the frame rather than beside it: his own hands dropping tasks into the capacity vessel,
+his own attention inside the narrowing ring, his own palm held out, his own body standing inside
+the loop, his own sofa. Adding him to those nine plates propagated through their variants and took
+him to 72, **46.2 percent of eligible, matching project 12's record.** Exactly one @YOU frame sits
+inside a barred act, `[7:47]`, and it is the explicit then-versus-now split rule 12 permits.
+
+Cast: @YOU 72, @BAND 30, @FORAGER 27, @FARMER 26, @BILL 14; tokens on 147 of 327 prompts.
+
+### The four uncast researchers got one shared introduction card, four names, four beats
+
+The script names Mani, Mullainathan, Shafir and Zhao in four consecutive cues before showing what
+they did, and none of them is on the cast sheet. Rule 17's introduction beat generalises cleanly to
+four: one cream card, one portrait appearing per cue with its own charcoal name caption, so by the
+fourth beat the viewer has four faces and four names and the mall scene that follows starts with
+known people. Shah gets the same treatment as a single caption on the lab plate. **A four-name run
+is a progressive build, not four separate frames**, and it costs the text budget four captions
+instead of scattering names across the act.
+
+### Honest deviations, reported not padded
+
+- **STORY 27.2 against a 30 to 40 band**, with DIAGRAM, CARD and SPLIT_OR_SCALE each about a point
+  over theirs. This script is two named experiments, a lab game, a capacity vessel, a fee row and a
+  three-node loop, so its natural centre is cards and diagrams. Same class of skew as projects 5,
+  6, 7 and 12, and inventing scenes to reach 30 would be the wrong conversion.
+- **CAPCUT 9.7 percent**, capped by the gap histogram as above.
+- **CALLBACK 5.0 percent**, at the bottom of its band, because the four reprises that carry real
+  weight (the harvest bars, the post-harvest equivalence, the affluence span, the hook kitchen) are
+  PLATEs with `Motif: CALLBACK` so each gets a clean chain, which is the projects 6, 8 and 9
+  pattern. The 18 CALLBACK-asset beats are the mid-chain reprises that legitimately inherit.
+- Length drift first-50 to last-50 was 1.2 percent, in line with projects 11 and 12, and for the
+  same reason: only 126 pieces of prose were hand-written.
+
+Generators for this run live in the session scratchpad as `plan13.py` and `assemble13.py`. Per the
+project 11 note the scratchpad is not durable, so **`image-prompts.md` plus `visual-plan.md` are
+the recovery pair**: between them they carry the prose, the per-beat asset, plate, register, shot,
+tier, delta, motif and text, and the surface is recoverable from each prompt's own phrase.
+
 ## 2026-08-29 - Two standing rules from user feedback
 
 ### Scene density: the script decides, the numbers are only a sanity anchor

@@ -462,6 +462,33 @@ Craft notes:
   paycheck a year, a band of 30, 3 or 4 days without food. The 150-vs-1500 and the
   before-vs-after pairs are both what the two-number layout wants.
 
+## NARRATION PACE: use 175 wpm, not 169 (settled 2026-09-01)
+
+The 169 wpm figure used throughout this file to convert the four-beat hook budget into word
+positions is **a systematic underestimate for V2 recordings and should no longer be the planning
+number.** It was derived from all seven published videos, most of them older V1 reads. Every V2
+recording measured since has been faster:
+
+| Recording | Measured wpm |
+| --------- | ------------ |
+| Project 11 | 172.8 |
+| Project 12 | 179.5 |
+| Project 13 | 177.9 |
+
+Mean 176.7, three for three above 169. Project 12 set the condition that one more recording above
+175 would move the estimator, and project 13 delivered it.
+
+**Plan hooks at 175 wpm.** Word 100 is therefore about the 34 second mark, not 35, and the
+word-50 "but" threshold is about second 17 rather than 18. The figure is deliberately kept just
+under the 176.7 mean so the error keeps pointing the safe way: a beat engineered to land at
+second N lands at or slightly before N. Project 13's five engineered beats each landed 1 to 2
+seconds early against their 169 wpm predictions, which is the direction to preserve.
+
+The word budget itself does not change. The four beats are still 30 / 50 / 75 / 100 words, because
+the budget is what protects the opening from scene-setting; only the seconds those words map to
+move. Full measurement table in `.agents/skills/transcript/references/memory.md` under the
+project 13 retry.
+
 ## OPEN DISCREPANCY: question density
 
 `.agents/rules/channel-dna.md` says "Question every 4 to 6 sentences". **The accepted

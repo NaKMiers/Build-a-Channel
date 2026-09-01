@@ -82,6 +82,37 @@ chapter timestamp grepped back against `transcript.md` and present verbatim.
   hashtags, because `*` allows zero letters and every markdown heading `#` matches. Use
   `grep -o '#[a-z]\+'` or count the hashtag line alone.
 
+## Project 13 (2026-09-01), the psychology of being poor - ran AFTER `/thumbnail`, which inverts a standing lesson
+
+7 chapters, 20 hashtags, 36 tags, all five titles 54 to 58 characters, 3 fenced blocks. Every
+chapter timestamp grepped back against `transcript.md` and present verbatim.
+
+- **The order was `/thumbnail` then `/metadata`, the reverse of the Lessons note below.** That note
+  says to write the title first and hand it to `thumbnail` so the headline does not restate it. The
+  owner invoked them the other way round, and it cost nothing here because `thumbnail` mines the
+  script and the folder slug rather than the published title, and because its own rules already ban
+  restating the title. The five headlines (`WHY THE BLANK BOX?`, `SAME MAN?`, `WHAT'S IN THE DARK?`,
+  `REFUSING IS THE CRIME`, `WHO DO YOU ASK?`) were checked against chosen title A afterwards and
+  none of them overlap. **When metadata runs second, check the existing headlines against the five
+  title variants before recommending one**, and reject a title that collides with an already-written
+  headline rather than rewriting the thumbnail set.
+- **Recommended title A over C**, the same call as projects 11 and 12 and for the same reason: A is
+  a question a tired viewer parses at a glance, and it is a near quote of the script's first line,
+  which the hook resolves inside 30 seconds. C ("The Scarcity Effect: ...") is the search-friendly
+  form the channel already publishes under and is the A/B alternative.
+- Citations: four DOIs, all confirmed by content through the Crossref API per the project 12 rule,
+  not by status code. Mani 2013 and Shah 2012 are both Science, Woodburn 1982 is the same
+  `10.2307/2801707` project 10 used, and Peterson 1993 resolves through
+  `10.1525/aa.1993.95.4.02a00050`. **Nicolas Peterson has no English Wikipedia article, it 404s**,
+  so the DOI is the only citation route for demand sharing. Sahlins is cited through the
+  `Original_affluent_society` article rather than his biography page, because the script uses the
+  argument and not the man.
+- The script names "bandwidth" as a term researchers use but never names the book it comes from, so
+  Mullainathan and Shafir's `Scarcity` is cited as a sixth source for the vocabulary itself. Six
+  sources for five named researchers.
+- **Chapters stop at 8:17 of an 11:47 video**, the third project running with this deliberate cut.
+  The fee loop, the shift, the echo and the tease all stay unsignposted.
+
 ## PRECONDITION CONTRADICTION IN THE REPO, hit on 2026-08-25 (project 10), NOW RESOLVED IN PRACTICE
 
 `/metadata` was invoked straight after `/cast`, before any voiceover existed, and correctly

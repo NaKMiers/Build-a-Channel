@@ -410,6 +410,145 @@ data points before recalibrating; this is the first. The error still points the 
 engineered for second N lands at or before N, but the gap is widening. **One more recording above
 175 wpm and the script skill's estimator should move.**
 
+## Project 13 retry (2026-09-01, after the monthly reset) - clean align, two duplicates, and the wpm estimator finally moves
+
+Quota reset to 2026-10-01 landed and the run completed with zero rework, exactly as the blocked
+run below predicted: `full.mp3`, `offsets.json`, the folder sweep, the `file` check and the wps
+arithmetic all survived, so the retry was a single API call and nothing else.
+
+Quota before spending: free tier, 4308 of 10000 used, **5692 remaining** against the predicted
+788. The 1.111 credits per second estimator pinned in the blocked run below held: predicted 788
+for 709.4s, and the call went through without a quota complaint.
+
+**327 cues**, median 1.8s, last cue `[11:47]`, aligned speech ending at 709.1s of 709.4s audio, no
+malformed lines, transcript text word-for-word identical to the script at 2102 words. 27.7 cues
+per minute against the V2 profile's predicted 27.5. **Zero one-word cues**, the first project with
+none, which follows from a script whose short sentences are all two words or more. Duration
+11m49.4s is inside the channel-dna 10 to 14 minute spec. V2 profile confirmed from the project's
+own cast header.
+
+Post-call checks: whole-file 2.96 wps, rolling 30s median 2.97, max 3.63 at 340s, largest silence
+1.49s at 2m22.5s. Rolling median equals the whole-file figure, so the read was uniform and nothing
+was dropped. Both part seams continuous, 0.50s gap at the 299.4s join and 0.72s at the 436.1s
+join. `words.json` was again a **bare top-level list**.
+
+### TWO duplicates, and the two resolutions are different shapes
+
+Both were resolved by forward cascade, but only one of them was the one-step bump the older
+convention assumes. Report the free/taken map, never a bare "use the next second".
+
+`[2:49]` twice, inside the four-beat "Same farmer. Same field. Same brain." run:
+
+```
+[2:47] FREE
+[2:48] FREE
+[2:49] Same farmer. (169.06)  ||  Same field. (169.96)   <- the duplicate
+[2:50] Same brain. (170.92)
+[2:51] Roughly four hundred and fifty of (171.90)
+[2:52] FREE
+[2:53] them were tested at both moments. (173.46)
+```
+
+The next second is taken, so this is a three-file forward cascade into the free `[2:52]`:
+`Same field.` -> `[2:50]`, `Same brain.` -> `[2:51]`, `Roughly four hundred and fifty of` ->
+`[2:52]`. **Drift is 0.04s, 0.08s and 0.10s, the smallest cascade drift recorded**, because each
+of these cues starts just under its integer second. That is the project 12 arithmetic reproducing
+itself exactly: tightly packed list items shift forward almost for free.
+
+`[8:24]` twice, inside the "a rate, a form, a waiting list, a wage set by somebody you will never
+meet" run:
+
+```
+[8:23] a wage (503.36)
+[8:24] set by (504.14)  ||  somebody you will never meet. (504.88)   <- the duplicate
+[8:25] FREE
+[8:26] There is nobody thirty feet away to ask. (506.96)
+```
+
+Here the next second IS free, so it is a one-step bump touching a single file:
+`somebody you will never meet.` -> `[8:25]`, drift +0.12s.
+
+**Two duplicates in one transcript with two different neighbourhood shapes is the argument for
+mapping every duplicate rather than applying a rule.** Same run, same file, and the older
+one-step instruction would have been silently wrong on the first one.
+
+### THE 169 WPM ESTIMATOR SHOULD NOW MOVE, the third recording above 175 has arrived
+
+Project 12 set the condition: "One more recording above 175 wpm and the script skill's estimator
+should move." This is it. 2102 words over 709.4s is **177.9 wpm**.
+
+| Recording | Measured wpm |
+| --------- | ------------ |
+| Project 11 | 172.8 |
+| Project 12 | 179.5 |
+| Project 13 | 177.9 |
+
+Mean of the three is 176.7 and all three are above 169, so the error is not noise, it is a
+systematic underestimate. The hook beats bear it out: every one of this script's five engineered
+beats landed 1 to 2 seconds EARLY against its 169 wpm prediction.
+
+| Beat | Predicted at 169 wpm | Real audio |
+| ---- | -------------------- | ---------- |
+| paradox complete, word 14 | 0:05 | **0:03** |
+| beat 1 ends, word 29 | 0:10 | **0:08** |
+| formal "but", word 43 | 0:15 | **0:14** |
+| mechanism named, word 71 | 0:25 | **0:24** |
+| open loop, word 100 | 0:35 | **0:34** |
+
+**Recommended planning figure is 175 wpm**, which is still slightly conservative against the 176.7
+mean, so a beat engineered for second N keeps landing at or just before N. That is the safe
+direction. Recorded in `.agents/skills/script/references/memory.md` too, since that is where the
+estimator is used. Note the 169 figure came from all seven published videos including the older
+V1 reads; the three V2 recordings measured since are consistently faster, so this is a change in
+the narrator's pace, not an arithmetic error in the original.
+
+## Project 13 first attempt (2026-09-01) - BLOCKED on quota, every free step done and verified first
+
+3 parts at 256 kbps 44.1 kHz mono (uniform, so no VBR header risk): 4m59.4s, 2m16.7s, 4m33.3s,
+combined **11m49.4s**, Xing header agreeing with the frames (11m49.4s reported, 11m49.4s true).
+`audios/full.mp3` (22.7 MB) and `transcribes/offsets.json` are written and correct.
+V2 profile confirmed from the project's own cast header, not the project number.
+
+`script_psychology_of_being_poor.md` has **zero runs of 2+ blank lines** across its 38 paragraph
+gaps, so there is no part boundary to find and the plan was a single call on `full.mp3`, same as
+projects 5, 6, 8, 9, 10, 11 and 12.
+
+Pre-flight checks, in the project 11 order:
+
+1. **Folder sweep:** `find <P> -type f` showed exactly three parts and no stray, unlike project
+   10. `file` on each confirmed uniform 256 kbps, so no bitrate warning was expected and none came.
+2. **wps arithmetic:** 2102 words / 709.4s = **2.96 wps**, mid-band against the measured 2.71 to
+   3.21. No part missing.
+3. **Quota: FAILED, and this is where the run stopped.** `GET /v1/user/subscription` returned free
+   tier, 9778 of 10000 used, **222 remaining**, extend not allowed, reset 2026-09-28.
+
+### The quota gate did its job, and the confirming call cost nothing
+
+222 remaining against a cost this file's own history predicts at 1.07 to 1.11 credits per second,
+so about 760 to 790 for a 709.4s file. The tool was then run anyway to convert that estimate into
+the provider's own number, on the standing finding that a refused alignment bills nothing:
+
+```
+401 {"code":"quota_exceeded","message":"This request exceeds your quota of 10000.
+You have 222 credits remaining, while 788 credits are required for this request."}
+```
+
+788 credits for 709.4s is **1.111 credits per second**, matching project 5's 735 for 661.7s
+exactly. That pins the estimator: **credits are almost exactly 1.11 times the audio duration in
+seconds**, so a 12 minute episode needs roughly 800 credits and the free tier's 10,000 is about
+12 episodes a month. Quota re-read after the refusal was unchanged at 222, so nothing was billed
+and no partial `transcript.md` or `words.json` was written.
+
+There is still no `GROQ_API_KEY` in `.env`, so there is no second engine, and the skill forbids
+switching engines without asking anyway because Groq changes the wording that every downstream
+image prompt derives from. Reported and stopped.
+
+**Transferable rule, and it is the cheap one:** run the subscription check BEFORE the combine if
+the episode is long, but always before the align. Every free step here (sweep, `file`, combine,
+Xing verification, offsets, wps arithmetic) completed and survives, so when quota returns the
+alignment is a single call with zero rework. That is the same argument project 5's three
+consecutive key failures made.
+
 ## Project 5 rebuild (2026-08-04) - three key failures before one clean align
 
 The project 5 folder was retopiced to `5-why-do-people-follow-the-crowd` and its cast file

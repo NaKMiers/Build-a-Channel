@@ -1,0 +1,35 @@
+{
+  "total": 709.407,
+  "parts": [
+    {
+      "file": "projects/13-the-psychology-of-being-poor/audios/part-1.mp3",
+      "start": 0.0,
+      "duration": 299.389,
+      "frames": 11461,
+      "sample_rate": 44100,
+      "bitrates": [
+        256
+      ]
+    },
+    {
+      "file": "projects/13-the-psychology-of-being-poor/audios/part-2.mp3",
+      "start": 299.389,
+      "duration": 136.725,
+      "frames": 5234,
+      "sample_rate": 44100,
+      "bitrates": [
+        256
+      ]
+    },
+    {
+      "file": "projects/13-the-psychology-of-being-poor/audios/part-3.mp3",
+      "start": 436.114,
+      "duration": 273.293,
+      "frames": 10462,
+      "sample_rate": 44100,
+      "bitrates": [
+        256
+      ]
+    }
+  ]
+}
