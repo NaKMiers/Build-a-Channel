@@ -1427,3 +1427,160 @@ capacity vessel is established at `[1:46]`, disappears for six minutes, and retu
 Props that live on a cast sheet's prop block (the bundle, the cane, the bag) are lower risk
 because their token usually accompanies them, but they are still ledger objects: the sheet binds
 the design only when the token is in the prompt.
+
+## Project 14 (2026-09-04), the psychology of being ugly: 289 prompts, 328 plan beats, 113 plates, 101 breaks
+
+Clean on every mechanical check. 289 cues to 289 prompts, V2 anchor and lock on all 289 with zero
+V1 strings, timestamps an exact diff apart from the one documented remap, zero stray tokens, zero
+non-prompt lines, first byte `[`, zero adjacent pairs without a blank line, 779 lines, tier plan
+equal to prompts exactly (115 CLEAN / 163 LAYERED / 11 ATMOSPHERIC), surfaces summing to 289 with
+exactly one phrase per prompt, zero mixed-surface plates, every source pointing backward, every
+break opening a PLATE, no em dash, no yellow, zero CapCut timestamp collisions. Breaks 101 over 289
+is one scene every 2.86 prompts, longest inherited run 8, mean 2.8. Built data-first: chains as
+python data, budgets rebalanced as data, 113 plate compositions written as prose, variants and
+callbacks derived mechanically.
+
+Motif: **the reflective field**, one flat cream glass field with a single thin straight diagonal
+highlight line across the upper left, re-cut to fit whatever surface holds it. 92 beats. Chosen by
+the project 8 rule, the drawing both halves share: the ancestral half is the same field as still
+water, a wet stone and a sliver of polished rock, all of which show nothing; the modern half is the
+identical field as a bathroom mirror, a shop window, a lift door, a front camera and a laptop
+preview, all of which show too much. It has the extra property project 11 recommends: **the cast
+file had already locked its description in full**, in the paragraph explaining why the mirror is
+NOT a cast entry, so the motif could not drift.
+
+### The cast stage handing `scenes` a locked description for a refused cast member is the pattern to keep
+
+`/cast` considered the mirror, refused it a slot (it is a surface and a relationship, not a
+character, and giving it a face contradicts the mechanism), and then **wrote the canonical drawing
+into the cast file anyway** for `scenes` to inherit, along with the same treatment for the scroll of
+strangers. That is strictly better than a bare refusal: the object still recurs across the whole
+video, it still needs one fixed design, and the continuity ledger is exactly where that design
+belongs. **When `/cast` refuses an object, check whether it left a locked description behind before
+inventing one.** Both of this project's two most-repeated non-cast objects arrived pre-designed.
+
+### The four first-pass budget errors, seventh run in a row, all four fixed as data
+
+1. **Surface**: tinted 36.0 percent against a 20 target with cream at 20.8 and cobalt at 3.1. Same
+   cause as project 6, every card and diagram reached for a chapter tint. 51 beats moved out as
+   whole plate chains, 27 to cream, 13 to pure white for the dense evidence run, 11 to cobalt.
+   Final story 36.6, cream 33.2, tinted 18.3, white 7.9, cobalt 3.8.
+2. **Register**: DIAGRAM 30.8 against a 15 to 20 band with CARD at 13.5 and HYBRID at 3.1. Fixed by
+   honest relabeling only: a bar with a caption is a CARD not a DIAGRAM, and every frame built
+   around @SCORER plus brackets is a HYBRID, because a personified-object cast member standing in a
+   diagram is a story scene with a diagram overlay. Final STORY 34.6, CARD 18.3, DIAGRAM 15.2,
+   HYBRID 12.5, SPLIT_OR_SCALE 10.4, PORTRAIT 9.0.
+3. **Tier**: CLEAN 53.3 against a 40 target. 39 beats moved to LAYERED, all of them chains with
+   genuine depth planes. Final 39.8 CLEAN, 56.4 LAYERED, 3.8 ATMOSPHERIC. No over-correction this
+   time, because the move list was counted before it was run, per project 12.
+4. **Shot grammar**: 10 of 23 thirty-second blocks under four shot tasks. Fixed by re-shotting 9
+   chains, all honest. One block remains, the 7 second closing block at `11:00`, which holds two
+   chains and four beats and cannot carry four tasks. Arithmetic limit.
+
+### THE FIND: a surface move is a prose rewrite, and the check that catches it is per-prompt, not total
+
+Project 13 recorded this rule and this run reproduced it exactly, at scale. All 23 chains moved off
+`light tinted chapter card` still opened "a light tinted chapter card in dusty teal holding...", so
+after the assembler appended the new surface phrase, **24 prompts carried two surface phrases**.
+The surface totals still summed correctly if you only checked the sum. What caught it was the
+per-prompt count, which is the exact fault project 6 recorded from the other direction (one prompt
+with none). **Keep both halves of that check: the total AND the per-prompt count.** A total alone
+is blind in both directions.
+
+The same move left a second, quieter trace the surface checks cannot see at all: ten prompts still
+said "clear tinted space" and "bare tint" on a cream or white card. Only a regex for the word
+`tint` outside a `light tinted chapter card` prompt found them. Add that sweep after any surface
+rebalance.
+
+### The project 9 token trap fired again, and the subset assert caught it before a single line shipped
+
+`meat1` and `fire1` carried `@ANCESTOR` in their variant deltas while their own plate prose said
+only `@BAND`. Fixed by putting her into the plate composition, not by deleting the token, because
+in both frames the script genuinely puts her there: she is the one being handed a portion and the
+one being handed a child. **Third project in a row this has fired.** The assert is one line and it
+belongs in every assembler:
+
+```python
+for r in rows:
+    if r['asset'] != 'PLATE':
+        for t in re.findall(r'@[A-Z]+', r['delta']):
+            assert t in plate_tokens[r['key']]
+```
+
+### The `Motif: CALLBACK` value silently disqualified beats from carrying the motif reference
+
+The reference pass selected field-drawing beats with `motif == 'field'`, and the later pass that
+stamps `Motif: CALLBACK` on the six bathroom reprises overwrote that value first. So `[7:45]`,
+`[9:22]`, `[10:23]` and `[10:37]`, the four frames where the hook mirror returns and where drift
+would be most visible, were the exact frames that lost their `@[0:00]` reference. **`Motif` is a
+plan column with two different jobs and cannot double as the reference selector.** Keep a separate
+draws-this-object flag, or test membership of the motif chain list as well as the column value.
+
+### Rule 18 audit: zero genuine faults, and both regexes are noisy in predictable ways
+
+169 non-plate deltas. The attribute-verb list hit 4, every one a false alarm on the word `more` used
+as a count ("two more red X marks appear"), and the inverse test hit 2, both false alarms on
+`is drawn` which is a presence delta the signal list did not carry. **Add `is drawn` to the signal
+list and require `more` to be followed by a noun rather than an adjective**, and both regexes get
+quieter without getting blinder. Zero variants were promoted to PLATE, so `VARIANT` stayed at 50.61
+percent and is reported as an honest deviation, which is project 13's position exactly.
+
+### Nine uncast researchers, and the introduction-card shape scales down as well as up
+
+Gilovich, Medvec, Savitsky, Mita, Dermer, Knight, Langlois, Roggman, Hrdy and Anderson are all named
+and none is on the cast sheet, so per the projects 12 and 13 precedent every one is a plain doodle
+portrait under a one-time charcoal name caption, never a likeness. Project 13 proved the shared
+introduction card works for four names at once; here it ran at **three, three, two and one**, and the
+one-name version (`hrdy1`, an empty oval that fills) is the cheapest introduction beat the channel
+has used. Adjacent portraits on one card get a neutral distinguishing feature, a crop against a bob,
+purely so two doodles are not identical. That is not a likeness claim and does not violate rule 17,
+which forbids compensating for a generic sheet with description, not distinguishing two anonymous
+figures.
+
+### CapCut is bimodal for the fourth time, and the chain-aware rule landed it first try
+
+`gap >= 3` gives 117 beats and 36.4 per minute, `gap >= 4` gives 22 and 27.9. Nothing between.
+Chain-aware (`gap >= 4` always, plus `gap >= 3` where the beat sits in a chain of four or more on
+one plate) gave **39 beats, 11.89 percent, cadence 29.5 per minute**, mid-band and inside the 10 to
+15 asset target. Print the histogram before choosing; a single number will always miss.
+
+### Honest deviations, reported not padded
+
+- **Assets PLATE 34.45, VARIANT 50.61, CALLBACK 3.05, CAPCUT 11.89.** The variant-heavy shape is
+  projects 9, 12 and 13's: 113 plates each carrying a two or three beat build is what a script built
+  on five named studies, a paddle, a count bar and a timeline produces. The rule 18 audit found
+  nothing to promote, and converting sound variants into plates to reach 40 percent would be the
+  project 11 mistake in reverse.
+- **CALLBACK 3.05 percent**, below its band, for the projects 6, 8 and 13 reason: the six reprises
+  that carry real weight are the bathroom returns at `[1:59]`, `[2:10]`, `[7:45]`, `[9:22]`,
+  `[10:23]` and `[10:37]`, and each is a PLATE with `Motif: CALLBACK` so the hook echo gets a clean
+  chain. The 10 CALLBACK-asset beats are the mid-chain reprises that legitimately inherit.
+- **PORTRAIT 9.0 percent**, one point under, and **SPLIT_OR_SCALE 10.4**, 0.4 over. The script's
+  comparisons are structural (you against everyone else, a few hundred against thousands, scarce
+  against steady), which is splits, and only four of its named people are ever shown.
+- **Cobalt 3.8 percent** against a 7 target, inside the 5-point tolerance. This script's mind
+  interiors are genuinely few: the wearer's head, the centre of your own experience, the loudness
+  gap, the filing drawer and the closing tunnel. Padding cobalt would mean inventing thought
+  interiors for beats that happen in a bathroom.
+- Length drift first-50 to last-50 was **0.9 percent**, in line with projects 11, 12 and 13.
+
+Cast: @YOU 76, @SCORER 43, @ANCESTOR 27, @BAND 25, @WEARER 12, @PEERS 10; tokens on 160 of 289
+prompts. @YOU is 26.3 percent of all prompts and **47.5 percent of the 160 cues where rule 12 allows
+him, the highest the channel has recorded**, ahead of project 13's 46.2. The denominator excludes
+the Gilovich study, the Mita study, the Langlois study and the whole ancestral act, and **zero @YOU
+frames sit inside any of them**. The lift is the project 8 rule applied deliberately: first assembly
+had him on 66, and four eligible plates were frames a second-person script puts him inside rather
+than beside, his own head in the loudness gap, his own face under the weighing pan, his own row of
+stamped verdict slips, and his own hand holding the slip when the verdict arrives.
+
+Ledger: reflective field `[0:00]`, count bar `[0:26]`, printed shirt `[0:37]`, two prints `[2:28]`,
+composite face `[3:33]`, camp hearth `[5:32]`, ranking ladder `[6:20]`, scroll of strangers `[8:26]`.
+37 references across 36 prompts, 35 carrying one and 1 carrying two. The field alone is 23 of them,
+one per break-separated block that draws it, every one anchored at `[0:00]`.
+
+The transcript's duplicate `[10:10]` is remapped to `[10:11]` in the prompt file, a one-step bump
+into a free second, so the Step 3 timestamp diff prints one line and that is the expected output.
+
+Generators for this run live in the session scratchpad as `plan14_data.py`, `rebal.py` and
+`assemble14.py`. Per the project 11 note the scratchpad is not durable, so `image-prompts.md` plus
+`visual-plan.md` remain the recovery pair.

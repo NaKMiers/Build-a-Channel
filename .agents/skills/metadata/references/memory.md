@@ -152,3 +152,56 @@ half-file invites exactly that paste. Stop, say why, and name `/transcript` as t
   the `thumbnail` skill. Project 1's title is "Why You Feel Lonelier In A Crowd Than Alone In
   Your Room", which is exactly why the accepted thumbnail asks about the 150-to-40 gap instead
   of repeating the loneliness framing.
+
+## Project 14 (2026-09-04), the psychology of being ugly - the Crossref rule caught a WRONG paper, not just a blocked one
+
+7 chapters, 20 hashtags, 36 tags, all five titles 40 to 56 characters, 3 fenced blocks. Every
+chapter timestamp grepped back against `transcript.md` and present verbatim exactly once.
+
+- **The project 12 Crossref rule earned itself here.** Every previous run used it to prove a
+  403 was bot-blocking rather than rot. This run it caught an outright wrong citation. The
+  Anderson 1992 body-shape review was first written as `10.1016/0162-3095(92)90032-Y`, which
+  returns HTTP 200 and resolves to Boyd and Richerson, "Punishment allows the evolution of
+  cooperation (or anything else) in sizable groups", same journal and same year. The correct DOI
+  is `10.1016/0162-3095(92)90033-z`. **Sequential article suffixes inside one journal issue are
+  the trap**: `90032` and `90033` differ by one character and both resolve, so a status check,
+  a link checker, and a human eye all pass it. Only the returned title catches it.
+- **Do not construct a DOI suffix from a pattern. Search Crossref by title instead.**
+  `https://api.crossref.org/works?query.bibliographic=<words+from+the+title>&rows=5` returned
+  the right paper as hit one with authors Anderson, Crawford, Nadeau and Lindberg. That is one
+  call and it removes the guess entirely. Confirmed the other three the same way: Gilovich 2000
+  JPSP, Mita 1977 JPSP, Langlois 1990 Psychological Science.
+- **Judith Langlois has no English Wikipedia article, it 404s**, so the 1990 paper's DOI is the
+  only citation route for the composite-face finding. Same situation as Nicolas Peterson on
+  project 13. Six sources for six named researchers plus the named effect.
+- **The obvious title A violated the guardrail, and so did its rewrite.** "Why Do You Think You
+  Look Worse Than You Do?" and "Why Do You Think You Are Uglier Than You Are?" both name the
+  takeaway, and worse, they name a takeaway **this script explicitly refuses**: "This is not a
+  promise that you are secretly flawless and only need better lighting, and anyone selling you
+  that is selling you something." A title that promises the reassurance the script spends a
+  paragraph withholding is a clickbait failure even though it sounds like the channel's voice.
+  **When the script names the false promise in order to reject it, the title cannot make that
+  promise.** Resolved by picking a concrete lived moment instead: "Why Do You Hate Your Own Face
+  In Photos?", 40 characters, the shortest primary title the channel has published.
+- **Recommended title A over C**, the fourth project running, same reasoning: a question a tired
+  viewer parses at a glance, naming a moment the viewer physically lived through this month. The
+  script delivers it three separate ways, so a narrow-sounding title is under-promising rather
+  than over-promising. C ("The Spotlight Effect: ...") is the search-friendly A/B alternative and
+  the form the channel already publishes under.
+- **Metadata ran after `/thumbnail` again, and the collision check needs a second question.**
+  Project 13 established "check the existing headlines against the five title variants before
+  recommending one". That catches restatement. It does not catch the fault found here: title E
+  ("You Never Noticed Your Reflection Is The Wrong Way Round") states outright the mechanism that
+  thumbnail 3 (`WHICH ONE IS YOU?`) exists to withhold, so pairing them would spoil the thumbnail
+  before a viewer clicks. **Ask both questions: does the title restate a headline, and does the
+  title answer one.** E is otherwise a strong variant, so it is kept in the table with the
+  pairing noted rather than removed. Chosen title A collides with none of the five headlines and
+  pairs especially well with thumbnail 3, which shows two prints without saying which is real.
+- **Softened the emoji set for a tender topic, but only the one that had a soft equivalent.**
+  `SKILL.md` says to pick a warmer set for unsettling subjects, so the call-to-action label is
+  a white heart rather than the light bulb. Chapters kept the world-map icon, because the emoji
+  has to signal what the section is before it is read. A mirror emoji would have been on-topic for this video and useless as a
+  chapters marker. **Soften the register, never the function.**
+- **Chapters stop at 7:45 of an 11:07 video**, the fourth project running with this deliberate
+  cut. The scroll passage, the broken-measurement summary, the shift, the echo and the tease all
+  stay unsignposted.

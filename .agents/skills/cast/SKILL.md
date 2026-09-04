@@ -204,7 +204,7 @@ grep -oiE '(no|never|not) +mittens?|mittens?' "$F" | grep -civE '^(no|never|not)
 for t in $(grep -oE '^\| @[A-Z]+' "$F" | tr -d '| @'); do
   printf '%-10s %s\n' "@$t" "$(awk -v n="**$t.jpeg**" 'index($0,n){f=1} f' "$F" \
     | awk 'NR>1 && /^\*\*[A-Z]+\.jpeg\*\*/{exit} {print}' \
-    | grep -oiE '(hoodie|shirt|parka|tunic|robe|vest|wrap|coat|dress|jacket|singlet|jumper|top|bubble body|casing ring|shell|envelope body|bill body)[^,]*\(#[0-9A-F]{6}\)' \
+    | grep -oiE '(hoodie|shirt|parka|tunic|robe|vest|wrap|coat|dress|jacket|singlet|jumper|top|bubble body|casing ring|shell|envelope body|bill body|card body)[^,]*\(#[0-9A-F]{6}\)' \
     | head -1)"
 done
 grep -oE '#[0-9A-F]{6}' "$F" | sort -u           # cross-check against the palette

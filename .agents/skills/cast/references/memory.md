@@ -798,3 +798,139 @@ instead of a bill". The reasoning was sound and the conclusion was still wrong.
 - Step 5's garment grep needed `bill body` added to its alternation, exactly the extension the
   skill tells you to make. Written as "The bill body is one simple filled rectangle in saturated
   red (#D94040)" so the garment-word-then-hex pattern matches.
+
+## Project 14 (2026-09-04), the psychology of being ugly - a 6-entry cast and casting the mechanism itself
+
+`@YOU` (Toss, buttoned short-sleeve pyjama top in lavender `#B79AD9`, notched lapel collar,
+chest patch pocket, no hood), `@SCORER` (personified object, a handheld rating paddle, red
+`#D94040`), `@WEARER` (the 2000 spotlight-effect subject, golden yellow `#F5C518` t-shirt with a
+doodle face printed on it, high rounded coiled hair dome), `@PEERS` (group of five, present-day,
+grass green `#3A9E3A` crew-neck tops, flat level fringe, shoes), `@ANCESTOR` (illustrative
+prehistoric woman, brown `#8B5E3C` belted hide wrap, long single plait), `@BAND` (group of five,
+same era, sky blue `#6EB5E8` untrimmed wraps, plain high cap, bare feet). Chapter palette Dusty
+teal `#67A6A3`, Tan `#C4965A`, Coral `#D96F5F`. Six entries, at the cap. Nothing carried over.
+
+### The script's central mechanism was the strongest cast candidate, ahead of every person in it
+
+The word "scorer" appears nine times across all five sections. Nothing else in the script came
+close on moments times spread, including the mirror, and it is the first time the top-ranked
+candidate has been the video's abstract mechanism rather than a person or a handled object.
+**When a script names its mechanism repeatedly and consistently, that name is a cast entry**,
+because a mechanism drawn three different ways splits one argument into three unrelated claims.
+The script itself calls it "A tool built to rank a few hundred known faces", which settled
+personified object over the person-shaped concept route project 10 used.
+
+### A pose can carry a sentence that no silhouette can
+
+The pillar turn is "It was built to point outward. At other people. For almost the entire span
+of human existence, it never once got a clear look at the face it belonged to." A card on a
+rigid straight handle physically cannot turn back on its own holder, so state of use three draws
+that sentence directly: the paddle facing a row of three small plain heads while a fourth stands
+behind it unlooked-at. **Pick the object whose mechanics encode the claim**, then say in the
+sheet that the handle never bends, hinges or telescopes, because a model handed a handle will
+articulate it.
+
+### Solve a number trap by removing the number, not by substituting for it
+
+A rating paddle exists for no purpose except to show a number, which made this the most
+text-prone design on the cast. Project 13's bill was solved by keeping the object and finding a
+textless route to it. Here the route is that there is no rating on it at all: the verdict reads
+from the paddle's pose, and the bare red field is the script's own point, "So how much of your
+verdict is a measurement, and how much is just repetition?" **When the thematic answer and the
+no-text constraint agree, take the constraint literally rather than looking for a substitute
+marking.** The NO TEXT block still enumerates every numeral temptation individually, plus tick,
+cross, star, dot rating, bar, meter, dial, gauge, needle, thumbs, heart and letter grade.
+
+Landscape proportion, 5 wide to 4 tall, is the load-bearing shape marker on the project 13
+precedent. It keeps the card out of document, sign, sheet and phone territory, and a card taller
+than wide is called a failed sheet in the prompt.
+
+### A real person printed on a garment becomes a doodle face inside a circle
+
+The script's shirt is "printed with an outdated singer's face", which is a likeness problem and
+not only a text problem. The print is ONE plain doodle face, the channel's own eyes, brows and
+mouth inside a thin circle on a flat white field, drawn clearly smaller than his own head. Two
+rules make it survive: **the printed face holds a fixed neutral expression in every panel and
+never mirrors his own**, because a model given two faces on one figure will sync them, and the
+back view has no print at all. Enumerated negatives cover band name, artist name, song title,
+tour dates, arc of lettering around the circle, and the record label and copyright marks.
+
+### Two five-figure groups in one cast need a stated three-way separation on both sheets
+
+First time this cast shape has appeared: a present-day group and a same-era ancestral group, five
+identical figures each. They are separated by head fill, hair shape and footwear, and both sheets
+carry the same paragraph naming the other group's markers as forbidden. White head plus low flat
+level fringe plus green crew-neck plus shoes, against tan head plus plain high rounded cap plus
+hide wrap plus bare feet. **State the pairing on both sheets, not once**, on the project 12
+precedent for the two speech bubbles. Each group's NEGATIVE also names the other's markers.
+
+### The ancestral figure is a woman, and that was derived rather than defaulted
+
+The pillar's emotional centre is Hrdy's line that "a woman's standing among the other women ran
+partly on exactly this kind of comparison". Her markers are a long single plait and a corded
+belt, deliberately re-derived rather than the single-shoulder trimmed wrap projects 8, 10 and 13
+used. Gender reads from hair and garment only, and the sheet says so explicitly: no chest shape,
+no waist taper, no hips, no anatomy under the wrap, because the channel's construction rules
+forbid all of it and a model told "a woman" will otherwise add it.
+
+"Prehistoric woman" pulls two cliches at once, so the anti-default paragraph names both: the
+banned early-Neolithic farmer set (hoe, sickle, wheat, sackcloth tunic, straw hat, village) and
+the caveman set (fur pelt, club, spear, bone ornament, feathers, headdress, face paint, cave).
+Project 13 only needed the first.
+
+### The empty prop, when the video's point is that you cannot see yourself
+
+Both of `@ANCESTOR`'s props are deliberately blank: the polished stone sliver and the oval of
+still water show nothing reflected, no face, no head shape, no shine marks. The temptation is
+enormous and it would leak an identity into a prop panel. `no reflected face` leads the NEGATIVE
+and the generating checklist says to check that sheet for a reflection. **A prop that exists to
+fail at its job has to say so, twice.**
+
+### The mirror was refused as a cast entry and handed to the continuity ledger
+
+Second-highest spread in the script and still not a character: it is a surface and a relationship,
+there is nothing to turn around, and giving it a face contradicts the mechanism, because the face
+in a mirror is supposed to be yours. It also appears as five different surfaces, a bathroom
+mirror, a shop window, a lift door, a front camera and a laptop preview, which is a
+`visual-plan.md` continuity-ledger job. Same shape as the tunnel refusal on project 13, with one
+addition: **the cast file writes the canonical locked description anyway** (upright rounded
+rectangle, charcoal outline, flat cream glass field, one thin diagonal highlight, no ornament), so
+`scenes` inherits a design without a sheet. The scroll of strangers was refused the same way and
+sent to the CARD register as a grid of small heads.
+
+### The colour cascade forced a chapter colour swap, then Toss into lavender
+
+Argument first: red for the scorer, green for the peers. Coral was rejected for the peers because
+coral and red share frames constantly; olive was rejected because it is too near the light
+dusty-teal study card their frames sit on. Then the ancestral pair took the settled brown and sky
+blue. Toss last, and every obvious choice failed: orange collides with coral, green collides with
+the peers, dusty teal is a chapter colour, cobalt and Toss blue are reserved and read as the old
+hoodie. **Lavender was available only because the chapter palette had been re-cut earlier in the
+same pass**: lavender first looked like the natural chapter colour for the perception thread, and
+coral was moved into that slot instead, which freed lavender for the one garment that had run out
+of options. Project 8's lesson was to re-check chapter colours against garments; this extends it
+to trading a chapter colour away when the protagonist has nothing left.
+
+The residual collision is lavender against a cobalt mind interior, one hue family separated only
+by value. Resolved by ground rule rather than by colour, on the project 3 and 12 precedent: he
+either stands outside the interior looking in, or keeps a cream pool around him with cobalt as the
+outer field.
+
+Also new: the episode's recurring red X cannot be drawn on `@SCORER`, whose body is that same red.
+The negation of the scorer is its face-down fourth state of use instead. **Check the episode's
+negation mark against the antagonist's garment colour**, the same test as garment against ground.
+
+### Two Step 5 failures, both already recorded here from different causes
+
+- **`@ROOM` leaked as a token from a derivation note explaining why the token is `@PEERS`.**
+  Exactly the project 9 trap, from a new direction: the leak came from justifying a name rather
+  than from citing another project. Any `@TOKEN` in prose is a cast token to the scanner, so the
+  rejected name has to be written plain. Rewritten as "deliberately not the script's own word".
+- **`@ANCESTOR`'s garment grep printed her skin tone.** The CHARACTER preamble said "the hair
+  silhouette and the belted wrap. Head is a large circle with a flat TAN skin fill (#D9A15B)",
+  so the alternation matched `wrap` and ran to the first hex, which was the head. Sixth distinct
+  cause of a misleading garment-grep line. The project 3 rule is "declare the garment first"; the
+  wider form is **do not let the garment word appear anywhere before its declaration**, even in a
+  summary phrase. Fixed by changing the preamble to "the corded belt".
+
+Alternation extended again, ninth time: `card body`.
