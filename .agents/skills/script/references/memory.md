@@ -462,6 +462,124 @@ Craft notes:
   paycheck a year, a band of 30, 3 or 4 days without food. The 150-vs-1500 and the
   before-vs-after pairs are both what the two-number layout wants.
 
+## Project 14, the psychology of being ugly, cited (2026-09-03, self-perception and attractiveness bias)
+
+Thomas Gilovich, Victoria Medvec and Kenneth Savitsky (2000, "The Spotlight Effect in Social
+Judgment", JPSP: the embarrassing-T-shirt study, wearers guessed roughly half the room would
+notice and remember it, the real number was closer to a quarter), Theodore Mita, Marshall
+Dermer and Jeffrey Knight (1977, "Reversed Facial Images and the Mere Exposure Hypothesis",
+JPSP: subjects preferred their own mirror-flipped photo, their friends preferred the true
+one), Judith Langlois and Lori Roggman (1990, "Attractive Faces Are Only Average",
+Psychological Science: digitally composited faces rated more attractive than almost any
+single face that went into them), Sarah Blaffer Hrdy (evolutionary anthropology of female
+intrasexual competition and status display as a mate-and-alliance signal in small groups,
+drawn from her body of work rather than one paper), Judith Anderson and colleagues (1992,
+"Was the Duchess of Windsor Right?", Ethology and Sociobiology: cross-cultural review finding
+food-scarce societies prefer fuller bodies and food-secure societies prefer slimmer ones).
+Three behavioral scientists plus two anthropologists (Hrdy and Anderson).
+
+**Hrdy is fresh, first use on the channel**, closing out the standing unspent-anthropologist
+list carried since project 9. Anderson is also fresh. No anthropologist on the channel has
+been reused a fourth time yet; the roster is now fully spent at least once.
+
+Craft notes:
+
+- **Origin: the user asked for a topic "similar to project 13" about being ugly**, was offered
+  five compliant reframed titles on that theme, then supplied the plain-topic-name title
+  verbatim, same pattern as projects 5, 8 and 13. Flagged the two broken title rules and the
+  poverty-class shame risk, the user said "No problem," and the title stood as folder name and
+  working title.
+- **SCRIPT REBUILT FROM SCRATCH on 2026-09-04 at the user's instruction: "remake the /script
+  completely, start with a super hook and end with mention of video 13."** Draft 1's hook was
+  measured against the open-loop-latency rule and failed it: the fixation half of its paradox
+  landed at word 11 but the "nobody else sees it" half did not arrive until word 43, about 14.7
+  seconds at 175 wpm, right on the edge of the second-7-to-14 retention cliff. Every fixed-word
+  checkpoint passed and the hook was still weak, **which is exactly the failure mode the word
+  budget does not catch.** Ten replacement hooks were drafted and scored on latency alone before
+  the rebuild.
+- **THE ASK FOR A RETENTION PERCENTAGE, and the answer that held.** The user asked for an
+  estimated percentage of viewers still watching at 30 seconds and said they wanted "about 70
+  percent." There is no model here that maps hook text to view-through rate, and inventing one
+  would be fabricating analytics. What worked instead was quoting the two real endpoints from
+  `outputs/retention-2026-08-11.json`: a 3-second paradox (project 4) held 61 percent raw
+  retention at 30s, a 26-second paradox (project 5) held 33 percent. **Give the real bracket
+  from the channel's own data and rank candidates inside it. Never quote a predicted percentage
+  for an unpublished video.** The user accepted this and moved straight to the rebuild.
+- **Shipped hook, and it is the strongest the channel has written on paper.** "You know exactly
+  what is wrong with your face. Nobody else has ever seen it." Complete paradox at word 15,
+  about 5.1 seconds at 175 wpm, second only to project 4's 3 seconds among every hook with real
+  retention data, and project 4 is the best early curve in the sample. Beat 1 ends at word 28,
+  under budget rather than over for the first time. Formal "but" at word 39, the earliest on the
+  channel alongside project 12's word 40. Mechanism named at word 63. The half-versus-quarter
+  contradiction completes at word 91, inside the 100-word budget, and the open question closes
+  at 109.
+- **The winning shape: the viewer's own certainty, then its flat contradiction, in two short
+  sentences.** No atmosphere, no scene-setting, no statistic about strangers. The first sentence
+  states what the viewer already believes about themselves, the second removes the ground from
+  under it. That is the P4 shape reproduced deliberately rather than found by accident, and it
+  is reusable on any topic where the viewer arrives already holding a private verdict.
+- **No Zeigarnik-to-Masicampo shape this time, and that is fine.** The three psychology findings
+  (spotlight effect, mirror mere-exposure, composite-face averageness) are three separate
+  studies rather than one study read twice, so the shift is stated directly rather than falling
+  out of a single re-read finding. First script since project 8 (Diderot) without that shape.
+- **THE REBUILD'S BEST NEW MATERIAL, and the reason the second draft is better than the first:
+  the anthropological inversion.** The face-rating system evolved pointing strictly outward, and
+  for roughly two hundred thousand years it never once got a clear look at the face it belonged
+  to. Still water, a wet stone, a sliver of polished rock, and nothing else. The clear cheap
+  mirror is an industrial product roughly two centuries old, and the lit camera in the pocket is
+  about fifteen years old. **So the mismatch is not that the standard changed. It is that the
+  instrument was handed a subject it was never built to have access to.** This is the same
+  structural move project 11's memory flags as its strongest: not "the ancestral world installed
+  the bug" but "the input channel changed". Draft 1 lacked this entirely and was weaker for it.
+- **Never-shame guardrail, same class of risk as project 13.** The script states plainly, right
+  before the shift, that the perceived flaw may be real and that the video is not claiming the
+  viewer is "secretly flawless and only needs better lighting." What changes is named as the
+  weight the system puts on the feature and where that weight comes from, never the feature
+  itself. No diagnostic language, no mention of body dysmorphia or any clinical term.
+- Proportions against the body, excluding hook and tease: psychology 33 percent, anthropology
+  36 percent, mismatch plus shift 31 percent, against a 35/30/35 target. Anthropology runs long
+  because the no-mirrors inversion above is the script's spine and needed the room. Deliberate,
+  same class of overrun as project 13's two-experiment psychology section.
+- **End-screen tease shape: same mechanism, opposite direction, first use of that shape.**
+  First draft targeted project 12, the negativity-weighting system that lets one hostile
+  stranger's comment outweigh ten kind ones, pointed inward at the viewer's own reflection
+  instead of outward at a commenter, on the reasoning that no honest bridge existed to project
+  13's bandwidth-tunneling mechanism.
+- **TEASE TARGET CHANGED BY THE USER ON THE SAME RUN, third time this has happened** (after
+  projects 11 and 12). The user asked directly for project 13 instead. Re-examined for an
+  honest bridge rather than complying blind, and found one: Shah, Mullainathan and Shafir's
+  own description of scarcity is attentional, not just financial. It narrows the whole mind
+  onto one thing, tunneling, and the spotlight effect plus the mirror mismatch in this script
+  do exactly that to a single disliked feature. **The shared faculty is attention narrowed
+  onto one salient input until nothing else registers**, not the surface topic of money versus
+  appearance. Shipped bridge: "The same tunnel that narrows your whole mind around a scarce
+  number narrows just as hard around a single feature on your face, until it is the only thing
+  either of you can see." Confirms the standing pattern that **the user prefers the tease to
+  point at the immediately preceding project**, and that a bridge dismissed on a first pass is
+  worth re-examining at the faculty level rather than the surface-topic level before ruling it
+  out.
+- Shapes now used: 10 and 11 the five-stepper, 12 the object callback, 13 the second example,
+  14 same mechanism opposite direction, targeting 13. Remaining unused: the unanswered
+  question, the confession, the cold pivot.
+- Echo: "You know exactly what is wrong with your face. Nobody else has ever seen it" returns as
+  "You still know exactly what is wrong with your face. But that was never a fact about your
+  face. It was a fact about the only pair of eyes ever assigned to watch it, at close range, in
+  reverse, for a lifetime, with nowhere else to look." The echo also had to be rewritten with
+  the hook, per the project 11 rule that changing a first line always obligates an echo rewrite.
+- 1,940 words, 132 sentences, 4 questions: 3 narration questions (the hook's "So where does the
+  other half live...", "Where did the other half go?", "So how much of your verdict is a
+  measurement, and how much is just repetition?") plus the CTA question, same accounting as
+  projects 10, 12 and 13. The hook question and the body question are a deliberate pair: the
+  hook asks where the other half went and the psychology pillar answers it in one word,
+  "Nowhere."
+- Numeric material for the thumbnail, previously flagged as thin in topic memory and now
+  resolved: roughly half predicted to notice versus about a quarter who actually did (the
+  spotlight effect), 200,000 years without a clear mirror versus about 200 years with one versus
+  about 15 years of a lit camera in the pocket, a band of a few hundred known faces versus
+  thousands of algorithm-selected ones a week. The half-versus-quarter pair and the
+  200,000-versus-200 pair are both genuinely subtractable, which is what the two-number layout
+  wants.
+
 ## NARRATION PACE: use 175 wpm, not 169 (settled 2026-09-01)
 
 The 169 wpm figure used throughout this file to convert the four-beat hook budget into word

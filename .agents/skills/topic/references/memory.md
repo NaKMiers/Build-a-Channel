@@ -20,6 +20,7 @@ Self-improving notes for topic selection. Single canonical copy, no Claude-side 
 | 11 | Why You Remember Things That Never Happened | scaffolded 2026-08-28, misinformation effect, no script yet |
 | 12 | Why One Stranger's Comment Can Ruin Your Whole Day | scaffolded 2026-08-29, negativity bias plus moral outrage contagion, no script yet |
 | 13 | The Psychology Of Being Poor | scaffolded 2026-08-29, scarcity mindset, user-supplied title, no script yet |
+| 14 | The Psychology Of Being Ugly | scaffolded 2026-09-03, self-perception and attractiveness bias, user-supplied title, no script yet |
 | old 8 | Why You Stay Quiet When You Know The Room Is Wrong | abandoned 2026-08-12, unpublished, artifacts recoverable at `c9f048f` |
 | old 9 | Why You Think Everyone Is Watching When Nobody Is | abandoned 2026-08-12, unpublished, artifacts recoverable at `c9f048f` |
 
@@ -81,6 +82,62 @@ deleted-but-recoverable projects in git history, not just the working tree, befo
 proposing a title.
 
 ## Proposed but not picked
+
+### 2026-09-03, batch 19, none picked, user supplied their own title
+
+The user asked for a topic "similar to project 13" about being ugly. Offered five
+compliant reframed titles on that theme, then the user replied "How about if the content
+is just 'The Psychology of Being Ugly'", was told it breaks the same two rules as
+projects 5 and 13 (no "you"/"your", names the subject not an inner experience) plus the
+same shame risk project 13 carried for poverty, and confirmed with "No problem." **This
+is now the fourth time the user has arrived with their own plain-topic-name wording**
+(projects 5, 8, 13, 14). All five reframed titles below remain eligible.
+
+| Title | Theme | Numeric material available |
+| --- | --- | --- |
+| Why You Feel Uglier In Photos Than You Do In The Mirror | self-perception, appearance | Mita, Dermer and Knight 1977, mirror-image versus true-image preference (mere exposure) |
+| Why You Notice Your Own Flaws Far More Than Anyone Else Does | self-perception, appearance | self-focused attention bias; spotlight-effect-style visible-flaw research |
+| Why You're Judged By A Beauty Standard That Keeps Moving On You | status and comparison, appearance | Anderson et al. cross-cultural body-size preference tracking food scarcity |
+| Why Your Face Gets Compared To People You Can't Compete With | status and comparison, appearance | Festinger social comparison; Dunbar's number as the old ~150-face comparison ceiling |
+| Why One Feature You Dislike Can Color How You See Your Whole Face | self-perception, appearance | halo/horn effect; holistic (configural) face-processing research |
+
+### Selected instead: project 14, the psychology of being ugly
+
+Working title **The Psychology Of Being Ugly**, taken verbatim from the user, same
+pattern as projects 5 and 13. **It breaks two title rules** (no "you" or "your", and it
+names a subject rather than an inner experience the viewer has felt). The user
+reaffirmed after being told. **Their title stands as the folder name and working
+title.** `metadata` may still set a compliant published title.
+
+Research to reuse so `script` does not rediscover it:
+
+- **Psychology.** Self-perception distortion around appearance. Mita, Dermer and Knight
+  1977: people prefer their mirror-image photo over their true photo, while friends
+  prefer the true one, because a mirror is the version you are actually familiar with.
+  Pair with holistic/configural face processing (a single salient disliked feature can
+  color the read of the whole face, a halo-in-reverse) and with self-focused attention
+  research showing people fixate on their own perceived flaws far more than observers
+  ever do.
+- **Anthropology.** Symmetry and averageness as ancestral fitness cues in mate selection
+  (Langlois and Roggman 1990 composite-face preference; Thornhill and Gangestad on
+  symmetry). Cross-cultural variability matters more here: Anderson et al. found
+  preferred body size tracks food security across societies, proof that "attractive" is
+  environmentally calibrated, not a fixed universal verdict. Dunbar's ~150-face band is
+  reusable again as the ancestral comparison pool, contrasted with an unlimited,
+  filtered, edited modern one.
+- **Modern mismatch.** A perception system built to judge strangers fast, and to
+  calibrate against a small known population, now runs against your own face in a mirror
+  or a camera lens and against a global, filtered comparison set it was never built to
+  hold.
+- **Editorial risk to watch, same class as project 13.** Appearance is easy to tip into
+  shaming or to brush against body-image and body-dysmorphia territory. Keep every
+  mechanism causal (a perception bias in the system) and never characterological (a
+  verdict on the viewer), and never let the script diagnose or name a clinical
+  condition.
+- **Numeric material is currently thin.** No hard percentage or ratio is locked yet;
+  pull one from the mirror-image preference study or the cross-cultural body-size data
+  during `script`, or the thumbnail stage will be starved like Diderot and Solomon's
+  paradox were.
 
 ### 2026-08-29, batch 18, none picked, user supplied their own title
 
