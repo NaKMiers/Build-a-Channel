@@ -585,3 +585,83 @@ guess, so the single call on `full.mp3` remains the right trade. Every other can
 is far worse: the next paragraph end back for boundary 1 gives 16.9 percent, and moving
 boundary 2 back gives over 130 percent. **Record the arithmetic even when the split is not
 used, so a retry does not redo it.**
+
+## Project 14 (2026-09-04) - clean run, and a reusable "is any audio missing" battery
+
+3 parts at 256 kbps 44.1 kHz mono (uniform, so no VBR header risk): 4m52.3s, 5m03.1s, 1m13.6s,
+combined **11m09.1s**, Xing reporting 11m09.0s which is rounding, not a mismatch. Single
+ElevenLabs forced-alignment call on `audios/full.mp3` against the whole script, same as projects
+5, 6, 8, 9, 10, 11, 12 and 13, because `script_psychology_of_being_ugly.md` has **zero runs of 2+
+blank lines** across its 30 paragraph gaps, so there is no part boundary to find.
+
+**289 cues**, median 1.9s, last cue `[11:07]`, aligned speech ending at 668.7s of 669.1s audio,
+no malformed lines, transcript text word-for-word identical to the script at 1940 words. 25.9 cues
+per minute, slightly under the V2 profile's 27.5 but within normal variation for a read with fewer
+short sentences. One one-word cue, `Nowhere.`, an intentional verdict from "Where did the other
+half go? Nowhere." Duration is inside the channel-dna 10 to 14 minute spec.
+
+Pre-flight checks in the project 11 order, all passed first time: folder sweep found exactly three
+parts and no stray; `file` confirmed uniform 256 kbps; 1940 / 669.1 = **2.90 wps**, mid-band;
+quota was free tier 1243 of 10000 used, **8757 remaining** against a predicted 743 credits
+(1.111 x 669.1, the project 13 estimator). `words.json` was again a **bare top-level list**.
+
+Whole-file 2.90 wps, rolling 30s median **2.90**, max 3.73 at 75s, largest silence 1.60s at
+0m21.5s. 174.0 wpm, the fourth consecutive recording above the retired 169 figure and consistent
+with the 175 wpm planning figure adopted in project 13.
+
+### The user asked "is the audio missing any words", so here is the full battery
+
+The wps arithmetic and the rolling window were already in this file, but they only catch a MISSING
+PART or a mid-file hole. Forced alignment will also silently cram words when a smaller stretch of
+audio is absent, and that needs a third test. Run all four; each is free once `words.json` exists.
+
+1. **Word-for-word diff, script against transcript.** Flatten both to one word per line and `diff`.
+   Proves the transcript carries every script word, and catches the invisible `wa    s` class of
+   script corruption from project 3. Here: 1940 vs 1940, identical.
+2. **Rolling 30s window vs whole-file rate.** Agreement means a uniform read. Here 2.90 vs 2.90.
+3. **Largest silences.** A dropped stretch leaves a hole. Here the top silence is 1.60s and the
+   top six are all 1.1 to 1.6s, all at sentence boundaries; nothing resembling a gap.
+4. **NEW - the cramming test, per-word and per-run chars-per-second.** This is the one the earlier
+   notes lacked. If audio is missing, the aligner must fit the orphaned words into whatever time
+   remains, so a short run reads absurdly fast even when the 30s window looks fine.
+
+   ```python
+   win=8; worst=[]
+   for i in range(len(ws)-win):
+       a=ws[i]; b=ws[i+win-1]; dur=b["end"]-a["start"]
+       chars=sum(len(x["text"].strip()) for x in ws[i:i+win])
+       if dur>0: worst.append((chars/dur, a["start"], " ".join(x["text"] for x in ws[i:i+win])))
+   worst.sort(reverse=True); med=statistics.median(x[0] for x in worst)
+   ```
+
+   Read the ratio, not the absolute number. Here the median 8-word run was 13.9 cps and the worst
+   was **1.83x median**, "It was reading the room you happened to" at 7:42, an ordinary run of
+   short function words. **Judge a run, not a single word.** The fastest single words were all
+   40ms articles, `the` and `you` at 75 cps, which is normal unstressed speech and not a signal;
+   a genuine drop shows as a multi-word run several times the median, not as one fast article.
+
+### Seam 1 has almost no pad, which is worth a listen but is not a drop
+
+The part 1 / part 2 join at 292.3s came back with a **0.03s gap**, against 0.52s at the part 2 /
+part 3 join and 0.4 to 0.7s at every seam in projects 12 and 13. `you.` is aligned 291.86 to
+292.44, so its aligned end sits 0.13s past part 1's own 292.31s boundary. All four tests above
+pass, so no word is missing, but the tail of that word may be clipped on the audio itself.
+**A seam gap under about 0.1s is a listen-check, not a failure**, and the fix if it is audible is
+re-exporting part 1 with a longer tail, not touching the transcript.
+
+### One duplicate timestamp, next second free, one-step bump
+
+`[10:10]` appears twice, "And when it does," (610.06) then "the only thing worth asking is"
+(610.98). The neighbourhood:
+
+```
+[10:08] FREE
+[10:09] FREE
+[10:10] And when it does, (610.06)  ||  the only thing worth asking is (610.98)   <- the duplicate
+[10:11] FREE
+[10:12] what it just measured you against. (612.48)
+```
+
+`[10:11]` is free, so this is the simple one-step bump touching a single file, drift +0.02s. The
+project 12 and 13 cascade machinery is not needed here, but the map was still built before saying
+so, which is the project 13 rule.
