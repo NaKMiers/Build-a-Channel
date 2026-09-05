@@ -1,6 +1,22 @@
-"""Shared helpers for turning timed text into the [M:SS] transcript format."""
+"""Shared helpers for turning timed text into the transcript timestamp formats.
 
+Two shapes, and the difference matters:
+
+  [MM:SS.SSS]  transcribes/transcript.md, written by the transcript tools. Forced
+               alignment returns real onsets to the millisecond, so the transcript
+               keeps them. `[00:03.480]`.
+  [M:SS]       prompts/image-prompts.md, and the scene image file names derived from
+               it by swapping the colon for a hyphen. Never widened, because the file
+               names on disk are built from it.
+
+`to_mss` is the single definition of how the second is derived from the first: plain
+truncation, so a project re-cut from its cached word timings reproduces byte-identical
+[M:SS] values and its existing image prompts still line up.
+"""
+
+import json
 import re
+from pathlib import Path
 
 # 00:01:02,500  |  00:01:02.500  |  1:02.5
 TIME_RE = re.compile(
@@ -240,12 +256,76 @@ def merge(cues, min_dur, max_chars):
     return out
 
 
-def stamp(seconds, pad=False):
-    """Format seconds as [M:SS], or [MM:SS] when pad is set. Hours roll into minutes."""
+# A leading transcript stamp in either shape: [0:03], [00:03], [00:03.480].
+STAMP_RE = re.compile(r"\[(\d+):(\d{2})(?:\.(\d{1,3}))?\]")
+
+
+def mark(seconds):
+    """MM:SS.SSS with no brackets: the shape a timestamp takes inside a JSON data file.
+
+    words.json carries these instead of bare float seconds, so the cache can be read by
+    eye against the transcript and the audio. Counting in whole milliseconds rather than
+    formatting a float means a value a hair under the minute can never render as the
+    impossible 00:60.000.
+    """
+    total = max(0, round(float(seconds) * 1000))
+    minutes, rest = divmod(total, 60_000)
+    return f"{minutes:02d}:{rest // 1000:02d}.{rest % 1000:03d}"
+
+
+def seconds_of(value):
+    """Read one timing out of a JSON data file, in either shape.
+
+    Accepts the "MM:SS.SSS" string written today and the bare float seconds every
+    words.json carried before it, so an old cache still merges without conversion.
+    """
+    if isinstance(value, bool):
+        raise ValueError(f"not a timing: {value!r}")
+    if isinstance(value, (int, float)):
+        return float(value)
+    parsed = parse_offset(str(value))
+    if parsed is None:
+        raise ValueError(f"not a timing: {value!r}")
+    return parsed
+
+
+def load_words(path):
+    """Read a words.json cache into [(start, end, text)] with seconds as floats.
+
+    The one place that knows both cache shapes, so a diagnostic snippet does not have to
+    remember which one it is looking at. Validation beyond the timings is the caller's
+    job; captions-srt.py keeps its own loader because it reports per-entry errors.
+    """
+    data = json.loads(Path(path).read_text(encoding="utf-8"))
+    return [(seconds_of(w["start"]), seconds_of(w["end"]), w["text"]) for w in data]
+
+
+def stamp(seconds, pad=False, ms=False):
+    """Format seconds as a transcript stamp.
+
+    ms=True gives [MM:SS.SSS], the transcript format. Otherwise [M:SS], or [MM:SS]
+    when pad is set. Hours roll into minutes either way.
+    """
+    if ms:
+        return f"[{mark(seconds)}]"
     seconds = max(0, int(seconds))
     minutes, secs = divmod(seconds, 60)
     return f"[{minutes:02d}:{secs:02d}]" if pad else f"[{minutes}:{secs:02d}]"
 
 
-def render(cues, pad=False):
-    return "".join(f"{stamp(start, pad)} {text}\n" for start, _, text in cues)
+def to_mss(text):
+    """Truncate a [MM:SS.SSS] stamp to the [M:SS] form image prompts use.
+
+    Milliseconds are dropped, not rounded, and the minute loses its pad: [00:03.480]
+    becomes [0:03]. A stamp already in [M:SS] form comes back unchanged, so the same
+    call works on a legacy whole-second transcript. Anything that is not a stamp is
+    returned as-is.
+    """
+    m = STAMP_RE.fullmatch(text.strip())
+    if not m:
+        return text
+    return f"[{int(m.group(1))}:{m.group(2)}]"
+
+
+def render(cues, pad=False, ms=False):
+    return "".join(f"{stamp(start, pad, ms)} {text}\n" for start, _, text in cues)

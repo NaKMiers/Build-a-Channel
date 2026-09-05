@@ -1,6 +1,6 @@
 ---
 name: transcript
-description: Turn a recorded TossExplains narration into transcribes/transcript.md, the timestamped [M:SS] cue list that the scenes skill consumes. Combines multi-part recordings into audios/full.mp3 first, then transcribes each part and merges onto that one timeline. Wraps tools/combine-audio.py, tools/audio-to-timestamps.py, and tools/srt-to-timestamps.py with the right paths and flags. Use when the user says "transcript", "timestamps", "align the audio", or has just recorded a voiceover.
+description: Turn a recorded TossExplains narration into transcribes/transcript.md, the timestamped [MM:SS.SSS] cue list that the scenes skill consumes. Combines multi-part recordings into audios/full.mp3 first, then transcribes each part and merges onto that one timeline. Wraps tools/combine-audio.py, tools/audio-to-timestamps.py, and tools/srt-to-timestamps.py with the right paths and flags. Use when the user says "transcript", "timestamps", "align the audio", or has just recorded a voiceover.
 allowed-tools:
   - Bash
   - Read
@@ -190,13 +190,44 @@ wording. Do not hand-write timestamps to fill the gap.
 ## Step 3 - Validate the output
 
 ```bash
+source .agents/bin/cue-times.sh
 T="$P/transcribes/transcript.md"
 wc -l "$T"
-head -3 "$T"
-tail -1 "$T"                               # last cue must land near full.mp3's duration
-grep -cvE '^\[[0-9]+:[0-9]{2}\] .' "$T"   # must be 0: every line is a well-formed cue
-awk '{print $1}' "$T" | sort | uniq -d     # duplicate timestamps, note them
+head -3 "$T"                                          # stamps must read [MM:SS.SSS]
+tail -1 "$T"                                          # last cue near full.mp3's duration
+grep -cvE '^\[[0-9]+:[0-9]{2}(\.[0-9]{1,3})?\] .' "$T"  # 0: every line a well-formed cue
+cue_dups "$T"                                         # collisions after truncation, note them
 ```
+
+The cue regex accepts the legacy whole-second `[M:SS]` too, so it still passes on projects 1
+through 13. A *new* transcript must carry milliseconds: if `head -3` shows `[0:00]`, the tool
+was run with `--no-ms` or an old copy is still on disk. Re-cut it.
+
+`cue_dups` is not the same question as "does this file repeat a timestamp". It never will now.
+It asks which cues **truncate to the same `[M:SS]`**, which is the collision `/scenes` has to
+name around, and it is invisible in the file itself. Never substitute `awk '{print $1}' | sort
+| uniq -d` here: on a millisecond transcript that reports nothing, every time.
+
+Then check the cache this run just wrote, which is a separate artifact and a separate
+failure:
+
+```bash
+W="$P/transcribes/words.json"
+N=$(python3 -c "import json,sys;print(len(json.load(open(sys.argv[1]))))" "$W")
+S=$(grep -c '"start": "[0-9][0-9]:[0-9][0-9]\.[0-9][0-9][0-9]"' "$W")
+echo "$N words, $S with MM:SS.SSS timings"   # the two numbers must be equal
+```
+
+`words.json` carries `"MM:SS.SSS"` strings, the transcript's shape without the brackets.
+The tool writes that on its own, so the check is not about the tool getting it wrong. It
+catches the two things that do happen: `--save-json` was dropped and an **older cache from
+a previous take is still sitting there**, or someone patched the file by hand. A stale
+cache is the more dangerous one, because it aligns without error and `/captions` then
+builds a whole 25-language track against the wrong recording.
+
+`S` of 0 with a plausible `N` means the file is a legacy float cache, `{"start": 0.18}`.
+Every tool still reads it, so it is not an error by itself, but on a run that just wrote
+the file it means the write did not happen. Re-run with `--save-json`.
 
 For a multi-part recording, the last cue must sit within a few seconds of the total
 duration Step 1 printed. A last cue that falls well short means a part was dropped or the
@@ -220,17 +251,20 @@ python3 tools/audio-to-timestamps.py --from-json "$P"/transcribes/words.json \
 
 Only write an alternate cut if the user asks for one.
 
-## Step 4 - Report duplicate timestamps
+## Step 4 - Report truncation collisions
 
-If two cues share a timestamp, say so explicitly and state the disambiguation the
-`scenes` skill must record in its header, for example: `[3:24] appears twice; save the
-second one as [3:25] so it does not overwrite the first`. Project 1 has exactly this
-case. The resulting scene filename replaces `:` with `-`.
+If two cues truncate to the same `[M:SS]`, say so explicitly and state the disambiguation the
+`scenes` skill must apply, for example: `[00:18.240] and [00:18.910] both truncate to [3:24];
+save the second image as [3:25] so it does not overwrite the first`. Project 1 and project 14
+each have exactly one such case. The resulting scene filename replaces `:` with `-`.
+
+Quote both millisecond stamps, not just the shared `[M:SS]`. The transcript no longer shows
+the collision anywhere, so the report is the only place a human sees it.
 
 ## Step 5 - Report and hand off
 
-Give the line count, the total duration from the last timestamp, any duplicates, and the
-first 3 lines. For a multi-part recording also name `full.mp3` and its duration, since
+Give the line count, the total duration from the last timestamp, any truncation
+collisions from Step 4, and the first 3 lines. For a multi-part recording also name `full.mp3` and its duration, since
 that is the file the editor loads. Then:
 
 > Transcript saved to `<path>`, timed against `audios/full.mp3`.
@@ -247,9 +281,15 @@ that is the file the editor loads. Then:
 - Never pass `full.mp3` back in as a part. Collect `part-*.mp3` and exclude it.
 - Never split the script by eyeballed word count alone. Check words per second against
   each part's measured duration first, because a mismatched script aligns without error.
-- Never drop `--save-json`. Re-cutting without the cache costs another API call.
-- Never reformat the `[M:SS]` timestamps the tool produces. Scene image file names
-  derive from them by replacing `:` with `-` for Windows compatibility.
+- Never drop `--save-json`. Re-cutting without the cache costs another API call, and a
+  stale cache left in its place is worse than none: it aligns silently against the wrong take.
+- Never hand-write or hand-patch `words.json`. Every timing in it is a measurement. Its
+  `"MM:SS.SSS"` strings exist to be read, not edited, and `/captions` cuts all 25 language
+  tracks straight off them.
+- Never reformat the `[MM:SS.SSS]` timestamps the tool produces, and never round them off
+  to whole seconds by hand. `/scenes` truncates them to `[M:SS]` for the image prompts, and
+  the scene image file names come from that by replacing `:` with `-` for Windows
+  compatibility. Truncating twice, or rounding once, moves a file name.
 - Never commit the audio file. `*.mp3`, `*.wav`, and `*.mp4` are gitignored on purpose, so
   `audios/` keeps only a `.gitkeep` in git. The recording is reproducible from the script,
   and `full.mp3` is reproducible from the parts.

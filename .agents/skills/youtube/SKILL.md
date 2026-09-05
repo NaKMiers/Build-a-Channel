@@ -1,6 +1,6 @@
 ---
 name: youtube
-description: Read and write YouTube data for the TossExplains channel through the official YouTube Data API v3 and YouTube Analytics API. Subcommands pull video stats, fetch official captions as [M:SS], read day-by-day analytics, upload a finished video, and profile a competitor channel. Use when the user says "/youtube", "pull video stats", "upload to YouTube", "fetch transcript from YouTube", "channel analytics", or "competitor research".
+description: Read and write YouTube data for the TossExplains channel through the official YouTube Data API v3 and YouTube Analytics API. Subcommands pull video stats, fetch official captions as [MM:SS.SSS], read day-by-day analytics, upload a finished video, and profile a competitor channel. Use when the user says "/youtube", "pull video stats", "upload to YouTube", "fetch transcript from YouTube", "channel analytics", or "competitor research".
 allowed-tools:
   - Bash
   - Read
@@ -100,7 +100,7 @@ tool prints a one-line summary to stdout and the full JSON to stderr.
 
 ## Step 2 - transcript
 
-Pull the official captions as a `[M:SS] narration` transcript. This is an
+Pull the official captions as a `[MM:SS.SSS] narration` transcript. This is an
 alternative to `tools/audio-to-timestamps.py` for cases where the official
 captions are already good enough.
 
@@ -117,10 +117,11 @@ a few seconds of the video's duration.
 Validation, same regex the `transcript` skill uses:
 
 ```bash
+source .agents/bin/cue-times.sh
 T=<transcript.md>
 wc -l "$T"
-grep -cvE '^\[[0-9]+:[0-9]{2}\] .' "$T"   # must be 0
-awk '{print $1}' "$T" | sort | uniq -d     # duplicate timestamps
+grep -cvE '^\[[0-9]+:[0-9]{2}(\.[0-9]{1,3})?\] .' "$T"   # must be 0
+cue_dups "$T"                                           # truncation collisions
 ```
 
 ## Step 3 - analytics

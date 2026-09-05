@@ -116,16 +116,21 @@ grep -nE '^#|\*\*|^- |^[0-9]+\. ' "$S" | head            # must be empty
 ## Step 4 - Transcript checks
 
 ```bash
+source .agents/bin/cue-times.sh
 T="$P/transcribes/transcript.md"
 grep -c . "$T"
-grep -cvE '^\[[0-9]+:[0-9]{2}\] .' "$T"    # must be 0
-awk '{print $1}' "$T" | sort | uniq -d      # duplicates, informational
+grep -cvE '^\[[0-9]+:[0-9]{2}(\.[0-9]{1,3})?\] .' "$T"   # must be 0
+cue_dups "$T"                                           # collisions, informational
 ```
 
 - Malformed cue lines are a FAIL.
 - Under 20 lines is a FAIL, the transcript is incomplete.
-- Duplicate timestamps are not a failure, but they must be noted in the
-  `image-prompts.md` header with the file-naming workaround. Verify that note exists.
+- The regex accepts both transcript shapes on purpose: `[MM:SS.SSS]` as written today, and
+  the legacy whole-second `[M:SS]` still in projects 1 through 13. Neither is a FAIL.
+- `cue_dups` reports cues that **truncate** to the same `[M:SS]`. On a millisecond
+  transcript that collision does not appear in the file at all, so never substitute
+  `awk '{print $1}' | sort | uniq -d`, which would silently report none. A collision is not
+  a failure in itself, but it must show up as an accounted-for remap in Step 6.
 
 ## Step 5 - Cast checks
 
@@ -169,10 +174,11 @@ F="$P/prompts/image-prompts.md"
 CUES=$(grep -c . "$T"); PR=$(grep -c '^\[' "$F")
 echo "cues $CUES  prompts $PR"
 
-# timestamps identical, same order, except documented duplicate remaps
-diff <(awk '{print $1}' "$T") <(grep -o '^\[[0-9:]*\]' "$F")
-DUPS=$(awk '{print $1}' "$T" | sort | uniq -d | wc -l)
-echo "declared duplicates: $DUPS"
+# timestamps identical, same order, except documented collision remaps
+source .agents/bin/cue-times.sh
+diff <(cue_stamps "$T") <(grep -o '^\[[0-9:]*\]' "$F")
+DUPS=$(cue_dups "$T" | wc -l)
+echo "declared collisions: $DUPS"
 
 # one internally consistent style version, never a mix
 V1A=$(grep -cF "$V1_STYLE_ANCHOR" "$F"); V1L=$(grep -cF "$V1_STYLE_LOCK" "$F")
@@ -257,14 +263,19 @@ wrong.
 
 "Accounted for" is now judged arithmetically, not by reading a note. `image-prompts.md` carries
 no header from project 3 onward, so there is nowhere to declare a remap. A differing line is
-accounted for when the transcript stamp is one of the `declared duplicates` and the prompt
-stamp is that duplicate advanced by one second. Check that the count of differing lines does
-not exceed `declared duplicates`, and that each differing pair fits that shape:
+accounted for when the transcript stamp is one of the `declared collisions` and the prompt
+stamp is that collision advanced by one second. Check that the count of differing lines does
+not exceed `declared collisions`, and that each differing pair fits that shape:
 
 ```bash
-# project 3: transcript has [8:26] twice, prompts are [8:26] then [8:27]
-diff <(awk '{print $1}' "$T") <(grep -o '^\[[0-9:]*\]' "$F") | grep -c '^[<>]'   # 2 lines = 1 remap
+# project 14: two cues truncate to [10:10], prompts are [10:10] then [10:11]
+source .agents/bin/cue-times.sh
+diff <(cue_stamps "$T") <(grep -o '^\[[0-9:]*\]' "$F") | grep -c '^[<>]'   # 2 lines = 1 remap
 ```
+
+Compare against `cue_stamps`, never against `awk '{print $1}' "$T"`. On a millisecond
+transcript the raw first field is `[10:10.240]`, which matches no prompt, so a bare `awk`
+reports every single line as differing and buries the one remap that actually matters.
 
 ### V2 visual-plan checks
 

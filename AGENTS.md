@@ -107,8 +107,11 @@ and it must pass clean.
 ## Tools
 
 `tools/audio-to-timestamps.py` (forced alignment via ElevenLabs, or plain transcription
-via Groq) and `tools/srt-to-timestamps.py` both emit the `[M:SS] narration` format. They
-share `tools/tsfmt.py` for line splitting. `tools/combine-audio.py` merges a multi-part
+via Groq) and `tools/srt-to-timestamps.py` both emit the `[MM:SS.SSS] narration` format,
+the transcript's own resolution. `prompts/image-prompts.md` stays on `[M:SS]`, truncated by
+`/scenes`, because the scene image file names come from it. `.agents/bin/cue-times.sh` is the
+one definition of that derivation for shell, `tsfmt.to_mss()` for Python. They
+share `tools/tsfmt.py` for line splitting and timestamp formatting. `tools/combine-audio.py` merges a multi-part
 recording into `audios/full.mp3` and reports each part's true start, which is the timeline
 the transcript is built against. It also rewrites the combined file's Xing header, because
 parts exported at different bitrates otherwise make players report a badly wrong duration.
@@ -119,7 +122,7 @@ API keys live in a gitignored `.env`.
 
 `tools/captions-srt.py` serves the `captions` skill and reads the same
 `transcribes/words.json` that `audio-to-timestamps.py` saves, so subtitles land on each
-word's true onset instead of the whole second `[M:SS]` rounds it to. It runs in three
+word's true onset rather than on the start of whichever transcript line contains it. It runs in three
 stages: `build` cuts `en.srt` plus a `blocks.json` timing spine from the word timings and
 refuses a `words.json` that does not match the transcript; `assemble` pours one language's
 translation into that spine, so every file is frame-identical by construction; `check`

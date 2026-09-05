@@ -149,11 +149,13 @@ def load_words(path):
         text = str(item["text"]).strip()
         if not text:
             continue
-        words.append({
-            "start": float(item["start"]),
-            "end": float(item["end"]),
-            "text": text,
-        })
+        # Both cache shapes: "MM:SS.SSS" as written today, bare seconds in older files.
+        try:
+            start = tsfmt.seconds_of(item["start"])
+            end = tsfmt.seconds_of(item["end"])
+        except ValueError as exc:
+            die("%s entry %d has an unreadable timing: %s" % (path, i, exc))
+        words.append({"start": start, "end": end, "text": text})
     if not words:
         die("%s has no words with text." % path)
 
@@ -171,9 +173,11 @@ def check_against_transcript(words, transcript_path):
     captions that drift against the video with nothing to show for it.
     """
     raw = Path(transcript_path).read_text(encoding="utf-8")
-    cues = re.findall(r"^\[\d+:\d{2}\]\s*(.+)$", raw, re.MULTILINE)
+    # Either transcript shape: [MM:SS.SSS] as written today, or the legacy [M:SS]
+    # still sitting in projects 1 through 13.
+    cues = re.findall(r"^\[\d+:\d{2}(?:\.\d{1,3})?\]\s*(.+)$", raw, re.MULTILINE)
     if not cues:
-        die("%s has no [M:SS] cue lines. Run /transcript first." % transcript_path)
+        die("%s has no timestamped cue lines. Run /transcript first." % transcript_path)
 
     left = normalize(" ".join(w["text"] for w in words))
     right = normalize(" ".join(cues))

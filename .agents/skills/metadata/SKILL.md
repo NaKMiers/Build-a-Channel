@@ -107,8 +107,11 @@ shifts, major research introductions, and structural beats. Each entry is:
 M:SS  <short chapter title, max ~8 words>
 ```
 
-Match the M:SS to the nearest transcript timestamp. Chapters should feel like a useful
-viewing map, not a complete outline.
+Match the M:SS to the nearest transcript timestamp, **truncated**: a cue stamped
+`[04:12.680]` becomes the chapter `4:12`. YouTube parses only whole seconds here, and a
+chapter list with a stray `4:12.680` in it silently stops being a chapter list. Source
+`.agents/bin/cue-times.sh` and take the value from `cue_stamps` rather than trimming by
+eye. Chapters should feel like a useful viewing map, not a complete outline.
 
 **Call to action.** One line inviting likes, comments, and subscribes in the channel voice.
 
@@ -209,7 +212,7 @@ Then check by eye:
 - Hashtag count between 15 and 25
 - Tag count between 25 and 40
 - Tags on one line with no `#`
-- Chapters have valid M:SS timestamps matching the transcript
+- Chapters have valid whole-second M:SS timestamps, each matching a `cue_stamps` value
 - No more than 7 chapter entries
 - Every named study or researcher in the script has a citation with a working URL
 - No fabricated links — verify each URL is real and relevant

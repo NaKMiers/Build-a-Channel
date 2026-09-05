@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
-"""Convert SRT/VTT subtitles into the [M:SS] transcript format used for image prompts.
+"""Convert SRT/VTT subtitles into the [MM:SS.SSS] transcript format.
 
 Reads one or more subtitle files and prints lines like:
 
-    [0:00] Your hand is already moving.
-    [0:01] You didn't decide to do it.
+    [00:00.120] Your hand is already moving.
+    [00:01.480] You didn't decide to do it.
+
+Subtitle files already carry millisecond cue times, so nothing is invented here.
+Pass --no-ms for the older whole-second [M:SS] form.
 
 Multiple files are treated as consecutive parts of one recording, so part 2
 continues where part 1 ended (override with --offset).
@@ -65,7 +68,7 @@ def parse_subtitles(path):
 
 def main():
     p = argparse.ArgumentParser(
-        description="Convert SRT/VTT subtitles into [M:SS] transcript lines.",
+        description="Convert SRT/VTT subtitles into [MM:SS.SSS] transcript lines.",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=__doc__.split("Examples:")[1],
     )
@@ -94,9 +97,14 @@ def main():
         help="never let a merged line exceed this many characters (0 = no limit)",
     )
     p.add_argument(
+        "--no-ms",
+        action="store_true",
+        help="drop milliseconds: [0:05] instead of [00:05.480]",
+    )
+    p.add_argument(
         "--pad",
         action="store_true",
-        help="zero-pad minutes: [00:05] instead of [0:05]",
+        help="with --no-ms, zero-pad minutes: [00:05] instead of [0:05]",
     )
     p.add_argument(
         "--keep-repeats",
@@ -133,7 +141,7 @@ def main():
         cues = tsfmt.dedupe(cues)
     cues = tsfmt.merge(cues, args.min_dur, args.max_chars)
 
-    body = tsfmt.render(cues, args.pad)
+    body = tsfmt.render(cues, args.pad, ms=not args.no_ms)
     if args.output:
         args.output.write_text(body, encoding="utf-8")
         total = cues[-1][1]

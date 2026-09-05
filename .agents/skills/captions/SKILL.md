@@ -24,19 +24,25 @@ that same timing spine, so all 25 files are frame-identical to each other by con
 
 ## Why words.json and not the transcript
 
-`transcribes/transcript.md` is quantised to whole seconds, because `[M:SS]` has no room
-for anything finer. `transcribes/words.json` carries the real onset and offset of every
-word:
+The transcript is a **line**-level file. `transcribes/words.json` carries the real onset
+and offset of every **word**:
 
 ```json
-{ "start": 0.1, "end": 0.3, "text": "Ten" }
+{ "start": "00:00.100", "end": "00:00.300", "text": "Ten" }
 ```
 
-Project 12's first line is stamped `[0:00]` in the transcript, but the narrator's first
-word actually begins at `0.100` and the sentence closes at `1.12`. Cutting subtitles from
-the transcript throws both numbers away and lands every start on a `,000` boundary that is
-up to a second early. Cutting from `words.json` puts each subtitle on the exact frame the
-voice arrives.
+Subtitle blocks are not transcript cues. `cut_blocks` closes a block on a duration cap, a
+character cap, a real pause, or a sentence boundary, and `best_split` then walks backward
+through individual words to find a cut a translator can actually work with. All of that
+needs per-word timings. A transcript line gives one start and nothing inside it, so cutting
+from the transcript means every block boundary lands on whichever line happened to be
+nearby, and every subtitle inherits that line's start rather than the frame its own first
+word arrives on.
+
+Note that `transcript.md` now carries milliseconds itself, `[00:00.180]` rather than the old
+`[0:00]`. That closes the *rounding* gap but not the *granularity* one, and the granularity
+one is the reason this skill exists. Do not read the finer stamps as permission to build
+captions from the transcript.
 
 The transcript is still required, for two things: it proves `words.json` belongs to this
 take, and it is the reference a translator reads for context. It is never the timing source.
@@ -295,8 +301,8 @@ Then:
 
 ## Never
 
-- Never build captions from `transcript.md` when `words.json` exists. Whole-second
-  timings are up to a second early on every block.
+- Never build captions from `transcript.md` when `words.json` exists. Line-level timings
+  cannot cut a block, and its milliseconds do not change that.
 - Never hand-write or hand-edit an `.srt` or `blocks.json`. Run the tool.
 - Never compute SRT timestamps by hand. Both defects this skill guards against, the
   breached duration cap and the drifted `vi.srt`, were hand arithmetic.

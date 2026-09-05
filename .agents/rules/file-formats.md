@@ -28,7 +28,7 @@ projects/<n>-<title-slug>/
   transcribes/
     transcript.md             Written by `transcript`.
     transcript-min5.md        Optional coarser cut, only on request.
-    words.json                Forced-alignment cache. Stays .json, it is data.
+    words.json                Forced-alignment cache, `MM:SS.SSS` per word. Data, so .json.
     offsets.json              Part durations from `combine-audio.py`. Multi-part only.
 ```
 
@@ -43,7 +43,7 @@ Rules:
   keeps a `.gitkeep`. Never commit a recording, regenerate it from the script.
 - **`audios/full.mp3` is the combined recording**, written by `transcript` via
   `tools/combine-audio.py` whenever there is more than one part. It is the single timeline
-  every `[M:SS]` in `transcript.md` refers to, and the file the editor loads. It is an
+  every `[MM:SS.SSS]` in `transcript.md` refers to, and the file the editor loads. It is an
   output, never an input: collect `part-*.mp3` and exclude it. Also gitignored, and
   reproducible from the parts.
 - **All prose files are `.md`.** No `.txt`. `words.json` and `offsets.json` are the
@@ -75,16 +75,57 @@ A stray `##` or `**` becomes a spoken token and corrupts every timestamp after i
 
 ## `transcribes/transcript.md`
 
-One cue per line, `[M:SS] ` then the narration text.
+One cue per line, `[MM:SS.SSS] ` then the narration text. Minutes zero padded to two
+digits, seconds to two, milliseconds to three. Hours roll into minutes.
 
 ```
-[0:00] You can be surrounded by forty people and still feel like the last person on earth.
-[0:04] It happened to you recently.
-[0:06] A party, a train carriage,
+[00:00.180] You can be surrounded by forty people and still feel like the last person on earth.
+[00:04.320] It happened to you recently.
+[00:06.005] A party, a train carriage,
 ```
+
+**Milliseconds are the point of this file.** Forced alignment returns each word's real
+onset to the millisecond, and the editor cuts at that resolution. Rounding a cue to the
+whole second, which is what this file used to do, throws away up to a full second on every
+line for no gain.
+
+**`prompts/image-prompts.md` does not follow.** It stays on `[M:SS]`, because the scene
+images on disk are named from those stamps, `[3:20]` to `[3-20].jpg`, and those names must
+not move. `/scenes` derives the prompt stamp from the cue by **truncating**: `[00:03.480]`
+becomes `[0:03]`. Milliseconds dropped, never rounded, and the minute loses its pad.
+
+Two consecutive cues can therefore truncate to the same `[M:SS]` while the transcript
+itself shows no duplicate. That collision is real and it has to be found on the derived
+stream, not on this file. Source `.agents/bin/cue-times.sh` and use `cue_stamps` and
+`cue_dups` rather than `awk '{print $1}'`.
+
+Legacy projects 1 through 13 carry the old whole-second `[M:SS]` form. Every tool and check
+in the pipeline reads both, so those projects are left as they are.
 
 A 12 minute V1 script lands around 230 lines of roughly 3 seconds each. The V2 dense profile
 usually lands around 300 to 330 lines with a 1.7 to 2.0 second median cue.
+
+## `transcribes/words.json`
+
+The forced-alignment cache: one object per spoken word, in timeline order.
+
+```json
+[
+  { "start": "00:00.180", "end": "00:00.240", "text": "You" },
+  { "start": "00:00.260", "end": "00:00.420", "text": "know" }
+]
+```
+
+Timings are `"MM:SS.SSS"` strings, the same shape `transcript.md` uses without the
+brackets, so a word can be read straight off against the transcript and the audio. They
+are lossless at this resolution and they sort in timeline order, which is the order
+`captions-srt.py` asserts the file is in.
+
+This file is the timing source for `/captions`, and the free input to a re-cut
+(`audio-to-timestamps.py --from-json`). Both readers go through `tsfmt.seconds_of`, which
+also accepts the bare float seconds older caches carry, so nothing has to be converted.
+
+Never hand-edit a timing here. It is a measurement, not a decision.
 
 ## `prompts/character-prompts.md`
 
@@ -159,8 +200,10 @@ Rules:
   its own reference sheet. The ledger is for props, diagrams, charts, and shapes.
 - The ledger is absent only when a project genuinely has no recurring non-cast object.
 - Beat IDs are `B` plus three digits and increase in file order.
-- Times use `[M:SS]` and increase in timeline order. They may include extra CapCut-only beats
-  between transcript cues, but every generated prompt beat uses an exact transcript timestamp.
+- Times use `[M:SS]`, the same truncated form `image-prompts.md` carries, never the
+  transcript's `[MM:SS.SSS]`. They increase in timeline order. Extra CapCut-only beats may sit
+  between transcript cues, but every generated prompt beat carries a `cue_stamps` value, and
+  each one must equal the timestamp on the prompt it plans.
 - Register is one of `STORY`, `CARD`, `DIAGRAM`, `PORTRAIT`, `HYBRID`, or `SPLIT_OR_SCALE`.
 - Shot is one of `wide`, `medium`, `close`, `macro`, `overhead`, `pov`, `card`, `diagram`, or
   `scale`.
@@ -294,7 +337,9 @@ M:SS <chapter title>
 
 ```
 
-Chapters: 5 to 7 entries, each `M:SS` matching a transcript timestamp. Hashtags: 15 to 25.
+Chapters: 5 to 7 entries, each `M:SS` matching a transcript timestamp truncated to the
+whole second, the same `cue_stamps` form image prompts use. Never milliseconds: YouTube
+stops parsing the list. Hashtags: 15 to 25.
 Citations live inside this block, after the call-to-action and before the hashtags, with a
 `Sources:` label. Emoji is contextual — pick icons that match the video's emotional register.
 Two fenced blocks total (Title and Description, then Tags).

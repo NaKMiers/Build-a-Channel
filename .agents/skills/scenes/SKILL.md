@@ -46,12 +46,21 @@ grep -oE '@[A-Z]+' "$P"/prompts/character-prompts.md | sort -u
 ## Step 1 - Inventory the transcript
 
 ```bash
+source .agents/bin/cue-times.sh
 T="$P/transcribes/transcript.md"
-grep -c . "$T"                           # total cues
-awk '{print $1}' "$T" | sort | uniq -d   # duplicate timestamps
+grep -c . "$T"       # total cues
+cue_stamps "$T"      # the [M:SS] stream every prompt is stamped with
+cue_dups "$T"        # cues that truncate to the same [M:SS]
 ```
 
-Record the totals for the final chat report and mechanical verification.
+`cue_stamps` is where the prompt timestamps come from. The transcript carries
+`[MM:SS.SSS]`; image prompts carry `[M:SS]`, truncated. See prompt rule 1.
+
+`cue_dups` is not optional. A millisecond transcript never repeats a stamp, so the
+collision is invisible in the file and `awk '{print $1}' | sort | uniq -d` reports
+nothing. Two cues 400ms apart still land on one `[M:SS]`, and two scene images still
+try to claim one file name. Record the totals and every collision for the chat report
+and for mechanical verification.
 
 ## Style version selection
 
@@ -71,8 +80,10 @@ planning pass before writing prompt prose.
 Write `prompts/visual-plan.md` in the exact format from `file-formats.md`.
 
 1. Copy the three chapter colors from the V2 cast header. Choose one recurring concrete motif.
-2. Create one generated beat for every transcript cue. Extra CapCut-only beats may subdivide a
-   long cue or create a meaningful diagram build without adding a generation.
+2. Create one generated beat for every transcript cue, stamped with that cue's `cue_stamps`
+   value, so the plan and the prompt it plans carry the same `[M:SS]`. Extra CapCut-only beats
+   may subdivide a long cue or create a meaningful diagram build without adding a generation;
+   those are the only rows whose time is not a transcript cue.
 3. Assign register, shot, tier, asset type, plate, source, delta, motif, and text before writing
    any full image prompt.
 4. Target 35 to 45 percent new `PLATE` rows, 30 to 40 percent `VARIANT`, 10 to 15 percent
@@ -109,10 +120,19 @@ Write `prompts/visual-plan.md` in the exact format from `file-formats.md`.
 
 ## The prompt rules
 
-1. **Every prompt begins with its timestamp, copied character for character from the
-   transcript.** `[0:00]` stays `[0:00]`, `[00:00]` stays `[00:00]`. Never reformat,
-   re-pad, or renumber a timestamp. When saving the image, replace its colon with a
-   hyphen so the filename works on Windows: `[0:00]` becomes `[0-00].jpg`.
+1. **Every prompt begins with its timestamp, derived from the transcript cue by
+   truncation.** The transcript carries `[MM:SS.SSS]`; the prompt carries `[M:SS]`.
+   Milliseconds are dropped, never rounded, and the minute loses its pad:
+   `[00:03.480]` becomes `[0:03]`, `[11:52.005]` becomes `[11:52]`. Take the value from
+   `cue_stamps` rather than deriving it by eye. A legacy whole-second transcript is
+   already in that form and passes through unchanged. Beyond that one truncation, never
+   reformat, re-pad, or renumber a timestamp. When saving the image, replace its colon
+   with a hyphen so the filename works on Windows: `[0:00]` becomes `[0-00].jpg`.
+
+   **When two cues truncate to the same `[M:SS]`**, the second prompt takes that stamp
+   advanced by one second, so `[0:03]` then `[0:04]`, and the chat report at Step 4 says
+   so. Without the bump the second image overwrites the first on disk. Check that the
+   advanced stamp is not itself already taken; if it is, keep advancing.
 2. **The `[MM:SS]` prefix and every `@TOKEN` are instructions for the human and the file
    system, not visual content.** They must never appear as rendered text in the generated
    image: no timestamp, clock, or counter burned into a corner, no literal "@NAME" caption
@@ -328,7 +348,7 @@ nothing else.** The first byte of the file is the `[` of the first prompt. No ti
 line, no source-transcript line, no attachment note, no GENERATION LINE, no commentary
 anywhere. `image-prompts.md` is imported wholesale into an image tool that treats every line as
 a prompt, so a header becomes a junk generation. The cast list, cue counts,
-duplicate-timestamp note and GENERATION LINE all go in the **chat report** at Step 4 instead,
+truncation-collision note and GENERATION LINE all go in the **chat report** at Step 4 instead,
 where the human reads them and the tool never sees them.
 
 Work through the transcript in **internal chunks of 25 cues**, appending each chunk to the
@@ -377,8 +397,11 @@ awk -v b="$B" -v n="$N" 'BEGIN{
 awk '/^---$/{if(r>m){m=r;t=s}; r=0; next} /^\[/{if(r==0)s=$1; r++}
      END{if(r>m){m=r;t=s}; print "  longest inherited run "m" prompts, starting "t}' "$F"
 
-# Timestamps identical and in order.
-diff <(awk '{print $1}' "$T") <(grep -o '^\[[0-9:]*\]' "$F") && echo "timestamps match"
+# Timestamps match the truncated transcript stream, in order. The only permitted
+# difference is a collision bump from rule 1: one differing pair per cue_dups entry.
+source .agents/bin/cue-times.sh
+diff <(cue_stamps "$T") <(grep -o '^\[[0-9:]*\]' "$F") && echo "timestamps match"
+cue_dups "$T"   # each of these accounts for exactly one differing pair above
 
 # Exactly one style version must cover every prompt.
 V1A=$(grep -cF "$V1_STYLE_ANCHOR" "$F"); V1L=$(grep -cF "$V1_STYLE_LOCK" "$F")
@@ -540,8 +563,9 @@ for `@[name]`, which is part of the style lock. Fix anything that fails before r
 
 **The chat report carries everything the header used to.** Since the file is prompts only,
 this is the only place the human gets it, so do not abbreviate it. Give the prompt count
-against the cue count, the cast list with its `.jpeg` file names, any duplicate timestamps
-with the file-naming workaround, the background budget table, the chain-break count together
+against the cue count, the cast list with its `.jpeg` file names, every `cue_dups`
+collision with both millisecond stamps and the bumped `[M:SS]` it was given, the background
+budget table, the chain-break count together
 with the **scene density figure and the longest inherited run**, the name-caption frames for
 any real named people, and the first 3 prompts as a sample. At the target density there are
 around 100 breaks, so give the density number and the act boundaries rather than annotating
@@ -576,6 +600,8 @@ cross-scene-drift defects were actually addressed on this run. Then quote the se
 ## Guardrails
 
 - Never skip a timestamp. One timestamp equals one prompt.
+- Never carry a transcript cue's milliseconds into a prompt. Image prompts are `[M:SS]`,
+  and the scene image file names on disk come from them.
 - Never output prompts out of chronological order.
 - Never wrap a prompt across two lines. Downstream tools split this file on newlines, so a
   wrapped prompt becomes two broken prompts.

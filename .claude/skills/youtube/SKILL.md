@@ -1,6 +1,6 @@
 ---
 name: youtube
-description: Read and write YouTube data for the TossExplains channel through the official YouTube Data API v3 and YouTube Analytics API. Subcommands pull video stats, fetch official captions as [M:SS], read day-by-day analytics, upload a finished video, and profile a competitor channel. Use when the user says "/youtube", "pull video stats", "upload to YouTube", "fetch transcript from YouTube", "channel analytics", or "competitor research".
+description: Read and write YouTube data for the TossExplains channel through the official YouTube Data API v3 and YouTube Analytics API. Subcommands pull video stats, fetch official captions as [MM:SS.SSS], read day-by-day analytics, upload a finished video, and profile a competitor channel. Use when the user says "/youtube", "pull video stats", "upload to YouTube", "fetch transcript from YouTube", "channel analytics", or "competitor research".
 ---
 
 # Youtube (Claude wrapper)

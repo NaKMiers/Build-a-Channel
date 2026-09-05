@@ -156,10 +156,13 @@ window over `words.json`, and it costs nothing:**
 
 ```bash
 python3 - <<'PY'
-import json,bisect
-ws=[x for x in json.load(open("<P>/transcribes/words.json"))["words"] if x.get("end") is not None]
-starts=[x["start"] for x in ws]; win=30.0; rates=[]; worst=(0,0)
-for t in range(0,int(ws[-1]["end"])-int(win),5):
+import bisect,sys
+sys.path.insert(0,"tools"); import tsfmt
+# load_words returns (start, end, text) in float seconds, from either cache shape.
+# words.json is a bare LIST, not {"words": [...]}; indexing ["words"] raises TypeError.
+ws=tsfmt.load_words("<P>/transcribes/words.json")
+starts=[a for a,_,_ in ws]; win=30.0; rates=[]; worst=(0,0)
+for t in range(0,int(ws[-1][1])-int(win),5):
     r=(bisect.bisect_left(starts,t+win)-bisect.bisect_left(starts,t))/win
     rates.append(r); worst=max(worst,(r,t))
 rates.sort(); print(f"median {rates[len(rates)//2]:.2f} max {worst[0]:.2f} at {worst[1]}s")
@@ -626,11 +629,12 @@ audio is absent, and that needs a third test. Run all four; each is free once `w
    remains, so a short run reads absurdly fast even when the 30s window looks fine.
 
    ```python
+   # ws from tsfmt.load_words above: (start, end, text) tuples in float seconds.
    win=8; worst=[]
    for i in range(len(ws)-win):
-       a=ws[i]; b=ws[i+win-1]; dur=b["end"]-a["start"]
-       chars=sum(len(x["text"].strip()) for x in ws[i:i+win])
-       if dur>0: worst.append((chars/dur, a["start"], " ".join(x["text"] for x in ws[i:i+win])))
+       dur=ws[i+win-1][1]-ws[i][0]
+       chars=sum(len(t.strip()) for _,_,t in ws[i:i+win])
+       if dur>0: worst.append((chars/dur, ws[i][0], " ".join(t for _,_,t in ws[i:i+win])))
    worst.sort(reverse=True); med=statistics.median(x[0] for x in worst)
    ```
 

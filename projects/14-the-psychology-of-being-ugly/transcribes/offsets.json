@@ -7,9 +7,7 @@
       "duration": 292.336,
       "frames": 11191,
       "sample_rate": 44100,
-      "bitrates": [
-        256
-      ]
+      "bitrates": [256]
     },
     {
       "file": "projects/14-the-psychology-of-being-ugly/audios/part-2.mp3",
@@ -17,9 +15,7 @@
       "duration": 303.099,
       "frames": 11603,
       "sample_rate": 44100,
-      "bitrates": [
-        256
-      ]
+      "bitrates": [256]
     },
     {
       "file": "projects/14-the-psychology-of-being-ugly/audios/part-3.mp3",
@@ -27,9 +23,7 @@
       "duration": 73.639,
       "frames": 2819,
       "sample_rate": 44100,
-      "bitrates": [
-        256
-      ]
+      "bitrates": [256]
     }
   ]
 }

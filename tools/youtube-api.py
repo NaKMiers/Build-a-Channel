@@ -47,8 +47,9 @@ except ImportError:  # pragma: no cover
     )
 from pathlib import Path
 
-# Local import: yt_oauth lives next to this file in tools/.
+# Local imports: yt_oauth and tsfmt live next to this file in tools/.
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import tsfmt  # noqa: E402
 import yt_oauth  # noqa: E402
 
 DATA_API = "https://www.googleapis.com/youtube/v3"
@@ -103,9 +104,13 @@ def iso8601_duration_to_seconds(raw: str) -> int:
     return h * 3600 + mins * 60 + secs
 
 
-def format_m_ss(seconds: int) -> str:
-    seconds = max(0, int(seconds))
-    return f"[{seconds // 60}:{seconds % 60:02d}]"
+def format_stamp(seconds: float) -> str:
+    """The [MM:SS.SSS] transcript stamp, same shape the transcript tools write.
+
+    YouTube's caption times already carry milliseconds; keeping them means a track
+    pulled from here is interchangeable with one built by /transcript.
+    """
+    return tsfmt.stamp(seconds, ms=True)
 
 
 def http_get_json(url: str, headers: dict | None = None) -> dict:
@@ -231,7 +236,7 @@ def cmd_transcript(args: argparse.Namespace) -> int:
 
     out_path = Path(args.output) if args.output else None
     lines = [
-        f"{format_m_ss(start)} {text.strip()}" for start, text in cues
+        f"{format_stamp(start)} {text.strip()}" for start, text in cues
     ]
     text_blob = "\n".join(lines) + "\n"
     if out_path:
@@ -249,7 +254,7 @@ def cmd_transcript(args: argparse.Namespace) -> int:
     }
     emit(
         f"{payload['cue_count']} cues, last at "
-        f"{format_m_ss(payload['last_timestamp_seconds'])}, "
+        f"{format_stamp(payload['last_timestamp_seconds'])}, "
         f"language={payload['language']}, kind={payload['track_kind']}"
         + (f" -> {out_path}" if out_path else ""),
         payload,
@@ -257,13 +262,13 @@ def cmd_transcript(args: argparse.Namespace) -> int:
     return 0
 
 
-def parse_ttml(xml_bytes: bytes) -> list[tuple[int, str]]:
+def parse_ttml(xml_bytes: bytes) -> list[tuple[float, str]]:
     """Return [(start_seconds, text)] from a TTML caption blob."""
     try:
         root = ET.fromstring(xml_bytes)
     except ET.ParseError as e:
         sys.exit(f"error: caption XML could not be parsed: {e}")
-    cues: list[tuple[int, str]] = []
+    cues: list[tuple[float, str]] = []
     for p in root.iter("{http://www.w3.org/ns/ttml}paragraph"):
         begin = p.attrib.get("begin", "")
         text = "".join(p.itertext()).strip()
@@ -276,8 +281,11 @@ def parse_ttml(xml_bytes: bytes) -> list[tuple[int, str]]:
     return sorted(cues, key=lambda c: c[0])
 
 
-def ttml_time_to_seconds(raw: str) -> int | None:
-    """Accept '12.5s', '1m2.5s', '00:01:02.500', '1h2m3s'. Return whole seconds."""
+def ttml_time_to_seconds(raw: str) -> float | None:
+    """Accept '12.5s', '1m2.5s', '00:01:02.500', '1h2m3s'. Return seconds.
+
+    Fractional seconds are kept: the transcript format has room for them.
+    """
     raw = raw.strip()
     if not raw:
         return None
@@ -291,7 +299,7 @@ def ttml_time_to_seconds(raw: str) -> int | None:
         while len(parts_f) < 3:
             parts_f.insert(0, 0.0)
         h, m, s = parts_f
-        return int(h * 3600 + m * 60 + s)
+        return h * 3600 + m * 60 + s
     # Offset form
     h = m = s = 0.0
     for num, unit in re.findall(r"([0-9]+(?:\.[0-9]+)?)(h|m|s)", raw):
@@ -302,7 +310,7 @@ def ttml_time_to_seconds(raw: str) -> int | None:
             m = v
         elif unit == "s":
             s = v
-    return int(h * 3600 + m * 60 + s)
+    return h * 3600 + m * 60 + s
 
 
 # ---------- analytics ------------------------------------------------------- #
@@ -556,7 +564,7 @@ def build_parser() -> argparse.ArgumentParser:
     p_stats.add_argument("video_id")
     p_stats.set_defaults(func=cmd_stats)
 
-    p_tx = sub.add_parser("transcript", help="Pull official captions as [M:SS].")
+    p_tx = sub.add_parser("transcript", help="Pull official captions as [MM:SS.SSS].")
     p_tx.add_argument("video_id")
     p_tx.add_argument("-o", "--output", help="Write the transcript to this path.")
     p_tx.set_defaults(func=cmd_transcript)

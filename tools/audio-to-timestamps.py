@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Turn narration audio into a [M:SS] transcript, ready to paste into Stage 4.
+"""Turn narration audio into a [MM:SS.SSS] transcript, ready to paste into Stage 4.
 
 Two engines:
 
@@ -13,6 +13,10 @@ Two engines:
          Plain transcription with whisper-large-v3-turbo (~$0.04 per hour of
          audio, so under a cent per video). No script needed, but the text is
          whatever the model heard, so wording and punctuation can drift.
+
+Timestamps carry milliseconds, because that is the resolution forced alignment
+returns and the resolution the editor cuts at. Pass --no-ms for the older whole-second
+[M:SS] form. The image prompts downstream stay on [M:SS] either way: /scenes truncates.
 
 Lines are cut where the narrator actually paused and after every sentence, so a
 short sentence stays its own line and nothing is glued to its neighbour. Anything
@@ -209,12 +213,20 @@ def transcribe(audio, timeout):
 
 
 def save_cache(path, cues):
-    """Write word timings for later reuse with --from-json. No-op without a path."""
+    """Write word timings for later reuse with --from-json. No-op without a path.
+
+    Timings are written as "MM:SS.SSS" rather than bare seconds, so the cache can be
+    read by eye against transcript.md and the audio. The strings are lossless at this
+    resolution and sort in timeline order, which is the order the readers assert.
+    """
     if not path:
         return
     path.write_text(
-        json.dumps([{"start": s, "end": e, "text": t} for s, e, t in cues],
-                   ensure_ascii=False, indent=2),
+        json.dumps(
+            [{"start": tsfmt.mark(s), "end": tsfmt.mark(e), "text": t}
+             for s, e, t in cues],
+            ensure_ascii=False, indent=2,
+        ),
         encoding="utf-8",
     )
 
@@ -240,10 +252,9 @@ def merge_caches(paths, offsets_path):
 
     cues, offset = [], 0.0
     for i, path in enumerate(paths):
-        part = [
-            (float(w["start"]), float(w["end"]), w["text"])
-            for w in json.loads(path.read_text(encoding="utf-8"))
-        ]
+        # load_words reads both the "MM:SS.SSS" written today and the bare float
+        # seconds older caches carry, so a pre-existing words.json still merges.
+        part = tsfmt.load_words(path)
         if not part:
             sys.exit(f"error: {path} holds no word timings")
         if starts is not None:
@@ -260,7 +271,7 @@ def merge_caches(paths, offsets_path):
 
 def main():
     p = argparse.ArgumentParser(
-        description="Turn narration audio into [M:SS] transcript lines.",
+        description="Turn narration audio into [MM:SS.SSS] transcript lines.",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=__doc__.split("Examples:")[1],
     )
@@ -329,9 +340,14 @@ def main():
         "long. Use only to cut the number of images you pay for (default: 0 = off)",
     )
     p.add_argument(
+        "--no-ms",
+        action="store_true",
+        help="drop milliseconds: [0:05] instead of [00:05.480]",
+    )
+    p.add_argument(
         "--pad",
         action="store_true",
-        help="zero-pad minutes: [00:05] instead of [0:05]",
+        help="with --no-ms, zero-pad minutes: [00:05] instead of [0:05]",
     )
     p.add_argument(
         "--timeout",
@@ -444,7 +460,7 @@ def emit(args, cues):
     if args.min_dur > 0:
         lines = tsfmt.merge(lines, args.min_dur, args.max_chars)
 
-    body = tsfmt.render(lines, args.pad)
+    body = tsfmt.render(lines, args.pad, ms=not args.no_ms)
 
     total = cues[-1][1]
     durations = [e - s for s, e, _ in lines]
