@@ -1,6 +1,6 @@
 ---
 name: metadata
-description: Generate the publish-ready YouTube title, description with hashtags, and 25 to 40 SEO tags for a TossExplains video, saved to outputs/metadata.md. Use when the user says "metadata", "title", "description", "tags", "SEO", or "package the video".
+description: Generate the publish-ready YouTube title, description with hashtags and chapters, 25 to 40 SEO tags, and a citations block for a TossExplains video, saved to outputs/metadata.md. Use when the user says "metadata", "title", "description", "tags", "SEO", "citations", or "package the video".
 ---
 
 # Metadata (Claude wrapper)

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Edit"
+  short_description: "Cut the scene images onto a Kdenlive timeline"
+  default_prompt: "Use $edit to build the Kdenlive project for a video."

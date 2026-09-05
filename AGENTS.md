@@ -28,7 +28,7 @@ delegate back. See `.agents/README.md` and `.claude/README.md`.
 
 ## The pipeline
 
-Eight pipeline skills, plus `scene-polish`, `video-swipe`, `youtube`, and `skill-sync`, are
+Eight pipeline skills, plus `edit`, `scene-polish`, `video-swipe`, `youtube`, and `skill-sync`, are
 canonical under `.agents/skills/` and discovered by Claude through `.claude/skills/` wrappers.
 Each pipeline skill validates its inputs, writes its artifact, and names the next command.
 
@@ -43,6 +43,12 @@ Each pipeline skill validates its inputs, writes its artifact, and names the nex
 /thumbnail   prompts/thumbnail-prompts.md           (needs cast)
 /captions    outputs/captions/*.srt                 (needs transcript, 25 languages)
 /check       validation report, runnable any time
+```
+
+Assembly runs after the pipeline, once the scenes exist:
+
+```
+/edit           edit/<n>-<slug>.kdenlive              (needs scenes + transcript + audio)
 ```
 
 Scene-image file management is separate from the content pipeline:
@@ -83,6 +89,7 @@ When the user's request matches a skill, invoke that skill instead of answering 
 - Thumbnail concepts -> `/thumbnail`
 - Captions, subtitles, SRT files, "translate the transcript" -> `/captions`
 - "Is this project correct", validate, "what is missing" -> `/check`
+- Build the Kdenlive timeline, "join the scenes", "assemble the video" -> `/edit`
 - Manage scene image timestamps, renaming, moves, or verification -> `/scene-polish`
 - Analyze a competitor video, extract its frames, "phan tich video" -> `/video-swipe`
 - Pull from YouTube, upload to YouTube, channel analytics, competitor research -> `/youtube`
@@ -129,6 +136,16 @@ translation into that spine, so every file is frame-identical by construction; `
 diffs all 25 files against `en.srt` block by block and scans for empty blocks, repeats,
 overlaps, em dashes, and untranslated Latin runs inside non-Latin scripts. It shares
 `tools/tsfmt.py` with the audio tools for the sentence-boundary test. No dependencies.
+
+`tools/kdenlive-build.py` serves the `edit` skill and writes the Kdenlive project that
+joins the scene images to the narration. The scene file names carry only the truncated
+`[M:SS]`, so it uses them purely as a join key back into `transcribes/transcript.md` and
+cuts on that line's real `[MM:SS.SSS]`. Each image is held until the next cue, and the
+last one runs out the audio, so the video and audio tracks end together. It shares
+`tools/tsfmt.py` with the transcript tools for that truncation, and `tools/mp3frames.py`
+for the narration length, so it needs no ffmpeg for an mp3 and no Pillow at all. It
+refuses to overwrite an existing project file, because hand edits made in Kdenlive cannot
+be rebuilt from the transcript.
 
 `tools/video-frames.py` and `tools/youtube-verify.py` serve the `video-swipe` research
 skill and are the only tools here that do need ffmpeg. `video-frames.py` runs in three
