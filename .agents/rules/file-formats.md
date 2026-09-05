@@ -17,6 +17,7 @@ projects/<n>-<title-slug>/
     part-1.mp3, part-2.mp3    multi-part recording, in read order.
     full.mp3                  the parts combined. Written by `transcript`.
   characters/                 NAME.jpeg reference sheets. You generate these.
+  edit/                       <n>-<slug>.kdenlive, the timeline. Written by `edit`.
   outputs/                    metadata.md, thumbnail-N.jpg, and the accepted thumbnail. You generate these.
   prompts/
     character-prompts.md      Written by `cast`.
@@ -37,6 +38,10 @@ Rules:
 - **Root level holds the script.** Subfolders hold prompts, generated media, and published
   packaging.
 - **`outputs/` is plural.** Not `output/`. So is `audios/`.
+- **`edit/` holds the Kdenlive project**, written by `edit` via `tools/kdenlive-build.py`,
+  plus whatever Kdenlive puts beside it. It is working material, not packaging, which is
+  why it is not in `outputs/`. It is the one artifact here that is not reproducible once
+  it has been opened and edited, so never rebuild over it.
 - **`audios/` holds the recorded voiceover** read from `script_<short_slug>.md`, and is the
   default place `transcript` looks for input. Multi-part recordings live here in read order,
   for example `part-1.mp3` then `part-2.mp3`. The audio itself is gitignored, so the folder
@@ -175,9 +180,9 @@ Recurring motif: <one concrete object or shape>
 
 ## Continuity ledger
 
-| Object        | Canonical | Locked description                                          | Returns at            |
-| ------------- | --------- | ----------------------------------------------------------- | --------------------- |
-| tilted balance | [0:18]   | a charcoal two-pan beam balance, near pan low, no base plate | [2:41], [6:03], [11:52] |
+| Object         | Canonical | Locked description                                           | Returns at              |
+| -------------- | --------- | ------------------------------------------------------------ | ----------------------- |
+| tilted balance | [0:18]    | a charcoal two-pan beam balance, near pan low, no base plate | [2:41], [6:03], [11:52] |
 
 | Beat | Time   | Meaning                                   | Register | Shot  | Tier        | Asset   | Plate | Source | Delta          | Motif | Text         |
 | ---- | ------ | ----------------------------------------- | -------- | ----- | ----------- | ------- | ----- | ------ | -------------- | ----- | ------------ |
