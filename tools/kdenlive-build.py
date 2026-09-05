@@ -149,6 +149,21 @@ def scene_files(scenes_dir):
     return found, dupes
 
 
+PROMPT_STAMP_RE = re.compile(r"^\[(\d+):(\d{2})\]", re.M)
+
+
+def prompt_keys(path):
+    """The `[M:SS]` stamps of prompts/image-prompts.md, in order.
+
+    This is the file the scene image names were derived from, so it, not the transcript,
+    is the authority on what a given image is called.
+    """
+    return [
+        f"[{int(m.group(1))}:{m.group(2)}]"
+        for m in PROMPT_STAMP_RE.finditer(path.read_text(encoding="utf-8"))
+    ]
+
+
 def transcript_cues(path):
     """[(seconds, `[M:SS]` key)] for every stamped transcript line, in file order."""
     cues = []
@@ -164,7 +179,7 @@ def transcript_cues(path):
     return cues
 
 
-def build_cues(project, images, report):
+def build_cues(project, images, report, allow_gaps):
     """Pair each scene image with the real time its own transcript line starts.
 
     A truncated `[M:SS]` name can only say which second a cut lands in. The transcript
@@ -184,13 +199,40 @@ def build_cues(project, images, report):
     if not lines:
         raise SystemExit(f"{transcript} has no timestamped lines")
 
+    # Prefer pairing by position against image-prompts.md. Both files hold one entry per
+    # cue in the same order, and that file is where the image names came from, so index
+    # pairing survives a prompt stamp that drifted from `to_mss` (a `[10:10.980]` line
+    # written as `[10:11]` instead of truncated to `[10:10]`). Falling back to matching
+    # on the stamp alone would strand that image and silently drop its cut.
+    prompts = project / "prompts" / "image-prompts.md"
+    keys = prompt_keys(prompts) if prompts.exists() else []
+    if keys and len(keys) == len(lines):
+        drift = [
+            (i, keys[i], tsfmt.stamp(lines[i][0], ms=True))
+            for i in range(len(keys))
+            if keys[i] != lines[i][1]
+        ]
+        if drift:
+            shown = ", ".join(f"{k} is really {t}" for _, k, t in drift[:4])
+            report.append(
+                f"{len(drift)} prompt stamp(s) disagree with the transcript, pairing by "
+                f"position instead: {shown}" + (" ..." if len(drift) > 4 else "")
+            )
+        pairs = [(lines[i][0], keys[i]) for i in range(len(keys))]
+    else:
+        if keys:
+            report.append(
+                f"{prompts.name} has {len(keys)} stamps but the transcript has "
+                f"{len(lines)} lines, pairing on the stamp instead of by position"
+            )
+        pairs = lines
+
     cues = []
     used = set()
     missing = []
-    for seconds, key in lines:
+    for seconds, key in pairs:
         if key in used:
-            # Two lines truncating into the same second share one image; it is already
-            # on screen, so the second line is not a cut.
+            # Two cues sharing one image: it is already on screen, so this is not a cut.
             continue
         path = images.get(key)
         if path is None:
@@ -200,10 +242,21 @@ def build_cues(project, images, report):
         cues.append((seconds, path))
 
     extra = [k for k in images if k not in used]
+    if missing and not allow_gaps:
+        # An unrendered cue is a hole in the video, and the image before it stretches to
+        # cover the hole. That is not something to discover in the edit, so the build
+        # stops here rather than producing a timeline that looks finished.
+        shown = ", ".join(missing[:12]) + (" ..." if len(missing) > 12 else "")
+        raise SystemExit(
+            f"{len(missing)} cue(s) have no scene image, so the scenes are not fully "
+            f"generated yet:\n  {shown}\n"
+            f"Render them, or run /scene-polish verify to see the full list. Pass "
+            f"--allow-gaps to build anyway and let the previous image hold through them."
+        )
     if missing:
         report.append(
-            f"{len(missing)} transcript cue(s) have no scene image, the previous image "
-            f"holds through them: {', '.join(missing[:8])}"
+            f"{len(missing)} cue(s) have no scene image, the previous image holds "
+            f"through them: {', '.join(missing[:8])}"
             + (" ..." if len(missing) > 8 else "")
         )
     if extra:
@@ -255,7 +308,11 @@ def image_producer(pid, kid, path, out_frames, fps):
 
 
 def audio_chain(cid, kid, path, out_frames, fps, control, timeline):
-    service = "avformat-novalidate" if timeline else "avformat"
+    # Always "avformat", never "avformat-novalidate". Kdenlive writes novalidate only
+    # because it also writes the whole meta.media.* stream description alongside it;
+    # novalidate means "do not probe this file, trust those properties". Without them
+    # the producer is built blind and the audio track never constructs.
+    service = "avformat"
     xml = f' <chain id="{cid}" out="{tc(out_frames, fps)}">\n'
     xml += prop("length", out_frames + 1)
     xml += prop("eof", "pause")
@@ -280,7 +337,22 @@ def audio_chain(cid, kid, path, out_frames, fps, control, timeline):
     return xml
 
 
-def track_tractor(tid, total_out, playlists, audio, fps):
+class Ids:
+    """Sequential `filterN` ids, allocated in document order.
+
+    Kdenlive takes the number off the end of every id it reads, so a descriptive name
+    like `f_logo` is not a cosmetic difference, it is a document it refuses to open.
+    """
+
+    def __init__(self):
+        self.n = 0
+
+    def filter(self):
+        self.n += 1
+        return f"filter{self.n - 1}"
+
+
+def track_tractor(tid, total_out, playlists, audio, fps, ids):
     xml = f' <tractor id="{tid}" in="00:00:00.000" out="{tc(total_out, fps)}">\n'
     if audio:
         xml += prop("kdenlive:audio_track", 1)
@@ -294,7 +366,7 @@ def track_tractor(tid, total_out, playlists, audio, fps):
         xml += f'  <track hide="{hide}" producer="{pl}"/>\n'
     if audio:
         xml += (
-            '  <filter id="f_vol_%s">\n' % tid
+            '  <filter id="%s">\n' % ids.filter()
             + prop("window", 75, 3)
             + prop("max_gain", "20dB", 3)
             + prop("level", 0, 3)
@@ -303,7 +375,7 @@ def track_tractor(tid, total_out, playlists, audio, fps):
             + prop("internal_added", 237, 3)
             + prop("disable", 0, 3)
             + "  </filter>\n"
-            + '  <filter id="f_pan_%s">\n' % tid
+            + '  <filter id="%s">\n' % ids.filter()
             + prop("channel", -1, 3)
             + prop("mlt_service", "panner", 3)
             + prop("internal_added", 237, 3)
@@ -315,13 +387,13 @@ def track_tractor(tid, total_out, playlists, audio, fps):
     return xml
 
 
-def fit_filter(mode, width, height, fid):
+def fit_filter(mode, width, height, ids):
     """qtblend that maps the image onto the frame. `contain` needs no filter at all."""
     if mode == "contain":
         return ""
     distort = 1 if mode == "stretch" else 0
     return (
-        f'   <filter id="{fid}">\n'
+        f'   <filter id="{ids.filter()}">\n'
         + prop("rotate_center", 1, 4)
         + prop("mlt_service", "qtblend", 4)
         + prop("kdenlive_id", "qtblend", 4)
@@ -374,16 +446,49 @@ def build(args):
     if not images:
         raise SystemExit(f"no `[M-SS]` scene images under {scenes_dir}")
 
-    cues = build_cues(project, images, report)
+    cues = build_cues(project, images, report, args.allow_gaps)
     if not cues:
         raise SystemExit("no scene image matched any transcript cue")
 
+    # Frame boundaries. Each scene runs until the next one starts; the last runs out
+    # the narration, so the video track and the audio track end together.
     total_seconds = args.duration or audio_seconds(audio)
     total_frames = int(round(total_seconds * fps))
 
-    # Frame boundaries. Each scene runs until the next one starts; the last runs out
-    # the narration, so the video track and the audio track end together.
-    starts = [int(round(seconds * fps)) for seconds, _ in cues]
+    # A whole-second transcript can put several cues in one second, and image-prompts.md
+    # broke those ties by bumping the stamp, so the real onsets were never written down.
+    # Spread such a run evenly over the second it shares: the eye expects even spacing,
+    # and every alternative either stacks the cues on one frame or drops one of them.
+    times = [seconds for seconds, _ in cues]
+    spread = 0
+    i = 0
+    while i < len(times):
+        j = i
+        while j + 1 < len(times) and times[j + 1] == times[i]:
+            j += 1
+        run = j - i + 1
+        if run > 1:
+            nxt = times[j + 1] if j + 1 < len(times) else total_seconds
+            step = (nxt - times[i]) / run
+            for k in range(1, run):
+                times[i + k] = times[i] + step * k
+            spread += run - 1
+        i = j + 1
+    if spread:
+        report.append(
+            f"{spread} cue(s) shared a whole second with the one before them and were "
+            f"spread evenly across it; the transcript has no finer timing to use"
+        )
+
+    starts = [int(round(t * fps)) for t in times]
+    # Hold the first image from frame zero rather than opening on a blank. The narration
+    # can start a fraction late, and that fraction would otherwise be a black flash.
+    if starts and starts[0] > 0:
+        report.append(
+            f"first cue is at {tc(starts[0], fps)}, holding {cues[0][1].name} from the "
+            f"start instead of opening on black"
+        )
+        starts[0] = 0
     if starts[0] < 0:
         raise SystemExit("first cue is before zero")
     if starts[-1] >= total_frames:
@@ -433,6 +538,7 @@ def build(args):
     if logo and not logo.exists():
         raise SystemExit(f"no logo at {logo}")
 
+    ids = Ids()
     out = []
     out.append("<?xml version='1.0' encoding='utf-8'?>\n")
     out.append(
@@ -469,25 +575,23 @@ def build(args):
     out.append(' <playlist id="playlist1">\n')
     out.append(prop("kdenlive:audio_track", 1))
     out.append(" </playlist>\n")
-    out.append(track_tractor("tractor0", total_frames - 1, ["playlist0", "playlist1"], True, fps))
+    out.append(track_tractor("tractor0", total_frames - 1, ["playlist0", "playlist1"], True, fps, ids))
 
     # V1: one producer per scene, each cut to the length its cue earns.
     for i, ((_, path), length) in enumerate(zip(cues, lengths)):
         out.append(image_producer(f"producer{i + 1}", 5 + i, path, length - 1, fps))
 
     out.append(' <playlist id="playlist2">\n')
-    if starts[0] > 0:
-        out.append(f'  <blank length="{tc(starts[0], fps)}"/>\n')
     for i, length in enumerate(lengths):
         out.append(
             f'  <entry in="00:00:00.000" out="{tc(length - 1, fps)}" producer="producer{i + 1}">\n'
         )
         out.append(prop("kdenlive:id", 5 + i, 3))
-        out.append(fit_filter(args.fit, width, height, f"f_fit{i}"))
+        out.append(fit_filter(args.fit, width, height, ids))
         out.append("  </entry>\n")
     out.append(" </playlist>\n")
     out.append(' <playlist id="playlist3"/>\n')
-    out.append(track_tractor("tractor1", total_frames - 1, ["playlist2", "playlist3"], False, fps))
+    out.append(track_tractor("tractor1", total_frames - 1, ["playlist2", "playlist3"], False, fps, ids))
 
     # V2: the channel logo, held over the whole video.
     logo_kid = 5 + len(cues)
@@ -504,7 +608,7 @@ def build(args):
         h = w
         x = width - w - round(width * args.logo_margin)
         y = height - h - round(width * args.logo_margin)
-        out.append(f'   <filter id="f_logo">\n')
+        out.append(f'   <filter id="{ids.filter()}">\n')
         out.append(prop("rotate_center", 1, 4))
         out.append(prop("mlt_service", "qtblend", 4))
         out.append(prop("kdenlive_id", "qtblend", 4))
@@ -518,7 +622,7 @@ def build(args):
         out.append(" </playlist>\n")
         out.append(' <playlist id="playlist5"/>\n')
         out.append(
-            track_tractor("tractor2", total_frames - 1, ["playlist4", "playlist5"], False, fps)
+            track_tractor("tractor2", total_frames - 1, ["playlist4", "playlist5"], False, fps, ids)
         )
         tracks.append("tractor2")
 
@@ -576,7 +680,7 @@ def build(args):
         out.append(prop("internal_added", 237, 3))
         out.append(prop("always_active", 1, 3))
         out.append("  </transition>\n")
-    out.append('  <filter id="f_seq_vol">\n')
+    out.append(f'  <filter id="{ids.filter()}">\n')
     out.append(prop("window", 75, 3))
     out.append(prop("max_gain", "20dB", 3))
     out.append(prop("level", 0, 3))
@@ -585,7 +689,7 @@ def build(args):
     out.append(prop("internal_added", 237, 3))
     out.append(prop("disable", 0, 3))
     out.append("  </filter>\n")
-    out.append('  <filter id="f_seq_pan">\n')
+    out.append(f'  <filter id="{ids.filter()}">\n')
     out.append(prop("channel", -1, 3))
     out.append(prop("mlt_service", "panner", 3))
     out.append(prop("internal_added", 237, 3))
@@ -625,6 +729,34 @@ def build(args):
     out.append(prop("kdenlive:docproperties.version", DOC_VERSION))
     out.append(prop("kdenlive:docproperties.opensequences", seq_uuid))
     out.append(prop("kdenlive:docproperties.activetimeline", seq_uuid))
+    out.append(prop("kdenlive:docproperties.binsort", 0))
+    out.append(prop("kdenlive:documentnotes"))
+    out.append(prop("kdenlive:documentnotesversion", 2))
+    out.append(prop("kdenlive:expandedFolders"))
+    out.append(prop("kdenlive:extraBins", "project_bin:-1"))
+    out.append(prop("kdenlive:binZoom", 4))
+    # Without this MLT drops main_bin as an unreferenced producer, and Kdenlive then
+    # loads a document with no bin and reports it as a corrupted file it cannot recover.
+    out.append(prop("kdenlive:docproperties.rendercategory", ""))
+    out.append(prop("kdenlive:docproperties.rendercustomquality", -1))
+    out.append(prop("kdenlive:docproperties.renderendguide", -1))
+    out.append(prop("kdenlive:docproperties.renderexportaudio", 0))
+    out.append(prop("kdenlive:docproperties.renderfullcolorrange", 0))
+    out.append(prop("kdenlive:docproperties.rendermode", 0))
+    out.append(prop("kdenlive:docproperties.renderplay", 0))
+    out.append(prop("kdenlive:docproperties.renderpreview", 0))
+    out.append(prop("kdenlive:docproperties.renderprofile", ""))
+    out.append(prop("kdenlive:docproperties.renderrescale", 0))
+    out.append(prop("kdenlive:docproperties.renderrescaleheight", 720))
+    out.append(prop("kdenlive:docproperties.renderrescalewidth", 1280))
+    out.append(prop("kdenlive:docproperties.renderspeed", 0))
+    out.append(prop("kdenlive:docproperties.renderstartguide", -1))
+    out.append(prop("kdenlive:docproperties.renderstemaudio", 0))
+    out.append(prop("kdenlive:docproperties.rendertcoverlay", 0))
+    out.append(prop("kdenlive:docproperties.rendertctype", -1))
+    out.append(prop("kdenlive:docproperties.rendertwopass", 0))
+    out.append(prop("kdenlive:docproperties.renderurl", out_path.with_suffix(".mp4").name))
+    out.append(prop("xml_retain", 1))
     out.append(f'  <entry in="00:00:00.000" out="00:00:00.000" producer="{seq_uuid}"/>\n')
     out.append(f'  <entry in="00:00:00.000" out="{tc(total_frames - 1, fps)}" producer="chain1"/>\n')
     for i, length in enumerate(lengths):
@@ -638,7 +770,11 @@ def build(args):
         )
     out.append(" </playlist>\n")
 
-    out.append(f' <tractor id="tractor_project" in="00:00:00.000" out="{tc(total_frames - 1, fps)}">\n')
+    project_tractor = f"tractor{len(tracks) - 1}"
+    out.append(
+        f' <tractor id="{project_tractor}" in="00:00:00.000" '
+        f'out="{tc(total_frames - 1, fps)}">\n'
+    )
     out.append(prop("kdenlive:projectTractor", 1))
     out.append(
         f'  <track in="00:00:00.000" out="{tc(total_frames - 1, fps)}" producer="{seq_uuid}"/>\n'
@@ -680,6 +816,10 @@ def main():
     p.add_argument("--logo", help="image to hold on V2 for the whole video")
     p.add_argument("--logo-size", type=float, default=0.04, help="logo width as a fraction of the frame")
     p.add_argument("--logo-margin", type=float, default=0.02, help="logo inset as a fraction of the frame")
+    p.add_argument(
+        "--allow-gaps", action="store_true",
+        help="build even though some cues have no scene image yet",
+    )
     p.add_argument("--dry-run", action="store_true", help="print the cut list, write nothing")
     build(p.parse_args())
 
