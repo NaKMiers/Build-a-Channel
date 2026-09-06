@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<mlt LC_NUMERIC="C" producer="main_bin" root="/home/nakmiers/ME/Things/Build-A-Channel/projects/14-the-psychology-of-being-ugly/edit" version="7.38.0">
+<mlt LC_NUMERIC="C" producer="main_bin" root="/home/nakmiers/ME/Things/Build-A-Channel/projects/14-the-psychology-of-being-ugly/edit/kdenlive" version="7.38.0">
  <profile colorspace="709" description="2.5K QHD 1440p 30 fps" display_aspect_den="9" display_aspect_num="16" frame_rate_den="1" frame_rate_num="30" height="1440" progressive="1" sample_aspect_den="1" sample_aspect_num="1" width="2560"/>
  <producer id="producer0" in="00:00:00.000" out="00:11:09.000">
   <property name="length">2147483647</property>
@@ -22,7 +22,7 @@
   <property name="astream">0</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">4</property>
-  <property name="kdenlive:control_uuid">{7c9707d1-aac7-4dc0-800a-e2e0d2711c0e}</property>
+  <property name="kdenlive:control_uuid">{cd5118ab-d181-4450-b2e9-e27b938a1f3f}</property>
   <property name="kdenlive:clip_type">1</property>
   <property name="kdenlive:file_size">21410418</property>
   <property name="kdenlive:clipname">full.mp3</property>
@@ -82,7 +82,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">5</property>
-  <property name="kdenlive:control_uuid">{16957d82-54e2-4eca-a65d-3d3186c30fb7}</property>
+  <property name="kdenlive:control_uuid">{1c194c3b-9702-4755-8aab-a1d4ca7f6ec0}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">150966</property>
   <property name="kdenlive:clipname">[0-00].jpg</property>
@@ -103,7 +103,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">6</property>
-  <property name="kdenlive:control_uuid">{df059aea-cf79-456c-96df-125203c0e843}</property>
+  <property name="kdenlive:control_uuid">{27aca7ab-1843-4c9c-8ac9-1a757cc4644b}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">229650</property>
   <property name="kdenlive:clipname">[0-03].jpg</property>
@@ -124,7 +124,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">7</property>
-  <property name="kdenlive:control_uuid">{1638bd6d-6456-4db5-b72b-c374816711b4}</property>
+  <property name="kdenlive:control_uuid">{d679774b-a3e6-4f4b-9d42-b75a5d7dd10d}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">219383</property>
   <property name="kdenlive:clipname">[0-04].jpg</property>
@@ -145,7 +145,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">8</property>
-  <property name="kdenlive:control_uuid">{8a774991-5ff8-4ae3-a7be-c68ec286d65b}</property>
+  <property name="kdenlive:control_uuid">{5081f6ee-1fa7-4b1a-bc65-e4b16f3d80c8}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">221715</property>
   <property name="kdenlive:clipname">[0-05].jpg</property>
@@ -166,7 +166,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">9</property>
-  <property name="kdenlive:control_uuid">{2e27210f-d0b5-4295-a936-8204e1b5837f}</property>
+  <property name="kdenlive:control_uuid">{cec624ed-a6af-4b0c-a38f-fd0d0e29ed3f}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">99406</property>
   <property name="kdenlive:clipname">[0-08].jpg</property>
@@ -187,7 +187,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">10</property>
-  <property name="kdenlive:control_uuid">{5f0d14cd-2975-460e-9fdf-4c9b5afa2485}</property>
+  <property name="kdenlive:control_uuid">{10a6f9ab-e291-416a-9256-68c8a8565923}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">112874</property>
   <property name="kdenlive:clipname">[0-10].jpg</property>
@@ -208,7 +208,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">11</property>
-  <property name="kdenlive:control_uuid">{bbd9fa74-3aff-44d8-9d10-49480a6efd42}</property>
+  <property name="kdenlive:control_uuid">{c6f23d96-dc03-4adf-ab98-8713ec1661f4}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">124574</property>
   <property name="kdenlive:clipname">[0-13].jpg</property>
@@ -229,7 +229,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">12</property>
-  <property name="kdenlive:control_uuid">{2381dd45-f1e2-4b1c-bdeb-4af569974fcd}</property>
+  <property name="kdenlive:control_uuid">{74b21d5f-7860-43f3-9cdb-26bd82d3a2df}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">103443</property>
   <property name="kdenlive:clipname">[0-14].jpg</property>
@@ -250,7 +250,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">13</property>
-  <property name="kdenlive:control_uuid">{ec90e263-abf0-41ba-b44f-a348eca6b32a}</property>
+  <property name="kdenlive:control_uuid">{2a16ff78-2547-467a-9f82-606cd1eca8e1}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">112818</property>
   <property name="kdenlive:clipname">[0-16].jpg</property>
@@ -271,7 +271,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">14</property>
-  <property name="kdenlive:control_uuid">{efa8f2eb-f62c-4e21-a5d8-d8f6d8dc6c19}</property>
+  <property name="kdenlive:control_uuid">{ce9e338b-761e-40bd-95fb-d4879e35ffa1}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">119101</property>
   <property name="kdenlive:clipname">[0-19].jpg</property>
@@ -292,7 +292,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">15</property>
-  <property name="kdenlive:control_uuid">{ab69d354-d333-4023-ac8d-dde6be93326c}</property>
+  <property name="kdenlive:control_uuid">{54009ede-60c2-4080-9b3d-aca27c134692}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">134474</property>
   <property name="kdenlive:clipname">[0-20].jpg</property>
@@ -313,7 +313,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">16</property>
-  <property name="kdenlive:control_uuid">{cc3f6015-62d1-42ff-aee8-05ef355586b3}</property>
+  <property name="kdenlive:control_uuid">{f2e16be2-2b2e-41e5-a750-e457f9fdfc6d}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">204869</property>
   <property name="kdenlive:clipname">[0-23].jpg</property>
@@ -334,7 +334,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">17</property>
-  <property name="kdenlive:control_uuid">{cb033176-5380-44ce-9e19-ded2dad381f5}</property>
+  <property name="kdenlive:control_uuid">{11dc55d2-8336-4fb0-9d5d-984c7086cb0a}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">210252</property>
   <property name="kdenlive:clipname">[0-24].jpg</property>
@@ -355,7 +355,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">18</property>
-  <property name="kdenlive:control_uuid">{36cde78f-43bf-4662-b6c3-eb52dd377a9b}</property>
+  <property name="kdenlive:control_uuid">{1a74c319-e6e8-44fc-9a0e-c2020088a7ac}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">80830</property>
   <property name="kdenlive:clipname">[0-26].jpg</property>
@@ -376,7 +376,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">19</property>
-  <property name="kdenlive:control_uuid">{73f3d3c7-12e8-4cff-8d17-2f477e64f07b}</property>
+  <property name="kdenlive:control_uuid">{b475a7f7-fe1e-48c3-96a3-5c3d8ebb4451}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">84261</property>
   <property name="kdenlive:clipname">[0-28].jpg</property>
@@ -397,7 +397,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">20</property>
-  <property name="kdenlive:control_uuid">{df004020-1c60-4d1f-b08f-30b2609d5cfa}</property>
+  <property name="kdenlive:control_uuid">{0f1ad279-984a-4922-bd3c-4d039c86db18}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">73197</property>
   <property name="kdenlive:clipname">[0-31].jpg</property>
@@ -418,7 +418,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">21</property>
-  <property name="kdenlive:control_uuid">{9d6357ac-aa2c-4aa3-803e-89703d03c34b}</property>
+  <property name="kdenlive:control_uuid">{b5842a75-cdb1-41e4-a4f3-6c5bfccf23f2}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">181503</property>
   <property name="kdenlive:clipname">[0-33].jpg</property>
@@ -439,7 +439,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">22</property>
-  <property name="kdenlive:control_uuid">{9837b77d-d0da-46ff-9864-268d46ec08ea}</property>
+  <property name="kdenlive:control_uuid">{528c93b8-fa9c-426c-8345-8c68bf67bde3}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">81625</property>
   <property name="kdenlive:clipname">[0-37].jpg</property>
@@ -460,7 +460,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">23</property>
-  <property name="kdenlive:control_uuid">{97876234-24c4-4478-ad88-31706bc11450}</property>
+  <property name="kdenlive:control_uuid">{4ff93e0f-e51c-4e74-871f-cb3095c6e613}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">142701</property>
   <property name="kdenlive:clipname">[0-40].jpg</property>
@@ -481,7 +481,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">24</property>
-  <property name="kdenlive:control_uuid">{638c71f6-db6c-4797-a1ec-2be1bbff5dbd}</property>
+  <property name="kdenlive:control_uuid">{85ba7686-17ca-42e8-90e5-4592ff6dbf55}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">163735</property>
   <property name="kdenlive:clipname">[0-43].jpg</property>
@@ -502,7 +502,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">25</property>
-  <property name="kdenlive:control_uuid">{35216dca-c8a3-4d5d-a4c4-110beb5b884c}</property>
+  <property name="kdenlive:control_uuid">{3f69f337-62d7-4074-b848-46e7be14a63d}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">254740</property>
   <property name="kdenlive:clipname">[0-46].jpg</property>
@@ -523,7 +523,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">26</property>
-  <property name="kdenlive:control_uuid">{53060ea1-2845-4bd2-8997-ca7d9ab393ad}</property>
+  <property name="kdenlive:control_uuid">{685a4e3d-412b-49d2-a08c-ee98e2e46323}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">237307</property>
   <property name="kdenlive:clipname">[0-47].jpg</property>
@@ -544,7 +544,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">27</property>
-  <property name="kdenlive:control_uuid">{a21d9185-9c09-426f-9a2c-d1074020aa78}</property>
+  <property name="kdenlive:control_uuid">{2769b991-f752-4858-9b51-a24de05d88a1}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">233581</property>
   <property name="kdenlive:clipname">[0-50].jpg</property>
@@ -565,7 +565,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">28</property>
-  <property name="kdenlive:control_uuid">{7f1fb95f-4df5-479a-bbca-3407ef425c23}</property>
+  <property name="kdenlive:control_uuid">{8c39d9aa-7435-465d-b463-3ad8d5d790b1}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">224845</property>
   <property name="kdenlive:clipname">[0-52].jpg</property>
@@ -586,7 +586,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">29</property>
-  <property name="kdenlive:control_uuid">{69f76703-fbb6-452f-b3d7-681f53081033}</property>
+  <property name="kdenlive:control_uuid">{5c0baba6-70f8-4cd9-b499-59ba6196bab0}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">101881</property>
   <property name="kdenlive:clipname">[0-55].jpg</property>
@@ -607,7 +607,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">30</property>
-  <property name="kdenlive:control_uuid">{ca6b6f23-3de7-4dbe-86d1-6e8321bd2ef6}</property>
+  <property name="kdenlive:control_uuid">{d60617b2-0fa4-4458-aa4c-5a04ddd6dc0f}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">94635</property>
   <property name="kdenlive:clipname">[0-57].jpg</property>
@@ -628,7 +628,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">31</property>
-  <property name="kdenlive:control_uuid">{0cd4c499-2def-4311-ac83-c1ce26ad4026}</property>
+  <property name="kdenlive:control_uuid">{d0794182-c3ae-4cf3-a774-36eaf8937935}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">246248</property>
   <property name="kdenlive:clipname">[1-01].jpg</property>
@@ -649,7 +649,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">32</property>
-  <property name="kdenlive:control_uuid">{397a8f9a-230e-497c-aee3-8aa9e7c7d30f}</property>
+  <property name="kdenlive:control_uuid">{4520e564-0423-4c71-a4fa-5fa9c2714ec7}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">125490</property>
   <property name="kdenlive:clipname">[1-04].jpg</property>
@@ -670,7 +670,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">33</property>
-  <property name="kdenlive:control_uuid">{a954eed3-20a8-4e2b-ac8f-70c1da5b79a4}</property>
+  <property name="kdenlive:control_uuid">{c6e36db1-cd56-426c-94aa-10c6516c240b}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">119442</property>
   <property name="kdenlive:clipname">[1-06].jpg</property>
@@ -691,7 +691,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">34</property>
-  <property name="kdenlive:control_uuid">{aec2788f-ffe1-477c-a734-68e13ecb0160}</property>
+  <property name="kdenlive:control_uuid">{e72a31be-9438-4849-8ac3-aa3fbaa8c2b6}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">107021</property>
   <property name="kdenlive:clipname">[1-09].jpg</property>
@@ -712,7 +712,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">35</property>
-  <property name="kdenlive:control_uuid">{e7abf116-f8d7-4767-a4c9-b48c3720f4a6}</property>
+  <property name="kdenlive:control_uuid">{53e18cbd-a0cd-4941-a29f-4067f711865d}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">106008</property>
   <property name="kdenlive:clipname">[1-11].jpg</property>
@@ -733,7 +733,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">36</property>
-  <property name="kdenlive:control_uuid">{1c077304-0d89-4d82-ba46-566362462295}</property>
+  <property name="kdenlive:control_uuid">{66ad47d0-c05a-42e2-b7f0-6f69f6205bbc}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">153389</property>
   <property name="kdenlive:clipname">[1-12].jpg</property>
@@ -754,7 +754,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">37</property>
-  <property name="kdenlive:control_uuid">{52004606-b8e0-4805-bd65-b409409d4f98}</property>
+  <property name="kdenlive:control_uuid">{40311382-2701-46f9-8cfd-c1246265f82c}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">218786</property>
   <property name="kdenlive:clipname">[1-15].jpg</property>
@@ -775,7 +775,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">38</property>
-  <property name="kdenlive:control_uuid">{673c9999-9673-42ff-ae34-dc51e78fbc59}</property>
+  <property name="kdenlive:control_uuid">{ec74702e-5be0-44e7-a7d7-aa881d7c865d}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">215630</property>
   <property name="kdenlive:clipname">[1-16].jpg</property>
@@ -796,7 +796,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">39</property>
-  <property name="kdenlive:control_uuid">{18b7a4a8-cae6-4ce5-bc23-841c6c58d5c6}</property>
+  <property name="kdenlive:control_uuid">{9c6a128f-c0c4-45c5-bef0-6326a58c5c99}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">194151</property>
   <property name="kdenlive:clipname">[1-18].jpg</property>
@@ -817,7 +817,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">40</property>
-  <property name="kdenlive:control_uuid">{3faa209f-488e-4aeb-af25-e80b5409ae00}</property>
+  <property name="kdenlive:control_uuid">{13bc7816-53aa-4a16-bd76-ce721b12681a}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">193310</property>
   <property name="kdenlive:clipname">[1-20].jpg</property>
@@ -838,7 +838,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">41</property>
-  <property name="kdenlive:control_uuid">{722ce6a4-0f46-4e32-9909-d8e69aa85b2a}</property>
+  <property name="kdenlive:control_uuid">{3d8567e7-e142-475d-9f96-ab2dccdd0015}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">204293</property>
   <property name="kdenlive:clipname">[1-22].jpg</property>
@@ -859,7 +859,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">42</property>
-  <property name="kdenlive:control_uuid">{01d8286f-44d9-4387-a16b-e11ecd50c22c}</property>
+  <property name="kdenlive:control_uuid">{a781024e-7498-4937-b6af-0a985cffd8e2}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">113085</property>
   <property name="kdenlive:clipname">[1-25].jpg</property>
@@ -880,7 +880,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">43</property>
-  <property name="kdenlive:control_uuid">{fe6351d1-d9f4-4cbe-a814-10e202a0acd7}</property>
+  <property name="kdenlive:control_uuid">{8aae5c48-df8e-4748-86be-19a22bcac5d4}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">115197</property>
   <property name="kdenlive:clipname">[1-27].jpg</property>
@@ -901,7 +901,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">44</property>
-  <property name="kdenlive:control_uuid">{79d0c62c-585e-46e8-8ee2-f5bc2ece3c1b}</property>
+  <property name="kdenlive:control_uuid">{7c60a0d9-e987-4e75-b71a-43305fc3badd}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">171734</property>
   <property name="kdenlive:clipname">[1-29].jpg</property>
@@ -922,7 +922,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">45</property>
-  <property name="kdenlive:control_uuid">{0cf3305b-e2ec-48e5-b2ac-92afd29353d8}</property>
+  <property name="kdenlive:control_uuid">{ef14c641-43cc-463d-950c-a9a239e8dc30}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">179423</property>
   <property name="kdenlive:clipname">[1-32].jpg</property>
@@ -943,7 +943,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">46</property>
-  <property name="kdenlive:control_uuid">{2e02495f-0a6c-4aaa-9f47-e4e84240a33c}</property>
+  <property name="kdenlive:control_uuid">{59bbb9e2-92f9-4a2b-a1fa-a644ccfeae9a}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">85910</property>
   <property name="kdenlive:clipname">[1-34].jpg</property>
@@ -964,7 +964,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">47</property>
-  <property name="kdenlive:control_uuid">{035608b4-35f4-440d-aa1f-afd71036251a}</property>
+  <property name="kdenlive:control_uuid">{f83faf86-e48f-485c-bf3d-3c5fec98a596}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">94437</property>
   <property name="kdenlive:clipname">[1-37].jpg</property>
@@ -985,7 +985,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">48</property>
-  <property name="kdenlive:control_uuid">{8d4e3380-8b63-4ca7-b26d-b75472b7a07d}</property>
+  <property name="kdenlive:control_uuid">{c44205dd-4373-460b-be9f-ebde2e676afa}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">162974</property>
   <property name="kdenlive:clipname">[1-41].jpg</property>
@@ -1006,7 +1006,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">49</property>
-  <property name="kdenlive:control_uuid">{ecf78b0b-cb7e-4c82-88ab-e9a46fe4fab9}</property>
+  <property name="kdenlive:control_uuid">{f5b6095d-21a4-41d3-986e-f4a5f3012903}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">222400</property>
   <property name="kdenlive:clipname">[1-43].jpg</property>
@@ -1027,7 +1027,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">50</property>
-  <property name="kdenlive:control_uuid">{96cb3acf-33c1-4119-ba80-f3eeb22ef514}</property>
+  <property name="kdenlive:control_uuid">{d2618200-a652-40f8-aa1f-3cddf8c706f8}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">224403</property>
   <property name="kdenlive:clipname">[1-44].jpg</property>
@@ -1048,7 +1048,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">51</property>
-  <property name="kdenlive:control_uuid">{6ad56608-5640-4205-b7b4-67ceae55e804}</property>
+  <property name="kdenlive:control_uuid">{4b0b2135-da8e-44c6-ba43-b562e0623523}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">229389</property>
   <property name="kdenlive:clipname">[1-46].jpg</property>
@@ -1069,7 +1069,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">52</property>
-  <property name="kdenlive:control_uuid">{46621a53-5021-46c4-b2f8-8dbf91347652}</property>
+  <property name="kdenlive:control_uuid">{2576f563-616c-4592-87b7-56d3411a6ae4}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">236942</property>
   <property name="kdenlive:clipname">[1-48].jpg</property>
@@ -1090,7 +1090,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">53</property>
-  <property name="kdenlive:control_uuid">{62b36947-4a6a-4af2-bb34-9320af609426}</property>
+  <property name="kdenlive:control_uuid">{98d7ba3c-9835-45b3-9953-506df2e4c5e8}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">140308</property>
   <property name="kdenlive:clipname">[1-50].jpg</property>
@@ -1111,7 +1111,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">54</property>
-  <property name="kdenlive:control_uuid">{50b16a2f-9cad-4aff-a984-0449c80b0c7b}</property>
+  <property name="kdenlive:control_uuid">{87b5f371-99b2-4281-9184-b2310017ab45}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">136291</property>
   <property name="kdenlive:clipname">[1-53].jpg</property>
@@ -1132,7 +1132,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">55</property>
-  <property name="kdenlive:control_uuid">{a0823975-3d65-4275-a7c1-3797db153e67}</property>
+  <property name="kdenlive:control_uuid">{55610638-066b-46f0-9023-caf0679077f1}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">141309</property>
   <property name="kdenlive:clipname">[1-55].jpg</property>
@@ -1153,7 +1153,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">56</property>
-  <property name="kdenlive:control_uuid">{4340ff70-5333-4d5a-8a1b-f2516538375d}</property>
+  <property name="kdenlive:control_uuid">{6d27a79b-3316-48df-8544-e863a0cc9c77}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">162791</property>
   <property name="kdenlive:clipname">[1-59].jpg</property>
@@ -1174,7 +1174,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">57</property>
-  <property name="kdenlive:control_uuid">{a9336d0e-2622-4261-a0de-953968b45077}</property>
+  <property name="kdenlive:control_uuid">{372b198c-0072-4d1f-97e7-316123718b76}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">175205</property>
   <property name="kdenlive:clipname">[2-02].jpg</property>
@@ -1195,7 +1195,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">58</property>
-  <property name="kdenlive:control_uuid">{05b4b6d7-b224-4e0f-a180-c7e40e5c1eec}</property>
+  <property name="kdenlive:control_uuid">{589f822e-684a-4ce2-baf5-ad222e78fd17}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">186842</property>
   <property name="kdenlive:clipname">[2-03].jpg</property>
@@ -1216,7 +1216,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">59</property>
-  <property name="kdenlive:control_uuid">{b55de3d6-e46c-4884-ba84-c197562a0659}</property>
+  <property name="kdenlive:control_uuid">{59e40638-24c7-447d-9a80-992315635a55}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">65135</property>
   <property name="kdenlive:clipname">[2-05].jpg</property>
@@ -1237,7 +1237,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">60</property>
-  <property name="kdenlive:control_uuid">{aedaccd2-d1b5-44a2-ae00-81d9d6109499}</property>
+  <property name="kdenlive:control_uuid">{4fe6acb3-b573-4458-aa01-1c5591787f7f}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">116277</property>
   <property name="kdenlive:clipname">[2-08].jpg</property>
@@ -1258,7 +1258,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">61</property>
-  <property name="kdenlive:control_uuid">{d37917d4-467d-4b12-b28e-fe06890377b0}</property>
+  <property name="kdenlive:control_uuid">{7a0b9054-aad6-4a66-8a45-1f295e79b341}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">141401</property>
   <property name="kdenlive:clipname">[2-10].jpg</property>
@@ -1279,7 +1279,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">62</property>
-  <property name="kdenlive:control_uuid">{05530d1b-b060-409f-8962-74ae467e3f3a}</property>
+  <property name="kdenlive:control_uuid">{de64daa2-4dc8-4895-aa52-4b26df35831d}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">135849</property>
   <property name="kdenlive:clipname">[2-11].jpg</property>
@@ -1300,7 +1300,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">63</property>
-  <property name="kdenlive:control_uuid">{fdd235fe-0d97-4470-879c-b521190fe437}</property>
+  <property name="kdenlive:control_uuid">{5d4c8765-6143-4ca9-8fb4-7ead12785041}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">172913</property>
   <property name="kdenlive:clipname">[2-14].jpg</property>
@@ -1321,7 +1321,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">64</property>
-  <property name="kdenlive:control_uuid">{c39f0764-cdde-444b-9f78-0eb1d9a2261d}</property>
+  <property name="kdenlive:control_uuid">{cf1499db-ab06-41ec-a68b-7622c3ec9bd3}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">179872</property>
   <property name="kdenlive:clipname">[2-16].jpg</property>
@@ -1342,7 +1342,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">65</property>
-  <property name="kdenlive:control_uuid">{2829f924-4183-4767-8bd2-ff8164ef2257}</property>
+  <property name="kdenlive:control_uuid">{ce39e87e-0273-47a7-8d57-443610f85175}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">88075</property>
   <property name="kdenlive:clipname">[2-18].jpg</property>
@@ -1363,7 +1363,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">66</property>
-  <property name="kdenlive:control_uuid">{3b2e2efd-bf09-4427-b805-6c2ab7b45031}</property>
+  <property name="kdenlive:control_uuid">{89fb056c-8988-425c-bccf-4e5d71ea2e6d}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">102410</property>
   <property name="kdenlive:clipname">[2-20].jpg</property>
@@ -1384,7 +1384,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">67</property>
-  <property name="kdenlive:control_uuid">{3b27d2e3-6b2f-4f11-b22c-f65e069d94f1}</property>
+  <property name="kdenlive:control_uuid">{76c91132-7ede-490e-87f7-e636395c4992}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">142637</property>
   <property name="kdenlive:clipname">[2-24].jpg</property>
@@ -1405,7 +1405,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">68</property>
-  <property name="kdenlive:control_uuid">{b9ea859b-c62a-43c2-b0fc-d1b0f03e7b39}</property>
+  <property name="kdenlive:control_uuid">{a6ee8fb2-20ba-428e-86b2-2172ef38f68e}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">142774</property>
   <property name="kdenlive:clipname">[2-26].jpg</property>
@@ -1426,7 +1426,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">69</property>
-  <property name="kdenlive:control_uuid">{7776f785-2d70-4faa-8fbe-e757d115dc76}</property>
+  <property name="kdenlive:control_uuid">{a49fe64f-c232-4209-b657-98937fc9acb2}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">117988</property>
   <property name="kdenlive:clipname">[2-28].jpg</property>
@@ -1447,7 +1447,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">70</property>
-  <property name="kdenlive:control_uuid">{3a82174f-e316-44da-9405-0f6195dae5ef}</property>
+  <property name="kdenlive:control_uuid">{c6a84ed0-727b-4b76-b004-5ab74deb2836}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">118494</property>
   <property name="kdenlive:clipname">[2-30].jpg</property>
@@ -1468,7 +1468,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">71</property>
-  <property name="kdenlive:control_uuid">{bcc439d8-cd99-4b44-b0ca-061ffd129c2d}</property>
+  <property name="kdenlive:control_uuid">{69146d0f-4067-4281-90a9-2dd62ec7e7a3}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">123629</property>
   <property name="kdenlive:clipname">[2-32].jpg</property>
@@ -1489,7 +1489,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">72</property>
-  <property name="kdenlive:control_uuid">{0512b2c4-c085-4c0b-8b3e-7343f42536b3}</property>
+  <property name="kdenlive:control_uuid">{2987b29b-4bfb-4133-8a2c-d54356042b58}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">140954</property>
   <property name="kdenlive:clipname">[2-35].jpg</property>
@@ -1510,7 +1510,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">73</property>
-  <property name="kdenlive:control_uuid">{e8ec93a9-1257-4426-a0a2-3cbaa5b36236}</property>
+  <property name="kdenlive:control_uuid">{fc6caceb-e821-479e-acb6-215d3374e37e}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">148200</property>
   <property name="kdenlive:clipname">[2-37].jpg</property>
@@ -1531,7 +1531,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">74</property>
-  <property name="kdenlive:control_uuid">{61acb970-2696-4d10-8dbd-aa2e61906751}</property>
+  <property name="kdenlive:control_uuid">{fa120f73-7e93-491d-8bda-ed3a3ff46f38}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">156895</property>
   <property name="kdenlive:clipname">[2-40].jpg</property>
@@ -1552,7 +1552,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">75</property>
-  <property name="kdenlive:control_uuid">{4984c521-dde3-40a1-982b-33fcc50771d2}</property>
+  <property name="kdenlive:control_uuid">{aa19ad0c-cf30-4e96-89e1-d6f2f8e3c789}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">166334</property>
   <property name="kdenlive:clipname">[2-41].jpg</property>
@@ -1573,7 +1573,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">76</property>
-  <property name="kdenlive:control_uuid">{c8881056-0d1c-4046-8400-5096bdc6ca61}</property>
+  <property name="kdenlive:control_uuid">{3cf5989b-cd9e-47c4-a36d-1518c4ba3442}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">171954</property>
   <property name="kdenlive:clipname">[2-43].jpg</property>
@@ -1594,7 +1594,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">77</property>
-  <property name="kdenlive:control_uuid">{445044b3-7034-4bfa-b58e-98a899a6e559}</property>
+  <property name="kdenlive:control_uuid">{6259356c-d6ff-4cb2-aa9c-fa08d3e1ac39}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">111454</property>
   <property name="kdenlive:clipname">[2-46].jpg</property>
@@ -1615,7 +1615,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">78</property>
-  <property name="kdenlive:control_uuid">{09e26c52-7b5b-46c2-985f-3d7a79dd311e}</property>
+  <property name="kdenlive:control_uuid">{76f045ba-db27-409b-ae86-da20ecc0e091}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">115335</property>
   <property name="kdenlive:clipname">[2-48].jpg</property>
@@ -1636,7 +1636,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">79</property>
-  <property name="kdenlive:control_uuid">{c1c871cd-0008-49fc-84c7-b58277a20b40}</property>
+  <property name="kdenlive:control_uuid">{7b36ce6c-f647-4bb2-989a-c6079af5c10f}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">83136</property>
   <property name="kdenlive:clipname">[2-51].jpg</property>
@@ -1657,7 +1657,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">80</property>
-  <property name="kdenlive:control_uuid">{46e9cb68-2cce-4c6e-9564-3d223bd82b2a}</property>
+  <property name="kdenlive:control_uuid">{9c5f40ec-aa3a-42c0-b0ab-97c03a3bcb5c}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">134739</property>
   <property name="kdenlive:clipname">[2-53].jpg</property>
@@ -1678,7 +1678,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">81</property>
-  <property name="kdenlive:control_uuid">{af87d17c-353e-4eb0-8392-d2e60cde3a45}</property>
+  <property name="kdenlive:control_uuid">{9451c410-89c9-406d-82d0-83c369b08c24}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">230448</property>
   <property name="kdenlive:clipname">[2-55].jpg</property>
@@ -1699,7 +1699,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">82</property>
-  <property name="kdenlive:control_uuid">{0c8a9833-98b3-4e69-a234-074beb5a66cd}</property>
+  <property name="kdenlive:control_uuid">{7bd1ef81-7636-47b2-9886-41b8d7fd3fdd}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">216518</property>
   <property name="kdenlive:clipname">[2-57].jpg</property>
@@ -1720,7 +1720,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">83</property>
-  <property name="kdenlive:control_uuid">{f28861b4-19c1-44ef-9079-ef1b9e379a1c}</property>
+  <property name="kdenlive:control_uuid">{6592a9af-e22b-451c-ab1f-b972fee6d8fc}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">218045</property>
   <property name="kdenlive:clipname">[3-01].jpg</property>
@@ -1741,7 +1741,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">84</property>
-  <property name="kdenlive:control_uuid">{7f31e343-a2f1-494d-a22e-a88555613b77}</property>
+  <property name="kdenlive:control_uuid">{7f0445a8-e8ee-41bd-ba32-8ee8fa00c76c}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">86926</property>
   <property name="kdenlive:clipname">[3-02].jpg</property>
@@ -1762,7 +1762,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">85</property>
-  <property name="kdenlive:control_uuid">{c81aad41-5f5f-4d9b-88e3-fa758461c11d}</property>
+  <property name="kdenlive:control_uuid">{d3de0459-93b6-4d9e-9f96-cdb1f0581987}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">159320</property>
   <property name="kdenlive:clipname">[3-04].jpg</property>
@@ -1783,7 +1783,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">86</property>
-  <property name="kdenlive:control_uuid">{ecdb8d7d-ad2d-4363-a430-2c48bd263f2c}</property>
+  <property name="kdenlive:control_uuid">{c3797d49-fc03-42ab-afd0-34bfd4575f72}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">102053</property>
   <property name="kdenlive:clipname">[3-08].jpg</property>
@@ -1804,7 +1804,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">87</property>
-  <property name="kdenlive:control_uuid">{b428ab83-6d24-45db-8d1c-591da9c09e4a}</property>
+  <property name="kdenlive:control_uuid">{91d0517d-bbe9-4309-8bce-79ee9e570340}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">123217</property>
   <property name="kdenlive:clipname">[3-10].jpg</property>
@@ -1825,7 +1825,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">88</property>
-  <property name="kdenlive:control_uuid">{790df574-6e87-4407-8eaa-3e25a4e39e9b}</property>
+  <property name="kdenlive:control_uuid">{2fd3d7eb-45a6-4427-b60b-0449d1fcba09}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">136454</property>
   <property name="kdenlive:clipname">[3-13].jpg</property>
@@ -1846,7 +1846,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">89</property>
-  <property name="kdenlive:control_uuid">{a126e241-d65b-4c19-95b3-b26120671ffe}</property>
+  <property name="kdenlive:control_uuid">{31f5a741-0532-48e2-a255-9d31b2f256ba}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">94416</property>
   <property name="kdenlive:clipname">[3-16].jpg</property>
@@ -1867,7 +1867,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">90</property>
-  <property name="kdenlive:control_uuid">{322b84fe-ff76-4206-8c8b-4f062df6068d}</property>
+  <property name="kdenlive:control_uuid">{5b4538bc-7667-4aa6-810d-4d8d502adb58}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">98728</property>
   <property name="kdenlive:clipname">[3-17].jpg</property>
@@ -1888,7 +1888,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">91</property>
-  <property name="kdenlive:control_uuid">{96c5a7f5-5c35-43d7-b9db-517116ae25cf}</property>
+  <property name="kdenlive:control_uuid">{0570b19f-937a-457b-b81c-f7cf6b9df543}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">101128</property>
   <property name="kdenlive:clipname">[3-19].jpg</property>
@@ -1909,7 +1909,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">92</property>
-  <property name="kdenlive:control_uuid">{06206ca5-a2d8-45ac-9e0e-5219c7c481ec}</property>
+  <property name="kdenlive:control_uuid">{bc88bab3-6c3b-42ac-b000-5625a3ea4f79}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">104520</property>
   <property name="kdenlive:clipname">[3-20].jpg</property>
@@ -1930,7 +1930,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">93</property>
-  <property name="kdenlive:control_uuid">{4253e2d6-eda4-4b81-a96f-3dc9727838c7}</property>
+  <property name="kdenlive:control_uuid">{8307fcd3-d36c-4c86-a563-743976a5e30c}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">106855</property>
   <property name="kdenlive:clipname">[3-24].jpg</property>
@@ -1951,7 +1951,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">94</property>
-  <property name="kdenlive:control_uuid">{92d47d37-bcc9-4712-8509-a17b987df122}</property>
+  <property name="kdenlive:control_uuid">{33162c4d-e656-4f84-bb60-d69ab5892360}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">113183</property>
   <property name="kdenlive:clipname">[3-26].jpg</property>
@@ -1972,7 +1972,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">95</property>
-  <property name="kdenlive:control_uuid">{07b5daf3-14c6-4bcf-8405-b8c8864181c1}</property>
+  <property name="kdenlive:control_uuid">{d1e2514c-5251-4c2e-b927-2df30123bf61}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">219496</property>
   <property name="kdenlive:clipname">[3-29].jpg</property>
@@ -1993,7 +1993,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">96</property>
-  <property name="kdenlive:control_uuid">{33ee915e-ed1c-4bf7-886b-6c079722a9d7}</property>
+  <property name="kdenlive:control_uuid">{b08d01a5-3855-42fd-9355-bfb97657c68d}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">222476</property>
   <property name="kdenlive:clipname">[3-31].jpg</property>
@@ -2014,7 +2014,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">97</property>
-  <property name="kdenlive:control_uuid">{0574b19a-599a-42fb-b29b-40e17b595504}</property>
+  <property name="kdenlive:control_uuid">{49177ef0-b2c4-4684-92a8-79aeedb24f19}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">215773</property>
   <property name="kdenlive:clipname">[3-33].jpg</property>
@@ -2035,7 +2035,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">98</property>
-  <property name="kdenlive:control_uuid">{0487747d-ec1e-4a19-9ccf-b80907788ac3}</property>
+  <property name="kdenlive:control_uuid">{35fa2a93-d910-48fa-ad84-86084d38a6d7}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">128361</property>
   <property name="kdenlive:clipname">[3-36].jpg</property>
@@ -2056,7 +2056,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">99</property>
-  <property name="kdenlive:control_uuid">{96c15c99-d1a6-4e6c-a961-c4b212c55cd3}</property>
+  <property name="kdenlive:control_uuid">{778641e7-01f1-4fe6-95d3-251f22ca6855}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">132168</property>
   <property name="kdenlive:clipname">[3-39].jpg</property>
@@ -2077,7 +2077,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">100</property>
-  <property name="kdenlive:control_uuid">{645f905a-ef08-47cb-a178-720533db8a74}</property>
+  <property name="kdenlive:control_uuid">{28c80cfd-b368-41d0-a363-70001f5ce38b}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">146784</property>
   <property name="kdenlive:clipname">[3-42].jpg</property>
@@ -2098,7 +2098,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">101</property>
-  <property name="kdenlive:control_uuid">{aea49d80-0636-415b-a71b-458dacfb1733}</property>
+  <property name="kdenlive:control_uuid">{c0ba2ca9-42f6-491c-86b8-cd1de70e1dfe}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">148174</property>
   <property name="kdenlive:clipname">[3-44].jpg</property>
@@ -2119,7 +2119,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">102</property>
-  <property name="kdenlive:control_uuid">{930e472b-ec2d-491e-8dbe-2aedbd239d3b}</property>
+  <property name="kdenlive:control_uuid">{9e2b5cf3-a38c-4422-a216-db9be3beabc9}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">159907</property>
   <property name="kdenlive:clipname">[3-45].jpg</property>
@@ -2140,7 +2140,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">103</property>
-  <property name="kdenlive:control_uuid">{26171d25-4900-4084-9131-bb49ffedcfaf}</property>
+  <property name="kdenlive:control_uuid">{8677af9b-1f5b-4e96-9394-94f5c557c405}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">123130</property>
   <property name="kdenlive:clipname">[3-47].jpg</property>
@@ -2161,7 +2161,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">104</property>
-  <property name="kdenlive:control_uuid">{0694032b-8df0-4de2-8ef4-1c14ffc1eb90}</property>
+  <property name="kdenlive:control_uuid">{1527fc33-b435-4568-ac27-43e04aa66157}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">128381</property>
   <property name="kdenlive:clipname">[3-50].jpg</property>
@@ -2182,7 +2182,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">105</property>
-  <property name="kdenlive:control_uuid">{768ae432-cffd-400d-b8a4-e257a872ca05}</property>
+  <property name="kdenlive:control_uuid">{aaba9069-4be1-4119-9804-ce09693146c8}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">76841</property>
   <property name="kdenlive:clipname">[3-53].jpg</property>
@@ -2203,7 +2203,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">106</property>
-  <property name="kdenlive:control_uuid">{ccc5cfe3-0884-4610-b4fd-d259a1ef220f}</property>
+  <property name="kdenlive:control_uuid">{6c9db236-4a05-4589-bbe2-c5b8db5c7426}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">87647</property>
   <property name="kdenlive:clipname">[3-55].jpg</property>
@@ -2224,7 +2224,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">107</property>
-  <property name="kdenlive:control_uuid">{c2734a33-c44d-4d8a-b356-ebeda3a96079}</property>
+  <property name="kdenlive:control_uuid">{ab1abd42-100b-4ea9-b9a8-aab1b0190ab5}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">254322</property>
   <property name="kdenlive:clipname">[3-58].jpg</property>
@@ -2245,7 +2245,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">108</property>
-  <property name="kdenlive:control_uuid">{146e3cf3-02b7-445f-98d8-fb25345567c9}</property>
+  <property name="kdenlive:control_uuid">{6e459195-07bc-45cc-8b2d-112f67c4bfa0}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">242026</property>
   <property name="kdenlive:clipname">[4-01].jpg</property>
@@ -2266,7 +2266,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">109</property>
-  <property name="kdenlive:control_uuid">{e8f28cbc-aeda-4284-8bad-0c3bb8f1455d}</property>
+  <property name="kdenlive:control_uuid">{96346ad8-71e5-48db-9ac6-e5c8eab98e05}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">73676</property>
   <property name="kdenlive:clipname">[4-02].jpg</property>
@@ -2287,7 +2287,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">110</property>
-  <property name="kdenlive:control_uuid">{e60e6693-5f7b-4282-9ebc-36eb3c4088c2}</property>
+  <property name="kdenlive:control_uuid">{96731339-fdfb-4884-a3aa-af681763750e}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">93991</property>
   <property name="kdenlive:clipname">[4-05].jpg</property>
@@ -2308,7 +2308,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">111</property>
-  <property name="kdenlive:control_uuid">{02aacaca-25d8-4674-a4f7-2edcf7bc3e27}</property>
+  <property name="kdenlive:control_uuid">{53e56f71-9c73-4e60-8b57-f2e577106602}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">81127</property>
   <property name="kdenlive:clipname">[4-07].jpg</property>
@@ -2329,7 +2329,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">112</property>
-  <property name="kdenlive:control_uuid">{6eb7d477-e9b1-48ee-985e-360aaa30e1d1}</property>
+  <property name="kdenlive:control_uuid">{efeda737-c43c-43c8-8953-12f2c1ba5084}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">83499</property>
   <property name="kdenlive:clipname">[4-09].jpg</property>
@@ -2350,7 +2350,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">113</property>
-  <property name="kdenlive:control_uuid">{d91ec8d4-fb9b-425d-ac73-7ad0f2b227e0}</property>
+  <property name="kdenlive:control_uuid">{816fc663-4e45-4dff-b341-44f7b0395a89}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">118034</property>
   <property name="kdenlive:clipname">[4-10].jpg</property>
@@ -2371,7 +2371,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">114</property>
-  <property name="kdenlive:control_uuid">{f52e52fd-b44e-4263-a48d-88d02d429009}</property>
+  <property name="kdenlive:control_uuid">{66958d64-7ee2-4a85-b047-807586fe98ca}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">135601</property>
   <property name="kdenlive:clipname">[4-13].jpg</property>
@@ -2392,7 +2392,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">115</property>
-  <property name="kdenlive:control_uuid">{bbc96113-3d7c-4461-a1d6-7b0ec0c14383}</property>
+  <property name="kdenlive:control_uuid">{be6fa67b-fd85-4ebf-9826-21502e746eee}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">216467</property>
   <property name="kdenlive:clipname">[4-17].jpg</property>
@@ -2413,7 +2413,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">116</property>
-  <property name="kdenlive:control_uuid">{fa1bd7a7-d459-4234-b8be-e7db66d61e16}</property>
+  <property name="kdenlive:control_uuid">{6c0d5992-59ad-429d-8e33-45ccf01487d4}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">221937</property>
   <property name="kdenlive:clipname">[4-20].jpg</property>
@@ -2434,7 +2434,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">117</property>
-  <property name="kdenlive:control_uuid">{f2b3ebeb-182f-42a6-ac45-b8ce75329bfe}</property>
+  <property name="kdenlive:control_uuid">{d511f2dc-2448-4725-aa49-15bddd97c536}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">222912</property>
   <property name="kdenlive:clipname">[4-21].jpg</property>
@@ -2455,7 +2455,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">118</property>
-  <property name="kdenlive:control_uuid">{32a809b6-1e14-4df9-bd18-a8bbce5b51a6}</property>
+  <property name="kdenlive:control_uuid">{358c28a8-7d57-4d1d-9d04-06f24fb441e3}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">275106</property>
   <property name="kdenlive:clipname">[4-23].jpg</property>
@@ -2476,7 +2476,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">119</property>
-  <property name="kdenlive:control_uuid">{8b2b4465-95bc-4dea-a130-7961e34ab55b}</property>
+  <property name="kdenlive:control_uuid">{b271be24-b35c-4285-9f0b-366955c70e93}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">287773</property>
   <property name="kdenlive:clipname">[4-25].jpg</property>
@@ -2497,7 +2497,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">120</property>
-  <property name="kdenlive:control_uuid">{55b84a0f-2df6-4330-b210-d02806844aea}</property>
+  <property name="kdenlive:control_uuid">{85c572ef-cbe4-4630-9c05-18199c82e732}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">279762</property>
   <property name="kdenlive:clipname">[4-26].jpg</property>
@@ -2518,7 +2518,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">121</property>
-  <property name="kdenlive:control_uuid">{d7a190a3-d318-4baf-952e-2a9e9284e6d3}</property>
+  <property name="kdenlive:control_uuid">{b84ed744-dfbf-4089-bc15-96efc21ddb85}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">167067</property>
   <property name="kdenlive:clipname">[4-29].jpg</property>
@@ -2539,7 +2539,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">122</property>
-  <property name="kdenlive:control_uuid">{2b3a832e-8ad3-40be-b80c-6f4be7d6afa7}</property>
+  <property name="kdenlive:control_uuid">{65b69c64-dd58-49c4-a841-c57d74b07aab}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">163631</property>
   <property name="kdenlive:clipname">[4-31].jpg</property>
@@ -2560,7 +2560,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">123</property>
-  <property name="kdenlive:control_uuid">{5ca058d1-ba64-4530-84e7-39457bcfe604}</property>
+  <property name="kdenlive:control_uuid">{62d07255-2299-4cbf-bef6-feb90691beb0}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">176343</property>
   <property name="kdenlive:clipname">[4-33].jpg</property>
@@ -2581,7 +2581,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">124</property>
-  <property name="kdenlive:control_uuid">{bb036250-140e-4259-9fbf-2a5628c3c628}</property>
+  <property name="kdenlive:control_uuid">{faeeca79-32ad-4be6-b557-950f04eeb90d}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">111404</property>
   <property name="kdenlive:clipname">[4-35].jpg</property>
@@ -2602,7 +2602,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">125</property>
-  <property name="kdenlive:control_uuid">{38ba5928-966b-420b-b4dd-c5022791aa93}</property>
+  <property name="kdenlive:control_uuid">{8f00e000-5c1a-418a-abd0-beeba6473805}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">130142</property>
   <property name="kdenlive:clipname">[4-37].jpg</property>
@@ -2623,7 +2623,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">126</property>
-  <property name="kdenlive:control_uuid">{72041ff3-1d0e-4c87-b90a-7a6e6f11226d}</property>
+  <property name="kdenlive:control_uuid">{21078fd3-47cf-4761-bf35-6a44cfd5aef7}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">357288</property>
   <property name="kdenlive:clipname">[4-39].jpg</property>
@@ -2644,7 +2644,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">127</property>
-  <property name="kdenlive:control_uuid">{b3838ff7-f4c6-4636-8633-7683cc542201}</property>
+  <property name="kdenlive:control_uuid">{81b3c542-2a01-4692-922c-b329d54ab6fb}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">359066</property>
   <property name="kdenlive:clipname">[4-41].jpg</property>
@@ -2665,7 +2665,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">128</property>
-  <property name="kdenlive:control_uuid">{8bb72111-51e5-4f6c-a1f3-e3f58223de4e}</property>
+  <property name="kdenlive:control_uuid">{20c111c2-15c1-4f14-aea4-6ce5c8b07e28}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">359568</property>
   <property name="kdenlive:clipname">[4-43].jpg</property>
@@ -2686,7 +2686,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">129</property>
-  <property name="kdenlive:control_uuid">{a17ed626-19e2-40fa-8bbe-3ce5d9d0fa29}</property>
+  <property name="kdenlive:control_uuid">{b3136831-9b5e-4c72-b20e-4a5d79d4cfab}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">270873</property>
   <property name="kdenlive:clipname">[4-46].jpg</property>
@@ -2707,7 +2707,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">130</property>
-  <property name="kdenlive:control_uuid">{1dcd31b6-6ab9-4270-8d0b-618de59dc1b1}</property>
+  <property name="kdenlive:control_uuid">{6366b599-f6ad-47aa-a790-b6739b4689d4}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">254148</property>
   <property name="kdenlive:clipname">[4-48].jpg</property>
@@ -2728,7 +2728,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">131</property>
-  <property name="kdenlive:control_uuid">{64d01f3c-108d-40c0-b243-de7e1ea7433a}</property>
+  <property name="kdenlive:control_uuid">{057a2c65-b3cc-46ec-a361-de9889247a1c}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">264205</property>
   <property name="kdenlive:clipname">[4-49].jpg</property>
@@ -2749,7 +2749,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">132</property>
-  <property name="kdenlive:control_uuid">{01b71588-7261-4282-968a-f5085c31c3fa}</property>
+  <property name="kdenlive:control_uuid">{fcc8bfea-b6d6-4018-9cd6-d1f1205ec6ae}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">102946</property>
   <property name="kdenlive:clipname">[4-52].jpg</property>
@@ -2770,7 +2770,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">133</property>
-  <property name="kdenlive:control_uuid">{79495554-d89e-4a8e-91e2-43a69bbd2085}</property>
+  <property name="kdenlive:control_uuid">{69e80699-0758-4eaa-b432-3da005b998de}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">120959</property>
   <property name="kdenlive:clipname">[4-54].jpg</property>
@@ -2791,7 +2791,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">134</property>
-  <property name="kdenlive:control_uuid">{ff5fe738-df87-4847-8676-768350e5133c}</property>
+  <property name="kdenlive:control_uuid">{da9d4531-5162-490e-9a58-73153dd62c7d}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">256744</property>
   <property name="kdenlive:clipname">[4-57].jpg</property>
@@ -2812,7 +2812,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">135</property>
-  <property name="kdenlive:control_uuid">{86d8619a-5241-49c2-a848-c1e03f461128}</property>
+  <property name="kdenlive:control_uuid">{9175b460-83cc-434a-add8-09b405035b7a}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">287911</property>
   <property name="kdenlive:clipname">[4-58].jpg</property>
@@ -2833,7 +2833,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">136</property>
-  <property name="kdenlive:control_uuid">{93be23d6-a907-48de-a977-83aebfdc51ba}</property>
+  <property name="kdenlive:control_uuid">{970fce0b-f280-474b-b953-7ccc0cbf5dc4}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">284787</property>
   <property name="kdenlive:clipname">[5-00].jpg</property>
@@ -2854,7 +2854,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">137</property>
-  <property name="kdenlive:control_uuid">{40f05385-5f9c-4441-a12f-e587aca9af26}</property>
+  <property name="kdenlive:control_uuid">{de323c08-a7e6-4c36-81fb-7de8457516d9}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">287157</property>
   <property name="kdenlive:clipname">[5-02].jpg</property>
@@ -2875,7 +2875,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">138</property>
-  <property name="kdenlive:control_uuid">{d5e8acd1-28c7-4406-8578-85fa27f615a5}</property>
+  <property name="kdenlive:control_uuid">{d7d37a19-702e-4b37-b816-42845aadcbdc}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">119284</property>
   <property name="kdenlive:clipname">[5-04].jpg</property>
@@ -2896,7 +2896,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">139</property>
-  <property name="kdenlive:control_uuid">{4ae10711-0528-4316-aae1-37dd39f18ee5}</property>
+  <property name="kdenlive:control_uuid">{60952bd8-38ae-41e8-8138-5f84ee9b7595}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">143456</property>
   <property name="kdenlive:clipname">[5-07].jpg</property>
@@ -2917,7 +2917,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">140</property>
-  <property name="kdenlive:control_uuid">{ffc854b6-aceb-46cf-a4ac-6ce839447ca6}</property>
+  <property name="kdenlive:control_uuid">{6b81166b-a121-47bf-a8af-df2b827a60b9}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">166044</property>
   <property name="kdenlive:clipname">[5-09].jpg</property>
@@ -2938,7 +2938,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">141</property>
-  <property name="kdenlive:control_uuid">{52afbc00-c3fc-4afd-9b46-547711670cf8}</property>
+  <property name="kdenlive:control_uuid">{97e1c056-4f98-4c83-98c0-ef515dd5592c}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">70136</property>
   <property name="kdenlive:clipname">[5-11].jpg</property>
@@ -2959,7 +2959,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">142</property>
-  <property name="kdenlive:control_uuid">{847bb537-fe16-469f-860d-9eabaad4aafa}</property>
+  <property name="kdenlive:control_uuid">{1a7daf24-679e-4d73-98a8-67f5d36941ba}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">96556</property>
   <property name="kdenlive:clipname">[5-14].jpg</property>
@@ -2980,7 +2980,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">143</property>
-  <property name="kdenlive:control_uuid">{51f9c253-a293-4607-b7f2-3e7328477314}</property>
+  <property name="kdenlive:control_uuid">{58e8326a-9d78-4f21-87d4-f3950f28451e}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">96836</property>
   <property name="kdenlive:clipname">[5-17].jpg</property>
@@ -3001,7 +3001,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">144</property>
-  <property name="kdenlive:control_uuid">{7ebb1f6b-369f-45af-b3d3-ae82638c6382}</property>
+  <property name="kdenlive:control_uuid">{6f0637ce-4efb-4593-9eee-141027f91a34}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">111247</property>
   <property name="kdenlive:clipname">[5-20].jpg</property>
@@ -3022,7 +3022,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">145</property>
-  <property name="kdenlive:control_uuid">{c80db399-be6f-41cb-9edc-c9f6ae1c5acc}</property>
+  <property name="kdenlive:control_uuid">{47efcb75-40ca-490f-a7b4-1eb6107e15ff}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">113970</property>
   <property name="kdenlive:clipname">[5-22].jpg</property>
@@ -3043,7 +3043,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">146</property>
-  <property name="kdenlive:control_uuid">{b39fda26-c6a8-4fb1-9585-31ae401e6411}</property>
+  <property name="kdenlive:control_uuid">{4aad7153-fa95-480e-af50-7c96269b9de0}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">64430</property>
   <property name="kdenlive:clipname">[5-25].jpg</property>
@@ -3064,7 +3064,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">147</property>
-  <property name="kdenlive:control_uuid">{099e9e7e-a2c1-46a3-813d-508a0a77721a}</property>
+  <property name="kdenlive:control_uuid">{b27ecb93-6829-4634-9cc3-6c14a4003319}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">311164</property>
   <property name="kdenlive:clipname">[5-28].jpg</property>
@@ -3085,7 +3085,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">148</property>
-  <property name="kdenlive:control_uuid">{7a783842-90f6-4439-b2c3-174d75052a51}</property>
+  <property name="kdenlive:control_uuid">{ce3cb98a-a2a6-41c9-b1b2-941d1c2f5c38}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">290759</property>
   <property name="kdenlive:clipname">[5-32].jpg</property>
@@ -3106,7 +3106,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">149</property>
-  <property name="kdenlive:control_uuid">{ad166386-514a-4a6c-9db7-3cbdef9b82e2}</property>
+  <property name="kdenlive:control_uuid">{05dd3c0b-bfe1-4d2b-897b-cd3179fa01ca}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">289277</property>
   <property name="kdenlive:clipname">[5-35].jpg</property>
@@ -3127,7 +3127,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">150</property>
-  <property name="kdenlive:control_uuid">{bc1c8718-cb63-415a-a8f1-f63dde879ab6}</property>
+  <property name="kdenlive:control_uuid">{01542ff1-a5e5-4766-9d1f-41b81564bf82}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">317929</property>
   <property name="kdenlive:clipname">[5-37].jpg</property>
@@ -3148,7 +3148,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">151</property>
-  <property name="kdenlive:control_uuid">{5e176df7-f44d-45d5-becd-68eab5bcb684}</property>
+  <property name="kdenlive:control_uuid">{fdf73779-10bc-4a49-84d0-d8e8b8308554}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">156418</property>
   <property name="kdenlive:clipname">[5-40].jpg</property>
@@ -3169,7 +3169,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">152</property>
-  <property name="kdenlive:control_uuid">{882d61fb-33e5-42b4-8bb9-f021d95f7bad}</property>
+  <property name="kdenlive:control_uuid">{878a0e1b-b775-4794-bd3c-d2fb4128501c}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">177710</property>
   <property name="kdenlive:clipname">[5-41].jpg</property>
@@ -3190,7 +3190,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">153</property>
-  <property name="kdenlive:control_uuid">{c4d66f3b-d328-4c97-b299-d05999858f28}</property>
+  <property name="kdenlive:control_uuid">{e9d7670b-0e59-4577-b291-e227dfc61993}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">121996</property>
   <property name="kdenlive:clipname">[5-43].jpg</property>
@@ -3211,7 +3211,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">154</property>
-  <property name="kdenlive:control_uuid">{c4f05de6-7f4b-4c26-88e2-514079493600}</property>
+  <property name="kdenlive:control_uuid">{67034e9c-0b7f-46b1-936b-a56a77c796ad}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">330894</property>
   <property name="kdenlive:clipname">[5-46].jpg</property>
@@ -3232,7 +3232,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">155</property>
-  <property name="kdenlive:control_uuid">{5ff2306f-8149-47cc-9961-eff66f6c7f23}</property>
+  <property name="kdenlive:control_uuid">{56ebc53d-da00-4705-b3cc-6af5435a39cc}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">313780</property>
   <property name="kdenlive:clipname">[5-48].jpg</property>
@@ -3253,7 +3253,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">156</property>
-  <property name="kdenlive:control_uuid">{79149092-e6d1-44bf-ba6a-3d9ac5cf1660}</property>
+  <property name="kdenlive:control_uuid">{2369660c-d778-477a-bc24-193f830d8a65}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">299033</property>
   <property name="kdenlive:clipname">[5-49].jpg</property>
@@ -3274,7 +3274,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">157</property>
-  <property name="kdenlive:control_uuid">{21c72024-db98-4995-ae81-23066a2b3588}</property>
+  <property name="kdenlive:control_uuid">{2ba5d417-7a12-4305-9141-b25e11e048ab}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">63392</property>
   <property name="kdenlive:clipname">[5-53].jpg</property>
@@ -3295,7 +3295,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">158</property>
-  <property name="kdenlive:control_uuid">{5bf2dc0a-c2c7-43e4-84f0-7b37a3804bfe}</property>
+  <property name="kdenlive:control_uuid">{aaaef8c5-e275-4bc4-972d-227929c19eda}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">88892</property>
   <property name="kdenlive:clipname">[5-56].jpg</property>
@@ -3316,7 +3316,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">159</property>
-  <property name="kdenlive:control_uuid">{69780753-1d53-4889-947b-b402ce663d0d}</property>
+  <property name="kdenlive:control_uuid">{ad2ea475-ac9b-44ae-a26a-a8837b826269}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">172928</property>
   <property name="kdenlive:clipname">[5-58].jpg</property>
@@ -3337,7 +3337,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">160</property>
-  <property name="kdenlive:control_uuid">{110b947d-acec-4e7c-831a-62b07f48a8c4}</property>
+  <property name="kdenlive:control_uuid">{f9ae562b-aff3-4fff-b091-53776fb1d2e5}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">95654</property>
   <property name="kdenlive:clipname">[6-00].jpg</property>
@@ -3358,7 +3358,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">161</property>
-  <property name="kdenlive:control_uuid">{71d59e14-5448-4a35-b1e7-6f07ff9c8d8d}</property>
+  <property name="kdenlive:control_uuid">{f9c16dd3-a5e8-4ead-91ba-7fa77ac35547}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">111289</property>
   <property name="kdenlive:clipname">[6-03].jpg</property>
@@ -3379,7 +3379,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">162</property>
-  <property name="kdenlive:control_uuid">{09205bb2-6a8f-41be-92ff-42ec5dab039e}</property>
+  <property name="kdenlive:control_uuid">{243021ac-2c54-4774-8075-9f12d65f543b}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">127297</property>
   <property name="kdenlive:clipname">[6-08].jpg</property>
@@ -3400,7 +3400,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">163</property>
-  <property name="kdenlive:control_uuid">{538bf2f9-e068-4224-969e-bb140abfc6f8}</property>
+  <property name="kdenlive:control_uuid">{c203860d-a9be-404b-aad6-c05fa06ef259}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">355905</property>
   <property name="kdenlive:clipname">[6-11].jpg</property>
@@ -3421,7 +3421,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">164</property>
-  <property name="kdenlive:control_uuid">{ec26e027-4d80-450e-94cd-3c500211ec53}</property>
+  <property name="kdenlive:control_uuid">{b8425a78-cd31-4cbe-a5fe-1a53717abab3}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">337794</property>
   <property name="kdenlive:clipname">[6-12].jpg</property>
@@ -3442,7 +3442,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">165</property>
-  <property name="kdenlive:control_uuid">{c7697134-04c8-47c8-ab79-24829435c95e}</property>
+  <property name="kdenlive:control_uuid">{7bebdfab-0cc1-47bf-a8b1-af4d68e2a45b}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">327433</property>
   <property name="kdenlive:clipname">[6-14].jpg</property>
@@ -3463,7 +3463,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">166</property>
-  <property name="kdenlive:control_uuid">{44e03b10-2254-4ed7-9458-3421193016c0}</property>
+  <property name="kdenlive:control_uuid">{aa3ff241-5e3b-4238-80e3-cc498185d0a7}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">146390</property>
   <property name="kdenlive:clipname">[6-17].jpg</property>
@@ -3484,7 +3484,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">167</property>
-  <property name="kdenlive:control_uuid">{a40d8ef9-8b83-424f-86b9-37be207d2bc0}</property>
+  <property name="kdenlive:control_uuid">{b27ab7fe-397f-4208-8d35-43db053f07cf}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">104826</property>
   <property name="kdenlive:clipname">[6-20].jpg</property>
@@ -3505,7 +3505,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">168</property>
-  <property name="kdenlive:control_uuid">{c53036a8-14e1-45e7-a35a-d6d5ff3ae6cc}</property>
+  <property name="kdenlive:control_uuid">{4bc962d7-1d0e-4b67-a6a3-89cf90df0b9d}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">87942</property>
   <property name="kdenlive:clipname">[6-24].jpg</property>
@@ -3526,7 +3526,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">169</property>
-  <property name="kdenlive:control_uuid">{bffe8703-4688-4c2c-b61c-37b4abac3ee3}</property>
+  <property name="kdenlive:control_uuid">{e04e5e17-d3b9-49cf-a0a9-b87c83d0cf80}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">299919</property>
   <property name="kdenlive:clipname">[6-26].jpg</property>
@@ -3547,7 +3547,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">170</property>
-  <property name="kdenlive:control_uuid">{28b6c408-ceee-482a-9f14-ff623316fdc0}</property>
+  <property name="kdenlive:control_uuid">{9450a50c-9d2c-4af5-9479-d0fdc21d4d8d}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">283901</property>
   <property name="kdenlive:clipname">[6-27].jpg</property>
@@ -3568,7 +3568,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">171</property>
-  <property name="kdenlive:control_uuid">{7c1075a2-53a5-449d-aa4b-5abb29fc7998}</property>
+  <property name="kdenlive:control_uuid">{9cad23d0-edcd-4f70-9ae4-945c7d127671}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">280417</property>
   <property name="kdenlive:clipname">[6-31].jpg</property>
@@ -3589,7 +3589,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">172</property>
-  <property name="kdenlive:control_uuid">{00a49692-04f3-4df8-b4e2-4efacccfc85d}</property>
+  <property name="kdenlive:control_uuid">{415aa5fc-e385-4e7e-8100-5ebabaece804}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">272849</property>
   <property name="kdenlive:clipname">[6-32].jpg</property>
@@ -3610,7 +3610,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">173</property>
-  <property name="kdenlive:control_uuid">{d459eb72-7942-4bd5-86ef-a91b34d7be79}</property>
+  <property name="kdenlive:control_uuid">{abb06715-e360-41ff-949a-d77a0ebab6f0}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">104208</property>
   <property name="kdenlive:clipname">[6-35].jpg</property>
@@ -3631,7 +3631,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">174</property>
-  <property name="kdenlive:control_uuid">{41b0b3a3-c639-4556-9966-96eb81722ed0}</property>
+  <property name="kdenlive:control_uuid">{fd935cd8-9e69-4d51-8a0d-32c00717bf91}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">114302</property>
   <property name="kdenlive:clipname">[6-37].jpg</property>
@@ -3652,7 +3652,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">175</property>
-  <property name="kdenlive:control_uuid">{e259890b-57b2-4c2b-8483-2148e34509a3}</property>
+  <property name="kdenlive:control_uuid">{4aede788-ca8a-4697-8b2e-5e8a5147fa4a}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">111741</property>
   <property name="kdenlive:clipname">[6-39].jpg</property>
@@ -3673,7 +3673,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">176</property>
-  <property name="kdenlive:control_uuid">{e4390b80-e7d7-4731-a56c-b24035345082}</property>
+  <property name="kdenlive:control_uuid">{5ae4d8be-f104-4e0f-b93f-4debafe80f44}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">108457</property>
   <property name="kdenlive:clipname">[6-42].jpg</property>
@@ -3694,7 +3694,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">177</property>
-  <property name="kdenlive:control_uuid">{04a7f758-1e93-4e6c-9fb1-0dc0c8d3ae42}</property>
+  <property name="kdenlive:control_uuid">{18c3fed7-f1bc-47a9-a9bf-e747496ccfbf}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">72752</property>
   <property name="kdenlive:clipname">[6-45].jpg</property>
@@ -3715,7 +3715,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">178</property>
-  <property name="kdenlive:control_uuid">{e6c0af41-2f40-4ecf-ba51-55fde8861f3c}</property>
+  <property name="kdenlive:control_uuid">{246f46bb-6f2a-49ac-857e-b6cc38b37239}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">105414</property>
   <property name="kdenlive:clipname">[6-46].jpg</property>
@@ -3736,7 +3736,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">179</property>
-  <property name="kdenlive:control_uuid">{1f5c9a99-b197-4189-a3a8-8a0824d216e0}</property>
+  <property name="kdenlive:control_uuid">{57ef993b-142a-4739-b6a1-c0058e9367b4}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">87687</property>
   <property name="kdenlive:clipname">[6-48].jpg</property>
@@ -3757,7 +3757,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">180</property>
-  <property name="kdenlive:control_uuid">{25ca5e9b-8f2d-40f4-b4c2-8ff8cd520830}</property>
+  <property name="kdenlive:control_uuid">{2a8a7cb4-cf75-47bb-a0a5-8823a374e59a}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">186508</property>
   <property name="kdenlive:clipname">[6-51].jpg</property>
@@ -3778,7 +3778,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">181</property>
-  <property name="kdenlive:control_uuid">{28e4b057-f5d7-4536-8ba8-e583dc2def56}</property>
+  <property name="kdenlive:control_uuid">{f199acf6-8505-474e-baf4-a392bb02d6b8}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">220229</property>
   <property name="kdenlive:clipname">[6-55].jpg</property>
@@ -3799,7 +3799,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">182</property>
-  <property name="kdenlive:control_uuid">{5e26db69-c569-4b2d-b679-5b7fea2c648c}</property>
+  <property name="kdenlive:control_uuid">{1c17228e-5d6c-4377-93d1-7d5256a23a0e}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">229157</property>
   <property name="kdenlive:clipname">[6-56].jpg</property>
@@ -3820,7 +3820,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">183</property>
-  <property name="kdenlive:control_uuid">{bc410c45-534c-4889-9f8e-f19d7dae2450}</property>
+  <property name="kdenlive:control_uuid">{03447fe0-1a57-46c6-a536-344041fba60f}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">357074</property>
   <property name="kdenlive:clipname">[6-59].jpg</property>
@@ -3841,7 +3841,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">184</property>
-  <property name="kdenlive:control_uuid">{e9c8a832-84d8-4cbd-b65f-04aa3d61d6ac}</property>
+  <property name="kdenlive:control_uuid">{f78bc165-00d1-4275-a84a-5dc8fdfa9418}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">341251</property>
   <property name="kdenlive:clipname">[7-02].jpg</property>
@@ -3862,7 +3862,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">185</property>
-  <property name="kdenlive:control_uuid">{37452b2e-c4f9-4672-985e-b018db48435f}</property>
+  <property name="kdenlive:control_uuid">{3355aed5-4ebe-4286-a0a3-d3407d2d759a}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">288698</property>
   <property name="kdenlive:clipname">[7-05].jpg</property>
@@ -3883,7 +3883,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">186</property>
-  <property name="kdenlive:control_uuid">{c63fcf6d-24f8-463b-9cc5-bffadd55f365}</property>
+  <property name="kdenlive:control_uuid">{ef9da482-cc36-4f92-aada-ed7043519f6f}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">274797</property>
   <property name="kdenlive:clipname">[7-07].jpg</property>
@@ -3904,7 +3904,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">187</property>
-  <property name="kdenlive:control_uuid">{6a1d3f90-81f7-411c-b1a6-05c6d45718ad}</property>
+  <property name="kdenlive:control_uuid">{14c87e5f-ce4f-4b8b-873f-7152f81ba25a}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">273740</property>
   <property name="kdenlive:clipname">[7-08].jpg</property>
@@ -3925,7 +3925,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">188</property>
-  <property name="kdenlive:control_uuid">{7fa13304-8bde-4023-8415-4f63a17663be}</property>
+  <property name="kdenlive:control_uuid">{8f928567-fed4-4fcc-9df6-2de2be8ea376}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">125261</property>
   <property name="kdenlive:clipname">[7-10].jpg</property>
@@ -3946,7 +3946,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">189</property>
-  <property name="kdenlive:control_uuid">{5df38007-780a-4029-88bd-80b0e10e2cba}</property>
+  <property name="kdenlive:control_uuid">{ba423b48-e2d6-4f7b-8b19-4bcb030276b4}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">151239</property>
   <property name="kdenlive:clipname">[7-12].jpg</property>
@@ -3967,7 +3967,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">190</property>
-  <property name="kdenlive:control_uuid">{80e7f21b-a360-4d21-8447-27d2c1737bf3}</property>
+  <property name="kdenlive:control_uuid">{b6405652-3a46-4fca-9309-f8e2dffc80b4}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">148047</property>
   <property name="kdenlive:clipname">[7-15].jpg</property>
@@ -3988,7 +3988,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">191</property>
-  <property name="kdenlive:control_uuid">{657f7364-e46e-414a-a16e-9507a61fe099}</property>
+  <property name="kdenlive:control_uuid">{ec5dc761-c96b-4893-8347-5ec9dcb17dee}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">155469</property>
   <property name="kdenlive:clipname">[7-17].jpg</property>
@@ -4009,7 +4009,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">192</property>
-  <property name="kdenlive:control_uuid">{3cce0a46-15dc-4de4-876e-385f44ebdff7}</property>
+  <property name="kdenlive:control_uuid">{fb85dd1f-a90b-4bdd-9a29-fcb005335354}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">77740</property>
   <property name="kdenlive:clipname">[7-20].jpg</property>
@@ -4030,7 +4030,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">193</property>
-  <property name="kdenlive:control_uuid">{ae46931d-d18e-4525-8faf-751a9b23e1cd}</property>
+  <property name="kdenlive:control_uuid">{c3fdd5d7-3922-4bc4-a763-3a44726d28a3}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">79868</property>
   <property name="kdenlive:clipname">[7-22].jpg</property>
@@ -4051,7 +4051,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">194</property>
-  <property name="kdenlive:control_uuid">{4a1e7e98-4212-45ca-8600-a2ed662e7df4}</property>
+  <property name="kdenlive:control_uuid">{c6f88100-bdde-48b0-a260-a25f4ae15ffa}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">77794</property>
   <property name="kdenlive:clipname">[7-26].jpg</property>
@@ -4072,7 +4072,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">195</property>
-  <property name="kdenlive:control_uuid">{22c17b99-7611-464b-824e-efc8c923649b}</property>
+  <property name="kdenlive:control_uuid">{cd4f3b8a-18b1-47cb-ad26-9b155aac2253}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">161019</property>
   <property name="kdenlive:clipname">[7-30].jpg</property>
@@ -4093,7 +4093,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">196</property>
-  <property name="kdenlive:control_uuid">{b7119584-e458-401e-9540-2b2b34bbf8d9}</property>
+  <property name="kdenlive:control_uuid">{a5734e4f-6a14-4650-865c-efdc7ea3fab0}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">159857</property>
   <property name="kdenlive:clipname">[7-32].jpg</property>
@@ -4114,7 +4114,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">197</property>
-  <property name="kdenlive:control_uuid">{f35c615d-711f-430d-b8d8-7484971a7b97}</property>
+  <property name="kdenlive:control_uuid">{82455d3e-c7d2-4ec0-b49a-8e9669db3da0}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">169283</property>
   <property name="kdenlive:clipname">[7-34].jpg</property>
@@ -4135,7 +4135,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">198</property>
-  <property name="kdenlive:control_uuid">{869b6630-6142-4841-ac04-43e03836c15d}</property>
+  <property name="kdenlive:control_uuid">{e20b87f8-7122-4009-899f-5806873ca05a}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">192593</property>
   <property name="kdenlive:clipname">[7-36].jpg</property>
@@ -4156,7 +4156,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">199</property>
-  <property name="kdenlive:control_uuid">{6d3fb71d-3854-4c3e-817d-e0607ab140ff}</property>
+  <property name="kdenlive:control_uuid">{b63d6247-06b5-4e87-baae-1a3e3a078092}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">108166</property>
   <property name="kdenlive:clipname">[7-39].jpg</property>
@@ -4177,7 +4177,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">200</property>
-  <property name="kdenlive:control_uuid">{bae5c8c5-d3a1-45aa-a0bd-afc5e06d5997}</property>
+  <property name="kdenlive:control_uuid">{43b1f60a-2705-499d-926f-8a0175a08bc9}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">179816</property>
   <property name="kdenlive:clipname">[7-42].jpg</property>
@@ -4198,7 +4198,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">201</property>
-  <property name="kdenlive:control_uuid">{b0b7c213-da45-4eae-84cc-487a346f6228}</property>
+  <property name="kdenlive:control_uuid">{3293b508-4406-4b25-94ea-2893a42062df}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">130781</property>
   <property name="kdenlive:clipname">[7-45].jpg</property>
@@ -4219,7 +4219,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">202</property>
-  <property name="kdenlive:control_uuid">{3eeb3dc3-6444-4a53-bbe3-c4004a8943ec}</property>
+  <property name="kdenlive:control_uuid">{42caf7c1-64c4-4099-80eb-1cbfd97bfc2a}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">153633</property>
   <property name="kdenlive:clipname">[7-47].jpg</property>
@@ -4240,7 +4240,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">203</property>
-  <property name="kdenlive:control_uuid">{3fdeec18-9a20-4cc3-becd-f1ed4097f996}</property>
+  <property name="kdenlive:control_uuid">{63828a96-aeca-4212-966a-c32cf99fc27f}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">167082</property>
   <property name="kdenlive:clipname">[7-48].jpg</property>
@@ -4261,7 +4261,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">204</property>
-  <property name="kdenlive:control_uuid">{7a41a25b-0cd0-40b9-88c2-27255d7ee9ae}</property>
+  <property name="kdenlive:control_uuid">{acf23241-820d-400f-8b0b-d124b36209fb}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">169907</property>
   <property name="kdenlive:clipname">[7-50].jpg</property>
@@ -4282,7 +4282,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">205</property>
-  <property name="kdenlive:control_uuid">{90c82ea8-130f-47ab-b866-165f7fdf9506}</property>
+  <property name="kdenlive:control_uuid">{9246b6cc-f011-44fa-a954-5b5fe3085339}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">177219</property>
   <property name="kdenlive:clipname">[7-54].jpg</property>
@@ -4303,7 +4303,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">206</property>
-  <property name="kdenlive:control_uuid">{3cdd9ddf-3157-417b-9138-94f7b99dac29}</property>
+  <property name="kdenlive:control_uuid">{d7555647-46d6-481d-ae76-b2b70030ed2e}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">179349</property>
   <property name="kdenlive:clipname">[7-56].jpg</property>
@@ -4324,7 +4324,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">207</property>
-  <property name="kdenlive:control_uuid">{84881b7d-7db5-4e2a-92a7-e9cbd678ad3c}</property>
+  <property name="kdenlive:control_uuid">{7205187e-f147-45cc-852c-18febd370e0b}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">55861</property>
   <property name="kdenlive:clipname">[7-59].jpg</property>
@@ -4345,7 +4345,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">208</property>
-  <property name="kdenlive:control_uuid">{31f8908e-02eb-4144-b784-155c25410f54}</property>
+  <property name="kdenlive:control_uuid">{81de2210-fe8a-4889-99e8-c76e7f7d3069}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">67124</property>
   <property name="kdenlive:clipname">[8-00].jpg</property>
@@ -4366,7 +4366,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">209</property>
-  <property name="kdenlive:control_uuid">{2d20d361-ee4f-4df3-a1fb-d0e25676a252}</property>
+  <property name="kdenlive:control_uuid">{710c1cc6-ec70-465f-ba10-4aa7e676f772}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">171118</property>
   <property name="kdenlive:clipname">[8-01].jpg</property>
@@ -4387,7 +4387,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">210</property>
-  <property name="kdenlive:control_uuid">{96fdfd9b-7840-42d8-9939-5c6d782fd212}</property>
+  <property name="kdenlive:control_uuid">{9ffd06aa-5fca-4743-9741-dda58f500daa}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">171723</property>
   <property name="kdenlive:clipname">[8-03].jpg</property>
@@ -4408,7 +4408,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">211</property>
-  <property name="kdenlive:control_uuid">{7560cfc8-a0a2-4f57-8877-2b51dc97cc33}</property>
+  <property name="kdenlive:control_uuid">{561d97e4-c3f1-4cf5-b9ef-faf2fbf2c1ff}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">167293</property>
   <property name="kdenlive:clipname">[8-05].jpg</property>
@@ -4429,7 +4429,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">212</property>
-  <property name="kdenlive:control_uuid">{2d8fb988-17da-4292-bf68-6df690565ed6}</property>
+  <property name="kdenlive:control_uuid">{1aab56b8-52da-468c-9454-88470aaacae9}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">206453</property>
   <property name="kdenlive:clipname">[8-08].jpg</property>
@@ -4450,7 +4450,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">213</property>
-  <property name="kdenlive:control_uuid">{cdb2af0c-8237-4dc2-a358-6d442463fedb}</property>
+  <property name="kdenlive:control_uuid">{90a75942-c3ce-47b3-bc7c-5a00f5e8d3d3}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">197823</property>
   <property name="kdenlive:clipname">[8-09].jpg</property>
@@ -4471,7 +4471,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">214</property>
-  <property name="kdenlive:control_uuid">{016b2074-657a-4d81-b111-546abac24b3f}</property>
+  <property name="kdenlive:control_uuid">{0f4aa23a-3eb5-4d0c-bdff-638fa8bfad01}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">202734</property>
   <property name="kdenlive:clipname">[8-11].jpg</property>
@@ -4492,7 +4492,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">215</property>
-  <property name="kdenlive:control_uuid">{6a006493-7532-49a6-acae-010da6582d10}</property>
+  <property name="kdenlive:control_uuid">{ac4b2737-3a54-40b5-8361-3877c3ff52da}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">211979</property>
   <property name="kdenlive:clipname">[8-14].jpg</property>
@@ -4513,7 +4513,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">216</property>
-  <property name="kdenlive:control_uuid">{fff84145-2dde-439c-a3f3-ae1e35d2c6fe}</property>
+  <property name="kdenlive:control_uuid">{e252be04-3907-452a-b9d6-10194f82848c}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">117793</property>
   <property name="kdenlive:clipname">[8-16].jpg</property>
@@ -4534,7 +4534,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">217</property>
-  <property name="kdenlive:control_uuid">{a42b3732-4bce-4515-bd33-182c8ada1a95}</property>
+  <property name="kdenlive:control_uuid">{cc85b317-c555-4218-8d2f-c4704263124b}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">166967</property>
   <property name="kdenlive:clipname">[8-18].jpg</property>
@@ -4555,7 +4555,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">218</property>
-  <property name="kdenlive:control_uuid">{e009a22c-6c2d-4ec0-9994-bad3f948dca1}</property>
+  <property name="kdenlive:control_uuid">{341793a7-6c8b-4ba6-966e-fd0b930e987a}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">175911</property>
   <property name="kdenlive:clipname">[8-22].jpg</property>
@@ -4576,7 +4576,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">219</property>
-  <property name="kdenlive:control_uuid">{7c607ec2-616a-44a8-b195-68da0a07b435}</property>
+  <property name="kdenlive:control_uuid">{aee0c249-b36a-4156-b7f0-93d3cd5d9af1}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">176905</property>
   <property name="kdenlive:clipname">[8-26].jpg</property>
@@ -4597,7 +4597,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">220</property>
-  <property name="kdenlive:control_uuid">{13bd201a-40e3-44b6-b08a-0d1f6fea6d1b}</property>
+  <property name="kdenlive:control_uuid">{a90ff811-70b8-456b-bdb5-be00f9327566}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">149812</property>
   <property name="kdenlive:clipname">[8-27].jpg</property>
@@ -4618,7 +4618,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">221</property>
-  <property name="kdenlive:control_uuid">{478e5bef-16b9-4047-b491-1ceb852a2604}</property>
+  <property name="kdenlive:control_uuid">{f5974e08-520e-4834-9963-bd3ee0a1bc90}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">150842</property>
   <property name="kdenlive:clipname">[8-29].jpg</property>
@@ -4639,7 +4639,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">222</property>
-  <property name="kdenlive:control_uuid">{323b394c-2e27-43e8-ad29-c86f6203a05c}</property>
+  <property name="kdenlive:control_uuid">{9a8622f4-612a-431a-9cba-1254c0c47434}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">291415</property>
   <property name="kdenlive:clipname">[8-31].jpg</property>
@@ -4660,7 +4660,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">223</property>
-  <property name="kdenlive:control_uuid">{119e23b2-d54e-48f4-9d43-87f8c0da3664}</property>
+  <property name="kdenlive:control_uuid">{56aceaed-92c9-425f-9138-800b1829f8f2}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">139768</property>
   <property name="kdenlive:clipname">[8-34].jpg</property>
@@ -4681,7 +4681,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">224</property>
-  <property name="kdenlive:control_uuid">{9ae9d0d4-763d-43db-9fb4-ac5dee01508c}</property>
+  <property name="kdenlive:control_uuid">{01a7828a-75a5-40fc-ad9c-b30bd3f2c025}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">145215</property>
   <property name="kdenlive:clipname">[8-35].jpg</property>
@@ -4702,7 +4702,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">225</property>
-  <property name="kdenlive:control_uuid">{5620a4dd-a2bd-44bd-aeba-3fef791188e9}</property>
+  <property name="kdenlive:control_uuid">{6c270781-b0c3-4a36-96fd-b0d4bbe3071a}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">103518</property>
   <property name="kdenlive:clipname">[8-38].jpg</property>
@@ -4723,7 +4723,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">226</property>
-  <property name="kdenlive:control_uuid">{a1849cfb-df47-428f-85d2-a0dfb432857a}</property>
+  <property name="kdenlive:control_uuid">{49ea8de0-4853-4cea-942f-e2e8b133cdd6}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">206761</property>
   <property name="kdenlive:clipname">[8-41].jpg</property>
@@ -4744,7 +4744,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">227</property>
-  <property name="kdenlive:control_uuid">{a969fbe4-8f40-4a58-ab77-7e810a36ad88}</property>
+  <property name="kdenlive:control_uuid">{59e7df23-780d-40fa-be15-7ce5ed04a4b9}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">167936</property>
   <property name="kdenlive:clipname">[8-44].jpg</property>
@@ -4765,7 +4765,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">228</property>
-  <property name="kdenlive:control_uuid">{aea7cb2e-646c-45dc-9a25-60682771187e}</property>
+  <property name="kdenlive:control_uuid">{1e1cd90a-4135-4eea-8c22-171a839821ae}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">139271</property>
   <property name="kdenlive:clipname">[8-46].jpg</property>
@@ -4786,7 +4786,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">229</property>
-  <property name="kdenlive:control_uuid">{a86126ca-8468-4ae9-a11d-1c8ff669ede7}</property>
+  <property name="kdenlive:control_uuid">{234cf0f5-232a-4dc6-a1ff-9b025909c2f6}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">75798</property>
   <property name="kdenlive:clipname">[8-49].jpg</property>
@@ -4807,7 +4807,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">230</property>
-  <property name="kdenlive:control_uuid">{0eaf0756-7155-4812-a576-2a880da61f69}</property>
+  <property name="kdenlive:control_uuid">{cc76f0f0-fe4e-4cc6-83fb-85ec431a24b9}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">85225</property>
   <property name="kdenlive:clipname">[8-50].jpg</property>
@@ -4828,7 +4828,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">231</property>
-  <property name="kdenlive:control_uuid">{11b122cf-3b98-48dc-b931-a7b20c5d8a6a}</property>
+  <property name="kdenlive:control_uuid">{2b8a1eea-0a29-4ada-be3d-a686f682c244}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">100302</property>
   <property name="kdenlive:clipname">[8-52].jpg</property>
@@ -4849,7 +4849,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">232</property>
-  <property name="kdenlive:control_uuid">{9ee560d6-edf5-4b09-bea4-e8f5183160fb}</property>
+  <property name="kdenlive:control_uuid">{57a0024e-87fc-4b35-91f0-ea8300a458fb}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">166053</property>
   <property name="kdenlive:clipname">[8-54].jpg</property>
@@ -4870,7 +4870,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">233</property>
-  <property name="kdenlive:control_uuid">{bef745b1-75e3-460e-b097-6139d571e3c8}</property>
+  <property name="kdenlive:control_uuid">{17fee586-6427-483c-b95a-536d9a6ff87a}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">152905</property>
   <property name="kdenlive:clipname">[8-55].jpg</property>
@@ -4891,7 +4891,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">234</property>
-  <property name="kdenlive:control_uuid">{b9595702-a34d-4cd8-aac8-b59104557c28}</property>
+  <property name="kdenlive:control_uuid">{54f78413-ff20-4790-803c-266c5ca7e1f3}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">102772</property>
   <property name="kdenlive:clipname">[8-57].jpg</property>
@@ -4912,7 +4912,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">235</property>
-  <property name="kdenlive:control_uuid">{8f6e3b08-d739-4ed0-824c-ac04b0867ec2}</property>
+  <property name="kdenlive:control_uuid">{aa48a84d-bf0b-4f21-ab7d-3282a7ff3b16}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">113792</property>
   <property name="kdenlive:clipname">[9-00].jpg</property>
@@ -4933,7 +4933,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">236</property>
-  <property name="kdenlive:control_uuid">{73b49422-0156-4857-aa7b-66b2d1e3d212}</property>
+  <property name="kdenlive:control_uuid">{f10d05ef-7946-4de2-be5c-b3fdace9d2ea}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">117104</property>
   <property name="kdenlive:clipname">[9-02].jpg</property>
@@ -4954,7 +4954,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">237</property>
-  <property name="kdenlive:control_uuid">{b5784bce-7d4e-49c5-821a-087a70b8f066}</property>
+  <property name="kdenlive:control_uuid">{13f0165b-53a6-4c14-aaa0-76dc3614f1f8}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">118747</property>
   <property name="kdenlive:clipname">[9-05].jpg</property>
@@ -4975,7 +4975,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">238</property>
-  <property name="kdenlive:control_uuid">{50d815d9-ed3e-4251-abb0-2d517ef03fab}</property>
+  <property name="kdenlive:control_uuid">{b5a8e647-809e-4df1-ad00-0f6434aebf9e}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">116996</property>
   <property name="kdenlive:clipname">[9-07].jpg</property>
@@ -4996,7 +4996,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">239</property>
-  <property name="kdenlive:control_uuid">{59b82020-ee6e-44ad-bd02-2d2f12ab03a3}</property>
+  <property name="kdenlive:control_uuid">{f943327e-b7e2-4a20-be36-12e8ee1a948a}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">121101</property>
   <property name="kdenlive:clipname">[9-09].jpg</property>
@@ -5017,7 +5017,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">240</property>
-  <property name="kdenlive:control_uuid">{a0fa214c-3d00-4b0c-b3f2-7742319e48e3}</property>
+  <property name="kdenlive:control_uuid">{781190ef-8dda-4362-aed5-7a063e6e0139}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">139737</property>
   <property name="kdenlive:clipname">[9-11].jpg</property>
@@ -5038,7 +5038,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">241</property>
-  <property name="kdenlive:control_uuid">{472d7c74-3f93-406e-adab-1d9200eb345d}</property>
+  <property name="kdenlive:control_uuid">{e9b613f1-c392-4134-a64f-86ae6f3aa5e3}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">142724</property>
   <property name="kdenlive:clipname">[9-13].jpg</property>
@@ -5059,7 +5059,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">242</property>
-  <property name="kdenlive:control_uuid">{2060cab5-6a32-40f3-aac4-76deef67a844}</property>
+  <property name="kdenlive:control_uuid">{f678c70e-9f41-4068-bf09-29a63e9445c1}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">165288</property>
   <property name="kdenlive:clipname">[9-16].jpg</property>
@@ -5080,7 +5080,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">243</property>
-  <property name="kdenlive:control_uuid">{0ade4bc3-34ea-4edc-a3b7-c809b1fa86ec}</property>
+  <property name="kdenlive:control_uuid">{79ebf17b-a515-4360-9b5d-f9fc5af582a1}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">180329</property>
   <property name="kdenlive:clipname">[9-19].jpg</property>
@@ -5101,7 +5101,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">244</property>
-  <property name="kdenlive:control_uuid">{cc258a95-42af-4ab0-a823-ddccdf10638c}</property>
+  <property name="kdenlive:control_uuid">{3a51d9ea-4b19-4c64-8a74-6b926f3b3d1d}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">169262</property>
   <property name="kdenlive:clipname">[9-22].jpg</property>
@@ -5122,7 +5122,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">245</property>
-  <property name="kdenlive:control_uuid">{d9ee3fc1-df99-4f3a-8981-9d2a5920671b}</property>
+  <property name="kdenlive:control_uuid">{6a41feb1-66f5-4b57-a432-cf217d020eed}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">175847</property>
   <property name="kdenlive:clipname">[9-25].jpg</property>
@@ -5143,7 +5143,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">246</property>
-  <property name="kdenlive:control_uuid">{4001196c-0b8a-4475-a845-d8f7ee8000e3}</property>
+  <property name="kdenlive:control_uuid">{12cf484f-cb97-4a31-9076-738e5b7b7a4b}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">167753</property>
   <property name="kdenlive:clipname">[9-26].jpg</property>
@@ -5164,7 +5164,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">247</property>
-  <property name="kdenlive:control_uuid">{b17a674a-5442-40bb-9949-f5fbbc273b30}</property>
+  <property name="kdenlive:control_uuid">{3bb0ae4c-7764-43ba-ae33-a396e2801a8b}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">168120</property>
   <property name="kdenlive:clipname">[9-28].jpg</property>
@@ -5185,7 +5185,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">248</property>
-  <property name="kdenlive:control_uuid">{3021dcaa-606f-46fd-a85b-40ef48fb5b81}</property>
+  <property name="kdenlive:control_uuid">{993d7d89-3d2f-4fb5-8503-a4cf99ae0985}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">172994</property>
   <property name="kdenlive:clipname">[9-31].jpg</property>
@@ -5206,7 +5206,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">249</property>
-  <property name="kdenlive:control_uuid">{16b14397-1f9b-4096-bb20-2b04d15018e0}</property>
+  <property name="kdenlive:control_uuid">{cd9cf5cd-d631-4768-ae96-aa56a41da709}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">75459</property>
   <property name="kdenlive:clipname">[9-33].jpg</property>
@@ -5227,7 +5227,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">250</property>
-  <property name="kdenlive:control_uuid">{ff0d54e0-0772-41d1-8876-dedf12fb4261}</property>
+  <property name="kdenlive:control_uuid">{5590df43-64c7-4ab4-bd4f-a09738b44685}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">80264</property>
   <property name="kdenlive:clipname">[9-35].jpg</property>
@@ -5248,7 +5248,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">251</property>
-  <property name="kdenlive:control_uuid">{1cc86797-c1a1-4c53-b7a8-42e60605bbf9}</property>
+  <property name="kdenlive:control_uuid">{53d54ec4-5f1b-472f-879b-8f785bd33912}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">96685</property>
   <property name="kdenlive:clipname">[9-36].jpg</property>
@@ -5269,7 +5269,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">252</property>
-  <property name="kdenlive:control_uuid">{3f5c44c5-6622-4260-a1d3-d82cda94b946}</property>
+  <property name="kdenlive:control_uuid">{ff6fd900-9efc-49c2-bc6b-905b338642f6}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">98303</property>
   <property name="kdenlive:clipname">[9-38].jpg</property>
@@ -5290,7 +5290,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">253</property>
-  <property name="kdenlive:control_uuid">{69ff3122-ddcc-4fce-9c02-c555b16afa92}</property>
+  <property name="kdenlive:control_uuid">{bd6868d8-aaab-47b2-aa21-0246240f95c5}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">112184</property>
   <property name="kdenlive:clipname">[9-42].jpg</property>
@@ -5311,7 +5311,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">254</property>
-  <property name="kdenlive:control_uuid">{e4b6f94d-ca86-4591-ab06-7b154f18287c}</property>
+  <property name="kdenlive:control_uuid">{dd02e7ca-3e96-4efd-a5d9-e92759f91fbc}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">117593</property>
   <property name="kdenlive:clipname">[9-44].jpg</property>
@@ -5332,7 +5332,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">255</property>
-  <property name="kdenlive:control_uuid">{20f585fb-c748-4a0c-bd1f-d2cd627318cf}</property>
+  <property name="kdenlive:control_uuid">{eab2299e-809a-435d-955d-783444e4b3f0}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">54808</property>
   <property name="kdenlive:clipname">[9-47].jpg</property>
@@ -5353,7 +5353,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">256</property>
-  <property name="kdenlive:control_uuid">{84ccade1-86fe-4980-8d3a-21cde05ccd81}</property>
+  <property name="kdenlive:control_uuid">{fc5d669c-fc47-4f5a-9b4b-2fff153e76a7}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">66287</property>
   <property name="kdenlive:clipname">[9-49].jpg</property>
@@ -5374,7 +5374,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">257</property>
-  <property name="kdenlive:control_uuid">{6d8ecfb9-39d6-40ad-9d1c-502e6a5224c7}</property>
+  <property name="kdenlive:control_uuid">{771772d3-1a48-4327-a53b-3ffb2e06538d}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">330734</property>
   <property name="kdenlive:clipname">[9-51].jpg</property>
@@ -5395,7 +5395,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">258</property>
-  <property name="kdenlive:control_uuid">{0224c710-26c1-4416-ac0c-36ad7ee9505f}</property>
+  <property name="kdenlive:control_uuid">{7a72d828-eddc-4c39-9f62-4dd0f81a05f9}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">333694</property>
   <property name="kdenlive:clipname">[9-53].jpg</property>
@@ -5416,7 +5416,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">259</property>
-  <property name="kdenlive:control_uuid">{f894bcfb-a40e-4e0c-ad09-2557c7ad2ad7}</property>
+  <property name="kdenlive:control_uuid">{77490120-62f3-4a4b-8cd2-74a32395270a}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">169272</property>
   <property name="kdenlive:clipname">[9-55].jpg</property>
@@ -5437,7 +5437,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">260</property>
-  <property name="kdenlive:control_uuid">{eb4df4ed-ec9c-4c36-bec5-1fbe5c932da1}</property>
+  <property name="kdenlive:control_uuid">{b4744329-a3f4-46d2-9630-2a3264b49e4d}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">172096</property>
   <property name="kdenlive:clipname">[9-58].jpg</property>
@@ -5458,7 +5458,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">261</property>
-  <property name="kdenlive:control_uuid">{14d6e3c2-800e-47ef-90e5-a538cef3ea21}</property>
+  <property name="kdenlive:control_uuid">{aba3fe6d-4ff8-4c29-a645-d989b8fdde15}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">171124</property>
   <property name="kdenlive:clipname">[9-59].jpg</property>
@@ -5479,7 +5479,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">262</property>
-  <property name="kdenlive:control_uuid">{79feaed6-5602-41eb-9180-b07a77aa73f1}</property>
+  <property name="kdenlive:control_uuid">{277dd46d-13ac-45d7-8357-1267a833bb94}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">205751</property>
   <property name="kdenlive:clipname">[10-01].jpg</property>
@@ -5500,7 +5500,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">263</property>
-  <property name="kdenlive:control_uuid">{551e74fa-e932-4860-abe3-d6e5cb85629c}</property>
+  <property name="kdenlive:control_uuid">{01e22d13-a482-4bac-9cd4-2247bb12681a}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">143307</property>
   <property name="kdenlive:clipname">[10-04].jpg</property>
@@ -5521,7 +5521,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">264</property>
-  <property name="kdenlive:control_uuid">{f7b64be5-3ca2-4a6f-9a6d-a509ab760ecb}</property>
+  <property name="kdenlive:control_uuid">{c04479e4-1f11-47b1-9729-0f50e3dabdf6}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">152238</property>
   <property name="kdenlive:clipname">[10-05].jpg</property>
@@ -5542,7 +5542,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">265</property>
-  <property name="kdenlive:control_uuid">{8ca20097-2f3e-4e40-bfaf-8b82da636741}</property>
+  <property name="kdenlive:control_uuid">{90f7b2dd-cbd4-4f0a-9c42-548af4cdce59}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">158368</property>
   <property name="kdenlive:clipname">[10-06].jpg</property>
@@ -5563,7 +5563,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">266</property>
-  <property name="kdenlive:control_uuid">{cfc1439b-949e-472e-aebc-4830ab2f18f9}</property>
+  <property name="kdenlive:control_uuid">{12c76424-389a-4767-a98e-f34e6b64afef}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">189186</property>
   <property name="kdenlive:clipname">[10-07].jpg</property>
@@ -5584,7 +5584,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">267</property>
-  <property name="kdenlive:control_uuid">{3ce816e4-5797-46e8-904d-e2c85b28efd7}</property>
+  <property name="kdenlive:control_uuid">{a1b41ebc-1cc1-4df5-9d76-716c269bff9d}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">105658</property>
   <property name="kdenlive:clipname">[10-10].jpg</property>
@@ -5605,7 +5605,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">268</property>
-  <property name="kdenlive:control_uuid">{fbfa5bf6-b67a-4d99-b2b2-e353a8938871}</property>
+  <property name="kdenlive:control_uuid">{17475eb4-2323-4784-95b8-dd00fe7f9dfb}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">108386</property>
   <property name="kdenlive:clipname">[10-11].jpg</property>
@@ -5626,7 +5626,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">269</property>
-  <property name="kdenlive:control_uuid">{e982e2e7-5a8c-4632-94e6-afeb32eef013}</property>
+  <property name="kdenlive:control_uuid">{8381fb8d-d20a-4c1b-bc52-15e875762673}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">74240</property>
   <property name="kdenlive:clipname">[10-12].jpg</property>
@@ -5647,7 +5647,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">270</property>
-  <property name="kdenlive:control_uuid">{cebb123f-d3d2-4bd3-88f1-3d0b92c37b25}</property>
+  <property name="kdenlive:control_uuid">{a75d11ad-67b5-4a45-afe1-ffae183c7075}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">158009</property>
   <property name="kdenlive:clipname">[10-14].jpg</property>
@@ -5668,7 +5668,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">271</property>
-  <property name="kdenlive:control_uuid">{7b9a54c4-bff8-483d-a1b8-d7494b53ee25}</property>
+  <property name="kdenlive:control_uuid">{c69e4176-1e0b-4d65-bf63-1b756fd8eb5f}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">164662</property>
   <property name="kdenlive:clipname">[10-16].jpg</property>
@@ -5689,7 +5689,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">272</property>
-  <property name="kdenlive:control_uuid">{61b45053-b7ea-422e-88db-fb771cef8102}</property>
+  <property name="kdenlive:control_uuid">{f469aa37-be40-49b6-a668-038450761f7f}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">200933</property>
   <property name="kdenlive:clipname">[10-19].jpg</property>
@@ -5710,7 +5710,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">273</property>
-  <property name="kdenlive:control_uuid">{5047d329-4806-4f7d-8983-de0731380e9d}</property>
+  <property name="kdenlive:control_uuid">{c367a8de-9ee8-4fce-aa72-f722f60e12ac}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">215614</property>
   <property name="kdenlive:clipname">[10-21].jpg</property>
@@ -5731,7 +5731,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">274</property>
-  <property name="kdenlive:control_uuid">{9893b6b7-211f-44b4-a7e6-bc9fd79d686b}</property>
+  <property name="kdenlive:control_uuid">{ab63584f-3d36-4054-a1df-6288c63c235f}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">197626</property>
   <property name="kdenlive:clipname">[10-23].jpg</property>
@@ -5752,7 +5752,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">275</property>
-  <property name="kdenlive:control_uuid">{a11a5db0-239f-48b7-840e-51b9ace00292}</property>
+  <property name="kdenlive:control_uuid">{f101bbc0-00b9-4f9e-9cc6-8d02eae42eed}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">217921</property>
   <property name="kdenlive:clipname">[10-26].jpg</property>
@@ -5773,7 +5773,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">276</property>
-  <property name="kdenlive:control_uuid">{d9f3eb76-17dd-4702-b8fe-3cf593b09247}</property>
+  <property name="kdenlive:control_uuid">{6189f693-0d95-4c5f-982c-1f292803900a}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">216464</property>
   <property name="kdenlive:clipname">[10-27].jpg</property>
@@ -5794,7 +5794,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">277</property>
-  <property name="kdenlive:control_uuid">{4aa47d1d-5588-4a17-9076-615b9ced9283}</property>
+  <property name="kdenlive:control_uuid">{3e901a0d-bc9d-4cba-8597-10c040b798a0}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">161867</property>
   <property name="kdenlive:clipname">[10-29].jpg</property>
@@ -5815,7 +5815,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">278</property>
-  <property name="kdenlive:control_uuid">{03fc7121-be1f-4e6b-b28d-f77357c0dba6}</property>
+  <property name="kdenlive:control_uuid">{a4eb7e28-40b9-4d9f-80a8-aac6c7e564da}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">220659</property>
   <property name="kdenlive:clipname">[10-31].jpg</property>
@@ -5836,7 +5836,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">279</property>
-  <property name="kdenlive:control_uuid">{48e2ce20-3d6a-4b85-bb07-c8764c931aa3}</property>
+  <property name="kdenlive:control_uuid">{939148b8-05d5-4f2f-9a93-c248e779c54e}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">219436</property>
   <property name="kdenlive:clipname">[10-33].jpg</property>
@@ -5857,7 +5857,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">280</property>
-  <property name="kdenlive:control_uuid">{d9d1ace9-7f80-417d-8ca0-a62f55936c2c}</property>
+  <property name="kdenlive:control_uuid">{376f69c7-860b-40f7-aa12-801ce9f7a89c}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">227693</property>
   <property name="kdenlive:clipname">[10-34].jpg</property>
@@ -5878,7 +5878,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">281</property>
-  <property name="kdenlive:control_uuid">{bad8e444-ac0a-420c-8bb1-23f621699ca8}</property>
+  <property name="kdenlive:control_uuid">{584d6875-1580-4859-833a-c41ee6870f50}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">136418</property>
   <property name="kdenlive:clipname">[10-37].jpg</property>
@@ -5899,7 +5899,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">282</property>
-  <property name="kdenlive:control_uuid">{a53fe858-8069-4e43-8816-4331e05f9329}</property>
+  <property name="kdenlive:control_uuid">{f0a91b08-1b74-482e-b83d-61c4dc57a3c5}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">162499</property>
   <property name="kdenlive:clipname">[10-39].jpg</property>
@@ -5920,7 +5920,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">283</property>
-  <property name="kdenlive:control_uuid">{36980028-fa41-408a-a4fe-f69c3ecaec34}</property>
+  <property name="kdenlive:control_uuid">{80bab6c4-dcb8-42f4-bbc9-6161f46715f8}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">102897</property>
   <property name="kdenlive:clipname">[10-42].jpg</property>
@@ -5941,7 +5941,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">284</property>
-  <property name="kdenlive:control_uuid">{aae572ae-2f9c-4b36-ac0d-88ae9a35adf7}</property>
+  <property name="kdenlive:control_uuid">{cb425855-ded5-44e8-acdf-8bc72d4a634a}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">119690</property>
   <property name="kdenlive:clipname">[10-43].jpg</property>
@@ -5962,7 +5962,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">285</property>
-  <property name="kdenlive:control_uuid">{40183450-03ec-4742-be5f-0ecea7265698}</property>
+  <property name="kdenlive:control_uuid">{d9d56688-6249-4ea4-8d5c-d07346953246}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">117804</property>
   <property name="kdenlive:clipname">[10-46].jpg</property>
@@ -5983,7 +5983,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">286</property>
-  <property name="kdenlive:control_uuid">{94e82cf7-7dd4-4ffd-817a-222accfd4eb6}</property>
+  <property name="kdenlive:control_uuid">{0678eab5-90e8-4a16-8671-832a65424362}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">133854</property>
   <property name="kdenlive:clipname">[10-48].jpg</property>
@@ -6004,7 +6004,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">287</property>
-  <property name="kdenlive:control_uuid">{938c239e-c5c0-4880-8240-ac9ca54bd75e}</property>
+  <property name="kdenlive:control_uuid">{54b84898-e257-41d6-aaf1-610e559e67f2}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">156189</property>
   <property name="kdenlive:clipname">[10-50].jpg</property>
@@ -6025,7 +6025,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">288</property>
-  <property name="kdenlive:control_uuid">{a2d17257-047a-43c1-bf88-a32ba2af7912}</property>
+  <property name="kdenlive:control_uuid">{30c11d93-bac0-4951-922d-0de253628407}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">174937</property>
   <property name="kdenlive:clipname">[10-54].jpg</property>
@@ -6046,7 +6046,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">289</property>
-  <property name="kdenlive:control_uuid">{029fa234-e3f3-40c1-837c-d0c57c4a8c97}</property>
+  <property name="kdenlive:control_uuid">{431e6dd2-4f1b-4188-915a-5e2d10a9914a}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">191305</property>
   <property name="kdenlive:clipname">[10-57].jpg</property>
@@ -6067,7 +6067,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">290</property>
-  <property name="kdenlive:control_uuid">{5c824d11-1b4c-4cf1-af11-76f260f9ec34}</property>
+  <property name="kdenlive:control_uuid">{a8c082f1-03e5-43fa-a847-ce93d3d58152}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">143259</property>
   <property name="kdenlive:clipname">[11-00].jpg</property>
@@ -6088,7 +6088,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">291</property>
-  <property name="kdenlive:control_uuid">{1352a8e7-3535-4bd2-851b-afaac808f5d1}</property>
+  <property name="kdenlive:control_uuid">{69f68daf-b710-4711-a960-4029ee099333}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">134761</property>
   <property name="kdenlive:clipname">[11-02].jpg</property>
@@ -6109,7 +6109,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">292</property>
-  <property name="kdenlive:control_uuid">{936d32e0-466a-4040-beae-887fa3b8af27}</property>
+  <property name="kdenlive:control_uuid">{bf96f795-1884-486f-a9cf-dd4cb414a7ea}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">185041</property>
   <property name="kdenlive:clipname">[11-05].jpg</property>
@@ -6130,7 +6130,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">293</property>
-  <property name="kdenlive:control_uuid">{467a54d9-d7b1-4715-922a-7701cb61d351}</property>
+  <property name="kdenlive:control_uuid">{814392e3-5616-4a43-bace-8b0200eec635}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">184913</property>
   <property name="kdenlive:clipname">[11-07].jpg</property>
@@ -7030,7 +7030,7 @@
   <property name="xml">was here</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">294</property>
-  <property name="kdenlive:control_uuid">{135b4f4f-d9e6-42b0-8ac1-7796fb24bfd5}</property>
+  <property name="kdenlive:control_uuid">{81218cc3-4d52-437a-afce-42ebca0054e1}</property>
   <property name="kdenlive:clip_type">2</property>
   <property name="kdenlive:file_size">935300</property>
   <property name="kdenlive:clipname">logo.png</property>
@@ -7044,7 +7044,7 @@
     <property name="kdenlive_id">qtblend</property>
     <property name="compositing">0</property>
     <property name="distort">0</property>
-    <property name="rect">00:00:00.000=2407 1287 102 102 1.000000</property>
+    <property name="rect">00:00:00.000=2330 1200 100 100 1.000000</property>
     <property name="rotation">00:00:00.000=0</property>
     <property name="kdenlive:collapsed">0</property>
    </filter>
@@ -7060,15 +7060,15 @@
   <track hide="audio" producer="playlist4"/>
   <track hide="audio" producer="playlist5"/>
  </tractor>
- <tractor id="{eef083b5-2345-461e-9a56-77903e332227}" in="00:00:00.000" out="00:11:09.000">
-  <property name="kdenlive:uuid">{eef083b5-2345-461e-9a56-77903e332227}</property>
+ <tractor id="{c718d29a-e184-44d6-845c-6037754c5bb8}" in="00:00:00.000" out="00:11:09.000">
+  <property name="kdenlive:uuid">{c718d29a-e184-44d6-845c-6037754c5bb8}</property>
   <property name="kdenlive:clipname">Sequence 1</property>
   <property name="kdenlive:sequenceproperties.hasAudio">1</property>
   <property name="kdenlive:sequenceproperties.hasVideo">1</property>
   <property name="kdenlive:sequenceproperties.activeTrack">1</property>
   <property name="kdenlive:sequenceproperties.tracksCount">3</property>
-  <property name="kdenlive:sequenceproperties.documentuuid">{eef083b5-2345-461e-9a56-77903e332227}</property>
-  <property name="kdenlive:control_uuid">{eef083b5-2345-461e-9a56-77903e332227}</property>
+  <property name="kdenlive:sequenceproperties.documentuuid">{c718d29a-e184-44d6-845c-6037754c5bb8}</property>
+  <property name="kdenlive:control_uuid">{c718d29a-e184-44d6-845c-6037754c5bb8}</property>
   <property name="kdenlive:duration">00:11:09.033</property>
   <property name="kdenlive:maxduration">20071</property>
   <property name="kdenlive:producer_type">17</property>
@@ -7156,7 +7156,7 @@
   <property name="astream">0</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="kdenlive:id">4</property>
-  <property name="kdenlive:control_uuid">{7c9707d1-aac7-4dc0-800a-e2e0d2711c0e}</property>
+  <property name="kdenlive:control_uuid">{cd5118ab-d181-4450-b2e9-e27b938a1f3f}</property>
   <property name="kdenlive:clip_type">1</property>
   <property name="kdenlive:file_size">21410418</property>
   <property name="kdenlive:clipname">full.mp3</property>
@@ -7165,7 +7165,7 @@
   <property name="kdenlive:folder.-1.2">Sequences</property>
   <property name="kdenlive:sequenceFolder">2</property>
   <property name="kdenlive:docproperties.audioChannels">2</property>
-  <property name="kdenlive:docproperties.documentid">1788631568235</property>
+  <property name="kdenlive:docproperties.documentid">1788671159987</property>
   <property name="kdenlive:docproperties.enableTimelineZone">0</property>
   <property name="kdenlive:docproperties.enableexternalproxy">0</property>
   <property name="kdenlive:docproperties.enableproxy">0</property>
@@ -7230,11 +7230,11 @@
   <property name="kdenlive:docproperties.proxyparams"/>
   <property name="kdenlive:docproperties.proxyresize">640</property>
   <property name="kdenlive:docproperties.seekOffset">30000</property>
-  <property name="kdenlive:docproperties.sessionid">{46b894f3-71f4-4d6c-8a5b-50ab77f8bf55}</property>
-  <property name="kdenlive:docproperties.uuid">{eef083b5-2345-461e-9a56-77903e332227}</property>
+  <property name="kdenlive:docproperties.sessionid">{8278134d-c111-4d14-bfb2-cb9014dc565e}</property>
+  <property name="kdenlive:docproperties.uuid">{c718d29a-e184-44d6-845c-6037754c5bb8}</property>
   <property name="kdenlive:docproperties.version">1.1</property>
-  <property name="kdenlive:docproperties.opensequences">{eef083b5-2345-461e-9a56-77903e332227}</property>
-  <property name="kdenlive:docproperties.activetimeline">{eef083b5-2345-461e-9a56-77903e332227}</property>
+  <property name="kdenlive:docproperties.opensequences">{c718d29a-e184-44d6-845c-6037754c5bb8}</property>
+  <property name="kdenlive:docproperties.activetimeline">{c718d29a-e184-44d6-845c-6037754c5bb8}</property>
   <property name="kdenlive:docproperties.binsort">0</property>
   <property name="kdenlive:documentnotes"/>
   <property name="kdenlive:documentnotesversion">2</property>
@@ -7261,7 +7261,7 @@
   <property name="kdenlive:docproperties.rendertwopass">0</property>
   <property name="kdenlive:docproperties.renderurl">14-the-psychology-of-being-ugly.mp4</property>
   <property name="xml_retain">1</property>
-  <entry in="00:00:00.000" out="00:00:00.000" producer="{eef083b5-2345-461e-9a56-77903e332227}"/>
+  <entry in="00:00:00.000" out="00:00:00.000" producer="{c718d29a-e184-44d6-845c-6037754c5bb8}"/>
   <entry in="00:00:00.000" out="00:11:09.000" producer="chain1"/>
   <entry in="00:00:00.000" out="00:00:02.967" producer="producer1"/>
   <entry in="00:00:00.000" out="00:00:01.733" producer="producer2"/>
@@ -7556,6 +7556,6 @@
  </playlist>
  <tractor id="tractor3" in="00:00:00.000" out="00:11:09.000">
   <property name="kdenlive:projectTractor">1</property>
-  <track in="00:00:00.000" out="00:11:09.000" producer="{eef083b5-2345-461e-9a56-77903e332227}"/>
+  <track in="00:00:00.000" out="00:11:09.000" producer="{c718d29a-e184-44d6-845c-6037754c5bb8}"/>
  </tractor>
 </mlt>

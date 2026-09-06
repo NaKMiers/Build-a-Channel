@@ -17,7 +17,9 @@ projects/<n>-<title-slug>/
     part-1.mp3, part-2.mp3    multi-part recording, in read order.
     full.mp3                  the parts combined. Written by `transcript`.
   characters/                 NAME.jpeg reference sheets. You generate these.
-  edit/                       <n>-<slug>.kdenlive, the timeline. Written by `edit`.
+  edit/                       the assembled timeline. Written by `edit`, always both.
+    kdenlive/<n>-<slug>.kdenlive
+    capcut/<n>-<slug>/        a CapCut draft, plus one installer per machine.
   outputs/                    metadata.md, thumbnail-N.jpg, and the accepted thumbnail. You generate these.
   prompts/
     character-prompts.md      Written by `cast`.
@@ -38,10 +40,12 @@ Rules:
 - **Root level holds the script.** Subfolders hold prompts, generated media, and published
   packaging.
 - **`outputs/` is plural.** Not `output/`. So is `audios/`.
-- **`edit/` holds the Kdenlive project**, written by `edit` via `tools/kdenlive-build.py`,
-  plus whatever Kdenlive puts beside it. It is working material, not packaging, which is
-  why it is not in `outputs/`. It is the one artifact here that is not reproducible once
-  it has been opened and edited, so never rebuild over it.
+- **`edit/` holds the assembled timeline**, one subfolder per editor: `kdenlive/` and
+  `capcut/`. Never a sibling folder per editor, they are the same edit for the same video.
+  Both are written together by `edit`, and both cut on the same frames because both come
+  from `tools/cuts.py`. This is working material, not packaging, which is why it is not in
+  `outputs/`. It is the one artifact here that stops being reproducible the moment it is
+  opened and edited, so never rebuild over it.
 - **`audios/` holds the recorded voiceover** read from `script_<short_slug>.md`, and is the
   default place `transcript` looks for input. Multi-part recordings live here in read order,
   for example `part-1.mp3` then `part-2.mp3`. The audio itself is gitignored, so the folder

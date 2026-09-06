@@ -1,6 +1,6 @@
 ---
 name: edit
-description: Build the Kdenlive project for a TossExplains video, with every scene image already cut onto the timeline at its transcript timestamp and the narration on its own track. Use when the user says "edit", "kdenlive", "build the timeline", "assemble the video", or "join the scenes".
+description: Build the editing project for a TossExplains video, for Kdenlive and for CapCut, with every scene image already cut onto the timeline at its transcript timestamp and the narration on its own track. Use when the user says "edit", "kdenlive", "capcut", "build the timeline", "assemble the video", or "join the scenes".
 ---
 
 # Edit (Claude wrapper)

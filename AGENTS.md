@@ -48,7 +48,9 @@ Each pipeline skill validates its inputs, writes its artifact, and names the nex
 Assembly runs after the pipeline, once the scenes exist:
 
 ```
-/edit           edit/<n>-<slug>.kdenlive              (needs scenes + transcript + audio)
+/edit           edit/kdenlive/<n>-<slug>.kdenlive     Kdenlive, this machine
+                edit/capcut/<n>-<slug>/               CapCut, Mac and Windows
+                (always both; needs transcript + audio + complete scenes)
 ```
 
 Scene-image file management is separate from the content pipeline:
@@ -89,7 +91,7 @@ When the user's request matches a skill, invoke that skill instead of answering 
 - Thumbnail concepts -> `/thumbnail`
 - Captions, subtitles, SRT files, "translate the transcript" -> `/captions`
 - "Is this project correct", validate, "what is missing" -> `/check`
-- Build the Kdenlive timeline, "join the scenes", "assemble the video" -> `/edit`
+- Build the timeline for Kdenlive or CapCut, "join the scenes", "assemble the video" -> `/edit`
 - Manage scene image timestamps, renaming, moves, or verification -> `/scene-polish`
 - Analyze a competitor video, extract its frames, "phan tich video" -> `/video-swipe`
 - Pull from YouTube, upload to YouTube, channel analytics, competitor research -> `/youtube`
@@ -137,15 +139,23 @@ diffs all 25 files against `en.srt` block by block and scans for empty blocks, r
 overlaps, em dashes, and untranslated Latin runs inside non-Latin scripts. It shares
 `tools/tsfmt.py` with the audio tools for the sentence-boundary test. No dependencies.
 
-`tools/kdenlive-build.py` serves the `edit` skill and writes the Kdenlive project that
-joins the scene images to the narration. The scene file names carry only the truncated
-`[M:SS]`, so it uses them purely as a join key back into `transcribes/transcript.md` and
-cuts on that line's real `[MM:SS.SSS]`. Each image is held until the next cue, and the
-last one runs out the audio, so the video and audio tracks end together. It shares
-`tools/tsfmt.py` with the transcript tools for that truncation, and `tools/mp3frames.py`
-for the narration length, so it needs no ffmpeg for an mp3 and no Pillow at all. It
-refuses to overwrite an existing project file, because hand edits made in Kdenlive cannot
-be rebuilt from the transcript.
+`tools/cuts.py` decides when every scene image appears and for how long, and is the only
+place that knows it. The scene file names carry just the truncated `[M:SS]`, so it pairs
+them by position against `prompts/image-prompts.md` and cuts on the matching
+`transcribes/transcript.md` line's real `[MM:SS.SSS]`. It also handles a prompt stamp that
+drifted from `to_mss`, cues sharing a whole second in a legacy transcript, and cues with no
+image, which it refuses to build past. It shares `tools/tsfmt.py` for the truncation and
+`tools/mp3frames.py` for the narration length, so no ffmpeg for an mp3 and no Pillow.
+
+`tools/kdenlive-build.py` and `tools/capcut-build.py` serve the `edit` skill and are both
+thin exporters over that one plan, so the two timelines cut on identical frames. The
+Kdenlive one writes MLT XML. The CapCut one writes a draft folder, cloning every object
+from a template extracted from a real CapCut draft, since the format is undocumented; it
+writes placeholders where absolute paths would
+go, and ships an installer that fills them in from its own location, so one draft opens on
+any machine that has the repo. Both refuse
+to overwrite an existing project, because hand edits made in an editor cannot be rebuilt
+from the transcript.
 
 `tools/video-frames.py` and `tools/youtube-verify.py` serve the `video-swipe` research
 skill and are the only tools here that do need ffmpeg. `video-frames.py` runs in three

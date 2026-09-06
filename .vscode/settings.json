@@ -1,0 +1,10 @@
+{
+  "// edit/": "Generated timelines. Formatting them corrupts them: an XML formatter moves a <property> value onto its own line, and MLT then reads the scene path with the indentation attached, so every clip goes missing. They are read-only here because nothing should hand-edit them; rebuild with /edit instead.",
+  "files.readonlyInclude": {
+    "**/edit/kdenlive/*.kdenlive": true,
+    "**/edit/capcut/**/*.json": true
+  },
+  "files.associations": {
+    "*.kdenlive": "plaintext"
+  }
+}
