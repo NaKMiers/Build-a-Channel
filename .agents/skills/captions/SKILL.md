@@ -1,6 +1,6 @@
 ---
 name: captions
-description: Build word-accurate SRT subtitle files for a TossExplains video from the forced-aligned words.json, then translate them into up to 25 languages. Writes one .srt per language to outputs/captions/. Runs after /transcript. Use when the user says "captions", "subtitles", "srt", "translate the transcript", or names a language to subtitle into.
+description: Build word-accurate SRT subtitle files for a TossExplains video from the forced-aligned words.json, then translate them into up to 25 languages. Writes one .srt per language, named by full language name (English.srt, Vietnamese.srt, ...), to outputs/captions/. Runs after /transcript. Use when the user says "captions", "subtitles", "srt", "translate the transcript", or names a language to subtitle into.
 allowed-tools:
   - Bash
   - Read
@@ -70,9 +70,12 @@ Legacy projects 1 through 5 may use `transcribes/transcript.txt`. Pass whichever
 
 ## Languages
 
-25 files, one per language. The stem is the BCP-47 tag YouTube expects when the file is
-uploaded as a caption track, so `outputs/captions/vi.srt` uploads as Vietnamese with no
-renaming.
+25 files, one per language. The stem is the full language name (`English.srt`,
+`Vietnamese.srt`, `Chinese Simplified.srt`, ...), so a human browsing the folder does not
+have to decode a code. The code column below is still what `tools/captions-srt.py` uses
+internally, and it is the BCP-47 tag to pick in the YouTube Studio UI when a track is
+uploaded, since Studio has the uploader choose the language explicitly regardless of local
+filename.
 
 | Code      | Language            | Code | Language   | Code | Language   |
 | --------- | ------------------- | ---- | ---------- | ---- | ---------- |
@@ -95,15 +98,15 @@ subset in this turn. English is always included, whatever subset is named.
 ```
 projects/<n>-<slug>/outputs/captions/
   blocks.json      the shared timing spine, English text plus start and end in ms
-  en.srt           built from words.json
-  ar.srt  bn.srt  zh-Hans.srt  ...  vi.srt
+  English.srt      built from words.json
+  Arabic.srt  Bangla.srt  Chinese Simplified.srt  ...  Vietnamese.srt
 ```
 
 `blocks.json` is a real artifact, not scratch. It is what makes every language file
 identical in timing, and it is what lets a single language be re-translated later without
 rebuilding or re-timing anything.
 
-## Step 1 - Build en.srt
+## Step 1 - Build English.srt
 
 ```bash
 P="projects/<n>-<slug>"
@@ -113,7 +116,7 @@ python3 tools/captions-srt.py build \
   --out        "$P"/outputs/captions
 ```
 
-This writes `en.srt` and `blocks.json`, and prints the block count, the mean, minimum and
+This writes `English.srt` and `blocks.json`, and prints the block count, the mean, minimum and
 maximum duration, the character statistics, and how many blocks the caps had to split
 mid-sentence.
 
@@ -152,13 +155,13 @@ Only pass the tuning flags (`--max-dur`, `--min-dur`, `--sentence-min`, `--gap`,
 `--max-chars`) if the user asks for longer or shorter subtitles. The defaults are
 calibrated against this channel's pace; read `references/memory.md` before changing one.
 
-## Step 2 - Read en.srt before translating
+## Step 2 - Read English.srt before translating
 
 Open the file. Read the first three blocks, three from the middle, and the last two.
 Confirm each one reads as a unit somebody could translate on its own. This is the only
 stage where a bad cut is cheap to fix. Every later stage multiplies it by 24.
 
-If the cut is wrong, re-run Step 1 with adjusted flags. Do not hand-edit `en.srt`, and
+If the cut is wrong, re-run Step 1 with adjusted flags. Do not hand-edit `English.srt`, and
 never hand-edit `blocks.json`. They must stay derived from the audio.
 
 ## Step 3 - Translate, one subagent per language
@@ -216,7 +219,7 @@ artifacts; only the `.srt` belongs under `outputs/captions/`.
 
 Concurrent agents are safe here: they read one shared file and each writes a different one.
 
-**English is never sent to a translator.** `en.srt` is already written.
+**English is never sent to a translator.** `English.srt` is already written.
 
 If an agent fails or returns a count mismatch, re-spawn that one language. A failure costs
 one language, never the run.
@@ -257,7 +260,7 @@ python3 tools/captions-srt.py assemble \
 ```
 
 The translated text is poured into the English timing spine, so the sequence numbers and
-timestamps are identical to `en.srt` by construction. The stage refuses a translation whose
+timestamps are identical to `English.srt` by construction. The stage refuses a translation whose
 count does not match the block count, an empty string, or an em dash. On a count mismatch,
 re-translate that language. Never pad, trim, merge, or split to make the count fit.
 
@@ -270,15 +273,15 @@ reads the files on disk.
 python3 tools/captions-srt.py check --dir "$P"/outputs/captions
 ```
 
-Every file is compared against `en.srt` for block count, sequence numbers and timestamps,
+Every file is compared against `English.srt` for block count, sequence numbers and timestamps,
 and scanned for empty blocks, verbatim repeats of the previous block, overlaps, zero-length
 blocks, and em dashes. Files in a non-Latin script are also scanned for runs of Latin
 letters, which is the one defect that passes every structural check: Japanese block 72 once
 shipped as `ロダガー people と長年暮らし` with an English word inside it, and count, timing,
 emptiness and duplicate checks all read clean.
 
-A count check alone does not catch content drift. `vi.srt` once drifted one block against
-`en.srt` for the first half of a file, compounding until a block carried the video's closing
+A count check alone does not catch content drift. `Vietnamese.srt` once drifted one block against
+`English.srt` for the first half of a file, compounding until a block carried the video's closing
 line, and the block count matched perfectly the whole way. The check diffs block by block
 for exactly that reason.
 
@@ -305,7 +308,7 @@ Then:
   cannot cut a block, and its milliseconds do not change that.
 - Never hand-write or hand-edit an `.srt` or `blocks.json`. Run the tool.
 - Never compute SRT timestamps by hand. Both defects this skill guards against, the
-  breached duration cap and the drifted `vi.srt`, were hand arithmetic.
+  breached duration cap and the drifted `Vietnamese.srt`, were hand arithmetic.
 - Never translate a language without assembling it through `blocks.json`. Timings must be
   identical by construction, not by luck.
 - Never ship a subset of the 25 languages unless the user named the subset this turn.

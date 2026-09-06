@@ -132,10 +132,10 @@ API keys live in a gitignored `.env`.
 `tools/captions-srt.py` serves the `captions` skill and reads the same
 `transcribes/words.json` that `audio-to-timestamps.py` saves, so subtitles land on each
 word's true onset rather than on the start of whichever transcript line contains it. It runs in three
-stages: `build` cuts `en.srt` plus a `blocks.json` timing spine from the word timings and
-refuses a `words.json` that does not match the transcript; `assemble` pours one language's
-translation into that spine, so every file is frame-identical by construction; `check`
-diffs all 25 files against `en.srt` block by block and scans for empty blocks, repeats,
+stages: `build` cuts `English.srt` plus a `blocks.json` timing spine from the word timings
+and refuses a `words.json` that does not match the transcript; `assemble` pours one
+language's translation into that spine, so every file is frame-identical by construction;
+`check` diffs all 25 files against `English.srt` block by block and scans for empty blocks, repeats,
 overlaps, em dashes, and untranslated Latin runs inside non-Latin scripts. It shares
 `tools/tsfmt.py` with the audio tools for the sentence-boundary test. No dependencies.
 

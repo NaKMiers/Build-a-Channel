@@ -1,0 +1,707 @@
+1
+00:00:00,160 --> 00:00:03,649
+O mês em que você tem menos dinheiro é o mês em que você lida pior com isso.
+
+2
+00:00:03,800 --> 00:00:06,820
+Você atrasa o pagamento. Você esquece o compromisso.
+
+3
+00:00:06,900 --> 00:00:09,260
+Você compra a coisa que não pode pagar.
+
+4
+00:00:09,340 --> 00:00:12,710
+E você já tem a explicação pronta. Você é ruim com dinheiro.
+
+5
+00:00:12,790 --> 00:00:17,960
+Indisciplinado. Imediatista. Mas quando pesquisadores mediram isso, a história se inverteu.
+
+6
+00:00:18,040 --> 00:00:20,980
+Estar com pouco dinheiro não revela uma mente pior.
+
+7
+00:00:21,060 --> 00:00:25,630
+Ela produz uma, ao tomar um recurso que os pesquisadores chamam de capacidade mental,
+
+8
+00:00:25,760 --> 00:00:29,860
+que é a capacidade mental que sobra para tudo o mais.
+
+9
+00:00:29,940 --> 00:00:34,280
+Nos próximos minutos você vai ver essa capacidade medida nas mesmas pessoas duas vezes,
+
+10
+00:00:34,500 --> 00:00:38,180
+com alguns meses de diferença, e vai ver exatamente para onde ela foi.
+
+11
+00:00:38,380 --> 00:00:41,880
+Comece num shopping em Nova Jersey. Anandi Mani,
+
+12
+00:00:42,240 --> 00:00:47,000
+Sendhil Mullainathan, Eldar Shafir e Jiaying Zhao
+
+13
+00:00:47,200 --> 00:00:51,700
+pararam compradores comuns e pediram que imaginassem um pequeno problema.
+
+14
+00:00:52,260 --> 00:00:57,080
+Seu carro precisa de um reparo. Para metade das pessoas, o reparo custa 150 dólares.
+
+15
+00:00:57,320 --> 00:01:01,080
+Para a outra metade, o mesmo reparo custa 1500.
+
+16
+00:01:01,360 --> 00:01:05,880
+Guarde isso na cabeça, disseram eles. Então, antes de perguntar a alguém o que fariam a respeito,
+
+17
+00:01:05,960 --> 00:01:08,320
+aplicaram em todos um teste de raciocínio padrão.
+
+18
+00:01:08,400 --> 00:01:11,920
+Formas e padrões. Nada a ver com carros ou dinheiro.
+
+19
+00:01:12,000 --> 00:01:16,950
+Quando o reparo era barato, os compradores mais ricos e os mais pobres tiraram notas parecidas.
+
+20
+00:01:17,200 --> 00:01:21,610
+Quando o reparo era caro, os compradores mais ricos tiraram notas parecidas com as de antes.
+
+21
+00:01:21,690 --> 00:01:26,120
+Os compradores mais pobres despencaram. Não tinha acontecido nada de verdade com ninguém.
+
+22
+00:01:26,200 --> 00:01:30,000
+Nenhum dinheiro saiu de nenhuma conta. Era um carro imaginário.
+
+23
+00:01:30,080 --> 00:01:33,300
+Mas para os compradores que não conseguiriam achar 1500 dólares,
+
+24
+00:01:33,380 --> 00:01:38,140
+a pergunta não tinha nada de imaginária, e uma parte da mente foi trabalhar nisso e não
+
+25
+00:01:38,220 --> 00:01:43,920
+tinha voltado a tempo de quando as formas apareceram. O teste não media o quanto alguém era inteligente.
+
+26
+00:01:44,180 --> 00:01:48,320
+Ele media o que sobrava. É isso que significa capacidade mental.
+
+27
+00:01:48,540 --> 00:01:51,020
+Não inteligência. Capacidade.
+
+28
+00:01:51,660 --> 00:01:56,340
+A parte da sua mente que está livre agora, neste segundo, para segurar um plano,
+
+29
+00:01:56,540 --> 00:02:01,770
+resistir a um impulso, perceber uma data e acompanhar uma frase até o fim.
+
+30
+00:02:02,220 --> 00:02:06,680
+É uma quantidade fixa, e tudo que roda por baixo está gastando ela.
+
+31
+00:02:06,760 --> 00:02:09,520
+Uma música presa na cabeça gasta um pouco.
+
+32
+00:02:09,600 --> 00:02:12,100
+Um número que você não consegue cobrir gasta muito,
+
+33
+00:02:12,340 --> 00:02:17,120
+porque sua mente não é feita para arquivar um problema de sobrevivência não resolvido e seguir em frente.
+
+34
+00:02:17,660 --> 00:02:20,760
+Ela continua trabalhando nisso. Em silêncio.
+
+35
+00:02:21,470 --> 00:02:26,520
+Sem pedir sua permissão. O estudo do shopping provou que o efeito existia.
+
+36
+00:02:26,829 --> 00:02:29,940
+O próximo provou que não tinha a ver com as pessoas.
+
+37
+00:02:30,560 --> 00:02:35,380
+Os mesmos pesquisadores foram a Tamil Nadu, no sul da Índia, e encontraram produtores de cana-de-açúcar,
+
+38
+00:02:35,460 --> 00:02:39,240
+que recebem uma vez por ano. No mês antes da colheita
+
+39
+00:02:39,460 --> 00:02:45,120
+eles são realmente pobres. Empréstimos em aberto, papéis de penhor na gaveta, contas esperando.
+
+40
+00:02:45,200 --> 00:02:48,840
+No mês depois da colheita, o mesmo problema de dinheiro simplesmente some.
+
+41
+00:02:49,060 --> 00:02:51,820
+Mesmo produtor. Mesmo campo. Mesmo cérebro.
+
+42
+00:02:51,900 --> 00:02:55,710
+Cerca de 450 deles foram testados nos dois momentos.
+
+43
+00:02:56,060 --> 00:02:59,020
+Depois da colheita, eles tiraram notas significativamente mais altas.
+
+44
+00:02:59,100 --> 00:03:03,700
+Os pesquisadores estimaram a diferença em cerca de 13 pontos num teste de QI,
+
+45
+00:03:03,780 --> 00:03:06,260
+e, para você ter uma ideia do que esse tamanho significa,
+
+46
+00:03:06,340 --> 00:03:10,960
+está na faixa do que uma noite inteira sem dormir faz com o seu raciocínio.
+
+47
+00:03:11,040 --> 00:03:14,340
+Leia isso de novo, porque o desenho do estudo é o argumento inteiro.
+
+48
+00:03:14,450 --> 00:03:17,400
+Não são pessoas pobres comparadas com pessoas ricas.
+
+49
+00:03:17,480 --> 00:03:20,900
+A mesma pessoa, comparada com ela mesma, em dois meses diferentes.
+
+50
+00:03:20,980 --> 00:03:22,860
+O que quer que você queira dizer sobre caráter,
+
+51
+00:03:22,940 --> 00:03:25,880
+disciplina ou criação, isso fica perfeitamente parado,
+
+52
+00:03:26,020 --> 00:03:28,800
+porque é o mesmo caráter nas duas colunas.
+
+53
+00:03:28,880 --> 00:03:31,680
+Só o dinheiro se moveu. E não era fome
+
+54
+00:03:32,080 --> 00:03:35,060
+e não era exaustão. Eles verificaram.
+
+55
+00:03:35,450 --> 00:03:40,000
+Os produtores antes da colheita não estavam fazendo um trabalho físico mais pesado nem comendo pior de um jeito que
+
+56
+00:03:40,080 --> 00:03:43,180
+explicasse isso. Então havia uma mente que tirava notas mais altas,
+
+57
+00:03:43,260 --> 00:03:47,260
+dentro do mesmo crânio o tempo todo, inacessível por alguns meses.
+
+58
+00:03:47,980 --> 00:03:50,960
+Para onde ela vai? Ela vai para o túnel.
+
+59
+00:03:52,060 --> 00:03:55,300
+Anuj Shah, trabalhando com Mullainathan e Shafir,
+
+60
+00:03:55,540 --> 00:03:58,380
+fez uma versão disso em laboratório usando jogos.
+
+61
+00:03:58,880 --> 00:04:02,100
+Alguns jogadores tinham muitas tentativas e outros tinham pouquíssimas,
+
+62
+00:04:02,410 --> 00:04:05,650
+o que os tornava ricos ou pobres dentro daquele pequeno mundo.
+
+63
+00:04:05,730 --> 00:04:07,840
+Os jogadores pobres não eram descuidados.
+
+64
+00:04:07,920 --> 00:04:12,920
+Eram o oposto. Concentravam-se mais em cada tentativa e tiravam mais proveito dela do que os
+
+65
+00:04:13,000 --> 00:04:17,740
+jogadores ricos. Depois os pesquisadores deixaram as pessoas pedirem tentativas emprestadas de rodadas futuras.
+
+66
+00:04:18,000 --> 00:04:20,840
+Os jogadores pobres pegaram emprestado, e pegaram de novo,
+
+67
+00:04:20,920 --> 00:04:25,880
+e terminaram com pontuações totais piores do que se nunca tivessem podido pegar emprestado.
+
+68
+00:04:25,960 --> 00:04:30,980
+Isso não é descuido. Isso é foco, mirado na distância errada.
+
+69
+00:04:31,060 --> 00:04:34,420
+A escassez não embaça sua atenção, ela a estreita,
+
+70
+00:04:34,500 --> 00:04:37,500
+e tudo fora dessa parte estreita fica no escuro.
+
+71
+00:04:38,120 --> 00:04:41,850
+A semana que vem está fora. A carta que você não abriu está fora.
+
+72
+00:04:41,930 --> 00:04:45,660
+A opção mais barata que só compensa em 3 meses está fora.
+
+73
+00:04:45,760 --> 00:04:50,280
+Dentro do túnel há uma coisa urgente, e você é extremamente bom nela,
+
+74
+00:04:50,360 --> 00:04:53,780
+e a conta de tudo que você não conseguiu ver chega depois,
+
+75
+00:04:53,860 --> 00:04:55,840
+e parece exatamente uma falha de caráter.
+
+76
+00:04:55,920 --> 00:04:59,320
+Agora volte no tempo o suficiente e isso deixa de parecer um defeito de projeto.
+
+77
+00:04:59,520 --> 00:05:03,140
+Pela maior parte da existência humana, você vivia num grupo de algumas dezenas de pessoas,
+
+78
+00:05:03,300 --> 00:05:07,720
+e Marshall Sahlins fez um argumento sobre esses grupos que ainda incomoda os economistas.
+
+79
+00:05:08,140 --> 00:05:11,540
+Ele disse que fartura não é uma quantidade, é uma razão,
+
+80
+00:05:11,700 --> 00:05:15,060
+a distância entre o que você quer e o que você consegue alcançar.
+
+81
+00:05:15,280 --> 00:05:17,800
+Os coletores fechavam essa distância pelo outro lado.
+
+82
+00:05:17,880 --> 00:05:22,520
+Queriam pouco, conseguiam o suficiente, e trabalhavam um número razoável de horas para isso.
+
+83
+00:05:22,600 --> 00:05:24,960
+Não era paraíso. Também não era desespero.
+
+84
+00:05:25,040 --> 00:05:29,080
+O motivo de não serem desesperados é a parte que importa para você.
+
+85
+00:05:29,160 --> 00:05:32,640
+James Woodburn descreveu isso como sociedades de retorno imediato.
+
+86
+00:05:32,880 --> 00:05:35,580
+Você conseguia comida hoje e ela era comida em 1 ou 2 dias.
+
+87
+00:05:35,760 --> 00:05:39,339
+Quase não havia armazenamento, nem celeiro, nem poupança,
+
+88
+00:05:39,600 --> 00:05:43,420
+e as ferramentas eram simples o bastante para refazer. A riqueza não se acumulava,
+
+89
+00:05:43,500 --> 00:05:45,820
+e na maioria desses grupos isso nem era permitido.
+
+90
+00:05:46,040 --> 00:05:48,980
+Quem começava a acumular era zoado até voltar para a linha.
+
+91
+00:05:49,060 --> 00:05:51,780
+Há um motivo prático por baixo do motivo moral.
+
+92
+00:05:51,860 --> 00:05:56,070
+Você carregava o que possuía. Um grupo que segue a comida muda de acampamento várias vezes por ano,
+
+93
+00:05:56,150 --> 00:05:59,260
+e cada posse é uma coisa que alguém precisa pegar e carregar andando,
+
+94
+00:05:59,340 --> 00:06:02,260
+então uma pilha de bens guardados não é segurança, é peso.
+
+95
+00:06:02,450 --> 00:06:06,880
+Isso é Sahlins de novo. O coletor não é pobre porque não possui quase nada.
+
+96
+00:06:06,960 --> 00:06:09,820
+Ele não possui quase nada porque possuir mais o deixaria mais lento,
+
+97
+00:06:09,900 --> 00:06:14,380
+e ser lento era o perigo de verdade. Então o que você fazia quando não havia nada para comer amanhã?
+
+98
+00:06:15,060 --> 00:06:19,050
+Você pedia. Nicolas Peterson descreveu isso como partilha por demanda.
+
+99
+00:06:19,400 --> 00:06:23,280
+Em muitas sociedades coletoras, a transferência não começa com um doador generoso,
+
+100
+00:06:23,360 --> 00:06:26,220
+ela começa com a pessoa que precisa indo até lá e pedindo,
+
+101
+00:06:26,300 --> 00:06:30,520
+e pedir é totalmente legítimo. Repare no que isso faz com a vergonha.
+
+102
+00:06:30,660 --> 00:06:34,240
+O ato estranho nesse sistema não é pedir, é recusar.
+
+103
+00:06:34,320 --> 00:06:38,180
+Ninguém é admirado por entregar carne, porque entregar carne é para isso que a carne serve.
+
+104
+00:06:38,260 --> 00:06:41,400
+E o problema do armazenamento é resolvido sem um único recipiente.
+
+105
+00:06:41,480 --> 00:06:46,400
+Seu excedente fica guardado dentro de 30 outras pessoas, e cada uma delas lembra do saldo.
+
+106
+00:06:46,820 --> 00:06:50,970
+Agora coloque o túnel de volta naquele mundo e veja ele funcionar perfeitamente.
+
+107
+00:06:51,050 --> 00:06:55,790
+O que estava em jogo não era abstrato. Um período ruim significava 3 ou 4 dias com muito pouco,
+
+108
+00:06:55,870 --> 00:07:01,180
+num corpo que carregava quase nada de reserva, num lugar sem loja e sem próximo salário.
+
+109
+00:07:01,800 --> 00:07:04,790
+Crianças morriam no intervalo entre uma caçada e a próxima.
+
+110
+00:07:05,340 --> 00:07:10,140
+Então uma escassez era o fato mais importante do mundo enquanto durasse,
+
+111
+00:07:10,280 --> 00:07:13,940
+e uma mente que não conseguia parar de remoer isso não estava com defeito.
+
+112
+00:07:14,120 --> 00:07:16,180
+Ela estava fazendo o único trabalho que importava.
+
+113
+00:07:16,260 --> 00:07:20,560
+E a escassez era aguda. Durava dias, não décadas.
+
+114
+00:07:20,640 --> 00:07:23,820
+Era concreta. Você conseguia apontar para a coisa vazia.
+
+115
+00:07:24,080 --> 00:07:28,280
+E ela tinha uma saída, e a saída era uma pessoa, alguém com nome,
+
+116
+00:07:28,360 --> 00:07:33,220
+que estava a uns 30 pés de distância, que devia a você ou passaria a dever.
+
+117
+00:07:33,300 --> 00:07:39,460
+Então uma mente que largava tudo o mais e ia direto na escassez era uma mente que conseguia comer.
+
+118
+00:07:39,900 --> 00:07:45,380
+Entrar em túnel não era uma falha. Era a resposta correta de emergência para uma emergência solucionável,
+
+119
+00:07:45,460 --> 00:07:50,340
+e a emergência acabava. Essa é a versão de você para a qual o cabeamento foi feito.
+
+120
+00:07:50,640 --> 00:07:54,800
+Agora veja o que acontece quando você roda isso aqui. A escassez moderna não é aguda.
+
+121
+00:07:54,880 --> 00:07:59,680
+É crônica. Não é uma semana ruim entre caçadas, é o mesmo intervalo todo mês,
+
+122
+00:07:59,760 --> 00:08:02,200
+chegando na hora certa, por anos.
+
+123
+00:08:02,660 --> 00:08:07,400
+O alarme feito para disparar forte e depois desligar nunca recebe o sinal
+
+124
+00:08:07,480 --> 00:08:12,040
+para desligar, então o túnel se abre e simplesmente fica aberto.
+
+125
+00:08:12,120 --> 00:08:15,160
+Sua capacidade mental não está sendo consumida durante uma crise.
+
+126
+00:08:15,240 --> 00:08:17,820
+Ela está sendo consumida como uma condição permanente.
+
+127
+00:08:17,900 --> 00:08:23,280
+A saída também não é uma pessoa. É uma taxa, um formulário, uma lista de espera,
+
+128
+00:08:23,360 --> 00:08:26,880
+um salário definido por alguém que você nunca vai conhecer.
+
+129
+00:08:26,960 --> 00:08:29,590
+Não tem ninguém a 30 pés de distância para pedir.
+
+130
+00:08:29,670 --> 00:08:34,130
+E pedir foi transformado de um ato normal numa confissão de fracasso,
+
+131
+00:08:34,400 --> 00:08:40,180
+então o único gesto que seus ancestrais faziam sem constrangimento é o gesto que você prefere
+
+132
+00:08:40,360 --> 00:08:44,860
+morrer de fome a fazer. Quando foi a última vez que você pediu algo a alguém que realmente importava?
+
+133
+00:08:45,220 --> 00:08:48,000
+Então o sistema faz algo genuinamente cruel.
+
+134
+00:08:48,080 --> 00:08:53,800
+Ele cobra de você pelo túnel. Cada falha que a atenção estreitada produz tem uma taxa embutida
+
+135
+00:08:53,880 --> 00:08:57,360
+nela. Perca o prazo, pague a multa por atraso.
+
+136
+00:08:57,440 --> 00:09:00,120
+Perca o saldo, pague o cheque especial.
+
+137
+00:09:00,200 --> 00:09:03,200
+Perca o prazo, pague a religação.
+
+138
+00:09:03,280 --> 00:09:08,660
+Compre o barato duas vezes porque você não conseguiu alcançar o que dura.
+
+139
+00:09:08,740 --> 00:09:13,400
+Cada uma dessas coisas tem um preço, e cada uma delas é mais provável quando você está sem dinheiro,
+
+140
+00:09:13,480 --> 00:09:16,480
+o que significa que estar sem dinheiro é, por si só, caro,
+
+141
+00:09:16,560 --> 00:09:20,860
+e o gasto chega disfarçado de prova sobre que tipo de pessoa você é.
+
+142
+00:09:20,940 --> 00:09:24,560
+Você está dentro de um ciclo onde a escassez toma a capacidade,
+
+143
+00:09:24,640 --> 00:09:29,430
+a capacidade que falta produz os erros, e os erros aprofundam a escassez.
+
+144
+00:09:29,510 --> 00:09:34,620
+E o tempo todo, a única explicação que te entregam é a do seu caráter.
+
+145
+00:09:34,700 --> 00:09:38,200
+Então aqui está a mudança, e não é um orçamento.
+
+146
+00:09:38,360 --> 00:09:41,560
+Pare de tentar pensar melhor dentro do túnel.
+
+147
+00:09:41,640 --> 00:09:45,150
+Você não consegue. Essa é a descoberta, não uma desculpa.
+
+148
+00:09:45,230 --> 00:09:49,910
+O produtor com 13 pontos a mais disponíveis não estava se esforçando mais no mês bom,
+
+149
+00:09:49,990 --> 00:09:55,820
+ele simplesmente os tinha de volta. O que você pode fazer é mover a decisão para onde a capacidade está.
+
+150
+00:09:56,200 --> 00:09:59,340
+Olhe para o seu próprio ano e encontre a janela onde a pressão diminui,
+
+151
+00:09:59,540 --> 00:10:02,360
+mesmo que um pouco. Dia de pagamento.
+
+152
+00:10:03,120 --> 00:10:08,320
+A semana depois que algo compensa. A única tarde em que o número não está gritando.
+
+153
+00:10:08,880 --> 00:10:14,060
+Essa janela é o seu mês pós-colheita, e é o único momento em que a sua mente inteira está na
+
+154
+00:10:14,140 --> 00:10:17,380
+sala. Coloque o raciocínio ali.
+
+155
+00:10:17,460 --> 00:10:24,180
+O cancelamento, a carta, a comparação, a conversa, o plano para a semana apertada.
+
+156
+00:10:24,800 --> 00:10:26,760
+Não porque você vai se sentir mais forte então,
+
+157
+00:10:27,140 --> 00:10:30,050
+mas porque você vai ter, de forma mensurável, mais mente disponível então,
+
+158
+00:10:30,130 --> 00:10:34,460
+e a versão de você que estiver sem dinheiro daqui a 3 semanas vai estar operando com muito pouco e não deveria
+
+159
+00:10:34,540 --> 00:10:36,960
+ser chamada para decidir nada importante.
+
+160
+00:10:37,040 --> 00:10:41,560
+Você não está movendo dinheiro. Você está movendo a decisão para o momento em que alguém está de fato
+
+161
+00:10:41,640 --> 00:10:45,700
+em casa para tomá-la. E nada disso faz você ficar menos sem dinheiro.
+
+162
+00:10:45,880 --> 00:10:47,900
+Nada nesses 10 minutos faz isso,
+
+163
+00:10:47,980 --> 00:10:52,760
+e quem disser que uma mentalidade fecha uma lacuna real está vendendo alguma coisa para você.
+
+164
+00:10:52,840 --> 00:10:55,500
+O que muda é a história ligada à lacuna,
+
+165
+00:10:55,580 --> 00:10:59,030
+e essa história tem custado a você tanto quanto as taxas.
+
+166
+00:10:59,300 --> 00:11:03,980
+O mês em que você tem menos dinheiro provavelmente ainda vai ser o mês em que você lida pior com isso.
+
+167
+00:11:04,260 --> 00:11:06,600
+Isso não vai embora hoje à noite.
+
+168
+00:11:06,680 --> 00:11:09,920
+O que vai embora é a ideia de que isso prova alguma coisa sobre você,
+
+169
+00:11:10,000 --> 00:11:15,940
+porque agora isso já foi medido na mesma pessoa duas vezes, no mesmo corpo, no mesmo campo,
+
+170
+00:11:16,120 --> 00:11:19,980
+e a única coisa que mudou entre os números bons e os ruins foi quanto tinha na
+
+171
+00:11:20,060 --> 00:11:26,620
+conta. Dinheiro não é a única coisa capaz de tomar uma mente inteira e se recusar a devolver.
+
+172
+00:11:26,700 --> 00:11:31,260
+1 pessoa que você nunca vai conhecer diz 1 coisa cruel sobre você.
+
+173
+00:11:31,820 --> 00:11:36,620
+10 outras pessoas naquele dia foram gentis. Quanto da noite aquela 1 pessoa tomou para si?
+
+174
+00:11:37,300 --> 00:11:41,020
+Esse é esse mesmo túnel, aberto por algo que não custa absolutamente nada,
+
+175
+00:11:41,100 --> 00:11:44,250
+e o vídeo na sua tela agora é sobre esse.
+
+176
+00:11:44,400 --> 00:11:47,840
+Por que o comentário de 1 estranho pode arruinar o seu dia inteiro.
+
+177
+00:11:47,920 --> 00:11:49,360
+Assista a esse a seguir.

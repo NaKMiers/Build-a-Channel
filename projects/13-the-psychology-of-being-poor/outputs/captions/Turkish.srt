@@ -1,0 +1,707 @@
+1
+00:00:00,160 --> 00:00:03,649
+Paranın en az olduğu ay, onu en kötü yönettiğin aydır.
+
+2
+00:00:03,800 --> 00:00:06,820
+Ödemeyi kaçırırsın. Randevuyu unutursun.
+
+3
+00:00:06,900 --> 00:00:09,260
+Gücünün yetmediği şeyi satın alırsın.
+
+4
+00:00:09,340 --> 00:00:12,710
+Ve zaten bir açıklaman var. Parayla aran kötü.
+
+5
+00:00:12,790 --> 00:00:17,960
+Disiplinsiz. Kısa görüşlü. Ama araştırmacılar bunu ölçtüğünde, hikaye tersine döndü.
+
+6
+00:00:18,040 --> 00:00:20,980
+Paranın az olması daha kötü bir zihni ortaya çıkarmaz.
+
+7
+00:00:21,060 --> 00:00:25,630
+Onu üretir, araştırmacıların bant genişliği dediği bir kaynağı alarak,
+
+8
+00:00:25,760 --> 00:00:29,860
+yani geri kalan her şey için elinde kalan zihinsel kapasite.
+
+9
+00:00:29,940 --> 00:00:34,280
+Önümüzdeki birkaç dakikada bu kapasitenin aynı insanlarda iki kez ölçüldüğünü göreceksin,
+
+10
+00:00:34,500 --> 00:00:38,180
+birkaç ay arayla, ve tam olarak nereye gittiğini göreceksin.
+
+11
+00:00:38,380 --> 00:00:41,880
+New Jersey'deki bir alışveriş merkezinden başla. Anandi Mani,
+
+12
+00:00:42,240 --> 00:00:47,000
+Sendhil Mullainathan, Eldar Shafir ve Jiaying Zhao
+
+13
+00:00:47,200 --> 00:00:51,700
+sıradan alışverişçileri durdurup onlardan küçük bir sorunu hayal etmelerini istedi.
+
+14
+00:00:52,260 --> 00:00:57,080
+Arabanın tamire ihtiyacı var. İnsanların yarısı için tamir 150 dolara mal oluyor.
+
+15
+00:00:57,320 --> 00:01:01,080
+Diğer yarısı için aynı tamir 1500 dolara mal oluyor.
+
+16
+00:01:01,360 --> 00:01:05,880
+Bunu aklında tut, dediler. Sonra, kimseye ne yapacağını sormadan önce,
+
+17
+00:01:05,960 --> 00:01:08,320
+herkese standart bir akıl yürütme testi verdiler.
+
+18
+00:01:08,400 --> 00:01:11,920
+Şekiller ve desenler. Arabayla ya da parayla hiçbir ilgisi yok.
+
+19
+00:01:12,000 --> 00:01:16,950
+Tamir ucuz olduğunda, daha zengin alışverişçilerle daha yoksul alışverişçiler aşağı yukarı aynı puanı aldı.
+
+20
+00:01:17,200 --> 00:01:21,610
+Tamir pahalı olduğunda, daha zengin alışverişçiler öncekiyle aşağı yukarı aynı puanı aldı.
+
+21
+00:01:21,690 --> 00:01:26,120
+Daha yoksul alışverişçilerin puanı düştü. Oysa kimseye gerçekte hiçbir şey olmamıştı.
+
+22
+00:01:26,200 --> 00:01:30,000
+Hiçbir hesaptan para çıkmadı. Bu hayali bir arabaydı.
+
+23
+00:01:30,080 --> 00:01:33,300
+Ama 1500 doları bulamayacak olan alışverişçiler için,
+
+24
+00:01:33,380 --> 00:01:38,140
+soru hiç de hayali değildi, ve zihnin bir parçası bunun üzerinde çalışmaya gitti ve
+
+25
+00:01:38,220 --> 00:01:43,920
+şekiller ekrana geldiğinde henüz geri dönmemişti. Test kimsenin ne kadar zeki olduğunu ölçmüyordu.
+
+26
+00:01:44,180 --> 00:01:48,320
+Geriye ne kaldığını ölçüyordu. İşte bant genişliği budur.
+
+27
+00:01:48,540 --> 00:01:51,020
+Zeka değil. Kapasite.
+
+28
+00:01:51,660 --> 00:01:56,340
+Zihninin şu anda, bu saniyede, bir planı aklında tutmak için boşta olan kısmı,
+
+29
+00:01:56,540 --> 00:02:01,770
+bir dürtüye direnmek, bir tarihi fark etmek ve bir cümleyi sonuna kadar takip etmek için.
+
+30
+00:02:02,220 --> 00:02:06,680
+Bu sabit bir miktar, ve altında çalışan her şey onu harcıyor.
+
+31
+00:02:06,760 --> 00:02:09,520
+Kafanda takılı kalan bir melodi biraz harcar.
+
+32
+00:02:09,600 --> 00:02:12,100
+Karşılayamadığın bir rakam çok daha fazlasını harcar,
+
+33
+00:02:12,340 --> 00:02:17,120
+çünkü zihnin, çözülmemiş bir hayatta kalma sorununu bir kenara koyup devam edecek şekilde tasarlanmadı.
+
+34
+00:02:17,660 --> 00:02:20,760
+Onun üzerinde çalışmaya devam eder. Sessizce.
+
+35
+00:02:21,470 --> 00:02:26,520
+Sana sormadan. Alışveriş merkezi çalışması bu etkinin var olduğunu kanıtladı.
+
+36
+00:02:26,829 --> 00:02:29,940
+Bir sonraki çalışma bunun insanlarla ilgili olmadığını kanıtladı.
+
+37
+00:02:30,560 --> 00:02:35,380
+Aynı araştırmacılar güney Hindistan'daki Tamil Nadu'ya gitti ve şeker kamışı çiftçileri buldu,
+
+38
+00:02:35,460 --> 00:02:39,240
+yılda bir kez ödeme alan çiftçiler. Hasattan önceki ayda
+
+39
+00:02:39,460 --> 00:02:45,120
+gerçekten yoksullar. Borçlar çıkmış, çekmecede rehin fişleri, bekleyen faturalar.
+
+40
+00:02:45,200 --> 00:02:48,840
+Hasattan sonraki ayda ise aynı para sorunu ortadan kalkıyor.
+
+41
+00:02:49,060 --> 00:02:51,820
+Aynı çiftçi. Aynı tarla. Aynı beyin.
+
+42
+00:02:51,900 --> 00:02:55,710
+Yaklaşık 450 kişi her iki anda da test edildi.
+
+43
+00:02:56,060 --> 00:02:59,020
+Hasattan sonra, belirgin şekilde daha yüksek puan aldılar.
+
+44
+00:02:59,100 --> 00:03:03,700
+Araştırmacılar farkı bir IQ testinde yaklaşık 13 puan olarak belirledi,
+
+45
+00:03:03,780 --> 00:03:06,260
+ve bu büyüklüğün ne anlama geldiğini hissettirmek için,
+
+46
+00:03:06,340 --> 00:03:10,960
+bu, tam bir uykusuz gecenin zihnine yaptığıyla aynı aralıkta.
+
+47
+00:03:11,040 --> 00:03:14,340
+Bunu tekrar oku, çünkü çalışmanın tasarımı tüm argümanın kendisi.
+
+48
+00:03:14,450 --> 00:03:17,400
+Yoksul insanların zenginlerle karşılaştırılması değil.
+
+49
+00:03:17,480 --> 00:03:20,900
+Aynı kişinin, kendisiyle, iki farklı ayda karşılaştırılması.
+
+50
+00:03:20,980 --> 00:03:22,860
+Karakter hakkında söylemek isteyebileceğin her ne varsa,
+
+51
+00:03:22,940 --> 00:03:25,880
+disiplin ya da yetiştirilme tarzı tamamen sabit tutuluyor,
+
+52
+00:03:26,020 --> 00:03:28,800
+çünkü her iki sütunda da aynı karakter var.
+
+53
+00:03:28,880 --> 00:03:31,680
+Sadece para değişti. Ve bu açlık değildi
+
+54
+00:03:32,080 --> 00:03:35,060
+ve yorgunluk da değildi. Bunu kontrol ettiler.
+
+55
+00:03:35,450 --> 00:03:40,000
+Hasat öncesi çiftçiler, bunu açıklayacak şekilde ne daha ağır bir bedensel iş yapıyordu
+
+56
+00:03:40,080 --> 00:03:43,180
+ne de daha kötü besleniyordu. Yani daha yüksek puan alan bir zihin vardı,
+
+57
+00:03:43,260 --> 00:03:47,260
+tüm bu süre boyunca aynı kafatasının içinde otururken, birkaç ay boyunca ulaşılamaz durumdaydı.
+
+58
+00:03:47,980 --> 00:03:50,960
+Peki nereye gidiyor? Tünelin içine gidiyor.
+
+59
+00:03:52,060 --> 00:03:55,300
+Mullainathan ve Shafir ile birlikte çalışan Anuj Shah,
+
+60
+00:03:55,540 --> 00:03:58,380
+bunun bir versiyonunu laboratuvarda oyunlar kullanarak yürüttü.
+
+61
+00:03:58,880 --> 00:04:02,100
+Bazı oyunculara bol miktarda tahmin hakkı verildi, bazılarına çok az,
+
+62
+00:04:02,410 --> 00:04:05,650
+bu da onları o küçük dünyanın içinde zengin ya da yoksul yaptı.
+
+63
+00:04:05,730 --> 00:04:07,840
+Yoksul oyuncular dikkatsiz değildi.
+
+64
+00:04:07,920 --> 00:04:12,920
+Tam tersiydi. Her tahmine daha sıkı odaklandılar ve
+
+65
+00:04:13,000 --> 00:04:17,740
+zengin oyunculardan daha fazla verim aldılar. Sonra araştırmacılar insanların gelecek turlardan tahmin ödünç almasına izin verdi.
+
+66
+00:04:18,000 --> 00:04:20,840
+Yoksul oyuncular ödünç aldı, sonra tekrar ödünç aldı,
+
+67
+00:04:20,920 --> 00:04:25,880
+ve hiç ödünç almalarına izin verilmemiş olsalardı alacaklarından daha kötü bir toplam puanla bitirdiler.
+
+68
+00:04:25,960 --> 00:04:30,980
+Bu dikkatsizlik değil. Bu, yanlış mesafeye yönlendirilmiş bir odak.
+
+69
+00:04:31,060 --> 00:04:34,420
+Kıtlık dikkatini bulanıklaştırmaz, onu daraltır,
+
+70
+00:04:34,500 --> 00:04:37,500
+ve o dar kısmın dışındaki her şey kararır.
+
+71
+00:04:38,120 --> 00:04:41,850
+Gelecek hafta dışarıda. Açmadığın mektup dışarıda.
+
+72
+00:04:41,930 --> 00:04:45,660
+Ancak üç ay sonra karşılığını veren daha ucuz seçenek dışarıda.
+
+73
+00:04:45,760 --> 00:04:50,280
+Tünelin içinde tek bir acil şey var ve sen onda son derece iyisin,
+
+74
+00:04:50,360 --> 00:04:53,780
+ve göremediğin her şeyin faturası daha sonra gelir,
+
+75
+00:04:53,860 --> 00:04:55,840
+ve tam olarak bir karakter kusuru gibi görünür.
+
+76
+00:04:55,920 --> 00:04:59,320
+Şimdi yeterince geriye git, ve bu bir tasarım hatası gibi görünmekten çıkar.
+
+77
+00:04:59,520 --> 00:05:03,140
+İnsanlık tarihinin çoğunda birkaç düzine kişilik bir grupta yaşadın,
+
+78
+00:05:03,300 --> 00:05:07,720
+ve Marshall Sahlins bu gruplar hakkında ekonomistleri hâlâ rahatsız eden bir savunma yaptı.
+
+79
+00:05:08,140 --> 00:05:11,540
+Bolluğun bir miktar değil, bir oran olduğunu söyledi,
+
+80
+00:05:11,700 --> 00:05:15,060
+istediğin şeyle ulaşabildiğin şey arasındaki mesafe.
+
+81
+00:05:15,280 --> 00:05:17,800
+Toplayıcı avcılar bu farkı diğer taraftan kapattı.
+
+82
+00:05:17,880 --> 00:05:22,520
+Az istediler, yeterince elde ettiler, ve bunu yapmak için makul sayıda saat çalıştılar.
+
+83
+00:05:22,600 --> 00:05:24,960
+Cennet değil. Çaresizlik de değil.
+
+84
+00:05:25,040 --> 00:05:29,080
+Çaresiz olmamalarının nedeni, senin için önemli olan kısım.
+
+85
+00:05:29,160 --> 00:05:32,640
+James Woodburn bunları ani karşılık toplumları olarak tanımladı.
+
+86
+00:05:32,880 --> 00:05:35,580
+Yiyeceği bugün elde ediyordun ve bir iki gün içinde tüketiliyordu.
+
+87
+00:05:35,760 --> 00:05:39,339
+Neredeyse hiç depolama yoktu, tahıl ambarı yoktu, birikim yoktu,
+
+88
+00:05:39,600 --> 00:05:43,420
+ve aletler yeniden yapılabilecek kadar basitti. Servet birikmiyordu,
+
+89
+00:05:43,500 --> 00:05:45,820
+ve bu grupların çoğunda buna izin verilmiyordu.
+
+90
+00:05:46,040 --> 00:05:48,980
+Birikime başlayan biri alay edilerek hizaya sokuluyordu.
+
+91
+00:05:49,060 --> 00:05:51,780
+Ahlaki nedenin altında pratik bir neden yatıyor.
+
+92
+00:05:51,860 --> 00:05:56,070
+Sahip olduğun her şeyi taşıyordun. Yiyeceği takip eden bir grup yılda birkaç kez kamp değiştiriyor,
+
+93
+00:05:56,150 --> 00:05:59,260
+ve her eşya, birinin alıp taşıması gereken bir şey,
+
+94
+00:05:59,340 --> 00:06:02,260
+yani depolanmış bir yığın eşya güvenlik değil, ağırlıktır.
+
+95
+00:06:02,450 --> 00:06:06,880
+Bu yine Sahlins. Toplayıcı avcı, neredeyse hiçbir şeye sahip olmadığı için yoksul değil.
+
+96
+00:06:06,960 --> 00:06:09,820
+Neredeyse hiçbir şeye sahip değil, çünkü daha fazlasına sahip olmak onu yavaşlatırdı,
+
+97
+00:06:09,900 --> 00:06:14,380
+ve yavaş olmak gerçek tehlikeydi. Peki yarın yiyecek hiçbir şey olmadığında ne yapardın?
+
+98
+00:06:15,060 --> 00:06:19,050
+Sordun. Nicolas Peterson bunu talep paylaşımı olarak tanımladı.
+
+99
+00:06:19,400 --> 00:06:23,280
+Pek çok toplayıcı avcı toplumunda aktarım cömert bir vericiyle başlamaz,
+
+100
+00:06:23,360 --> 00:06:26,220
+ihtiyacı olan kişinin yanına gelip sormasıyla başlar,
+
+101
+00:06:26,300 --> 00:06:30,520
+ve sormak tamamen meşrudur. Bunun utanca ne yaptığına dikkat et.
+
+102
+00:06:30,660 --> 00:06:34,240
+O sistemde tuhaf olan davranış sormak değil, reddetmektir.
+
+103
+00:06:34,320 --> 00:06:38,180
+Kimse eti verdiği için takdir edilmez, çünkü et zaten bunun için var.
+
+104
+00:06:38,260 --> 00:06:41,400
+Ve depolama sorunu tek bir kap bile kullanılmadan çözülür.
+
+105
+00:06:41,480 --> 00:06:46,400
+Fazlan otuz başka insanın içinde durur, ve her biri bakiyeyi hatırlar.
+
+106
+00:06:46,820 --> 00:06:50,970
+Şimdi tüneli o dünyaya geri koy ve mükemmel çalıştığını izle.
+
+107
+00:06:51,050 --> 00:06:55,790
+Bahis soyut değildi. Kötü bir dönem, üç dört gün boyunca çok az şey demekti,
+
+108
+00:06:55,870 --> 00:07:01,180
+yedekte neredeyse hiçbir şey taşımayan bir bedende, dükkânın ve bir sonraki maaşın olmadığı bir yerde.
+
+109
+00:07:01,800 --> 00:07:04,790
+Çocuklar bir avla bir sonraki av arasındaki boşlukta ölüyordu.
+
+110
+00:07:05,340 --> 00:07:10,140
+Yani bir kıtlık, sürdüğü süre boyunca dünyadaki en önemli tek gerçekti,
+
+111
+00:07:10,280 --> 00:07:13,940
+ve onu durmadan çeviren bir zihin arızalı değildi.
+
+112
+00:07:14,120 --> 00:07:16,180
+Önemli olan tek işi yapıyordu.
+
+113
+00:07:16,260 --> 00:07:20,560
+Ve kıtlık akuttu. Günler sürdü, on yıllar değil.
+
+114
+00:07:20,640 --> 00:07:23,820
+Somuttu. Boş olan şeyi işaret edebilirdin.
+
+115
+00:07:24,080 --> 00:07:28,280
+Ve bir çıkışı vardı, ve o çıkış bir insandı, bir ismi olan biri,
+
+116
+00:07:28,360 --> 00:07:33,220
+yaklaşık otuz fit ötede duran, sana borçlu olan ya da borçlanacak olan biri.
+
+117
+00:07:33,300 --> 00:07:39,460
+Yani her şeyi bırakıp kıtlığa var gücüyle yüklenen bir zihin, doyan bir zihindi.
+
+118
+00:07:39,900 --> 00:07:45,380
+Tünelleşme bir hata değildi. Çözülebilir bir acil duruma verilen doğru tepkiydi,
+
+119
+00:07:45,460 --> 00:07:50,340
+ve o acil durum sona eriyordu. Kablolamanın inşa edildiği sen versiyonu buydu.
+
+120
+00:07:50,640 --> 00:07:54,800
+Şimdi bunu burada çalıştırdığında ne olduğuna bak. Modern kıtlık akut değil.
+
+121
+00:07:54,880 --> 00:07:59,680
+Kronik. Avlar arasında kötü bir hafta değil, her ay tekrarlanan aynı boşluk,
+
+122
+00:07:59,760 --> 00:08:02,200
+yıllarca, düzenli olarak gelen bir boşluk.
+
+123
+00:08:02,660 --> 00:08:07,400
+Sert bir şekilde çalıp sonra kapanmak üzere tasarlanan alarm, kapanma sinyalini hiç
+
+124
+00:08:07,480 --> 00:08:12,040
+alamıyor, bu yüzden tünel açılıyor ve öylece açık kalıyor.
+
+125
+00:08:12,120 --> 00:08:15,160
+Bant genişliğin bir kriz sırasında vergilendirilmiyor.
+
+126
+00:08:15,240 --> 00:08:17,820
+Kalıcı bir durum olarak vergilendiriliyor.
+
+127
+00:08:17,900 --> 00:08:23,280
+Çıkış da artık bir insan değil. Bir faiz oranı, bir form, bir bekleme listesi,
+
+128
+00:08:23,360 --> 00:08:26,880
+hiç tanışmayacağın biri tarafından belirlenen bir ücret.
+
+129
+00:08:26,960 --> 00:08:29,590
+Otuz fit ötede sorabileceğin kimse yok.
+
+130
+00:08:29,670 --> 00:08:34,130
+Ve sormak, normal bir davranıştan bir başarısızlık itirafına dönüştürüldü,
+
+131
+00:08:34,400 --> 00:08:40,180
+yani atalarının utanmadan yaptığı o hareket, senin açlıktan ölmeyi tercih edeceğin
+
+132
+00:08:40,360 --> 00:08:44,860
+bir hareket haline geldi. En son ne zaman gerçekten önemli bir şey için birinden bir şey istedin?
+
+133
+00:08:45,220 --> 00:08:48,000
+Sonra sistem gerçekten acımasız bir şey yapıyor.
+
+134
+00:08:48,080 --> 00:08:53,800
+Tünel için senden ücret alıyor. Daralan dikkatin yol açtığı her başarısızlığın bir bedeli var,
+
+135
+00:08:53,880 --> 00:08:57,360
+ve tarihi kaçır, gecikme cezasını öde.
+
+136
+00:08:57,440 --> 00:09:00,120
+Bakiyeyi kaçır, hesap açığı ücretini öde.
+
+137
+00:09:00,200 --> 00:09:03,200
+Son tarihi kaçır, yeniden bağlanma ücretini öde.
+
+138
+00:09:03,280 --> 00:09:08,660
+Dayanıklı olana uzanamadığın için ucuz olanı iki kez satın al.
+
+139
+00:09:08,740 --> 00:09:13,400
+Bunların her birinin bir fiyatı var, ve paran azken her biri daha olası hale geliyor,
+
+140
+00:09:13,480 --> 00:09:16,480
+bu da paranın az olmasının kendisinin pahalı olduğu anlamına geliyor,
+
+141
+00:09:16,560 --> 00:09:20,860
+ve bu masraf, nasıl bir insan olduğuna dair bir kanıt kılığında geliyor.
+
+142
+00:09:20,940 --> 00:09:24,560
+Kıtlığın kapasiteyi aldığı bir döngünün içindesin,
+
+143
+00:09:24,640 --> 00:09:29,430
+eksilen kapasite hataları üretiyor, ve hatalar kıtlığı derinleştiriyor.
+
+144
+00:09:29,510 --> 00:09:34,620
+Ve bunca zaman, sana verilen tek açıklama karakterinle ilgili olan.
+
+145
+00:09:34,700 --> 00:09:38,200
+İşte değişmesi gereken şey, ve bu bir bütçe değil.
+
+146
+00:09:38,360 --> 00:09:41,560
+Tünelin içinde daha iyi düşünmeye çalışmayı bırak.
+
+147
+00:09:41,640 --> 00:09:45,150
+Yapamazsın. Bu bir bulgu, bir bahane değil.
+
+148
+00:09:45,230 --> 00:09:49,910
+13 puan daha fazlasına sahip olan çiftçi, iyi ayda daha çok çabalamıyordu,
+
+149
+00:09:49,990 --> 00:09:55,820
+sadece o puanlar ona geri dönmüştü. Senin yapabileceğin şey, kararı kapasitenin olduğu yere taşımak.
+
+150
+00:09:56,200 --> 00:09:59,340
+Kendi yılına bak ve baskının hafiflediği pencereyi bul,
+
+151
+00:09:59,540 --> 00:10:02,360
+hafifçe bile olsa. Maaş günü.
+
+152
+00:10:03,120 --> 00:10:08,320
+Bir şeyin kapandığı haftanın ardından. Rakamın çığlık atmadığı o bir öğleden sonra.
+
+153
+00:10:08,880 --> 00:10:14,060
+İşte o pencere senin hasat sonrası ayın, ve tüm zihninin
+
+154
+00:10:14,140 --> 00:10:17,380
+orada olduğu tek an. Düşünmeyi oraya koy.
+
+155
+00:10:17,460 --> 00:10:24,180
+İptali, mektubu, karşılaştırmayı, konuşmayı, sıkışık hafta için planı.
+
+156
+00:10:24,800 --> 00:10:26,760
+O zaman daha güçlü hissedeceğin için değil,
+
+157
+00:10:27,140 --> 00:10:30,050
+ama o zaman ölçülebilir şekilde daha fazla zihnin elinde olacağı için,
+
+158
+00:10:30,130 --> 00:10:34,460
+ve üç hafta sonra parası kısıtlı olacak sen versiyonu çok az şeyle çalışıyor olacak ve
+
+159
+00:10:34,540 --> 00:10:36,960
+önemli hiçbir şeye karar vermesi istenmemeli.
+
+160
+00:10:37,040 --> 00:10:41,560
+Parayı taşımıyorsun. Kararı, birinin gerçekten
+
+161
+00:10:41,640 --> 00:10:45,700
+evde olup onu verebileceği ana taşıyorsun. Ve bunda hiçbir şey seni daha az parasız yapmıyor.
+
+162
+00:10:45,880 --> 00:10:47,900
+Bu on dakika içinde hiçbir şey bunu yapmıyor,
+
+163
+00:10:47,980 --> 00:10:52,760
+ve sana bir zihniyetin gerçek bir açığı kapattığını söyleyen biri sana bir şey satıyordur.
+
+164
+00:10:52,840 --> 00:10:55,500
+Değişen şey, o açığa iliştirilmiş hikaye,
+
+165
+00:10:55,580 --> 00:10:59,030
+ve o hikaye sana ücretler kadar pahalıya mal oluyordu.
+
+166
+00:10:59,300 --> 00:11:03,980
+Paranın en az olduğu ay, muhtemelen yine onu en kötü yönettiğin ay olacak.
+
+167
+00:11:04,260 --> 00:11:06,600
+Bu bu gece ortadan kalkmıyor.
+
+168
+00:11:06,680 --> 00:11:09,920
+Ortadan kalkan şey, bunun senin hakkında bir şey kanıtladığı fikri,
+
+169
+00:11:10,000 --> 00:11:15,940
+çünkü artık aynı kişide iki kez, aynı bedende, aynı tarlada ölçüldü,
+
+170
+00:11:16,120 --> 00:11:19,980
+ve iyi rakamlarla kötü rakamlar arasında değişen tek şey
+
+171
+00:11:20,060 --> 00:11:26,620
+hesapta ne kadar olduğuydu. Para, bütün bir zihni alıp geri vermeyi reddeden tek şey değil.
+
+172
+00:11:26,700 --> 00:11:31,260
+Hiç tanışmayacağın bir kişi hakkında tek bir kırıcı şey söylüyor.
+
+173
+00:11:31,820 --> 00:11:36,620
+O gün diğer 10 kişi nazikti. Akşamın ne kadarı o tek kişiye ait oldu?
+
+174
+00:11:37,300 --> 00:11:41,020
+Bu, hiçbir şeye mal olmayan bir şey tarafından açılan aynı tünel,
+
+175
+00:11:41,100 --> 00:11:44,250
+ve şu anda ekranındaki video tam olarak bununla ilgili.
+
+176
+00:11:44,400 --> 00:11:47,840
+Bir yabancının yorumu neden bütün gününü mahvedebilir.
+
+177
+00:11:47,920 --> 00:11:49,360
+Sıradaki o videoyu izle.

@@ -8,12 +8,17 @@ Durable lessons for the captions skill. Keep this file source-independent.
   is quantised to whole seconds and is up to a second early on every block.
 - `transcript.md` is still required: it proves `words.json` is the same take, and it is the
   context a translator reads.
-- `en.srt` is built first and written before any translation starts.
+- `English.srt` is built first and written before any translation starts.
 - Every other language is poured into `blocks.json`, the English timing spine, so all files
   are frame-identical by construction.
 - All 25 languages, every time, unless the user names a subset in that turn.
 - Output directory is `outputs/captions/`, created if absent.
 - `check` must exit clean before reporting done.
+- Since 2026-09-06, `.srt` files are named by full language name (`English.srt`,
+  `Vietnamese.srt`, `Chinese Simplified.srt`, ...), not by BCP-47 code. The code still
+  exists inside `tools/captions-srt.py` (`LANGUAGES`, `NAMES`, `CODES`) for script
+  classification and for the working `<code>.json` translation payloads, and it is the tag
+  to pick in the YouTube Studio UI on upload. Only the on-disk `.srt` stem changed.
 
 ## The tool carries the arithmetic
 
@@ -197,6 +202,49 @@ because a silent per-block content drift never shows up as a count mismatch.
 Structural checks prove the containers line up. Only a read proves the right sentence is
 inside the right container. Spot-read blocks 1, a quarter in, half in, three quarters in,
 and the last, across every language side by side before reporting done.
+
+### 2026-09-06, project 13, a given name at the start of a sentence is not auto-allowed
+
+Issue: `check` failed 12 of 13 non-Latin files on the first run, all four hits the same
+class: `Anandi Mani`, `Anuj Shah`, `James Woodburn`, `Nicolas Peterson`. Every surname
+passed (mid-sentence capitals are recognised fine); every given name failed, because each
+one opens the sentence right after the previous one's closing period, and `proper_nouns`
+treats a sentence-opening capital as an ordinary word, not a name. The translations were
+correct: every translator kept the full name in Latin script, exactly as instructed.
+
+Fix applied this run: `--allow Anandi,Anuj,James,Nicolas` on the check command. This is
+the documented escape hatch, not a new mechanism.
+
+**Generalisable, sharpening the project 12 lesson: the auto-derived allowlist has a
+structural blind spot at sentence starts**, because it needs the *previous* token to tell
+a name from an opener and the first mention of any person is usually right after a period.
+Expect this on every project that introduces a researcher by full name, and check for it
+before assuming a real leak: if the flagged word is a given name immediately followed by
+a capitalised surname that already passed, it is this gap, not a translator's mistake.
+
+### 2026-09-06, all projects, filenames switched from BCP-47 code to language name
+
+Change: the owner asked for `outputs/captions/*.srt` to be named by full language name
+(`English.srt`, `Vietnamese.srt`) instead of code (`en.srt`, `vi.srt`), so the folder reads
+without decoding a tag, and asked for the skill and tool to produce that going forward.
+
+`tools/captions-srt.py` was updated: `build` writes `English.srt`, `assemble` looks up
+`NAMES[code]` to name its output file, and `check` reverse-looks-up a filename to a code
+via the new `CODES` map for script classification (`NON_LATIN` membership) and falls back
+to reporting an unrecognised filename outright rather than silently skipping its checks.
+The working translation payloads (`<code>.json`, written by each translating subagent
+before it runs `assemble`) are untouched, still keyed by code; only the final `.srt` stem
+changed.
+
+Project 13's 25 files were renamed in place and re-verified with `check`, clean.
+
+Tradeoff flagged to the owner before making the change: nothing in this repo automates
+caption *upload* to YouTube (`tools/youtube-api.py` only has a `transcript` subcommand,
+which downloads), so a human always picks the language explicitly in YouTube Studio's
+upload UI regardless of local filename. The BCP-47-as-stem convention this replaces was
+therefore a documented preference, not a load-bearing dependency. If an automated caption
+upload is ever wired up, check whether it expects the code as the filename and reintroduce
+a lookup there rather than reverting this.
 
 ## Future entries
 

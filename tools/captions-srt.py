@@ -3,17 +3,17 @@
 
 Three stages, mirroring how the captions skill runs:
 
-  build      words.json -> outputs/captions/en.srt + blocks.json
+  build      words.json -> outputs/captions/English.srt + blocks.json
              Blocks are cut on real word timings, so every subtitle starts on the
              first word's true onset and ends on the last word's true offset.
 
-  assemble   blocks.json + <code>.json -> outputs/captions/<code>.srt
+  assemble   blocks.json + <code>.json -> outputs/captions/<Language>.srt
              The translated text is poured into the English timing spine. Timings
              are identical across every language by construction, never by luck.
 
   check      outputs/captions/*.srt -> pass or fail
              Sequence, timing, emptiness, duplicate, script-leak, and em dash scan
-             of every language file against en.srt.
+             of every language file against English.srt.
 
 Usage:
 
@@ -54,8 +54,11 @@ LEAD_OUT = 300       # hold the subtitle past the last word so it does not read 
 TAIL_GAP = 80        # blank frame between consecutive subtitles
 MIN_DISPLAY = 1000   # floor on how briefly a subtitle may flash
 
-# Languages this skill ships. The code is the SRT file stem and is the BCP-47 tag
-# YouTube expects when the file is uploaded as a caption track.
+# Languages this skill ships. The code is still what YouTube's caption upload
+# expects as the BCP-47 tag, but the SRT file stem is the full language name
+# (English.srt, Chinese Simplified.srt, ...), so a human browsing the folder does
+# not have to decode a code. Whoever uploads a track picks its language in the
+# YouTube Studio UI regardless of local filename, so this costs nothing there.
 LANGUAGES = [
     ("ar", "Arabic"),
     ("bn", "Bangla"),
@@ -84,6 +87,7 @@ LANGUAGES = [
     ("vi", "Vietnamese"),
 ]
 NAMES = dict(LANGUAGES)
+CODES = {name: code for code, name in LANGUAGES}  # filename -> code, for classification
 
 # Languages written in a non-Latin script. A run of Latin letters inside one of these
 # is an untranslated source word that every structural check passes over in silence.
@@ -321,7 +325,7 @@ def cmd_build(args):
 
     out_dir = Path(args.out)
     out_dir.mkdir(parents=True, exist_ok=True)
-    srt_path = out_dir / "en.srt"
+    srt_path = out_dir / ("%s.srt" % NAMES["en"])
     srt_path.write_text(render_srt(entries), encoding="utf-8")
 
     blocks_path = out_dir / "blocks.json"
@@ -396,7 +400,7 @@ def cmd_assemble(args):
 
     out_dir = Path(args.out)
     out_dir.mkdir(parents=True, exist_ok=True)
-    path = out_dir / ("%s.srt" % code)
+    path = out_dir / ("%s.srt" % NAMES[code])
     path.write_text(
         render_srt([dict(e, text=t) for e, t in zip(entries, cleaned)]),
         encoding="utf-8",
@@ -408,7 +412,7 @@ def cmd_assemble(args):
 
 
 def proper_nouns(blocks):
-    """Latin words a non-Latin file is allowed to keep, derived from en.srt.
+    """Latin words a non-Latin file is allowed to keep, derived from English.srt.
 
     Researcher names, study titles, and place names stay in Latin script inside a
     Japanese or Hindi subtitle, and that is correct. Everything else Latin in
@@ -442,7 +446,7 @@ def parse_srt(path):
 
 def cmd_check(args):
     directory = Path(args.dir)
-    ref_path = directory / "en.srt"
+    ref_path = directory / ("%s.srt" % NAMES["en"])
     if not ref_path.exists():
         die("%s not found. Run the build stage first." % ref_path)
 
@@ -453,19 +457,20 @@ def cmd_check(args):
     problems, lines = [], []
 
     for path in files:
-        code = path.stem
+        language = path.stem
+        code = CODES.get(language)
         blocks = parse_srt(path)
         found = []
 
         if len(blocks) != len(ref):
-            found.append("%d blocks, en.srt has %d" % (len(blocks), len(ref)))
+            found.append("%d blocks, %s has %d" % (len(blocks), ref_path.name, len(ref)))
         else:
             drift = sum(
                 1 for a, b in zip(blocks, ref)
                 if a[0] != b[0] or a[1] != b[1] or a[2] != b[2]
             )
             if drift:
-                found.append("%d blocks disagree with en.srt on sequence or timing" % drift)
+                found.append("%d blocks disagree with %s on sequence or timing" % (drift, ref_path.name))
 
         for seq, start, end, text in blocks:
             if not text:
@@ -487,7 +492,12 @@ def cmd_check(args):
         if any(EM_DASH in b[3] for b in blocks):
             found.append("contains an em dash, banned by house rules")
 
-        if code in NON_LATIN:
+        if code is None:
+            found.append(
+                "filename does not match any of the 25 language names; "
+                "expected one from LANGUAGES, e.g. \"Vietnamese.srt\""
+            )
+        elif code in NON_LATIN:
             leaks = []
             for seq, _, _, text in blocks:
                 stray = [w for w in LATIN_RUN.findall(text) if w.lower() not in allowed]
@@ -500,13 +510,12 @@ def cmd_check(args):
                 )
 
         status = "FAIL" if found else "ok"
-        lines.append("%-9s %-4s %4d blocks  %s"
-                     % (code, status, len(blocks), NAMES.get(code, "?")))
+        lines.append("%-22s %-4s %4d blocks" % (language, status, len(blocks)))
         for f in found:
             lines.append("            %s" % f)
-            problems.append("%s: %s" % (code, f))
+            problems.append("%s: %s" % (language, f))
 
-    missing = [c for c, _ in LANGUAGES if not (directory / ("%s.srt" % c)).exists()]
+    missing = [name for _, name in LANGUAGES if not (directory / ("%s.srt" % name)).exists()]
 
     print("\n".join(lines))
     if missing:
@@ -514,7 +523,7 @@ def cmd_check(args):
     if problems:
         print("\n%d problem(s). Fix and re-check before reporting done." % len(problems))
         raise SystemExit(1)
-    print("\n%d file(s) clean, all in sync with en.srt." % len(files))
+    print("\n%d file(s) clean, all in sync with %s." % (len(files), ref_path.name))
 
 
 # ---------------------------------------------------------------- cli
@@ -526,7 +535,7 @@ def main():
     )
     sub = p.add_subparsers(dest="cmd", required=True)
 
-    a = sub.add_parser("build", help="words.json -> en.srt + blocks.json")
+    a = sub.add_parser("build", help="words.json -> English.srt + blocks.json")
     a.add_argument("--words", required=True, help="transcribes/words.json")
     a.add_argument("--transcript", required=True, help="transcribes/transcript.md")
     a.add_argument("--out", required=True, help="outputs/captions")
@@ -537,18 +546,18 @@ def main():
     a.add_argument("--max-chars", type=int, default=MAX_CHARS)
     a.set_defaults(func=cmd_build)
 
-    a = sub.add_parser("assemble", help="blocks.json + <code>.json -> <code>.srt")
+    a = sub.add_parser("assemble", help="blocks.json + <code>.json -> <Language>.srt")
     a.add_argument("--blocks", required=True, help="outputs/captions/blocks.json")
     a.add_argument("--translation", required=True, help="JSON with code + translations")
     a.add_argument("--out", required=True, help="outputs/captions")
     a.add_argument("--code", help="override the code in the translation file")
     a.set_defaults(func=cmd_assemble)
 
-    a = sub.add_parser("check", help="verify every *.srt against en.srt")
+    a = sub.add_parser("check", help="verify every *.srt against English.srt")
     a.add_argument("--dir", required=True, help="outputs/captions")
     a.add_argument("--allow", help="extra Latin words a non-Latin file may keep, "
                                    "comma separated. Names capitalised mid-sentence "
-                                   "in en.srt are allowed automatically.")
+                                   "in English.srt are allowed automatically.")
     a.set_defaults(func=cmd_check)
 
     args = p.parse_args()

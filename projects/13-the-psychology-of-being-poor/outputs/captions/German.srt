@@ -1,0 +1,707 @@
+1
+00:00:00,160 --> 00:00:03,649
+Der Monat, in dem du am wenigsten Geld hast, ist der Monat, in dem du am schlechtesten damit umgehst.
+
+2
+00:00:03,800 --> 00:00:06,820
+Du verpasst die Zahlung. Du vergisst den Termin.
+
+3
+00:00:06,900 --> 00:00:09,260
+Du kaufst das Ding, das du dir nicht leisten kannst.
+
+4
+00:00:09,340 --> 00:00:12,710
+Und du hast die Erklärung schon parat. Du bist schlecht mit Geld.
+
+5
+00:00:12,790 --> 00:00:17,960
+Undiszipliniert. Kurzsichtig. Aber als Forscher es maßen, kehrte sich die Geschichte um.
+
+6
+00:00:18,040 --> 00:00:20,980
+Wenig Geld zu haben, offenbart keinen schlechteren Verstand.
+
+7
+00:00:21,060 --> 00:00:25,630
+Es erzeugt einen, indem es eine Ressource beansprucht, die Forscher Bandbreite nennen,
+
+8
+00:00:25,760 --> 00:00:29,860
+die geistige Kapazität, die dir für alles andere noch übrig bleibt.
+
+9
+00:00:29,940 --> 00:00:34,280
+In den nächsten Minuten siehst du, wie diese Kapazität bei denselben Menschen zweimal gemessen wird,
+
+10
+00:00:34,500 --> 00:00:38,180
+mit einigen Monaten Abstand, und du siehst genau, wohin sie verschwand.
+
+11
+00:00:38,380 --> 00:00:41,880
+Fangen wir in einem Einkaufszentrum in New Jersey an. Anandi Mani,
+
+12
+00:00:42,240 --> 00:00:47,000
+Sendhil Mullainathan, Eldar Shafir und Jiaying Zhao
+
+13
+00:00:47,200 --> 00:00:51,700
+hielten gewöhnliche Kunden an und baten sie, sich ein kleines Problem vorzustellen.
+
+14
+00:00:52,260 --> 00:00:57,080
+Dein Auto muss repariert werden. Für die Hälfte der Leute kostet die Reparatur einhundertfünfzig Dollar.
+
+15
+00:00:57,320 --> 00:01:01,080
+Für die andere Hälfte kostet dieselbe Reparatur fünfzehnhundert.
+
+16
+00:01:01,360 --> 00:01:05,880
+Behalte das im Kopf, sagten sie. Dann, bevor sie irgendjemanden fragten, was er tun würde,
+
+17
+00:01:05,960 --> 00:01:08,320
+gaben sie allen einen normalen Denktest.
+
+18
+00:01:08,400 --> 00:01:11,920
+Formen und Muster. Nichts mit Autos oder Geld zu tun.
+
+19
+00:01:12,000 --> 00:01:16,950
+War die Reparatur billig, schnitten die reicheren und die ärmeren Kunden etwa gleich ab.
+
+20
+00:01:17,200 --> 00:01:21,610
+War die Reparatur teuer, schnitten die reicheren Kunden etwa so ab wie zuvor.
+
+21
+00:01:21,690 --> 00:01:26,120
+Die ärmeren Kunden fielen ab. Tatsächlich war niemandem etwas passiert.
+
+22
+00:01:26,200 --> 00:01:30,000
+Kein Geld verließ ein Konto. Es war ein imaginäres Auto.
+
+23
+00:01:30,080 --> 00:01:33,300
+Aber für die Kunden, die keine fünfzehnhundert Dollar hätten auftreiben können,
+
+24
+00:01:33,380 --> 00:01:38,140
+war die Frage überhaupt nicht imaginär, und ein Teil ihres Verstandes machte sich daran zu arbeiten und war
+
+25
+00:01:38,220 --> 00:01:43,920
+noch nicht zurück, als die Formen erschienen. Der Test maß nicht, wie schlau jemand war.
+
+26
+00:01:44,180 --> 00:01:48,320
+Er maß, was übrig blieb. Genau das bedeutet Bandbreite.
+
+27
+00:01:48,540 --> 00:01:51,020
+Nicht Intelligenz. Kapazität.
+
+28
+00:01:51,660 --> 00:01:56,340
+Der Teil deines Verstandes, der genau jetzt, in dieser Sekunde, frei ist, um einen Plan zu behalten,
+
+29
+00:01:56,540 --> 00:02:01,770
+einem Impuls zu widerstehen, ein Datum zu bemerken, und einen Satz bis zu seinem Ende zu verfolgen.
+
+30
+00:02:02,220 --> 00:02:06,680
+Es ist eine feste Menge, und alles, was darunter läuft, verbraucht sie.
+
+31
+00:02:06,760 --> 00:02:09,520
+Ein Ohrwurm verbraucht ein wenig.
+
+32
+00:02:09,600 --> 00:02:12,100
+Eine Zahl, die du nicht decken kannst, verbraucht eine ganze Menge,
+
+33
+00:02:12,340 --> 00:02:17,120
+weil dein Verstand nicht dafür gebaut ist, ein ungelöstes Überlebensproblem abzulegen und weiterzumachen.
+
+34
+00:02:17,660 --> 00:02:20,760
+Er arbeitet weiter daran. Leise.
+
+35
+00:02:21,470 --> 00:02:26,520
+Ohne dich zu fragen. Die Einkaufszentrum-Studie bewies, dass der Effekt existiert.
+
+36
+00:02:26,829 --> 00:02:29,940
+Die nächste bewies, dass es nicht an den Menschen lag.
+
+37
+00:02:30,560 --> 00:02:35,380
+Dieselben Forscher gingen nach Tamil Nadu, in Südindien, und fanden Zuckerrohrbauern,
+
+38
+00:02:35,460 --> 00:02:39,240
+die einmal im Jahr bezahlt werden. Im Monat vor der Ernte
+
+39
+00:02:39,460 --> 00:02:45,120
+sind sie wirklich arm. Kredite offen, Pfandscheine in der Schublade, Rechnungen, die warten.
+
+40
+00:02:45,200 --> 00:02:48,840
+Im Monat nach der Ernte ist dasselbe Geldproblem einfach verschwunden.
+
+41
+00:02:49,060 --> 00:02:51,820
+Derselbe Bauer. Dasselbe Feld. Dasselbe Gehirn.
+
+42
+00:02:51,900 --> 00:02:55,710
+Rund vierhundertfünfzig von ihnen wurden zu beiden Zeitpunkten getestet.
+
+43
+00:02:56,060 --> 00:02:59,020
+Nach der Ernte schnitten sie deutlich besser ab.
+
+44
+00:02:59,100 --> 00:03:03,700
+Die Forscher bezifferten den Unterschied auf etwa dreizehn Punkte im IQ-Test,
+
+45
+00:03:03,780 --> 00:03:06,260
+und um dir ein Gefühl dafür zu geben, was diese Größe bedeutet,
+
+46
+00:03:06,340 --> 00:03:10,960
+das liegt in dem Bereich, den eine ganze durchwachte Nacht mit deinem Denken anstellt.
+
+47
+00:03:11,040 --> 00:03:14,340
+Lies das noch einmal, denn der Aufbau der Studie ist das ganze Argument.
+
+48
+00:03:14,450 --> 00:03:17,400
+Nicht arme Menschen im Vergleich zu reichen Menschen.
+
+49
+00:03:17,480 --> 00:03:20,900
+Dieselbe Person, verglichen mit sich selbst, in zwei verschiedenen Monaten.
+
+50
+00:03:20,980 --> 00:03:22,860
+Was auch immer du über Charakter sagen willst,
+
+51
+00:03:22,940 --> 00:03:25,880
+Disziplin oder Erziehung, das bleibt vollkommen konstant,
+
+52
+00:03:26,020 --> 00:03:28,800
+weil es derselbe Charakter in beiden Spalten ist.
+
+53
+00:03:28,880 --> 00:03:31,680
+Nur das Geld änderte sich. Und es war nicht Hunger
+
+54
+00:03:32,080 --> 00:03:35,060
+und es war nicht Erschöpfung. Sie haben es überprüft.
+
+55
+00:03:35,450 --> 00:03:40,000
+Die Bauern vor der Ernte leisteten keine härtere körperliche Arbeit und aßen auch nicht schlechter, in irgendeiner Weise, die
+
+56
+00:03:40,080 --> 00:03:43,180
+das erklärt hätte. Es gab also einen Verstand, der besser abschnitt,
+
+57
+00:03:43,260 --> 00:03:47,260
+der die ganze Zeit im selben Schädel saß, für ein paar Monate einfach unerreichbar.
+
+58
+00:03:47,980 --> 00:03:50,960
+Wo geht er hin? Er geht in den Tunnel.
+
+59
+00:03:52,060 --> 00:03:55,300
+Anuj Shah, der mit Mullainathan und Shafir zusammenarbeitete,
+
+60
+00:03:55,540 --> 00:03:58,380
+führte im Labor eine Version davon mit Spielen durch.
+
+61
+00:03:58,880 --> 00:04:02,100
+Manche Spieler bekamen reichlich Versuche und manche nur sehr wenige,
+
+62
+00:04:02,410 --> 00:04:05,650
+was sie innerhalb dieser kleinen Welt reich oder arm machte.
+
+63
+00:04:05,730 --> 00:04:07,840
+Die armen Spieler waren nicht schlampig.
+
+64
+00:04:07,920 --> 00:04:12,920
+Sie waren das Gegenteil. Sie konzentrierten sich stärker auf jeden Versuch und holten mehr daraus heraus als die
+
+65
+00:04:13,000 --> 00:04:17,740
+reichen Spieler. Dann ließen die Forscher die Leute Versuche aus zukünftigen Runden leihen.
+
+66
+00:04:18,000 --> 00:04:20,840
+Die armen Spieler liehen sich welche, und liehen sich noch mehr,
+
+67
+00:04:20,920 --> 00:04:25,880
+und endeten mit schlechteren Gesamtergebnissen, als wenn sie nie hätten leihen dürfen.
+
+68
+00:04:25,960 --> 00:04:30,980
+Das ist keine Nachlässigkeit. Das ist Fokus, gerichtet auf die falsche Entfernung.
+
+69
+00:04:31,060 --> 00:04:34,420
+Knappheit verwischt deine Aufmerksamkeit nicht, sie verengt sie,
+
+70
+00:04:34,500 --> 00:04:37,500
+und alles außerhalb des engen Teils wird dunkel.
+
+71
+00:04:38,120 --> 00:04:41,850
+Nächste Woche ist draußen. Der Brief, den du nicht geöffnet hast, ist draußen.
+
+72
+00:04:41,930 --> 00:04:45,660
+Die billigere Option, die sich erst in drei Monaten auszahlt, ist draußen.
+
+73
+00:04:45,760 --> 00:04:50,280
+Im Tunnel gibt es eine dringende Sache, und darin bist du extrem gut,
+
+74
+00:04:50,360 --> 00:04:53,780
+und die Rechnung für all die Dinge, die du nicht sehen konntest, kommt später,
+
+75
+00:04:53,860 --> 00:04:55,840
+und sieht genau aus wie ein Charakterfehler.
+
+76
+00:04:55,920 --> 00:04:59,320
+Geh weit genug zurück, und das hört auf, wie ein Konstruktionsfehler auszusehen.
+
+77
+00:04:59,520 --> 00:05:03,140
+Den größten Teil der menschlichen Existenz lebtest du in einer Gruppe von ein paar Dutzend Menschen,
+
+78
+00:05:03,300 --> 00:05:07,720
+und Marshall Sahlins stellte über diese Gruppen eine These auf, die Ökonomen bis heute beunruhigt.
+
+79
+00:05:08,140 --> 00:05:11,540
+Er sagte, Wohlstand sei keine Menge, sondern ein Verhältnis,
+
+80
+00:05:11,700 --> 00:05:15,060
+der Abstand zwischen dem, was du willst, und dem, was du erreichen kannst.
+
+81
+00:05:15,280 --> 00:05:17,800
+Jäger und Sammler schlossen diese Lücke von der anderen Seite.
+
+82
+00:05:17,880 --> 00:05:22,520
+Sie wollten wenig, sie bekamen genug, und sie arbeiteten dafür eine überschaubare Anzahl an Stunden.
+
+83
+00:05:22,600 --> 00:05:24,960
+Kein Paradies. Aber auch keine Verzweiflung.
+
+84
+00:05:25,040 --> 00:05:29,080
+Der Grund, warum sie nicht verzweifelt waren, ist der Teil, der für dich zählt.
+
+85
+00:05:29,160 --> 00:05:32,640
+James Woodburn beschrieb sie als Gesellschaften mit unmittelbarem Ertrag.
+
+86
+00:05:32,880 --> 00:05:35,580
+Du bekamst heute Essen, und es war innerhalb eines oder zweier Tage aufgegessen.
+
+87
+00:05:35,760 --> 00:05:39,339
+Es gab kaum Lagerung, keine Kornkammer, keine Ersparnisse,
+
+88
+00:05:39,600 --> 00:05:43,420
+und Werkzeuge waren einfach genug, um sie neu zu machen. Reichtum häufte sich nicht an,
+
+89
+00:05:43,500 --> 00:05:45,820
+und in den meisten dieser Gruppen durfte er das auch nicht.
+
+90
+00:05:46,040 --> 00:05:48,980
+Wer anfing, etwas anzuhäufen, wurde mit Spott wieder eingereiht.
+
+91
+00:05:49,060 --> 00:05:51,780
+Unter dem moralischen Grund steckt ein praktischer.
+
+92
+00:05:51,860 --> 00:05:56,070
+Du trugst, was dir gehörte. Eine Gruppe, die dem Essen folgt, verlegt das Lager mehrmals im Jahr,
+
+93
+00:05:56,150 --> 00:05:59,260
+und jeder Besitz ist etwas, das jemand aufheben und tragen muss,
+
+94
+00:05:59,340 --> 00:06:02,260
+also ist ein Haufen gelagerter Güter keine Sicherheit, sondern Gewicht.
+
+95
+00:06:02,450 --> 00:06:06,880
+Das ist wieder Sahlins. Der Sammler ist nicht arm, weil er fast nichts besitzt.
+
+96
+00:06:06,960 --> 00:06:09,820
+Er besitzt fast nichts, weil mehr zu besitzen ihn verlangsamen würde,
+
+97
+00:06:09,900 --> 00:06:14,380
+und langsam zu sein war die eigentliche Gefahr. Was also hast du getan, wenn morgen nichts zu essen da war?
+
+98
+00:06:15,060 --> 00:06:19,050
+Du hast gefragt. Nicolas Peterson beschrieb das als Teilen auf Verlangen.
+
+99
+00:06:19,400 --> 00:06:23,280
+In vielen Sammlergesellschaften beginnt die Weitergabe nicht mit einem großzügigen Geber,
+
+100
+00:06:23,360 --> 00:06:26,220
+sie beginnt damit, dass die Person, die es braucht, hinübergeht und fragt,
+
+101
+00:06:26,300 --> 00:06:30,520
+und das Fragen ist völlig legitim. Achte darauf, was das mit der Scham macht.
+
+102
+00:06:30,660 --> 00:06:34,240
+Der seltsame Akt in diesem System ist nicht das Fragen, es ist das Verweigern.
+
+103
+00:06:34,320 --> 00:06:38,180
+Niemand wird dafür bewundert, Fleisch abzugeben, denn genau dafür ist das Fleisch da.
+
+104
+00:06:38,260 --> 00:06:41,400
+Und das Lagerproblem wird gelöst, ohne einen einzigen Behälter.
+
+105
+00:06:41,480 --> 00:06:46,400
+Dein Überschuss steckt in dreißig anderen Menschen, und jeder Einzelne von ihnen erinnert sich an den Saldo.
+
+106
+00:06:46,820 --> 00:06:50,970
+Setz jetzt den Tunnel zurück in diese Welt und sieh, wie perfekt er funktioniert.
+
+107
+00:06:51,050 --> 00:06:55,790
+Der Einsatz war nicht abstrakt. Eine schlechte Phase bedeutete drei oder vier Tage mit sehr wenig,
+
+108
+00:06:55,870 --> 00:07:01,180
+in einem Körper, der fast nichts als Reserve trug, an einem Ort ohne Laden und ohne nächsten Gehaltsscheck.
+
+109
+00:07:01,800 --> 00:07:04,790
+Kinder starben in der Lücke zwischen einer Jagdbeute und der nächsten.
+
+110
+00:07:05,340 --> 00:07:10,140
+Also war ein Mangel die mit Abstand wichtigste Tatsache der Welt, solange er andauerte,
+
+111
+00:07:10,280 --> 00:07:13,940
+und ein Verstand, der nicht aufhören konnte, darüber nachzudenken, funktionierte nicht falsch.
+
+112
+00:07:14,120 --> 00:07:16,180
+Er tat die einzige Aufgabe, die zählte.
+
+113
+00:07:16,260 --> 00:07:20,560
+Und der Mangel war akut. Er dauerte Tage, keine Jahrzehnte.
+
+114
+00:07:20,640 --> 00:07:23,820
+Er war konkret. Du konntest auf das leere Ding zeigen.
+
+115
+00:07:24,080 --> 00:07:28,280
+Und er hatte einen Ausweg, und der Ausweg war ein Mensch, jemand mit einem Namen,
+
+116
+00:07:28,360 --> 00:07:33,220
+der etwa dreißig Fuß entfernt stand, der dir etwas schuldete oder schulden würde.
+
+117
+00:07:33,300 --> 00:07:39,460
+Also war ein Verstand, der alles andere fallen ließ und sich hart auf den Mangel stürzte, ein Verstand, der satt wurde.
+
+118
+00:07:39,900 --> 00:07:45,380
+Der Tunnel war kein Fehler. Er war die richtige Notfallreaktion auf einen lösbaren Notfall,
+
+119
+00:07:45,460 --> 00:07:50,340
+und der Notfall endete. Das ist die Version von dir, für die die Verdrahtung gebaut wurde.
+
+120
+00:07:50,640 --> 00:07:54,800
+Schau jetzt, was passiert, wenn du das hier laufen lässt. Moderner Mangel ist nicht akut.
+
+121
+00:07:54,880 --> 00:07:59,680
+Er ist chronisch. Es ist nicht eine schlechte Woche zwischen Jagdbeuten, es ist dieselbe Lücke jeden Monat,
+
+122
+00:07:59,760 --> 00:08:02,200
+die nach Plan kommt, jahrelang.
+
+123
+00:08:02,660 --> 00:08:07,400
+Der Alarm, der dafür gemacht war, heftig loszugehen und dann abzuschalten, bekommt nie das Signal zum Abschalten
+
+124
+00:08:07,480 --> 00:08:12,040
+also öffnet sich der Tunnel und bleibt einfach offen.
+
+125
+00:08:12,120 --> 00:08:15,160
+Deine Bandbreite wird nicht während einer Krise beansprucht.
+
+126
+00:08:15,240 --> 00:08:17,820
+Sie wird als Dauerzustand beansprucht.
+
+127
+00:08:17,900 --> 00:08:23,280
+Der Ausweg ist auch kein Mensch mehr. Er ist ein Zinssatz, ein Formular, eine Warteliste,
+
+128
+00:08:23,360 --> 00:08:26,880
+ein Lohn, festgelegt von jemandem, den du nie treffen wirst.
+
+129
+00:08:26,960 --> 00:08:29,590
+Da ist niemand dreißig Fuß entfernt, den du fragen kannst.
+
+130
+00:08:29,670 --> 00:08:34,130
+Und das Fragen wurde umcodiert, von einer normalen Handlung zu einem Eingeständnis des Versagens,
+
+131
+00:08:34,400 --> 00:08:40,180
+also ist der eine Schritt, den deine Vorfahren ohne Verlegenheit machten, der Schritt, bei dem du lieber verhungern
+
+132
+00:08:40,360 --> 00:08:44,860
+würdest, als ihn zu machen. Wann hast du zuletzt jemanden um etwas gebeten, das wirklich zählte?
+
+133
+00:08:45,220 --> 00:08:48,000
+Dann tut das System etwas wirklich Grausames.
+
+134
+00:08:48,080 --> 00:08:53,800
+Es lässt dich für den Tunnel bezahlen. Jeder Fehler, den die verengte Aufmerksamkeit hervorbringt, hat eine Gebühr,
+
+135
+00:08:53,880 --> 00:08:57,360
+die daran hängt. Verpasse den Termin, zahl die Mahngebühr.
+
+136
+00:08:57,440 --> 00:09:00,120
+Verpasse den Kontostand, zahl die Überziehungszinsen.
+
+137
+00:09:00,200 --> 00:09:03,200
+Verpasse die Frist, zahl die Wiederanschlussgebühr.
+
+138
+00:09:03,280 --> 00:09:08,660
+Kauf das billige Ding zweimal, weil du nicht nach dem greifen konntest, das länger hält.
+
+139
+00:09:08,740 --> 00:09:13,400
+Jedes davon hat einen Preis, und jedes davon wird wahrscheinlicher, wenn du knapp bei Kasse bist,
+
+140
+00:09:13,480 --> 00:09:16,480
+was bedeutet, dass knapp bei Kasse zu sein selbst teuer ist,
+
+141
+00:09:16,560 --> 00:09:20,860
+und die Kosten kommen verkleidet als Beweis dafür, was für ein Mensch du bist.
+
+142
+00:09:20,940 --> 00:09:24,560
+Du steckst in einer Schleife, in der der Mangel die Kapazität nimmt,
+
+143
+00:09:24,640 --> 00:09:29,430
+die fehlende Kapazität die Fehler erzeugt, und die Fehler den Mangel vertiefen.
+
+144
+00:09:29,510 --> 00:09:34,620
+Und die ganze Zeit über bekommst du nur eine Erklärung geliefert, die über deinen Charakter.
+
+145
+00:09:34,700 --> 00:09:38,200
+Hier also kommt der Wechsel, und es ist kein Budget.
+
+146
+00:09:38,360 --> 00:09:41,560
+Hör auf zu versuchen, im Tunnel besser zu denken.
+
+147
+00:09:41,640 --> 00:09:45,150
+Das kannst du nicht. Das ist der Befund, keine Ausrede.
+
+148
+00:09:45,230 --> 00:09:49,910
+Der Bauer mit dreizehn zusätzlichen Punkten hat sich im guten Monat nicht mehr angestrengt,
+
+149
+00:09:49,990 --> 00:09:55,820
+er hatte sie einfach zurück. Was du tun kannst, ist die Entscheidung dorthin zu verlegen, wo die Kapazität ist.
+
+150
+00:09:56,200 --> 00:09:59,340
+Schau dir dein eigenes Jahr an und finde das Fenster, in dem der Druck nachlässt,
+
+151
+00:09:59,540 --> 00:10:02,360
+und sei es nur ein wenig. Der Zahltag.
+
+152
+00:10:03,120 --> 00:10:08,320
+Die Woche, nachdem etwas beglichen ist. Der eine Nachmittag, an dem die Zahl nicht schreit.
+
+153
+00:10:08,880 --> 00:10:14,060
+Dieses Fenster ist dein Monat nach der Ernte, und es ist der einzige Moment, in dem dein voller Verstand im
+
+154
+00:10:14,140 --> 00:10:17,380
+Raum ist. Leg das Nachdenken dorthin.
+
+155
+00:10:17,460 --> 00:10:24,180
+Die Kündigung, den Brief, den Vergleich, das Gespräch, den Plan für die knappe Woche.
+
+156
+00:10:24,800 --> 00:10:26,760
+Nicht weil du dich dann stärker fühlen wirst,
+
+157
+00:10:27,140 --> 00:10:30,050
+sondern weil dir dann nachweislich mehr Verstand zur Verfügung steht,
+
+158
+00:10:30,130 --> 00:10:34,460
+und die Version von dir, die in drei Wochen knapp dran ist, wird mit sehr wenig laufen und sollte nicht
+
+159
+00:10:34,540 --> 00:10:36,960
+gebeten werden, irgendetwas Wichtiges zu entscheiden.
+
+160
+00:10:37,040 --> 00:10:41,560
+Du verschiebst kein Geld. Du verschiebst die Entscheidung auf den Moment, in dem tatsächlich jemand
+
+161
+00:10:41,640 --> 00:10:45,700
+zu Hause ist, um sie zu treffen. Und nichts daran macht dich weniger knapp bei Kasse.
+
+162
+00:10:45,880 --> 00:10:47,900
+Nichts in diesen zehn Minuten tut das,
+
+163
+00:10:47,980 --> 00:10:52,760
+und jeder, der dir erzählt, eine Einstellung schließe eine echte Lücke, verkauft dir etwas.
+
+164
+00:10:52,840 --> 00:10:55,500
+Was sich ändert, ist die Geschichte, die an der Lücke hängt,
+
+165
+00:10:55,580 --> 00:10:59,030
+und diese Geschichte hat dich genauso viel gekostet wie die Gebühren.
+
+166
+00:10:59,300 --> 00:11:03,980
+Der Monat, in dem du am wenigsten Geld hast, wird wahrscheinlich trotzdem der Monat sein, in dem du am schlechtesten damit umgehst.
+
+167
+00:11:04,260 --> 00:11:06,600
+Das verschwindet nicht heute Nacht.
+
+168
+00:11:06,680 --> 00:11:09,920
+Was verschwindet, ist die Vorstellung, dass das irgendetwas über dich beweist,
+
+169
+00:11:10,000 --> 00:11:15,940
+denn es wurde jetzt zweimal bei derselben Person gemessen, im selben Körper, auf demselben Feld,
+
+170
+00:11:16,120 --> 00:11:19,980
+und das Einzige, was sich zwischen den guten und den schlechten Zahlen änderte, war, wie viel
+
+171
+00:11:20,060 --> 00:11:26,620
+auf dem Konto war. Geld ist nicht das Einzige, das einen ganzen Verstand nehmen und sich weigern kann, ihn zurückzugeben.
+
+172
+00:11:26,700 --> 00:11:31,260
+Ein Mensch, den du nie treffen wirst, sagt eine unfreundliche Sache über dich.
+
+173
+00:11:31,820 --> 00:11:36,620
+Zehn andere Menschen waren an dem Tag freundlich. Wie viel vom Abend gehörte diesem einen?
+
+174
+00:11:37,300 --> 00:11:41,020
+Das ist derselbe Tunnel, geöffnet von etwas, das überhaupt nichts kostet,
+
+175
+00:11:41,100 --> 00:11:44,250
+und das Video, das gerade auf deinem Bildschirm läuft, handelt genau davon.
+
+176
+00:11:44,400 --> 00:11:47,840
+Warum der Kommentar eines Fremden deinen ganzen Tag ruinieren kann.
+
+177
+00:11:47,920 --> 00:11:49,360
+Schau dir das als Nächstes an.

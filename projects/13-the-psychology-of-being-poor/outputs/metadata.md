@@ -8,13 +8,13 @@ Why Do You Handle Money Worst When You Have The Least?
 
 ### All five title variants
 
-|     | Formula                        | Title                                                     |
-| --- | ------------------------------ | --------------------------------------------------------- |
-| A   | Why do/can't you \_\_\_?       | Why Do You Handle Money Worst When You Have The Least?    |
-| B   | Your brain still thinks \_\_\_ | Your Brain Still Thinks The Shortage Ends In Three Days   |
+|     | Formula                        | Title                                                      |
+| --- | ------------------------------ | ---------------------------------------------------------- |
+| A   | Why do/can't you \_\_\_?       | Why Do You Handle Money Worst When You Have The Least?     |
+| B   | Your brain still thinks \_\_\_ | Your Brain Still Thinks The Shortage Ends In Three Days    |
 | C   | The \_\_\_ Effect              | The Scarcity Effect: Why Your Mind Shrinks When Money Does |
 | D   | What every human tribe does... | What Every Tribe Did About Shortage That You Stopped Doing |
-| E   | You never noticed that \_\_\_  | You Never Noticed Your Worst Month Is Your Most Expensive |
+| E   | You never noticed that \_\_\_  | You Never Noticed Your Worst Month Is Your Most Expensive  |
 
 ## Description
 

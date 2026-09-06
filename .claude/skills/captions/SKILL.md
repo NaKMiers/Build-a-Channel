@@ -1,6 +1,6 @@
 ---
 name: captions
-description: Build word-accurate SRT subtitle files for a TossExplains video from the forced-aligned words.json, then translate them into up to 25 languages. Writes one .srt per language to outputs/captions/. Runs after /transcript. Use when the user says "captions", "subtitles", "srt", "translate the transcript", or names a language to subtitle into.
+description: Build word-accurate SRT subtitle files for a TossExplains video from the forced-aligned words.json, then translate them into up to 25 languages. Writes one .srt per language, named by full language name (English.srt, Vietnamese.srt, ...), to outputs/captions/. Runs after /transcript. Use when the user says "captions", "subtitles", "srt", "translate the transcript", or names a language to subtitle into.
 ---
 
 # Captions (Claude wrapper)

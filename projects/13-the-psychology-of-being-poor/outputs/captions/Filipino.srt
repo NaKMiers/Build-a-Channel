@@ -1,0 +1,707 @@
+1
+00:00:00,160 --> 00:00:03,649
+Sa buwan na pinaka-kulang ka sa pera, doon mo rin pinakamasamang hinahawakan ang lahat.
+
+2
+00:00:03,800 --> 00:00:06,820
+Nakakaligtaan mo ang bayad. Nakakalimutan mo ang appointment.
+
+3
+00:00:06,900 --> 00:00:09,260
+Binibili mo ang bagay na hindi mo naman kaya.
+
+4
+00:00:09,340 --> 00:00:12,710
+At may paliwanag ka na agad. Masama ka raw sa pera.
+
+5
+00:00:12,790 --> 00:00:17,960
+Walang disiplina. Walang malayong pananaw. Pero nang sinukat ito ng mga researcher, baligtad ang kwento.
+
+6
+00:00:18,040 --> 00:00:20,980
+Ang kakulangan sa pera ay hindi nagpapakita ng mas mahinang isip.
+
+7
+00:00:21,060 --> 00:00:25,630
+Ito mismo ang gumagawa nito, sa pamamagitan ng pag-agaw sa isang bagay na tinatawag ng mga researcher na bandwidth,
+
+8
+00:00:25,760 --> 00:00:29,860
+na siyang natitirang kapasidad ng isip mo para sa lahat ng iba pang bagay.
+
+9
+00:00:29,940 --> 00:00:34,280
+Sa susunod na ilang minuto, makikita mo ang kapasidad na iyon na sinukat sa parehong mga tao nang dalawang beses,
+
+10
+00:00:34,500 --> 00:00:38,180
+ilang buwan ang pagitan, at makikita mo mismo kung saan ito napunta.
+
+11
+00:00:38,380 --> 00:00:41,880
+Magsimula tayo sa isang shopping mall sa New Jersey. Sina Anandi Mani,
+
+12
+00:00:42,240 --> 00:00:47,000
+Sendhil Mullainathan, Eldar Shafir, at Jiaying Zhao
+
+13
+00:00:47,200 --> 00:00:51,700
+ay huminto sa mga ordinaryong shopper at pinaisip sila ng isang maliit na problema.
+
+14
+00:00:52,260 --> 00:00:57,080
+Kailangan ng ayos ang kotse mo. Sa kalahati ng mga tao, 150 dolyar ang gastos sa pag-aayos.
+
+15
+00:00:57,320 --> 00:01:01,080
+Sa kalahati naman, 1500 ang gastos sa parehong ayos.
+
+16
+00:01:01,360 --> 00:01:05,880
+Tandaan mo raw iyon, sabi nila. Pagkatapos, bago tanungin ang sinuman kung ano ang gagawin nila,
+
+17
+00:01:05,960 --> 00:01:08,320
+binigyan nila ang lahat ng standard na reasoning test.
+
+18
+00:01:08,400 --> 00:01:11,920
+Mga hugis at pattern. Walang kinalaman sa kotse o sa pera.
+
+19
+00:01:12,000 --> 00:01:16,950
+Nang mura ang ayos, halos magkapareho ang score ng mas mayaman at mas mahirap na shopper.
+
+20
+00:01:17,200 --> 00:01:21,610
+Nang mahal ang ayos, halos pareho pa rin ang score ng mas mayamang shopper gaya ng dati.
+
+21
+00:01:21,690 --> 00:01:26,120
+Bumagsak ang score ng mas mahihirap na shopper. Wala namang aktwal na nangyari kaninuman.
+
+22
+00:01:26,200 --> 00:01:30,000
+Walang perang umalis sa alinmang account. Guni-guni lang ang kotse.
+
+23
+00:01:30,080 --> 00:01:33,300
+Pero para sa mga shopper na hindi talaga makakahanap ng 1500 dolyar,
+
+24
+00:01:33,380 --> 00:01:38,140
+hindi kunwari-kunwari lang ang tanong, at may bahagi ng isip nila na umalis para pag-isipan ito at
+
+25
+00:01:38,220 --> 00:01:43,920
+hindi na bumalik pagdating ng mga hugis. Hindi sinukat ng test kung gaano katalino ang isang tao.
+
+26
+00:01:44,180 --> 00:01:48,320
+Sinukat nito kung ano ang natira. Iyon ang ibig sabihin ng bandwidth.
+
+27
+00:01:48,540 --> 00:01:51,020
+Hindi katalinuhan. Kapasidad.
+
+28
+00:01:51,660 --> 00:01:56,340
+Ang bahagi ng isip mo na malaya ngayon, sa segundong ito, para tandaan ang isang plano,
+
+29
+00:01:56,540 --> 00:02:01,770
+labanan ang isang pagnanasa, mapansin ang isang petsa, at sundan ang isang pangungusap hanggang sa dulo nito.
+
+30
+00:02:02,220 --> 00:02:06,680
+Fixed na halaga ito, at anumang tumatakbo sa ilalim nito ay gumagastos dito.
+
+31
+00:02:06,760 --> 00:02:09,520
+Kaunti lang ang nagagastos ng isang kantang naka-stuck sa isip mo.
+
+32
+00:02:09,600 --> 00:02:12,100
+Malaki ang nagagastos ng isang numerong hindi mo kayang saklawin,
+
+33
+00:02:12,340 --> 00:02:17,120
+dahil hindi ginawa ang isip mo para i-file lang ang isang hindi nalutas na problema sa pagsurvive at tumuloy na.
+
+34
+00:02:17,660 --> 00:02:20,760
+Patuloy itong ginagawan ng paraan. Tahimik lang.
+
+35
+00:02:21,470 --> 00:02:26,520
+Kahit hindi ka pinapahintulutan. Napatunayan ng mall study na totoo ang epektong ito.
+
+36
+00:02:26,829 --> 00:02:29,940
+Napatunayan naman ng susunod na pag-aaral na hindi ito tungkol sa mga tao mismo.
+
+37
+00:02:30,560 --> 00:02:35,380
+Pumunta ang parehong mga researcher sa Tamil Nadu, sa timog ng India, at nakahanap ng mga magsasakang nagtatanim ng sugarcane,
+
+38
+00:02:35,460 --> 00:02:39,240
+na binabayaran isang beses lang sa isang taon. Sa buwan bago ang anihan,
+
+39
+00:02:39,460 --> 00:02:45,120
+talagang mahirap sila. Puro utang, may resibo ng sanglaan sa drawer, at naghihintay na bayarin.
+
+40
+00:02:45,200 --> 00:02:48,840
+Sa buwan pagkatapos ng anihan, nawawala na lang ang parehong problema sa pera.
+
+41
+00:02:49,060 --> 00:02:51,820
+Parehong magsasaka. Parehong bukid. Parehong utak.
+
+42
+00:02:51,900 --> 00:02:55,710
+Humigit-kumulang 450 sa kanila ang sinuri sa parehong mga sandali.
+
+43
+00:02:56,060 --> 00:02:59,020
+Pagkatapos ng anihan, mas mataas nang malinaw ang score nila.
+
+44
+00:02:59,100 --> 00:03:03,700
+Inilagay ng mga researcher ang agwat sa humigit-kumulang 13 points sa isang IQ test,
+
+45
+00:03:03,780 --> 00:03:06,260
+at para maramdaman mo kung ano ang ibig sabihin ng laking iyon,
+
+46
+00:03:06,340 --> 00:03:10,960
+katumbas ito ng epekto ng isang buong gabing walang tulog sa pag-iisip mo.
+
+47
+00:03:11,040 --> 00:03:14,340
+Basahin mo ulit iyon, dahil ang disenyo mismo ng pag-aaral ang buong argumento.
+
+48
+00:03:14,450 --> 00:03:17,400
+Hindi mga mahirap na tao ikinumpara sa mga mayaman.
+
+49
+00:03:17,480 --> 00:03:20,900
+Iyon din mismong tao, ikinumpara sa sarili niya, sa dalawang magkaibang buwan.
+
+50
+00:03:20,980 --> 00:03:22,860
+Anuman ang gusto mong sabihin tungkol sa karakter,
+
+51
+00:03:22,940 --> 00:03:25,880
+disiplina, o pagpapalaki, hindi ito nagbabago,
+
+52
+00:03:26,020 --> 00:03:28,800
+dahil pareho ang karakter sa parehong kolum.
+
+53
+00:03:28,880 --> 00:03:31,680
+Ang pera lang ang gumalaw. At hindi ito gutom
+
+54
+00:03:32,080 --> 00:03:35,060
+at hindi rin pagkapagod. Sinuri nila ito.
+
+55
+00:03:35,450 --> 00:03:40,000
+Hindi naman mas mabigat ang pisikal na trabaho o mas masama ang pagkain ng mga magsasaka bago ang anihan sa paraang
+
+56
+00:03:40,080 --> 00:03:43,180
+makakapagpaliwanag nito. Kaya may isip na nag-score nang mas mataas,
+
+57
+00:03:43,260 --> 00:03:47,260
+na naroon sa parehong bungo sa buong panahon, hindi lang maabot sa loob ng ilang buwan.
+
+58
+00:03:47,980 --> 00:03:50,960
+Saan ito napupunta? Napupunta ito sa tunnel.
+
+59
+00:03:52,060 --> 00:03:55,300
+Si Anuj Shah, kasama sina Mullainathan at Shafir,
+
+60
+00:03:55,540 --> 00:03:58,380
+ay nagsagawa ng bersyon nito sa isang lab gamit ang mga laro.
+
+61
+00:03:58,880 --> 00:04:02,100
+May mga manlalaro na maraming hula ang binigay, at may ilan namang kaunti lang,
+
+62
+00:04:02,410 --> 00:04:05,650
+kaya naging mayaman o mahirap sila sa loob ng maliit na mundong iyon.
+
+63
+00:04:05,730 --> 00:04:07,840
+Hindi pabaya ang mga mahihirap na manlalaro.
+
+64
+00:04:07,920 --> 00:04:12,920
+Kabaligtaran pa nga. Mas husto ang konsentrasyon nila sa bawat hula at mas malaki ang nakuha nila kaysa sa
+
+65
+00:04:13,000 --> 00:04:17,740
+mga mayamang manlalaro. Pagkatapos, pinahiram ng mga researcher sa mga tao ang mga hula mula sa mga susunod na round.
+
+66
+00:04:18,000 --> 00:04:20,840
+Humiram ang mga mahihirap na manlalaro, at humiram pa ulit,
+
+67
+00:04:20,920 --> 00:04:25,880
+at natapos na mas masama pa ang total score nila kaysa kung hindi na lang sila pinayagang humiram.
+
+68
+00:04:25,960 --> 00:04:30,980
+Hindi iyon kapabayaan. Iyon ay pokus, na nakatutok sa maling distansya.
+
+69
+00:04:31,060 --> 00:04:34,420
+Hindi nililabo ng kakulangan ang atensyon mo, pinapaliit lang nito ito,
+
+70
+00:04:34,500 --> 00:04:37,500
+at nagdidilim ang lahat ng nasa labas ng makipot na bahaging iyon.
+
+71
+00:04:38,120 --> 00:04:41,850
+Nasa labas ang susunod na linggo. Nasa labas ang liham na hindi mo pa binuksan.
+
+72
+00:04:41,930 --> 00:04:45,660
+Nasa labas ang mas murang opsyon na tatlong buwan pa bago magbunga.
+
+73
+00:04:45,760 --> 00:04:50,280
+Sa loob ng tunnel, may isang agarang bagay, at sobrang galing mo rito,
+
+74
+00:04:50,360 --> 00:04:53,780
+at ang bayarin para sa lahat ng bagay na hindi mo nakita ay darating mamaya,
+
+75
+00:04:53,860 --> 00:04:55,840
+at mukhang eksaktong parang kapintasan sa karakter mo.
+
+76
+00:04:55,920 --> 00:04:59,320
+Ngayon, bumalik tayo nang malayo, at hindi na ito mukhang isang depekto sa disenyo.
+
+77
+00:04:59,520 --> 00:05:03,140
+Sa mahabang karamihan ng pag-iral ng tao, nakatira ka sa isang grupong ilang dosenang tao lang,
+
+78
+00:05:03,300 --> 00:05:07,720
+at gumawa si Marshall Sahlins ng argumento tungkol sa mga grupong iyon na nakaka-abala pa rin sa mga ekonomista hanggang ngayon.
+
+79
+00:05:08,140 --> 00:05:11,540
+Sabi niya, ang kasaganaan ay hindi isang halaga, ito ay isang ratio,
+
+80
+00:05:11,700 --> 00:05:15,060
+ang distansya sa pagitan ng gusto mo at ng kaya mong abutin.
+
+81
+00:05:15,280 --> 00:05:17,800
+Sinara ng mga forager ang agwat na iyon mula sa kabilang panig.
+
+82
+00:05:17,880 --> 00:05:22,520
+Kaunti lang ang gusto nila, sapat ang nakuha nila, at kaunti lang ding oras ang ginugol nila para dito.
+
+83
+00:05:22,600 --> 00:05:24,960
+Hindi paraiso. Pero hindi rin desperado.
+
+84
+00:05:25,040 --> 00:05:29,080
+Ang dahilan kung bakit hindi sila desperado ang bahaging mahalaga para sa iyo.
+
+85
+00:05:29,160 --> 00:05:32,640
+Inilarawan ni James Woodburn ang mga ito bilang immediate-return societies.
+
+86
+00:05:32,880 --> 00:05:35,580
+Nakuha mo ang pagkain ngayong araw at nakain ito sa loob ng isa o dalawang araw.
+
+87
+00:05:35,760 --> 00:05:39,339
+Halos walang imbakan, walang bodega ng butil, walang ipon,
+
+88
+00:05:39,600 --> 00:05:43,420
+at simple lang ang mga kagamitan na kayang gawin ulit. Hindi nagbubunton ang kayamanan,
+
+89
+00:05:43,500 --> 00:05:45,820
+at sa karamihan ng mga grupong ito, hindi ito pinapayagan.
+
+90
+00:05:46,040 --> 00:05:48,980
+Ang sinumang nagsimulang mag-ipon nang sobra ay tinutuya para bumalik sa hanay.
+
+91
+00:05:49,060 --> 00:05:51,780
+May praktikal na dahilan na nakatago sa ilalim ng moral na dahilan.
+
+92
+00:05:51,860 --> 00:05:56,070
+Dala-dala mo ang mga ari-arian mo. Ang isang grupong sumusunod sa pagkain ay lumilipat ng kampo nang ilang beses sa isang taon,
+
+93
+00:05:56,150 --> 00:05:59,260
+at bawat ari-arian ay isang bagay na kailangang buhatin at dalhin ng isang tao habang naglalakad,
+
+94
+00:05:59,340 --> 00:06:02,260
+kaya ang bunton ng nakaimbak na kalakal ay hindi seguridad, ito ay bigat.
+
+95
+00:06:02,450 --> 00:06:06,880
+Si Sahlins na naman ito. Hindi mahirap ang forager dahil halos wala siyang ari-arian.
+
+96
+00:06:06,960 --> 00:06:09,820
+Halos wala siyang ari-arian dahil kung mas marami siyang ari-arian, mabagal siya,
+
+97
+00:06:09,900 --> 00:06:14,380
+at ang maging mabagal ang tunay na panganib. Kaya ano ang ginagawa mo kapag walang makakain bukas?
+
+98
+00:06:15,060 --> 00:06:19,050
+Humihingi ka. Inilarawan ito ni Nicolas Peterson bilang demand sharing.
+
+99
+00:06:19,400 --> 00:06:23,280
+Sa maraming lipunan ng mga forager, hindi nagsisimula ang paglipat sa isang mapagbigay na tagabigay,
+
+100
+00:06:23,360 --> 00:06:26,220
+nagsisimula ito sa taong nangangailangan na lumalapit at humihingi,
+
+101
+00:06:26,300 --> 00:06:30,520
+at lehitimo talaga ang paghingi. Pansinin mo ang epekto nito sa kahihiyan.
+
+102
+00:06:30,660 --> 00:06:34,240
+Ang kakaibang kilos sa sistemang iyon ay hindi ang paghingi, ito ay ang pagtanggi.
+
+103
+00:06:34,320 --> 00:06:38,180
+Walang hinahangaan sa pagbibigay ng karne, dahil iyon mismo ang layunin ng karne.
+
+104
+00:06:38,260 --> 00:06:41,400
+At nalulutas ang problema sa imbakan kahit walang iisang lalagyan.
+
+105
+00:06:41,480 --> 00:06:46,400
+Ang labis mo ay nakatago sa loob ng 30 ibang tao, at naaalala ng bawat isa sa kanila ang balanse.
+
+106
+00:06:46,820 --> 00:06:50,970
+Ngayon, ibalik natin ang tunnel sa mundong iyon at panoorin kung gaano ito kaganda gumana.
+
+107
+00:06:51,050 --> 00:06:55,790
+Hindi abstrakto ang panganib. Ang isang masamang panahon ay nangangahulugan ng 3 o 4 na araw na napakaunting mayroon,
+
+108
+00:06:55,870 --> 00:07:01,180
+sa isang katawang halos walang reserba, sa isang lugar na walang tindahan at walang susunod na sahod.
+
+109
+00:07:01,800 --> 00:07:04,790
+Namamatay ang mga bata sa agwat sa pagitan ng isang matagumpay na pangangaso at ng susunod.
+
+110
+00:07:05,340 --> 00:07:10,140
+Kaya ang kakulangan ang pinakamahalagang bagay sa buong mundo habang tumatagal ito,
+
+111
+00:07:10,280 --> 00:07:13,940
+at ang isip na hindi mapigilang paulit-ulit itong pag-isipan ay hindi naman sira.
+
+112
+00:07:14,120 --> 00:07:16,180
+Ginagawa lang nito ang tanging trabahong mahalaga.
+
+113
+00:07:16,260 --> 00:07:20,560
+At matindi ang kakulangan. Ilang araw lang ito tumatagal, hindi dekada.
+
+114
+00:07:20,640 --> 00:07:23,820
+Konkreto ito. Kayang ituro ang bagay na walang laman.
+
+115
+00:07:24,080 --> 00:07:28,280
+At may labasan ito, at ang labasan ay isang tao, isang taong may pangalan,
+
+116
+00:07:28,360 --> 00:07:33,220
+na nakatayo mga 30 piye ang layo, na may utang sa iyo o magkakaroon ng utang sa iyo.
+
+117
+00:07:33,300 --> 00:07:39,460
+Kaya ang isip na iniwan ang lahat ng iba pa at buong-buo sa kakulangan ay isang isip na nakakain.
+
+118
+00:07:39,900 --> 00:07:45,380
+Ang tunneling ay hindi isang bug. Ito ang tamang emergency response sa isang emergency na malulutas,
+
+119
+00:07:45,460 --> 00:07:50,340
+at natapos ang emergency. Iyon ang bersyon mo na para dito talaga ginawa ang wiring.
+
+120
+00:07:50,640 --> 00:07:54,800
+Ngayon, tingnan natin kung ano ang nangyayari kapag pinatakbo mo ito ngayon. Hindi matindi ang modernong kakulangan.
+
+121
+00:07:54,880 --> 00:07:59,680
+Ito ay talamak. Hindi ito isang masamang linggo sa pagitan ng pangangaso, ito ang parehong agwat tuwing buwan,
+
+122
+00:07:59,760 --> 00:08:02,200
+na dumarating ayon sa iskedyul, sa loob ng mga taon.
+
+123
+00:08:02,660 --> 00:08:07,400
+Ang alarma na dinisenyong tumunog nang malakas at pagkatapos ay mamatay ay hindi kailanman nakakatanggap ng senyas para
+
+124
+00:08:07,480 --> 00:08:12,040
+mamatay, kaya bumubukas ang tunnel at nananatiling bukas.
+
+125
+00:08:12,120 --> 00:08:15,160
+Ang bandwidth mo ay hindi lang tinatax habang may krisis.
+
+126
+00:08:15,240 --> 00:08:17,820
+Tinatax ito bilang isang permanenteng kalagayan.
+
+127
+00:08:17,900 --> 00:08:23,280
+Hindi rin isang tao ang labasan. Ito ay isang rate, isang form, isang waiting list,
+
+128
+00:08:23,360 --> 00:08:26,880
+isang sahod na itinakda ng isang taong hindi mo makikilala kailanman.
+
+129
+00:08:26,960 --> 00:08:29,590
+Walang sinumang nasa 30 piye ang layo para hingan.
+
+130
+00:08:29,670 --> 00:08:34,130
+At ang paghingi ay na-recode mula sa isang normal na kilos patungong isang pag-amin ng pagkabigo,
+
+131
+00:08:34,400 --> 00:08:40,180
+kaya ang kilos na ginawa ng mga ninuno mo nang walang hiya ay siya mismong kilos na mas gugustuhin mong magutom
+
+132
+00:08:40,360 --> 00:08:44,860
+kaysa gawin. Kailan mo huling hiningi kahit kanino ang anumang bagay na talagang mahalaga?
+
+133
+00:08:45,220 --> 00:08:48,000
+Pagkatapos, gumagawa ang sistema ng bagay na talagang malupit.
+
+134
+00:08:48,080 --> 00:08:53,800
+Sinisingil ka nito para sa tunnel. Bawat kabiguang idinudulot ng makipot na atensyon ay may bayad na kasama
+
+135
+00:08:53,880 --> 00:08:57,360
+dito. Hindi maabutan ang petsa, bayaran ang late charge.
+
+136
+00:08:57,440 --> 00:09:00,120
+Hindi maabutan ang balanse, bayaran ang overdraft.
+
+137
+00:09:00,200 --> 00:09:03,200
+Hindi maabutan ang deadline, bayaran ang reconnection.
+
+138
+00:09:03,280 --> 00:09:08,660
+Bumili ng murang bersyon nang dalawang beses dahil hindi mo kayang abutin ang isang tumatagal.
+
+139
+00:09:08,740 --> 00:09:13,400
+May presyo ang bawat isa sa mga iyon, at mas malamang mangyari ang bawat isa kapag kulang ka,
+
+140
+00:09:13,480 --> 00:09:16,480
+na ang ibig sabihin, ang kakulangan sa pera mismo ay mahal,
+
+141
+00:09:16,560 --> 00:09:20,860
+at ang gastos na iyon ay dumarating na nakabalatkayong ebidensya kung anong klaseng tao ka.
+
+142
+00:09:20,940 --> 00:09:24,560
+Nasa loob ka ng isang loop kung saan ang kakulangan ang kumukuha ng kapasidad,
+
+143
+00:09:24,640 --> 00:09:29,430
+ang nawawalang kapasidad ang gumagawa ng mga pagkakamali, at ang mga pagkakamali ang nagpapalalim sa kakulangan.
+
+144
+00:09:29,510 --> 00:09:34,620
+At sa buong panahon, ang tanging paliwanag na ibinibigay sa iyo ay iyong tungkol sa karakter mo.
+
+145
+00:09:34,700 --> 00:09:38,200
+Kaya narito ang pagbabago, at hindi ito isang budget.
+
+146
+00:09:38,360 --> 00:09:41,560
+Itigil ang pagsubok na mag-isip nang mas mahusay habang nasa loob ng tunnel.
+
+147
+00:09:41,640 --> 00:09:45,150
+Hindi mo kaya. Iyon ang natuklasan, hindi isang dahilan.
+
+148
+00:09:45,230 --> 00:09:49,910
+Ang magsasakang may 13 points na dagdag na available ay hindi mas nagsikap sa magandang buwan,
+
+149
+00:09:49,990 --> 00:09:55,820
+nabalik lang sa kanya ang mga iyon. Ang kaya mong gawin ay ilipat ang desisyon sa kung nasaan ang kapasidad.
+
+150
+00:09:56,200 --> 00:09:59,340
+Tingnan ang sarili mong taon at hanapin ang bintana kung saan bumibitiw ang presyon,
+
+151
+00:09:59,540 --> 00:10:02,360
+kahit kaunti. Payday.
+
+152
+00:10:03,120 --> 00:10:08,320
+Ang linggo pagkatapos malinis ang isang bagay. Ang isang hapon na hindi sumisigaw ang numero.
+
+153
+00:10:08,880 --> 00:10:14,060
+Ang bintanang iyon ang iyong post-harvest month, at ito ang tanging sandali na nasa
+
+154
+00:10:14,140 --> 00:10:17,380
+kwarto ang buo mong isip. Doon mo ilagay ang pag-iisip.
+
+155
+00:10:17,460 --> 00:10:24,180
+Ang pagkansela, ang liham, ang paghahambing, ang usapan, ang plano para sa masikip na linggo.
+
+156
+00:10:24,800 --> 00:10:26,760
+Hindi dahil mas malakas ang pakiramdam mo sa panahong iyon,
+
+157
+00:10:27,140 --> 00:10:30,050
+kundi dahil mas marami ang isip mong available sa panahong iyon, at masusukat ito,
+
+158
+00:10:30,130 --> 00:10:34,460
+at ang bersyon mo na kulang sa loob ng 3 linggo ay tatakbo nang halos wala at hindi dapat
+
+159
+00:10:34,540 --> 00:10:36,960
+hingan ng desisyon sa anumang mahalagang bagay.
+
+160
+00:10:37,040 --> 00:10:41,560
+Hindi mo ginagalaw ang pera. Ginagalaw mo ang desisyon papunta sa sandaling talagang
+
+161
+00:10:41,640 --> 00:10:45,700
+nariyan ang isang tao para gawin ito. At walang anuman dito ang magpapabawas sa kakulangan mo sa pera.
+
+162
+00:10:45,880 --> 00:10:47,900
+Wala sa sampung minutong ito ang gumagawa niyon,
+
+163
+00:10:47,980 --> 00:10:52,760
+at ang sinumang nagsasabing may isang mindset na nagsasara ng tunay na agwat ay may binebenta sa iyo.
+
+164
+00:10:52,840 --> 00:10:55,500
+Ang binabago nito ay ang kwentong nakakabit sa agwat,
+
+165
+00:10:55,580 --> 00:10:59,030
+at ang kwentong iyon ay nagkakahalaga sa iyo nang kasinlaki ng mga bayad.
+
+166
+00:10:59,300 --> 00:11:03,980
+Ang buwan na pinakakaunti ang pera mo ay malamang na siya pa ring buwan na pinakamasama mong pinangangasiwaan.
+
+167
+00:11:04,260 --> 00:11:06,600
+Hindi iyon mawawala ngayong gabi.
+
+168
+00:11:06,680 --> 00:11:09,920
+Ang mawawala ay ang ideyang nagpapatunay ito ng anuman tungkol sa iyo,
+
+169
+00:11:10,000 --> 00:11:15,940
+dahil nasukat na ito sa parehong tao nang dalawang beses, sa parehong katawan, sa parehong bukid,
+
+170
+00:11:16,120 --> 00:11:19,980
+at ang tanging bagay na nagbago sa pagitan ng magagandang numero at ng masasama ay kung gaano karami ang
+
+171
+00:11:20,060 --> 00:11:26,620
+nasa account. Hindi lang pera ang kayang kumuha ng buong isip mo at ayaw itong ibalik.
+
+172
+00:11:26,700 --> 00:11:31,260
+Isang taong hindi mo makikilala kailanman ay nagsasabi ng isang bagay na masama tungkol sa iyo.
+
+173
+00:11:31,820 --> 00:11:36,620
+10 ibang tao noong araw na iyon ang mabait. Gaano karami sa gabi ang napunta sa iisa sa kanila?
+
+174
+00:11:37,300 --> 00:11:41,020
+Iyon din ang parehong tunnel, na binuksan ng isang bagay na walang gastos kahit kaunti,
+
+175
+00:11:41,100 --> 00:11:44,250
+at ang video na nasa screen mo ngayon ay tungkol doon.
+
+176
+00:11:44,400 --> 00:11:47,840
+Bakit ang komento ng isang estranghero ay kayang sirain ang buong araw mo.
+
+177
+00:11:47,920 --> 00:11:49,360
+Panoorin mo iyon susunod.
