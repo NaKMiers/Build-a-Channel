@@ -87,6 +87,69 @@ and those do pass clean, including the canonical one-line `[3:24]` to `[3:25]` r
   were all the former, including one deliberate 12-beat STORY stretch that is a single
   continuous scene (the yell, then the pull-back to the room).
 
+## Project 15 check (2026-09-12): the zsh glob trap again, from a second snippet
+
+Project 11 recorded that Step 1's inventory `for` loop aborts under zsh because `script_*.md`
+is expanded in the current directory. **The same trap lives in the four counting lines directly
+below it**, and it fired here:
+
+```bash
+echo "characters: $(ls "$P"/characters/* 2>/dev/null | grep -v '\.gitkeep$' | grep -c . )"
+```
+
+A freshly scaffolded directory holds only `.gitkeep`, which is hidden, so `*` matches nothing and
+zsh's `nomatch` kills the subshell with `no matches found` before `ls` ever runs. The `2>/dev/null`
+does not help, because the shell aborts before redirecting anything. It printed 0, which happens to
+be the right answer, so **the bug is invisible exactly when the count is zero and would be wrong
+the moment it is not.**
+
+Durable fix, and it needs no glob at all:
+
+```bash
+for d in audios characters outputs scenes; do
+  echo "$d: $(find "$P/$d" -type f ! -name '.gitkeep' | wc -l)"
+done
+```
+
+**Second distinct snippet in this file with the same cause.** Treat any unquoted `*` inside a
+`check` command as a defect on sight, not just the ones already recorded.
+
+### Result on project 15
+
+Every artifact that exists passes. Script 1923 words with zero markdown characters, 297 cues with
+zero malformed lines, cast 6 tokens over 12 fences with 5 V2 sheet openings and zero positive
+`mitten` hits, image prompts 297 for 297 cues with V2 anchor and lock on all of them and zero V1
+strings, 108 chain breaks all well formed and all opening a PLATE, 36 `@[timestamp]` references all
+resolving backward and all carrying the SCENE REFERENCE LIMIT, zero ledger returns missing their
+reference, plan 330 rows with exactly 297 generated, all four enums clean, surfaces summing to 297
+with cobalt and pure white inside their ceilings, cadence 31.5 beats per minute, zero holds over 4
+seconds, thumbnails 9 lines and 5 records with every required clause at 5.
+
+**The 15 register-run flags are all the project 7 shape and none is monotony.** Every flagged
+window is two or three adjacent short build chains in the same register, each opening its own
+`PLATE` and each carrying a sourced delta, which is what a card-and-diagram act looks like when it
+is planned per cue. Printing the window is what distinguishes it from a lazy five-beat hold, and
+that step is not optional.
+
+### REPO-WIDE FAIL that is not project 15's: em dashes in four tracked files
+
+Step 2's repo sweep is not project-scoped and it found live violations of the house rule outside
+the grandfathered fixture and outside `prompts/retired/`:
+
+| File | Hits |
+| ---- | ---- |
+| `.agents/skills/metadata/SKILL.md` | 5 |
+| `.agents/skills/check/SKILL.md` | 3 |
+| `.agents/rules/file-formats.md` | 1 |
+| `projects/9-.../outputs/metadata.md` | 1 |
+
+The project 9 one is the serious one: it sits in a shipped description at line 22, so it would go
+out on YouTube. The other three are rule and skill prose, which the house rule covers explicitly
+("rule files, or chat replies"). **`check` has run many times without these being reported, which
+means the Step 2 sweep output was being skimmed rather than read.** Report the file list every
+run, not just the count.
+
+
 ## Project 11 check (2026-08-28): the skill's own Step 1 snippet aborts under zsh
 
 Step 1's inventory loop is

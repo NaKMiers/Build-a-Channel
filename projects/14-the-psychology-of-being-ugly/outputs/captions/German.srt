@@ -1,0 +1,635 @@
+1
+00:00:00,180 --> 00:00:02,660
+Du weißt genau, was an deinem Gesicht nicht stimmt.
+
+2
+00:00:03,000 --> 00:00:08,780
+Niemand sonst hat es je gesehen. Kein einziges Mal, in all den Jahren, in denen dir Menschen direkt ins Gesicht geschaut haben.
+
+3
+00:00:08,860 --> 00:00:12,920
+Du nennst das Höflichkeit. Oder deine eigene Eitelkeit, die sich endlich zeigt.
+
+4
+00:00:13,180 --> 00:00:16,359
+Aber es ist keins von beidem. Die Lücke zwischen dem, was du siehst,
+
+5
+00:00:16,640 --> 00:00:20,140
+und dem, was andere sehen, wurde gemessen, und sie hat einen Namen:
+
+6
+00:00:20,530 --> 00:00:26,040
+der Spotlight-Effekt. Bittet man Menschen zu schätzen, wie viele die Sache bemerken, die ihnen selbst peinlich ist,
+
+7
+00:00:26,120 --> 00:00:28,480
+sagen sie: etwa die Hälfte des Raums.
+
+8
+00:00:28,800 --> 00:00:33,360
+Die echte Zahl liegt eher bei einem Viertel. Wo also steckt die andere Hälfte,
+
+9
+00:00:33,820 --> 00:00:37,020
+und warum ist dein Gesicht der eine Ort, den du nicht überprüfen kannst?
+
+10
+00:00:37,530 --> 00:00:39,380
+Die Messung kam von einem T-Shirt.
+
+11
+00:00:40,140 --> 00:00:43,240
+Im Jahr 2000 baten die Psychologen Thomas Gilovich,
+
+12
+00:00:43,380 --> 00:00:49,240
+Victoria Medvec und Kenneth Savitsky Studierende, ein Shirt anzuziehen, bedruckt mit dem Gesicht eines
+
+13
+00:00:49,320 --> 00:00:52,690
+längst vergessenen Sängers, das absichtlich leicht peinlich war,
+
+14
+00:00:52,890 --> 00:00:55,900
+und dann in einen Raum voller Kommilitonen zu gehen.
+
+15
+00:00:55,980 --> 00:01:00,600
+Bevor sie hineingingen, schätzte jeder Studierende, wie viele Leute das Shirt bemerken und sich daran erinnern würden.
+
+16
+00:01:01,140 --> 00:01:03,800
+Danach befragten die Forscher den Raum direkt.
+
+17
+00:01:04,060 --> 00:01:09,020
+Die Trägerinnen und Träger schätzten etwa die Hälfte. Tatsächlich hatte es nur etwa ein Viertel bemerkt.
+
+18
+00:01:09,640 --> 00:01:12,640
+Wohin verschwand die andere Hälfte? Nirgendwohin.
+
+19
+00:01:12,720 --> 00:01:17,260
+Sie existierte nie außerhalb eines einzigen Kopfes. Wer das Shirt trug, hatte es angestarrt, seit der Sekunde,
+
+20
+00:01:17,340 --> 00:01:21,220
+in der er oder sie es übergezogen hatte, während alle anderen nur einmal hinsahen und sofort wieder zu dem zurückkehrten, was
+
+21
+00:01:21,300 --> 00:01:24,610
+sie ohnehin schon beschäftigte, und das war so gut wie sicher sie selbst.
+
+22
+00:01:25,380 --> 00:01:29,580
+Das ist der ganze Mechanismus, und er ist seltsam sanft, sobald du ihn einmal erkennst.
+
+23
+00:01:29,660 --> 00:01:34,120
+Du steckst genau im Zentrum deiner eigenen Erfahrung fest, ohne jede Möglichkeit, herauszutreten,
+
+24
+00:01:34,200 --> 00:01:39,180
+also gehst du davon aus, wie laut sich etwas hier drinnen anfühlt, und schaffst es nicht, die Zahl weit genug zu verkleinern für
+
+25
+00:01:39,260 --> 00:01:42,940
+die Menschen dort drüben. Der Raum ist kein Gremium von Richtern.
+
+26
+00:01:43,020 --> 00:01:46,800
+Er ist ein Raum voller Menschen, die genau dieselbe Rechnung über sich selbst anstellen,
+
+27
+00:01:46,880 --> 00:01:49,720
+gerichtet auf ihr eigenes Spiegelbild, nicht auf deins.
+
+28
+00:01:50,320 --> 00:01:53,020
+Der Titel dieser Studie handelt übrigens nicht von Shirts.
+
+29
+00:01:53,320 --> 00:01:58,400
+Er handelt von Handlungen und Aussehen. Das Shirt war einfach das Einfachste, das man ausziehen und
+
+30
+00:01:58,480 --> 00:02:02,270
+zählen konnte. Dein Gesicht ist die schwierigere Version desselben Experiments.
+
+31
+00:02:02,520 --> 00:02:05,680
+Es läuft jeden Tag, und es hat keine Endzeit.
+
+32
+00:02:05,760 --> 00:02:08,220
+Es gibt einen zweiten Grund, warum sich das so sicher anfühlt.
+
+33
+00:02:08,300 --> 00:02:10,640
+Du hast dein eigenes Gesicht fast nie gesehen.
+
+34
+00:02:10,720 --> 00:02:15,240
+Was du gesehen hast, jeden Tag, seit du groß genug warst, um an ein Waschbecken zu reichen, ist die Spiegelversion,
+
+35
+00:02:15,320 --> 00:02:20,380
+seitenverkehrt, und genau diese gespiegelte Version hat dein Gehirn als dich abgespeichert.
+
+36
+00:02:20,980 --> 00:02:24,140
+Im Jahr 1977 fotografierten die Forscher Theodore Mita,
+
+37
+00:02:24,480 --> 00:02:30,320
+Marshall Dermer und Jeffrey Knight Menschen und zeigten jedem von ihnen zwei Abzüge:
+
+38
+00:02:30,900 --> 00:02:35,100
+das echte Foto und eine spiegelverkehrte Kopie davon.
+
+39
+00:02:35,180 --> 00:02:38,849
+Die Leute bevorzugten die gespiegelte Version, das Gesicht, das sie bereits kannten.
+
+40
+00:02:40,120 --> 00:02:43,120
+Ihre engen Freunde, denen dieselben zwei Abzüge vorgelegt wurden,
+
+41
+00:02:43,340 --> 00:02:46,340
+bevorzugten fast immer das echte Foto.
+
+42
+00:02:46,940 --> 00:02:51,380
+Niemand in dieser Studie lag falsch. Man fragte sie nach zwei verschiedenen Gesichtern.
+
+43
+00:02:51,640 --> 00:02:54,800
+Du lebst mit dem einen. Alle anderen leben mit dem anderen.
+
+44
+00:02:55,080 --> 00:02:57,440
+Das Foto also, das dir den Abend verdirbt,
+
+45
+00:02:57,540 --> 00:03:02,530
+aufgenommen mit dem Handy von jemand anderem, aus einem Winkel, den du nicht gewählt hast, ist keine Entdeckung.
+
+46
+00:03:02,680 --> 00:03:07,780
+Es ist dein tatsächliches Gesicht, gesehen von der einen lebenden Person, die nicht daran gewöhnt ist.
+
+47
+00:03:08,500 --> 00:03:12,520
+Unter beidem liegt etwas, das weit älter ist als Spiegel,
+
+48
+00:03:12,800 --> 00:03:16,140
+Kameras, oder die ganze Idee einer Fotografie.
+
+49
+00:03:16,380 --> 00:03:20,790
+Ein schneller, automatischer Bewerter, der ein Gesicht in dem Moment einschätzt, in dem es auftaucht,
+
+50
+00:03:20,900 --> 00:03:23,620
+bevor irgendein bewusster Gedanke aufholen kann.
+
+51
+00:03:24,210 --> 00:03:30,520
+Die Psychologinnen Judith Langlois und Lori Roggman fanden den klarsten Beweis dafür, worauf er
+
+52
+00:03:30,600 --> 00:03:36,380
+ausgerichtet ist. Als sie Dutzende gewöhnlicher Gesichter zu einem einzigen Composite-Bild verschmolzen,
+
+53
+00:03:36,460 --> 00:03:41,780
+bewerteten die Menschen die Mischung als attraktiver als fast jedes einzelne Gesicht, das darin eingeflossen war.
+
+54
+00:03:42,269 --> 00:03:45,880
+Der Bewerter sucht nicht nach etwas Seltenem oder Außergewöhnlichem.
+
+55
+00:03:45,960 --> 00:03:50,060
+Er sucht nach der Mitte. Nach Symmetrie, nach Regelmäßigkeit,
+
+56
+00:03:50,140 --> 00:03:53,040
+nach einem Gesicht, das kein besonderes Problem meldet.
+
+57
+00:03:53,120 --> 00:03:58,480
+Und ein Urteil, das so schnell feuert, bevor du überhaupt denken kannst, ist keine Geschmacksfrage.
+
+58
+00:03:58,760 --> 00:04:02,600
+Solche Geschwindigkeit ist Dingen vorbehalten, die einmal dringend waren.
+
+59
+00:04:02,680 --> 00:04:07,320
+Hier ist, wofür dieser Bewerter eigentlich gebaut wurde, und das ist nicht das, wofür du ihn benutzt hast.
+
+60
+00:04:07,400 --> 00:04:10,480
+Er wurde gebaut, um nach außen zu zeigen. Auf andere Menschen.
+
+61
+00:04:10,560 --> 00:04:12,980
+Für fast die gesamte Dauer der menschlichen Existenz
+
+62
+00:04:13,060 --> 00:04:16,400
+bekam er nicht ein einziges Mal einen klaren Blick auf das Gesicht, zu dem er gehörte.
+
+63
+00:04:17,160 --> 00:04:20,140
+Überleg mal, was ein Mensch tatsächlich von sich selbst sehen konnte.
+
+64
+00:04:20,720 --> 00:04:24,380
+Stilles Wasser an einem windstillen Tag. Ein nasser Stein.
+
+65
+00:04:25,260 --> 00:04:28,800
+Ein Splitter poliertes Gestein, falls die eigene Gruppe zufällig einen besaß.
+
+66
+00:04:29,409 --> 00:04:32,240
+Die eigenen Hände, die eigenen Füße,
+
+67
+00:04:33,000 --> 00:04:37,520
+und nichts oberhalb des Halses. Für etwa zweihunderttausend Jahre
+
+68
+00:04:37,800 --> 00:04:43,211
+war das eine Objekt, das heute in deinem Leben am gründlichsten untersucht wird, genau das Objekt, das ein Mensch
+
+69
+00:04:43,291 --> 00:04:49,000
+strukturell nicht untersuchen konnte. Das Urteil über dein Gesicht lag an einem Ort, den du nicht
+
+70
+00:04:49,080 --> 00:04:52,389
+direkt lesen konntest, nämlich in den Gesichtern aller anderen, während sie dich ansahen.
+
+71
+00:04:52,469 --> 00:04:57,000
+Der Spiegel hat daran nichts geändert, weil der Spiegel kaum wirklich angekommen ist.
+
+72
+00:04:57,080 --> 00:05:00,430
+Ein klarer, scharfer, ehrlicher Spiegel ist ein industrielles Produkt,
+
+73
+00:05:00,700 --> 00:05:04,720
+erst in den letzten paar Jahrhunderten billig genug für ein gewöhnliches Zuhause.
+
+74
+00:05:04,800 --> 00:05:09,720
+Davor war er ein Gegenstand für Reiche, oder eine trübe Platte aus poliertem Metall,
+
+75
+00:05:09,980 --> 00:05:13,980
+oder gar nichts. Diese Rechnung lohnt es sich, einen Moment sacken zu lassen.
+
+76
+00:05:14,240 --> 00:05:17,060
+Zweihunderttausend Jahre eines Gesichts, das du nicht prüfen konntest,
+
+77
+00:05:17,240 --> 00:05:19,940
+dann etwa zweihundert Jahre eines, das du kannst,
+
+78
+00:05:20,020 --> 00:05:25,090
+dann etwa fünfzehn Jahre, in denen du eine leuchtende Kamera bei dir trägst, die es auf Abruf einfängt.
+
+79
+00:05:25,380 --> 00:05:28,550
+Dein Bewerter hatte keine Zeit zu bemerken, dass davon irgendetwas passiert ist.
+
+80
+00:05:28,630 --> 00:05:31,960
+Und die Menschen, die er lesen sollte, waren keine Fremden.
+
+81
+00:05:32,310 --> 00:05:35,520
+Ein Mensch lebte und starb innerhalb einer Gruppe von höchstens ein paar Hundert,
+
+82
+00:05:35,600 --> 00:05:41,450
+und hatte bis zum Erwachsenenalter jedes dieser Gesichter tausende Male gesehen, in jedem Licht,
+
+83
+00:05:41,560 --> 00:05:46,200
+in jedem Alter. Niemand scrollte an einem Gesicht vorbei und sah es nie wieder.
+
+84
+00:05:46,280 --> 00:05:52,320
+Jeden, den du bewertet hast, jagtest du vielleicht neben dir her, heiratetest in seine Familie ein, oder warst auf ihn angewiesen, wenn dir selbst das Essen ausging.
+
+85
+00:05:53,560 --> 00:05:58,920
+Das ist die Welt, die die Evolutionsanthropologin Sarah Blaffer Hrdy ihre ganze Laufbahn lang
+
+86
+00:05:59,000 --> 00:06:03,220
+rekonstruiert hat, und in ihr war Aussehen nie bloße Dekoration.
+
+87
+00:06:03,760 --> 00:06:08,080
+Es war ein Signal, das die ganze Gruppe zugleich las: Gesundheit, Fruchtbarkeit,
+
+88
+00:06:08,200 --> 00:06:10,820
+die Bündnisse, die hinter dir standen.
+
+89
+00:06:11,580 --> 00:06:16,360
+Laut Hrdy hing das Ansehen einer Frau unter den anderen Frauen teilweise genau von dieser Art
+
+90
+00:06:16,440 --> 00:06:20,560
+von Vergleich ab, weil Partner, Verbündete und Schutz begrenzt waren,
+
+91
+00:06:20,640 --> 00:06:23,700
+und alle wurden still gegeneinander eingestuft.
+
+92
+00:06:24,160 --> 00:06:27,720
+Nichts davon lief über Schmeichelei. In einer kleinen Gruppe, die Essen teilte,
+
+93
+00:06:27,800 --> 00:06:32,740
+entschied das Ansehen, wer nach einer misslungenen Jagd Fleisch mit dir teilte, an wessen Feuer du willkommen warst,
+
+94
+00:06:32,820 --> 00:06:39,200
+wessen Kinder man dir anvertraute. Auf dieser Rangliste abzurutschen war kein schlechter Spiegeltag.
+
+95
+00:06:39,280 --> 00:06:42,190
+Es konnte bedeuten, die Menschen zu verlieren, die dich ernährten.
+
+96
+00:06:42,270 --> 00:06:45,380
+Das System ist laut, weil es sich das Recht dazu verdient hat.
+
+97
+00:06:45,480 --> 00:06:48,770
+Und trotzdem war der Maßstab, gegen den bewertet wurde, nie festgelegt.
+
+98
+00:06:48,850 --> 00:06:53,840
+Die Anthropologin Judith Anderson und ihre Kollegen verglichen Körperideale über Dutzende von
+
+99
+00:06:53,920 --> 00:06:59,480
+Gesellschaften hinweg und fanden ein Muster, das keine Theorie universeller Schönheit vorhersagt.
+
+100
+00:06:59,560 --> 00:07:04,440
+Wo Nahrung knapp und unzuverlässig war, galten vollere Körper als attraktiv.
+
+101
+00:07:05,480 --> 00:07:10,140
+Wo Nahrung stetig und verlässlich war, kippte die Vorliebe zu schlank.
+
+102
+00:07:10,840 --> 00:07:12,810
+Der Grund ist kein Rätsel.
+
+103
+00:07:12,890 --> 00:07:15,160
+Wo ein Körper einen Engpass überstehen musste,
+
+104
+00:07:15,440 --> 00:07:20,070
+waren sichtbare Reserven ein echter Vorteil, den man sich bei einem Partner oder Verbündeten wünschte.
+
+105
+00:07:20,870 --> 00:07:26,180
+Wo Engpässe ausblieben, hörten dieselben Reserven auf, irgendetwas Nützliches zu signalisieren,
+
+106
+00:07:26,440 --> 00:07:29,740
+und etwas anderes übernahm die Rolle als Zeichen von Gesundheit.
+
+107
+00:07:30,410 --> 00:07:34,250
+Der Maßstab, den dein Gehirn wie in Stein gemeißelt behandelt, wurde still und leise neu geschrieben,
+
+108
+00:07:34,500 --> 00:07:39,660
+Gesellschaft für Gesellschaft, je nachdem, was sich eine Gruppe zu wünschen leisten konnte.
+
+109
+00:07:39,740 --> 00:07:44,540
+Es hat nie ein Urteil über dich gefällt. Es hat den Raum gelesen, in den du zufällig hineingeboren wurdest.
+
+110
+00:07:45,140 --> 00:07:47,180
+Jetzt stell dir dieses System in deinem Badezimmer vor.
+
+111
+00:07:47,900 --> 00:07:52,820
+Jeden Morgen bekommt ein Bewerter, gebaut, um Fremde einzuschätzen, dem nie Zugang zu seinem eigenen Besitzer gegeben wurde, ein
+
+112
+00:07:52,900 --> 00:07:59,120
+großes, gut beleuchtetes, dauerhaft verfügbares, seitenverkehrtes Bild von genau diesem Besitzer.
+
+113
+00:07:59,200 --> 00:08:03,680
+Also tut er, was er tut. Er bewertet. Du gehst an einem Schaufenster vorbei, und er bewertet erneut.
+
+114
+00:08:03,760 --> 00:08:08,020
+Du öffnest die Frontkamera, und er bewertet eine Version, auf die er nie trainiert wurde.
+
+115
+00:08:08,100 --> 00:08:11,460
+Du gehst in einen Videoanruf, und das Vorschaufenster zeigt das echte,
+
+116
+00:08:11,540 --> 00:08:15,920
+ungespiegelte Gesicht, während dich ein ganzes Leben voller Spiegel auf das Gegenteil trainiert hat,
+
+117
+00:08:16,000 --> 00:08:21,080
+weshalb du dich beim Gehen auf der Straße völlig in Ordnung fühlen kannst und falsch, sobald der Laptopdeckel
+
+118
+00:08:21,160 --> 00:08:25,820
+aufklappt. Und dann, für diesen Teil gibt es überhaupt keine Entsprechung aus der Vorgeschichte,
+
+119
+00:08:26,020 --> 00:08:31,399
+scrollst du. Deine Vergleichsgruppe bestand früher aus ein paar Hundert Gesichtern, die du seit deiner Geburt kanntest.
+
+120
+00:08:31,920 --> 00:08:33,950
+Jetzt sind es Tausende Gesichter pro Woche,
+
+121
+00:08:34,039 --> 00:08:38,579
+die meisten davon ausgewählt von einem Empfehlungssystem, genau weil sie gut performen,
+
+122
+00:08:38,659 --> 00:08:43,820
+viele davon geglättet, ausgeleuchtet, retuschiert, oder aus dreihundert Versuchen ausgesucht.
+
+123
+00:08:44,380 --> 00:08:49,300
+Das ist keine Bevölkerung. Das ist eine Highlight-Auswahl, aus der die gewöhnliche Mitte entfernt wurde.
+
+124
+00:08:49,480 --> 00:08:54,080
+Und dein Bewerter, der einen Nachbarn nicht von einem maschinell optimierten Fremden unterscheiden kann,
+
+125
+00:08:54,240 --> 00:08:57,720
+verbucht jeden Einzelnen von ihnen als lokale Konkurrenz.
+
+126
+00:08:57,800 --> 00:09:02,360
+Wie viel von deinem Urteil ist also eine Messung, und wie viel ist nur Wiederholung?
+
+127
+00:09:02,440 --> 00:09:05,320
+Ein Werkzeug, gebaut, um ein paar Hundert bekannte Gesichter einzustufen,
+
+128
+00:09:05,400 --> 00:09:08,900
+gefüttert mit einem gespiegelten Bild von genau dem einen Gesicht, das es nie sehen sollte,
+
+129
+00:09:09,000 --> 00:09:11,680
+gemessen an einer Bevölkerung, die es gar nicht gibt,
+
+130
+00:09:11,760 --> 00:09:15,410
+und hunderte Male pro Woche eingesetzt, statt ein paar Mal pro Jahreszeit.
+
+131
+00:09:16,040 --> 00:09:18,980
+Jeder Durchlauf fühlt sich an wie eine unabhängige Bestätigung.
+
+132
+00:09:19,060 --> 00:09:21,600
+Es ist dieselbe fehlerhafte Messung, nur noch einmal genommen.
+
+133
+00:09:22,010 --> 00:09:25,020
+Nichts davon heißt, dass das, was du siehst, eingebildet ist.
+
+134
+00:09:25,100 --> 00:09:30,100
+Es kann durchaus da sein. Das ist kein Versprechen, dass du heimlich makellos bist und nur besseres
+
+135
+00:09:30,180 --> 00:09:33,480
+Licht brauchst, und wer dir das verkauft, verkauft dir etwas.
+
+136
+00:09:33,560 --> 00:09:38,820
+Was sich ändert, ist nicht das Merkmal. Es ist das Gewicht darauf, und woher dieses Gewicht kommt.
+
+137
+00:09:38,900 --> 00:09:42,010
+Der Spotlight-Effekt sagt, dass das meiste von diesem Gewicht nie im Raum war.
+
+138
+00:09:42,090 --> 00:09:46,360
+Die Spiegel-Diskrepanz sagt, dass ein guter Teil dessen, was du bewertest, ein Gesicht ist, das fast niemand sonst
+
+139
+00:09:46,440 --> 00:09:51,400
+je gesehen hat. Und der Bewerter hinter beidem wurde gebaut, um einen Fremden einmal zu mustern,
+
+140
+00:09:51,640 --> 00:09:55,360
+nicht um dasselbe Gesicht zehntausend Mal in einem einzigen Leben zu prüfen.
+
+141
+00:09:55,580 --> 00:09:58,360
+Die Verschiebung heute Abend ist also nicht, das Merkmal zu mögen.
+
+142
+00:09:58,520 --> 00:10:01,000
+Sie ist kleiner als das, und nützlicher.
+
+143
+00:10:01,260 --> 00:10:04,060
+Sie besteht darin, aufzuhören, dein eigenes Urteil als Beweis zu behandeln.
+
+144
+00:10:04,140 --> 00:10:09,980
+Es wird trotzdem kommen. In einem Spiegel, in einer Fahrstuhltür, in einem Foto, dem du nicht zugestimmt hast.
+
+145
+00:10:10,060 --> 00:10:14,550
+Und wenn es soweit ist, ist die einzige Frage, die sich lohnt: woran es dich gerade gemessen hat.
+
+146
+00:10:14,980 --> 00:10:19,340
+Ein paar Hundert Menschen, die dich bereits kennen und dich morgen sowieso wiedersehen.
+
+147
+00:10:19,420 --> 00:10:23,140
+Oder ein Scroll voller Fremder, zusammengestellt von einer Maschine, nur um angeschaut zu werden.
+
+148
+00:10:23,620 --> 00:10:25,940
+Dein Spiegelbild ist kein neutraler Zeuge.
+
+149
+00:10:26,020 --> 00:10:31,200
+Es ist der einzige Zeuge in deinem Leben, der mit einem gespiegelten Bild arbeitet, mit einem privaten Scheinwerferlicht,
+
+150
+00:10:31,280 --> 00:10:36,580
+und einer Vergleichsgruppe, neben der kein Mensch vor diesem Jahrhundert je stehen musste.
+
+151
+00:10:37,020 --> 00:10:39,820
+Du weißt immer noch genau, was an deinem Gesicht nicht stimmt.
+
+152
+00:10:39,900 --> 00:10:42,180
+Aber das war nie eine Tatsache über dein Gesicht.
+
+153
+00:10:42,260 --> 00:10:48,140
+Es war eine Tatsache über das einzige Augenpaar, das je damit beauftragt wurde, es zu beobachten, aus nächster Nähe, seitenverkehrt,
+
+154
+00:10:48,220 --> 00:10:50,700
+ein Leben lang, ohne einen anderen Ort zum Hinschauen.
+
+155
+00:10:50,920 --> 00:10:55,480
+Und derselbe Tunnel, der deinen ganzen Verstand um eine knappe Zahl herum verengt, verengt sich genauso stark
+
+156
+00:10:55,560 --> 00:10:59,940
+um ein einziges Merkmal in deinem Gesicht, bis es das Einzige ist, was im Bild übrig bleibt.
+
+157
+00:11:00,040 --> 00:11:02,880
+Wie viele der heutigen Urteile kamen aus genau diesem Tunnel?
+
+158
+00:11:02,960 --> 00:11:07,520
+Dazu gibt es schon ein eigenes Video. Die Psychologie des Armseins.
+
+159
+00:11:07,720 --> 00:11:08,960
+Schau dir das als Nächstes an.

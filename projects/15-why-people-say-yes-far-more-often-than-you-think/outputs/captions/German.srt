@@ -1,0 +1,623 @@
+1
+00:00:00,160 --> 00:00:04,069
+Du weißt schon, wer Nein sagen würde. Gefragt hast du sie nie.
+
+2
+00:00:04,149 --> 00:00:06,230
+Diesen Monat gab es etwas, das du gebraucht hast.
+
+3
+00:00:06,310 --> 00:00:10,200
+Einen Gefallen, eine Vorstellung, zwanzig Minuten von jemandes Zeit.
+
+4
+00:00:10,340 --> 00:00:13,820
+Du hast nicht gefragt. Und du hast ein Wort dafür.
+
+5
+00:00:13,960 --> 00:00:17,380
+Schüchtern. Stolz. Schlecht darin, etwas zu brauchen.
+
+6
+00:00:17,840 --> 00:00:21,050
+Aber so war es nicht. Du warst nicht bescheiden.
+
+7
+00:00:21,290 --> 00:00:24,480
+Du hast eine Vorhersage laufen lassen, und sie lag um die Hälfte daneben.
+
+8
+00:00:24,880 --> 00:00:27,880
+Forscher nennen das Unterschätzen von Zustimmung.
+
+9
+00:00:28,200 --> 00:00:30,600
+Am Ende weißt du, wie groß dieser Fehler ist,
+
+10
+00:00:30,680 --> 00:00:35,540
+warum die Person, die du zu fragen fürchtest, etwas völlig anderes berechnet, als du
+
+11
+00:00:35,620 --> 00:00:40,800
+denkst, und warum das Wie des Fragens die Antwort stärker verändert als das Wen.
+
+12
+00:00:41,200 --> 00:00:44,480
+Fang an mit einem Klemmbrett und einer Straße voller Fremder.
+
+13
+00:00:45,700 --> 00:00:51,900
+2008 gaben Frank Flynn und Vanessa Lake, die heute unter dem Namen Vanessa Bohns veröffentlicht,
+
+14
+00:00:52,240 --> 00:00:54,740
+einer Gruppe von Teilnehmern eine einfache Aufgabe.
+
+15
+00:00:55,280 --> 00:00:57,880
+Geht raus. Sprecht Fremde an.
+
+16
+00:00:57,960 --> 00:01:00,740
+Bringt fünf von ihnen dazu, einen kurzen Fragebogen auszufüllen.
+
+17
+00:01:00,820 --> 00:01:05,480
+Nichts Heikles, nichts Teures, zwei Minuten vom Nachmittag eines Fremden.
+
+18
+00:01:05,680 --> 00:01:09,840
+Bevor jemand den Raum verließ, schrieb jeder Teilnehmer eine Zahl auf.
+
+19
+00:01:09,940 --> 00:01:14,340
+Wie viele Fremde musst du wohl ansprechen, bis fünf von ihnen Ja sagen?
+
+20
+00:01:14,420 --> 00:01:16,440
+Die durchschnittliche Schätzung lag bei etwa zwanzig.
+
+21
+00:01:16,520 --> 00:01:19,040
+Die echte Zahl lag bei etwa zehn.
+
+22
+00:01:19,120 --> 00:01:22,000
+Lass das kurz wirken, denn das ist kein kleiner Irrtum.
+
+23
+00:01:22,280 --> 00:01:26,120
+Es ist kein Rundungsfehler und kein nervöser Mensch, der vorsichtig ist.
+
+24
+00:01:26,580 --> 00:01:30,460
+Die Hälfte der Leute, die die Teilnehmer vorab abgeschrieben hatten, sagte Ja.
+
+25
+00:01:30,780 --> 00:01:34,100
+Jeder davon war ein Fremder, der geholfen hätte und nie gefragt wurde,
+
+26
+00:01:34,180 --> 00:01:38,880
+und der Teilnehmer ging an ihnen vorbei, mit einer Zahl, die er sich oben im Raum ausgedacht hatte.
+
+27
+00:01:38,960 --> 00:01:41,260
+Flynn und Lake wiederholten es mit einer anderen Bitte.
+
+28
+00:01:41,480 --> 00:01:45,540
+Sich das Handy eines Fremden zum Telefonieren leihen. Die Schätzung fiel wieder zu hoch aus.
+
+29
+00:01:45,660 --> 00:01:48,240
+Sie testeten es mit einer Bitte, die echte Zeit kostet:
+
+30
+00:01:48,360 --> 00:01:51,160
+einen Fremden bitten, sie über den Campus zum Sportzentrum zu bringen.
+
+31
+00:01:51,480 --> 00:01:54,700
+Wieder zu hoch. Die Form des Fehlers blieb gleich.
+
+32
+00:01:54,840 --> 00:01:58,700
+Egal welcher Gefallen, die Leute rechneten mit etwa doppelt so vielen Absagen, wie sie
+
+33
+00:01:58,780 --> 00:02:01,500
+tatsächlich bekamen. Woraus besteht dieser Fehler also?
+
+34
+00:02:01,580 --> 00:02:04,250
+Nicht aus Schüchternheit. Aus etwas Mechanischerem.
+
+35
+00:02:04,720 --> 00:02:07,380
+Wenn du eine Bitte planst, sitzt du auf einer Seite davon,
+
+36
+00:02:07,460 --> 00:02:10,900
+und von dieser Seite aus ist genau eine Sache sichtbar.
+
+37
+00:02:11,109 --> 00:02:14,380
+Die Kosten des Ja. Wie viele Minuten es die Person kostet.
+
+38
+00:02:14,660 --> 00:02:18,660
+Wie unpassend es ist. Wie sehr du gleich zur Last fällst.
+
+39
+00:02:19,200 --> 00:02:22,629
+Du rechnest diese Zahl sorgfältig aus, weil es die einzige ist, die du sehen kannst,
+
+40
+00:02:22,960 --> 00:02:25,440
+und dann entscheidest du, dass sie zu hoch ist.
+
+41
+00:02:25,520 --> 00:02:29,700
+Die Person, die du fragen willst, rechnet diese Zahl überhaupt nicht aus.
+
+42
+00:02:29,780 --> 00:02:35,520
+Sie rechnet die Kosten des Nein. Um dich abzulehnen, muss sie jemand sein, der dich abgelehnt hat.
+
+43
+00:02:35,820 --> 00:02:40,640
+Laut, mit eigener Stimme, während du dastehst und gerade gesagt hast, was du brauchst.
+
+44
+00:02:41,049 --> 00:02:45,860
+Das ist keine Rechnung über Zeit. Das ist eine Rechnung darüber, wer sie in den
+
+45
+00:02:45,940 --> 00:02:49,960
+nächsten zehn Sekunden sein wird, und das ist teuer auf eine Art, wie zwei Minuten Fragebogen
+
+46
+00:02:50,040 --> 00:02:53,920
+ausfüllen es nie sind. Zwei Menschen, zwei verschiedene Rechnungen,
+
+47
+00:02:54,000 --> 00:02:58,600
+und nur eine davon löst die Person, die entscheidet, ob überhaupt gefragt wird.
+
+48
+00:02:59,240 --> 00:03:02,820
+Bohns hat in den Jahren danach dokumentiert, wie weit das reicht.
+
+49
+00:03:02,900 --> 00:03:08,500
+Dieselbe Lücke zeigt sich bei Bitten um Spenden, um Unterschriften, um Hilfe bei der Arbeit.
+
+50
+00:03:08,580 --> 00:03:11,120
+Es läuft auch andersherum, und das ist unangenehmer:
+
+51
+00:03:11,240 --> 00:03:15,580
+Menschen unterschätzen auch, wie viel Druck sie jemandem machen, wenn sie um etwas bitten, worum sie
+
+52
+00:03:15,660 --> 00:03:20,140
+nicht hätten bitten sollen. Das Instrument ist nicht auf Bescheidenheit geeicht.
+
+53
+00:03:20,400 --> 00:03:26,560
+Es ist einfach nicht geeicht. Nicholas Epley und Juliana Schroeder fanden dieselbe Fehleinschätzung einen Schritt
+
+54
+00:03:26,640 --> 00:03:29,240
+früher, noch bevor die Bitte überhaupt existiert.
+
+55
+00:03:29,580 --> 00:03:34,040
+Sie nahmen Pendler in Zügen und Bussen in Chicago und baten eine Gruppe, ein
+
+56
+00:03:34,120 --> 00:03:39,220
+Gespräch mit einem Fremden anzufangen. Eine andere Gruppe sollte vorhersagen, wie das laufen würde.
+
+57
+00:03:39,300 --> 00:03:42,620
+Die Vorhersagenden sagten, es werde unangenehm und peinlich,
+
+58
+00:03:42,900 --> 00:03:45,290
+und der Fremde wolle das gar nicht.
+
+59
+00:03:45,370 --> 00:03:49,090
+Die, die es wirklich taten, berichteten von einer angenehmeren Fahrt als die, die schweigend
+
+60
+00:03:49,170 --> 00:03:51,900
+dasaßen, und den Fremden ging es genauso.
+
+61
+00:03:52,300 --> 00:03:56,060
+Die Prognose war falsch. Die Erfahrung war gut.
+
+62
+00:03:56,350 --> 00:03:59,700
+Und die Prognose ist das Einzige, wonach je jemand handelt.
+
+63
+00:03:59,829 --> 00:04:05,600
+Warum also ist das Instrument so eingestellt, und warum wäre ein soziales Tier so gebaut,
+
+64
+00:04:05,680 --> 00:04:10,460
+dass es so beständig und in nur eine Richtung unterschätzt, wie hilfsbereit andere sind?
+
+65
+00:04:10,780 --> 00:04:12,440
+Geh zurück zu der Gruppe, für die es gebaut wurde.
+
+66
+00:04:12,520 --> 00:04:17,759
+Lorna Marshall lebte in den 1950ern jahrelang bei den Ju/'hoansi in Nyae Nyae,
+
+67
+00:04:17,880 --> 00:04:22,940
+im heutigen Namibia, und sie hielt etwas über Fleisch fest, das seltsam klingt, bis man sieht,
+
+68
+00:04:23,020 --> 00:04:27,500
+was es bewirkt. Kam ein großes Tier ins Lager, wurde es nicht verschenkt.
+
+69
+00:04:27,880 --> 00:04:32,750
+Es wurde verteilt. Wer welches Stück bekam, war durch Beziehung und Verpflichtung festgelegt,
+
+70
+00:04:32,880 --> 00:04:35,460
+geregelt entlang von Linien, die ohnehin alle kannten,
+
+71
+00:04:35,540 --> 00:04:38,700
+und der Mann, der das Tier erlegt hatte, hatte erstaunlich wenig mitzureden.
+
+72
+00:04:39,160 --> 00:04:42,380
+Großzügigkeit war keine Entscheidung. Sie war ein Verfahren.
+
+73
+00:04:42,560 --> 00:04:47,260
+Und der Vorwurf, den die Leute fürchteten, war nicht, arm oder schwach oder glücklos zu sein.
+
+74
+00:04:47,540 --> 00:04:51,730
+Es war der Vorwurf, geizig zu sein. Fernherzig, in der Formulierung, die Marshall festhielt.
+
+75
+00:04:52,020 --> 00:04:54,360
+In einer Gruppe, in der alle vom Glück desselben Tages essen,
+
+76
+00:04:54,440 --> 00:04:58,940
+ist der, der zurückhält, die einzige echte Gefahr für alle.
+
+77
+00:04:59,020 --> 00:05:04,510
+Der Anthropologe Nicolas Peterson gab dem Mechanismus 1993 einen Namen,
+
+78
+00:05:04,920 --> 00:05:07,280
+in seiner Arbeit über Wildbeutergesellschaften.
+
+79
+00:05:07,360 --> 00:05:13,200
+Er nannte es forderndes Teilen. In vielen dieser Gruppen wandern Güter nicht,
+
+80
+00:05:13,420 --> 00:05:19,380
+weil der Besitzer sie anbietet. Sie wandern, weil der, der sie braucht, fragt, direkt,
+
+81
+00:05:19,720 --> 00:05:24,140
+laut, oft hartnäckig, und meist vor anderen Leuten.
+
+82
+00:05:24,340 --> 00:05:27,660
+Fragen ist kein letzter Ausweg und kein Gesichtsverlust.
+
+83
+00:05:28,040 --> 00:05:31,360
+Fragen ist der Kanal. So läuft die Wirtschaft.
+
+84
+00:05:31,610 --> 00:05:33,900
+Und sieh dir an, was das mit der Rechnung macht.
+
+85
+00:05:34,320 --> 00:05:36,140
+In einer Gruppe von hundertfünfzig Menschen,
+
+86
+00:05:36,220 --> 00:05:40,480
+der Größe, die Robin Dunbar als Obergrenze für eine Gruppe bestimmt hat, in der jeder zu jedem eine
+
+87
+00:05:40,560 --> 00:05:44,380
+Beziehung halten kann, musstest du fast nie etwas schätzen.
+
+88
+00:05:44,460 --> 00:05:49,040
+Du hast keinen Fremden gefragt. Du hast jemanden gefragt, dessen Antwort du tausendmal
+
+89
+00:05:49,120 --> 00:05:51,440
+gesehen hattest, der dich nächste Woche fragen würde,
+
+90
+00:05:51,520 --> 00:05:54,340
+und der in zehn Jahren noch am selben Feuer sitzen würde.
+
+91
+00:05:54,770 --> 00:05:59,300
+Die Chance auf ein Ja stand nicht infrage. Sie war nicht einmal eine Frage.
+
+92
+00:05:59,380 --> 00:06:01,920
+Der Verstand bekam also nie einen Zustimmungsschätzer.
+
+93
+00:06:02,340 --> 00:06:06,280
+Er brauchte keinen. Was er brauchte, war das gegenteilige Instrument.
+
+94
+00:06:06,520 --> 00:06:10,810
+Eine Bremse. Denn in einer kleinen Gruppe, in der nichts privat ist und niemand weggeht,
+
+95
+00:06:11,020 --> 00:06:14,780
+war das, was dich wirklich ruinieren konnte, nie eine Absage.
+
+96
+00:06:15,100 --> 00:06:17,820
+Es war, bekannt zu werden als der, der immer braucht.
+
+97
+00:06:17,900 --> 00:06:22,920
+Frag zu oft, frag zu groß, frag, ohne je auf der anderen Seite zu stehen,
+
+98
+00:06:23,000 --> 00:06:27,440
+und die Gruppe hat ein Wort für dich, und das Wort wandert, und es wandert schneller als du.
+
+99
+00:06:27,720 --> 00:06:32,180
+Diese Bremse ist das Gefühl in der halben Sekunde, bevor du dich entscheidest, die Nachricht nicht zu senden.
+
+100
+00:06:32,400 --> 00:06:37,060
+Sie ist keine Prognose über die anderen. Sie war kein einziges Mal eine Prognose über die anderen.
+
+101
+00:06:37,140 --> 00:06:41,060
+Sie ist ein sehr altes Instrument, das dein eigenes Ansehen misst, und es war genau,
+
+102
+00:06:41,140 --> 00:06:45,820
+und es war nötig, und es hat deine Vorfahren in der einzigen Gruppe gehalten, die sie am Leben
+
+103
+00:06:45,900 --> 00:06:50,250
+hielt. Folgendes hat sich geändert, und es ist nicht die menschliche Großzügigkeit.
+
+104
+00:06:50,580 --> 00:06:53,840
+In Nyae Nyae war das Netzwerk von Haus aus an.
+
+105
+00:06:53,920 --> 00:06:58,460
+Fleisch kam an, ob du darum batest oder nicht, weil die Regeln es zu dir bewegten.
+
+106
+00:06:58,580 --> 00:07:03,320
+Die Bremse konnte man gefahrlos angezogen lassen, weil das fast nichts kostete.
+
+107
+00:07:03,760 --> 00:07:07,520
+Hilfe kam ohnehin. Du lebst nicht in diesem Netzwerk.
+
+108
+00:07:07,600 --> 00:07:10,460
+Nichts in deinem Leben bewegt sich von selbst auf dich zu.
+
+109
+00:07:10,580 --> 00:07:14,780
+Nicht die Vorstellung, nicht die Empfehlung, nicht die zwanzig Minuten,
+
+110
+00:07:14,900 --> 00:07:18,400
+nicht die helfende Hand bei dem, was du allein nicht tragen kannst.
+
+111
+00:07:18,620 --> 00:07:22,120
+Es gibt nur noch einen Kanal, über den irgendetwas davon dich erreichen kann,
+
+112
+00:07:22,200 --> 00:07:27,600
+und dieser Kanal ist die ausdrückliche Bitte, von dir, an eine bestimmte Person.
+
+113
+00:07:27,680 --> 00:07:30,460
+Das Netzwerk ging von an auf aus.
+
+114
+00:07:30,610 --> 00:07:34,900
+Die Bremse blieb, wo sie war. Und jetzt arbeitet sie ganz ohne Informationen.
+
+115
+00:07:34,980 --> 00:07:40,040
+Die Person, die du zu fragen fürchtest, hast du nicht tausendmal ablehnen sehen.
+
+116
+00:07:40,190 --> 00:07:45,060
+Es ist eine Kollegin, die du seit acht Monaten kennst, oder ein Fremder mit einem Handy in der Hand.
+
+117
+00:07:45,660 --> 00:07:49,920
+Die Bremse hat keine Vergangenheit zum Auslesen, also liest sie das Einzige, was da ist,
+
+118
+00:07:50,000 --> 00:07:52,120
+nämlich wie es sich anfühlen würde, abgelehnt zu werden,
+
+119
+00:07:52,200 --> 00:07:56,220
+und sie reicht dir dieses Gefühl und lässt dich es als deren Antwort verbuchen.
+
+120
+00:07:56,600 --> 00:07:59,880
+Das ist der ganze Fehler. Du bekommst kein Nein.
+
+121
+00:08:00,000 --> 00:08:04,240
+Du erzeugst eines und liest es dann, als käme es von außen.
+
+122
+00:08:04,320 --> 00:08:06,180
+Die Veränderung besteht also nicht darin, mutiger zu sein.
+
+123
+00:08:06,260 --> 00:08:10,860
+Mut ist nicht die Variable, und sich selbst zu sagen, man solle mehr davon haben, hat noch bei
+
+124
+00:08:10,940 --> 00:08:15,970
+niemandem funktioniert. Die Veränderung ist, dich nicht mehr vor der Peinlichkeit zu schützen,
+
+125
+00:08:16,260 --> 00:08:18,740
+denn die Peinlichkeit ist der Wirkstoff.
+
+126
+00:08:20,000 --> 00:08:25,820
+2017 testeten Mahdi Roghanizad und Vanessa Bohns dieselben Bitten über zwei Kanäle.
+
+127
+00:08:26,100 --> 00:08:28,460
+Von Angesicht zu Angesicht und per E-Mail.
+
+128
+00:08:29,060 --> 00:08:35,180
+Gleiche Worte, gleicher Gefallen. Die Bitte in Person war rund vierunddreißig Mal wirksamer als
+
+129
+00:08:35,260 --> 00:08:39,800
+die per E-Mail, und die Leute, die die E-Mails schickten, ahnten nichts davon.
+
+130
+00:08:39,880 --> 00:08:42,320
+Sie erwarteten, dass beides etwa gleich gut funktioniert.
+
+131
+00:08:42,740 --> 00:08:46,500
+Lies das vor dem Mechanismus, und es ist keine Überraschung mehr.
+
+132
+00:08:46,740 --> 00:08:49,360
+Das Ja entstand nie durch die Größe des Gefallens.
+
+133
+00:08:49,440 --> 00:08:54,060
+Es entstand durch die Kosten des Nein. Und eine E-Mail abzulehnen kostet nichts.
+
+134
+00:08:54,400 --> 00:08:58,620
+Eine Nachricht im Gruppenchat auch nicht. Eine Andeutung auch nicht, oder ein Vielleicht,
+
+135
+00:08:58,960 --> 00:09:02,300
+oder der Satz, den du mit ziemlicher Sicherheit schon benutzt hast: gar kein Druck,
+
+136
+00:09:02,380 --> 00:09:07,410
+nur wenn du Zeit hast. Jeder davon ist eine Freundlichkeit, die du dir selbst erweist.
+
+137
+00:09:07,820 --> 00:09:10,160
+Jeder gibt der anderen Person einen kostenlosen Ausgang,
+
+138
+00:09:10,280 --> 00:09:14,720
+und nimmt damit genau die Kraft weg, die das Ja erzeugt hätte.
+
+139
+00:09:14,800 --> 00:09:19,780
+Heute Abend also eine Sache. Nimm die Bitte, die du schon beschlossen hast, nicht zu stellen.
+
+140
+00:09:20,080 --> 00:09:22,580
+Eine Person, mit Namen, keine Gruppe.
+
+141
+00:09:22,860 --> 00:09:25,320
+Sag es laut, am Telefon oder im selben Raum,
+
+142
+00:09:25,720 --> 00:09:29,540
+und sag das, was du wirklich brauchst, statt der abgeschwächten Version.
+
+143
+00:09:29,800 --> 00:09:32,600
+Dann hör auf zu reden und lass sie antworten.
+
+144
+00:09:32,880 --> 00:09:37,120
+Manche werden Nein sagen. Das ist real, und darum geht es nicht.
+
+145
+00:09:37,320 --> 00:09:40,480
+Es geht darum, dass das Nein endlich von ihnen gekommen ist,
+
+146
+00:09:40,780 --> 00:09:44,040
+und in etwa der Hälfte der Fälle, nach allem, was je dazu erforscht wurde,
+
+147
+00:09:44,120 --> 00:09:47,940
+kommt es gar nicht. Du weißt immer noch, wer Nein sagen würde.
+
+148
+00:09:48,020 --> 00:09:52,740
+Du hast sie immer noch nicht gefragt. Aber das war nie eine Tatsache über sie.
+
+149
+00:09:53,380 --> 00:09:58,700
+Es war eine Zahl, die du allein erzeugt hast, in deinem eigenen Kopf, aus dem einzigen Material, das du hattest,
+
+150
+00:09:58,780 --> 00:10:03,440
+nämlich dem Gefühl, abgelehnt zu werden. Sie waren nie im Raum, während du entschieden hast.
+
+151
+00:10:03,840 --> 00:10:07,200
+Hol sie hinein. Und das ist der Teil, über den es sich nachzudenken lohnt,
+
+152
+00:10:07,420 --> 00:10:12,020
+denn du machst das auch mit dir selbst, und am härtesten an der Stelle, die du dir jeden
+
+153
+00:10:12,100 --> 00:10:16,960
+einzelnen Morgen ansiehst. Ein Urteil, das du im Stillen geschrieben hast, in deiner eigenen Handschrift,
+
+154
+00:10:17,040 --> 00:10:21,280
+und dann jahrelang gelesen hast, als hätte es dir jemand anderes gegeben.
+
+155
+00:10:21,360 --> 00:10:27,580
+Kommt dir das bekannt vor? Auf diesem Kanal gibt es ein Video mit dem Titel The Psychology Of Being Ugly.
+
+156
+00:10:27,660 --> 00:10:30,800
+Genau darum geht es. Schau dir das als Nächstes an.

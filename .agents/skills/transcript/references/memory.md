@@ -552,6 +552,92 @@ Xing verification, offsets, wps arithmetic) completed and survives, so when quot
 alignment is a single call with zero rework. That is the same argument project 5's three
 consecutive key failures made.
 
+## Project 15 (2026-09-12) - fastest read on the channel, and a seam overrun at the second join
+
+3 parts at 256 kbps 44.1 kHz mono (uniform, so no VBR header risk): 4m42.4s, 5m03.3s, 0m45.2s,
+combined **10m30.9s**, Xing reporting 10m30.9s. Single ElevenLabs forced-alignment call on
+`audios/full.mp3` against the whole script, same as projects 5, 6, 8 through 14, because
+`script_why_people_say_yes.md` has **zero runs of 2+ blank lines** across its 42 paragraph gaps,
+so there is no part boundary to find.
+
+**297 cues**, median 1.7s, last cue `[10:29.380]`, aligned speech ending at 630.5s of 630.9s
+audio, no malformed lines, transcript text word-for-word identical to the script at 1923 words.
+28.2 cues per minute, the closest any episode has come to the V2 profile's predicted 27.5. Zero
+one-word cues, the first episode with none. Duration is inside the channel-dna 10 to 14 minute
+spec at the low end.
+
+Pre-flight checks in the project 11 order, all passed first time: folder sweep found exactly three
+parts and no stray; `file` confirmed uniform 256 kbps; 1923 / 630.9 = **3.05 wps**; quota was free
+tier 1986 of 10000 used, **8014 remaining** against a predicted 701 credits (1.111 x 630.9).
+`words.json` was again a **bare top-level list**.
+
+### 3.05 wps and 182.9 wpm, the fastest read the channel has recorded
+
+Whole-file 3.05 wps, rolling 30s median **3.07** (max 3.60, min 2.33), so the read is uniform and
+the rate is simply high. That is **182.9 wpm**, above every previous recording and above the 175
+wpm planning figure adopted in project 13. Running table:
+
+| Recording | Measured wpm |
+| --------- | ------------ |
+| Project 11 | 172.8 |
+| Project 12 | 179.5 |
+| Project 13 | 177.9 |
+| Project 14 | 174.0 |
+| Project 15 | 182.9 |
+
+Mean 177.4 across five V2 recordings. **Do not move the planning figure off 175 on this.** 175 is
+deliberately held under the mean so a beat engineered to land at second N lands at or slightly
+before N, and a faster read preserves that direction. Project 15's hook beats therefore landed
+earlier than planned, not later, which is the safe failure. Revisit only if a recording ever comes
+in **below** 175, because that is the direction that breaks the estimator.
+
+### Seam 2 overran its own boundary by 0.12s, seam 1 was clean
+
+The project 14 seam check, repeated:
+
+- **Seam 1 at 282.4s: clean.** `procedure.` ends at 282.08 and `And` starts at 282.56, a 0.48s
+  gap with the part boundary comfortably inside the silence. This is the normal shape.
+- **Seam 2 at 585.7s: the word straddles.** `all.` is aligned 585.12 to 585.82, so its aligned end
+  sits **0.12s past part 2's own 585.7s boundary**, the same shape project 14 recorded at its
+  first seam (0.13s). `You` then starts at 585.86. All four completeness tests pass, so no word is
+  missing, but the tail of `all.` may be clipped on the audio itself. Listen-check, not a failure,
+  and the fix if it is audible is re-exporting part 2 with a longer tail rather than touching the
+  transcript.
+
+**A note on measuring this: do not find the seam word by "last word whose end is under the
+boundary".** A first pass did that and reported seam 1 as a phrase-internal `the -> accusation`
+join with a 0.10s gap, which looked alarming and was an artifact of the query. Print every word
+inside a two-second window around the boundary and read which one, if any, straddles it. That is
+the only form of the question that distinguishes a clean silence join from a real overrun.
+
+### The full "is any audio missing" battery, all four passed
+
+1. **Word-for-word diff.** 1923 vs 1923, identical.
+2. **Rolling 30s window vs whole file.** 3.07 against 3.05. Uniform.
+3. **Largest silences.** Top gap 1.56s, top six all 0.94 to 1.56s and all at sentence boundaries.
+   Nothing resembling a hole.
+4. **Cramming test, 8-word runs.** Median 14.0 cps, worst **1.73x median**, "who would still be
+   sitting at the same" at 5:52, an ordinary run of short function words. Same profile as project
+   14's 1.83x. No drop.
+
+### One duplicate timestamp, next second free, one-step bump
+
+`[10:17]` appears twice, "then spent" (617.04) then "years reading as though somebody else"
+(617.90). The neighbourhood:
+
+```
+[10:14] FREE
+[10:15] in your own handwriting, (615.48)
+[10:16] FREE
+[10:17] then spent (617.04)  ||  years reading as though somebody else (617.90)   <- the duplicate
+[10:18] FREE
+[10:19] had handed it to you. (619.74)
+```
+
+`[10:18]` is free, so this is the simple one-step bump touching a single file, drift +0.10s. The
+project 12 and 13 cascade machinery is not needed, but the map was built before saying so, per the
+project 13 rule.
+
 ## Project 5 rebuild (2026-08-04) - three key failures before one clean align
 
 The project 5 folder was retopiced to `5-why-do-people-follow-the-crowd` and its cast file

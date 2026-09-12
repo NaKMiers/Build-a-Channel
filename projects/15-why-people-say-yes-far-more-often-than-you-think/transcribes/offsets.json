@@ -1,0 +1,35 @@
+{
+  "total": 630.883,
+  "parts": [
+    {
+      "file": "projects/15-why-people-say-yes-far-more-often-than-you-think/audios/part-1.mp3",
+      "start": 0.0,
+      "duration": 282.436,
+      "frames": 10812,
+      "sample_rate": 44100,
+      "bitrates": [
+        256
+      ]
+    },
+    {
+      "file": "projects/15-why-people-say-yes-far-more-often-than-you-think/audios/part-2.mp3",
+      "start": 282.436,
+      "duration": 303.256,
+      "frames": 11609,
+      "sample_rate": 44100,
+      "bitrates": [
+        256
+      ]
+    },
+    {
+      "file": "projects/15-why-people-say-yes-far-more-often-than-you-think/audios/part-3.mp3",
+      "start": 585.691,
+      "duration": 45.192,
+      "frames": 1730,
+      "sample_rate": 44100,
+      "bitrates": [
+        256
+      ]
+    }
+  ]
+}

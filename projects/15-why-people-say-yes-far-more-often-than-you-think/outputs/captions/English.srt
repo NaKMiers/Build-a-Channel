@@ -1,0 +1,623 @@
+1
+00:00:00,160 --> 00:00:04,069
+You already know who would say no. You have never asked them.
+
+2
+00:00:04,149 --> 00:00:06,230
+There was something you needed this month.
+
+3
+00:00:06,310 --> 00:00:10,200
+A favor, an introduction, twenty minutes of someone's time.
+
+4
+00:00:10,340 --> 00:00:13,820
+You did not ask. And you have a word for what that was.
+
+5
+00:00:13,960 --> 00:00:17,380
+Shy. Proud. Bad at needing things.
+
+6
+00:00:17,840 --> 00:00:21,050
+But that is not what happened. You were not being modest.
+
+7
+00:00:21,290 --> 00:00:24,480
+You were running a prediction, and it was wrong by half.
+
+8
+00:00:24,880 --> 00:00:27,880
+Researchers call it underestimating compliance.
+
+9
+00:00:28,200 --> 00:00:30,600
+By the end of this you will know the size of the error,
+
+10
+00:00:30,680 --> 00:00:35,540
+why the person you are afraid to ask is calculating something completely different from what you
+
+11
+00:00:35,620 --> 00:00:40,800
+think, and why the way you ask changes the answer more than who you ask.
+
+12
+00:00:41,200 --> 00:00:44,480
+Start with a clipboard and a street full of strangers.
+
+13
+00:00:45,700 --> 00:00:51,900
+In 2008, Frank Flynn and Vanessa Lake, who now publishes under the name Vanessa Bohns,
+
+14
+00:00:52,240 --> 00:00:54,740
+gave a group of participants a simple job.
+
+15
+00:00:55,280 --> 00:00:57,880
+Go out. Stop strangers.
+
+16
+00:00:57,960 --> 00:01:00,740
+Get five of them to fill in a short questionnaire.
+
+17
+00:01:00,820 --> 00:01:05,480
+Nothing sensitive, nothing expensive, two minutes of a stranger's afternoon.
+
+18
+00:01:05,680 --> 00:01:09,840
+Before anyone left the room, each participant wrote down one number.
+
+19
+00:01:09,940 --> 00:01:14,340
+How many strangers do you think you will have to approach before five of them say yes?
+
+20
+00:01:14,420 --> 00:01:16,440
+The average guess was about twenty.
+
+21
+00:01:16,520 --> 00:01:19,040
+The real number was about ten.
+
+22
+00:01:19,120 --> 00:01:22,000
+Sit with that for a second, because it is not a small miss.
+
+23
+00:01:22,280 --> 00:01:26,120
+It is not a rounding error or a nervous person being cautious.
+
+24
+00:01:26,580 --> 00:01:30,460
+Half of the people the participants had already written off in advance said yes.
+
+25
+00:01:30,780 --> 00:01:34,100
+Every one of those was a stranger who would have helped and was never asked,
+
+26
+00:01:34,180 --> 00:01:38,880
+and the participant walked past them holding a number they had invented in a room upstairs.
+
+27
+00:01:38,960 --> 00:01:41,260
+Flynn and Lake ran it again with a different ask.
+
+28
+00:01:41,480 --> 00:01:45,540
+Borrow a stranger's phone to make a call. The guess came in high again.
+
+29
+00:01:45,660 --> 00:01:48,240
+They ran it with a request that costs real time,
+
+30
+00:01:48,360 --> 00:01:51,160
+asking a stranger to walk them across campus to the gym.
+
+31
+00:01:51,480 --> 00:01:54,700
+High again. The shape of the error did not move.
+
+32
+00:01:54,840 --> 00:01:58,700
+Whatever the favor was, people expected to be turned down roughly twice as often as they
+
+33
+00:01:58,780 --> 00:02:01,500
+actually were. So what is the error made of?
+
+34
+00:02:01,580 --> 00:02:04,250
+Not shyness. Something more mechanical than that.
+
+35
+00:02:04,720 --> 00:02:07,380
+When you plan an ask, you sit on one side of it,
+
+36
+00:02:07,460 --> 00:02:10,900
+and from that side exactly one thing is visible.
+
+37
+00:02:11,109 --> 00:02:14,380
+The cost of the yes. How many minutes it takes them.
+
+38
+00:02:14,660 --> 00:02:18,660
+How inconvenient it is. How much of a nuisance you are about to be.
+
+39
+00:02:19,200 --> 00:02:22,629
+You run that number carefully, because it is the only number you can see,
+
+40
+00:02:22,960 --> 00:02:25,440
+and then you decide it is too high.
+
+41
+00:02:25,520 --> 00:02:29,700
+The person you are about to ask is not running that number at all.
+
+42
+00:02:29,780 --> 00:02:35,520
+They are running the cost of the no. To refuse you, they have to be a person who refused you.
+
+43
+00:02:35,820 --> 00:02:40,640
+Out loud, in their own voice, while you stand there having just said what you needed.
+
+44
+00:02:41,049 --> 00:02:45,860
+That is not a calculation about time. That is a calculation about who they are going to be for
+
+45
+00:02:45,940 --> 00:02:49,960
+the next ten seconds, and it is expensive in a way that two minutes of filling in a
+
+46
+00:02:50,040 --> 00:02:53,920
+questionnaire is not. Two people, two different sums,
+
+47
+00:02:54,000 --> 00:02:58,600
+and only one of them is being solved by the person who decides whether the ask happens.
+
+48
+00:02:59,240 --> 00:03:02,820
+Bohns spent the following years documenting how far this goes.
+
+49
+00:03:02,900 --> 00:03:08,500
+The same gap shows up when people ask for donations, for signatures, for help at work.
+
+50
+00:03:08,580 --> 00:03:11,120
+It runs the other way too, which is less comfortable:
+
+51
+00:03:11,240 --> 00:03:15,580
+people also underestimate how much pressure they put on someone when they ask for something they
+
+52
+00:03:15,660 --> 00:03:20,140
+should not have asked for. The instrument is not tuned for modesty.
+
+53
+00:03:20,400 --> 00:03:26,560
+It is simply not tuned. Nicholas Epley and Juliana Schroeder found the same misreading a step
+
+54
+00:03:26,640 --> 00:03:29,240
+earlier, before the ask exists at all.
+
+55
+00:03:29,580 --> 00:03:34,040
+They took commuters on trains and buses in Chicago and asked one group to strike up a
+
+56
+00:03:34,120 --> 00:03:39,220
+conversation with a stranger. Another group they asked to predict how that would go.
+
+57
+00:03:39,300 --> 00:03:42,620
+The predictors said it would be awkward and unpleasant,
+
+58
+00:03:42,900 --> 00:03:45,290
+and that the stranger would not want it.
+
+59
+00:03:45,370 --> 00:03:49,090
+The people who actually did it reported a more pleasant journey than the ones who sat in
+
+60
+00:03:49,170 --> 00:03:51,900
+silence, and so did the strangers.
+
+61
+00:03:52,300 --> 00:03:56,060
+The forecast was wrong. The experience was fine.
+
+62
+00:03:56,350 --> 00:03:59,700
+And the forecast is the only part anyone ever acts on.
+
+63
+00:03:59,829 --> 00:04:05,600
+So why is the instrument set this way, and why would a social animal be built to underestimate,
+
+64
+00:04:05,680 --> 00:04:10,460
+so consistently and in one direction, how willing other people are to help it?
+
+65
+00:04:10,780 --> 00:04:12,440
+Go back to the group it was built for.
+
+66
+00:04:12,520 --> 00:04:17,759
+Lorna Marshall spent years in the 1950s living with the Ju/'hoansi in Nyae Nyae,
+
+67
+00:04:17,880 --> 00:04:22,940
+in what is now Namibia, and she recorded something about meat that sounds strange until you see
+
+68
+00:04:23,020 --> 00:04:27,500
+what it is doing. When a large animal came into camp, it was not given away.
+
+69
+00:04:27,880 --> 00:04:32,750
+It was distributed. Who received which part was fixed by relationship and obligation,
+
+70
+00:04:32,880 --> 00:04:35,460
+worked out along lines that everybody already knew,
+
+71
+00:04:35,540 --> 00:04:38,700
+and the man who made the kill had remarkably little say in it.
+
+72
+00:04:39,160 --> 00:04:42,380
+Generosity was not a decision. It was a procedure.
+
+73
+00:04:42,560 --> 00:04:47,260
+And the accusation people feared was not that they were poor, or weak, or unlucky.
+
+74
+00:04:47,540 --> 00:04:51,730
+It was that they were stingy. Far-hearted, in the phrase Marshall recorded.
+
+75
+00:04:52,020 --> 00:04:54,360
+In a group where everyone eats out of the same day's luck,
+
+76
+00:04:54,440 --> 00:04:58,940
+the person who holds back is the only real danger anyone faces.
+
+77
+00:04:59,020 --> 00:05:04,510
+The anthropologist Nicolas Peterson put a name to the mechanism in 1993,
+
+78
+00:05:04,920 --> 00:05:07,280
+working across forager societies.
+
+79
+00:05:07,360 --> 00:05:13,200
+He called it demand sharing. In a lot of these groups, goods do not move
+
+80
+00:05:13,420 --> 00:05:19,380
+because the owner offers. They move because the person who needs them asks, directly,
+
+81
+00:05:19,720 --> 00:05:24,140
+out loud, often insistently, and usually in front of other people.
+
+82
+00:05:24,340 --> 00:05:27,660
+Asking is not a last resort or a loss of face.
+
+83
+00:05:28,040 --> 00:05:31,360
+Asking is the channel. It is how the economy runs.
+
+84
+00:05:31,610 --> 00:05:33,900
+And look at what that does to the arithmetic.
+
+85
+00:05:34,320 --> 00:05:36,140
+In a band of a hundred and fifty people,
+
+86
+00:05:36,220 --> 00:05:40,480
+the size Robin Dunbar identified as the ceiling for a group where everyone can hold a
+
+87
+00:05:40,560 --> 00:05:44,380
+relationship with everyone, you almost never had to estimate anything.
+
+88
+00:05:44,460 --> 00:05:49,040
+You were not asking a stranger. You were asking someone whose answer you had watched a thousand
+
+89
+00:05:49,120 --> 00:05:51,440
+times, who would be asking you next week,
+
+90
+00:05:51,520 --> 00:05:54,340
+and who would still be sitting at the same fire in ten years.
+
+91
+00:05:54,770 --> 00:05:59,300
+The odds of a yes were not in doubt. They were not even a question.
+
+92
+00:05:59,380 --> 00:06:01,920
+So the mind was never issued a compliance estimator.
+
+93
+00:06:02,340 --> 00:06:06,280
+It did not need one. What it needed was the opposite instrument.
+
+94
+00:06:06,520 --> 00:06:10,810
+A brake. Because in a small group where nothing is private and nobody leaves,
+
+95
+00:06:11,020 --> 00:06:14,780
+the thing that could actually ruin you was never being refused.
+
+96
+00:06:15,100 --> 00:06:17,820
+It was becoming known as the one who always needs.
+
+97
+00:06:17,900 --> 00:06:22,920
+Ask too often, ask too large, ask without ever being on the other side of it,
+
+98
+00:06:23,000 --> 00:06:27,440
+and the group has a word for you, and the word travels, and it travels faster than you do.
+
+99
+00:06:27,720 --> 00:06:32,180
+That brake is the feeling you get in the half second before you decide not to send the message.
+
+100
+00:06:32,400 --> 00:06:37,060
+It is not a forecast about them. It has never once been a forecast about them.
+
+101
+00:06:37,140 --> 00:06:41,060
+It is a very old instrument measuring your own standing, and it was accurate,
+
+102
+00:06:41,140 --> 00:06:45,820
+and it was necessary, and it kept your ancestors inside the only group that was keeping them
+
+103
+00:06:45,900 --> 00:06:50,250
+alive. Here is what changed, and it is not human generosity.
+
+104
+00:06:50,580 --> 00:06:53,840
+In Nyae Nyae, the network was on by default.
+
+105
+00:06:53,920 --> 00:06:58,460
+Meat arrived whether or not you asked for it, because the rules moved it toward you.
+
+106
+00:06:58,580 --> 00:07:03,320
+The brake was safe to leave on, because leaving it on cost you almost nothing.
+
+107
+00:07:03,760 --> 00:07:07,520
+Help was coming anyway. You do not live in that network.
+
+108
+00:07:07,600 --> 00:07:10,460
+Nothing in your life moves toward you automatically.
+
+109
+00:07:10,580 --> 00:07:14,780
+Not the introduction, not the reference, not the twenty minutes,
+
+110
+00:07:14,900 --> 00:07:18,400
+not the hand with the thing you cannot carry alone.
+
+111
+00:07:18,620 --> 00:07:22,120
+There is only one channel left through which any of it can reach you,
+
+112
+00:07:22,200 --> 00:07:27,600
+and that channel is the explicit request, made by you, to one named person.
+
+113
+00:07:27,680 --> 00:07:30,460
+The network went from on to off.
+
+114
+00:07:30,610 --> 00:07:34,900
+The brake never moved. And now it runs with no information at all.
+
+115
+00:07:34,980 --> 00:07:40,040
+The person you are afraid to ask is not somebody you have watched refuse a thousand times.
+
+116
+00:07:40,190 --> 00:07:45,060
+They are a colleague you have known for eight months, or a stranger with a phone in their hand.
+
+117
+00:07:45,660 --> 00:07:49,920
+The brake has no history to read, so it reads the only thing available,
+
+118
+00:07:50,000 --> 00:07:52,120
+which is how it would feel to be turned down,
+
+119
+00:07:52,200 --> 00:07:56,220
+and it hands you that feeling and lets you file it as their answer.
+
+120
+00:07:56,600 --> 00:07:59,880
+That is the whole error. You are not receiving a no.
+
+121
+00:08:00,000 --> 00:08:04,240
+You are generating one, and then reading it as though it came from outside.
+
+122
+00:08:04,320 --> 00:08:06,180
+So the shift is not to be braver.
+
+123
+00:08:06,260 --> 00:08:10,860
+Bravery is not the variable, and telling yourself to have more of it has never worked for
+
+124
+00:08:10,940 --> 00:08:15,970
+anybody. The shift is to stop protecting yourself from the awkwardness,
+
+125
+00:08:16,260 --> 00:08:18,740
+because the awkwardness is the active ingredient.
+
+126
+00:08:20,000 --> 00:08:25,820
+In 2017, Mahdi Roghanizad and Vanessa Bohns tested the same requests in two channels.
+
+127
+00:08:26,100 --> 00:08:28,460
+Face to face, and by email.
+
+128
+00:08:29,060 --> 00:08:35,180
+Same words, same favor. The in-person request was roughly thirty four times more effective than
+
+129
+00:08:35,260 --> 00:08:39,800
+the emailed one, and the people sending the emails had no idea.
+
+130
+00:08:39,880 --> 00:08:42,320
+They expected the two to work about the same.
+
+131
+00:08:42,740 --> 00:08:46,500
+Read that against the mechanism and it stops being a surprise.
+
+132
+00:08:46,740 --> 00:08:49,360
+The yes was never produced by the size of the favor.
+
+133
+00:08:49,440 --> 00:08:54,060
+It was produced by the cost of the no. And an email costs nothing to refuse.
+
+134
+00:08:54,400 --> 00:08:58,620
+Neither does a message to a group chat. Neither does a hint, or a maybe,
+
+135
+00:08:58,960 --> 00:09:02,300
+or the sentence you have almost certainly used, which is no pressure at all,
+
+136
+00:09:02,380 --> 00:09:07,410
+only if you have time. Every one of those is a kindness you are doing to yourself.
+
+137
+00:09:07,820 --> 00:09:10,160
+Each one gives the other person a free exit,
+
+138
+00:09:10,280 --> 00:09:14,720
+and in doing so removes the exact force that would have produced the yes.
+
+139
+00:09:14,800 --> 00:09:19,780
+So tonight, one thing. Pick the ask you have already decided not to make.
+
+140
+00:09:20,080 --> 00:09:22,580
+One person, named, not a group.
+
+141
+00:09:22,860 --> 00:09:25,320
+Say it out loud, on a call or in a room,
+
+142
+00:09:25,720 --> 00:09:29,540
+and say the actual thing you need rather than the softened version.
+
+143
+00:09:29,800 --> 00:09:32,600
+Then stop talking and let them answer.
+
+144
+00:09:32,880 --> 00:09:37,120
+Some of them will say no. That is real, and it is not the point.
+
+145
+00:09:37,320 --> 00:09:40,480
+The point is that the no will finally have come from them,
+
+146
+00:09:40,780 --> 00:09:44,040
+and roughly half the time, judging by every study anyone has run on this,
+
+147
+00:09:44,120 --> 00:09:47,940
+it will not come at all. You still know who would say no.
+
+148
+00:09:48,020 --> 00:09:52,740
+You still have not asked them. But that was never a fact about them.
+
+149
+00:09:53,380 --> 00:09:58,700
+It was a number you produced alone, in your own head, out of the only material you had,
+
+150
+00:09:58,780 --> 00:10:03,440
+which was the feeling of being turned down. They were never in the room while you decided.
+
+151
+00:10:03,840 --> 00:10:07,200
+Put them in it. And that is the part worth sitting with,
+
+152
+00:10:07,420 --> 00:10:12,020
+because you do this to yourself as well, and the place you do it hardest is the one you look at
+
+153
+00:10:12,100 --> 00:10:16,960
+every single morning. A verdict you wrote in private, in your own handwriting,
+
+154
+00:10:17,040 --> 00:10:21,280
+then spent years reading as though somebody else had handed it to you.
+
+155
+00:10:21,360 --> 00:10:27,580
+Does that sound familiar? There is a video on this channel called The Psychology Of Being Ugly.
+
+156
+00:10:27,660 --> 00:10:30,800
+It is about exactly that. Watch that one next.

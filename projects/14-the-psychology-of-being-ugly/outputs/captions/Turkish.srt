@@ -1,0 +1,635 @@
+1
+00:00:00,180 --> 00:00:02,660
+Yüzünde tam olarak neyin yanlış olduğunu biliyorsun.
+
+2
+00:00:03,000 --> 00:00:08,780
+Başka hiç kimse bunu hiç görmedi. Bir kez bile, insanların sana doğrudan baktığı onca yıl boyunca bile.
+
+3
+00:00:08,860 --> 00:00:12,920
+Buna nezaket diyorsun. Ya da sonunda ortaya çıkan kendi kibrin.
+
+4
+00:00:13,180 --> 00:00:16,359
+Ama ikisi de değil. Senin gördüğünle
+
+5
+00:00:16,640 --> 00:00:20,140
+onların gördüğü arasındaki fark ölçüldü ve bir adı var:
+
+6
+00:00:20,530 --> 00:00:26,040
+spot ışığı etkisi. İnsanlara, kendilerini rahatsız eden şeyi kaç kişinin fark ettiğini
+
+7
+00:00:26,120 --> 00:00:28,480
+tahmin etmelerini iste, odadakilerin yaklaşık yarısı derler.
+
+8
+00:00:28,800 --> 00:00:33,360
+Gerçek sayı dörtte bire daha yakın. Peki diğer yarı nerede yaşıyor,
+
+9
+00:00:33,820 --> 00:00:37,020
+ve neden yüzün kontrol edemediğin tek yer?
+
+10
+00:00:37,530 --> 00:00:39,380
+Bu ölçüm bir tişörtten geldi.
+
+11
+00:00:40,140 --> 00:00:43,240
+2000 yılında, psikologlar Thomas Gilovich,
+
+12
+00:00:43,380 --> 00:00:49,240
+Victoria Medvec ve Kenneth Savitsky öğrencilerden, üzerinde modası geçmiş
+
+13
+00:00:49,320 --> 00:00:52,690
+bir şarkıcının yüzü baskılı, hafifçe utanç verici olduğu için seçilmiş bir tişört giyip,
+
+14
+00:00:52,890 --> 00:00:55,900
+sonra akranlarıyla dolu bir odaya girmelerini istedi.
+
+15
+00:00:55,980 --> 00:01:00,600
+İçeri girmeden önce her öğrenci, kaç kişinin tişörtü fark edip hatırlayacağını tahmin etti.
+
+16
+00:01:01,140 --> 00:01:03,800
+Sonrasında araştırmacılar odaya doğrudan sordu.
+
+17
+00:01:04,060 --> 00:01:09,020
+Tişörtü giyenler kabaca yarısını tahmin etti. Gerçekte fark eden oran kabaca dörtte biriydi.
+
+18
+00:01:09,640 --> 00:01:12,640
+Diğer yarısı nereye gitti? Hiçbir yere.
+
+19
+00:01:12,720 --> 00:01:17,260
+Hiç var olmamıştı, tek bir kafanın dışında. Giyen kişi o tişörte, onu üzerine geçirdiği
+
+20
+00:01:17,340 --> 00:01:21,220
+andan itibaren bakıp durmuştu, herkes ise ona bir kez göz atıp zaten meşgul olduğu
+
+21
+00:01:21,300 --> 00:01:24,610
+şeye geri dönmüştü, ki o şey de neredeyse kesinlikle kendileriydi.
+
+22
+00:01:25,380 --> 00:01:29,580
+İşte mekanizmanın tamamı bu ve bir kez görünce tuhaf biçimde yumuşak.
+
+23
+00:01:29,660 --> 00:01:34,120
+Kendi deneyiminin tam merkezine sıkışmış durumdasın, dışına çıkmanın bir yolu yok,
+
+24
+00:01:34,200 --> 00:01:39,180
+bu yüzden bir şeyin burada ne kadar yüksek sesle hissettirdiğinden yola çıkıyorsun ve o sayıyı
+
+25
+00:01:39,260 --> 00:01:42,940
+karşıdaki insanlar için yeterince küçültemiyorsun. Oda bir jüri paneli değil.
+
+26
+00:01:43,020 --> 00:01:46,800
+Kendileri hakkında aynı hesabı yapan insanlarla dolu bir oda,
+
+27
+00:01:46,880 --> 00:01:49,720
+hesap senin değil, kendi yansımalarına yönelik.
+
+28
+00:01:50,320 --> 00:01:53,020
+Bu arada o makalenin başlığı tişörtlerle ilgili değil.
+
+29
+00:01:53,320 --> 00:01:58,400
+Davranışlar ve görünüş hakkında. Tişört sadece çıkarılıp
+
+30
+00:01:58,480 --> 00:02:02,270
+sayılması en kolay şeydi. Senin yüzün aynı deneyin daha zor versiyonu.
+
+31
+00:02:02,520 --> 00:02:05,680
+Her gün çalışıyor ve bir bitiş saati yok.
+
+32
+00:02:05,760 --> 00:02:08,220
+Bu kadar kesin hissettirmesinin ikinci bir nedeni var.
+
+33
+00:02:08,300 --> 00:02:10,640
+Kendi yüzünü neredeyse hiç görmedin.
+
+34
+00:02:10,720 --> 00:02:15,240
+Gördüğün şey, lavaboya erişecek boya geldiğin günden beri her gün, ayna versiyonu,
+
+35
+00:02:15,320 --> 00:02:20,380
+soldan sağa ters çevrilmiş, ve beynin işte o ters çevrilmiş versiyonu sen diye dosyalamış.
+
+36
+00:02:20,980 --> 00:02:24,140
+1977 yılında, araştırmacılar Theodore Mita,
+
+37
+00:02:24,480 --> 00:02:30,320
+Marshall Dermer ve Jeffrey Knight insanların fotoğrafını çekti, sonra her birine iki baskı gösterdi:
+
+38
+00:02:30,900 --> 00:02:35,100
+gerçek fotoğraf ve onun ayna görüntüsü ters çevrilmiş kopyası.
+
+39
+00:02:35,180 --> 00:02:38,849
+İnsanlar ters çevrilmiş olanı tercih etti, zaten tanıdıkları yüzü.
+
+40
+00:02:40,120 --> 00:02:43,120
+Yakın arkadaşlarına aynı iki baskı verildiğinde,
+
+41
+00:02:43,340 --> 00:02:46,340
+neredeyse her seferinde gerçek olanı tercih ettiler.
+
+42
+00:02:46,940 --> 00:02:51,380
+O çalışmada kimse yanılmıyordu. Onlara iki farklı yüz hakkında soruluyordu.
+
+43
+00:02:51,640 --> 00:02:54,800
+Sen onlardan biriyle yaşıyorsun. Diğer herkes ötekiyle yaşıyor.
+
+44
+00:02:55,080 --> 00:02:57,440
+Yani akşamını mahveden o fotoğraf,
+
+45
+00:02:57,540 --> 00:03:02,530
+başkasının telefonuyla, senin seçmediğin bir açıdan çekilmiş olan, bir keşif değil.
+
+46
+00:03:02,680 --> 00:03:07,780
+O senin gerçek yüzün, ona alışkın olmayan tek canlı kişi tarafından görülmüş hali.
+
+47
+00:03:08,500 --> 00:03:12,520
+Bu ikisinin altında aynalardan,
+
+48
+00:03:12,800 --> 00:03:16,140
+kameralardan, hatta fotoğraf fikrinin kendisinden çok daha eski bir şey yatıyor.
+
+49
+00:03:16,380 --> 00:03:20,790
+Bir yüzü geldiği anda değerlendiren, hızlı ve otomatik bir puanlayıcı,
+
+50
+00:03:20,900 --> 00:03:23,620
+herhangi bir bilinçli düşünce yetişmeden önce.
+
+51
+00:03:24,210 --> 00:03:30,520
+Psikologlar Judith Langlois ve Lori Roggman, bu puanlayıcının neye göre
+
+52
+00:03:30,600 --> 00:03:36,380
+ayarlandığına dair en net kanıtı buldu. Onlarca sıradan yüzü tek bir bileşik görüntüde harmanladıklarında,
+
+53
+00:03:36,460 --> 00:03:41,780
+insanlar bu karışımı, içine giren neredeyse her bireysel yüzden daha çekici buldu.
+
+54
+00:03:42,269 --> 00:03:45,880
+Puanlayıcı nadir ya da olağanüstü bir şey aramıyor.
+
+55
+00:03:45,960 --> 00:03:50,060
+Ortayı arıyor. Simetriyi, düzenliliği,
+
+56
+00:03:50,140 --> 00:03:53,040
+belirli bir sorun bildirmeyen bir yüzü.
+
+57
+00:03:53,120 --> 00:03:58,480
+Ve bu kadar hızlı, sen daha düşünemeden ateşlenen bir yargı, bir zevk meselesi değildir.
+
+58
+00:03:58,760 --> 00:04:02,600
+Bu hızdaki bir şey, eskiden aciliyet taşıyan şeylere ayrılmıştır.
+
+59
+00:04:02,680 --> 00:04:07,320
+İşte o puanlayıcının asıl amacı buydu, ve sen onu bunun için kullanmıyorsun.
+
+60
+00:04:07,400 --> 00:04:10,480
+Dışa dönük çalışmak üzere yapılmıştı. Diğer insanlara.
+
+61
+00:04:10,560 --> 00:04:12,980
+İnsanlık tarihinin neredeyse tamamı boyunca,
+
+62
+00:04:13,060 --> 00:04:16,400
+bir kez bile ait olduğu yüze net bir bakış atamadı.
+
+63
+00:04:17,160 --> 00:04:20,140
+Bir insanın kendinden gerçekten neyi görebileceğini düşün.
+
+64
+00:04:20,720 --> 00:04:24,380
+Rüzgarsız bir günde durgun su. Islak bir taş.
+
+65
+00:04:25,260 --> 00:04:28,800
+Grubun elinde varsa, cilalanmış bir kaya parçası.
+
+66
+00:04:29,409 --> 00:04:32,240
+Kendi elleri, kendi ayakları,
+
+67
+00:04:33,000 --> 00:04:37,520
+ve boynun üstünde hiçbir şey. Yaklaşık iki yüz bin yıl boyunca,
+
+68
+00:04:37,800 --> 00:04:43,211
+bugün hayatındaki en çok incelenen nesne, bir insanın
+
+69
+00:04:43,291 --> 00:04:49,000
+yapısal olarak inceleyemediği tek nesneydi. Yüzün hakkındaki hüküm, doğrudan okuyamayacağın bir yerde,
+
+70
+00:04:49,080 --> 00:04:52,389
+sana bakan herkesin yüzünde yaşıyordu.
+
+71
+00:04:52,469 --> 00:04:57,000
+Ayna bunu düzeltmedi, çünkü ayna daha yeni buralarda.
+
+72
+00:04:57,080 --> 00:05:00,430
+Net, keskin, dürüst bir ayna endüstriyel bir üründür,
+
+73
+00:05:00,700 --> 00:05:04,720
+sıradan bir ev için ancak son birkaç yüzyılda ucuzladı.
+
+74
+00:05:04,800 --> 00:05:09,720
+Ondan önce zenginlere özgü bir nesneydi, ya da parlatılmış metalden loş bir levha,
+
+75
+00:05:09,980 --> 00:05:13,980
+ya da hiçbir şey. Yani aritmetiğin üzerinde durmaya değer.
+
+76
+00:05:14,240 --> 00:05:17,060
+İki yüz bin yıl boyunca inceleyemediğin bir yüz,
+
+77
+00:05:17,240 --> 00:05:19,940
+sonra inceleyebildiğin yaklaşık iki yüz yıl,
+
+78
+00:05:20,020 --> 00:05:25,090
+sonra da onu istek üzerine gösteren, ışıklı bir kamerayı taşıdığın yaklaşık on beş yıl.
+
+79
+00:05:25,380 --> 00:05:28,550
+Puanlayıcının bunların olduğunu fark edecek zamanı olmadı.
+
+80
+00:05:28,630 --> 00:05:31,960
+Ve okumak üzere yapıldığı insanlar yabancı değildi.
+
+81
+00:05:32,310 --> 00:05:35,520
+Bir insan en fazla birkaç yüz kişilik bir grubun içinde yaşayıp öldü,
+
+82
+00:05:35,600 --> 00:05:41,450
+ve yetişkinliğe geldiğinde o yüzlerin her birini binlerce kez, her ışıkta,
+
+83
+00:05:41,560 --> 00:05:46,200
+her yaşta görmüştü. Kimse bir yüzü kaydırıp geçmedi ve bir daha görmedi.
+
+84
+00:05:46,280 --> 00:05:52,320
+Değerlendirdiğin herkesle birlikte avlanır, evlenir ya da kendi yiyeceğin tükendiğinde ona güvenirdin.
+
+85
+00:05:53,560 --> 00:05:58,920
+İşte bu, evrimsel antropolog Sarah Blaffer Hrdy'nin bir kariyer boyunca
+
+86
+00:05:59,000 --> 00:06:03,220
+yeniden kurduğu dünya, ve o dünyada görünüş asla süs değildi.
+
+87
+00:06:03,760 --> 00:06:08,080
+Bütün grubun anında okuduğu bir sinyaldi: sağlık, doğurganlık,
+
+88
+00:06:08,200 --> 00:06:10,820
+arkanda duran ittifaklar.
+
+89
+00:06:11,580 --> 00:06:16,360
+Hrdy'nin anlatımında, bir kadının diğer kadınlar arasındaki konumu kısmen tam olarak bu türden
+
+90
+00:06:16,440 --> 00:06:20,560
+bir karşılaştırmaya dayanıyordu, çünkü eşler, müttefikler ve koruma sınırlıydı,
+
+91
+00:06:20,640 --> 00:06:23,700
+ve herkes sessizce birbirine karşı sıralanıyordu.
+
+92
+00:06:24,160 --> 00:06:27,720
+Bunların hiçbiri pohpohlamaya dayanmıyordu. Küçük, yiyecek paylaşan bir grupta,
+
+93
+00:06:27,800 --> 00:06:32,740
+konum, başarısız bir avdan sonra eti kimin seninle paylaşacağını, hangi ateşin başında hoş karşılanacağını,
+
+94
+00:06:32,820 --> 00:06:39,200
+hangi çocukları tutman için güvenileceğini belirlerdi. O sıralamada aşağı kaymak, kötü bir ayna günü değildi.
+
+95
+00:06:39,280 --> 00:06:42,190
+Seni besleyen insanları kaybetmen anlamına gelebilirdi.
+
+96
+00:06:42,270 --> 00:06:45,380
+Sistem yüksek sesli çünkü yüksek sesli olma hakkını kazandı.
+
+97
+00:06:45,480 --> 00:06:48,770
+Ama karşılaştırdığı standart hiçbir zaman sabit olmadı.
+
+98
+00:06:48,850 --> 00:06:53,840
+Antropolog Judith Anderson ve meslektaşları, düzinelerce toplumda beden
+
+99
+00:06:53,920 --> 00:06:59,480
+ideallerini karşılaştırdı ve evrensel güzellik teorisinin öngöremeyeceği bir örüntü buldu.
+
+100
+00:06:59,560 --> 00:07:04,440
+Yiyeceğin kıt ve güvenilmez olduğu yerlerde, daha dolgun bedenler çekici bulunuyordu.
+
+101
+00:07:05,480 --> 00:07:10,140
+Yiyeceğin istikrarlı ve güvenilir olduğu yerlerde, tercih zayıflığa döndü.
+
+102
+00:07:10,840 --> 00:07:12,810
+Nedeni gizemli değil.
+
+103
+00:07:12,890 --> 00:07:15,160
+Bir bedenin kıtlığa dayanması gerekebilecek yerde,
+
+104
+00:07:15,440 --> 00:07:20,070
+görünür rezervler bir eş ya da müttefik seçerken gerçek bir avantajdı.
+
+105
+00:07:20,870 --> 00:07:26,180
+Kıtlıklar gelmediğinde, aynı rezervler artık hiçbir şey işaret etmiyordu,
+
+106
+00:07:26,440 --> 00:07:29,740
+ve sağlığın işareti olarak başka bir şey öne çıktı.
+
+107
+00:07:30,410 --> 00:07:34,250
+Beyninin temel kaya olarak gördüğü standart, sessizce yeniden yazıldı,
+
+108
+00:07:34,500 --> 00:07:39,660
+toplumdan topluma, bir grubun neyi istemeye gücünün yettiğine göre.
+
+109
+00:07:39,740 --> 00:07:44,540
+Bu hiçbir zaman senin hakkında bir hüküm vermiyordu. İçine doğduğun odayı okuyordu.
+
+110
+00:07:45,140 --> 00:07:47,180
+Şimdi bu sistemi banyona koy.
+
+111
+00:07:47,900 --> 00:07:52,820
+Her sabah, kendi sahibine hiç erişimi olmayan, yabancıları puanlamak üzere yapılmış bu puanlayıcıya,
+
+112
+00:07:52,900 --> 00:07:59,120
+o sahibin büyük, iyi aydınlatılmış, her an erişilebilir, sağı solu ters çevrilmiş bir görüntüsü veriliyor.
+
+113
+00:07:59,200 --> 00:08:03,680
+O da yaptığını yapıyor. Puanlıyor. Bir vitrinin önünden geçiyorsun, yine puanlıyor.
+
+114
+00:08:03,760 --> 00:08:08,020
+Ön kamerayı açıyorsun, hiç eğitilmediği bir versiyonu puanlıyor.
+
+115
+00:08:08,100 --> 00:08:11,460
+Bir görüntülü görüşmeye katılıyorsun ve önizleme penceresi gerçek,
+
+116
+00:08:11,540 --> 00:08:15,920
+ters çevrilmemiş yüzü gösteriyor, oysa bir ömür boyu aynalar seni tam tersine alıştırdı,
+
+117
+00:08:16,000 --> 00:08:21,080
+işte bu yüzden sokakta yürürken kendini gayet iyi hissedip bir laptop kapağı açılır açılmaz
+
+118
+00:08:21,160 --> 00:08:25,820
+yanlış hissedebiliyorsun. Sonra da, ki bunun hiçbir atasal karşılığı yok,
+
+119
+00:08:26,020 --> 00:08:31,399
+kaydırmaya başlıyorsun. Karşılaştırma grubun eskiden doğduğundan beri tanıdığın birkaç yüz yüzdü.
+
+120
+00:08:31,920 --> 00:08:33,950
+Şimdi haftada binlerce yüz,
+
+121
+00:08:34,039 --> 00:08:38,579
+çoğu bir öneri sisteminin tam olarak iyi performans gösterdikleri için seçtiği,
+
+122
+00:08:38,659 --> 00:08:43,820
+birçoğu düzeltilmiş, ışıklandırılmış, rötuşlanmış ya da üç yüz denemeden seçilmiş.
+
+123
+00:08:44,380 --> 00:08:49,300
+Bu bir nüfus değil. Sıradan ortası çıkarılmış bir seçkiler listesi.
+
+124
+00:08:49,480 --> 00:08:54,080
+Ve bir makine tarafından optimize edilmiş bir yabancıyı komşudan ayırt edemeyen puanlayıcın,
+
+125
+00:08:54,240 --> 00:08:57,720
+bunların her birini yerel rekabet olarak dosyalıyor.
+
+126
+00:08:57,800 --> 00:09:02,360
+Peki hükmünün ne kadarı bir ölçüm, ne kadarı sadece tekrar?
+
+127
+00:09:02,440 --> 00:09:05,320
+Birkaç yüz tanıdık yüzü sıralamak için yapılmış bir araç,
+
+128
+00:09:05,400 --> 00:09:08,900
+görmesi hiç amaçlanmamış tek yüzün ters çevrilmiş bir görüntüsüyle beslenip,
+
+129
+00:09:09,000 --> 00:09:11,680
+var olmayan bir nüfusa karşı kıyaslanıyor,
+
+130
+00:09:11,760 --> 00:09:15,410
+ve bir mevsimde birkaç kez yerine haftada yüzlerce kez çalıştırılıyor.
+
+131
+00:09:16,040 --> 00:09:18,980
+Her geçiş bağımsız bir doğrulama gibi hissettiriyor.
+
+132
+00:09:19,060 --> 00:09:21,600
+Aynı bozuk ölçüm, tekrar alınmış.
+
+133
+00:09:22,010 --> 00:09:25,020
+Bunların hiçbiri gördüğün şeyin hayali olduğu anlamına gelmiyor.
+
+134
+00:09:25,100 --> 00:09:30,100
+Muhtemelen gerçekten orada. Bu, aslında kusursuz olduğuna ve sadece daha iyi
+
+135
+00:09:30,180 --> 00:09:33,480
+ışığa ihtiyacın olduğuna dair bir vaat değil, sana bunu satan biri sana bir şey satıyordur.
+
+136
+00:09:33,560 --> 00:09:38,820
+Değişen şey özellik değil. Ona yüklenen ağırlık ve o ağırlığın nereden geldiği.
+
+137
+00:09:38,900 --> 00:09:42,010
+Spot ışığı etkisi, o ağırlığın çoğunun hiç odada olmadığını söylüyor.
+
+138
+00:09:42,090 --> 00:09:46,360
+Ayna uyumsuzluğu, değerlendirdiğin şeyin büyük bir kısmının neredeyse kimsenin
+
+139
+00:09:46,440 --> 00:09:51,400
+hiç görmediği bir yüz olduğunu söylüyor. Ve ikisinin altındaki puanlayıcı, bir yabancıya bir kez bakmak üzere yapıldı,
+
+140
+00:09:51,640 --> 00:09:55,360
+aynı yüzü tek bir ömür boyunca on bin kez çalıştırmak üzere değil.
+
+141
+00:09:55,580 --> 00:09:58,360
+Yani bu gecenin değişimi o özelliği sevmek değil.
+
+142
+00:09:58,520 --> 00:10:01,000
+Bundan daha küçük ve daha kullanışlı bir şey.
+
+143
+00:10:01,260 --> 00:10:04,060
+Kendi hükmünü kanıt olarak görmeyi bırakmak.
+
+144
+00:10:04,140 --> 00:10:09,980
+O hüküm zaten gelecek. Bir aynada, bir asansör kapısında, kabul etmediğin bir fotoğrafta.
+
+145
+00:10:10,060 --> 00:10:14,550
+Ve geldiğinde, sorulmaya değer tek şey, seni neye karşı ölçtüğü.
+
+146
+00:10:14,980 --> 00:10:19,340
+Seni zaten tanıyan ve yarın da seni görecek olan birkaç yüz kişi.
+
+147
+00:10:19,420 --> 00:10:23,140
+Ya da bakılmak üzere bir makine tarafından bir araya getirilmiş bir yabancılar akışı.
+
+148
+00:10:23,620 --> 00:10:25,940
+Yansıman tarafsız bir tanık değil.
+
+149
+00:10:26,020 --> 00:10:31,200
+Hayatındaki ters çevrilmiş bir görüntüde, özel bir spot ışığında çalışan tek tanık,
+
+150
+00:10:31,280 --> 00:10:36,580
+ve bu yüzyıldan önce hiçbir insanın yanında durmak zorunda kalmadığı bir karşılaştırma grubunda.
+
+151
+00:10:37,020 --> 00:10:39,820
+Hâlâ yüzünde tam olarak neyin yanlış olduğunu biliyorsun.
+
+152
+00:10:39,900 --> 00:10:42,180
+Ama bu hiçbir zaman yüzün hakkında bir gerçek değildi.
+
+153
+00:10:42,260 --> 00:10:48,140
+Onu izlemekle görevlendirilen tek göz çiftinin, yakın mesafeden, ters çevrilmiş halde,
+
+154
+00:10:48,220 --> 00:10:50,700
+bir ömür boyunca ve başka bakacak yeri olmadan yaşadığı bir gerçekti.
+
+155
+00:10:50,920 --> 00:10:55,480
+Ve zihninin tamamını kıt bir sayı etrafında daraltan aynı tünel,
+
+156
+00:10:55,560 --> 00:10:59,940
+yüzündeki tek bir özelliği de aynı sertlikte daraltıyor, ta ki kadrajda kalan tek şey o olana dek.
+
+157
+00:11:00,040 --> 00:11:02,880
+Bugünün hükümlerinden kaçı aynı tünelden çıktı?
+
+158
+00:11:02,960 --> 00:11:07,520
+O konunun kendi videosu zaten var. Fakir olmanın psikolojisi.
+
+159
+00:11:07,720 --> 00:11:08,960
+Sıradaki onu izle.

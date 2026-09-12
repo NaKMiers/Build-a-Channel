@@ -246,6 +246,79 @@ therefore a documented preference, not a load-bearing dependency. If an automate
 upload is ever wired up, check whether it expects the code as the filename and reintroduce
 a lookup there rather than reverting this.
 
+### 2026-09-09, project 14, the "mid-sentence" build stat overstates real bad cuts
+
+Issue: `build` printed "mid-sentence 61 blocks (38%), split by the caps" for project 14
+(159 blocks, 11:08 total), far above the "under 15 percent ending on neither a sentence
+nor a clause" benchmark in the Expected shape section. That reads like the run is well
+outside the calibrated band and the flags need retuning.
+
+It is not what it looks like. The printed stat (`unfinished` in `cmd_build`) counts every
+block whose last word fails `tsfmt.ends_sentence`, which includes blocks that correctly
+end on a clause boundary (a comma) via `best_split`'s fallback, the second-best and
+intentional cut point, not a defect. Computing the actual benchmark metric directly from
+`blocks.json` (last word ends neither `ends_sentence` nor `ends_clause`) gave 11%, inside
+band. The block count (159, slightly under the 165-190 typical range) and mean/max
+durations were also in band; the video is just a little shorter than projects 1, 11, 12.
+
+Fix: nothing to the tool, this is a reading error, not a code defect. Before concluding a
+run needs retuned flags because the printed mid-sentence percentage looks high, recompute
+the neither-sentence-nor-clause rate from `blocks.json` (last word passes neither
+`tsfmt.ends_sentence` nor `ends_clause`) and compare that number to the benchmark, not the
+raw print.
+
+**Generalisable: a printed diagnostic and a documented benchmark can silently measure
+different things.** The printed line is named the same thing the skill's Expected shape
+section discusses, but the sets differ, so the fix is not to change the number the tool
+reports (that would be a bigger diff for a real quality signal), it is to know which
+metric the benchmark actually refers to before reacting to the print.
+
+### 2026-09-12, project 15, a name with internal punctuation can never enter the allowlist
+
+Issue: `check` failed 10 of the 10 non-Latin files on the first run, every one on the same
+three words: `Nicholas`, `Lorna`, `hoansi`. Two are the known sentence-start gap. The third
+is a new cause.
+
+- `Nicholas` and `Lorna` are the **project 13 blind spot**, unchanged: both are given names
+  opening a sentence right after the previous one's period ("It is simply not tuned. Nicholas
+  Epley and...", "Lorna Marshall spent years..."), so `proper_nouns` reads them as sentence
+  openers rather than names. `Epley`, `Juliana`, `Schroeder` and `Marshall` all passed, which
+  is the signature project 13 says to look for.
+- **`hoansi` is new, and it is not a sentence-start problem at all.** The English says
+  `Ju/'hoansi`, mid-sentence, so `proper_nouns` does add it, but it adds the **whole token**
+  `ju/'hoansi`. `LATIN_RUN` scanning the translated file matches maximal runs of Latin
+  **letters**, so it finds `Ju` and `hoansi` as two separate runs, and `hoansi` alone is in no
+  allowlist. **A proper noun containing any non-letter character can therefore never match**,
+  because the allowlist stores one shape and the scanner produces another. `proper_nouns`
+  already splits on hyphens for exactly this reason; apostrophes and slashes were not covered.
+
+**Generalisable, third refinement of the project 12 rule:** deriving the allowlist from the
+source is right, but the derived entries must be tokenised the same way the scanner tokenises
+the target. Splitting an allowlist entry on every non-letter and adding each fragment would
+close this without a new mechanism. Until then, expect `--allow` to be needed for any name
+carrying a click letter, an apostrophe, or a slash, which for this channel means every
+ethnonym it has used: `Ju/'hoansi` here, and the same shape would hit `!Kung` or `Hadza-!ko`.
+
+Fix applied this run: `--allow Nicholas,Lorna,hoansi`, the documented escape hatch, after
+confirming all three by reading the English source blocks. Re-check: 25 files clean, all in
+sync with `English.srt`.
+
+Run shape: 156 blocks, mean 3.8s, min 1.7s, max 6.2s, total 10:30, 14.8 blocks per minute.
+Block count is under the 165 to 190 band in the Expected shape section purely because the
+video is 10:30 rather than 11 to 12 minutes; the per-minute rate is mid-band. The printed
+"mid-sentence 33%" is the project 14 overstatement again, and the real neither-sentence-nor-
+clause rate computed from `blocks.json` is **10%**, inside the under-15 benchmark. Second run
+in a row that stat has looked alarming and been fine, so **compute the real metric before
+reaching for a flag.**
+
+**Concurrency ceiling hit for the first time.** The host caps concurrent subagents at 20, so
+12 of the 24 launched, then 8, then the last 4 were refused outright with
+`Concurrent subagent limit reached`. The fix is not to retry: launch what fits, then launch
+each remaining language as a completion notification frees a slot. Total wall clock was about
+13 minutes for all 24, against the roughly two hours the skill quotes for the inline path.
+**The skill says "all in a single message"; with more than 20 languages that is now the first
+batch plus a drip.** Worth stating in `SKILL.md` so the refusal is not read as a failure.
+
 ## Future entries
 
 After a reported quality issue, append:

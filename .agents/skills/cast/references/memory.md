@@ -703,6 +703,136 @@ times, from a fifth distinct cause. Two fixes applied: the alternation in `SKILL
 Alternation extended again, eighth time: `envelope body`. Plain `envelope` was not used, because
 the sheet's phrase is "the envelope body is one simple filled rectangle in ...".
 
+## Project 15 (2026-09-12), why people say yes - a 6-entry cast and a mechanism with a pivot
+
+`@YOU` (Toss, v-neck jumper in golden yellow `#F5C518` over a plain white shirt collar and
+cuffs, no hood), `@ASKER` (the 2008 study participant, dusty teal `#67A6A3` long-sleeve
+crew-neck top, charcoal side-swept cap with a parting line, clipboard), `@STRANGER` (the person
+on the receiving end, grass green `#3A9E3A` buttoned short-sleeve shirt, long straight
+centre-parted hair past the jaw), `@BRAKE` (personified object, a hand brake lever, red
+`#D94040` on a charcoal base), `@KIN` (Ju/'hoansi woman, Nyae Nyae 1950s, brown `#8B5E3C`
+belted wrap with a tan hem trim, low crown with one bun), `@CAMP` (group of five, same people
+and years, sky blue `#6EB5E8` untrimmed wraps, plain high cap, bare feet). Chapter palette
+Coral `#D96F5F`, Tan `#C4965A`, Lavender `#B79AD9`. Six entries, at the cap. Nothing carried
+over.
+
+### The mechanism was cast again, and this time its mechanics encode the reversal
+
+Second episode running where the top-ranked candidate is the script's named mechanism rather
+than a person. "Brake" appears six times across the anthropology pillar, the whole mismatch and
+the shift. The project 14 test applied cleanly: a mechanism drawn three different ways splits
+one argument into three unrelated claims.
+
+What is new is the **pivot**. Project 14's paddle was chosen because a rigid handle physically
+cannot turn back on its holder. A brake lever swings at exactly one point and nowhere else,
+which lets the four states of use carry the script's whole arc without a word: pulled up and
+holding, pulled up with nothing behind it, mid-release with the button pressed, and lying flat.
+**State two is the video's thesis drawn as a mechanical fact** ("The network went from on to off.
+The brake never moved"), and it works only because the empty space beside the lever is specified
+as empty. Generalise: **pick the object whose one degree of freedom is the argument**, then lock
+every other joint in the prompt, because a model handed a lever will hinge it in the middle.
+
+### The red antagonist cannot carry the episode's red X, for the second episode running
+
+Exactly the project 14 collision. `@BRAKE` is red `#D94040`, so the episode's recurring red
+negation mark cannot be drawn on it. Negation is its fourth state of use, lying flat and
+released, and the sheet says so in the state itself rather than only in the NEGATIVE. This has
+now happened twice in a row, which makes it a standing check rather than a per-video catch:
+**assign the antagonist's colour and the episode's negation mark in the same decision.**
+
+### A brake is a worse text trap than it looks, and the fix is enumeration by object class
+
+A paddle tempts a number. A brake tempts a whole vocabulary: P, R, N, a notch scale, a gauge, a
+dial, a needle, a warning triangle, an exclamation mark, a lightning bolt, a hand symbol, a
+moulded wordmark, a regulatory plate, a serial number. All enumerated individually, plus the
+release button specified as a flat blank cream circle. The two short motion strokes in states
+one and three are the only arrow-like marks allowed anywhere on the sheet and they are named as
+the single exception inside the no-arrows clause, because a blanket `no arrows` would have
+killed them.
+
+### Two present-day adults, separated the way the two five-figure groups were
+
+Project 14's precedent applied to individuals: `@ASKER` and `@STRANGER` are both ordinary
+present-day adults and would drift into each other. Separated on four axes and the pairing is
+stated on BOTH sheets with the other's markers in each NEGATIVE: short side-swept cap with a
+parting against long straight centre-parted hair past the jaw, round neckline against a collar
+and placket, long sleeves against bare forearms, dusty teal against grass green.
+
+### The willing stranger needed a negative list about temperament, not only about design
+
+The video's argument collapses if the person being asked looks annoyed, so `@STRANGER`'s
+NEGATIVE names no angry face, no sneering, no scowling, no alarmed face, no crossed arms, and
+no flat forward stop-sign palm. Its four expressions are all in the unbothered-to-warm band and
+the hesitation state is written as awkward rather than irritated. **When a character exists to
+disprove the viewer's fear, the fear is what the model will draw unless it is negated by name.**
+
+### `@KIN` is a woman, derived from the absence of a line rather than from one
+
+Project 14 derived a woman from an explicit Hrdy line. Here nothing in the script genders the
+asker, so the choice was free, and it was made to stop the channel's individual ancestral
+figures being uniformly male after projects 8, 10 and 13. Recorded plainly so a later reader
+does not treat it as a misreading of the script. Her markers are the low crown with one bun and
+the charcoal corded belt, deliberately not project 14's long single plait. The same no-anatomy
+paragraph is carried over, because a model told "a woman" adds a chest and a waist.
+
+### Ju/'hoansi twice in one cast, an individual and the group, so the anti-default runs on both
+
+Both sheets carry the full anti-default paragraph naming the two cliche sets, the caveman kit
+and the early-Neolithic farmer kit, and both carry the same three-way separation paragraph. The
+sky blue on the group is written into the sheet as the settled cool-group-against-warm-ground
+solution with an explicit "do not re-litigate it", now its fifth shipping.
+
+### The colour cascade ran argument-first and left Toss exactly one option
+
+Red for the brake, green for the stranger who says yes, dusty teal for the study participant,
+then the settled ancestral brown and sky blue. Toss last, and every other candidate failed:
+orange collides with the coral modern ground, the collision three earlier projects hit; coral
+and lavender are chapter colours; cobalt and Toss blue read as the old hoodie. Golden yellow
+`#F5C518` was the only saturated palette colour left. **Residual weakness worth watching at
+scenes: yellow on a warm cream card is the lowest-contrast pairing in this cast.** He is carried
+by the bold black outline, same as projects 8 and 9, but if a cream frame reads flat, give him a
+light chapter tint rather than recolouring him.
+
+Chapter palette was re-cut away from project 14's set once the derivation was written out.
+Coral carries the social thread and the cost of the no, tan carries Nyae Nyae, and lavender
+carries the private forecast and the modern mismatch, which is closer to perception and
+cognition than to the body-systems reading dusty teal would have given it. Dusty teal then came
+free for a garment.
+
+### Silhouette freshness for Toss: the V neckline plus a visible collar
+
+The channel had used hoodie, crew-neck, jacket-over-tee, track jacket, work shirt and pyjama
+top. A v-neck jumper worn over a collared shirt is a new outline, and the collar flaps and the
+two white cuff bands give V2 its thin internal detail lines without a second filled body shape.
+The CHANGE block names the hood bump, the drawstring and the kangaroo pocket for removal and
+the NEGATIVE repeats all three, per the standing edit-inherits-what-it-does-not-override rule.
+
+### Refused a slot: the email
+
+Strongest non-cast candidate, since the shift turns on it. Refused for three reasons and the
+reasoning is in the cast file so `scenes` does not reopen it: there is nothing to turn around,
+it appears as four different surfaces, and giving a face to the channel that removes the cost
+of the no would make it an antagonist when the script's point is that it is a kindness the
+viewer does to themselves. Handed to the continuity ledger with a canonical locked description,
+the project 14 mirror precedent. The written-down number was refused the same way and sent to
+the CARD register, because a cast entry whose whole job is to display a numeral cannot survive
+the no-text rule.
+
+### Two Step 5 failures, both old causes from new directions
+
+- **The garment alternation was short again, tenth time: `lever body`.** Added to `SKILL.md`.
+- **`top third of the head circle` matched the alternation ahead of the real declaration on
+  `@ASKER`.** The hair sentence had no comma between "top" and the garment hex, so the grep ran
+  from the wrong word and printed the hair description with the right colour glued on the end,
+  which is worse than a blank because it looks like a pass. Seventh distinct cause. The project
+  14 rule was "do not let the garment word appear anywhere before its declaration"; this is that
+  rule failing on an incidental use of a common word rather than on a summary phrase. Fixed by
+  writing `upper third of the head circle` on every sheet. **Prefer "upper third" to "top third"
+  in any sheet whose garment word is `top`.**
+- Also caught: `neither hand is a mitten, a blob or a nub` in the `@STRANGER` prop block tripped
+  the positive-mitten grep, the project 6 fault from a new sentence shape. Rewritten as `never
+  mittens, blobs, or nubs`.
+
 ## Resolved conflict: hand shape
 
 The retired prompts contradicted each other. Splayed line fingers win, `mitten` is banned. The

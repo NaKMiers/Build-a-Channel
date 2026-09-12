@@ -8,12 +8,12 @@ Why Do You Hate Your Own Face In Photos?
 
 ### All five title variants
 
-|     | Formula                        | Title                                                   |
-| --- | ------------------------------ | ------------------------------------------------------- |
-| A   | Why do/can't you \_\_\_?       | Why Do You Hate Your Own Face In Photos?                |
+|     | Formula                        | Title                                                    |
+| --- | ------------------------------ | -------------------------------------------------------- |
+| A   | Why do/can't you \_\_\_?       | Why Do You Hate Your Own Face In Photos?                 |
 | B   | Your brain still thinks \_\_\_ | Your Brain Still Thinks Your Mirror Face Is The Real One |
-| C   | The \_\_\_ Effect              | The Spotlight Effect: Why Nobody Notices What You Hate  |
-| D   | What every human tribe does... | What Every Tribe Knew About Your Face That You Forgot   |
+| C   | The \_\_\_ Effect              | The Spotlight Effect: Why Nobody Notices What You Hate   |
+| D   | What every human tribe does... | What Every Tribe Knew About Your Face That You Forgot    |
 | E   | You never noticed that \_\_\_  | You Never Noticed Your Reflection Is The Wrong Way Round |
 
 ## Description

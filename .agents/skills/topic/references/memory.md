@@ -21,6 +21,7 @@ Self-improving notes for topic selection. Single canonical copy, no Claude-side 
 | 12 | Why One Stranger's Comment Can Ruin Your Whole Day | scaffolded 2026-08-29, negativity bias plus moral outrage contagion, no script yet |
 | 13 | The Psychology Of Being Poor | scaffolded 2026-08-29, scarcity mindset, user-supplied title, no script yet |
 | 14 | The Psychology Of Being Ugly | scaffolded 2026-09-03, self-perception and attractiveness bias, user-supplied title, no script yet |
+| 15 | Why People Say Yes Far More Often Than You Think | scaffolded 2026-09-12, compliance underestimation, no script yet |
 | old 8 | Why You Stay Quiet When You Know The Room Is Wrong | abandoned 2026-08-12, unpublished, artifacts recoverable at `c9f048f` |
 | old 9 | Why You Think Everyone Is Watching When Nobody Is | abandoned 2026-08-12, unpublished, artifacts recoverable at `c9f048f` |
 
@@ -82,6 +83,49 @@ deleted-but-recoverable projects in git history, not just the working tree, befo
 proposing a title.
 
 ## Proposed but not picked
+
+### 2026-09-12, batch 20, user picked title 4 (compliance underestimation -> project 15)
+
+The user replied with a bare `4`. First batch since 18 where the user picked from the list
+instead of supplying their own plain-topic title, breaking a three-batch run of that. Batch
+was deliberately built from mechanisms no existing project owns, all five worded plainly per
+the batch 8 lesson and framed as a mistake the viewer is making right now per the batch 9
+steer. The other four remain eligible.
+
+| Title | Theme | Numeric material available |
+| --- | --- | --- |
+| Why You Have Reasons And Everyone Else Has Flaws | social perception, judgment | Jones and Harris 1967 Castro essay attitude attribution; Darley and Batson 1973 Good Samaritan, about 10 percent of hurried seminarians helped versus about 63 percent of unhurried ones |
+| Why You Would Never Buy The Thing You Refuse To Sell | scarcity and loss aversion | Kahneman, Knetsch and Thaler 1990 mug study, median selling price about 5.25 dollars versus median buying price about 2.25 dollars; endowment effect and loss aversion |
+| Why One Bad Ending Ruins A Day That Was Mostly Good | memory and experience | Redelmeier and Kahneman 1996 colonoscopy study; Kahneman cold-pressor trials, the longer 90 second trial with a milder ending was preferred over the shorter 60 second one; peak-end rule |
+| Why Doing One Good Thing Lets You Do A Bad One | habit and willpower, identity | Monin and Miller 2001 moral credentialing; Khan and Dhar 2006, a virtuous act roughly doubled subsequent luxury choice |
+
+Selected: project 15, **Why People Say Yes Far More Often Than You Think**, compliance
+underestimation. Research to reuse so `script` does not rediscover it:
+
+- **Psychology.** Flynn and Lake (later Bohns) 2008, "If you need help, just ask": askers
+  systematically underestimate how many people will agree to a direct request, by roughly
+  half across several field studies (borrowing a phone, filling out a survey, being walked
+  to a campus gym). The asker models the cost of saying yes and ignores the social cost of
+  saying no, which is what the person being asked is actually feeling. Bohns' later reviews
+  extend the same gap to asking for help at work and to the "no" that never comes. Pair with
+  the spotlight-effect family only as support, since projects already circle that.
+- **Anthropology.** Demand sharing and obligatory generosity in immediate-return bands.
+  Among the Ju/'hoansi and the Hadza a direct request was close to unrefusable, and refusing
+  was the reputational event, not asking. Extend with Boehm on levelling and with reciprocal
+  altruism: in a group of about 150 where you would meet the same person tomorrow, a yes was
+  cheap insurance and a no was expensive. Asking was the normal channel by which goods and
+  labor moved at all.
+- **Modern mismatch.** The wiring that reads asking as costly was calibrated for a band
+  where you were embedded for life and every request was public. Now the asker imagines
+  refusal from strangers who will in fact mostly say yes, so the request never gets made,
+  and the help that was available is never collected.
+- **Numeric material is strong**: the roughly 50 percent underestimation gap gives the
+  thumbnail stage two subtractable numbers (predicted versus actual number of people asked),
+  the shape that worked for project 1. Pull the exact predicted-versus-actual figures from
+  Flynn and Lake 2008 during `script`.
+- **Editorial note.** Keep the takeaway a single reframe (the person you ask is weighing the
+  cost of refusing, not the cost of helping) and never let it turn into a numbered how-to-ask
+  checklist.
 
 ### 2026-09-03, batch 19, none picked, user supplied their own title
 

@@ -1,0 +1,635 @@
+1
+00:00:00,180 --> 00:00:02,660
+You know exactly what is wrong with your face.
+
+2
+00:00:03,000 --> 00:00:08,780
+Nobody else has ever seen it. Not once, not in all the years of people looking straight at you.
+
+3
+00:00:08,860 --> 00:00:12,920
+You call that politeness. Or your own vanity finally showing.
+
+4
+00:00:13,180 --> 00:00:16,359
+But it is neither. The gap between what you see
+
+5
+00:00:16,640 --> 00:00:20,140
+and what they see has been measured, and it has a name:
+
+6
+00:00:20,530 --> 00:00:26,040
+the spotlight effect. Ask people to guess how many notice the thing they are self-conscious
+
+7
+00:00:26,120 --> 00:00:28,480
+about, and they say about half the room.
+
+8
+00:00:28,800 --> 00:00:33,360
+The real number is closer to a quarter. So where does the other half live,
+
+9
+00:00:33,820 --> 00:00:37,020
+and why is your face the one place you cannot check?
+
+10
+00:00:37,530 --> 00:00:39,380
+The measurement came from a T-shirt.
+
+11
+00:00:40,140 --> 00:00:43,240
+In 2000, the psychologists Thomas Gilovich,
+
+12
+00:00:43,380 --> 00:00:49,240
+Victoria Medvec and Kenneth Savitsky asked students to put on a shirt printed with an outdated
+
+13
+00:00:49,320 --> 00:00:52,690
+singer's face, picked because it was mildly embarrassing,
+
+14
+00:00:52,890 --> 00:00:55,900
+then walk into a room full of their peers.
+
+15
+00:00:55,980 --> 00:01:00,600
+Before going in, each student guessed how many people would notice the shirt and remember it.
+
+16
+00:01:01,140 --> 00:01:03,800
+Afterward, the researchers asked the room directly.
+
+17
+00:01:04,060 --> 00:01:09,020
+The wearers guessed roughly half. Roughly a quarter had actually clocked it.
+
+18
+00:01:09,640 --> 00:01:12,640
+Where did the other half go? Nowhere.
+
+19
+00:01:12,720 --> 00:01:17,260
+It never existed outside one head. The wearer had been staring at that shirt from the second
+
+20
+00:01:17,340 --> 00:01:21,220
+they pulled it on, and everyone else had glanced once and gone straight back to the thing they
+
+21
+00:01:21,300 --> 00:01:24,610
+were already worrying about, which was almost certainly themselves.
+
+22
+00:01:25,380 --> 00:01:29,580
+That is the whole mechanism, and it is oddly gentle once you see it.
+
+23
+00:01:29,660 --> 00:01:34,120
+You are stuck at the exact centre of your own experience, with no way to step out of it,
+
+24
+00:01:34,200 --> 00:01:39,180
+so you start from how loud something feels in here and then fail to shrink the number enough for
+
+25
+00:01:39,260 --> 00:01:42,940
+people standing over there. The room is not a panel of judges.
+
+26
+00:01:43,020 --> 00:01:46,800
+It is a room full of people running the same calculation about themselves,
+
+27
+00:01:46,880 --> 00:01:49,720
+aimed at their own reflection rather than yours.
+
+28
+00:01:50,320 --> 00:01:53,020
+The title of that paper is not about shirts, by the way.
+
+29
+00:01:53,320 --> 00:01:58,400
+It is about actions and appearance. The shirt was simply the easiest thing to take off and
+
+30
+00:01:58,480 --> 00:02:02,270
+count. Your face is the harder version of the same experiment.
+
+31
+00:02:02,520 --> 00:02:05,680
+It runs every day, and it has no end time.
+
+32
+00:02:05,760 --> 00:02:08,220
+There is a second reason it feels so certain.
+
+33
+00:02:08,300 --> 00:02:10,640
+You have almost never seen your own face.
+
+34
+00:02:10,720 --> 00:02:15,240
+What you have seen, every day since you were tall enough to reach a sink, is the mirror version,
+
+35
+00:02:15,320 --> 00:02:20,380
+flipped left to right, and that flipped version is the one your brain filed as you.
+
+36
+00:02:20,980 --> 00:02:24,140
+In 1977, the researchers Theodore Mita,
+
+37
+00:02:24,480 --> 00:02:30,320
+Marshall Dermer and Jeffrey Knight photographed people and then showed each of them two prints:
+
+38
+00:02:30,900 --> 00:02:35,100
+the real photograph, and a mirror-reversed copy of it.
+
+39
+00:02:35,180 --> 00:02:38,849
+People preferred the reversed one, the face they already knew.
+
+40
+00:02:40,120 --> 00:02:43,120
+Their close friends, handed the same two prints,
+
+41
+00:02:43,340 --> 00:02:46,340
+preferred the real one almost every time.
+
+42
+00:02:46,940 --> 00:02:51,380
+Nobody in that study was wrong. They were being asked about two different faces.
+
+43
+00:02:51,640 --> 00:02:54,800
+You live with one of them. Everybody else lives with the other.
+
+44
+00:02:55,080 --> 00:02:57,440
+So the photograph that ruins your evening,
+
+45
+00:02:57,540 --> 00:03:02,530
+taken on somebody else's phone at an angle you did not choose, is not a discovery.
+
+46
+00:03:02,680 --> 00:03:07,780
+It is your actual face, seen by the one person alive who is not used to it.
+
+47
+00:03:08,500 --> 00:03:12,520
+Underneath both of those sits something far older than mirrors,
+
+48
+00:03:12,800 --> 00:03:16,140
+cameras, or the whole idea of a photograph.
+
+49
+00:03:16,380 --> 00:03:20,790
+A fast, automatic scorer that rates a face the instant it arrives,
+
+50
+00:03:20,900 --> 00:03:23,620
+before any deliberate thought catches up.
+
+51
+00:03:24,210 --> 00:03:30,520
+The psychologists Judith Langlois and Lori Roggman found the cleanest evidence of what it is
+
+52
+00:03:30,600 --> 00:03:36,380
+tuned for. When they blended dozens of ordinary faces into a single composite image,
+
+53
+00:03:36,460 --> 00:03:41,780
+people rated the blend as more attractive than nearly every individual face that went into it.
+
+54
+00:03:42,269 --> 00:03:45,880
+The scorer is not hunting for something rare or exceptional.
+
+55
+00:03:45,960 --> 00:03:50,060
+It is hunting for the middle. For symmetry, for regularity,
+
+56
+00:03:50,140 --> 00:03:53,040
+for a face that reports no particular problem.
+
+57
+00:03:53,120 --> 00:03:58,480
+And a judgment that fires that fast, before you can think, is not a matter of taste.
+
+58
+00:03:58,760 --> 00:04:02,600
+Speed like that is reserved for things that used to be urgent.
+
+59
+00:04:02,680 --> 00:04:07,320
+Here is what that scorer was actually for, and it is not what you have been using it for.
+
+60
+00:04:07,400 --> 00:04:10,480
+It was built to point outward. At other people.
+
+61
+00:04:10,560 --> 00:04:12,980
+For almost the entire span of human existence,
+
+62
+00:04:13,060 --> 00:04:16,400
+it never once got a clear look at the face it belonged to.
+
+63
+00:04:17,160 --> 00:04:20,140
+Think about what a person could genuinely see of themselves.
+
+64
+00:04:20,720 --> 00:04:24,380
+Still water on a windless day. A wet stone.
+
+65
+00:04:25,260 --> 00:04:28,800
+A sliver of polished rock, if their group happened to own one.
+
+66
+00:04:29,409 --> 00:04:32,240
+Their own hands, their own feet,
+
+67
+00:04:33,000 --> 00:04:37,520
+and nothing above the neck. For roughly two hundred thousand years,
+
+68
+00:04:37,800 --> 00:04:43,211
+the single most examined object in your life today was the one object a human being was
+
+69
+00:04:43,291 --> 00:04:49,000
+structurally unable to examine. The verdict on your face lived somewhere you could not read it
+
+70
+00:04:49,080 --> 00:04:52,389
+directly, in the faces of everyone else as they looked at you.
+
+71
+00:04:52,469 --> 00:04:57,000
+The mirror did not fix that, because the mirror is barely here yet.
+
+72
+00:04:57,080 --> 00:05:00,430
+A clear, sharp, honest mirror is an industrial product,
+
+73
+00:05:00,700 --> 00:05:04,720
+cheap enough for an ordinary home only in the last couple of centuries.
+
+74
+00:05:04,800 --> 00:05:09,720
+Before that it was a rich person's object, or a dim sheet of polished metal,
+
+75
+00:05:09,980 --> 00:05:13,980
+or nothing at all. So the arithmetic is worth sitting with.
+
+76
+00:05:14,240 --> 00:05:17,060
+Two hundred thousand years of a face you could not inspect,
+
+77
+00:05:17,240 --> 00:05:19,940
+then roughly two hundred years of one you can,
+
+78
+00:05:20,020 --> 00:05:25,090
+then about fifteen years of carrying a lit camera that points at it on demand.
+
+79
+00:05:25,380 --> 00:05:28,550
+Your scorer has not had time to notice any of that happened.
+
+80
+00:05:28,630 --> 00:05:31,960
+And the people it was built to read were not strangers.
+
+81
+00:05:32,310 --> 00:05:35,520
+A person lived and died inside a group of a few hundred at most,
+
+82
+00:05:35,600 --> 00:05:41,450
+and by adulthood had seen every one of those faces thousands of times, in every light,
+
+83
+00:05:41,560 --> 00:05:46,200
+at every age. Nobody scrolled past a face and never saw it again.
+
+84
+00:05:46,280 --> 00:05:52,320
+Everyone you rated, you would hunt beside, marry into, or depend on when your own food ran out.
+
+85
+00:05:53,560 --> 00:05:58,920
+That is the world the evolutionary anthropologist Sarah Blaffer Hrdy has spent a career
+
+86
+00:05:59,000 --> 00:06:03,220
+reconstructing, and inside it appearance was never decoration.
+
+87
+00:06:03,760 --> 00:06:08,080
+It was a signal the whole group read at once: health, fertility,
+
+88
+00:06:08,200 --> 00:06:10,820
+the alliances standing behind you.
+
+89
+00:06:11,580 --> 00:06:16,360
+In Hrdy's account, a woman's standing among the other women ran partly on exactly this kind of
+
+90
+00:06:16,440 --> 00:06:20,560
+comparison, because mates and allies and protection were finite,
+
+91
+00:06:20,640 --> 00:06:23,700
+and everyone was quietly ranked against everyone else.
+
+92
+00:06:24,160 --> 00:06:27,720
+None of this ran on flattery. In a small food-sharing group,
+
+93
+00:06:27,800 --> 00:06:32,740
+standing decided who shared meat with you after a failed hunt, whose fire you were welcome at,
+
+94
+00:06:32,820 --> 00:06:39,200
+whose children you were trusted to hold. Sliding down that ranking was not a bad mirror day.
+
+95
+00:06:39,280 --> 00:06:42,190
+It could mean losing the people who fed you.
+
+96
+00:06:42,270 --> 00:06:45,380
+The system is loud because it earned the right to be loud.
+
+97
+00:06:45,480 --> 00:06:48,770
+And yet the standard it was scoring against was never fixed.
+
+98
+00:06:48,850 --> 00:06:53,840
+The anthropologist Judith Anderson and her colleagues compared body ideals across dozens of
+
+99
+00:06:53,920 --> 00:06:59,480
+societies and found a pattern that no theory of universal beauty predicts.
+
+100
+00:06:59,560 --> 00:07:04,440
+Where food was scarce and unreliable, fuller bodies were the attractive ones.
+
+101
+00:07:05,480 --> 00:07:10,140
+Where food was steady and dependable, the preference flipped toward slim.
+
+102
+00:07:10,840 --> 00:07:12,810
+The reason is not mysterious.
+
+103
+00:07:12,890 --> 00:07:15,160
+Where a body might have to survive a shortage,
+
+104
+00:07:15,440 --> 00:07:20,070
+visible reserves were a genuine advantage worth choosing in a mate or an ally.
+
+105
+00:07:20,870 --> 00:07:26,180
+Where shortages did not come, those same reserves stopped signalling anything useful,
+
+106
+00:07:26,440 --> 00:07:29,740
+and something else took over as the marker of health.
+
+107
+00:07:30,410 --> 00:07:34,250
+The standard your brain treats as bedrock has been quietly rewritten,
+
+108
+00:07:34,500 --> 00:07:39,660
+society by society, according to what a group could afford to want.
+
+109
+00:07:39,740 --> 00:07:44,540
+It was never issuing a verdict on you. It was reading the room you happened to be born into.
+
+110
+00:07:45,140 --> 00:07:47,180
+Now put that system in your bathroom.
+
+111
+00:07:47,900 --> 00:07:52,820
+Every morning, a stranger-rating scorer that was never given access to its own owner is handed a
+
+112
+00:07:52,900 --> 00:07:59,120
+large, well-lit, permanently available, left-right reversed image of exactly that owner.
+
+113
+00:07:59,200 --> 00:08:03,680
+So it does what it does. It rates. You pass a shop window and it rates again.
+
+114
+00:08:03,760 --> 00:08:08,020
+You open the front camera and it rates a version it has never been trained on.
+
+115
+00:08:08,100 --> 00:08:11,460
+You join a video call and the preview window shows the true,
+
+116
+00:08:11,540 --> 00:08:15,920
+unreversed face while a lifetime of mirrors trained you on the opposite,
+
+117
+00:08:16,000 --> 00:08:21,080
+which is why you can feel perfectly fine walking down a street and wrong the second a laptop lid
+
+118
+00:08:21,160 --> 00:08:25,820
+opens. Then, and this part has no ancestral equivalent whatsoever,
+
+119
+00:08:26,020 --> 00:08:31,399
+you scroll. Your comparison group used to be a few hundred faces you had known since birth.
+
+120
+00:08:31,920 --> 00:08:33,950
+Now it is thousands of faces a week,
+
+121
+00:08:34,039 --> 00:08:38,579
+most of them chosen by a recommendation system precisely because they perform well,
+
+122
+00:08:38,659 --> 00:08:43,820
+many of them smoothed, lit, retouched, or picked from three hundred attempts.
+
+123
+00:08:44,380 --> 00:08:49,300
+That is not a population. It is a highlight reel with the ordinary middle removed.
+
+124
+00:08:49,480 --> 00:08:54,080
+And your scorer, which cannot tell a neighbour from a stranger optimized by a machine,
+
+125
+00:08:54,240 --> 00:08:57,720
+files every last one of them as local competition.
+
+126
+00:08:57,800 --> 00:09:02,360
+So how much of your verdict is a measurement, and how much is just repetition?
+
+127
+00:09:02,440 --> 00:09:05,320
+A tool built to rank a few hundred known faces,
+
+128
+00:09:05,400 --> 00:09:08,900
+fed a reversed image of the one face it was never meant to see,
+
+129
+00:09:09,000 --> 00:09:11,680
+benchmarked against a population that does not exist,
+
+130
+00:09:11,760 --> 00:09:15,410
+and run hundreds of times a week instead of a few times a season.
+
+131
+00:09:16,040 --> 00:09:18,980
+Every pass feels like independent confirmation.
+
+132
+00:09:19,060 --> 00:09:21,600
+It is the same broken measurement, taken again.
+
+133
+00:09:22,010 --> 00:09:25,020
+None of this means the thing you see is imaginary.
+
+134
+00:09:25,100 --> 00:09:30,100
+It may well be there. This is not a promise that you are secretly flawless and only need better
+
+135
+00:09:30,180 --> 00:09:33,480
+lighting, and anyone selling you that is selling you something.
+
+136
+00:09:33,560 --> 00:09:38,820
+What changes is not the feature. It is the weight on it, and where that weight came from.
+
+137
+00:09:38,900 --> 00:09:42,010
+The spotlight effect says most of that weight was never in the room.
+
+138
+00:09:42,090 --> 00:09:46,360
+The mirror mismatch says a good part of what you are rating is a face almost nobody else has
+
+139
+00:09:46,440 --> 00:09:51,400
+ever seen. And the scorer underneath both was built to glance at a stranger once,
+
+140
+00:09:51,640 --> 00:09:55,360
+not to run the same face ten thousand times across a single lifetime.
+
+141
+00:09:55,580 --> 00:09:58,360
+So the shift tonight is not to like the feature.
+
+142
+00:09:58,520 --> 00:10:01,000
+It is smaller than that, and more useful.
+
+143
+00:10:01,260 --> 00:10:04,060
+It is to stop treating your own verdict as evidence.
+
+144
+00:10:04,140 --> 00:10:09,980
+It will arrive anyway. In a mirror, in a lift door, in a photo you did not agree to.
+
+145
+00:10:10,060 --> 00:10:14,550
+And when it does, the only thing worth asking is what it just measured you against.
+
+146
+00:10:14,980 --> 00:10:19,340
+A few hundred people who already know you and will see you again tomorrow regardless.
+
+147
+00:10:19,420 --> 00:10:23,140
+Or a scroll of strangers assembled by a machine to be looked at.
+
+148
+00:10:23,620 --> 00:10:25,940
+Your reflection is not a neutral witness.
+
+149
+00:10:26,020 --> 00:10:31,200
+It is the only witness in your life running on a reversed image, a private spotlight,
+
+150
+00:10:31,280 --> 00:10:36,580
+and a comparison group that no human being before this century ever had to stand next to.
+
+151
+00:10:37,020 --> 00:10:39,820
+You still know exactly what is wrong with your face.
+
+152
+00:10:39,900 --> 00:10:42,180
+But that was never a fact about your face.
+
+153
+00:10:42,260 --> 00:10:48,140
+It was a fact about the only pair of eyes ever assigned to watch it, at close range, in reverse,
+
+154
+00:10:48,220 --> 00:10:50,700
+for a lifetime, with nowhere else to look.
+
+155
+00:10:50,920 --> 00:10:55,480
+And the same tunnel that narrows your whole mind around a scarce number narrows just as hard
+
+156
+00:10:55,560 --> 00:10:59,940
+around one feature on your face, until it is the only thing left in the frame.
+
+157
+00:11:00,040 --> 00:11:02,880
+How many of today's verdicts came out of that same tunnel?
+
+158
+00:11:02,960 --> 00:11:07,520
+That one already has a video of its own. The psychology of being poor.
+
+159
+00:11:07,720 --> 00:11:08,960
+Watch that one next.

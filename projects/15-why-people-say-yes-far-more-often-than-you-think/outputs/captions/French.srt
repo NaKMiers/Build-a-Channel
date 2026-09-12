@@ -1,0 +1,623 @@
+1
+00:00:00,160 --> 00:00:04,069
+Tu sais déjà qui dirait non. Tu ne lui as jamais posé la question.
+
+2
+00:00:04,149 --> 00:00:06,230
+Il y a quelque chose dont tu avais besoin ce mois-ci.
+
+3
+00:00:06,310 --> 00:00:10,200
+Un service, une mise en relation, vingt minutes du temps de quelqu'un.
+
+4
+00:00:10,340 --> 00:00:13,820
+Tu n'as pas demandé. Et tu as un mot pour ça.
+
+5
+00:00:13,960 --> 00:00:17,380
+Timide. Fier. Mauvais dès qu'il s'agit d'avoir besoin des autres.
+
+6
+00:00:17,840 --> 00:00:21,050
+Mais ce n'est pas ce qui s'est passé. Tu n'étais pas modeste.
+
+7
+00:00:21,290 --> 00:00:24,480
+Tu faisais une prédiction, et elle se trompait de moitié.
+
+8
+00:00:24,880 --> 00:00:27,880
+Les chercheurs appellent ça sous-estimer le taux d'acceptation.
+
+9
+00:00:28,200 --> 00:00:30,600
+À la fin de cette vidéo, tu connaîtras la taille de l'erreur,
+
+10
+00:00:30,680 --> 00:00:35,540
+pourquoi la personne que tu as peur de solliciter calcule quelque chose de complètement différent de ce que tu
+
+11
+00:00:35,620 --> 00:00:40,800
+crois, et pourquoi la façon dont tu demandes change la réponse plus que la personne à qui tu demandes.
+
+12
+00:00:41,200 --> 00:00:44,480
+Commence par une planchette à pince et une rue pleine d'inconnus.
+
+13
+00:00:45,700 --> 00:00:51,900
+En 2008, Frank Flynn et Vanessa Lake, qui publie aujourd'hui sous le nom de Vanessa Bohns,
+
+14
+00:00:52,240 --> 00:00:54,740
+ont donné une tâche simple à un groupe de participants.
+
+15
+00:00:55,280 --> 00:00:57,880
+Sortir. Aborder des inconnus.
+
+16
+00:00:57,960 --> 00:01:00,740
+En convaincre cinq de remplir un court questionnaire.
+
+17
+00:01:00,820 --> 00:01:05,480
+Rien de sensible, rien de coûteux, deux minutes de l'après-midi d'un inconnu.
+
+18
+00:01:05,680 --> 00:01:09,840
+Avant que quiconque quitte la salle, chaque participant a écrit un chiffre.
+
+19
+00:01:09,940 --> 00:01:14,340
+Combien d'inconnus penses-tu devoir aborder avant que cinq d'entre eux disent oui ?
+
+20
+00:01:14,420 --> 00:01:16,440
+La moyenne des estimations tournait autour de vingt.
+
+21
+00:01:16,520 --> 00:01:19,040
+Le vrai chiffre était autour de dix.
+
+22
+00:01:19,120 --> 00:01:22,000
+Prends une seconde pour y penser, parce que l'écart n'est pas petit.
+
+23
+00:01:22,280 --> 00:01:26,120
+Ce n'est pas une erreur d'arrondi, ni un timide qui joue la prudence.
+
+24
+00:01:26,580 --> 00:01:30,460
+La moitié des gens que les participants avaient déjà éliminés d'avance ont dit oui.
+
+25
+00:01:30,780 --> 00:01:34,100
+Chacun d'eux était un inconnu qui aurait aidé et à qui on n'a jamais demandé,
+
+26
+00:01:34,180 --> 00:01:38,880
+et le participant est passé devant lui avec un chiffre qu'il avait inventé dans une salle à l'étage.
+
+27
+00:01:38,960 --> 00:01:41,260
+Flynn et Lake ont refait l'expérience avec une autre demande.
+
+28
+00:01:41,480 --> 00:01:45,540
+Emprunter le téléphone d'un inconnu pour passer un appel. L'estimation est repartie trop haut.
+
+29
+00:01:45,660 --> 00:01:48,240
+Ils l'ont refaite avec une demande qui coûte du vrai temps,
+
+30
+00:01:48,360 --> 00:01:51,160
+demander à un inconnu de les accompagner à pied jusqu'au gymnase du campus.
+
+31
+00:01:51,480 --> 00:01:54,700
+Encore trop haut. La forme de l'erreur n'a pas bougé.
+
+32
+00:01:54,840 --> 00:01:58,700
+Quel que soit le service, les gens s'attendaient à être refusés environ deux fois plus souvent qu'ils
+
+33
+00:01:58,780 --> 00:02:01,500
+ne l'étaient vraiment. Alors, de quoi cette erreur est-elle faite ?
+
+34
+00:02:01,580 --> 00:02:04,250
+Pas de timidité. De quelque chose de plus mécanique que ça.
+
+35
+00:02:04,720 --> 00:02:07,380
+Quand tu prépares une demande, tu es assis d'un seul côté,
+
+36
+00:02:07,460 --> 00:02:10,900
+et de ce côté-là, une seule chose est visible.
+
+37
+00:02:11,109 --> 00:02:14,380
+Le coût du oui. Combien de minutes ça va leur prendre.
+
+38
+00:02:14,660 --> 00:02:18,660
+À quel point c'est gênant. À quel point tu vas les déranger.
+
+39
+00:02:19,200 --> 00:02:22,629
+Tu calcules ce chiffre avec soin, parce que c'est le seul que tu peux voir,
+
+40
+00:02:22,960 --> 00:02:25,440
+et ensuite tu décides qu'il est trop élevé.
+
+41
+00:02:25,520 --> 00:02:29,700
+La personne à qui tu vas demander ne calcule pas ce chiffre du tout.
+
+42
+00:02:29,780 --> 00:02:35,520
+Elle calcule le coût du non. Pour te refuser, elle doit devenir quelqu'un qui t'a refusé.
+
+43
+00:02:35,820 --> 00:02:40,640
+À voix haute, avec ses propres mots, pendant que tu es là, juste après avoir dit ce dont tu as besoin.
+
+44
+00:02:41,049 --> 00:02:45,860
+Ce n'est pas un calcul sur le temps. C'est un calcul sur qui elle va être pendant
+
+45
+00:02:45,940 --> 00:02:49,960
+les dix prochaines secondes, et c'est cher d'une façon dont deux minutes passées à remplir un
+
+46
+00:02:50,040 --> 00:02:53,920
+questionnaire ne le sont pas. Deux personnes, deux calculs différents,
+
+47
+00:02:54,000 --> 00:02:58,600
+et un seul des deux est résolu par celui qui décide si la demande a lieu.
+
+48
+00:02:59,240 --> 00:03:02,820
+Bohns a passé les années suivantes à documenter jusqu'où ça va.
+
+49
+00:03:02,900 --> 00:03:08,500
+Le même écart apparaît quand les gens demandent des dons, des signatures, de l'aide au travail.
+
+50
+00:03:08,580 --> 00:03:11,120
+Ça marche aussi dans l'autre sens, ce qui est moins confortable :
+
+51
+00:03:11,240 --> 00:03:15,580
+les gens sous-estiment aussi la pression qu'ils mettent sur quelqu'un quand ils demandent une chose qu'ils
+
+52
+00:03:15,660 --> 00:03:20,140
+n'auraient pas dû demander. L'instrument n'est pas réglé sur la modestie.
+
+53
+00:03:20,400 --> 00:03:26,560
+Il n'est simplement pas réglé. Nicholas Epley et Juliana Schroeder ont trouvé la même erreur de lecture une étape
+
+54
+00:03:26,640 --> 00:03:29,240
+plus tôt, avant même que la demande existe.
+
+55
+00:03:29,580 --> 00:03:34,040
+Ils ont pris des voyageurs de trains et de bus à Chicago et ont demandé à un groupe d'engager une
+
+56
+00:03:34,120 --> 00:03:39,220
+conversation avec un inconnu. À un autre groupe, ils ont demandé de prédire comment ça se passerait.
+
+57
+00:03:39,300 --> 00:03:42,620
+Ceux qui prédisaient disaient que ce serait gênant et désagréable,
+
+58
+00:03:42,900 --> 00:03:45,290
+et que l'inconnu n'en aurait pas envie.
+
+59
+00:03:45,370 --> 00:03:49,090
+Ceux qui l'ont vraiment fait ont trouvé le trajet plus agréable que ceux restés dans le
+
+60
+00:03:49,170 --> 00:03:51,900
+silence, et les inconnus aussi.
+
+61
+00:03:52,300 --> 00:03:56,060
+La prévision était fausse. L'expérience s'est bien passée.
+
+62
+00:03:56,350 --> 00:03:59,700
+Et la prévision est la seule partie sur laquelle on agit.
+
+63
+00:03:59,829 --> 00:04:05,600
+Alors pourquoi l'instrument est-il réglé comme ça, et pourquoi un animal social serait-il fait pour sous-estimer,
+
+64
+00:04:05,680 --> 00:04:10,460
+si constamment et toujours dans le même sens, à quel point les autres sont prêts à l'aider ?
+
+65
+00:04:10,780 --> 00:04:12,440
+Reviens au groupe pour lequel il a été conçu.
+
+66
+00:04:12,520 --> 00:04:17,759
+Lorna Marshall a passé des années, dans les années 1950, à vivre avec les Ju/'hoansi à Nyae Nyae,
+
+67
+00:04:17,880 --> 00:04:22,940
+dans l'actuelle Namibie, et elle a noté sur la viande quelque chose qui semble étrange tant qu'on ne voit pas
+
+68
+00:04:23,020 --> 00:04:27,500
+à quoi ça sert. Quand un grand animal arrivait au camp, il n'était pas donné.
+
+69
+00:04:27,880 --> 00:04:32,750
+Il était distribué. Qui recevait quelle part était fixé par les liens et les obligations,
+
+70
+00:04:32,880 --> 00:04:35,460
+réglé selon des règles que tout le monde connaissait déjà,
+
+71
+00:04:35,540 --> 00:04:38,700
+et l'homme qui avait fait la prise n'avait presque pas son mot à dire.
+
+72
+00:04:39,160 --> 00:04:42,380
+La générosité n'était pas une décision. C'était une procédure.
+
+73
+00:04:42,560 --> 00:04:47,260
+Et l'accusation que les gens redoutaient n'était pas d'être pauvres, faibles ou malchanceux.
+
+74
+00:04:47,540 --> 00:04:51,730
+C'était d'être avares. Au cœur lointain, selon l'expression notée par Marshall.
+
+75
+00:04:52,020 --> 00:04:54,360
+Dans un groupe où tout le monde mange de la chance du jour,
+
+76
+00:04:54,440 --> 00:04:58,940
+celui qui garde pour lui est le seul vrai danger pour les autres.
+
+77
+00:04:59,020 --> 00:05:04,510
+L'anthropologue Nicolas Peterson a donné un nom à ce mécanisme en 1993,
+
+78
+00:05:04,920 --> 00:05:07,280
+en travaillant sur les sociétés de chasseurs-cueilleurs.
+
+79
+00:05:07,360 --> 00:05:13,200
+Il l'a appelé le partage sur demande. Dans beaucoup de ces groupes, les biens ne circulent pas
+
+80
+00:05:13,420 --> 00:05:19,380
+parce que le propriétaire les offre. Ils circulent parce que celui qui en a besoin demande, directement,
+
+81
+00:05:19,720 --> 00:05:24,140
+à voix haute, souvent avec insistance, et en général devant les autres.
+
+82
+00:05:24,340 --> 00:05:27,660
+Demander n'est pas un dernier recours ni une perte de face.
+
+83
+00:05:28,040 --> 00:05:31,360
+Demander est le canal. C'est comme ça que l'économie fonctionne.
+
+84
+00:05:31,610 --> 00:05:33,900
+Et regarde ce que ça fait au calcul.
+
+85
+00:05:34,320 --> 00:05:36,140
+Dans une bande de cent cinquante personnes,
+
+86
+00:05:36,220 --> 00:05:40,480
+la taille que Robin Dunbar a identifiée comme le plafond d'un groupe où chacun peut entretenir une
+
+87
+00:05:40,560 --> 00:05:44,380
+relation avec chacun, tu n'avais presque jamais rien à estimer.
+
+88
+00:05:44,460 --> 00:05:49,040
+Tu ne demandais pas à un inconnu. Tu demandais à quelqu'un dont tu avais vu la réponse mille
+
+89
+00:05:49,120 --> 00:05:51,440
+fois, qui viendrait te demander quelque chose la semaine suivante,
+
+90
+00:05:51,520 --> 00:05:54,340
+et qui serait encore assis au même feu dans dix ans.
+
+91
+00:05:54,770 --> 00:05:59,300
+Les chances d'un oui ne faisaient aucun doute. Ce n'était même pas une question.
+
+92
+00:05:59,380 --> 00:06:01,920
+L'esprit n'a donc jamais reçu d'estimateur d'acceptation.
+
+93
+00:06:02,340 --> 00:06:06,280
+Il n'en avait pas besoin. Ce dont il avait besoin, c'était de l'instrument inverse.
+
+94
+00:06:06,520 --> 00:06:10,810
+Un frein. Parce que dans un petit groupe où rien n'est privé et où personne ne part,
+
+95
+00:06:11,020 --> 00:06:14,780
+ce qui pouvait vraiment te détruire, ce n'était pas d'être refusé.
+
+96
+00:06:15,100 --> 00:06:17,820
+C'était de devenir celui qui a toujours besoin.
+
+97
+00:06:17,900 --> 00:06:22,920
+Demande trop souvent, demande trop gros, demande sans jamais être de l'autre côté,
+
+98
+00:06:23,000 --> 00:06:27,440
+et le groupe a un mot pour toi, et ce mot voyage, et il voyage plus vite que toi.
+
+99
+00:06:27,720 --> 00:06:32,180
+Ce frein, c'est la sensation que tu as dans la demi-seconde avant de décider de ne pas envoyer le message.
+
+100
+00:06:32,400 --> 00:06:37,060
+Ce n'est pas une prévision sur eux. Ça n'a jamais été une prévision sur eux.
+
+101
+00:06:37,140 --> 00:06:41,060
+C'est un très vieil instrument qui mesure ta propre place dans le groupe, et il était juste,
+
+102
+00:06:41,140 --> 00:06:45,820
+et il était nécessaire, et il a gardé tes ancêtres à l'intérieur du seul groupe qui les gardait
+
+103
+00:06:45,900 --> 00:06:50,250
+en vie. Voilà ce qui a changé, et ce n'est pas la générosité humaine.
+
+104
+00:06:50,580 --> 00:06:53,840
+À Nyae Nyae, le réseau était actif par défaut.
+
+105
+00:06:53,920 --> 00:06:58,460
+La viande arrivait que tu l'aies demandée ou non, parce que les règles la poussaient vers toi.
+
+106
+00:06:58,580 --> 00:07:03,320
+Le frein pouvait rester serré sans risque, parce que le laisser serré ne te coûtait presque rien.
+
+107
+00:07:03,760 --> 00:07:07,520
+L'aide venait de toute façon. Tu ne vis pas dans ce réseau.
+
+108
+00:07:07,600 --> 00:07:10,460
+Rien dans ta vie ne vient vers toi automatiquement.
+
+109
+00:07:10,580 --> 00:07:14,780
+Ni la mise en relation, ni la recommandation, ni les vingt minutes,
+
+110
+00:07:14,900 --> 00:07:18,400
+ni le coup de main pour la chose que tu ne peux pas porter seul.
+
+111
+00:07:18,620 --> 00:07:22,120
+Il ne reste qu'un seul canal par lequel tout ça peut t'atteindre,
+
+112
+00:07:22,200 --> 00:07:27,600
+et ce canal, c'est la demande explicite, faite par toi, à une personne précise.
+
+113
+00:07:27,680 --> 00:07:30,460
+Le réseau est passé d'actif à inactif.
+
+114
+00:07:30,610 --> 00:07:34,900
+Le frein, lui, n'a jamais bougé. Et maintenant il tourne sans aucune information.
+
+115
+00:07:34,980 --> 00:07:40,040
+La personne que tu as peur de solliciter n'est pas quelqu'un que tu as vu refuser mille fois.
+
+116
+00:07:40,190 --> 00:07:45,060
+C'est un collègue que tu connais depuis huit mois, ou un inconnu avec un téléphone à la main.
+
+117
+00:07:45,660 --> 00:07:49,920
+Le frein n'a aucun historique à lire, alors il lit la seule chose disponible,
+
+118
+00:07:50,000 --> 00:07:52,120
+c'est-à-dire ce que ça ferait de se faire refuser,
+
+119
+00:07:52,200 --> 00:07:56,220
+et il te tend cette sensation et te laisse la classer comme étant leur réponse.
+
+120
+00:07:56,600 --> 00:07:59,880
+C'est toute l'erreur. Tu ne reçois pas un non.
+
+121
+00:08:00,000 --> 00:08:04,240
+Tu en fabriques un, puis tu le lis comme s'il venait de l'extérieur.
+
+122
+00:08:04,320 --> 00:08:06,180
+Le changement, ce n'est donc pas d'être plus courageux.
+
+123
+00:08:06,260 --> 00:08:10,860
+Le courage n'est pas la variable, et se dire d'en avoir plus n'a jamais marché pour
+
+124
+00:08:10,940 --> 00:08:15,970
+personne. Le changement, c'est d'arrêter de te protéger de la gêne,
+
+125
+00:08:16,260 --> 00:08:18,740
+parce que la gêne est le principe actif.
+
+126
+00:08:20,000 --> 00:08:25,820
+En 2017, Mahdi Roghanizad et Vanessa Bohns ont testé les mêmes demandes sur deux canaux.
+
+127
+00:08:26,100 --> 00:08:28,460
+En face à face, et par e-mail.
+
+128
+00:08:29,060 --> 00:08:35,180
+Mêmes mots, même service. La demande en personne était environ trente-quatre fois plus efficace que
+
+129
+00:08:35,260 --> 00:08:39,800
+celle envoyée par e-mail, et ceux qui envoyaient les e-mails n'en avaient aucune idée.
+
+130
+00:08:39,880 --> 00:08:42,320
+Ils pensaient que les deux marcheraient à peu près pareil.
+
+131
+00:08:42,740 --> 00:08:46,500
+Relis ça à la lumière du mécanisme et ça cesse d'être une surprise.
+
+132
+00:08:46,740 --> 00:08:49,360
+Le oui n'a jamais été produit par la taille du service.
+
+133
+00:08:49,440 --> 00:08:54,060
+Il était produit par le coût du non. Et un e-mail ne coûte rien à refuser.
+
+134
+00:08:54,400 --> 00:08:58,620
+Un message dans un groupe non plus. Ni une allusion, ni un peut-être,
+
+135
+00:08:58,960 --> 00:09:02,300
+ni la phrase que tu as presque sûrement déjà utilisée : aucune pression,
+
+136
+00:09:02,380 --> 00:09:07,410
+seulement si tu as le temps. Chacune de ces phrases est une gentillesse que tu te fais à toi-même.
+
+137
+00:09:07,820 --> 00:09:10,160
+Chacune donne à l'autre une sortie gratuite,
+
+138
+00:09:10,280 --> 00:09:14,720
+et enlève du même coup la force exacte qui aurait produit le oui.
+
+139
+00:09:14,800 --> 00:09:19,780
+Alors ce soir, une seule chose. Choisis la demande que tu as déjà décidé de ne pas faire.
+
+140
+00:09:20,080 --> 00:09:22,580
+Une personne, nommée, pas un groupe.
+
+141
+00:09:22,860 --> 00:09:25,320
+Dis-le à voix haute, au téléphone ou dans une pièce,
+
+142
+00:09:25,720 --> 00:09:29,540
+et dis la vraie chose dont tu as besoin plutôt que la version adoucie.
+
+143
+00:09:29,800 --> 00:09:32,600
+Puis arrête de parler et laisse-la répondre.
+
+144
+00:09:32,880 --> 00:09:37,120
+Certains diront non. C'est réel, et ce n'est pas le sujet.
+
+145
+00:09:37,320 --> 00:09:40,480
+Le sujet, c'est que le non sera enfin venu d'eux,
+
+146
+00:09:40,780 --> 00:09:44,040
+et à peu près une fois sur deux, si on en croit toutes les études faites là-dessus,
+
+147
+00:09:44,120 --> 00:09:47,940
+il ne viendra pas du tout. Tu sais toujours qui dirait non.
+
+148
+00:09:48,020 --> 00:09:52,740
+Tu ne lui as toujours pas demandé. Mais ça n'a jamais été un fait sur cette personne.
+
+149
+00:09:53,380 --> 00:09:58,700
+C'était un chiffre que tu as produit seul, dans ta tête, avec le seul matériau que tu avais,
+
+150
+00:09:58,780 --> 00:10:03,440
+c'est-à-dire la sensation de se faire refuser. Ils n'étaient jamais dans la pièce pendant que tu décidais.
+
+151
+00:10:03,840 --> 00:10:07,200
+Mets-les-y. Et c'est la partie qui mérite qu'on s'y attarde,
+
+152
+00:10:07,420 --> 00:10:12,020
+parce que tu te fais ça à toi aussi, et l'endroit où tu le fais le plus fort est celui que tu regardes
+
+153
+00:10:12,100 --> 00:10:16,960
+chaque matin. Un verdict que tu as écrit en privé, de ta propre main,
+
+154
+00:10:17,040 --> 00:10:21,280
+puis passé des années à relire comme si quelqu'un d'autre te l'avait remis.
+
+155
+00:10:21,360 --> 00:10:27,580
+Ça te parle ? Il y a une vidéo sur cette chaîne qui s'appelle The Psychology Of Being Ugly.
+
+156
+00:10:27,660 --> 00:10:30,800
+Elle parle exactement de ça. Regarde celle-là ensuite.

@@ -1223,6 +1223,157 @@ project 11 note the scratchpad is not durable, so **`image-prompts.md` plus `vis
 the recovery pair**: between them they carry the prose, the per-beat asset, plate, register, shot,
 tier, delta, motif and text, and the surface is recoverable from each prompt's own phrase.
 
+## Project 15 (2026-09-12), why people say yes: 297 prompts, 330 plan beats, 109 plates, 108 breaks
+
+Clean on every mechanical check. 297 cues to 297 prompts, V2 anchor and lock on all 297 with zero
+V1 strings, timestamps an exact diff apart from the one documented remap, zero stray tokens, zero
+non-prompt lines, first byte `[`, zero adjacent pairs without a blank line, 809 lines, tier plan
+equal to prompts exactly (121 CLEAN / 159 LAYERED / 17 ATMOSPHERIC), surfaces summing to 297 with
+exactly one phrase per prompt, zero mixed-surface plates, zero ground-word mismatches, every source
+pointing backward, every break opening a PLATE, no em dash, no yellow, ASCII throughout. Breaks 108
+over 297 is one scene every 2.75 prompts, longest inherited run 9 at `[8:31]`. Built data-first:
+chains as python data, two rebalancing passes as data, 109 plate compositions written as prose,
+variants and callbacks derived mechanically.
+
+Motif: **the head row**, one plain small circle head with a charcoal outline, a flat white fill and
+a complete simple doodle face, repeated at one uniform size wherever a count is the information.
+117 beats, plus 24 on the camp ring and 9 on the mirror. Chosen by the project 8 rule, the drawing
+both halves share, and for a second reason this script makes unusually strong: **every number in
+the video is a number of people.** Twenty against ten, five questionnaires, half the row, a band of
+a hundred and fifty, one person rather than a group. A motif whose deltas are inherently presence,
+absence and count is the cheapest possible compliance with rule 18, and it is why this run produced
+zero attribute-only deltas on the first audit rather than after a rewrite pass.
+
+### Pick a motif whose deltas are countable, and rule 18 stops being a chore
+
+Projects 13 and 14 chose a motif for what it meant (an aperture ring, a reflective field) and then
+had to audit their deltas separately. Choosing a **countable** glyph makes the two decisions one
+decision: a row of heads can gain one, lose five, fill two and leave three hollow, and every one of
+those reads at thumbnail size. The rule 18 audit here found 0 attribute-verb hits and 0 no-signal
+hits after one wording pass, against project 14's 4 and 2 false alarms. **Where a script counts
+people, cast the count as the motif.**
+
+### THE FIND: the preserve clause froze characters a delta was introducing
+
+`[10:29]`'s delta is "@YOU is drawn standing small beside the mirror", and the assembler's preserve
+clause ahead of it said "@YOU stays in the frame in the same position and posture as the source
+plate, unchanged in design". The plate does not contain him at all. The model is handed a direct
+contradiction and will resolve it by ignoring one half.
+
+This is the **project 9 token trap inverted**. That trap is a delta naming a token the plate's prose
+does not carry; the assert for it (`delta tokens subset of plate tokens`) passed here, because the
+chain's declared token list is not the same thing as the plate's prose. Sixteen chains legitimately
+introduce a character mid-chain, so the declared list is right and the freeze clause was wrong.
+
+Two fixes, both one line, both worth keeping in any assembler:
+
+```python
+# only tokens the PLATE PROSE draws may be told to stay unchanged
+toks = [t for t in chain['tokens'].split() if t in chain['plate']]
+# and a delta introducing a token must use arrival language
+if t not in chain['plate']: assert ARRIVE.search(delta)
+```
+
+The same pass found the punctuation tell: with no tokens left to freeze, the sentence read
+"palette and line hierarchy,. The single delta". **A stray `,.` in an assembled file is a dropped
+optional clause, so grep for it.**
+
+### The four first-pass budget errors, eighth run in a row, all four fixed as data
+
+1. **Surface**: tinted 26.6 percent against a 20 target with white at 2.4 against 8. Same cause as
+   projects 6, 13 and 14, every card and diagram reaching for a chapter tint. 18 beats moved tinted
+   to pure white as whole chains (the dense evidence runs: the cost column, demand sharing, the
+   tally, the free exits, the thirty-four-times comparison) and 3 moved tinted to cream. Final
+   story 37.0, cream 30.6, tinted 19.5, white 8.4, cobalt 4.4.
+2. **Register**: STORY 25.3 against a 30 to 40 band, HYBRID 7.7 against 10 to 15, SPLIT_OR_SCALE
+   13.1 against 5 to 10. Fixed by honest relabeling only: five portrait chains set in a real room
+   with real objects are STORY, a tinted card with a wall and a figure and a column is HYBRID not
+   SPLIT, and a variant that preserves a story plate is a story beat. Final STORY 30.3, CARD 19.9,
+   DIAGRAM 19.5, HYBRID 12.5, PORTRAIT 11.8, SPLIT_OR_SCALE 6.1, **all six in band**.
+3. **Tier**: CLEAN 54.5 against a 40 target. 44 beats moved to LAYERED, counted before the move was
+   run per project 12, so no over-correction. Final 40.7 CLEAN, 53.5 LAYERED, 5.7 ATMOSPHERIC.
+4. **Shot grammar**: two 30 second blocks under four shot tasks, at `2:00` and `8:00`. Both fixed by
+   one honest re-shot each, a column with its tag drawn large and an instrument face drawn large are
+   both `macro`. Zero blocks under four afterwards, the second run in a row with no arithmetic-limit
+   exception.
+
+### ON-SCREEN TEXT WAS THE FIFTH FIRST-PASS ERROR, and it has never been measured before
+
+First assembly carried a caption on **39 of 330 planned beats, 11.8 percent**, against the
+`visual-style.md` band of 25 to 35. No previous entry in this file records the text share except
+project 11's rebuild (31.0 percent), so it has been going unchecked. **Add it to the first-pass
+budget list alongside surface, register, tier and shot grammar.**
+
+The fix has a shape worth reusing: **51 captions were added to PLATE compositions only, never as a
+variant delta.** A caption written as a delta spends the beat's one information change on a word,
+which is the weakest possible use of a generation; written into the plate it costs nothing and the
+build still has all its deltas. Final 92 beats, 27.9 percent, mid-band. Every caption is one to four
+words in charcoal, taken from the script's own wording, and placed with the same closing sentence so
+the assembler can add them mechanically.
+
+### Two thin story plates and a false alarm, using project 13's object vocabulary
+
+The place-noun regex flagged four story plates. Three were real and got their own objects (a closed
+office door and a skirting line and a notice board for the corridor; a grass shelter and a dish and
+a ridge for the night camp; the same for the shamed-figure frame). The fourth, `answer2`, is a
+variant-form prose that preserves an earlier story plate and therefore names no objects **by
+design**. **The thin-place check has to skip chains whose opening beat is not a PLATE**, or it will
+report one false alarm per continuation chain forever.
+
+### CapCut is not bimodal here, and the chain-aware rule was not needed
+
+First script where it did not apply. `gap >= 3` gives 33 beats, `gap >= 4` gives 1, and the
+chain-aware form also gives 1. The transcript's median cue is 1.7 seconds, the densest the channel
+has recorded, so there is almost nothing to subdivide. Took the plain `gap >= 3`: 33 beats, 10.00
+percent, cadence 31.4 beats per minute, inside the 28 to 32 target. **Print the histogram first, as
+projects 11 to 14 all say, but do not assume the chain-aware form is always the answer.**
+
+### Honest deviations, reported not padded
+
+- **Assets PLATE 33.03, VARIANT 49.70, CALLBACK 7.27, CAPCUT 10.00.** PLATE is 2 points under its
+  band and VARIANT is 10 over. The rule 18 audit found **zero** deltas to promote, so converting
+  sound variants into plates purely to hit the number would be the project 11 mistake in reverse,
+  exactly project 14's position. The shape is projects 9, 12, 13 and 14's: 109 plates each carrying
+  a one or two beat build is what a script built on three named studies, a lever, a column pair and
+  a head row produces.
+- **Cobalt 4.4 percent** against a 7 target, inside the 5-point tolerance. This script's genuine
+  mind interiors are five: the imagined crowd, the predicted conversation, the feeling read as an
+  answer, and the two frames where the invented number is manufactured. Padding would mean inventing
+  thought interiors for scenes that happen in a corridor.
+- **ATMOSPHERIC 5.7 percent**, well under its 10 ceiling. The four hero frames that earn it are the
+  hook, the dusk plain, the two night-camp wides and the empty room, and this script's other peaks
+  are cards rather than places.
+- Length drift first-50 to last-50 was **0.3 percent**, the lowest the channel has recorded, ahead of
+  project 11's 2.3 and projects 13 and 14's 1.2 and 0.9.
+
+Chain lengths: 12 single-beat chains, 84 of two, 35 of three, 3 of four. Nothing longer, so no hold
+ever runs past four beats on one plate.
+
+Cast: @YOU 98, @CAMP 29, @STRANGER 28, @KIN 20, @ASKER 17, @BRAKE 14; tokens on 148 of 297 prompts.
+@YOU is 33.0 percent of all prompts and **39.7 percent of the 247 cues where rule 12 allows him**.
+The denominator excludes the Nyae Nyae act and the frames belonging to the study participant alone.
+Lower than projects 13 and 14 by design rather than by omission: this script's psychology pillar is
+a study run on somebody else, and putting the viewer inside it would break rule 12.
+
+Ledger: head row `[0:02]`, prediction bar pair `[0:21]`, sum column `[2:12]`, camp ring `[4:10]`,
+blank message stack `[6:27]`, inward arrows `[6:50]`, reflective field `[10:05]`. 36 references
+across 33 prompts, 30 carrying one and 3 carrying two, every one anchored at its object's first
+appearance. The reflective field is inherited straight from project 14's own ledger, because the
+end-screen tease points at that video and the mirror has to be the same mirror.
+
+**The `@` prefix failed again, and only the reference check caught it.** The assembler emitted
+`[0:02] the same head row returns here` with no `@`, so all 36 references were inert and the file
+passed every other check. Project 13 recorded this exact failure; it is now two for two. **Grep the
+assembled file for `@\[[0-9]` and compare the count against the ledger's own total before
+reporting.**
+
+The transcript's duplicate `[10:17]` is remapped to `[10:18]` in the prompt file, a one-step bump
+into a free second, so the Step 3 timestamp diff prints one line and that is the expected output.
+
+Generators for this run live in the session scratchpad as `p15_head.py`, the nine act files,
+`p15_rebal.py`, `p15_fix.py`, `p15_refs.py`, `p15_build.py` and `audit.py`. Per the project 11 note
+the scratchpad is not durable, so `image-prompts.md` plus `visual-plan.md` remain the recovery pair.
+
 ## 2026-08-29 - Two standing rules from user feedback
 
 ### Scene density: the script decides, the numbers are only a sanity anchor

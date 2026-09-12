@@ -1,0 +1,635 @@
+1
+00:00:00,180 --> 00:00:02,660
+Bạn biết chính xác điều gì không ổn với gương mặt mình.
+
+2
+00:00:03,000 --> 00:00:08,780
+Không ai khác từng nhìn thấy nó. Chưa một lần, dù bao năm qua người ta vẫn nhìn thẳng vào bạn.
+
+3
+00:00:08,860 --> 00:00:12,920
+Bạn gọi đó là phép lịch sự. Hay là sự phù phiếm của chính bạn cuối cùng cũng lộ ra.
+
+4
+00:00:13,180 --> 00:00:16,359
+Nhưng không phải cái nào cả. Khoảng cách giữa những gì bạn thấy
+
+5
+00:00:16,640 --> 00:00:20,140
+và những gì họ thấy đã được đo lường, và nó có một cái tên:
+
+6
+00:00:20,530 --> 00:00:26,040
+hiệu ứng ánh đèn sân khấu. Hỏi mọi người đoán xem bao nhiêu người để ý đến điều họ đang tự ti
+
+7
+00:00:26,120 --> 00:00:28,480
+thì họ nói khoảng một nửa căn phòng.
+
+8
+00:00:28,800 --> 00:00:33,360
+Con số thực tế gần với một phần tư hơn. Vậy nửa còn lại nằm ở đâu,
+
+9
+00:00:33,820 --> 00:00:37,020
+và tại sao gương mặt lại là nơi duy nhất bạn không thể kiểm chứng?
+
+10
+00:00:37,530 --> 00:00:39,380
+Phép đo này bắt đầu từ một chiếc áo phông.
+
+11
+00:00:40,140 --> 00:00:43,240
+Năm 2000, các nhà tâm lý học Thomas Gilovich,
+
+12
+00:00:43,380 --> 00:00:49,240
+Victoria Medvec và Kenneth Savitsky yêu cầu sinh viên mặc một chiếc áo in hình
+
+13
+00:00:49,320 --> 00:00:52,690
+gương mặt một ca sĩ đã lỗi thời, chọn vì nó hơi gây ngại,
+
+14
+00:00:52,890 --> 00:00:55,900
+rồi bước vào một căn phòng đầy bạn bè cùng trang lứa.
+
+15
+00:00:55,980 --> 00:01:00,600
+Trước khi vào, mỗi sinh viên đoán xem bao nhiêu người sẽ để ý chiếc áo và nhớ nó.
+
+16
+00:01:01,140 --> 00:01:03,800
+Sau đó, các nhà nghiên cứu hỏi thẳng cả phòng.
+
+17
+00:01:04,060 --> 00:01:09,020
+Người mặc áo đoán khoảng một nửa. Nhưng thực tế chỉ khoảng một phần tư nhận ra.
+
+18
+00:01:09,640 --> 00:01:12,640
+Vậy nửa còn lại đi đâu? Không đi đâu cả.
+
+19
+00:01:12,720 --> 00:01:17,260
+Nó chưa từng tồn tại ngoài một cái đầu duy nhất. Người mặc áo đã nhìn chằm chằm vào chiếc áo đó từ giây phút
+
+20
+00:01:17,340 --> 00:01:21,220
+họ khoác nó lên, trong khi những người khác chỉ liếc qua một lần rồi quay lại ngay với điều họ
+
+21
+00:01:21,300 --> 00:01:24,610
+vốn đang lo lắng, mà gần như chắc chắn là chính bản thân họ.
+
+22
+00:01:25,380 --> 00:01:29,580
+Đó là toàn bộ cơ chế, và nó lại nhẹ nhàng đến lạ một khi bạn nhìn ra nó.
+
+23
+00:01:29,660 --> 00:01:34,120
+Bạn mắc kẹt ngay tại trung tâm trải nghiệm của chính mình, không có cách nào bước ra khỏi đó,
+
+24
+00:01:34,200 --> 00:01:39,180
+nên bạn bắt đầu từ mức độ ồn ào mà một điều gì đó gây ra bên trong, rồi không thể thu nhỏ con số đó đủ cho
+
+25
+00:01:39,260 --> 00:01:42,940
+những người đứng ở đằng kia. Căn phòng không phải là một hội đồng giám khảo.
+
+26
+00:01:43,020 --> 00:01:46,800
+Nó là một căn phòng đầy người đang chạy phép tính y hệt về chính họ,
+
+27
+00:01:46,880 --> 00:01:49,720
+hướng vào hình ảnh phản chiếu của chính họ chứ không phải của bạn.
+
+28
+00:01:50,320 --> 00:01:53,020
+Nhân tiện, tiêu đề bài nghiên cứu đó không nói về áo phông.
+
+29
+00:01:53,320 --> 00:01:58,400
+Nó nói về hành động và ngoại hình. Chiếc áo chỉ đơn giản là thứ dễ cởi ra và
+
+30
+00:01:58,480 --> 00:02:02,270
+đếm được nhất. Gương mặt bạn là phiên bản khó hơn của cùng một thí nghiệm.
+
+31
+00:02:02,520 --> 00:02:05,680
+Nó diễn ra mỗi ngày, và không có thời điểm kết thúc.
+
+32
+00:02:05,760 --> 00:02:08,220
+Còn có một lý do thứ hai khiến nó có vẻ chắc chắn đến vậy.
+
+33
+00:02:08,300 --> 00:02:10,640
+Bạn gần như chưa bao giờ nhìn thấy gương mặt thật của chính mình.
+
+34
+00:02:10,720 --> 00:02:15,240
+Những gì bạn thấy mỗi ngày, từ khi đủ cao để với tới bồn rửa mặt, là phiên bản qua gương,
+
+35
+00:02:15,320 --> 00:02:20,380
+bị lật trái phải, và chính phiên bản bị lật đó mới là thứ bộ não bạn lưu lại như là bạn.
+
+36
+00:02:20,980 --> 00:02:24,140
+Năm 1977, các nhà nghiên cứu Theodore Mita,
+
+37
+00:02:24,480 --> 00:02:30,320
+Marshall Dermer và Jeffrey Knight chụp ảnh mọi người rồi cho từng người xem hai bản in:
+
+38
+00:02:30,900 --> 00:02:35,100
+bức ảnh thật, và một bản sao bị đảo ngược như trong gương.
+
+39
+00:02:35,180 --> 00:02:38,849
+Mọi người thích bản bị đảo ngược hơn, gương mặt mà họ đã quen thuộc.
+
+40
+00:02:40,120 --> 00:02:43,120
+Bạn bè thân thiết của họ, khi được đưa cùng hai bản in đó,
+
+41
+00:02:43,340 --> 00:02:46,340
+lại thích bản thật hơn gần như mọi lần.
+
+42
+00:02:46,940 --> 00:02:51,380
+Không ai trong nghiên cứu đó sai cả. Họ đang được hỏi về hai gương mặt khác nhau.
+
+43
+00:02:51,640 --> 00:02:54,800
+Bạn sống cùng một trong hai gương mặt đó. Còn tất cả những người khác sống cùng gương mặt kia.
+
+44
+00:02:55,080 --> 00:02:57,440
+Vậy nên bức ảnh làm hỏng cả buổi tối của bạn,
+
+45
+00:02:57,540 --> 00:03:02,530
+chụp bằng điện thoại của người khác ở một góc bạn không hề chọn, không phải là một phát hiện mới.
+
+46
+00:03:02,680 --> 00:03:07,780
+Đó là gương mặt thật của bạn, được nhìn bởi người duy nhất còn sống chưa quen với nó.
+
+47
+00:03:08,500 --> 00:03:12,520
+Bên dưới cả hai điều đó là thứ gì đó cổ xưa hơn cả gương,
+
+48
+00:03:12,800 --> 00:03:16,140
+máy ảnh, hay toàn bộ khái niệm về một bức ảnh.
+
+49
+00:03:16,380 --> 00:03:20,790
+Một bộ chấm điểm nhanh, tự động, đánh giá một gương mặt ngay khoảnh khắc nó xuất hiện,
+
+50
+00:03:20,900 --> 00:03:23,620
+trước khi bất kỳ suy nghĩ có chủ ý nào kịp bắt kịp.
+
+51
+00:03:24,210 --> 00:03:30,520
+Các nhà tâm lý học Judith Langlois và Lori Roggman đã tìm ra bằng chứng rõ ràng nhất về thứ mà nó
+
+52
+00:03:30,600 --> 00:03:36,380
+được điều chỉnh để làm. Khi họ trộn hàng chục gương mặt bình thường thành một hình ảnh tổng hợp duy nhất,
+
+53
+00:03:36,460 --> 00:03:41,780
+mọi người đánh giá hình tổng hợp đó hấp dẫn hơn gần như mọi gương mặt riêng lẻ đã tạo nên nó.
+
+54
+00:03:42,269 --> 00:03:45,880
+Bộ chấm điểm không săn tìm thứ gì hiếm hay đặc biệt.
+
+55
+00:03:45,960 --> 00:03:50,060
+Nó săn tìm phần ở giữa. Tìm sự đối xứng, sự đều đặn,
+
+56
+00:03:50,140 --> 00:03:53,040
+tìm một gương mặt không báo hiệu vấn đề gì cụ thể.
+
+57
+00:03:53,120 --> 00:03:58,480
+Và một phán xét bật ra nhanh đến vậy, trước khi bạn kịp nghĩ, không phải là chuyện gu thẩm mỹ.
+
+58
+00:03:58,760 --> 00:04:02,600
+Tốc độ như thế chỉ dành cho những điều từng cấp bách.
+
+59
+00:04:02,680 --> 00:04:07,320
+Đây là mục đích thực sự của bộ chấm điểm đó, và nó không phải là cách bạn đang dùng nó.
+
+60
+00:04:07,400 --> 00:04:10,480
+Nó được tạo ra để hướng ra ngoài. Vào những người khác.
+
+61
+00:04:10,560 --> 00:04:12,980
+Trong gần như suốt chiều dài tồn tại của loài người,
+
+62
+00:04:13,060 --> 00:04:16,400
+nó chưa từng một lần nhìn rõ được gương mặt mà nó thuộc về.
+
+63
+00:04:17,160 --> 00:04:20,140
+Hãy nghĩ xem một người thực sự có thể nhìn thấy những gì của chính mình.
+
+64
+00:04:20,720 --> 00:04:24,380
+Mặt nước tĩnh lặng trong ngày không gió. Một hòn đá ướt.
+
+65
+00:04:25,260 --> 00:04:28,800
+Một mảnh đá được đánh bóng, nếu nhóm của họ tình cờ có được một mảnh.
+
+66
+00:04:29,409 --> 00:04:32,240
+Đôi tay của chính họ, đôi chân của chính họ,
+
+67
+00:04:33,000 --> 00:04:37,520
+và không có gì phía trên cổ. Suốt khoảng hai trăm nghìn năm,
+
+68
+00:04:37,800 --> 00:04:43,211
+vật thể được xem xét nhiều nhất trong cuộc sống của bạn ngày nay lại chính là vật thể duy nhất mà một con người
+
+69
+00:04:43,291 --> 00:04:49,000
+về mặt cấu tạo không thể xem xét được. Phán quyết về gương mặt bạn tồn tại ở một nơi bạn không thể đọc được nó
+
+70
+00:04:49,080 --> 00:04:52,389
+trực tiếp, mà nằm trong gương mặt của mọi người khác khi họ nhìn bạn.
+
+71
+00:04:52,469 --> 00:04:57,000
+Chiếc gương không sửa được điều đó, vì gương gần như mới xuất hiện thôi.
+
+72
+00:04:57,080 --> 00:05:00,430
+Một chiếc gương rõ nét, sắc sảo, trung thực là một sản phẩm công nghiệp,
+
+73
+00:05:00,700 --> 00:05:04,720
+chỉ đủ rẻ cho một gia đình bình thường trong khoảng vài thế kỷ gần đây.
+
+74
+00:05:04,800 --> 00:05:09,720
+Trước đó nó là vật dụng của người giàu, hoặc một tấm kim loại đánh bóng mờ mờ,
+
+75
+00:05:09,980 --> 00:05:13,980
+hoặc không có gì cả. Vậy nên phép tính này đáng để bạn dừng lại suy ngẫm.
+
+76
+00:05:14,240 --> 00:05:17,060
+Hai trăm nghìn năm với một gương mặt bạn không thể xem xét,
+
+77
+00:05:17,240 --> 00:05:19,940
+rồi khoảng hai trăm năm với một gương mặt bạn có thể,
+
+78
+00:05:20,020 --> 00:05:25,090
+rồi khoảng mười lăm năm mang theo một chiếc máy ảnh có đèn, sẵn sàng chĩa vào nó bất cứ lúc nào.
+
+79
+00:05:25,380 --> 00:05:28,550
+Bộ chấm điểm của bạn chưa kịp nhận ra bất kỳ điều nào trong số đó đã xảy ra.
+
+80
+00:05:28,630 --> 00:05:31,960
+Và những người mà nó được tạo ra để đọc vị không phải là người lạ.
+
+81
+00:05:32,310 --> 00:05:35,520
+Một người sống và chết trong một nhóm nhiều nhất chỉ vài trăm người,
+
+82
+00:05:35,600 --> 00:05:41,450
+và đến tuổi trưởng thành đã nhìn thấy từng gương mặt trong số đó hàng nghìn lần, trong mọi ánh sáng,
+
+83
+00:05:41,560 --> 00:05:46,200
+ở mọi lứa tuổi. Không ai lướt qua một gương mặt rồi không bao giờ gặp lại.
+
+84
+00:05:46,280 --> 00:05:52,320
+Mỗi người bạn đánh giá, bạn sẽ cùng săn bắt, kết hôn, hoặc dựa vào khi lương thực của chính bạn cạn kiệt.
+
+85
+00:05:53,560 --> 00:05:58,920
+Đó là thế giới mà nhà nhân chủng học tiến hóa Sarah Blaffer Hrdy đã dành cả sự nghiệp
+
+86
+00:05:59,000 --> 00:06:03,220
+để tái dựng lại, và trong đó ngoại hình chưa bao giờ chỉ là trang trí.
+
+87
+00:06:03,760 --> 00:06:08,080
+Nó là một tín hiệu mà cả nhóm đọc được ngay lập tức: sức khỏe, khả năng sinh sản,
+
+88
+00:06:08,200 --> 00:06:10,820
+và cả những liên minh đứng sau lưng bạn.
+
+89
+00:06:11,580 --> 00:06:16,360
+Theo cách nhìn của Hrdy, vị thế của một người phụ nữ giữa những phụ nữ khác một phần dựa trên chính kiểu
+
+90
+00:06:16,440 --> 00:06:20,560
+so sánh này, vì bạn đời, đồng minh và sự bảo vệ đều có giới hạn,
+
+91
+00:06:20,640 --> 00:06:23,700
+và ai cũng âm thầm bị xếp hạng so với những người khác.
+
+92
+00:06:24,160 --> 00:06:27,720
+Không điều nào trong số này vận hành nhờ lời tâng bốc. Trong một nhóm nhỏ chia sẻ lương thực,
+
+93
+00:06:27,800 --> 00:06:32,740
+vị thế quyết định ai sẽ chia thịt cho bạn sau một chuyến săn thất bại, bạn được chào đón bên bếp lửa của ai,
+
+94
+00:06:32,820 --> 00:06:39,200
+và con cái của ai được tin tưởng giao cho bạn bế. Tụt hạng trong thứ bậc đó không đơn giản là một ngày soi gương tệ.
+
+95
+00:06:39,280 --> 00:06:42,190
+Nó có thể đồng nghĩa với việc mất đi những người từng nuôi sống bạn.
+
+96
+00:06:42,270 --> 00:06:45,380
+Hệ thống này ồn ào vì nó đã kiếm được quyền để ồn ào.
+
+97
+00:06:45,480 --> 00:06:48,770
+Vậy mà cái chuẩn mực nó dùng để chấm điểm chưa bao giờ cố định.
+
+98
+00:06:48,850 --> 00:06:53,840
+Nhà nhân chủng học Judith Anderson và các cộng sự đã so sánh chuẩn mực thân hình lý tưởng qua hàng chục
+
+99
+00:06:53,920 --> 00:06:59,480
+xã hội, và tìm ra một khuôn mẫu mà không lý thuyết nào về cái đẹp phổ quát từng dự đoán.
+
+100
+00:06:59,560 --> 00:07:04,440
+Nơi lương thực khan hiếm và bấp bênh, thân hình đầy đặn mới là hấp dẫn.
+
+101
+00:07:05,480 --> 00:07:10,140
+Nơi lương thực ổn định và đáng tin cậy, sở thích lại đảo sang thân hình mảnh mai.
+
+102
+00:07:10,840 --> 00:07:12,810
+Lý do không hề bí ẩn.
+
+103
+00:07:12,890 --> 00:07:15,160
+Ở nơi một cơ thể có thể phải sống sót qua nạn đói,
+
+104
+00:07:15,440 --> 00:07:20,070
+lượng mỡ dự trữ có thể nhìn thấy là một lợi thế thật sự, đáng để lựa chọn ở một bạn đời hay đồng minh.
+
+105
+00:07:20,870 --> 00:07:26,180
+Ở nơi nạn đói không xảy ra, chính lượng dự trữ đó không còn báo hiệu điều gì hữu ích nữa,
+
+106
+00:07:26,440 --> 00:07:29,740
+và một dấu hiệu khác lên thay thế làm chuẩn mực cho sức khỏe.
+
+107
+00:07:30,410 --> 00:07:34,250
+Cái chuẩn mực mà bộ não bạn coi là nền tảng bất biến đã âm thầm bị viết lại,
+
+108
+00:07:34,500 --> 00:07:39,660
+hết xã hội này đến xã hội khác, tùy vào điều một nhóm người có đủ khả năng để mong muốn.
+
+109
+00:07:39,740 --> 00:07:44,540
+Nó chưa bao giờ đưa ra phán quyết về bạn. Nó chỉ đang đọc bối cảnh mà bạn tình cờ sinh ra trong đó.
+
+110
+00:07:45,140 --> 00:07:47,180
+Giờ hãy đặt hệ thống đó vào phòng tắm của bạn.
+
+111
+00:07:47,900 --> 00:07:52,820
+Mỗi sáng, một bộ chấm điểm vốn được tạo ra để đánh giá người lạ, chưa bao giờ được tiếp cận chính chủ nhân của nó, lại được trao cho một
+
+112
+00:07:52,900 --> 00:07:59,120
+hình ảnh lớn, sáng rõ, luôn sẵn có, bị đảo ngược trái phải, chính xác là của chủ nhân đó.
+
+113
+00:07:59,200 --> 00:08:03,680
+Vậy nên nó làm điều nó vẫn làm. Nó chấm điểm. Bạn đi ngang một cửa kính cửa hàng và nó lại chấm điểm.
+
+114
+00:08:03,760 --> 00:08:08,020
+Bạn mở camera trước và nó chấm điểm một phiên bản mà nó chưa từng được huấn luyện để nhận biết.
+
+115
+00:08:08,100 --> 00:08:11,460
+Bạn tham gia một cuộc gọi video và cửa sổ xem trước hiện ra hình ảnh thật,
+
+116
+00:08:11,540 --> 00:08:15,920
+gương mặt không bị đảo ngược, trong khi cả đời soi gương đã huấn luyện bạn theo chiều ngược lại,
+
+117
+00:08:16,000 --> 00:08:21,080
+đó là lý do bạn có thể cảm thấy hoàn toàn ổn khi đi bộ trên phố, rồi thấy sai sai ngay khi nắp laptop
+
+118
+00:08:21,160 --> 00:08:25,820
+mở ra. Rồi đến phần này, thứ hoàn toàn không có tiền lệ nào trong lịch sử tổ tiên,
+
+119
+00:08:26,020 --> 00:08:31,399
+bạn lướt điện thoại. Nhóm để so sánh của bạn từng chỉ là vài trăm gương mặt bạn đã biết từ khi sinh ra.
+
+120
+00:08:31,920 --> 00:08:33,950
+Giờ đây đó là hàng nghìn gương mặt mỗi tuần,
+
+121
+00:08:34,039 --> 00:08:38,579
+phần lớn được một hệ thống đề xuất chọn ra chính vì chúng hoạt động tốt,
+
+122
+00:08:38,659 --> 00:08:43,820
+nhiều gương mặt trong số đó đã được làm mịn, chỉnh sáng, chỉnh sửa, hoặc chọn ra từ ba trăm lần chụp thử.
+
+123
+00:08:44,380 --> 00:08:49,300
+Đó không phải một quần thể dân số thật. Đó là một đoạn tổng hợp khoảnh khắc nổi bật, đã bị cắt bỏ hết phần bình thường ở giữa.
+
+124
+00:08:49,480 --> 00:08:54,080
+Và bộ chấm điểm của bạn, thứ không thể phân biệt được một người hàng xóm với một người lạ đã được máy móc tối ưu hóa,
+
+125
+00:08:54,240 --> 00:08:57,720
+xếp mọi gương mặt đó vào diện đối thủ cạnh tranh ngay trong khu vực của bạn.
+
+126
+00:08:57,800 --> 00:09:02,360
+Vậy bao nhiêu phần trong phán quyết của bạn là một phép đo thật sự, và bao nhiêu phần chỉ là sự lặp lại?
+
+127
+00:09:02,440 --> 00:09:05,320
+Một công cụ được tạo ra để xếp hạng vài trăm gương mặt quen thuộc,
+
+128
+00:09:05,400 --> 00:09:08,900
+được cho xem một hình ảnh đảo ngược của gương mặt duy nhất mà nó chưa từng được thiết kế để nhìn thấy,
+
+129
+00:09:09,000 --> 00:09:11,680
+được đem so chuẩn với một quần thể dân số không hề tồn tại,
+
+130
+00:09:11,760 --> 00:09:15,410
+và được chạy hàng trăm lần mỗi tuần thay vì vài lần mỗi mùa.
+
+131
+00:09:16,040 --> 00:09:18,980
+Mỗi lần chạy lại như thể một xác nhận độc lập.
+
+132
+00:09:19,060 --> 00:09:21,600
+Nhưng đó vẫn là cùng một phép đo sai lệch, chỉ đo lại thêm lần nữa.
+
+133
+00:09:22,010 --> 00:09:25,020
+Không điều nào trong số này có nghĩa là thứ bạn thấy chỉ là tưởng tượng.
+
+134
+00:09:25,100 --> 00:09:30,100
+Nó rất có thể thật sự tồn tại. Đây không phải lời hứa rằng bạn thực chất hoàn hảo và chỉ cần
+
+135
+00:09:30,180 --> 00:09:33,480
+ánh sáng tốt hơn, ai bán cho bạn ý tưởng đó là đang bán cho bạn một thứ gì khác.
+
+136
+00:09:33,560 --> 00:09:38,820
+Điều thay đổi không phải là đặc điểm đó. Mà là sức nặng đặt lên nó, và sức nặng ấy đến từ đâu.
+
+137
+00:09:38,900 --> 00:09:42,010
+Hiệu ứng ánh đèn sân khấu nói rằng phần lớn sức nặng đó chưa bao giờ thực sự có mặt trong phòng.
+
+138
+00:09:42,090 --> 00:09:46,360
+Sự sai lệch trong gương nói rằng phần lớn những gì bạn đang đánh giá là một gương mặt mà gần như không ai khác
+
+139
+00:09:46,440 --> 00:09:51,400
+từng thấy. Và bộ chấm điểm đứng sau cả hai điều đó được tạo ra để liếc nhìn một người lạ đúng một lần,
+
+140
+00:09:51,640 --> 00:09:55,360
+chứ không phải để chạy đi chạy lại cùng một gương mặt mười nghìn lần trong suốt một đời người.
+
+141
+00:09:55,580 --> 00:09:58,360
+Vậy nên điều cần thay đổi tối nay không phải là học cách thích đặc điểm đó.
+
+142
+00:09:58,520 --> 00:10:01,000
+Nó nhỏ hơn thế, và hữu ích hơn nhiều.
+
+143
+00:10:01,260 --> 00:10:04,060
+Đó là ngừng coi phán quyết của chính bạn như một bằng chứng.
+
+144
+00:10:04,140 --> 00:10:09,980
+Phán quyết đó vẫn sẽ đến, dù thế nào đi nữa. Trong gương, trên cánh cửa thang máy, trong một bức ảnh bạn không hề đồng ý chụp.
+
+145
+00:10:10,060 --> 00:10:14,550
+Và khi nó đến, điều duy nhất đáng để hỏi là nó vừa đem bạn ra so với cái gì.
+
+146
+00:10:14,980 --> 00:10:19,340
+Vài trăm người đã biết bạn từ trước và dù sao cũng sẽ gặp lại bạn vào ngày mai.
+
+147
+00:10:19,420 --> 00:10:23,140
+Hay một dòng lướt gồm những người lạ được một cỗ máy sắp đặt để bạn nhìn vào.
+
+148
+00:10:23,620 --> 00:10:25,940
+Hình ảnh phản chiếu của bạn không phải là một nhân chứng trung lập.
+
+149
+00:10:26,020 --> 00:10:31,200
+Đó là nhân chứng duy nhất trong đời bạn vận hành dựa trên một hình ảnh bị đảo ngược, một ánh đèn sân khấu chỉ riêng bạn thấy,
+
+150
+00:10:31,280 --> 00:10:36,580
+và một nhóm để so sánh mà không con người nào trước thế kỷ này từng phải đứng cạnh.
+
+151
+00:10:37,020 --> 00:10:39,820
+Bạn vẫn biết chính xác điều gì không ổn với gương mặt mình.
+
+152
+00:10:39,900 --> 00:10:42,180
+Nhưng điều đó chưa bao giờ là một sự thật về gương mặt bạn.
+
+153
+00:10:42,260 --> 00:10:48,140
+Đó là một sự thật về cặp mắt duy nhất từng được giao nhiệm vụ quan sát nó, ở cự ly gần, theo chiều đảo ngược,
+
+154
+00:10:48,220 --> 00:10:50,700
+suốt một đời, không còn nơi nào khác để nhìn.
+
+155
+00:10:50,920 --> 00:10:55,480
+Và chính cái đường hầm thu hẹp cả tâm trí bạn quanh một con số ít ỏi cũng thu hẹp mạnh không kém
+
+156
+00:10:55,560 --> 00:10:59,940
+quanh một đặc điểm trên gương mặt bạn, cho đến khi nó là thứ duy nhất còn lại trong khung hình.
+
+157
+00:11:00,040 --> 00:11:02,880
+Bao nhiêu phán quyết hôm nay của bạn đã ra đời từ chính cái đường hầm đó?
+
+158
+00:11:02,960 --> 00:11:07,520
+Chủ đề đó đã có riêng một video rồi. Tâm lý học của việc nghèo khó.
+
+159
+00:11:07,720 --> 00:11:08,960
+Xem video đó tiếp theo nhé.

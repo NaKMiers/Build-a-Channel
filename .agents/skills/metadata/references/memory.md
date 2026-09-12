@@ -113,6 +113,51 @@ chapter timestamp grepped back against `transcript.md` and present verbatim.
 - **Chapters stop at 8:17 of an 11:47 video**, the third project running with this deliberate cut.
   The fee loop, the shift, the echo and the tease all stay unsignposted.
 
+## Project 15 (2026-09-12), why people say yes - the check skill's own Step 8 counts are stale
+
+7 chapters, 20 hashtags, 39 tags, all five titles 44 to 57 characters, 3 fenced blocks. Every
+chapter timestamp grepped back against `cue_stamps` and present exactly once.
+
+- **`check`'s Step 8 expects a file shape this skill stopped writing long ago.** It asserts
+  `grep -c '^## '` equals 2 and `grep -cE '^## |^```'` equals 4. Projects 14 and 15 both have
+  **3 and 6**: Title, Description and Tags are three `##` sections and each carries a fenced
+  block, and there is a `###` variants table besides. The written expectation predates the
+  five-title table entirely. It has never been reported as a FAIL because nobody ran those two
+  lines against a current file. **The numbers to check are 3 and 6**, and `check/SKILL.md`
+  should be corrected; not edited here because this run is `metadata`, not a pipeline fix.
+- Related trap in the same step: `grep -c '#'` over the tags slice reads 1 on a clean file,
+  because the slice starts at the `## Tags` heading. Count `#` on the tags line alone, the same
+  class of error project 12 recorded for the hashtag count.
+- Citations: four DOIs, every one confirmed by content through Crossref title search per the
+  projects 12 and 14 rules, never by constructing a suffix. Flynn and Lake 2008 JPSP
+  `10.1037/0022-3514.95.1.128`, Epley and Schroeder 2014 JEP General `10.1037/a0037323`,
+  Roghanizad and Bohns 2017 JESP `10.1016/j.jesp.2016.10.002`, Peterson 1993 American
+  Anthropologist `10.1525/aa.1993.95.4.02a00050`, the same Peterson DOI project 13 used.
+- **Three of the six names have no English Wikipedia article**: Vanessa Bohns 404, Nicolas
+  Peterson 404 (as project 13 recorded), and there is no `Demand_sharing` article either. Bohns
+  is the channel's first case of a *living, heavily cited* researcher with no article, and she is
+  named in two separate sources here, so both of her papers carry her through their DOIs and she
+  gets no biography link. Lorna Marshall and Dunbar's number both resolve 200.
+- **Recommended title A over C, the fifth project running**, same reasoning every time: a
+  question a tired viewer parses at a glance, and a near quote of the script's own first two
+  lines, which the hook resolves inside 25 seconds. C ("The Asking Effect: ...") is the
+  search-friendly A/B alternative and the form the channel already publishes under.
+- **Metadata ran after `/thumbnail` for the third project running, and both collision questions
+  found something.** Project 13's question (does a title restate a headline) came back clean.
+  Project 14's second question (does a title *answer* one) caught two:
+  - **B** ("Your Brain Still Thinks Asking Could Get You Exiled") answers thumbnail 5,
+    `WHAT IS IT STOPPING?`, which exists to withhold exactly that.
+  - **E** ("You Never Noticed You Say No For Other People") partially answers thumbnail 1,
+    `WHY NOT SEND IT?`.
+  Both are kept in the variants table with the pairing noted rather than removed, per project 14.
+  **Chosen title A collides with none of the five headlines and answers none**, and pairs
+  especially well with thumbnail 1, which shows the thumb stopped above the send control.
+- **Chapters stop at 7:05 of a 10:29 video**, the fifth project running with this deliberate cut.
+  The whole error, the shift, the thirty-four-times study, the echo and the tease all stay
+  unsignposted.
+- Standard emoji set kept (world map, light bulb, books). The topic is relieving rather than
+  unsettling, so project 14's softening rule does not apply and the function-first choice stands.
+
 ## PRECONDITION CONTRADICTION IN THE REPO, hit on 2026-08-25 (project 10), NOW RESOLVED IN PRACTICE
 
 `/metadata` was invoked straight after `/cast`, before any voiceover existed, and correctly

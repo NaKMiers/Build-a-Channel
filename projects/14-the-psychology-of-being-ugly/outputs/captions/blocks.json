@@ -1,0 +1,1445 @@
+{
+ "words": "projects/14-the-psychology-of-being-ugly/transcribes/words.json",
+ "transcript": "projects/14-the-psychology-of-being-ugly/transcribes/transcript.md",
+ "count": 159,
+ "settings": {
+  "max_dur": 7.0,
+  "min_dur": 2.5,
+  "sentence_min": 2.0,
+  "gap": 0.5,
+  "max_chars": 96
+ },
+ "blocks": [
+  {
+   "i": 1,
+   "start_ms": 180,
+   "end_ms": 2660,
+   "start": "00:00:00,180",
+   "end": "00:00:02,660",
+   "text": "You know exactly what is wrong with your face.",
+   "words": 9
+  },
+  {
+   "i": 2,
+   "start_ms": 3000,
+   "end_ms": 8780,
+   "start": "00:00:03,000",
+   "end": "00:00:08,780",
+   "text": "Nobody else has ever seen it. Not once, not in all the years of people looking straight at you.",
+   "words": 19
+  },
+  {
+   "i": 3,
+   "start_ms": 8860,
+   "end_ms": 12920,
+   "start": "00:00:08,860",
+   "end": "00:00:12,920",
+   "text": "You call that politeness. Or your own vanity finally showing.",
+   "words": 10
+  },
+  {
+   "i": 4,
+   "start_ms": 13180,
+   "end_ms": 16359,
+   "start": "00:00:13,180",
+   "end": "00:00:16,359",
+   "text": "But it is neither. The gap between what you see",
+   "words": 10
+  },
+  {
+   "i": 5,
+   "start_ms": 16640,
+   "end_ms": 20140,
+   "start": "00:00:16,640",
+   "end": "00:00:20,140",
+   "text": "and what they see has been measured, and it has a name:",
+   "words": 12
+  },
+  {
+   "i": 6,
+   "start_ms": 20530,
+   "end_ms": 26040,
+   "start": "00:00:20,530",
+   "end": "00:00:26,040",
+   "text": "the spotlight effect. Ask people to guess how many notice the thing they are self-conscious",
+   "words": 15
+  },
+  {
+   "i": 7,
+   "start_ms": 26120,
+   "end_ms": 28480,
+   "start": "00:00:26,120",
+   "end": "00:00:28,480",
+   "text": "about, and they say about half the room.",
+   "words": 8
+  },
+  {
+   "i": 8,
+   "start_ms": 28800,
+   "end_ms": 33360,
+   "start": "00:00:28,800",
+   "end": "00:00:33,360",
+   "text": "The real number is closer to a quarter. So where does the other half live,",
+   "words": 15
+  },
+  {
+   "i": 9,
+   "start_ms": 33820,
+   "end_ms": 37020,
+   "start": "00:00:33,820",
+   "end": "00:00:37,020",
+   "text": "and why is your face the one place you cannot check?",
+   "words": 11
+  },
+  {
+   "i": 10,
+   "start_ms": 37530,
+   "end_ms": 39380,
+   "start": "00:00:37,530",
+   "end": "00:00:39,380",
+   "text": "The measurement came from a T-shirt.",
+   "words": 6
+  },
+  {
+   "i": 11,
+   "start_ms": 40140,
+   "end_ms": 43240,
+   "start": "00:00:40,140",
+   "end": "00:00:43,240",
+   "text": "In 2000, the psychologists Thomas Gilovich,",
+   "words": 6
+  },
+  {
+   "i": 12,
+   "start_ms": 43380,
+   "end_ms": 49240,
+   "start": "00:00:43,380",
+   "end": "00:00:49,240",
+   "text": "Victoria Medvec and Kenneth Savitsky asked students to put on a shirt printed with an outdated",
+   "words": 16
+  },
+  {
+   "i": 13,
+   "start_ms": 49320,
+   "end_ms": 52690,
+   "start": "00:00:49,320",
+   "end": "00:00:52,690",
+   "text": "singer's face, picked because it was mildly embarrassing,",
+   "words": 8
+  },
+  {
+   "i": 14,
+   "start_ms": 52890,
+   "end_ms": 55900,
+   "start": "00:00:52,890",
+   "end": "00:00:55,900",
+   "text": "then walk into a room full of their peers.",
+   "words": 9
+  },
+  {
+   "i": 15,
+   "start_ms": 55980,
+   "end_ms": 60600,
+   "start": "00:00:55,980",
+   "end": "00:01:00,600",
+   "text": "Before going in, each student guessed how many people would notice the shirt and remember it.",
+   "words": 16
+  },
+  {
+   "i": 16,
+   "start_ms": 61140,
+   "end_ms": 63800,
+   "start": "00:01:01,140",
+   "end": "00:01:03,800",
+   "text": "Afterward, the researchers asked the room directly.",
+   "words": 7
+  },
+  {
+   "i": 17,
+   "start_ms": 64060,
+   "end_ms": 69020,
+   "start": "00:01:04,060",
+   "end": "00:01:09,020",
+   "text": "The wearers guessed roughly half. Roughly a quarter had actually clocked it.",
+   "words": 12
+  },
+  {
+   "i": 18,
+   "start_ms": 69640,
+   "end_ms": 72640,
+   "start": "00:01:09,640",
+   "end": "00:01:12,640",
+   "text": "Where did the other half go? Nowhere.",
+   "words": 7
+  },
+  {
+   "i": 19,
+   "start_ms": 72720,
+   "end_ms": 77260,
+   "start": "00:01:12,720",
+   "end": "00:01:17,260",
+   "text": "It never existed outside one head. The wearer had been staring at that shirt from the second",
+   "words": 17
+  },
+  {
+   "i": 20,
+   "start_ms": 77340,
+   "end_ms": 81220,
+   "start": "00:01:17,340",
+   "end": "00:01:21,220",
+   "text": "they pulled it on, and everyone else had glanced once and gone straight back to the thing they",
+   "words": 18
+  },
+  {
+   "i": 21,
+   "start_ms": 81300,
+   "end_ms": 84610,
+   "start": "00:01:21,300",
+   "end": "00:01:24,610",
+   "text": "were already worrying about, which was almost certainly themselves.",
+   "words": 9
+  },
+  {
+   "i": 22,
+   "start_ms": 85380,
+   "end_ms": 89580,
+   "start": "00:01:25,380",
+   "end": "00:01:29,580",
+   "text": "That is the whole mechanism, and it is oddly gentle once you see it.",
+   "words": 14
+  },
+  {
+   "i": 23,
+   "start_ms": 89660,
+   "end_ms": 94120,
+   "start": "00:01:29,660",
+   "end": "00:01:34,120",
+   "text": "You are stuck at the exact centre of your own experience, with no way to step out of it,",
+   "words": 19
+  },
+  {
+   "i": 24,
+   "start_ms": 94200,
+   "end_ms": 99180,
+   "start": "00:01:34,200",
+   "end": "00:01:39,180",
+   "text": "so you start from how loud something feels in here and then fail to shrink the number enough for",
+   "words": 19
+  },
+  {
+   "i": 25,
+   "start_ms": 99260,
+   "end_ms": 102940,
+   "start": "00:01:39,260",
+   "end": "00:01:42,940",
+   "text": "people standing over there. The room is not a panel of judges.",
+   "words": 12
+  },
+  {
+   "i": 26,
+   "start_ms": 103020,
+   "end_ms": 106800,
+   "start": "00:01:43,020",
+   "end": "00:01:46,800",
+   "text": "It is a room full of people running the same calculation about themselves,",
+   "words": 13
+  },
+  {
+   "i": 27,
+   "start_ms": 106880,
+   "end_ms": 109720,
+   "start": "00:01:46,880",
+   "end": "00:01:49,720",
+   "text": "aimed at their own reflection rather than yours.",
+   "words": 8
+  },
+  {
+   "i": 28,
+   "start_ms": 110320,
+   "end_ms": 113020,
+   "start": "00:01:50,320",
+   "end": "00:01:53,020",
+   "text": "The title of that paper is not about shirts, by the way.",
+   "words": 12
+  },
+  {
+   "i": 29,
+   "start_ms": 113320,
+   "end_ms": 118400,
+   "start": "00:01:53,320",
+   "end": "00:01:58,400",
+   "text": "It is about actions and appearance. The shirt was simply the easiest thing to take off and",
+   "words": 17
+  },
+  {
+   "i": 30,
+   "start_ms": 118480,
+   "end_ms": 122270,
+   "start": "00:01:58,480",
+   "end": "00:02:02,270",
+   "text": "count. Your face is the harder version of the same experiment.",
+   "words": 11
+  },
+  {
+   "i": 31,
+   "start_ms": 122520,
+   "end_ms": 125680,
+   "start": "00:02:02,520",
+   "end": "00:02:05,680",
+   "text": "It runs every day, and it has no end time.",
+   "words": 10
+  },
+  {
+   "i": 32,
+   "start_ms": 125760,
+   "end_ms": 128220,
+   "start": "00:02:05,760",
+   "end": "00:02:08,220",
+   "text": "There is a second reason it feels so certain.",
+   "words": 9
+  },
+  {
+   "i": 33,
+   "start_ms": 128300,
+   "end_ms": 130640,
+   "start": "00:02:08,300",
+   "end": "00:02:10,640",
+   "text": "You have almost never seen your own face.",
+   "words": 8
+  },
+  {
+   "i": 34,
+   "start_ms": 130720,
+   "end_ms": 135240,
+   "start": "00:02:10,720",
+   "end": "00:02:15,240",
+   "text": "What you have seen, every day since you were tall enough to reach a sink, is the mirror version,",
+   "words": 19
+  },
+  {
+   "i": 35,
+   "start_ms": 135320,
+   "end_ms": 140380,
+   "start": "00:02:15,320",
+   "end": "00:02:20,380",
+   "text": "flipped left to right, and that flipped version is the one your brain filed as you.",
+   "words": 16
+  },
+  {
+   "i": 36,
+   "start_ms": 140980,
+   "end_ms": 144140,
+   "start": "00:02:20,980",
+   "end": "00:02:24,140",
+   "text": "In 1977, the researchers Theodore Mita,",
+   "words": 6
+  },
+  {
+   "i": 37,
+   "start_ms": 144480,
+   "end_ms": 150320,
+   "start": "00:02:24,480",
+   "end": "00:02:30,320",
+   "text": "Marshall Dermer and Jeffrey Knight photographed people and then showed each of them two prints:",
+   "words": 15
+  },
+  {
+   "i": 38,
+   "start_ms": 150900,
+   "end_ms": 155100,
+   "start": "00:02:30,900",
+   "end": "00:02:35,100",
+   "text": "the real photograph, and a mirror-reversed copy of it.",
+   "words": 9
+  },
+  {
+   "i": 39,
+   "start_ms": 155180,
+   "end_ms": 158849,
+   "start": "00:02:35,180",
+   "end": "00:02:38,849",
+   "text": "People preferred the reversed one, the face they already knew.",
+   "words": 10
+  },
+  {
+   "i": 40,
+   "start_ms": 160120,
+   "end_ms": 163120,
+   "start": "00:02:40,120",
+   "end": "00:02:43,120",
+   "text": "Their close friends, handed the same two prints,",
+   "words": 8
+  },
+  {
+   "i": 41,
+   "start_ms": 163340,
+   "end_ms": 166340,
+   "start": "00:02:43,340",
+   "end": "00:02:46,340",
+   "text": "preferred the real one almost every time.",
+   "words": 7
+  },
+  {
+   "i": 42,
+   "start_ms": 166940,
+   "end_ms": 171380,
+   "start": "00:02:46,940",
+   "end": "00:02:51,380",
+   "text": "Nobody in that study was wrong. They were being asked about two different faces.",
+   "words": 14
+  },
+  {
+   "i": 43,
+   "start_ms": 171640,
+   "end_ms": 174800,
+   "start": "00:02:51,640",
+   "end": "00:02:54,800",
+   "text": "You live with one of them. Everybody else lives with the other.",
+   "words": 12
+  },
+  {
+   "i": 44,
+   "start_ms": 175080,
+   "end_ms": 177440,
+   "start": "00:02:55,080",
+   "end": "00:02:57,440",
+   "text": "So the photograph that ruins your evening,",
+   "words": 7
+  },
+  {
+   "i": 45,
+   "start_ms": 177540,
+   "end_ms": 182530,
+   "start": "00:02:57,540",
+   "end": "00:03:02,530",
+   "text": "taken on somebody else's phone at an angle you did not choose, is not a discovery.",
+   "words": 16
+  },
+  {
+   "i": 46,
+   "start_ms": 182680,
+   "end_ms": 187780,
+   "start": "00:03:02,680",
+   "end": "00:03:07,780",
+   "text": "It is your actual face, seen by the one person alive who is not used to it.",
+   "words": 17
+  },
+  {
+   "i": 47,
+   "start_ms": 188500,
+   "end_ms": 192520,
+   "start": "00:03:08,500",
+   "end": "00:03:12,520",
+   "text": "Underneath both of those sits something far older than mirrors,",
+   "words": 10
+  },
+  {
+   "i": 48,
+   "start_ms": 192800,
+   "end_ms": 196140,
+   "start": "00:03:12,800",
+   "end": "00:03:16,140",
+   "text": "cameras, or the whole idea of a photograph.",
+   "words": 8
+  },
+  {
+   "i": 49,
+   "start_ms": 196380,
+   "end_ms": 200790,
+   "start": "00:03:16,380",
+   "end": "00:03:20,790",
+   "text": "A fast, automatic scorer that rates a face the instant it arrives,",
+   "words": 12
+  },
+  {
+   "i": 50,
+   "start_ms": 200900,
+   "end_ms": 203620,
+   "start": "00:03:20,900",
+   "end": "00:03:23,620",
+   "text": "before any deliberate thought catches up.",
+   "words": 6
+  },
+  {
+   "i": 51,
+   "start_ms": 204210,
+   "end_ms": 210520,
+   "start": "00:03:24,210",
+   "end": "00:03:30,520",
+   "text": "The psychologists Judith Langlois and Lori Roggman found the cleanest evidence of what it is",
+   "words": 15
+  },
+  {
+   "i": 52,
+   "start_ms": 210600,
+   "end_ms": 216380,
+   "start": "00:03:30,600",
+   "end": "00:03:36,380",
+   "text": "tuned for. When they blended dozens of ordinary faces into a single composite image,",
+   "words": 14
+  },
+  {
+   "i": 53,
+   "start_ms": 216460,
+   "end_ms": 221780,
+   "start": "00:03:36,460",
+   "end": "00:03:41,780",
+   "text": "people rated the blend as more attractive than nearly every individual face that went into it.",
+   "words": 16
+  },
+  {
+   "i": 54,
+   "start_ms": 222269,
+   "end_ms": 225880,
+   "start": "00:03:42,269",
+   "end": "00:03:45,880",
+   "text": "The scorer is not hunting for something rare or exceptional.",
+   "words": 10
+  },
+  {
+   "i": 55,
+   "start_ms": 225960,
+   "end_ms": 230060,
+   "start": "00:03:45,960",
+   "end": "00:03:50,060",
+   "text": "It is hunting for the middle. For symmetry, for regularity,",
+   "words": 10
+  },
+  {
+   "i": 56,
+   "start_ms": 230140,
+   "end_ms": 233040,
+   "start": "00:03:50,140",
+   "end": "00:03:53,040",
+   "text": "for a face that reports no particular problem.",
+   "words": 8
+  },
+  {
+   "i": 57,
+   "start_ms": 233120,
+   "end_ms": 238480,
+   "start": "00:03:53,120",
+   "end": "00:03:58,480",
+   "text": "And a judgment that fires that fast, before you can think, is not a matter of taste.",
+   "words": 17
+  },
+  {
+   "i": 58,
+   "start_ms": 238760,
+   "end_ms": 242600,
+   "start": "00:03:58,760",
+   "end": "00:04:02,600",
+   "text": "Speed like that is reserved for things that used to be urgent.",
+   "words": 12
+  },
+  {
+   "i": 59,
+   "start_ms": 242680,
+   "end_ms": 247320,
+   "start": "00:04:02,680",
+   "end": "00:04:07,320",
+   "text": "Here is what that scorer was actually for, and it is not what you have been using it for.",
+   "words": 19
+  },
+  {
+   "i": 60,
+   "start_ms": 247400,
+   "end_ms": 250480,
+   "start": "00:04:07,400",
+   "end": "00:04:10,480",
+   "text": "It was built to point outward. At other people.",
+   "words": 9
+  },
+  {
+   "i": 61,
+   "start_ms": 250560,
+   "end_ms": 252980,
+   "start": "00:04:10,560",
+   "end": "00:04:12,980",
+   "text": "For almost the entire span of human existence,",
+   "words": 8
+  },
+  {
+   "i": 62,
+   "start_ms": 253060,
+   "end_ms": 256400,
+   "start": "00:04:13,060",
+   "end": "00:04:16,400",
+   "text": "it never once got a clear look at the face it belonged to.",
+   "words": 13
+  },
+  {
+   "i": 63,
+   "start_ms": 257160,
+   "end_ms": 260140,
+   "start": "00:04:17,160",
+   "end": "00:04:20,140",
+   "text": "Think about what a person could genuinely see of themselves.",
+   "words": 10
+  },
+  {
+   "i": 64,
+   "start_ms": 260720,
+   "end_ms": 264380,
+   "start": "00:04:20,720",
+   "end": "00:04:24,380",
+   "text": "Still water on a windless day. A wet stone.",
+   "words": 9
+  },
+  {
+   "i": 65,
+   "start_ms": 265260,
+   "end_ms": 268800,
+   "start": "00:04:25,260",
+   "end": "00:04:28,800",
+   "text": "A sliver of polished rock, if their group happened to own one.",
+   "words": 12
+  },
+  {
+   "i": 66,
+   "start_ms": 269409,
+   "end_ms": 272240,
+   "start": "00:04:29,409",
+   "end": "00:04:32,240",
+   "text": "Their own hands, their own feet,",
+   "words": 6
+  },
+  {
+   "i": 67,
+   "start_ms": 273000,
+   "end_ms": 277520,
+   "start": "00:04:33,000",
+   "end": "00:04:37,520",
+   "text": "and nothing above the neck. For roughly two hundred thousand years,",
+   "words": 11
+  },
+  {
+   "i": 68,
+   "start_ms": 277800,
+   "end_ms": 283211,
+   "start": "00:04:37,800",
+   "end": "00:04:43,211",
+   "text": "the single most examined object in your life today was the one object a human being was",
+   "words": 17
+  },
+  {
+   "i": 69,
+   "start_ms": 283291,
+   "end_ms": 289000,
+   "start": "00:04:43,291",
+   "end": "00:04:49,000",
+   "text": "structurally unable to examine. The verdict on your face lived somewhere you could not read it",
+   "words": 16
+  },
+  {
+   "i": 70,
+   "start_ms": 289080,
+   "end_ms": 292389,
+   "start": "00:04:49,080",
+   "end": "00:04:52,389",
+   "text": "directly, in the faces of everyone else as they looked at you.",
+   "words": 12
+  },
+  {
+   "i": 71,
+   "start_ms": 292469,
+   "end_ms": 297000,
+   "start": "00:04:52,469",
+   "end": "00:04:57,000",
+   "text": "The mirror did not fix that, because the mirror is barely here yet.",
+   "words": 13
+  },
+  {
+   "i": 72,
+   "start_ms": 297080,
+   "end_ms": 300430,
+   "start": "00:04:57,080",
+   "end": "00:05:00,430",
+   "text": "A clear, sharp, honest mirror is an industrial product,",
+   "words": 9
+  },
+  {
+   "i": 73,
+   "start_ms": 300700,
+   "end_ms": 304720,
+   "start": "00:05:00,700",
+   "end": "00:05:04,720",
+   "text": "cheap enough for an ordinary home only in the last couple of centuries.",
+   "words": 13
+  },
+  {
+   "i": 74,
+   "start_ms": 304800,
+   "end_ms": 309720,
+   "start": "00:05:04,800",
+   "end": "00:05:09,720",
+   "text": "Before that it was a rich person's object, or a dim sheet of polished metal,",
+   "words": 15
+  },
+  {
+   "i": 75,
+   "start_ms": 309980,
+   "end_ms": 313980,
+   "start": "00:05:09,980",
+   "end": "00:05:13,980",
+   "text": "or nothing at all. So the arithmetic is worth sitting with.",
+   "words": 11
+  },
+  {
+   "i": 76,
+   "start_ms": 314240,
+   "end_ms": 317060,
+   "start": "00:05:14,240",
+   "end": "00:05:17,060",
+   "text": "Two hundred thousand years of a face you could not inspect,",
+   "words": 11
+  },
+  {
+   "i": 77,
+   "start_ms": 317240,
+   "end_ms": 319940,
+   "start": "00:05:17,240",
+   "end": "00:05:19,940",
+   "text": "then roughly two hundred years of one you can,",
+   "words": 9
+  },
+  {
+   "i": 78,
+   "start_ms": 320020,
+   "end_ms": 325090,
+   "start": "00:05:20,020",
+   "end": "00:05:25,090",
+   "text": "then about fifteen years of carrying a lit camera that points at it on demand.",
+   "words": 15
+  },
+  {
+   "i": 79,
+   "start_ms": 325380,
+   "end_ms": 328550,
+   "start": "00:05:25,380",
+   "end": "00:05:28,550",
+   "text": "Your scorer has not had time to notice any of that happened.",
+   "words": 12
+  },
+  {
+   "i": 80,
+   "start_ms": 328630,
+   "end_ms": 331960,
+   "start": "00:05:28,630",
+   "end": "00:05:31,960",
+   "text": "And the people it was built to read were not strangers.",
+   "words": 11
+  },
+  {
+   "i": 81,
+   "start_ms": 332310,
+   "end_ms": 335520,
+   "start": "00:05:32,310",
+   "end": "00:05:35,520",
+   "text": "A person lived and died inside a group of a few hundred at most,",
+   "words": 14
+  },
+  {
+   "i": 82,
+   "start_ms": 335600,
+   "end_ms": 341450,
+   "start": "00:05:35,600",
+   "end": "00:05:41,450",
+   "text": "and by adulthood had seen every one of those faces thousands of times, in every light,",
+   "words": 16
+  },
+  {
+   "i": 83,
+   "start_ms": 341560,
+   "end_ms": 346200,
+   "start": "00:05:41,560",
+   "end": "00:05:46,200",
+   "text": "at every age. Nobody scrolled past a face and never saw it again.",
+   "words": 13
+  },
+  {
+   "i": 84,
+   "start_ms": 346280,
+   "end_ms": 352320,
+   "start": "00:05:46,280",
+   "end": "00:05:52,320",
+   "text": "Everyone you rated, you would hunt beside, marry into, or depend on when your own food ran out.",
+   "words": 18
+  },
+  {
+   "i": 85,
+   "start_ms": 353560,
+   "end_ms": 358920,
+   "start": "00:05:53,560",
+   "end": "00:05:58,920",
+   "text": "That is the world the evolutionary anthropologist Sarah Blaffer Hrdy has spent a career",
+   "words": 14
+  },
+  {
+   "i": 86,
+   "start_ms": 359000,
+   "end_ms": 363220,
+   "start": "00:05:59,000",
+   "end": "00:06:03,220",
+   "text": "reconstructing, and inside it appearance was never decoration.",
+   "words": 8
+  },
+  {
+   "i": 87,
+   "start_ms": 363760,
+   "end_ms": 368080,
+   "start": "00:06:03,760",
+   "end": "00:06:08,080",
+   "text": "It was a signal the whole group read at once: health, fertility,",
+   "words": 12
+  },
+  {
+   "i": 88,
+   "start_ms": 368200,
+   "end_ms": 370820,
+   "start": "00:06:08,200",
+   "end": "00:06:10,820",
+   "text": "the alliances standing behind you.",
+   "words": 5
+  },
+  {
+   "i": 89,
+   "start_ms": 371580,
+   "end_ms": 376360,
+   "start": "00:06:11,580",
+   "end": "00:06:16,360",
+   "text": "In Hrdy's account, a woman's standing among the other women ran partly on exactly this kind of",
+   "words": 17
+  },
+  {
+   "i": 90,
+   "start_ms": 376440,
+   "end_ms": 380560,
+   "start": "00:06:16,440",
+   "end": "00:06:20,560",
+   "text": "comparison, because mates and allies and protection were finite,",
+   "words": 9
+  },
+  {
+   "i": 91,
+   "start_ms": 380640,
+   "end_ms": 383700,
+   "start": "00:06:20,640",
+   "end": "00:06:23,700",
+   "text": "and everyone was quietly ranked against everyone else.",
+   "words": 8
+  },
+  {
+   "i": 92,
+   "start_ms": 384160,
+   "end_ms": 387720,
+   "start": "00:06:24,160",
+   "end": "00:06:27,720",
+   "text": "None of this ran on flattery. In a small food-sharing group,",
+   "words": 11
+  },
+  {
+   "i": 93,
+   "start_ms": 387800,
+   "end_ms": 392740,
+   "start": "00:06:27,800",
+   "end": "00:06:32,740",
+   "text": "standing decided who shared meat with you after a failed hunt, whose fire you were welcome at,",
+   "words": 17
+  },
+  {
+   "i": 94,
+   "start_ms": 392820,
+   "end_ms": 399200,
+   "start": "00:06:32,820",
+   "end": "00:06:39,200",
+   "text": "whose children you were trusted to hold. Sliding down that ranking was not a bad mirror day.",
+   "words": 17
+  },
+  {
+   "i": 95,
+   "start_ms": 399280,
+   "end_ms": 402190,
+   "start": "00:06:39,280",
+   "end": "00:06:42,190",
+   "text": "It could mean losing the people who fed you.",
+   "words": 9
+  },
+  {
+   "i": 96,
+   "start_ms": 402270,
+   "end_ms": 405380,
+   "start": "00:06:42,270",
+   "end": "00:06:45,380",
+   "text": "The system is loud because it earned the right to be loud.",
+   "words": 12
+  },
+  {
+   "i": 97,
+   "start_ms": 405480,
+   "end_ms": 408770,
+   "start": "00:06:45,480",
+   "end": "00:06:48,770",
+   "text": "And yet the standard it was scoring against was never fixed.",
+   "words": 11
+  },
+  {
+   "i": 98,
+   "start_ms": 408850,
+   "end_ms": 413840,
+   "start": "00:06:48,850",
+   "end": "00:06:53,840",
+   "text": "The anthropologist Judith Anderson and her colleagues compared body ideals across dozens of",
+   "words": 13
+  },
+  {
+   "i": 99,
+   "start_ms": 413920,
+   "end_ms": 419480,
+   "start": "00:06:53,920",
+   "end": "00:06:59,480",
+   "text": "societies and found a pattern that no theory of universal beauty predicts.",
+   "words": 12
+  },
+  {
+   "i": 100,
+   "start_ms": 419560,
+   "end_ms": 424440,
+   "start": "00:06:59,560",
+   "end": "00:07:04,440",
+   "text": "Where food was scarce and unreliable, fuller bodies were the attractive ones.",
+   "words": 12
+  },
+  {
+   "i": 101,
+   "start_ms": 425480,
+   "end_ms": 430140,
+   "start": "00:07:05,480",
+   "end": "00:07:10,140",
+   "text": "Where food was steady and dependable, the preference flipped toward slim.",
+   "words": 11
+  },
+  {
+   "i": 102,
+   "start_ms": 430840,
+   "end_ms": 432810,
+   "start": "00:07:10,840",
+   "end": "00:07:12,810",
+   "text": "The reason is not mysterious.",
+   "words": 5
+  },
+  {
+   "i": 103,
+   "start_ms": 432890,
+   "end_ms": 435160,
+   "start": "00:07:12,890",
+   "end": "00:07:15,160",
+   "text": "Where a body might have to survive a shortage,",
+   "words": 9
+  },
+  {
+   "i": 104,
+   "start_ms": 435440,
+   "end_ms": 440070,
+   "start": "00:07:15,440",
+   "end": "00:07:20,070",
+   "text": "visible reserves were a genuine advantage worth choosing in a mate or an ally.",
+   "words": 14
+  },
+  {
+   "i": 105,
+   "start_ms": 440870,
+   "end_ms": 446180,
+   "start": "00:07:20,870",
+   "end": "00:07:26,180",
+   "text": "Where shortages did not come, those same reserves stopped signalling anything useful,",
+   "words": 12
+  },
+  {
+   "i": 106,
+   "start_ms": 446440,
+   "end_ms": 449740,
+   "start": "00:07:26,440",
+   "end": "00:07:29,740",
+   "text": "and something else took over as the marker of health.",
+   "words": 10
+  },
+  {
+   "i": 107,
+   "start_ms": 450410,
+   "end_ms": 454250,
+   "start": "00:07:30,410",
+   "end": "00:07:34,250",
+   "text": "The standard your brain treats as bedrock has been quietly rewritten,",
+   "words": 11
+  },
+  {
+   "i": 108,
+   "start_ms": 454500,
+   "end_ms": 459660,
+   "start": "00:07:34,500",
+   "end": "00:07:39,660",
+   "text": "society by society, according to what a group could afford to want.",
+   "words": 12
+  },
+  {
+   "i": 109,
+   "start_ms": 459740,
+   "end_ms": 464540,
+   "start": "00:07:39,740",
+   "end": "00:07:44,540",
+   "text": "It was never issuing a verdict on you. It was reading the room you happened to be born into.",
+   "words": 19
+  },
+  {
+   "i": 110,
+   "start_ms": 465140,
+   "end_ms": 467180,
+   "start": "00:07:45,140",
+   "end": "00:07:47,180",
+   "text": "Now put that system in your bathroom.",
+   "words": 7
+  },
+  {
+   "i": 111,
+   "start_ms": 467900,
+   "end_ms": 472820,
+   "start": "00:07:47,900",
+   "end": "00:07:52,820",
+   "text": "Every morning, a stranger-rating scorer that was never given access to its own owner is handed a",
+   "words": 17
+  },
+  {
+   "i": 112,
+   "start_ms": 472900,
+   "end_ms": 479120,
+   "start": "00:07:52,900",
+   "end": "00:07:59,120",
+   "text": "large, well-lit, permanently available, left-right reversed image of exactly that owner.",
+   "words": 11
+  },
+  {
+   "i": 113,
+   "start_ms": 479200,
+   "end_ms": 483680,
+   "start": "00:07:59,200",
+   "end": "00:08:03,680",
+   "text": "So it does what it does. It rates. You pass a shop window and it rates again.",
+   "words": 17
+  },
+  {
+   "i": 114,
+   "start_ms": 483760,
+   "end_ms": 488020,
+   "start": "00:08:03,760",
+   "end": "00:08:08,020",
+   "text": "You open the front camera and it rates a version it has never been trained on.",
+   "words": 16
+  },
+  {
+   "i": 115,
+   "start_ms": 488100,
+   "end_ms": 491460,
+   "start": "00:08:08,100",
+   "end": "00:08:11,460",
+   "text": "You join a video call and the preview window shows the true,",
+   "words": 12
+  },
+  {
+   "i": 116,
+   "start_ms": 491540,
+   "end_ms": 495920,
+   "start": "00:08:11,540",
+   "end": "00:08:15,920",
+   "text": "unreversed face while a lifetime of mirrors trained you on the opposite,",
+   "words": 12
+  },
+  {
+   "i": 117,
+   "start_ms": 496000,
+   "end_ms": 501080,
+   "start": "00:08:16,000",
+   "end": "00:08:21,080",
+   "text": "which is why you can feel perfectly fine walking down a street and wrong the second a laptop lid",
+   "words": 19
+  },
+  {
+   "i": 118,
+   "start_ms": 501160,
+   "end_ms": 505820,
+   "start": "00:08:21,160",
+   "end": "00:08:25,820",
+   "text": "opens. Then, and this part has no ancestral equivalent whatsoever,",
+   "words": 10
+  },
+  {
+   "i": 119,
+   "start_ms": 506020,
+   "end_ms": 511399,
+   "start": "00:08:26,020",
+   "end": "00:08:31,399",
+   "text": "you scroll. Your comparison group used to be a few hundred faces you had known since birth.",
+   "words": 17
+  },
+  {
+   "i": 120,
+   "start_ms": 511920,
+   "end_ms": 513950,
+   "start": "00:08:31,920",
+   "end": "00:08:33,950",
+   "text": "Now it is thousands of faces a week,",
+   "words": 8
+  },
+  {
+   "i": 121,
+   "start_ms": 514039,
+   "end_ms": 518579,
+   "start": "00:08:34,039",
+   "end": "00:08:38,579",
+   "text": "most of them chosen by a recommendation system precisely because they perform well,",
+   "words": 13
+  },
+  {
+   "i": 122,
+   "start_ms": 518659,
+   "end_ms": 523820,
+   "start": "00:08:38,659",
+   "end": "00:08:43,820",
+   "text": "many of them smoothed, lit, retouched, or picked from three hundred attempts.",
+   "words": 12
+  },
+  {
+   "i": 123,
+   "start_ms": 524380,
+   "end_ms": 529300,
+   "start": "00:08:44,380",
+   "end": "00:08:49,300",
+   "text": "That is not a population. It is a highlight reel with the ordinary middle removed.",
+   "words": 15
+  },
+  {
+   "i": 124,
+   "start_ms": 529480,
+   "end_ms": 534080,
+   "start": "00:08:49,480",
+   "end": "00:08:54,080",
+   "text": "And your scorer, which cannot tell a neighbour from a stranger optimized by a machine,",
+   "words": 15
+  },
+  {
+   "i": 125,
+   "start_ms": 534240,
+   "end_ms": 537720,
+   "start": "00:08:54,240",
+   "end": "00:08:57,720",
+   "text": "files every last one of them as local competition.",
+   "words": 9
+  },
+  {
+   "i": 126,
+   "start_ms": 537800,
+   "end_ms": 542360,
+   "start": "00:08:57,800",
+   "end": "00:09:02,360",
+   "text": "So how much of your verdict is a measurement, and how much is just repetition?",
+   "words": 15
+  },
+  {
+   "i": 127,
+   "start_ms": 542440,
+   "end_ms": 545320,
+   "start": "00:09:02,440",
+   "end": "00:09:05,320",
+   "text": "A tool built to rank a few hundred known faces,",
+   "words": 10
+  },
+  {
+   "i": 128,
+   "start_ms": 545400,
+   "end_ms": 548900,
+   "start": "00:09:05,400",
+   "end": "00:09:08,900",
+   "text": "fed a reversed image of the one face it was never meant to see,",
+   "words": 14
+  },
+  {
+   "i": 129,
+   "start_ms": 549000,
+   "end_ms": 551680,
+   "start": "00:09:09,000",
+   "end": "00:09:11,680",
+   "text": "benchmarked against a population that does not exist,",
+   "words": 8
+  },
+  {
+   "i": 130,
+   "start_ms": 551760,
+   "end_ms": 555410,
+   "start": "00:09:11,760",
+   "end": "00:09:15,410",
+   "text": "and run hundreds of times a week instead of a few times a season.",
+   "words": 14
+  },
+  {
+   "i": 131,
+   "start_ms": 556040,
+   "end_ms": 558980,
+   "start": "00:09:16,040",
+   "end": "00:09:18,980",
+   "text": "Every pass feels like independent confirmation.",
+   "words": 6
+  },
+  {
+   "i": 132,
+   "start_ms": 559060,
+   "end_ms": 561600,
+   "start": "00:09:19,060",
+   "end": "00:09:21,600",
+   "text": "It is the same broken measurement, taken again.",
+   "words": 8
+  },
+  {
+   "i": 133,
+   "start_ms": 562010,
+   "end_ms": 565020,
+   "start": "00:09:22,010",
+   "end": "00:09:25,020",
+   "text": "None of this means the thing you see is imaginary.",
+   "words": 10
+  },
+  {
+   "i": 134,
+   "start_ms": 565100,
+   "end_ms": 570100,
+   "start": "00:09:25,100",
+   "end": "00:09:30,100",
+   "text": "It may well be there. This is not a promise that you are secretly flawless and only need better",
+   "words": 19
+  },
+  {
+   "i": 135,
+   "start_ms": 570180,
+   "end_ms": 573480,
+   "start": "00:09:30,180",
+   "end": "00:09:33,480",
+   "text": "lighting, and anyone selling you that is selling you something.",
+   "words": 10
+  },
+  {
+   "i": 136,
+   "start_ms": 573560,
+   "end_ms": 578820,
+   "start": "00:09:33,560",
+   "end": "00:09:38,820",
+   "text": "What changes is not the feature. It is the weight on it, and where that weight came from.",
+   "words": 18
+  },
+  {
+   "i": 137,
+   "start_ms": 578900,
+   "end_ms": 582010,
+   "start": "00:09:38,900",
+   "end": "00:09:42,010",
+   "text": "The spotlight effect says most of that weight was never in the room.",
+   "words": 13
+  },
+  {
+   "i": 138,
+   "start_ms": 582090,
+   "end_ms": 586360,
+   "start": "00:09:42,090",
+   "end": "00:09:46,360",
+   "text": "The mirror mismatch says a good part of what you are rating is a face almost nobody else has",
+   "words": 19
+  },
+  {
+   "i": 139,
+   "start_ms": 586440,
+   "end_ms": 591400,
+   "start": "00:09:46,440",
+   "end": "00:09:51,400",
+   "text": "ever seen. And the scorer underneath both was built to glance at a stranger once,",
+   "words": 15
+  },
+  {
+   "i": 140,
+   "start_ms": 591640,
+   "end_ms": 595360,
+   "start": "00:09:51,640",
+   "end": "00:09:55,360",
+   "text": "not to run the same face ten thousand times across a single lifetime.",
+   "words": 13
+  },
+  {
+   "i": 141,
+   "start_ms": 595580,
+   "end_ms": 598360,
+   "start": "00:09:55,580",
+   "end": "00:09:58,360",
+   "text": "So the shift tonight is not to like the feature.",
+   "words": 10
+  },
+  {
+   "i": 142,
+   "start_ms": 598520,
+   "end_ms": 601000,
+   "start": "00:09:58,520",
+   "end": "00:10:01,000",
+   "text": "It is smaller than that, and more useful.",
+   "words": 8
+  },
+  {
+   "i": 143,
+   "start_ms": 601260,
+   "end_ms": 604060,
+   "start": "00:10:01,260",
+   "end": "00:10:04,060",
+   "text": "It is to stop treating your own verdict as evidence.",
+   "words": 10
+  },
+  {
+   "i": 144,
+   "start_ms": 604140,
+   "end_ms": 609980,
+   "start": "00:10:04,140",
+   "end": "00:10:09,980",
+   "text": "It will arrive anyway. In a mirror, in a lift door, in a photo you did not agree to.",
+   "words": 19
+  },
+  {
+   "i": 145,
+   "start_ms": 610060,
+   "end_ms": 614550,
+   "start": "00:10:10,060",
+   "end": "00:10:14,550",
+   "text": "And when it does, the only thing worth asking is what it just measured you against.",
+   "words": 16
+  },
+  {
+   "i": 146,
+   "start_ms": 614980,
+   "end_ms": 619340,
+   "start": "00:10:14,980",
+   "end": "00:10:19,340",
+   "text": "A few hundred people who already know you and will see you again tomorrow regardless.",
+   "words": 15
+  },
+  {
+   "i": 147,
+   "start_ms": 619420,
+   "end_ms": 623140,
+   "start": "00:10:19,420",
+   "end": "00:10:23,140",
+   "text": "Or a scroll of strangers assembled by a machine to be looked at.",
+   "words": 13
+  },
+  {
+   "i": 148,
+   "start_ms": 623620,
+   "end_ms": 625940,
+   "start": "00:10:23,620",
+   "end": "00:10:25,940",
+   "text": "Your reflection is not a neutral witness.",
+   "words": 7
+  },
+  {
+   "i": 149,
+   "start_ms": 626020,
+   "end_ms": 631200,
+   "start": "00:10:26,020",
+   "end": "00:10:31,200",
+   "text": "It is the only witness in your life running on a reversed image, a private spotlight,",
+   "words": 16
+  },
+  {
+   "i": 150,
+   "start_ms": 631280,
+   "end_ms": 636580,
+   "start": "00:10:31,280",
+   "end": "00:10:36,580",
+   "text": "and a comparison group that no human being before this century ever had to stand next to.",
+   "words": 17
+  },
+  {
+   "i": 151,
+   "start_ms": 637020,
+   "end_ms": 639820,
+   "start": "00:10:37,020",
+   "end": "00:10:39,820",
+   "text": "You still know exactly what is wrong with your face.",
+   "words": 10
+  },
+  {
+   "i": 152,
+   "start_ms": 639900,
+   "end_ms": 642180,
+   "start": "00:10:39,900",
+   "end": "00:10:42,180",
+   "text": "But that was never a fact about your face.",
+   "words": 9
+  },
+  {
+   "i": 153,
+   "start_ms": 642260,
+   "end_ms": 648140,
+   "start": "00:10:42,260",
+   "end": "00:10:48,140",
+   "text": "It was a fact about the only pair of eyes ever assigned to watch it, at close range, in reverse,",
+   "words": 20
+  },
+  {
+   "i": 154,
+   "start_ms": 648220,
+   "end_ms": 650700,
+   "start": "00:10:48,220",
+   "end": "00:10:50,700",
+   "text": "for a lifetime, with nowhere else to look.",
+   "words": 8
+  },
+  {
+   "i": 155,
+   "start_ms": 650920,
+   "end_ms": 655480,
+   "start": "00:10:50,920",
+   "end": "00:10:55,480",
+   "text": "And the same tunnel that narrows your whole mind around a scarce number narrows just as hard",
+   "words": 17
+  },
+  {
+   "i": 156,
+   "start_ms": 655560,
+   "end_ms": 659940,
+   "start": "00:10:55,560",
+   "end": "00:10:59,940",
+   "text": "around one feature on your face, until it is the only thing left in the frame.",
+   "words": 16
+  },
+  {
+   "i": 157,
+   "start_ms": 660040,
+   "end_ms": 662880,
+   "start": "00:11:00,040",
+   "end": "00:11:02,880",
+   "text": "How many of today's verdicts came out of that same tunnel?",
+   "words": 11
+  },
+  {
+   "i": 158,
+   "start_ms": 662960,
+   "end_ms": 667520,
+   "start": "00:11:02,960",
+   "end": "00:11:07,520",
+   "text": "That one already has a video of its own. The psychology of being poor.",
+   "words": 14
+  },
+  {
+   "i": 159,
+   "start_ms": 667720,
+   "end_ms": 668960,
+   "start": "00:11:07,720",
+   "end": "00:11:08,960",
+   "text": "Watch that one next.",
+   "words": 4
+  }
+ ]
+}

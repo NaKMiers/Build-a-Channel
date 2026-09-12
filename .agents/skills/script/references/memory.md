@@ -580,6 +580,88 @@ Craft notes:
   200,000-versus-200 pair are both genuinely subtractable, which is what the two-number layout
   wants.
 
+## Project 15, why people say yes, cited (2026-09-12, underestimating compliance)
+
+Frank Flynn and Vanessa Lake, now Vanessa Bohns (2008, "If You Need Help, Just Ask:
+Underestimating Compliance With Direct Requests for Help", JPSP: participants predicted they
+would have to approach about twenty strangers to get five completed questionnaires, the real
+number was about ten, and the same roughly two-to-one overestimate held for borrowing a phone
+and for being walked across campus), Nicholas Epley and Juliana Schroeder (2014, "Mistakenly
+Seeking Solitude", JEP General: Chicago train and bus commuters told to talk to a stranger
+reported a more pleasant commute than those told to sit alone, while forecasters predicted the
+opposite), Mahdi Roghanizad and Vanessa Bohns (2017, JESP: the same request made face to face
+was roughly thirty four times more effective than the same request made by email, and senders
+expected the two channels to perform about the same), Lorna Marshall (1950s Nyae Nyae
+fieldwork with the Ju/'hoansi: meat from a large kill was distributed by fixed obligation
+rather than given by choice, and the accusation people feared was stinginess, far-hearted),
+Nicolas Peterson (1993, demand sharing: across forager societies goods commonly move because
+the person in need asks, directly and in public, and the marked act that draws censure is the
+refusal). Three behavioral scientists plus two anthropologists.
+
+**Flynn, Bohns, Epley, Schroeder, Roghanizad and Marshall are all fresh, first use on the
+channel.** Peterson is a second use: project 13 used demand sharing for scarcity insurance
+and sharing as a buffer, project 15 uses the same finding for the opposite half of it, that
+the request is the channel and the refusal is the socially expensive act. Dunbar's 150 appears
+once, as the size at which a compliance estimate was never needed.
+
+Craft notes:
+
+- **First batch pick since project 12.** The user replied with a bare `4` to topic batch 20,
+  ending a three-batch run of supplying their own plain-topic title.
+- **Hook built to the open-loop-latency rule, not to the word budget alone.** Shipped opening:
+  "You already know who would say no. You have never asked them." Complete paradox at word 12,
+  about 4.1 seconds at 175 wpm, which is the second fastest the channel has written after
+  project 4's 3 seconds and ahead of project 14's 5.1. Same shape as project 14 and
+  deliberately so: **the viewer's own certainty stated flat, then the ground removed in the
+  next sentence.** That shape has now produced the two fastest paradoxes on the channel, and
+  it is reusable on any topic where the viewer arrives holding a private verdict they never
+  collected evidence for.
+- Beat 1 ends at word 32, "but" at word 48, mechanism named at word 74, open loop closed at
+  about word 110. All four fixed checkpoints pass.
+- **The Zeigarnik-to-Masicampo shape is back, first time since project 2 in this clean a
+  form.** The mechanism that opens the loop and the finding that closes it come from the same
+  research lineage: Bohns co-authored both the 2008 underestimation studies and the 2017
+  channel study, so the shift (ask in person, to one named person) falls out of the same
+  science rather than being bolted on. The bridge sentence is that an email costs nothing to
+  refuse, and the cost of the refusal is the entire engine that produces the yes.
+- **The anthropological inversion, same structural move as projects 11 and 14.** Not "the
+  ancestral world installed the bug" but "the input channel changed". The band never issued a
+  compliance estimator because the odds of a yes were not in doubt; what it issued was a
+  brake against being known as the one who always needs. In Nyae Nyae the network was on by
+  default and meat arrived whether or not you asked, so leaving the brake on cost nothing.
+  The modern network is off by default and the explicit request is the only remaining channel.
+  **The network went from on to off and the brake never moved.**
+- **Never-shame guardrail.** The script states plainly that some people will say no and that
+  the claim is not that everyone helps. The error is named as a mechanical miscalibration
+  (you model the cost of the yes, they model the cost of the no), never as cowardice, and
+  the closing explicitly denies that bravery is the variable.
+- **End-screen tease shape: the confession, first use of that shape.** Target is project 14,
+  the immediately preceding project, which matches the standing user preference. The bridge at
+  the faculty level: **a verdict generated internally and then experienced as an incoming
+  report.** In 14 it is the verdict on your own face, in 15 it is the no you never received.
+  Stated in one plain sentence it survives: both videos are about a judgment you wrote
+  yourself and then read as though someone else had handed it to you. Shipped as "you do this
+  to yourself as well, and the place you do it hardest is the one you look at every single
+  morning."
+- Shapes now used: 10 and 11 the five-stepper, 12 the object callback, 13 the second example,
+  14 same mechanism opposite direction, 15 the confession. Remaining unused: the unanswered
+  question, the cold pivot.
+- Echo: "You already know who would say no. You have never asked them" returns as "You still
+  know who would say no. You still have not asked them. But that was never a fact about them.
+  It was a number you produced alone, in your own head, out of the only material you had,
+  which was the feeling of being turned down. They were never in the room while you decided.
+  Put them in it."
+- 1,923 words, 154 sentences, 4 questions: 3 narration questions plus the CTA question, the
+  same accounting as projects 10, 12, 13 and 14. A consecutive rhetorical pair was merged into
+  one sentence on review to hold that count.
+- **Numeric material for the thumbnail is strong.** About twenty predicted versus about ten
+  actual, which is genuinely subtractable and is the two-number layout's preferred shape, plus
+  thirty four times for in person against email, plus Dunbar's 150. Better supplied than
+  projects 8, 9 and 14 were at this stage.
+- One narrator first person slipped into the Epley paragraph on first draft ("the rest of us
+  ever act on") and was caught by the grep in project 2's note. **Run that grep every time**,
+  it has now caught a real hit.
+
 ## NARRATION PACE: use 175 wpm, not 169 (settled 2026-09-01)
 
 The 169 wpm figure used throughout this file to convert the four-beat hook budget into word
