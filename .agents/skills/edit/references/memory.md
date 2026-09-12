@@ -223,6 +223,20 @@ And a rebuild is always the repair, since these files are reproducible.
 Pretty-printed JSON is harmless by comparison, because JSON ignores whitespace between
 tokens, so the CapCut draft survives the same treatment. Only the XML is fragile.
 
+## The empty-property form looks exactly like formatter damage to a naive regex
+
+Checking a fresh build for the reformatting fault above, `grep -cP '<property[^>]*>\s*$'`
+reported **15 hits on project 15 and 15 on project 14**, a project the owner has already
+opened successfully. Every one is a self-closing empty property,
+`<property name="kdenlive:thumbs_format"/>`, and `[^>]*` happily eats the `/`. The real
+fault puts a value on the following indented line; an empty property has no value at all.
+
+**Check the resource paths, not the tag shape.** Parse the document and assert every
+`<property name="resource">` text equals its own `.strip()` and points at a file that
+exists. That found 0 broken on project 15 and is the thing that actually breaks Kdenlive.
+A shape regex that fires on a known-good project is the project 12 captions lesson again,
+in a different file format: a check that flags correct output teaches the reader to skim.
+
 ## draft_meta_info's draft_materials is the Media bin
 
 Leaving it empty leaves CapCut's Media panel empty, so there is nothing to re-drag and the
