@@ -1,0 +1,35 @@
+{
+  "total": 627.148,
+  "parts": [
+    {
+      "file": "projects/16-you-never-noticed-how-one-good-choice-lets-you-make-a-bad-one/audios/part-1.mp3",
+      "start": 0.0,
+      "duration": 269.349,
+      "frames": 10311,
+      "sample_rate": 44100,
+      "bitrates": [
+        128
+      ]
+    },
+    {
+      "file": "projects/16-you-never-noticed-how-one-good-choice-lets-you-make-a-bad-one/audios/part-2.mp3",
+      "start": 269.349,
+      "duration": 308.297,
+      "frames": 11802,
+      "sample_rate": 44100,
+      "bitrates": [
+        128
+      ]
+    },
+    {
+      "file": "projects/16-you-never-noticed-how-one-good-choice-lets-you-make-a-bad-one/audios/part-3.mp3",
+      "start": 577.646,
+      "duration": 49.502,
+      "frames": 1895,
+      "sample_rate": 44100,
+      "bitrates": [
+        128
+      ]
+    }
+  ]
+}

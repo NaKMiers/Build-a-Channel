@@ -755,3 +755,42 @@ re-exporting part 1 with a longer tail, not touching the transcript.
 `[10:11]` is free, so this is the simple one-step bump touching a single file, drift +0.02s. The
 project 12 and 13 cascade machinery is not needed here, but the map was still built before saying
 so, which is the project 13 rule.
+
+## Project 16 (2026-09-19) - missing tail re-recorded, clean 3-part align, one duplicate
+
+3 parts at 128 kbps 44.1 kHz mono (uniform, so no VBR header risk): 4m29.3s, 5m08.3s, 0m49.5s,
+combined **10m27.1s**, Xing reporting 10m27.1s. Single ElevenLabs forced-alignment call on
+`audios/full.mp3` against the whole script, because `script_one_good_choice.md` has
+**zero runs of 2+ blank lines** across its paragraph gaps.
+
+**287 cues**, median 1.7s, last cue `[10:25.740]`, aligned speech ending at 626.8s of 627.1s
+audio, no malformed lines, transcript text word-for-word identical to the script at 1831 words.
+27.5 cues per minute, matching the V2 profile's target rate. Duration 10m27.1s is inside the
+channel-dna 10 to 14 minute spec.
+
+Pre-flight checks: initial 2-part recording was missing the last ~60 seconds (caught by cramming
+test where the aligner dumped remaining words into 9:20.02); re-recorded the tail as `part-3.mp3`
+(49.5s). After combine: 1827 words / 627.1s = **2.91 wps** (174.9 wpm), right in the narrator's band.
+Quota was 8753 remaining against ~696 predicted credits.
+
+Integrity battery all passed:
+1. **Word-for-word diff**: 1831 vs 1831 words, identical.
+2. **Rolling 30s window vs whole-file rate**: whole-file 2.91 wps, rolling median 2.93 wps, max 3.40.
+3. **Largest silences**: top gap 1.50s at a sentence boundary, no holes.
+4. **Cramming test**: worst 8-word run 1.79x median at 2:32, ordinary fast speech.
+
+### One duplicate timestamp, next second free, one-step bump
+
+`[2:32]` appears twice, "Doubled." (152.04) then "And it had nothing to do with the fruit."
+(152.98). The neighbourhood:
+
+```
+[2:31] FREE
+[02:32.040] Doubled. (152.04)  ||  And it had nothing to do with the fruit. (152.98)   <- the duplicate
+[2:33] FREE
+[02:34.860] Nobody was rewarding themselves for eating well. (154.86)
+```
+
+`[2:33]` is free, so this is a simple one-step bump: save the second image as `[2-33].jpg`
+instead of `[2-32].jpg`. Drift is +0.02s.
+

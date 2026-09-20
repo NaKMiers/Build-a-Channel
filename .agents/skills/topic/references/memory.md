@@ -22,6 +22,7 @@ Self-improving notes for topic selection. Single canonical copy, no Claude-side 
 | 13 | The Psychology Of Being Poor | scaffolded 2026-08-29, scarcity mindset, user-supplied title, no script yet |
 | 14 | The Psychology Of Being Ugly | scaffolded 2026-09-03, self-perception and attractiveness bias, user-supplied title, no script yet |
 | 15 | Why People Say Yes Far More Often Than You Think | scaffolded 2026-09-12, compliance underestimation, no script yet |
+| 16 | You Never Noticed How One Good Choice Lets You Make A Bad One | scaffolded 2026-09-19, moral licensing, no script yet |
 | old 8 | Why You Stay Quiet When You Know The Room Is Wrong | abandoned 2026-08-12, unpublished, artifacts recoverable at `c9f048f` |
 | old 9 | Why You Think Everyone Is Watching When Nobody Is | abandoned 2026-08-12, unpublished, artifacts recoverable at `c9f048f` |
 
@@ -83,6 +84,42 @@ deleted-but-recoverable projects in git history, not just the working tree, befo
 proposing a title.
 
 ## Proposed but not picked
+
+### 2026-09-19, batch 21, user picked title 4 (moral licensing -> project 16)
+
+The user replied with a bare `4`. Batch drew on four angles and five distinct themes with
+plain vocabulary framing mistakes the viewer is making. The other four remain eligible.
+
+| Title | Theme | Numeric material available |
+| --- | --- | --- |
+| Why Your Life Looks Unfixable At 3AM And Fine By 9AM | sleep and rest | Samson Hadza sentinel study, 33 sleepers, 18 minutes of whole-group sleep synchrony across 20 days; Yoo and Walker amygdala reactivity after sleep loss |
+| Your Brain Still Thinks Sitting Alone Is An Emergency | boredom and solitude | Wilson 2014, 15 minutes alone, 67 percent of men self-administered a shock; default mode network vigilance |
+| The Planning Fallacy Makes You Promise Time You Do Not Have | habit and willpower | Buehler, Griffin and Ross 1994 planning fallacy, students predicted 33.9 days and took 55.5; about 30 percent finished by their own estimate; Woodburn immediate-return foraging |
+| Why You Feel Poor In The Year You Earned The Most | status and comparison | Solnick and Hemenway 1998 relative income survey, majority preferred 50k while others earn 25k over 100k while others earn 200k; Easterlin paradox |
+
+Selected: project 16, **You Never Noticed How One Good Choice Lets You Make A Bad One**,
+moral licensing. Research to reuse so `script` does not rediscover it:
+
+- **Psychology.** Moral licensing and credentialing. Monin and Miller 2001 (establishing
+  moral credentials frees people to express biased or selfish preferences); Khan and Dhar
+  2006 (making a virtuous choice, like picking a healthy meal or donating time, roughly
+  doubled subsequent indulgent or luxury choices). The mechanism is cognitive ledger
+  balancing: the brain treats discipline and virtue as an expendable currency balance rather
+  than a consistent trait.
+- **Anthropology.** Reciprocal altruism and social credit in hunter-gatherer bands. In an
+  ancestral group of about 150, prosocial investments (sharing a large kill, standing sentry)
+  earned explicit reputational credit that entitled the contributor to consume surplus or
+  take liberties later without social penalty. Boehm on levelling and reputation tracking.
+- **Modern mismatch.** The ancient social ledger was external and tracked by the band. In
+  modern life, the ledger is run internally on oneself: doing 30 minutes on a treadmill or
+  eating a salad gives the subconscious "permission" to binge or splurge, sabotaging the
+  viewer's own long-term intentions.
+- **Numeric material is strong**: roughly 2x (doubled luxury choice rate in Khan and Dhar),
+  the calorie/indulgence offset ratios, and the 150-member band credit accounting. Good two-number
+  contrast for `thumbnail`.
+- **Editorial note.** Keep the takeaway a single reframe (stop treating discipline as a bank
+  account you can spend down; see each choice as an independent system) and avoid turning
+  it into preachy life advice.
 
 ### 2026-09-12, batch 20, user picked title 4 (compliance underestimation -> project 15)
 
