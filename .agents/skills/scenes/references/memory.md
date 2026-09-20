@@ -1735,3 +1735,144 @@ into a free second, so the Step 3 timestamp diff prints one line and that is the
 Generators for this run live in the session scratchpad as `plan14_data.py`, `rebal.py` and
 `assemble14.py`. Per the project 11 note the scratchpad is not durable, so `image-prompts.md` plus
 `visual-plan.md` remain the recovery pair.
+
+## Project 16 (2026-09-20), one good choice licenses a bad one: 287 prompts, 330 plan beats, 110 plates, 105 breaks
+
+Clean on every mechanical check. 287 cues to 287 prompts, V2 anchor and lock on all 287 with zero
+V1 strings, timestamps an exact diff apart from the one documented remap, zero stray tokens, zero
+non-prompt lines, first byte `[`, zero adjacent pairs without a blank line, 783 lines, tier plan
+equal to prompts exactly (122 CLEAN / 153 LAYERED / 12 ATMOSPHERIC), surfaces summing to 287 with
+exactly one phrase per prompt, zero mixed-surface plates, zero tint words outside a tinted-card
+prompt, every source pointing backward, every break opening a PLATE, no em dash, no yellow, ASCII
+throughout. Breaks 105 over 287 is one scene every 2.73 prompts, longest inherited run 6 at
+`[3:45]`. Built data-first: chains as python data, three rebalancing passes as data, 110 plate
+compositions written as prose, variants derived mechanically.
+
+Motif: **the credit token**, one flat golden yellow disc with a bold charcoal outline and a blank
+face, drawn at one uniform size. Chosen by the project 8 rule, the drawing both halves share: the
+ancestral half is credit the band can see and convert, the modern half is the identical disc minted
+and spent by one person with nobody watching. It also has project 15's countable property, so
+presence, absence and count carry every delta it appears in.
+
+### THE FIND: a reference clause can name an object the referencing frame does not draw
+
+Three prompts carried `@[3:14] the same dumbbell and upright fries carton return here` in frames
+that hold only the dumbbell, and two carried the salad bowl plus the cake plate in frames holding
+only the bowl. **Every reference check passes on this.** The resolution check only asks that the
+target is an earlier prompt, the limit check only asks that `V2 SCENE REFERENCE LIMIT` is present,
+and the ledger check only asks that the return carries its canonical stamp. Nothing tests that the
+object named beside the reference is actually in the frame, and the limit string specifically tells
+the model to reproduce "the object named beside it", so naming a second object that is not in the
+picture is an instruction to draw it.
+
+Cause: the reference clause was written once per ledger object and reused verbatim at every return,
+while the ledger's locked description covers the object at its fullest. **A ledger object's locked
+description is the canonical drawing, not the clause text for every return.** Give a per-return
+clause that names only what this frame draws, or the reference argues with the composition.
+
+### The place-noun assertion has a plural blind spot, and it costs two false alarms per run
+
+Project 13 replaced the comma count with a vocabulary of concrete object nouns. Written as
+`\b(shelter|basket|building)\b` it does not match "shelters", "baskets", "buildings", so two
+perfectly detailed camp and city plates were reported thin. **Close the vocabulary with `s?` before
+the `\b`.** After that fix the assertion found two genuinely thin plates, an overhead of a bare
+table and a doorway with two objects, and both got their own props.
+
+Related, and project 15 recorded it: all 38 remaining hits were VARIANTs, which name no objects by
+design. The check has to be read as plates-only or it reports one false alarm per continuation.
+
+### The 60 character truncation signature is a heuristic and fires on clean files
+
+`length(delta) == 60` flagged one row. The delta is
+`one bold red X appears struck across the small speech bubble`, a complete sentence that happens to
+be exactly 60 characters. **Read the flagged cell before repairing anything**, the same lesson
+project 11 recorded about a check written against the fix rather than the requirement.
+
+### The five first-pass budget errors, ninth run in a row, all five fixed as data
+
+1. **Surface**: pure white 16.4 percent against an 8 percent target with story at 25.8 against 35.
+   Cause is new: the dense evidence and verdict cards all defaulted to white because the script is
+   card-heavy, which is the tinted-card error of projects 6 and 13 one column over. Eleven chains
+   moved off white as whole chains, and seven card abstractions of scenes the script actually sets
+   in a place became story environments. Final story 33.1, cream 29.3, tint 22.6, white 8.0,
+   cobalt 7.0, every one inside tolerance.
+2. **Register**: CARD 30.3 against a 15 to 20 band with PORTRAIT at 4.9 and STORY at 24.7. Fixed by
+   honest relabelling only: a card whose entire content is two faces filling it is PORTRAIT, a card
+   of icon-arrow-icon rows is DIAGRAM, a panel card holding @YOU in every panel is HYBRID, and four
+   frames of steadily increasing size is literally SPLIT_OR_SCALE. Final STORY 30.7, CARD 19.9,
+   DIAGRAM 19.9, HYBRID 12.5, PORTRAIT 10.5, SPLIT_OR_SCALE 6.6, **all six in band.**
+3. **Tier**: CLEAN 67.3 against a 40 target, and **the correction over-applied to 66.2 percent
+   LAYERED**, the identical over-shoot projects 12 and 13 both recorded. Trimmed by fourteen chains
+   and landed 42.5 CLEAN, 53.3 LAYERED, 4.2 ATMOSPHERIC. Third run in a row, so treat the first
+   tier correction as too large by default and count the move list twice, not once.
+4. **On-screen text**: 58.9 percent against a 25 to 35 band, the opposite direction from project
+   15's 11.8. A `KEEP_TEXT` allowlist of 86 cues decided up front landed it at 29.97 percent, 28
+   red and 58 charcoal, zero yellow. Deciding the keeper set as a list beats judging 287 beats.
+5. **Shot grammar**: 8 of 21 thirty-second blocks under four shot tasks. Fixed by re-shotting nine
+   chains, all honest (a camp scene shot from above the working ground is overhead, a card whose
+   content is two faces is close). Zero blocks under four afterwards, including the final block,
+   the third run with no arithmetic-limit exception.
+
+### CapCut was not bimodal and the plain threshold landed mid-band
+
+`gap >= 2.5` gives 90, `gap >= 3` gives 43, `gap >= 3.5` gives 14 and `gap >= 4` gives **zero**,
+because this transcript's longest cue gap is under four seconds. Took the plain `gap >= 3`: 43
+beats, 13.03 percent, cadence 31.5 per minute, inside the 28 to 32 band. Second script after
+project 15 where the chain-aware form was not needed. Print the histogram; do not assume.
+
+### Only 4 of 110 plates could be whitelisted as continuations
+
+The break rule is to cut at every PLATE except plates that genuinely continue the frame above them
+on the same surface. This script changes surface at almost every chain boundary, because its spine
+alternates between a scene and the card that reads the scene, so only `hiringpick1`, `record1`,
+`notwall1` and `notconnected1` qualified. 105 breaks over 287 prompts, one scene every 2.73,
+longest inherited run 6. **A low whitelist count is a property of the script, not a mistake**, and
+the run-length check is what confirms it: nothing inherits for more than six frames.
+
+### Honest deviations, reported not padded
+
+- **Assets PLATE 33.33, VARIANT 53.64, CALLBACK 0, CAPCUT 13.03.** The rule 18 audit found **zero**
+  attribute-only deltas and zero no-signal deltas, so there was nothing to promote, which is
+  projects 13, 14 and 15's position exactly. CALLBACK is 0 for the projects 6, 8, 9 and 13 reason:
+  the four reprises that carry real weight, the salad at `[8:48]`, the gym at `[8:53]`, the
+  donation at `[8:57]` and the hook cafe at `[9:37]`, are all PLATEs with `Motif: CALLBACK` so each
+  gets a clean chain and a break.
+- **Motif on 41 of 330 beats**, the token drawn in 29 prompts and referenced in 21 more. Lower than
+  projects 13 to 15 and above project 6's 20. The token is this video's payload object rather than
+  its wallpaper: it belongs wherever a deposit or a licence is the information and nowhere else,
+  and spreading it into the experiment rooms and the camp scenes would dilute the one thing it
+  means.
+- Length drift first-50 to last-50 was 6.5 percent, but the ends differ by register, dense
+  atmospheric story prose at the hook against terse cream card variants at the outro. Compare like
+  for like before reading it as chunking decay.
+
+Cast: @YOU 74, @LEDGER 35, @BAND 25, @DECIDER 24, @HUNTER 15; tokens on 155 of 287 prompts. @YOU is
+25.8 percent of all prompts and **44.8 percent of the 165 cues where rule 12 allows him**, counting
+him in every frame where either the plate prose or a delta names him. The denominator excludes the
+Monin and Miller lab, the Khan and Dhar lab and the whole ancestral act, 122 cues, and **zero @YOU
+frames sit inside any of them**. First assembly had him on 55, 33.3 percent; the project 8 rule
+applied deliberately found eight eligible plates a second-person script puts the viewer inside
+rather than beside, his own desk and sofa, his own living room with nobody watching, his own hands
+holding the brick, his own straining arms, his own kitchen doorway, and the city and the room on
+the modern side of two then-versus-now splits.
+
+Ledger: credit token `[0:12]`, salad bowl and cake plate `[0:02]`, closed door `[0:20]`, pass slip
+`[1:31]`, Monin and Miller portrait pair `[0:35]`, Khan and Dhar portrait pair `[1:56]`, choice tray
+`[2:00]`, doubling bar pair `[2:18]`, dumbbell and fries carton `[3:14]`, watching eye ring `[4:01]`,
+ceiling bar `[5:06]`, empty auditor chair `[6:24]`. 57 references across 57 prompts, every one
+carrying exactly one and every one anchored at its object's first appearance. The token alone is 21
+of them and the pass slip 9.
+
+The transcript's duplicate `[2:32]` is remapped to `[2:33]` in the prompt file, a one-step bump into
+a free second, so the Step 3 timestamp diff prints one line and that is the expected output.
+
+Four real named people, none of them on the cast sheet, so per the projects 12 to 14 precedent every
+one is a plain doodle portrait under a one-time charcoal name caption: Monin and Miller share one
+introduction card at `[0:35]`, Khan and Dhar share one at `[1:56]`, Boehm at `[4:06]`, Trivers at
+`[4:55]`. The Khan and Dhar portraits return at `[7:34]` and that frame carries **no** caption, which
+is the rule 17 half this skill owns.
+
+Generators for this run live in the session scratchpad as `p16_base.py`, `p16_r.py`, `p16_ledger.py`,
+the nine act files, `p16_patch.py`, `p16_audit.py`, `p16_r18.py` and `p16_build.py`. Per the project
+11 note the scratchpad is not durable, so `image-prompts.md` plus `visual-plan.md` remain the
+recovery pair.
