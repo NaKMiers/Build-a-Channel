@@ -1876,3 +1876,89 @@ Generators for this run live in the session scratchpad as `p16_base.py`, `p16_r.
 the nine act files, `p16_patch.py`, `p16_audit.py`, `p16_r18.py` and `p16_build.py`. Per the project
 11 note the scratchpad is not durable, so `image-prompts.md` plus `visual-plan.md` remain the
 recovery pair.
+
+## Project 17 (2026-09-23), one bad ending: 313 prompts, 357 plan beats, 160 plates, 120 breaks
+
+Clean on every mechanical check. 313 cues to 313 prompts, V2 anchor and lock on all 313 with zero
+V1 strings, timestamps an exact diff apart from the one documented `[5:44]` to `[5:45]` bump, zero
+stray tokens, zero non-prompt lines, first byte `[`, zero adjacent pairs without a blank line, 865
+lines, tier plan equal to prompts exactly (124 CLEAN / 174 LAYERED / 15 ATMOSPHERIC), surfaces
+summing to 313 with exactly one phrase per prompt, every source pointing backward, every break
+opening a PLATE, 54 references all resolving and all carrying the limit, no em dash, no yellow,
+ASCII throughout, PATIENT never on a tinted card (the cast file's teal-gown rule). Breaks 120 over
+313 is one scene every 2.61 prompts, longest inherited run 8. Built data-first: four act files of
+`C()`/`V()`/`K()` calls, one per cue in order, and an assembler that derives everything else.
+
+Motif: **the square row**, a long even row of small blank white squares, one per stretch of time,
+of which only the worst and the last are ever kept. It is `@JUDGE`'s own pose three from the cast
+sheet (a row swept off while two are kept), so the design arrived locked, and it is countable in
+the project 15 sense: six squares plus three, twenty with two lifted out, dozens, the last five
+dashed. 35 beats plus 6 `Motif: CALLBACK` plates. Rule 18 audit: zero attribute hits, zero
+no-signal deltas on the first pass.
+
+### THE FIND: surface adjacency decides how many continuations are even legal
+
+Writing one plan row per cue produced 165 plates and **160 breaks, one every 1.96 prompts**, well
+into disjointed territory. Only four plates qualified for the continuation whitelist, because the
+first pass alternated surfaces almost every chain (cream, white, tint, cream, white) and the guard
+`surface(prev) == surface(this)` refuses every one of those. Two levers fixed it, both honest:
+
+1. **Merge a single-beat plate into the chain before it when the next cue is a genuine build step**
+   on that composition: the slider gains the record card in its reserved bottom band, the lab wall
+   gains the six-square chart, the lever gains the stopwatch, the trumpet gains the moons, the
+   bedroom gains the feed inset. Five merges, five fewer plates and breaks.
+2. **Move whole chains between surfaces so a run of consecutive evidence cards shares one**, then
+   whitelist the next steps. The Toronto records run went to pure white end to end, the duration
+   argument (sand timer, three hours or five, the slab, no experiment) to tinted tan. Every move was
+   a prose rewrite per project 13, naming the tint colour in the prose.
+
+That plus 31 whitelisted continuations landed 120 breaks. **Check the plate-to-plate surface
+sequence before placing breaks, not after**: a whitelist cannot fire across a surface change.
+
+### Three assembler defects only an end-to-end read caught
+
+- An appended caption sentence joined the surface clause with no full stop: "drawn as a warm cream
+  or off-white card Bold red ALL CAPS text". Every mechanical check passed. The fix is the caption
+  sentence owning its leading `. `, plus an assert against `..`, `. .` and `,.`.
+- The reference clause "`@[0:28]` the plain charcoal two-pan beam balance match their earlier
+  design exactly" is wrong for every singular object. "`@[0:28]` the same plain charcoal two-pan
+  beam balance, drawn exactly as before" reads for singular and plural alike.
+- A delta that names a token only as a location ("above @YOU", "from the feet of @FORAGER") was
+  dropping that token's "same position and posture" freeze. Freeze everything the delta does not
+  act on; test "acted on" as the token opening the delta or followed by a verb.
+
+### A register-run check that ignores plates reports builds as defects
+
+The naive run counter flagged 23 runs of four or more. The V2 registers section of `visual-style.md` makes a run
+inside one plate legal, so the check must count only runs spanning two or more plates. That left
+the real ones; the three worst (8 CARD across 5 plates, 7 PORTRAIT across 3, 7 STORY across 3)
+were fixed by honest relabels, four runs of 6 across two plates remain and each is one build.
+
+### First-pass budget errors, tenth run in a row
+
+CLEAN 53.4 against 40, fixed by moving 19 chains with real depth planes (portraits, vignette panels,
+objects on plinths) to LAYERED, counted first per project 12, landing 39.6 with no overshoot.
+DIAGRAM 24.9 and SPLIT 11.8 over, PORTRAIT 6.7 under, fixed by relabels (a bar with a caption is a
+CARD, a map with a walking figure is HYBRID, a close on a face lit by a phone is PORTRAIT). Text sat
+at 35.1, the top edge, and came down to 31.3 by dropping twelve assembler-appended captions whose
+only job was naming what the drawing already showed.
+
+### Honest deviations
+
+- **VARIANT 42.6, CALLBACK 0.3.** The rule 18 audit found nothing to promote. The six reprises that
+  carry weight are PLATEs with `Motif: CALLBACK` so each gets a clean chain; `[10:55]` is the one
+  callback asset, and it inherits the hook echo it recalls.
+- **STORY 25.2, SPLIT 11.2, PORTRAIT 9.3.** The script is built on comparisons: eight minutes
+  against twenty four, six squares against nine, then against now, a band against one person.
+- **White 11.2 percent** against 8, inside tolerance and the 15 ceiling, from the Toronto run above.
+
+Cast: @YOU 52, @JUDGE 30, @FORAGER 19, @PATIENT 11, @KAHNEMAN 10, @BAND 9; tokens on 122 of 313.
+@YOU is **40.3 percent of the 129 cues where rule 12 allows him**; the denominator excludes the
+Toronto, lab and trial acts, the ancestral act, van Gennep's rituals and the Mbuti act, 184 cues,
+and zero @YOU frames sit inside them. First assembly had him at 33 percent; five modern plates the
+second-person script puts him inside (the cafe panel, the glass over the finished day, the tiny
+square, the scattered NOW half, his own hand placing the square) brought him to 52.
+
+Generators live in the session scratchpad as `p17_dsl.py`, `p17_a.py` to `p17_d.py` and
+`p17_build.py`. Per the project 11 note the scratchpad is not durable, so `image-prompts.md` plus
+`visual-plan.md` remain the recovery pair.

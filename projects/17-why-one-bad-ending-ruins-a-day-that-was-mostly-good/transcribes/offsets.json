@@ -1,0 +1,35 @@
+{
+  "total": 687.778,
+  "parts": [
+    {
+      "file": "projects/17-why-one-bad-ending-ruins-a-day-that-was-mostly-good/audios/part-1.mp3",
+      "start": 0.0,
+      "duration": 291.553,
+      "frames": 11161,
+      "sample_rate": 44100,
+      "bitrates": [
+        256
+      ]
+    },
+    {
+      "file": "projects/17-why-one-bad-ending-ruins-a-day-that-was-mostly-good/audios/part-2.mp3",
+      "start": 291.553,
+      "duration": 300.696,
+      "frames": 11511,
+      "sample_rate": 44100,
+      "bitrates": [
+        256
+      ]
+    },
+    {
+      "file": "projects/17-why-one-bad-ending-ruins-a-day-that-was-mostly-good/audios/part-3.mp3",
+      "start": 592.248,
+      "duration": 95.53,
+      "frames": 3657,
+      "sample_rate": 44100,
+      "bitrates": [
+        256
+      ]
+    }
+  ]
+}

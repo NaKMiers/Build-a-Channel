@@ -794,3 +794,26 @@ Integrity battery all passed:
 `[2:33]` is free, so this is a simple one-step bump: save the second image as `[2-33].jpg`
 instead of `[2-32].jpg`. Drift is +0.02s.
 
+
+## Project 17 (2026-09-23) - clean 3-part run, single call, one duplicate
+
+3 parts at 256 kbps 44.1 kHz mono (uniform, no VBR risk): 4m51.6s, 5m00.7s, 1m35.5s, combined
+**11m27.8s**, Xing reporting 11m27.8s. Single ElevenLabs call on `audios/full.mp3` against the
+whole script, because `script_one_bad_ending.md` has zero runs of 2+ blank lines. V2 profile
+confirmed from the cast header.
+
+**313 cues**, median 1.7s, last cue `[11:26.480]`, aligned speech ending at 687.4s of 687.8s
+audio, no malformed lines, 2121 words word-for-word identical to the script. 27.3 cues per minute.
+Four one-word cues, all intentional: `Bad.`, `Dwelling.`, `Why?`, `Dozens.`
+
+Pre-flight: folder sweep clean (no stray audio), `file` uniform 256 kbps, 2121 / 687.8 = **3.08 wps**
+(185.0 wpm, the fastest read yet, still above the 175 planning figure so the safe direction), quota
+free tier 1626 of 10000 used, 8374 remaining against a predicted ~764.
+
+Battery: word diff identical; rolling 30s median 3.07 vs whole-file 3.08, max 3.67 at 255s; top
+silence 1.58s at 227.4s; cramming worst 1.79x median at 5:50. Both seams clean: 0.52s gap at
+291.6s, 0.54s at 592.2s, no word straddling either boundary.
+
+One duplicate, `[5:44]`: "For that," (344.24) then "two moments beat the full log." (344.96).
+`[5:43]`, `[5:45]` and `[5:46]` are free, `[5:47]` taken, so a one-step bump: save the second
+image as `[5:45]`, drift +0.04s.
