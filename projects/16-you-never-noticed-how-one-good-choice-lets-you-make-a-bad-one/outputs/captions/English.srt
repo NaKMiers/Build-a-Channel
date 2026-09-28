@@ -1,0 +1,603 @@
+1
+00:00:00,140 --> 00:00:03,460
+You ordered the salad. And then you ordered the cake.
+
+2
+00:00:04,400 --> 00:00:07,820
+Not because you forgot the salad. Because you remembered it.
+
+3
+00:00:08,119 --> 00:00:11,840
+That is not a joke about willpower, and it is not a failure of discipline.
+
+4
+00:00:12,380 --> 00:00:16,700
+It is a licensed transaction, and your brain has been running them your entire life without
+
+5
+00:00:16,780 --> 00:00:20,620
+telling you. Psychologists call it moral licensing.
+
+6
+00:00:20,840 --> 00:00:25,140
+By the end of this you will know why every good choice you make quietly opens the door for a bad
+
+7
+00:00:25,220 --> 00:00:27,400
+one, where that accounting system came from,
+
+8
+00:00:27,480 --> 00:00:31,300
+and why the ledger it keeps has been lying to you since the day you were born.
+
+9
+00:00:31,860 --> 00:00:33,940
+Start with a study that should not work.
+
+10
+00:00:34,300 --> 00:00:40,400
+In 2001, Benoit Monin and Dale Miller at Princeton ran an experiment that sounds backwards.
+
+11
+00:00:40,660 --> 00:00:42,980
+They gave participants a hiring scenario.
+
+12
+00:00:43,580 --> 00:00:47,460
+In the first round, some were asked to evaluate a set of candidates where the best choice
+
+13
+00:00:47,540 --> 00:00:49,900
+happened to be a woman. They picked her.
+
+14
+00:00:50,380 --> 00:00:52,660
+Obvious call, nothing heroic about it.
+
+15
+00:00:52,740 --> 00:00:55,880
+But in the second round, when a different job opened up,
+
+16
+00:00:56,040 --> 00:01:00,720
+the ones who had just made that perfectly reasonable choice were significantly more likely to
+
+17
+00:01:00,800 --> 00:01:04,340
+favor a man for a role described as better suited to women.
+
+18
+00:01:04,739 --> 00:01:08,860
+A group that had not made the earlier selection did not show the same tilt.
+
+19
+00:01:09,160 --> 00:01:12,740
+Read that slowly, because the mechanism is not what it looks like.
+
+20
+00:01:12,820 --> 00:01:15,000
+The first group did not become more biased.
+
+21
+00:01:15,080 --> 00:01:18,520
+They already held the bias. What changed was permission.
+
+22
+00:01:18,600 --> 00:01:24,220
+Picking the woman in round one deposited something into an internal account, a token that said
+
+23
+00:01:24,460 --> 00:01:28,080
+I am fair, I am the kind of person who does the right thing.
+
+24
+00:01:28,160 --> 00:01:31,040
+And that token purchased exactly one thing.
+
+25
+00:01:31,120 --> 00:01:34,800
+A pass. The next decision no longer needed to prove fairness,
+
+26
+00:01:34,880 --> 00:01:39,500
+because fairness had already been demonstrated, to nobody but the decider.
+
+27
+00:01:39,940 --> 00:01:42,980
+Monin and Miller called this moral credentialing.
+
+28
+00:01:43,080 --> 00:01:46,300
+You establish a credential, and then you spend it.
+
+29
+00:01:46,600 --> 00:01:49,200
+Not on someone else. On yourself.
+
+30
+00:01:49,640 --> 00:01:53,820
+If that were one isolated finding in a hiring lab, you could set it aside.
+
+31
+00:01:54,020 --> 00:02:00,340
+It is not. In 2006, Uzma Khan and Ravi Dhar at Yale ran a cleaner version.
+
+32
+00:02:00,600 --> 00:02:03,700
+They gave people a choice between two products.
+
+33
+00:02:04,020 --> 00:02:08,120
+One group chose first between a virtuous option and an indulgent one,
+
+34
+00:02:08,400 --> 00:02:12,520
+say a piece of fruit versus a chocolate bar. The other group skipped that step.
+
+35
+00:02:12,600 --> 00:02:16,780
+Then both groups faced a second, unrelated choice between a practical item
+
+36
+00:02:17,040 --> 00:02:22,760
+and a luxury. The group that had just picked the fruit in round one was roughly twice as likely
+
+37
+00:02:22,840 --> 00:02:27,880
+to pick the luxury in round two. The ones who never made the healthy choice did not show the
+
+38
+00:02:27,960 --> 00:02:30,280
+same spike. Twice as likely.
+
+39
+00:02:30,680 --> 00:02:34,600
+Not slightly. Doubled. And it had nothing to do with the fruit.
+
+40
+00:02:34,860 --> 00:02:37,160
+Nobody was rewarding themselves for eating well.
+
+41
+00:02:37,240 --> 00:02:42,320
+The mechanism is stranger than that. Picking the virtuous option did not create a craving for
+
+42
+00:02:42,400 --> 00:02:44,980
+balance. It created a credential.
+
+43
+00:02:45,080 --> 00:02:49,580
+And the credential whispered, almost below hearing, that the next choice was free.
+
+44
+00:02:49,660 --> 00:02:52,720
+That the account had a surplus, and a surplus can be spent.
+
+45
+00:02:52,840 --> 00:02:55,920
+Your brain does not track your choices the way you think it does.
+
+46
+00:02:56,040 --> 00:02:59,680
+You believe you are building a consistent person, one decision at a time,
+
+47
+00:02:59,760 --> 00:03:05,520
+like laying bricks into a wall. But the system underneath is running a ledger, not a wall.
+
+48
+00:03:05,600 --> 00:03:09,180
+And a ledger is a fundamentally different machine, because in a ledger,
+
+49
+00:03:09,260 --> 00:03:12,740
+a deposit on one side licenses a withdrawal on the other.
+
+50
+00:03:13,040 --> 00:03:16,560
+So you go to the gym and then eat the large fries on the way home.
+
+51
+00:03:16,740 --> 00:03:19,420
+You work late on Monday and scroll through Tuesday.
+
+52
+00:03:19,700 --> 00:03:24,140
+You donate to the charity and then ignore the person who actually needs something from you in
+
+53
+00:03:24,220 --> 00:03:27,880
+person. Each time, the first act is not building toward anything.
+
+54
+00:03:27,960 --> 00:03:32,520
+It is buying something. And what it buys is the feeling that the second act does not count.
+
+55
+00:03:32,720 --> 00:03:35,980
+Does any of that sound like willpower failing? It is not.
+
+56
+00:03:37,180 --> 00:03:40,380
+The system is working exactly as it was designed to work.
+
+57
+00:03:40,760 --> 00:03:44,840
+The question is where that design came from, and why it ever made sense.
+
+58
+00:03:45,440 --> 00:03:49,700
+Go back about two hundred thousand years to a band of roughly a hundred and fifty people who
+
+59
+00:03:49,780 --> 00:03:52,800
+share a camp, share kills, share fire,
+
+60
+00:03:53,060 --> 00:03:57,520
+and share one permanent, public record of every act any of them commits.
+
+61
+00:03:58,280 --> 00:04:01,120
+In that world, your behavior was not tracked by you.
+
+62
+00:04:01,440 --> 00:04:03,360
+It was tracked by everyone else.
+
+63
+00:04:03,860 --> 00:04:09,100
+The anthropologist Christopher Boehm spent decades studying how small-scale societies manage
+
+64
+00:04:09,180 --> 00:04:12,860
+status and fairness, and the pattern is remarkably consistent.
+
+65
+00:04:13,120 --> 00:04:16,200
+Generosity was monitored. Stinginess was punished.
+
+66
+00:04:16,640 --> 00:04:21,639
+Sharing a large kill, standing sentry, carrying an injured person's load,
+
+67
+00:04:21,839 --> 00:04:25,980
+each of those acts earned real, visible credit in the eyes of the group.
+
+68
+00:04:26,300 --> 00:04:29,260
+And that credit was not symbolic. It was convertible.
+
+69
+00:04:29,460 --> 00:04:34,700
+A hunter who had shared meat reliably for a season could sit out a hunt without losing standing.
+
+70
+00:04:34,960 --> 00:04:39,380
+A woman who had processed hides for others through the dry months could ask for help when she
+
+71
+00:04:39,460 --> 00:04:42,120
+needed it and receive it without negotiation.
+
+72
+00:04:42,620 --> 00:04:47,300
+The system was explicit. Your contributions were seen by thirty, fifty,
+
+73
+00:04:47,380 --> 00:04:50,600
+a hundred people who remembered them, talked about them,
+
+74
+00:04:50,680 --> 00:04:52,880
+and adjusted what they owed you in return.
+
+75
+00:04:53,600 --> 00:04:59,420
+Reciprocal altruism, the term Robert Trivers gave it in 1971, was not a feeling.
+
+76
+00:04:59,680 --> 00:05:05,900
+It was an economy, and in that economy, a deposit genuinely did entitle you to a withdrawal.
+
+77
+00:05:06,100 --> 00:05:10,860
+But the withdrawal had a ceiling, and the ceiling was set by everyone who had been watching.
+
+78
+00:05:11,180 --> 00:05:15,440
+Take more than the group judged you had earned and the repayment was not financial.
+
+79
+00:05:15,680 --> 00:05:22,520
+It was social. Gossip first, then ridicule, then the slow freeze that ended in exile.
+
+80
+00:05:22,600 --> 00:05:25,220
+The cost of overwithdrawal was not debt.
+
+81
+00:05:25,300 --> 00:05:27,960
+It was death. Notice the critical detail.
+
+82
+00:05:28,040 --> 00:05:31,500
+The ledger was external. It lived in the memories of the band,
+
+83
+00:05:31,600 --> 00:05:36,600
+not in the head of the contributor. Other people decided when you had earned enough to take.
+
+84
+00:05:36,680 --> 00:05:39,520
+Other people decided when you had taken too much.
+
+85
+00:05:39,720 --> 00:05:46,340
+The balance was social, visible, and enforced by reputation, gossip, and, at the extreme,
+
+86
+00:05:46,500 --> 00:05:52,820
+exclusion. Now move that entire system from a camp of a hundred and fifty known faces to a city
+
+87
+00:05:52,900 --> 00:05:55,740
+of strangers and a bedroom with a closed door.
+
+88
+00:05:55,920 --> 00:06:01,020
+The external ledger vanished. Nobody is watching your Monday gym session and your Tuesday
+
+89
+00:06:01,100 --> 00:06:06,980
+scrolling and comparing the two. Nobody tallies the salad against the cake and rules on whether
+
+90
+00:06:07,060 --> 00:06:13,220
+the net is positive. But the machinery that evolved to track credit and authorize spending did
+
+91
+00:06:13,300 --> 00:06:17,000
+not vanish with the audience. It moved indoors.
+
+92
+00:06:17,300 --> 00:06:23,500
+It became internal. And an internal ledger has one catastrophic flaw that an external one never
+
+93
+00:06:23,580 --> 00:06:25,880
+had. There is no auditor.
+
+94
+00:06:26,060 --> 00:06:28,620
+In the band, if you tried to take more than you had earned,
+
+95
+00:06:28,700 --> 00:06:31,800
+forty sets of eyes corrected you before the day ended.
+
+96
+00:06:31,920 --> 00:06:36,080
+The system was self-correcting because the people who kept the books were not you.
+
+97
+00:06:36,160 --> 00:06:40,720
+In a modern life, the person making the deposit and the person authorizing the withdrawal and
+
+98
+00:06:40,800 --> 00:06:44,440
+the person spending the withdrawal are all the same person.
+
+99
+00:06:44,520 --> 00:06:48,920
+And that person is running the oldest possible software on a problem it was never built to
+
+100
+00:06:49,000 --> 00:06:51,680
+handle, which is judging yourself fairly.
+
+101
+00:06:52,140 --> 00:06:58,380
+That is the mismatch. The feeling that a good choice earns you a bad one is not irrational.
+
+102
+00:06:58,680 --> 00:07:03,760
+It is a faithful reproduction of a system that worked for a hundred thousand generations.
+
+103
+00:07:04,140 --> 00:07:06,540
+It is just missing the part that made it work,
+
+104
+00:07:06,620 --> 00:07:10,060
+which was the tribe standing behind your shoulder saying no,
+
+105
+00:07:10,440 --> 00:07:14,180
+that is not what that credit was for. So the gym buys the fries.
+
+106
+00:07:14,300 --> 00:07:18,860
+The donation buys the avoidance. The productive morning buys the wasted afternoon.
+
+107
+00:07:18,940 --> 00:07:23,520
+And every January, the resolution to do better starts a fresh ledger that immediately begins
+
+108
+00:07:23,600 --> 00:07:26,920
+spending itself down, because the architecture has not changed.
+
+109
+00:07:27,140 --> 00:07:30,040
+The first good day does not build the second good day.
+
+110
+00:07:30,660 --> 00:07:34,660
+It purchases the right to skip it. And here is the part that cuts deepest,
+
+111
+00:07:34,800 --> 00:07:38,360
+the part Khan and Dhar's doubling ratio makes visible.
+
+112
+00:07:38,740 --> 00:07:44,280
+You do not even notice when you spend. The licensing happens below conscious decision.
+
+113
+00:07:44,600 --> 00:07:49,080
+You do not sit in the drive-through and think, I earned this with my workout.
+
+114
+00:07:49,240 --> 00:07:54,460
+You sit in the drive-through and feel, mysteriously, that the large is fine today.
+
+115
+00:07:54,740 --> 00:07:57,940
+That you deserve it. That this one does not count.
+
+116
+00:07:58,080 --> 00:08:04,200
+And it happens at every scale. The diet that fails in week three because week one went so well.
+
+117
+00:08:04,280 --> 00:08:07,820
+The budget that collapses after a single month of discipline.
+
+118
+00:08:07,900 --> 00:08:13,080
+The relationship where you bank three kind mornings and then spend them on one sharp evening,
+
+119
+00:08:13,160 --> 00:08:16,280
+as if kindness were a currency and you had built up change.
+
+120
+00:08:16,700 --> 00:08:19,460
+But it does count. Every time.
+
+121
+00:08:19,540 --> 00:08:22,680
+The ledger told you it was free, and the ledger lied,
+
+122
+00:08:22,920 --> 00:08:27,400
+because no one is keeping it but you. So the shift is not to try harder.
+
+123
+00:08:28,100 --> 00:08:32,959
+Trying harder feeds the same machine, because a harder try is a larger deposit,
+
+124
+00:08:33,080 --> 00:08:36,040
+and a larger deposit licenses a larger withdrawal.
+
+125
+00:08:36,740 --> 00:08:39,979
+The shift is to see that every choice is its own event.
+
+126
+00:08:40,460 --> 00:08:43,620
+Separate. Closed at the moment it is made.
+
+127
+00:08:43,919 --> 00:08:47,920
+Not connected to the choice before it and not funding the choice after it.
+
+128
+00:08:48,340 --> 00:08:53,020
+The salad was a thing you did at noon. It has no opinion about what you do at nine tonight.
+
+129
+00:08:53,200 --> 00:08:57,640
+The gym was a thing you did on Monday. It does not vote on Tuesday.
+
+130
+00:08:57,780 --> 00:09:02,720
+The donation was a real act of generosity, and it bought exactly one thing,
+
+131
+00:09:02,800 --> 00:09:05,780
+whatever the donation bought. Not a pass.
+
+132
+00:09:06,100 --> 00:09:08,760
+Not a surplus. Not permission.
+
+133
+00:09:09,140 --> 00:09:13,940
+One concrete move. The next time you catch yourself feeling that something is fine today,
+
+134
+00:09:14,240 --> 00:09:19,480
+that you have earned it, that this one does not count, stop and ask one question.
+
+135
+00:09:20,080 --> 00:09:23,360
+Would I still choose this if the good thing had not happened first?
+
+136
+00:09:23,840 --> 00:09:28,340
+If the answer is no, then what you are holding is not a decision.
+
+137
+00:09:28,480 --> 00:09:33,200
+It is a receipt. And the purchase it represents was made by a system that lost its auditor
+
+138
+00:09:33,280 --> 00:09:37,620
+roughly ten thousand years ago and has been spending unsupervised ever since.
+
+139
+00:09:37,780 --> 00:09:41,160
+You ordered the salad. And then you ordered the cake.
+
+140
+00:09:41,920 --> 00:09:45,820
+Not because you are weak. Not because you lack discipline.
+
+141
+00:09:46,000 --> 00:09:50,300
+Because a machine that once made perfect sense in a camp where everyone was watching is now
+
+142
+00:09:50,380 --> 00:09:52,700
+running in a room where no one is.
+
+143
+00:09:52,960 --> 00:09:56,340
+And the only person it needs to convince is you.
+
+144
+00:09:56,960 --> 00:09:59,860
+And here is the question this video deliberately left open.
+
+145
+00:09:59,980 --> 00:10:05,620
+The one person whose yes you imagined buying with all that good behavior, the colleague,
+
+146
+00:10:05,700 --> 00:10:10,280
+the friend, the stranger, they were never checking your ledger.
+
+147
+00:10:10,360 --> 00:10:12,720
+They were never even keeping one.
+
+148
+00:10:13,160 --> 00:10:19,220
+So who were you performing for? There is a video on this channel called Why People Say Yes Far
+
+149
+00:10:19,300 --> 00:10:22,640
+More Often Than You Think. It answers that question,
+
+150
+00:10:22,720 --> 00:10:25,460
+and the answer has nothing to do with earning anything.
+
+151
+00:10:25,740 --> 00:10:27,100
+Watch that one next.

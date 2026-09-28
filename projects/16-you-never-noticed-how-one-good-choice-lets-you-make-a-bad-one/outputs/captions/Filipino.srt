@@ -1,0 +1,603 @@
+1
+00:00:00,140 --> 00:00:03,460
+Umorder ka ng salad. Tapos umorder ka ng cake.
+
+2
+00:00:04,400 --> 00:00:07,820
+Hindi dahil nakalimutan mo ang salad. Kundi dahil naalala mo ito.
+
+3
+00:00:08,119 --> 00:00:11,840
+Hindi ito biro tungkol sa pagpipigil sa sarili, at hindi rin ito kabiguan ng disiplina.
+
+4
+00:00:12,380 --> 00:00:16,700
+Isa itong lisensyadong transaksyon, at ginagawa na ito ng utak mo buong buhay mo nang hindi
+
+5
+00:00:16,780 --> 00:00:20,620
+sinasabi sa iyo. Tinatawag ito ng mga sikologo na moral na paglilisensya.
+
+6
+00:00:20,840 --> 00:00:25,140
+Sa dulo nito, malalaman mo kung bakit ang bawat mabuting pagpili mo ay tahimik na nagbubukas ng pinto
+
+7
+00:00:25,220 --> 00:00:27,400
+para sa isang masama, kung saan nanggaling ang sistemang iyon ng pagtutuos,
+
+8
+00:00:27,480 --> 00:00:31,300
+at kung bakit nagsisinungaling na sa iyo ang talaang itinatago nito mula nang ipanganak ka.
+
+9
+00:00:31,860 --> 00:00:33,940
+Magsimula tayo sa isang pag-aaral na hindi dapat gumana.
+
+10
+00:00:34,300 --> 00:00:40,400
+Noong 2001, nagsagawa sina Benoit Monin at Dale Miller sa Princeton ng eksperimentong parang baligtad.
+
+11
+00:00:40,660 --> 00:00:42,980
+Binigyan nila ang mga kalahok ng isang sitwasyon ng pagkuha ng empleyado.
+
+12
+00:00:43,580 --> 00:00:47,460
+Sa unang yugto, pinasuri ang ilan sa isang hanay ng mga kandidato kung saan ang pinakamagaling na pagpipilian
+
+13
+00:00:47,540 --> 00:00:49,900
+ay nagkataong isang babae. Pinili nila siya.
+
+14
+00:00:50,380 --> 00:00:52,660
+Halatang desisyon, walang kabayanihan doon.
+
+15
+00:00:52,740 --> 00:00:55,880
+Pero sa ikalawang yugto, nang magbukas ang ibang trabaho,
+
+16
+00:00:56,040 --> 00:01:00,720
+ang mga kagagawa lang ng makatwirang pagpiling iyon ay mas malaki ang posibilidad na
+
+17
+00:01:00,800 --> 00:01:04,340
+pumabor sa isang lalaki para sa trabahong inilarawang mas angkop sa mga babae.
+
+18
+00:01:04,739 --> 00:01:08,860
+Ang grupong hindi gumawa ng naunang pagpili ay hindi nagpakita ng parehong pagkiling.
+
+19
+00:01:09,160 --> 00:01:12,740
+Basahin mo iyan nang dahan-dahan, dahil ang mekanismo ay hindi gaya ng inaakala mo.
+
+20
+00:01:12,820 --> 00:01:15,000
+Hindi naging mas may kinikilingan ang unang grupo.
+
+21
+00:01:15,080 --> 00:01:18,520
+Taglay na nila ang pagkiling. Ang nagbago ay ang pahintulot.
+
+22
+00:01:18,600 --> 00:01:24,220
+Ang pagpili sa babae sa unang yugto ay nagdeposito ng isang bagay sa isang panloob na kuwenta, isang tanda na nagsasabing
+
+23
+00:01:24,460 --> 00:01:28,080
+patas ako, ako ang klase ng taong gumagawa ng tama.
+
+24
+00:01:28,160 --> 00:01:31,040
+At isang bagay lang ang nabili ng tandang iyon.
+
+25
+00:01:31,120 --> 00:01:34,800
+Isang libreng pase. Hindi na kailangang patunayan ng susunod na desisyon ang pagiging patas,
+
+26
+00:01:34,880 --> 00:01:39,500
+dahil naipakita na ang pagiging patas, sa walang iba kundi sa nagdesisyon mismo.
+
+27
+00:01:39,940 --> 00:01:42,980
+Tinawag ito nina Monin at Miller na moral na pagkakredensyal.
+
+28
+00:01:43,080 --> 00:01:46,300
+Magtatatag ka ng kredensyal, at saka mo ito gagastusin.
+
+29
+00:01:46,600 --> 00:01:49,200
+Hindi sa ibang tao. Sa sarili mo.
+
+30
+00:01:49,640 --> 00:01:53,820
+Kung iisang hiwalay na natuklasan lang iyon sa isang laboratoryo ng pagkuha ng empleyado, puwede mo itong isantabi.
+
+31
+00:01:54,020 --> 00:02:00,340
+Pero hindi. Noong 2006, nagsagawa sina Uzma Khan at Ravi Dhar sa Yale ng mas malinis na bersyon.
+
+32
+00:02:00,600 --> 00:02:03,700
+Pinapili nila ang mga tao sa pagitan ng dalawang produkto.
+
+33
+00:02:04,020 --> 00:02:08,120
+Ang isang grupo ay unang pumili sa pagitan ng mabuting opsyon at ng pampalayaw na opsyon,
+
+34
+00:02:08,400 --> 00:02:12,520
+halimbawa, isang piraso ng prutas o isang tsokolate. Nilaktawan ng kabilang grupo ang hakbang na iyon.
+
+35
+00:02:12,600 --> 00:02:16,780
+Pagkatapos, hinarap ng dalawang grupo ang ikalawang pagpili na walang kaugnayan, sa pagitan ng praktikal na bagay
+
+36
+00:02:17,040 --> 00:02:22,760
+at ng luho. Ang grupong kapipili lang ng prutas sa unang yugto ay halos doble ang posibilidad
+
+37
+00:02:22,840 --> 00:02:27,880
+na pumili ng luho sa ikalawang yugto. Ang mga hindi gumawa ng malusog na pagpili ay hindi nagpakita ng
+
+38
+00:02:27,960 --> 00:02:30,280
+parehong pagtaas. Doble ang posibilidad.
+
+39
+00:02:30,680 --> 00:02:34,600
+Hindi bahagya. Doble. At wala itong kinalaman sa prutas.
+
+40
+00:02:34,860 --> 00:02:37,160
+Walang nagbibigay ng gantimpala sa sarili dahil kumain nang maayos.
+
+41
+00:02:37,240 --> 00:02:42,320
+Mas kakaiba pa ang mekanismo. Ang pagpili sa mabuting opsyon ay hindi lumikha ng pananabik sa
+
+42
+00:02:42,400 --> 00:02:44,980
+balanse. Lumikha ito ng kredensyal.
+
+43
+00:02:45,080 --> 00:02:49,580
+At bumulong ang kredensyal, halos hindi marinig, na libre ang susunod na pagpili.
+
+44
+00:02:49,660 --> 00:02:52,720
+Na may sobra ang kuwenta, at ang sobra ay puwedeng gastusin.
+
+45
+00:02:52,840 --> 00:02:55,920
+Hindi sinusubaybayan ng utak mo ang mga pagpili mo gaya ng inaakala mo.
+
+46
+00:02:56,040 --> 00:02:59,680
+Akala mo, bumubuo ka ng isang pare-parehong tao, isang desisyon sa bawat pagkakataon,
+
+47
+00:02:59,760 --> 00:03:05,520
+parang naglalatag ng mga ladrilyo sa isang pader. Pero ang sistema sa ilalim ay nagpapatakbo ng talaan, hindi pader.
+
+48
+00:03:05,600 --> 00:03:09,180
+At ang talaan ay isang ganap na ibang makina, dahil sa isang talaan,
+
+49
+00:03:09,260 --> 00:03:12,740
+ang deposito sa isang panig ay nagbibigay-pahintulot sa pagkuha sa kabilang panig.
+
+50
+00:03:13,040 --> 00:03:16,560
+Kaya pumupunta ka sa gym at saka kumakain ng malaking fries pauwi.
+
+51
+00:03:16,740 --> 00:03:19,420
+Nagpapagabi ka sa trabaho tuwing Lunes at nag-i-scroll ka buong Martes.
+
+52
+00:03:19,700 --> 00:03:24,140
+Nagbibigay ka sa kawanggawa at saka mo binabalewala ang taong talagang may kailangan sa iyo nang
+
+53
+00:03:24,220 --> 00:03:27,880
+personal. Sa bawat pagkakataon, ang unang gawa ay hindi bumubuo tungo sa kahit ano.
+
+54
+00:03:27,960 --> 00:03:32,520
+Bumibili ito ng isang bagay. At ang binibili nito ay ang pakiramdam na hindi bilang ang ikalawang gawa.
+
+55
+00:03:32,720 --> 00:03:35,980
+Parang kabiguan ba ng pagpipigil sa sarili ang alinman diyan? Hindi.
+
+56
+00:03:37,180 --> 00:03:40,380
+Gumagana ang sistema nang eksakto kung paano ito idinisenyo.
+
+57
+00:03:40,760 --> 00:03:44,840
+Ang tanong ay kung saan nanggaling ang disenyong iyon, at bakit ito nagkaroon ng saysay noon.
+
+58
+00:03:45,440 --> 00:03:49,700
+Bumalik tayo mga dalawang daang libong taon, sa isang pangkat ng halos isandaan at limampung tao na
+
+59
+00:03:49,780 --> 00:03:52,800
+nagsasalo sa isang kampo, sa mga nahuling hayop, sa apoy,
+
+60
+00:03:53,060 --> 00:03:57,520
+at sa isang permanente at pampublikong talaan ng bawat gawa ng sinuman sa kanila.
+
+61
+00:03:58,280 --> 00:04:01,120
+Sa mundong iyon, hindi ikaw ang sumusubaybay sa ugali mo.
+
+62
+00:04:01,440 --> 00:04:03,360
+Ang lahat ng iba pa ang sumusubaybay dito.
+
+63
+00:04:03,860 --> 00:04:09,100
+Gumugol ng mga dekada ang antropologong si Christopher Boehm sa pag-aaral kung paano pinamamahalaan ng maliliit na lipunan
+
+64
+00:04:09,180 --> 00:04:12,860
+ang katayuan at pagiging patas, at kapansin-pansing pare-pareho ang padron.
+
+65
+00:04:13,120 --> 00:04:16,200
+Binabantayan ang pagiging mapagbigay. Pinaparusahan ang pagiging kuripot.
+
+66
+00:04:16,640 --> 00:04:21,639
+Ang pagbabahagi ng malaking huli, ang pagbabantay, ang pagbuhat sa dala ng isang sugatan,
+
+67
+00:04:21,839 --> 00:04:25,980
+bawat isa sa mga gawang iyon ay nagkamit ng tunay at nakikitang kredito sa mata ng grupo.
+
+68
+00:04:26,300 --> 00:04:29,260
+At hindi simboliko ang kreditong iyon. Maaari itong ipagpalit.
+
+69
+00:04:29,460 --> 00:04:34,700
+Ang mangangasong palaging nagbahagi ng karne sa isang buong panahon ay puwedeng hindi sumama sa pangangaso nang hindi nawawalan ng katayuan.
+
+70
+00:04:34,960 --> 00:04:39,380
+Ang babaeng nagproseso ng mga balat ng hayop para sa iba sa buong tagtuyot ay puwedeng humingi ng tulong kapag
+
+71
+00:04:39,460 --> 00:04:42,120
+kailangan niya ito at matatanggap ito nang walang tawaran.
+
+72
+00:04:42,620 --> 00:04:47,300
+Tahasan ang sistema. Nakikita ng tatlumpu, limampu,
+
+73
+00:04:47,380 --> 00:04:50,600
+isandaang tao ang mga ambag mo, na naaalala ang mga ito, pinag-uusapan ang mga ito,
+
+74
+00:04:50,680 --> 00:04:52,880
+at inaayos kung ano ang utang nila sa iyo bilang kapalit.
+
+75
+00:04:53,600 --> 00:04:59,420
+Ang gantihang altruismo, ang terminong ibinigay ni Robert Trivers noong 1971, ay hindi isang pakiramdam.
+
+76
+00:04:59,680 --> 00:05:05,900
+Isa itong ekonomiya, at sa ekonomiyang iyon, ang deposito ay talagang nagbibigay sa iyo ng karapatan sa pagkuha.
+
+77
+00:05:06,100 --> 00:05:10,860
+Pero may hangganan ang pagkuha, at ang hangganan ay itinakda ng lahat ng nagmamasid.
+
+78
+00:05:11,180 --> 00:05:15,440
+Kumuha ka nang higit sa inaakala ng grupo na nararapat sa iyo, at ang kabayaran ay hindi pinansyal.
+
+79
+00:05:15,680 --> 00:05:22,520
+Panlipunan ito. Tsismis muna, saka pangungutya, saka ang dahan-dahang panlalamig na nauuwi sa pagpapatapon.
+
+80
+00:05:22,600 --> 00:05:25,220
+Ang kapalit ng labis na pagkuha ay hindi utang.
+
+81
+00:05:25,300 --> 00:05:27,960
+Kamatayan ito. Pansinin ang mahalagang detalye.
+
+82
+00:05:28,040 --> 00:05:31,500
+Panlabas ang talaan. Nakatira ito sa alaala ng pangkat,
+
+83
+00:05:31,600 --> 00:05:36,600
+hindi sa isip ng nag-aambag. Ibang tao ang nagpapasya kung kailan sapat na ang naipon mo para kumuha.
+
+84
+00:05:36,680 --> 00:05:39,520
+Ibang tao ang nagpapasya kung kailan sobra na ang kinuha mo.
+
+85
+00:05:39,720 --> 00:05:46,340
+Panlipunan, nakikita, at ipinapatupad ang balanse sa pamamagitan ng reputasyon, tsismis, at, sa sukdulan,
+
+86
+00:05:46,500 --> 00:05:52,820
+pagtataboy. Ngayon, ilipat mo ang buong sistemang iyon mula sa isang kampo ng isandaan at limampung kilalang mukha tungo sa isang lungsod
+
+87
+00:05:52,900 --> 00:05:55,740
+ng mga estranghero at isang kuwartong nakasara ang pinto.
+
+88
+00:05:55,920 --> 00:06:01,020
+Naglaho ang panlabas na talaan. Walang nanonood sa pag-gym mo tuwing Lunes at sa pag-i-scroll mo tuwing Martes
+
+89
+00:06:01,100 --> 00:06:06,980
+para ikumpara ang dalawa. Walang nagtutuos ng salad laban sa cake para magpasya kung
+
+90
+00:06:07,060 --> 00:06:13,220
+positibo ang kabuuan. Pero ang makinaryang umunlad para subaybayan ang kredito at pahintulutan ang paggastos ay hindi
+
+91
+00:06:13,300 --> 00:06:17,000
+naglaho kasama ng mga nanonood. Lumipat ito sa loob.
+
+92
+00:06:17,300 --> 00:06:23,500
+Naging panloob ito. At ang panloob na talaan ay may isang malalang depekto na hindi kailanman
+
+93
+00:06:23,580 --> 00:06:25,880
+taglay ng panlabas. Walang tagasuri.
+
+94
+00:06:26,060 --> 00:06:28,620
+Sa pangkat, kung sinubukan mong kumuha nang higit sa naipon mo,
+
+95
+00:06:28,700 --> 00:06:31,800
+apatnapung pares ng mata ang nagtatama sa iyo bago matapos ang araw.
+
+96
+00:06:31,920 --> 00:06:36,080
+Kusang nagtatama ang sistema dahil hindi ikaw ang may hawak ng talaan.
+
+97
+00:06:36,160 --> 00:06:40,720
+Sa makabagong buhay, ang taong nagdedeposito, ang taong nagpapahintulot ng pagkuha, at
+
+98
+00:06:40,800 --> 00:06:44,440
+ang taong gumagastos ng kinuha ay iisang tao lang.
+
+99
+00:06:44,520 --> 00:06:48,920
+At ang taong iyon ay nagpapatakbo ng pinakalumang programa sa isang problemang hindi ito ginawa para
+
+100
+00:06:49,000 --> 00:06:51,680
+harapin, at iyon ay ang patas na paghusga sa sarili mo.
+
+101
+00:06:52,140 --> 00:06:58,380
+Iyan ang hindi pagtutugma. Ang pakiramdam na ang mabuting pagpili ay nagbibigay sa iyo ng karapatan sa masama ay may katwiran.
+
+102
+00:06:58,680 --> 00:07:03,760
+Isa itong tapat na kopya ng sistemang gumana sa loob ng isandaang libong henerasyon.
+
+103
+00:07:04,140 --> 00:07:06,540
+Kulang lang ito sa bahaging nagpagana rito,
+
+104
+00:07:06,620 --> 00:07:10,060
+at iyon ay ang tribong nakatayo sa likod mo at nagsasabing hindi,
+
+105
+00:07:10,440 --> 00:07:14,180
+hindi iyan ang layunin ng kreditong iyon. Kaya ang gym ang bumibili ng fries.
+
+106
+00:07:14,300 --> 00:07:18,860
+Ang donasyon ang bumibili ng pag-iwas. Ang produktibong umaga ang bumibili ng nasayang na hapon.
+
+107
+00:07:18,940 --> 00:07:23,520
+At tuwing Enero, ang pangakong magpakabuti ay nagsisimula ng bagong talaan na agad nang
+
+108
+00:07:23,600 --> 00:07:26,920
+inuubos ang sarili, dahil hindi nagbago ang arkitektura.
+
+109
+00:07:27,140 --> 00:07:30,040
+Hindi binubuo ng unang mabuting araw ang ikalawang mabuting araw.
+
+110
+00:07:30,660 --> 00:07:34,660
+Binibili nito ang karapatang laktawan iyon. At narito ang bahaging pinakamasakit,
+
+111
+00:07:34,800 --> 00:07:38,360
+ang bahaging ipinapakita ng dobleng ratio nina Khan at Dhar.
+
+112
+00:07:38,740 --> 00:07:44,280
+Hindi mo man lang napapansin kapag gumagastos ka. Nangyayari ang paglilisensya sa ilalim ng malay na pagpapasya.
+
+113
+00:07:44,600 --> 00:07:49,080
+Hindi ka nakaupo sa drive-thru at nag-iisip, pinaghirapan ko ito sa pag-eehersisyo ko.
+
+114
+00:07:49,240 --> 00:07:54,460
+Nakaupo ka sa drive-thru at nararamdaman mo, nang misteryoso, na ayos lang ang malaki ngayon.
+
+115
+00:07:54,740 --> 00:07:57,940
+Na karapat-dapat ka rito. Na hindi bilang ang isang ito.
+
+116
+00:07:58,080 --> 00:08:04,200
+At nangyayari ito sa bawat antas. Ang diyeta na bumabagsak sa ikatlong linggo dahil napakaganda ng unang linggo.
+
+117
+00:08:04,280 --> 00:08:07,820
+Ang badyet na gumuguho pagkatapos ng iisang buwan ng disiplina.
+
+118
+00:08:07,900 --> 00:08:13,080
+Ang relasyong nag-iipon ka ng tatlong mabait na umaga at saka mo ginagastos sa isang matalas na gabi,
+
+119
+00:08:13,160 --> 00:08:16,280
+na para bang pera ang kabaitan at may naipon kang barya.
+
+120
+00:08:16,700 --> 00:08:19,460
+Pero bilang ito. Bawat pagkakataon.
+
+121
+00:08:19,540 --> 00:08:22,680
+Sinabi sa iyo ng talaan na libre ito, at nagsinungaling ang talaan,
+
+122
+00:08:22,920 --> 00:08:27,400
+dahil walang ibang nagtatago nito kundi ikaw. Kaya ang pagbabago ay hindi ang lalo pang pagsisikap.
+
+123
+00:08:28,100 --> 00:08:32,959
+Pinapakain ng lalong pagsisikap ang parehong makina, dahil ang mas matinding pagsisikap ay mas malaking deposito,
+
+124
+00:08:33,080 --> 00:08:36,040
+at ang mas malaking deposito ay nagpapahintulot ng mas malaking pagkuha.
+
+125
+00:08:36,740 --> 00:08:39,979
+Ang pagbabago ay ang makita na ang bawat pagpili ay sariling pangyayari.
+
+126
+00:08:40,460 --> 00:08:43,620
+Hiwalay. Sarado sa sandaling ginawa ito.
+
+127
+00:08:43,919 --> 00:08:47,920
+Hindi konektado sa naunang pagpili at hindi pinopondohan ang susunod.
+
+128
+00:08:48,340 --> 00:08:53,020
+Ang salad ay ginawa mo nang tanghali. Wala itong opinyon sa gagawin mo mamayang alas-nuwebe ng gabi.
+
+129
+00:08:53,200 --> 00:08:57,640
+Ang gym ay ginawa mo noong Lunes. Hindi ito bumoboto sa Martes.
+
+130
+00:08:57,780 --> 00:09:02,720
+Tunay na gawa ng pagiging mapagbigay ang donasyon, at isang bagay lang ang nabili nito,
+
+131
+00:09:02,800 --> 00:09:05,780
+anuman ang binili ng donasyon. Hindi isang libreng pase.
+
+132
+00:09:06,100 --> 00:09:08,760
+Hindi isang sobra. Hindi pahintulot.
+
+133
+00:09:09,140 --> 00:09:13,940
+Isang konkretong hakbang. Sa susunod na mahuli mo ang sarili mong nararamdamang ayos lang ang isang bagay ngayon,
+
+134
+00:09:14,240 --> 00:09:19,480
+na pinaghirapan mo ito, na hindi bilang ang isang ito, huminto ka at magtanong ng isang tanong.
+
+135
+00:09:20,080 --> 00:09:23,360
+Pipiliin ko pa rin ba ito kung hindi muna nangyari ang mabuting bagay?
+
+136
+00:09:23,840 --> 00:09:28,340
+Kung hindi ang sagot, ang hawak mo ay hindi isang desisyon.
+
+137
+00:09:28,480 --> 00:09:33,200
+Isa itong resibo. At ang pagbiling kinakatawan nito ay ginawa ng isang sistemang nawalan ng tagasuri
+
+138
+00:09:33,280 --> 00:09:37,620
+mga sampung libong taon na ang nakalipas at gumagastos nang walang bantay mula noon.
+
+139
+00:09:37,780 --> 00:09:41,160
+Umorder ka ng salad. Tapos umorder ka ng cake.
+
+140
+00:09:41,920 --> 00:09:45,820
+Hindi dahil mahina ka. Hindi dahil kulang ka sa disiplina.
+
+141
+00:09:46,000 --> 00:09:50,300
+Kundi dahil ang isang makinang dating may perpektong saysay sa kampong pinanonood ng lahat ay ngayon
+
+142
+00:09:50,380 --> 00:09:52,700
+tumatakbo sa isang kuwartong walang nanonood.
+
+143
+00:09:52,960 --> 00:09:56,340
+At ang tanging taong kailangan nitong kumbinsihin ay ikaw.
+
+144
+00:09:56,960 --> 00:09:59,860
+At narito ang tanong na sadyang iniwang bukas ng video na ito.
+
+145
+00:09:59,980 --> 00:10:05,620
+Ang isang taong inakala mong nabibili mo ang oo sa lahat ng mabuting asal na iyon, ang katrabaho,
+
+146
+00:10:05,700 --> 00:10:10,280
+ang kaibigan, ang estranghero, hindi nila kailanman sinusuri ang talaan mo.
+
+147
+00:10:10,360 --> 00:10:12,720
+Hindi man lang sila nagtatago ng isa.
+
+148
+00:10:13,160 --> 00:10:19,220
+Kung gayon, para kanino ka nagtatanghal? May video sa channel na ito na pinamagatang Bakit Mas Madalas Pumayag ang mga Tao
+
+149
+00:10:19,300 --> 00:10:22,640
+Kaysa sa Inaakala Mo. Sinasagot nito ang tanong na iyon,
+
+150
+00:10:22,720 --> 00:10:25,460
+at walang kinalaman ang sagot sa pagkakamit ng kahit ano.
+
+151
+00:10:25,740 --> 00:10:27,100
+Iyon ang panoorin mo susunod.

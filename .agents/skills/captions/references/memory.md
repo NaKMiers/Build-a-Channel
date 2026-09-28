@@ -319,6 +319,30 @@ each remaining language as a completion notification frees a slot. Total wall cl
 **The skill says "all in a single message"; with more than 20 languages that is now the first
 batch plus a drip.** Worth stating in `SKILL.md` so the refusal is not read as a failure.
 
+### 2026-09-28, project 16, first run just over the dangling-cut benchmark
+
+Run shape: 151 blocks, mean 3.9s, min 1.4s, max 6.8s, total 10:27, 14.4 blocks per minute.
+The printed "mid-sentence 31%" is the project 14 overstatement again; the real
+neither-sentence-nor-clause rate from `blocks.json` is **16%**, the first run to land above
+the under-15 benchmark. All 24 offenders were long clauses with no internal comma or period
+to rewind to ("...the best choice / happened to be a woman"), the unavoidable class from
+the project 12 entry, so the defaults stayed. Every translator carried the tail across the
+boundary cleanly. One point over the band on a talky script is not a reason to retune.
+
+`check` passed clean **on the first run with no `--allow`**, the first time since project
+12. Every researcher here is introduced mid-sentence ("In 2001, Benoit Monin", "The
+anthropologist Christopher Boehm", "the term Robert Trivers"), so the sentence-start blind
+spot from projects 13 and 15 never triggered. That confirms the diagnosis: the gap is about
+where a name sits, not about names in general.
+
+Telling each translator which figures the visual plan renders on screen (here the years
+2001, 2006, 1971) and naming the proper nouns up front cost one line per prompt. All 25
+files kept all three years.
+
+The 20-slot drip from project 15 worked as described: 20 launched in one message, the
+slowest scripts (Indic, Thai, Arabic, CJK) first, then French, Italian, Portuguese and
+Spanish as slots freed. About 7 minutes wall clock in total, gated by Punjabi at 6m13s.
+
 ## Future entries
 
 After a reported quality issue, append:

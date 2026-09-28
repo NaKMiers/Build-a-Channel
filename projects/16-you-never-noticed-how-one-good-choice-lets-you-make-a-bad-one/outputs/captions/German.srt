@@ -1,0 +1,603 @@
+1
+00:00:00,140 --> 00:00:03,460
+Du hast den Salat bestellt. Und dann hast du den Kuchen bestellt.
+
+2
+00:00:04,400 --> 00:00:07,820
+Nicht, weil du den Salat vergessen hast. Sondern weil du dich an ihn erinnert hast.
+
+3
+00:00:08,119 --> 00:00:11,840
+Das ist kein Witz über Willenskraft, und es ist auch kein Versagen der Disziplin.
+
+4
+00:00:12,380 --> 00:00:16,700
+Es ist eine lizenzierte Transaktion, und dein Gehirn wickelt solche schon dein ganzes Leben lang ab, ohne
+
+5
+00:00:16,780 --> 00:00:20,620
+es dir zu sagen. Psychologen nennen das moralische Lizenzierung.
+
+6
+00:00:20,840 --> 00:00:25,140
+Am Ende dieses Videos weißt du, warum jede gute Entscheidung, die du triffst, leise einer schlechten
+
+7
+00:00:25,220 --> 00:00:27,400
+die Tür öffnet, woher dieses Buchhaltungssystem kommt,
+
+8
+00:00:27,480 --> 00:00:31,300
+und warum das Kassenbuch, das es führt, dich seit dem Tag deiner Geburt belügt.
+
+9
+00:00:31,860 --> 00:00:33,940
+Fangen wir mit einer Studie an, die eigentlich nicht funktionieren dürfte.
+
+10
+00:00:34,300 --> 00:00:40,400
+Im Jahr 2001 führten Benoit Monin und Dale Miller in Princeton ein Experiment durch, das verkehrt herum klingt.
+
+11
+00:00:40,660 --> 00:00:42,980
+Sie gaben den Teilnehmern ein Einstellungsszenario.
+
+12
+00:00:43,580 --> 00:00:47,460
+In der ersten Runde sollten einige eine Reihe von Bewerbern beurteilen, bei denen die beste Wahl
+
+13
+00:00:47,540 --> 00:00:49,900
+zufällig eine Frau war. Sie wählten sie.
+
+14
+00:00:50,380 --> 00:00:52,660
+Eine naheliegende Entscheidung, nichts Heldenhaftes daran.
+
+15
+00:00:52,740 --> 00:00:55,880
+Aber in der zweiten Runde, als eine andere Stelle frei wurde,
+
+16
+00:00:56,040 --> 00:01:00,720
+neigten diejenigen, die gerade diese völlig vernünftige Wahl getroffen hatten, deutlich eher dazu,
+
+17
+00:01:00,800 --> 00:01:04,340
+einen Mann für eine Stelle zu bevorzugen, die als besser für Frauen geeignet beschrieben wurde.
+
+18
+00:01:04,739 --> 00:01:08,860
+Eine Gruppe, die die frühere Auswahl nicht getroffen hatte, zeigte diese Neigung nicht.
+
+19
+00:01:09,160 --> 00:01:12,740
+Lies das langsam, denn der Mechanismus ist nicht das, wonach er aussieht.
+
+20
+00:01:12,820 --> 00:01:15,000
+Die erste Gruppe wurde nicht voreingenommener.
+
+21
+00:01:15,080 --> 00:01:18,520
+Die Voreingenommenheit hatten sie schon. Was sich änderte, war die Erlaubnis.
+
+22
+00:01:18,600 --> 00:01:24,220
+Die Frau in Runde eins zu wählen, zahlte etwas auf ein inneres Konto ein, eine Art Gutschein, auf dem stand:
+
+23
+00:01:24,460 --> 00:01:28,080
+Ich bin fair, ich bin die Art Mensch, die das Richtige tut.
+
+24
+00:01:28,160 --> 00:01:31,040
+Und dieser Gutschein kaufte genau eine Sache.
+
+25
+00:01:31,120 --> 00:01:34,800
+Einen Freifahrtschein. Die nächste Entscheidung musste keine Fairness mehr beweisen,
+
+26
+00:01:34,880 --> 00:01:39,500
+denn Fairness war schon bewiesen, vor niemandem außer dem, der entschied.
+
+27
+00:01:39,940 --> 00:01:42,980
+Monin und Miller nannten das moralische Legitimierung.
+
+28
+00:01:43,080 --> 00:01:46,300
+Du verschaffst dir eine Legitimation, und dann gibst du sie aus.
+
+29
+00:01:46,600 --> 00:01:49,200
+Nicht für jemand anderen. Für dich selbst.
+
+30
+00:01:49,640 --> 00:01:53,820
+Wäre das ein einzelner Befund aus einem Einstellungslabor, könntest du ihn beiseitelegen.
+
+31
+00:01:54,020 --> 00:02:00,340
+Ist es aber nicht. Im Jahr 2006 führten Uzma Khan und Ravi Dhar in Yale eine sauberere Version durch.
+
+32
+00:02:00,600 --> 00:02:03,700
+Sie ließen Menschen zwischen zwei Produkten wählen.
+
+33
+00:02:04,020 --> 00:02:08,120
+Eine Gruppe wählte zuerst zwischen einer tugendhaften und einer genussvollen Option,
+
+34
+00:02:08,400 --> 00:02:12,520
+etwa einem Stück Obst oder einem Schokoriegel. Die andere Gruppe übersprang diesen Schritt.
+
+35
+00:02:12,600 --> 00:02:16,780
+Dann standen beide Gruppen vor einer zweiten, davon unabhängigen Wahl zwischen einem praktischen Gegenstand
+
+36
+00:02:17,040 --> 00:02:22,760
+und einem Luxusartikel. Die Gruppe, die in Runde eins gerade das Obst gewählt hatte, entschied sich in Runde zwei ungefähr doppelt so oft
+
+37
+00:02:22,840 --> 00:02:27,880
+für den Luxus. Bei denen, die nie die gesunde Wahl getroffen hatten, zeigte sich nicht
+
+38
+00:02:27,960 --> 00:02:30,280
+derselbe Ausschlag. Doppelt so oft.
+
+39
+00:02:30,680 --> 00:02:34,600
+Nicht ein bisschen. Verdoppelt. Und mit dem Obst hatte es nichts zu tun.
+
+40
+00:02:34,860 --> 00:02:37,160
+Niemand belohnte sich dafür, gesund gegessen zu haben.
+
+41
+00:02:37,240 --> 00:02:42,320
+Der Mechanismus ist seltsamer. Die tugendhafte Option zu wählen, erzeugte kein Verlangen nach
+
+42
+00:02:42,400 --> 00:02:44,980
+Ausgleich. Es erzeugte eine Legitimation.
+
+43
+00:02:45,080 --> 00:02:49,580
+Und die Legitimation flüsterte, fast unhörbar, dass die nächste Entscheidung umsonst sei.
+
+44
+00:02:49,660 --> 00:02:52,720
+Dass das Konto im Plus sei, und ein Plus kann man ausgeben.
+
+45
+00:02:52,840 --> 00:02:55,920
+Dein Gehirn verbucht deine Entscheidungen nicht so, wie du denkst.
+
+46
+00:02:56,040 --> 00:02:59,680
+Du glaubst, du baust einen beständigen Menschen auf, eine Entscheidung nach der anderen,
+
+47
+00:02:59,760 --> 00:03:05,520
+wie Ziegel, die man zu einer Mauer schichtet. Aber das System darunter führt ein Kassenbuch, keine Mauer.
+
+48
+00:03:05,600 --> 00:03:09,180
+Und ein Kassenbuch ist eine grundlegend andere Maschine, denn in einem Kassenbuch
+
+49
+00:03:09,260 --> 00:03:12,740
+erlaubt eine Einzahlung auf der einen Seite eine Abhebung auf der anderen.
+
+50
+00:03:13,040 --> 00:03:16,560
+Also gehst du ins Fitnessstudio und isst auf dem Heimweg die großen Pommes.
+
+51
+00:03:16,740 --> 00:03:19,420
+Du arbeitest am Montag lange und scrollst dich durch den Dienstag.
+
+52
+00:03:19,700 --> 00:03:24,140
+Du spendest an eine Hilfsorganisation und ignorierst dann den Menschen, der ganz direkt
+
+53
+00:03:24,220 --> 00:03:27,880
+etwas von dir braucht. Jedes Mal baut die erste Tat auf nichts hin.
+
+54
+00:03:27,960 --> 00:03:32,520
+Sie kauft etwas. Und was sie kauft, ist das Gefühl, dass die zweite Tat nicht zählt.
+
+55
+00:03:32,720 --> 00:03:35,980
+Klingt irgendetwas davon danach, dass die Willenskraft versagt? Tut sie nicht.
+
+56
+00:03:37,180 --> 00:03:40,380
+Das System funktioniert genau so, wie es gebaut wurde.
+
+57
+00:03:40,760 --> 00:03:44,840
+Die Frage ist, woher diese Bauweise kommt und warum sie jemals Sinn ergab.
+
+58
+00:03:45,440 --> 00:03:49,700
+Geh etwa zweihunderttausend Jahre zurück, zu einer Gruppe von ungefähr hundertfünfzig Menschen, die
+
+59
+00:03:49,780 --> 00:03:52,800
+ein Lager teilen, die Beute teilen, das Feuer teilen
+
+60
+00:03:53,060 --> 00:03:57,520
+und eine dauerhafte, öffentliche Aufzeichnung jeder Tat teilen, die einer von ihnen begeht.
+
+61
+00:03:58,280 --> 00:04:01,120
+In dieser Welt wurde dein Verhalten nicht von dir verbucht.
+
+62
+00:04:01,440 --> 00:04:03,360
+Es wurde von allen anderen verbucht.
+
+63
+00:04:03,860 --> 00:04:09,100
+Der Anthropologe Christopher Boehm hat jahrzehntelang untersucht, wie kleine Gesellschaften
+
+64
+00:04:09,180 --> 00:04:12,860
+Status und Fairness regeln, und das Muster ist bemerkenswert einheitlich.
+
+65
+00:04:13,120 --> 00:04:16,200
+Großzügigkeit wurde beobachtet. Geiz wurde bestraft.
+
+66
+00:04:16,640 --> 00:04:21,639
+Eine große Beute teilen, Wache stehen, die Last eines Verletzten tragen,
+
+67
+00:04:21,839 --> 00:04:25,980
+jede dieser Taten brachte echtes, sichtbares Guthaben in den Augen der Gruppe.
+
+68
+00:04:26,300 --> 00:04:29,260
+Und dieses Guthaben war nicht symbolisch. Es war einlösbar.
+
+69
+00:04:29,460 --> 00:04:34,700
+Ein Jäger, der eine Saison lang verlässlich Fleisch geteilt hatte, konnte eine Jagd auslassen, ohne an Ansehen zu verlieren.
+
+70
+00:04:34,960 --> 00:04:39,380
+Eine Frau, die in den trockenen Monaten für andere Häute verarbeitet hatte, konnte um Hilfe bitten, wenn sie
+
+71
+00:04:39,460 --> 00:04:42,120
+sie brauchte, und bekam sie ohne Verhandlung.
+
+72
+00:04:42,620 --> 00:04:47,300
+Das System war ausdrücklich. Deine Beiträge wurden von dreißig, fünfzig,
+
+73
+00:04:47,380 --> 00:04:50,600
+hundert Menschen gesehen, die sich daran erinnerten, darüber redeten
+
+74
+00:04:50,680 --> 00:04:52,880
+und anpassten, was sie dir im Gegenzug schuldeten.
+
+75
+00:04:53,600 --> 00:04:59,420
+Reziproker Altruismus, wie Robert Trivers es 1971 nannte, war kein Gefühl.
+
+76
+00:04:59,680 --> 00:05:05,900
+Es war eine Wirtschaft, und in dieser Wirtschaft berechtigte eine Einzahlung tatsächlich zu einer Abhebung.
+
+77
+00:05:06,100 --> 00:05:10,860
+Aber die Abhebung hatte eine Obergrenze, und diese Grenze legten alle fest, die zugesehen hatten.
+
+78
+00:05:11,180 --> 00:05:15,440
+Nahmst du mehr, als du nach Ansicht der Gruppe verdient hattest, war die Rückzahlung nicht finanziell.
+
+79
+00:05:15,680 --> 00:05:22,520
+Sie war sozial. Erst Tratsch, dann Spott, dann die langsame Kälte, die im Ausschluss endete.
+
+80
+00:05:22,600 --> 00:05:25,220
+Der Preis für zu viel Abheben waren keine Schulden.
+
+81
+00:05:25,300 --> 00:05:27,960
+Es war der Tod. Achte auf das entscheidende Detail.
+
+82
+00:05:28,040 --> 00:05:31,500
+Das Kassenbuch war extern. Es lebte im Gedächtnis der Gruppe,
+
+83
+00:05:31,600 --> 00:05:36,600
+nicht im Kopf dessen, der beitrug. Andere entschieden, wann du genug verdient hattest, um zu nehmen.
+
+84
+00:05:36,680 --> 00:05:39,520
+Andere entschieden, wann du zu viel genommen hattest.
+
+85
+00:05:39,720 --> 00:05:46,340
+Die Bilanz war sozial, sichtbar und wurde durchgesetzt durch Ruf, Tratsch und im Extremfall
+
+86
+00:05:46,500 --> 00:05:52,820
+Ausschluss. Jetzt verlege dieses ganze System von einem Lager mit hundertfünfzig bekannten Gesichtern in eine Stadt
+
+87
+00:05:52,900 --> 00:05:55,740
+voller Fremder und ein Schlafzimmer mit geschlossener Tür.
+
+88
+00:05:55,920 --> 00:06:01,020
+Das externe Kassenbuch verschwand. Niemand sieht dein Training am Montag und dein Scrollen
+
+89
+00:06:01,100 --> 00:06:06,980
+am Dienstag und vergleicht beides. Niemand rechnet den Salat gegen den Kuchen auf und entscheidet, ob
+
+90
+00:06:07,060 --> 00:06:13,220
+die Bilanz positiv ist. Aber die Maschinerie, die entstand, um Guthaben zu verbuchen und Ausgaben zu genehmigen, verschwand
+
+91
+00:06:13,300 --> 00:06:17,000
+nicht mit dem Publikum. Sie zog nach innen.
+
+92
+00:06:17,300 --> 00:06:23,500
+Sie wurde innerlich. Und ein inneres Kassenbuch hat einen katastrophalen Fehler, den ein externes nie
+
+93
+00:06:23,580 --> 00:06:25,880
+hatte. Es gibt keinen Prüfer.
+
+94
+00:06:26,060 --> 00:06:28,620
+Wenn du in der Gruppe versucht hast, mehr zu nehmen, als du verdient hattest,
+
+95
+00:06:28,700 --> 00:06:31,800
+haben dich vierzig Augenpaare korrigiert, bevor der Tag zu Ende war.
+
+96
+00:06:31,920 --> 00:06:36,080
+Das System korrigierte sich selbst, weil die Leute, die die Bücher führten, nicht du waren.
+
+97
+00:06:36,160 --> 00:06:40,720
+In einem modernen Leben sind die Person, die einzahlt, die Person, die die Abhebung genehmigt, und
+
+98
+00:06:40,800 --> 00:06:44,440
+die Person, die das Abgehobene ausgibt, ein und dieselbe Person.
+
+99
+00:06:44,520 --> 00:06:48,920
+Und diese Person nutzt die älteste Software überhaupt für ein Problem, für das sie nie gebaut
+
+100
+00:06:49,000 --> 00:06:51,680
+wurde, nämlich dich selbst fair zu beurteilen.
+
+101
+00:06:52,140 --> 00:06:58,380
+Das ist die Diskrepanz. Das Gefühl, dass eine gute Entscheidung dir eine schlechte einbringt, ist nicht irrational.
+
+102
+00:06:58,680 --> 00:07:03,760
+Es ist eine getreue Nachbildung eines Systems, das hunderttausend Generationen lang funktioniert hat.
+
+103
+00:07:04,140 --> 00:07:06,540
+Ihm fehlt nur der Teil, der es funktionieren ließ,
+
+104
+00:07:06,620 --> 00:07:10,060
+nämlich der Stamm, der hinter dir stand und sagte: Nein,
+
+105
+00:07:10,440 --> 00:07:14,180
+dafür war dieses Guthaben nicht gedacht. Also kauft das Fitnessstudio die Pommes.
+
+106
+00:07:14,300 --> 00:07:18,860
+Die Spende kauft das Wegschauen. Der produktive Morgen kauft den verschwendeten Nachmittag.
+
+107
+00:07:18,940 --> 00:07:23,520
+Und jeden Januar eröffnet der Vorsatz, es besser zu machen, ein neues Kassenbuch, das sofort anfängt,
+
+108
+00:07:23,600 --> 00:07:26,920
+sich selbst aufzubrauchen, weil sich die Architektur nicht geändert hat.
+
+109
+00:07:27,140 --> 00:07:30,040
+Der erste gute Tag baut nicht den zweiten guten Tag auf.
+
+110
+00:07:30,660 --> 00:07:34,660
+Er kauft das Recht, ihn auszulassen. Und jetzt kommt der Teil, der am tiefsten trifft,
+
+111
+00:07:34,800 --> 00:07:38,360
+der Teil, den die Verdopplung bei Khan und Dhar sichtbar macht.
+
+112
+00:07:38,740 --> 00:07:44,280
+Du merkst nicht einmal, wann du ausgibst. Die Lizenzierung passiert unterhalb bewusster Entscheidungen.
+
+113
+00:07:44,600 --> 00:07:49,080
+Du sitzt nicht im Drive-in und denkst: Das habe ich mir mit meinem Training verdient.
+
+114
+00:07:49,240 --> 00:07:54,460
+Du sitzt im Drive-in und hast, rätselhafterweise, das Gefühl, dass die große Portion heute okay ist.
+
+115
+00:07:54,740 --> 00:07:57,940
+Dass du sie verdienst. Dass diese hier nicht zählt.
+
+116
+00:07:58,080 --> 00:08:04,200
+Und es passiert in jeder Größenordnung. Die Diät, die in Woche drei scheitert, weil Woche eins so gut lief.
+
+117
+00:08:04,280 --> 00:08:07,820
+Das Budget, das nach einem einzigen Monat Disziplin zusammenbricht.
+
+118
+00:08:07,900 --> 00:08:13,080
+Die Beziehung, in der du drei liebevolle Morgen ansparst und sie dann an einem bissigen Abend ausgibst,
+
+119
+00:08:13,160 --> 00:08:16,280
+als wäre Freundlichkeit eine Währung und du hättest Kleingeld angesammelt.
+
+120
+00:08:16,700 --> 00:08:19,460
+Aber es zählt. Jedes Mal.
+
+121
+00:08:19,540 --> 00:08:22,680
+Das Kassenbuch hat dir gesagt, es sei umsonst, und das Kassenbuch hat gelogen,
+
+122
+00:08:22,920 --> 00:08:27,400
+weil niemand es führt außer dir. Die Lösung ist also nicht, dich mehr anzustrengen.
+
+123
+00:08:28,100 --> 00:08:32,959
+Mehr Anstrengung füttert dieselbe Maschine, denn mehr Anstrengung ist eine größere Einzahlung,
+
+124
+00:08:33,080 --> 00:08:36,040
+und eine größere Einzahlung erlaubt eine größere Abhebung.
+
+125
+00:08:36,740 --> 00:08:39,979
+Die Lösung ist, zu sehen, dass jede Entscheidung ein eigenes Ereignis ist.
+
+126
+00:08:40,460 --> 00:08:43,620
+Getrennt. Abgeschlossen in dem Moment, in dem sie getroffen wird.
+
+127
+00:08:43,919 --> 00:08:47,920
+Nicht mit der Entscheidung davor verbunden und keine Geldquelle für die Entscheidung danach.
+
+128
+00:08:48,340 --> 00:08:53,020
+Der Salat war etwas, das du mittags getan hast. Er hat keine Meinung dazu, was du heute Abend um neun tust.
+
+129
+00:08:53,200 --> 00:08:57,640
+Das Fitnessstudio war etwas, das du am Montag getan hast. Es stimmt nicht über den Dienstag ab.
+
+130
+00:08:57,780 --> 00:09:02,720
+Die Spende war ein echter Akt der Großzügigkeit, und sie hat genau eine Sache gekauft,
+
+131
+00:09:02,800 --> 00:09:05,780
+nämlich das, wofür gespendet wurde. Keinen Freifahrtschein.
+
+132
+00:09:06,100 --> 00:09:08,760
+Kein Plus. Keine Erlaubnis.
+
+133
+00:09:09,140 --> 00:09:13,940
+Ein konkreter Schritt. Wenn du das nächste Mal merkst, dass du das Gefühl hast, etwas sei heute okay,
+
+134
+00:09:14,240 --> 00:09:19,480
+dass du es dir verdient hast, dass das hier nicht zählt, halte inne und stell dir eine Frage.
+
+135
+00:09:20,080 --> 00:09:23,360
+Würde ich mich immer noch dafür entscheiden, wenn das Gute nicht vorher passiert wäre?
+
+136
+00:09:23,840 --> 00:09:28,340
+Wenn die Antwort Nein ist, dann hältst du keine Entscheidung in der Hand.
+
+137
+00:09:28,480 --> 00:09:33,200
+Du hältst eine Quittung. Und der Kauf, für den sie steht, wurde von einem System getätigt, das seinen Prüfer
+
+138
+00:09:33,280 --> 00:09:37,620
+vor etwa zehntausend Jahren verloren hat und seitdem unbeaufsichtigt ausgibt.
+
+139
+00:09:37,780 --> 00:09:41,160
+Du hast den Salat bestellt. Und dann hast du den Kuchen bestellt.
+
+140
+00:09:41,920 --> 00:09:45,820
+Nicht, weil du schwach bist. Nicht, weil dir Disziplin fehlt.
+
+141
+00:09:46,000 --> 00:09:50,300
+Sondern weil eine Maschine, die in einem Lager, in dem alle zusahen, absolut Sinn ergab, jetzt
+
+142
+00:09:50,380 --> 00:09:52,700
+in einem Raum läuft, in dem niemand zusieht.
+
+143
+00:09:52,960 --> 00:09:56,340
+Und die einzige Person, die sie überzeugen muss, bist du.
+
+144
+00:09:56,960 --> 00:09:59,860
+Und hier ist die Frage, die dieses Video bewusst offengelassen hat.
+
+145
+00:09:59,980 --> 00:10:05,620
+Die eine Person, deren Ja du dir mit all dem guten Verhalten erkaufen wolltest, der Kollege,
+
+146
+00:10:05,700 --> 00:10:10,280
+die Freundin, der Fremde, sie haben nie dein Kassenbuch geprüft.
+
+147
+00:10:10,360 --> 00:10:12,720
+Sie haben nicht einmal selbst eins geführt.
+
+148
+00:10:13,160 --> 00:10:19,220
+Für wen hast du also eine Show abgezogen? Es gibt auf diesem Kanal ein Video namens Warum Menschen viel öfter
+
+149
+00:10:19,300 --> 00:10:22,640
+Ja sagen, als du denkst. Es beantwortet genau diese Frage,
+
+150
+00:10:22,720 --> 00:10:25,460
+und die Antwort hat nichts damit zu tun, sich irgendetwas zu verdienen.
+
+151
+00:10:25,740 --> 00:10:27,100
+Schau dir das als Nächstes an.

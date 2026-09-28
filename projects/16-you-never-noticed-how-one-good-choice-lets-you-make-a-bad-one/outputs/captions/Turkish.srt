@@ -1,0 +1,603 @@
+1
+00:00:00,140 --> 00:00:03,460
+Salatayı sipariş ettin. Sonra da pastayı sipariş ettin.
+
+2
+00:00:04,400 --> 00:00:07,820
+Salatayı unuttuğun için değil. Onu hatırladığın için.
+
+3
+00:00:08,119 --> 00:00:11,840
+Bu, irade gücüyle ilgili bir şaka değil, disiplin eksikliği de değil.
+
+4
+00:00:12,380 --> 00:00:16,700
+Bu lisanslı bir işlem ve beynin hayatın boyunca bunları yürütüyor, sana
+
+5
+00:00:16,780 --> 00:00:20,620
+hiç söylemeden. Psikologlar buna ahlaki lisanslama diyor.
+
+6
+00:00:20,840 --> 00:00:25,140
+Bunun sonunda, yaptığın her iyi seçimin neden sessizce kötü bir seçime
+
+7
+00:00:25,220 --> 00:00:27,400
+kapı araladığını, bu muhasebe sisteminin nereden geldiğini
+
+8
+00:00:27,480 --> 00:00:31,300
+ve tuttuğu defterin doğduğun günden beri sana neden yalan söylediğini bileceksin.
+
+9
+00:00:31,860 --> 00:00:33,940
+İşe yaramaması gereken bir çalışmayla başlayalım.
+
+10
+00:00:34,300 --> 00:00:40,400
+2001'de Princeton'da Benoit Monin ve Dale Miller, tersine işliyor gibi görünen bir deney yaptı.
+
+11
+00:00:40,660 --> 00:00:42,980
+Katılımcılara bir işe alım senaryosu verdiler.
+
+12
+00:00:43,580 --> 00:00:47,460
+İlk turda bazılarından, en iyi seçeneğin tesadüfen
+
+13
+00:00:47,540 --> 00:00:49,900
+bir kadın olduğu bir aday grubunu değerlendirmeleri istendi. Onu seçtiler.
+
+14
+00:00:50,380 --> 00:00:52,660
+Apaçık bir karar, kahramanca hiçbir yanı yok.
+
+15
+00:00:52,740 --> 00:00:55,880
+Ama ikinci turda, başka bir iş açıldığında,
+
+16
+00:00:56,040 --> 00:01:00,720
+az önce o gayet makul seçimi yapanların, kadınlara daha uygun diye tanımlanan bir rol için
+
+17
+00:01:00,800 --> 00:01:04,340
+bir erkeği kayırma olasılığı belirgin şekilde daha yüksekti.
+
+18
+00:01:04,739 --> 00:01:08,860
+Önceki seçimi yapmamış bir grup aynı eğilimi göstermedi.
+
+19
+00:01:09,160 --> 00:01:12,740
+Bunu yavaşça oku, çünkü mekanizma göründüğü gibi değil.
+
+20
+00:01:12,820 --> 00:01:15,000
+İlk grup daha önyargılı hale gelmedi.
+
+21
+00:01:15,080 --> 00:01:18,520
+Önyargı zaten onlarda vardı. Değişen şey izindi.
+
+22
+00:01:18,600 --> 00:01:24,220
+İlk turda kadını seçmek içsel bir hesaba bir şey yatırdı, şunu söyleyen bir jeton:
+
+23
+00:01:24,460 --> 00:01:28,080
+Ben adilim, doğru olanı yapan türden biriyim.
+
+24
+00:01:28,160 --> 00:01:31,040
+Ve o jeton tam olarak tek bir şey satın aldı.
+
+25
+00:01:31,120 --> 00:01:34,800
+Bir geçiş izni. Sonraki kararın artık adaleti kanıtlaması gerekmiyordu,
+
+26
+00:01:34,880 --> 00:01:39,500
+çünkü adalet zaten gösterilmişti, karar verenin kendisinden başka kimseye değil.
+
+27
+00:01:39,940 --> 00:01:42,980
+Monin ve Miller buna ahlaki referans kazanma dedi.
+
+28
+00:01:43,080 --> 00:01:46,300
+Bir referans edinirsin, sonra onu harcarsın.
+
+29
+00:01:46,600 --> 00:01:49,200
+Başkası için değil. Kendin için.
+
+30
+00:01:49,640 --> 00:01:53,820
+Bu, bir işe alım laboratuvarındaki tek başına bir bulgu olsaydı, onu bir kenara bırakabilirdin.
+
+31
+00:01:54,020 --> 00:02:00,340
+Öyle değil. 2006'da Yale'de Uzma Khan ve Ravi Dhar daha temiz bir versiyonunu yaptı.
+
+32
+00:02:00,600 --> 00:02:03,700
+İnsanlara iki ürün arasında bir seçim sundular.
+
+33
+00:02:04,020 --> 00:02:08,120
+Bir grup önce erdemli bir seçenekle keyif veren bir seçenek arasında seçim yaptı,
+
+34
+00:02:08,400 --> 00:02:12,520
+mesela bir meyve ile bir çikolata arasında. Diğer grup bu adımı atladı.
+
+35
+00:02:12,600 --> 00:02:16,780
+Sonra iki grup da ikinci, ilgisiz bir seçimle karşılaştı: pratik bir ürün
+
+36
+00:02:17,040 --> 00:02:22,760
+ile bir lüks arasında. İlk turda meyveyi seçen grup, kabaca iki kat daha büyük olasılıkla
+
+37
+00:02:22,840 --> 00:02:27,880
+ikinci turda lüksü seçti. Sağlıklı seçimi hiç yapmayanlarda aynı
+
+38
+00:02:27,960 --> 00:02:30,280
+sıçrama görülmedi. İki kat.
+
+39
+00:02:30,680 --> 00:02:34,600
+Biraz değil. İki katına çıktı. Ve meyveyle hiçbir ilgisi yoktu.
+
+40
+00:02:34,860 --> 00:02:37,160
+Kimse iyi beslendiği için kendini ödüllendirmiyordu.
+
+41
+00:02:37,240 --> 00:02:42,320
+Mekanizma bundan daha tuhaf. Erdemli seçeneği seçmek bir denge
+
+42
+00:02:42,400 --> 00:02:44,980
+arzusu yaratmadı. Bir referans yarattı.
+
+43
+00:02:45,080 --> 00:02:49,580
+Ve o referans, neredeyse duyulmayacak kadar alçak sesle, sonraki seçimin bedava olduğunu fısıldadı.
+
+44
+00:02:49,660 --> 00:02:52,720
+Hesapta fazla olduğunu ve fazlanın harcanabileceğini.
+
+45
+00:02:52,840 --> 00:02:55,920
+Beynin seçimlerini sandığın gibi takip etmiyor.
+
+46
+00:02:56,040 --> 00:02:59,680
+Tutarlı bir insan inşa ettiğine inanıyorsun, her seferinde bir kararla,
+
+47
+00:02:59,760 --> 00:03:05,520
+bir duvara tuğla dizer gibi. Ama altta çalışan sistem bir duvar değil, bir defter tutuyor.
+
+48
+00:03:05,600 --> 00:03:09,180
+Ve defter temelden farklı bir makinedir, çünkü bir defterde
+
+49
+00:03:09,260 --> 00:03:12,740
+bir taraftaki yatırım, diğer taraftaki bir çekime izin verir.
+
+50
+00:03:13,040 --> 00:03:16,560
+Yani spor salonuna gidiyorsun, sonra eve dönerken büyük boy patates kızartması yiyorsun.
+
+51
+00:03:16,740 --> 00:03:19,420
+Pazartesi geç saate kadar çalışıyorsun, salıyı telefonda kaydırarak geçiriyorsun.
+
+52
+00:03:19,700 --> 00:03:24,140
+Hayır kurumuna bağış yapıyorsun, sonra senden gerçekten bir şeye ihtiyacı olan kişiyi
+
+53
+00:03:24,220 --> 00:03:27,880
+yüz yüzeyken görmezden geliyorsun. Her seferinde ilk eylem hiçbir şey inşa etmiyor.
+
+54
+00:03:27,960 --> 00:03:32,520
+Bir şey satın alıyor. Satın aldığı şey de ikinci eylemin sayılmadığı hissi.
+
+55
+00:03:32,720 --> 00:03:35,980
+Bunlardan herhangi biri irade gücünün çöküşü gibi mi geliyor? Değil.
+
+56
+00:03:37,180 --> 00:03:40,380
+Sistem tam olarak tasarlandığı gibi çalışıyor.
+
+57
+00:03:40,760 --> 00:03:44,840
+Soru şu: bu tasarım nereden geldi ve neden bir zamanlar mantıklıydı?
+
+58
+00:03:45,440 --> 00:03:49,700
+Yaklaşık iki yüz bin yıl geriye git. Kabaca yüz elli kişilik bir topluluk düşün;
+
+59
+00:03:49,780 --> 00:03:52,800
+bir kampı, avları, ateşi paylaşıyorlar
+
+60
+00:03:53,060 --> 00:03:57,520
+ve her birinin yaptığı her eylemin kalıcı, herkese açık tek bir kaydını paylaşıyorlar.
+
+61
+00:03:58,280 --> 00:04:01,120
+O dünyada davranışlarını sen takip etmiyordun.
+
+62
+00:04:01,440 --> 00:04:03,360
+Herkes takip ediyordu.
+
+63
+00:04:03,860 --> 00:04:09,100
+Antropolog Christopher Boehm onlarca yıl boyunca küçük ölçekli toplulukların
+
+64
+00:04:09,180 --> 00:04:12,860
+statüyü ve adaleti nasıl yönettiğini inceledi ve örüntü şaşırtıcı derecede tutarlı.
+
+65
+00:04:13,120 --> 00:04:16,200
+Cömertlik izlenirdi. Cimrilik cezalandırılırdı.
+
+66
+00:04:16,640 --> 00:04:21,639
+Büyük bir avı paylaşmak, nöbet tutmak, yaralı birinin yükünü taşımak,
+
+67
+00:04:21,839 --> 00:04:25,980
+bunların her biri grubun gözünde gerçek, görünür bir kredi kazandırırdı.
+
+68
+00:04:26,300 --> 00:04:29,260
+Ve o kredi sembolik değildi. Harcanabilirdi.
+
+69
+00:04:29,460 --> 00:04:34,700
+Bir sezon boyunca düzenli olarak et paylaşmış bir avcı, itibarını kaybetmeden bir avı pas geçebilirdi.
+
+70
+00:04:34,960 --> 00:04:39,380
+Kurak aylar boyunca başkaları için deri işlemiş bir kadın, ihtiyacı olduğunda yardım
+
+71
+00:04:39,460 --> 00:04:42,120
+isteyebilir ve pazarlığa gerek kalmadan alabilirdi.
+
+72
+00:04:42,620 --> 00:04:47,300
+Sistem açıktı. Katkılarını otuz, elli,
+
+73
+00:04:47,380 --> 00:04:50,600
+yüz kişi görürdü; bunları hatırlar, konuşur
+
+74
+00:04:50,680 --> 00:04:52,880
+ve karşılığında sana ne borçlu olduklarını buna göre ayarlarlardı.
+
+75
+00:04:53,600 --> 00:04:59,420
+Robert Trivers'ın 1971'de verdiği adla karşılıklı özgecilik bir duygu değildi.
+
+76
+00:04:59,680 --> 00:05:05,900
+Bir ekonomiydi ve o ekonomide bir yatırım gerçekten de sana bir çekim hakkı verirdi.
+
+77
+00:05:06,100 --> 00:05:10,860
+Ama çekimin bir tavanı vardı ve o tavanı izleyen herkes birlikte belirlerdi.
+
+78
+00:05:11,180 --> 00:05:15,440
+Grubun hak ettiğine karar verdiğinden fazlasını alırsan, bedeli parayla ödenmezdi.
+
+79
+00:05:15,680 --> 00:05:22,520
+Toplumsaldı. Önce dedikodu, sonra alay, sonra sürgünle biten yavaş bir soğukluk.
+
+80
+00:05:22,600 --> 00:05:25,220
+Fazla çekmenin bedeli borç değildi.
+
+81
+00:05:25,300 --> 00:05:27,960
+Ölümdü. Kritik ayrıntıya dikkat et.
+
+82
+00:05:28,040 --> 00:05:31,500
+Defter dışarıdaydı. Topluluğun hafızasında yaşıyordu,
+
+83
+00:05:31,600 --> 00:05:36,600
+katkıyı yapanın kafasında değil. Almaya yetecek kadar kazandığına başkaları karar verirdi.
+
+84
+00:05:36,680 --> 00:05:39,520
+Çok fazla aldığına da başkaları karar verirdi.
+
+85
+00:05:39,720 --> 00:05:46,340
+Bakiye toplumsaldı, görünürdü ve itibarla, dedikoduyla, en uçta da
+
+86
+00:05:46,500 --> 00:05:52,820
+dışlanmayla korunurdu. Şimdi tüm bu sistemi yüz elli tanıdık yüzlü bir kamptan alıp yabancılarla dolu bir şehre
+
+87
+00:05:52,900 --> 00:05:55,740
+ve kapısı kapalı bir yatak odasına taşı.
+
+88
+00:05:55,920 --> 00:06:01,020
+Dışsal defter ortadan kalktı. Kimse pazartesi spor salonuna gidişini ve salı günkü
+
+89
+00:06:01,100 --> 00:06:06,980
+kaydırmanı izleyip ikisini karşılaştırmıyor. Kimse salatayı pastayla tartıp net sonucun
+
+90
+00:06:07,060 --> 00:06:13,220
+artıda olup olmadığına hükmetmiyor. Ama krediyi takip etmek ve harcamaya izin vermek için evrilen mekanizma
+
+91
+00:06:13,300 --> 00:06:17,000
+seyirciyle birlikte yok olmadı. İçeri taşındı.
+
+92
+00:06:17,300 --> 00:06:23,500
+İçselleşti. Ve içsel bir defterin, dışsal bir defterde hiç olmayan
+
+93
+00:06:23,580 --> 00:06:25,880
+felaket bir kusuru var. Denetçi yok.
+
+94
+00:06:26,060 --> 00:06:28,620
+Toplulukta, hak ettiğinden fazlasını almaya kalksaydın,
+
+95
+00:06:28,700 --> 00:06:31,800
+kırk çift göz seni gün bitmeden düzeltirdi.
+
+96
+00:06:31,920 --> 00:06:36,080
+Sistem kendini düzeltiyordu, çünkü hesapları tutanlar sen değildin.
+
+97
+00:06:36,160 --> 00:06:40,720
+Modern bir hayatta yatırımı yapan kişi, çekime izin veren kişi ve
+
+98
+00:06:40,800 --> 00:06:44,440
+çekilen parayı harcayan kişi, hepsi aynı kişi.
+
+99
+00:06:44,520 --> 00:06:48,920
+Ve o kişi, mümkün olan en eski yazılımı, hiç başa çıkmak için yapılmadığı
+
+100
+00:06:49,000 --> 00:06:51,680
+bir sorunda çalıştırıyor: kendini adilce yargılamak.
+
+101
+00:06:52,140 --> 00:06:58,380
+Uyumsuzluk bu. İyi bir seçimin sana kötü bir seçim kazandırdığı hissi mantıksız değil.
+
+102
+00:06:58,680 --> 00:07:03,760
+Yüz bin nesil boyunca işe yaramış bir sistemin sadık bir kopyası.
+
+103
+00:07:04,140 --> 00:07:06,540
+Sadece onu işe yarar kılan parça eksik,
+
+104
+00:07:06,620 --> 00:07:10,060
+yani omzunun arkasında durup "hayır,
+
+105
+00:07:10,440 --> 00:07:14,180
+o kredi bunun için değildi" diyen kabile. Yani spor salonu patates kızartmasını satın alıyor.
+
+106
+00:07:14,300 --> 00:07:18,860
+Bağış, görmezden gelmeyi satın alıyor. Verimli sabah, boşa geçen öğleden sonrayı satın alıyor.
+
+107
+00:07:18,940 --> 00:07:23,520
+Ve her ocakta, daha iyisini yapma kararı yeni bir defter açıyor ve o defter hemen
+
+108
+00:07:23,600 --> 00:07:26,920
+kendini tüketmeye başlıyor, çünkü mimari değişmedi.
+
+109
+00:07:27,140 --> 00:07:30,040
+İlk iyi gün ikinci iyi günü inşa etmiyor.
+
+110
+00:07:30,660 --> 00:07:34,660
+Onu atlama hakkını satın alıyor. Ve işte en derinden yaralayan kısım,
+
+111
+00:07:34,800 --> 00:07:38,360
+Khan ve Dhar'ın iki kat oranının görünür kıldığı kısım.
+
+112
+00:07:38,740 --> 00:07:44,280
+Harcadığını fark etmiyorsun bile. Lisanslama bilinçli kararın altında gerçekleşiyor.
+
+113
+00:07:44,600 --> 00:07:49,080
+Arabalı serviste oturup "Bunu antrenmanımla hak ettim" diye düşünmüyorsun.
+
+114
+00:07:49,240 --> 00:07:54,460
+Arabalı serviste oturup, gizemli bir şekilde, bugün büyük boyun sorun olmadığını hissediyorsun.
+
+115
+00:07:54,740 --> 00:07:57,940
+Bunu hak ettiğini. Bunun sayılmadığını.
+
+116
+00:07:58,080 --> 00:08:04,200
+Ve bu her ölçekte olur. Birinci hafta çok iyi geçtiği için üçüncü haftada çöken diyet.
+
+117
+00:08:04,280 --> 00:08:07,820
+Tek bir aylık disiplinden sonra çöken bütçe.
+
+118
+00:08:07,900 --> 00:08:13,080
+Üç nazik sabahı biriktirip sonra hepsini tek bir sert akşamda harcadığın ilişki,
+
+119
+00:08:13,160 --> 00:08:16,280
+sanki nezaket bir para birimiymiş ve sen bozukluk biriktirmişsin gibi.
+
+120
+00:08:16,700 --> 00:08:19,460
+Ama sayılır. Her seferinde.
+
+121
+00:08:19,540 --> 00:08:22,680
+Defter sana bunun bedava olduğunu söyledi ve defter yalan söyledi,
+
+122
+00:08:22,920 --> 00:08:27,400
+çünkü onu senden başka kimse tutmuyor. Yani değişim daha çok çabalamak değil.
+
+123
+00:08:28,100 --> 00:08:32,959
+Daha çok çabalamak aynı makineyi besler, çünkü daha büyük bir çaba daha büyük bir yatırımdır
+
+124
+00:08:33,080 --> 00:08:36,040
+ve daha büyük bir yatırım daha büyük bir çekime izin verir.
+
+125
+00:08:36,740 --> 00:08:39,979
+Değişim, her seçimin kendi başına bir olay olduğunu görmek.
+
+126
+00:08:40,460 --> 00:08:43,620
+Ayrı. Yapıldığı anda kapanmış.
+
+127
+00:08:43,919 --> 00:08:47,920
+Önceki seçime bağlı değil, sonraki seçimi de finanse etmiyor.
+
+128
+00:08:48,340 --> 00:08:53,020
+Salata öğlen yaptığın bir şeydi. Bu gece dokuzda ne yapacağın hakkında hiçbir fikri yok.
+
+129
+00:08:53,200 --> 00:08:57,640
+Spor salonu pazartesi yaptığın bir şeydi. Salı hakkında oy kullanmıyor.
+
+130
+00:08:57,780 --> 00:09:02,720
+Bağış gerçek bir cömertlik eylemiydi ve tam olarak tek bir şey satın aldı,
+
+131
+00:09:02,800 --> 00:09:05,780
+bağış neyi satın aldıysa onu. Geçiş izni değil.
+
+132
+00:09:06,100 --> 00:09:08,760
+Fazla değil. İzin değil.
+
+133
+00:09:09,140 --> 00:09:13,940
+Tek bir somut adım. Bir dahaki sefere bir şeyin bugünlük sorun olmadığını,
+
+134
+00:09:14,240 --> 00:09:19,480
+onu hak ettiğini, bunun sayılmadığını hissettiğini fark edersen, dur ve tek bir soru sor.
+
+135
+00:09:20,080 --> 00:09:23,360
+O iyi şey önce olmasaydı, yine de bunu seçer miydim?
+
+136
+00:09:23,840 --> 00:09:28,340
+Cevap hayırsa, elinde tuttuğun şey bir karar değil.
+
+137
+00:09:28,480 --> 00:09:33,200
+Bir fiş. Ve temsil ettiği alışverişi, denetçisini
+
+138
+00:09:33,280 --> 00:09:37,620
+kabaca on bin yıl önce kaybetmiş ve o zamandan beri gözetimsiz harcayan bir sistem yaptı.
+
+139
+00:09:37,780 --> 00:09:41,160
+Salatayı sipariş ettin. Sonra da pastayı sipariş ettin.
+
+140
+00:09:41,920 --> 00:09:45,820
+Zayıf olduğun için değil. Disiplinin eksik olduğu için değil.
+
+141
+00:09:46,000 --> 00:09:50,300
+Çünkü bir zamanlar herkesin izlediği bir kampta tamamen mantıklı olan bir makine, şimdi
+
+142
+00:09:50,380 --> 00:09:52,700
+kimsenin izlemediği bir odada çalışıyor.
+
+143
+00:09:52,960 --> 00:09:56,340
+Ve ikna etmesi gereken tek kişi sensin.
+
+144
+00:09:56,960 --> 00:09:59,860
+Ve işte bu videonun bilerek açık bıraktığı soru.
+
+145
+00:09:59,980 --> 00:10:05,620
+Tüm o iyi davranışlarla "evet"ini satın aldığını hayal ettiğin kişi, iş arkadaşın,
+
+146
+00:10:05,700 --> 00:10:10,280
+arkadaşın, yabancı, hiçbiri defterini kontrol etmiyordu.
+
+147
+00:10:10,360 --> 00:10:12,720
+Bir defter tutmuyorlardı bile.
+
+148
+00:10:13,160 --> 00:10:19,220
+Peki kimin için rol yapıyordun? Bu kanalda "İnsanlar Neden Sandığından Çok Daha
+
+149
+00:10:19,300 --> 00:10:22,640
+Sık Evet Der" adlı bir video var. O soruyu yanıtlıyor
+
+150
+00:10:22,720 --> 00:10:25,460
+ve cevabın bir şey kazanmakla hiçbir ilgisi yok.
+
+151
+00:10:25,740 --> 00:10:27,100
+Sıradaki video o olsun.

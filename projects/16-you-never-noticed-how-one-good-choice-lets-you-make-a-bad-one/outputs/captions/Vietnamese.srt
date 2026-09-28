@@ -1,0 +1,603 @@
+1
+00:00:00,140 --> 00:00:03,460
+Bạn gọi món salad. Rồi bạn gọi thêm bánh ngọt.
+
+2
+00:00:04,400 --> 00:00:07,820
+Không phải vì bạn quên món salad. Mà vì bạn nhớ đến nó.
+
+3
+00:00:08,119 --> 00:00:11,840
+Đây không phải chuyện đùa về ý chí, cũng không phải do thiếu kỷ luật.
+
+4
+00:00:12,380 --> 00:00:16,700
+Đó là một giao dịch được cấp phép, và não bạn đã chạy những giao dịch như vậy cả đời mà không
+
+5
+00:00:16,780 --> 00:00:20,620
+hề báo cho bạn biết. Các nhà tâm lý học gọi đó là sự tự cấp phép đạo đức.
+
+6
+00:00:20,840 --> 00:00:25,140
+Đến cuối video này, bạn sẽ hiểu vì sao mỗi lựa chọn tốt của bạn lại lặng lẽ mở cửa cho một lựa chọn
+
+7
+00:00:25,220 --> 00:00:27,400
+tồi, hệ thống ghi sổ đó đến từ đâu,
+
+8
+00:00:27,480 --> 00:00:31,300
+và vì sao cuốn sổ cái nó giữ đã nói dối bạn từ ngày bạn chào đời.
+
+9
+00:00:31,860 --> 00:00:33,940
+Hãy bắt đầu với một nghiên cứu lẽ ra không thể đúng.
+
+10
+00:00:34,300 --> 00:00:40,400
+Năm 2001, Benoit Monin và Dale Miller tại Princeton làm một thí nghiệm nghe có vẻ ngược đời.
+
+11
+00:00:40,660 --> 00:00:42,980
+Họ đưa cho người tham gia một tình huống tuyển dụng.
+
+12
+00:00:43,580 --> 00:00:47,460
+Ở vòng đầu, một số người được yêu cầu đánh giá một nhóm ứng viên mà lựa chọn tốt nhất
+
+13
+00:00:47,540 --> 00:00:49,900
+tình cờ là một phụ nữ. Họ chọn cô ấy.
+
+14
+00:00:50,380 --> 00:00:52,660
+Một quyết định hiển nhiên, chẳng có gì anh hùng cả.
+
+15
+00:00:52,740 --> 00:00:55,880
+Nhưng ở vòng hai, khi một vị trí khác được mở ra,
+
+16
+00:00:56,040 --> 00:01:00,720
+những người vừa đưa ra lựa chọn hoàn toàn hợp lý đó lại có khả năng cao hơn hẳn
+
+17
+00:01:00,800 --> 00:01:04,340
+chọn một người đàn ông cho vị trí được mô tả là hợp với phụ nữ hơn.
+
+18
+00:01:04,739 --> 00:01:08,860
+Nhóm không thực hiện lựa chọn trước đó thì không hề nghiêng lệch như vậy.
+
+19
+00:01:09,160 --> 00:01:12,740
+Hãy nghe thật chậm, vì cơ chế ở đây không giống vẻ bề ngoài.
+
+20
+00:01:12,820 --> 00:01:15,000
+Nhóm đầu tiên không trở nên thiên vị hơn.
+
+21
+00:01:15,080 --> 00:01:18,520
+Họ vốn đã mang định kiến. Thứ thay đổi là sự cho phép.
+
+22
+00:01:18,600 --> 00:01:24,220
+Việc chọn người phụ nữ ở vòng một đã gửi một thứ vào tài khoản bên trong, một tấm thẻ ghi rằng
+
+23
+00:01:24,460 --> 00:01:28,080
+tôi công bằng, tôi là kiểu người làm điều đúng đắn.
+
+24
+00:01:28,160 --> 00:01:31,040
+Và tấm thẻ đó mua được đúng một thứ.
+
+25
+00:01:31,120 --> 00:01:34,800
+Một tấm vé miễn trừ. Quyết định tiếp theo không còn cần chứng minh sự công bằng nữa,
+
+26
+00:01:34,880 --> 00:01:39,500
+vì sự công bằng đã được chứng minh rồi, dù chỉ với chính người ra quyết định.
+
+27
+00:01:39,940 --> 00:01:42,980
+Monin và Miller gọi đây là sự tự cấp chứng nhận đạo đức.
+
+28
+00:01:43,080 --> 00:01:46,300
+Bạn tạo ra một chứng nhận, rồi bạn tiêu nó.
+
+29
+00:01:46,600 --> 00:01:49,200
+Không phải cho ai khác. Mà cho chính bạn.
+
+30
+00:01:49,640 --> 00:01:53,820
+Nếu đó chỉ là một phát hiện lẻ loi trong một phòng thí nghiệm tuyển dụng, bạn có thể gác nó sang một bên.
+
+31
+00:01:54,020 --> 00:02:00,340
+Nhưng không phải vậy. Năm 2006, Uzma Khan và Ravi Dhar tại Yale làm một phiên bản gọn gàng hơn.
+
+32
+00:02:00,600 --> 00:02:03,700
+Họ cho mọi người chọn giữa hai sản phẩm.
+
+33
+00:02:04,020 --> 00:02:08,120
+Một nhóm chọn trước giữa một phương án đức hạnh và một phương án buông thả,
+
+34
+00:02:08,400 --> 00:02:12,520
+chẳng hạn một miếng trái cây và một thanh sô-cô-la. Nhóm còn lại bỏ qua bước đó.
+
+35
+00:02:12,600 --> 00:02:16,780
+Sau đó cả hai nhóm gặp lựa chọn thứ hai, không liên quan, giữa một món đồ thiết thực
+
+36
+00:02:17,040 --> 00:02:22,760
+và một món xa xỉ. Nhóm vừa chọn trái cây ở vòng một có khả năng cao gấp khoảng hai lần
+
+37
+00:02:22,840 --> 00:02:27,880
+chọn món xa xỉ ở vòng hai. Những người chưa từng đưa ra lựa chọn lành mạnh thì không có
+
+38
+00:02:27,960 --> 00:02:30,280
+mức tăng vọt đó. Cao gấp hai lần.
+
+39
+00:02:30,680 --> 00:02:34,600
+Không phải nhỉnh hơn chút ít. Mà gấp đôi. Và nó chẳng liên quan gì đến trái cây.
+
+40
+00:02:34,860 --> 00:02:37,160
+Không ai tự thưởng cho mình vì đã ăn uống lành mạnh.
+
+41
+00:02:37,240 --> 00:02:42,320
+Cơ chế còn kỳ lạ hơn thế. Chọn phương án đức hạnh không tạo ra nhu cầu
+
+42
+00:02:42,400 --> 00:02:44,980
+cân bằng. Nó tạo ra một chứng nhận.
+
+43
+00:02:45,080 --> 00:02:49,580
+Và chứng nhận đó thì thầm, gần như không nghe thấy, rằng lựa chọn tiếp theo là miễn phí.
+
+44
+00:02:49,660 --> 00:02:52,720
+Rằng tài khoản đang dư, và số dư thì có thể tiêu.
+
+45
+00:02:52,840 --> 00:02:55,920
+Não bạn không theo dõi các lựa chọn của bạn theo cách bạn nghĩ.
+
+46
+00:02:56,040 --> 00:02:59,680
+Bạn tin rằng mình đang xây nên một con người nhất quán, từng quyết định một,
+
+47
+00:02:59,760 --> 00:03:05,520
+như xếp từng viên gạch lên bức tường. Nhưng hệ thống bên dưới đang ghi sổ cái, không phải xây tường.
+
+48
+00:03:05,600 --> 00:03:09,180
+Và sổ cái là một cỗ máy khác hẳn, vì trong sổ cái,
+
+49
+00:03:09,260 --> 00:03:12,740
+một khoản gửi vào bên này cho phép một khoản rút ra bên kia.
+
+50
+00:03:13,040 --> 00:03:16,560
+Thế là bạn đi tập gym rồi ăn phần khoai tây chiên cỡ lớn trên đường về.
+
+51
+00:03:16,740 --> 00:03:19,420
+Bạn làm việc muộn vào thứ Hai rồi lướt điện thoại suốt thứ Ba.
+
+52
+00:03:19,700 --> 00:03:24,140
+Bạn quyên góp cho từ thiện rồi phớt lờ người thực sự cần bạn giúp
+
+53
+00:03:24,220 --> 00:03:27,880
+ngay trước mặt. Mỗi lần như vậy, hành động đầu tiên không xây nên điều gì cả.
+
+54
+00:03:27,960 --> 00:03:32,520
+Nó đang mua một thứ. Và thứ nó mua là cảm giác rằng hành động thứ hai không tính.
+
+55
+00:03:32,720 --> 00:03:35,980
+Nghe có giống ý chí đang thất bại không? Không phải đâu.
+
+56
+00:03:37,180 --> 00:03:40,380
+Hệ thống đang vận hành đúng như nó được thiết kế.
+
+57
+00:03:40,760 --> 00:03:44,840
+Câu hỏi là thiết kế đó đến từ đâu, và vì sao nó từng hợp lý.
+
+58
+00:03:45,440 --> 00:03:49,700
+Hãy quay về khoảng hai trăm nghìn năm trước, với một nhóm chừng một trăm năm mươi người
+
+59
+00:03:49,780 --> 00:03:52,800
+sống chung một khu trại, chia nhau thịt săn, chung một đống lửa,
+
+60
+00:03:53,060 --> 00:03:57,520
+và chung một bản ghi vĩnh viễn, công khai về mọi việc làm của bất kỳ ai trong số họ.
+
+61
+00:03:58,280 --> 00:04:01,120
+Trong thế giới đó, hành vi của bạn không phải do bạn theo dõi.
+
+62
+00:04:01,440 --> 00:04:03,360
+Mà do tất cả những người khác theo dõi.
+
+63
+00:04:03,860 --> 00:04:09,100
+Nhà nhân học Christopher Boehm đã dành hàng chục năm nghiên cứu cách các xã hội quy mô nhỏ quản lý
+
+64
+00:04:09,180 --> 00:04:12,860
+địa vị và sự công bằng, và khuôn mẫu này nhất quán đến đáng kinh ngạc.
+
+65
+00:04:13,120 --> 00:04:16,200
+Sự hào phóng được giám sát. Sự keo kiệt bị trừng phạt.
+
+66
+00:04:16,640 --> 00:04:21,639
+Chia sẻ một con mồi lớn, đứng canh gác, gánh đồ giúp người bị thương,
+
+67
+00:04:21,839 --> 00:04:25,980
+mỗi việc đó đều mang lại uy tín thật sự, rõ ràng trong mắt cả nhóm.
+
+68
+00:04:26,300 --> 00:04:29,260
+Và uy tín đó không chỉ mang tính tượng trưng. Nó có thể quy đổi.
+
+69
+00:04:29,460 --> 00:04:34,700
+Một thợ săn đã đều đặn chia thịt suốt một mùa có thể nghỉ một chuyến săn mà không mất vị thế.
+
+70
+00:04:34,960 --> 00:04:39,380
+Một người phụ nữ đã thuộc da giúp người khác suốt những tháng khô hạn có thể nhờ giúp đỡ khi cô
+
+71
+00:04:39,460 --> 00:04:42,120
+cần và được giúp mà không phải mặc cả.
+
+72
+00:04:42,620 --> 00:04:47,300
+Hệ thống này rất rõ ràng. Những đóng góp của bạn được ba mươi, năm mươi,
+
+73
+00:04:47,380 --> 00:04:50,600
+một trăm người nhìn thấy, những người nhớ chúng, bàn tán về chúng,
+
+74
+00:04:50,680 --> 00:04:52,880
+và điều chỉnh những gì họ nợ lại bạn.
+
+75
+00:04:53,600 --> 00:04:59,420
+Lòng vị tha có đi có lại, thuật ngữ Robert Trivers đặt ra năm 1971, không phải là một cảm xúc.
+
+76
+00:04:59,680 --> 00:05:05,900
+Nó là một nền kinh tế, và trong nền kinh tế đó, một khoản gửi vào thực sự cho bạn quyền rút ra.
+
+77
+00:05:06,100 --> 00:05:10,860
+Nhưng khoản rút có mức trần, và mức trần đó do tất cả những người đã dõi theo đặt ra.
+
+78
+00:05:11,180 --> 00:05:15,440
+Lấy nhiều hơn mức cả nhóm cho là bạn xứng đáng, thì món nợ phải trả không tính bằng tiền.
+
+79
+00:05:15,680 --> 00:05:22,520
+Mà bằng các mối quan hệ. Trước là lời đồn, rồi chế giễu, rồi sự ghẻ lạnh dần dần, kết thúc bằng việc bị trục xuất.
+
+80
+00:05:22,600 --> 00:05:25,220
+Cái giá của việc rút quá tay không phải là nợ nần.
+
+81
+00:05:25,300 --> 00:05:27,960
+Mà là cái chết. Hãy để ý chi tiết then chốt này.
+
+82
+00:05:28,040 --> 00:05:31,500
+Cuốn sổ cái nằm bên ngoài. Nó sống trong trí nhớ của cả nhóm,
+
+83
+00:05:31,600 --> 00:05:36,600
+không phải trong đầu người đóng góp. Người khác quyết định khi nào bạn đã góp đủ để được lấy.
+
+84
+00:05:36,680 --> 00:05:39,520
+Người khác quyết định khi nào bạn đã lấy quá nhiều.
+
+85
+00:05:39,720 --> 00:05:46,340
+Số dư mang tính xã hội, ai cũng thấy, và được giữ bằng danh tiếng, lời đồn, và ở mức cực đoan nhất,
+
+86
+00:05:46,500 --> 00:05:52,820
+sự loại trừ. Giờ hãy chuyển cả hệ thống đó từ một khu trại một trăm năm mươi gương mặt quen sang một thành phố
+
+87
+00:05:52,900 --> 00:05:55,740
+đầy người lạ và một căn phòng đóng kín cửa.
+
+88
+00:05:55,920 --> 00:06:01,020
+Cuốn sổ cái bên ngoài biến mất. Không ai nhìn buổi tập gym thứ Hai và buổi lướt điện thoại
+
+89
+00:06:01,100 --> 00:06:06,980
+thứ Ba của bạn rồi so sánh hai thứ. Không ai đặt đĩa salad lên cân với miếng bánh rồi phán xem
+
+90
+00:06:07,060 --> 00:06:13,220
+tổng cộng là lời hay lỗ. Nhưng bộ máy tiến hóa để theo dõi uy tín và cho phép chi tiêu thì
+
+91
+00:06:13,300 --> 00:06:17,000
+không biến mất cùng khán giả. Nó dọn vào trong.
+
+92
+00:06:17,300 --> 00:06:23,500
+Nó trở thành nội tâm. Và một cuốn sổ cái nội tâm có một khiếm khuyết tai hại mà sổ cái bên ngoài chưa bao giờ
+
+93
+00:06:23,580 --> 00:06:25,880
+có. Không có kiểm toán viên.
+
+94
+00:06:26,060 --> 00:06:28,620
+Trong nhóm người ấy, nếu bạn cố lấy nhiều hơn phần mình đã góp,
+
+95
+00:06:28,700 --> 00:06:31,800
+bốn mươi đôi mắt sẽ chỉnh bạn trước khi ngày kết thúc.
+
+96
+00:06:31,920 --> 00:06:36,080
+Hệ thống tự điều chỉnh được vì người giữ sổ không phải là bạn.
+
+97
+00:06:36,160 --> 00:06:40,720
+Trong cuộc sống hiện đại, người gửi vào, người duyệt khoản rút và
+
+98
+00:06:40,800 --> 00:06:44,440
+người tiêu khoản rút đó đều là cùng một người.
+
+99
+00:06:44,520 --> 00:06:48,920
+Và người đó đang chạy thứ phần mềm cổ xưa nhất cho một bài toán nó chưa bao giờ được tạo ra để
+
+100
+00:06:49,000 --> 00:06:51,680
+giải, đó là tự đánh giá bản thân một cách công bằng.
+
+101
+00:06:52,140 --> 00:06:58,380
+Đó chính là sự lệch pha. Cảm giác rằng một lựa chọn tốt cho bạn quyền có một lựa chọn tồi không hề phi lý.
+
+102
+00:06:58,680 --> 00:07:03,760
+Nó là bản sao trung thành của một hệ thống đã vận hành suốt một trăm nghìn thế hệ.
+
+103
+00:07:04,140 --> 00:07:06,540
+Chỉ là nó thiếu mất phần khiến nó hoạt động được,
+
+104
+00:07:06,620 --> 00:07:10,060
+đó là cả bộ lạc đứng sau lưng bạn mà nói không,
+
+105
+00:07:10,440 --> 00:07:14,180
+uy tín đó không phải để dùng vào việc này. Thế là buổi tập gym mua phần khoai tây chiên.
+
+106
+00:07:14,300 --> 00:07:18,860
+Khoản quyên góp mua sự né tránh. Buổi sáng năng suất mua buổi chiều phí hoài.
+
+107
+00:07:18,940 --> 00:07:23,520
+Và mỗi tháng Một, quyết tâm sống tốt hơn mở ra một cuốn sổ mới, rồi lập tức bắt đầu
+
+108
+00:07:23,600 --> 00:07:26,920
+tự tiêu hao, vì cấu trúc bên dưới chẳng hề thay đổi.
+
+109
+00:07:27,140 --> 00:07:30,040
+Ngày tốt đầu tiên không xây nên ngày tốt thứ hai.
+
+110
+00:07:30,660 --> 00:07:34,660
+Nó mua quyền được bỏ qua ngày đó. Và đây là phần nhói nhất,
+
+111
+00:07:34,800 --> 00:07:38,360
+phần mà tỉ lệ gấp đôi của Khan và Dhar cho thấy rõ.
+
+112
+00:07:38,740 --> 00:07:44,280
+Bạn thậm chí không nhận ra khi mình tiêu. Sự tự cấp phép diễn ra bên dưới quyết định có ý thức.
+
+113
+00:07:44,600 --> 00:07:49,080
+Bạn không ngồi ở quầy đồ ăn nhanh mà nghĩ, mình xứng đáng nhờ buổi tập.
+
+114
+00:07:49,240 --> 00:07:54,460
+Bạn ngồi ở quầy đồ ăn nhanh và cảm thấy, một cách khó hiểu, rằng hôm nay cỡ lớn cũng được.
+
+115
+00:07:54,740 --> 00:07:57,940
+Rằng bạn xứng đáng. Rằng lần này không tính.
+
+116
+00:07:58,080 --> 00:08:04,200
+Và nó xảy ra ở mọi quy mô. Chế độ ăn kiêng đổ bể ở tuần thứ ba vì tuần đầu quá suôn sẻ.
+
+117
+00:08:04,280 --> 00:08:07,820
+Ngân sách sụp đổ chỉ sau một tháng kỷ luật.
+
+118
+00:08:07,900 --> 00:08:13,080
+Mối quan hệ mà bạn tích góp ba buổi sáng tử tế rồi tiêu hết vào một buổi tối gay gắt,
+
+119
+00:08:13,160 --> 00:08:16,280
+như thể lòng tốt là tiền và bạn đã dành dụm được ít tiền lẻ.
+
+120
+00:08:16,700 --> 00:08:19,460
+Nhưng nó có tính. Lần nào cũng tính.
+
+121
+00:08:19,540 --> 00:08:22,680
+Cuốn sổ cái bảo bạn rằng nó miễn phí, và cuốn sổ cái đã nói dối,
+
+122
+00:08:22,920 --> 00:08:27,400
+vì không ai giữ nó ngoài bạn. Vậy nên thay đổi không nằm ở việc cố gắng hơn.
+
+123
+00:08:28,100 --> 00:08:32,959
+Cố gắng hơn chỉ nuôi chính cỗ máy đó, vì cố gắng nhiều hơn là một khoản gửi lớn hơn,
+
+124
+00:08:33,080 --> 00:08:36,040
+và khoản gửi lớn hơn cho phép một khoản rút lớn hơn.
+
+125
+00:08:36,740 --> 00:08:39,979
+Thay đổi thực sự là nhìn ra rằng mỗi lựa chọn là một sự kiện riêng.
+
+126
+00:08:40,460 --> 00:08:43,620
+Tách biệt. Khép lại ngay khoảnh khắc nó được đưa ra.
+
+127
+00:08:43,919 --> 00:08:47,920
+Không nối với lựa chọn trước nó và không chi trả cho lựa chọn sau nó.
+
+128
+00:08:48,340 --> 00:08:53,020
+Đĩa salad là việc bạn làm lúc trưa. Nó chẳng có ý kiến gì về việc bạn làm lúc chín giờ tối nay.
+
+129
+00:08:53,200 --> 00:08:57,640
+Buổi tập gym là việc bạn làm vào thứ Hai. Nó không được bỏ phiếu cho thứ Ba.
+
+130
+00:08:57,780 --> 00:09:02,720
+Khoản quyên góp là một hành động hào phóng thật sự, và nó mua đúng một thứ,
+
+131
+00:09:02,800 --> 00:09:05,780
+chính thứ mà khoản quyên góp đó mua được. Không phải tấm vé miễn trừ.
+
+132
+00:09:06,100 --> 00:09:08,760
+Không phải khoản dư. Không phải sự cho phép.
+
+133
+00:09:09,140 --> 00:09:13,940
+Một bước cụ thể. Lần tới khi bạn bắt gặp mình cảm thấy hôm nay làm gì đó cũng được,
+
+134
+00:09:14,240 --> 00:09:19,480
+rằng bạn xứng đáng, rằng lần này không tính, hãy dừng lại và tự hỏi một câu.
+
+135
+00:09:20,080 --> 00:09:23,360
+Liệu mình có còn chọn điều này nếu việc tốt kia chưa xảy ra trước đó không?
+
+136
+00:09:23,840 --> 00:09:28,340
+Nếu câu trả lời là không, thì thứ bạn đang cầm không phải là một quyết định.
+
+137
+00:09:28,480 --> 00:09:33,200
+Mà là một tờ hóa đơn. Và món hàng trên đó được mua bởi một hệ thống đã mất kiểm toán viên
+
+138
+00:09:33,280 --> 00:09:37,620
+từ khoảng mười nghìn năm trước và vẫn tiêu xài không ai giám sát kể từ đó.
+
+139
+00:09:37,780 --> 00:09:41,160
+Bạn gọi món salad. Rồi bạn gọi thêm bánh ngọt.
+
+140
+00:09:41,920 --> 00:09:45,820
+Không phải vì bạn yếu đuối. Không phải vì bạn thiếu kỷ luật.
+
+141
+00:09:46,000 --> 00:09:50,300
+Mà vì một cỗ máy từng hoàn toàn hợp lý ở một khu trại nơi ai cũng đang nhìn, giờ lại
+
+142
+00:09:50,380 --> 00:09:52,700
+chạy trong một căn phòng nơi không có ai.
+
+143
+00:09:52,960 --> 00:09:56,340
+Và người duy nhất nó cần thuyết phục là bạn.
+
+144
+00:09:56,960 --> 00:09:59,860
+Và đây là câu hỏi mà video này cố tình bỏ ngỏ.
+
+145
+00:09:59,980 --> 00:10:05,620
+Người mà bạn tưởng có thể mua được cái gật đầu bằng tất cả những việc tốt đó, người đồng nghiệp,
+
+146
+00:10:05,700 --> 00:10:10,280
+người bạn, người lạ, họ chưa bao giờ kiểm tra sổ cái của bạn.
+
+147
+00:10:10,360 --> 00:10:12,720
+Họ thậm chí còn chẳng giữ cuốn sổ nào.
+
+148
+00:10:13,160 --> 00:10:19,220
+Vậy bạn đang diễn cho ai xem? Trên kênh này có một video tên là Vì sao người ta nói có
+
+149
+00:10:19,300 --> 00:10:22,640
+nhiều hơn bạn nghĩ rất nhiều. Video đó trả lời câu hỏi này,
+
+150
+00:10:22,720 --> 00:10:25,460
+và câu trả lời chẳng liên quan gì đến việc phải xứng đáng với điều gì cả.
+
+151
+00:10:25,740 --> 00:10:27,100
+Hãy xem video đó tiếp theo nhé.

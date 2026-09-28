@@ -1,0 +1,603 @@
+1
+00:00:00,140 --> 00:00:03,460
+Hai ordinato l'insalata. E poi hai ordinato la torta.
+
+2
+00:00:04,400 --> 00:00:07,820
+Non perché avessi dimenticato l'insalata. Perché te ne ricordavi.
+
+3
+00:00:08,119 --> 00:00:11,840
+Non è una battuta sulla forza di volontà, e non è un difetto di disciplina.
+
+4
+00:00:12,380 --> 00:00:16,700
+È una transazione autorizzata, e il tuo cervello le esegue da tutta la vita senza
+
+5
+00:00:16,780 --> 00:00:20,620
+dirtelo. Gli psicologi la chiamano licenza morale.
+
+6
+00:00:20,840 --> 00:00:25,140
+Alla fine di questo video saprai perché ogni buona scelta che fai apre in silenzio la porta a una
+
+7
+00:00:25,220 --> 00:00:27,400
+cattiva, da dove viene quel sistema contabile,
+
+8
+00:00:27,480 --> 00:00:31,300
+e perché il registro che tiene ti mente dal tuo primo giorno di vita.
+
+9
+00:00:31,860 --> 00:00:33,940
+Parti da uno studio che non dovrebbe funzionare.
+
+10
+00:00:34,300 --> 00:00:40,400
+Nel 2001, Benoit Monin e Dale Miller, a Princeton, condussero un esperimento che sembra al contrario.
+
+11
+00:00:40,660 --> 00:00:42,980
+Diedero ai partecipanti uno scenario di assunzione.
+
+12
+00:00:43,580 --> 00:00:47,460
+Nel primo turno, ad alcuni fu chiesto di valutare un gruppo di candidati in cui la scelta migliore
+
+13
+00:00:47,540 --> 00:00:49,900
+era, guarda caso, una donna. La scelsero.
+
+14
+00:00:50,380 --> 00:00:52,660
+Scelta ovvia, niente di eroico.
+
+15
+00:00:52,740 --> 00:00:55,880
+Ma nel secondo turno, quando si aprì un altro posto di lavoro,
+
+16
+00:00:56,040 --> 00:01:00,720
+quelli che avevano appena fatto quella scelta perfettamente ragionevole erano molto più propensi a
+
+17
+00:01:00,800 --> 00:01:04,340
+favorire un uomo per un ruolo descritto come più adatto alle donne.
+
+18
+00:01:04,739 --> 00:01:08,860
+Un gruppo che non aveva fatto la selezione precedente non mostrò la stessa inclinazione.
+
+19
+00:01:09,160 --> 00:01:12,740
+Rileggilo con calma, perché il meccanismo non è quello che sembra.
+
+20
+00:01:12,820 --> 00:01:15,000
+Il primo gruppo non era diventato più prevenuto.
+
+21
+00:01:15,080 --> 00:01:18,520
+Il pregiudizio ce l'aveva già. A cambiare fu il permesso.
+
+22
+00:01:18,600 --> 00:01:24,220
+Scegliere la donna nel primo turno aveva depositato qualcosa in un conto interno, un gettone che diceva
+
+23
+00:01:24,460 --> 00:01:28,080
+sono imparziale, sono il tipo di persona che fa la cosa giusta.
+
+24
+00:01:28,160 --> 00:01:31,040
+E quel gettone comprava esattamente una cosa.
+
+25
+00:01:31,120 --> 00:01:34,800
+Un lasciapassare. La decisione successiva non doveva più dimostrare imparzialità,
+
+26
+00:01:34,880 --> 00:01:39,500
+perché l'imparzialità era già stata dimostrata, a nessuno tranne che a chi decideva.
+
+27
+00:01:39,940 --> 00:01:42,980
+Monin e Miller lo chiamarono accreditamento morale.
+
+28
+00:01:43,080 --> 00:01:46,300
+Ti crei una credenziale, e poi la spendi.
+
+29
+00:01:46,600 --> 00:01:49,200
+Non su qualcun altro. Su te stesso.
+
+30
+00:01:49,640 --> 00:01:53,820
+Se fosse un risultato isolato in un laboratorio sulle assunzioni, potresti metterlo da parte.
+
+31
+00:01:54,020 --> 00:02:00,340
+Non lo è. Nel 2006, Uzma Khan e Ravi Dhar, a Yale, condussero una versione più pulita.
+
+32
+00:02:00,600 --> 00:02:03,700
+Diedero alle persone una scelta tra due prodotti.
+
+33
+00:02:04,020 --> 00:02:08,120
+Un gruppo scelse prima tra un'opzione virtuosa e una indulgente,
+
+34
+00:02:08,400 --> 00:02:12,520
+per esempio un frutto contro una tavoletta di cioccolato. L'altro gruppo saltò quel passaggio.
+
+35
+00:02:12,600 --> 00:02:16,780
+Poi entrambi i gruppi affrontarono una seconda scelta, non collegata, tra un oggetto pratico
+
+36
+00:02:17,040 --> 00:02:22,760
+e un lusso. Il gruppo che aveva appena scelto il frutto nel primo turno era circa due volte più propenso
+
+37
+00:02:22,840 --> 00:02:27,880
+a scegliere il lusso nel secondo turno. Quelli che non avevano mai fatto la scelta sana non mostrarono lo
+
+38
+00:02:27,960 --> 00:02:30,280
+stesso picco. Due volte più propensi.
+
+39
+00:02:30,680 --> 00:02:34,600
+Non di poco. Il doppio. E il frutto non c'entrava niente.
+
+40
+00:02:34,860 --> 00:02:37,160
+Nessuno si stava premiando per aver mangiato bene.
+
+41
+00:02:37,240 --> 00:02:42,320
+Il meccanismo è più strano di così. Scegliere l'opzione virtuosa non creava un desiderio di
+
+42
+00:02:42,400 --> 00:02:44,980
+equilibrio. Creava una credenziale.
+
+43
+00:02:45,080 --> 00:02:49,580
+E la credenziale sussurrava, quasi impercettibile, che la scelta successiva era gratis.
+
+44
+00:02:49,660 --> 00:02:52,720
+Che il conto era in attivo, e un attivo si può spendere.
+
+45
+00:02:52,840 --> 00:02:55,920
+Il tuo cervello non registra le tue scelte come pensi.
+
+46
+00:02:56,040 --> 00:02:59,680
+Credi di costruire una persona coerente, una decisione alla volta,
+
+47
+00:02:59,760 --> 00:03:05,520
+come posare mattoni in un muro. Ma il sistema sotto tiene un registro, non un muro.
+
+48
+00:03:05,600 --> 00:03:09,180
+E un registro è una macchina completamente diversa, perché in un registro,
+
+49
+00:03:09,260 --> 00:03:12,740
+un deposito da una parte autorizza un prelievo dall'altra.
+
+50
+00:03:13,040 --> 00:03:16,560
+Così vai in palestra e poi mangi le patatine grandi tornando a casa.
+
+51
+00:03:16,740 --> 00:03:19,420
+Lavori fino a tardi il lunedì e il martedì lo passi a scorrere il telefono.
+
+52
+00:03:19,700 --> 00:03:24,140
+Fai una donazione in beneficenza e poi ignori la persona che ha davvero bisogno di qualcosa da te
+
+53
+00:03:24,220 --> 00:03:27,880
+di persona. Ogni volta, il primo gesto non costruisce niente.
+
+54
+00:03:27,960 --> 00:03:32,520
+Sta comprando qualcosa. E quello che compra è la sensazione che il secondo gesto non conti.
+
+55
+00:03:32,720 --> 00:03:35,980
+Ti sembra la forza di volontà che cede? Non lo è.
+
+56
+00:03:37,180 --> 00:03:40,380
+Il sistema funziona esattamente come è stato progettato per funzionare.
+
+57
+00:03:40,760 --> 00:03:44,840
+La domanda è da dove venga quel progetto, e perché abbia mai avuto senso.
+
+58
+00:03:45,440 --> 00:03:49,700
+Torna indietro di circa duecentomila anni, a un gruppo di circa centocinquanta persone che
+
+59
+00:03:49,780 --> 00:03:52,800
+condividono un accampamento, le prede, il fuoco,
+
+60
+00:03:53,060 --> 00:03:57,520
+e un unico registro, permanente e pubblico, di ogni azione che ciascuno di loro compie.
+
+61
+00:03:58,280 --> 00:04:01,120
+In quel mondo, il tuo comportamento non lo registravi tu.
+
+62
+00:04:01,440 --> 00:04:03,360
+Lo registravano tutti gli altri.
+
+63
+00:04:03,860 --> 00:04:09,100
+L'antropologo Christopher Boehm ha passato decenni a studiare come le piccole società gestiscono
+
+64
+00:04:09,180 --> 00:04:12,860
+lo status e l'equità, e lo schema è sorprendentemente coerente.
+
+65
+00:04:13,120 --> 00:04:16,200
+La generosità era sorvegliata. L'avarizia era punita.
+
+66
+00:04:16,640 --> 00:04:21,639
+Dividere una grossa preda, fare la sentinella, portare il carico di un ferito,
+
+67
+00:04:21,839 --> 00:04:25,980
+ognuno di questi gesti guadagnava un credito reale e visibile agli occhi del gruppo.
+
+68
+00:04:26,300 --> 00:04:29,260
+E quel credito non era simbolico. Era convertibile.
+
+69
+00:04:29,460 --> 00:04:34,700
+Un cacciatore che aveva diviso la carne con costanza per una stagione poteva saltare una caccia senza perdere prestigio.
+
+70
+00:04:34,960 --> 00:04:39,380
+Una donna che aveva lavorato le pelli per gli altri durante i mesi secchi poteva chiedere aiuto quando ne
+
+71
+00:04:39,460 --> 00:04:42,120
+aveva bisogno e riceverlo senza trattare.
+
+72
+00:04:42,620 --> 00:04:47,300
+Il sistema era esplicito. I tuoi contributi erano visti da trenta, cinquanta,
+
+73
+00:04:47,380 --> 00:04:50,600
+cento persone che li ricordavano, ne parlavano,
+
+74
+00:04:50,680 --> 00:04:52,880
+e adattavano di conseguenza quanto ti dovevano.
+
+75
+00:04:53,600 --> 00:04:59,420
+Altruismo reciproco, il termine che gli diede Robert Trivers nel 1971, non era una sensazione.
+
+76
+00:04:59,680 --> 00:05:05,900
+Era un'economia, e in quell'economia un deposito ti dava davvero diritto a un prelievo.
+
+77
+00:05:06,100 --> 00:05:10,860
+Ma il prelievo aveva un tetto, e il tetto lo fissavano tutti quelli che avevano osservato.
+
+78
+00:05:11,180 --> 00:05:15,440
+Se prendevi più di quanto il gruppo riteneva ti fossi guadagnato, il conto da pagare non era in denaro.
+
+79
+00:05:15,680 --> 00:05:22,520
+Era sociale. Prima i pettegolezzi, poi lo scherno, poi il lento gelo che finiva con l'esilio.
+
+80
+00:05:22,600 --> 00:05:25,220
+Il costo di un prelievo eccessivo non era un debito.
+
+81
+00:05:25,300 --> 00:05:27,960
+Era la morte. Nota il dettaglio cruciale.
+
+82
+00:05:28,040 --> 00:05:31,500
+Il registro era esterno. Viveva nella memoria del gruppo,
+
+83
+00:05:31,600 --> 00:05:36,600
+non nella testa di chi contribuiva. Erano gli altri a decidere quando avevi guadagnato abbastanza da prendere.
+
+84
+00:05:36,680 --> 00:05:39,520
+Erano gli altri a decidere quando avevi preso troppo.
+
+85
+00:05:39,720 --> 00:05:46,340
+Il saldo era sociale, visibile, e imposto dalla reputazione, dai pettegolezzi e, all'estremo,
+
+86
+00:05:46,500 --> 00:05:52,820
+dall'esclusione. Ora sposta tutto quel sistema da un accampamento di centocinquanta volti noti a una città
+
+87
+00:05:52,900 --> 00:05:55,740
+di sconosciuti e a una camera da letto con la porta chiusa.
+
+88
+00:05:55,920 --> 00:06:01,020
+Il registro esterno è sparito. Nessuno osserva la tua palestra del lunedì e il tuo scorrere del
+
+89
+00:06:01,100 --> 00:06:06,980
+martedì per confrontarli. Nessuno mette l'insalata a confronto con la torta per stabilire se
+
+90
+00:06:07,060 --> 00:06:13,220
+il saldo è positivo. Ma il meccanismo evoluto per registrare i crediti e autorizzare le spese non è
+
+91
+00:06:13,300 --> 00:06:17,000
+sparito insieme al pubblico. Si è spostato dentro di te.
+
+92
+00:06:17,300 --> 00:06:23,500
+È diventato interno. E un registro interno ha un difetto catastrofico che uno esterno non ha mai
+
+93
+00:06:23,580 --> 00:06:25,880
+avuto. Non c'è nessun revisore.
+
+94
+00:06:26,060 --> 00:06:28,620
+Nel gruppo, se provavi a prendere più di quanto avevi guadagnato,
+
+95
+00:06:28,700 --> 00:06:31,800
+quaranta paia d'occhi ti correggevano prima che finisse il giorno.
+
+96
+00:06:31,920 --> 00:06:36,080
+Il sistema si correggeva da solo perché chi teneva i conti non eri tu.
+
+97
+00:06:36,160 --> 00:06:40,720
+In una vita moderna, chi fa il deposito, chi autorizza il prelievo e
+
+98
+00:06:40,800 --> 00:06:44,440
+chi spende il prelievo sono la stessa persona.
+
+99
+00:06:44,520 --> 00:06:48,920
+E quella persona fa girare il software più antico che esista su un problema che non è mai stato fatto per
+
+100
+00:06:49,000 --> 00:06:51,680
+gestire, cioè giudicare se stessi in modo equo.
+
+101
+00:06:52,140 --> 00:06:58,380
+Ecco il disallineamento. La sensazione che una buona scelta te ne faccia guadagnare una cattiva non è irrazionale.
+
+102
+00:06:58,680 --> 00:07:03,760
+È la riproduzione fedele di un sistema che ha funzionato per centomila generazioni.
+
+103
+00:07:04,140 --> 00:07:06,540
+Gli manca solo la parte che lo faceva funzionare,
+
+104
+00:07:06,620 --> 00:07:10,060
+cioè la tribù alle tue spalle che diceva no,
+
+105
+00:07:10,440 --> 00:07:14,180
+non è a questo che serviva quel credito. Così la palestra compra le patatine.
+
+106
+00:07:14,300 --> 00:07:18,860
+La donazione compra l'evitamento. La mattina produttiva compra il pomeriggio sprecato.
+
+107
+00:07:18,940 --> 00:07:23,520
+E ogni gennaio, il proposito di fare meglio apre un registro nuovo che comincia subito
+
+108
+00:07:23,600 --> 00:07:26,920
+a spendersi, perché l'architettura non è cambiata.
+
+109
+00:07:27,140 --> 00:07:30,040
+La prima buona giornata non costruisce la seconda.
+
+110
+00:07:30,660 --> 00:07:34,660
+Compra il diritto di saltarla. Ed ecco la parte che fa più male,
+
+111
+00:07:34,800 --> 00:07:38,360
+quella che il raddoppio osservato da Khan e Dhar rende visibile.
+
+112
+00:07:38,740 --> 00:07:44,280
+Non ti accorgi nemmeno di quando spendi. La licenza avviene sotto la decisione cosciente.
+
+113
+00:07:44,600 --> 00:07:49,080
+Non ti siedi al drive-through pensando, me lo sono guadagnato con l'allenamento.
+
+114
+00:07:49,240 --> 00:07:54,460
+Ti siedi al drive-through e senti, misteriosamente, che oggi il formato grande va bene.
+
+115
+00:07:54,740 --> 00:07:57,940
+Che te lo meriti. Che questa volta non conta.
+
+116
+00:07:58,080 --> 00:08:04,200
+E succede a ogni scala. La dieta che fallisce alla terza settimana perché la prima è andata così bene.
+
+117
+00:08:04,280 --> 00:08:07,820
+Il budget che crolla dopo un solo mese di disciplina.
+
+118
+00:08:07,900 --> 00:08:13,080
+La relazione in cui metti da parte tre mattine gentili e poi le spendi in una sera pungente,
+
+119
+00:08:13,160 --> 00:08:16,280
+come se la gentilezza fosse una moneta e tu avessi accumulato spiccioli.
+
+120
+00:08:16,700 --> 00:08:19,460
+Ma conta. Ogni volta.
+
+121
+00:08:19,540 --> 00:08:22,680
+Il registro ti ha detto che era gratis, e il registro ha mentito,
+
+122
+00:08:22,920 --> 00:08:27,400
+perché nessuno lo tiene tranne te. Quindi la svolta non è sforzarsi di più.
+
+123
+00:08:28,100 --> 00:08:32,959
+Sforzarsi di più alimenta la stessa macchina, perché uno sforzo maggiore è un deposito più grande,
+
+124
+00:08:33,080 --> 00:08:36,040
+e un deposito più grande autorizza un prelievo più grande.
+
+125
+00:08:36,740 --> 00:08:39,979
+La svolta è vedere che ogni scelta è un evento a sé.
+
+126
+00:08:40,460 --> 00:08:43,620
+Separato. Chiuso nel momento in cui lo fai.
+
+127
+00:08:43,919 --> 00:08:47,920
+Non legato alla scelta di prima, e non un finanziamento per quella dopo.
+
+128
+00:08:48,340 --> 00:08:53,020
+L'insalata è una cosa che hai fatto a mezzogiorno. Non ha nessuna opinione su quello che fai stasera alle nove.
+
+129
+00:08:53,200 --> 00:08:57,640
+La palestra è una cosa che hai fatto lunedì. Non vota sul martedì.
+
+130
+00:08:57,780 --> 00:09:02,720
+La donazione è stata un vero atto di generosità, e ha comprato esattamente una cosa,
+
+131
+00:09:02,800 --> 00:09:05,780
+qualunque cosa la donazione abbia comprato. Non un lasciapassare.
+
+132
+00:09:06,100 --> 00:09:08,760
+Non un attivo. Non un permesso.
+
+133
+00:09:09,140 --> 00:09:13,940
+Una mossa concreta. La prossima volta che ti sorprendi a sentire che oggi una cosa va bene,
+
+134
+00:09:14,240 --> 00:09:19,480
+che te la sei guadagnata, che questa volta non conta, fermati e fatti una domanda.
+
+135
+00:09:20,080 --> 00:09:23,360
+Sceglierei ancora questo se prima non fosse successa la cosa buona?
+
+136
+00:09:23,840 --> 00:09:28,340
+Se la risposta è no, allora quello che hai in mano non è una decisione.
+
+137
+00:09:28,480 --> 00:09:33,200
+È uno scontrino. E l'acquisto che rappresenta l'ha fatto un sistema che ha perso il suo revisore
+
+138
+00:09:33,280 --> 00:09:37,620
+circa diecimila anni fa e da allora spende senza supervisione.
+
+139
+00:09:37,780 --> 00:09:41,160
+Hai ordinato l'insalata. E poi hai ordinato la torta.
+
+140
+00:09:41,920 --> 00:09:45,820
+Non perché sei debole. Non perché ti manca disciplina.
+
+141
+00:09:46,000 --> 00:09:50,300
+Ma perché una macchina che un tempo aveva perfettamente senso in un accampamento dove tutti guardavano ora
+
+142
+00:09:50,380 --> 00:09:52,700
+gira in una stanza dove non guarda nessuno.
+
+143
+00:09:52,960 --> 00:09:56,340
+E l'unica persona che deve convincere sei tu.
+
+144
+00:09:56,960 --> 00:09:59,860
+Ed ecco la domanda che questo video ha lasciato aperta di proposito.
+
+145
+00:09:59,980 --> 00:10:05,620
+L'unica persona di cui immaginavi di comprare il sì con tutto quel buon comportamento, il collega,
+
+146
+00:10:05,700 --> 00:10:10,280
+l'amico, lo sconosciuto, non ha mai controllato il tuo registro.
+
+147
+00:10:10,360 --> 00:10:12,720
+Non ne ha mai nemmeno tenuto uno.
+
+148
+00:10:13,160 --> 00:10:19,220
+Allora per chi stavi recitando? C'è un video su questo canale intitolato Perché la gente dice sì molto più spesso
+
+149
+00:10:19,300 --> 00:10:22,640
+di quanto pensi. Risponde a quella domanda,
+
+150
+00:10:22,720 --> 00:10:25,460
+e la risposta non ha niente a che vedere con il guadagnarsi qualcosa.
+
+151
+00:10:25,740 --> 00:10:27,100
+Guardalo subito dopo.
