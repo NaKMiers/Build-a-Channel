@@ -1,0 +1,35 @@
+{
+  "total": 636.891,
+  "parts": [
+    {
+      "file": "projects/18-why-your-brain-still-treats-silence-like-a-warning-signal/audios/part-1.mp3",
+      "start": 0.0,
+      "duration": 289.463,
+      "frames": 11081,
+      "sample_rate": 44100,
+      "bitrates": [
+        128
+      ]
+    },
+    {
+      "file": "projects/18-why-your-brain-still-treats-silence-like-a-warning-signal/audios/part-2.mp3",
+      "start": 289.463,
+      "duration": 303.047,
+      "frames": 11601,
+      "sample_rate": 44100,
+      "bitrates": [
+        128
+      ]
+    },
+    {
+      "file": "projects/18-why-your-brain-still-treats-silence-like-a-warning-signal/audios/part-3.mp3",
+      "start": 592.509,
+      "duration": 44.382,
+      "frames": 1699,
+      "sample_rate": 44100,
+      "bitrates": [
+        128
+      ]
+    }
+  ]
+}

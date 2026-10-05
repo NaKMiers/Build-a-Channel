@@ -817,3 +817,19 @@ silence 1.58s at 227.4s; cramming worst 1.79x median at 5:50. Both seams clean: 
 One duplicate, `[5:44]`: "For that," (344.24) then "two moments beat the full log." (344.96).
 `[5:43]`, `[5:45]` and `[5:46]` are free, `[5:47]` taken, so a one-step bump: save the second
 image as `[5:45]`, drift +0.04s.
+
+## Project 18 (2026-10-05) - clean 3-part run, single call, zero duplicates
+
+3 parts at 128 kbps 44.1 kHz mono (uniform, no VBR risk): 4m49.5s, 5m03.0s, 0m44.4s, combined
+**10m36.9s**, Xing reporting 10m36.9s. Single ElevenLabs call on `audios/full.mp3` against the
+whole script, because `script_why_brain_treats_silence.md` has no multi-blank-line run marking part breaks.
+V2 profile (`--pause 0.24 --max-dur 3.2 --min-words 2`).
+
+**288 cues**, median 1.7s, last cue `[10:35.640]`, aligned speech ending at 636.5s of 636.9s audio.
+0 malformed lines, 1807 words word-for-word identical to the script. 27.1 cues per minute.
+Zero duplicate timestamps after whole-second truncation (`cue_dups` returned clean).
+
+Pre-flight and verification:
+- 1807 words / 636.9s = **2.84 wps** (170.2 wpm), sitting right in the center of the narrator's 2.71 to 3.21 wps range.
+- Rolling 30s window: median 2.77 wps, min 2.43, max 3.63 at 605s (final takeaway build).
+- 1807 words cached in `transcribes/words.json` with lossless `"MM:SS.SSS"` timings.

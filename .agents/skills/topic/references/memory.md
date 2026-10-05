@@ -23,6 +23,8 @@ Self-improving notes for topic selection. Single canonical copy, no Claude-side 
 | 14 | The Psychology Of Being Ugly | scaffolded 2026-09-03, self-perception and attractiveness bias, user-supplied title, no script yet |
 | 15 | Why People Say Yes Far More Often Than You Think | scaffolded 2026-09-12, compliance underestimation, no script yet |
 | 16 | You Never Noticed How One Good Choice Lets You Make A Bad One | scaffolded 2026-09-19, moral licensing, no script yet |
+| 17 | Why One Bad Ending Ruins A Day That Was Mostly Good | scaffolded, peak-end rule, no script yet |
+| 18 | Why Your Brain Still Treats Silence Like A Warning Signal | scaffolded 2026-10-05, silence as threat detection, no script yet |
 | old 8 | Why You Stay Quiet When You Know The Room Is Wrong | abandoned 2026-08-12, unpublished, artifacts recoverable at `c9f048f` |
 | old 9 | Why You Think Everyone Is Watching When Nobody Is | abandoned 2026-08-12, unpublished, artifacts recoverable at `c9f048f` |
 
@@ -85,7 +87,18 @@ proposing a title.
 
 ## Proposed but not picked
 
-### 2026-09-19, batch 21, user picked title 4 (moral licensing -> project 16)
+### 2026-10-05, batch 22, user picked title 2 (silence as warning signal -> project 18)
+
+Batch drew on four distinct angles: hedonic adaptation (angle 2), threat-detection silence (angle 2), face judgment speed (angle 5), ritual/superstition (angle 1), and intermittent reinforcement/attachment (angle 1). The other four remain eligible.
+
+| Title | Theme | Numeric material available |
+| --- | --- | --- |
+| Why You Stop Wanting Something The Moment You Get It | habit and reward | Brickman and Campbell hedonic adaptation, 1978 lottery winner study; reward prediction error, dopamine |
+| Why You Judge A Stranger's Face Before You Know A Single Fact | social perception | Willis and Todorov 2006, 100 ms is enough to form a trustworthiness judgment; longer exposure raises confidence without raising accuracy |
+| Why You Knock On Wood When You Know It Does Nothing | ritual and meaning | Malinowski Trobriand contrast, elaborate magic for open-sea fishing and almost none for the safe lagoon; Damisch 2010, superstition group holed out an average of 6.4 putts versus 4.8 |
+| Why The Person Who Ignores You Is Hardest To Forget | love and attachment | intermittent reinforcement; Fisher fMRI rejection lighting reward circuits rather than pain circuits; Jankowiak and Fischer, romantic love in 88.5 percent of 166 societies |
+
+
 
 The user replied with a bare `4`. Batch drew on four angles and five distinct themes with
 plain vocabulary framing mistakes the viewer is making. The other four remain eligible.

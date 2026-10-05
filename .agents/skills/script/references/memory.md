@@ -872,3 +872,18 @@ Two things to check before accepting a tease: would a viewer who just watched th
 episode notice the same construction, and does the link survive being stated in one plain
 sentence. If the answer to the first is yes, change the shape. If the answer to the second is
 no, the two videos do not genuinely touch and the tease should be cut rather than fudged.
+
+## Project 18, silence as warning signal, cited (2026-10-05, neuroception and acoustic safety)
+
+Stephen Porges (Polyvagal Theory, neuroception: the vagal circuit monitors the acoustic environment for the prosodic mid-frequency range of calm human voice as a safety signal; its absence shifts the system toward defensive mobilization), John Cacioppo and William Patrick (loneliness as hypervigilance and social threat-scanning: reused from project 1 but for a different mechanism, the specific silence-as-threat scan rather than the crowd paradox), Jerome Kagan (behavioral inhibition and stimulus-offset asymmetry: the brainstem startle circuit responds more strongly to the offset of a familiar sound than to the onset of a novel one, because offset carries more information), Steven Feld (the Kaluli of Papua New Guinea, acoustemology, Sound and Sentiment 1982: the forest silence is bereavement and loss, which maps exactly to the ecological reality that predator presence produces acoustic quiet as every nearby animal freezes). Three behavioral/neuroscientists plus one anthropologist.
+
+Feld is fresh, first use on the channel. Cacioppo is reused with a clearly different mechanism (project 1 used hypervigilance for the crowd paradox; project 18 uses it for the silence-as-threat-scan architecture). Kagan is fresh, first use on the channel. Porges is fresh, first use on the channel.
+
+Craft notes:
+
+- Hook: the P14/P15 certainty-then-contradiction shape, fastest open-loop latency yet. "The house goes quiet and something in you wakes up." Complete paradox at word 8, about 2.7 seconds at 175 wpm. The "but" and mechanism (neuroception) land at word 51. Documented as a deliberate deviation similar to project 11's word-56 "but": the paradox lands at word 1, so the formal "but" is already working as a second reversal aimed at the viewer's own label.
+- End-screen tease shape: the unanswered question, first use of that shape. The body left a question open ("why does the end of the day feel the most exposed?") and the tease answers it by pointing at project 17, the peak-end rule. Plain-sentence link: the vagal threat-state is already running at day's end, and the peak-end rule then files that close as the representative moment of the whole day.
+- Shapes now used: 10 and 11 five-stepper, 12 object callback, 13 second example, 14 same mechanism opposite direction, 15 confession, 18 unanswered question. Remaining: the cold pivot.
+- Never-shame guardrail: "This is not anxiety. It is not a symptom of anything wrong with you."
+- 1,807 words, 152 sentences, 4 questions: 3 narration questions plus 1 CTA question.
+- Numeric material is currently thin for the thumbnail. No hard subtractable ratio locked. Pull a Cacioppo or Kagan measured percentage during metadata review, or the thumbnail stage will be starved.
