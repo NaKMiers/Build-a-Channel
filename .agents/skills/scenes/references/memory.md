@@ -2004,3 +2004,60 @@ What was rewritten, by trigger class. **Write these the safe way from the first 
 
 Not changed, judged low risk: FUNERAL text with a wreath, the hand lowering into cool water, the
 fire and singing scenes, ITURI 1950S, the angry face icon in the feed.
+
+## Project 18 (2026-10-06), silence as a warning signal: 288 prompts, 336 plan beats, 150 plates, 110 breaks
+
+Clean on every Step 3 check. 288 cues to 288 prompts, V2 anchor and lock on all 288 with zero V1
+strings, timestamps an exact diff with no duplicate stamps in the transcript, zero stray tokens, zero
+non-prompt lines, first byte `[`, zero adjacent pairs without a blank line, 793 lines, tier plan
+equal to prompts exactly (119 CLEAN / 152 LAYERED / 17 ATMOSPHERIC), one surface phrase per prompt,
+every break opening a PLATE, 29 references all resolving and all carrying the limit, every ledger
+return carrying its canonical stamp, no em dash, no yellow, ASCII throughout. Breaks 110 over 288 is
+one scene every 2.62 prompts, longest inherited run 8. Built data-first with the project 17 shape:
+four act files of `P()`/`V()`/`K()` calls with an `at(n)` cue assert, an overrides file, an assembler.
+
+Motif: **the sound arcs**, three small curved charcoal arcs beside a sound source, drawn while it
+sounds and gone the moment it stops. 41 beats. The script's whole argument is presence versus
+absence of sound, so the motif's natural delta is absence, which is rule 18 compliant by
+construction: "every sound arc in the room is gone" is the payoff of three separate build chains.
+
+### Real researchers: portraits without captions, names deferred to CapCut
+
+Porges, Cacioppo, Feld and Kagan are named and none is cast. Per the project 17 safety pass, each is
+a plain doodle portrait in an oval frame with **no** in-image name, and the name goes in as a CapCut
+overlay at `[0:23]`, `[2:00]`, `[3:08]` and `[4:49]`. The Porges portrait is a ledger object because
+he returns at `[0:51]` and `[7:06]`. Predators are drawn calm (walking, lying on a branch, eyes in
+grass), never attacking, and the Kagan infants are one happy toddler with a parent in a playroom.
+
+### Breaks came out at 1.96 on the first pass, the project 17 failure again
+
+One plan row per cue gave 152 plates and 147 breaks. Three levers fixed it, in this order of yield:
+(1) a CONT whitelist of 41 plates that are the next step on the same surface and subject, (2) moving
+adjacent evidence cards onto one surface so the guard lets them continue (neuro, porges and
+belowline to tinted teal; offset, clockstop and envelopes to white; notbroken, tuned and designed to
+cream), and (3) rebuilding three single-beat cards (SHOULD, failure of calm, character flaw) as one
+four-beat panel build. **Check the plate surface sequence string before placing breaks**: it shows
+at a glance where two same-surface plates sit side by side and could continue.
+
+A continuation must not inherit an unrelated object. The fan close-up after the closed-door card was
+whitelisted on surface alone and then removed, because the door would leak into the fan frame.
+
+### Budgets: the usual first-pass shape, fixed as data
+
+Story 44.8 and text 16.7 on the first pass. Story came down to 38.9 by moving ten frames whose place
+was decorative onto cards (predator lineup, withdrawing animals, the map, the speaker macro, the
+hand on the knob), each a prose rewrite. Text rose to 33.0 with a 46-entry plate caption keep-list.
+Final: story 38.9, cream 25.7, tint 21.2, white 8.3, cobalt 5.9. Registers STORY 26.7 (under its
+band: the script is three named mechanisms plus an onset-offset argument), CARD 19.8, DIAGRAM 14.6,
+HYBRID 14.2, PORTRAIT 13.2, SPLIT 11.5. Assets PLATE 44.6, VARIANT 40.2, CALLBACK 0.9, CAPCUT 14.3
+(plain `gap >= 3`, 48 beats, 31.7 per minute; the histogram was 92 / 48 / 11 / 2 at 2.5 / 3 / 3.5 /
+4). Eight reprises are PLATEs with `Motif: CALLBACK`. One 30 second block, the 5 second `10:30`
+tail, holds three beats and two shot tasks: arithmetic limit.
+
+Cast: @YOU 89, @SCANNER 51, @BAND 15, @KALULI 13. @YOU is 37.9 percent of the 235 cues where rule 12
+allows him; the denominator excludes the Kaluli and predator act (cues 85 to 122), the Kagan
+playroom and the band act, and zero @YOU frames sit inside them. `characters/YOU.png` is a .png.
+
+Generators live in the session scratchpad as `p18_dsl.py`, `p18_a.py` to `p18_d.py`, `p18_ovr.py`,
+`p18_build.py` and `p18_audit.py`. Per the project 11 note, `image-prompts.md` plus `visual-plan.md`
+remain the recovery pair.

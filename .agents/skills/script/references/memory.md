@@ -713,13 +713,22 @@ Craft notes:
   laugh's own message "we are fine, you and me", "I am with you", "We are on the same side".
   No narrator voice.
 - **End-screen tease shape: the object callback, second use, first since project 12.** The
-  object is the laugh itself: think of the hardest laugh this year, you cannot remember the
-  joke, you remember the laugh and when in the night it came. Target is project 17, the
-  immediately preceding project, per the standing user preference. Plain-sentence link:
-  memory keeps the laugh and drops the joke because it scores an evening by its strongest
-  and last moments, which is project 17's peak-end rule. Wording varied from 16 and 17's
-  "There is a video on this channel called" to "the video on your screen right now".
-- 2,221 words, 197 sentences, 3 questions, all narration (the Provine sorting question and
+  object is the laugh as a sound. **Retargeted on 2026-10-06 by user instruction ("it should
+  mention the project 18 at the end")** after the merge renumbered this project from 18 to 19
+  and a silence video took number 18. Draft 1 pointed at project 17 (the hardest laugh of the
+  year, you remember the laugh and not the joke, peak-end). That paragraph was replaced; the
+  body was untouched. Shipped version: listen to the room you are in; if the last laugh you
+  heard today was typed, it is quiet; the laugh was also part of the sound your own body
+  listens for, people close by and not alarmed; take it away and something checks the corners
+  of a safe room; then the title and the instruction. Plain-sentence link: laughter is the
+  loudest form of the calm human sound project 18's Porges scan treats as safety, and project
+  18 is what the body does when that sound is gone. It also lands on the second mismatch's
+  "a typed laugh is solitude with good manners", so the bridge falls out of this script's own
+  argument. Relief line kept for the never-shame guardrail: "Nothing is wrong with you when
+  that happens. Something is missing." Confirms again that **the user wants the tease to point
+  at the immediately preceding project number**, and that a renumber changes which project
+  that is.
+- 2,252 words after the retarget (2,221 at first draft), 3 questions, all narration (the Provine sorting question and
   the two-question self-audit "Was that funny? No. Then why did you laugh?"). No CTA
   question this time, so the total sits on the fixture.
 - **Numeric material for the thumbnail is strong**: 10 to 20 percent of laughs follow a
@@ -932,7 +941,8 @@ Shapes available besides the projects 10 and 11 five-stepper, none of them a new
 
 Rotation as of 2026-10-06: 10 and 11 five-stepper, 12 object callback, 13 second example,
 14 same mechanism opposite direction, 15 confession, 16 unanswered question, 17 cold pivot,
-18 object callback (second use). Pick the least recently used next.
+18 unanswered question (second use), 19 object callback (second use). Least recently used next:
+the second example (13), then same mechanism opposite direction (14), then the confession (15).
 
 Shapes used so far: projects 10 and 11, the five-stepper. Project 12, the object callback,
 handing the episode's recurring object to the next topic. Project 13, the second example,

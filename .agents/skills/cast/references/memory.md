@@ -833,6 +833,68 @@ the no-text rule.
   the positive-mitten grep, the project 6 fault from a new sentence shape. Rewritten as `never
   mittens, blobs, or nubs`.
 
+## Project 19 (2026-10-06, scaffolded as 18), laughing at unfunny jokes - a 5-entry cast, an animal, and a likeness refused
+
+The merge that renumbered this project to 19 deleted the untracked cast file with the old
+18 folder; it was restored from the desktop Trash the same day. **Commit a cast file before any
+renumber or merge touches its folder.**
+
+`@YOU` (Toss, short-sleeve polo shirt in lavender `#B79AD9`, flat two-point knit collar, short
+two-button placket, ribbed sleeve bands, no hood), `@STUDENT` (Provine's 1990s field observer,
+tan `#C4965A` open corduroy jacket over a white tee, shoulder-length hair, golden yellow
+headband, blank spiral notebook and index cards), `@CHIMP` (young chimpanzee, brown `#8B5E3C`
+head and fur body, tan `#D9A15B` face disc, ears and feet), `@FRIEND` (grass green `#3A9E3A`
+roll-neck jumper, cloud of tight curls), `@BOSS` (sky blue `#6EB5E8` buttoned shirt, red
+`#D94040` tie, side parting, rectangular glasses). Chapter palette Coral `#D96F5F`, Dusty teal
+`#67A6A3`, Olive `#8FA35A`. Five entries, no group. Nothing carried over.
+
+### A real named researcher whose likeness cannot be verified is not cast
+
+Provine is the most-named figure in the psychology pillar and would normally be cast on the
+likeness rule. No reliable portrait could be found (no Wikipedia image, no usable photo on the
+UMBC biography or memorial pages), so drawing him would mean inventing a beard or glasses and
+calling it a likeness. **When a real person's appearance cannot be verified, do not cast them;
+cast the on-screen figure the script itself supplies doing their work** (here "he and his
+students"), and write into the cast file that `scenes` must not draw the researcher as a person.
+Verify a likeness with a quick check before writing it, the same way the two-peak tuft is
+verified against `brand/MASCOT.jpeg`. Dunbar does have a Commons portrait, which is noted in
+case a later video puts him on screen.
+
+### No ancestral human when the anthropology is apes
+
+The anthropology pillar's on-screen world is young chimpanzees (van Hooff's play face,
+Davila-Ross's tickling, Dunbar's grooming); the band and the joking-relationship in-laws are
+one passage each. So the ancestral slot is an animal, the first on the channel. The channel
+grammar held with three additions only: a brown head circle with a large tan face disc holding
+the standard face, two round ears (the one place ears are allowed), and long arms. **The play face
+is specified with no teeth at all**, because bared teeth are a threat display and the script's
+claim is that the laugh means "this is not real"; teeth, fangs and snarls lead the NEGATIVE.
+The wrestle needs two apes and the file says they are two copies of this one design.
+
+### The contrast pair is the polite laugh and the real laugh
+
+The shift splits laughter into the polite laugh at work and the helpless laugh with the people
+you want beside you, so the manager and the friend are both cast on the project 10 A-versus-B
+rule. The manager got the project 15 temperament negatives (no scowl, no pointing, no crossed
+arms), because the video tells the viewer the polite laugh is goodwill, and his tie is the only
+red on the cast, so the episode's red X must never land on him.
+
+### Laughter is a text trap of its own
+
+Every laughing face invites lettered "ha ha" beside the mouth. Each sheet with a laugh enumerates
+no ha ha, no lol, no onomatopoeia, no sound-effect lettering and no speech bubbles inside its NO
+TEXT block, and the laugh itself was refused a cast slot and handed to `scenes` as three curved
+charcoal sound strokes. The notebook and index cards are the other trap: blank, no ruled lines,
+no tally marks, flagged first in Generating.
+
+### Step 5 grep, eleventh extension and the `top` trap again
+
+- `fur body` added to the garment alternation in `SKILL.md`.
+- "There is no hair shape on top of the head" on the chimp sheet matched `top` ahead of the
+  fur body declaration, the project 15 cause from a new sentence. Rewritten as "on the crown".
+  **Any sheet, not only one whose garment is a top, must avoid the bare word "top" before its
+  declaration.**
+
 ## Resolved conflict: hand shape
 
 The retired prompts contradicted each other. Splayed line fingers win, `mitten` is banned. The
