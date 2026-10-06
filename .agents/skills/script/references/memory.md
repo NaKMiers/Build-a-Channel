@@ -662,6 +662,73 @@ Craft notes:
   ever act on") and was caught by the grep in project 2's note. **Run that grep every time**,
   it has now caught a real hit.
 
+## Project 18, laughing at unfunny jokes, cited (2026-10-06, social laughter)
+
+Robert Provine (about 1,200 overheard laugh episodes in malls, sidewalks and campus halls,
+only about 10 to 20 percent preceded by anything joke-like, speakers laughing about 46
+percent more than listeners, the punctuation effect; plus the Provine and Fischer 1989 diary
+finding of about 30 times more laughter in company than alone), Rod Martin and Nicholas
+Kuiper (1999 laughter diaries, about 18 laughs a day on average), Sophie Scott (Warren,
+Scott and colleagues 2006 on heard laughter priming the premotor face areas; McGettigan,
+Scott and colleagues 2015 on posed laughter engaging mentalizing regions), Jan van Hooff
+(the chimpanzee play face, relaxed open-mouth display), Marina Davila-Ross (2009 tickle
+vocalizations of orangutans, gorillas, chimpanzees, bonobos and human infants, acoustic tree
+matching the ape phylogeny, roots 10 to 16 million years back), Robin Dunbar (grooming up to
+a fifth of the day, about 40 percent needed for a human-sized group; Dunbar et al. 2012 pain
+threshold after social laughter versus a documentary; Dezecache and Dunbar 2012 laughter
+groups of about three; Manninen et al. 2017 Finnish PET study, Dunbar coauthor, opioid
+release with friends), A. R. Radcliffe-Brown (1940, "On Joking Relationships", customary
+teasing between a man and his wife's siblings, the target required to take no offence), Greg
+Bryant and colleagues (2016 PNAS, co-laughter of friends versus strangers identified above
+chance by listeners in 24 societies). Three-plus behavioral scientists, one primatologist
+lineage, two anthropologists (Dunbar, Radcliffe-Brown) plus Bryant's cross-cultural study.
+
+**Radcliffe-Brown, Provine, Scott, van Hooff, Davila-Ross and Bryant are all fresh, first
+use on the channel.** Dunbar is reused for an entirely new finding (laughter as grooming at
+a distance), not the 150.
+
+Craft notes:
+
+- **Hook: the viewer counts two numbers about their own day and the gap is the paradox.**
+  "Count the times you laughed today. Now count the things that were actually funny. Those
+  two numbers are not even close." Paradox complete at word 21, about 7 seconds at 175 wpm.
+  Beat 1 ends at word 21, "but" at 48, mechanism ("social laughter") at 70, open loop from
+  83. All four checkpoints pass. A self-administered count is a third reusable open-loop
+  shape after the P4 paradox and the P14/P15 "certainty then contradiction" pair.
+- **Twist that carries the psychology pillar: the speaker laughs more than the listener.**
+  It kills the "laughter is a reward for the joke" reading without argument, and it returns
+  in the mismatch to dissolve the "I must be funny to be liked" belief. A single finding
+  doing two jobs, same economy as Gottman's 5 to 1 in project 12.
+- **The modern mismatch has three layers, ordered by cost**: laughter read as a score (the
+  audit that makes you feel fake), laughter moved into silent text (no contagion, no
+  endorphins, "a typed laugh is solitude with good manners"), and the belief that you must
+  be funny. The shift is one reframe, "stop asking whether it was funny, ask who you were
+  laughing with", and its single concrete consequence is putting the laugh back where it can
+  make a sound.
+- **Proportions with the hook counted as psychology setup: psychology 33, anthropology 35,
+  mismatch plus shift 32.** Anthropology runs long because it needs three steps (play face,
+  grooming at a distance, joking relationships) to get from ape safety signal to human
+  alliance signal. Deliberate, same class of overrun as project 14.
+- First-person grep hits are all modeled speech: the overheard stimulus "I know", and the
+  laugh's own message "we are fine, you and me", "I am with you", "We are on the same side".
+  No narrator voice.
+- **End-screen tease shape: the object callback, second use, first since project 12.** The
+  object is the laugh itself: think of the hardest laugh this year, you cannot remember the
+  joke, you remember the laugh and when in the night it came. Target is project 17, the
+  immediately preceding project, per the standing user preference. Plain-sentence link:
+  memory keeps the laugh and drops the joke because it scores an evening by its strongest
+  and last moments, which is project 17's peak-end rule. Wording varied from 16 and 17's
+  "There is a video on this channel called" to "the video on your screen right now".
+- 2,221 words, 197 sentences, 3 questions, all narration (the Provine sorting question and
+  the two-question self-audit "Was that funny? No. Then why did you laugh?"). No CTA
+  question this time, so the total sits on the fixture.
+- **Numeric material for the thumbnail is strong**: 10 to 20 percent of laughs follow a
+  joke, 30 times more laughter with others, about 18 laughs a day, 1,200 laughs overheard, 1
+  grooming partner versus 3 laughing, 20 percent versus 40 percent of the day, 24 societies,
+  10 to 16 million years. The 1-in-5 and the 30-to-1 are the cleanest two-number pair.
+- Figures to re-verify during `metadata` citations: the Bryant clip length (written as "a
+  few seconds" on purpose) and the claim that listeners beat chance in every society.
+
 ## NARRATION PACE: use 175 wpm, not 169 (settled 2026-09-01)
 
 The 169 wpm figure used throughout this file to convert the four-beat hook budget into word
@@ -862,6 +929,10 @@ Shapes available besides the projects 10 and 11 five-stepper, none of them a new
   other video is about the one place it hurts most.
 - **The cold pivot.** One short sentence, no bridge at all, straight to the title. Works when
   the echo has already landed hard and any bridge would dilute it.
+
+Rotation as of 2026-10-06: 10 and 11 five-stepper, 12 object callback, 13 second example,
+14 same mechanism opposite direction, 15 confession, 16 unanswered question, 17 cold pivot,
+18 object callback (second use). Pick the least recently used next.
 
 Shapes used so far: projects 10 and 11, the five-stepper. Project 12, the object callback,
 handing the episode's recurring object to the next topic. Project 13, the second example,

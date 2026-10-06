@@ -23,6 +23,8 @@ Self-improving notes for topic selection. Single canonical copy, no Claude-side 
 | 14 | The Psychology Of Being Ugly | scaffolded 2026-09-03, self-perception and attractiveness bias, user-supplied title, no script yet |
 | 15 | Why People Say Yes Far More Often Than You Think | scaffolded 2026-09-12, compliance underestimation, no script yet |
 | 16 | You Never Noticed How One Good Choice Lets You Make A Bad One | scaffolded 2026-09-19, moral licensing, no script yet |
+| 17 | Why One Bad Ending Ruins A Day That Was Mostly Good | peak-end rule, scaffolded outside this skill (batch 20 title 3), scripted, transcribed, cast, thumbnails done; row backfilled 2026-10-06 |
+| 18 | Why You Laugh At Jokes That Aren't Even Funny | scaffolded and scripted 2026-10-06, social laughter |
 | old 8 | Why You Stay Quiet When You Know The Room Is Wrong | abandoned 2026-08-12, unpublished, artifacts recoverable at `c9f048f` |
 | old 9 | Why You Think Everyone Is Watching When Nobody Is | abandoned 2026-08-12, unpublished, artifacts recoverable at `c9f048f` |
 
@@ -84,6 +86,46 @@ deleted-but-recoverable projects in git history, not just the working tree, befo
 proposing a title.
 
 ## Proposed but not picked
+
+### 2026-10-06, batch 22, user picked title 4 (social laughter -> project 18)
+
+The user replied with a bare `4`. Batch was built entirely from fresh mechanisms rather than
+the long-unpicked pool (3AM sleep, Wilson boredom, planning fallacy, relative income have now
+each been passed over three to five times; treat that as a quiet signal, not a rejection).
+Spread across five themes and angles 1, 2 and 5. The other four remain eligible.
+
+| Title | Theme | Numeric material available |
+| --- | --- | --- |
+| Why You Quit Right After Telling Everyone Your Plan | habit and willpower, identity | Gollwitzer et al. 2009 identity-goal announcements, students whose intention was acknowledged worked on the goal for less time; symbolic self-completion; reputation enforcement of announced commitments inside a band |
+| Why You Never Sleep Well On Your First Night Away | sleep and rest | Tamaki et al. 2016 first-night effect, one hemisphere's default mode network stays more vigilant and reacts to deviant sounds; Samson Hadza sentinel study, 18 minutes of whole-group sleep across 20 days |
+| You Can't Actually Explain How A Zipper Works | identity and knowledge | Rozenblit and Keil 2002 illusion of explanatory depth; Sloman and Fernbach community of knowledge; Henrich cumulative culture |
+| Why You Love The Wobbly Shelf You Built Yourself | identity and effort | Norton, Mochon and Ariely 2011 IKEA effect, self-assemblers paid roughly 63 percent more for their own boxes; effort as a reliability signal |
+
+Selected: project 18, **Why You Laugh At Jokes That Aren't Even Funny**, social laughter.
+Research to reuse so `script` does not rediscover it (verify exact figures during `script`):
+
+- **Psychology.** Robert Provine's field observations of about 1,200 spontaneous laughter
+  episodes: only roughly 10 to 20 percent followed anything resembling a joke, the speaker
+  laughed more than the listener, and people were about 30 times more likely to laugh in
+  company than alone. Laughter is a social signal first and a humour verdict second. Pair
+  with Scott and colleagues on contagious laughter (hearing laughter primes the premotor
+  areas that produce it) and Bryant et al. 2016, listeners across 24 societies could tell
+  friends' shared laughter from strangers' from a one-second clip.
+- **Anthropology.** Dunbar's grooming-gap hypothesis: primates bond through one-on-one
+  grooming, which caps a group around 50, and human laughter works as grooming at a
+  distance for several people at once. Dunbar et al. 2012 found social laughter raised
+  pain thresholds, the endorphin signature of bonding. Extend with the ape play pant
+  (Davila-Ross on great-ape laughter) as the ancestral form, a signal that rough contact is
+  play not attack.
+- **Modern mismatch.** The viewer reads their own polite laugh as fake, or another
+  person's laugh as a judgment on how funny they are, when the system was never scoring
+  jokes. It was scoring safety and alliance. The awkward forced laugh in a meeting is the
+  ancient signal firing in a room where bonds are thin.
+- **Numeric material is strong**: 10 to 20 percent, 30 times, 24 societies, the group
+  ceiling of about 50 for grooming. Two subtractable numbers are available for `thumbnail`.
+- **Editorial note.** Keep the takeaway a single reframe (laughter is how you tell someone
+  you are on their side, so stop auditing it for honesty) and never let it become a
+  how-to-be-funny guide.
 
 ### 2026-09-19, batch 21, user picked title 4 (moral licensing -> project 16)
 

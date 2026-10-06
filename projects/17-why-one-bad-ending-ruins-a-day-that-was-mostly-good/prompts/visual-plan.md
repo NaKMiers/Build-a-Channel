@@ -48,14 +48,14 @@ Recurring motif: the square row, a long even row of small blank white squares wi
 | B022 | [0:36] | edit event inside the held plate | PORTRAIT | medium | LAYERED | CAPCUT | P010 | B021 | CapCut slow push in toward the newest element of the held plate, no new generation | - | - |
 | B023 | [0:37] | a hospital corridor in Toronto | STORY | wide | ATMOSPHERIC | PLATE | P011 | - | - | - | TORONTO |
 | B024 | [0:40] | the early nineteen nineties | STORY | wide | ATMOSPHERIC | VARIANT | P011 | B023 | one paper wall calendar now hangs on the bare stretch of wall at frame left with EARLY 1990S lettered across its top | - | EARLY 1990S |
-| B025 | [0:41] | Kahneman and Redelmeier | PORTRAIT | close | LAYERED | PLATE | P012 | - | - | - | KAHNEMAN / REDELMEIER |
+| B025 | [0:41] | Kahneman and Redelmeier | PORTRAIT | close | LAYERED | PLATE | P012 | - | - | - | - |
 | B026 | [0:44] | something nobody had bothered to do | PORTRAIT | close | LAYERED | VARIANT | P012 | B025 | one plain clipboard holding a blank sheet appears in the bare gap between the two portrait ovals | - | - |
 | B027 | [0:47] | one hundred and fifty four patients | SPLIT_OR_SCALE | scale | CLEAN | PLATE | P013 | - | - | - | 154 |
-| B028 | [0:48] | through colonoscopies | SPLIT_OR_SCALE | scale | CLEAN | VARIANT | P013 | B027 | one plain procedure room door appears standing in the bare right third, with a long charcoal arrow running to it from the front of the rows | - | - |
+| B028 | [0:48] | through colonoscopies | SPLIT_OR_SCALE | scale | CLEAN | VARIANT | P013 | B027 | one plain clinic room door appears standing in the bare right third, with a long charcoal arrow running to it from the front of the rows | - | - |
 | B029 | [0:51] | every sixty seconds | STORY | medium | LAYERED | PLATE | P014 | - | - | - | - |
 | B030 | [0:52] | a screen prompts the rating | STORY | medium | LAYERED | VARIANT | P014 | B029 | the monitor's blank screen now shows one plain bold charcoal question mark | - | - |
 | B031 | [0:53] | edit event inside the held plate | STORY | medium | LAYERED | CAPCUT | P014 | B030 | CapCut slow push in toward the newest element of the held plate, no new generation | - | - |
-| B032 | [0:55] | a slider from no pain to extreme | DIAGRAM | macro | CLEAN | PLATE | P015 | - | - | - | NO PAIN / EXTREME |
+| B032 | [0:55] | a slider from no pain to extreme | DIAGRAM | macro | CLEAN | PLATE | P015 | - | - | - | NONE / MOST |
 | B033 | [0:57] | edit event inside the held plate | DIAGRAM | macro | CLEAN | CAPCUT | P015 | B032 | CapCut soft scale-up on the key object of the held plate, no new generation | - | - |
 | B034 | [0:58] | a minute by minute record | DIAGRAM | macro | CLEAN | VARIANT | P015 | B032 | one plain landscape white record card with a thin charcoal baseline across its lower third appears in the bare bottom band, one jagged hand-drawn charcoal trace line running across it with one small charcoal dot marking each minute | - | - |
 | B035 | [1:00] | edit event inside the held plate | DIAGRAM | macro | CLEAN | CAPCUT | P015 | B034 | CapCut gentle pan across the held plate toward its focal subject, no new generation | - | - |
@@ -66,7 +66,7 @@ Recurring motif: the square row, a long even row of small blank white squares wi
 | B040 | [1:09] | the record holds everything | DIAGRAM | macro | CLEAN | PLATE | P018 | - | - | - | - |
 | B041 | [1:11] | everything the patient went through | DIAGRAM | macro | CLEAN | VARIANT | P018 | B040 | one long charcoal bracket appears drawn under the full length of the trace, from its first dot to its last | - | - |
 | B042 | [1:14] | add it up for the total | DIAGRAM | macro | CLEAN | VARIANT | P018 | B041 | one tall stacked column of small red blocks appears standing in the bare right third of the card | - | - |
-| B043 | [1:16] | what suffering should be | CARD | card | CLEAN | PLATE | P019 | - | - | - | SUFFERING |
+| B043 | [1:16] | what suffering should be | CARD | card | CLEAN | PLATE | P019 | - | - | - | DISCOMFORT |
 | B044 | [1:17] | how much | CARD | card | CLEAN | VARIANT | P019 | B043 | one small stacked column of red blocks appears just after the equals sign | - | - |
 | B045 | [1:18] | times how long | CARD | card | CLEAN | VARIANT | P019 | B044 | a bold charcoal multiplication sign and one small charcoal clock icon appear after the red column | - | - |
 | B046 | [1:20] | it did not match | CARD | card | CLEAN | PLATE | P020 | - | - | - | NO MATCH |
@@ -101,26 +101,26 @@ Recurring motif: the square row, a long even row of small blank white squares wi
 | B075 | [2:15] | the one actually there | STORY | wide | LAYERED | PLATE | P032 | - | - | - | - |
 | B076 | [2:16] | edit event inside the held plate | STORY | wide | LAYERED | CAPCUT | P032 | B075 | CapCut slow push in toward the newest element of the held plate, no new generation | - | - |
 | B077 | [2:18] | living through every minute | STORY | wide | LAYERED | VARIANT | P032 | B075 | a long even row of small blank white squares with bold charcoal outlines appears running along the bare wall behind the outline figure | square row | - |
-| B078 | [2:20] | the only one that suffers | STORY | wide | LAYERED | VARIANT | P032 | B077 | one small red jagged pain spark appears beside the outline figure's head | square row | - |
+| B078 | [2:20] | the only one that suffers | STORY | wide | LAYERED | VARIANT | P032 | B077 | one small red zigzag spark appears beside the outline figure's head | square row | - |
 | B079 | [2:22] | the remembering self writes the report | STORY | medium | LAYERED | PLATE | P033 | - | - | - | - |
 | B080 | [2:25] | decides what the episode was | STORY | medium | LAYERED | VARIANT | P033 | B079 | one red rubber stamp now stands upright on the desk beside the blank sheet | - | - |
 | B081 | [2:27] | every future decision | STORY | medium | LAYERED | VARIANT | P033 | B080 | one wall calendar appears on the bare wall behind @JUDGE with a single future date circled in red | - | - |
 | B082 | [2:29] | edit event inside the held plate | STORY | medium | LAYERED | CAPCUT | P033 | B081 | CapCut slow push in toward the newest element of the held plate, no new generation | - | - |
 | B083 | [2:30] | they disagree constantly | HYBRID | medium | LAYERED | PLATE | P034 | - | - | - | - |
 | B084 | [2:32] | the remembering self wins | HYBRID | medium | LAYERED | VARIANT | P034 | B083 | one bold charcoal check mark appears in the air above @JUDGE | - | - |
-| B085 | [2:34] | the experiencing self gets no vote | HYBRID | medium | LAYERED | VARIANT | P034 | B084 | one small empty ballot box with a bold red X over its slot appears in the bare strip in front of the outline figure | - | NO VOTE |
+| B085 | [2:34] | the experiencing self gets no vote | HYBRID | medium | LAYERED | VARIANT | P034 | B084 | one small empty wooden suggestion box with a bold red X over its slot appears in the bare strip in front of the outline figure | - | NO SAY |
 | B086 | [2:37] | it does not stick around | HYBRID | medium | LAYERED | VARIANT | P034 | B085 | the outline figure is now walking out through the left edge of the card, half of it already gone | - | - |
 | B087 | [2:39] | the finding got stranger | PORTRAIT | close | LAYERED | PLATE | P035 | - | - | - | - |
 | B088 | [2:40] | you can use it on purpose | PORTRAIT | close | LAYERED | VARIANT | P035 | B087 | one small charcoal lever switch appears in the bare right third, flipped up to ON | - | ON PURPOSE |
 | B089 | [2:42] | edit event inside the held plate | PORTRAIT | close | LAYERED | CAPCUT | P035 | B088 | CapCut gentle pan across the held plate toward its focal subject, no new generation | - | - |
-| B090 | [2:44] | Fredrickson joins the work | PORTRAIT | close | LAYERED | PLATE | P036 | - | - | - | FREDRICKSON |
+| B090 | [2:44] | Fredrickson joins the work | PORTRAIT | close | LAYERED | PLATE | P036 | - | - | - | - |
 | B091 | [2:45] | edit event inside the held plate | PORTRAIT | close | LAYERED | CAPCUT | P036 | B090 | CapCut slow push in toward the newest element of the held plate, no new generation | - | - |
 | B092 | [2:47] | a lab with cold water | STORY | wide | LAYERED | PLATE | P037 | - | - | - | - |
 | B093 | [2:48] | the short trial | STORY | wide | LAYERED | VARIANT | P037 | B092 | one wall chart appears pinned on the bare stretch of wall above the bench, showing a row of six small blank white squares with bold charcoal outlines, one square per ten seconds | square row | SHORT TRIAL |
 | B094 | [2:49] | your hand goes in the water | STORY | macro | LAYERED | PLATE | P038 | - | - | - | - |
 | B095 | [2:51] | fourteen degrees for sixty seconds | STORY | macro | LAYERED | VARIANT | P038 | B094 | one small tag reading 14 C now hangs from the thermometer on the tank rim | - | 14 C |
 | B096 | [2:54] | not freezing | STORY | macro | LAYERED | VARIANT | P038 | B095 | one small ice cube with a bold red X across it appears in the bare corner above the water | - | - |
-| B097 | [2:55] | cold enough to hurt | STORY | macro | LAYERED | VARIANT | P038 | B096 | three small red jagged pain sparks appear around the submerged fingers | - | - |
+| B097 | [2:55] | cold enough to hurt | STORY | macro | LAYERED | VARIANT | P038 | B096 | three small red zigzag sparks appear around the fingers in the water | - | - |
 | B098 | [2:58] | the long trial, same sixty seconds | DIAGRAM | diagram | CLEAN | PLATE | P039 | - | - | CALLBACK | LONG TRIAL |
 | B099 | [3:00] | edit event inside the held plate | DIAGRAM | diagram | CLEAN | CAPCUT | P039 | B098 | CapCut soft scale-up on the key object of the held plate, no new generation | - | - |
 | B100 | [3:01] | thirty seconds more | DIAGRAM | diagram | CLEAN | VARIANT | P039 | B098 | three more squares of the same size appear straight after the sixth, filled flat pale blue | square row | - |
@@ -133,7 +133,7 @@ Recurring motif: the square row, a long even row of small blank white squares wi
 | B107 | [3:15] | thirty extra seconds | CARD | card | CLEAN | PLATE | P042 | - | - | - | - |
 | B108 | [3:16] | cannot be the better deal | CARD | card | CLEAN | VARIANT | P042 | B107 | the golden star sticker is now stuck onto the left tag | - | - |
 | B109 | [3:19] | they asked a simple question | STORY | medium | LAYERED | PLATE | P043 | - | - | - | - |
-| B110 | [3:21] | which would you do again | STORY | medium | LAYERED | VARIANT | P043 | B109 | a speech bubble appears above @KAHNEMAN holding two tiny glass tank icons side by side with a question mark between them | - | - |
+| B110 | [3:21] | which would you do again | STORY | medium | LAYERED | VARIANT | P043 | B109 | a speech bubble appears above @RESEARCHER holding two tiny glass tank icons side by side with a question mark between them | - | - |
 | B111 | [3:23] | seven in ten chose longer | SPLIT_OR_SCALE | scale | CLEAN | PLATE | P044 | - | - | - | 7 IN 10 |
 | B112 | [3:26] | volunteered for more pain | SPLIT_OR_SCALE | scale | CLEAN | VARIANT | P044 | B111 | the seven hand-raising figures have now taken one step forward into the bare strip in front of the line | - | - |
 | B113 | [3:28] | it finished on a better note | DIAGRAM | diagram | CLEAN | PLATE | P045 | - | - | square row | - |
@@ -156,11 +156,11 @@ Recurring motif: the square row, a long even row of small blank white squares wi
 | B130 | [4:04] | the other got the same | DIAGRAM | diagram | CLEAN | VARIANT | P053 | B129 | the lower bar is now labelled GROUP B | - | GROUP B |
 | B131 | [4:06] | plus three minutes at the end | DIAGRAM | diagram | CLEAN | VARIANT | P053 | B130 | one short pale segment made of three small squares appears attached to the right end of the lower bar | - | +3 MIN |
 | B132 | [4:08] | the tip of the scope | CARD | macro | CLEAN | PLATE | P054 | - | - | - | - |
-| B133 | [4:09] | just resting there | CARD | macro | CLEAN | VARIANT | P054 | B132 | one plain pause symbol of two short charcoal bars appears in the bare space beside the resting tip | - | - |
+| B133 | [4:09] | just resting there | CARD | macro | CLEAN | VARIANT | P054 | B132 | one plain pause symbol of two short charcoal bars appears in the bare space beside the resting dial | - | - |
 | B134 | [4:11] | mild discomfort | PORTRAIT | close | LAYERED | PLATE | P055 | - | - | - | MILD |
-| B135 | [4:12] | nothing medically useful | PORTRAIT | close | LAYERED | VARIANT | P055 | B134 | one plain charcoal-outlined medical cross icon with a bold red X across it appears in the bare space beside the head of @PATIENT | - | - |
+| B135 | [4:12] | nothing medically useful | PORTRAIT | close | LAYERED | VARIANT | P055 | B134 | one plain charcoal-outlined stethoscope icon with a bold red X across it appears in the bare space beside the head of @PATIENT | - | - |
 | B136 | [4:15] | more total time | DIAGRAM | scale | CLEAN | PLATE | P056 | - | - | - | TIME |
-| B137 | [4:16] | more total discomfort | DIAGRAM | scale | CLEAN | VARIANT | P056 | B136 | two stacked red bars appear in the bare right half under the word PAIN, the lower one longer by a short extra segment | - | PAIN |
+| B137 | [4:16] | more total discomfort | DIAGRAM | scale | CLEAN | VARIANT | P056 | B136 | two stacked red bars appear in the bare right half under the word DISCOMFORT, the lower one longer by a short extra segment | - | DISCOMFORT |
 | B138 | [4:17] | everyone agreed to be in a study | CARD | macro | LAYERED | PLATE | P057 | - | - | - | - |
 | B139 | [4:19] | the only reason it could run | CARD | macro | LAYERED | VARIANT | P057 | B138 | a charcoal signature scribble now fills the signature line at the bottom of the form | - | - |
 | B140 | [4:21] | edit event inside the held plate | CARD | macro | LAYERED | CAPCUT | P057 | B139 | CapCut gentle pan across the held plate toward its focal subject, no new generation | - | - |
@@ -224,7 +224,7 @@ Recurring motif: the square row, a long even row of small blank white squares wi
 | B198 | [6:13] | people worked this out long ago | STORY | wide | LAYERED | VARIANT | P086 | B197 | a line of small generic doodle figures in plain robes appears walking up the empty stretch of path toward the arch | - | - |
 | B199 | [6:16] | before anyone measured it | STORY | wide | LAYERED | VARIANT | P086 | B198 | the line of robed figures now passes through the arch, the first figures already on the far side | - | - |
 | B200 | [6:18] | what people do with endings | CARD | macro | CLEAN | PLATE | P087 | - | - | - | ENDINGS |
-| B201 | [6:20] | Arnold van Gennep | PORTRAIT | medium | LAYERED | PLATE | P088 | - | - | - | VAN GENNEP |
+| B201 | [6:20] | Arnold van Gennep | PORTRAIT | medium | LAYERED | PLATE | P088 | - | - | - | - |
 | B202 | [6:23] | hundreds of societies a century ago | PORTRAIT | medium | LAYERED | VARIANT | P088 | B201 | one large world map appears pinned on the bare wall behind him, dotted with many small red pins | - | - |
 | B203 | [6:25] | the same shape almost everywhere | DIAGRAM | diagram | CLEAN | PLATE | P089 | - | - | - | - |
 | B204 | [6:27] | edit event inside the held plate | DIAGRAM | diagram | CLEAN | CAPCUT | P089 | B203 | CapCut soft scale-up on the key object of the held plate, no new generation | - | - |
@@ -240,12 +240,12 @@ Recurring motif: the square row, a long even row of small blank white squares wi
 | B214 | [6:45] | an act everybody witnesses | STORY | overhead | LAYERED | PLATE | P093 | - | - | - | - |
 | B215 | [6:48] | the feast, the washing, the name, the declaration | HYBRID | card | LAYERED | PLATE | P094 | - | - | - | - |
 | B216 | [6:50] | the final washing | HYBRID | card | LAYERED | VARIANT | P094 | B215 | the top right panel now holds two generic hands pouring water from a clay jug into a shallow basin | - | - |
-| B217 | [6:52] | the name is given | HYBRID | card | LAYERED | VARIANT | P094 | B216 | the bottom left panel now holds one generic elder lifting a small swaddled baby toward the sky before a small circle of figures | - | - |
+| B217 | [6:52] | the name is given | HYBRID | card | LAYERED | VARIANT | P094 | B216 | the bottom left panel now holds one generic elder standing beside a small wooden cradle hung with flowers, a small circle of figures around it | - | - |
 | B218 | [6:54] | the group says it is over | HYBRID | card | LAYERED | VARIANT | P094 | B217 | the bottom right panel now holds a circle of generic figures raising their hands together in one shout | - | - |
 | B219 | [6:57] | you have been to one of these | STORY | medium | LAYERED | PLATE | P095 | - | - | - | - |
 | B220 | [6:58] | a funeral | STORY | medium | LAYERED | VARIANT | P095 | B219 | one round flower wreath on a stand appears in the bare space beside the lectern | - | FUNERAL |
 | B221 | [7:00] | a wedding or a graduation | SPLIT_OR_SCALE | card | LAYERED | PLATE | P096 | - | - | - | WEDDING / GRADUATION |
-| B222 | [7:02] | Colin Turnbull | PORTRAIT | medium | LAYERED | PLATE | P097 | - | - | - | TURNBULL |
+| B222 | [7:02] | Colin Turnbull | PORTRAIT | medium | LAYERED | PLATE | P097 | - | - | - | - |
 | B223 | [7:05] | the Ituri forest in the nineteen fifties | STORY | wide | ATMOSPHERIC | PLATE | P098 | - | - | - | ITURI 1950S |
 | B224 | [7:08] | after a death | STORY | medium | LAYERED | PLATE | P099 | - | - | - | - |
 | B225 | [7:10] | not a ceremony | CARD | card | CLEAN | PLATE | P100 | - | - | - | NOT ONE |

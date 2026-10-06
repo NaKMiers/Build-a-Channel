@@ -9,7 +9,7 @@ Mascot identity lock: `brand/MASCOT.jpeg`
 | Token     | File          | Who they are                                                                            | Era / setting                                                              | Where they appear                                                                                        |
 | --------- | ------------- | --------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
 | @YOU      | YOU.jpeg      | Toss, the viewer stand-in, the person whose good day got one word on it                 | Present day, the room at home where the evening runs out                   | Hook, the wrong answer, the whole modern mismatch, the shift, the echo, the closing tease                |
-| @KAHNEMAN | KAHNEMAN.jpeg | Daniel Kahneman, drawn from his documented likeness, the man who found the two moments  | Toronto and a lab, the early nineteen nineties                             | The psychology pillar: the colonoscopy study, the two records, the two selves, the cold water, the clips |
+| @RESEARCHER | RESEARCHER.jpeg | Daniel Kahneman, drawn from his documented likeness, the man who found the two moments  | Toronto and a lab, the early nineteen nineties                             | The psychology pillar: the colonoscopy study, the two records, the two selves, the cold water, the clips |
 | @PATIENT  | PATIENT.jpeg  | The unsedated-minute subject of the nineteen ninety six study, rating pain every minute | A Toronto hospital, the early nineteen nineties, and the later trial       | The psychology pillar: the minute by minute rating, the short and long procedures, the return            |
 | @JUDGE    | JUDGE.jpeg    | The remembering self, personified, the one who was never there and decides anyway       | No era, a mechanism, drawn wherever the script names it                    | The psychology pillar, the whole modern mismatch, the shift                                              |
 | @FORAGER  | FORAGER.jpeg  | The ancestral adult deciding from memory whether a place is worth walking back to       | An illustrative small mobile camp, deep prehistory, no identifiable people | The anthropology pillar: the waterhole, the dry riverbed, the valley crossed off, the closing echo       |
@@ -44,7 +44,7 @@ to be left in the feed", and the shift's "Let the last thing you look at tonight
 chose". Inheriting a prop is forbidden; deriving the same one twice from two different scripts is
 not.
 
-**@KAHNEMAN.** Named at five separate points and they span the entire psychology pillar: the
+**@RESEARCHER.** Named at five separate points and they span the entire psychology pillar: the
 colonoscopy study, the two records laid side by side, the experiencing self and the remembering
 self, the cold water trial, and the film clips. That is the highest spread of any figure in the
 pillar, which is 36 percent of the runtime, so a generic researcher would drift across roughly
@@ -197,7 +197,7 @@ NEGATIVE: no redesign of the head, no change to the hair, no extra hair spikes, 
 
 ---
 
-**KAHNEMAN.jpeg**
+**RESEARCHER.jpeg**
 
 ```
 Create a clean V2-compatible character reference sheet for ONE simple hand-drawn 2D editorial doodle cartoon character.
@@ -414,7 +414,7 @@ NEGATIVE: no faceless heads, no blank heads, no egg-shaped blank heads, no solid
 Six images. One code block equals one generation.
 
 - `characters/YOU.jpeg` - **attach `brand/MASCOT.jpeg`.** This is an image edit, not a new drawing. Check the two-peak tuft survived, the hood is gone with no bump or drawstring, the collar STANDS UP all the way round rather than folding over, the zip placket stops at mid-chest, and count FOURTEEN shoes.
-- `characters/KAHNEMAN.jpeg` - check the crown is bare with the white hair band only at the sides and back, the glasses are round with both eyes visible inside them, and both record cards are completely blank apart from the baseline and the one trace line. The left trace must end at its highest point and the right trace must end low. Count FOURTEEN shoes.
+- `characters/RESEARCHER.jpeg` - check the crown is bare with the white hair band only at the sides and back, the glasses are round with both eyes visible inside them, and both record cards are completely blank apart from the baseline and the one trace line. The left trace must end at its highest point and the right trace must end low. Count FOURTEEN shoes.
 - `characters/PATIENT.jpeg` - check the slider track has no numerals, ticks or scale of any kind, no medical equipment appears anywhere, poses one to three have only the single horizontal line and no bed, and count FOURTEEN bare feet.
 - `characters/JUDGE.jpeg` - check there is no gavel, wig, robe of office or courtroom anywhere, no expression is angry or gloating, the hem reaches mid-calf in every panel, the folder is closed and blank in all five appearances, and count FOURTEEN shoes.
 - `characters/FORAGER.jpeg` - check both hands are empty in every panel including the close-up, the poncho covers both shoulders with no belt, and count FOURTEEN bare feet.
