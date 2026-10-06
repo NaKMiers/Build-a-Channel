@@ -1064,3 +1064,19 @@ negation mark against the antagonist's garment colour**, the same test as garmen
   summary phrase. Fixed by changing the preamble to "the corded belt".
 
 Alternation extended again, ninth time: `card body`.
+
+## Project 18 (2026-10-05), silence as warning signal - a 4-entry cast and acoustic mechanism personification
+
+`@YOU` (Toss, crew-neck lounge sweatshirt in Olive `#8FA35A`, no hood, evening-at-home),
+`@SCANNER` (personified acoustic threat scan, circular dial in dusty teal `#67A6A3` casing with cream `#FFF4DE` face),
+`@KALULI` (traditional Papua New Guinea Bosavi forest forager, golden yellow `#F5C518` waist wrap, bare torso, tan skin `#D9A15B`),
+`@BAND` (ancestral band of five, sky blue `#6EB5E8` double-shoulder wraps, tan skin `#D9A15B`, campfire prop in orange `#F5820D`).
+Chapter palette: Olive `#8FA35A`, Dusty teal `#67A6A3`, Tan `#C4965A`. Four entries. Nothing carried over.
+
+### Derivation notes and craft decisions
+
+- **Costuming Toss:** bookend scene is the quiet room at night ("The house goes quiet and something in you wakes up... The silence at the day's close..."). Outfit derived per the bookend rule: relaxed crew-neck lounge sweatshirt in saturated Olive `#8FA35A` with clean round collar, long sleeves to wrists, charcoal `#3F3F46` lounge shorts hem, and simple line shoes. Silhouette changes cut from all previous projects (no hoodie, no bib apron, no work shirt, no track jacket, no singlet).
+- **Personifying Neuroception as `@SCANNER`:** the central recurring mechanism from Stephen Porges: the always-on smoke detector of acoustic surveillance, scanning 500-2000 Hz vocal prosody versus silence. Personified as a circular radar sensor with a thick casing in dusty teal `#67A6A3` and a cream `#FFF4DE` dial carrying the channel's standard expressive face, top indicator notch, and debossed charcoal radar arcs. Strict no-text block suppresses Hz, kHz, dB, frequency marks, numbers, SAFE/THREAT labels, and dials.
+- **`@KALULI` forest acoustemology:** Steven Feld's Mount Bosavi ethnography where forest sound is life and silence is bereavement/predator alert. Drawn with tan skin `#D9A15B`, charcoal hair cap with thin headband cord, traditional golden yellow `#F5C518` waist wrap, bare chest, and bare feet. Props are a walking staff and bamboo listening reed.
+- **Cool group against warm ancestral ground:** `@BAND` continues the channel's established sky blue `#6EB5E8` double-shoulder wrap rule with tan skin `#D9A15B` and bare feet, ensuring strong contrast against warm tan and orange firelight backgrounds.
+- **Colour cascade:** Garments cleanly claim distinct palette colors: Olive (`@YOU`), Dusty teal (`@SCANNER`), Golden yellow (`@KALULI`), Sky blue (`@BAND`). No conflicts with chapter grounds.

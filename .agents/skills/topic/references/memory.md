@@ -24,7 +24,8 @@ Self-improving notes for topic selection. Single canonical copy, no Claude-side 
 | 15 | Why People Say Yes Far More Often Than You Think | scaffolded 2026-09-12, compliance underestimation, no script yet |
 | 16 | You Never Noticed How One Good Choice Lets You Make A Bad One | scaffolded 2026-09-19, moral licensing, no script yet |
 | 17 | Why One Bad Ending Ruins A Day That Was Mostly Good | peak-end rule, scaffolded outside this skill (batch 20 title 3), scripted, transcribed, cast, thumbnails done; row backfilled 2026-10-06 |
-| 18 | Why You Laugh At Jokes That Aren't Even Funny | scaffolded and scripted 2026-10-06, social laughter |
+| 18 | Why Your Brain Still Treats Silence Like A Warning Signal | scaffolded 2026-10-05, silence as threat detection, no script yet |
+| 19 | Why You Laugh At Jokes That Aren't Even Funny | scaffolded and scripted 2026-10-06, social laughter, scaffolded as 18 and renumbered on merge |
 | old 8 | Why You Stay Quiet When You Know The Room Is Wrong | abandoned 2026-08-12, unpublished, artifacts recoverable at `c9f048f` |
 | old 9 | Why You Think Everyone Is Watching When Nobody Is | abandoned 2026-08-12, unpublished, artifacts recoverable at `c9f048f` |
 
@@ -87,7 +88,7 @@ proposing a title.
 
 ## Proposed but not picked
 
-### 2026-10-06, batch 22, user picked title 4 (social laughter -> project 18)
+### 2026-10-06, batch 23, user picked title 4 (social laughter -> project 19)
 
 The user replied with a bare `4`. Batch was built entirely from fresh mechanisms rather than
 the long-unpicked pool (3AM sleep, Wilson boredom, planning fallacy, relative income have now
@@ -101,7 +102,7 @@ Spread across five themes and angles 1, 2 and 5. The other four remain eligible.
 | You Can't Actually Explain How A Zipper Works | identity and knowledge | Rozenblit and Keil 2002 illusion of explanatory depth; Sloman and Fernbach community of knowledge; Henrich cumulative culture |
 | Why You Love The Wobbly Shelf You Built Yourself | identity and effort | Norton, Mochon and Ariely 2011 IKEA effect, self-assemblers paid roughly 63 percent more for their own boxes; effort as a reliability signal |
 
-Selected: project 18, **Why You Laugh At Jokes That Aren't Even Funny**, social laughter.
+Selected: project 19, **Why You Laugh At Jokes That Aren't Even Funny**, social laughter.
 Research to reuse so `script` does not rediscover it (verify exact figures during `script`):
 
 - **Psychology.** Robert Provine's field observations of about 1,200 spontaneous laughter
@@ -126,6 +127,17 @@ Research to reuse so `script` does not rediscover it (verify exact figures durin
 - **Editorial note.** Keep the takeaway a single reframe (laughter is how you tell someone
   you are on their side, so stop auditing it for honesty) and never let it become a
   how-to-be-funny guide.
+
+### 2026-10-05, batch 22, user picked title 2 (silence as warning signal -> project 18)
+
+Batch drew on four distinct angles: hedonic adaptation (angle 2), threat-detection silence (angle 2), face judgment speed (angle 5), ritual/superstition (angle 1), and intermittent reinforcement/attachment (angle 1). The other four remain eligible.
+
+| Title | Theme | Numeric material available |
+| --- | --- | --- |
+| Why You Stop Wanting Something The Moment You Get It | habit and reward | Brickman and Campbell hedonic adaptation, 1978 lottery winner study; reward prediction error, dopamine |
+| Why You Judge A Stranger's Face Before You Know A Single Fact | social perception | Willis and Todorov 2006, 100 ms is enough to form a trustworthiness judgment; longer exposure raises confidence without raising accuracy |
+| Why You Knock On Wood When You Know It Does Nothing | ritual and meaning | Malinowski Trobriand contrast, elaborate magic for open-sea fishing and almost none for the safe lagoon; Damisch 2010, superstition group holed out an average of 6.4 putts versus 4.8 |
+| Why The Person Who Ignores You Is Hardest To Forget | love and attachment | intermittent reinforcement; Fisher fMRI rejection lighting reward circuits rather than pain circuits; Jankowiak and Fischer, romantic love in 88.5 percent of 166 societies |
 
 ### 2026-09-19, batch 21, user picked title 4 (moral licensing -> project 16)
 
