@@ -552,10 +552,10 @@ def build(args):
         encoding="utf-8")
     mac.chmod(0o755)
     win = out.parent / "install-windows.bat"
-    win.write_text(
-        fill(WINDOWS_INSTALLER, name, rel.replace("/", "\\"),
-             (args.draft_root or DRAFT_ROOT_VARS["windows"]).replace("/", "\\")),
-        encoding="utf-8", newline="\r\n")
+    win.write_bytes(fill(
+        WINDOWS_INSTALLER, name, rel.replace("/", "\\"),
+        (args.draft_root or DRAFT_ROOT_VARS["windows"]).replace("/", "\\"),
+    ).replace("\n", "\r\n").encode("utf-8"))
 
     print(out)
     print(f"  {mac.name} installs it on a Mac, {win.name} on Windows")

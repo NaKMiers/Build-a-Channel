@@ -106,7 +106,7 @@ def audio_seconds(path):
         try:
             import mp3frames
 
-            return mp3frames.duration(str(path))
+            return mp3frames.duration(path)
         except Exception:
             pass
     import subprocess
